@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Mapping
+ * @property string|null $Mapping
  * @property string $SqlType
  */
 class RecordColumn extends Shape
@@ -14,7 +14,7 @@ class RecordColumn extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     Mapping?: string,
+     *     Mapping?: string|null,
      *     SqlType: string
      * } $args
      */

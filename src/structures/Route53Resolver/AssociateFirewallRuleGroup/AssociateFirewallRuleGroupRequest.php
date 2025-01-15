@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VpcId
  * @property int $Priority
  * @property string $Name
- * @property 'ENABLED'|'DISABLED' $MutationProtection
- * @property list<Shapes\Tag> $Tags
+ * @property 'ENABLED'|'DISABLED'|null $MutationProtection
+ * @property list<Shapes\Tag>|null $Tags
  */
 class AssociateFirewallRuleGroupRequest extends Request
 {
@@ -22,8 +22,8 @@ class AssociateFirewallRuleGroupRequest extends Request
      *     VpcId: string,
      *     Priority: int,
      *     Name: string,
-     *     MutationProtection?: 'ENABLED'|'DISABLED',
-     *     Tags?: list<Shapes\Tag>
+     *     MutationProtection?: 'ENABLED'|'DISABLED'|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

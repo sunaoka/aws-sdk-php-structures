@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ScheduleRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $wifi
- * @property bool $bluetooth
- * @property bool $nfc
- * @property bool $gps
+ * @property bool|null $wifi
+ * @property bool|null $bluetooth
+ * @property bool|null $nfc
+ * @property bool|null $gps
  */
 class Radios extends Shape
 {
     /**
      * @param array{
-     *     wifi?: bool,
-     *     bluetooth?: bool,
-     *     nfc?: bool,
-     *     gps?: bool
+     *     wifi?: bool|null,
+     *     bluetooth?: bool|null,
+     *     nfc?: bool|null,
+     *     gps?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

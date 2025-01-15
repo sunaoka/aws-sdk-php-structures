@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppRunner\DeleteService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IsPubliclyAccessible
+ * @property bool|null $IsPubliclyAccessible
  */
 class IngressConfiguration extends Shape
 {
     /**
-     * @param array{IsPubliclyAccessible?: bool} $args
+     * @param array{IsPubliclyAccessible?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

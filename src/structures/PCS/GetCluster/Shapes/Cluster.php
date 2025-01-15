@@ -13,10 +13,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property Scheduler $scheduler
  * @property 'SMALL'|'MEDIUM'|'LARGE' $size
- * @property ClusterSlurmConfiguration $slurmConfiguration
+ * @property ClusterSlurmConfiguration|null $slurmConfiguration
  * @property Networking $networking
- * @property list<Endpoint> $endpoints
- * @property list<ErrorInfo> $errorInfo
+ * @property list<Endpoint>|null $endpoints
+ * @property list<ErrorInfo>|null $errorInfo
  */
 class Cluster extends Shape
 {
@@ -30,10 +30,10 @@ class Cluster extends Shape
      *     modifiedAt: \Aws\Api\DateTimeResult,
      *     scheduler: Scheduler,
      *     size: 'SMALL'|'MEDIUM'|'LARGE',
-     *     slurmConfiguration?: ClusterSlurmConfiguration,
+     *     slurmConfiguration?: ClusterSlurmConfiguration|null,
      *     networking: Networking,
-     *     endpoints?: list<Endpoint>,
-     *     errorInfo?: list<ErrorInfo>
+     *     endpoints?: list<Endpoint>|null,
+     *     errorInfo?: list<ErrorInfo>|null
      * } $args
      */
     public function __construct(array $args)

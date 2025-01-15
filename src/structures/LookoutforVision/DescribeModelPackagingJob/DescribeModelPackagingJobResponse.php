@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\DescribeModelPackagingJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ModelPackagingDescription $ModelPackagingDescription
+ * @property Shapes\ModelPackagingDescription|null $ModelPackagingDescription
  */
 class DescribeModelPackagingJobResponse extends Response
 {

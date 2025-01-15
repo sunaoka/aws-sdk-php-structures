@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeReservedNodesOfferings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReservedNodesOfferingId
- * @property string $NodeType
- * @property string $Duration
- * @property string $OfferingType
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $ReservedNodesOfferingId
+ * @property string|null $NodeType
+ * @property string|null $Duration
+ * @property string|null $OfferingType
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeReservedNodesOfferingsRequest extends Request
 {
     /**
      * @param array{
-     *     ReservedNodesOfferingId?: string,
-     *     NodeType?: string,
-     *     Duration?: string,
-     *     OfferingType?: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     ReservedNodesOfferingId?: string|null,
+     *     NodeType?: string|null,
+     *     Duration?: string|null,
+     *     OfferingType?: string|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

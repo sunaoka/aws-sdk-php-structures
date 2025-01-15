@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetDocumentationVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $version
- * @property \Aws\Api\DateTimeResult $createdDate
- * @property string $description
+ * @property string|null $version
+ * @property \Aws\Api\DateTimeResult|null $createdDate
+ * @property string|null $description
  */
 class GetDocumentationVersionResponse extends Response
 {

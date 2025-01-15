@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'WindowsServer'|'AmazonLinux'|'EndOfSupportWindowsServer'|'Redhat'|'Other' $ServerOsType
- * @property int $count
+ * @property 'WindowsServer'|'AmazonLinux'|'EndOfSupportWindowsServer'|'Redhat'|'Other'|null $ServerOsType
+ * @property int|null $count
  */
 class ServerSummary extends Shape
 {
     /**
      * @param array{
-     *     ServerOsType?: 'WindowsServer'|'AmazonLinux'|'EndOfSupportWindowsServer'|'Redhat'|'Other',
-     *     count?: int
+     *     ServerOsType?: 'WindowsServer'|'AmazonLinux'|'EndOfSupportWindowsServer'|'Redhat'|'Other'|null,
+     *     count?: int|null
      * } $args
      */
     public function __construct(array $args = [])

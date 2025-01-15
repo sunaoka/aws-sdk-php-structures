@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateInferenceRecommendationsJob\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
- * @property RecommendationJobCompiledOutputConfig $CompiledOutputConfig
+ * @property string|null $KmsKeyId
+ * @property RecommendationJobCompiledOutputConfig|null $CompiledOutputConfig
  */
 class RecommendationJobOutputConfig extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
-     *     CompiledOutputConfig?: RecommendationJobCompiledOutputConfig
+     *     KmsKeyId?: string|null,
+     *     CompiledOutputConfig?: RecommendationJobCompiledOutputConfig|null
      * } $args
      */
     public function __construct(array $args = [])

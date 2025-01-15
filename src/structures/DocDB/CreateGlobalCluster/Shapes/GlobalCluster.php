@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DocDB\CreateGlobalCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GlobalClusterIdentifier
- * @property string $GlobalClusterResourceId
- * @property string $GlobalClusterArn
- * @property string $Status
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $DatabaseName
- * @property bool $StorageEncrypted
- * @property bool $DeletionProtection
- * @property list<GlobalClusterMember> $GlobalClusterMembers
+ * @property string|null $GlobalClusterIdentifier
+ * @property string|null $GlobalClusterResourceId
+ * @property string|null $GlobalClusterArn
+ * @property string|null $Status
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $DatabaseName
+ * @property bool|null $StorageEncrypted
+ * @property bool|null $DeletionProtection
+ * @property list<GlobalClusterMember>|null $GlobalClusterMembers
  */
 class GlobalCluster extends Shape
 {
     /**
      * @param array{
-     *     GlobalClusterIdentifier?: string,
-     *     GlobalClusterResourceId?: string,
-     *     GlobalClusterArn?: string,
-     *     Status?: string,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     DatabaseName?: string,
-     *     StorageEncrypted?: bool,
-     *     DeletionProtection?: bool,
-     *     GlobalClusterMembers?: list<GlobalClusterMember>
+     *     GlobalClusterIdentifier?: string|null,
+     *     GlobalClusterResourceId?: string|null,
+     *     GlobalClusterArn?: string|null,
+     *     Status?: string|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     DatabaseName?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     DeletionProtection?: bool|null,
+     *     GlobalClusterMembers?: list<GlobalClusterMember>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CodeConnections\GetConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectionName
- * @property string $ConnectionArn
- * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged' $ProviderType
- * @property string $OwnerAccountId
- * @property 'PENDING'|'AVAILABLE'|'ERROR' $ConnectionStatus
- * @property string $HostArn
+ * @property string|null $ConnectionName
+ * @property string|null $ConnectionArn
+ * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|null $ProviderType
+ * @property string|null $OwnerAccountId
+ * @property 'PENDING'|'AVAILABLE'|'ERROR'|null $ConnectionStatus
+ * @property string|null $HostArn
  */
 class Connection extends Shape
 {
     /**
      * @param array{
-     *     ConnectionName?: string,
-     *     ConnectionArn?: string,
-     *     ProviderType?: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged',
-     *     OwnerAccountId?: string,
-     *     ConnectionStatus?: 'PENDING'|'AVAILABLE'|'ERROR',
-     *     HostArn?: string
+     *     ConnectionName?: string|null,
+     *     ConnectionArn?: string|null,
+     *     ProviderType?: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|null,
+     *     OwnerAccountId?: string|null,
+     *     ConnectionStatus?: 'PENDING'|'AVAILABLE'|'ERROR'|null,
+     *     HostArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

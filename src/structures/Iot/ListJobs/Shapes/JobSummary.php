@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Iot\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jobArn
- * @property string $jobId
- * @property string $thingGroupId
- * @property 'CONTINUOUS'|'SNAPSHOT' $targetSelection
- * @property 'IN_PROGRESS'|'CANCELED'|'COMPLETED'|'DELETION_IN_PROGRESS'|'SCHEDULED' $status
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property \Aws\Api\DateTimeResult $completedAt
- * @property bool $isConcurrent
+ * @property string|null $jobArn
+ * @property string|null $jobId
+ * @property string|null $thingGroupId
+ * @property 'CONTINUOUS'|'SNAPSHOT'|null $targetSelection
+ * @property 'IN_PROGRESS'|'CANCELED'|'COMPLETED'|'DELETION_IN_PROGRESS'|'SCHEDULED'|null $status
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property \Aws\Api\DateTimeResult|null $completedAt
+ * @property bool|null $isConcurrent
  */
 class JobSummary extends Shape
 {
     /**
      * @param array{
-     *     jobArn?: string,
-     *     jobId?: string,
-     *     thingGroupId?: string,
-     *     targetSelection?: 'CONTINUOUS'|'SNAPSHOT',
-     *     status?: 'IN_PROGRESS'|'CANCELED'|'COMPLETED'|'DELETION_IN_PROGRESS'|'SCHEDULED',
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     completedAt?: \Aws\Api\DateTimeResult,
-     *     isConcurrent?: bool
+     *     jobArn?: string|null,
+     *     jobId?: string|null,
+     *     thingGroupId?: string|null,
+     *     targetSelection?: 'CONTINUOUS'|'SNAPSHOT'|null,
+     *     status?: 'IN_PROGRESS'|'CANCELED'|'COMPLETED'|'DELETION_IN_PROGRESS'|'SCHEDULED'|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     completedAt?: \Aws\Api\DateTimeResult|null,
+     *     isConcurrent?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

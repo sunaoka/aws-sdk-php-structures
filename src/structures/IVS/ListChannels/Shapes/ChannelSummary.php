@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\IVS\ListChannels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property bool $authorized
- * @property bool $insecureIngest
- * @property 'NORMAL'|'LOW' $latencyMode
- * @property string $name
- * @property string $playbackRestrictionPolicyArn
- * @property 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY' $preset
- * @property string $recordingConfigurationArn
- * @property array<string, string> $tags
- * @property 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD' $type
+ * @property string|null $arn
+ * @property bool|null $authorized
+ * @property bool|null $insecureIngest
+ * @property 'NORMAL'|'LOW'|null $latencyMode
+ * @property string|null $name
+ * @property string|null $playbackRestrictionPolicyArn
+ * @property 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null $preset
+ * @property string|null $recordingConfigurationArn
+ * @property array<string, string>|null $tags
+ * @property 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null $type
  */
 class ChannelSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     authorized?: bool,
-     *     insecureIngest?: bool,
-     *     latencyMode?: 'NORMAL'|'LOW',
-     *     name?: string,
-     *     playbackRestrictionPolicyArn?: string,
-     *     preset?: 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY',
-     *     recordingConfigurationArn?: string,
-     *     tags?: array<string, string>,
-     *     type?: 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'
+     *     arn?: string|null,
+     *     authorized?: bool|null,
+     *     insecureIngest?: bool|null,
+     *     latencyMode?: 'NORMAL'|'LOW'|null,
+     *     name?: string|null,
+     *     playbackRestrictionPolicyArn?: string|null,
+     *     preset?: 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null,
+     *     recordingConfigurationArn?: string|null,
+     *     tags?: array<string, string>|null,
+     *     type?: 'BASIC'|'STANDARD'|'ADVANCED_SD'|'ADVANCED_HD'|null
      * } $args
      */
     public function __construct(array $args = [])

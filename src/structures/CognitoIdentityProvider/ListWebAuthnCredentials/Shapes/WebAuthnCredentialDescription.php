@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CredentialId
  * @property string $FriendlyCredentialName
  * @property string $RelyingPartyId
- * @property string $AuthenticatorAttachment
+ * @property string|null $AuthenticatorAttachment
  * @property list<string> $AuthenticatorTransports
  * @property \Aws\Api\DateTimeResult $CreatedAt
  */
@@ -19,7 +19,7 @@ class WebAuthnCredentialDescription extends Shape
      *     CredentialId: string,
      *     FriendlyCredentialName: string,
      *     RelyingPartyId: string,
-     *     AuthenticatorAttachment?: string,
+     *     AuthenticatorAttachment?: string|null,
      *     AuthenticatorTransports: list<string>,
      *     CreatedAt: \Aws\Api\DateTimeResult
      * } $args

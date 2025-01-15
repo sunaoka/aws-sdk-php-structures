@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetCustomModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DistillationConfig $distillationConfig
+ * @property DistillationConfig|null $distillationConfig
  */
 class CustomizationConfig extends Shape
 {
     /**
-     * @param array{distillationConfig?: DistillationConfig} $args
+     * @param array{distillationConfig?: DistillationConfig|null} $args
      */
     public function __construct(array $args = [])
     {

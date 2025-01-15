@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property bool $IncludeHidden
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property bool|null $IncludeHidden
  */
 class ListIntegrationsRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     IncludeHidden?: bool
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     IncludeHidden?: bool|null
      * } $args
      */
     public function __construct(array $args)

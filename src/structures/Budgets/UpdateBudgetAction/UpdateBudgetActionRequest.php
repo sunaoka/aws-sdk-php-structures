@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $BudgetName
  * @property string $ActionId
- * @property 'ACTUAL'|'FORECASTED' $NotificationType
- * @property Shapes\ActionThreshold $ActionThreshold
- * @property Shapes\Definition $Definition
- * @property string $ExecutionRoleArn
- * @property 'AUTOMATIC'|'MANUAL' $ApprovalModel
- * @property list<Shapes\Subscriber> $Subscribers
+ * @property 'ACTUAL'|'FORECASTED'|null $NotificationType
+ * @property Shapes\ActionThreshold|null $ActionThreshold
+ * @property Shapes\Definition|null $Definition
+ * @property string|null $ExecutionRoleArn
+ * @property 'AUTOMATIC'|'MANUAL'|null $ApprovalModel
+ * @property list<Shapes\Subscriber>|null $Subscribers
  */
 class UpdateBudgetActionRequest extends Request
 {
@@ -22,12 +22,12 @@ class UpdateBudgetActionRequest extends Request
      *     AccountId: string,
      *     BudgetName: string,
      *     ActionId: string,
-     *     NotificationType?: 'ACTUAL'|'FORECASTED',
-     *     ActionThreshold?: Shapes\ActionThreshold,
-     *     Definition?: Shapes\Definition,
-     *     ExecutionRoleArn?: string,
-     *     ApprovalModel?: 'AUTOMATIC'|'MANUAL',
-     *     Subscribers?: list<Shapes\Subscriber>
+     *     NotificationType?: 'ACTUAL'|'FORECASTED'|null,
+     *     ActionThreshold?: Shapes\ActionThreshold|null,
+     *     Definition?: Shapes\Definition|null,
+     *     ExecutionRoleArn?: string|null,
+     *     ApprovalModel?: 'AUTOMATIC'|'MANUAL'|null,
+     *     Subscribers?: list<Shapes\Subscriber>|null
      * } $args
      */
     public function __construct(array $args)

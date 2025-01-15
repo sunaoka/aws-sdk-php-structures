@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $name
- * @property string $control
- * @property string $input
- * @property string $startToCloseTimeout
+ * @property string|null $control
+ * @property string|null $input
+ * @property string|null $startToCloseTimeout
  * @property int $decisionTaskCompletedEventId
  */
 class LambdaFunctionScheduledEventAttributes extends Shape
@@ -18,9 +18,9 @@ class LambdaFunctionScheduledEventAttributes extends Shape
      * @param array{
      *     id: string,
      *     name: string,
-     *     control?: string,
-     *     input?: string,
-     *     startToCloseTimeout?: string,
+     *     control?: string|null,
+     *     input?: string|null,
+     *     startToCloseTimeout?: string|null,
      *     decisionTaskCompletedEventId: int
      * } $args
      */

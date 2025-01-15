@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndTimecode
- * @property VideoOverlayPosition $InitialPosition
- * @property VideoOverlayInput $Input
- * @property 'ONCE'|'REPEAT' $Playback
- * @property string $StartTimecode
- * @property list<VideoOverlayTransition> $Transitions
+ * @property string|null $EndTimecode
+ * @property VideoOverlayPosition|null $InitialPosition
+ * @property VideoOverlayInput|null $Input
+ * @property 'ONCE'|'REPEAT'|null $Playback
+ * @property string|null $StartTimecode
+ * @property list<VideoOverlayTransition>|null $Transitions
  */
 class VideoOverlay extends Shape
 {
     /**
      * @param array{
-     *     EndTimecode?: string,
-     *     InitialPosition?: VideoOverlayPosition,
-     *     Input?: VideoOverlayInput,
-     *     Playback?: 'ONCE'|'REPEAT',
-     *     StartTimecode?: string,
-     *     Transitions?: list<VideoOverlayTransition>
+     *     EndTimecode?: string|null,
+     *     InitialPosition?: VideoOverlayPosition|null,
+     *     Input?: VideoOverlayInput|null,
+     *     Playback?: 'ONCE'|'REPEAT'|null,
+     *     StartTimecode?: string|null,
+     *     Transitions?: list<VideoOverlayTransition>|null
      * } $args
      */
     public function __construct(array $args = [])

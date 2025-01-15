@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Rds\AuthorizeDBSecurityGroupIngress\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OwnerId
- * @property string $DBSecurityGroupName
- * @property string $DBSecurityGroupDescription
- * @property string $VpcId
- * @property list<EC2SecurityGroup> $EC2SecurityGroups
- * @property list<IPRange> $IPRanges
- * @property string $DBSecurityGroupArn
+ * @property string|null $OwnerId
+ * @property string|null $DBSecurityGroupName
+ * @property string|null $DBSecurityGroupDescription
+ * @property string|null $VpcId
+ * @property list<EC2SecurityGroup>|null $EC2SecurityGroups
+ * @property list<IPRange>|null $IPRanges
+ * @property string|null $DBSecurityGroupArn
  */
 class DBSecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     OwnerId?: string,
-     *     DBSecurityGroupName?: string,
-     *     DBSecurityGroupDescription?: string,
-     *     VpcId?: string,
-     *     EC2SecurityGroups?: list<EC2SecurityGroup>,
-     *     IPRanges?: list<IPRange>,
-     *     DBSecurityGroupArn?: string
+     *     OwnerId?: string|null,
+     *     DBSecurityGroupName?: string|null,
+     *     DBSecurityGroupDescription?: string|null,
+     *     VpcId?: string|null,
+     *     EC2SecurityGroups?: list<EC2SecurityGroup>|null,
+     *     IPRanges?: list<IPRange>|null,
+     *     DBSecurityGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

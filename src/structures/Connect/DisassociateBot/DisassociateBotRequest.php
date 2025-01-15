@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property Shapes\LexBot $LexBot
- * @property Shapes\LexV2Bot $LexV2Bot
+ * @property Shapes\LexBot|null $LexBot
+ * @property Shapes\LexV2Bot|null $LexV2Bot
  */
 class DisassociateBotRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     LexBot?: Shapes\LexBot,
-     *     LexV2Bot?: Shapes\LexV2Bot
+     *     LexBot?: Shapes\LexBot|null,
+     *     LexV2Bot?: Shapes\LexV2Bot|null
      * } $args
      */
     public function __construct(array $args)

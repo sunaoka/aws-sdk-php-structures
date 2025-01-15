@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $required
  * @property bool $key
  * @property bool $secret
- * @property bool $queryable
- * @property string $description
- * @property 'String'|'Number'|'Boolean' $type
+ * @property bool|null $queryable
+ * @property string|null $description
+ * @property 'String'|'Number'|'Boolean'|null $type
  */
 class ActionConfigurationProperty extends Shape
 {
@@ -21,9 +21,9 @@ class ActionConfigurationProperty extends Shape
      *     required: bool,
      *     key: bool,
      *     secret: bool,
-     *     queryable?: bool,
-     *     description?: string,
-     *     type?: 'String'|'Number'|'Boolean'
+     *     queryable?: bool|null,
+     *     description?: string|null,
+     *     type?: 'String'|'Number'|'Boolean'|null
      * } $args
      */
     public function __construct(array $args)

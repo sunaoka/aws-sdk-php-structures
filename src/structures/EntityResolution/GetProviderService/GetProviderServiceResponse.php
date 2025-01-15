@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property bool $anonymizedOutput
- * @property Shapes\ProviderComponentSchema $providerComponentSchema
- * @property Shapes\Document $providerConfigurationDefinition
+ * @property Shapes\ProviderComponentSchema|null $providerComponentSchema
+ * @property Shapes\Document|null $providerConfigurationDefinition
  * @property Shapes\ProviderEndpointConfiguration $providerEndpointConfiguration
  * @property Shapes\Document $providerEntityOutputDefinition
- * @property Shapes\ProviderIdNameSpaceConfiguration $providerIdNameSpaceConfiguration
- * @property Shapes\ProviderIntermediateDataAccessConfiguration $providerIntermediateDataAccessConfiguration
- * @property Shapes\Document $providerJobConfiguration
+ * @property Shapes\ProviderIdNameSpaceConfiguration|null $providerIdNameSpaceConfiguration
+ * @property Shapes\ProviderIntermediateDataAccessConfiguration|null $providerIntermediateDataAccessConfiguration
+ * @property Shapes\Document|null $providerJobConfiguration
  * @property string $providerName
  * @property string $providerServiceArn
  * @property string $providerServiceDisplayName

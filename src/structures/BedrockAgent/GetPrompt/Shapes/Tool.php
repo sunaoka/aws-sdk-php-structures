@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetPrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ToolSpecification $toolSpec
+ * @property ToolSpecification|null $toolSpec
  */
 class Tool extends Shape
 {
     /**
-     * @param array{toolSpec?: ToolSpecification} $args
+     * @param array{toolSpec?: ToolSpecification|null} $args
      */
     public function __construct(array $args = [])
     {

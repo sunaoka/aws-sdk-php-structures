@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccessPointId
- * @property string $Arn
- * @property string $ClientToken
- * @property string $FileSystemId
- * @property AwsEfsAccessPointPosixUserDetails $PosixUser
- * @property AwsEfsAccessPointRootDirectoryDetails $RootDirectory
+ * @property string|null $AccessPointId
+ * @property string|null $Arn
+ * @property string|null $ClientToken
+ * @property string|null $FileSystemId
+ * @property AwsEfsAccessPointPosixUserDetails|null $PosixUser
+ * @property AwsEfsAccessPointRootDirectoryDetails|null $RootDirectory
  */
 class AwsEfsAccessPointDetails extends Shape
 {
     /**
      * @param array{
-     *     AccessPointId?: string,
-     *     Arn?: string,
-     *     ClientToken?: string,
-     *     FileSystemId?: string,
-     *     PosixUser?: AwsEfsAccessPointPosixUserDetails,
-     *     RootDirectory?: AwsEfsAccessPointRootDirectoryDetails
+     *     AccessPointId?: string|null,
+     *     Arn?: string|null,
+     *     ClientToken?: string|null,
+     *     FileSystemId?: string|null,
+     *     PosixUser?: AwsEfsAccessPointPosixUserDetails|null,
+     *     RootDirectory?: AwsEfsAccessPointRootDirectoryDetails|null
      * } $args
      */
     public function __construct(array $args = [])

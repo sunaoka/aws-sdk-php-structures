@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $agentAliasName
  * @property string $agentId
- * @property string $clientToken
- * @property string $description
- * @property list<Shapes\AgentAliasRoutingConfigurationListItem> $routingConfiguration
- * @property array<string, string> $tags
+ * @property string|null $clientToken
+ * @property string|null $description
+ * @property list<Shapes\AgentAliasRoutingConfigurationListItem>|null $routingConfiguration
+ * @property array<string, string>|null $tags
  */
 class CreateAgentAliasRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateAgentAliasRequest extends Request
      * @param array{
      *     agentAliasName: string,
      *     agentId: string,
-     *     clientToken?: string,
-     *     description?: string,
-     *     routingConfiguration?: list<Shapes\AgentAliasRoutingConfigurationListItem>,
-     *     tags?: array<string, string>
+     *     clientToken?: string|null,
+     *     description?: string|null,
+     *     routingConfiguration?: list<Shapes\AgentAliasRoutingConfigurationListItem>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

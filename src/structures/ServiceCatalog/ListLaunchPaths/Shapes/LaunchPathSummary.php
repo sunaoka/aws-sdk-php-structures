@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListLaunchPaths\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property list<ConstraintSummary> $ConstraintSummaries
- * @property list<Tag> $Tags
- * @property string $Name
+ * @property string|null $Id
+ * @property list<ConstraintSummary>|null $ConstraintSummaries
+ * @property list<Tag>|null $Tags
+ * @property string|null $Name
  */
 class LaunchPathSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     ConstraintSummaries?: list<ConstraintSummary>,
-     *     Tags?: list<Tag>,
-     *     Name?: string
+     *     Id?: string|null,
+     *     ConstraintSummaries?: list<ConstraintSummary>|null,
+     *     Tags?: list<Tag>|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

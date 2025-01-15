@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstanceState;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\InstanceState $state
+ * @property Shapes\InstanceState|null $state
  */
 class GetInstanceStateResponse extends Response
 {

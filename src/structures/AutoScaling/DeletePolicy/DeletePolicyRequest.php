@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DeletePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AutoScalingGroupName
+ * @property string|null $AutoScalingGroupName
  * @property string $PolicyName
  */
 class DeletePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     AutoScalingGroupName?: string,
+     *     AutoScalingGroupName?: string|null,
      *     PolicyName: string
      * } $args
      */

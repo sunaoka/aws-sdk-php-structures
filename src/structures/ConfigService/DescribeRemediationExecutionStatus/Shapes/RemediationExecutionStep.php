@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeRemediationExecutionStatu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property 'SUCCEEDED'|'PENDING'|'FAILED' $State
- * @property string $ErrorMessage
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $StopTime
+ * @property string|null $Name
+ * @property 'SUCCEEDED'|'PENDING'|'FAILED'|null $State
+ * @property string|null $ErrorMessage
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $StopTime
  */
 class RemediationExecutionStep extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     State?: 'SUCCEEDED'|'PENDING'|'FAILED',
-     *     ErrorMessage?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     StopTime?: \Aws\Api\DateTimeResult
+     *     Name?: string|null,
+     *     State?: 'SUCCEEDED'|'PENDING'|'FAILED'|null,
+     *     ErrorMessage?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     StopTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<string> $AttributeNames
  * @property string $S3Uri
- * @property string $AnnotationDataS3Uri
- * @property string $SourceDocumentsS3Uri
- * @property 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT' $DocumentType
+ * @property string|null $AnnotationDataS3Uri
+ * @property string|null $SourceDocumentsS3Uri
+ * @property 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT'|null $DocumentType
  */
 class DatasetAugmentedManifestsListItem extends Shape
 {
@@ -17,9 +17,9 @@ class DatasetAugmentedManifestsListItem extends Shape
      * @param array{
      *     AttributeNames: list<string>,
      *     S3Uri: string,
-     *     AnnotationDataS3Uri?: string,
-     *     SourceDocumentsS3Uri?: string,
-     *     DocumentType?: 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT'
+     *     AnnotationDataS3Uri?: string|null,
+     *     SourceDocumentsS3Uri?: string|null,
+     *     DocumentType?: 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\KinesisVideoArchivedMedia\GetHLSStreamingSessio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $HLSStreamingSessionURL
+ * @property string|null $HLSStreamingSessionURL
  */
 class GetHLSStreamingSessionURLResponse extends Response
 {

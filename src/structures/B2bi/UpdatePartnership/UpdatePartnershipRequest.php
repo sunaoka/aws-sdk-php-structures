@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $partnershipId
- * @property string $name
- * @property list<string> $capabilities
- * @property Shapes\CapabilityOptions $capabilityOptions
+ * @property string|null $name
+ * @property list<string>|null $capabilities
+ * @property Shapes\CapabilityOptions|null $capabilityOptions
  */
 class UpdatePartnershipRequest extends Request
 {
     /**
      * @param array{
      *     partnershipId: string,
-     *     name?: string,
-     *     capabilities?: list<string>,
-     *     capabilityOptions?: Shapes\CapabilityOptions
+     *     name?: string|null,
+     *     capabilities?: list<string>|null,
+     *     capabilityOptions?: Shapes\CapabilityOptions|null
      * } $args
      */
     public function __construct(array $args)

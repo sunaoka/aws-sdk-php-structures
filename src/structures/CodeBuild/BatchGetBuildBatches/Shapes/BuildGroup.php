@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CodeBuild\BatchGetBuildBatches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $identifier
- * @property list<string> $dependsOn
- * @property bool $ignoreFailure
- * @property BuildSummary $currentBuildSummary
- * @property list<BuildSummary> $priorBuildSummaryList
+ * @property string|null $identifier
+ * @property list<string>|null $dependsOn
+ * @property bool|null $ignoreFailure
+ * @property BuildSummary|null $currentBuildSummary
+ * @property list<BuildSummary>|null $priorBuildSummaryList
  */
 class BuildGroup extends Shape
 {
     /**
      * @param array{
-     *     identifier?: string,
-     *     dependsOn?: list<string>,
-     *     ignoreFailure?: bool,
-     *     currentBuildSummary?: BuildSummary,
-     *     priorBuildSummaryList?: list<BuildSummary>
+     *     identifier?: string|null,
+     *     dependsOn?: list<string>|null,
+     *     ignoreFailure?: bool|null,
+     *     currentBuildSummary?: BuildSummary|null,
+     *     priorBuildSummaryList?: list<BuildSummary>|null
      * } $args
      */
     public function __construct(array $args = [])

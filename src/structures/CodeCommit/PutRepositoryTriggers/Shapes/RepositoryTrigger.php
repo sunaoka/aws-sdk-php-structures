@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property string $destinationArn
- * @property string $customData
- * @property list<string> $branches
+ * @property string|null $customData
+ * @property list<string>|null $branches
  * @property list<'all'|'updateReference'|'createReference'|'deleteReference'> $events
  */
 class RepositoryTrigger extends Shape
@@ -17,8 +17,8 @@ class RepositoryTrigger extends Shape
      * @param array{
      *     name: string,
      *     destinationArn: string,
-     *     customData?: string,
-     *     branches?: list<string>,
+     *     customData?: string|null,
+     *     branches?: list<string>|null,
      *     events: list<'all'|'updateReference'|'createReference'|'deleteReference'>
      * } $args
      */

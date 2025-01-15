@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteNatGateway;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $NatGatewayId
  */
 class DeleteNatGatewayRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     NatGatewayId: string
      * } $args
      */

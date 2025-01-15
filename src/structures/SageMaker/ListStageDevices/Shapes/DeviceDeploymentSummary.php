@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EdgeDeploymentPlanArn
  * @property string $EdgeDeploymentPlanName
  * @property string $StageName
- * @property string $DeployedStageName
- * @property string $DeviceFleetName
+ * @property string|null $DeployedStageName
+ * @property string|null $DeviceFleetName
  * @property string $DeviceName
  * @property string $DeviceArn
- * @property 'READYTODEPLOY'|'INPROGRESS'|'DEPLOYED'|'FAILED'|'STOPPING'|'STOPPED' $DeviceDeploymentStatus
- * @property string $DeviceDeploymentStatusMessage
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $DeploymentStartTime
+ * @property 'READYTODEPLOY'|'INPROGRESS'|'DEPLOYED'|'FAILED'|'STOPPING'|'STOPPED'|null $DeviceDeploymentStatus
+ * @property string|null $DeviceDeploymentStatusMessage
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $DeploymentStartTime
  */
 class DeviceDeploymentSummary extends Shape
 {
@@ -24,14 +24,14 @@ class DeviceDeploymentSummary extends Shape
      *     EdgeDeploymentPlanArn: string,
      *     EdgeDeploymentPlanName: string,
      *     StageName: string,
-     *     DeployedStageName?: string,
-     *     DeviceFleetName?: string,
+     *     DeployedStageName?: string|null,
+     *     DeviceFleetName?: string|null,
      *     DeviceName: string,
      *     DeviceArn: string,
-     *     DeviceDeploymentStatus?: 'READYTODEPLOY'|'INPROGRESS'|'DEPLOYED'|'FAILED'|'STOPPING'|'STOPPED',
-     *     DeviceDeploymentStatusMessage?: string,
-     *     Description?: string,
-     *     DeploymentStartTime?: \Aws\Api\DateTimeResult
+     *     DeviceDeploymentStatus?: 'READYTODEPLOY'|'INPROGRESS'|'DEPLOYED'|'FAILED'|'STOPPING'|'STOPPED'|null,
+     *     DeviceDeploymentStatusMessage?: string|null,
+     *     Description?: string|null,
+     *     DeploymentStartTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $StartTime
- * @property string $EndTime
+ * @property string|null $EndTime
  */
 class OnDemandConfiguration extends Shape
 {
     /**
      * @param array{
      *     StartTime: string,
-     *     EndTime?: string
+     *     EndTime?: string|null
      * } $args
      */
     public function __construct(array $args)

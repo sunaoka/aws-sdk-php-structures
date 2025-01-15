@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLaunchTemplateVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property string $Affinity
- * @property string $GroupName
- * @property string $HostId
- * @property 'default'|'dedicated'|'host' $Tenancy
- * @property string $SpreadDomain
- * @property string $HostResourceGroupArn
- * @property int $PartitionNumber
- * @property string $GroupId
+ * @property string|null $AvailabilityZone
+ * @property string|null $Affinity
+ * @property string|null $GroupName
+ * @property string|null $HostId
+ * @property 'default'|'dedicated'|'host'|null $Tenancy
+ * @property string|null $SpreadDomain
+ * @property string|null $HostResourceGroupArn
+ * @property int|null $PartitionNumber
+ * @property string|null $GroupId
  */
 class LaunchTemplatePlacement extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     Affinity?: string,
-     *     GroupName?: string,
-     *     HostId?: string,
-     *     Tenancy?: 'default'|'dedicated'|'host',
-     *     SpreadDomain?: string,
-     *     HostResourceGroupArn?: string,
-     *     PartitionNumber?: int,
-     *     GroupId?: string
+     *     AvailabilityZone?: string|null,
+     *     Affinity?: string|null,
+     *     GroupName?: string|null,
+     *     HostId?: string|null,
+     *     Tenancy?: 'default'|'dedicated'|'host'|null,
+     *     SpreadDomain?: string|null,
+     *     HostResourceGroupArn?: string|null,
+     *     PartitionNumber?: int|null,
+     *     GroupId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

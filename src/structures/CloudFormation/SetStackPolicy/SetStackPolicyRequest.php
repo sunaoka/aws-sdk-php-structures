@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackName
- * @property string $StackPolicyBody
- * @property string $StackPolicyURL
+ * @property string|null $StackPolicyBody
+ * @property string|null $StackPolicyURL
  */
 class SetStackPolicyRequest extends Request
 {
     /**
      * @param array{
      *     StackName: string,
-     *     StackPolicyBody?: string,
-     *     StackPolicyURL?: string
+     *     StackPolicyBody?: string|null,
+     *     StackPolicyURL?: string|null
      * } $args
      */
     public function __construct(array $args)

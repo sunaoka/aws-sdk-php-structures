@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property int $CoreCount
  * @property int $ThreadsPerCore
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ModifyInstanceCpuOptionsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ModifyInstanceCpuOptionsRequest extends Request
      *     InstanceId: string,
      *     CoreCount: int,
      *     ThreadsPerCore: int,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

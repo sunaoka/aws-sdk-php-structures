@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3\ListMultipartUploads;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Bucket
- * @property string $KeyMarker
- * @property string $UploadIdMarker
- * @property string $NextKeyMarker
- * @property string $Prefix
- * @property string $Delimiter
- * @property string $NextUploadIdMarker
- * @property int $MaxUploads
- * @property bool $IsTruncated
- * @property list<Shapes\MultipartUpload> $Uploads
- * @property list<Shapes\CommonPrefix> $CommonPrefixes
- * @property 'url' $EncodingType
- * @property 'requester' $RequestCharged
+ * @property string|null $Bucket
+ * @property string|null $KeyMarker
+ * @property string|null $UploadIdMarker
+ * @property string|null $NextKeyMarker
+ * @property string|null $Prefix
+ * @property string|null $Delimiter
+ * @property string|null $NextUploadIdMarker
+ * @property int|null $MaxUploads
+ * @property bool|null $IsTruncated
+ * @property list<Shapes\MultipartUpload>|null $Uploads
+ * @property list<Shapes\CommonPrefix>|null $CommonPrefixes
+ * @property 'url'|null $EncodingType
+ * @property 'requester'|null $RequestCharged
  */
 class ListMultipartUploadsResponse extends Response
 {

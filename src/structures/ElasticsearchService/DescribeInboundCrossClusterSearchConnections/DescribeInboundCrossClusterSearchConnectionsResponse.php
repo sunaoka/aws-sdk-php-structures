@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeInboundCrossCluste
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\InboundCrossClusterSearchConnection> $CrossClusterSearchConnections
- * @property string $NextToken
+ * @property list<Shapes\InboundCrossClusterSearchConnection>|null $CrossClusterSearchConnections
+ * @property string|null $NextToken
  */
 class DescribeInboundCrossClusterSearchConnectionsResponse extends Response
 {

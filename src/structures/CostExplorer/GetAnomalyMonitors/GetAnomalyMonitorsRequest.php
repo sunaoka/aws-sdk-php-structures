@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetAnomalyMonitors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $MonitorArnList
- * @property string $NextPageToken
- * @property int $MaxResults
+ * @property list<string>|null $MonitorArnList
+ * @property string|null $NextPageToken
+ * @property int|null $MaxResults
  */
 class GetAnomalyMonitorsRequest extends Request
 {
     /**
      * @param array{
-     *     MonitorArnList?: list<string>,
-     *     NextPageToken?: string,
-     *     MaxResults?: int
+     *     MonitorArnList?: list<string>|null,
+     *     NextPageToken?: string|null,
+     *     MaxResults?: int|null
      * } $args
      */
     public function __construct(array $args = [])

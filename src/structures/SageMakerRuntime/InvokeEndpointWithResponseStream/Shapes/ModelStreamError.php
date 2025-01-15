@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMakerRuntime\InvokeEndpointWithResponseStre
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property string $ErrorCode
+ * @property string|null $Message
+ * @property string|null $ErrorCode
  */
 class ModelStreamError extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     ErrorCode?: string
+     *     Message?: string|null,
+     *     ErrorCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

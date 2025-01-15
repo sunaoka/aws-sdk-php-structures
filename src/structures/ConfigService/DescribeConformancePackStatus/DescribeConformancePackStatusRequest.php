@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeConformancePackStatus;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ConformancePackNames
- * @property int<0, 20> $Limit
- * @property string $NextToken
+ * @property list<string>|null $ConformancePackNames
+ * @property int<0, 20>|null $Limit
+ * @property string|null $NextToken
  */
 class DescribeConformancePackStatusRequest extends Request
 {
     /**
      * @param array{
-     *     ConformancePackNames?: list<string>,
-     *     Limit?: int<0, 20>,
-     *     NextToken?: string
+     *     ConformancePackNames?: list<string>|null,
+     *     Limit?: int<0, 20>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

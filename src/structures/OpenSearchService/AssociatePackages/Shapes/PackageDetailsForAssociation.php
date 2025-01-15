@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $PackageID
- * @property list<string> $PrerequisitePackageIDList
- * @property PackageAssociationConfiguration $AssociationConfiguration
+ * @property list<string>|null $PrerequisitePackageIDList
+ * @property PackageAssociationConfiguration|null $AssociationConfiguration
  */
 class PackageDetailsForAssociation extends Shape
 {
     /**
      * @param array{
      *     PackageID: string,
-     *     PrerequisitePackageIDList?: list<string>,
-     *     AssociationConfiguration?: PackageAssociationConfiguration
+     *     PrerequisitePackageIDList?: list<string>|null,
+     *     AssociationConfiguration?: PackageAssociationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

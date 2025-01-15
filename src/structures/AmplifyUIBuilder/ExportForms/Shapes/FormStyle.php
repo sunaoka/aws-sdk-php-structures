@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\ExportForms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FormStyleConfig $horizontalGap
- * @property FormStyleConfig $verticalGap
- * @property FormStyleConfig $outerPadding
+ * @property FormStyleConfig|null $horizontalGap
+ * @property FormStyleConfig|null $verticalGap
+ * @property FormStyleConfig|null $outerPadding
  */
 class FormStyle extends Shape
 {
     /**
      * @param array{
-     *     horizontalGap?: FormStyleConfig,
-     *     verticalGap?: FormStyleConfig,
-     *     outerPadding?: FormStyleConfig
+     *     horizontalGap?: FormStyleConfig|null,
+     *     verticalGap?: FormStyleConfig|null,
+     *     outerPadding?: FormStyleConfig|null
      * } $args
      */
     public function __construct(array $args = [])

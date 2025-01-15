@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\PutScheduledAction\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MinCapacity
- * @property int $MaxCapacity
+ * @property int|null $MinCapacity
+ * @property int|null $MaxCapacity
  */
 class ScalableTargetAction extends Shape
 {
     /**
      * @param array{
-     *     MinCapacity?: int,
-     *     MaxCapacity?: int
+     *     MinCapacity?: int|null,
+     *     MaxCapacity?: int|null
      * } $args
      */
     public function __construct(array $args = [])

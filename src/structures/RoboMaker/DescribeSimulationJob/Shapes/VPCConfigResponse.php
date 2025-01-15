@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\RoboMaker\DescribeSimulationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $subnets
- * @property list<string> $securityGroups
- * @property string $vpcId
- * @property bool $assignPublicIp
+ * @property list<string>|null $subnets
+ * @property list<string>|null $securityGroups
+ * @property string|null $vpcId
+ * @property bool|null $assignPublicIp
  */
 class VPCConfigResponse extends Shape
 {
     /**
      * @param array{
-     *     subnets?: list<string>,
-     *     securityGroups?: list<string>,
-     *     vpcId?: string,
-     *     assignPublicIp?: bool
+     *     subnets?: list<string>|null,
+     *     securityGroups?: list<string>|null,
+     *     vpcId?: string|null,
+     *     assignPublicIp?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

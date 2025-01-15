@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Organizations\ListAccounts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $Email
- * @property string $Name
- * @property 'ACTIVE'|'SUSPENDED'|'PENDING_CLOSURE' $Status
- * @property 'INVITED'|'CREATED' $JoinedMethod
- * @property \Aws\Api\DateTimeResult $JoinedTimestamp
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Email
+ * @property string|null $Name
+ * @property 'ACTIVE'|'SUSPENDED'|'PENDING_CLOSURE'|null $Status
+ * @property 'INVITED'|'CREATED'|null $JoinedMethod
+ * @property \Aws\Api\DateTimeResult|null $JoinedTimestamp
  */
 class Account extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Email?: string,
-     *     Name?: string,
-     *     Status?: 'ACTIVE'|'SUSPENDED'|'PENDING_CLOSURE',
-     *     JoinedMethod?: 'INVITED'|'CREATED',
-     *     JoinedTimestamp?: \Aws\Api\DateTimeResult
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Email?: string|null,
+     *     Name?: string|null,
+     *     Status?: 'ACTIVE'|'SUSPENDED'|'PENDING_CLOSURE'|null,
+     *     JoinedMethod?: 'INVITED'|'CREATED'|null,
+     *     JoinedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

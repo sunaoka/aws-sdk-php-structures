@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Ec2\RequestSpotInstances;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\RequestSpotLaunchSpecification $LaunchSpecification
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property 'hibernate'|'stop'|'terminate' $InstanceInterruptionBehavior
- * @property bool $DryRun
- * @property string $SpotPrice
- * @property string $ClientToken
- * @property int $InstanceCount
- * @property 'one-time'|'persistent' $Type
- * @property \Aws\Api\DateTimeResult $ValidFrom
- * @property \Aws\Api\DateTimeResult $ValidUntil
- * @property string $LaunchGroup
- * @property string $AvailabilityZoneGroup
- * @property int $BlockDurationMinutes
+ * @property Shapes\RequestSpotLaunchSpecification|null $LaunchSpecification
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property 'hibernate'|'stop'|'terminate'|null $InstanceInterruptionBehavior
+ * @property bool|null $DryRun
+ * @property string|null $SpotPrice
+ * @property string|null $ClientToken
+ * @property int|null $InstanceCount
+ * @property 'one-time'|'persistent'|null $Type
+ * @property \Aws\Api\DateTimeResult|null $ValidFrom
+ * @property \Aws\Api\DateTimeResult|null $ValidUntil
+ * @property string|null $LaunchGroup
+ * @property string|null $AvailabilityZoneGroup
+ * @property int|null $BlockDurationMinutes
  */
 class RequestSpotInstancesRequest extends Request
 {
     /**
      * @param array{
-     *     LaunchSpecification?: Shapes\RequestSpotLaunchSpecification,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     InstanceInterruptionBehavior?: 'hibernate'|'stop'|'terminate',
-     *     DryRun?: bool,
-     *     SpotPrice?: string,
-     *     ClientToken?: string,
-     *     InstanceCount?: int,
-     *     Type?: 'one-time'|'persistent',
-     *     ValidFrom?: \Aws\Api\DateTimeResult,
-     *     ValidUntil?: \Aws\Api\DateTimeResult,
-     *     LaunchGroup?: string,
-     *     AvailabilityZoneGroup?: string,
-     *     BlockDurationMinutes?: int
+     *     LaunchSpecification?: Shapes\RequestSpotLaunchSpecification|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     InstanceInterruptionBehavior?: 'hibernate'|'stop'|'terminate'|null,
+     *     DryRun?: bool|null,
+     *     SpotPrice?: string|null,
+     *     ClientToken?: string|null,
+     *     InstanceCount?: int|null,
+     *     Type?: 'one-time'|'persistent'|null,
+     *     ValidFrom?: \Aws\Api\DateTimeResult|null,
+     *     ValidUntil?: \Aws\Api\DateTimeResult|null,
+     *     LaunchGroup?: string|null,
+     *     AvailabilityZoneGroup?: string|null,
+     *     BlockDurationMinutes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

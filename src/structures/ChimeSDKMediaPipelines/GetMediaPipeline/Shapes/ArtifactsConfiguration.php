@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AudioArtifactsConfiguration $Audio
  * @property VideoArtifactsConfiguration $Video
  * @property ContentArtifactsConfiguration $Content
- * @property CompositedVideoArtifactsConfiguration $CompositedVideo
+ * @property CompositedVideoArtifactsConfiguration|null $CompositedVideo
  */
 class ArtifactsConfiguration extends Shape
 {
@@ -17,7 +17,7 @@ class ArtifactsConfiguration extends Shape
      *     Audio: AudioArtifactsConfiguration,
      *     Video: VideoArtifactsConfiguration,
      *     Content: ContentArtifactsConfiguration,
-     *     CompositedVideo?: CompositedVideoArtifactsConfiguration
+     *     CompositedVideo?: CompositedVideoArtifactsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

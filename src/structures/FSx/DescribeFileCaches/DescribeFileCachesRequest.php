@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FSx\DescribeFileCaches;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $FileCacheIds
- * @property int<1, 2147483647> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $FileCacheIds
+ * @property int<1, 2147483647>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeFileCachesRequest extends Request
 {
     /**
      * @param array{
-     *     FileCacheIds?: list<string>,
-     *     MaxResults?: int<1, 2147483647>,
-     *     NextToken?: string
+     *     FileCacheIds?: list<string>|null,
+     *     MaxResults?: int<1, 2147483647>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

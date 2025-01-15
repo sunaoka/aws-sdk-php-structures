@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $EdgeDeploymentSuccessInStage
  * @property int $EdgeDeploymentPendingInStage
  * @property int $EdgeDeploymentFailedInStage
- * @property string $EdgeDeploymentStatusMessage
- * @property \Aws\Api\DateTimeResult $EdgeDeploymentStageStartTime
+ * @property string|null $EdgeDeploymentStatusMessage
+ * @property \Aws\Api\DateTimeResult|null $EdgeDeploymentStageStartTime
  */
 class EdgeDeploymentStatus extends Shape
 {
@@ -20,8 +20,8 @@ class EdgeDeploymentStatus extends Shape
      *     EdgeDeploymentSuccessInStage: int,
      *     EdgeDeploymentPendingInStage: int,
      *     EdgeDeploymentFailedInStage: int,
-     *     EdgeDeploymentStatusMessage?: string,
-     *     EdgeDeploymentStageStartTime?: \Aws\Api\DateTimeResult
+     *     EdgeDeploymentStatusMessage?: string|null,
+     *     EdgeDeploymentStageStartTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

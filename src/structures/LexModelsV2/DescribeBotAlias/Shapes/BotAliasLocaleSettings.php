@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property CodeHookSpecification $codeHookSpecification
+ * @property CodeHookSpecification|null $codeHookSpecification
  */
 class BotAliasLocaleSettings extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     codeHookSpecification?: CodeHookSpecification
+     *     codeHookSpecification?: CodeHookSpecification|null
      * } $args
      */
     public function __construct(array $args)

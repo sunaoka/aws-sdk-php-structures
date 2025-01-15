@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property bool $DeleteElasticIp
- * @property bool $DeleteVolumes
+ * @property bool|null $DeleteElasticIp
+ * @property bool|null $DeleteVolumes
  */
 class DeleteInstanceRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     DeleteElasticIp?: bool,
-     *     DeleteVolumes?: bool
+     *     DeleteElasticIp?: bool|null,
+     *     DeleteVolumes?: bool|null
      * } $args
      */
     public function __construct(array $args)

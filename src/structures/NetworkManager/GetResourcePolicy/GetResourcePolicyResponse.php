@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetResourcePolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PolicyDocument
+ * @property string|null $PolicyDocument
  */
 class GetResourcePolicyResponse extends Response
 {

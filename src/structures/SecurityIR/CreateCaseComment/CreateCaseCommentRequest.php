@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $caseId
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $body
  */
 class CreateCaseCommentRequest extends Request
@@ -14,7 +14,7 @@ class CreateCaseCommentRequest extends Request
     /**
      * @param array{
      *     caseId: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     body: string
      * } $args
      */

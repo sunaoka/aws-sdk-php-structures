@@ -5,30 +5,30 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribePredictor;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PredictorArn
- * @property string $PredictorName
- * @property string $AlgorithmArn
- * @property list<string> $AutoMLAlgorithmArns
- * @property int $ForecastHorizon
- * @property list<string> $ForecastTypes
- * @property bool $PerformAutoML
- * @property 'LatencyOptimized'|'AccuracyOptimized' $AutoMLOverrideStrategy
- * @property bool $PerformHPO
- * @property array<string, string> $TrainingParameters
- * @property Shapes\EvaluationParameters $EvaluationParameters
- * @property Shapes\HyperParameterTuningJobConfig $HPOConfig
- * @property Shapes\InputDataConfig $InputDataConfig
- * @property Shapes\FeaturizationConfig $FeaturizationConfig
- * @property Shapes\EncryptionConfig $EncryptionConfig
- * @property Shapes\PredictorExecutionDetails $PredictorExecutionDetails
- * @property int $EstimatedTimeRemainingInMinutes
- * @property bool $IsAutoPredictor
- * @property list<string> $DatasetImportJobArns
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
- * @property 'WAPE'|'RMSE'|'AverageWeightedQuantileLoss'|'MASE'|'MAPE' $OptimizationMetric
+ * @property string|null $PredictorArn
+ * @property string|null $PredictorName
+ * @property string|null $AlgorithmArn
+ * @property list<string>|null $AutoMLAlgorithmArns
+ * @property int|null $ForecastHorizon
+ * @property list<string>|null $ForecastTypes
+ * @property bool|null $PerformAutoML
+ * @property 'LatencyOptimized'|'AccuracyOptimized'|null $AutoMLOverrideStrategy
+ * @property bool|null $PerformHPO
+ * @property array<string, string>|null $TrainingParameters
+ * @property Shapes\EvaluationParameters|null $EvaluationParameters
+ * @property Shapes\HyperParameterTuningJobConfig|null $HPOConfig
+ * @property Shapes\InputDataConfig|null $InputDataConfig
+ * @property Shapes\FeaturizationConfig|null $FeaturizationConfig
+ * @property Shapes\EncryptionConfig|null $EncryptionConfig
+ * @property Shapes\PredictorExecutionDetails|null $PredictorExecutionDetails
+ * @property int|null $EstimatedTimeRemainingInMinutes
+ * @property bool|null $IsAutoPredictor
+ * @property list<string>|null $DatasetImportJobArns
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
+ * @property 'WAPE'|'RMSE'|'AverageWeightedQuantileLoss'|'MASE'|'MAPE'|null $OptimizationMetric
  */
 class DescribePredictorResponse extends Response
 {

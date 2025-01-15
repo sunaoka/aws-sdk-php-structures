@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterId
- * @property string $InstanceGroupId
- * @property list<'MASTER'|'CORE'|'TASK'> $InstanceGroupTypes
- * @property string $InstanceFleetId
- * @property 'MASTER'|'CORE'|'TASK' $InstanceFleetType
- * @property list<'AWAITING_FULFILLMENT'|'PROVISIONING'|'BOOTSTRAPPING'|'RUNNING'|'TERMINATED'> $InstanceStates
- * @property string $Marker
+ * @property string|null $InstanceGroupId
+ * @property list<'MASTER'|'CORE'|'TASK'>|null $InstanceGroupTypes
+ * @property string|null $InstanceFleetId
+ * @property 'MASTER'|'CORE'|'TASK'|null $InstanceFleetType
+ * @property list<'AWAITING_FULFILLMENT'|'PROVISIONING'|'BOOTSTRAPPING'|'RUNNING'|'TERMINATED'>|null $InstanceStates
+ * @property string|null $Marker
  */
 class ListInstancesRequest extends Request
 {
     /**
      * @param array{
      *     ClusterId: string,
-     *     InstanceGroupId?: string,
-     *     InstanceGroupTypes?: list<'MASTER'|'CORE'|'TASK'>,
-     *     InstanceFleetId?: string,
-     *     InstanceFleetType?: 'MASTER'|'CORE'|'TASK',
-     *     InstanceStates?: list<'AWAITING_FULFILLMENT'|'PROVISIONING'|'BOOTSTRAPPING'|'RUNNING'|'TERMINATED'>,
-     *     Marker?: string
+     *     InstanceGroupId?: string|null,
+     *     InstanceGroupTypes?: list<'MASTER'|'CORE'|'TASK'>|null,
+     *     InstanceFleetId?: string|null,
+     *     InstanceFleetType?: 'MASTER'|'CORE'|'TASK'|null,
+     *     InstanceStates?: list<'AWAITING_FULFILLMENT'|'PROVISIONING'|'BOOTSTRAPPING'|'RUNNING'|'TERMINATED'>|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args)

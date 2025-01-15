@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $HsmPartitionName
  * @property string $HsmPartitionPassword
  * @property string $HsmServerPublicCertificate
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateHsmConfigurationRequest extends Request
 {
@@ -23,7 +23,7 @@ class CreateHsmConfigurationRequest extends Request
      *     HsmPartitionName: string,
      *     HsmPartitionPassword: string,
      *     HsmServerPublicCertificate: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

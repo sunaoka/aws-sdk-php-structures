@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ListRouteCalculatorsResponseEntry> $Entries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListRouteCalculatorsResponse extends Response
 {

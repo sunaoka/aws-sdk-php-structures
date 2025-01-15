@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\CreateSourceLocation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AccessConfiguration $AccessConfiguration
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property Shapes\DefaultSegmentDeliveryConfiguration $DefaultSegmentDeliveryConfiguration
- * @property Shapes\HttpConfiguration $HttpConfiguration
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property list<Shapes\SegmentDeliveryConfiguration> $SegmentDeliveryConfigurations
- * @property string $SourceLocationName
- * @property array<string, string> $Tags
+ * @property Shapes\AccessConfiguration|null $AccessConfiguration
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property Shapes\DefaultSegmentDeliveryConfiguration|null $DefaultSegmentDeliveryConfiguration
+ * @property Shapes\HttpConfiguration|null $HttpConfiguration
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property list<Shapes\SegmentDeliveryConfiguration>|null $SegmentDeliveryConfigurations
+ * @property string|null $SourceLocationName
+ * @property array<string, string>|null $Tags
  */
 class CreateSourceLocationResponse extends Response
 {

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Cidr
- * @property string $Asn
- * @property bool $DryRun
- * @property string $NetworkBorderGroup
+ * @property string|null $Asn
+ * @property bool|null $DryRun
+ * @property string|null $NetworkBorderGroup
  */
 class AdvertiseByoipCidrRequest extends Request
 {
     /**
      * @param array{
      *     Cidr: string,
-     *     Asn?: string,
-     *     DryRun?: bool,
-     *     NetworkBorderGroup?: string
+     *     Asn?: string|null,
+     *     DryRun?: bool|null,
+     *     NetworkBorderGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

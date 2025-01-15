@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListProjects;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $arn
- * @property string $nextToken
+ * @property string|null $arn
+ * @property string|null $nextToken
  */
 class ListProjectsRequest extends Request
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     nextToken?: string
+     *     arn?: string|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

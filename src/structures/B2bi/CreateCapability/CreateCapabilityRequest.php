@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property 'edi' $type
  * @property Shapes\CapabilityConfiguration $configuration
- * @property list<Shapes\S3Location> $instructionsDocuments
- * @property string $clientToken
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\S3Location>|null $instructionsDocuments
+ * @property string|null $clientToken
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateCapabilityRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateCapabilityRequest extends Request
      *     name: string,
      *     type: 'edi',
      *     configuration: Shapes\CapabilityConfiguration,
-     *     instructionsDocuments?: list<Shapes\S3Location>,
-     *     clientToken?: string,
-     *     tags?: list<Shapes\Tag>
+     *     instructionsDocuments?: list<Shapes\S3Location>|null,
+     *     clientToken?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Tables\PutTableBucketMaintenanceConfiguration
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IcebergUnreferencedFileRemovalSettings $icebergUnreferencedFileRemoval
+ * @property IcebergUnreferencedFileRemovalSettings|null $icebergUnreferencedFileRemoval
  */
 class TableBucketMaintenanceSettings extends Shape
 {
     /**
-     * @param array{icebergUnreferencedFileRemoval?: IcebergUnreferencedFileRemovalSettings} $args
+     * @param array{icebergUnreferencedFileRemoval?: IcebergUnreferencedFileRemovalSettings|null} $args
      */
     public function __construct(array $args = [])
     {

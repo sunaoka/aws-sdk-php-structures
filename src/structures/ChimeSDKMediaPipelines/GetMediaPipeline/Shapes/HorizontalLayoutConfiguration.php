@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\GetMediaPipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'JoinSequence'|'SpeakerSequence' $TileOrder
- * @property 'Top'|'Bottom' $TilePosition
- * @property int<1, 10> $TileCount
- * @property string $TileAspectRatio
+ * @property 'JoinSequence'|'SpeakerSequence'|null $TileOrder
+ * @property 'Top'|'Bottom'|null $TilePosition
+ * @property int<1, 10>|null $TileCount
+ * @property string|null $TileAspectRatio
  */
 class HorizontalLayoutConfiguration extends Shape
 {
     /**
      * @param array{
-     *     TileOrder?: 'JoinSequence'|'SpeakerSequence',
-     *     TilePosition?: 'Top'|'Bottom',
-     *     TileCount?: int<1, 10>,
-     *     TileAspectRatio?: string
+     *     TileOrder?: 'JoinSequence'|'SpeakerSequence'|null,
+     *     TilePosition?: 'Top'|'Bottom'|null,
+     *     TileCount?: int<1, 10>|null,
+     *     TileAspectRatio?: string|null
      * } $args
      */
     public function __construct(array $args = [])

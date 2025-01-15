@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListReceivedLicenses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LicenseArn
- * @property string $LicenseName
- * @property string $ProductName
- * @property string $ProductSKU
- * @property IssuerDetails $Issuer
- * @property string $HomeRegion
- * @property 'AVAILABLE'|'PENDING_AVAILABLE'|'DEACTIVATED'|'SUSPENDED'|'EXPIRED'|'PENDING_DELETE'|'DELETED' $Status
- * @property DatetimeRange $Validity
- * @property string $Beneficiary
- * @property list<Entitlement> $Entitlements
- * @property ConsumptionConfiguration $ConsumptionConfiguration
- * @property list<Metadata> $LicenseMetadata
- * @property string $CreateTime
- * @property string $Version
- * @property ReceivedMetadata $ReceivedMetadata
+ * @property string|null $LicenseArn
+ * @property string|null $LicenseName
+ * @property string|null $ProductName
+ * @property string|null $ProductSKU
+ * @property IssuerDetails|null $Issuer
+ * @property string|null $HomeRegion
+ * @property 'AVAILABLE'|'PENDING_AVAILABLE'|'DEACTIVATED'|'SUSPENDED'|'EXPIRED'|'PENDING_DELETE'|'DELETED'|null $Status
+ * @property DatetimeRange|null $Validity
+ * @property string|null $Beneficiary
+ * @property list<Entitlement>|null $Entitlements
+ * @property ConsumptionConfiguration|null $ConsumptionConfiguration
+ * @property list<Metadata>|null $LicenseMetadata
+ * @property string|null $CreateTime
+ * @property string|null $Version
+ * @property ReceivedMetadata|null $ReceivedMetadata
  */
 class GrantedLicense extends Shape
 {
     /**
      * @param array{
-     *     LicenseArn?: string,
-     *     LicenseName?: string,
-     *     ProductName?: string,
-     *     ProductSKU?: string,
-     *     Issuer?: IssuerDetails,
-     *     HomeRegion?: string,
-     *     Status?: 'AVAILABLE'|'PENDING_AVAILABLE'|'DEACTIVATED'|'SUSPENDED'|'EXPIRED'|'PENDING_DELETE'|'DELETED',
-     *     Validity?: DatetimeRange,
-     *     Beneficiary?: string,
-     *     Entitlements?: list<Entitlement>,
-     *     ConsumptionConfiguration?: ConsumptionConfiguration,
-     *     LicenseMetadata?: list<Metadata>,
-     *     CreateTime?: string,
-     *     Version?: string,
-     *     ReceivedMetadata?: ReceivedMetadata
+     *     LicenseArn?: string|null,
+     *     LicenseName?: string|null,
+     *     ProductName?: string|null,
+     *     ProductSKU?: string|null,
+     *     Issuer?: IssuerDetails|null,
+     *     HomeRegion?: string|null,
+     *     Status?: 'AVAILABLE'|'PENDING_AVAILABLE'|'DEACTIVATED'|'SUSPENDED'|'EXPIRED'|'PENDING_DELETE'|'DELETED'|null,
+     *     Validity?: DatetimeRange|null,
+     *     Beneficiary?: string|null,
+     *     Entitlements?: list<Entitlement>|null,
+     *     ConsumptionConfiguration?: ConsumptionConfiguration|null,
+     *     LicenseMetadata?: list<Metadata>|null,
+     *     CreateTime?: string|null,
+     *     Version?: string|null,
+     *     ReceivedMetadata?: ReceivedMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

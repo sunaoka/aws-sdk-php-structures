@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeClassicLinkInstances;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property list<string> $InstanceIds
- * @property list<Shapes\Filter> $Filters
- * @property string $NextToken
- * @property int<5, 1000> $MaxResults
+ * @property bool|null $DryRun
+ * @property list<string>|null $InstanceIds
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<5, 1000>|null $MaxResults
  */
 class DescribeClassicLinkInstancesRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     InstanceIds?: list<string>,
-     *     Filters?: list<Shapes\Filter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<5, 1000>
+     *     DryRun?: bool|null,
+     *     InstanceIds?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<5, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

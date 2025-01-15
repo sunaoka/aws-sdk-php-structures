@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientVpnEndpointId
  * @property string $TargetNetworkCidr
- * @property string $AccessGroupId
- * @property bool $RevokeAllGroups
- * @property bool $DryRun
+ * @property string|null $AccessGroupId
+ * @property bool|null $RevokeAllGroups
+ * @property bool|null $DryRun
  */
 class RevokeClientVpnIngressRequest extends Request
 {
@@ -17,9 +17,9 @@ class RevokeClientVpnIngressRequest extends Request
      * @param array{
      *     ClientVpnEndpointId: string,
      *     TargetNetworkCidr: string,
-     *     AccessGroupId?: string,
-     *     RevokeAllGroups?: bool,
-     *     DryRun?: bool
+     *     AccessGroupId?: string|null,
+     *     RevokeAllGroups?: bool|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

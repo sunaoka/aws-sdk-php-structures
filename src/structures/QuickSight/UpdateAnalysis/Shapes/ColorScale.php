@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<DataColor> $Colors
  * @property 'DISCRETE'|'GRADIENT' $ColorFillType
- * @property DataColor $NullValueColor
+ * @property DataColor|null $NullValueColor
  */
 class ColorScale extends Shape
 {
@@ -15,7 +15,7 @@ class ColorScale extends Shape
      * @param array{
      *     Colors: list<DataColor>,
      *     ColorFillType: 'DISCRETE'|'GRADIENT',
-     *     NullValueColor?: DataColor
+     *     NullValueColor?: DataColor|null
      * } $args
      */
     public function __construct(array $args)

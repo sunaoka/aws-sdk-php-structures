@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property list<Shapes\Resource> $resources
- * @property array<string, string> $properties
- * @property string $clientToken
- * @property array<string, string> $tags
- * @property Shapes\ServiceSettings $serviceSettings
+ * @property array<string, string>|null $properties
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
+ * @property Shapes\ServiceSettings|null $serviceSettings
  */
 class CreateTestConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     resources: list<Shapes\Resource>,
-     *     properties?: array<string, string>,
-     *     clientToken?: string,
-     *     tags?: array<string, string>,
-     *     serviceSettings?: Shapes\ServiceSettings
+     *     properties?: array<string, string>|null,
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null,
+     *     serviceSettings?: Shapes\ServiceSettings|null
      * } $args
      */
     public function __construct(array $args)

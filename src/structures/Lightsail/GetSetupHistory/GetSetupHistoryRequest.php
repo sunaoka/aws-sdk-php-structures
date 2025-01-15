@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $resourceName
- * @property string $pageToken
+ * @property string|null $pageToken
  */
 class GetSetupHistoryRequest extends Request
 {
     /**
      * @param array{
      *     resourceName: string,
-     *     pageToken?: string
+     *     pageToken?: string|null
      * } $args
      */
     public function __construct(array $args)

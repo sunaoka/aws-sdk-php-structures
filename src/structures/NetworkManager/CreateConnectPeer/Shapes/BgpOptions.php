@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateConnectPeer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PeerAsn
+ * @property int|null $PeerAsn
  */
 class BgpOptions extends Shape
 {
     /**
-     * @param array{PeerAsn?: int} $args
+     * @param array{PeerAsn?: int|null} $args
      */
     public function __construct(array $args = [])
     {

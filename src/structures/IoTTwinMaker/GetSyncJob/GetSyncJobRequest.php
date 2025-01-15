@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $syncSource
- * @property string $workspaceId
+ * @property string|null $workspaceId
  */
 class GetSyncJobRequest extends Request
 {
     /**
      * @param array{
      *     syncSource: string,
-     *     workspaceId?: string
+     *     workspaceId?: string|null
      * } $args
      */
     public function __construct(array $args)

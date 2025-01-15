@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAccountCustomization;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $AwsAccountId
- * @property string $Namespace
- * @property Shapes\AccountCustomization $AccountCustomization
- * @property string $RequestId
- * @property int $Status
+ * @property string|null $Arn
+ * @property string|null $AwsAccountId
+ * @property string|null $Namespace
+ * @property Shapes\AccountCustomization|null $AccountCustomization
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class CreateAccountCustomizationResponse extends Response
 {

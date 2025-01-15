@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EXPANDED'|'COLLAPSED' $VisibilityState
+ * @property 'EXPANDED'|'COLLAPSED'|null $VisibilityState
  */
 class SheetControlsOption extends Shape
 {
     /**
-     * @param array{VisibilityState?: 'EXPANDED'|'COLLAPSED'} $args
+     * @param array{VisibilityState?: 'EXPANDED'|'COLLAPSED'|null} $args
      */
     public function __construct(array $args = [])
     {

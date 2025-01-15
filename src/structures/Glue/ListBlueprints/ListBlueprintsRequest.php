@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\ListBlueprints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 25> $MaxResults
- * @property array<string, string> $Tags
+ * @property string|null $NextToken
+ * @property int<1, 25>|null $MaxResults
+ * @property array<string, string>|null $Tags
  */
 class ListBlueprintsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 25>,
-     *     Tags?: array<string, string>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 25>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DatabaseName
  * @property int $MemoryDuration
  * @property int $MagneticDuration
- * @property bool $CdcInsertsAndUpdates
- * @property bool $EnableMagneticStoreWrites
+ * @property bool|null $CdcInsertsAndUpdates
+ * @property bool|null $EnableMagneticStoreWrites
  */
 class TimestreamSettings extends Shape
 {
@@ -18,8 +18,8 @@ class TimestreamSettings extends Shape
      *     DatabaseName: string,
      *     MemoryDuration: int,
      *     MagneticDuration: int,
-     *     CdcInsertsAndUpdates?: bool,
-     *     EnableMagneticStoreWrites?: bool
+     *     CdcInsertsAndUpdates?: bool|null,
+     *     EnableMagneticStoreWrites?: bool|null
      * } $args
      */
     public function __construct(array $args)

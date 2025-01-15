@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\StopChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HlsAkamaiSettings $HlsAkamaiSettings
- * @property HlsBasicPutSettings $HlsBasicPutSettings
- * @property HlsMediaStoreSettings $HlsMediaStoreSettings
- * @property HlsS3Settings $HlsS3Settings
- * @property HlsWebdavSettings $HlsWebdavSettings
+ * @property HlsAkamaiSettings|null $HlsAkamaiSettings
+ * @property HlsBasicPutSettings|null $HlsBasicPutSettings
+ * @property HlsMediaStoreSettings|null $HlsMediaStoreSettings
+ * @property HlsS3Settings|null $HlsS3Settings
+ * @property HlsWebdavSettings|null $HlsWebdavSettings
  */
 class HlsCdnSettings extends Shape
 {
     /**
      * @param array{
-     *     HlsAkamaiSettings?: HlsAkamaiSettings,
-     *     HlsBasicPutSettings?: HlsBasicPutSettings,
-     *     HlsMediaStoreSettings?: HlsMediaStoreSettings,
-     *     HlsS3Settings?: HlsS3Settings,
-     *     HlsWebdavSettings?: HlsWebdavSettings
+     *     HlsAkamaiSettings?: HlsAkamaiSettings|null,
+     *     HlsBasicPutSettings?: HlsBasicPutSettings|null,
+     *     HlsMediaStoreSettings?: HlsMediaStoreSettings|null,
+     *     HlsS3Settings?: HlsS3Settings|null,
+     *     HlsWebdavSettings?: HlsWebdavSettings|null
      * } $args
      */
     public function __construct(array $args = [])

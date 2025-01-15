@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property DocumentAttribute $DocumentAttribute
- * @property list<ExpandedResultItem> $ExpandedResults
+ * @property list<ExpandedResultItem>|null $ExpandedResults
  */
 class CollapsedResultDetail extends Shape
 {
     /**
      * @param array{
      *     DocumentAttribute: DocumentAttribute,
-     *     ExpandedResults?: list<ExpandedResultItem>
+     *     ExpandedResults?: list<ExpandedResultItem>|null
      * } $args
      */
     public function __construct(array $args)

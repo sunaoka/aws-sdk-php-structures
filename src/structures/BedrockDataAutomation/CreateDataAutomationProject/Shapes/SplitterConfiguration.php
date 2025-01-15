@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\CreateDataAutomationProje
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $state
+ * @property 'ENABLED'|'DISABLED'|null $state
  */
 class SplitterConfiguration extends Shape
 {
     /**
-     * @param array{state?: 'ENABLED'|'DISABLED'} $args
+     * @param array{state?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

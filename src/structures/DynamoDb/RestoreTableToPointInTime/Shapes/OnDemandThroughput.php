@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DynamoDb\RestoreTableToPointInTime\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxReadRequestUnits
- * @property int $MaxWriteRequestUnits
+ * @property int|null $MaxReadRequestUnits
+ * @property int|null $MaxWriteRequestUnits
  */
 class OnDemandThroughput extends Shape
 {
     /**
      * @param array{
-     *     MaxReadRequestUnits?: int,
-     *     MaxWriteRequestUnits?: int
+     *     MaxReadRequestUnits?: int|null,
+     *     MaxWriteRequestUnits?: int|null
      * } $args
      */
     public function __construct(array $args = [])

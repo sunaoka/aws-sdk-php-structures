@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\UpdateCampaignChannelSubtype
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TelephonyChannelSubtypeConfig $telephony
- * @property SmsChannelSubtypeConfig $sms
- * @property EmailChannelSubtypeConfig $email
+ * @property TelephonyChannelSubtypeConfig|null $telephony
+ * @property SmsChannelSubtypeConfig|null $sms
+ * @property EmailChannelSubtypeConfig|null $email
  */
 class ChannelSubtypeConfig extends Shape
 {
     /**
      * @param array{
-     *     telephony?: TelephonyChannelSubtypeConfig,
-     *     sms?: SmsChannelSubtypeConfig,
-     *     email?: EmailChannelSubtypeConfig
+     *     telephony?: TelephonyChannelSubtypeConfig|null,
+     *     sms?: SmsChannelSubtypeConfig|null,
+     *     email?: EmailChannelSubtypeConfig|null
      * } $args
      */
     public function __construct(array $args = [])

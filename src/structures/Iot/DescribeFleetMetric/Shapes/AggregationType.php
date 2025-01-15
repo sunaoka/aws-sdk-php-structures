@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Statistics'|'Percentiles'|'Cardinality' $name
- * @property list<string> $values
+ * @property list<string>|null $values
  */
 class AggregationType extends Shape
 {
     /**
      * @param array{
      *     name: 'Statistics'|'Percentiles'|'Cardinality',
-     *     values?: list<string>
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Sfn\DescribeStateMachineForExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $logGroupArn
+ * @property string|null $logGroupArn
  */
 class CloudWatchLogsLogGroup extends Shape
 {
     /**
-     * @param array{logGroupArn?: string} $args
+     * @param array{logGroupArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

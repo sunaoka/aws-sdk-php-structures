@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WAFV2\CheckCapacity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CountAction $Count
- * @property NoneAction $None
+ * @property CountAction|null $Count
+ * @property NoneAction|null $None
  */
 class OverrideAction extends Shape
 {
     /**
      * @param array{
-     *     Count?: CountAction,
-     *     None?: NoneAction
+     *     Count?: CountAction|null,
+     *     None?: NoneAction|null
      * } $args
      */
     public function __construct(array $args = [])

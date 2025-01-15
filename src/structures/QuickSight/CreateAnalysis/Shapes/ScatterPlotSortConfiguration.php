@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ItemsLimitConfiguration $ScatterPlotLimitConfiguration
+ * @property ItemsLimitConfiguration|null $ScatterPlotLimitConfiguration
  */
 class ScatterPlotSortConfiguration extends Shape
 {
     /**
-     * @param array{ScatterPlotLimitConfiguration?: ItemsLimitConfiguration} $args
+     * @param array{ScatterPlotLimitConfiguration?: ItemsLimitConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

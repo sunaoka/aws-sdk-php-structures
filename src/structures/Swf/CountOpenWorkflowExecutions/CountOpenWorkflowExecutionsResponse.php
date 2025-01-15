@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property int<0, max> $count
- * @property bool $truncated
+ * @property bool|null $truncated
  */
 class CountOpenWorkflowExecutionsResponse extends Response
 {

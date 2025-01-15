@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ChannelName
  * @property DataSource $DataSource
- * @property string $ContentType
- * @property 'None'|'Gzip' $CompressionType
- * @property 'None'|'RecordIO' $RecordWrapperType
- * @property 'Pipe'|'File'|'FastFile' $InputMode
- * @property ShuffleConfig $ShuffleConfig
+ * @property string|null $ContentType
+ * @property 'None'|'Gzip'|null $CompressionType
+ * @property 'None'|'RecordIO'|null $RecordWrapperType
+ * @property 'Pipe'|'File'|'FastFile'|null $InputMode
+ * @property ShuffleConfig|null $ShuffleConfig
  */
 class Channel extends Shape
 {
@@ -19,11 +19,11 @@ class Channel extends Shape
      * @param array{
      *     ChannelName: string,
      *     DataSource: DataSource,
-     *     ContentType?: string,
-     *     CompressionType?: 'None'|'Gzip',
-     *     RecordWrapperType?: 'None'|'RecordIO',
-     *     InputMode?: 'Pipe'|'File'|'FastFile',
-     *     ShuffleConfig?: ShuffleConfig
+     *     ContentType?: string|null,
+     *     CompressionType?: 'None'|'Gzip'|null,
+     *     RecordWrapperType?: 'None'|'RecordIO'|null,
+     *     InputMode?: 'Pipe'|'File'|'FastFile'|null,
+     *     ShuffleConfig?: ShuffleConfig|null
      * } $args
      */
     public function __construct(array $args)

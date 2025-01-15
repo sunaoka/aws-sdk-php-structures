@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $collaborationInstruction
  * @property string $collaboratorId
  * @property string $collaboratorName
- * @property 'TO_COLLABORATOR'|'DISABLED' $relayConversationHistory
+ * @property 'TO_COLLABORATOR'|'DISABLED'|null $relayConversationHistory
  */
 class UpdateAgentCollaboratorRequest extends Request
 {
@@ -23,7 +23,7 @@ class UpdateAgentCollaboratorRequest extends Request
      *     collaborationInstruction: string,
      *     collaboratorId: string,
      *     collaboratorName: string,
-     *     relayConversationHistory?: 'TO_COLLABORATOR'|'DISABLED'
+     *     relayConversationHistory?: 'TO_COLLABORATOR'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

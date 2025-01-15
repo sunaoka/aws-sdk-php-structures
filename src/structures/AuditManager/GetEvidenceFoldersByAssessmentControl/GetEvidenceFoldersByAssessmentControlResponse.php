@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AuditManager\GetEvidenceFoldersByAssessmentCont
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AssessmentEvidenceFolder> $evidenceFolders
- * @property string $nextToken
+ * @property list<Shapes\AssessmentEvidenceFolder>|null $evidenceFolders
+ * @property string|null $nextToken
  */
 class GetEvidenceFoldersByAssessmentControlResponse extends Response
 {

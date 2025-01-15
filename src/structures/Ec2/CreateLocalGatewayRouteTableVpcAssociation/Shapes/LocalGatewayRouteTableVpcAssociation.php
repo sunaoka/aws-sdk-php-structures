@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLocalGatewayRouteTableVpcAssociation\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LocalGatewayRouteTableVpcAssociationId
- * @property string $LocalGatewayRouteTableId
- * @property string $LocalGatewayRouteTableArn
- * @property string $LocalGatewayId
- * @property string $VpcId
- * @property string $OwnerId
- * @property string $State
- * @property list<Tag> $Tags
+ * @property string|null $LocalGatewayRouteTableVpcAssociationId
+ * @property string|null $LocalGatewayRouteTableId
+ * @property string|null $LocalGatewayRouteTableArn
+ * @property string|null $LocalGatewayId
+ * @property string|null $VpcId
+ * @property string|null $OwnerId
+ * @property string|null $State
+ * @property list<Tag>|null $Tags
  */
 class LocalGatewayRouteTableVpcAssociation extends Shape
 {
     /**
      * @param array{
-     *     LocalGatewayRouteTableVpcAssociationId?: string,
-     *     LocalGatewayRouteTableId?: string,
-     *     LocalGatewayRouteTableArn?: string,
-     *     LocalGatewayId?: string,
-     *     VpcId?: string,
-     *     OwnerId?: string,
-     *     State?: string,
-     *     Tags?: list<Tag>
+     *     LocalGatewayRouteTableVpcAssociationId?: string|null,
+     *     LocalGatewayRouteTableId?: string|null,
+     *     LocalGatewayRouteTableArn?: string|null,
+     *     LocalGatewayId?: string|null,
+     *     VpcId?: string|null,
+     *     OwnerId?: string|null,
+     *     State?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

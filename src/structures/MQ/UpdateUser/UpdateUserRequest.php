@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BrokerId
- * @property bool $ConsoleAccess
- * @property list<string> $Groups
- * @property string $Password
+ * @property bool|null $ConsoleAccess
+ * @property list<string>|null $Groups
+ * @property string|null $Password
  * @property string $Username
- * @property bool $ReplicationUser
+ * @property bool|null $ReplicationUser
  */
 class UpdateUserRequest extends Request
 {
     /**
      * @param array{
      *     BrokerId: string,
-     *     ConsoleAccess?: bool,
-     *     Groups?: list<string>,
-     *     Password?: string,
+     *     ConsoleAccess?: bool|null,
+     *     Groups?: list<string>|null,
+     *     Password?: string|null,
      *     Username: string,
-     *     ReplicationUser?: bool
+     *     ReplicationUser?: bool|null
      * } $args
      */
     public function __construct(array $args)

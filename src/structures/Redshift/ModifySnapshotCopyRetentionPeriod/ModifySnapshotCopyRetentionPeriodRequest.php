@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClusterIdentifier
  * @property int $RetentionPeriod
- * @property bool $Manual
+ * @property bool|null $Manual
  */
 class ModifySnapshotCopyRetentionPeriodRequest extends Request
 {
@@ -15,7 +15,7 @@ class ModifySnapshotCopyRetentionPeriodRequest extends Request
      * @param array{
      *     ClusterIdentifier: string,
      *     RetentionPeriod: int,
-     *     Manual?: bool
+     *     Manual?: bool|null
      * } $args
      */
     public function __construct(array $args)

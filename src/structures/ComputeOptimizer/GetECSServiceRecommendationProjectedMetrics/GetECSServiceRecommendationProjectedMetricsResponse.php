@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendationPro
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ECSServiceRecommendedOptionProjectedMetric> $recommendedOptionProjectedMetrics
+ * @property list<Shapes\ECSServiceRecommendedOptionProjectedMetric>|null $recommendedOptionProjectedMetrics
  */
 class GetECSServiceRecommendationProjectedMetricsResponse extends Response
 {

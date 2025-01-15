@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $channelName
- * @property Shapes\ChannelStorage $channelStorage
- * @property Shapes\RetentionPeriod $retentionPeriod
- * @property list<Shapes\Tag> $tags
+ * @property Shapes\ChannelStorage|null $channelStorage
+ * @property Shapes\RetentionPeriod|null $retentionPeriod
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateChannelRequest extends Request
 {
     /**
      * @param array{
      *     channelName: string,
-     *     channelStorage?: Shapes\ChannelStorage,
-     *     retentionPeriod?: Shapes\RetentionPeriod,
-     *     tags?: list<Shapes\Tag>
+     *     channelStorage?: Shapes\ChannelStorage|null,
+     *     retentionPeriod?: Shapes\RetentionPeriod|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

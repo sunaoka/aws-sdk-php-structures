@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BLOCKED' $action
- * @property string $name
- * @property 'DENY' $type
+ * @property 'BLOCKED'|null $action
+ * @property string|null $name
+ * @property 'DENY'|null $type
  */
 class GuardrailTopic extends Shape
 {
     /**
      * @param array{
-     *     action?: 'BLOCKED',
-     *     name?: string,
-     *     type?: 'DENY'
+     *     action?: 'BLOCKED'|null,
+     *     name?: string|null,
+     *     type?: 'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

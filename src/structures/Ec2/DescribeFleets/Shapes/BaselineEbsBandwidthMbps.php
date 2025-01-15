@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Min
- * @property int $Max
+ * @property int|null $Min
+ * @property int|null $Max
  */
 class BaselineEbsBandwidthMbps extends Shape
 {
     /**
      * @param array{
-     *     Min?: int,
-     *     Max?: int
+     *     Min?: int|null,
+     *     Max?: int|null
      * } $args
      */
     public function __construct(array $args = [])

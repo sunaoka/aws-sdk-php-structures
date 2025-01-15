@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobId
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED' $lifecycleStatus
- * @property \Aws\Api\DateTimeResult $endedAt
- * @property 'ENDED' $targetLifecycleStatus
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property 'ENDED'|null $targetLifecycleStatus
  */
 class WorkerSessionSummary extends Shape
 {
@@ -22,8 +22,8 @@ class WorkerSessionSummary extends Shape
      *     jobId: string,
      *     startedAt: \Aws\Api\DateTimeResult,
      *     lifecycleStatus: 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED',
-     *     endedAt?: \Aws\Api\DateTimeResult,
-     *     targetLifecycleStatus?: 'ENDED'
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     targetLifecycleStatus?: 'ENDED'|null
      * } $args
      */
     public function __construct(array $args)

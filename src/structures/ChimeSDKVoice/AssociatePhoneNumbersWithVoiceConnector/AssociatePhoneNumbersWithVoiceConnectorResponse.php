@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\AssociatePhoneNumbersWithVoiceCon
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\PhoneNumberError> $PhoneNumberErrors
+ * @property list<Shapes\PhoneNumberError>|null $PhoneNumberErrors
  */
 class AssociatePhoneNumbersWithVoiceConnectorResponse extends Response
 {

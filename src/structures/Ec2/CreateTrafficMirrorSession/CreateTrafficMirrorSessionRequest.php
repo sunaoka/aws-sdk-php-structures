@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $NetworkInterfaceId
  * @property string $TrafficMirrorTargetId
  * @property string $TrafficMirrorFilterId
- * @property int $PacketLength
+ * @property int|null $PacketLength
  * @property int $SessionNumber
- * @property int $VirtualNetworkId
- * @property string $Description
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
- * @property string $ClientToken
+ * @property int|null $VirtualNetworkId
+ * @property string|null $Description
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
  */
 class CreateTrafficMirrorSessionRequest extends Request
 {
@@ -23,13 +23,13 @@ class CreateTrafficMirrorSessionRequest extends Request
      *     NetworkInterfaceId: string,
      *     TrafficMirrorTargetId: string,
      *     TrafficMirrorFilterId: string,
-     *     PacketLength?: int,
+     *     PacketLength?: int|null,
      *     SessionNumber: int,
-     *     VirtualNetworkId?: int,
-     *     Description?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool,
-     *     ClientToken?: string
+     *     VirtualNetworkId?: int|null,
+     *     Description?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

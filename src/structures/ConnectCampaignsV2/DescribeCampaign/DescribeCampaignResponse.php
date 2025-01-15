@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\DescribeCampaign;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Campaign $campaign
+ * @property Shapes\Campaign|null $campaign
  */
 class DescribeCampaignResponse extends Response
 {

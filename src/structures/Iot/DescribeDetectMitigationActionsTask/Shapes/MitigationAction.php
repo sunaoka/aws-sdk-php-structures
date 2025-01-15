@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeDetectMitigationActionsTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $id
- * @property string $roleArn
- * @property MitigationActionParams $actionParams
+ * @property string|null $name
+ * @property string|null $id
+ * @property string|null $roleArn
+ * @property MitigationActionParams|null $actionParams
  */
 class MitigationAction extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     id?: string,
-     *     roleArn?: string,
-     *     actionParams?: MitigationActionParams
+     *     name?: string|null,
+     *     id?: string|null,
+     *     roleArn?: string|null,
+     *     actionParams?: MitigationActionParams|null
      * } $args
      */
     public function __construct(array $args = [])

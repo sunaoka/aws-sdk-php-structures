@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApiKeyName
- * @property string $ApiKeyValue
+ * @property string|null $ApiKeyName
+ * @property string|null $ApiKeyValue
  */
 class UpdateConnectionApiKeyAuthRequestParameters extends Shape
 {
     /**
      * @param array{
-     *     ApiKeyName?: string,
-     *     ApiKeyValue?: string
+     *     ApiKeyName?: string|null,
+     *     ApiKeyValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

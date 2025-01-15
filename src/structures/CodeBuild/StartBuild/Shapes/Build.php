@@ -5,77 +5,77 @@ namespace Sunaoka\Aws\Structures\CodeBuild\StartBuild\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $arn
- * @property int $buildNumber
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property string $currentPhase
- * @property 'SUCCEEDED'|'FAILED'|'FAULT'|'TIMED_OUT'|'IN_PROGRESS'|'STOPPED' $buildStatus
- * @property string $sourceVersion
- * @property string $resolvedSourceVersion
- * @property string $projectName
- * @property list<BuildPhase> $phases
- * @property ProjectSource $source
- * @property list<ProjectSource> $secondarySources
- * @property list<ProjectSourceVersion> $secondarySourceVersions
- * @property BuildArtifacts $artifacts
- * @property list<BuildArtifacts> $secondaryArtifacts
- * @property ProjectCache $cache
- * @property ProjectEnvironment $environment
- * @property string $serviceRole
- * @property LogsLocation $logs
- * @property int $timeoutInMinutes
- * @property int $queuedTimeoutInMinutes
- * @property bool $buildComplete
- * @property string $initiator
- * @property VpcConfig $vpcConfig
- * @property NetworkInterface $networkInterface
- * @property string $encryptionKey
- * @property list<ExportedEnvironmentVariable> $exportedEnvironmentVariables
- * @property list<string> $reportArns
- * @property list<ProjectFileSystemLocation> $fileSystemLocations
- * @property DebugSession $debugSession
- * @property string $buildBatchArn
- * @property AutoRetryConfig $autoRetryConfig
+ * @property string|null $id
+ * @property string|null $arn
+ * @property int|null $buildNumber
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $currentPhase
+ * @property 'SUCCEEDED'|'FAILED'|'FAULT'|'TIMED_OUT'|'IN_PROGRESS'|'STOPPED'|null $buildStatus
+ * @property string|null $sourceVersion
+ * @property string|null $resolvedSourceVersion
+ * @property string|null $projectName
+ * @property list<BuildPhase>|null $phases
+ * @property ProjectSource|null $source
+ * @property list<ProjectSource>|null $secondarySources
+ * @property list<ProjectSourceVersion>|null $secondarySourceVersions
+ * @property BuildArtifacts|null $artifacts
+ * @property list<BuildArtifacts>|null $secondaryArtifacts
+ * @property ProjectCache|null $cache
+ * @property ProjectEnvironment|null $environment
+ * @property string|null $serviceRole
+ * @property LogsLocation|null $logs
+ * @property int|null $timeoutInMinutes
+ * @property int|null $queuedTimeoutInMinutes
+ * @property bool|null $buildComplete
+ * @property string|null $initiator
+ * @property VpcConfig|null $vpcConfig
+ * @property NetworkInterface|null $networkInterface
+ * @property string|null $encryptionKey
+ * @property list<ExportedEnvironmentVariable>|null $exportedEnvironmentVariables
+ * @property list<string>|null $reportArns
+ * @property list<ProjectFileSystemLocation>|null $fileSystemLocations
+ * @property DebugSession|null $debugSession
+ * @property string|null $buildBatchArn
+ * @property AutoRetryConfig|null $autoRetryConfig
  */
 class Build extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     arn?: string,
-     *     buildNumber?: int,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     currentPhase?: string,
-     *     buildStatus?: 'SUCCEEDED'|'FAILED'|'FAULT'|'TIMED_OUT'|'IN_PROGRESS'|'STOPPED',
-     *     sourceVersion?: string,
-     *     resolvedSourceVersion?: string,
-     *     projectName?: string,
-     *     phases?: list<BuildPhase>,
-     *     source?: ProjectSource,
-     *     secondarySources?: list<ProjectSource>,
-     *     secondarySourceVersions?: list<ProjectSourceVersion>,
-     *     artifacts?: BuildArtifacts,
-     *     secondaryArtifacts?: list<BuildArtifacts>,
-     *     cache?: ProjectCache,
-     *     environment?: ProjectEnvironment,
-     *     serviceRole?: string,
-     *     logs?: LogsLocation,
-     *     timeoutInMinutes?: int,
-     *     queuedTimeoutInMinutes?: int,
-     *     buildComplete?: bool,
-     *     initiator?: string,
-     *     vpcConfig?: VpcConfig,
-     *     networkInterface?: NetworkInterface,
-     *     encryptionKey?: string,
-     *     exportedEnvironmentVariables?: list<ExportedEnvironmentVariable>,
-     *     reportArns?: list<string>,
-     *     fileSystemLocations?: list<ProjectFileSystemLocation>,
-     *     debugSession?: DebugSession,
-     *     buildBatchArn?: string,
-     *     autoRetryConfig?: AutoRetryConfig
+     *     id?: string|null,
+     *     arn?: string|null,
+     *     buildNumber?: int|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     currentPhase?: string|null,
+     *     buildStatus?: 'SUCCEEDED'|'FAILED'|'FAULT'|'TIMED_OUT'|'IN_PROGRESS'|'STOPPED'|null,
+     *     sourceVersion?: string|null,
+     *     resolvedSourceVersion?: string|null,
+     *     projectName?: string|null,
+     *     phases?: list<BuildPhase>|null,
+     *     source?: ProjectSource|null,
+     *     secondarySources?: list<ProjectSource>|null,
+     *     secondarySourceVersions?: list<ProjectSourceVersion>|null,
+     *     artifacts?: BuildArtifacts|null,
+     *     secondaryArtifacts?: list<BuildArtifacts>|null,
+     *     cache?: ProjectCache|null,
+     *     environment?: ProjectEnvironment|null,
+     *     serviceRole?: string|null,
+     *     logs?: LogsLocation|null,
+     *     timeoutInMinutes?: int|null,
+     *     queuedTimeoutInMinutes?: int|null,
+     *     buildComplete?: bool|null,
+     *     initiator?: string|null,
+     *     vpcConfig?: VpcConfig|null,
+     *     networkInterface?: NetworkInterface|null,
+     *     encryptionKey?: string|null,
+     *     exportedEnvironmentVariables?: list<ExportedEnvironmentVariable>|null,
+     *     reportArns?: list<string>|null,
+     *     fileSystemLocations?: list<ProjectFileSystemLocation>|null,
+     *     debugSession?: DebugSession|null,
+     *     buildBatchArn?: string|null,
+     *     autoRetryConfig?: AutoRetryConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rekognition\CreateProject;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ProjectArn
+ * @property string|null $ProjectArn
  */
 class CreateProjectResponse extends Response
 {

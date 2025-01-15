@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeOrderableRepli
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\OrderableReplicationInstance> $OrderableReplicationInstances
- * @property string $Marker
+ * @property list<Shapes\OrderableReplicationInstance>|null $OrderableReplicationInstances
+ * @property string|null $Marker
  */
 class DescribeOrderableReplicationInstancesResponse extends Response
 {

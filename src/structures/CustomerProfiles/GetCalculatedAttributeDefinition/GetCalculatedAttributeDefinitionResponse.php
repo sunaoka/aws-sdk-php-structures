@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetCalculatedAttributeDefiniti
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CalculatedAttributeName
- * @property string $DisplayName
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE' $Statistic
- * @property Shapes\Filter $Filter
- * @property Shapes\Conditions $Conditions
- * @property Shapes\AttributeDetails $AttributeDetails
- * @property array<string, string> $Tags
+ * @property string|null $CalculatedAttributeName
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE'|null $Statistic
+ * @property Shapes\Filter|null $Filter
+ * @property Shapes\Conditions|null $Conditions
+ * @property Shapes\AttributeDetails|null $AttributeDetails
+ * @property array<string, string>|null $Tags
  */
 class GetCalculatedAttributeDefinitionResponse extends Response
 {

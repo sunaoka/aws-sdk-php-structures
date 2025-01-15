@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FASTQ'|'BAM'|'CRAM'|'UBAM' $sourceFileType
  * @property string $subjectId
  * @property string $sampleId
- * @property string $generatedFrom
- * @property string $referenceArn
- * @property string $name
- * @property string $description
- * @property array<string, string> $tags
+ * @property string|null $generatedFrom
+ * @property string|null $referenceArn
+ * @property string|null $name
+ * @property string|null $description
+ * @property array<string, string>|null $tags
  */
 class StartReadSetImportJobSourceItem extends Shape
 {
@@ -23,11 +23,11 @@ class StartReadSetImportJobSourceItem extends Shape
      *     sourceFileType: 'FASTQ'|'BAM'|'CRAM'|'UBAM',
      *     subjectId: string,
      *     sampleId: string,
-     *     generatedFrom?: string,
-     *     referenceArn?: string,
-     *     name?: string,
-     *     description?: string,
-     *     tags?: array<string, string>
+     *     generatedFrom?: string|null,
+     *     referenceArn?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFormation\GetTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TemplateBody
- * @property list<'Original'|'Processed'> $StagesAvailable
+ * @property string|null $TemplateBody
+ * @property list<'Original'|'Processed'>|null $StagesAvailable
  */
 class GetTemplateResponse extends Response
 {

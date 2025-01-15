@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\PutVoiceConnectorEmergencyCalling
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DNISEmergencyCallingConfiguration> $DNIS
+ * @property list<DNISEmergencyCallingConfiguration>|null $DNIS
  */
 class EmergencyCallingConfiguration extends Shape
 {
     /**
-     * @param array{DNIS?: list<DNISEmergencyCallingConfiguration>} $args
+     * @param array{DNIS?: list<DNISEmergencyCallingConfiguration>|null} $args
      */
     public function __construct(array $args = [])
     {

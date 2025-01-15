@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryControlConfig\ListRoutingControl
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\RoutingControl> $RoutingControls
+ * @property string|null $NextToken
+ * @property list<Shapes\RoutingControl>|null $RoutingControls
  */
 class ListRoutingControlsResponse extends Response
 {

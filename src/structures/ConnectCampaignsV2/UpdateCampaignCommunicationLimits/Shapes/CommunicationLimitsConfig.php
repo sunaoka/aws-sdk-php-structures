@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\UpdateCampaignCommunicationL
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CommunicationLimits $allChannelSubtypes
+ * @property CommunicationLimits|null $allChannelSubtypes
  */
 class CommunicationLimitsConfig extends Shape
 {
     /**
-     * @param array{allChannelSubtypes?: CommunicationLimits} $args
+     * @param array{allChannelSubtypes?: CommunicationLimits|null} $args
      */
     public function __construct(array $args = [])
     {

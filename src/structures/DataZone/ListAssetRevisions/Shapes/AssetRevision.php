@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\ListAssetRevisions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $domainId
- * @property string $id
- * @property string $revision
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property string|null $domainId
+ * @property string|null $id
+ * @property string|null $revision
  */
 class AssetRevision extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string,
-     *     domainId?: string,
-     *     id?: string,
-     *     revision?: string
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     domainId?: string|null,
+     *     id?: string|null,
+     *     revision?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\DataZone\ListLineageNodeHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property string|null $description
  * @property string $domainId
- * @property \Aws\Api\DateTimeResult $eventTimestamp
+ * @property \Aws\Api\DateTimeResult|null $eventTimestamp
  * @property string $id
- * @property string $name
- * @property string $sourceIdentifier
+ * @property string|null $name
+ * @property string|null $sourceIdentifier
  * @property string $typeName
- * @property string $typeRevision
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property string|null $typeRevision
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class LineageNodeSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string,
-     *     description?: string,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     description?: string|null,
      *     domainId: string,
-     *     eventTimestamp?: \Aws\Api\DateTimeResult,
+     *     eventTimestamp?: \Aws\Api\DateTimeResult|null,
      *     id: string,
-     *     name?: string,
-     *     sourceIdentifier?: string,
+     *     name?: string|null,
+     *     sourceIdentifier?: string|null,
      *     typeName: string,
-     *     typeRevision?: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string
+     *     typeRevision?: string|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

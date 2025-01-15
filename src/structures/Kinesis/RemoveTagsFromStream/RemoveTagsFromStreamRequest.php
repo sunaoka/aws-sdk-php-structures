@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Kinesis\RemoveTagsFromStream;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
+ * @property string|null $StreamName
  * @property list<string> $TagKeys
- * @property string $StreamARN
+ * @property string|null $StreamARN
  */
 class RemoveTagsFromStreamRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
+     *     StreamName?: string|null,
      *     TagKeys: list<string>,
-     *     StreamARN?: string
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args)

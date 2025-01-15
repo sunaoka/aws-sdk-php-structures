@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property bool $Deployed
+ * @property bool|null $Deployed
  */
 class DescribeDomainEndpointOptionsRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     Deployed?: bool
+     *     Deployed?: bool|null
      * } $args
      */
     public function __construct(array $args)

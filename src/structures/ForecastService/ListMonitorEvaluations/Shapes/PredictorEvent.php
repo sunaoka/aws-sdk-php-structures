@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListMonitorEvaluations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Detail
- * @property \Aws\Api\DateTimeResult $Datetime
+ * @property string|null $Detail
+ * @property \Aws\Api\DateTimeResult|null $Datetime
  */
 class PredictorEvent extends Shape
 {
     /**
      * @param array{
-     *     Detail?: string,
-     *     Datetime?: \Aws\Api\DateTimeResult
+     *     Detail?: string|null,
+     *     Datetime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

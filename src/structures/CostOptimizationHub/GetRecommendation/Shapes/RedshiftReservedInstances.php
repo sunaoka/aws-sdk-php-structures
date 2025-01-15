@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftReservedInstancesConfiguration $configuration
- * @property ReservedInstancesCostCalculation $costCalculation
+ * @property RedshiftReservedInstancesConfiguration|null $configuration
+ * @property ReservedInstancesCostCalculation|null $costCalculation
  */
 class RedshiftReservedInstances extends Shape
 {
     /**
      * @param array{
-     *     configuration?: RedshiftReservedInstancesConfiguration,
-     *     costCalculation?: ReservedInstancesCostCalculation
+     *     configuration?: RedshiftReservedInstancesConfiguration|null,
+     *     costCalculation?: ReservedInstancesCostCalculation|null
      * } $args
      */
     public function __construct(array $args = [])

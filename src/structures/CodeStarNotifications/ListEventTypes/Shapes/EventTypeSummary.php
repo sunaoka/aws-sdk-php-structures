@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeStarNotifications\ListEventTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EventTypeId
- * @property string $ServiceName
- * @property string $EventTypeName
- * @property string $ResourceType
+ * @property string|null $EventTypeId
+ * @property string|null $ServiceName
+ * @property string|null $EventTypeName
+ * @property string|null $ResourceType
  */
 class EventTypeSummary extends Shape
 {
     /**
      * @param array{
-     *     EventTypeId?: string,
-     *     ServiceName?: string,
-     *     EventTypeName?: string,
-     *     ResourceType?: string
+     *     EventTypeId?: string|null,
+     *     ServiceName?: string|null,
+     *     EventTypeName?: string|null,
+     *     ResourceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

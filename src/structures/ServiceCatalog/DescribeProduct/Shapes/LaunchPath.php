@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProduct\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
+ * @property string|null $Id
+ * @property string|null $Name
  */
 class LaunchPath extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string
+     *     Id?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

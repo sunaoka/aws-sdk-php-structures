@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property string $name
- * @property string $desiredSoftwareSetId
- * @property 'USE_MAINTENANCE_WINDOW'|'APPLY_IMMEDIATELY' $softwareSetUpdateSchedule
+ * @property string|null $name
+ * @property string|null $desiredSoftwareSetId
+ * @property 'USE_MAINTENANCE_WINDOW'|'APPLY_IMMEDIATELY'|null $softwareSetUpdateSchedule
  */
 class UpdateDeviceRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     name?: string,
-     *     desiredSoftwareSetId?: string,
-     *     softwareSetUpdateSchedule?: 'USE_MAINTENANCE_WINDOW'|'APPLY_IMMEDIATELY'
+     *     name?: string|null,
+     *     desiredSoftwareSetId?: string|null,
+     *     softwareSetUpdateSchedule?: 'USE_MAINTENANCE_WINDOW'|'APPLY_IMMEDIATELY'|null
      * } $args
      */
     public function __construct(array $args)

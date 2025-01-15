@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\mgn\DisconnectFromService;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $applicationID
- * @property string $arn
- * @property Shapes\SourceServerConnectorAction $connectorAction
- * @property Shapes\DataReplicationInfo $dataReplicationInfo
- * @property string $fqdnForActionFramework
- * @property bool $isArchived
- * @property Shapes\LaunchedInstance $launchedInstance
- * @property Shapes\LifeCycle $lifeCycle
- * @property 'AGENT_BASED'|'SNAPSHOT_SHIPPING' $replicationType
- * @property Shapes\SourceProperties $sourceProperties
- * @property string $sourceServerID
- * @property array<string, string> $tags
- * @property string $userProvidedID
- * @property string $vcenterClientID
+ * @property string|null $applicationID
+ * @property string|null $arn
+ * @property Shapes\SourceServerConnectorAction|null $connectorAction
+ * @property Shapes\DataReplicationInfo|null $dataReplicationInfo
+ * @property string|null $fqdnForActionFramework
+ * @property bool|null $isArchived
+ * @property Shapes\LaunchedInstance|null $launchedInstance
+ * @property Shapes\LifeCycle|null $lifeCycle
+ * @property 'AGENT_BASED'|'SNAPSHOT_SHIPPING'|null $replicationType
+ * @property Shapes\SourceProperties|null $sourceProperties
+ * @property string|null $sourceServerID
+ * @property array<string, string>|null $tags
+ * @property string|null $userProvidedID
+ * @property string|null $vcenterClientID
  */
 class DisconnectFromServiceResponse extends Response
 {

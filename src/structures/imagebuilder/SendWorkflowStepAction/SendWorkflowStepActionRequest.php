@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $stepExecutionId
  * @property string $imageBuildVersionArn
  * @property 'RESUME'|'STOP' $action
- * @property string $reason
+ * @property string|null $reason
  * @property string $clientToken
  */
 class SendWorkflowStepActionRequest extends Request
@@ -18,7 +18,7 @@ class SendWorkflowStepActionRequest extends Request
      *     stepExecutionId: string,
      *     imageBuildVersionArn: string,
      *     action: 'RESUME'|'STOP',
-     *     reason?: string,
+     *     reason?: string|null,
      *     clientToken: string
      * } $args
      */

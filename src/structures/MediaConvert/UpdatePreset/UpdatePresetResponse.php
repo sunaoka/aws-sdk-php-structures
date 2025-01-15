@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdatePreset;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Preset $Preset
+ * @property Shapes\Preset|null $Preset
  */
 class UpdatePresetResponse extends Response
 {

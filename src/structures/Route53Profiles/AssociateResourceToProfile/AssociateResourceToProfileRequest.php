@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $ProfileId
  * @property string $ResourceArn
- * @property string $ResourceProperties
+ * @property string|null $ResourceProperties
  */
 class AssociateResourceToProfileRequest extends Request
 {
@@ -17,7 +17,7 @@ class AssociateResourceToProfileRequest extends Request
      *     Name: string,
      *     ProfileId: string,
      *     ResourceArn: string,
-     *     ResourceProperties?: string
+     *     ResourceProperties?: string|null
      * } $args
      */
     public function __construct(array $args)

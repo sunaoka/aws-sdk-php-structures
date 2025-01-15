@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProjectName
  * @property string $ModelVersion
- * @property string $JobName
+ * @property string|null $JobName
  * @property Shapes\ModelPackagingConfiguration $Configuration
- * @property string $Description
- * @property string $ClientToken
+ * @property string|null $Description
+ * @property string|null $ClientToken
  */
 class StartModelPackagingJobRequest extends Request
 {
@@ -18,10 +18,10 @@ class StartModelPackagingJobRequest extends Request
      * @param array{
      *     ProjectName: string,
      *     ModelVersion: string,
-     *     JobName?: string,
+     *     JobName?: string|null,
      *     Configuration: Shapes\ModelPackagingConfiguration,
-     *     Description?: string,
-     *     ClientToken?: string
+     *     Description?: string|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

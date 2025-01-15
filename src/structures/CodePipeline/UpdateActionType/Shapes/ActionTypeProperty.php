@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $optional
  * @property bool $key
  * @property bool $noEcho
- * @property bool $queryable
- * @property string $description
+ * @property bool|null $queryable
+ * @property string|null $description
  */
 class ActionTypeProperty extends Shape
 {
@@ -20,8 +20,8 @@ class ActionTypeProperty extends Shape
      *     optional: bool,
      *     key: bool,
      *     noEcho: bool,
-     *     queryable?: bool,
-     *     description?: string
+     *     queryable?: bool|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LoggerDefinitionId
- * @property string $MaxResults
- * @property string $NextToken
+ * @property string|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListLoggerDefinitionVersionsRequest extends Request
 {
     /**
      * @param array{
      *     LoggerDefinitionId: string,
-     *     MaxResults?: string,
-     *     NextToken?: string
+     *     MaxResults?: string|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

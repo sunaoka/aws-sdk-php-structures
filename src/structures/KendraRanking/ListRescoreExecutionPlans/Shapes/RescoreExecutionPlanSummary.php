@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\KendraRanking\ListRescoreExecutionPlans\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Id
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED' $Status
+ * @property string|null $Name
+ * @property string|null $Id
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED'|null $Status
  */
 class RescoreExecutionPlanSummary extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Id?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     Status?: 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED'
+     *     Name?: string|null,
+     *     Id?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaInsightsPipel
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StreamArn
+ * @property string|null $StreamArn
  */
 class RecordingStreamConfiguration extends Shape
 {
     /**
-     * @param array{StreamArn?: string} $args
+     * @param array{StreamArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

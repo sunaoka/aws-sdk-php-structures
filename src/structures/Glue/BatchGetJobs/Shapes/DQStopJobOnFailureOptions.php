@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Immediate'|'AfterDataLoad' $StopJobOnFailureTiming
+ * @property 'Immediate'|'AfterDataLoad'|null $StopJobOnFailureTiming
  */
 class DQStopJobOnFailureOptions extends Shape
 {
     /**
-     * @param array{StopJobOnFailureTiming?: 'Immediate'|'AfterDataLoad'} $args
+     * @param array{StopJobOnFailureTiming?: 'Immediate'|'AfterDataLoad'|null} $args
      */
     public function __construct(array $args = [])
     {

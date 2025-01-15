@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\SetLogDeliveryConfigura
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StreamArn
+ * @property string|null $StreamArn
  */
 class FirehoseConfigurationType extends Shape
 {
     /**
-     * @param array{StreamArn?: string} $args
+     * @param array{StreamArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

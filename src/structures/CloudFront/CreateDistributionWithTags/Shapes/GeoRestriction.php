@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'blacklist'|'whitelist'|'none' $RestrictionType
  * @property int $Quantity
- * @property list<string> $Items
+ * @property list<string>|null $Items
  */
 class GeoRestriction extends Shape
 {
@@ -15,7 +15,7 @@ class GeoRestriction extends Shape
      * @param array{
      *     RestrictionType: 'blacklist'|'whitelist'|'none',
      *     Quantity: int,
-     *     Items?: list<string>
+     *     Items?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

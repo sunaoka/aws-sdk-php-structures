@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryId
  * @property list<Shapes\IpRoute> $IpRoutes
- * @property bool $UpdateSecurityGroupForDirectoryControllers
+ * @property bool|null $UpdateSecurityGroupForDirectoryControllers
  */
 class AddIpRoutesRequest extends Request
 {
@@ -15,7 +15,7 @@ class AddIpRoutesRequest extends Request
      * @param array{
      *     DirectoryId: string,
      *     IpRoutes: list<Shapes\IpRoute>,
-     *     UpdateSecurityGroupForDirectoryControllers?: bool
+     *     UpdateSecurityGroupForDirectoryControllers?: bool|null
      * } $args
      */
     public function __construct(array $args)

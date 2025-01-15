@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigurationSetName
- * @property Shapes\VdmOptions $VdmOptions
+ * @property Shapes\VdmOptions|null $VdmOptions
  */
 class PutConfigurationSetVdmOptionsRequest extends Request
 {
     /**
      * @param array{
      *     ConfigurationSetName: string,
-     *     VdmOptions?: Shapes\VdmOptions
+     *     VdmOptions?: Shapes\VdmOptions|null
      * } $args
      */
     public function __construct(array $args)

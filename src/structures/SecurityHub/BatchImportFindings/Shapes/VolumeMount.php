@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $MountPath
+ * @property string|null $Name
+ * @property string|null $MountPath
  */
 class VolumeMount extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     MountPath?: string
+     *     Name?: string|null,
+     *     MountPath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

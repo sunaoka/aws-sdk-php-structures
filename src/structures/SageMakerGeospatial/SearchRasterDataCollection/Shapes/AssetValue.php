@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\SearchRasterDataCollection\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Href
+ * @property string|null $Href
  */
 class AssetValue extends Shape
 {
     /**
-     * @param array{Href?: string} $args
+     * @param array{Href?: string|null} $args
      */
     public function __construct(array $args = [])
     {

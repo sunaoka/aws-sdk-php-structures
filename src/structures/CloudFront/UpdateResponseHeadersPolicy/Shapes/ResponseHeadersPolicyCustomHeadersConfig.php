@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $Quantity
- * @property list<ResponseHeadersPolicyCustomHeader> $Items
+ * @property list<ResponseHeadersPolicyCustomHeader>|null $Items
  */
 class ResponseHeadersPolicyCustomHeadersConfig extends Shape
 {
     /**
      * @param array{
      *     Quantity: int,
-     *     Items?: list<ResponseHeadersPolicyCustomHeader>
+     *     Items?: list<ResponseHeadersPolicyCustomHeader>|null
      * } $args
      */
     public function __construct(array $args)

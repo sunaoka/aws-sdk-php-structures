@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\XRay\PutTraceSegments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $ErrorCode
- * @property string $Message
+ * @property string|null $Id
+ * @property string|null $ErrorCode
+ * @property string|null $Message
  */
 class UnprocessedTraceSegment extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     ErrorCode?: string,
-     *     Message?: string
+     *     Id?: string|null,
+     *     ErrorCode?: string|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED' $OperationStatus
- * @property ApplicationVersionChangeDetails $ApplicationVersionChangeDetails
- * @property OperationFailureDetails $OperationFailureDetails
+ * @property ApplicationVersionChangeDetails|null $ApplicationVersionChangeDetails
+ * @property OperationFailureDetails|null $OperationFailureDetails
  */
 class ApplicationOperationInfoDetails extends Shape
 {
@@ -20,8 +20,8 @@ class ApplicationOperationInfoDetails extends Shape
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
      *     OperationStatus: 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED',
-     *     ApplicationVersionChangeDetails?: ApplicationVersionChangeDetails,
-     *     OperationFailureDetails?: OperationFailureDetails
+     *     ApplicationVersionChangeDetails?: ApplicationVersionChangeDetails|null,
+     *     OperationFailureDetails?: OperationFailureDetails|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property OffPeakWindow $OffPeakWindow
+ * @property bool|null $Enabled
+ * @property OffPeakWindow|null $OffPeakWindow
  */
 class OffPeakWindowOptions extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     OffPeakWindow?: OffPeakWindow
+     *     Enabled?: bool|null,
+     *     OffPeakWindow?: OffPeakWindow|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property Shapes\Delete $Delete
- * @property string $MFA
- * @property 'requester' $RequestPayer
- * @property bool $BypassGovernanceRetention
- * @property string $ExpectedBucketOwner
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
+ * @property string|null $MFA
+ * @property 'requester'|null $RequestPayer
+ * @property bool|null $BypassGovernanceRetention
+ * @property string|null $ExpectedBucketOwner
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  */
 class DeleteObjectsRequest extends Request
 {
@@ -19,11 +19,11 @@ class DeleteObjectsRequest extends Request
      * @param array{
      *     Bucket: string,
      *     Delete: Shapes\Delete,
-     *     MFA?: string,
-     *     RequestPayer?: 'requester',
-     *     BypassGovernanceRetention?: bool,
-     *     ExpectedBucketOwner?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'
+     *     MFA?: string|null,
+     *     RequestPayer?: 'requester'|null,
+     *     BypassGovernanceRetention?: bool|null,
+     *     ExpectedBucketOwner?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateEnvironmentAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsConsoleLinkParameters $awsConsoleLink
+ * @property AwsConsoleLinkParameters|null $awsConsoleLink
  */
 class ActionParameters extends Shape
 {
     /**
-     * @param array{awsConsoleLink?: AwsConsoleLinkParameters} $args
+     * @param array{awsConsoleLink?: AwsConsoleLinkParameters|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateTableReplicaAutoScaling\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PolicyName
+ * @property string|null $PolicyName
  * @property AutoScalingTargetTrackingScalingPolicyConfigurationUpdate $TargetTrackingScalingPolicyConfiguration
  */
 class AutoScalingPolicyUpdate extends Shape
 {
     /**
      * @param array{
-     *     PolicyName?: string,
+     *     PolicyName?: string|null,
      *     TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate
      * } $args
      */

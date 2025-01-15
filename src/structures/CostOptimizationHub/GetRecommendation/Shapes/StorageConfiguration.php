@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $type
- * @property double $sizeInGb
+ * @property string|null $type
+ * @property double|null $sizeInGb
  */
 class StorageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     type?: string,
-     *     sizeInGb?: double
+     *     type?: string|null,
+     *     sizeInGb?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property FlowDefinition $FlowDefinition
- * @property list<Batch> $Batches
+ * @property list<Batch>|null $Batches
  */
 class AppflowIntegration extends Shape
 {
     /**
      * @param array{
      *     FlowDefinition: FlowDefinition,
-     *     Batches?: list<Batch>
+     *     Batches?: list<Batch>|null
      * } $args
      */
     public function __construct(array $args)

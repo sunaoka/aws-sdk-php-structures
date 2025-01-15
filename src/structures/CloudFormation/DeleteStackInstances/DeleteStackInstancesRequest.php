@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackSetName
- * @property list<string> $Accounts
- * @property Shapes\DeploymentTargets $DeploymentTargets
+ * @property list<string>|null $Accounts
+ * @property Shapes\DeploymentTargets|null $DeploymentTargets
  * @property list<string> $Regions
- * @property Shapes\StackSetOperationPreferences $OperationPreferences
+ * @property Shapes\StackSetOperationPreferences|null $OperationPreferences
  * @property bool $RetainStacks
- * @property string $OperationId
- * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
+ * @property string|null $OperationId
+ * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  */
 class DeleteStackInstancesRequest extends Request
 {
     /**
      * @param array{
      *     StackSetName: string,
-     *     Accounts?: list<string>,
-     *     DeploymentTargets?: Shapes\DeploymentTargets,
+     *     Accounts?: list<string>|null,
+     *     DeploymentTargets?: Shapes\DeploymentTargets|null,
      *     Regions: list<string>,
-     *     OperationPreferences?: Shapes\StackSetOperationPreferences,
+     *     OperationPreferences?: Shapes\StackSetOperationPreferences|null,
      *     RetainStacks: bool,
-     *     OperationId?: string,
-     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'
+     *     OperationId?: string|null,
+     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null
      * } $args
      */
     public function __construct(array $args)

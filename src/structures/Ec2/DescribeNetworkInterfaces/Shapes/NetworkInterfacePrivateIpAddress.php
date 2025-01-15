@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeNetworkInterfaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NetworkInterfaceAssociation $Association
- * @property bool $Primary
- * @property string $PrivateDnsName
- * @property string $PrivateIpAddress
+ * @property NetworkInterfaceAssociation|null $Association
+ * @property bool|null $Primary
+ * @property string|null $PrivateDnsName
+ * @property string|null $PrivateIpAddress
  */
 class NetworkInterfacePrivateIpAddress extends Shape
 {
     /**
      * @param array{
-     *     Association?: NetworkInterfaceAssociation,
-     *     Primary?: bool,
-     *     PrivateDnsName?: string,
-     *     PrivateIpAddress?: string
+     *     Association?: NetworkInterfaceAssociation|null,
+     *     Primary?: bool|null,
+     *     PrivateDnsName?: string|null,
+     *     PrivateIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

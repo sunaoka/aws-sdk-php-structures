@@ -5,139 +5,139 @@ namespace Sunaoka\Aws\Structures\Rds\CreateDBInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DBName
+ * @property string|null $DBName
  * @property string $DBInstanceIdentifier
- * @property int $AllocatedStorage
+ * @property int|null $AllocatedStorage
  * @property string $DBInstanceClass
  * @property string $Engine
- * @property string $MasterUsername
- * @property string $MasterUserPassword
- * @property list<string> $DBSecurityGroups
- * @property list<string> $VpcSecurityGroupIds
- * @property string $AvailabilityZone
- * @property string $DBSubnetGroupName
- * @property string $PreferredMaintenanceWindow
- * @property string $DBParameterGroupName
- * @property int $BackupRetentionPeriod
- * @property string $PreferredBackupWindow
- * @property int $Port
- * @property bool $MultiAZ
- * @property string $EngineVersion
- * @property bool $AutoMinorVersionUpgrade
- * @property string $LicenseModel
- * @property int $Iops
- * @property string $OptionGroupName
- * @property string $CharacterSetName
- * @property string $NcharCharacterSetName
- * @property bool $PubliclyAccessible
- * @property list<Shapes\Tag> $Tags
- * @property string $DBClusterIdentifier
- * @property string $StorageType
- * @property string $TdeCredentialArn
- * @property string $TdeCredentialPassword
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $Domain
- * @property string $DomainFqdn
- * @property string $DomainOu
- * @property string $DomainAuthSecretArn
- * @property list<string> $DomainDnsIps
- * @property bool $CopyTagsToSnapshot
- * @property int $MonitoringInterval
- * @property string $MonitoringRoleArn
- * @property string $DomainIAMRoleName
- * @property int $PromotionTier
- * @property string $Timezone
- * @property bool $EnableIAMDatabaseAuthentication
- * @property 'standard'|'advanced' $DatabaseInsightsMode
- * @property bool $EnablePerformanceInsights
- * @property string $PerformanceInsightsKMSKeyId
- * @property int $PerformanceInsightsRetentionPeriod
- * @property list<string> $EnableCloudwatchLogsExports
- * @property list<Shapes\ProcessorFeature> $ProcessorFeatures
- * @property bool $DeletionProtection
- * @property int $MaxAllocatedStorage
- * @property bool $EnableCustomerOwnedIp
- * @property string $CustomIamInstanceProfile
- * @property string $BackupTarget
- * @property string $NetworkType
- * @property int $StorageThroughput
- * @property bool $ManageMasterUserPassword
- * @property string $MasterUserSecretKmsKeyId
- * @property string $CACertificateIdentifier
- * @property string $DBSystemId
- * @property bool $DedicatedLogVolume
- * @property bool $MultiTenant
- * @property string $EngineLifecycleSupport
+ * @property string|null $MasterUsername
+ * @property string|null $MasterUserPassword
+ * @property list<string>|null $DBSecurityGroups
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $AvailabilityZone
+ * @property string|null $DBSubnetGroupName
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $DBParameterGroupName
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
+ * @property int|null $Port
+ * @property bool|null $MultiAZ
+ * @property string|null $EngineVersion
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $LicenseModel
+ * @property int|null $Iops
+ * @property string|null $OptionGroupName
+ * @property string|null $CharacterSetName
+ * @property string|null $NcharCharacterSetName
+ * @property bool|null $PubliclyAccessible
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $DBClusterIdentifier
+ * @property string|null $StorageType
+ * @property string|null $TdeCredentialArn
+ * @property string|null $TdeCredentialPassword
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $Domain
+ * @property string|null $DomainFqdn
+ * @property string|null $DomainOu
+ * @property string|null $DomainAuthSecretArn
+ * @property list<string>|null $DomainDnsIps
+ * @property bool|null $CopyTagsToSnapshot
+ * @property int|null $MonitoringInterval
+ * @property string|null $MonitoringRoleArn
+ * @property string|null $DomainIAMRoleName
+ * @property int|null $PromotionTier
+ * @property string|null $Timezone
+ * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
+ * @property bool|null $EnablePerformanceInsights
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property list<Shapes\ProcessorFeature>|null $ProcessorFeatures
+ * @property bool|null $DeletionProtection
+ * @property int|null $MaxAllocatedStorage
+ * @property bool|null $EnableCustomerOwnedIp
+ * @property string|null $CustomIamInstanceProfile
+ * @property string|null $BackupTarget
+ * @property string|null $NetworkType
+ * @property int|null $StorageThroughput
+ * @property bool|null $ManageMasterUserPassword
+ * @property string|null $MasterUserSecretKmsKeyId
+ * @property string|null $CACertificateIdentifier
+ * @property string|null $DBSystemId
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $MultiTenant
+ * @property string|null $EngineLifecycleSupport
  */
 class CreateDBInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     DBName?: string,
+     *     DBName?: string|null,
      *     DBInstanceIdentifier: string,
-     *     AllocatedStorage?: int,
+     *     AllocatedStorage?: int|null,
      *     DBInstanceClass: string,
      *     Engine: string,
-     *     MasterUsername?: string,
-     *     MasterUserPassword?: string,
-     *     DBSecurityGroups?: list<string>,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     AvailabilityZone?: string,
-     *     DBSubnetGroupName?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     DBParameterGroupName?: string,
-     *     BackupRetentionPeriod?: int,
-     *     PreferredBackupWindow?: string,
-     *     Port?: int,
-     *     MultiAZ?: bool,
-     *     EngineVersion?: string,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     LicenseModel?: string,
-     *     Iops?: int,
-     *     OptionGroupName?: string,
-     *     CharacterSetName?: string,
-     *     NcharCharacterSetName?: string,
-     *     PubliclyAccessible?: bool,
-     *     Tags?: list<Shapes\Tag>,
-     *     DBClusterIdentifier?: string,
-     *     StorageType?: string,
-     *     TdeCredentialArn?: string,
-     *     TdeCredentialPassword?: string,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     Domain?: string,
-     *     DomainFqdn?: string,
-     *     DomainOu?: string,
-     *     DomainAuthSecretArn?: string,
-     *     DomainDnsIps?: list<string>,
-     *     CopyTagsToSnapshot?: bool,
-     *     MonitoringInterval?: int,
-     *     MonitoringRoleArn?: string,
-     *     DomainIAMRoleName?: string,
-     *     PromotionTier?: int,
-     *     Timezone?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
-     *     DatabaseInsightsMode?: 'standard'|'advanced',
-     *     EnablePerformanceInsights?: bool,
-     *     PerformanceInsightsKMSKeyId?: string,
-     *     PerformanceInsightsRetentionPeriod?: int,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     ProcessorFeatures?: list<Shapes\ProcessorFeature>,
-     *     DeletionProtection?: bool,
-     *     MaxAllocatedStorage?: int,
-     *     EnableCustomerOwnedIp?: bool,
-     *     CustomIamInstanceProfile?: string,
-     *     BackupTarget?: string,
-     *     NetworkType?: string,
-     *     StorageThroughput?: int,
-     *     ManageMasterUserPassword?: bool,
-     *     MasterUserSecretKmsKeyId?: string,
-     *     CACertificateIdentifier?: string,
-     *     DBSystemId?: string,
-     *     DedicatedLogVolume?: bool,
-     *     MultiTenant?: bool,
-     *     EngineLifecycleSupport?: string
+     *     MasterUsername?: string|null,
+     *     MasterUserPassword?: string|null,
+     *     DBSecurityGroups?: list<string>|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     AvailabilityZone?: string|null,
+     *     DBSubnetGroupName?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     DBParameterGroupName?: string|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
+     *     Port?: int|null,
+     *     MultiAZ?: bool|null,
+     *     EngineVersion?: string|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     LicenseModel?: string|null,
+     *     Iops?: int|null,
+     *     OptionGroupName?: string|null,
+     *     CharacterSetName?: string|null,
+     *     NcharCharacterSetName?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DBClusterIdentifier?: string|null,
+     *     StorageType?: string|null,
+     *     TdeCredentialArn?: string|null,
+     *     TdeCredentialPassword?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     Domain?: string|null,
+     *     DomainFqdn?: string|null,
+     *     DomainOu?: string|null,
+     *     DomainAuthSecretArn?: string|null,
+     *     DomainDnsIps?: list<string>|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     MonitoringInterval?: int|null,
+     *     MonitoringRoleArn?: string|null,
+     *     DomainIAMRoleName?: string|null,
+     *     PromotionTier?: int|null,
+     *     Timezone?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
+     *     EnablePerformanceInsights?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     PerformanceInsightsRetentionPeriod?: int|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     ProcessorFeatures?: list<Shapes\ProcessorFeature>|null,
+     *     DeletionProtection?: bool|null,
+     *     MaxAllocatedStorage?: int|null,
+     *     EnableCustomerOwnedIp?: bool|null,
+     *     CustomIamInstanceProfile?: string|null,
+     *     BackupTarget?: string|null,
+     *     NetworkType?: string|null,
+     *     StorageThroughput?: int|null,
+     *     ManageMasterUserPassword?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null,
+     *     CACertificateIdentifier?: string|null,
+     *     DBSystemId?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     MultiTenant?: bool|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\ListCoreDevices;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $thingGroupArn
- * @property 'HEALTHY'|'UNHEALTHY' $status
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property string $runtime
+ * @property string|null $thingGroupArn
+ * @property 'HEALTHY'|'UNHEALTHY'|null $status
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $runtime
  */
 class ListCoreDevicesRequest extends Request
 {
     /**
      * @param array{
-     *     thingGroupArn?: string,
-     *     status?: 'HEALTHY'|'UNHEALTHY',
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     runtime?: string
+     *     thingGroupArn?: string|null,
+     *     status?: 'HEALTHY'|'UNHEALTHY'|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     runtime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

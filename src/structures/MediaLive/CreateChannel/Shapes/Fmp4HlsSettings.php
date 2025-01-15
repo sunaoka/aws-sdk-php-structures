@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AudioRenditionSets
- * @property 'NO_PASSTHROUGH'|'PASSTHROUGH' $NielsenId3Behavior
- * @property 'NO_PASSTHROUGH'|'PASSTHROUGH' $TimedMetadataBehavior
+ * @property string|null $AudioRenditionSets
+ * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $NielsenId3Behavior
+ * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $TimedMetadataBehavior
  */
 class Fmp4HlsSettings extends Shape
 {
     /**
      * @param array{
-     *     AudioRenditionSets?: string,
-     *     NielsenId3Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH',
-     *     TimedMetadataBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'
+     *     AudioRenditionSets?: string|null,
+     *     NielsenId3Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
+     *     TimedMetadataBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null
      * } $args
      */
     public function __construct(array $args = [])

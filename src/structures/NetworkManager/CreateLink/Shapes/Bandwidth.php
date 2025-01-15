@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateLink\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $UploadSpeed
- * @property int $DownloadSpeed
+ * @property int|null $UploadSpeed
+ * @property int|null $DownloadSpeed
  */
 class Bandwidth extends Shape
 {
     /**
      * @param array{
-     *     UploadSpeed?: int,
-     *     DownloadSpeed?: int
+     *     UploadSpeed?: int|null,
+     *     DownloadSpeed?: int|null
      * } $args
      */
     public function __construct(array $args = [])

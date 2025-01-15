@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'RDS'|'DOCDB' $ServiceType
  * @property string $Identifier
- * @property string $NextToken
- * @property int<0, 25> $MaxResults
- * @property bool $ListTags
+ * @property string|null $NextToken
+ * @property int<0, 25>|null $MaxResults
+ * @property bool|null $ListTags
  */
 class ListPerformanceAnalysisReportsRequest extends Request
 {
@@ -17,9 +17,9 @@ class ListPerformanceAnalysisReportsRequest extends Request
      * @param array{
      *     ServiceType: 'RDS'|'DOCDB',
      *     Identifier: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 25>,
-     *     ListTags?: bool
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 25>|null,
+     *     ListTags?: bool|null
      * } $args
      */
     public function __construct(array $args)

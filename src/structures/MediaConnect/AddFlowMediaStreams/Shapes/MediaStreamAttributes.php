@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Fmtp $Fmtp
- * @property string $Lang
+ * @property string|null $Lang
  */
 class MediaStreamAttributes extends Shape
 {
     /**
      * @param array{
      *     Fmtp: Fmtp,
-     *     Lang?: string
+     *     Lang?: string|null
      * } $args
      */
     public function __construct(array $args)

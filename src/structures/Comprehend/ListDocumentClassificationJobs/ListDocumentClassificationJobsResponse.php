@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Comprehend\ListDocumentClassificationJobs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DocumentClassificationJobProperties> $DocumentClassificationJobPropertiesList
- * @property string $NextToken
+ * @property list<Shapes\DocumentClassificationJobProperties>|null $DocumentClassificationJobPropertiesList
+ * @property string|null $NextToken
  */
 class ListDocumentClassificationJobsResponse extends Response
 {

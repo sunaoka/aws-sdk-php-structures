@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeCommit\TestRepositoryTriggers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $successfulExecutions
- * @property list<Shapes\RepositoryTriggerExecutionFailure> $failedExecutions
+ * @property list<string>|null $successfulExecutions
+ * @property list<Shapes\RepositoryTriggerExecutionFailure>|null $failedExecutions
  */
 class TestRepositoryTriggersResponse extends Response
 {

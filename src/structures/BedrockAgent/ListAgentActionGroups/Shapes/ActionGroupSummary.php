@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $actionGroupId
  * @property string $actionGroupName
  * @property 'ENABLED'|'DISABLED' $actionGroupState
- * @property string $description
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class ActionGroupSummary extends Shape
@@ -18,7 +18,7 @@ class ActionGroupSummary extends Shape
      *     actionGroupId: string,
      *     actionGroupName: string,
      *     actionGroupState: 'ENABLED'|'DISABLED',
-     *     description?: string,
+     *     description?: string|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
  * @property 'LINE'|'AREA' $Type
- * @property string $Color
- * @property 'HIDDEN'|'VISIBLE' $TooltipVisibility
+ * @property string|null $Color
+ * @property 'HIDDEN'|'VISIBLE'|null $TooltipVisibility
  */
 class KPISparklineOptions extends Shape
 {
     /**
      * @param array{
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
      *     Type: 'LINE'|'AREA',
-     *     Color?: string,
-     *     TooltipVisibility?: 'HIDDEN'|'VISIBLE'
+     *     Color?: string|null,
+     *     TooltipVisibility?: 'HIDDEN'|'VISIBLE'|null
      * } $args
      */
     public function __construct(array $args)

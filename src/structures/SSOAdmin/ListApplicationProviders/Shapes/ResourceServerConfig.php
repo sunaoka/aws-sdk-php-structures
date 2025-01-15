@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListApplicationProviders\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, ResourceServerScopeDetails> $Scopes
+ * @property array<string, ResourceServerScopeDetails>|null $Scopes
  */
 class ResourceServerConfig extends Shape
 {
     /**
-     * @param array{Scopes?: array<string, ResourceServerScopeDetails>} $args
+     * @param array{Scopes?: array<string, ResourceServerScopeDetails>|null} $args
      */
     public function __construct(array $args = [])
     {

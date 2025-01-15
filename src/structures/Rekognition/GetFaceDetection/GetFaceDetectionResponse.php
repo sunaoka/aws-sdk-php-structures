@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetFaceDetection;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $JobStatus
- * @property string $StatusMessage
- * @property Shapes\VideoMetadata $VideoMetadata
- * @property string $NextToken
- * @property list<Shapes\FaceDetection> $Faces
- * @property string $JobId
- * @property Shapes\Video $Video
- * @property string $JobTag
+ * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null $JobStatus
+ * @property string|null $StatusMessage
+ * @property Shapes\VideoMetadata|null $VideoMetadata
+ * @property string|null $NextToken
+ * @property list<Shapes\FaceDetection>|null $Faces
+ * @property string|null $JobId
+ * @property Shapes\Video|null $Video
+ * @property string|null $JobTag
  */
 class GetFaceDetectionResponse extends Response
 {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Outposts\ListCatalogItems;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
- * @property list<'RACK'|'SERVER'> $ItemClassFilter
- * @property list<'EBS'|'S3'> $SupportedStorageFilter
- * @property list<string> $EC2FamilyFilter
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property list<'RACK'|'SERVER'>|null $ItemClassFilter
+ * @property list<'EBS'|'S3'>|null $SupportedStorageFilter
+ * @property list<string>|null $EC2FamilyFilter
  */
 class ListCatalogItemsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     ItemClassFilter?: list<'RACK'|'SERVER'>,
-     *     SupportedStorageFilter?: list<'EBS'|'S3'>,
-     *     EC2FamilyFilter?: list<string>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     ItemClassFilter?: list<'RACK'|'SERVER'>|null,
+     *     SupportedStorageFilter?: list<'EBS'|'S3'>|null,
+     *     EC2FamilyFilter?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

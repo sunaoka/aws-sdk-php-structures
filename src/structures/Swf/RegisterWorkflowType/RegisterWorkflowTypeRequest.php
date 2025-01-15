@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domain
  * @property string $name
  * @property string $version
- * @property string $description
- * @property string $defaultTaskStartToCloseTimeout
- * @property string $defaultExecutionStartToCloseTimeout
- * @property Shapes\TaskList $defaultTaskList
- * @property string $defaultTaskPriority
- * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON' $defaultChildPolicy
- * @property string $defaultLambdaRole
+ * @property string|null $description
+ * @property string|null $defaultTaskStartToCloseTimeout
+ * @property string|null $defaultExecutionStartToCloseTimeout
+ * @property Shapes\TaskList|null $defaultTaskList
+ * @property string|null $defaultTaskPriority
+ * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'|null $defaultChildPolicy
+ * @property string|null $defaultLambdaRole
  */
 class RegisterWorkflowTypeRequest extends Request
 {
@@ -23,13 +23,13 @@ class RegisterWorkflowTypeRequest extends Request
      *     domain: string,
      *     name: string,
      *     version: string,
-     *     description?: string,
-     *     defaultTaskStartToCloseTimeout?: string,
-     *     defaultExecutionStartToCloseTimeout?: string,
-     *     defaultTaskList?: Shapes\TaskList,
-     *     defaultTaskPriority?: string,
-     *     defaultChildPolicy?: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON',
-     *     defaultLambdaRole?: string
+     *     description?: string|null,
+     *     defaultTaskStartToCloseTimeout?: string|null,
+     *     defaultExecutionStartToCloseTimeout?: string|null,
+     *     defaultTaskList?: Shapes\TaskList|null,
+     *     defaultTaskPriority?: string|null,
+     *     defaultChildPolicy?: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'|null,
+     *     defaultLambdaRole?: string|null
      * } $args
      */
     public function __construct(array $args)

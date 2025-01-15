@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetComplianceDetailsByResource\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EvaluationResultQualifier $EvaluationResultQualifier
- * @property \Aws\Api\DateTimeResult $OrderingTimestamp
- * @property string $ResourceEvaluationId
+ * @property EvaluationResultQualifier|null $EvaluationResultQualifier
+ * @property \Aws\Api\DateTimeResult|null $OrderingTimestamp
+ * @property string|null $ResourceEvaluationId
  */
 class EvaluationResultIdentifier extends Shape
 {
     /**
      * @param array{
-     *     EvaluationResultQualifier?: EvaluationResultQualifier,
-     *     OrderingTimestamp?: \Aws\Api\DateTimeResult,
-     *     ResourceEvaluationId?: string
+     *     EvaluationResultQualifier?: EvaluationResultQualifier|null,
+     *     OrderingTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ResourceEvaluationId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

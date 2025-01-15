@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DataSet $DataSet
- * @property string $RequestId
- * @property int $Status
+ * @property Shapes\DataSet|null $DataSet
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class DescribeDataSetResponse extends Response
 {

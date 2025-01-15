@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\WorkerSessionSummary> $sessions
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListSessionsForWorkerResponse extends Response
 {

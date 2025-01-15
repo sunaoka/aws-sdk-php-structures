@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property 'ena'|'efa' $NetworkInterfaceType
+ * @property 'ena'|'efa'|null $NetworkInterfaceType
  * @property string $RoleArn
  * @property list<string> $SecurityGroupIds
  * @property string $SubnetId
@@ -16,7 +16,7 @@ class VpcInterfaceRequest extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     NetworkInterfaceType?: 'ena'|'efa',
+     *     NetworkInterfaceType?: 'ena'|'efa'|null,
      *     RoleArn: string,
      *     SecurityGroupIds: list<string>,
      *     SubnetId: string

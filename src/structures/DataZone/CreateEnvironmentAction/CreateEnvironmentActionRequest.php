@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateEnvironmentAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $domainIdentifier
  * @property string $environmentIdentifier
  * @property string $name
@@ -15,7 +15,7 @@ class CreateEnvironmentActionRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     domainIdentifier: string,
      *     environmentIdentifier: string,
      *     name: string,

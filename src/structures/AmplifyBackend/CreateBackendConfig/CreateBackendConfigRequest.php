@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AppId
- * @property string $BackendManagerAppId
+ * @property string|null $BackendManagerAppId
  */
 class CreateBackendConfigRequest extends Request
 {
     /**
      * @param array{
      *     AppId: string,
-     *     BackendManagerAppId?: string
+     *     BackendManagerAppId?: string|null
      * } $args
      */
     public function __construct(array $args)

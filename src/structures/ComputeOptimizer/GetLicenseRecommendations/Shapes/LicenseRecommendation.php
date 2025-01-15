@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLicenseRecommendations\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resourceArn
- * @property string $accountId
- * @property LicenseConfiguration $currentLicenseConfiguration
- * @property double $lookbackPeriodInDays
- * @property \Aws\Api\DateTimeResult $lastRefreshTimestamp
- * @property 'InsufficientMetrics'|'Optimized'|'NotOptimized' $finding
- * @property list<'InvalidCloudWatchApplicationInsightsSetup'|'CloudWatchApplicationInsightsError'|'LicenseOverprovisioned'|'Optimized'> $findingReasonCodes
- * @property list<LicenseRecommendationOption> $licenseRecommendationOptions
- * @property list<Tag> $tags
+ * @property string|null $resourceArn
+ * @property string|null $accountId
+ * @property LicenseConfiguration|null $currentLicenseConfiguration
+ * @property double|null $lookbackPeriodInDays
+ * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
+ * @property 'InsufficientMetrics'|'Optimized'|'NotOptimized'|null $finding
+ * @property list<'InvalidCloudWatchApplicationInsightsSetup'|'CloudWatchApplicationInsightsError'|'LicenseOverprovisioned'|'Optimized'>|null $findingReasonCodes
+ * @property list<LicenseRecommendationOption>|null $licenseRecommendationOptions
+ * @property list<Tag>|null $tags
  */
 class LicenseRecommendation extends Shape
 {
     /**
      * @param array{
-     *     resourceArn?: string,
-     *     accountId?: string,
-     *     currentLicenseConfiguration?: LicenseConfiguration,
-     *     lookbackPeriodInDays?: double,
-     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult,
-     *     finding?: 'InsufficientMetrics'|'Optimized'|'NotOptimized',
-     *     findingReasonCodes?: list<'InvalidCloudWatchApplicationInsightsSetup'|'CloudWatchApplicationInsightsError'|'LicenseOverprovisioned'|'Optimized'>,
-     *     licenseRecommendationOptions?: list<LicenseRecommendationOption>,
-     *     tags?: list<Tag>
+     *     resourceArn?: string|null,
+     *     accountId?: string|null,
+     *     currentLicenseConfiguration?: LicenseConfiguration|null,
+     *     lookbackPeriodInDays?: double|null,
+     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     finding?: 'InsufficientMetrics'|'Optimized'|'NotOptimized'|null,
+     *     findingReasonCodes?: list<'InvalidCloudWatchApplicationInsightsSetup'|'CloudWatchApplicationInsightsError'|'LicenseOverprovisioned'|'Optimized'>|null,
+     *     licenseRecommendationOptions?: list<LicenseRecommendationOption>|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

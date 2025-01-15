@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Sms\PutAppReplicationConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Server $server
- * @property ServerReplicationParameters $serverReplicationParameters
+ * @property Server|null $server
+ * @property ServerReplicationParameters|null $serverReplicationParameters
  */
 class ServerReplicationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     server?: Server,
-     *     serverReplicationParameters?: ServerReplicationParameters
+     *     server?: Server|null,
+     *     serverReplicationParameters?: ServerReplicationParameters|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $ChangeId
+ * @property string|null $ChangeId
  */
 class DescribeDomainChangeProgressRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     ChangeId?: string
+     *     ChangeId?: string|null
      * } $args
      */
     public function __construct(array $args)

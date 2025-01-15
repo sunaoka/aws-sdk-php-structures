@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\AssociateAddress;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AllocationId
- * @property string $InstanceId
- * @property string $PublicIp
- * @property bool $DryRun
- * @property string $NetworkInterfaceId
- * @property string $PrivateIpAddress
- * @property bool $AllowReassociation
+ * @property string|null $AllocationId
+ * @property string|null $InstanceId
+ * @property string|null $PublicIp
+ * @property bool|null $DryRun
+ * @property string|null $NetworkInterfaceId
+ * @property string|null $PrivateIpAddress
+ * @property bool|null $AllowReassociation
  */
 class AssociateAddressRequest extends Request
 {
     /**
      * @param array{
-     *     AllocationId?: string,
-     *     InstanceId?: string,
-     *     PublicIp?: string,
-     *     DryRun?: bool,
-     *     NetworkInterfaceId?: string,
-     *     PrivateIpAddress?: string,
-     *     AllowReassociation?: bool
+     *     AllocationId?: string|null,
+     *     InstanceId?: string|null,
+     *     PublicIp?: string|null,
+     *     DryRun?: bool|null,
+     *     NetworkInterfaceId?: string|null,
+     *     PrivateIpAddress?: string|null,
+     *     AllowReassociation?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

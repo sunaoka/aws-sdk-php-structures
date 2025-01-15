@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketNotificationConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<TopicConfiguration> $TopicConfigurations
- * @property list<QueueConfiguration> $QueueConfigurations
- * @property list<LambdaFunctionConfiguration> $LambdaFunctionConfigurations
- * @property EventBridgeConfiguration $EventBridgeConfiguration
+ * @property list<TopicConfiguration>|null $TopicConfigurations
+ * @property list<QueueConfiguration>|null $QueueConfigurations
+ * @property list<LambdaFunctionConfiguration>|null $LambdaFunctionConfigurations
+ * @property EventBridgeConfiguration|null $EventBridgeConfiguration
  */
 class NotificationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     TopicConfigurations?: list<TopicConfiguration>,
-     *     QueueConfigurations?: list<QueueConfiguration>,
-     *     LambdaFunctionConfigurations?: list<LambdaFunctionConfiguration>,
-     *     EventBridgeConfiguration?: EventBridgeConfiguration
+     *     TopicConfigurations?: list<TopicConfiguration>|null,
+     *     QueueConfigurations?: list<QueueConfiguration>|null,
+     *     LambdaFunctionConfigurations?: list<LambdaFunctionConfiguration>|null,
+     *     EventBridgeConfiguration?: EventBridgeConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

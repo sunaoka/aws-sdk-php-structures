@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateServer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Certificate
- * @property 'S3'|'EFS' $Domain
- * @property Shapes\EndpointDetails $EndpointDetails
- * @property 'PUBLIC'|'VPC'|'VPC_ENDPOINT' $EndpointType
- * @property string $HostKey
- * @property Shapes\IdentityProviderDetails $IdentityProviderDetails
- * @property 'SERVICE_MANAGED'|'API_GATEWAY'|'AWS_DIRECTORY_SERVICE'|'AWS_LAMBDA' $IdentityProviderType
- * @property string $LoggingRole
- * @property string $PostAuthenticationLoginBanner
- * @property string $PreAuthenticationLoginBanner
- * @property list<'SFTP'|'FTP'|'FTPS'|'AS2'> $Protocols
- * @property Shapes\ProtocolDetails $ProtocolDetails
- * @property string $SecurityPolicyName
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\WorkflowDetails $WorkflowDetails
- * @property list<string> $StructuredLogDestinations
- * @property Shapes\S3StorageOptions $S3StorageOptions
+ * @property string|null $Certificate
+ * @property 'S3'|'EFS'|null $Domain
+ * @property Shapes\EndpointDetails|null $EndpointDetails
+ * @property 'PUBLIC'|'VPC'|'VPC_ENDPOINT'|null $EndpointType
+ * @property string|null $HostKey
+ * @property Shapes\IdentityProviderDetails|null $IdentityProviderDetails
+ * @property 'SERVICE_MANAGED'|'API_GATEWAY'|'AWS_DIRECTORY_SERVICE'|'AWS_LAMBDA'|null $IdentityProviderType
+ * @property string|null $LoggingRole
+ * @property string|null $PostAuthenticationLoginBanner
+ * @property string|null $PreAuthenticationLoginBanner
+ * @property list<'SFTP'|'FTP'|'FTPS'|'AS2'>|null $Protocols
+ * @property Shapes\ProtocolDetails|null $ProtocolDetails
+ * @property string|null $SecurityPolicyName
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\WorkflowDetails|null $WorkflowDetails
+ * @property list<string>|null $StructuredLogDestinations
+ * @property Shapes\S3StorageOptions|null $S3StorageOptions
  */
 class CreateServerRequest extends Request
 {
     /**
      * @param array{
-     *     Certificate?: string,
-     *     Domain?: 'S3'|'EFS',
-     *     EndpointDetails?: Shapes\EndpointDetails,
-     *     EndpointType?: 'PUBLIC'|'VPC'|'VPC_ENDPOINT',
-     *     HostKey?: string,
-     *     IdentityProviderDetails?: Shapes\IdentityProviderDetails,
-     *     IdentityProviderType?: 'SERVICE_MANAGED'|'API_GATEWAY'|'AWS_DIRECTORY_SERVICE'|'AWS_LAMBDA',
-     *     LoggingRole?: string,
-     *     PostAuthenticationLoginBanner?: string,
-     *     PreAuthenticationLoginBanner?: string,
-     *     Protocols?: list<'SFTP'|'FTP'|'FTPS'|'AS2'>,
-     *     ProtocolDetails?: Shapes\ProtocolDetails,
-     *     SecurityPolicyName?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     WorkflowDetails?: Shapes\WorkflowDetails,
-     *     StructuredLogDestinations?: list<string>,
-     *     S3StorageOptions?: Shapes\S3StorageOptions
+     *     Certificate?: string|null,
+     *     Domain?: 'S3'|'EFS'|null,
+     *     EndpointDetails?: Shapes\EndpointDetails|null,
+     *     EndpointType?: 'PUBLIC'|'VPC'|'VPC_ENDPOINT'|null,
+     *     HostKey?: string|null,
+     *     IdentityProviderDetails?: Shapes\IdentityProviderDetails|null,
+     *     IdentityProviderType?: 'SERVICE_MANAGED'|'API_GATEWAY'|'AWS_DIRECTORY_SERVICE'|'AWS_LAMBDA'|null,
+     *     LoggingRole?: string|null,
+     *     PostAuthenticationLoginBanner?: string|null,
+     *     PreAuthenticationLoginBanner?: string|null,
+     *     Protocols?: list<'SFTP'|'FTP'|'FTPS'|'AS2'>|null,
+     *     ProtocolDetails?: Shapes\ProtocolDetails|null,
+     *     SecurityPolicyName?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     WorkflowDetails?: Shapes\WorkflowDetails|null,
+     *     StructuredLogDestinations?: list<string>|null,
+     *     S3StorageOptions?: Shapes\S3StorageOptions|null
      * } $args
      */
     public function __construct(array $args = [])

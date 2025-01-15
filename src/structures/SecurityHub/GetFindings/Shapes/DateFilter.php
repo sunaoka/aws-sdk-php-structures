@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Start
- * @property string $End
- * @property DateRange $DateRange
+ * @property string|null $Start
+ * @property string|null $End
+ * @property DateRange|null $DateRange
  */
 class DateFilter extends Shape
 {
     /**
      * @param array{
-     *     Start?: string,
-     *     End?: string,
-     *     DateRange?: DateRange
+     *     Start?: string|null,
+     *     End?: string|null,
+     *     DateRange?: DateRange|null
      * } $args
      */
     public function __construct(array $args = [])

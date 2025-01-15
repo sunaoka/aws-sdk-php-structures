@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\CreateReplicationSet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property array<string, Shapes\RegionMapInputValue> $regions
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateReplicationSetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     regions: array<string, Shapes\RegionMapInputValue>,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

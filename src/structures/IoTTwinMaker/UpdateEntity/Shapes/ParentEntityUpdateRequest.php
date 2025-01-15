@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'UPDATE'|'DELETE' $updateType
- * @property string $parentEntityId
+ * @property string|null $parentEntityId
  */
 class ParentEntityUpdateRequest extends Shape
 {
     /**
      * @param array{
      *     updateType: 'UPDATE'|'DELETE',
-     *     parentEntityId?: string
+     *     parentEntityId?: string|null
      * } $args
      */
     public function __construct(array $args)

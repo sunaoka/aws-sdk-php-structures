@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property string $OriginShieldRegion
+ * @property string|null $OriginShieldRegion
  */
 class OriginShield extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     OriginShieldRegion?: string
+     *     OriginShieldRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

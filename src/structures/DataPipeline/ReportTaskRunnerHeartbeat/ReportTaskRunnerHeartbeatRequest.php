@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $taskrunnerId
- * @property string $workerGroup
- * @property string $hostname
+ * @property string|null $workerGroup
+ * @property string|null $hostname
  */
 class ReportTaskRunnerHeartbeatRequest extends Request
 {
     /**
      * @param array{
      *     taskrunnerId: string,
-     *     workerGroup?: string,
-     *     hostname?: string
+     *     workerGroup?: string|null,
+     *     hostname?: string|null
      * } $args
      */
     public function __construct(array $args)

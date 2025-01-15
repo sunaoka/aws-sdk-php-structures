@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OriginationIdentity
  * @property string $Keyword
  * @property string $KeywordMessage
- * @property 'AUTOMATIC_RESPONSE'|'OPT_OUT'|'OPT_IN' $KeywordAction
+ * @property 'AUTOMATIC_RESPONSE'|'OPT_OUT'|'OPT_IN'|null $KeywordAction
  */
 class PutKeywordRequest extends Request
 {
@@ -17,7 +17,7 @@ class PutKeywordRequest extends Request
      *     OriginationIdentity: string,
      *     Keyword: string,
      *     KeywordMessage: string,
-     *     KeywordAction?: 'AUTOMATIC_RESPONSE'|'OPT_OUT'|'OPT_IN'
+     *     KeywordAction?: 'AUTOMATIC_RESPONSE'|'OPT_OUT'|'OPT_IN'|null
      * } $args
      */
     public function __construct(array $args)

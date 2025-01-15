@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyListener\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ListenerArn
- * @property string $LoadBalancerArn
- * @property int<1, 65535> $Port
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE' $Protocol
- * @property list<Certificate> $Certificates
- * @property string $SslPolicy
- * @property list<Action> $DefaultActions
- * @property list<string> $AlpnPolicy
- * @property MutualAuthenticationAttributes $MutualAuthentication
+ * @property string|null $ListenerArn
+ * @property string|null $LoadBalancerArn
+ * @property int<1, 65535>|null $Port
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $Protocol
+ * @property list<Certificate>|null $Certificates
+ * @property string|null $SslPolicy
+ * @property list<Action>|null $DefaultActions
+ * @property list<string>|null $AlpnPolicy
+ * @property MutualAuthenticationAttributes|null $MutualAuthentication
  */
 class Listener extends Shape
 {
     /**
      * @param array{
-     *     ListenerArn?: string,
-     *     LoadBalancerArn?: string,
-     *     Port?: int<1, 65535>,
-     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE',
-     *     Certificates?: list<Certificate>,
-     *     SslPolicy?: string,
-     *     DefaultActions?: list<Action>,
-     *     AlpnPolicy?: list<string>,
-     *     MutualAuthentication?: MutualAuthenticationAttributes
+     *     ListenerArn?: string|null,
+     *     LoadBalancerArn?: string|null,
+     *     Port?: int<1, 65535>|null,
+     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     Certificates?: list<Certificate>|null,
+     *     SslPolicy?: string|null,
+     *     DefaultActions?: list<Action>|null,
+     *     AlpnPolicy?: list<string>|null,
+     *     MutualAuthentication?: MutualAuthenticationAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

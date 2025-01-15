@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRContainers\ListSecurityConfigurations\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LakeFormationConfiguration $lakeFormationConfiguration
- * @property EncryptionConfiguration $encryptionConfiguration
+ * @property LakeFormationConfiguration|null $lakeFormationConfiguration
+ * @property EncryptionConfiguration|null $encryptionConfiguration
  */
 class AuthorizationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     lakeFormationConfiguration?: LakeFormationConfiguration,
-     *     encryptionConfiguration?: EncryptionConfiguration
+     *     lakeFormationConfiguration?: LakeFormationConfiguration|null,
+     *     encryptionConfiguration?: EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

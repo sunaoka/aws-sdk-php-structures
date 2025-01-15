@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApplicationSignals\BatchGetServiceLevelObjectiv
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Interval $Interval
- * @property double $AttainmentGoal
- * @property double $WarningThreshold
+ * @property Interval|null $Interval
+ * @property double|null $AttainmentGoal
+ * @property double|null $WarningThreshold
  */
 class Goal extends Shape
 {
     /**
      * @param array{
-     *     Interval?: Interval,
-     *     AttainmentGoal?: double,
-     *     WarningThreshold?: double
+     *     Interval?: Interval|null,
+     *     AttainmentGoal?: double|null,
+     *     WarningThreshold?: double|null
      * } $args
      */
     public function __construct(array $args = [])

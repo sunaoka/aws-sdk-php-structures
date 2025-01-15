@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Emr\ListInstanceFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Classification
- * @property list<Configuration> $Configurations
- * @property array<string, string> $Properties
+ * @property string|null $Classification
+ * @property list<Configuration>|null $Configurations
+ * @property array<string, string>|null $Properties
  */
 class Configuration extends Shape
 {
     /**
      * @param array{
-     *     Classification?: string,
-     *     Configurations?: list<Configuration>,
-     *     Properties?: array<string, string>
+     *     Classification?: string|null,
+     *     Configurations?: list<Configuration>|null,
+     *     Properties?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

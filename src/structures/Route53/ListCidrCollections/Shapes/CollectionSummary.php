@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Route53\ListCidrCollections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Id
- * @property string $Name
- * @property int<1, max> $Version
+ * @property string|null $Arn
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property int<1, max>|null $Version
  */
 class CollectionSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Id?: string,
-     *     Name?: string,
-     *     Version?: int<1, max>
+     *     Arn?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Version?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

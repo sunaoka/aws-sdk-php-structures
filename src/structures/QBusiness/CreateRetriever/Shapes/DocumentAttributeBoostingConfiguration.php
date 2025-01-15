@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QBusiness\CreateRetriever\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NumberAttributeBoostingConfiguration $numberConfiguration
- * @property StringAttributeBoostingConfiguration $stringConfiguration
- * @property DateAttributeBoostingConfiguration $dateConfiguration
- * @property StringListAttributeBoostingConfiguration $stringListConfiguration
+ * @property NumberAttributeBoostingConfiguration|null $numberConfiguration
+ * @property StringAttributeBoostingConfiguration|null $stringConfiguration
+ * @property DateAttributeBoostingConfiguration|null $dateConfiguration
+ * @property StringListAttributeBoostingConfiguration|null $stringListConfiguration
  */
 class DocumentAttributeBoostingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     numberConfiguration?: NumberAttributeBoostingConfiguration,
-     *     stringConfiguration?: StringAttributeBoostingConfiguration,
-     *     dateConfiguration?: DateAttributeBoostingConfiguration,
-     *     stringListConfiguration?: StringListAttributeBoostingConfiguration
+     *     numberConfiguration?: NumberAttributeBoostingConfiguration|null,
+     *     stringConfiguration?: StringAttributeBoostingConfiguration|null,
+     *     dateConfiguration?: DateAttributeBoostingConfiguration|null,
+     *     stringListConfiguration?: StringListAttributeBoostingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

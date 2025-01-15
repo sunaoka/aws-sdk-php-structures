@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyFormat
- * @property string $KeyFormatVersions
- * @property string $StaticKeyValue
- * @property string $Url
+ * @property string|null $KeyFormat
+ * @property string|null $KeyFormatVersions
+ * @property string|null $StaticKeyValue
+ * @property string|null $Url
  */
 class StaticKeyProvider extends Shape
 {
     /**
      * @param array{
-     *     KeyFormat?: string,
-     *     KeyFormatVersions?: string,
-     *     StaticKeyValue?: string,
-     *     Url?: string
+     *     KeyFormat?: string|null,
+     *     KeyFormatVersions?: string|null,
+     *     StaticKeyValue?: string|null,
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

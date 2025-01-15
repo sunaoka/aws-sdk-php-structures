@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Description
- * @property string $EndpointId
- * @property string $EndpointUrl
- * @property list<AwsEventsEndpointEventBusesDetails> $EventBuses
- * @property string $Name
- * @property AwsEventsEndpointReplicationConfigDetails $ReplicationConfig
- * @property string $RoleArn
- * @property AwsEventsEndpointRoutingConfigDetails $RoutingConfig
- * @property string $State
- * @property string $StateReason
+ * @property string|null $Arn
+ * @property string|null $Description
+ * @property string|null $EndpointId
+ * @property string|null $EndpointUrl
+ * @property list<AwsEventsEndpointEventBusesDetails>|null $EventBuses
+ * @property string|null $Name
+ * @property AwsEventsEndpointReplicationConfigDetails|null $ReplicationConfig
+ * @property string|null $RoleArn
+ * @property AwsEventsEndpointRoutingConfigDetails|null $RoutingConfig
+ * @property string|null $State
+ * @property string|null $StateReason
  */
 class AwsEventsEndpointDetails extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Description?: string,
-     *     EndpointId?: string,
-     *     EndpointUrl?: string,
-     *     EventBuses?: list<AwsEventsEndpointEventBusesDetails>,
-     *     Name?: string,
-     *     ReplicationConfig?: AwsEventsEndpointReplicationConfigDetails,
-     *     RoleArn?: string,
-     *     RoutingConfig?: AwsEventsEndpointRoutingConfigDetails,
-     *     State?: string,
-     *     StateReason?: string
+     *     Arn?: string|null,
+     *     Description?: string|null,
+     *     EndpointId?: string|null,
+     *     EndpointUrl?: string|null,
+     *     EventBuses?: list<AwsEventsEndpointEventBusesDetails>|null,
+     *     Name?: string|null,
+     *     ReplicationConfig?: AwsEventsEndpointReplicationConfigDetails|null,
+     *     RoleArn?: string|null,
+     *     RoutingConfig?: AwsEventsEndpointRoutingConfigDetails|null,
+     *     State?: string|null,
+     *     StateReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

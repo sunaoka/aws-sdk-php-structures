@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $connectionId
- * @property string $providerName
- * @property 'application/pdf' $loaContentType
+ * @property string|null $providerName
+ * @property 'application/pdf'|null $loaContentType
  */
 class DescribeLoaRequest extends Request
 {
     /**
      * @param array{
      *     connectionId: string,
-     *     providerName?: string,
-     *     loaContentType?: 'application/pdf'
+     *     providerName?: string|null,
+     *     loaContentType?: 'application/pdf'|null
      * } $args
      */
     public function __construct(array $args)

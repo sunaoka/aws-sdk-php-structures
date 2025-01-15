@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\ListConfigurationHistory\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceGroupName
- * @property string $AccountId
- * @property string $MonitoredResourceARN
- * @property 'INFO'|'WARN'|'ERROR' $EventStatus
- * @property 'CLOUDWATCH_ALARM'|'CLOUDWATCH_LOG'|'CLOUDFORMATION'|'SSM_ASSOCIATION' $EventResourceType
- * @property \Aws\Api\DateTimeResult $EventTime
- * @property string $EventDetail
- * @property string $EventResourceName
+ * @property string|null $ResourceGroupName
+ * @property string|null $AccountId
+ * @property string|null $MonitoredResourceARN
+ * @property 'INFO'|'WARN'|'ERROR'|null $EventStatus
+ * @property 'CLOUDWATCH_ALARM'|'CLOUDWATCH_LOG'|'CLOUDFORMATION'|'SSM_ASSOCIATION'|null $EventResourceType
+ * @property \Aws\Api\DateTimeResult|null $EventTime
+ * @property string|null $EventDetail
+ * @property string|null $EventResourceName
  */
 class ConfigurationEvent extends Shape
 {
     /**
      * @param array{
-     *     ResourceGroupName?: string,
-     *     AccountId?: string,
-     *     MonitoredResourceARN?: string,
-     *     EventStatus?: 'INFO'|'WARN'|'ERROR',
-     *     EventResourceType?: 'CLOUDWATCH_ALARM'|'CLOUDWATCH_LOG'|'CLOUDFORMATION'|'SSM_ASSOCIATION',
-     *     EventTime?: \Aws\Api\DateTimeResult,
-     *     EventDetail?: string,
-     *     EventResourceName?: string
+     *     ResourceGroupName?: string|null,
+     *     AccountId?: string|null,
+     *     MonitoredResourceARN?: string|null,
+     *     EventStatus?: 'INFO'|'WARN'|'ERROR'|null,
+     *     EventResourceType?: 'CLOUDWATCH_ALARM'|'CLOUDWATCH_LOG'|'CLOUDFORMATION'|'SSM_ASSOCIATION'|null,
+     *     EventTime?: \Aws\Api\DateTimeResult|null,
+     *     EventDetail?: string|null,
+     *     EventResourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

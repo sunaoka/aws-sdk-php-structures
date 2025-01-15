@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CancelReservedInstancesListing\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $InstanceCount
- * @property 'available'|'sold'|'cancelled'|'pending' $State
+ * @property int|null $InstanceCount
+ * @property 'available'|'sold'|'cancelled'|'pending'|null $State
  */
 class InstanceCount extends Shape
 {
     /**
      * @param array{
-     *     InstanceCount?: int,
-     *     State?: 'available'|'sold'|'cancelled'|'pending'
+     *     InstanceCount?: int|null,
+     *     State?: 'available'|'sold'|'cancelled'|'pending'|null
      * } $args
      */
     public function __construct(array $args = [])

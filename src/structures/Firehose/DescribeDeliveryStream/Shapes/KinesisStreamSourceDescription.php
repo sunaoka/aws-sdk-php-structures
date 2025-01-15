@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KinesisStreamARN
- * @property string $RoleARN
- * @property \Aws\Api\DateTimeResult $DeliveryStartTimestamp
+ * @property string|null $KinesisStreamARN
+ * @property string|null $RoleARN
+ * @property \Aws\Api\DateTimeResult|null $DeliveryStartTimestamp
  */
 class KinesisStreamSourceDescription extends Shape
 {
     /**
      * @param array{
-     *     KinesisStreamARN?: string,
-     *     RoleARN?: string,
-     *     DeliveryStartTimestamp?: \Aws\Api\DateTimeResult
+     *     KinesisStreamARN?: string|null,
+     *     RoleARN?: string|null,
+     *     DeliveryStartTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property string $logGroup
+ * @property string|null $logGroup
  */
 class CloudWatchLogsLogDelivery extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     logGroup?: string
+     *     logGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

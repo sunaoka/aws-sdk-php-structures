@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RegistrationType
- * @property list<string> $SectionPaths
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<string>|null $SectionPaths
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class DescribeRegistrationSectionDefinitionsRequest extends Request
 {
     /**
      * @param array{
      *     RegistrationType: string,
-     *     SectionPaths?: list<string>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     SectionPaths?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

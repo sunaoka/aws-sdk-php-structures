@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFormation\CreateGeneratedTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DELETE'|'RETAIN' $DeletionPolicy
- * @property 'DELETE'|'RETAIN' $UpdateReplacePolicy
+ * @property 'DELETE'|'RETAIN'|null $DeletionPolicy
+ * @property 'DELETE'|'RETAIN'|null $UpdateReplacePolicy
  */
 class TemplateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DeletionPolicy?: 'DELETE'|'RETAIN',
-     *     UpdateReplacePolicy?: 'DELETE'|'RETAIN'
+     *     DeletionPolicy?: 'DELETE'|'RETAIN'|null,
+     *     UpdateReplacePolicy?: 'DELETE'|'RETAIN'|null
      * } $args
      */
     public function __construct(array $args = [])

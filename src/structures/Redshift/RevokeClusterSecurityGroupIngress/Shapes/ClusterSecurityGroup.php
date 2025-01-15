@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Redshift\RevokeClusterSecurityGroupIngress\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterSecurityGroupName
- * @property string $Description
- * @property list<EC2SecurityGroup> $EC2SecurityGroups
- * @property list<IPRange> $IPRanges
- * @property list<Tag> $Tags
+ * @property string|null $ClusterSecurityGroupName
+ * @property string|null $Description
+ * @property list<EC2SecurityGroup>|null $EC2SecurityGroups
+ * @property list<IPRange>|null $IPRanges
+ * @property list<Tag>|null $Tags
  */
 class ClusterSecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     ClusterSecurityGroupName?: string,
-     *     Description?: string,
-     *     EC2SecurityGroups?: list<EC2SecurityGroup>,
-     *     IPRanges?: list<IPRange>,
-     *     Tags?: list<Tag>
+     *     ClusterSecurityGroupName?: string|null,
+     *     Description?: string|null,
+     *     EC2SecurityGroups?: list<EC2SecurityGroup>|null,
+     *     IPRanges?: list<IPRange>|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\CreateSignalCatalog\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Branch $branch
- * @property Sensor $sensor
- * @property Actuator $actuator
- * @property Attribute $attribute
- * @property CustomStruct $struct
- * @property CustomProperty $property
+ * @property Branch|null $branch
+ * @property Sensor|null $sensor
+ * @property Actuator|null $actuator
+ * @property Attribute|null $attribute
+ * @property CustomStruct|null $struct
+ * @property CustomProperty|null $property
  */
 class Node extends Shape
 {
     /**
      * @param array{
-     *     branch?: Branch,
-     *     sensor?: Sensor,
-     *     actuator?: Actuator,
-     *     attribute?: Attribute,
-     *     struct?: CustomStruct,
-     *     property?: CustomProperty
+     *     branch?: Branch|null,
+     *     sensor?: Sensor|null,
+     *     actuator?: Actuator|null,
+     *     attribute?: Attribute|null,
+     *     struct?: CustomStruct|null,
+     *     property?: CustomProperty|null
      * } $args
      */
     public function __construct(array $args = [])

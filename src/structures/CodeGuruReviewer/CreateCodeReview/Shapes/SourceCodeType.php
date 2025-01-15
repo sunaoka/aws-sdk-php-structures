@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\CreateCodeReview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CommitDiffSourceCodeType $CommitDiff
- * @property RepositoryHeadSourceCodeType $RepositoryHead
- * @property BranchDiffSourceCodeType $BranchDiff
- * @property S3BucketRepository $S3BucketRepository
- * @property RequestMetadata $RequestMetadata
+ * @property CommitDiffSourceCodeType|null $CommitDiff
+ * @property RepositoryHeadSourceCodeType|null $RepositoryHead
+ * @property BranchDiffSourceCodeType|null $BranchDiff
+ * @property S3BucketRepository|null $S3BucketRepository
+ * @property RequestMetadata|null $RequestMetadata
  */
 class SourceCodeType extends Shape
 {
     /**
      * @param array{
-     *     CommitDiff?: CommitDiffSourceCodeType,
-     *     RepositoryHead?: RepositoryHeadSourceCodeType,
-     *     BranchDiff?: BranchDiffSourceCodeType,
-     *     S3BucketRepository?: S3BucketRepository,
-     *     RequestMetadata?: RequestMetadata
+     *     CommitDiff?: CommitDiffSourceCodeType|null,
+     *     RepositoryHead?: RepositoryHeadSourceCodeType|null,
+     *     BranchDiff?: BranchDiffSourceCodeType|null,
+     *     S3BucketRepository?: S3BucketRepository|null,
+     *     RequestMetadata?: RequestMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

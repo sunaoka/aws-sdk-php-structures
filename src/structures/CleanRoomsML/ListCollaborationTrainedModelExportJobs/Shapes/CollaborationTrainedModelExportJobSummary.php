@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property TrainedModelExportOutputConfiguration $outputConfiguration
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE' $status
- * @property StatusDetails $statusDetails
- * @property string $description
+ * @property StatusDetails|null $statusDetails
+ * @property string|null $description
  * @property string $creatorAccountId
  * @property string $trainedModelArn
  * @property string $membershipIdentifier
@@ -26,8 +26,8 @@ class CollaborationTrainedModelExportJobSummary extends Shape
      *     name: string,
      *     outputConfiguration: TrainedModelExportOutputConfiguration,
      *     status: 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE',
-     *     statusDetails?: StatusDetails,
-     *     description?: string,
+     *     statusDetails?: StatusDetails|null,
+     *     description?: string|null,
      *     creatorAccountId: string,
      *     trainedModelArn: string,
      *     membershipIdentifier: string,

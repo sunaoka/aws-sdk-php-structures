@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\Retrieve;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\GuardrailConfiguration $guardrailConfiguration
+ * @property Shapes\GuardrailConfiguration|null $guardrailConfiguration
  * @property string $knowledgeBaseId
- * @property string $nextToken
- * @property Shapes\KnowledgeBaseRetrievalConfiguration $retrievalConfiguration
+ * @property string|null $nextToken
+ * @property Shapes\KnowledgeBaseRetrievalConfiguration|null $retrievalConfiguration
  * @property Shapes\KnowledgeBaseQuery $retrievalQuery
  */
 class RetrieveRequest extends Request
 {
     /**
      * @param array{
-     *     guardrailConfiguration?: Shapes\GuardrailConfiguration,
+     *     guardrailConfiguration?: Shapes\GuardrailConfiguration|null,
      *     knowledgeBaseId: string,
-     *     nextToken?: string,
-     *     retrievalConfiguration?: Shapes\KnowledgeBaseRetrievalConfiguration,
+     *     nextToken?: string|null,
+     *     retrievalConfiguration?: Shapes\KnowledgeBaseRetrievalConfiguration|null,
      *     retrievalQuery: Shapes\KnowledgeBaseQuery
      * } $args
      */

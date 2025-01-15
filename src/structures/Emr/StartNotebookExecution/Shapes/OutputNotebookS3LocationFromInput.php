@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Emr\StartNotebookExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bucket
- * @property string $Key
+ * @property string|null $Bucket
+ * @property string|null $Key
  */
 class OutputNotebookS3LocationFromInput extends Shape
 {
     /**
      * @param array{
-     *     Bucket?: string,
-     *     Key?: string
+     *     Bucket?: string|null,
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args = [])

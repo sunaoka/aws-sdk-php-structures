@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceQuotas\ListServiceQuotaIncreaseRequestsI
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ServiceCode
- * @property string $AwsRegion
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $ServiceCode
+ * @property string|null $AwsRegion
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListServiceQuotaIncreaseRequestsInTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     ServiceCode?: string,
-     *     AwsRegion?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     ServiceCode?: string|null,
+     *     AwsRegion?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

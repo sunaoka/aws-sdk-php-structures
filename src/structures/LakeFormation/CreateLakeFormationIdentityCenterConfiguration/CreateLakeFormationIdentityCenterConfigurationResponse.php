@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LakeFormation\CreateLakeFormationIdentityCenter
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationArn
+ * @property string|null $ApplicationArn
  */
 class CreateLakeFormationIdentityCenterConfigurationResponse extends Response
 {

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $timeElapsedSeconds
  * @property int $progressPercentage
  * @property int $errorCount
- * @property string $errorDetails
+ * @property string|null $errorDetails
  * @property int $statementCount
  * @property int $dictionaryEntryCount
  */
@@ -23,7 +23,7 @@ class ImportTaskDetails extends Shape
      *     timeElapsedSeconds: int,
      *     progressPercentage: int,
      *     errorCount: int,
-     *     errorDetails?: string,
+     *     errorDetails?: string|null,
      *     statementCount: int,
      *     dictionaryEntryCount: int
      * } $args

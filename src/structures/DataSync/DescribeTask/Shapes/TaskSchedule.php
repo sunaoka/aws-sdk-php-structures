@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ScheduleExpression
- * @property 'ENABLED'|'DISABLED' $Status
+ * @property 'ENABLED'|'DISABLED'|null $Status
  */
 class TaskSchedule extends Shape
 {
     /**
      * @param array{
      *     ScheduleExpression: string,
-     *     Status?: 'ENABLED'|'DISABLED'
+     *     Status?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

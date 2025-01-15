@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\EnableEbsEncryptionByDefault;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $EbsEncryptionByDefault
+ * @property bool|null $EbsEncryptionByDefault
  */
 class EnableEbsEncryptionByDefaultResponse extends Response
 {

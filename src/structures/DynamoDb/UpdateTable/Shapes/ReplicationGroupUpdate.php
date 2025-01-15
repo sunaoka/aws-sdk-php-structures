@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CreateReplicationGroupMemberAction $Create
- * @property UpdateReplicationGroupMemberAction $Update
- * @property DeleteReplicationGroupMemberAction $Delete
+ * @property CreateReplicationGroupMemberAction|null $Create
+ * @property UpdateReplicationGroupMemberAction|null $Update
+ * @property DeleteReplicationGroupMemberAction|null $Delete
  */
 class ReplicationGroupUpdate extends Shape
 {
     /**
      * @param array{
-     *     Create?: CreateReplicationGroupMemberAction,
-     *     Update?: UpdateReplicationGroupMemberAction,
-     *     Delete?: DeleteReplicationGroupMemberAction
+     *     Create?: CreateReplicationGroupMemberAction|null,
+     *     Update?: UpdateReplicationGroupMemberAction|null,
+     *     Delete?: DeleteReplicationGroupMemberAction|null
      * } $args
      */
     public function __construct(array $args = [])

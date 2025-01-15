@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property bool $packageCleanup
- * @property list<string> $excludeAppPackagesFromCleanup
- * @property bool $rebootAfterUse
+ * @property string|null $description
+ * @property bool|null $packageCleanup
+ * @property list<string>|null $excludeAppPackagesFromCleanup
+ * @property bool|null $rebootAfterUse
  */
 class CreateInstanceProfileRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     packageCleanup?: bool,
-     *     excludeAppPackagesFromCleanup?: list<string>,
-     *     rebootAfterUse?: bool
+     *     description?: string|null,
+     *     packageCleanup?: bool|null,
+     *     excludeAppPackagesFromCleanup?: list<string>|null,
+     *     rebootAfterUse?: bool|null
      * } $args
      */
     public function __construct(array $args)

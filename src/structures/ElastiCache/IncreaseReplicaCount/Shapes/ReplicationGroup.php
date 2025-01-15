@@ -5,75 +5,75 @@ namespace Sunaoka\Aws\Structures\ElastiCache\IncreaseReplicaCount\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplicationGroupId
- * @property string $Description
- * @property GlobalReplicationGroupInfo $GlobalReplicationGroupInfo
- * @property string $Status
- * @property ReplicationGroupPendingModifiedValues $PendingModifiedValues
- * @property list<string> $MemberClusters
- * @property list<NodeGroup> $NodeGroups
- * @property string $SnapshottingClusterId
- * @property 'enabled'|'disabled'|'enabling'|'disabling' $AutomaticFailover
- * @property 'enabled'|'disabled' $MultiAZ
- * @property Endpoint $ConfigurationEndpoint
- * @property int $SnapshotRetentionLimit
- * @property string $SnapshotWindow
- * @property bool $ClusterEnabled
- * @property string $CacheNodeType
- * @property bool $AuthTokenEnabled
- * @property \Aws\Api\DateTimeResult $AuthTokenLastModifiedDate
- * @property bool $TransitEncryptionEnabled
- * @property bool $AtRestEncryptionEnabled
- * @property list<string> $MemberClustersOutpostArns
- * @property string $KmsKeyId
- * @property string $ARN
- * @property list<string> $UserGroupIds
- * @property list<LogDeliveryConfiguration> $LogDeliveryConfigurations
- * @property \Aws\Api\DateTimeResult $ReplicationGroupCreateTime
- * @property 'enabled'|'disabled' $DataTiering
- * @property bool $AutoMinorVersionUpgrade
- * @property 'ipv4'|'ipv6'|'dual_stack' $NetworkType
- * @property 'ipv4'|'ipv6' $IpDiscovery
- * @property 'preferred'|'required' $TransitEncryptionMode
- * @property 'enabled'|'disabled'|'compatible' $ClusterMode
- * @property string $Engine
+ * @property string|null $ReplicationGroupId
+ * @property string|null $Description
+ * @property GlobalReplicationGroupInfo|null $GlobalReplicationGroupInfo
+ * @property string|null $Status
+ * @property ReplicationGroupPendingModifiedValues|null $PendingModifiedValues
+ * @property list<string>|null $MemberClusters
+ * @property list<NodeGroup>|null $NodeGroups
+ * @property string|null $SnapshottingClusterId
+ * @property 'enabled'|'disabled'|'enabling'|'disabling'|null $AutomaticFailover
+ * @property 'enabled'|'disabled'|null $MultiAZ
+ * @property Endpoint|null $ConfigurationEndpoint
+ * @property int|null $SnapshotRetentionLimit
+ * @property string|null $SnapshotWindow
+ * @property bool|null $ClusterEnabled
+ * @property string|null $CacheNodeType
+ * @property bool|null $AuthTokenEnabled
+ * @property \Aws\Api\DateTimeResult|null $AuthTokenLastModifiedDate
+ * @property bool|null $TransitEncryptionEnabled
+ * @property bool|null $AtRestEncryptionEnabled
+ * @property list<string>|null $MemberClustersOutpostArns
+ * @property string|null $KmsKeyId
+ * @property string|null $ARN
+ * @property list<string>|null $UserGroupIds
+ * @property list<LogDeliveryConfiguration>|null $LogDeliveryConfigurations
+ * @property \Aws\Api\DateTimeResult|null $ReplicationGroupCreateTime
+ * @property 'enabled'|'disabled'|null $DataTiering
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
+ * @property 'ipv4'|'ipv6'|null $IpDiscovery
+ * @property 'preferred'|'required'|null $TransitEncryptionMode
+ * @property 'enabled'|'disabled'|'compatible'|null $ClusterMode
+ * @property string|null $Engine
  */
 class ReplicationGroup extends Shape
 {
     /**
      * @param array{
-     *     ReplicationGroupId?: string,
-     *     Description?: string,
-     *     GlobalReplicationGroupInfo?: GlobalReplicationGroupInfo,
-     *     Status?: string,
-     *     PendingModifiedValues?: ReplicationGroupPendingModifiedValues,
-     *     MemberClusters?: list<string>,
-     *     NodeGroups?: list<NodeGroup>,
-     *     SnapshottingClusterId?: string,
-     *     AutomaticFailover?: 'enabled'|'disabled'|'enabling'|'disabling',
-     *     MultiAZ?: 'enabled'|'disabled',
-     *     ConfigurationEndpoint?: Endpoint,
-     *     SnapshotRetentionLimit?: int,
-     *     SnapshotWindow?: string,
-     *     ClusterEnabled?: bool,
-     *     CacheNodeType?: string,
-     *     AuthTokenEnabled?: bool,
-     *     AuthTokenLastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     TransitEncryptionEnabled?: bool,
-     *     AtRestEncryptionEnabled?: bool,
-     *     MemberClustersOutpostArns?: list<string>,
-     *     KmsKeyId?: string,
-     *     ARN?: string,
-     *     UserGroupIds?: list<string>,
-     *     LogDeliveryConfigurations?: list<LogDeliveryConfiguration>,
-     *     ReplicationGroupCreateTime?: \Aws\Api\DateTimeResult,
-     *     DataTiering?: 'enabled'|'disabled',
-     *     AutoMinorVersionUpgrade?: bool,
-     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack',
-     *     IpDiscovery?: 'ipv4'|'ipv6',
-     *     TransitEncryptionMode?: 'preferred'|'required',
-     *     ClusterMode?: 'enabled'|'disabled'|'compatible',
-     *     Engine?: string
+     *     ReplicationGroupId?: string|null,
+     *     Description?: string|null,
+     *     GlobalReplicationGroupInfo?: GlobalReplicationGroupInfo|null,
+     *     Status?: string|null,
+     *     PendingModifiedValues?: ReplicationGroupPendingModifiedValues|null,
+     *     MemberClusters?: list<string>|null,
+     *     NodeGroups?: list<NodeGroup>|null,
+     *     SnapshottingClusterId?: string|null,
+     *     AutomaticFailover?: 'enabled'|'disabled'|'enabling'|'disabling'|null,
+     *     MultiAZ?: 'enabled'|'disabled'|null,
+     *     ConfigurationEndpoint?: Endpoint|null,
+     *     SnapshotRetentionLimit?: int|null,
+     *     SnapshotWindow?: string|null,
+     *     ClusterEnabled?: bool|null,
+     *     CacheNodeType?: string|null,
+     *     AuthTokenEnabled?: bool|null,
+     *     AuthTokenLastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     TransitEncryptionEnabled?: bool|null,
+     *     AtRestEncryptionEnabled?: bool|null,
+     *     MemberClustersOutpostArns?: list<string>|null,
+     *     KmsKeyId?: string|null,
+     *     ARN?: string|null,
+     *     UserGroupIds?: list<string>|null,
+     *     LogDeliveryConfigurations?: list<LogDeliveryConfiguration>|null,
+     *     ReplicationGroupCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     DataTiering?: 'enabled'|'disabled'|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
+     *     IpDiscovery?: 'ipv4'|'ipv6'|null,
+     *     TransitEncryptionMode?: 'preferred'|'required'|null,
+     *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null,
+     *     Engine?: string|null
      * } $args
      */
     public function __construct(array $args = [])

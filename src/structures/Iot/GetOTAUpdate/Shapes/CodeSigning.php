@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\GetOTAUpdate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $awsSignerJobId
- * @property StartSigningJobParameter $startSigningJobParameter
- * @property CustomCodeSigning $customCodeSigning
+ * @property string|null $awsSignerJobId
+ * @property StartSigningJobParameter|null $startSigningJobParameter
+ * @property CustomCodeSigning|null $customCodeSigning
  */
 class CodeSigning extends Shape
 {
     /**
      * @param array{
-     *     awsSignerJobId?: string,
-     *     startSigningJobParameter?: StartSigningJobParameter,
-     *     customCodeSigning?: CustomCodeSigning
+     *     awsSignerJobId?: string|null,
+     *     startSigningJobParameter?: StartSigningJobParameter|null,
+     *     customCodeSigning?: CustomCodeSigning|null
      * } $args
      */
     public function __construct(array $args = [])

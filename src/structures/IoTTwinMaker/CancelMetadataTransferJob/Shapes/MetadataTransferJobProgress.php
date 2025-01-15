@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\CancelMetadataTransferJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $totalCount
- * @property int $succeededCount
- * @property int $skippedCount
- * @property int $failedCount
+ * @property int|null $totalCount
+ * @property int|null $succeededCount
+ * @property int|null $skippedCount
+ * @property int|null $failedCount
  */
 class MetadataTransferJobProgress extends Shape
 {
     /**
      * @param array{
-     *     totalCount?: int,
-     *     succeededCount?: int,
-     *     skippedCount?: int,
-     *     failedCount?: int
+     *     totalCount?: int|null,
+     *     succeededCount?: int|null,
+     *     skippedCount?: int|null,
+     *     failedCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

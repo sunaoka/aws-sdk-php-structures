@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $LanguageCode
- * @property 'LOOSE'|'STRICT' $LanguageSelectionPolicy
+ * @property 'LOOSE'|'STRICT'|null $LanguageSelectionPolicy
  */
 class AudioLanguageSelection extends Shape
 {
     /**
      * @param array{
      *     LanguageCode: string,
-     *     LanguageSelectionPolicy?: 'LOOSE'|'STRICT'
+     *     LanguageSelectionPolicy?: 'LOOSE'|'STRICT'|null
      * } $args
      */
     public function __construct(array $args)

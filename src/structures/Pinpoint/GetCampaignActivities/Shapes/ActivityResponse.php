@@ -7,18 +7,18 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ApplicationId
  * @property string $CampaignId
- * @property string $End
+ * @property string|null $End
  * @property string $Id
- * @property string $Result
- * @property string $ScheduledStart
- * @property string $Start
- * @property string $State
- * @property int $SuccessfulEndpointCount
- * @property int $TimezonesCompletedCount
- * @property int $TimezonesTotalCount
- * @property int $TotalEndpointCount
- * @property string $TreatmentId
- * @property array<string, string> $ExecutionMetrics
+ * @property string|null $Result
+ * @property string|null $ScheduledStart
+ * @property string|null $Start
+ * @property string|null $State
+ * @property int|null $SuccessfulEndpointCount
+ * @property int|null $TimezonesCompletedCount
+ * @property int|null $TimezonesTotalCount
+ * @property int|null $TotalEndpointCount
+ * @property string|null $TreatmentId
+ * @property array<string, string>|null $ExecutionMetrics
  */
 class ActivityResponse extends Shape
 {
@@ -26,18 +26,18 @@ class ActivityResponse extends Shape
      * @param array{
      *     ApplicationId: string,
      *     CampaignId: string,
-     *     End?: string,
+     *     End?: string|null,
      *     Id: string,
-     *     Result?: string,
-     *     ScheduledStart?: string,
-     *     Start?: string,
-     *     State?: string,
-     *     SuccessfulEndpointCount?: int,
-     *     TimezonesCompletedCount?: int,
-     *     TimezonesTotalCount?: int,
-     *     TotalEndpointCount?: int,
-     *     TreatmentId?: string,
-     *     ExecutionMetrics?: array<string, string>
+     *     Result?: string|null,
+     *     ScheduledStart?: string|null,
+     *     Start?: string|null,
+     *     State?: string|null,
+     *     SuccessfulEndpointCount?: int|null,
+     *     TimezonesCompletedCount?: int|null,
+     *     TimezonesTotalCount?: int|null,
+     *     TotalEndpointCount?: int|null,
+     *     TreatmentId?: string|null,
+     *     ExecutionMetrics?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

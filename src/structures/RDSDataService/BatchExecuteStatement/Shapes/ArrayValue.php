@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\RDSDataService\BatchExecuteStatement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<bool> $booleanValues
- * @property list<int> $longValues
- * @property list<double> $doubleValues
- * @property list<string> $stringValues
- * @property list<ArrayValue> $arrayValues
+ * @property list<bool>|null $booleanValues
+ * @property list<int>|null $longValues
+ * @property list<double>|null $doubleValues
+ * @property list<string>|null $stringValues
+ * @property list<ArrayValue>|null $arrayValues
  */
 class ArrayValue extends Shape
 {
     /**
      * @param array{
-     *     booleanValues?: list<bool>,
-     *     longValues?: list<int>,
-     *     doubleValues?: list<double>,
-     *     stringValues?: list<string>,
-     *     arrayValues?: list<ArrayValue>
+     *     booleanValues?: list<bool>|null,
+     *     longValues?: list<int>|null,
+     *     doubleValues?: list<double>|null,
+     *     stringValues?: list<string>|null,
+     *     arrayValues?: list<ArrayValue>|null
      * } $args
      */
     public function __construct(array $args = [])

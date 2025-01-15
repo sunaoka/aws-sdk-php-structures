@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MergePolicy
- * @property list<CaptionSource> $CaptionSources
+ * @property string|null $MergePolicy
+ * @property list<CaptionSource>|null $CaptionSources
  */
 class InputCaptions extends Shape
 {
     /**
      * @param array{
-     *     MergePolicy?: string,
-     *     CaptionSources?: list<CaptionSource>
+     *     MergePolicy?: string|null,
+     *     CaptionSources?: list<CaptionSource>|null
      * } $args
      */
     public function __construct(array $args = [])

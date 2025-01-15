@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyGlobalCluster;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GlobalClusterIdentifier
- * @property string $NewGlobalClusterIdentifier
- * @property bool $DeletionProtection
- * @property string $EngineVersion
- * @property bool $AllowMajorVersionUpgrade
+ * @property string|null $GlobalClusterIdentifier
+ * @property string|null $NewGlobalClusterIdentifier
+ * @property bool|null $DeletionProtection
+ * @property string|null $EngineVersion
+ * @property bool|null $AllowMajorVersionUpgrade
  */
 class ModifyGlobalClusterRequest extends Request
 {
     /**
      * @param array{
-     *     GlobalClusterIdentifier?: string,
-     *     NewGlobalClusterIdentifier?: string,
-     *     DeletionProtection?: bool,
-     *     EngineVersion?: string,
-     *     AllowMajorVersionUpgrade?: bool
+     *     GlobalClusterIdentifier?: string|null,
+     *     NewGlobalClusterIdentifier?: string|null,
+     *     DeletionProtection?: bool|null,
+     *     EngineVersion?: string|null,
+     *     AllowMajorVersionUpgrade?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

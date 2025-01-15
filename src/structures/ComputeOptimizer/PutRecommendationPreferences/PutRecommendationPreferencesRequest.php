@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle' $resourceType
- * @property Shapes\Scope $scope
- * @property 'Active'|'Inactive' $enhancedInfrastructureMetrics
- * @property 'Active'|'Inactive' $inferredWorkloadTypes
- * @property Shapes\ExternalMetricsPreference $externalMetricsPreference
- * @property 'DAYS_14'|'DAYS_32'|'DAYS_93' $lookBackPeriod
- * @property list<Shapes\UtilizationPreference> $utilizationPreferences
- * @property list<Shapes\PreferredResource> $preferredResources
- * @property 'AfterDiscounts'|'BeforeDiscounts' $savingsEstimationMode
+ * @property Shapes\Scope|null $scope
+ * @property 'Active'|'Inactive'|null $enhancedInfrastructureMetrics
+ * @property 'Active'|'Inactive'|null $inferredWorkloadTypes
+ * @property Shapes\ExternalMetricsPreference|null $externalMetricsPreference
+ * @property 'DAYS_14'|'DAYS_32'|'DAYS_93'|null $lookBackPeriod
+ * @property list<Shapes\UtilizationPreference>|null $utilizationPreferences
+ * @property list<Shapes\PreferredResource>|null $preferredResources
+ * @property 'AfterDiscounts'|'BeforeDiscounts'|null $savingsEstimationMode
  */
 class PutRecommendationPreferencesRequest extends Request
 {
     /**
      * @param array{
      *     resourceType: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle',
-     *     scope?: Shapes\Scope,
-     *     enhancedInfrastructureMetrics?: 'Active'|'Inactive',
-     *     inferredWorkloadTypes?: 'Active'|'Inactive',
-     *     externalMetricsPreference?: Shapes\ExternalMetricsPreference,
-     *     lookBackPeriod?: 'DAYS_14'|'DAYS_32'|'DAYS_93',
-     *     utilizationPreferences?: list<Shapes\UtilizationPreference>,
-     *     preferredResources?: list<Shapes\PreferredResource>,
-     *     savingsEstimationMode?: 'AfterDiscounts'|'BeforeDiscounts'
+     *     scope?: Shapes\Scope|null,
+     *     enhancedInfrastructureMetrics?: 'Active'|'Inactive'|null,
+     *     inferredWorkloadTypes?: 'Active'|'Inactive'|null,
+     *     externalMetricsPreference?: Shapes\ExternalMetricsPreference|null,
+     *     lookBackPeriod?: 'DAYS_14'|'DAYS_32'|'DAYS_93'|null,
+     *     utilizationPreferences?: list<Shapes\UtilizationPreference>|null,
+     *     preferredResources?: list<Shapes\PreferredResource>|null,
+     *     savingsEstimationMode?: 'AfterDiscounts'|'BeforeDiscounts'|null
      * } $args
      */
     public function __construct(array $args)

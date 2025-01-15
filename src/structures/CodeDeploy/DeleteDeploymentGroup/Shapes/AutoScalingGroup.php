@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\DeleteDeploymentGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $hook
- * @property string $terminationHook
+ * @property string|null $name
+ * @property string|null $hook
+ * @property string|null $terminationHook
  */
 class AutoScalingGroup extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     hook?: string,
-     *     terminationHook?: string
+     *     name?: string|null,
+     *     hook?: string|null,
+     *     terminationHook?: string|null
      * } $args
      */
     public function __construct(array $args = [])

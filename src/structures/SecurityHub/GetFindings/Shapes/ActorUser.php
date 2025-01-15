@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Uid
- * @property string $Type
- * @property string $CredentialUid
- * @property UserAccount $Account
+ * @property string|null $Name
+ * @property string|null $Uid
+ * @property string|null $Type
+ * @property string|null $CredentialUid
+ * @property UserAccount|null $Account
  */
 class ActorUser extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Uid?: string,
-     *     Type?: string,
-     *     CredentialUid?: string,
-     *     Account?: UserAccount
+     *     Name?: string|null,
+     *     Uid?: string|null,
+     *     Type?: string|null,
+     *     CredentialUid?: string|null,
+     *     Account?: UserAccount|null
      * } $args
      */
     public function __construct(array $args = [])

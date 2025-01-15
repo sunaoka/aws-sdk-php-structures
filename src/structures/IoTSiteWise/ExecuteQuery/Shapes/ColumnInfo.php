@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ExecuteQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property ColumnType $type
+ * @property string|null $name
+ * @property ColumnType|null $type
  */
 class ColumnInfo extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     type?: ColumnType
+     *     name?: string|null,
+     *     type?: ColumnType|null
      * } $args
      */
     public function __construct(array $args = [])

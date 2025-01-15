@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property ActionTarget $AssociationId
  * @property ActionTarget $RouteTableId
  */
@@ -13,7 +13,7 @@ class EC2ReplaceRouteTableAssociationAction extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     AssociationId: ActionTarget,
      *     RouteTableId: ActionTarget
      * } $args

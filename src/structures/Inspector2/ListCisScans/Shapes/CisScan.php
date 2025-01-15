@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScans\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $failedChecks
+ * @property int|null $failedChecks
  * @property string $scanArn
  * @property string $scanConfigurationArn
- * @property \Aws\Api\DateTimeResult $scanDate
- * @property string $scanName
- * @property string $scheduledBy
- * @property 'LEVEL_1'|'LEVEL_2' $securityLevel
- * @property 'FAILED'|'COMPLETED'|'CANCELLED'|'IN_PROGRESS' $status
- * @property CisTargets $targets
- * @property int $totalChecks
+ * @property \Aws\Api\DateTimeResult|null $scanDate
+ * @property string|null $scanName
+ * @property string|null $scheduledBy
+ * @property 'LEVEL_1'|'LEVEL_2'|null $securityLevel
+ * @property 'FAILED'|'COMPLETED'|'CANCELLED'|'IN_PROGRESS'|null $status
+ * @property CisTargets|null $targets
+ * @property int|null $totalChecks
  */
 class CisScan extends Shape
 {
     /**
      * @param array{
-     *     failedChecks?: int,
+     *     failedChecks?: int|null,
      *     scanArn: string,
      *     scanConfigurationArn: string,
-     *     scanDate?: \Aws\Api\DateTimeResult,
-     *     scanName?: string,
-     *     scheduledBy?: string,
-     *     securityLevel?: 'LEVEL_1'|'LEVEL_2',
-     *     status?: 'FAILED'|'COMPLETED'|'CANCELLED'|'IN_PROGRESS',
-     *     targets?: CisTargets,
-     *     totalChecks?: int
+     *     scanDate?: \Aws\Api\DateTimeResult|null,
+     *     scanName?: string|null,
+     *     scheduledBy?: string|null,
+     *     securityLevel?: 'LEVEL_1'|'LEVEL_2'|null,
+     *     status?: 'FAILED'|'COMPLETED'|'CANCELLED'|'IN_PROGRESS'|null,
+     *     targets?: CisTargets|null,
+     *     totalChecks?: int|null
      * } $args
      */
     public function __construct(array $args)

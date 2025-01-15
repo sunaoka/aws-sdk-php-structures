@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $additionalOccurrences
- * @property CustomDataIdentifiers $customDataIdentifiers
- * @property string $mimeType
- * @property list<SensitiveDataItem> $sensitiveData
- * @property int $sizeClassified
- * @property ClassificationResultStatus $status
+ * @property bool|null $additionalOccurrences
+ * @property CustomDataIdentifiers|null $customDataIdentifiers
+ * @property string|null $mimeType
+ * @property list<SensitiveDataItem>|null $sensitiveData
+ * @property int|null $sizeClassified
+ * @property ClassificationResultStatus|null $status
  */
 class ClassificationResult extends Shape
 {
     /**
      * @param array{
-     *     additionalOccurrences?: bool,
-     *     customDataIdentifiers?: CustomDataIdentifiers,
-     *     mimeType?: string,
-     *     sensitiveData?: list<SensitiveDataItem>,
-     *     sizeClassified?: int,
-     *     status?: ClassificationResultStatus
+     *     additionalOccurrences?: bool|null,
+     *     customDataIdentifiers?: CustomDataIdentifiers|null,
+     *     mimeType?: string|null,
+     *     sensitiveData?: list<SensitiveDataItem>|null,
+     *     sizeClassified?: int|null,
+     *     status?: ClassificationResultStatus|null
      * } $args
      */
     public function __construct(array $args = [])

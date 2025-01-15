@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ImportAsProvisionedProduct;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $ProductId
  * @property string $ProvisioningArtifactId
  * @property string $ProvisionedProductName
@@ -16,7 +16,7 @@ class ImportAsProvisionedProductRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     ProductId: string,
      *     ProvisioningArtifactId: string,
      *     ProvisionedProductName: string,

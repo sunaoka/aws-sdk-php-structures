@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeBotAlias\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $kmsKeyArn
+ * @property string|null $kmsKeyArn
  * @property string $s3BucketArn
  * @property string $logPrefix
  */
@@ -13,7 +13,7 @@ class S3BucketLogDestination extends Shape
 {
     /**
      * @param array{
-     *     kmsKeyArn?: string,
+     *     kmsKeyArn?: string|null,
      *     s3BucketArn: string,
      *     logPrefix: string
      * } $args

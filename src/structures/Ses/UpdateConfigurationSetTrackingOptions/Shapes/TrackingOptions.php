@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ses\UpdateConfigurationSetTrackingOptions\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustomRedirectDomain
+ * @property string|null $CustomRedirectDomain
  */
 class TrackingOptions extends Shape
 {
     /**
-     * @param array{CustomRedirectDomain?: string} $args
+     * @param array{CustomRedirectDomain?: string|null} $args
      */
     public function __construct(array $args = [])
     {

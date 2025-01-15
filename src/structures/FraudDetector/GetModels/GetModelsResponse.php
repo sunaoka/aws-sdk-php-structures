@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetModels;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\Model> $models
+ * @property string|null $nextToken
+ * @property list<Shapes\Model>|null $models
  */
 class GetModelsResponse extends Response
 {

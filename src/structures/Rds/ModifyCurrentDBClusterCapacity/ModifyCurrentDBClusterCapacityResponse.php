@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyCurrentDBClusterCapacity;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DBClusterIdentifier
- * @property int $PendingCapacity
- * @property int $CurrentCapacity
- * @property int $SecondsBeforeTimeout
- * @property string $TimeoutAction
+ * @property string|null $DBClusterIdentifier
+ * @property int|null $PendingCapacity
+ * @property int|null $CurrentCapacity
+ * @property int|null $SecondsBeforeTimeout
+ * @property string|null $TimeoutAction
  */
 class ModifyCurrentDBClusterCapacityResponse extends Response
 {

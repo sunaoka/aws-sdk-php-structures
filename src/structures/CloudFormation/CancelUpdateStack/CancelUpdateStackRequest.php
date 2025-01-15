@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackName
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class CancelUpdateStackRequest extends Request
 {
     /**
      * @param array{
      *     StackName: string,
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

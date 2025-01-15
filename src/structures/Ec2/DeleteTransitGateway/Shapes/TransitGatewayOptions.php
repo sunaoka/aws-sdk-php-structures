@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteTransitGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AmazonSideAsn
- * @property list<string> $TransitGatewayCidrBlocks
- * @property 'enable'|'disable' $AutoAcceptSharedAttachments
- * @property 'enable'|'disable' $DefaultRouteTableAssociation
- * @property string $AssociationDefaultRouteTableId
- * @property 'enable'|'disable' $DefaultRouteTablePropagation
- * @property string $PropagationDefaultRouteTableId
- * @property 'enable'|'disable' $VpnEcmpSupport
- * @property 'enable'|'disable' $DnsSupport
- * @property 'enable'|'disable' $SecurityGroupReferencingSupport
- * @property 'enable'|'disable' $MulticastSupport
+ * @property int|null $AmazonSideAsn
+ * @property list<string>|null $TransitGatewayCidrBlocks
+ * @property 'enable'|'disable'|null $AutoAcceptSharedAttachments
+ * @property 'enable'|'disable'|null $DefaultRouteTableAssociation
+ * @property string|null $AssociationDefaultRouteTableId
+ * @property 'enable'|'disable'|null $DefaultRouteTablePropagation
+ * @property string|null $PropagationDefaultRouteTableId
+ * @property 'enable'|'disable'|null $VpnEcmpSupport
+ * @property 'enable'|'disable'|null $DnsSupport
+ * @property 'enable'|'disable'|null $SecurityGroupReferencingSupport
+ * @property 'enable'|'disable'|null $MulticastSupport
  */
 class TransitGatewayOptions extends Shape
 {
     /**
      * @param array{
-     *     AmazonSideAsn?: int,
-     *     TransitGatewayCidrBlocks?: list<string>,
-     *     AutoAcceptSharedAttachments?: 'enable'|'disable',
-     *     DefaultRouteTableAssociation?: 'enable'|'disable',
-     *     AssociationDefaultRouteTableId?: string,
-     *     DefaultRouteTablePropagation?: 'enable'|'disable',
-     *     PropagationDefaultRouteTableId?: string,
-     *     VpnEcmpSupport?: 'enable'|'disable',
-     *     DnsSupport?: 'enable'|'disable',
-     *     SecurityGroupReferencingSupport?: 'enable'|'disable',
-     *     MulticastSupport?: 'enable'|'disable'
+     *     AmazonSideAsn?: int|null,
+     *     TransitGatewayCidrBlocks?: list<string>|null,
+     *     AutoAcceptSharedAttachments?: 'enable'|'disable'|null,
+     *     DefaultRouteTableAssociation?: 'enable'|'disable'|null,
+     *     AssociationDefaultRouteTableId?: string|null,
+     *     DefaultRouteTablePropagation?: 'enable'|'disable'|null,
+     *     PropagationDefaultRouteTableId?: string|null,
+     *     VpnEcmpSupport?: 'enable'|'disable'|null,
+     *     DnsSupport?: 'enable'|'disable'|null,
+     *     SecurityGroupReferencingSupport?: 'enable'|'disable'|null,
+     *     MulticastSupport?: 'enable'|'disable'|null
      * } $args
      */
     public function __construct(array $args = [])

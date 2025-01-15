@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Sms\LaunchApp;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $appId
+ * @property string|null $appId
  */
 class LaunchAppRequest extends Request
 {
     /**
-     * @param array{appId?: string} $args
+     * @param array{appId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

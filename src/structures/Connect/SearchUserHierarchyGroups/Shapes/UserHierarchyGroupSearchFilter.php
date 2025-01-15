@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Connect\SearchUserHierarchyGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ControlPlaneAttributeFilter $AttributeFilter
+ * @property ControlPlaneAttributeFilter|null $AttributeFilter
  */
 class UserHierarchyGroupSearchFilter extends Shape
 {
     /**
-     * @param array{AttributeFilter?: ControlPlaneAttributeFilter} $args
+     * @param array{AttributeFilter?: ControlPlaneAttributeFilter|null} $args
      */
     public function __construct(array $args = [])
     {

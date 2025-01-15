@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ssm\ListOpsItemEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OpsItemId
- * @property string $EventId
- * @property string $Source
- * @property string $DetailType
- * @property string $Detail
- * @property OpsItemIdentity $CreatedBy
- * @property \Aws\Api\DateTimeResult $CreatedTime
+ * @property string|null $OpsItemId
+ * @property string|null $EventId
+ * @property string|null $Source
+ * @property string|null $DetailType
+ * @property string|null $Detail
+ * @property OpsItemIdentity|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
  */
 class OpsItemEventSummary extends Shape
 {
     /**
      * @param array{
-     *     OpsItemId?: string,
-     *     EventId?: string,
-     *     Source?: string,
-     *     DetailType?: string,
-     *     Detail?: string,
-     *     CreatedBy?: OpsItemIdentity,
-     *     CreatedTime?: \Aws\Api\DateTimeResult
+     *     OpsItemId?: string|null,
+     *     EventId?: string|null,
+     *     Source?: string|null,
+     *     DetailType?: string|null,
+     *     Detail?: string|null,
+     *     CreatedBy?: OpsItemIdentity|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

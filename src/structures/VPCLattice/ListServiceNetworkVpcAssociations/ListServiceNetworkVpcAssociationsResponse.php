@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ServiceNetworkVpcAssociationSummary> $items
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListServiceNetworkVpcAssociationsResponse extends Response
 {

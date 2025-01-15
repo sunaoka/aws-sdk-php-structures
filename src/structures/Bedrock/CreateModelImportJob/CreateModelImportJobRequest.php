@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $importedModelName
  * @property string $roleArn
  * @property Shapes\ModelDataSource $modelDataSource
- * @property list<Shapes\Tag> $jobTags
- * @property list<Shapes\Tag> $importedModelTags
- * @property string $clientRequestToken
- * @property Shapes\VpcConfig $vpcConfig
- * @property string $importedModelKmsKeyId
+ * @property list<Shapes\Tag>|null $jobTags
+ * @property list<Shapes\Tag>|null $importedModelTags
+ * @property string|null $clientRequestToken
+ * @property Shapes\VpcConfig|null $vpcConfig
+ * @property string|null $importedModelKmsKeyId
  */
 class CreateModelImportJobRequest extends Request
 {
@@ -23,11 +23,11 @@ class CreateModelImportJobRequest extends Request
      *     importedModelName: string,
      *     roleArn: string,
      *     modelDataSource: Shapes\ModelDataSource,
-     *     jobTags?: list<Shapes\Tag>,
-     *     importedModelTags?: list<Shapes\Tag>,
-     *     clientRequestToken?: string,
-     *     vpcConfig?: Shapes\VpcConfig,
-     *     importedModelKmsKeyId?: string
+     *     jobTags?: list<Shapes\Tag>|null,
+     *     importedModelTags?: list<Shapes\Tag>|null,
+     *     clientRequestToken?: string|null,
+     *     vpcConfig?: Shapes\VpcConfig|null,
+     *     importedModelKmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

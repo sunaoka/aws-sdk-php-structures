@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\SearchInsights\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $StackNames
+ * @property list<string>|null $StackNames
  */
 class CloudFormationCollection extends Shape
 {
     /**
-     * @param array{StackNames?: list<string>} $args
+     * @param array{StackNames?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\GetConfigurationSetEventDestinati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EventDestination> $EventDestinations
+ * @property list<Shapes\EventDestination>|null $EventDestinations
  */
 class GetConfigurationSetEventDestinationsResponse extends Response
 {

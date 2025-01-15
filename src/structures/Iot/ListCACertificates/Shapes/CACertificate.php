@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iot\ListCACertificates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $certificateArn
- * @property string $certificateId
- * @property 'ACTIVE'|'INACTIVE' $status
- * @property \Aws\Api\DateTimeResult $creationDate
+ * @property string|null $certificateArn
+ * @property string|null $certificateId
+ * @property 'ACTIVE'|'INACTIVE'|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationDate
  */
 class CACertificate extends Shape
 {
     /**
      * @param array{
-     *     certificateArn?: string,
-     *     certificateId?: string,
-     *     status?: 'ACTIVE'|'INACTIVE',
-     *     creationDate?: \Aws\Api\DateTimeResult
+     *     certificateArn?: string|null,
+     *     certificateId?: string|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

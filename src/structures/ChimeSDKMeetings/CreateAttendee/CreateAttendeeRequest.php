@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $MeetingId
  * @property string $ExternalUserId
- * @property Shapes\AttendeeCapabilities $Capabilities
+ * @property Shapes\AttendeeCapabilities|null $Capabilities
  */
 class CreateAttendeeRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateAttendeeRequest extends Request
      * @param array{
      *     MeetingId: string,
      *     ExternalUserId: string,
-     *     Capabilities?: Shapes\AttendeeCapabilities
+     *     Capabilities?: Shapes\AttendeeCapabilities|null
      * } $args
      */
     public function __construct(array $args)

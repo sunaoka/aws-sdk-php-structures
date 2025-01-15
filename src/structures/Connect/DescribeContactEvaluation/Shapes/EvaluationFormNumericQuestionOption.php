@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int $MinValue
  * @property int $MaxValue
- * @property int<0, 10> $Score
- * @property bool $AutomaticFail
+ * @property int<0, 10>|null $Score
+ * @property bool|null $AutomaticFail
  */
 class EvaluationFormNumericQuestionOption extends Shape
 {
@@ -16,8 +16,8 @@ class EvaluationFormNumericQuestionOption extends Shape
      * @param array{
      *     MinValue: int,
      *     MaxValue: int,
-     *     Score?: int<0, 10>,
-     *     AutomaticFail?: bool
+     *     Score?: int<0, 10>|null,
+     *     AutomaticFail?: bool|null
      * } $args
      */
     public function __construct(array $args)

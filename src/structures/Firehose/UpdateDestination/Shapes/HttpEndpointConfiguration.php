@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Url
- * @property string $Name
- * @property string $AccessKey
+ * @property string|null $Name
+ * @property string|null $AccessKey
  */
 class HttpEndpointConfiguration extends Shape
 {
     /**
      * @param array{
      *     Url: string,
-     *     Name?: string,
-     *     AccessKey?: string
+     *     Name?: string|null,
+     *     AccessKey?: string|null
      * } $args
      */
     public function __construct(array $args)

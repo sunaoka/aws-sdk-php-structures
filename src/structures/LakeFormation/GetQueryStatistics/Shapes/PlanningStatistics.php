@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GetQueryStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $EstimatedDataToScanBytes
- * @property int $PlanningTimeMillis
- * @property int $QueueTimeMillis
- * @property int $WorkUnitsGeneratedCount
+ * @property int|null $EstimatedDataToScanBytes
+ * @property int|null $PlanningTimeMillis
+ * @property int|null $QueueTimeMillis
+ * @property int|null $WorkUnitsGeneratedCount
  */
 class PlanningStatistics extends Shape
 {
     /**
      * @param array{
-     *     EstimatedDataToScanBytes?: int,
-     *     PlanningTimeMillis?: int,
-     *     QueueTimeMillis?: int,
-     *     WorkUnitsGeneratedCount?: int
+     *     EstimatedDataToScanBytes?: int|null,
+     *     PlanningTimeMillis?: int|null,
+     *     QueueTimeMillis?: int|null,
+     *     WorkUnitsGeneratedCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

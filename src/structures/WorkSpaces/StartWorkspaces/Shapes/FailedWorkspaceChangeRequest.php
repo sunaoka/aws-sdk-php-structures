@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\StartWorkspaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WorkspaceId
- * @property string $ErrorCode
- * @property string $ErrorMessage
+ * @property string|null $WorkspaceId
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
  */
 class FailedWorkspaceChangeRequest extends Shape
 {
     /**
      * @param array{
-     *     WorkspaceId?: string,
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string
+     *     WorkspaceId?: string|null,
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,11 +11,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold' $comparisonOperator
  * @property double $threshold
  * @property int $evaluationPeriods
- * @property int $datapointsToAlarm
- * @property 'breaching'|'notBreaching'|'ignore'|'missing' $treatMissingData
- * @property list<'Email'|'SMS'> $contactProtocols
- * @property list<'OK'|'ALARM'|'INSUFFICIENT_DATA'> $notificationTriggers
- * @property bool $notificationEnabled
+ * @property int|null $datapointsToAlarm
+ * @property 'breaching'|'notBreaching'|'ignore'|'missing'|null $treatMissingData
+ * @property list<'Email'|'SMS'>|null $contactProtocols
+ * @property list<'OK'|'ALARM'|'INSUFFICIENT_DATA'>|null $notificationTriggers
+ * @property bool|null $notificationEnabled
  */
 class PutAlarmRequest extends Request
 {
@@ -27,11 +27,11 @@ class PutAlarmRequest extends Request
      *     comparisonOperator: 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold',
      *     threshold: double,
      *     evaluationPeriods: int,
-     *     datapointsToAlarm?: int,
-     *     treatMissingData?: 'breaching'|'notBreaching'|'ignore'|'missing',
-     *     contactProtocols?: list<'Email'|'SMS'>,
-     *     notificationTriggers?: list<'OK'|'ALARM'|'INSUFFICIENT_DATA'>,
-     *     notificationEnabled?: bool
+     *     datapointsToAlarm?: int|null,
+     *     treatMissingData?: 'breaching'|'notBreaching'|'ignore'|'missing'|null,
+     *     contactProtocols?: list<'Email'|'SMS'>|null,
+     *     notificationTriggers?: list<'OK'|'ALARM'|'INSUFFICIENT_DATA'>|null,
+     *     notificationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

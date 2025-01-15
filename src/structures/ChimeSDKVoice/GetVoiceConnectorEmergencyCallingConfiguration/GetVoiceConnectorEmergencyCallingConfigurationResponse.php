@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceConnectorEmergencyCalling
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\EmergencyCallingConfiguration $EmergencyCallingConfiguration
+ * @property Shapes\EmergencyCallingConfiguration|null $EmergencyCallingConfiguration
  */
 class GetVoiceConnectorEmergencyCallingConfigurationResponse extends Response
 {

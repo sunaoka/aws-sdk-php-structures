@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspaceDirectories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TenantId
- * @property string $ApplicationConfigSecretArn
+ * @property string|null $TenantId
+ * @property string|null $ApplicationConfigSecretArn
  */
 class MicrosoftEntraConfig extends Shape
 {
     /**
      * @param array{
-     *     TenantId?: string,
-     *     ApplicationConfigSecretArn?: string
+     *     TenantId?: string|null,
+     *     ApplicationConfigSecretArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Glue\CreateCatalog\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property FederatedCatalog $FederatedCatalog
- * @property array<string, string> $Parameters
- * @property TargetRedshiftCatalog $TargetRedshiftCatalog
- * @property CatalogProperties $CatalogProperties
- * @property list<PrincipalPermissions> $CreateTableDefaultPermissions
- * @property list<PrincipalPermissions> $CreateDatabaseDefaultPermissions
+ * @property string|null $Description
+ * @property FederatedCatalog|null $FederatedCatalog
+ * @property array<string, string>|null $Parameters
+ * @property TargetRedshiftCatalog|null $TargetRedshiftCatalog
+ * @property CatalogProperties|null $CatalogProperties
+ * @property list<PrincipalPermissions>|null $CreateTableDefaultPermissions
+ * @property list<PrincipalPermissions>|null $CreateDatabaseDefaultPermissions
  */
 class CatalogInput extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     FederatedCatalog?: FederatedCatalog,
-     *     Parameters?: array<string, string>,
-     *     TargetRedshiftCatalog?: TargetRedshiftCatalog,
-     *     CatalogProperties?: CatalogProperties,
-     *     CreateTableDefaultPermissions?: list<PrincipalPermissions>,
-     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>
+     *     Description?: string|null,
+     *     FederatedCatalog?: FederatedCatalog|null,
+     *     Parameters?: array<string, string>|null,
+     *     TargetRedshiftCatalog?: TargetRedshiftCatalog|null,
+     *     CatalogProperties?: CatalogProperties|null,
+     *     CreateTableDefaultPermissions?: list<PrincipalPermissions>|null,
+     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>|null
      * } $args
      */
     public function __construct(array $args = [])

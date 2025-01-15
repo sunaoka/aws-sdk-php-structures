@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3\RestoreObject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CSVInput $CSV
- * @property 'NONE'|'GZIP'|'BZIP2' $CompressionType
- * @property JSONInput $JSON
- * @property ParquetInput $Parquet
+ * @property CSVInput|null $CSV
+ * @property 'NONE'|'GZIP'|'BZIP2'|null $CompressionType
+ * @property JSONInput|null $JSON
+ * @property ParquetInput|null $Parquet
  */
 class InputSerialization extends Shape
 {
     /**
      * @param array{
-     *     CSV?: CSVInput,
-     *     CompressionType?: 'NONE'|'GZIP'|'BZIP2',
-     *     JSON?: JSONInput,
-     *     Parquet?: ParquetInput
+     *     CSV?: CSVInput|null,
+     *     CompressionType?: 'NONE'|'GZIP'|'BZIP2'|null,
+     *     JSON?: JSONInput|null,
+     *     Parquet?: ParquetInput|null
      * } $args
      */
     public function __construct(array $args = [])

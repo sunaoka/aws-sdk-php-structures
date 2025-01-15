@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Redshift\ResetClusterParameterGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ParameterGroupName
- * @property string $ParameterGroupStatus
+ * @property string|null $ParameterGroupName
+ * @property string|null $ParameterGroupStatus
  */
 class ResetClusterParameterGroupResponse extends Response
 {

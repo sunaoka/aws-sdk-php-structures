@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\SendChannelMessage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
- * @property string $MessageId
- * @property Shapes\ChannelMessageStatusStructure $Status
- * @property string $SubChannelId
+ * @property string|null $ChannelArn
+ * @property string|null $MessageId
+ * @property Shapes\ChannelMessageStatusStructure|null $Status
+ * @property string|null $SubChannelId
  */
 class SendChannelMessageResponse extends Response
 {

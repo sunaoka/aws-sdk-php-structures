@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AccountId
- * @property DataSourceConfigurationsResult $DataSources
- * @property list<MemberFeaturesConfigurationResult> $Features
+ * @property DataSourceConfigurationsResult|null $DataSources
+ * @property list<MemberFeaturesConfigurationResult>|null $Features
  */
 class MemberDataSourceConfiguration extends Shape
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     DataSources?: DataSourceConfigurationsResult,
-     *     Features?: list<MemberFeaturesConfigurationResult>
+     *     DataSources?: DataSourceConfigurationsResult|null,
+     *     Features?: list<MemberFeaturesConfigurationResult>|null
      * } $args
      */
     public function __construct(array $args)

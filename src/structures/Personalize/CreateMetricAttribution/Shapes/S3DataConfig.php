@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $path
- * @property string $kmsKeyArn
+ * @property string|null $kmsKeyArn
  */
 class S3DataConfig extends Shape
 {
     /**
      * @param array{
      *     path: string,
-     *     kmsKeyArn?: string
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

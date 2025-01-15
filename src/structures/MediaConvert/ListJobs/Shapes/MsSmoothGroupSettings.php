@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<MsSmoothAdditionalManifest> $AdditionalManifests
- * @property 'COMBINE_DUPLICATE_STREAMS'|'NONE' $AudioDeduplication
- * @property string $Destination
- * @property DestinationSettings $DestinationSettings
- * @property MsSmoothEncryptionSettings $Encryption
- * @property int<1, 2147483647> $FragmentLength
- * @property 'EXACT'|'GOP_MULTIPLE' $FragmentLengthControl
- * @property 'UTF8'|'UTF16' $ManifestEncoding
+ * @property list<MsSmoothAdditionalManifest>|null $AdditionalManifests
+ * @property 'COMBINE_DUPLICATE_STREAMS'|'NONE'|null $AudioDeduplication
+ * @property string|null $Destination
+ * @property DestinationSettings|null $DestinationSettings
+ * @property MsSmoothEncryptionSettings|null $Encryption
+ * @property int<1, 2147483647>|null $FragmentLength
+ * @property 'EXACT'|'GOP_MULTIPLE'|null $FragmentLengthControl
+ * @property 'UTF8'|'UTF16'|null $ManifestEncoding
  */
 class MsSmoothGroupSettings extends Shape
 {
     /**
      * @param array{
-     *     AdditionalManifests?: list<MsSmoothAdditionalManifest>,
-     *     AudioDeduplication?: 'COMBINE_DUPLICATE_STREAMS'|'NONE',
-     *     Destination?: string,
-     *     DestinationSettings?: DestinationSettings,
-     *     Encryption?: MsSmoothEncryptionSettings,
-     *     FragmentLength?: int<1, 2147483647>,
-     *     FragmentLengthControl?: 'EXACT'|'GOP_MULTIPLE',
-     *     ManifestEncoding?: 'UTF8'|'UTF16'
+     *     AdditionalManifests?: list<MsSmoothAdditionalManifest>|null,
+     *     AudioDeduplication?: 'COMBINE_DUPLICATE_STREAMS'|'NONE'|null,
+     *     Destination?: string|null,
+     *     DestinationSettings?: DestinationSettings|null,
+     *     Encryption?: MsSmoothEncryptionSettings|null,
+     *     FragmentLength?: int<1, 2147483647>|null,
+     *     FragmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|null,
+     *     ManifestEncoding?: 'UTF8'|'UTF16'|null
      * } $args
      */
     public function __construct(array $args = [])

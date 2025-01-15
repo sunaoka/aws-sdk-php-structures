@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\S3\ListObjectVersions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $IsTruncated
- * @property string $KeyMarker
- * @property string $VersionIdMarker
- * @property string $NextKeyMarker
- * @property string $NextVersionIdMarker
- * @property list<Shapes\ObjectVersion> $Versions
- * @property list<Shapes\DeleteMarkerEntry> $DeleteMarkers
- * @property string $Name
- * @property string $Prefix
- * @property string $Delimiter
- * @property int $MaxKeys
- * @property list<Shapes\CommonPrefix> $CommonPrefixes
- * @property 'url' $EncodingType
- * @property 'requester' $RequestCharged
+ * @property bool|null $IsTruncated
+ * @property string|null $KeyMarker
+ * @property string|null $VersionIdMarker
+ * @property string|null $NextKeyMarker
+ * @property string|null $NextVersionIdMarker
+ * @property list<Shapes\ObjectVersion>|null $Versions
+ * @property list<Shapes\DeleteMarkerEntry>|null $DeleteMarkers
+ * @property string|null $Name
+ * @property string|null $Prefix
+ * @property string|null $Delimiter
+ * @property int|null $MaxKeys
+ * @property list<Shapes\CommonPrefix>|null $CommonPrefixes
+ * @property 'url'|null $EncodingType
+ * @property 'requester'|null $RequestCharged
  */
 class ListObjectVersionsResponse extends Response
 {

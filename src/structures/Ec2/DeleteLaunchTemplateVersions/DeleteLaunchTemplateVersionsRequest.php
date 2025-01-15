@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteLaunchTemplateVersions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $LaunchTemplateId
- * @property string $LaunchTemplateName
+ * @property bool|null $DryRun
+ * @property string|null $LaunchTemplateId
+ * @property string|null $LaunchTemplateName
  * @property list<string> $Versions
  */
 class DeleteLaunchTemplateVersionsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     LaunchTemplateId?: string,
-     *     LaunchTemplateName?: string,
+     *     DryRun?: bool|null,
+     *     LaunchTemplateId?: string|null,
+     *     LaunchTemplateName?: string|null,
      *     Versions: list<string>
      * } $args
      */

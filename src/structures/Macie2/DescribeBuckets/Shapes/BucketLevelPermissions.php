@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Macie2\DescribeBuckets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccessControlList $accessControlList
- * @property BlockPublicAccess $blockPublicAccess
- * @property BucketPolicy $bucketPolicy
+ * @property AccessControlList|null $accessControlList
+ * @property BlockPublicAccess|null $blockPublicAccess
+ * @property BucketPolicy|null $bucketPolicy
  */
 class BucketLevelPermissions extends Shape
 {
     /**
      * @param array{
-     *     accessControlList?: AccessControlList,
-     *     blockPublicAccess?: BlockPublicAccess,
-     *     bucketPolicy?: BucketPolicy
+     *     accessControlList?: AccessControlList|null,
+     *     blockPublicAccess?: BlockPublicAccess|null,
+     *     bucketPolicy?: BucketPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

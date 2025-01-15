@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\ListTagsForResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<0, 100> $MaxResults
+ * @property string|null $NextToken
+ * @property int<0, 100>|null $MaxResults
  * @property string $ResourceArn
  */
 class ListTagsForResourceRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 100>,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 100>|null,
      *     ResourceArn: string
      * } $args
      */

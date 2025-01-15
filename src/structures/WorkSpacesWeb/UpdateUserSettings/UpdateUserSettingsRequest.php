@@ -5,32 +5,32 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateUserSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property Shapes\CookieSynchronizationConfiguration $cookieSynchronizationConfiguration
- * @property 'Disabled'|'Enabled' $copyAllowed
- * @property 'Disabled'|'Enabled' $deepLinkAllowed
- * @property int<1, 600> $disconnectTimeoutInMinutes
- * @property 'Disabled'|'Enabled' $downloadAllowed
- * @property int<0, 60> $idleDisconnectTimeoutInMinutes
- * @property 'Disabled'|'Enabled' $pasteAllowed
- * @property 'Disabled'|'Enabled' $printAllowed
- * @property 'Disabled'|'Enabled' $uploadAllowed
+ * @property string|null $clientToken
+ * @property Shapes\CookieSynchronizationConfiguration|null $cookieSynchronizationConfiguration
+ * @property 'Disabled'|'Enabled'|null $copyAllowed
+ * @property 'Disabled'|'Enabled'|null $deepLinkAllowed
+ * @property int<1, 600>|null $disconnectTimeoutInMinutes
+ * @property 'Disabled'|'Enabled'|null $downloadAllowed
+ * @property int<0, 60>|null $idleDisconnectTimeoutInMinutes
+ * @property 'Disabled'|'Enabled'|null $pasteAllowed
+ * @property 'Disabled'|'Enabled'|null $printAllowed
+ * @property 'Disabled'|'Enabled'|null $uploadAllowed
  * @property string $userSettingsArn
  */
 class UpdateUserSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     cookieSynchronizationConfiguration?: Shapes\CookieSynchronizationConfiguration,
-     *     copyAllowed?: 'Disabled'|'Enabled',
-     *     deepLinkAllowed?: 'Disabled'|'Enabled',
-     *     disconnectTimeoutInMinutes?: int<1, 600>,
-     *     downloadAllowed?: 'Disabled'|'Enabled',
-     *     idleDisconnectTimeoutInMinutes?: int<0, 60>,
-     *     pasteAllowed?: 'Disabled'|'Enabled',
-     *     printAllowed?: 'Disabled'|'Enabled',
-     *     uploadAllowed?: 'Disabled'|'Enabled',
+     *     clientToken?: string|null,
+     *     cookieSynchronizationConfiguration?: Shapes\CookieSynchronizationConfiguration|null,
+     *     copyAllowed?: 'Disabled'|'Enabled'|null,
+     *     deepLinkAllowed?: 'Disabled'|'Enabled'|null,
+     *     disconnectTimeoutInMinutes?: int<1, 600>|null,
+     *     downloadAllowed?: 'Disabled'|'Enabled'|null,
+     *     idleDisconnectTimeoutInMinutes?: int<0, 60>|null,
+     *     pasteAllowed?: 'Disabled'|'Enabled'|null,
+     *     printAllowed?: 'Disabled'|'Enabled'|null,
+     *     uploadAllowed?: 'Disabled'|'Enabled'|null,
      *     userSettingsArn: string
      * } $args
      */

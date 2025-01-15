@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TreeMapAggregatedFieldWells $TreeMapAggregatedFieldWells
+ * @property TreeMapAggregatedFieldWells|null $TreeMapAggregatedFieldWells
  */
 class TreeMapFieldWells extends Shape
 {
     /**
-     * @param array{TreeMapAggregatedFieldWells?: TreeMapAggregatedFieldWells} $args
+     * @param array{TreeMapAggregatedFieldWells?: TreeMapAggregatedFieldWells|null} $args
      */
     public function __construct(array $args = [])
     {

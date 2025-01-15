@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerHostname
- * @property string $Image
- * @property ImageConfig $ImageConfig
- * @property 'SingleModel'|'MultiModel' $Mode
- * @property string $ModelDataUrl
- * @property ModelDataSource $ModelDataSource
- * @property list<AdditionalModelDataSource> $AdditionalModelDataSources
- * @property array<string, string> $Environment
- * @property string $ModelPackageName
- * @property string $InferenceSpecificationName
- * @property MultiModelConfig $MultiModelConfig
+ * @property string|null $ContainerHostname
+ * @property string|null $Image
+ * @property ImageConfig|null $ImageConfig
+ * @property 'SingleModel'|'MultiModel'|null $Mode
+ * @property string|null $ModelDataUrl
+ * @property ModelDataSource|null $ModelDataSource
+ * @property list<AdditionalModelDataSource>|null $AdditionalModelDataSources
+ * @property array<string, string>|null $Environment
+ * @property string|null $ModelPackageName
+ * @property string|null $InferenceSpecificationName
+ * @property MultiModelConfig|null $MultiModelConfig
  */
 class ContainerDefinition extends Shape
 {
     /**
      * @param array{
-     *     ContainerHostname?: string,
-     *     Image?: string,
-     *     ImageConfig?: ImageConfig,
-     *     Mode?: 'SingleModel'|'MultiModel',
-     *     ModelDataUrl?: string,
-     *     ModelDataSource?: ModelDataSource,
-     *     AdditionalModelDataSources?: list<AdditionalModelDataSource>,
-     *     Environment?: array<string, string>,
-     *     ModelPackageName?: string,
-     *     InferenceSpecificationName?: string,
-     *     MultiModelConfig?: MultiModelConfig
+     *     ContainerHostname?: string|null,
+     *     Image?: string|null,
+     *     ImageConfig?: ImageConfig|null,
+     *     Mode?: 'SingleModel'|'MultiModel'|null,
+     *     ModelDataUrl?: string|null,
+     *     ModelDataSource?: ModelDataSource|null,
+     *     AdditionalModelDataSources?: list<AdditionalModelDataSource>|null,
+     *     Environment?: array<string, string>|null,
+     *     ModelPackageName?: string|null,
+     *     InferenceSpecificationName?: string|null,
+     *     MultiModelConfig?: MultiModelConfig|null
      * } $args
      */
     public function __construct(array $args = [])

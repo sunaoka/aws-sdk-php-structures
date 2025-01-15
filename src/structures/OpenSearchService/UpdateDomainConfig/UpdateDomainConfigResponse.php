@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\DomainConfig $DomainConfig
- * @property Shapes\DryRunResults $DryRunResults
- * @property Shapes\DryRunProgressStatus $DryRunProgressStatus
+ * @property Shapes\DryRunResults|null $DryRunResults
+ * @property Shapes\DryRunProgressStatus|null $DryRunProgressStatus
  */
 class UpdateDomainConfigResponse extends Response
 {

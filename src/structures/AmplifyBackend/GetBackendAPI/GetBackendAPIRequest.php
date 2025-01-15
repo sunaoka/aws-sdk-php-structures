@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AppId
  * @property string $BackendEnvironmentName
- * @property Shapes\BackendAPIResourceConfig $ResourceConfig
+ * @property Shapes\BackendAPIResourceConfig|null $ResourceConfig
  * @property string $ResourceName
  */
 class GetBackendAPIRequest extends Request
@@ -16,7 +16,7 @@ class GetBackendAPIRequest extends Request
      * @param array{
      *     AppId: string,
      *     BackendEnvironmentName: string,
-     *     ResourceConfig?: Shapes\BackendAPIResourceConfig,
+     *     ResourceConfig?: Shapes\BackendAPIResourceConfig|null,
      *     ResourceName: string
      * } $args
      */

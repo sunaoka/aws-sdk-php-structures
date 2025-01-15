@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClusterArn
  * @property string $CurrentVersion
- * @property Shapes\ProvisionedThroughput $ProvisionedThroughput
- * @property 'LOCAL'|'TIERED' $StorageMode
- * @property int $VolumeSizeGB
+ * @property Shapes\ProvisionedThroughput|null $ProvisionedThroughput
+ * @property 'LOCAL'|'TIERED'|null $StorageMode
+ * @property int|null $VolumeSizeGB
  */
 class UpdateStorageRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateStorageRequest extends Request
      * @param array{
      *     ClusterArn: string,
      *     CurrentVersion: string,
-     *     ProvisionedThroughput?: Shapes\ProvisionedThroughput,
-     *     StorageMode?: 'LOCAL'|'TIERED',
-     *     VolumeSizeGB?: int
+     *     ProvisionedThroughput?: Shapes\ProvisionedThroughput|null,
+     *     StorageMode?: 'LOCAL'|'TIERED'|null,
+     *     VolumeSizeGB?: int|null
      * } $args
      */
     public function __construct(array $args)

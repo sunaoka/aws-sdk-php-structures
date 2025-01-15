@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateMonitor;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $displayName
  * @property string $identityCenterInstanceArn
  * @property string $subdomain
@@ -15,7 +15,7 @@ class CreateMonitorRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     displayName: string,
      *     identityCenterInstanceArn: string,
      *     subdomain: string,

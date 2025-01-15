@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $spaceName
- * @property string $workflowId
+ * @property string|null $workflowId
  * @property string $projectName
- * @property string $nextToken
- * @property int<1, 50> $maxResults
- * @property list<Shapes\WorkflowRunSortCriteria> $sortBy
+ * @property string|null $nextToken
+ * @property int<1, 50>|null $maxResults
+ * @property list<Shapes\WorkflowRunSortCriteria>|null $sortBy
  */
 class ListWorkflowRunsRequest extends Request
 {
     /**
      * @param array{
      *     spaceName: string,
-     *     workflowId?: string,
+     *     workflowId?: string|null,
      *     projectName: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 50>,
-     *     sortBy?: list<Shapes\WorkflowRunSortCriteria>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 50>|null,
+     *     sortBy?: list<Shapes\WorkflowRunSortCriteria>|null
      * } $args
      */
     public function __construct(array $args)

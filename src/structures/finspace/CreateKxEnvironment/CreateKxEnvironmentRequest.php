@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $kmsKeyId
- * @property array<string, string> $tags
- * @property string $clientToken
+ * @property array<string, string>|null $tags
+ * @property string|null $clientToken
  */
 class CreateKxEnvironmentRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     kmsKeyId: string,
-     *     tags?: array<string, string>,
-     *     clientToken?: string
+     *     tags?: array<string, string>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetEngagementInvitation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  * @property string $Catalog
- * @property string $EngagementDescription
- * @property string $EngagementId
- * @property string $EngagementTitle
- * @property list<Shapes\EngagementMemberSummary> $ExistingMembers
- * @property \Aws\Api\DateTimeResult $ExpirationDate
+ * @property string|null $EngagementDescription
+ * @property string|null $EngagementId
+ * @property string|null $EngagementTitle
+ * @property list<Shapes\EngagementMemberSummary>|null $ExistingMembers
+ * @property \Aws\Api\DateTimeResult|null $ExpirationDate
  * @property string $Id
- * @property \Aws\Api\DateTimeResult $InvitationDate
- * @property string $InvitationMessage
- * @property Shapes\Payload $Payload
- * @property 'OpportunityInvitation' $PayloadType
- * @property Shapes\Receiver $Receiver
- * @property string $RejectionReason
- * @property string $SenderAwsAccountId
- * @property string $SenderCompanyName
- * @property 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED' $Status
+ * @property \Aws\Api\DateTimeResult|null $InvitationDate
+ * @property string|null $InvitationMessage
+ * @property Shapes\Payload|null $Payload
+ * @property 'OpportunityInvitation'|null $PayloadType
+ * @property Shapes\Receiver|null $Receiver
+ * @property string|null $RejectionReason
+ * @property string|null $SenderAwsAccountId
+ * @property string|null $SenderCompanyName
+ * @property 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'|null $Status
  */
 class GetEngagementInvitationResponse extends Response
 {

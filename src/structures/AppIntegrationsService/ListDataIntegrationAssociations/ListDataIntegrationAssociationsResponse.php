@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\ListDataIntegrationAssoc
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DataIntegrationAssociationSummary> $DataIntegrationAssociations
- * @property string $NextToken
+ * @property list<Shapes\DataIntegrationAssociationSummary>|null $DataIntegrationAssociations
+ * @property string|null $NextToken
  */
 class ListDataIntegrationAssociationsResponse extends Response
 {

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\NetworkFlowMonitor\GetQueryResultsWorkloadInsig
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property string $localSubnetId
- * @property string $localAz
- * @property string $localVpcId
- * @property string $localRegion
- * @property string $remoteIdentifier
- * @property int $value
- * @property string $localSubnetArn
- * @property string $localVpcArn
+ * @property string|null $accountId
+ * @property string|null $localSubnetId
+ * @property string|null $localAz
+ * @property string|null $localVpcId
+ * @property string|null $localRegion
+ * @property string|null $remoteIdentifier
+ * @property int|null $value
+ * @property string|null $localSubnetArn
+ * @property string|null $localVpcArn
  */
 class WorkloadInsightsTopContributorsRow extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     localSubnetId?: string,
-     *     localAz?: string,
-     *     localVpcId?: string,
-     *     localRegion?: string,
-     *     remoteIdentifier?: string,
-     *     value?: int,
-     *     localSubnetArn?: string,
-     *     localVpcArn?: string
+     *     accountId?: string|null,
+     *     localSubnetId?: string|null,
+     *     localAz?: string|null,
+     *     localVpcId?: string|null,
+     *     localRegion?: string|null,
+     *     remoteIdentifier?: string|null,
+     *     value?: int|null,
+     *     localSubnetArn?: string|null,
+     *     localVpcArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

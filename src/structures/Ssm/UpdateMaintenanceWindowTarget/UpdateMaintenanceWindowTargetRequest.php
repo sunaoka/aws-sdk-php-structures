@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WindowId
  * @property string $WindowTargetId
- * @property list<Shapes\Target> $Targets
- * @property string $OwnerInformation
- * @property string $Name
- * @property string $Description
- * @property bool $Replace
+ * @property list<Shapes\Target>|null $Targets
+ * @property string|null $OwnerInformation
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property bool|null $Replace
  */
 class UpdateMaintenanceWindowTargetRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateMaintenanceWindowTargetRequest extends Request
      * @param array{
      *     WindowId: string,
      *     WindowTargetId: string,
-     *     Targets?: list<Shapes\Target>,
-     *     OwnerInformation?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Replace?: bool
+     *     Targets?: list<Shapes\Target>|null,
+     *     OwnerInformation?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Replace?: bool|null
      * } $args
      */
     public function __construct(array $args)

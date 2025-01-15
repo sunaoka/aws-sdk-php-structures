@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property string $dataType
- * @property bool $isRequired
- * @property string $label
- * @property string $description
- * @property string $scope
- * @property list<string> $connectorSuppliedValueOptions
+ * @property string|null $key
+ * @property string|null $dataType
+ * @property bool|null $isRequired
+ * @property string|null $label
+ * @property string|null $description
+ * @property string|null $scope
+ * @property list<string>|null $connectorSuppliedValueOptions
  */
 class ConnectorRuntimeSetting extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     dataType?: string,
-     *     isRequired?: bool,
-     *     label?: string,
-     *     description?: string,
-     *     scope?: string,
-     *     connectorSuppliedValueOptions?: list<string>
+     *     key?: string|null,
+     *     dataType?: string|null,
+     *     isRequired?: bool|null,
+     *     label?: string|null,
+     *     description?: string|null,
+     *     scope?: string|null,
+     *     connectorSuppliedValueOptions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

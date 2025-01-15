@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StreamArn
- * @property int<1, max> $Limit
- * @property string $ExclusiveStartShardId
+ * @property int<1, max>|null $Limit
+ * @property string|null $ExclusiveStartShardId
  */
 class DescribeStreamRequest extends Request
 {
     /**
      * @param array{
      *     StreamArn: string,
-     *     Limit?: int<1, max>,
-     *     ExclusiveStartShardId?: string
+     *     Limit?: int<1, max>|null,
+     *     ExclusiveStartShardId?: string|null
      * } $args
      */
     public function __construct(array $args)

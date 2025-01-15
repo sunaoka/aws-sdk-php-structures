@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $savingsOpportunityPercentage
- * @property RDSStorageEstimatedMonthlySavings $estimatedMonthlySavings
+ * @property double|null $savingsOpportunityPercentage
+ * @property RDSStorageEstimatedMonthlySavings|null $estimatedMonthlySavings
  */
 class RDSStorageSavingsOpportunityAfterDiscounts extends Shape
 {
     /**
      * @param array{
-     *     savingsOpportunityPercentage?: double,
-     *     estimatedMonthlySavings?: RDSStorageEstimatedMonthlySavings
+     *     savingsOpportunityPercentage?: double|null,
+     *     estimatedMonthlySavings?: RDSStorageEstimatedMonthlySavings|null
      * } $args
      */
     public function __construct(array $args = [])

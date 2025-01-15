@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property 'NOOP'|'ARCHIVE' $Action
- * @property int<1, 100> $Rank
+ * @property int<1, 100>|null $Rank
  * @property Shapes\FindingCriteria $FindingCriteria
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class GetFilterResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LakeFormation\RemoveLFTagsFromResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LFTagPair $LFTag
- * @property ErrorDetail $Error
+ * @property LFTagPair|null $LFTag
+ * @property ErrorDetail|null $Error
  */
 class LFTagError extends Shape
 {
     /**
      * @param array{
-     *     LFTag?: LFTagPair,
-     *     Error?: ErrorDetail
+     *     LFTag?: LFTagPair|null,
+     *     Error?: ErrorDetail|null
      * } $args
      */
     public function __construct(array $args = [])

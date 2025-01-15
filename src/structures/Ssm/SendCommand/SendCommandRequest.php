@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\Ssm\SendCommand;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $InstanceIds
- * @property list<Shapes\Target> $Targets
+ * @property list<string>|null $InstanceIds
+ * @property list<Shapes\Target>|null $Targets
  * @property string $DocumentName
- * @property string $DocumentVersion
- * @property string $DocumentHash
- * @property 'Sha256'|'Sha1' $DocumentHashType
- * @property int<30, 2592000> $TimeoutSeconds
- * @property string $Comment
- * @property array<string, list<string>> $Parameters
- * @property string $OutputS3Region
- * @property string $OutputS3BucketName
- * @property string $OutputS3KeyPrefix
- * @property string $MaxConcurrency
- * @property string $MaxErrors
- * @property string $ServiceRoleArn
- * @property Shapes\NotificationConfig $NotificationConfig
- * @property Shapes\CloudWatchOutputConfig $CloudWatchOutputConfig
- * @property Shapes\AlarmConfiguration $AlarmConfiguration
+ * @property string|null $DocumentVersion
+ * @property string|null $DocumentHash
+ * @property 'Sha256'|'Sha1'|null $DocumentHashType
+ * @property int<30, 2592000>|null $TimeoutSeconds
+ * @property string|null $Comment
+ * @property array<string, list<string>>|null $Parameters
+ * @property string|null $OutputS3Region
+ * @property string|null $OutputS3BucketName
+ * @property string|null $OutputS3KeyPrefix
+ * @property string|null $MaxConcurrency
+ * @property string|null $MaxErrors
+ * @property string|null $ServiceRoleArn
+ * @property Shapes\NotificationConfig|null $NotificationConfig
+ * @property Shapes\CloudWatchOutputConfig|null $CloudWatchOutputConfig
+ * @property Shapes\AlarmConfiguration|null $AlarmConfiguration
  */
 class SendCommandRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceIds?: list<string>,
-     *     Targets?: list<Shapes\Target>,
+     *     InstanceIds?: list<string>|null,
+     *     Targets?: list<Shapes\Target>|null,
      *     DocumentName: string,
-     *     DocumentVersion?: string,
-     *     DocumentHash?: string,
-     *     DocumentHashType?: 'Sha256'|'Sha1',
-     *     TimeoutSeconds?: int<30, 2592000>,
-     *     Comment?: string,
-     *     Parameters?: array<string, list<string>>,
-     *     OutputS3Region?: string,
-     *     OutputS3BucketName?: string,
-     *     OutputS3KeyPrefix?: string,
-     *     MaxConcurrency?: string,
-     *     MaxErrors?: string,
-     *     ServiceRoleArn?: string,
-     *     NotificationConfig?: Shapes\NotificationConfig,
-     *     CloudWatchOutputConfig?: Shapes\CloudWatchOutputConfig,
-     *     AlarmConfiguration?: Shapes\AlarmConfiguration
+     *     DocumentVersion?: string|null,
+     *     DocumentHash?: string|null,
+     *     DocumentHashType?: 'Sha256'|'Sha1'|null,
+     *     TimeoutSeconds?: int<30, 2592000>|null,
+     *     Comment?: string|null,
+     *     Parameters?: array<string, list<string>>|null,
+     *     OutputS3Region?: string|null,
+     *     OutputS3BucketName?: string|null,
+     *     OutputS3KeyPrefix?: string|null,
+     *     MaxConcurrency?: string|null,
+     *     MaxErrors?: string|null,
+     *     ServiceRoleArn?: string|null,
+     *     NotificationConfig?: Shapes\NotificationConfig|null,
+     *     CloudWatchOutputConfig?: Shapes\CloudWatchOutputConfig|null,
+     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args)

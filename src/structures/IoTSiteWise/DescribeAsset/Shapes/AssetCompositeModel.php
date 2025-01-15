@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $type
  * @property list<AssetProperty> $properties
- * @property string $id
- * @property string $externalId
+ * @property string|null $id
+ * @property string|null $externalId
  */
 class AssetCompositeModel extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     type: string,
      *     properties: list<AssetProperty>,
-     *     id?: string,
-     *     externalId?: string
+     *     id?: string|null,
+     *     externalId?: string|null
      * } $args
      */
     public function __construct(array $args)

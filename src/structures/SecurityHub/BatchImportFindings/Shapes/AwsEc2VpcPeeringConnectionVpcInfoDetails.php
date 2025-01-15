@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CidrBlock
- * @property list<VpcInfoCidrBlockSetDetails> $CidrBlockSet
- * @property list<VpcInfoIpv6CidrBlockSetDetails> $Ipv6CidrBlockSet
- * @property string $OwnerId
- * @property VpcInfoPeeringOptionsDetails $PeeringOptions
- * @property string $Region
- * @property string $VpcId
+ * @property string|null $CidrBlock
+ * @property list<VpcInfoCidrBlockSetDetails>|null $CidrBlockSet
+ * @property list<VpcInfoIpv6CidrBlockSetDetails>|null $Ipv6CidrBlockSet
+ * @property string|null $OwnerId
+ * @property VpcInfoPeeringOptionsDetails|null $PeeringOptions
+ * @property string|null $Region
+ * @property string|null $VpcId
  */
 class AwsEc2VpcPeeringConnectionVpcInfoDetails extends Shape
 {
     /**
      * @param array{
-     *     CidrBlock?: string,
-     *     CidrBlockSet?: list<VpcInfoCidrBlockSetDetails>,
-     *     Ipv6CidrBlockSet?: list<VpcInfoIpv6CidrBlockSetDetails>,
-     *     OwnerId?: string,
-     *     PeeringOptions?: VpcInfoPeeringOptionsDetails,
-     *     Region?: string,
-     *     VpcId?: string
+     *     CidrBlock?: string|null,
+     *     CidrBlockSet?: list<VpcInfoCidrBlockSetDetails>|null,
+     *     Ipv6CidrBlockSet?: list<VpcInfoIpv6CidrBlockSetDetails>|null,
+     *     OwnerId?: string|null,
+     *     PeeringOptions?: VpcInfoPeeringOptionsDetails|null,
+     *     Region?: string|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeEndpointSettin
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\EndpointSetting> $EndpointSettings
+ * @property string|null $Marker
+ * @property list<Shapes\EndpointSetting>|null $EndpointSettings
  */
 class DescribeEndpointSettingsResponse extends Response
 {

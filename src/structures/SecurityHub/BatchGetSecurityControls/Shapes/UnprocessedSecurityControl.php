@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $SecurityControlId
  * @property 'INVALID_INPUT'|'ACCESS_DENIED'|'NOT_FOUND'|'LIMIT_EXCEEDED' $ErrorCode
- * @property string $ErrorReason
+ * @property string|null $ErrorReason
  */
 class UnprocessedSecurityControl extends Shape
 {
@@ -15,7 +15,7 @@ class UnprocessedSecurityControl extends Shape
      * @param array{
      *     SecurityControlId: string,
      *     ErrorCode: 'INVALID_INPUT'|'ACCESS_DENIED'|'NOT_FOUND'|'LIMIT_EXCEEDED',
-     *     ErrorReason?: string
+     *     ErrorReason?: string|null
      * } $args
      */
     public function __construct(array $args)

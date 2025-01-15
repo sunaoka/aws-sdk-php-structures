@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Textract\GetLendingAnalysisSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $Page
+ * @property int<0, max>|null $Page
  */
 class UndetectedSignature extends Shape
 {
     /**
-     * @param array{Page?: int<0, max>} $args
+     * @param array{Page?: int<0, max>|null} $args
      */
     public function __construct(array $args = [])
     {

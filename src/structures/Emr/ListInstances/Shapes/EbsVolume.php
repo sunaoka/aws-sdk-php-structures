@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Emr\ListInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Device
- * @property string $VolumeId
+ * @property string|null $Device
+ * @property string|null $VolumeId
  */
 class EbsVolume extends Shape
 {
     /**
      * @param array{
-     *     Device?: string,
-     *     VolumeId?: string
+     *     Device?: string|null,
+     *     VolumeId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

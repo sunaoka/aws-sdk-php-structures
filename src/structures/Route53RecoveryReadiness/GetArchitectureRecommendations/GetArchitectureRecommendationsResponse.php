@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryReadiness\GetArchitectureRecomme
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $LastAuditTimestamp
- * @property string $NextToken
- * @property list<Shapes\Recommendation> $Recommendations
+ * @property \Aws\Api\DateTimeResult|null $LastAuditTimestamp
+ * @property string|null $NextToken
+ * @property list<Shapes\Recommendation>|null $Recommendations
  */
 class GetArchitectureRecommendationsResponse extends Response
 {

@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'BYOL_REGULAR'|'BYOL_GRAPHICS'|'BYOL_GRAPHICSPRO'|'BYOL_GRAPHICS_G4DN'|'BYOL_REGULAR_WSP'|'BYOL_GRAPHICS_G4DN_WSP'|'BYOL_REGULAR_BYOP'|'BYOL_GRAPHICS_G4DN_BYOP' $IngestionProcess
  * @property string $ImageName
  * @property string $ImageDescription
- * @property list<Shapes\Tag> $Tags
- * @property list<'Microsoft_Office_2016'|'Microsoft_Office_2019'> $Applications
+ * @property list<Shapes\Tag>|null $Tags
+ * @property list<'Microsoft_Office_2016'|'Microsoft_Office_2019'>|null $Applications
  */
 class ImportWorkspaceImageRequest extends Request
 {
@@ -20,8 +20,8 @@ class ImportWorkspaceImageRequest extends Request
      *     IngestionProcess: 'BYOL_REGULAR'|'BYOL_GRAPHICS'|'BYOL_GRAPHICSPRO'|'BYOL_GRAPHICS_G4DN'|'BYOL_REGULAR_WSP'|'BYOL_GRAPHICS_G4DN_WSP'|'BYOL_REGULAR_BYOP'|'BYOL_GRAPHICS_G4DN_BYOP',
      *     ImageName: string,
      *     ImageDescription: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     Applications?: list<'Microsoft_Office_2016'|'Microsoft_Office_2019'>
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Applications?: list<'Microsoft_Office_2016'|'Microsoft_Office_2019'>|null
      * } $args
      */
     public function __construct(array $args)

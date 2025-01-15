@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property string $Identifier
  * @property string $Name
- * @property list<Shapes\ResourceServerScopeType> $Scopes
+ * @property list<Shapes\ResourceServerScopeType>|null $Scopes
  */
 class UpdateResourceServerRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateResourceServerRequest extends Request
      *     UserPoolId: string,
      *     Identifier: string,
      *     Name: string,
-     *     Scopes?: list<Shapes\ResourceServerScopeType>
+     *     Scopes?: list<Shapes\ResourceServerScopeType>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property ElicitSubSlot $subSlotToElicit
+ * @property ElicitSubSlot|null $subSlotToElicit
  */
 class ElicitSubSlot extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     subSlotToElicit?: ElicitSubSlot
+     *     subSlotToElicit?: ElicitSubSlot|null
      * } $args
      */
     public function __construct(array $args)

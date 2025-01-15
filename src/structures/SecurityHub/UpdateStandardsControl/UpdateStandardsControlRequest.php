@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StandardsControlArn
- * @property 'ENABLED'|'DISABLED' $ControlStatus
- * @property string $DisabledReason
+ * @property 'ENABLED'|'DISABLED'|null $ControlStatus
+ * @property string|null $DisabledReason
  */
 class UpdateStandardsControlRequest extends Request
 {
     /**
      * @param array{
      *     StandardsControlArn: string,
-     *     ControlStatus?: 'ENABLED'|'DISABLED',
-     *     DisabledReason?: string
+     *     ControlStatus?: 'ENABLED'|'DISABLED'|null,
+     *     DisabledReason?: string|null
      * } $args
      */
     public function __construct(array $args)

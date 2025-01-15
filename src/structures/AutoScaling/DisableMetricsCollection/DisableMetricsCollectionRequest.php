@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property list<string> $Metrics
+ * @property list<string>|null $Metrics
  */
 class DisableMetricsCollectionRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     Metrics?: list<string>
+     *     Metrics?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

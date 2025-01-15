@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexRuntimeV2\GetSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $score
+ * @property double|null $score
  */
 class ConfidenceScore extends Shape
 {
     /**
-     * @param array{score?: double} $args
+     * @param array{score?: double|null} $args
      */
     public function __construct(array $args = [])
     {

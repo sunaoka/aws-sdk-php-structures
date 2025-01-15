@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\StartLiveTail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LiveTailSessionStart $sessionStart
- * @property LiveTailSessionUpdate $sessionUpdate
- * @property SessionTimeoutException $SessionTimeoutException
- * @property SessionStreamingException $SessionStreamingException
+ * @property LiveTailSessionStart|null $sessionStart
+ * @property LiveTailSessionUpdate|null $sessionUpdate
+ * @property SessionTimeoutException|null $SessionTimeoutException
+ * @property SessionStreamingException|null $SessionStreamingException
  */
 class StartLiveTailResponseStream extends Shape
 {
     /**
      * @param array{
-     *     sessionStart?: LiveTailSessionStart,
-     *     sessionUpdate?: LiveTailSessionUpdate,
-     *     SessionTimeoutException?: SessionTimeoutException,
-     *     SessionStreamingException?: SessionStreamingException
+     *     sessionStart?: LiveTailSessionStart|null,
+     *     sessionUpdate?: LiveTailSessionUpdate|null,
+     *     SessionTimeoutException?: SessionTimeoutException|null,
+     *     SessionStreamingException?: SessionStreamingException|null
      * } $args
      */
     public function __construct(array $args = [])

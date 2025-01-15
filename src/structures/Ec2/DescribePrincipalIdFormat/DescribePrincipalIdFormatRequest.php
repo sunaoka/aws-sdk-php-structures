@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribePrincipalIdFormat;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property list<string> $Resources
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property bool|null $DryRun
+ * @property list<string>|null $Resources
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribePrincipalIdFormatRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     Resources?: list<string>,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     DryRun?: bool|null,
+     *     Resources?: list<string>|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

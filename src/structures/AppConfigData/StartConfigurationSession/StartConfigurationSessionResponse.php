@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppConfigData\StartConfigurationSession;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $InitialConfigurationToken
+ * @property string|null $InitialConfigurationToken
  */
 class StartConfigurationSessionResponse extends Response
 {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeMaintenanceWindowExecutionTaskInvoc
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\MaintenanceWindowExecutionTaskInvocationIdentity> $WindowExecutionTaskInvocationIdentities
- * @property string $NextToken
+ * @property list<Shapes\MaintenanceWindowExecutionTaskInvocationIdentity>|null $WindowExecutionTaskInvocationIdentities
+ * @property string|null $NextToken
  */
 class DescribeMaintenanceWindowExecutionTaskInvocationsResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryId
- * @property string $Name
+ * @property string|null $Name
  */
 class CreateSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     DirectoryId: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

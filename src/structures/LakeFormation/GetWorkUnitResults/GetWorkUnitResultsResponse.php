@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GetWorkUnitResults;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Psr\Http\Message\StreamInterface $ResultStream
+ * @property \Psr\Http\Message\StreamInterface|null $ResultStream
  */
 class GetWorkUnitResultsResponse extends Response
 {

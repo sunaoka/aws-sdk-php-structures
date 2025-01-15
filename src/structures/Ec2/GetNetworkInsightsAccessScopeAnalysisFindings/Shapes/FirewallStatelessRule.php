@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\GetNetworkInsightsAccessScopeAnalysisFindin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuleGroupArn
- * @property list<string> $Sources
- * @property list<string> $Destinations
- * @property list<PortRange> $SourcePorts
- * @property list<PortRange> $DestinationPorts
- * @property list<int<0, 255>> $Protocols
- * @property string $RuleAction
- * @property int<-1, 65535> $Priority
+ * @property string|null $RuleGroupArn
+ * @property list<string>|null $Sources
+ * @property list<string>|null $Destinations
+ * @property list<PortRange>|null $SourcePorts
+ * @property list<PortRange>|null $DestinationPorts
+ * @property list<int<0, 255>>|null $Protocols
+ * @property string|null $RuleAction
+ * @property int<-1, 65535>|null $Priority
  */
 class FirewallStatelessRule extends Shape
 {
     /**
      * @param array{
-     *     RuleGroupArn?: string,
-     *     Sources?: list<string>,
-     *     Destinations?: list<string>,
-     *     SourcePorts?: list<PortRange>,
-     *     DestinationPorts?: list<PortRange>,
-     *     Protocols?: list<int<0, 255>>,
-     *     RuleAction?: string,
-     *     Priority?: int<-1, 65535>
+     *     RuleGroupArn?: string|null,
+     *     Sources?: list<string>|null,
+     *     Destinations?: list<string>|null,
+     *     SourcePorts?: list<PortRange>|null,
+     *     DestinationPorts?: list<PortRange>|null,
+     *     Protocols?: list<int<0, 255>>|null,
+     *     RuleAction?: string|null,
+     *     Priority?: int<-1, 65535>|null
      * } $args
      */
     public function __construct(array $args = [])

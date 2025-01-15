@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Archive> $Archives
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListArchivesResponse extends Response
 {

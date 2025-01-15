@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TenantDomain
  * @property string $SecretArn
  * @property OneDriveUsers $OneDriveUsers
- * @property list<string> $InclusionPatterns
- * @property list<string> $ExclusionPatterns
- * @property list<DataSourceToIndexFieldMapping> $FieldMappings
- * @property bool $DisableLocalGroups
+ * @property list<string>|null $InclusionPatterns
+ * @property list<string>|null $ExclusionPatterns
+ * @property list<DataSourceToIndexFieldMapping>|null $FieldMappings
+ * @property bool|null $DisableLocalGroups
  */
 class OneDriveConfiguration extends Shape
 {
@@ -20,10 +20,10 @@ class OneDriveConfiguration extends Shape
      *     TenantDomain: string,
      *     SecretArn: string,
      *     OneDriveUsers: OneDriveUsers,
-     *     InclusionPatterns?: list<string>,
-     *     ExclusionPatterns?: list<string>,
-     *     FieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     DisableLocalGroups?: bool
+     *     InclusionPatterns?: list<string>|null,
+     *     ExclusionPatterns?: list<string>|null,
+     *     FieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     DisableLocalGroups?: bool|null
      * } $args
      */
     public function __construct(array $args)

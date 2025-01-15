@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $MigrationProjectIdentifier
- * @property list<Shapes\Filter> $Filters
- * @property string $Marker
- * @property int $MaxRecords
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $Marker
+ * @property int|null $MaxRecords
  */
 class DescribeMetadataModelAssessmentsRequest extends Request
 {
     /**
      * @param array{
      *     MigrationProjectIdentifier: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     Marker?: string,
-     *     MaxRecords?: int
+     *     Filters?: list<Shapes\Filter>|null,
+     *     Marker?: string|null,
+     *     MaxRecords?: int|null
      * } $args
      */
     public function __construct(array $args)

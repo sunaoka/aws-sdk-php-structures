@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $Database
  * @property string $QueryString
- * @property string $ClientRequestToken
- * @property string $WorkGroup
+ * @property string|null $ClientRequestToken
+ * @property string|null $WorkGroup
  */
 class CreateNamedQueryRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Database: string,
      *     QueryString: string,
-     *     ClientRequestToken?: string,
-     *     WorkGroup?: string
+     *     ClientRequestToken?: string|null,
+     *     WorkGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

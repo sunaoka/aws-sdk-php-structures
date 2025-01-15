@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\CreateCustomRoutingListener\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ListenerArn
- * @property list<PortRange> $PortRanges
+ * @property string|null $ListenerArn
+ * @property list<PortRange>|null $PortRanges
  */
 class CustomRoutingListener extends Shape
 {
     /**
      * @param array{
-     *     ListenerArn?: string,
-     *     PortRanges?: list<PortRange>
+     *     ListenerArn?: string|null,
+     *     PortRanges?: list<PortRange>|null
      * } $args
      */
     public function __construct(array $args = [])

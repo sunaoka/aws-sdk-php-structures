@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Inspector\DescribeFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $networkInterfaceId
- * @property string $subnetId
- * @property string $vpcId
- * @property string $privateDnsName
- * @property string $privateIpAddress
- * @property list<PrivateIp> $privateIpAddresses
- * @property string $publicDnsName
- * @property string $publicIp
- * @property list<string> $ipv6Addresses
- * @property list<SecurityGroup> $securityGroups
+ * @property string|null $networkInterfaceId
+ * @property string|null $subnetId
+ * @property string|null $vpcId
+ * @property string|null $privateDnsName
+ * @property string|null $privateIpAddress
+ * @property list<PrivateIp>|null $privateIpAddresses
+ * @property string|null $publicDnsName
+ * @property string|null $publicIp
+ * @property list<string>|null $ipv6Addresses
+ * @property list<SecurityGroup>|null $securityGroups
  */
 class NetworkInterface extends Shape
 {
     /**
      * @param array{
-     *     networkInterfaceId?: string,
-     *     subnetId?: string,
-     *     vpcId?: string,
-     *     privateDnsName?: string,
-     *     privateIpAddress?: string,
-     *     privateIpAddresses?: list<PrivateIp>,
-     *     publicDnsName?: string,
-     *     publicIp?: string,
-     *     ipv6Addresses?: list<string>,
-     *     securityGroups?: list<SecurityGroup>
+     *     networkInterfaceId?: string|null,
+     *     subnetId?: string|null,
+     *     vpcId?: string|null,
+     *     privateDnsName?: string|null,
+     *     privateIpAddress?: string|null,
+     *     privateIpAddresses?: list<PrivateIp>|null,
+     *     publicDnsName?: string|null,
+     *     publicIp?: string|null,
+     *     ipv6Addresses?: list<string>|null,
+     *     securityGroups?: list<SecurityGroup>|null
      * } $args
      */
     public function __construct(array $args = [])

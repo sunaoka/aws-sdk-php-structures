@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeDomainConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $enableOCSPCheck
- * @property string $ocspLambdaArn
- * @property string $ocspAuthorizedResponderArn
+ * @property bool|null $enableOCSPCheck
+ * @property string|null $ocspLambdaArn
+ * @property string|null $ocspAuthorizedResponderArn
  */
 class ServerCertificateConfig extends Shape
 {
     /**
      * @param array{
-     *     enableOCSPCheck?: bool,
-     *     ocspLambdaArn?: string,
-     *     ocspAuthorizedResponderArn?: string
+     *     enableOCSPCheck?: bool|null,
+     *     ocspLambdaArn?: string|null,
+     *     ocspAuthorizedResponderArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

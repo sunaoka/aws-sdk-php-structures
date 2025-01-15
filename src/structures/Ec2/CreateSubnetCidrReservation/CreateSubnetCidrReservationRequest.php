@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SubnetId
  * @property string $Cidr
  * @property 'prefix'|'explicit' $ReservationType
- * @property string $Description
- * @property bool $DryRun
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property string|null $Description
+ * @property bool|null $DryRun
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateSubnetCidrReservationRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateSubnetCidrReservationRequest extends Request
      *     SubnetId: string,
      *     Cidr: string,
      *     ReservationType: 'prefix'|'explicit',
-     *     Description?: string,
-     *     DryRun?: bool,
-     *     TagSpecifications?: list<Shapes\TagSpecification>
+     *     Description?: string|null,
+     *     DryRun?: bool|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

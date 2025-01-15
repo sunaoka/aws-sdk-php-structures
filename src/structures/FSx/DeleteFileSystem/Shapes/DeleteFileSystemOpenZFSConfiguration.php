@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FSx\DeleteFileSystem\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $SkipFinalBackup
- * @property list<Tag> $FinalBackupTags
- * @property list<'DELETE_CHILD_VOLUMES_AND_SNAPSHOTS'> $Options
+ * @property bool|null $SkipFinalBackup
+ * @property list<Tag>|null $FinalBackupTags
+ * @property list<'DELETE_CHILD_VOLUMES_AND_SNAPSHOTS'>|null $Options
  */
 class DeleteFileSystemOpenZFSConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SkipFinalBackup?: bool,
-     *     FinalBackupTags?: list<Tag>,
-     *     Options?: list<'DELETE_CHILD_VOLUMES_AND_SNAPSHOTS'>
+     *     SkipFinalBackup?: bool|null,
+     *     FinalBackupTags?: list<Tag>|null,
+     *     Options?: list<'DELETE_CHILD_VOLUMES_AND_SNAPSHOTS'>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\Glue\CreateSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property \Aws\Api\DateTimeResult $CreatedOn
- * @property 'PROVISIONING'|'READY'|'FAILED'|'TIMEOUT'|'STOPPING'|'STOPPED' $Status
- * @property string $ErrorMessage
- * @property string $Description
- * @property string $Role
- * @property SessionCommand $Command
- * @property array<string, string> $DefaultArguments
- * @property ConnectionsList $Connections
- * @property double $Progress
- * @property double $MaxCapacity
- * @property string $SecurityConfiguration
- * @property string $GlueVersion
- * @property int $NumberOfWorkers
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X' $WorkerType
- * @property \Aws\Api\DateTimeResult $CompletedOn
- * @property double $ExecutionTime
- * @property double $DPUSeconds
- * @property int $IdleTimeout
- * @property string $ProfileName
+ * @property string|null $Id
+ * @property \Aws\Api\DateTimeResult|null $CreatedOn
+ * @property 'PROVISIONING'|'READY'|'FAILED'|'TIMEOUT'|'STOPPING'|'STOPPED'|null $Status
+ * @property string|null $ErrorMessage
+ * @property string|null $Description
+ * @property string|null $Role
+ * @property SessionCommand|null $Command
+ * @property array<string, string>|null $DefaultArguments
+ * @property ConnectionsList|null $Connections
+ * @property double|null $Progress
+ * @property double|null $MaxCapacity
+ * @property string|null $SecurityConfiguration
+ * @property string|null $GlueVersion
+ * @property int|null $NumberOfWorkers
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property \Aws\Api\DateTimeResult|null $CompletedOn
+ * @property double|null $ExecutionTime
+ * @property double|null $DPUSeconds
+ * @property int|null $IdleTimeout
+ * @property string|null $ProfileName
  */
 class Session extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     CreatedOn?: \Aws\Api\DateTimeResult,
-     *     Status?: 'PROVISIONING'|'READY'|'FAILED'|'TIMEOUT'|'STOPPING'|'STOPPED',
-     *     ErrorMessage?: string,
-     *     Description?: string,
-     *     Role?: string,
-     *     Command?: SessionCommand,
-     *     DefaultArguments?: array<string, string>,
-     *     Connections?: ConnectionsList,
-     *     Progress?: double,
-     *     MaxCapacity?: double,
-     *     SecurityConfiguration?: string,
-     *     GlueVersion?: string,
-     *     NumberOfWorkers?: int,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X',
-     *     CompletedOn?: \Aws\Api\DateTimeResult,
-     *     ExecutionTime?: double,
-     *     DPUSeconds?: double,
-     *     IdleTimeout?: int,
-     *     ProfileName?: string
+     *     Id?: string|null,
+     *     CreatedOn?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'PROVISIONING'|'READY'|'FAILED'|'TIMEOUT'|'STOPPING'|'STOPPED'|null,
+     *     ErrorMessage?: string|null,
+     *     Description?: string|null,
+     *     Role?: string|null,
+     *     Command?: SessionCommand|null,
+     *     DefaultArguments?: array<string, string>|null,
+     *     Connections?: ConnectionsList|null,
+     *     Progress?: double|null,
+     *     MaxCapacity?: double|null,
+     *     SecurityConfiguration?: string|null,
+     *     GlueVersion?: string|null,
+     *     NumberOfWorkers?: int|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     CompletedOn?: \Aws\Api\DateTimeResult|null,
+     *     ExecutionTime?: double|null,
+     *     DPUSeconds?: double|null,
+     *     IdleTimeout?: int|null,
+     *     ProfileName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

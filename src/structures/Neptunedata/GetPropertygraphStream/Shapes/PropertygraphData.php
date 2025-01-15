@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $type
  * @property string $key
  * @property Document $value
- * @property string $from
- * @property string $to
+ * @property string|null $from
+ * @property string|null $to
  */
 class PropertygraphData extends Shape
 {
@@ -20,8 +20,8 @@ class PropertygraphData extends Shape
      *     type: string,
      *     key: string,
      *     value: Document,
-     *     from?: string,
-     *     to?: string
+     *     from?: string|null,
+     *     to?: string|null
      * } $args
      */
     public function __construct(array $args)

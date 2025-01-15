@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LexModelBuildingService\GetBotChannelAssociatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BotChannelAssociation> $botChannelAssociations
- * @property string $nextToken
+ * @property list<Shapes\BotChannelAssociation>|null $botChannelAssociations
+ * @property string|null $nextToken
  */
 class GetBotChannelAssociationsResponse extends Response
 {

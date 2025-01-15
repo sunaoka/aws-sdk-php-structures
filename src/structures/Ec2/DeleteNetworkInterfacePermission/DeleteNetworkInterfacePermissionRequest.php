@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NetworkInterfacePermissionId
- * @property bool $Force
- * @property bool $DryRun
+ * @property bool|null $Force
+ * @property bool|null $DryRun
  */
 class DeleteNetworkInterfacePermissionRequest extends Request
 {
     /**
      * @param array{
      *     NetworkInterfacePermissionId: string,
-     *     Force?: bool,
-     *     DryRun?: bool
+     *     Force?: bool|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

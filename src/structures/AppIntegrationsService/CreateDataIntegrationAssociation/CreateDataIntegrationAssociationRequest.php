@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataIntegrationIdentifier
- * @property string $ClientId
- * @property array<string, array<string, list<string>>> $ObjectConfiguration
- * @property string $DestinationURI
- * @property array<string, string> $ClientAssociationMetadata
- * @property string $ClientToken
- * @property Shapes\ExecutionConfiguration $ExecutionConfiguration
+ * @property string|null $ClientId
+ * @property array<string, array<string, list<string>>>|null $ObjectConfiguration
+ * @property string|null $DestinationURI
+ * @property array<string, string>|null $ClientAssociationMetadata
+ * @property string|null $ClientToken
+ * @property Shapes\ExecutionConfiguration|null $ExecutionConfiguration
  */
 class CreateDataIntegrationAssociationRequest extends Request
 {
     /**
      * @param array{
      *     DataIntegrationIdentifier: string,
-     *     ClientId?: string,
-     *     ObjectConfiguration?: array<string, array<string, list<string>>>,
-     *     DestinationURI?: string,
-     *     ClientAssociationMetadata?: array<string, string>,
-     *     ClientToken?: string,
-     *     ExecutionConfiguration?: Shapes\ExecutionConfiguration
+     *     ClientId?: string|null,
+     *     ObjectConfiguration?: array<string, array<string, list<string>>>|null,
+     *     DestinationURI?: string|null,
+     *     ClientAssociationMetadata?: array<string, string>|null,
+     *     ClientToken?: string|null,
+     *     ExecutionConfiguration?: Shapes\ExecutionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

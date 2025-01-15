@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\BatchGetDeploymentGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $content
- * @property string $sha256
+ * @property string|null $content
+ * @property string|null $sha256
  */
 class RawString extends Shape
 {
     /**
      * @param array{
-     *     content?: string,
-     *     sha256?: string
+     *     content?: string|null,
+     *     sha256?: string|null
      * } $args
      */
     public function __construct(array $args = [])

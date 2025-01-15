@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<InstanceStatusDetails> $Details
- * @property 'ok'|'impaired'|'insufficient-data'|'not-applicable'|'initializing' $Status
+ * @property list<InstanceStatusDetails>|null $Details
+ * @property 'ok'|'impaired'|'insufficient-data'|'not-applicable'|'initializing'|null $Status
  */
 class InstanceStatusSummary extends Shape
 {
     /**
      * @param array{
-     *     Details?: list<InstanceStatusDetails>,
-     *     Status?: 'ok'|'impaired'|'insufficient-data'|'not-applicable'|'initializing'
+     *     Details?: list<InstanceStatusDetails>|null,
+     *     Status?: 'ok'|'impaired'|'insufficient-data'|'not-applicable'|'initializing'|null
      * } $args
      */
     public function __construct(array $args = [])

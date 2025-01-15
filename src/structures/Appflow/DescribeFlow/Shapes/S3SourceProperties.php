@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $bucketName
- * @property string $bucketPrefix
- * @property S3InputFormatConfig $s3InputFormatConfig
+ * @property string|null $bucketPrefix
+ * @property S3InputFormatConfig|null $s3InputFormatConfig
  */
 class S3SourceProperties extends Shape
 {
     /**
      * @param array{
      *     bucketName: string,
-     *     bucketPrefix?: string,
-     *     s3InputFormatConfig?: S3InputFormatConfig
+     *     bucketPrefix?: string|null,
+     *     s3InputFormatConfig?: S3InputFormatConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\BatchDisassociateServiceActionFr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\FailedServiceActionAssociation> $FailedServiceActionAssociations
+ * @property list<Shapes\FailedServiceActionAssociation>|null $FailedServiceActionAssociations
  */
 class BatchDisassociateServiceActionFromProvisioningArtifactResponse extends Response
 {

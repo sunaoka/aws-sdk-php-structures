@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DescribeUsers;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
- * @property string $OrganizationId
- * @property string $UserIds
- * @property string $Query
- * @property 'ALL'|'ACTIVE_PENDING' $Include
- * @property 'ASCENDING'|'DESCENDING' $Order
- * @property 'USER_NAME'|'FULL_NAME'|'STORAGE_LIMIT'|'USER_STATUS'|'STORAGE_USED' $Sort
- * @property string $Marker
- * @property int<1, 999> $Limit
- * @property string $Fields
+ * @property string|null $AuthenticationToken
+ * @property string|null $OrganizationId
+ * @property string|null $UserIds
+ * @property string|null $Query
+ * @property 'ALL'|'ACTIVE_PENDING'|null $Include
+ * @property 'ASCENDING'|'DESCENDING'|null $Order
+ * @property 'USER_NAME'|'FULL_NAME'|'STORAGE_LIMIT'|'USER_STATUS'|'STORAGE_USED'|null $Sort
+ * @property string|null $Marker
+ * @property int<1, 999>|null $Limit
+ * @property string|null $Fields
  */
 class DescribeUsersRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
-     *     OrganizationId?: string,
-     *     UserIds?: string,
-     *     Query?: string,
-     *     Include?: 'ALL'|'ACTIVE_PENDING',
-     *     Order?: 'ASCENDING'|'DESCENDING',
-     *     Sort?: 'USER_NAME'|'FULL_NAME'|'STORAGE_LIMIT'|'USER_STATUS'|'STORAGE_USED',
-     *     Marker?: string,
-     *     Limit?: int<1, 999>,
-     *     Fields?: string
+     *     AuthenticationToken?: string|null,
+     *     OrganizationId?: string|null,
+     *     UserIds?: string|null,
+     *     Query?: string|null,
+     *     Include?: 'ALL'|'ACTIVE_PENDING'|null,
+     *     Order?: 'ASCENDING'|'DESCENDING'|null,
+     *     Sort?: 'USER_NAME'|'FULL_NAME'|'STORAGE_LIMIT'|'USER_STATUS'|'STORAGE_USED'|null,
+     *     Marker?: string|null,
+     *     Limit?: int<1, 999>|null,
+     *     Fields?: string|null
      * } $args
      */
     public function __construct(array $args = [])

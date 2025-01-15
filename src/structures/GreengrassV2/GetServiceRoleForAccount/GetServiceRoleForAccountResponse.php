@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\GetServiceRoleForAccount;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $associatedAt
- * @property string $roleArn
+ * @property string|null $associatedAt
+ * @property string|null $roleArn
  */
 class GetServiceRoleForAccountResponse extends Response
 {

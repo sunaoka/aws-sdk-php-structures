@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TranslationIsoFormats $IncomingTranslationAttributes
  * @property Shapes\TranslationIsoFormats $OutgoingTranslationAttributes
  * @property string $EncryptedPinBlock
- * @property Shapes\DukptDerivationAttributes $IncomingDukptAttributes
- * @property Shapes\DukptDerivationAttributes $OutgoingDukptAttributes
- * @property Shapes\WrappedKey $IncomingWrappedKey
- * @property Shapes\WrappedKey $OutgoingWrappedKey
+ * @property Shapes\DukptDerivationAttributes|null $IncomingDukptAttributes
+ * @property Shapes\DukptDerivationAttributes|null $OutgoingDukptAttributes
+ * @property Shapes\WrappedKey|null $IncomingWrappedKey
+ * @property Shapes\WrappedKey|null $OutgoingWrappedKey
  */
 class TranslatePinDataRequest extends Request
 {
@@ -24,10 +24,10 @@ class TranslatePinDataRequest extends Request
      *     IncomingTranslationAttributes: Shapes\TranslationIsoFormats,
      *     OutgoingTranslationAttributes: Shapes\TranslationIsoFormats,
      *     EncryptedPinBlock: string,
-     *     IncomingDukptAttributes?: Shapes\DukptDerivationAttributes,
-     *     OutgoingDukptAttributes?: Shapes\DukptDerivationAttributes,
-     *     IncomingWrappedKey?: Shapes\WrappedKey,
-     *     OutgoingWrappedKey?: Shapes\WrappedKey
+     *     IncomingDukptAttributes?: Shapes\DukptDerivationAttributes|null,
+     *     OutgoingDukptAttributes?: Shapes\DukptDerivationAttributes|null,
+     *     IncomingWrappedKey?: Shapes\WrappedKey|null,
+     *     OutgoingWrappedKey?: Shapes\WrappedKey|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeDestinations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DestinationNamePrefix
- * @property string $nextToken
- * @property int<1, 50> $limit
+ * @property string|null $DestinationNamePrefix
+ * @property string|null $nextToken
+ * @property int<1, 50>|null $limit
  */
 class DescribeDestinationsRequest extends Request
 {
     /**
      * @param array{
-     *     DestinationNamePrefix?: string,
-     *     nextToken?: string,
-     *     limit?: int<1, 50>
+     *     DestinationNamePrefix?: string|null,
+     *     nextToken?: string|null,
+     *     limit?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeReservedNodesOfferings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedNodesOfferingId
- * @property string $NodeType
- * @property int $Duration
- * @property double $FixedPrice
- * @property string $OfferingType
- * @property list<RecurringCharge> $RecurringCharges
+ * @property string|null $ReservedNodesOfferingId
+ * @property string|null $NodeType
+ * @property int|null $Duration
+ * @property double|null $FixedPrice
+ * @property string|null $OfferingType
+ * @property list<RecurringCharge>|null $RecurringCharges
  */
 class ReservedNodesOffering extends Shape
 {
     /**
      * @param array{
-     *     ReservedNodesOfferingId?: string,
-     *     NodeType?: string,
-     *     Duration?: int,
-     *     FixedPrice?: double,
-     *     OfferingType?: string,
-     *     RecurringCharges?: list<RecurringCharge>
+     *     ReservedNodesOfferingId?: string|null,
+     *     NodeType?: string|null,
+     *     Duration?: int|null,
+     *     FixedPrice?: double|null,
+     *     OfferingType?: string|null,
+     *     RecurringCharges?: list<RecurringCharge>|null
      * } $args
      */
     public function __construct(array $args = [])

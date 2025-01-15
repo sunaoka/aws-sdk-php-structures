@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ReplaceNetworkAclEntry\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Code
- * @property int $Type
+ * @property int|null $Code
+ * @property int|null $Type
  */
 class IcmpTypeCode extends Shape
 {
     /**
      * @param array{
-     *     Code?: int,
-     *     Type?: int
+     *     Code?: int|null,
+     *     Type?: int|null
      * } $args
      */
     public function __construct(array $args = [])

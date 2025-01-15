@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\TimestreamWrite\CreateBatchLoadTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetMultiMeasureName
+ * @property string|null $TargetMultiMeasureName
  * @property list<MultiMeasureAttributeMapping> $MultiMeasureAttributeMappings
  */
 class MultiMeasureMappings extends Shape
 {
     /**
      * @param array{
-     *     TargetMultiMeasureName?: string,
+     *     TargetMultiMeasureName?: string|null,
      *     MultiMeasureAttributeMappings: list<MultiMeasureAttributeMapping>
      * } $args
      */

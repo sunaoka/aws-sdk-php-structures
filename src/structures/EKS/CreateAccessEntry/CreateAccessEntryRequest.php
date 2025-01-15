@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterName
  * @property string $principalArn
- * @property list<string> $kubernetesGroups
- * @property array<string, string> $tags
- * @property string $clientRequestToken
- * @property string $username
- * @property string $type
+ * @property list<string>|null $kubernetesGroups
+ * @property array<string, string>|null $tags
+ * @property string|null $clientRequestToken
+ * @property string|null $username
+ * @property string|null $type
  */
 class CreateAccessEntryRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateAccessEntryRequest extends Request
      * @param array{
      *     clusterName: string,
      *     principalArn: string,
-     *     kubernetesGroups?: list<string>,
-     *     tags?: array<string, string>,
-     *     clientRequestToken?: string,
-     *     username?: string,
-     *     type?: string
+     *     kubernetesGroups?: list<string>|null,
+     *     tags?: array<string, string>|null,
+     *     clientRequestToken?: string|null,
+     *     username?: string|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args)

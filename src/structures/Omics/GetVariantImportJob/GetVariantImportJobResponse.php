@@ -12,10 +12,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $statusMessage
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $updateTime
- * @property \Aws\Api\DateTimeResult $completionTime
+ * @property \Aws\Api\DateTimeResult|null $completionTime
  * @property list<Shapes\VariantImportItemDetail> $items
  * @property bool $runLeftNormalization
- * @property array<string, string> $annotationFields
+ * @property array<string, string>|null $annotationFields
  */
 class GetVariantImportJobResponse extends Response
 {

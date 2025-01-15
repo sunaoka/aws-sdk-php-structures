@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Disabled'|'Enabled' $CompleteOnConvergence
+ * @property 'Disabled'|'Enabled'|null $CompleteOnConvergence
  */
 class ConvergenceDetected extends Shape
 {
     /**
-     * @param array{CompleteOnConvergence?: 'Disabled'|'Enabled'} $args
+     * @param array{CompleteOnConvergence?: 'Disabled'|'Enabled'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\HttpPackageConfiguration> $HttpPackageConfigurations
  * @property string $SourceLocationName
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  * @property string $VodSourceName
  */
 class CreateVodSourceRequest extends Request
@@ -16,7 +16,7 @@ class CreateVodSourceRequest extends Request
      * @param array{
      *     HttpPackageConfigurations: list<Shapes\HttpPackageConfiguration>,
      *     SourceLocationName: string,
-     *     Tags?: array<string, string>,
+     *     Tags?: array<string, string>|null,
      *     VodSourceName: string
      * } $args
      */

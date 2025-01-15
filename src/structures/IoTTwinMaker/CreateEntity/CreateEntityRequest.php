@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $workspaceId
- * @property string $entityId
+ * @property string|null $entityId
  * @property string $entityName
- * @property string $description
- * @property array<string, Shapes\ComponentRequest> $components
- * @property array<string, Shapes\CompositeComponentRequest> $compositeComponents
- * @property string $parentEntityId
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property array<string, Shapes\ComponentRequest>|null $components
+ * @property array<string, Shapes\CompositeComponentRequest>|null $compositeComponents
+ * @property string|null $parentEntityId
+ * @property array<string, string>|null $tags
  */
 class CreateEntityRequest extends Request
 {
     /**
      * @param array{
      *     workspaceId: string,
-     *     entityId?: string,
+     *     entityId?: string|null,
      *     entityName: string,
-     *     description?: string,
-     *     components?: array<string, Shapes\ComponentRequest>,
-     *     compositeComponents?: array<string, Shapes\CompositeComponentRequest>,
-     *     parentEntityId?: string,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     components?: array<string, Shapes\ComponentRequest>|null,
+     *     compositeComponents?: array<string, Shapes\CompositeComponentRequest>|null,
+     *     parentEntityId?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\UpdateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property string $TableName
- * @property S3Location $TempDirectory
+ * @property S3Location|null $TempDirectory
  */
 class DataCatalogInputDefinition extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TableName: string,
-     *     TempDirectory?: S3Location
+     *     TempDirectory?: S3Location|null
      * } $args
      */
     public function __construct(array $args)

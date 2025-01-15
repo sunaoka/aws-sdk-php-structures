@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AlgorithmSummary> $AlgorithmSummaryList
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListAlgorithmsResponse extends Response
 {

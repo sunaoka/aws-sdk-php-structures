@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $group
+ * @property string|null $group
  */
 class BatchUpdateBillScenarioCommitmentModificationEntry extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     group?: string
+     *     group?: string|null
      * } $args
      */
     public function __construct(array $args)

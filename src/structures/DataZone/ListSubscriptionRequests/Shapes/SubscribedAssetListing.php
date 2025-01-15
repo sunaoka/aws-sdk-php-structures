@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\ListSubscriptionRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssetScope $assetScope
- * @property string $entityId
- * @property string $entityRevision
- * @property string $entityType
- * @property string $forms
- * @property list<DetailedGlossaryTerm> $glossaryTerms
+ * @property AssetScope|null $assetScope
+ * @property string|null $entityId
+ * @property string|null $entityRevision
+ * @property string|null $entityType
+ * @property string|null $forms
+ * @property list<DetailedGlossaryTerm>|null $glossaryTerms
  */
 class SubscribedAssetListing extends Shape
 {
     /**
      * @param array{
-     *     assetScope?: AssetScope,
-     *     entityId?: string,
-     *     entityRevision?: string,
-     *     entityType?: string,
-     *     forms?: string,
-     *     glossaryTerms?: list<DetailedGlossaryTerm>
+     *     assetScope?: AssetScope|null,
+     *     entityId?: string|null,
+     *     entityRevision?: string|null,
+     *     entityType?: string|null,
+     *     forms?: string|null,
+     *     glossaryTerms?: list<DetailedGlossaryTerm>|null
      * } $args
      */
     public function __construct(array $args = [])

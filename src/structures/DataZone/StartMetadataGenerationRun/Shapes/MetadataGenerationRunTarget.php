@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $identifier
- * @property string $revision
+ * @property string|null $revision
  * @property 'ASSET' $type
  */
 class MetadataGenerationRunTarget extends Shape
@@ -14,7 +14,7 @@ class MetadataGenerationRunTarget extends Shape
     /**
      * @param array{
      *     identifier: string,
-     *     revision?: string,
+     *     revision?: string|null,
      *     type: 'ASSET'
      * } $args
      */

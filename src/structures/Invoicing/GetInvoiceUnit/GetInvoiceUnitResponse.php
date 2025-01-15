@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\Invoicing\GetInvoiceUnit;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $InvoiceUnitArn
- * @property string $InvoiceReceiver
- * @property string $Name
- * @property string $Description
- * @property bool $TaxInheritanceDisabled
- * @property Shapes\InvoiceUnitRule $Rule
- * @property \Aws\Api\DateTimeResult $LastModified
+ * @property string|null $InvoiceUnitArn
+ * @property string|null $InvoiceReceiver
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property bool|null $TaxInheritanceDisabled
+ * @property Shapes\InvoiceUnitRule|null $Rule
+ * @property \Aws\Api\DateTimeResult|null $LastModified
  */
 class GetInvoiceUnitResponse extends Response
 {

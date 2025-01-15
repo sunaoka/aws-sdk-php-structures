@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListResourceSnapshotJobs\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CreatedDate' $SortBy
- * @property 'ASCENDING'|'DESCENDING' $SortOrder
+ * @property 'CreatedDate'|null $SortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
  */
 class SortObject extends Shape
 {
     /**
      * @param array{
-     *     SortBy?: 'CreatedDate',
-     *     SortOrder?: 'ASCENDING'|'DESCENDING'
+     *     SortBy?: 'CreatedDate'|null,
+     *     SortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */
     public function __construct(array $args = [])

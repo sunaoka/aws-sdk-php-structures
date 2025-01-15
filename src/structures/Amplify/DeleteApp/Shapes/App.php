@@ -8,30 +8,30 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $appId
  * @property string $appArn
  * @property string $name
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $description
  * @property string $repository
  * @property 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE' $platform
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
- * @property string $iamServiceRoleArn
+ * @property string|null $iamServiceRoleArn
  * @property array<string, string> $environmentVariables
  * @property string $defaultDomain
  * @property bool $enableBranchAutoBuild
- * @property bool $enableBranchAutoDeletion
+ * @property bool|null $enableBranchAutoDeletion
  * @property bool $enableBasicAuth
- * @property string $basicAuthCredentials
- * @property list<CustomRule> $customRules
- * @property ProductionBranch $productionBranch
- * @property string $buildSpec
- * @property string $customHeaders
- * @property bool $enableAutoBranchCreation
- * @property list<string> $autoBranchCreationPatterns
- * @property AutoBranchCreationConfig $autoBranchCreationConfig
- * @property 'SSH'|'TOKEN'|'SIGV4' $repositoryCloneMethod
- * @property CacheConfig $cacheConfig
- * @property \Aws\Api\DateTimeResult $webhookCreateTime
- * @property WafConfiguration $wafConfiguration
+ * @property string|null $basicAuthCredentials
+ * @property list<CustomRule>|null $customRules
+ * @property ProductionBranch|null $productionBranch
+ * @property string|null $buildSpec
+ * @property string|null $customHeaders
+ * @property bool|null $enableAutoBranchCreation
+ * @property list<string>|null $autoBranchCreationPatterns
+ * @property AutoBranchCreationConfig|null $autoBranchCreationConfig
+ * @property 'SSH'|'TOKEN'|'SIGV4'|null $repositoryCloneMethod
+ * @property CacheConfig|null $cacheConfig
+ * @property \Aws\Api\DateTimeResult|null $webhookCreateTime
+ * @property WafConfiguration|null $wafConfiguration
  */
 class App extends Shape
 {
@@ -40,30 +40,30 @@ class App extends Shape
      *     appId: string,
      *     appArn: string,
      *     name: string,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     description: string,
      *     repository: string,
      *     platform: 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE',
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
-     *     iamServiceRoleArn?: string,
+     *     iamServiceRoleArn?: string|null,
      *     environmentVariables: array<string, string>,
      *     defaultDomain: string,
      *     enableBranchAutoBuild: bool,
-     *     enableBranchAutoDeletion?: bool,
+     *     enableBranchAutoDeletion?: bool|null,
      *     enableBasicAuth: bool,
-     *     basicAuthCredentials?: string,
-     *     customRules?: list<CustomRule>,
-     *     productionBranch?: ProductionBranch,
-     *     buildSpec?: string,
-     *     customHeaders?: string,
-     *     enableAutoBranchCreation?: bool,
-     *     autoBranchCreationPatterns?: list<string>,
-     *     autoBranchCreationConfig?: AutoBranchCreationConfig,
-     *     repositoryCloneMethod?: 'SSH'|'TOKEN'|'SIGV4',
-     *     cacheConfig?: CacheConfig,
-     *     webhookCreateTime?: \Aws\Api\DateTimeResult,
-     *     wafConfiguration?: WafConfiguration
+     *     basicAuthCredentials?: string|null,
+     *     customRules?: list<CustomRule>|null,
+     *     productionBranch?: ProductionBranch|null,
+     *     buildSpec?: string|null,
+     *     customHeaders?: string|null,
+     *     enableAutoBranchCreation?: bool|null,
+     *     autoBranchCreationPatterns?: list<string>|null,
+     *     autoBranchCreationConfig?: AutoBranchCreationConfig|null,
+     *     repositoryCloneMethod?: 'SSH'|'TOKEN'|'SIGV4'|null,
+     *     cacheConfig?: CacheConfig|null,
+     *     webhookCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     wafConfiguration?: WafConfiguration|null
      * } $args
      */
     public function __construct(array $args)

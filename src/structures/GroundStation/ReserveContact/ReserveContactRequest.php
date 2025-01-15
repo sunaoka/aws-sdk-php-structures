@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $missionProfileArn
  * @property string $satelliteArn
  * @property \Aws\Api\DateTimeResult $startTime
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class ReserveContactRequest extends Request
 {
@@ -21,7 +21,7 @@ class ReserveContactRequest extends Request
      *     missionProfileArn: string,
      *     satelliteArn: string,
      *     startTime: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

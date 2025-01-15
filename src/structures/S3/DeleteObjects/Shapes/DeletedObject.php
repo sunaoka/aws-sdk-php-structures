@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3\DeleteObjects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $VersionId
- * @property bool $DeleteMarker
- * @property string $DeleteMarkerVersionId
+ * @property string|null $Key
+ * @property string|null $VersionId
+ * @property bool|null $DeleteMarker
+ * @property string|null $DeleteMarkerVersionId
  */
 class DeletedObject extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     VersionId?: string,
-     *     DeleteMarker?: bool,
-     *     DeleteMarkerVersionId?: string
+     *     Key?: string|null,
+     *     VersionId?: string|null,
+     *     DeleteMarker?: bool|null,
+     *     DeleteMarkerVersionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

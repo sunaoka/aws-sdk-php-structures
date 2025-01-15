@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSpotFleetInstances;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $SpotFleetRequestId
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class DescribeSpotFleetInstancesRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     SpotFleetRequestId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

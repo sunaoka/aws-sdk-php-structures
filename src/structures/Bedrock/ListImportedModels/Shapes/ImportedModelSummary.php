@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $modelArn
  * @property string $modelName
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property bool $instructSupported
- * @property string $modelArchitecture
+ * @property bool|null $instructSupported
+ * @property string|null $modelArchitecture
  */
 class ImportedModelSummary extends Shape
 {
@@ -18,8 +18,8 @@ class ImportedModelSummary extends Shape
      *     modelArn: string,
      *     modelName: string,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     instructSupported?: bool,
-     *     modelArchitecture?: string
+     *     instructSupported?: bool|null,
+     *     modelArchitecture?: string|null
      * } $args
      */
     public function __construct(array $args)

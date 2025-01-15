@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\UpdateResolverRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResolverRule $ResolverRule
+ * @property Shapes\ResolverRule|null $ResolverRule
  */
 class UpdateResolverRuleResponse extends Response
 {

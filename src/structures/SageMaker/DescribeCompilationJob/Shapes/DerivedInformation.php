@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeCompilationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DerivedDataInputConfig
+ * @property string|null $DerivedDataInputConfig
  */
 class DerivedInformation extends Shape
 {
     /**
-     * @param array{DerivedDataInputConfig?: string} $args
+     * @param array{DerivedDataInputConfig?: string|null} $args
      */
     public function __construct(array $args = [])
     {

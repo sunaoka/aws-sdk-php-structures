@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateInferenceRecommendationsJob\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelPackageVersionArn
- * @property string $ModelName
- * @property int<1, max> $JobDurationInSeconds
- * @property TrafficPattern $TrafficPattern
- * @property RecommendationJobResourceLimit $ResourceLimit
- * @property list<EndpointInputConfiguration> $EndpointConfigurations
- * @property string $VolumeKmsKeyId
- * @property RecommendationJobContainerConfig $ContainerConfig
- * @property list<EndpointInfo> $Endpoints
- * @property RecommendationJobVpcConfig $VpcConfig
+ * @property string|null $ModelPackageVersionArn
+ * @property string|null $ModelName
+ * @property int<1, max>|null $JobDurationInSeconds
+ * @property TrafficPattern|null $TrafficPattern
+ * @property RecommendationJobResourceLimit|null $ResourceLimit
+ * @property list<EndpointInputConfiguration>|null $EndpointConfigurations
+ * @property string|null $VolumeKmsKeyId
+ * @property RecommendationJobContainerConfig|null $ContainerConfig
+ * @property list<EndpointInfo>|null $Endpoints
+ * @property RecommendationJobVpcConfig|null $VpcConfig
  */
 class RecommendationJobInputConfig extends Shape
 {
     /**
      * @param array{
-     *     ModelPackageVersionArn?: string,
-     *     ModelName?: string,
-     *     JobDurationInSeconds?: int<1, max>,
-     *     TrafficPattern?: TrafficPattern,
-     *     ResourceLimit?: RecommendationJobResourceLimit,
-     *     EndpointConfigurations?: list<EndpointInputConfiguration>,
-     *     VolumeKmsKeyId?: string,
-     *     ContainerConfig?: RecommendationJobContainerConfig,
-     *     Endpoints?: list<EndpointInfo>,
-     *     VpcConfig?: RecommendationJobVpcConfig
+     *     ModelPackageVersionArn?: string|null,
+     *     ModelName?: string|null,
+     *     JobDurationInSeconds?: int<1, max>|null,
+     *     TrafficPattern?: TrafficPattern|null,
+     *     ResourceLimit?: RecommendationJobResourceLimit|null,
+     *     EndpointConfigurations?: list<EndpointInputConfiguration>|null,
+     *     VolumeKmsKeyId?: string|null,
+     *     ContainerConfig?: RecommendationJobContainerConfig|null,
+     *     Endpoints?: list<EndpointInfo>|null,
+     *     VpcConfig?: RecommendationJobVpcConfig|null
      * } $args
      */
     public function __construct(array $args = [])

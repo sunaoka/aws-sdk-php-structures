@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $jobId
- * @property JobAttachmentSettings $jobAttachmentSettings
- * @property JobRunAsUser $jobRunAsUser
+ * @property JobAttachmentSettings|null $jobAttachmentSettings
+ * @property JobRunAsUser|null $jobRunAsUser
  * @property string $logGroupName
- * @property string $queueRoleArn
- * @property array<string, JobParameter> $parameters
+ * @property string|null $queueRoleArn
+ * @property array<string, JobParameter>|null $parameters
  * @property string $schemaVersion
- * @property list<PathMappingRule> $pathMappingRules
+ * @property list<PathMappingRule>|null $pathMappingRules
  */
 class JobDetailsEntity extends Shape
 {
     /**
      * @param array{
      *     jobId: string,
-     *     jobAttachmentSettings?: JobAttachmentSettings,
-     *     jobRunAsUser?: JobRunAsUser,
+     *     jobAttachmentSettings?: JobAttachmentSettings|null,
+     *     jobRunAsUser?: JobRunAsUser|null,
      *     logGroupName: string,
-     *     queueRoleArn?: string,
-     *     parameters?: array<string, JobParameter>,
+     *     queueRoleArn?: string|null,
+     *     parameters?: array<string, JobParameter>|null,
      *     schemaVersion: string,
-     *     pathMappingRules?: list<PathMappingRule>
+     *     pathMappingRules?: list<PathMappingRule>|null
      * } $args
      */
     public function __construct(array $args)

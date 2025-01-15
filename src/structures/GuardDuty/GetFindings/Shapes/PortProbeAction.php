@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Blocked
- * @property list<PortProbeDetail> $PortProbeDetails
+ * @property bool|null $Blocked
+ * @property list<PortProbeDetail>|null $PortProbeDetails
  */
 class PortProbeAction extends Shape
 {
     /**
      * @param array{
-     *     Blocked?: bool,
-     *     PortProbeDetails?: list<PortProbeDetail>
+     *     Blocked?: bool|null,
+     *     PortProbeDetails?: list<PortProbeDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property string $TemplateName
- * @property string $EnvironmentName
+ * @property string|null $TemplateName
+ * @property string|null $EnvironmentName
  * @property list<Shapes\ConfigurationOptionSetting> $OptionSettings
  */
 class ValidateConfigurationSettingsRequest extends Request
@@ -15,8 +15,8 @@ class ValidateConfigurationSettingsRequest extends Request
     /**
      * @param array{
      *     ApplicationName: string,
-     *     TemplateName?: string,
-     *     EnvironmentName?: string,
+     *     TemplateName?: string|null,
+     *     EnvironmentName?: string|null,
      *     OptionSettings: list<Shapes\ConfigurationOptionSetting>
      * } $args
      */

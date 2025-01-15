@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\GetSubject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $enabled
- * @property bool $failed
- * @property string $issuer
- * @property \Aws\Api\DateTimeResult $seenAt
- * @property string $serialNumber
- * @property string $x509CertificateData
+ * @property bool|null $enabled
+ * @property bool|null $failed
+ * @property string|null $issuer
+ * @property \Aws\Api\DateTimeResult|null $seenAt
+ * @property string|null $serialNumber
+ * @property string|null $x509CertificateData
  */
 class CredentialSummary extends Shape
 {
     /**
      * @param array{
-     *     enabled?: bool,
-     *     failed?: bool,
-     *     issuer?: string,
-     *     seenAt?: \Aws\Api\DateTimeResult,
-     *     serialNumber?: string,
-     *     x509CertificateData?: string
+     *     enabled?: bool|null,
+     *     failed?: bool|null,
+     *     issuer?: string|null,
+     *     seenAt?: \Aws\Api\DateTimeResult|null,
+     *     serialNumber?: string|null,
+     *     x509CertificateData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

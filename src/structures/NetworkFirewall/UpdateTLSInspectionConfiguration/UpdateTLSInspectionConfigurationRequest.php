@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateTLSInspectionConfiguratio
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TLSInspectionConfigurationArn
- * @property string $TLSInspectionConfigurationName
+ * @property string|null $TLSInspectionConfigurationArn
+ * @property string|null $TLSInspectionConfigurationName
  * @property Shapes\TLSInspectionConfiguration $TLSInspectionConfiguration
- * @property string $Description
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
+ * @property string|null $Description
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  * @property string $UpdateToken
  */
 class UpdateTLSInspectionConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     TLSInspectionConfigurationArn?: string,
-     *     TLSInspectionConfigurationName?: string,
+     *     TLSInspectionConfigurationArn?: string|null,
+     *     TLSInspectionConfigurationName?: string|null,
      *     TLSInspectionConfiguration: Shapes\TLSInspectionConfiguration,
-     *     Description?: string,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration,
+     *     Description?: string|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,
      *     UpdateToken: string
      * } $args
      */

@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateFirewallDescription;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FirewallArn
- * @property string $FirewallName
- * @property string $Description
- * @property string $UpdateToken
+ * @property string|null $FirewallArn
+ * @property string|null $FirewallName
+ * @property string|null $Description
+ * @property string|null $UpdateToken
  */
 class UpdateFirewallDescriptionResponse extends Response
 {

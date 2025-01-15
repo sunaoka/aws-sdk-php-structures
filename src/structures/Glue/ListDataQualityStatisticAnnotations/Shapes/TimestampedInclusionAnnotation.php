@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\ListDataQualityStatisticAnnotations\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INCLUDE'|'EXCLUDE' $Value
- * @property \Aws\Api\DateTimeResult $LastModifiedOn
+ * @property 'INCLUDE'|'EXCLUDE'|null $Value
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedOn
  */
 class TimestampedInclusionAnnotation extends Shape
 {
     /**
      * @param array{
-     *     Value?: 'INCLUDE'|'EXCLUDE',
-     *     LastModifiedOn?: \Aws\Api\DateTimeResult
+     *     Value?: 'INCLUDE'|'EXCLUDE'|null,
+     *     LastModifiedOn?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

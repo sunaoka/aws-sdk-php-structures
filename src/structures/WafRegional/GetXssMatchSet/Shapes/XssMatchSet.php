@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $XssMatchSetId
- * @property string $Name
+ * @property string|null $Name
  * @property list<XssMatchTuple> $XssMatchTuples
  */
 class XssMatchSet extends Shape
@@ -14,7 +14,7 @@ class XssMatchSet extends Shape
     /**
      * @param array{
      *     XssMatchSetId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     XssMatchTuples: list<XssMatchTuple>
      * } $args
      */

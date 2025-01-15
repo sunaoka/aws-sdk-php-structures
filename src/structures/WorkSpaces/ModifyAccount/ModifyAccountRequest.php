@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\ModifyAccount;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ENABLED' $DedicatedTenancySupport
- * @property string $DedicatedTenancyManagementCidrRange
+ * @property 'ENABLED'|null $DedicatedTenancySupport
+ * @property string|null $DedicatedTenancyManagementCidrRange
  */
 class ModifyAccountRequest extends Request
 {
     /**
      * @param array{
-     *     DedicatedTenancySupport?: 'ENABLED',
-     *     DedicatedTenancyManagementCidrRange?: string
+     *     DedicatedTenancySupport?: 'ENABLED'|null,
+     *     DedicatedTenancyManagementCidrRange?: string|null
      * } $args
      */
     public function __construct(array $args = [])

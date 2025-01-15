@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $workspaceId
  * @property string $arn
- * @property string $description
- * @property list<string> $linkedServices
- * @property string $s3Location
- * @property string $role
+ * @property string|null $description
+ * @property list<string>|null $linkedServices
+ * @property string|null $s3Location
+ * @property string|null $role
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
  */

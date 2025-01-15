@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\ReplaceImageCriteriaInAllowedImagesSettings
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ImageProviders
+ * @property list<string>|null $ImageProviders
  */
 class ImageCriterionRequest extends Shape
 {
     /**
-     * @param array{ImageProviders?: list<string>} $args
+     * @param array{ImageProviders?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

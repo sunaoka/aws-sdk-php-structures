@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\StackResourceDrift> $StackResourceDrifts
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeStackResourceDriftsResponse extends Response
 {

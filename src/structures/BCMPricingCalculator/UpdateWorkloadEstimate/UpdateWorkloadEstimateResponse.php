@@ -6,15 +6,15 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $id
- * @property string $name
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $expiresAt
- * @property 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS' $rateType
- * @property \Aws\Api\DateTimeResult $rateTimestamp
- * @property 'UPDATING'|'VALID'|'INVALID'|'ACTION_NEEDED' $status
- * @property double $totalCost
- * @property 'USD' $costCurrency
- * @property string $failureMessage
+ * @property string|null $name
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $expiresAt
+ * @property 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|null $rateType
+ * @property \Aws\Api\DateTimeResult|null $rateTimestamp
+ * @property 'UPDATING'|'VALID'|'INVALID'|'ACTION_NEEDED'|null $status
+ * @property double|null $totalCost
+ * @property 'USD'|null $costCurrency
+ * @property string|null $failureMessage
  */
 class UpdateWorkloadEstimateResponse extends Response
 {

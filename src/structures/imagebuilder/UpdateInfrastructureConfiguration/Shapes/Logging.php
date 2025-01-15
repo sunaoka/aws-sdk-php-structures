@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\imagebuilder\UpdateInfrastructureConfiguration\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Logs $s3Logs
+ * @property S3Logs|null $s3Logs
  */
 class Logging extends Shape
 {
     /**
-     * @param array{s3Logs?: S3Logs} $args
+     * @param array{s3Logs?: S3Logs|null} $args
      */
     public function __construct(array $args = [])
     {

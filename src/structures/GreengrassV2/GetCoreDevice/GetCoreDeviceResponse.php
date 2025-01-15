@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\GetCoreDevice;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $coreDeviceThingName
- * @property string $coreVersion
- * @property string $platform
- * @property string $architecture
- * @property string $runtime
- * @property 'HEALTHY'|'UNHEALTHY' $status
- * @property \Aws\Api\DateTimeResult $lastStatusUpdateTimestamp
- * @property array<string, string> $tags
+ * @property string|null $coreDeviceThingName
+ * @property string|null $coreVersion
+ * @property string|null $platform
+ * @property string|null $architecture
+ * @property string|null $runtime
+ * @property 'HEALTHY'|'UNHEALTHY'|null $status
+ * @property \Aws\Api\DateTimeResult|null $lastStatusUpdateTimestamp
+ * @property array<string, string>|null $tags
  */
 class GetCoreDeviceResponse extends Response
 {

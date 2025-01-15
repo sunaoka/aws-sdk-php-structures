@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\ListCustomRoutingPortMappings
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpAddress
- * @property int<1, 65535> $Port
+ * @property string|null $IpAddress
+ * @property int<1, 65535>|null $Port
  */
 class SocketAddress extends Shape
 {
     /**
      * @param array{
-     *     IpAddress?: string,
-     *     Port?: int<1, 65535>
+     *     IpAddress?: string|null,
+     *     Port?: int<1, 65535>|null
      * } $args
      */
     public function __construct(array $args = [])

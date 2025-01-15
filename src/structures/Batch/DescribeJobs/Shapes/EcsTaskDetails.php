@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<TaskContainerDetails> $containers
- * @property string $containerInstanceArn
- * @property string $taskArn
- * @property EphemeralStorage $ephemeralStorage
- * @property string $executionRoleArn
- * @property string $platformVersion
- * @property string $ipcMode
- * @property string $taskRoleArn
- * @property string $pidMode
- * @property NetworkConfiguration $networkConfiguration
- * @property RuntimePlatform $runtimePlatform
- * @property list<Volume> $volumes
+ * @property list<TaskContainerDetails>|null $containers
+ * @property string|null $containerInstanceArn
+ * @property string|null $taskArn
+ * @property EphemeralStorage|null $ephemeralStorage
+ * @property string|null $executionRoleArn
+ * @property string|null $platformVersion
+ * @property string|null $ipcMode
+ * @property string|null $taskRoleArn
+ * @property string|null $pidMode
+ * @property NetworkConfiguration|null $networkConfiguration
+ * @property RuntimePlatform|null $runtimePlatform
+ * @property list<Volume>|null $volumes
  */
 class EcsTaskDetails extends Shape
 {
     /**
      * @param array{
-     *     containers?: list<TaskContainerDetails>,
-     *     containerInstanceArn?: string,
-     *     taskArn?: string,
-     *     ephemeralStorage?: EphemeralStorage,
-     *     executionRoleArn?: string,
-     *     platformVersion?: string,
-     *     ipcMode?: string,
-     *     taskRoleArn?: string,
-     *     pidMode?: string,
-     *     networkConfiguration?: NetworkConfiguration,
-     *     runtimePlatform?: RuntimePlatform,
-     *     volumes?: list<Volume>
+     *     containers?: list<TaskContainerDetails>|null,
+     *     containerInstanceArn?: string|null,
+     *     taskArn?: string|null,
+     *     ephemeralStorage?: EphemeralStorage|null,
+     *     executionRoleArn?: string|null,
+     *     platformVersion?: string|null,
+     *     ipcMode?: string|null,
+     *     taskRoleArn?: string|null,
+     *     pidMode?: string|null,
+     *     networkConfiguration?: NetworkConfiguration|null,
+     *     runtimePlatform?: RuntimePlatform|null,
+     *     volumes?: list<Volume>|null
      * } $args
      */
     public function __construct(array $args = [])

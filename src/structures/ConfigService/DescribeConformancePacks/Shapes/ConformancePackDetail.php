@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConformancePackName
  * @property string $ConformancePackArn
  * @property string $ConformancePackId
- * @property string $DeliveryS3Bucket
- * @property string $DeliveryS3KeyPrefix
- * @property list<ConformancePackInputParameter> $ConformancePackInputParameters
- * @property \Aws\Api\DateTimeResult $LastUpdateRequestedTime
- * @property string $CreatedBy
- * @property TemplateSSMDocumentDetails $TemplateSSMDocumentDetails
+ * @property string|null $DeliveryS3Bucket
+ * @property string|null $DeliveryS3KeyPrefix
+ * @property list<ConformancePackInputParameter>|null $ConformancePackInputParameters
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateRequestedTime
+ * @property string|null $CreatedBy
+ * @property TemplateSSMDocumentDetails|null $TemplateSSMDocumentDetails
  */
 class ConformancePackDetail extends Shape
 {
@@ -22,12 +22,12 @@ class ConformancePackDetail extends Shape
      *     ConformancePackName: string,
      *     ConformancePackArn: string,
      *     ConformancePackId: string,
-     *     DeliveryS3Bucket?: string,
-     *     DeliveryS3KeyPrefix?: string,
-     *     ConformancePackInputParameters?: list<ConformancePackInputParameter>,
-     *     LastUpdateRequestedTime?: \Aws\Api\DateTimeResult,
-     *     CreatedBy?: string,
-     *     TemplateSSMDocumentDetails?: TemplateSSMDocumentDetails
+     *     DeliveryS3Bucket?: string|null,
+     *     DeliveryS3KeyPrefix?: string|null,
+     *     ConformancePackInputParameters?: list<ConformancePackInputParameter>|null,
+     *     LastUpdateRequestedTime?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: string|null,
+     *     TemplateSSMDocumentDetails?: TemplateSSMDocumentDetails|null
      * } $args
      */
     public function __construct(array $args)

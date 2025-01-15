@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BLOCKED'|'ALLOWED' $PublicAclAccess
- * @property 'BLOCKED'|'ALLOWED' $PublicPolicyAccess
- * @property 'IGNORED'|'NOT_IGNORED' $PublicAclIgnoreBehavior
- * @property 'RESTRICTED'|'NOT_RESTRICTED' $PublicBucketRestrictBehavior
+ * @property 'BLOCKED'|'ALLOWED'|null $PublicAclAccess
+ * @property 'BLOCKED'|'ALLOWED'|null $PublicPolicyAccess
+ * @property 'IGNORED'|'NOT_IGNORED'|null $PublicAclIgnoreBehavior
+ * @property 'RESTRICTED'|'NOT_RESTRICTED'|null $PublicBucketRestrictBehavior
  */
 class PublicAccessConfiguration extends Shape
 {
     /**
      * @param array{
-     *     PublicAclAccess?: 'BLOCKED'|'ALLOWED',
-     *     PublicPolicyAccess?: 'BLOCKED'|'ALLOWED',
-     *     PublicAclIgnoreBehavior?: 'IGNORED'|'NOT_IGNORED',
-     *     PublicBucketRestrictBehavior?: 'RESTRICTED'|'NOT_RESTRICTED'
+     *     PublicAclAccess?: 'BLOCKED'|'ALLOWED'|null,
+     *     PublicPolicyAccess?: 'BLOCKED'|'ALLOWED'|null,
+     *     PublicAclIgnoreBehavior?: 'IGNORED'|'NOT_IGNORED'|null,
+     *     PublicBucketRestrictBehavior?: 'RESTRICTED'|'NOT_RESTRICTED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProjectName
- * @property string $ProjectDescription
+ * @property string|null $ProjectDescription
  * @property Shapes\ServiceCatalogProvisioningDetails $ServiceCatalogProvisioningDetails
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateProjectRequest extends Request
 {
     /**
      * @param array{
      *     ProjectName: string,
-     *     ProjectDescription?: string,
+     *     ProjectDescription?: string|null,
      *     ServiceCatalogProvisioningDetails: Shapes\ServiceCatalogProvisioningDetails,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

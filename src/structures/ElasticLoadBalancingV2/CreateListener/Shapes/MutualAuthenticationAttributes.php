@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\CreateListener\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Mode
- * @property string $TrustStoreArn
- * @property bool $IgnoreClientCertificateExpiry
- * @property 'active'|'removed' $TrustStoreAssociationStatus
- * @property 'on'|'off' $AdvertiseTrustStoreCaNames
+ * @property string|null $Mode
+ * @property string|null $TrustStoreArn
+ * @property bool|null $IgnoreClientCertificateExpiry
+ * @property 'active'|'removed'|null $TrustStoreAssociationStatus
+ * @property 'on'|'off'|null $AdvertiseTrustStoreCaNames
  */
 class MutualAuthenticationAttributes extends Shape
 {
     /**
      * @param array{
-     *     Mode?: string,
-     *     TrustStoreArn?: string,
-     *     IgnoreClientCertificateExpiry?: bool,
-     *     TrustStoreAssociationStatus?: 'active'|'removed',
-     *     AdvertiseTrustStoreCaNames?: 'on'|'off'
+     *     Mode?: string|null,
+     *     TrustStoreArn?: string|null,
+     *     IgnoreClientCertificateExpiry?: bool|null,
+     *     TrustStoreAssociationStatus?: 'active'|'removed'|null,
+     *     AdvertiseTrustStoreCaNames?: 'on'|'off'|null
      * } $args
      */
     public function __construct(array $args = [])

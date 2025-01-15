@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Bedrock\ListModelImportJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property \Aws\Api\DateTimeResult $creationTimeAfter
- * @property \Aws\Api\DateTimeResult $creationTimeBefore
- * @property 'InProgress'|'Completed'|'Failed' $statusEquals
- * @property string $nameContains
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
- * @property 'CreationTime' $sortBy
- * @property 'Ascending'|'Descending' $sortOrder
+ * @property \Aws\Api\DateTimeResult|null $creationTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $creationTimeBefore
+ * @property 'InProgress'|'Completed'|'Failed'|null $statusEquals
+ * @property string|null $nameContains
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
+ * @property 'CreationTime'|null $sortBy
+ * @property 'Ascending'|'Descending'|null $sortOrder
  */
 class ListModelImportJobsRequest extends Request
 {
     /**
      * @param array{
-     *     creationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     creationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     statusEquals?: 'InProgress'|'Completed'|'Failed',
-     *     nameContains?: string,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string,
-     *     sortBy?: 'CreationTime',
-     *     sortOrder?: 'Ascending'|'Descending'
+     *     creationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     creationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     statusEquals?: 'InProgress'|'Completed'|'Failed'|null,
+     *     nameContains?: string|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null,
+     *     sortBy?: 'CreationTime'|null,
+     *     sortOrder?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args = [])

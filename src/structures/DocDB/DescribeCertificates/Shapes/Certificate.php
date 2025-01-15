@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DocDB\DescribeCertificates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateIdentifier
- * @property string $CertificateType
- * @property string $Thumbprint
- * @property \Aws\Api\DateTimeResult $ValidFrom
- * @property \Aws\Api\DateTimeResult $ValidTill
- * @property string $CertificateArn
+ * @property string|null $CertificateIdentifier
+ * @property string|null $CertificateType
+ * @property string|null $Thumbprint
+ * @property \Aws\Api\DateTimeResult|null $ValidFrom
+ * @property \Aws\Api\DateTimeResult|null $ValidTill
+ * @property string|null $CertificateArn
  */
 class Certificate extends Shape
 {
     /**
      * @param array{
-     *     CertificateIdentifier?: string,
-     *     CertificateType?: string,
-     *     Thumbprint?: string,
-     *     ValidFrom?: \Aws\Api\DateTimeResult,
-     *     ValidTill?: \Aws\Api\DateTimeResult,
-     *     CertificateArn?: string
+     *     CertificateIdentifier?: string|null,
+     *     CertificateType?: string|null,
+     *     Thumbprint?: string|null,
+     *     ValidFrom?: \Aws\Api\DateTimeResult|null,
+     *     ValidTill?: \Aws\Api\DateTimeResult|null,
+     *     CertificateArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

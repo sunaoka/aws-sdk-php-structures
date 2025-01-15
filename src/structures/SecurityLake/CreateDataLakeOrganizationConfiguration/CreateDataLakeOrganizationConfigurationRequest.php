@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityLake\CreateDataLakeOrganizationConfigur
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\DataLakeAutoEnableNewAccountConfiguration> $autoEnableNewAccount
+ * @property list<Shapes\DataLakeAutoEnableNewAccountConfiguration>|null $autoEnableNewAccount
  */
 class CreateDataLakeOrganizationConfigurationRequest extends Request
 {
     /**
-     * @param array{autoEnableNewAccount?: list<Shapes\DataLakeAutoEnableNewAccountConfiguration>} $args
+     * @param array{autoEnableNewAccount?: list<Shapes\DataLakeAutoEnableNewAccountConfiguration>|null} $args
      */
     public function __construct(array $args = [])
     {

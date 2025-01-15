@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTrustStoreRevoca
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrustStoreArn
- * @property int $RevocationId
- * @property 'CRL' $RevocationType
- * @property int $NumberOfRevokedEntries
+ * @property string|null $TrustStoreArn
+ * @property int|null $RevocationId
+ * @property 'CRL'|null $RevocationType
+ * @property int|null $NumberOfRevokedEntries
  */
 class DescribeTrustStoreRevocation extends Shape
 {
     /**
      * @param array{
-     *     TrustStoreArn?: string,
-     *     RevocationId?: int,
-     *     RevocationType?: 'CRL',
-     *     NumberOfRevokedEntries?: int
+     *     TrustStoreArn?: string|null,
+     *     RevocationId?: int|null,
+     *     RevocationType?: 'CRL'|null,
+     *     NumberOfRevokedEntries?: int|null
      * } $args
      */
     public function __construct(array $args = [])

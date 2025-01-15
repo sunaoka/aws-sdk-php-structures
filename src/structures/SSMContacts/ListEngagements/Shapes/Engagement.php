@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EngagementArn
  * @property string $ContactArn
  * @property string $Sender
- * @property string $IncidentId
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $StopTime
+ * @property string|null $IncidentId
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $StopTime
  */
 class Engagement extends Shape
 {
@@ -19,9 +19,9 @@ class Engagement extends Shape
      *     EngagementArn: string,
      *     ContactArn: string,
      *     Sender: string,
-     *     IncidentId?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     StopTime?: \Aws\Api\DateTimeResult
+     *     IncidentId?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     StopTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

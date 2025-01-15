@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Health\DescribeEventsForOrganization\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $from
- * @property \Aws\Api\DateTimeResult $to
+ * @property \Aws\Api\DateTimeResult|null $from
+ * @property \Aws\Api\DateTimeResult|null $to
  */
 class DateTimeRange extends Shape
 {
     /**
      * @param array{
-     *     from?: \Aws\Api\DateTimeResult,
-     *     to?: \Aws\Api\DateTimeResult
+     *     from?: \Aws\Api\DateTimeResult|null,
+     *     to?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

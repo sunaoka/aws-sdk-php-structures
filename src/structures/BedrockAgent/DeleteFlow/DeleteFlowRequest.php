@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $flowIdentifier
- * @property bool $skipResourceInUseCheck
+ * @property bool|null $skipResourceInUseCheck
  */
 class DeleteFlowRequest extends Request
 {
     /**
      * @param array{
      *     flowIdentifier: string,
-     *     skipResourceInUseCheck?: bool
+     *     skipResourceInUseCheck?: bool|null
      * } $args
      */
     public function __construct(array $args)

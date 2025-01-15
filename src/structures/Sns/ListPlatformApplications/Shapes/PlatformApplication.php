@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Sns\ListPlatformApplications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlatformApplicationArn
- * @property array<string, string> $Attributes
+ * @property string|null $PlatformApplicationArn
+ * @property array<string, string>|null $Attributes
  */
 class PlatformApplication extends Shape
 {
     /**
      * @param array{
-     *     PlatformApplicationArn?: string,
-     *     Attributes?: array<string, string>
+     *     PlatformApplicationArn?: string|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

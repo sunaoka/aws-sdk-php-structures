@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoice\SendVoiceMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LanguageCode
- * @property string $Text
- * @property string $VoiceId
+ * @property string|null $LanguageCode
+ * @property string|null $Text
+ * @property string|null $VoiceId
  */
 class SSMLMessageType extends Shape
 {
     /**
      * @param array{
-     *     LanguageCode?: string,
-     *     Text?: string,
-     *     VoiceId?: string
+     *     LanguageCode?: string|null,
+     *     Text?: string|null,
+     *     VoiceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

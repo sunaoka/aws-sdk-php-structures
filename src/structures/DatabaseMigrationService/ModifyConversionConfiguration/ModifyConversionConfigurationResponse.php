@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyConversionConfig
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $MigrationProjectIdentifier
+ * @property string|null $MigrationProjectIdentifier
  */
 class ModifyConversionConfigurationResponse extends Response
 {

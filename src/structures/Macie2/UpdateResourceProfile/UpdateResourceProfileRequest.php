@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $resourceArn
- * @property int $sensitivityScoreOverride
+ * @property int|null $sensitivityScoreOverride
  */
 class UpdateResourceProfileRequest extends Request
 {
     /**
      * @param array{
      *     resourceArn: string,
-     *     sensitivityScoreOverride?: int
+     *     sensitivityScoreOverride?: int|null
      * } $args
      */
     public function __construct(array $args)

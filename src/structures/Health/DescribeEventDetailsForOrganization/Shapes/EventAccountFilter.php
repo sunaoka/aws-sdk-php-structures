@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $eventArn
- * @property string $awsAccountId
+ * @property string|null $awsAccountId
  */
 class EventAccountFilter extends Shape
 {
     /**
      * @param array{
      *     eventArn: string,
-     *     awsAccountId?: string
+     *     awsAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

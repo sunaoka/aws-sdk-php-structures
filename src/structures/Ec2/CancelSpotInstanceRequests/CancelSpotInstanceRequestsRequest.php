@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\CancelSpotInstanceRequests;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property list<string> $SpotInstanceRequestIds
  */
 class CancelSpotInstanceRequestsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     SpotInstanceRequestIds: list<string>
      * } $args
      */

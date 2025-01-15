@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $HumanLoopName
  * @property string $FlowDefinitionArn
- * @property HumanLoopDataAttributes $DataAttributes
+ * @property HumanLoopDataAttributes|null $DataAttributes
  */
 class HumanLoopConfig extends Shape
 {
@@ -15,7 +15,7 @@ class HumanLoopConfig extends Shape
      * @param array{
      *     HumanLoopName: string,
      *     FlowDefinitionArn: string,
-     *     DataAttributes?: HumanLoopDataAttributes
+     *     DataAttributes?: HumanLoopDataAttributes|null
      * } $args
      */
     public function __construct(array $args)

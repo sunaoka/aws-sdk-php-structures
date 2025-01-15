@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $width
- * @property int $height
+ * @property int|null $width
+ * @property int|null $height
  */
 class Resolution extends Shape
 {
     /**
      * @param array{
-     *     width?: int,
-     *     height?: int
+     *     width?: int|null,
+     *     height?: int|null
      * } $args
      */
     public function __construct(array $args = [])

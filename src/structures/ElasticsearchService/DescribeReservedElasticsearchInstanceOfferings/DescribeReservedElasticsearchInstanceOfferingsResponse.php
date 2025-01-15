@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeReservedElasticsea
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\ReservedElasticsearchInstanceOffering> $ReservedElasticsearchInstanceOfferings
+ * @property string|null $NextToken
+ * @property list<Shapes\ReservedElasticsearchInstanceOffering>|null $ReservedElasticsearchInstanceOfferings
  */
 class DescribeReservedElasticsearchInstanceOfferingsResponse extends Response
 {

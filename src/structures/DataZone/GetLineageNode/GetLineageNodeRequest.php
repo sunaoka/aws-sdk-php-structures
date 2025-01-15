@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property \Aws\Api\DateTimeResult $eventTimestamp
+ * @property \Aws\Api\DateTimeResult|null $eventTimestamp
  * @property string $identifier
  */
 class GetLineageNodeRequest extends Request
@@ -14,7 +14,7 @@ class GetLineageNodeRequest extends Request
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     eventTimestamp?: \Aws\Api\DateTimeResult,
+     *     eventTimestamp?: \Aws\Api\DateTimeResult|null,
      *     identifier: string
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RoboMaker\GetWorldTemplateBody;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $templateBody
+ * @property string|null $templateBody
  */
 class GetWorldTemplateBodyResponse extends Response
 {

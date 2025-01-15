@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $PhoneNumberArn
- * @property string $PhoneNumberId
+ * @property string|null $PhoneNumberId
  * @property string $PhoneNumber
  * @property 'PENDING'|'ACTIVE'|'ASSOCIATING'|'DISASSOCIATING'|'DELETED' $Status
  * @property string $IsoCountryCode
@@ -15,13 +15,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR' $NumberType
  * @property string $MonthlyLeasingPrice
  * @property bool $TwoWayEnabled
- * @property string $TwoWayChannelArn
- * @property string $TwoWayChannelRole
+ * @property string|null $TwoWayChannelArn
+ * @property string|null $TwoWayChannelRole
  * @property bool $SelfManagedOptOutsEnabled
  * @property string $OptOutListName
  * @property bool $DeletionProtectionEnabled
- * @property string $PoolId
- * @property string $RegistrationId
+ * @property string|null $PoolId
+ * @property string|null $RegistrationId
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  */
 class PhoneNumberInformation extends Shape
@@ -29,7 +29,7 @@ class PhoneNumberInformation extends Shape
     /**
      * @param array{
      *     PhoneNumberArn: string,
-     *     PhoneNumberId?: string,
+     *     PhoneNumberId?: string|null,
      *     PhoneNumber: string,
      *     Status: 'PENDING'|'ACTIVE'|'ASSOCIATING'|'DISASSOCIATING'|'DELETED',
      *     IsoCountryCode: string,
@@ -38,13 +38,13 @@ class PhoneNumberInformation extends Shape
      *     NumberType: 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR',
      *     MonthlyLeasingPrice: string,
      *     TwoWayEnabled: bool,
-     *     TwoWayChannelArn?: string,
-     *     TwoWayChannelRole?: string,
+     *     TwoWayChannelArn?: string|null,
+     *     TwoWayChannelRole?: string|null,
      *     SelfManagedOptOutsEnabled: bool,
      *     OptOutListName: string,
      *     DeletionProtectionEnabled: bool,
-     *     PoolId?: string,
-     *     RegistrationId?: string,
+     *     PoolId?: string|null,
+     *     RegistrationId?: string|null,
      *     CreatedTimestamp: \Aws\Api\DateTimeResult
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Identifier
- * @property string $Type
+ * @property string|null $Type
  */
 class TrafficSourceIdentifier extends Shape
 {
     /**
      * @param array{
      *     Identifier: string,
-     *     Type?: string
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args)

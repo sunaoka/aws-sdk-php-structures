@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\FSx\CreateDataRepositoryTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TotalCount
- * @property int $SucceededCount
- * @property int $FailedCount
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property int $ReleasedCapacity
+ * @property int|null $TotalCount
+ * @property int|null $SucceededCount
+ * @property int|null $FailedCount
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property int|null $ReleasedCapacity
  */
 class DataRepositoryTaskStatus extends Shape
 {
     /**
      * @param array{
-     *     TotalCount?: int,
-     *     SucceededCount?: int,
-     *     FailedCount?: int,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     ReleasedCapacity?: int
+     *     TotalCount?: int|null,
+     *     SucceededCount?: int|null,
+     *     FailedCount?: int|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     ReleasedCapacity?: int|null
      * } $args
      */
     public function __construct(array $args = [])

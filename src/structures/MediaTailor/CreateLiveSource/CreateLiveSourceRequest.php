@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\HttpPackageConfiguration> $HttpPackageConfigurations
  * @property string $LiveSourceName
  * @property string $SourceLocationName
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateLiveSourceRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateLiveSourceRequest extends Request
      *     HttpPackageConfigurations: list<Shapes\HttpPackageConfiguration>,
      *     LiveSourceName: string,
      *     SourceLocationName: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

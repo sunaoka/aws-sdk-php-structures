@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContactListName
- * @property list<Shapes\Topic> $Topics
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Topic>|null $Topics
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateContactListRequest extends Request
 {
     /**
      * @param array{
      *     ContactListName: string,
-     *     Topics?: list<Shapes\Topic>,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Topics?: list<Shapes\Topic>|null,
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

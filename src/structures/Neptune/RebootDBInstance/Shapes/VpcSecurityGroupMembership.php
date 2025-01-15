@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptune\RebootDBInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpcSecurityGroupId
- * @property string $Status
+ * @property string|null $VpcSecurityGroupId
+ * @property string|null $Status
  */
 class VpcSecurityGroupMembership extends Shape
 {
     /**
      * @param array{
-     *     VpcSecurityGroupId?: string,
-     *     Status?: string
+     *     VpcSecurityGroupId?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

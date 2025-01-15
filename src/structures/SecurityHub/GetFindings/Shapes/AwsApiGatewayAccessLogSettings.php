@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Format
- * @property string $DestinationArn
+ * @property string|null $Format
+ * @property string|null $DestinationArn
  */
 class AwsApiGatewayAccessLogSettings extends Shape
 {
     /**
      * @param array{
-     *     Format?: string,
-     *     DestinationArn?: string
+     *     Format?: string|null,
+     *     DestinationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

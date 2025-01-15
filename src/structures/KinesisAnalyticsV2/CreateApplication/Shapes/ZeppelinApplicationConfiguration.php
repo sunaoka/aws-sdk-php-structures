@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\CreateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ZeppelinMonitoringConfiguration $MonitoringConfiguration
- * @property CatalogConfiguration $CatalogConfiguration
- * @property DeployAsApplicationConfiguration $DeployAsApplicationConfiguration
- * @property list<CustomArtifactConfiguration> $CustomArtifactsConfiguration
+ * @property ZeppelinMonitoringConfiguration|null $MonitoringConfiguration
+ * @property CatalogConfiguration|null $CatalogConfiguration
+ * @property DeployAsApplicationConfiguration|null $DeployAsApplicationConfiguration
+ * @property list<CustomArtifactConfiguration>|null $CustomArtifactsConfiguration
  */
 class ZeppelinApplicationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     MonitoringConfiguration?: ZeppelinMonitoringConfiguration,
-     *     CatalogConfiguration?: CatalogConfiguration,
-     *     DeployAsApplicationConfiguration?: DeployAsApplicationConfiguration,
-     *     CustomArtifactsConfiguration?: list<CustomArtifactConfiguration>
+     *     MonitoringConfiguration?: ZeppelinMonitoringConfiguration|null,
+     *     CatalogConfiguration?: CatalogConfiguration|null,
+     *     DeployAsApplicationConfiguration?: DeployAsApplicationConfiguration|null,
+     *     CustomArtifactsConfiguration?: list<CustomArtifactConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetAggregateConformancePackCompli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AggregateConformancePackComplianceCount $ComplianceSummary
- * @property string $GroupName
+ * @property AggregateConformancePackComplianceCount|null $ComplianceSummary
+ * @property string|null $GroupName
  */
 class AggregateConformancePackComplianceSummary extends Shape
 {
     /**
      * @param array{
-     *     ComplianceSummary?: AggregateConformancePackComplianceCount,
-     *     GroupName?: string
+     *     ComplianceSummary?: AggregateConformancePackComplianceCount|null,
+     *     GroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

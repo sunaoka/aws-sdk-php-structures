@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Outposts\CreateOrder\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ShipmentTrackingNumber
- * @property 'DHL'|'DBS'|'FEDEX'|'UPS'|'EXPEDITORS' $ShipmentCarrier
+ * @property string|null $ShipmentTrackingNumber
+ * @property 'DHL'|'DBS'|'FEDEX'|'UPS'|'EXPEDITORS'|null $ShipmentCarrier
  */
 class ShipmentInformation extends Shape
 {
     /**
      * @param array{
-     *     ShipmentTrackingNumber?: string,
-     *     ShipmentCarrier?: 'DHL'|'DBS'|'FEDEX'|'UPS'|'EXPEDITORS'
+     *     ShipmentTrackingNumber?: string|null,
+     *     ShipmentCarrier?: 'DHL'|'DBS'|'FEDEX'|'UPS'|'EXPEDITORS'|null
      * } $args
      */
     public function __construct(array $args = [])

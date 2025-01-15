@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GetEffectivePermissionsForPath;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $ResourceArn
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class GetEffectivePermissionsForPathRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     ResourceArn: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

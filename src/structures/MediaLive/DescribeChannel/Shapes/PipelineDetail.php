@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ActiveInputAttachmentName
- * @property string $ActiveInputSwitchActionName
- * @property string $ActiveMotionGraphicsActionName
- * @property string $ActiveMotionGraphicsUri
- * @property string $PipelineId
- * @property ChannelEngineVersionResponse $ChannelEngineVersion
+ * @property string|null $ActiveInputAttachmentName
+ * @property string|null $ActiveInputSwitchActionName
+ * @property string|null $ActiveMotionGraphicsActionName
+ * @property string|null $ActiveMotionGraphicsUri
+ * @property string|null $PipelineId
+ * @property ChannelEngineVersionResponse|null $ChannelEngineVersion
  */
 class PipelineDetail extends Shape
 {
     /**
      * @param array{
-     *     ActiveInputAttachmentName?: string,
-     *     ActiveInputSwitchActionName?: string,
-     *     ActiveMotionGraphicsActionName?: string,
-     *     ActiveMotionGraphicsUri?: string,
-     *     PipelineId?: string,
-     *     ChannelEngineVersion?: ChannelEngineVersionResponse
+     *     ActiveInputAttachmentName?: string|null,
+     *     ActiveInputSwitchActionName?: string|null,
+     *     ActiveMotionGraphicsActionName?: string|null,
+     *     ActiveMotionGraphicsUri?: string|null,
+     *     PipelineId?: string|null,
+     *     ChannelEngineVersion?: ChannelEngineVersionResponse|null
      * } $args
      */
     public function __construct(array $args = [])

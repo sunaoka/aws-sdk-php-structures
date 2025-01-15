@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\ResponseHeadersPolicyConfig $ResponseHeadersPolicyConfig
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class UpdateResponseHeadersPolicyRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateResponseHeadersPolicyRequest extends Request
      * @param array{
      *     ResponseHeadersPolicyConfig: Shapes\ResponseHeadersPolicyConfig,
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

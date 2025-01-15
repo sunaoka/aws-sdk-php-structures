@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DBClusterIdentifier
  * @property string $DBClusterEndpointIdentifier
  * @property string $EndpointType
- * @property list<string> $StaticMembers
- * @property list<string> $ExcludedMembers
- * @property list<Shapes\Tag> $Tags
+ * @property list<string>|null $StaticMembers
+ * @property list<string>|null $ExcludedMembers
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDBClusterEndpointRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateDBClusterEndpointRequest extends Request
      *     DBClusterIdentifier: string,
      *     DBClusterEndpointIdentifier: string,
      *     EndpointType: string,
-     *     StaticMembers?: list<string>,
-     *     ExcludedMembers?: list<string>,
-     *     Tags?: list<Shapes\Tag>
+     *     StaticMembers?: list<string>|null,
+     *     ExcludedMembers?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

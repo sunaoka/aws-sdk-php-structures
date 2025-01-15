@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyDBRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<MetricReference> $References
- * @property string $StatisticsDetails
- * @property MetricQuery $MetricQuery
+ * @property string|null $Name
+ * @property list<MetricReference>|null $References
+ * @property string|null $StatisticsDetails
+ * @property MetricQuery|null $MetricQuery
  */
 class Metric extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     References?: list<MetricReference>,
-     *     StatisticsDetails?: string,
-     *     MetricQuery?: MetricQuery
+     *     Name?: string|null,
+     *     References?: list<MetricReference>|null,
+     *     StatisticsDetails?: string|null,
+     *     MetricQuery?: MetricQuery|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryReadiness\CreateCrossAccountAuth
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CrossAccountAuthorization
+ * @property string|null $CrossAccountAuthorization
  */
 class CreateCrossAccountAuthorizationResponse extends Response
 {

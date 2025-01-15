@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $AcceptLanguage
- * @property string $IdempotencyToken
+ * @property string|null $AcceptLanguage
+ * @property string|null $IdempotencyToken
  */
 class DeleteServiceActionRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     AcceptLanguage?: string,
-     *     IdempotencyToken?: string
+     *     AcceptLanguage?: string|null,
+     *     IdempotencyToken?: string|null
      * } $args
      */
     public function __construct(array $args)

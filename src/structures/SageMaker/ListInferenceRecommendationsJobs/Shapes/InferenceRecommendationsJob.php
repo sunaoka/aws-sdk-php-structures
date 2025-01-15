@@ -11,13 +11,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $JobArn
  * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED' $Status
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $CompletionTime
+ * @property \Aws\Api\DateTimeResult|null $CompletionTime
  * @property string $RoleArn
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $FailureReason
- * @property string $ModelName
- * @property string $SamplePayloadUrl
- * @property string $ModelPackageVersionArn
+ * @property string|null $FailureReason
+ * @property string|null $ModelName
+ * @property string|null $SamplePayloadUrl
+ * @property string|null $ModelPackageVersionArn
  */
 class InferenceRecommendationsJob extends Shape
 {
@@ -29,13 +29,13 @@ class InferenceRecommendationsJob extends Shape
      *     JobArn: string,
      *     Status: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED',
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     CompletionTime?: \Aws\Api\DateTimeResult,
+     *     CompletionTime?: \Aws\Api\DateTimeResult|null,
      *     RoleArn: string,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
-     *     FailureReason?: string,
-     *     ModelName?: string,
-     *     SamplePayloadUrl?: string,
-     *     ModelPackageVersionArn?: string
+     *     FailureReason?: string|null,
+     *     ModelName?: string|null,
+     *     SamplePayloadUrl?: string|null,
+     *     ModelPackageVersionArn?: string|null
      * } $args
      */
     public function __construct(array $args)

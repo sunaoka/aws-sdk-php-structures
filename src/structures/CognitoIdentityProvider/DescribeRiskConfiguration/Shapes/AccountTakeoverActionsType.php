@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeRiskConfigurati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccountTakeoverActionType $LowAction
- * @property AccountTakeoverActionType $MediumAction
- * @property AccountTakeoverActionType $HighAction
+ * @property AccountTakeoverActionType|null $LowAction
+ * @property AccountTakeoverActionType|null $MediumAction
+ * @property AccountTakeoverActionType|null $HighAction
  */
 class AccountTakeoverActionsType extends Shape
 {
     /**
      * @param array{
-     *     LowAction?: AccountTakeoverActionType,
-     *     MediumAction?: AccountTakeoverActionType,
-     *     HighAction?: AccountTakeoverActionType
+     *     LowAction?: AccountTakeoverActionType|null,
+     *     MediumAction?: AccountTakeoverActionType|null,
+     *     HighAction?: AccountTakeoverActionType|null
      * } $args
      */
     public function __construct(array $args = [])

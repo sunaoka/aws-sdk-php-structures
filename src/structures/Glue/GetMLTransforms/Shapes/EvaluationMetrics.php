@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'FIND_MATCHES' $TransformType
- * @property FindMatchesMetrics $FindMatchesMetrics
+ * @property FindMatchesMetrics|null $FindMatchesMetrics
  */
 class EvaluationMetrics extends Shape
 {
     /**
      * @param array{
      *     TransformType: 'FIND_MATCHES',
-     *     FindMatchesMetrics?: FindMatchesMetrics
+     *     FindMatchesMetrics?: FindMatchesMetrics|null
      * } $args
      */
     public function __construct(array $args)

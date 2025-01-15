@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Statement
- * @property list<AttributeValue> $Parameters
- * @property 'ALL_OLD'|'NONE' $ReturnValuesOnConditionCheckFailure
+ * @property list<AttributeValue>|null $Parameters
+ * @property 'ALL_OLD'|'NONE'|null $ReturnValuesOnConditionCheckFailure
  */
 class ParameterizedStatement extends Shape
 {
     /**
      * @param array{
      *     Statement: string,
-     *     Parameters?: list<AttributeValue>,
-     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'
+     *     Parameters?: list<AttributeValue>|null,
+     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLocalGatewayVirtualInterfaceGroups\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LocalGatewayVirtualInterfaceGroupId
- * @property list<string> $LocalGatewayVirtualInterfaceIds
- * @property string $LocalGatewayId
- * @property string $OwnerId
- * @property list<Tag> $Tags
+ * @property string|null $LocalGatewayVirtualInterfaceGroupId
+ * @property list<string>|null $LocalGatewayVirtualInterfaceIds
+ * @property string|null $LocalGatewayId
+ * @property string|null $OwnerId
+ * @property list<Tag>|null $Tags
  */
 class LocalGatewayVirtualInterfaceGroup extends Shape
 {
     /**
      * @param array{
-     *     LocalGatewayVirtualInterfaceGroupId?: string,
-     *     LocalGatewayVirtualInterfaceIds?: list<string>,
-     *     LocalGatewayId?: string,
-     *     OwnerId?: string,
-     *     Tags?: list<Tag>
+     *     LocalGatewayVirtualInterfaceGroupId?: string|null,
+     *     LocalGatewayVirtualInterfaceIds?: list<string>|null,
+     *     LocalGatewayId?: string|null,
+     *     OwnerId?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

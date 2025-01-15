@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeInstanceRefreshes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RollbackReason
- * @property \Aws\Api\DateTimeResult $RollbackStartTime
- * @property int<0, 100> $PercentageCompleteOnRollback
- * @property int<0, max> $InstancesToUpdateOnRollback
- * @property InstanceRefreshProgressDetails $ProgressDetailsOnRollback
+ * @property string|null $RollbackReason
+ * @property \Aws\Api\DateTimeResult|null $RollbackStartTime
+ * @property int<0, 100>|null $PercentageCompleteOnRollback
+ * @property int<0, max>|null $InstancesToUpdateOnRollback
+ * @property InstanceRefreshProgressDetails|null $ProgressDetailsOnRollback
  */
 class RollbackDetails extends Shape
 {
     /**
      * @param array{
-     *     RollbackReason?: string,
-     *     RollbackStartTime?: \Aws\Api\DateTimeResult,
-     *     PercentageCompleteOnRollback?: int<0, 100>,
-     *     InstancesToUpdateOnRollback?: int<0, max>,
-     *     ProgressDetailsOnRollback?: InstanceRefreshProgressDetails
+     *     RollbackReason?: string|null,
+     *     RollbackStartTime?: \Aws\Api\DateTimeResult|null,
+     *     PercentageCompleteOnRollback?: int<0, 100>|null,
+     *     InstancesToUpdateOnRollback?: int<0, max>|null,
+     *     ProgressDetailsOnRollback?: InstanceRefreshProgressDetails|null
      * } $args
      */
     public function __construct(array $args = [])

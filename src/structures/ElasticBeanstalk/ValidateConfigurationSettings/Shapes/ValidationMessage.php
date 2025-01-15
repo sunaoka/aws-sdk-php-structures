@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ValidateConfigurationSettings\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property 'error'|'warning' $Severity
- * @property string $Namespace
- * @property string $OptionName
+ * @property string|null $Message
+ * @property 'error'|'warning'|null $Severity
+ * @property string|null $Namespace
+ * @property string|null $OptionName
  */
 class ValidationMessage extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     Severity?: 'error'|'warning',
-     *     Namespace?: string,
-     *     OptionName?: string
+     *     Message?: string|null,
+     *     Severity?: 'error'|'warning'|null,
+     *     Namespace?: string|null,
+     *     OptionName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Greengrass\ListSubscriptionDefinitions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $MaxResults
- * @property string $NextToken
+ * @property string|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListSubscriptionDefinitionsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: string,
-     *     NextToken?: string
+     *     MaxResults?: string|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

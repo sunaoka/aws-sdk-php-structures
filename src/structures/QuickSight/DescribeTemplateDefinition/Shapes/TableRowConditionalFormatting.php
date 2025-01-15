@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConditionalFormattingColor $BackgroundColor
- * @property ConditionalFormattingColor $TextColor
+ * @property ConditionalFormattingColor|null $BackgroundColor
+ * @property ConditionalFormattingColor|null $TextColor
  */
 class TableRowConditionalFormatting extends Shape
 {
     /**
      * @param array{
-     *     BackgroundColor?: ConditionalFormattingColor,
-     *     TextColor?: ConditionalFormattingColor
+     *     BackgroundColor?: ConditionalFormattingColor|null,
+     *     TextColor?: ConditionalFormattingColor|null
      * } $args
      */
     public function __construct(array $args = [])

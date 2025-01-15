@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SsmSap\ListApplications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
- * @property list<Shapes\Filter> $Filters
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
+ * @property list<Shapes\Filter>|null $Filters
  */
 class ListApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>,
-     *     Filters?: list<Shapes\Filter>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

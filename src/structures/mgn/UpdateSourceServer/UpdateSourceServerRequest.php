@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\mgn\UpdateSourceServer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountID
- * @property Shapes\SourceServerConnectorAction $connectorAction
+ * @property string|null $accountID
+ * @property Shapes\SourceServerConnectorAction|null $connectorAction
  * @property string $sourceServerID
  */
 class UpdateSourceServerRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string,
-     *     connectorAction?: Shapes\SourceServerConnectorAction,
+     *     accountID?: string|null,
+     *     connectorAction?: Shapes\SourceServerConnectorAction|null,
      *     sourceServerID: string
      * } $args
      */

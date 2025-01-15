@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateFeatureGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VectorConfig $VectorConfig
+ * @property VectorConfig|null $VectorConfig
  */
 class CollectionConfig extends Shape
 {
     /**
-     * @param array{VectorConfig?: VectorConfig} $args
+     * @param array{VectorConfig?: VectorConfig|null} $args
      */
     public function __construct(array $args = [])
     {

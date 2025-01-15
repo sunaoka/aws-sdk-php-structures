@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ProvisionIpamPoolCidr\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'cidr-not-available'|'limit-exceeded' $Code
- * @property string $Message
+ * @property 'cidr-not-available'|'limit-exceeded'|null $Code
+ * @property string|null $Message
  */
 class IpamPoolCidrFailureReason extends Shape
 {
     /**
      * @param array{
-     *     Code?: 'cidr-not-available'|'limit-exceeded',
-     *     Message?: string
+     *     Code?: 'cidr-not-available'|'limit-exceeded'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

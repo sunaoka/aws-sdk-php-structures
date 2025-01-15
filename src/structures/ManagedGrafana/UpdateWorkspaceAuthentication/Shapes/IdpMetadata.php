@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\UpdateWorkspaceAuthentication\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $url
- * @property string $xml
+ * @property string|null $url
+ * @property string|null $xml
  */
 class IdpMetadata extends Shape
 {
     /**
      * @param array{
-     *     url?: string,
-     *     xml?: string
+     *     url?: string|null,
+     *     xml?: string|null
      * } $args
      */
     public function __construct(array $args = [])

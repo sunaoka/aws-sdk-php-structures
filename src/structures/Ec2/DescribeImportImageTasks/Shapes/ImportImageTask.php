@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeImportImageTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Architecture
- * @property string $Description
- * @property bool $Encrypted
- * @property string $Hypervisor
- * @property string $ImageId
- * @property string $ImportTaskId
- * @property string $KmsKeyId
- * @property string $LicenseType
- * @property string $Platform
- * @property string $Progress
- * @property list<SnapshotDetail> $SnapshotDetails
- * @property string $Status
- * @property string $StatusMessage
- * @property list<Tag> $Tags
- * @property list<ImportImageLicenseConfigurationResponse> $LicenseSpecifications
- * @property string $UsageOperation
- * @property 'legacy-bios'|'uefi'|'uefi-preferred' $BootMode
+ * @property string|null $Architecture
+ * @property string|null $Description
+ * @property bool|null $Encrypted
+ * @property string|null $Hypervisor
+ * @property string|null $ImageId
+ * @property string|null $ImportTaskId
+ * @property string|null $KmsKeyId
+ * @property string|null $LicenseType
+ * @property string|null $Platform
+ * @property string|null $Progress
+ * @property list<SnapshotDetail>|null $SnapshotDetails
+ * @property string|null $Status
+ * @property string|null $StatusMessage
+ * @property list<Tag>|null $Tags
+ * @property list<ImportImageLicenseConfigurationResponse>|null $LicenseSpecifications
+ * @property string|null $UsageOperation
+ * @property 'legacy-bios'|'uefi'|'uefi-preferred'|null $BootMode
  */
 class ImportImageTask extends Shape
 {
     /**
      * @param array{
-     *     Architecture?: string,
-     *     Description?: string,
-     *     Encrypted?: bool,
-     *     Hypervisor?: string,
-     *     ImageId?: string,
-     *     ImportTaskId?: string,
-     *     KmsKeyId?: string,
-     *     LicenseType?: string,
-     *     Platform?: string,
-     *     Progress?: string,
-     *     SnapshotDetails?: list<SnapshotDetail>,
-     *     Status?: string,
-     *     StatusMessage?: string,
-     *     Tags?: list<Tag>,
-     *     LicenseSpecifications?: list<ImportImageLicenseConfigurationResponse>,
-     *     UsageOperation?: string,
-     *     BootMode?: 'legacy-bios'|'uefi'|'uefi-preferred'
+     *     Architecture?: string|null,
+     *     Description?: string|null,
+     *     Encrypted?: bool|null,
+     *     Hypervisor?: string|null,
+     *     ImageId?: string|null,
+     *     ImportTaskId?: string|null,
+     *     KmsKeyId?: string|null,
+     *     LicenseType?: string|null,
+     *     Platform?: string|null,
+     *     Progress?: string|null,
+     *     SnapshotDetails?: list<SnapshotDetail>|null,
+     *     Status?: string|null,
+     *     StatusMessage?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     LicenseSpecifications?: list<ImportImageLicenseConfigurationResponse>|null,
+     *     UsageOperation?: string|null,
+     *     BootMode?: 'legacy-bios'|'uefi'|'uefi-preferred'|null
      * } $args
      */
     public function __construct(array $args = [])

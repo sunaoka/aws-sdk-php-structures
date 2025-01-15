@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $readSetId
  * @property 'NOT_STARTED'|'IN_PROGRESS'|'FINISHED'|'FAILED' $status
- * @property string $statusMessage
+ * @property string|null $statusMessage
  */
 class ActivateReadSetSourceItem extends Shape
 {
@@ -15,7 +15,7 @@ class ActivateReadSetSourceItem extends Shape
      * @param array{
      *     readSetId: string,
      *     status: 'NOT_STARTED'|'IN_PROGRESS'|'FINISHED'|'FAILED',
-     *     statusMessage?: string
+     *     statusMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

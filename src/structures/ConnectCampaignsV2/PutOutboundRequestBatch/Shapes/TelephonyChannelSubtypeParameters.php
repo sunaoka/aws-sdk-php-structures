@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $destinationPhoneNumber
  * @property array<string, string> $attributes
- * @property string $connectSourcePhoneNumber
- * @property AnswerMachineDetectionConfig $answerMachineDetectionConfig
+ * @property string|null $connectSourcePhoneNumber
+ * @property AnswerMachineDetectionConfig|null $answerMachineDetectionConfig
  */
 class TelephonyChannelSubtypeParameters extends Shape
 {
@@ -16,8 +16,8 @@ class TelephonyChannelSubtypeParameters extends Shape
      * @param array{
      *     destinationPhoneNumber: string,
      *     attributes: array<string, string>,
-     *     connectSourcePhoneNumber?: string,
-     *     answerMachineDetectionConfig?: AnswerMachineDetectionConfig
+     *     connectSourcePhoneNumber?: string|null,
+     *     answerMachineDetectionConfig?: AnswerMachineDetectionConfig|null
      * } $args
      */
     public function __construct(array $args)

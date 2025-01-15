@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\QuickSight\PredictQAResults\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DashboardId
- * @property string $DashboardName
- * @property string $SheetId
- * @property string $SheetName
- * @property string $VisualId
- * @property string $VisualTitle
- * @property string $VisualSubtitle
- * @property string $DashboardUrl
+ * @property string|null $DashboardId
+ * @property string|null $DashboardName
+ * @property string|null $SheetId
+ * @property string|null $SheetName
+ * @property string|null $VisualId
+ * @property string|null $VisualTitle
+ * @property string|null $VisualSubtitle
+ * @property string|null $DashboardUrl
  */
 class DashboardVisualResult extends Shape
 {
     /**
      * @param array{
-     *     DashboardId?: string,
-     *     DashboardName?: string,
-     *     SheetId?: string,
-     *     SheetName?: string,
-     *     VisualId?: string,
-     *     VisualTitle?: string,
-     *     VisualSubtitle?: string,
-     *     DashboardUrl?: string
+     *     DashboardId?: string|null,
+     *     DashboardName?: string|null,
+     *     SheetId?: string|null,
+     *     SheetName?: string|null,
+     *     VisualId?: string|null,
+     *     VisualTitle?: string|null,
+     *     VisualSubtitle?: string|null,
+     *     DashboardUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

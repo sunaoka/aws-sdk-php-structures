@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialPointLayer $PointLayer
- * @property GeospatialLineLayer $LineLayer
- * @property GeospatialPolygonLayer $PolygonLayer
+ * @property GeospatialPointLayer|null $PointLayer
+ * @property GeospatialLineLayer|null $LineLayer
+ * @property GeospatialPolygonLayer|null $PolygonLayer
  */
 class GeospatialLayerDefinition extends Shape
 {
     /**
      * @param array{
-     *     PointLayer?: GeospatialPointLayer,
-     *     LineLayer?: GeospatialLineLayer,
-     *     PolygonLayer?: GeospatialPolygonLayer
+     *     PointLayer?: GeospatialPointLayer|null,
+     *     LineLayer?: GeospatialLineLayer|null,
+     *     PolygonLayer?: GeospatialPolygonLayer|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImageScanFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $scoreSource
- * @property string $cvssSource
- * @property string $version
- * @property double $score
- * @property string $scoringVector
- * @property list<CvssScoreAdjustment> $adjustments
+ * @property string|null $scoreSource
+ * @property string|null $cvssSource
+ * @property string|null $version
+ * @property double|null $score
+ * @property string|null $scoringVector
+ * @property list<CvssScoreAdjustment>|null $adjustments
  */
 class CvssScoreDetails extends Shape
 {
     /**
      * @param array{
-     *     scoreSource?: string,
-     *     cvssSource?: string,
-     *     version?: string,
-     *     score?: double,
-     *     scoringVector?: string,
-     *     adjustments?: list<CvssScoreAdjustment>
+     *     scoreSource?: string|null,
+     *     cvssSource?: string|null,
+     *     version?: string|null,
+     *     score?: double|null,
+     *     scoringVector?: string|null,
+     *     adjustments?: list<CvssScoreAdjustment>|null
      * } $args
      */
     public function __construct(array $args = [])

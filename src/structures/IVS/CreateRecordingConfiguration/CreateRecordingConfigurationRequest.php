@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\DestinationConfiguration $destinationConfiguration
- * @property string $name
- * @property int<0, 300> $recordingReconnectWindowSeconds
- * @property Shapes\RenditionConfiguration $renditionConfiguration
- * @property array<string, string> $tags
- * @property Shapes\ThumbnailConfiguration $thumbnailConfiguration
+ * @property string|null $name
+ * @property int<0, 300>|null $recordingReconnectWindowSeconds
+ * @property Shapes\RenditionConfiguration|null $renditionConfiguration
+ * @property array<string, string>|null $tags
+ * @property Shapes\ThumbnailConfiguration|null $thumbnailConfiguration
  */
 class CreateRecordingConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     destinationConfiguration: Shapes\DestinationConfiguration,
-     *     name?: string,
-     *     recordingReconnectWindowSeconds?: int<0, 300>,
-     *     renditionConfiguration?: Shapes\RenditionConfiguration,
-     *     tags?: array<string, string>,
-     *     thumbnailConfiguration?: Shapes\ThumbnailConfiguration
+     *     name?: string|null,
+     *     recordingReconnectWindowSeconds?: int<0, 300>|null,
+     *     renditionConfiguration?: Shapes\RenditionConfiguration|null,
+     *     tags?: array<string, string>|null,
+     *     thumbnailConfiguration?: Shapes\ThumbnailConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MQ\DeleteBroker;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $BrokerId
+ * @property string|null $BrokerId
  */
 class DeleteBrokerResponse extends Response
 {

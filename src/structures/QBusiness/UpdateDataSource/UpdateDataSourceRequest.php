@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $indexId
  * @property string $dataSourceId
- * @property string $displayName
- * @property Shapes\DataSourceConfiguration $configuration
- * @property Shapes\DataSourceVpcConfiguration $vpcConfiguration
- * @property string $description
- * @property string $syncSchedule
- * @property string $roleArn
- * @property Shapes\DocumentEnrichmentConfiguration $documentEnrichmentConfiguration
- * @property Shapes\MediaExtractionConfiguration $mediaExtractionConfiguration
+ * @property string|null $displayName
+ * @property Shapes\DataSourceConfiguration|null $configuration
+ * @property Shapes\DataSourceVpcConfiguration|null $vpcConfiguration
+ * @property string|null $description
+ * @property string|null $syncSchedule
+ * @property string|null $roleArn
+ * @property Shapes\DocumentEnrichmentConfiguration|null $documentEnrichmentConfiguration
+ * @property Shapes\MediaExtractionConfiguration|null $mediaExtractionConfiguration
  */
 class UpdateDataSourceRequest extends Request
 {
@@ -24,14 +24,14 @@ class UpdateDataSourceRequest extends Request
      *     applicationId: string,
      *     indexId: string,
      *     dataSourceId: string,
-     *     displayName?: string,
-     *     configuration?: Shapes\DataSourceConfiguration,
-     *     vpcConfiguration?: Shapes\DataSourceVpcConfiguration,
-     *     description?: string,
-     *     syncSchedule?: string,
-     *     roleArn?: string,
-     *     documentEnrichmentConfiguration?: Shapes\DocumentEnrichmentConfiguration,
-     *     mediaExtractionConfiguration?: Shapes\MediaExtractionConfiguration
+     *     displayName?: string|null,
+     *     configuration?: Shapes\DataSourceConfiguration|null,
+     *     vpcConfiguration?: Shapes\DataSourceVpcConfiguration|null,
+     *     description?: string|null,
+     *     syncSchedule?: string|null,
+     *     roleArn?: string|null,
+     *     documentEnrichmentConfiguration?: Shapes\DocumentEnrichmentConfiguration|null,
+     *     mediaExtractionConfiguration?: Shapes\MediaExtractionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $assistantId
  * @property list<Shapes\RuntimeSessionData> $data
- * @property 'Custom' $namespace
+ * @property 'Custom'|null $namespace
  * @property string $sessionId
  */
 class UpdateSessionDataRequest extends Request
@@ -16,7 +16,7 @@ class UpdateSessionDataRequest extends Request
      * @param array{
      *     assistantId: string,
      *     data: list<Shapes\RuntimeSessionData>,
-     *     namespace?: 'Custom',
+     *     namespace?: 'Custom'|null,
      *     sessionId: string
      * } $args
      */

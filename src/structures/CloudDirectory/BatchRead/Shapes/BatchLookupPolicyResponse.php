@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchRead\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PolicyToPath> $PolicyToPathList
- * @property string $NextToken
+ * @property list<PolicyToPath>|null $PolicyToPathList
+ * @property string|null $NextToken
  */
 class BatchLookupPolicyResponse extends Shape
 {
     /**
      * @param array{
-     *     PolicyToPathList?: list<PolicyToPath>,
-     *     NextToken?: string
+     *     PolicyToPathList?: list<PolicyToPath>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

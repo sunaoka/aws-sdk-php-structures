@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property string $Name
  * @property Shapes\DataSourceType $DataSourceType
- * @property string $Description
+ * @property string|null $Description
  */
 class AddDataSourceRequest extends Request
 {
@@ -17,7 +17,7 @@ class AddDataSourceRequest extends Request
      *     DomainName: string,
      *     Name: string,
      *     DataSourceType: Shapes\DataSourceType,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

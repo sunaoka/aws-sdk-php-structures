@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property bool $force
+ * @property bool|null $force
  */
 class DeleteIngestConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

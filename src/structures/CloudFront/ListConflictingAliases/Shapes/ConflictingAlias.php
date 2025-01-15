@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListConflictingAliases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Alias
- * @property string $DistributionId
- * @property string $AccountId
+ * @property string|null $Alias
+ * @property string|null $DistributionId
+ * @property string|null $AccountId
  */
 class ConflictingAlias extends Shape
 {
     /**
      * @param array{
-     *     Alias?: string,
-     *     DistributionId?: string,
-     *     AccountId?: string
+     *     Alias?: string|null,
+     *     DistributionId?: string|null,
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

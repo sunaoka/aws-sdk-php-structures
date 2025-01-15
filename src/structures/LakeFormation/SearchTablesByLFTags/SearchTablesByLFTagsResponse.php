@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LakeFormation\SearchTablesByLFTags;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\TaggedTable> $TableList
+ * @property string|null $NextToken
+ * @property list<Shapes\TaggedTable>|null $TableList
  */
 class SearchTablesByLFTagsResponse extends Response
 {

@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\S3\PutObjectAcl;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control' $ACL
- * @property Shapes\AccessControlPolicy $AccessControlPolicy
+ * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null $ACL
+ * @property Shapes\AccessControlPolicy|null $AccessControlPolicy
  * @property string $Bucket
- * @property string $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
- * @property string $GrantFullControl
- * @property string $GrantRead
- * @property string $GrantReadACP
- * @property string $GrantWrite
- * @property string $GrantWriteACP
+ * @property string|null $ContentMD5
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property string|null $GrantFullControl
+ * @property string|null $GrantRead
+ * @property string|null $GrantReadACP
+ * @property string|null $GrantWrite
+ * @property string|null $GrantWriteACP
  * @property string $Key
- * @property 'requester' $RequestPayer
- * @property string $VersionId
- * @property string $ExpectedBucketOwner
+ * @property 'requester'|null $RequestPayer
+ * @property string|null $VersionId
+ * @property string|null $ExpectedBucketOwner
  */
 class PutObjectAclRequest extends Request
 {
     /**
      * @param array{
-     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control',
-     *     AccessControlPolicy?: Shapes\AccessControlPolicy,
+     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null,
+     *     AccessControlPolicy?: Shapes\AccessControlPolicy|null,
      *     Bucket: string,
-     *     ContentMD5?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
-     *     GrantFullControl?: string,
-     *     GrantRead?: string,
-     *     GrantReadACP?: string,
-     *     GrantWrite?: string,
-     *     GrantWriteACP?: string,
+     *     ContentMD5?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     GrantFullControl?: string|null,
+     *     GrantRead?: string|null,
+     *     GrantReadACP?: string|null,
+     *     GrantWrite?: string|null,
+     *     GrantWriteACP?: string|null,
      *     Key: string,
-     *     RequestPayer?: 'requester',
-     *     VersionId?: string,
-     *     ExpectedBucketOwner?: string
+     *     RequestPayer?: 'requester'|null,
+     *     VersionId?: string|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FunnelChartAggregatedFieldWells $FunnelChartAggregatedFieldWells
+ * @property FunnelChartAggregatedFieldWells|null $FunnelChartAggregatedFieldWells
  */
 class FunnelChartFieldWells extends Shape
 {
     /**
-     * @param array{FunnelChartAggregatedFieldWells?: FunnelChartAggregatedFieldWells} $args
+     * @param array{FunnelChartAggregatedFieldWells?: FunnelChartAggregatedFieldWells|null} $args
      */
     public function __construct(array $args = [])
     {

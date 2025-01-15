@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateTaskTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TaskTemplateFieldIdentifier $Id
- * @property string $DefaultValue
+ * @property TaskTemplateFieldIdentifier|null $Id
+ * @property string|null $DefaultValue
  */
 class TaskTemplateDefaultFieldValue extends Shape
 {
     /**
      * @param array{
-     *     Id?: TaskTemplateFieldIdentifier,
-     *     DefaultValue?: string
+     *     Id?: TaskTemplateFieldIdentifier|null,
+     *     DefaultValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

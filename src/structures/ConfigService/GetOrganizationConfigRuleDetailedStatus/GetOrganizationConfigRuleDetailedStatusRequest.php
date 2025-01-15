@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OrganizationConfigRuleName
- * @property Shapes\StatusDetailFilters $Filters
- * @property int<0, 100> $Limit
- * @property string $NextToken
+ * @property Shapes\StatusDetailFilters|null $Filters
+ * @property int<0, 100>|null $Limit
+ * @property string|null $NextToken
  */
 class GetOrganizationConfigRuleDetailedStatusRequest extends Request
 {
     /**
      * @param array{
      *     OrganizationConfigRuleName: string,
-     *     Filters?: Shapes\StatusDetailFilters,
-     *     Limit?: int<0, 100>,
-     *     NextToken?: string
+     *     Filters?: Shapes\StatusDetailFilters|null,
+     *     Limit?: int<0, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

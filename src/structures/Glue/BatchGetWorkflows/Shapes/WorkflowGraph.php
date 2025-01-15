@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetWorkflows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Node> $Nodes
- * @property list<Edge> $Edges
+ * @property list<Node>|null $Nodes
+ * @property list<Edge>|null $Edges
  */
 class WorkflowGraph extends Shape
 {
     /**
      * @param array{
-     *     Nodes?: list<Node>,
-     *     Edges?: list<Edge>
+     *     Nodes?: list<Node>|null,
+     *     Edges?: list<Edge>|null
      * } $args
      */
     public function __construct(array $args = [])

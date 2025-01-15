@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property Shapes\VPC $VPC
+ * @property Shapes\VPC|null $VPC
  * @property string $CallerReference
- * @property Shapes\HostedZoneConfig $HostedZoneConfig
- * @property string $DelegationSetId
+ * @property Shapes\HostedZoneConfig|null $HostedZoneConfig
+ * @property string|null $DelegationSetId
  */
 class CreateHostedZoneRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     VPC?: Shapes\VPC,
+     *     VPC?: Shapes\VPC|null,
      *     CallerReference: string,
-     *     HostedZoneConfig?: Shapes\HostedZoneConfig,
-     *     DelegationSetId?: string
+     *     HostedZoneConfig?: Shapes\HostedZoneConfig|null,
+     *     DelegationSetId?: string|null
      * } $args
      */
     public function __construct(array $args)

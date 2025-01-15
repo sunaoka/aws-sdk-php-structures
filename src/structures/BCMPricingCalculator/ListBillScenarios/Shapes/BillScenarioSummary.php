@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $name
- * @property BillInterval $billInterval
- * @property 'READY'|'LOCKED'|'FAILED' $status
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $expiresAt
- * @property string $failureMessage
+ * @property string|null $name
+ * @property BillInterval|null $billInterval
+ * @property 'READY'|'LOCKED'|'FAILED'|null $status
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $expiresAt
+ * @property string|null $failureMessage
  */
 class BillScenarioSummary extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     name?: string,
-     *     billInterval?: BillInterval,
-     *     status?: 'READY'|'LOCKED'|'FAILED',
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     expiresAt?: \Aws\Api\DateTimeResult,
-     *     failureMessage?: string
+     *     name?: string|null,
+     *     billInterval?: BillInterval|null,
+     *     status?: 'READY'|'LOCKED'|'FAILED'|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     expiresAt?: \Aws\Api\DateTimeResult|null,
+     *     failureMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

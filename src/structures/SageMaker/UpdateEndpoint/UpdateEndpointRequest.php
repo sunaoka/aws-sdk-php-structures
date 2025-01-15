@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EndpointName
  * @property string $EndpointConfigName
- * @property bool $RetainAllVariantProperties
- * @property list<Shapes\VariantProperty> $ExcludeRetainedVariantProperties
- * @property Shapes\DeploymentConfig $DeploymentConfig
- * @property bool $RetainDeploymentConfig
+ * @property bool|null $RetainAllVariantProperties
+ * @property list<Shapes\VariantProperty>|null $ExcludeRetainedVariantProperties
+ * @property Shapes\DeploymentConfig|null $DeploymentConfig
+ * @property bool|null $RetainDeploymentConfig
  */
 class UpdateEndpointRequest extends Request
 {
@@ -18,10 +18,10 @@ class UpdateEndpointRequest extends Request
      * @param array{
      *     EndpointName: string,
      *     EndpointConfigName: string,
-     *     RetainAllVariantProperties?: bool,
-     *     ExcludeRetainedVariantProperties?: list<Shapes\VariantProperty>,
-     *     DeploymentConfig?: Shapes\DeploymentConfig,
-     *     RetainDeploymentConfig?: bool
+     *     RetainAllVariantProperties?: bool|null,
+     *     ExcludeRetainedVariantProperties?: list<Shapes\VariantProperty>|null,
+     *     DeploymentConfig?: Shapes\DeploymentConfig|null,
+     *     RetainDeploymentConfig?: bool|null
      * } $args
      */
     public function __construct(array $args)

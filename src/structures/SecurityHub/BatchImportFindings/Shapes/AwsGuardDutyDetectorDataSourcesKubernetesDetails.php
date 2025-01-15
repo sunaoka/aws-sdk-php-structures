@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsGuardDutyDetectorDataSourcesKubernetesAuditLogsDetails $AuditLogs
+ * @property AwsGuardDutyDetectorDataSourcesKubernetesAuditLogsDetails|null $AuditLogs
  */
 class AwsGuardDutyDetectorDataSourcesKubernetesDetails extends Shape
 {
     /**
-     * @param array{AuditLogs?: AwsGuardDutyDetectorDataSourcesKubernetesAuditLogsDetails} $args
+     * @param array{AuditLogs?: AwsGuardDutyDetectorDataSourcesKubernetesAuditLogsDetails|null} $args
      */
     public function __construct(array $args = [])
     {

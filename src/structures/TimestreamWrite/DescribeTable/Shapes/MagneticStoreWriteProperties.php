@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $EnableMagneticStoreWrites
- * @property MagneticStoreRejectedDataLocation $MagneticStoreRejectedDataLocation
+ * @property MagneticStoreRejectedDataLocation|null $MagneticStoreRejectedDataLocation
  */
 class MagneticStoreWriteProperties extends Shape
 {
     /**
      * @param array{
      *     EnableMagneticStoreWrites: bool,
-     *     MagneticStoreRejectedDataLocation?: MagneticStoreRejectedDataLocation
+     *     MagneticStoreRejectedDataLocation?: MagneticStoreRejectedDataLocation|null
      * } $args
      */
     public function __construct(array $args)

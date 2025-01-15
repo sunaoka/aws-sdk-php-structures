@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListWaitingWorkflowSteps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stepExecutionId
- * @property string $imageBuildVersionArn
- * @property string $workflowExecutionId
- * @property string $workflowBuildVersionArn
- * @property string $name
- * @property string $action
- * @property string $startTime
+ * @property string|null $stepExecutionId
+ * @property string|null $imageBuildVersionArn
+ * @property string|null $workflowExecutionId
+ * @property string|null $workflowBuildVersionArn
+ * @property string|null $name
+ * @property string|null $action
+ * @property string|null $startTime
  */
 class WorkflowStepExecution extends Shape
 {
     /**
      * @param array{
-     *     stepExecutionId?: string,
-     *     imageBuildVersionArn?: string,
-     *     workflowExecutionId?: string,
-     *     workflowBuildVersionArn?: string,
-     *     name?: string,
-     *     action?: string,
-     *     startTime?: string
+     *     stepExecutionId?: string|null,
+     *     imageBuildVersionArn?: string|null,
+     *     workflowExecutionId?: string|null,
+     *     workflowBuildVersionArn?: string|null,
+     *     name?: string|null,
+     *     action?: string|null,
+     *     startTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

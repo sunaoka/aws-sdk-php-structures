@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $testSetName
- * @property string $description
+ * @property string|null $description
  * @property Shapes\TestSetStorageLocation $storageLocation
  * @property Shapes\TestSetGenerationDataSource $generationDataSource
  * @property string $roleArn
- * @property array<string, string> $testSetTags
+ * @property array<string, string>|null $testSetTags
  */
 class StartTestSetGenerationRequest extends Request
 {
     /**
      * @param array{
      *     testSetName: string,
-     *     description?: string,
+     *     description?: string|null,
      *     storageLocation: Shapes\TestSetStorageLocation,
      *     generationDataSource: Shapes\TestSetGenerationDataSource,
      *     roleArn: string,
-     *     testSetTags?: array<string, string>
+     *     testSetTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

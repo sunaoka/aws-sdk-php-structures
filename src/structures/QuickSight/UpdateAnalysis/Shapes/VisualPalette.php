@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChartColor
- * @property list<DataPathColor> $ColorMap
+ * @property string|null $ChartColor
+ * @property list<DataPathColor>|null $ColorMap
  */
 class VisualPalette extends Shape
 {
     /**
      * @param array{
-     *     ChartColor?: string,
-     *     ColorMap?: list<DataPathColor>
+     *     ChartColor?: string|null,
+     *     ColorMap?: list<DataPathColor>|null
      * } $args
      */
     public function __construct(array $args = [])

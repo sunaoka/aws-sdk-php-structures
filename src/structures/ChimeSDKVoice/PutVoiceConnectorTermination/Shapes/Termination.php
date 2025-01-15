@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\PutVoiceConnectorTermination\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, max> $CpsLimit
- * @property string $DefaultPhoneNumber
- * @property list<string> $CallingRegions
- * @property list<string> $CidrAllowedList
- * @property bool $Disabled
+ * @property int<1, max>|null $CpsLimit
+ * @property string|null $DefaultPhoneNumber
+ * @property list<string>|null $CallingRegions
+ * @property list<string>|null $CidrAllowedList
+ * @property bool|null $Disabled
  */
 class Termination extends Shape
 {
     /**
      * @param array{
-     *     CpsLimit?: int<1, max>,
-     *     DefaultPhoneNumber?: string,
-     *     CallingRegions?: list<string>,
-     *     CidrAllowedList?: list<string>,
-     *     Disabled?: bool
+     *     CpsLimit?: int<1, max>|null,
+     *     DefaultPhoneNumber?: string|null,
+     *     CallingRegions?: list<string>|null,
+     *     CidrAllowedList?: list<string>|null,
+     *     Disabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

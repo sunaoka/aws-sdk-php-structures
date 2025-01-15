@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVerifiedAccessInstanceLoggingConfigur
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VerifiedAccessLogS3DestinationOptions $S3
- * @property VerifiedAccessLogCloudWatchLogsDestinationOptions $CloudWatchLogs
- * @property VerifiedAccessLogKinesisDataFirehoseDestinationOptions $KinesisDataFirehose
- * @property string $LogVersion
- * @property bool $IncludeTrustContext
+ * @property VerifiedAccessLogS3DestinationOptions|null $S3
+ * @property VerifiedAccessLogCloudWatchLogsDestinationOptions|null $CloudWatchLogs
+ * @property VerifiedAccessLogKinesisDataFirehoseDestinationOptions|null $KinesisDataFirehose
+ * @property string|null $LogVersion
+ * @property bool|null $IncludeTrustContext
  */
 class VerifiedAccessLogOptions extends Shape
 {
     /**
      * @param array{
-     *     S3?: VerifiedAccessLogS3DestinationOptions,
-     *     CloudWatchLogs?: VerifiedAccessLogCloudWatchLogsDestinationOptions,
-     *     KinesisDataFirehose?: VerifiedAccessLogKinesisDataFirehoseDestinationOptions,
-     *     LogVersion?: string,
-     *     IncludeTrustContext?: bool
+     *     S3?: VerifiedAccessLogS3DestinationOptions|null,
+     *     CloudWatchLogs?: VerifiedAccessLogCloudWatchLogsDestinationOptions|null,
+     *     KinesisDataFirehose?: VerifiedAccessLogKinesisDataFirehoseDestinationOptions|null,
+     *     LogVersion?: string|null,
+     *     IncludeTrustContext?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

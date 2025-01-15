@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SankeyDiagramAggregatedFieldWells $SankeyDiagramAggregatedFieldWells
+ * @property SankeyDiagramAggregatedFieldWells|null $SankeyDiagramAggregatedFieldWells
  */
 class SankeyDiagramFieldWells extends Shape
 {
     /**
-     * @param array{SankeyDiagramAggregatedFieldWells?: SankeyDiagramAggregatedFieldWells} $args
+     * @param array{SankeyDiagramAggregatedFieldWells?: SankeyDiagramAggregatedFieldWells|null} $args
      */
     public function __construct(array $args = [])
     {

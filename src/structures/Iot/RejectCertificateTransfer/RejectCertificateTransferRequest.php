@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $certificateId
- * @property string $rejectReason
+ * @property string|null $rejectReason
  */
 class RejectCertificateTransferRequest extends Request
 {
     /**
      * @param array{
      *     certificateId: string,
-     *     rejectReason?: string
+     *     rejectReason?: string|null
      * } $args
      */
     public function __construct(array $args)

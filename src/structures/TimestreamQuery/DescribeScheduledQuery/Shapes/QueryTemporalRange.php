@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\DescribeScheduledQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property QueryTemporalRangeMax $Max
+ * @property QueryTemporalRangeMax|null $Max
  */
 class QueryTemporalRange extends Shape
 {
     /**
-     * @param array{Max?: QueryTemporalRangeMax} $args
+     * @param array{Max?: QueryTemporalRangeMax|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BillingConductor\BatchAssociateResourcesToCusto
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property 'INVALID_ARN'|'SERVICE_LIMIT_EXCEEDED'|'ILLEGAL_CUSTOMLINEITEM'|'INTERNAL_SERVER_EXCEPTION'|'INVALID_BILLING_PERIOD_RANGE' $Reason
+ * @property string|null $Message
+ * @property 'INVALID_ARN'|'SERVICE_LIMIT_EXCEEDED'|'ILLEGAL_CUSTOMLINEITEM'|'INTERNAL_SERVER_EXCEPTION'|'INVALID_BILLING_PERIOD_RANGE'|null $Reason
  */
 class AssociateResourceError extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     Reason?: 'INVALID_ARN'|'SERVICE_LIMIT_EXCEEDED'|'ILLEGAL_CUSTOMLINEITEM'|'INTERNAL_SERVER_EXCEPTION'|'INVALID_BILLING_PERIOD_RANGE'
+     *     Message?: string|null,
+     *     Reason?: 'INVALID_ARN'|'SERVICE_LIMIT_EXCEEDED'|'ILLEGAL_CUSTOMLINEITEM'|'INTERNAL_SERVER_EXCEPTION'|'INVALID_BILLING_PERIOD_RANGE'|null
      * } $args
      */
     public function __construct(array $args = [])

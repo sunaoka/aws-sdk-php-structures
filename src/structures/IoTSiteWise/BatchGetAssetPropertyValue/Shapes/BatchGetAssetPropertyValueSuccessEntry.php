@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $entryId
- * @property AssetPropertyValue $assetPropertyValue
+ * @property AssetPropertyValue|null $assetPropertyValue
  */
 class BatchGetAssetPropertyValueSuccessEntry extends Shape
 {
     /**
      * @param array{
      *     entryId: string,
-     *     assetPropertyValue?: AssetPropertyValue
+     *     assetPropertyValue?: AssetPropertyValue|null
      * } $args
      */
     public function __construct(array $args)

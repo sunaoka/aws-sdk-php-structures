@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListFailuresForLicenseConfigurat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceArn
- * @property 'EC2_INSTANCE'|'EC2_HOST'|'EC2_AMI'|'RDS'|'SYSTEMS_MANAGER_MANAGED_INSTANCE' $ResourceType
- * @property string $ErrorMessage
- * @property \Aws\Api\DateTimeResult $FailureTime
- * @property string $OperationName
- * @property string $ResourceOwnerId
- * @property string $OperationRequestedBy
- * @property list<Metadata> $MetadataList
+ * @property string|null $ResourceArn
+ * @property 'EC2_INSTANCE'|'EC2_HOST'|'EC2_AMI'|'RDS'|'SYSTEMS_MANAGER_MANAGED_INSTANCE'|null $ResourceType
+ * @property string|null $ErrorMessage
+ * @property \Aws\Api\DateTimeResult|null $FailureTime
+ * @property string|null $OperationName
+ * @property string|null $ResourceOwnerId
+ * @property string|null $OperationRequestedBy
+ * @property list<Metadata>|null $MetadataList
  */
 class LicenseOperationFailure extends Shape
 {
     /**
      * @param array{
-     *     ResourceArn?: string,
-     *     ResourceType?: 'EC2_INSTANCE'|'EC2_HOST'|'EC2_AMI'|'RDS'|'SYSTEMS_MANAGER_MANAGED_INSTANCE',
-     *     ErrorMessage?: string,
-     *     FailureTime?: \Aws\Api\DateTimeResult,
-     *     OperationName?: string,
-     *     ResourceOwnerId?: string,
-     *     OperationRequestedBy?: string,
-     *     MetadataList?: list<Metadata>
+     *     ResourceArn?: string|null,
+     *     ResourceType?: 'EC2_INSTANCE'|'EC2_HOST'|'EC2_AMI'|'RDS'|'SYSTEMS_MANAGER_MANAGED_INSTANCE'|null,
+     *     ErrorMessage?: string|null,
+     *     FailureTime?: \Aws\Api\DateTimeResult|null,
+     *     OperationName?: string|null,
+     *     ResourceOwnerId?: string|null,
+     *     OperationRequestedBy?: string|null,
+     *     MetadataList?: list<Metadata>|null
      * } $args
      */
     public function __construct(array $args = [])

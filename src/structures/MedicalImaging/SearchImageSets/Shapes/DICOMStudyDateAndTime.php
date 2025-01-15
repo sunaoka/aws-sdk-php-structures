@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DICOMStudyDate
- * @property string $DICOMStudyTime
+ * @property string|null $DICOMStudyTime
  */
 class DICOMStudyDateAndTime extends Shape
 {
     /**
      * @param array{
      *     DICOMStudyDate: string,
-     *     DICOMStudyTime?: string
+     *     DICOMStudyTime?: string|null
      * } $args
      */
     public function __construct(array $args)

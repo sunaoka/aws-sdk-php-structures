@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudFormationProperties $cloudFormation
+ * @property CloudFormationProperties|null $cloudFormation
  */
 class ProvisioningProperties extends Shape
 {
     /**
-     * @param array{cloudFormation?: CloudFormationProperties} $args
+     * @param array{cloudFormation?: CloudFormationProperties|null} $args
      */
     public function __construct(array $args = [])
     {

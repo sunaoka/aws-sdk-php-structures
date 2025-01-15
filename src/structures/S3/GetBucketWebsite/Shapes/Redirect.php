@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\S3\GetBucketWebsite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HostName
- * @property string $HttpRedirectCode
- * @property 'http'|'https' $Protocol
- * @property string $ReplaceKeyPrefixWith
- * @property string $ReplaceKeyWith
+ * @property string|null $HostName
+ * @property string|null $HttpRedirectCode
+ * @property 'http'|'https'|null $Protocol
+ * @property string|null $ReplaceKeyPrefixWith
+ * @property string|null $ReplaceKeyWith
  */
 class Redirect extends Shape
 {
     /**
      * @param array{
-     *     HostName?: string,
-     *     HttpRedirectCode?: string,
-     *     Protocol?: 'http'|'https',
-     *     ReplaceKeyPrefixWith?: string,
-     *     ReplaceKeyWith?: string
+     *     HostName?: string|null,
+     *     HttpRedirectCode?: string|null,
+     *     Protocol?: 'http'|'https'|null,
+     *     ReplaceKeyPrefixWith?: string|null,
+     *     ReplaceKeyWith?: string|null
      * } $args
      */
     public function __construct(array $args = [])

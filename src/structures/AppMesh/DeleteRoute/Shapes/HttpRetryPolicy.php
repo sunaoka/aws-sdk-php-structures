@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $httpRetryEvents
+ * @property list<string>|null $httpRetryEvents
  * @property int<0, max> $maxRetries
  * @property Duration $perRetryTimeout
- * @property list<'connection-error'> $tcpRetryEvents
+ * @property list<'connection-error'>|null $tcpRetryEvents
  */
 class HttpRetryPolicy extends Shape
 {
     /**
      * @param array{
-     *     httpRetryEvents?: list<string>,
+     *     httpRetryEvents?: list<string>|null,
      *     maxRetries: int<0, max>,
      *     perRetryTimeout: Duration,
-     *     tcpRetryEvents?: list<'connection-error'>
+     *     tcpRetryEvents?: list<'connection-error'>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DocDB\DescribeDBClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBInstanceIdentifier
- * @property bool $IsClusterWriter
- * @property string $DBClusterParameterGroupStatus
- * @property int $PromotionTier
+ * @property string|null $DBInstanceIdentifier
+ * @property bool|null $IsClusterWriter
+ * @property string|null $DBClusterParameterGroupStatus
+ * @property int|null $PromotionTier
  */
 class DBClusterMember extends Shape
 {
     /**
      * @param array{
-     *     DBInstanceIdentifier?: string,
-     *     IsClusterWriter?: bool,
-     *     DBClusterParameterGroupStatus?: string,
-     *     PromotionTier?: int
+     *     DBInstanceIdentifier?: string|null,
+     *     IsClusterWriter?: bool|null,
+     *     DBClusterParameterGroupStatus?: string|null,
+     *     PromotionTier?: int|null
      * } $args
      */
     public function __construct(array $args = [])

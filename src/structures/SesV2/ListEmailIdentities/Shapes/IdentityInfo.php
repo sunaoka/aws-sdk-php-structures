@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SesV2\ListEmailIdentities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EMAIL_ADDRESS'|'DOMAIN'|'MANAGED_DOMAIN' $IdentityType
- * @property string $IdentityName
- * @property bool $SendingEnabled
- * @property 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED' $VerificationStatus
+ * @property 'EMAIL_ADDRESS'|'DOMAIN'|'MANAGED_DOMAIN'|null $IdentityType
+ * @property string|null $IdentityName
+ * @property bool|null $SendingEnabled
+ * @property 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED'|null $VerificationStatus
  */
 class IdentityInfo extends Shape
 {
     /**
      * @param array{
-     *     IdentityType?: 'EMAIL_ADDRESS'|'DOMAIN'|'MANAGED_DOMAIN',
-     *     IdentityName?: string,
-     *     SendingEnabled?: bool,
-     *     VerificationStatus?: 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED'
+     *     IdentityType?: 'EMAIL_ADDRESS'|'DOMAIN'|'MANAGED_DOMAIN'|null,
+     *     IdentityName?: string|null,
+     *     SendingEnabled?: bool|null,
+     *     VerificationStatus?: 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeAccessEntry\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clusterName
- * @property string $principalArn
- * @property list<string> $kubernetesGroups
- * @property string $accessEntryArn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $modifiedAt
- * @property array<string, string> $tags
- * @property string $username
- * @property string $type
+ * @property string|null $clusterName
+ * @property string|null $principalArn
+ * @property list<string>|null $kubernetesGroups
+ * @property string|null $accessEntryArn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $modifiedAt
+ * @property array<string, string>|null $tags
+ * @property string|null $username
+ * @property string|null $type
  */
 class AccessEntry extends Shape
 {
     /**
      * @param array{
-     *     clusterName?: string,
-     *     principalArn?: string,
-     *     kubernetesGroups?: list<string>,
-     *     accessEntryArn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     modifiedAt?: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>,
-     *     username?: string,
-     *     type?: string
+     *     clusterName?: string|null,
+     *     principalArn?: string|null,
+     *     kubernetesGroups?: list<string>|null,
+     *     accessEntryArn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     modifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     tags?: array<string, string>|null,
+     *     username?: string|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\ResumeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Address
- * @property int $Port
- * @property list<VpcEndpoint> $VpcEndpoints
+ * @property string|null $Address
+ * @property int|null $Port
+ * @property list<VpcEndpoint>|null $VpcEndpoints
  */
 class Endpoint extends Shape
 {
     /**
      * @param array{
-     *     Address?: string,
-     *     Port?: int,
-     *     VpcEndpoints?: list<VpcEndpoint>
+     *     Address?: string|null,
+     *     Port?: int|null,
+     *     VpcEndpoints?: list<VpcEndpoint>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $State
  * @property string $InstanceId
- * @property string $Code
- * @property string $Error
- * @property string $ErrorDescription
+ * @property string|null $Code
+ * @property string|null $Error
+ * @property string|null $ErrorDescription
  */
 class UpdateParticipantAuthenticationRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateParticipantAuthenticationRequest extends Request
      * @param array{
      *     State: string,
      *     InstanceId: string,
-     *     Code?: string,
-     *     Error?: string,
-     *     ErrorDescription?: string
+     *     Code?: string|null,
+     *     Error?: string|null,
+     *     ErrorDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

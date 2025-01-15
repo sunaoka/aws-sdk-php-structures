@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property string $CallerReference
- * @property string $Comment
+ * @property string|null $Comment
  * @property EncryptionEntities $EncryptionEntities
  */
 class FieldLevelEncryptionProfileConfig extends Shape
@@ -16,7 +16,7 @@ class FieldLevelEncryptionProfileConfig extends Shape
      * @param array{
      *     Name: string,
      *     CallerReference: string,
-     *     Comment?: string,
+     *     Comment?: string|null,
      *     EncryptionEntities: EncryptionEntities
      * } $args
      */

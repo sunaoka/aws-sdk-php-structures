@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Backup\GetBackupPlan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Lifecycle $Lifecycle
+ * @property Lifecycle|null $Lifecycle
  * @property string $DestinationBackupVaultArn
  */
 class CopyAction extends Shape
 {
     /**
      * @param array{
-     *     Lifecycle?: Lifecycle,
+     *     Lifecycle?: Lifecycle|null,
      *     DestinationBackupVaultArn: string
      * } $args
      */

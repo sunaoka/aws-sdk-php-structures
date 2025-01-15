@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HubContentName
- * @property string $HubContentVersion
+ * @property string|null $HubContentVersion
  * @property 'Model'|'Notebook'|'ModelReference' $HubContentType
  * @property string $DocumentSchemaVersion
  * @property string $HubName
- * @property string $HubContentDisplayName
- * @property string $HubContentDescription
- * @property string $HubContentMarkdown
+ * @property string|null $HubContentDisplayName
+ * @property string|null $HubContentDescription
+ * @property string|null $HubContentMarkdown
  * @property string $HubContentDocument
- * @property list<string> $HubContentSearchKeywords
- * @property list<Shapes\Tag> $Tags
+ * @property list<string>|null $HubContentSearchKeywords
+ * @property list<Shapes\Tag>|null $Tags
  */
 class ImportHubContentRequest extends Request
 {
     /**
      * @param array{
      *     HubContentName: string,
-     *     HubContentVersion?: string,
+     *     HubContentVersion?: string|null,
      *     HubContentType: 'Model'|'Notebook'|'ModelReference',
      *     DocumentSchemaVersion: string,
      *     HubName: string,
-     *     HubContentDisplayName?: string,
-     *     HubContentDescription?: string,
-     *     HubContentMarkdown?: string,
+     *     HubContentDisplayName?: string|null,
+     *     HubContentDescription?: string|null,
+     *     HubContentMarkdown?: string|null,
      *     HubContentDocument: string,
-     *     HubContentSearchKeywords?: list<string>,
-     *     Tags?: list<Shapes\Tag>
+     *     HubContentSearchKeywords?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

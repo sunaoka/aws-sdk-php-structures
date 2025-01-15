@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $issuer
- * @property string $entityIdPrefix
- * @property OpenIdConnectGroupConfigurationItem $groupConfiguration
+ * @property string|null $entityIdPrefix
+ * @property OpenIdConnectGroupConfigurationItem|null $groupConfiguration
  * @property OpenIdConnectTokenSelectionItem $tokenSelection
  */
 class OpenIdConnectConfigurationItem extends Shape
@@ -15,8 +15,8 @@ class OpenIdConnectConfigurationItem extends Shape
     /**
      * @param array{
      *     issuer: string,
-     *     entityIdPrefix?: string,
-     *     groupConfiguration?: OpenIdConnectGroupConfigurationItem,
+     *     entityIdPrefix?: string|null,
+     *     groupConfiguration?: OpenIdConnectGroupConfigurationItem|null,
      *     tokenSelection: OpenIdConnectTokenSelectionItem
      * } $args
      */

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\PutEncryptionConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $kmsKeyId
+ * @property string|null $kmsKeyId
  * @property 'KMS_BASED_ENCRYPTION'|'FLEETWISE_DEFAULT_ENCRYPTION' $encryptionType
  */
 class PutEncryptionConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     kmsKeyId?: string,
+     *     kmsKeyId?: string|null,
      *     encryptionType: 'KMS_BASED_ENCRYPTION'|'FLEETWISE_DEFAULT_ENCRYPTION'
      * } $args
      */

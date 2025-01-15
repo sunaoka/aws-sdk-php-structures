@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $projectName
- * @property string $branchFilter
- * @property list<list<Shapes\WebhookFilter>> $filterGroups
- * @property 'BUILD'|'BUILD_BATCH' $buildType
- * @property bool $manualCreation
- * @property Shapes\ScopeConfiguration $scopeConfiguration
+ * @property string|null $branchFilter
+ * @property list<list<Shapes\WebhookFilter>>|null $filterGroups
+ * @property 'BUILD'|'BUILD_BATCH'|null $buildType
+ * @property bool|null $manualCreation
+ * @property Shapes\ScopeConfiguration|null $scopeConfiguration
  */
 class CreateWebhookRequest extends Request
 {
     /**
      * @param array{
      *     projectName: string,
-     *     branchFilter?: string,
-     *     filterGroups?: list<list<Shapes\WebhookFilter>>,
-     *     buildType?: 'BUILD'|'BUILD_BATCH',
-     *     manualCreation?: bool,
-     *     scopeConfiguration?: Shapes\ScopeConfiguration
+     *     branchFilter?: string|null,
+     *     filterGroups?: list<list<Shapes\WebhookFilter>>|null,
+     *     buildType?: 'BUILD'|'BUILD_BATCH'|null,
+     *     manualCreation?: bool|null,
+     *     scopeConfiguration?: Shapes\ScopeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

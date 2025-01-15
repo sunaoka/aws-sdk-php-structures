@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Athena\GetCalculationExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StdOutS3Uri
- * @property string $StdErrorS3Uri
- * @property string $ResultS3Uri
- * @property string $ResultType
+ * @property string|null $StdOutS3Uri
+ * @property string|null $StdErrorS3Uri
+ * @property string|null $ResultS3Uri
+ * @property string|null $ResultType
  */
 class CalculationResult extends Shape
 {
     /**
      * @param array{
-     *     StdOutS3Uri?: string,
-     *     StdErrorS3Uri?: string,
-     *     ResultS3Uri?: string,
-     *     ResultType?: string
+     *     StdOutS3Uri?: string|null,
+     *     StdErrorS3Uri?: string|null,
+     *     ResultS3Uri?: string|null,
+     *     ResultType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

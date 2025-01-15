@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Macie2\GetBucketStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $fileType
- * @property int $storageClass
- * @property int $total
+ * @property int|null $fileType
+ * @property int|null $storageClass
+ * @property int|null $total
  */
 class ObjectLevelStatistics extends Shape
 {
     /**
      * @param array{
-     *     fileType?: int,
-     *     storageClass?: int,
-     *     total?: int
+     *     fileType?: int|null,
+     *     storageClass?: int|null,
+     *     total?: int|null
      * } $args
      */
     public function __construct(array $args = [])

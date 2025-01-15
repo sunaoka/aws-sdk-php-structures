@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\GetDomainUnit\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DomainUnitGroupProperties $group
- * @property DomainUnitUserProperties $user
+ * @property DomainUnitGroupProperties|null $group
+ * @property DomainUnitUserProperties|null $user
  */
 class DomainUnitOwnerProperties extends Shape
 {
     /**
      * @param array{
-     *     group?: DomainUnitGroupProperties,
-     *     user?: DomainUnitUserProperties
+     *     group?: DomainUnitGroupProperties|null,
+     *     user?: DomainUnitUserProperties|null
      * } $args
      */
     public function __construct(array $args = [])

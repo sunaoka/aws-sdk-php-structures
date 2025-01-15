@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ImportTaskSummary> $tasks
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListImportTasksResponse extends Response
 {

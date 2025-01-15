@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateIntent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Scalar'|'List' $shape
- * @property SlotValue $value
- * @property list<SlotValueOverride> $values
+ * @property 'Scalar'|'List'|null $shape
+ * @property SlotValue|null $value
+ * @property list<SlotValueOverride>|null $values
  */
 class SlotValueOverride extends Shape
 {
     /**
      * @param array{
-     *     shape?: 'Scalar'|'List',
-     *     value?: SlotValue,
-     *     values?: list<SlotValueOverride>
+     *     shape?: 'Scalar'|'List'|null,
+     *     value?: SlotValue|null,
+     *     values?: list<SlotValueOverride>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTWireless\UpdateEventConfigurationByResourceT
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SidewalkResourceTypeEventConfiguration $Sidewalk
+ * @property SidewalkResourceTypeEventConfiguration|null $Sidewalk
  */
 class DeviceRegistrationStateResourceTypeEventConfiguration extends Shape
 {
     /**
-     * @param array{Sidewalk?: SidewalkResourceTypeEventConfiguration} $args
+     * @param array{Sidewalk?: SidewalkResourceTypeEventConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

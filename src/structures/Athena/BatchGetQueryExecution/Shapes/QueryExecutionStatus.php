@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Athena\BatchGetQueryExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'QUEUED'|'RUNNING'|'SUCCEEDED'|'FAILED'|'CANCELLED' $State
- * @property string $StateChangeReason
- * @property \Aws\Api\DateTimeResult $SubmissionDateTime
- * @property \Aws\Api\DateTimeResult $CompletionDateTime
- * @property AthenaError $AthenaError
+ * @property 'QUEUED'|'RUNNING'|'SUCCEEDED'|'FAILED'|'CANCELLED'|null $State
+ * @property string|null $StateChangeReason
+ * @property \Aws\Api\DateTimeResult|null $SubmissionDateTime
+ * @property \Aws\Api\DateTimeResult|null $CompletionDateTime
+ * @property AthenaError|null $AthenaError
  */
 class QueryExecutionStatus extends Shape
 {
     /**
      * @param array{
-     *     State?: 'QUEUED'|'RUNNING'|'SUCCEEDED'|'FAILED'|'CANCELLED',
-     *     StateChangeReason?: string,
-     *     SubmissionDateTime?: \Aws\Api\DateTimeResult,
-     *     CompletionDateTime?: \Aws\Api\DateTimeResult,
-     *     AthenaError?: AthenaError
+     *     State?: 'QUEUED'|'RUNNING'|'SUCCEEDED'|'FAILED'|'CANCELLED'|null,
+     *     StateChangeReason?: string|null,
+     *     SubmissionDateTime?: \Aws\Api\DateTimeResult|null,
+     *     CompletionDateTime?: \Aws\Api\DateTimeResult|null,
+     *     AthenaError?: AthenaError|null
      * } $args
      */
     public function __construct(array $args = [])

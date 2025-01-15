@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 268435455> $CellId
  * @property int<200, 999> $Mcc
  * @property int<0, 999> $Mnc
- * @property LteLocalId $LocalId
- * @property list<LteNetworkMeasurements> $NetworkMeasurements
- * @property int<0, 1282> $TimingAdvance
- * @property bool $NrCapable
- * @property int<-140, -44> $Rsrp
- * @property float $Rsrq
- * @property int<0, 65535> $Tac
+ * @property LteLocalId|null $LocalId
+ * @property list<LteNetworkMeasurements>|null $NetworkMeasurements
+ * @property int<0, 1282>|null $TimingAdvance
+ * @property bool|null $NrCapable
+ * @property int<-140, -44>|null $Rsrp
+ * @property float|null $Rsrq
+ * @property int<0, 65535>|null $Tac
  */
 class LteCellDetails extends Shape
 {
@@ -23,13 +23,13 @@ class LteCellDetails extends Shape
      *     CellId: int<0, 268435455>,
      *     Mcc: int<200, 999>,
      *     Mnc: int<0, 999>,
-     *     LocalId?: LteLocalId,
-     *     NetworkMeasurements?: list<LteNetworkMeasurements>,
-     *     TimingAdvance?: int<0, 1282>,
-     *     NrCapable?: bool,
-     *     Rsrp?: int<-140, -44>,
-     *     Rsrq?: float,
-     *     Tac?: int<0, 65535>
+     *     LocalId?: LteLocalId|null,
+     *     NetworkMeasurements?: list<LteNetworkMeasurements>|null,
+     *     TimingAdvance?: int<0, 1282>|null,
+     *     NrCapable?: bool|null,
+     *     Rsrp?: int<-140, -44>|null,
+     *     Rsrq?: float|null,
+     *     Tac?: int<0, 65535>|null
      * } $args
      */
     public function __construct(array $args)

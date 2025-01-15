@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Emr\DescribeReleaseLabel;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReleaseLabel
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $ReleaseLabel
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class DescribeReleaseLabelRequest extends Request
 {
     /**
      * @param array{
-     *     ReleaseLabel?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     ReleaseLabel?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

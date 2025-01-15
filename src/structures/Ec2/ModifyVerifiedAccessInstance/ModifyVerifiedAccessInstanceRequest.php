@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VerifiedAccessInstanceId
- * @property string $Description
- * @property bool $DryRun
- * @property string $ClientToken
- * @property string $CidrEndpointsCustomSubDomain
+ * @property string|null $Description
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
+ * @property string|null $CidrEndpointsCustomSubDomain
  */
 class ModifyVerifiedAccessInstanceRequest extends Request
 {
     /**
      * @param array{
      *     VerifiedAccessInstanceId: string,
-     *     Description?: string,
-     *     DryRun?: bool,
-     *     ClientToken?: string,
-     *     CidrEndpointsCustomSubDomain?: string
+     *     Description?: string|null,
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null,
+     *     CidrEndpointsCustomSubDomain?: string|null
      * } $args
      */
     public function __construct(array $args)

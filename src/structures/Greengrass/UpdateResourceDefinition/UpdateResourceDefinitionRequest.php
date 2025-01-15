@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Greengrass\UpdateResourceDefinition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  * @property string $ResourceDefinitionId
  */
 class UpdateResourceDefinitionRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
+     *     Name?: string|null,
      *     ResourceDefinitionId: string
      * } $args
      */

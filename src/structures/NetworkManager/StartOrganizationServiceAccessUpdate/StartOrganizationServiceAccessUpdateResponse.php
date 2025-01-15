@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\NetworkManager\StartOrganizationServiceAccessUp
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\OrganizationStatus $OrganizationStatus
+ * @property Shapes\OrganizationStatus|null $OrganizationStatus
  */
 class StartOrganizationServiceAccessUpdateResponse extends Response
 {

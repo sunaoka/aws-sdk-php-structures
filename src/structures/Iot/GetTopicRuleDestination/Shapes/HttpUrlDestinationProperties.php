@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Iot\GetTopicRuleDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $confirmationUrl
+ * @property string|null $confirmationUrl
  */
 class HttpUrlDestinationProperties extends Shape
 {
     /**
-     * @param array{confirmationUrl?: string} $args
+     * @param array{confirmationUrl?: string|null} $args
      */
     public function __construct(array $args = [])
     {

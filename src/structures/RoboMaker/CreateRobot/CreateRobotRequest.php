@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property 'X86_64'|'ARM64'|'ARMHF' $architecture
  * @property string $greengrassGroupId
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateRobotRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateRobotRequest extends Request
      *     name: string,
      *     architecture: 'X86_64'|'ARM64'|'ARMHF',
      *     greengrassGroupId: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

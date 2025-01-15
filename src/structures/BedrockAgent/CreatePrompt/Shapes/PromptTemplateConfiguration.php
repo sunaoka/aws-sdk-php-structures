@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ChatPromptTemplateConfiguration $chat
- * @property TextPromptTemplateConfiguration $text
+ * @property ChatPromptTemplateConfiguration|null $chat
+ * @property TextPromptTemplateConfiguration|null $text
  */
 class PromptTemplateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     chat?: ChatPromptTemplateConfiguration,
-     *     text?: TextPromptTemplateConfiguration
+     *     chat?: ChatPromptTemplateConfiguration|null,
+     *     text?: TextPromptTemplateConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

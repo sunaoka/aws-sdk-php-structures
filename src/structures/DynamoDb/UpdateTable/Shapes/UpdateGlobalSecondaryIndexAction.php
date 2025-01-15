@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $IndexName
- * @property ProvisionedThroughput $ProvisionedThroughput
- * @property OnDemandThroughput $OnDemandThroughput
- * @property WarmThroughput $WarmThroughput
+ * @property ProvisionedThroughput|null $ProvisionedThroughput
+ * @property OnDemandThroughput|null $OnDemandThroughput
+ * @property WarmThroughput|null $WarmThroughput
  */
 class UpdateGlobalSecondaryIndexAction extends Shape
 {
     /**
      * @param array{
      *     IndexName: string,
-     *     ProvisionedThroughput?: ProvisionedThroughput,
-     *     OnDemandThroughput?: OnDemandThroughput,
-     *     WarmThroughput?: WarmThroughput
+     *     ProvisionedThroughput?: ProvisionedThroughput|null,
+     *     OnDemandThroughput?: OnDemandThroughput|null,
+     *     WarmThroughput?: WarmThroughput|null
      * } $args
      */
     public function __construct(array $args)

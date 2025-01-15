@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetResponseHeadersPolicyConfig;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResponseHeadersPolicyConfig $ResponseHeadersPolicyConfig
- * @property string $ETag
+ * @property Shapes\ResponseHeadersPolicyConfig|null $ResponseHeadersPolicyConfig
+ * @property string|null $ETag
  */
 class GetResponseHeadersPolicyConfigResponse extends Response
 {

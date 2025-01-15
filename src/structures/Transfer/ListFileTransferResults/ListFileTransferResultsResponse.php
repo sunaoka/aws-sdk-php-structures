@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ConnectorFileTransferResult> $FileTransferResults
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListFileTransferResultsResponse extends Response
 {

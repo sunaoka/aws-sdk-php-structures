@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeSubscriptionFilters\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $filterName
- * @property string $logGroupName
- * @property string $filterPattern
- * @property string $destinationArn
- * @property string $roleArn
- * @property 'Random'|'ByLogStream' $distribution
- * @property bool $applyOnTransformedLogs
- * @property int<0, max> $creationTime
+ * @property string|null $filterName
+ * @property string|null $logGroupName
+ * @property string|null $filterPattern
+ * @property string|null $destinationArn
+ * @property string|null $roleArn
+ * @property 'Random'|'ByLogStream'|null $distribution
+ * @property bool|null $applyOnTransformedLogs
+ * @property int<0, max>|null $creationTime
  */
 class SubscriptionFilter extends Shape
 {
     /**
      * @param array{
-     *     filterName?: string,
-     *     logGroupName?: string,
-     *     filterPattern?: string,
-     *     destinationArn?: string,
-     *     roleArn?: string,
-     *     distribution?: 'Random'|'ByLogStream',
-     *     applyOnTransformedLogs?: bool,
-     *     creationTime?: int<0, max>
+     *     filterName?: string|null,
+     *     logGroupName?: string|null,
+     *     filterPattern?: string|null,
+     *     destinationArn?: string|null,
+     *     roleArn?: string|null,
+     *     distribution?: 'Random'|'ByLogStream'|null,
+     *     applyOnTransformedLogs?: bool|null,
+     *     creationTime?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

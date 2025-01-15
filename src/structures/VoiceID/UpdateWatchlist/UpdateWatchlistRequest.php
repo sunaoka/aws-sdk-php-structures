@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\VoiceID\UpdateWatchlist;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $DomainId
- * @property string $Name
+ * @property string|null $Name
  * @property string $WatchlistId
  */
 class UpdateWatchlistRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     DomainId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     WatchlistId: string
      * } $args
      */

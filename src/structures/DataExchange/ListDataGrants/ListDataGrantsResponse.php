@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DataExchange\ListDataGrants;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DataGrantSummaryEntry> $DataGrantSummaries
- * @property string $NextToken
+ * @property list<Shapes\DataGrantSummaryEntry>|null $DataGrantSummaries
+ * @property string|null $NextToken
  */
 class ListDataGrantsResponse extends Response
 {

@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SelectSqlQuery
  * @property RDSDatabaseCredentials $DatabaseCredentials
  * @property string $S3StagingLocation
- * @property string $DataRearrangement
- * @property string $DataSchema
- * @property string $DataSchemaUri
+ * @property string|null $DataRearrangement
+ * @property string|null $DataSchema
+ * @property string|null $DataSchemaUri
  * @property string $ResourceRole
  * @property string $ServiceRole
  * @property string $SubnetId
@@ -25,9 +25,9 @@ class RDSDataSpec extends Shape
      *     SelectSqlQuery: string,
      *     DatabaseCredentials: RDSDatabaseCredentials,
      *     S3StagingLocation: string,
-     *     DataRearrangement?: string,
-     *     DataSchema?: string,
-     *     DataSchemaUri?: string,
+     *     DataRearrangement?: string|null,
+     *     DataSchema?: string|null,
+     *     DataSchemaUri?: string|null,
      *     ResourceRole: string,
      *     ServiceRole: string,
      *     SubnetId: string,

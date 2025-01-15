@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\CreateConstraint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConstraintId
- * @property string $Type
- * @property string $Description
- * @property string $Owner
- * @property string $ProductId
- * @property string $PortfolioId
+ * @property string|null $ConstraintId
+ * @property string|null $Type
+ * @property string|null $Description
+ * @property string|null $Owner
+ * @property string|null $ProductId
+ * @property string|null $PortfolioId
  */
 class ConstraintDetail extends Shape
 {
     /**
      * @param array{
-     *     ConstraintId?: string,
-     *     Type?: string,
-     *     Description?: string,
-     *     Owner?: string,
-     *     ProductId?: string,
-     *     PortfolioId?: string
+     *     ConstraintId?: string|null,
+     *     Type?: string|null,
+     *     Description?: string|null,
+     *     Owner?: string|null,
+     *     ProductId?: string|null,
+     *     PortfolioId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FlowArn
- * @property VpcInterfaceAttachment $FlowVpcInterfaceAttachment
+ * @property VpcInterfaceAttachment|null $FlowVpcInterfaceAttachment
  * @property string $Name
  */
 class AddBridgeFlowSourceRequest extends Shape
@@ -14,7 +14,7 @@ class AddBridgeFlowSourceRequest extends Shape
     /**
      * @param array{
      *     FlowArn: string,
-     *     FlowVpcInterfaceAttachment?: VpcInterfaceAttachment,
+     *     FlowVpcInterfaceAttachment?: VpcInterfaceAttachment|null,
      *     Name: string
      * } $args
      */

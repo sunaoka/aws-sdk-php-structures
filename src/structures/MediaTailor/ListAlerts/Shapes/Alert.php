@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $AlertCode
  * @property string $AlertMessage
- * @property 'SCHEDULING_ERROR'|'PLAYBACK_WARNING'|'INFO' $Category
+ * @property 'SCHEDULING_ERROR'|'PLAYBACK_WARNING'|'INFO'|null $Category
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property list<string> $RelatedResourceArns
  * @property string $ResourceArn
@@ -18,7 +18,7 @@ class Alert extends Shape
      * @param array{
      *     AlertCode: string,
      *     AlertMessage: string,
-     *     Category?: 'SCHEDULING_ERROR'|'PLAYBACK_WARNING'|'INFO',
+     *     Category?: 'SCHEDULING_ERROR'|'PLAYBACK_WARNING'|'INFO'|null,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     RelatedResourceArns: list<string>,
      *     ResourceArn: string

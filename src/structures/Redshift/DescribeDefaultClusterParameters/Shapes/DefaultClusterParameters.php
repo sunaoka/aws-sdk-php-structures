@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeDefaultClusterParameters\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterGroupFamily
- * @property string $Marker
- * @property list<Parameter> $Parameters
+ * @property string|null $ParameterGroupFamily
+ * @property string|null $Marker
+ * @property list<Parameter>|null $Parameters
  */
 class DefaultClusterParameters extends Shape
 {
     /**
      * @param array{
-     *     ParameterGroupFamily?: string,
-     *     Marker?: string,
-     *     Parameters?: list<Parameter>
+     *     ParameterGroupFamily?: string|null,
+     *     Marker?: string|null,
+     *     Parameters?: list<Parameter>|null
      * } $args
      */
     public function __construct(array $args = [])

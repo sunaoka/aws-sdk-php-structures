@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\GetSignalCatalog\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $totalNodes
- * @property int $totalBranches
- * @property int $totalSensors
- * @property int $totalAttributes
- * @property int $totalActuators
- * @property int $totalStructs
- * @property int $totalProperties
+ * @property int|null $totalNodes
+ * @property int|null $totalBranches
+ * @property int|null $totalSensors
+ * @property int|null $totalAttributes
+ * @property int|null $totalActuators
+ * @property int|null $totalStructs
+ * @property int|null $totalProperties
  */
 class NodeCounts extends Shape
 {
     /**
      * @param array{
-     *     totalNodes?: int,
-     *     totalBranches?: int,
-     *     totalSensors?: int,
-     *     totalAttributes?: int,
-     *     totalActuators?: int,
-     *     totalStructs?: int,
-     *     totalProperties?: int
+     *     totalNodes?: int|null,
+     *     totalBranches?: int|null,
+     *     totalSensors?: int|null,
+     *     totalAttributes?: int|null,
+     *     totalActuators?: int|null,
+     *     totalStructs?: int|null,
+     *     totalProperties?: int|null
      * } $args
      */
     public function __construct(array $args = [])

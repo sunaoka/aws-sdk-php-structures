@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DataZone\GetListing\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $assetId
- * @property string $assetRevision
- * @property string $assetType
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $forms
- * @property list<DetailedGlossaryTerm> $glossaryTerms
- * @property list<TimeSeriesDataPointSummaryFormOutput> $latestTimeSeriesDataPointForms
- * @property string $owningProjectId
+ * @property string|null $assetId
+ * @property string|null $assetRevision
+ * @property string|null $assetType
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $forms
+ * @property list<DetailedGlossaryTerm>|null $glossaryTerms
+ * @property list<TimeSeriesDataPointSummaryFormOutput>|null $latestTimeSeriesDataPointForms
+ * @property string|null $owningProjectId
  */
 class AssetListing extends Shape
 {
     /**
      * @param array{
-     *     assetId?: string,
-     *     assetRevision?: string,
-     *     assetType?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     forms?: string,
-     *     glossaryTerms?: list<DetailedGlossaryTerm>,
-     *     latestTimeSeriesDataPointForms?: list<TimeSeriesDataPointSummaryFormOutput>,
-     *     owningProjectId?: string
+     *     assetId?: string|null,
+     *     assetRevision?: string|null,
+     *     assetType?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     forms?: string|null,
+     *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
+     *     latestTimeSeriesDataPointForms?: list<TimeSeriesDataPointSummaryFormOutput>|null,
+     *     owningProjectId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

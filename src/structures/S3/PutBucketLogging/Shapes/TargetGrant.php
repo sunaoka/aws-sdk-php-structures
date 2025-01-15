@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketLogging\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Grantee $Grantee
- * @property 'FULL_CONTROL'|'READ'|'WRITE' $Permission
+ * @property Grantee|null $Grantee
+ * @property 'FULL_CONTROL'|'READ'|'WRITE'|null $Permission
  */
 class TargetGrant extends Shape
 {
     /**
      * @param array{
-     *     Grantee?: Grantee,
-     *     Permission?: 'FULL_CONTROL'|'READ'|'WRITE'
+     *     Grantee?: Grantee|null,
+     *     Permission?: 'FULL_CONTROL'|'READ'|'WRITE'|null
      * } $args
      */
     public function __construct(array $args = [])

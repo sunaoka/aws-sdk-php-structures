@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\DeleteLakeFormationOptIn\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
- * @property string $Name
- * @property TableWildcard $TableWildcard
+ * @property string|null $Name
+ * @property TableWildcard|null $TableWildcard
  */
 class TableResource extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
-     *     Name?: string,
-     *     TableWildcard?: TableWildcard
+     *     Name?: string|null,
+     *     TableWildcard?: TableWildcard|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $testCaseVersion
  * @property string $testRunId
  * @property 'Success'|'Running'|'Failed' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  * @property \Aws\Api\DateTimeResult $runStartTime
- * @property \Aws\Api\DateTimeResult $runEndTime
+ * @property \Aws\Api\DateTimeResult|null $runEndTime
  */
 class TestCaseRunSummary extends Shape
 {
@@ -21,9 +21,9 @@ class TestCaseRunSummary extends Shape
      *     testCaseVersion: int,
      *     testRunId: string,
      *     status: 'Success'|'Running'|'Failed',
-     *     statusReason?: string,
+     *     statusReason?: string|null,
      *     runStartTime: \Aws\Api\DateTimeResult,
-     *     runEndTime?: \Aws\Api\DateTimeResult
+     *     runEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

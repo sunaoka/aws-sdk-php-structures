@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\CreateElasticsearchDomain\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MasterUserARN
- * @property string $MasterUserName
- * @property string $MasterUserPassword
+ * @property string|null $MasterUserARN
+ * @property string|null $MasterUserName
+ * @property string|null $MasterUserPassword
  */
 class MasterUserOptions extends Shape
 {
     /**
      * @param array{
-     *     MasterUserARN?: string,
-     *     MasterUserName?: string,
-     *     MasterUserPassword?: string
+     *     MasterUserARN?: string|null,
+     *     MasterUserName?: string|null,
+     *     MasterUserPassword?: string|null
      * } $args
      */
     public function __construct(array $args = [])

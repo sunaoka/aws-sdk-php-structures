@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\GetCollaborationConfiguredModelAlg
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<LogsConfigurationPolicy> $containerLogs
- * @property TrainedModelInferenceMaxOutputSize $maxOutputSize
+ * @property list<LogsConfigurationPolicy>|null $containerLogs
+ * @property TrainedModelInferenceMaxOutputSize|null $maxOutputSize
  */
 class TrainedModelInferenceJobsConfigurationPolicy extends Shape
 {
     /**
      * @param array{
-     *     containerLogs?: list<LogsConfigurationPolicy>,
-     *     maxOutputSize?: TrainedModelInferenceMaxOutputSize
+     *     containerLogs?: list<LogsConfigurationPolicy>|null,
+     *     maxOutputSize?: TrainedModelInferenceMaxOutputSize|null
      * } $args
      */
     public function __construct(array $args = [])

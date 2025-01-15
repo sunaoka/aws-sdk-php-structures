@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetLogDeliveryConfigura
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LogGroupArn
+ * @property string|null $LogGroupArn
  */
 class CloudWatchLogsConfigurationType extends Shape
 {
     /**
-     * @param array{LogGroupArn?: string} $args
+     * @param array{LogGroupArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

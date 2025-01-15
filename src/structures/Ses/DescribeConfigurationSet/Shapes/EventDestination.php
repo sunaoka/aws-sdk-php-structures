@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property bool $Enabled
+ * @property bool|null $Enabled
  * @property list<'send'|'reject'|'bounce'|'complaint'|'delivery'|'open'|'click'|'renderingFailure'> $MatchingEventTypes
- * @property KinesisFirehoseDestination $KinesisFirehoseDestination
- * @property CloudWatchDestination $CloudWatchDestination
- * @property SNSDestination $SNSDestination
+ * @property KinesisFirehoseDestination|null $KinesisFirehoseDestination
+ * @property CloudWatchDestination|null $CloudWatchDestination
+ * @property SNSDestination|null $SNSDestination
  */
 class EventDestination extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Enabled?: bool,
+     *     Enabled?: bool|null,
      *     MatchingEventTypes: list<'send'|'reject'|'bounce'|'complaint'|'delivery'|'open'|'click'|'renderingFailure'>,
-     *     KinesisFirehoseDestination?: KinesisFirehoseDestination,
-     *     CloudWatchDestination?: CloudWatchDestination,
-     *     SNSDestination?: SNSDestination
+     *     KinesisFirehoseDestination?: KinesisFirehoseDestination|null,
+     *     CloudWatchDestination?: CloudWatchDestination|null,
+     *     SNSDestination?: SNSDestination|null
      * } $args
      */
     public function __construct(array $args)

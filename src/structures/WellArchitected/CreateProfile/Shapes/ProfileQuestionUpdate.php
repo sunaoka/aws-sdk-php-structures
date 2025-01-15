@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WellArchitected\CreateProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QuestionId
- * @property list<string> $SelectedChoiceIds
+ * @property string|null $QuestionId
+ * @property list<string>|null $SelectedChoiceIds
  */
 class ProfileQuestionUpdate extends Shape
 {
     /**
      * @param array{
-     *     QuestionId?: string,
-     *     SelectedChoiceIds?: list<string>
+     *     QuestionId?: string|null,
+     *     SelectedChoiceIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

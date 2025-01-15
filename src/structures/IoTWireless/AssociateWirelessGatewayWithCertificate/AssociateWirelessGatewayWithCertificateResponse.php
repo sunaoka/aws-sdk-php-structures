@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\IoTWireless\AssociateWirelessGatewayWithCertifi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $IotCertificateId
+ * @property string|null $IotCertificateId
  */
 class AssociateWirelessGatewayWithCertificateResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $Names
- * @property bool $WithDecryption
+ * @property bool|null $WithDecryption
  */
 class GetParametersRequest extends Request
 {
     /**
      * @param array{
      *     Names: list<string>,
-     *     WithDecryption?: bool
+     *     WithDecryption?: bool|null
      * } $args
      */
     public function __construct(array $args)

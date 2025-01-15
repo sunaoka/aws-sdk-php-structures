@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\AddPolicyGrant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DomainUnitFilterForProject $domainUnitFilter
+ * @property DomainUnitFilterForProject|null $domainUnitFilter
  */
 class ProjectGrantFilter extends Shape
 {
     /**
-     * @param array{domainUnitFilter?: DomainUnitFilterForProject} $args
+     * @param array{domainUnitFilter?: DomainUnitFilterForProject|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $Actions
- * @property list<string> $PrincipalOrgIDs
+ * @property list<string>|null $PrincipalOrgIDs
  * @property list<string> $Principals
- * @property string $StatementId
+ * @property string|null $StatementId
  */
 class ApplicationPolicyStatement extends Shape
 {
     /**
      * @param array{
      *     Actions: list<string>,
-     *     PrincipalOrgIDs?: list<string>,
+     *     PrincipalOrgIDs?: list<string>|null,
      *     Principals: list<string>,
-     *     StatementId?: string
+     *     StatementId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IndexId
  * @property string $Id
- * @property string $Name
- * @property string $Description
- * @property list<Shapes\Principal> $AccessControlList
- * @property list<Shapes\HierarchicalPrincipal> $HierarchicalAccessControlList
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property list<Shapes\Principal>|null $AccessControlList
+ * @property list<Shapes\HierarchicalPrincipal>|null $HierarchicalAccessControlList
  */
 class UpdateAccessControlConfigurationRequest extends Request
 {
@@ -18,10 +18,10 @@ class UpdateAccessControlConfigurationRequest extends Request
      * @param array{
      *     IndexId: string,
      *     Id: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     AccessControlList?: list<Shapes\Principal>,
-     *     HierarchicalAccessControlList?: list<Shapes\HierarchicalPrincipal>
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     AccessControlList?: list<Shapes\Principal>|null,
+     *     HierarchicalAccessControlList?: list<Shapes\HierarchicalPrincipal>|null
      * } $args
      */
     public function __construct(array $args)

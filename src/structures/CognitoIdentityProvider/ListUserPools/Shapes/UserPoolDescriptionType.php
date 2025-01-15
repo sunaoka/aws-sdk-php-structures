@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\ListUserPools\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property LambdaConfigType $LambdaConfig
- * @property 'Enabled'|'Disabled' $Status
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property \Aws\Api\DateTimeResult $CreationDate
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property LambdaConfigType|null $LambdaConfig
+ * @property 'Enabled'|'Disabled'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
  */
 class UserPoolDescriptionType extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     LambdaConfig?: LambdaConfigType,
-     *     Status?: 'Enabled'|'Disabled',
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     CreationDate?: \Aws\Api\DateTimeResult
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     LambdaConfig?: LambdaConfigType|null,
+     *     Status?: 'Enabled'|'Disabled'|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

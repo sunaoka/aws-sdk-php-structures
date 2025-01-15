@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeImageGenerationConfigurati
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
- * @property string $StreamARN
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
  */
 class DescribeImageGenerationConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     StreamARN?: string
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

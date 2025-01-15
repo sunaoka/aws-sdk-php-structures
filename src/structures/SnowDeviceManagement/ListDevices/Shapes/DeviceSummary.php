@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\ListDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $associatedWithJob
- * @property string $managedDeviceArn
- * @property string $managedDeviceId
- * @property array<string, string> $tags
+ * @property string|null $associatedWithJob
+ * @property string|null $managedDeviceArn
+ * @property string|null $managedDeviceId
+ * @property array<string, string>|null $tags
  */
 class DeviceSummary extends Shape
 {
     /**
      * @param array{
-     *     associatedWithJob?: string,
-     *     managedDeviceArn?: string,
-     *     managedDeviceId?: string,
-     *     tags?: array<string, string>
+     *     associatedWithJob?: string|null,
+     *     managedDeviceArn?: string|null,
+     *     managedDeviceId?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

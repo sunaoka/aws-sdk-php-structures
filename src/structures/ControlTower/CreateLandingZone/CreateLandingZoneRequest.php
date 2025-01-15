@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Manifest $manifest
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $version
  */
 class CreateLandingZoneRequest extends Request
@@ -14,7 +14,7 @@ class CreateLandingZoneRequest extends Request
     /**
      * @param array{
      *     manifest: Shapes\Manifest,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     version: string
      * } $args
      */

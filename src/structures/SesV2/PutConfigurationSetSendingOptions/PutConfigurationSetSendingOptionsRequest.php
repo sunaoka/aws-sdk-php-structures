@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigurationSetName
- * @property bool $SendingEnabled
+ * @property bool|null $SendingEnabled
  */
 class PutConfigurationSetSendingOptionsRequest extends Request
 {
     /**
      * @param array{
      *     ConfigurationSetName: string,
-     *     SendingEnabled?: bool
+     *     SendingEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssetItem $assetItem
- * @property DataProductResultItem $dataProductItem
- * @property GlossaryItem $glossaryItem
- * @property GlossaryTermItem $glossaryTermItem
+ * @property AssetItem|null $assetItem
+ * @property DataProductResultItem|null $dataProductItem
+ * @property GlossaryItem|null $glossaryItem
+ * @property GlossaryTermItem|null $glossaryTermItem
  */
 class SearchInventoryResultItem extends Shape
 {
     /**
      * @param array{
-     *     assetItem?: AssetItem,
-     *     dataProductItem?: DataProductResultItem,
-     *     glossaryItem?: GlossaryItem,
-     *     glossaryTermItem?: GlossaryTermItem
+     *     assetItem?: AssetItem|null,
+     *     dataProductItem?: DataProductResultItem|null,
+     *     glossaryItem?: GlossaryItem|null,
+     *     glossaryTermItem?: GlossaryTermItem|null
      * } $args
      */
     public function __construct(array $args = [])

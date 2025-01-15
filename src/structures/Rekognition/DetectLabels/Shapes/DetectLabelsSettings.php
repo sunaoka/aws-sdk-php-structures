@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectLabels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeneralLabelsSettings $GeneralLabels
- * @property DetectLabelsImagePropertiesSettings $ImageProperties
+ * @property GeneralLabelsSettings|null $GeneralLabels
+ * @property DetectLabelsImagePropertiesSettings|null $ImageProperties
  */
 class DetectLabelsSettings extends Shape
 {
     /**
      * @param array{
-     *     GeneralLabels?: GeneralLabelsSettings,
-     *     ImageProperties?: DetectLabelsImagePropertiesSettings
+     *     GeneralLabels?: GeneralLabelsSettings|null,
+     *     ImageProperties?: DetectLabelsImagePropertiesSettings|null
      * } $args
      */
     public function __construct(array $args = [])

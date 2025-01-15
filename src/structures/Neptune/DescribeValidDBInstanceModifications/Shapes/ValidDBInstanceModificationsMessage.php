@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Neptune\DescribeValidDBInstanceModifications\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ValidStorageOptions> $Storage
+ * @property list<ValidStorageOptions>|null $Storage
  */
 class ValidDBInstanceModificationsMessage extends Shape
 {
     /**
-     * @param array{Storage?: list<ValidStorageOptions>} $args
+     * @param array{Storage?: list<ValidStorageOptions>|null} $args
      */
     public function __construct(array $args = [])
     {

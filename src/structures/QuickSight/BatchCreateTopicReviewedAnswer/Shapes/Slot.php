@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\BatchCreateTopicReviewedAnswer\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SlotId
- * @property string $VisualId
+ * @property string|null $SlotId
+ * @property string|null $VisualId
  */
 class Slot extends Shape
 {
     /**
      * @param array{
-     *     SlotId?: string,
-     *     VisualId?: string
+     *     SlotId?: string|null,
+     *     VisualId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

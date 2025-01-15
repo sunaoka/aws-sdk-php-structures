@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\UpdateVehicle;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $vehicleName
- * @property string $arn
+ * @property string|null $vehicleName
+ * @property string|null $arn
  */
 class UpdateVehicleResponse extends Response
 {

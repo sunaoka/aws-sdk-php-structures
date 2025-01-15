@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackId
- * @property string $AppId
- * @property list<string> $InstanceIds
- * @property list<string> $LayerIds
+ * @property string|null $AppId
+ * @property list<string>|null $InstanceIds
+ * @property list<string>|null $LayerIds
  * @property Shapes\DeploymentCommand $Command
- * @property string $Comment
- * @property string $CustomJson
+ * @property string|null $Comment
+ * @property string|null $CustomJson
  */
 class CreateDeploymentRequest extends Request
 {
     /**
      * @param array{
      *     StackId: string,
-     *     AppId?: string,
-     *     InstanceIds?: list<string>,
-     *     LayerIds?: list<string>,
+     *     AppId?: string|null,
+     *     InstanceIds?: list<string>|null,
+     *     LayerIds?: list<string>|null,
      *     Command: Shapes\DeploymentCommand,
-     *     Comment?: string,
-     *     CustomJson?: string
+     *     Comment?: string|null,
+     *     CustomJson?: string|null
      * } $args
      */
     public function __construct(array $args)

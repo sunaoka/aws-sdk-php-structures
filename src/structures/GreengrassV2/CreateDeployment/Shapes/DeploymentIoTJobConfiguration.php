@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\CreateDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IoTJobExecutionsRolloutConfig $jobExecutionsRolloutConfig
- * @property IoTJobAbortConfig $abortConfig
- * @property IoTJobTimeoutConfig $timeoutConfig
+ * @property IoTJobExecutionsRolloutConfig|null $jobExecutionsRolloutConfig
+ * @property IoTJobAbortConfig|null $abortConfig
+ * @property IoTJobTimeoutConfig|null $timeoutConfig
  */
 class DeploymentIoTJobConfiguration extends Shape
 {
     /**
      * @param array{
-     *     jobExecutionsRolloutConfig?: IoTJobExecutionsRolloutConfig,
-     *     abortConfig?: IoTJobAbortConfig,
-     *     timeoutConfig?: IoTJobTimeoutConfig
+     *     jobExecutionsRolloutConfig?: IoTJobExecutionsRolloutConfig|null,
+     *     abortConfig?: IoTJobAbortConfig|null,
+     *     timeoutConfig?: IoTJobTimeoutConfig|null
      * } $args
      */
     public function __construct(array $args = [])

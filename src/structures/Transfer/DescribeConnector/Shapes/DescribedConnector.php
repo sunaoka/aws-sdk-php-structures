@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property string $ConnectorId
- * @property string $Url
- * @property As2ConnectorConfig $As2Config
- * @property string $AccessRole
- * @property string $LoggingRole
- * @property list<Tag> $Tags
- * @property SftpConnectorConfig $SftpConfig
- * @property list<string> $ServiceManagedEgressIpAddresses
- * @property string $SecurityPolicyName
+ * @property string|null $ConnectorId
+ * @property string|null $Url
+ * @property As2ConnectorConfig|null $As2Config
+ * @property string|null $AccessRole
+ * @property string|null $LoggingRole
+ * @property list<Tag>|null $Tags
+ * @property SftpConnectorConfig|null $SftpConfig
+ * @property list<string>|null $ServiceManagedEgressIpAddresses
+ * @property string|null $SecurityPolicyName
  */
 class DescribedConnector extends Shape
 {
     /**
      * @param array{
      *     Arn: string,
-     *     ConnectorId?: string,
-     *     Url?: string,
-     *     As2Config?: As2ConnectorConfig,
-     *     AccessRole?: string,
-     *     LoggingRole?: string,
-     *     Tags?: list<Tag>,
-     *     SftpConfig?: SftpConnectorConfig,
-     *     ServiceManagedEgressIpAddresses?: list<string>,
-     *     SecurityPolicyName?: string
+     *     ConnectorId?: string|null,
+     *     Url?: string|null,
+     *     As2Config?: As2ConnectorConfig|null,
+     *     AccessRole?: string|null,
+     *     LoggingRole?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     SftpConfig?: SftpConnectorConfig|null,
+     *     ServiceManagedEgressIpAddresses?: list<string>|null,
+     *     SecurityPolicyName?: string|null
      * } $args
      */
     public function __construct(array $args)

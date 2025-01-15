@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property string $LogGroup
+ * @property string|null $LogGroup
  */
 class VerifiedAccessLogCloudWatchLogsDestinationOptions extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     LogGroup?: string
+     *     LogGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

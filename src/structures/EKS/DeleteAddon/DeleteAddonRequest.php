@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterName
  * @property string $addonName
- * @property bool $preserve
+ * @property bool|null $preserve
  */
 class DeleteAddonRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteAddonRequest extends Request
      * @param array{
      *     clusterName: string,
      *     addonName: string,
-     *     preserve?: bool
+     *     preserve?: bool|null
      * } $args
      */
     public function __construct(array $args)

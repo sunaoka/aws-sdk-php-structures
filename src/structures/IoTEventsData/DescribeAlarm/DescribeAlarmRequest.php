@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $alarmModelName
- * @property string $keyValue
+ * @property string|null $keyValue
  */
 class DescribeAlarmRequest extends Request
 {
     /**
      * @param array{
      *     alarmModelName: string,
-     *     keyValue?: string
+     *     keyValue?: string|null
      * } $args
      */
     public function __construct(array $args)

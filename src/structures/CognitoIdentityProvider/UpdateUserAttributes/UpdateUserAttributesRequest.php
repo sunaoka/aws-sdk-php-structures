@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\AttributeType> $UserAttributes
  * @property string $AccessToken
- * @property array<string, string> $ClientMetadata
+ * @property array<string, string>|null $ClientMetadata
  */
 class UpdateUserAttributesRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateUserAttributesRequest extends Request
      * @param array{
      *     UserAttributes: list<Shapes\AttributeType>,
      *     AccessToken: string,
-     *     ClientMetadata?: array<string, string>
+     *     ClientMetadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

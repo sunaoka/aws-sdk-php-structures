@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Support\ResolveCase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $caseId
+ * @property string|null $caseId
  */
 class ResolveCaseRequest extends Request
 {
     /**
-     * @param array{caseId?: string} $args
+     * @param array{caseId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

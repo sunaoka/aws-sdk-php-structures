@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\kendra\DescribeDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<BasicAuthenticationConfiguration> $BasicAuthentication
+ * @property list<BasicAuthenticationConfiguration>|null $BasicAuthentication
  */
 class AuthenticationConfiguration extends Shape
 {
     /**
-     * @param array{BasicAuthentication?: list<BasicAuthenticationConfiguration>} $args
+     * @param array{BasicAuthentication?: list<BasicAuthenticationConfiguration>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property ChannelStorage $storage
- * @property string $arn
- * @property 'CREATING'|'ACTIVE'|'DELETING' $status
- * @property RetentionPeriod $retentionPeriod
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property \Aws\Api\DateTimeResult $lastMessageArrivalTime
+ * @property string|null $name
+ * @property ChannelStorage|null $storage
+ * @property string|null $arn
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|null $status
+ * @property RetentionPeriod|null $retentionPeriod
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property \Aws\Api\DateTimeResult|null $lastMessageArrivalTime
  */
 class Channel extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     storage?: ChannelStorage,
-     *     arn?: string,
-     *     status?: 'CREATING'|'ACTIVE'|'DELETING',
-     *     retentionPeriod?: RetentionPeriod,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     lastMessageArrivalTime?: \Aws\Api\DateTimeResult
+     *     name?: string|null,
+     *     storage?: ChannelStorage|null,
+     *     arn?: string|null,
+     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|null,
+     *     retentionPeriod?: RetentionPeriod|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastMessageArrivalTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListCollect
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Collector> $Collectors
- * @property string $nextToken
+ * @property list<Shapes\Collector>|null $Collectors
+ * @property string|null $nextToken
  */
 class ListCollectorsResponse extends Response
 {

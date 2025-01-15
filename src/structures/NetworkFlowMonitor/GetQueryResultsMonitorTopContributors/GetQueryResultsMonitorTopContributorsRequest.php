@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $monitorName
  * @property string $queryId
- * @property string $nextToken
- * @property int $maxResults
+ * @property string|null $nextToken
+ * @property int|null $maxResults
  */
 class GetQueryResultsMonitorTopContributorsRequest extends Request
 {
@@ -16,8 +16,8 @@ class GetQueryResultsMonitorTopContributorsRequest extends Request
      * @param array{
      *     monitorName: string,
      *     queryId: string,
-     *     nextToken?: string,
-     *     maxResults?: int
+     *     nextToken?: string|null,
+     *     maxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DirectoryService\DescribeClientAuthenticationSe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ClientAuthenticationSettingInfo> $ClientAuthenticationSettingsInfo
- * @property string $NextToken
+ * @property list<Shapes\ClientAuthenticationSettingInfo>|null $ClientAuthenticationSettingsInfo
+ * @property string|null $NextToken
  */
 class DescribeClientAuthenticationSettingsResponse extends Response
 {

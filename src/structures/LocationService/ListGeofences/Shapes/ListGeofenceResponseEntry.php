@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Status
  * @property \Aws\Api\DateTimeResult $CreateTime
  * @property \Aws\Api\DateTimeResult $UpdateTime
- * @property array<string, string> $GeofenceProperties
+ * @property array<string, string>|null $GeofenceProperties
  */
 class ListGeofenceResponseEntry extends Shape
 {
@@ -21,7 +21,7 @@ class ListGeofenceResponseEntry extends Shape
      *     Status: string,
      *     CreateTime: \Aws\Api\DateTimeResult,
      *     UpdateTime: \Aws\Api\DateTimeResult,
-     *     GeofenceProperties?: array<string, string>
+     *     GeofenceProperties?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

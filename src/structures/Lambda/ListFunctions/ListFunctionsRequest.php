@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Lambda\ListFunctions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $MasterRegion
- * @property 'ALL' $FunctionVersion
- * @property string $Marker
- * @property int<1, 10000> $MaxItems
+ * @property string|null $MasterRegion
+ * @property 'ALL'|null $FunctionVersion
+ * @property string|null $Marker
+ * @property int<1, 10000>|null $MaxItems
  */
 class ListFunctionsRequest extends Request
 {
     /**
      * @param array{
-     *     MasterRegion?: string,
-     *     FunctionVersion?: 'ALL',
-     *     Marker?: string,
-     *     MaxItems?: int<1, 10000>
+     *     MasterRegion?: string|null,
+     *     FunctionVersion?: 'ALL'|null,
+     *     Marker?: string|null,
+     *     MaxItems?: int<1, 10000>|null
      * } $args
      */
     public function __construct(array $args = [])

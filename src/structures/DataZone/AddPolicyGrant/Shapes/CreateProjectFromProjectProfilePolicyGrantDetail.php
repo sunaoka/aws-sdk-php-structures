@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\AddPolicyGrant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $includeChildDomainUnits
- * @property list<string> $projectProfiles
+ * @property bool|null $includeChildDomainUnits
+ * @property list<string>|null $projectProfiles
  */
 class CreateProjectFromProjectProfilePolicyGrantDetail extends Shape
 {
     /**
      * @param array{
-     *     includeChildDomainUnits?: bool,
-     *     projectProfiles?: list<string>
+     *     includeChildDomainUnits?: bool|null,
+     *     projectProfiles?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

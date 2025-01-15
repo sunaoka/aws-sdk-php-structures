@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $KvsARN
  * @property string $IfMatch
- * @property list<Shapes\PutKeyRequestListItem> $Puts
- * @property list<Shapes\DeleteKeyRequestListItem> $Deletes
+ * @property list<Shapes\PutKeyRequestListItem>|null $Puts
+ * @property list<Shapes\DeleteKeyRequestListItem>|null $Deletes
  */
 class UpdateKeysRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateKeysRequest extends Request
      * @param array{
      *     KvsARN: string,
      *     IfMatch: string,
-     *     Puts?: list<Shapes\PutKeyRequestListItem>,
-     *     Deletes?: list<Shapes\DeleteKeyRequestListItem>
+     *     Puts?: list<Shapes\PutKeyRequestListItem>|null,
+     *     Deletes?: list<Shapes\DeleteKeyRequestListItem>|null
      * } $args
      */
     public function __construct(array $args)

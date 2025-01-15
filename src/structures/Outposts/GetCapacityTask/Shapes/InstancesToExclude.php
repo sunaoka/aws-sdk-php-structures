@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Outposts\GetCapacityTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Instances
- * @property list<string> $AccountIds
- * @property list<'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'> $Services
+ * @property list<string>|null $Instances
+ * @property list<string>|null $AccountIds
+ * @property list<'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'>|null $Services
  */
 class InstancesToExclude extends Shape
 {
     /**
      * @param array{
-     *     Instances?: list<string>,
-     *     AccountIds?: list<string>,
-     *     Services?: list<'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'>
+     *     Instances?: list<string>|null,
+     *     AccountIds?: list<string>|null,
+     *     Services?: list<'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'>|null
      * } $args
      */
     public function __construct(array $args = [])

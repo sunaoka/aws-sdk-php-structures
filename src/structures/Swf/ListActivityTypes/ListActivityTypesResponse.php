@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ActivityTypeInfo> $typeInfos
- * @property string $nextPageToken
+ * @property string|null $nextPageToken
  */
 class ListActivityTypesResponse extends Response
 {

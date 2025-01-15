@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $SnsTopicArns
  * @property string $IamRoleArn
  * @property string $ConfigurationName
- * @property string $LoggingLevel
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $LoggingLevel
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateChimeWebhookConfigurationRequest extends Request
 {
@@ -22,8 +22,8 @@ class CreateChimeWebhookConfigurationRequest extends Request
      *     SnsTopicArns: list<string>,
      *     IamRoleArn: string,
      *     ConfigurationName: string,
-     *     LoggingLevel?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     LoggingLevel?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

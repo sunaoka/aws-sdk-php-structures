@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeSignalingChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChannelName
- * @property string $ChannelARN
- * @property 'SINGLE_MASTER'|'FULL_MESH' $ChannelType
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING' $ChannelStatus
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property SingleMasterConfiguration $SingleMasterConfiguration
- * @property string $Version
+ * @property string|null $ChannelName
+ * @property string|null $ChannelARN
+ * @property 'SINGLE_MASTER'|'FULL_MESH'|null $ChannelType
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|null $ChannelStatus
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property SingleMasterConfiguration|null $SingleMasterConfiguration
+ * @property string|null $Version
  */
 class ChannelInfo extends Shape
 {
     /**
      * @param array{
-     *     ChannelName?: string,
-     *     ChannelARN?: string,
-     *     ChannelType?: 'SINGLE_MASTER'|'FULL_MESH',
-     *     ChannelStatus?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     SingleMasterConfiguration?: SingleMasterConfiguration,
-     *     Version?: string
+     *     ChannelName?: string|null,
+     *     ChannelARN?: string|null,
+     *     ChannelType?: 'SINGLE_MASTER'|'FULL_MESH'|null,
+     *     ChannelStatus?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     SingleMasterConfiguration?: SingleMasterConfiguration|null,
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateTLSInspectionConfiguratio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceArn
+ * @property string|null $ResourceArn
  */
 class ServerCertificate extends Shape
 {
     /**
-     * @param array{ResourceArn?: string} $args
+     * @param array{ResourceArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

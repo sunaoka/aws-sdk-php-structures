@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $IdentityPoolId
  * @property string $IdentityPoolName
  * @property bool $AllowUnauthenticatedIdentities
- * @property bool $AllowClassicFlow
- * @property array<string, string> $SupportedLoginProviders
- * @property string $DeveloperProviderName
- * @property list<string> $OpenIdConnectProviderARNs
- * @property list<Shapes\CognitoIdentityProvider> $CognitoIdentityProviders
- * @property list<string> $SamlProviderARNs
- * @property array<string, string> $IdentityPoolTags
+ * @property bool|null $AllowClassicFlow
+ * @property array<string, string>|null $SupportedLoginProviders
+ * @property string|null $DeveloperProviderName
+ * @property list<string>|null $OpenIdConnectProviderARNs
+ * @property list<Shapes\CognitoIdentityProvider>|null $CognitoIdentityProviders
+ * @property list<string>|null $SamlProviderARNs
+ * @property array<string, string>|null $IdentityPoolTags
  */
 class CreateIdentityPoolResponse extends Response
 {

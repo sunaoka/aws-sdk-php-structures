@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SOURCE_TYPE'|'TOTAL_SIZE'|'CREATE_TIME' $Attribute
- * @property 'ASC'|'DESC' $SortOrder
+ * @property 'ASC'|'DESC'|null $SortOrder
  */
 class SnapshotSortingEntity extends Shape
 {
     /**
      * @param array{
      *     Attribute: 'SOURCE_TYPE'|'TOTAL_SIZE'|'CREATE_TIME',
-     *     SortOrder?: 'ASC'|'DESC'
+     *     SortOrder?: 'ASC'|'DESC'|null
      * } $args
      */
     public function __construct(array $args)

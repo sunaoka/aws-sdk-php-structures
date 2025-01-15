@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Sfn\GetExecutionHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $error
- * @property string $cause
+ * @property string|null $error
+ * @property string|null $cause
  */
 class ExecutionFailedEventDetails extends Shape
 {
     /**
      * @param array{
-     *     error?: string,
-     *     cause?: string
+     *     error?: string|null,
+     *     cause?: string|null
      * } $args
      */
     public function __construct(array $args = [])

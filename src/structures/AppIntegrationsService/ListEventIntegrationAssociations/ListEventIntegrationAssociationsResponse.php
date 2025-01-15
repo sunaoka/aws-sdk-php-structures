@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\ListEventIntegrationAsso
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EventIntegrationAssociation> $EventIntegrationAssociations
- * @property string $NextToken
+ * @property list<Shapes\EventIntegrationAssociation>|null $EventIntegrationAssociations
+ * @property string|null $NextToken
  */
 class ListEventIntegrationAssociationsResponse extends Response
 {

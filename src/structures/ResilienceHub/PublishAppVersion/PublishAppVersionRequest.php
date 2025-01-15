@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $appArn
- * @property string $versionName
+ * @property string|null $versionName
  */
 class PublishAppVersionRequest extends Request
 {
     /**
      * @param array{
      *     appArn: string,
-     *     versionName?: string
+     *     versionName?: string|null
      * } $args
      */
     public function __construct(array $args)

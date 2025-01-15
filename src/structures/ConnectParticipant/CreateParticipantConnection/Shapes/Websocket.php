@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectParticipant\CreateParticipantConnection\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Url
- * @property string $ConnectionExpiry
+ * @property string|null $Url
+ * @property string|null $ConnectionExpiry
  */
 class Websocket extends Shape
 {
     /**
      * @param array{
-     *     Url?: string,
-     *     ConnectionExpiry?: string
+     *     Url?: string|null,
+     *     ConnectionExpiry?: string|null
      * } $args
      */
     public function __construct(array $args = [])

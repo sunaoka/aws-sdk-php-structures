@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property list<string> $Metrics
+ * @property list<string>|null $Metrics
  * @property string $Granularity
  */
 class EnableMetricsCollectionRequest extends Request
@@ -14,7 +14,7 @@ class EnableMetricsCollectionRequest extends Request
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     Metrics?: list<string>,
+     *     Metrics?: list<string>|null,
      *     Granularity: string
      * } $args
      */

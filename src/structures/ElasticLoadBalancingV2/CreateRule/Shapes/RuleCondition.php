@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\CreateRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Field
- * @property list<string> $Values
- * @property HostHeaderConditionConfig $HostHeaderConfig
- * @property PathPatternConditionConfig $PathPatternConfig
- * @property HttpHeaderConditionConfig $HttpHeaderConfig
- * @property QueryStringConditionConfig $QueryStringConfig
- * @property HttpRequestMethodConditionConfig $HttpRequestMethodConfig
- * @property SourceIpConditionConfig $SourceIpConfig
+ * @property string|null $Field
+ * @property list<string>|null $Values
+ * @property HostHeaderConditionConfig|null $HostHeaderConfig
+ * @property PathPatternConditionConfig|null $PathPatternConfig
+ * @property HttpHeaderConditionConfig|null $HttpHeaderConfig
+ * @property QueryStringConditionConfig|null $QueryStringConfig
+ * @property HttpRequestMethodConditionConfig|null $HttpRequestMethodConfig
+ * @property SourceIpConditionConfig|null $SourceIpConfig
  */
 class RuleCondition extends Shape
 {
     /**
      * @param array{
-     *     Field?: string,
-     *     Values?: list<string>,
-     *     HostHeaderConfig?: HostHeaderConditionConfig,
-     *     PathPatternConfig?: PathPatternConditionConfig,
-     *     HttpHeaderConfig?: HttpHeaderConditionConfig,
-     *     QueryStringConfig?: QueryStringConditionConfig,
-     *     HttpRequestMethodConfig?: HttpRequestMethodConditionConfig,
-     *     SourceIpConfig?: SourceIpConditionConfig
+     *     Field?: string|null,
+     *     Values?: list<string>|null,
+     *     HostHeaderConfig?: HostHeaderConditionConfig|null,
+     *     PathPatternConfig?: PathPatternConditionConfig|null,
+     *     HttpHeaderConfig?: HttpHeaderConditionConfig|null,
+     *     QueryStringConfig?: QueryStringConditionConfig|null,
+     *     HttpRequestMethodConfig?: HttpRequestMethodConditionConfig|null,
+     *     SourceIpConfig?: SourceIpConditionConfig|null
      * } $args
      */
     public function __construct(array $args = [])

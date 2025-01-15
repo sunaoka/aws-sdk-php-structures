@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property string $InstanceOSUser
  * @property string $SSHPublicKey
- * @property string $AvailabilityZone
+ * @property string|null $AvailabilityZone
  */
 class SendSSHPublicKeyRequest extends Request
 {
@@ -17,7 +17,7 @@ class SendSSHPublicKeyRequest extends Request
      *     InstanceId: string,
      *     InstanceOSUser: string,
      *     SSHPublicKey: string,
-     *     AvailabilityZone?: string
+     *     AvailabilityZone?: string|null
      * } $args
      */
     public function __construct(array $args)

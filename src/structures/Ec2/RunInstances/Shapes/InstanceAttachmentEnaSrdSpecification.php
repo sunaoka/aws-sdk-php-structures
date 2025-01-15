@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\RunInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnaSrdEnabled
- * @property InstanceAttachmentEnaSrdUdpSpecification $EnaSrdUdpSpecification
+ * @property bool|null $EnaSrdEnabled
+ * @property InstanceAttachmentEnaSrdUdpSpecification|null $EnaSrdUdpSpecification
  */
 class InstanceAttachmentEnaSrdSpecification extends Shape
 {
     /**
      * @param array{
-     *     EnaSrdEnabled?: bool,
-     *     EnaSrdUdpSpecification?: InstanceAttachmentEnaSrdUdpSpecification
+     *     EnaSrdEnabled?: bool|null,
+     *     EnaSrdUdpSpecification?: InstanceAttachmentEnaSrdUdpSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

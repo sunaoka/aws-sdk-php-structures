@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\GetPercentiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $percent
- * @property double $value
+ * @property double|null $percent
+ * @property double|null $value
  */
 class PercentPair extends Shape
 {
     /**
      * @param array{
-     *     percent?: double,
-     *     value?: double
+     *     percent?: double|null,
+     *     value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

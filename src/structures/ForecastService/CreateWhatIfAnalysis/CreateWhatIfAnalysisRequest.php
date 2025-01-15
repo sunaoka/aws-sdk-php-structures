@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WhatIfAnalysisName
  * @property string $ForecastArn
- * @property Shapes\TimeSeriesSelector $TimeSeriesSelector
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\TimeSeriesSelector|null $TimeSeriesSelector
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateWhatIfAnalysisRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateWhatIfAnalysisRequest extends Request
      * @param array{
      *     WhatIfAnalysisName: string,
      *     ForecastArn: string,
-     *     TimeSeriesSelector?: Shapes\TimeSeriesSelector,
-     *     Tags?: list<Shapes\Tag>
+     *     TimeSeriesSelector?: Shapes\TimeSeriesSelector|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

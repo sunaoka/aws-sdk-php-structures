@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $architecture
- * @property string $author
+ * @property string|null $architecture
+ * @property string|null $author
  * @property string $imageHash
- * @property list<string> $imageTags
- * @property string $platform
- * @property \Aws\Api\DateTimeResult $pushedAt
+ * @property list<string>|null $imageTags
+ * @property string|null $platform
+ * @property \Aws\Api\DateTimeResult|null $pushedAt
  * @property string $registry
  * @property string $repositoryName
  */
@@ -18,12 +18,12 @@ class AwsEcrContainerImageDetails extends Shape
 {
     /**
      * @param array{
-     *     architecture?: string,
-     *     author?: string,
+     *     architecture?: string|null,
+     *     author?: string|null,
      *     imageHash: string,
-     *     imageTags?: list<string>,
-     *     platform?: string,
-     *     pushedAt?: \Aws\Api\DateTimeResult,
+     *     imageTags?: list<string>|null,
+     *     platform?: string|null,
+     *     pushedAt?: \Aws\Api\DateTimeResult|null,
      *     registry: string,
      *     repositoryName: string
      * } $args

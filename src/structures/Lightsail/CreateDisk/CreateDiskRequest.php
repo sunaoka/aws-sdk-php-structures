@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $diskName
  * @property string $availabilityZone
  * @property int $sizeInGb
- * @property list<Shapes\Tag> $tags
- * @property list<Shapes\AddOnRequest> $addOns
+ * @property list<Shapes\Tag>|null $tags
+ * @property list<Shapes\AddOnRequest>|null $addOns
  */
 class CreateDiskRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateDiskRequest extends Request
      *     diskName: string,
      *     availabilityZone: string,
      *     sizeInGb: int,
-     *     tags?: list<Shapes\Tag>,
-     *     addOns?: list<Shapes\AddOnRequest>
+     *     tags?: list<Shapes\Tag>|null,
+     *     addOns?: list<Shapes\AddOnRequest>|null
      * } $args
      */
     public function __construct(array $args)

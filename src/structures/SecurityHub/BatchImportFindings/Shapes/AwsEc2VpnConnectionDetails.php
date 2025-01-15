@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpnConnectionId
- * @property string $State
- * @property string $CustomerGatewayId
- * @property string $CustomerGatewayConfiguration
- * @property string $Type
- * @property string $VpnGatewayId
- * @property string $Category
- * @property list<AwsEc2VpnConnectionVgwTelemetryDetails> $VgwTelemetry
- * @property AwsEc2VpnConnectionOptionsDetails $Options
- * @property list<AwsEc2VpnConnectionRoutesDetails> $Routes
- * @property string $TransitGatewayId
+ * @property string|null $VpnConnectionId
+ * @property string|null $State
+ * @property string|null $CustomerGatewayId
+ * @property string|null $CustomerGatewayConfiguration
+ * @property string|null $Type
+ * @property string|null $VpnGatewayId
+ * @property string|null $Category
+ * @property list<AwsEc2VpnConnectionVgwTelemetryDetails>|null $VgwTelemetry
+ * @property AwsEc2VpnConnectionOptionsDetails|null $Options
+ * @property list<AwsEc2VpnConnectionRoutesDetails>|null $Routes
+ * @property string|null $TransitGatewayId
  */
 class AwsEc2VpnConnectionDetails extends Shape
 {
     /**
      * @param array{
-     *     VpnConnectionId?: string,
-     *     State?: string,
-     *     CustomerGatewayId?: string,
-     *     CustomerGatewayConfiguration?: string,
-     *     Type?: string,
-     *     VpnGatewayId?: string,
-     *     Category?: string,
-     *     VgwTelemetry?: list<AwsEc2VpnConnectionVgwTelemetryDetails>,
-     *     Options?: AwsEc2VpnConnectionOptionsDetails,
-     *     Routes?: list<AwsEc2VpnConnectionRoutesDetails>,
-     *     TransitGatewayId?: string
+     *     VpnConnectionId?: string|null,
+     *     State?: string|null,
+     *     CustomerGatewayId?: string|null,
+     *     CustomerGatewayConfiguration?: string|null,
+     *     Type?: string|null,
+     *     VpnGatewayId?: string|null,
+     *     Category?: string|null,
+     *     VgwTelemetry?: list<AwsEc2VpnConnectionVgwTelemetryDetails>|null,
+     *     Options?: AwsEc2VpnConnectionOptionsDetails|null,
+     *     Routes?: list<AwsEc2VpnConnectionRoutesDetails>|null,
+     *     TransitGatewayId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

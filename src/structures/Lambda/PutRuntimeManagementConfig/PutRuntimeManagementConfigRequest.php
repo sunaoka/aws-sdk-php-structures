@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FunctionName
- * @property string $Qualifier
+ * @property string|null $Qualifier
  * @property 'Auto'|'Manual'|'FunctionUpdate' $UpdateRuntimeOn
- * @property string $RuntimeVersionArn
+ * @property string|null $RuntimeVersionArn
  */
 class PutRuntimeManagementConfigRequest extends Request
 {
     /**
      * @param array{
      *     FunctionName: string,
-     *     Qualifier?: string,
+     *     Qualifier?: string|null,
      *     UpdateRuntimeOn: 'Auto'|'Manual'|'FunctionUpdate',
-     *     RuntimeVersionArn?: string
+     *     RuntimeVersionArn?: string|null
      * } $args
      */
     public function __construct(array $args)

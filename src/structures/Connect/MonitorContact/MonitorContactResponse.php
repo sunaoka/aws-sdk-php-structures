@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Connect\MonitorContact;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ContactId
- * @property string $ContactArn
+ * @property string|null $ContactId
+ * @property string|null $ContactArn
  */
 class MonitorContactResponse extends Response
 {

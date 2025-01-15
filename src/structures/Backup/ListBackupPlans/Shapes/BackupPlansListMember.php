@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Backup\ListBackupPlans\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BackupPlanArn
- * @property string $BackupPlanId
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $DeletionDate
- * @property string $VersionId
- * @property string $BackupPlanName
- * @property string $CreatorRequestId
- * @property \Aws\Api\DateTimeResult $LastExecutionDate
- * @property list<AdvancedBackupSetting> $AdvancedBackupSettings
+ * @property string|null $BackupPlanArn
+ * @property string|null $BackupPlanId
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $DeletionDate
+ * @property string|null $VersionId
+ * @property string|null $BackupPlanName
+ * @property string|null $CreatorRequestId
+ * @property \Aws\Api\DateTimeResult|null $LastExecutionDate
+ * @property list<AdvancedBackupSetting>|null $AdvancedBackupSettings
  */
 class BackupPlansListMember extends Shape
 {
     /**
      * @param array{
-     *     BackupPlanArn?: string,
-     *     BackupPlanId?: string,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     DeletionDate?: \Aws\Api\DateTimeResult,
-     *     VersionId?: string,
-     *     BackupPlanName?: string,
-     *     CreatorRequestId?: string,
-     *     LastExecutionDate?: \Aws\Api\DateTimeResult,
-     *     AdvancedBackupSettings?: list<AdvancedBackupSetting>
+     *     BackupPlanArn?: string|null,
+     *     BackupPlanId?: string|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     DeletionDate?: \Aws\Api\DateTimeResult|null,
+     *     VersionId?: string|null,
+     *     BackupPlanName?: string|null,
+     *     CreatorRequestId?: string|null,
+     *     LastExecutionDate?: \Aws\Api\DateTimeResult|null,
+     *     AdvancedBackupSettings?: list<AdvancedBackupSetting>|null
      * } $args
      */
     public function __construct(array $args = [])

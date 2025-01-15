@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PipelinePauseStateSettings> $Pipelines
+ * @property list<PipelinePauseStateSettings>|null $Pipelines
  */
 class PauseStateScheduleActionSettings extends Shape
 {
     /**
-     * @param array{Pipelines?: list<PipelinePauseStateSettings>} $args
+     * @param array{Pipelines?: list<PipelinePauseStateSettings>|null} $args
      */
     public function __construct(array $args = [])
     {

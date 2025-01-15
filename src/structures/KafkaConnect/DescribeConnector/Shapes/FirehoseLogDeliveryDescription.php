@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\DescribeConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $deliveryStream
- * @property bool $enabled
+ * @property string|null $deliveryStream
+ * @property bool|null $enabled
  */
 class FirehoseLogDeliveryDescription extends Shape
 {
     /**
      * @param array{
-     *     deliveryStream?: string,
-     *     enabled?: bool
+     *     deliveryStream?: string|null,
+     *     enabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

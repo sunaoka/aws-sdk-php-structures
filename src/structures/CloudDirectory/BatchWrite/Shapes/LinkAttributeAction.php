@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchWrite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATE_OR_UPDATE'|'DELETE' $AttributeActionType
- * @property TypedAttributeValue $AttributeUpdateValue
+ * @property 'CREATE_OR_UPDATE'|'DELETE'|null $AttributeActionType
+ * @property TypedAttributeValue|null $AttributeUpdateValue
  */
 class LinkAttributeAction extends Shape
 {
     /**
      * @param array{
-     *     AttributeActionType?: 'CREATE_OR_UPDATE'|'DELETE',
-     *     AttributeUpdateValue?: TypedAttributeValue
+     *     AttributeActionType?: 'CREATE_OR_UPDATE'|'DELETE'|null,
+     *     AttributeUpdateValue?: TypedAttributeValue|null
      * } $args
      */
     public function __construct(array $args = [])

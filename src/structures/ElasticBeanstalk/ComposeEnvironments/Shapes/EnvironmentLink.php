@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ComposeEnvironments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LinkName
- * @property string $EnvironmentName
+ * @property string|null $LinkName
+ * @property string|null $EnvironmentName
  */
 class EnvironmentLink extends Shape
 {
     /**
      * @param array{
-     *     LinkName?: string,
-     *     EnvironmentName?: string
+     *     LinkName?: string|null,
+     *     EnvironmentName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

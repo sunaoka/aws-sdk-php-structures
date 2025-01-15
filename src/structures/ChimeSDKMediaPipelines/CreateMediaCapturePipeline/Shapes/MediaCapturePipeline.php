@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaCapturePipeli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MediaPipelineId
- * @property string $MediaPipelineArn
- * @property 'ChimeSdkMeeting' $SourceType
- * @property string $SourceArn
- * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted' $Status
- * @property 'S3Bucket' $SinkType
- * @property string $SinkArn
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
- * @property ChimeSdkMeetingConfiguration $ChimeSdkMeetingConfiguration
- * @property SseAwsKeyManagementParams $SseAwsKeyManagementParams
- * @property string $SinkIamRoleArn
+ * @property string|null $MediaPipelineId
+ * @property string|null $MediaPipelineArn
+ * @property 'ChimeSdkMeeting'|null $SourceType
+ * @property string|null $SourceArn
+ * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null $Status
+ * @property 'S3Bucket'|null $SinkType
+ * @property string|null $SinkArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
+ * @property ChimeSdkMeetingConfiguration|null $ChimeSdkMeetingConfiguration
+ * @property SseAwsKeyManagementParams|null $SseAwsKeyManagementParams
+ * @property string|null $SinkIamRoleArn
  */
 class MediaCapturePipeline extends Shape
 {
     /**
      * @param array{
-     *     MediaPipelineId?: string,
-     *     MediaPipelineArn?: string,
-     *     SourceType?: 'ChimeSdkMeeting',
-     *     SourceArn?: string,
-     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted',
-     *     SinkType?: 'S3Bucket',
-     *     SinkArn?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ChimeSdkMeetingConfiguration?: ChimeSdkMeetingConfiguration,
-     *     SseAwsKeyManagementParams?: SseAwsKeyManagementParams,
-     *     SinkIamRoleArn?: string
+     *     MediaPipelineId?: string|null,
+     *     MediaPipelineArn?: string|null,
+     *     SourceType?: 'ChimeSdkMeeting'|null,
+     *     SourceArn?: string|null,
+     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null,
+     *     SinkType?: 'S3Bucket'|null,
+     *     SinkArn?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ChimeSdkMeetingConfiguration?: ChimeSdkMeetingConfiguration|null,
+     *     SseAwsKeyManagementParams?: SseAwsKeyManagementParams|null,
+     *     SinkIamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

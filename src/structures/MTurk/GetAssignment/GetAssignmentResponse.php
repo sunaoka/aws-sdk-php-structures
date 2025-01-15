@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MTurk\GetAssignment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Assignment $Assignment
- * @property Shapes\HIT $HIT
+ * @property Shapes\Assignment|null $Assignment
+ * @property Shapes\HIT|null $HIT
  */
 class GetAssignmentResponse extends Response
 {

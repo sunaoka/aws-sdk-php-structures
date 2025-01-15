@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ACTIVE'|'INACTIVE' $ActivationState
- * @property bool $AppendSourcePath
- * @property bool $IncludeChildPaths
- * @property list<'DELETE'|'GET'|'HEAD'|'OPTIONS'|'PATCH'|'POST'|'PUT'> $Methods
+ * @property bool|null $AppendSourcePath
+ * @property bool|null $IncludeChildPaths
+ * @property list<'DELETE'|'GET'|'HEAD'|'OPTIONS'|'PATCH'|'POST'|'PUT'>|null $Methods
  * @property string $SourcePath
  */
 class UriPathRouteInput extends Shape
@@ -16,9 +16,9 @@ class UriPathRouteInput extends Shape
     /**
      * @param array{
      *     ActivationState: 'ACTIVE'|'INACTIVE',
-     *     AppendSourcePath?: bool,
-     *     IncludeChildPaths?: bool,
-     *     Methods?: list<'DELETE'|'GET'|'HEAD'|'OPTIONS'|'PATCH'|'POST'|'PUT'>,
+     *     AppendSourcePath?: bool|null,
+     *     IncludeChildPaths?: bool|null,
+     *     Methods?: list<'DELETE'|'GET'|'HEAD'|'OPTIONS'|'PATCH'|'POST'|'PUT'>|null,
      *     SourcePath: string
      * } $args
      */

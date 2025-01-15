@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StreamArn
  * @property string $ShardId
  * @property 'TRIM_HORIZON'|'LATEST'|'AT_SEQUENCE_NUMBER'|'AFTER_SEQUENCE_NUMBER' $ShardIteratorType
- * @property string $SequenceNumber
+ * @property string|null $SequenceNumber
  */
 class GetShardIteratorRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetShardIteratorRequest extends Request
      *     StreamArn: string,
      *     ShardId: string,
      *     ShardIteratorType: 'TRIM_HORIZON'|'LATEST'|'AT_SEQUENCE_NUMBER'|'AFTER_SEQUENCE_NUMBER',
-     *     SequenceNumber?: string
+     *     SequenceNumber?: string|null
      * } $args
      */
     public function __construct(array $args)

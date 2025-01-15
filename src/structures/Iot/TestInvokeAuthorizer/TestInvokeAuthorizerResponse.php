@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Iot\TestInvokeAuthorizer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $isAuthenticated
- * @property string $principalId
- * @property list<string> $policyDocuments
- * @property int $refreshAfterInSeconds
- * @property int $disconnectAfterInSeconds
+ * @property bool|null $isAuthenticated
+ * @property string|null $principalId
+ * @property list<string>|null $policyDocuments
+ * @property int|null $refreshAfterInSeconds
+ * @property int|null $disconnectAfterInSeconds
  */
 class TestInvokeAuthorizerResponse extends Response
 {

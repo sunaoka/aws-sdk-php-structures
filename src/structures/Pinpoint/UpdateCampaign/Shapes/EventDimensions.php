@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, AttributeDimension> $Attributes
- * @property SetDimension $EventType
- * @property array<string, MetricDimension> $Metrics
+ * @property array<string, AttributeDimension>|null $Attributes
+ * @property SetDimension|null $EventType
+ * @property array<string, MetricDimension>|null $Metrics
  */
 class EventDimensions extends Shape
 {
     /**
      * @param array{
-     *     Attributes?: array<string, AttributeDimension>,
-     *     EventType?: SetDimension,
-     *     Metrics?: array<string, MetricDimension>
+     *     Attributes?: array<string, AttributeDimension>|null,
+     *     EventType?: SetDimension|null,
+     *     Metrics?: array<string, MetricDimension>|null
      * } $args
      */
     public function __construct(array $args = [])

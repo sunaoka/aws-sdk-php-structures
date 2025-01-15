@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Greengrass\UpdateGroupCertificateConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CertificateExpiryInMilliseconds
+ * @property string|null $CertificateExpiryInMilliseconds
  * @property string $GroupId
  */
 class UpdateGroupCertificateConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     CertificateExpiryInMilliseconds?: string,
+     *     CertificateExpiryInMilliseconds?: string|null,
      *     GroupId: string
      * } $args
      */

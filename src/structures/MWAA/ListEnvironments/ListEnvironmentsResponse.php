@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $Environments
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListEnvironmentsResponse extends Response
 {

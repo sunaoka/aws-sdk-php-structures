@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $trainedModelArn
  * @property string $membershipIdentifier
  * @property Shapes\TrainedModelExportOutputConfiguration $outputConfiguration
- * @property string $description
+ * @property string|null $description
  */
 class StartTrainedModelExportJobRequest extends Request
 {
@@ -19,7 +19,7 @@ class StartTrainedModelExportJobRequest extends Request
      *     trainedModelArn: string,
      *     membershipIdentifier: string,
      *     outputConfiguration: Shapes\TrainedModelExportOutputConfiguration,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

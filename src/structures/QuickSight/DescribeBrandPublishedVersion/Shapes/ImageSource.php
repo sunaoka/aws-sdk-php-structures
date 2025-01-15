@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeBrandPublishedVersion\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PublicUrl
- * @property string $S3Uri
+ * @property string|null $PublicUrl
+ * @property string|null $S3Uri
  */
 class ImageSource extends Shape
 {
     /**
      * @param array{
-     *     PublicUrl?: string,
-     *     S3Uri?: string
+     *     PublicUrl?: string|null,
+     *     S3Uri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

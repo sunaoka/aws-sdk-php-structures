@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetPreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 2147483647> $Duration
- * @property int<0, 2147483647> $FadeIn
- * @property int<0, 2147483647> $FadeOut
- * @property int<0, 2147483647> $Height
- * @property string $ImageInserterInput
- * @property int<0, 2147483647> $ImageX
- * @property int<0, 2147483647> $ImageY
- * @property int<0, 99> $Layer
- * @property int<0, 100> $Opacity
- * @property string $StartTime
- * @property int<0, 2147483647> $Width
+ * @property int<0, 2147483647>|null $Duration
+ * @property int<0, 2147483647>|null $FadeIn
+ * @property int<0, 2147483647>|null $FadeOut
+ * @property int<0, 2147483647>|null $Height
+ * @property string|null $ImageInserterInput
+ * @property int<0, 2147483647>|null $ImageX
+ * @property int<0, 2147483647>|null $ImageY
+ * @property int<0, 99>|null $Layer
+ * @property int<0, 100>|null $Opacity
+ * @property string|null $StartTime
+ * @property int<0, 2147483647>|null $Width
  */
 class InsertableImage extends Shape
 {
     /**
      * @param array{
-     *     Duration?: int<0, 2147483647>,
-     *     FadeIn?: int<0, 2147483647>,
-     *     FadeOut?: int<0, 2147483647>,
-     *     Height?: int<0, 2147483647>,
-     *     ImageInserterInput?: string,
-     *     ImageX?: int<0, 2147483647>,
-     *     ImageY?: int<0, 2147483647>,
-     *     Layer?: int<0, 99>,
-     *     Opacity?: int<0, 100>,
-     *     StartTime?: string,
-     *     Width?: int<0, 2147483647>
+     *     Duration?: int<0, 2147483647>|null,
+     *     FadeIn?: int<0, 2147483647>|null,
+     *     FadeOut?: int<0, 2147483647>|null,
+     *     Height?: int<0, 2147483647>|null,
+     *     ImageInserterInput?: string|null,
+     *     ImageX?: int<0, 2147483647>|null,
+     *     ImageY?: int<0, 2147483647>|null,
+     *     Layer?: int<0, 99>|null,
+     *     Opacity?: int<0, 100>|null,
+     *     StartTime?: string|null,
+     *     Width?: int<0, 2147483647>|null
      * } $args
      */
     public function __construct(array $args = [])

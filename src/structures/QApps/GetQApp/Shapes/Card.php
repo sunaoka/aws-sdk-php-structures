@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QApps\GetQApp\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TextInputCard $textInput
- * @property QQueryCard $qQuery
- * @property QPluginCard $qPlugin
- * @property FileUploadCard $fileUpload
- * @property FormInputCard $formInput
+ * @property TextInputCard|null $textInput
+ * @property QQueryCard|null $qQuery
+ * @property QPluginCard|null $qPlugin
+ * @property FileUploadCard|null $fileUpload
+ * @property FormInputCard|null $formInput
  */
 class Card extends Shape
 {
     /**
      * @param array{
-     *     textInput?: TextInputCard,
-     *     qQuery?: QQueryCard,
-     *     qPlugin?: QPluginCard,
-     *     fileUpload?: FileUploadCard,
-     *     formInput?: FormInputCard
+     *     textInput?: TextInputCard|null,
+     *     qQuery?: QQueryCard|null,
+     *     qPlugin?: QPluginCard|null,
+     *     fileUpload?: FileUploadCard|null,
+     *     formInput?: FormInputCard|null
      * } $args
      */
     public function __construct(array $args = [])

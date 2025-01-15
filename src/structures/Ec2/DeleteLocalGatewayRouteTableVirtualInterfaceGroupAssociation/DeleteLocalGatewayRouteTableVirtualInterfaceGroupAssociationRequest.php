@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LocalGatewayRouteTableVirtualInterfaceGroupAssociationId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest extends Request
 {
     /**
      * @param array{
      *     LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

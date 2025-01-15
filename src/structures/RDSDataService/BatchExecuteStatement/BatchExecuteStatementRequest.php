@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resourceArn
  * @property string $secretArn
  * @property string $sql
- * @property string $database
- * @property string $schema
- * @property list<list<Shapes\SqlParameter>> $parameterSets
- * @property string $transactionId
+ * @property string|null $database
+ * @property string|null $schema
+ * @property list<list<Shapes\SqlParameter>>|null $parameterSets
+ * @property string|null $transactionId
  */
 class BatchExecuteStatementRequest extends Request
 {
@@ -20,10 +20,10 @@ class BatchExecuteStatementRequest extends Request
      *     resourceArn: string,
      *     secretArn: string,
      *     sql: string,
-     *     database?: string,
-     *     schema?: string,
-     *     parameterSets?: list<list<Shapes\SqlParameter>>,
-     *     transactionId?: string
+     *     database?: string|null,
+     *     schema?: string|null,
+     *     parameterSets?: list<list<Shapes\SqlParameter>>|null,
+     *     transactionId?: string|null
      * } $args
      */
     public function __construct(array $args)

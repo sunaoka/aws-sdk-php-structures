@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Appstream\DescribeAppBlocks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $Arns
- * @property string $NextToken
- * @property int $MaxResults
+ * @property list<string>|null $Arns
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
  */
 class DescribeAppBlocksRequest extends Request
 {
     /**
      * @param array{
-     *     Arns?: list<string>,
-     *     NextToken?: string,
-     *     MaxResults?: int
+     *     Arns?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null
      * } $args
      */
     public function __construct(array $args = [])

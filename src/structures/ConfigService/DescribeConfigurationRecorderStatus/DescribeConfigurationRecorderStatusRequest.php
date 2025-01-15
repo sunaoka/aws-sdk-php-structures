@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeConfigurationRecorderStat
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ConfigurationRecorderNames
- * @property string $ServicePrincipal
- * @property string $Arn
+ * @property list<string>|null $ConfigurationRecorderNames
+ * @property string|null $ServicePrincipal
+ * @property string|null $Arn
  */
 class DescribeConfigurationRecorderStatusRequest extends Request
 {
     /**
      * @param array{
-     *     ConfigurationRecorderNames?: list<string>,
-     *     ServicePrincipal?: string,
-     *     Arn?: string
+     *     ConfigurationRecorderNames?: list<string>|null,
+     *     ServicePrincipal?: string|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListCustomLineItemVersions\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ListCustomLineItemFlatChargeDetails $Flat
- * @property ListCustomLineItemPercentageChargeDetails $Percentage
+ * @property ListCustomLineItemFlatChargeDetails|null $Flat
+ * @property ListCustomLineItemPercentageChargeDetails|null $Percentage
  * @property 'CREDIT'|'FEE' $Type
- * @property list<LineItemFilter> $LineItemFilters
+ * @property list<LineItemFilter>|null $LineItemFilters
  */
 class ListCustomLineItemChargeDetails extends Shape
 {
     /**
      * @param array{
-     *     Flat?: ListCustomLineItemFlatChargeDetails,
-     *     Percentage?: ListCustomLineItemPercentageChargeDetails,
+     *     Flat?: ListCustomLineItemFlatChargeDetails|null,
+     *     Percentage?: ListCustomLineItemPercentageChargeDetails|null,
      *     Type: 'CREDIT'|'FEE',
-     *     LineItemFilters?: list<LineItemFilter>
+     *     LineItemFilters?: list<LineItemFilter>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListPositionConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Semtech' $Provider
- * @property 'GNSS' $Type
- * @property 'Enabled'|'Disabled' $Status
- * @property 'ROSE'|'NONE' $Fec
+ * @property 'Semtech'|null $Provider
+ * @property 'GNSS'|null $Type
+ * @property 'Enabled'|'Disabled'|null $Status
+ * @property 'ROSE'|'NONE'|null $Fec
  */
 class SemtechGnssDetail extends Shape
 {
     /**
      * @param array{
-     *     Provider?: 'Semtech',
-     *     Type?: 'GNSS',
-     *     Status?: 'Enabled'|'Disabled',
-     *     Fec?: 'ROSE'|'NONE'
+     *     Provider?: 'Semtech'|null,
+     *     Type?: 'GNSS'|null,
+     *     Status?: 'Enabled'|'Disabled'|null,
+     *     Fec?: 'ROSE'|'NONE'|null
      * } $args
      */
     public function __construct(array $args = [])

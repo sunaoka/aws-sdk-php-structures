@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resourceId
  * @property string $httpMethod
  * @property string $statusCode
- * @property string $selectionPattern
- * @property array<string, string> $responseParameters
- * @property array<string, string> $responseTemplates
- * @property 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT' $contentHandling
+ * @property string|null $selectionPattern
+ * @property array<string, string>|null $responseParameters
+ * @property array<string, string>|null $responseTemplates
+ * @property 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'|null $contentHandling
  */
 class PutIntegrationResponseRequest extends Request
 {
@@ -22,10 +22,10 @@ class PutIntegrationResponseRequest extends Request
      *     resourceId: string,
      *     httpMethod: string,
      *     statusCode: string,
-     *     selectionPattern?: string,
-     *     responseParameters?: array<string, string>,
-     *     responseTemplates?: array<string, string>,
-     *     contentHandling?: 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'
+     *     selectionPattern?: string|null,
+     *     responseParameters?: array<string, string>|null,
+     *     responseTemplates?: array<string, string>|null,
+     *     contentHandling?: 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WellArchitected\UpdateReviewTemplateAnswer\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HELPFUL_RESOURCE'|'IMPROVEMENT_PLAN' $Type
- * @property list<ChoiceContent> $Content
+ * @property 'HELPFUL_RESOURCE'|'IMPROVEMENT_PLAN'|null $Type
+ * @property list<ChoiceContent>|null $Content
  */
 class AdditionalResources extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'HELPFUL_RESOURCE'|'IMPROVEMENT_PLAN',
-     *     Content?: list<ChoiceContent>
+     *     Type?: 'HELPFUL_RESOURCE'|'IMPROVEMENT_PLAN'|null,
+     *     Content?: list<ChoiceContent>|null
      * } $args
      */
     public function __construct(array $args = [])

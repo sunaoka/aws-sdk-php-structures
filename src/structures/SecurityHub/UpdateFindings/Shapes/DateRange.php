@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\UpdateFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Value
- * @property 'DAYS' $Unit
+ * @property int|null $Value
+ * @property 'DAYS'|null $Unit
  */
 class DateRange extends Shape
 {
     /**
      * @param array{
-     *     Value?: int,
-     *     Unit?: 'DAYS'
+     *     Value?: int|null,
+     *     Unit?: 'DAYS'|null
      * } $args
      */
     public function __construct(array $args = [])

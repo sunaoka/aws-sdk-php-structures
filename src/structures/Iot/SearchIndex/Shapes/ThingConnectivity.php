@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\SearchIndex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $connected
- * @property int $timestamp
- * @property string $disconnectReason
+ * @property bool|null $connected
+ * @property int|null $timestamp
+ * @property string|null $disconnectReason
  */
 class ThingConnectivity extends Shape
 {
     /**
      * @param array{
-     *     connected?: bool,
-     *     timestamp?: int,
-     *     disconnectReason?: string
+     *     connected?: bool|null,
+     *     timestamp?: int|null,
+     *     disconnectReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

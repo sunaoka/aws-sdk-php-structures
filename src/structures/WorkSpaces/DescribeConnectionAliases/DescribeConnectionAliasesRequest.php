@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeConnectionAliases;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $AliasIds
- * @property string $ResourceId
- * @property int<1, 25> $Limit
- * @property string $NextToken
+ * @property list<string>|null $AliasIds
+ * @property string|null $ResourceId
+ * @property int<1, 25>|null $Limit
+ * @property string|null $NextToken
  */
 class DescribeConnectionAliasesRequest extends Request
 {
     /**
      * @param array{
-     *     AliasIds?: list<string>,
-     *     ResourceId?: string,
-     *     Limit?: int<1, 25>,
-     *     NextToken?: string
+     *     AliasIds?: list<string>|null,
+     *     ResourceId?: string|null,
+     *     Limit?: int<1, 25>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

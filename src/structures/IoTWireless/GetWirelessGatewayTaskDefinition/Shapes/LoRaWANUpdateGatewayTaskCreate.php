@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetWirelessGatewayTaskDefinition\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UpdateSignature
- * @property int<1, 4294967295> $SigKeyCrc
- * @property LoRaWANGatewayVersion $CurrentVersion
- * @property LoRaWANGatewayVersion $UpdateVersion
+ * @property string|null $UpdateSignature
+ * @property int<1, 4294967295>|null $SigKeyCrc
+ * @property LoRaWANGatewayVersion|null $CurrentVersion
+ * @property LoRaWANGatewayVersion|null $UpdateVersion
  */
 class LoRaWANUpdateGatewayTaskCreate extends Shape
 {
     /**
      * @param array{
-     *     UpdateSignature?: string,
-     *     SigKeyCrc?: int<1, 4294967295>,
-     *     CurrentVersion?: LoRaWANGatewayVersion,
-     *     UpdateVersion?: LoRaWANGatewayVersion
+     *     UpdateSignature?: string|null,
+     *     SigKeyCrc?: int<1, 4294967295>|null,
+     *     CurrentVersion?: LoRaWANGatewayVersion|null,
+     *     UpdateVersion?: LoRaWANGatewayVersion|null
      * } $args
      */
     public function __construct(array $args = [])

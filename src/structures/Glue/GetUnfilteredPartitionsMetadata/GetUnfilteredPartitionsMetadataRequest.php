@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Glue\GetUnfilteredPartitionsMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Region
+ * @property string|null $Region
  * @property string $CatalogId
  * @property string $DatabaseName
  * @property string $TableName
- * @property string $Expression
- * @property Shapes\AuditContext $AuditContext
+ * @property string|null $Expression
+ * @property Shapes\AuditContext|null $AuditContext
  * @property list<'COLUMN_PERMISSION'|'CELL_FILTER_PERMISSION'|'NESTED_PERMISSION'|'NESTED_CELL_PERMISSION'> $SupportedPermissionTypes
- * @property string $NextToken
- * @property Shapes\Segment $Segment
- * @property int<1, 1000> $MaxResults
- * @property Shapes\QuerySessionContext $QuerySessionContext
+ * @property string|null $NextToken
+ * @property Shapes\Segment|null $Segment
+ * @property int<1, 1000>|null $MaxResults
+ * @property Shapes\QuerySessionContext|null $QuerySessionContext
  */
 class GetUnfilteredPartitionsMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     Region?: string,
+     *     Region?: string|null,
      *     CatalogId: string,
      *     DatabaseName: string,
      *     TableName: string,
-     *     Expression?: string,
-     *     AuditContext?: Shapes\AuditContext,
+     *     Expression?: string|null,
+     *     AuditContext?: Shapes\AuditContext|null,
      *     SupportedPermissionTypes: list<'COLUMN_PERMISSION'|'CELL_FILTER_PERMISSION'|'NESTED_PERMISSION'|'NESTED_CELL_PERMISSION'>,
-     *     NextToken?: string,
-     *     Segment?: Shapes\Segment,
-     *     MaxResults?: int<1, 1000>,
-     *     QuerySessionContext?: Shapes\QuerySessionContext
+     *     NextToken?: string|null,
+     *     Segment?: Shapes\Segment|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     QuerySessionContext?: Shapes\QuerySessionContext|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'filling' $FeaturizationMethodName
- * @property array<string, string> $FeaturizationMethodParameters
+ * @property array<string, string>|null $FeaturizationMethodParameters
  */
 class FeaturizationMethod extends Shape
 {
     /**
      * @param array{
      *     FeaturizationMethodName: 'filling',
-     *     FeaturizationMethodParameters?: array<string, string>
+     *     FeaturizationMethodParameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

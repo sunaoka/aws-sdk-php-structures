@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\DeleteRemediationExceptions\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FailureMessage
- * @property list<RemediationExceptionResourceKey> $FailedItems
+ * @property string|null $FailureMessage
+ * @property list<RemediationExceptionResourceKey>|null $FailedItems
  */
 class FailedDeleteRemediationExceptionsBatch extends Shape
 {
     /**
      * @param array{
-     *     FailureMessage?: string,
-     *     FailedItems?: list<RemediationExceptionResourceKey>
+     *     FailureMessage?: string|null,
+     *     FailedItems?: list<RemediationExceptionResourceKey>|null
      * } $args
      */
     public function __construct(array $args = [])

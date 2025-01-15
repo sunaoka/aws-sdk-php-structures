@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $Subnets
- * @property list<string> $SecurityGroups
- * @property 'ENABLED'|'DISABLED' $AssignPublicIp
+ * @property list<string>|null $SecurityGroups
+ * @property 'ENABLED'|'DISABLED'|null $AssignPublicIp
  */
 class AwsVpcConfiguration extends Shape
 {
     /**
      * @param array{
      *     Subnets: list<string>,
-     *     SecurityGroups?: list<string>,
-     *     AssignPublicIp?: 'ENABLED'|'DISABLED'
+     *     SecurityGroups?: list<string>|null,
+     *     AssignPublicIp?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

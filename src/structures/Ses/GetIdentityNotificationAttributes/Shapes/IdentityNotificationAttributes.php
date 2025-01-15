@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ComplaintTopic
  * @property string $DeliveryTopic
  * @property bool $ForwardingEnabled
- * @property bool $HeadersInBounceNotificationsEnabled
- * @property bool $HeadersInComplaintNotificationsEnabled
- * @property bool $HeadersInDeliveryNotificationsEnabled
+ * @property bool|null $HeadersInBounceNotificationsEnabled
+ * @property bool|null $HeadersInComplaintNotificationsEnabled
+ * @property bool|null $HeadersInDeliveryNotificationsEnabled
  */
 class IdentityNotificationAttributes extends Shape
 {
@@ -21,9 +21,9 @@ class IdentityNotificationAttributes extends Shape
      *     ComplaintTopic: string,
      *     DeliveryTopic: string,
      *     ForwardingEnabled: bool,
-     *     HeadersInBounceNotificationsEnabled?: bool,
-     *     HeadersInComplaintNotificationsEnabled?: bool,
-     *     HeadersInDeliveryNotificationsEnabled?: bool
+     *     HeadersInBounceNotificationsEnabled?: bool|null,
+     *     HeadersInComplaintNotificationsEnabled?: bool|null,
+     *     HeadersInDeliveryNotificationsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

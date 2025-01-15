@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterIdentifier
- * @property 'enabled'|'disabled'|'auto' $AquaConfigurationStatus
+ * @property 'enabled'|'disabled'|'auto'|null $AquaConfigurationStatus
  */
 class ModifyAquaConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     ClusterIdentifier: string,
-     *     AquaConfigurationStatus?: 'enabled'|'disabled'|'auto'
+     *     AquaConfigurationStatus?: 'enabled'|'disabled'|'auto'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $customAuthenticationType
- * @property list<AuthParameter> $authParameters
+ * @property string|null $customAuthenticationType
+ * @property list<AuthParameter>|null $authParameters
  */
 class CustomAuthConfig extends Shape
 {
     /**
      * @param array{
-     *     customAuthenticationType?: string,
-     *     authParameters?: list<AuthParameter>
+     *     customAuthenticationType?: string|null,
+     *     authParameters?: list<AuthParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

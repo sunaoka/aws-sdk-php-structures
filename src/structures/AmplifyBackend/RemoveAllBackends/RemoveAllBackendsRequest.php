@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AppId
- * @property bool $CleanAmplifyApp
+ * @property bool|null $CleanAmplifyApp
  */
 class RemoveAllBackendsRequest extends Request
 {
     /**
      * @param array{
      *     AppId: string,
-     *     CleanAmplifyApp?: bool
+     *     CleanAmplifyApp?: bool|null
      * } $args
      */
     public function __construct(array $args)

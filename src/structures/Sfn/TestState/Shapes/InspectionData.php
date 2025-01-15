@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Sfn\TestState\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $input
- * @property string $afterArguments
- * @property string $afterInputPath
- * @property string $afterParameters
- * @property string $result
- * @property string $afterResultSelector
- * @property string $afterResultPath
- * @property InspectionDataRequest $request
- * @property InspectionDataResponse $response
- * @property string $variables
+ * @property string|null $input
+ * @property string|null $afterArguments
+ * @property string|null $afterInputPath
+ * @property string|null $afterParameters
+ * @property string|null $result
+ * @property string|null $afterResultSelector
+ * @property string|null $afterResultPath
+ * @property InspectionDataRequest|null $request
+ * @property InspectionDataResponse|null $response
+ * @property string|null $variables
  */
 class InspectionData extends Shape
 {
     /**
      * @param array{
-     *     input?: string,
-     *     afterArguments?: string,
-     *     afterInputPath?: string,
-     *     afterParameters?: string,
-     *     result?: string,
-     *     afterResultSelector?: string,
-     *     afterResultPath?: string,
-     *     request?: InspectionDataRequest,
-     *     response?: InspectionDataResponse,
-     *     variables?: string
+     *     input?: string|null,
+     *     afterArguments?: string|null,
+     *     afterInputPath?: string|null,
+     *     afterParameters?: string|null,
+     *     result?: string|null,
+     *     afterResultSelector?: string|null,
+     *     afterResultPath?: string|null,
+     *     request?: InspectionDataRequest|null,
+     *     response?: InspectionDataResponse|null,
+     *     variables?: string|null
      * } $args
      */
     public function __construct(array $args = [])

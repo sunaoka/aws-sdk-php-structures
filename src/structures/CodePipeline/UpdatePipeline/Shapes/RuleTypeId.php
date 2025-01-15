@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Rule' $category
- * @property 'AWS' $owner
+ * @property 'AWS'|null $owner
  * @property string $provider
- * @property string $version
+ * @property string|null $version
  */
 class RuleTypeId extends Shape
 {
     /**
      * @param array{
      *     category: 'Rule',
-     *     owner?: 'AWS',
+     *     owner?: 'AWS'|null,
      *     provider: string,
-     *     version?: string
+     *     version?: string|null
      * } $args
      */
     public function __construct(array $args)

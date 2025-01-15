@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AccountId
- * @property string $DetectorId
+ * @property string|null $DetectorId
  * @property string $MasterId
  * @property string $Email
  * @property string $RelationshipStatus
- * @property string $InvitedAt
+ * @property string|null $InvitedAt
  * @property string $UpdatedAt
- * @property string $AdministratorId
+ * @property string|null $AdministratorId
  */
 class Member extends Shape
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     DetectorId?: string,
+     *     DetectorId?: string|null,
      *     MasterId: string,
      *     Email: string,
      *     RelationshipStatus: string,
-     *     InvitedAt?: string,
+     *     InvitedAt?: string|null,
      *     UpdatedAt: string,
-     *     AdministratorId?: string
+     *     AdministratorId?: string|null
      * } $args
      */
     public function __construct(array $args)

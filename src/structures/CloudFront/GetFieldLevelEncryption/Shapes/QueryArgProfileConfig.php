@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $ForwardWhenQueryArgProfileIsUnknown
- * @property QueryArgProfiles $QueryArgProfiles
+ * @property QueryArgProfiles|null $QueryArgProfiles
  */
 class QueryArgProfileConfig extends Shape
 {
     /**
      * @param array{
      *     ForwardWhenQueryArgProfileIsUnknown: bool,
-     *     QueryArgProfiles?: QueryArgProfiles
+     *     QueryArgProfiles?: QueryArgProfiles|null
      * } $args
      */
     public function __construct(array $args)

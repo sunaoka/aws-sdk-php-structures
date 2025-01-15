@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeSnapshotCopyGrants;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SnapshotCopyGrantName
- * @property int $MaxRecords
- * @property string $Marker
- * @property list<string> $TagKeys
- * @property list<string> $TagValues
+ * @property string|null $SnapshotCopyGrantName
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property list<string>|null $TagKeys
+ * @property list<string>|null $TagValues
  */
 class DescribeSnapshotCopyGrantsRequest extends Request
 {
     /**
      * @param array{
-     *     SnapshotCopyGrantName?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     TagKeys?: list<string>,
-     *     TagValues?: list<string>
+     *     SnapshotCopyGrantName?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     TagKeys?: list<string>|null,
+     *     TagValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

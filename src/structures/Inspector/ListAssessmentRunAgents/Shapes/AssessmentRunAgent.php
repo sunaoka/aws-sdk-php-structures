@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $assessmentRunArn
  * @property 'HEALTHY'|'UNHEALTHY'|'UNKNOWN' $agentHealth
  * @property 'IDLE'|'RUNNING'|'SHUTDOWN'|'UNHEALTHY'|'THROTTLED'|'UNKNOWN' $agentHealthCode
- * @property string $agentHealthDetails
- * @property string $autoScalingGroup
+ * @property string|null $agentHealthDetails
+ * @property string|null $autoScalingGroup
  * @property list<TelemetryMetadata> $telemetryMetadata
  */
 class AssessmentRunAgent extends Shape
@@ -21,8 +21,8 @@ class AssessmentRunAgent extends Shape
      *     assessmentRunArn: string,
      *     agentHealth: 'HEALTHY'|'UNHEALTHY'|'UNKNOWN',
      *     agentHealthCode: 'IDLE'|'RUNNING'|'SHUTDOWN'|'UNHEALTHY'|'THROTTLED'|'UNKNOWN',
-     *     agentHealthDetails?: string,
-     *     autoScalingGroup?: string,
+     *     agentHealthDetails?: string|null,
+     *     autoScalingGroup?: string|null,
      *     telemetryMetadata: list<TelemetryMetadata>
      * } $args
      */

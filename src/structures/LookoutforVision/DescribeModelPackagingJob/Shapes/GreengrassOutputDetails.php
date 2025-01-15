@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\DescribeModelPackagingJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ComponentVersionArn
- * @property string $ComponentName
- * @property string $ComponentVersion
+ * @property string|null $ComponentVersionArn
+ * @property string|null $ComponentName
+ * @property string|null $ComponentVersion
  */
 class GreengrassOutputDetails extends Shape
 {
     /**
      * @param array{
-     *     ComponentVersionArn?: string,
-     *     ComponentName?: string,
-     *     ComponentVersion?: string
+     *     ComponentVersionArn?: string|null,
+     *     ComponentName?: string|null,
+     *     ComponentVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

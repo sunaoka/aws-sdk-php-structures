@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConnectionName
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $EntityName
- * @property string $NextToken
- * @property string $DataStoreApiVersion
+ * @property string|null $NextToken
+ * @property string|null $DataStoreApiVersion
  */
 class DescribeEntityRequest extends Request
 {
     /**
      * @param array{
      *     ConnectionName: string,
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     EntityName: string,
-     *     NextToken?: string,
-     *     DataStoreApiVersion?: string
+     *     NextToken?: string|null,
+     *     DataStoreApiVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

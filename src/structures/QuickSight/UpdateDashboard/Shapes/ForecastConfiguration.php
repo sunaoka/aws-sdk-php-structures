@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TimeBasedForecastProperties $ForecastProperties
- * @property ForecastScenario $Scenario
+ * @property TimeBasedForecastProperties|null $ForecastProperties
+ * @property ForecastScenario|null $Scenario
  */
 class ForecastConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ForecastProperties?: TimeBasedForecastProperties,
-     *     Scenario?: ForecastScenario
+     *     ForecastProperties?: TimeBasedForecastProperties|null,
+     *     Scenario?: ForecastScenario|null
      * } $args
      */
     public function __construct(array $args = [])

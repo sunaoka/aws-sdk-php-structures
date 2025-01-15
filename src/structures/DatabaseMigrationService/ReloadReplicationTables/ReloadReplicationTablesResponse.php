@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ReloadReplicationTable
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReplicationConfigArn
+ * @property string|null $ReplicationConfigArn
  */
 class ReloadReplicationTablesResponse extends Response
 {

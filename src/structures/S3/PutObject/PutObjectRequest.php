@@ -5,91 +5,91 @@ namespace Sunaoka\Aws\Structures\S3\PutObject;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control' $ACL
- * @property string|resource|\Psr\Http\Message\StreamInterface $Body
+ * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null $ACL
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $Body
  * @property string $Bucket
- * @property string $CacheControl
- * @property string $ContentDisposition
- * @property string $ContentEncoding
- * @property string $ContentLanguage
- * @property int $ContentLength
- * @property string $ContentMD5
- * @property string $ContentType
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
- * @property string $ChecksumCRC32
- * @property string $ChecksumCRC32C
- * @property string $ChecksumSHA1
- * @property string $ChecksumSHA256
- * @property \Aws\Api\DateTimeResult $Expires
- * @property string $IfMatch
- * @property string $IfNoneMatch
- * @property string $GrantFullControl
- * @property string $GrantRead
- * @property string $GrantReadACP
- * @property string $GrantWriteACP
+ * @property string|null $CacheControl
+ * @property string|null $ContentDisposition
+ * @property string|null $ContentEncoding
+ * @property string|null $ContentLanguage
+ * @property int|null $ContentLength
+ * @property string|null $ContentMD5
+ * @property string|null $ContentType
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property string|null $ChecksumCRC32
+ * @property string|null $ChecksumCRC32C
+ * @property string|null $ChecksumSHA1
+ * @property string|null $ChecksumSHA256
+ * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $IfMatch
+ * @property string|null $IfNoneMatch
+ * @property string|null $GrantFullControl
+ * @property string|null $GrantRead
+ * @property string|null $GrantReadACP
+ * @property string|null $GrantWriteACP
  * @property string $Key
- * @property int $WriteOffsetBytes
- * @property array<string, string> $Metadata
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse' $ServerSideEncryption
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE' $StorageClass
- * @property string $WebsiteRedirectLocation
- * @property string $SSECustomerAlgorithm
- * @property string $SSECustomerKey
- * @property string $SSECustomerKeyMD5
- * @property string $SSEKMSKeyId
- * @property string $SSEKMSEncryptionContext
- * @property bool $BucketKeyEnabled
- * @property 'requester' $RequestPayer
- * @property string $Tagging
- * @property 'GOVERNANCE'|'COMPLIANCE' $ObjectLockMode
- * @property \Aws\Api\DateTimeResult $ObjectLockRetainUntilDate
- * @property 'ON'|'OFF' $ObjectLockLegalHoldStatus
- * @property string $ExpectedBucketOwner
+ * @property int|null $WriteOffsetBytes
+ * @property array<string, string>|null $Metadata
+ * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property string|null $WebsiteRedirectLocation
+ * @property string|null $SSECustomerAlgorithm
+ * @property string|null $SSECustomerKey
+ * @property string|null $SSECustomerKeyMD5
+ * @property string|null $SSEKMSKeyId
+ * @property string|null $SSEKMSEncryptionContext
+ * @property bool|null $BucketKeyEnabled
+ * @property 'requester'|null $RequestPayer
+ * @property string|null $Tagging
+ * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
+ * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
+ * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
+ * @property string|null $ExpectedBucketOwner
  */
 class PutObjectRequest extends Request
 {
     /**
      * @param array{
-     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control',
-     *     Body?: string|resource|\Psr\Http\Message\StreamInterface,
+     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null,
+     *     Body?: string|resource|\Psr\Http\Message\StreamInterface|null,
      *     Bucket: string,
-     *     CacheControl?: string,
-     *     ContentDisposition?: string,
-     *     ContentEncoding?: string,
-     *     ContentLanguage?: string,
-     *     ContentLength?: int,
-     *     ContentMD5?: string,
-     *     ContentType?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
-     *     ChecksumCRC32?: string,
-     *     ChecksumCRC32C?: string,
-     *     ChecksumSHA1?: string,
-     *     ChecksumSHA256?: string,
-     *     Expires?: \Aws\Api\DateTimeResult,
-     *     IfMatch?: string,
-     *     IfNoneMatch?: string,
-     *     GrantFullControl?: string,
-     *     GrantRead?: string,
-     *     GrantReadACP?: string,
-     *     GrantWriteACP?: string,
+     *     CacheControl?: string|null,
+     *     ContentDisposition?: string|null,
+     *     ContentEncoding?: string|null,
+     *     ContentLanguage?: string|null,
+     *     ContentLength?: int|null,
+     *     ContentMD5?: string|null,
+     *     ContentType?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ChecksumCRC32?: string|null,
+     *     ChecksumCRC32C?: string|null,
+     *     ChecksumSHA1?: string|null,
+     *     ChecksumSHA256?: string|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     IfMatch?: string|null,
+     *     IfNoneMatch?: string|null,
+     *     GrantFullControl?: string|null,
+     *     GrantRead?: string|null,
+     *     GrantReadACP?: string|null,
+     *     GrantWriteACP?: string|null,
      *     Key: string,
-     *     WriteOffsetBytes?: int,
-     *     Metadata?: array<string, string>,
-     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse',
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE',
-     *     WebsiteRedirectLocation?: string,
-     *     SSECustomerAlgorithm?: string,
-     *     SSECustomerKey?: string,
-     *     SSECustomerKeyMD5?: string,
-     *     SSEKMSKeyId?: string,
-     *     SSEKMSEncryptionContext?: string,
-     *     BucketKeyEnabled?: bool,
-     *     RequestPayer?: 'requester',
-     *     Tagging?: string,
-     *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE',
-     *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult,
-     *     ObjectLockLegalHoldStatus?: 'ON'|'OFF',
-     *     ExpectedBucketOwner?: string
+     *     WriteOffsetBytes?: int|null,
+     *     Metadata?: array<string, string>|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     WebsiteRedirectLocation?: string|null,
+     *     SSECustomerAlgorithm?: string|null,
+     *     SSECustomerKey?: string|null,
+     *     SSECustomerKeyMD5?: string|null,
+     *     SSEKMSKeyId?: string|null,
+     *     SSEKMSEncryptionContext?: string|null,
+     *     BucketKeyEnabled?: bool|null,
+     *     RequestPayer?: 'requester'|null,
+     *     Tagging?: string|null,
+     *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE'|null,
+     *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
+     *     ObjectLockLegalHoldStatus?: 'ON'|'OFF'|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

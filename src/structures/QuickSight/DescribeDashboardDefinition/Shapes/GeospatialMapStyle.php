@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'LIGHT_GRAY'|'DARK_GRAY'|'STREET'|'IMAGERY' $BaseMapStyle
- * @property string $BackgroundColor
- * @property 'HIDDEN'|'VISIBLE' $BaseMapVisibility
+ * @property 'LIGHT_GRAY'|'DARK_GRAY'|'STREET'|'IMAGERY'|null $BaseMapStyle
+ * @property string|null $BackgroundColor
+ * @property 'HIDDEN'|'VISIBLE'|null $BaseMapVisibility
  */
 class GeospatialMapStyle extends Shape
 {
     /**
      * @param array{
-     *     BaseMapStyle?: 'LIGHT_GRAY'|'DARK_GRAY'|'STREET'|'IMAGERY',
-     *     BackgroundColor?: string,
-     *     BaseMapVisibility?: 'HIDDEN'|'VISIBLE'
+     *     BaseMapStyle?: 'LIGHT_GRAY'|'DARK_GRAY'|'STREET'|'IMAGERY'|null,
+     *     BackgroundColor?: string|null,
+     *     BaseMapVisibility?: 'HIDDEN'|'VISIBLE'|null
      * } $args
      */
     public function __construct(array $args = [])

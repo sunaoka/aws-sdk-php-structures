@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HITId
- * @property list<'Assignment'|'HIT'> $PolicyLevels
- * @property bool $RetrieveActions
- * @property bool $RetrieveResults
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<'Assignment'|'HIT'>|null $PolicyLevels
+ * @property bool|null $RetrieveActions
+ * @property bool|null $RetrieveResults
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListReviewPolicyResultsForHITRequest extends Request
 {
     /**
      * @param array{
      *     HITId: string,
-     *     PolicyLevels?: list<'Assignment'|'HIT'>,
-     *     RetrieveActions?: bool,
-     *     RetrieveResults?: bool,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     PolicyLevels?: list<'Assignment'|'HIT'>|null,
+     *     RetrieveActions?: bool|null,
+     *     RetrieveResults?: bool|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\OptimizePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OptimizedPrompt $optimizedPrompt
+ * @property OptimizedPrompt|null $optimizedPrompt
  */
 class OptimizedPromptEvent extends Shape
 {
     /**
-     * @param array{optimizedPrompt?: OptimizedPrompt} $args
+     * @param array{optimizedPrompt?: OptimizedPrompt|null} $args
      */
     public function __construct(array $args = [])
     {

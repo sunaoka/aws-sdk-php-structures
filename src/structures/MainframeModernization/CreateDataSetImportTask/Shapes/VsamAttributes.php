@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateDataSetImportTask\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AlternateKey> $alternateKeys
- * @property bool $compressed
- * @property string $encoding
+ * @property list<AlternateKey>|null $alternateKeys
+ * @property bool|null $compressed
+ * @property string|null $encoding
  * @property string $format
- * @property PrimaryKey $primaryKey
+ * @property PrimaryKey|null $primaryKey
  */
 class VsamAttributes extends Shape
 {
     /**
      * @param array{
-     *     alternateKeys?: list<AlternateKey>,
-     *     compressed?: bool,
-     *     encoding?: string,
+     *     alternateKeys?: list<AlternateKey>|null,
+     *     compressed?: bool|null,
+     *     encoding?: string|null,
      *     format: string,
-     *     primaryKey?: PrimaryKey
+     *     primaryKey?: PrimaryKey|null
      * } $args
      */
     public function __construct(array $args)

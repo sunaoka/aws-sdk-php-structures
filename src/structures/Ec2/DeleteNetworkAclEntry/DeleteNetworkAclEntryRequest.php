@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteNetworkAclEntry;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $NetworkAclId
  * @property int $RuleNumber
  * @property bool $Egress
@@ -14,7 +14,7 @@ class DeleteNetworkAclEntryRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     NetworkAclId: string,
      *     RuleNumber: int,
      *     Egress: bool

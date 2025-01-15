@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateSecurityProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Namespace
- * @property list<string> $ApplicationPermissions
+ * @property string|null $Namespace
+ * @property list<string>|null $ApplicationPermissions
  */
 class Application extends Shape
 {
     /**
      * @param array{
-     *     Namespace?: string,
-     *     ApplicationPermissions?: list<string>
+     *     Namespace?: string|null,
+     *     ApplicationPermissions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

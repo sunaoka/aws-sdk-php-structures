@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ssm\ListOpsItemRelatedItems;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $OpsItemId
- * @property list<Shapes\OpsItemRelatedItemsFilter> $Filters
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property string|null $OpsItemId
+ * @property list<Shapes\OpsItemRelatedItemsFilter>|null $Filters
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListOpsItemRelatedItemsRequest extends Request
 {
     /**
      * @param array{
-     *     OpsItemId?: string,
-     *     Filters?: list<Shapes\OpsItemRelatedItemsFilter>,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     OpsItemId?: string|null,
+     *     Filters?: list<Shapes\OpsItemRelatedItemsFilter>|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

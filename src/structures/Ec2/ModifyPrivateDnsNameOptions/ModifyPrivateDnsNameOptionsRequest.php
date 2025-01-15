@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyPrivateDnsNameOptions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $InstanceId
- * @property 'ip-name'|'resource-name' $PrivateDnsHostnameType
- * @property bool $EnableResourceNameDnsARecord
- * @property bool $EnableResourceNameDnsAAAARecord
+ * @property 'ip-name'|'resource-name'|null $PrivateDnsHostnameType
+ * @property bool|null $EnableResourceNameDnsARecord
+ * @property bool|null $EnableResourceNameDnsAAAARecord
  */
 class ModifyPrivateDnsNameOptionsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InstanceId: string,
-     *     PrivateDnsHostnameType?: 'ip-name'|'resource-name',
-     *     EnableResourceNameDnsARecord?: bool,
-     *     EnableResourceNameDnsAAAARecord?: bool
+     *     PrivateDnsHostnameType?: 'ip-name'|'resource-name'|null,
+     *     EnableResourceNameDnsARecord?: bool|null,
+     *     EnableResourceNameDnsAAAARecord?: bool|null
      * } $args
      */
     public function __construct(array $args)

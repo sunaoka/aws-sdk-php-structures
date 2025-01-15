@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53Profiles\UpdateProfileResourceAssociatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ProfileResourceAssociation $ProfileResourceAssociation
+ * @property Shapes\ProfileResourceAssociation|null $ProfileResourceAssociation
  */
 class UpdateProfileResourceAssociationResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImageScanFindingAggregations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\Filter $filter
- * @property string $nextToken
+ * @property Shapes\Filter|null $filter
+ * @property string|null $nextToken
  */
 class ListImageScanFindingAggregationsRequest extends Request
 {
     /**
      * @param array{
-     *     filter?: Shapes\Filter,
-     *     nextToken?: string
+     *     filter?: Shapes\Filter|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $configuredModelAlgorithmAssociationArn
  * @property string $configuredModelAlgorithmArn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $membershipIdentifier
  * @property string $collaborationIdentifier
  */
@@ -23,7 +23,7 @@ class ConfiguredModelAlgorithmAssociationSummary extends Shape
      *     configuredModelAlgorithmAssociationArn: string,
      *     configuredModelAlgorithmArn: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     membershipIdentifier: string,
      *     collaborationIdentifier: string
      * } $args

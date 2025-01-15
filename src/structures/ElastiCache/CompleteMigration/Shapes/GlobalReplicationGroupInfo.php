@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\CompleteMigration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GlobalReplicationGroupId
- * @property string $GlobalReplicationGroupMemberRole
+ * @property string|null $GlobalReplicationGroupId
+ * @property string|null $GlobalReplicationGroupMemberRole
  */
 class GlobalReplicationGroupInfo extends Shape
 {
     /**
      * @param array{
-     *     GlobalReplicationGroupId?: string,
-     *     GlobalReplicationGroupMemberRole?: string
+     *     GlobalReplicationGroupId?: string|null,
+     *     GlobalReplicationGroupMemberRole?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $ExclusiveEndTime
  * @property Shapes\S3ExportConfiguration $S3ExportConfiguration
  * @property string $RoleArn
- * @property 'ION_BINARY'|'ION_TEXT'|'JSON' $OutputFormat
+ * @property 'ION_BINARY'|'ION_TEXT'|'JSON'|null $OutputFormat
  */
 class ExportJournalToS3Request extends Request
 {
@@ -21,7 +21,7 @@ class ExportJournalToS3Request extends Request
      *     ExclusiveEndTime: \Aws\Api\DateTimeResult,
      *     S3ExportConfiguration: Shapes\S3ExportConfiguration,
      *     RoleArn: string,
-     *     OutputFormat?: 'ION_BINARY'|'ION_TEXT'|'JSON'
+     *     OutputFormat?: 'ION_BINARY'|'ION_TEXT'|'JSON'|null
      * } $args
      */
     public function __construct(array $args)

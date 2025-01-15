@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSMQuickSetup\UpdateConfigurationManager;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $ManagerArn
- * @property string $Name
+ * @property string|null $Name
  */
 class UpdateConfigurationManagerRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     ManagerArn: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

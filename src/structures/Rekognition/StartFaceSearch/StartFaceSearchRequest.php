@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Video $Video
- * @property string $ClientRequestToken
- * @property float $FaceMatchThreshold
+ * @property string|null $ClientRequestToken
+ * @property float|null $FaceMatchThreshold
  * @property string $CollectionId
- * @property Shapes\NotificationChannel $NotificationChannel
- * @property string $JobTag
+ * @property Shapes\NotificationChannel|null $NotificationChannel
+ * @property string|null $JobTag
  */
 class StartFaceSearchRequest extends Request
 {
     /**
      * @param array{
      *     Video: Shapes\Video,
-     *     ClientRequestToken?: string,
-     *     FaceMatchThreshold?: float,
+     *     ClientRequestToken?: string|null,
+     *     FaceMatchThreshold?: float|null,
      *     CollectionId: string,
-     *     NotificationChannel?: Shapes\NotificationChannel,
-     *     JobTag?: string
+     *     NotificationChannel?: Shapes\NotificationChannel|null,
+     *     JobTag?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ecr\UpdateRepositoryCreationTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $registryId
- * @property Shapes\RepositoryCreationTemplate $repositoryCreationTemplate
+ * @property string|null $registryId
+ * @property Shapes\RepositoryCreationTemplate|null $repositoryCreationTemplate
  */
 class UpdateRepositoryCreationTemplateResponse extends Response
 {

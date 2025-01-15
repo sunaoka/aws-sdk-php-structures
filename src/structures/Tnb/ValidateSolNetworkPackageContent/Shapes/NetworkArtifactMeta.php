@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Tnb\ValidateSolNetworkPackageContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ToscaOverride> $overrides
+ * @property list<ToscaOverride>|null $overrides
  */
 class NetworkArtifactMeta extends Shape
 {
     /**
-     * @param array{overrides?: list<ToscaOverride>} $args
+     * @param array{overrides?: list<ToscaOverride>|null} $args
      */
     public function __construct(array $args = [])
     {

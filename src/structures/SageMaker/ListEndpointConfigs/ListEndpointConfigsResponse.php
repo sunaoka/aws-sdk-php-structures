@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\EndpointConfigSummary> $EndpointConfigs
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListEndpointConfigsResponse extends Response
 {

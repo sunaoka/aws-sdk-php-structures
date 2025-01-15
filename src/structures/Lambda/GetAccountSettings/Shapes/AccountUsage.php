@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lambda\GetAccountSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TotalCodeSize
- * @property int $FunctionCount
+ * @property int|null $TotalCodeSize
+ * @property int|null $FunctionCount
  */
 class AccountUsage extends Shape
 {
     /**
      * @param array{
-     *     TotalCodeSize?: int,
-     *     FunctionCount?: int
+     *     TotalCodeSize?: int|null,
+     *     FunctionCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

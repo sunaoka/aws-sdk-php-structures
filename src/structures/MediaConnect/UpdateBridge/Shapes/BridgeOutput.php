@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateBridge\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BridgeFlowOutput $FlowOutput
- * @property BridgeNetworkOutput $NetworkOutput
+ * @property BridgeFlowOutput|null $FlowOutput
+ * @property BridgeNetworkOutput|null $NetworkOutput
  */
 class BridgeOutput extends Shape
 {
     /**
      * @param array{
-     *     FlowOutput?: BridgeFlowOutput,
-     *     NetworkOutput?: BridgeNetworkOutput
+     *     FlowOutput?: BridgeFlowOutput|null,
+     *     NetworkOutput?: BridgeNetworkOutput|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GlobalNetworkId
- * @property string $DeviceId
- * @property string $LinkId
- * @property int<1, 500> $MaxResults
- * @property string $NextToken
+ * @property string|null $DeviceId
+ * @property string|null $LinkId
+ * @property int<1, 500>|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetLinkAssociationsRequest extends Request
 {
     /**
      * @param array{
      *     GlobalNetworkId: string,
-     *     DeviceId?: string,
-     *     LinkId?: string,
-     *     MaxResults?: int<1, 500>,
-     *     NextToken?: string
+     *     DeviceId?: string|null,
+     *     LinkId?: string|null,
+     *     MaxResults?: int<1, 500>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

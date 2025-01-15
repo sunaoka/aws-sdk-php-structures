@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Chime\ListAppInstanceUsers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppInstanceArn
- * @property list<Shapes\AppInstanceUserSummary> $AppInstanceUsers
- * @property string $NextToken
+ * @property string|null $AppInstanceArn
+ * @property list<Shapes\AppInstanceUserSummary>|null $AppInstanceUsers
+ * @property string|null $NextToken
  */
 class ListAppInstanceUsersResponse extends Response
 {

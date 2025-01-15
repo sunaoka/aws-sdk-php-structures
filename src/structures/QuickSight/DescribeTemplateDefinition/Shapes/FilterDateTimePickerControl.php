@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FilterControlId
  * @property string $Title
  * @property string $SourceFilterId
- * @property DateTimePickerControlDisplayOptions $DisplayOptions
- * @property 'SINGLE_VALUED'|'DATE_RANGE' $Type
- * @property 'AUTO'|'MANUAL' $CommitMode
+ * @property DateTimePickerControlDisplayOptions|null $DisplayOptions
+ * @property 'SINGLE_VALUED'|'DATE_RANGE'|null $Type
+ * @property 'AUTO'|'MANUAL'|null $CommitMode
  */
 class FilterDateTimePickerControl extends Shape
 {
@@ -19,9 +19,9 @@ class FilterDateTimePickerControl extends Shape
      *     FilterControlId: string,
      *     Title: string,
      *     SourceFilterId: string,
-     *     DisplayOptions?: DateTimePickerControlDisplayOptions,
-     *     Type?: 'SINGLE_VALUED'|'DATE_RANGE',
-     *     CommitMode?: 'AUTO'|'MANUAL'
+     *     DisplayOptions?: DateTimePickerControlDisplayOptions|null,
+     *     Type?: 'SINGLE_VALUED'|'DATE_RANGE'|null,
+     *     CommitMode?: 'AUTO'|'MANUAL'|null
      * } $args
      */
     public function __construct(array $args)

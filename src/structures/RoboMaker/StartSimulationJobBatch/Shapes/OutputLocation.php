@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RoboMaker\StartSimulationJobBatch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $s3Bucket
- * @property string $s3Prefix
+ * @property string|null $s3Bucket
+ * @property string|null $s3Prefix
  */
 class OutputLocation extends Shape
 {
     /**
      * @param array{
-     *     s3Bucket?: string,
-     *     s3Prefix?: string
+     *     s3Bucket?: string|null,
+     *     s3Prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

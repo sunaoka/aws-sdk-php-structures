@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property Shapes\ServiceLevelIndicatorConfig $SliConfig
- * @property Shapes\RequestBasedServiceLevelIndicatorConfig $RequestBasedSliConfig
- * @property Shapes\Goal $Goal
- * @property list<Shapes\Tag> $Tags
- * @property list<Shapes\BurnRateConfiguration> $BurnRateConfigurations
+ * @property string|null $Description
+ * @property Shapes\ServiceLevelIndicatorConfig|null $SliConfig
+ * @property Shapes\RequestBasedServiceLevelIndicatorConfig|null $RequestBasedSliConfig
+ * @property Shapes\Goal|null $Goal
+ * @property list<Shapes\Tag>|null $Tags
+ * @property list<Shapes\BurnRateConfiguration>|null $BurnRateConfigurations
  */
 class CreateServiceLevelObjectiveRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     SliConfig?: Shapes\ServiceLevelIndicatorConfig,
-     *     RequestBasedSliConfig?: Shapes\RequestBasedServiceLevelIndicatorConfig,
-     *     Goal?: Shapes\Goal,
-     *     Tags?: list<Shapes\Tag>,
-     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>
+     *     Description?: string|null,
+     *     SliConfig?: Shapes\ServiceLevelIndicatorConfig|null,
+     *     RequestBasedSliConfig?: Shapes\RequestBasedServiceLevelIndicatorConfig|null,
+     *     Goal?: Shapes\Goal|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

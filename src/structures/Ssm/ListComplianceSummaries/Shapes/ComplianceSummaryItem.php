@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\ListComplianceSummaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ComplianceType
- * @property CompliantSummary $CompliantSummary
- * @property NonCompliantSummary $NonCompliantSummary
+ * @property string|null $ComplianceType
+ * @property CompliantSummary|null $CompliantSummary
+ * @property NonCompliantSummary|null $NonCompliantSummary
  */
 class ComplianceSummaryItem extends Shape
 {
     /**
      * @param array{
-     *     ComplianceType?: string,
-     *     CompliantSummary?: CompliantSummary,
-     *     NonCompliantSummary?: NonCompliantSummary
+     *     ComplianceType?: string|null,
+     *     CompliantSummary?: CompliantSummary|null,
+     *     NonCompliantSummary?: NonCompliantSummary|null
      * } $args
      */
     public function __construct(array $args = [])

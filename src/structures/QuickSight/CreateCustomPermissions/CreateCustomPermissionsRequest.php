@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $CustomPermissionsName
- * @property Shapes\Capabilities $Capabilities
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\Capabilities|null $Capabilities
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateCustomPermissionsRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateCustomPermissionsRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     CustomPermissionsName: string,
-     *     Capabilities?: Shapes\Capabilities,
-     *     Tags?: list<Shapes\Tag>
+     *     Capabilities?: Shapes\Capabilities|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

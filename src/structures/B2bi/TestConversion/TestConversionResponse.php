@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $convertedFileContent
- * @property list<string> $validationMessages
+ * @property list<string>|null $validationMessages
  */
 class TestConversionResponse extends Response
 {

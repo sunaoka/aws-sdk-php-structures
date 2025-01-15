@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AmiId
- * @property string $SnowballAmiId
+ * @property string|null $SnowballAmiId
  */
 class Ec2AmiResource extends Shape
 {
     /**
      * @param array{
      *     AmiId: string,
-     *     SnowballAmiId?: string
+     *     SnowballAmiId?: string|null
      * } $args
      */
     public function __construct(array $args)

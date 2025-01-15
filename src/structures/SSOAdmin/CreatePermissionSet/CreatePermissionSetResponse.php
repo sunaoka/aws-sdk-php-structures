@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\CreatePermissionSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PermissionSet $PermissionSet
+ * @property Shapes\PermissionSet|null $PermissionSet
  */
 class CreatePermissionSetResponse extends Response
 {

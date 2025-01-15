@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $PolicyName
  * @property 'INLINE'|'MANAGED' $PolicyType
- * @property string $PolicyArn
- * @property 'USER'|'ROLE'|'GROUP' $EntityType
- * @property string $EntityName
+ * @property string|null $PolicyArn
+ * @property 'USER'|'ROLE'|'GROUP'|null $EntityType
+ * @property string|null $EntityName
  */
 class PolicyGrantingServiceAccess extends Shape
 {
@@ -17,9 +17,9 @@ class PolicyGrantingServiceAccess extends Shape
      * @param array{
      *     PolicyName: string,
      *     PolicyType: 'INLINE'|'MANAGED',
-     *     PolicyArn?: string,
-     *     EntityType?: 'USER'|'ROLE'|'GROUP',
-     *     EntityName?: string
+     *     PolicyArn?: string|null,
+     *     EntityType?: 'USER'|'ROLE'|'GROUP'|null,
+     *     EntityName?: string|null
      * } $args
      */
     public function __construct(array $args)

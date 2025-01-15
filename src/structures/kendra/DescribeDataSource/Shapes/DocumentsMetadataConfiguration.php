@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\kendra\DescribeDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3Prefix
+ * @property string|null $S3Prefix
  */
 class DocumentsMetadataConfiguration extends Shape
 {
     /**
-     * @param array{S3Prefix?: string} $args
+     * @param array{S3Prefix?: string|null} $args
      */
     public function __construct(array $args = [])
     {

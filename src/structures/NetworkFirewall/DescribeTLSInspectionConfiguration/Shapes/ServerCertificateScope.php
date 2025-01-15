@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DescribeTLSInspectionConfigurat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Address> $Sources
- * @property list<Address> $Destinations
- * @property list<PortRange> $SourcePorts
- * @property list<PortRange> $DestinationPorts
- * @property list<int<0, 255>> $Protocols
+ * @property list<Address>|null $Sources
+ * @property list<Address>|null $Destinations
+ * @property list<PortRange>|null $SourcePorts
+ * @property list<PortRange>|null $DestinationPorts
+ * @property list<int<0, 255>>|null $Protocols
  */
 class ServerCertificateScope extends Shape
 {
     /**
      * @param array{
-     *     Sources?: list<Address>,
-     *     Destinations?: list<Address>,
-     *     SourcePorts?: list<PortRange>,
-     *     DestinationPorts?: list<PortRange>,
-     *     Protocols?: list<int<0, 255>>
+     *     Sources?: list<Address>|null,
+     *     Destinations?: list<Address>|null,
+     *     SourcePorts?: list<PortRange>|null,
+     *     DestinationPorts?: list<PortRange>|null,
+     *     Protocols?: list<int<0, 255>>|null
      * } $args
      */
     public function __construct(array $args = [])

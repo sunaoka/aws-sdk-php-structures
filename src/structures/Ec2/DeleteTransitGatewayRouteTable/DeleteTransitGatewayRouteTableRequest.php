@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TransitGatewayRouteTableId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteTransitGatewayRouteTableRequest extends Request
 {
     /**
      * @param array{
      *     TransitGatewayRouteTableId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

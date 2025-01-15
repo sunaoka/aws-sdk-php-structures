@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\CreateSlot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SlotDefaultValueSpecification $defaultValueSpecification
+ * @property SlotDefaultValueSpecification|null $defaultValueSpecification
  * @property PromptSpecification $promptSpecification
- * @property list<SampleUtterance> $sampleUtterances
- * @property WaitAndContinueSpecification $waitAndContinueSpecification
+ * @property list<SampleUtterance>|null $sampleUtterances
+ * @property WaitAndContinueSpecification|null $waitAndContinueSpecification
  */
 class SubSlotValueElicitationSetting extends Shape
 {
     /**
      * @param array{
-     *     defaultValueSpecification?: SlotDefaultValueSpecification,
+     *     defaultValueSpecification?: SlotDefaultValueSpecification|null,
      *     promptSpecification: PromptSpecification,
-     *     sampleUtterances?: list<SampleUtterance>,
-     *     waitAndContinueSpecification?: WaitAndContinueSpecification
+     *     sampleUtterances?: list<SampleUtterance>|null,
+     *     waitAndContinueSpecification?: WaitAndContinueSpecification|null
      * } $args
      */
     public function __construct(array $args)

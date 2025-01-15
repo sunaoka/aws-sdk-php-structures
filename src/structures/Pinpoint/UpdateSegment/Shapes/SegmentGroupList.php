@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateSegment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SegmentGroup> $Groups
- * @property 'ALL'|'ANY'|'NONE' $Include
+ * @property list<SegmentGroup>|null $Groups
+ * @property 'ALL'|'ANY'|'NONE'|null $Include
  */
 class SegmentGroupList extends Shape
 {
     /**
      * @param array{
-     *     Groups?: list<SegmentGroup>,
-     *     Include?: 'ALL'|'ANY'|'NONE'
+     *     Groups?: list<SegmentGroup>|null,
+     *     Include?: 'ALL'|'ANY'|'NONE'|null
      * } $args
      */
     public function __construct(array $args = [])

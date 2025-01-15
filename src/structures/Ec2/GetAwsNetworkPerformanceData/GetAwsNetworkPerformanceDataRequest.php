@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\GetAwsNetworkPerformanceData;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\DataQuery> $DataQueries
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $MaxResults
- * @property string $NextToken
- * @property bool $DryRun
+ * @property list<Shapes\DataQuery>|null $DataQueries
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
+ * @property bool|null $DryRun
  */
 class GetAwsNetworkPerformanceDataRequest extends Request
 {
     /**
      * @param array{
-     *     DataQueries?: list<Shapes\DataQuery>,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
-     *     NextToken?: string,
-     *     DryRun?: bool
+     *     DataQueries?: list<Shapes\DataQuery>|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

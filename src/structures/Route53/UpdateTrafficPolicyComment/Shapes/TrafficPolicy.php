@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS' $Type
  * @property string $Document
- * @property string $Comment
+ * @property string|null $Comment
  */
 class TrafficPolicy extends Shape
 {
@@ -21,7 +21,7 @@ class TrafficPolicy extends Shape
      *     Name: string,
      *     Type: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS',
      *     Document: string,
-     *     Comment?: string
+     *     Comment?: string|null
      * } $args
      */
     public function __construct(array $args)

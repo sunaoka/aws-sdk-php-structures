@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DisassociateAddress;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AssociationId
- * @property string $PublicIp
- * @property bool $DryRun
+ * @property string|null $AssociationId
+ * @property string|null $PublicIp
+ * @property bool|null $DryRun
  */
 class DisassociateAddressRequest extends Request
 {
     /**
      * @param array{
-     *     AssociationId?: string,
-     *     PublicIp?: string,
-     *     DryRun?: bool
+     *     AssociationId?: string|null,
+     *     PublicIp?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

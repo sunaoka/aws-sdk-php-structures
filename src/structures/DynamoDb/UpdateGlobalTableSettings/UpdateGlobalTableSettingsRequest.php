@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GlobalTableName
- * @property 'PROVISIONED'|'PAY_PER_REQUEST' $GlobalTableBillingMode
- * @property int<1, max> $GlobalTableProvisionedWriteCapacityUnits
- * @property Shapes\AutoScalingSettingsUpdate $GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate
- * @property list<Shapes\GlobalTableGlobalSecondaryIndexSettingsUpdate> $GlobalTableGlobalSecondaryIndexSettingsUpdate
- * @property list<Shapes\ReplicaSettingsUpdate> $ReplicaSettingsUpdate
+ * @property 'PROVISIONED'|'PAY_PER_REQUEST'|null $GlobalTableBillingMode
+ * @property int<1, max>|null $GlobalTableProvisionedWriteCapacityUnits
+ * @property Shapes\AutoScalingSettingsUpdate|null $GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate
+ * @property list<Shapes\GlobalTableGlobalSecondaryIndexSettingsUpdate>|null $GlobalTableGlobalSecondaryIndexSettingsUpdate
+ * @property list<Shapes\ReplicaSettingsUpdate>|null $ReplicaSettingsUpdate
  */
 class UpdateGlobalTableSettingsRequest extends Request
 {
     /**
      * @param array{
      *     GlobalTableName: string,
-     *     GlobalTableBillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST',
-     *     GlobalTableProvisionedWriteCapacityUnits?: int<1, max>,
-     *     GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate?: Shapes\AutoScalingSettingsUpdate,
-     *     GlobalTableGlobalSecondaryIndexSettingsUpdate?: list<Shapes\GlobalTableGlobalSecondaryIndexSettingsUpdate>,
-     *     ReplicaSettingsUpdate?: list<Shapes\ReplicaSettingsUpdate>
+     *     GlobalTableBillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'|null,
+     *     GlobalTableProvisionedWriteCapacityUnits?: int<1, max>|null,
+     *     GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate?: Shapes\AutoScalingSettingsUpdate|null,
+     *     GlobalTableGlobalSecondaryIndexSettingsUpdate?: list<Shapes\GlobalTableGlobalSecondaryIndexSettingsUpdate>|null,
+     *     ReplicaSettingsUpdate?: list<Shapes\ReplicaSettingsUpdate>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\GetBackendJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppId
- * @property string $BackendEnvironmentName
- * @property string $CreateTime
- * @property string $Error
- * @property string $JobId
- * @property string $Operation
- * @property string $Status
- * @property string $UpdateTime
+ * @property string|null $AppId
+ * @property string|null $BackendEnvironmentName
+ * @property string|null $CreateTime
+ * @property string|null $Error
+ * @property string|null $JobId
+ * @property string|null $Operation
+ * @property string|null $Status
+ * @property string|null $UpdateTime
  */
 class GetBackendJobResponse extends Response
 {

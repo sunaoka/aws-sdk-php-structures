@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceId
- * @property string $NextToken
- * @property int<1, 25> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 25>|null $MaxResults
  */
 class DescribeConnectClientAddInsRequest extends Request
 {
     /**
      * @param array{
      *     ResourceId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 25>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 25>|null
      * } $args
      */
     public function __construct(array $args)

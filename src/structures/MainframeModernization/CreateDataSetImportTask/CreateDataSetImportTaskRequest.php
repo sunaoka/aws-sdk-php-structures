@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $applicationId
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property Shapes\DataSetImportConfig $importConfig
  */
 class CreateDataSetImportTaskRequest extends Request
@@ -14,7 +14,7 @@ class CreateDataSetImportTaskRequest extends Request
     /**
      * @param array{
      *     applicationId: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     importConfig: Shapes\DataSetImportConfig
      * } $args
      */

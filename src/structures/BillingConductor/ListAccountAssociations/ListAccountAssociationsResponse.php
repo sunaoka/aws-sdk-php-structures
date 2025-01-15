@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListAccountAssociations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AccountAssociationsListElement> $LinkedAccounts
- * @property string $NextToken
+ * @property list<Shapes\AccountAssociationsListElement>|null $LinkedAccounts
+ * @property string|null $NextToken
  */
 class ListAccountAssociationsResponse extends Response
 {

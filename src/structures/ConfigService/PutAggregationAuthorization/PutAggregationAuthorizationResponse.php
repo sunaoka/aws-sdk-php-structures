@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConfigService\PutAggregationAuthorization;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AggregationAuthorization $AggregationAuthorization
+ * @property Shapes\AggregationAuthorization|null $AggregationAuthorization
  */
 class PutAggregationAuthorizationResponse extends Response
 {

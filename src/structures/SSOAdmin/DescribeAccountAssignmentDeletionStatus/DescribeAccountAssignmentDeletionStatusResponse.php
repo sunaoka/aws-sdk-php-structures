@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\DescribeAccountAssignmentDeletionStatu
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AccountAssignmentOperationStatus $AccountAssignmentDeletionStatus
+ * @property Shapes\AccountAssignmentOperationStatus|null $AccountAssignmentDeletionStatus
  */
 class DescribeAccountAssignmentDeletionStatusResponse extends Response
 {

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property string $resourceArn
  * @property string $resourceId
- * @property 'SERVICE'|'RESOURCE' $serviceNetworkLogType
+ * @property 'SERVICE'|'RESOURCE'|null $serviceNetworkLogType
  */
 class GetAccessLogSubscriptionResponse extends Response
 {

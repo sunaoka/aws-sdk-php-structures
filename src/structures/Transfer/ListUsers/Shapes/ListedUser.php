@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property string $HomeDirectory
- * @property 'PATH'|'LOGICAL' $HomeDirectoryType
- * @property string $Role
- * @property int $SshPublicKeyCount
- * @property string $UserName
+ * @property string|null $HomeDirectory
+ * @property 'PATH'|'LOGICAL'|null $HomeDirectoryType
+ * @property string|null $Role
+ * @property int|null $SshPublicKeyCount
+ * @property string|null $UserName
  */
 class ListedUser extends Shape
 {
     /**
      * @param array{
      *     Arn: string,
-     *     HomeDirectory?: string,
-     *     HomeDirectoryType?: 'PATH'|'LOGICAL',
-     *     Role?: string,
-     *     SshPublicKeyCount?: int,
-     *     UserName?: string
+     *     HomeDirectory?: string|null,
+     *     HomeDirectoryType?: 'PATH'|'LOGICAL'|null,
+     *     Role?: string|null,
+     *     SshPublicKeyCount?: int|null,
+     *     UserName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeOrderableRepli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EngineVersion
- * @property string $ReplicationInstanceClass
- * @property string $StorageType
- * @property int $MinAllocatedStorage
- * @property int $MaxAllocatedStorage
- * @property int $DefaultAllocatedStorage
- * @property int $IncludedAllocatedStorage
- * @property list<string> $AvailabilityZones
- * @property 'beta'|'prod' $ReleaseStatus
+ * @property string|null $EngineVersion
+ * @property string|null $ReplicationInstanceClass
+ * @property string|null $StorageType
+ * @property int|null $MinAllocatedStorage
+ * @property int|null $MaxAllocatedStorage
+ * @property int|null $DefaultAllocatedStorage
+ * @property int|null $IncludedAllocatedStorage
+ * @property list<string>|null $AvailabilityZones
+ * @property 'beta'|'prod'|null $ReleaseStatus
  */
 class OrderableReplicationInstance extends Shape
 {
     /**
      * @param array{
-     *     EngineVersion?: string,
-     *     ReplicationInstanceClass?: string,
-     *     StorageType?: string,
-     *     MinAllocatedStorage?: int,
-     *     MaxAllocatedStorage?: int,
-     *     DefaultAllocatedStorage?: int,
-     *     IncludedAllocatedStorage?: int,
-     *     AvailabilityZones?: list<string>,
-     *     ReleaseStatus?: 'beta'|'prod'
+     *     EngineVersion?: string|null,
+     *     ReplicationInstanceClass?: string|null,
+     *     StorageType?: string|null,
+     *     MinAllocatedStorage?: int|null,
+     *     MaxAllocatedStorage?: int|null,
+     *     DefaultAllocatedStorage?: int|null,
+     *     IncludedAllocatedStorage?: int|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     ReleaseStatus?: 'beta'|'prod'|null
      * } $args
      */
     public function __construct(array $args = [])

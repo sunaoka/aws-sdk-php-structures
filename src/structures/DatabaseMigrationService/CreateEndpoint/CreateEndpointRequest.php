@@ -8,38 +8,38 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EndpointIdentifier
  * @property 'source'|'target' $EndpointType
  * @property string $EngineName
- * @property string $Username
- * @property string $Password
- * @property string $ServerName
- * @property int $Port
- * @property string $DatabaseName
- * @property string $ExtraConnectionAttributes
- * @property string $KmsKeyId
- * @property list<Shapes\Tag> $Tags
- * @property string $CertificateArn
- * @property 'none'|'require'|'verify-ca'|'verify-full' $SslMode
- * @property string $ServiceAccessRoleArn
- * @property string $ExternalTableDefinition
- * @property Shapes\DynamoDbSettings $DynamoDbSettings
- * @property Shapes\S3Settings $S3Settings
- * @property Shapes\DmsTransferSettings $DmsTransferSettings
- * @property Shapes\MongoDbSettings $MongoDbSettings
- * @property Shapes\KinesisSettings $KinesisSettings
- * @property Shapes\KafkaSettings $KafkaSettings
- * @property Shapes\ElasticsearchSettings $ElasticsearchSettings
- * @property Shapes\NeptuneSettings $NeptuneSettings
- * @property Shapes\RedshiftSettings $RedshiftSettings
- * @property Shapes\PostgreSQLSettings $PostgreSQLSettings
- * @property Shapes\MySQLSettings $MySQLSettings
- * @property Shapes\OracleSettings $OracleSettings
- * @property Shapes\SybaseSettings $SybaseSettings
- * @property Shapes\MicrosoftSQLServerSettings $MicrosoftSQLServerSettings
- * @property Shapes\IBMDb2Settings $IBMDb2Settings
- * @property string $ResourceIdentifier
- * @property Shapes\DocDbSettings $DocDbSettings
- * @property Shapes\RedisSettings $RedisSettings
- * @property Shapes\GcpMySQLSettings $GcpMySQLSettings
- * @property Shapes\TimestreamSettings $TimestreamSettings
+ * @property string|null $Username
+ * @property string|null $Password
+ * @property string|null $ServerName
+ * @property int|null $Port
+ * @property string|null $DatabaseName
+ * @property string|null $ExtraConnectionAttributes
+ * @property string|null $KmsKeyId
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $CertificateArn
+ * @property 'none'|'require'|'verify-ca'|'verify-full'|null $SslMode
+ * @property string|null $ServiceAccessRoleArn
+ * @property string|null $ExternalTableDefinition
+ * @property Shapes\DynamoDbSettings|null $DynamoDbSettings
+ * @property Shapes\S3Settings|null $S3Settings
+ * @property Shapes\DmsTransferSettings|null $DmsTransferSettings
+ * @property Shapes\MongoDbSettings|null $MongoDbSettings
+ * @property Shapes\KinesisSettings|null $KinesisSettings
+ * @property Shapes\KafkaSettings|null $KafkaSettings
+ * @property Shapes\ElasticsearchSettings|null $ElasticsearchSettings
+ * @property Shapes\NeptuneSettings|null $NeptuneSettings
+ * @property Shapes\RedshiftSettings|null $RedshiftSettings
+ * @property Shapes\PostgreSQLSettings|null $PostgreSQLSettings
+ * @property Shapes\MySQLSettings|null $MySQLSettings
+ * @property Shapes\OracleSettings|null $OracleSettings
+ * @property Shapes\SybaseSettings|null $SybaseSettings
+ * @property Shapes\MicrosoftSQLServerSettings|null $MicrosoftSQLServerSettings
+ * @property Shapes\IBMDb2Settings|null $IBMDb2Settings
+ * @property string|null $ResourceIdentifier
+ * @property Shapes\DocDbSettings|null $DocDbSettings
+ * @property Shapes\RedisSettings|null $RedisSettings
+ * @property Shapes\GcpMySQLSettings|null $GcpMySQLSettings
+ * @property Shapes\TimestreamSettings|null $TimestreamSettings
  */
 class CreateEndpointRequest extends Request
 {
@@ -48,38 +48,38 @@ class CreateEndpointRequest extends Request
      *     EndpointIdentifier: string,
      *     EndpointType: 'source'|'target',
      *     EngineName: string,
-     *     Username?: string,
-     *     Password?: string,
-     *     ServerName?: string,
-     *     Port?: int,
-     *     DatabaseName?: string,
-     *     ExtraConnectionAttributes?: string,
-     *     KmsKeyId?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     CertificateArn?: string,
-     *     SslMode?: 'none'|'require'|'verify-ca'|'verify-full',
-     *     ServiceAccessRoleArn?: string,
-     *     ExternalTableDefinition?: string,
-     *     DynamoDbSettings?: Shapes\DynamoDbSettings,
-     *     S3Settings?: Shapes\S3Settings,
-     *     DmsTransferSettings?: Shapes\DmsTransferSettings,
-     *     MongoDbSettings?: Shapes\MongoDbSettings,
-     *     KinesisSettings?: Shapes\KinesisSettings,
-     *     KafkaSettings?: Shapes\KafkaSettings,
-     *     ElasticsearchSettings?: Shapes\ElasticsearchSettings,
-     *     NeptuneSettings?: Shapes\NeptuneSettings,
-     *     RedshiftSettings?: Shapes\RedshiftSettings,
-     *     PostgreSQLSettings?: Shapes\PostgreSQLSettings,
-     *     MySQLSettings?: Shapes\MySQLSettings,
-     *     OracleSettings?: Shapes\OracleSettings,
-     *     SybaseSettings?: Shapes\SybaseSettings,
-     *     MicrosoftSQLServerSettings?: Shapes\MicrosoftSQLServerSettings,
-     *     IBMDb2Settings?: Shapes\IBMDb2Settings,
-     *     ResourceIdentifier?: string,
-     *     DocDbSettings?: Shapes\DocDbSettings,
-     *     RedisSettings?: Shapes\RedisSettings,
-     *     GcpMySQLSettings?: Shapes\GcpMySQLSettings,
-     *     TimestreamSettings?: Shapes\TimestreamSettings
+     *     Username?: string|null,
+     *     Password?: string|null,
+     *     ServerName?: string|null,
+     *     Port?: int|null,
+     *     DatabaseName?: string|null,
+     *     ExtraConnectionAttributes?: string|null,
+     *     KmsKeyId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     CertificateArn?: string|null,
+     *     SslMode?: 'none'|'require'|'verify-ca'|'verify-full'|null,
+     *     ServiceAccessRoleArn?: string|null,
+     *     ExternalTableDefinition?: string|null,
+     *     DynamoDbSettings?: Shapes\DynamoDbSettings|null,
+     *     S3Settings?: Shapes\S3Settings|null,
+     *     DmsTransferSettings?: Shapes\DmsTransferSettings|null,
+     *     MongoDbSettings?: Shapes\MongoDbSettings|null,
+     *     KinesisSettings?: Shapes\KinesisSettings|null,
+     *     KafkaSettings?: Shapes\KafkaSettings|null,
+     *     ElasticsearchSettings?: Shapes\ElasticsearchSettings|null,
+     *     NeptuneSettings?: Shapes\NeptuneSettings|null,
+     *     RedshiftSettings?: Shapes\RedshiftSettings|null,
+     *     PostgreSQLSettings?: Shapes\PostgreSQLSettings|null,
+     *     MySQLSettings?: Shapes\MySQLSettings|null,
+     *     OracleSettings?: Shapes\OracleSettings|null,
+     *     SybaseSettings?: Shapes\SybaseSettings|null,
+     *     MicrosoftSQLServerSettings?: Shapes\MicrosoftSQLServerSettings|null,
+     *     IBMDb2Settings?: Shapes\IBMDb2Settings|null,
+     *     ResourceIdentifier?: string|null,
+     *     DocDbSettings?: Shapes\DocDbSettings|null,
+     *     RedisSettings?: Shapes\RedisSettings|null,
+     *     GcpMySQLSettings?: Shapes\GcpMySQLSettings|null,
+     *     TimestreamSettings?: Shapes\TimestreamSettings|null
      * } $args
      */
     public function __construct(array $args)

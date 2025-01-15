@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ComponentRecommendation> $componentRecommendations
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAppComponentRecommendationsResponse extends Response
 {

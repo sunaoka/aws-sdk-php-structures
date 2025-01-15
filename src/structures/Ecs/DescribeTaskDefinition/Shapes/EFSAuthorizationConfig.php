@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeTaskDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accessPointId
- * @property 'ENABLED'|'DISABLED' $iam
+ * @property string|null $accessPointId
+ * @property 'ENABLED'|'DISABLED'|null $iam
  */
 class EFSAuthorizationConfig extends Shape
 {
     /**
      * @param array{
-     *     accessPointId?: string,
-     *     iam?: 'ENABLED'|'DISABLED'
+     *     accessPointId?: string|null,
+     *     iam?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,12 +9,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SecurityControlId
  * @property string $SecurityControlArn
  * @property 'ENABLED'|'DISABLED' $AssociationStatus
- * @property list<string> $RelatedRequirements
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property string $UpdatedReason
- * @property string $StandardsControlTitle
- * @property string $StandardsControlDescription
- * @property list<string> $StandardsControlArns
+ * @property list<string>|null $RelatedRequirements
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property string|null $UpdatedReason
+ * @property string|null $StandardsControlTitle
+ * @property string|null $StandardsControlDescription
+ * @property list<string>|null $StandardsControlArns
  */
 class StandardsControlAssociationDetail extends Shape
 {
@@ -24,12 +24,12 @@ class StandardsControlAssociationDetail extends Shape
      *     SecurityControlId: string,
      *     SecurityControlArn: string,
      *     AssociationStatus: 'ENABLED'|'DISABLED',
-     *     RelatedRequirements?: list<string>,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     UpdatedReason?: string,
-     *     StandardsControlTitle?: string,
-     *     StandardsControlDescription?: string,
-     *     StandardsControlArns?: list<string>
+     *     RelatedRequirements?: list<string>|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedReason?: string|null,
+     *     StandardsControlTitle?: string|null,
+     *     StandardsControlDescription?: string|null,
+     *     StandardsControlArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

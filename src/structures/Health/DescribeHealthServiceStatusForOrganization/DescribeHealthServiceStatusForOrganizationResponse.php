@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Health\DescribeHealthServiceStatusForOrganizati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $healthServiceAccessStatusForOrganization
+ * @property string|null $healthServiceAccessStatusForOrganization
  */
 class DescribeHealthServiceStatusForOrganizationResponse extends Response
 {

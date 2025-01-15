@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $packageName
  * @property string $versionName
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DisassociateSbomFromPackageVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class DisassociateSbomFromPackageVersionRequest extends Request
      * @param array{
      *     packageName: string,
      *     versionName: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

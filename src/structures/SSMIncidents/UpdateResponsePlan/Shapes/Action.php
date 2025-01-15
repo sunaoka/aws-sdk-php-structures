@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\UpdateResponsePlan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SsmAutomation $ssmAutomation
+ * @property SsmAutomation|null $ssmAutomation
  */
 class Action extends Shape
 {
     /**
-     * @param array{ssmAutomation?: SsmAutomation} $args
+     * @param array{ssmAutomation?: SsmAutomation|null} $args
      */
     public function __construct(array $args = [])
     {

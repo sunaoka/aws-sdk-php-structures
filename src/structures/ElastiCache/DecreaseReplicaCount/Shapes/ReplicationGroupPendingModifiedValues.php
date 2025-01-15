@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DecreaseReplicaCount\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrimaryClusterId
- * @property 'enabled'|'disabled' $AutomaticFailoverStatus
- * @property ReshardingStatus $Resharding
- * @property 'SETTING'|'ROTATING' $AuthTokenStatus
- * @property UserGroupsUpdateStatus $UserGroups
- * @property list<PendingLogDeliveryConfiguration> $LogDeliveryConfigurations
- * @property bool $TransitEncryptionEnabled
- * @property 'preferred'|'required' $TransitEncryptionMode
- * @property 'enabled'|'disabled'|'compatible' $ClusterMode
+ * @property string|null $PrimaryClusterId
+ * @property 'enabled'|'disabled'|null $AutomaticFailoverStatus
+ * @property ReshardingStatus|null $Resharding
+ * @property 'SETTING'|'ROTATING'|null $AuthTokenStatus
+ * @property UserGroupsUpdateStatus|null $UserGroups
+ * @property list<PendingLogDeliveryConfiguration>|null $LogDeliveryConfigurations
+ * @property bool|null $TransitEncryptionEnabled
+ * @property 'preferred'|'required'|null $TransitEncryptionMode
+ * @property 'enabled'|'disabled'|'compatible'|null $ClusterMode
  */
 class ReplicationGroupPendingModifiedValues extends Shape
 {
     /**
      * @param array{
-     *     PrimaryClusterId?: string,
-     *     AutomaticFailoverStatus?: 'enabled'|'disabled',
-     *     Resharding?: ReshardingStatus,
-     *     AuthTokenStatus?: 'SETTING'|'ROTATING',
-     *     UserGroups?: UserGroupsUpdateStatus,
-     *     LogDeliveryConfigurations?: list<PendingLogDeliveryConfiguration>,
-     *     TransitEncryptionEnabled?: bool,
-     *     TransitEncryptionMode?: 'preferred'|'required',
-     *     ClusterMode?: 'enabled'|'disabled'|'compatible'
+     *     PrimaryClusterId?: string|null,
+     *     AutomaticFailoverStatus?: 'enabled'|'disabled'|null,
+     *     Resharding?: ReshardingStatus|null,
+     *     AuthTokenStatus?: 'SETTING'|'ROTATING'|null,
+     *     UserGroups?: UserGroupsUpdateStatus|null,
+     *     LogDeliveryConfigurations?: list<PendingLogDeliveryConfiguration>|null,
+     *     TransitEncryptionEnabled?: bool|null,
+     *     TransitEncryptionMode?: 'preferred'|'required'|null,
+     *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null
      * } $args
      */
     public function __construct(array $args = [])

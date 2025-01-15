@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\XRay\GetInsightEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Summary
- * @property \Aws\Api\DateTimeResult $EventTime
- * @property RequestImpactStatistics $ClientRequestImpactStatistics
- * @property RequestImpactStatistics $RootCauseServiceRequestImpactStatistics
- * @property list<AnomalousService> $TopAnomalousServices
+ * @property string|null $Summary
+ * @property \Aws\Api\DateTimeResult|null $EventTime
+ * @property RequestImpactStatistics|null $ClientRequestImpactStatistics
+ * @property RequestImpactStatistics|null $RootCauseServiceRequestImpactStatistics
+ * @property list<AnomalousService>|null $TopAnomalousServices
  */
 class InsightEvent extends Shape
 {
     /**
      * @param array{
-     *     Summary?: string,
-     *     EventTime?: \Aws\Api\DateTimeResult,
-     *     ClientRequestImpactStatistics?: RequestImpactStatistics,
-     *     RootCauseServiceRequestImpactStatistics?: RequestImpactStatistics,
-     *     TopAnomalousServices?: list<AnomalousService>
+     *     Summary?: string|null,
+     *     EventTime?: \Aws\Api\DateTimeResult|null,
+     *     ClientRequestImpactStatistics?: RequestImpactStatistics|null,
+     *     RootCauseServiceRequestImpactStatistics?: RequestImpactStatistics|null,
+     *     TopAnomalousServices?: list<AnomalousService>|null
      * } $args
      */
     public function __construct(array $args = [])

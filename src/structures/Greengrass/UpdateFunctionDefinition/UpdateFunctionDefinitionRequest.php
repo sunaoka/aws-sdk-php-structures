@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FunctionDefinitionId
- * @property string $Name
+ * @property string|null $Name
  */
 class UpdateFunctionDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     FunctionDefinitionId: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

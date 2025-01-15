@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy' $expectedComplianceStatus
- * @property string $expectedRpoDescription
- * @property int<0, max> $expectedRpoInSecs
- * @property string $expectedRtoDescription
- * @property int<0, max> $expectedRtoInSecs
+ * @property string|null $expectedRpoDescription
+ * @property int<0, max>|null $expectedRpoInSecs
+ * @property string|null $expectedRtoDescription
+ * @property int<0, max>|null $expectedRtoInSecs
  */
 class RecommendationDisruptionCompliance extends Shape
 {
     /**
      * @param array{
      *     expectedComplianceStatus: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy',
-     *     expectedRpoDescription?: string,
-     *     expectedRpoInSecs?: int<0, max>,
-     *     expectedRtoDescription?: string,
-     *     expectedRtoInSecs?: int<0, max>
+     *     expectedRpoDescription?: string|null,
+     *     expectedRpoInSecs?: int<0, max>|null,
+     *     expectedRtoDescription?: string|null,
+     *     expectedRtoInSecs?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

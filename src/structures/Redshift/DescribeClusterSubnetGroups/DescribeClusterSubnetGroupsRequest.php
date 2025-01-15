@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeClusterSubnetGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterSubnetGroupName
- * @property int $MaxRecords
- * @property string $Marker
- * @property list<string> $TagKeys
- * @property list<string> $TagValues
+ * @property string|null $ClusterSubnetGroupName
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property list<string>|null $TagKeys
+ * @property list<string>|null $TagValues
  */
 class DescribeClusterSubnetGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterSubnetGroupName?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     TagKeys?: list<string>,
-     *     TagValues?: list<string>
+     *     ClusterSubnetGroupName?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     TagKeys?: list<string>|null,
+     *     TagValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

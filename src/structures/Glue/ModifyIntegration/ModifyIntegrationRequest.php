@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IntegrationIdentifier
- * @property string $Description
- * @property string $DataFilter
- * @property string $IntegrationName
+ * @property string|null $Description
+ * @property string|null $DataFilter
+ * @property string|null $IntegrationName
  */
 class ModifyIntegrationRequest extends Request
 {
     /**
      * @param array{
      *     IntegrationIdentifier: string,
-     *     Description?: string,
-     *     DataFilter?: string,
-     *     IntegrationName?: string
+     *     Description?: string|null,
+     *     DataFilter?: string|null,
+     *     IntegrationName?: string|null
      * } $args
      */
     public function __construct(array $args)

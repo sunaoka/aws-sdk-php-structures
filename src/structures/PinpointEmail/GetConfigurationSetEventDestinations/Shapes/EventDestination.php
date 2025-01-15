@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property bool $Enabled
+ * @property bool|null $Enabled
  * @property list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'> $MatchingEventTypes
- * @property KinesisFirehoseDestination $KinesisFirehoseDestination
- * @property CloudWatchDestination $CloudWatchDestination
- * @property SnsDestination $SnsDestination
- * @property PinpointDestination $PinpointDestination
+ * @property KinesisFirehoseDestination|null $KinesisFirehoseDestination
+ * @property CloudWatchDestination|null $CloudWatchDestination
+ * @property SnsDestination|null $SnsDestination
+ * @property PinpointDestination|null $PinpointDestination
  */
 class EventDestination extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Enabled?: bool,
+     *     Enabled?: bool|null,
      *     MatchingEventTypes: list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'>,
-     *     KinesisFirehoseDestination?: KinesisFirehoseDestination,
-     *     CloudWatchDestination?: CloudWatchDestination,
-     *     SnsDestination?: SnsDestination,
-     *     PinpointDestination?: PinpointDestination
+     *     KinesisFirehoseDestination?: KinesisFirehoseDestination|null,
+     *     CloudWatchDestination?: CloudWatchDestination|null,
+     *     SnsDestination?: SnsDestination|null,
+     *     PinpointDestination?: PinpointDestination|null
      * } $args
      */
     public function __construct(array $args)

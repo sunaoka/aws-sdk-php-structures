@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AddCustomAttributes\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MinValue
- * @property string $MaxValue
+ * @property string|null $MinValue
+ * @property string|null $MaxValue
  */
 class NumberAttributeConstraintsType extends Shape
 {
     /**
      * @param array{
-     *     MinValue?: string,
-     *     MaxValue?: string
+     *     MinValue?: string|null,
+     *     MaxValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

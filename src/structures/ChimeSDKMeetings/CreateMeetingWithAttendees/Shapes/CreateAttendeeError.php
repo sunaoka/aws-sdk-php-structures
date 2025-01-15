@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMeetings\CreateMeetingWithAttendees\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExternalUserId
- * @property string $ErrorCode
- * @property string $ErrorMessage
+ * @property string|null $ExternalUserId
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
  */
 class CreateAttendeeError extends Shape
 {
     /**
      * @param array{
-     *     ExternalUserId?: string,
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string
+     *     ExternalUserId?: string|null,
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

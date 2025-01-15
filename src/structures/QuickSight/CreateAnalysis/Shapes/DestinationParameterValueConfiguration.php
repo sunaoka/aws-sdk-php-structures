@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomValuesConfiguration $CustomValuesConfiguration
- * @property 'ALL_VALUES' $SelectAllValueOptions
- * @property string $SourceParameterName
- * @property string $SourceField
- * @property ColumnIdentifier $SourceColumn
+ * @property CustomValuesConfiguration|null $CustomValuesConfiguration
+ * @property 'ALL_VALUES'|null $SelectAllValueOptions
+ * @property string|null $SourceParameterName
+ * @property string|null $SourceField
+ * @property ColumnIdentifier|null $SourceColumn
  */
 class DestinationParameterValueConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CustomValuesConfiguration?: CustomValuesConfiguration,
-     *     SelectAllValueOptions?: 'ALL_VALUES',
-     *     SourceParameterName?: string,
-     *     SourceField?: string,
-     *     SourceColumn?: ColumnIdentifier
+     *     CustomValuesConfiguration?: CustomValuesConfiguration|null,
+     *     SelectAllValueOptions?: 'ALL_VALUES'|null,
+     *     SourceParameterName?: string|null,
+     *     SourceField?: string|null,
+     *     SourceColumn?: ColumnIdentifier|null
      * } $args
      */
     public function __construct(array $args = [])

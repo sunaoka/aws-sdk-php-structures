@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeStorageSystemResourceMetrics\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IOPS $IOPS
- * @property Throughput $Throughput
- * @property Latency $Latency
+ * @property IOPS|null $IOPS
+ * @property Throughput|null $Throughput
+ * @property Latency|null $Latency
  */
 class P95Metrics extends Shape
 {
     /**
      * @param array{
-     *     IOPS?: IOPS,
-     *     Throughput?: Throughput,
-     *     Latency?: Latency
+     *     IOPS?: IOPS|null,
+     *     Throughput?: Throughput|null,
+     *     Latency?: Latency|null
      * } $args
      */
     public function __construct(array $args = [])

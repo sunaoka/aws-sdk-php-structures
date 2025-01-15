@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTThingsGraph\SearchFlowTemplates;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\FlowTemplateFilter> $filters
- * @property string $nextToken
- * @property int<1, 250> $maxResults
+ * @property list<Shapes\FlowTemplateFilter>|null $filters
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
  */
 class SearchFlowTemplatesRequest extends Request
 {
     /**
      * @param array{
-     *     filters?: list<Shapes\FlowTemplateFilter>,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>
+     *     filters?: list<Shapes\FlowTemplateFilter>|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<RouteVehicleNotice> $Notices
  * @property list<RoutePassThroughWaypoint> $PassThroughWaypoints
  * @property list<RouteVehicleSpan> $Spans
- * @property RouteVehicleSummary $Summary
+ * @property RouteVehicleSummary|null $Summary
  * @property list<RouteToll> $Tolls
  * @property list<RouteTollSystem> $TollSystems
  * @property list<RouteVehicleTravelStep> $TravelSteps
@@ -28,7 +28,7 @@ class RouteVehicleLegDetails extends Shape
      *     Notices: list<RouteVehicleNotice>,
      *     PassThroughWaypoints: list<RoutePassThroughWaypoint>,
      *     Spans: list<RouteVehicleSpan>,
-     *     Summary?: RouteVehicleSummary,
+     *     Summary?: RouteVehicleSummary|null,
      *     Tolls: list<RouteToll>,
      *     TollSystems: list<RouteTollSystem>,
      *     TravelSteps: list<RouteVehicleTravelStep>,

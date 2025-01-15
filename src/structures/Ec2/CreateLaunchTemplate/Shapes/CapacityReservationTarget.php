@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CapacityReservationId
- * @property string $CapacityReservationResourceGroupArn
+ * @property string|null $CapacityReservationId
+ * @property string|null $CapacityReservationResourceGroupArn
  */
 class CapacityReservationTarget extends Shape
 {
     /**
      * @param array{
-     *     CapacityReservationId?: string,
-     *     CapacityReservationResourceGroupArn?: string
+     *     CapacityReservationId?: string|null,
+     *     CapacityReservationResourceGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

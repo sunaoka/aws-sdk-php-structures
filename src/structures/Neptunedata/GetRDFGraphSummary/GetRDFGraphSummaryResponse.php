@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetRDFGraphSummary;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $statusCode
- * @property Shapes\RDFGraphSummaryValueMap $payload
+ * @property int|null $statusCode
+ * @property Shapes\RDFGraphSummaryValueMap|null $payload
  */
 class GetRDFGraphSummaryResponse extends Response
 {

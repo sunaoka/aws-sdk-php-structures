@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property bool $IncludeAdditionalDetails
+ * @property bool|null $IncludeAdditionalDetails
  */
 class DescribeApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationName: string,
-     *     IncludeAdditionalDetails?: bool
+     *     IncludeAdditionalDetails?: bool|null
      * } $args
      */
     public function __construct(array $args)

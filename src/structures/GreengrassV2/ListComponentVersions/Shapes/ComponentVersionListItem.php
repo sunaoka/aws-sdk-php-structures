@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\ListComponentVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $componentName
- * @property string $componentVersion
- * @property string $arn
+ * @property string|null $componentName
+ * @property string|null $componentVersion
+ * @property string|null $arn
  */
 class ComponentVersionListItem extends Shape
 {
     /**
      * @param array{
-     *     componentName?: string,
-     *     componentVersion?: string,
-     *     arn?: string
+     *     componentName?: string|null,
+     *     componentVersion?: string|null,
+     *     arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

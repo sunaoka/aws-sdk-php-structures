@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1000, 1152000000> $Bitrate
- * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int<1, 2147483647> $FramerateDenominator
- * @property int<1, 2147483647> $FramerateNumerator
- * @property double $GopSize
- * @property int<0, 47185920> $HrdBufferSize
- * @property int<1000, 1152000000> $MaxBitrate
- * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $ParControl
- * @property int<1, 2147483647> $ParDenominator
- * @property int<1, 2147483647> $ParNumerator
- * @property 'MULTI_PASS'|'MULTI_PASS_HQ' $QualityTuningLevel
- * @property 'VBR' $RateControlMode
+ * @property int<1000, 1152000000>|null $Bitrate
+ * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property int<1, 2147483647>|null $FramerateDenominator
+ * @property int<1, 2147483647>|null $FramerateNumerator
+ * @property double|null $GopSize
+ * @property int<0, 47185920>|null $HrdBufferSize
+ * @property int<1000, 1152000000>|null $MaxBitrate
+ * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $ParControl
+ * @property int<1, 2147483647>|null $ParDenominator
+ * @property int<1, 2147483647>|null $ParNumerator
+ * @property 'MULTI_PASS'|'MULTI_PASS_HQ'|null $QualityTuningLevel
+ * @property 'VBR'|null $RateControlMode
  */
 class Vp8Settings extends Shape
 {
     /**
      * @param array{
-     *     Bitrate?: int<1000, 1152000000>,
-     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int<1, 2147483647>,
-     *     FramerateNumerator?: int<1, 2147483647>,
-     *     GopSize?: double,
-     *     HrdBufferSize?: int<0, 47185920>,
-     *     MaxBitrate?: int<1000, 1152000000>,
-     *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     ParDenominator?: int<1, 2147483647>,
-     *     ParNumerator?: int<1, 2147483647>,
-     *     QualityTuningLevel?: 'MULTI_PASS'|'MULTI_PASS_HQ',
-     *     RateControlMode?: 'VBR'
+     *     Bitrate?: int<1000, 1152000000>|null,
+     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateDenominator?: int<1, 2147483647>|null,
+     *     FramerateNumerator?: int<1, 2147483647>|null,
+     *     GopSize?: double|null,
+     *     HrdBufferSize?: int<0, 47185920>|null,
+     *     MaxBitrate?: int<1000, 1152000000>|null,
+     *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
+     *     ParDenominator?: int<1, 2147483647>|null,
+     *     ParNumerator?: int<1, 2147483647>|null,
+     *     QualityTuningLevel?: 'MULTI_PASS'|'MULTI_PASS_HQ'|null,
+     *     RateControlMode?: 'VBR'|null
      * } $args
      */
     public function __construct(array $args = [])

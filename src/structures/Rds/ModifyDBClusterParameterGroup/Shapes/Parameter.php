@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyDBClusterParameterGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterName
- * @property string $ParameterValue
- * @property string $Description
- * @property string $Source
- * @property string $ApplyType
- * @property string $DataType
- * @property string $AllowedValues
- * @property bool $IsModifiable
- * @property string $MinimumEngineVersion
- * @property 'immediate'|'pending-reboot' $ApplyMethod
- * @property list<string> $SupportedEngineModes
+ * @property string|null $ParameterName
+ * @property string|null $ParameterValue
+ * @property string|null $Description
+ * @property string|null $Source
+ * @property string|null $ApplyType
+ * @property string|null $DataType
+ * @property string|null $AllowedValues
+ * @property bool|null $IsModifiable
+ * @property string|null $MinimumEngineVersion
+ * @property 'immediate'|'pending-reboot'|null $ApplyMethod
+ * @property list<string>|null $SupportedEngineModes
  */
 class Parameter extends Shape
 {
     /**
      * @param array{
-     *     ParameterName?: string,
-     *     ParameterValue?: string,
-     *     Description?: string,
-     *     Source?: string,
-     *     ApplyType?: string,
-     *     DataType?: string,
-     *     AllowedValues?: string,
-     *     IsModifiable?: bool,
-     *     MinimumEngineVersion?: string,
-     *     ApplyMethod?: 'immediate'|'pending-reboot',
-     *     SupportedEngineModes?: list<string>
+     *     ParameterName?: string|null,
+     *     ParameterValue?: string|null,
+     *     Description?: string|null,
+     *     Source?: string|null,
+     *     ApplyType?: string|null,
+     *     DataType?: string|null,
+     *     AllowedValues?: string|null,
+     *     IsModifiable?: bool|null,
+     *     MinimumEngineVersion?: string|null,
+     *     ApplyMethod?: 'immediate'|'pending-reboot'|null,
+     *     SupportedEngineModes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

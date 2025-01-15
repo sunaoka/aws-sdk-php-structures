@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\StorageGateway\UpdateGatewayInformation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GatewayARN
- * @property string $GatewayName
+ * @property string|null $GatewayARN
+ * @property string|null $GatewayName
  */
 class UpdateGatewayInformationResponse extends Response
 {

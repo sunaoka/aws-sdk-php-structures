@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\ProvisionIpamByoasn;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $IpamId
  * @property string $Asn
  * @property Shapes\AsnAuthorizationContext $AsnAuthorizationContext
@@ -14,7 +14,7 @@ class ProvisionIpamByoasnRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     IpamId: string,
      *     Asn: string,
      *     AsnAuthorizationContext: Shapes\AsnAuthorizationContext

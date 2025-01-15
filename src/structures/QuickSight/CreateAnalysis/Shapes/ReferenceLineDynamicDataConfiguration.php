@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ColumnIdentifier $Column
- * @property AggregationFunction $MeasureAggregationFunction
+ * @property AggregationFunction|null $MeasureAggregationFunction
  * @property NumericalAggregationFunction $Calculation
  */
 class ReferenceLineDynamicDataConfiguration extends Shape
@@ -14,7 +14,7 @@ class ReferenceLineDynamicDataConfiguration extends Shape
     /**
      * @param array{
      *     Column: ColumnIdentifier,
-     *     MeasureAggregationFunction?: AggregationFunction,
+     *     MeasureAggregationFunction?: AggregationFunction|null,
      *     Calculation: NumericalAggregationFunction
      * } $args
      */

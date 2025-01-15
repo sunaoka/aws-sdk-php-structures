@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteInstanceConnectEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OwnerId
- * @property string $InstanceConnectEndpointId
- * @property string $InstanceConnectEndpointArn
- * @property 'create-in-progress'|'create-complete'|'create-failed'|'delete-in-progress'|'delete-complete'|'delete-failed' $State
- * @property string $StateMessage
- * @property string $DnsName
- * @property string $FipsDnsName
- * @property list<string> $NetworkInterfaceIds
- * @property string $VpcId
- * @property string $AvailabilityZone
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $SubnetId
- * @property bool $PreserveClientIp
- * @property list<string> $SecurityGroupIds
- * @property list<Tag> $Tags
+ * @property string|null $OwnerId
+ * @property string|null $InstanceConnectEndpointId
+ * @property string|null $InstanceConnectEndpointArn
+ * @property 'create-in-progress'|'create-complete'|'create-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|null $State
+ * @property string|null $StateMessage
+ * @property string|null $DnsName
+ * @property string|null $FipsDnsName
+ * @property list<string>|null $NetworkInterfaceIds
+ * @property string|null $VpcId
+ * @property string|null $AvailabilityZone
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $SubnetId
+ * @property bool|null $PreserveClientIp
+ * @property list<string>|null $SecurityGroupIds
+ * @property list<Tag>|null $Tags
  */
 class Ec2InstanceConnectEndpoint extends Shape
 {
     /**
      * @param array{
-     *     OwnerId?: string,
-     *     InstanceConnectEndpointId?: string,
-     *     InstanceConnectEndpointArn?: string,
-     *     State?: 'create-in-progress'|'create-complete'|'create-failed'|'delete-in-progress'|'delete-complete'|'delete-failed',
-     *     StateMessage?: string,
-     *     DnsName?: string,
-     *     FipsDnsName?: string,
-     *     NetworkInterfaceIds?: list<string>,
-     *     VpcId?: string,
-     *     AvailabilityZone?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     SubnetId?: string,
-     *     PreserveClientIp?: bool,
-     *     SecurityGroupIds?: list<string>,
-     *     Tags?: list<Tag>
+     *     OwnerId?: string|null,
+     *     InstanceConnectEndpointId?: string|null,
+     *     InstanceConnectEndpointArn?: string|null,
+     *     State?: 'create-in-progress'|'create-complete'|'create-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|null,
+     *     StateMessage?: string|null,
+     *     DnsName?: string|null,
+     *     FipsDnsName?: string|null,
+     *     NetworkInterfaceIds?: list<string>|null,
+     *     VpcId?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     SubnetId?: string|null,
+     *     PreserveClientIp?: bool|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

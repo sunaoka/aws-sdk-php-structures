@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ResourceGroups\CreateGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Group $Group
- * @property Shapes\ResourceQuery $ResourceQuery
- * @property array<string, string> $Tags
- * @property Shapes\GroupConfiguration $GroupConfiguration
+ * @property Shapes\Group|null $Group
+ * @property Shapes\ResourceQuery|null $ResourceQuery
+ * @property array<string, string>|null $Tags
+ * @property Shapes\GroupConfiguration|null $GroupConfiguration
  */
 class CreateGroupResponse extends Response
 {

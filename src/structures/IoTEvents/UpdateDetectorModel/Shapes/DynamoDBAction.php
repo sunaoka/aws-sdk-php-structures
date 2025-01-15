@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\IoTEvents\UpdateDetectorModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $hashKeyType
+ * @property string|null $hashKeyType
  * @property string $hashKeyField
  * @property string $hashKeyValue
- * @property string $rangeKeyType
- * @property string $rangeKeyField
- * @property string $rangeKeyValue
- * @property string $operation
- * @property string $payloadField
+ * @property string|null $rangeKeyType
+ * @property string|null $rangeKeyField
+ * @property string|null $rangeKeyValue
+ * @property string|null $operation
+ * @property string|null $payloadField
  * @property string $tableName
- * @property Payload $payload
+ * @property Payload|null $payload
  */
 class DynamoDBAction extends Shape
 {
     /**
      * @param array{
-     *     hashKeyType?: string,
+     *     hashKeyType?: string|null,
      *     hashKeyField: string,
      *     hashKeyValue: string,
-     *     rangeKeyType?: string,
-     *     rangeKeyField?: string,
-     *     rangeKeyValue?: string,
-     *     operation?: string,
-     *     payloadField?: string,
+     *     rangeKeyType?: string|null,
+     *     rangeKeyField?: string|null,
+     *     rangeKeyValue?: string|null,
+     *     operation?: string|null,
+     *     payloadField?: string|null,
      *     tableName: string,
-     *     payload?: Payload
+     *     payload?: Payload|null
      * } $args
      */
     public function __construct(array $args)

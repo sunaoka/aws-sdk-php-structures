@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FieldId
- * @property ShapeConditionalFormat $Format
+ * @property ShapeConditionalFormat|null $Format
  */
 class FilledMapShapeConditionalFormatting extends Shape
 {
     /**
      * @param array{
      *     FieldId: string,
-     *     Format?: ShapeConditionalFormat
+     *     Format?: ShapeConditionalFormat|null
      * } $args
      */
     public function __construct(array $args)

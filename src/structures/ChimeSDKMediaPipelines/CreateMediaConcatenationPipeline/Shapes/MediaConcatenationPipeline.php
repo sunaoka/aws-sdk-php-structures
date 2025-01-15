@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaConcatenation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MediaPipelineId
- * @property string $MediaPipelineArn
- * @property list<ConcatenationSource> $Sources
- * @property list<ConcatenationSink> $Sinks
- * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted' $Status
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $MediaPipelineId
+ * @property string|null $MediaPipelineArn
+ * @property list<ConcatenationSource>|null $Sources
+ * @property list<ConcatenationSink>|null $Sinks
+ * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class MediaConcatenationPipeline extends Shape
 {
     /**
      * @param array{
-     *     MediaPipelineId?: string,
-     *     MediaPipelineArn?: string,
-     *     Sources?: list<ConcatenationSource>,
-     *     Sinks?: list<ConcatenationSink>,
-     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted',
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     MediaPipelineId?: string|null,
+     *     MediaPipelineArn?: string|null,
+     *     Sources?: list<ConcatenationSource>|null,
+     *     Sinks?: list<ConcatenationSink>|null,
+     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

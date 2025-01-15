@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\DescribeCustomRoutingAccelera
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $FlowLogsEnabled
- * @property string $FlowLogsS3Bucket
- * @property string $FlowLogsS3Prefix
+ * @property bool|null $FlowLogsEnabled
+ * @property string|null $FlowLogsS3Bucket
+ * @property string|null $FlowLogsS3Prefix
  */
 class CustomRoutingAcceleratorAttributes extends Shape
 {
     /**
      * @param array{
-     *     FlowLogsEnabled?: bool,
-     *     FlowLogsS3Bucket?: string,
-     *     FlowLogsS3Prefix?: string
+     *     FlowLogsEnabled?: bool|null,
+     *     FlowLogsS3Bucket?: string|null,
+     *     FlowLogsS3Prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

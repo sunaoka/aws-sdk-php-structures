@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property string $name
- * @property string $activeSessionId
- * @property array<string, string> $tags
- * @property AutoParticipantRecordingConfiguration $autoParticipantRecordingConfiguration
- * @property StageEndpoints $endpoints
+ * @property string|null $name
+ * @property string|null $activeSessionId
+ * @property array<string, string>|null $tags
+ * @property AutoParticipantRecordingConfiguration|null $autoParticipantRecordingConfiguration
+ * @property StageEndpoints|null $endpoints
  */
 class Stage extends Shape
 {
     /**
      * @param array{
      *     arn: string,
-     *     name?: string,
-     *     activeSessionId?: string,
-     *     tags?: array<string, string>,
-     *     autoParticipantRecordingConfiguration?: AutoParticipantRecordingConfiguration,
-     *     endpoints?: StageEndpoints
+     *     name?: string|null,
+     *     activeSessionId?: string|null,
+     *     tags?: array<string, string>|null,
+     *     autoParticipantRecordingConfiguration?: AutoParticipantRecordingConfiguration|null,
+     *     endpoints?: StageEndpoints|null
      * } $args
      */
     public function __construct(array $args)

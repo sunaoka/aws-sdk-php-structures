@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateInstanceExportTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ova' $ContainerFormat
- * @property 'VMDK'|'RAW'|'VHD' $DiskImageFormat
- * @property string $S3Bucket
- * @property string $S3Key
+ * @property 'ova'|null $ContainerFormat
+ * @property 'VMDK'|'RAW'|'VHD'|null $DiskImageFormat
+ * @property string|null $S3Bucket
+ * @property string|null $S3Key
  */
 class ExportToS3Task extends Shape
 {
     /**
      * @param array{
-     *     ContainerFormat?: 'ova',
-     *     DiskImageFormat?: 'VMDK'|'RAW'|'VHD',
-     *     S3Bucket?: string,
-     *     S3Key?: string
+     *     ContainerFormat?: 'ova'|null,
+     *     DiskImageFormat?: 'VMDK'|'RAW'|'VHD'|null,
+     *     S3Bucket?: string|null,
+     *     S3Key?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeOrderableRepli
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxRecords
- * @property string $Marker
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeOrderableReplicationInstancesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatch\DescribeAnomalyDetectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $PeriodicSpikes
+ * @property bool|null $PeriodicSpikes
  */
 class MetricCharacteristics extends Shape
 {
     /**
-     * @param array{PeriodicSpikes?: bool} $args
+     * @param array{PeriodicSpikes?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

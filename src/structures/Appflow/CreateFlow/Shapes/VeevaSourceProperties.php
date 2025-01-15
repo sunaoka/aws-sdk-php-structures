@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $object
- * @property string $documentType
- * @property bool $includeSourceFiles
- * @property bool $includeRenditions
- * @property bool $includeAllVersions
+ * @property string|null $documentType
+ * @property bool|null $includeSourceFiles
+ * @property bool|null $includeRenditions
+ * @property bool|null $includeAllVersions
  */
 class VeevaSourceProperties extends Shape
 {
     /**
      * @param array{
      *     object: string,
-     *     documentType?: string,
-     *     includeSourceFiles?: bool,
-     *     includeRenditions?: bool,
-     *     includeAllVersions?: bool
+     *     documentType?: string|null,
+     *     includeSourceFiles?: bool|null,
+     *     includeRenditions?: bool|null,
+     *     includeAllVersions?: bool|null
      * } $args
      */
     public function __construct(array $args)

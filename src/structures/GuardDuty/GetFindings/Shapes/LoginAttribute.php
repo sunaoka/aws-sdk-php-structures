@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $User
- * @property string $Application
- * @property int $FailedLoginAttempts
- * @property int $SuccessfulLoginAttempts
+ * @property string|null $User
+ * @property string|null $Application
+ * @property int|null $FailedLoginAttempts
+ * @property int|null $SuccessfulLoginAttempts
  */
 class LoginAttribute extends Shape
 {
     /**
      * @param array{
-     *     User?: string,
-     *     Application?: string,
-     *     FailedLoginAttempts?: int,
-     *     SuccessfulLoginAttempts?: int
+     *     User?: string|null,
+     *     Application?: string|null,
+     *     FailedLoginAttempts?: int|null,
+     *     SuccessfulLoginAttempts?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,67 +5,67 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeNetworkInterfaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NetworkInterfaceAssociation $Association
- * @property NetworkInterfaceAttachment $Attachment
- * @property string $AvailabilityZone
- * @property ConnectionTrackingConfiguration $ConnectionTrackingConfiguration
- * @property string $Description
- * @property list<GroupIdentifier> $Groups
- * @property 'interface'|'natGateway'|'efa'|'efa-only'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed' $InterfaceType
- * @property list<NetworkInterfaceIpv6Address> $Ipv6Addresses
- * @property string $MacAddress
- * @property string $NetworkInterfaceId
- * @property string $OutpostArn
- * @property string $OwnerId
- * @property string $PrivateDnsName
- * @property string $PrivateIpAddress
- * @property list<NetworkInterfacePrivateIpAddress> $PrivateIpAddresses
- * @property list<Ipv4PrefixSpecification> $Ipv4Prefixes
- * @property list<Ipv6PrefixSpecification> $Ipv6Prefixes
- * @property string $RequesterId
- * @property bool $RequesterManaged
- * @property bool $SourceDestCheck
- * @property 'available'|'associated'|'attaching'|'in-use'|'detaching' $Status
- * @property string $SubnetId
- * @property list<Tag> $TagSet
- * @property string $VpcId
- * @property bool $DenyAllIgwTraffic
- * @property bool $Ipv6Native
- * @property string $Ipv6Address
- * @property OperatorResponse $Operator
+ * @property NetworkInterfaceAssociation|null $Association
+ * @property NetworkInterfaceAttachment|null $Attachment
+ * @property string|null $AvailabilityZone
+ * @property ConnectionTrackingConfiguration|null $ConnectionTrackingConfiguration
+ * @property string|null $Description
+ * @property list<GroupIdentifier>|null $Groups
+ * @property 'interface'|'natGateway'|'efa'|'efa-only'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null $InterfaceType
+ * @property list<NetworkInterfaceIpv6Address>|null $Ipv6Addresses
+ * @property string|null $MacAddress
+ * @property string|null $NetworkInterfaceId
+ * @property string|null $OutpostArn
+ * @property string|null $OwnerId
+ * @property string|null $PrivateDnsName
+ * @property string|null $PrivateIpAddress
+ * @property list<NetworkInterfacePrivateIpAddress>|null $PrivateIpAddresses
+ * @property list<Ipv4PrefixSpecification>|null $Ipv4Prefixes
+ * @property list<Ipv6PrefixSpecification>|null $Ipv6Prefixes
+ * @property string|null $RequesterId
+ * @property bool|null $RequesterManaged
+ * @property bool|null $SourceDestCheck
+ * @property 'available'|'associated'|'attaching'|'in-use'|'detaching'|null $Status
+ * @property string|null $SubnetId
+ * @property list<Tag>|null $TagSet
+ * @property string|null $VpcId
+ * @property bool|null $DenyAllIgwTraffic
+ * @property bool|null $Ipv6Native
+ * @property string|null $Ipv6Address
+ * @property OperatorResponse|null $Operator
  */
 class NetworkInterface extends Shape
 {
     /**
      * @param array{
-     *     Association?: NetworkInterfaceAssociation,
-     *     Attachment?: NetworkInterfaceAttachment,
-     *     AvailabilityZone?: string,
-     *     ConnectionTrackingConfiguration?: ConnectionTrackingConfiguration,
-     *     Description?: string,
-     *     Groups?: list<GroupIdentifier>,
-     *     InterfaceType?: 'interface'|'natGateway'|'efa'|'efa-only'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed',
-     *     Ipv6Addresses?: list<NetworkInterfaceIpv6Address>,
-     *     MacAddress?: string,
-     *     NetworkInterfaceId?: string,
-     *     OutpostArn?: string,
-     *     OwnerId?: string,
-     *     PrivateDnsName?: string,
-     *     PrivateIpAddress?: string,
-     *     PrivateIpAddresses?: list<NetworkInterfacePrivateIpAddress>,
-     *     Ipv4Prefixes?: list<Ipv4PrefixSpecification>,
-     *     Ipv6Prefixes?: list<Ipv6PrefixSpecification>,
-     *     RequesterId?: string,
-     *     RequesterManaged?: bool,
-     *     SourceDestCheck?: bool,
-     *     Status?: 'available'|'associated'|'attaching'|'in-use'|'detaching',
-     *     SubnetId?: string,
-     *     TagSet?: list<Tag>,
-     *     VpcId?: string,
-     *     DenyAllIgwTraffic?: bool,
-     *     Ipv6Native?: bool,
-     *     Ipv6Address?: string,
-     *     Operator?: OperatorResponse
+     *     Association?: NetworkInterfaceAssociation|null,
+     *     Attachment?: NetworkInterfaceAttachment|null,
+     *     AvailabilityZone?: string|null,
+     *     ConnectionTrackingConfiguration?: ConnectionTrackingConfiguration|null,
+     *     Description?: string|null,
+     *     Groups?: list<GroupIdentifier>|null,
+     *     InterfaceType?: 'interface'|'natGateway'|'efa'|'efa-only'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null,
+     *     Ipv6Addresses?: list<NetworkInterfaceIpv6Address>|null,
+     *     MacAddress?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     OutpostArn?: string|null,
+     *     OwnerId?: string|null,
+     *     PrivateDnsName?: string|null,
+     *     PrivateIpAddress?: string|null,
+     *     PrivateIpAddresses?: list<NetworkInterfacePrivateIpAddress>|null,
+     *     Ipv4Prefixes?: list<Ipv4PrefixSpecification>|null,
+     *     Ipv6Prefixes?: list<Ipv6PrefixSpecification>|null,
+     *     RequesterId?: string|null,
+     *     RequesterManaged?: bool|null,
+     *     SourceDestCheck?: bool|null,
+     *     Status?: 'available'|'associated'|'attaching'|'in-use'|'detaching'|null,
+     *     SubnetId?: string|null,
+     *     TagSet?: list<Tag>|null,
+     *     VpcId?: string|null,
+     *     DenyAllIgwTraffic?: bool|null,
+     *     Ipv6Native?: bool|null,
+     *     Ipv6Address?: string|null,
+     *     Operator?: OperatorResponse|null
      * } $args
      */
     public function __construct(array $args = [])

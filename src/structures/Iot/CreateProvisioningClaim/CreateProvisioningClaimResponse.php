@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Iot\CreateProvisioningClaim;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $certificateId
- * @property string $certificatePem
- * @property Shapes\KeyPair $keyPair
- * @property \Aws\Api\DateTimeResult $expiration
+ * @property string|null $certificateId
+ * @property string|null $certificatePem
+ * @property Shapes\KeyPair|null $keyPair
+ * @property \Aws\Api\DateTimeResult|null $expiration
  */
 class CreateProvisioningClaimResponse extends Response
 {

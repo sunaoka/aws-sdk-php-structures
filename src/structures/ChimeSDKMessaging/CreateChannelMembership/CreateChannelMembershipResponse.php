@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\CreateChannelMembership;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
- * @property Shapes\Identity $Member
- * @property string $SubChannelId
+ * @property string|null $ChannelArn
+ * @property Shapes\Identity|null $Member
+ * @property string|null $SubChannelId
  */
 class CreateChannelMembershipResponse extends Response
 {

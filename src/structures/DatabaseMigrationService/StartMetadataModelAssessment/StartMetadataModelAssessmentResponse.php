@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\StartMetadataModelAsse
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RequestIdentifier
+ * @property string|null $RequestIdentifier
  */
 class StartMetadataModelAssessmentResponse extends Response
 {

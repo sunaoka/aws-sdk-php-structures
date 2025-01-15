@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\CreateChannelBan;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
- * @property Shapes\Identity $Member
+ * @property string|null $ChannelArn
+ * @property Shapes\Identity|null $Member
  */
 class CreateChannelBanResponse extends Response
 {

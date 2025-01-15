@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustomEpoch
- * @property string $JamSyncTime
+ * @property string|null $CustomEpoch
+ * @property string|null $JamSyncTime
  */
 class EpochLockingSettings extends Shape
 {
     /**
      * @param array{
-     *     CustomEpoch?: string,
-     *     JamSyncTime?: string
+     *     CustomEpoch?: string|null,
+     *     JamSyncTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

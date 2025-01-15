@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $dataSetPublicationDate
  * @property string $roleNameArn
  * @property string $destinationS3BucketName
- * @property string $destinationS3Prefix
+ * @property string|null $destinationS3Prefix
  * @property string $snsTopicArn
- * @property array<string, string> $customerDefinedValues
+ * @property array<string, string>|null $customerDefinedValues
  */
 class GenerateDataSetRequest extends Request
 {
@@ -21,9 +21,9 @@ class GenerateDataSetRequest extends Request
      *     dataSetPublicationDate: \Aws\Api\DateTimeResult,
      *     roleNameArn: string,
      *     destinationS3BucketName: string,
-     *     destinationS3Prefix?: string,
+     *     destinationS3Prefix?: string|null,
      *     snsTopicArn: string,
-     *     customerDefinedValues?: array<string, string>
+     *     customerDefinedValues?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SnowBall\UpdateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EventResourceARN
+ * @property string|null $EventResourceARN
  */
 class EventTriggerDefinition extends Shape
 {
     /**
-     * @param array{EventResourceARN?: string} $args
+     * @param array{EventResourceARN?: string|null} $args
      */
     public function __construct(array $args = [])
     {

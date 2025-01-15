@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\BatchPutPropertyValues\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $timestamp
+ * @property \Aws\Api\DateTimeResult|null $timestamp
  * @property DataValue $value
- * @property string $time
+ * @property string|null $time
  */
 class PropertyValue extends Shape
 {
     /**
      * @param array{
-     *     timestamp?: \Aws\Api\DateTimeResult,
+     *     timestamp?: \Aws\Api\DateTimeResult|null,
      *     value: DataValue,
-     *     time?: string
+     *     time?: string|null
      * } $args
      */
     public function __construct(array $args)

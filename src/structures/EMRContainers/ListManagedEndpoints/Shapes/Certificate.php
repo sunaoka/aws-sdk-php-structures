@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRContainers\ListManagedEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $certificateArn
- * @property string $certificateData
+ * @property string|null $certificateArn
+ * @property string|null $certificateData
  */
 class Certificate extends Shape
 {
     /**
      * @param array{
-     *     certificateArn?: string,
-     *     certificateData?: string
+     *     certificateArn?: string|null,
+     *     certificateData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\StartSegmentDetection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StartTechnicalCueDetectionFilter $TechnicalCueFilter
- * @property StartShotDetectionFilter $ShotFilter
+ * @property StartTechnicalCueDetectionFilter|null $TechnicalCueFilter
+ * @property StartShotDetectionFilter|null $ShotFilter
  */
 class StartSegmentDetectionFilters extends Shape
 {
     /**
      * @param array{
-     *     TechnicalCueFilter?: StartTechnicalCueDetectionFilter,
-     *     ShotFilter?: StartShotDetectionFilter
+     *     TechnicalCueFilter?: StartTechnicalCueDetectionFilter|null,
+     *     ShotFilter?: StartShotDetectionFilter|null
      * } $args
      */
     public function __construct(array $args = [])

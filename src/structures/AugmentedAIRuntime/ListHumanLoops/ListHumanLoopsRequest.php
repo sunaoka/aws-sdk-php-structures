@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\AugmentedAIRuntime\ListHumanLoops;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
  * @property string $FlowDefinitionArn
- * @property 'Ascending'|'Descending' $SortOrder
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListHumanLoopsRequest extends Request
 {
     /**
      * @param array{
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
      *     FlowDefinitionArn: string,
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

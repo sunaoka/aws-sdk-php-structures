@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CleanRooms\CreateAnalysisTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $membershipIdentifier
  * @property string $name
  * @property 'SQL' $format
  * @property Shapes\AnalysisSource $source
- * @property array<string, string> $tags
- * @property list<Shapes\AnalysisParameter> $analysisParameters
+ * @property array<string, string>|null $tags
+ * @property list<Shapes\AnalysisParameter>|null $analysisParameters
  */
 class CreateAnalysisTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     membershipIdentifier: string,
      *     name: string,
      *     format: 'SQL',
      *     source: Shapes\AnalysisSource,
-     *     tags?: array<string, string>,
-     *     analysisParameters?: list<Shapes\AnalysisParameter>
+     *     tags?: array<string, string>|null,
+     *     analysisParameters?: list<Shapes\AnalysisParameter>|null
      * } $args
      */
     public function __construct(array $args)

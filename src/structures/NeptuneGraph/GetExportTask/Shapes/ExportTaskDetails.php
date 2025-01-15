@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $startTime
  * @property int $timeElapsedSeconds
  * @property int $progressPercentage
- * @property int $numVerticesWritten
- * @property int $numEdgesWritten
+ * @property int|null $numVerticesWritten
+ * @property int|null $numEdgesWritten
  */
 class ExportTaskDetails extends Shape
 {
@@ -18,8 +18,8 @@ class ExportTaskDetails extends Shape
      *     startTime: \Aws\Api\DateTimeResult,
      *     timeElapsedSeconds: int,
      *     progressPercentage: int,
-     *     numVerticesWritten?: int,
-     *     numEdgesWritten?: int
+     *     numVerticesWritten?: int|null,
+     *     numEdgesWritten?: int|null
      * } $args
      */
     public function __construct(array $args)

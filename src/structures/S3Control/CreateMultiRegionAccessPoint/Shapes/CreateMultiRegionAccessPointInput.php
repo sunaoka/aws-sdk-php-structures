@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property PublicAccessBlockConfiguration $PublicAccessBlock
+ * @property PublicAccessBlockConfiguration|null $PublicAccessBlock
  * @property list<Region> $Regions
  */
 class CreateMultiRegionAccessPointInput extends Shape
@@ -14,7 +14,7 @@ class CreateMultiRegionAccessPointInput extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     PublicAccessBlock?: PublicAccessBlockConfiguration,
+     *     PublicAccessBlock?: PublicAccessBlockConfiguration|null,
      *     Regions: list<Region>
      * } $args
      */

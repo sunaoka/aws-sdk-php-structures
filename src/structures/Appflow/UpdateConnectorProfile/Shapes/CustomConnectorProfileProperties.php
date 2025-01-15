@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Appflow\UpdateConnectorProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $profileProperties
- * @property OAuth2Properties $oAuth2Properties
+ * @property array<string, string>|null $profileProperties
+ * @property OAuth2Properties|null $oAuth2Properties
  */
 class CustomConnectorProfileProperties extends Shape
 {
     /**
      * @param array{
-     *     profileProperties?: array<string, string>,
-     *     oAuth2Properties?: OAuth2Properties
+     *     profileProperties?: array<string, string>|null,
+     *     oAuth2Properties?: OAuth2Properties|null
      * } $args
      */
     public function __construct(array $args = [])

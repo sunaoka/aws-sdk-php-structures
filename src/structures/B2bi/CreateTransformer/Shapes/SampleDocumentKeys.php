@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\B2bi\CreateTransformer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $input
- * @property string $output
+ * @property string|null $input
+ * @property string|null $output
  */
 class SampleDocumentKeys extends Shape
 {
     /**
      * @param array{
-     *     input?: string,
-     *     output?: string
+     *     input?: string|null,
+     *     output?: string|null
      * } $args
      */
     public function __construct(array $args = [])

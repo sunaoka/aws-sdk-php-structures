@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ssm\ListDocuments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\DocumentFilter> $DocumentFilterList
- * @property list<Shapes\DocumentKeyValuesFilter> $Filters
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property list<Shapes\DocumentFilter>|null $DocumentFilterList
+ * @property list<Shapes\DocumentKeyValuesFilter>|null $Filters
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListDocumentsRequest extends Request
 {
     /**
      * @param array{
-     *     DocumentFilterList?: list<Shapes\DocumentFilter>,
-     *     Filters?: list<Shapes\DocumentKeyValuesFilter>,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     DocumentFilterList?: list<Shapes\DocumentFilter>|null,
+     *     Filters?: list<Shapes\DocumentKeyValuesFilter>|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

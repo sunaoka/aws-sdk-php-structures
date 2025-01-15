@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TransitGatewayId
  * @property string $VpcId
  * @property list<string> $SubnetIds
- * @property Shapes\CreateTransitGatewayVpcAttachmentRequestOptions $Options
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
+ * @property Shapes\CreateTransitGatewayVpcAttachmentRequestOptions|null $Options
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
  */
 class CreateTransitGatewayVpcAttachmentRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateTransitGatewayVpcAttachmentRequest extends Request
      *     TransitGatewayId: string,
      *     VpcId: string,
      *     SubnetIds: list<string>,
-     *     Options?: Shapes\CreateTransitGatewayVpcAttachmentRequestOptions,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool
+     *     Options?: Shapes\CreateTransitGatewayVpcAttachmentRequestOptions|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

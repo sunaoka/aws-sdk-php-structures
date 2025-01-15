@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScanConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ownerId
+ * @property string|null $ownerId
  * @property string $scanConfigurationArn
- * @property string $scanName
- * @property Schedule $schedule
- * @property 'LEVEL_1'|'LEVEL_2' $securityLevel
- * @property array<string, string> $tags
- * @property CisTargets $targets
+ * @property string|null $scanName
+ * @property Schedule|null $schedule
+ * @property 'LEVEL_1'|'LEVEL_2'|null $securityLevel
+ * @property array<string, string>|null $tags
+ * @property CisTargets|null $targets
  */
 class CisScanConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ownerId?: string,
+     *     ownerId?: string|null,
      *     scanConfigurationArn: string,
-     *     scanName?: string,
-     *     schedule?: Schedule,
-     *     securityLevel?: 'LEVEL_1'|'LEVEL_2',
-     *     tags?: array<string, string>,
-     *     targets?: CisTargets
+     *     scanName?: string|null,
+     *     schedule?: Schedule|null,
+     *     securityLevel?: 'LEVEL_1'|'LEVEL_2'|null,
+     *     tags?: array<string, string>|null,
+     *     targets?: CisTargets|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $SessionId
  * @property 'CREATED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'EXPIRED' $Status
- * @property float $Confidence
- * @property Shapes\AuditImage $ReferenceImage
- * @property list<Shapes\AuditImage> $AuditImages
+ * @property float|null $Confidence
+ * @property Shapes\AuditImage|null $ReferenceImage
+ * @property list<Shapes\AuditImage>|null $AuditImages
  */
 class GetFaceLivenessSessionResultsResponse extends Response
 {

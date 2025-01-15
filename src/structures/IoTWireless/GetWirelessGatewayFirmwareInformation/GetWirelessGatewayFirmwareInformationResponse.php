@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetWirelessGatewayFirmwareInformati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\LoRaWANGatewayCurrentVersion $LoRaWAN
+ * @property Shapes\LoRaWANGatewayCurrentVersion|null $LoRaWAN
  */
 class GetWirelessGatewayFirmwareInformationResponse extends Response
 {

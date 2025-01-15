@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Panorama\DeletePackage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $ForceDelete
+ * @property bool|null $ForceDelete
  * @property string $PackageId
  */
 class DeletePackageRequest extends Request
 {
     /**
      * @param array{
-     *     ForceDelete?: bool,
+     *     ForceDelete?: bool|null,
      *     PackageId: string
      * } $args
      */

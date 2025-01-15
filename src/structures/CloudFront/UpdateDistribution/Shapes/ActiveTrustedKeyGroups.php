@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $Enabled
  * @property int $Quantity
- * @property list<KGKeyPairIds> $Items
+ * @property list<KGKeyPairIds>|null $Items
  */
 class ActiveTrustedKeyGroups extends Shape
 {
@@ -15,7 +15,7 @@ class ActiveTrustedKeyGroups extends Shape
      * @param array{
      *     Enabled: bool,
      *     Quantity: int,
-     *     Items?: list<KGKeyPairIds>
+     *     Items?: list<KGKeyPairIds>|null
      * } $args
      */
     public function __construct(array $args)

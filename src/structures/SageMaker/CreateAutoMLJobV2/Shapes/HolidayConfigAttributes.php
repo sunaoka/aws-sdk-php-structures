@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateAutoMLJobV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CountryCode
+ * @property string|null $CountryCode
  */
 class HolidayConfigAttributes extends Shape
 {
     /**
-     * @param array{CountryCode?: string} $args
+     * @param array{CountryCode?: string|null} $args
      */
     public function __construct(array $args = [])
     {

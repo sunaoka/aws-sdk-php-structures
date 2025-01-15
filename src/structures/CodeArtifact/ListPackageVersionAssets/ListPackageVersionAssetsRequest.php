@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property string $repository
  * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
- * @property string $namespace
+ * @property string|null $namespace
  * @property string $package
  * @property string $packageVersion
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListPackageVersionAssetsRequest extends Request
 {
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     repository: string,
      *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
-     *     namespace?: string,
+     *     namespace?: string|null,
      *     package: string,
      *     packageVersion: string,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

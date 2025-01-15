@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeEventCategories;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SourceType
- * @property list<Shapes\Filter> $Filters
+ * @property string|null $SourceType
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeEventCategoriesRequest extends Request
 {
     /**
      * @param array{
-     *     SourceType?: string,
-     *     Filters?: list<Shapes\Filter>
+     *     SourceType?: string|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

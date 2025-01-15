@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RecommendationRelatedCloudWatchMetricsSourceDetail> $CloudWatchMetrics
+ * @property list<RecommendationRelatedCloudWatchMetricsSourceDetail>|null $CloudWatchMetrics
  */
 class RecommendationRelatedAnomalySourceDetail extends Shape
 {
     /**
-     * @param array{CloudWatchMetrics?: list<RecommendationRelatedCloudWatchMetricsSourceDetail>} $args
+     * @param array{CloudWatchMetrics?: list<RecommendationRelatedCloudWatchMetricsSourceDetail>|null} $args
      */
     public function __construct(array $args = [])
     {

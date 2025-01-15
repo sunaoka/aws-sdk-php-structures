@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Inspector2\EnableDelegatedAdminAccount;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $delegatedAdminAccountId
  */
 class EnableDelegatedAdminAccountRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     delegatedAdminAccountId: string
      * } $args
      */

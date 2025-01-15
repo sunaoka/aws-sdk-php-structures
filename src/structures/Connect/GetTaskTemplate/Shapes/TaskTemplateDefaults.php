@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Connect\GetTaskTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<TaskTemplateDefaultFieldValue> $DefaultFieldValues
+ * @property list<TaskTemplateDefaultFieldValue>|null $DefaultFieldValues
  */
 class TaskTemplateDefaults extends Shape
 {
     /**
-     * @param array{DefaultFieldValues?: list<TaskTemplateDefaultFieldValue>} $args
+     * @param array{DefaultFieldValues?: list<TaskTemplateDefaultFieldValue>|null} $args
      */
     public function __construct(array $args = [])
     {

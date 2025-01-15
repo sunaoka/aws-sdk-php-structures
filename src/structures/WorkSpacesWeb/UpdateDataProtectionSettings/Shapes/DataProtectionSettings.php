@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateDataProtectionSettings\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $additionalEncryptionContext
- * @property list<string> $associatedPortalArns
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property string $customerManagedKey
+ * @property array<string, string>|null $additionalEncryptionContext
+ * @property list<string>|null $associatedPortalArns
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $customerManagedKey
  * @property string $dataProtectionSettingsArn
- * @property string $description
- * @property string $displayName
- * @property InlineRedactionConfiguration $inlineRedactionConfiguration
+ * @property string|null $description
+ * @property string|null $displayName
+ * @property InlineRedactionConfiguration|null $inlineRedactionConfiguration
  */
 class DataProtectionSettings extends Shape
 {
     /**
      * @param array{
-     *     additionalEncryptionContext?: array<string, string>,
-     *     associatedPortalArns?: list<string>,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     customerManagedKey?: string,
+     *     additionalEncryptionContext?: array<string, string>|null,
+     *     associatedPortalArns?: list<string>|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     customerManagedKey?: string|null,
      *     dataProtectionSettingsArn: string,
-     *     description?: string,
-     *     displayName?: string,
-     *     inlineRedactionConfiguration?: InlineRedactionConfiguration
+     *     description?: string|null,
+     *     displayName?: string|null,
+     *     inlineRedactionConfiguration?: InlineRedactionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

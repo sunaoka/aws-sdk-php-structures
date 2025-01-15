@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\ListDetectMitigationActionsTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $violationIds
- * @property string $securityProfileName
- * @property string $behaviorName
+ * @property list<string>|null $violationIds
+ * @property string|null $securityProfileName
+ * @property string|null $behaviorName
  */
 class DetectMitigationActionsTaskTarget extends Shape
 {
     /**
      * @param array{
-     *     violationIds?: list<string>,
-     *     securityProfileName?: string,
-     *     behaviorName?: string
+     *     violationIds?: list<string>|null,
+     *     securityProfileName?: string|null,
+     *     behaviorName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

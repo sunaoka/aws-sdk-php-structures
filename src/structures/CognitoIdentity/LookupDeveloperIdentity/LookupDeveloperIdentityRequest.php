@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IdentityPoolId
- * @property string $IdentityId
- * @property string $DeveloperUserIdentifier
- * @property int<1, 60> $MaxResults
- * @property string $NextToken
+ * @property string|null $IdentityId
+ * @property string|null $DeveloperUserIdentifier
+ * @property int<1, 60>|null $MaxResults
+ * @property string|null $NextToken
  */
 class LookupDeveloperIdentityRequest extends Request
 {
     /**
      * @param array{
      *     IdentityPoolId: string,
-     *     IdentityId?: string,
-     *     DeveloperUserIdentifier?: string,
-     *     MaxResults?: int<1, 60>,
-     *     NextToken?: string
+     *     IdentityId?: string|null,
+     *     DeveloperUserIdentifier?: string|null,
+     *     MaxResults?: int<1, 60>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<JourneyRunResponse> $Item
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class JourneyRunsResponse extends Shape
 {
     /**
      * @param array{
      *     Item: list<JourneyRunResponse>,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

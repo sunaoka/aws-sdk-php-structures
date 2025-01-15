@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\UpdateDeploymentGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $serviceName
- * @property string $clusterName
+ * @property string|null $serviceName
+ * @property string|null $clusterName
  */
 class ECSService extends Shape
 {
     /**
      * @param array{
-     *     serviceName?: string,
-     *     clusterName?: string
+     *     serviceName?: string|null,
+     *     clusterName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

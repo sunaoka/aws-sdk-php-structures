@@ -5,79 +5,79 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeUserPool\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property UserPoolPolicyType $Policies
- * @property 'ACTIVE'|'INACTIVE' $DeletionProtection
- * @property LambdaConfigType $LambdaConfig
- * @property 'Enabled'|'Disabled' $Status
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property list<SchemaAttributeType> $SchemaAttributes
- * @property list<'phone_number'|'email'> $AutoVerifiedAttributes
- * @property list<'phone_number'|'email'|'preferred_username'> $AliasAttributes
- * @property list<'phone_number'|'email'> $UsernameAttributes
- * @property string $SmsVerificationMessage
- * @property string $EmailVerificationMessage
- * @property string $EmailVerificationSubject
- * @property VerificationMessageTemplateType $VerificationMessageTemplate
- * @property string $SmsAuthenticationMessage
- * @property UserAttributeUpdateSettingsType $UserAttributeUpdateSettings
- * @property 'OFF'|'ON'|'OPTIONAL' $MfaConfiguration
- * @property DeviceConfigurationType $DeviceConfiguration
- * @property int $EstimatedNumberOfUsers
- * @property EmailConfigurationType $EmailConfiguration
- * @property SmsConfigurationType $SmsConfiguration
- * @property array<string, string> $UserPoolTags
- * @property string $SmsConfigurationFailure
- * @property string $EmailConfigurationFailure
- * @property string $Domain
- * @property string $CustomDomain
- * @property AdminCreateUserConfigType $AdminCreateUserConfig
- * @property UserPoolAddOnsType $UserPoolAddOns
- * @property UsernameConfigurationType $UsernameConfiguration
- * @property string $Arn
- * @property AccountRecoverySettingType $AccountRecoverySetting
- * @property 'LITE'|'ESSENTIALS'|'PLUS' $UserPoolTier
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property UserPoolPolicyType|null $Policies
+ * @property 'ACTIVE'|'INACTIVE'|null $DeletionProtection
+ * @property LambdaConfigType|null $LambdaConfig
+ * @property 'Enabled'|'Disabled'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property list<SchemaAttributeType>|null $SchemaAttributes
+ * @property list<'phone_number'|'email'>|null $AutoVerifiedAttributes
+ * @property list<'phone_number'|'email'|'preferred_username'>|null $AliasAttributes
+ * @property list<'phone_number'|'email'>|null $UsernameAttributes
+ * @property string|null $SmsVerificationMessage
+ * @property string|null $EmailVerificationMessage
+ * @property string|null $EmailVerificationSubject
+ * @property VerificationMessageTemplateType|null $VerificationMessageTemplate
+ * @property string|null $SmsAuthenticationMessage
+ * @property UserAttributeUpdateSettingsType|null $UserAttributeUpdateSettings
+ * @property 'OFF'|'ON'|'OPTIONAL'|null $MfaConfiguration
+ * @property DeviceConfigurationType|null $DeviceConfiguration
+ * @property int|null $EstimatedNumberOfUsers
+ * @property EmailConfigurationType|null $EmailConfiguration
+ * @property SmsConfigurationType|null $SmsConfiguration
+ * @property array<string, string>|null $UserPoolTags
+ * @property string|null $SmsConfigurationFailure
+ * @property string|null $EmailConfigurationFailure
+ * @property string|null $Domain
+ * @property string|null $CustomDomain
+ * @property AdminCreateUserConfigType|null $AdminCreateUserConfig
+ * @property UserPoolAddOnsType|null $UserPoolAddOns
+ * @property UsernameConfigurationType|null $UsernameConfiguration
+ * @property string|null $Arn
+ * @property AccountRecoverySettingType|null $AccountRecoverySetting
+ * @property 'LITE'|'ESSENTIALS'|'PLUS'|null $UserPoolTier
  */
 class UserPoolType extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Policies?: UserPoolPolicyType,
-     *     DeletionProtection?: 'ACTIVE'|'INACTIVE',
-     *     LambdaConfig?: LambdaConfigType,
-     *     Status?: 'Enabled'|'Disabled',
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     SchemaAttributes?: list<SchemaAttributeType>,
-     *     AutoVerifiedAttributes?: list<'phone_number'|'email'>,
-     *     AliasAttributes?: list<'phone_number'|'email'|'preferred_username'>,
-     *     UsernameAttributes?: list<'phone_number'|'email'>,
-     *     SmsVerificationMessage?: string,
-     *     EmailVerificationMessage?: string,
-     *     EmailVerificationSubject?: string,
-     *     VerificationMessageTemplate?: VerificationMessageTemplateType,
-     *     SmsAuthenticationMessage?: string,
-     *     UserAttributeUpdateSettings?: UserAttributeUpdateSettingsType,
-     *     MfaConfiguration?: 'OFF'|'ON'|'OPTIONAL',
-     *     DeviceConfiguration?: DeviceConfigurationType,
-     *     EstimatedNumberOfUsers?: int,
-     *     EmailConfiguration?: EmailConfigurationType,
-     *     SmsConfiguration?: SmsConfigurationType,
-     *     UserPoolTags?: array<string, string>,
-     *     SmsConfigurationFailure?: string,
-     *     EmailConfigurationFailure?: string,
-     *     Domain?: string,
-     *     CustomDomain?: string,
-     *     AdminCreateUserConfig?: AdminCreateUserConfigType,
-     *     UserPoolAddOns?: UserPoolAddOnsType,
-     *     UsernameConfiguration?: UsernameConfigurationType,
-     *     Arn?: string,
-     *     AccountRecoverySetting?: AccountRecoverySettingType,
-     *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Policies?: UserPoolPolicyType|null,
+     *     DeletionProtection?: 'ACTIVE'|'INACTIVE'|null,
+     *     LambdaConfig?: LambdaConfigType|null,
+     *     Status?: 'Enabled'|'Disabled'|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     SchemaAttributes?: list<SchemaAttributeType>|null,
+     *     AutoVerifiedAttributes?: list<'phone_number'|'email'>|null,
+     *     AliasAttributes?: list<'phone_number'|'email'|'preferred_username'>|null,
+     *     UsernameAttributes?: list<'phone_number'|'email'>|null,
+     *     SmsVerificationMessage?: string|null,
+     *     EmailVerificationMessage?: string|null,
+     *     EmailVerificationSubject?: string|null,
+     *     VerificationMessageTemplate?: VerificationMessageTemplateType|null,
+     *     SmsAuthenticationMessage?: string|null,
+     *     UserAttributeUpdateSettings?: UserAttributeUpdateSettingsType|null,
+     *     MfaConfiguration?: 'OFF'|'ON'|'OPTIONAL'|null,
+     *     DeviceConfiguration?: DeviceConfigurationType|null,
+     *     EstimatedNumberOfUsers?: int|null,
+     *     EmailConfiguration?: EmailConfigurationType|null,
+     *     SmsConfiguration?: SmsConfigurationType|null,
+     *     UserPoolTags?: array<string, string>|null,
+     *     SmsConfigurationFailure?: string|null,
+     *     EmailConfigurationFailure?: string|null,
+     *     Domain?: string|null,
+     *     CustomDomain?: string|null,
+     *     AdminCreateUserConfig?: AdminCreateUserConfigType|null,
+     *     UserPoolAddOns?: UserPoolAddOnsType|null,
+     *     UsernameConfiguration?: UsernameConfigurationType|null,
+     *     Arn?: string|null,
+     *     AccountRecoverySetting?: AccountRecoverySettingType|null,
+     *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'|null
      * } $args
      */
     public function __construct(array $args = [])

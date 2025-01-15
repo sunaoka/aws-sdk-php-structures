@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $CertificateArn
  * @property string $Id
- * @property bool $SyncShadow
+ * @property bool|null $SyncShadow
  * @property string $ThingArn
  */
 class Core extends Shape
@@ -16,7 +16,7 @@ class Core extends Shape
      * @param array{
      *     CertificateArn: string,
      *     Id: string,
-     *     SyncShadow?: bool,
+     *     SyncShadow?: bool|null,
      *     ThingArn: string
      * } $args
      */

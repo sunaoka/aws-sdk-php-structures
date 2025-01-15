@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeElasticIps;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $InstanceId
- * @property string $StackId
- * @property list<string> $Ips
+ * @property string|null $InstanceId
+ * @property string|null $StackId
+ * @property list<string>|null $Ips
  */
 class DescribeElasticIpsRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceId?: string,
-     *     StackId?: string,
-     *     Ips?: list<string>
+     *     InstanceId?: string|null,
+     *     StackId?: string|null,
+     *     Ips?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property BatchStepInput $stepInput
- * @property BatchStepOutput $stepOutput
+ * @property BatchStepOutput|null $stepOutput
  */
 class BatchSummary extends Shape
 {
     /**
      * @param array{
      *     stepInput: BatchStepInput,
-     *     stepOutput?: BatchStepOutput
+     *     stepOutput?: BatchStepOutput|null
      * } $args
      */
     public function __construct(array $args)

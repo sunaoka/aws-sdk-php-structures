@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $Override
  * @property bool $Protection
- * @property bool $ModeBlock
- * @property string $ReportUri
+ * @property bool|null $ModeBlock
+ * @property string|null $ReportUri
  */
 class ResponseHeadersPolicyXSSProtection extends Shape
 {
@@ -16,8 +16,8 @@ class ResponseHeadersPolicyXSSProtection extends Shape
      * @param array{
      *     Override: bool,
      *     Protection: bool,
-     *     ModeBlock?: bool,
-     *     ReportUri?: string
+     *     ModeBlock?: bool|null,
+     *     ReportUri?: string|null
      * } $args
      */
     public function __construct(array $args)

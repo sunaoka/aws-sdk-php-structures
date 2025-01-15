@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindingAggregations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY' $findingType
- * @property 'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER_IMAGE'|'AWS_LAMBDA_FUNCTION' $resourceType
- * @property 'CRITICAL'|'HIGH'|'ALL' $sortBy
- * @property 'ASC'|'DESC' $sortOrder
- * @property list<StringFilter> $titles
- * @property list<StringFilter> $vulnerabilityIds
+ * @property 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY'|null $findingType
+ * @property 'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER_IMAGE'|'AWS_LAMBDA_FUNCTION'|null $resourceType
+ * @property 'CRITICAL'|'HIGH'|'ALL'|null $sortBy
+ * @property 'ASC'|'DESC'|null $sortOrder
+ * @property list<StringFilter>|null $titles
+ * @property list<StringFilter>|null $vulnerabilityIds
  */
 class TitleAggregation extends Shape
 {
     /**
      * @param array{
-     *     findingType?: 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY',
-     *     resourceType?: 'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER_IMAGE'|'AWS_LAMBDA_FUNCTION',
-     *     sortBy?: 'CRITICAL'|'HIGH'|'ALL',
-     *     sortOrder?: 'ASC'|'DESC',
-     *     titles?: list<StringFilter>,
-     *     vulnerabilityIds?: list<StringFilter>
+     *     findingType?: 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY'|null,
+     *     resourceType?: 'AWS_EC2_INSTANCE'|'AWS_ECR_CONTAINER_IMAGE'|'AWS_LAMBDA_FUNCTION'|null,
+     *     sortBy?: 'CRITICAL'|'HIGH'|'ALL'|null,
+     *     sortOrder?: 'ASC'|'DESC'|null,
+     *     titles?: list<StringFilter>|null,
+     *     vulnerabilityIds?: list<StringFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

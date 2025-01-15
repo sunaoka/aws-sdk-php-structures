@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobArn
  * @property string $jobName
  * @property string $modelId
- * @property string $clientRequestToken
+ * @property string|null $clientRequestToken
  * @property string $roleArn
- * @property 'Submitted'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'PartiallyCompleted'|'Expired'|'Validating'|'Scheduled' $status
- * @property string $message
+ * @property 'Submitted'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'PartiallyCompleted'|'Expired'|'Validating'|'Scheduled'|null $status
+ * @property string|null $message
  * @property \Aws\Api\DateTimeResult $submitTime
- * @property \Aws\Api\DateTimeResult $lastModifiedTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property ModelInvocationJobInputDataConfig $inputDataConfig
  * @property ModelInvocationJobOutputDataConfig $outputDataConfig
- * @property VpcConfig $vpcConfig
- * @property int<24, 168> $timeoutDurationInHours
- * @property \Aws\Api\DateTimeResult $jobExpirationTime
+ * @property VpcConfig|null $vpcConfig
+ * @property int<24, 168>|null $timeoutDurationInHours
+ * @property \Aws\Api\DateTimeResult|null $jobExpirationTime
  */
 class ModelInvocationJobSummary extends Shape
 {
@@ -28,18 +28,18 @@ class ModelInvocationJobSummary extends Shape
      *     jobArn: string,
      *     jobName: string,
      *     modelId: string,
-     *     clientRequestToken?: string,
+     *     clientRequestToken?: string|null,
      *     roleArn: string,
-     *     status?: 'Submitted'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'PartiallyCompleted'|'Expired'|'Validating'|'Scheduled',
-     *     message?: string,
+     *     status?: 'Submitted'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'PartiallyCompleted'|'Expired'|'Validating'|'Scheduled'|null,
+     *     message?: string|null,
      *     submitTime: \Aws\Api\DateTimeResult,
-     *     lastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
      *     inputDataConfig: ModelInvocationJobInputDataConfig,
      *     outputDataConfig: ModelInvocationJobOutputDataConfig,
-     *     vpcConfig?: VpcConfig,
-     *     timeoutDurationInHours?: int<24, 168>,
-     *     jobExpirationTime?: \Aws\Api\DateTimeResult
+     *     vpcConfig?: VpcConfig|null,
+     *     timeoutDurationInHours?: int<24, 168>|null,
+     *     jobExpirationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $portName
- * @property string $discoveryName
- * @property list<ServiceConnectClientAlias> $clientAliases
- * @property int<0, 65535> $ingressPortOverride
- * @property TimeoutConfiguration $timeout
- * @property ServiceConnectTlsConfiguration $tls
+ * @property string|null $discoveryName
+ * @property list<ServiceConnectClientAlias>|null $clientAliases
+ * @property int<0, 65535>|null $ingressPortOverride
+ * @property TimeoutConfiguration|null $timeout
+ * @property ServiceConnectTlsConfiguration|null $tls
  */
 class ServiceConnectService extends Shape
 {
     /**
      * @param array{
      *     portName: string,
-     *     discoveryName?: string,
-     *     clientAliases?: list<ServiceConnectClientAlias>,
-     *     ingressPortOverride?: int<0, 65535>,
-     *     timeout?: TimeoutConfiguration,
-     *     tls?: ServiceConnectTlsConfiguration
+     *     discoveryName?: string|null,
+     *     clientAliases?: list<ServiceConnectClientAlias>|null,
+     *     ingressPortOverride?: int<0, 65535>|null,
+     *     timeout?: TimeoutConfiguration|null,
+     *     tls?: ServiceConnectTlsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IndexId
- * @property string $DataSourceId
+ * @property string|null $DataSourceId
  * @property string $GroupId
  * @property Shapes\GroupMembers $GroupMembers
- * @property int<0, 32535158400000> $OrderingId
- * @property string $RoleArn
+ * @property int<0, 32535158400000>|null $OrderingId
+ * @property string|null $RoleArn
  */
 class PutPrincipalMappingRequest extends Request
 {
     /**
      * @param array{
      *     IndexId: string,
-     *     DataSourceId?: string,
+     *     DataSourceId?: string|null,
      *     GroupId: string,
      *     GroupMembers: Shapes\GroupMembers,
-     *     OrderingId?: int<0, 32535158400000>,
-     *     RoleArn?: string
+     *     OrderingId?: int<0, 32535158400000>|null,
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

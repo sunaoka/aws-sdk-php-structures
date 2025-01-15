@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\ListUserPools;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property int<1, 60> $MaxResults
  */
 class ListUserPoolsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
+     *     NextToken?: string|null,
      *     MaxResults: int<1, 60>
      * } $args
      */

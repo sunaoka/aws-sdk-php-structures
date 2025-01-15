@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $pipelineId
- * @property list<Shapes\ParameterValue> $parameterValues
- * @property \Aws\Api\DateTimeResult $startTimestamp
+ * @property list<Shapes\ParameterValue>|null $parameterValues
+ * @property \Aws\Api\DateTimeResult|null $startTimestamp
  */
 class ActivatePipelineRequest extends Request
 {
     /**
      * @param array{
      *     pipelineId: string,
-     *     parameterValues?: list<Shapes\ParameterValue>,
-     *     startTimestamp?: \Aws\Api\DateTimeResult
+     *     parameterValues?: list<Shapes\ParameterValue>|null,
+     *     startTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

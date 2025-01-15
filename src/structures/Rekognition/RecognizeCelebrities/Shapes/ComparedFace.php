@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Rekognition\RecognizeCelebrities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BoundingBox $BoundingBox
- * @property float $Confidence
- * @property list<Landmark> $Landmarks
- * @property Pose $Pose
- * @property ImageQuality $Quality
- * @property list<Emotion> $Emotions
- * @property Smile $Smile
+ * @property BoundingBox|null $BoundingBox
+ * @property float|null $Confidence
+ * @property list<Landmark>|null $Landmarks
+ * @property Pose|null $Pose
+ * @property ImageQuality|null $Quality
+ * @property list<Emotion>|null $Emotions
+ * @property Smile|null $Smile
  */
 class ComparedFace extends Shape
 {
     /**
      * @param array{
-     *     BoundingBox?: BoundingBox,
-     *     Confidence?: float,
-     *     Landmarks?: list<Landmark>,
-     *     Pose?: Pose,
-     *     Quality?: ImageQuality,
-     *     Emotions?: list<Emotion>,
-     *     Smile?: Smile
+     *     BoundingBox?: BoundingBox|null,
+     *     Confidence?: float|null,
+     *     Landmarks?: list<Landmark>|null,
+     *     Pose?: Pose|null,
+     *     Quality?: ImageQuality|null,
+     *     Emotions?: list<Emotion>|null,
+     *     Smile?: Smile|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\GetKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $kmsKeyId
+ * @property string|null $kmsKeyId
  */
 class ServerSideEncryptionConfiguration extends Shape
 {
     /**
-     * @param array{kmsKeyId?: string} $args
+     * @param array{kmsKeyId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

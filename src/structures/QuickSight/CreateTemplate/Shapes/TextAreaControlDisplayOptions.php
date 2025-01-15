@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LabelOptions $TitleOptions
- * @property TextControlPlaceholderOptions $PlaceholderOptions
- * @property SheetControlInfoIconLabelOptions $InfoIconLabelOptions
+ * @property LabelOptions|null $TitleOptions
+ * @property TextControlPlaceholderOptions|null $PlaceholderOptions
+ * @property SheetControlInfoIconLabelOptions|null $InfoIconLabelOptions
  */
 class TextAreaControlDisplayOptions extends Shape
 {
     /**
      * @param array{
-     *     TitleOptions?: LabelOptions,
-     *     PlaceholderOptions?: TextControlPlaceholderOptions,
-     *     InfoIconLabelOptions?: SheetControlInfoIconLabelOptions
+     *     TitleOptions?: LabelOptions|null,
+     *     PlaceholderOptions?: TextControlPlaceholderOptions|null,
+     *     InfoIconLabelOptions?: SheetControlInfoIconLabelOptions|null
      * } $args
      */
     public function __construct(array $args = [])

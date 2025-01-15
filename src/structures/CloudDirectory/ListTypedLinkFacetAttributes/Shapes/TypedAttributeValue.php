@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\ListTypedLinkFacetAttributes\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StringValue
- * @property \Psr\Http\Message\StreamInterface $BinaryValue
- * @property bool $BooleanValue
- * @property string $NumberValue
- * @property \Aws\Api\DateTimeResult $DatetimeValue
+ * @property string|null $StringValue
+ * @property \Psr\Http\Message\StreamInterface|null $BinaryValue
+ * @property bool|null $BooleanValue
+ * @property string|null $NumberValue
+ * @property \Aws\Api\DateTimeResult|null $DatetimeValue
  */
 class TypedAttributeValue extends Shape
 {
     /**
      * @param array{
-     *     StringValue?: string,
-     *     BinaryValue?: \Psr\Http\Message\StreamInterface,
-     *     BooleanValue?: bool,
-     *     NumberValue?: string,
-     *     DatetimeValue?: \Aws\Api\DateTimeResult
+     *     StringValue?: string|null,
+     *     BinaryValue?: \Psr\Http\Message\StreamInterface|null,
+     *     BooleanValue?: bool|null,
+     *     NumberValue?: string|null,
+     *     DatetimeValue?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

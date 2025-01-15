@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iam\GetServiceLinkedRoleDeletionStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Reason
- * @property list<RoleUsageType> $RoleUsageList
+ * @property string|null $Reason
+ * @property list<RoleUsageType>|null $RoleUsageList
  */
 class DeletionTaskFailureReasonType extends Shape
 {
     /**
      * @param array{
-     *     Reason?: string,
-     *     RoleUsageList?: list<RoleUsageType>
+     *     Reason?: string|null,
+     *     RoleUsageList?: list<RoleUsageType>|null
      * } $args
      */
     public function __construct(array $args = [])

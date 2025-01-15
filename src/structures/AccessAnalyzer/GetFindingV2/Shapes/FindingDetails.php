@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetFindingV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExternalAccessDetails $externalAccessDetails
- * @property UnusedPermissionDetails $unusedPermissionDetails
- * @property UnusedIamUserAccessKeyDetails $unusedIamUserAccessKeyDetails
- * @property UnusedIamRoleDetails $unusedIamRoleDetails
- * @property UnusedIamUserPasswordDetails $unusedIamUserPasswordDetails
+ * @property ExternalAccessDetails|null $externalAccessDetails
+ * @property UnusedPermissionDetails|null $unusedPermissionDetails
+ * @property UnusedIamUserAccessKeyDetails|null $unusedIamUserAccessKeyDetails
+ * @property UnusedIamRoleDetails|null $unusedIamRoleDetails
+ * @property UnusedIamUserPasswordDetails|null $unusedIamUserPasswordDetails
  */
 class FindingDetails extends Shape
 {
     /**
      * @param array{
-     *     externalAccessDetails?: ExternalAccessDetails,
-     *     unusedPermissionDetails?: UnusedPermissionDetails,
-     *     unusedIamUserAccessKeyDetails?: UnusedIamUserAccessKeyDetails,
-     *     unusedIamRoleDetails?: UnusedIamRoleDetails,
-     *     unusedIamUserPasswordDetails?: UnusedIamUserPasswordDetails
+     *     externalAccessDetails?: ExternalAccessDetails|null,
+     *     unusedPermissionDetails?: UnusedPermissionDetails|null,
+     *     unusedIamUserAccessKeyDetails?: UnusedIamUserAccessKeyDetails|null,
+     *     unusedIamRoleDetails?: UnusedIamRoleDetails|null,
+     *     unusedIamUserPasswordDetails?: UnusedIamUserPasswordDetails|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Device
  * @property string $InstanceId
  * @property string $VolumeId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class AttachVolumeRequest extends Request
 {
@@ -17,7 +17,7 @@ class AttachVolumeRequest extends Request
      *     Device: string,
      *     InstanceId: string,
      *     VolumeId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

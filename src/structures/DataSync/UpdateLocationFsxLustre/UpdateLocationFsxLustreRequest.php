@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LocationArn
- * @property string $Subdirectory
+ * @property string|null $Subdirectory
  */
 class UpdateLocationFsxLustreRequest extends Request
 {
     /**
      * @param array{
      *     LocationArn: string,
-     *     Subdirectory?: string
+     *     Subdirectory?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\Batch\RegisterJobDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $command
- * @property list<TaskContainerDependency> $dependsOn
- * @property list<KeyValuePair> $environment
- * @property bool $essential
+ * @property list<string>|null $command
+ * @property list<TaskContainerDependency>|null $dependsOn
+ * @property list<KeyValuePair>|null $environment
+ * @property bool|null $essential
  * @property string $image
- * @property LinuxParameters $linuxParameters
- * @property LogConfiguration $logConfiguration
- * @property list<MountPoint> $mountPoints
- * @property string $name
- * @property bool $privileged
- * @property bool $readonlyRootFilesystem
- * @property RepositoryCredentials $repositoryCredentials
- * @property list<ResourceRequirement> $resourceRequirements
- * @property list<Secret> $secrets
- * @property list<Ulimit> $ulimits
- * @property string $user
+ * @property LinuxParameters|null $linuxParameters
+ * @property LogConfiguration|null $logConfiguration
+ * @property list<MountPoint>|null $mountPoints
+ * @property string|null $name
+ * @property bool|null $privileged
+ * @property bool|null $readonlyRootFilesystem
+ * @property RepositoryCredentials|null $repositoryCredentials
+ * @property list<ResourceRequirement>|null $resourceRequirements
+ * @property list<Secret>|null $secrets
+ * @property list<Ulimit>|null $ulimits
+ * @property string|null $user
  */
 class TaskContainerProperties extends Shape
 {
     /**
      * @param array{
-     *     command?: list<string>,
-     *     dependsOn?: list<TaskContainerDependency>,
-     *     environment?: list<KeyValuePair>,
-     *     essential?: bool,
+     *     command?: list<string>|null,
+     *     dependsOn?: list<TaskContainerDependency>|null,
+     *     environment?: list<KeyValuePair>|null,
+     *     essential?: bool|null,
      *     image: string,
-     *     linuxParameters?: LinuxParameters,
-     *     logConfiguration?: LogConfiguration,
-     *     mountPoints?: list<MountPoint>,
-     *     name?: string,
-     *     privileged?: bool,
-     *     readonlyRootFilesystem?: bool,
-     *     repositoryCredentials?: RepositoryCredentials,
-     *     resourceRequirements?: list<ResourceRequirement>,
-     *     secrets?: list<Secret>,
-     *     ulimits?: list<Ulimit>,
-     *     user?: string
+     *     linuxParameters?: LinuxParameters|null,
+     *     logConfiguration?: LogConfiguration|null,
+     *     mountPoints?: list<MountPoint>|null,
+     *     name?: string|null,
+     *     privileged?: bool|null,
+     *     readonlyRootFilesystem?: bool|null,
+     *     repositoryCredentials?: RepositoryCredentials|null,
+     *     resourceRequirements?: list<ResourceRequirement>|null,
+     *     secrets?: list<Secret>|null,
+     *     ulimits?: list<Ulimit>|null,
+     *     user?: string|null
      * } $args
      */
     public function __construct(array $args)

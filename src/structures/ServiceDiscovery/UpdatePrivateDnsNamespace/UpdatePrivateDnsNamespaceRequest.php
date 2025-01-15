@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $UpdaterRequestId
+ * @property string|null $UpdaterRequestId
  * @property Shapes\PrivateDnsNamespaceChange $Namespace
  */
 class UpdatePrivateDnsNamespaceRequest extends Request
@@ -14,7 +14,7 @@ class UpdatePrivateDnsNamespaceRequest extends Request
     /**
      * @param array{
      *     Id: string,
-     *     UpdaterRequestId?: string,
+     *     UpdaterRequestId?: string|null,
      *     Namespace: Shapes\PrivateDnsNamespaceChange
      * } $args
      */

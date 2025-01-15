@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Omics\ListReadSetImportJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  * @property string $sequenceStoreId
- * @property Shapes\ImportReadSetFilter $filter
+ * @property Shapes\ImportReadSetFilter|null $filter
  */
 class ListReadSetImportJobsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
      *     sequenceStoreId: string,
-     *     filter?: Shapes\ImportReadSetFilter
+     *     filter?: Shapes\ImportReadSetFilter|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectorDefinitionVersionArn
- * @property string $CoreDefinitionVersionArn
- * @property string $DeviceDefinitionVersionArn
- * @property string $FunctionDefinitionVersionArn
- * @property string $LoggerDefinitionVersionArn
- * @property string $ResourceDefinitionVersionArn
- * @property string $SubscriptionDefinitionVersionArn
+ * @property string|null $ConnectorDefinitionVersionArn
+ * @property string|null $CoreDefinitionVersionArn
+ * @property string|null $DeviceDefinitionVersionArn
+ * @property string|null $FunctionDefinitionVersionArn
+ * @property string|null $LoggerDefinitionVersionArn
+ * @property string|null $ResourceDefinitionVersionArn
+ * @property string|null $SubscriptionDefinitionVersionArn
  */
 class GroupVersion extends Shape
 {
     /**
      * @param array{
-     *     ConnectorDefinitionVersionArn?: string,
-     *     CoreDefinitionVersionArn?: string,
-     *     DeviceDefinitionVersionArn?: string,
-     *     FunctionDefinitionVersionArn?: string,
-     *     LoggerDefinitionVersionArn?: string,
-     *     ResourceDefinitionVersionArn?: string,
-     *     SubscriptionDefinitionVersionArn?: string
+     *     ConnectorDefinitionVersionArn?: string|null,
+     *     CoreDefinitionVersionArn?: string|null,
+     *     DeviceDefinitionVersionArn?: string|null,
+     *     FunctionDefinitionVersionArn?: string|null,
+     *     LoggerDefinitionVersionArn?: string|null,
+     *     ResourceDefinitionVersionArn?: string|null,
+     *     SubscriptionDefinitionVersionArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

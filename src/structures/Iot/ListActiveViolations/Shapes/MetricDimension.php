@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $dimensionName
- * @property 'IN'|'NOT_IN' $operator
+ * @property 'IN'|'NOT_IN'|null $operator
  */
 class MetricDimension extends Shape
 {
     /**
      * @param array{
      *     dimensionName: string,
-     *     operator?: 'IN'|'NOT_IN'
+     *     operator?: 'IN'|'NOT_IN'|null
      * } $args
      */
     public function __construct(array $args)

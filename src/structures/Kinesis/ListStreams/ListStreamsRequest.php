@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Kinesis\ListStreams;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 10000> $Limit
- * @property string $ExclusiveStartStreamName
- * @property string $NextToken
+ * @property int<1, 10000>|null $Limit
+ * @property string|null $ExclusiveStartStreamName
+ * @property string|null $NextToken
  */
 class ListStreamsRequest extends Request
 {
     /**
      * @param array{
-     *     Limit?: int<1, 10000>,
-     *     ExclusiveStartStreamName?: string,
-     *     NextToken?: string
+     *     Limit?: int<1, 10000>|null,
+     *     ExclusiveStartStreamName?: string|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PUBLIC_READ'|'AUTHENTICATED_READ'|'BUCKET_OWNER_READ'|'BUCKET_OWNER_FULL_CONTROL' $CannedAcl
+ * @property 'PUBLIC_READ'|'AUTHENTICATED_READ'|'BUCKET_OWNER_READ'|'BUCKET_OWNER_FULL_CONTROL'|null $CannedAcl
  */
 class S3DestinationAccessControl extends Shape
 {
     /**
-     * @param array{CannedAcl?: 'PUBLIC_READ'|'AUTHENTICATED_READ'|'BUCKET_OWNER_READ'|'BUCKET_OWNER_FULL_CONTROL'} $args
+     * @param array{CannedAcl?: 'PUBLIC_READ'|'AUTHENTICATED_READ'|'BUCKET_OWNER_READ'|'BUCKET_OWNER_FULL_CONTROL'|null} $args
      */
     public function __construct(array $args = [])
     {

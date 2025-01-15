@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $diskName
- * @property string $diskSnapshotName
+ * @property string|null $diskSnapshotName
  * @property string $availabilityZone
  * @property int $sizeInGb
- * @property list<Shapes\Tag> $tags
- * @property list<Shapes\AddOnRequest> $addOns
- * @property string $sourceDiskName
- * @property string $restoreDate
- * @property bool $useLatestRestorableAutoSnapshot
+ * @property list<Shapes\Tag>|null $tags
+ * @property list<Shapes\AddOnRequest>|null $addOns
+ * @property string|null $sourceDiskName
+ * @property string|null $restoreDate
+ * @property bool|null $useLatestRestorableAutoSnapshot
  */
 class CreateDiskFromSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     diskName: string,
-     *     diskSnapshotName?: string,
+     *     diskSnapshotName?: string|null,
      *     availabilityZone: string,
      *     sizeInGb: int,
-     *     tags?: list<Shapes\Tag>,
-     *     addOns?: list<Shapes\AddOnRequest>,
-     *     sourceDiskName?: string,
-     *     restoreDate?: string,
-     *     useLatestRestorableAutoSnapshot?: bool
+     *     tags?: list<Shapes\Tag>|null,
+     *     addOns?: list<Shapes\AddOnRequest>|null,
+     *     sourceDiskName?: string|null,
+     *     restoreDate?: string|null,
+     *     useLatestRestorableAutoSnapshot?: bool|null
      * } $args
      */
     public function __construct(array $args)

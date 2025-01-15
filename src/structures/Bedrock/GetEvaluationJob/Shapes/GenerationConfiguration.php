@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetEvaluationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PromptTemplate $promptTemplate
- * @property GuardrailConfiguration $guardrailConfiguration
- * @property KbInferenceConfig $kbInferenceConfig
- * @property array<string, AdditionalModelRequestFieldsValue> $additionalModelRequestFields
+ * @property PromptTemplate|null $promptTemplate
+ * @property GuardrailConfiguration|null $guardrailConfiguration
+ * @property KbInferenceConfig|null $kbInferenceConfig
+ * @property array<string, AdditionalModelRequestFieldsValue>|null $additionalModelRequestFields
  */
 class GenerationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     promptTemplate?: PromptTemplate,
-     *     guardrailConfiguration?: GuardrailConfiguration,
-     *     kbInferenceConfig?: KbInferenceConfig,
-     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>
+     *     promptTemplate?: PromptTemplate|null,
+     *     guardrailConfiguration?: GuardrailConfiguration|null,
+     *     kbInferenceConfig?: KbInferenceConfig|null,
+     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>|null
      * } $args
      */
     public function __construct(array $args = [])

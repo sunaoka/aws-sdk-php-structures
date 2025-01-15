@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ListPlatformBranches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlatformName
- * @property string $BranchName
- * @property string $LifecycleState
- * @property int $BranchOrder
- * @property list<string> $SupportedTierList
+ * @property string|null $PlatformName
+ * @property string|null $BranchName
+ * @property string|null $LifecycleState
+ * @property int|null $BranchOrder
+ * @property list<string>|null $SupportedTierList
  */
 class PlatformBranchSummary extends Shape
 {
     /**
      * @param array{
-     *     PlatformName?: string,
-     *     BranchName?: string,
-     *     LifecycleState?: string,
-     *     BranchOrder?: int,
-     *     SupportedTierList?: list<string>
+     *     PlatformName?: string|null,
+     *     BranchName?: string|null,
+     *     LifecycleState?: string|null,
+     *     BranchOrder?: int|null,
+     *     SupportedTierList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

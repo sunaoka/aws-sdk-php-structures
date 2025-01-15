@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FIS\StartExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'pending'|'running'|'completed'|'cancelled'|'failed' $status
- * @property string $reason
- * @property ExperimentReportError $error
+ * @property 'pending'|'running'|'completed'|'cancelled'|'failed'|null $status
+ * @property string|null $reason
+ * @property ExperimentReportError|null $error
  */
 class ExperimentReportState extends Shape
 {
     /**
      * @param array{
-     *     status?: 'pending'|'running'|'completed'|'cancelled'|'failed',
-     *     reason?: string,
-     *     error?: ExperimentReportError
+     *     status?: 'pending'|'running'|'completed'|'cancelled'|'failed'|null,
+     *     reason?: string|null,
+     *     error?: ExperimentReportError|null
      * } $args
      */
     public function __construct(array $args = [])

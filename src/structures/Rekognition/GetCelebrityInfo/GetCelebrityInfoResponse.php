@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetCelebrityInfo;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $Urls
- * @property string $Name
- * @property Shapes\KnownGender $KnownGender
+ * @property list<string>|null $Urls
+ * @property string|null $Name
+ * @property Shapes\KnownGender|null $KnownGender
  */
 class GetCelebrityInfoResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetModels;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $modelId
- * @property 'ONLINE_FRAUD_INSIGHTS'|'TRANSACTION_FRAUD_INSIGHTS'|'ACCOUNT_TAKEOVER_INSIGHTS' $modelType
- * @property string $nextToken
- * @property int<1, 10> $maxResults
+ * @property string|null $modelId
+ * @property 'ONLINE_FRAUD_INSIGHTS'|'TRANSACTION_FRAUD_INSIGHTS'|'ACCOUNT_TAKEOVER_INSIGHTS'|null $modelType
+ * @property string|null $nextToken
+ * @property int<1, 10>|null $maxResults
  */
 class GetModelsRequest extends Request
 {
     /**
      * @param array{
-     *     modelId?: string,
-     *     modelType?: 'ONLINE_FRAUD_INSIGHTS'|'TRANSACTION_FRAUD_INSIGHTS'|'ACCOUNT_TAKEOVER_INSIGHTS',
-     *     nextToken?: string,
-     *     maxResults?: int<1, 10>
+     *     modelId?: string|null,
+     *     modelType?: 'ONLINE_FRAUD_INSIGHTS'|'TRANSACTION_FRAUD_INSIGHTS'|'ACCOUNT_TAKEOVER_INSIGHTS'|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 10>|null
      * } $args
      */
     public function __construct(array $args = [])

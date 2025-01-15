@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatch\PutDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataPath
- * @property string $Message
+ * @property string|null $DataPath
+ * @property string|null $Message
  */
 class DashboardValidationMessage extends Shape
 {
     /**
      * @param array{
-     *     DataPath?: string,
-     *     Message?: string
+     *     DataPath?: string|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Neptune\CreateDBInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Address
- * @property int $Port
- * @property string $HostedZoneId
+ * @property string|null $Address
+ * @property int|null $Port
+ * @property string|null $HostedZoneId
  */
 class Endpoint extends Shape
 {
     /**
      * @param array{
-     *     Address?: string,
-     *     Port?: int,
-     *     HostedZoneId?: string
+     *     Address?: string|null,
+     *     Port?: int|null,
+     *     HostedZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

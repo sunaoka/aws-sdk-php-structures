@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Field
- * @property string $Type
+ * @property string|null $Field
+ * @property string|null $Type
  */
 class AwsEcsServicePlacementStrategiesDetails extends Shape
 {
     /**
      * @param array{
-     *     Field?: string,
-     *     Type?: string
+     *     Field?: string|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

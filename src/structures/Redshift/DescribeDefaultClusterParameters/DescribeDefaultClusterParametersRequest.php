@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ParameterGroupFamily
- * @property int $MaxRecords
- * @property string $Marker
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeDefaultClusterParametersRequest extends Request
 {
     /**
      * @param array{
      *     ParameterGroupFamily: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args)

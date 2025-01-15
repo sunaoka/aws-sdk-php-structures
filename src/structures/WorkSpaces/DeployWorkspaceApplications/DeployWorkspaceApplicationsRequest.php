@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkspaceId
- * @property bool $Force
+ * @property bool|null $Force
  */
 class DeployWorkspaceApplicationsRequest extends Request
 {
     /**
      * @param array{
      *     WorkspaceId: string,
-     *     Force?: bool
+     *     Force?: bool|null
      * } $args
      */
     public function __construct(array $args)

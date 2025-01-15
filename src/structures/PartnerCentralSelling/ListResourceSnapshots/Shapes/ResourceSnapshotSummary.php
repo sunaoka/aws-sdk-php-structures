@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListResourceSnapshots\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $CreatedBy
- * @property string $ResourceId
- * @property string $ResourceSnapshotTemplateName
- * @property 'Opportunity' $ResourceType
- * @property int<1, max> $Revision
+ * @property string|null $Arn
+ * @property string|null $CreatedBy
+ * @property string|null $ResourceId
+ * @property string|null $ResourceSnapshotTemplateName
+ * @property 'Opportunity'|null $ResourceType
+ * @property int<1, max>|null $Revision
  */
 class ResourceSnapshotSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CreatedBy?: string,
-     *     ResourceId?: string,
-     *     ResourceSnapshotTemplateName?: string,
-     *     ResourceType?: 'Opportunity',
-     *     Revision?: int<1, max>
+     *     Arn?: string|null,
+     *     CreatedBy?: string|null,
+     *     ResourceId?: string|null,
+     *     ResourceSnapshotTemplateName?: string|null,
+     *     ResourceType?: 'Opportunity'|null,
+     *     Revision?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

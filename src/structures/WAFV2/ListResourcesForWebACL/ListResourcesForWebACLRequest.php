@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WebACLArn
- * @property 'APPLICATION_LOAD_BALANCER'|'API_GATEWAY'|'APPSYNC'|'COGNITO_USER_POOL'|'APP_RUNNER_SERVICE'|'VERIFIED_ACCESS_INSTANCE' $ResourceType
+ * @property 'APPLICATION_LOAD_BALANCER'|'API_GATEWAY'|'APPSYNC'|'COGNITO_USER_POOL'|'APP_RUNNER_SERVICE'|'VERIFIED_ACCESS_INSTANCE'|null $ResourceType
  */
 class ListResourcesForWebACLRequest extends Request
 {
     /**
      * @param array{
      *     WebACLArn: string,
-     *     ResourceType?: 'APPLICATION_LOAD_BALANCER'|'API_GATEWAY'|'APPSYNC'|'COGNITO_USER_POOL'|'APP_RUNNER_SERVICE'|'VERIFIED_ACCESS_INSTANCE'
+     *     ResourceType?: 'APPLICATION_LOAD_BALANCER'|'API_GATEWAY'|'APPSYNC'|'COGNITO_USER_POOL'|'APP_RUNNER_SERVICE'|'VERIFIED_ACCESS_INSTANCE'|null
      * } $args
      */
     public function __construct(array $args)

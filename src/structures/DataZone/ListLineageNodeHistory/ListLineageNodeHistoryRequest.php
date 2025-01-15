@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DataZone\ListLineageNodeHistory;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'UPSTREAM'|'DOWNSTREAM' $direction
+ * @property 'UPSTREAM'|'DOWNSTREAM'|null $direction
  * @property string $domainIdentifier
- * @property \Aws\Api\DateTimeResult $eventTimestampGTE
- * @property \Aws\Api\DateTimeResult $eventTimestampLTE
+ * @property \Aws\Api\DateTimeResult|null $eventTimestampGTE
+ * @property \Aws\Api\DateTimeResult|null $eventTimestampLTE
  * @property string $identifier
- * @property int<1, 50> $maxResults
- * @property string $nextToken
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
  */
 class ListLineageNodeHistoryRequest extends Request
 {
     /**
      * @param array{
-     *     direction?: 'UPSTREAM'|'DOWNSTREAM',
+     *     direction?: 'UPSTREAM'|'DOWNSTREAM'|null,
      *     domainIdentifier: string,
-     *     eventTimestampGTE?: \Aws\Api\DateTimeResult,
-     *     eventTimestampLTE?: \Aws\Api\DateTimeResult,
+     *     eventTimestampGTE?: \Aws\Api\DateTimeResult|null,
+     *     eventTimestampLTE?: \Aws\Api\DateTimeResult|null,
      *     identifier: string,
-     *     maxResults?: int<1, 50>,
-     *     nextToken?: string,
-     *     sortOrder?: 'ASCENDING'|'DESCENDING'
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */
     public function __construct(array $args)

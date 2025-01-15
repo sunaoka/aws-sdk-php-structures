@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $Name
+ * @property string|null $Name
  * @property string $IndexId
- * @property Shapes\DataSourceConfiguration $Configuration
- * @property Shapes\DataSourceVpcConfiguration $VpcConfiguration
- * @property string $Description
- * @property string $Schedule
- * @property string $RoleArn
- * @property string $LanguageCode
- * @property Shapes\CustomDocumentEnrichmentConfiguration $CustomDocumentEnrichmentConfiguration
+ * @property Shapes\DataSourceConfiguration|null $Configuration
+ * @property Shapes\DataSourceVpcConfiguration|null $VpcConfiguration
+ * @property string|null $Description
+ * @property string|null $Schedule
+ * @property string|null $RoleArn
+ * @property string|null $LanguageCode
+ * @property Shapes\CustomDocumentEnrichmentConfiguration|null $CustomDocumentEnrichmentConfiguration
  */
 class UpdateDataSourceRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     IndexId: string,
-     *     Configuration?: Shapes\DataSourceConfiguration,
-     *     VpcConfiguration?: Shapes\DataSourceVpcConfiguration,
-     *     Description?: string,
-     *     Schedule?: string,
-     *     RoleArn?: string,
-     *     LanguageCode?: string,
-     *     CustomDocumentEnrichmentConfiguration?: Shapes\CustomDocumentEnrichmentConfiguration
+     *     Configuration?: Shapes\DataSourceConfiguration|null,
+     *     VpcConfiguration?: Shapes\DataSourceVpcConfiguration|null,
+     *     Description?: string|null,
+     *     Schedule?: string|null,
+     *     RoleArn?: string|null,
+     *     LanguageCode?: string|null,
+     *     CustomDocumentEnrichmentConfiguration?: Shapes\CustomDocumentEnrichmentConfiguration|null
      * } $args
      */
     public function __construct(array $args)

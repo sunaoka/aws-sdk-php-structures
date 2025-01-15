@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterArn
- * @property string $TaskDefinitionArn
- * @property string $Version
- * @property string $CreatedAt
- * @property string $StartedAt
- * @property string $StartedBy
- * @property string $Group
- * @property list<AwsEcsTaskVolumeDetails> $Volumes
- * @property list<AwsEcsContainerDetails> $Containers
+ * @property string|null $ClusterArn
+ * @property string|null $TaskDefinitionArn
+ * @property string|null $Version
+ * @property string|null $CreatedAt
+ * @property string|null $StartedAt
+ * @property string|null $StartedBy
+ * @property string|null $Group
+ * @property list<AwsEcsTaskVolumeDetails>|null $Volumes
+ * @property list<AwsEcsContainerDetails>|null $Containers
  */
 class AwsEcsTaskDetails extends Shape
 {
     /**
      * @param array{
-     *     ClusterArn?: string,
-     *     TaskDefinitionArn?: string,
-     *     Version?: string,
-     *     CreatedAt?: string,
-     *     StartedAt?: string,
-     *     StartedBy?: string,
-     *     Group?: string,
-     *     Volumes?: list<AwsEcsTaskVolumeDetails>,
-     *     Containers?: list<AwsEcsContainerDetails>
+     *     ClusterArn?: string|null,
+     *     TaskDefinitionArn?: string|null,
+     *     Version?: string|null,
+     *     CreatedAt?: string|null,
+     *     StartedAt?: string|null,
+     *     StartedBy?: string|null,
+     *     Group?: string|null,
+     *     Volumes?: list<AwsEcsTaskVolumeDetails>|null,
+     *     Containers?: list<AwsEcsContainerDetails>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SecurityGroupRuleId
- * @property SecurityGroupRuleRequest $SecurityGroupRule
+ * @property SecurityGroupRuleRequest|null $SecurityGroupRule
  */
 class SecurityGroupRuleUpdate extends Shape
 {
     /**
      * @param array{
      *     SecurityGroupRuleId: string,
-     *     SecurityGroupRule?: SecurityGroupRuleRequest
+     *     SecurityGroupRule?: SecurityGroupRuleRequest|null
      * } $args
      */
     public function __construct(array $args)

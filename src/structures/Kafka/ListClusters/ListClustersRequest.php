@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Kafka\ListClusters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterNameFilter
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $ClusterNameFilter
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListClustersRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterNameFilter?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     ClusterNameFilter?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

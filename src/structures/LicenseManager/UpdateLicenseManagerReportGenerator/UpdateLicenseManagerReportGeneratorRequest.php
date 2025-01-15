@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ReportContext $ReportContext
  * @property Shapes\ReportFrequency $ReportFrequency
  * @property string $ClientToken
- * @property string $Description
+ * @property string|null $Description
  */
 class UpdateLicenseManagerReportGeneratorRequest extends Request
 {
@@ -23,7 +23,7 @@ class UpdateLicenseManagerReportGeneratorRequest extends Request
      *     ReportContext: Shapes\ReportContext,
      *     ReportFrequency: Shapes\ReportFrequency,
      *     ClientToken: string,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

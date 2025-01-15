@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property string $ApplicationDescription
- * @property list<Shapes\Input> $Inputs
- * @property list<Shapes\Output> $Outputs
- * @property list<Shapes\CloudWatchLoggingOption> $CloudWatchLoggingOptions
- * @property string $ApplicationCode
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ApplicationDescription
+ * @property list<Shapes\Input>|null $Inputs
+ * @property list<Shapes\Output>|null $Outputs
+ * @property list<Shapes\CloudWatchLoggingOption>|null $CloudWatchLoggingOptions
+ * @property string|null $ApplicationCode
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationName: string,
-     *     ApplicationDescription?: string,
-     *     Inputs?: list<Shapes\Input>,
-     *     Outputs?: list<Shapes\Output>,
-     *     CloudWatchLoggingOptions?: list<Shapes\CloudWatchLoggingOption>,
-     *     ApplicationCode?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     ApplicationDescription?: string|null,
+     *     Inputs?: list<Shapes\Input>|null,
+     *     Outputs?: list<Shapes\Output>|null,
+     *     CloudWatchLoggingOptions?: list<Shapes\CloudWatchLoggingOption>|null,
+     *     ApplicationCode?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

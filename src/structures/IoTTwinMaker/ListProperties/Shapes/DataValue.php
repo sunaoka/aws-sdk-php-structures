@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\ListProperties\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $booleanValue
- * @property double $doubleValue
- * @property int $integerValue
- * @property int $longValue
- * @property string $stringValue
- * @property list<DataValue> $listValue
- * @property array<string, DataValue> $mapValue
- * @property RelationshipValue $relationshipValue
- * @property string $expression
+ * @property bool|null $booleanValue
+ * @property double|null $doubleValue
+ * @property int|null $integerValue
+ * @property int|null $longValue
+ * @property string|null $stringValue
+ * @property list<DataValue>|null $listValue
+ * @property array<string, DataValue>|null $mapValue
+ * @property RelationshipValue|null $relationshipValue
+ * @property string|null $expression
  */
 class DataValue extends Shape
 {
     /**
      * @param array{
-     *     booleanValue?: bool,
-     *     doubleValue?: double,
-     *     integerValue?: int,
-     *     longValue?: int,
-     *     stringValue?: string,
-     *     listValue?: list<DataValue>,
-     *     mapValue?: array<string, DataValue>,
-     *     relationshipValue?: RelationshipValue,
-     *     expression?: string
+     *     booleanValue?: bool|null,
+     *     doubleValue?: double|null,
+     *     integerValue?: int|null,
+     *     longValue?: int|null,
+     *     stringValue?: string|null,
+     *     listValue?: list<DataValue>|null,
+     *     mapValue?: array<string, DataValue>|null,
+     *     relationshipValue?: RelationshipValue|null,
+     *     expression?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,47 +7,47 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $TrainingJobName
  * @property string $TrainingJobArn
- * @property string $TuningJobArn
- * @property string $LabelingJobArn
- * @property string $AutoMLJobArn
+ * @property string|null $TuningJobArn
+ * @property string|null $LabelingJobArn
+ * @property string|null $AutoMLJobArn
  * @property Shapes\ModelArtifacts $ModelArtifacts
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TrainingJobStatus
  * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending' $SecondaryStatus
- * @property string $FailureReason
- * @property array<string, string> $HyperParameters
+ * @property string|null $FailureReason
+ * @property array<string, string>|null $HyperParameters
  * @property Shapes\AlgorithmSpecification $AlgorithmSpecification
- * @property string $RoleArn
- * @property list<Shapes\Channel> $InputDataConfig
- * @property Shapes\OutputDataConfig $OutputDataConfig
+ * @property string|null $RoleArn
+ * @property list<Shapes\Channel>|null $InputDataConfig
+ * @property Shapes\OutputDataConfig|null $OutputDataConfig
  * @property Shapes\ResourceConfig $ResourceConfig
- * @property Shapes\WarmPoolStatus $WarmPoolStatus
- * @property Shapes\VpcConfig $VpcConfig
+ * @property Shapes\WarmPoolStatus|null $WarmPoolStatus
+ * @property Shapes\VpcConfig|null $VpcConfig
  * @property Shapes\StoppingCondition $StoppingCondition
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $TrainingStartTime
- * @property \Aws\Api\DateTimeResult $TrainingEndTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property list<Shapes\SecondaryStatusTransition> $SecondaryStatusTransitions
- * @property list<Shapes\MetricData> $FinalMetricDataList
- * @property bool $EnableNetworkIsolation
- * @property bool $EnableInterContainerTrafficEncryption
- * @property bool $EnableManagedSpotTraining
- * @property Shapes\CheckpointConfig $CheckpointConfig
- * @property int<1, max> $TrainingTimeInSeconds
- * @property int<1, max> $BillableTimeInSeconds
- * @property Shapes\DebugHookConfig $DebugHookConfig
- * @property Shapes\ExperimentConfig $ExperimentConfig
- * @property list<Shapes\DebugRuleConfiguration> $DebugRuleConfigurations
- * @property Shapes\TensorBoardOutputConfig $TensorBoardOutputConfig
- * @property list<Shapes\DebugRuleEvaluationStatus> $DebugRuleEvaluationStatuses
- * @property Shapes\ProfilerConfig $ProfilerConfig
- * @property list<Shapes\ProfilerRuleConfiguration> $ProfilerRuleConfigurations
- * @property list<Shapes\ProfilerRuleEvaluationStatus> $ProfilerRuleEvaluationStatuses
- * @property 'Enabled'|'Disabled' $ProfilingStatus
- * @property array<string, string> $Environment
- * @property Shapes\RetryStrategy $RetryStrategy
- * @property Shapes\RemoteDebugConfig $RemoteDebugConfig
- * @property Shapes\InfraCheckConfig $InfraCheckConfig
+ * @property \Aws\Api\DateTimeResult|null $TrainingStartTime
+ * @property \Aws\Api\DateTimeResult|null $TrainingEndTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property list<Shapes\SecondaryStatusTransition>|null $SecondaryStatusTransitions
+ * @property list<Shapes\MetricData>|null $FinalMetricDataList
+ * @property bool|null $EnableNetworkIsolation
+ * @property bool|null $EnableInterContainerTrafficEncryption
+ * @property bool|null $EnableManagedSpotTraining
+ * @property Shapes\CheckpointConfig|null $CheckpointConfig
+ * @property int<1, max>|null $TrainingTimeInSeconds
+ * @property int<1, max>|null $BillableTimeInSeconds
+ * @property Shapes\DebugHookConfig|null $DebugHookConfig
+ * @property Shapes\ExperimentConfig|null $ExperimentConfig
+ * @property list<Shapes\DebugRuleConfiguration>|null $DebugRuleConfigurations
+ * @property Shapes\TensorBoardOutputConfig|null $TensorBoardOutputConfig
+ * @property list<Shapes\DebugRuleEvaluationStatus>|null $DebugRuleEvaluationStatuses
+ * @property Shapes\ProfilerConfig|null $ProfilerConfig
+ * @property list<Shapes\ProfilerRuleConfiguration>|null $ProfilerRuleConfigurations
+ * @property list<Shapes\ProfilerRuleEvaluationStatus>|null $ProfilerRuleEvaluationStatuses
+ * @property 'Enabled'|'Disabled'|null $ProfilingStatus
+ * @property array<string, string>|null $Environment
+ * @property Shapes\RetryStrategy|null $RetryStrategy
+ * @property Shapes\RemoteDebugConfig|null $RemoteDebugConfig
+ * @property Shapes\InfraCheckConfig|null $InfraCheckConfig
  */
 class DescribeTrainingJobResponse extends Response
 {

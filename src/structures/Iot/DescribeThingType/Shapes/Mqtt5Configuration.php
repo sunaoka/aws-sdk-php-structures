@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeThingType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PropagatingAttribute> $propagatingAttributes
+ * @property list<PropagatingAttribute>|null $propagatingAttributes
  */
 class Mqtt5Configuration extends Shape
 {
     /**
-     * @param array{propagatingAttributes?: list<PropagatingAttribute>} $args
+     * @param array{propagatingAttributes?: list<PropagatingAttribute>|null} $args
      */
     public function __construct(array $args = [])
     {

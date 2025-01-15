@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\finspace\CreateKxCluster;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $environmentId
  * @property string $clusterName
  * @property 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT' $clusterType
- * @property Shapes\TickerplantLogConfiguration $tickerplantLogConfiguration
- * @property list<Shapes\KxDatabaseConfiguration> $databases
- * @property list<Shapes\KxCacheStorageConfiguration> $cacheStorageConfigurations
- * @property Shapes\AutoScalingConfiguration $autoScalingConfiguration
- * @property string $clusterDescription
- * @property Shapes\CapacityConfiguration $capacityConfiguration
+ * @property Shapes\TickerplantLogConfiguration|null $tickerplantLogConfiguration
+ * @property list<Shapes\KxDatabaseConfiguration>|null $databases
+ * @property list<Shapes\KxCacheStorageConfiguration>|null $cacheStorageConfigurations
+ * @property Shapes\AutoScalingConfiguration|null $autoScalingConfiguration
+ * @property string|null $clusterDescription
+ * @property Shapes\CapacityConfiguration|null $capacityConfiguration
  * @property string $releaseLabel
  * @property Shapes\VpcConfiguration $vpcConfiguration
- * @property string $initializationScript
- * @property list<Shapes\KxCommandLineArgument> $commandLineArguments
- * @property Shapes\CodeConfiguration $code
- * @property string $executionRole
- * @property Shapes\KxSavedownStorageConfiguration $savedownStorageConfiguration
+ * @property string|null $initializationScript
+ * @property list<Shapes\KxCommandLineArgument>|null $commandLineArguments
+ * @property Shapes\CodeConfiguration|null $code
+ * @property string|null $executionRole
+ * @property Shapes\KxSavedownStorageConfiguration|null $savedownStorageConfiguration
  * @property 'SINGLE'|'MULTI' $azMode
- * @property string $availabilityZoneId
- * @property array<string, string> $tags
- * @property Shapes\KxScalingGroupConfiguration $scalingGroupConfiguration
+ * @property string|null $availabilityZoneId
+ * @property array<string, string>|null $tags
+ * @property Shapes\KxScalingGroupConfiguration|null $scalingGroupConfiguration
  */
 class CreateKxClusterRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     environmentId: string,
      *     clusterName: string,
      *     clusterType: 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT',
-     *     tickerplantLogConfiguration?: Shapes\TickerplantLogConfiguration,
-     *     databases?: list<Shapes\KxDatabaseConfiguration>,
-     *     cacheStorageConfigurations?: list<Shapes\KxCacheStorageConfiguration>,
-     *     autoScalingConfiguration?: Shapes\AutoScalingConfiguration,
-     *     clusterDescription?: string,
-     *     capacityConfiguration?: Shapes\CapacityConfiguration,
+     *     tickerplantLogConfiguration?: Shapes\TickerplantLogConfiguration|null,
+     *     databases?: list<Shapes\KxDatabaseConfiguration>|null,
+     *     cacheStorageConfigurations?: list<Shapes\KxCacheStorageConfiguration>|null,
+     *     autoScalingConfiguration?: Shapes\AutoScalingConfiguration|null,
+     *     clusterDescription?: string|null,
+     *     capacityConfiguration?: Shapes\CapacityConfiguration|null,
      *     releaseLabel: string,
      *     vpcConfiguration: Shapes\VpcConfiguration,
-     *     initializationScript?: string,
-     *     commandLineArguments?: list<Shapes\KxCommandLineArgument>,
-     *     code?: Shapes\CodeConfiguration,
-     *     executionRole?: string,
-     *     savedownStorageConfiguration?: Shapes\KxSavedownStorageConfiguration,
+     *     initializationScript?: string|null,
+     *     commandLineArguments?: list<Shapes\KxCommandLineArgument>|null,
+     *     code?: Shapes\CodeConfiguration|null,
+     *     executionRole?: string|null,
+     *     savedownStorageConfiguration?: Shapes\KxSavedownStorageConfiguration|null,
      *     azMode: 'SINGLE'|'MULTI',
-     *     availabilityZoneId?: string,
-     *     tags?: array<string, string>,
-     *     scalingGroupConfiguration?: Shapes\KxScalingGroupConfiguration
+     *     availabilityZoneId?: string|null,
+     *     tags?: array<string, string>|null,
+     *     scalingGroupConfiguration?: Shapes\KxScalingGroupConfiguration|null
      * } $args
      */
     public function __construct(array $args)

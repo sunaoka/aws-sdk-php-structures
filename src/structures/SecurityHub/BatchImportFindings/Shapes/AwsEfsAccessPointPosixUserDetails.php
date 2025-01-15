@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Gid
- * @property list<string> $SecondaryGids
- * @property string $Uid
+ * @property string|null $Gid
+ * @property list<string>|null $SecondaryGids
+ * @property string|null $Uid
  */
 class AwsEfsAccessPointPosixUserDetails extends Shape
 {
     /**
      * @param array{
-     *     Gid?: string,
-     *     SecondaryGids?: list<string>,
-     *     Uid?: string
+     *     Gid?: string|null,
+     *     SecondaryGids?: list<string>|null,
+     *     Uid?: string|null
      * } $args
      */
     public function __construct(array $args = [])

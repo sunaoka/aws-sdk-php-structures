@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Kafka\ListVpcConnections;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\VpcConnection> $VpcConnections
+ * @property string|null $NextToken
+ * @property list<Shapes\VpcConnection>|null $VpcConnections
  */
 class ListVpcConnectionsResponse extends Response
 {

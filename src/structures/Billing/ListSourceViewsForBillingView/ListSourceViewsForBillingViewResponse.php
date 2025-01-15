@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $sourceViews
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListSourceViewsForBillingViewResponse extends Response
 {

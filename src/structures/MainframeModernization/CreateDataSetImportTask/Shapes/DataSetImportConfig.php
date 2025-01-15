@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateDataSetImportTask\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DataSetImportItem> $dataSets
- * @property string $s3Location
+ * @property list<DataSetImportItem>|null $dataSets
+ * @property string|null $s3Location
  */
 class DataSetImportConfig extends Shape
 {
     /**
      * @param array{
-     *     dataSets?: list<DataSetImportItem>,
-     *     s3Location?: string
+     *     dataSets?: list<DataSetImportItem>|null,
+     *     s3Location?: string|null
      * } $args
      */
     public function __construct(array $args = [])

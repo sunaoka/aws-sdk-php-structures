@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Deadline\ListSessionActions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EnvironmentEnterSessionActionDefinitionSummary $envEnter
- * @property EnvironmentExitSessionActionDefinitionSummary $envExit
- * @property TaskRunSessionActionDefinitionSummary $taskRun
- * @property SyncInputJobAttachmentsSessionActionDefinitionSummary $syncInputJobAttachments
+ * @property EnvironmentEnterSessionActionDefinitionSummary|null $envEnter
+ * @property EnvironmentExitSessionActionDefinitionSummary|null $envExit
+ * @property TaskRunSessionActionDefinitionSummary|null $taskRun
+ * @property SyncInputJobAttachmentsSessionActionDefinitionSummary|null $syncInputJobAttachments
  */
 class SessionActionDefinitionSummary extends Shape
 {
     /**
      * @param array{
-     *     envEnter?: EnvironmentEnterSessionActionDefinitionSummary,
-     *     envExit?: EnvironmentExitSessionActionDefinitionSummary,
-     *     taskRun?: TaskRunSessionActionDefinitionSummary,
-     *     syncInputJobAttachments?: SyncInputJobAttachmentsSessionActionDefinitionSummary
+     *     envEnter?: EnvironmentEnterSessionActionDefinitionSummary|null,
+     *     envExit?: EnvironmentExitSessionActionDefinitionSummary|null,
+     *     taskRun?: TaskRunSessionActionDefinitionSummary|null,
+     *     syncInputJobAttachments?: SyncInputJobAttachmentsSessionActionDefinitionSummary|null
      * } $args
      */
     public function __construct(array $args = [])

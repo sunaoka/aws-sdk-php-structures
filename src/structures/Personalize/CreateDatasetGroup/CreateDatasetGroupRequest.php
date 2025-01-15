@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $roleArn
- * @property string $kmsKeyArn
- * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND' $domain
- * @property list<Shapes\Tag> $tags
+ * @property string|null $roleArn
+ * @property string|null $kmsKeyArn
+ * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null $domain
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDatasetGroupRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     roleArn?: string,
-     *     kmsKeyArn?: string,
-     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND',
-     *     tags?: list<Shapes\Tag>
+     *     roleArn?: string|null,
+     *     kmsKeyArn?: string|null,
+     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

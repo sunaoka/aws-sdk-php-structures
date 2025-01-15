@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EndpointGroupArn
  * @property string $EndpointId
- * @property list<string> $DestinationAddresses
- * @property list<int<1, 65535>> $DestinationPorts
- * @property bool $AllowAllTrafficToEndpoint
+ * @property list<string>|null $DestinationAddresses
+ * @property list<int<1, 65535>>|null $DestinationPorts
+ * @property bool|null $AllowAllTrafficToEndpoint
  */
 class AllowCustomRoutingTrafficRequest extends Request
 {
@@ -17,9 +17,9 @@ class AllowCustomRoutingTrafficRequest extends Request
      * @param array{
      *     EndpointGroupArn: string,
      *     EndpointId: string,
-     *     DestinationAddresses?: list<string>,
-     *     DestinationPorts?: list<int<1, 65535>>,
-     *     AllowAllTrafficToEndpoint?: bool
+     *     DestinationAddresses?: list<string>|null,
+     *     DestinationPorts?: list<int<1, 65535>>|null,
+     *     AllowAllTrafficToEndpoint?: bool|null
      * } $args
      */
     public function __construct(array $args)

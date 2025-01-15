@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceArn
  * @property 'S3Bucket' $SinkType
  * @property string $SinkArn
- * @property string $ClientRequestToken
- * @property Shapes\ChimeSdkMeetingConfiguration $ChimeSdkMeetingConfiguration
+ * @property string|null $ClientRequestToken
+ * @property Shapes\ChimeSdkMeetingConfiguration|null $ChimeSdkMeetingConfiguration
  */
 class CreateMediaCapturePipelineRequest extends Request
 {
@@ -20,8 +20,8 @@ class CreateMediaCapturePipelineRequest extends Request
      *     SourceArn: string,
      *     SinkType: 'S3Bucket',
      *     SinkArn: string,
-     *     ClientRequestToken?: string,
-     *     ChimeSdkMeetingConfiguration?: Shapes\ChimeSdkMeetingConfiguration
+     *     ClientRequestToken?: string|null,
+     *     ChimeSdkMeetingConfiguration?: Shapes\ChimeSdkMeetingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

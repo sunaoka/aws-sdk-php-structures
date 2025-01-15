@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $inputSourceARN
- * @property string $schemaName
- * @property 'SOURCE'|'TARGET' $type
+ * @property string|null $schemaName
+ * @property 'SOURCE'|'TARGET'|null $type
  */
 class IdMappingWorkflowInputSource extends Shape
 {
     /**
      * @param array{
      *     inputSourceARN: string,
-     *     schemaName?: string,
-     *     type?: 'SOURCE'|'TARGET'
+     *     schemaName?: string|null,
+     *     type?: 'SOURCE'|'TARGET'|null
      * } $args
      */
     public function __construct(array $args)

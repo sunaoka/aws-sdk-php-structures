@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeTransitGatewayRouteTableAnnouncemen
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TransitGatewayRouteTableAnnouncement> $TransitGatewayRouteTableAnnouncements
- * @property string $NextToken
+ * @property list<Shapes\TransitGatewayRouteTableAnnouncement>|null $TransitGatewayRouteTableAnnouncements
+ * @property string|null $NextToken
  */
 class DescribeTransitGatewayRouteTableAnnouncementsResponse extends Response
 {

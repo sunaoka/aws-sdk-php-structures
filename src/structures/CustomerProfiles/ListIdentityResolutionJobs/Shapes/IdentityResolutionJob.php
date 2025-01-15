@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\ListIdentityResolutionJobs\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DomainName
- * @property string $JobId
- * @property 'PENDING'|'PREPROCESSING'|'FIND_MATCHING'|'MERGING'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED' $Status
- * @property \Aws\Api\DateTimeResult $JobStartTime
- * @property \Aws\Api\DateTimeResult $JobEndTime
- * @property JobStats $JobStats
- * @property ExportingLocation $ExportingLocation
- * @property string $Message
+ * @property string|null $DomainName
+ * @property string|null $JobId
+ * @property 'PENDING'|'PREPROCESSING'|'FIND_MATCHING'|'MERGING'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $JobStartTime
+ * @property \Aws\Api\DateTimeResult|null $JobEndTime
+ * @property JobStats|null $JobStats
+ * @property ExportingLocation|null $ExportingLocation
+ * @property string|null $Message
  */
 class IdentityResolutionJob extends Shape
 {
     /**
      * @param array{
-     *     DomainName?: string,
-     *     JobId?: string,
-     *     Status?: 'PENDING'|'PREPROCESSING'|'FIND_MATCHING'|'MERGING'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED',
-     *     JobStartTime?: \Aws\Api\DateTimeResult,
-     *     JobEndTime?: \Aws\Api\DateTimeResult,
-     *     JobStats?: JobStats,
-     *     ExportingLocation?: ExportingLocation,
-     *     Message?: string
+     *     DomainName?: string|null,
+     *     JobId?: string|null,
+     *     Status?: 'PENDING'|'PREPROCESSING'|'FIND_MATCHING'|'MERGING'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED'|null,
+     *     JobStartTime?: \Aws\Api\DateTimeResult|null,
+     *     JobEndTime?: \Aws\Api\DateTimeResult|null,
+     *     JobStats?: JobStats|null,
+     *     ExportingLocation?: ExportingLocation|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

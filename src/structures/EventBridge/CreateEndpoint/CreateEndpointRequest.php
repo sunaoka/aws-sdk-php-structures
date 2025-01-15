@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\RoutingConfig $RoutingConfig
- * @property Shapes\ReplicationConfig $ReplicationConfig
+ * @property Shapes\ReplicationConfig|null $ReplicationConfig
  * @property list<Shapes\EndpointEventBus> $EventBuses
- * @property string $RoleArn
+ * @property string|null $RoleArn
  */
 class CreateEndpointRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     RoutingConfig: Shapes\RoutingConfig,
-     *     ReplicationConfig?: Shapes\ReplicationConfig,
+     *     ReplicationConfig?: Shapes\ReplicationConfig|null,
      *     EventBuses: list<Shapes\EndpointEventBus>,
-     *     RoleArn?: string
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

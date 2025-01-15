@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QBusiness\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stringValue
- * @property list<string> $stringListValue
- * @property int $longValue
- * @property \Aws\Api\DateTimeResult $dateValue
+ * @property string|null $stringValue
+ * @property list<string>|null $stringListValue
+ * @property int|null $longValue
+ * @property \Aws\Api\DateTimeResult|null $dateValue
  */
 class DocumentAttributeValue extends Shape
 {
     /**
      * @param array{
-     *     stringValue?: string,
-     *     stringListValue?: list<string>,
-     *     longValue?: int,
-     *     dateValue?: \Aws\Api\DateTimeResult
+     *     stringValue?: string|null,
+     *     stringListValue?: list<string>|null,
+     *     longValue?: int|null,
+     *     dateValue?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

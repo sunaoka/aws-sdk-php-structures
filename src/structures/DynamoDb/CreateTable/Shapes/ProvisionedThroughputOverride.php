@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DynamoDb\CreateTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, max> $ReadCapacityUnits
+ * @property int<1, max>|null $ReadCapacityUnits
  */
 class ProvisionedThroughputOverride extends Shape
 {
     /**
-     * @param array{ReadCapacityUnits?: int<1, max>} $args
+     * @param array{ReadCapacityUnits?: int<1, max>|null} $args
      */
     public function __construct(array $args = [])
     {

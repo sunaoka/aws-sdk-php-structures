@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRouteMatrix\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LastCharacter
+ * @property string|null $LastCharacter
  */
 class RouteMatrixVehicleLicensePlate extends Shape
 {
     /**
-     * @param array{LastCharacter?: string} $args
+     * @param array{LastCharacter?: string|null} $args
      */
     public function __construct(array $args = [])
     {

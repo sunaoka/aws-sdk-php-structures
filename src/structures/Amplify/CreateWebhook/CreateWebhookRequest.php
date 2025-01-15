@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appId
  * @property string $branchName
- * @property string $description
+ * @property string|null $description
  */
 class CreateWebhookRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateWebhookRequest extends Request
      * @param array{
      *     appId: string,
      *     branchName: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

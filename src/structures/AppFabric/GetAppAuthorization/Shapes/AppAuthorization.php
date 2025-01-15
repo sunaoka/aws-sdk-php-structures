@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PendingConnect'|'Connected'|'ConnectionValidationFailed'|'TokenAutoRotationFailed' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property 'admin'|'endUser' $persona
- * @property string $authUrl
+ * @property 'admin'|'endUser'|null $persona
+ * @property string|null $authUrl
  */
 class AppAuthorization extends Shape
 {
@@ -28,8 +28,8 @@ class AppAuthorization extends Shape
      *     status: 'PendingConnect'|'Connected'|'ConnectionValidationFailed'|'TokenAutoRotationFailed',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     persona?: 'admin'|'endUser',
-     *     authUrl?: string
+     *     persona?: 'admin'|'endUser'|null,
+     *     authUrl?: string|null
      * } $args
      */
     public function __construct(array $args)

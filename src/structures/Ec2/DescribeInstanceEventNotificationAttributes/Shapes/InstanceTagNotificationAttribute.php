@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceEventNotificationAttributes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $InstanceTagKeys
- * @property bool $IncludeAllTagsOfInstance
+ * @property list<string>|null $InstanceTagKeys
+ * @property bool|null $IncludeAllTagsOfInstance
  */
 class InstanceTagNotificationAttribute extends Shape
 {
     /**
      * @param array{
-     *     InstanceTagKeys?: list<string>,
-     *     IncludeAllTagsOfInstance?: bool
+     *     InstanceTagKeys?: list<string>|null,
+     *     IncludeAllTagsOfInstance?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

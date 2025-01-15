@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeClusterVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterVersion
- * @property string $ClusterParameterGroupFamily
- * @property string $Description
+ * @property string|null $ClusterVersion
+ * @property string|null $ClusterParameterGroupFamily
+ * @property string|null $Description
  */
 class ClusterVersion extends Shape
 {
     /**
      * @param array{
-     *     ClusterVersion?: string,
-     *     ClusterParameterGroupFamily?: string,
-     *     Description?: string
+     *     ClusterVersion?: string|null,
+     *     ClusterParameterGroupFamily?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

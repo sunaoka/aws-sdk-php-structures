@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\ListTransactions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
- * @property 'ALL'|'COMPLETED'|'ACTIVE'|'COMMITTED'|'ABORTED' $StatusFilter
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property string|null $CatalogId
+ * @property 'ALL'|'COMPLETED'|'ACTIVE'|'COMMITTED'|'ABORTED'|null $StatusFilter
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListTransactionsRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
-     *     StatusFilter?: 'ALL'|'COMPLETED'|'ACTIVE'|'COMMITTED'|'ABORTED',
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     CatalogId?: string|null,
+     *     StatusFilter?: 'ALL'|'COMPLETED'|'ACTIVE'|'COMMITTED'|'ABORTED'|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

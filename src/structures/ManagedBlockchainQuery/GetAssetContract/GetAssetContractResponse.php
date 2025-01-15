@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ContractIdentifier $contractIdentifier
  * @property 'ERC20'|'ERC721'|'ERC1155' $tokenStandard
  * @property string $deployerAddress
- * @property Shapes\ContractMetadata $metadata
+ * @property Shapes\ContractMetadata|null $metadata
  */
 class GetAssetContractResponse extends Response
 {

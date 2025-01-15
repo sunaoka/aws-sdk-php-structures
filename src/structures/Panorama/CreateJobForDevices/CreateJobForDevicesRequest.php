@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $DeviceIds
- * @property Shapes\DeviceJobConfig $DeviceJobConfig
+ * @property Shapes\DeviceJobConfig|null $DeviceJobConfig
  * @property 'OTA'|'REBOOT' $JobType
  */
 class CreateJobForDevicesRequest extends Request
@@ -14,7 +14,7 @@ class CreateJobForDevicesRequest extends Request
     /**
      * @param array{
      *     DeviceIds: list<string>,
-     *     DeviceJobConfig?: Shapes\DeviceJobConfig,
+     *     DeviceJobConfig?: Shapes\DeviceJobConfig|null,
      *     JobType: 'OTA'|'REBOOT'
      * } $args
      */

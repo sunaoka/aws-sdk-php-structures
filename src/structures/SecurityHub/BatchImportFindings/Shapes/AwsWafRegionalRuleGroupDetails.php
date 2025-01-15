@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricName
- * @property string $Name
- * @property string $RuleGroupId
- * @property list<AwsWafRegionalRuleGroupRulesDetails> $Rules
+ * @property string|null $MetricName
+ * @property string|null $Name
+ * @property string|null $RuleGroupId
+ * @property list<AwsWafRegionalRuleGroupRulesDetails>|null $Rules
  */
 class AwsWafRegionalRuleGroupDetails extends Shape
 {
     /**
      * @param array{
-     *     MetricName?: string,
-     *     Name?: string,
-     *     RuleGroupId?: string,
-     *     Rules?: list<AwsWafRegionalRuleGroupRulesDetails>
+     *     MetricName?: string|null,
+     *     Name?: string|null,
+     *     RuleGroupId?: string|null,
+     *     Rules?: list<AwsWafRegionalRuleGroupRulesDetails>|null
      * } $args
      */
     public function __construct(array $args = [])

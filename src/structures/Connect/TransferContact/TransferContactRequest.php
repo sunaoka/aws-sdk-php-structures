@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $ContactId
- * @property string $QueueId
- * @property string $UserId
+ * @property string|null $QueueId
+ * @property string|null $UserId
  * @property string $ContactFlowId
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class TransferContactRequest extends Request
 {
@@ -18,10 +18,10 @@ class TransferContactRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     ContactId: string,
-     *     QueueId?: string,
-     *     UserId?: string,
+     *     QueueId?: string|null,
+     *     UserId?: string|null,
      *     ContactFlowId: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

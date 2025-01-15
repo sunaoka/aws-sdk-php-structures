@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $clusterName
- * @property string $associatedPolicyArn
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property string|null $associatedPolicyArn
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListAccessEntriesRequest extends Request
 {
     /**
      * @param array{
      *     clusterName: string,
-     *     associatedPolicyArn?: string,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string
+     *     associatedPolicyArn?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateTrafficMirrorSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrafficMirrorSessionId
- * @property string $TrafficMirrorTargetId
- * @property string $TrafficMirrorFilterId
- * @property string $NetworkInterfaceId
- * @property string $OwnerId
- * @property int $PacketLength
- * @property int $SessionNumber
- * @property int $VirtualNetworkId
- * @property string $Description
- * @property list<Tag> $Tags
+ * @property string|null $TrafficMirrorSessionId
+ * @property string|null $TrafficMirrorTargetId
+ * @property string|null $TrafficMirrorFilterId
+ * @property string|null $NetworkInterfaceId
+ * @property string|null $OwnerId
+ * @property int|null $PacketLength
+ * @property int|null $SessionNumber
+ * @property int|null $VirtualNetworkId
+ * @property string|null $Description
+ * @property list<Tag>|null $Tags
  */
 class TrafficMirrorSession extends Shape
 {
     /**
      * @param array{
-     *     TrafficMirrorSessionId?: string,
-     *     TrafficMirrorTargetId?: string,
-     *     TrafficMirrorFilterId?: string,
-     *     NetworkInterfaceId?: string,
-     *     OwnerId?: string,
-     *     PacketLength?: int,
-     *     SessionNumber?: int,
-     *     VirtualNetworkId?: int,
-     *     Description?: string,
-     *     Tags?: list<Tag>
+     *     TrafficMirrorSessionId?: string|null,
+     *     TrafficMirrorTargetId?: string|null,
+     *     TrafficMirrorFilterId?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     OwnerId?: string|null,
+     *     PacketLength?: int|null,
+     *     SessionNumber?: int|null,
+     *     VirtualNetworkId?: int|null,
+     *     Description?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

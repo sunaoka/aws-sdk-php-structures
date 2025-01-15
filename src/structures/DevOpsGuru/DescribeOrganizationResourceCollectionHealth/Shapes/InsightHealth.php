@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeOrganizationResourceCollecti
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $OpenProactiveInsights
- * @property int $OpenReactiveInsights
- * @property int $MeanTimeToRecoverInMilliseconds
+ * @property int|null $OpenProactiveInsights
+ * @property int|null $OpenReactiveInsights
+ * @property int|null $MeanTimeToRecoverInMilliseconds
  */
 class InsightHealth extends Shape
 {
     /**
      * @param array{
-     *     OpenProactiveInsights?: int,
-     *     OpenReactiveInsights?: int,
-     *     MeanTimeToRecoverInMilliseconds?: int
+     *     OpenProactiveInsights?: int|null,
+     *     OpenReactiveInsights?: int|null,
+     *     MeanTimeToRecoverInMilliseconds?: int|null
      * } $args
      */
     public function __construct(array $args = [])

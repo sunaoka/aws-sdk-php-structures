@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Athena\UpdateWorkGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnforceWorkGroupConfiguration
- * @property ResultConfigurationUpdates $ResultConfigurationUpdates
- * @property bool $PublishCloudWatchMetricsEnabled
- * @property int<10000000, max> $BytesScannedCutoffPerQuery
- * @property bool $RemoveBytesScannedCutoffPerQuery
- * @property bool $RequesterPaysEnabled
- * @property EngineVersion $EngineVersion
- * @property bool $RemoveCustomerContentEncryptionConfiguration
- * @property string $AdditionalConfiguration
- * @property string $ExecutionRole
- * @property CustomerContentEncryptionConfiguration $CustomerContentEncryptionConfiguration
- * @property bool $EnableMinimumEncryptionConfiguration
- * @property QueryResultsS3AccessGrantsConfiguration $QueryResultsS3AccessGrantsConfiguration
+ * @property bool|null $EnforceWorkGroupConfiguration
+ * @property ResultConfigurationUpdates|null $ResultConfigurationUpdates
+ * @property bool|null $PublishCloudWatchMetricsEnabled
+ * @property int<10000000, max>|null $BytesScannedCutoffPerQuery
+ * @property bool|null $RemoveBytesScannedCutoffPerQuery
+ * @property bool|null $RequesterPaysEnabled
+ * @property EngineVersion|null $EngineVersion
+ * @property bool|null $RemoveCustomerContentEncryptionConfiguration
+ * @property string|null $AdditionalConfiguration
+ * @property string|null $ExecutionRole
+ * @property CustomerContentEncryptionConfiguration|null $CustomerContentEncryptionConfiguration
+ * @property bool|null $EnableMinimumEncryptionConfiguration
+ * @property QueryResultsS3AccessGrantsConfiguration|null $QueryResultsS3AccessGrantsConfiguration
  */
 class WorkGroupConfigurationUpdates extends Shape
 {
     /**
      * @param array{
-     *     EnforceWorkGroupConfiguration?: bool,
-     *     ResultConfigurationUpdates?: ResultConfigurationUpdates,
-     *     PublishCloudWatchMetricsEnabled?: bool,
-     *     BytesScannedCutoffPerQuery?: int<10000000, max>,
-     *     RemoveBytesScannedCutoffPerQuery?: bool,
-     *     RequesterPaysEnabled?: bool,
-     *     EngineVersion?: EngineVersion,
-     *     RemoveCustomerContentEncryptionConfiguration?: bool,
-     *     AdditionalConfiguration?: string,
-     *     ExecutionRole?: string,
-     *     CustomerContentEncryptionConfiguration?: CustomerContentEncryptionConfiguration,
-     *     EnableMinimumEncryptionConfiguration?: bool,
-     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration
+     *     EnforceWorkGroupConfiguration?: bool|null,
+     *     ResultConfigurationUpdates?: ResultConfigurationUpdates|null,
+     *     PublishCloudWatchMetricsEnabled?: bool|null,
+     *     BytesScannedCutoffPerQuery?: int<10000000, max>|null,
+     *     RemoveBytesScannedCutoffPerQuery?: bool|null,
+     *     RequesterPaysEnabled?: bool|null,
+     *     EngineVersion?: EngineVersion|null,
+     *     RemoveCustomerContentEncryptionConfiguration?: bool|null,
+     *     AdditionalConfiguration?: string|null,
+     *     ExecutionRole?: string|null,
+     *     CustomerContentEncryptionConfiguration?: CustomerContentEncryptionConfiguration|null,
+     *     EnableMinimumEncryptionConfiguration?: bool|null,
+     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

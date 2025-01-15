@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeBuild\ListBuilds;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
- * @property string $nextToken
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property string|null $nextToken
  */
 class ListBuildsRequest extends Request
 {
     /**
      * @param array{
-     *     sortOrder?: 'ASCENDING'|'DESCENDING',
-     *     nextToken?: string
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

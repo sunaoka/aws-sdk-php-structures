@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\Glue\GetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BootstrapServers
- * @property string $SecurityProtocol
- * @property string $ConnectionName
- * @property string $TopicName
- * @property string $Assign
- * @property string $SubscribePattern
- * @property string $Classification
- * @property string $Delimiter
- * @property string $StartingOffsets
- * @property string $EndingOffsets
- * @property int<0, max> $PollTimeoutMs
- * @property int<0, max> $NumRetries
- * @property int<0, max> $RetryIntervalMs
- * @property int<0, max> $MaxOffsetsPerTrigger
- * @property int<0, max> $MinPartitions
- * @property bool $IncludeHeaders
- * @property string $AddRecordTimestamp
- * @property string $EmitConsumerLagMetrics
- * @property \Aws\Api\DateTimeResult $StartingTimestamp
+ * @property string|null $BootstrapServers
+ * @property string|null $SecurityProtocol
+ * @property string|null $ConnectionName
+ * @property string|null $TopicName
+ * @property string|null $Assign
+ * @property string|null $SubscribePattern
+ * @property string|null $Classification
+ * @property string|null $Delimiter
+ * @property string|null $StartingOffsets
+ * @property string|null $EndingOffsets
+ * @property int<0, max>|null $PollTimeoutMs
+ * @property int<0, max>|null $NumRetries
+ * @property int<0, max>|null $RetryIntervalMs
+ * @property int<0, max>|null $MaxOffsetsPerTrigger
+ * @property int<0, max>|null $MinPartitions
+ * @property bool|null $IncludeHeaders
+ * @property string|null $AddRecordTimestamp
+ * @property string|null $EmitConsumerLagMetrics
+ * @property \Aws\Api\DateTimeResult|null $StartingTimestamp
  */
 class KafkaStreamingSourceOptions extends Shape
 {
     /**
      * @param array{
-     *     BootstrapServers?: string,
-     *     SecurityProtocol?: string,
-     *     ConnectionName?: string,
-     *     TopicName?: string,
-     *     Assign?: string,
-     *     SubscribePattern?: string,
-     *     Classification?: string,
-     *     Delimiter?: string,
-     *     StartingOffsets?: string,
-     *     EndingOffsets?: string,
-     *     PollTimeoutMs?: int<0, max>,
-     *     NumRetries?: int<0, max>,
-     *     RetryIntervalMs?: int<0, max>,
-     *     MaxOffsetsPerTrigger?: int<0, max>,
-     *     MinPartitions?: int<0, max>,
-     *     IncludeHeaders?: bool,
-     *     AddRecordTimestamp?: string,
-     *     EmitConsumerLagMetrics?: string,
-     *     StartingTimestamp?: \Aws\Api\DateTimeResult
+     *     BootstrapServers?: string|null,
+     *     SecurityProtocol?: string|null,
+     *     ConnectionName?: string|null,
+     *     TopicName?: string|null,
+     *     Assign?: string|null,
+     *     SubscribePattern?: string|null,
+     *     Classification?: string|null,
+     *     Delimiter?: string|null,
+     *     StartingOffsets?: string|null,
+     *     EndingOffsets?: string|null,
+     *     PollTimeoutMs?: int<0, max>|null,
+     *     NumRetries?: int<0, max>|null,
+     *     RetryIntervalMs?: int<0, max>|null,
+     *     MaxOffsetsPerTrigger?: int<0, max>|null,
+     *     MinPartitions?: int<0, max>|null,
+     *     IncludeHeaders?: bool|null,
+     *     AddRecordTimestamp?: string|null,
+     *     EmitConsumerLagMetrics?: string|null,
+     *     StartingTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

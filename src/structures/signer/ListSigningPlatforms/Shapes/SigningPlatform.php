@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\signer\ListSigningPlatforms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $platformId
- * @property string $displayName
- * @property string $partner
- * @property string $target
- * @property 'AWSIoT' $category
- * @property SigningConfiguration $signingConfiguration
- * @property SigningImageFormat $signingImageFormat
- * @property int $maxSizeInMB
- * @property bool $revocationSupported
+ * @property string|null $platformId
+ * @property string|null $displayName
+ * @property string|null $partner
+ * @property string|null $target
+ * @property 'AWSIoT'|null $category
+ * @property SigningConfiguration|null $signingConfiguration
+ * @property SigningImageFormat|null $signingImageFormat
+ * @property int|null $maxSizeInMB
+ * @property bool|null $revocationSupported
  */
 class SigningPlatform extends Shape
 {
     /**
      * @param array{
-     *     platformId?: string,
-     *     displayName?: string,
-     *     partner?: string,
-     *     target?: string,
-     *     category?: 'AWSIoT',
-     *     signingConfiguration?: SigningConfiguration,
-     *     signingImageFormat?: SigningImageFormat,
-     *     maxSizeInMB?: int,
-     *     revocationSupported?: bool
+     *     platformId?: string|null,
+     *     displayName?: string|null,
+     *     partner?: string|null,
+     *     target?: string|null,
+     *     category?: 'AWSIoT'|null,
+     *     signingConfiguration?: SigningConfiguration|null,
+     *     signingImageFormat?: SigningImageFormat|null,
+     *     maxSizeInMB?: int|null,
+     *     revocationSupported?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

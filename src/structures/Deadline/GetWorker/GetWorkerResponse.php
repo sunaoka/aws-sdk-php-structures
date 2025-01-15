@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $workerId
  * @property string $farmId
  * @property string $fleetId
- * @property Shapes\HostPropertiesResponse $hostProperties
+ * @property Shapes\HostPropertiesResponse|null $hostProperties
  * @property 'CREATED'|'STARTED'|'STOPPING'|'STOPPED'|'NOT_RESPONDING'|'NOT_COMPATIBLE'|'RUNNING'|'IDLE' $status
- * @property Shapes\LogConfiguration $log
+ * @property Shapes\LogConfiguration|null $log
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class GetWorkerResponse extends Response
 {

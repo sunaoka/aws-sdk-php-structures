@@ -12,10 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $commitTime
  * @property \Aws\Api\DateTimeResult $startTime
  * @property 'CREATED'|'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED' $status
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property 'RELEASE'|'RETRY'|'MANUAL'|'WEB_HOOK' $jobType
- * @property string $sourceUrl
- * @property 'ZIP'|'BUCKET_PREFIX' $sourceUrlType
+ * @property string|null $sourceUrl
+ * @property 'ZIP'|'BUCKET_PREFIX'|null $sourceUrlType
  */
 class JobSummary extends Shape
 {
@@ -28,10 +28,10 @@ class JobSummary extends Shape
      *     commitTime: \Aws\Api\DateTimeResult,
      *     startTime: \Aws\Api\DateTimeResult,
      *     status: 'CREATED'|'PENDING'|'PROVISIONING'|'RUNNING'|'FAILED'|'SUCCEED'|'CANCELLING'|'CANCELLED',
-     *     endTime?: \Aws\Api\DateTimeResult,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
      *     jobType: 'RELEASE'|'RETRY'|'MANUAL'|'WEB_HOOK',
-     *     sourceUrl?: string,
-     *     sourceUrlType?: 'ZIP'|'BUCKET_PREFIX'
+     *     sourceUrl?: string|null,
+     *     sourceUrlType?: 'ZIP'|'BUCKET_PREFIX'|null
      * } $args
      */
     public function __construct(array $args)

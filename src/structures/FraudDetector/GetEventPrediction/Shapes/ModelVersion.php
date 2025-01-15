@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $modelId
  * @property 'ONLINE_FRAUD_INSIGHTS'|'TRANSACTION_FRAUD_INSIGHTS'|'ACCOUNT_TAKEOVER_INSIGHTS' $modelType
  * @property string $modelVersionNumber
- * @property string $arn
+ * @property string|null $arn
  */
 class ModelVersion extends Shape
 {
@@ -17,7 +17,7 @@ class ModelVersion extends Shape
      *     modelId: string,
      *     modelType: 'ONLINE_FRAUD_INSIGHTS'|'TRANSACTION_FRAUD_INSIGHTS'|'ACCOUNT_TAKEOVER_INSIGHTS',
      *     modelVersionNumber: string,
-     *     arn?: string
+     *     arn?: string|null
      * } $args
      */
     public function __construct(array $args)

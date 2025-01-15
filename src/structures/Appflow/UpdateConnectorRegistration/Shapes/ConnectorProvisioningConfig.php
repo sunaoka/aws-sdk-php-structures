@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Appflow\UpdateConnectorRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LambdaConnectorProvisioningConfig $lambda
+ * @property LambdaConnectorProvisioningConfig|null $lambda
  */
 class ConnectorProvisioningConfig extends Shape
 {
     /**
-     * @param array{lambda?: LambdaConnectorProvisioningConfig} $args
+     * @param array{lambda?: LambdaConnectorProvisioningConfig|null} $args
      */
     public function __construct(array $args = [])
     {

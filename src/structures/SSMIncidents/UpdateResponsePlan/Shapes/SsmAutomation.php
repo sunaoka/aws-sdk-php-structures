@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $documentName
- * @property string $documentVersion
- * @property array<string, DynamicSsmParameterValue> $dynamicParameters
- * @property array<string, list<string>> $parameters
+ * @property string|null $documentVersion
+ * @property array<string, DynamicSsmParameterValue>|null $dynamicParameters
+ * @property array<string, list<string>>|null $parameters
  * @property string $roleArn
- * @property 'RESPONSE_PLAN_OWNER_ACCOUNT'|'IMPACTED_ACCOUNT' $targetAccount
+ * @property 'RESPONSE_PLAN_OWNER_ACCOUNT'|'IMPACTED_ACCOUNT'|null $targetAccount
  */
 class SsmAutomation extends Shape
 {
     /**
      * @param array{
      *     documentName: string,
-     *     documentVersion?: string,
-     *     dynamicParameters?: array<string, DynamicSsmParameterValue>,
-     *     parameters?: array<string, list<string>>,
+     *     documentVersion?: string|null,
+     *     dynamicParameters?: array<string, DynamicSsmParameterValue>|null,
+     *     parameters?: array<string, list<string>>|null,
      *     roleArn: string,
-     *     targetAccount?: 'RESPONSE_PLAN_OWNER_ACCOUNT'|'IMPACTED_ACCOUNT'
+     *     targetAccount?: 'RESPONSE_PLAN_OWNER_ACCOUNT'|'IMPACTED_ACCOUNT'|null
      * } $args
      */
     public function __construct(array $args)

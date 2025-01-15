@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FSx\StartMisconfiguredStateRecovery;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property string $FileSystemId
  */
 class StartMisconfiguredStateRecoveryRequest extends Request
 {
     /**
      * @param array{
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     FileSystemId: string
      * } $args
      */

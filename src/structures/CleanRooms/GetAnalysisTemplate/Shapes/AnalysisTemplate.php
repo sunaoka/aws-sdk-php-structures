@@ -11,15 +11,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationArn
  * @property string $membershipId
  * @property string $membershipArn
- * @property string $description
+ * @property string|null $description
  * @property string $name
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property AnalysisSchema $schema
  * @property 'SQL' $format
  * @property AnalysisSource $source
- * @property list<AnalysisParameter> $analysisParameters
- * @property list<AnalysisTemplateValidationStatusDetail> $validations
+ * @property list<AnalysisParameter>|null $analysisParameters
+ * @property list<AnalysisTemplateValidationStatusDetail>|null $validations
  */
 class AnalysisTemplate extends Shape
 {
@@ -31,15 +31,15 @@ class AnalysisTemplate extends Shape
      *     collaborationArn: string,
      *     membershipId: string,
      *     membershipArn: string,
-     *     description?: string,
+     *     description?: string|null,
      *     name: string,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     schema: AnalysisSchema,
      *     format: 'SQL',
      *     source: AnalysisSource,
-     *     analysisParameters?: list<AnalysisParameter>,
-     *     validations?: list<AnalysisTemplateValidationStatusDetail>
+     *     analysisParameters?: list<AnalysisParameter>|null,
+     *     validations?: list<AnalysisTemplateValidationStatusDetail>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Autoprovision
- * @property string $Driver
- * @property array<string, string> $DriverOpts
- * @property array<string, string> $Labels
- * @property string $Scope
+ * @property bool|null $Autoprovision
+ * @property string|null $Driver
+ * @property array<string, string>|null $DriverOpts
+ * @property array<string, string>|null $Labels
+ * @property string|null $Scope
  */
 class AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails extends Shape
 {
     /**
      * @param array{
-     *     Autoprovision?: bool,
-     *     Driver?: string,
-     *     DriverOpts?: array<string, string>,
-     *     Labels?: array<string, string>,
-     *     Scope?: string
+     *     Autoprovision?: bool|null,
+     *     Driver?: string|null,
+     *     DriverOpts?: array<string, string>|null,
+     *     Labels?: array<string, string>|null,
+     *     Scope?: string|null
      * } $args
      */
     public function __construct(array $args = [])

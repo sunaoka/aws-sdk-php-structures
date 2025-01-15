@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\GetChannelMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChannelArn
- * @property string $MessageId
- * @property string $Content
- * @property string $Metadata
- * @property 'STANDARD'|'CONTROL' $Type
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $LastEditedTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
- * @property Identity $Sender
- * @property bool $Redacted
- * @property 'PERSISTENT'|'NON_PERSISTENT' $Persistence
- * @property ChannelMessageStatusStructure $Status
- * @property array<string, MessageAttributeValue> $MessageAttributes
- * @property string $SubChannelId
- * @property string $ContentType
- * @property list<Target> $Target
+ * @property string|null $ChannelArn
+ * @property string|null $MessageId
+ * @property string|null $Content
+ * @property string|null $Metadata
+ * @property 'STANDARD'|'CONTROL'|null $Type
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastEditedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
+ * @property Identity|null $Sender
+ * @property bool|null $Redacted
+ * @property 'PERSISTENT'|'NON_PERSISTENT'|null $Persistence
+ * @property ChannelMessageStatusStructure|null $Status
+ * @property array<string, MessageAttributeValue>|null $MessageAttributes
+ * @property string|null $SubChannelId
+ * @property string|null $ContentType
+ * @property list<Target>|null $Target
  */
 class ChannelMessage extends Shape
 {
     /**
      * @param array{
-     *     ChannelArn?: string,
-     *     MessageId?: string,
-     *     Content?: string,
-     *     Metadata?: string,
-     *     Type?: 'STANDARD'|'CONTROL',
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     LastEditedTimestamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     Sender?: Identity,
-     *     Redacted?: bool,
-     *     Persistence?: 'PERSISTENT'|'NON_PERSISTENT',
-     *     Status?: ChannelMessageStatusStructure,
-     *     MessageAttributes?: array<string, MessageAttributeValue>,
-     *     SubChannelId?: string,
-     *     ContentType?: string,
-     *     Target?: list<Target>
+     *     ChannelArn?: string|null,
+     *     MessageId?: string|null,
+     *     Content?: string|null,
+     *     Metadata?: string|null,
+     *     Type?: 'STANDARD'|'CONTROL'|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     LastEditedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Sender?: Identity|null,
+     *     Redacted?: bool|null,
+     *     Persistence?: 'PERSISTENT'|'NON_PERSISTENT'|null,
+     *     Status?: ChannelMessageStatusStructure|null,
+     *     MessageAttributes?: array<string, MessageAttributeValue>|null,
+     *     SubChannelId?: string|null,
+     *     ContentType?: string|null,
+     *     Target?: list<Target>|null
      * } $args
      */
     public function __construct(array $args = [])

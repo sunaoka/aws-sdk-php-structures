@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $toolUseId
  * @property list<ToolResultContentBlock> $content
- * @property 'success'|'error' $status
+ * @property 'success'|'error'|null $status
  */
 class ToolResultBlock extends Shape
 {
@@ -15,7 +15,7 @@ class ToolResultBlock extends Shape
      * @param array{
      *     toolUseId: string,
      *     content: list<ToolResultContentBlock>,
-     *     status?: 'success'|'error'
+     *     status?: 'success'|'error'|null
      * } $args
      */
     public function __construct(array $args)

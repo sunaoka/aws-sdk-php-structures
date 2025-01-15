@@ -5,85 +5,85 @@ namespace Sunaoka\Aws\Structures\Rds\RestoreDBClusterFromS3;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $AvailabilityZones
- * @property int $BackupRetentionPeriod
- * @property string $CharacterSetName
- * @property string $DatabaseName
+ * @property list<string>|null $AvailabilityZones
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $CharacterSetName
+ * @property string|null $DatabaseName
  * @property string $DBClusterIdentifier
- * @property string $DBClusterParameterGroupName
- * @property list<string> $VpcSecurityGroupIds
- * @property string $DBSubnetGroupName
+ * @property string|null $DBClusterParameterGroupName
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $DBSubnetGroupName
  * @property string $Engine
- * @property string $EngineVersion
- * @property int $Port
+ * @property string|null $EngineVersion
+ * @property int|null $Port
  * @property string $MasterUsername
- * @property string $MasterUserPassword
- * @property string $OptionGroupName
- * @property string $PreferredBackupWindow
- * @property string $PreferredMaintenanceWindow
- * @property list<Shapes\Tag> $Tags
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property bool $EnableIAMDatabaseAuthentication
+ * @property string|null $MasterUserPassword
+ * @property string|null $OptionGroupName
+ * @property string|null $PreferredBackupWindow
+ * @property string|null $PreferredMaintenanceWindow
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property bool|null $EnableIAMDatabaseAuthentication
  * @property string $SourceEngine
  * @property string $SourceEngineVersion
  * @property string $S3BucketName
- * @property string $S3Prefix
+ * @property string|null $S3Prefix
  * @property string $S3IngestionRoleArn
- * @property int $BacktrackWindow
- * @property list<string> $EnableCloudwatchLogsExports
- * @property bool $DeletionProtection
- * @property bool $CopyTagsToSnapshot
- * @property string $Domain
- * @property string $DomainIAMRoleName
- * @property Shapes\ServerlessV2ScalingConfiguration $ServerlessV2ScalingConfiguration
- * @property string $NetworkType
- * @property bool $ManageMasterUserPassword
- * @property string $MasterUserSecretKmsKeyId
- * @property string $StorageType
- * @property string $EngineLifecycleSupport
+ * @property int|null $BacktrackWindow
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property bool|null $DeletionProtection
+ * @property bool|null $CopyTagsToSnapshot
+ * @property string|null $Domain
+ * @property string|null $DomainIAMRoleName
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
+ * @property string|null $NetworkType
+ * @property bool|null $ManageMasterUserPassword
+ * @property string|null $MasterUserSecretKmsKeyId
+ * @property string|null $StorageType
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBClusterFromS3Request extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZones?: list<string>,
-     *     BackupRetentionPeriod?: int,
-     *     CharacterSetName?: string,
-     *     DatabaseName?: string,
+     *     AvailabilityZones?: list<string>|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     CharacterSetName?: string|null,
+     *     DatabaseName?: string|null,
      *     DBClusterIdentifier: string,
-     *     DBClusterParameterGroupName?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     DBSubnetGroupName?: string,
+     *     DBClusterParameterGroupName?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     DBSubnetGroupName?: string|null,
      *     Engine: string,
-     *     EngineVersion?: string,
-     *     Port?: int,
+     *     EngineVersion?: string|null,
+     *     Port?: int|null,
      *     MasterUsername: string,
-     *     MasterUserPassword?: string,
-     *     OptionGroupName?: string,
-     *     PreferredBackupWindow?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
+     *     MasterUserPassword?: string|null,
+     *     OptionGroupName?: string|null,
+     *     PreferredBackupWindow?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
      *     SourceEngine: string,
      *     SourceEngineVersion: string,
      *     S3BucketName: string,
-     *     S3Prefix?: string,
+     *     S3Prefix?: string|null,
      *     S3IngestionRoleArn: string,
-     *     BacktrackWindow?: int,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     DeletionProtection?: bool,
-     *     CopyTagsToSnapshot?: bool,
-     *     Domain?: string,
-     *     DomainIAMRoleName?: string,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration,
-     *     NetworkType?: string,
-     *     ManageMasterUserPassword?: bool,
-     *     MasterUserSecretKmsKeyId?: string,
-     *     StorageType?: string,
-     *     EngineLifecycleSupport?: string
+     *     BacktrackWindow?: int|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     DeletionProtection?: bool|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     Domain?: string|null,
+     *     DomainIAMRoleName?: string|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
+     *     NetworkType?: string|null,
+     *     ManageMasterUserPassword?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null,
+     *     StorageType?: string|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

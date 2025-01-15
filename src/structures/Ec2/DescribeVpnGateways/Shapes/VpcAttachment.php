@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpnGateways\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpcId
- * @property 'attaching'|'attached'|'detaching'|'detached' $State
+ * @property string|null $VpcId
+ * @property 'attaching'|'attached'|'detaching'|'detached'|null $State
  */
 class VpcAttachment extends Shape
 {
     /**
      * @param array{
-     *     VpcId?: string,
-     *     State?: 'attaching'|'attached'|'detaching'|'detached'
+     *     VpcId?: string|null,
+     *     State?: 'attaching'|'attached'|'detaching'|'detached'|null
      * } $args
      */
     public function __construct(array $args = [])

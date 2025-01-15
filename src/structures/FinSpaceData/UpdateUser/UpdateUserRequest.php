@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $userId
- * @property 'SUPER_USER'|'APP_USER' $type
- * @property string $firstName
- * @property string $lastName
- * @property 'ENABLED'|'DISABLED' $apiAccess
- * @property string $apiAccessPrincipalArn
- * @property string $clientToken
+ * @property 'SUPER_USER'|'APP_USER'|null $type
+ * @property string|null $firstName
+ * @property string|null $lastName
+ * @property 'ENABLED'|'DISABLED'|null $apiAccess
+ * @property string|null $apiAccessPrincipalArn
+ * @property string|null $clientToken
  */
 class UpdateUserRequest extends Request
 {
     /**
      * @param array{
      *     userId: string,
-     *     type?: 'SUPER_USER'|'APP_USER',
-     *     firstName?: string,
-     *     lastName?: string,
-     *     apiAccess?: 'ENABLED'|'DISABLED',
-     *     apiAccessPrincipalArn?: string,
-     *     clientToken?: string
+     *     type?: 'SUPER_USER'|'APP_USER'|null,
+     *     firstName?: string|null,
+     *     lastName?: string|null,
+     *     apiAccess?: 'ENABLED'|'DISABLED'|null,
+     *     apiAccessPrincipalArn?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

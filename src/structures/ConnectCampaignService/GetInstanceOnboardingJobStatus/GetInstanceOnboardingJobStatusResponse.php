@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\GetInstanceOnboardingJob
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\InstanceOnboardingJobStatus $connectInstanceOnboardingJobStatus
+ * @property Shapes\InstanceOnboardingJobStatus|null $connectInstanceOnboardingJobStatus
  */
 class GetInstanceOnboardingJobStatusResponse extends Response
 {

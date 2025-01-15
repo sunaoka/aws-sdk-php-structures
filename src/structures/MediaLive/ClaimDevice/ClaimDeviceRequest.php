@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\ClaimDevice;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Id
+ * @property string|null $Id
  */
 class ClaimDeviceRequest extends Request
 {
     /**
-     * @param array{Id?: string} $args
+     * @param array{Id?: string|null} $args
      */
     public function __construct(array $args = [])
     {

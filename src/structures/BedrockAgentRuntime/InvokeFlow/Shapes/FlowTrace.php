@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FlowTraceConditionNodeResultEvent $conditionNodeResultTrace
- * @property FlowTraceNodeInputEvent $nodeInputTrace
- * @property FlowTraceNodeOutputEvent $nodeOutputTrace
+ * @property FlowTraceConditionNodeResultEvent|null $conditionNodeResultTrace
+ * @property FlowTraceNodeInputEvent|null $nodeInputTrace
+ * @property FlowTraceNodeOutputEvent|null $nodeOutputTrace
  */
 class FlowTrace extends Shape
 {
     /**
      * @param array{
-     *     conditionNodeResultTrace?: FlowTraceConditionNodeResultEvent,
-     *     nodeInputTrace?: FlowTraceNodeInputEvent,
-     *     nodeOutputTrace?: FlowTraceNodeOutputEvent
+     *     conditionNodeResultTrace?: FlowTraceConditionNodeResultEvent|null,
+     *     nodeInputTrace?: FlowTraceNodeInputEvent|null,
+     *     nodeOutputTrace?: FlowTraceNodeOutputEvent|null
      * } $args
      */
     public function __construct(array $args = [])

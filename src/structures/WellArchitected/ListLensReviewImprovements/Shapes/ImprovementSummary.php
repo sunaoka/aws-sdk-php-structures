@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListLensReviewImprovements\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QuestionId
- * @property string $PillarId
- * @property string $QuestionTitle
- * @property 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE' $Risk
- * @property string $ImprovementPlanUrl
- * @property list<ChoiceImprovementPlan> $ImprovementPlans
- * @property JiraConfiguration $JiraConfiguration
+ * @property string|null $QuestionId
+ * @property string|null $PillarId
+ * @property string|null $QuestionTitle
+ * @property 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null $Risk
+ * @property string|null $ImprovementPlanUrl
+ * @property list<ChoiceImprovementPlan>|null $ImprovementPlans
+ * @property JiraConfiguration|null $JiraConfiguration
  */
 class ImprovementSummary extends Shape
 {
     /**
      * @param array{
-     *     QuestionId?: string,
-     *     PillarId?: string,
-     *     QuestionTitle?: string,
-     *     Risk?: 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE',
-     *     ImprovementPlanUrl?: string,
-     *     ImprovementPlans?: list<ChoiceImprovementPlan>,
-     *     JiraConfiguration?: JiraConfiguration
+     *     QuestionId?: string|null,
+     *     PillarId?: string|null,
+     *     QuestionTitle?: string|null,
+     *     Risk?: 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null,
+     *     ImprovementPlanUrl?: string|null,
+     *     ImprovementPlans?: list<ChoiceImprovementPlan>|null,
+     *     JiraConfiguration?: JiraConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

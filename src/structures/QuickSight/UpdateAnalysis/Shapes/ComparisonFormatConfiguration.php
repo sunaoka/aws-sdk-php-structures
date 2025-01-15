@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NumberDisplayFormatConfiguration $NumberDisplayFormatConfiguration
- * @property PercentageDisplayFormatConfiguration $PercentageDisplayFormatConfiguration
+ * @property NumberDisplayFormatConfiguration|null $NumberDisplayFormatConfiguration
+ * @property PercentageDisplayFormatConfiguration|null $PercentageDisplayFormatConfiguration
  */
 class ComparisonFormatConfiguration extends Shape
 {
     /**
      * @param array{
-     *     NumberDisplayFormatConfiguration?: NumberDisplayFormatConfiguration,
-     *     PercentageDisplayFormatConfiguration?: PercentageDisplayFormatConfiguration
+     *     NumberDisplayFormatConfiguration?: NumberDisplayFormatConfiguration|null,
+     *     PercentageDisplayFormatConfiguration?: PercentageDisplayFormatConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

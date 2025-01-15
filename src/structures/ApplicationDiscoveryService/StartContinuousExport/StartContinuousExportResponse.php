@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StartContinuousExpo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $exportId
- * @property string $s3Bucket
- * @property \Aws\Api\DateTimeResult $startTime
- * @property 'AGENT' $dataSource
- * @property array<string, string> $schemaStorageConfig
+ * @property string|null $exportId
+ * @property string|null $s3Bucket
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property 'AGENT'|null $dataSource
+ * @property array<string, string>|null $schemaStorageConfig
  */
 class StartContinuousExportResponse extends Response
 {

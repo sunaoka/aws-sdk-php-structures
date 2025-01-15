@@ -5,69 +5,69 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetSavingsPlanPurchaseRecommendati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PAYER'|'LINKED' $AccountScope
- * @property 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS' $LookbackPeriodInDays
- * @property 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP' $SavingsPlansType
- * @property 'ONE_YEAR'|'THREE_YEARS' $TermInYears
- * @property 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION' $PaymentOption
- * @property string $AccountId
- * @property string $CurrencyCode
- * @property string $InstanceFamily
- * @property string $Region
- * @property string $OfferingId
- * @property string $GenerationTimestamp
- * @property string $LatestUsageTimestamp
- * @property string $CurrentAverageHourlyOnDemandSpend
- * @property string $CurrentMaximumHourlyOnDemandSpend
- * @property string $CurrentMinimumHourlyOnDemandSpend
- * @property string $EstimatedAverageUtilization
- * @property string $EstimatedMonthlySavingsAmount
- * @property string $EstimatedOnDemandCost
- * @property string $EstimatedOnDemandCostWithCurrentCommitment
- * @property string $EstimatedROI
- * @property string $EstimatedSPCost
- * @property string $EstimatedSavingsAmount
- * @property string $EstimatedSavingsPercentage
- * @property string $ExistingHourlyCommitment
- * @property string $HourlyCommitmentToPurchase
- * @property string $UpfrontCost
- * @property string $CurrentAverageCoverage
- * @property string $EstimatedAverageCoverage
- * @property list<RecommendationDetailHourlyMetrics> $MetricsOverLookbackPeriod
+ * @property 'PAYER'|'LINKED'|null $AccountScope
+ * @property 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS'|null $LookbackPeriodInDays
+ * @property 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP'|null $SavingsPlansType
+ * @property 'ONE_YEAR'|'THREE_YEARS'|null $TermInYears
+ * @property 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION'|null $PaymentOption
+ * @property string|null $AccountId
+ * @property string|null $CurrencyCode
+ * @property string|null $InstanceFamily
+ * @property string|null $Region
+ * @property string|null $OfferingId
+ * @property string|null $GenerationTimestamp
+ * @property string|null $LatestUsageTimestamp
+ * @property string|null $CurrentAverageHourlyOnDemandSpend
+ * @property string|null $CurrentMaximumHourlyOnDemandSpend
+ * @property string|null $CurrentMinimumHourlyOnDemandSpend
+ * @property string|null $EstimatedAverageUtilization
+ * @property string|null $EstimatedMonthlySavingsAmount
+ * @property string|null $EstimatedOnDemandCost
+ * @property string|null $EstimatedOnDemandCostWithCurrentCommitment
+ * @property string|null $EstimatedROI
+ * @property string|null $EstimatedSPCost
+ * @property string|null $EstimatedSavingsAmount
+ * @property string|null $EstimatedSavingsPercentage
+ * @property string|null $ExistingHourlyCommitment
+ * @property string|null $HourlyCommitmentToPurchase
+ * @property string|null $UpfrontCost
+ * @property string|null $CurrentAverageCoverage
+ * @property string|null $EstimatedAverageCoverage
+ * @property list<RecommendationDetailHourlyMetrics>|null $MetricsOverLookbackPeriod
  */
 class RecommendationDetailData extends Shape
 {
     /**
      * @param array{
-     *     AccountScope?: 'PAYER'|'LINKED',
-     *     LookbackPeriodInDays?: 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS',
-     *     SavingsPlansType?: 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP',
-     *     TermInYears?: 'ONE_YEAR'|'THREE_YEARS',
-     *     PaymentOption?: 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION',
-     *     AccountId?: string,
-     *     CurrencyCode?: string,
-     *     InstanceFamily?: string,
-     *     Region?: string,
-     *     OfferingId?: string,
-     *     GenerationTimestamp?: string,
-     *     LatestUsageTimestamp?: string,
-     *     CurrentAverageHourlyOnDemandSpend?: string,
-     *     CurrentMaximumHourlyOnDemandSpend?: string,
-     *     CurrentMinimumHourlyOnDemandSpend?: string,
-     *     EstimatedAverageUtilization?: string,
-     *     EstimatedMonthlySavingsAmount?: string,
-     *     EstimatedOnDemandCost?: string,
-     *     EstimatedOnDemandCostWithCurrentCommitment?: string,
-     *     EstimatedROI?: string,
-     *     EstimatedSPCost?: string,
-     *     EstimatedSavingsAmount?: string,
-     *     EstimatedSavingsPercentage?: string,
-     *     ExistingHourlyCommitment?: string,
-     *     HourlyCommitmentToPurchase?: string,
-     *     UpfrontCost?: string,
-     *     CurrentAverageCoverage?: string,
-     *     EstimatedAverageCoverage?: string,
-     *     MetricsOverLookbackPeriod?: list<RecommendationDetailHourlyMetrics>
+     *     AccountScope?: 'PAYER'|'LINKED'|null,
+     *     LookbackPeriodInDays?: 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS'|null,
+     *     SavingsPlansType?: 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP'|null,
+     *     TermInYears?: 'ONE_YEAR'|'THREE_YEARS'|null,
+     *     PaymentOption?: 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION'|null,
+     *     AccountId?: string|null,
+     *     CurrencyCode?: string|null,
+     *     InstanceFamily?: string|null,
+     *     Region?: string|null,
+     *     OfferingId?: string|null,
+     *     GenerationTimestamp?: string|null,
+     *     LatestUsageTimestamp?: string|null,
+     *     CurrentAverageHourlyOnDemandSpend?: string|null,
+     *     CurrentMaximumHourlyOnDemandSpend?: string|null,
+     *     CurrentMinimumHourlyOnDemandSpend?: string|null,
+     *     EstimatedAverageUtilization?: string|null,
+     *     EstimatedMonthlySavingsAmount?: string|null,
+     *     EstimatedOnDemandCost?: string|null,
+     *     EstimatedOnDemandCostWithCurrentCommitment?: string|null,
+     *     EstimatedROI?: string|null,
+     *     EstimatedSPCost?: string|null,
+     *     EstimatedSavingsAmount?: string|null,
+     *     EstimatedSavingsPercentage?: string|null,
+     *     ExistingHourlyCommitment?: string|null,
+     *     HourlyCommitmentToPurchase?: string|null,
+     *     UpfrontCost?: string|null,
+     *     CurrentAverageCoverage?: string|null,
+     *     EstimatedAverageCoverage?: string|null,
+     *     MetricsOverLookbackPeriod?: list<RecommendationDetailHourlyMetrics>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property list<Shapes\DomainNameConfiguration> $DomainNameConfigurations
- * @property Shapes\MutualTlsAuthenticationInput $MutualTlsAuthentication
- * @property array<string, string> $Tags
+ * @property list<Shapes\DomainNameConfiguration>|null $DomainNameConfigurations
+ * @property Shapes\MutualTlsAuthenticationInput|null $MutualTlsAuthentication
+ * @property array<string, string>|null $Tags
  */
 class CreateDomainNameRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     DomainNameConfigurations?: list<Shapes\DomainNameConfiguration>,
-     *     MutualTlsAuthentication?: Shapes\MutualTlsAuthenticationInput,
-     *     Tags?: array<string, string>
+     *     DomainNameConfigurations?: list<Shapes\DomainNameConfiguration>|null,
+     *     MutualTlsAuthentication?: Shapes\MutualTlsAuthenticationInput|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

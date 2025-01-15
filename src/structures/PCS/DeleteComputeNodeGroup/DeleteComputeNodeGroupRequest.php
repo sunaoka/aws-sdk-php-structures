@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterIdentifier
  * @property string $computeNodeGroupIdentifier
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteComputeNodeGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteComputeNodeGroupRequest extends Request
      * @param array{
      *     clusterIdentifier: string,
      *     computeNodeGroupIdentifier: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

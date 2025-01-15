@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<0, max> $schemaVersion
- * @property string $agentId
- * @property string $autoScalingGroup
- * @property string $amiId
- * @property string $hostname
- * @property list<string> $ipv4Addresses
- * @property list<Tag> $tags
- * @property list<NetworkInterface> $networkInterfaces
+ * @property string|null $agentId
+ * @property string|null $autoScalingGroup
+ * @property string|null $amiId
+ * @property string|null $hostname
+ * @property list<string>|null $ipv4Addresses
+ * @property list<Tag>|null $tags
+ * @property list<NetworkInterface>|null $networkInterfaces
  */
 class AssetAttributes extends Shape
 {
     /**
      * @param array{
      *     schemaVersion: int<0, max>,
-     *     agentId?: string,
-     *     autoScalingGroup?: string,
-     *     amiId?: string,
-     *     hostname?: string,
-     *     ipv4Addresses?: list<string>,
-     *     tags?: list<Tag>,
-     *     networkInterfaces?: list<NetworkInterface>
+     *     agentId?: string|null,
+     *     autoScalingGroup?: string|null,
+     *     amiId?: string|null,
+     *     hostname?: string|null,
+     *     ipv4Addresses?: list<string>|null,
+     *     tags?: list<Tag>|null,
+     *     networkInterfaces?: list<NetworkInterface>|null
      * } $args
      */
     public function __construct(array $args)

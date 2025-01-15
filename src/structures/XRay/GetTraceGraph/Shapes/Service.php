@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\XRay\GetTraceGraph\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ReferenceId
- * @property string $Name
- * @property list<string> $Names
- * @property bool $Root
- * @property string $AccountId
- * @property string $Type
- * @property string $State
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property list<Edge> $Edges
- * @property ServiceStatistics $SummaryStatistics
- * @property list<HistogramEntry> $DurationHistogram
- * @property list<HistogramEntry> $ResponseTimeHistogram
+ * @property int|null $ReferenceId
+ * @property string|null $Name
+ * @property list<string>|null $Names
+ * @property bool|null $Root
+ * @property string|null $AccountId
+ * @property string|null $Type
+ * @property string|null $State
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property list<Edge>|null $Edges
+ * @property ServiceStatistics|null $SummaryStatistics
+ * @property list<HistogramEntry>|null $DurationHistogram
+ * @property list<HistogramEntry>|null $ResponseTimeHistogram
  */
 class Service extends Shape
 {
     /**
      * @param array{
-     *     ReferenceId?: int,
-     *     Name?: string,
-     *     Names?: list<string>,
-     *     Root?: bool,
-     *     AccountId?: string,
-     *     Type?: string,
-     *     State?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Edges?: list<Edge>,
-     *     SummaryStatistics?: ServiceStatistics,
-     *     DurationHistogram?: list<HistogramEntry>,
-     *     ResponseTimeHistogram?: list<HistogramEntry>
+     *     ReferenceId?: int|null,
+     *     Name?: string|null,
+     *     Names?: list<string>|null,
+     *     Root?: bool|null,
+     *     AccountId?: string|null,
+     *     Type?: string|null,
+     *     State?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Edges?: list<Edge>|null,
+     *     SummaryStatistics?: ServiceStatistics|null,
+     *     DurationHistogram?: list<HistogramEntry>|null,
+     *     ResponseTimeHistogram?: list<HistogramEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FMS\PutPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NetworkFirewallPolicy $NetworkFirewallPolicy
- * @property ThirdPartyFirewallPolicy $ThirdPartyFirewallPolicy
- * @property NetworkAclCommonPolicy $NetworkAclCommonPolicy
+ * @property NetworkFirewallPolicy|null $NetworkFirewallPolicy
+ * @property ThirdPartyFirewallPolicy|null $ThirdPartyFirewallPolicy
+ * @property NetworkAclCommonPolicy|null $NetworkAclCommonPolicy
  */
 class PolicyOption extends Shape
 {
     /**
      * @param array{
-     *     NetworkFirewallPolicy?: NetworkFirewallPolicy,
-     *     ThirdPartyFirewallPolicy?: ThirdPartyFirewallPolicy,
-     *     NetworkAclCommonPolicy?: NetworkAclCommonPolicy
+     *     NetworkFirewallPolicy?: NetworkFirewallPolicy|null,
+     *     ThirdPartyFirewallPolicy?: ThirdPartyFirewallPolicy|null,
+     *     NetworkAclCommonPolicy?: NetworkAclCommonPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

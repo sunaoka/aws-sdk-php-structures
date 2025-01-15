@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $environmentId
- * @property bool $glueLineageSyncEnabled
+ * @property string|null $environmentId
+ * @property bool|null $glueLineageSyncEnabled
  */
 class IamPropertiesOutput extends Shape
 {
     /**
      * @param array{
-     *     environmentId?: string,
-     *     glueLineageSyncEnabled?: bool
+     *     environmentId?: string|null,
+     *     glueLineageSyncEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

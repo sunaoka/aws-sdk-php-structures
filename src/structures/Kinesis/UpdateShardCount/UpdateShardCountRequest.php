@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Kinesis\UpdateShardCount;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
+ * @property string|null $StreamName
  * @property int<1, max> $TargetShardCount
  * @property 'UNIFORM_SCALING' $ScalingType
- * @property string $StreamARN
+ * @property string|null $StreamARN
  */
 class UpdateShardCountRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
+     *     StreamName?: string|null,
      *     TargetShardCount: int<1, max>,
      *     ScalingType: 'UNIFORM_SCALING',
-     *     StreamARN?: string
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args)

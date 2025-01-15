@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\ListAnomalyGroupRelatedMetrics\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricName
- * @property string $AnomalyGroupId
- * @property 'CAUSE_OF_INPUT_ANOMALY_GROUP'|'EFFECT_OF_INPUT_ANOMALY_GROUP' $RelationshipType
- * @property double $ContributionPercentage
+ * @property string|null $MetricName
+ * @property string|null $AnomalyGroupId
+ * @property 'CAUSE_OF_INPUT_ANOMALY_GROUP'|'EFFECT_OF_INPUT_ANOMALY_GROUP'|null $RelationshipType
+ * @property double|null $ContributionPercentage
  */
 class InterMetricImpactDetails extends Shape
 {
     /**
      * @param array{
-     *     MetricName?: string,
-     *     AnomalyGroupId?: string,
-     *     RelationshipType?: 'CAUSE_OF_INPUT_ANOMALY_GROUP'|'EFFECT_OF_INPUT_ANOMALY_GROUP',
-     *     ContributionPercentage?: double
+     *     MetricName?: string|null,
+     *     AnomalyGroupId?: string|null,
+     *     RelationshipType?: 'CAUSE_OF_INPUT_ANOMALY_GROUP'|'EFFECT_OF_INPUT_ANOMALY_GROUP'|null,
+     *     ContributionPercentage?: double|null
      * } $args
      */
     public function __construct(array $args = [])

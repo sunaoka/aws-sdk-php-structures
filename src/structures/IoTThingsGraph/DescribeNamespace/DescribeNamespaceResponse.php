@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\IoTThingsGraph\DescribeNamespace;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $namespaceArn
- * @property string $namespaceName
- * @property string $trackingNamespaceName
- * @property int $trackingNamespaceVersion
- * @property int $namespaceVersion
+ * @property string|null $namespaceArn
+ * @property string|null $namespaceName
+ * @property string|null $trackingNamespaceName
+ * @property int|null $trackingNamespaceVersion
+ * @property int|null $namespaceVersion
  */
 class DescribeNamespaceResponse extends Response
 {

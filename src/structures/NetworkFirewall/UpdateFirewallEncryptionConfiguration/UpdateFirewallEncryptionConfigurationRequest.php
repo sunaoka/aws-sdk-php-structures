@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateFirewallEncryptionConfigu
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UpdateToken
- * @property string $FirewallArn
- * @property string $FirewallName
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
+ * @property string|null $UpdateToken
+ * @property string|null $FirewallArn
+ * @property string|null $FirewallName
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class UpdateFirewallEncryptionConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     UpdateToken?: string,
-     *     FirewallArn?: string,
-     *     FirewallName?: string,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration
+     *     UpdateToken?: string|null,
+     *     FirewallArn?: string|null,
+     *     FirewallName?: string|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

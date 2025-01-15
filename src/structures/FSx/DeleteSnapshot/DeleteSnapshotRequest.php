@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FSx\DeleteSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property string $SnapshotId
  */
 class DeleteSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     SnapshotId: string
      * } $args
      */

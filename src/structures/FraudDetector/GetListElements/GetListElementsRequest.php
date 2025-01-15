@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $nextToken
- * @property int<500, 5000> $maxResults
+ * @property string|null $nextToken
+ * @property int<500, 5000>|null $maxResults
  */
 class GetListElementsRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     nextToken?: string,
-     *     maxResults?: int<500, 5000>
+     *     nextToken?: string|null,
+     *     maxResults?: int<500, 5000>|null
      * } $args
      */
     public function __construct(array $args)

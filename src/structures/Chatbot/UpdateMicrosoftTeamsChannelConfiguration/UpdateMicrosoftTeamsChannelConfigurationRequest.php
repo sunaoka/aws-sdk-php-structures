@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ChatConfigurationArn
  * @property string $ChannelId
- * @property string $ChannelName
- * @property list<string> $SnsTopicArns
- * @property string $IamRoleArn
- * @property string $LoggingLevel
- * @property list<string> $GuardrailPolicyArns
- * @property bool $UserAuthorizationRequired
+ * @property string|null $ChannelName
+ * @property list<string>|null $SnsTopicArns
+ * @property string|null $IamRoleArn
+ * @property string|null $LoggingLevel
+ * @property list<string>|null $GuardrailPolicyArns
+ * @property bool|null $UserAuthorizationRequired
  */
 class UpdateMicrosoftTeamsChannelConfigurationRequest extends Request
 {
@@ -20,12 +20,12 @@ class UpdateMicrosoftTeamsChannelConfigurationRequest extends Request
      * @param array{
      *     ChatConfigurationArn: string,
      *     ChannelId: string,
-     *     ChannelName?: string,
-     *     SnsTopicArns?: list<string>,
-     *     IamRoleArn?: string,
-     *     LoggingLevel?: string,
-     *     GuardrailPolicyArns?: list<string>,
-     *     UserAuthorizationRequired?: bool
+     *     ChannelName?: string|null,
+     *     SnsTopicArns?: list<string>|null,
+     *     IamRoleArn?: string|null,
+     *     LoggingLevel?: string|null,
+     *     GuardrailPolicyArns?: list<string>|null,
+     *     UserAuthorizationRequired?: bool|null
      * } $args
      */
     public function __construct(array $args)

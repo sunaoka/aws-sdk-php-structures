@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListInputs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Input> $Inputs
- * @property string $NextToken
+ * @property list<Shapes\Input>|null $Inputs
+ * @property string|null $NextToken
  */
 class ListInputsResponse extends Response
 {

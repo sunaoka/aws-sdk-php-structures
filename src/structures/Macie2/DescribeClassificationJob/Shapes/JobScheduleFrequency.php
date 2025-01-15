@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Macie2\DescribeClassificationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DailySchedule $dailySchedule
- * @property MonthlySchedule $monthlySchedule
- * @property WeeklySchedule $weeklySchedule
+ * @property DailySchedule|null $dailySchedule
+ * @property MonthlySchedule|null $monthlySchedule
+ * @property WeeklySchedule|null $weeklySchedule
  */
 class JobScheduleFrequency extends Shape
 {
     /**
      * @param array{
-     *     dailySchedule?: DailySchedule,
-     *     monthlySchedule?: MonthlySchedule,
-     *     weeklySchedule?: WeeklySchedule
+     *     dailySchedule?: DailySchedule|null,
+     *     monthlySchedule?: MonthlySchedule|null,
+     *     weeklySchedule?: WeeklySchedule|null
      * } $args
      */
     public function __construct(array $args = [])

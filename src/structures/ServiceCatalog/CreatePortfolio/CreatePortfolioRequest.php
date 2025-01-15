@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\CreatePortfolio;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $DisplayName
- * @property string $Description
+ * @property string|null $Description
  * @property string $ProviderName
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  * @property string $IdempotencyToken
  */
 class CreatePortfolioRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     DisplayName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     ProviderName: string,
-     *     Tags?: list<Shapes\Tag>,
+     *     Tags?: list<Shapes\Tag>|null,
      *     IdempotencyToken: string
      * } $args
      */

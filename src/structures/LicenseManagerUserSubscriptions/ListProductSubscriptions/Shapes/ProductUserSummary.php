@@ -5,28 +5,28 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListProductSubs
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Domain
+ * @property string|null $Domain
  * @property IdentityProvider $IdentityProvider
  * @property string $Product
- * @property string $ProductUserArn
+ * @property string|null $ProductUserArn
  * @property string $Status
- * @property string $StatusMessage
- * @property string $SubscriptionEndDate
- * @property string $SubscriptionStartDate
+ * @property string|null $StatusMessage
+ * @property string|null $SubscriptionEndDate
+ * @property string|null $SubscriptionStartDate
  * @property string $Username
  */
 class ProductUserSummary extends Shape
 {
     /**
      * @param array{
-     *     Domain?: string,
+     *     Domain?: string|null,
      *     IdentityProvider: IdentityProvider,
      *     Product: string,
-     *     ProductUserArn?: string,
+     *     ProductUserArn?: string|null,
      *     Status: string,
-     *     StatusMessage?: string,
-     *     SubscriptionEndDate?: string,
-     *     SubscriptionStartDate?: string,
+     *     StatusMessage?: string|null,
+     *     SubscriptionEndDate?: string|null,
+     *     SubscriptionStartDate?: string|null,
      *     Username: string
      * } $args
      */

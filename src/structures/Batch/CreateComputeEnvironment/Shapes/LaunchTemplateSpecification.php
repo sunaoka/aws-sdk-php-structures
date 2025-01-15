@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Batch\CreateComputeEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $launchTemplateId
- * @property string $launchTemplateName
- * @property string $version
- * @property list<LaunchTemplateSpecificationOverride> $overrides
+ * @property string|null $launchTemplateId
+ * @property string|null $launchTemplateName
+ * @property string|null $version
+ * @property list<LaunchTemplateSpecificationOverride>|null $overrides
  */
 class LaunchTemplateSpecification extends Shape
 {
     /**
      * @param array{
-     *     launchTemplateId?: string,
-     *     launchTemplateName?: string,
-     *     version?: string,
-     *     overrides?: list<LaunchTemplateSpecificationOverride>
+     *     launchTemplateId?: string|null,
+     *     launchTemplateName?: string|null,
+     *     version?: string|null,
+     *     overrides?: list<LaunchTemplateSpecificationOverride>|null
      * } $args
      */
     public function __construct(array $args = [])

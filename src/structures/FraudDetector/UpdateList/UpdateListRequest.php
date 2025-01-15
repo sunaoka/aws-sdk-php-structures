@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property list<string> $elements
- * @property string $description
- * @property 'REPLACE'|'APPEND'|'REMOVE' $updateMode
- * @property string $variableType
+ * @property list<string>|null $elements
+ * @property string|null $description
+ * @property 'REPLACE'|'APPEND'|'REMOVE'|null $updateMode
+ * @property string|null $variableType
  */
 class UpdateListRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     elements?: list<string>,
-     *     description?: string,
-     *     updateMode?: 'REPLACE'|'APPEND'|'REMOVE',
-     *     variableType?: string
+     *     elements?: list<string>|null,
+     *     description?: string|null,
+     *     updateMode?: 'REPLACE'|'APPEND'|'REMOVE'|null,
+     *     variableType?: string|null
      * } $args
      */
     public function __construct(array $args)

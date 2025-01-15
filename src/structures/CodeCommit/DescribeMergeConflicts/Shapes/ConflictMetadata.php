@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\CodeCommit\DescribeMergeConflicts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $filePath
- * @property FileSizes $fileSizes
- * @property FileModes $fileModes
- * @property ObjectTypes $objectTypes
- * @property int $numberOfConflicts
- * @property IsBinaryFile $isBinaryFile
- * @property bool $contentConflict
- * @property bool $fileModeConflict
- * @property bool $objectTypeConflict
- * @property MergeOperations $mergeOperations
+ * @property string|null $filePath
+ * @property FileSizes|null $fileSizes
+ * @property FileModes|null $fileModes
+ * @property ObjectTypes|null $objectTypes
+ * @property int|null $numberOfConflicts
+ * @property IsBinaryFile|null $isBinaryFile
+ * @property bool|null $contentConflict
+ * @property bool|null $fileModeConflict
+ * @property bool|null $objectTypeConflict
+ * @property MergeOperations|null $mergeOperations
  */
 class ConflictMetadata extends Shape
 {
     /**
      * @param array{
-     *     filePath?: string,
-     *     fileSizes?: FileSizes,
-     *     fileModes?: FileModes,
-     *     objectTypes?: ObjectTypes,
-     *     numberOfConflicts?: int,
-     *     isBinaryFile?: IsBinaryFile,
-     *     contentConflict?: bool,
-     *     fileModeConflict?: bool,
-     *     objectTypeConflict?: bool,
-     *     mergeOperations?: MergeOperations
+     *     filePath?: string|null,
+     *     fileSizes?: FileSizes|null,
+     *     fileModes?: FileModes|null,
+     *     objectTypes?: ObjectTypes|null,
+     *     numberOfConflicts?: int|null,
+     *     isBinaryFile?: IsBinaryFile|null,
+     *     contentConflict?: bool|null,
+     *     fileModeConflict?: bool|null,
+     *     objectTypeConflict?: bool|null,
+     *     mergeOperations?: MergeOperations|null
      * } $args
      */
     public function __construct(array $args = [])

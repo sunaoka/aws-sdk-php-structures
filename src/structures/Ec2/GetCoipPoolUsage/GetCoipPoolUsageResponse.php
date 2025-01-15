@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Ec2\GetCoipPoolUsage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CoipPoolId
- * @property list<Shapes\CoipAddressUsage> $CoipAddressUsages
- * @property string $LocalGatewayRouteTableId
- * @property string $NextToken
+ * @property string|null $CoipPoolId
+ * @property list<Shapes\CoipAddressUsage>|null $CoipAddressUsages
+ * @property string|null $LocalGatewayRouteTableId
+ * @property string|null $NextToken
  */
 class GetCoipPoolUsageResponse extends Response
 {

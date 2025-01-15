@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListCustomLineItems;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $BillingPeriod
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property Shapes\ListCustomLineItemsFilter $Filters
+ * @property string|null $BillingPeriod
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property Shapes\ListCustomLineItemsFilter|null $Filters
  */
 class ListCustomLineItemsRequest extends Request
 {
     /**
      * @param array{
-     *     BillingPeriod?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     Filters?: Shapes\ListCustomLineItemsFilter
+     *     BillingPeriod?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     Filters?: Shapes\ListCustomLineItemsFilter|null
      * } $args
      */
     public function __construct(array $args = [])

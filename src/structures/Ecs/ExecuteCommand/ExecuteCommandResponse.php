@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ecs\ExecuteCommand;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $clusterArn
- * @property string $containerArn
- * @property string $containerName
- * @property bool $interactive
- * @property Shapes\Session $session
- * @property string $taskArn
+ * @property string|null $clusterArn
+ * @property string|null $containerArn
+ * @property string|null $containerName
+ * @property bool|null $interactive
+ * @property Shapes\Session|null $session
+ * @property string|null $taskArn
  */
 class ExecuteCommandResponse extends Response
 {

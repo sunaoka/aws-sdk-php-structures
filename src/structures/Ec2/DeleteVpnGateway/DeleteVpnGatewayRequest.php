@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VpnGatewayId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteVpnGatewayRequest extends Request
 {
     /**
      * @param array{
      *     VpnGatewayId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

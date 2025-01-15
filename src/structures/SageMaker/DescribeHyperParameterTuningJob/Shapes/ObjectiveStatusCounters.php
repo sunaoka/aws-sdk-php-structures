@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $Succeeded
- * @property int<0, max> $Pending
- * @property int<0, max> $Failed
+ * @property int<0, max>|null $Succeeded
+ * @property int<0, max>|null $Pending
+ * @property int<0, max>|null $Failed
  */
 class ObjectiveStatusCounters extends Shape
 {
     /**
      * @param array{
-     *     Succeeded?: int<0, max>,
-     *     Pending?: int<0, max>,
-     *     Failed?: int<0, max>
+     *     Succeeded?: int<0, max>|null,
+     *     Pending?: int<0, max>|null,
+     *     Failed?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

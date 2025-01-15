@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OrganizationId
- * @property string $UserId
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $UserId
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListPersonalAccessTokensRequest extends Request
 {
     /**
      * @param array{
      *     OrganizationId: string,
-     *     UserId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     UserId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\ListReplays\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplayName
- * @property string $EventSourceArn
- * @property 'STARTING'|'RUNNING'|'CANCELLING'|'COMPLETED'|'CANCELLED'|'FAILED' $State
- * @property string $StateReason
- * @property \Aws\Api\DateTimeResult $EventStartTime
- * @property \Aws\Api\DateTimeResult $EventEndTime
- * @property \Aws\Api\DateTimeResult $EventLastReplayedTime
- * @property \Aws\Api\DateTimeResult $ReplayStartTime
- * @property \Aws\Api\DateTimeResult $ReplayEndTime
+ * @property string|null $ReplayName
+ * @property string|null $EventSourceArn
+ * @property 'STARTING'|'RUNNING'|'CANCELLING'|'COMPLETED'|'CANCELLED'|'FAILED'|null $State
+ * @property string|null $StateReason
+ * @property \Aws\Api\DateTimeResult|null $EventStartTime
+ * @property \Aws\Api\DateTimeResult|null $EventEndTime
+ * @property \Aws\Api\DateTimeResult|null $EventLastReplayedTime
+ * @property \Aws\Api\DateTimeResult|null $ReplayStartTime
+ * @property \Aws\Api\DateTimeResult|null $ReplayEndTime
  */
 class Replay extends Shape
 {
     /**
      * @param array{
-     *     ReplayName?: string,
-     *     EventSourceArn?: string,
-     *     State?: 'STARTING'|'RUNNING'|'CANCELLING'|'COMPLETED'|'CANCELLED'|'FAILED',
-     *     StateReason?: string,
-     *     EventStartTime?: \Aws\Api\DateTimeResult,
-     *     EventEndTime?: \Aws\Api\DateTimeResult,
-     *     EventLastReplayedTime?: \Aws\Api\DateTimeResult,
-     *     ReplayStartTime?: \Aws\Api\DateTimeResult,
-     *     ReplayEndTime?: \Aws\Api\DateTimeResult
+     *     ReplayName?: string|null,
+     *     EventSourceArn?: string|null,
+     *     State?: 'STARTING'|'RUNNING'|'CANCELLING'|'COMPLETED'|'CANCELLED'|'FAILED'|null,
+     *     StateReason?: string|null,
+     *     EventStartTime?: \Aws\Api\DateTimeResult|null,
+     *     EventEndTime?: \Aws\Api\DateTimeResult|null,
+     *     EventLastReplayedTime?: \Aws\Api\DateTimeResult|null,
+     *     ReplayStartTime?: \Aws\Api\DateTimeResult|null,
+     *     ReplayEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Control\GetBucketReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplicaKmsKeyID
+ * @property string|null $ReplicaKmsKeyID
  */
 class EncryptionConfiguration extends Shape
 {
     /**
-     * @param array{ReplicaKmsKeyID?: string} $args
+     * @param array{ReplicaKmsKeyID?: string|null} $args
      */
     public function __construct(array $args = [])
     {

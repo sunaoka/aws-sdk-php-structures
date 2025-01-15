@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'FIXED_SIZE'|'NONE'|'HIERARCHICAL'|'SEMANTIC' $chunkingStrategy
- * @property FixedSizeChunkingConfiguration $fixedSizeChunkingConfiguration
- * @property HierarchicalChunkingConfiguration $hierarchicalChunkingConfiguration
- * @property SemanticChunkingConfiguration $semanticChunkingConfiguration
+ * @property FixedSizeChunkingConfiguration|null $fixedSizeChunkingConfiguration
+ * @property HierarchicalChunkingConfiguration|null $hierarchicalChunkingConfiguration
+ * @property SemanticChunkingConfiguration|null $semanticChunkingConfiguration
  */
 class ChunkingConfiguration extends Shape
 {
     /**
      * @param array{
      *     chunkingStrategy: 'FIXED_SIZE'|'NONE'|'HIERARCHICAL'|'SEMANTIC',
-     *     fixedSizeChunkingConfiguration?: FixedSizeChunkingConfiguration,
-     *     hierarchicalChunkingConfiguration?: HierarchicalChunkingConfiguration,
-     *     semanticChunkingConfiguration?: SemanticChunkingConfiguration
+     *     fixedSizeChunkingConfiguration?: FixedSizeChunkingConfiguration|null,
+     *     hierarchicalChunkingConfiguration?: HierarchicalChunkingConfiguration|null,
+     *     semanticChunkingConfiguration?: SemanticChunkingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

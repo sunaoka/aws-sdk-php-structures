@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceQuotas\ListServices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceCode
- * @property string $ServiceName
+ * @property string|null $ServiceCode
+ * @property string|null $ServiceName
  */
 class ServiceInfo extends Shape
 {
     /**
      * @param array{
-     *     ServiceCode?: string,
-     *     ServiceName?: string
+     *     ServiceCode?: string|null,
+     *     ServiceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

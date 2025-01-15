@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\CreateBackendAuth\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'REQUIRE_DIGIT'|'REQUIRE_LOWERCASE'|'REQUIRE_SYMBOL'|'REQUIRE_UPPERCASE'> $AdditionalConstraints
+ * @property list<'REQUIRE_DIGIT'|'REQUIRE_LOWERCASE'|'REQUIRE_SYMBOL'|'REQUIRE_UPPERCASE'>|null $AdditionalConstraints
  * @property double $MinimumLength
  */
 class CreateBackendAuthPasswordPolicyConfig extends Shape
 {
     /**
      * @param array{
-     *     AdditionalConstraints?: list<'REQUIRE_DIGIT'|'REQUIRE_LOWERCASE'|'REQUIRE_SYMBOL'|'REQUIRE_UPPERCASE'>,
+     *     AdditionalConstraints?: list<'REQUIRE_DIGIT'|'REQUIRE_LOWERCASE'|'REQUIRE_SYMBOL'|'REQUIRE_UPPERCASE'>|null,
      *     MinimumLength: double
      * } $args
      */

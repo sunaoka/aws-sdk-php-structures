@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListLensReviews\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LensAlias
- * @property string $LensArn
- * @property string $LensVersion
- * @property string $LensName
- * @property 'CURRENT'|'NOT_CURRENT'|'DEPRECATED'|'DELETED'|'UNSHARED' $LensStatus
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $RiskCounts
- * @property list<WorkloadProfile> $Profiles
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $PrioritizedRiskCounts
+ * @property string|null $LensAlias
+ * @property string|null $LensArn
+ * @property string|null $LensVersion
+ * @property string|null $LensName
+ * @property 'CURRENT'|'NOT_CURRENT'|'DEPRECATED'|'DELETED'|'UNSHARED'|null $LensStatus
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>|null $RiskCounts
+ * @property list<WorkloadProfile>|null $Profiles
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>|null $PrioritizedRiskCounts
  */
 class LensReviewSummary extends Shape
 {
     /**
      * @param array{
-     *     LensAlias?: string,
-     *     LensArn?: string,
-     *     LensVersion?: string,
-     *     LensName?: string,
-     *     LensStatus?: 'CURRENT'|'NOT_CURRENT'|'DEPRECATED'|'DELETED'|'UNSHARED',
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>,
-     *     Profiles?: list<WorkloadProfile>,
-     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>
+     *     LensAlias?: string|null,
+     *     LensArn?: string|null,
+     *     LensVersion?: string|null,
+     *     LensName?: string|null,
+     *     LensStatus?: 'CURRENT'|'NOT_CURRENT'|'DEPRECATED'|'DELETED'|'UNSHARED'|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>|null,
+     *     Profiles?: list<WorkloadProfile>|null,
+     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>|null
      * } $args
      */
     public function __construct(array $args = [])

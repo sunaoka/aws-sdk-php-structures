@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $accessPointArn
- * @property string $cpiSecretKey
- * @property string $cpiUserId
- * @property string $cpiUserPassword
- * @property string $cpiUsername
- * @property Shapes\Position $position
+ * @property string|null $cpiSecretKey
+ * @property string|null $cpiUserId
+ * @property string|null $cpiUserPassword
+ * @property string|null $cpiUsername
+ * @property Shapes\Position|null $position
  */
 class ConfigureAccessPointRequest extends Request
 {
     /**
      * @param array{
      *     accessPointArn: string,
-     *     cpiSecretKey?: string,
-     *     cpiUserId?: string,
-     *     cpiUserPassword?: string,
-     *     cpiUsername?: string,
-     *     position?: Shapes\Position
+     *     cpiSecretKey?: string|null,
+     *     cpiUserId?: string|null,
+     *     cpiUserPassword?: string|null,
+     *     cpiUsername?: string|null,
+     *     position?: Shapes\Position|null
      * } $args
      */
     public function __construct(array $args)

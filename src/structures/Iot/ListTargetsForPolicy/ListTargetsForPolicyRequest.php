@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $policyName
- * @property string $marker
- * @property int<1, 250> $pageSize
+ * @property string|null $marker
+ * @property int<1, 250>|null $pageSize
  */
 class ListTargetsForPolicyRequest extends Request
 {
     /**
      * @param array{
      *     policyName: string,
-     *     marker?: string,
-     *     pageSize?: int<1, 250>
+     *     marker?: string|null,
+     *     pageSize?: int<1, 250>|null
      * } $args
      */
     public function __construct(array $args)

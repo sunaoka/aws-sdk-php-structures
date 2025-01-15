@@ -6,74 +6,74 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property string $LaunchConfigurationName
- * @property Shapes\LaunchTemplateSpecification $LaunchTemplate
- * @property Shapes\MixedInstancesPolicy $MixedInstancesPolicy
- * @property string $InstanceId
+ * @property string|null $LaunchConfigurationName
+ * @property Shapes\LaunchTemplateSpecification|null $LaunchTemplate
+ * @property Shapes\MixedInstancesPolicy|null $MixedInstancesPolicy
+ * @property string|null $InstanceId
  * @property int $MinSize
  * @property int $MaxSize
- * @property int $DesiredCapacity
- * @property int $DefaultCooldown
- * @property list<string> $AvailabilityZones
- * @property list<string> $LoadBalancerNames
- * @property list<string> $TargetGroupARNs
- * @property string $HealthCheckType
- * @property int $HealthCheckGracePeriod
- * @property string $PlacementGroup
- * @property string $VPCZoneIdentifier
- * @property list<string> $TerminationPolicies
- * @property bool $NewInstancesProtectedFromScaleIn
- * @property bool $CapacityRebalance
- * @property list<Shapes\LifecycleHookSpecification> $LifecycleHookSpecificationList
- * @property list<Shapes\Tag> $Tags
- * @property string $ServiceLinkedRoleARN
- * @property int $MaxInstanceLifetime
- * @property string $Context
- * @property string $DesiredCapacityType
- * @property int $DefaultInstanceWarmup
- * @property list<Shapes\TrafficSourceIdentifier> $TrafficSources
- * @property Shapes\InstanceMaintenancePolicy $InstanceMaintenancePolicy
- * @property Shapes\AvailabilityZoneDistribution $AvailabilityZoneDistribution
- * @property Shapes\AvailabilityZoneImpairmentPolicy $AvailabilityZoneImpairmentPolicy
- * @property bool $SkipZonalShiftValidation
- * @property Shapes\CapacityReservationSpecification $CapacityReservationSpecification
+ * @property int|null $DesiredCapacity
+ * @property int|null $DefaultCooldown
+ * @property list<string>|null $AvailabilityZones
+ * @property list<string>|null $LoadBalancerNames
+ * @property list<string>|null $TargetGroupARNs
+ * @property string|null $HealthCheckType
+ * @property int|null $HealthCheckGracePeriod
+ * @property string|null $PlacementGroup
+ * @property string|null $VPCZoneIdentifier
+ * @property list<string>|null $TerminationPolicies
+ * @property bool|null $NewInstancesProtectedFromScaleIn
+ * @property bool|null $CapacityRebalance
+ * @property list<Shapes\LifecycleHookSpecification>|null $LifecycleHookSpecificationList
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ServiceLinkedRoleARN
+ * @property int|null $MaxInstanceLifetime
+ * @property string|null $Context
+ * @property string|null $DesiredCapacityType
+ * @property int|null $DefaultInstanceWarmup
+ * @property list<Shapes\TrafficSourceIdentifier>|null $TrafficSources
+ * @property Shapes\InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
+ * @property Shapes\AvailabilityZoneDistribution|null $AvailabilityZoneDistribution
+ * @property Shapes\AvailabilityZoneImpairmentPolicy|null $AvailabilityZoneImpairmentPolicy
+ * @property bool|null $SkipZonalShiftValidation
+ * @property Shapes\CapacityReservationSpecification|null $CapacityReservationSpecification
  */
 class CreateAutoScalingGroupRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     LaunchConfigurationName?: string,
-     *     LaunchTemplate?: Shapes\LaunchTemplateSpecification,
-     *     MixedInstancesPolicy?: Shapes\MixedInstancesPolicy,
-     *     InstanceId?: string,
+     *     LaunchConfigurationName?: string|null,
+     *     LaunchTemplate?: Shapes\LaunchTemplateSpecification|null,
+     *     MixedInstancesPolicy?: Shapes\MixedInstancesPolicy|null,
+     *     InstanceId?: string|null,
      *     MinSize: int,
      *     MaxSize: int,
-     *     DesiredCapacity?: int,
-     *     DefaultCooldown?: int,
-     *     AvailabilityZones?: list<string>,
-     *     LoadBalancerNames?: list<string>,
-     *     TargetGroupARNs?: list<string>,
-     *     HealthCheckType?: string,
-     *     HealthCheckGracePeriod?: int,
-     *     PlacementGroup?: string,
-     *     VPCZoneIdentifier?: string,
-     *     TerminationPolicies?: list<string>,
-     *     NewInstancesProtectedFromScaleIn?: bool,
-     *     CapacityRebalance?: bool,
-     *     LifecycleHookSpecificationList?: list<Shapes\LifecycleHookSpecification>,
-     *     Tags?: list<Shapes\Tag>,
-     *     ServiceLinkedRoleARN?: string,
-     *     MaxInstanceLifetime?: int,
-     *     Context?: string,
-     *     DesiredCapacityType?: string,
-     *     DefaultInstanceWarmup?: int,
-     *     TrafficSources?: list<Shapes\TrafficSourceIdentifier>,
-     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy,
-     *     AvailabilityZoneDistribution?: Shapes\AvailabilityZoneDistribution,
-     *     AvailabilityZoneImpairmentPolicy?: Shapes\AvailabilityZoneImpairmentPolicy,
-     *     SkipZonalShiftValidation?: bool,
-     *     CapacityReservationSpecification?: Shapes\CapacityReservationSpecification
+     *     DesiredCapacity?: int|null,
+     *     DefaultCooldown?: int|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     LoadBalancerNames?: list<string>|null,
+     *     TargetGroupARNs?: list<string>|null,
+     *     HealthCheckType?: string|null,
+     *     HealthCheckGracePeriod?: int|null,
+     *     PlacementGroup?: string|null,
+     *     VPCZoneIdentifier?: string|null,
+     *     TerminationPolicies?: list<string>|null,
+     *     NewInstancesProtectedFromScaleIn?: bool|null,
+     *     CapacityRebalance?: bool|null,
+     *     LifecycleHookSpecificationList?: list<Shapes\LifecycleHookSpecification>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ServiceLinkedRoleARN?: string|null,
+     *     MaxInstanceLifetime?: int|null,
+     *     Context?: string|null,
+     *     DesiredCapacityType?: string|null,
+     *     DefaultInstanceWarmup?: int|null,
+     *     TrafficSources?: list<Shapes\TrafficSourceIdentifier>|null,
+     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy|null,
+     *     AvailabilityZoneDistribution?: Shapes\AvailabilityZoneDistribution|null,
+     *     AvailabilityZoneImpairmentPolicy?: Shapes\AvailabilityZoneImpairmentPolicy|null,
+     *     SkipZonalShiftValidation?: bool|null,
+     *     CapacityReservationSpecification?: Shapes\CapacityReservationSpecification|null
      * } $args
      */
     public function __construct(array $args)

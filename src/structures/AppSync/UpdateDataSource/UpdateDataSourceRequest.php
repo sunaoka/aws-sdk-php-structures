@@ -7,17 +7,17 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $apiId
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE'|'AMAZON_BEDROCK_RUNTIME' $type
- * @property string $serviceRoleArn
- * @property Shapes\DynamodbDataSourceConfig $dynamodbConfig
- * @property Shapes\LambdaDataSourceConfig $lambdaConfig
- * @property Shapes\ElasticsearchDataSourceConfig $elasticsearchConfig
- * @property Shapes\OpenSearchServiceDataSourceConfig $openSearchServiceConfig
- * @property Shapes\HttpDataSourceConfig $httpConfig
- * @property Shapes\RelationalDatabaseDataSourceConfig $relationalDatabaseConfig
- * @property Shapes\EventBridgeDataSourceConfig $eventBridgeConfig
- * @property 'ENABLED'|'DISABLED' $metricsConfig
+ * @property string|null $serviceRoleArn
+ * @property Shapes\DynamodbDataSourceConfig|null $dynamodbConfig
+ * @property Shapes\LambdaDataSourceConfig|null $lambdaConfig
+ * @property Shapes\ElasticsearchDataSourceConfig|null $elasticsearchConfig
+ * @property Shapes\OpenSearchServiceDataSourceConfig|null $openSearchServiceConfig
+ * @property Shapes\HttpDataSourceConfig|null $httpConfig
+ * @property Shapes\RelationalDatabaseDataSourceConfig|null $relationalDatabaseConfig
+ * @property Shapes\EventBridgeDataSourceConfig|null $eventBridgeConfig
+ * @property 'ENABLED'|'DISABLED'|null $metricsConfig
  */
 class UpdateDataSourceRequest extends Request
 {
@@ -25,17 +25,17 @@ class UpdateDataSourceRequest extends Request
      * @param array{
      *     apiId: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     type: 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE'|'AMAZON_BEDROCK_RUNTIME',
-     *     serviceRoleArn?: string,
-     *     dynamodbConfig?: Shapes\DynamodbDataSourceConfig,
-     *     lambdaConfig?: Shapes\LambdaDataSourceConfig,
-     *     elasticsearchConfig?: Shapes\ElasticsearchDataSourceConfig,
-     *     openSearchServiceConfig?: Shapes\OpenSearchServiceDataSourceConfig,
-     *     httpConfig?: Shapes\HttpDataSourceConfig,
-     *     relationalDatabaseConfig?: Shapes\RelationalDatabaseDataSourceConfig,
-     *     eventBridgeConfig?: Shapes\EventBridgeDataSourceConfig,
-     *     metricsConfig?: 'ENABLED'|'DISABLED'
+     *     serviceRoleArn?: string|null,
+     *     dynamodbConfig?: Shapes\DynamodbDataSourceConfig|null,
+     *     lambdaConfig?: Shapes\LambdaDataSourceConfig|null,
+     *     elasticsearchConfig?: Shapes\ElasticsearchDataSourceConfig|null,
+     *     openSearchServiceConfig?: Shapes\OpenSearchServiceDataSourceConfig|null,
+     *     httpConfig?: Shapes\HttpDataSourceConfig|null,
+     *     relationalDatabaseConfig?: Shapes\RelationalDatabaseDataSourceConfig|null,
+     *     eventBridgeConfig?: Shapes\EventBridgeDataSourceConfig|null,
+     *     metricsConfig?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

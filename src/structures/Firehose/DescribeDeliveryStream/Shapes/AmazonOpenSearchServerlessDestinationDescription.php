@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoleARN
- * @property string $CollectionEndpoint
- * @property string $IndexName
- * @property AmazonOpenSearchServerlessBufferingHints $BufferingHints
- * @property AmazonOpenSearchServerlessRetryOptions $RetryOptions
- * @property 'FailedDocumentsOnly'|'AllDocuments' $S3BackupMode
- * @property S3DestinationDescription $S3DestinationDescription
- * @property ProcessingConfiguration $ProcessingConfiguration
- * @property CloudWatchLoggingOptions $CloudWatchLoggingOptions
- * @property VpcConfigurationDescription $VpcConfigurationDescription
+ * @property string|null $RoleARN
+ * @property string|null $CollectionEndpoint
+ * @property string|null $IndexName
+ * @property AmazonOpenSearchServerlessBufferingHints|null $BufferingHints
+ * @property AmazonOpenSearchServerlessRetryOptions|null $RetryOptions
+ * @property 'FailedDocumentsOnly'|'AllDocuments'|null $S3BackupMode
+ * @property S3DestinationDescription|null $S3DestinationDescription
+ * @property ProcessingConfiguration|null $ProcessingConfiguration
+ * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
+ * @property VpcConfigurationDescription|null $VpcConfigurationDescription
  */
 class AmazonOpenSearchServerlessDestinationDescription extends Shape
 {
     /**
      * @param array{
-     *     RoleARN?: string,
-     *     CollectionEndpoint?: string,
-     *     IndexName?: string,
-     *     BufferingHints?: AmazonOpenSearchServerlessBufferingHints,
-     *     RetryOptions?: AmazonOpenSearchServerlessRetryOptions,
-     *     S3BackupMode?: 'FailedDocumentsOnly'|'AllDocuments',
-     *     S3DestinationDescription?: S3DestinationDescription,
-     *     ProcessingConfiguration?: ProcessingConfiguration,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions,
-     *     VpcConfigurationDescription?: VpcConfigurationDescription
+     *     RoleARN?: string|null,
+     *     CollectionEndpoint?: string|null,
+     *     IndexName?: string|null,
+     *     BufferingHints?: AmazonOpenSearchServerlessBufferingHints|null,
+     *     RetryOptions?: AmazonOpenSearchServerlessRetryOptions|null,
+     *     S3BackupMode?: 'FailedDocumentsOnly'|'AllDocuments'|null,
+     *     S3DestinationDescription?: S3DestinationDescription|null,
+     *     ProcessingConfiguration?: ProcessingConfiguration|null,
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
+     *     VpcConfigurationDescription?: VpcConfigurationDescription|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMakerRuntime\InvokeEndpointWithResponseStre
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
+ * @property string|null $Message
  */
 class InternalStreamFailure extends Shape
 {
     /**
-     * @param array{Message?: string} $args
+     * @param array{Message?: string|null} $args
      */
     public function __construct(array $args = [])
     {

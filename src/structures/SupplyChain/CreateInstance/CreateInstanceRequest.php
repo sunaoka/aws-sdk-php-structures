@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SupplyChain\CreateInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $instanceName
- * @property string $instanceDescription
- * @property string $kmsKeyArn
- * @property string $webAppDnsDomain
- * @property array<string, string> $tags
- * @property string $clientToken
+ * @property string|null $instanceName
+ * @property string|null $instanceDescription
+ * @property string|null $kmsKeyArn
+ * @property string|null $webAppDnsDomain
+ * @property array<string, string>|null $tags
+ * @property string|null $clientToken
  */
 class CreateInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     instanceName?: string,
-     *     instanceDescription?: string,
-     *     kmsKeyArn?: string,
-     *     webAppDnsDomain?: string,
-     *     tags?: array<string, string>,
-     *     clientToken?: string
+     *     instanceName?: string|null,
+     *     instanceDescription?: string|null,
+     *     kmsKeyArn?: string|null,
+     *     webAppDnsDomain?: string|null,
+     *     tags?: array<string, string>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

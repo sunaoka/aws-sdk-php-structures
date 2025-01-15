@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ApplicationSignals\UpdateServiceLevelObjective\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $KeyAttributes
- * @property string $OperationName
- * @property 'LATENCY'|'AVAILABILITY' $MetricType
- * @property list<MetricDataQuery> $TotalRequestCountMetric
- * @property MonitoredRequestCountMetricDataQueries $MonitoredRequestCountMetric
+ * @property array<string, string>|null $KeyAttributes
+ * @property string|null $OperationName
+ * @property 'LATENCY'|'AVAILABILITY'|null $MetricType
+ * @property list<MetricDataQuery>|null $TotalRequestCountMetric
+ * @property MonitoredRequestCountMetricDataQueries|null $MonitoredRequestCountMetric
  */
 class RequestBasedServiceLevelIndicatorMetricConfig extends Shape
 {
     /**
      * @param array{
-     *     KeyAttributes?: array<string, string>,
-     *     OperationName?: string,
-     *     MetricType?: 'LATENCY'|'AVAILABILITY',
-     *     TotalRequestCountMetric?: list<MetricDataQuery>,
-     *     MonitoredRequestCountMetric?: MonitoredRequestCountMetricDataQueries
+     *     KeyAttributes?: array<string, string>|null,
+     *     OperationName?: string|null,
+     *     MetricType?: 'LATENCY'|'AVAILABILITY'|null,
+     *     TotalRequestCountMetric?: list<MetricDataQuery>|null,
+     *     MonitoredRequestCountMetric?: MonitoredRequestCountMetricDataQueries|null
      * } $args
      */
     public function __construct(array $args = [])

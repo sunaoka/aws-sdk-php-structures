@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\AppRunner\CreateObservabilityConfiguration\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ObservabilityConfigurationArn
- * @property string $ObservabilityConfigurationName
- * @property TraceConfiguration $TraceConfiguration
- * @property int $ObservabilityConfigurationRevision
- * @property bool $Latest
- * @property 'ACTIVE'|'INACTIVE' $Status
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $DeletedAt
+ * @property string|null $ObservabilityConfigurationArn
+ * @property string|null $ObservabilityConfigurationName
+ * @property TraceConfiguration|null $TraceConfiguration
+ * @property int|null $ObservabilityConfigurationRevision
+ * @property bool|null $Latest
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $DeletedAt
  */
 class ObservabilityConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ObservabilityConfigurationArn?: string,
-     *     ObservabilityConfigurationName?: string,
-     *     TraceConfiguration?: TraceConfiguration,
-     *     ObservabilityConfigurationRevision?: int,
-     *     Latest?: bool,
-     *     Status?: 'ACTIVE'|'INACTIVE',
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     DeletedAt?: \Aws\Api\DateTimeResult
+     *     ObservabilityConfigurationArn?: string|null,
+     *     ObservabilityConfigurationName?: string|null,
+     *     TraceConfiguration?: TraceConfiguration|null,
+     *     ObservabilityConfigurationRevision?: int|null,
+     *     Latest?: bool|null,
+     *     Status?: 'ACTIVE'|'INACTIVE'|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     DeletedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

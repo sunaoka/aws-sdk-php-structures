@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\TranscribeService\StartMedicalTranscriptionJob\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TranscriptFileUri
+ * @property string|null $TranscriptFileUri
  */
 class MedicalTranscript extends Shape
 {
     /**
-     * @param array{TranscriptFileUri?: string} $args
+     * @param array{TranscriptFileUri?: string|null} $args
      */
     public function __construct(array $args = [])
     {

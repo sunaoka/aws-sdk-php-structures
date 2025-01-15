@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetExportSnapshotRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $sizeInGb
+ * @property int|null $sizeInGb
  */
 class DiskSnapshotInfo extends Shape
 {
     /**
-     * @param array{sizeInGb?: int} $args
+     * @param array{sizeInGb?: int|null} $args
      */
     public function __construct(array $args = [])
     {

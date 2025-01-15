@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeSlot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $interpretedValue
+ * @property string|null $interpretedValue
  */
 class SlotValue extends Shape
 {
     /**
-     * @param array{interpretedValue?: string} $args
+     * @param array{interpretedValue?: string|null} $args
      */
     public function __construct(array $args = [])
     {

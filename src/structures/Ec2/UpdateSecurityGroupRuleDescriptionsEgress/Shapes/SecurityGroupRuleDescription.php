@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\UpdateSecurityGroupRuleDescriptionsEgress\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecurityGroupRuleId
- * @property string $Description
+ * @property string|null $SecurityGroupRuleId
+ * @property string|null $Description
  */
 class SecurityGroupRuleDescription extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupRuleId?: string,
-     *     Description?: string
+     *     SecurityGroupRuleId?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

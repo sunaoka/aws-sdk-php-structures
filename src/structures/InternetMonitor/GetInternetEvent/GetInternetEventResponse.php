@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $EventId
  * @property string $EventArn
  * @property \Aws\Api\DateTimeResult $StartedAt
- * @property \Aws\Api\DateTimeResult $EndedAt
+ * @property \Aws\Api\DateTimeResult|null $EndedAt
  * @property Shapes\ClientLocation $ClientLocation
  * @property 'AVAILABILITY'|'PERFORMANCE' $EventType
  * @property 'ACTIVE'|'RESOLVED' $EventStatus

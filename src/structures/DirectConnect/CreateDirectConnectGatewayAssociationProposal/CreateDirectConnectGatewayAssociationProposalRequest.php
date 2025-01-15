@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $directConnectGatewayId
  * @property string $directConnectGatewayOwnerAccount
  * @property string $gatewayId
- * @property list<Shapes\RouteFilterPrefix> $addAllowedPrefixesToDirectConnectGateway
- * @property list<Shapes\RouteFilterPrefix> $removeAllowedPrefixesToDirectConnectGateway
+ * @property list<Shapes\RouteFilterPrefix>|null $addAllowedPrefixesToDirectConnectGateway
+ * @property list<Shapes\RouteFilterPrefix>|null $removeAllowedPrefixesToDirectConnectGateway
  */
 class CreateDirectConnectGatewayAssociationProposalRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateDirectConnectGatewayAssociationProposalRequest extends Request
      *     directConnectGatewayId: string,
      *     directConnectGatewayOwnerAccount: string,
      *     gatewayId: string,
-     *     addAllowedPrefixesToDirectConnectGateway?: list<Shapes\RouteFilterPrefix>,
-     *     removeAllowedPrefixesToDirectConnectGateway?: list<Shapes\RouteFilterPrefix>
+     *     addAllowedPrefixesToDirectConnectGateway?: list<Shapes\RouteFilterPrefix>|null,
+     *     removeAllowedPrefixesToDirectConnectGateway?: list<Shapes\RouteFilterPrefix>|null
      * } $args
      */
     public function __construct(array $args)

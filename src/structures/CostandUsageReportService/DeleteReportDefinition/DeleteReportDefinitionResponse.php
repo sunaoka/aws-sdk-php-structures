@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CostandUsageReportService\DeleteReportDefinitio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResponseMessage
+ * @property string|null $ResponseMessage
  */
 class DeleteReportDefinitionResponse extends Response
 {

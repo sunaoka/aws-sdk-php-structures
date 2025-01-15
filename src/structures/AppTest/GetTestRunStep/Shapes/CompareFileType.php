@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppTest\GetTestRunStep\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CompareDataSetsSummary $datasets
- * @property CompareDatabaseCDCSummary $databaseCDC
+ * @property CompareDataSetsSummary|null $datasets
+ * @property CompareDatabaseCDCSummary|null $databaseCDC
  */
 class CompareFileType extends Shape
 {
     /**
      * @param array{
-     *     datasets?: CompareDataSetsSummary,
-     *     databaseCDC?: CompareDatabaseCDCSummary
+     *     datasets?: CompareDataSetsSummary|null,
+     *     databaseCDC?: CompareDatabaseCDCSummary|null
      * } $args
      */
     public function __construct(array $args = [])

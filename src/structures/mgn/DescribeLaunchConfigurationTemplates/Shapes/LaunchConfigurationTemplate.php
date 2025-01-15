@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeLaunchConfigurationTemplates\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property bool $associatePublicIpAddress
- * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE' $bootMode
- * @property bool $copyPrivateIp
- * @property bool $copyTags
- * @property string $ec2LaunchTemplateID
- * @property bool $enableMapAutoTagging
- * @property LaunchTemplateDiskConf $largeVolumeConf
+ * @property string|null $arn
+ * @property bool|null $associatePublicIpAddress
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
+ * @property bool|null $copyPrivateIp
+ * @property bool|null $copyTags
+ * @property string|null $ec2LaunchTemplateID
+ * @property bool|null $enableMapAutoTagging
+ * @property LaunchTemplateDiskConf|null $largeVolumeConf
  * @property string $launchConfigurationTemplateID
- * @property 'STOPPED'|'STARTED' $launchDisposition
- * @property Licensing $licensing
- * @property string $mapAutoTaggingMpeID
- * @property PostLaunchActions $postLaunchActions
- * @property LaunchTemplateDiskConf $smallVolumeConf
- * @property int<0, max> $smallVolumeMaxSize
- * @property array<string, string> $tags
- * @property 'NONE'|'BASIC' $targetInstanceTypeRightSizingMethod
+ * @property 'STOPPED'|'STARTED'|null $launchDisposition
+ * @property Licensing|null $licensing
+ * @property string|null $mapAutoTaggingMpeID
+ * @property PostLaunchActions|null $postLaunchActions
+ * @property LaunchTemplateDiskConf|null $smallVolumeConf
+ * @property int<0, max>|null $smallVolumeMaxSize
+ * @property array<string, string>|null $tags
+ * @property 'NONE'|'BASIC'|null $targetInstanceTypeRightSizingMethod
  */
 class LaunchConfigurationTemplate extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     associatePublicIpAddress?: bool,
-     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE',
-     *     copyPrivateIp?: bool,
-     *     copyTags?: bool,
-     *     ec2LaunchTemplateID?: string,
-     *     enableMapAutoTagging?: bool,
-     *     largeVolumeConf?: LaunchTemplateDiskConf,
+     *     arn?: string|null,
+     *     associatePublicIpAddress?: bool|null,
+     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null,
+     *     copyPrivateIp?: bool|null,
+     *     copyTags?: bool|null,
+     *     ec2LaunchTemplateID?: string|null,
+     *     enableMapAutoTagging?: bool|null,
+     *     largeVolumeConf?: LaunchTemplateDiskConf|null,
      *     launchConfigurationTemplateID: string,
-     *     launchDisposition?: 'STOPPED'|'STARTED',
-     *     licensing?: Licensing,
-     *     mapAutoTaggingMpeID?: string,
-     *     postLaunchActions?: PostLaunchActions,
-     *     smallVolumeConf?: LaunchTemplateDiskConf,
-     *     smallVolumeMaxSize?: int<0, max>,
-     *     tags?: array<string, string>,
-     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'
+     *     launchDisposition?: 'STOPPED'|'STARTED'|null,
+     *     licensing?: Licensing|null,
+     *     mapAutoTaggingMpeID?: string|null,
+     *     postLaunchActions?: PostLaunchActions|null,
+     *     smallVolumeConf?: LaunchTemplateDiskConf|null,
+     *     smallVolumeMaxSize?: int<0, max>|null,
+     *     tags?: array<string, string>|null,
+     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|null
      * } $args
      */
     public function __construct(array $args)

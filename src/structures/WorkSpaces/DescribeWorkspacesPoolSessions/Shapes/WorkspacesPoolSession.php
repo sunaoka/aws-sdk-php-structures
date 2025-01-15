@@ -5,28 +5,28 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspacesPoolSessions\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SAML' $AuthenticationType
- * @property 'CONNECTED'|'NOT_CONNECTED' $ConnectionState
+ * @property 'SAML'|null $AuthenticationType
+ * @property 'CONNECTED'|'NOT_CONNECTED'|null $ConnectionState
  * @property string $SessionId
- * @property string $InstanceId
+ * @property string|null $InstanceId
  * @property string $PoolId
- * @property \Aws\Api\DateTimeResult $ExpirationTime
- * @property NetworkAccessConfiguration $NetworkAccessConfiguration
- * @property \Aws\Api\DateTimeResult $StartTime
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTime
+ * @property NetworkAccessConfiguration|null $NetworkAccessConfiguration
+ * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property string $UserId
  */
 class WorkspacesPoolSession extends Shape
 {
     /**
      * @param array{
-     *     AuthenticationType?: 'SAML',
-     *     ConnectionState?: 'CONNECTED'|'NOT_CONNECTED',
+     *     AuthenticationType?: 'SAML'|null,
+     *     ConnectionState?: 'CONNECTED'|'NOT_CONNECTED'|null,
      *     SessionId: string,
-     *     InstanceId?: string,
+     *     InstanceId?: string|null,
      *     PoolId: string,
-     *     ExpirationTime?: \Aws\Api\DateTimeResult,
-     *     NetworkAccessConfiguration?: NetworkAccessConfiguration,
-     *     StartTime?: \Aws\Api\DateTimeResult,
+     *     ExpirationTime?: \Aws\Api\DateTimeResult|null,
+     *     NetworkAccessConfiguration?: NetworkAccessConfiguration|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     UserId: string
      * } $args
      */

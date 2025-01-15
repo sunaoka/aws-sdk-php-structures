@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $jobId
- * @property string $jobOwner
+ * @property string|null $jobOwner
  * @property string $reason
  */
 class RevokeSignatureRequest extends Request
@@ -14,7 +14,7 @@ class RevokeSignatureRequest extends Request
     /**
      * @param array{
      *     jobId: string,
-     *     jobOwner?: string,
+     *     jobOwner?: string|null,
      *     reason: string
      * } $args
      */

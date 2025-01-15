@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HttpHeaderName
- * @property list<string> $Values
+ * @property string|null $HttpHeaderName
+ * @property list<string>|null $Values
  */
 class HttpHeaderConditionConfig extends Shape
 {
     /**
      * @param array{
-     *     HttpHeaderName?: string,
-     *     Values?: list<string>
+     *     HttpHeaderName?: string|null,
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

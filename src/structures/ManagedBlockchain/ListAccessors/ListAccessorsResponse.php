@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\ListAccessors;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AccessorSummary> $Accessors
- * @property string $NextToken
+ * @property list<Shapes\AccessorSummary>|null $Accessors
+ * @property string|null $NextToken
  */
 class ListAccessorsResponse extends Response
 {

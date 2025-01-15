@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $membershipArn
  * @property string $roleArn
  * @property string $name
- * @property string $description
- * @property list<'AGGREGATION'|'LIST'|'CUSTOM'> $analysisRuleTypes
+ * @property string|null $description
+ * @property list<'AGGREGATION'|'LIST'|'CUSTOM'>|null $analysisRuleTypes
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  */
@@ -30,8 +30,8 @@ class ConfiguredTableAssociation extends Shape
      *     membershipArn: string,
      *     roleArn: string,
      *     name: string,
-     *     description?: string,
-     *     analysisRuleTypes?: list<'AGGREGATION'|'LIST'|'CUSTOM'>,
+     *     description?: string|null,
+     *     analysisRuleTypes?: list<'AGGREGATION'|'LIST'|'CUSTOM'>|null,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult
      * } $args

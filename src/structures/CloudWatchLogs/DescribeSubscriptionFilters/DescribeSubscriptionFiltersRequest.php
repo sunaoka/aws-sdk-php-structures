@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $logGroupName
- * @property string $filterNamePrefix
- * @property string $nextToken
- * @property int<1, 50> $limit
+ * @property string|null $filterNamePrefix
+ * @property string|null $nextToken
+ * @property int<1, 50>|null $limit
  */
 class DescribeSubscriptionFiltersRequest extends Request
 {
     /**
      * @param array{
      *     logGroupName: string,
-     *     filterNamePrefix?: string,
-     *     nextToken?: string,
-     *     limit?: int<1, 50>
+     *     filterNamePrefix?: string|null,
+     *     nextToken?: string|null,
+     *     limit?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

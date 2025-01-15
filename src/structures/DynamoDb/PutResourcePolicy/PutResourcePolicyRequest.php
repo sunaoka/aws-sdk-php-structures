@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceArn
  * @property string $Policy
- * @property string $ExpectedRevisionId
- * @property bool $ConfirmRemoveSelfResourceAccess
+ * @property string|null $ExpectedRevisionId
+ * @property bool|null $ConfirmRemoveSelfResourceAccess
  */
 class PutResourcePolicyRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutResourcePolicyRequest extends Request
      * @param array{
      *     ResourceArn: string,
      *     Policy: string,
-     *     ExpectedRevisionId?: string,
-     *     ConfirmRemoveSelfResourceAccess?: bool
+     *     ExpectedRevisionId?: string|null,
+     *     ConfirmRemoveSelfResourceAccess?: bool|null
      * } $args
      */
     public function __construct(array $args)

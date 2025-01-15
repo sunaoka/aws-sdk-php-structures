@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\ListIngressPoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 50> $PageSize
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $PageSize
  */
 class ListIngressPointsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     PageSize?: int<1, 50>
+     *     NextToken?: string|null,
+     *     PageSize?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args = [])

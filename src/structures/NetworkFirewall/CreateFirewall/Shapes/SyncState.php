@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\CreateFirewall\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attachment $Attachment
- * @property array<string, PerObjectStatus> $Config
+ * @property Attachment|null $Attachment
+ * @property array<string, PerObjectStatus>|null $Config
  */
 class SyncState extends Shape
 {
     /**
      * @param array{
-     *     Attachment?: Attachment,
-     *     Config?: array<string, PerObjectStatus>
+     *     Attachment?: Attachment|null,
+     *     Config?: array<string, PerObjectStatus>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $relationalDatabaseName
- * @property string $availabilityZone
+ * @property string|null $availabilityZone
  * @property string $relationalDatabaseBlueprintId
  * @property string $relationalDatabaseBundleId
  * @property string $masterDatabaseName
  * @property string $masterUsername
- * @property string $masterUserPassword
- * @property string $preferredBackupWindow
- * @property string $preferredMaintenanceWindow
- * @property bool $publiclyAccessible
- * @property list<Shapes\Tag> $tags
+ * @property string|null $masterUserPassword
+ * @property string|null $preferredBackupWindow
+ * @property string|null $preferredMaintenanceWindow
+ * @property bool|null $publiclyAccessible
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateRelationalDatabaseRequest extends Request
 {
     /**
      * @param array{
      *     relationalDatabaseName: string,
-     *     availabilityZone?: string,
+     *     availabilityZone?: string|null,
      *     relationalDatabaseBlueprintId: string,
      *     relationalDatabaseBundleId: string,
      *     masterDatabaseName: string,
      *     masterUsername: string,
-     *     masterUserPassword?: string,
-     *     preferredBackupWindow?: string,
-     *     preferredMaintenanceWindow?: string,
-     *     publiclyAccessible?: bool,
-     *     tags?: list<Shapes\Tag>
+     *     masterUserPassword?: string|null,
+     *     preferredBackupWindow?: string|null,
+     *     preferredMaintenanceWindow?: string|null,
+     *     publiclyAccessible?: bool|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

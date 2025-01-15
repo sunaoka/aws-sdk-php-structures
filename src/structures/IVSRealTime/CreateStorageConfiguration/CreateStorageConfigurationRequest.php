@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\CreateStorageConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $name
+ * @property string|null $name
  * @property Shapes\S3StorageConfiguration $s3
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateStorageConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     name?: string,
+     *     name?: string|null,
      *     s3: Shapes\S3StorageConfiguration,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $ClusterArn
  * @property Shapes\ComputeQuotaConfig $ComputeQuotaConfig
  * @property Shapes\ComputeQuotaTarget $ComputeQuotaTarget
- * @property 'Enabled'|'Disabled' $ActivationState
- * @property list<Shapes\Tag> $Tags
+ * @property 'Enabled'|'Disabled'|null $ActivationState
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateComputeQuotaRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     ClusterArn: string,
      *     ComputeQuotaConfig: Shapes\ComputeQuotaConfig,
      *     ComputeQuotaTarget: Shapes\ComputeQuotaTarget,
-     *     ActivationState?: 'Enabled'|'Disabled',
-     *     Tags?: list<Shapes\Tag>
+     *     ActivationState?: 'Enabled'|'Disabled'|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

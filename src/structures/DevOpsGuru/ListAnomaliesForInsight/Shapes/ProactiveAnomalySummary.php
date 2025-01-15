@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListAnomaliesForInsight\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property 'LOW'|'MEDIUM'|'HIGH' $Severity
- * @property 'ONGOING'|'CLOSED' $Status
- * @property \Aws\Api\DateTimeResult $UpdateTime
- * @property AnomalyTimeRange $AnomalyTimeRange
- * @property AnomalyReportedTimeRange $AnomalyReportedTimeRange
- * @property PredictionTimeRange $PredictionTimeRange
- * @property AnomalySourceDetails $SourceDetails
- * @property string $AssociatedInsightId
- * @property ResourceCollection $ResourceCollection
- * @property double $Limit
- * @property AnomalySourceMetadata $SourceMetadata
- * @property list<AnomalyResource> $AnomalyResources
- * @property string $Description
+ * @property string|null $Id
+ * @property 'LOW'|'MEDIUM'|'HIGH'|null $Severity
+ * @property 'ONGOING'|'CLOSED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $UpdateTime
+ * @property AnomalyTimeRange|null $AnomalyTimeRange
+ * @property AnomalyReportedTimeRange|null $AnomalyReportedTimeRange
+ * @property PredictionTimeRange|null $PredictionTimeRange
+ * @property AnomalySourceDetails|null $SourceDetails
+ * @property string|null $AssociatedInsightId
+ * @property ResourceCollection|null $ResourceCollection
+ * @property double|null $Limit
+ * @property AnomalySourceMetadata|null $SourceMetadata
+ * @property list<AnomalyResource>|null $AnomalyResources
+ * @property string|null $Description
  */
 class ProactiveAnomalySummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Severity?: 'LOW'|'MEDIUM'|'HIGH',
-     *     Status?: 'ONGOING'|'CLOSED',
-     *     UpdateTime?: \Aws\Api\DateTimeResult,
-     *     AnomalyTimeRange?: AnomalyTimeRange,
-     *     AnomalyReportedTimeRange?: AnomalyReportedTimeRange,
-     *     PredictionTimeRange?: PredictionTimeRange,
-     *     SourceDetails?: AnomalySourceDetails,
-     *     AssociatedInsightId?: string,
-     *     ResourceCollection?: ResourceCollection,
-     *     Limit?: double,
-     *     SourceMetadata?: AnomalySourceMetadata,
-     *     AnomalyResources?: list<AnomalyResource>,
-     *     Description?: string
+     *     Id?: string|null,
+     *     Severity?: 'LOW'|'MEDIUM'|'HIGH'|null,
+     *     Status?: 'ONGOING'|'CLOSED'|null,
+     *     UpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     AnomalyTimeRange?: AnomalyTimeRange|null,
+     *     AnomalyReportedTimeRange?: AnomalyReportedTimeRange|null,
+     *     PredictionTimeRange?: PredictionTimeRange|null,
+     *     SourceDetails?: AnomalySourceDetails|null,
+     *     AssociatedInsightId?: string|null,
+     *     ResourceCollection?: ResourceCollection|null,
+     *     Limit?: double|null,
+     *     SourceMetadata?: AnomalySourceMetadata|null,
+     *     AnomalyResources?: list<AnomalyResource>|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

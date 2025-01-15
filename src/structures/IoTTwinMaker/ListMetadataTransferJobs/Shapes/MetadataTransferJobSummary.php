@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
  * @property MetadataTransferJobStatus $status
- * @property MetadataTransferJobProgress $progress
+ * @property MetadataTransferJobProgress|null $progress
  */
 class MetadataTransferJobSummary extends Shape
 {
@@ -21,7 +21,7 @@ class MetadataTransferJobSummary extends Shape
      *     creationDateTime: \Aws\Api\DateTimeResult,
      *     updateDateTime: \Aws\Api\DateTimeResult,
      *     status: MetadataTransferJobStatus,
-     *     progress?: MetadataTransferJobProgress
+     *     progress?: MetadataTransferJobProgress|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FromPort
- * @property int $ToPort
+ * @property int|null $FromPort
+ * @property int|null $ToPort
  */
 class RuleGroupSourceStatelessRuleMatchAttributesDestinationPorts extends Shape
 {
     /**
      * @param array{
-     *     FromPort?: int,
-     *     ToPort?: int
+     *     FromPort?: int|null,
+     *     ToPort?: int|null
      * } $args
      */
     public function __construct(array $args = [])

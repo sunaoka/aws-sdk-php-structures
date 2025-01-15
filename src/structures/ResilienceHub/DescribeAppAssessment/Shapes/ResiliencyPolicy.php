@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\DescribeAppAssessment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property 'AnyLocation'|'SameContinent'|'SameCountry' $dataLocationConstraint
- * @property 'L1'|'L2'|'L3'|'L4' $estimatedCostTier
- * @property array<'Software'|'Hardware'|'AZ'|'Region', FailurePolicy> $policy
- * @property string $policyArn
- * @property string $policyDescription
- * @property string $policyName
- * @property array<string, string> $tags
- * @property 'MissionCritical'|'Critical'|'Important'|'CoreServices'|'NonCritical'|'NotApplicable' $tier
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property 'AnyLocation'|'SameContinent'|'SameCountry'|null $dataLocationConstraint
+ * @property 'L1'|'L2'|'L3'|'L4'|null $estimatedCostTier
+ * @property array<'Software'|'Hardware'|'AZ'|'Region', FailurePolicy>|null $policy
+ * @property string|null $policyArn
+ * @property string|null $policyDescription
+ * @property string|null $policyName
+ * @property array<string, string>|null $tags
+ * @property 'MissionCritical'|'Critical'|'Important'|'CoreServices'|'NonCritical'|'NotApplicable'|null $tier
  */
 class ResiliencyPolicy extends Shape
 {
     /**
      * @param array{
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     dataLocationConstraint?: 'AnyLocation'|'SameContinent'|'SameCountry',
-     *     estimatedCostTier?: 'L1'|'L2'|'L3'|'L4',
-     *     policy?: array<'Software'|'Hardware'|'AZ'|'Region', FailurePolicy>,
-     *     policyArn?: string,
-     *     policyDescription?: string,
-     *     policyName?: string,
-     *     tags?: array<string, string>,
-     *     tier?: 'MissionCritical'|'Critical'|'Important'|'CoreServices'|'NonCritical'|'NotApplicable'
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     dataLocationConstraint?: 'AnyLocation'|'SameContinent'|'SameCountry'|null,
+     *     estimatedCostTier?: 'L1'|'L2'|'L3'|'L4'|null,
+     *     policy?: array<'Software'|'Hardware'|'AZ'|'Region', FailurePolicy>|null,
+     *     policyArn?: string|null,
+     *     policyDescription?: string|null,
+     *     policyName?: string|null,
+     *     tags?: array<string, string>|null,
+     *     tier?: 'MissionCritical'|'Critical'|'Important'|'CoreServices'|'NonCritical'|'NotApplicable'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $storageType
- * @property int $allocatedStorage
- * @property int $iops
- * @property int $maxAllocatedStorage
- * @property int $storageThroughput
+ * @property string|null $storageType
+ * @property int|null $allocatedStorage
+ * @property int|null $iops
+ * @property int|null $maxAllocatedStorage
+ * @property int|null $storageThroughput
  */
 class DBStorageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     storageType?: string,
-     *     allocatedStorage?: int,
-     *     iops?: int,
-     *     maxAllocatedStorage?: int,
-     *     storageThroughput?: int
+     *     storageType?: string|null,
+     *     allocatedStorage?: int|null,
+     *     iops?: int|null,
+     *     maxAllocatedStorage?: int|null,
+     *     storageThroughput?: int|null
      * } $args
      */
     public function __construct(array $args = [])

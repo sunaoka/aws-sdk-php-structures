@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\StartTimeRange $StartTimeRange
- * @property Shapes\SearchInsightsFilters $Filters
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property Shapes\SearchInsightsFilters|null $Filters
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  * @property 'REACTIVE'|'PROACTIVE' $Type
  */
 class SearchInsightsRequest extends Request
@@ -16,9 +16,9 @@ class SearchInsightsRequest extends Request
     /**
      * @param array{
      *     StartTimeRange: Shapes\StartTimeRange,
-     *     Filters?: Shapes\SearchInsightsFilters,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
+     *     Filters?: Shapes\SearchInsightsFilters|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
      *     Type: 'REACTIVE'|'PROACTIVE'
      * } $args
      */

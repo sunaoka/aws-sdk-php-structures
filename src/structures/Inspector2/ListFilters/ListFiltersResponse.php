@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Filter> $filters
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListFiltersResponse extends Response
 {

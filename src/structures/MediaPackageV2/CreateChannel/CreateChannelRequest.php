@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ChannelGroupName
  * @property string $ChannelName
- * @property string $ClientToken
- * @property 'HLS'|'CMAF' $InputType
- * @property string $Description
- * @property Shapes\InputSwitchConfiguration $InputSwitchConfiguration
- * @property Shapes\OutputHeaderConfiguration $OutputHeaderConfiguration
- * @property array<string, string> $Tags
+ * @property string|null $ClientToken
+ * @property 'HLS'|'CMAF'|null $InputType
+ * @property string|null $Description
+ * @property Shapes\InputSwitchConfiguration|null $InputSwitchConfiguration
+ * @property Shapes\OutputHeaderConfiguration|null $OutputHeaderConfiguration
+ * @property array<string, string>|null $Tags
  */
 class CreateChannelRequest extends Request
 {
@@ -20,12 +20,12 @@ class CreateChannelRequest extends Request
      * @param array{
      *     ChannelGroupName: string,
      *     ChannelName: string,
-     *     ClientToken?: string,
-     *     InputType?: 'HLS'|'CMAF',
-     *     Description?: string,
-     *     InputSwitchConfiguration?: Shapes\InputSwitchConfiguration,
-     *     OutputHeaderConfiguration?: Shapes\OutputHeaderConfiguration,
-     *     Tags?: array<string, string>
+     *     ClientToken?: string|null,
+     *     InputType?: 'HLS'|'CMAF'|null,
+     *     Description?: string|null,
+     *     InputSwitchConfiguration?: Shapes\InputSwitchConfiguration|null,
+     *     OutputHeaderConfiguration?: Shapes\OutputHeaderConfiguration|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

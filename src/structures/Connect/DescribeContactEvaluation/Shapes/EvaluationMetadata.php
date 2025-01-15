@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ContactId
  * @property string $EvaluatorArn
- * @property string $ContactAgentId
- * @property EvaluationScore $Score
+ * @property string|null $ContactAgentId
+ * @property EvaluationScore|null $Score
  */
 class EvaluationMetadata extends Shape
 {
@@ -16,8 +16,8 @@ class EvaluationMetadata extends Shape
      * @param array{
      *     ContactId: string,
      *     EvaluatorArn: string,
-     *     ContactAgentId?: string,
-     *     Score?: EvaluationScore
+     *     ContactAgentId?: string|null,
+     *     Score?: EvaluationScore|null
      * } $args
      */
     public function __construct(array $args)

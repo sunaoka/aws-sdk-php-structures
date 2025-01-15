@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\BatchDeleteConnection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property list<string> $ConnectionNameList
  */
 class BatchDeleteConnectionRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     ConnectionNameList: list<string>
      * } $args
      */

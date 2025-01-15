@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QConnect\ListKnowledgeBases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BedrockFoundationModelConfigurationForParsing $bedrockFoundationModelConfiguration
+ * @property BedrockFoundationModelConfigurationForParsing|null $bedrockFoundationModelConfiguration
  * @property 'BEDROCK_FOUNDATION_MODEL' $parsingStrategy
  */
 class ParsingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     bedrockFoundationModelConfiguration?: BedrockFoundationModelConfigurationForParsing,
+     *     bedrockFoundationModelConfiguration?: BedrockFoundationModelConfigurationForParsing|null,
      *     parsingStrategy: 'BEDROCK_FOUNDATION_MODEL'
      * } $args
      */

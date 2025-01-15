@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListStudioLifecycleConfigs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property string $NameContains
- * @property 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab' $AppTypeEquals
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property \Aws\Api\DateTimeResult $ModifiedTimeBefore
- * @property \Aws\Api\DateTimeResult $ModifiedTimeAfter
- * @property 'CreationTime'|'LastModifiedTime'|'Name' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $NameContains
+ * @property 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab'|null $AppTypeEquals
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $ModifiedTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $ModifiedTimeAfter
+ * @property 'CreationTime'|'LastModifiedTime'|'Name'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
  */
 class ListStudioLifecycleConfigsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     NameContains?: string,
-     *     AppTypeEquals?: 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab',
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     ModifiedTimeBefore?: \Aws\Api\DateTimeResult,
-     *     ModifiedTimeAfter?: \Aws\Api\DateTimeResult,
-     *     SortBy?: 'CreationTime'|'LastModifiedTime'|'Name',
-     *     SortOrder?: 'Ascending'|'Descending'
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     NameContains?: string|null,
+     *     AppTypeEquals?: 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab'|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     ModifiedTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     ModifiedTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     SortBy?: 'CreationTime'|'LastModifiedTime'|'Name'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args = [])

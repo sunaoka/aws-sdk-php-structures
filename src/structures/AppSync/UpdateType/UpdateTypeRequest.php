@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $apiId
  * @property string $typeName
- * @property string $definition
+ * @property string|null $definition
  * @property 'SDL'|'JSON' $format
  */
 class UpdateTypeRequest extends Request
@@ -16,7 +16,7 @@ class UpdateTypeRequest extends Request
      * @param array{
      *     apiId: string,
      *     typeName: string,
-     *     definition?: string,
+     *     definition?: string|null,
      *     format: 'SDL'|'JSON'
      * } $args
      */

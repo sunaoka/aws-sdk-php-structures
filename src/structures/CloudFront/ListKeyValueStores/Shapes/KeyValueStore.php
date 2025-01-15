@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $Comment
  * @property string $ARN
- * @property string $Status
+ * @property string|null $Status
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  */
 class KeyValueStore extends Shape
@@ -20,7 +20,7 @@ class KeyValueStore extends Shape
      *     Id: string,
      *     Comment: string,
      *     ARN: string,
-     *     Status?: string,
+     *     Status?: string|null,
      *     LastModifiedTime: \Aws\Api\DateTimeResult
      * } $args
      */

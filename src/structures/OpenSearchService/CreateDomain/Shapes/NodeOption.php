@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'coordinator' $NodeType
- * @property NodeConfig $NodeConfig
+ * @property 'coordinator'|null $NodeType
+ * @property NodeConfig|null $NodeConfig
  */
 class NodeOption extends Shape
 {
     /**
      * @param array{
-     *     NodeType?: 'coordinator',
-     *     NodeConfig?: NodeConfig
+     *     NodeType?: 'coordinator'|null,
+     *     NodeConfig?: NodeConfig|null
      * } $args
      */
     public function __construct(array $args = [])

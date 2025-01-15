@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeServiceDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property int $requestedTaskCount
- * @property int $runningTaskCount
- * @property int $pendingTaskCount
+ * @property string|null $arn
+ * @property int|null $requestedTaskCount
+ * @property int|null $runningTaskCount
+ * @property int|null $pendingTaskCount
  */
 class ServiceRevisionSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     requestedTaskCount?: int,
-     *     runningTaskCount?: int,
-     *     pendingTaskCount?: int
+     *     arn?: string|null,
+     *     requestedTaskCount?: int|null,
+     *     runningTaskCount?: int|null,
+     *     pendingTaskCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Greengrass\GetConnectivityInfo\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HostAddress
- * @property string $Id
- * @property string $Metadata
- * @property int $PortNumber
+ * @property string|null $HostAddress
+ * @property string|null $Id
+ * @property string|null $Metadata
+ * @property int|null $PortNumber
  */
 class ConnectivityInfo extends Shape
 {
     /**
      * @param array{
-     *     HostAddress?: string,
-     *     Id?: string,
-     *     Metadata?: string,
-     *     PortNumber?: int
+     *     HostAddress?: string|null,
+     *     Id?: string|null,
+     *     Metadata?: string|null,
+     *     PortNumber?: int|null
      * } $args
      */
     public function __construct(array $args = [])

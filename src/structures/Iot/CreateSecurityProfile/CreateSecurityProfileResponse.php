@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Iot\CreateSecurityProfile;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $securityProfileName
- * @property string $securityProfileArn
+ * @property string|null $securityProfileName
+ * @property string|null $securityProfileArn
  */
 class CreateSecurityProfileResponse extends Response
 {

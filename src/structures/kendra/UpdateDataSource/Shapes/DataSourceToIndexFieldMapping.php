@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DataSourceFieldName
- * @property string $DateFieldFormat
+ * @property string|null $DateFieldFormat
  * @property string $IndexFieldName
  */
 class DataSourceToIndexFieldMapping extends Shape
@@ -14,7 +14,7 @@ class DataSourceToIndexFieldMapping extends Shape
     /**
      * @param array{
      *     DataSourceFieldName: string,
-     *     DateFieldFormat?: string,
+     *     DateFieldFormat?: string|null,
      *     IndexFieldName: string
      * } $args
      */

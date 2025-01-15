@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\InternetMonitor\GetMonitor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $AvailabilityScoreThreshold
- * @property double $PerformanceScoreThreshold
- * @property LocalHealthEventsConfig $AvailabilityLocalHealthEventsConfig
- * @property LocalHealthEventsConfig $PerformanceLocalHealthEventsConfig
+ * @property double|null $AvailabilityScoreThreshold
+ * @property double|null $PerformanceScoreThreshold
+ * @property LocalHealthEventsConfig|null $AvailabilityLocalHealthEventsConfig
+ * @property LocalHealthEventsConfig|null $PerformanceLocalHealthEventsConfig
  */
 class HealthEventsConfig extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityScoreThreshold?: double,
-     *     PerformanceScoreThreshold?: double,
-     *     AvailabilityLocalHealthEventsConfig?: LocalHealthEventsConfig,
-     *     PerformanceLocalHealthEventsConfig?: LocalHealthEventsConfig
+     *     AvailabilityScoreThreshold?: double|null,
+     *     PerformanceScoreThreshold?: double|null,
+     *     AvailabilityLocalHealthEventsConfig?: LocalHealthEventsConfig|null,
+     *     PerformanceLocalHealthEventsConfig?: LocalHealthEventsConfig|null
      * } $args
      */
     public function __construct(array $args = [])

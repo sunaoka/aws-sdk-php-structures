@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $groupName
- * @property 'INDEX'|'DATASOURCE' $type
+ * @property 'INDEX'|'DATASOURCE'|null $type
  */
 class MemberGroup extends Shape
 {
     /**
      * @param array{
      *     groupName: string,
-     *     type?: 'INDEX'|'DATASOURCE'
+     *     type?: 'INDEX'|'DATASOURCE'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ecs\StopTask;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $cluster
+ * @property string|null $cluster
  * @property string $task
- * @property string $reason
+ * @property string|null $reason
  */
 class StopTaskRequest extends Request
 {
     /**
      * @param array{
-     *     cluster?: string,
+     *     cluster?: string|null,
      *     task: string,
-     *     reason?: string
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args)

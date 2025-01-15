@@ -9,18 +9,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'EXECUTING'|'FAILED'|'SUCCEEDED'|'CANCELED'|'CANCELING' $Lifecycle
  * @property 'EXPORT_TO_REPOSITORY'|'IMPORT_METADATA_FROM_REPOSITORY'|'RELEASE_DATA_FROM_FILESYSTEM'|'AUTO_RELEASE_DATA' $Type
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $ResourceARN
- * @property list<Tag> $Tags
- * @property string $FileSystemId
- * @property list<string> $Paths
- * @property DataRepositoryTaskFailureDetails $FailureDetails
- * @property DataRepositoryTaskStatus $Status
- * @property CompletionReport $Report
- * @property int<1, 2147483647> $CapacityToRelease
- * @property string $FileCacheId
- * @property ReleaseConfiguration $ReleaseConfiguration
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $ResourceARN
+ * @property list<Tag>|null $Tags
+ * @property string|null $FileSystemId
+ * @property list<string>|null $Paths
+ * @property DataRepositoryTaskFailureDetails|null $FailureDetails
+ * @property DataRepositoryTaskStatus|null $Status
+ * @property CompletionReport|null $Report
+ * @property int<1, 2147483647>|null $CapacityToRelease
+ * @property string|null $FileCacheId
+ * @property ReleaseConfiguration|null $ReleaseConfiguration
  */
 class DataRepositoryTask extends Shape
 {
@@ -30,18 +30,18 @@ class DataRepositoryTask extends Shape
      *     Lifecycle: 'PENDING'|'EXECUTING'|'FAILED'|'SUCCEEDED'|'CANCELED'|'CANCELING',
      *     Type: 'EXPORT_TO_REPOSITORY'|'IMPORT_METADATA_FROM_REPOSITORY'|'RELEASE_DATA_FROM_FILESYSTEM'|'AUTO_RELEASE_DATA',
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     ResourceARN?: string,
-     *     Tags?: list<Tag>,
-     *     FileSystemId?: string,
-     *     Paths?: list<string>,
-     *     FailureDetails?: DataRepositoryTaskFailureDetails,
-     *     Status?: DataRepositoryTaskStatus,
-     *     Report?: CompletionReport,
-     *     CapacityToRelease?: int<1, 2147483647>,
-     *     FileCacheId?: string,
-     *     ReleaseConfiguration?: ReleaseConfiguration
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     ResourceARN?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     FileSystemId?: string|null,
+     *     Paths?: list<string>|null,
+     *     FailureDetails?: DataRepositoryTaskFailureDetails|null,
+     *     Status?: DataRepositoryTaskStatus|null,
+     *     Report?: CompletionReport|null,
+     *     CapacityToRelease?: int<1, 2147483647>|null,
+     *     FileCacheId?: string|null,
+     *     ReleaseConfiguration?: ReleaseConfiguration|null
      * } $args
      */
     public function __construct(array $args)

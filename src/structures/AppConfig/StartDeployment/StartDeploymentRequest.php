@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DeploymentStrategyId
  * @property string $ConfigurationProfileId
  * @property string $ConfigurationVersion
- * @property string $Description
- * @property array<string, string> $Tags
- * @property string $KmsKeyIdentifier
- * @property array<string, string> $DynamicExtensionParameters
+ * @property string|null $Description
+ * @property array<string, string>|null $Tags
+ * @property string|null $KmsKeyIdentifier
+ * @property array<string, string>|null $DynamicExtensionParameters
  */
 class StartDeploymentRequest extends Request
 {
@@ -24,10 +24,10 @@ class StartDeploymentRequest extends Request
      *     DeploymentStrategyId: string,
      *     ConfigurationProfileId: string,
      *     ConfigurationVersion: string,
-     *     Description?: string,
-     *     Tags?: array<string, string>,
-     *     KmsKeyIdentifier?: string,
-     *     DynamicExtensionParameters?: array<string, string>
+     *     Description?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     KmsKeyIdentifier?: string|null,
+     *     DynamicExtensionParameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

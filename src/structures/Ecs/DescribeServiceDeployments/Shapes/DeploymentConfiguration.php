@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeServiceDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DeploymentCircuitBreaker $deploymentCircuitBreaker
- * @property int $maximumPercent
- * @property int $minimumHealthyPercent
- * @property DeploymentAlarms $alarms
+ * @property DeploymentCircuitBreaker|null $deploymentCircuitBreaker
+ * @property int|null $maximumPercent
+ * @property int|null $minimumHealthyPercent
+ * @property DeploymentAlarms|null $alarms
  */
 class DeploymentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     deploymentCircuitBreaker?: DeploymentCircuitBreaker,
-     *     maximumPercent?: int,
-     *     minimumHealthyPercent?: int,
-     *     alarms?: DeploymentAlarms
+     *     deploymentCircuitBreaker?: DeploymentCircuitBreaker|null,
+     *     maximumPercent?: int|null,
+     *     minimumHealthyPercent?: int|null,
+     *     alarms?: DeploymentAlarms|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CatalogName
  * @property string $DatabaseName
  * @property string $TableName
- * @property string $WorkGroup
+ * @property string|null $WorkGroup
  */
 class GetTableMetadataRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetTableMetadataRequest extends Request
      *     CatalogName: string,
      *     DatabaseName: string,
      *     TableName: string,
-     *     WorkGroup?: string
+     *     WorkGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

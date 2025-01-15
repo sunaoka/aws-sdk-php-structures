@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTrustStoreAssoci
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceArn
+ * @property string|null $ResourceArn
  */
 class TrustStoreAssociation extends Shape
 {
     /**
-     * @param array{ResourceArn?: string} $args
+     * @param array{ResourceArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AccessPreviewFinding> $findings
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAccessPreviewFindingsResponse extends Response
 {

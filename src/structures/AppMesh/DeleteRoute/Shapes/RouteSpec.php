@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GrpcRoute $grpcRoute
- * @property HttpRoute $http2Route
- * @property HttpRoute $httpRoute
- * @property int<0, 1000> $priority
- * @property TcpRoute $tcpRoute
+ * @property GrpcRoute|null $grpcRoute
+ * @property HttpRoute|null $http2Route
+ * @property HttpRoute|null $httpRoute
+ * @property int<0, 1000>|null $priority
+ * @property TcpRoute|null $tcpRoute
  */
 class RouteSpec extends Shape
 {
     /**
      * @param array{
-     *     grpcRoute?: GrpcRoute,
-     *     http2Route?: HttpRoute,
-     *     httpRoute?: HttpRoute,
-     *     priority?: int<0, 1000>,
-     *     tcpRoute?: TcpRoute
+     *     grpcRoute?: GrpcRoute|null,
+     *     http2Route?: HttpRoute|null,
+     *     httpRoute?: HttpRoute|null,
+     *     priority?: int<0, 1000>|null,
+     *     tcpRoute?: TcpRoute|null
      * } $args
      */
     public function __construct(array $args = [])

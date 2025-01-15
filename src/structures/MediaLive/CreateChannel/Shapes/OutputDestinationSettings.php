@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PasswordParam
- * @property string $StreamName
- * @property string $Url
- * @property string $Username
+ * @property string|null $PasswordParam
+ * @property string|null $StreamName
+ * @property string|null $Url
+ * @property string|null $Username
  */
 class OutputDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     PasswordParam?: string,
-     *     StreamName?: string,
-     *     Url?: string,
-     *     Username?: string
+     *     PasswordParam?: string|null,
+     *     StreamName?: string|null,
+     *     Url?: string|null,
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

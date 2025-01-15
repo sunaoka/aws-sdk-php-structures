@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property string $Name
- * @property string $Description
- * @property Shapes\UpdateCustomLineItemChargeDetails $ChargeDetails
- * @property Shapes\CustomLineItemBillingPeriodRange $BillingPeriodRange
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property Shapes\UpdateCustomLineItemChargeDetails|null $ChargeDetails
+ * @property Shapes\CustomLineItemBillingPeriodRange|null $BillingPeriodRange
  */
 class UpdateCustomLineItemRequest extends Request
 {
     /**
      * @param array{
      *     Arn: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     ChargeDetails?: Shapes\UpdateCustomLineItemChargeDetails,
-     *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     ChargeDetails?: Shapes\UpdateCustomLineItemChargeDetails|null,
+     *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange|null
      * } $args
      */
     public function __construct(array $args)

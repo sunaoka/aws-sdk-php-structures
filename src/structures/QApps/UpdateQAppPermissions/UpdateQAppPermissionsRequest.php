@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $instanceId
  * @property string $appId
- * @property list<Shapes\PermissionInput> $grantPermissions
- * @property list<Shapes\PermissionInput> $revokePermissions
+ * @property list<Shapes\PermissionInput>|null $grantPermissions
+ * @property list<Shapes\PermissionInput>|null $revokePermissions
  */
 class UpdateQAppPermissionsRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateQAppPermissionsRequest extends Request
      * @param array{
      *     instanceId: string,
      *     appId: string,
-     *     grantPermissions?: list<Shapes\PermissionInput>,
-     *     revokePermissions?: list<Shapes\PermissionInput>
+     *     grantPermissions?: list<Shapes\PermissionInput>|null,
+     *     revokePermissions?: list<Shapes\PermissionInput>|null
      * } $args
      */
     public function __construct(array $args)

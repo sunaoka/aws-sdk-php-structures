@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Path
+ * @property string|null $Path
  */
 class CustomerManagedPolicyReference extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Path?: string
+     *     Path?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\HealthLake\CreateFHIRDatastore;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DatastoreName
+ * @property string|null $DatastoreName
  * @property 'R4' $DatastoreTypeVersion
- * @property Shapes\SseConfiguration $SseConfiguration
- * @property Shapes\PreloadDataConfig $PreloadDataConfig
- * @property string $ClientToken
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\IdentityProviderConfiguration $IdentityProviderConfiguration
+ * @property Shapes\SseConfiguration|null $SseConfiguration
+ * @property Shapes\PreloadDataConfig|null $PreloadDataConfig
+ * @property string|null $ClientToken
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\IdentityProviderConfiguration|null $IdentityProviderConfiguration
  */
 class CreateFHIRDatastoreRequest extends Request
 {
     /**
      * @param array{
-     *     DatastoreName?: string,
+     *     DatastoreName?: string|null,
      *     DatastoreTypeVersion: 'R4',
-     *     SseConfiguration?: Shapes\SseConfiguration,
-     *     PreloadDataConfig?: Shapes\PreloadDataConfig,
-     *     ClientToken?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     IdentityProviderConfiguration?: Shapes\IdentityProviderConfiguration
+     *     SseConfiguration?: Shapes\SseConfiguration|null,
+     *     PreloadDataConfig?: Shapes\PreloadDataConfig|null,
+     *     ClientToken?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     IdentityProviderConfiguration?: Shapes\IdentityProviderConfiguration|null
      * } $args
      */
     public function __construct(array $args)

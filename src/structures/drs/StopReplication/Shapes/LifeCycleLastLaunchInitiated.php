@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\drs\StopReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $apiCallDateTime
- * @property string $jobID
- * @property 'RECOVERY'|'DRILL' $type
+ * @property string|null $apiCallDateTime
+ * @property string|null $jobID
+ * @property 'RECOVERY'|'DRILL'|null $type
  */
 class LifeCycleLastLaunchInitiated extends Shape
 {
     /**
      * @param array{
-     *     apiCallDateTime?: string,
-     *     jobID?: string,
-     *     type?: 'RECOVERY'|'DRILL'
+     *     apiCallDateTime?: string|null,
+     *     jobID?: string|null,
+     *     type?: 'RECOVERY'|'DRILL'|null
      * } $args
      */
     public function __construct(array $args = [])

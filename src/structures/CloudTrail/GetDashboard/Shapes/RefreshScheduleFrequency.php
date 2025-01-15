@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudTrail\GetDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HOURS'|'DAYS' $Unit
- * @property int $Value
+ * @property 'HOURS'|'DAYS'|null $Unit
+ * @property int|null $Value
  */
 class RefreshScheduleFrequency extends Shape
 {
     /**
      * @param array{
-     *     Unit?: 'HOURS'|'DAYS',
-     *     Value?: int
+     *     Unit?: 'HOURS'|'DAYS'|null,
+     *     Value?: int|null
      * } $args
      */
     public function __construct(array $args = [])

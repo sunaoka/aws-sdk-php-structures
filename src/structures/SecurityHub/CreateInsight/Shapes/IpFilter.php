@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\CreateInsight\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Cidr
+ * @property string|null $Cidr
  */
 class IpFilter extends Shape
 {
     /**
-     * @param array{Cidr?: string} $args
+     * @param array{Cidr?: string|null} $args
      */
     public function __construct(array $args = [])
     {

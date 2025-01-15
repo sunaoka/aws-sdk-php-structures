@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\ListCampaigns;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 100> $maxResults
- * @property string $status
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $status
  */
 class ListCampaignsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>,
-     *     status?: string
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

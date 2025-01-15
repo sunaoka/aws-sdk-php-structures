@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NotebookId
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property string $Name
  */
 class UpdateNotebookMetadataRequest extends Request
@@ -14,7 +14,7 @@ class UpdateNotebookMetadataRequest extends Request
     /**
      * @param array{
      *     NotebookId: string,
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     Name: string
      * } $args
      */

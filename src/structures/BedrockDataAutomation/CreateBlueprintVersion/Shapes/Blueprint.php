@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
  * @property string $blueprintName
- * @property string $blueprintVersion
- * @property 'DEVELOPMENT'|'LIVE' $blueprintStage
- * @property string $kmsKeyId
- * @property array<string, string> $kmsEncryptionContext
+ * @property string|null $blueprintVersion
+ * @property 'DEVELOPMENT'|'LIVE'|null $blueprintStage
+ * @property string|null $kmsKeyId
+ * @property array<string, string>|null $kmsEncryptionContext
  */
 class Blueprint extends Shape
 {
@@ -26,10 +26,10 @@ class Blueprint extends Shape
      *     creationTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult,
      *     blueprintName: string,
-     *     blueprintVersion?: string,
-     *     blueprintStage?: 'DEVELOPMENT'|'LIVE',
-     *     kmsKeyId?: string,
-     *     kmsEncryptionContext?: array<string, string>
+     *     blueprintVersion?: string|null,
+     *     blueprintStage?: 'DEVELOPMENT'|'LIVE'|null,
+     *     kmsKeyId?: string|null,
+     *     kmsEncryptionContext?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

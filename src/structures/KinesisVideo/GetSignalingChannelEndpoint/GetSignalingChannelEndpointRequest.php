@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelARN
- * @property Shapes\SingleMasterChannelEndpointConfiguration $SingleMasterChannelEndpointConfiguration
+ * @property Shapes\SingleMasterChannelEndpointConfiguration|null $SingleMasterChannelEndpointConfiguration
  */
 class GetSignalingChannelEndpointRequest extends Request
 {
     /**
      * @param array{
      *     ChannelARN: string,
-     *     SingleMasterChannelEndpointConfiguration?: Shapes\SingleMasterChannelEndpointConfiguration
+     *     SingleMasterChannelEndpointConfiguration?: Shapes\SingleMasterChannelEndpointConfiguration|null
      * } $args
      */
     public function __construct(array $args)

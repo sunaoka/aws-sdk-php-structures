@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\VPCLattice\GetRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HttpMatch $httpMatch
+ * @property HttpMatch|null $httpMatch
  */
 class RuleMatch extends Shape
 {
     /**
-     * @param array{httpMatch?: HttpMatch} $args
+     * @param array{httpMatch?: HttpMatch|null} $args
      */
     public function __construct(array $args = [])
     {

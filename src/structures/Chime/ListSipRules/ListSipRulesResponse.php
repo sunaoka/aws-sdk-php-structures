@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Chime\ListSipRules;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\SipRule> $SipRules
- * @property string $NextToken
+ * @property list<Shapes\SipRule>|null $SipRules
+ * @property string|null $NextToken
  */
 class ListSipRulesResponse extends Response
 {

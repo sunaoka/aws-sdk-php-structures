@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Textract\AnalyzeID\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AnalyzeIDDetections $Type
- * @property AnalyzeIDDetections $ValueDetection
+ * @property AnalyzeIDDetections|null $Type
+ * @property AnalyzeIDDetections|null $ValueDetection
  */
 class IdentityDocumentField extends Shape
 {
     /**
      * @param array{
-     *     Type?: AnalyzeIDDetections,
-     *     ValueDetection?: AnalyzeIDDetections
+     *     Type?: AnalyzeIDDetections|null,
+     *     ValueDetection?: AnalyzeIDDetections|null
      * } $args
      */
     public function __construct(array $args = [])

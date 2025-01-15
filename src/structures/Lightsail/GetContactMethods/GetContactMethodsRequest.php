@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetContactMethods;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<'Email'|'SMS'> $protocols
+ * @property list<'Email'|'SMS'>|null $protocols
  */
 class GetContactMethodsRequest extends Request
 {
     /**
-     * @param array{protocols?: list<'Email'|'SMS'>} $args
+     * @param array{protocols?: list<'Email'|'SMS'>|null} $args
      */
     public function __construct(array $args = [])
     {

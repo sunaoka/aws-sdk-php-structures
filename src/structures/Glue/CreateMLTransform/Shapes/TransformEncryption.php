@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\CreateMLTransform\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MLUserDataEncryption $MlUserDataEncryption
- * @property string $TaskRunSecurityConfigurationName
+ * @property MLUserDataEncryption|null $MlUserDataEncryption
+ * @property string|null $TaskRunSecurityConfigurationName
  */
 class TransformEncryption extends Shape
 {
     /**
      * @param array{
-     *     MlUserDataEncryption?: MLUserDataEncryption,
-     *     TaskRunSecurityConfigurationName?: string
+     *     MlUserDataEncryption?: MLUserDataEncryption|null,
+     *     TaskRunSecurityConfigurationName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

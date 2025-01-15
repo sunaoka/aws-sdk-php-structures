@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Description
  * @property 'PREVENTIVE'|'PROACTIVE'|'DETECTIVE' $Behavior
  * @property Shapes\RegionConfiguration $RegionConfiguration
- * @property Shapes\ImplementationDetails $Implementation
- * @property list<Shapes\ControlParameter> $Parameters
+ * @property Shapes\ImplementationDetails|null $Implementation
+ * @property list<Shapes\ControlParameter>|null $Parameters
  */
 class GetControlResponse extends Response
 {

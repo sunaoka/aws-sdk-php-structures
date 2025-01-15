@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaPackage\CreateOriginEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $KeyRotationIntervalSeconds
+ * @property int|null $KeyRotationIntervalSeconds
  * @property SpekeKeyProvider $SpekeKeyProvider
  */
 class DashEncryption extends Shape
 {
     /**
      * @param array{
-     *     KeyRotationIntervalSeconds?: int,
+     *     KeyRotationIntervalSeconds?: int|null,
      *     SpekeKeyProvider: SpekeKeyProvider
      * } $args
      */

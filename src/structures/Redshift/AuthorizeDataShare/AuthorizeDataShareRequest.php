@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DataShareArn
  * @property string $ConsumerIdentifier
- * @property bool $AllowWrites
+ * @property bool|null $AllowWrites
  */
 class AuthorizeDataShareRequest extends Request
 {
@@ -15,7 +15,7 @@ class AuthorizeDataShareRequest extends Request
      * @param array{
      *     DataShareArn: string,
      *     ConsumerIdentifier: string,
-     *     AllowWrites?: bool
+     *     AllowWrites?: bool|null
      * } $args
      */
     public function __construct(array $args)

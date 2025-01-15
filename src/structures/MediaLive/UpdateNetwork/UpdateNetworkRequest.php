@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateNetwork;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\IpPoolUpdateRequest> $IpPools
- * @property string $Name
+ * @property list<Shapes\IpPoolUpdateRequest>|null $IpPools
+ * @property string|null $Name
  * @property string $NetworkId
- * @property list<Shapes\RouteUpdateRequest> $Routes
+ * @property list<Shapes\RouteUpdateRequest>|null $Routes
  */
 class UpdateNetworkRequest extends Request
 {
     /**
      * @param array{
-     *     IpPools?: list<Shapes\IpPoolUpdateRequest>,
-     *     Name?: string,
+     *     IpPools?: list<Shapes\IpPoolUpdateRequest>|null,
+     *     Name?: string|null,
      *     NetworkId: string,
-     *     Routes?: list<Shapes\RouteUpdateRequest>
+     *     Routes?: list<Shapes\RouteUpdateRequest>|null
      * } $args
      */
     public function __construct(array $args)

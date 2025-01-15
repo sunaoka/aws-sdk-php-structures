@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\AssociateKmsKey;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $logGroupName
+ * @property string|null $logGroupName
  * @property string $kmsKeyId
- * @property string $resourceIdentifier
+ * @property string|null $resourceIdentifier
  */
 class AssociateKmsKeyRequest extends Request
 {
     /**
      * @param array{
-     *     logGroupName?: string,
+     *     logGroupName?: string|null,
      *     kmsKeyId: string,
-     *     resourceIdentifier?: string
+     *     resourceIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

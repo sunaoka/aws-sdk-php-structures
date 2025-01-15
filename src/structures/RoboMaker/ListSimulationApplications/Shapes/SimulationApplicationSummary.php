@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\RoboMaker\ListSimulationApplications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property string $version
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property RobotSoftwareSuite $robotSoftwareSuite
- * @property SimulationSoftwareSuite $simulationSoftwareSuite
+ * @property string|null $name
+ * @property string|null $arn
+ * @property string|null $version
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property RobotSoftwareSuite|null $robotSoftwareSuite
+ * @property SimulationSoftwareSuite|null $simulationSoftwareSuite
  */
 class SimulationApplicationSummary extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     version?: string,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     robotSoftwareSuite?: RobotSoftwareSuite,
-     *     simulationSoftwareSuite?: SimulationSoftwareSuite
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     version?: string|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     robotSoftwareSuite?: RobotSoftwareSuite|null,
+     *     simulationSoftwareSuite?: SimulationSoftwareSuite|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ecs\PutAttributes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $cluster
+ * @property string|null $cluster
  * @property list<Shapes\Attribute> $attributes
  */
 class PutAttributesRequest extends Request
 {
     /**
      * @param array{
-     *     cluster?: string,
+     *     cluster?: string|null,
      *     attributes: list<Shapes\Attribute>
      * } $args
      */

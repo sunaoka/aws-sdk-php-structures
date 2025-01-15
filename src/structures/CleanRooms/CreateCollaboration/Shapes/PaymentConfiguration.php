@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property QueryComputePaymentConfig $queryCompute
- * @property MLPaymentConfig $machineLearning
+ * @property MLPaymentConfig|null $machineLearning
  */
 class PaymentConfiguration extends Shape
 {
     /**
      * @param array{
      *     queryCompute: QueryComputePaymentConfig,
-     *     machineLearning?: MLPaymentConfig
+     *     machineLearning?: MLPaymentConfig|null
      * } $args
      */
     public function __construct(array $args)

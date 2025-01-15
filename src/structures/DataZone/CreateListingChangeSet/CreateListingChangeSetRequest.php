@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'PUBLISH'|'UNPUBLISH' $action
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $entityIdentifier
- * @property string $entityRevision
+ * @property string|null $entityRevision
  * @property 'ASSET'|'DATA_PRODUCT' $entityType
  */
 class CreateListingChangeSetRequest extends Request
@@ -17,10 +17,10 @@ class CreateListingChangeSetRequest extends Request
     /**
      * @param array{
      *     action: 'PUBLISH'|'UNPUBLISH',
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     entityIdentifier: string,
-     *     entityRevision?: string,
+     *     entityRevision?: string|null,
      *     entityType: 'ASSET'|'DATA_PRODUCT'
      * } $args
      */

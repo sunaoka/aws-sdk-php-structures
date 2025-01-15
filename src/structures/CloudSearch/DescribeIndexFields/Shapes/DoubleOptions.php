@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudSearch\DescribeIndexFields\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $DefaultValue
- * @property string $SourceField
- * @property bool $FacetEnabled
- * @property bool $SearchEnabled
- * @property bool $ReturnEnabled
- * @property bool $SortEnabled
+ * @property double|null $DefaultValue
+ * @property string|null $SourceField
+ * @property bool|null $FacetEnabled
+ * @property bool|null $SearchEnabled
+ * @property bool|null $ReturnEnabled
+ * @property bool|null $SortEnabled
  */
 class DoubleOptions extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: double,
-     *     SourceField?: string,
-     *     FacetEnabled?: bool,
-     *     SearchEnabled?: bool,
-     *     ReturnEnabled?: bool,
-     *     SortEnabled?: bool
+     *     DefaultValue?: double|null,
+     *     SourceField?: string|null,
+     *     FacetEnabled?: bool|null,
+     *     SearchEnabled?: bool|null,
+     *     ReturnEnabled?: bool|null,
+     *     SortEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

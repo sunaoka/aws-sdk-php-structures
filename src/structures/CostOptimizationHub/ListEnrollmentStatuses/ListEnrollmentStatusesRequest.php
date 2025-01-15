@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\ListEnrollmentStatuses;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $includeOrganizationInfo
- * @property string $accountId
- * @property string $nextToken
- * @property int<0, 100> $maxResults
+ * @property bool|null $includeOrganizationInfo
+ * @property string|null $accountId
+ * @property string|null $nextToken
+ * @property int<0, 100>|null $maxResults
  */
 class ListEnrollmentStatusesRequest extends Request
 {
     /**
      * @param array{
-     *     includeOrganizationInfo?: bool,
-     *     accountId?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<0, 100>
+     *     includeOrganizationInfo?: bool|null,
+     *     accountId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

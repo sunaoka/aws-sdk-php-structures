@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\GetComposition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GridConfiguration $grid
- * @property PipConfiguration $pip
+ * @property GridConfiguration|null $grid
+ * @property PipConfiguration|null $pip
  */
 class LayoutConfiguration extends Shape
 {
     /**
      * @param array{
-     *     grid?: GridConfiguration,
-     *     pip?: PipConfiguration
+     *     grid?: GridConfiguration|null,
+     *     pip?: PipConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $ConnectionType
  * @property array<string, string> $Data
- * @property list<GlueSchema> $OutputSchemas
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class ConnectorDataSource extends Shape
 {
@@ -17,7 +17,7 @@ class ConnectorDataSource extends Shape
      *     Name: string,
      *     ConnectionType: string,
      *     Data: array<string, string>,
-     *     OutputSchemas?: list<GlueSchema>
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExplicitHierarchy $ExplicitHierarchy
- * @property DateTimeHierarchy $DateTimeHierarchy
- * @property PredefinedHierarchy $PredefinedHierarchy
+ * @property ExplicitHierarchy|null $ExplicitHierarchy
+ * @property DateTimeHierarchy|null $DateTimeHierarchy
+ * @property PredefinedHierarchy|null $PredefinedHierarchy
  */
 class ColumnHierarchy extends Shape
 {
     /**
      * @param array{
-     *     ExplicitHierarchy?: ExplicitHierarchy,
-     *     DateTimeHierarchy?: DateTimeHierarchy,
-     *     PredefinedHierarchy?: PredefinedHierarchy
+     *     ExplicitHierarchy?: ExplicitHierarchy|null,
+     *     DateTimeHierarchy?: DateTimeHierarchy|null,
+     *     PredefinedHierarchy?: PredefinedHierarchy|null
      * } $args
      */
     public function __construct(array $args = [])

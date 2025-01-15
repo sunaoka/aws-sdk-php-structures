@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ListAssetModelProperties\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $externalId
+ * @property string|null $id
+ * @property string|null $externalId
  * @property string $name
  * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT' $dataType
- * @property string $dataTypeSpec
- * @property string $unit
+ * @property string|null $dataTypeSpec
+ * @property string|null $unit
  * @property PropertyType $type
- * @property string $assetModelCompositeModelId
- * @property list<AssetModelPropertyPathSegment> $path
+ * @property string|null $assetModelCompositeModelId
+ * @property list<AssetModelPropertyPathSegment>|null $path
  */
 class AssetModelPropertySummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     externalId?: string,
+     *     id?: string|null,
+     *     externalId?: string|null,
      *     name: string,
      *     dataType: 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT',
-     *     dataTypeSpec?: string,
-     *     unit?: string,
+     *     dataTypeSpec?: string|null,
+     *     unit?: string|null,
      *     type: PropertyType,
-     *     assetModelCompositeModelId?: string,
-     *     path?: list<AssetModelPropertyPathSegment>
+     *     assetModelCompositeModelId?: string|null,
+     *     path?: list<AssetModelPropertyPathSegment>|null
      * } $args
      */
     public function __construct(array $args)

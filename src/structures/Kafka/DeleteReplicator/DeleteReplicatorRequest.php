@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Kafka\DeleteReplicator;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CurrentVersion
+ * @property string|null $CurrentVersion
  * @property string $ReplicatorArn
  */
 class DeleteReplicatorRequest extends Request
 {
     /**
      * @param array{
-     *     CurrentVersion?: string,
+     *     CurrentVersion?: string|null,
      *     ReplicatorArn: string
      * } $args
      */

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $configuredTableIdentifier
- * @property string $name
- * @property string $description
+ * @property string|null $name
+ * @property string|null $description
  */
 class UpdateConfiguredTableRequest extends Request
 {
     /**
      * @param array{
      *     configuredTableIdentifier: string,
-     *     name?: string,
-     *     description?: string
+     *     name?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

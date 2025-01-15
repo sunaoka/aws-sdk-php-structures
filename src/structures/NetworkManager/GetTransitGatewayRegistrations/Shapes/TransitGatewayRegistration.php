@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetTransitGatewayRegistrations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GlobalNetworkId
- * @property string $TransitGatewayArn
- * @property TransitGatewayRegistrationStateReason $State
+ * @property string|null $GlobalNetworkId
+ * @property string|null $TransitGatewayArn
+ * @property TransitGatewayRegistrationStateReason|null $State
  */
 class TransitGatewayRegistration extends Shape
 {
     /**
      * @param array{
-     *     GlobalNetworkId?: string,
-     *     TransitGatewayArn?: string,
-     *     State?: TransitGatewayRegistrationStateReason
+     *     GlobalNetworkId?: string|null,
+     *     TransitGatewayArn?: string|null,
+     *     State?: TransitGatewayRegistrationStateReason|null
      * } $args
      */
     public function __construct(array $args = [])

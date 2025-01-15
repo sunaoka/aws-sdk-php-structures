@@ -9,12 +9,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RecordIdentifierFeatureName
  * @property string $EventTimeFeatureName
  * @property list<Shapes\FeatureDefinition> $FeatureDefinitions
- * @property Shapes\OnlineStoreConfig $OnlineStoreConfig
- * @property Shapes\OfflineStoreConfig $OfflineStoreConfig
- * @property Shapes\ThroughputConfig $ThroughputConfig
- * @property string $RoleArn
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\OnlineStoreConfig|null $OnlineStoreConfig
+ * @property Shapes\OfflineStoreConfig|null $OfflineStoreConfig
+ * @property Shapes\ThroughputConfig|null $ThroughputConfig
+ * @property string|null $RoleArn
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateFeatureGroupRequest extends Request
 {
@@ -24,12 +24,12 @@ class CreateFeatureGroupRequest extends Request
      *     RecordIdentifierFeatureName: string,
      *     EventTimeFeatureName: string,
      *     FeatureDefinitions: list<Shapes\FeatureDefinition>,
-     *     OnlineStoreConfig?: Shapes\OnlineStoreConfig,
-     *     OfflineStoreConfig?: Shapes\OfflineStoreConfig,
-     *     ThroughputConfig?: Shapes\ThroughputConfig,
-     *     RoleArn?: string,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     OnlineStoreConfig?: Shapes\OnlineStoreConfig|null,
+     *     OfflineStoreConfig?: Shapes\OfflineStoreConfig|null,
+     *     ThroughputConfig?: Shapes\ThroughputConfig|null,
+     *     RoleArn?: string|null,
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListCollect
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $versionControlConfigurationTimeStamp
- * @property 'GITHUB'|'GITHUB_ENTERPRISE'|'AZURE_DEVOPS_GIT' $versionControlType
+ * @property string|null $versionControlConfigurationTimeStamp
+ * @property 'GITHUB'|'GITHUB_ENTERPRISE'|'AZURE_DEVOPS_GIT'|null $versionControlType
  */
 class VersionControlInfo extends Shape
 {
     /**
      * @param array{
-     *     versionControlConfigurationTimeStamp?: string,
-     *     versionControlType?: 'GITHUB'|'GITHUB_ENTERPRISE'|'AZURE_DEVOPS_GIT'
+     *     versionControlConfigurationTimeStamp?: string|null,
+     *     versionControlType?: 'GITHUB'|'GITHUB_ENTERPRISE'|'AZURE_DEVOPS_GIT'|null
      * } $args
      */
     public function __construct(array $args = [])

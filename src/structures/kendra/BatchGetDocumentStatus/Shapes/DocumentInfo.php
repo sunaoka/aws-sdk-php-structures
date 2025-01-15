@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DocumentId
- * @property list<DocumentAttribute> $Attributes
+ * @property list<DocumentAttribute>|null $Attributes
  */
 class DocumentInfo extends Shape
 {
     /**
      * @param array{
      *     DocumentId: string,
-     *     Attributes?: list<DocumentAttribute>
+     *     Attributes?: list<DocumentAttribute>|null
      * } $args
      */
     public function __construct(array $args)

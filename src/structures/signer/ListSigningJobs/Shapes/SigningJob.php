@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\signer\ListSigningJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jobId
- * @property Source $source
- * @property SignedObject $signedObject
- * @property SigningMaterial $signingMaterial
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property 'InProgress'|'Failed'|'Succeeded' $status
- * @property bool $isRevoked
- * @property string $profileName
- * @property string $profileVersion
- * @property string $platformId
- * @property string $platformDisplayName
- * @property \Aws\Api\DateTimeResult $signatureExpiresAt
- * @property string $jobOwner
- * @property string $jobInvoker
+ * @property string|null $jobId
+ * @property Source|null $source
+ * @property SignedObject|null $signedObject
+ * @property SigningMaterial|null $signingMaterial
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property 'InProgress'|'Failed'|'Succeeded'|null $status
+ * @property bool|null $isRevoked
+ * @property string|null $profileName
+ * @property string|null $profileVersion
+ * @property string|null $platformId
+ * @property string|null $platformDisplayName
+ * @property \Aws\Api\DateTimeResult|null $signatureExpiresAt
+ * @property string|null $jobOwner
+ * @property string|null $jobInvoker
  */
 class SigningJob extends Shape
 {
     /**
      * @param array{
-     *     jobId?: string,
-     *     source?: Source,
-     *     signedObject?: SignedObject,
-     *     signingMaterial?: SigningMaterial,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     status?: 'InProgress'|'Failed'|'Succeeded',
-     *     isRevoked?: bool,
-     *     profileName?: string,
-     *     profileVersion?: string,
-     *     platformId?: string,
-     *     platformDisplayName?: string,
-     *     signatureExpiresAt?: \Aws\Api\DateTimeResult,
-     *     jobOwner?: string,
-     *     jobInvoker?: string
+     *     jobId?: string|null,
+     *     source?: Source|null,
+     *     signedObject?: SignedObject|null,
+     *     signingMaterial?: SigningMaterial|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'InProgress'|'Failed'|'Succeeded'|null,
+     *     isRevoked?: bool|null,
+     *     profileName?: string|null,
+     *     profileVersion?: string|null,
+     *     platformId?: string|null,
+     *     platformDisplayName?: string|null,
+     *     signatureExpiresAt?: \Aws\Api\DateTimeResult|null,
+     *     jobOwner?: string|null,
+     *     jobInvoker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

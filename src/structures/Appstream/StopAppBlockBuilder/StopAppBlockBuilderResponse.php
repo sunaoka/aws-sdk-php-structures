@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Appstream\StopAppBlockBuilder;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AppBlockBuilder $AppBlockBuilder
+ * @property Shapes\AppBlockBuilder|null $AppBlockBuilder
  */
 class StopAppBlockBuilderResponse extends Response
 {

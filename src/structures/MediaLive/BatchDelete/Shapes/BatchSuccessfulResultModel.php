@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\BatchDelete\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Id
- * @property string $State
+ * @property string|null $Arn
+ * @property string|null $Id
+ * @property string|null $State
  */
 class BatchSuccessfulResultModel extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Id?: string,
-     *     State?: string
+     *     Arn?: string|null,
+     *     Id?: string|null,
+     *     State?: string|null
      * } $args
      */
     public function __construct(array $args = [])

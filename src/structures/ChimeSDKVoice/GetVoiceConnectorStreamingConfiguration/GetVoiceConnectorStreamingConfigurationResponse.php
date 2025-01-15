@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceConnectorStreamingConfigu
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\StreamingConfiguration $StreamingConfiguration
+ * @property Shapes\StreamingConfiguration|null $StreamingConfiguration
  */
 class GetVoiceConnectorStreamingConfigurationResponse extends Response
 {

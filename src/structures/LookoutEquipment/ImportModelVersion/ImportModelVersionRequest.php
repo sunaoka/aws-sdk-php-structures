@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SourceModelVersionArn
- * @property string $ModelName
+ * @property string|null $ModelName
  * @property string $DatasetName
- * @property Shapes\LabelsInputConfiguration $LabelsInputConfiguration
+ * @property Shapes\LabelsInputConfiguration|null $LabelsInputConfiguration
  * @property string $ClientToken
- * @property string $RoleArn
- * @property string $ServerSideKmsKeyId
- * @property list<Shapes\Tag> $Tags
- * @property 'NO_IMPORT'|'ADD_WHEN_EMPTY'|'OVERWRITE' $InferenceDataImportStrategy
+ * @property string|null $RoleArn
+ * @property string|null $ServerSideKmsKeyId
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'NO_IMPORT'|'ADD_WHEN_EMPTY'|'OVERWRITE'|null $InferenceDataImportStrategy
  */
 class ImportModelVersionRequest extends Request
 {
     /**
      * @param array{
      *     SourceModelVersionArn: string,
-     *     ModelName?: string,
+     *     ModelName?: string|null,
      *     DatasetName: string,
-     *     LabelsInputConfiguration?: Shapes\LabelsInputConfiguration,
+     *     LabelsInputConfiguration?: Shapes\LabelsInputConfiguration|null,
      *     ClientToken: string,
-     *     RoleArn?: string,
-     *     ServerSideKmsKeyId?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     InferenceDataImportStrategy?: 'NO_IMPORT'|'ADD_WHEN_EMPTY'|'OVERWRITE'
+     *     RoleArn?: string|null,
+     *     ServerSideKmsKeyId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     InferenceDataImportStrategy?: 'NO_IMPORT'|'ADD_WHEN_EMPTY'|'OVERWRITE'|null
      * } $args
      */
     public function __construct(array $args)

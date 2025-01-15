@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $Delimiter
- * @property 'url' $EncodingType
- * @property int $MaxKeys
- * @property string $Prefix
- * @property string $ContinuationToken
- * @property bool $FetchOwner
- * @property string $StartAfter
- * @property 'requester' $RequestPayer
- * @property string $ExpectedBucketOwner
- * @property list<'RestoreStatus'> $OptionalObjectAttributes
+ * @property string|null $Delimiter
+ * @property 'url'|null $EncodingType
+ * @property int|null $MaxKeys
+ * @property string|null $Prefix
+ * @property string|null $ContinuationToken
+ * @property bool|null $FetchOwner
+ * @property string|null $StartAfter
+ * @property 'requester'|null $RequestPayer
+ * @property string|null $ExpectedBucketOwner
+ * @property list<'RestoreStatus'>|null $OptionalObjectAttributes
  */
 class ListObjectsV2Request extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     Delimiter?: string,
-     *     EncodingType?: 'url',
-     *     MaxKeys?: int,
-     *     Prefix?: string,
-     *     ContinuationToken?: string,
-     *     FetchOwner?: bool,
-     *     StartAfter?: string,
-     *     RequestPayer?: 'requester',
-     *     ExpectedBucketOwner?: string,
-     *     OptionalObjectAttributes?: list<'RestoreStatus'>
+     *     Delimiter?: string|null,
+     *     EncodingType?: 'url'|null,
+     *     MaxKeys?: int|null,
+     *     Prefix?: string|null,
+     *     ContinuationToken?: string|null,
+     *     FetchOwner?: bool|null,
+     *     StartAfter?: string|null,
+     *     RequestPayer?: 'requester'|null,
+     *     ExpectedBucketOwner?: string|null,
+     *     OptionalObjectAttributes?: list<'RestoreStatus'>|null
      * } $args
      */
     public function __construct(array $args)

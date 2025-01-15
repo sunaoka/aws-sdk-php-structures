@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\ListConnections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $authorizationCode
- * @property string $redirectUri
+ * @property string|null $authorizationCode
+ * @property string|null $redirectUri
  */
 class AuthorizationCodeProperties extends Shape
 {
     /**
      * @param array{
-     *     authorizationCode?: string,
-     *     redirectUri?: string
+     *     authorizationCode?: string|null,
+     *     redirectUri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

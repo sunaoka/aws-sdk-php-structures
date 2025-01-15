@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeploymentTarget\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $deploymentId
- * @property string $targetId
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property list<LifecycleEvent> $lifecycleEvents
- * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|'Ready' $status
- * @property string $resourceType
- * @property double $targetVersionWeight
+ * @property string|null $deploymentId
+ * @property string|null $targetId
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property list<LifecycleEvent>|null $lifecycleEvents
+ * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|'Ready'|null $status
+ * @property string|null $resourceType
+ * @property double|null $targetVersionWeight
  */
 class CloudFormationTarget extends Shape
 {
     /**
      * @param array{
-     *     deploymentId?: string,
-     *     targetId?: string,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     lifecycleEvents?: list<LifecycleEvent>,
-     *     status?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|'Ready',
-     *     resourceType?: string,
-     *     targetVersionWeight?: double
+     *     deploymentId?: string|null,
+     *     targetId?: string|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     lifecycleEvents?: list<LifecycleEvent>|null,
+     *     status?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|'Ready'|null,
+     *     resourceType?: string|null,
+     *     targetVersionWeight?: double|null
      * } $args
      */
     public function __construct(array $args = [])

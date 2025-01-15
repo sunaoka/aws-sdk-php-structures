@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateExport;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $exportId
- * @property Shapes\ExportResourceSpecification $resourceSpecification
- * @property 'LexJson'|'TSV'|'CSV' $fileFormat
- * @property 'InProgress'|'Completed'|'Failed'|'Deleting' $exportStatus
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $exportId
+ * @property Shapes\ExportResourceSpecification|null $resourceSpecification
+ * @property 'LexJson'|'TSV'|'CSV'|null $fileFormat
+ * @property 'InProgress'|'Completed'|'Failed'|'Deleting'|null $exportStatus
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class UpdateExportResponse extends Response
 {

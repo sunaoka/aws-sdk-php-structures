@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateInstanceEventWindow;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $Name
- * @property list<Shapes\InstanceEventWindowTimeRangeRequest> $TimeRanges
- * @property string $CronExpression
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property bool|null $DryRun
+ * @property string|null $Name
+ * @property list<Shapes\InstanceEventWindowTimeRangeRequest>|null $TimeRanges
+ * @property string|null $CronExpression
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateInstanceEventWindowRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     Name?: string,
-     *     TimeRanges?: list<Shapes\InstanceEventWindowTimeRangeRequest>,
-     *     CronExpression?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>
+     *     DryRun?: bool|null,
+     *     Name?: string|null,
+     *     TimeRanges?: list<Shapes\InstanceEventWindowTimeRangeRequest>|null,
+     *     CronExpression?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args = [])

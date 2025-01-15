@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $Value
- * @property bool $IsValueSecret
+ * @property string|null $Key
+ * @property string|null $Value
+ * @property bool|null $IsValueSecret
  */
 class ConnectionQueryStringParameter extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Value?: string,
-     *     IsValueSecret?: bool
+     *     Key?: string|null,
+     *     Value?: string|null,
+     *     IsValueSecret?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

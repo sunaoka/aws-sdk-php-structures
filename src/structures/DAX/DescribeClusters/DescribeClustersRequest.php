@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DAX\DescribeClusters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ClusterNames
- * @property int $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $ClusterNames
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeClustersRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterNames?: list<string>,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     ClusterNames?: list<string>|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

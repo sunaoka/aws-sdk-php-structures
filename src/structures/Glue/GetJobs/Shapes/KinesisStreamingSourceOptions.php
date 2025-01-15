@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\Glue\GetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndpointUrl
- * @property string $StreamName
- * @property string $Classification
- * @property string $Delimiter
- * @property 'latest'|'trim_horizon'|'earliest'|'timestamp' $StartingPosition
- * @property int<0, max> $MaxFetchTimeInMs
- * @property int<0, max> $MaxFetchRecordsPerShard
- * @property int<0, max> $MaxRecordPerRead
- * @property bool $AddIdleTimeBetweenReads
- * @property int<0, max> $IdleTimeBetweenReadsInMs
- * @property int<0, max> $DescribeShardInterval
- * @property int<0, max> $NumRetries
- * @property int<0, max> $RetryIntervalMs
- * @property int<0, max> $MaxRetryIntervalMs
- * @property bool $AvoidEmptyBatches
- * @property string $StreamArn
- * @property string $RoleArn
- * @property string $RoleSessionName
- * @property string $AddRecordTimestamp
- * @property string $EmitConsumerLagMetrics
- * @property \Aws\Api\DateTimeResult $StartingTimestamp
+ * @property string|null $EndpointUrl
+ * @property string|null $StreamName
+ * @property string|null $Classification
+ * @property string|null $Delimiter
+ * @property 'latest'|'trim_horizon'|'earliest'|'timestamp'|null $StartingPosition
+ * @property int<0, max>|null $MaxFetchTimeInMs
+ * @property int<0, max>|null $MaxFetchRecordsPerShard
+ * @property int<0, max>|null $MaxRecordPerRead
+ * @property bool|null $AddIdleTimeBetweenReads
+ * @property int<0, max>|null $IdleTimeBetweenReadsInMs
+ * @property int<0, max>|null $DescribeShardInterval
+ * @property int<0, max>|null $NumRetries
+ * @property int<0, max>|null $RetryIntervalMs
+ * @property int<0, max>|null $MaxRetryIntervalMs
+ * @property bool|null $AvoidEmptyBatches
+ * @property string|null $StreamArn
+ * @property string|null $RoleArn
+ * @property string|null $RoleSessionName
+ * @property string|null $AddRecordTimestamp
+ * @property string|null $EmitConsumerLagMetrics
+ * @property \Aws\Api\DateTimeResult|null $StartingTimestamp
  */
 class KinesisStreamingSourceOptions extends Shape
 {
     /**
      * @param array{
-     *     EndpointUrl?: string,
-     *     StreamName?: string,
-     *     Classification?: string,
-     *     Delimiter?: string,
-     *     StartingPosition?: 'latest'|'trim_horizon'|'earliest'|'timestamp',
-     *     MaxFetchTimeInMs?: int<0, max>,
-     *     MaxFetchRecordsPerShard?: int<0, max>,
-     *     MaxRecordPerRead?: int<0, max>,
-     *     AddIdleTimeBetweenReads?: bool,
-     *     IdleTimeBetweenReadsInMs?: int<0, max>,
-     *     DescribeShardInterval?: int<0, max>,
-     *     NumRetries?: int<0, max>,
-     *     RetryIntervalMs?: int<0, max>,
-     *     MaxRetryIntervalMs?: int<0, max>,
-     *     AvoidEmptyBatches?: bool,
-     *     StreamArn?: string,
-     *     RoleArn?: string,
-     *     RoleSessionName?: string,
-     *     AddRecordTimestamp?: string,
-     *     EmitConsumerLagMetrics?: string,
-     *     StartingTimestamp?: \Aws\Api\DateTimeResult
+     *     EndpointUrl?: string|null,
+     *     StreamName?: string|null,
+     *     Classification?: string|null,
+     *     Delimiter?: string|null,
+     *     StartingPosition?: 'latest'|'trim_horizon'|'earliest'|'timestamp'|null,
+     *     MaxFetchTimeInMs?: int<0, max>|null,
+     *     MaxFetchRecordsPerShard?: int<0, max>|null,
+     *     MaxRecordPerRead?: int<0, max>|null,
+     *     AddIdleTimeBetweenReads?: bool|null,
+     *     IdleTimeBetweenReadsInMs?: int<0, max>|null,
+     *     DescribeShardInterval?: int<0, max>|null,
+     *     NumRetries?: int<0, max>|null,
+     *     RetryIntervalMs?: int<0, max>|null,
+     *     MaxRetryIntervalMs?: int<0, max>|null,
+     *     AvoidEmptyBatches?: bool|null,
+     *     StreamArn?: string|null,
+     *     RoleArn?: string|null,
+     *     RoleSessionName?: string|null,
+     *     AddRecordTimestamp?: string|null,
+     *     EmitConsumerLagMetrics?: string|null,
+     *     StartingTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

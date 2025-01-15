@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainName
  * @property string $certificateArn
- * @property string $description
+ * @property string|null $description
  */
 class CreateDomainNameRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateDomainNameRequest extends Request
      * @param array{
      *     domainName: string,
      *     certificateArn: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

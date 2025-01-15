@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Connect\CreateEmailAddress;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $InstanceId
  * @property string $EmailAddress
- * @property string $DisplayName
- * @property array<string, string> $Tags
- * @property string $ClientToken
+ * @property string|null $DisplayName
+ * @property array<string, string>|null $Tags
+ * @property string|null $ClientToken
  */
 class CreateEmailAddressRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     InstanceId: string,
      *     EmailAddress: string,
-     *     DisplayName?: string,
-     *     Tags?: array<string, string>,
-     *     ClientToken?: string
+     *     DisplayName?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

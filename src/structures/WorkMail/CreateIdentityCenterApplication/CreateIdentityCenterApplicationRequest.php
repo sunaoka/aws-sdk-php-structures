@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $InstanceArn
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class CreateIdentityCenterApplicationRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateIdentityCenterApplicationRequest extends Request
      * @param array{
      *     Name: string,
      *     InstanceArn: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

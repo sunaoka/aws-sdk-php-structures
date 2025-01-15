@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FieldSortOptions> $TreeMapSort
- * @property ItemsLimitConfiguration $TreeMapGroupItemsLimitConfiguration
+ * @property list<FieldSortOptions>|null $TreeMapSort
+ * @property ItemsLimitConfiguration|null $TreeMapGroupItemsLimitConfiguration
  */
 class TreeMapSortConfiguration extends Shape
 {
     /**
      * @param array{
-     *     TreeMapSort?: list<FieldSortOptions>,
-     *     TreeMapGroupItemsLimitConfiguration?: ItemsLimitConfiguration
+     *     TreeMapSort?: list<FieldSortOptions>|null,
+     *     TreeMapGroupItemsLimitConfiguration?: ItemsLimitConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

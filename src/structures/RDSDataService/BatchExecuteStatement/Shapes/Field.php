@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\RDSDataService\BatchExecuteStatement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isNull
- * @property bool $booleanValue
- * @property int $longValue
- * @property double $doubleValue
- * @property string $stringValue
- * @property string|resource|\Psr\Http\Message\StreamInterface $blobValue
- * @property ArrayValue $arrayValue
+ * @property bool|null $isNull
+ * @property bool|null $booleanValue
+ * @property int|null $longValue
+ * @property double|null $doubleValue
+ * @property string|null $stringValue
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $blobValue
+ * @property ArrayValue|null $arrayValue
  */
 class Field extends Shape
 {
     /**
      * @param array{
-     *     isNull?: bool,
-     *     booleanValue?: bool,
-     *     longValue?: int,
-     *     doubleValue?: double,
-     *     stringValue?: string,
-     *     blobValue?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     arrayValue?: ArrayValue
+     *     isNull?: bool|null,
+     *     booleanValue?: bool|null,
+     *     longValue?: int|null,
+     *     doubleValue?: double|null,
+     *     stringValue?: string|null,
+     *     blobValue?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     arrayValue?: ArrayValue|null
      * } $args
      */
     public function __construct(array $args = [])

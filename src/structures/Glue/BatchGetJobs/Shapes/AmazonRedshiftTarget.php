@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property AmazonRedshiftNodeData $Data
- * @property list<string> $Inputs
+ * @property string|null $Name
+ * @property AmazonRedshiftNodeData|null $Data
+ * @property list<string>|null $Inputs
  */
 class AmazonRedshiftTarget extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Data?: AmazonRedshiftNodeData,
-     *     Inputs?: list<string>
+     *     Name?: string|null,
+     *     Data?: AmazonRedshiftNodeData|null,
+     *     Inputs?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

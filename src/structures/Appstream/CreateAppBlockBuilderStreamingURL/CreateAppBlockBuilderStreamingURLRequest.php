@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AppBlockBuilderName
- * @property int $Validity
+ * @property int|null $Validity
  */
 class CreateAppBlockBuilderStreamingURLRequest extends Request
 {
     /**
      * @param array{
      *     AppBlockBuilderName: string,
-     *     Validity?: int
+     *     Validity?: int|null
      * } $args
      */
     public function __construct(array $args)

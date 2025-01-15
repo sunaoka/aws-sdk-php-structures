@@ -8,16 +8,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $keyspaceName
  * @property string $tableName
  * @property Shapes\SchemaDefinition $schemaDefinition
- * @property Shapes\Comment $comment
- * @property Shapes\CapacitySpecification $capacitySpecification
- * @property Shapes\EncryptionSpecification $encryptionSpecification
- * @property Shapes\PointInTimeRecovery $pointInTimeRecovery
- * @property Shapes\TimeToLive $ttl
- * @property int<0, 630720000> $defaultTimeToLive
- * @property list<Shapes\Tag> $tags
- * @property Shapes\ClientSideTimestamps $clientSideTimestamps
- * @property Shapes\AutoScalingSpecification $autoScalingSpecification
- * @property list<Shapes\ReplicaSpecification> $replicaSpecifications
+ * @property Shapes\Comment|null $comment
+ * @property Shapes\CapacitySpecification|null $capacitySpecification
+ * @property Shapes\EncryptionSpecification|null $encryptionSpecification
+ * @property Shapes\PointInTimeRecovery|null $pointInTimeRecovery
+ * @property Shapes\TimeToLive|null $ttl
+ * @property int<0, 630720000>|null $defaultTimeToLive
+ * @property list<Shapes\Tag>|null $tags
+ * @property Shapes\ClientSideTimestamps|null $clientSideTimestamps
+ * @property Shapes\AutoScalingSpecification|null $autoScalingSpecification
+ * @property list<Shapes\ReplicaSpecification>|null $replicaSpecifications
  */
 class CreateTableRequest extends Request
 {
@@ -26,16 +26,16 @@ class CreateTableRequest extends Request
      *     keyspaceName: string,
      *     tableName: string,
      *     schemaDefinition: Shapes\SchemaDefinition,
-     *     comment?: Shapes\Comment,
-     *     capacitySpecification?: Shapes\CapacitySpecification,
-     *     encryptionSpecification?: Shapes\EncryptionSpecification,
-     *     pointInTimeRecovery?: Shapes\PointInTimeRecovery,
-     *     ttl?: Shapes\TimeToLive,
-     *     defaultTimeToLive?: int<0, 630720000>,
-     *     tags?: list<Shapes\Tag>,
-     *     clientSideTimestamps?: Shapes\ClientSideTimestamps,
-     *     autoScalingSpecification?: Shapes\AutoScalingSpecification,
-     *     replicaSpecifications?: list<Shapes\ReplicaSpecification>
+     *     comment?: Shapes\Comment|null,
+     *     capacitySpecification?: Shapes\CapacitySpecification|null,
+     *     encryptionSpecification?: Shapes\EncryptionSpecification|null,
+     *     pointInTimeRecovery?: Shapes\PointInTimeRecovery|null,
+     *     ttl?: Shapes\TimeToLive|null,
+     *     defaultTimeToLive?: int<0, 630720000>|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     clientSideTimestamps?: Shapes\ClientSideTimestamps|null,
+     *     autoScalingSpecification?: Shapes\AutoScalingSpecification|null,
+     *     replicaSpecifications?: list<Shapes\ReplicaSpecification>|null
      * } $args
      */
     public function __construct(array $args)

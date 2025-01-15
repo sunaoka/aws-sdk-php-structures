@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Chime\GetVoiceConnectorOrigination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Host
- * @property int<0, 65535> $Port
- * @property 'TCP'|'UDP' $Protocol
- * @property int<1, 100> $Priority
- * @property int<1, 100> $Weight
+ * @property string|null $Host
+ * @property int<0, 65535>|null $Port
+ * @property 'TCP'|'UDP'|null $Protocol
+ * @property int<1, 100>|null $Priority
+ * @property int<1, 100>|null $Weight
  */
 class OriginationRoute extends Shape
 {
     /**
      * @param array{
-     *     Host?: string,
-     *     Port?: int<0, 65535>,
-     *     Protocol?: 'TCP'|'UDP',
-     *     Priority?: int<1, 100>,
-     *     Weight?: int<1, 100>
+     *     Host?: string|null,
+     *     Port?: int<0, 65535>|null,
+     *     Protocol?: 'TCP'|'UDP'|null,
+     *     Priority?: int<1, 100>|null,
+     *     Weight?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

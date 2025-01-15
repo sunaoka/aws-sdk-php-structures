@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Path
- * @property list<string> $Args
+ * @property list<string>|null $Args
  */
 class ScriptBootstrapActionConfig extends Shape
 {
     /**
      * @param array{
      *     Path: string,
-     *     Args?: list<string>
+     *     Args?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

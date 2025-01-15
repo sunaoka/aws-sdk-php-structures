@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndTime
- * @property CampaignEventFilter $EventFilter
- * @property 'ONCE'|'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'|'EVENT'|'IN_APP_EVENT' $Frequency
- * @property bool $IsLocalTime
- * @property QuietTime $QuietTime
+ * @property string|null $EndTime
+ * @property CampaignEventFilter|null $EventFilter
+ * @property 'ONCE'|'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'|'EVENT'|'IN_APP_EVENT'|null $Frequency
+ * @property bool|null $IsLocalTime
+ * @property QuietTime|null $QuietTime
  * @property string $StartTime
- * @property string $Timezone
+ * @property string|null $Timezone
  */
 class Schedule extends Shape
 {
     /**
      * @param array{
-     *     EndTime?: string,
-     *     EventFilter?: CampaignEventFilter,
-     *     Frequency?: 'ONCE'|'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'|'EVENT'|'IN_APP_EVENT',
-     *     IsLocalTime?: bool,
-     *     QuietTime?: QuietTime,
+     *     EndTime?: string|null,
+     *     EventFilter?: CampaignEventFilter|null,
+     *     Frequency?: 'ONCE'|'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'|'EVENT'|'IN_APP_EVENT'|null,
+     *     IsLocalTime?: bool|null,
+     *     QuietTime?: QuietTime|null,
      *     StartTime: string,
-     *     Timezone?: string
+     *     Timezone?: string|null
      * } $args
      */
     public function __construct(array $args)

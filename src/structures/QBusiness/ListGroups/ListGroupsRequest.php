@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $indexId
  * @property \Aws\Api\DateTimeResult $updatedEarlierThan
- * @property string $dataSourceId
- * @property string $nextToken
- * @property int<1, 10> $maxResults
+ * @property string|null $dataSourceId
+ * @property string|null $nextToken
+ * @property int<1, 10>|null $maxResults
  */
 class ListGroupsRequest extends Request
 {
@@ -19,9 +19,9 @@ class ListGroupsRequest extends Request
      *     applicationId: string,
      *     indexId: string,
      *     updatedEarlierThan: \Aws\Api\DateTimeResult,
-     *     dataSourceId?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 10>
+     *     dataSourceId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 10>|null
      * } $args
      */
     public function __construct(array $args)

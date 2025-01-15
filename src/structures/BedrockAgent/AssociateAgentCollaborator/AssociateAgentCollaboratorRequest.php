@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AgentDescriptor $agentDescriptor
  * @property string $agentId
  * @property string $agentVersion
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $collaborationInstruction
  * @property string $collaboratorName
- * @property 'TO_COLLABORATOR'|'DISABLED' $relayConversationHistory
+ * @property 'TO_COLLABORATOR'|'DISABLED'|null $relayConversationHistory
  */
 class AssociateAgentCollaboratorRequest extends Request
 {
@@ -20,10 +20,10 @@ class AssociateAgentCollaboratorRequest extends Request
      *     agentDescriptor: Shapes\AgentDescriptor,
      *     agentId: string,
      *     agentVersion: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     collaborationInstruction: string,
      *     collaboratorName: string,
-     *     relayConversationHistory?: 'TO_COLLABORATOR'|'DISABLED'
+     *     relayConversationHistory?: 'TO_COLLABORATOR'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

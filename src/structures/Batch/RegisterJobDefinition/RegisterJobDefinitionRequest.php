@@ -7,17 +7,17 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $jobDefinitionName
  * @property 'container'|'multinode' $type
- * @property array<string, string> $parameters
- * @property int $schedulingPriority
- * @property Shapes\ContainerProperties $containerProperties
- * @property Shapes\NodeProperties $nodeProperties
- * @property Shapes\RetryStrategy $retryStrategy
- * @property bool $propagateTags
- * @property Shapes\JobTimeout $timeout
- * @property array<string, string> $tags
- * @property list<'EC2'|'FARGATE'> $platformCapabilities
- * @property Shapes\EksProperties $eksProperties
- * @property Shapes\EcsProperties $ecsProperties
+ * @property array<string, string>|null $parameters
+ * @property int|null $schedulingPriority
+ * @property Shapes\ContainerProperties|null $containerProperties
+ * @property Shapes\NodeProperties|null $nodeProperties
+ * @property Shapes\RetryStrategy|null $retryStrategy
+ * @property bool|null $propagateTags
+ * @property Shapes\JobTimeout|null $timeout
+ * @property array<string, string>|null $tags
+ * @property list<'EC2'|'FARGATE'>|null $platformCapabilities
+ * @property Shapes\EksProperties|null $eksProperties
+ * @property Shapes\EcsProperties|null $ecsProperties
  */
 class RegisterJobDefinitionRequest extends Request
 {
@@ -25,17 +25,17 @@ class RegisterJobDefinitionRequest extends Request
      * @param array{
      *     jobDefinitionName: string,
      *     type: 'container'|'multinode',
-     *     parameters?: array<string, string>,
-     *     schedulingPriority?: int,
-     *     containerProperties?: Shapes\ContainerProperties,
-     *     nodeProperties?: Shapes\NodeProperties,
-     *     retryStrategy?: Shapes\RetryStrategy,
-     *     propagateTags?: bool,
-     *     timeout?: Shapes\JobTimeout,
-     *     tags?: array<string, string>,
-     *     platformCapabilities?: list<'EC2'|'FARGATE'>,
-     *     eksProperties?: Shapes\EksProperties,
-     *     ecsProperties?: Shapes\EcsProperties
+     *     parameters?: array<string, string>|null,
+     *     schedulingPriority?: int|null,
+     *     containerProperties?: Shapes\ContainerProperties|null,
+     *     nodeProperties?: Shapes\NodeProperties|null,
+     *     retryStrategy?: Shapes\RetryStrategy|null,
+     *     propagateTags?: bool|null,
+     *     timeout?: Shapes\JobTimeout|null,
+     *     tags?: array<string, string>|null,
+     *     platformCapabilities?: list<'EC2'|'FARGATE'>|null,
+     *     eksProperties?: Shapes\EksProperties|null,
+     *     ecsProperties?: Shapes\EcsProperties|null
      * } $args
      */
     public function __construct(array $args)

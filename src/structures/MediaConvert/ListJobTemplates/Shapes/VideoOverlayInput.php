@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FileInput
- * @property list<VideoOverlayInputClipping> $InputClippings
- * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART' $TimecodeSource
- * @property string $TimecodeStart
+ * @property string|null $FileInput
+ * @property list<VideoOverlayInputClipping>|null $InputClippings
+ * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null $TimecodeSource
+ * @property string|null $TimecodeStart
  */
 class VideoOverlayInput extends Shape
 {
     /**
      * @param array{
-     *     FileInput?: string,
-     *     InputClippings?: list<VideoOverlayInputClipping>,
-     *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART',
-     *     TimecodeStart?: string
+     *     FileInput?: string|null,
+     *     InputClippings?: list<VideoOverlayInputClipping>|null,
+     *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null,
+     *     TimecodeStart?: string|null
      * } $args
      */
     public function __construct(array $args = [])

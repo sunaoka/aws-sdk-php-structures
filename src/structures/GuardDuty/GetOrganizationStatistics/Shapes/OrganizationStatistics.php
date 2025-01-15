@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetOrganizationStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TotalAccountsCount
- * @property int $MemberAccountsCount
- * @property int $ActiveAccountsCount
- * @property int $EnabledAccountsCount
- * @property list<OrganizationFeatureStatistics> $CountByFeature
+ * @property int|null $TotalAccountsCount
+ * @property int|null $MemberAccountsCount
+ * @property int|null $ActiveAccountsCount
+ * @property int|null $EnabledAccountsCount
+ * @property list<OrganizationFeatureStatistics>|null $CountByFeature
  */
 class OrganizationStatistics extends Shape
 {
     /**
      * @param array{
-     *     TotalAccountsCount?: int,
-     *     MemberAccountsCount?: int,
-     *     ActiveAccountsCount?: int,
-     *     EnabledAccountsCount?: int,
-     *     CountByFeature?: list<OrganizationFeatureStatistics>
+     *     TotalAccountsCount?: int|null,
+     *     MemberAccountsCount?: int|null,
+     *     ActiveAccountsCount?: int|null,
+     *     EnabledAccountsCount?: int|null,
+     *     CountByFeature?: list<OrganizationFeatureStatistics>|null
      * } $args
      */
     public function __construct(array $args = [])

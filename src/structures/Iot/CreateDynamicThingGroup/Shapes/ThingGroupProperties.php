@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\CreateDynamicThingGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $thingGroupDescription
- * @property AttributePayload $attributePayload
+ * @property string|null $thingGroupDescription
+ * @property AttributePayload|null $attributePayload
  */
 class ThingGroupProperties extends Shape
 {
     /**
      * @param array{
-     *     thingGroupDescription?: string,
-     *     attributePayload?: AttributePayload
+     *     thingGroupDescription?: string|null,
+     *     attributePayload?: AttributePayload|null
      * } $args
      */
     public function __construct(array $args = [])

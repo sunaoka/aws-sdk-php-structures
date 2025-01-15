@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'SITEWISE_DEFAULT_STORAGE'|'MULTI_LAYER_STORAGE' $storageType
- * @property Shapes\MultiLayerStorage $multiLayerStorage
- * @property 'ENABLED'|'DISABLED' $disassociatedDataStorage
- * @property Shapes\RetentionPeriod $retentionPeriod
+ * @property Shapes\MultiLayerStorage|null $multiLayerStorage
+ * @property 'ENABLED'|'DISABLED'|null $disassociatedDataStorage
+ * @property Shapes\RetentionPeriod|null $retentionPeriod
  * @property Shapes\ConfigurationStatus $configurationStatus
- * @property \Aws\Api\DateTimeResult $lastUpdateDate
- * @property 'ENABLED'|'DISABLED' $warmTier
- * @property Shapes\WarmTierRetentionPeriod $warmTierRetentionPeriod
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateDate
+ * @property 'ENABLED'|'DISABLED'|null $warmTier
+ * @property Shapes\WarmTierRetentionPeriod|null $warmTierRetentionPeriod
  */
 class DescribeStorageConfigurationResponse extends Response
 {

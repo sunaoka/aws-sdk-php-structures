@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\RenewOffering\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $amount
- * @property 'USD' $currencyCode
+ * @property double|null $amount
+ * @property 'USD'|null $currencyCode
  */
 class MonetaryAmount extends Shape
 {
     /**
      * @param array{
-     *     amount?: double,
-     *     currencyCode?: 'USD'
+     *     amount?: double|null,
+     *     currencyCode?: 'USD'|null
      * } $args
      */
     public function __construct(array $args = [])

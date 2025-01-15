@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\StorageGateway\ListGateways;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Marker
- * @property int<1, max> $Limit
+ * @property string|null $Marker
+ * @property int<1, max>|null $Limit
  */
 class ListGatewaysRequest extends Request
 {
     /**
      * @param array{
-     *     Marker?: string,
-     *     Limit?: int<1, max>
+     *     Marker?: string|null,
+     *     Limit?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTrustStoreRevoca
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DescribeTrustStoreRevocation> $TrustStoreRevocations
- * @property string $NextMarker
+ * @property list<Shapes\DescribeTrustStoreRevocation>|null $TrustStoreRevocations
+ * @property string|null $NextMarker
  */
 class DescribeTrustStoreRevocationsResponse extends Response
 {

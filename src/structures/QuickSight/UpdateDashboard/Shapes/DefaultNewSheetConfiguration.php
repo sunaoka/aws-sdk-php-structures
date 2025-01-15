@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DefaultInteractiveLayoutConfiguration $InteractiveLayoutConfiguration
- * @property DefaultPaginatedLayoutConfiguration $PaginatedLayoutConfiguration
- * @property 'PAGINATED'|'INTERACTIVE' $SheetContentType
+ * @property DefaultInteractiveLayoutConfiguration|null $InteractiveLayoutConfiguration
+ * @property DefaultPaginatedLayoutConfiguration|null $PaginatedLayoutConfiguration
+ * @property 'PAGINATED'|'INTERACTIVE'|null $SheetContentType
  */
 class DefaultNewSheetConfiguration extends Shape
 {
     /**
      * @param array{
-     *     InteractiveLayoutConfiguration?: DefaultInteractiveLayoutConfiguration,
-     *     PaginatedLayoutConfiguration?: DefaultPaginatedLayoutConfiguration,
-     *     SheetContentType?: 'PAGINATED'|'INTERACTIVE'
+     *     InteractiveLayoutConfiguration?: DefaultInteractiveLayoutConfiguration|null,
+     *     PaginatedLayoutConfiguration?: DefaultPaginatedLayoutConfiguration|null,
+     *     SheetContentType?: 'PAGINATED'|'INTERACTIVE'|null
      * } $args
      */
     public function __construct(array $args = [])

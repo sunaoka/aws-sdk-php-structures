@@ -9,21 +9,21 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ServerCertificateArn
  * @property list<Shapes\ClientVpnAuthenticationRequest> $AuthenticationOptions
  * @property Shapes\ConnectionLogOptions $ConnectionLogOptions
- * @property list<string> $DnsServers
- * @property 'tcp'|'udp' $TransportProtocol
- * @property int $VpnPort
- * @property string $Description
- * @property bool $SplitTunnel
- * @property bool $DryRun
- * @property string $ClientToken
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property list<string> $SecurityGroupIds
- * @property string $VpcId
- * @property 'enabled'|'disabled' $SelfServicePortal
- * @property Shapes\ClientConnectOptions $ClientConnectOptions
- * @property int $SessionTimeoutHours
- * @property Shapes\ClientLoginBannerOptions $ClientLoginBannerOptions
- * @property bool $DisconnectOnSessionTimeout
+ * @property list<string>|null $DnsServers
+ * @property 'tcp'|'udp'|null $TransportProtocol
+ * @property int|null $VpnPort
+ * @property string|null $Description
+ * @property bool|null $SplitTunnel
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property list<string>|null $SecurityGroupIds
+ * @property string|null $VpcId
+ * @property 'enabled'|'disabled'|null $SelfServicePortal
+ * @property Shapes\ClientConnectOptions|null $ClientConnectOptions
+ * @property int|null $SessionTimeoutHours
+ * @property Shapes\ClientLoginBannerOptions|null $ClientLoginBannerOptions
+ * @property bool|null $DisconnectOnSessionTimeout
  */
 class CreateClientVpnEndpointRequest extends Request
 {
@@ -33,21 +33,21 @@ class CreateClientVpnEndpointRequest extends Request
      *     ServerCertificateArn: string,
      *     AuthenticationOptions: list<Shapes\ClientVpnAuthenticationRequest>,
      *     ConnectionLogOptions: Shapes\ConnectionLogOptions,
-     *     DnsServers?: list<string>,
-     *     TransportProtocol?: 'tcp'|'udp',
-     *     VpnPort?: int,
-     *     Description?: string,
-     *     SplitTunnel?: bool,
-     *     DryRun?: bool,
-     *     ClientToken?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     SecurityGroupIds?: list<string>,
-     *     VpcId?: string,
-     *     SelfServicePortal?: 'enabled'|'disabled',
-     *     ClientConnectOptions?: Shapes\ClientConnectOptions,
-     *     SessionTimeoutHours?: int,
-     *     ClientLoginBannerOptions?: Shapes\ClientLoginBannerOptions,
-     *     DisconnectOnSessionTimeout?: bool
+     *     DnsServers?: list<string>|null,
+     *     TransportProtocol?: 'tcp'|'udp'|null,
+     *     VpnPort?: int|null,
+     *     Description?: string|null,
+     *     SplitTunnel?: bool|null,
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     VpcId?: string|null,
+     *     SelfServicePortal?: 'enabled'|'disabled'|null,
+     *     ClientConnectOptions?: Shapes\ClientConnectOptions|null,
+     *     SessionTimeoutHours?: int|null,
+     *     ClientLoginBannerOptions?: Shapes\ClientLoginBannerOptions|null,
+     *     DisconnectOnSessionTimeout?: bool|null
      * } $args
      */
     public function __construct(array $args)

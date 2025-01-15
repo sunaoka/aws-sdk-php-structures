@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkMonitor\ListMonitors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 25> $maxResults
- * @property string $state
+ * @property string|null $nextToken
+ * @property int<1, 25>|null $maxResults
+ * @property string|null $state
  */
 class ListMonitorsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 25>,
-     *     state?: string
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 25>|null,
+     *     state?: string|null
      * } $args
      */
     public function __construct(array $args = [])

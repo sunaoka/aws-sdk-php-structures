@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\DescribeRecommendationExportJo
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $jobIds
- * @property list<Shapes\JobFilter> $filters
- * @property string $nextToken
- * @property int<0, 1000> $maxResults
+ * @property list<string>|null $jobIds
+ * @property list<Shapes\JobFilter>|null $filters
+ * @property string|null $nextToken
+ * @property int<0, 1000>|null $maxResults
  */
 class DescribeRecommendationExportJobsRequest extends Request
 {
     /**
      * @param array{
-     *     jobIds?: list<string>,
-     *     filters?: list<Shapes\JobFilter>,
-     *     nextToken?: string,
-     *     maxResults?: int<0, 1000>
+     *     jobIds?: list<string>|null,
+     *     filters?: list<Shapes\JobFilter>|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AMPLIFY_MANAGED'|'CUSTOM' $type
- * @property string $customCertificateArn
+ * @property string|null $customCertificateArn
  */
 class CertificateSettings extends Shape
 {
     /**
      * @param array{
      *     type: 'AMPLIFY_MANAGED'|'CUSTOM',
-     *     customCertificateArn?: string
+     *     customCertificateArn?: string|null
      * } $args
      */
     public function __construct(array $args)

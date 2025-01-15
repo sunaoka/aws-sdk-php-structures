@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConnect\ListEntitlements\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DataTransferSubscriberFeePercent
+ * @property int|null $DataTransferSubscriberFeePercent
  * @property string $EntitlementArn
  * @property string $EntitlementName
  */
@@ -13,7 +13,7 @@ class ListedEntitlement extends Shape
 {
     /**
      * @param array{
-     *     DataTransferSubscriberFeePercent?: int,
+     *     DataTransferSubscriberFeePercent?: int|null,
      *     EntitlementArn: string,
      *     EntitlementName: string
      * } $args

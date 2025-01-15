@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\ListRegistered
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property list<'RedHat'> $SubscriptionProviderSources
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<'RedHat'>|null $SubscriptionProviderSources
  */
 class ListRegisteredSubscriptionProvidersRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     SubscriptionProviderSources?: list<'RedHat'>
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     SubscriptionProviderSources?: list<'RedHat'>|null
      * } $args
      */
     public function __construct(array $args = [])

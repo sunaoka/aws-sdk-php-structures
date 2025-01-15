@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeClusterParameterGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ParameterGroupName
- * @property int $MaxRecords
- * @property string $Marker
- * @property list<string> $TagKeys
- * @property list<string> $TagValues
+ * @property string|null $ParameterGroupName
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property list<string>|null $TagKeys
+ * @property list<string>|null $TagValues
  */
 class DescribeClusterParameterGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     ParameterGroupName?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     TagKeys?: list<string>,
-     *     TagValues?: list<string>
+     *     ParameterGroupName?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     TagKeys?: list<string>|null,
+     *     TagValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\GetAppMonitor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $CwLogEnabled
- * @property string $CwLogGroup
+ * @property bool|null $CwLogEnabled
+ * @property string|null $CwLogGroup
  */
 class CwLog extends Shape
 {
     /**
      * @param array{
-     *     CwLogEnabled?: bool,
-     *     CwLogGroup?: string
+     *     CwLogEnabled?: bool|null,
+     *     CwLogGroup?: string|null
      * } $args
      */
     public function __construct(array $args = [])

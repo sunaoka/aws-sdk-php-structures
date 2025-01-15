@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListReviewTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property list<string> $Lenses
- * @property string $Owner
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property string $TemplateArn
- * @property string $TemplateName
- * @property 'CURRENT'|'LENS_NOT_CURRENT' $UpdateStatus
+ * @property string|null $Description
+ * @property list<string>|null $Lenses
+ * @property string|null $Owner
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property string|null $TemplateArn
+ * @property string|null $TemplateName
+ * @property 'CURRENT'|'LENS_NOT_CURRENT'|null $UpdateStatus
  */
 class ReviewTemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     Lenses?: list<string>,
-     *     Owner?: string,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     TemplateArn?: string,
-     *     TemplateName?: string,
-     *     UpdateStatus?: 'CURRENT'|'LENS_NOT_CURRENT'
+     *     Description?: string|null,
+     *     Lenses?: list<string>|null,
+     *     Owner?: string|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     TemplateArn?: string|null,
+     *     TemplateName?: string|null,
+     *     UpdateStatus?: 'CURRENT'|'LENS_NOT_CURRENT'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ecs\DiscoverPollEndpoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $endpoint
- * @property string $telemetryEndpoint
- * @property string $serviceConnectEndpoint
+ * @property string|null $endpoint
+ * @property string|null $telemetryEndpoint
+ * @property string|null $serviceConnectEndpoint
  */
 class DiscoverPollEndpointResponse extends Response
 {

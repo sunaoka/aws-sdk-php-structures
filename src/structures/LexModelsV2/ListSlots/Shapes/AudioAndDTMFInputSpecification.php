@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<1, max> $startTimeoutMs
- * @property AudioSpecification $audioSpecification
- * @property DTMFSpecification $dtmfSpecification
+ * @property AudioSpecification|null $audioSpecification
+ * @property DTMFSpecification|null $dtmfSpecification
  */
 class AudioAndDTMFInputSpecification extends Shape
 {
     /**
      * @param array{
      *     startTimeoutMs: int<1, max>,
-     *     audioSpecification?: AudioSpecification,
-     *     dtmfSpecification?: DTMFSpecification
+     *     audioSpecification?: AudioSpecification|null,
+     *     dtmfSpecification?: DTMFSpecification|null
      * } $args
      */
     public function __construct(array $args)

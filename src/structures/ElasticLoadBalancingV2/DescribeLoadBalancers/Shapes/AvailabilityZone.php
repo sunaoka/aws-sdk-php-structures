@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeLoadBalancers\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ZoneName
- * @property string $SubnetId
- * @property string $OutpostId
- * @property list<LoadBalancerAddress> $LoadBalancerAddresses
- * @property list<string> $SourceNatIpv6Prefixes
+ * @property string|null $ZoneName
+ * @property string|null $SubnetId
+ * @property string|null $OutpostId
+ * @property list<LoadBalancerAddress>|null $LoadBalancerAddresses
+ * @property list<string>|null $SourceNatIpv6Prefixes
  */
 class AvailabilityZone extends Shape
 {
     /**
      * @param array{
-     *     ZoneName?: string,
-     *     SubnetId?: string,
-     *     OutpostId?: string,
-     *     LoadBalancerAddresses?: list<LoadBalancerAddress>,
-     *     SourceNatIpv6Prefixes?: list<string>
+     *     ZoneName?: string|null,
+     *     SubnetId?: string|null,
+     *     OutpostId?: string|null,
+     *     LoadBalancerAddresses?: list<LoadBalancerAddress>|null,
+     *     SourceNatIpv6Prefixes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

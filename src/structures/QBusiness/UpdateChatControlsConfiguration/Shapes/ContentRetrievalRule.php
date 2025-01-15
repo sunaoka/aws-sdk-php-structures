@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateChatControlsConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<EligibleDataSource> $eligibleDataSources
+ * @property list<EligibleDataSource>|null $eligibleDataSources
  */
 class ContentRetrievalRule extends Shape
 {
     /**
-     * @param array{eligibleDataSources?: list<EligibleDataSource>} $args
+     * @param array{eligibleDataSources?: list<EligibleDataSource>|null} $args
      */
     public function __construct(array $args = [])
     {

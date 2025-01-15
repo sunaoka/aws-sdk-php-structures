@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CSV' $Format
- * @property string $BucketAccountId
+ * @property string|null $BucketAccountId
  * @property string $Bucket
- * @property string $Prefix
+ * @property string|null $Prefix
  */
 class AnalyticsS3BucketDestination extends Shape
 {
     /**
      * @param array{
      *     Format: 'CSV',
-     *     BucketAccountId?: string,
+     *     BucketAccountId?: string|null,
      *     Bucket: string,
-     *     Prefix?: string
+     *     Prefix?: string|null
      * } $args
      */
     public function __construct(array $args)

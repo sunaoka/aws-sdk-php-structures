@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property IntelligentTieringFilter $Filter
+ * @property IntelligentTieringFilter|null $Filter
  * @property 'Enabled'|'Disabled' $Status
  * @property list<Tiering> $Tierings
  */
@@ -15,7 +15,7 @@ class IntelligentTieringConfiguration extends Shape
     /**
      * @param array{
      *     Id: string,
-     *     Filter?: IntelligentTieringFilter,
+     *     Filter?: IntelligentTieringFilter|null,
      *     Status: 'Enabled'|'Disabled',
      *     Tierings: list<Tiering>
      * } $args

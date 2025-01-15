@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\finspace\GetKxCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $nodeType
- * @property int<1, max> $nodeCount
+ * @property string|null $nodeType
+ * @property int<1, max>|null $nodeCount
  */
 class CapacityConfiguration extends Shape
 {
     /**
      * @param array{
-     *     nodeType?: string,
-     *     nodeCount?: int<1, max>
+     *     nodeType?: string|null,
+     *     nodeCount?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

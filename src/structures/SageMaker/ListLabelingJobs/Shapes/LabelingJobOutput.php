@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $OutputDatasetS3Uri
- * @property string $FinalActiveLearningModelArn
+ * @property string|null $FinalActiveLearningModelArn
  */
 class LabelingJobOutput extends Shape
 {
     /**
      * @param array{
      *     OutputDatasetS3Uri: string,
-     *     FinalActiveLearningModelArn?: string
+     *     FinalActiveLearningModelArn?: string|null
      * } $args
      */
     public function __construct(array $args)

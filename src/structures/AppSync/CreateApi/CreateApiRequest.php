@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $ownerContact
- * @property array<string, string> $tags
- * @property Shapes\EventConfig $eventConfig
+ * @property string|null $ownerContact
+ * @property array<string, string>|null $tags
+ * @property Shapes\EventConfig|null $eventConfig
  */
 class CreateApiRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     ownerContact?: string,
-     *     tags?: array<string, string>,
-     *     eventConfig?: Shapes\EventConfig
+     *     ownerContact?: string|null,
+     *     tags?: array<string, string>|null,
+     *     eventConfig?: Shapes\EventConfig|null
      * } $args
      */
     public function __construct(array $args)

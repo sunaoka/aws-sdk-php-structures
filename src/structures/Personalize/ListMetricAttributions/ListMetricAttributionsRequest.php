@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Personalize\ListMetricAttributions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $datasetGroupArn
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $datasetGroupArn
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListMetricAttributionsRequest extends Request
 {
     /**
      * @param array{
-     *     datasetGroupArn?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     datasetGroupArn?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

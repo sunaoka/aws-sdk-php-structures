@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\drs\DescribeRecoveryInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $agentVersion
- * @property string $arn
- * @property RecoveryInstanceDataReplicationInfo $dataReplicationInfo
- * @property string $ec2InstanceID
- * @property 'PENDING'|'RUNNING'|'STOPPING'|'STOPPED'|'SHUTTING-DOWN'|'TERMINATED'|'NOT_FOUND' $ec2InstanceState
- * @property RecoveryInstanceFailback $failback
- * @property bool $isDrill
- * @property string $jobID
- * @property string $originAvailabilityZone
- * @property 'ON_PREMISES'|'AWS' $originEnvironment
- * @property string $pointInTimeSnapshotDateTime
- * @property string $recoveryInstanceID
- * @property RecoveryInstanceProperties $recoveryInstanceProperties
- * @property string $sourceOutpostArn
- * @property string $sourceServerID
- * @property array<string, string> $tags
+ * @property string|null $agentVersion
+ * @property string|null $arn
+ * @property RecoveryInstanceDataReplicationInfo|null $dataReplicationInfo
+ * @property string|null $ec2InstanceID
+ * @property 'PENDING'|'RUNNING'|'STOPPING'|'STOPPED'|'SHUTTING-DOWN'|'TERMINATED'|'NOT_FOUND'|null $ec2InstanceState
+ * @property RecoveryInstanceFailback|null $failback
+ * @property bool|null $isDrill
+ * @property string|null $jobID
+ * @property string|null $originAvailabilityZone
+ * @property 'ON_PREMISES'|'AWS'|null $originEnvironment
+ * @property string|null $pointInTimeSnapshotDateTime
+ * @property string|null $recoveryInstanceID
+ * @property RecoveryInstanceProperties|null $recoveryInstanceProperties
+ * @property string|null $sourceOutpostArn
+ * @property string|null $sourceServerID
+ * @property array<string, string>|null $tags
  */
 class RecoveryInstance extends Shape
 {
     /**
      * @param array{
-     *     agentVersion?: string,
-     *     arn?: string,
-     *     dataReplicationInfo?: RecoveryInstanceDataReplicationInfo,
-     *     ec2InstanceID?: string,
-     *     ec2InstanceState?: 'PENDING'|'RUNNING'|'STOPPING'|'STOPPED'|'SHUTTING-DOWN'|'TERMINATED'|'NOT_FOUND',
-     *     failback?: RecoveryInstanceFailback,
-     *     isDrill?: bool,
-     *     jobID?: string,
-     *     originAvailabilityZone?: string,
-     *     originEnvironment?: 'ON_PREMISES'|'AWS',
-     *     pointInTimeSnapshotDateTime?: string,
-     *     recoveryInstanceID?: string,
-     *     recoveryInstanceProperties?: RecoveryInstanceProperties,
-     *     sourceOutpostArn?: string,
-     *     sourceServerID?: string,
-     *     tags?: array<string, string>
+     *     agentVersion?: string|null,
+     *     arn?: string|null,
+     *     dataReplicationInfo?: RecoveryInstanceDataReplicationInfo|null,
+     *     ec2InstanceID?: string|null,
+     *     ec2InstanceState?: 'PENDING'|'RUNNING'|'STOPPING'|'STOPPED'|'SHUTTING-DOWN'|'TERMINATED'|'NOT_FOUND'|null,
+     *     failback?: RecoveryInstanceFailback|null,
+     *     isDrill?: bool|null,
+     *     jobID?: string|null,
+     *     originAvailabilityZone?: string|null,
+     *     originEnvironment?: 'ON_PREMISES'|'AWS'|null,
+     *     pointInTimeSnapshotDateTime?: string|null,
+     *     recoveryInstanceID?: string|null,
+     *     recoveryInstanceProperties?: RecoveryInstanceProperties|null,
+     *     sourceOutpostArn?: string|null,
+     *     sourceServerID?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

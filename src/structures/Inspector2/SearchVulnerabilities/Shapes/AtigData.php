@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Inspector2\SearchVulnerabilities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $firstSeen
- * @property \Aws\Api\DateTimeResult $lastSeen
- * @property list<string> $targets
- * @property list<string> $ttps
+ * @property \Aws\Api\DateTimeResult|null $firstSeen
+ * @property \Aws\Api\DateTimeResult|null $lastSeen
+ * @property list<string>|null $targets
+ * @property list<string>|null $ttps
  */
 class AtigData extends Shape
 {
     /**
      * @param array{
-     *     firstSeen?: \Aws\Api\DateTimeResult,
-     *     lastSeen?: \Aws\Api\DateTimeResult,
-     *     targets?: list<string>,
-     *     ttps?: list<string>
+     *     firstSeen?: \Aws\Api\DateTimeResult|null,
+     *     lastSeen?: \Aws\Api\DateTimeResult|null,
+     *     targets?: list<string>|null,
+     *     ttps?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

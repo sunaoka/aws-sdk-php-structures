@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeDomainNodes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DomainNodesStatus> $DomainNodesStatusList
+ * @property list<Shapes\DomainNodesStatus>|null $DomainNodesStatusList
  */
 class DescribeDomainNodesResponse extends Response
 {

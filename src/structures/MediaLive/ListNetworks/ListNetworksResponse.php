@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListNetworks;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DescribeNetworkSummary> $Networks
- * @property string $NextToken
+ * @property list<Shapes\DescribeNetworkSummary>|null $Networks
+ * @property string|null $NextToken
  */
 class ListNetworksResponse extends Response
 {

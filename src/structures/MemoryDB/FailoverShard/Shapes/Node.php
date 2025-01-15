@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MemoryDB\FailoverShard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Status
- * @property string $AvailabilityZone
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property Endpoint $Endpoint
+ * @property string|null $Name
+ * @property string|null $Status
+ * @property string|null $AvailabilityZone
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property Endpoint|null $Endpoint
  */
 class Node extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Status?: string,
-     *     AvailabilityZone?: string,
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     Endpoint?: Endpoint
+     *     Name?: string|null,
+     *     Status?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     Endpoint?: Endpoint|null
      * } $args
      */
     public function __construct(array $args = [])

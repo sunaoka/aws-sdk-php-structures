@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\UpdateElasticsearchDomainC
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AutomatedSnapshotStartHour
+ * @property int|null $AutomatedSnapshotStartHour
  */
 class SnapshotOptions extends Shape
 {
     /**
-     * @param array{AutomatedSnapshotStartHour?: int} $args
+     * @param array{AutomatedSnapshotStartHour?: int|null} $args
      */
     public function __construct(array $args = [])
     {

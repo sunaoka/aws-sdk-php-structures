@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NexGuardFileMarkerSettings $NexguardFileMarkerSettings
+ * @property NexGuardFileMarkerSettings|null $NexguardFileMarkerSettings
  */
 class PartnerWatermarking extends Shape
 {
     /**
-     * @param array{NexguardFileMarkerSettings?: NexGuardFileMarkerSettings} $args
+     * @param array{NexguardFileMarkerSettings?: NexGuardFileMarkerSettings|null} $args
      */
     public function __construct(array $args = [])
     {

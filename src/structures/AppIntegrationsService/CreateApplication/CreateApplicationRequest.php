@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $Namespace
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\ApplicationSourceConfig $ApplicationSourceConfig
- * @property list<Shapes\Subscription> $Subscriptions
- * @property list<Shapes\Publication> $Publications
- * @property string $ClientToken
- * @property array<string, string> $Tags
- * @property list<string> $Permissions
+ * @property list<Shapes\Subscription>|null $Subscriptions
+ * @property list<Shapes\Publication>|null $Publications
+ * @property string|null $ClientToken
+ * @property array<string, string>|null $Tags
+ * @property list<string>|null $Permissions
  */
 class CreateApplicationRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateApplicationRequest extends Request
      * @param array{
      *     Name: string,
      *     Namespace: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     ApplicationSourceConfig: Shapes\ApplicationSourceConfig,
-     *     Subscriptions?: list<Shapes\Subscription>,
-     *     Publications?: list<Shapes\Publication>,
-     *     ClientToken?: string,
-     *     Tags?: array<string, string>,
-     *     Permissions?: list<string>
+     *     Subscriptions?: list<Shapes\Subscription>|null,
+     *     Publications?: list<Shapes\Publication>|null,
+     *     ClientToken?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     Permissions?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

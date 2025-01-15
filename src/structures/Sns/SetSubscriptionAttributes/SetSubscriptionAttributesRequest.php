@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SubscriptionArn
  * @property string $AttributeName
- * @property string $AttributeValue
+ * @property string|null $AttributeValue
  */
 class SetSubscriptionAttributesRequest extends Request
 {
@@ -15,7 +15,7 @@ class SetSubscriptionAttributesRequest extends Request
      * @param array{
      *     SubscriptionArn: string,
      *     AttributeName: string,
-     *     AttributeValue?: string
+     *     AttributeValue?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $packageName
- * @property string $preLaunchFile
+ * @property string|null $preLaunchFile
  * @property string $launchFile
- * @property string $postLaunchFile
- * @property array<string, string> $environmentVariables
+ * @property string|null $postLaunchFile
+ * @property array<string, string>|null $environmentVariables
  */
 class DeploymentLaunchConfig extends Shape
 {
     /**
      * @param array{
      *     packageName: string,
-     *     preLaunchFile?: string,
+     *     preLaunchFile?: string|null,
      *     launchFile: string,
-     *     postLaunchFile?: string,
-     *     environmentVariables?: array<string, string>
+     *     postLaunchFile?: string|null,
+     *     environmentVariables?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

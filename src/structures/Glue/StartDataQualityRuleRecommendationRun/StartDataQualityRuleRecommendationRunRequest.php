@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\DataSource $DataSource
  * @property string $Role
- * @property int $NumberOfWorkers
- * @property int<1, max> $Timeout
- * @property string $CreatedRulesetName
- * @property string $DataQualitySecurityConfiguration
- * @property string $ClientToken
+ * @property int|null $NumberOfWorkers
+ * @property int<1, max>|null $Timeout
+ * @property string|null $CreatedRulesetName
+ * @property string|null $DataQualitySecurityConfiguration
+ * @property string|null $ClientToken
  */
 class StartDataQualityRuleRecommendationRunRequest extends Request
 {
@@ -19,11 +19,11 @@ class StartDataQualityRuleRecommendationRunRequest extends Request
      * @param array{
      *     DataSource: Shapes\DataSource,
      *     Role: string,
-     *     NumberOfWorkers?: int,
-     *     Timeout?: int<1, max>,
-     *     CreatedRulesetName?: string,
-     *     DataQualitySecurityConfiguration?: string,
-     *     ClientToken?: string
+     *     NumberOfWorkers?: int|null,
+     *     Timeout?: int<1, max>|null,
+     *     CreatedRulesetName?: string|null,
+     *     DataQualitySecurityConfiguration?: string|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

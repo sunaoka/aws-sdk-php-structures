@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property DeviceUnderTest $primaryDevice
- * @property list<string> $selectedTestList
- * @property bool $parallelRun
+ * @property list<string>|null $selectedTestList
+ * @property bool|null $parallelRun
  */
 class SuiteRunConfiguration extends Shape
 {
     /**
      * @param array{
      *     primaryDevice: DeviceUnderTest,
-     *     selectedTestList?: list<string>,
-     *     parallelRun?: bool
+     *     selectedTestList?: list<string>|null,
+     *     parallelRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

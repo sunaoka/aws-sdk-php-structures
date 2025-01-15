@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\EMRContainers\ListJobTemplates;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\JobTemplate> $templates
- * @property string $nextToken
+ * @property list<Shapes\JobTemplate>|null $templates
+ * @property string|null $nextToken
  */
 class ListJobTemplatesResponse extends Response
 {

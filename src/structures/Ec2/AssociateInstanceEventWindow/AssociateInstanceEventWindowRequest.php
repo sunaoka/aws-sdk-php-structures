@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\AssociateInstanceEventWindow;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $InstanceEventWindowId
  * @property Shapes\InstanceEventWindowAssociationRequest $AssociationTarget
  */
@@ -13,7 +13,7 @@ class AssociateInstanceEventWindowRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InstanceEventWindowId: string,
      *     AssociationTarget: Shapes\InstanceEventWindowAssociationRequest
      * } $args

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ecs\ListTasks;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $taskArns
- * @property string $nextToken
+ * @property list<string>|null $taskArns
+ * @property string|null $nextToken
  */
 class ListTasksResponse extends Response
 {

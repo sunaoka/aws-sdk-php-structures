@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $GradientOffset
- * @property double $DataValue
- * @property string $Color
+ * @property double|null $DataValue
+ * @property string|null $Color
  */
 class GradientStop extends Shape
 {
     /**
      * @param array{
      *     GradientOffset: double,
-     *     DataValue?: double,
-     *     Color?: string
+     *     DataValue?: double|null,
+     *     Color?: string|null
      * } $args
      */
     public function __construct(array $args)

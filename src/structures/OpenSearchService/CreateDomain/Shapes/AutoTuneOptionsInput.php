@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $DesiredState
- * @property list<AutoTuneMaintenanceSchedule> $MaintenanceSchedules
- * @property bool $UseOffPeakWindow
+ * @property 'ENABLED'|'DISABLED'|null $DesiredState
+ * @property list<AutoTuneMaintenanceSchedule>|null $MaintenanceSchedules
+ * @property bool|null $UseOffPeakWindow
  */
 class AutoTuneOptionsInput extends Shape
 {
     /**
      * @param array{
-     *     DesiredState?: 'ENABLED'|'DISABLED',
-     *     MaintenanceSchedules?: list<AutoTuneMaintenanceSchedule>,
-     *     UseOffPeakWindow?: bool
+     *     DesiredState?: 'ENABLED'|'DISABLED'|null,
+     *     MaintenanceSchedules?: list<AutoTuneMaintenanceSchedule>|null,
+     *     UseOffPeakWindow?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

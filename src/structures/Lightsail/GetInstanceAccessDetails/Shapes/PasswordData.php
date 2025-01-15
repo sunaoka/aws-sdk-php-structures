@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstanceAccessDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ciphertext
- * @property string $keyPairName
+ * @property string|null $ciphertext
+ * @property string|null $keyPairName
  */
 class PasswordData extends Shape
 {
     /**
      * @param array{
-     *     ciphertext?: string,
-     *     keyPairName?: string
+     *     ciphertext?: string|null,
+     *     keyPairName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\UpdateDetector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EbsVolumes
+ * @property bool|null $EbsVolumes
  */
 class ScanEc2InstanceWithFindings extends Shape
 {
     /**
-     * @param array{EbsVolumes?: bool} $args
+     * @param array{EbsVolumes?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

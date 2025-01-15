@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Connect\SearchHoursOfOperationOverrides\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HoursOfOperationOverrideId
- * @property string $HoursOfOperationId
- * @property string $HoursOfOperationArn
- * @property string $Name
- * @property string $Description
- * @property list<HoursOfOperationOverrideConfig> $Config
- * @property string $EffectiveFrom
- * @property string $EffectiveTill
+ * @property string|null $HoursOfOperationOverrideId
+ * @property string|null $HoursOfOperationId
+ * @property string|null $HoursOfOperationArn
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property list<HoursOfOperationOverrideConfig>|null $Config
+ * @property string|null $EffectiveFrom
+ * @property string|null $EffectiveTill
  */
 class HoursOfOperationOverride extends Shape
 {
     /**
      * @param array{
-     *     HoursOfOperationOverrideId?: string,
-     *     HoursOfOperationId?: string,
-     *     HoursOfOperationArn?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Config?: list<HoursOfOperationOverrideConfig>,
-     *     EffectiveFrom?: string,
-     *     EffectiveTill?: string
+     *     HoursOfOperationOverrideId?: string|null,
+     *     HoursOfOperationId?: string|null,
+     *     HoursOfOperationArn?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Config?: list<HoursOfOperationOverrideConfig>|null,
+     *     EffectiveFrom?: string|null,
+     *     EffectiveTill?: string|null
      * } $args
      */
     public function __construct(array $args = [])

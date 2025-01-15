@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domain
  * @property string $name
  * @property string $version
- * @property string $description
- * @property string $defaultTaskStartToCloseTimeout
- * @property string $defaultTaskHeartbeatTimeout
- * @property Shapes\TaskList $defaultTaskList
- * @property string $defaultTaskPriority
- * @property string $defaultTaskScheduleToStartTimeout
- * @property string $defaultTaskScheduleToCloseTimeout
+ * @property string|null $description
+ * @property string|null $defaultTaskStartToCloseTimeout
+ * @property string|null $defaultTaskHeartbeatTimeout
+ * @property Shapes\TaskList|null $defaultTaskList
+ * @property string|null $defaultTaskPriority
+ * @property string|null $defaultTaskScheduleToStartTimeout
+ * @property string|null $defaultTaskScheduleToCloseTimeout
  */
 class RegisterActivityTypeRequest extends Request
 {
@@ -23,13 +23,13 @@ class RegisterActivityTypeRequest extends Request
      *     domain: string,
      *     name: string,
      *     version: string,
-     *     description?: string,
-     *     defaultTaskStartToCloseTimeout?: string,
-     *     defaultTaskHeartbeatTimeout?: string,
-     *     defaultTaskList?: Shapes\TaskList,
-     *     defaultTaskPriority?: string,
-     *     defaultTaskScheduleToStartTimeout?: string,
-     *     defaultTaskScheduleToCloseTimeout?: string
+     *     description?: string|null,
+     *     defaultTaskStartToCloseTimeout?: string|null,
+     *     defaultTaskHeartbeatTimeout?: string|null,
+     *     defaultTaskList?: Shapes\TaskList|null,
+     *     defaultTaskPriority?: string|null,
+     *     defaultTaskScheduleToStartTimeout?: string|null,
+     *     defaultTaskScheduleToCloseTimeout?: string|null
      * } $args
      */
     public function __construct(array $args)

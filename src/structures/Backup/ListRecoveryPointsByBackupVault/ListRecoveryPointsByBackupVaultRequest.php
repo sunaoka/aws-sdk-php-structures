@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
- * @property string $BackupVaultAccountId
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
- * @property string $ByResourceArn
- * @property string $ByResourceType
- * @property string $ByBackupPlanId
- * @property \Aws\Api\DateTimeResult $ByCreatedBefore
- * @property \Aws\Api\DateTimeResult $ByCreatedAfter
- * @property string $ByParentRecoveryPointArn
+ * @property string|null $BackupVaultAccountId
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $ByResourceArn
+ * @property string|null $ByResourceType
+ * @property string|null $ByBackupPlanId
+ * @property \Aws\Api\DateTimeResult|null $ByCreatedBefore
+ * @property \Aws\Api\DateTimeResult|null $ByCreatedAfter
+ * @property string|null $ByParentRecoveryPointArn
  */
 class ListRecoveryPointsByBackupVaultRequest extends Request
 {
     /**
      * @param array{
      *     BackupVaultName: string,
-     *     BackupVaultAccountId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     ByResourceArn?: string,
-     *     ByResourceType?: string,
-     *     ByBackupPlanId?: string,
-     *     ByCreatedBefore?: \Aws\Api\DateTimeResult,
-     *     ByCreatedAfter?: \Aws\Api\DateTimeResult,
-     *     ByParentRecoveryPointArn?: string
+     *     BackupVaultAccountId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     ByResourceArn?: string|null,
+     *     ByResourceType?: string|null,
+     *     ByBackupPlanId?: string|null,
+     *     ByCreatedBefore?: \Aws\Api\DateTimeResult|null,
+     *     ByCreatedAfter?: \Aws\Api\DateTimeResult|null,
+     *     ByParentRecoveryPointArn?: string|null
      * } $args
      */
     public function __construct(array $args)

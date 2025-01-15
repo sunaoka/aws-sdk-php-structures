@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DocDB\ModifyDBClusterSnapshotAttribute;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DBClusterSnapshotAttributesResult $DBClusterSnapshotAttributesResult
+ * @property Shapes\DBClusterSnapshotAttributesResult|null $DBClusterSnapshotAttributesResult
  */
 class ModifyDBClusterSnapshotAttributeResponse extends Response
 {

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InstanceId
- * @property bool $ExcludeBootVolume
- * @property list<string> $ExcludeDataVolumeIds
+ * @property bool|null $ExcludeBootVolume
+ * @property list<string>|null $ExcludeDataVolumeIds
  */
 class InstanceSpecification extends Shape
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     ExcludeBootVolume?: bool,
-     *     ExcludeDataVolumeIds?: list<string>
+     *     ExcludeBootVolume?: bool|null,
+     *     ExcludeDataVolumeIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

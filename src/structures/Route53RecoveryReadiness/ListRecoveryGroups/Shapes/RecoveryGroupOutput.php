@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Cells
  * @property string $RecoveryGroupArn
  * @property string $RecoveryGroupName
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class RecoveryGroupOutput extends Shape
 {
@@ -17,7 +17,7 @@ class RecoveryGroupOutput extends Shape
      *     Cells: list<string>,
      *     RecoveryGroupArn: string,
      *     RecoveryGroupName: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\GetDomainName\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApiGatewayDomainName
- * @property string $CertificateArn
- * @property string $CertificateName
- * @property \Aws\Api\DateTimeResult $CertificateUploadDate
- * @property 'AVAILABLE'|'UPDATING'|'PENDING_CERTIFICATE_REIMPORT'|'PENDING_OWNERSHIP_VERIFICATION' $DomainNameStatus
- * @property string $DomainNameStatusMessage
- * @property 'REGIONAL'|'EDGE' $EndpointType
- * @property string $HostedZoneId
- * @property 'TLS_1_0'|'TLS_1_2' $SecurityPolicy
- * @property string $OwnershipVerificationCertificateArn
+ * @property string|null $ApiGatewayDomainName
+ * @property string|null $CertificateArn
+ * @property string|null $CertificateName
+ * @property \Aws\Api\DateTimeResult|null $CertificateUploadDate
+ * @property 'AVAILABLE'|'UPDATING'|'PENDING_CERTIFICATE_REIMPORT'|'PENDING_OWNERSHIP_VERIFICATION'|null $DomainNameStatus
+ * @property string|null $DomainNameStatusMessage
+ * @property 'REGIONAL'|'EDGE'|null $EndpointType
+ * @property string|null $HostedZoneId
+ * @property 'TLS_1_0'|'TLS_1_2'|null $SecurityPolicy
+ * @property string|null $OwnershipVerificationCertificateArn
  */
 class DomainNameConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ApiGatewayDomainName?: string,
-     *     CertificateArn?: string,
-     *     CertificateName?: string,
-     *     CertificateUploadDate?: \Aws\Api\DateTimeResult,
-     *     DomainNameStatus?: 'AVAILABLE'|'UPDATING'|'PENDING_CERTIFICATE_REIMPORT'|'PENDING_OWNERSHIP_VERIFICATION',
-     *     DomainNameStatusMessage?: string,
-     *     EndpointType?: 'REGIONAL'|'EDGE',
-     *     HostedZoneId?: string,
-     *     SecurityPolicy?: 'TLS_1_0'|'TLS_1_2',
-     *     OwnershipVerificationCertificateArn?: string
+     *     ApiGatewayDomainName?: string|null,
+     *     CertificateArn?: string|null,
+     *     CertificateName?: string|null,
+     *     CertificateUploadDate?: \Aws\Api\DateTimeResult|null,
+     *     DomainNameStatus?: 'AVAILABLE'|'UPDATING'|'PENDING_CERTIFICATE_REIMPORT'|'PENDING_OWNERSHIP_VERIFICATION'|null,
+     *     DomainNameStatusMessage?: string|null,
+     *     EndpointType?: 'REGIONAL'|'EDGE'|null,
+     *     HostedZoneId?: string|null,
+     *     SecurityPolicy?: 'TLS_1_0'|'TLS_1_2'|null,
+     *     OwnershipVerificationCertificateArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Inspector2\UpdateCisScanConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DailySchedule $daily
- * @property MonthlySchedule $monthly
- * @property OneTimeSchedule $oneTime
- * @property WeeklySchedule $weekly
+ * @property DailySchedule|null $daily
+ * @property MonthlySchedule|null $monthly
+ * @property OneTimeSchedule|null $oneTime
+ * @property WeeklySchedule|null $weekly
  */
 class Schedule extends Shape
 {
     /**
      * @param array{
-     *     daily?: DailySchedule,
-     *     monthly?: MonthlySchedule,
-     *     oneTime?: OneTimeSchedule,
-     *     weekly?: WeeklySchedule
+     *     daily?: DailySchedule|null,
+     *     monthly?: MonthlySchedule|null,
+     *     oneTime?: OneTimeSchedule|null,
+     *     weekly?: WeeklySchedule|null
      * } $args
      */
     public function __construct(array $args = [])

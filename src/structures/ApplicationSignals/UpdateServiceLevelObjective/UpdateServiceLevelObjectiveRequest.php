@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $Description
- * @property Shapes\ServiceLevelIndicatorConfig $SliConfig
- * @property Shapes\RequestBasedServiceLevelIndicatorConfig $RequestBasedSliConfig
- * @property Shapes\Goal $Goal
- * @property list<Shapes\BurnRateConfiguration> $BurnRateConfigurations
+ * @property string|null $Description
+ * @property Shapes\ServiceLevelIndicatorConfig|null $SliConfig
+ * @property Shapes\RequestBasedServiceLevelIndicatorConfig|null $RequestBasedSliConfig
+ * @property Shapes\Goal|null $Goal
+ * @property list<Shapes\BurnRateConfiguration>|null $BurnRateConfigurations
  */
 class UpdateServiceLevelObjectiveRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     Description?: string,
-     *     SliConfig?: Shapes\ServiceLevelIndicatorConfig,
-     *     RequestBasedSliConfig?: Shapes\RequestBasedServiceLevelIndicatorConfig,
-     *     Goal?: Shapes\Goal,
-     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>
+     *     Description?: string|null,
+     *     SliConfig?: Shapes\ServiceLevelIndicatorConfig|null,
+     *     RequestBasedSliConfig?: Shapes\RequestBasedServiceLevelIndicatorConfig|null,
+     *     Goal?: Shapes\Goal|null,
+     *     BurnRateConfigurations?: list<Shapes\BurnRateConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

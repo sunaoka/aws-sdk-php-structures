@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationTas
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\ReplicationTaskIndividualAssessment> $ReplicationTaskIndividualAssessments
+ * @property string|null $Marker
+ * @property list<Shapes\ReplicationTaskIndividualAssessment>|null $ReplicationTaskIndividualAssessments
  */
 class DescribeReplicationTaskIndividualAssessmentsResponse extends Response
 {

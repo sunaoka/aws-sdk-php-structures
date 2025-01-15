@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\CreateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $permissionGroupId
- * @property list<ResourcePermission> $datasetPermissions
+ * @property string|null $permissionGroupId
+ * @property list<ResourcePermission>|null $datasetPermissions
  */
 class PermissionGroupParams extends Shape
 {
     /**
      * @param array{
-     *     permissionGroupId?: string,
-     *     datasetPermissions?: list<ResourcePermission>
+     *     permissionGroupId?: string|null,
+     *     datasetPermissions?: list<ResourcePermission>|null
      * } $args
      */
     public function __construct(array $args = [])

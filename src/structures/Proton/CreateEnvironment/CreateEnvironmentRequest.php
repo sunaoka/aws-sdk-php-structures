@@ -5,34 +5,34 @@ namespace Sunaoka\Aws\Structures\Proton\CreateEnvironment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $codebuildRoleArn
- * @property string $componentRoleArn
- * @property string $description
- * @property string $environmentAccountConnectionId
+ * @property string|null $codebuildRoleArn
+ * @property string|null $componentRoleArn
+ * @property string|null $description
+ * @property string|null $environmentAccountConnectionId
  * @property string $name
- * @property string $protonServiceRoleArn
- * @property Shapes\RepositoryBranchInput $provisioningRepository
+ * @property string|null $protonServiceRoleArn
+ * @property Shapes\RepositoryBranchInput|null $provisioningRepository
  * @property string $spec
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  * @property string $templateMajorVersion
- * @property string $templateMinorVersion
+ * @property string|null $templateMinorVersion
  * @property string $templateName
  */
 class CreateEnvironmentRequest extends Request
 {
     /**
      * @param array{
-     *     codebuildRoleArn?: string,
-     *     componentRoleArn?: string,
-     *     description?: string,
-     *     environmentAccountConnectionId?: string,
+     *     codebuildRoleArn?: string|null,
+     *     componentRoleArn?: string|null,
+     *     description?: string|null,
+     *     environmentAccountConnectionId?: string|null,
      *     name: string,
-     *     protonServiceRoleArn?: string,
-     *     provisioningRepository?: Shapes\RepositoryBranchInput,
+     *     protonServiceRoleArn?: string|null,
+     *     provisioningRepository?: Shapes\RepositoryBranchInput|null,
      *     spec: string,
-     *     tags?: list<Shapes\Tag>,
+     *     tags?: list<Shapes\Tag>|null,
      *     templateMajorVersion: string,
-     *     templateMinorVersion?: string,
+     *     templateMinorVersion?: string|null,
      *     templateName: string
      * } $args
      */

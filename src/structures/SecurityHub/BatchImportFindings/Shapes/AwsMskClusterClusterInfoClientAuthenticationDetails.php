@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsMskClusterClusterInfoClientAuthenticationSaslDetails $Sasl
- * @property AwsMskClusterClusterInfoClientAuthenticationUnauthenticatedDetails $Unauthenticated
- * @property AwsMskClusterClusterInfoClientAuthenticationTlsDetails $Tls
+ * @property AwsMskClusterClusterInfoClientAuthenticationSaslDetails|null $Sasl
+ * @property AwsMskClusterClusterInfoClientAuthenticationUnauthenticatedDetails|null $Unauthenticated
+ * @property AwsMskClusterClusterInfoClientAuthenticationTlsDetails|null $Tls
  */
 class AwsMskClusterClusterInfoClientAuthenticationDetails extends Shape
 {
     /**
      * @param array{
-     *     Sasl?: AwsMskClusterClusterInfoClientAuthenticationSaslDetails,
-     *     Unauthenticated?: AwsMskClusterClusterInfoClientAuthenticationUnauthenticatedDetails,
-     *     Tls?: AwsMskClusterClusterInfoClientAuthenticationTlsDetails
+     *     Sasl?: AwsMskClusterClusterInfoClientAuthenticationSaslDetails|null,
+     *     Unauthenticated?: AwsMskClusterClusterInfoClientAuthenticationUnauthenticatedDetails|null,
+     *     Tls?: AwsMskClusterClusterInfoClientAuthenticationTlsDetails|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property array<string, Shapes\AssignedSession> $assignedSessions
  * @property array<string, list<string>> $cancelSessionActions
- * @property 'STOPPED' $desiredWorkerStatus
+ * @property 'STOPPED'|null $desiredWorkerStatus
  * @property int<0, max> $updateIntervalSeconds
  */
 class UpdateWorkerScheduleResponse extends Response

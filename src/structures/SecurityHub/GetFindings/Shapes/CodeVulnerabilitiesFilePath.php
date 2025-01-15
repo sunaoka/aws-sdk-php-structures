@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $EndLine
- * @property string $FileName
- * @property string $FilePath
- * @property int $StartLine
+ * @property int|null $EndLine
+ * @property string|null $FileName
+ * @property string|null $FilePath
+ * @property int|null $StartLine
  */
 class CodeVulnerabilitiesFilePath extends Shape
 {
     /**
      * @param array{
-     *     EndLine?: int,
-     *     FileName?: string,
-     *     FilePath?: string,
-     *     StartLine?: int
+     *     EndLine?: int|null,
+     *     FileName?: string|null,
+     *     FilePath?: string|null,
+     *     StartLine?: int|null
      * } $args
      */
     public function __construct(array $args = [])

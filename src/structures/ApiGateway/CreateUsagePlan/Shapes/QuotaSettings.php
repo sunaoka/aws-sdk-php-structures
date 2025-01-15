@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApiGateway\CreateUsagePlan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $limit
- * @property int $offset
- * @property 'DAY'|'WEEK'|'MONTH' $period
+ * @property int|null $limit
+ * @property int|null $offset
+ * @property 'DAY'|'WEEK'|'MONTH'|null $period
  */
 class QuotaSettings extends Shape
 {
     /**
      * @param array{
-     *     limit?: int,
-     *     offset?: int,
-     *     period?: 'DAY'|'WEEK'|'MONTH'
+     *     limit?: int|null,
+     *     offset?: int|null,
+     *     period?: 'DAY'|'WEEK'|'MONTH'|null
      * } $args
      */
     public function __construct(array $args = [])

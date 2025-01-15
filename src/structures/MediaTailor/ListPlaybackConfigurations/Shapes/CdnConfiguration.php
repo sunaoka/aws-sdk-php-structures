@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\ListPlaybackConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AdSegmentUrlPrefix
- * @property string $ContentSegmentUrlPrefix
+ * @property string|null $AdSegmentUrlPrefix
+ * @property string|null $ContentSegmentUrlPrefix
  */
 class CdnConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AdSegmentUrlPrefix?: string,
-     *     ContentSegmentUrlPrefix?: string
+     *     AdSegmentUrlPrefix?: string|null,
+     *     ContentSegmentUrlPrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

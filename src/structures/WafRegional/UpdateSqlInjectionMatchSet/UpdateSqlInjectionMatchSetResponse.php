@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WafRegional\UpdateSqlInjectionMatchSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChangeToken
+ * @property string|null $ChangeToken
  */
 class UpdateSqlInjectionMatchSetResponse extends Response
 {

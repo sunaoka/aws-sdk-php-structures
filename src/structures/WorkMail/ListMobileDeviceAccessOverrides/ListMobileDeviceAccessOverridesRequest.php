@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OrganizationId
- * @property string $UserId
- * @property string $DeviceId
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $UserId
+ * @property string|null $DeviceId
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListMobileDeviceAccessOverridesRequest extends Request
 {
     /**
      * @param array{
      *     OrganizationId: string,
-     *     UserId?: string,
-     *     DeviceId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     UserId?: string|null,
+     *     DeviceId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

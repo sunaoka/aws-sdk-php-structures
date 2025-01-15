@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\UpdatePortfolio;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $Id
- * @property string $DisplayName
- * @property string $Description
- * @property string $ProviderName
- * @property list<Shapes\Tag> $AddTags
- * @property list<string> $RemoveTags
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property string|null $ProviderName
+ * @property list<Shapes\Tag>|null $AddTags
+ * @property list<string>|null $RemoveTags
  */
 class UpdatePortfolioRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     Id: string,
-     *     DisplayName?: string,
-     *     Description?: string,
-     *     ProviderName?: string,
-     *     AddTags?: list<Shapes\Tag>,
-     *     RemoveTags?: list<string>
+     *     DisplayName?: string|null,
+     *     Description?: string|null,
+     *     ProviderName?: string|null,
+     *     AddTags?: list<Shapes\Tag>|null,
+     *     RemoveTags?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

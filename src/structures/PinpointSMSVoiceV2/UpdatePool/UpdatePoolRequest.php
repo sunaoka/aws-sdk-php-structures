@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PoolId
- * @property bool $TwoWayEnabled
- * @property string $TwoWayChannelArn
- * @property string $TwoWayChannelRole
- * @property bool $SelfManagedOptOutsEnabled
- * @property string $OptOutListName
- * @property bool $SharedRoutesEnabled
- * @property bool $DeletionProtectionEnabled
+ * @property bool|null $TwoWayEnabled
+ * @property string|null $TwoWayChannelArn
+ * @property string|null $TwoWayChannelRole
+ * @property bool|null $SelfManagedOptOutsEnabled
+ * @property string|null $OptOutListName
+ * @property bool|null $SharedRoutesEnabled
+ * @property bool|null $DeletionProtectionEnabled
  */
 class UpdatePoolRequest extends Request
 {
     /**
      * @param array{
      *     PoolId: string,
-     *     TwoWayEnabled?: bool,
-     *     TwoWayChannelArn?: string,
-     *     TwoWayChannelRole?: string,
-     *     SelfManagedOptOutsEnabled?: bool,
-     *     OptOutListName?: string,
-     *     SharedRoutesEnabled?: bool,
-     *     DeletionProtectionEnabled?: bool
+     *     TwoWayEnabled?: bool|null,
+     *     TwoWayChannelArn?: string|null,
+     *     TwoWayChannelRole?: string|null,
+     *     SelfManagedOptOutsEnabled?: bool|null,
+     *     OptOutListName?: string|null,
+     *     SharedRoutesEnabled?: bool|null,
+     *     DeletionProtectionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

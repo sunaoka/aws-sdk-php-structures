@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribePortfolio\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BudgetName
+ * @property string|null $BudgetName
  */
 class BudgetDetail extends Shape
 {
     /**
-     * @param array{BudgetName?: string} $args
+     * @param array{BudgetName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

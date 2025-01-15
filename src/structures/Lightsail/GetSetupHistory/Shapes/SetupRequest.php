@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetSetupHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $instanceName
- * @property list<string> $domainNames
- * @property 'LetsEncrypt' $certificateProvider
+ * @property string|null $instanceName
+ * @property list<string>|null $domainNames
+ * @property 'LetsEncrypt'|null $certificateProvider
  */
 class SetupRequest extends Shape
 {
     /**
      * @param array{
-     *     instanceName?: string,
-     *     domainNames?: list<string>,
-     *     certificateProvider?: 'LetsEncrypt'
+     *     instanceName?: string|null,
+     *     domainNames?: list<string>|null,
+     *     certificateProvider?: 'LetsEncrypt'|null
      * } $args
      */
     public function __construct(array $args = [])

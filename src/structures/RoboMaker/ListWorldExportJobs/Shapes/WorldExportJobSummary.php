@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\RoboMaker\ListWorldExportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property 'Pending'|'Running'|'Completed'|'Failed'|'Canceling'|'Canceled' $status
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property list<string> $worlds
- * @property OutputLocation $outputLocation
+ * @property string|null $arn
+ * @property 'Pending'|'Running'|'Completed'|'Failed'|'Canceling'|'Canceled'|null $status
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property list<string>|null $worlds
+ * @property OutputLocation|null $outputLocation
  */
 class WorldExportJobSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     status?: 'Pending'|'Running'|'Completed'|'Failed'|'Canceling'|'Canceled',
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     worlds?: list<string>,
-     *     outputLocation?: OutputLocation
+     *     arn?: string|null,
+     *     status?: 'Pending'|'Running'|'Completed'|'Failed'|'Canceling'|'Canceled'|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     worlds?: list<string>|null,
+     *     outputLocation?: OutputLocation|null
      * } $args
      */
     public function __construct(array $args = [])

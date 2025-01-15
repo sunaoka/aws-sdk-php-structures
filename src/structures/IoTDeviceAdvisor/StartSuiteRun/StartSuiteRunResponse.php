@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\IoTDeviceAdvisor\StartSuiteRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $suiteRunId
- * @property string $suiteRunArn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $endpoint
+ * @property string|null $suiteRunId
+ * @property string|null $suiteRunArn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $endpoint
  */
 class StartSuiteRunResponse extends Response
 {

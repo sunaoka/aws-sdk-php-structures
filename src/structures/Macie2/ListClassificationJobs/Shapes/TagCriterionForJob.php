@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\ListClassificationJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EQ'|'GT'|'GTE'|'LT'|'LTE'|'NE'|'CONTAINS'|'STARTS_WITH' $comparator
- * @property list<TagCriterionPairForJob> $tagValues
+ * @property 'EQ'|'GT'|'GTE'|'LT'|'LTE'|'NE'|'CONTAINS'|'STARTS_WITH'|null $comparator
+ * @property list<TagCriterionPairForJob>|null $tagValues
  */
 class TagCriterionForJob extends Shape
 {
     /**
      * @param array{
-     *     comparator?: 'EQ'|'GT'|'GTE'|'LT'|'LTE'|'NE'|'CONTAINS'|'STARTS_WITH',
-     *     tagValues?: list<TagCriterionPairForJob>
+     *     comparator?: 'EQ'|'GT'|'GTE'|'LT'|'LTE'|'NE'|'CONTAINS'|'STARTS_WITH'|null,
+     *     tagValues?: list<TagCriterionPairForJob>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetCampaigns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Template $EmailTemplate
- * @property Template $PushTemplate
- * @property Template $SMSTemplate
- * @property Template $VoiceTemplate
- * @property Template $InAppTemplate
+ * @property Template|null $EmailTemplate
+ * @property Template|null $PushTemplate
+ * @property Template|null $SMSTemplate
+ * @property Template|null $VoiceTemplate
+ * @property Template|null $InAppTemplate
  */
 class TemplateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EmailTemplate?: Template,
-     *     PushTemplate?: Template,
-     *     SMSTemplate?: Template,
-     *     VoiceTemplate?: Template,
-     *     InAppTemplate?: Template
+     *     EmailTemplate?: Template|null,
+     *     PushTemplate?: Template|null,
+     *     SMSTemplate?: Template|null,
+     *     VoiceTemplate?: Template|null,
+     *     InAppTemplate?: Template|null
      * } $args
      */
     public function __construct(array $args = [])

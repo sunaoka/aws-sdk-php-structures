@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\PutRemediationConfigurations\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FailureMessage
- * @property list<RemediationConfiguration> $FailedItems
+ * @property string|null $FailureMessage
+ * @property list<RemediationConfiguration>|null $FailedItems
  */
 class FailedRemediationBatch extends Shape
 {
     /**
      * @param array{
-     *     FailureMessage?: string,
-     *     FailedItems?: list<RemediationConfiguration>
+     *     FailureMessage?: string|null,
+     *     FailedItems?: list<RemediationConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

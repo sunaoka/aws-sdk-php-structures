@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FieldSort $Field
- * @property ColumnSort $Column
- * @property DataPathSort $DataPath
+ * @property FieldSort|null $Field
+ * @property ColumnSort|null $Column
+ * @property DataPathSort|null $DataPath
  */
 class PivotTableSortBy extends Shape
 {
     /**
      * @param array{
-     *     Field?: FieldSort,
-     *     Column?: ColumnSort,
-     *     DataPath?: DataPathSort
+     *     Field?: FieldSort|null,
+     *     Column?: ColumnSort|null,
+     *     DataPath?: DataPathSort|null
      * } $args
      */
     public function __construct(array $args = [])

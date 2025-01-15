@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\DisassociateFirewallRuleGroup\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $FirewallRuleGroupId
- * @property string $VpcId
- * @property string $Name
- * @property int $Priority
- * @property 'ENABLED'|'DISABLED' $MutationProtection
- * @property string $ManagedOwnerName
- * @property 'COMPLETE'|'DELETING'|'UPDATING' $Status
- * @property string $StatusMessage
- * @property string $CreatorRequestId
- * @property string $CreationTime
- * @property string $ModificationTime
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $FirewallRuleGroupId
+ * @property string|null $VpcId
+ * @property string|null $Name
+ * @property int|null $Priority
+ * @property 'ENABLED'|'DISABLED'|null $MutationProtection
+ * @property string|null $ManagedOwnerName
+ * @property 'COMPLETE'|'DELETING'|'UPDATING'|null $Status
+ * @property string|null $StatusMessage
+ * @property string|null $CreatorRequestId
+ * @property string|null $CreationTime
+ * @property string|null $ModificationTime
  */
 class FirewallRuleGroupAssociation extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     FirewallRuleGroupId?: string,
-     *     VpcId?: string,
-     *     Name?: string,
-     *     Priority?: int,
-     *     MutationProtection?: 'ENABLED'|'DISABLED',
-     *     ManagedOwnerName?: string,
-     *     Status?: 'COMPLETE'|'DELETING'|'UPDATING',
-     *     StatusMessage?: string,
-     *     CreatorRequestId?: string,
-     *     CreationTime?: string,
-     *     ModificationTime?: string
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     FirewallRuleGroupId?: string|null,
+     *     VpcId?: string|null,
+     *     Name?: string|null,
+     *     Priority?: int|null,
+     *     MutationProtection?: 'ENABLED'|'DISABLED'|null,
+     *     ManagedOwnerName?: string|null,
+     *     Status?: 'COMPLETE'|'DELETING'|'UPDATING'|null,
+     *     StatusMessage?: string|null,
+     *     CreatorRequestId?: string|null,
+     *     CreationTime?: string|null,
+     *     ModificationTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

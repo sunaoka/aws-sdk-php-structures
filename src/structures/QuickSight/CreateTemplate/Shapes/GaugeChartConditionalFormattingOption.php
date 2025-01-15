@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GaugeChartPrimaryValueConditionalFormatting $PrimaryValue
- * @property GaugeChartArcConditionalFormatting $Arc
+ * @property GaugeChartPrimaryValueConditionalFormatting|null $PrimaryValue
+ * @property GaugeChartArcConditionalFormatting|null $Arc
  */
 class GaugeChartConditionalFormattingOption extends Shape
 {
     /**
      * @param array{
-     *     PrimaryValue?: GaugeChartPrimaryValueConditionalFormatting,
-     *     Arc?: GaugeChartArcConditionalFormatting
+     *     PrimaryValue?: GaugeChartPrimaryValueConditionalFormatting|null,
+     *     Arc?: GaugeChartArcConditionalFormatting|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property Shapes\TraceContent $TraceContent
- * @property list<string> $WirelessDevices
- * @property list<string> $WirelessGateways
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
- * @property string $ClientRequestToken
- * @property list<string> $MulticastGroups
+ * @property Shapes\TraceContent|null $TraceContent
+ * @property list<string>|null $WirelessDevices
+ * @property list<string>|null $WirelessGateways
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientRequestToken
+ * @property list<string>|null $MulticastGroups
  */
 class CreateNetworkAnalyzerConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     TraceContent?: Shapes\TraceContent,
-     *     WirelessDevices?: list<string>,
-     *     WirelessGateways?: list<string>,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     ClientRequestToken?: string,
-     *     MulticastGroups?: list<string>
+     *     TraceContent?: Shapes\TraceContent|null,
+     *     WirelessDevices?: list<string>|null,
+     *     WirelessGateways?: list<string>|null,
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientRequestToken?: string|null,
+     *     MulticastGroups?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

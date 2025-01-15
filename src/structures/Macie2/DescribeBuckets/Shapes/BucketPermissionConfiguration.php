@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\DescribeBuckets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccountLevelPermissions $accountLevelPermissions
- * @property BucketLevelPermissions $bucketLevelPermissions
+ * @property AccountLevelPermissions|null $accountLevelPermissions
+ * @property BucketLevelPermissions|null $bucketLevelPermissions
  */
 class BucketPermissionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     accountLevelPermissions?: AccountLevelPermissions,
-     *     bucketLevelPermissions?: BucketLevelPermissions
+     *     accountLevelPermissions?: AccountLevelPermissions|null,
+     *     bucketLevelPermissions?: BucketLevelPermissions|null
      * } $args
      */
     public function __construct(array $args = [])

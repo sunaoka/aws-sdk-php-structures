@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ListenerTlsCertificate $certificate
  * @property 'STRICT'|'PERMISSIVE'|'DISABLED' $mode
- * @property ListenerTlsValidationContext $validation
+ * @property ListenerTlsValidationContext|null $validation
  */
 class ListenerTls extends Shape
 {
@@ -15,7 +15,7 @@ class ListenerTls extends Shape
      * @param array{
      *     certificate: ListenerTlsCertificate,
      *     mode: 'STRICT'|'PERMISSIVE'|'DISABLED',
-     *     validation?: ListenerTlsValidationContext
+     *     validation?: ListenerTlsValidationContext|null
      * } $args
      */
     public function __construct(array $args)

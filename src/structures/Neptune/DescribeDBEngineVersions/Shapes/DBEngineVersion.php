@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Neptune\DescribeDBEngineVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $DBParameterGroupFamily
- * @property string $DBEngineDescription
- * @property string $DBEngineVersionDescription
- * @property CharacterSet $DefaultCharacterSet
- * @property list<CharacterSet> $SupportedCharacterSets
- * @property list<UpgradeTarget> $ValidUpgradeTarget
- * @property list<Timezone> $SupportedTimezones
- * @property list<string> $ExportableLogTypes
- * @property bool $SupportsLogExportsToCloudwatchLogs
- * @property bool $SupportsReadReplica
- * @property bool $SupportsGlobalDatabases
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $DBParameterGroupFamily
+ * @property string|null $DBEngineDescription
+ * @property string|null $DBEngineVersionDescription
+ * @property CharacterSet|null $DefaultCharacterSet
+ * @property list<CharacterSet>|null $SupportedCharacterSets
+ * @property list<UpgradeTarget>|null $ValidUpgradeTarget
+ * @property list<Timezone>|null $SupportedTimezones
+ * @property list<string>|null $ExportableLogTypes
+ * @property bool|null $SupportsLogExportsToCloudwatchLogs
+ * @property bool|null $SupportsReadReplica
+ * @property bool|null $SupportsGlobalDatabases
  */
 class DBEngineVersion extends Shape
 {
     /**
      * @param array{
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     DBParameterGroupFamily?: string,
-     *     DBEngineDescription?: string,
-     *     DBEngineVersionDescription?: string,
-     *     DefaultCharacterSet?: CharacterSet,
-     *     SupportedCharacterSets?: list<CharacterSet>,
-     *     ValidUpgradeTarget?: list<UpgradeTarget>,
-     *     SupportedTimezones?: list<Timezone>,
-     *     ExportableLogTypes?: list<string>,
-     *     SupportsLogExportsToCloudwatchLogs?: bool,
-     *     SupportsReadReplica?: bool,
-     *     SupportsGlobalDatabases?: bool
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     DBParameterGroupFamily?: string|null,
+     *     DBEngineDescription?: string|null,
+     *     DBEngineVersionDescription?: string|null,
+     *     DefaultCharacterSet?: CharacterSet|null,
+     *     SupportedCharacterSets?: list<CharacterSet>|null,
+     *     ValidUpgradeTarget?: list<UpgradeTarget>|null,
+     *     SupportedTimezones?: list<Timezone>|null,
+     *     ExportableLogTypes?: list<string>|null,
+     *     SupportsLogExportsToCloudwatchLogs?: bool|null,
+     *     SupportsReadReplica?: bool|null,
+     *     SupportsGlobalDatabases?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

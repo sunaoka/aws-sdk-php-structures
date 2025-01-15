@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\ConfigTypeData $configData
  * @property string $name
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateConfigRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateConfigRequest extends Request
      * @param array{
      *     configData: Shapes\ConfigTypeData,
      *     name: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

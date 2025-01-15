@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateTask;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $farmId
  * @property string $queueId
  * @property string $jobId
@@ -17,7 +17,7 @@ class UpdateTaskRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     farmId: string,
      *     queueId: string,
      *     jobId: string,

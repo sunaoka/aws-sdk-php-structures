@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyInstanceAttribute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceName
- * @property EbsInstanceBlockDeviceSpecification $Ebs
- * @property string $VirtualName
- * @property string $NoDevice
+ * @property string|null $DeviceName
+ * @property EbsInstanceBlockDeviceSpecification|null $Ebs
+ * @property string|null $VirtualName
+ * @property string|null $NoDevice
  */
 class InstanceBlockDeviceMappingSpecification extends Shape
 {
     /**
      * @param array{
-     *     DeviceName?: string,
-     *     Ebs?: EbsInstanceBlockDeviceSpecification,
-     *     VirtualName?: string,
-     *     NoDevice?: string
+     *     DeviceName?: string|null,
+     *     Ebs?: EbsInstanceBlockDeviceSpecification|null,
+     *     VirtualName?: string|null,
+     *     NoDevice?: string|null
      * } $args
      */
     public function __construct(array $args = [])

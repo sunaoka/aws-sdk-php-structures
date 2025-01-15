@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VendorName
  * @property string $Name
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
- * @property string $VersionName
+ * @property string|null $VersionName
  */
 class DescribeManagedRuleGroupRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeManagedRuleGroupRequest extends Request
      *     VendorName: string,
      *     Name: string,
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
-     *     VersionName?: string
+     *     VersionName?: string|null
      * } $args
      */
     public function __construct(array $args)

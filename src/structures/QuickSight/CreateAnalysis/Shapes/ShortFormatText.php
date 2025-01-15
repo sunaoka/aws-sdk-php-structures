@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlainText
- * @property string $RichText
+ * @property string|null $PlainText
+ * @property string|null $RichText
  */
 class ShortFormatText extends Shape
 {
     /**
      * @param array{
-     *     PlainText?: string,
-     *     RichText?: string
+     *     PlainText?: string|null,
+     *     RichText?: string|null
      * } $args
      */
     public function __construct(array $args = [])

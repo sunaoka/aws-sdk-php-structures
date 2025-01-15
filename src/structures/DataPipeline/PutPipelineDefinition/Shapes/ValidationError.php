@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataPipeline\PutPipelineDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property list<string> $errors
+ * @property string|null $id
+ * @property list<string>|null $errors
  */
 class ValidationError extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     errors?: list<string>
+     *     id?: string|null,
+     *     errors?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

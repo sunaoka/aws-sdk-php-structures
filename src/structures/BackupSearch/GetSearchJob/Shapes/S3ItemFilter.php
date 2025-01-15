@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BackupSearch\GetSearchJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<StringCondition> $ObjectKeys
- * @property list<LongCondition> $Sizes
- * @property list<TimeCondition> $CreationTimes
- * @property list<StringCondition> $VersionIds
- * @property list<StringCondition> $ETags
+ * @property list<StringCondition>|null $ObjectKeys
+ * @property list<LongCondition>|null $Sizes
+ * @property list<TimeCondition>|null $CreationTimes
+ * @property list<StringCondition>|null $VersionIds
+ * @property list<StringCondition>|null $ETags
  */
 class S3ItemFilter extends Shape
 {
     /**
      * @param array{
-     *     ObjectKeys?: list<StringCondition>,
-     *     Sizes?: list<LongCondition>,
-     *     CreationTimes?: list<TimeCondition>,
-     *     VersionIds?: list<StringCondition>,
-     *     ETags?: list<StringCondition>
+     *     ObjectKeys?: list<StringCondition>|null,
+     *     Sizes?: list<LongCondition>|null,
+     *     CreationTimes?: list<TimeCondition>|null,
+     *     VersionIds?: list<StringCondition>|null,
+     *     ETags?: list<StringCondition>|null
      * } $args
      */
     public function __construct(array $args = [])

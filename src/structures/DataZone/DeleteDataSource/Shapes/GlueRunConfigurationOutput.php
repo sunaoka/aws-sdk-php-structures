@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\DataZone\DeleteDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property bool $autoImportDataQualityResult
- * @property string $catalogName
- * @property string $dataAccessRole
- * @property string $region
+ * @property string|null $accountId
+ * @property bool|null $autoImportDataQualityResult
+ * @property string|null $catalogName
+ * @property string|null $dataAccessRole
+ * @property string|null $region
  * @property list<RelationalFilterConfiguration> $relationalFilterConfigurations
  */
 class GlueRunConfigurationOutput extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     autoImportDataQualityResult?: bool,
-     *     catalogName?: string,
-     *     dataAccessRole?: string,
-     *     region?: string,
+     *     accountId?: string|null,
+     *     autoImportDataQualityResult?: bool|null,
+     *     catalogName?: string|null,
+     *     dataAccessRole?: string|null,
+     *     region?: string|null,
      *     relationalFilterConfigurations: list<RelationalFilterConfiguration>
      * } $args
      */

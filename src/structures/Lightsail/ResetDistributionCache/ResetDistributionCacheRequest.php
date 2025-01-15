@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\ResetDistributionCache;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $distributionName
+ * @property string|null $distributionName
  */
 class ResetDistributionCacheRequest extends Request
 {
     /**
-     * @param array{distributionName?: string} $args
+     * @param array{distributionName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

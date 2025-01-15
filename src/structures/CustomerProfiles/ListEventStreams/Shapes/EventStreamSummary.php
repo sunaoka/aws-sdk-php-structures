@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EventStreamName
  * @property string $EventStreamArn
  * @property 'RUNNING'|'STOPPED' $State
- * @property \Aws\Api\DateTimeResult $StoppedSince
- * @property DestinationSummary $DestinationSummary
- * @property array<string, string> $Tags
+ * @property \Aws\Api\DateTimeResult|null $StoppedSince
+ * @property DestinationSummary|null $DestinationSummary
+ * @property array<string, string>|null $Tags
  */
 class EventStreamSummary extends Shape
 {
@@ -21,9 +21,9 @@ class EventStreamSummary extends Shape
      *     EventStreamName: string,
      *     EventStreamArn: string,
      *     State: 'RUNNING'|'STOPPED',
-     *     StoppedSince?: \Aws\Api\DateTimeResult,
-     *     DestinationSummary?: DestinationSummary,
-     *     Tags?: array<string, string>
+     *     StoppedSince?: \Aws\Api\DateTimeResult|null,
+     *     DestinationSummary?: DestinationSummary|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

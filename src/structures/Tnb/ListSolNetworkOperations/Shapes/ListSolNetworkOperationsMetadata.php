@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $lastModified
- * @property string $nsdInfoId
- * @property string $vnfInstanceId
+ * @property string|null $nsdInfoId
+ * @property string|null $vnfInstanceId
  */
 class ListSolNetworkOperationsMetadata extends Shape
 {
@@ -16,8 +16,8 @@ class ListSolNetworkOperationsMetadata extends Shape
      * @param array{
      *     createdAt: \Aws\Api\DateTimeResult,
      *     lastModified: \Aws\Api\DateTimeResult,
-     *     nsdInfoId?: string,
-     *     vnfInstanceId?: string
+     *     nsdInfoId?: string|null,
+     *     vnfInstanceId?: string|null
      * } $args
      */
     public function __construct(array $args)

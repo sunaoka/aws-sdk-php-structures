@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $aiPromptId
  * @property string $assistantId
- * @property string $clientToken
- * @property string $description
- * @property Shapes\AIPromptTemplateConfiguration $templateConfiguration
+ * @property string|null $clientToken
+ * @property string|null $description
+ * @property Shapes\AIPromptTemplateConfiguration|null $templateConfiguration
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  */
 class UpdateAIPromptRequest extends Request
@@ -18,9 +18,9 @@ class UpdateAIPromptRequest extends Request
      * @param array{
      *     aiPromptId: string,
      *     assistantId: string,
-     *     clientToken?: string,
-     *     description?: string,
-     *     templateConfiguration?: Shapes\AIPromptTemplateConfiguration,
+     *     clientToken?: string|null,
+     *     description?: string|null,
+     *     templateConfiguration?: Shapes\AIPromptTemplateConfiguration|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED'
      * } $args
      */

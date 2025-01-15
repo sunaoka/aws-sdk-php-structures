@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property Shapes\UserDataFilters $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class GetCurrentUserDataRequest extends Request
 {
@@ -16,8 +16,8 @@ class GetCurrentUserDataRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     Filters: Shapes\UserDataFilters,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

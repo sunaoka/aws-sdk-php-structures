@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Rds\ApplyPendingMaintenanceAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Action
- * @property \Aws\Api\DateTimeResult $AutoAppliedAfterDate
- * @property \Aws\Api\DateTimeResult $ForcedApplyDate
- * @property string $OptInStatus
- * @property \Aws\Api\DateTimeResult $CurrentApplyDate
- * @property string $Description
+ * @property string|null $Action
+ * @property \Aws\Api\DateTimeResult|null $AutoAppliedAfterDate
+ * @property \Aws\Api\DateTimeResult|null $ForcedApplyDate
+ * @property string|null $OptInStatus
+ * @property \Aws\Api\DateTimeResult|null $CurrentApplyDate
+ * @property string|null $Description
  */
 class PendingMaintenanceAction extends Shape
 {
     /**
      * @param array{
-     *     Action?: string,
-     *     AutoAppliedAfterDate?: \Aws\Api\DateTimeResult,
-     *     ForcedApplyDate?: \Aws\Api\DateTimeResult,
-     *     OptInStatus?: string,
-     *     CurrentApplyDate?: \Aws\Api\DateTimeResult,
-     *     Description?: string
+     *     Action?: string|null,
+     *     AutoAppliedAfterDate?: \Aws\Api\DateTimeResult|null,
+     *     ForcedApplyDate?: \Aws\Api\DateTimeResult|null,
+     *     OptInStatus?: string|null,
+     *     CurrentApplyDate?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

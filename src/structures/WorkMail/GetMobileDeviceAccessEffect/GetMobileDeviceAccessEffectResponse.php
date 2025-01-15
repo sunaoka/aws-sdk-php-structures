@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkMail\GetMobileDeviceAccessEffect;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'ALLOW'|'DENY' $Effect
- * @property list<Shapes\MobileDeviceAccessMatchedRule> $MatchedRules
+ * @property 'ALLOW'|'DENY'|null $Effect
+ * @property list<Shapes\MobileDeviceAccessMatchedRule>|null $MatchedRules
  */
 class GetMobileDeviceAccessEffectResponse extends Response
 {

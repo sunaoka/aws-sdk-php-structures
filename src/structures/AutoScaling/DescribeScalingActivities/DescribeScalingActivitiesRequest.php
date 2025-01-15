@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeScalingActivities;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ActivityIds
- * @property string $AutoScalingGroupName
- * @property bool $IncludeDeletedGroups
- * @property int $MaxRecords
- * @property string $NextToken
+ * @property list<string>|null $ActivityIds
+ * @property string|null $AutoScalingGroupName
+ * @property bool|null $IncludeDeletedGroups
+ * @property int|null $MaxRecords
+ * @property string|null $NextToken
  */
 class DescribeScalingActivitiesRequest extends Request
 {
     /**
      * @param array{
-     *     ActivityIds?: list<string>,
-     *     AutoScalingGroupName?: string,
-     *     IncludeDeletedGroups?: bool,
-     *     MaxRecords?: int,
-     *     NextToken?: string
+     *     ActivityIds?: list<string>|null,
+     *     AutoScalingGroupName?: string|null,
+     *     IncludeDeletedGroups?: bool|null,
+     *     MaxRecords?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\S3Control\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bucket
- * @property 'Report_CSV_20180820' $Format
+ * @property string|null $Bucket
+ * @property 'Report_CSV_20180820'|null $Format
  * @property bool $Enabled
- * @property string $Prefix
- * @property 'AllTasks'|'FailedTasksOnly' $ReportScope
+ * @property string|null $Prefix
+ * @property 'AllTasks'|'FailedTasksOnly'|null $ReportScope
  */
 class JobReport extends Shape
 {
     /**
      * @param array{
-     *     Bucket?: string,
-     *     Format?: 'Report_CSV_20180820',
+     *     Bucket?: string|null,
+     *     Format?: 'Report_CSV_20180820'|null,
      *     Enabled: bool,
-     *     Prefix?: string,
-     *     ReportScope?: 'AllTasks'|'FailedTasksOnly'
+     *     Prefix?: string|null,
+     *     ReportScope?: 'AllTasks'|'FailedTasksOnly'|null
      * } $args
      */
     public function __construct(array $args)

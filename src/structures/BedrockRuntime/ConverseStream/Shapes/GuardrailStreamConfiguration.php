@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $guardrailIdentifier
  * @property string $guardrailVersion
- * @property 'enabled'|'disabled' $trace
- * @property 'sync'|'async' $streamProcessingMode
+ * @property 'enabled'|'disabled'|null $trace
+ * @property 'sync'|'async'|null $streamProcessingMode
  */
 class GuardrailStreamConfiguration extends Shape
 {
@@ -16,8 +16,8 @@ class GuardrailStreamConfiguration extends Shape
      * @param array{
      *     guardrailIdentifier: string,
      *     guardrailVersion: string,
-     *     trace?: 'enabled'|'disabled',
-     *     streamProcessingMode?: 'sync'|'async'
+     *     trace?: 'enabled'|'disabled'|null,
+     *     streamProcessingMode?: 'sync'|'async'|null
      * } $args
      */
     public function __construct(array $args)

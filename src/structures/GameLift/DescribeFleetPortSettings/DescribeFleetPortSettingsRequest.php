@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FleetId
- * @property string $Location
+ * @property string|null $Location
  */
 class DescribeFleetPortSettingsRequest extends Request
 {
     /**
      * @param array{
      *     FleetId: string,
-     *     Location?: string
+     *     Location?: string|null
      * } $args
      */
     public function __construct(array $args)

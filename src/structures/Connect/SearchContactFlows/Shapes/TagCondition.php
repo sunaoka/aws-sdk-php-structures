@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\SearchContactFlows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TagKey
- * @property string $TagValue
+ * @property string|null $TagKey
+ * @property string|null $TagValue
  */
 class TagCondition extends Shape
 {
     /**
      * @param array{
-     *     TagKey?: string,
-     *     TagValue?: string
+     *     TagKey?: string|null,
+     *     TagValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

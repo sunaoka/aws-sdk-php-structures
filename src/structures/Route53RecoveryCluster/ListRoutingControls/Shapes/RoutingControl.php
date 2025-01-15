@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryCluster\ListRoutingControls\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ControlPanelArn
- * @property string $ControlPanelName
- * @property string $RoutingControlArn
- * @property string $RoutingControlName
- * @property 'On'|'Off' $RoutingControlState
- * @property string $Owner
+ * @property string|null $ControlPanelArn
+ * @property string|null $ControlPanelName
+ * @property string|null $RoutingControlArn
+ * @property string|null $RoutingControlName
+ * @property 'On'|'Off'|null $RoutingControlState
+ * @property string|null $Owner
  */
 class RoutingControl extends Shape
 {
     /**
      * @param array{
-     *     ControlPanelArn?: string,
-     *     ControlPanelName?: string,
-     *     RoutingControlArn?: string,
-     *     RoutingControlName?: string,
-     *     RoutingControlState?: 'On'|'Off',
-     *     Owner?: string
+     *     ControlPanelArn?: string|null,
+     *     ControlPanelName?: string|null,
+     *     RoutingControlArn?: string|null,
+     *     RoutingControlName?: string|null,
+     *     RoutingControlState?: 'On'|'Off'|null,
+     *     Owner?: string|null
      * } $args
      */
     public function __construct(array $args = [])

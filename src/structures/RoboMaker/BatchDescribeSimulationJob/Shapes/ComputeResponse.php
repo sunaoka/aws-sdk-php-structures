@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\RoboMaker\BatchDescribeSimulationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 15> $simulationUnitLimit
- * @property 'CPU'|'GPU_AND_CPU' $computeType
- * @property int<0, 1> $gpuUnitLimit
+ * @property int<1, 15>|null $simulationUnitLimit
+ * @property 'CPU'|'GPU_AND_CPU'|null $computeType
+ * @property int<0, 1>|null $gpuUnitLimit
  */
 class ComputeResponse extends Shape
 {
     /**
      * @param array{
-     *     simulationUnitLimit?: int<1, 15>,
-     *     computeType?: 'CPU'|'GPU_AND_CPU',
-     *     gpuUnitLimit?: int<0, 1>
+     *     simulationUnitLimit?: int<1, 15>|null,
+     *     computeType?: 'CPU'|'GPU_AND_CPU'|null,
+     *     gpuUnitLimit?: int<0, 1>|null
      * } $args
      */
     public function __construct(array $args = [])

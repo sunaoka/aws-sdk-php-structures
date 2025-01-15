@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetProfileTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TemplateName
- * @property list<ProfileTemplateQuestion> $TemplateQuestions
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $UpdatedAt
+ * @property string|null $TemplateName
+ * @property list<ProfileTemplateQuestion>|null $TemplateQuestions
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
 class ProfileTemplate extends Shape
 {
     /**
      * @param array{
-     *     TemplateName?: string,
-     *     TemplateQuestions?: list<ProfileTemplateQuestion>,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult
+     *     TemplateName?: string|null,
+     *     TemplateQuestions?: list<ProfileTemplateQuestion>|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

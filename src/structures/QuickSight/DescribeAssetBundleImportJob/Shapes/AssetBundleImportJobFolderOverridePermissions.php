@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $FolderIds
- * @property AssetBundleResourcePermissions $Permissions
+ * @property AssetBundleResourcePermissions|null $Permissions
  */
 class AssetBundleImportJobFolderOverridePermissions extends Shape
 {
     /**
      * @param array{
      *     FolderIds: list<string>,
-     *     Permissions?: AssetBundleResourcePermissions
+     *     Permissions?: AssetBundleResourcePermissions|null
      * } $args
      */
     public function __construct(array $args)

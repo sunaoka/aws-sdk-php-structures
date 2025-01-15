@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ProfileName
  * @property TrainingJobDefinition $TrainingJobDefinition
- * @property TransformJobDefinition $TransformJobDefinition
+ * @property TransformJobDefinition|null $TransformJobDefinition
  */
 class AlgorithmValidationProfile extends Shape
 {
@@ -15,7 +15,7 @@ class AlgorithmValidationProfile extends Shape
      * @param array{
      *     ProfileName: string,
      *     TrainingJobDefinition: TrainingJobDefinition,
-     *     TransformJobDefinition?: TransformJobDefinition
+     *     TransformJobDefinition?: TransformJobDefinition|null
      * } $args
      */
     public function __construct(array $args)

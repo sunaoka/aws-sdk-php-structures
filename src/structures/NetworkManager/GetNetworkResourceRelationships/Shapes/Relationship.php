@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetNetworkResourceRelationships\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $From
- * @property string $To
+ * @property string|null $From
+ * @property string|null $To
  */
 class Relationship extends Shape
 {
     /**
      * @param array{
-     *     From?: string,
-     *     To?: string
+     *     From?: string|null,
+     *     To?: string|null
      * } $args
      */
     public function __construct(array $args = [])

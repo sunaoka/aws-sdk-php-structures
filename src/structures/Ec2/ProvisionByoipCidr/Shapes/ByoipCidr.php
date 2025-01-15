@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\ProvisionByoipCidr\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Cidr
- * @property string $Description
- * @property list<AsnAssociation> $AsnAssociations
- * @property string $StatusMessage
- * @property 'advertised'|'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-deprovision'|'pending-provision'|'provisioned'|'provisioned-not-publicly-advertisable' $State
- * @property string $NetworkBorderGroup
+ * @property string|null $Cidr
+ * @property string|null $Description
+ * @property list<AsnAssociation>|null $AsnAssociations
+ * @property string|null $StatusMessage
+ * @property 'advertised'|'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-deprovision'|'pending-provision'|'provisioned'|'provisioned-not-publicly-advertisable'|null $State
+ * @property string|null $NetworkBorderGroup
  */
 class ByoipCidr extends Shape
 {
     /**
      * @param array{
-     *     Cidr?: string,
-     *     Description?: string,
-     *     AsnAssociations?: list<AsnAssociation>,
-     *     StatusMessage?: string,
-     *     State?: 'advertised'|'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-deprovision'|'pending-provision'|'provisioned'|'provisioned-not-publicly-advertisable',
-     *     NetworkBorderGroup?: string
+     *     Cidr?: string|null,
+     *     Description?: string|null,
+     *     AsnAssociations?: list<AsnAssociation>|null,
+     *     StatusMessage?: string|null,
+     *     State?: 'advertised'|'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-deprovision'|'pending-provision'|'provisioned'|'provisioned-not-publicly-advertisable'|null,
+     *     NetworkBorderGroup?: string|null
      * } $args
      */
     public function __construct(array $args = [])

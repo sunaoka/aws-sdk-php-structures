@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryControlConfig\ListControlPanels\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterArn
- * @property string $ControlPanelArn
- * @property bool $DefaultControlPanel
- * @property string $Name
- * @property int $RoutingControlCount
- * @property 'PENDING'|'DEPLOYED'|'PENDING_DELETION' $Status
- * @property string $Owner
+ * @property string|null $ClusterArn
+ * @property string|null $ControlPanelArn
+ * @property bool|null $DefaultControlPanel
+ * @property string|null $Name
+ * @property int|null $RoutingControlCount
+ * @property 'PENDING'|'DEPLOYED'|'PENDING_DELETION'|null $Status
+ * @property string|null $Owner
  */
 class ControlPanel extends Shape
 {
     /**
      * @param array{
-     *     ClusterArn?: string,
-     *     ControlPanelArn?: string,
-     *     DefaultControlPanel?: bool,
-     *     Name?: string,
-     *     RoutingControlCount?: int,
-     *     Status?: 'PENDING'|'DEPLOYED'|'PENDING_DELETION',
-     *     Owner?: string
+     *     ClusterArn?: string|null,
+     *     ControlPanelArn?: string|null,
+     *     DefaultControlPanel?: bool|null,
+     *     Name?: string|null,
+     *     RoutingControlCount?: int|null,
+     *     Status?: 'PENDING'|'DEPLOYED'|'PENDING_DELETION'|null,
+     *     Owner?: string|null
      * } $args
      */
     public function __construct(array $args = [])

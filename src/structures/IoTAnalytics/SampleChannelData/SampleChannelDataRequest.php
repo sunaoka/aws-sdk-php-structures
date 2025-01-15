@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $channelName
- * @property int<1, 10> $maxMessages
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property int<1, 10>|null $maxMessages
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  */
 class SampleChannelDataRequest extends Request
 {
     /**
      * @param array{
      *     channelName: string,
-     *     maxMessages?: int<1, 10>,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult
+     *     maxMessages?: int<1, 10>|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

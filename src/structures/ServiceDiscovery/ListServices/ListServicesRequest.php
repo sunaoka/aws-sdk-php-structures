@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\ListServices;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property list<Shapes\ServiceFilter> $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property list<Shapes\ServiceFilter>|null $Filters
  */
 class ListServicesRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     Filters?: list<Shapes\ServiceFilter>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     Filters?: list<Shapes\ServiceFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

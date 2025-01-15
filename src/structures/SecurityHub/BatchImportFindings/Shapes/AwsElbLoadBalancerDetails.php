@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AvailabilityZones
- * @property list<AwsElbLoadBalancerBackendServerDescription> $BackendServerDescriptions
- * @property string $CanonicalHostedZoneName
- * @property string $CanonicalHostedZoneNameID
- * @property string $CreatedTime
- * @property string $DnsName
- * @property AwsElbLoadBalancerHealthCheck $HealthCheck
- * @property list<AwsElbLoadBalancerInstance> $Instances
- * @property list<AwsElbLoadBalancerListenerDescription> $ListenerDescriptions
- * @property AwsElbLoadBalancerAttributes $LoadBalancerAttributes
- * @property string $LoadBalancerName
- * @property AwsElbLoadBalancerPolicies $Policies
- * @property string $Scheme
- * @property list<string> $SecurityGroups
- * @property AwsElbLoadBalancerSourceSecurityGroup $SourceSecurityGroup
- * @property list<string> $Subnets
- * @property string $VpcId
+ * @property list<string>|null $AvailabilityZones
+ * @property list<AwsElbLoadBalancerBackendServerDescription>|null $BackendServerDescriptions
+ * @property string|null $CanonicalHostedZoneName
+ * @property string|null $CanonicalHostedZoneNameID
+ * @property string|null $CreatedTime
+ * @property string|null $DnsName
+ * @property AwsElbLoadBalancerHealthCheck|null $HealthCheck
+ * @property list<AwsElbLoadBalancerInstance>|null $Instances
+ * @property list<AwsElbLoadBalancerListenerDescription>|null $ListenerDescriptions
+ * @property AwsElbLoadBalancerAttributes|null $LoadBalancerAttributes
+ * @property string|null $LoadBalancerName
+ * @property AwsElbLoadBalancerPolicies|null $Policies
+ * @property string|null $Scheme
+ * @property list<string>|null $SecurityGroups
+ * @property AwsElbLoadBalancerSourceSecurityGroup|null $SourceSecurityGroup
+ * @property list<string>|null $Subnets
+ * @property string|null $VpcId
  */
 class AwsElbLoadBalancerDetails extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZones?: list<string>,
-     *     BackendServerDescriptions?: list<AwsElbLoadBalancerBackendServerDescription>,
-     *     CanonicalHostedZoneName?: string,
-     *     CanonicalHostedZoneNameID?: string,
-     *     CreatedTime?: string,
-     *     DnsName?: string,
-     *     HealthCheck?: AwsElbLoadBalancerHealthCheck,
-     *     Instances?: list<AwsElbLoadBalancerInstance>,
-     *     ListenerDescriptions?: list<AwsElbLoadBalancerListenerDescription>,
-     *     LoadBalancerAttributes?: AwsElbLoadBalancerAttributes,
-     *     LoadBalancerName?: string,
-     *     Policies?: AwsElbLoadBalancerPolicies,
-     *     Scheme?: string,
-     *     SecurityGroups?: list<string>,
-     *     SourceSecurityGroup?: AwsElbLoadBalancerSourceSecurityGroup,
-     *     Subnets?: list<string>,
-     *     VpcId?: string
+     *     AvailabilityZones?: list<string>|null,
+     *     BackendServerDescriptions?: list<AwsElbLoadBalancerBackendServerDescription>|null,
+     *     CanonicalHostedZoneName?: string|null,
+     *     CanonicalHostedZoneNameID?: string|null,
+     *     CreatedTime?: string|null,
+     *     DnsName?: string|null,
+     *     HealthCheck?: AwsElbLoadBalancerHealthCheck|null,
+     *     Instances?: list<AwsElbLoadBalancerInstance>|null,
+     *     ListenerDescriptions?: list<AwsElbLoadBalancerListenerDescription>|null,
+     *     LoadBalancerAttributes?: AwsElbLoadBalancerAttributes|null,
+     *     LoadBalancerName?: string|null,
+     *     Policies?: AwsElbLoadBalancerPolicies|null,
+     *     Scheme?: string|null,
+     *     SecurityGroups?: list<string>|null,
+     *     SourceSecurityGroup?: AwsElbLoadBalancerSourceSecurityGroup|null,
+     *     Subnets?: list<string>|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

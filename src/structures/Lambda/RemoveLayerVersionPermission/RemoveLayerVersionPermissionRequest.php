@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LayerName
  * @property int $VersionNumber
  * @property string $StatementId
- * @property string $RevisionId
+ * @property string|null $RevisionId
  */
 class RemoveLayerVersionPermissionRequest extends Request
 {
@@ -17,7 +17,7 @@ class RemoveLayerVersionPermissionRequest extends Request
      *     LayerName: string,
      *     VersionNumber: int,
      *     StatementId: string,
-     *     RevisionId?: string
+     *     RevisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

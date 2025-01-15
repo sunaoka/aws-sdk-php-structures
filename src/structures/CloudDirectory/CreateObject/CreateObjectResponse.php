@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\CreateObject;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ObjectIdentifier
+ * @property string|null $ObjectIdentifier
  */
 class CreateObjectResponse extends Response
 {

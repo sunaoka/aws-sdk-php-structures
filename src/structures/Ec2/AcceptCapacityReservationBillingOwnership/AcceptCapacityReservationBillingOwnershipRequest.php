@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\AcceptCapacityReservationBillingOwnership;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $CapacityReservationId
  */
 class AcceptCapacityReservationBillingOwnershipRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     CapacityReservationId: string
      * } $args
      */

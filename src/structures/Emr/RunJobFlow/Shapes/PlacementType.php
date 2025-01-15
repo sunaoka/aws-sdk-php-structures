@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Emr\RunJobFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property list<string> $AvailabilityZones
+ * @property string|null $AvailabilityZone
+ * @property list<string>|null $AvailabilityZones
  */
 class PlacementType extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     AvailabilityZones?: list<string>
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZones?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

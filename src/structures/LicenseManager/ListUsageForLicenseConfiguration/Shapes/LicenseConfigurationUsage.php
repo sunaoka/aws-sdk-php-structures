@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListUsageForLicenseConfiguration
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceArn
- * @property 'EC2_INSTANCE'|'EC2_HOST'|'EC2_AMI'|'RDS'|'SYSTEMS_MANAGER_MANAGED_INSTANCE' $ResourceType
- * @property string $ResourceStatus
- * @property string $ResourceOwnerId
- * @property \Aws\Api\DateTimeResult $AssociationTime
- * @property int $ConsumedLicenses
+ * @property string|null $ResourceArn
+ * @property 'EC2_INSTANCE'|'EC2_HOST'|'EC2_AMI'|'RDS'|'SYSTEMS_MANAGER_MANAGED_INSTANCE'|null $ResourceType
+ * @property string|null $ResourceStatus
+ * @property string|null $ResourceOwnerId
+ * @property \Aws\Api\DateTimeResult|null $AssociationTime
+ * @property int|null $ConsumedLicenses
  */
 class LicenseConfigurationUsage extends Shape
 {
     /**
      * @param array{
-     *     ResourceArn?: string,
-     *     ResourceType?: 'EC2_INSTANCE'|'EC2_HOST'|'EC2_AMI'|'RDS'|'SYSTEMS_MANAGER_MANAGED_INSTANCE',
-     *     ResourceStatus?: string,
-     *     ResourceOwnerId?: string,
-     *     AssociationTime?: \Aws\Api\DateTimeResult,
-     *     ConsumedLicenses?: int
+     *     ResourceArn?: string|null,
+     *     ResourceType?: 'EC2_INSTANCE'|'EC2_HOST'|'EC2_AMI'|'RDS'|'SYSTEMS_MANAGER_MANAGED_INSTANCE'|null,
+     *     ResourceStatus?: string|null,
+     *     ResourceOwnerId?: string|null,
+     *     AssociationTime?: \Aws\Api\DateTimeResult|null,
+     *     ConsumedLicenses?: int|null
      * } $args
      */
     public function __construct(array $args = [])

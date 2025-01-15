@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTDeviceAdvisor\GetEndpoint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $thingArn
- * @property string $certificateArn
- * @property string $deviceRoleArn
- * @property 'X509ClientCertificate'|'SignatureVersion4' $authenticationMethod
+ * @property string|null $thingArn
+ * @property string|null $certificateArn
+ * @property string|null $deviceRoleArn
+ * @property 'X509ClientCertificate'|'SignatureVersion4'|null $authenticationMethod
  */
 class GetEndpointRequest extends Request
 {
     /**
      * @param array{
-     *     thingArn?: string,
-     *     certificateArn?: string,
-     *     deviceRoleArn?: string,
-     *     authenticationMethod?: 'X509ClientCertificate'|'SignatureVersion4'
+     *     thingArn?: string|null,
+     *     certificateArn?: string|null,
+     *     deviceRoleArn?: string|null,
+     *     authenticationMethod?: 'X509ClientCertificate'|'SignatureVersion4'|null
      * } $args
      */
     public function __construct(array $args = [])

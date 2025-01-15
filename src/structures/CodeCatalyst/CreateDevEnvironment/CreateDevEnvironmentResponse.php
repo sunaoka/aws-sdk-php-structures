@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $spaceName
  * @property string $projectName
  * @property string $id
- * @property string $vpcConnectionName
+ * @property string|null $vpcConnectionName
  */
 class CreateDevEnvironmentResponse extends Response
 {

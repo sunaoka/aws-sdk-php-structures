@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $key
- * @property string $stringValue
- * @property string $refValue
+ * @property string|null $stringValue
+ * @property string|null $refValue
  */
 class Field extends Shape
 {
     /**
      * @param array{
      *     key: string,
-     *     stringValue?: string,
-     *     refValue?: string
+     *     stringValue?: string|null,
+     *     refValue?: string|null
      * } $args
      */
     public function __construct(array $args)

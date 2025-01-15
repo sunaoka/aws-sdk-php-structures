@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrackingServerName
- * @property string $ArtifactStoreUri
- * @property 'Small'|'Medium'|'Large' $TrackingServerSize
- * @property bool $AutomaticModelRegistration
- * @property string $WeeklyMaintenanceWindowStart
+ * @property string|null $ArtifactStoreUri
+ * @property 'Small'|'Medium'|'Large'|null $TrackingServerSize
+ * @property bool|null $AutomaticModelRegistration
+ * @property string|null $WeeklyMaintenanceWindowStart
  */
 class UpdateMlflowTrackingServerRequest extends Request
 {
     /**
      * @param array{
      *     TrackingServerName: string,
-     *     ArtifactStoreUri?: string,
-     *     TrackingServerSize?: 'Small'|'Medium'|'Large',
-     *     AutomaticModelRegistration?: bool,
-     *     WeeklyMaintenanceWindowStart?: string
+     *     ArtifactStoreUri?: string|null,
+     *     TrackingServerSize?: 'Small'|'Medium'|'Large'|null,
+     *     AutomaticModelRegistration?: bool|null,
+     *     WeeklyMaintenanceWindowStart?: string|null
      * } $args
      */
     public function __construct(array $args)

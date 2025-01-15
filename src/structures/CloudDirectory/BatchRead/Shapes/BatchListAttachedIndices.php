@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ObjectReference $TargetReference
- * @property string $NextToken
- * @property int<1, max> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
  */
 class BatchListAttachedIndices extends Shape
 {
     /**
      * @param array{
      *     TargetReference: ObjectReference,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

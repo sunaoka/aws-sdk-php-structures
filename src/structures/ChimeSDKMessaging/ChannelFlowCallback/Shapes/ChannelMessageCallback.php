@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $MessageId
- * @property string $Content
- * @property string $Metadata
- * @property PushNotificationConfiguration $PushNotification
- * @property array<string, MessageAttributeValue> $MessageAttributes
- * @property string $SubChannelId
- * @property string $ContentType
+ * @property string|null $Content
+ * @property string|null $Metadata
+ * @property PushNotificationConfiguration|null $PushNotification
+ * @property array<string, MessageAttributeValue>|null $MessageAttributes
+ * @property string|null $SubChannelId
+ * @property string|null $ContentType
  */
 class ChannelMessageCallback extends Shape
 {
     /**
      * @param array{
      *     MessageId: string,
-     *     Content?: string,
-     *     Metadata?: string,
-     *     PushNotification?: PushNotificationConfiguration,
-     *     MessageAttributes?: array<string, MessageAttributeValue>,
-     *     SubChannelId?: string,
-     *     ContentType?: string
+     *     Content?: string|null,
+     *     Metadata?: string|null,
+     *     PushNotification?: PushNotificationConfiguration|null,
+     *     MessageAttributes?: array<string, MessageAttributeValue>|null,
+     *     SubChannelId?: string|null,
+     *     ContentType?: string|null
      * } $args
      */
     public function __construct(array $args)

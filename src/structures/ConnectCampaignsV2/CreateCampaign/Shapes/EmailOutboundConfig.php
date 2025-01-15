@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $connectSourceEmailAddress
- * @property string $sourceEmailAddressDisplayName
+ * @property string|null $sourceEmailAddressDisplayName
  * @property string $wisdomTemplateArn
  */
 class EmailOutboundConfig extends Shape
@@ -14,7 +14,7 @@ class EmailOutboundConfig extends Shape
     /**
      * @param array{
      *     connectSourceEmailAddress: string,
-     *     sourceEmailAddressDisplayName?: string,
+     *     sourceEmailAddressDisplayName?: string|null,
      *     wisdomTemplateArn: string
      * } $args
      */

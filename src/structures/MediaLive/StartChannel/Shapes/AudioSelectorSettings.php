@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AudioHlsRenditionSelection $AudioHlsRenditionSelection
- * @property AudioLanguageSelection $AudioLanguageSelection
- * @property AudioPidSelection $AudioPidSelection
- * @property AudioTrackSelection $AudioTrackSelection
+ * @property AudioHlsRenditionSelection|null $AudioHlsRenditionSelection
+ * @property AudioLanguageSelection|null $AudioLanguageSelection
+ * @property AudioPidSelection|null $AudioPidSelection
+ * @property AudioTrackSelection|null $AudioTrackSelection
  */
 class AudioSelectorSettings extends Shape
 {
     /**
      * @param array{
-     *     AudioHlsRenditionSelection?: AudioHlsRenditionSelection,
-     *     AudioLanguageSelection?: AudioLanguageSelection,
-     *     AudioPidSelection?: AudioPidSelection,
-     *     AudioTrackSelection?: AudioTrackSelection
+     *     AudioHlsRenditionSelection?: AudioHlsRenditionSelection|null,
+     *     AudioLanguageSelection?: AudioLanguageSelection|null,
+     *     AudioPidSelection?: AudioPidSelection|null,
+     *     AudioTrackSelection?: AudioTrackSelection|null
      * } $args
      */
     public function __construct(array $args = [])

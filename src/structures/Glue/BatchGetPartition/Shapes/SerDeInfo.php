@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetPartition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $SerializationLibrary
- * @property array<string, string> $Parameters
+ * @property string|null $Name
+ * @property string|null $SerializationLibrary
+ * @property array<string, string>|null $Parameters
  */
 class SerDeInfo extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     SerializationLibrary?: string,
-     *     Parameters?: array<string, string>
+     *     Name?: string|null,
+     *     SerializationLibrary?: string|null,
+     *     Parameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

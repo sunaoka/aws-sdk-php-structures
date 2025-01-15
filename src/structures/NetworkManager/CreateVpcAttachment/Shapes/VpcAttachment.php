@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateVpcAttachment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attachment $Attachment
- * @property list<string> $SubnetArns
- * @property VpcOptions $Options
+ * @property Attachment|null $Attachment
+ * @property list<string>|null $SubnetArns
+ * @property VpcOptions|null $Options
  */
 class VpcAttachment extends Shape
 {
     /**
      * @param array{
-     *     Attachment?: Attachment,
-     *     SubnetArns?: list<string>,
-     *     Options?: VpcOptions
+     *     Attachment?: Attachment|null,
+     *     SubnetArns?: list<string>|null,
+     *     Options?: VpcOptions|null
      * } $args
      */
     public function __construct(array $args = [])

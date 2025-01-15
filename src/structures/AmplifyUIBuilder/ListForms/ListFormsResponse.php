@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\FormSummary> $entities
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListFormsResponse extends Response
 {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetConformancePackComplianceSumma
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ConformancePackComplianceSummary> $ConformancePackComplianceSummaryList
- * @property string $NextToken
+ * @property list<Shapes\ConformancePackComplianceSummary>|null $ConformancePackComplianceSummaryList
+ * @property string|null $NextToken
  */
 class GetConformancePackComplianceSummaryResponse extends Response
 {

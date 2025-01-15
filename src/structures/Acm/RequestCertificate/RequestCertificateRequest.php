@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property 'EMAIL'|'DNS' $ValidationMethod
- * @property list<string> $SubjectAlternativeNames
- * @property string $IdempotencyToken
- * @property list<Shapes\DomainValidationOption> $DomainValidationOptions
- * @property Shapes\CertificateOptions $Options
- * @property string $CertificateAuthorityArn
- * @property list<Shapes\Tag> $Tags
- * @property 'RSA_1024'|'RSA_2048'|'RSA_3072'|'RSA_4096'|'EC_prime256v1'|'EC_secp384r1'|'EC_secp521r1' $KeyAlgorithm
+ * @property 'EMAIL'|'DNS'|null $ValidationMethod
+ * @property list<string>|null $SubjectAlternativeNames
+ * @property string|null $IdempotencyToken
+ * @property list<Shapes\DomainValidationOption>|null $DomainValidationOptions
+ * @property Shapes\CertificateOptions|null $Options
+ * @property string|null $CertificateAuthorityArn
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'RSA_1024'|'RSA_2048'|'RSA_3072'|'RSA_4096'|'EC_prime256v1'|'EC_secp384r1'|'EC_secp521r1'|null $KeyAlgorithm
  */
 class RequestCertificateRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     ValidationMethod?: 'EMAIL'|'DNS',
-     *     SubjectAlternativeNames?: list<string>,
-     *     IdempotencyToken?: string,
-     *     DomainValidationOptions?: list<Shapes\DomainValidationOption>,
-     *     Options?: Shapes\CertificateOptions,
-     *     CertificateAuthorityArn?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     KeyAlgorithm?: 'RSA_1024'|'RSA_2048'|'RSA_3072'|'RSA_4096'|'EC_prime256v1'|'EC_secp384r1'|'EC_secp521r1'
+     *     ValidationMethod?: 'EMAIL'|'DNS'|null,
+     *     SubjectAlternativeNames?: list<string>|null,
+     *     IdempotencyToken?: string|null,
+     *     DomainValidationOptions?: list<Shapes\DomainValidationOption>|null,
+     *     Options?: Shapes\CertificateOptions|null,
+     *     CertificateAuthorityArn?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     KeyAlgorithm?: 'RSA_1024'|'RSA_2048'|'RSA_3072'|'RSA_4096'|'EC_prime256v1'|'EC_secp384r1'|'EC_secp521r1'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DeleteBackup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IndexName
- * @property list<KeySchemaElement> $KeySchema
- * @property Projection $Projection
- * @property ProvisionedThroughput $ProvisionedThroughput
- * @property OnDemandThroughput $OnDemandThroughput
+ * @property string|null $IndexName
+ * @property list<KeySchemaElement>|null $KeySchema
+ * @property Projection|null $Projection
+ * @property ProvisionedThroughput|null $ProvisionedThroughput
+ * @property OnDemandThroughput|null $OnDemandThroughput
  */
 class GlobalSecondaryIndexInfo extends Shape
 {
     /**
      * @param array{
-     *     IndexName?: string,
-     *     KeySchema?: list<KeySchemaElement>,
-     *     Projection?: Projection,
-     *     ProvisionedThroughput?: ProvisionedThroughput,
-     *     OnDemandThroughput?: OnDemandThroughput
+     *     IndexName?: string|null,
+     *     KeySchema?: list<KeySchemaElement>|null,
+     *     Projection?: Projection|null,
+     *     ProvisionedThroughput?: ProvisionedThroughput|null,
+     *     OnDemandThroughput?: OnDemandThroughput|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\StartProductSub
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SecretsManagerCredentialsProvider $SecretsManagerCredentialsProvider
+ * @property SecretsManagerCredentialsProvider|null $SecretsManagerCredentialsProvider
  */
 class CredentialsProvider extends Shape
 {
     /**
-     * @param array{SecretsManagerCredentialsProvider?: SecretsManagerCredentialsProvider} $args
+     * @param array{SecretsManagerCredentialsProvider?: SecretsManagerCredentialsProvider|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Redshift\GetReservedNodeExchangeConfigurationOp
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedNodeId
- * @property string $ReservedNodeOfferingId
- * @property string $NodeType
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property int $Duration
- * @property double $FixedPrice
- * @property double $UsagePrice
- * @property string $CurrencyCode
- * @property int $NodeCount
- * @property string $State
- * @property string $OfferingType
- * @property list<RecurringCharge> $RecurringCharges
- * @property 'Regular'|'Upgradable' $ReservedNodeOfferingType
+ * @property string|null $ReservedNodeId
+ * @property string|null $ReservedNodeOfferingId
+ * @property string|null $NodeType
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property int|null $Duration
+ * @property double|null $FixedPrice
+ * @property double|null $UsagePrice
+ * @property string|null $CurrencyCode
+ * @property int|null $NodeCount
+ * @property string|null $State
+ * @property string|null $OfferingType
+ * @property list<RecurringCharge>|null $RecurringCharges
+ * @property 'Regular'|'Upgradable'|null $ReservedNodeOfferingType
  */
 class ReservedNode extends Shape
 {
     /**
      * @param array{
-     *     ReservedNodeId?: string,
-     *     ReservedNodeOfferingId?: string,
-     *     NodeType?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     Duration?: int,
-     *     FixedPrice?: double,
-     *     UsagePrice?: double,
-     *     CurrencyCode?: string,
-     *     NodeCount?: int,
-     *     State?: string,
-     *     OfferingType?: string,
-     *     RecurringCharges?: list<RecurringCharge>,
-     *     ReservedNodeOfferingType?: 'Regular'|'Upgradable'
+     *     ReservedNodeId?: string|null,
+     *     ReservedNodeOfferingId?: string|null,
+     *     NodeType?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     Duration?: int|null,
+     *     FixedPrice?: double|null,
+     *     UsagePrice?: double|null,
+     *     CurrencyCode?: string|null,
+     *     NodeCount?: int|null,
+     *     State?: string|null,
+     *     OfferingType?: string|null,
+     *     RecurringCharges?: list<RecurringCharge>|null,
+     *     ReservedNodeOfferingType?: 'Regular'|'Upgradable'|null
      * } $args
      */
     public function __construct(array $args = [])

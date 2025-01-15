@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchPutDataQualityStatisticAnnotation\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProfileId
- * @property string $StatisticId
- * @property 'INCLUDE'|'EXCLUDE' $InclusionAnnotation
+ * @property string|null $ProfileId
+ * @property string|null $StatisticId
+ * @property 'INCLUDE'|'EXCLUDE'|null $InclusionAnnotation
  */
 class DatapointInclusionAnnotation extends Shape
 {
     /**
      * @param array{
-     *     ProfileId?: string,
-     *     StatisticId?: string,
-     *     InclusionAnnotation?: 'INCLUDE'|'EXCLUDE'
+     *     ProfileId?: string|null,
+     *     StatisticId?: string|null,
+     *     InclusionAnnotation?: 'INCLUDE'|'EXCLUDE'|null
      * } $args
      */
     public function __construct(array $args = [])

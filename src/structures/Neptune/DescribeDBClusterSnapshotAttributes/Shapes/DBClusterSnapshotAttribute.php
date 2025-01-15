@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptune\DescribeDBClusterSnapshotAttributes\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AttributeName
- * @property list<string> $AttributeValues
+ * @property string|null $AttributeName
+ * @property list<string>|null $AttributeValues
  */
 class DBClusterSnapshotAttribute extends Shape
 {
     /**
      * @param array{
-     *     AttributeName?: string,
-     *     AttributeValues?: list<string>
+     *     AttributeName?: string|null,
+     *     AttributeValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\ListAnomalies;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Anomaly> $anomalies
- * @property string $nextToken
+ * @property list<Shapes\Anomaly>|null $anomalies
+ * @property string|null $nextToken
  */
 class ListAnomaliesResponse extends Response
 {

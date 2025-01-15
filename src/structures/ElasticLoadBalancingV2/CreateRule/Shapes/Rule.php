@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\CreateRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuleArn
- * @property string $Priority
- * @property list<RuleCondition> $Conditions
- * @property list<Action> $Actions
- * @property bool $IsDefault
+ * @property string|null $RuleArn
+ * @property string|null $Priority
+ * @property list<RuleCondition>|null $Conditions
+ * @property list<Action>|null $Actions
+ * @property bool|null $IsDefault
  */
 class Rule extends Shape
 {
     /**
      * @param array{
-     *     RuleArn?: string,
-     *     Priority?: string,
-     *     Conditions?: list<RuleCondition>,
-     *     Actions?: list<Action>,
-     *     IsDefault?: bool
+     *     RuleArn?: string|null,
+     *     Priority?: string|null,
+     *     Conditions?: list<RuleCondition>|null,
+     *     Actions?: list<Action>|null,
+     *     IsDefault?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

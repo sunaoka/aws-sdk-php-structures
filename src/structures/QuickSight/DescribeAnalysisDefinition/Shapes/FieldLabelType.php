@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FieldId
- * @property 'HIDDEN'|'VISIBLE' $Visibility
+ * @property string|null $FieldId
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
  */
 class FieldLabelType extends Shape
 {
     /**
      * @param array{
-     *     FieldId?: string,
-     *     Visibility?: 'HIDDEN'|'VISIBLE'
+     *     FieldId?: string|null,
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\DescribeDeviceEc2Instances
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Instance $instance
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
+ * @property Instance|null $instance
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
 class InstanceSummary extends Shape
 {
     /**
      * @param array{
-     *     instance?: Instance,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult
+     *     instance?: Instance|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

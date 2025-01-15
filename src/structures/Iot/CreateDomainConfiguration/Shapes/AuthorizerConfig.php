@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\CreateDomainConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $defaultAuthorizerName
- * @property bool $allowAuthorizerOverride
+ * @property string|null $defaultAuthorizerName
+ * @property bool|null $allowAuthorizerOverride
  */
 class AuthorizerConfig extends Shape
 {
     /**
      * @param array{
-     *     defaultAuthorizerName?: string,
-     *     allowAuthorizerOverride?: bool
+     *     defaultAuthorizerName?: string|null,
+     *     allowAuthorizerOverride?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Macie2\GetCustomDataIdentifier;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property bool $deleted
- * @property string $description
- * @property string $id
- * @property list<string> $ignoreWords
- * @property list<string> $keywords
- * @property int $maximumMatchDistance
- * @property string $name
- * @property string $regex
- * @property list<Shapes\SeverityLevel> $severityLevels
- * @property array<string, string> $tags
+ * @property string|null $arn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property bool|null $deleted
+ * @property string|null $description
+ * @property string|null $id
+ * @property list<string>|null $ignoreWords
+ * @property list<string>|null $keywords
+ * @property int|null $maximumMatchDistance
+ * @property string|null $name
+ * @property string|null $regex
+ * @property list<Shapes\SeverityLevel>|null $severityLevels
+ * @property array<string, string>|null $tags
  */
 class GetCustomDataIdentifierResponse extends Response
 {

@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Textract\AnalyzeID\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'KEY_VALUE_SET'|'PAGE'|'LINE'|'WORD'|'TABLE'|'CELL'|'SELECTION_ELEMENT'|'MERGED_CELL'|'TITLE'|'QUERY'|'QUERY_RESULT'|'SIGNATURE'|'TABLE_TITLE'|'TABLE_FOOTER'|'LAYOUT_TEXT'|'LAYOUT_TITLE'|'LAYOUT_HEADER'|'LAYOUT_FOOTER'|'LAYOUT_SECTION_HEADER'|'LAYOUT_PAGE_NUMBER'|'LAYOUT_LIST'|'LAYOUT_FIGURE'|'LAYOUT_TABLE'|'LAYOUT_KEY_VALUE' $BlockType
- * @property float $Confidence
- * @property string $Text
- * @property 'HANDWRITING'|'PRINTED' $TextType
- * @property int<0, max> $RowIndex
- * @property int<0, max> $ColumnIndex
- * @property int<0, max> $RowSpan
- * @property int<0, max> $ColumnSpan
- * @property Geometry $Geometry
- * @property string $Id
- * @property list<Relationship> $Relationships
- * @property list<'KEY'|'VALUE'|'COLUMN_HEADER'|'TABLE_TITLE'|'TABLE_FOOTER'|'TABLE_SECTION_TITLE'|'TABLE_SUMMARY'|'STRUCTURED_TABLE'|'SEMI_STRUCTURED_TABLE'> $EntityTypes
- * @property 'SELECTED'|'NOT_SELECTED' $SelectionStatus
- * @property int<0, max> $Page
- * @property Query $Query
+ * @property 'KEY_VALUE_SET'|'PAGE'|'LINE'|'WORD'|'TABLE'|'CELL'|'SELECTION_ELEMENT'|'MERGED_CELL'|'TITLE'|'QUERY'|'QUERY_RESULT'|'SIGNATURE'|'TABLE_TITLE'|'TABLE_FOOTER'|'LAYOUT_TEXT'|'LAYOUT_TITLE'|'LAYOUT_HEADER'|'LAYOUT_FOOTER'|'LAYOUT_SECTION_HEADER'|'LAYOUT_PAGE_NUMBER'|'LAYOUT_LIST'|'LAYOUT_FIGURE'|'LAYOUT_TABLE'|'LAYOUT_KEY_VALUE'|null $BlockType
+ * @property float|null $Confidence
+ * @property string|null $Text
+ * @property 'HANDWRITING'|'PRINTED'|null $TextType
+ * @property int<0, max>|null $RowIndex
+ * @property int<0, max>|null $ColumnIndex
+ * @property int<0, max>|null $RowSpan
+ * @property int<0, max>|null $ColumnSpan
+ * @property Geometry|null $Geometry
+ * @property string|null $Id
+ * @property list<Relationship>|null $Relationships
+ * @property list<'KEY'|'VALUE'|'COLUMN_HEADER'|'TABLE_TITLE'|'TABLE_FOOTER'|'TABLE_SECTION_TITLE'|'TABLE_SUMMARY'|'STRUCTURED_TABLE'|'SEMI_STRUCTURED_TABLE'>|null $EntityTypes
+ * @property 'SELECTED'|'NOT_SELECTED'|null $SelectionStatus
+ * @property int<0, max>|null $Page
+ * @property Query|null $Query
  */
 class Block extends Shape
 {
     /**
      * @param array{
-     *     BlockType?: 'KEY_VALUE_SET'|'PAGE'|'LINE'|'WORD'|'TABLE'|'CELL'|'SELECTION_ELEMENT'|'MERGED_CELL'|'TITLE'|'QUERY'|'QUERY_RESULT'|'SIGNATURE'|'TABLE_TITLE'|'TABLE_FOOTER'|'LAYOUT_TEXT'|'LAYOUT_TITLE'|'LAYOUT_HEADER'|'LAYOUT_FOOTER'|'LAYOUT_SECTION_HEADER'|'LAYOUT_PAGE_NUMBER'|'LAYOUT_LIST'|'LAYOUT_FIGURE'|'LAYOUT_TABLE'|'LAYOUT_KEY_VALUE',
-     *     Confidence?: float,
-     *     Text?: string,
-     *     TextType?: 'HANDWRITING'|'PRINTED',
-     *     RowIndex?: int<0, max>,
-     *     ColumnIndex?: int<0, max>,
-     *     RowSpan?: int<0, max>,
-     *     ColumnSpan?: int<0, max>,
-     *     Geometry?: Geometry,
-     *     Id?: string,
-     *     Relationships?: list<Relationship>,
-     *     EntityTypes?: list<'KEY'|'VALUE'|'COLUMN_HEADER'|'TABLE_TITLE'|'TABLE_FOOTER'|'TABLE_SECTION_TITLE'|'TABLE_SUMMARY'|'STRUCTURED_TABLE'|'SEMI_STRUCTURED_TABLE'>,
-     *     SelectionStatus?: 'SELECTED'|'NOT_SELECTED',
-     *     Page?: int<0, max>,
-     *     Query?: Query
+     *     BlockType?: 'KEY_VALUE_SET'|'PAGE'|'LINE'|'WORD'|'TABLE'|'CELL'|'SELECTION_ELEMENT'|'MERGED_CELL'|'TITLE'|'QUERY'|'QUERY_RESULT'|'SIGNATURE'|'TABLE_TITLE'|'TABLE_FOOTER'|'LAYOUT_TEXT'|'LAYOUT_TITLE'|'LAYOUT_HEADER'|'LAYOUT_FOOTER'|'LAYOUT_SECTION_HEADER'|'LAYOUT_PAGE_NUMBER'|'LAYOUT_LIST'|'LAYOUT_FIGURE'|'LAYOUT_TABLE'|'LAYOUT_KEY_VALUE'|null,
+     *     Confidence?: float|null,
+     *     Text?: string|null,
+     *     TextType?: 'HANDWRITING'|'PRINTED'|null,
+     *     RowIndex?: int<0, max>|null,
+     *     ColumnIndex?: int<0, max>|null,
+     *     RowSpan?: int<0, max>|null,
+     *     ColumnSpan?: int<0, max>|null,
+     *     Geometry?: Geometry|null,
+     *     Id?: string|null,
+     *     Relationships?: list<Relationship>|null,
+     *     EntityTypes?: list<'KEY'|'VALUE'|'COLUMN_HEADER'|'TABLE_TITLE'|'TABLE_FOOTER'|'TABLE_SECTION_TITLE'|'TABLE_SUMMARY'|'STRUCTURED_TABLE'|'SEMI_STRUCTURED_TABLE'>|null,
+     *     SelectionStatus?: 'SELECTED'|'NOT_SELECTED'|null,
+     *     Page?: int<0, max>|null,
+     *     Query?: Query|null
      * } $args
      */
     public function __construct(array $args = [])

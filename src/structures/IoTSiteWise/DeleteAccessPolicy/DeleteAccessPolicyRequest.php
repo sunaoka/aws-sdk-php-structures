@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $accessPolicyId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteAccessPolicyRequest extends Request
 {
     /**
      * @param array{
      *     accessPolicyId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetWorkflow;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WorkflowId
- * @property 'APPFLOW_INTEGRATION' $WorkflowType
- * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'SPLIT'|'RETRY'|'CANCELLED' $Status
- * @property string $ErrorDescription
- * @property \Aws\Api\DateTimeResult $StartDate
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property Shapes\WorkflowAttributes $Attributes
- * @property Shapes\WorkflowMetrics $Metrics
+ * @property string|null $WorkflowId
+ * @property 'APPFLOW_INTEGRATION'|null $WorkflowType
+ * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'SPLIT'|'RETRY'|'CANCELLED'|null $Status
+ * @property string|null $ErrorDescription
+ * @property \Aws\Api\DateTimeResult|null $StartDate
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property Shapes\WorkflowAttributes|null $Attributes
+ * @property Shapes\WorkflowMetrics|null $Metrics
  */
 class GetWorkflowResponse extends Response
 {

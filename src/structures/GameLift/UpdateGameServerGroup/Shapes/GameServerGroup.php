@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\GameLift\UpdateGameServerGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GameServerGroupName
- * @property string $GameServerGroupArn
- * @property string $RoleArn
- * @property list<InstanceDefinition> $InstanceDefinitions
- * @property 'SPOT_ONLY'|'SPOT_PREFERRED'|'ON_DEMAND_ONLY' $BalancingStrategy
- * @property 'NO_PROTECTION'|'FULL_PROTECTION' $GameServerProtectionPolicy
- * @property string $AutoScalingGroupArn
- * @property 'NEW'|'ACTIVATING'|'ACTIVE'|'DELETE_SCHEDULED'|'DELETING'|'DELETED'|'ERROR' $Status
- * @property string $StatusReason
- * @property list<'REPLACE_INSTANCE_TYPES'> $SuspendedActions
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
+ * @property string|null $GameServerGroupName
+ * @property string|null $GameServerGroupArn
+ * @property string|null $RoleArn
+ * @property list<InstanceDefinition>|null $InstanceDefinitions
+ * @property 'SPOT_ONLY'|'SPOT_PREFERRED'|'ON_DEMAND_ONLY'|null $BalancingStrategy
+ * @property 'NO_PROTECTION'|'FULL_PROTECTION'|null $GameServerProtectionPolicy
+ * @property string|null $AutoScalingGroupArn
+ * @property 'NEW'|'ACTIVATING'|'ACTIVE'|'DELETE_SCHEDULED'|'DELETING'|'DELETED'|'ERROR'|null $Status
+ * @property string|null $StatusReason
+ * @property list<'REPLACE_INSTANCE_TYPES'>|null $SuspendedActions
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  */
 class GameServerGroup extends Shape
 {
     /**
      * @param array{
-     *     GameServerGroupName?: string,
-     *     GameServerGroupArn?: string,
-     *     RoleArn?: string,
-     *     InstanceDefinitions?: list<InstanceDefinition>,
-     *     BalancingStrategy?: 'SPOT_ONLY'|'SPOT_PREFERRED'|'ON_DEMAND_ONLY',
-     *     GameServerProtectionPolicy?: 'NO_PROTECTION'|'FULL_PROTECTION',
-     *     AutoScalingGroupArn?: string,
-     *     Status?: 'NEW'|'ACTIVATING'|'ACTIVE'|'DELETE_SCHEDULED'|'DELETING'|'DELETED'|'ERROR',
-     *     StatusReason?: string,
-     *     SuspendedActions?: list<'REPLACE_INSTANCE_TYPES'>,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult
+     *     GameServerGroupName?: string|null,
+     *     GameServerGroupArn?: string|null,
+     *     RoleArn?: string|null,
+     *     InstanceDefinitions?: list<InstanceDefinition>|null,
+     *     BalancingStrategy?: 'SPOT_ONLY'|'SPOT_PREFERRED'|'ON_DEMAND_ONLY'|null,
+     *     GameServerProtectionPolicy?: 'NO_PROTECTION'|'FULL_PROTECTION'|null,
+     *     AutoScalingGroupArn?: string|null,
+     *     Status?: 'NEW'|'ACTIVATING'|'ACTIVE'|'DELETE_SCHEDULED'|'DELETING'|'DELETED'|'ERROR'|null,
+     *     StatusReason?: string|null,
+     *     SuspendedActions?: list<'REPLACE_INSTANCE_TYPES'>|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

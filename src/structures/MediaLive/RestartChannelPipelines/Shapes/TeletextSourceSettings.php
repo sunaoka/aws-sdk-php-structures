@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\RestartChannelPipelines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CaptionRectangle $OutputRectangle
- * @property string $PageNumber
+ * @property CaptionRectangle|null $OutputRectangle
+ * @property string|null $PageNumber
  */
 class TeletextSourceSettings extends Shape
 {
     /**
      * @param array{
-     *     OutputRectangle?: CaptionRectangle,
-     *     PageNumber?: string
+     *     OutputRectangle?: CaptionRectangle|null,
+     *     PageNumber?: string|null
      * } $args
      */
     public function __construct(array $args = [])

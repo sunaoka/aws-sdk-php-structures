@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property string $Key
- * @property Shapes\ObjectLockRetention $Retention
- * @property 'requester' $RequestPayer
- * @property string $VersionId
- * @property bool $BypassGovernanceRetention
- * @property string $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
- * @property string $ExpectedBucketOwner
+ * @property Shapes\ObjectLockRetention|null $Retention
+ * @property 'requester'|null $RequestPayer
+ * @property string|null $VersionId
+ * @property bool|null $BypassGovernanceRetention
+ * @property string|null $ContentMD5
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property string|null $ExpectedBucketOwner
  */
 class PutObjectRetentionRequest extends Request
 {
@@ -21,13 +21,13 @@ class PutObjectRetentionRequest extends Request
      * @param array{
      *     Bucket: string,
      *     Key: string,
-     *     Retention?: Shapes\ObjectLockRetention,
-     *     RequestPayer?: 'requester',
-     *     VersionId?: string,
-     *     BypassGovernanceRetention?: bool,
-     *     ContentMD5?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
-     *     ExpectedBucketOwner?: string
+     *     Retention?: Shapes\ObjectLockRetention|null,
+     *     RequestPayer?: 'requester'|null,
+     *     VersionId?: string|null,
+     *     BypassGovernanceRetention?: bool|null,
+     *     ContentMD5?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

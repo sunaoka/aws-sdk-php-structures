@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DirectoryId
  * @property string $UserName
  * @property string $BundleId
- * @property string $VolumeEncryptionKey
- * @property bool $UserVolumeEncryptionEnabled
- * @property bool $RootVolumeEncryptionEnabled
- * @property WorkspaceProperties $WorkspaceProperties
- * @property list<Tag> $Tags
- * @property string $WorkspaceName
+ * @property string|null $VolumeEncryptionKey
+ * @property bool|null $UserVolumeEncryptionEnabled
+ * @property bool|null $RootVolumeEncryptionEnabled
+ * @property WorkspaceProperties|null $WorkspaceProperties
+ * @property list<Tag>|null $Tags
+ * @property string|null $WorkspaceName
  */
 class WorkspaceRequest extends Shape
 {
@@ -22,12 +22,12 @@ class WorkspaceRequest extends Shape
      *     DirectoryId: string,
      *     UserName: string,
      *     BundleId: string,
-     *     VolumeEncryptionKey?: string,
-     *     UserVolumeEncryptionEnabled?: bool,
-     *     RootVolumeEncryptionEnabled?: bool,
-     *     WorkspaceProperties?: WorkspaceProperties,
-     *     Tags?: list<Tag>,
-     *     WorkspaceName?: string
+     *     VolumeEncryptionKey?: string|null,
+     *     UserVolumeEncryptionEnabled?: bool|null,
+     *     RootVolumeEncryptionEnabled?: bool|null,
+     *     WorkspaceProperties?: WorkspaceProperties|null,
+     *     Tags?: list<Tag>|null,
+     *     WorkspaceName?: string|null
      * } $args
      */
     public function __construct(array $args)

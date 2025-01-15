@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetCloudFrontOriginAccessIdentityCon
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\CloudFrontOriginAccessIdentityConfig $CloudFrontOriginAccessIdentityConfig
- * @property string $ETag
+ * @property Shapes\CloudFrontOriginAccessIdentityConfig|null $CloudFrontOriginAccessIdentityConfig
+ * @property string|null $ETag
  */
 class GetCloudFrontOriginAccessIdentityConfigResponse extends Response
 {

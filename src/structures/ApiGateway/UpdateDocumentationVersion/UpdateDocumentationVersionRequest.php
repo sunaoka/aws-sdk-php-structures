@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $restApiId
  * @property string $documentationVersion
- * @property list<Shapes\PatchOperation> $patchOperations
+ * @property list<Shapes\PatchOperation>|null $patchOperations
  */
 class UpdateDocumentationVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateDocumentationVersionRequest extends Request
      * @param array{
      *     restApiId: string,
      *     documentationVersion: string,
-     *     patchOperations?: list<Shapes\PatchOperation>
+     *     patchOperations?: list<Shapes\PatchOperation>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteConnection\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplicationInstanceArn
- * @property string $EndpointArn
- * @property string $Status
- * @property string $LastFailureMessage
- * @property string $EndpointIdentifier
- * @property string $ReplicationInstanceIdentifier
+ * @property string|null $ReplicationInstanceArn
+ * @property string|null $EndpointArn
+ * @property string|null $Status
+ * @property string|null $LastFailureMessage
+ * @property string|null $EndpointIdentifier
+ * @property string|null $ReplicationInstanceIdentifier
  */
 class Connection extends Shape
 {
     /**
      * @param array{
-     *     ReplicationInstanceArn?: string,
-     *     EndpointArn?: string,
-     *     Status?: string,
-     *     LastFailureMessage?: string,
-     *     EndpointIdentifier?: string,
-     *     ReplicationInstanceIdentifier?: string
+     *     ReplicationInstanceArn?: string|null,
+     *     EndpointArn?: string|null,
+     *     Status?: string|null,
+     *     LastFailureMessage?: string|null,
+     *     EndpointIdentifier?: string|null,
+     *     ReplicationInstanceIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

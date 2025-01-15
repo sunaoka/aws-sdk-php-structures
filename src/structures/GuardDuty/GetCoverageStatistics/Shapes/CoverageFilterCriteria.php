@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetCoverageStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CoverageFilterCriterion> $FilterCriterion
+ * @property list<CoverageFilterCriterion>|null $FilterCriterion
  */
 class CoverageFilterCriteria extends Shape
 {
     /**
-     * @param array{FilterCriterion?: list<CoverageFilterCriterion>} $args
+     * @param array{FilterCriterion?: list<CoverageFilterCriterion>|null} $args
      */
     public function __construct(array $args = [])
     {

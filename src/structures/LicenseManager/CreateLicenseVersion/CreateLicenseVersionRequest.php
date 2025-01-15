@@ -11,12 +11,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Issuer $Issuer
  * @property string $HomeRegion
  * @property Shapes\DatetimeRange $Validity
- * @property list<Shapes\Metadata> $LicenseMetadata
+ * @property list<Shapes\Metadata>|null $LicenseMetadata
  * @property list<Shapes\Entitlement> $Entitlements
  * @property Shapes\ConsumptionConfiguration $ConsumptionConfiguration
  * @property 'AVAILABLE'|'PENDING_AVAILABLE'|'DEACTIVATED'|'SUSPENDED'|'EXPIRED'|'PENDING_DELETE'|'DELETED' $Status
  * @property string $ClientToken
- * @property string $SourceVersion
+ * @property string|null $SourceVersion
  */
 class CreateLicenseVersionRequest extends Request
 {
@@ -28,12 +28,12 @@ class CreateLicenseVersionRequest extends Request
      *     Issuer: Shapes\Issuer,
      *     HomeRegion: string,
      *     Validity: Shapes\DatetimeRange,
-     *     LicenseMetadata?: list<Shapes\Metadata>,
+     *     LicenseMetadata?: list<Shapes\Metadata>|null,
      *     Entitlements: list<Shapes\Entitlement>,
      *     ConsumptionConfiguration: Shapes\ConsumptionConfiguration,
      *     Status: 'AVAILABLE'|'PENDING_AVAILABLE'|'DEACTIVATED'|'SUSPENDED'|'EXPIRED'|'PENDING_DELETE'|'DELETED',
      *     ClientToken: string,
-     *     SourceVersion?: string
+     *     SourceVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

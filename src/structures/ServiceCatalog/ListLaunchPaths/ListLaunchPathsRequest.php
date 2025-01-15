@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListLaunchPaths;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $ProductId
- * @property int<0, 20> $PageSize
- * @property string $PageToken
+ * @property int<0, 20>|null $PageSize
+ * @property string|null $PageToken
  */
 class ListLaunchPathsRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     ProductId: string,
-     *     PageSize?: int<0, 20>,
-     *     PageToken?: string
+     *     PageSize?: int<0, 20>|null,
+     *     PageToken?: string|null
      * } $args
      */
     public function __construct(array $args)

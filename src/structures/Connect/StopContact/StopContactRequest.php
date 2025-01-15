@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ContactId
  * @property string $InstanceId
- * @property Shapes\DisconnectReason $DisconnectReason
+ * @property Shapes\DisconnectReason|null $DisconnectReason
  */
 class StopContactRequest extends Request
 {
@@ -15,7 +15,7 @@ class StopContactRequest extends Request
      * @param array{
      *     ContactId: string,
      *     InstanceId: string,
-     *     DisconnectReason?: Shapes\DisconnectReason
+     *     DisconnectReason?: Shapes\DisconnectReason|null
      * } $args
      */
     public function __construct(array $args)

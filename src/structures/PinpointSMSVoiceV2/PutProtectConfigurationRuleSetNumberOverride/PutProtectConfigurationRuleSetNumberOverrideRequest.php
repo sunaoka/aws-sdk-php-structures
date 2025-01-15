@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\PutProtectConfigurationRuleS
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $ProtectConfigurationId
  * @property string $DestinationPhoneNumber
  * @property 'ALLOW'|'BLOCK' $Action
- * @property \Aws\Api\DateTimeResult $ExpirationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTimestamp
  */
 class PutProtectConfigurationRuleSetNumberOverrideRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     ProtectConfigurationId: string,
      *     DestinationPhoneNumber: string,
      *     Action: 'ALLOW'|'BLOCK',
-     *     ExpirationTimestamp?: \Aws\Api\DateTimeResult
+     *     ExpirationTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

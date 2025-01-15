@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataPipeline\ListPipelines;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $marker
+ * @property string|null $marker
  */
 class ListPipelinesRequest extends Request
 {
     /**
-     * @param array{marker?: string} $args
+     * @param array{marker?: string|null} $args
      */
     public function __construct(array $args = [])
     {

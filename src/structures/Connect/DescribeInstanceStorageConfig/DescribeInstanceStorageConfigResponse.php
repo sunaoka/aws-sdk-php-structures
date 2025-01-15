@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeInstanceStorageConfig;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\InstanceStorageConfig $StorageConfig
+ * @property Shapes\InstanceStorageConfig|null $StorageConfig
  */
 class DescribeInstanceStorageConfigResponse extends Response
 {

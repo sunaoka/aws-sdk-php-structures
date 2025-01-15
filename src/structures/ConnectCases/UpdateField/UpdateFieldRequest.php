@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConnectCases\UpdateField;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $domainId
  * @property string $fieldId
- * @property string $name
+ * @property string|null $name
  */
 class UpdateFieldRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     domainId: string,
      *     fieldId: string,
-     *     name?: string
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

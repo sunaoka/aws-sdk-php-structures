@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property string $ContactId
  * @property string $EvaluationFormId
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class StartContactEvaluationRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartContactEvaluationRequest extends Request
      *     InstanceId: string,
      *     ContactId: string,
      *     EvaluationFormId: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

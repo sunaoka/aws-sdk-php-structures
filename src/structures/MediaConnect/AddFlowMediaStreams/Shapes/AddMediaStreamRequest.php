@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MediaConnect\AddFlowMediaStreams\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MediaStreamAttributesRequest $Attributes
- * @property int $ClockRate
- * @property string $Description
+ * @property MediaStreamAttributesRequest|null $Attributes
+ * @property int|null $ClockRate
+ * @property string|null $Description
  * @property int $MediaStreamId
  * @property string $MediaStreamName
  * @property 'video'|'audio'|'ancillary-data' $MediaStreamType
- * @property string $VideoFormat
+ * @property string|null $VideoFormat
  */
 class AddMediaStreamRequest extends Shape
 {
     /**
      * @param array{
-     *     Attributes?: MediaStreamAttributesRequest,
-     *     ClockRate?: int,
-     *     Description?: string,
+     *     Attributes?: MediaStreamAttributesRequest|null,
+     *     ClockRate?: int|null,
+     *     Description?: string|null,
      *     MediaStreamId: int,
      *     MediaStreamName: string,
      *     MediaStreamType: 'video'|'audio'|'ancillary-data',
-     *     VideoFormat?: string
+     *     VideoFormat?: string|null
      * } $args
      */
     public function __construct(array $args)

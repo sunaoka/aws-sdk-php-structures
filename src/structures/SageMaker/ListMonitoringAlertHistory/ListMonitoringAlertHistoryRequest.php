@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListMonitoringAlertHistory;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $MonitoringScheduleName
- * @property string $MonitoringAlertName
- * @property 'CreationTime'|'Status' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property 'InAlert'|'OK' $StatusEquals
+ * @property string|null $MonitoringScheduleName
+ * @property string|null $MonitoringAlertName
+ * @property 'CreationTime'|'Status'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property 'InAlert'|'OK'|null $StatusEquals
  */
 class ListMonitoringAlertHistoryRequest extends Request
 {
     /**
      * @param array{
-     *     MonitoringScheduleName?: string,
-     *     MonitoringAlertName?: string,
-     *     SortBy?: 'CreationTime'|'Status',
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     StatusEquals?: 'InAlert'|'OK'
+     *     MonitoringScheduleName?: string|null,
+     *     MonitoringAlertName?: string|null,
+     *     SortBy?: 'CreationTime'|'Status'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     StatusEquals?: 'InAlert'|'OK'|null
      * } $args
      */
     public function __construct(array $args = [])

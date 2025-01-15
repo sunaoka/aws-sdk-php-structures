@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSMQuickSetup\GetServiceSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ServiceSettings $ServiceSettings
+ * @property Shapes\ServiceSettings|null $ServiceSettings
  */
 class GetServiceSettingsResponse extends Response
 {

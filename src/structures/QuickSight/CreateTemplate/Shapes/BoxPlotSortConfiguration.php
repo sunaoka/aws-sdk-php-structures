@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FieldSortOptions> $CategorySort
- * @property PaginationConfiguration $PaginationConfiguration
+ * @property list<FieldSortOptions>|null $CategorySort
+ * @property PaginationConfiguration|null $PaginationConfiguration
  */
 class BoxPlotSortConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CategorySort?: list<FieldSortOptions>,
-     *     PaginationConfiguration?: PaginationConfiguration
+     *     CategorySort?: list<FieldSortOptions>|null,
+     *     PaginationConfiguration?: PaginationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

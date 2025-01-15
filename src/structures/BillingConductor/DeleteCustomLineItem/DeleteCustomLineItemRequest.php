@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property Shapes\CustomLineItemBillingPeriodRange $BillingPeriodRange
+ * @property Shapes\CustomLineItemBillingPeriodRange|null $BillingPeriodRange
  */
 class DeleteCustomLineItemRequest extends Request
 {
     /**
      * @param array{
      *     Arn: string,
-     *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange
+     *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange|null
      * } $args
      */
     public function __construct(array $args)

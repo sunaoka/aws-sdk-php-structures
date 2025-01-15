@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $secretArn
  * @property string $roleArn
- * @property string $authorizationUrl
- * @property string $tokenUrl
+ * @property string|null $authorizationUrl
+ * @property string|null $tokenUrl
  */
 class OAuth2ClientCredentialConfiguration extends Shape
 {
@@ -16,8 +16,8 @@ class OAuth2ClientCredentialConfiguration extends Shape
      * @param array{
      *     secretArn: string,
      *     roleArn: string,
-     *     authorizationUrl?: string,
-     *     tokenUrl?: string
+     *     authorizationUrl?: string|null,
+     *     tokenUrl?: string|null
      * } $args
      */
     public function __construct(array $args)

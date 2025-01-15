@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AWS_IAM' $authorizationType
- * @property AwsIamConfig $awsIamConfig
+ * @property AwsIamConfig|null $awsIamConfig
  */
 class AuthorizationConfig extends Shape
 {
     /**
      * @param array{
      *     authorizationType: 'AWS_IAM',
-     *     awsIamConfig?: AwsIamConfig
+     *     awsIamConfig?: AwsIamConfig|null
      * } $args
      */
     public function __construct(array $args)

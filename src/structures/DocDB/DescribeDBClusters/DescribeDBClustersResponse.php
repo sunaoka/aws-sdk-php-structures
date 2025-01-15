@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DocDB\DescribeDBClusters;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\DBCluster> $DBClusters
+ * @property string|null $Marker
+ * @property list<Shapes\DBCluster>|null $DBClusters
  */
 class DescribeDBClustersResponse extends Response
 {

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\UtilizationByTime> $UtilizationsByTime
- * @property Shapes\ReservationAggregates $Total
- * @property string $NextPageToken
+ * @property Shapes\ReservationAggregates|null $Total
+ * @property string|null $NextPageToken
  */
 class GetReservationUtilizationResponse extends Response
 {

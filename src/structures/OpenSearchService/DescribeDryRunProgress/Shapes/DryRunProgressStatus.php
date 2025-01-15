@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DryRunStatus
  * @property string $CreationDate
  * @property string $UpdateDate
- * @property list<ValidationFailure> $ValidationFailures
+ * @property list<ValidationFailure>|null $ValidationFailures
  */
 class DryRunProgressStatus extends Shape
 {
@@ -19,7 +19,7 @@ class DryRunProgressStatus extends Shape
      *     DryRunStatus: string,
      *     CreationDate: string,
      *     UpdateDate: string,
-     *     ValidationFailures?: list<ValidationFailure>
+     *     ValidationFailures?: list<ValidationFailure>|null
      * } $args
      */
     public function __construct(array $args)

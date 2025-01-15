@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeAlgorithm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AlgorithmStatusItem> $ValidationStatuses
- * @property list<AlgorithmStatusItem> $ImageScanStatuses
+ * @property list<AlgorithmStatusItem>|null $ValidationStatuses
+ * @property list<AlgorithmStatusItem>|null $ImageScanStatuses
  */
 class AlgorithmStatusDetails extends Shape
 {
     /**
      * @param array{
-     *     ValidationStatuses?: list<AlgorithmStatusItem>,
-     *     ImageScanStatuses?: list<AlgorithmStatusItem>
+     *     ValidationStatuses?: list<AlgorithmStatusItem>|null,
+     *     ImageScanStatuses?: list<AlgorithmStatusItem>|null
      * } $args
      */
     public function __construct(array $args = [])

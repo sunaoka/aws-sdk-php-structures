@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Iot\GetTopicRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ruleArn
- * @property Shapes\TopicRule $rule
+ * @property string|null $ruleArn
+ * @property Shapes\TopicRule|null $rule
  */
 class GetTopicRuleResponse extends Response
 {

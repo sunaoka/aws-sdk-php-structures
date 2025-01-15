@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Transfer\ListConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $ConnectorId
- * @property string $Url
+ * @property string|null $Arn
+ * @property string|null $ConnectorId
+ * @property string|null $Url
  */
 class ListedConnector extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     ConnectorId?: string,
-     *     Url?: string
+     *     Arn?: string|null,
+     *     ConnectorId?: string|null,
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

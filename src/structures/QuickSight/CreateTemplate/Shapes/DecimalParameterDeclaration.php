@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'MULTI_VALUED'|'SINGLE_VALUED' $ParameterValueType
  * @property string $Name
- * @property DecimalDefaultValues $DefaultValues
- * @property DecimalValueWhenUnsetConfiguration $ValueWhenUnset
- * @property list<MappedDataSetParameter> $MappedDataSetParameters
+ * @property DecimalDefaultValues|null $DefaultValues
+ * @property DecimalValueWhenUnsetConfiguration|null $ValueWhenUnset
+ * @property list<MappedDataSetParameter>|null $MappedDataSetParameters
  */
 class DecimalParameterDeclaration extends Shape
 {
@@ -17,9 +17,9 @@ class DecimalParameterDeclaration extends Shape
      * @param array{
      *     ParameterValueType: 'MULTI_VALUED'|'SINGLE_VALUED',
      *     Name: string,
-     *     DefaultValues?: DecimalDefaultValues,
-     *     ValueWhenUnset?: DecimalValueWhenUnsetConfiguration,
-     *     MappedDataSetParameters?: list<MappedDataSetParameter>
+     *     DefaultValues?: DecimalDefaultValues|null,
+     *     ValueWhenUnset?: DecimalValueWhenUnsetConfiguration|null,
+     *     MappedDataSetParameters?: list<MappedDataSetParameter>|null
      * } $args
      */
     public function __construct(array $args)

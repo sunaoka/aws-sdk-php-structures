@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iam\GetServiceLinkedRoleDeletionStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Region
- * @property list<string> $Resources
+ * @property string|null $Region
+ * @property list<string>|null $Resources
  */
 class RoleUsageType extends Shape
 {
     /**
      * @param array{
-     *     Region?: string,
-     *     Resources?: list<string>
+     *     Region?: string|null,
+     *     Resources?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

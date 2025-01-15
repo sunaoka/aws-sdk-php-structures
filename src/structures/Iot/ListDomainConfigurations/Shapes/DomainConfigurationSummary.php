@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\ListDomainConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $domainConfigurationName
- * @property string $domainConfigurationArn
- * @property 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS' $serviceType
+ * @property string|null $domainConfigurationName
+ * @property string|null $domainConfigurationArn
+ * @property 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'|null $serviceType
  */
 class DomainConfigurationSummary extends Shape
 {
     /**
      * @param array{
-     *     domainConfigurationName?: string,
-     *     domainConfigurationArn?: string,
-     *     serviceType?: 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'
+     *     domainConfigurationName?: string|null,
+     *     domainConfigurationArn?: string|null,
+     *     serviceType?: 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WorkerId
  * @property string $QualificationTypeId
- * @property string $Reason
+ * @property string|null $Reason
  */
 class DisassociateQualificationFromWorkerRequest extends Request
 {
@@ -15,7 +15,7 @@ class DisassociateQualificationFromWorkerRequest extends Request
      * @param array{
      *     WorkerId: string,
      *     QualificationTypeId: string,
-     *     Reason?: string
+     *     Reason?: string|null
      * } $args
      */
     public function __construct(array $args)

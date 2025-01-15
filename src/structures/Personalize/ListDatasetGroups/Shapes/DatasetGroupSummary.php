@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Personalize\ListDatasetGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $datasetGroupArn
- * @property string $status
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property string $failureReason
- * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND' $domain
+ * @property string|null $name
+ * @property string|null $datasetGroupArn
+ * @property string|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property string|null $failureReason
+ * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null $domain
  */
 class DatasetGroupSummary extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     datasetGroupArn?: string,
-     *     status?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     failureReason?: string,
-     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'
+     *     name?: string|null,
+     *     datasetGroupArn?: string|null,
+     *     status?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     failureReason?: string|null,
+     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null
      * } $args
      */
     public function __construct(array $args = [])

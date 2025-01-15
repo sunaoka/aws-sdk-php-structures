@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $environmentId
  * @property string $volumeName
- * @property string $description
- * @property string $clientToken
- * @property Shapes\KxNAS1Configuration $nas1Configuration
+ * @property string|null $description
+ * @property string|null $clientToken
+ * @property Shapes\KxNAS1Configuration|null $nas1Configuration
  */
 class UpdateKxVolumeRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateKxVolumeRequest extends Request
      * @param array{
      *     environmentId: string,
      *     volumeName: string,
-     *     description?: string,
-     *     clientToken?: string,
-     *     nas1Configuration?: Shapes\KxNAS1Configuration
+     *     description?: string|null,
+     *     clientToken?: string|null,
+     *     nas1Configuration?: Shapes\KxNAS1Configuration|null
      * } $args
      */
     public function __construct(array $args)

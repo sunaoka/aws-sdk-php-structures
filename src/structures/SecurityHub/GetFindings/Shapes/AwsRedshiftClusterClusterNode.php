@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NodeRole
- * @property string $PrivateIpAddress
- * @property string $PublicIpAddress
+ * @property string|null $NodeRole
+ * @property string|null $PrivateIpAddress
+ * @property string|null $PublicIpAddress
  */
 class AwsRedshiftClusterClusterNode extends Shape
 {
     /**
      * @param array{
-     *     NodeRole?: string,
-     *     PrivateIpAddress?: string,
-     *     PublicIpAddress?: string
+     *     NodeRole?: string|null,
+     *     PrivateIpAddress?: string|null,
+     *     PublicIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property string $ErrorMessage
- * @property list<Shapes\Principal> $AccessControlList
- * @property list<Shapes\HierarchicalPrincipal> $HierarchicalAccessControlList
+ * @property string|null $Description
+ * @property string|null $ErrorMessage
+ * @property list<Shapes\Principal>|null $AccessControlList
+ * @property list<Shapes\HierarchicalPrincipal>|null $HierarchicalAccessControlList
  */
 class DescribeAccessControlConfigurationResponse extends Response
 {

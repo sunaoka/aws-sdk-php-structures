@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTEventsData\ListDetectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stateName
+ * @property string|null $stateName
  */
 class DetectorStateSummary extends Shape
 {
     /**
-     * @param array{stateName?: string} $args
+     * @param array{stateName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

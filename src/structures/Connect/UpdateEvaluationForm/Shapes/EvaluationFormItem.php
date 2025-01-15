@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateEvaluationForm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EvaluationFormSection $Section
- * @property EvaluationFormQuestion $Question
+ * @property EvaluationFormSection|null $Section
+ * @property EvaluationFormQuestion|null $Question
  */
 class EvaluationFormItem extends Shape
 {
     /**
      * @param array{
-     *     Section?: EvaluationFormSection,
-     *     Question?: EvaluationFormQuestion
+     *     Section?: EvaluationFormSection|null,
+     *     Question?: EvaluationFormQuestion|null
      * } $args
      */
     public function __construct(array $args = [])

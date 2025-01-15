@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\KinesisVideoArchivedMedia\GetImages;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
- * @property string $StreamARN
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
  * @property 'PRODUCER_TIMESTAMP'|'SERVER_TIMESTAMP' $ImageSelectorType
  * @property \Aws\Api\DateTimeResult $StartTimestamp
  * @property \Aws\Api\DateTimeResult $EndTimestamp
- * @property int $SamplingInterval
+ * @property int|null $SamplingInterval
  * @property 'JPEG'|'PNG' $Format
- * @property array<'JPEGQuality', string> $FormatConfig
- * @property int<1, 3840> $WidthPixels
- * @property int<1, 2160> $HeightPixels
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property array<'JPEGQuality', string>|null $FormatConfig
+ * @property int<1, 3840>|null $WidthPixels
+ * @property int<1, 2160>|null $HeightPixels
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetImagesRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     StreamARN?: string,
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null,
      *     ImageSelectorType: 'PRODUCER_TIMESTAMP'|'SERVER_TIMESTAMP',
      *     StartTimestamp: \Aws\Api\DateTimeResult,
      *     EndTimestamp: \Aws\Api\DateTimeResult,
-     *     SamplingInterval?: int,
+     *     SamplingInterval?: int|null,
      *     Format: 'JPEG'|'PNG',
-     *     FormatConfig?: array<'JPEGQuality', string>,
-     *     WidthPixels?: int<1, 3840>,
-     *     HeightPixels?: int<1, 2160>,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     FormatConfig?: array<'JPEGQuality', string>|null,
+     *     WidthPixels?: int<1, 3840>|null,
+     *     HeightPixels?: int<1, 2160>|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

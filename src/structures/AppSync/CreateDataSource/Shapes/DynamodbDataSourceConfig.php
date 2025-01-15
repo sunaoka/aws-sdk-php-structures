@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $tableName
  * @property string $awsRegion
- * @property bool $useCallerCredentials
- * @property DeltaSyncConfig $deltaSyncConfig
- * @property bool $versioned
+ * @property bool|null $useCallerCredentials
+ * @property DeltaSyncConfig|null $deltaSyncConfig
+ * @property bool|null $versioned
  */
 class DynamodbDataSourceConfig extends Shape
 {
@@ -17,9 +17,9 @@ class DynamodbDataSourceConfig extends Shape
      * @param array{
      *     tableName: string,
      *     awsRegion: string,
-     *     useCallerCredentials?: bool,
-     *     deltaSyncConfig?: DeltaSyncConfig,
-     *     versioned?: bool
+     *     useCallerCredentials?: bool|null,
+     *     deltaSyncConfig?: DeltaSyncConfig|null,
+     *     versioned?: bool|null
      * } $args
      */
     public function __construct(array $args)

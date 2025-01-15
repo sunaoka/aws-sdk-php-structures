@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ImportExport\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $URL
+ * @property string|null $Description
+ * @property string|null $URL
  */
 class Artifact extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     URL?: string
+     *     Description?: string|null,
+     *     URL?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\MediaConvert\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChannelName
- * @property string $ContentReference
- * @property string $CredentialsSecretName
- * @property double $FileOffset
- * @property int<0, 2147483647> $KantarLicenseId
- * @property string $KantarServerUrl
- * @property string $LogDestination
- * @property string $Metadata3
- * @property string $Metadata4
- * @property string $Metadata5
- * @property string $Metadata6
- * @property string $Metadata7
- * @property string $Metadata8
+ * @property string|null $ChannelName
+ * @property string|null $ContentReference
+ * @property string|null $CredentialsSecretName
+ * @property double|null $FileOffset
+ * @property int<0, 2147483647>|null $KantarLicenseId
+ * @property string|null $KantarServerUrl
+ * @property string|null $LogDestination
+ * @property string|null $Metadata3
+ * @property string|null $Metadata4
+ * @property string|null $Metadata5
+ * @property string|null $Metadata6
+ * @property string|null $Metadata7
+ * @property string|null $Metadata8
  */
 class KantarWatermarkSettings extends Shape
 {
     /**
      * @param array{
-     *     ChannelName?: string,
-     *     ContentReference?: string,
-     *     CredentialsSecretName?: string,
-     *     FileOffset?: double,
-     *     KantarLicenseId?: int<0, 2147483647>,
-     *     KantarServerUrl?: string,
-     *     LogDestination?: string,
-     *     Metadata3?: string,
-     *     Metadata4?: string,
-     *     Metadata5?: string,
-     *     Metadata6?: string,
-     *     Metadata7?: string,
-     *     Metadata8?: string
+     *     ChannelName?: string|null,
+     *     ContentReference?: string|null,
+     *     CredentialsSecretName?: string|null,
+     *     FileOffset?: double|null,
+     *     KantarLicenseId?: int<0, 2147483647>|null,
+     *     KantarServerUrl?: string|null,
+     *     LogDestination?: string|null,
+     *     Metadata3?: string|null,
+     *     Metadata4?: string|null,
+     *     Metadata5?: string|null,
+     *     Metadata6?: string|null,
+     *     Metadata7?: string|null,
+     *     Metadata8?: string|null
      * } $args
      */
     public function __construct(array $args = [])

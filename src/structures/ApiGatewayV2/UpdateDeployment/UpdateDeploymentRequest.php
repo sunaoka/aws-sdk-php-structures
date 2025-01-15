@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApiId
  * @property string $DeploymentId
- * @property string $Description
+ * @property string|null $Description
  */
 class UpdateDeploymentRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateDeploymentRequest extends Request
      * @param array{
      *     ApiId: string,
      *     DeploymentId: string,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SchemaArn
  * @property string $Name
- * @property list<Shapes\FacetAttributeUpdate> $AttributeUpdates
- * @property 'NODE'|'LEAF_NODE'|'POLICY'|'INDEX' $ObjectType
+ * @property list<Shapes\FacetAttributeUpdate>|null $AttributeUpdates
+ * @property 'NODE'|'LEAF_NODE'|'POLICY'|'INDEX'|null $ObjectType
  */
 class UpdateFacetRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateFacetRequest extends Request
      * @param array{
      *     SchemaArn: string,
      *     Name: string,
-     *     AttributeUpdates?: list<Shapes\FacetAttributeUpdate>,
-     *     ObjectType?: 'NODE'|'LEAF_NODE'|'POLICY'|'INDEX'
+     *     AttributeUpdates?: list<Shapes\FacetAttributeUpdate>|null,
+     *     ObjectType?: 'NODE'|'LEAF_NODE'|'POLICY'|'INDEX'|null
      * } $args
      */
     public function __construct(array $args)

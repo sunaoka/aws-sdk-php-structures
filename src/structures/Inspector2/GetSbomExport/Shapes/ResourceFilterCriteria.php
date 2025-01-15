@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Inspector2\GetSbomExport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ResourceStringFilter> $accountId
- * @property list<ResourceMapFilter> $ec2InstanceTags
- * @property list<ResourceStringFilter> $ecrImageTags
- * @property list<ResourceStringFilter> $ecrRepositoryName
- * @property list<ResourceStringFilter> $lambdaFunctionName
- * @property list<ResourceMapFilter> $lambdaFunctionTags
- * @property list<ResourceStringFilter> $resourceId
- * @property list<ResourceStringFilter> $resourceType
+ * @property list<ResourceStringFilter>|null $accountId
+ * @property list<ResourceMapFilter>|null $ec2InstanceTags
+ * @property list<ResourceStringFilter>|null $ecrImageTags
+ * @property list<ResourceStringFilter>|null $ecrRepositoryName
+ * @property list<ResourceStringFilter>|null $lambdaFunctionName
+ * @property list<ResourceMapFilter>|null $lambdaFunctionTags
+ * @property list<ResourceStringFilter>|null $resourceId
+ * @property list<ResourceStringFilter>|null $resourceType
  */
 class ResourceFilterCriteria extends Shape
 {
     /**
      * @param array{
-     *     accountId?: list<ResourceStringFilter>,
-     *     ec2InstanceTags?: list<ResourceMapFilter>,
-     *     ecrImageTags?: list<ResourceStringFilter>,
-     *     ecrRepositoryName?: list<ResourceStringFilter>,
-     *     lambdaFunctionName?: list<ResourceStringFilter>,
-     *     lambdaFunctionTags?: list<ResourceMapFilter>,
-     *     resourceId?: list<ResourceStringFilter>,
-     *     resourceType?: list<ResourceStringFilter>
+     *     accountId?: list<ResourceStringFilter>|null,
+     *     ec2InstanceTags?: list<ResourceMapFilter>|null,
+     *     ecrImageTags?: list<ResourceStringFilter>|null,
+     *     ecrRepositoryName?: list<ResourceStringFilter>|null,
+     *     lambdaFunctionName?: list<ResourceStringFilter>|null,
+     *     lambdaFunctionTags?: list<ResourceMapFilter>|null,
+     *     resourceId?: list<ResourceStringFilter>|null,
+     *     resourceType?: list<ResourceStringFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

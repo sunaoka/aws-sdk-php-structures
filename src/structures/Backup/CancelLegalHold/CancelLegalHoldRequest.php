@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LegalHoldId
  * @property string $CancelDescription
- * @property int $RetainRecordInDays
+ * @property int|null $RetainRecordInDays
  */
 class CancelLegalHoldRequest extends Request
 {
@@ -15,7 +15,7 @@ class CancelLegalHoldRequest extends Request
      * @param array{
      *     LegalHoldId: string,
      *     CancelDescription: string,
-     *     RetainRecordInDays?: int
+     *     RetainRecordInDays?: int|null
      * } $args
      */
     public function __construct(array $args)

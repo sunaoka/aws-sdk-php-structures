@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $fargateProfileName
  * @property string $clusterName
  * @property string $podExecutionRoleArn
- * @property list<string> $subnets
- * @property list<Shapes\FargateProfileSelector> $selectors
- * @property string $clientRequestToken
- * @property array<string, string> $tags
+ * @property list<string>|null $subnets
+ * @property list<Shapes\FargateProfileSelector>|null $selectors
+ * @property string|null $clientRequestToken
+ * @property array<string, string>|null $tags
  */
 class CreateFargateProfileRequest extends Request
 {
@@ -20,10 +20,10 @@ class CreateFargateProfileRequest extends Request
      *     fargateProfileName: string,
      *     clusterName: string,
      *     podExecutionRoleArn: string,
-     *     subnets?: list<string>,
-     *     selectors?: list<Shapes\FargateProfileSelector>,
-     *     clientRequestToken?: string,
-     *     tags?: array<string, string>
+     *     subnets?: list<string>|null,
+     *     selectors?: list<Shapes\FargateProfileSelector>|null,
+     *     clientRequestToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

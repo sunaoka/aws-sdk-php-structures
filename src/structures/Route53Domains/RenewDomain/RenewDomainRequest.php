@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property int<1, 10> $DurationInYears
+ * @property int<1, 10>|null $DurationInYears
  * @property int $CurrentExpiryYear
  */
 class RenewDomainRequest extends Request
@@ -14,7 +14,7 @@ class RenewDomainRequest extends Request
     /**
      * @param array{
      *     DomainName: string,
-     *     DurationInYears?: int<1, 10>,
+     *     DurationInYears?: int<1, 10>|null,
      *     CurrentExpiryYear: int
      * } $args
      */

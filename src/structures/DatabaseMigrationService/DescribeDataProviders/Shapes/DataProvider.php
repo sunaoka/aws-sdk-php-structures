@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeDataProviders\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataProviderName
- * @property string $DataProviderArn
- * @property \Aws\Api\DateTimeResult $DataProviderCreationTime
- * @property string $Description
- * @property string $Engine
- * @property DataProviderSettings $Settings
+ * @property string|null $DataProviderName
+ * @property string|null $DataProviderArn
+ * @property \Aws\Api\DateTimeResult|null $DataProviderCreationTime
+ * @property string|null $Description
+ * @property string|null $Engine
+ * @property DataProviderSettings|null $Settings
  */
 class DataProvider extends Shape
 {
     /**
      * @param array{
-     *     DataProviderName?: string,
-     *     DataProviderArn?: string,
-     *     DataProviderCreationTime?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     Engine?: string,
-     *     Settings?: DataProviderSettings
+     *     DataProviderName?: string|null,
+     *     DataProviderArn?: string|null,
+     *     DataProviderCreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     Engine?: string|null,
+     *     Settings?: DataProviderSettings|null
      * } $args
      */
     public function __construct(array $args = [])

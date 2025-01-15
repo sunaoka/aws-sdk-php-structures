@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $timeInSeconds
- * @property string $offsetInNanos
+ * @property string|null $offsetInNanos
  */
 class AssetPropertyTimestamp extends Shape
 {
     /**
      * @param array{
      *     timeInSeconds: string,
-     *     offsetInNanos?: string
+     *     offsetInNanos?: string|null
      * } $args
      */
     public function __construct(array $args)

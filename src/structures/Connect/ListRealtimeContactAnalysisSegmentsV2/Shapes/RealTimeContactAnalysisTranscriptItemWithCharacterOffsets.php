@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property RealTimeContactAnalysisCharacterInterval $CharacterOffsets
+ * @property RealTimeContactAnalysisCharacterInterval|null $CharacterOffsets
  */
 class RealTimeContactAnalysisTranscriptItemWithCharacterOffsets extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     CharacterOffsets?: RealTimeContactAnalysisCharacterInterval
+     *     CharacterOffsets?: RealTimeContactAnalysisCharacterInterval|null
      * } $args
      */
     public function __construct(array $args)

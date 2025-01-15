@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Backup\DescribeReportPlan;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ReportPlan $ReportPlan
+ * @property Shapes\ReportPlan|null $ReportPlan
  */
 class DescribeReportPlanResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Outposts\StartConnection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DeviceSerialNumber
+ * @property string|null $DeviceSerialNumber
  * @property string $AssetId
  * @property string $ClientPublicKey
  * @property int<0, 1> $NetworkInterfaceDeviceIndex
@@ -14,7 +14,7 @@ class StartConnectionRequest extends Request
 {
     /**
      * @param array{
-     *     DeviceSerialNumber?: string,
+     *     DeviceSerialNumber?: string|null,
      *     AssetId: string,
      *     ClientPublicKey: string,
      *     NetworkInterfaceDeviceIndex: int<0, 1>

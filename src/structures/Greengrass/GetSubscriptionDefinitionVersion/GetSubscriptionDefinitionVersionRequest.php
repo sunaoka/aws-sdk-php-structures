@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Greengrass\GetSubscriptionDefinitionVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property string $SubscriptionDefinitionId
  * @property string $SubscriptionDefinitionVersionId
  */
@@ -13,7 +13,7 @@ class GetSubscriptionDefinitionVersionRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
+     *     NextToken?: string|null,
      *     SubscriptionDefinitionId: string,
      *     SubscriptionDefinitionVersionId: string
      * } $args

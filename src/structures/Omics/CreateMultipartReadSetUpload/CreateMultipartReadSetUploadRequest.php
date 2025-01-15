@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $sequenceStoreId
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property 'FASTQ'|'BAM'|'CRAM'|'UBAM' $sourceFileType
  * @property string $subjectId
  * @property string $sampleId
- * @property string $generatedFrom
- * @property string $referenceArn
+ * @property string|null $generatedFrom
+ * @property string|null $referenceArn
  * @property string $name
- * @property string $description
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property array<string, string>|null $tags
  */
 class CreateMultipartReadSetUploadRequest extends Request
 {
     /**
      * @param array{
      *     sequenceStoreId: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     sourceFileType: 'FASTQ'|'BAM'|'CRAM'|'UBAM',
      *     subjectId: string,
      *     sampleId: string,
-     *     generatedFrom?: string,
-     *     referenceArn?: string,
+     *     generatedFrom?: string|null,
+     *     referenceArn?: string|null,
      *     name: string,
-     *     description?: string,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

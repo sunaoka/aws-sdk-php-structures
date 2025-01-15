@@ -9,17 +9,17 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $audienceGenerationJobArn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED' $status
- * @property Shapes\StatusDetails $statusDetails
+ * @property Shapes\StatusDetails|null $statusDetails
  * @property string $configuredAudienceModelArn
- * @property Shapes\AudienceGenerationJobDataSource $seedAudience
- * @property bool $includeSeedInOutput
- * @property string $collaborationId
- * @property Shapes\AudienceQualityMetrics $metrics
- * @property string $startedBy
- * @property array<string, string> $tags
- * @property string $protectedQueryIdentifier
+ * @property Shapes\AudienceGenerationJobDataSource|null $seedAudience
+ * @property bool|null $includeSeedInOutput
+ * @property string|null $collaborationId
+ * @property Shapes\AudienceQualityMetrics|null $metrics
+ * @property string|null $startedBy
+ * @property array<string, string>|null $tags
+ * @property string|null $protectedQueryIdentifier
  */
 class GetAudienceGenerationJobResponse extends Response
 {

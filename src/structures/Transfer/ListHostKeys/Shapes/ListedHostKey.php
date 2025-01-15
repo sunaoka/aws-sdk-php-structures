@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property string $HostKeyId
- * @property string $Fingerprint
- * @property string $Description
- * @property string $Type
- * @property \Aws\Api\DateTimeResult $DateImported
+ * @property string|null $HostKeyId
+ * @property string|null $Fingerprint
+ * @property string|null $Description
+ * @property string|null $Type
+ * @property \Aws\Api\DateTimeResult|null $DateImported
  */
 class ListedHostKey extends Shape
 {
     /**
      * @param array{
      *     Arn: string,
-     *     HostKeyId?: string,
-     *     Fingerprint?: string,
-     *     Description?: string,
-     *     Type?: string,
-     *     DateImported?: \Aws\Api\DateTimeResult
+     *     HostKeyId?: string|null,
+     *     Fingerprint?: string|null,
+     *     Description?: string|null,
+     *     Type?: string|null,
+     *     DateImported?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

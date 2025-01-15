@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudFront\TestFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FunctionSummary $FunctionSummary
- * @property string $ComputeUtilization
- * @property list<string> $FunctionExecutionLogs
- * @property string $FunctionErrorMessage
- * @property string $FunctionOutput
+ * @property FunctionSummary|null $FunctionSummary
+ * @property string|null $ComputeUtilization
+ * @property list<string>|null $FunctionExecutionLogs
+ * @property string|null $FunctionErrorMessage
+ * @property string|null $FunctionOutput
  */
 class TestResult extends Shape
 {
     /**
      * @param array{
-     *     FunctionSummary?: FunctionSummary,
-     *     ComputeUtilization?: string,
-     *     FunctionExecutionLogs?: list<string>,
-     *     FunctionErrorMessage?: string,
-     *     FunctionOutput?: string
+     *     FunctionSummary?: FunctionSummary|null,
+     *     ComputeUtilization?: string|null,
+     *     FunctionExecutionLogs?: list<string>|null,
+     *     FunctionErrorMessage?: string|null,
+     *     FunctionOutput?: string|null
      * } $args
      */
     public function __construct(array $args = [])

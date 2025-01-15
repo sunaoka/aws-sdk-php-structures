@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Cap
- * @property int $Days
+ * @property int|null $Cap
+ * @property int|null $Days
  */
 class JourneyTimeframeCap extends Shape
 {
     /**
      * @param array{
-     *     Cap?: int,
-     *     Days?: int
+     *     Cap?: int|null,
+     *     Days?: int|null
      * } $args
      */
     public function __construct(array $args = [])

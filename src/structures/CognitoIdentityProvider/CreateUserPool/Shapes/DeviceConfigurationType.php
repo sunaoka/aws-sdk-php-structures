@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\CreateUserPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ChallengeRequiredOnNewDevice
- * @property bool $DeviceOnlyRememberedOnUserPrompt
+ * @property bool|null $ChallengeRequiredOnNewDevice
+ * @property bool|null $DeviceOnlyRememberedOnUserPrompt
  */
 class DeviceConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     ChallengeRequiredOnNewDevice?: bool,
-     *     DeviceOnlyRememberedOnUserPrompt?: bool
+     *     ChallengeRequiredOnNewDevice?: bool|null,
+     *     DeviceOnlyRememberedOnUserPrompt?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

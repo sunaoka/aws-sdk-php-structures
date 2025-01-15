@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\GetDataSetDetails\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GdgDetailAttributes $gdg
- * @property PoDetailAttributes $po
- * @property PsDetailAttributes $ps
- * @property VsamDetailAttributes $vsam
+ * @property GdgDetailAttributes|null $gdg
+ * @property PoDetailAttributes|null $po
+ * @property PsDetailAttributes|null $ps
+ * @property VsamDetailAttributes|null $vsam
  */
 class DatasetDetailOrgAttributes extends Shape
 {
     /**
      * @param array{
-     *     gdg?: GdgDetailAttributes,
-     *     po?: PoDetailAttributes,
-     *     ps?: PsDetailAttributes,
-     *     vsam?: VsamDetailAttributes
+     *     gdg?: GdgDetailAttributes|null,
+     *     po?: PoDetailAttributes|null,
+     *     ps?: PsDetailAttributes|null,
+     *     vsam?: VsamDetailAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

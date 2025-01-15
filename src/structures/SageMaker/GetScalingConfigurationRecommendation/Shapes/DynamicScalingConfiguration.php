@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetScalingConfigurationRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MinCapacity
- * @property int $MaxCapacity
- * @property int $ScaleInCooldown
- * @property int $ScaleOutCooldown
- * @property list<ScalingPolicy> $ScalingPolicies
+ * @property int|null $MinCapacity
+ * @property int|null $MaxCapacity
+ * @property int|null $ScaleInCooldown
+ * @property int|null $ScaleOutCooldown
+ * @property list<ScalingPolicy>|null $ScalingPolicies
  */
 class DynamicScalingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     MinCapacity?: int,
-     *     MaxCapacity?: int,
-     *     ScaleInCooldown?: int,
-     *     ScaleOutCooldown?: int,
-     *     ScalingPolicies?: list<ScalingPolicy>
+     *     MinCapacity?: int|null,
+     *     MaxCapacity?: int|null,
+     *     ScaleInCooldown?: int|null,
+     *     ScaleOutCooldown?: int|null,
+     *     ScalingPolicies?: list<ScalingPolicy>|null
      * } $args
      */
     public function __construct(array $args = [])

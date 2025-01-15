@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ApplyPendingMaintenanc
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResourcePendingMaintenanceActions $ResourcePendingMaintenanceActions
+ * @property Shapes\ResourcePendingMaintenanceActions|null $ResourcePendingMaintenanceActions
  */
 class ApplyPendingMaintenanceActionResponse extends Response
 {

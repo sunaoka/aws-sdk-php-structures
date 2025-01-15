@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $resourceShareArn
- * @property string $name
- * @property bool $allowExternalPrincipals
- * @property string $clientToken
+ * @property string|null $name
+ * @property bool|null $allowExternalPrincipals
+ * @property string|null $clientToken
  */
 class UpdateResourceShareRequest extends Request
 {
     /**
      * @param array{
      *     resourceShareArn: string,
-     *     name?: string,
-     *     allowExternalPrincipals?: bool,
-     *     clientToken?: string
+     *     name?: string|null,
+     *     allowExternalPrincipals?: bool|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

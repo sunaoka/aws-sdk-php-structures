@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\NetworkManager\UpdateSite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SiteId
- * @property string $SiteArn
- * @property string $GlobalNetworkId
- * @property string $Description
- * @property Location $Location
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING' $State
- * @property list<Tag> $Tags
+ * @property string|null $SiteId
+ * @property string|null $SiteArn
+ * @property string|null $GlobalNetworkId
+ * @property string|null $Description
+ * @property Location|null $Location
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING'|null $State
+ * @property list<Tag>|null $Tags
  */
 class Site extends Shape
 {
     /**
      * @param array{
-     *     SiteId?: string,
-     *     SiteArn?: string,
-     *     GlobalNetworkId?: string,
-     *     Description?: string,
-     *     Location?: Location,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING',
-     *     Tags?: list<Tag>
+     *     SiteId?: string|null,
+     *     SiteArn?: string|null,
+     *     GlobalNetworkId?: string|null,
+     *     Description?: string|null,
+     *     Location?: Location|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING'|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

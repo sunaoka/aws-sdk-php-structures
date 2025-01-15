@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $Bucket
- * @property string $MFA
+ * @property string|null $MFA
  * @property Shapes\VersioningConfiguration $VersioningConfiguration
  */
 class PutBucketVersioningRequest extends Request
@@ -16,7 +16,7 @@ class PutBucketVersioningRequest extends Request
      * @param array{
      *     AccountId: string,
      *     Bucket: string,
-     *     MFA?: string,
+     *     MFA?: string|null,
      *     VersioningConfiguration: Shapes\VersioningConfiguration
      * } $args
      */

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ssm\CreateResourceDataSync\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DestinationDataSharingType
+ * @property string|null $DestinationDataSharingType
  */
 class ResourceDataSyncDestinationDataSharing extends Shape
 {
     /**
-     * @param array{DestinationDataSharingType?: string} $args
+     * @param array{DestinationDataSharingType?: string|null} $args
      */
     public function __construct(array $args = [])
     {

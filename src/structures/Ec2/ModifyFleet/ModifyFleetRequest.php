@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyFleet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property 'no-termination'|'termination' $ExcessCapacityTerminationPolicy
- * @property list<Shapes\FleetLaunchTemplateConfigRequest> $LaunchTemplateConfigs
+ * @property bool|null $DryRun
+ * @property 'no-termination'|'termination'|null $ExcessCapacityTerminationPolicy
+ * @property list<Shapes\FleetLaunchTemplateConfigRequest>|null $LaunchTemplateConfigs
  * @property string $FleetId
- * @property Shapes\TargetCapacitySpecificationRequest $TargetCapacitySpecification
- * @property string $Context
+ * @property Shapes\TargetCapacitySpecificationRequest|null $TargetCapacitySpecification
+ * @property string|null $Context
  */
 class ModifyFleetRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     ExcessCapacityTerminationPolicy?: 'no-termination'|'termination',
-     *     LaunchTemplateConfigs?: list<Shapes\FleetLaunchTemplateConfigRequest>,
+     *     DryRun?: bool|null,
+     *     ExcessCapacityTerminationPolicy?: 'no-termination'|'termination'|null,
+     *     LaunchTemplateConfigs?: list<Shapes\FleetLaunchTemplateConfigRequest>|null,
      *     FleetId: string,
-     *     TargetCapacitySpecification?: Shapes\TargetCapacitySpecificationRequest,
-     *     Context?: string
+     *     TargetCapacitySpecification?: Shapes\TargetCapacitySpecificationRequest|null,
+     *     Context?: string|null
      * } $args
      */
     public function __construct(array $args)

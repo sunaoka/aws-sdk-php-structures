@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property int $PercentEnabled
- * @property string $PlaybackConfigurationName
+ * @property string|null $PlaybackConfigurationName
  */
 class ConfigureLogsForPlaybackConfigurationResponse extends Response
 {

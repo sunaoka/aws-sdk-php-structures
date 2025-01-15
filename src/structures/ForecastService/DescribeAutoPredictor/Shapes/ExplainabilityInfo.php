@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribeAutoPredictor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExplainabilityArn
- * @property string $Status
+ * @property string|null $ExplainabilityArn
+ * @property string|null $Status
  */
 class ExplainabilityInfo extends Shape
 {
     /**
      * @param array{
-     *     ExplainabilityArn?: string,
-     *     Status?: string
+     *     ExplainabilityArn?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

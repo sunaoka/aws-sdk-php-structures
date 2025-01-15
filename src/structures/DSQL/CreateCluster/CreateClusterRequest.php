@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DSQL\CreateCluster;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $deletionProtectionEnabled
- * @property array<string, string> $tags
- * @property string $clientToken
+ * @property bool|null $deletionProtectionEnabled
+ * @property array<string, string>|null $tags
+ * @property string|null $clientToken
  */
 class CreateClusterRequest extends Request
 {
     /**
      * @param array{
-     *     deletionProtectionEnabled?: bool,
-     *     tags?: array<string, string>,
-     *     clientToken?: string
+     *     deletionProtectionEnabled?: bool|null,
+     *     tags?: array<string, string>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

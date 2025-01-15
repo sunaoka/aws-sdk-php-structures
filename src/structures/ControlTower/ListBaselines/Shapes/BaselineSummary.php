@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property string $description
+ * @property string|null $description
  * @property string $name
  */
 class BaselineSummary extends Shape
@@ -14,7 +14,7 @@ class BaselineSummary extends Shape
     /**
      * @param array{
      *     arn: string,
-     *     description?: string,
+     *     description?: string|null,
      *     name: string
      * } $args
      */

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $spaceName
  * @property string $projectName
  * @property string $sourceRepositoryName
- * @property string $nextToken
- * @property int<1, 50> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 50>|null $maxResults
  */
 class ListSourceRepositoryBranchesRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListSourceRepositoryBranchesRequest extends Request
      *     spaceName: string,
      *     projectName: string,
      *     sourceRepositoryName: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 50>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

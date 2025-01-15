@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\S3Control\CreateAccessPoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AccessPointArn
- * @property string $Alias
+ * @property string|null $AccessPointArn
+ * @property string|null $Alias
  */
 class CreateAccessPointResponse extends Response
 {

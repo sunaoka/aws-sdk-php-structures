@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\GetManagedPrefixListEntries;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $PrefixListId
- * @property int $TargetVersion
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property int|null $TargetVersion
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetManagedPrefixListEntriesRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     PrefixListId: string,
-     *     TargetVersion?: int,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     TargetVersion?: int|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

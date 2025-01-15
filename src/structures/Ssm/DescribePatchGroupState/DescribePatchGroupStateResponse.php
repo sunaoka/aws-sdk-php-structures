@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribePatchGroupState;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Instances
- * @property int $InstancesWithInstalledPatches
- * @property int $InstancesWithInstalledOtherPatches
- * @property int $InstancesWithInstalledPendingRebootPatches
- * @property int $InstancesWithInstalledRejectedPatches
- * @property int $InstancesWithMissingPatches
- * @property int $InstancesWithFailedPatches
- * @property int $InstancesWithNotApplicablePatches
- * @property int $InstancesWithUnreportedNotApplicablePatches
- * @property int $InstancesWithCriticalNonCompliantPatches
- * @property int $InstancesWithSecurityNonCompliantPatches
- * @property int $InstancesWithOtherNonCompliantPatches
+ * @property int|null $Instances
+ * @property int|null $InstancesWithInstalledPatches
+ * @property int|null $InstancesWithInstalledOtherPatches
+ * @property int|null $InstancesWithInstalledPendingRebootPatches
+ * @property int|null $InstancesWithInstalledRejectedPatches
+ * @property int|null $InstancesWithMissingPatches
+ * @property int|null $InstancesWithFailedPatches
+ * @property int|null $InstancesWithNotApplicablePatches
+ * @property int|null $InstancesWithUnreportedNotApplicablePatches
+ * @property int|null $InstancesWithCriticalNonCompliantPatches
+ * @property int|null $InstancesWithSecurityNonCompliantPatches
+ * @property int|null $InstancesWithOtherNonCompliantPatches
  */
 class DescribePatchGroupStateResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Neptunedata\ListOpenCypherQueries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $queryId
- * @property string $queryString
- * @property QueryEvalStats $queryEvalStats
+ * @property string|null $queryId
+ * @property string|null $queryString
+ * @property QueryEvalStats|null $queryEvalStats
  */
 class GremlinQueryStatus extends Shape
 {
     /**
      * @param array{
-     *     queryId?: string,
-     *     queryString?: string,
-     *     queryEvalStats?: QueryEvalStats
+     *     queryId?: string|null,
+     *     queryString?: string|null,
+     *     queryEvalStats?: QueryEvalStats|null
      * } $args
      */
     public function __construct(array $args = [])

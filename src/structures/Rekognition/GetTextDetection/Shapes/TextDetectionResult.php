@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetTextDetection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Timestamp
- * @property TextDetection $TextDetection
+ * @property int|null $Timestamp
+ * @property TextDetection|null $TextDetection
  */
 class TextDetectionResult extends Shape
 {
     /**
      * @param array{
-     *     Timestamp?: int,
-     *     TextDetection?: TextDetection
+     *     Timestamp?: int|null,
+     *     TextDetection?: TextDetection|null
      * } $args
      */
     public function __construct(array $args = [])

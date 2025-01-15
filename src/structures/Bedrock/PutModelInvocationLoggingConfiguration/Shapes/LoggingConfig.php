@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Bedrock\PutModelInvocationLoggingConfiguration\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudWatchConfig $cloudWatchConfig
- * @property S3Config $s3Config
- * @property bool $textDataDeliveryEnabled
- * @property bool $imageDataDeliveryEnabled
- * @property bool $embeddingDataDeliveryEnabled
- * @property bool $videoDataDeliveryEnabled
+ * @property CloudWatchConfig|null $cloudWatchConfig
+ * @property S3Config|null $s3Config
+ * @property bool|null $textDataDeliveryEnabled
+ * @property bool|null $imageDataDeliveryEnabled
+ * @property bool|null $embeddingDataDeliveryEnabled
+ * @property bool|null $videoDataDeliveryEnabled
  */
 class LoggingConfig extends Shape
 {
     /**
      * @param array{
-     *     cloudWatchConfig?: CloudWatchConfig,
-     *     s3Config?: S3Config,
-     *     textDataDeliveryEnabled?: bool,
-     *     imageDataDeliveryEnabled?: bool,
-     *     embeddingDataDeliveryEnabled?: bool,
-     *     videoDataDeliveryEnabled?: bool
+     *     cloudWatchConfig?: CloudWatchConfig|null,
+     *     s3Config?: S3Config|null,
+     *     textDataDeliveryEnabled?: bool|null,
+     *     imageDataDeliveryEnabled?: bool|null,
+     *     embeddingDataDeliveryEnabled?: bool|null,
+     *     videoDataDeliveryEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

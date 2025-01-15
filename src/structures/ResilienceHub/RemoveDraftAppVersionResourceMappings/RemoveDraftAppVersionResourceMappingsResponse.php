@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\RemoveDraftAppVersionResourceMapp
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $appArn
- * @property string $appVersion
+ * @property string|null $appArn
+ * @property string|null $appVersion
  */
 class RemoveDraftAppVersionResourceMappingsResponse extends Response
 {

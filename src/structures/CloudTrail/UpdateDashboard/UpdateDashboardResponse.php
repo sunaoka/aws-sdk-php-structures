@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudTrail\UpdateDashboard;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DashboardArn
- * @property string $Name
- * @property 'MANAGED'|'CUSTOM' $Type
- * @property list<Shapes\Widget> $Widgets
- * @property Shapes\RefreshSchedule $RefreshSchedule
- * @property bool $TerminationProtectionEnabled
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $DashboardArn
+ * @property string|null $Name
+ * @property 'MANAGED'|'CUSTOM'|null $Type
+ * @property list<Shapes\Widget>|null $Widgets
+ * @property Shapes\RefreshSchedule|null $RefreshSchedule
+ * @property bool|null $TerminationProtectionEnabled
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class UpdateDashboardResponse extends Response
 {

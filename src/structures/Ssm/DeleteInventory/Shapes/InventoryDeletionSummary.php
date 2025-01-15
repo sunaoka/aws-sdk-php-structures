@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\DeleteInventory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TotalCount
- * @property int $RemainingCount
- * @property list<InventoryDeletionSummaryItem> $SummaryItems
+ * @property int|null $TotalCount
+ * @property int|null $RemainingCount
+ * @property list<InventoryDeletionSummaryItem>|null $SummaryItems
  */
 class InventoryDeletionSummary extends Shape
 {
     /**
      * @param array{
-     *     TotalCount?: int,
-     *     RemainingCount?: int,
-     *     SummaryItems?: list<InventoryDeletionSummaryItem>
+     *     TotalCount?: int|null,
+     *     RemainingCount?: int|null,
+     *     SummaryItems?: list<InventoryDeletionSummaryItem>|null
      * } $args
      */
     public function __construct(array $args = [])

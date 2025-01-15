@@ -8,16 +8,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'CANCELLING'|'CANCELLED' $deploymentStatus
- * @property string $deploymentStatusMessage
+ * @property string|null $deploymentStatusMessage
  * @property string $environmentName
- * @property string $lastAttemptedDeploymentId
- * @property \Aws\Api\DateTimeResult $lastDeploymentAttemptedAt
- * @property \Aws\Api\DateTimeResult $lastDeploymentSucceededAt
+ * @property string|null $lastAttemptedDeploymentId
+ * @property \Aws\Api\DateTimeResult|null $lastDeploymentAttemptedAt
+ * @property \Aws\Api\DateTimeResult|null $lastDeploymentSucceededAt
  * @property \Aws\Api\DateTimeResult $lastModifiedAt
- * @property string $lastSucceededDeploymentId
+ * @property string|null $lastSucceededDeploymentId
  * @property string $name
- * @property string $serviceInstanceName
- * @property string $serviceName
+ * @property string|null $serviceInstanceName
+ * @property string|null $serviceName
  */
 class ComponentSummary extends Shape
 {
@@ -26,16 +26,16 @@ class ComponentSummary extends Shape
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     deploymentStatus: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'CANCELLING'|'CANCELLED',
-     *     deploymentStatusMessage?: string,
+     *     deploymentStatusMessage?: string|null,
      *     environmentName: string,
-     *     lastAttemptedDeploymentId?: string,
-     *     lastDeploymentAttemptedAt?: \Aws\Api\DateTimeResult,
-     *     lastDeploymentSucceededAt?: \Aws\Api\DateTimeResult,
+     *     lastAttemptedDeploymentId?: string|null,
+     *     lastDeploymentAttemptedAt?: \Aws\Api\DateTimeResult|null,
+     *     lastDeploymentSucceededAt?: \Aws\Api\DateTimeResult|null,
      *     lastModifiedAt: \Aws\Api\DateTimeResult,
-     *     lastSucceededDeploymentId?: string,
+     *     lastSucceededDeploymentId?: string|null,
      *     name: string,
-     *     serviceInstanceName?: string,
-     *     serviceName?: string
+     *     serviceInstanceName?: string|null,
+     *     serviceName?: string|null
      * } $args
      */
     public function __construct(array $args)

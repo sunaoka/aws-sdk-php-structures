@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $EnableDockerAccess
- * @property list<string> $VpcOnlyTrustedAccounts
+ * @property 'ENABLED'|'DISABLED'|null $EnableDockerAccess
+ * @property list<string>|null $VpcOnlyTrustedAccounts
  */
 class DockerSettings extends Shape
 {
     /**
      * @param array{
-     *     EnableDockerAccess?: 'ENABLED'|'DISABLED',
-     *     VpcOnlyTrustedAccounts?: list<string>
+     *     EnableDockerAccess?: 'ENABLED'|'DISABLED'|null,
+     *     VpcOnlyTrustedAccounts?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

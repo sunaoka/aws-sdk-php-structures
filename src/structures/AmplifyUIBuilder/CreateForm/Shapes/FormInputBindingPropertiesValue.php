@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\CreateForm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $type
- * @property FormInputBindingPropertiesValueProperties $bindingProperties
+ * @property string|null $type
+ * @property FormInputBindingPropertiesValueProperties|null $bindingProperties
  */
 class FormInputBindingPropertiesValue extends Shape
 {
     /**
      * @param array{
-     *     type?: string,
-     *     bindingProperties?: FormInputBindingPropertiesValueProperties
+     *     type?: string|null,
+     *     bindingProperties?: FormInputBindingPropertiesValueProperties|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\SearchQuickResponses\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $allowFuzziness
+ * @property bool|null $allowFuzziness
  * @property string $name
  * @property 'CONTAINS'|'CONTAINS_AND_PREFIX' $operator
- * @property 'HIGH'|'MEDIUM'|'LOW' $priority
+ * @property 'HIGH'|'MEDIUM'|'LOW'|null $priority
  * @property list<string> $values
  */
 class QuickResponseQueryField extends Shape
 {
     /**
      * @param array{
-     *     allowFuzziness?: bool,
+     *     allowFuzziness?: bool|null,
      *     name: string,
      *     operator: 'CONTAINS'|'CONTAINS_AND_PREFIX',
-     *     priority?: 'HIGH'|'MEDIUM'|'LOW',
+     *     priority?: 'HIGH'|'MEDIUM'|'LOW'|null,
      *     values: list<string>
      * } $args
      */

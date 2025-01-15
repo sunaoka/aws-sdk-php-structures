@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\Service $Service
- * @property string $OperationId
+ * @property string|null $OperationId
  */
 class PauseServiceResponse extends Response
 {

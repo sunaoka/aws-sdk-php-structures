@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DeleteTapePool;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PoolARN
+ * @property string|null $PoolARN
  */
 class DeleteTapePoolResponse extends Response
 {

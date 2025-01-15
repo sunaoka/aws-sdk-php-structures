@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\ModifyCertificateBasedAuthProperties
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISABLED'|'ENABLED' $Status
- * @property string $CertificateAuthorityArn
+ * @property 'DISABLED'|'ENABLED'|null $Status
+ * @property string|null $CertificateAuthorityArn
  */
 class CertificateBasedAuthProperties extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'DISABLED'|'ENABLED',
-     *     CertificateAuthorityArn?: string
+     *     Status?: 'DISABLED'|'ENABLED'|null,
+     *     CertificateAuthorityArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

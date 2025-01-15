@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DeletePackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyIdentifier
+ * @property string|null $KmsKeyIdentifier
  * @property bool $EncryptionEnabled
  */
 class PackageEncryptionOptions extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyIdentifier?: string,
+     *     KmsKeyIdentifier?: string|null,
      *     EncryptionEnabled: bool
      * } $args
      */

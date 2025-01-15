@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CALENDAR_MONTH'|'NONE' $autoRefresh
  * @property 'DIFFERENTIAL_PRIVACY' $privacyBudgetType
  * @property Shapes\PrivacyBudgetTemplateParametersInput $parameters
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreatePrivacyBudgetTemplateRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreatePrivacyBudgetTemplateRequest extends Request
      *     autoRefresh: 'CALENDAR_MONTH'|'NONE',
      *     privacyBudgetType: 'DIFFERENTIAL_PRIVACY',
      *     parameters: Shapes\PrivacyBudgetTemplateParametersInput,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

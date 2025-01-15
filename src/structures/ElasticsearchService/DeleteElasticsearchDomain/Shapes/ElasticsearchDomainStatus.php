@@ -8,30 +8,30 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DomainId
  * @property string $DomainName
  * @property string $ARN
- * @property bool $Created
- * @property bool $Deleted
- * @property string $Endpoint
- * @property array<string, string> $Endpoints
- * @property bool $Processing
- * @property bool $UpgradeProcessing
- * @property string $ElasticsearchVersion
+ * @property bool|null $Created
+ * @property bool|null $Deleted
+ * @property string|null $Endpoint
+ * @property array<string, string>|null $Endpoints
+ * @property bool|null $Processing
+ * @property bool|null $UpgradeProcessing
+ * @property string|null $ElasticsearchVersion
  * @property ElasticsearchClusterConfig $ElasticsearchClusterConfig
- * @property EBSOptions $EBSOptions
- * @property string $AccessPolicies
- * @property SnapshotOptions $SnapshotOptions
- * @property VPCDerivedInfo $VPCOptions
- * @property CognitoOptions $CognitoOptions
- * @property EncryptionAtRestOptions $EncryptionAtRestOptions
- * @property NodeToNodeEncryptionOptions $NodeToNodeEncryptionOptions
- * @property array<string, string> $AdvancedOptions
- * @property array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', LogPublishingOption> $LogPublishingOptions
- * @property ServiceSoftwareOptions $ServiceSoftwareOptions
- * @property DomainEndpointOptions $DomainEndpointOptions
- * @property AdvancedSecurityOptions $AdvancedSecurityOptions
- * @property AutoTuneOptionsOutput $AutoTuneOptions
- * @property ChangeProgressDetails $ChangeProgressDetails
- * @property 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting' $DomainProcessingStatus
- * @property list<ModifyingProperties> $ModifyingProperties
+ * @property EBSOptions|null $EBSOptions
+ * @property string|null $AccessPolicies
+ * @property SnapshotOptions|null $SnapshotOptions
+ * @property VPCDerivedInfo|null $VPCOptions
+ * @property CognitoOptions|null $CognitoOptions
+ * @property EncryptionAtRestOptions|null $EncryptionAtRestOptions
+ * @property NodeToNodeEncryptionOptions|null $NodeToNodeEncryptionOptions
+ * @property array<string, string>|null $AdvancedOptions
+ * @property array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', LogPublishingOption>|null $LogPublishingOptions
+ * @property ServiceSoftwareOptions|null $ServiceSoftwareOptions
+ * @property DomainEndpointOptions|null $DomainEndpointOptions
+ * @property AdvancedSecurityOptions|null $AdvancedSecurityOptions
+ * @property AutoTuneOptionsOutput|null $AutoTuneOptions
+ * @property ChangeProgressDetails|null $ChangeProgressDetails
+ * @property 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting'|null $DomainProcessingStatus
+ * @property list<ModifyingProperties>|null $ModifyingProperties
  */
 class ElasticsearchDomainStatus extends Shape
 {
@@ -40,30 +40,30 @@ class ElasticsearchDomainStatus extends Shape
      *     DomainId: string,
      *     DomainName: string,
      *     ARN: string,
-     *     Created?: bool,
-     *     Deleted?: bool,
-     *     Endpoint?: string,
-     *     Endpoints?: array<string, string>,
-     *     Processing?: bool,
-     *     UpgradeProcessing?: bool,
-     *     ElasticsearchVersion?: string,
+     *     Created?: bool|null,
+     *     Deleted?: bool|null,
+     *     Endpoint?: string|null,
+     *     Endpoints?: array<string, string>|null,
+     *     Processing?: bool|null,
+     *     UpgradeProcessing?: bool|null,
+     *     ElasticsearchVersion?: string|null,
      *     ElasticsearchClusterConfig: ElasticsearchClusterConfig,
-     *     EBSOptions?: EBSOptions,
-     *     AccessPolicies?: string,
-     *     SnapshotOptions?: SnapshotOptions,
-     *     VPCOptions?: VPCDerivedInfo,
-     *     CognitoOptions?: CognitoOptions,
-     *     EncryptionAtRestOptions?: EncryptionAtRestOptions,
-     *     NodeToNodeEncryptionOptions?: NodeToNodeEncryptionOptions,
-     *     AdvancedOptions?: array<string, string>,
-     *     LogPublishingOptions?: array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', LogPublishingOption>,
-     *     ServiceSoftwareOptions?: ServiceSoftwareOptions,
-     *     DomainEndpointOptions?: DomainEndpointOptions,
-     *     AdvancedSecurityOptions?: AdvancedSecurityOptions,
-     *     AutoTuneOptions?: AutoTuneOptionsOutput,
-     *     ChangeProgressDetails?: ChangeProgressDetails,
-     *     DomainProcessingStatus?: 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting',
-     *     ModifyingProperties?: list<ModifyingProperties>
+     *     EBSOptions?: EBSOptions|null,
+     *     AccessPolicies?: string|null,
+     *     SnapshotOptions?: SnapshotOptions|null,
+     *     VPCOptions?: VPCDerivedInfo|null,
+     *     CognitoOptions?: CognitoOptions|null,
+     *     EncryptionAtRestOptions?: EncryptionAtRestOptions|null,
+     *     NodeToNodeEncryptionOptions?: NodeToNodeEncryptionOptions|null,
+     *     AdvancedOptions?: array<string, string>|null,
+     *     LogPublishingOptions?: array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', LogPublishingOption>|null,
+     *     ServiceSoftwareOptions?: ServiceSoftwareOptions|null,
+     *     DomainEndpointOptions?: DomainEndpointOptions|null,
+     *     AdvancedSecurityOptions?: AdvancedSecurityOptions|null,
+     *     AutoTuneOptions?: AutoTuneOptionsOutput|null,
+     *     ChangeProgressDetails?: ChangeProgressDetails|null,
+     *     DomainProcessingStatus?: 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting'|null,
+     *     ModifyingProperties?: list<ModifyingProperties>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeMetricCollectionTypes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\MetricCollectionType> $Metrics
- * @property list<Shapes\MetricGranularityType> $Granularities
+ * @property list<Shapes\MetricCollectionType>|null $Metrics
+ * @property list<Shapes\MetricGranularityType>|null $Granularities
  */
 class DescribeMetricCollectionTypesResponse extends Response
 {

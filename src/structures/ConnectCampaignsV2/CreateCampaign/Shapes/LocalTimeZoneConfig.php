@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\CreateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $defaultTimeZone
- * @property list<'ZIP_CODE'|'AREA_CODE'> $localTimeZoneDetection
+ * @property string|null $defaultTimeZone
+ * @property list<'ZIP_CODE'|'AREA_CODE'>|null $localTimeZoneDetection
  */
 class LocalTimeZoneConfig extends Shape
 {
     /**
      * @param array{
-     *     defaultTimeZone?: string,
-     *     localTimeZoneDetection?: list<'ZIP_CODE'|'AREA_CODE'>
+     *     defaultTimeZone?: string|null,
+     *     localTimeZoneDetection?: list<'ZIP_CODE'|'AREA_CODE'>|null
      * } $args
      */
     public function __construct(array $args = [])

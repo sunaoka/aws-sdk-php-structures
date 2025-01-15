@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Glue\ListCrawls\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CrawlId
- * @property 'RUNNING'|'COMPLETED'|'FAILED'|'STOPPED' $State
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $Summary
- * @property string $ErrorMessage
- * @property string $LogGroup
- * @property string $LogStream
- * @property string $MessagePrefix
- * @property double $DPUHour
+ * @property string|null $CrawlId
+ * @property 'RUNNING'|'COMPLETED'|'FAILED'|'STOPPED'|null $State
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $Summary
+ * @property string|null $ErrorMessage
+ * @property string|null $LogGroup
+ * @property string|null $LogStream
+ * @property string|null $MessagePrefix
+ * @property double|null $DPUHour
  */
 class CrawlerHistory extends Shape
 {
     /**
      * @param array{
-     *     CrawlId?: string,
-     *     State?: 'RUNNING'|'COMPLETED'|'FAILED'|'STOPPED',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Summary?: string,
-     *     ErrorMessage?: string,
-     *     LogGroup?: string,
-     *     LogStream?: string,
-     *     MessagePrefix?: string,
-     *     DPUHour?: double
+     *     CrawlId?: string|null,
+     *     State?: 'RUNNING'|'COMPLETED'|'FAILED'|'STOPPED'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Summary?: string|null,
+     *     ErrorMessage?: string|null,
+     *     LogGroup?: string|null,
+     *     LogStream?: string|null,
+     *     MessagePrefix?: string|null,
+     *     DPUHour?: double|null
      * } $args
      */
     public function __construct(array $args = [])

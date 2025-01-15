@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\PutFeedback\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GenerativeContentFeedbackData $generativeContentFeedbackData
+ * @property GenerativeContentFeedbackData|null $generativeContentFeedbackData
  */
 class ContentFeedbackData extends Shape
 {
     /**
-     * @param array{generativeContentFeedbackData?: GenerativeContentFeedbackData} $args
+     * @param array{generativeContentFeedbackData?: GenerativeContentFeedbackData|null} $args
      */
     public function __construct(array $args = [])
     {

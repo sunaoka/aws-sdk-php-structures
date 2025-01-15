@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\NetworkManager\DisassociateConnectPeer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectPeerId
- * @property string $GlobalNetworkId
- * @property string $DeviceId
- * @property string $LinkId
- * @property 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED' $State
+ * @property string|null $ConnectPeerId
+ * @property string|null $GlobalNetworkId
+ * @property string|null $DeviceId
+ * @property string|null $LinkId
+ * @property 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|null $State
  */
 class ConnectPeerAssociation extends Shape
 {
     /**
      * @param array{
-     *     ConnectPeerId?: string,
-     *     GlobalNetworkId?: string,
-     *     DeviceId?: string,
-     *     LinkId?: string,
-     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'
+     *     ConnectPeerId?: string|null,
+     *     GlobalNetworkId?: string|null,
+     *     DeviceId?: string|null,
+     *     LinkId?: string|null,
+     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

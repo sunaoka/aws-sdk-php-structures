@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Ipv4Prefix
+ * @property string|null $Ipv4Prefix
  */
 class Ipv4PrefixSpecificationResponse extends Shape
 {
     /**
-     * @param array{Ipv4Prefix?: string} $args
+     * @param array{Ipv4Prefix?: string|null} $args
      */
     public function __construct(array $args = [])
     {

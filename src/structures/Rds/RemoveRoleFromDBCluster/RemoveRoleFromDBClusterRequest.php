@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DBClusterIdentifier
  * @property string $RoleArn
- * @property string $FeatureName
+ * @property string|null $FeatureName
  */
 class RemoveRoleFromDBClusterRequest extends Request
 {
@@ -15,7 +15,7 @@ class RemoveRoleFromDBClusterRequest extends Request
      * @param array{
      *     DBClusterIdentifier: string,
      *     RoleArn: string,
-     *     FeatureName?: string
+     *     FeatureName?: string|null
      * } $args
      */
     public function __construct(array $args)

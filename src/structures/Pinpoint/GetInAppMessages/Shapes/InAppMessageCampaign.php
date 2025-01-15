@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetInAppMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CampaignId
- * @property int $DailyCap
- * @property InAppMessage $InAppMessage
- * @property int $Priority
- * @property InAppCampaignSchedule $Schedule
- * @property int $SessionCap
- * @property int $TotalCap
- * @property string $TreatmentId
+ * @property string|null $CampaignId
+ * @property int|null $DailyCap
+ * @property InAppMessage|null $InAppMessage
+ * @property int|null $Priority
+ * @property InAppCampaignSchedule|null $Schedule
+ * @property int|null $SessionCap
+ * @property int|null $TotalCap
+ * @property string|null $TreatmentId
  */
 class InAppMessageCampaign extends Shape
 {
     /**
      * @param array{
-     *     CampaignId?: string,
-     *     DailyCap?: int,
-     *     InAppMessage?: InAppMessage,
-     *     Priority?: int,
-     *     Schedule?: InAppCampaignSchedule,
-     *     SessionCap?: int,
-     *     TotalCap?: int,
-     *     TreatmentId?: string
+     *     CampaignId?: string|null,
+     *     DailyCap?: int|null,
+     *     InAppMessage?: InAppMessage|null,
+     *     Priority?: int|null,
+     *     Schedule?: InAppCampaignSchedule|null,
+     *     SessionCap?: int|null,
+     *     TotalCap?: int|null,
+     *     TreatmentId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

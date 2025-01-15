@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Emr\CancelSteps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StepId
- * @property 'SUBMITTED'|'FAILED' $Status
- * @property string $Reason
+ * @property string|null $StepId
+ * @property 'SUBMITTED'|'FAILED'|null $Status
+ * @property string|null $Reason
  */
 class CancelStepsInfo extends Shape
 {
     /**
      * @param array{
-     *     StepId?: string,
-     *     Status?: 'SUBMITTED'|'FAILED',
-     *     Reason?: string
+     *     StepId?: string|null,
+     *     Status?: 'SUBMITTED'|'FAILED'|null,
+     *     Reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

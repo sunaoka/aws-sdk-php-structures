@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DeleteProvisionedProductPlan;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $PlanId
- * @property bool $IgnoreErrors
+ * @property bool|null $IgnoreErrors
  */
 class DeleteProvisionedProductPlanRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     PlanId: string,
-     *     IgnoreErrors?: bool
+     *     IgnoreErrors?: bool|null
      * } $args
      */
     public function __construct(array $args)

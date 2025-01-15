@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\GetTrustStoreRevocationC
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Location
+ * @property string|null $Location
  */
 class GetTrustStoreRevocationContentResponse extends Response
 {

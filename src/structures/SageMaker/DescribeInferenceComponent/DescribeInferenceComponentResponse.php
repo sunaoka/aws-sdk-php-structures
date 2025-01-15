@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $InferenceComponentArn
  * @property string $EndpointName
  * @property string $EndpointArn
- * @property string $VariantName
- * @property string $FailureReason
- * @property Shapes\InferenceComponentSpecificationSummary $Specification
- * @property Shapes\InferenceComponentRuntimeConfigSummary $RuntimeConfig
+ * @property string|null $VariantName
+ * @property string|null $FailureReason
+ * @property Shapes\InferenceComponentSpecificationSummary|null $Specification
+ * @property Shapes\InferenceComponentRuntimeConfigSummary|null $RuntimeConfig
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property 'InService'|'Creating'|'Updating'|'Failed'|'Deleting' $InferenceComponentStatus
+ * @property 'InService'|'Creating'|'Updating'|'Failed'|'Deleting'|null $InferenceComponentStatus
  */
 class DescribeInferenceComponentResponse extends Response
 {

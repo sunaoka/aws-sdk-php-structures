@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\BatchStartRecommendati
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\StartRecommendationsRequestEntry> $Data
+ * @property list<Shapes\StartRecommendationsRequestEntry>|null $Data
  */
 class BatchStartRecommendationsRequest extends Request
 {
     /**
-     * @param array{Data?: list<Shapes\StartRecommendationsRequestEntry>} $args
+     * @param array{Data?: list<Shapes\StartRecommendationsRequestEntry>|null} $args
      */
     public function __construct(array $args = [])
     {

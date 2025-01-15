@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property list<DocumentAttribute> $attributes
- * @property DocumentContent $content
- * @property 'PDF'|'HTML'|'MS_WORD'|'PLAIN_TEXT'|'PPT'|'RTF'|'XML'|'XSLT'|'MS_EXCEL'|'CSV'|'JSON'|'MD' $contentType
- * @property string $title
- * @property AccessConfiguration $accessConfiguration
- * @property DocumentEnrichmentConfiguration $documentEnrichmentConfiguration
- * @property MediaExtractionConfiguration $mediaExtractionConfiguration
+ * @property list<DocumentAttribute>|null $attributes
+ * @property DocumentContent|null $content
+ * @property 'PDF'|'HTML'|'MS_WORD'|'PLAIN_TEXT'|'PPT'|'RTF'|'XML'|'XSLT'|'MS_EXCEL'|'CSV'|'JSON'|'MD'|null $contentType
+ * @property string|null $title
+ * @property AccessConfiguration|null $accessConfiguration
+ * @property DocumentEnrichmentConfiguration|null $documentEnrichmentConfiguration
+ * @property MediaExtractionConfiguration|null $mediaExtractionConfiguration
  */
 class Document extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     attributes?: list<DocumentAttribute>,
-     *     content?: DocumentContent,
-     *     contentType?: 'PDF'|'HTML'|'MS_WORD'|'PLAIN_TEXT'|'PPT'|'RTF'|'XML'|'XSLT'|'MS_EXCEL'|'CSV'|'JSON'|'MD',
-     *     title?: string,
-     *     accessConfiguration?: AccessConfiguration,
-     *     documentEnrichmentConfiguration?: DocumentEnrichmentConfiguration,
-     *     mediaExtractionConfiguration?: MediaExtractionConfiguration
+     *     attributes?: list<DocumentAttribute>|null,
+     *     content?: DocumentContent|null,
+     *     contentType?: 'PDF'|'HTML'|'MS_WORD'|'PLAIN_TEXT'|'PPT'|'RTF'|'XML'|'XSLT'|'MS_EXCEL'|'CSV'|'JSON'|'MD'|null,
+     *     title?: string|null,
+     *     accessConfiguration?: AccessConfiguration|null,
+     *     documentEnrichmentConfiguration?: DocumentEnrichmentConfiguration|null,
+     *     mediaExtractionConfiguration?: MediaExtractionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

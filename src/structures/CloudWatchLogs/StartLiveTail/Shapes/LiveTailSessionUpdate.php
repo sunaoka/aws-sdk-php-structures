@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\StartLiveTail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LiveTailSessionMetadata $sessionMetadata
- * @property list<LiveTailSessionLogEvent> $sessionResults
+ * @property LiveTailSessionMetadata|null $sessionMetadata
+ * @property list<LiveTailSessionLogEvent>|null $sessionResults
  */
 class LiveTailSessionUpdate extends Shape
 {
     /**
      * @param array{
-     *     sessionMetadata?: LiveTailSessionMetadata,
-     *     sessionResults?: list<LiveTailSessionLogEvent>
+     *     sessionMetadata?: LiveTailSessionMetadata|null,
+     *     sessionResults?: list<LiveTailSessionLogEvent>|null
      * } $args
      */
     public function __construct(array $args = [])

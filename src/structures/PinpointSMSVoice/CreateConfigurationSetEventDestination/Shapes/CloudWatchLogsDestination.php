@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoice\CreateConfigurationSetEventDes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IamRoleArn
- * @property string $LogGroupArn
+ * @property string|null $IamRoleArn
+ * @property string|null $LogGroupArn
  */
 class CloudWatchLogsDestination extends Shape
 {
     /**
      * @param array{
-     *     IamRoleArn?: string,
-     *     LogGroupArn?: string
+     *     IamRoleArn?: string|null,
+     *     LogGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

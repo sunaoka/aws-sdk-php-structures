@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\VPCLattice\CreateResourceConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ipAddress
+ * @property string|null $ipAddress
  */
 class IpResource extends Shape
 {
     /**
-     * @param array{ipAddress?: string} $args
+     * @param array{ipAddress?: string|null} $args
      */
     public function __construct(array $args = [])
     {

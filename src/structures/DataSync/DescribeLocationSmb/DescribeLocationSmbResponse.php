@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeLocationSmb;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LocationArn
- * @property string $LocationUri
- * @property list<string> $AgentArns
- * @property string $User
- * @property string $Domain
- * @property Shapes\SmbMountOptions $MountOptions
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $LocationArn
+ * @property string|null $LocationUri
+ * @property list<string>|null $AgentArns
+ * @property string|null $User
+ * @property string|null $Domain
+ * @property Shapes\SmbMountOptions|null $MountOptions
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class DescribeLocationSmbResponse extends Response
 {

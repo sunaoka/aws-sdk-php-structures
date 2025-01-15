@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property list<string> $nodesToAdd
- * @property list<string> $nodesToRemove
- * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING' $status
+ * @property string|null $description
+ * @property list<string>|null $nodesToAdd
+ * @property list<string>|null $nodesToRemove
+ * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null $status
  */
 class UpdateModelManifestRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     nodesToAdd?: list<string>,
-     *     nodesToRemove?: list<string>,
-     *     status?: 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'
+     *     description?: string|null,
+     *     nodesToAdd?: list<string>|null,
+     *     nodesToRemove?: list<string>|null,
+     *     status?: 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\GetCommandExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S
- * @property bool $B
- * @property \Psr\Http\Message\StreamInterface $BIN
+ * @property string|null $S
+ * @property bool|null $B
+ * @property \Psr\Http\Message\StreamInterface|null $BIN
  */
 class CommandExecutionResult extends Shape
 {
     /**
      * @param array{
-     *     S?: string,
-     *     B?: bool,
-     *     BIN?: \Psr\Http\Message\StreamInterface
+     *     S?: string|null,
+     *     B?: bool|null,
+     *     BIN?: \Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args = [])

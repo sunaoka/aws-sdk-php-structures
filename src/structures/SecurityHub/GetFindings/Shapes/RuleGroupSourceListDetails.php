@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GeneratedRulesType
- * @property list<string> $TargetTypes
- * @property list<string> $Targets
+ * @property string|null $GeneratedRulesType
+ * @property list<string>|null $TargetTypes
+ * @property list<string>|null $Targets
  */
 class RuleGroupSourceListDetails extends Shape
 {
     /**
      * @param array{
-     *     GeneratedRulesType?: string,
-     *     TargetTypes?: list<string>,
-     *     Targets?: list<string>
+     *     GeneratedRulesType?: string|null,
+     *     TargetTypes?: list<string>|null,
+     *     Targets?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

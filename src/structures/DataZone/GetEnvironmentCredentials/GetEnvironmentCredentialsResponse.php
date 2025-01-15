@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\DataZone\GetEnvironmentCredentials;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $accessKeyId
- * @property \Aws\Api\DateTimeResult $expiration
- * @property string $secretAccessKey
- * @property string $sessionToken
+ * @property string|null $accessKeyId
+ * @property \Aws\Api\DateTimeResult|null $expiration
+ * @property string|null $secretAccessKey
+ * @property string|null $sessionToken
  */
 class GetEnvironmentCredentialsResponse extends Response
 {

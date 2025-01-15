@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\ContinuousDeploymentPolicyConfig $ContinuousDeploymentPolicyConfig
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class UpdateContinuousDeploymentPolicyRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateContinuousDeploymentPolicyRequest extends Request
      * @param array{
      *     ContinuousDeploymentPolicyConfig: Shapes\ContinuousDeploymentPolicyConfig,
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

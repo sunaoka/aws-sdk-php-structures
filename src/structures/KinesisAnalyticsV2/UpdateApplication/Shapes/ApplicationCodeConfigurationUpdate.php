@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\UpdateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PLAINTEXT'|'ZIPFILE' $CodeContentTypeUpdate
- * @property CodeContentUpdate $CodeContentUpdate
+ * @property 'PLAINTEXT'|'ZIPFILE'|null $CodeContentTypeUpdate
+ * @property CodeContentUpdate|null $CodeContentUpdate
  */
 class ApplicationCodeConfigurationUpdate extends Shape
 {
     /**
      * @param array{
-     *     CodeContentTypeUpdate?: 'PLAINTEXT'|'ZIPFILE',
-     *     CodeContentUpdate?: CodeContentUpdate
+     *     CodeContentTypeUpdate?: 'PLAINTEXT'|'ZIPFILE'|null,
+     *     CodeContentUpdate?: CodeContentUpdate|null
      * } $args
      */
     public function __construct(array $args = [])

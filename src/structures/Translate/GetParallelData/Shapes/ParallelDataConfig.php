@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Translate\GetParallelData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3Uri
- * @property 'TSV'|'CSV'|'TMX' $Format
+ * @property string|null $S3Uri
+ * @property 'TSV'|'CSV'|'TMX'|null $Format
  */
 class ParallelDataConfig extends Shape
 {
     /**
      * @param array{
-     *     S3Uri?: string,
-     *     Format?: 'TSV'|'CSV'|'TMX'
+     *     S3Uri?: string|null,
+     *     Format?: 'TSV'|'CSV'|'TMX'|null
      * } $args
      */
     public function __construct(array $args = [])

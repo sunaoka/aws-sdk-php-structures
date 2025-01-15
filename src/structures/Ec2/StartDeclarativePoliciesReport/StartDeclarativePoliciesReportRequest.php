@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\StartDeclarativePoliciesReport;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $S3Bucket
- * @property string $S3Prefix
+ * @property string|null $S3Prefix
  * @property string $TargetId
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class StartDeclarativePoliciesReportRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     S3Bucket: string,
-     *     S3Prefix?: string,
+     *     S3Prefix?: string|null,
      *     TargetId: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

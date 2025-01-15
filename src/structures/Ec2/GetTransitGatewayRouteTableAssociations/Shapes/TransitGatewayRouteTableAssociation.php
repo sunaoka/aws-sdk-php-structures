@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\GetTransitGatewayRouteTableAssociations\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayAttachmentId
- * @property string $ResourceId
- * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering' $ResourceType
- * @property 'associating'|'associated'|'disassociating'|'disassociated' $State
+ * @property string|null $TransitGatewayAttachmentId
+ * @property string|null $ResourceId
+ * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null $ResourceType
+ * @property 'associating'|'associated'|'disassociating'|'disassociated'|null $State
  */
 class TransitGatewayRouteTableAssociation extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayAttachmentId?: string,
-     *     ResourceId?: string,
-     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering',
-     *     State?: 'associating'|'associated'|'disassociating'|'disassociated'
+     *     TransitGatewayAttachmentId?: string|null,
+     *     ResourceId?: string|null,
+     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null,
+     *     State?: 'associating'|'associated'|'disassociating'|'disassociated'|null
      * } $args
      */
     public function __construct(array $args = [])

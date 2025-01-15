@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateStorageVirtualMachine\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SvmEndpoint $Iscsi
- * @property SvmEndpoint $Management
- * @property SvmEndpoint $Nfs
- * @property SvmEndpoint $Smb
+ * @property SvmEndpoint|null $Iscsi
+ * @property SvmEndpoint|null $Management
+ * @property SvmEndpoint|null $Nfs
+ * @property SvmEndpoint|null $Smb
  */
 class SvmEndpoints extends Shape
 {
     /**
      * @param array{
-     *     Iscsi?: SvmEndpoint,
-     *     Management?: SvmEndpoint,
-     *     Nfs?: SvmEndpoint,
-     *     Smb?: SvmEndpoint
+     *     Iscsi?: SvmEndpoint|null,
+     *     Management?: SvmEndpoint|null,
+     *     Nfs?: SvmEndpoint|null,
+     *     Smb?: SvmEndpoint|null
      * } $args
      */
     public function __construct(array $args = [])

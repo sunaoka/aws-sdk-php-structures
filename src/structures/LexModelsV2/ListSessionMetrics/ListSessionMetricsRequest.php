@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $startDateTime
  * @property \Aws\Api\DateTimeResult $endDateTime
  * @property list<Shapes\AnalyticsSessionMetric> $metrics
- * @property list<Shapes\AnalyticsBinBySpecification> $binBy
- * @property list<Shapes\AnalyticsSessionGroupBySpecification> $groupBy
- * @property list<Shapes\AnalyticsSessionFilter> $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property list<Shapes\AnalyticsBinBySpecification>|null $binBy
+ * @property list<Shapes\AnalyticsSessionGroupBySpecification>|null $groupBy
+ * @property list<Shapes\AnalyticsSessionFilter>|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListSessionMetricsRequest extends Request
 {
@@ -23,11 +23,11 @@ class ListSessionMetricsRequest extends Request
      *     startDateTime: \Aws\Api\DateTimeResult,
      *     endDateTime: \Aws\Api\DateTimeResult,
      *     metrics: list<Shapes\AnalyticsSessionMetric>,
-     *     binBy?: list<Shapes\AnalyticsBinBySpecification>,
-     *     groupBy?: list<Shapes\AnalyticsSessionGroupBySpecification>,
-     *     filters?: list<Shapes\AnalyticsSessionFilter>,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     binBy?: list<Shapes\AnalyticsBinBySpecification>|null,
+     *     groupBy?: list<Shapes\AnalyticsSessionGroupBySpecification>|null,
+     *     filters?: list<Shapes\AnalyticsSessionFilter>|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

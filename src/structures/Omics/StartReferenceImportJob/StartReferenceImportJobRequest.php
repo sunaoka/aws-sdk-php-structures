@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $referenceStoreId
  * @property string $roleArn
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property list<Shapes\StartReferenceImportJobSourceItem> $sources
  */
 class StartReferenceImportJobRequest extends Request
@@ -16,7 +16,7 @@ class StartReferenceImportJobRequest extends Request
      * @param array{
      *     referenceStoreId: string,
      *     roleArn: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     sources: list<Shapes\StartReferenceImportJobSourceItem>
      * } $args
      */

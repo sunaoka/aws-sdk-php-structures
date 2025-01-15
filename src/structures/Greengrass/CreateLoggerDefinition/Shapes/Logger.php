@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'GreengrassSystem'|'Lambda' $Component
  * @property string $Id
  * @property 'DEBUG'|'INFO'|'WARN'|'ERROR'|'FATAL' $Level
- * @property int $Space
+ * @property int|null $Space
  * @property 'FileSystem'|'AWSCloudWatch' $Type
  */
 class Logger extends Shape
@@ -18,7 +18,7 @@ class Logger extends Shape
      *     Component: 'GreengrassSystem'|'Lambda',
      *     Id: string,
      *     Level: 'DEBUG'|'INFO'|'WARN'|'ERROR'|'FATAL',
-     *     Space?: int,
+     *     Space?: int|null,
      *     Type: 'FileSystem'|'AWSCloudWatch'
      * } $args
      */

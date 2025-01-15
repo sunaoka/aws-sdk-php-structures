@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplateAlias\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AliasName
- * @property string $Arn
- * @property int<1, max> $TemplateVersionNumber
+ * @property string|null $AliasName
+ * @property string|null $Arn
+ * @property int<1, max>|null $TemplateVersionNumber
  */
 class TemplateAlias extends Shape
 {
     /**
      * @param array{
-     *     AliasName?: string,
-     *     Arn?: string,
-     *     TemplateVersionNumber?: int<1, max>
+     *     AliasName?: string|null,
+     *     Arn?: string|null,
+     *     TemplateVersionNumber?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

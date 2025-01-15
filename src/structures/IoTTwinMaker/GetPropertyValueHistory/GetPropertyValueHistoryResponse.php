@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\PropertyValueHistory> $propertyValues
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class GetPropertyValueHistoryResponse extends Response
 {

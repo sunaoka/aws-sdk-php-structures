@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Organizations\ListAWSServiceAccessForOrganizati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EnabledServicePrincipal> $EnabledServicePrincipals
- * @property string $NextToken
+ * @property list<Shapes\EnabledServicePrincipal>|null $EnabledServicePrincipals
+ * @property string|null $NextToken
  */
 class ListAWSServiceAccessForOrganizationResponse extends Response
 {

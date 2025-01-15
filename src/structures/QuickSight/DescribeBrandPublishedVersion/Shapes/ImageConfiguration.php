@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeBrandPublishedVersion\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImageSource $Source
+ * @property ImageSource|null $Source
  */
 class ImageConfiguration extends Shape
 {
     /**
-     * @param array{Source?: ImageSource} $args
+     * @param array{Source?: ImageSource|null} $args
      */
     public function __construct(array $args = [])
     {

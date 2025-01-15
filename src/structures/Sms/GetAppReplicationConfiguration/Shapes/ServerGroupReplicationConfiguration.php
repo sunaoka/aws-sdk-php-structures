@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Sms\GetAppReplicationConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $serverGroupId
- * @property list<ServerReplicationConfiguration> $serverReplicationConfigurations
+ * @property string|null $serverGroupId
+ * @property list<ServerReplicationConfiguration>|null $serverReplicationConfigurations
  */
 class ServerGroupReplicationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     serverGroupId?: string,
-     *     serverReplicationConfigurations?: list<ServerReplicationConfiguration>
+     *     serverGroupId?: string|null,
+     *     serverReplicationConfigurations?: list<ServerReplicationConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

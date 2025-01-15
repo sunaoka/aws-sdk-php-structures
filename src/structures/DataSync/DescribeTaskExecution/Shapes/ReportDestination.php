@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeTaskExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReportDestinationS3 $S3
+ * @property ReportDestinationS3|null $S3
  */
 class ReportDestination extends Shape
 {
     /**
-     * @param array{S3?: ReportDestinationS3} $args
+     * @param array{S3?: ReportDestinationS3|null} $args
      */
     public function __construct(array $args = [])
     {

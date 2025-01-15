@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\WorkflowExecutionInfo> $executionInfos
- * @property string $nextPageToken
+ * @property string|null $nextPageToken
  */
 class ListOpenWorkflowExecutionsResponse extends Response
 {

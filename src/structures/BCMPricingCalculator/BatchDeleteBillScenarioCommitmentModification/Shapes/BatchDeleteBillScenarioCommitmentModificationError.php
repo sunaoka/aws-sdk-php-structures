@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchDeleteBillScenarioCom
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property 'BAD_REQUEST'|'CONFLICT'|'INTERNAL_SERVER_ERROR' $errorCode
- * @property string $errorMessage
+ * @property string|null $id
+ * @property 'BAD_REQUEST'|'CONFLICT'|'INTERNAL_SERVER_ERROR'|null $errorCode
+ * @property string|null $errorMessage
  */
 class BatchDeleteBillScenarioCommitmentModificationError extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     errorCode?: 'BAD_REQUEST'|'CONFLICT'|'INTERNAL_SERVER_ERROR',
-     *     errorMessage?: string
+     *     id?: string|null,
+     *     errorCode?: 'BAD_REQUEST'|'CONFLICT'|'INTERNAL_SERVER_ERROR'|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

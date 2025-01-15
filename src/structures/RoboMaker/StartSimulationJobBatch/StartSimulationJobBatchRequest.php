@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\RoboMaker\StartSimulationJobBatch;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientRequestToken
- * @property Shapes\BatchPolicy $batchPolicy
+ * @property string|null $clientRequestToken
+ * @property Shapes\BatchPolicy|null $batchPolicy
  * @property list<Shapes\SimulationJobRequest> $createSimulationJobRequests
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class StartSimulationJobBatchRequest extends Request
 {
     /**
      * @param array{
-     *     clientRequestToken?: string,
-     *     batchPolicy?: Shapes\BatchPolicy,
+     *     clientRequestToken?: string|null,
+     *     batchPolicy?: Shapes\BatchPolicy|null,
      *     createSimulationJobRequests: list<Shapes\SimulationJobRequest>,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

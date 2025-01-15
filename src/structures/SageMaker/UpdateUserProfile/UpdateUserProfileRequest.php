@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainId
  * @property string $UserProfileName
- * @property Shapes\UserSettings $UserSettings
+ * @property Shapes\UserSettings|null $UserSettings
  */
 class UpdateUserProfileRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateUserProfileRequest extends Request
      * @param array{
      *     DomainId: string,
      *     UserProfileName: string,
-     *     UserSettings?: Shapes\UserSettings
+     *     UserSettings?: Shapes\UserSettings|null
      * } $args
      */
     public function __construct(array $args)

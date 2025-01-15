@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property int $size
- * @property array<'MD5'|'SHA-1'|'SHA-256'|'SHA-512', string> $hashes
+ * @property int|null $size
+ * @property array<'MD5'|'SHA-1'|'SHA-256'|'SHA-512', string>|null $hashes
  */
 class AssetSummary extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     size?: int,
-     *     hashes?: array<'MD5'|'SHA-1'|'SHA-256'|'SHA-512', string>
+     *     size?: int|null,
+     *     hashes?: array<'MD5'|'SHA-1'|'SHA-256'|'SHA-512', string>|null
      * } $args
      */
     public function __construct(array $args)

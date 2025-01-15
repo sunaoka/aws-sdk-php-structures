@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationId
  * @property string $Name
- * @property string $Description
- * @property list<Shapes\Monitor> $Monitors
- * @property array<string, string> $Tags
+ * @property string|null $Description
+ * @property list<Shapes\Monitor>|null $Monitors
+ * @property array<string, string>|null $Tags
  */
 class CreateEnvironmentRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateEnvironmentRequest extends Request
      * @param array{
      *     ApplicationId: string,
      *     Name: string,
-     *     Description?: string,
-     *     Monitors?: list<Shapes\Monitor>,
-     *     Tags?: array<string, string>
+     *     Description?: string|null,
+     *     Monitors?: list<Shapes\Monitor>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

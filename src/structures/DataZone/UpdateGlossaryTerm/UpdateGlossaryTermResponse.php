@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $domainId
  * @property string $glossaryId
  * @property string $id
- * @property string $longDescription
+ * @property string|null $longDescription
  * @property string $name
- * @property string $shortDescription
+ * @property string|null $shortDescription
  * @property 'ENABLED'|'DISABLED' $status
- * @property Shapes\TermRelations $termRelations
+ * @property Shapes\TermRelations|null $termRelations
  */
 class UpdateGlossaryTermResponse extends Response
 {

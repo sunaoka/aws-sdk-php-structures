@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $arn
- * @property string $policy
+ * @property string|null $policy
  * @property string $token
  */
 class PutPolicyResponse extends Response

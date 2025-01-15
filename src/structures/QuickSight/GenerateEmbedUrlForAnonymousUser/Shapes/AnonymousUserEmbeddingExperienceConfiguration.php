@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\GenerateEmbedUrlForAnonymousUser\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AnonymousUserDashboardEmbeddingConfiguration $Dashboard
- * @property AnonymousUserDashboardVisualEmbeddingConfiguration $DashboardVisual
- * @property AnonymousUserQSearchBarEmbeddingConfiguration $QSearchBar
- * @property AnonymousUserGenerativeQnAEmbeddingConfiguration $GenerativeQnA
+ * @property AnonymousUserDashboardEmbeddingConfiguration|null $Dashboard
+ * @property AnonymousUserDashboardVisualEmbeddingConfiguration|null $DashboardVisual
+ * @property AnonymousUserQSearchBarEmbeddingConfiguration|null $QSearchBar
+ * @property AnonymousUserGenerativeQnAEmbeddingConfiguration|null $GenerativeQnA
  */
 class AnonymousUserEmbeddingExperienceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Dashboard?: AnonymousUserDashboardEmbeddingConfiguration,
-     *     DashboardVisual?: AnonymousUserDashboardVisualEmbeddingConfiguration,
-     *     QSearchBar?: AnonymousUserQSearchBarEmbeddingConfiguration,
-     *     GenerativeQnA?: AnonymousUserGenerativeQnAEmbeddingConfiguration
+     *     Dashboard?: AnonymousUserDashboardEmbeddingConfiguration|null,
+     *     DashboardVisual?: AnonymousUserDashboardVisualEmbeddingConfiguration|null,
+     *     QSearchBar?: AnonymousUserQSearchBarEmbeddingConfiguration|null,
+     *     GenerativeQnA?: AnonymousUserGenerativeQnAEmbeddingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

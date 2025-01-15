@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Athena\StartQueryExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Database
- * @property string $Catalog
+ * @property string|null $Database
+ * @property string|null $Catalog
  */
 class QueryExecutionContext extends Shape
 {
     /**
      * @param array{
-     *     Database?: string,
-     *     Catalog?: string
+     *     Database?: string|null,
+     *     Catalog?: string|null
      * } $args
      */
     public function __construct(array $args = [])

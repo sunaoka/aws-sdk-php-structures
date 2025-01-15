@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\DescribeApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OutputId
- * @property string $Name
- * @property KinesisStreamsOutputDescription $KinesisStreamsOutputDescription
- * @property KinesisFirehoseOutputDescription $KinesisFirehoseOutputDescription
- * @property LambdaOutputDescription $LambdaOutputDescription
- * @property DestinationSchema $DestinationSchema
+ * @property string|null $OutputId
+ * @property string|null $Name
+ * @property KinesisStreamsOutputDescription|null $KinesisStreamsOutputDescription
+ * @property KinesisFirehoseOutputDescription|null $KinesisFirehoseOutputDescription
+ * @property LambdaOutputDescription|null $LambdaOutputDescription
+ * @property DestinationSchema|null $DestinationSchema
  */
 class OutputDescription extends Shape
 {
     /**
      * @param array{
-     *     OutputId?: string,
-     *     Name?: string,
-     *     KinesisStreamsOutputDescription?: KinesisStreamsOutputDescription,
-     *     KinesisFirehoseOutputDescription?: KinesisFirehoseOutputDescription,
-     *     LambdaOutputDescription?: LambdaOutputDescription,
-     *     DestinationSchema?: DestinationSchema
+     *     OutputId?: string|null,
+     *     Name?: string|null,
+     *     KinesisStreamsOutputDescription?: KinesisStreamsOutputDescription|null,
+     *     KinesisFirehoseOutputDescription?: KinesisFirehoseOutputDescription|null,
+     *     LambdaOutputDescription?: LambdaOutputDescription|null,
+     *     DestinationSchema?: DestinationSchema|null
      * } $args
      */
     public function __construct(array $args = [])

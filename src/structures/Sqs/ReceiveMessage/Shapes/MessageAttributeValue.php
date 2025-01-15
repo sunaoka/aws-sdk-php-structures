@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Sqs\ReceiveMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StringValue
- * @property \Psr\Http\Message\StreamInterface $BinaryValue
- * @property list<string> $StringListValues
- * @property list<\Psr\Http\Message\StreamInterface> $BinaryListValues
+ * @property string|null $StringValue
+ * @property \Psr\Http\Message\StreamInterface|null $BinaryValue
+ * @property list<string>|null $StringListValues
+ * @property list<\Psr\Http\Message\StreamInterface>|null $BinaryListValues
  * @property string $DataType
  */
 class MessageAttributeValue extends Shape
 {
     /**
      * @param array{
-     *     StringValue?: string,
-     *     BinaryValue?: \Psr\Http\Message\StreamInterface,
-     *     StringListValues?: list<string>,
-     *     BinaryListValues?: list<\Psr\Http\Message\StreamInterface>,
+     *     StringValue?: string|null,
+     *     BinaryValue?: \Psr\Http\Message\StreamInterface|null,
+     *     StringListValues?: list<string>|null,
+     *     BinaryListValues?: list<\Psr\Http\Message\StreamInterface>|null,
      *     DataType: string
      * } $args
      */

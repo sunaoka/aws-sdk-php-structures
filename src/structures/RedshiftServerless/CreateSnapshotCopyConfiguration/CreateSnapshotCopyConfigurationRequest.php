@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\CreateSnapshotCopyConfigurat
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $destinationKmsKeyId
+ * @property string|null $destinationKmsKeyId
  * @property string $destinationRegion
  * @property string $namespaceName
- * @property int $snapshotRetentionPeriod
+ * @property int|null $snapshotRetentionPeriod
  */
 class CreateSnapshotCopyConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     destinationKmsKeyId?: string,
+     *     destinationKmsKeyId?: string|null,
      *     destinationRegion: string,
      *     namespaceName: string,
-     *     snapshotRetentionPeriod?: int
+     *     snapshotRetentionPeriod?: int|null
      * } $args
      */
     public function __construct(array $args)

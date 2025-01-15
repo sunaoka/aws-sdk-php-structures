@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $RecipeVersion
+ * @property string|null $RecipeVersion
  */
 class RecipeReference extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     RecipeVersion?: string
+     *     RecipeVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

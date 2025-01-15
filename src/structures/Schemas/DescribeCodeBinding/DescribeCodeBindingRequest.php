@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Language
  * @property string $RegistryName
  * @property string $SchemaName
- * @property string $SchemaVersion
+ * @property string|null $SchemaVersion
  */
 class DescribeCodeBindingRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeCodeBindingRequest extends Request
      *     Language: string,
      *     RegistryName: string,
      *     SchemaName: string,
-     *     SchemaVersion?: string
+     *     SchemaVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

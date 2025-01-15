@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $provisionedModelId
- * @property string $desiredProvisionedModelName
- * @property string $desiredModelId
+ * @property string|null $desiredProvisionedModelName
+ * @property string|null $desiredModelId
  */
 class UpdateProvisionedModelThroughputRequest extends Request
 {
     /**
      * @param array{
      *     provisionedModelId: string,
-     *     desiredProvisionedModelName?: string,
-     *     desiredModelId?: string
+     *     desiredProvisionedModelName?: string|null,
+     *     desiredModelId?: string|null
      * } $args
      */
     public function __construct(array $args)

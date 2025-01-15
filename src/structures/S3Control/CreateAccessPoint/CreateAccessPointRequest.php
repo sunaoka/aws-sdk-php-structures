@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $Name
  * @property string $Bucket
- * @property Shapes\VpcConfiguration $VpcConfiguration
- * @property Shapes\PublicAccessBlockConfiguration $PublicAccessBlockConfiguration
- * @property string $BucketAccountId
+ * @property Shapes\VpcConfiguration|null $VpcConfiguration
+ * @property Shapes\PublicAccessBlockConfiguration|null $PublicAccessBlockConfiguration
+ * @property string|null $BucketAccountId
  */
 class CreateAccessPointRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateAccessPointRequest extends Request
      *     AccountId: string,
      *     Name: string,
      *     Bucket: string,
-     *     VpcConfiguration?: Shapes\VpcConfiguration,
-     *     PublicAccessBlockConfiguration?: Shapes\PublicAccessBlockConfiguration,
-     *     BucketAccountId?: string
+     *     VpcConfiguration?: Shapes\VpcConfiguration|null,
+     *     PublicAccessBlockConfiguration?: Shapes\PublicAccessBlockConfiguration|null,
+     *     BucketAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $name
- * @property string $description
- * @property 'LONG'|'SHORT'|'NONE' $aggregationDuration
+ * @property string|null $name
+ * @property string|null $description
+ * @property 'LONG'|'SHORT'|'NONE'|null $aggregationDuration
  */
 class UpdateNotificationConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     name?: string,
-     *     description?: string,
-     *     aggregationDuration?: 'LONG'|'SHORT'|'NONE'
+     *     name?: string|null,
+     *     description?: string|null,
+     *     aggregationDuration?: 'LONG'|'SHORT'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

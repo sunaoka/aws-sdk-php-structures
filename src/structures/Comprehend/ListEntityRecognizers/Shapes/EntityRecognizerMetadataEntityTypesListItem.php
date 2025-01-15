@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Comprehend\ListEntityRecognizers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Type
- * @property EntityTypesEvaluationMetrics $EvaluationMetrics
- * @property int $NumberOfTrainMentions
+ * @property string|null $Type
+ * @property EntityTypesEvaluationMetrics|null $EvaluationMetrics
+ * @property int|null $NumberOfTrainMentions
  */
 class EntityRecognizerMetadataEntityTypesListItem extends Shape
 {
     /**
      * @param array{
-     *     Type?: string,
-     *     EvaluationMetrics?: EntityTypesEvaluationMetrics,
-     *     NumberOfTrainMentions?: int
+     *     Type?: string|null,
+     *     EvaluationMetrics?: EntityTypesEvaluationMetrics|null,
+     *     NumberOfTrainMentions?: int|null
      * } $args
      */
     public function __construct(array $args = [])

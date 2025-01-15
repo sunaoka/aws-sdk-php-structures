@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateInstancesFromSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $originalDiskPath
- * @property string $newDiskName
+ * @property string|null $originalDiskPath
+ * @property string|null $newDiskName
  */
 class DiskMap extends Shape
 {
     /**
      * @param array{
-     *     originalDiskPath?: string,
-     *     newDiskName?: string
+     *     originalDiskPath?: string|null,
+     *     newDiskName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

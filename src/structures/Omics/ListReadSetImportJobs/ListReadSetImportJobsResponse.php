@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Omics\ListReadSetImportJobs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\ImportReadSetJobItem> $importJobs
+ * @property string|null $nextToken
+ * @property list<Shapes\ImportReadSetJobItem>|null $importJobs
  */
 class ListReadSetImportJobsResponse extends Response
 {

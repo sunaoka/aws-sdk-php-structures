@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'STREAMING' $EndpointType
- * @property string $VpceId
+ * @property string|null $VpceId
  */
 class AccessEndpoint extends Shape
 {
     /**
      * @param array{
      *     EndpointType: 'STREAMING',
-     *     VpceId?: string
+     *     VpceId?: string|null
      * } $args
      */
     public function __construct(array $args)

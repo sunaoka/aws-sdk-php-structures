@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $projectName
  * @property string $id
  * @property string $name
- * @property string $sourceRepositoryName
- * @property string $sourceBranchName
+ * @property string|null $sourceRepositoryName
+ * @property string|null $sourceBranchName
  * @property Shapes\WorkflowDefinition $definition
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime

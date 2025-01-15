@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iam\ResetServiceSpecificCredential;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ServiceSpecificCredential $ServiceSpecificCredential
+ * @property Shapes\ServiceSpecificCredential|null $ServiceSpecificCredential
  */
 class ResetServiceSpecificCredentialResponse extends Response
 {

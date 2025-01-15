@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchGetAutomationRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuleArn
- * @property int $ErrorCode
- * @property string $ErrorMessage
+ * @property string|null $RuleArn
+ * @property int|null $ErrorCode
+ * @property string|null $ErrorMessage
  */
 class UnprocessedAutomationRule extends Shape
 {
     /**
      * @param array{
-     *     RuleArn?: string,
-     *     ErrorCode?: int,
-     *     ErrorMessage?: string
+     *     RuleArn?: string|null,
+     *     ErrorCode?: int|null,
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\AddApplicationReferenceDataS
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationARN
- * @property int<1, 999999999> $ApplicationVersionId
- * @property list<Shapes\ReferenceDataSourceDescription> $ReferenceDataSourceDescriptions
+ * @property string|null $ApplicationARN
+ * @property int<1, 999999999>|null $ApplicationVersionId
+ * @property list<Shapes\ReferenceDataSourceDescription>|null $ReferenceDataSourceDescriptions
  */
 class AddApplicationReferenceDataSourceResponse extends Response
 {

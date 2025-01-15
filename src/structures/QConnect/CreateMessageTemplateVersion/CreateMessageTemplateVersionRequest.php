@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $knowledgeBaseId
- * @property string $messageTemplateContentSha256
+ * @property string|null $messageTemplateContentSha256
  * @property string $messageTemplateId
  */
 class CreateMessageTemplateVersionRequest extends Request
@@ -14,7 +14,7 @@ class CreateMessageTemplateVersionRequest extends Request
     /**
      * @param array{
      *     knowledgeBaseId: string,
-     *     messageTemplateContentSha256?: string,
+     *     messageTemplateContentSha256?: string|null,
      *     messageTemplateId: string
      * } $args
      */

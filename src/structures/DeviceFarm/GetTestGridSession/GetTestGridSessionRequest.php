@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\GetTestGridSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $projectArn
- * @property string $sessionId
- * @property string $sessionArn
+ * @property string|null $projectArn
+ * @property string|null $sessionId
+ * @property string|null $sessionArn
  */
 class GetTestGridSessionRequest extends Request
 {
     /**
      * @param array{
-     *     projectArn?: string,
-     *     sessionId?: string,
-     *     sessionArn?: string
+     *     projectArn?: string|null,
+     *     sessionId?: string|null,
+     *     sessionArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

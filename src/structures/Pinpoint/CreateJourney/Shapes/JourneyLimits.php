@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DailyCap
- * @property int $EndpointReentryCap
- * @property int $MessagesPerSecond
- * @property string $EndpointReentryInterval
- * @property JourneyTimeframeCap $TimeframeCap
- * @property int $TotalCap
+ * @property int|null $DailyCap
+ * @property int|null $EndpointReentryCap
+ * @property int|null $MessagesPerSecond
+ * @property string|null $EndpointReentryInterval
+ * @property JourneyTimeframeCap|null $TimeframeCap
+ * @property int|null $TotalCap
  */
 class JourneyLimits extends Shape
 {
     /**
      * @param array{
-     *     DailyCap?: int,
-     *     EndpointReentryCap?: int,
-     *     MessagesPerSecond?: int,
-     *     EndpointReentryInterval?: string,
-     *     TimeframeCap?: JourneyTimeframeCap,
-     *     TotalCap?: int
+     *     DailyCap?: int|null,
+     *     EndpointReentryCap?: int|null,
+     *     MessagesPerSecond?: int|null,
+     *     EndpointReentryInterval?: string|null,
+     *     TimeframeCap?: JourneyTimeframeCap|null,
+     *     TotalCap?: int|null
      * } $args
      */
     public function __construct(array $args = [])

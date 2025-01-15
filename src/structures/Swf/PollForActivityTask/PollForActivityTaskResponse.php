@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int $startedEventId
  * @property Shapes\WorkflowExecution $workflowExecution
  * @property Shapes\ActivityType $activityType
- * @property string $input
+ * @property string|null $input
  */
 class PollForActivityTaskResponse extends Response
 {

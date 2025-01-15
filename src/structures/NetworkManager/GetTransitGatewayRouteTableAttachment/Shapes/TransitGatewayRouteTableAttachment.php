@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetTransitGatewayRouteTableAttac
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attachment $Attachment
- * @property string $PeeringId
- * @property string $TransitGatewayRouteTableArn
+ * @property Attachment|null $Attachment
+ * @property string|null $PeeringId
+ * @property string|null $TransitGatewayRouteTableArn
  */
 class TransitGatewayRouteTableAttachment extends Shape
 {
     /**
      * @param array{
-     *     Attachment?: Attachment,
-     *     PeeringId?: string,
-     *     TransitGatewayRouteTableArn?: string
+     *     Attachment?: Attachment|null,
+     *     PeeringId?: string|null,
+     *     TransitGatewayRouteTableArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

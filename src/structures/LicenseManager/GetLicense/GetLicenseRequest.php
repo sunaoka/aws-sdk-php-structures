@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LicenseArn
- * @property string $Version
+ * @property string|null $Version
  */
 class GetLicenseRequest extends Request
 {
     /**
      * @param array{
      *     LicenseArn: string,
-     *     Version?: string
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args)

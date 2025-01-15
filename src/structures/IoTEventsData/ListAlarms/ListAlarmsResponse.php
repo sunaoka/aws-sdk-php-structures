@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTEventsData\ListAlarms;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AlarmSummary> $alarmSummaries
- * @property string $nextToken
+ * @property list<Shapes\AlarmSummary>|null $alarmSummaries
+ * @property string|null $nextToken
  */
 class ListAlarmsResponse extends Response
 {

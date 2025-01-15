@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListCollect
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $pipelineConfigurationTimeStamp
- * @property 'AZURE_DEVOPS' $pipelineType
+ * @property string|null $pipelineConfigurationTimeStamp
+ * @property 'AZURE_DEVOPS'|null $pipelineType
  */
 class PipelineInfo extends Shape
 {
     /**
      * @param array{
-     *     pipelineConfigurationTimeStamp?: string,
-     *     pipelineType?: 'AZURE_DEVOPS'
+     *     pipelineConfigurationTimeStamp?: string|null,
+     *     pipelineType?: 'AZURE_DEVOPS'|null
      * } $args
      */
     public function __construct(array $args = [])

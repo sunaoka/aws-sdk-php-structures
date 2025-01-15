@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetSecurityConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISABLED'|'SSE-KMS' $DataQualityEncryptionMode
- * @property string $KmsKeyArn
+ * @property 'DISABLED'|'SSE-KMS'|null $DataQualityEncryptionMode
+ * @property string|null $KmsKeyArn
  */
 class DataQualityEncryption extends Shape
 {
     /**
      * @param array{
-     *     DataQualityEncryptionMode?: 'DISABLED'|'SSE-KMS',
-     *     KmsKeyArn?: string
+     *     DataQualityEncryptionMode?: 'DISABLED'|'SSE-KMS'|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

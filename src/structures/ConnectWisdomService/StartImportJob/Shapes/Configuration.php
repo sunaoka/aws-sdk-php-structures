@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\StartImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConnectConfiguration $connectConfiguration
+ * @property ConnectConfiguration|null $connectConfiguration
  */
 class Configuration extends Shape
 {
     /**
-     * @param array{connectConfiguration?: ConnectConfiguration} $args
+     * @param array{connectConfiguration?: ConnectConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

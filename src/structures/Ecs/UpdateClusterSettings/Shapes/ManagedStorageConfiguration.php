@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateClusterSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $kmsKeyId
- * @property string $fargateEphemeralStorageKmsKeyId
+ * @property string|null $kmsKeyId
+ * @property string|null $fargateEphemeralStorageKmsKeyId
  */
 class ManagedStorageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     kmsKeyId?: string,
-     *     fargateEphemeralStorageKmsKeyId?: string
+     *     kmsKeyId?: string|null,
+     *     fargateEphemeralStorageKmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\GrantItem> $Grants
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListApplicationGrantsResponse extends Response
 {

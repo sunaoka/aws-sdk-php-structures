@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\RoboMaker\StartSimulationJobBatch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $streamUI
+ * @property bool|null $streamUI
  * @property string $name
  * @property string $command
- * @property bool $streamOutputToCloudWatch
- * @property 'FAIL'|'RESTART' $exitBehavior
+ * @property bool|null $streamOutputToCloudWatch
+ * @property 'FAIL'|'RESTART'|null $exitBehavior
  */
 class Tool extends Shape
 {
     /**
      * @param array{
-     *     streamUI?: bool,
+     *     streamUI?: bool|null,
      *     name: string,
      *     command: string,
-     *     streamOutputToCloudWatch?: bool,
-     *     exitBehavior?: 'FAIL'|'RESTART'
+     *     streamOutputToCloudWatch?: bool|null,
+     *     exitBehavior?: 'FAIL'|'RESTART'|null
      * } $args
      */
     public function __construct(array $args)

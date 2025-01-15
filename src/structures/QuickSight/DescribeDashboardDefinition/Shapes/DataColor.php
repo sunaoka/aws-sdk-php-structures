@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Color
- * @property double $DataValue
+ * @property string|null $Color
+ * @property double|null $DataValue
  */
 class DataColor extends Shape
 {
     /**
      * @param array{
-     *     Color?: string,
-     *     DataValue?: double
+     *     Color?: string|null,
+     *     DataValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

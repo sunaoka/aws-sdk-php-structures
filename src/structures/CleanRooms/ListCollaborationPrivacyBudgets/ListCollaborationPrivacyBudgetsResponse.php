@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\CollaborationPrivacyBudgetSummary> $collaborationPrivacyBudgetSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListCollaborationPrivacyBudgetsResponse extends Response
 {

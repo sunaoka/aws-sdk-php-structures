@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\UpdateKnowledgeBaseTemplat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\KnowledgeBaseData $knowledgeBase
+ * @property Shapes\KnowledgeBaseData|null $knowledgeBase
  */
 class UpdateKnowledgeBaseTemplateUriResponse extends Response
 {

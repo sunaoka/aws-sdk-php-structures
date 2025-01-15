@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\PostTimeSeriesDataPoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $entityIdentifier
  * @property 'ASSET'|'LISTING' $entityType
@@ -15,7 +15,7 @@ class PostTimeSeriesDataPointsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     entityIdentifier: string,
      *     entityType: 'ASSET'|'LISTING',

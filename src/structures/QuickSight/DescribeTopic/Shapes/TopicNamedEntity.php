@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EntityName
- * @property string $EntityDescription
- * @property list<string> $EntitySynonyms
- * @property SemanticEntityType $SemanticEntityType
- * @property list<NamedEntityDefinition> $Definition
+ * @property string|null $EntityDescription
+ * @property list<string>|null $EntitySynonyms
+ * @property SemanticEntityType|null $SemanticEntityType
+ * @property list<NamedEntityDefinition>|null $Definition
  */
 class TopicNamedEntity extends Shape
 {
     /**
      * @param array{
      *     EntityName: string,
-     *     EntityDescription?: string,
-     *     EntitySynonyms?: list<string>,
-     *     SemanticEntityType?: SemanticEntityType,
-     *     Definition?: list<NamedEntityDefinition>
+     *     EntityDescription?: string|null,
+     *     EntitySynonyms?: list<string>|null,
+     *     SemanticEntityType?: SemanticEntityType|null,
+     *     Definition?: list<NamedEntityDefinition>|null
      * } $args
      */
     public function __construct(array $args)

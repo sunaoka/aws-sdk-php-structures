@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateBotAlias\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<TextLogSetting> $textLogSettings
- * @property list<AudioLogSetting> $audioLogSettings
+ * @property list<TextLogSetting>|null $textLogSettings
+ * @property list<AudioLogSetting>|null $audioLogSettings
  */
 class ConversationLogSettings extends Shape
 {
     /**
      * @param array{
-     *     textLogSettings?: list<TextLogSetting>,
-     *     audioLogSettings?: list<AudioLogSetting>
+     *     textLogSettings?: list<TextLogSetting>|null,
+     *     audioLogSettings?: list<AudioLogSetting>|null
      * } $args
      */
     public function __construct(array $args = [])

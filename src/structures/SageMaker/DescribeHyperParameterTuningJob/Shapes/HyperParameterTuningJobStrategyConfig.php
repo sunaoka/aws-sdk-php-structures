@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HyperbandStrategyConfig $HyperbandStrategyConfig
+ * @property HyperbandStrategyConfig|null $HyperbandStrategyConfig
  */
 class HyperParameterTuningJobStrategyConfig extends Shape
 {
     /**
-     * @param array{HyperbandStrategyConfig?: HyperbandStrategyConfig} $args
+     * @param array{HyperbandStrategyConfig?: HyperbandStrategyConfig|null} $args
      */
     public function __construct(array $args = [])
     {

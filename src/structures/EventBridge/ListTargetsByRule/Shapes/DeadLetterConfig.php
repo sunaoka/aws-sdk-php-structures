@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EventBridge\ListTargetsByRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  */
 class DeadLetterConfig extends Shape
 {
     /**
-     * @param array{Arn?: string} $args
+     * @param array{Arn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

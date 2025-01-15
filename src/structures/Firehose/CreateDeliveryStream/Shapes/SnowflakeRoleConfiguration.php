@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Firehose\CreateDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property string $SnowflakeRole
+ * @property bool|null $Enabled
+ * @property string|null $SnowflakeRole
  */
 class SnowflakeRoleConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     SnowflakeRole?: string
+     *     Enabled?: bool|null,
+     *     SnowflakeRole?: string|null
      * } $args
      */
     public function __construct(array $args = [])

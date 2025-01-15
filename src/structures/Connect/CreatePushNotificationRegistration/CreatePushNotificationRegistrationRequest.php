@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $PinpointAppArn
  * @property string $DeviceToken
  * @property 'GCM'|'APNS'|'APNS_SANDBOX' $DeviceType
@@ -17,7 +17,7 @@ class CreatePushNotificationRegistrationRequest extends Request
     /**
      * @param array{
      *     InstanceId: string,
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     PinpointAppArn: string,
      *     DeviceToken: string,
      *     DeviceType: 'GCM'|'APNS'|'APNS_SANDBOX',

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CodePipeline\GetJobDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ActionTypeId $actionTypeId
- * @property ActionConfiguration $actionConfiguration
- * @property PipelineContext $pipelineContext
- * @property list<Artifact> $inputArtifacts
- * @property list<Artifact> $outputArtifacts
- * @property AWSSessionCredentials $artifactCredentials
- * @property string $continuationToken
- * @property EncryptionKey $encryptionKey
+ * @property ActionTypeId|null $actionTypeId
+ * @property ActionConfiguration|null $actionConfiguration
+ * @property PipelineContext|null $pipelineContext
+ * @property list<Artifact>|null $inputArtifacts
+ * @property list<Artifact>|null $outputArtifacts
+ * @property AWSSessionCredentials|null $artifactCredentials
+ * @property string|null $continuationToken
+ * @property EncryptionKey|null $encryptionKey
  */
 class JobData extends Shape
 {
     /**
      * @param array{
-     *     actionTypeId?: ActionTypeId,
-     *     actionConfiguration?: ActionConfiguration,
-     *     pipelineContext?: PipelineContext,
-     *     inputArtifacts?: list<Artifact>,
-     *     outputArtifacts?: list<Artifact>,
-     *     artifactCredentials?: AWSSessionCredentials,
-     *     continuationToken?: string,
-     *     encryptionKey?: EncryptionKey
+     *     actionTypeId?: ActionTypeId|null,
+     *     actionConfiguration?: ActionConfiguration|null,
+     *     pipelineContext?: PipelineContext|null,
+     *     inputArtifacts?: list<Artifact>|null,
+     *     outputArtifacts?: list<Artifact>|null,
+     *     artifactCredentials?: AWSSessionCredentials|null,
+     *     continuationToken?: string|null,
+     *     encryptionKey?: EncryptionKey|null
      * } $args
      */
     public function __construct(array $args = [])

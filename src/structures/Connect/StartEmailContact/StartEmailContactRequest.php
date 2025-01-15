@@ -8,17 +8,17 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property Shapes\EmailAddressInfo $FromEmailAddress
  * @property string $DestinationEmailAddress
- * @property string $Description
- * @property array<string, Shapes\Reference> $References
- * @property string $Name
+ * @property string|null $Description
+ * @property array<string, Shapes\Reference>|null $References
+ * @property string|null $Name
  * @property Shapes\InboundEmailContent $EmailMessage
- * @property Shapes\InboundAdditionalRecipients $AdditionalRecipients
- * @property list<Shapes\EmailAttachment> $Attachments
- * @property string $ContactFlowId
- * @property string $RelatedContactId
- * @property array<string, string> $Attributes
- * @property array<string, Shapes\SegmentAttributeValue> $SegmentAttributes
- * @property string $ClientToken
+ * @property Shapes\InboundAdditionalRecipients|null $AdditionalRecipients
+ * @property list<Shapes\EmailAttachment>|null $Attachments
+ * @property string|null $ContactFlowId
+ * @property string|null $RelatedContactId
+ * @property array<string, string>|null $Attributes
+ * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
+ * @property string|null $ClientToken
  */
 class StartEmailContactRequest extends Request
 {
@@ -27,17 +27,17 @@ class StartEmailContactRequest extends Request
      *     InstanceId: string,
      *     FromEmailAddress: Shapes\EmailAddressInfo,
      *     DestinationEmailAddress: string,
-     *     Description?: string,
-     *     References?: array<string, Shapes\Reference>,
-     *     Name?: string,
+     *     Description?: string|null,
+     *     References?: array<string, Shapes\Reference>|null,
+     *     Name?: string|null,
      *     EmailMessage: Shapes\InboundEmailContent,
-     *     AdditionalRecipients?: Shapes\InboundAdditionalRecipients,
-     *     Attachments?: list<Shapes\EmailAttachment>,
-     *     ContactFlowId?: string,
-     *     RelatedContactId?: string,
-     *     Attributes?: array<string, string>,
-     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>,
-     *     ClientToken?: string
+     *     AdditionalRecipients?: Shapes\InboundAdditionalRecipients|null,
+     *     Attachments?: list<Shapes\EmailAttachment>|null,
+     *     ContactFlowId?: string|null,
+     *     RelatedContactId?: string|null,
+     *     Attributes?: array<string, string>|null,
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

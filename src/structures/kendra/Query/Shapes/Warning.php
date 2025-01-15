@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property 'QUERY_LANGUAGE_INVALID_SYNTAX' $Code
+ * @property string|null $Message
+ * @property 'QUERY_LANGUAGE_INVALID_SYNTAX'|null $Code
  */
 class Warning extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     Code?: 'QUERY_LANGUAGE_INVALID_SYNTAX'
+     *     Message?: string|null,
+     *     Code?: 'QUERY_LANGUAGE_INVALID_SYNTAX'|null
      * } $args
      */
     public function __construct(array $args = [])

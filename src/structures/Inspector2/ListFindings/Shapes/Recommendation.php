@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Url
- * @property string $text
+ * @property string|null $Url
+ * @property string|null $text
  */
 class Recommendation extends Shape
 {
     /**
      * @param array{
-     *     Url?: string,
-     *     text?: string
+     *     Url?: string|null,
+     *     text?: string|null
      * } $args
      */
     public function __construct(array $args = [])

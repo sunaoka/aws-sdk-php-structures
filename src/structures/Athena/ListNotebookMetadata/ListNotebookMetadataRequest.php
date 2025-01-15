@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Athena\ListNotebookMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\FilterDefinition $Filters
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
+ * @property Shapes\FilterDefinition|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
  * @property string $WorkGroup
  */
 class ListNotebookMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: Shapes\FilterDefinition,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>,
+     *     Filters?: Shapes\FilterDefinition|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null,
      *     WorkGroup: string
      * } $args
      */

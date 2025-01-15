@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListAccountAssignmentsForPrincipal\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $PermissionSetArn
- * @property string $PrincipalId
- * @property 'USER'|'GROUP' $PrincipalType
+ * @property string|null $AccountId
+ * @property string|null $PermissionSetArn
+ * @property string|null $PrincipalId
+ * @property 'USER'|'GROUP'|null $PrincipalType
  */
 class AccountAssignmentForPrincipal extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     PermissionSetArn?: string,
-     *     PrincipalId?: string,
-     *     PrincipalType?: 'USER'|'GROUP'
+     *     AccountId?: string|null,
+     *     PermissionSetArn?: string|null,
+     *     PrincipalId?: string|null,
+     *     PrincipalType?: 'USER'|'GROUP'|null
      * } $args
      */
     public function __construct(array $args = [])

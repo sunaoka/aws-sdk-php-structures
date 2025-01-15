@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SesV2\ListImportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SuppressionListDestination $SuppressionListDestination
- * @property ContactListDestination $ContactListDestination
+ * @property SuppressionListDestination|null $SuppressionListDestination
+ * @property ContactListDestination|null $ContactListDestination
  */
 class ImportDestination extends Shape
 {
     /**
      * @param array{
-     *     SuppressionListDestination?: SuppressionListDestination,
-     *     ContactListDestination?: ContactListDestination
+     *     SuppressionListDestination?: SuppressionListDestination|null,
+     *     ContactListDestination?: ContactListDestination|null
      * } $args
      */
     public function __construct(array $args = [])

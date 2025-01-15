@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeConfigurationTemplates\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property bool $mandatory
+ * @property string|null $name
+ * @property bool|null $mandatory
  */
 class RecordField extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     mandatory?: bool
+     *     name?: string|null,
+     *     mandatory?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

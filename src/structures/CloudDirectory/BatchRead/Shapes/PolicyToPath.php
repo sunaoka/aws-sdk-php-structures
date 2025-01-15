@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchRead\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Path
- * @property list<PolicyAttachment> $Policies
+ * @property string|null $Path
+ * @property list<PolicyAttachment>|null $Policies
  */
 class PolicyToPath extends Shape
 {
     /**
      * @param array{
-     *     Path?: string,
-     *     Policies?: list<PolicyAttachment>
+     *     Path?: string|null,
+     *     Policies?: list<PolicyAttachment>|null
      * } $args
      */
     public function __construct(array $args = [])

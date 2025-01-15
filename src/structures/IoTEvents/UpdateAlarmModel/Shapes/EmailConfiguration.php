@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $from
- * @property EmailContent $content
+ * @property EmailContent|null $content
  * @property EmailRecipients $recipients
  */
 class EmailConfiguration extends Shape
@@ -14,7 +14,7 @@ class EmailConfiguration extends Shape
     /**
      * @param array{
      *     from: string,
-     *     content?: EmailContent,
+     *     content?: EmailContent|null,
      *     recipients: EmailRecipients
      * } $args
      */

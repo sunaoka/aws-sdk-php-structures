@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EMRServerless\ListApplications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 50> $maxResults
- * @property list<'CREATING'|'CREATED'|'STARTING'|'STARTED'|'STOPPING'|'STOPPED'|'TERMINATED'> $states
+ * @property string|null $nextToken
+ * @property int<1, 50>|null $maxResults
+ * @property list<'CREATING'|'CREATED'|'STARTING'|'STARTED'|'STOPPING'|'STOPPED'|'TERMINATED'>|null $states
  */
 class ListApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 50>,
-     *     states?: list<'CREATING'|'CREATED'|'STARTING'|'STARTED'|'STOPPING'|'STOPPED'|'TERMINATED'>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 50>|null,
+     *     states?: list<'CREATING'|'CREATED'|'STARTING'|'STARTED'|'STOPPING'|'STOPPED'|'TERMINATED'>|null
      * } $args
      */
     public function __construct(array $args = [])

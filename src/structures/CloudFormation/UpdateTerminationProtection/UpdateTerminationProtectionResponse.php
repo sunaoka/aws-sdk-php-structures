@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFormation\UpdateTerminationProtection;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $StackId
+ * @property string|null $StackId
  */
 class UpdateTerminationProtectionResponse extends Response
 {

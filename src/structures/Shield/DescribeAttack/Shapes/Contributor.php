@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Shield\DescribeAttack\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property int $Value
+ * @property string|null $Name
+ * @property int|null $Value
  */
 class Contributor extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Value?: int
+     *     Name?: string|null,
+     *     Value?: int|null
      * } $args
      */
     public function __construct(array $args = [])

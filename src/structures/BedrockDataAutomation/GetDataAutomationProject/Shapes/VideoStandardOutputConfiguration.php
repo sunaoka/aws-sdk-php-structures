@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\GetDataAutomationProject\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VideoStandardExtraction $extraction
- * @property VideoStandardGenerativeField $generativeField
+ * @property VideoStandardExtraction|null $extraction
+ * @property VideoStandardGenerativeField|null $generativeField
  */
 class VideoStandardOutputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     extraction?: VideoStandardExtraction,
-     *     generativeField?: VideoStandardGenerativeField
+     *     extraction?: VideoStandardExtraction|null,
+     *     generativeField?: VideoStandardGenerativeField|null
      * } $args
      */
     public function __construct(array $args = [])

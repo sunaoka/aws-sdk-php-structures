@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\CancelElasticsearchService
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ServiceSoftwareOptions $ServiceSoftwareOptions
+ * @property Shapes\ServiceSoftwareOptions|null $ServiceSoftwareOptions
  */
 class CancelElasticsearchServiceSoftwareUpdateResponse extends Response
 {

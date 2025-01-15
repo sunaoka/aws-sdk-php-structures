@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeCommit\BatchDescribeMergeConflicts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isConflict
- * @property MergeHunkDetail $source
- * @property MergeHunkDetail $destination
- * @property MergeHunkDetail $base
+ * @property bool|null $isConflict
+ * @property MergeHunkDetail|null $source
+ * @property MergeHunkDetail|null $destination
+ * @property MergeHunkDetail|null $base
  */
 class MergeHunk extends Shape
 {
     /**
      * @param array{
-     *     isConflict?: bool,
-     *     source?: MergeHunkDetail,
-     *     destination?: MergeHunkDetail,
-     *     base?: MergeHunkDetail
+     *     isConflict?: bool|null,
+     *     source?: MergeHunkDetail|null,
+     *     destination?: MergeHunkDetail|null,
+     *     base?: MergeHunkDetail|null
      * } $args
      */
     public function __construct(array $args = [])

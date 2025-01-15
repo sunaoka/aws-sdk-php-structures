@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\RegisterSubscr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SubscriptionProviderArn
- * @property 'RedHat' $SubscriptionProviderSource
- * @property 'ACTIVE'|'INVALID'|'PENDING' $SubscriptionProviderStatus
+ * @property string|null $SubscriptionProviderArn
+ * @property 'RedHat'|null $SubscriptionProviderSource
+ * @property 'ACTIVE'|'INVALID'|'PENDING'|null $SubscriptionProviderStatus
  */
 class RegisterSubscriptionProviderResponse extends Response
 {

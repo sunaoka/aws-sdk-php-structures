@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SuggestedQueryText
- * @property list<Correction> $Corrections
+ * @property string|null $SuggestedQueryText
+ * @property list<Correction>|null $Corrections
  */
 class SpellCorrectedQuery extends Shape
 {
     /**
      * @param array{
-     *     SuggestedQueryText?: string,
-     *     Corrections?: list<Correction>
+     *     SuggestedQueryText?: string|null,
+     *     Corrections?: list<Correction>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Credential $credential
  * @property Shapes\Tenant $tenant
  * @property 'oauth2'|'apiKey' $authType
- * @property string $clientToken
- * @property list<Shapes\Tag> $tags
+ * @property string|null $clientToken
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateAppAuthorizationRequest extends Request
 {
@@ -22,8 +22,8 @@ class CreateAppAuthorizationRequest extends Request
      *     credential: Shapes\Credential,
      *     tenant: Shapes\Tenant,
      *     authType: 'oauth2'|'apiKey',
-     *     clientToken?: string,
-     *     tags?: list<Shapes\Tag>
+     *     clientToken?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

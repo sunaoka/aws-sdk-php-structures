@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OSIS\UpdatePipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceName
- * @property string $Endpoint
+ * @property string|null $ServiceName
+ * @property string|null $Endpoint
  */
 class PipelineDestination extends Shape
 {
     /**
      * @param array{
-     *     ServiceName?: string,
-     *     Endpoint?: string
+     *     ServiceName?: string|null,
+     *     Endpoint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

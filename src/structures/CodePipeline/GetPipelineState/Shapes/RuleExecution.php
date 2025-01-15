@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CodePipeline\GetPipelineState\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ruleExecutionId
- * @property 'InProgress'|'Abandoned'|'Succeeded'|'Failed' $status
- * @property string $summary
- * @property \Aws\Api\DateTimeResult $lastStatusChange
- * @property string $token
- * @property string $lastUpdatedBy
- * @property string $externalExecutionId
- * @property string $externalExecutionUrl
- * @property ErrorDetails $errorDetails
+ * @property string|null $ruleExecutionId
+ * @property 'InProgress'|'Abandoned'|'Succeeded'|'Failed'|null $status
+ * @property string|null $summary
+ * @property \Aws\Api\DateTimeResult|null $lastStatusChange
+ * @property string|null $token
+ * @property string|null $lastUpdatedBy
+ * @property string|null $externalExecutionId
+ * @property string|null $externalExecutionUrl
+ * @property ErrorDetails|null $errorDetails
  */
 class RuleExecution extends Shape
 {
     /**
      * @param array{
-     *     ruleExecutionId?: string,
-     *     status?: 'InProgress'|'Abandoned'|'Succeeded'|'Failed',
-     *     summary?: string,
-     *     lastStatusChange?: \Aws\Api\DateTimeResult,
-     *     token?: string,
-     *     lastUpdatedBy?: string,
-     *     externalExecutionId?: string,
-     *     externalExecutionUrl?: string,
-     *     errorDetails?: ErrorDetails
+     *     ruleExecutionId?: string|null,
+     *     status?: 'InProgress'|'Abandoned'|'Succeeded'|'Failed'|null,
+     *     summary?: string|null,
+     *     lastStatusChange?: \Aws\Api\DateTimeResult|null,
+     *     token?: string|null,
+     *     lastUpdatedBy?: string|null,
+     *     externalExecutionId?: string|null,
+     *     externalExecutionUrl?: string|null,
+     *     errorDetails?: ErrorDetails|null
      * } $args
      */
     public function __construct(array $args = [])

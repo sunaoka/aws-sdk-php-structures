@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $Name
- * @property string $Description
- * @property Shapes\OutboundCallerConfig $OutboundCallerConfig
- * @property Shapes\OutboundEmailConfig $OutboundEmailConfig
+ * @property string|null $Description
+ * @property Shapes\OutboundCallerConfig|null $OutboundCallerConfig
+ * @property Shapes\OutboundEmailConfig|null $OutboundEmailConfig
  * @property string $HoursOfOperationId
- * @property int<0, max> $MaxContacts
- * @property list<string> $QuickConnectIds
- * @property array<string, string> $Tags
+ * @property int<0, max>|null $MaxContacts
+ * @property list<string>|null $QuickConnectIds
+ * @property array<string, string>|null $Tags
  */
 class CreateQueueRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateQueueRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     Name: string,
-     *     Description?: string,
-     *     OutboundCallerConfig?: Shapes\OutboundCallerConfig,
-     *     OutboundEmailConfig?: Shapes\OutboundEmailConfig,
+     *     Description?: string|null,
+     *     OutboundCallerConfig?: Shapes\OutboundCallerConfig|null,
+     *     OutboundEmailConfig?: Shapes\OutboundEmailConfig|null,
      *     HoursOfOperationId: string,
-     *     MaxContacts?: int<0, max>,
-     *     QuickConnectIds?: list<string>,
-     *     Tags?: array<string, string>
+     *     MaxContacts?: int<0, max>|null,
+     *     QuickConnectIds?: list<string>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

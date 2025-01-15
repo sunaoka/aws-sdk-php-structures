@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\UpdateSnapshotSchedule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $VolumeARN
+ * @property string|null $VolumeARN
  */
 class UpdateSnapshotScheduleResponse extends Response
 {

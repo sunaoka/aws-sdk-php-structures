@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CustomKeyStoreId
- * @property string $NewCustomKeyStoreName
- * @property string $KeyStorePassword
- * @property string $CloudHsmClusterId
- * @property string $XksProxyUriEndpoint
- * @property string $XksProxyUriPath
- * @property string $XksProxyVpcEndpointServiceName
- * @property Shapes\XksProxyAuthenticationCredentialType $XksProxyAuthenticationCredential
- * @property 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE' $XksProxyConnectivity
+ * @property string|null $NewCustomKeyStoreName
+ * @property string|null $KeyStorePassword
+ * @property string|null $CloudHsmClusterId
+ * @property string|null $XksProxyUriEndpoint
+ * @property string|null $XksProxyUriPath
+ * @property string|null $XksProxyVpcEndpointServiceName
+ * @property Shapes\XksProxyAuthenticationCredentialType|null $XksProxyAuthenticationCredential
+ * @property 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE'|null $XksProxyConnectivity
  */
 class UpdateCustomKeyStoreRequest extends Request
 {
     /**
      * @param array{
      *     CustomKeyStoreId: string,
-     *     NewCustomKeyStoreName?: string,
-     *     KeyStorePassword?: string,
-     *     CloudHsmClusterId?: string,
-     *     XksProxyUriEndpoint?: string,
-     *     XksProxyUriPath?: string,
-     *     XksProxyVpcEndpointServiceName?: string,
-     *     XksProxyAuthenticationCredential?: Shapes\XksProxyAuthenticationCredentialType,
-     *     XksProxyConnectivity?: 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE'
+     *     NewCustomKeyStoreName?: string|null,
+     *     KeyStorePassword?: string|null,
+     *     CloudHsmClusterId?: string|null,
+     *     XksProxyUriEndpoint?: string|null,
+     *     XksProxyUriPath?: string|null,
+     *     XksProxyVpcEndpointServiceName?: string|null,
+     *     XksProxyAuthenticationCredential?: Shapes\XksProxyAuthenticationCredentialType|null,
+     *     XksProxyConnectivity?: 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE'|null
      * } $args
      */
     public function __construct(array $args)

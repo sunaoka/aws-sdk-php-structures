@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Glacier\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Format
- * @property string $StartDate
- * @property string $EndDate
- * @property string $Limit
- * @property string $Marker
+ * @property string|null $Format
+ * @property string|null $StartDate
+ * @property string|null $EndDate
+ * @property string|null $Limit
+ * @property string|null $Marker
  */
 class InventoryRetrievalJobDescription extends Shape
 {
     /**
      * @param array{
-     *     Format?: string,
-     *     StartDate?: string,
-     *     EndDate?: string,
-     *     Limit?: string,
-     *     Marker?: string
+     *     Format?: string|null,
+     *     StartDate?: string|null,
+     *     EndDate?: string|null,
+     *     Limit?: string|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

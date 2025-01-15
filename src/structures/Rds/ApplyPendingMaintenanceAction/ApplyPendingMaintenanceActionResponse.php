@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rds\ApplyPendingMaintenanceAction;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResourcePendingMaintenanceActions $ResourcePendingMaintenanceActions
+ * @property Shapes\ResourcePendingMaintenanceActions|null $ResourcePendingMaintenanceActions
  */
 class ApplyPendingMaintenanceActionResponse extends Response
 {

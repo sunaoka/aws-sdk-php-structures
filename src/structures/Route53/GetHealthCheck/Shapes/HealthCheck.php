@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property string $CallerReference
- * @property LinkedService $LinkedService
+ * @property LinkedService|null $LinkedService
  * @property HealthCheckConfig $HealthCheckConfig
  * @property int<1, max> $HealthCheckVersion
- * @property CloudWatchAlarmConfiguration $CloudWatchAlarmConfiguration
+ * @property CloudWatchAlarmConfiguration|null $CloudWatchAlarmConfiguration
  */
 class HealthCheck extends Shape
 {
@@ -18,10 +18,10 @@ class HealthCheck extends Shape
      * @param array{
      *     Id: string,
      *     CallerReference: string,
-     *     LinkedService?: LinkedService,
+     *     LinkedService?: LinkedService|null,
      *     HealthCheckConfig: HealthCheckConfig,
      *     HealthCheckVersion: int<1, max>,
-     *     CloudWatchAlarmConfiguration?: CloudWatchAlarmConfiguration
+     *     CloudWatchAlarmConfiguration?: CloudWatchAlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceIpAddress
+ * @property string|null $SourceIpAddress
  */
 class MulticastInputSettings extends Shape
 {
     /**
-     * @param array{SourceIpAddress?: string} $args
+     * @param array{SourceIpAddress?: string|null} $args
      */
     public function __construct(array $args = [])
     {

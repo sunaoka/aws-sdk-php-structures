@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\LakeFormation\RemoveLFTagsFromResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $Name
  */
 class LFTagExpressionResource extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     Name: string
      * } $args
      */

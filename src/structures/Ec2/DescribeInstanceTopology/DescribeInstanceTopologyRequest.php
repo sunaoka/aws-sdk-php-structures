@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceTopology;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property list<string> $InstanceIds
- * @property list<string> $GroupNames
- * @property list<Shapes\Filter> $Filters
+ * @property bool|null $DryRun
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property list<string>|null $InstanceIds
+ * @property list<string>|null $GroupNames
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeInstanceTopologyRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     InstanceIds?: list<string>,
-     *     GroupNames?: list<string>,
-     *     Filters?: list<Shapes\Filter>
+     *     DryRun?: bool|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     InstanceIds?: list<string>|null,
+     *     GroupNames?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

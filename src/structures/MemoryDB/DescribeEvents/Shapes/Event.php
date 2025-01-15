@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceName
- * @property 'node'|'parameter-group'|'subnet-group'|'cluster'|'user'|'acl' $SourceType
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $Date
+ * @property string|null $SourceName
+ * @property 'node'|'parameter-group'|'subnet-group'|'cluster'|'user'|'acl'|null $SourceType
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $Date
  */
 class Event extends Shape
 {
     /**
      * @param array{
-     *     SourceName?: string,
-     *     SourceType?: 'node'|'parameter-group'|'subnet-group'|'cluster'|'user'|'acl',
-     *     Message?: string,
-     *     Date?: \Aws\Api\DateTimeResult
+     *     SourceName?: string|null,
+     *     SourceType?: 'node'|'parameter-group'|'subnet-group'|'cluster'|'user'|'acl'|null,
+     *     Message?: string|null,
+     *     Date?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

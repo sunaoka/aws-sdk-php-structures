@@ -5,175 +5,175 @@ namespace Sunaoka\Aws\Structures\Rds\RestoreDBClusterFromSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AllocatedStorage
- * @property list<string> $AvailabilityZones
- * @property int $BackupRetentionPeriod
- * @property string $CharacterSetName
- * @property string $DatabaseName
- * @property string $DBClusterIdentifier
- * @property string $DBClusterParameterGroup
- * @property string $DBSubnetGroup
- * @property string $Status
- * @property \Aws\Api\DateTimeResult $AutomaticRestartTime
- * @property string $PercentProgress
- * @property \Aws\Api\DateTimeResult $EarliestRestorableTime
- * @property string $Endpoint
- * @property string $ReaderEndpoint
- * @property list<string> $CustomEndpoints
- * @property bool $MultiAZ
- * @property string $Engine
- * @property string $EngineVersion
- * @property \Aws\Api\DateTimeResult $LatestRestorableTime
- * @property int $Port
- * @property string $MasterUsername
- * @property list<DBClusterOptionGroupStatus> $DBClusterOptionGroupMemberships
- * @property string $PreferredBackupWindow
- * @property string $PreferredMaintenanceWindow
- * @property string $ReplicationSourceIdentifier
- * @property list<string> $ReadReplicaIdentifiers
- * @property list<DBClusterStatusInfo> $StatusInfos
- * @property list<DBClusterMember> $DBClusterMembers
- * @property list<VpcSecurityGroupMembership> $VpcSecurityGroups
- * @property string $HostedZoneId
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $DbClusterResourceId
- * @property string $DBClusterArn
- * @property list<DBClusterRole> $AssociatedRoles
- * @property bool $IAMDatabaseAuthenticationEnabled
- * @property string $CloneGroupId
- * @property \Aws\Api\DateTimeResult $ClusterCreateTime
- * @property \Aws\Api\DateTimeResult $EarliestBacktrackTime
- * @property int $BacktrackWindow
- * @property int $BacktrackConsumedChangeRecords
- * @property list<string> $EnabledCloudwatchLogsExports
- * @property int $Capacity
- * @property string $EngineMode
- * @property ScalingConfigurationInfo $ScalingConfigurationInfo
- * @property RdsCustomClusterConfiguration $RdsCustomClusterConfiguration
- * @property bool $DeletionProtection
- * @property bool $HttpEndpointEnabled
- * @property 'sync'|'async' $ActivityStreamMode
- * @property 'stopped'|'starting'|'started'|'stopping' $ActivityStreamStatus
- * @property string $ActivityStreamKmsKeyId
- * @property string $ActivityStreamKinesisStreamName
- * @property bool $CopyTagsToSnapshot
- * @property bool $CrossAccountClone
- * @property list<DomainMembership> $DomainMemberships
- * @property list<Tag> $TagList
- * @property 'enabled'|'disabled'|'enabling'|'disabling'|'unknown' $GlobalWriteForwardingStatus
- * @property bool $GlobalWriteForwardingRequested
- * @property ClusterPendingModifiedValues $PendingModifiedValues
- * @property string $DBClusterInstanceClass
- * @property string $StorageType
- * @property int $Iops
- * @property bool $PubliclyAccessible
- * @property bool $AutoMinorVersionUpgrade
- * @property int $MonitoringInterval
- * @property string $MonitoringRoleArn
- * @property 'standard'|'advanced' $DatabaseInsightsMode
- * @property bool $PerformanceInsightsEnabled
- * @property string $PerformanceInsightsKMSKeyId
- * @property int $PerformanceInsightsRetentionPeriod
- * @property ServerlessV2ScalingConfigurationInfo $ServerlessV2ScalingConfiguration
- * @property string $NetworkType
- * @property string $DBSystemId
- * @property MasterUserSecret $MasterUserSecret
- * @property \Aws\Api\DateTimeResult $IOOptimizedNextAllowedModificationTime
- * @property 'enabled'|'disabled'|'enabling'|'disabling'|'requested' $LocalWriteForwardingStatus
- * @property string $AwsBackupRecoveryPointArn
- * @property LimitlessDatabase $LimitlessDatabase
- * @property int $StorageThroughput
- * @property 'standard'|'limitless' $ClusterScalabilityType
- * @property CertificateDetails $CertificateDetails
- * @property string $EngineLifecycleSupport
+ * @property int|null $AllocatedStorage
+ * @property list<string>|null $AvailabilityZones
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $CharacterSetName
+ * @property string|null $DatabaseName
+ * @property string|null $DBClusterIdentifier
+ * @property string|null $DBClusterParameterGroup
+ * @property string|null $DBSubnetGroup
+ * @property string|null $Status
+ * @property \Aws\Api\DateTimeResult|null $AutomaticRestartTime
+ * @property string|null $PercentProgress
+ * @property \Aws\Api\DateTimeResult|null $EarliestRestorableTime
+ * @property string|null $Endpoint
+ * @property string|null $ReaderEndpoint
+ * @property list<string>|null $CustomEndpoints
+ * @property bool|null $MultiAZ
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property \Aws\Api\DateTimeResult|null $LatestRestorableTime
+ * @property int|null $Port
+ * @property string|null $MasterUsername
+ * @property list<DBClusterOptionGroupStatus>|null $DBClusterOptionGroupMemberships
+ * @property string|null $PreferredBackupWindow
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $ReplicationSourceIdentifier
+ * @property list<string>|null $ReadReplicaIdentifiers
+ * @property list<DBClusterStatusInfo>|null $StatusInfos
+ * @property list<DBClusterMember>|null $DBClusterMembers
+ * @property list<VpcSecurityGroupMembership>|null $VpcSecurityGroups
+ * @property string|null $HostedZoneId
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $DbClusterResourceId
+ * @property string|null $DBClusterArn
+ * @property list<DBClusterRole>|null $AssociatedRoles
+ * @property bool|null $IAMDatabaseAuthenticationEnabled
+ * @property string|null $CloneGroupId
+ * @property \Aws\Api\DateTimeResult|null $ClusterCreateTime
+ * @property \Aws\Api\DateTimeResult|null $EarliestBacktrackTime
+ * @property int|null $BacktrackWindow
+ * @property int|null $BacktrackConsumedChangeRecords
+ * @property list<string>|null $EnabledCloudwatchLogsExports
+ * @property int|null $Capacity
+ * @property string|null $EngineMode
+ * @property ScalingConfigurationInfo|null $ScalingConfigurationInfo
+ * @property RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property bool|null $DeletionProtection
+ * @property bool|null $HttpEndpointEnabled
+ * @property 'sync'|'async'|null $ActivityStreamMode
+ * @property 'stopped'|'starting'|'started'|'stopping'|null $ActivityStreamStatus
+ * @property string|null $ActivityStreamKmsKeyId
+ * @property string|null $ActivityStreamKinesisStreamName
+ * @property bool|null $CopyTagsToSnapshot
+ * @property bool|null $CrossAccountClone
+ * @property list<DomainMembership>|null $DomainMemberships
+ * @property list<Tag>|null $TagList
+ * @property 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null $GlobalWriteForwardingStatus
+ * @property bool|null $GlobalWriteForwardingRequested
+ * @property ClusterPendingModifiedValues|null $PendingModifiedValues
+ * @property string|null $DBClusterInstanceClass
+ * @property string|null $StorageType
+ * @property int|null $Iops
+ * @property bool|null $PubliclyAccessible
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property int|null $MonitoringInterval
+ * @property string|null $MonitoringRoleArn
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
+ * @property bool|null $PerformanceInsightsEnabled
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
+ * @property string|null $NetworkType
+ * @property string|null $DBSystemId
+ * @property MasterUserSecret|null $MasterUserSecret
+ * @property \Aws\Api\DateTimeResult|null $IOOptimizedNextAllowedModificationTime
+ * @property 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null $LocalWriteForwardingStatus
+ * @property string|null $AwsBackupRecoveryPointArn
+ * @property LimitlessDatabase|null $LimitlessDatabase
+ * @property int|null $StorageThroughput
+ * @property 'standard'|'limitless'|null $ClusterScalabilityType
+ * @property CertificateDetails|null $CertificateDetails
+ * @property string|null $EngineLifecycleSupport
  */
 class DBCluster extends Shape
 {
     /**
      * @param array{
-     *     AllocatedStorage?: int,
-     *     AvailabilityZones?: list<string>,
-     *     BackupRetentionPeriod?: int,
-     *     CharacterSetName?: string,
-     *     DatabaseName?: string,
-     *     DBClusterIdentifier?: string,
-     *     DBClusterParameterGroup?: string,
-     *     DBSubnetGroup?: string,
-     *     Status?: string,
-     *     AutomaticRestartTime?: \Aws\Api\DateTimeResult,
-     *     PercentProgress?: string,
-     *     EarliestRestorableTime?: \Aws\Api\DateTimeResult,
-     *     Endpoint?: string,
-     *     ReaderEndpoint?: string,
-     *     CustomEndpoints?: list<string>,
-     *     MultiAZ?: bool,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     LatestRestorableTime?: \Aws\Api\DateTimeResult,
-     *     Port?: int,
-     *     MasterUsername?: string,
-     *     DBClusterOptionGroupMemberships?: list<DBClusterOptionGroupStatus>,
-     *     PreferredBackupWindow?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     ReplicationSourceIdentifier?: string,
-     *     ReadReplicaIdentifiers?: list<string>,
-     *     StatusInfos?: list<DBClusterStatusInfo>,
-     *     DBClusterMembers?: list<DBClusterMember>,
-     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>,
-     *     HostedZoneId?: string,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     DbClusterResourceId?: string,
-     *     DBClusterArn?: string,
-     *     AssociatedRoles?: list<DBClusterRole>,
-     *     IAMDatabaseAuthenticationEnabled?: bool,
-     *     CloneGroupId?: string,
-     *     ClusterCreateTime?: \Aws\Api\DateTimeResult,
-     *     EarliestBacktrackTime?: \Aws\Api\DateTimeResult,
-     *     BacktrackWindow?: int,
-     *     BacktrackConsumedChangeRecords?: int,
-     *     EnabledCloudwatchLogsExports?: list<string>,
-     *     Capacity?: int,
-     *     EngineMode?: string,
-     *     ScalingConfigurationInfo?: ScalingConfigurationInfo,
-     *     RdsCustomClusterConfiguration?: RdsCustomClusterConfiguration,
-     *     DeletionProtection?: bool,
-     *     HttpEndpointEnabled?: bool,
-     *     ActivityStreamMode?: 'sync'|'async',
-     *     ActivityStreamStatus?: 'stopped'|'starting'|'started'|'stopping',
-     *     ActivityStreamKmsKeyId?: string,
-     *     ActivityStreamKinesisStreamName?: string,
-     *     CopyTagsToSnapshot?: bool,
-     *     CrossAccountClone?: bool,
-     *     DomainMemberships?: list<DomainMembership>,
-     *     TagList?: list<Tag>,
-     *     GlobalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'unknown',
-     *     GlobalWriteForwardingRequested?: bool,
-     *     PendingModifiedValues?: ClusterPendingModifiedValues,
-     *     DBClusterInstanceClass?: string,
-     *     StorageType?: string,
-     *     Iops?: int,
-     *     PubliclyAccessible?: bool,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     MonitoringInterval?: int,
-     *     MonitoringRoleArn?: string,
-     *     DatabaseInsightsMode?: 'standard'|'advanced',
-     *     PerformanceInsightsEnabled?: bool,
-     *     PerformanceInsightsKMSKeyId?: string,
-     *     PerformanceInsightsRetentionPeriod?: int,
-     *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo,
-     *     NetworkType?: string,
-     *     DBSystemId?: string,
-     *     MasterUserSecret?: MasterUserSecret,
-     *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult,
-     *     LocalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'requested',
-     *     AwsBackupRecoveryPointArn?: string,
-     *     LimitlessDatabase?: LimitlessDatabase,
-     *     StorageThroughput?: int,
-     *     ClusterScalabilityType?: 'standard'|'limitless',
-     *     CertificateDetails?: CertificateDetails,
-     *     EngineLifecycleSupport?: string
+     *     AllocatedStorage?: int|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     CharacterSetName?: string|null,
+     *     DatabaseName?: string|null,
+     *     DBClusterIdentifier?: string|null,
+     *     DBClusterParameterGroup?: string|null,
+     *     DBSubnetGroup?: string|null,
+     *     Status?: string|null,
+     *     AutomaticRestartTime?: \Aws\Api\DateTimeResult|null,
+     *     PercentProgress?: string|null,
+     *     EarliestRestorableTime?: \Aws\Api\DateTimeResult|null,
+     *     Endpoint?: string|null,
+     *     ReaderEndpoint?: string|null,
+     *     CustomEndpoints?: list<string>|null,
+     *     MultiAZ?: bool|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     LatestRestorableTime?: \Aws\Api\DateTimeResult|null,
+     *     Port?: int|null,
+     *     MasterUsername?: string|null,
+     *     DBClusterOptionGroupMemberships?: list<DBClusterOptionGroupStatus>|null,
+     *     PreferredBackupWindow?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     ReplicationSourceIdentifier?: string|null,
+     *     ReadReplicaIdentifiers?: list<string>|null,
+     *     StatusInfos?: list<DBClusterStatusInfo>|null,
+     *     DBClusterMembers?: list<DBClusterMember>|null,
+     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>|null,
+     *     HostedZoneId?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     DbClusterResourceId?: string|null,
+     *     DBClusterArn?: string|null,
+     *     AssociatedRoles?: list<DBClusterRole>|null,
+     *     IAMDatabaseAuthenticationEnabled?: bool|null,
+     *     CloneGroupId?: string|null,
+     *     ClusterCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     EarliestBacktrackTime?: \Aws\Api\DateTimeResult|null,
+     *     BacktrackWindow?: int|null,
+     *     BacktrackConsumedChangeRecords?: int|null,
+     *     EnabledCloudwatchLogsExports?: list<string>|null,
+     *     Capacity?: int|null,
+     *     EngineMode?: string|null,
+     *     ScalingConfigurationInfo?: ScalingConfigurationInfo|null,
+     *     RdsCustomClusterConfiguration?: RdsCustomClusterConfiguration|null,
+     *     DeletionProtection?: bool|null,
+     *     HttpEndpointEnabled?: bool|null,
+     *     ActivityStreamMode?: 'sync'|'async'|null,
+     *     ActivityStreamStatus?: 'stopped'|'starting'|'started'|'stopping'|null,
+     *     ActivityStreamKmsKeyId?: string|null,
+     *     ActivityStreamKinesisStreamName?: string|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     CrossAccountClone?: bool|null,
+     *     DomainMemberships?: list<DomainMembership>|null,
+     *     TagList?: list<Tag>|null,
+     *     GlobalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null,
+     *     GlobalWriteForwardingRequested?: bool|null,
+     *     PendingModifiedValues?: ClusterPendingModifiedValues|null,
+     *     DBClusterInstanceClass?: string|null,
+     *     StorageType?: string|null,
+     *     Iops?: int|null,
+     *     PubliclyAccessible?: bool|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     MonitoringInterval?: int|null,
+     *     MonitoringRoleArn?: string|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
+     *     PerformanceInsightsEnabled?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     PerformanceInsightsRetentionPeriod?: int|null,
+     *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
+     *     NetworkType?: string|null,
+     *     DBSystemId?: string|null,
+     *     MasterUserSecret?: MasterUserSecret|null,
+     *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult|null,
+     *     LocalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
+     *     LimitlessDatabase?: LimitlessDatabase|null,
+     *     StorageThroughput?: int|null,
+     *     ClusterScalabilityType?: 'standard'|'limitless'|null,
+     *     CertificateDetails?: CertificateDetails|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args = [])

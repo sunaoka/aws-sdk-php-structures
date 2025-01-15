@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyInstanceEventStartTime\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceEventId
- * @property 'instance-reboot'|'system-reboot'|'system-maintenance'|'instance-retirement'|'instance-stop' $Code
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $NotAfter
- * @property \Aws\Api\DateTimeResult $NotBefore
- * @property \Aws\Api\DateTimeResult $NotBeforeDeadline
+ * @property string|null $InstanceEventId
+ * @property 'instance-reboot'|'system-reboot'|'system-maintenance'|'instance-retirement'|'instance-stop'|null $Code
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $NotAfter
+ * @property \Aws\Api\DateTimeResult|null $NotBefore
+ * @property \Aws\Api\DateTimeResult|null $NotBeforeDeadline
  */
 class InstanceStatusEvent extends Shape
 {
     /**
      * @param array{
-     *     InstanceEventId?: string,
-     *     Code?: 'instance-reboot'|'system-reboot'|'system-maintenance'|'instance-retirement'|'instance-stop',
-     *     Description?: string,
-     *     NotAfter?: \Aws\Api\DateTimeResult,
-     *     NotBefore?: \Aws\Api\DateTimeResult,
-     *     NotBeforeDeadline?: \Aws\Api\DateTimeResult
+     *     InstanceEventId?: string|null,
+     *     Code?: 'instance-reboot'|'system-reboot'|'system-maintenance'|'instance-retirement'|'instance-stop'|null,
+     *     Description?: string|null,
+     *     NotAfter?: \Aws\Api\DateTimeResult|null,
+     *     NotBefore?: \Aws\Api\DateTimeResult|null,
+     *     NotBeforeDeadline?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

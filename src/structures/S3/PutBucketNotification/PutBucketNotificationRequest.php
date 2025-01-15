@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
+ * @property string|null $ContentMD5
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  * @property Shapes\NotificationConfigurationDeprecated $NotificationConfiguration
- * @property string $ExpectedBucketOwner
+ * @property string|null $ExpectedBucketOwner
  */
 class PutBucketNotificationRequest extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     ContentMD5?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
+     *     ContentMD5?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
      *     NotificationConfiguration: Shapes\NotificationConfigurationDeprecated,
-     *     ExpectedBucketOwner?: string
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

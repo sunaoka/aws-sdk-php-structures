@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\RevokeSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
+ * @property string|null $id
+ * @property string|null $name
  */
 class SubscribedProject extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string
+     *     id?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

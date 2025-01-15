@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Bedrock\CreateModelCustomizationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $usePromptResponse
+ * @property bool|null $usePromptResponse
  * @property InvocationLogSource $invocationLogSource
- * @property RequestMetadataFilters $requestMetadataFilters
+ * @property RequestMetadataFilters|null $requestMetadataFilters
  */
 class InvocationLogsConfig extends Shape
 {
     /**
      * @param array{
-     *     usePromptResponse?: bool,
+     *     usePromptResponse?: bool|null,
      *     invocationLogSource: InvocationLogSource,
-     *     requestMetadataFilters?: RequestMetadataFilters
+     *     requestMetadataFilters?: RequestMetadataFilters|null
      * } $args
      */
     public function __construct(array $args)

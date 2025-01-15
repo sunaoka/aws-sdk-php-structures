@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\SearchTables\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Identifier
- * @property string $DatabaseIdentifier
- * @property string $ConnectionName
+ * @property string|null $Identifier
+ * @property string|null $DatabaseIdentifier
+ * @property string|null $ConnectionName
  */
 class FederatedTable extends Shape
 {
     /**
      * @param array{
-     *     Identifier?: string,
-     *     DatabaseIdentifier?: string,
-     *     ConnectionName?: string
+     *     Identifier?: string|null,
+     *     DatabaseIdentifier?: string|null,
+     *     ConnectionName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

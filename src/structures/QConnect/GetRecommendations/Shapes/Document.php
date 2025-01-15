@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ContentReference $contentReference
- * @property DocumentText $excerpt
- * @property DocumentText $title
+ * @property DocumentText|null $excerpt
+ * @property DocumentText|null $title
  */
 class Document extends Shape
 {
     /**
      * @param array{
      *     contentReference: ContentReference,
-     *     excerpt?: DocumentText,
-     *     title?: DocumentText
+     *     excerpt?: DocumentText|null,
+     *     title?: DocumentText|null
      * } $args
      */
     public function __construct(array $args)

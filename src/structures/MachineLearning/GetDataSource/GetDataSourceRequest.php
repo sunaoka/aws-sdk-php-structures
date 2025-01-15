@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataSourceId
- * @property bool $Verbose
+ * @property bool|null $Verbose
  */
 class GetDataSourceRequest extends Request
 {
     /**
      * @param array{
      *     DataSourceId: string,
-     *     Verbose?: bool
+     *     Verbose?: bool|null
      * } $args
      */
     public function __construct(array $args)

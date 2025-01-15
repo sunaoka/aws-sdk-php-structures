@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\DataLakeConfiguration> $configurations
  * @property string $metaStoreManagerRoleArn
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDataLakeRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateDataLakeRequest extends Request
      * @param array{
      *     configurations: list<Shapes\DataLakeConfiguration>,
      *     metaStoreManagerRoleArn: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

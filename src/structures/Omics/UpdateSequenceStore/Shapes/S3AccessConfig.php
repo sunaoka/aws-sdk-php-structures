@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Omics\UpdateSequenceStore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accessLogLocation
+ * @property string|null $accessLogLocation
  */
 class S3AccessConfig extends Shape
 {
     /**
-     * @param array{accessLogLocation?: string} $args
+     * @param array{accessLogLocation?: string|null} $args
      */
     public function __construct(array $args = [])
     {

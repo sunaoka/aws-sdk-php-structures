@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FlowConnectionConfiguration $configuration
+ * @property FlowConnectionConfiguration|null $configuration
  * @property string $name
  * @property string $source
  * @property string $target
@@ -15,7 +15,7 @@ class FlowConnection extends Shape
 {
     /**
      * @param array{
-     *     configuration?: FlowConnectionConfiguration,
+     *     configuration?: FlowConnectionConfiguration|null,
      *     name: string,
      *     source: string,
      *     target: string,

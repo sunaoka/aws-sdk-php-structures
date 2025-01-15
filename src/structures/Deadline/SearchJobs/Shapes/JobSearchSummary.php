@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Deadline\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jobId
- * @property string $queueId
- * @property string $name
- * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'UPLOAD_IN_PROGRESS'|'UPLOAD_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED'|'ARCHIVED' $lifecycleStatus
- * @property string $lifecycleStatusMessage
- * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE' $taskRunStatus
- * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetTaskRunStatus
- * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int> $taskRunStatusCounts
- * @property int<0, 100> $priority
- * @property int<0, 2147483647> $maxFailedTasksCount
- * @property int<0, 2147483647> $maxRetriesPerTask
- * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $endedAt
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property array<string, JobParameter> $jobParameters
- * @property string $sourceJobId
+ * @property string|null $jobId
+ * @property string|null $queueId
+ * @property string|null $name
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'UPLOAD_IN_PROGRESS'|'UPLOAD_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED'|'ARCHIVED'|null $lifecycleStatus
+ * @property string|null $lifecycleStatusMessage
+ * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null $taskRunStatus
+ * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetTaskRunStatus
+ * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null $taskRunStatusCounts
+ * @property int<0, 100>|null $priority
+ * @property int<0, 2147483647>|null $maxFailedTasksCount
+ * @property int<0, 2147483647>|null $maxRetriesPerTask
+ * @property string|null $createdBy
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property array<string, JobParameter>|null $jobParameters
+ * @property string|null $sourceJobId
  */
 class JobSearchSummary extends Shape
 {
     /**
      * @param array{
-     *     jobId?: string,
-     *     queueId?: string,
-     *     name?: string,
-     *     lifecycleStatus?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'UPLOAD_IN_PROGRESS'|'UPLOAD_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED'|'ARCHIVED',
-     *     lifecycleStatusMessage?: string,
-     *     taskRunStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE',
-     *     targetTaskRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING',
-     *     taskRunStatusCounts?: array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>,
-     *     priority?: int<0, 100>,
-     *     maxFailedTasksCount?: int<0, 2147483647>,
-     *     maxRetriesPerTask?: int<0, 2147483647>,
-     *     createdBy?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     endedAt?: \Aws\Api\DateTimeResult,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     jobParameters?: array<string, JobParameter>,
-     *     sourceJobId?: string
+     *     jobId?: string|null,
+     *     queueId?: string|null,
+     *     name?: string|null,
+     *     lifecycleStatus?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'UPLOAD_IN_PROGRESS'|'UPLOAD_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED'|'ARCHIVED'|null,
+     *     lifecycleStatusMessage?: string|null,
+     *     taskRunStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null,
+     *     targetTaskRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null,
+     *     taskRunStatusCounts?: array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null,
+     *     priority?: int<0, 100>|null,
+     *     maxFailedTasksCount?: int<0, 2147483647>|null,
+     *     maxRetriesPerTask?: int<0, 2147483647>|null,
+     *     createdBy?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     jobParameters?: array<string, JobParameter>|null,
+     *     sourceJobId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

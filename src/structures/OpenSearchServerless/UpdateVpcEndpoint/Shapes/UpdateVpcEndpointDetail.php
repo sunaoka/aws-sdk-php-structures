@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateVpcEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property int $lastModifiedDate
- * @property string $name
- * @property list<string> $securityGroupIds
- * @property 'PENDING'|'DELETING'|'ACTIVE'|'FAILED' $status
- * @property list<string> $subnetIds
+ * @property string|null $id
+ * @property int|null $lastModifiedDate
+ * @property string|null $name
+ * @property list<string>|null $securityGroupIds
+ * @property 'PENDING'|'DELETING'|'ACTIVE'|'FAILED'|null $status
+ * @property list<string>|null $subnetIds
  */
 class UpdateVpcEndpointDetail extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     lastModifiedDate?: int,
-     *     name?: string,
-     *     securityGroupIds?: list<string>,
-     *     status?: 'PENDING'|'DELETING'|'ACTIVE'|'FAILED',
-     *     subnetIds?: list<string>
+     *     id?: string|null,
+     *     lastModifiedDate?: int|null,
+     *     name?: string|null,
+     *     securityGroupIds?: list<string>|null,
+     *     status?: 'PENDING'|'DELETING'|'ACTIVE'|'FAILED'|null,
+     *     subnetIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

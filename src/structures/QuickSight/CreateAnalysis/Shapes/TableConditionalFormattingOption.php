@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TableCellConditionalFormatting $Cell
- * @property TableRowConditionalFormatting $Row
+ * @property TableCellConditionalFormatting|null $Cell
+ * @property TableRowConditionalFormatting|null $Row
  */
 class TableConditionalFormattingOption extends Shape
 {
     /**
      * @param array{
-     *     Cell?: TableCellConditionalFormatting,
-     *     Row?: TableRowConditionalFormatting
+     *     Cell?: TableCellConditionalFormatting|null,
+     *     Row?: TableRowConditionalFormatting|null
      * } $args
      */
     public function __construct(array $args = [])

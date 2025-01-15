@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GuardDuty\UpdateOrganizationConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OrganizationS3LogsConfiguration $S3Logs
- * @property OrganizationKubernetesConfiguration $Kubernetes
- * @property OrganizationMalwareProtectionConfiguration $MalwareProtection
+ * @property OrganizationS3LogsConfiguration|null $S3Logs
+ * @property OrganizationKubernetesConfiguration|null $Kubernetes
+ * @property OrganizationMalwareProtectionConfiguration|null $MalwareProtection
  */
 class OrganizationDataSourceConfigurations extends Shape
 {
     /**
      * @param array{
-     *     S3Logs?: OrganizationS3LogsConfiguration,
-     *     Kubernetes?: OrganizationKubernetesConfiguration,
-     *     MalwareProtection?: OrganizationMalwareProtectionConfiguration
+     *     S3Logs?: OrganizationS3LogsConfiguration|null,
+     *     Kubernetes?: OrganizationKubernetesConfiguration|null,
+     *     MalwareProtection?: OrganizationMalwareProtectionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

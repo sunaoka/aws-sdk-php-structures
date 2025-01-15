@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PivotTableFieldOption> $SelectedFieldOptions
- * @property list<PivotTableDataPathOption> $DataPathOptions
- * @property list<PivotTableFieldCollapseStateOption> $CollapseStateOptions
+ * @property list<PivotTableFieldOption>|null $SelectedFieldOptions
+ * @property list<PivotTableDataPathOption>|null $DataPathOptions
+ * @property list<PivotTableFieldCollapseStateOption>|null $CollapseStateOptions
  */
 class PivotTableFieldOptions extends Shape
 {
     /**
      * @param array{
-     *     SelectedFieldOptions?: list<PivotTableFieldOption>,
-     *     DataPathOptions?: list<PivotTableDataPathOption>,
-     *     CollapseStateOptions?: list<PivotTableFieldCollapseStateOption>
+     *     SelectedFieldOptions?: list<PivotTableFieldOption>|null,
+     *     DataPathOptions?: list<PivotTableDataPathOption>|null,
+     *     CollapseStateOptions?: list<PivotTableFieldCollapseStateOption>|null
      * } $args
      */
     public function __construct(array $args = [])

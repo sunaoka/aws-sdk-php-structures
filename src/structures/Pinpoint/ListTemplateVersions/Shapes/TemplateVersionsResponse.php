@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<TemplateVersionResponse> $Item
- * @property string $Message
- * @property string $NextToken
- * @property string $RequestID
+ * @property string|null $Message
+ * @property string|null $NextToken
+ * @property string|null $RequestID
  */
 class TemplateVersionsResponse extends Shape
 {
     /**
      * @param array{
      *     Item: list<TemplateVersionResponse>,
-     *     Message?: string,
-     *     NextToken?: string,
-     *     RequestID?: string
+     *     Message?: string|null,
+     *     NextToken?: string|null,
+     *     RequestID?: string|null
      * } $args
      */
     public function __construct(array $args)

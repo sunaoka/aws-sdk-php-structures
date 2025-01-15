@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $DraftTimestamp
- * @property \Aws\Api\DateTimeResult $SubmittedTimestamp
- * @property \Aws\Api\DateTimeResult $ReviewingTimestamp
- * @property \Aws\Api\DateTimeResult $RequiresAuthenticationTimestamp
- * @property \Aws\Api\DateTimeResult $ApprovedTimestamp
- * @property \Aws\Api\DateTimeResult $DiscardedTimestamp
- * @property \Aws\Api\DateTimeResult $DeniedTimestamp
- * @property \Aws\Api\DateTimeResult $RevokedTimestamp
- * @property \Aws\Api\DateTimeResult $ArchivedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $SubmittedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ReviewingTimestamp
+ * @property \Aws\Api\DateTimeResult|null $RequiresAuthenticationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ApprovedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $DiscardedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $DeniedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $RevokedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ArchivedTimestamp
  */
 class RegistrationVersionStatusHistory extends Shape
 {
     /**
      * @param array{
      *     DraftTimestamp: \Aws\Api\DateTimeResult,
-     *     SubmittedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ReviewingTimestamp?: \Aws\Api\DateTimeResult,
-     *     RequiresAuthenticationTimestamp?: \Aws\Api\DateTimeResult,
-     *     ApprovedTimestamp?: \Aws\Api\DateTimeResult,
-     *     DiscardedTimestamp?: \Aws\Api\DateTimeResult,
-     *     DeniedTimestamp?: \Aws\Api\DateTimeResult,
-     *     RevokedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ArchivedTimestamp?: \Aws\Api\DateTimeResult
+     *     SubmittedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ReviewingTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     RequiresAuthenticationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ApprovedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     DiscardedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     DeniedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     RevokedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ArchivedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

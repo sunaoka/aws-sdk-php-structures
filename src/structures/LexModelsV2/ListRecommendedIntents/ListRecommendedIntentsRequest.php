@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botVersion
  * @property string $localeId
  * @property string $botRecommendationId
- * @property string $nextToken
- * @property int<1, 1000> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 1000>|null $maxResults
  */
 class ListRecommendedIntentsRequest extends Request
 {
@@ -20,8 +20,8 @@ class ListRecommendedIntentsRequest extends Request
      *     botVersion: string,
      *     localeId: string,
      *     botRecommendationId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 1000>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

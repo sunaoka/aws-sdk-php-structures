@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatasetImportJobName
  * @property string $DatasetArn
  * @property Shapes\DataSource $DataSource
- * @property string $TimestampFormat
- * @property string $TimeZone
- * @property bool $UseGeolocationForTimeZone
- * @property string $GeolocationFormat
- * @property list<Shapes\Tag> $Tags
- * @property string $Format
- * @property 'FULL'|'INCREMENTAL' $ImportMode
+ * @property string|null $TimestampFormat
+ * @property string|null $TimeZone
+ * @property bool|null $UseGeolocationForTimeZone
+ * @property string|null $GeolocationFormat
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $Format
+ * @property 'FULL'|'INCREMENTAL'|null $ImportMode
  */
 class CreateDatasetImportJobRequest extends Request
 {
@@ -23,13 +23,13 @@ class CreateDatasetImportJobRequest extends Request
      *     DatasetImportJobName: string,
      *     DatasetArn: string,
      *     DataSource: Shapes\DataSource,
-     *     TimestampFormat?: string,
-     *     TimeZone?: string,
-     *     UseGeolocationForTimeZone?: bool,
-     *     GeolocationFormat?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     Format?: string,
-     *     ImportMode?: 'FULL'|'INCREMENTAL'
+     *     TimestampFormat?: string|null,
+     *     TimeZone?: string|null,
+     *     UseGeolocationForTimeZone?: bool|null,
+     *     GeolocationFormat?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Format?: string|null,
+     *     ImportMode?: 'FULL'|'INCREMENTAL'|null
      * } $args
      */
     public function __construct(array $args)

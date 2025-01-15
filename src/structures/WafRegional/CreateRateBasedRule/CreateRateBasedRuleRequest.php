@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'IP' $RateKey
  * @property int<100, 2000000000> $RateLimit
  * @property string $ChangeToken
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateRateBasedRuleRequest extends Request
 {
@@ -21,7 +21,7 @@ class CreateRateBasedRuleRequest extends Request
      *     RateKey: 'IP',
      *     RateLimit: int<100, 2000000000>,
      *     ChangeToken: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

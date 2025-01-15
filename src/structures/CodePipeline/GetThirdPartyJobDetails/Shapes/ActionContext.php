@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodePipeline\GetThirdPartyJobDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $actionExecutionId
+ * @property string|null $name
+ * @property string|null $actionExecutionId
  */
 class ActionContext extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     actionExecutionId?: string
+     *     name?: string|null,
+     *     actionExecutionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

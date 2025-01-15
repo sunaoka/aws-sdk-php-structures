@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Proton\UpdateService;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $name
- * @property string $spec
+ * @property string|null $spec
  */
 class UpdateServiceRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     name: string,
-     *     spec?: string
+     *     spec?: string|null
      * } $args
      */
     public function __construct(array $args)

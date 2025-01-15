@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Authority $authority
- * @property \Aws\Api\DateTimeResult $effectiveDate
- * @property \Aws\Api\DateTimeResult $expirationDate
- * @property 'None'|'Valid'|'Expired'|'Pending' $status
- * @property \Aws\Api\DateTimeResult $systemEffectiveDate
+ * @property \Aws\Api\DateTimeResult|null $effectiveDate
+ * @property \Aws\Api\DateTimeResult|null $expirationDate
+ * @property 'None'|'Valid'|'Expired'|'Pending'|null $status
+ * @property \Aws\Api\DateTimeResult|null $systemEffectiveDate
  * @property TaxExemptionType $taxExemptionType
  */
 class TaxExemption extends Shape
@@ -17,10 +17,10 @@ class TaxExemption extends Shape
     /**
      * @param array{
      *     authority: Authority,
-     *     effectiveDate?: \Aws\Api\DateTimeResult,
-     *     expirationDate?: \Aws\Api\DateTimeResult,
-     *     status?: 'None'|'Valid'|'Expired'|'Pending',
-     *     systemEffectiveDate?: \Aws\Api\DateTimeResult,
+     *     effectiveDate?: \Aws\Api\DateTimeResult|null,
+     *     expirationDate?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'None'|'Valid'|'Expired'|'Pending'|null,
+     *     systemEffectiveDate?: \Aws\Api\DateTimeResult|null,
      *     taxExemptionType: TaxExemptionType
      * } $args
      */

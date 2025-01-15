@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chime\BatchUpdateUser\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IsAlexaForBusinessEnabled
- * @property string $AlexaForBusinessRoomArn
+ * @property bool|null $IsAlexaForBusinessEnabled
+ * @property string|null $AlexaForBusinessRoomArn
  */
 class AlexaForBusinessMetadata extends Shape
 {
     /**
      * @param array{
-     *     IsAlexaForBusinessEnabled?: bool,
-     *     AlexaForBusinessRoomArn?: string
+     *     IsAlexaForBusinessEnabled?: bool|null,
+     *     AlexaForBusinessRoomArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

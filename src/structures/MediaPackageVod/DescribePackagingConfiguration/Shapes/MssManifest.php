@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\DescribePackagingConfiguration\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ManifestName
- * @property StreamSelection $StreamSelection
+ * @property string|null $ManifestName
+ * @property StreamSelection|null $StreamSelection
  */
 class MssManifest extends Shape
 {
     /**
      * @param array{
-     *     ManifestName?: string,
-     *     StreamSelection?: StreamSelection
+     *     ManifestName?: string|null,
+     *     StreamSelection?: StreamSelection|null
      * } $args
      */
     public function __construct(array $args = [])

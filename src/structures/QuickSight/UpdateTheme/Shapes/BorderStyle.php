@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Show
+ * @property bool|null $Show
  */
 class BorderStyle extends Shape
 {
     /**
-     * @param array{Show?: bool} $args
+     * @param array{Show?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

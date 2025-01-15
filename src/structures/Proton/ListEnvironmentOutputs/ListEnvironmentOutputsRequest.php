@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Proton\ListEnvironmentOutputs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $deploymentId
+ * @property string|null $deploymentId
  * @property string $environmentName
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListEnvironmentOutputsRequest extends Request
 {
     /**
      * @param array{
-     *     deploymentId?: string,
+     *     deploymentId?: string|null,
      *     environmentName: string,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

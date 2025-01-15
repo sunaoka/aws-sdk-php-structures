@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Expression
- * @property string $Color
+ * @property string|null $Color
  */
 class ConditionalFormattingSolidColor extends Shape
 {
     /**
      * @param array{
      *     Expression: string,
-     *     Color?: string
+     *     Color?: string|null
      * } $args
      */
     public function __construct(array $args)

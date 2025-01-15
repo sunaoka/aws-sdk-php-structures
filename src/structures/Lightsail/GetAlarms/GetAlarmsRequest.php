@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetAlarms;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $alarmName
- * @property string $pageToken
- * @property string $monitoredResourceName
+ * @property string|null $alarmName
+ * @property string|null $pageToken
+ * @property string|null $monitoredResourceName
  */
 class GetAlarmsRequest extends Request
 {
     /**
      * @param array{
-     *     alarmName?: string,
-     *     pageToken?: string,
-     *     monitoredResourceName?: string
+     *     alarmName?: string|null,
+     *     pageToken?: string|null,
+     *     monitoredResourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

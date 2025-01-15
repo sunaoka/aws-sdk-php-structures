@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $DocumentVersion
- * @property string $VersionName
- * @property bool $Force
+ * @property string|null $DocumentVersion
+ * @property string|null $VersionName
+ * @property bool|null $Force
  */
 class DeleteDocumentRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     DocumentVersion?: string,
-     *     VersionName?: string,
-     *     Force?: bool
+     *     DocumentVersion?: string|null,
+     *     VersionName?: string|null,
+     *     Force?: bool|null
      * } $args
      */
     public function __construct(array $args)

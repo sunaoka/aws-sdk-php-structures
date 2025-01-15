@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MonthlyTransfer $monthlyTransfer
- * @property list<InstancePortInfo> $ports
+ * @property MonthlyTransfer|null $monthlyTransfer
+ * @property list<InstancePortInfo>|null $ports
  */
 class InstanceNetworking extends Shape
 {
     /**
      * @param array{
-     *     monthlyTransfer?: MonthlyTransfer,
-     *     ports?: list<InstancePortInfo>
+     *     monthlyTransfer?: MonthlyTransfer|null,
+     *     ports?: list<InstancePortInfo>|null
      * } $args
      */
     public function __construct(array $args = [])

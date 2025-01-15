@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $shareIdentifier
- * @property float $weightFactor
+ * @property float|null $weightFactor
  */
 class ShareAttributes extends Shape
 {
     /**
      * @param array{
      *     shareIdentifier: string,
-     *     weightFactor?: float
+     *     weightFactor?: float|null
      * } $args
      */
     public function __construct(array $args)

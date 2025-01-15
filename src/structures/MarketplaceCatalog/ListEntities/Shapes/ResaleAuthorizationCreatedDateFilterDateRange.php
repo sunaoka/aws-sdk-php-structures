@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AfterValue
- * @property string $BeforeValue
+ * @property string|null $AfterValue
+ * @property string|null $BeforeValue
  */
 class ResaleAuthorizationCreatedDateFilterDateRange extends Shape
 {
     /**
      * @param array{
-     *     AfterValue?: string,
-     *     BeforeValue?: string
+     *     AfterValue?: string|null,
+     *     BeforeValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

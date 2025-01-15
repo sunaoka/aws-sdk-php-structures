@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $connectionId
- * @property string $description
+ * @property string|null $description
  * @property string $domainId
  * @property string $domainUnitId
- * @property string $environmentId
+ * @property string|null $environmentId
  * @property string $name
  * @property list<Shapes\PhysicalEndpoint> $physicalEndpoints
- * @property string $projectId
- * @property Shapes\ConnectionPropertiesOutput $props
+ * @property string|null $projectId
+ * @property Shapes\ConnectionPropertiesOutput|null $props
  * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA' $type
  */
 class UpdateConnectionResponse extends Response

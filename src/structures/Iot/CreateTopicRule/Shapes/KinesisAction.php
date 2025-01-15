@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $roleArn
  * @property string $streamName
- * @property string $partitionKey
+ * @property string|null $partitionKey
  */
 class KinesisAction extends Shape
 {
@@ -15,7 +15,7 @@ class KinesisAction extends Shape
      * @param array{
      *     roleArn: string,
      *     streamName: string,
-     *     partitionKey?: string
+     *     partitionKey?: string|null
      * } $args
      */
     public function __construct(array $args)

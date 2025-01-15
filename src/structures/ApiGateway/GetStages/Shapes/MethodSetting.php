@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetStages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $metricsEnabled
- * @property string $loggingLevel
- * @property bool $dataTraceEnabled
- * @property int $throttlingBurstLimit
- * @property double $throttlingRateLimit
- * @property bool $cachingEnabled
- * @property int $cacheTtlInSeconds
- * @property bool $cacheDataEncrypted
- * @property bool $requireAuthorizationForCacheControl
- * @property 'FAIL_WITH_403'|'SUCCEED_WITH_RESPONSE_HEADER'|'SUCCEED_WITHOUT_RESPONSE_HEADER' $unauthorizedCacheControlHeaderStrategy
+ * @property bool|null $metricsEnabled
+ * @property string|null $loggingLevel
+ * @property bool|null $dataTraceEnabled
+ * @property int|null $throttlingBurstLimit
+ * @property double|null $throttlingRateLimit
+ * @property bool|null $cachingEnabled
+ * @property int|null $cacheTtlInSeconds
+ * @property bool|null $cacheDataEncrypted
+ * @property bool|null $requireAuthorizationForCacheControl
+ * @property 'FAIL_WITH_403'|'SUCCEED_WITH_RESPONSE_HEADER'|'SUCCEED_WITHOUT_RESPONSE_HEADER'|null $unauthorizedCacheControlHeaderStrategy
  */
 class MethodSetting extends Shape
 {
     /**
      * @param array{
-     *     metricsEnabled?: bool,
-     *     loggingLevel?: string,
-     *     dataTraceEnabled?: bool,
-     *     throttlingBurstLimit?: int,
-     *     throttlingRateLimit?: double,
-     *     cachingEnabled?: bool,
-     *     cacheTtlInSeconds?: int,
-     *     cacheDataEncrypted?: bool,
-     *     requireAuthorizationForCacheControl?: bool,
-     *     unauthorizedCacheControlHeaderStrategy?: 'FAIL_WITH_403'|'SUCCEED_WITH_RESPONSE_HEADER'|'SUCCEED_WITHOUT_RESPONSE_HEADER'
+     *     metricsEnabled?: bool|null,
+     *     loggingLevel?: string|null,
+     *     dataTraceEnabled?: bool|null,
+     *     throttlingBurstLimit?: int|null,
+     *     throttlingRateLimit?: double|null,
+     *     cachingEnabled?: bool|null,
+     *     cacheTtlInSeconds?: int|null,
+     *     cacheDataEncrypted?: bool|null,
+     *     requireAuthorizationForCacheControl?: bool|null,
+     *     unauthorizedCacheControlHeaderStrategy?: 'FAIL_WITH_403'|'SUCCEED_WITH_RESPONSE_HEADER'|'SUCCEED_WITHOUT_RESPONSE_HEADER'|null
      * } $args
      */
     public function __construct(array $args = [])

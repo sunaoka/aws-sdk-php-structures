@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property string $codebuildRoleArn
- * @property string $componentRoleArn
+ * @property string|null $codebuildRoleArn
+ * @property string|null $componentRoleArn
  * @property string $environmentAccountId
  * @property string $environmentName
  * @property string $id
@@ -22,8 +22,8 @@ class EnvironmentAccountConnection extends Shape
     /**
      * @param array{
      *     arn: string,
-     *     codebuildRoleArn?: string,
-     *     componentRoleArn?: string,
+     *     codebuildRoleArn?: string|null,
+     *     componentRoleArn?: string|null,
      *     environmentAccountId: string,
      *     environmentName: string,
      *     id: string,

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeAutoMLJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FeatureSpecificationS3Uri
- * @property list<AutoMLAlgorithmConfig> $AlgorithmsConfig
+ * @property string|null $FeatureSpecificationS3Uri
+ * @property list<AutoMLAlgorithmConfig>|null $AlgorithmsConfig
  */
 class AutoMLCandidateGenerationConfig extends Shape
 {
     /**
      * @param array{
-     *     FeatureSpecificationS3Uri?: string,
-     *     AlgorithmsConfig?: list<AutoMLAlgorithmConfig>
+     *     FeatureSpecificationS3Uri?: string|null,
+     *     AlgorithmsConfig?: list<AutoMLAlgorithmConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

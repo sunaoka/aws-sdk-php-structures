@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\ListManagedJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $templateArn
- * @property string $templateName
- * @property string $description
- * @property list<string> $environments
- * @property string $templateVersion
+ * @property string|null $templateArn
+ * @property string|null $templateName
+ * @property string|null $description
+ * @property list<string>|null $environments
+ * @property string|null $templateVersion
  */
 class ManagedJobTemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     templateArn?: string,
-     *     templateName?: string,
-     *     description?: string,
-     *     environments?: list<string>,
-     *     templateVersion?: string
+     *     templateArn?: string|null,
+     *     templateName?: string|null,
+     *     description?: string|null,
+     *     environments?: list<string>|null,
+     *     templateVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WafRegional\ListSqlInjectionMatchSets;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextMarker
- * @property list<Shapes\SqlInjectionMatchSetSummary> $SqlInjectionMatchSets
+ * @property string|null $NextMarker
+ * @property list<Shapes\SqlInjectionMatchSetSummary>|null $SqlInjectionMatchSets
  */
 class ListSqlInjectionMatchSetsResponse extends Response
 {

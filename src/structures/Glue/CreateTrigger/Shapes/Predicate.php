@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\CreateTrigger\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AND'|'ANY' $Logical
- * @property list<Condition> $Conditions
+ * @property 'AND'|'ANY'|null $Logical
+ * @property list<Condition>|null $Conditions
  */
 class Predicate extends Shape
 {
     /**
      * @param array{
-     *     Logical?: 'AND'|'ANY',
-     *     Conditions?: list<Condition>
+     *     Logical?: 'AND'|'ANY'|null,
+     *     Conditions?: list<Condition>|null
      * } $args
      */
     public function __construct(array $args = [])

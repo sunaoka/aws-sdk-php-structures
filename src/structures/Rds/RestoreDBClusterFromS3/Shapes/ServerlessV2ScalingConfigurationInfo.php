@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rds\RestoreDBClusterFromS3\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $MinCapacity
- * @property double $MaxCapacity
- * @property int $SecondsUntilAutoPause
+ * @property double|null $MinCapacity
+ * @property double|null $MaxCapacity
+ * @property int|null $SecondsUntilAutoPause
  */
 class ServerlessV2ScalingConfigurationInfo extends Shape
 {
     /**
      * @param array{
-     *     MinCapacity?: double,
-     *     MaxCapacity?: double,
-     *     SecondsUntilAutoPause?: int
+     *     MinCapacity?: double|null,
+     *     MaxCapacity?: double|null,
+     *     SecondsUntilAutoPause?: int|null
      * } $args
      */
     public function __construct(array $args = [])

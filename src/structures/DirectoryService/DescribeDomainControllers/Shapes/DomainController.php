@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DirectoryService\DescribeDomainControllers\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DirectoryId
- * @property string $DomainControllerId
- * @property string $DnsIpAddr
- * @property string $VpcId
- * @property string $SubnetId
- * @property string $AvailabilityZone
- * @property 'Creating'|'Active'|'Impaired'|'Restoring'|'Deleting'|'Deleted'|'Failed'|'Updating' $Status
- * @property string $StatusReason
- * @property \Aws\Api\DateTimeResult $LaunchTime
- * @property \Aws\Api\DateTimeResult $StatusLastUpdatedDateTime
+ * @property string|null $DirectoryId
+ * @property string|null $DomainControllerId
+ * @property string|null $DnsIpAddr
+ * @property string|null $VpcId
+ * @property string|null $SubnetId
+ * @property string|null $AvailabilityZone
+ * @property 'Creating'|'Active'|'Impaired'|'Restoring'|'Deleting'|'Deleted'|'Failed'|'Updating'|null $Status
+ * @property string|null $StatusReason
+ * @property \Aws\Api\DateTimeResult|null $LaunchTime
+ * @property \Aws\Api\DateTimeResult|null $StatusLastUpdatedDateTime
  */
 class DomainController extends Shape
 {
     /**
      * @param array{
-     *     DirectoryId?: string,
-     *     DomainControllerId?: string,
-     *     DnsIpAddr?: string,
-     *     VpcId?: string,
-     *     SubnetId?: string,
-     *     AvailabilityZone?: string,
-     *     Status?: 'Creating'|'Active'|'Impaired'|'Restoring'|'Deleting'|'Deleted'|'Failed'|'Updating',
-     *     StatusReason?: string,
-     *     LaunchTime?: \Aws\Api\DateTimeResult,
-     *     StatusLastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     DirectoryId?: string|null,
+     *     DomainControllerId?: string|null,
+     *     DnsIpAddr?: string|null,
+     *     VpcId?: string|null,
+     *     SubnetId?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     Status?: 'Creating'|'Active'|'Impaired'|'Restoring'|'Deleting'|'Deleted'|'Failed'|'Updating'|null,
+     *     StatusReason?: string|null,
+     *     LaunchTime?: \Aws\Api\DateTimeResult|null,
+     *     StatusLastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

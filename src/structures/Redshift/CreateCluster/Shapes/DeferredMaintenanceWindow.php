@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeferMaintenanceIdentifier
- * @property \Aws\Api\DateTimeResult $DeferMaintenanceStartTime
- * @property \Aws\Api\DateTimeResult $DeferMaintenanceEndTime
+ * @property string|null $DeferMaintenanceIdentifier
+ * @property \Aws\Api\DateTimeResult|null $DeferMaintenanceStartTime
+ * @property \Aws\Api\DateTimeResult|null $DeferMaintenanceEndTime
  */
 class DeferredMaintenanceWindow extends Shape
 {
     /**
      * @param array{
-     *     DeferMaintenanceIdentifier?: string,
-     *     DeferMaintenanceStartTime?: \Aws\Api\DateTimeResult,
-     *     DeferMaintenanceEndTime?: \Aws\Api\DateTimeResult
+     *     DeferMaintenanceIdentifier?: string|null,
+     *     DeferMaintenanceStartTime?: \Aws\Api\DateTimeResult|null,
+     *     DeferMaintenanceEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

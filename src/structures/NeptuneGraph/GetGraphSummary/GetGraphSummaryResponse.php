@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\NeptuneGraph\GetGraphSummary;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $version
- * @property \Aws\Api\DateTimeResult $lastStatisticsComputationTime
- * @property Shapes\GraphDataSummary $graphSummary
+ * @property string|null $version
+ * @property \Aws\Api\DateTimeResult|null $lastStatisticsComputationTime
+ * @property Shapes\GraphDataSummary|null $graphSummary
  */
 class GetGraphSummaryResponse extends Response
 {

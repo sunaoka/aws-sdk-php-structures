@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CognitoIdentity\GetId;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $IdentityId
+ * @property string|null $IdentityId
  */
 class GetIdResponse extends Response
 {

@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FilterControlId
  * @property string $Title
  * @property string $SourceFilterId
- * @property ListControlDisplayOptions $DisplayOptions
- * @property 'MULTI_SELECT'|'SINGLE_SELECT' $Type
- * @property FilterSelectableValues $SelectableValues
- * @property CascadingControlConfiguration $CascadingControlConfiguration
+ * @property ListControlDisplayOptions|null $DisplayOptions
+ * @property 'MULTI_SELECT'|'SINGLE_SELECT'|null $Type
+ * @property FilterSelectableValues|null $SelectableValues
+ * @property CascadingControlConfiguration|null $CascadingControlConfiguration
  */
 class FilterListControl extends Shape
 {
@@ -20,10 +20,10 @@ class FilterListControl extends Shape
      *     FilterControlId: string,
      *     Title: string,
      *     SourceFilterId: string,
-     *     DisplayOptions?: ListControlDisplayOptions,
-     *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT',
-     *     SelectableValues?: FilterSelectableValues,
-     *     CascadingControlConfiguration?: CascadingControlConfiguration
+     *     DisplayOptions?: ListControlDisplayOptions|null,
+     *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT'|null,
+     *     SelectableValues?: FilterSelectableValues|null,
+     *     CascadingControlConfiguration?: CascadingControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

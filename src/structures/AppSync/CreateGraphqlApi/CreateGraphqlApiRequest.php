@@ -6,44 +6,44 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property Shapes\LogConfig $logConfig
+ * @property Shapes\LogConfig|null $logConfig
  * @property 'API_KEY'|'AWS_IAM'|'AMAZON_COGNITO_USER_POOLS'|'OPENID_CONNECT'|'AWS_LAMBDA' $authenticationType
- * @property Shapes\UserPoolConfig $userPoolConfig
- * @property Shapes\OpenIDConnectConfig $openIDConnectConfig
- * @property array<string, string> $tags
- * @property list<Shapes\AdditionalAuthenticationProvider> $additionalAuthenticationProviders
- * @property bool $xrayEnabled
- * @property Shapes\LambdaAuthorizerConfig $lambdaAuthorizerConfig
- * @property 'GRAPHQL'|'MERGED' $apiType
- * @property string $mergedApiExecutionRoleArn
- * @property 'GLOBAL'|'PRIVATE' $visibility
- * @property string $ownerContact
- * @property 'ENABLED'|'DISABLED' $introspectionConfig
- * @property int<0, 75> $queryDepthLimit
- * @property int<0, 10000> $resolverCountLimit
- * @property Shapes\EnhancedMetricsConfig $enhancedMetricsConfig
+ * @property Shapes\UserPoolConfig|null $userPoolConfig
+ * @property Shapes\OpenIDConnectConfig|null $openIDConnectConfig
+ * @property array<string, string>|null $tags
+ * @property list<Shapes\AdditionalAuthenticationProvider>|null $additionalAuthenticationProviders
+ * @property bool|null $xrayEnabled
+ * @property Shapes\LambdaAuthorizerConfig|null $lambdaAuthorizerConfig
+ * @property 'GRAPHQL'|'MERGED'|null $apiType
+ * @property string|null $mergedApiExecutionRoleArn
+ * @property 'GLOBAL'|'PRIVATE'|null $visibility
+ * @property string|null $ownerContact
+ * @property 'ENABLED'|'DISABLED'|null $introspectionConfig
+ * @property int<0, 75>|null $queryDepthLimit
+ * @property int<0, 10000>|null $resolverCountLimit
+ * @property Shapes\EnhancedMetricsConfig|null $enhancedMetricsConfig
  */
 class CreateGraphqlApiRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     logConfig?: Shapes\LogConfig,
+     *     logConfig?: Shapes\LogConfig|null,
      *     authenticationType: 'API_KEY'|'AWS_IAM'|'AMAZON_COGNITO_USER_POOLS'|'OPENID_CONNECT'|'AWS_LAMBDA',
-     *     userPoolConfig?: Shapes\UserPoolConfig,
-     *     openIDConnectConfig?: Shapes\OpenIDConnectConfig,
-     *     tags?: array<string, string>,
-     *     additionalAuthenticationProviders?: list<Shapes\AdditionalAuthenticationProvider>,
-     *     xrayEnabled?: bool,
-     *     lambdaAuthorizerConfig?: Shapes\LambdaAuthorizerConfig,
-     *     apiType?: 'GRAPHQL'|'MERGED',
-     *     mergedApiExecutionRoleArn?: string,
-     *     visibility?: 'GLOBAL'|'PRIVATE',
-     *     ownerContact?: string,
-     *     introspectionConfig?: 'ENABLED'|'DISABLED',
-     *     queryDepthLimit?: int<0, 75>,
-     *     resolverCountLimit?: int<0, 10000>,
-     *     enhancedMetricsConfig?: Shapes\EnhancedMetricsConfig
+     *     userPoolConfig?: Shapes\UserPoolConfig|null,
+     *     openIDConnectConfig?: Shapes\OpenIDConnectConfig|null,
+     *     tags?: array<string, string>|null,
+     *     additionalAuthenticationProviders?: list<Shapes\AdditionalAuthenticationProvider>|null,
+     *     xrayEnabled?: bool|null,
+     *     lambdaAuthorizerConfig?: Shapes\LambdaAuthorizerConfig|null,
+     *     apiType?: 'GRAPHQL'|'MERGED'|null,
+     *     mergedApiExecutionRoleArn?: string|null,
+     *     visibility?: 'GLOBAL'|'PRIVATE'|null,
+     *     ownerContact?: string|null,
+     *     introspectionConfig?: 'ENABLED'|'DISABLED'|null,
+     *     queryDepthLimit?: int<0, 75>|null,
+     *     resolverCountLimit?: int<0, 10000>|null,
+     *     enhancedMetricsConfig?: Shapes\EnhancedMetricsConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Organizations\ListDelegatedAdministrators;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ServicePrincipal
- * @property string $NextToken
- * @property int<1, 20> $MaxResults
+ * @property string|null $ServicePrincipal
+ * @property string|null $NextToken
+ * @property int<1, 20>|null $MaxResults
  */
 class ListDelegatedAdministratorsRequest extends Request
 {
     /**
      * @param array{
-     *     ServicePrincipal?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 20>
+     *     ServicePrincipal?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 20>|null
      * } $args
      */
     public function __construct(array $args = [])

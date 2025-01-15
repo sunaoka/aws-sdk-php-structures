@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SearchJobIdentifier
  * @property Shapes\ExportSpecification $ExportSpecification
- * @property string $ClientToken
- * @property array<string, string> $Tags
- * @property string $RoleArn
+ * @property string|null $ClientToken
+ * @property array<string, string>|null $Tags
+ * @property string|null $RoleArn
  */
 class StartSearchResultExportJobRequest extends Request
 {
@@ -17,9 +17,9 @@ class StartSearchResultExportJobRequest extends Request
      * @param array{
      *     SearchJobIdentifier: string,
      *     ExportSpecification: Shapes\ExportSpecification,
-     *     ClientToken?: string,
-     *     Tags?: array<string, string>,
-     *     RoleArn?: string
+     *     ClientToken?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

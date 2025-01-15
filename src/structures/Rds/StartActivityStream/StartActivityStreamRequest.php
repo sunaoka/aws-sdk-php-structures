@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceArn
  * @property 'sync'|'async' $Mode
  * @property string $KmsKeyId
- * @property bool $ApplyImmediately
- * @property bool $EngineNativeAuditFieldsIncluded
+ * @property bool|null $ApplyImmediately
+ * @property bool|null $EngineNativeAuditFieldsIncluded
  */
 class StartActivityStreamRequest extends Request
 {
@@ -18,8 +18,8 @@ class StartActivityStreamRequest extends Request
      *     ResourceArn: string,
      *     Mode: 'sync'|'async',
      *     KmsKeyId: string,
-     *     ApplyImmediately?: bool,
-     *     EngineNativeAuditFieldsIncluded?: bool
+     *     ApplyImmediately?: bool|null,
+     *     EngineNativeAuditFieldsIncluded?: bool|null
      * } $args
      */
     public function __construct(array $args)

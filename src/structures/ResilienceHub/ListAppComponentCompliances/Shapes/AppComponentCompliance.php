@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppComponentCompliances\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $appComponentName
- * @property array<'Software'|'Hardware'|'AZ'|'Region', DisruptionCompliance> $compliance
- * @property Cost $cost
- * @property string $message
- * @property ResiliencyScore $resiliencyScore
- * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy' $status
+ * @property string|null $appComponentName
+ * @property array<'Software'|'Hardware'|'AZ'|'Region', DisruptionCompliance>|null $compliance
+ * @property Cost|null $cost
+ * @property string|null $message
+ * @property ResiliencyScore|null $resiliencyScore
+ * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null $status
  */
 class AppComponentCompliance extends Shape
 {
     /**
      * @param array{
-     *     appComponentName?: string,
-     *     compliance?: array<'Software'|'Hardware'|'AZ'|'Region', DisruptionCompliance>,
-     *     cost?: Cost,
-     *     message?: string,
-     *     resiliencyScore?: ResiliencyScore,
-     *     status?: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'
+     *     appComponentName?: string|null,
+     *     compliance?: array<'Software'|'Hardware'|'AZ'|'Region', DisruptionCompliance>|null,
+     *     cost?: Cost|null,
+     *     message?: string|null,
+     *     resiliencyScore?: ResiliencyScore|null,
+     *     status?: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null
      * } $args
      */
     public function __construct(array $args = [])

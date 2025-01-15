@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $applicationName
- * @property string $deploymentGroupName
- * @property Shapes\RevisionLocation $revision
- * @property string $deploymentConfigName
- * @property string $description
- * @property bool $ignoreApplicationStopFailures
- * @property Shapes\TargetInstances $targetInstances
- * @property Shapes\AutoRollbackConfiguration $autoRollbackConfiguration
- * @property bool $updateOutdatedInstancesOnly
- * @property 'DISALLOW'|'OVERWRITE'|'RETAIN' $fileExistsBehavior
- * @property Shapes\AlarmConfiguration $overrideAlarmConfiguration
+ * @property string|null $deploymentGroupName
+ * @property Shapes\RevisionLocation|null $revision
+ * @property string|null $deploymentConfigName
+ * @property string|null $description
+ * @property bool|null $ignoreApplicationStopFailures
+ * @property Shapes\TargetInstances|null $targetInstances
+ * @property Shapes\AutoRollbackConfiguration|null $autoRollbackConfiguration
+ * @property bool|null $updateOutdatedInstancesOnly
+ * @property 'DISALLOW'|'OVERWRITE'|'RETAIN'|null $fileExistsBehavior
+ * @property Shapes\AlarmConfiguration|null $overrideAlarmConfiguration
  */
 class CreateDeploymentRequest extends Request
 {
     /**
      * @param array{
      *     applicationName: string,
-     *     deploymentGroupName?: string,
-     *     revision?: Shapes\RevisionLocation,
-     *     deploymentConfigName?: string,
-     *     description?: string,
-     *     ignoreApplicationStopFailures?: bool,
-     *     targetInstances?: Shapes\TargetInstances,
-     *     autoRollbackConfiguration?: Shapes\AutoRollbackConfiguration,
-     *     updateOutdatedInstancesOnly?: bool,
-     *     fileExistsBehavior?: 'DISALLOW'|'OVERWRITE'|'RETAIN',
-     *     overrideAlarmConfiguration?: Shapes\AlarmConfiguration
+     *     deploymentGroupName?: string|null,
+     *     revision?: Shapes\RevisionLocation|null,
+     *     deploymentConfigName?: string|null,
+     *     description?: string|null,
+     *     ignoreApplicationStopFailures?: bool|null,
+     *     targetInstances?: Shapes\TargetInstances|null,
+     *     autoRollbackConfiguration?: Shapes\AutoRollbackConfiguration|null,
+     *     updateOutdatedInstancesOnly?: bool|null,
+     *     fileExistsBehavior?: 'DISALLOW'|'OVERWRITE'|'RETAIN'|null,
+     *     overrideAlarmConfiguration?: Shapes\AlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args)

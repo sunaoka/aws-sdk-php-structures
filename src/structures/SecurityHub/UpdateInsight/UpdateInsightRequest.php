@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InsightArn
- * @property string $Name
- * @property Shapes\AwsSecurityFindingFilters $Filters
- * @property string $GroupByAttribute
+ * @property string|null $Name
+ * @property Shapes\AwsSecurityFindingFilters|null $Filters
+ * @property string|null $GroupByAttribute
  */
 class UpdateInsightRequest extends Request
 {
     /**
      * @param array{
      *     InsightArn: string,
-     *     Name?: string,
-     *     Filters?: Shapes\AwsSecurityFindingFilters,
-     *     GroupByAttribute?: string
+     *     Name?: string|null,
+     *     Filters?: Shapes\AwsSecurityFindingFilters|null,
+     *     GroupByAttribute?: string|null
      * } $args
      */
     public function __construct(array $args)

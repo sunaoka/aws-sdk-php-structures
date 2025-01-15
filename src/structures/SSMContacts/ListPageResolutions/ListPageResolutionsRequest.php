@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SSMContacts\ListPageResolutions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property string $PageId
  */
 class ListPageResolutionsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
+     *     NextToken?: string|null,
      *     PageId: string
      * } $args
      */

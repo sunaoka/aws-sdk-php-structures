@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateCloudWatchAlarmTemplateGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $Description
- * @property string $Id
- * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property string $Name
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $Description
+ * @property string|null $Id
+ * @property \Aws\Api\DateTimeResult|null $ModifiedAt
+ * @property string|null $Name
+ * @property array<string, string>|null $Tags
  */
 class CreateCloudWatchAlarmTemplateGroupResponse extends Response
 {

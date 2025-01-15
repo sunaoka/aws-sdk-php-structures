@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\ListAppInstanceUserEndpoints\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppInstanceUserArn
- * @property string $EndpointId
- * @property string $Name
- * @property 'APNS'|'APNS_SANDBOX'|'GCM' $Type
- * @property 'ALL'|'NONE' $AllowMessages
- * @property EndpointState $EndpointState
+ * @property string|null $AppInstanceUserArn
+ * @property string|null $EndpointId
+ * @property string|null $Name
+ * @property 'APNS'|'APNS_SANDBOX'|'GCM'|null $Type
+ * @property 'ALL'|'NONE'|null $AllowMessages
+ * @property EndpointState|null $EndpointState
  */
 class AppInstanceUserEndpointSummary extends Shape
 {
     /**
      * @param array{
-     *     AppInstanceUserArn?: string,
-     *     EndpointId?: string,
-     *     Name?: string,
-     *     Type?: 'APNS'|'APNS_SANDBOX'|'GCM',
-     *     AllowMessages?: 'ALL'|'NONE',
-     *     EndpointState?: EndpointState
+     *     AppInstanceUserArn?: string|null,
+     *     EndpointId?: string|null,
+     *     Name?: string|null,
+     *     Type?: 'APNS'|'APNS_SANDBOX'|'GCM'|null,
+     *     AllowMessages?: 'ALL'|'NONE'|null,
+     *     EndpointState?: EndpointState|null
      * } $args
      */
     public function __construct(array $args = [])

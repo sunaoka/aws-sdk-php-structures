@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $revisionId
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_FAILED' $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $title
  */
 class ContentSummary extends Shape
@@ -30,7 +30,7 @@ class ContentSummary extends Shape
      *     name: string,
      *     revisionId: string,
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_FAILED',
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     title: string
      * } $args
      */

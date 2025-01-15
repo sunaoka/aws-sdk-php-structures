@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxExemption;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $caseId
+ * @property string|null $caseId
  */
 class PutTaxExemptionResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EntityId'|'LastModifiedDate'|'ProductTitle'|'Visibility' $SortBy
- * @property 'ASCENDING'|'DESCENDING' $SortOrder
+ * @property 'EntityId'|'LastModifiedDate'|'ProductTitle'|'Visibility'|null $SortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
  */
 class AmiProductSort extends Shape
 {
     /**
      * @param array{
-     *     SortBy?: 'EntityId'|'LastModifiedDate'|'ProductTitle'|'Visibility',
-     *     SortOrder?: 'ASCENDING'|'DESCENDING'
+     *     SortBy?: 'EntityId'|'LastModifiedDate'|'ProductTitle'|'Visibility'|null,
+     *     SortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */
     public function __construct(array $args = [])

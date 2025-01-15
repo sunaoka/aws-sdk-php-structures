@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Athena\ListSessions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SessionId
- * @property string $Description
- * @property EngineVersion $EngineVersion
- * @property string $NotebookVersion
- * @property SessionStatus $Status
+ * @property string|null $SessionId
+ * @property string|null $Description
+ * @property EngineVersion|null $EngineVersion
+ * @property string|null $NotebookVersion
+ * @property SessionStatus|null $Status
  */
 class SessionSummary extends Shape
 {
     /**
      * @param array{
-     *     SessionId?: string,
-     *     Description?: string,
-     *     EngineVersion?: EngineVersion,
-     *     NotebookVersion?: string,
-     *     Status?: SessionStatus
+     *     SessionId?: string|null,
+     *     Description?: string|null,
+     *     EngineVersion?: EngineVersion|null,
+     *     NotebookVersion?: string|null,
+     *     Status?: SessionStatus|null
      * } $args
      */
     public function __construct(array $args = [])

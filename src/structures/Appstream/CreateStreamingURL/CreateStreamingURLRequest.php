@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StackName
  * @property string $FleetName
  * @property string $UserId
- * @property string $ApplicationId
- * @property int $Validity
- * @property string $SessionContext
+ * @property string|null $ApplicationId
+ * @property int|null $Validity
+ * @property string|null $SessionContext
  */
 class CreateStreamingURLRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateStreamingURLRequest extends Request
      *     StackName: string,
      *     FleetName: string,
      *     UserId: string,
-     *     ApplicationId?: string,
-     *     Validity?: int,
-     *     SessionContext?: string
+     *     ApplicationId?: string|null,
+     *     Validity?: int|null,
+     *     SessionContext?: string|null
      * } $args
      */
     public function __construct(array $args)

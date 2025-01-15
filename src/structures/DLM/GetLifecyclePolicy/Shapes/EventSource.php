@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'MANAGED_CWE' $Type
- * @property EventParameters $Parameters
+ * @property EventParameters|null $Parameters
  */
 class EventSource extends Shape
 {
     /**
      * @param array{
      *     Type: 'MANAGED_CWE',
-     *     Parameters?: EventParameters
+     *     Parameters?: EventParameters|null
      * } $args
      */
     public function __construct(array $args)

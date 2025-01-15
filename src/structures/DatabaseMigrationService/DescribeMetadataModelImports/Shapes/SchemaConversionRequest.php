@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeMetadataModelI
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Status
- * @property string $RequestIdentifier
- * @property string $MigrationProjectArn
- * @property ErrorDetails $Error
- * @property ExportSqlDetails $ExportSqlDetails
+ * @property string|null $Status
+ * @property string|null $RequestIdentifier
+ * @property string|null $MigrationProjectArn
+ * @property ErrorDetails|null $Error
+ * @property ExportSqlDetails|null $ExportSqlDetails
  */
 class SchemaConversionRequest extends Shape
 {
     /**
      * @param array{
-     *     Status?: string,
-     *     RequestIdentifier?: string,
-     *     MigrationProjectArn?: string,
-     *     Error?: ErrorDetails,
-     *     ExportSqlDetails?: ExportSqlDetails
+     *     Status?: string|null,
+     *     RequestIdentifier?: string|null,
+     *     MigrationProjectArn?: string|null,
+     *     Error?: ErrorDetails|null,
+     *     ExportSqlDetails?: ExportSqlDetails|null
      * } $args
      */
     public function __construct(array $args = [])

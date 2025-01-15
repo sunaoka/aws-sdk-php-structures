@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListApps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DomainId
- * @property string $UserProfileName
- * @property string $SpaceName
- * @property 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas' $AppType
- * @property string $AppName
- * @property 'Deleted'|'Deleting'|'Failed'|'InService'|'Pending' $Status
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property ResourceSpec $ResourceSpec
+ * @property string|null $DomainId
+ * @property string|null $UserProfileName
+ * @property string|null $SpaceName
+ * @property 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas'|null $AppType
+ * @property string|null $AppName
+ * @property 'Deleted'|'Deleting'|'Failed'|'InService'|'Pending'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property ResourceSpec|null $ResourceSpec
  */
 class AppDetails extends Shape
 {
     /**
      * @param array{
-     *     DomainId?: string,
-     *     UserProfileName?: string,
-     *     SpaceName?: string,
-     *     AppType?: 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas',
-     *     AppName?: string,
-     *     Status?: 'Deleted'|'Deleting'|'Failed'|'InService'|'Pending',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     ResourceSpec?: ResourceSpec
+     *     DomainId?: string|null,
+     *     UserProfileName?: string|null,
+     *     SpaceName?: string|null,
+     *     AppType?: 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas'|null,
+     *     AppName?: string|null,
+     *     Status?: 'Deleted'|'Deleting'|'Failed'|'InService'|'Pending'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     ResourceSpec?: ResourceSpec|null
      * } $args
      */
     public function __construct(array $args = [])

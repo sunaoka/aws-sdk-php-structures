@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\PublishRecipe;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $Name
  */
 class PublishRecipeRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     Name: string
      * } $args
      */

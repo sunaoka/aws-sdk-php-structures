@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VisualId
- * @property VisualTitleLabelOptions $Title
- * @property VisualSubtitleLabelOptions $Subtitle
- * @property LineChartConfiguration $ChartConfiguration
- * @property list<VisualCustomAction> $Actions
- * @property list<ColumnHierarchy> $ColumnHierarchies
- * @property string $VisualContentAltText
+ * @property VisualTitleLabelOptions|null $Title
+ * @property VisualSubtitleLabelOptions|null $Subtitle
+ * @property LineChartConfiguration|null $ChartConfiguration
+ * @property list<VisualCustomAction>|null $Actions
+ * @property list<ColumnHierarchy>|null $ColumnHierarchies
+ * @property string|null $VisualContentAltText
  */
 class LineChartVisual extends Shape
 {
     /**
      * @param array{
      *     VisualId: string,
-     *     Title?: VisualTitleLabelOptions,
-     *     Subtitle?: VisualSubtitleLabelOptions,
-     *     ChartConfiguration?: LineChartConfiguration,
-     *     Actions?: list<VisualCustomAction>,
-     *     ColumnHierarchies?: list<ColumnHierarchy>,
-     *     VisualContentAltText?: string
+     *     Title?: VisualTitleLabelOptions|null,
+     *     Subtitle?: VisualSubtitleLabelOptions|null,
+     *     ChartConfiguration?: LineChartConfiguration|null,
+     *     Actions?: list<VisualCustomAction>|null,
+     *     ColumnHierarchies?: list<ColumnHierarchy>|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

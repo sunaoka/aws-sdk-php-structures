@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyLoadBalancerAttrib
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $Value
+ * @property string|null $Key
+ * @property string|null $Value
  */
 class LoadBalancerAttribute extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Value?: string
+     *     Key?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

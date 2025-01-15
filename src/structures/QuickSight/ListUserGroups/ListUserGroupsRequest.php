@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserName
  * @property string $AwsAccountId
  * @property string $Namespace
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListUserGroupsRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListUserGroupsRequest extends Request
      *     UserName: string,
      *     AwsAccountId: string,
      *     Namespace: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

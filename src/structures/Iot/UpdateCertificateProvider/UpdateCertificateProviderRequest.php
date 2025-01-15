@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $certificateProviderName
- * @property string $lambdaFunctionArn
- * @property list<'CreateCertificateFromCsr'> $accountDefaultForOperations
+ * @property string|null $lambdaFunctionArn
+ * @property list<'CreateCertificateFromCsr'>|null $accountDefaultForOperations
  */
 class UpdateCertificateProviderRequest extends Request
 {
     /**
      * @param array{
      *     certificateProviderName: string,
-     *     lambdaFunctionArn?: string,
-     *     accountDefaultForOperations?: list<'CreateCertificateFromCsr'>
+     *     lambdaFunctionArn?: string|null,
+     *     accountDefaultForOperations?: list<'CreateCertificateFromCsr'>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CleanRooms\ListMemberships\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MembershipModelTrainingPaymentConfig $modelTraining
- * @property MembershipModelInferencePaymentConfig $modelInference
+ * @property MembershipModelTrainingPaymentConfig|null $modelTraining
+ * @property MembershipModelInferencePaymentConfig|null $modelInference
  */
 class MembershipMLPaymentConfig extends Shape
 {
     /**
      * @param array{
-     *     modelTraining?: MembershipModelTrainingPaymentConfig,
-     *     modelInference?: MembershipModelInferencePaymentConfig
+     *     modelTraining?: MembershipModelTrainingPaymentConfig|null,
+     *     modelInference?: MembershipModelInferencePaymentConfig|null
      * } $args
      */
     public function __construct(array $args = [])

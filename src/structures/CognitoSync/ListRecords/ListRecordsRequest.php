@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IdentityPoolId
  * @property string $IdentityId
  * @property string $DatasetName
- * @property int $LastSyncCount
- * @property string $NextToken
- * @property int $MaxResults
- * @property string $SyncSessionToken
+ * @property int|null $LastSyncCount
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
+ * @property string|null $SyncSessionToken
  */
 class ListRecordsRequest extends Request
 {
@@ -20,10 +20,10 @@ class ListRecordsRequest extends Request
      *     IdentityPoolId: string,
      *     IdentityId: string,
      *     DatasetName: string,
-     *     LastSyncCount?: int,
-     *     NextToken?: string,
-     *     MaxResults?: int,
-     *     SyncSessionToken?: string
+     *     LastSyncCount?: int|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null,
+     *     SyncSessionToken?: string|null
      * } $args
      */
     public function __construct(array $args)

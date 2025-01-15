@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property string $baselineIdentifier
- * @property string $baselineVersion
- * @property list<EnabledBaselineParameterSummary> $parameters
- * @property string $parentIdentifier
+ * @property string|null $baselineVersion
+ * @property list<EnabledBaselineParameterSummary>|null $parameters
+ * @property string|null $parentIdentifier
  * @property EnablementStatusSummary $statusSummary
  * @property string $targetIdentifier
  */
@@ -19,9 +19,9 @@ class EnabledBaselineDetails extends Shape
      * @param array{
      *     arn: string,
      *     baselineIdentifier: string,
-     *     baselineVersion?: string,
-     *     parameters?: list<EnabledBaselineParameterSummary>,
-     *     parentIdentifier?: string,
+     *     baselineVersion?: string|null,
+     *     parameters?: list<EnabledBaselineParameterSummary>|null,
+     *     parentIdentifier?: string|null,
      *     statusSummary: EnablementStatusSummary,
      *     targetIdentifier: string
      * } $args

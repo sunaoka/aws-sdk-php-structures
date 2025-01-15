@@ -6,46 +6,46 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBClusterIdentifier
- * @property string $NewDBClusterIdentifier
- * @property bool $ApplyImmediately
- * @property int $BackupRetentionPeriod
- * @property string $DBClusterParameterGroupName
- * @property list<string> $VpcSecurityGroupIds
- * @property int $Port
- * @property string $MasterUserPassword
- * @property string $PreferredBackupWindow
- * @property string $PreferredMaintenanceWindow
- * @property Shapes\CloudwatchLogsExportConfiguration $CloudwatchLogsExportConfiguration
- * @property string $EngineVersion
- * @property bool $AllowMajorVersionUpgrade
- * @property bool $DeletionProtection
- * @property string $StorageType
- * @property bool $ManageMasterUserPassword
- * @property string $MasterUserSecretKmsKeyId
- * @property bool $RotateMasterUserPassword
+ * @property string|null $NewDBClusterIdentifier
+ * @property bool|null $ApplyImmediately
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $DBClusterParameterGroupName
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property int|null $Port
+ * @property string|null $MasterUserPassword
+ * @property string|null $PreferredBackupWindow
+ * @property string|null $PreferredMaintenanceWindow
+ * @property Shapes\CloudwatchLogsExportConfiguration|null $CloudwatchLogsExportConfiguration
+ * @property string|null $EngineVersion
+ * @property bool|null $AllowMajorVersionUpgrade
+ * @property bool|null $DeletionProtection
+ * @property string|null $StorageType
+ * @property bool|null $ManageMasterUserPassword
+ * @property string|null $MasterUserSecretKmsKeyId
+ * @property bool|null $RotateMasterUserPassword
  */
 class ModifyDBClusterRequest extends Request
 {
     /**
      * @param array{
      *     DBClusterIdentifier: string,
-     *     NewDBClusterIdentifier?: string,
-     *     ApplyImmediately?: bool,
-     *     BackupRetentionPeriod?: int,
-     *     DBClusterParameterGroupName?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     Port?: int,
-     *     MasterUserPassword?: string,
-     *     PreferredBackupWindow?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     CloudwatchLogsExportConfiguration?: Shapes\CloudwatchLogsExportConfiguration,
-     *     EngineVersion?: string,
-     *     AllowMajorVersionUpgrade?: bool,
-     *     DeletionProtection?: bool,
-     *     StorageType?: string,
-     *     ManageMasterUserPassword?: bool,
-     *     MasterUserSecretKmsKeyId?: string,
-     *     RotateMasterUserPassword?: bool
+     *     NewDBClusterIdentifier?: string|null,
+     *     ApplyImmediately?: bool|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     DBClusterParameterGroupName?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     Port?: int|null,
+     *     MasterUserPassword?: string|null,
+     *     PreferredBackupWindow?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     CloudwatchLogsExportConfiguration?: Shapes\CloudwatchLogsExportConfiguration|null,
+     *     EngineVersion?: string|null,
+     *     AllowMajorVersionUpgrade?: bool|null,
+     *     DeletionProtection?: bool|null,
+     *     StorageType?: string|null,
+     *     ManageMasterUserPassword?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null,
+     *     RotateMasterUserPassword?: bool|null
      * } $args
      */
     public function __construct(array $args)

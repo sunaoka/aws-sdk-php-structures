@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateAutoMLJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property string $S3OutputPath
  */
 class AutoMLOutputDataConfig extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     S3OutputPath: string
      * } $args
      */

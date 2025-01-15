@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $parentEntityId
- * @property string $componentTypeId
- * @property string $externalId
+ * @property string|null $parentEntityId
+ * @property string|null $componentTypeId
+ * @property string|null $externalId
  */
 class ListEntitiesFilter extends Shape
 {
     /**
      * @param array{
-     *     parentEntityId?: string,
-     *     componentTypeId?: string,
-     *     externalId?: string
+     *     parentEntityId?: string|null,
+     *     componentTypeId?: string|null,
+     *     externalId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

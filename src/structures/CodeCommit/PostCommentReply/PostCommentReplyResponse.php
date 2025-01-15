@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeCommit\PostCommentReply;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Comment $comment
+ * @property Shapes\Comment|null $comment
  */
 class PostCommentReplyResponse extends Response
 {

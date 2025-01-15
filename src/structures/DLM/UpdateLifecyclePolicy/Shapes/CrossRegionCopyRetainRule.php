@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DLM\UpdateLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, max> $Interval
- * @property 'DAYS'|'WEEKS'|'MONTHS'|'YEARS' $IntervalUnit
+ * @property int<1, max>|null $Interval
+ * @property 'DAYS'|'WEEKS'|'MONTHS'|'YEARS'|null $IntervalUnit
  */
 class CrossRegionCopyRetainRule extends Shape
 {
     /**
      * @param array{
-     *     Interval?: int<1, max>,
-     *     IntervalUnit?: 'DAYS'|'WEEKS'|'MONTHS'|'YEARS'
+     *     Interval?: int<1, max>|null,
+     *     IntervalUnit?: 'DAYS'|'WEEKS'|'MONTHS'|'YEARS'|null
      * } $args
      */
     public function __construct(array $args = [])

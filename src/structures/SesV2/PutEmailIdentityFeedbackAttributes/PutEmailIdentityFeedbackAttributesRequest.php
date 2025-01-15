@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EmailIdentity
- * @property bool $EmailForwardingEnabled
+ * @property bool|null $EmailForwardingEnabled
  */
 class PutEmailIdentityFeedbackAttributesRequest extends Request
 {
     /**
      * @param array{
      *     EmailIdentity: string,
-     *     EmailForwardingEnabled?: bool
+     *     EmailForwardingEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

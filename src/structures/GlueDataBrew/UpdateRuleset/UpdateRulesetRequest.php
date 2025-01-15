@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\Rule> $Rules
  */
 class UpdateRulesetRequest extends Request
@@ -14,7 +14,7 @@ class UpdateRulesetRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Rules: list<Shapes\Rule>
      * } $args
      */

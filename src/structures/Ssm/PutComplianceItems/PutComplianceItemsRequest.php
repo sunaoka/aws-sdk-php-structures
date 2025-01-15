@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ComplianceType
  * @property Shapes\ComplianceExecutionSummary $ExecutionSummary
  * @property list<Shapes\ComplianceItemEntry> $Items
- * @property string $ItemContentHash
- * @property 'COMPLETE'|'PARTIAL' $UploadType
+ * @property string|null $ItemContentHash
+ * @property 'COMPLETE'|'PARTIAL'|null $UploadType
  */
 class PutComplianceItemsRequest extends Request
 {
@@ -22,8 +22,8 @@ class PutComplianceItemsRequest extends Request
      *     ComplianceType: string,
      *     ExecutionSummary: Shapes\ComplianceExecutionSummary,
      *     Items: list<Shapes\ComplianceItemEntry>,
-     *     ItemContentHash?: string,
-     *     UploadType?: 'COMPLETE'|'PARTIAL'
+     *     ItemContentHash?: string|null,
+     *     UploadType?: 'COMPLETE'|'PARTIAL'|null
      * } $args
      */
     public function __construct(array $args)

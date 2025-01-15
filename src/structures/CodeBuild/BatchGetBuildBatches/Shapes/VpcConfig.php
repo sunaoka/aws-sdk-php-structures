@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeBuild\BatchGetBuildBatches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $vpcId
- * @property list<string> $subnets
- * @property list<string> $securityGroupIds
+ * @property string|null $vpcId
+ * @property list<string>|null $subnets
+ * @property list<string>|null $securityGroupIds
  */
 class VpcConfig extends Shape
 {
     /**
      * @param array{
-     *     vpcId?: string,
-     *     subnets?: list<string>,
-     *     securityGroupIds?: list<string>
+     *     vpcId?: string|null,
+     *     subnets?: list<string>|null,
+     *     securityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

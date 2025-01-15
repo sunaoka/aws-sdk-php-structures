@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\StartComposition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $featuredParticipantAttribute
- * @property bool $omitStoppedVideo
- * @property 'FILL'|'COVER'|'CONTAIN' $videoFillMode
- * @property int<0, max> $gridGap
- * @property string $pipParticipantAttribute
- * @property 'STATIC'|'DYNAMIC' $pipBehavior
- * @property int<0, max> $pipOffset
- * @property 'TOP_LEFT'|'TOP_RIGHT'|'BOTTOM_LEFT'|'BOTTOM_RIGHT' $pipPosition
- * @property int<1, max> $pipWidth
- * @property int<1, max> $pipHeight
+ * @property string|null $featuredParticipantAttribute
+ * @property bool|null $omitStoppedVideo
+ * @property 'FILL'|'COVER'|'CONTAIN'|null $videoFillMode
+ * @property int<0, max>|null $gridGap
+ * @property string|null $pipParticipantAttribute
+ * @property 'STATIC'|'DYNAMIC'|null $pipBehavior
+ * @property int<0, max>|null $pipOffset
+ * @property 'TOP_LEFT'|'TOP_RIGHT'|'BOTTOM_LEFT'|'BOTTOM_RIGHT'|null $pipPosition
+ * @property int<1, max>|null $pipWidth
+ * @property int<1, max>|null $pipHeight
  */
 class PipConfiguration extends Shape
 {
     /**
      * @param array{
-     *     featuredParticipantAttribute?: string,
-     *     omitStoppedVideo?: bool,
-     *     videoFillMode?: 'FILL'|'COVER'|'CONTAIN',
-     *     gridGap?: int<0, max>,
-     *     pipParticipantAttribute?: string,
-     *     pipBehavior?: 'STATIC'|'DYNAMIC',
-     *     pipOffset?: int<0, max>,
-     *     pipPosition?: 'TOP_LEFT'|'TOP_RIGHT'|'BOTTOM_LEFT'|'BOTTOM_RIGHT',
-     *     pipWidth?: int<1, max>,
-     *     pipHeight?: int<1, max>
+     *     featuredParticipantAttribute?: string|null,
+     *     omitStoppedVideo?: bool|null,
+     *     videoFillMode?: 'FILL'|'COVER'|'CONTAIN'|null,
+     *     gridGap?: int<0, max>|null,
+     *     pipParticipantAttribute?: string|null,
+     *     pipBehavior?: 'STATIC'|'DYNAMIC'|null,
+     *     pipOffset?: int<0, max>|null,
+     *     pipPosition?: 'TOP_LEFT'|'TOP_RIGHT'|'BOTTOM_LEFT'|'BOTTOM_RIGHT'|null,
+     *     pipWidth?: int<1, max>|null,
+     *     pipHeight?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

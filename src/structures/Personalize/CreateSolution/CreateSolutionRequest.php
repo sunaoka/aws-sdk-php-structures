@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property bool $performHPO
- * @property bool $performAutoML
- * @property bool $performAutoTraining
- * @property string $recipeArn
+ * @property bool|null $performHPO
+ * @property bool|null $performAutoML
+ * @property bool|null $performAutoTraining
+ * @property string|null $recipeArn
  * @property string $datasetGroupArn
- * @property string $eventType
- * @property Shapes\SolutionConfig $solutionConfig
- * @property list<Shapes\Tag> $tags
+ * @property string|null $eventType
+ * @property Shapes\SolutionConfig|null $solutionConfig
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateSolutionRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     performHPO?: bool,
-     *     performAutoML?: bool,
-     *     performAutoTraining?: bool,
-     *     recipeArn?: string,
+     *     performHPO?: bool|null,
+     *     performAutoML?: bool|null,
+     *     performAutoTraining?: bool|null,
+     *     recipeArn?: string|null,
      *     datasetGroupArn: string,
-     *     eventType?: string,
-     *     solutionConfig?: Shapes\SolutionConfig,
-     *     tags?: list<Shapes\Tag>
+     *     eventType?: string|null,
+     *     solutionConfig?: Shapes\SolutionConfig|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

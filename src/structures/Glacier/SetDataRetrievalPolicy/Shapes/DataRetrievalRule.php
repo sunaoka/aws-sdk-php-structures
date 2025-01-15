@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glacier\SetDataRetrievalPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Strategy
- * @property int $BytesPerHour
+ * @property string|null $Strategy
+ * @property int|null $BytesPerHour
  */
 class DataRetrievalRule extends Shape
 {
     /**
      * @param array{
-     *     Strategy?: string,
-     *     BytesPerHour?: int
+     *     Strategy?: string|null,
+     *     BytesPerHour?: int|null
      * } $args
      */
     public function __construct(array $args = [])

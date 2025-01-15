@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DescribeChangeSetHooks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LogicalResourceId
- * @property string $ResourceType
- * @property 'Add'|'Modify'|'Remove'|'Import'|'Dynamic' $ResourceAction
+ * @property string|null $LogicalResourceId
+ * @property string|null $ResourceType
+ * @property 'Add'|'Modify'|'Remove'|'Import'|'Dynamic'|null $ResourceAction
  */
 class ChangeSetHookResourceTargetDetails extends Shape
 {
     /**
      * @param array{
-     *     LogicalResourceId?: string,
-     *     ResourceType?: string,
-     *     ResourceAction?: 'Add'|'Modify'|'Remove'|'Import'|'Dynamic'
+     *     LogicalResourceId?: string|null,
+     *     ResourceType?: string|null,
+     *     ResourceAction?: 'Add'|'Modify'|'Remove'|'Import'|'Dynamic'|null
      * } $args
      */
     public function __construct(array $args = [])

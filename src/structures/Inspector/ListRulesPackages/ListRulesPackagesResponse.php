@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $rulesPackageArns
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListRulesPackagesResponse extends Response
 {

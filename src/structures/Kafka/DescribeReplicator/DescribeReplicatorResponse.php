@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeReplicator;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $CurrentVersion
- * @property bool $IsReplicatorReference
- * @property list<Shapes\KafkaClusterDescription> $KafkaClusters
- * @property list<Shapes\ReplicationInfoDescription> $ReplicationInfoList
- * @property string $ReplicatorArn
- * @property string $ReplicatorDescription
- * @property string $ReplicatorName
- * @property string $ReplicatorResourceArn
- * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED' $ReplicatorState
- * @property string $ServiceExecutionRoleArn
- * @property Shapes\ReplicationStateInfo $StateInfo
- * @property array<string, string> $Tags
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $CurrentVersion
+ * @property bool|null $IsReplicatorReference
+ * @property list<Shapes\KafkaClusterDescription>|null $KafkaClusters
+ * @property list<Shapes\ReplicationInfoDescription>|null $ReplicationInfoList
+ * @property string|null $ReplicatorArn
+ * @property string|null $ReplicatorDescription
+ * @property string|null $ReplicatorName
+ * @property string|null $ReplicatorResourceArn
+ * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|null $ReplicatorState
+ * @property string|null $ServiceExecutionRoleArn
+ * @property Shapes\ReplicationStateInfo|null $StateInfo
+ * @property array<string, string>|null $Tags
  */
 class DescribeReplicatorResponse extends Response
 {

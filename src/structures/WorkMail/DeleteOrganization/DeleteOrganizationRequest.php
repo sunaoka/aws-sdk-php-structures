@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkMail\DeleteOrganization;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $OrganizationId
  * @property bool $DeleteDirectory
- * @property bool $ForceDelete
- * @property bool $DeleteIdentityCenterApplication
+ * @property bool|null $ForceDelete
+ * @property bool|null $DeleteIdentityCenterApplication
  */
 class DeleteOrganizationRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     OrganizationId: string,
      *     DeleteDirectory: bool,
-     *     ForceDelete?: bool,
-     *     DeleteIdentityCenterApplication?: bool
+     *     ForceDelete?: bool|null,
+     *     DeleteIdentityCenterApplication?: bool|null
      * } $args
      */
     public function __construct(array $args)

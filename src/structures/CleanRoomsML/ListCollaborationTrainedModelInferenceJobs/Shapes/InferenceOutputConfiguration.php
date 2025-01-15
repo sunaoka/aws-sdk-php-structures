@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\ListCollaborationTrainedModelInfer
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accept
+ * @property string|null $accept
  * @property list<InferenceReceiverMember> $members
  */
 class InferenceOutputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     accept?: string,
+     *     accept?: string|null,
      *     members: list<InferenceReceiverMember>
      * } $args
      */

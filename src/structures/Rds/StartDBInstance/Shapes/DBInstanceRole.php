@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rds\StartDBInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoleArn
- * @property string $FeatureName
- * @property string $Status
+ * @property string|null $RoleArn
+ * @property string|null $FeatureName
+ * @property string|null $Status
  */
 class DBInstanceRole extends Shape
 {
     /**
      * @param array{
-     *     RoleArn?: string,
-     *     FeatureName?: string,
-     *     Status?: string
+     *     RoleArn?: string|null,
+     *     FeatureName?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

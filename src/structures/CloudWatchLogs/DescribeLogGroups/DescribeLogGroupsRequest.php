@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeLogGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $accountIdentifiers
- * @property string $logGroupNamePrefix
- * @property string $logGroupNamePattern
- * @property string $nextToken
- * @property int<1, 50> $limit
- * @property bool $includeLinkedAccounts
- * @property 'STANDARD'|'INFREQUENT_ACCESS' $logGroupClass
+ * @property list<string>|null $accountIdentifiers
+ * @property string|null $logGroupNamePrefix
+ * @property string|null $logGroupNamePattern
+ * @property string|null $nextToken
+ * @property int<1, 50>|null $limit
+ * @property bool|null $includeLinkedAccounts
+ * @property 'STANDARD'|'INFREQUENT_ACCESS'|null $logGroupClass
  */
 class DescribeLogGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     accountIdentifiers?: list<string>,
-     *     logGroupNamePrefix?: string,
-     *     logGroupNamePattern?: string,
-     *     nextToken?: string,
-     *     limit?: int<1, 50>,
-     *     includeLinkedAccounts?: bool,
-     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'
+     *     accountIdentifiers?: list<string>|null,
+     *     logGroupNamePrefix?: string|null,
+     *     logGroupNamePattern?: string|null,
+     *     nextToken?: string|null,
+     *     limit?: int<1, 50>|null,
+     *     includeLinkedAccounts?: bool|null,
+     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|null
      * } $args
      */
     public function __construct(array $args = [])

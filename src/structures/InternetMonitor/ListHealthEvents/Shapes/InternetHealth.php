@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\InternetMonitor\ListHealthEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AvailabilityMeasurement $Availability
- * @property PerformanceMeasurement $Performance
+ * @property AvailabilityMeasurement|null $Availability
+ * @property PerformanceMeasurement|null $Performance
  */
 class InternetHealth extends Shape
 {
     /**
      * @param array{
-     *     Availability?: AvailabilityMeasurement,
-     *     Performance?: PerformanceMeasurement
+     *     Availability?: AvailabilityMeasurement|null,
+     *     Performance?: PerformanceMeasurement|null
      * } $args
      */
     public function __construct(array $args = [])

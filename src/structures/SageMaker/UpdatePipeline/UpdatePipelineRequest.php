@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PipelineName
- * @property string $PipelineDisplayName
- * @property string $PipelineDefinition
- * @property Shapes\PipelineDefinitionS3Location $PipelineDefinitionS3Location
- * @property string $PipelineDescription
- * @property string $RoleArn
- * @property Shapes\ParallelismConfiguration $ParallelismConfiguration
+ * @property string|null $PipelineDisplayName
+ * @property string|null $PipelineDefinition
+ * @property Shapes\PipelineDefinitionS3Location|null $PipelineDefinitionS3Location
+ * @property string|null $PipelineDescription
+ * @property string|null $RoleArn
+ * @property Shapes\ParallelismConfiguration|null $ParallelismConfiguration
  */
 class UpdatePipelineRequest extends Request
 {
     /**
      * @param array{
      *     PipelineName: string,
-     *     PipelineDisplayName?: string,
-     *     PipelineDefinition?: string,
-     *     PipelineDefinitionS3Location?: Shapes\PipelineDefinitionS3Location,
-     *     PipelineDescription?: string,
-     *     RoleArn?: string,
-     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration
+     *     PipelineDisplayName?: string|null,
+     *     PipelineDefinition?: string|null,
+     *     PipelineDefinitionS3Location?: Shapes\PipelineDefinitionS3Location|null,
+     *     PipelineDescription?: string|null,
+     *     RoleArn?: string|null,
+     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration|null
      * } $args
      */
     public function __construct(array $args)

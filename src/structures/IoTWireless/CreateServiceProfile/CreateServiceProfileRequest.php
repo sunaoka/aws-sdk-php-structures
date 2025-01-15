@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTWireless\CreateServiceProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
- * @property Shapes\LoRaWANServiceProfile $LoRaWAN
- * @property list<Shapes\Tag> $Tags
- * @property string $ClientRequestToken
+ * @property string|null $Name
+ * @property Shapes\LoRaWANServiceProfile|null $LoRaWAN
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientRequestToken
  */
 class CreateServiceProfileRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     LoRaWAN?: Shapes\LoRaWANServiceProfile,
-     *     Tags?: list<Shapes\Tag>,
-     *     ClientRequestToken?: string
+     *     Name?: string|null,
+     *     LoRaWAN?: Shapes\LoRaWANServiceProfile|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

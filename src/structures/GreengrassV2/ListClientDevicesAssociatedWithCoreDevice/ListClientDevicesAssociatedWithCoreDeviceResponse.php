@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\ListClientDevicesAssociatedWithCor
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AssociatedClientDevice> $associatedClientDevices
- * @property string $nextToken
+ * @property list<Shapes\AssociatedClientDevice>|null $associatedClientDevices
+ * @property string|null $nextToken
  */
 class ListClientDevicesAssociatedWithCoreDeviceResponse extends Response
 {

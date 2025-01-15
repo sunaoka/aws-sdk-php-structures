@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFormation\CreateStackInstances;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $OperationId
+ * @property string|null $OperationId
  */
 class CreateStackInstancesResponse extends Response
 {

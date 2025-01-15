@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $namespaceName
- * @property int $retentionPeriod
+ * @property int|null $retentionPeriod
  * @property string $snapshotNamePrefix
- * @property list<Tag> $tags
+ * @property list<Tag>|null $tags
  */
 class CreateSnapshotScheduleActionParameters extends Shape
 {
     /**
      * @param array{
      *     namespaceName: string,
-     *     retentionPeriod?: int,
+     *     retentionPeriod?: int|null,
      *     snapshotNamePrefix: string,
-     *     tags?: list<Tag>
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

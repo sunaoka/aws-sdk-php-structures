@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBClusterIdentifier
- * @property int $Capacity
- * @property int $SecondsBeforeTimeout
- * @property string $TimeoutAction
+ * @property int|null $Capacity
+ * @property int|null $SecondsBeforeTimeout
+ * @property string|null $TimeoutAction
  */
 class ModifyCurrentDBClusterCapacityRequest extends Request
 {
     /**
      * @param array{
      *     DBClusterIdentifier: string,
-     *     Capacity?: int,
-     *     SecondsBeforeTimeout?: int,
-     *     TimeoutAction?: string
+     *     Capacity?: int|null,
+     *     SecondsBeforeTimeout?: int|null,
+     *     TimeoutAction?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ConfigRuleName
  * @property list<Shapes\RemediationExceptionResourceKey> $ResourceKeys
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $ExpirationTime
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTime
  */
 class PutRemediationExceptionsRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutRemediationExceptionsRequest extends Request
      * @param array{
      *     ConfigRuleName: string,
      *     ResourceKeys: list<Shapes\RemediationExceptionResourceKey>,
-     *     Message?: string,
-     *     ExpirationTime?: \Aws\Api\DateTimeResult
+     *     Message?: string|null,
+     *     ExpirationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

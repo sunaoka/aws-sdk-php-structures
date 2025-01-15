@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EMRContainers\CreateSecurityConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TLSCertificateConfiguration $tlsCertificateConfiguration
+ * @property TLSCertificateConfiguration|null $tlsCertificateConfiguration
  */
 class InTransitEncryptionConfiguration extends Shape
 {
     /**
-     * @param array{tlsCertificateConfiguration?: TLSCertificateConfiguration} $args
+     * @param array{tlsCertificateConfiguration?: TLSCertificateConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

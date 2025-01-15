@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ManifestName
- * @property string $ChildManifestName
- * @property ScteHls $ScteHls
- * @property StartTag $StartTag
- * @property int<30, max> $ManifestWindowSeconds
- * @property int<1, 1209600> $ProgramDateTimeIntervalSeconds
- * @property FilterConfiguration $FilterConfiguration
+ * @property string|null $ChildManifestName
+ * @property ScteHls|null $ScteHls
+ * @property StartTag|null $StartTag
+ * @property int<30, max>|null $ManifestWindowSeconds
+ * @property int<1, 1209600>|null $ProgramDateTimeIntervalSeconds
+ * @property FilterConfiguration|null $FilterConfiguration
  */
 class CreateLowLatencyHlsManifestConfiguration extends Shape
 {
     /**
      * @param array{
      *     ManifestName: string,
-     *     ChildManifestName?: string,
-     *     ScteHls?: ScteHls,
-     *     StartTag?: StartTag,
-     *     ManifestWindowSeconds?: int<30, max>,
-     *     ProgramDateTimeIntervalSeconds?: int<1, 1209600>,
-     *     FilterConfiguration?: FilterConfiguration
+     *     ChildManifestName?: string|null,
+     *     ScteHls?: ScteHls|null,
+     *     StartTag?: StartTag|null,
+     *     ManifestWindowSeconds?: int<30, max>|null,
+     *     ProgramDateTimeIntervalSeconds?: int<1, 1209600>|null,
+     *     FilterConfiguration?: FilterConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\S3\PutObjectLockConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'requester' $RequestCharged
+ * @property 'requester'|null $RequestCharged
  */
 class PutObjectLockConfigurationResponse extends Response
 {

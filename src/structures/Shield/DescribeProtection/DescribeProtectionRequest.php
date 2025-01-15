@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Shield\DescribeProtection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ProtectionId
- * @property string $ResourceArn
+ * @property string|null $ProtectionId
+ * @property string|null $ResourceArn
  */
 class DescribeProtectionRequest extends Request
 {
     /**
      * @param array{
-     *     ProtectionId?: string,
-     *     ResourceArn?: string
+     *     ProtectionId?: string|null,
+     *     ResourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

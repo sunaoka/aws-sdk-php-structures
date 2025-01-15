@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Transfer\DescribeWebApp\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationArn
- * @property string $InstanceArn
- * @property string $Role
+ * @property string|null $ApplicationArn
+ * @property string|null $InstanceArn
+ * @property string|null $Role
  */
 class DescribedIdentityCenterConfig extends Shape
 {
     /**
      * @param array{
-     *     ApplicationArn?: string,
-     *     InstanceArn?: string,
-     *     Role?: string
+     *     ApplicationArn?: string|null,
+     *     InstanceArn?: string|null,
+     *     Role?: string|null
      * } $args
      */
     public function __construct(array $args = [])

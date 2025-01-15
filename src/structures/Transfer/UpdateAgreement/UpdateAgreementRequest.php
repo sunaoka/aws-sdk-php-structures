@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AgreementId
  * @property string $ServerId
- * @property string $Description
- * @property 'ACTIVE'|'INACTIVE' $Status
- * @property string $LocalProfileId
- * @property string $PartnerProfileId
- * @property string $BaseDirectory
- * @property string $AccessRole
- * @property 'ENABLED'|'DISABLED' $PreserveFilename
- * @property 'ENABLED'|'DISABLED' $EnforceMessageSigning
+ * @property string|null $Description
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property string|null $LocalProfileId
+ * @property string|null $PartnerProfileId
+ * @property string|null $BaseDirectory
+ * @property string|null $AccessRole
+ * @property 'ENABLED'|'DISABLED'|null $PreserveFilename
+ * @property 'ENABLED'|'DISABLED'|null $EnforceMessageSigning
  */
 class UpdateAgreementRequest extends Request
 {
@@ -22,14 +22,14 @@ class UpdateAgreementRequest extends Request
      * @param array{
      *     AgreementId: string,
      *     ServerId: string,
-     *     Description?: string,
-     *     Status?: 'ACTIVE'|'INACTIVE',
-     *     LocalProfileId?: string,
-     *     PartnerProfileId?: string,
-     *     BaseDirectory?: string,
-     *     AccessRole?: string,
-     *     PreserveFilename?: 'ENABLED'|'DISABLED',
-     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'
+     *     Description?: string|null,
+     *     Status?: 'ACTIVE'|'INACTIVE'|null,
+     *     LocalProfileId?: string|null,
+     *     PartnerProfileId?: string|null,
+     *     BaseDirectory?: string|null,
+     *     AccessRole?: string|null,
+     *     PreserveFilename?: 'ENABLED'|'DISABLED'|null,
+     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

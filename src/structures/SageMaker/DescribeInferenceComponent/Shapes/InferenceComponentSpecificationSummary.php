@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeInferenceComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelName
- * @property InferenceComponentContainerSpecificationSummary $Container
- * @property InferenceComponentStartupParameters $StartupParameters
- * @property InferenceComponentComputeResourceRequirements $ComputeResourceRequirements
- * @property string $BaseInferenceComponentName
+ * @property string|null $ModelName
+ * @property InferenceComponentContainerSpecificationSummary|null $Container
+ * @property InferenceComponentStartupParameters|null $StartupParameters
+ * @property InferenceComponentComputeResourceRequirements|null $ComputeResourceRequirements
+ * @property string|null $BaseInferenceComponentName
  */
 class InferenceComponentSpecificationSummary extends Shape
 {
     /**
      * @param array{
-     *     ModelName?: string,
-     *     Container?: InferenceComponentContainerSpecificationSummary,
-     *     StartupParameters?: InferenceComponentStartupParameters,
-     *     ComputeResourceRequirements?: InferenceComponentComputeResourceRequirements,
-     *     BaseInferenceComponentName?: string
+     *     ModelName?: string|null,
+     *     Container?: InferenceComponentContainerSpecificationSummary|null,
+     *     StartupParameters?: InferenceComponentStartupParameters|null,
+     *     ComputeResourceRequirements?: InferenceComponentComputeResourceRequirements|null,
+     *     BaseInferenceComponentName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

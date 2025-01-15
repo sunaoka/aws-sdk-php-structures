@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $monitorId
- * @property string $subdomain
- * @property string $displayName
- * @property string $roleArn
+ * @property string|null $subdomain
+ * @property string|null $displayName
+ * @property string|null $roleArn
  */
 class UpdateMonitorRequest extends Request
 {
     /**
      * @param array{
      *     monitorId: string,
-     *     subdomain?: string,
-     *     displayName?: string,
-     *     roleArn?: string
+     *     subdomain?: string|null,
+     *     displayName?: string|null,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

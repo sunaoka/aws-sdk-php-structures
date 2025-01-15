@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ListTables;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $TableNames
- * @property string $LastEvaluatedTableName
+ * @property list<string>|null $TableNames
+ * @property string|null $LastEvaluatedTableName
  */
 class ListTablesResponse extends Response
 {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DirectoryService\ListCertificates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateId
- * @property string $CommonName
- * @property 'Registering'|'Registered'|'RegisterFailed'|'Deregistering'|'Deregistered'|'DeregisterFailed' $State
- * @property \Aws\Api\DateTimeResult $ExpiryDateTime
- * @property 'ClientCertAuth'|'ClientLDAPS' $Type
+ * @property string|null $CertificateId
+ * @property string|null $CommonName
+ * @property 'Registering'|'Registered'|'RegisterFailed'|'Deregistering'|'Deregistered'|'DeregisterFailed'|null $State
+ * @property \Aws\Api\DateTimeResult|null $ExpiryDateTime
+ * @property 'ClientCertAuth'|'ClientLDAPS'|null $Type
  */
 class CertificateInfo extends Shape
 {
     /**
      * @param array{
-     *     CertificateId?: string,
-     *     CommonName?: string,
-     *     State?: 'Registering'|'Registered'|'RegisterFailed'|'Deregistering'|'Deregistered'|'DeregisterFailed',
-     *     ExpiryDateTime?: \Aws\Api\DateTimeResult,
-     *     Type?: 'ClientCertAuth'|'ClientLDAPS'
+     *     CertificateId?: string|null,
+     *     CommonName?: string|null,
+     *     State?: 'Registering'|'Registered'|'RegisterFailed'|'Deregistering'|'Deregistered'|'DeregisterFailed'|null,
+     *     ExpiryDateTime?: \Aws\Api\DateTimeResult|null,
+     *     Type?: 'ClientCertAuth'|'ClientLDAPS'|null
      * } $args
      */
     public function __construct(array $args = [])

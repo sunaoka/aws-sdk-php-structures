@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribeForecast;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ForecastArn
- * @property string $ForecastName
- * @property list<string> $ForecastTypes
- * @property string $PredictorArn
- * @property string $DatasetGroupArn
- * @property int $EstimatedTimeRemainingInMinutes
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
- * @property Shapes\TimeSeriesSelector $TimeSeriesSelector
+ * @property string|null $ForecastArn
+ * @property string|null $ForecastName
+ * @property list<string>|null $ForecastTypes
+ * @property string|null $PredictorArn
+ * @property string|null $DatasetGroupArn
+ * @property int|null $EstimatedTimeRemainingInMinutes
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
+ * @property Shapes\TimeSeriesSelector|null $TimeSeriesSelector
  */
 class DescribeForecastResponse extends Response
 {

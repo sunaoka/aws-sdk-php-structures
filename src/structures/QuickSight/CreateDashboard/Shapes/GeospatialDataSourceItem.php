@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialStaticFileSource $StaticFileDataSource
+ * @property GeospatialStaticFileSource|null $StaticFileDataSource
  */
 class GeospatialDataSourceItem extends Shape
 {
     /**
-     * @param array{StaticFileDataSource?: GeospatialStaticFileSource} $args
+     * @param array{StaticFileDataSource?: GeospatialStaticFileSource|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\mgn\StartImport;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ImportTask $importTask
+ * @property Shapes\ImportTask|null $importTask
  */
 class StartImportResponse extends Response
 {

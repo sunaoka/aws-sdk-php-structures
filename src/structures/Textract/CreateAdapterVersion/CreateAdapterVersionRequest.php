@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AdapterId
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property Shapes\AdapterVersionDatasetConfig $DatasetConfig
- * @property string $KMSKeyId
+ * @property string|null $KMSKeyId
  * @property Shapes\OutputConfig $OutputConfig
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateAdapterVersionRequest extends Request
 {
     /**
      * @param array{
      *     AdapterId: string,
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     DatasetConfig: Shapes\AdapterVersionDatasetConfig,
-     *     KMSKeyId?: string,
+     *     KMSKeyId?: string|null,
      *     OutputConfig: Shapes\OutputConfig,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Transfer\DescribeSecurityPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Fips
+ * @property bool|null $Fips
  * @property string $SecurityPolicyName
- * @property list<string> $SshCiphers
- * @property list<string> $SshKexs
- * @property list<string> $SshMacs
- * @property list<string> $TlsCiphers
- * @property list<string> $SshHostKeyAlgorithms
- * @property 'SERVER'|'CONNECTOR' $Type
- * @property list<'SFTP'|'FTPS'> $Protocols
+ * @property list<string>|null $SshCiphers
+ * @property list<string>|null $SshKexs
+ * @property list<string>|null $SshMacs
+ * @property list<string>|null $TlsCiphers
+ * @property list<string>|null $SshHostKeyAlgorithms
+ * @property 'SERVER'|'CONNECTOR'|null $Type
+ * @property list<'SFTP'|'FTPS'>|null $Protocols
  */
 class DescribedSecurityPolicy extends Shape
 {
     /**
      * @param array{
-     *     Fips?: bool,
+     *     Fips?: bool|null,
      *     SecurityPolicyName: string,
-     *     SshCiphers?: list<string>,
-     *     SshKexs?: list<string>,
-     *     SshMacs?: list<string>,
-     *     TlsCiphers?: list<string>,
-     *     SshHostKeyAlgorithms?: list<string>,
-     *     Type?: 'SERVER'|'CONNECTOR',
-     *     Protocols?: list<'SFTP'|'FTPS'>
+     *     SshCiphers?: list<string>|null,
+     *     SshKexs?: list<string>|null,
+     *     SshMacs?: list<string>|null,
+     *     TlsCiphers?: list<string>|null,
+     *     SshHostKeyAlgorithms?: list<string>|null,
+     *     Type?: 'SERVER'|'CONNECTOR'|null,
+     *     Protocols?: list<'SFTP'|'FTPS'>|null
      * } $args
      */
     public function __construct(array $args)

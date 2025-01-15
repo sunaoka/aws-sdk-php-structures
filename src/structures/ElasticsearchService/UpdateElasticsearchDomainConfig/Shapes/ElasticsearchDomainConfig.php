@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\UpdateElasticsearchDomainC
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ElasticsearchVersionStatus $ElasticsearchVersion
- * @property ElasticsearchClusterConfigStatus $ElasticsearchClusterConfig
- * @property EBSOptionsStatus $EBSOptions
- * @property AccessPoliciesStatus $AccessPolicies
- * @property SnapshotOptionsStatus $SnapshotOptions
- * @property VPCDerivedInfoStatus $VPCOptions
- * @property CognitoOptionsStatus $CognitoOptions
- * @property EncryptionAtRestOptionsStatus $EncryptionAtRestOptions
- * @property NodeToNodeEncryptionOptionsStatus $NodeToNodeEncryptionOptions
- * @property AdvancedOptionsStatus $AdvancedOptions
- * @property LogPublishingOptionsStatus $LogPublishingOptions
- * @property DomainEndpointOptionsStatus $DomainEndpointOptions
- * @property AdvancedSecurityOptionsStatus $AdvancedSecurityOptions
- * @property AutoTuneOptionsStatus $AutoTuneOptions
- * @property ChangeProgressDetails $ChangeProgressDetails
- * @property list<ModifyingProperties> $ModifyingProperties
+ * @property ElasticsearchVersionStatus|null $ElasticsearchVersion
+ * @property ElasticsearchClusterConfigStatus|null $ElasticsearchClusterConfig
+ * @property EBSOptionsStatus|null $EBSOptions
+ * @property AccessPoliciesStatus|null $AccessPolicies
+ * @property SnapshotOptionsStatus|null $SnapshotOptions
+ * @property VPCDerivedInfoStatus|null $VPCOptions
+ * @property CognitoOptionsStatus|null $CognitoOptions
+ * @property EncryptionAtRestOptionsStatus|null $EncryptionAtRestOptions
+ * @property NodeToNodeEncryptionOptionsStatus|null $NodeToNodeEncryptionOptions
+ * @property AdvancedOptionsStatus|null $AdvancedOptions
+ * @property LogPublishingOptionsStatus|null $LogPublishingOptions
+ * @property DomainEndpointOptionsStatus|null $DomainEndpointOptions
+ * @property AdvancedSecurityOptionsStatus|null $AdvancedSecurityOptions
+ * @property AutoTuneOptionsStatus|null $AutoTuneOptions
+ * @property ChangeProgressDetails|null $ChangeProgressDetails
+ * @property list<ModifyingProperties>|null $ModifyingProperties
  */
 class ElasticsearchDomainConfig extends Shape
 {
     /**
      * @param array{
-     *     ElasticsearchVersion?: ElasticsearchVersionStatus,
-     *     ElasticsearchClusterConfig?: ElasticsearchClusterConfigStatus,
-     *     EBSOptions?: EBSOptionsStatus,
-     *     AccessPolicies?: AccessPoliciesStatus,
-     *     SnapshotOptions?: SnapshotOptionsStatus,
-     *     VPCOptions?: VPCDerivedInfoStatus,
-     *     CognitoOptions?: CognitoOptionsStatus,
-     *     EncryptionAtRestOptions?: EncryptionAtRestOptionsStatus,
-     *     NodeToNodeEncryptionOptions?: NodeToNodeEncryptionOptionsStatus,
-     *     AdvancedOptions?: AdvancedOptionsStatus,
-     *     LogPublishingOptions?: LogPublishingOptionsStatus,
-     *     DomainEndpointOptions?: DomainEndpointOptionsStatus,
-     *     AdvancedSecurityOptions?: AdvancedSecurityOptionsStatus,
-     *     AutoTuneOptions?: AutoTuneOptionsStatus,
-     *     ChangeProgressDetails?: ChangeProgressDetails,
-     *     ModifyingProperties?: list<ModifyingProperties>
+     *     ElasticsearchVersion?: ElasticsearchVersionStatus|null,
+     *     ElasticsearchClusterConfig?: ElasticsearchClusterConfigStatus|null,
+     *     EBSOptions?: EBSOptionsStatus|null,
+     *     AccessPolicies?: AccessPoliciesStatus|null,
+     *     SnapshotOptions?: SnapshotOptionsStatus|null,
+     *     VPCOptions?: VPCDerivedInfoStatus|null,
+     *     CognitoOptions?: CognitoOptionsStatus|null,
+     *     EncryptionAtRestOptions?: EncryptionAtRestOptionsStatus|null,
+     *     NodeToNodeEncryptionOptions?: NodeToNodeEncryptionOptionsStatus|null,
+     *     AdvancedOptions?: AdvancedOptionsStatus|null,
+     *     LogPublishingOptions?: LogPublishingOptionsStatus|null,
+     *     DomainEndpointOptions?: DomainEndpointOptionsStatus|null,
+     *     AdvancedSecurityOptions?: AdvancedSecurityOptionsStatus|null,
+     *     AutoTuneOptions?: AutoTuneOptionsStatus|null,
+     *     ChangeProgressDetails?: ChangeProgressDetails|null,
+     *     ModifyingProperties?: list<ModifyingProperties>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateConnectAttachment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Tag> $Tags
- * @property int $AttachmentPolicyRuleNumber
- * @property string $SegmentName
+ * @property list<Tag>|null $Tags
+ * @property int|null $AttachmentPolicyRuleNumber
+ * @property string|null $SegmentName
  */
 class ProposedSegmentChange extends Shape
 {
     /**
      * @param array{
-     *     Tags?: list<Tag>,
-     *     AttachmentPolicyRuleNumber?: int,
-     *     SegmentName?: string
+     *     Tags?: list<Tag>|null,
+     *     AttachmentPolicyRuleNumber?: int|null,
+     *     SegmentName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

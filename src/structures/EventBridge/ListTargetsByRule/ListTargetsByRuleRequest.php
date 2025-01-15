@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Rule
- * @property string $EventBusName
- * @property string $NextToken
- * @property int<1, 100> $Limit
+ * @property string|null $EventBusName
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $Limit
  */
 class ListTargetsByRuleRequest extends Request
 {
     /**
      * @param array{
      *     Rule: string,
-     *     EventBusName?: string,
-     *     NextToken?: string,
-     *     Limit?: int<1, 100>
+     *     EventBusName?: string|null,
+     *     NextToken?: string|null,
+     *     Limit?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

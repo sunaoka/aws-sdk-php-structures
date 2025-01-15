@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudSearchDomain\Suggest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $suggestion
- * @property int $score
- * @property string $id
+ * @property string|null $suggestion
+ * @property int|null $score
+ * @property string|null $id
  */
 class SuggestionMatch extends Shape
 {
     /**
      * @param array{
-     *     suggestion?: string,
-     *     score?: int,
-     *     id?: string
+     *     suggestion?: string|null,
+     *     score?: int|null,
+     *     id?: string|null
      * } $args
      */
     public function __construct(array $args = [])

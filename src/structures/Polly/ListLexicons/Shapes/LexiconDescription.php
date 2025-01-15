@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Polly\ListLexicons\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property LexiconAttributes $Attributes
+ * @property string|null $Name
+ * @property LexiconAttributes|null $Attributes
  */
 class LexiconDescription extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Attributes?: LexiconAttributes
+     *     Name?: string|null,
+     *     Attributes?: LexiconAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AxisScale $Scale
- * @property AxisDisplayRange $Range
+ * @property AxisScale|null $Scale
+ * @property AxisDisplayRange|null $Range
  */
 class NumericAxisOptions extends Shape
 {
     /**
      * @param array{
-     *     Scale?: AxisScale,
-     *     Range?: AxisDisplayRange
+     *     Scale?: AxisScale|null,
+     *     Range?: AxisDisplayRange|null
      * } $args
      */
     public function __construct(array $args = [])

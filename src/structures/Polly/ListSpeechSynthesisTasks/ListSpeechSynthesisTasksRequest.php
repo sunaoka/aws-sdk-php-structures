@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Polly\ListSpeechSynthesisTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property 'scheduled'|'inProgress'|'completed'|'failed' $Status
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property 'scheduled'|'inProgress'|'completed'|'failed'|null $Status
  */
 class ListSpeechSynthesisTasksRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     Status?: 'scheduled'|'inProgress'|'completed'|'failed'
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     Status?: 'scheduled'|'inProgress'|'completed'|'failed'|null
      * } $args
      */
     public function __construct(array $args = [])

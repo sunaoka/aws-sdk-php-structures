@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3OutputPath
- * @property string $KmsKeyId
- * @property string $SnsTopicArn
+ * @property string|null $KmsKeyId
+ * @property string|null $SnsTopicArn
  */
 class LabelingJobOutputConfig extends Shape
 {
     /**
      * @param array{
      *     S3OutputPath: string,
-     *     KmsKeyId?: string,
-     *     SnsTopicArn?: string
+     *     KmsKeyId?: string|null,
+     *     SnsTopicArn?: string|null
      * } $args
      */
     public function __construct(array $args)

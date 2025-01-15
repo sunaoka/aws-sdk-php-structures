@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Athena\GetQueryRuntimeStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $QueryQueueTimeInMillis
- * @property int $ServicePreProcessingTimeInMillis
- * @property int $QueryPlanningTimeInMillis
- * @property int $EngineExecutionTimeInMillis
- * @property int $ServiceProcessingTimeInMillis
- * @property int $TotalExecutionTimeInMillis
+ * @property int|null $QueryQueueTimeInMillis
+ * @property int|null $ServicePreProcessingTimeInMillis
+ * @property int|null $QueryPlanningTimeInMillis
+ * @property int|null $EngineExecutionTimeInMillis
+ * @property int|null $ServiceProcessingTimeInMillis
+ * @property int|null $TotalExecutionTimeInMillis
  */
 class QueryRuntimeStatisticsTimeline extends Shape
 {
     /**
      * @param array{
-     *     QueryQueueTimeInMillis?: int,
-     *     ServicePreProcessingTimeInMillis?: int,
-     *     QueryPlanningTimeInMillis?: int,
-     *     EngineExecutionTimeInMillis?: int,
-     *     ServiceProcessingTimeInMillis?: int,
-     *     TotalExecutionTimeInMillis?: int
+     *     QueryQueueTimeInMillis?: int|null,
+     *     ServicePreProcessingTimeInMillis?: int|null,
+     *     QueryPlanningTimeInMillis?: int|null,
+     *     EngineExecutionTimeInMillis?: int|null,
+     *     ServiceProcessingTimeInMillis?: int|null,
+     *     TotalExecutionTimeInMillis?: int|null
      * } $args
      */
     public function __construct(array $args = [])

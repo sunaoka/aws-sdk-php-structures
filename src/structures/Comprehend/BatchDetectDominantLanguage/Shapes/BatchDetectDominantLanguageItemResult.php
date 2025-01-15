@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Comprehend\BatchDetectDominantLanguage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Index
- * @property list<DominantLanguage> $Languages
+ * @property int|null $Index
+ * @property list<DominantLanguage>|null $Languages
  */
 class BatchDetectDominantLanguageItemResult extends Shape
 {
     /**
      * @param array{
-     *     Index?: int,
-     *     Languages?: list<DominantLanguage>
+     *     Index?: int|null,
+     *     Languages?: list<DominantLanguage>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Command
- * @property list<BatchEnvironmentVariable> $Environment
- * @property string $InstanceType
- * @property list<BatchResourceRequirement> $ResourceRequirements
+ * @property list<string>|null $Command
+ * @property list<BatchEnvironmentVariable>|null $Environment
+ * @property string|null $InstanceType
+ * @property list<BatchResourceRequirement>|null $ResourceRequirements
  */
 class BatchContainerOverrides extends Shape
 {
     /**
      * @param array{
-     *     Command?: list<string>,
-     *     Environment?: list<BatchEnvironmentVariable>,
-     *     InstanceType?: string,
-     *     ResourceRequirements?: list<BatchResourceRequirement>
+     *     Command?: list<string>|null,
+     *     Environment?: list<BatchEnvironmentVariable>|null,
+     *     InstanceType?: string|null,
+     *     ResourceRequirements?: list<BatchResourceRequirement>|null
      * } $args
      */
     public function __construct(array $args = [])

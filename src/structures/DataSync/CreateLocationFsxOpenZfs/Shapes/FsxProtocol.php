@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataSync\CreateLocationFsxOpenZfs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FsxProtocolNfs $NFS
- * @property FsxProtocolSmb $SMB
+ * @property FsxProtocolNfs|null $NFS
+ * @property FsxProtocolSmb|null $SMB
  */
 class FsxProtocol extends Shape
 {
     /**
      * @param array{
-     *     NFS?: FsxProtocolNfs,
-     *     SMB?: FsxProtocolSmb
+     *     NFS?: FsxProtocolNfs|null,
+     *     SMB?: FsxProtocolSmb|null
      * } $args
      */
     public function __construct(array $args = [])

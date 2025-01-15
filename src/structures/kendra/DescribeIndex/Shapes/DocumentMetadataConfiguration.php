@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property 'STRING_VALUE'|'STRING_LIST_VALUE'|'LONG_VALUE'|'DATE_VALUE' $Type
- * @property Relevance $Relevance
- * @property Search $Search
+ * @property Relevance|null $Relevance
+ * @property Search|null $Search
  */
 class DocumentMetadataConfiguration extends Shape
 {
@@ -16,8 +16,8 @@ class DocumentMetadataConfiguration extends Shape
      * @param array{
      *     Name: string,
      *     Type: 'STRING_VALUE'|'STRING_LIST_VALUE'|'LONG_VALUE'|'DATE_VALUE',
-     *     Relevance?: Relevance,
-     *     Search?: Search
+     *     Relevance?: Relevance|null,
+     *     Search?: Search|null
      * } $args
      */
     public function __construct(array $args)

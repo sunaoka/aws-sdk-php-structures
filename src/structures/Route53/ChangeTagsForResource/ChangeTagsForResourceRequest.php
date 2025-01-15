@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'healthcheck'|'hostedzone' $ResourceType
  * @property string $ResourceId
- * @property list<Shapes\Tag> $AddTags
- * @property list<string> $RemoveTagKeys
+ * @property list<Shapes\Tag>|null $AddTags
+ * @property list<string>|null $RemoveTagKeys
  */
 class ChangeTagsForResourceRequest extends Request
 {
@@ -16,8 +16,8 @@ class ChangeTagsForResourceRequest extends Request
      * @param array{
      *     ResourceType: 'healthcheck'|'hostedzone',
      *     ResourceId: string,
-     *     AddTags?: list<Shapes\Tag>,
-     *     RemoveTagKeys?: list<string>
+     *     AddTags?: list<Shapes\Tag>|null,
+     *     RemoveTagKeys?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

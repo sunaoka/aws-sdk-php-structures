@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QBusiness\BatchPutDocument\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|resource|\Psr\Http\Message\StreamInterface $blob
- * @property S3 $s3
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $blob
+ * @property S3|null $s3
  */
 class DocumentContent extends Shape
 {
     /**
      * @param array{
-     *     blob?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     s3?: S3
+     *     blob?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     s3?: S3|null
      * } $args
      */
     public function __construct(array $args = [])

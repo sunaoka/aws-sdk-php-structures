@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $relationalDatabaseName
  * @property string $relationalDatabaseSnapshotName
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateRelationalDatabaseSnapshotRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateRelationalDatabaseSnapshotRequest extends Request
      * @param array{
      *     relationalDatabaseName: string,
      *     relationalDatabaseSnapshotName: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\UpdateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $unlimited
- * @property int<1, max> $numberOfDays
+ * @property bool|null $unlimited
+ * @property int<1, max>|null $numberOfDays
  */
 class RetentionPeriod extends Shape
 {
     /**
      * @param array{
-     *     unlimited?: bool,
-     *     numberOfDays?: int<1, max>
+     *     unlimited?: bool|null,
+     *     numberOfDays?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property 'EVENT'|'VOICE_ID'|'PINPOINT_APP'|'WISDOM_ASSISTANT'|'WISDOM_KNOWLEDGE_BASE'|'WISDOM_QUICK_RESPONSES'|'Q_MESSAGE_TEMPLATES'|'CASES_DOMAIN'|'APPLICATION'|'FILE_SCANNER'|'SES_IDENTITY'|'ANALYTICS_CONNECTOR'|'CALL_TRANSFER_CONNECTOR'|'COGNITO_USER_POOL' $IntegrationType
  * @property string $IntegrationArn
- * @property string $SourceApplicationUrl
- * @property string $SourceApplicationName
- * @property 'SALESFORCE'|'ZENDESK'|'CASES' $SourceType
- * @property array<string, string> $Tags
+ * @property string|null $SourceApplicationUrl
+ * @property string|null $SourceApplicationName
+ * @property 'SALESFORCE'|'ZENDESK'|'CASES'|null $SourceType
+ * @property array<string, string>|null $Tags
  */
 class CreateIntegrationAssociationRequest extends Request
 {
@@ -20,10 +20,10 @@ class CreateIntegrationAssociationRequest extends Request
      *     InstanceId: string,
      *     IntegrationType: 'EVENT'|'VOICE_ID'|'PINPOINT_APP'|'WISDOM_ASSISTANT'|'WISDOM_KNOWLEDGE_BASE'|'WISDOM_QUICK_RESPONSES'|'Q_MESSAGE_TEMPLATES'|'CASES_DOMAIN'|'APPLICATION'|'FILE_SCANNER'|'SES_IDENTITY'|'ANALYTICS_CONNECTOR'|'CALL_TRANSFER_CONNECTOR'|'COGNITO_USER_POOL',
      *     IntegrationArn: string,
-     *     SourceApplicationUrl?: string,
-     *     SourceApplicationName?: string,
-     *     SourceType?: 'SALESFORCE'|'ZENDESK'|'CASES',
-     *     Tags?: array<string, string>
+     *     SourceApplicationUrl?: string|null,
+     *     SourceApplicationName?: string|null,
+     *     SourceType?: 'SALESFORCE'|'ZENDESK'|'CASES'|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

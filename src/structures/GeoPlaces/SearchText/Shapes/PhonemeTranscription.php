@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\SearchText\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property string $Language
- * @property bool $Preferred
+ * @property string|null $Value
+ * @property string|null $Language
+ * @property bool|null $Preferred
  */
 class PhonemeTranscription extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     Language?: string,
-     *     Preferred?: bool
+     *     Value?: string|null,
+     *     Language?: string|null,
+     *     Preferred?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

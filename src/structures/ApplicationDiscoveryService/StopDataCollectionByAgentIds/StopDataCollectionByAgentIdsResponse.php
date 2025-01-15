@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StopDataCollectionB
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AgentConfigurationStatus> $agentsConfigurationStatus
+ * @property list<Shapes\AgentConfigurationStatus>|null $agentsConfigurationStatus
  */
 class StopDataCollectionByAgentIdsResponse extends Response
 {

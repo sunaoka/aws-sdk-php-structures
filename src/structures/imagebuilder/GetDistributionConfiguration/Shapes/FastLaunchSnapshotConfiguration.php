@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetDistributionConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 10000> $targetResourceCount
+ * @property int<1, 10000>|null $targetResourceCount
  */
 class FastLaunchSnapshotConfiguration extends Shape
 {
     /**
-     * @param array{targetResourceCount?: int<1, 10000>} $args
+     * @param array{targetResourceCount?: int<1, 10000>|null} $args
      */
     public function __construct(array $args = [])
     {

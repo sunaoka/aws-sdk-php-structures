@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListBillEstimateLineItems\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $amount
- * @property string $unit
+ * @property double|null $amount
+ * @property string|null $unit
  */
 class UsageQuantityResult extends Shape
 {
     /**
      * @param array{
-     *     amount?: double,
-     *     unit?: string
+     *     amount?: double|null,
+     *     unit?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DynamicDefaultValue $DynamicValue
- * @property list<\Aws\Api\DateTimeResult> $StaticValues
- * @property RollingDateConfiguration $RollingDate
+ * @property DynamicDefaultValue|null $DynamicValue
+ * @property list<\Aws\Api\DateTimeResult>|null $StaticValues
+ * @property RollingDateConfiguration|null $RollingDate
  */
 class DateTimeDefaultValues extends Shape
 {
     /**
      * @param array{
-     *     DynamicValue?: DynamicDefaultValue,
-     *     StaticValues?: list<\Aws\Api\DateTimeResult>,
-     *     RollingDate?: RollingDateConfiguration
+     *     DynamicValue?: DynamicDefaultValue|null,
+     *     StaticValues?: list<\Aws\Api\DateTimeResult>|null,
+     *     RollingDate?: RollingDateConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

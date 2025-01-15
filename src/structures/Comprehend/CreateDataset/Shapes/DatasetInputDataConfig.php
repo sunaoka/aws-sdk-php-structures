@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Comprehend\CreateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DatasetAugmentedManifestsListItem> $AugmentedManifests
- * @property 'COMPREHEND_CSV'|'AUGMENTED_MANIFEST' $DataFormat
- * @property DatasetDocumentClassifierInputDataConfig $DocumentClassifierInputDataConfig
- * @property DatasetEntityRecognizerInputDataConfig $EntityRecognizerInputDataConfig
+ * @property list<DatasetAugmentedManifestsListItem>|null $AugmentedManifests
+ * @property 'COMPREHEND_CSV'|'AUGMENTED_MANIFEST'|null $DataFormat
+ * @property DatasetDocumentClassifierInputDataConfig|null $DocumentClassifierInputDataConfig
+ * @property DatasetEntityRecognizerInputDataConfig|null $EntityRecognizerInputDataConfig
  */
 class DatasetInputDataConfig extends Shape
 {
     /**
      * @param array{
-     *     AugmentedManifests?: list<DatasetAugmentedManifestsListItem>,
-     *     DataFormat?: 'COMPREHEND_CSV'|'AUGMENTED_MANIFEST',
-     *     DocumentClassifierInputDataConfig?: DatasetDocumentClassifierInputDataConfig,
-     *     EntityRecognizerInputDataConfig?: DatasetEntityRecognizerInputDataConfig
+     *     AugmentedManifests?: list<DatasetAugmentedManifestsListItem>|null,
+     *     DataFormat?: 'COMPREHEND_CSV'|'AUGMENTED_MANIFEST'|null,
+     *     DocumentClassifierInputDataConfig?: DatasetDocumentClassifierInputDataConfig|null,
+     *     EntityRecognizerInputDataConfig?: DatasetEntityRecognizerInputDataConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $flowName
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class StartFlowRequest extends Request
 {
     /**
      * @param array{
      *     flowName: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

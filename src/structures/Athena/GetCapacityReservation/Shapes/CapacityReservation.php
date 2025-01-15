@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'ACTIVE'|'CANCELLING'|'CANCELLED'|'FAILED'|'UPDATE_PENDING' $Status
  * @property int<24, max> $TargetDpus
  * @property int<0, max> $AllocatedDpus
- * @property CapacityAllocation $LastAllocation
- * @property \Aws\Api\DateTimeResult $LastSuccessfulAllocationTime
+ * @property CapacityAllocation|null $LastAllocation
+ * @property \Aws\Api\DateTimeResult|null $LastSuccessfulAllocationTime
  * @property \Aws\Api\DateTimeResult $CreationTime
  */
 class CapacityReservation extends Shape
@@ -21,8 +21,8 @@ class CapacityReservation extends Shape
      *     Status: 'PENDING'|'ACTIVE'|'CANCELLING'|'CANCELLED'|'FAILED'|'UPDATE_PENDING',
      *     TargetDpus: int<24, max>,
      *     AllocatedDpus: int<0, max>,
-     *     LastAllocation?: CapacityAllocation,
-     *     LastSuccessfulAllocationTime?: \Aws\Api\DateTimeResult,
+     *     LastAllocation?: CapacityAllocation|null,
+     *     LastSuccessfulAllocationTime?: \Aws\Api\DateTimeResult|null,
      *     CreationTime: \Aws\Api\DateTimeResult
      * } $args
      */

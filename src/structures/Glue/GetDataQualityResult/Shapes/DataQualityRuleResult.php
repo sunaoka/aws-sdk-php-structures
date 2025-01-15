@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Glue\GetDataQualityResult\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property string $EvaluationMessage
- * @property 'PASS'|'FAIL'|'ERROR' $Result
- * @property array<string, double> $EvaluatedMetrics
- * @property string $EvaluatedRule
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $EvaluationMessage
+ * @property 'PASS'|'FAIL'|'ERROR'|null $Result
+ * @property array<string, double>|null $EvaluatedMetrics
+ * @property string|null $EvaluatedRule
  */
 class DataQualityRuleResult extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Description?: string,
-     *     EvaluationMessage?: string,
-     *     Result?: 'PASS'|'FAIL'|'ERROR',
-     *     EvaluatedMetrics?: array<string, double>,
-     *     EvaluatedRule?: string
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     EvaluationMessage?: string|null,
+     *     Result?: 'PASS'|'FAIL'|'ERROR'|null,
+     *     EvaluatedMetrics?: array<string, double>|null,
+     *     EvaluatedRule?: string|null
      * } $args
      */
     public function __construct(array $args = [])

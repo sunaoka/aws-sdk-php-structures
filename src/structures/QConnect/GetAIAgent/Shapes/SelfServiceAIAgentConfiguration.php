@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QConnect\GetAIAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AssociationConfiguration> $associationConfigurations
- * @property string $selfServiceAIGuardrailId
- * @property string $selfServiceAnswerGenerationAIPromptId
- * @property string $selfServicePreProcessingAIPromptId
+ * @property list<AssociationConfiguration>|null $associationConfigurations
+ * @property string|null $selfServiceAIGuardrailId
+ * @property string|null $selfServiceAnswerGenerationAIPromptId
+ * @property string|null $selfServicePreProcessingAIPromptId
  */
 class SelfServiceAIAgentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     associationConfigurations?: list<AssociationConfiguration>,
-     *     selfServiceAIGuardrailId?: string,
-     *     selfServiceAnswerGenerationAIPromptId?: string,
-     *     selfServicePreProcessingAIPromptId?: string
+     *     associationConfigurations?: list<AssociationConfiguration>|null,
+     *     selfServiceAIGuardrailId?: string|null,
+     *     selfServiceAnswerGenerationAIPromptId?: string|null,
+     *     selfServicePreProcessingAIPromptId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

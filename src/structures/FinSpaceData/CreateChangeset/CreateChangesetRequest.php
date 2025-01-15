@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\CreateChangeset;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $datasetId
  * @property 'REPLACE'|'APPEND'|'MODIFY' $changeType
  * @property array<string, string> $sourceParams
@@ -15,7 +15,7 @@ class CreateChangesetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     datasetId: string,
      *     changeType: 'REPLACE'|'APPEND'|'MODIFY',
      *     sourceParams: array<string, string>,

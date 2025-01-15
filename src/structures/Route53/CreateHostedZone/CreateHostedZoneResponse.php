@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\HostedZone $HostedZone
  * @property Shapes\ChangeInfo $ChangeInfo
  * @property Shapes\DelegationSet $DelegationSet
- * @property Shapes\VPC $VPC
+ * @property Shapes\VPC|null $VPC
  * @property string $Location
  */
 class CreateHostedZoneResponse extends Response

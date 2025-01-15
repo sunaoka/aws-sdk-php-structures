@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\PutAppInstanceRetentionSetting
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AppInstanceRetentionSettings $AppInstanceRetentionSettings
- * @property \Aws\Api\DateTimeResult $InitiateDeletionTimestamp
+ * @property Shapes\AppInstanceRetentionSettings|null $AppInstanceRetentionSettings
+ * @property \Aws\Api\DateTimeResult|null $InitiateDeletionTimestamp
  */
 class PutAppInstanceRetentionSettingsResponse extends Response
 {

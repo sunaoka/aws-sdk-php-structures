@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chime\DescribeChannelMembershipForAppInstanceUs
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DEFAULT'|'HIDDEN' $Type
- * @property \Aws\Api\DateTimeResult $ReadMarkerTimestamp
+ * @property 'DEFAULT'|'HIDDEN'|null $Type
+ * @property \Aws\Api\DateTimeResult|null $ReadMarkerTimestamp
  */
 class AppInstanceUserMembershipSummary extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'DEFAULT'|'HIDDEN',
-     *     ReadMarkerTimestamp?: \Aws\Api\DateTimeResult
+     *     Type?: 'DEFAULT'|'HIDDEN'|null,
+     *     ReadMarkerTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

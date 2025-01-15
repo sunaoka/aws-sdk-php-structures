@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateTable;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\AttributeDefinition> $AttributeDefinitions
+ * @property list<Shapes\AttributeDefinition>|null $AttributeDefinitions
  * @property string $TableName
- * @property 'PROVISIONED'|'PAY_PER_REQUEST' $BillingMode
- * @property Shapes\ProvisionedThroughput $ProvisionedThroughput
- * @property list<Shapes\GlobalSecondaryIndexUpdate> $GlobalSecondaryIndexUpdates
- * @property Shapes\StreamSpecification $StreamSpecification
- * @property Shapes\SSESpecification $SSESpecification
- * @property list<Shapes\ReplicationGroupUpdate> $ReplicaUpdates
- * @property 'STANDARD'|'STANDARD_INFREQUENT_ACCESS' $TableClass
- * @property bool $DeletionProtectionEnabled
- * @property 'EVENTUAL'|'STRONG' $MultiRegionConsistency
- * @property Shapes\OnDemandThroughput $OnDemandThroughput
- * @property Shapes\WarmThroughput $WarmThroughput
+ * @property 'PROVISIONED'|'PAY_PER_REQUEST'|null $BillingMode
+ * @property Shapes\ProvisionedThroughput|null $ProvisionedThroughput
+ * @property list<Shapes\GlobalSecondaryIndexUpdate>|null $GlobalSecondaryIndexUpdates
+ * @property Shapes\StreamSpecification|null $StreamSpecification
+ * @property Shapes\SSESpecification|null $SSESpecification
+ * @property list<Shapes\ReplicationGroupUpdate>|null $ReplicaUpdates
+ * @property 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null $TableClass
+ * @property bool|null $DeletionProtectionEnabled
+ * @property 'EVENTUAL'|'STRONG'|null $MultiRegionConsistency
+ * @property Shapes\OnDemandThroughput|null $OnDemandThroughput
+ * @property Shapes\WarmThroughput|null $WarmThroughput
  */
 class UpdateTableRequest extends Request
 {
     /**
      * @param array{
-     *     AttributeDefinitions?: list<Shapes\AttributeDefinition>,
+     *     AttributeDefinitions?: list<Shapes\AttributeDefinition>|null,
      *     TableName: string,
-     *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST',
-     *     ProvisionedThroughput?: Shapes\ProvisionedThroughput,
-     *     GlobalSecondaryIndexUpdates?: list<Shapes\GlobalSecondaryIndexUpdate>,
-     *     StreamSpecification?: Shapes\StreamSpecification,
-     *     SSESpecification?: Shapes\SSESpecification,
-     *     ReplicaUpdates?: list<Shapes\ReplicationGroupUpdate>,
-     *     TableClass?: 'STANDARD'|'STANDARD_INFREQUENT_ACCESS',
-     *     DeletionProtectionEnabled?: bool,
-     *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG',
-     *     OnDemandThroughput?: Shapes\OnDemandThroughput,
-     *     WarmThroughput?: Shapes\WarmThroughput
+     *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'|null,
+     *     ProvisionedThroughput?: Shapes\ProvisionedThroughput|null,
+     *     GlobalSecondaryIndexUpdates?: list<Shapes\GlobalSecondaryIndexUpdate>|null,
+     *     StreamSpecification?: Shapes\StreamSpecification|null,
+     *     SSESpecification?: Shapes\SSESpecification|null,
+     *     ReplicaUpdates?: list<Shapes\ReplicationGroupUpdate>|null,
+     *     TableClass?: 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null,
+     *     DeletionProtectionEnabled?: bool|null,
+     *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG'|null,
+     *     OnDemandThroughput?: Shapes\OnDemandThroughput|null,
+     *     WarmThroughput?: Shapes\WarmThroughput|null
      * } $args
      */
     public function __construct(array $args)

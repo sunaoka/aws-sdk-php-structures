@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScanResultsAggregatedByChecks
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property string $checkDescription
- * @property string $checkId
- * @property 'LEVEL_1'|'LEVEL_2' $level
- * @property string $platform
+ * @property string|null $accountId
+ * @property string|null $checkDescription
+ * @property string|null $checkId
+ * @property 'LEVEL_1'|'LEVEL_2'|null $level
+ * @property string|null $platform
  * @property string $scanArn
- * @property StatusCounts $statusCounts
- * @property string $title
+ * @property StatusCounts|null $statusCounts
+ * @property string|null $title
  */
 class CisCheckAggregation extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     checkDescription?: string,
-     *     checkId?: string,
-     *     level?: 'LEVEL_1'|'LEVEL_2',
-     *     platform?: string,
+     *     accountId?: string|null,
+     *     checkDescription?: string|null,
+     *     checkId?: string|null,
+     *     level?: 'LEVEL_1'|'LEVEL_2'|null,
+     *     platform?: string|null,
      *     scanArn: string,
-     *     statusCounts?: StatusCounts,
-     *     title?: string
+     *     statusCounts?: StatusCounts|null,
+     *     title?: string|null
      * } $args
      */
     public function __construct(array $args)

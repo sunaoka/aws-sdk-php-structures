@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Comprehend\UpdateFlywheel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\FlywheelProperties $FlywheelProperties
+ * @property Shapes\FlywheelProperties|null $FlywheelProperties
  */
 class UpdateFlywheelResponse extends Response
 {

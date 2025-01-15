@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\CreateCustomRoutingEndpointGr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\CustomRoutingEndpointGroup $EndpointGroup
+ * @property Shapes\CustomRoutingEndpointGroup|null $EndpointGroup
  */
 class CreateCustomRoutingEndpointGroupResponse extends Response
 {

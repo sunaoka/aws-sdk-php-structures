@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeResourceCollectionHealth\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppBoundaryKey
- * @property string $TagValue
- * @property InsightHealth $Insight
- * @property int $AnalyzedResourceCount
+ * @property string|null $AppBoundaryKey
+ * @property string|null $TagValue
+ * @property InsightHealth|null $Insight
+ * @property int|null $AnalyzedResourceCount
  */
 class TagHealth extends Shape
 {
     /**
      * @param array{
-     *     AppBoundaryKey?: string,
-     *     TagValue?: string,
-     *     Insight?: InsightHealth,
-     *     AnalyzedResourceCount?: int
+     *     AppBoundaryKey?: string|null,
+     *     TagValue?: string|null,
+     *     Insight?: InsightHealth|null,
+     *     AnalyzedResourceCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

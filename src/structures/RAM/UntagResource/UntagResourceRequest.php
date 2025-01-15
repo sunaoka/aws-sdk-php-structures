@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\RAM\UntagResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $resourceShareArn
+ * @property string|null $resourceShareArn
  * @property list<string> $tagKeys
- * @property string $resourceArn
+ * @property string|null $resourceArn
  */
 class UntagResourceRequest extends Request
 {
     /**
      * @param array{
-     *     resourceShareArn?: string,
+     *     resourceShareArn?: string|null,
      *     tagKeys: list<string>,
-     *     resourceArn?: string
+     *     resourceArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExternalSourcesRetrieveAndGenerateConfiguration $externalSourcesConfiguration
- * @property KnowledgeBaseRetrieveAndGenerateConfiguration $knowledgeBaseConfiguration
+ * @property ExternalSourcesRetrieveAndGenerateConfiguration|null $externalSourcesConfiguration
+ * @property KnowledgeBaseRetrieveAndGenerateConfiguration|null $knowledgeBaseConfiguration
  * @property 'KNOWLEDGE_BASE'|'EXTERNAL_SOURCES' $type
  */
 class RetrieveAndGenerateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     externalSourcesConfiguration?: ExternalSourcesRetrieveAndGenerateConfiguration,
-     *     knowledgeBaseConfiguration?: KnowledgeBaseRetrieveAndGenerateConfiguration,
+     *     externalSourcesConfiguration?: ExternalSourcesRetrieveAndGenerateConfiguration|null,
+     *     knowledgeBaseConfiguration?: KnowledgeBaseRetrieveAndGenerateConfiguration|null,
      *     type: 'KNOWLEDGE_BASE'|'EXTERNAL_SOURCES'
      * } $args
      */

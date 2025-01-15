@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $secretName
- * @property bool $optional
+ * @property bool|null $optional
  */
 class EksSecret extends Shape
 {
     /**
      * @param array{
      *     secretName: string,
-     *     optional?: bool
+     *     optional?: bool|null
      * } $args
      */
     public function __construct(array $args)

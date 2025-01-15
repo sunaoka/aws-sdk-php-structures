@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListCustomLineItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Name
- * @property ListCustomLineItemChargeDetails $ChargeDetails
- * @property 'USD'|'CNY' $CurrencyCode
- * @property string $Description
- * @property string $ProductCode
- * @property string $BillingGroupArn
- * @property int $CreationTime
- * @property int $LastModifiedTime
- * @property int<0, max> $AssociationSize
- * @property string $AccountId
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property ListCustomLineItemChargeDetails|null $ChargeDetails
+ * @property 'USD'|'CNY'|null $CurrencyCode
+ * @property string|null $Description
+ * @property string|null $ProductCode
+ * @property string|null $BillingGroupArn
+ * @property int|null $CreationTime
+ * @property int|null $LastModifiedTime
+ * @property int<0, max>|null $AssociationSize
+ * @property string|null $AccountId
  */
 class CustomLineItemListElement extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Name?: string,
-     *     ChargeDetails?: ListCustomLineItemChargeDetails,
-     *     CurrencyCode?: 'USD'|'CNY',
-     *     Description?: string,
-     *     ProductCode?: string,
-     *     BillingGroupArn?: string,
-     *     CreationTime?: int,
-     *     LastModifiedTime?: int,
-     *     AssociationSize?: int<0, max>,
-     *     AccountId?: string
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     ChargeDetails?: ListCustomLineItemChargeDetails|null,
+     *     CurrencyCode?: 'USD'|'CNY'|null,
+     *     Description?: string|null,
+     *     ProductCode?: string|null,
+     *     BillingGroupArn?: string|null,
+     *     CreationTime?: int|null,
+     *     LastModifiedTime?: int|null,
+     *     AssociationSize?: int<0, max>|null,
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

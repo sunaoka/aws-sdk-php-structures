@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $BlockPublicSecurityGroupRules
- * @property list<PortRange> $PermittedPublicSecurityGroupRuleRanges
+ * @property list<PortRange>|null $PermittedPublicSecurityGroupRuleRanges
  */
 class BlockPublicAccessConfiguration extends Shape
 {
     /**
      * @param array{
      *     BlockPublicSecurityGroupRules: bool,
-     *     PermittedPublicSecurityGroupRuleRanges?: list<PortRange>
+     *     PermittedPublicSecurityGroupRuleRanges?: list<PortRange>|null
      * } $args
      */
     public function __construct(array $args)

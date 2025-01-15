@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeOrganizationConformancePa
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $OrganizationConformancePackNames
- * @property int<0, 100> $Limit
- * @property string $NextToken
+ * @property list<string>|null $OrganizationConformancePackNames
+ * @property int<0, 100>|null $Limit
+ * @property string|null $NextToken
  */
 class DescribeOrganizationConformancePacksRequest extends Request
 {
     /**
      * @param array{
-     *     OrganizationConformancePackNames?: list<string>,
-     *     Limit?: int<0, 100>,
-     *     NextToken?: string
+     *     OrganizationConformancePackNames?: list<string>|null,
+     *     Limit?: int<0, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

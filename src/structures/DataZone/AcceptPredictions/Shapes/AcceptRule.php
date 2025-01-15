@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\AcceptPredictions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALL'|'NONE' $rule
- * @property float $threshold
+ * @property 'ALL'|'NONE'|null $rule
+ * @property float|null $threshold
  */
 class AcceptRule extends Shape
 {
     /**
      * @param array{
-     *     rule?: 'ALL'|'NONE',
-     *     threshold?: float
+     *     rule?: 'ALL'|'NONE'|null,
+     *     threshold?: float|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $MfaAuthenticated
- * @property string $CreationDate
+ * @property bool|null $MfaAuthenticated
+ * @property string|null $CreationDate
  */
 class AwsIamAccessKeySessionContextAttributes extends Shape
 {
     /**
      * @param array{
-     *     MfaAuthenticated?: bool,
-     *     CreationDate?: string
+     *     MfaAuthenticated?: bool|null,
+     *     CreationDate?: string|null
      * } $args
      */
     public function __construct(array $args = [])

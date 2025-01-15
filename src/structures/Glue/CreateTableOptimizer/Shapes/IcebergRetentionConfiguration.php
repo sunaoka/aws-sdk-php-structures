@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\CreateTableOptimizer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $snapshotRetentionPeriodInDays
- * @property int $numberOfSnapshotsToRetain
- * @property bool $cleanExpiredFiles
+ * @property int|null $snapshotRetentionPeriodInDays
+ * @property int|null $numberOfSnapshotsToRetain
+ * @property bool|null $cleanExpiredFiles
  */
 class IcebergRetentionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     snapshotRetentionPeriodInDays?: int,
-     *     numberOfSnapshotsToRetain?: int,
-     *     cleanExpiredFiles?: bool
+     *     snapshotRetentionPeriodInDays?: int|null,
+     *     numberOfSnapshotsToRetain?: int|null,
+     *     cleanExpiredFiles?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

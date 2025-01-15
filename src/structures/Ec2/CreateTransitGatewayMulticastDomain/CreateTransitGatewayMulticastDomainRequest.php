@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TransitGatewayId
- * @property Shapes\CreateTransitGatewayMulticastDomainRequestOptions $Options
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
+ * @property Shapes\CreateTransitGatewayMulticastDomainRequestOptions|null $Options
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
  */
 class CreateTransitGatewayMulticastDomainRequest extends Request
 {
     /**
      * @param array{
      *     TransitGatewayId: string,
-     *     Options?: Shapes\CreateTransitGatewayMulticastDomainRequestOptions,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool
+     *     Options?: Shapes\CreateTransitGatewayMulticastDomainRequestOptions|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListOfferingPromotions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $description
+ * @property string|null $id
+ * @property string|null $description
  */
 class OfferingPromotion extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     description?: string
+     *     id?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

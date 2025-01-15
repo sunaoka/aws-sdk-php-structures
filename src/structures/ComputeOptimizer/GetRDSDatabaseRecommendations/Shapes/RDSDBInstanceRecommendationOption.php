@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dbInstanceClass
- * @property list<RDSDBUtilizationMetric> $projectedUtilizationMetrics
- * @property double $performanceRisk
- * @property int $rank
- * @property SavingsOpportunity $savingsOpportunity
- * @property RDSInstanceSavingsOpportunityAfterDiscounts $savingsOpportunityAfterDiscounts
+ * @property string|null $dbInstanceClass
+ * @property list<RDSDBUtilizationMetric>|null $projectedUtilizationMetrics
+ * @property double|null $performanceRisk
+ * @property int|null $rank
+ * @property SavingsOpportunity|null $savingsOpportunity
+ * @property RDSInstanceSavingsOpportunityAfterDiscounts|null $savingsOpportunityAfterDiscounts
  */
 class RDSDBInstanceRecommendationOption extends Shape
 {
     /**
      * @param array{
-     *     dbInstanceClass?: string,
-     *     projectedUtilizationMetrics?: list<RDSDBUtilizationMetric>,
-     *     performanceRisk?: double,
-     *     rank?: int,
-     *     savingsOpportunity?: SavingsOpportunity,
-     *     savingsOpportunityAfterDiscounts?: RDSInstanceSavingsOpportunityAfterDiscounts
+     *     dbInstanceClass?: string|null,
+     *     projectedUtilizationMetrics?: list<RDSDBUtilizationMetric>|null,
+     *     performanceRisk?: double|null,
+     *     rank?: int|null,
+     *     savingsOpportunity?: SavingsOpportunity|null,
+     *     savingsOpportunityAfterDiscounts?: RDSInstanceSavingsOpportunityAfterDiscounts|null
      * } $args
      */
     public function __construct(array $args = [])

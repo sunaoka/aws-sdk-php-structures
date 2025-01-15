@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceGroupName
  * @property string $PatternSetName
  * @property string $PatternName
- * @property string $Pattern
- * @property int $Rank
+ * @property string|null $Pattern
+ * @property int|null $Rank
  */
 class UpdateLogPatternRequest extends Request
 {
@@ -18,8 +18,8 @@ class UpdateLogPatternRequest extends Request
      *     ResourceGroupName: string,
      *     PatternSetName: string,
      *     PatternName: string,
-     *     Pattern?: string,
-     *     Rank?: int
+     *     Pattern?: string|null,
+     *     Rank?: int|null
      * } $args
      */
     public function __construct(array $args)

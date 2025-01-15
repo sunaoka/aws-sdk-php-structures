@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\CreateRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RuleVariables $RuleVariables
- * @property ReferenceSets $ReferenceSets
+ * @property RuleVariables|null $RuleVariables
+ * @property ReferenceSets|null $ReferenceSets
  * @property RulesSource $RulesSource
- * @property StatefulRuleOptions $StatefulRuleOptions
+ * @property StatefulRuleOptions|null $StatefulRuleOptions
  */
 class RuleGroup extends Shape
 {
     /**
      * @param array{
-     *     RuleVariables?: RuleVariables,
-     *     ReferenceSets?: ReferenceSets,
+     *     RuleVariables?: RuleVariables|null,
+     *     ReferenceSets?: ReferenceSets|null,
      *     RulesSource: RulesSource,
-     *     StatefulRuleOptions?: StatefulRuleOptions
+     *     StatefulRuleOptions?: StatefulRuleOptions|null
      * } $args
      */
     public function __construct(array $args)

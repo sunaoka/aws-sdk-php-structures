@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DeleteRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceArn
- * @property string $SourceUpdateToken
+ * @property string|null $SourceArn
+ * @property string|null $SourceUpdateToken
  */
 class SourceMetadata extends Shape
 {
     /**
      * @param array{
-     *     SourceArn?: string,
-     *     SourceUpdateToken?: string
+     *     SourceArn?: string|null,
+     *     SourceUpdateToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

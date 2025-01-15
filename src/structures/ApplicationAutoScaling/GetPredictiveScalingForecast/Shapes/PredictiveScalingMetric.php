@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\GetPredictiveScalingFore
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PredictiveScalingMetricDimension> $Dimensions
- * @property string $MetricName
- * @property string $Namespace
+ * @property list<PredictiveScalingMetricDimension>|null $Dimensions
+ * @property string|null $MetricName
+ * @property string|null $Namespace
  */
 class PredictiveScalingMetric extends Shape
 {
     /**
      * @param array{
-     *     Dimensions?: list<PredictiveScalingMetricDimension>,
-     *     MetricName?: string,
-     *     Namespace?: string
+     *     Dimensions?: list<PredictiveScalingMetricDimension>|null,
+     *     MetricName?: string|null,
+     *     Namespace?: string|null
      * } $args
      */
     public function __construct(array $args = [])

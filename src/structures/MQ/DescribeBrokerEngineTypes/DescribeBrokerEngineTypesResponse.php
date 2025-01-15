@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MQ\DescribeBrokerEngineTypes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BrokerEngineType> $BrokerEngineTypes
- * @property int<5, 100> $MaxResults
- * @property string $NextToken
+ * @property list<Shapes\BrokerEngineType>|null $BrokerEngineTypes
+ * @property int<5, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeBrokerEngineTypesResponse extends Response
 {

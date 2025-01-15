@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $From
- * @property double $To
+ * @property double|null $From
+ * @property double|null $To
  */
 class PercentVisibleRange extends Shape
 {
     /**
      * @param array{
-     *     From?: double,
-     *     To?: double
+     *     From?: double|null,
+     *     To?: double|null
      * } $args
      */
     public function __construct(array $args = [])

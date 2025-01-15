@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property int<1, max> $Period
- * @property int $MaxContributorCount
- * @property list<string> $Metrics
- * @property string $OrderBy
+ * @property int|null $MaxContributorCount
+ * @property list<string>|null $Metrics
+ * @property string|null $OrderBy
  */
 class GetInsightRuleReportRequest extends Request
 {
@@ -21,9 +21,9 @@ class GetInsightRuleReportRequest extends Request
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
      *     Period: int<1, max>,
-     *     MaxContributorCount?: int,
-     *     Metrics?: list<string>,
-     *     OrderBy?: string
+     *     MaxContributorCount?: int|null,
+     *     Metrics?: list<string>|null,
+     *     OrderBy?: string|null
      * } $args
      */
     public function __construct(array $args)

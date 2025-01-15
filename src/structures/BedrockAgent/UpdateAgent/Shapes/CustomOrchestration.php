@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OrchestrationExecutor $executor
+ * @property OrchestrationExecutor|null $executor
  */
 class CustomOrchestration extends Shape
 {
     /**
-     * @param array{executor?: OrchestrationExecutor} $args
+     * @param array{executor?: OrchestrationExecutor|null} $args
      */
     public function __construct(array $args = [])
     {

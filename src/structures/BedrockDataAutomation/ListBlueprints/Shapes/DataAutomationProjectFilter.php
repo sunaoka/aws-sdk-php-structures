@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $projectArn
- * @property 'DEVELOPMENT'|'LIVE' $projectStage
+ * @property 'DEVELOPMENT'|'LIVE'|null $projectStage
  */
 class DataAutomationProjectFilter extends Shape
 {
     /**
      * @param array{
      *     projectArn: string,
-     *     projectStage?: 'DEVELOPMENT'|'LIVE'
+     *     projectStage?: 'DEVELOPMENT'|'LIVE'|null
      * } $args
      */
     public function __construct(array $args)

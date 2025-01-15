@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $databaseName
- * @property list<FilterExpression> $filterExpressions
- * @property string $schemaName
+ * @property list<FilterExpression>|null $filterExpressions
+ * @property string|null $schemaName
  */
 class RelationalFilterConfiguration extends Shape
 {
     /**
      * @param array{
      *     databaseName: string,
-     *     filterExpressions?: list<FilterExpression>,
-     *     schemaName?: string
+     *     filterExpressions?: list<FilterExpression>|null,
+     *     schemaName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AttributeName
- * @property string $KeyType
+ * @property string|null $AttributeName
+ * @property string|null $KeyType
  */
 class AwsDynamoDbTableKeySchema extends Shape
 {
     /**
      * @param array{
-     *     AttributeName?: string,
-     *     KeyType?: string
+     *     AttributeName?: string|null,
+     *     KeyType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

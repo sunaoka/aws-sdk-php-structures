@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $adminUserName
  * @property string $adminUserPassword
  * @property 'PLAIN_TEXT'|'SECRET_ARN' $authType
- * @property int $backupRetentionPeriod
- * @property string $clientToken
+ * @property int|null $backupRetentionPeriod
+ * @property string|null $clientToken
  * @property string $clusterName
- * @property string $kmsKeyId
- * @property string $preferredBackupWindow
- * @property string $preferredMaintenanceWindow
+ * @property string|null $kmsKeyId
+ * @property string|null $preferredBackupWindow
+ * @property string|null $preferredMaintenanceWindow
  * @property int $shardCapacity
  * @property int $shardCount
- * @property int $shardInstanceCount
- * @property list<string> $subnetIds
- * @property array<string, string> $tags
- * @property list<string> $vpcSecurityGroupIds
+ * @property int|null $shardInstanceCount
+ * @property list<string>|null $subnetIds
+ * @property array<string, string>|null $tags
+ * @property list<string>|null $vpcSecurityGroupIds
  */
 class CreateClusterRequest extends Request
 {
@@ -28,18 +28,18 @@ class CreateClusterRequest extends Request
      *     adminUserName: string,
      *     adminUserPassword: string,
      *     authType: 'PLAIN_TEXT'|'SECRET_ARN',
-     *     backupRetentionPeriod?: int,
-     *     clientToken?: string,
+     *     backupRetentionPeriod?: int|null,
+     *     clientToken?: string|null,
      *     clusterName: string,
-     *     kmsKeyId?: string,
-     *     preferredBackupWindow?: string,
-     *     preferredMaintenanceWindow?: string,
+     *     kmsKeyId?: string|null,
+     *     preferredBackupWindow?: string|null,
+     *     preferredMaintenanceWindow?: string|null,
      *     shardCapacity: int,
      *     shardCount: int,
-     *     shardInstanceCount?: int,
-     *     subnetIds?: list<string>,
-     *     tags?: array<string, string>,
-     *     vpcSecurityGroupIds?: list<string>
+     *     shardInstanceCount?: int|null,
+     *     subnetIds?: list<string>|null,
+     *     tags?: array<string, string>|null,
+     *     vpcSecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

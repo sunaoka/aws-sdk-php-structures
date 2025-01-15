@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SOLID'|'TRANSPARENT' $FillStyle
+ * @property 'SOLID'|'TRANSPARENT'|null $FillStyle
  */
 class BoxPlotStyleOptions extends Shape
 {
     /**
-     * @param array{FillStyle?: 'SOLID'|'TRANSPARENT'} $args
+     * @param array{FillStyle?: 'SOLID'|'TRANSPARENT'|null} $args
      */
     public function __construct(array $args = [])
     {

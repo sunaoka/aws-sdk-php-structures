@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Control\PutStorageLensConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StorageLensGroupLevelSelectionCriteria $SelectionCriteria
+ * @property StorageLensGroupLevelSelectionCriteria|null $SelectionCriteria
  */
 class StorageLensGroupLevel extends Shape
 {
     /**
-     * @param array{SelectionCriteria?: StorageLensGroupLevelSelectionCriteria} $args
+     * @param array{SelectionCriteria?: StorageLensGroupLevelSelectionCriteria|null} $args
      */
     public function __construct(array $args = [])
     {

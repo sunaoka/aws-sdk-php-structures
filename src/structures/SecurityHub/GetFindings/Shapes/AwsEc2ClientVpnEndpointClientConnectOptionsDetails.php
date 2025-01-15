@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property string $LambdaFunctionArn
- * @property AwsEc2ClientVpnEndpointClientConnectOptionsStatusDetails $Status
+ * @property bool|null $Enabled
+ * @property string|null $LambdaFunctionArn
+ * @property AwsEc2ClientVpnEndpointClientConnectOptionsStatusDetails|null $Status
  */
 class AwsEc2ClientVpnEndpointClientConnectOptionsDetails extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     LambdaFunctionArn?: string,
-     *     Status?: AwsEc2ClientVpnEndpointClientConnectOptionsStatusDetails
+     *     Enabled?: bool|null,
+     *     LambdaFunctionArn?: string|null,
+     *     Status?: AwsEc2ClientVpnEndpointClientConnectOptionsStatusDetails|null
      * } $args
      */
     public function __construct(array $args = [])

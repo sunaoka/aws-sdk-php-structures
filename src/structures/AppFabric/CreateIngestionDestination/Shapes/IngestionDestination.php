@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ingestionArn
  * @property ProcessingConfiguration $processingConfiguration
  * @property DestinationConfiguration $destinationConfiguration
- * @property 'Active'|'Failed' $status
- * @property string $statusReason
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property 'Active'|'Failed'|null $status
+ * @property string|null $statusReason
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class IngestionDestination extends Shape
 {
@@ -22,10 +22,10 @@ class IngestionDestination extends Shape
      *     ingestionArn: string,
      *     processingConfiguration: ProcessingConfiguration,
      *     destinationConfiguration: DestinationConfiguration,
-     *     status?: 'Active'|'Failed',
-     *     statusReason?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     status?: 'Active'|'Failed'|null,
+     *     statusReason?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

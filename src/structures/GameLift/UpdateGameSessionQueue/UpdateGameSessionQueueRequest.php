@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property int<0, max> $TimeoutInSeconds
- * @property list<Shapes\PlayerLatencyPolicy> $PlayerLatencyPolicies
- * @property list<Shapes\GameSessionQueueDestination> $Destinations
- * @property Shapes\FilterConfiguration $FilterConfiguration
- * @property Shapes\PriorityConfiguration $PriorityConfiguration
- * @property string $CustomEventData
- * @property string $NotificationTarget
+ * @property int<0, max>|null $TimeoutInSeconds
+ * @property list<Shapes\PlayerLatencyPolicy>|null $PlayerLatencyPolicies
+ * @property list<Shapes\GameSessionQueueDestination>|null $Destinations
+ * @property Shapes\FilterConfiguration|null $FilterConfiguration
+ * @property Shapes\PriorityConfiguration|null $PriorityConfiguration
+ * @property string|null $CustomEventData
+ * @property string|null $NotificationTarget
  */
 class UpdateGameSessionQueueRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     TimeoutInSeconds?: int<0, max>,
-     *     PlayerLatencyPolicies?: list<Shapes\PlayerLatencyPolicy>,
-     *     Destinations?: list<Shapes\GameSessionQueueDestination>,
-     *     FilterConfiguration?: Shapes\FilterConfiguration,
-     *     PriorityConfiguration?: Shapes\PriorityConfiguration,
-     *     CustomEventData?: string,
-     *     NotificationTarget?: string
+     *     TimeoutInSeconds?: int<0, max>|null,
+     *     PlayerLatencyPolicies?: list<Shapes\PlayerLatencyPolicy>|null,
+     *     Destinations?: list<Shapes\GameSessionQueueDestination>|null,
+     *     FilterConfiguration?: Shapes\FilterConfiguration|null,
+     *     PriorityConfiguration?: Shapes\PriorityConfiguration|null,
+     *     CustomEventData?: string|null,
+     *     NotificationTarget?: string|null
      * } $args
      */
     public function __construct(array $args)

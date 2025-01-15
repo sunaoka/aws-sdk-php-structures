@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property 'edi' $type
  * @property Shapes\CapabilityConfiguration $configuration
- * @property list<Shapes\S3Location> $instructionsDocuments
+ * @property list<Shapes\S3Location>|null $instructionsDocuments
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $modifiedAt
+ * @property \Aws\Api\DateTimeResult|null $modifiedAt
  */
 class GetCapabilityResponse extends Response
 {

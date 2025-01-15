@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AnomalyDetectorName
- * @property string $AnomalyDetectorDescription
+ * @property string|null $AnomalyDetectorDescription
  * @property Shapes\AnomalyDetectorConfig $AnomalyDetectorConfig
- * @property string $KmsKeyArn
- * @property array<string, string> $Tags
+ * @property string|null $KmsKeyArn
+ * @property array<string, string>|null $Tags
  */
 class CreateAnomalyDetectorRequest extends Request
 {
     /**
      * @param array{
      *     AnomalyDetectorName: string,
-     *     AnomalyDetectorDescription?: string,
+     *     AnomalyDetectorDescription?: string|null,
      *     AnomalyDetectorConfig: Shapes\AnomalyDetectorConfig,
-     *     KmsKeyArn?: string,
-     *     Tags?: array<string, string>
+     *     KmsKeyArn?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

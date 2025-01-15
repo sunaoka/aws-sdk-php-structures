@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $timestamp
- * @property 'GOOD'|'BAD'|'UNCERTAIN' $quality
+ * @property 'GOOD'|'BAD'|'UNCERTAIN'|null $quality
  * @property Aggregates $value
  */
 class AggregatedValue extends Shape
@@ -14,7 +14,7 @@ class AggregatedValue extends Shape
     /**
      * @param array{
      *     timestamp: \Aws\Api\DateTimeResult,
-     *     quality?: 'GOOD'|'BAD'|'UNCERTAIN',
+     *     quality?: 'GOOD'|'BAD'|'UNCERTAIN'|null,
      *     value: Aggregates
      * } $args
      */

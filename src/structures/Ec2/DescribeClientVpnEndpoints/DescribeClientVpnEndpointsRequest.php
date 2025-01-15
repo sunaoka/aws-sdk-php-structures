@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeClientVpnEndpoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ClientVpnEndpointIds
- * @property int<5, 1000> $MaxResults
- * @property string $NextToken
- * @property list<Shapes\Filter> $Filters
- * @property bool $DryRun
+ * @property list<string>|null $ClientVpnEndpointIds
+ * @property int<5, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<Shapes\Filter>|null $Filters
+ * @property bool|null $DryRun
  */
 class DescribeClientVpnEndpointsRequest extends Request
 {
     /**
      * @param array{
-     *     ClientVpnEndpointIds?: list<string>,
-     *     MaxResults?: int<5, 1000>,
-     *     NextToken?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     DryRun?: bool
+     *     ClientVpnEndpointIds?: list<string>|null,
+     *     MaxResults?: int<5, 1000>|null,
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

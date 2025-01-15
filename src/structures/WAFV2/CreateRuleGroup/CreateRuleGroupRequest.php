@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
  * @property int<1, max> $Capacity
- * @property string $Description
- * @property list<Shapes\Rule> $Rules
+ * @property string|null $Description
+ * @property list<Shapes\Rule>|null $Rules
  * @property Shapes\VisibilityConfig $VisibilityConfig
- * @property list<Shapes\Tag> $Tags
- * @property array<string, Shapes\CustomResponseBody> $CustomResponseBodies
+ * @property list<Shapes\Tag>|null $Tags
+ * @property array<string, Shapes\CustomResponseBody>|null $CustomResponseBodies
  */
 class CreateRuleGroupRequest extends Request
 {
@@ -21,11 +21,11 @@ class CreateRuleGroupRequest extends Request
      *     Name: string,
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
      *     Capacity: int<1, max>,
-     *     Description?: string,
-     *     Rules?: list<Shapes\Rule>,
+     *     Description?: string|null,
+     *     Rules?: list<Shapes\Rule>|null,
      *     VisibilityConfig: Shapes\VisibilityConfig,
-     *     Tags?: list<Shapes\Tag>,
-     *     CustomResponseBodies?: array<string, Shapes\CustomResponseBody>
+     *     Tags?: list<Shapes\Tag>|null,
+     *     CustomResponseBodies?: array<string, Shapes\CustomResponseBody>|null
      * } $args
      */
     public function __construct(array $args)

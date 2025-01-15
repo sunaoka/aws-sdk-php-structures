@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\GameLift\CreateGameSessionQueue\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $GameSessionQueueArn
- * @property int<0, max> $TimeoutInSeconds
- * @property list<PlayerLatencyPolicy> $PlayerLatencyPolicies
- * @property list<GameSessionQueueDestination> $Destinations
- * @property FilterConfiguration $FilterConfiguration
- * @property PriorityConfiguration $PriorityConfiguration
- * @property string $CustomEventData
- * @property string $NotificationTarget
+ * @property string|null $Name
+ * @property string|null $GameSessionQueueArn
+ * @property int<0, max>|null $TimeoutInSeconds
+ * @property list<PlayerLatencyPolicy>|null $PlayerLatencyPolicies
+ * @property list<GameSessionQueueDestination>|null $Destinations
+ * @property FilterConfiguration|null $FilterConfiguration
+ * @property PriorityConfiguration|null $PriorityConfiguration
+ * @property string|null $CustomEventData
+ * @property string|null $NotificationTarget
  */
 class GameSessionQueue extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     GameSessionQueueArn?: string,
-     *     TimeoutInSeconds?: int<0, max>,
-     *     PlayerLatencyPolicies?: list<PlayerLatencyPolicy>,
-     *     Destinations?: list<GameSessionQueueDestination>,
-     *     FilterConfiguration?: FilterConfiguration,
-     *     PriorityConfiguration?: PriorityConfiguration,
-     *     CustomEventData?: string,
-     *     NotificationTarget?: string
+     *     Name?: string|null,
+     *     GameSessionQueueArn?: string|null,
+     *     TimeoutInSeconds?: int<0, max>|null,
+     *     PlayerLatencyPolicies?: list<PlayerLatencyPolicy>|null,
+     *     Destinations?: list<GameSessionQueueDestination>|null,
+     *     FilterConfiguration?: FilterConfiguration|null,
+     *     PriorityConfiguration?: PriorityConfiguration|null,
+     *     CustomEventData?: string|null,
+     *     NotificationTarget?: string|null
      * } $args
      */
     public function __construct(array $args = [])

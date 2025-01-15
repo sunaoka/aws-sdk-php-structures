@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeWorkingStorage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GatewayARN
- * @property list<string> $DiskIds
- * @property int $WorkingStorageUsedInBytes
- * @property int $WorkingStorageAllocatedInBytes
+ * @property string|null $GatewayARN
+ * @property list<string>|null $DiskIds
+ * @property int|null $WorkingStorageUsedInBytes
+ * @property int|null $WorkingStorageAllocatedInBytes
  */
 class DescribeWorkingStorageResponse extends Response
 {

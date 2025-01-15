@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $SecurityGroupIds
- * @property RStudioServerProDomainSettings $RStudioServerProDomainSettings
- * @property 'USER_PROFILE_NAME'|'DISABLED' $ExecutionRoleIdentityConfig
- * @property DockerSettings $DockerSettings
- * @property AmazonQSettings $AmazonQSettings
+ * @property list<string>|null $SecurityGroupIds
+ * @property RStudioServerProDomainSettings|null $RStudioServerProDomainSettings
+ * @property 'USER_PROFILE_NAME'|'DISABLED'|null $ExecutionRoleIdentityConfig
+ * @property DockerSettings|null $DockerSettings
+ * @property AmazonQSettings|null $AmazonQSettings
  */
 class DomainSettings extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupIds?: list<string>,
-     *     RStudioServerProDomainSettings?: RStudioServerProDomainSettings,
-     *     ExecutionRoleIdentityConfig?: 'USER_PROFILE_NAME'|'DISABLED',
-     *     DockerSettings?: DockerSettings,
-     *     AmazonQSettings?: AmazonQSettings
+     *     SecurityGroupIds?: list<string>|null,
+     *     RStudioServerProDomainSettings?: RStudioServerProDomainSettings|null,
+     *     ExecutionRoleIdentityConfig?: 'USER_PROFILE_NAME'|'DISABLED'|null,
+     *     DockerSettings?: DockerSettings|null,
+     *     AmazonQSettings?: AmazonQSettings|null
      * } $args
      */
     public function __construct(array $args = [])

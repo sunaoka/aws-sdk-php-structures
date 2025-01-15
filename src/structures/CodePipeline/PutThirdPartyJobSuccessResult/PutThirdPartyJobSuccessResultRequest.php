@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $jobId
  * @property string $clientToken
- * @property Shapes\CurrentRevision $currentRevision
- * @property string $continuationToken
- * @property Shapes\ExecutionDetails $executionDetails
+ * @property Shapes\CurrentRevision|null $currentRevision
+ * @property string|null $continuationToken
+ * @property Shapes\ExecutionDetails|null $executionDetails
  */
 class PutThirdPartyJobSuccessResultRequest extends Request
 {
@@ -17,9 +17,9 @@ class PutThirdPartyJobSuccessResultRequest extends Request
      * @param array{
      *     jobId: string,
      *     clientToken: string,
-     *     currentRevision?: Shapes\CurrentRevision,
-     *     continuationToken?: string,
-     *     executionDetails?: Shapes\ExecutionDetails
+     *     currentRevision?: Shapes\CurrentRevision|null,
+     *     continuationToken?: string|null,
+     *     executionDetails?: Shapes\ExecutionDetails|null
      * } $args
      */
     public function __construct(array $args)

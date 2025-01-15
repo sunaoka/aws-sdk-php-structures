@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property list<string> $versions
- * @property bool $force
+ * @property bool|null $force
  */
 class DeleteAnnotationStoreVersionsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteAnnotationStoreVersionsRequest extends Request
      * @param array{
      *     name: string,
      *     versions: list<string>,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

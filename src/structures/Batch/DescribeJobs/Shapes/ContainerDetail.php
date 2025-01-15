@@ -5,69 +5,69 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $image
- * @property int $vcpus
- * @property int $memory
- * @property list<string> $command
- * @property string $jobRoleArn
- * @property string $executionRoleArn
- * @property list<Volume> $volumes
- * @property list<KeyValuePair> $environment
- * @property list<MountPoint> $mountPoints
- * @property bool $readonlyRootFilesystem
- * @property list<Ulimit> $ulimits
- * @property bool $privileged
- * @property string $user
- * @property int $exitCode
- * @property string $reason
- * @property string $containerInstanceArn
- * @property string $taskArn
- * @property string $logStreamName
- * @property string $instanceType
- * @property list<NetworkInterface> $networkInterfaces
- * @property list<ResourceRequirement> $resourceRequirements
- * @property LinuxParameters $linuxParameters
- * @property LogConfiguration $logConfiguration
- * @property list<Secret> $secrets
- * @property NetworkConfiguration $networkConfiguration
- * @property FargatePlatformConfiguration $fargatePlatformConfiguration
- * @property EphemeralStorage $ephemeralStorage
- * @property RuntimePlatform $runtimePlatform
- * @property RepositoryCredentials $repositoryCredentials
+ * @property string|null $image
+ * @property int|null $vcpus
+ * @property int|null $memory
+ * @property list<string>|null $command
+ * @property string|null $jobRoleArn
+ * @property string|null $executionRoleArn
+ * @property list<Volume>|null $volumes
+ * @property list<KeyValuePair>|null $environment
+ * @property list<MountPoint>|null $mountPoints
+ * @property bool|null $readonlyRootFilesystem
+ * @property list<Ulimit>|null $ulimits
+ * @property bool|null $privileged
+ * @property string|null $user
+ * @property int|null $exitCode
+ * @property string|null $reason
+ * @property string|null $containerInstanceArn
+ * @property string|null $taskArn
+ * @property string|null $logStreamName
+ * @property string|null $instanceType
+ * @property list<NetworkInterface>|null $networkInterfaces
+ * @property list<ResourceRequirement>|null $resourceRequirements
+ * @property LinuxParameters|null $linuxParameters
+ * @property LogConfiguration|null $logConfiguration
+ * @property list<Secret>|null $secrets
+ * @property NetworkConfiguration|null $networkConfiguration
+ * @property FargatePlatformConfiguration|null $fargatePlatformConfiguration
+ * @property EphemeralStorage|null $ephemeralStorage
+ * @property RuntimePlatform|null $runtimePlatform
+ * @property RepositoryCredentials|null $repositoryCredentials
  */
 class ContainerDetail extends Shape
 {
     /**
      * @param array{
-     *     image?: string,
-     *     vcpus?: int,
-     *     memory?: int,
-     *     command?: list<string>,
-     *     jobRoleArn?: string,
-     *     executionRoleArn?: string,
-     *     volumes?: list<Volume>,
-     *     environment?: list<KeyValuePair>,
-     *     mountPoints?: list<MountPoint>,
-     *     readonlyRootFilesystem?: bool,
-     *     ulimits?: list<Ulimit>,
-     *     privileged?: bool,
-     *     user?: string,
-     *     exitCode?: int,
-     *     reason?: string,
-     *     containerInstanceArn?: string,
-     *     taskArn?: string,
-     *     logStreamName?: string,
-     *     instanceType?: string,
-     *     networkInterfaces?: list<NetworkInterface>,
-     *     resourceRequirements?: list<ResourceRequirement>,
-     *     linuxParameters?: LinuxParameters,
-     *     logConfiguration?: LogConfiguration,
-     *     secrets?: list<Secret>,
-     *     networkConfiguration?: NetworkConfiguration,
-     *     fargatePlatformConfiguration?: FargatePlatformConfiguration,
-     *     ephemeralStorage?: EphemeralStorage,
-     *     runtimePlatform?: RuntimePlatform,
-     *     repositoryCredentials?: RepositoryCredentials
+     *     image?: string|null,
+     *     vcpus?: int|null,
+     *     memory?: int|null,
+     *     command?: list<string>|null,
+     *     jobRoleArn?: string|null,
+     *     executionRoleArn?: string|null,
+     *     volumes?: list<Volume>|null,
+     *     environment?: list<KeyValuePair>|null,
+     *     mountPoints?: list<MountPoint>|null,
+     *     readonlyRootFilesystem?: bool|null,
+     *     ulimits?: list<Ulimit>|null,
+     *     privileged?: bool|null,
+     *     user?: string|null,
+     *     exitCode?: int|null,
+     *     reason?: string|null,
+     *     containerInstanceArn?: string|null,
+     *     taskArn?: string|null,
+     *     logStreamName?: string|null,
+     *     instanceType?: string|null,
+     *     networkInterfaces?: list<NetworkInterface>|null,
+     *     resourceRequirements?: list<ResourceRequirement>|null,
+     *     linuxParameters?: LinuxParameters|null,
+     *     logConfiguration?: LogConfiguration|null,
+     *     secrets?: list<Secret>|null,
+     *     networkConfiguration?: NetworkConfiguration|null,
+     *     fargatePlatformConfiguration?: FargatePlatformConfiguration|null,
+     *     ephemeralStorage?: EphemeralStorage|null,
+     *     runtimePlatform?: RuntimePlatform|null,
+     *     repositoryCredentials?: RepositoryCredentials|null
      * } $args
      */
     public function __construct(array $args = [])

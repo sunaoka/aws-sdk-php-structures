@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $messageType
  * @property int $count
- * @property int $dataSize
+ * @property int|null $dataSize
  */
 class TelemetryMetadata extends Shape
 {
@@ -15,7 +15,7 @@ class TelemetryMetadata extends Shape
      * @param array{
      *     messageType: string,
      *     count: int,
-     *     dataSize?: int
+     *     dataSize?: int|null
      * } $args
      */
     public function __construct(array $args)

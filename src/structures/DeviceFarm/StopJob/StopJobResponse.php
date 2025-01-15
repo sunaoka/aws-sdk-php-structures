@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\StopJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Job $job
+ * @property Shapes\Job|null $job
  */
 class StopJobResponse extends Response
 {

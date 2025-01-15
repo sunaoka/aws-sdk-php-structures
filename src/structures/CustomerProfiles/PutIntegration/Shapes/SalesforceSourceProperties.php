@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Object
- * @property bool $EnableDynamicFieldUpdate
- * @property bool $IncludeDeletedRecords
+ * @property bool|null $EnableDynamicFieldUpdate
+ * @property bool|null $IncludeDeletedRecords
  */
 class SalesforceSourceProperties extends Shape
 {
     /**
      * @param array{
      *     Object: string,
-     *     EnableDynamicFieldUpdate?: bool,
-     *     IncludeDeletedRecords?: bool
+     *     EnableDynamicFieldUpdate?: bool|null,
+     *     IncludeDeletedRecords?: bool|null
      * } $args
      */
     public function __construct(array $args)

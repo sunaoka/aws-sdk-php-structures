@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Backup\DescribeRestoreJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AccountId
- * @property string $RestoreJobId
- * @property string $RecoveryPointArn
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $CompletionDate
- * @property 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED' $Status
- * @property string $StatusMessage
- * @property string $PercentDone
- * @property int $BackupSizeInBytes
- * @property string $IamRoleArn
- * @property int $ExpectedCompletionTimeMinutes
- * @property string $CreatedResourceArn
- * @property string $ResourceType
- * @property \Aws\Api\DateTimeResult $RecoveryPointCreationDate
- * @property Shapes\RestoreJobCreator $CreatedBy
- * @property 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING' $ValidationStatus
- * @property string $ValidationStatusMessage
- * @property 'DELETING'|'FAILED'|'SUCCESSFUL' $DeletionStatus
- * @property string $DeletionStatusMessage
+ * @property string|null $AccountId
+ * @property string|null $RestoreJobId
+ * @property string|null $RecoveryPointArn
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $CompletionDate
+ * @property 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
+ * @property string|null $PercentDone
+ * @property int|null $BackupSizeInBytes
+ * @property string|null $IamRoleArn
+ * @property int|null $ExpectedCompletionTimeMinutes
+ * @property string|null $CreatedResourceArn
+ * @property string|null $ResourceType
+ * @property \Aws\Api\DateTimeResult|null $RecoveryPointCreationDate
+ * @property Shapes\RestoreJobCreator|null $CreatedBy
+ * @property 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING'|null $ValidationStatus
+ * @property string|null $ValidationStatusMessage
+ * @property 'DELETING'|'FAILED'|'SUCCESSFUL'|null $DeletionStatus
+ * @property string|null $DeletionStatusMessage
  */
 class DescribeRestoreJobResponse extends Response
 {

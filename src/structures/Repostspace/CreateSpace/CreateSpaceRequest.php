@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Repostspace\CreateSpace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $name
- * @property string $roleArn
+ * @property string|null $roleArn
  * @property string $subdomain
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property 'BASIC'|'STANDARD' $tier
- * @property string $userKMSKey
+ * @property string|null $userKMSKey
  */
 class CreateSpaceRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     name: string,
-     *     roleArn?: string,
+     *     roleArn?: string|null,
      *     subdomain: string,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     tier: 'BASIC'|'STANDARD',
-     *     userKMSKey?: string
+     *     userKMSKey?: string|null
      * } $args
      */
     public function __construct(array $args)

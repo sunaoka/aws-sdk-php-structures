@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateDataSource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property 'RETAIN'|'DELETE' $dataDeletionPolicy
+ * @property string|null $clientToken
+ * @property 'RETAIN'|'DELETE'|null $dataDeletionPolicy
  * @property Shapes\DataSourceConfiguration $dataSourceConfiguration
- * @property string $description
+ * @property string|null $description
  * @property string $knowledgeBaseId
  * @property string $name
- * @property Shapes\ServerSideEncryptionConfiguration $serverSideEncryptionConfiguration
- * @property Shapes\VectorIngestionConfiguration $vectorIngestionConfiguration
+ * @property Shapes\ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
+ * @property Shapes\VectorIngestionConfiguration|null $vectorIngestionConfiguration
  */
 class CreateDataSourceRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     dataDeletionPolicy?: 'RETAIN'|'DELETE',
+     *     clientToken?: string|null,
+     *     dataDeletionPolicy?: 'RETAIN'|'DELETE'|null,
      *     dataSourceConfiguration: Shapes\DataSourceConfiguration,
-     *     description?: string,
+     *     description?: string|null,
      *     knowledgeBaseId: string,
      *     name: string,
-     *     serverSideEncryptionConfiguration?: Shapes\ServerSideEncryptionConfiguration,
-     *     vectorIngestionConfiguration?: Shapes\VectorIngestionConfiguration
+     *     serverSideEncryptionConfiguration?: Shapes\ServerSideEncryptionConfiguration|null,
+     *     vectorIngestionConfiguration?: Shapes\VectorIngestionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,63 +5,63 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AmazonElasticsearchParameters $AmazonElasticsearchParameters
- * @property AthenaParameters $AthenaParameters
- * @property AuroraParameters $AuroraParameters
- * @property AuroraPostgreSqlParameters $AuroraPostgreSqlParameters
- * @property AwsIotAnalyticsParameters $AwsIotAnalyticsParameters
- * @property JiraParameters $JiraParameters
- * @property MariaDbParameters $MariaDbParameters
- * @property MySqlParameters $MySqlParameters
- * @property OracleParameters $OracleParameters
- * @property PostgreSqlParameters $PostgreSqlParameters
- * @property PrestoParameters $PrestoParameters
- * @property RdsParameters $RdsParameters
- * @property RedshiftParameters $RedshiftParameters
- * @property S3Parameters $S3Parameters
- * @property ServiceNowParameters $ServiceNowParameters
- * @property SnowflakeParameters $SnowflakeParameters
- * @property SparkParameters $SparkParameters
- * @property SqlServerParameters $SqlServerParameters
- * @property TeradataParameters $TeradataParameters
- * @property TwitterParameters $TwitterParameters
- * @property AmazonOpenSearchParameters $AmazonOpenSearchParameters
- * @property ExasolParameters $ExasolParameters
- * @property DatabricksParameters $DatabricksParameters
- * @property StarburstParameters $StarburstParameters
- * @property TrinoParameters $TrinoParameters
- * @property BigQueryParameters $BigQueryParameters
+ * @property AmazonElasticsearchParameters|null $AmazonElasticsearchParameters
+ * @property AthenaParameters|null $AthenaParameters
+ * @property AuroraParameters|null $AuroraParameters
+ * @property AuroraPostgreSqlParameters|null $AuroraPostgreSqlParameters
+ * @property AwsIotAnalyticsParameters|null $AwsIotAnalyticsParameters
+ * @property JiraParameters|null $JiraParameters
+ * @property MariaDbParameters|null $MariaDbParameters
+ * @property MySqlParameters|null $MySqlParameters
+ * @property OracleParameters|null $OracleParameters
+ * @property PostgreSqlParameters|null $PostgreSqlParameters
+ * @property PrestoParameters|null $PrestoParameters
+ * @property RdsParameters|null $RdsParameters
+ * @property RedshiftParameters|null $RedshiftParameters
+ * @property S3Parameters|null $S3Parameters
+ * @property ServiceNowParameters|null $ServiceNowParameters
+ * @property SnowflakeParameters|null $SnowflakeParameters
+ * @property SparkParameters|null $SparkParameters
+ * @property SqlServerParameters|null $SqlServerParameters
+ * @property TeradataParameters|null $TeradataParameters
+ * @property TwitterParameters|null $TwitterParameters
+ * @property AmazonOpenSearchParameters|null $AmazonOpenSearchParameters
+ * @property ExasolParameters|null $ExasolParameters
+ * @property DatabricksParameters|null $DatabricksParameters
+ * @property StarburstParameters|null $StarburstParameters
+ * @property TrinoParameters|null $TrinoParameters
+ * @property BigQueryParameters|null $BigQueryParameters
  */
 class DataSourceParameters extends Shape
 {
     /**
      * @param array{
-     *     AmazonElasticsearchParameters?: AmazonElasticsearchParameters,
-     *     AthenaParameters?: AthenaParameters,
-     *     AuroraParameters?: AuroraParameters,
-     *     AuroraPostgreSqlParameters?: AuroraPostgreSqlParameters,
-     *     AwsIotAnalyticsParameters?: AwsIotAnalyticsParameters,
-     *     JiraParameters?: JiraParameters,
-     *     MariaDbParameters?: MariaDbParameters,
-     *     MySqlParameters?: MySqlParameters,
-     *     OracleParameters?: OracleParameters,
-     *     PostgreSqlParameters?: PostgreSqlParameters,
-     *     PrestoParameters?: PrestoParameters,
-     *     RdsParameters?: RdsParameters,
-     *     RedshiftParameters?: RedshiftParameters,
-     *     S3Parameters?: S3Parameters,
-     *     ServiceNowParameters?: ServiceNowParameters,
-     *     SnowflakeParameters?: SnowflakeParameters,
-     *     SparkParameters?: SparkParameters,
-     *     SqlServerParameters?: SqlServerParameters,
-     *     TeradataParameters?: TeradataParameters,
-     *     TwitterParameters?: TwitterParameters,
-     *     AmazonOpenSearchParameters?: AmazonOpenSearchParameters,
-     *     ExasolParameters?: ExasolParameters,
-     *     DatabricksParameters?: DatabricksParameters,
-     *     StarburstParameters?: StarburstParameters,
-     *     TrinoParameters?: TrinoParameters,
-     *     BigQueryParameters?: BigQueryParameters
+     *     AmazonElasticsearchParameters?: AmazonElasticsearchParameters|null,
+     *     AthenaParameters?: AthenaParameters|null,
+     *     AuroraParameters?: AuroraParameters|null,
+     *     AuroraPostgreSqlParameters?: AuroraPostgreSqlParameters|null,
+     *     AwsIotAnalyticsParameters?: AwsIotAnalyticsParameters|null,
+     *     JiraParameters?: JiraParameters|null,
+     *     MariaDbParameters?: MariaDbParameters|null,
+     *     MySqlParameters?: MySqlParameters|null,
+     *     OracleParameters?: OracleParameters|null,
+     *     PostgreSqlParameters?: PostgreSqlParameters|null,
+     *     PrestoParameters?: PrestoParameters|null,
+     *     RdsParameters?: RdsParameters|null,
+     *     RedshiftParameters?: RedshiftParameters|null,
+     *     S3Parameters?: S3Parameters|null,
+     *     ServiceNowParameters?: ServiceNowParameters|null,
+     *     SnowflakeParameters?: SnowflakeParameters|null,
+     *     SparkParameters?: SparkParameters|null,
+     *     SqlServerParameters?: SqlServerParameters|null,
+     *     TeradataParameters?: TeradataParameters|null,
+     *     TwitterParameters?: TwitterParameters|null,
+     *     AmazonOpenSearchParameters?: AmazonOpenSearchParameters|null,
+     *     ExasolParameters?: ExasolParameters|null,
+     *     DatabricksParameters?: DatabricksParameters|null,
+     *     StarburstParameters?: StarburstParameters|null,
+     *     TrinoParameters?: TrinoParameters|null,
+     *     BigQueryParameters?: BigQueryParameters|null
      * } $args
      */
     public function __construct(array $args = [])

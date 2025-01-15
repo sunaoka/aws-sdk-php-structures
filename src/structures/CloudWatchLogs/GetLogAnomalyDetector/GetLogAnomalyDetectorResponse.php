@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetLogAnomalyDetector;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $detectorName
- * @property list<string> $logGroupArnList
- * @property 'ONE_MIN'|'FIVE_MIN'|'TEN_MIN'|'FIFTEEN_MIN'|'THIRTY_MIN'|'ONE_HOUR' $evaluationFrequency
- * @property string $filterPattern
- * @property 'INITIALIZING'|'TRAINING'|'ANALYZING'|'FAILED'|'DELETED'|'PAUSED' $anomalyDetectorStatus
- * @property string $kmsKeyId
- * @property int<0, max> $creationTimeStamp
- * @property int<0, max> $lastModifiedTimeStamp
- * @property int<7, 90> $anomalyVisibilityTime
+ * @property string|null $detectorName
+ * @property list<string>|null $logGroupArnList
+ * @property 'ONE_MIN'|'FIVE_MIN'|'TEN_MIN'|'FIFTEEN_MIN'|'THIRTY_MIN'|'ONE_HOUR'|null $evaluationFrequency
+ * @property string|null $filterPattern
+ * @property 'INITIALIZING'|'TRAINING'|'ANALYZING'|'FAILED'|'DELETED'|'PAUSED'|null $anomalyDetectorStatus
+ * @property string|null $kmsKeyId
+ * @property int<0, max>|null $creationTimeStamp
+ * @property int<0, max>|null $lastModifiedTimeStamp
+ * @property int<7, 90>|null $anomalyVisibilityTime
  */
 class GetLogAnomalyDetectorResponse extends Response
 {

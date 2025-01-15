@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\GetDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $frequency
- * @property string $architecture
- * @property double $clock
+ * @property string|null $frequency
+ * @property string|null $architecture
+ * @property double|null $clock
  */
 class CPU extends Shape
 {
     /**
      * @param array{
-     *     frequency?: string,
-     *     architecture?: string,
-     *     clock?: double
+     *     frequency?: string|null,
+     *     architecture?: string|null,
+     *     clock?: double|null
      * } $args
      */
     public function __construct(array $args = [])

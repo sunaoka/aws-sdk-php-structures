@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\HubContentInfo> $HubContentSummaries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListHubContentVersionsResponse extends Response
 {

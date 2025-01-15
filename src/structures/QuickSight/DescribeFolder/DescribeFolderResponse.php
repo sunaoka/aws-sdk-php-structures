@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeFolder;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Status
- * @property Shapes\Folder $Folder
- * @property string $RequestId
+ * @property int|null $Status
+ * @property Shapes\Folder|null $Folder
+ * @property string|null $RequestId
  */
 class DescribeFolderResponse extends Response
 {

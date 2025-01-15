@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodePipeline\GetPipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GitTagFilterCriteria $tags
- * @property GitBranchFilterCriteria $branches
- * @property GitFilePathFilterCriteria $filePaths
+ * @property GitTagFilterCriteria|null $tags
+ * @property GitBranchFilterCriteria|null $branches
+ * @property GitFilePathFilterCriteria|null $filePaths
  */
 class GitPushFilter extends Shape
 {
     /**
      * @param array{
-     *     tags?: GitTagFilterCriteria,
-     *     branches?: GitBranchFilterCriteria,
-     *     filePaths?: GitFilePathFilterCriteria
+     *     tags?: GitTagFilterCriteria|null,
+     *     branches?: GitBranchFilterCriteria|null,
+     *     filePaths?: GitFilePathFilterCriteria|null
      * } $args
      */
     public function __construct(array $args = [])

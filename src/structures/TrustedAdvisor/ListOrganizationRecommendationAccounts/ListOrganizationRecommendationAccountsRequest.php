@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\TrustedAdvisor\ListOrganizationRecommendationAc
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $affectedAccountId
- * @property int<1, 200> $maxResults
- * @property string $nextToken
+ * @property string|null $affectedAccountId
+ * @property int<1, 200>|null $maxResults
+ * @property string|null $nextToken
  * @property string $organizationRecommendationIdentifier
  */
 class ListOrganizationRecommendationAccountsRequest extends Request
 {
     /**
      * @param array{
-     *     affectedAccountId?: string,
-     *     maxResults?: int<1, 200>,
-     *     nextToken?: string,
+     *     affectedAccountId?: string|null,
+     *     maxResults?: int<1, 200>|null,
+     *     nextToken?: string|null,
      *     organizationRecommendationIdentifier: string
      * } $args
      */

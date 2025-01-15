@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalNetworkId
  * @property string $ConnectionId
- * @property string $LinkId
- * @property string $ConnectedLinkId
- * @property string $Description
+ * @property string|null $LinkId
+ * @property string|null $ConnectedLinkId
+ * @property string|null $Description
  */
 class UpdateConnectionRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateConnectionRequest extends Request
      * @param array{
      *     GlobalNetworkId: string,
      *     ConnectionId: string,
-     *     LinkId?: string,
-     *     ConnectedLinkId?: string,
-     *     Description?: string
+     *     LinkId?: string|null,
+     *     ConnectedLinkId?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Panorama\CreateApplicationInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ApplicationInstanceIdToReplace
+ * @property string|null $ApplicationInstanceIdToReplace
  * @property string $DefaultRuntimeContextDevice
- * @property string $Description
- * @property Shapes\ManifestOverridesPayload $ManifestOverridesPayload
+ * @property string|null $Description
+ * @property Shapes\ManifestOverridesPayload|null $ManifestOverridesPayload
  * @property Shapes\ManifestPayload $ManifestPayload
- * @property string $Name
- * @property string $RuntimeRoleArn
- * @property array<string, string> $Tags
+ * @property string|null $Name
+ * @property string|null $RuntimeRoleArn
+ * @property array<string, string>|null $Tags
  */
 class CreateApplicationInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationInstanceIdToReplace?: string,
+     *     ApplicationInstanceIdToReplace?: string|null,
      *     DefaultRuntimeContextDevice: string,
-     *     Description?: string,
-     *     ManifestOverridesPayload?: Shapes\ManifestOverridesPayload,
+     *     Description?: string|null,
+     *     ManifestOverridesPayload?: Shapes\ManifestOverridesPayload|null,
      *     ManifestPayload: Shapes\ManifestPayload,
-     *     Name?: string,
-     *     RuntimeRoleArn?: string,
-     *     Tags?: array<string, string>
+     *     Name?: string|null,
+     *     RuntimeRoleArn?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

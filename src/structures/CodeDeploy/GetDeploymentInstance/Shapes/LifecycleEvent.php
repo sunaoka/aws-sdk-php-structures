@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeploymentInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $lifecycleEventName
- * @property Diagnostics $diagnostics
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown' $status
+ * @property string|null $lifecycleEventName
+ * @property Diagnostics|null $diagnostics
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|null $status
  */
 class LifecycleEvent extends Shape
 {
     /**
      * @param array{
-     *     lifecycleEventName?: string,
-     *     diagnostics?: Diagnostics,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'
+     *     lifecycleEventName?: string|null,
+     *     diagnostics?: Diagnostics|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|null
      * } $args
      */
     public function __construct(array $args = [])

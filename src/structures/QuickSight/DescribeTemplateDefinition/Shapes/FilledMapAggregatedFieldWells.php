@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Geospatial
- * @property list<MeasureField> $Values
+ * @property list<DimensionField>|null $Geospatial
+ * @property list<MeasureField>|null $Values
  */
 class FilledMapAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Geospatial?: list<DimensionField>,
-     *     Values?: list<MeasureField>
+     *     Geospatial?: list<DimensionField>|null,
+     *     Values?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

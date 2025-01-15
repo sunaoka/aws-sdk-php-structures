@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCommit\TestRepositoryTriggers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $trigger
- * @property string $failureMessage
+ * @property string|null $trigger
+ * @property string|null $failureMessage
  */
 class RepositoryTriggerExecutionFailure extends Shape
 {
     /**
      * @param array{
-     *     trigger?: string,
-     *     failureMessage?: string
+     *     trigger?: string|null,
+     *     failureMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

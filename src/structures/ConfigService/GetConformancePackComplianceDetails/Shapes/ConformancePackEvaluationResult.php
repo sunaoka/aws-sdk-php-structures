@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EvaluationResultIdentifier $EvaluationResultIdentifier
  * @property \Aws\Api\DateTimeResult $ConfigRuleInvokedTime
  * @property \Aws\Api\DateTimeResult $ResultRecordedTime
- * @property string $Annotation
+ * @property string|null $Annotation
  */
 class ConformancePackEvaluationResult extends Shape
 {
@@ -19,7 +19,7 @@ class ConformancePackEvaluationResult extends Shape
      *     EvaluationResultIdentifier: EvaluationResultIdentifier,
      *     ConfigRuleInvokedTime: \Aws\Api\DateTimeResult,
      *     ResultRecordedTime: \Aws\Api\DateTimeResult,
-     *     Annotation?: string
+     *     Annotation?: string|null
      * } $args
      */
     public function __construct(array $args)

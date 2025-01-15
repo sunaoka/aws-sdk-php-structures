@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProblemId
- * @property 'RESOLVED' $UpdateStatus
- * @property 'IGNORED'|'VISIBLE' $Visibility
+ * @property 'RESOLVED'|null $UpdateStatus
+ * @property 'IGNORED'|'VISIBLE'|null $Visibility
  */
 class UpdateProblemRequest extends Request
 {
     /**
      * @param array{
      *     ProblemId: string,
-     *     UpdateStatus?: 'RESOLVED',
-     *     Visibility?: 'IGNORED'|'VISIBLE'
+     *     UpdateStatus?: 'RESOLVED'|null,
+     *     Visibility?: 'IGNORED'|'VISIBLE'|null
      * } $args
      */
     public function __construct(array $args)

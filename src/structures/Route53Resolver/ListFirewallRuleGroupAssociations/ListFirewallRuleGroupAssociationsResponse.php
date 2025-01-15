@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\ListFirewallRuleGroupAssociatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\FirewallRuleGroupAssociation> $FirewallRuleGroupAssociations
+ * @property string|null $NextToken
+ * @property list<Shapes\FirewallRuleGroupAssociation>|null $FirewallRuleGroupAssociations
  */
 class ListFirewallRuleGroupAssociationsResponse extends Response
 {

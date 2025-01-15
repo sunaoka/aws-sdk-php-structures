@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Iot\RegisterThing;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $certificatePem
- * @property array<string, string> $resourceArns
+ * @property string|null $certificatePem
+ * @property array<string, string>|null $resourceArns
  */
 class RegisterThingResponse extends Response
 {

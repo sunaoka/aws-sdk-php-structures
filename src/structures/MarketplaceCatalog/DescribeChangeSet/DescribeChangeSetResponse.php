@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\DescribeChangeSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChangeSetId
- * @property string $ChangeSetArn
- * @property string $ChangeSetName
- * @property 'VALIDATE'|'APPLY' $Intent
- * @property string $StartTime
- * @property string $EndTime
- * @property 'PREPARING'|'APPLYING'|'SUCCEEDED'|'CANCELLED'|'FAILED' $Status
- * @property 'CLIENT_ERROR'|'SERVER_FAULT' $FailureCode
- * @property string $FailureDescription
- * @property list<Shapes\ChangeSummary> $ChangeSet
+ * @property string|null $ChangeSetId
+ * @property string|null $ChangeSetArn
+ * @property string|null $ChangeSetName
+ * @property 'VALIDATE'|'APPLY'|null $Intent
+ * @property string|null $StartTime
+ * @property string|null $EndTime
+ * @property 'PREPARING'|'APPLYING'|'SUCCEEDED'|'CANCELLED'|'FAILED'|null $Status
+ * @property 'CLIENT_ERROR'|'SERVER_FAULT'|null $FailureCode
+ * @property string|null $FailureDescription
+ * @property list<Shapes\ChangeSummary>|null $ChangeSet
  */
 class DescribeChangeSetResponse extends Response
 {

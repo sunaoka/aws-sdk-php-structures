@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\Suggest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlaceId
- * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress' $PlaceType
- * @property Address $Address
- * @property list<double> $Position
- * @property int<0, 4294967295> $Distance
- * @property list<double> $MapView
- * @property list<Category> $Categories
- * @property list<FoodType> $FoodTypes
- * @property list<BusinessChain> $BusinessChains
- * @property list<AccessPoint> $AccessPoints
- * @property list<AccessRestriction> $AccessRestrictions
- * @property TimeZone $TimeZone
- * @property string $PoliticalView
- * @property PhonemeDetails $Phonemes
+ * @property string|null $PlaceId
+ * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress'|null $PlaceType
+ * @property Address|null $Address
+ * @property list<double>|null $Position
+ * @property int<0, 4294967295>|null $Distance
+ * @property list<double>|null $MapView
+ * @property list<Category>|null $Categories
+ * @property list<FoodType>|null $FoodTypes
+ * @property list<BusinessChain>|null $BusinessChains
+ * @property list<AccessPoint>|null $AccessPoints
+ * @property list<AccessRestriction>|null $AccessRestrictions
+ * @property TimeZone|null $TimeZone
+ * @property string|null $PoliticalView
+ * @property PhonemeDetails|null $Phonemes
  */
 class SuggestPlaceResult extends Shape
 {
     /**
      * @param array{
-     *     PlaceId?: string,
-     *     PlaceType?: 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress',
-     *     Address?: Address,
-     *     Position?: list<double>,
-     *     Distance?: int<0, 4294967295>,
-     *     MapView?: list<double>,
-     *     Categories?: list<Category>,
-     *     FoodTypes?: list<FoodType>,
-     *     BusinessChains?: list<BusinessChain>,
-     *     AccessPoints?: list<AccessPoint>,
-     *     AccessRestrictions?: list<AccessRestriction>,
-     *     TimeZone?: TimeZone,
-     *     PoliticalView?: string,
-     *     Phonemes?: PhonemeDetails
+     *     PlaceId?: string|null,
+     *     PlaceType?: 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress'|null,
+     *     Address?: Address|null,
+     *     Position?: list<double>|null,
+     *     Distance?: int<0, 4294967295>|null,
+     *     MapView?: list<double>|null,
+     *     Categories?: list<Category>|null,
+     *     FoodTypes?: list<FoodType>|null,
+     *     BusinessChains?: list<BusinessChain>|null,
+     *     AccessPoints?: list<AccessPoint>|null,
+     *     AccessRestrictions?: list<AccessRestriction>|null,
+     *     TimeZone?: TimeZone|null,
+     *     PoliticalView?: string|null,
+     *     Phonemes?: PhonemeDetails|null
      * } $args
      */
     public function __construct(array $args = [])

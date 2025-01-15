@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSecurityGroupVpcAssociations\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroupId
- * @property string $VpcId
- * @property string $VpcOwnerId
- * @property 'associating'|'associated'|'association-failed'|'disassociating'|'disassociated'|'disassociation-failed' $State
- * @property string $StateReason
+ * @property string|null $GroupId
+ * @property string|null $VpcId
+ * @property string|null $VpcOwnerId
+ * @property 'associating'|'associated'|'association-failed'|'disassociating'|'disassociated'|'disassociation-failed'|null $State
+ * @property string|null $StateReason
  */
 class SecurityGroupVpcAssociation extends Shape
 {
     /**
      * @param array{
-     *     GroupId?: string,
-     *     VpcId?: string,
-     *     VpcOwnerId?: string,
-     *     State?: 'associating'|'associated'|'association-failed'|'disassociating'|'disassociated'|'disassociation-failed',
-     *     StateReason?: string
+     *     GroupId?: string|null,
+     *     VpcId?: string|null,
+     *     VpcOwnerId?: string|null,
+     *     State?: 'associating'|'associated'|'association-failed'|'disassociating'|'disassociated'|'disassociation-failed'|null,
+     *     StateReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

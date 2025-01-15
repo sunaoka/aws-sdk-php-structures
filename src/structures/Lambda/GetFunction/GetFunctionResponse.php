@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Lambda\GetFunction;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\FunctionConfiguration $Configuration
- * @property Shapes\FunctionCodeLocation $Code
- * @property array<string, string> $Tags
- * @property Shapes\TagsError $TagsError
- * @property Shapes\Concurrency $Concurrency
+ * @property Shapes\FunctionConfiguration|null $Configuration
+ * @property Shapes\FunctionCodeLocation|null $Code
+ * @property array<string, string>|null $Tags
+ * @property Shapes\TagsError|null $TagsError
+ * @property Shapes\Concurrency|null $Concurrency
  */
 class GetFunctionResponse extends Response
 {

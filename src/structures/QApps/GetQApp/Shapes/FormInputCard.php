@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $dependencies
  * @property 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input' $type
  * @property FormInputCardMetadata $metadata
- * @property 'append'|'replace' $computeMode
+ * @property 'append'|'replace'|null $computeMode
  */
 class FormInputCard extends Shape
 {
@@ -21,7 +21,7 @@ class FormInputCard extends Shape
      *     dependencies: list<string>,
      *     type: 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input',
      *     metadata: FormInputCardMetadata,
-     *     computeMode?: 'append'|'replace'
+     *     computeMode?: 'append'|'replace'|null
      * } $args
      */
     public function __construct(array $args)

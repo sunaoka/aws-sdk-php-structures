@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\DescribeQuerySuggestionsConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AttributeName
- * @property bool $Suggestable
+ * @property string|null $AttributeName
+ * @property bool|null $Suggestable
  */
 class SuggestableConfig extends Shape
 {
     /**
      * @param array{
-     *     AttributeName?: string,
-     *     Suggestable?: bool
+     *     AttributeName?: string|null,
+     *     Suggestable?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

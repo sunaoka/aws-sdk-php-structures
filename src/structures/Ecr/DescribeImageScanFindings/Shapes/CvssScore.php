@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeImageScanFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $baseScore
- * @property string $scoringVector
- * @property string $source
- * @property string $version
+ * @property double|null $baseScore
+ * @property string|null $scoringVector
+ * @property string|null $source
+ * @property string|null $version
  */
 class CvssScore extends Shape
 {
     /**
      * @param array{
-     *     baseScore?: double,
-     *     scoringVector?: string,
-     *     source?: string,
-     *     version?: string
+     *     baseScore?: double|null,
+     *     scoringVector?: string|null,
+     *     source?: string|null,
+     *     version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

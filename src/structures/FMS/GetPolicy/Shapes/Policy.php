@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\FMS\GetPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PolicyId
+ * @property string|null $PolicyId
  * @property string $PolicyName
- * @property string $PolicyUpdateToken
+ * @property string|null $PolicyUpdateToken
  * @property SecurityServicePolicyData $SecurityServicePolicyData
  * @property string $ResourceType
- * @property list<string> $ResourceTypeList
- * @property list<ResourceTag> $ResourceTags
+ * @property list<string>|null $ResourceTypeList
+ * @property list<ResourceTag>|null $ResourceTags
  * @property bool $ExcludeResourceTags
  * @property bool $RemediationEnabled
- * @property bool $DeleteUnusedFMManagedResources
- * @property array<'ACCOUNT'|'ORG_UNIT', list<string>> $IncludeMap
- * @property array<'ACCOUNT'|'ORG_UNIT', list<string>> $ExcludeMap
- * @property list<string> $ResourceSetIds
- * @property string $PolicyDescription
- * @property 'ACTIVE'|'OUT_OF_ADMIN_SCOPE' $PolicyStatus
- * @property 'AND'|'OR' $ResourceTagLogicalOperator
+ * @property bool|null $DeleteUnusedFMManagedResources
+ * @property array<'ACCOUNT'|'ORG_UNIT', list<string>>|null $IncludeMap
+ * @property array<'ACCOUNT'|'ORG_UNIT', list<string>>|null $ExcludeMap
+ * @property list<string>|null $ResourceSetIds
+ * @property string|null $PolicyDescription
+ * @property 'ACTIVE'|'OUT_OF_ADMIN_SCOPE'|null $PolicyStatus
+ * @property 'AND'|'OR'|null $ResourceTagLogicalOperator
  */
 class Policy extends Shape
 {
     /**
      * @param array{
-     *     PolicyId?: string,
+     *     PolicyId?: string|null,
      *     PolicyName: string,
-     *     PolicyUpdateToken?: string,
+     *     PolicyUpdateToken?: string|null,
      *     SecurityServicePolicyData: SecurityServicePolicyData,
      *     ResourceType: string,
-     *     ResourceTypeList?: list<string>,
-     *     ResourceTags?: list<ResourceTag>,
+     *     ResourceTypeList?: list<string>|null,
+     *     ResourceTags?: list<ResourceTag>|null,
      *     ExcludeResourceTags: bool,
      *     RemediationEnabled: bool,
-     *     DeleteUnusedFMManagedResources?: bool,
-     *     IncludeMap?: array<'ACCOUNT'|'ORG_UNIT', list<string>>,
-     *     ExcludeMap?: array<'ACCOUNT'|'ORG_UNIT', list<string>>,
-     *     ResourceSetIds?: list<string>,
-     *     PolicyDescription?: string,
-     *     PolicyStatus?: 'ACTIVE'|'OUT_OF_ADMIN_SCOPE',
-     *     ResourceTagLogicalOperator?: 'AND'|'OR'
+     *     DeleteUnusedFMManagedResources?: bool|null,
+     *     IncludeMap?: array<'ACCOUNT'|'ORG_UNIT', list<string>>|null,
+     *     ExcludeMap?: array<'ACCOUNT'|'ORG_UNIT', list<string>>|null,
+     *     ResourceSetIds?: list<string>|null,
+     *     PolicyDescription?: string|null,
+     *     PolicyStatus?: 'ACTIVE'|'OUT_OF_ADMIN_SCOPE'|null,
+     *     ResourceTagLogicalOperator?: 'AND'|'OR'|null
      * } $args
      */
     public function __construct(array $args)

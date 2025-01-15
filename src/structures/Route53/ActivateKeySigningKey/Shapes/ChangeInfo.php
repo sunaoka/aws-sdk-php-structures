@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property 'PENDING'|'INSYNC' $Status
  * @property \Aws\Api\DateTimeResult $SubmittedAt
- * @property string $Comment
+ * @property string|null $Comment
  */
 class ChangeInfo extends Shape
 {
@@ -17,7 +17,7 @@ class ChangeInfo extends Shape
      *     Id: string,
      *     Status: 'PENDING'|'INSYNC',
      *     SubmittedAt: \Aws\Api\DateTimeResult,
-     *     Comment?: string
+     *     Comment?: string|null
      * } $args
      */
     public function __construct(array $args)

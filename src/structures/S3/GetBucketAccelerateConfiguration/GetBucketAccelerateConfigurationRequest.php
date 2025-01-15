@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $ExpectedBucketOwner
- * @property 'requester' $RequestPayer
+ * @property string|null $ExpectedBucketOwner
+ * @property 'requester'|null $RequestPayer
  */
 class GetBucketAccelerateConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     ExpectedBucketOwner?: string,
-     *     RequestPayer?: 'requester'
+     *     ExpectedBucketOwner?: string|null,
+     *     RequestPayer?: 'requester'|null
      * } $args
      */
     public function __construct(array $args)

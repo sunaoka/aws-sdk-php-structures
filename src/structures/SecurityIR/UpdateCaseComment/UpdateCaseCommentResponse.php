@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $commentId
- * @property string $body
+ * @property string|null $body
  */
 class UpdateCaseCommentResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Waf\UpdateXssMatchSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChangeToken
+ * @property string|null $ChangeToken
  */
 class UpdateXssMatchSetResponse extends Response
 {

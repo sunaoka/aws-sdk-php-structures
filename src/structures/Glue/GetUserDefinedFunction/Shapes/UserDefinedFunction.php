@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Glue\GetUserDefinedFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FunctionName
- * @property string $DatabaseName
- * @property string $ClassName
- * @property string $OwnerName
- * @property 'USER'|'ROLE'|'GROUP' $OwnerType
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<ResourceUri> $ResourceUris
- * @property string $CatalogId
+ * @property string|null $FunctionName
+ * @property string|null $DatabaseName
+ * @property string|null $ClassName
+ * @property string|null $OwnerName
+ * @property 'USER'|'ROLE'|'GROUP'|null $OwnerType
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property list<ResourceUri>|null $ResourceUris
+ * @property string|null $CatalogId
  */
 class UserDefinedFunction extends Shape
 {
     /**
      * @param array{
-     *     FunctionName?: string,
-     *     DatabaseName?: string,
-     *     ClassName?: string,
-     *     OwnerName?: string,
-     *     OwnerType?: 'USER'|'ROLE'|'GROUP',
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     ResourceUris?: list<ResourceUri>,
-     *     CatalogId?: string
+     *     FunctionName?: string|null,
+     *     DatabaseName?: string|null,
+     *     ClassName?: string|null,
+     *     OwnerName?: string|null,
+     *     OwnerType?: 'USER'|'ROLE'|'GROUP'|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     ResourceUris?: list<ResourceUri>|null,
+     *     CatalogId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

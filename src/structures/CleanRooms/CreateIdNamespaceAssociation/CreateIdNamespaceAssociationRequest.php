@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $membershipIdentifier
  * @property Shapes\IdNamespaceAssociationInputReferenceConfig $inputReferenceConfig
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $name
- * @property string $description
- * @property Shapes\IdMappingConfig $idMappingConfig
+ * @property string|null $description
+ * @property Shapes\IdMappingConfig|null $idMappingConfig
  */
 class CreateIdNamespaceAssociationRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateIdNamespaceAssociationRequest extends Request
      * @param array{
      *     membershipIdentifier: string,
      *     inputReferenceConfig: Shapes\IdNamespaceAssociationInputReferenceConfig,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     name: string,
-     *     description?: string,
-     *     idMappingConfig?: Shapes\IdMappingConfig
+     *     description?: string|null,
+     *     idMappingConfig?: Shapes\IdMappingConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\mgn\UpdateApplication;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountID
+ * @property string|null $accountID
  * @property string $applicationID
- * @property string $description
- * @property string $name
+ * @property string|null $description
+ * @property string|null $name
  */
 class UpdateApplicationRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string,
+     *     accountID?: string|null,
      *     applicationID: string,
-     *     description?: string,
-     *     name?: string
+     *     description?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

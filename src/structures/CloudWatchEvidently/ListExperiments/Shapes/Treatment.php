@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\ListExperiments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property array<string, string> $featureVariations
+ * @property string|null $description
+ * @property array<string, string>|null $featureVariations
  * @property string $name
  */
 class Treatment extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     featureVariations?: array<string, string>,
+     *     description?: string|null,
+     *     featureVariations?: array<string, string>|null,
      *     name: string
      * } $args
      */

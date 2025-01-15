@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $totalResultCount
- * @property array<'Matched'|'Mismatched'|'ExecutionError', int> $speechTranscriptionResultCounts
+ * @property array<'Matched'|'Mismatched'|'ExecutionError', int>|null $speechTranscriptionResultCounts
  * @property array<'Matched'|'Mismatched'|'ExecutionError', int> $slotMatchResultCounts
  */
 class SlotResolutionTestResultItemCounts extends Shape
@@ -14,7 +14,7 @@ class SlotResolutionTestResultItemCounts extends Shape
     /**
      * @param array{
      *     totalResultCount: int,
-     *     speechTranscriptionResultCounts?: array<'Matched'|'Mismatched'|'ExecutionError', int>,
+     *     speechTranscriptionResultCounts?: array<'Matched'|'Mismatched'|'ExecutionError', int>|null,
      *     slotMatchResultCounts: array<'Matched'|'Mismatched'|'ExecutionError', int>
      * } $args
      */

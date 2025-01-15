@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DeleteReplicationGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $UserGroupIdsToAdd
- * @property list<string> $UserGroupIdsToRemove
+ * @property list<string>|null $UserGroupIdsToAdd
+ * @property list<string>|null $UserGroupIdsToRemove
  */
 class UserGroupsUpdateStatus extends Shape
 {
     /**
      * @param array{
-     *     UserGroupIdsToAdd?: list<string>,
-     *     UserGroupIdsToRemove?: list<string>
+     *     UserGroupIdsToAdd?: list<string>|null,
+     *     UserGroupIdsToRemove?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\DataZone\SearchTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property string|null $description
  * @property string $domainId
- * @property list<Import> $imports
- * @property Model $model
+ * @property list<Import>|null $imports
+ * @property Model|null $model
  * @property string $name
- * @property string $originDomainId
- * @property string $originProjectId
- * @property string $owningProjectId
+ * @property string|null $originDomainId
+ * @property string|null $originProjectId
+ * @property string|null $owningProjectId
  * @property string $revision
- * @property 'ENABLED'|'DISABLED' $status
+ * @property 'ENABLED'|'DISABLED'|null $status
  */
 class FormTypeData extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string,
-     *     description?: string,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     description?: string|null,
      *     domainId: string,
-     *     imports?: list<Import>,
-     *     model?: Model,
+     *     imports?: list<Import>|null,
+     *     model?: Model|null,
      *     name: string,
-     *     originDomainId?: string,
-     *     originProjectId?: string,
-     *     owningProjectId?: string,
+     *     originDomainId?: string|null,
+     *     originProjectId?: string|null,
+     *     owningProjectId?: string|null,
      *     revision: string,
-     *     status?: 'ENABLED'|'DISABLED'
+     *     status?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

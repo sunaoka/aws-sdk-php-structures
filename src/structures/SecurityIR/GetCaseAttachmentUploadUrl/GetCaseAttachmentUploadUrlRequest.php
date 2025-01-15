@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $caseId
  * @property string $fileName
  * @property int<1, 104857600> $contentLength
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class GetCaseAttachmentUploadUrlRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetCaseAttachmentUploadUrlRequest extends Request
      *     caseId: string,
      *     fileName: string,
      *     contentLength: int<1, 104857600>,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

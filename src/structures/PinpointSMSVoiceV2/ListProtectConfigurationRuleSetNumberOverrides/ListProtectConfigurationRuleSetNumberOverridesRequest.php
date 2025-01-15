@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProtectConfigurationId
- * @property list<Shapes\ProtectConfigurationRuleSetNumberOverrideFilterItem> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<Shapes\ProtectConfigurationRuleSetNumberOverrideFilterItem>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListProtectConfigurationRuleSetNumberOverridesRequest extends Request
 {
     /**
      * @param array{
      *     ProtectConfigurationId: string,
-     *     Filters?: list<Shapes\ProtectConfigurationRuleSetNumberOverrideFilterItem>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     Filters?: list<Shapes\ProtectConfigurationRuleSetNumberOverrideFilterItem>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

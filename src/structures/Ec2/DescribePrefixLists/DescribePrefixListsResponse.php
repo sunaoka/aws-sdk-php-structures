@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribePrefixLists;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\PrefixList> $PrefixLists
+ * @property string|null $NextToken
+ * @property list<Shapes\PrefixList>|null $PrefixLists
  */
 class DescribePrefixListsResponse extends Response
 {

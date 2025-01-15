@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Emr\RunJobFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SpotProvisioningSpecification $SpotSpecification
- * @property OnDemandProvisioningSpecification $OnDemandSpecification
+ * @property SpotProvisioningSpecification|null $SpotSpecification
+ * @property OnDemandProvisioningSpecification|null $OnDemandSpecification
  */
 class InstanceFleetProvisioningSpecifications extends Shape
 {
     /**
      * @param array{
-     *     SpotSpecification?: SpotProvisioningSpecification,
-     *     OnDemandSpecification?: OnDemandProvisioningSpecification
+     *     SpotSpecification?: SpotProvisioningSpecification|null,
+     *     OnDemandSpecification?: OnDemandProvisioningSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

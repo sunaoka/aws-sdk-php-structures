@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentity\DeleteIdentities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IdentityId
- * @property 'AccessDenied'|'InternalServerError' $ErrorCode
+ * @property string|null $IdentityId
+ * @property 'AccessDenied'|'InternalServerError'|null $ErrorCode
  */
 class UnprocessedIdentityId extends Shape
 {
     /**
      * @param array{
-     *     IdentityId?: string,
-     *     ErrorCode?: 'AccessDenied'|'InternalServerError'
+     *     IdentityId?: string|null,
+     *     ErrorCode?: 'AccessDenied'|'InternalServerError'|null
      * } $args
      */
     public function __construct(array $args = [])

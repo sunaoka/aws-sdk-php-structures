@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetClientCertificates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clientCertificateId
- * @property string $description
- * @property string $pemEncodedCertificate
- * @property \Aws\Api\DateTimeResult $createdDate
- * @property \Aws\Api\DateTimeResult $expirationDate
- * @property array<string, string> $tags
+ * @property string|null $clientCertificateId
+ * @property string|null $description
+ * @property string|null $pemEncodedCertificate
+ * @property \Aws\Api\DateTimeResult|null $createdDate
+ * @property \Aws\Api\DateTimeResult|null $expirationDate
+ * @property array<string, string>|null $tags
  */
 class ClientCertificate extends Shape
 {
     /**
      * @param array{
-     *     clientCertificateId?: string,
-     *     description?: string,
-     *     pemEncodedCertificate?: string,
-     *     createdDate?: \Aws\Api\DateTimeResult,
-     *     expirationDate?: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>
+     *     clientCertificateId?: string|null,
+     *     description?: string|null,
+     *     pemEncodedCertificate?: string|null,
+     *     createdDate?: \Aws\Api\DateTimeResult|null,
+     *     expirationDate?: \Aws\Api\DateTimeResult|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

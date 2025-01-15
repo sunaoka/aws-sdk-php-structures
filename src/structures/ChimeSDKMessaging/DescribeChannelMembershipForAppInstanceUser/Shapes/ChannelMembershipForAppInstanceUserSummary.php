@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\DescribeChannelMembershipForA
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ChannelSummary $ChannelSummary
- * @property AppInstanceUserMembershipSummary $AppInstanceUserMembershipSummary
+ * @property ChannelSummary|null $ChannelSummary
+ * @property AppInstanceUserMembershipSummary|null $AppInstanceUserMembershipSummary
  */
 class ChannelMembershipForAppInstanceUserSummary extends Shape
 {
     /**
      * @param array{
-     *     ChannelSummary?: ChannelSummary,
-     *     AppInstanceUserMembershipSummary?: AppInstanceUserMembershipSummary
+     *     ChannelSummary?: ChannelSummary|null,
+     *     AppInstanceUserMembershipSummary?: AppInstanceUserMembershipSummary|null
      * } $args
      */
     public function __construct(array $args = [])

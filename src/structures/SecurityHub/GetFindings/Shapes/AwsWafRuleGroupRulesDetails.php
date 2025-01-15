@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsWafRuleGroupRulesActionDetails $Action
- * @property int $Priority
- * @property string $RuleId
- * @property string $Type
+ * @property AwsWafRuleGroupRulesActionDetails|null $Action
+ * @property int|null $Priority
+ * @property string|null $RuleId
+ * @property string|null $Type
  */
 class AwsWafRuleGroupRulesDetails extends Shape
 {
     /**
      * @param array{
-     *     Action?: AwsWafRuleGroupRulesActionDetails,
-     *     Priority?: int,
-     *     RuleId?: string,
-     *     Type?: string
+     *     Action?: AwsWafRuleGroupRulesActionDetails|null,
+     *     Priority?: int|null,
+     *     RuleId?: string|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

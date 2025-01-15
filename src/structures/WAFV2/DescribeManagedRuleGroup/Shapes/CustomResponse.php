@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<200, 599> $ResponseCode
- * @property string $CustomResponseBodyKey
- * @property list<CustomHTTPHeader> $ResponseHeaders
+ * @property string|null $CustomResponseBodyKey
+ * @property list<CustomHTTPHeader>|null $ResponseHeaders
  */
 class CustomResponse extends Shape
 {
     /**
      * @param array{
      *     ResponseCode: int<200, 599>,
-     *     CustomResponseBodyKey?: string,
-     *     ResponseHeaders?: list<CustomHTTPHeader>
+     *     CustomResponseBodyKey?: string|null,
+     *     ResponseHeaders?: list<CustomHTTPHeader>|null
      * } $args
      */
     public function __construct(array $args)

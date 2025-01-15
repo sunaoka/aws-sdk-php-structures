@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $TargetArn
  * @property list<Shapes\Rule> $Rules
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateRulesetRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     TargetArn: string,
      *     Rules: list<Shapes\Rule>,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

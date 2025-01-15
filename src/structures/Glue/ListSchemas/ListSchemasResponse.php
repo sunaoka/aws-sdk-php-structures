@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Glue\ListSchemas;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\SchemaListItem> $Schemas
- * @property string $NextToken
+ * @property list<Shapes\SchemaListItem>|null $Schemas
+ * @property string|null $NextToken
  */
 class ListSchemasResponse extends Response
 {

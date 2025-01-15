@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProjectArn
  * @property string $PolicyName
- * @property string $PolicyRevisionId
+ * @property string|null $PolicyRevisionId
  * @property string $PolicyDocument
  */
 class PutProjectPolicyRequest extends Request
@@ -16,7 +16,7 @@ class PutProjectPolicyRequest extends Request
      * @param array{
      *     ProjectArn: string,
      *     PolicyName: string,
-     *     PolicyRevisionId?: string,
+     *     PolicyRevisionId?: string|null,
      *     PolicyDocument: string
      * } $args
      */

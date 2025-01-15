@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NullValueFormatConfiguration $NullValueFormatConfiguration
- * @property NumericFormatConfiguration $NumericFormatConfiguration
+ * @property NullValueFormatConfiguration|null $NullValueFormatConfiguration
+ * @property NumericFormatConfiguration|null $NumericFormatConfiguration
  */
 class StringFormatConfiguration extends Shape
 {
     /**
      * @param array{
-     *     NullValueFormatConfiguration?: NullValueFormatConfiguration,
-     *     NumericFormatConfiguration?: NumericFormatConfiguration
+     *     NullValueFormatConfiguration?: NullValueFormatConfiguration|null,
+     *     NumericFormatConfiguration?: NumericFormatConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $ec2
  * @property bool $ecr
- * @property bool $lambda
- * @property bool $lambdaCode
+ * @property bool|null $lambda
+ * @property bool|null $lambdaCode
  */
 class AutoEnable extends Shape
 {
@@ -16,8 +16,8 @@ class AutoEnable extends Shape
      * @param array{
      *     ec2: bool,
      *     ecr: bool,
-     *     lambda?: bool,
-     *     lambdaCode?: bool
+     *     lambda?: bool|null,
+     *     lambdaCode?: bool|null
      * } $args
      */
     public function __construct(array $args)

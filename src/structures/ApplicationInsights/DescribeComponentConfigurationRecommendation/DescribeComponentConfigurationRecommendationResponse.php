@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\DescribeComponentConfigurat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ComponentConfiguration
+ * @property string|null $ComponentConfiguration
  */
 class DescribeComponentConfigurationRecommendationResponse extends Response
 {

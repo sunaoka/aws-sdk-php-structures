@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClientRequestToken
- * @property string $ExternalMeetingId
- * @property string $MeetingHostId
- * @property string $MediaRegion
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\MeetingNotificationConfiguration $NotificationsConfiguration
+ * @property string|null $ExternalMeetingId
+ * @property string|null $MeetingHostId
+ * @property string|null $MediaRegion
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\MeetingNotificationConfiguration|null $NotificationsConfiguration
  */
 class CreateMeetingRequest extends Request
 {
     /**
      * @param array{
      *     ClientRequestToken: string,
-     *     ExternalMeetingId?: string,
-     *     MeetingHostId?: string,
-     *     MediaRegion?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     NotificationsConfiguration?: Shapes\MeetingNotificationConfiguration
+     *     ExternalMeetingId?: string|null,
+     *     MeetingHostId?: string|null,
+     *     MediaRegion?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     NotificationsConfiguration?: Shapes\MeetingNotificationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

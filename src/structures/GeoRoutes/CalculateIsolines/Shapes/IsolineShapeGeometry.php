@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateIsolines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<list<list<double>>> $Polygon
- * @property list<string> $PolylinePolygon
+ * @property list<list<list<double>>>|null $Polygon
+ * @property list<string>|null $PolylinePolygon
  */
 class IsolineShapeGeometry extends Shape
 {
     /**
      * @param array{
-     *     Polygon?: list<list<list<double>>>,
-     *     PolylinePolygon?: list<string>
+     *     Polygon?: list<list<list<double>>>|null,
+     *     PolylinePolygon?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

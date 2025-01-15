@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ProviderDescription> $Providers
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListIdentityProvidersResponse extends Response
 {

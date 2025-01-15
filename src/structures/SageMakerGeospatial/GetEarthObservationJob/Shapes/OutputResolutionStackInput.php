@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\GetEarthObservationJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIGHEST'|'LOWEST'|'AVERAGE' $Predefined
- * @property UserDefined $UserDefined
+ * @property 'HIGHEST'|'LOWEST'|'AVERAGE'|null $Predefined
+ * @property UserDefined|null $UserDefined
  */
 class OutputResolutionStackInput extends Shape
 {
     /**
      * @param array{
-     *     Predefined?: 'HIGHEST'|'LOWEST'|'AVERAGE',
-     *     UserDefined?: UserDefined
+     *     Predefined?: 'HIGHEST'|'LOWEST'|'AVERAGE'|null,
+     *     UserDefined?: UserDefined|null
      * } $args
      */
     public function __construct(array $args = [])

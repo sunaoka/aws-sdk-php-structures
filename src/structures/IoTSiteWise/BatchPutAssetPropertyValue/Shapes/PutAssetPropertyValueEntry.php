@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $entryId
- * @property string $assetId
- * @property string $propertyId
- * @property string $propertyAlias
+ * @property string|null $assetId
+ * @property string|null $propertyId
+ * @property string|null $propertyAlias
  * @property list<AssetPropertyValue> $propertyValues
  */
 class PutAssetPropertyValueEntry extends Shape
@@ -16,9 +16,9 @@ class PutAssetPropertyValueEntry extends Shape
     /**
      * @param array{
      *     entryId: string,
-     *     assetId?: string,
-     *     propertyId?: string,
-     *     propertyAlias?: string,
+     *     assetId?: string|null,
+     *     propertyId?: string|null,
+     *     propertyAlias?: string|null,
      *     propertyValues: list<AssetPropertyValue>
      * } $args
      */

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $monthlySavingsPlansEligibleCost
- * @property double $estimatedMonthlyCommitment
- * @property double $savingsPercentage
- * @property double $estimatedOnDemandCost
+ * @property double|null $monthlySavingsPlansEligibleCost
+ * @property double|null $estimatedMonthlyCommitment
+ * @property double|null $savingsPercentage
+ * @property double|null $estimatedOnDemandCost
  */
 class SavingsPlansPricing extends Shape
 {
     /**
      * @param array{
-     *     monthlySavingsPlansEligibleCost?: double,
-     *     estimatedMonthlyCommitment?: double,
-     *     savingsPercentage?: double,
-     *     estimatedOnDemandCost?: double
+     *     monthlySavingsPlansEligibleCost?: double|null,
+     *     estimatedMonthlyCommitment?: double|null,
+     *     savingsPercentage?: double|null,
+     *     estimatedOnDemandCost?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\CreateMLInputChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProtectedQueryInputParameters $protectedQueryInputParameters
+ * @property ProtectedQueryInputParameters|null $protectedQueryInputParameters
  */
 class InputChannelDataSource extends Shape
 {
     /**
-     * @param array{protectedQueryInputParameters?: ProtectedQueryInputParameters} $args
+     * @param array{protectedQueryInputParameters?: ProtectedQueryInputParameters|null} $args
      */
     public function __construct(array $args = [])
     {

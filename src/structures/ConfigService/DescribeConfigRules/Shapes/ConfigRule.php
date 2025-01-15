@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeConfigRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConfigRuleName
- * @property string $ConfigRuleArn
- * @property string $ConfigRuleId
- * @property string $Description
- * @property Scope $Scope
+ * @property string|null $ConfigRuleName
+ * @property string|null $ConfigRuleArn
+ * @property string|null $ConfigRuleId
+ * @property string|null $Description
+ * @property Scope|null $Scope
  * @property Source $Source
- * @property string $InputParameters
- * @property 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours' $MaximumExecutionFrequency
- * @property 'ACTIVE'|'DELETING'|'DELETING_RESULTS'|'EVALUATING' $ConfigRuleState
- * @property string $CreatedBy
- * @property list<EvaluationModeConfiguration> $EvaluationModes
+ * @property string|null $InputParameters
+ * @property 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours'|null $MaximumExecutionFrequency
+ * @property 'ACTIVE'|'DELETING'|'DELETING_RESULTS'|'EVALUATING'|null $ConfigRuleState
+ * @property string|null $CreatedBy
+ * @property list<EvaluationModeConfiguration>|null $EvaluationModes
  */
 class ConfigRule extends Shape
 {
     /**
      * @param array{
-     *     ConfigRuleName?: string,
-     *     ConfigRuleArn?: string,
-     *     ConfigRuleId?: string,
-     *     Description?: string,
-     *     Scope?: Scope,
+     *     ConfigRuleName?: string|null,
+     *     ConfigRuleArn?: string|null,
+     *     ConfigRuleId?: string|null,
+     *     Description?: string|null,
+     *     Scope?: Scope|null,
      *     Source: Source,
-     *     InputParameters?: string,
-     *     MaximumExecutionFrequency?: 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours',
-     *     ConfigRuleState?: 'ACTIVE'|'DELETING'|'DELETING_RESULTS'|'EVALUATING',
-     *     CreatedBy?: string,
-     *     EvaluationModes?: list<EvaluationModeConfiguration>
+     *     InputParameters?: string|null,
+     *     MaximumExecutionFrequency?: 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours'|null,
+     *     ConfigRuleState?: 'ACTIVE'|'DELETING'|'DELETING_RESULTS'|'EVALUATING'|null,
+     *     CreatedBy?: string|null,
+     *     EvaluationModes?: list<EvaluationModeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\RenderUiTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\UiTemplate $UiTemplate
+ * @property Shapes\UiTemplate|null $UiTemplate
  * @property Shapes\RenderableTask $Task
  * @property string $RoleArn
- * @property string $HumanTaskUiArn
+ * @property string|null $HumanTaskUiArn
  */
 class RenderUiTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     UiTemplate?: Shapes\UiTemplate,
+     *     UiTemplate?: Shapes\UiTemplate|null,
      *     Task: Shapes\RenderableTask,
      *     RoleArn: string,
-     *     HumanTaskUiArn?: string
+     *     HumanTaskUiArn?: string|null
      * } $args
      */
     public function __construct(array $args)

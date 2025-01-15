@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $app
  * @property string $tenantId
- * @property string $taskId
- * @property TaskError $error
+ * @property string|null $taskId
+ * @property TaskError|null $error
  */
 class UserAccessTaskItem extends Shape
 {
@@ -16,8 +16,8 @@ class UserAccessTaskItem extends Shape
      * @param array{
      *     app: string,
      *     tenantId: string,
-     *     taskId?: string,
-     *     error?: TaskError
+     *     taskId?: string|null,
+     *     error?: TaskError|null
      * } $args
      */
     public function __construct(array $args)

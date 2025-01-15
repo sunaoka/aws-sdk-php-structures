@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LocationService\CalculateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AvoidFerries
- * @property bool $AvoidTolls
- * @property TruckDimensions $Dimensions
- * @property TruckWeight $Weight
+ * @property bool|null $AvoidFerries
+ * @property bool|null $AvoidTolls
+ * @property TruckDimensions|null $Dimensions
+ * @property TruckWeight|null $Weight
  */
 class CalculateRouteTruckModeOptions extends Shape
 {
     /**
      * @param array{
-     *     AvoidFerries?: bool,
-     *     AvoidTolls?: bool,
-     *     Dimensions?: TruckDimensions,
-     *     Weight?: TruckWeight
+     *     AvoidFerries?: bool|null,
+     *     AvoidTolls?: bool|null,
+     *     Dimensions?: TruckDimensions|null,
+     *     Weight?: TruckWeight|null
      * } $args
      */
     public function __construct(array $args = [])

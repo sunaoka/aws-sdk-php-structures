@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetEngagementInvitation\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CompanyName
- * @property string $WebsiteUrl
+ * @property string|null $CompanyName
+ * @property string|null $WebsiteUrl
  */
 class EngagementMemberSummary extends Shape
 {
     /**
      * @param array{
-     *     CompanyName?: string,
-     *     WebsiteUrl?: string
+     *     CompanyName?: string|null,
+     *     WebsiteUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LakeFormationDataPermissionDetails $LakeFormationDataPermissionDetails
  * @property 'LFTagPolicy' $LakeFormationDataPermissionType
  * @property list<'DESCRIBE'|'SELECT'> $Permissions
- * @property string $RoleArn
+ * @property string|null $RoleArn
  */
 class LakeFormationDataPermissionAsset extends Shape
 {
@@ -17,7 +17,7 @@ class LakeFormationDataPermissionAsset extends Shape
      *     LakeFormationDataPermissionDetails: LakeFormationDataPermissionDetails,
      *     LakeFormationDataPermissionType: 'LFTagPolicy',
      *     Permissions: list<'DESCRIBE'|'SELECT'>,
-     *     RoleArn?: string
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

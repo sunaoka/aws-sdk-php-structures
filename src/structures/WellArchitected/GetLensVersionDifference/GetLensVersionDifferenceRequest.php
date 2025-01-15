@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LensAlias
- * @property string $BaseLensVersion
- * @property string $TargetLensVersion
+ * @property string|null $BaseLensVersion
+ * @property string|null $TargetLensVersion
  */
 class GetLensVersionDifferenceRequest extends Request
 {
     /**
      * @param array{
      *     LensAlias: string,
-     *     BaseLensVersion?: string,
-     *     TargetLensVersion?: string
+     *     BaseLensVersion?: string|null,
+     *     TargetLensVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

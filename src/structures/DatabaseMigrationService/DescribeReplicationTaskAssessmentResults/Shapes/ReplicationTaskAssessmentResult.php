@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationTas
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplicationTaskIdentifier
- * @property string $ReplicationTaskArn
- * @property \Aws\Api\DateTimeResult $ReplicationTaskLastAssessmentDate
- * @property string $AssessmentStatus
- * @property string $AssessmentResultsFile
- * @property string $AssessmentResults
- * @property string $S3ObjectUrl
+ * @property string|null $ReplicationTaskIdentifier
+ * @property string|null $ReplicationTaskArn
+ * @property \Aws\Api\DateTimeResult|null $ReplicationTaskLastAssessmentDate
+ * @property string|null $AssessmentStatus
+ * @property string|null $AssessmentResultsFile
+ * @property string|null $AssessmentResults
+ * @property string|null $S3ObjectUrl
  */
 class ReplicationTaskAssessmentResult extends Shape
 {
     /**
      * @param array{
-     *     ReplicationTaskIdentifier?: string,
-     *     ReplicationTaskArn?: string,
-     *     ReplicationTaskLastAssessmentDate?: \Aws\Api\DateTimeResult,
-     *     AssessmentStatus?: string,
-     *     AssessmentResultsFile?: string,
-     *     AssessmentResults?: string,
-     *     S3ObjectUrl?: string
+     *     ReplicationTaskIdentifier?: string|null,
+     *     ReplicationTaskArn?: string|null,
+     *     ReplicationTaskLastAssessmentDate?: \Aws\Api\DateTimeResult|null,
+     *     AssessmentStatus?: string|null,
+     *     AssessmentResultsFile?: string|null,
+     *     AssessmentResults?: string|null,
+     *     S3ObjectUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

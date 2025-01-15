@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $appArn
  * @property string $appVersion
  * @property string $assessmentName
- * @property string $clientToken
- * @property array<string, string> $tags
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class StartAppAssessmentRequest extends Request
 {
@@ -18,8 +18,8 @@ class StartAppAssessmentRequest extends Request
      *     appArn: string,
      *     appVersion: string,
      *     assessmentName: string,
-     *     clientToken?: string,
-     *     tags?: array<string, string>
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

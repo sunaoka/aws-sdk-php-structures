@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryId
- * @property string $UserName
- * @property string $Password
+ * @property string|null $UserName
+ * @property string|null $Password
  */
 class DisableSsoRequest extends Request
 {
     /**
      * @param array{
      *     DirectoryId: string,
-     *     UserName?: string,
-     *     Password?: string
+     *     UserName?: string|null,
+     *     Password?: string|null
      * } $args
      */
     public function __construct(array $args)

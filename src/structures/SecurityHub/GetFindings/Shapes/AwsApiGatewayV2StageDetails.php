@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientCertificateId
- * @property string $CreatedDate
- * @property string $Description
- * @property AwsApiGatewayV2RouteSettings $DefaultRouteSettings
- * @property string $DeploymentId
- * @property string $LastUpdatedDate
- * @property AwsApiGatewayV2RouteSettings $RouteSettings
- * @property string $StageName
- * @property array<string, string> $StageVariables
- * @property AwsApiGatewayAccessLogSettings $AccessLogSettings
- * @property bool $AutoDeploy
- * @property string $LastDeploymentStatusMessage
- * @property bool $ApiGatewayManaged
+ * @property string|null $ClientCertificateId
+ * @property string|null $CreatedDate
+ * @property string|null $Description
+ * @property AwsApiGatewayV2RouteSettings|null $DefaultRouteSettings
+ * @property string|null $DeploymentId
+ * @property string|null $LastUpdatedDate
+ * @property AwsApiGatewayV2RouteSettings|null $RouteSettings
+ * @property string|null $StageName
+ * @property array<string, string>|null $StageVariables
+ * @property AwsApiGatewayAccessLogSettings|null $AccessLogSettings
+ * @property bool|null $AutoDeploy
+ * @property string|null $LastDeploymentStatusMessage
+ * @property bool|null $ApiGatewayManaged
  */
 class AwsApiGatewayV2StageDetails extends Shape
 {
     /**
      * @param array{
-     *     ClientCertificateId?: string,
-     *     CreatedDate?: string,
-     *     Description?: string,
-     *     DefaultRouteSettings?: AwsApiGatewayV2RouteSettings,
-     *     DeploymentId?: string,
-     *     LastUpdatedDate?: string,
-     *     RouteSettings?: AwsApiGatewayV2RouteSettings,
-     *     StageName?: string,
-     *     StageVariables?: array<string, string>,
-     *     AccessLogSettings?: AwsApiGatewayAccessLogSettings,
-     *     AutoDeploy?: bool,
-     *     LastDeploymentStatusMessage?: string,
-     *     ApiGatewayManaged?: bool
+     *     ClientCertificateId?: string|null,
+     *     CreatedDate?: string|null,
+     *     Description?: string|null,
+     *     DefaultRouteSettings?: AwsApiGatewayV2RouteSettings|null,
+     *     DeploymentId?: string|null,
+     *     LastUpdatedDate?: string|null,
+     *     RouteSettings?: AwsApiGatewayV2RouteSettings|null,
+     *     StageName?: string|null,
+     *     StageVariables?: array<string, string>|null,
+     *     AccessLogSettings?: AwsApiGatewayAccessLogSettings|null,
+     *     AutoDeploy?: bool|null,
+     *     LastDeploymentStatusMessage?: string|null,
+     *     ApiGatewayManaged?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

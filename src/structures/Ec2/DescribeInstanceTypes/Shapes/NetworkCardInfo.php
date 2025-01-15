@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NetworkCardIndex
- * @property string $NetworkPerformance
- * @property int $MaximumNetworkInterfaces
- * @property double $BaselineBandwidthInGbps
- * @property double $PeakBandwidthInGbps
+ * @property int|null $NetworkCardIndex
+ * @property string|null $NetworkPerformance
+ * @property int|null $MaximumNetworkInterfaces
+ * @property double|null $BaselineBandwidthInGbps
+ * @property double|null $PeakBandwidthInGbps
  */
 class NetworkCardInfo extends Shape
 {
     /**
      * @param array{
-     *     NetworkCardIndex?: int,
-     *     NetworkPerformance?: string,
-     *     MaximumNetworkInterfaces?: int,
-     *     BaselineBandwidthInGbps?: double,
-     *     PeakBandwidthInGbps?: double
+     *     NetworkCardIndex?: int|null,
+     *     NetworkPerformance?: string|null,
+     *     MaximumNetworkInterfaces?: int|null,
+     *     BaselineBandwidthInGbps?: double|null,
+     *     PeakBandwidthInGbps?: double|null
      * } $args
      */
     public function __construct(array $args = [])

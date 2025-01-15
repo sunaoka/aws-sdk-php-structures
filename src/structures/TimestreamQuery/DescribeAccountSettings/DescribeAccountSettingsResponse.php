@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\DescribeAccountSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $MaxQueryTCU
- * @property 'BYTES_SCANNED'|'COMPUTE_UNITS' $QueryPricingModel
- * @property Shapes\QueryComputeResponse $QueryCompute
+ * @property int|null $MaxQueryTCU
+ * @property 'BYTES_SCANNED'|'COMPUTE_UNITS'|null $QueryPricingModel
+ * @property Shapes\QueryComputeResponse|null $QueryCompute
  */
 class DescribeAccountSettingsResponse extends Response
 {

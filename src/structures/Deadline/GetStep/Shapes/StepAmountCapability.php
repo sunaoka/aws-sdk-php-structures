@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property double $min
- * @property double $max
- * @property double $value
+ * @property double|null $min
+ * @property double|null $max
+ * @property double|null $value
  */
 class StepAmountCapability extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     min?: double,
-     *     max?: double,
-     *     value?: double
+     *     min?: double|null,
+     *     max?: double|null,
+     *     value?: double|null
      * } $args
      */
     public function __construct(array $args)

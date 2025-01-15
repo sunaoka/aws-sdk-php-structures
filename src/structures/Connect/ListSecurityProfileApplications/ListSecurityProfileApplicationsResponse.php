@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Connect\ListSecurityProfileApplications;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Application> $Applications
- * @property string $NextToken
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
+ * @property list<Shapes\Application>|null $Applications
+ * @property string|null $NextToken
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class ListSecurityProfileApplicationsResponse extends Response
 {

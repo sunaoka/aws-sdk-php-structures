@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\EnableReachabilityAnalyzerOrganizationShari
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $ReturnValue
+ * @property bool|null $ReturnValue
  */
 class EnableReachabilityAnalyzerOrganizationSharingResponse extends Response
 {

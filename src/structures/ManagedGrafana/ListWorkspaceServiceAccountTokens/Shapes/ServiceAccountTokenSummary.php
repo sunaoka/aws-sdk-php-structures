@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $expiresAt
  * @property string $id
- * @property \Aws\Api\DateTimeResult $lastUsedAt
+ * @property \Aws\Api\DateTimeResult|null $lastUsedAt
  * @property string $name
  */
 class ServiceAccountTokenSummary extends Shape
@@ -18,7 +18,7 @@ class ServiceAccountTokenSummary extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     expiresAt: \Aws\Api\DateTimeResult,
      *     id: string,
-     *     lastUsedAt?: \Aws\Api\DateTimeResult,
+     *     lastUsedAt?: \Aws\Api\DateTimeResult|null,
      *     name: string
      * } $args
      */

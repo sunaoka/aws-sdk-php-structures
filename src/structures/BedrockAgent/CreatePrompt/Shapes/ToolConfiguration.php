@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ToolChoice $toolChoice
+ * @property ToolChoice|null $toolChoice
  * @property list<Tool> $tools
  */
 class ToolConfiguration extends Shape
 {
     /**
      * @param array{
-     *     toolChoice?: ToolChoice,
+     *     toolChoice?: ToolChoice|null,
      *     tools: list<Tool>
      * } $args
      */

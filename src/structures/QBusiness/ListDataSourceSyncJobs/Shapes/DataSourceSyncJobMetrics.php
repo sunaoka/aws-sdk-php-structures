@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QBusiness\ListDataSourceSyncJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $documentsAdded
- * @property string $documentsModified
- * @property string $documentsDeleted
- * @property string $documentsFailed
- * @property string $documentsScanned
+ * @property string|null $documentsAdded
+ * @property string|null $documentsModified
+ * @property string|null $documentsDeleted
+ * @property string|null $documentsFailed
+ * @property string|null $documentsScanned
  */
 class DataSourceSyncJobMetrics extends Shape
 {
     /**
      * @param array{
-     *     documentsAdded?: string,
-     *     documentsModified?: string,
-     *     documentsDeleted?: string,
-     *     documentsFailed?: string,
-     *     documentsScanned?: string
+     *     documentsAdded?: string|null,
+     *     documentsModified?: string|null,
+     *     documentsDeleted?: string|null,
+     *     documentsFailed?: string|null,
+     *     documentsScanned?: string|null
      * } $args
      */
     public function __construct(array $args = [])

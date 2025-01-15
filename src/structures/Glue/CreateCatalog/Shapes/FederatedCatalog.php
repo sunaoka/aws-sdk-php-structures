@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\CreateCatalog\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Identifier
- * @property string $ConnectionName
+ * @property string|null $Identifier
+ * @property string|null $ConnectionName
  */
 class FederatedCatalog extends Shape
 {
     /**
      * @param array{
-     *     Identifier?: string,
-     *     ConnectionName?: string
+     *     Identifier?: string|null,
+     *     ConnectionName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Textract\GetLendingAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Text
- * @property float $Confidence
+ * @property string|null $Text
+ * @property float|null $Confidence
  */
 class ExpenseType extends Shape
 {
     /**
      * @param array{
-     *     Text?: string,
-     *     Confidence?: float
+     *     Text?: string|null,
+     *     Confidence?: float|null
      * } $args
      */
     public function __construct(array $args = [])

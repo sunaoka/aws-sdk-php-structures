@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FilterGroupId
  * @property list<Filter> $Filters
  * @property FilterScopeConfiguration $ScopeConfiguration
- * @property 'ENABLED'|'DISABLED' $Status
+ * @property 'ENABLED'|'DISABLED'|null $Status
  * @property 'ALL_DATASETS'|'SINGLE_DATASET' $CrossDataset
  */
 class FilterGroup extends Shape
@@ -18,7 +18,7 @@ class FilterGroup extends Shape
      *     FilterGroupId: string,
      *     Filters: list<Filter>,
      *     ScopeConfiguration: FilterScopeConfiguration,
-     *     Status?: 'ENABLED'|'DISABLED',
+     *     Status?: 'ENABLED'|'DISABLED'|null,
      *     CrossDataset: 'ALL_DATASETS'|'SINGLE_DATASET'
      * } $args
      */

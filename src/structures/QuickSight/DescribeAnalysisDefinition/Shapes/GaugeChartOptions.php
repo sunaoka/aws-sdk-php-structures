@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'COMPARISON'|'ACTUAL' $PrimaryValueDisplayType
- * @property ComparisonConfiguration $Comparison
- * @property ArcAxisConfiguration $ArcAxis
- * @property ArcConfiguration $Arc
- * @property FontConfiguration $PrimaryValueFontConfiguration
+ * @property 'HIDDEN'|'COMPARISON'|'ACTUAL'|null $PrimaryValueDisplayType
+ * @property ComparisonConfiguration|null $Comparison
+ * @property ArcAxisConfiguration|null $ArcAxis
+ * @property ArcConfiguration|null $Arc
+ * @property FontConfiguration|null $PrimaryValueFontConfiguration
  */
 class GaugeChartOptions extends Shape
 {
     /**
      * @param array{
-     *     PrimaryValueDisplayType?: 'HIDDEN'|'COMPARISON'|'ACTUAL',
-     *     Comparison?: ComparisonConfiguration,
-     *     ArcAxis?: ArcAxisConfiguration,
-     *     Arc?: ArcConfiguration,
-     *     PrimaryValueFontConfiguration?: FontConfiguration
+     *     PrimaryValueDisplayType?: 'HIDDEN'|'COMPARISON'|'ACTUAL'|null,
+     *     Comparison?: ComparisonConfiguration|null,
+     *     ArcAxis?: ArcAxisConfiguration|null,
+     *     Arc?: ArcConfiguration|null,
+     *     PrimaryValueFontConfiguration?: FontConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

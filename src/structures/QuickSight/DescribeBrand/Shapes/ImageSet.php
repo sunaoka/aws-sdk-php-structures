@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Image $Original
- * @property Image $Height64
- * @property Image $Height32
+ * @property Image|null $Height64
+ * @property Image|null $Height32
  */
 class ImageSet extends Shape
 {
     /**
      * @param array{
      *     Original: Image,
-     *     Height64?: Image,
-     *     Height32?: Image
+     *     Height64?: Image|null,
+     *     Height32?: Image|null
      * } $args
      */
     public function __construct(array $args)

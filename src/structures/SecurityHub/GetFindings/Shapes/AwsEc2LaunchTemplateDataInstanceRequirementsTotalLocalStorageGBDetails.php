@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Max
- * @property double $Min
+ * @property double|null $Max
+ * @property double|null $Min
  */
 class AwsEc2LaunchTemplateDataInstanceRequirementsTotalLocalStorageGBDetails extends Shape
 {
     /**
      * @param array{
-     *     Max?: double,
-     *     Min?: double
+     *     Max?: double|null,
+     *     Min?: double|null
      * } $args
      */
     public function __construct(array $args = [])

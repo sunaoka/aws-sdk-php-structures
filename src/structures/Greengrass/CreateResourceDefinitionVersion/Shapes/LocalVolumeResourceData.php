@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateResourceDefinitionVersion\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DestinationPath
- * @property GroupOwnerSetting $GroupOwnerSetting
- * @property string $SourcePath
+ * @property string|null $DestinationPath
+ * @property GroupOwnerSetting|null $GroupOwnerSetting
+ * @property string|null $SourcePath
  */
 class LocalVolumeResourceData extends Shape
 {
     /**
      * @param array{
-     *     DestinationPath?: string,
-     *     GroupOwnerSetting?: GroupOwnerSetting,
-     *     SourcePath?: string
+     *     DestinationPath?: string|null,
+     *     GroupOwnerSetting?: GroupOwnerSetting|null,
+     *     SourcePath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

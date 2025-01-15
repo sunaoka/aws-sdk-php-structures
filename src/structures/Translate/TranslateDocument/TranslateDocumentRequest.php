@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Document $Document
- * @property list<string> $TerminologyNames
+ * @property list<string>|null $TerminologyNames
  * @property string $SourceLanguageCode
  * @property string $TargetLanguageCode
- * @property Shapes\TranslationSettings $Settings
+ * @property Shapes\TranslationSettings|null $Settings
  */
 class TranslateDocumentRequest extends Request
 {
     /**
      * @param array{
      *     Document: Shapes\Document,
-     *     TerminologyNames?: list<string>,
+     *     TerminologyNames?: list<string>|null,
      *     SourceLanguageCode: string,
      *     TargetLanguageCode: string,
-     *     Settings?: Shapes\TranslationSettings
+     *     Settings?: Shapes\TranslationSettings|null
      * } $args
      */
     public function __construct(array $args)

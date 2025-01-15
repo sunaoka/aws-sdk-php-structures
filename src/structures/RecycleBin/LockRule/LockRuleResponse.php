@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\RecycleBin\LockRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Identifier
- * @property string $Description
- * @property 'EBS_SNAPSHOT'|'EC2_IMAGE' $ResourceType
- * @property Shapes\RetentionPeriod $RetentionPeriod
- * @property list<Shapes\ResourceTag> $ResourceTags
- * @property 'pending'|'available' $Status
- * @property Shapes\LockConfiguration $LockConfiguration
- * @property 'locked'|'pending_unlock'|'unlocked' $LockState
- * @property string $RuleArn
- * @property list<Shapes\ResourceTag> $ExcludeResourceTags
+ * @property string|null $Identifier
+ * @property string|null $Description
+ * @property 'EBS_SNAPSHOT'|'EC2_IMAGE'|null $ResourceType
+ * @property Shapes\RetentionPeriod|null $RetentionPeriod
+ * @property list<Shapes\ResourceTag>|null $ResourceTags
+ * @property 'pending'|'available'|null $Status
+ * @property Shapes\LockConfiguration|null $LockConfiguration
+ * @property 'locked'|'pending_unlock'|'unlocked'|null $LockState
+ * @property string|null $RuleArn
+ * @property list<Shapes\ResourceTag>|null $ExcludeResourceTags
  */
 class LockRuleResponse extends Response
 {

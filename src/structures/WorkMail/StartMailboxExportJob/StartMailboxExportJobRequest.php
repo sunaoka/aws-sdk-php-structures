@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientToken
  * @property string $OrganizationId
  * @property string $EntityId
- * @property string $Description
+ * @property string|null $Description
  * @property string $RoleArn
  * @property string $KmsKeyArn
  * @property string $S3BucketName
@@ -21,7 +21,7 @@ class StartMailboxExportJobRequest extends Request
      *     ClientToken: string,
      *     OrganizationId: string,
      *     EntityId: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     RoleArn: string,
      *     KmsKeyArn: string,
      *     S3BucketName: string,

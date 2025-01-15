@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CollectionName
- * @property array<string, string> $CollectionParameters
+ * @property string|null $CollectionName
+ * @property array<string, string>|null $CollectionParameters
  */
 class CollectionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CollectionName?: string,
-     *     CollectionParameters?: array<string, string>
+     *     CollectionName?: string|null,
+     *     CollectionParameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

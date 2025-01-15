@@ -5,63 +5,63 @@ namespace Sunaoka\Aws\Structures\DynamoDb\CreateTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AttributeDefinition> $AttributeDefinitions
- * @property string $TableName
- * @property list<KeySchemaElement> $KeySchema
- * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED' $TableStatus
- * @property \Aws\Api\DateTimeResult $CreationDateTime
- * @property ProvisionedThroughputDescription $ProvisionedThroughput
- * @property int $TableSizeBytes
- * @property int $ItemCount
- * @property string $TableArn
- * @property string $TableId
- * @property BillingModeSummary $BillingModeSummary
- * @property list<LocalSecondaryIndexDescription> $LocalSecondaryIndexes
- * @property list<GlobalSecondaryIndexDescription> $GlobalSecondaryIndexes
- * @property StreamSpecification $StreamSpecification
- * @property string $LatestStreamLabel
- * @property string $LatestStreamArn
- * @property string $GlobalTableVersion
- * @property list<ReplicaDescription> $Replicas
- * @property RestoreSummary $RestoreSummary
- * @property SSEDescription $SSEDescription
- * @property ArchivalSummary $ArchivalSummary
- * @property TableClassSummary $TableClassSummary
- * @property bool $DeletionProtectionEnabled
- * @property OnDemandThroughput $OnDemandThroughput
- * @property TableWarmThroughputDescription $WarmThroughput
- * @property 'EVENTUAL'|'STRONG' $MultiRegionConsistency
+ * @property list<AttributeDefinition>|null $AttributeDefinitions
+ * @property string|null $TableName
+ * @property list<KeySchemaElement>|null $KeySchema
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|null $TableStatus
+ * @property \Aws\Api\DateTimeResult|null $CreationDateTime
+ * @property ProvisionedThroughputDescription|null $ProvisionedThroughput
+ * @property int|null $TableSizeBytes
+ * @property int|null $ItemCount
+ * @property string|null $TableArn
+ * @property string|null $TableId
+ * @property BillingModeSummary|null $BillingModeSummary
+ * @property list<LocalSecondaryIndexDescription>|null $LocalSecondaryIndexes
+ * @property list<GlobalSecondaryIndexDescription>|null $GlobalSecondaryIndexes
+ * @property StreamSpecification|null $StreamSpecification
+ * @property string|null $LatestStreamLabel
+ * @property string|null $LatestStreamArn
+ * @property string|null $GlobalTableVersion
+ * @property list<ReplicaDescription>|null $Replicas
+ * @property RestoreSummary|null $RestoreSummary
+ * @property SSEDescription|null $SSEDescription
+ * @property ArchivalSummary|null $ArchivalSummary
+ * @property TableClassSummary|null $TableClassSummary
+ * @property bool|null $DeletionProtectionEnabled
+ * @property OnDemandThroughput|null $OnDemandThroughput
+ * @property TableWarmThroughputDescription|null $WarmThroughput
+ * @property 'EVENTUAL'|'STRONG'|null $MultiRegionConsistency
  */
 class TableDescription extends Shape
 {
     /**
      * @param array{
-     *     AttributeDefinitions?: list<AttributeDefinition>,
-     *     TableName?: string,
-     *     KeySchema?: list<KeySchemaElement>,
-     *     TableStatus?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED',
-     *     CreationDateTime?: \Aws\Api\DateTimeResult,
-     *     ProvisionedThroughput?: ProvisionedThroughputDescription,
-     *     TableSizeBytes?: int,
-     *     ItemCount?: int,
-     *     TableArn?: string,
-     *     TableId?: string,
-     *     BillingModeSummary?: BillingModeSummary,
-     *     LocalSecondaryIndexes?: list<LocalSecondaryIndexDescription>,
-     *     GlobalSecondaryIndexes?: list<GlobalSecondaryIndexDescription>,
-     *     StreamSpecification?: StreamSpecification,
-     *     LatestStreamLabel?: string,
-     *     LatestStreamArn?: string,
-     *     GlobalTableVersion?: string,
-     *     Replicas?: list<ReplicaDescription>,
-     *     RestoreSummary?: RestoreSummary,
-     *     SSEDescription?: SSEDescription,
-     *     ArchivalSummary?: ArchivalSummary,
-     *     TableClassSummary?: TableClassSummary,
-     *     DeletionProtectionEnabled?: bool,
-     *     OnDemandThroughput?: OnDemandThroughput,
-     *     WarmThroughput?: TableWarmThroughputDescription,
-     *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG'
+     *     AttributeDefinitions?: list<AttributeDefinition>|null,
+     *     TableName?: string|null,
+     *     KeySchema?: list<KeySchemaElement>|null,
+     *     TableStatus?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|null,
+     *     CreationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     ProvisionedThroughput?: ProvisionedThroughputDescription|null,
+     *     TableSizeBytes?: int|null,
+     *     ItemCount?: int|null,
+     *     TableArn?: string|null,
+     *     TableId?: string|null,
+     *     BillingModeSummary?: BillingModeSummary|null,
+     *     LocalSecondaryIndexes?: list<LocalSecondaryIndexDescription>|null,
+     *     GlobalSecondaryIndexes?: list<GlobalSecondaryIndexDescription>|null,
+     *     StreamSpecification?: StreamSpecification|null,
+     *     LatestStreamLabel?: string|null,
+     *     LatestStreamArn?: string|null,
+     *     GlobalTableVersion?: string|null,
+     *     Replicas?: list<ReplicaDescription>|null,
+     *     RestoreSummary?: RestoreSummary|null,
+     *     SSEDescription?: SSEDescription|null,
+     *     ArchivalSummary?: ArchivalSummary|null,
+     *     TableClassSummary?: TableClassSummary|null,
+     *     DeletionProtectionEnabled?: bool|null,
+     *     OnDemandThroughput?: OnDemandThroughput|null,
+     *     WarmThroughput?: TableWarmThroughputDescription|null,
+     *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeAccountAttributes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AttributeName
- * @property list<AttributeValueTarget> $AttributeValues
+ * @property string|null $AttributeName
+ * @property list<AttributeValueTarget>|null $AttributeValues
  */
 class AccountAttribute extends Shape
 {
     /**
      * @param array{
-     *     AttributeName?: string,
-     *     AttributeValues?: list<AttributeValueTarget>
+     *     AttributeName?: string|null,
+     *     AttributeValues?: list<AttributeValueTarget>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,12 +9,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $startDateTime
  * @property \Aws\Api\DateTimeResult $endDateTime
  * @property list<Shapes\AnalyticsUtteranceMetric> $metrics
- * @property list<Shapes\AnalyticsBinBySpecification> $binBy
- * @property list<Shapes\AnalyticsUtteranceGroupBySpecification> $groupBy
- * @property list<Shapes\AnalyticsUtteranceAttribute> $attributes
- * @property list<Shapes\AnalyticsUtteranceFilter> $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property list<Shapes\AnalyticsBinBySpecification>|null $binBy
+ * @property list<Shapes\AnalyticsUtteranceGroupBySpecification>|null $groupBy
+ * @property list<Shapes\AnalyticsUtteranceAttribute>|null $attributes
+ * @property list<Shapes\AnalyticsUtteranceFilter>|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListUtteranceMetricsRequest extends Request
 {
@@ -24,12 +24,12 @@ class ListUtteranceMetricsRequest extends Request
      *     startDateTime: \Aws\Api\DateTimeResult,
      *     endDateTime: \Aws\Api\DateTimeResult,
      *     metrics: list<Shapes\AnalyticsUtteranceMetric>,
-     *     binBy?: list<Shapes\AnalyticsBinBySpecification>,
-     *     groupBy?: list<Shapes\AnalyticsUtteranceGroupBySpecification>,
-     *     attributes?: list<Shapes\AnalyticsUtteranceAttribute>,
-     *     filters?: list<Shapes\AnalyticsUtteranceFilter>,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     binBy?: list<Shapes\AnalyticsBinBySpecification>|null,
+     *     groupBy?: list<Shapes\AnalyticsUtteranceGroupBySpecification>|null,
+     *     attributes?: list<Shapes\AnalyticsUtteranceAttribute>|null,
+     *     filters?: list<Shapes\AnalyticsUtteranceFilter>|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

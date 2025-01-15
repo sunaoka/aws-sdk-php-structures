@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CookieExpirationPeriod
- * @property string $PolicyName
+ * @property int|null $CookieExpirationPeriod
+ * @property string|null $PolicyName
  */
 class AwsElbLbCookieStickinessPolicy extends Shape
 {
     /**
      * @param array{
-     *     CookieExpirationPeriod?: int,
-     *     PolicyName?: string
+     *     CookieExpirationPeriod?: int|null,
+     *     PolicyName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

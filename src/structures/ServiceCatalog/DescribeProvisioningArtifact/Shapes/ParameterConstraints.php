@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisioningArtifact\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AllowedValues
- * @property string $AllowedPattern
- * @property string $ConstraintDescription
- * @property string $MaxLength
- * @property string $MinLength
- * @property string $MaxValue
- * @property string $MinValue
+ * @property list<string>|null $AllowedValues
+ * @property string|null $AllowedPattern
+ * @property string|null $ConstraintDescription
+ * @property string|null $MaxLength
+ * @property string|null $MinLength
+ * @property string|null $MaxValue
+ * @property string|null $MinValue
  */
 class ParameterConstraints extends Shape
 {
     /**
      * @param array{
-     *     AllowedValues?: list<string>,
-     *     AllowedPattern?: string,
-     *     ConstraintDescription?: string,
-     *     MaxLength?: string,
-     *     MinLength?: string,
-     *     MaxValue?: string,
-     *     MinValue?: string
+     *     AllowedValues?: list<string>|null,
+     *     AllowedPattern?: string|null,
+     *     ConstraintDescription?: string|null,
+     *     MaxLength?: string|null,
+     *     MinLength?: string|null,
+     *     MaxValue?: string|null,
+     *     MinValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IamUserArn
- * @property string $SshUsername
- * @property string $SshPublicKey
- * @property bool $AllowSelfManagement
+ * @property string|null $SshUsername
+ * @property string|null $SshPublicKey
+ * @property bool|null $AllowSelfManagement
  */
 class CreateUserProfileRequest extends Request
 {
     /**
      * @param array{
      *     IamUserArn: string,
-     *     SshUsername?: string,
-     *     SshPublicKey?: string,
-     *     AllowSelfManagement?: bool
+     *     SshUsername?: string|null,
+     *     SshPublicKey?: string|null,
+     *     AllowSelfManagement?: bool|null
      * } $args
      */
     public function __construct(array $args)

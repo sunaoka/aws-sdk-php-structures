@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Inputs
- * @property list<list<string>> $PartitionKeys
+ * @property list<list<string>>|null $PartitionKeys
  * @property string $Table
  * @property string $Database
- * @property array<string, string> $AdditionalOptions
- * @property CatalogSchemaChangePolicy $SchemaChangePolicy
+ * @property array<string, string>|null $AdditionalOptions
+ * @property CatalogSchemaChangePolicy|null $SchemaChangePolicy
  */
 class S3DeltaCatalogTarget extends Shape
 {
@@ -19,11 +19,11 @@ class S3DeltaCatalogTarget extends Shape
      * @param array{
      *     Name: string,
      *     Inputs: list<string>,
-     *     PartitionKeys?: list<list<string>>,
+     *     PartitionKeys?: list<list<string>>|null,
      *     Table: string,
      *     Database: string,
-     *     AdditionalOptions?: array<string, string>,
-     *     SchemaChangePolicy?: CatalogSchemaChangePolicy
+     *     AdditionalOptions?: array<string, string>|null,
+     *     SchemaChangePolicy?: CatalogSchemaChangePolicy|null
      * } $args
      */
     public function __construct(array $args)

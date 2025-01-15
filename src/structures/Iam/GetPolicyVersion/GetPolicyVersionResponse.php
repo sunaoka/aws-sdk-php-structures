@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iam\GetPolicyVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PolicyVersion $PolicyVersion
+ * @property Shapes\PolicyVersion|null $PolicyVersion
  */
 class GetPolicyVersionResponse extends Response
 {

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TranslatedDocument $TranslatedDocument
  * @property string $SourceLanguageCode
  * @property string $TargetLanguageCode
- * @property list<Shapes\AppliedTerminology> $AppliedTerminologies
- * @property Shapes\TranslationSettings $AppliedSettings
+ * @property list<Shapes\AppliedTerminology>|null $AppliedTerminologies
+ * @property Shapes\TranslationSettings|null $AppliedSettings
  */
 class TranslateDocumentResponse extends Response
 {

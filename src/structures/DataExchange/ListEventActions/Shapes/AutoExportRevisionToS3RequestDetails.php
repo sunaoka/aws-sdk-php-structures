@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\DataExchange\ListEventActions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExportServerSideEncryption $Encryption
+ * @property ExportServerSideEncryption|null $Encryption
  * @property AutoExportRevisionDestinationEntry $RevisionDestination
  */
 class AutoExportRevisionToS3RequestDetails extends Shape
 {
     /**
      * @param array{
-     *     Encryption?: ExportServerSideEncryption,
+     *     Encryption?: ExportServerSideEncryption|null,
      *     RevisionDestination: AutoExportRevisionDestinationEntry
      * } $args
      */

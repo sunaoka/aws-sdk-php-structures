@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ListChannelMembershipsForAppI
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DEFAULT'|'HIDDEN' $Type
- * @property \Aws\Api\DateTimeResult $ReadMarkerTimestamp
- * @property string $SubChannelId
+ * @property 'DEFAULT'|'HIDDEN'|null $Type
+ * @property \Aws\Api\DateTimeResult|null $ReadMarkerTimestamp
+ * @property string|null $SubChannelId
  */
 class AppInstanceUserMembershipSummary extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'DEFAULT'|'HIDDEN',
-     *     ReadMarkerTimestamp?: \Aws\Api\DateTimeResult,
-     *     SubChannelId?: string
+     *     Type?: 'DEFAULT'|'HIDDEN'|null,
+     *     ReadMarkerTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     SubChannelId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

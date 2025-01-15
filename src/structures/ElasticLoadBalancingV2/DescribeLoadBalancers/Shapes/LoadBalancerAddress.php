@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeLoadBalancers\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpAddress
- * @property string $AllocationId
- * @property string $PrivateIPv4Address
- * @property string $IPv6Address
+ * @property string|null $IpAddress
+ * @property string|null $AllocationId
+ * @property string|null $PrivateIPv4Address
+ * @property string|null $IPv6Address
  */
 class LoadBalancerAddress extends Shape
 {
     /**
      * @param array{
-     *     IpAddress?: string,
-     *     AllocationId?: string,
-     *     PrivateIPv4Address?: string,
-     *     IPv6Address?: string
+     *     IpAddress?: string|null,
+     *     AllocationId?: string|null,
+     *     PrivateIPv4Address?: string|null,
+     *     IPv6Address?: string|null
      * } $args
      */
     public function __construct(array $args = [])

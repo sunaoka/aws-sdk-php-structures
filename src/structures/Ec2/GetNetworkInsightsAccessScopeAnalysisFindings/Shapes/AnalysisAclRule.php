@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\GetNetworkInsightsAccessScopeAnalysisFindin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Cidr
- * @property bool $Egress
- * @property PortRange $PortRange
- * @property string $Protocol
- * @property string $RuleAction
- * @property int $RuleNumber
+ * @property string|null $Cidr
+ * @property bool|null $Egress
+ * @property PortRange|null $PortRange
+ * @property string|null $Protocol
+ * @property string|null $RuleAction
+ * @property int|null $RuleNumber
  */
 class AnalysisAclRule extends Shape
 {
     /**
      * @param array{
-     *     Cidr?: string,
-     *     Egress?: bool,
-     *     PortRange?: PortRange,
-     *     Protocol?: string,
-     *     RuleAction?: string,
-     *     RuleNumber?: int
+     *     Cidr?: string|null,
+     *     Egress?: bool|null,
+     *     PortRange?: PortRange|null,
+     *     Protocol?: string|null,
+     *     RuleAction?: string|null,
+     *     RuleNumber?: int|null
      * } $args
      */
     public function __construct(array $args = [])

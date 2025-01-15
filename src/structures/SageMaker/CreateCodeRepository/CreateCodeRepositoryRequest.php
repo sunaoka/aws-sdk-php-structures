@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CodeRepositoryName
  * @property Shapes\GitConfig $GitConfig
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateCodeRepositoryRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateCodeRepositoryRequest extends Request
      * @param array{
      *     CodeRepositoryName: string,
      *     GitConfig: Shapes\GitConfig,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

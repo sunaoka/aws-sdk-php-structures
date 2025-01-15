@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateNetworkInterfacePermission\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkInterfacePermissionId
- * @property string $NetworkInterfaceId
- * @property string $AwsAccountId
- * @property string $AwsService
- * @property 'INSTANCE-ATTACH'|'EIP-ASSOCIATE' $Permission
- * @property NetworkInterfacePermissionState $PermissionState
+ * @property string|null $NetworkInterfacePermissionId
+ * @property string|null $NetworkInterfaceId
+ * @property string|null $AwsAccountId
+ * @property string|null $AwsService
+ * @property 'INSTANCE-ATTACH'|'EIP-ASSOCIATE'|null $Permission
+ * @property NetworkInterfacePermissionState|null $PermissionState
  */
 class NetworkInterfacePermission extends Shape
 {
     /**
      * @param array{
-     *     NetworkInterfacePermissionId?: string,
-     *     NetworkInterfaceId?: string,
-     *     AwsAccountId?: string,
-     *     AwsService?: string,
-     *     Permission?: 'INSTANCE-ATTACH'|'EIP-ASSOCIATE',
-     *     PermissionState?: NetworkInterfacePermissionState
+     *     NetworkInterfacePermissionId?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     AwsAccountId?: string|null,
+     *     AwsService?: string|null,
+     *     Permission?: 'INSTANCE-ATTACH'|'EIP-ASSOCIATE'|null,
+     *     PermissionState?: NetworkInterfacePermissionState|null
      * } $args
      */
     public function __construct(array $args = [])

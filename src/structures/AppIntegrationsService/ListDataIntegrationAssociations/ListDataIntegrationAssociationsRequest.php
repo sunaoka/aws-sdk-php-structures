@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataIntegrationIdentifier
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
  */
 class ListDataIntegrationAssociationsRequest extends Request
 {
     /**
      * @param array{
      *     DataIntegrationIdentifier: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

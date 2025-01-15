@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AppRegistry\ListAttributeGroupsForApplication\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $arn
- * @property string $name
- * @property string $createdBy
+ * @property string|null $id
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $createdBy
  */
 class AttributeGroupDetails extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     arn?: string,
-     *     name?: string,
-     *     createdBy?: string
+     *     id?: string|null,
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     createdBy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

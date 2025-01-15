@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\MonitoringExecutionSummary> $MonitoringExecutionSummaries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListMonitoringExecutionsResponse extends Response
 {

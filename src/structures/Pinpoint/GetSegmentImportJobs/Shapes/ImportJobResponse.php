@@ -6,17 +6,17 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ApplicationId
- * @property int $CompletedPieces
- * @property string $CompletionDate
+ * @property int|null $CompletedPieces
+ * @property string|null $CompletionDate
  * @property string $CreationDate
  * @property ImportJobResource $Definition
- * @property int $FailedPieces
- * @property list<string> $Failures
+ * @property int|null $FailedPieces
+ * @property list<string>|null $Failures
  * @property string $Id
  * @property 'CREATED'|'PREPARING_FOR_INITIALIZATION'|'INITIALIZING'|'PROCESSING'|'PENDING_JOB'|'COMPLETING'|'COMPLETED'|'FAILING'|'FAILED' $JobStatus
- * @property int $TotalFailures
- * @property int $TotalPieces
- * @property int $TotalProcessed
+ * @property int|null $TotalFailures
+ * @property int|null $TotalPieces
+ * @property int|null $TotalProcessed
  * @property string $Type
  */
 class ImportJobResponse extends Shape
@@ -24,17 +24,17 @@ class ImportJobResponse extends Shape
     /**
      * @param array{
      *     ApplicationId: string,
-     *     CompletedPieces?: int,
-     *     CompletionDate?: string,
+     *     CompletedPieces?: int|null,
+     *     CompletionDate?: string|null,
      *     CreationDate: string,
      *     Definition: ImportJobResource,
-     *     FailedPieces?: int,
-     *     Failures?: list<string>,
+     *     FailedPieces?: int|null,
+     *     Failures?: list<string>|null,
      *     Id: string,
      *     JobStatus: 'CREATED'|'PREPARING_FOR_INITIALIZATION'|'INITIALIZING'|'PROCESSING'|'PENDING_JOB'|'COMPLETING'|'COMPLETED'|'FAILING'|'FAILED',
-     *     TotalFailures?: int,
-     *     TotalPieces?: int,
-     *     TotalProcessed?: int,
+     *     TotalFailures?: int|null,
+     *     TotalPieces?: int|null,
+     *     TotalProcessed?: int|null,
      *     Type: string
      * } $args
      */

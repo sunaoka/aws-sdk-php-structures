@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CostExplorer\StartSavingsPlansPurchaseRecommend
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RecommendationId
- * @property string $GenerationStartedTime
- * @property string $EstimatedCompletionTime
+ * @property string|null $RecommendationId
+ * @property string|null $GenerationStartedTime
+ * @property string|null $EstimatedCompletionTime
  */
 class StartSavingsPlansPurchaseRecommendationGenerationResponse extends Response
 {

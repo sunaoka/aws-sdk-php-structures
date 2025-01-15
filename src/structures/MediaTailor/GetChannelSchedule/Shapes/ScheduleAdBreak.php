@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaTailor\GetChannelSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ApproximateDurationSeconds
- * @property \Aws\Api\DateTimeResult $ApproximateStartTime
- * @property string $SourceLocationName
- * @property string $VodSourceName
+ * @property int|null $ApproximateDurationSeconds
+ * @property \Aws\Api\DateTimeResult|null $ApproximateStartTime
+ * @property string|null $SourceLocationName
+ * @property string|null $VodSourceName
  */
 class ScheduleAdBreak extends Shape
 {
     /**
      * @param array{
-     *     ApproximateDurationSeconds?: int,
-     *     ApproximateStartTime?: \Aws\Api\DateTimeResult,
-     *     SourceLocationName?: string,
-     *     VodSourceName?: string
+     *     ApproximateDurationSeconds?: int|null,
+     *     ApproximateStartTime?: \Aws\Api\DateTimeResult|null,
+     *     SourceLocationName?: string|null,
+     *     VodSourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

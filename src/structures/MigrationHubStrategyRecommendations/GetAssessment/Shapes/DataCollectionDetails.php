@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetAssessme
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $completionTime
- * @property int $failed
- * @property int $inProgress
- * @property int $servers
- * @property \Aws\Api\DateTimeResult $startTime
- * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPED' $status
- * @property string $statusMessage
- * @property int $success
+ * @property \Aws\Api\DateTimeResult|null $completionTime
+ * @property int|null $failed
+ * @property int|null $inProgress
+ * @property int|null $servers
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPED'|null $status
+ * @property string|null $statusMessage
+ * @property int|null $success
  */
 class DataCollectionDetails extends Shape
 {
     /**
      * @param array{
-     *     completionTime?: \Aws\Api\DateTimeResult,
-     *     failed?: int,
-     *     inProgress?: int,
-     *     servers?: int,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPED',
-     *     statusMessage?: string,
-     *     success?: int
+     *     completionTime?: \Aws\Api\DateTimeResult|null,
+     *     failed?: int|null,
+     *     inProgress?: int|null,
+     *     servers?: int|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPED'|null,
+     *     statusMessage?: string|null,
+     *     success?: int|null
      * } $args
      */
     public function __construct(array $args = [])

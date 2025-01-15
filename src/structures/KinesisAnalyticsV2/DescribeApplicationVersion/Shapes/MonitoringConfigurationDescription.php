@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\DescribeApplicationVersion\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DEFAULT'|'CUSTOM' $ConfigurationType
- * @property 'APPLICATION'|'TASK'|'OPERATOR'|'PARALLELISM' $MetricsLevel
- * @property 'INFO'|'WARN'|'ERROR'|'DEBUG' $LogLevel
+ * @property 'DEFAULT'|'CUSTOM'|null $ConfigurationType
+ * @property 'APPLICATION'|'TASK'|'OPERATOR'|'PARALLELISM'|null $MetricsLevel
+ * @property 'INFO'|'WARN'|'ERROR'|'DEBUG'|null $LogLevel
  */
 class MonitoringConfigurationDescription extends Shape
 {
     /**
      * @param array{
-     *     ConfigurationType?: 'DEFAULT'|'CUSTOM',
-     *     MetricsLevel?: 'APPLICATION'|'TASK'|'OPERATOR'|'PARALLELISM',
-     *     LogLevel?: 'INFO'|'WARN'|'ERROR'|'DEBUG'
+     *     ConfigurationType?: 'DEFAULT'|'CUSTOM'|null,
+     *     MetricsLevel?: 'APPLICATION'|'TASK'|'OPERATOR'|'PARALLELISM'|null,
+     *     LogLevel?: 'INFO'|'WARN'|'ERROR'|'DEBUG'|null
      * } $args
      */
     public function __construct(array $args = [])

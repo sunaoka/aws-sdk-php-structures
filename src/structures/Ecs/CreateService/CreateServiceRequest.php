@@ -5,63 +5,63 @@ namespace Sunaoka\Aws\Structures\Ecs\CreateService;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $cluster
+ * @property string|null $cluster
  * @property string $serviceName
- * @property string $taskDefinition
- * @property 'ENABLED'|'DISABLED' $availabilityZoneRebalancing
- * @property list<Shapes\LoadBalancer> $loadBalancers
- * @property list<Shapes\ServiceRegistry> $serviceRegistries
- * @property int $desiredCount
- * @property string $clientToken
- * @property 'EC2'|'FARGATE'|'EXTERNAL' $launchType
- * @property list<Shapes\CapacityProviderStrategyItem> $capacityProviderStrategy
- * @property string $platformVersion
- * @property string $role
- * @property Shapes\DeploymentConfiguration $deploymentConfiguration
- * @property list<Shapes\PlacementConstraint> $placementConstraints
- * @property list<Shapes\PlacementStrategy> $placementStrategy
- * @property Shapes\NetworkConfiguration $networkConfiguration
- * @property int $healthCheckGracePeriodSeconds
- * @property 'REPLICA'|'DAEMON' $schedulingStrategy
- * @property Shapes\DeploymentController $deploymentController
- * @property list<Shapes\Tag> $tags
- * @property bool $enableECSManagedTags
- * @property 'TASK_DEFINITION'|'SERVICE'|'NONE' $propagateTags
- * @property bool $enableExecuteCommand
- * @property Shapes\ServiceConnectConfiguration $serviceConnectConfiguration
- * @property list<Shapes\ServiceVolumeConfiguration> $volumeConfigurations
- * @property list<Shapes\VpcLatticeConfiguration> $vpcLatticeConfigurations
+ * @property string|null $taskDefinition
+ * @property 'ENABLED'|'DISABLED'|null $availabilityZoneRebalancing
+ * @property list<Shapes\LoadBalancer>|null $loadBalancers
+ * @property list<Shapes\ServiceRegistry>|null $serviceRegistries
+ * @property int|null $desiredCount
+ * @property string|null $clientToken
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property list<Shapes\CapacityProviderStrategyItem>|null $capacityProviderStrategy
+ * @property string|null $platformVersion
+ * @property string|null $role
+ * @property Shapes\DeploymentConfiguration|null $deploymentConfiguration
+ * @property list<Shapes\PlacementConstraint>|null $placementConstraints
+ * @property list<Shapes\PlacementStrategy>|null $placementStrategy
+ * @property Shapes\NetworkConfiguration|null $networkConfiguration
+ * @property int|null $healthCheckGracePeriodSeconds
+ * @property 'REPLICA'|'DAEMON'|null $schedulingStrategy
+ * @property Shapes\DeploymentController|null $deploymentController
+ * @property list<Shapes\Tag>|null $tags
+ * @property bool|null $enableECSManagedTags
+ * @property 'TASK_DEFINITION'|'SERVICE'|'NONE'|null $propagateTags
+ * @property bool|null $enableExecuteCommand
+ * @property Shapes\ServiceConnectConfiguration|null $serviceConnectConfiguration
+ * @property list<Shapes\ServiceVolumeConfiguration>|null $volumeConfigurations
+ * @property list<Shapes\VpcLatticeConfiguration>|null $vpcLatticeConfigurations
  */
 class CreateServiceRequest extends Request
 {
     /**
      * @param array{
-     *     cluster?: string,
+     *     cluster?: string|null,
      *     serviceName: string,
-     *     taskDefinition?: string,
-     *     availabilityZoneRebalancing?: 'ENABLED'|'DISABLED',
-     *     loadBalancers?: list<Shapes\LoadBalancer>,
-     *     serviceRegistries?: list<Shapes\ServiceRegistry>,
-     *     desiredCount?: int,
-     *     clientToken?: string,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL',
-     *     capacityProviderStrategy?: list<Shapes\CapacityProviderStrategyItem>,
-     *     platformVersion?: string,
-     *     role?: string,
-     *     deploymentConfiguration?: Shapes\DeploymentConfiguration,
-     *     placementConstraints?: list<Shapes\PlacementConstraint>,
-     *     placementStrategy?: list<Shapes\PlacementStrategy>,
-     *     networkConfiguration?: Shapes\NetworkConfiguration,
-     *     healthCheckGracePeriodSeconds?: int,
-     *     schedulingStrategy?: 'REPLICA'|'DAEMON',
-     *     deploymentController?: Shapes\DeploymentController,
-     *     tags?: list<Shapes\Tag>,
-     *     enableECSManagedTags?: bool,
-     *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE',
-     *     enableExecuteCommand?: bool,
-     *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration,
-     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>,
-     *     vpcLatticeConfigurations?: list<Shapes\VpcLatticeConfiguration>
+     *     taskDefinition?: string|null,
+     *     availabilityZoneRebalancing?: 'ENABLED'|'DISABLED'|null,
+     *     loadBalancers?: list<Shapes\LoadBalancer>|null,
+     *     serviceRegistries?: list<Shapes\ServiceRegistry>|null,
+     *     desiredCount?: int|null,
+     *     clientToken?: string|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     capacityProviderStrategy?: list<Shapes\CapacityProviderStrategyItem>|null,
+     *     platformVersion?: string|null,
+     *     role?: string|null,
+     *     deploymentConfiguration?: Shapes\DeploymentConfiguration|null,
+     *     placementConstraints?: list<Shapes\PlacementConstraint>|null,
+     *     placementStrategy?: list<Shapes\PlacementStrategy>|null,
+     *     networkConfiguration?: Shapes\NetworkConfiguration|null,
+     *     healthCheckGracePeriodSeconds?: int|null,
+     *     schedulingStrategy?: 'REPLICA'|'DAEMON'|null,
+     *     deploymentController?: Shapes\DeploymentController|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     enableECSManagedTags?: bool|null,
+     *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE'|null,
+     *     enableExecuteCommand?: bool|null,
+     *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null,
+     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null,
+     *     vpcLatticeConfigurations?: list<Shapes\VpcLatticeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

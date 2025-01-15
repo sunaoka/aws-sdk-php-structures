@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AttributeName
- * @property list<FeaturizationMethod> $FeaturizationPipeline
+ * @property list<FeaturizationMethod>|null $FeaturizationPipeline
  */
 class Featurization extends Shape
 {
     /**
      * @param array{
      *     AttributeName: string,
-     *     FeaturizationPipeline?: list<FeaturizationMethod>
+     *     FeaturizationPipeline?: list<FeaturizationMethod>|null
      * } $args
      */
     public function __construct(array $args)

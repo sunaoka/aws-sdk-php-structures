@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ScheduledActionName
- * @property Shapes\ScheduledActionType $TargetAction
- * @property string $Schedule
- * @property string $IamRole
- * @property string $ScheduledActionDescription
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property bool $Enable
+ * @property Shapes\ScheduledActionType|null $TargetAction
+ * @property string|null $Schedule
+ * @property string|null $IamRole
+ * @property string|null $ScheduledActionDescription
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property bool|null $Enable
  */
 class ModifyScheduledActionRequest extends Request
 {
     /**
      * @param array{
      *     ScheduledActionName: string,
-     *     TargetAction?: Shapes\ScheduledActionType,
-     *     Schedule?: string,
-     *     IamRole?: string,
-     *     ScheduledActionDescription?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Enable?: bool
+     *     TargetAction?: Shapes\ScheduledActionType|null,
+     *     Schedule?: string|null,
+     *     IamRole?: string|null,
+     *     ScheduledActionDescription?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Enable?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateArtifact;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ArtifactName
+ * @property string|null $ArtifactName
  * @property Shapes\ArtifactSource $Source
  * @property string $ArtifactType
- * @property array<string, string> $Properties
- * @property Shapes\MetadataProperties $MetadataProperties
- * @property list<Shapes\Tag> $Tags
+ * @property array<string, string>|null $Properties
+ * @property Shapes\MetadataProperties|null $MetadataProperties
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateArtifactRequest extends Request
 {
     /**
      * @param array{
-     *     ArtifactName?: string,
+     *     ArtifactName?: string|null,
      *     Source: Shapes\ArtifactSource,
      *     ArtifactType: string,
-     *     Properties?: array<string, string>,
-     *     MetadataProperties?: Shapes\MetadataProperties,
-     *     Tags?: list<Shapes\Tag>
+     *     Properties?: array<string, string>|null,
+     *     MetadataProperties?: Shapes\MetadataProperties|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

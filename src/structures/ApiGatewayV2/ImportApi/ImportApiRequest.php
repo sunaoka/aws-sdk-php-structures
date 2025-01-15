@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\ImportApi;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Basepath
+ * @property string|null $Basepath
  * @property string $Body
- * @property bool $FailOnWarnings
+ * @property bool|null $FailOnWarnings
  */
 class ImportApiRequest extends Request
 {
     /**
      * @param array{
-     *     Basepath?: string,
+     *     Basepath?: string|null,
      *     Body: string,
-     *     FailOnWarnings?: bool
+     *     FailOnWarnings?: bool|null
      * } $args
      */
     public function __construct(array $args)

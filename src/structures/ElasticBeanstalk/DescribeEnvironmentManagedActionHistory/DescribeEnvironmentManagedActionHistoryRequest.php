@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentManagedActi
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $EnvironmentId
- * @property string $EnvironmentName
- * @property string $NextToken
- * @property int<1, 100> $MaxItems
+ * @property string|null $EnvironmentId
+ * @property string|null $EnvironmentName
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxItems
  */
 class DescribeEnvironmentManagedActionHistoryRequest extends Request
 {
     /**
      * @param array{
-     *     EnvironmentId?: string,
-     *     EnvironmentName?: string,
-     *     NextToken?: string,
-     *     MaxItems?: int<1, 100>
+     *     EnvironmentId?: string|null,
+     *     EnvironmentName?: string|null,
+     *     NextToken?: string|null,
+     *     MaxItems?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

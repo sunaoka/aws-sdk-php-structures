@@ -12,16 +12,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED' $status
- * @property string $amiId
+ * @property string|null $amiId
  * @property list<string> $subnetIds
- * @property 'ONDEMAND'|'SPOT' $purchaseOption
+ * @property 'ONDEMAND'|'SPOT'|null $purchaseOption
  * @property CustomLaunchTemplate $customLaunchTemplate
  * @property string $iamInstanceProfileArn
  * @property ScalingConfiguration $scalingConfiguration
  * @property list<InstanceConfig> $instanceConfigs
- * @property SpotOptions $spotOptions
- * @property ComputeNodeGroupSlurmConfiguration $slurmConfiguration
- * @property list<ErrorInfo> $errorInfo
+ * @property SpotOptions|null $spotOptions
+ * @property ComputeNodeGroupSlurmConfiguration|null $slurmConfiguration
+ * @property list<ErrorInfo>|null $errorInfo
  */
 class ComputeNodeGroup extends Shape
 {
@@ -34,16 +34,16 @@ class ComputeNodeGroup extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     modifiedAt: \Aws\Api\DateTimeResult,
      *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'DELETED',
-     *     amiId?: string,
+     *     amiId?: string|null,
      *     subnetIds: list<string>,
-     *     purchaseOption?: 'ONDEMAND'|'SPOT',
+     *     purchaseOption?: 'ONDEMAND'|'SPOT'|null,
      *     customLaunchTemplate: CustomLaunchTemplate,
      *     iamInstanceProfileArn: string,
      *     scalingConfiguration: ScalingConfiguration,
      *     instanceConfigs: list<InstanceConfig>,
-     *     spotOptions?: SpotOptions,
-     *     slurmConfiguration?: ComputeNodeGroupSlurmConfiguration,
-     *     errorInfo?: list<ErrorInfo>
+     *     spotOptions?: SpotOptions|null,
+     *     slurmConfiguration?: ComputeNodeGroupSlurmConfiguration|null,
+     *     errorInfo?: list<ErrorInfo>|null
      * } $args
      */
     public function __construct(array $args)

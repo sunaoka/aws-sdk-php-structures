@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListCollect
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $remoteSourceCodeAnalysisServerConfigurationTimestamp
+ * @property string|null $remoteSourceCodeAnalysisServerConfigurationTimestamp
  */
 class RemoteSourceCodeAnalysisServerInfo extends Shape
 {
     /**
-     * @param array{remoteSourceCodeAnalysisServerConfigurationTimestamp?: string} $args
+     * @param array{remoteSourceCodeAnalysisServerConfigurationTimestamp?: string|null} $args
      */
     public function __construct(array $args = [])
     {

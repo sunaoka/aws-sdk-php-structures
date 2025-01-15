@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lambda\ListVersionsByFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuntimeVersionArn
- * @property RuntimeVersionError $Error
+ * @property string|null $RuntimeVersionArn
+ * @property RuntimeVersionError|null $Error
  */
 class RuntimeVersionConfig extends Shape
 {
     /**
      * @param array{
-     *     RuntimeVersionArn?: string,
-     *     Error?: RuntimeVersionError
+     *     RuntimeVersionArn?: string|null,
+     *     Error?: RuntimeVersionError|null
      * } $args
      */
     public function __construct(array $args = [])

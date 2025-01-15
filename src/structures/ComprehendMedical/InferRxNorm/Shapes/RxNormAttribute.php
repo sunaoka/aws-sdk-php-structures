@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ComprehendMedical\InferRxNorm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DOSAGE'|'DURATION'|'FORM'|'FREQUENCY'|'RATE'|'ROUTE_OR_MODE'|'STRENGTH' $Type
- * @property float $Score
- * @property float $RelationshipScore
- * @property int $Id
- * @property int $BeginOffset
- * @property int $EndOffset
- * @property string $Text
- * @property list<RxNormTrait> $Traits
+ * @property 'DOSAGE'|'DURATION'|'FORM'|'FREQUENCY'|'RATE'|'ROUTE_OR_MODE'|'STRENGTH'|null $Type
+ * @property float|null $Score
+ * @property float|null $RelationshipScore
+ * @property int|null $Id
+ * @property int|null $BeginOffset
+ * @property int|null $EndOffset
+ * @property string|null $Text
+ * @property list<RxNormTrait>|null $Traits
  */
 class RxNormAttribute extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'DOSAGE'|'DURATION'|'FORM'|'FREQUENCY'|'RATE'|'ROUTE_OR_MODE'|'STRENGTH',
-     *     Score?: float,
-     *     RelationshipScore?: float,
-     *     Id?: int,
-     *     BeginOffset?: int,
-     *     EndOffset?: int,
-     *     Text?: string,
-     *     Traits?: list<RxNormTrait>
+     *     Type?: 'DOSAGE'|'DURATION'|'FORM'|'FREQUENCY'|'RATE'|'ROUTE_OR_MODE'|'STRENGTH'|null,
+     *     Score?: float|null,
+     *     RelationshipScore?: float|null,
+     *     Id?: int|null,
+     *     BeginOffset?: int|null,
+     *     EndOffset?: int|null,
+     *     Text?: string|null,
+     *     Traits?: list<RxNormTrait>|null
      * } $args
      */
     public function __construct(array $args = [])

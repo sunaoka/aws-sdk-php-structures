@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateChatControlsConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $blockedPhrasesToCreateOrUpdate
- * @property list<string> $blockedPhrasesToDelete
- * @property string $systemMessageOverride
+ * @property list<string>|null $blockedPhrasesToCreateOrUpdate
+ * @property list<string>|null $blockedPhrasesToDelete
+ * @property string|null $systemMessageOverride
  */
 class BlockedPhrasesConfigurationUpdate extends Shape
 {
     /**
      * @param array{
-     *     blockedPhrasesToCreateOrUpdate?: list<string>,
-     *     blockedPhrasesToDelete?: list<string>,
-     *     systemMessageOverride?: string
+     *     blockedPhrasesToCreateOrUpdate?: list<string>|null,
+     *     blockedPhrasesToDelete?: list<string>|null,
+     *     systemMessageOverride?: string|null
      * } $args
      */
     public function __construct(array $args = [])

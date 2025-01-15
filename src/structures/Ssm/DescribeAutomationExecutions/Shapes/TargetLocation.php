@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeAutomationExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Accounts
- * @property list<string> $Regions
- * @property string $TargetLocationMaxConcurrency
- * @property string $TargetLocationMaxErrors
- * @property string $ExecutionRoleName
- * @property AlarmConfiguration $TargetLocationAlarmConfiguration
- * @property bool $IncludeChildOrganizationUnits
- * @property list<string> $ExcludeAccounts
- * @property list<Target> $Targets
- * @property string $TargetsMaxConcurrency
- * @property string $TargetsMaxErrors
+ * @property list<string>|null $Accounts
+ * @property list<string>|null $Regions
+ * @property string|null $TargetLocationMaxConcurrency
+ * @property string|null $TargetLocationMaxErrors
+ * @property string|null $ExecutionRoleName
+ * @property AlarmConfiguration|null $TargetLocationAlarmConfiguration
+ * @property bool|null $IncludeChildOrganizationUnits
+ * @property list<string>|null $ExcludeAccounts
+ * @property list<Target>|null $Targets
+ * @property string|null $TargetsMaxConcurrency
+ * @property string|null $TargetsMaxErrors
  */
 class TargetLocation extends Shape
 {
     /**
      * @param array{
-     *     Accounts?: list<string>,
-     *     Regions?: list<string>,
-     *     TargetLocationMaxConcurrency?: string,
-     *     TargetLocationMaxErrors?: string,
-     *     ExecutionRoleName?: string,
-     *     TargetLocationAlarmConfiguration?: AlarmConfiguration,
-     *     IncludeChildOrganizationUnits?: bool,
-     *     ExcludeAccounts?: list<string>,
-     *     Targets?: list<Target>,
-     *     TargetsMaxConcurrency?: string,
-     *     TargetsMaxErrors?: string
+     *     Accounts?: list<string>|null,
+     *     Regions?: list<string>|null,
+     *     TargetLocationMaxConcurrency?: string|null,
+     *     TargetLocationMaxErrors?: string|null,
+     *     ExecutionRoleName?: string|null,
+     *     TargetLocationAlarmConfiguration?: AlarmConfiguration|null,
+     *     IncludeChildOrganizationUnits?: bool|null,
+     *     ExcludeAccounts?: list<string>|null,
+     *     Targets?: list<Target>|null,
+     *     TargetsMaxConcurrency?: string|null,
+     *     TargetsMaxErrors?: string|null
      * } $args
      */
     public function __construct(array $args = [])

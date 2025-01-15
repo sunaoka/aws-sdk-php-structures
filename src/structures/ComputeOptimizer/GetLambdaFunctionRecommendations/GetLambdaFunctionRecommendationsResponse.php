@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLambdaFunctionRecommendatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\LambdaFunctionRecommendation> $lambdaFunctionRecommendations
+ * @property string|null $nextToken
+ * @property list<Shapes\LambdaFunctionRecommendation>|null $lambdaFunctionRecommendations
  */
 class GetLambdaFunctionRecommendationsResponse extends Response
 {

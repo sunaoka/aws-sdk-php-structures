@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $analyzerArn
  * @property string $resourceArn
- * @property string $resourceOwnerAccount
+ * @property string|null $resourceOwnerAccount
  */
 class StartResourceScanRequest extends Request
 {
@@ -15,7 +15,7 @@ class StartResourceScanRequest extends Request
      * @param array{
      *     analyzerArn: string,
      *     resourceArn: string,
-     *     resourceOwnerAccount?: string
+     *     resourceOwnerAccount?: string|null
      * } $args
      */
     public function __construct(array $args)

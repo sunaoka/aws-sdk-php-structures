@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodePipeline\PollForJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $revision
- * @property ArtifactLocation $location
+ * @property string|null $name
+ * @property string|null $revision
+ * @property ArtifactLocation|null $location
  */
 class Artifact extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     revision?: string,
-     *     location?: ArtifactLocation
+     *     name?: string|null,
+     *     revision?: string|null,
+     *     location?: ArtifactLocation|null
      * } $args
      */
     public function __construct(array $args = [])

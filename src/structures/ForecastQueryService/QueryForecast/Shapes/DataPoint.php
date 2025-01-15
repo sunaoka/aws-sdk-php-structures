@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastQueryService\QueryForecast\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Timestamp
- * @property double $Value
+ * @property string|null $Timestamp
+ * @property double|null $Value
  */
 class DataPoint extends Shape
 {
     /**
      * @param array{
-     *     Timestamp?: string,
-     *     Value?: double
+     *     Timestamp?: string|null,
+     *     Value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

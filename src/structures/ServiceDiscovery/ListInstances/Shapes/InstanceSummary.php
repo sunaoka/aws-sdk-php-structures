@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\ListInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property array<string, string> $Attributes
+ * @property string|null $Id
+ * @property array<string, string>|null $Attributes
  */
 class InstanceSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Attributes?: array<string, string>
+     *     Id?: string|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

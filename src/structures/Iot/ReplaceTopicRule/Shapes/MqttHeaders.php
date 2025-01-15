@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Iot\ReplaceTopicRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $payloadFormatIndicator
- * @property string $contentType
- * @property string $responseTopic
- * @property string $correlationData
- * @property string $messageExpiry
- * @property list<UserProperty> $userProperties
+ * @property string|null $payloadFormatIndicator
+ * @property string|null $contentType
+ * @property string|null $responseTopic
+ * @property string|null $correlationData
+ * @property string|null $messageExpiry
+ * @property list<UserProperty>|null $userProperties
  */
 class MqttHeaders extends Shape
 {
     /**
      * @param array{
-     *     payloadFormatIndicator?: string,
-     *     contentType?: string,
-     *     responseTopic?: string,
-     *     correlationData?: string,
-     *     messageExpiry?: string,
-     *     userProperties?: list<UserProperty>
+     *     payloadFormatIndicator?: string|null,
+     *     contentType?: string|null,
+     *     responseTopic?: string|null,
+     *     correlationData?: string|null,
+     *     messageExpiry?: string|null,
+     *     userProperties?: list<UserProperty>|null
      * } $args
      */
     public function __construct(array $args = [])

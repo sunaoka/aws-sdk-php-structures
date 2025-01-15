@@ -6,42 +6,42 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WindowId
- * @property list<Shapes\Target> $Targets
+ * @property list<Shapes\Target>|null $Targets
  * @property string $TaskArn
- * @property string $ServiceRoleArn
+ * @property string|null $ServiceRoleArn
  * @property 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA' $TaskType
- * @property array<string, Shapes\MaintenanceWindowTaskParameterValueExpression> $TaskParameters
- * @property Shapes\MaintenanceWindowTaskInvocationParameters $TaskInvocationParameters
- * @property int<0, max> $Priority
- * @property string $MaxConcurrency
- * @property string $MaxErrors
- * @property Shapes\LoggingInfo $LoggingInfo
- * @property string $Name
- * @property string $Description
- * @property string $ClientToken
- * @property 'CONTINUE_TASK'|'CANCEL_TASK' $CutoffBehavior
- * @property Shapes\AlarmConfiguration $AlarmConfiguration
+ * @property array<string, Shapes\MaintenanceWindowTaskParameterValueExpression>|null $TaskParameters
+ * @property Shapes\MaintenanceWindowTaskInvocationParameters|null $TaskInvocationParameters
+ * @property int<0, max>|null $Priority
+ * @property string|null $MaxConcurrency
+ * @property string|null $MaxErrors
+ * @property Shapes\LoggingInfo|null $LoggingInfo
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $ClientToken
+ * @property 'CONTINUE_TASK'|'CANCEL_TASK'|null $CutoffBehavior
+ * @property Shapes\AlarmConfiguration|null $AlarmConfiguration
  */
 class RegisterTaskWithMaintenanceWindowRequest extends Request
 {
     /**
      * @param array{
      *     WindowId: string,
-     *     Targets?: list<Shapes\Target>,
+     *     Targets?: list<Shapes\Target>|null,
      *     TaskArn: string,
-     *     ServiceRoleArn?: string,
+     *     ServiceRoleArn?: string|null,
      *     TaskType: 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA',
-     *     TaskParameters?: array<string, Shapes\MaintenanceWindowTaskParameterValueExpression>,
-     *     TaskInvocationParameters?: Shapes\MaintenanceWindowTaskInvocationParameters,
-     *     Priority?: int<0, max>,
-     *     MaxConcurrency?: string,
-     *     MaxErrors?: string,
-     *     LoggingInfo?: Shapes\LoggingInfo,
-     *     Name?: string,
-     *     Description?: string,
-     *     ClientToken?: string,
-     *     CutoffBehavior?: 'CONTINUE_TASK'|'CANCEL_TASK',
-     *     AlarmConfiguration?: Shapes\AlarmConfiguration
+     *     TaskParameters?: array<string, Shapes\MaintenanceWindowTaskParameterValueExpression>|null,
+     *     TaskInvocationParameters?: Shapes\MaintenanceWindowTaskInvocationParameters|null,
+     *     Priority?: int<0, max>|null,
+     *     MaxConcurrency?: string|null,
+     *     MaxErrors?: string|null,
+     *     LoggingInfo?: Shapes\LoggingInfo|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     ClientToken?: string|null,
+     *     CutoffBehavior?: 'CONTINUE_TASK'|'CANCEL_TASK'|null,
+     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args)

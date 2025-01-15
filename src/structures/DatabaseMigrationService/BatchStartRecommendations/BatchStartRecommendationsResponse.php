@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\BatchStartRecommendati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BatchStartRecommendationsErrorEntry> $ErrorEntries
+ * @property list<Shapes\BatchStartRecommendationsErrorEntry>|null $ErrorEntries
  */
 class BatchStartRecommendationsResponse extends Response
 {

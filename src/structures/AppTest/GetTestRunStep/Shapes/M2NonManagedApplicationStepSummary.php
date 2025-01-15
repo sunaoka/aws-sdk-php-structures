@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property M2NonManagedApplicationStepInput $stepInput
- * @property M2NonManagedApplicationStepOutput $stepOutput
+ * @property M2NonManagedApplicationStepOutput|null $stepOutput
  */
 class M2NonManagedApplicationStepSummary extends Shape
 {
     /**
      * @param array{
      *     stepInput: M2NonManagedApplicationStepInput,
-     *     stepOutput?: M2NonManagedApplicationStepOutput
+     *     stepOutput?: M2NonManagedApplicationStepOutput|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $repositoryName
- * @property string $beforeCommitId
+ * @property string|null $beforeCommitId
  * @property string $afterCommitId
- * @property string $nextToken
- * @property int $maxResults
+ * @property string|null $nextToken
+ * @property int|null $maxResults
  */
 class GetCommentsForComparedCommitRequest extends Request
 {
     /**
      * @param array{
      *     repositoryName: string,
-     *     beforeCommitId?: string,
+     *     beforeCommitId?: string|null,
      *     afterCommitId: string,
-     *     nextToken?: string,
-     *     maxResults?: int
+     *     nextToken?: string|null,
+     *     maxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

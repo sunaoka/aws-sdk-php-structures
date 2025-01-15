@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Support\DescribeCases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $caseId
- * @property string $displayId
- * @property string $subject
- * @property string $status
- * @property string $serviceCode
- * @property string $categoryCode
- * @property string $severityCode
- * @property string $submittedBy
- * @property string $timeCreated
- * @property RecentCaseCommunications $recentCommunications
- * @property list<string> $ccEmailAddresses
- * @property string $language
+ * @property string|null $caseId
+ * @property string|null $displayId
+ * @property string|null $subject
+ * @property string|null $status
+ * @property string|null $serviceCode
+ * @property string|null $categoryCode
+ * @property string|null $severityCode
+ * @property string|null $submittedBy
+ * @property string|null $timeCreated
+ * @property RecentCaseCommunications|null $recentCommunications
+ * @property list<string>|null $ccEmailAddresses
+ * @property string|null $language
  */
 class CaseDetails extends Shape
 {
     /**
      * @param array{
-     *     caseId?: string,
-     *     displayId?: string,
-     *     subject?: string,
-     *     status?: string,
-     *     serviceCode?: string,
-     *     categoryCode?: string,
-     *     severityCode?: string,
-     *     submittedBy?: string,
-     *     timeCreated?: string,
-     *     recentCommunications?: RecentCaseCommunications,
-     *     ccEmailAddresses?: list<string>,
-     *     language?: string
+     *     caseId?: string|null,
+     *     displayId?: string|null,
+     *     subject?: string|null,
+     *     status?: string|null,
+     *     serviceCode?: string|null,
+     *     categoryCode?: string|null,
+     *     severityCode?: string|null,
+     *     submittedBy?: string|null,
+     *     timeCreated?: string|null,
+     *     recentCommunications?: RecentCaseCommunications|null,
+     *     ccEmailAddresses?: list<string>|null,
+     *     language?: string|null
      * } $args
      */
     public function __construct(array $args = [])

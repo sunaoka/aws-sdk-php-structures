@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\ListIdentityResolutionJobs\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfProfilesReviewed
- * @property int $NumberOfMatchesFound
- * @property int $NumberOfMergesDone
+ * @property int|null $NumberOfProfilesReviewed
+ * @property int|null $NumberOfMatchesFound
+ * @property int|null $NumberOfMergesDone
  */
 class JobStats extends Shape
 {
     /**
      * @param array{
-     *     NumberOfProfilesReviewed?: int,
-     *     NumberOfMatchesFound?: int,
-     *     NumberOfMergesDone?: int
+     *     NumberOfProfilesReviewed?: int|null,
+     *     NumberOfMatchesFound?: int|null,
+     *     NumberOfMergesDone?: int|null
      * } $args
      */
     public function __construct(array $args = [])

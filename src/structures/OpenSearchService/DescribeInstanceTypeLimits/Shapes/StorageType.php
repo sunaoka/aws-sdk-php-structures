@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeInstanceTypeLimits\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StorageTypeName
- * @property string $StorageSubTypeName
- * @property list<StorageTypeLimit> $StorageTypeLimits
+ * @property string|null $StorageTypeName
+ * @property string|null $StorageSubTypeName
+ * @property list<StorageTypeLimit>|null $StorageTypeLimits
  */
 class StorageType extends Shape
 {
     /**
      * @param array{
-     *     StorageTypeName?: string,
-     *     StorageSubTypeName?: string,
-     *     StorageTypeLimits?: list<StorageTypeLimit>
+     *     StorageTypeName?: string|null,
+     *     StorageSubTypeName?: string|null,
+     *     StorageTypeLimits?: list<StorageTypeLimit>|null
      * } $args
      */
     public function __construct(array $args = [])

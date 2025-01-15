@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\UpdateRelatedItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $metricDefinition
- * @property PagerDutyIncidentDetail $pagerDutyIncidentDetail
- * @property string $url
+ * @property string|null $arn
+ * @property string|null $metricDefinition
+ * @property PagerDutyIncidentDetail|null $pagerDutyIncidentDetail
+ * @property string|null $url
  */
 class ItemValue extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     metricDefinition?: string,
-     *     pagerDutyIncidentDetail?: PagerDutyIncidentDetail,
-     *     url?: string
+     *     arn?: string|null,
+     *     metricDefinition?: string|null,
+     *     pagerDutyIncidentDetail?: PagerDutyIncidentDetail|null,
+     *     url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

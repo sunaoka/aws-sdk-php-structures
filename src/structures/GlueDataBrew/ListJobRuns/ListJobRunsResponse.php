@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\JobRun> $JobRuns
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListJobRunsResponse extends Response
 {

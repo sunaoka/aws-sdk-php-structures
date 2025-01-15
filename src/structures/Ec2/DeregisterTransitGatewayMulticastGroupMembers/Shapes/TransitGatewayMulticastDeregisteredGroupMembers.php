@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DeregisterTransitGatewayMulticastGroupMembe
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayMulticastDomainId
- * @property list<string> $DeregisteredNetworkInterfaceIds
- * @property string $GroupIpAddress
+ * @property string|null $TransitGatewayMulticastDomainId
+ * @property list<string>|null $DeregisteredNetworkInterfaceIds
+ * @property string|null $GroupIpAddress
  */
 class TransitGatewayMulticastDeregisteredGroupMembers extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayMulticastDomainId?: string,
-     *     DeregisteredNetworkInterfaceIds?: list<string>,
-     *     GroupIpAddress?: string
+     *     TransitGatewayMulticastDomainId?: string|null,
+     *     DeregisteredNetworkInterfaceIds?: list<string>|null,
+     *     GroupIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

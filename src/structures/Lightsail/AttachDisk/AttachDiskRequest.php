@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $diskName
  * @property string $instanceName
  * @property string $diskPath
- * @property bool $autoMounting
+ * @property bool|null $autoMounting
  */
 class AttachDiskRequest extends Request
 {
@@ -17,7 +17,7 @@ class AttachDiskRequest extends Request
      *     diskName: string,
      *     instanceName: string,
      *     diskPath: string,
-     *     autoMounting?: bool
+     *     autoMounting?: bool|null
      * } $args
      */
     public function __construct(array $args)

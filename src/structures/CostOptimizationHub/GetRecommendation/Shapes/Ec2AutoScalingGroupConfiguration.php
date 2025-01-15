@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property InstanceConfiguration $instance
+ * @property InstanceConfiguration|null $instance
  */
 class Ec2AutoScalingGroupConfiguration extends Shape
 {
     /**
-     * @param array{instance?: InstanceConfiguration} $args
+     * @param array{instance?: InstanceConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

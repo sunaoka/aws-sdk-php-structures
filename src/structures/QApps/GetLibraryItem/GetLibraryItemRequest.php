@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $instanceId
  * @property string $libraryItemId
- * @property string $appId
+ * @property string|null $appId
  */
 class GetLibraryItemRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetLibraryItemRequest extends Request
      * @param array{
      *     instanceId: string,
      *     libraryItemId: string,
-     *     appId?: string
+     *     appId?: string|null
      * } $args
      */
     public function __construct(array $args)

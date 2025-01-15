@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ApiGateway\UpdateApiKey;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $id
- * @property string $value
- * @property string $name
- * @property string $customerId
- * @property string $description
- * @property bool $enabled
- * @property \Aws\Api\DateTimeResult $createdDate
- * @property \Aws\Api\DateTimeResult $lastUpdatedDate
- * @property list<string> $stageKeys
- * @property array<string, string> $tags
+ * @property string|null $id
+ * @property string|null $value
+ * @property string|null $name
+ * @property string|null $customerId
+ * @property string|null $description
+ * @property bool|null $enabled
+ * @property \Aws\Api\DateTimeResult|null $createdDate
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDate
+ * @property list<string>|null $stageKeys
+ * @property array<string, string>|null $tags
  */
 class UpdateApiKeyResponse extends Response
 {

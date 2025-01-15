@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\SearchQuickConnects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<QuickConnectSearchCriteria> $OrConditions
- * @property list<QuickConnectSearchCriteria> $AndConditions
- * @property StringCondition $StringCondition
+ * @property list<QuickConnectSearchCriteria>|null $OrConditions
+ * @property list<QuickConnectSearchCriteria>|null $AndConditions
+ * @property StringCondition|null $StringCondition
  */
 class QuickConnectSearchCriteria extends Shape
 {
     /**
      * @param array{
-     *     OrConditions?: list<QuickConnectSearchCriteria>,
-     *     AndConditions?: list<QuickConnectSearchCriteria>,
-     *     StringCondition?: StringCondition
+     *     OrConditions?: list<QuickConnectSearchCriteria>|null,
+     *     AndConditions?: list<QuickConnectSearchCriteria>|null,
+     *     StringCondition?: StringCondition|null
      * } $args
      */
     public function __construct(array $args = [])

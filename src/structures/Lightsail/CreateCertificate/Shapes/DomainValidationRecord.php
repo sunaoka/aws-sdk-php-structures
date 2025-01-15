@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateCertificate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $domainName
- * @property ResourceRecord $resourceRecord
- * @property DnsRecordCreationState $dnsRecordCreationState
- * @property 'PENDING_VALIDATION'|'FAILED'|'SUCCESS' $validationStatus
+ * @property string|null $domainName
+ * @property ResourceRecord|null $resourceRecord
+ * @property DnsRecordCreationState|null $dnsRecordCreationState
+ * @property 'PENDING_VALIDATION'|'FAILED'|'SUCCESS'|null $validationStatus
  */
 class DomainValidationRecord extends Shape
 {
     /**
      * @param array{
-     *     domainName?: string,
-     *     resourceRecord?: ResourceRecord,
-     *     dnsRecordCreationState?: DnsRecordCreationState,
-     *     validationStatus?: 'PENDING_VALIDATION'|'FAILED'|'SUCCESS'
+     *     domainName?: string|null,
+     *     resourceRecord?: ResourceRecord|null,
+     *     dnsRecordCreationState?: DnsRecordCreationState|null,
+     *     validationStatus?: 'PENDING_VALIDATION'|'FAILED'|'SUCCESS'|null
      * } $args
      */
     public function __construct(array $args = [])

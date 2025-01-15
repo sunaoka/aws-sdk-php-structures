@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Waf\ListByteMatchSets;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextMarker
- * @property list<Shapes\ByteMatchSetSummary> $ByteMatchSets
+ * @property string|null $NextMarker
+ * @property list<Shapes\ByteMatchSetSummary>|null $ByteMatchSets
  */
 class ListByteMatchSetsResponse extends Response
 {

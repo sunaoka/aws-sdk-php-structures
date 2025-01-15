@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\StartAssess
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $assessmentId
+ * @property string|null $assessmentId
  */
 class StartAssessmentResponse extends Response
 {

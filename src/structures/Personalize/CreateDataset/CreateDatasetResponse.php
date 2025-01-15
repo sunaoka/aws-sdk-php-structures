@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Personalize\CreateDataset;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $datasetArn
+ * @property string|null $datasetArn
  */
 class CreateDatasetResponse extends Response
 {

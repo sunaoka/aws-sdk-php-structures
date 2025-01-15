@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLambdaFunctionRecommendatio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Duration'|'Memory' $name
- * @property 'Maximum'|'Average' $statistic
- * @property double $value
+ * @property 'Duration'|'Memory'|null $name
+ * @property 'Maximum'|'Average'|null $statistic
+ * @property double|null $value
  */
 class LambdaFunctionUtilizationMetric extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Duration'|'Memory',
-     *     statistic?: 'Maximum'|'Average',
-     *     value?: double
+     *     name?: 'Duration'|'Memory'|null,
+     *     statistic?: 'Maximum'|'Average'|null,
+     *     value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

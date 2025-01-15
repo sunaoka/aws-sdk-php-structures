@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QBusiness\ChatSync\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $title
- * @property string $snippet
- * @property string $url
- * @property int $citationNumber
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property list<TextSegment> $textMessageSegments
+ * @property string|null $title
+ * @property string|null $snippet
+ * @property string|null $url
+ * @property int|null $citationNumber
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property list<TextSegment>|null $textMessageSegments
  */
 class SourceAttribution extends Shape
 {
     /**
      * @param array{
-     *     title?: string,
-     *     snippet?: string,
-     *     url?: string,
-     *     citationNumber?: int,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     textMessageSegments?: list<TextSegment>
+     *     title?: string|null,
+     *     snippet?: string|null,
+     *     url?: string|null,
+     *     citationNumber?: int|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     textMessageSegments?: list<TextSegment>|null
      * } $args
      */
     public function __construct(array $args = [])

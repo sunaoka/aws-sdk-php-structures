@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\ListAnomalyGroupSummaries\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EvaluationStartDate
- * @property int $TotalCount
- * @property list<ItemizedMetricStats> $ItemizedMetricStatsList
+ * @property string|null $EvaluationStartDate
+ * @property int|null $TotalCount
+ * @property list<ItemizedMetricStats>|null $ItemizedMetricStatsList
  */
 class AnomalyGroupStatistics extends Shape
 {
     /**
      * @param array{
-     *     EvaluationStartDate?: string,
-     *     TotalCount?: int,
-     *     ItemizedMetricStatsList?: list<ItemizedMetricStats>
+     *     EvaluationStartDate?: string|null,
+     *     TotalCount?: int|null,
+     *     ItemizedMetricStatsList?: list<ItemizedMetricStats>|null
      * } $args
      */
     public function __construct(array $args = [])

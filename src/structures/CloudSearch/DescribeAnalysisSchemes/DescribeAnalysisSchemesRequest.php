@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property list<string> $AnalysisSchemeNames
- * @property bool $Deployed
+ * @property list<string>|null $AnalysisSchemeNames
+ * @property bool|null $Deployed
  */
 class DescribeAnalysisSchemesRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     AnalysisSchemeNames?: list<string>,
-     *     Deployed?: bool
+     *     AnalysisSchemeNames?: list<string>|null,
+     *     Deployed?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeCommit\UpdateComment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Comment $comment
+ * @property Shapes\Comment|null $comment
  */
 class UpdateCommentResponse extends Response
 {

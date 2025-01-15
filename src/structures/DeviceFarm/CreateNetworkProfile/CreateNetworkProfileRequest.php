@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $projectArn
  * @property string $name
- * @property string $description
- * @property 'CURATED'|'PRIVATE' $type
- * @property int $uplinkBandwidthBits
- * @property int $downlinkBandwidthBits
- * @property int $uplinkDelayMs
- * @property int $downlinkDelayMs
- * @property int $uplinkJitterMs
- * @property int $downlinkJitterMs
- * @property int<0, 100> $uplinkLossPercent
- * @property int<0, 100> $downlinkLossPercent
+ * @property string|null $description
+ * @property 'CURATED'|'PRIVATE'|null $type
+ * @property int|null $uplinkBandwidthBits
+ * @property int|null $downlinkBandwidthBits
+ * @property int|null $uplinkDelayMs
+ * @property int|null $downlinkDelayMs
+ * @property int|null $uplinkJitterMs
+ * @property int|null $downlinkJitterMs
+ * @property int<0, 100>|null $uplinkLossPercent
+ * @property int<0, 100>|null $downlinkLossPercent
  */
 class CreateNetworkProfileRequest extends Request
 {
@@ -24,16 +24,16 @@ class CreateNetworkProfileRequest extends Request
      * @param array{
      *     projectArn: string,
      *     name: string,
-     *     description?: string,
-     *     type?: 'CURATED'|'PRIVATE',
-     *     uplinkBandwidthBits?: int,
-     *     downlinkBandwidthBits?: int,
-     *     uplinkDelayMs?: int,
-     *     downlinkDelayMs?: int,
-     *     uplinkJitterMs?: int,
-     *     downlinkJitterMs?: int,
-     *     uplinkLossPercent?: int<0, 100>,
-     *     downlinkLossPercent?: int<0, 100>
+     *     description?: string|null,
+     *     type?: 'CURATED'|'PRIVATE'|null,
+     *     uplinkBandwidthBits?: int|null,
+     *     downlinkBandwidthBits?: int|null,
+     *     uplinkDelayMs?: int|null,
+     *     downlinkDelayMs?: int|null,
+     *     uplinkJitterMs?: int|null,
+     *     downlinkJitterMs?: int|null,
+     *     uplinkLossPercent?: int<0, 100>|null,
+     *     downlinkLossPercent?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args)

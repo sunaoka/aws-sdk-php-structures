@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  * @property OutputGroupSettings $OutputGroupSettings
  * @property list<Output> $Outputs
  */
@@ -13,7 +13,7 @@ class OutputGroup extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
+     *     Name?: string|null,
      *     OutputGroupSettings: OutputGroupSettings,
      *     Outputs: list<Output>
      * } $args

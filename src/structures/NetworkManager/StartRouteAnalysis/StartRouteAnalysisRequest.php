@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GlobalNetworkId
  * @property Shapes\RouteAnalysisEndpointOptionsSpecification $Source
  * @property Shapes\RouteAnalysisEndpointOptionsSpecification $Destination
- * @property bool $IncludeReturnPath
- * @property bool $UseMiddleboxes
+ * @property bool|null $IncludeReturnPath
+ * @property bool|null $UseMiddleboxes
  */
 class StartRouteAnalysisRequest extends Request
 {
@@ -18,8 +18,8 @@ class StartRouteAnalysisRequest extends Request
      *     GlobalNetworkId: string,
      *     Source: Shapes\RouteAnalysisEndpointOptionsSpecification,
      *     Destination: Shapes\RouteAnalysisEndpointOptionsSpecification,
-     *     IncludeReturnPath?: bool,
-     *     UseMiddleboxes?: bool
+     *     IncludeReturnPath?: bool|null,
+     *     UseMiddleboxes?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudWatch\ListDashboards\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DashboardName
- * @property string $DashboardArn
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property int $Size
+ * @property string|null $DashboardName
+ * @property string|null $DashboardArn
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property int|null $Size
  */
 class DashboardEntry extends Shape
 {
     /**
      * @param array{
-     *     DashboardName?: string,
-     *     DashboardArn?: string,
-     *     LastModified?: \Aws\Api\DateTimeResult,
-     *     Size?: int
+     *     DashboardName?: string|null,
+     *     DashboardArn?: string|null,
+     *     LastModified?: \Aws\Api\DateTimeResult|null,
+     *     Size?: int|null
      * } $args
      */
     public function __construct(array $args = [])

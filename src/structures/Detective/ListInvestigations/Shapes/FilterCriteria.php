@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Detective\ListInvestigations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StringFilter $Severity
- * @property StringFilter $Status
- * @property StringFilter $State
- * @property StringFilter $EntityArn
- * @property DateFilter $CreatedTime
+ * @property StringFilter|null $Severity
+ * @property StringFilter|null $Status
+ * @property StringFilter|null $State
+ * @property StringFilter|null $EntityArn
+ * @property DateFilter|null $CreatedTime
  */
 class FilterCriteria extends Shape
 {
     /**
      * @param array{
-     *     Severity?: StringFilter,
-     *     Status?: StringFilter,
-     *     State?: StringFilter,
-     *     EntityArn?: StringFilter,
-     *     CreatedTime?: DateFilter
+     *     Severity?: StringFilter|null,
+     *     Status?: StringFilter|null,
+     *     State?: StringFilter|null,
+     *     EntityArn?: StringFilter|null,
+     *     CreatedTime?: DateFilter|null
      * } $args
      */
     public function __construct(array $args = [])

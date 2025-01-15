@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RStudioServerProDomainSettingsForUpdate $RStudioServerProDomainSettingsForUpdate
- * @property 'USER_PROFILE_NAME'|'DISABLED' $ExecutionRoleIdentityConfig
- * @property list<string> $SecurityGroupIds
- * @property DockerSettings $DockerSettings
- * @property AmazonQSettings $AmazonQSettings
+ * @property RStudioServerProDomainSettingsForUpdate|null $RStudioServerProDomainSettingsForUpdate
+ * @property 'USER_PROFILE_NAME'|'DISABLED'|null $ExecutionRoleIdentityConfig
+ * @property list<string>|null $SecurityGroupIds
+ * @property DockerSettings|null $DockerSettings
+ * @property AmazonQSettings|null $AmazonQSettings
  */
 class DomainSettingsForUpdate extends Shape
 {
     /**
      * @param array{
-     *     RStudioServerProDomainSettingsForUpdate?: RStudioServerProDomainSettingsForUpdate,
-     *     ExecutionRoleIdentityConfig?: 'USER_PROFILE_NAME'|'DISABLED',
-     *     SecurityGroupIds?: list<string>,
-     *     DockerSettings?: DockerSettings,
-     *     AmazonQSettings?: AmazonQSettings
+     *     RStudioServerProDomainSettingsForUpdate?: RStudioServerProDomainSettingsForUpdate|null,
+     *     ExecutionRoleIdentityConfig?: 'USER_PROFILE_NAME'|'DISABLED'|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     DockerSettings?: DockerSettings|null,
+     *     AmazonQSettings?: AmazonQSettings|null
      * } $args
      */
     public function __construct(array $args = [])

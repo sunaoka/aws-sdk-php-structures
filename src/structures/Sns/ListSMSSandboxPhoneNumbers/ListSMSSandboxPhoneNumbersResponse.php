@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\SMSSandboxPhoneNumber> $PhoneNumbers
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListSMSSandboxPhoneNumbersResponse extends Response
 {

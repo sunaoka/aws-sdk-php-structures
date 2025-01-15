@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppConfig\UpdateExtension\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property bool $Required
- * @property bool $Dynamic
+ * @property string|null $Description
+ * @property bool|null $Required
+ * @property bool|null $Dynamic
  */
 class Parameter extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     Required?: bool,
-     *     Dynamic?: bool
+     *     Description?: string|null,
+     *     Required?: bool|null,
+     *     Dynamic?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

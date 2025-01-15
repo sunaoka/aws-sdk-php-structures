@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $botId
- * @property string $botName
+ * @property string|null $botName
  */
 class RecognizedBotMember extends Shape
 {
     /**
      * @param array{
      *     botId: string,
-     *     botName?: string
+     *     botName?: string|null
      * } $args
      */
     public function __construct(array $args)

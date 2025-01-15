@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HttpEndpoint
- * @property int $HttpPutResponseHopLimit
- * @property string $HttpTokens
+ * @property string|null $HttpEndpoint
+ * @property int|null $HttpPutResponseHopLimit
+ * @property string|null $HttpTokens
  */
 class AwsAutoScalingLaunchConfigurationMetadataOptions extends Shape
 {
     /**
      * @param array{
-     *     HttpEndpoint?: string,
-     *     HttpPutResponseHopLimit?: int,
-     *     HttpTokens?: string
+     *     HttpEndpoint?: string|null,
+     *     HttpPutResponseHopLimit?: int|null,
+     *     HttpTokens?: string|null
      * } $args
      */
     public function __construct(array $args = [])

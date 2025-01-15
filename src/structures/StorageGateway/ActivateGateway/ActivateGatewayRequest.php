@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GatewayName
  * @property string $GatewayTimezone
  * @property string $GatewayRegion
- * @property string $GatewayType
- * @property string $TapeDriveType
- * @property string $MediumChangerType
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $GatewayType
+ * @property string|null $TapeDriveType
+ * @property string|null $MediumChangerType
+ * @property list<Shapes\Tag>|null $Tags
  */
 class ActivateGatewayRequest extends Request
 {
@@ -22,10 +22,10 @@ class ActivateGatewayRequest extends Request
      *     GatewayName: string,
      *     GatewayTimezone: string,
      *     GatewayRegion: string,
-     *     GatewayType?: string,
-     *     TapeDriveType?: string,
-     *     MediumChangerType?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     GatewayType?: string|null,
+     *     TapeDriveType?: string|null,
+     *     MediumChangerType?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, AttributeValue> $Key
  * @property string $TableName
  * @property string $ConditionExpression
- * @property array<string, string> $ExpressionAttributeNames
- * @property array<string, AttributeValue> $ExpressionAttributeValues
- * @property 'ALL_OLD'|'NONE' $ReturnValuesOnConditionCheckFailure
+ * @property array<string, string>|null $ExpressionAttributeNames
+ * @property array<string, AttributeValue>|null $ExpressionAttributeValues
+ * @property 'ALL_OLD'|'NONE'|null $ReturnValuesOnConditionCheckFailure
  */
 class ConditionCheck extends Shape
 {
@@ -19,9 +19,9 @@ class ConditionCheck extends Shape
      *     Key: array<string, AttributeValue>,
      *     TableName: string,
      *     ConditionExpression: string,
-     *     ExpressionAttributeNames?: array<string, string>,
-     *     ExpressionAttributeValues?: array<string, AttributeValue>,
-     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'
+     *     ExpressionAttributeNames?: array<string, string>|null,
+     *     ExpressionAttributeValues?: array<string, AttributeValue>|null,
+     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

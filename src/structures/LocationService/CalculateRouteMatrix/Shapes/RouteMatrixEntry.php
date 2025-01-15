@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LocationService\CalculateRouteMatrix\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Distance
- * @property double $DurationSeconds
- * @property RouteMatrixEntryError $Error
+ * @property double|null $Distance
+ * @property double|null $DurationSeconds
+ * @property RouteMatrixEntryError|null $Error
  */
 class RouteMatrixEntry extends Shape
 {
     /**
      * @param array{
-     *     Distance?: double,
-     *     DurationSeconds?: double,
-     *     Error?: RouteMatrixEntryError
+     *     Distance?: double|null,
+     *     DurationSeconds?: double|null,
+     *     Error?: RouteMatrixEntryError|null
      * } $args
      */
     public function __construct(array $args = [])

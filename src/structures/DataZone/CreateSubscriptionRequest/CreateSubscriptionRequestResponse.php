@@ -7,18 +7,18 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property string $decisionComment
+ * @property string|null $decisionComment
  * @property string $domainId
- * @property string $existingSubscriptionId
+ * @property string|null $existingSubscriptionId
  * @property string $id
- * @property list<Shapes\FormOutput> $metadataForms
+ * @property list<Shapes\FormOutput>|null $metadataForms
  * @property string $requestReason
- * @property string $reviewerId
+ * @property string|null $reviewerId
  * @property 'PENDING'|'ACCEPTED'|'REJECTED' $status
  * @property list<Shapes\SubscribedListing> $subscribedListings
  * @property list<Shapes\SubscribedPrincipal> $subscribedPrincipals
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property string|null $updatedBy
  */
 class CreateSubscriptionRequestResponse extends Response
 {

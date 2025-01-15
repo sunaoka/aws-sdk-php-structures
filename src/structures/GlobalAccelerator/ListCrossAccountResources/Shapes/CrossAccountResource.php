@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\ListCrossAccountResources\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndpointId
- * @property string $Cidr
- * @property string $AttachmentArn
+ * @property string|null $EndpointId
+ * @property string|null $Cidr
+ * @property string|null $AttachmentArn
  */
 class CrossAccountResource extends Shape
 {
     /**
      * @param array{
-     *     EndpointId?: string,
-     *     Cidr?: string,
-     *     AttachmentArn?: string
+     *     EndpointId?: string|null,
+     *     Cidr?: string|null,
+     *     AttachmentArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CatalogName
  * @property string $DatabaseName
- * @property string $Expression
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
- * @property string $WorkGroup
+ * @property string|null $Expression
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $WorkGroup
  */
 class ListTableMetadataRequest extends Request
 {
@@ -18,10 +18,10 @@ class ListTableMetadataRequest extends Request
      * @param array{
      *     CatalogName: string,
      *     DatabaseName: string,
-     *     Expression?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>,
-     *     WorkGroup?: string
+     *     Expression?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     WorkGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

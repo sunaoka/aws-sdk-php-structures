@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\ListTargetsByRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Attempts
+ * @property int|null $Attempts
  */
 class BatchRetryStrategy extends Shape
 {
     /**
-     * @param array{Attempts?: int} $args
+     * @param array{Attempts?: int|null} $args
      */
     public function __construct(array $args = [])
     {

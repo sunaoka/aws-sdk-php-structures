@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $membershipIdentifier
  * @property string $name
  * @property string $trainedModelArn
- * @property string $configuredModelAlgorithmAssociationArn
+ * @property string|null $configuredModelAlgorithmAssociationArn
  * @property Shapes\InferenceResourceConfig $resourceConfig
  * @property Shapes\InferenceOutputConfiguration $outputConfiguration
  * @property Shapes\ModelInferenceDataSource $dataSource
- * @property string $description
- * @property Shapes\InferenceContainerExecutionParameters $containerExecutionParameters
- * @property array<string, string> $environment
- * @property string $kmsKeyArn
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property Shapes\InferenceContainerExecutionParameters|null $containerExecutionParameters
+ * @property array<string, string>|null $environment
+ * @property string|null $kmsKeyArn
+ * @property array<string, string>|null $tags
  */
 class StartTrainedModelInferenceJobRequest extends Request
 {
@@ -25,15 +25,15 @@ class StartTrainedModelInferenceJobRequest extends Request
      *     membershipIdentifier: string,
      *     name: string,
      *     trainedModelArn: string,
-     *     configuredModelAlgorithmAssociationArn?: string,
+     *     configuredModelAlgorithmAssociationArn?: string|null,
      *     resourceConfig: Shapes\InferenceResourceConfig,
      *     outputConfiguration: Shapes\InferenceOutputConfiguration,
      *     dataSource: Shapes\ModelInferenceDataSource,
-     *     description?: string,
-     *     containerExecutionParameters?: Shapes\InferenceContainerExecutionParameters,
-     *     environment?: array<string, string>,
-     *     kmsKeyArn?: string,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     containerExecutionParameters?: Shapes\InferenceContainerExecutionParameters|null,
+     *     environment?: array<string, string>|null,
+     *     kmsKeyArn?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

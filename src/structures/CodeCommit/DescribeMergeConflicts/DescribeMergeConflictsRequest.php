@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $destinationCommitSpecifier
  * @property string $sourceCommitSpecifier
  * @property 'FAST_FORWARD_MERGE'|'SQUASH_MERGE'|'THREE_WAY_MERGE' $mergeOption
- * @property int $maxMergeHunks
+ * @property int|null $maxMergeHunks
  * @property string $filePath
- * @property 'FILE_LEVEL'|'LINE_LEVEL' $conflictDetailLevel
- * @property 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE' $conflictResolutionStrategy
- * @property string $nextToken
+ * @property 'FILE_LEVEL'|'LINE_LEVEL'|null $conflictDetailLevel
+ * @property 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE'|null $conflictResolutionStrategy
+ * @property string|null $nextToken
  */
 class DescribeMergeConflictsRequest extends Request
 {
@@ -23,11 +23,11 @@ class DescribeMergeConflictsRequest extends Request
      *     destinationCommitSpecifier: string,
      *     sourceCommitSpecifier: string,
      *     mergeOption: 'FAST_FORWARD_MERGE'|'SQUASH_MERGE'|'THREE_WAY_MERGE',
-     *     maxMergeHunks?: int,
+     *     maxMergeHunks?: int|null,
      *     filePath: string,
-     *     conflictDetailLevel?: 'FILE_LEVEL'|'LINE_LEVEL',
-     *     conflictResolutionStrategy?: 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE',
-     *     nextToken?: string
+     *     conflictDetailLevel?: 'FILE_LEVEL'|'LINE_LEVEL'|null,
+     *     conflictResolutionStrategy?: 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE'|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

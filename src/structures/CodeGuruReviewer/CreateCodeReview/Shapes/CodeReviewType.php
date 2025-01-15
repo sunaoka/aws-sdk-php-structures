@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RepositoryAnalysis $RepositoryAnalysis
- * @property list<'Security'|'CodeQuality'> $AnalysisTypes
+ * @property list<'Security'|'CodeQuality'>|null $AnalysisTypes
  */
 class CodeReviewType extends Shape
 {
     /**
      * @param array{
      *     RepositoryAnalysis: RepositoryAnalysis,
-     *     AnalysisTypes?: list<'Security'|'CodeQuality'>
+     *     AnalysisTypes?: list<'Security'|'CodeQuality'>|null
      * } $args
      */
     public function __construct(array $args)

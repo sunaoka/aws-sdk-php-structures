@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RelationalTable $RelationalTable
- * @property CustomSql $CustomSql
- * @property S3Source $S3Source
+ * @property RelationalTable|null $RelationalTable
+ * @property CustomSql|null $CustomSql
+ * @property S3Source|null $S3Source
  */
 class PhysicalTable extends Shape
 {
     /**
      * @param array{
-     *     RelationalTable?: RelationalTable,
-     *     CustomSql?: CustomSql,
-     *     S3Source?: S3Source
+     *     RelationalTable?: RelationalTable|null,
+     *     CustomSql?: CustomSql|null,
+     *     S3Source?: S3Source|null
      * } $args
      */
     public function __construct(array $args = [])

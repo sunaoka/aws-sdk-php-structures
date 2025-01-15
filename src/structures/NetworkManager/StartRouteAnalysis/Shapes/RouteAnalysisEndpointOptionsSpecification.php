@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\StartRouteAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayAttachmentArn
- * @property string $IpAddress
+ * @property string|null $TransitGatewayAttachmentArn
+ * @property string|null $IpAddress
  */
 class RouteAnalysisEndpointOptionsSpecification extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayAttachmentArn?: string,
-     *     IpAddress?: string
+     *     TransitGatewayAttachmentArn?: string|null,
+     *     IpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

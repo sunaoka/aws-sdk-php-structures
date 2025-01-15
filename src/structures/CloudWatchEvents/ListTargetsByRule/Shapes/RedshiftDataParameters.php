@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\ListTargetsByRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecretManagerArn
+ * @property string|null $SecretManagerArn
  * @property string $Database
- * @property string $DbUser
+ * @property string|null $DbUser
  * @property string $Sql
- * @property string $StatementName
- * @property bool $WithEvent
+ * @property string|null $StatementName
+ * @property bool|null $WithEvent
  */
 class RedshiftDataParameters extends Shape
 {
     /**
      * @param array{
-     *     SecretManagerArn?: string,
+     *     SecretManagerArn?: string|null,
      *     Database: string,
-     *     DbUser?: string,
+     *     DbUser?: string|null,
      *     Sql: string,
-     *     StatementName?: string,
-     *     WithEvent?: bool
+     *     StatementName?: string|null,
+     *     WithEvent?: bool|null
      * } $args
      */
     public function __construct(array $args)

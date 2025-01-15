@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\StartEarthObservationJob\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Operation> $Operations
+ * @property list<Operation>|null $Operations
  */
 class CustomIndicesInput extends Shape
 {
     /**
-     * @param array{Operations?: list<Operation>} $args
+     * @param array{Operations?: list<Operation>|null} $args
      */
     public function __construct(array $args = [])
     {

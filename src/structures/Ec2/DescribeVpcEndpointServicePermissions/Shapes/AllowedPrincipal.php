@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcEndpointServicePermissions\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'All'|'Service'|'OrganizationUnit'|'Account'|'User'|'Role' $PrincipalType
- * @property string $Principal
- * @property string $ServicePermissionId
- * @property list<Tag> $Tags
- * @property string $ServiceId
+ * @property 'All'|'Service'|'OrganizationUnit'|'Account'|'User'|'Role'|null $PrincipalType
+ * @property string|null $Principal
+ * @property string|null $ServicePermissionId
+ * @property list<Tag>|null $Tags
+ * @property string|null $ServiceId
  */
 class AllowedPrincipal extends Shape
 {
     /**
      * @param array{
-     *     PrincipalType?: 'All'|'Service'|'OrganizationUnit'|'Account'|'User'|'Role',
-     *     Principal?: string,
-     *     ServicePermissionId?: string,
-     *     Tags?: list<Tag>,
-     *     ServiceId?: string
+     *     PrincipalType?: 'All'|'Service'|'OrganizationUnit'|'Account'|'User'|'Role'|null,
+     *     Principal?: string|null,
+     *     ServicePermissionId?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     ServiceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

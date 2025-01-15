@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Account\PutContactInformation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountId
+ * @property string|null $AccountId
  * @property Shapes\ContactInformation $ContactInformation
  */
 class PutContactInformationRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId?: string,
+     *     AccountId?: string|null,
      *     ContactInformation: Shapes\ContactInformation
      * } $args
      */

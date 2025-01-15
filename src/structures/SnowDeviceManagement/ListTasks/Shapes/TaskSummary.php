@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\ListTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IN_PROGRESS'|'CANCELED'|'COMPLETED' $state
- * @property array<string, string> $tags
- * @property string $taskArn
+ * @property 'IN_PROGRESS'|'CANCELED'|'COMPLETED'|null $state
+ * @property array<string, string>|null $tags
+ * @property string|null $taskArn
  * @property string $taskId
  */
 class TaskSummary extends Shape
 {
     /**
      * @param array{
-     *     state?: 'IN_PROGRESS'|'CANCELED'|'COMPLETED',
-     *     tags?: array<string, string>,
-     *     taskArn?: string,
+     *     state?: 'IN_PROGRESS'|'CANCELED'|'COMPLETED'|null,
+     *     tags?: array<string, string>|null,
+     *     taskArn?: string|null,
      *     taskId: string
      * } $args
      */

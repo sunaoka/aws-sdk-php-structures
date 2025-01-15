@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateDataMigration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataMigrationName
- * @property string $DataMigrationArn
- * @property \Aws\Api\DateTimeResult $DataMigrationCreateTime
- * @property \Aws\Api\DateTimeResult $DataMigrationStartTime
- * @property \Aws\Api\DateTimeResult $DataMigrationEndTime
- * @property string $ServiceAccessRoleArn
- * @property string $MigrationProjectArn
- * @property 'full-load'|'cdc'|'full-load-and-cdc' $DataMigrationType
- * @property DataMigrationSettings $DataMigrationSettings
- * @property list<SourceDataSetting> $SourceDataSettings
- * @property DataMigrationStatistics $DataMigrationStatistics
- * @property string $DataMigrationStatus
- * @property list<string> $PublicIpAddresses
- * @property list<string> $DataMigrationCidrBlocks
- * @property string $LastFailureMessage
- * @property string $StopReason
+ * @property string|null $DataMigrationName
+ * @property string|null $DataMigrationArn
+ * @property \Aws\Api\DateTimeResult|null $DataMigrationCreateTime
+ * @property \Aws\Api\DateTimeResult|null $DataMigrationStartTime
+ * @property \Aws\Api\DateTimeResult|null $DataMigrationEndTime
+ * @property string|null $ServiceAccessRoleArn
+ * @property string|null $MigrationProjectArn
+ * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $DataMigrationType
+ * @property DataMigrationSettings|null $DataMigrationSettings
+ * @property list<SourceDataSetting>|null $SourceDataSettings
+ * @property DataMigrationStatistics|null $DataMigrationStatistics
+ * @property string|null $DataMigrationStatus
+ * @property list<string>|null $PublicIpAddresses
+ * @property list<string>|null $DataMigrationCidrBlocks
+ * @property string|null $LastFailureMessage
+ * @property string|null $StopReason
  */
 class DataMigration extends Shape
 {
     /**
      * @param array{
-     *     DataMigrationName?: string,
-     *     DataMigrationArn?: string,
-     *     DataMigrationCreateTime?: \Aws\Api\DateTimeResult,
-     *     DataMigrationStartTime?: \Aws\Api\DateTimeResult,
-     *     DataMigrationEndTime?: \Aws\Api\DateTimeResult,
-     *     ServiceAccessRoleArn?: string,
-     *     MigrationProjectArn?: string,
-     *     DataMigrationType?: 'full-load'|'cdc'|'full-load-and-cdc',
-     *     DataMigrationSettings?: DataMigrationSettings,
-     *     SourceDataSettings?: list<SourceDataSetting>,
-     *     DataMigrationStatistics?: DataMigrationStatistics,
-     *     DataMigrationStatus?: string,
-     *     PublicIpAddresses?: list<string>,
-     *     DataMigrationCidrBlocks?: list<string>,
-     *     LastFailureMessage?: string,
-     *     StopReason?: string
+     *     DataMigrationName?: string|null,
+     *     DataMigrationArn?: string|null,
+     *     DataMigrationCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     DataMigrationStartTime?: \Aws\Api\DateTimeResult|null,
+     *     DataMigrationEndTime?: \Aws\Api\DateTimeResult|null,
+     *     ServiceAccessRoleArn?: string|null,
+     *     MigrationProjectArn?: string|null,
+     *     DataMigrationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
+     *     DataMigrationSettings?: DataMigrationSettings|null,
+     *     SourceDataSettings?: list<SourceDataSetting>|null,
+     *     DataMigrationStatistics?: DataMigrationStatistics|null,
+     *     DataMigrationStatus?: string|null,
+     *     PublicIpAddresses?: list<string>|null,
+     *     DataMigrationCidrBlocks?: list<string>|null,
+     *     LastFailureMessage?: string|null,
+     *     StopReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SnsChannelConfig $Sns
- * @property NotificationFilterConfig $Filters
+ * @property NotificationFilterConfig|null $Filters
  */
 class NotificationChannelConfig extends Shape
 {
     /**
      * @param array{
      *     Sns: SnsChannelConfig,
-     *     Filters?: NotificationFilterConfig
+     *     Filters?: NotificationFilterConfig|null
      * } $args
      */
     public function __construct(array $args)

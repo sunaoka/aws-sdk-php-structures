@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3BucketName
- * @property string $S3KeyPrefix
+ * @property string|null $S3KeyPrefix
  * @property string $S3Region
  */
 class LoggingInfo extends Shape
@@ -14,7 +14,7 @@ class LoggingInfo extends Shape
     /**
      * @param array{
      *     S3BucketName: string,
-     *     S3KeyPrefix?: string,
+     *     S3KeyPrefix?: string|null,
      *     S3Region: string
      * } $args
      */

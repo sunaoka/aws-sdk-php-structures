@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property float $Weight
- * @property SessionStickinessConfig $SessionStickinessConfig
+ * @property SessionStickinessConfig|null $SessionStickinessConfig
  */
 class ContinuousDeploymentSingleWeightConfig extends Shape
 {
     /**
      * @param array{
      *     Weight: float,
-     *     SessionStickinessConfig?: SessionStickinessConfig
+     *     SessionStickinessConfig?: SessionStickinessConfig|null
      * } $args
      */
     public function __construct(array $args)

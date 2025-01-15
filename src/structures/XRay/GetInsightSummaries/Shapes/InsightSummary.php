@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\XRay\GetInsightSummaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InsightId
- * @property string $GroupARN
- * @property string $GroupName
- * @property ServiceId $RootCauseServiceId
- * @property list<'FAULT'> $Categories
- * @property 'ACTIVE'|'CLOSED' $State
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $Summary
- * @property RequestImpactStatistics $ClientRequestImpactStatistics
- * @property RequestImpactStatistics $RootCauseServiceRequestImpactStatistics
- * @property list<AnomalousService> $TopAnomalousServices
- * @property \Aws\Api\DateTimeResult $LastUpdateTime
+ * @property string|null $InsightId
+ * @property string|null $GroupARN
+ * @property string|null $GroupName
+ * @property ServiceId|null $RootCauseServiceId
+ * @property list<'FAULT'>|null $Categories
+ * @property 'ACTIVE'|'CLOSED'|null $State
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $Summary
+ * @property RequestImpactStatistics|null $ClientRequestImpactStatistics
+ * @property RequestImpactStatistics|null $RootCauseServiceRequestImpactStatistics
+ * @property list<AnomalousService>|null $TopAnomalousServices
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateTime
  */
 class InsightSummary extends Shape
 {
     /**
      * @param array{
-     *     InsightId?: string,
-     *     GroupARN?: string,
-     *     GroupName?: string,
-     *     RootCauseServiceId?: ServiceId,
-     *     Categories?: list<'FAULT'>,
-     *     State?: 'ACTIVE'|'CLOSED',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Summary?: string,
-     *     ClientRequestImpactStatistics?: RequestImpactStatistics,
-     *     RootCauseServiceRequestImpactStatistics?: RequestImpactStatistics,
-     *     TopAnomalousServices?: list<AnomalousService>,
-     *     LastUpdateTime?: \Aws\Api\DateTimeResult
+     *     InsightId?: string|null,
+     *     GroupARN?: string|null,
+     *     GroupName?: string|null,
+     *     RootCauseServiceId?: ServiceId|null,
+     *     Categories?: list<'FAULT'>|null,
+     *     State?: 'ACTIVE'|'CLOSED'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Summary?: string|null,
+     *     ClientRequestImpactStatistics?: RequestImpactStatistics|null,
+     *     RootCauseServiceRequestImpactStatistics?: RequestImpactStatistics|null,
+     *     TopAnomalousServices?: list<AnomalousService>|null,
+     *     LastUpdateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

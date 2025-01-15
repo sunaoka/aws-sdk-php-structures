@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\UpdateProduct\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CodeStarParameters $CodeStar
+ * @property CodeStarParameters|null $CodeStar
  */
 class SourceConnectionParameters extends Shape
 {
     /**
-     * @param array{CodeStar?: CodeStarParameters} $args
+     * @param array{CodeStar?: CodeStarParameters|null} $args
      */
     public function __construct(array $args = [])
     {

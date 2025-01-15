@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateCapacityReservationFleet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AllocationStrategy
- * @property string $ClientToken
+ * @property string|null $AllocationStrategy
+ * @property string|null $ClientToken
  * @property list<Shapes\ReservationFleetInstanceSpecification> $InstanceTypeSpecifications
- * @property 'default' $Tenancy
+ * @property 'default'|null $Tenancy
  * @property int $TotalTargetCapacity
- * @property \Aws\Api\DateTimeResult $EndDate
- * @property 'open' $InstanceMatchCriteria
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
+ * @property \Aws\Api\DateTimeResult|null $EndDate
+ * @property 'open'|null $InstanceMatchCriteria
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
  */
 class CreateCapacityReservationFleetRequest extends Request
 {
     /**
      * @param array{
-     *     AllocationStrategy?: string,
-     *     ClientToken?: string,
+     *     AllocationStrategy?: string|null,
+     *     ClientToken?: string|null,
      *     InstanceTypeSpecifications: list<Shapes\ReservationFleetInstanceSpecification>,
-     *     Tenancy?: 'default',
+     *     Tenancy?: 'default'|null,
      *     TotalTargetCapacity: int,
-     *     EndDate?: \Aws\Api\DateTimeResult,
-     *     InstanceMatchCriteria?: 'open',
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool
+     *     EndDate?: \Aws\Api\DateTimeResult|null,
+     *     InstanceMatchCriteria?: 'open'|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

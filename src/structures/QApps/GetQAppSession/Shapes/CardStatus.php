@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'IN_PROGRESS'|'WAITING'|'COMPLETED'|'ERROR' $currentState
  * @property string $currentValue
- * @property list<Submission> $submissions
+ * @property list<Submission>|null $submissions
  */
 class CardStatus extends Shape
 {
@@ -15,7 +15,7 @@ class CardStatus extends Shape
      * @param array{
      *     currentState: 'IN_PROGRESS'|'WAITING'|'COMPLETED'|'ERROR',
      *     currentValue: string,
-     *     submissions?: list<Submission>
+     *     submissions?: list<Submission>|null
      * } $args
      */
     public function __construct(array $args)

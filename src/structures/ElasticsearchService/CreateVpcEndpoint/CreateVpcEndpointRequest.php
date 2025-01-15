@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainArn
  * @property Shapes\VPCOptions $VpcOptions
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class CreateVpcEndpointRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateVpcEndpointRequest extends Request
      * @param array{
      *     DomainArn: string,
      *     VpcOptions: Shapes\VPCOptions,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

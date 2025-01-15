@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $LinkedAccountIds
- * @property bool $AutoAssociate
+ * @property bool|null $AutoAssociate
  */
 class AccountGrouping extends Shape
 {
     /**
      * @param array{
      *     LinkedAccountIds: list<string>,
-     *     AutoAssociate?: bool
+     *     AutoAssociate?: bool|null
      * } $args
      */
     public function __construct(array $args)

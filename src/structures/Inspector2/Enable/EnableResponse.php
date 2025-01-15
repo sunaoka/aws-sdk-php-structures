@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Account> $accounts
- * @property list<Shapes\FailedAccount> $failedAccounts
+ * @property list<Shapes\FailedAccount>|null $failedAccounts
  */
 class EnableResponse extends Response
 {

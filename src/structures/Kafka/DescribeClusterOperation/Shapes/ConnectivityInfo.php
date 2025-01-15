@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterOperation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PublicAccess $PublicAccess
- * @property VpcConnectivity $VpcConnectivity
+ * @property PublicAccess|null $PublicAccess
+ * @property VpcConnectivity|null $VpcConnectivity
  */
 class ConnectivityInfo extends Shape
 {
     /**
      * @param array{
-     *     PublicAccess?: PublicAccess,
-     *     VpcConnectivity?: VpcConnectivity
+     *     PublicAccess?: PublicAccess|null,
+     *     VpcConnectivity?: VpcConnectivity|null
      * } $args
      */
     public function __construct(array $args = [])

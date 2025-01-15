@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Scheduler\GetSchedule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GroupName
+ * @property string|null $GroupName
  * @property string $Name
  */
 class GetScheduleRequest extends Request
 {
     /**
      * @param array{
-     *     GroupName?: string,
+     *     GroupName?: string|null,
      *     Name: string
      * } $args
      */

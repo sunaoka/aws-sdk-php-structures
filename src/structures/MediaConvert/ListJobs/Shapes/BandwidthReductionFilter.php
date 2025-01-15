@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'LOW'|'MEDIUM'|'HIGH'|'OFF' $Sharpening
- * @property 'LOW'|'MEDIUM'|'HIGH'|'AUTO'|'OFF' $Strength
+ * @property 'LOW'|'MEDIUM'|'HIGH'|'OFF'|null $Sharpening
+ * @property 'LOW'|'MEDIUM'|'HIGH'|'AUTO'|'OFF'|null $Strength
  */
 class BandwidthReductionFilter extends Shape
 {
     /**
      * @param array{
-     *     Sharpening?: 'LOW'|'MEDIUM'|'HIGH'|'OFF',
-     *     Strength?: 'LOW'|'MEDIUM'|'HIGH'|'AUTO'|'OFF'
+     *     Sharpening?: 'LOW'|'MEDIUM'|'HIGH'|'OFF'|null,
+     *     Strength?: 'LOW'|'MEDIUM'|'HIGH'|'AUTO'|'OFF'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property KinesisStreamsOutput $KinesisStreamsOutput
- * @property KinesisFirehoseOutput $KinesisFirehoseOutput
- * @property LambdaOutput $LambdaOutput
+ * @property KinesisStreamsOutput|null $KinesisStreamsOutput
+ * @property KinesisFirehoseOutput|null $KinesisFirehoseOutput
+ * @property LambdaOutput|null $LambdaOutput
  * @property DestinationSchema $DestinationSchema
  */
 class Output extends Shape
@@ -16,9 +16,9 @@ class Output extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     KinesisStreamsOutput?: KinesisStreamsOutput,
-     *     KinesisFirehoseOutput?: KinesisFirehoseOutput,
-     *     LambdaOutput?: LambdaOutput,
+     *     KinesisStreamsOutput?: KinesisStreamsOutput|null,
+     *     KinesisFirehoseOutput?: KinesisFirehoseOutput|null,
+     *     LambdaOutput?: LambdaOutput|null,
      *     DestinationSchema: DestinationSchema
      * } $args
      */

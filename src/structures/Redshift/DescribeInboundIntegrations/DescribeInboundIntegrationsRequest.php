@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeInboundIntegrations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $IntegrationArn
- * @property string $TargetArn
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $IntegrationArn
+ * @property string|null $TargetArn
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeInboundIntegrationsRequest extends Request
 {
     /**
      * @param array{
-     *     IntegrationArn?: string,
-     *     TargetArn?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     IntegrationArn?: string|null,
+     *     TargetArn?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

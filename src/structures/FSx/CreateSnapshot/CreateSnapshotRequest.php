@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FSx\CreateSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property string $Name
  * @property string $VolumeId
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     Name: string,
      *     VolumeId: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

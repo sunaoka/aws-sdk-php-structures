@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property string $DeliveryStream
+ * @property string|null $DeliveryStream
  */
 class VerifiedAccessLogKinesisDataFirehoseDestinationOptions extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     DeliveryStream?: string
+     *     DeliveryStream?: string|null
      * } $args
      */
     public function __construct(array $args)

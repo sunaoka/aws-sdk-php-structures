@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\GameLift\UpdateContainerFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FleetId
- * @property string $FleetArn
- * @property string $FleetRoleArn
- * @property string $GameServerContainerGroupDefinitionName
- * @property string $GameServerContainerGroupDefinitionArn
- * @property string $PerInstanceContainerGroupDefinitionName
- * @property string $PerInstanceContainerGroupDefinitionArn
- * @property ConnectionPortRange $InstanceConnectionPortRange
- * @property list<IpPermission> $InstanceInboundPermissions
- * @property int<1, 5000> $GameServerContainerGroupsPerInstance
- * @property int<1, 5000> $MaximumGameServerContainerGroupsPerInstance
- * @property string $InstanceType
- * @property 'ON_DEMAND'|'SPOT' $BillingType
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property list<string> $MetricGroups
- * @property 'NoProtection'|'FullProtection' $NewGameSessionProtectionPolicy
- * @property GameSessionCreationLimitPolicy $GameSessionCreationLimitPolicy
- * @property 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING' $Status
- * @property DeploymentDetails $DeploymentDetails
- * @property LogConfiguration $LogConfiguration
- * @property list<ContainerFleetLocationAttributes> $LocationAttributes
+ * @property string|null $FleetId
+ * @property string|null $FleetArn
+ * @property string|null $FleetRoleArn
+ * @property string|null $GameServerContainerGroupDefinitionName
+ * @property string|null $GameServerContainerGroupDefinitionArn
+ * @property string|null $PerInstanceContainerGroupDefinitionName
+ * @property string|null $PerInstanceContainerGroupDefinitionArn
+ * @property ConnectionPortRange|null $InstanceConnectionPortRange
+ * @property list<IpPermission>|null $InstanceInboundPermissions
+ * @property int<1, 5000>|null $GameServerContainerGroupsPerInstance
+ * @property int<1, 5000>|null $MaximumGameServerContainerGroupsPerInstance
+ * @property string|null $InstanceType
+ * @property 'ON_DEMAND'|'SPOT'|null $BillingType
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property list<string>|null $MetricGroups
+ * @property 'NoProtection'|'FullProtection'|null $NewGameSessionProtectionPolicy
+ * @property GameSessionCreationLimitPolicy|null $GameSessionCreationLimitPolicy
+ * @property 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|null $Status
+ * @property DeploymentDetails|null $DeploymentDetails
+ * @property LogConfiguration|null $LogConfiguration
+ * @property list<ContainerFleetLocationAttributes>|null $LocationAttributes
  */
 class ContainerFleet extends Shape
 {
     /**
      * @param array{
-     *     FleetId?: string,
-     *     FleetArn?: string,
-     *     FleetRoleArn?: string,
-     *     GameServerContainerGroupDefinitionName?: string,
-     *     GameServerContainerGroupDefinitionArn?: string,
-     *     PerInstanceContainerGroupDefinitionName?: string,
-     *     PerInstanceContainerGroupDefinitionArn?: string,
-     *     InstanceConnectionPortRange?: ConnectionPortRange,
-     *     InstanceInboundPermissions?: list<IpPermission>,
-     *     GameServerContainerGroupsPerInstance?: int<1, 5000>,
-     *     MaximumGameServerContainerGroupsPerInstance?: int<1, 5000>,
-     *     InstanceType?: string,
-     *     BillingType?: 'ON_DEMAND'|'SPOT',
-     *     Description?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     MetricGroups?: list<string>,
-     *     NewGameSessionProtectionPolicy?: 'NoProtection'|'FullProtection',
-     *     GameSessionCreationLimitPolicy?: GameSessionCreationLimitPolicy,
-     *     Status?: 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING',
-     *     DeploymentDetails?: DeploymentDetails,
-     *     LogConfiguration?: LogConfiguration,
-     *     LocationAttributes?: list<ContainerFleetLocationAttributes>
+     *     FleetId?: string|null,
+     *     FleetArn?: string|null,
+     *     FleetRoleArn?: string|null,
+     *     GameServerContainerGroupDefinitionName?: string|null,
+     *     GameServerContainerGroupDefinitionArn?: string|null,
+     *     PerInstanceContainerGroupDefinitionName?: string|null,
+     *     PerInstanceContainerGroupDefinitionArn?: string|null,
+     *     InstanceConnectionPortRange?: ConnectionPortRange|null,
+     *     InstanceInboundPermissions?: list<IpPermission>|null,
+     *     GameServerContainerGroupsPerInstance?: int<1, 5000>|null,
+     *     MaximumGameServerContainerGroupsPerInstance?: int<1, 5000>|null,
+     *     InstanceType?: string|null,
+     *     BillingType?: 'ON_DEMAND'|'SPOT'|null,
+     *     Description?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     MetricGroups?: list<string>|null,
+     *     NewGameSessionProtectionPolicy?: 'NoProtection'|'FullProtection'|null,
+     *     GameSessionCreationLimitPolicy?: GameSessionCreationLimitPolicy|null,
+     *     Status?: 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|null,
+     *     DeploymentDetails?: DeploymentDetails|null,
+     *     LogConfiguration?: LogConfiguration|null,
+     *     LocationAttributes?: list<ContainerFleetLocationAttributes>|null
      * } $args
      */
     public function __construct(array $args = [])

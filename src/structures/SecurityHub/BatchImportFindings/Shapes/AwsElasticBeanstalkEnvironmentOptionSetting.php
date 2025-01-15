@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Namespace
- * @property string $OptionName
- * @property string $ResourceName
- * @property string $Value
+ * @property string|null $Namespace
+ * @property string|null $OptionName
+ * @property string|null $ResourceName
+ * @property string|null $Value
  */
 class AwsElasticBeanstalkEnvironmentOptionSetting extends Shape
 {
     /**
      * @param array{
-     *     Namespace?: string,
-     *     OptionName?: string,
-     *     ResourceName?: string,
-     *     Value?: string
+     *     Namespace?: string|null,
+     *     OptionName?: string|null,
+     *     ResourceName?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

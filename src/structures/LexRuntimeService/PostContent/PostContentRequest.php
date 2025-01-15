@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botName
  * @property string $botAlias
  * @property string $userId
- * @property string $sessionAttributes
- * @property string $requestAttributes
+ * @property string|null $sessionAttributes
+ * @property string|null $requestAttributes
  * @property string $contentType
- * @property string $accept
+ * @property string|null $accept
  * @property string|resource|\Psr\Http\Message\StreamInterface $inputStream
- * @property string $activeContexts
+ * @property string|null $activeContexts
  */
 class PostContentRequest extends Request
 {
@@ -22,12 +22,12 @@ class PostContentRequest extends Request
      *     botName: string,
      *     botAlias: string,
      *     userId: string,
-     *     sessionAttributes?: string,
-     *     requestAttributes?: string,
+     *     sessionAttributes?: string|null,
+     *     requestAttributes?: string|null,
      *     contentType: string,
-     *     accept?: string,
+     *     accept?: string|null,
      *     inputStream: string|resource|\Psr\Http\Message\StreamInterface,
-     *     activeContexts?: string
+     *     activeContexts?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UserName
- * @property string $NewPath
- * @property string $NewUserName
+ * @property string|null $NewPath
+ * @property string|null $NewUserName
  */
 class UpdateUserRequest extends Request
 {
     /**
      * @param array{
      *     UserName: string,
-     *     NewPath?: string,
-     *     NewUserName?: string
+     *     NewPath?: string|null,
+     *     NewUserName?: string|null
      * } $args
      */
     public function __construct(array $args)

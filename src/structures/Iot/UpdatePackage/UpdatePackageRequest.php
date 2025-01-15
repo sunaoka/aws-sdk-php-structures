@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $packageName
- * @property string $description
- * @property string $defaultVersionName
- * @property bool $unsetDefaultVersion
- * @property string $clientToken
+ * @property string|null $description
+ * @property string|null $defaultVersionName
+ * @property bool|null $unsetDefaultVersion
+ * @property string|null $clientToken
  */
 class UpdatePackageRequest extends Request
 {
     /**
      * @param array{
      *     packageName: string,
-     *     description?: string,
-     *     defaultVersionName?: string,
-     *     unsetDefaultVersion?: bool,
-     *     clientToken?: string
+     *     description?: string|null,
+     *     defaultVersionName?: string|null,
+     *     unsetDefaultVersion?: bool|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

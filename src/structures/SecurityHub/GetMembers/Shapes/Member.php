@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetMembers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $Email
- * @property string $MasterId
- * @property string $AdministratorId
- * @property string $MemberStatus
- * @property \Aws\Api\DateTimeResult $InvitedAt
- * @property \Aws\Api\DateTimeResult $UpdatedAt
+ * @property string|null $AccountId
+ * @property string|null $Email
+ * @property string|null $MasterId
+ * @property string|null $AdministratorId
+ * @property string|null $MemberStatus
+ * @property \Aws\Api\DateTimeResult|null $InvitedAt
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
 class Member extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     Email?: string,
-     *     MasterId?: string,
-     *     AdministratorId?: string,
-     *     MemberStatus?: string,
-     *     InvitedAt?: \Aws\Api\DateTimeResult,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult
+     *     AccountId?: string|null,
+     *     Email?: string|null,
+     *     MasterId?: string|null,
+     *     AdministratorId?: string|null,
+     *     MemberStatus?: string|null,
+     *     InvitedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

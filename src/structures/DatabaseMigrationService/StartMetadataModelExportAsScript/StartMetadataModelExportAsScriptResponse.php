@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\StartMetadataModelExpo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RequestIdentifier
+ * @property string|null $RequestIdentifier
  */
 class StartMetadataModelExportAsScriptResponse extends Response
 {

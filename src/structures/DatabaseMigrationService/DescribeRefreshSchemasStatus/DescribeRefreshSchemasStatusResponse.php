@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRefreshSchemas
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RefreshSchemasStatus $RefreshSchemasStatus
+ * @property Shapes\RefreshSchemasStatus|null $RefreshSchemasStatus
  */
 class DescribeRefreshSchemasStatusResponse extends Response
 {

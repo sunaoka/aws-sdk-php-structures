@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\ListPackagesForDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PackageID
- * @property string $PackageName
- * @property 'TXT-DICTIONARY'|'ZIP-PLUGIN'|'PACKAGE-LICENSE'|'PACKAGE-CONFIG' $PackageType
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property string $DomainName
- * @property 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED' $DomainPackageStatus
- * @property string $PackageVersion
- * @property list<string> $PrerequisitePackageIDList
- * @property string $ReferencePath
- * @property ErrorDetails $ErrorDetails
- * @property PackageAssociationConfiguration $AssociationConfiguration
+ * @property string|null $PackageID
+ * @property string|null $PackageName
+ * @property 'TXT-DICTIONARY'|'ZIP-PLUGIN'|'PACKAGE-LICENSE'|'PACKAGE-CONFIG'|null $PackageType
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property string|null $DomainName
+ * @property 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED'|null $DomainPackageStatus
+ * @property string|null $PackageVersion
+ * @property list<string>|null $PrerequisitePackageIDList
+ * @property string|null $ReferencePath
+ * @property ErrorDetails|null $ErrorDetails
+ * @property PackageAssociationConfiguration|null $AssociationConfiguration
  */
 class DomainPackageDetails extends Shape
 {
     /**
      * @param array{
-     *     PackageID?: string,
-     *     PackageName?: string,
-     *     PackageType?: 'TXT-DICTIONARY'|'ZIP-PLUGIN'|'PACKAGE-LICENSE'|'PACKAGE-CONFIG',
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     DomainName?: string,
-     *     DomainPackageStatus?: 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED',
-     *     PackageVersion?: string,
-     *     PrerequisitePackageIDList?: list<string>,
-     *     ReferencePath?: string,
-     *     ErrorDetails?: ErrorDetails,
-     *     AssociationConfiguration?: PackageAssociationConfiguration
+     *     PackageID?: string|null,
+     *     PackageName?: string|null,
+     *     PackageType?: 'TXT-DICTIONARY'|'ZIP-PLUGIN'|'PACKAGE-LICENSE'|'PACKAGE-CONFIG'|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     DomainName?: string|null,
+     *     DomainPackageStatus?: 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED'|null,
+     *     PackageVersion?: string|null,
+     *     PrerequisitePackageIDList?: list<string>|null,
+     *     ReferencePath?: string|null,
+     *     ErrorDetails?: ErrorDetails|null,
+     *     AssociationConfiguration?: PackageAssociationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

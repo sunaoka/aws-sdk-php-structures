@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property 'US' $CountryCode
+ * @property 'US'|null $CountryCode
  * @property list<string> $Columns
  */
 class GeoSpatialColumnGroup extends Shape
@@ -14,7 +14,7 @@ class GeoSpatialColumnGroup extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     CountryCode?: 'US',
+     *     CountryCode?: 'US'|null,
      *     Columns: list<string>
      * } $args
      */

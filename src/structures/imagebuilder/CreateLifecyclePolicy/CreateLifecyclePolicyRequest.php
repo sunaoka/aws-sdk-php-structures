@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property 'DISABLED'|'ENABLED' $status
+ * @property string|null $description
+ * @property 'DISABLED'|'ENABLED'|null $status
  * @property string $executionRole
  * @property 'AMI_IMAGE'|'CONTAINER_IMAGE' $resourceType
  * @property list<Shapes\LifecyclePolicyDetail> $policyDetails
  * @property Shapes\LifecyclePolicyResourceSelection $resourceSelection
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $clientToken
  */
 class CreateLifecyclePolicyRequest extends Request
@@ -20,13 +20,13 @@ class CreateLifecyclePolicyRequest extends Request
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     status?: 'DISABLED'|'ENABLED',
+     *     description?: string|null,
+     *     status?: 'DISABLED'|'ENABLED'|null,
      *     executionRole: string,
      *     resourceType: 'AMI_IMAGE'|'CONTAINER_IMAGE',
      *     policyDetails: list<Shapes\LifecyclePolicyDetail>,
      *     resourceSelection: Shapes\LifecyclePolicyResourceSelection,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     clientToken: string
      * } $args
      */

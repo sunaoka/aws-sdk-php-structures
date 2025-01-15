@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\KinesisVideoSignalingChannels\SendAlexaOfferToM
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Answer
+ * @property string|null $Answer
  */
 class SendAlexaOfferToMasterResponse extends Response
 {

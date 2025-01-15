@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property string $Name
  * @property EncryptionEntities $EncryptionEntities
- * @property string $Comment
+ * @property string|null $Comment
  */
 class FieldLevelEncryptionProfileSummary extends Shape
 {
@@ -19,7 +19,7 @@ class FieldLevelEncryptionProfileSummary extends Shape
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     Name: string,
      *     EncryptionEntities: EncryptionEntities,
-     *     Comment?: string
+     *     Comment?: string|null
      * } $args
      */
     public function __construct(array $args)

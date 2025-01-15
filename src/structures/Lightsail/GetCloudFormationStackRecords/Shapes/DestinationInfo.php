@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetCloudFormationStackRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $service
+ * @property string|null $id
+ * @property string|null $service
  */
 class DestinationInfo extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     service?: string
+     *     id?: string|null,
+     *     service?: string|null
      * } $args
      */
     public function __construct(array $args = [])

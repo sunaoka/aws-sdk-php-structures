@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $messageId
  * @property string $detectorModelName
- * @property string $keyValue
+ * @property string|null $keyValue
  */
 class DeleteDetectorRequest extends Shape
 {
@@ -15,7 +15,7 @@ class DeleteDetectorRequest extends Shape
      * @param array{
      *     messageId: string,
      *     detectorModelName: string,
-     *     keyValue?: string
+     *     keyValue?: string|null
      * } $args
      */
     public function __construct(array $args)

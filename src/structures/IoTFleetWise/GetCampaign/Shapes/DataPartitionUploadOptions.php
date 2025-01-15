@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $expression
- * @property int<1, 1> $conditionLanguageVersion
+ * @property int<1, 1>|null $conditionLanguageVersion
  */
 class DataPartitionUploadOptions extends Shape
 {
     /**
      * @param array{
      *     expression: string,
-     *     conditionLanguageVersion?: int<1, 1>
+     *     conditionLanguageVersion?: int<1, 1>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RetrievalFilter> $andAll
- * @property FilterAttribute $equals
- * @property FilterAttribute $greaterThan
- * @property FilterAttribute $greaterThanOrEquals
- * @property FilterAttribute $in
- * @property FilterAttribute $lessThan
- * @property FilterAttribute $lessThanOrEquals
- * @property FilterAttribute $listContains
- * @property FilterAttribute $notEquals
- * @property FilterAttribute $notIn
- * @property list<RetrievalFilter> $orAll
- * @property FilterAttribute $startsWith
- * @property FilterAttribute $stringContains
+ * @property list<RetrievalFilter>|null $andAll
+ * @property FilterAttribute|null $equals
+ * @property FilterAttribute|null $greaterThan
+ * @property FilterAttribute|null $greaterThanOrEquals
+ * @property FilterAttribute|null $in
+ * @property FilterAttribute|null $lessThan
+ * @property FilterAttribute|null $lessThanOrEquals
+ * @property FilterAttribute|null $listContains
+ * @property FilterAttribute|null $notEquals
+ * @property FilterAttribute|null $notIn
+ * @property list<RetrievalFilter>|null $orAll
+ * @property FilterAttribute|null $startsWith
+ * @property FilterAttribute|null $stringContains
  */
 class RetrievalFilter extends Shape
 {
     /**
      * @param array{
-     *     andAll?: list<RetrievalFilter>,
-     *     equals?: FilterAttribute,
-     *     greaterThan?: FilterAttribute,
-     *     greaterThanOrEquals?: FilterAttribute,
-     *     in?: FilterAttribute,
-     *     lessThan?: FilterAttribute,
-     *     lessThanOrEquals?: FilterAttribute,
-     *     listContains?: FilterAttribute,
-     *     notEquals?: FilterAttribute,
-     *     notIn?: FilterAttribute,
-     *     orAll?: list<RetrievalFilter>,
-     *     startsWith?: FilterAttribute,
-     *     stringContains?: FilterAttribute
+     *     andAll?: list<RetrievalFilter>|null,
+     *     equals?: FilterAttribute|null,
+     *     greaterThan?: FilterAttribute|null,
+     *     greaterThanOrEquals?: FilterAttribute|null,
+     *     in?: FilterAttribute|null,
+     *     lessThan?: FilterAttribute|null,
+     *     lessThanOrEquals?: FilterAttribute|null,
+     *     listContains?: FilterAttribute|null,
+     *     notEquals?: FilterAttribute|null,
+     *     notIn?: FilterAttribute|null,
+     *     orAll?: list<RetrievalFilter>|null,
+     *     startsWith?: FilterAttribute|null,
+     *     stringContains?: FilterAttribute|null
      * } $args
      */
     public function __construct(array $args = [])

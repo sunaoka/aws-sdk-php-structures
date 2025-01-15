@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContentType
- * @property string $Content
- * @property string $ClientToken
+ * @property string|null $Content
+ * @property string|null $ClientToken
  * @property string $ConnectionToken
  */
 class SendEventRequest extends Request
@@ -15,8 +15,8 @@ class SendEventRequest extends Request
     /**
      * @param array{
      *     ContentType: string,
-     *     Content?: string,
-     *     ClientToken?: string,
+     *     Content?: string|null,
+     *     ClientToken?: string|null,
      *     ConnectionToken: string
      * } $args
      */

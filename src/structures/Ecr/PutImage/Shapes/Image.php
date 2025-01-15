@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ecr\PutImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $registryId
- * @property string $repositoryName
- * @property ImageIdentifier $imageId
- * @property string $imageManifest
- * @property string $imageManifestMediaType
+ * @property string|null $registryId
+ * @property string|null $repositoryName
+ * @property ImageIdentifier|null $imageId
+ * @property string|null $imageManifest
+ * @property string|null $imageManifestMediaType
  */
 class Image extends Shape
 {
     /**
      * @param array{
-     *     registryId?: string,
-     *     repositoryName?: string,
-     *     imageId?: ImageIdentifier,
-     *     imageManifest?: string,
-     *     imageManifestMediaType?: string
+     *     registryId?: string|null,
+     *     repositoryName?: string|null,
+     *     imageId?: ImageIdentifier|null,
+     *     imageManifest?: string|null,
+     *     imageManifestMediaType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

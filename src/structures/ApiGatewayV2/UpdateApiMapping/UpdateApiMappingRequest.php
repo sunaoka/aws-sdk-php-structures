@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApiId
  * @property string $ApiMappingId
- * @property string $ApiMappingKey
+ * @property string|null $ApiMappingKey
  * @property string $DomainName
- * @property string $Stage
+ * @property string|null $Stage
  */
 class UpdateApiMappingRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateApiMappingRequest extends Request
      * @param array{
      *     ApiId: string,
      *     ApiMappingId: string,
-     *     ApiMappingKey?: string,
+     *     ApiMappingKey?: string|null,
      *     DomainName: string,
-     *     Stage?: string
+     *     Stage?: string|null
      * } $args
      */
     public function __construct(array $args)

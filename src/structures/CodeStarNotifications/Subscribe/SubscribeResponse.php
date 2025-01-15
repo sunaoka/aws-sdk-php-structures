@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeStarNotifications\Subscribe;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  */
 class SubscribeResponse extends Response
 {

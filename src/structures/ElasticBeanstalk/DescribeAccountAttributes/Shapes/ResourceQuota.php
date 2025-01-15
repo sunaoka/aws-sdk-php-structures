@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeAccountAttributes\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Maximum
+ * @property int|null $Maximum
  */
 class ResourceQuota extends Shape
 {
     /**
-     * @param array{Maximum?: int} $args
+     * @param array{Maximum?: int|null} $args
      */
     public function __construct(array $args = [])
     {

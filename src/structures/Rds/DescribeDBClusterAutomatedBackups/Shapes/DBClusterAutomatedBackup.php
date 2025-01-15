@@ -5,61 +5,61 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBClusterAutomatedBackups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Engine
- * @property string $VpcId
- * @property string $DBClusterAutomatedBackupsArn
- * @property string $DBClusterIdentifier
- * @property RestoreWindow $RestoreWindow
- * @property string $MasterUsername
- * @property string $DbClusterResourceId
- * @property string $Region
- * @property string $LicenseModel
- * @property string $Status
- * @property bool $IAMDatabaseAuthenticationEnabled
- * @property \Aws\Api\DateTimeResult $ClusterCreateTime
- * @property bool $StorageEncrypted
- * @property int $AllocatedStorage
- * @property string $EngineVersion
- * @property string $DBClusterArn
- * @property int $BackupRetentionPeriod
- * @property string $EngineMode
- * @property list<string> $AvailabilityZones
- * @property int $Port
- * @property string $KmsKeyId
- * @property string $StorageType
- * @property int $Iops
- * @property string $AwsBackupRecoveryPointArn
- * @property int $StorageThroughput
+ * @property string|null $Engine
+ * @property string|null $VpcId
+ * @property string|null $DBClusterAutomatedBackupsArn
+ * @property string|null $DBClusterIdentifier
+ * @property RestoreWindow|null $RestoreWindow
+ * @property string|null $MasterUsername
+ * @property string|null $DbClusterResourceId
+ * @property string|null $Region
+ * @property string|null $LicenseModel
+ * @property string|null $Status
+ * @property bool|null $IAMDatabaseAuthenticationEnabled
+ * @property \Aws\Api\DateTimeResult|null $ClusterCreateTime
+ * @property bool|null $StorageEncrypted
+ * @property int|null $AllocatedStorage
+ * @property string|null $EngineVersion
+ * @property string|null $DBClusterArn
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $EngineMode
+ * @property list<string>|null $AvailabilityZones
+ * @property int|null $Port
+ * @property string|null $KmsKeyId
+ * @property string|null $StorageType
+ * @property int|null $Iops
+ * @property string|null $AwsBackupRecoveryPointArn
+ * @property int|null $StorageThroughput
  */
 class DBClusterAutomatedBackup extends Shape
 {
     /**
      * @param array{
-     *     Engine?: string,
-     *     VpcId?: string,
-     *     DBClusterAutomatedBackupsArn?: string,
-     *     DBClusterIdentifier?: string,
-     *     RestoreWindow?: RestoreWindow,
-     *     MasterUsername?: string,
-     *     DbClusterResourceId?: string,
-     *     Region?: string,
-     *     LicenseModel?: string,
-     *     Status?: string,
-     *     IAMDatabaseAuthenticationEnabled?: bool,
-     *     ClusterCreateTime?: \Aws\Api\DateTimeResult,
-     *     StorageEncrypted?: bool,
-     *     AllocatedStorage?: int,
-     *     EngineVersion?: string,
-     *     DBClusterArn?: string,
-     *     BackupRetentionPeriod?: int,
-     *     EngineMode?: string,
-     *     AvailabilityZones?: list<string>,
-     *     Port?: int,
-     *     KmsKeyId?: string,
-     *     StorageType?: string,
-     *     Iops?: int,
-     *     AwsBackupRecoveryPointArn?: string,
-     *     StorageThroughput?: int
+     *     Engine?: string|null,
+     *     VpcId?: string|null,
+     *     DBClusterAutomatedBackupsArn?: string|null,
+     *     DBClusterIdentifier?: string|null,
+     *     RestoreWindow?: RestoreWindow|null,
+     *     MasterUsername?: string|null,
+     *     DbClusterResourceId?: string|null,
+     *     Region?: string|null,
+     *     LicenseModel?: string|null,
+     *     Status?: string|null,
+     *     IAMDatabaseAuthenticationEnabled?: bool|null,
+     *     ClusterCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     StorageEncrypted?: bool|null,
+     *     AllocatedStorage?: int|null,
+     *     EngineVersion?: string|null,
+     *     DBClusterArn?: string|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     EngineMode?: string|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     Port?: int|null,
+     *     KmsKeyId?: string|null,
+     *     StorageType?: string|null,
+     *     Iops?: int|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
+     *     StorageThroughput?: int|null
      * } $args
      */
     public function __construct(array $args = [])

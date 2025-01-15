@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MediaConnect\RemoveFlowVpcInterface;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FlowArn
- * @property list<string> $NonDeletedNetworkInterfaceIds
- * @property string $VpcInterfaceName
+ * @property string|null $FlowArn
+ * @property list<string>|null $NonDeletedNetworkInterfaceIds
+ * @property string|null $VpcInterfaceName
  */
 class RemoveFlowVpcInterfaceResponse extends Response
 {

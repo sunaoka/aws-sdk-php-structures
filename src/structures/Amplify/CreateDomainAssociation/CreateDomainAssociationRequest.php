@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appId
  * @property string $domainName
- * @property bool $enableAutoSubDomain
+ * @property bool|null $enableAutoSubDomain
  * @property list<Shapes\SubDomainSetting> $subDomainSettings
- * @property list<string> $autoSubDomainCreationPatterns
- * @property string $autoSubDomainIAMRole
- * @property Shapes\CertificateSettings $certificateSettings
+ * @property list<string>|null $autoSubDomainCreationPatterns
+ * @property string|null $autoSubDomainIAMRole
+ * @property Shapes\CertificateSettings|null $certificateSettings
  */
 class CreateDomainAssociationRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateDomainAssociationRequest extends Request
      * @param array{
      *     appId: string,
      *     domainName: string,
-     *     enableAutoSubDomain?: bool,
+     *     enableAutoSubDomain?: bool|null,
      *     subDomainSettings: list<Shapes\SubDomainSetting>,
-     *     autoSubDomainCreationPatterns?: list<string>,
-     *     autoSubDomainIAMRole?: string,
-     *     certificateSettings?: Shapes\CertificateSettings
+     *     autoSubDomainCreationPatterns?: list<string>|null,
+     *     autoSubDomainIAMRole?: string|null,
+     *     certificateSettings?: Shapes\CertificateSettings|null
      * } $args
      */
     public function __construct(array $args)

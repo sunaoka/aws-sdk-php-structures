@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetOriginRequestPolicyConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Comment
+ * @property string|null $Comment
  * @property string $Name
  * @property OriginRequestPolicyHeadersConfig $HeadersConfig
  * @property OriginRequestPolicyCookiesConfig $CookiesConfig
@@ -15,7 +15,7 @@ class OriginRequestPolicyConfig extends Shape
 {
     /**
      * @param array{
-     *     Comment?: string,
+     *     Comment?: string|null,
      *     Name: string,
      *     HeadersConfig: OriginRequestPolicyHeadersConfig,
      *     CookiesConfig: OriginRequestPolicyCookiesConfig,

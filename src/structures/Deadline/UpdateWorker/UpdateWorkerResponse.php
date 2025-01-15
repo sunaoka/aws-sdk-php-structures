@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateWorker;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\LogConfiguration $log
+ * @property Shapes\LogConfiguration|null $log
  */
 class UpdateWorkerResponse extends Response
 {

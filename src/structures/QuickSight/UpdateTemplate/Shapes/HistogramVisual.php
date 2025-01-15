@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VisualId
- * @property VisualTitleLabelOptions $Title
- * @property VisualSubtitleLabelOptions $Subtitle
- * @property HistogramConfiguration $ChartConfiguration
- * @property list<VisualCustomAction> $Actions
- * @property string $VisualContentAltText
+ * @property VisualTitleLabelOptions|null $Title
+ * @property VisualSubtitleLabelOptions|null $Subtitle
+ * @property HistogramConfiguration|null $ChartConfiguration
+ * @property list<VisualCustomAction>|null $Actions
+ * @property string|null $VisualContentAltText
  */
 class HistogramVisual extends Shape
 {
     /**
      * @param array{
      *     VisualId: string,
-     *     Title?: VisualTitleLabelOptions,
-     *     Subtitle?: VisualSubtitleLabelOptions,
-     *     ChartConfiguration?: HistogramConfiguration,
-     *     Actions?: list<VisualCustomAction>,
-     *     VisualContentAltText?: string
+     *     Title?: VisualTitleLabelOptions|null,
+     *     Subtitle?: VisualSubtitleLabelOptions|null,
+     *     ChartConfiguration?: HistogramConfiguration|null,
+     *     Actions?: list<VisualCustomAction>|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

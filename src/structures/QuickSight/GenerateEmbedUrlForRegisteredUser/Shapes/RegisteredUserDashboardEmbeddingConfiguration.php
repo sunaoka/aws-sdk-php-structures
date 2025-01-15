@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InitialDashboardId
- * @property RegisteredUserDashboardFeatureConfigurations $FeatureConfigurations
+ * @property RegisteredUserDashboardFeatureConfigurations|null $FeatureConfigurations
  */
 class RegisteredUserDashboardEmbeddingConfiguration extends Shape
 {
     /**
      * @param array{
      *     InitialDashboardId: string,
-     *     FeatureConfigurations?: RegisteredUserDashboardFeatureConfigurations
+     *     FeatureConfigurations?: RegisteredUserDashboardFeatureConfigurations|null
      * } $args
      */
     public function __construct(array $args)

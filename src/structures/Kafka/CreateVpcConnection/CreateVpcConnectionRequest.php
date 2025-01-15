@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VpcId
  * @property list<string> $ClientSubnets
  * @property list<string> $SecurityGroups
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateVpcConnectionRequest extends Request
 {
@@ -21,7 +21,7 @@ class CreateVpcConnectionRequest extends Request
      *     VpcId: string,
      *     ClientSubnets: list<string>,
      *     SecurityGroups: list<string>,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $principal
- * @property 'EXCLUSIVE_THING'|'NON_EXCLUSIVE_THING' $thingPrincipalType
+ * @property 'EXCLUSIVE_THING'|'NON_EXCLUSIVE_THING'|null $thingPrincipalType
  */
 class ThingPrincipalObject extends Shape
 {
     /**
      * @param array{
      *     principal: string,
-     *     thingPrincipalType?: 'EXCLUSIVE_THING'|'NON_EXCLUSIVE_THING'
+     *     thingPrincipalType?: 'EXCLUSIVE_THING'|'NON_EXCLUSIVE_THING'|null
      * } $args
      */
     public function __construct(array $args)

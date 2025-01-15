@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Source
  * @property list<Shapes\Destination> $Destinations
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateChannelRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateChannelRequest extends Request
      *     Name: string,
      *     Source: string,
      *     Destinations: list<Shapes\Destination>,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

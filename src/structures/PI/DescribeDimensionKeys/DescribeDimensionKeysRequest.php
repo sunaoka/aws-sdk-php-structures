@@ -10,13 +10,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property string $Metric
- * @property int $PeriodInSeconds
+ * @property int|null $PeriodInSeconds
  * @property Shapes\DimensionGroup $GroupBy
- * @property list<string> $AdditionalMetrics
- * @property Shapes\DimensionGroup $PartitionBy
- * @property array<string, string> $Filter
- * @property int<0, 25> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $AdditionalMetrics
+ * @property Shapes\DimensionGroup|null $PartitionBy
+ * @property array<string, string>|null $Filter
+ * @property int<0, 25>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeDimensionKeysRequest extends Request
 {
@@ -27,13 +27,13 @@ class DescribeDimensionKeysRequest extends Request
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
      *     Metric: string,
-     *     PeriodInSeconds?: int,
+     *     PeriodInSeconds?: int|null,
      *     GroupBy: Shapes\DimensionGroup,
-     *     AdditionalMetrics?: list<string>,
-     *     PartitionBy?: Shapes\DimensionGroup,
-     *     Filter?: array<string, string>,
-     *     MaxResults?: int<0, 25>,
-     *     NextToken?: string
+     *     AdditionalMetrics?: list<string>|null,
+     *     PartitionBy?: Shapes\DimensionGroup|null,
+     *     Filter?: array<string, string>|null,
+     *     MaxResults?: int<0, 25>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

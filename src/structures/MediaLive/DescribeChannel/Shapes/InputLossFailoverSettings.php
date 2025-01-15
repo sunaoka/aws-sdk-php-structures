@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<100, max> $InputLossThresholdMsec
+ * @property int<100, max>|null $InputLossThresholdMsec
  */
 class InputLossFailoverSettings extends Shape
 {
     /**
-     * @param array{InputLossThresholdMsec?: int<100, max>} $args
+     * @param array{InputLossThresholdMsec?: int<100, max>|null} $args
      */
     public function __construct(array $args = [])
     {

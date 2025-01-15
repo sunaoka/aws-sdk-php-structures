@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkDocs\GetResources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
- * @property string $UserId
- * @property 'SHARED_WITH_ME' $CollectionType
- * @property int<1, 999> $Limit
- * @property string $Marker
+ * @property string|null $AuthenticationToken
+ * @property string|null $UserId
+ * @property 'SHARED_WITH_ME'|null $CollectionType
+ * @property int<1, 999>|null $Limit
+ * @property string|null $Marker
  */
 class GetResourcesRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
-     *     UserId?: string,
-     *     CollectionType?: 'SHARED_WITH_ME',
-     *     Limit?: int<1, 999>,
-     *     Marker?: string
+     *     AuthenticationToken?: string|null,
+     *     UserId?: string|null,
+     *     CollectionType?: 'SHARED_WITH_ME'|null,
+     *     Limit?: int<1, 999>|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

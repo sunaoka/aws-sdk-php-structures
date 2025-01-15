@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\BatchDeletePartition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property string $TableName
  * @property list<Shapes\PartitionValueList> $PartitionsToDelete
@@ -14,7 +14,7 @@ class BatchDeletePartitionRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TableName: string,
      *     PartitionsToDelete: list<Shapes\PartitionValueList>

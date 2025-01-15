@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $MulticastIp
- * @property MulticastSourceSettings $MulticastSourceSettings
+ * @property MulticastSourceSettings|null $MulticastSourceSettings
  * @property string $Name
  * @property string $NetworkName
  * @property int $Port
@@ -17,7 +17,7 @@ class BridgeNetworkSource extends Shape
     /**
      * @param array{
      *     MulticastIp: string,
-     *     MulticastSourceSettings?: MulticastSourceSettings,
+     *     MulticastSourceSettings?: MulticastSourceSettings|null,
      *     Name: string,
      *     NetworkName: string,
      *     Port: int,

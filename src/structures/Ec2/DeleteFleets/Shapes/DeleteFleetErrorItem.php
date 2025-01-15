@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DeleteFleetError $Error
- * @property string $FleetId
+ * @property DeleteFleetError|null $Error
+ * @property string|null $FleetId
  */
 class DeleteFleetErrorItem extends Shape
 {
     /**
      * @param array{
-     *     Error?: DeleteFleetError,
-     *     FleetId?: string
+     *     Error?: DeleteFleetError|null,
+     *     FleetId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

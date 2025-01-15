@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetComplianceDetailsByConfigRule\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConfigRuleName
- * @property string $ResourceType
- * @property string $ResourceId
- * @property 'DETECTIVE'|'PROACTIVE' $EvaluationMode
+ * @property string|null $ConfigRuleName
+ * @property string|null $ResourceType
+ * @property string|null $ResourceId
+ * @property 'DETECTIVE'|'PROACTIVE'|null $EvaluationMode
  */
 class EvaluationResultQualifier extends Shape
 {
     /**
      * @param array{
-     *     ConfigRuleName?: string,
-     *     ResourceType?: string,
-     *     ResourceId?: string,
-     *     EvaluationMode?: 'DETECTIVE'|'PROACTIVE'
+     *     ConfigRuleName?: string|null,
+     *     ResourceType?: string|null,
+     *     ResourceId?: string|null,
+     *     EvaluationMode?: 'DETECTIVE'|'PROACTIVE'|null
      * } $args
      */
     public function __construct(array $args = [])

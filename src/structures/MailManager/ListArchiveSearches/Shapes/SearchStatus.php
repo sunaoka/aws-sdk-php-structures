@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MailManager\ListArchiveSearches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CompletionTimestamp
- * @property string $ErrorMessage
- * @property 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLED' $State
- * @property \Aws\Api\DateTimeResult $SubmissionTimestamp
+ * @property \Aws\Api\DateTimeResult|null $CompletionTimestamp
+ * @property string|null $ErrorMessage
+ * @property 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLED'|null $State
+ * @property \Aws\Api\DateTimeResult|null $SubmissionTimestamp
  */
 class SearchStatus extends Shape
 {
     /**
      * @param array{
-     *     CompletionTimestamp?: \Aws\Api\DateTimeResult,
-     *     ErrorMessage?: string,
-     *     State?: 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLED',
-     *     SubmissionTimestamp?: \Aws\Api\DateTimeResult
+     *     CompletionTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ErrorMessage?: string|null,
+     *     State?: 'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLED'|null,
+     *     SubmissionTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\RoboMaker\DescribeSimulationJobBatch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PortMapping> $portMappings
+ * @property list<PortMapping>|null $portMappings
  */
 class PortForwardingConfig extends Shape
 {
     /**
-     * @param array{portMappings?: list<PortMapping>} $args
+     * @param array{portMappings?: list<PortMapping>|null} $args
      */
     public function __construct(array $args = [])
     {

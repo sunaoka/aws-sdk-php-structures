@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExecutionRole
- * @property list<string> $SecurityGroups
- * @property SharingSettings $SharingSettings
- * @property JupyterServerAppSettings $JupyterServerAppSettings
- * @property KernelGatewayAppSettings $KernelGatewayAppSettings
- * @property TensorBoardAppSettings $TensorBoardAppSettings
- * @property RStudioServerProAppSettings $RStudioServerProAppSettings
- * @property RSessionAppSettings $RSessionAppSettings
- * @property CanvasAppSettings $CanvasAppSettings
- * @property CodeEditorAppSettings $CodeEditorAppSettings
- * @property JupyterLabAppSettings $JupyterLabAppSettings
- * @property DefaultSpaceStorageSettings $SpaceStorageSettings
- * @property string $DefaultLandingUri
- * @property 'ENABLED'|'DISABLED' $StudioWebPortal
- * @property CustomPosixUserConfig $CustomPosixUserConfig
- * @property list<CustomFileSystemConfig> $CustomFileSystemConfigs
- * @property StudioWebPortalSettings $StudioWebPortalSettings
- * @property 'Enabled'|'Disabled'|'DefaultAsDomain' $AutoMountHomeEFS
+ * @property string|null $ExecutionRole
+ * @property list<string>|null $SecurityGroups
+ * @property SharingSettings|null $SharingSettings
+ * @property JupyterServerAppSettings|null $JupyterServerAppSettings
+ * @property KernelGatewayAppSettings|null $KernelGatewayAppSettings
+ * @property TensorBoardAppSettings|null $TensorBoardAppSettings
+ * @property RStudioServerProAppSettings|null $RStudioServerProAppSettings
+ * @property RSessionAppSettings|null $RSessionAppSettings
+ * @property CanvasAppSettings|null $CanvasAppSettings
+ * @property CodeEditorAppSettings|null $CodeEditorAppSettings
+ * @property JupyterLabAppSettings|null $JupyterLabAppSettings
+ * @property DefaultSpaceStorageSettings|null $SpaceStorageSettings
+ * @property string|null $DefaultLandingUri
+ * @property 'ENABLED'|'DISABLED'|null $StudioWebPortal
+ * @property CustomPosixUserConfig|null $CustomPosixUserConfig
+ * @property list<CustomFileSystemConfig>|null $CustomFileSystemConfigs
+ * @property StudioWebPortalSettings|null $StudioWebPortalSettings
+ * @property 'Enabled'|'Disabled'|'DefaultAsDomain'|null $AutoMountHomeEFS
  */
 class UserSettings extends Shape
 {
     /**
      * @param array{
-     *     ExecutionRole?: string,
-     *     SecurityGroups?: list<string>,
-     *     SharingSettings?: SharingSettings,
-     *     JupyterServerAppSettings?: JupyterServerAppSettings,
-     *     KernelGatewayAppSettings?: KernelGatewayAppSettings,
-     *     TensorBoardAppSettings?: TensorBoardAppSettings,
-     *     RStudioServerProAppSettings?: RStudioServerProAppSettings,
-     *     RSessionAppSettings?: RSessionAppSettings,
-     *     CanvasAppSettings?: CanvasAppSettings,
-     *     CodeEditorAppSettings?: CodeEditorAppSettings,
-     *     JupyterLabAppSettings?: JupyterLabAppSettings,
-     *     SpaceStorageSettings?: DefaultSpaceStorageSettings,
-     *     DefaultLandingUri?: string,
-     *     StudioWebPortal?: 'ENABLED'|'DISABLED',
-     *     CustomPosixUserConfig?: CustomPosixUserConfig,
-     *     CustomFileSystemConfigs?: list<CustomFileSystemConfig>,
-     *     StudioWebPortalSettings?: StudioWebPortalSettings,
-     *     AutoMountHomeEFS?: 'Enabled'|'Disabled'|'DefaultAsDomain'
+     *     ExecutionRole?: string|null,
+     *     SecurityGroups?: list<string>|null,
+     *     SharingSettings?: SharingSettings|null,
+     *     JupyterServerAppSettings?: JupyterServerAppSettings|null,
+     *     KernelGatewayAppSettings?: KernelGatewayAppSettings|null,
+     *     TensorBoardAppSettings?: TensorBoardAppSettings|null,
+     *     RStudioServerProAppSettings?: RStudioServerProAppSettings|null,
+     *     RSessionAppSettings?: RSessionAppSettings|null,
+     *     CanvasAppSettings?: CanvasAppSettings|null,
+     *     CodeEditorAppSettings?: CodeEditorAppSettings|null,
+     *     JupyterLabAppSettings?: JupyterLabAppSettings|null,
+     *     SpaceStorageSettings?: DefaultSpaceStorageSettings|null,
+     *     DefaultLandingUri?: string|null,
+     *     StudioWebPortal?: 'ENABLED'|'DISABLED'|null,
+     *     CustomPosixUserConfig?: CustomPosixUserConfig|null,
+     *     CustomFileSystemConfigs?: list<CustomFileSystemConfig>|null,
+     *     StudioWebPortalSettings?: StudioWebPortalSettings|null,
+     *     AutoMountHomeEFS?: 'Enabled'|'Disabled'|'DefaultAsDomain'|null
      * } $args
      */
     public function __construct(array $args = [])

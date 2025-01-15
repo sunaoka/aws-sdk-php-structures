@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListRealtimeLogConfigs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $MaxItems
- * @property string $Marker
+ * @property string|null $MaxItems
+ * @property string|null $Marker
  */
 class ListRealtimeLogConfigsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxItems?: string,
-     *     Marker?: string
+     *     MaxItems?: string|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

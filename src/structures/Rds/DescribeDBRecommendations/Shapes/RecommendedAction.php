@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ActionId
- * @property string $Title
- * @property string $Description
- * @property string $Operation
- * @property list<RecommendedActionParameter> $Parameters
- * @property list<string> $ApplyModes
- * @property string $Status
- * @property IssueDetails $IssueDetails
- * @property list<ContextAttribute> $ContextAttributes
+ * @property string|null $ActionId
+ * @property string|null $Title
+ * @property string|null $Description
+ * @property string|null $Operation
+ * @property list<RecommendedActionParameter>|null $Parameters
+ * @property list<string>|null $ApplyModes
+ * @property string|null $Status
+ * @property IssueDetails|null $IssueDetails
+ * @property list<ContextAttribute>|null $ContextAttributes
  */
 class RecommendedAction extends Shape
 {
     /**
      * @param array{
-     *     ActionId?: string,
-     *     Title?: string,
-     *     Description?: string,
-     *     Operation?: string,
-     *     Parameters?: list<RecommendedActionParameter>,
-     *     ApplyModes?: list<string>,
-     *     Status?: string,
-     *     IssueDetails?: IssueDetails,
-     *     ContextAttributes?: list<ContextAttribute>
+     *     ActionId?: string|null,
+     *     Title?: string|null,
+     *     Description?: string|null,
+     *     Operation?: string|null,
+     *     Parameters?: list<RecommendedActionParameter>|null,
+     *     ApplyModes?: list<string>|null,
+     *     Status?: string|null,
+     *     IssueDetails?: IssueDetails|null,
+     *     ContextAttributes?: list<ContextAttribute>|null
      * } $args
      */
     public function __construct(array $args = [])

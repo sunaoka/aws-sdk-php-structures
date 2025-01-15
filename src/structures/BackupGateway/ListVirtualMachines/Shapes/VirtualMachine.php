@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BackupGateway\ListVirtualMachines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HostName
- * @property string $HypervisorId
- * @property \Aws\Api\DateTimeResult $LastBackupDate
- * @property string $Name
- * @property string $Path
- * @property string $ResourceArn
+ * @property string|null $HostName
+ * @property string|null $HypervisorId
+ * @property \Aws\Api\DateTimeResult|null $LastBackupDate
+ * @property string|null $Name
+ * @property string|null $Path
+ * @property string|null $ResourceArn
  */
 class VirtualMachine extends Shape
 {
     /**
      * @param array{
-     *     HostName?: string,
-     *     HypervisorId?: string,
-     *     LastBackupDate?: \Aws\Api\DateTimeResult,
-     *     Name?: string,
-     *     Path?: string,
-     *     ResourceArn?: string
+     *     HostName?: string|null,
+     *     HypervisorId?: string|null,
+     *     LastBackupDate?: \Aws\Api\DateTimeResult|null,
+     *     Name?: string|null,
+     *     Path?: string|null,
+     *     ResourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

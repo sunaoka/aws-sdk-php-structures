@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateApplicationSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CampaignHook $CampaignHook
- * @property bool $CloudWatchMetricsEnabled
- * @property CampaignLimits $Limits
- * @property QuietTime $QuietTime
- * @property ApplicationSettingsJourneyLimits $JourneyLimits
+ * @property CampaignHook|null $CampaignHook
+ * @property bool|null $CloudWatchMetricsEnabled
+ * @property CampaignLimits|null $Limits
+ * @property QuietTime|null $QuietTime
+ * @property ApplicationSettingsJourneyLimits|null $JourneyLimits
  */
 class WriteApplicationSettingsRequest extends Shape
 {
     /**
      * @param array{
-     *     CampaignHook?: CampaignHook,
-     *     CloudWatchMetricsEnabled?: bool,
-     *     Limits?: CampaignLimits,
-     *     QuietTime?: QuietTime,
-     *     JourneyLimits?: ApplicationSettingsJourneyLimits
+     *     CampaignHook?: CampaignHook|null,
+     *     CloudWatchMetricsEnabled?: bool|null,
+     *     Limits?: CampaignLimits|null,
+     *     QuietTime?: QuietTime|null,
+     *     JourneyLimits?: ApplicationSettingsJourneyLimits|null
      * } $args
      */
     public function __construct(array $args = [])

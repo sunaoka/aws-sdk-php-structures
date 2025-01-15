@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecretsManager\GetRandomPassword;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RandomPassword
+ * @property string|null $RandomPassword
  */
 class GetRandomPasswordResponse extends Response
 {

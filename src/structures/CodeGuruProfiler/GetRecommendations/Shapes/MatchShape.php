@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeGuruProfiler\GetRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $frameAddress
- * @property int $targetFramesIndex
- * @property double $thresholdBreachValue
+ * @property string|null $frameAddress
+ * @property int|null $targetFramesIndex
+ * @property double|null $thresholdBreachValue
  */
 class MatchShape extends Shape
 {
     /**
      * @param array{
-     *     frameAddress?: string,
-     *     targetFramesIndex?: int,
-     *     thresholdBreachValue?: double
+     *     frameAddress?: string|null,
+     *     targetFramesIndex?: int|null,
+     *     thresholdBreachValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

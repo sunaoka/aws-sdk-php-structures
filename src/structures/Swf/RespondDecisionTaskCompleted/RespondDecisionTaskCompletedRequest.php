@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $taskToken
- * @property list<Shapes\Decision> $decisions
- * @property string $executionContext
- * @property Shapes\TaskList $taskList
- * @property string $taskListScheduleToStartTimeout
+ * @property list<Shapes\Decision>|null $decisions
+ * @property string|null $executionContext
+ * @property Shapes\TaskList|null $taskList
+ * @property string|null $taskListScheduleToStartTimeout
  */
 class RespondDecisionTaskCompletedRequest extends Request
 {
     /**
      * @param array{
      *     taskToken: string,
-     *     decisions?: list<Shapes\Decision>,
-     *     executionContext?: string,
-     *     taskList?: Shapes\TaskList,
-     *     taskListScheduleToStartTimeout?: string
+     *     decisions?: list<Shapes\Decision>|null,
+     *     executionContext?: string|null,
+     *     taskList?: Shapes\TaskList|null,
+     *     taskListScheduleToStartTimeout?: string|null
      * } $args
      */
     public function __construct(array $args)

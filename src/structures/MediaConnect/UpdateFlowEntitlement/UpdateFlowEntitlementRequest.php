@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateFlowEntitlement;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
- * @property Shapes\UpdateEncryption $Encryption
+ * @property string|null $Description
+ * @property Shapes\UpdateEncryption|null $Encryption
  * @property string $EntitlementArn
- * @property 'ENABLED'|'DISABLED' $EntitlementStatus
+ * @property 'ENABLED'|'DISABLED'|null $EntitlementStatus
  * @property string $FlowArn
- * @property list<string> $Subscribers
+ * @property list<string>|null $Subscribers
  */
 class UpdateFlowEntitlementRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     Encryption?: Shapes\UpdateEncryption,
+     *     Description?: string|null,
+     *     Encryption?: Shapes\UpdateEncryption|null,
      *     EntitlementArn: string,
-     *     EntitlementStatus?: 'ENABLED'|'DISABLED',
+     *     EntitlementStatus?: 'ENABLED'|'DISABLED'|null,
      *     FlowArn: string,
-     *     Subscribers?: list<string>
+     *     Subscribers?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

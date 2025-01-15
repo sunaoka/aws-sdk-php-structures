@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\UpdateApplicationResourceLifec
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationName
- * @property Shapes\ApplicationResourceLifecycleConfig $ResourceLifecycleConfig
+ * @property string|null $ApplicationName
+ * @property Shapes\ApplicationResourceLifecycleConfig|null $ResourceLifecycleConfig
  */
 class UpdateApplicationResourceLifecycleResponse extends Response
 {

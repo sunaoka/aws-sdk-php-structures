@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Enabled'|'Disabled' $Status
+ * @property 'Enabled'|'Disabled'|null $Status
  */
 class DeleteMarkerReplication extends Shape
 {
     /**
-     * @param array{Status?: 'Enabled'|'Disabled'} $args
+     * @param array{Status?: 'Enabled'|'Disabled'|null} $args
      */
     public function __construct(array $args = [])
     {

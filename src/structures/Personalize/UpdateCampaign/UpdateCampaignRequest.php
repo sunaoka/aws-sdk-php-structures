@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $campaignArn
- * @property string $solutionVersionArn
- * @property int<1, max> $minProvisionedTPS
- * @property Shapes\CampaignConfig $campaignConfig
+ * @property string|null $solutionVersionArn
+ * @property int<1, max>|null $minProvisionedTPS
+ * @property Shapes\CampaignConfig|null $campaignConfig
  */
 class UpdateCampaignRequest extends Request
 {
     /**
      * @param array{
      *     campaignArn: string,
-     *     solutionVersionArn?: string,
-     *     minProvisionedTPS?: int<1, max>,
-     *     campaignConfig?: Shapes\CampaignConfig
+     *     solutionVersionArn?: string|null,
+     *     minProvisionedTPS?: int<1, max>|null,
+     *     campaignConfig?: Shapes\CampaignConfig|null
      * } $args
      */
     public function __construct(array $args)

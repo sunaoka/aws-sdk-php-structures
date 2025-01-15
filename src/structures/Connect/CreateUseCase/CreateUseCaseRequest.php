@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property string $IntegrationAssociationId
  * @property 'RULES_EVALUATION'|'CONNECT_CAMPAIGNS' $UseCaseType
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateUseCaseRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateUseCaseRequest extends Request
      *     InstanceId: string,
      *     IntegrationAssociationId: string,
      *     UseCaseType: 'RULES_EVALUATION'|'CONNECT_CAMPAIGNS',
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\GameLift\StartMatchmaking\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TicketId
- * @property string $ConfigurationName
- * @property string $ConfigurationArn
- * @property 'CANCELLED'|'COMPLETED'|'FAILED'|'PLACING'|'QUEUED'|'REQUIRES_ACCEPTANCE'|'SEARCHING'|'TIMED_OUT' $Status
- * @property string $StatusReason
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property list<Player> $Players
- * @property GameSessionConnectionInfo $GameSessionConnectionInfo
- * @property int<0, max> $EstimatedWaitTime
+ * @property string|null $TicketId
+ * @property string|null $ConfigurationName
+ * @property string|null $ConfigurationArn
+ * @property 'CANCELLED'|'COMPLETED'|'FAILED'|'PLACING'|'QUEUED'|'REQUIRES_ACCEPTANCE'|'SEARCHING'|'TIMED_OUT'|null $Status
+ * @property string|null $StatusReason
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property list<Player>|null $Players
+ * @property GameSessionConnectionInfo|null $GameSessionConnectionInfo
+ * @property int<0, max>|null $EstimatedWaitTime
  */
 class MatchmakingTicket extends Shape
 {
     /**
      * @param array{
-     *     TicketId?: string,
-     *     ConfigurationName?: string,
-     *     ConfigurationArn?: string,
-     *     Status?: 'CANCELLED'|'COMPLETED'|'FAILED'|'PLACING'|'QUEUED'|'REQUIRES_ACCEPTANCE'|'SEARCHING'|'TIMED_OUT',
-     *     StatusReason?: string,
-     *     StatusMessage?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Players?: list<Player>,
-     *     GameSessionConnectionInfo?: GameSessionConnectionInfo,
-     *     EstimatedWaitTime?: int<0, max>
+     *     TicketId?: string|null,
+     *     ConfigurationName?: string|null,
+     *     ConfigurationArn?: string|null,
+     *     Status?: 'CANCELLED'|'COMPLETED'|'FAILED'|'PLACING'|'QUEUED'|'REQUIRES_ACCEPTANCE'|'SEARCHING'|'TIMED_OUT'|null,
+     *     StatusReason?: string|null,
+     *     StatusMessage?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Players?: list<Player>|null,
+     *     GameSessionConnectionInfo?: GameSessionConnectionInfo|null,
+     *     EstimatedWaitTime?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

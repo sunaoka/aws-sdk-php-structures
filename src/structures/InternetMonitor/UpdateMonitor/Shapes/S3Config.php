@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\InternetMonitor\UpdateMonitor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BucketName
- * @property string $BucketPrefix
- * @property 'ENABLED'|'DISABLED' $LogDeliveryStatus
+ * @property string|null $BucketName
+ * @property string|null $BucketPrefix
+ * @property 'ENABLED'|'DISABLED'|null $LogDeliveryStatus
  */
 class S3Config extends Shape
 {
     /**
      * @param array{
-     *     BucketName?: string,
-     *     BucketPrefix?: string,
-     *     LogDeliveryStatus?: 'ENABLED'|'DISABLED'
+     *     BucketName?: string|null,
+     *     BucketPrefix?: string|null,
+     *     LogDeliveryStatus?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

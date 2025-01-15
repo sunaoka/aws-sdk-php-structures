@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Maximize'|'Minimize' $Type
+ * @property 'Maximize'|'Minimize'|null $Type
  * @property string $MetricName
  * @property float $Value
  */
@@ -13,7 +13,7 @@ class FinalHyperParameterTuningJobObjectiveMetric extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'Maximize'|'Minimize',
+     *     Type?: 'Maximize'|'Minimize'|null,
      *     MetricName: string,
      *     Value: float
      * } $args

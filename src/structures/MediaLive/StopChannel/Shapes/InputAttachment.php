@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\StopChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AutomaticInputFailoverSettings $AutomaticInputFailoverSettings
- * @property string $InputAttachmentName
- * @property string $InputId
- * @property InputSettings $InputSettings
- * @property list<string> $LogicalInterfaceNames
+ * @property AutomaticInputFailoverSettings|null $AutomaticInputFailoverSettings
+ * @property string|null $InputAttachmentName
+ * @property string|null $InputId
+ * @property InputSettings|null $InputSettings
+ * @property list<string>|null $LogicalInterfaceNames
  */
 class InputAttachment extends Shape
 {
     /**
      * @param array{
-     *     AutomaticInputFailoverSettings?: AutomaticInputFailoverSettings,
-     *     InputAttachmentName?: string,
-     *     InputId?: string,
-     *     InputSettings?: InputSettings,
-     *     LogicalInterfaceNames?: list<string>
+     *     AutomaticInputFailoverSettings?: AutomaticInputFailoverSettings|null,
+     *     InputAttachmentName?: string|null,
+     *     InputId?: string|null,
+     *     InputSettings?: InputSettings|null,
+     *     LogicalInterfaceNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

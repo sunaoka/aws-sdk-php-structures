@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Repository $Repository
- * @property string $ClientRequestToken
- * @property array<string, string> $Tags
- * @property Shapes\KMSKeyDetails $KMSKeyDetails
+ * @property string|null $ClientRequestToken
+ * @property array<string, string>|null $Tags
+ * @property Shapes\KMSKeyDetails|null $KMSKeyDetails
  */
 class AssociateRepositoryRequest extends Request
 {
     /**
      * @param array{
      *     Repository: Shapes\Repository,
-     *     ClientRequestToken?: string,
-     *     Tags?: array<string, string>,
-     *     KMSKeyDetails?: Shapes\KMSKeyDetails
+     *     ClientRequestToken?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     KMSKeyDetails?: Shapes\KMSKeyDetails|null
      * } $args
      */
     public function __construct(array $args)

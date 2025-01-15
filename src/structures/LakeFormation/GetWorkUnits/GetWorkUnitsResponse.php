@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GetWorkUnits;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property string $QueryId
  * @property list<Shapes\WorkUnitRange> $WorkUnitRanges
  */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rds\AuthorizeDBSecurityGroupIngress;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DBSecurityGroup $DBSecurityGroup
+ * @property Shapes\DBSecurityGroup|null $DBSecurityGroup
  */
 class AuthorizeDBSecurityGroupIngressResponse extends Response
 {

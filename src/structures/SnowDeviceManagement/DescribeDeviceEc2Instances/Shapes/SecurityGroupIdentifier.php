@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\DescribeDeviceEc2Instances
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $groupId
- * @property string $groupName
+ * @property string|null $groupId
+ * @property string|null $groupName
  */
 class SecurityGroupIdentifier extends Shape
 {
     /**
      * @param array{
-     *     groupId?: string,
-     *     groupName?: string
+     *     groupId?: string|null,
+     *     groupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

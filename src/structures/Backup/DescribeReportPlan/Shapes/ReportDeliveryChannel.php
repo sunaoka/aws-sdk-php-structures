@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3BucketName
- * @property string $S3KeyPrefix
- * @property list<string> $Formats
+ * @property string|null $S3KeyPrefix
+ * @property list<string>|null $Formats
  */
 class ReportDeliveryChannel extends Shape
 {
     /**
      * @param array{
      *     S3BucketName: string,
-     *     S3KeyPrefix?: string,
-     *     Formats?: list<string>
+     *     S3KeyPrefix?: string|null,
+     *     Formats?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

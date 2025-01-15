@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<double> $Position
- * @property double $Speed
+ * @property double|null $Speed
  */
 class ForecastGeofenceEventsDeviceState extends Shape
 {
     /**
      * @param array{
      *     Position: list<double>,
-     *     Speed?: double
+     *     Speed?: double|null
      * } $args
      */
     public function __construct(array $args)

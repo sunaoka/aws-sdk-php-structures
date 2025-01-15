@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FeatureGroupName
  * @property string $FeatureName
- * @property string $Description
- * @property list<Shapes\FeatureParameter> $ParameterAdditions
- * @property list<string> $ParameterRemovals
+ * @property string|null $Description
+ * @property list<Shapes\FeatureParameter>|null $ParameterAdditions
+ * @property list<string>|null $ParameterRemovals
  */
 class UpdateFeatureMetadataRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateFeatureMetadataRequest extends Request
      * @param array{
      *     FeatureGroupName: string,
      *     FeatureName: string,
-     *     Description?: string,
-     *     ParameterAdditions?: list<Shapes\FeatureParameter>,
-     *     ParameterRemovals?: list<string>
+     *     Description?: string|null,
+     *     ParameterAdditions?: list<Shapes\FeatureParameter>|null,
+     *     ParameterRemovals?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

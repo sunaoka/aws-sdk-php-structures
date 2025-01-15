@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ComputationId
- * @property string $Name
- * @property DimensionField $Time
- * @property MeasureField $Value
+ * @property string|null $Name
+ * @property DimensionField|null $Time
+ * @property MeasureField|null $Value
  */
 class PeriodOverPeriodComputation extends Shape
 {
     /**
      * @param array{
      *     ComputationId: string,
-     *     Name?: string,
-     *     Time?: DimensionField,
-     *     Value?: MeasureField
+     *     Name?: string|null,
+     *     Time?: DimensionField|null,
+     *     Value?: MeasureField|null
      * } $args
      */
     public function __construct(array $args)

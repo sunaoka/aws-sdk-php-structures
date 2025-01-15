@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<WorkflowDetail> $OnUpload
- * @property list<WorkflowDetail> $OnPartialUpload
+ * @property list<WorkflowDetail>|null $OnUpload
+ * @property list<WorkflowDetail>|null $OnPartialUpload
  */
 class WorkflowDetails extends Shape
 {
     /**
      * @param array{
-     *     OnUpload?: list<WorkflowDetail>,
-     *     OnPartialUpload?: list<WorkflowDetail>
+     *     OnUpload?: list<WorkflowDetail>|null,
+     *     OnPartialUpload?: list<WorkflowDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

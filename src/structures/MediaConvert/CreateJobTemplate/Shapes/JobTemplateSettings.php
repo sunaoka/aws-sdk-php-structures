@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<-1000, 1000> $AdAvailOffset
- * @property AvailBlanking $AvailBlanking
- * @property list<ColorConversion3DLUTSetting> $ColorConversion3DLUTSettings
- * @property EsamSettings $Esam
- * @property ExtendedDataServices $ExtendedDataServices
- * @property int<1, 150> $FollowSource
- * @property list<InputTemplate> $Inputs
- * @property KantarWatermarkSettings $KantarWatermark
- * @property MotionImageInserter $MotionImageInserter
- * @property NielsenConfiguration $NielsenConfiguration
- * @property NielsenNonLinearWatermarkSettings $NielsenNonLinearWatermark
- * @property list<OutputGroup> $OutputGroups
- * @property TimecodeConfig $TimecodeConfig
- * @property TimedMetadataInsertion $TimedMetadataInsertion
+ * @property int<-1000, 1000>|null $AdAvailOffset
+ * @property AvailBlanking|null $AvailBlanking
+ * @property list<ColorConversion3DLUTSetting>|null $ColorConversion3DLUTSettings
+ * @property EsamSettings|null $Esam
+ * @property ExtendedDataServices|null $ExtendedDataServices
+ * @property int<1, 150>|null $FollowSource
+ * @property list<InputTemplate>|null $Inputs
+ * @property KantarWatermarkSettings|null $KantarWatermark
+ * @property MotionImageInserter|null $MotionImageInserter
+ * @property NielsenConfiguration|null $NielsenConfiguration
+ * @property NielsenNonLinearWatermarkSettings|null $NielsenNonLinearWatermark
+ * @property list<OutputGroup>|null $OutputGroups
+ * @property TimecodeConfig|null $TimecodeConfig
+ * @property TimedMetadataInsertion|null $TimedMetadataInsertion
  */
 class JobTemplateSettings extends Shape
 {
     /**
      * @param array{
-     *     AdAvailOffset?: int<-1000, 1000>,
-     *     AvailBlanking?: AvailBlanking,
-     *     ColorConversion3DLUTSettings?: list<ColorConversion3DLUTSetting>,
-     *     Esam?: EsamSettings,
-     *     ExtendedDataServices?: ExtendedDataServices,
-     *     FollowSource?: int<1, 150>,
-     *     Inputs?: list<InputTemplate>,
-     *     KantarWatermark?: KantarWatermarkSettings,
-     *     MotionImageInserter?: MotionImageInserter,
-     *     NielsenConfiguration?: NielsenConfiguration,
-     *     NielsenNonLinearWatermark?: NielsenNonLinearWatermarkSettings,
-     *     OutputGroups?: list<OutputGroup>,
-     *     TimecodeConfig?: TimecodeConfig,
-     *     TimedMetadataInsertion?: TimedMetadataInsertion
+     *     AdAvailOffset?: int<-1000, 1000>|null,
+     *     AvailBlanking?: AvailBlanking|null,
+     *     ColorConversion3DLUTSettings?: list<ColorConversion3DLUTSetting>|null,
+     *     Esam?: EsamSettings|null,
+     *     ExtendedDataServices?: ExtendedDataServices|null,
+     *     FollowSource?: int<1, 150>|null,
+     *     Inputs?: list<InputTemplate>|null,
+     *     KantarWatermark?: KantarWatermarkSettings|null,
+     *     MotionImageInserter?: MotionImageInserter|null,
+     *     NielsenConfiguration?: NielsenConfiguration|null,
+     *     NielsenNonLinearWatermark?: NielsenNonLinearWatermarkSettings|null,
+     *     OutputGroups?: list<OutputGroup>|null,
+     *     TimecodeConfig?: TimecodeConfig|null,
+     *     TimedMetadataInsertion?: TimedMetadataInsertion|null
      * } $args
      */
     public function __construct(array $args = [])

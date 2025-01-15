@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListSopRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $appComponentName
- * @property string $description
- * @property list<RecommendationItem> $items
- * @property string $name
- * @property string $prerequisite
+ * @property string|null $appComponentName
+ * @property string|null $description
+ * @property list<RecommendationItem>|null $items
+ * @property string|null $name
+ * @property string|null $prerequisite
  * @property string $recommendationId
- * @property 'Implemented'|'Inactive'|'NotImplemented'|'Excluded' $recommendationStatus
+ * @property 'Implemented'|'Inactive'|'NotImplemented'|'Excluded'|null $recommendationStatus
  * @property string $referenceId
  * @property 'SSM' $serviceType
  */
@@ -19,13 +19,13 @@ class SopRecommendation extends Shape
 {
     /**
      * @param array{
-     *     appComponentName?: string,
-     *     description?: string,
-     *     items?: list<RecommendationItem>,
-     *     name?: string,
-     *     prerequisite?: string,
+     *     appComponentName?: string|null,
+     *     description?: string|null,
+     *     items?: list<RecommendationItem>|null,
+     *     name?: string|null,
+     *     prerequisite?: string|null,
      *     recommendationId: string,
-     *     recommendationStatus?: 'Implemented'|'Inactive'|'NotImplemented'|'Excluded',
+     *     recommendationStatus?: 'Implemented'|'Inactive'|'NotImplemented'|'Excluded'|null,
      *     referenceId: string,
      *     serviceType: 'SSM'
      * } $args

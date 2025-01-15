@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetAnalyzer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UnusedAccessConfiguration $unusedAccess
+ * @property UnusedAccessConfiguration|null $unusedAccess
  */
 class AnalyzerConfiguration extends Shape
 {
     /**
-     * @param array{unusedAccess?: UnusedAccessConfiguration} $args
+     * @param array{unusedAccess?: UnusedAccessConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

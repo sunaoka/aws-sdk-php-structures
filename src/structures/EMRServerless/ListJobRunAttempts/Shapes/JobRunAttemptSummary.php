@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $applicationId
  * @property string $id
- * @property string $name
- * @property 'BATCH'|'STREAMING' $mode
+ * @property string|null $name
+ * @property 'BATCH'|'STREAMING'|null $mode
  * @property string $arn
  * @property string $createdBy
  * @property \Aws\Api\DateTimeResult $jobCreatedAt
@@ -18,8 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED' $state
  * @property string $stateDetails
  * @property string $releaseLabel
- * @property string $type
- * @property int<1, max> $attempt
+ * @property string|null $type
+ * @property int<1, max>|null $attempt
  */
 class JobRunAttemptSummary extends Shape
 {
@@ -27,8 +27,8 @@ class JobRunAttemptSummary extends Shape
      * @param array{
      *     applicationId: string,
      *     id: string,
-     *     name?: string,
-     *     mode?: 'BATCH'|'STREAMING',
+     *     name?: string|null,
+     *     mode?: 'BATCH'|'STREAMING'|null,
      *     arn: string,
      *     createdBy: string,
      *     jobCreatedAt: \Aws\Api\DateTimeResult,
@@ -38,8 +38,8 @@ class JobRunAttemptSummary extends Shape
      *     state: 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED',
      *     stateDetails: string,
      *     releaseLabel: string,
-     *     type?: string,
-     *     attempt?: int<1, max>
+     *     type?: string|null,
+     *     attempt?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

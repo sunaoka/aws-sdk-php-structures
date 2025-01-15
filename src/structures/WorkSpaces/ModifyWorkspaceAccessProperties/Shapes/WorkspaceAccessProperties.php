@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\ModifyWorkspaceAccessProperties\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOW'|'DENY' $DeviceTypeWindows
- * @property 'ALLOW'|'DENY' $DeviceTypeOsx
- * @property 'ALLOW'|'DENY' $DeviceTypeWeb
- * @property 'ALLOW'|'DENY' $DeviceTypeIos
- * @property 'ALLOW'|'DENY' $DeviceTypeAndroid
- * @property 'ALLOW'|'DENY' $DeviceTypeChromeOs
- * @property 'ALLOW'|'DENY' $DeviceTypeZeroClient
- * @property 'ALLOW'|'DENY' $DeviceTypeLinux
+ * @property 'ALLOW'|'DENY'|null $DeviceTypeWindows
+ * @property 'ALLOW'|'DENY'|null $DeviceTypeOsx
+ * @property 'ALLOW'|'DENY'|null $DeviceTypeWeb
+ * @property 'ALLOW'|'DENY'|null $DeviceTypeIos
+ * @property 'ALLOW'|'DENY'|null $DeviceTypeAndroid
+ * @property 'ALLOW'|'DENY'|null $DeviceTypeChromeOs
+ * @property 'ALLOW'|'DENY'|null $DeviceTypeZeroClient
+ * @property 'ALLOW'|'DENY'|null $DeviceTypeLinux
  */
 class WorkspaceAccessProperties extends Shape
 {
     /**
      * @param array{
-     *     DeviceTypeWindows?: 'ALLOW'|'DENY',
-     *     DeviceTypeOsx?: 'ALLOW'|'DENY',
-     *     DeviceTypeWeb?: 'ALLOW'|'DENY',
-     *     DeviceTypeIos?: 'ALLOW'|'DENY',
-     *     DeviceTypeAndroid?: 'ALLOW'|'DENY',
-     *     DeviceTypeChromeOs?: 'ALLOW'|'DENY',
-     *     DeviceTypeZeroClient?: 'ALLOW'|'DENY',
-     *     DeviceTypeLinux?: 'ALLOW'|'DENY'
+     *     DeviceTypeWindows?: 'ALLOW'|'DENY'|null,
+     *     DeviceTypeOsx?: 'ALLOW'|'DENY'|null,
+     *     DeviceTypeWeb?: 'ALLOW'|'DENY'|null,
+     *     DeviceTypeIos?: 'ALLOW'|'DENY'|null,
+     *     DeviceTypeAndroid?: 'ALLOW'|'DENY'|null,
+     *     DeviceTypeChromeOs?: 'ALLOW'|'DENY'|null,
+     *     DeviceTypeZeroClient?: 'ALLOW'|'DENY'|null,
+     *     DeviceTypeLinux?: 'ALLOW'|'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $ContactFlowModuleId
- * @property string $Name
- * @property string $Description
- * @property 'ACTIVE'|'ARCHIVED' $State
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'ACTIVE'|'ARCHIVED'|null $State
  */
 class UpdateContactFlowModuleMetadataRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateContactFlowModuleMetadataRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     ContactFlowModuleId: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     State?: 'ACTIVE'|'ARCHIVED'
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     State?: 'ACTIVE'|'ARCHIVED'|null
      * } $args
      */
     public function __construct(array $args)

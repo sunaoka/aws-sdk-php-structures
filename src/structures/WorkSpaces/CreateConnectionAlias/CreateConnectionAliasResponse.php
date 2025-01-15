@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\CreateConnectionAlias;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AliasId
+ * @property string|null $AliasId
  */
 class CreateConnectionAliasResponse extends Response
 {

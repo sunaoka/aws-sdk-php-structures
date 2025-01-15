@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Panorama\DescribeDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EthernetStatus $Ethernet0Status
- * @property EthernetStatus $Ethernet1Status
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property NtpStatus $NtpStatus
+ * @property EthernetStatus|null $Ethernet0Status
+ * @property EthernetStatus|null $Ethernet1Status
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property NtpStatus|null $NtpStatus
  */
 class NetworkStatus extends Shape
 {
     /**
      * @param array{
-     *     Ethernet0Status?: EthernetStatus,
-     *     Ethernet1Status?: EthernetStatus,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     NtpStatus?: NtpStatus
+     *     Ethernet0Status?: EthernetStatus|null,
+     *     Ethernet1Status?: EthernetStatus|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     NtpStatus?: NtpStatus|null
      * } $args
      */
     public function __construct(array $args = [])

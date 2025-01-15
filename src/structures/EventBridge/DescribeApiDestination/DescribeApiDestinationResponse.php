@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\EventBridge\DescribeApiDestination;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApiDestinationArn
- * @property string $Name
- * @property string $Description
- * @property 'ACTIVE'|'INACTIVE' $ApiDestinationState
- * @property string $ConnectionArn
- * @property string $InvocationEndpoint
- * @property 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE' $HttpMethod
- * @property int<1, max> $InvocationRateLimitPerSecond
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $ApiDestinationArn
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'ACTIVE'|'INACTIVE'|null $ApiDestinationState
+ * @property string|null $ConnectionArn
+ * @property string|null $InvocationEndpoint
+ * @property 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE'|null $HttpMethod
+ * @property int<1, max>|null $InvocationRateLimitPerSecond
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class DescribeApiDestinationResponse extends Response
 {

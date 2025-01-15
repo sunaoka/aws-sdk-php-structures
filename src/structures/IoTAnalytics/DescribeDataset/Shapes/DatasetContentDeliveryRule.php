@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\DescribeDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $entryName
+ * @property string|null $entryName
  * @property DatasetContentDeliveryDestination $destination
  */
 class DatasetContentDeliveryRule extends Shape
 {
     /**
      * @param array{
-     *     entryName?: string,
+     *     entryName?: string|null,
      *     destination: DatasetContentDeliveryDestination
      * } $args
      */

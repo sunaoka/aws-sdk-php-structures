@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\PostTimeSeriesDataPoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $content
+ * @property string|null $content
  * @property string $formName
  * @property \Aws\Api\DateTimeResult $timestamp
  * @property string $typeIdentifier
- * @property string $typeRevision
+ * @property string|null $typeRevision
  */
 class TimeSeriesDataPointFormInput extends Shape
 {
     /**
      * @param array{
-     *     content?: string,
+     *     content?: string|null,
      *     formName: string,
      *     timestamp: \Aws\Api\DateTimeResult,
      *     typeIdentifier: string,
-     *     typeRevision?: string
+     *     typeRevision?: string|null
      * } $args
      */
     public function __construct(array $args)

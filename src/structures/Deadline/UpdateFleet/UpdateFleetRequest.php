@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateFleet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $farmId
  * @property string $fleetId
- * @property string $displayName
- * @property string $description
- * @property string $roleArn
- * @property int<0, 2147483647> $minWorkerCount
- * @property int<0, 2147483647> $maxWorkerCount
- * @property Shapes\FleetConfiguration $configuration
+ * @property string|null $displayName
+ * @property string|null $description
+ * @property string|null $roleArn
+ * @property int<0, 2147483647>|null $minWorkerCount
+ * @property int<0, 2147483647>|null $maxWorkerCount
+ * @property Shapes\FleetConfiguration|null $configuration
  */
 class UpdateFleetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     farmId: string,
      *     fleetId: string,
-     *     displayName?: string,
-     *     description?: string,
-     *     roleArn?: string,
-     *     minWorkerCount?: int<0, 2147483647>,
-     *     maxWorkerCount?: int<0, 2147483647>,
-     *     configuration?: Shapes\FleetConfiguration
+     *     displayName?: string|null,
+     *     description?: string|null,
+     *     roleArn?: string|null,
+     *     minWorkerCount?: int<0, 2147483647>|null,
+     *     maxWorkerCount?: int<0, 2147483647>|null,
+     *     configuration?: Shapes\FleetConfiguration|null
      * } $args
      */
     public function __construct(array $args)

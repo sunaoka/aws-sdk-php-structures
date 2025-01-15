@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $HubName
  * @property 'Model'|'Notebook'|'ModelReference' $HubContentType
  * @property string $HubContentName
- * @property string $HubContentVersion
+ * @property string|null $HubContentVersion
  */
 class DescribeHubContentRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeHubContentRequest extends Request
      *     HubName: string,
      *     HubContentType: 'Model'|'Notebook'|'ModelReference',
      *     HubContentName: string,
-     *     HubContentVersion?: string
+     *     HubContentVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

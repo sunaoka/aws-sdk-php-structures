@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProjectName
  * @property string $DatasetType
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class DeleteDatasetRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteDatasetRequest extends Request
      * @param array{
      *     ProjectName: string,
      *     DatasetType: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

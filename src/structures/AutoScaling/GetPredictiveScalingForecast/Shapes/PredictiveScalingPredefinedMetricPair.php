@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ASGCPUUtilization'|'ASGNetworkIn'|'ASGNetworkOut'|'ALBRequestCount' $PredefinedMetricType
- * @property string $ResourceLabel
+ * @property string|null $ResourceLabel
  */
 class PredictiveScalingPredefinedMetricPair extends Shape
 {
     /**
      * @param array{
      *     PredefinedMetricType: 'ASGCPUUtilization'|'ASGNetworkIn'|'ASGNetworkOut'|'ALBRequestCount',
-     *     ResourceLabel?: string
+     *     ResourceLabel?: string|null
      * } $args
      */
     public function __construct(array $args)

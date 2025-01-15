@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyHosts;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'on'|'off' $HostRecovery
- * @property string $InstanceType
- * @property string $InstanceFamily
- * @property 'on'|'off' $HostMaintenance
+ * @property 'on'|'off'|null $HostRecovery
+ * @property string|null $InstanceType
+ * @property string|null $InstanceFamily
+ * @property 'on'|'off'|null $HostMaintenance
  * @property list<string> $HostIds
- * @property 'on'|'off' $AutoPlacement
+ * @property 'on'|'off'|null $AutoPlacement
  */
 class ModifyHostsRequest extends Request
 {
     /**
      * @param array{
-     *     HostRecovery?: 'on'|'off',
-     *     InstanceType?: string,
-     *     InstanceFamily?: string,
-     *     HostMaintenance?: 'on'|'off',
+     *     HostRecovery?: 'on'|'off'|null,
+     *     InstanceType?: string|null,
+     *     InstanceFamily?: string|null,
+     *     HostMaintenance?: 'on'|'off'|null,
      *     HostIds: list<string>,
-     *     AutoPlacement?: 'on'|'off'
+     *     AutoPlacement?: 'on'|'off'|null
      * } $args
      */
     public function __construct(array $args)

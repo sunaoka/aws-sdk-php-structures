@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $iamInstanceProfileArn
- * @property string $imageId
- * @property list<string> $ipV4Addresses
- * @property list<string> $ipV6Addresses
- * @property string $keyName
- * @property \Aws\Api\DateTimeResult $launchedAt
- * @property string $platform
- * @property string $subnetId
- * @property string $type
- * @property string $vpcId
+ * @property string|null $iamInstanceProfileArn
+ * @property string|null $imageId
+ * @property list<string>|null $ipV4Addresses
+ * @property list<string>|null $ipV6Addresses
+ * @property string|null $keyName
+ * @property \Aws\Api\DateTimeResult|null $launchedAt
+ * @property string|null $platform
+ * @property string|null $subnetId
+ * @property string|null $type
+ * @property string|null $vpcId
  */
 class AwsEc2InstanceDetails extends Shape
 {
     /**
      * @param array{
-     *     iamInstanceProfileArn?: string,
-     *     imageId?: string,
-     *     ipV4Addresses?: list<string>,
-     *     ipV6Addresses?: list<string>,
-     *     keyName?: string,
-     *     launchedAt?: \Aws\Api\DateTimeResult,
-     *     platform?: string,
-     *     subnetId?: string,
-     *     type?: string,
-     *     vpcId?: string
+     *     iamInstanceProfileArn?: string|null,
+     *     imageId?: string|null,
+     *     ipV4Addresses?: list<string>|null,
+     *     ipV6Addresses?: list<string>|null,
+     *     keyName?: string|null,
+     *     launchedAt?: \Aws\Api\DateTimeResult|null,
+     *     platform?: string|null,
+     *     subnetId?: string|null,
+     *     type?: string|null,
+     *     vpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

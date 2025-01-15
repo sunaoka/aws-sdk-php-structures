@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property Shapes\KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property string $name
  * @property string $roleArn
- * @property Shapes\StorageConfiguration $storageConfiguration
- * @property array<string, string> $tags
+ * @property Shapes\StorageConfiguration|null $storageConfiguration
+ * @property array<string, string>|null $tags
  */
 class CreateKnowledgeBaseRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     knowledgeBaseConfiguration: Shapes\KnowledgeBaseConfiguration,
      *     name: string,
      *     roleArn: string,
-     *     storageConfiguration?: Shapes\StorageConfiguration,
-     *     tags?: array<string, string>
+     *     storageConfiguration?: Shapes\StorageConfiguration|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

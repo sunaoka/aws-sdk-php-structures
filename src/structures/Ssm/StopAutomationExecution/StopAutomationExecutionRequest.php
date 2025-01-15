@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutomationExecutionId
- * @property 'Complete'|'Cancel' $Type
+ * @property 'Complete'|'Cancel'|null $Type
  */
 class StopAutomationExecutionRequest extends Request
 {
     /**
      * @param array{
      *     AutomationExecutionId: string,
-     *     Type?: 'Complete'|'Cancel'
+     *     Type?: 'Complete'|'Cancel'|null
      * } $args
      */
     public function __construct(array $args)

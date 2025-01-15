@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $subResourceId
+ * @property string|null $id
+ * @property string|null $subResourceId
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     subResourceId?: string
+     *     id?: string|null,
+     *     subResourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

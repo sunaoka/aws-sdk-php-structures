@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AuthenticationToken
- * @property int<1, 999> $Limit
- * @property string $Marker
+ * @property int<1, 999>|null $Limit
+ * @property string|null $Marker
  */
 class DescribeRootFoldersRequest extends Request
 {
     /**
      * @param array{
      *     AuthenticationToken: string,
-     *     Limit?: int<1, 999>,
-     *     Marker?: string
+     *     Limit?: int<1, 999>|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args)

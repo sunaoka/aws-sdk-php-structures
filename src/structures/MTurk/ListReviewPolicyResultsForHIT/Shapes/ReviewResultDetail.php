@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MTurk\ListReviewPolicyResultsForHIT\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ActionId
- * @property string $SubjectId
- * @property string $SubjectType
- * @property string $QuestionId
- * @property string $Key
- * @property string $Value
+ * @property string|null $ActionId
+ * @property string|null $SubjectId
+ * @property string|null $SubjectType
+ * @property string|null $QuestionId
+ * @property string|null $Key
+ * @property string|null $Value
  */
 class ReviewResultDetail extends Shape
 {
     /**
      * @param array{
-     *     ActionId?: string,
-     *     SubjectId?: string,
-     *     SubjectType?: string,
-     *     QuestionId?: string,
-     *     Key?: string,
-     *     Value?: string
+     *     ActionId?: string|null,
+     *     SubjectId?: string|null,
+     *     SubjectType?: string|null,
+     *     QuestionId?: string|null,
+     *     Key?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $clientToken
- * @property 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS' $rateType
- * @property array<string, string> $tags
+ * @property string|null $clientToken
+ * @property 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|null $rateType
+ * @property array<string, string>|null $tags
  */
 class CreateWorkloadEstimateRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     clientToken?: string,
-     *     rateType?: 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS',
-     *     tags?: array<string, string>
+     *     clientToken?: string|null,
+     *     rateType?: 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

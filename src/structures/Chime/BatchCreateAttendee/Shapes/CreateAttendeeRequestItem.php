@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ExternalUserId
- * @property list<Tag> $Tags
+ * @property list<Tag>|null $Tags
  */
 class CreateAttendeeRequestItem extends Shape
 {
     /**
      * @param array{
      *     ExternalUserId: string,
-     *     Tags?: list<Tag>
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

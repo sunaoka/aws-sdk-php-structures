@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListAcceptedPortfolioShares;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
- * @property string $PageToken
- * @property int<0, 100> $PageSize
- * @property 'IMPORTED'|'AWS_SERVICECATALOG'|'AWS_ORGANIZATIONS' $PortfolioShareType
+ * @property string|null $AcceptLanguage
+ * @property string|null $PageToken
+ * @property int<0, 100>|null $PageSize
+ * @property 'IMPORTED'|'AWS_SERVICECATALOG'|'AWS_ORGANIZATIONS'|null $PortfolioShareType
  */
 class ListAcceptedPortfolioSharesRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
-     *     PageToken?: string,
-     *     PageSize?: int<0, 100>,
-     *     PortfolioShareType?: 'IMPORTED'|'AWS_SERVICECATALOG'|'AWS_ORGANIZATIONS'
+     *     AcceptLanguage?: string|null,
+     *     PageToken?: string|null,
+     *     PageSize?: int<0, 100>|null,
+     *     PortfolioShareType?: 'IMPORTED'|'AWS_SERVICECATALOG'|'AWS_ORGANIZATIONS'|null
      * } $args
      */
     public function __construct(array $args = [])

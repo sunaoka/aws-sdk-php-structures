@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $domainEndpoint
  * @property string $indexName
- * @property bool $exactResponse
- * @property ExactResponseFields $exactResponseFields
- * @property list<string> $includeFields
+ * @property bool|null $exactResponse
+ * @property ExactResponseFields|null $exactResponseFields
+ * @property list<string>|null $includeFields
  */
 class OpensearchConfiguration extends Shape
 {
@@ -17,9 +17,9 @@ class OpensearchConfiguration extends Shape
      * @param array{
      *     domainEndpoint: string,
      *     indexName: string,
-     *     exactResponse?: bool,
-     *     exactResponseFields?: ExactResponseFields,
-     *     includeFields?: list<string>
+     *     exactResponse?: bool|null,
+     *     exactResponseFields?: ExactResponseFields|null,
+     *     includeFields?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

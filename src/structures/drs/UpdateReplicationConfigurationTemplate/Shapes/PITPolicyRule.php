@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\drs\UpdateReplicationConfigurationTemplate\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $enabled
+ * @property bool|null $enabled
  * @property int<1, max> $interval
  * @property int<1, max> $retentionDuration
- * @property int<0, max> $ruleID
+ * @property int<0, max>|null $ruleID
  * @property 'MINUTE'|'HOUR'|'DAY' $units
  */
 class PITPolicyRule extends Shape
 {
     /**
      * @param array{
-     *     enabled?: bool,
+     *     enabled?: bool|null,
      *     interval: int<1, max>,
      *     retentionDuration: int<1, max>,
-     *     ruleID?: int<0, max>,
+     *     ruleID?: int<0, max>|null,
      *     units: 'MINUTE'|'HOUR'|'DAY'
      * } $args
      */

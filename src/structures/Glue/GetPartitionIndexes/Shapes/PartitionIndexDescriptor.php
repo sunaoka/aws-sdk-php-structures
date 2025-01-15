@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $IndexName
  * @property list<KeySchemaElement> $Keys
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED' $IndexStatus
- * @property list<BackfillError> $BackfillErrors
+ * @property list<BackfillError>|null $BackfillErrors
  */
 class PartitionIndexDescriptor extends Shape
 {
@@ -17,7 +17,7 @@ class PartitionIndexDescriptor extends Shape
      *     IndexName: string,
      *     Keys: list<KeySchemaElement>,
      *     IndexStatus: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED',
-     *     BackfillErrors?: list<BackfillError>
+     *     BackfillErrors?: list<BackfillError>|null
      * } $args
      */
     public function __construct(array $args)

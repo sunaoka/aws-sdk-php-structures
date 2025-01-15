@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancers\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PolicyName
- * @property string $CookieName
+ * @property string|null $PolicyName
+ * @property string|null $CookieName
  */
 class AppCookieStickinessPolicy extends Shape
 {
     /**
      * @param array{
-     *     PolicyName?: string,
-     *     CookieName?: string
+     *     PolicyName?: string|null,
+     *     CookieName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

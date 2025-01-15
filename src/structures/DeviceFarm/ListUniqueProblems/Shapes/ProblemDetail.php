@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListUniqueProblems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
+ * @property string|null $arn
+ * @property string|null $name
  */
 class ProblemDetail extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string
+     *     arn?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IndexId
  * @property string $QueryText
- * @property int $MaxSuggestionsCount
- * @property list<'QUERY'|'DOCUMENT_ATTRIBUTES'> $SuggestionTypes
- * @property Shapes\AttributeSuggestionsGetConfig $AttributeSuggestionsConfig
+ * @property int|null $MaxSuggestionsCount
+ * @property list<'QUERY'|'DOCUMENT_ATTRIBUTES'>|null $SuggestionTypes
+ * @property Shapes\AttributeSuggestionsGetConfig|null $AttributeSuggestionsConfig
  */
 class GetQuerySuggestionsRequest extends Request
 {
@@ -17,9 +17,9 @@ class GetQuerySuggestionsRequest extends Request
      * @param array{
      *     IndexId: string,
      *     QueryText: string,
-     *     MaxSuggestionsCount?: int,
-     *     SuggestionTypes?: list<'QUERY'|'DOCUMENT_ATTRIBUTES'>,
-     *     AttributeSuggestionsConfig?: Shapes\AttributeSuggestionsGetConfig
+     *     MaxSuggestionsCount?: int|null,
+     *     SuggestionTypes?: list<'QUERY'|'DOCUMENT_ATTRIBUTES'>|null,
+     *     AttributeSuggestionsConfig?: Shapes\AttributeSuggestionsGetConfig|null
      * } $args
      */
     public function __construct(array $args)

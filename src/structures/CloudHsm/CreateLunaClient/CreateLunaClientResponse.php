@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudHsm\CreateLunaClient;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ClientArn
+ * @property string|null $ClientArn
  */
 class CreateLunaClientResponse extends Response
 {

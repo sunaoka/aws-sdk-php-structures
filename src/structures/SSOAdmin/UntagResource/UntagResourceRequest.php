@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\UntagResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $InstanceArn
+ * @property string|null $InstanceArn
  * @property string $ResourceArn
  * @property list<string> $TagKeys
  */
@@ -13,7 +13,7 @@ class UntagResourceRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceArn?: string,
+     *     InstanceArn?: string|null,
      *     ResourceArn: string,
      *     TagKeys: list<string>
      * } $args

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\RemovePolicyGrant;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $entityIdentifier
  * @property 'DOMAIN_UNIT'|'ENVIRONMENT_BLUEPRINT_CONFIGURATION'|'ENVIRONMENT_PROFILE' $entityType
@@ -16,7 +16,7 @@ class RemovePolicyGrantRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     entityIdentifier: string,
      *     entityType: 'DOMAIN_UNIT'|'ENVIRONMENT_BLUEPRINT_CONFIGURATION'|'ENVIRONMENT_PROFILE',

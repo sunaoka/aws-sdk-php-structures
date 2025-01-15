@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Billing\CreateBillingView\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DimensionValues $dimensions
- * @property TagValues $tags
+ * @property DimensionValues|null $dimensions
+ * @property TagValues|null $tags
  */
 class Expression extends Shape
 {
     /**
      * @param array{
-     *     dimensions?: DimensionValues,
-     *     tags?: TagValues
+     *     dimensions?: DimensionValues|null,
+     *     tags?: TagValues|null
      * } $args
      */
     public function __construct(array $args = [])

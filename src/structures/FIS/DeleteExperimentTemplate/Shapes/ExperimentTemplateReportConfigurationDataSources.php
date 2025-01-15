@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FIS\DeleteExperimentTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ExperimentTemplateReportConfigurationCloudWatchDashboard> $cloudWatchDashboards
+ * @property list<ExperimentTemplateReportConfigurationCloudWatchDashboard>|null $cloudWatchDashboards
  */
 class ExperimentTemplateReportConfigurationDataSources extends Shape
 {
     /**
-     * @param array{cloudWatchDashboards?: list<ExperimentTemplateReportConfigurationCloudWatchDashboard>} $args
+     * @param array{cloudWatchDashboards?: list<ExperimentTemplateReportConfigurationCloudWatchDashboard>|null} $args
      */
     public function __construct(array $args = [])
     {

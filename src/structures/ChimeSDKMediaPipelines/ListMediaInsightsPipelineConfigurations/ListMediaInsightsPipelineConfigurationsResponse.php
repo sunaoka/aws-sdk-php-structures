@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\ListMediaInsightsPipelin
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\MediaInsightsPipelineConfigurationSummary> $MediaInsightsPipelineConfigurations
- * @property string $NextToken
+ * @property list<Shapes\MediaInsightsPipelineConfigurationSummary>|null $MediaInsightsPipelineConfigurations
+ * @property string|null $NextToken
  */
 class ListMediaInsightsPipelineConfigurationsResponse extends Response
 {

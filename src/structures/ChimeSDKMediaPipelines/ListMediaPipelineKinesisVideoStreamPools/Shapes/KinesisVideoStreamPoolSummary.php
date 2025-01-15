@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\ListMediaPipelineKinesis
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PoolName
- * @property string $PoolId
- * @property string $PoolArn
+ * @property string|null $PoolName
+ * @property string|null $PoolId
+ * @property string|null $PoolArn
  */
 class KinesisVideoStreamPoolSummary extends Shape
 {
     /**
      * @param array{
-     *     PoolName?: string,
-     *     PoolId?: string,
-     *     PoolArn?: string
+     *     PoolName?: string|null,
+     *     PoolId?: string|null,
+     *     PoolArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

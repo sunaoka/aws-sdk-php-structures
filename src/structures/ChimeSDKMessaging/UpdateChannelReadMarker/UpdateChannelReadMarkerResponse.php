@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\UpdateChannelReadMarker;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
+ * @property string|null $ChannelArn
  */
 class UpdateChannelReadMarkerResponse extends Response
 {

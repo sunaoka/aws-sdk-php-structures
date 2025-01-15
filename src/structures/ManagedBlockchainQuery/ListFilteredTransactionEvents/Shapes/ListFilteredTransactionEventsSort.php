@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchainQuery\ListFilteredTransactionE
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'blockchainInstant' $sortBy
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
+ * @property 'blockchainInstant'|null $sortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
  */
 class ListFilteredTransactionEventsSort extends Shape
 {
     /**
      * @param array{
-     *     sortBy?: 'blockchainInstant',
-     *     sortOrder?: 'ASCENDING'|'DESCENDING'
+     *     sortBy?: 'blockchainInstant'|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */
     public function __construct(array $args = [])

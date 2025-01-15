@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\GetDataAutomationProject\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<BlueprintItem> $blueprints
+ * @property list<BlueprintItem>|null $blueprints
  */
 class CustomOutputConfiguration extends Shape
 {
     /**
-     * @param array{blueprints?: list<BlueprintItem>} $args
+     * @param array{blueprints?: list<BlueprintItem>|null} $args
      */
     public function __construct(array $args = [])
     {

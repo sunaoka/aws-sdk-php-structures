@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRooms\GetAnalysisTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $referencedTables
+ * @property list<string>|null $referencedTables
  */
 class AnalysisSchema extends Shape
 {
     /**
-     * @param array{referencedTables?: list<string>} $args
+     * @param array{referencedTables?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

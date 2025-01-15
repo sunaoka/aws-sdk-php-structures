@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingGroupName
- * @property string $parentGroupName
- * @property Shapes\ThingGroupProperties $thingGroupProperties
- * @property list<Shapes\Tag> $tags
+ * @property string|null $parentGroupName
+ * @property Shapes\ThingGroupProperties|null $thingGroupProperties
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateThingGroupRequest extends Request
 {
     /**
      * @param array{
      *     thingGroupName: string,
-     *     parentGroupName?: string,
-     *     thingGroupProperties?: Shapes\ThingGroupProperties,
-     *     tags?: list<Shapes\Tag>
+     *     parentGroupName?: string|null,
+     *     thingGroupProperties?: Shapes\ThingGroupProperties|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

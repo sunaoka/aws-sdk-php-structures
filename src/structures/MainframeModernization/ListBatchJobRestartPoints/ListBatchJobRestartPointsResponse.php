@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\ListBatchJobRestartPoint
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\JobStep> $batchJobSteps
+ * @property list<Shapes\JobStep>|null $batchJobSteps
  */
 class ListBatchJobRestartPointsResponse extends Response
 {

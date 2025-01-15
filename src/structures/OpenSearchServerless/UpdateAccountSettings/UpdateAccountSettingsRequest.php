@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateAccountSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\CapacityLimits $capacityLimits
+ * @property Shapes\CapacityLimits|null $capacityLimits
  */
 class UpdateAccountSettingsRequest extends Request
 {
     /**
-     * @param array{capacityLimits?: Shapes\CapacityLimits} $args
+     * @param array{capacityLimits?: Shapes\CapacityLimits|null} $args
      */
     public function __construct(array $args = [])
     {

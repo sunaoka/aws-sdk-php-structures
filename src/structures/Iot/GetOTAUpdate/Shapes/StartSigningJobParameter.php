@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\GetOTAUpdate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SigningProfileParameter $signingProfileParameter
- * @property string $signingProfileName
- * @property Destination $destination
+ * @property SigningProfileParameter|null $signingProfileParameter
+ * @property string|null $signingProfileName
+ * @property Destination|null $destination
  */
 class StartSigningJobParameter extends Shape
 {
     /**
      * @param array{
-     *     signingProfileParameter?: SigningProfileParameter,
-     *     signingProfileName?: string,
-     *     destination?: Destination
+     *     signingProfileParameter?: SigningProfileParameter|null,
+     *     signingProfileName?: string|null,
+     *     destination?: Destination|null
      * } $args
      */
     public function __construct(array $args = [])

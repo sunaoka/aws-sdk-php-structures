@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListDelegatedAdminAccounts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property 'ENABLED'|'DISABLE_IN_PROGRESS' $status
+ * @property string|null $accountId
+ * @property 'ENABLED'|'DISABLE_IN_PROGRESS'|null $status
  */
 class DelegatedAdminAccount extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     status?: 'ENABLED'|'DISABLE_IN_PROGRESS'
+     *     accountId?: string|null,
+     *     status?: 'ENABLED'|'DISABLE_IN_PROGRESS'|null
      * } $args
      */
     public function __construct(array $args = [])

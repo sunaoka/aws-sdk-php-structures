@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $DashboardId
  * @property 'IAM'|'QUICKSIGHT'|'ANONYMOUS' $IdentityType
- * @property int<15, 600> $SessionLifetimeInMinutes
- * @property bool $UndoRedoDisabled
- * @property bool $ResetDisabled
- * @property bool $StatePersistenceEnabled
- * @property string $UserArn
- * @property string $Namespace
- * @property list<string> $AdditionalDashboardIds
+ * @property int<15, 600>|null $SessionLifetimeInMinutes
+ * @property bool|null $UndoRedoDisabled
+ * @property bool|null $ResetDisabled
+ * @property bool|null $StatePersistenceEnabled
+ * @property string|null $UserArn
+ * @property string|null $Namespace
+ * @property list<string>|null $AdditionalDashboardIds
  */
 class GetDashboardEmbedUrlRequest extends Request
 {
@@ -23,13 +23,13 @@ class GetDashboardEmbedUrlRequest extends Request
      *     AwsAccountId: string,
      *     DashboardId: string,
      *     IdentityType: 'IAM'|'QUICKSIGHT'|'ANONYMOUS',
-     *     SessionLifetimeInMinutes?: int<15, 600>,
-     *     UndoRedoDisabled?: bool,
-     *     ResetDisabled?: bool,
-     *     StatePersistenceEnabled?: bool,
-     *     UserArn?: string,
-     *     Namespace?: string,
-     *     AdditionalDashboardIds?: list<string>
+     *     SessionLifetimeInMinutes?: int<15, 600>|null,
+     *     UndoRedoDisabled?: bool|null,
+     *     ResetDisabled?: bool|null,
+     *     StatePersistenceEnabled?: bool|null,
+     *     UserArn?: string|null,
+     *     Namespace?: string|null,
+     *     AdditionalDashboardIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

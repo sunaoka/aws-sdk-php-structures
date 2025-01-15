@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateUserProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceSpec $DefaultResourceSpec
- * @property list<CustomImage> $CustomImages
- * @property list<string> $LifecycleConfigArns
+ * @property ResourceSpec|null $DefaultResourceSpec
+ * @property list<CustomImage>|null $CustomImages
+ * @property list<string>|null $LifecycleConfigArns
  */
 class KernelGatewayAppSettings extends Shape
 {
     /**
      * @param array{
-     *     DefaultResourceSpec?: ResourceSpec,
-     *     CustomImages?: list<CustomImage>,
-     *     LifecycleConfigArns?: list<string>
+     *     DefaultResourceSpec?: ResourceSpec|null,
+     *     CustomImages?: list<CustomImage>|null,
+     *     LifecycleConfigArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

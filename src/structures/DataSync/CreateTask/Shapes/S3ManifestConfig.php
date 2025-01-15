@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ManifestObjectPath
  * @property string $BucketAccessRoleArn
  * @property string $S3BucketArn
- * @property string $ManifestObjectVersionId
+ * @property string|null $ManifestObjectVersionId
  */
 class S3ManifestConfig extends Shape
 {
@@ -17,7 +17,7 @@ class S3ManifestConfig extends Shape
      *     ManifestObjectPath: string,
      *     BucketAccessRoleArn: string,
      *     S3BucketArn: string,
-     *     ManifestObjectVersionId?: string
+     *     ManifestObjectVersionId?: string|null
      * } $args
      */
     public function __construct(array $args)

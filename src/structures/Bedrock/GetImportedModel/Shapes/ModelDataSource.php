@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetImportedModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3DataSource $s3DataSource
+ * @property S3DataSource|null $s3DataSource
  */
 class ModelDataSource extends Shape
 {
     /**
-     * @param array{s3DataSource?: S3DataSource} $args
+     * @param array{s3DataSource?: S3DataSource|null} $args
      */
     public function __construct(array $args = [])
     {

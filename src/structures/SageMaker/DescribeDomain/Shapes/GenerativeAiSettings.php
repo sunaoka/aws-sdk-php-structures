@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AmazonBedrockRoleArn
+ * @property string|null $AmazonBedrockRoleArn
  */
 class GenerativeAiSettings extends Shape
 {
     /**
-     * @param array{AmazonBedrockRoleArn?: string} $args
+     * @param array{AmazonBedrockRoleArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

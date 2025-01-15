@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $fullyQualifiedName
  * @property SignalFetchConfig $signalFetchConfig
- * @property int<1, 1> $conditionLanguageVersion
+ * @property int<1, 1>|null $conditionLanguageVersion
  * @property list<string> $actions
  */
 class SignalFetchInformation extends Shape
@@ -16,7 +16,7 @@ class SignalFetchInformation extends Shape
      * @param array{
      *     fullyQualifiedName: string,
      *     signalFetchConfig: SignalFetchConfig,
-     *     conditionLanguageVersion?: int<1, 1>,
+     *     conditionLanguageVersion?: int<1, 1>|null,
      *     actions: list<string>
      * } $args
      */

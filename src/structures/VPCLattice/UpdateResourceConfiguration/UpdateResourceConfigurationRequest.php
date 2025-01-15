@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateResourceConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $allowAssociationToShareableServiceNetwork
- * @property list<string> $portRanges
- * @property Shapes\ResourceConfigurationDefinition $resourceConfigurationDefinition
+ * @property bool|null $allowAssociationToShareableServiceNetwork
+ * @property list<string>|null $portRanges
+ * @property Shapes\ResourceConfigurationDefinition|null $resourceConfigurationDefinition
  * @property string $resourceConfigurationIdentifier
  */
 class UpdateResourceConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     allowAssociationToShareableServiceNetwork?: bool,
-     *     portRanges?: list<string>,
-     *     resourceConfigurationDefinition?: Shapes\ResourceConfigurationDefinition,
+     *     allowAssociationToShareableServiceNetwork?: bool|null,
+     *     portRanges?: list<string>|null,
+     *     resourceConfigurationDefinition?: Shapes\ResourceConfigurationDefinition|null,
      *     resourceConfigurationIdentifier: string
      * } $args
      */

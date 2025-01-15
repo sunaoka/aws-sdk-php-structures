@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\AcceptVpcPeeringConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CidrBlock
- * @property list<Ipv6CidrBlock> $Ipv6CidrBlockSet
- * @property list<CidrBlock> $CidrBlockSet
- * @property string $OwnerId
- * @property VpcPeeringConnectionOptionsDescription $PeeringOptions
- * @property string $VpcId
- * @property string $Region
+ * @property string|null $CidrBlock
+ * @property list<Ipv6CidrBlock>|null $Ipv6CidrBlockSet
+ * @property list<CidrBlock>|null $CidrBlockSet
+ * @property string|null $OwnerId
+ * @property VpcPeeringConnectionOptionsDescription|null $PeeringOptions
+ * @property string|null $VpcId
+ * @property string|null $Region
  */
 class VpcPeeringConnectionVpcInfo extends Shape
 {
     /**
      * @param array{
-     *     CidrBlock?: string,
-     *     Ipv6CidrBlockSet?: list<Ipv6CidrBlock>,
-     *     CidrBlockSet?: list<CidrBlock>,
-     *     OwnerId?: string,
-     *     PeeringOptions?: VpcPeeringConnectionOptionsDescription,
-     *     VpcId?: string,
-     *     Region?: string
+     *     CidrBlock?: string|null,
+     *     Ipv6CidrBlockSet?: list<Ipv6CidrBlock>|null,
+     *     CidrBlockSet?: list<CidrBlock>|null,
+     *     OwnerId?: string|null,
+     *     PeeringOptions?: VpcPeeringConnectionOptionsDescription|null,
+     *     VpcId?: string|null,
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

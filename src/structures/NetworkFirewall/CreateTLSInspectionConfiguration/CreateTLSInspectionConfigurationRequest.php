@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TLSInspectionConfigurationName
  * @property Shapes\TLSInspectionConfiguration $TLSInspectionConfiguration
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class CreateTLSInspectionConfigurationRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateTLSInspectionConfigurationRequest extends Request
      * @param array{
      *     TLSInspectionConfigurationName: string,
      *     TLSInspectionConfiguration: Shapes\TLSInspectionConfiguration,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

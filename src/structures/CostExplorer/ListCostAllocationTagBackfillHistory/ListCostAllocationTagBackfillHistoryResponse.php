@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CostExplorer\ListCostAllocationTagBackfillHisto
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\CostAllocationTagBackfillRequest> $BackfillRequests
- * @property string $NextToken
+ * @property list<Shapes\CostAllocationTagBackfillRequest>|null $BackfillRequests
+ * @property string|null $NextToken
  */
 class ListCostAllocationTagBackfillHistoryResponse extends Response
 {

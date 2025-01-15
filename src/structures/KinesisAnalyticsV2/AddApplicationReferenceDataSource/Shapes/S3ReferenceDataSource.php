@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\AddApplicationReferenceDataS
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BucketARN
- * @property string $FileKey
+ * @property string|null $BucketARN
+ * @property string|null $FileKey
  */
 class S3ReferenceDataSource extends Shape
 {
     /**
      * @param array{
-     *     BucketARN?: string,
-     *     FileKey?: string
+     *     BucketARN?: string|null,
+     *     FileKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

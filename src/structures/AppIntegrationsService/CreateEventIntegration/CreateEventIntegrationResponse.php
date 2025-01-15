@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\CreateEventIntegration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $EventIntegrationArn
+ * @property string|null $EventIntegrationArn
  */
 class CreateEventIntegrationResponse extends Response
 {

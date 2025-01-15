@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeImageScanFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $description
- * @property string $uri
- * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNDEFINED' $severity
- * @property list<Attribute> $attributes
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $uri
+ * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNDEFINED'|null $severity
+ * @property list<Attribute>|null $attributes
  */
 class ImageScanFinding extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     description?: string,
-     *     uri?: string,
-     *     severity?: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNDEFINED',
-     *     attributes?: list<Attribute>
+     *     name?: string|null,
+     *     description?: string|null,
+     *     uri?: string|null,
+     *     severity?: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNDEFINED'|null,
+     *     attributes?: list<Attribute>|null
      * } $args
      */
     public function __construct(array $args = [])

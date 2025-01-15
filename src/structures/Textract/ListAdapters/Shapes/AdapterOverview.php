@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Textract\ListAdapters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AdapterId
- * @property string $AdapterName
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'|'LAYOUT'> $FeatureTypes
+ * @property string|null $AdapterId
+ * @property string|null $AdapterName
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'|'LAYOUT'>|null $FeatureTypes
  */
 class AdapterOverview extends Shape
 {
     /**
      * @param array{
-     *     AdapterId?: string,
-     *     AdapterName?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     FeatureTypes?: list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'|'LAYOUT'>
+     *     AdapterId?: string|null,
+     *     AdapterName?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     FeatureTypes?: list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'|'LAYOUT'>|null
      * } $args
      */
     public function __construct(array $args = [])

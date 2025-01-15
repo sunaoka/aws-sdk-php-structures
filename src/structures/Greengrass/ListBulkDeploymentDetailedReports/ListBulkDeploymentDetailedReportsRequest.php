@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BulkDeploymentId
- * @property string $MaxResults
- * @property string $NextToken
+ * @property string|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListBulkDeploymentDetailedReportsRequest extends Request
 {
     /**
      * @param array{
      *     BulkDeploymentId: string,
-     *     MaxResults?: string,
-     *     NextToken?: string
+     *     MaxResults?: string|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

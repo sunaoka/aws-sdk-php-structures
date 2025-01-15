@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Glue\CreateTrigger\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EQUALS' $LogicalOperator
- * @property string $JobName
- * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|'ERROR'|'WAITING'|'EXPIRED' $State
- * @property string $CrawlerName
- * @property 'RUNNING'|'CANCELLING'|'CANCELLED'|'SUCCEEDED'|'FAILED'|'ERROR' $CrawlState
+ * @property 'EQUALS'|null $LogicalOperator
+ * @property string|null $JobName
+ * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|'ERROR'|'WAITING'|'EXPIRED'|null $State
+ * @property string|null $CrawlerName
+ * @property 'RUNNING'|'CANCELLING'|'CANCELLED'|'SUCCEEDED'|'FAILED'|'ERROR'|null $CrawlState
  */
 class Condition extends Shape
 {
     /**
      * @param array{
-     *     LogicalOperator?: 'EQUALS',
-     *     JobName?: string,
-     *     State?: 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|'ERROR'|'WAITING'|'EXPIRED',
-     *     CrawlerName?: string,
-     *     CrawlState?: 'RUNNING'|'CANCELLING'|'CANCELLED'|'SUCCEEDED'|'FAILED'|'ERROR'
+     *     LogicalOperator?: 'EQUALS'|null,
+     *     JobName?: string|null,
+     *     State?: 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|'ERROR'|'WAITING'|'EXPIRED'|null,
+     *     CrawlerName?: string|null,
+     *     CrawlState?: 'RUNNING'|'CANCELLING'|'CANCELLED'|'SUCCEEDED'|'FAILED'|'ERROR'|null
      * } $args
      */
     public function __construct(array $args = [])

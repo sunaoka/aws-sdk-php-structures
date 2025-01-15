@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $attribute
  * @property string $math
- * @property string $next
+ * @property string|null $next
  */
 class MathActivity extends Shape
 {
@@ -17,7 +17,7 @@ class MathActivity extends Shape
      *     name: string,
      *     attribute: string,
      *     math: string,
-     *     next?: string
+     *     next?: string|null
      * } $args
      */
     public function __construct(array $args)

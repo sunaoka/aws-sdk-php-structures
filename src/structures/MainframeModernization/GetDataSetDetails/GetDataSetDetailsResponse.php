@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\GetDataSetDetails;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $blocksize
- * @property \Aws\Api\DateTimeResult $creationTime
+ * @property int|null $blocksize
+ * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property string $dataSetName
- * @property Shapes\DatasetDetailOrgAttributes $dataSetOrg
- * @property int $fileSize
- * @property \Aws\Api\DateTimeResult $lastReferencedTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property string $location
- * @property int $recordLength
+ * @property Shapes\DatasetDetailOrgAttributes|null $dataSetOrg
+ * @property int|null $fileSize
+ * @property \Aws\Api\DateTimeResult|null $lastReferencedTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property string|null $location
+ * @property int|null $recordLength
  */
 class GetDataSetDetailsResponse extends Response
 {

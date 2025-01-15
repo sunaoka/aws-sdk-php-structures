@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\CreateIndex;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ObjectIdentifier
+ * @property string|null $ObjectIdentifier
  */
 class CreateIndexResponse extends Response
 {

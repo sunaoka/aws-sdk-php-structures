@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AutoScaling\CreateAutoScalingGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceId
- * @property string $ResourceType
+ * @property string|null $ResourceId
+ * @property string|null $ResourceType
  * @property string $Key
- * @property string $Value
- * @property bool $PropagateAtLaunch
+ * @property string|null $Value
+ * @property bool|null $PropagateAtLaunch
  */
 class Tag extends Shape
 {
     /**
      * @param array{
-     *     ResourceId?: string,
-     *     ResourceType?: string,
+     *     ResourceId?: string|null,
+     *     ResourceType?: string|null,
      *     Key: string,
-     *     Value?: string,
-     *     PropagateAtLaunch?: bool
+     *     Value?: string|null,
+     *     PropagateAtLaunch?: bool|null
      * } $args
      */
     public function __construct(array $args)

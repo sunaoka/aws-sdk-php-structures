@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListPortals\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Standard'|'IAM_Identity_Center' $authenticationType
- * @property string $browserSettingsArn
- * @property 'Chrome' $browserType
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property string $dataProtectionSettingsArn
- * @property string $displayName
- * @property 'standard.regular'|'standard.large'|'standard.xlarge' $instanceType
- * @property string $ipAccessSettingsArn
- * @property int<1, 5000> $maxConcurrentSessions
- * @property string $networkSettingsArn
+ * @property 'Standard'|'IAM_Identity_Center'|null $authenticationType
+ * @property string|null $browserSettingsArn
+ * @property 'Chrome'|null $browserType
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $dataProtectionSettingsArn
+ * @property string|null $displayName
+ * @property 'standard.regular'|'standard.large'|'standard.xlarge'|null $instanceType
+ * @property string|null $ipAccessSettingsArn
+ * @property int<1, 5000>|null $maxConcurrentSessions
+ * @property string|null $networkSettingsArn
  * @property string $portalArn
- * @property string $portalEndpoint
- * @property 'Incomplete'|'Pending'|'Active' $portalStatus
- * @property 'AppStream' $rendererType
- * @property string $trustStoreArn
- * @property string $userAccessLoggingSettingsArn
- * @property string $userSettingsArn
+ * @property string|null $portalEndpoint
+ * @property 'Incomplete'|'Pending'|'Active'|null $portalStatus
+ * @property 'AppStream'|null $rendererType
+ * @property string|null $trustStoreArn
+ * @property string|null $userAccessLoggingSettingsArn
+ * @property string|null $userSettingsArn
  */
 class PortalSummary extends Shape
 {
     /**
      * @param array{
-     *     authenticationType?: 'Standard'|'IAM_Identity_Center',
-     *     browserSettingsArn?: string,
-     *     browserType?: 'Chrome',
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     dataProtectionSettingsArn?: string,
-     *     displayName?: string,
-     *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge',
-     *     ipAccessSettingsArn?: string,
-     *     maxConcurrentSessions?: int<1, 5000>,
-     *     networkSettingsArn?: string,
+     *     authenticationType?: 'Standard'|'IAM_Identity_Center'|null,
+     *     browserSettingsArn?: string|null,
+     *     browserType?: 'Chrome'|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     dataProtectionSettingsArn?: string|null,
+     *     displayName?: string|null,
+     *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge'|null,
+     *     ipAccessSettingsArn?: string|null,
+     *     maxConcurrentSessions?: int<1, 5000>|null,
+     *     networkSettingsArn?: string|null,
      *     portalArn: string,
-     *     portalEndpoint?: string,
-     *     portalStatus?: 'Incomplete'|'Pending'|'Active',
-     *     rendererType?: 'AppStream',
-     *     trustStoreArn?: string,
-     *     userAccessLoggingSettingsArn?: string,
-     *     userSettingsArn?: string
+     *     portalEndpoint?: string|null,
+     *     portalStatus?: 'Incomplete'|'Pending'|'Active'|null,
+     *     rendererType?: 'AppStream'|null,
+     *     trustStoreArn?: string|null,
+     *     userAccessLoggingSettingsArn?: string|null,
+     *     userSettingsArn?: string|null
      * } $args
      */
     public function __construct(array $args)

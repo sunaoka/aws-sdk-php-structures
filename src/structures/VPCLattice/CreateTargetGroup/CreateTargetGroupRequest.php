@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\VPCLattice\CreateTargetGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property Shapes\TargetGroupConfig $config
+ * @property string|null $clientToken
+ * @property Shapes\TargetGroupConfig|null $config
  * @property string $name
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property 'IP'|'LAMBDA'|'INSTANCE'|'ALB' $type
  */
 class CreateTargetGroupRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     config?: Shapes\TargetGroupConfig,
+     *     clientToken?: string|null,
+     *     config?: Shapes\TargetGroupConfig|null,
      *     name: string,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     type: 'IP'|'LAMBDA'|'INSTANCE'|'ALB'
      * } $args
      */

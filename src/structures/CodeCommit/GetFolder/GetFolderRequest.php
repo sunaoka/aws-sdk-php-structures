@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $repositoryName
- * @property string $commitSpecifier
+ * @property string|null $commitSpecifier
  * @property string $folderPath
  */
 class GetFolderRequest extends Request
@@ -14,7 +14,7 @@ class GetFolderRequest extends Request
     /**
      * @param array{
      *     repositoryName: string,
-     *     commitSpecifier?: string,
+     *     commitSpecifier?: string|null,
      *     folderPath: string
      * } $args
      */

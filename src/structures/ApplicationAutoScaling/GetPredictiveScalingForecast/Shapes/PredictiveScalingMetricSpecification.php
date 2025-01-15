@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $TargetValue
- * @property PredictiveScalingPredefinedMetricPairSpecification $PredefinedMetricPairSpecification
- * @property PredictiveScalingPredefinedScalingMetricSpecification $PredefinedScalingMetricSpecification
- * @property PredictiveScalingPredefinedLoadMetricSpecification $PredefinedLoadMetricSpecification
- * @property PredictiveScalingCustomizedMetricSpecification $CustomizedScalingMetricSpecification
- * @property PredictiveScalingCustomizedMetricSpecification $CustomizedLoadMetricSpecification
- * @property PredictiveScalingCustomizedMetricSpecification $CustomizedCapacityMetricSpecification
+ * @property PredictiveScalingPredefinedMetricPairSpecification|null $PredefinedMetricPairSpecification
+ * @property PredictiveScalingPredefinedScalingMetricSpecification|null $PredefinedScalingMetricSpecification
+ * @property PredictiveScalingPredefinedLoadMetricSpecification|null $PredefinedLoadMetricSpecification
+ * @property PredictiveScalingCustomizedMetricSpecification|null $CustomizedScalingMetricSpecification
+ * @property PredictiveScalingCustomizedMetricSpecification|null $CustomizedLoadMetricSpecification
+ * @property PredictiveScalingCustomizedMetricSpecification|null $CustomizedCapacityMetricSpecification
  */
 class PredictiveScalingMetricSpecification extends Shape
 {
     /**
      * @param array{
      *     TargetValue: double,
-     *     PredefinedMetricPairSpecification?: PredictiveScalingPredefinedMetricPairSpecification,
-     *     PredefinedScalingMetricSpecification?: PredictiveScalingPredefinedScalingMetricSpecification,
-     *     PredefinedLoadMetricSpecification?: PredictiveScalingPredefinedLoadMetricSpecification,
-     *     CustomizedScalingMetricSpecification?: PredictiveScalingCustomizedMetricSpecification,
-     *     CustomizedLoadMetricSpecification?: PredictiveScalingCustomizedMetricSpecification,
-     *     CustomizedCapacityMetricSpecification?: PredictiveScalingCustomizedMetricSpecification
+     *     PredefinedMetricPairSpecification?: PredictiveScalingPredefinedMetricPairSpecification|null,
+     *     PredefinedScalingMetricSpecification?: PredictiveScalingPredefinedScalingMetricSpecification|null,
+     *     PredefinedLoadMetricSpecification?: PredictiveScalingPredefinedLoadMetricSpecification|null,
+     *     CustomizedScalingMetricSpecification?: PredictiveScalingCustomizedMetricSpecification|null,
+     *     CustomizedLoadMetricSpecification?: PredictiveScalingCustomizedMetricSpecification|null,
+     *     CustomizedCapacityMetricSpecification?: PredictiveScalingCustomizedMetricSpecification|null
      * } $args
      */
     public function __construct(array $args)

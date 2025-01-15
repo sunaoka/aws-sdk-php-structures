@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\StartOutboundVoiceContact;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ContactId
+ * @property string|null $ContactId
  */
 class StartOutboundVoiceContactResponse extends Response
 {

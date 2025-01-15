@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Field
- * @property 'asc'|'desc' $SortOrder
+ * @property string|null $Field
+ * @property 'asc'|'desc'|null $SortOrder
  */
 class SortCriterion extends Shape
 {
     /**
      * @param array{
-     *     Field?: string,
-     *     SortOrder?: 'asc'|'desc'
+     *     Field?: string|null,
+     *     SortOrder?: 'asc'|'desc'|null
      * } $args
      */
     public function __construct(array $args = [])

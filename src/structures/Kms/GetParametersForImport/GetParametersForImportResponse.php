@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Kms\GetParametersForImport;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $KeyId
- * @property \Psr\Http\Message\StreamInterface $ImportToken
- * @property \Psr\Http\Message\StreamInterface $PublicKey
- * @property \Aws\Api\DateTimeResult $ParametersValidTo
+ * @property string|null $KeyId
+ * @property \Psr\Http\Message\StreamInterface|null $ImportToken
+ * @property \Psr\Http\Message\StreamInterface|null $PublicKey
+ * @property \Aws\Api\DateTimeResult|null $ParametersValidTo
  */
 class GetParametersForImportResponse extends Response
 {

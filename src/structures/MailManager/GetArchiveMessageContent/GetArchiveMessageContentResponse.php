@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MailManager\GetArchiveMessageContent;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\MessageBody $Body
+ * @property Shapes\MessageBody|null $Body
  */
 class GetArchiveMessageContentResponse extends Response
 {

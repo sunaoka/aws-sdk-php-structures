@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
- * @property string $namespace
+ * @property string|null $namespace
  * @property string $package
  */
 class GetAssociatedPackageGroupRequest extends Request
@@ -16,9 +16,9 @@ class GetAssociatedPackageGroupRequest extends Request
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
-     *     namespace?: string,
+     *     namespace?: string|null,
      *     package: string
      * } $args
      */

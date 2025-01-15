@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobQueueName
  * @property string $jobQueueArn
  * @property 'ENABLED'|'DISABLED' $state
- * @property string $schedulingPolicyArn
- * @property 'CREATING'|'UPDATING'|'DELETING'|'DELETED'|'VALID'|'INVALID' $status
- * @property string $statusReason
+ * @property string|null $schedulingPolicyArn
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'DELETED'|'VALID'|'INVALID'|null $status
+ * @property string|null $statusReason
  * @property int $priority
  * @property list<ComputeEnvironmentOrder> $computeEnvironmentOrder
- * @property array<string, string> $tags
- * @property list<JobStateTimeLimitAction> $jobStateTimeLimitActions
+ * @property array<string, string>|null $tags
+ * @property list<JobStateTimeLimitAction>|null $jobStateTimeLimitActions
  */
 class JobQueueDetail extends Shape
 {
@@ -23,13 +23,13 @@ class JobQueueDetail extends Shape
      *     jobQueueName: string,
      *     jobQueueArn: string,
      *     state: 'ENABLED'|'DISABLED',
-     *     schedulingPolicyArn?: string,
-     *     status?: 'CREATING'|'UPDATING'|'DELETING'|'DELETED'|'VALID'|'INVALID',
-     *     statusReason?: string,
+     *     schedulingPolicyArn?: string|null,
+     *     status?: 'CREATING'|'UPDATING'|'DELETING'|'DELETED'|'VALID'|'INVALID'|null,
+     *     statusReason?: string|null,
      *     priority: int,
      *     computeEnvironmentOrder: list<ComputeEnvironmentOrder>,
-     *     tags?: array<string, string>,
-     *     jobStateTimeLimitActions?: list<JobStateTimeLimitAction>
+     *     tags?: array<string, string>|null,
+     *     jobStateTimeLimitActions?: list<JobStateTimeLimitAction>|null
      * } $args
      */
     public function __construct(array $args)

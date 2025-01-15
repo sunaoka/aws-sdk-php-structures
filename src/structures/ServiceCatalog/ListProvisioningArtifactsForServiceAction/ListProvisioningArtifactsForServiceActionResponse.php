@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListProvisioningArtifactsForServ
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ProvisioningArtifactView> $ProvisioningArtifactViews
- * @property string $NextPageToken
+ * @property list<Shapes\ProvisioningArtifactView>|null $ProvisioningArtifactViews
+ * @property string|null $NextPageToken
  */
 class ListProvisioningArtifactsForServiceActionResponse extends Response
 {

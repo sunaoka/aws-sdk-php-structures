@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ScriptId
- * @property string $Name
- * @property string $Version
- * @property Shapes\S3Location $StorageLocation
- * @property string|resource|\Psr\Http\Message\StreamInterface $ZipFile
+ * @property string|null $Name
+ * @property string|null $Version
+ * @property Shapes\S3Location|null $StorageLocation
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $ZipFile
  */
 class UpdateScriptRequest extends Request
 {
     /**
      * @param array{
      *     ScriptId: string,
-     *     Name?: string,
-     *     Version?: string,
-     *     StorageLocation?: Shapes\S3Location,
-     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface
+     *     Name?: string|null,
+     *     Version?: string|null,
+     *     StorageLocation?: Shapes\S3Location|null,
+     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeNetworkInsightsAnalyses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuleGroupArn
- * @property string $RuleGroupType
+ * @property string|null $RuleGroupArn
+ * @property string|null $RuleGroupType
  */
 class RuleGroupTypePair extends Shape
 {
     /**
      * @param array{
-     *     RuleGroupArn?: string,
-     *     RuleGroupType?: string
+     *     RuleGroupArn?: string|null,
+     *     RuleGroupType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

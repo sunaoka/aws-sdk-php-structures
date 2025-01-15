@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\DescribeDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property list<DatasetAction> $actions
- * @property list<DatasetTrigger> $triggers
- * @property list<DatasetContentDeliveryRule> $contentDeliveryRules
- * @property 'CREATING'|'ACTIVE'|'DELETING' $status
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property RetentionPeriod $retentionPeriod
- * @property VersioningConfiguration $versioningConfiguration
- * @property list<LateDataRule> $lateDataRules
+ * @property string|null $name
+ * @property string|null $arn
+ * @property list<DatasetAction>|null $actions
+ * @property list<DatasetTrigger>|null $triggers
+ * @property list<DatasetContentDeliveryRule>|null $contentDeliveryRules
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property RetentionPeriod|null $retentionPeriod
+ * @property VersioningConfiguration|null $versioningConfiguration
+ * @property list<LateDataRule>|null $lateDataRules
  */
 class Dataset extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     actions?: list<DatasetAction>,
-     *     triggers?: list<DatasetTrigger>,
-     *     contentDeliveryRules?: list<DatasetContentDeliveryRule>,
-     *     status?: 'CREATING'|'ACTIVE'|'DELETING',
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     retentionPeriod?: RetentionPeriod,
-     *     versioningConfiguration?: VersioningConfiguration,
-     *     lateDataRules?: list<LateDataRule>
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     actions?: list<DatasetAction>|null,
+     *     triggers?: list<DatasetTrigger>|null,
+     *     contentDeliveryRules?: list<DatasetContentDeliveryRule>|null,
+     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     retentionPeriod?: RetentionPeriod|null,
+     *     versioningConfiguration?: VersioningConfiguration|null,
+     *     lateDataRules?: list<LateDataRule>|null
      * } $args
      */
     public function __construct(array $args = [])

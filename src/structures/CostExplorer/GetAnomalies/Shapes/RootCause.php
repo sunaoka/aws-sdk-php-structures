@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetAnomalies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Service
- * @property string $Region
- * @property string $LinkedAccount
- * @property string $LinkedAccountName
- * @property string $UsageType
- * @property RootCauseImpact $Impact
+ * @property string|null $Service
+ * @property string|null $Region
+ * @property string|null $LinkedAccount
+ * @property string|null $LinkedAccountName
+ * @property string|null $UsageType
+ * @property RootCauseImpact|null $Impact
  */
 class RootCause extends Shape
 {
     /**
      * @param array{
-     *     Service?: string,
-     *     Region?: string,
-     *     LinkedAccount?: string,
-     *     LinkedAccountName?: string,
-     *     UsageType?: string,
-     *     Impact?: RootCauseImpact
+     *     Service?: string|null,
+     *     Region?: string|null,
+     *     LinkedAccount?: string|null,
+     *     LinkedAccountName?: string|null,
+     *     UsageType?: string|null,
+     *     Impact?: RootCauseImpact|null
      * } $args
      */
     public function __construct(array $args = [])

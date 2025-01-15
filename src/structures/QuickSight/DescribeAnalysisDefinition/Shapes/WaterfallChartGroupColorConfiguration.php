@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PositiveBarColor
- * @property string $NegativeBarColor
- * @property string $TotalBarColor
+ * @property string|null $PositiveBarColor
+ * @property string|null $NegativeBarColor
+ * @property string|null $TotalBarColor
  */
 class WaterfallChartGroupColorConfiguration extends Shape
 {
     /**
      * @param array{
-     *     PositiveBarColor?: string,
-     *     NegativeBarColor?: string,
-     *     TotalBarColor?: string
+     *     PositiveBarColor?: string|null,
+     *     NegativeBarColor?: string|null,
+     *     TotalBarColor?: string|null
      * } $args
      */
     public function __construct(array $args = [])

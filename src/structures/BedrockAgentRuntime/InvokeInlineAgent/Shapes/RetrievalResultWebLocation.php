@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $url
+ * @property string|null $url
  */
 class RetrievalResultWebLocation extends Shape
 {
     /**
-     * @param array{url?: string} $args
+     * @param array{url?: string|null} $args
      */
     public function __construct(array $args = [])
     {

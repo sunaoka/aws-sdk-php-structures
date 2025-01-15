@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\UpdateRepository\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $externalConnectionName
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $packageFormat
- * @property 'Available' $status
+ * @property string|null $externalConnectionName
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null $packageFormat
+ * @property 'Available'|null $status
  */
 class RepositoryExternalConnectionInfo extends Shape
 {
     /**
      * @param array{
-     *     externalConnectionName?: string,
-     *     packageFormat?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
-     *     status?: 'Available'
+     *     externalConnectionName?: string|null,
+     *     packageFormat?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null,
+     *     status?: 'Available'|null
      * } $args
      */
     public function __construct(array $args = [])

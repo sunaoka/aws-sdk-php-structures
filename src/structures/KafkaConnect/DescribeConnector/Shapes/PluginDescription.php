@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\DescribeConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomPluginDescription $customPlugin
+ * @property CustomPluginDescription|null $customPlugin
  */
 class PluginDescription extends Shape
 {
     /**
-     * @param array{customPlugin?: CustomPluginDescription} $args
+     * @param array{customPlugin?: CustomPluginDescription|null} $args
      */
     public function __construct(array $args = [])
     {

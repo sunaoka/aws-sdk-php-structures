@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeAddresses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AllocationId
- * @property string $AssociationId
- * @property 'vpc'|'standard' $Domain
- * @property string $NetworkInterfaceId
- * @property string $NetworkInterfaceOwnerId
- * @property string $PrivateIpAddress
- * @property list<Tag> $Tags
- * @property string $PublicIpv4Pool
- * @property string $NetworkBorderGroup
- * @property string $CustomerOwnedIp
- * @property string $CustomerOwnedIpv4Pool
- * @property string $CarrierIp
- * @property string $InstanceId
- * @property string $PublicIp
+ * @property string|null $AllocationId
+ * @property string|null $AssociationId
+ * @property 'vpc'|'standard'|null $Domain
+ * @property string|null $NetworkInterfaceId
+ * @property string|null $NetworkInterfaceOwnerId
+ * @property string|null $PrivateIpAddress
+ * @property list<Tag>|null $Tags
+ * @property string|null $PublicIpv4Pool
+ * @property string|null $NetworkBorderGroup
+ * @property string|null $CustomerOwnedIp
+ * @property string|null $CustomerOwnedIpv4Pool
+ * @property string|null $CarrierIp
+ * @property string|null $InstanceId
+ * @property string|null $PublicIp
  */
 class Address extends Shape
 {
     /**
      * @param array{
-     *     AllocationId?: string,
-     *     AssociationId?: string,
-     *     Domain?: 'vpc'|'standard',
-     *     NetworkInterfaceId?: string,
-     *     NetworkInterfaceOwnerId?: string,
-     *     PrivateIpAddress?: string,
-     *     Tags?: list<Tag>,
-     *     PublicIpv4Pool?: string,
-     *     NetworkBorderGroup?: string,
-     *     CustomerOwnedIp?: string,
-     *     CustomerOwnedIpv4Pool?: string,
-     *     CarrierIp?: string,
-     *     InstanceId?: string,
-     *     PublicIp?: string
+     *     AllocationId?: string|null,
+     *     AssociationId?: string|null,
+     *     Domain?: 'vpc'|'standard'|null,
+     *     NetworkInterfaceId?: string|null,
+     *     NetworkInterfaceOwnerId?: string|null,
+     *     PrivateIpAddress?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     PublicIpv4Pool?: string|null,
+     *     NetworkBorderGroup?: string|null,
+     *     CustomerOwnedIp?: string|null,
+     *     CustomerOwnedIpv4Pool?: string|null,
+     *     CarrierIp?: string|null,
+     *     InstanceId?: string|null,
+     *     PublicIp?: string|null
      * } $args
      */
     public function __construct(array $args = [])

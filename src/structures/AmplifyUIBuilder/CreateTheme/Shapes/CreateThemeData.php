@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property list<ThemeValues> $values
- * @property list<ThemeValues> $overrides
- * @property array<string, string> $tags
+ * @property list<ThemeValues>|null $overrides
+ * @property array<string, string>|null $tags
  */
 class CreateThemeData extends Shape
 {
@@ -16,8 +16,8 @@ class CreateThemeData extends Shape
      * @param array{
      *     name: string,
      *     values: list<ThemeValues>,
-     *     overrides?: list<ThemeValues>,
-     *     tags?: array<string, string>
+     *     overrides?: list<ThemeValues>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

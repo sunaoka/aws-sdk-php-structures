@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SUCCEEDED'|'PENDING'|'FAILED'|'STARTED' $code
- * @property string $message
+ * @property 'SUCCEEDED'|'PENDING'|'FAILED'|'STARTED'|null $code
+ * @property string|null $message
  */
 class R53HostedZoneDeletionState extends Shape
 {
     /**
      * @param array{
-     *     code?: 'SUCCEEDED'|'PENDING'|'FAILED'|'STARTED',
-     *     message?: string
+     *     code?: 'SUCCEEDED'|'PENDING'|'FAILED'|'STARTED'|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

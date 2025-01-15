@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoice\SendVoiceMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CallInstructionsMessageType $CallInstructionsMessage
- * @property PlainTextMessageType $PlainTextMessage
- * @property SSMLMessageType $SSMLMessage
+ * @property CallInstructionsMessageType|null $CallInstructionsMessage
+ * @property PlainTextMessageType|null $PlainTextMessage
+ * @property SSMLMessageType|null $SSMLMessage
  */
 class VoiceMessageContent extends Shape
 {
     /**
      * @param array{
-     *     CallInstructionsMessage?: CallInstructionsMessageType,
-     *     PlainTextMessage?: PlainTextMessageType,
-     *     SSMLMessage?: SSMLMessageType
+     *     CallInstructionsMessage?: CallInstructionsMessageType|null,
+     *     PlainTextMessage?: PlainTextMessageType|null,
+     *     SSMLMessage?: SSMLMessageType|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $frameworkId
  * @property string $name
- * @property string $description
- * @property string $complianceType
+ * @property string|null $description
+ * @property string|null $complianceType
  * @property list<Shapes\UpdateAssessmentFrameworkControlSet> $controlSets
  */
 class UpdateAssessmentFrameworkRequest extends Request
@@ -17,8 +17,8 @@ class UpdateAssessmentFrameworkRequest extends Request
      * @param array{
      *     frameworkId: string,
      *     name: string,
-     *     description?: string,
-     *     complianceType?: string,
+     *     description?: string|null,
+     *     complianceType?: string|null,
      *     controlSets: list<Shapes\UpdateAssessmentFrameworkControlSet>
      * } $args
      */

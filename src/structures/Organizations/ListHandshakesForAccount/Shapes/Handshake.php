@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Organizations\ListHandshakesForAccount\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property list<HandshakeParty> $Parties
- * @property 'REQUESTED'|'OPEN'|'CANCELED'|'ACCEPTED'|'DECLINED'|'EXPIRED' $State
- * @property \Aws\Api\DateTimeResult $RequestedTimestamp
- * @property \Aws\Api\DateTimeResult $ExpirationTimestamp
- * @property 'INVITE'|'ENABLE_ALL_FEATURES'|'APPROVE_ALL_FEATURES'|'ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE' $Action
- * @property list<HandshakeResource> $Resources
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property list<HandshakeParty>|null $Parties
+ * @property 'REQUESTED'|'OPEN'|'CANCELED'|'ACCEPTED'|'DECLINED'|'EXPIRED'|null $State
+ * @property \Aws\Api\DateTimeResult|null $RequestedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTimestamp
+ * @property 'INVITE'|'ENABLE_ALL_FEATURES'|'APPROVE_ALL_FEATURES'|'ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE'|null $Action
+ * @property list<HandshakeResource>|null $Resources
  */
 class Handshake extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Parties?: list<HandshakeParty>,
-     *     State?: 'REQUESTED'|'OPEN'|'CANCELED'|'ACCEPTED'|'DECLINED'|'EXPIRED',
-     *     RequestedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ExpirationTimestamp?: \Aws\Api\DateTimeResult,
-     *     Action?: 'INVITE'|'ENABLE_ALL_FEATURES'|'APPROVE_ALL_FEATURES'|'ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE',
-     *     Resources?: list<HandshakeResource>
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Parties?: list<HandshakeParty>|null,
+     *     State?: 'REQUESTED'|'OPEN'|'CANCELED'|'ACCEPTED'|'DECLINED'|'EXPIRED'|null,
+     *     RequestedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ExpirationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Action?: 'INVITE'|'ENABLE_ALL_FEATURES'|'APPROVE_ALL_FEATURES'|'ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE'|null,
+     *     Resources?: list<HandshakeResource>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ECSSavingsEstimationMode $savingsEstimationMode
+ * @property ECSSavingsEstimationMode|null $savingsEstimationMode
  */
 class ECSEffectiveRecommendationPreferences extends Shape
 {
     /**
-     * @param array{savingsEstimationMode?: ECSSavingsEstimationMode} $args
+     * @param array{savingsEstimationMode?: ECSSavingsEstimationMode|null} $args
      */
     public function __construct(array $args = [])
     {

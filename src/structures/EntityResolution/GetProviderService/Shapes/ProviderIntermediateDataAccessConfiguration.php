@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetProviderService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $awsAccountIds
- * @property list<string> $requiredBucketActions
+ * @property list<string>|null $awsAccountIds
+ * @property list<string>|null $requiredBucketActions
  */
 class ProviderIntermediateDataAccessConfiguration extends Shape
 {
     /**
      * @param array{
-     *     awsAccountIds?: list<string>,
-     *     requiredBucketActions?: list<string>
+     *     awsAccountIds?: list<string>|null,
+     *     requiredBucketActions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

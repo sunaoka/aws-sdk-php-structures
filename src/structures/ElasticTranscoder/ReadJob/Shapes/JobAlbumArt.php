@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ReadJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MergePolicy
- * @property list<Artwork> $Artwork
+ * @property string|null $MergePolicy
+ * @property list<Artwork>|null $Artwork
  */
 class JobAlbumArt extends Shape
 {
     /**
      * @param array{
-     *     MergePolicy?: string,
-     *     Artwork?: list<Artwork>
+     *     MergePolicy?: string|null,
+     *     Artwork?: list<Artwork>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateMessageTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $address
+ * @property string|null $address
  */
 class SystemEndpointAttributes extends Shape
 {
     /**
-     * @param array{address?: string} $args
+     * @param array{address?: string|null} $args
      */
     public function __construct(array $args = [])
     {

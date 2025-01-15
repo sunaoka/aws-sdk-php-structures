@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceName
- * @property AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetails $Ebs
- * @property bool $NoDevice
- * @property string $VirtualName
+ * @property string|null $DeviceName
+ * @property AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetails|null $Ebs
+ * @property bool|null $NoDevice
+ * @property string|null $VirtualName
  */
 class AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetails extends Shape
 {
     /**
      * @param array{
-     *     DeviceName?: string,
-     *     Ebs?: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetails,
-     *     NoDevice?: bool,
-     *     VirtualName?: string
+     *     DeviceName?: string|null,
+     *     Ebs?: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetails|null,
+     *     NoDevice?: bool|null,
+     *     VirtualName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

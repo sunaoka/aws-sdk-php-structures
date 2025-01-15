@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListTests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $total
- * @property int $passed
- * @property int $failed
- * @property int $warned
- * @property int $errored
- * @property int $stopped
- * @property int $skipped
+ * @property int|null $total
+ * @property int|null $passed
+ * @property int|null $failed
+ * @property int|null $warned
+ * @property int|null $errored
+ * @property int|null $stopped
+ * @property int|null $skipped
  */
 class Counters extends Shape
 {
     /**
      * @param array{
-     *     total?: int,
-     *     passed?: int,
-     *     failed?: int,
-     *     warned?: int,
-     *     errored?: int,
-     *     stopped?: int,
-     *     skipped?: int
+     *     total?: int|null,
+     *     passed?: int|null,
+     *     failed?: int|null,
+     *     warned?: int|null,
+     *     errored?: int|null,
+     *     stopped?: int|null,
+     *     skipped?: int|null
      * } $args
      */
     public function __construct(array $args = [])

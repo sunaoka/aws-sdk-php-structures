@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeOrganizationResourceCollecti
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property AccountInsightHealth $Insight
+ * @property string|null $AccountId
+ * @property AccountInsightHealth|null $Insight
  */
 class AccountHealth extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     Insight?: AccountInsightHealth
+     *     AccountId?: string|null,
+     *     Insight?: AccountInsightHealth|null
      * } $args
      */
     public function __construct(array $args = [])

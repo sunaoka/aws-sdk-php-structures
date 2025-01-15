@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ServerlessApplicationRepository\CreateCloudForm
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationId
- * @property string $ChangeSetId
- * @property string $SemanticVersion
- * @property string $StackId
+ * @property string|null $ApplicationId
+ * @property string|null $ChangeSetId
+ * @property string|null $SemanticVersion
+ * @property string|null $StackId
  */
 class CreateCloudFormationChangeSetResponse extends Response
 {

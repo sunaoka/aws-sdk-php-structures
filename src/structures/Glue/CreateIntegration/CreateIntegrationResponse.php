@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $SourceArn
  * @property string $TargetArn
  * @property string $IntegrationName
- * @property string $Description
+ * @property string|null $Description
  * @property string $IntegrationArn
- * @property string $KmsKeyId
- * @property array<string, string> $AdditionalEncryptionContext
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $KmsKeyId
+ * @property array<string, string>|null $AdditionalEncryptionContext
+ * @property list<Shapes\Tag>|null $Tags
  * @property 'CREATING'|'ACTIVE'|'MODIFYING'|'FAILED'|'DELETING'|'SYNCING'|'NEEDS_ATTENTION' $Status
  * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<Shapes\IntegrationError> $Errors
- * @property string $DataFilter
+ * @property list<Shapes\IntegrationError>|null $Errors
+ * @property string|null $DataFilter
  */
 class CreateIntegrationResponse extends Response
 {

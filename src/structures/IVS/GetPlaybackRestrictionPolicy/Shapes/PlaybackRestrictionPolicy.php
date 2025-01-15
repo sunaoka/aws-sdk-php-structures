@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $allowedCountries
  * @property list<string> $allowedOrigins
  * @property string $arn
- * @property bool $enableStrictOriginEnforcement
- * @property string $name
- * @property array<string, string> $tags
+ * @property bool|null $enableStrictOriginEnforcement
+ * @property string|null $name
+ * @property array<string, string>|null $tags
  */
 class PlaybackRestrictionPolicy extends Shape
 {
@@ -19,9 +19,9 @@ class PlaybackRestrictionPolicy extends Shape
      *     allowedCountries: list<string>,
      *     allowedOrigins: list<string>,
      *     arn: string,
-     *     enableStrictOriginEnforcement?: bool,
-     *     name?: string,
-     *     tags?: array<string, string>
+     *     enableStrictOriginEnforcement?: bool|null,
+     *     name?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails $AwsVpcConfiguration
+ * @property AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails|null $AwsVpcConfiguration
  */
 class AwsEcsServiceNetworkConfigurationDetails extends Shape
 {
     /**
-     * @param array{AwsVpcConfiguration?: AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails} $args
+     * @param array{AwsVpcConfiguration?: AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails|null} $args
      */
     public function __construct(array $args = [])
     {

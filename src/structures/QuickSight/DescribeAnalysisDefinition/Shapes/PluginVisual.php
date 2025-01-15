@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $VisualId
  * @property string $PluginArn
- * @property VisualTitleLabelOptions $Title
- * @property VisualSubtitleLabelOptions $Subtitle
- * @property PluginVisualConfiguration $ChartConfiguration
- * @property string $VisualContentAltText
+ * @property VisualTitleLabelOptions|null $Title
+ * @property VisualSubtitleLabelOptions|null $Subtitle
+ * @property PluginVisualConfiguration|null $ChartConfiguration
+ * @property string|null $VisualContentAltText
  */
 class PluginVisual extends Shape
 {
@@ -18,10 +18,10 @@ class PluginVisual extends Shape
      * @param array{
      *     VisualId: string,
      *     PluginArn: string,
-     *     Title?: VisualTitleLabelOptions,
-     *     Subtitle?: VisualSubtitleLabelOptions,
-     *     ChartConfiguration?: PluginVisualConfiguration,
-     *     VisualContentAltText?: string
+     *     Title?: VisualTitleLabelOptions|null,
+     *     Subtitle?: VisualSubtitleLabelOptions|null,
+     *     ChartConfiguration?: PluginVisualConfiguration|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

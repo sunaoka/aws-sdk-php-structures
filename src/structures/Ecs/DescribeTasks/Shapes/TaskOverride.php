@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ContainerOverride> $containerOverrides
- * @property string $cpu
- * @property list<InferenceAcceleratorOverride> $inferenceAcceleratorOverrides
- * @property string $executionRoleArn
- * @property string $memory
- * @property string $taskRoleArn
- * @property EphemeralStorage $ephemeralStorage
+ * @property list<ContainerOverride>|null $containerOverrides
+ * @property string|null $cpu
+ * @property list<InferenceAcceleratorOverride>|null $inferenceAcceleratorOverrides
+ * @property string|null $executionRoleArn
+ * @property string|null $memory
+ * @property string|null $taskRoleArn
+ * @property EphemeralStorage|null $ephemeralStorage
  */
 class TaskOverride extends Shape
 {
     /**
      * @param array{
-     *     containerOverrides?: list<ContainerOverride>,
-     *     cpu?: string,
-     *     inferenceAcceleratorOverrides?: list<InferenceAcceleratorOverride>,
-     *     executionRoleArn?: string,
-     *     memory?: string,
-     *     taskRoleArn?: string,
-     *     ephemeralStorage?: EphemeralStorage
+     *     containerOverrides?: list<ContainerOverride>|null,
+     *     cpu?: string|null,
+     *     inferenceAcceleratorOverrides?: list<InferenceAcceleratorOverride>|null,
+     *     executionRoleArn?: string|null,
+     *     memory?: string|null,
+     *     taskRoleArn?: string|null,
+     *     ephemeralStorage?: EphemeralStorage|null
      * } $args
      */
     public function __construct(array $args = [])

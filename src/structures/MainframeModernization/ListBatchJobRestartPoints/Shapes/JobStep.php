@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\ListBatchJobRestartPoint
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $procStepName
- * @property int $procStepNumber
- * @property string $stepCondCode
- * @property string $stepName
- * @property int $stepNumber
- * @property bool $stepRestartable
+ * @property string|null $procStepName
+ * @property int|null $procStepNumber
+ * @property string|null $stepCondCode
+ * @property string|null $stepName
+ * @property int|null $stepNumber
+ * @property bool|null $stepRestartable
  */
 class JobStep extends Shape
 {
     /**
      * @param array{
-     *     procStepName?: string,
-     *     procStepNumber?: int,
-     *     stepCondCode?: string,
-     *     stepName?: string,
-     *     stepNumber?: int,
-     *     stepRestartable?: bool
+     *     procStepName?: string|null,
+     *     procStepNumber?: int|null,
+     *     stepCondCode?: string|null,
+     *     stepName?: string|null,
+     *     stepNumber?: int|null,
+     *     stepRestartable?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

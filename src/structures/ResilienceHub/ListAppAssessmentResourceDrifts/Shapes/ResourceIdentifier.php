@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppAssessmentResourceDrifts\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LogicalResourceId $logicalResourceId
- * @property string $resourceType
+ * @property LogicalResourceId|null $logicalResourceId
+ * @property string|null $resourceType
  */
 class ResourceIdentifier extends Shape
 {
     /**
      * @param array{
-     *     logicalResourceId?: LogicalResourceId,
-     *     resourceType?: string
+     *     logicalResourceId?: LogicalResourceId|null,
+     *     resourceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

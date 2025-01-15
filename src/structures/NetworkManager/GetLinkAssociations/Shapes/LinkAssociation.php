@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetLinkAssociations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GlobalNetworkId
- * @property string $DeviceId
- * @property string $LinkId
- * @property 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED' $LinkAssociationState
+ * @property string|null $GlobalNetworkId
+ * @property string|null $DeviceId
+ * @property string|null $LinkId
+ * @property 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|null $LinkAssociationState
  */
 class LinkAssociation extends Shape
 {
     /**
      * @param array{
-     *     GlobalNetworkId?: string,
-     *     DeviceId?: string,
-     *     LinkId?: string,
-     *     LinkAssociationState?: 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'
+     *     GlobalNetworkId?: string|null,
+     *     DeviceId?: string|null,
+     *     LinkId?: string|null,
+     *     LinkAssociationState?: 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

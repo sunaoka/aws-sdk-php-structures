@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MailManager\UpdateTrafficPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IngressAnalysis $Analysis
+ * @property IngressAnalysis|null $Analysis
  */
 class IngressBooleanToEvaluate extends Shape
 {
     /**
-     * @param array{Analysis?: IngressAnalysis} $args
+     * @param array{Analysis?: IngressAnalysis|null} $args
      */
     public function __construct(array $args = [])
     {

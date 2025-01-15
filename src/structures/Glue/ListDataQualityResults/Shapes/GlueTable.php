@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $DatabaseName
  * @property string $TableName
- * @property string $CatalogId
- * @property string $ConnectionName
- * @property array<string, string> $AdditionalOptions
+ * @property string|null $CatalogId
+ * @property string|null $ConnectionName
+ * @property array<string, string>|null $AdditionalOptions
  */
 class GlueTable extends Shape
 {
@@ -17,9 +17,9 @@ class GlueTable extends Shape
      * @param array{
      *     DatabaseName: string,
      *     TableName: string,
-     *     CatalogId?: string,
-     *     ConnectionName?: string,
-     *     AdditionalOptions?: array<string, string>
+     *     CatalogId?: string|null,
+     *     ConnectionName?: string|null,
+     *     AdditionalOptions?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,93 +5,93 @@ namespace Sunaoka\Aws\Structures\S3\CopyObject;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control' $ACL
+ * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null $ACL
  * @property string $Bucket
- * @property string $CacheControl
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
- * @property string $ContentDisposition
- * @property string $ContentEncoding
- * @property string $ContentLanguage
- * @property string $ContentType
+ * @property string|null $CacheControl
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property string|null $ContentDisposition
+ * @property string|null $ContentEncoding
+ * @property string|null $ContentLanguage
+ * @property string|null $ContentType
  * @property string $CopySource
- * @property string $CopySourceIfMatch
- * @property \Aws\Api\DateTimeResult $CopySourceIfModifiedSince
- * @property string $CopySourceIfNoneMatch
- * @property \Aws\Api\DateTimeResult $CopySourceIfUnmodifiedSince
- * @property \Aws\Api\DateTimeResult $Expires
- * @property string $GrantFullControl
- * @property string $GrantRead
- * @property string $GrantReadACP
- * @property string $GrantWriteACP
+ * @property string|null $CopySourceIfMatch
+ * @property \Aws\Api\DateTimeResult|null $CopySourceIfModifiedSince
+ * @property string|null $CopySourceIfNoneMatch
+ * @property \Aws\Api\DateTimeResult|null $CopySourceIfUnmodifiedSince
+ * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $GrantFullControl
+ * @property string|null $GrantRead
+ * @property string|null $GrantReadACP
+ * @property string|null $GrantWriteACP
  * @property string $Key
- * @property array<string, string> $Metadata
- * @property 'COPY'|'REPLACE' $MetadataDirective
- * @property 'COPY'|'REPLACE' $TaggingDirective
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse' $ServerSideEncryption
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE' $StorageClass
- * @property string $WebsiteRedirectLocation
- * @property string $SSECustomerAlgorithm
- * @property string $SSECustomerKey
- * @property string $SSECustomerKeyMD5
- * @property string $SSEKMSKeyId
- * @property string $SSEKMSEncryptionContext
- * @property bool $BucketKeyEnabled
- * @property string $CopySourceSSECustomerAlgorithm
- * @property string $CopySourceSSECustomerKey
- * @property string $CopySourceSSECustomerKeyMD5
- * @property 'requester' $RequestPayer
- * @property string $Tagging
- * @property 'GOVERNANCE'|'COMPLIANCE' $ObjectLockMode
- * @property \Aws\Api\DateTimeResult $ObjectLockRetainUntilDate
- * @property 'ON'|'OFF' $ObjectLockLegalHoldStatus
- * @property string $ExpectedBucketOwner
- * @property string $ExpectedSourceBucketOwner
+ * @property array<string, string>|null $Metadata
+ * @property 'COPY'|'REPLACE'|null $MetadataDirective
+ * @property 'COPY'|'REPLACE'|null $TaggingDirective
+ * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property string|null $WebsiteRedirectLocation
+ * @property string|null $SSECustomerAlgorithm
+ * @property string|null $SSECustomerKey
+ * @property string|null $SSECustomerKeyMD5
+ * @property string|null $SSEKMSKeyId
+ * @property string|null $SSEKMSEncryptionContext
+ * @property bool|null $BucketKeyEnabled
+ * @property string|null $CopySourceSSECustomerAlgorithm
+ * @property string|null $CopySourceSSECustomerKey
+ * @property string|null $CopySourceSSECustomerKeyMD5
+ * @property 'requester'|null $RequestPayer
+ * @property string|null $Tagging
+ * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
+ * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
+ * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
+ * @property string|null $ExpectedBucketOwner
+ * @property string|null $ExpectedSourceBucketOwner
  */
 class CopyObjectRequest extends Request
 {
     /**
      * @param array{
-     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control',
+     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null,
      *     Bucket: string,
-     *     CacheControl?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
-     *     ContentDisposition?: string,
-     *     ContentEncoding?: string,
-     *     ContentLanguage?: string,
-     *     ContentType?: string,
+     *     CacheControl?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ContentDisposition?: string|null,
+     *     ContentEncoding?: string|null,
+     *     ContentLanguage?: string|null,
+     *     ContentType?: string|null,
      *     CopySource: string,
-     *     CopySourceIfMatch?: string,
-     *     CopySourceIfModifiedSince?: \Aws\Api\DateTimeResult,
-     *     CopySourceIfNoneMatch?: string,
-     *     CopySourceIfUnmodifiedSince?: \Aws\Api\DateTimeResult,
-     *     Expires?: \Aws\Api\DateTimeResult,
-     *     GrantFullControl?: string,
-     *     GrantRead?: string,
-     *     GrantReadACP?: string,
-     *     GrantWriteACP?: string,
+     *     CopySourceIfMatch?: string|null,
+     *     CopySourceIfModifiedSince?: \Aws\Api\DateTimeResult|null,
+     *     CopySourceIfNoneMatch?: string|null,
+     *     CopySourceIfUnmodifiedSince?: \Aws\Api\DateTimeResult|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     GrantFullControl?: string|null,
+     *     GrantRead?: string|null,
+     *     GrantReadACP?: string|null,
+     *     GrantWriteACP?: string|null,
      *     Key: string,
-     *     Metadata?: array<string, string>,
-     *     MetadataDirective?: 'COPY'|'REPLACE',
-     *     TaggingDirective?: 'COPY'|'REPLACE',
-     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse',
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE',
-     *     WebsiteRedirectLocation?: string,
-     *     SSECustomerAlgorithm?: string,
-     *     SSECustomerKey?: string,
-     *     SSECustomerKeyMD5?: string,
-     *     SSEKMSKeyId?: string,
-     *     SSEKMSEncryptionContext?: string,
-     *     BucketKeyEnabled?: bool,
-     *     CopySourceSSECustomerAlgorithm?: string,
-     *     CopySourceSSECustomerKey?: string,
-     *     CopySourceSSECustomerKeyMD5?: string,
-     *     RequestPayer?: 'requester',
-     *     Tagging?: string,
-     *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE',
-     *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult,
-     *     ObjectLockLegalHoldStatus?: 'ON'|'OFF',
-     *     ExpectedBucketOwner?: string,
-     *     ExpectedSourceBucketOwner?: string
+     *     Metadata?: array<string, string>|null,
+     *     MetadataDirective?: 'COPY'|'REPLACE'|null,
+     *     TaggingDirective?: 'COPY'|'REPLACE'|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     WebsiteRedirectLocation?: string|null,
+     *     SSECustomerAlgorithm?: string|null,
+     *     SSECustomerKey?: string|null,
+     *     SSECustomerKeyMD5?: string|null,
+     *     SSEKMSKeyId?: string|null,
+     *     SSEKMSEncryptionContext?: string|null,
+     *     BucketKeyEnabled?: bool|null,
+     *     CopySourceSSECustomerAlgorithm?: string|null,
+     *     CopySourceSSECustomerKey?: string|null,
+     *     CopySourceSSECustomerKeyMD5?: string|null,
+     *     RequestPayer?: 'requester'|null,
+     *     Tagging?: string|null,
+     *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE'|null,
+     *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
+     *     ObjectLockLegalHoldStatus?: 'ON'|'OFF'|null,
+     *     ExpectedBucketOwner?: string|null,
+     *     ExpectedSourceBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

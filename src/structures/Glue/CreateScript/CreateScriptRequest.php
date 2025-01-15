@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\CreateScript;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\CodeGenNode> $DagNodes
- * @property list<Shapes\CodeGenEdge> $DagEdges
- * @property 'PYTHON'|'SCALA' $Language
+ * @property list<Shapes\CodeGenNode>|null $DagNodes
+ * @property list<Shapes\CodeGenEdge>|null $DagEdges
+ * @property 'PYTHON'|'SCALA'|null $Language
  */
 class CreateScriptRequest extends Request
 {
     /**
      * @param array{
-     *     DagNodes?: list<Shapes\CodeGenNode>,
-     *     DagEdges?: list<Shapes\CodeGenEdge>,
-     *     Language?: 'PYTHON'|'SCALA'
+     *     DagNodes?: list<Shapes\CodeGenNode>|null,
+     *     DagEdges?: list<Shapes\CodeGenEdge>|null,
+     *     Language?: 'PYTHON'|'SCALA'|null
      * } $args
      */
     public function __construct(array $args = [])

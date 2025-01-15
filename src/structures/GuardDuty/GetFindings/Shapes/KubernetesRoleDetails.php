@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Kind
- * @property string $Name
- * @property string $Uid
+ * @property string|null $Kind
+ * @property string|null $Name
+ * @property string|null $Uid
  */
 class KubernetesRoleDetails extends Shape
 {
     /**
      * @param array{
-     *     Kind?: string,
-     *     Name?: string,
-     *     Uid?: string
+     *     Kind?: string|null,
+     *     Name?: string|null,
+     *     Uid?: string|null
      * } $args
      */
     public function __construct(array $args = [])

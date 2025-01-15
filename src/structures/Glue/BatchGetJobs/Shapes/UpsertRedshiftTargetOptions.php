@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TableLocation
- * @property string $ConnectionName
- * @property list<string> $UpsertKeys
+ * @property string|null $TableLocation
+ * @property string|null $ConnectionName
+ * @property list<string>|null $UpsertKeys
  */
 class UpsertRedshiftTargetOptions extends Shape
 {
     /**
      * @param array{
-     *     TableLocation?: string,
-     *     ConnectionName?: string,
-     *     UpsertKeys?: list<string>
+     *     TableLocation?: string|null,
+     *     ConnectionName?: string|null,
+     *     UpsertKeys?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

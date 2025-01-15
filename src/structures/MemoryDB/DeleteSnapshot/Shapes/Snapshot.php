@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DeleteSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Status
- * @property string $Source
- * @property string $KmsKeyId
- * @property string $ARN
- * @property ClusterConfiguration $ClusterConfiguration
- * @property 'true'|'false' $DataTiering
+ * @property string|null $Name
+ * @property string|null $Status
+ * @property string|null $Source
+ * @property string|null $KmsKeyId
+ * @property string|null $ARN
+ * @property ClusterConfiguration|null $ClusterConfiguration
+ * @property 'true'|'false'|null $DataTiering
  */
 class Snapshot extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Status?: string,
-     *     Source?: string,
-     *     KmsKeyId?: string,
-     *     ARN?: string,
-     *     ClusterConfiguration?: ClusterConfiguration,
-     *     DataTiering?: 'true'|'false'
+     *     Name?: string|null,
+     *     Status?: string|null,
+     *     Source?: string|null,
+     *     KmsKeyId?: string|null,
+     *     ARN?: string|null,
+     *     ClusterConfiguration?: ClusterConfiguration|null,
+     *     DataTiering?: 'true'|'false'|null
      * } $args
      */
     public function __construct(array $args = [])

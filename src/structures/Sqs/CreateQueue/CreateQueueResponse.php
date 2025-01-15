@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Sqs\CreateQueue;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $QueueUrl
+ * @property string|null $QueueUrl
  */
 class CreateQueueResponse extends Response
 {

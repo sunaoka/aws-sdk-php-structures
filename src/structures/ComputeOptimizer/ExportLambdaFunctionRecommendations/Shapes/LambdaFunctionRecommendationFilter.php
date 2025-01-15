@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\ExportLambdaFunctionRecommenda
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Finding'|'FindingReasonCode' $name
- * @property list<string> $values
+ * @property 'Finding'|'FindingReasonCode'|null $name
+ * @property list<string>|null $values
  */
 class LambdaFunctionRecommendationFilter extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Finding'|'FindingReasonCode',
-     *     values?: list<string>
+     *     name?: 'Finding'|'FindingReasonCode'|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

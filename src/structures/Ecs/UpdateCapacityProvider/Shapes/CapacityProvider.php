@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateCapacityProvider\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $capacityProviderArn
- * @property string $name
- * @property 'ACTIVE'|'INACTIVE' $status
- * @property AutoScalingGroupProvider $autoScalingGroupProvider
- * @property 'DELETE_IN_PROGRESS'|'DELETE_COMPLETE'|'DELETE_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_COMPLETE'|'UPDATE_FAILED' $updateStatus
- * @property string $updateStatusReason
- * @property list<Tag> $tags
+ * @property string|null $capacityProviderArn
+ * @property string|null $name
+ * @property 'ACTIVE'|'INACTIVE'|null $status
+ * @property AutoScalingGroupProvider|null $autoScalingGroupProvider
+ * @property 'DELETE_IN_PROGRESS'|'DELETE_COMPLETE'|'DELETE_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_COMPLETE'|'UPDATE_FAILED'|null $updateStatus
+ * @property string|null $updateStatusReason
+ * @property list<Tag>|null $tags
  */
 class CapacityProvider extends Shape
 {
     /**
      * @param array{
-     *     capacityProviderArn?: string,
-     *     name?: string,
-     *     status?: 'ACTIVE'|'INACTIVE',
-     *     autoScalingGroupProvider?: AutoScalingGroupProvider,
-     *     updateStatus?: 'DELETE_IN_PROGRESS'|'DELETE_COMPLETE'|'DELETE_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_COMPLETE'|'UPDATE_FAILED',
-     *     updateStatusReason?: string,
-     *     tags?: list<Tag>
+     *     capacityProviderArn?: string|null,
+     *     name?: string|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
+     *     autoScalingGroupProvider?: AutoScalingGroupProvider|null,
+     *     updateStatus?: 'DELETE_IN_PROGRESS'|'DELETE_COMPLETE'|'DELETE_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_COMPLETE'|'UPDATE_FAILED'|null,
+     *     updateStatusReason?: string|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

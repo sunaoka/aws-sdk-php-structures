@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMeetings\CreateMeetingWithAttendees\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LambdaFunctionArn
- * @property string $SnsTopicArn
- * @property string $SqsQueueArn
+ * @property string|null $LambdaFunctionArn
+ * @property string|null $SnsTopicArn
+ * @property string|null $SqsQueueArn
  */
 class NotificationsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     LambdaFunctionArn?: string,
-     *     SnsTopicArn?: string,
-     *     SqsQueueArn?: string
+     *     LambdaFunctionArn?: string|null,
+     *     SnsTopicArn?: string|null,
+     *     SqsQueueArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

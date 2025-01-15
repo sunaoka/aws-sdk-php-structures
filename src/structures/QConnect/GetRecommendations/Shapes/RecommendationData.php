@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QConnect\GetRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataSummary $data
- * @property Document $document
+ * @property DataSummary|null $data
+ * @property Document|null $document
  * @property string $recommendationId
- * @property 'HIGH'|'MEDIUM'|'LOW' $relevanceLevel
- * @property double $relevanceScore
- * @property 'KNOWLEDGE_CONTENT'|'GENERATIVE_RESPONSE'|'GENERATIVE_ANSWER'|'DETECTED_INTENT' $type
+ * @property 'HIGH'|'MEDIUM'|'LOW'|null $relevanceLevel
+ * @property double|null $relevanceScore
+ * @property 'KNOWLEDGE_CONTENT'|'GENERATIVE_RESPONSE'|'GENERATIVE_ANSWER'|'DETECTED_INTENT'|null $type
  */
 class RecommendationData extends Shape
 {
     /**
      * @param array{
-     *     data?: DataSummary,
-     *     document?: Document,
+     *     data?: DataSummary|null,
+     *     document?: Document|null,
      *     recommendationId: string,
-     *     relevanceLevel?: 'HIGH'|'MEDIUM'|'LOW',
-     *     relevanceScore?: double,
-     *     type?: 'KNOWLEDGE_CONTENT'|'GENERATIVE_RESPONSE'|'GENERATIVE_ANSWER'|'DETECTED_INTENT'
+     *     relevanceLevel?: 'HIGH'|'MEDIUM'|'LOW'|null,
+     *     relevanceScore?: double|null,
+     *     type?: 'KNOWLEDGE_CONTENT'|'GENERATIVE_RESPONSE'|'GENERATIVE_ANSWER'|'DETECTED_INTENT'|null
      * } $args
      */
     public function __construct(array $args)

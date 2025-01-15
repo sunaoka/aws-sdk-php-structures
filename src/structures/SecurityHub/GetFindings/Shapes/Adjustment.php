@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Metric
- * @property string $Reason
+ * @property string|null $Metric
+ * @property string|null $Reason
  */
 class Adjustment extends Shape
 {
     /**
      * @param array{
-     *     Metric?: string,
-     *     Reason?: string
+     *     Metric?: string|null,
+     *     Reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

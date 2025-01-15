@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateMlflowTrackingServer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TrackingServerArn
+ * @property string|null $TrackingServerArn
  */
 class CreateMlflowTrackingServerResponse extends Response
 {

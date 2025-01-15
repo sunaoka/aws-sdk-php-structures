@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindingAggregations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccountAggregation $accountAggregation
- * @property AmiAggregation $amiAggregation
- * @property AwsEcrContainerAggregation $awsEcrContainerAggregation
- * @property Ec2InstanceAggregation $ec2InstanceAggregation
- * @property FindingTypeAggregation $findingTypeAggregation
- * @property ImageLayerAggregation $imageLayerAggregation
- * @property LambdaFunctionAggregation $lambdaFunctionAggregation
- * @property LambdaLayerAggregation $lambdaLayerAggregation
- * @property PackageAggregation $packageAggregation
- * @property RepositoryAggregation $repositoryAggregation
- * @property TitleAggregation $titleAggregation
+ * @property AccountAggregation|null $accountAggregation
+ * @property AmiAggregation|null $amiAggregation
+ * @property AwsEcrContainerAggregation|null $awsEcrContainerAggregation
+ * @property Ec2InstanceAggregation|null $ec2InstanceAggregation
+ * @property FindingTypeAggregation|null $findingTypeAggregation
+ * @property ImageLayerAggregation|null $imageLayerAggregation
+ * @property LambdaFunctionAggregation|null $lambdaFunctionAggregation
+ * @property LambdaLayerAggregation|null $lambdaLayerAggregation
+ * @property PackageAggregation|null $packageAggregation
+ * @property RepositoryAggregation|null $repositoryAggregation
+ * @property TitleAggregation|null $titleAggregation
  */
 class AggregationRequest extends Shape
 {
     /**
      * @param array{
-     *     accountAggregation?: AccountAggregation,
-     *     amiAggregation?: AmiAggregation,
-     *     awsEcrContainerAggregation?: AwsEcrContainerAggregation,
-     *     ec2InstanceAggregation?: Ec2InstanceAggregation,
-     *     findingTypeAggregation?: FindingTypeAggregation,
-     *     imageLayerAggregation?: ImageLayerAggregation,
-     *     lambdaFunctionAggregation?: LambdaFunctionAggregation,
-     *     lambdaLayerAggregation?: LambdaLayerAggregation,
-     *     packageAggregation?: PackageAggregation,
-     *     repositoryAggregation?: RepositoryAggregation,
-     *     titleAggregation?: TitleAggregation
+     *     accountAggregation?: AccountAggregation|null,
+     *     amiAggregation?: AmiAggregation|null,
+     *     awsEcrContainerAggregation?: AwsEcrContainerAggregation|null,
+     *     ec2InstanceAggregation?: Ec2InstanceAggregation|null,
+     *     findingTypeAggregation?: FindingTypeAggregation|null,
+     *     imageLayerAggregation?: ImageLayerAggregation|null,
+     *     lambdaFunctionAggregation?: LambdaFunctionAggregation|null,
+     *     lambdaLayerAggregation?: LambdaLayerAggregation|null,
+     *     packageAggregation?: PackageAggregation|null,
+     *     repositoryAggregation?: RepositoryAggregation|null,
+     *     titleAggregation?: TitleAggregation|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Subnets
- * @property list<string> $SecurityGroup
+ * @property list<string>|null $Subnets
+ * @property list<string>|null $SecurityGroup
  */
 class SelfManagedKafkaAccessConfigurationVpc extends Shape
 {
     /**
      * @param array{
-     *     Subnets?: list<string>,
-     *     SecurityGroup?: list<string>
+     *     Subnets?: list<string>|null,
+     *     SecurityGroup?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

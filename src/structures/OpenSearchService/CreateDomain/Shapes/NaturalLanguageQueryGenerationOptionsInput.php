@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $DesiredState
+ * @property 'ENABLED'|'DISABLED'|null $DesiredState
  */
 class NaturalLanguageQueryGenerationOptionsInput extends Shape
 {
     /**
-     * @param array{DesiredState?: 'ENABLED'|'DISABLED'} $args
+     * @param array{DesiredState?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

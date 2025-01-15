@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateNetworkInterfacePermission\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'pending'|'granted'|'revoking'|'revoked' $State
- * @property string $StatusMessage
+ * @property 'pending'|'granted'|'revoking'|'revoked'|null $State
+ * @property string|null $StatusMessage
  */
 class NetworkInterfacePermissionState extends Shape
 {
     /**
      * @param array{
-     *     State?: 'pending'|'granted'|'revoking'|'revoked',
-     *     StatusMessage?: string
+     *     State?: 'pending'|'granted'|'revoking'|'revoked'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

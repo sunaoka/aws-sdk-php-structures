@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Support\DescribeCommunications;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Communication> $communications
- * @property string $nextToken
+ * @property list<Shapes\Communication>|null $communications
+ * @property string|null $nextToken
  */
 class DescribeCommunicationsResponse extends Response
 {

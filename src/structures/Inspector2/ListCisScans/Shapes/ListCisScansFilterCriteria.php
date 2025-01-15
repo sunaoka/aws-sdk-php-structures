@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScans\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CisNumberFilter> $failedChecksFilters
- * @property list<CisStringFilter> $scanArnFilters
- * @property list<CisDateFilter> $scanAtFilters
- * @property list<CisStringFilter> $scanConfigurationArnFilters
- * @property list<CisStringFilter> $scanNameFilters
- * @property list<CisScanStatusFilter> $scanStatusFilters
- * @property list<CisStringFilter> $scheduledByFilters
- * @property list<CisStringFilter> $targetAccountIdFilters
- * @property list<CisStringFilter> $targetResourceIdFilters
- * @property list<TagFilter> $targetResourceTagFilters
+ * @property list<CisNumberFilter>|null $failedChecksFilters
+ * @property list<CisStringFilter>|null $scanArnFilters
+ * @property list<CisDateFilter>|null $scanAtFilters
+ * @property list<CisStringFilter>|null $scanConfigurationArnFilters
+ * @property list<CisStringFilter>|null $scanNameFilters
+ * @property list<CisScanStatusFilter>|null $scanStatusFilters
+ * @property list<CisStringFilter>|null $scheduledByFilters
+ * @property list<CisStringFilter>|null $targetAccountIdFilters
+ * @property list<CisStringFilter>|null $targetResourceIdFilters
+ * @property list<TagFilter>|null $targetResourceTagFilters
  */
 class ListCisScansFilterCriteria extends Shape
 {
     /**
      * @param array{
-     *     failedChecksFilters?: list<CisNumberFilter>,
-     *     scanArnFilters?: list<CisStringFilter>,
-     *     scanAtFilters?: list<CisDateFilter>,
-     *     scanConfigurationArnFilters?: list<CisStringFilter>,
-     *     scanNameFilters?: list<CisStringFilter>,
-     *     scanStatusFilters?: list<CisScanStatusFilter>,
-     *     scheduledByFilters?: list<CisStringFilter>,
-     *     targetAccountIdFilters?: list<CisStringFilter>,
-     *     targetResourceIdFilters?: list<CisStringFilter>,
-     *     targetResourceTagFilters?: list<TagFilter>
+     *     failedChecksFilters?: list<CisNumberFilter>|null,
+     *     scanArnFilters?: list<CisStringFilter>|null,
+     *     scanAtFilters?: list<CisDateFilter>|null,
+     *     scanConfigurationArnFilters?: list<CisStringFilter>|null,
+     *     scanNameFilters?: list<CisStringFilter>|null,
+     *     scanStatusFilters?: list<CisScanStatusFilter>|null,
+     *     scheduledByFilters?: list<CisStringFilter>|null,
+     *     targetAccountIdFilters?: list<CisStringFilter>|null,
+     *     targetResourceIdFilters?: list<CisStringFilter>|null,
+     *     targetResourceTagFilters?: list<TagFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

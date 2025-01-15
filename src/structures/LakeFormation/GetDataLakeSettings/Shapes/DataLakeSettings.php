@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GetDataLakeSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DataLakePrincipal> $DataLakeAdmins
- * @property list<DataLakePrincipal> $ReadOnlyAdmins
- * @property list<PrincipalPermissions> $CreateDatabaseDefaultPermissions
- * @property list<PrincipalPermissions> $CreateTableDefaultPermissions
- * @property array<string, string> $Parameters
- * @property list<string> $TrustedResourceOwners
- * @property bool $AllowExternalDataFiltering
- * @property bool $AllowFullTableExternalDataAccess
- * @property list<DataLakePrincipal> $ExternalDataFilteringAllowList
- * @property list<string> $AuthorizedSessionTagValueList
+ * @property list<DataLakePrincipal>|null $DataLakeAdmins
+ * @property list<DataLakePrincipal>|null $ReadOnlyAdmins
+ * @property list<PrincipalPermissions>|null $CreateDatabaseDefaultPermissions
+ * @property list<PrincipalPermissions>|null $CreateTableDefaultPermissions
+ * @property array<string, string>|null $Parameters
+ * @property list<string>|null $TrustedResourceOwners
+ * @property bool|null $AllowExternalDataFiltering
+ * @property bool|null $AllowFullTableExternalDataAccess
+ * @property list<DataLakePrincipal>|null $ExternalDataFilteringAllowList
+ * @property list<string>|null $AuthorizedSessionTagValueList
  */
 class DataLakeSettings extends Shape
 {
     /**
      * @param array{
-     *     DataLakeAdmins?: list<DataLakePrincipal>,
-     *     ReadOnlyAdmins?: list<DataLakePrincipal>,
-     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>,
-     *     CreateTableDefaultPermissions?: list<PrincipalPermissions>,
-     *     Parameters?: array<string, string>,
-     *     TrustedResourceOwners?: list<string>,
-     *     AllowExternalDataFiltering?: bool,
-     *     AllowFullTableExternalDataAccess?: bool,
-     *     ExternalDataFilteringAllowList?: list<DataLakePrincipal>,
-     *     AuthorizedSessionTagValueList?: list<string>
+     *     DataLakeAdmins?: list<DataLakePrincipal>|null,
+     *     ReadOnlyAdmins?: list<DataLakePrincipal>|null,
+     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>|null,
+     *     CreateTableDefaultPermissions?: list<PrincipalPermissions>|null,
+     *     Parameters?: array<string, string>|null,
+     *     TrustedResourceOwners?: list<string>|null,
+     *     AllowExternalDataFiltering?: bool|null,
+     *     AllowFullTableExternalDataAccess?: bool|null,
+     *     ExternalDataFilteringAllowList?: list<DataLakePrincipal>|null,
+     *     AuthorizedSessionTagValueList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

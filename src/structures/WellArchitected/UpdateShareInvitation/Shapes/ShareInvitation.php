@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WellArchitected\UpdateShareInvitation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ShareInvitationId
- * @property 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE' $ShareResourceType
- * @property string $WorkloadId
- * @property string $LensAlias
- * @property string $LensArn
- * @property string $ProfileArn
- * @property string $TemplateArn
+ * @property string|null $ShareInvitationId
+ * @property 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE'|null $ShareResourceType
+ * @property string|null $WorkloadId
+ * @property string|null $LensAlias
+ * @property string|null $LensArn
+ * @property string|null $ProfileArn
+ * @property string|null $TemplateArn
  */
 class ShareInvitation extends Shape
 {
     /**
      * @param array{
-     *     ShareInvitationId?: string,
-     *     ShareResourceType?: 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE',
-     *     WorkloadId?: string,
-     *     LensAlias?: string,
-     *     LensArn?: string,
-     *     ProfileArn?: string,
-     *     TemplateArn?: string
+     *     ShareInvitationId?: string|null,
+     *     ShareResourceType?: 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE'|null,
+     *     WorkloadId?: string|null,
+     *     LensAlias?: string|null,
+     *     LensArn?: string|null,
+     *     ProfileArn?: string|null,
+     *     TemplateArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

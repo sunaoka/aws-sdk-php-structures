@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ZeppelinMonitoringConfigurationDescription $MonitoringConfigurationDescription
- * @property CatalogConfigurationDescription $CatalogConfigurationDescription
- * @property DeployAsApplicationConfigurationDescription $DeployAsApplicationConfigurationDescription
- * @property list<CustomArtifactConfigurationDescription> $CustomArtifactsConfigurationDescription
+ * @property CatalogConfigurationDescription|null $CatalogConfigurationDescription
+ * @property DeployAsApplicationConfigurationDescription|null $DeployAsApplicationConfigurationDescription
+ * @property list<CustomArtifactConfigurationDescription>|null $CustomArtifactsConfigurationDescription
  */
 class ZeppelinApplicationConfigurationDescription extends Shape
 {
     /**
      * @param array{
      *     MonitoringConfigurationDescription: ZeppelinMonitoringConfigurationDescription,
-     *     CatalogConfigurationDescription?: CatalogConfigurationDescription,
-     *     DeployAsApplicationConfigurationDescription?: DeployAsApplicationConfigurationDescription,
-     *     CustomArtifactsConfigurationDescription?: list<CustomArtifactConfigurationDescription>
+     *     CatalogConfigurationDescription?: CatalogConfigurationDescription|null,
+     *     DeployAsApplicationConfigurationDescription?: DeployAsApplicationConfigurationDescription|null,
+     *     CustomArtifactsConfigurationDescription?: list<CustomArtifactConfigurationDescription>|null
      * } $args
      */
     public function __construct(array $args)

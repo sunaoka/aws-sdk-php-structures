@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rekognition\DescribeProjectVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TestingData $Input
- * @property TestingData $Output
- * @property ValidationData $Validation
+ * @property TestingData|null $Input
+ * @property TestingData|null $Output
+ * @property ValidationData|null $Validation
  */
 class TestingDataResult extends Shape
 {
     /**
      * @param array{
-     *     Input?: TestingData,
-     *     Output?: TestingData,
-     *     Validation?: ValidationData
+     *     Input?: TestingData|null,
+     *     Output?: TestingData|null,
+     *     Validation?: ValidationData|null
      * } $args
      */
     public function __construct(array $args = [])

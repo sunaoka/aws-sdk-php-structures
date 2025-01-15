@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingGroupName
- * @property Shapes\ThingGroupProperties $thingGroupProperties
- * @property string $indexName
+ * @property Shapes\ThingGroupProperties|null $thingGroupProperties
+ * @property string|null $indexName
  * @property string $queryString
- * @property string $queryVersion
- * @property list<Shapes\Tag> $tags
+ * @property string|null $queryVersion
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDynamicThingGroupRequest extends Request
 {
     /**
      * @param array{
      *     thingGroupName: string,
-     *     thingGroupProperties?: Shapes\ThingGroupProperties,
-     *     indexName?: string,
+     *     thingGroupProperties?: Shapes\ThingGroupProperties|null,
+     *     indexName?: string|null,
      *     queryString: string,
-     *     queryVersion?: string,
-     *     tags?: list<Shapes\Tag>
+     *     queryVersion?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

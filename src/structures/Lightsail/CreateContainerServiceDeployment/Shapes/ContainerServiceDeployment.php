@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateContainerServiceDeployment\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $version
- * @property 'ACTIVATING'|'ACTIVE'|'INACTIVE'|'FAILED' $state
- * @property array<string, Container> $containers
- * @property ContainerServiceEndpoint $publicEndpoint
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property int|null $version
+ * @property 'ACTIVATING'|'ACTIVE'|'INACTIVE'|'FAILED'|null $state
+ * @property array<string, Container>|null $containers
+ * @property ContainerServiceEndpoint|null $publicEndpoint
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class ContainerServiceDeployment extends Shape
 {
     /**
      * @param array{
-     *     version?: int,
-     *     state?: 'ACTIVATING'|'ACTIVE'|'INACTIVE'|'FAILED',
-     *     containers?: array<string, Container>,
-     *     publicEndpoint?: ContainerServiceEndpoint,
-     *     createdAt?: \Aws\Api\DateTimeResult
+     *     version?: int|null,
+     *     state?: 'ACTIVATING'|'ACTIVE'|'INACTIVE'|'FAILED'|null,
+     *     containers?: array<string, Container>|null,
+     *     publicEndpoint?: ContainerServiceEndpoint|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

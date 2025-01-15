@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\IoTDeviceAdvisor\CreateSuiteDefinition;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $suiteDefinitionId
- * @property string $suiteDefinitionArn
- * @property string $suiteDefinitionName
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $suiteDefinitionId
+ * @property string|null $suiteDefinitionArn
+ * @property string|null $suiteDefinitionName
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class CreateSuiteDefinitionResponse extends Response
 {

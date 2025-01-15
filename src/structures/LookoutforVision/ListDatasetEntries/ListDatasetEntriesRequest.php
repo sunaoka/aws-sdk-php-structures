@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProjectName
  * @property string $DatasetType
- * @property bool $Labeled
- * @property string $AnomalyClass
- * @property \Aws\Api\DateTimeResult $BeforeCreationDate
- * @property \Aws\Api\DateTimeResult $AfterCreationDate
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property string $SourceRefContains
+ * @property bool|null $Labeled
+ * @property string|null $AnomalyClass
+ * @property \Aws\Api\DateTimeResult|null $BeforeCreationDate
+ * @property \Aws\Api\DateTimeResult|null $AfterCreationDate
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $SourceRefContains
  */
 class ListDatasetEntriesRequest extends Request
 {
@@ -21,13 +21,13 @@ class ListDatasetEntriesRequest extends Request
      * @param array{
      *     ProjectName: string,
      *     DatasetType: string,
-     *     Labeled?: bool,
-     *     AnomalyClass?: string,
-     *     BeforeCreationDate?: \Aws\Api\DateTimeResult,
-     *     AfterCreationDate?: \Aws\Api\DateTimeResult,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     SourceRefContains?: string
+     *     Labeled?: bool|null,
+     *     AnomalyClass?: string|null,
+     *     BeforeCreationDate?: \Aws\Api\DateTimeResult|null,
+     *     AfterCreationDate?: \Aws\Api\DateTimeResult|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     SourceRefContains?: string|null
      * } $args
      */
     public function __construct(array $args)

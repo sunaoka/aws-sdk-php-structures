@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property PostFulfillmentStatusSpecification $postFulfillmentStatusSpecification
- * @property FulfillmentUpdatesSpecification $fulfillmentUpdatesSpecification
- * @property bool $active
+ * @property PostFulfillmentStatusSpecification|null $postFulfillmentStatusSpecification
+ * @property FulfillmentUpdatesSpecification|null $fulfillmentUpdatesSpecification
+ * @property bool|null $active
  */
 class FulfillmentCodeHookSettings extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     postFulfillmentStatusSpecification?: PostFulfillmentStatusSpecification,
-     *     fulfillmentUpdatesSpecification?: FulfillmentUpdatesSpecification,
-     *     active?: bool
+     *     postFulfillmentStatusSpecification?: PostFulfillmentStatusSpecification|null,
+     *     fulfillmentUpdatesSpecification?: FulfillmentUpdatesSpecification|null,
+     *     active?: bool|null
      * } $args
      */
     public function __construct(array $args)

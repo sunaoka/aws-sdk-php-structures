@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsCloudMapServiceDiscovery $awsCloudMap
- * @property DnsServiceDiscovery $dns
+ * @property AwsCloudMapServiceDiscovery|null $awsCloudMap
+ * @property DnsServiceDiscovery|null $dns
  */
 class ServiceDiscovery extends Shape
 {
     /**
      * @param array{
-     *     awsCloudMap?: AwsCloudMapServiceDiscovery,
-     *     dns?: DnsServiceDiscovery
+     *     awsCloudMap?: AwsCloudMapServiceDiscovery|null,
+     *     dns?: DnsServiceDiscovery|null
      * } $args
      */
     public function __construct(array $args = [])

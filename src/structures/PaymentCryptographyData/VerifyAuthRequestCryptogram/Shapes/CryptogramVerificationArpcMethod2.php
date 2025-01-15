@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $CardStatusUpdate
- * @property string $ProprietaryAuthenticationData
+ * @property string|null $ProprietaryAuthenticationData
  */
 class CryptogramVerificationArpcMethod2 extends Shape
 {
     /**
      * @param array{
      *     CardStatusUpdate: string,
-     *     ProprietaryAuthenticationData?: string
+     *     ProprietaryAuthenticationData?: string|null
      * } $args
      */
     public function __construct(array $args)

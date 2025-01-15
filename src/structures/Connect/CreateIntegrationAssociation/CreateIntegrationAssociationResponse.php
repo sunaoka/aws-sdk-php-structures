@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Connect\CreateIntegrationAssociation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $IntegrationAssociationId
- * @property string $IntegrationAssociationArn
+ * @property string|null $IntegrationAssociationId
+ * @property string|null $IntegrationAssociationArn
  */
 class CreateIntegrationAssociationResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $environmentConfigurationName
- * @property list<EnvironmentParameter> $environmentParameters
+ * @property string|null $environmentConfigurationName
+ * @property list<EnvironmentParameter>|null $environmentParameters
  */
 class EnvironmentConfigurationUserParameter extends Shape
 {
     /**
      * @param array{
-     *     environmentConfigurationName?: string,
-     *     environmentParameters?: list<EnvironmentParameter>
+     *     environmentConfigurationName?: string|null,
+     *     environmentParameters?: list<EnvironmentParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

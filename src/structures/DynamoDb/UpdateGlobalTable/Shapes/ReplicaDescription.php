@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateGlobalTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegionName
- * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS' $ReplicaStatus
- * @property string $ReplicaStatusDescription
- * @property string $ReplicaStatusPercentProgress
- * @property string $KMSMasterKeyId
- * @property ProvisionedThroughputOverride $ProvisionedThroughputOverride
- * @property OnDemandThroughputOverride $OnDemandThroughputOverride
- * @property TableWarmThroughputDescription $WarmThroughput
- * @property list<ReplicaGlobalSecondaryIndexDescription> $GlobalSecondaryIndexes
- * @property \Aws\Api\DateTimeResult $ReplicaInaccessibleDateTime
- * @property TableClassSummary $ReplicaTableClassSummary
+ * @property string|null $RegionName
+ * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null $ReplicaStatus
+ * @property string|null $ReplicaStatusDescription
+ * @property string|null $ReplicaStatusPercentProgress
+ * @property string|null $KMSMasterKeyId
+ * @property ProvisionedThroughputOverride|null $ProvisionedThroughputOverride
+ * @property OnDemandThroughputOverride|null $OnDemandThroughputOverride
+ * @property TableWarmThroughputDescription|null $WarmThroughput
+ * @property list<ReplicaGlobalSecondaryIndexDescription>|null $GlobalSecondaryIndexes
+ * @property \Aws\Api\DateTimeResult|null $ReplicaInaccessibleDateTime
+ * @property TableClassSummary|null $ReplicaTableClassSummary
  */
 class ReplicaDescription extends Shape
 {
     /**
      * @param array{
-     *     RegionName?: string,
-     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS',
-     *     ReplicaStatusDescription?: string,
-     *     ReplicaStatusPercentProgress?: string,
-     *     KMSMasterKeyId?: string,
-     *     ProvisionedThroughputOverride?: ProvisionedThroughputOverride,
-     *     OnDemandThroughputOverride?: OnDemandThroughputOverride,
-     *     WarmThroughput?: TableWarmThroughputDescription,
-     *     GlobalSecondaryIndexes?: list<ReplicaGlobalSecondaryIndexDescription>,
-     *     ReplicaInaccessibleDateTime?: \Aws\Api\DateTimeResult,
-     *     ReplicaTableClassSummary?: TableClassSummary
+     *     RegionName?: string|null,
+     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null,
+     *     ReplicaStatusDescription?: string|null,
+     *     ReplicaStatusPercentProgress?: string|null,
+     *     KMSMasterKeyId?: string|null,
+     *     ProvisionedThroughputOverride?: ProvisionedThroughputOverride|null,
+     *     OnDemandThroughputOverride?: OnDemandThroughputOverride|null,
+     *     WarmThroughput?: TableWarmThroughputDescription|null,
+     *     GlobalSecondaryIndexes?: list<ReplicaGlobalSecondaryIndexDescription>|null,
+     *     ReplicaInaccessibleDateTime?: \Aws\Api\DateTimeResult|null,
+     *     ReplicaTableClassSummary?: TableClassSummary|null
      * } $args
      */
     public function __construct(array $args = [])

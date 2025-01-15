@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\EnvironmentAccountConnectionSummary> $environmentAccountConnections
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListEnvironmentAccountConnectionsResponse extends Response
 {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SAMLMetadataDocument
  * @property string $Name
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateSAMLProviderRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateSAMLProviderRequest extends Request
      * @param array{
      *     SAMLMetadataDocument: string,
      *     Name: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

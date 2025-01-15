@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $serviceCode
  * @property string $usageType
  * @property string $operation
- * @property string $location
- * @property string $availabilityZone
- * @property string $id
- * @property string $lineItemId
- * @property string $lineItemType
- * @property string $payerAccountId
- * @property string $usageAccountId
- * @property UsageQuantityResult $estimatedUsageQuantity
- * @property CostAmount $estimatedCost
- * @property UsageQuantityResult $historicalUsageQuantity
- * @property CostAmount $historicalCost
- * @property list<string> $savingsPlanArns
+ * @property string|null $location
+ * @property string|null $availabilityZone
+ * @property string|null $id
+ * @property string|null $lineItemId
+ * @property string|null $lineItemType
+ * @property string|null $payerAccountId
+ * @property string|null $usageAccountId
+ * @property UsageQuantityResult|null $estimatedUsageQuantity
+ * @property CostAmount|null $estimatedCost
+ * @property UsageQuantityResult|null $historicalUsageQuantity
+ * @property CostAmount|null $historicalCost
+ * @property list<string>|null $savingsPlanArns
  */
 class BillEstimateLineItemSummary extends Shape
 {
@@ -28,18 +28,18 @@ class BillEstimateLineItemSummary extends Shape
      *     serviceCode: string,
      *     usageType: string,
      *     operation: string,
-     *     location?: string,
-     *     availabilityZone?: string,
-     *     id?: string,
-     *     lineItemId?: string,
-     *     lineItemType?: string,
-     *     payerAccountId?: string,
-     *     usageAccountId?: string,
-     *     estimatedUsageQuantity?: UsageQuantityResult,
-     *     estimatedCost?: CostAmount,
-     *     historicalUsageQuantity?: UsageQuantityResult,
-     *     historicalCost?: CostAmount,
-     *     savingsPlanArns?: list<string>
+     *     location?: string|null,
+     *     availabilityZone?: string|null,
+     *     id?: string|null,
+     *     lineItemId?: string|null,
+     *     lineItemType?: string|null,
+     *     payerAccountId?: string|null,
+     *     usageAccountId?: string|null,
+     *     estimatedUsageQuantity?: UsageQuantityResult|null,
+     *     estimatedCost?: CostAmount|null,
+     *     historicalUsageQuantity?: UsageQuantityResult|null,
+     *     historicalCost?: CostAmount|null,
+     *     savingsPlanArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

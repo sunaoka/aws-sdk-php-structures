@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Vpc
- * @property string $Subnet
- * @property string $SubnetAvailabilityZone
- * @property string $CurrentAssociatedNetworkAcl
- * @property list<EntryViolation> $EntryViolations
+ * @property string|null $Vpc
+ * @property string|null $Subnet
+ * @property string|null $SubnetAvailabilityZone
+ * @property string|null $CurrentAssociatedNetworkAcl
+ * @property list<EntryViolation>|null $EntryViolations
  */
 class InvalidNetworkAclEntriesViolation extends Shape
 {
     /**
      * @param array{
-     *     Vpc?: string,
-     *     Subnet?: string,
-     *     SubnetAvailabilityZone?: string,
-     *     CurrentAssociatedNetworkAcl?: string,
-     *     EntryViolations?: list<EntryViolation>
+     *     Vpc?: string|null,
+     *     Subnet?: string|null,
+     *     SubnetAvailabilityZone?: string|null,
+     *     CurrentAssociatedNetworkAcl?: string|null,
+     *     EntryViolations?: list<EntryViolation>|null
      * } $args
      */
     public function __construct(array $args = [])

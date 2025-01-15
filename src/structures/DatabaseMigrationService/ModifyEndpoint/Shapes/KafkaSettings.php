@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Broker
- * @property string $Topic
- * @property 'json'|'json-unformatted' $MessageFormat
- * @property bool $IncludeTransactionDetails
- * @property bool $IncludePartitionValue
- * @property bool $PartitionIncludeSchemaTable
- * @property bool $IncludeTableAlterOperations
- * @property bool $IncludeControlDetails
- * @property int $MessageMaxBytes
- * @property bool $IncludeNullAndEmpty
- * @property 'plaintext'|'ssl-authentication'|'ssl-encryption'|'sasl-ssl' $SecurityProtocol
- * @property string $SslClientCertificateArn
- * @property string $SslClientKeyArn
- * @property string $SslClientKeyPassword
- * @property string $SslCaCertificateArn
- * @property string $SaslUsername
- * @property string $SaslPassword
- * @property bool $NoHexPrefix
- * @property 'scram-sha-512'|'plain' $SaslMechanism
- * @property 'none'|'https' $SslEndpointIdentificationAlgorithm
- * @property bool $UseLargeIntegerValue
+ * @property string|null $Broker
+ * @property string|null $Topic
+ * @property 'json'|'json-unformatted'|null $MessageFormat
+ * @property bool|null $IncludeTransactionDetails
+ * @property bool|null $IncludePartitionValue
+ * @property bool|null $PartitionIncludeSchemaTable
+ * @property bool|null $IncludeTableAlterOperations
+ * @property bool|null $IncludeControlDetails
+ * @property int|null $MessageMaxBytes
+ * @property bool|null $IncludeNullAndEmpty
+ * @property 'plaintext'|'ssl-authentication'|'ssl-encryption'|'sasl-ssl'|null $SecurityProtocol
+ * @property string|null $SslClientCertificateArn
+ * @property string|null $SslClientKeyArn
+ * @property string|null $SslClientKeyPassword
+ * @property string|null $SslCaCertificateArn
+ * @property string|null $SaslUsername
+ * @property string|null $SaslPassword
+ * @property bool|null $NoHexPrefix
+ * @property 'scram-sha-512'|'plain'|null $SaslMechanism
+ * @property 'none'|'https'|null $SslEndpointIdentificationAlgorithm
+ * @property bool|null $UseLargeIntegerValue
  */
 class KafkaSettings extends Shape
 {
     /**
      * @param array{
-     *     Broker?: string,
-     *     Topic?: string,
-     *     MessageFormat?: 'json'|'json-unformatted',
-     *     IncludeTransactionDetails?: bool,
-     *     IncludePartitionValue?: bool,
-     *     PartitionIncludeSchemaTable?: bool,
-     *     IncludeTableAlterOperations?: bool,
-     *     IncludeControlDetails?: bool,
-     *     MessageMaxBytes?: int,
-     *     IncludeNullAndEmpty?: bool,
-     *     SecurityProtocol?: 'plaintext'|'ssl-authentication'|'ssl-encryption'|'sasl-ssl',
-     *     SslClientCertificateArn?: string,
-     *     SslClientKeyArn?: string,
-     *     SslClientKeyPassword?: string,
-     *     SslCaCertificateArn?: string,
-     *     SaslUsername?: string,
-     *     SaslPassword?: string,
-     *     NoHexPrefix?: bool,
-     *     SaslMechanism?: 'scram-sha-512'|'plain',
-     *     SslEndpointIdentificationAlgorithm?: 'none'|'https',
-     *     UseLargeIntegerValue?: bool
+     *     Broker?: string|null,
+     *     Topic?: string|null,
+     *     MessageFormat?: 'json'|'json-unformatted'|null,
+     *     IncludeTransactionDetails?: bool|null,
+     *     IncludePartitionValue?: bool|null,
+     *     PartitionIncludeSchemaTable?: bool|null,
+     *     IncludeTableAlterOperations?: bool|null,
+     *     IncludeControlDetails?: bool|null,
+     *     MessageMaxBytes?: int|null,
+     *     IncludeNullAndEmpty?: bool|null,
+     *     SecurityProtocol?: 'plaintext'|'ssl-authentication'|'ssl-encryption'|'sasl-ssl'|null,
+     *     SslClientCertificateArn?: string|null,
+     *     SslClientKeyArn?: string|null,
+     *     SslClientKeyPassword?: string|null,
+     *     SslCaCertificateArn?: string|null,
+     *     SaslUsername?: string|null,
+     *     SaslPassword?: string|null,
+     *     NoHexPrefix?: bool|null,
+     *     SaslMechanism?: 'scram-sha-512'|'plain'|null,
+     *     SslEndpointIdentificationAlgorithm?: 'none'|'https'|null,
+     *     UseLargeIntegerValue?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

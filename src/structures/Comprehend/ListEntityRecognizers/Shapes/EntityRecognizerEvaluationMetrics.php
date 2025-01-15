@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Comprehend\ListEntityRecognizers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Precision
- * @property double $Recall
- * @property double $F1Score
+ * @property double|null $Precision
+ * @property double|null $Recall
+ * @property double|null $F1Score
  */
 class EntityRecognizerEvaluationMetrics extends Shape
 {
     /**
      * @param array{
-     *     Precision?: double,
-     *     Recall?: double,
-     *     F1Score?: double
+     *     Precision?: double|null,
+     *     Recall?: double|null,
+     *     F1Score?: double|null
      * } $args
      */
     public function __construct(array $args = [])

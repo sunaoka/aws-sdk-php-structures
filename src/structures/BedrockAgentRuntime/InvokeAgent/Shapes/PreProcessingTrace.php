@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ModelInvocationInput $modelInvocationInput
- * @property PreProcessingModelInvocationOutput $modelInvocationOutput
+ * @property ModelInvocationInput|null $modelInvocationInput
+ * @property PreProcessingModelInvocationOutput|null $modelInvocationOutput
  */
 class PreProcessingTrace extends Shape
 {
     /**
      * @param array{
-     *     modelInvocationInput?: ModelInvocationInput,
-     *     modelInvocationOutput?: PreProcessingModelInvocationOutput
+     *     modelInvocationInput?: ModelInvocationInput|null,
+     *     modelInvocationOutput?: PreProcessingModelInvocationOutput|null
      * } $args
      */
     public function __construct(array $args = [])

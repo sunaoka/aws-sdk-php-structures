@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeCapacityReservat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CapacityReservationStatus $State
- * @property string $AvailabilityZone
- * @property double $EffectiveCapacityUnits
+ * @property CapacityReservationStatus|null $State
+ * @property string|null $AvailabilityZone
+ * @property double|null $EffectiveCapacityUnits
  */
 class ZonalCapacityReservationState extends Shape
 {
     /**
      * @param array{
-     *     State?: CapacityReservationStatus,
-     *     AvailabilityZone?: string,
-     *     EffectiveCapacityUnits?: double
+     *     State?: CapacityReservationStatus|null,
+     *     AvailabilityZone?: string|null,
+     *     EffectiveCapacityUnits?: double|null
      * } $args
      */
     public function __construct(array $args = [])

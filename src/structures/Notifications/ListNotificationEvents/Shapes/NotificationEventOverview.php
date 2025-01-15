@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $relatedAccount
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property NotificationEventSummary $notificationEvent
- * @property 'AGGREGATE'|'CHILD'|'NONE' $aggregationEventType
- * @property string $aggregateNotificationEventArn
+ * @property 'AGGREGATE'|'CHILD'|'NONE'|null $aggregationEventType
+ * @property string|null $aggregateNotificationEventArn
  */
 class NotificationEventOverview extends Shape
 {
@@ -22,8 +22,8 @@ class NotificationEventOverview extends Shape
      *     relatedAccount: string,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     notificationEvent: NotificationEventSummary,
-     *     aggregationEventType?: 'AGGREGATE'|'CHILD'|'NONE',
-     *     aggregateNotificationEventArn?: string
+     *     aggregationEventType?: 'AGGREGATE'|'CHILD'|'NONE'|null,
+     *     aggregateNotificationEventArn?: string|null
      * } $args
      */
     public function __construct(array $args)

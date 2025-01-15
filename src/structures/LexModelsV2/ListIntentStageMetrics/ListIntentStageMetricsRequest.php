@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $startDateTime
  * @property \Aws\Api\DateTimeResult $endDateTime
  * @property list<Shapes\AnalyticsIntentStageMetric> $metrics
- * @property list<Shapes\AnalyticsBinBySpecification> $binBy
- * @property list<Shapes\AnalyticsIntentStageGroupBySpecification> $groupBy
- * @property list<Shapes\AnalyticsIntentStageFilter> $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property list<Shapes\AnalyticsBinBySpecification>|null $binBy
+ * @property list<Shapes\AnalyticsIntentStageGroupBySpecification>|null $groupBy
+ * @property list<Shapes\AnalyticsIntentStageFilter>|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListIntentStageMetricsRequest extends Request
 {
@@ -23,11 +23,11 @@ class ListIntentStageMetricsRequest extends Request
      *     startDateTime: \Aws\Api\DateTimeResult,
      *     endDateTime: \Aws\Api\DateTimeResult,
      *     metrics: list<Shapes\AnalyticsIntentStageMetric>,
-     *     binBy?: list<Shapes\AnalyticsBinBySpecification>,
-     *     groupBy?: list<Shapes\AnalyticsIntentStageGroupBySpecification>,
-     *     filters?: list<Shapes\AnalyticsIntentStageFilter>,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     binBy?: list<Shapes\AnalyticsBinBySpecification>|null,
+     *     groupBy?: list<Shapes\AnalyticsIntentStageGroupBySpecification>|null,
+     *     filters?: list<Shapes\AnalyticsIntentStageFilter>|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

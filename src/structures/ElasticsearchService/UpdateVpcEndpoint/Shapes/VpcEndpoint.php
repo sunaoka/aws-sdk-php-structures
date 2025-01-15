@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\UpdateVpcEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpcEndpointId
- * @property string $VpcEndpointOwner
- * @property string $DomainArn
- * @property VPCDerivedInfo $VpcOptions
- * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED' $Status
- * @property string $Endpoint
+ * @property string|null $VpcEndpointId
+ * @property string|null $VpcEndpointOwner
+ * @property string|null $DomainArn
+ * @property VPCDerivedInfo|null $VpcOptions
+ * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED'|null $Status
+ * @property string|null $Endpoint
  */
 class VpcEndpoint extends Shape
 {
     /**
      * @param array{
-     *     VpcEndpointId?: string,
-     *     VpcEndpointOwner?: string,
-     *     DomainArn?: string,
-     *     VpcOptions?: VPCDerivedInfo,
-     *     Status?: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED',
-     *     Endpoint?: string
+     *     VpcEndpointId?: string|null,
+     *     VpcEndpointOwner?: string|null,
+     *     DomainArn?: string|null,
+     *     VpcOptions?: VPCDerivedInfo|null,
+     *     Status?: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED'|null,
+     *     Endpoint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateVoiceTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Body
- * @property string $DefaultSubstitutions
- * @property string $LanguageCode
- * @property array<string, string> $tags
- * @property string $TemplateDescription
- * @property string $VoiceId
+ * @property string|null $Body
+ * @property string|null $DefaultSubstitutions
+ * @property string|null $LanguageCode
+ * @property array<string, string>|null $tags
+ * @property string|null $TemplateDescription
+ * @property string|null $VoiceId
  */
 class VoiceTemplateRequest extends Shape
 {
     /**
      * @param array{
-     *     Body?: string,
-     *     DefaultSubstitutions?: string,
-     *     LanguageCode?: string,
-     *     tags?: array<string, string>,
-     *     TemplateDescription?: string,
-     *     VoiceId?: string
+     *     Body?: string|null,
+     *     DefaultSubstitutions?: string|null,
+     *     LanguageCode?: string|null,
+     *     tags?: array<string, string>|null,
+     *     TemplateDescription?: string|null,
+     *     VoiceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

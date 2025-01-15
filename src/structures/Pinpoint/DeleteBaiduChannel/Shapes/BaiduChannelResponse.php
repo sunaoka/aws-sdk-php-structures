@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Pinpoint\DeleteBaiduChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationId
- * @property string $CreationDate
+ * @property string|null $ApplicationId
+ * @property string|null $CreationDate
  * @property string $Credential
- * @property bool $Enabled
- * @property bool $HasCredential
- * @property string $Id
- * @property bool $IsArchived
- * @property string $LastModifiedBy
- * @property string $LastModifiedDate
+ * @property bool|null $Enabled
+ * @property bool|null $HasCredential
+ * @property string|null $Id
+ * @property bool|null $IsArchived
+ * @property string|null $LastModifiedBy
+ * @property string|null $LastModifiedDate
  * @property string $Platform
- * @property int $Version
+ * @property int|null $Version
  */
 class BaiduChannelResponse extends Shape
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     CreationDate?: string,
+     *     ApplicationId?: string|null,
+     *     CreationDate?: string|null,
      *     Credential: string,
-     *     Enabled?: bool,
-     *     HasCredential?: bool,
-     *     Id?: string,
-     *     IsArchived?: bool,
-     *     LastModifiedBy?: string,
-     *     LastModifiedDate?: string,
+     *     Enabled?: bool|null,
+     *     HasCredential?: bool|null,
+     *     Id?: string|null,
+     *     IsArchived?: bool|null,
+     *     LastModifiedBy?: string|null,
+     *     LastModifiedDate?: string|null,
      *     Platform: string,
-     *     Version?: int
+     *     Version?: int|null
      * } $args
      */
     public function __construct(array $args)

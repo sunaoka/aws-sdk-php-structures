@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ShardId
- * @property string $ParentShardId
- * @property string $AdjacentParentShardId
+ * @property string|null $ParentShardId
+ * @property string|null $AdjacentParentShardId
  * @property HashKeyRange $HashKeyRange
  * @property SequenceNumberRange $SequenceNumberRange
  */
@@ -16,8 +16,8 @@ class Shard extends Shape
     /**
      * @param array{
      *     ShardId: string,
-     *     ParentShardId?: string,
-     *     AdjacentParentShardId?: string,
+     *     ParentShardId?: string|null,
+     *     AdjacentParentShardId?: string|null,
      *     HashKeyRange: HashKeyRange,
      *     SequenceNumberRange: SequenceNumberRange
      * } $args

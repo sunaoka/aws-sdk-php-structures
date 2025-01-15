@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Glue\CreateDevEndpoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $EndpointName
- * @property string $Status
- * @property list<string> $SecurityGroupIds
- * @property string $SubnetId
- * @property string $RoleArn
- * @property string $YarnEndpointAddress
- * @property int $ZeppelinRemoteSparkInterpreterPort
- * @property int $NumberOfNodes
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X' $WorkerType
- * @property string $GlueVersion
- * @property int $NumberOfWorkers
- * @property string $AvailabilityZone
- * @property string $VpcId
- * @property string $ExtraPythonLibsS3Path
- * @property string $ExtraJarsS3Path
- * @property string $FailureReason
- * @property string $SecurityConfiguration
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property array<string, string> $Arguments
+ * @property string|null $EndpointName
+ * @property string|null $Status
+ * @property list<string>|null $SecurityGroupIds
+ * @property string|null $SubnetId
+ * @property string|null $RoleArn
+ * @property string|null $YarnEndpointAddress
+ * @property int|null $ZeppelinRemoteSparkInterpreterPort
+ * @property int|null $NumberOfNodes
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property string|null $GlueVersion
+ * @property int|null $NumberOfWorkers
+ * @property string|null $AvailabilityZone
+ * @property string|null $VpcId
+ * @property string|null $ExtraPythonLibsS3Path
+ * @property string|null $ExtraJarsS3Path
+ * @property string|null $FailureReason
+ * @property string|null $SecurityConfiguration
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property array<string, string>|null $Arguments
  */
 class CreateDevEndpointResponse extends Response
 {

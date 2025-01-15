@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetAggregateComplianceDetailsByCo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AggregateEvaluationResult> $AggregateEvaluationResults
- * @property string $NextToken
+ * @property list<Shapes\AggregateEvaluationResult>|null $AggregateEvaluationResults
+ * @property string|null $NextToken
  */
 class GetAggregateComplianceDetailsByConfigRuleResponse extends Response
 {

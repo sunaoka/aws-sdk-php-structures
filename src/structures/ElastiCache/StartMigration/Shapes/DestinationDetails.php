@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\StartMigration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudWatchLogsDestinationDetails $CloudWatchLogsDetails
- * @property KinesisFirehoseDestinationDetails $KinesisFirehoseDetails
+ * @property CloudWatchLogsDestinationDetails|null $CloudWatchLogsDetails
+ * @property KinesisFirehoseDestinationDetails|null $KinesisFirehoseDetails
  */
 class DestinationDetails extends Shape
 {
     /**
      * @param array{
-     *     CloudWatchLogsDetails?: CloudWatchLogsDestinationDetails,
-     *     KinesisFirehoseDetails?: KinesisFirehoseDestinationDetails
+     *     CloudWatchLogsDetails?: CloudWatchLogsDestinationDetails|null,
+     *     KinesisFirehoseDetails?: KinesisFirehoseDestinationDetails|null
      * } $args
      */
     public function __construct(array $args = [])

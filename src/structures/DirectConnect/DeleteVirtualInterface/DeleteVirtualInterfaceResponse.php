@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DeleteVirtualInterface;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'confirming'|'verifying'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown' $virtualInterfaceState
+ * @property 'confirming'|'verifying'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown'|null $virtualInterfaceState
  */
 class DeleteVirtualInterfaceResponse extends Response
 {

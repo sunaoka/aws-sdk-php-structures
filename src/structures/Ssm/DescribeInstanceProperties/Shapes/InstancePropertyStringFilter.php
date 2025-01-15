@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Key
  * @property list<string> $Values
- * @property 'Equal'|'NotEqual'|'BeginWith'|'LessThan'|'GreaterThan' $Operator
+ * @property 'Equal'|'NotEqual'|'BeginWith'|'LessThan'|'GreaterThan'|null $Operator
  */
 class InstancePropertyStringFilter extends Shape
 {
@@ -15,7 +15,7 @@ class InstancePropertyStringFilter extends Shape
      * @param array{
      *     Key: string,
      *     Values: list<string>,
-     *     Operator?: 'Equal'|'NotEqual'|'BeginWith'|'LessThan'|'GreaterThan'
+     *     Operator?: 'Equal'|'NotEqual'|'BeginWith'|'LessThan'|'GreaterThan'|null
      * } $args
      */
     public function __construct(array $args)

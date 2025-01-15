@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DeregisterInstancesFromLoa
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Instance> $Instances
+ * @property list<Shapes\Instance>|null $Instances
  */
 class DeregisterInstancesFromLoadBalancerResponse extends Response
 {

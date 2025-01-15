@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetDomainName;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $domainName
- * @property string $domainNameId
- * @property string $domainNameArn
- * @property string $certificateName
- * @property string $certificateArn
- * @property \Aws\Api\DateTimeResult $certificateUploadDate
- * @property string $regionalDomainName
- * @property string $regionalHostedZoneId
- * @property string $regionalCertificateName
- * @property string $regionalCertificateArn
- * @property string $distributionDomainName
- * @property string $distributionHostedZoneId
- * @property Shapes\EndpointConfiguration $endpointConfiguration
- * @property 'AVAILABLE'|'UPDATING'|'PENDING'|'PENDING_CERTIFICATE_REIMPORT'|'PENDING_OWNERSHIP_VERIFICATION' $domainNameStatus
- * @property string $domainNameStatusMessage
- * @property 'TLS_1_0'|'TLS_1_2' $securityPolicy
- * @property array<string, string> $tags
- * @property Shapes\MutualTlsAuthentication $mutualTlsAuthentication
- * @property string $ownershipVerificationCertificateArn
- * @property string $managementPolicy
- * @property string $policy
+ * @property string|null $domainName
+ * @property string|null $domainNameId
+ * @property string|null $domainNameArn
+ * @property string|null $certificateName
+ * @property string|null $certificateArn
+ * @property \Aws\Api\DateTimeResult|null $certificateUploadDate
+ * @property string|null $regionalDomainName
+ * @property string|null $regionalHostedZoneId
+ * @property string|null $regionalCertificateName
+ * @property string|null $regionalCertificateArn
+ * @property string|null $distributionDomainName
+ * @property string|null $distributionHostedZoneId
+ * @property Shapes\EndpointConfiguration|null $endpointConfiguration
+ * @property 'AVAILABLE'|'UPDATING'|'PENDING'|'PENDING_CERTIFICATE_REIMPORT'|'PENDING_OWNERSHIP_VERIFICATION'|null $domainNameStatus
+ * @property string|null $domainNameStatusMessage
+ * @property 'TLS_1_0'|'TLS_1_2'|null $securityPolicy
+ * @property array<string, string>|null $tags
+ * @property Shapes\MutualTlsAuthentication|null $mutualTlsAuthentication
+ * @property string|null $ownershipVerificationCertificateArn
+ * @property string|null $managementPolicy
+ * @property string|null $policy
  */
 class GetDomainNameResponse extends Response
 {

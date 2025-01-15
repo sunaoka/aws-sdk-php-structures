@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StackId
  * @property string $IamUserArn
- * @property bool $AllowSsh
- * @property bool $AllowSudo
- * @property string $Level
+ * @property bool|null $AllowSsh
+ * @property bool|null $AllowSudo
+ * @property string|null $Level
  */
 class SetPermissionRequest extends Request
 {
@@ -17,9 +17,9 @@ class SetPermissionRequest extends Request
      * @param array{
      *     StackId: string,
      *     IamUserArn: string,
-     *     AllowSsh?: bool,
-     *     AllowSudo?: bool,
-     *     Level?: string
+     *     AllowSsh?: bool|null,
+     *     AllowSudo?: bool|null,
+     *     Level?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property DestinationConfiguration $destinationConfiguration
- * @property string $name
- * @property int<0, 300> $recordingReconnectWindowSeconds
- * @property RenditionConfiguration $renditionConfiguration
+ * @property string|null $name
+ * @property int<0, 300>|null $recordingReconnectWindowSeconds
+ * @property RenditionConfiguration|null $renditionConfiguration
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE' $state
- * @property array<string, string> $tags
- * @property ThumbnailConfiguration $thumbnailConfiguration
+ * @property array<string, string>|null $tags
+ * @property ThumbnailConfiguration|null $thumbnailConfiguration
  */
 class RecordingConfiguration extends Shape
 {
@@ -20,12 +20,12 @@ class RecordingConfiguration extends Shape
      * @param array{
      *     arn: string,
      *     destinationConfiguration: DestinationConfiguration,
-     *     name?: string,
-     *     recordingReconnectWindowSeconds?: int<0, 300>,
-     *     renditionConfiguration?: RenditionConfiguration,
+     *     name?: string|null,
+     *     recordingReconnectWindowSeconds?: int<0, 300>|null,
+     *     renditionConfiguration?: RenditionConfiguration|null,
      *     state: 'CREATING'|'CREATE_FAILED'|'ACTIVE',
-     *     tags?: array<string, string>,
-     *     thumbnailConfiguration?: ThumbnailConfiguration
+     *     tags?: array<string, string>|null,
+     *     thumbnailConfiguration?: ThumbnailConfiguration|null
      * } $args
      */
     public function __construct(array $args)

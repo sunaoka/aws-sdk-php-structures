@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Emr\GetAutoTerminationPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AutoTerminationPolicy $AutoTerminationPolicy
+ * @property Shapes\AutoTerminationPolicy|null $AutoTerminationPolicy
  */
 class GetAutoTerminationPolicyResponse extends Response
 {

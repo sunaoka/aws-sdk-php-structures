@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\CloudTrail\CreateChannel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
- * @property string $Name
- * @property string $Source
- * @property list<Shapes\Destination> $Destinations
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ChannelArn
+ * @property string|null $Name
+ * @property string|null $Source
+ * @property list<Shapes\Destination>|null $Destinations
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateChannelResponse extends Response
 {

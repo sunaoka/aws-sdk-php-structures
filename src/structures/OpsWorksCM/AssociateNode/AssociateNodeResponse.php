@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\OpsWorksCM\AssociateNode;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NodeAssociationStatusToken
+ * @property string|null $NodeAssociationStatusToken
  */
 class AssociateNodeResponse extends Response
 {

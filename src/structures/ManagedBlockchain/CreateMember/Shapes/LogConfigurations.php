@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\CreateMember\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LogConfiguration $Cloudwatch
+ * @property LogConfiguration|null $Cloudwatch
  */
 class LogConfigurations extends Shape
 {
     /**
-     * @param array{Cloudwatch?: LogConfiguration} $args
+     * @param array{Cloudwatch?: LogConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

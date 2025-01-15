@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeOptimizationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RecommendedInferenceImage
+ * @property string|null $RecommendedInferenceImage
  */
 class OptimizationOutput extends Shape
 {
     /**
-     * @param array{RecommendedInferenceImage?: string} $args
+     * @param array{RecommendedInferenceImage?: string|null} $args
      */
     public function __construct(array $args = [])
     {

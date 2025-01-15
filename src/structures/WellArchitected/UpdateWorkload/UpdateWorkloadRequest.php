@@ -6,46 +6,46 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkloadId
- * @property string $WorkloadName
- * @property string $Description
- * @property 'PRODUCTION'|'PREPRODUCTION' $Environment
- * @property list<string> $AccountIds
- * @property list<string> $AwsRegions
- * @property list<string> $NonAwsRegions
- * @property list<string> $PillarPriorities
- * @property string $ArchitecturalDesign
- * @property string $ReviewOwner
- * @property bool $IsReviewOwnerUpdateAcknowledged
- * @property string $IndustryType
- * @property string $Industry
- * @property string $Notes
- * @property 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED' $ImprovementStatus
- * @property Shapes\WorkloadDiscoveryConfig $DiscoveryConfig
- * @property list<string> $Applications
- * @property Shapes\WorkloadJiraConfigurationInput $JiraConfiguration
+ * @property string|null $WorkloadName
+ * @property string|null $Description
+ * @property 'PRODUCTION'|'PREPRODUCTION'|null $Environment
+ * @property list<string>|null $AccountIds
+ * @property list<string>|null $AwsRegions
+ * @property list<string>|null $NonAwsRegions
+ * @property list<string>|null $PillarPriorities
+ * @property string|null $ArchitecturalDesign
+ * @property string|null $ReviewOwner
+ * @property bool|null $IsReviewOwnerUpdateAcknowledged
+ * @property string|null $IndustryType
+ * @property string|null $Industry
+ * @property string|null $Notes
+ * @property 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED'|null $ImprovementStatus
+ * @property Shapes\WorkloadDiscoveryConfig|null $DiscoveryConfig
+ * @property list<string>|null $Applications
+ * @property Shapes\WorkloadJiraConfigurationInput|null $JiraConfiguration
  */
 class UpdateWorkloadRequest extends Request
 {
     /**
      * @param array{
      *     WorkloadId: string,
-     *     WorkloadName?: string,
-     *     Description?: string,
-     *     Environment?: 'PRODUCTION'|'PREPRODUCTION',
-     *     AccountIds?: list<string>,
-     *     AwsRegions?: list<string>,
-     *     NonAwsRegions?: list<string>,
-     *     PillarPriorities?: list<string>,
-     *     ArchitecturalDesign?: string,
-     *     ReviewOwner?: string,
-     *     IsReviewOwnerUpdateAcknowledged?: bool,
-     *     IndustryType?: string,
-     *     Industry?: string,
-     *     Notes?: string,
-     *     ImprovementStatus?: 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED',
-     *     DiscoveryConfig?: Shapes\WorkloadDiscoveryConfig,
-     *     Applications?: list<string>,
-     *     JiraConfiguration?: Shapes\WorkloadJiraConfigurationInput
+     *     WorkloadName?: string|null,
+     *     Description?: string|null,
+     *     Environment?: 'PRODUCTION'|'PREPRODUCTION'|null,
+     *     AccountIds?: list<string>|null,
+     *     AwsRegions?: list<string>|null,
+     *     NonAwsRegions?: list<string>|null,
+     *     PillarPriorities?: list<string>|null,
+     *     ArchitecturalDesign?: string|null,
+     *     ReviewOwner?: string|null,
+     *     IsReviewOwnerUpdateAcknowledged?: bool|null,
+     *     IndustryType?: string|null,
+     *     Industry?: string|null,
+     *     Notes?: string|null,
+     *     ImprovementStatus?: 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED'|null,
+     *     DiscoveryConfig?: Shapes\WorkloadDiscoveryConfig|null,
+     *     Applications?: list<string>|null,
+     *     JiraConfiguration?: Shapes\WorkloadJiraConfigurationInput|null
      * } $args
      */
     public function __construct(array $args)

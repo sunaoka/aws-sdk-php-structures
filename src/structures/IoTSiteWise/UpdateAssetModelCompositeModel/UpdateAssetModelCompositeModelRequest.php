@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $assetModelId
  * @property string $assetModelCompositeModelId
- * @property string $assetModelCompositeModelExternalId
- * @property string $assetModelCompositeModelDescription
+ * @property string|null $assetModelCompositeModelExternalId
+ * @property string|null $assetModelCompositeModelDescription
  * @property string $assetModelCompositeModelName
- * @property string $clientToken
- * @property list<Shapes\AssetModelProperty> $assetModelCompositeModelProperties
- * @property string $ifMatch
- * @property string $ifNoneMatch
- * @property 'LATEST'|'ACTIVE' $matchForVersionType
+ * @property string|null $clientToken
+ * @property list<Shapes\AssetModelProperty>|null $assetModelCompositeModelProperties
+ * @property string|null $ifMatch
+ * @property string|null $ifNoneMatch
+ * @property 'LATEST'|'ACTIVE'|null $matchForVersionType
  */
 class UpdateAssetModelCompositeModelRequest extends Request
 {
@@ -22,14 +22,14 @@ class UpdateAssetModelCompositeModelRequest extends Request
      * @param array{
      *     assetModelId: string,
      *     assetModelCompositeModelId: string,
-     *     assetModelCompositeModelExternalId?: string,
-     *     assetModelCompositeModelDescription?: string,
+     *     assetModelCompositeModelExternalId?: string|null,
+     *     assetModelCompositeModelDescription?: string|null,
      *     assetModelCompositeModelName: string,
-     *     clientToken?: string,
-     *     assetModelCompositeModelProperties?: list<Shapes\AssetModelProperty>,
-     *     ifMatch?: string,
-     *     ifNoneMatch?: string,
-     *     matchForVersionType?: 'LATEST'|'ACTIVE'
+     *     clientToken?: string|null,
+     *     assetModelCompositeModelProperties?: list<Shapes\AssetModelProperty>|null,
+     *     ifMatch?: string|null,
+     *     ifNoneMatch?: string|null,
+     *     matchForVersionType?: 'LATEST'|'ACTIVE'|null
      * } $args
      */
     public function __construct(array $args)

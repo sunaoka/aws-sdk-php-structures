@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property 'USER'|'GROUP' $Type
  * @property 'ALLOW'|'DENY' $Access
- * @property string $DataSourceId
+ * @property string|null $DataSourceId
  */
 class Principal extends Shape
 {
@@ -17,7 +17,7 @@ class Principal extends Shape
      *     Name: string,
      *     Type: 'USER'|'GROUP',
      *     Access: 'ALLOW'|'DENY',
-     *     DataSourceId?: string
+     *     DataSourceId?: string|null
      * } $args
      */
     public function __construct(array $args)

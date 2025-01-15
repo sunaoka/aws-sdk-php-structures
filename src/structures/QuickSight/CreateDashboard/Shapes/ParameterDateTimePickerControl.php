@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ParameterControlId
  * @property string $Title
  * @property string $SourceParameterName
- * @property DateTimePickerControlDisplayOptions $DisplayOptions
+ * @property DateTimePickerControlDisplayOptions|null $DisplayOptions
  */
 class ParameterDateTimePickerControl extends Shape
 {
@@ -17,7 +17,7 @@ class ParameterDateTimePickerControl extends Shape
      *     ParameterControlId: string,
      *     Title: string,
      *     SourceParameterName: string,
-     *     DisplayOptions?: DateTimePickerControlDisplayOptions
+     *     DisplayOptions?: DateTimePickerControlDisplayOptions|null
      * } $args
      */
     public function __construct(array $args)

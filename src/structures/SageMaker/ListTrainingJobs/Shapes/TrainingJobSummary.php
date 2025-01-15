@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TrainingJobName
  * @property string $TrainingJobArn
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $TrainingEndTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $TrainingEndTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TrainingJobStatus
- * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending' $SecondaryStatus
- * @property WarmPoolStatus $WarmPoolStatus
- * @property string $TrainingPlanArn
+ * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null $SecondaryStatus
+ * @property WarmPoolStatus|null $WarmPoolStatus
+ * @property string|null $TrainingPlanArn
  */
 class TrainingJobSummary extends Shape
 {
@@ -22,12 +22,12 @@ class TrainingJobSummary extends Shape
      *     TrainingJobName: string,
      *     TrainingJobArn: string,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     TrainingEndTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
+     *     TrainingEndTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     TrainingJobStatus: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
-     *     SecondaryStatus?: 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending',
-     *     WarmPoolStatus?: WarmPoolStatus,
-     *     TrainingPlanArn?: string
+     *     SecondaryStatus?: 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null,
+     *     WarmPoolStatus?: WarmPoolStatus|null,
+     *     TrainingPlanArn?: string|null
      * } $args
      */
     public function __construct(array $args)

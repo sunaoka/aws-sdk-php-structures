@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\drs\StartRecovery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $recoverySnapshotID
+ * @property string|null $recoverySnapshotID
  * @property string $sourceServerID
  */
 class StartRecoveryRequestSourceServer extends Shape
 {
     /**
      * @param array{
-     *     recoverySnapshotID?: string,
+     *     recoverySnapshotID?: string|null,
      *     sourceServerID: string
      * } $args
      */

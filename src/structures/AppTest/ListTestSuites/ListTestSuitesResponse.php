@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\TestSuiteSummary> $testSuites
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListTestSuitesResponse extends Response
 {

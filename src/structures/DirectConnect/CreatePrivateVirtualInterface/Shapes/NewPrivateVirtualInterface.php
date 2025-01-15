@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $virtualInterfaceName
  * @property int $vlan
  * @property int $asn
- * @property int $mtu
- * @property string $authKey
- * @property string $amazonAddress
- * @property string $customerAddress
- * @property 'ipv4'|'ipv6' $addressFamily
- * @property string $virtualGatewayId
- * @property string $directConnectGatewayId
- * @property list<Tag> $tags
- * @property bool $enableSiteLink
+ * @property int|null $mtu
+ * @property string|null $authKey
+ * @property string|null $amazonAddress
+ * @property string|null $customerAddress
+ * @property 'ipv4'|'ipv6'|null $addressFamily
+ * @property string|null $virtualGatewayId
+ * @property string|null $directConnectGatewayId
+ * @property list<Tag>|null $tags
+ * @property bool|null $enableSiteLink
  */
 class NewPrivateVirtualInterface extends Shape
 {
@@ -25,15 +25,15 @@ class NewPrivateVirtualInterface extends Shape
      *     virtualInterfaceName: string,
      *     vlan: int,
      *     asn: int,
-     *     mtu?: int,
-     *     authKey?: string,
-     *     amazonAddress?: string,
-     *     customerAddress?: string,
-     *     addressFamily?: 'ipv4'|'ipv6',
-     *     virtualGatewayId?: string,
-     *     directConnectGatewayId?: string,
-     *     tags?: list<Tag>,
-     *     enableSiteLink?: bool
+     *     mtu?: int|null,
+     *     authKey?: string|null,
+     *     amazonAddress?: string|null,
+     *     customerAddress?: string|null,
+     *     addressFamily?: 'ipv4'|'ipv6'|null,
+     *     virtualGatewayId?: string|null,
+     *     directConnectGatewayId?: string|null,
+     *     tags?: list<Tag>|null,
+     *     enableSiteLink?: bool|null
      * } $args
      */
     public function __construct(array $args)

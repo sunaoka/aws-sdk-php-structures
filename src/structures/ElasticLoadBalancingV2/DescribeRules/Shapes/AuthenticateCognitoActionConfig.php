@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $UserPoolArn
  * @property string $UserPoolClientId
  * @property string $UserPoolDomain
- * @property string $SessionCookieName
- * @property string $Scope
- * @property int $SessionTimeout
- * @property array<string, string> $AuthenticationRequestExtraParams
- * @property 'deny'|'allow'|'authenticate' $OnUnauthenticatedRequest
+ * @property string|null $SessionCookieName
+ * @property string|null $Scope
+ * @property int|null $SessionTimeout
+ * @property array<string, string>|null $AuthenticationRequestExtraParams
+ * @property 'deny'|'allow'|'authenticate'|null $OnUnauthenticatedRequest
  */
 class AuthenticateCognitoActionConfig extends Shape
 {
@@ -21,11 +21,11 @@ class AuthenticateCognitoActionConfig extends Shape
      *     UserPoolArn: string,
      *     UserPoolClientId: string,
      *     UserPoolDomain: string,
-     *     SessionCookieName?: string,
-     *     Scope?: string,
-     *     SessionTimeout?: int,
-     *     AuthenticationRequestExtraParams?: array<string, string>,
-     *     OnUnauthenticatedRequest?: 'deny'|'allow'|'authenticate'
+     *     SessionCookieName?: string|null,
+     *     Scope?: string|null,
+     *     SessionTimeout?: int|null,
+     *     AuthenticationRequestExtraParams?: array<string, string>|null,
+     *     OnUnauthenticatedRequest?: 'deny'|'allow'|'authenticate'|null
      * } $args
      */
     public function __construct(array $args)

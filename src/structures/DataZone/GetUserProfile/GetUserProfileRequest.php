@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property 'IAM'|'SSO' $type
+ * @property 'IAM'|'SSO'|null $type
  * @property string $userIdentifier
  */
 class GetUserProfileRequest extends Request
@@ -14,7 +14,7 @@ class GetUserProfileRequest extends Request
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     type?: 'IAM'|'SSO',
+     *     type?: 'IAM'|'SSO'|null,
      *     userIdentifier: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $KeyIdentifier
  * @property string $PlainText
  * @property Shapes\EncryptionDecryptionAttributes $EncryptionAttributes
- * @property Shapes\WrappedKey $WrappedKey
+ * @property Shapes\WrappedKey|null $WrappedKey
  */
 class EncryptDataRequest extends Request
 {
@@ -17,7 +17,7 @@ class EncryptDataRequest extends Request
      *     KeyIdentifier: string,
      *     PlainText: string,
      *     EncryptionAttributes: Shapes\EncryptionDecryptionAttributes,
-     *     WrappedKey?: Shapes\WrappedKey
+     *     WrappedKey?: Shapes\WrappedKey|null
      * } $args
      */
     public function __construct(array $args)

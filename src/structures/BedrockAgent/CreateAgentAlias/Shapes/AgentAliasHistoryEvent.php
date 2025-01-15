@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateAgentAlias\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $endDate
- * @property list<AgentAliasRoutingConfigurationListItem> $routingConfiguration
- * @property \Aws\Api\DateTimeResult $startDate
+ * @property \Aws\Api\DateTimeResult|null $endDate
+ * @property list<AgentAliasRoutingConfigurationListItem>|null $routingConfiguration
+ * @property \Aws\Api\DateTimeResult|null $startDate
  */
 class AgentAliasHistoryEvent extends Shape
 {
     /**
      * @param array{
-     *     endDate?: \Aws\Api\DateTimeResult,
-     *     routingConfiguration?: list<AgentAliasRoutingConfigurationListItem>,
-     *     startDate?: \Aws\Api\DateTimeResult
+     *     endDate?: \Aws\Api\DateTimeResult|null,
+     *     routingConfiguration?: list<AgentAliasRoutingConfigurationListItem>|null,
+     *     startDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

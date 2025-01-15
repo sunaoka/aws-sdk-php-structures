@@ -6,38 +6,38 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RoleARN
- * @property string $DomainARN
- * @property string $ClusterEndpoint
+ * @property string|null $DomainARN
+ * @property string|null $ClusterEndpoint
  * @property string $IndexName
- * @property string $TypeName
- * @property 'NoRotation'|'OneHour'|'OneDay'|'OneWeek'|'OneMonth' $IndexRotationPeriod
- * @property ElasticsearchBufferingHints $BufferingHints
- * @property ElasticsearchRetryOptions $RetryOptions
- * @property 'FailedDocumentsOnly'|'AllDocuments' $S3BackupMode
+ * @property string|null $TypeName
+ * @property 'NoRotation'|'OneHour'|'OneDay'|'OneWeek'|'OneMonth'|null $IndexRotationPeriod
+ * @property ElasticsearchBufferingHints|null $BufferingHints
+ * @property ElasticsearchRetryOptions|null $RetryOptions
+ * @property 'FailedDocumentsOnly'|'AllDocuments'|null $S3BackupMode
  * @property S3DestinationConfiguration $S3Configuration
- * @property ProcessingConfiguration $ProcessingConfiguration
- * @property CloudWatchLoggingOptions $CloudWatchLoggingOptions
- * @property VpcConfiguration $VpcConfiguration
- * @property DocumentIdOptions $DocumentIdOptions
+ * @property ProcessingConfiguration|null $ProcessingConfiguration
+ * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
+ * @property VpcConfiguration|null $VpcConfiguration
+ * @property DocumentIdOptions|null $DocumentIdOptions
  */
 class ElasticsearchDestinationConfiguration extends Shape
 {
     /**
      * @param array{
      *     RoleARN: string,
-     *     DomainARN?: string,
-     *     ClusterEndpoint?: string,
+     *     DomainARN?: string|null,
+     *     ClusterEndpoint?: string|null,
      *     IndexName: string,
-     *     TypeName?: string,
-     *     IndexRotationPeriod?: 'NoRotation'|'OneHour'|'OneDay'|'OneWeek'|'OneMonth',
-     *     BufferingHints?: ElasticsearchBufferingHints,
-     *     RetryOptions?: ElasticsearchRetryOptions,
-     *     S3BackupMode?: 'FailedDocumentsOnly'|'AllDocuments',
+     *     TypeName?: string|null,
+     *     IndexRotationPeriod?: 'NoRotation'|'OneHour'|'OneDay'|'OneWeek'|'OneMonth'|null,
+     *     BufferingHints?: ElasticsearchBufferingHints|null,
+     *     RetryOptions?: ElasticsearchRetryOptions|null,
+     *     S3BackupMode?: 'FailedDocumentsOnly'|'AllDocuments'|null,
      *     S3Configuration: S3DestinationConfiguration,
-     *     ProcessingConfiguration?: ProcessingConfiguration,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions,
-     *     VpcConfiguration?: VpcConfiguration,
-     *     DocumentIdOptions?: DocumentIdOptions
+     *     ProcessingConfiguration?: ProcessingConfiguration|null,
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
+     *     VpcConfiguration?: VpcConfiguration|null,
+     *     DocumentIdOptions?: DocumentIdOptions|null
      * } $args
      */
     public function __construct(array $args)

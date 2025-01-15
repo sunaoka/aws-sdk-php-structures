@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\GetTemplateGroupAccessControlEnt
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccessRights $AccessRights
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $GroupDisplayName
- * @property string $GroupSecurityIdentifier
- * @property string $TemplateArn
- * @property \Aws\Api\DateTimeResult $UpdatedAt
+ * @property AccessRights|null $AccessRights
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $GroupDisplayName
+ * @property string|null $GroupSecurityIdentifier
+ * @property string|null $TemplateArn
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
 class AccessControlEntry extends Shape
 {
     /**
      * @param array{
-     *     AccessRights?: AccessRights,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     GroupDisplayName?: string,
-     *     GroupSecurityIdentifier?: string,
-     *     TemplateArn?: string,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult
+     *     AccessRights?: AccessRights|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     GroupDisplayName?: string|null,
+     *     GroupSecurityIdentifier?: string|null,
+     *     TemplateArn?: string|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

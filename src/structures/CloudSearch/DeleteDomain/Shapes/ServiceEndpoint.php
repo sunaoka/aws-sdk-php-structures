@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudSearch\DeleteDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Endpoint
+ * @property string|null $Endpoint
  */
 class ServiceEndpoint extends Shape
 {
     /**
-     * @param array{Endpoint?: string} $args
+     * @param array{Endpoint?: string|null} $args
      */
     public function __construct(array $args = [])
     {

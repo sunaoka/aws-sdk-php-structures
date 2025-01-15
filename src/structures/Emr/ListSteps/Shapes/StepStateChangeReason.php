@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Emr\ListSteps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NONE' $Code
- * @property string $Message
+ * @property 'NONE'|null $Code
+ * @property string|null $Message
  */
 class StepStateChangeReason extends Shape
 {
     /**
      * @param array{
-     *     Code?: 'NONE',
-     *     Message?: string
+     *     Code?: 'NONE'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

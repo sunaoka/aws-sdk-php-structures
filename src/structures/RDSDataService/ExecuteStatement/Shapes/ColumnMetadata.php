@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\RDSDataService\ExecuteStatement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property int $type
- * @property string $typeName
- * @property string $label
- * @property string $schemaName
- * @property string $tableName
- * @property bool $isAutoIncrement
- * @property bool $isSigned
- * @property bool $isCurrency
- * @property bool $isCaseSensitive
- * @property int $nullable
- * @property int $precision
- * @property int $scale
- * @property int $arrayBaseColumnType
+ * @property string|null $name
+ * @property int|null $type
+ * @property string|null $typeName
+ * @property string|null $label
+ * @property string|null $schemaName
+ * @property string|null $tableName
+ * @property bool|null $isAutoIncrement
+ * @property bool|null $isSigned
+ * @property bool|null $isCurrency
+ * @property bool|null $isCaseSensitive
+ * @property int|null $nullable
+ * @property int|null $precision
+ * @property int|null $scale
+ * @property int|null $arrayBaseColumnType
  */
 class ColumnMetadata extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     type?: int,
-     *     typeName?: string,
-     *     label?: string,
-     *     schemaName?: string,
-     *     tableName?: string,
-     *     isAutoIncrement?: bool,
-     *     isSigned?: bool,
-     *     isCurrency?: bool,
-     *     isCaseSensitive?: bool,
-     *     nullable?: int,
-     *     precision?: int,
-     *     scale?: int,
-     *     arrayBaseColumnType?: int
+     *     name?: string|null,
+     *     type?: int|null,
+     *     typeName?: string|null,
+     *     label?: string|null,
+     *     schemaName?: string|null,
+     *     tableName?: string|null,
+     *     isAutoIncrement?: bool|null,
+     *     isSigned?: bool|null,
+     *     isCurrency?: bool|null,
+     *     isCaseSensitive?: bool|null,
+     *     nullable?: int|null,
+     *     precision?: int|null,
+     *     scale?: int|null,
+     *     arrayBaseColumnType?: int|null
      * } $args
      */
     public function __construct(array $args = [])

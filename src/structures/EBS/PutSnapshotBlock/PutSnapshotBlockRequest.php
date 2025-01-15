@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, max> $BlockIndex
  * @property string|resource|\Psr\Http\Message\StreamInterface $BlockData
  * @property int $DataLength
- * @property int<0, 100> $Progress
+ * @property int<0, 100>|null $Progress
  * @property string $Checksum
  * @property 'SHA256' $ChecksumAlgorithm
  */
@@ -21,7 +21,7 @@ class PutSnapshotBlockRequest extends Request
      *     BlockIndex: int<0, max>,
      *     BlockData: string|resource|\Psr\Http\Message\StreamInterface,
      *     DataLength: int,
-     *     Progress?: int<0, 100>,
+     *     Progress?: int<0, 100>|null,
      *     Checksum: string,
      *     ChecksumAlgorithm: 'SHA256'
      * } $args

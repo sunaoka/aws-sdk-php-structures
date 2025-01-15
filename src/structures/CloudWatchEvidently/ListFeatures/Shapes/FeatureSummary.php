@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdTime
- * @property string $defaultVariation
- * @property list<EvaluationRule> $evaluationRules
+ * @property string|null $defaultVariation
+ * @property list<EvaluationRule>|null $evaluationRules
  * @property 'ALL_RULES'|'DEFAULT_VARIATION' $evaluationStrategy
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
  * @property string $name
- * @property string $project
+ * @property string|null $project
  * @property 'AVAILABLE'|'UPDATING' $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class FeatureSummary extends Shape
 {
@@ -22,14 +22,14 @@ class FeatureSummary extends Shape
      * @param array{
      *     arn: string,
      *     createdTime: \Aws\Api\DateTimeResult,
-     *     defaultVariation?: string,
-     *     evaluationRules?: list<EvaluationRule>,
+     *     defaultVariation?: string|null,
+     *     evaluationRules?: list<EvaluationRule>|null,
      *     evaluationStrategy: 'ALL_RULES'|'DEFAULT_VARIATION',
      *     lastUpdatedTime: \Aws\Api\DateTimeResult,
      *     name: string,
-     *     project?: string,
+     *     project?: string|null,
      *     status: 'AVAILABLE'|'UPDATING',
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

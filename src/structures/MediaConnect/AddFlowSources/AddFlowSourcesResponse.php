@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaConnect\AddFlowSources;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FlowArn
- * @property list<Shapes\Source> $Sources
+ * @property string|null $FlowArn
+ * @property list<Shapes\Source>|null $Sources
  */
 class AddFlowSourcesResponse extends Response
 {

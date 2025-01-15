@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentResources\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EnvironmentName
- * @property list<AutoScalingGroup> $AutoScalingGroups
- * @property list<Instance> $Instances
- * @property list<LaunchConfiguration> $LaunchConfigurations
- * @property list<LaunchTemplate> $LaunchTemplates
- * @property list<LoadBalancer> $LoadBalancers
- * @property list<Trigger> $Triggers
- * @property list<Queue> $Queues
+ * @property string|null $EnvironmentName
+ * @property list<AutoScalingGroup>|null $AutoScalingGroups
+ * @property list<Instance>|null $Instances
+ * @property list<LaunchConfiguration>|null $LaunchConfigurations
+ * @property list<LaunchTemplate>|null $LaunchTemplates
+ * @property list<LoadBalancer>|null $LoadBalancers
+ * @property list<Trigger>|null $Triggers
+ * @property list<Queue>|null $Queues
  */
 class EnvironmentResourceDescription extends Shape
 {
     /**
      * @param array{
-     *     EnvironmentName?: string,
-     *     AutoScalingGroups?: list<AutoScalingGroup>,
-     *     Instances?: list<Instance>,
-     *     LaunchConfigurations?: list<LaunchConfiguration>,
-     *     LaunchTemplates?: list<LaunchTemplate>,
-     *     LoadBalancers?: list<LoadBalancer>,
-     *     Triggers?: list<Trigger>,
-     *     Queues?: list<Queue>
+     *     EnvironmentName?: string|null,
+     *     AutoScalingGroups?: list<AutoScalingGroup>|null,
+     *     Instances?: list<Instance>|null,
+     *     LaunchConfigurations?: list<LaunchConfiguration>|null,
+     *     LaunchTemplates?: list<LaunchTemplate>|null,
+     *     LoadBalancers?: list<LoadBalancer>|null,
+     *     Triggers?: list<Trigger>|null,
+     *     Queues?: list<Queue>|null
      * } $args
      */
     public function __construct(array $args = [])

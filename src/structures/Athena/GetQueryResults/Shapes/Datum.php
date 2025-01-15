@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Athena\GetQueryResults\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VarCharValue
+ * @property string|null $VarCharValue
  */
 class Datum extends Shape
 {
     /**
-     * @param array{VarCharValue?: string} $args
+     * @param array{VarCharValue?: string|null} $args
      */
     public function __construct(array $args = [])
     {

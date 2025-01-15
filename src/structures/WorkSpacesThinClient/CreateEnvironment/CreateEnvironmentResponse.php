@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpacesThinClient\CreateEnvironment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\EnvironmentSummary $environment
+ * @property Shapes\EnvironmentSummary|null $environment
  */
 class CreateEnvironmentResponse extends Response
 {

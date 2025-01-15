@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $sourceLocation
  * @property string $targetLocation
- * @property string $outputLocation
+ * @property string|null $outputLocation
  * @property SourceDatabaseMetadata $sourceMetadata
  * @property TargetDatabaseMetadata $targetMetadata
  */
@@ -17,7 +17,7 @@ class CompareDatabaseCDCStepInput extends Shape
      * @param array{
      *     sourceLocation: string,
      *     targetLocation: string,
-     *     outputLocation?: string,
+     *     outputLocation?: string|null,
      *     sourceMetadata: SourceDatabaseMetadata,
      *     targetMetadata: TargetDatabaseMetadata
      * } $args

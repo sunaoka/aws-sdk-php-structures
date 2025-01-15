@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SINGLE_VALUED'|'DATE_RANGE' $Type
- * @property DateTimePickerControlDisplayOptions $DisplayOptions
- * @property 'AUTO'|'MANUAL' $CommitMode
+ * @property 'SINGLE_VALUED'|'DATE_RANGE'|null $Type
+ * @property DateTimePickerControlDisplayOptions|null $DisplayOptions
+ * @property 'AUTO'|'MANUAL'|null $CommitMode
  */
 class DefaultDateTimePickerControlOptions extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'SINGLE_VALUED'|'DATE_RANGE',
-     *     DisplayOptions?: DateTimePickerControlDisplayOptions,
-     *     CommitMode?: 'AUTO'|'MANUAL'
+     *     Type?: 'SINGLE_VALUED'|'DATE_RANGE'|null,
+     *     DisplayOptions?: DateTimePickerControlDisplayOptions|null,
+     *     CommitMode?: 'AUTO'|'MANUAL'|null
      * } $args
      */
     public function __construct(array $args = [])

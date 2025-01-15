@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\UpdateDomainConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property bool $InternalUserDatabaseEnabled
- * @property MasterUserOptions $MasterUserOptions
- * @property SAMLOptionsInput $SAMLOptions
- * @property JWTOptionsInput $JWTOptions
- * @property bool $AnonymousAuthEnabled
+ * @property bool|null $Enabled
+ * @property bool|null $InternalUserDatabaseEnabled
+ * @property MasterUserOptions|null $MasterUserOptions
+ * @property SAMLOptionsInput|null $SAMLOptions
+ * @property JWTOptionsInput|null $JWTOptions
+ * @property bool|null $AnonymousAuthEnabled
  */
 class AdvancedSecurityOptionsInput extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     InternalUserDatabaseEnabled?: bool,
-     *     MasterUserOptions?: MasterUserOptions,
-     *     SAMLOptions?: SAMLOptionsInput,
-     *     JWTOptions?: JWTOptionsInput,
-     *     AnonymousAuthEnabled?: bool
+     *     Enabled?: bool|null,
+     *     InternalUserDatabaseEnabled?: bool|null,
+     *     MasterUserOptions?: MasterUserOptions|null,
+     *     SAMLOptions?: SAMLOptionsInput|null,
+     *     JWTOptions?: JWTOptionsInput|null,
+     *     AnonymousAuthEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

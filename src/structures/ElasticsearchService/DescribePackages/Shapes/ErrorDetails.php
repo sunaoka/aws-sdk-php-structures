@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribePackages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorType
- * @property string $ErrorMessage
+ * @property string|null $ErrorType
+ * @property string|null $ErrorMessage
  */
 class ErrorDetails extends Shape
 {
     /**
      * @param array{
-     *     ErrorType?: string,
-     *     ErrorMessage?: string
+     *     ErrorType?: string|null,
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

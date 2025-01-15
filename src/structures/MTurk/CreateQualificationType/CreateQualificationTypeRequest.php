@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Keywords
+ * @property string|null $Keywords
  * @property string $Description
  * @property 'Active'|'Inactive' $QualificationTypeStatus
- * @property int $RetryDelayInSeconds
- * @property string $Test
- * @property string $AnswerKey
- * @property int $TestDurationInSeconds
- * @property bool $AutoGranted
- * @property int $AutoGrantedValue
+ * @property int|null $RetryDelayInSeconds
+ * @property string|null $Test
+ * @property string|null $AnswerKey
+ * @property int|null $TestDurationInSeconds
+ * @property bool|null $AutoGranted
+ * @property int|null $AutoGrantedValue
  */
 class CreateQualificationTypeRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Keywords?: string,
+     *     Keywords?: string|null,
      *     Description: string,
      *     QualificationTypeStatus: 'Active'|'Inactive',
-     *     RetryDelayInSeconds?: int,
-     *     Test?: string,
-     *     AnswerKey?: string,
-     *     TestDurationInSeconds?: int,
-     *     AutoGranted?: bool,
-     *     AutoGrantedValue?: int
+     *     RetryDelayInSeconds?: int|null,
+     *     Test?: string|null,
+     *     AnswerKey?: string|null,
+     *     TestDurationInSeconds?: int|null,
+     *     AutoGranted?: bool|null,
+     *     AutoGrantedValue?: int|null
      * } $args
      */
     public function __construct(array $args)

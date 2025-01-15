@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\CreateOTAUpdate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $certificateArn
- * @property string $platform
- * @property string $certificatePathOnDevice
+ * @property string|null $certificateArn
+ * @property string|null $platform
+ * @property string|null $certificatePathOnDevice
  */
 class SigningProfileParameter extends Shape
 {
     /**
      * @param array{
-     *     certificateArn?: string,
-     *     platform?: string,
-     *     certificatePathOnDevice?: string
+     *     certificateArn?: string|null,
+     *     platform?: string|null,
+     *     certificatePathOnDevice?: string|null
      * } $args
      */
     public function __construct(array $args = [])

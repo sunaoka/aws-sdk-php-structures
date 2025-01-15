@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $gatewayId
  * @property string $gatewayName
- * @property GatewayPlatform $gatewayPlatform
- * @property list<GatewayCapabilitySummary> $gatewayCapabilitySummaries
+ * @property GatewayPlatform|null $gatewayPlatform
+ * @property list<GatewayCapabilitySummary>|null $gatewayCapabilitySummaries
  * @property \Aws\Api\DateTimeResult $creationDate
  * @property \Aws\Api\DateTimeResult $lastUpdateDate
  */
@@ -18,8 +18,8 @@ class GatewaySummary extends Shape
      * @param array{
      *     gatewayId: string,
      *     gatewayName: string,
-     *     gatewayPlatform?: GatewayPlatform,
-     *     gatewayCapabilitySummaries?: list<GatewayCapabilitySummary>,
+     *     gatewayPlatform?: GatewayPlatform|null,
+     *     gatewayCapabilitySummaries?: list<GatewayCapabilitySummary>|null,
      *     creationDate: \Aws\Api\DateTimeResult,
      *     lastUpdateDate: \Aws\Api\DateTimeResult
      * } $args

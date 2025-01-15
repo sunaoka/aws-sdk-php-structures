@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeInstancesHealth\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VersionLabel
- * @property int $DeploymentId
- * @property string $Status
- * @property \Aws\Api\DateTimeResult $DeploymentTime
+ * @property string|null $VersionLabel
+ * @property int|null $DeploymentId
+ * @property string|null $Status
+ * @property \Aws\Api\DateTimeResult|null $DeploymentTime
  */
 class Deployment extends Shape
 {
     /**
      * @param array{
-     *     VersionLabel?: string,
-     *     DeploymentId?: int,
-     *     Status?: string,
-     *     DeploymentTime?: \Aws\Api\DateTimeResult
+     *     VersionLabel?: string|null,
+     *     DeploymentId?: int|null,
+     *     Status?: string|null,
+     *     DeploymentTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

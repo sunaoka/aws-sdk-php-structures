@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AutoSnapshot'|'StopInstanceOnIdle' $addOnType
- * @property AutoSnapshotAddOnRequest $autoSnapshotAddOnRequest
- * @property StopInstanceOnIdleRequest $stopInstanceOnIdleRequest
+ * @property AutoSnapshotAddOnRequest|null $autoSnapshotAddOnRequest
+ * @property StopInstanceOnIdleRequest|null $stopInstanceOnIdleRequest
  */
 class AddOnRequest extends Shape
 {
     /**
      * @param array{
      *     addOnType: 'AutoSnapshot'|'StopInstanceOnIdle',
-     *     autoSnapshotAddOnRequest?: AutoSnapshotAddOnRequest,
-     *     stopInstanceOnIdleRequest?: StopInstanceOnIdleRequest
+     *     autoSnapshotAddOnRequest?: AutoSnapshotAddOnRequest|null,
+     *     stopInstanceOnIdleRequest?: StopInstanceOnIdleRequest|null
      * } $args
      */
     public function __construct(array $args)

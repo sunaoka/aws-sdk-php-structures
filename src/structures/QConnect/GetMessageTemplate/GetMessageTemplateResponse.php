@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\QConnect\GetMessageTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ExtendedMessageTemplateData $messageTemplate
+ * @property Shapes\ExtendedMessageTemplateData|null $messageTemplate
  */
 class GetMessageTemplateResponse extends Response
 {

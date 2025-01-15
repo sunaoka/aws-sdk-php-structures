@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpV4Cidr
- * @property string $PrefixListId
- * @property string $IpV6Cidr
- * @property list<string> $ContributingSubnets
- * @property list<string> $AllowedTargets
- * @property string $RouteTableId
+ * @property string|null $IpV4Cidr
+ * @property string|null $PrefixListId
+ * @property string|null $IpV6Cidr
+ * @property list<string>|null $ContributingSubnets
+ * @property list<string>|null $AllowedTargets
+ * @property string|null $RouteTableId
  */
 class ExpectedRoute extends Shape
 {
     /**
      * @param array{
-     *     IpV4Cidr?: string,
-     *     PrefixListId?: string,
-     *     IpV6Cidr?: string,
-     *     ContributingSubnets?: list<string>,
-     *     AllowedTargets?: list<string>,
-     *     RouteTableId?: string
+     *     IpV4Cidr?: string|null,
+     *     PrefixListId?: string|null,
+     *     IpV6Cidr?: string|null,
+     *     ContributingSubnets?: list<string>|null,
+     *     AllowedTargets?: list<string>|null,
+     *     RouteTableId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

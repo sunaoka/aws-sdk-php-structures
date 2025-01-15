@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\XRay\PutEncryptionConfig;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $KeyId
+ * @property string|null $KeyId
  * @property 'NONE'|'KMS' $Type
  */
 class PutEncryptionConfigRequest extends Request
 {
     /**
      * @param array{
-     *     KeyId?: string,
+     *     KeyId?: string|null,
      *     Type: 'NONE'|'KMS'
      * } $args
      */

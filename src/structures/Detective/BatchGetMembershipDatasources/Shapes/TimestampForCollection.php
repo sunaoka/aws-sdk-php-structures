@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Detective\BatchGetMembershipDatasources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Timestamp
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
  */
 class TimestampForCollection extends Shape
 {
     /**
-     * @param array{Timestamp?: \Aws\Api\DateTimeResult} $args
+     * @param array{Timestamp?: \Aws\Api\DateTimeResult|null} $args
      */
     public function __construct(array $args = [])
     {

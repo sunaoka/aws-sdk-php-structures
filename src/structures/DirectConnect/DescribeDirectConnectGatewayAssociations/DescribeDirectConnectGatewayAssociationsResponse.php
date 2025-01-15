@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeDirectConnectGatewayAssoc
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DirectConnectGatewayAssociation> $directConnectGatewayAssociations
- * @property string $nextToken
+ * @property list<Shapes\DirectConnectGatewayAssociation>|null $directConnectGatewayAssociations
+ * @property string|null $nextToken
  */
 class DescribeDirectConnectGatewayAssociationsResponse extends Response
 {

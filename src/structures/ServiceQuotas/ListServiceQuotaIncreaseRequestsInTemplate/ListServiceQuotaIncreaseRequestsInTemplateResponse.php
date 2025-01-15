@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ServiceQuotas\ListServiceQuotaIncreaseRequestsI
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ServiceQuotaIncreaseRequestInTemplate> $ServiceQuotaIncreaseRequestInTemplateList
- * @property string $NextToken
+ * @property list<Shapes\ServiceQuotaIncreaseRequestInTemplate>|null $ServiceQuotaIncreaseRequestInTemplateList
+ * @property string|null $NextToken
  */
 class ListServiceQuotaIncreaseRequestsInTemplateResponse extends Response
 {

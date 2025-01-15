@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Proton\ListServiceInstanceProvisionedResources\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $identifier
- * @property string $name
- * @property 'CLOUDFORMATION'|'TERRAFORM' $provisioningEngine
+ * @property string|null $identifier
+ * @property string|null $name
+ * @property 'CLOUDFORMATION'|'TERRAFORM'|null $provisioningEngine
  */
 class ProvisionedResource extends Shape
 {
     /**
      * @param array{
-     *     identifier?: string,
-     *     name?: string,
-     *     provisioningEngine?: 'CLOUDFORMATION'|'TERRAFORM'
+     *     identifier?: string|null,
+     *     name?: string|null,
+     *     provisioningEngine?: 'CLOUDFORMATION'|'TERRAFORM'|null
      * } $args
      */
     public function __construct(array $args = [])

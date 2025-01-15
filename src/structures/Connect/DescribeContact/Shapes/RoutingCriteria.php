@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Step> $Steps
- * @property \Aws\Api\DateTimeResult $ActivationTimestamp
- * @property int $Index
+ * @property list<Step>|null $Steps
+ * @property \Aws\Api\DateTimeResult|null $ActivationTimestamp
+ * @property int|null $Index
  */
 class RoutingCriteria extends Shape
 {
     /**
      * @param array{
-     *     Steps?: list<Step>,
-     *     ActivationTimestamp?: \Aws\Api\DateTimeResult,
-     *     Index?: int
+     *     Steps?: list<Step>|null,
+     *     ActivationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Index?: int|null
      * } $args
      */
     public function __construct(array $args = [])

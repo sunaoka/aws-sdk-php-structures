@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SimSpaceWeaver\StartSimulation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
- * @property string $Description
- * @property string $MaximumDuration
+ * @property string|null $ClientToken
+ * @property string|null $Description
+ * @property string|null $MaximumDuration
  * @property string $Name
  * @property string $RoleArn
- * @property Shapes\S3Location $SchemaS3Location
- * @property Shapes\S3Location $SnapshotS3Location
- * @property array<string, string> $Tags
+ * @property Shapes\S3Location|null $SchemaS3Location
+ * @property Shapes\S3Location|null $SnapshotS3Location
+ * @property array<string, string>|null $Tags
  */
 class StartSimulationRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
-     *     Description?: string,
-     *     MaximumDuration?: string,
+     *     ClientToken?: string|null,
+     *     Description?: string|null,
+     *     MaximumDuration?: string|null,
      *     Name: string,
      *     RoleArn: string,
-     *     SchemaS3Location?: Shapes\S3Location,
-     *     SnapshotS3Location?: Shapes\S3Location,
-     *     Tags?: array<string, string>
+     *     SchemaS3Location?: Shapes\S3Location|null,
+     *     SnapshotS3Location?: Shapes\S3Location|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

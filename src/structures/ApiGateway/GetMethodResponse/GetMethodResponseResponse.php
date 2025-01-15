@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetMethodResponse;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $statusCode
- * @property array<string, bool> $responseParameters
- * @property array<string, string> $responseModels
+ * @property string|null $statusCode
+ * @property array<string, bool>|null $responseParameters
+ * @property array<string, string>|null $responseModels
  */
 class GetMethodResponseResponse extends Response
 {

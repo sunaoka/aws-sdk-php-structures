@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $GroupBy
- * @property list<MeasureField> $Size
+ * @property list<DimensionField>|null $GroupBy
+ * @property list<MeasureField>|null $Size
  */
 class WordCloudAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     GroupBy?: list<DimensionField>,
-     *     Size?: list<MeasureField>
+     *     GroupBy?: list<DimensionField>|null,
+     *     Size?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

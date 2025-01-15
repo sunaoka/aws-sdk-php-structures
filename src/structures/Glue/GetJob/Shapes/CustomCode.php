@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Inputs
  * @property string $Code
  * @property string $ClassName
- * @property list<GlueSchema> $OutputSchemas
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class CustomCode extends Shape
 {
@@ -19,7 +19,7 @@ class CustomCode extends Shape
      *     Inputs: list<string>,
      *     Code: string,
      *     ClassName: string,
-     *     OutputSchemas?: list<GlueSchema>
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

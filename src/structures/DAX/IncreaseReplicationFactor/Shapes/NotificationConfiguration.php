@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DAX\IncreaseReplicationFactor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TopicArn
- * @property string $TopicStatus
+ * @property string|null $TopicArn
+ * @property string|null $TopicStatus
  */
 class NotificationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     TopicArn?: string,
-     *     TopicStatus?: string
+     *     TopicArn?: string|null,
+     *     TopicStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

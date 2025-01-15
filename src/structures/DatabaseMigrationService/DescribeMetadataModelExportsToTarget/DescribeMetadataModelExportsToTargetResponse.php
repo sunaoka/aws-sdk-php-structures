@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeMetadataModelE
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\SchemaConversionRequest> $Requests
+ * @property string|null $Marker
+ * @property list<Shapes\SchemaConversionRequest>|null $Requests
  */
 class DescribeMetadataModelExportsToTargetResponse extends Response
 {

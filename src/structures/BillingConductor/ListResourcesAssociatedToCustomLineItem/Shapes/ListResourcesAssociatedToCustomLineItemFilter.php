@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListResourcesAssociatedToCusto
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PARENT'|'CHILD' $Relationship
+ * @property 'PARENT'|'CHILD'|null $Relationship
  */
 class ListResourcesAssociatedToCustomLineItemFilter extends Shape
 {
     /**
-     * @param array{Relationship?: 'PARENT'|'CHILD'} $args
+     * @param array{Relationship?: 'PARENT'|'CHILD'|null} $args
      */
     public function __construct(array $args = [])
     {

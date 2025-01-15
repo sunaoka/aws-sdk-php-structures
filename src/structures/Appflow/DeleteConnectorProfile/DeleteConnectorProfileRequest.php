@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $connectorProfileName
- * @property bool $forceDelete
+ * @property bool|null $forceDelete
  */
 class DeleteConnectorProfileRequest extends Request
 {
     /**
      * @param array{
      *     connectorProfileName: string,
-     *     forceDelete?: bool
+     *     forceDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Waf\ListRateBasedRules;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextMarker
- * @property list<Shapes\RuleSummary> $Rules
+ * @property string|null $NextMarker
+ * @property list<Shapes\RuleSummary>|null $Rules
  */
 class ListRateBasedRulesResponse extends Response
 {

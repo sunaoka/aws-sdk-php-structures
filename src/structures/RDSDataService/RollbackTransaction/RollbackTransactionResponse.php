@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RDSDataService\RollbackTransaction;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $transactionStatus
+ * @property string|null $transactionStatus
  */
 class RollbackTransactionResponse extends Response
 {

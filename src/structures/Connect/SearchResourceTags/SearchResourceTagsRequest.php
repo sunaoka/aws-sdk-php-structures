@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property list<string> $ResourceTypes
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property Shapes\ResourceTagsSearchCriteria $SearchCriteria
+ * @property list<string>|null $ResourceTypes
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property Shapes\ResourceTagsSearchCriteria|null $SearchCriteria
  */
 class SearchResourceTagsRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     ResourceTypes?: list<string>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     SearchCriteria?: Shapes\ResourceTagsSearchCriteria
+     *     ResourceTypes?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     SearchCriteria?: Shapes\ResourceTagsSearchCriteria|null
      * } $args
      */
     public function __construct(array $args)

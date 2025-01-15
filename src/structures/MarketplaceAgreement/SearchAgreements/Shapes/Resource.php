@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\SearchAgreements\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $type
+ * @property string|null $id
+ * @property string|null $type
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     type?: string
+     *     id?: string|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

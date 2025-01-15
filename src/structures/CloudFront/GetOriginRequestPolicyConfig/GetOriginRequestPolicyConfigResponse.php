@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetOriginRequestPolicyConfig;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\OriginRequestPolicyConfig $OriginRequestPolicyConfig
- * @property string $ETag
+ * @property Shapes\OriginRequestPolicyConfig|null $OriginRequestPolicyConfig
+ * @property string|null $ETag
  */
 class GetOriginRequestPolicyConfigResponse extends Response
 {

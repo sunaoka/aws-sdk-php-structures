@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\GetRecoveryPoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RecoveryPoint $recoveryPoint
+ * @property Shapes\RecoveryPoint|null $recoveryPoint
  */
 class GetRecoveryPointResponse extends Response
 {

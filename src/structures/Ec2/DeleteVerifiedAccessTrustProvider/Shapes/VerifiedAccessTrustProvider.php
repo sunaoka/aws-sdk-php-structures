@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteVerifiedAccessTrustProvider\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VerifiedAccessTrustProviderId
- * @property string $Description
- * @property 'user'|'device' $TrustProviderType
- * @property 'iam-identity-center'|'oidc' $UserTrustProviderType
- * @property 'jamf'|'crowdstrike'|'jumpcloud' $DeviceTrustProviderType
- * @property OidcOptions $OidcOptions
- * @property DeviceOptions $DeviceOptions
- * @property string $PolicyReferenceName
- * @property string $CreationTime
- * @property string $LastUpdatedTime
- * @property list<Tag> $Tags
- * @property VerifiedAccessSseSpecificationResponse $SseSpecification
- * @property NativeApplicationOidcOptions $NativeApplicationOidcOptions
+ * @property string|null $VerifiedAccessTrustProviderId
+ * @property string|null $Description
+ * @property 'user'|'device'|null $TrustProviderType
+ * @property 'iam-identity-center'|'oidc'|null $UserTrustProviderType
+ * @property 'jamf'|'crowdstrike'|'jumpcloud'|null $DeviceTrustProviderType
+ * @property OidcOptions|null $OidcOptions
+ * @property DeviceOptions|null $DeviceOptions
+ * @property string|null $PolicyReferenceName
+ * @property string|null $CreationTime
+ * @property string|null $LastUpdatedTime
+ * @property list<Tag>|null $Tags
+ * @property VerifiedAccessSseSpecificationResponse|null $SseSpecification
+ * @property NativeApplicationOidcOptions|null $NativeApplicationOidcOptions
  */
 class VerifiedAccessTrustProvider extends Shape
 {
     /**
      * @param array{
-     *     VerifiedAccessTrustProviderId?: string,
-     *     Description?: string,
-     *     TrustProviderType?: 'user'|'device',
-     *     UserTrustProviderType?: 'iam-identity-center'|'oidc',
-     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|'jumpcloud',
-     *     OidcOptions?: OidcOptions,
-     *     DeviceOptions?: DeviceOptions,
-     *     PolicyReferenceName?: string,
-     *     CreationTime?: string,
-     *     LastUpdatedTime?: string,
-     *     Tags?: list<Tag>,
-     *     SseSpecification?: VerifiedAccessSseSpecificationResponse,
-     *     NativeApplicationOidcOptions?: NativeApplicationOidcOptions
+     *     VerifiedAccessTrustProviderId?: string|null,
+     *     Description?: string|null,
+     *     TrustProviderType?: 'user'|'device'|null,
+     *     UserTrustProviderType?: 'iam-identity-center'|'oidc'|null,
+     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|'jumpcloud'|null,
+     *     OidcOptions?: OidcOptions|null,
+     *     DeviceOptions?: DeviceOptions|null,
+     *     PolicyReferenceName?: string|null,
+     *     CreationTime?: string|null,
+     *     LastUpdatedTime?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     SseSpecification?: VerifiedAccessSseSpecificationResponse|null,
+     *     NativeApplicationOidcOptions?: NativeApplicationOidcOptions|null
      * } $args
      */
     public function __construct(array $args = [])

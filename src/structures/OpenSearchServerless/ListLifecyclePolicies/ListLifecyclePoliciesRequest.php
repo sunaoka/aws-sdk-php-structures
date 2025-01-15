@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\ListLifecyclePolicies;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property list<string> $resources
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property list<string>|null $resources
  * @property 'retention' $type
  */
 class ListLifecyclePoliciesRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     resources?: list<string>,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     resources?: list<string>|null,
      *     type: 'retention'
      * } $args
      */

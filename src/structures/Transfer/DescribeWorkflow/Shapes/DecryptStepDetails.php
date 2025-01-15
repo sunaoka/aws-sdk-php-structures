@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Transfer\DescribeWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  * @property 'PGP' $Type
- * @property string $SourceFileLocation
- * @property 'TRUE'|'FALSE' $OverwriteExisting
+ * @property string|null $SourceFileLocation
+ * @property 'TRUE'|'FALSE'|null $OverwriteExisting
  * @property InputFileLocation $DestinationFileLocation
  */
 class DecryptStepDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
+     *     Name?: string|null,
      *     Type: 'PGP',
-     *     SourceFileLocation?: string,
-     *     OverwriteExisting?: 'TRUE'|'FALSE',
+     *     SourceFileLocation?: string|null,
+     *     OverwriteExisting?: 'TRUE'|'FALSE'|null,
      *     DestinationFileLocation: InputFileLocation
      * } $args
      */

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRooms\PreviewPrivacyImpact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DifferentialPrivacyPrivacyImpact $differentialPrivacy
+ * @property DifferentialPrivacyPrivacyImpact|null $differentialPrivacy
  */
 class PrivacyImpact extends Shape
 {
     /**
-     * @param array{differentialPrivacy?: DifferentialPrivacyPrivacyImpact} $args
+     * @param array{differentialPrivacy?: DifferentialPrivacyPrivacyImpact|null} $args
      */
     public function __construct(array $args = [])
     {

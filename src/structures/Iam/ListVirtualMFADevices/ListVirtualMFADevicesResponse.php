@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\VirtualMFADevice> $VirtualMFADevices
- * @property bool $IsTruncated
- * @property string $Marker
+ * @property bool|null $IsTruncated
+ * @property string|null $Marker
  */
 class ListVirtualMFADevicesResponse extends Response
 {

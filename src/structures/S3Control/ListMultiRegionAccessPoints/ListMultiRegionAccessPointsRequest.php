@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property string $NextToken
- * @property int<0, 1000> $MaxResults
+ * @property string|null $NextToken
+ * @property int<0, 1000>|null $MaxResults
  */
 class ListMultiRegionAccessPointsRequest extends Request
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 1000>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 1000>|null
      * } $args
      */
     public function __construct(array $args)

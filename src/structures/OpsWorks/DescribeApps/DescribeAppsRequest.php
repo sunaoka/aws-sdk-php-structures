@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeApps;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StackId
- * @property list<string> $AppIds
+ * @property string|null $StackId
+ * @property list<string>|null $AppIds
  */
 class DescribeAppsRequest extends Request
 {
     /**
      * @param array{
-     *     StackId?: string,
-     *     AppIds?: list<string>
+     *     StackId?: string|null,
+     *     AppIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

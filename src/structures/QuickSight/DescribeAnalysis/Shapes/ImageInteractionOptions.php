@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImageMenuOption $ImageMenuOption
+ * @property ImageMenuOption|null $ImageMenuOption
  */
 class ImageInteractionOptions extends Shape
 {
     /**
-     * @param array{ImageMenuOption?: ImageMenuOption} $args
+     * @param array{ImageMenuOption?: ImageMenuOption|null} $args
      */
     public function __construct(array $args = [])
     {

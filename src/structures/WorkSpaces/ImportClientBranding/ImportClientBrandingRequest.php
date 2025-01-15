@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceId
- * @property Shapes\DefaultImportClientBrandingAttributes $DeviceTypeWindows
- * @property Shapes\DefaultImportClientBrandingAttributes $DeviceTypeOsx
- * @property Shapes\DefaultImportClientBrandingAttributes $DeviceTypeAndroid
- * @property Shapes\IosImportClientBrandingAttributes $DeviceTypeIos
- * @property Shapes\DefaultImportClientBrandingAttributes $DeviceTypeLinux
- * @property Shapes\DefaultImportClientBrandingAttributes $DeviceTypeWeb
+ * @property Shapes\DefaultImportClientBrandingAttributes|null $DeviceTypeWindows
+ * @property Shapes\DefaultImportClientBrandingAttributes|null $DeviceTypeOsx
+ * @property Shapes\DefaultImportClientBrandingAttributes|null $DeviceTypeAndroid
+ * @property Shapes\IosImportClientBrandingAttributes|null $DeviceTypeIos
+ * @property Shapes\DefaultImportClientBrandingAttributes|null $DeviceTypeLinux
+ * @property Shapes\DefaultImportClientBrandingAttributes|null $DeviceTypeWeb
  */
 class ImportClientBrandingRequest extends Request
 {
     /**
      * @param array{
      *     ResourceId: string,
-     *     DeviceTypeWindows?: Shapes\DefaultImportClientBrandingAttributes,
-     *     DeviceTypeOsx?: Shapes\DefaultImportClientBrandingAttributes,
-     *     DeviceTypeAndroid?: Shapes\DefaultImportClientBrandingAttributes,
-     *     DeviceTypeIos?: Shapes\IosImportClientBrandingAttributes,
-     *     DeviceTypeLinux?: Shapes\DefaultImportClientBrandingAttributes,
-     *     DeviceTypeWeb?: Shapes\DefaultImportClientBrandingAttributes
+     *     DeviceTypeWindows?: Shapes\DefaultImportClientBrandingAttributes|null,
+     *     DeviceTypeOsx?: Shapes\DefaultImportClientBrandingAttributes|null,
+     *     DeviceTypeAndroid?: Shapes\DefaultImportClientBrandingAttributes|null,
+     *     DeviceTypeIos?: Shapes\IosImportClientBrandingAttributes|null,
+     *     DeviceTypeLinux?: Shapes\DefaultImportClientBrandingAttributes|null,
+     *     DeviceTypeWeb?: Shapes\DefaultImportClientBrandingAttributes|null
      * } $args
      */
     public function __construct(array $args)

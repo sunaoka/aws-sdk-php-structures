@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SSMContacts\ListPreviewRotationShifts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ContactIds
+ * @property list<string>|null $ContactIds
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property 'REGULAR'|'OVERRIDDEN' $Type
- * @property ShiftDetails $ShiftDetails
+ * @property 'REGULAR'|'OVERRIDDEN'|null $Type
+ * @property ShiftDetails|null $ShiftDetails
  */
 class RotationShift extends Shape
 {
     /**
      * @param array{
-     *     ContactIds?: list<string>,
+     *     ContactIds?: list<string>|null,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
-     *     Type?: 'REGULAR'|'OVERRIDDEN',
-     *     ShiftDetails?: ShiftDetails
+     *     Type?: 'REGULAR'|'OVERRIDDEN'|null,
+     *     ShiftDetails?: ShiftDetails|null
      * } $args
      */
     public function __construct(array $args)

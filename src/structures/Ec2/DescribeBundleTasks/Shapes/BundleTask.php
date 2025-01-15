@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeBundleTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
- * @property string $BundleId
- * @property 'pending'|'waiting-for-shutdown'|'bundling'|'storing'|'cancelling'|'complete'|'failed' $State
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $UpdateTime
- * @property Storage $Storage
- * @property string $Progress
- * @property BundleTaskError $BundleTaskError
+ * @property string|null $InstanceId
+ * @property string|null $BundleId
+ * @property 'pending'|'waiting-for-shutdown'|'bundling'|'storing'|'cancelling'|'complete'|'failed'|null $State
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $UpdateTime
+ * @property Storage|null $Storage
+ * @property string|null $Progress
+ * @property BundleTaskError|null $BundleTaskError
  */
 class BundleTask extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string,
-     *     BundleId?: string,
-     *     State?: 'pending'|'waiting-for-shutdown'|'bundling'|'storing'|'cancelling'|'complete'|'failed',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     UpdateTime?: \Aws\Api\DateTimeResult,
-     *     Storage?: Storage,
-     *     Progress?: string,
-     *     BundleTaskError?: BundleTaskError
+     *     InstanceId?: string|null,
+     *     BundleId?: string|null,
+     *     State?: 'pending'|'waiting-for-shutdown'|'bundling'|'storing'|'cancelling'|'complete'|'failed'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     UpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     Storage?: Storage|null,
+     *     Progress?: string|null,
+     *     BundleTaskError?: BundleTaskError|null
      * } $args
      */
     public function __construct(array $args = [])

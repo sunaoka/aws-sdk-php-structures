@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ecs\DeleteTaskDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $containerPort
- * @property int $hostPort
- * @property 'tcp'|'udp' $protocol
- * @property string $name
- * @property 'http'|'http2'|'grpc' $appProtocol
- * @property string $containerPortRange
+ * @property int|null $containerPort
+ * @property int|null $hostPort
+ * @property 'tcp'|'udp'|null $protocol
+ * @property string|null $name
+ * @property 'http'|'http2'|'grpc'|null $appProtocol
+ * @property string|null $containerPortRange
  */
 class PortMapping extends Shape
 {
     /**
      * @param array{
-     *     containerPort?: int,
-     *     hostPort?: int,
-     *     protocol?: 'tcp'|'udp',
-     *     name?: string,
-     *     appProtocol?: 'http'|'http2'|'grpc',
-     *     containerPortRange?: string
+     *     containerPort?: int|null,
+     *     hostPort?: int|null,
+     *     protocol?: 'tcp'|'udp'|null,
+     *     name?: string|null,
+     *     appProtocol?: 'http'|'http2'|'grpc'|null,
+     *     containerPortRange?: string|null
      * } $args
      */
     public function __construct(array $args = [])

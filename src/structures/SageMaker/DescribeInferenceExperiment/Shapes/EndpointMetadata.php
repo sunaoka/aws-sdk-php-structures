@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EndpointName
- * @property string $EndpointConfigName
- * @property 'OutOfService'|'Creating'|'Updating'|'SystemUpdating'|'RollingBack'|'InService'|'Deleting'|'Failed'|'UpdateRollbackFailed' $EndpointStatus
- * @property string $FailureReason
+ * @property string|null $EndpointConfigName
+ * @property 'OutOfService'|'Creating'|'Updating'|'SystemUpdating'|'RollingBack'|'InService'|'Deleting'|'Failed'|'UpdateRollbackFailed'|null $EndpointStatus
+ * @property string|null $FailureReason
  */
 class EndpointMetadata extends Shape
 {
     /**
      * @param array{
      *     EndpointName: string,
-     *     EndpointConfigName?: string,
-     *     EndpointStatus?: 'OutOfService'|'Creating'|'Updating'|'SystemUpdating'|'RollingBack'|'InService'|'Deleting'|'Failed'|'UpdateRollbackFailed',
-     *     FailureReason?: string
+     *     EndpointConfigName?: string|null,
+     *     EndpointStatus?: 'OutOfService'|'Creating'|'Updating'|'SystemUpdating'|'RollingBack'|'InService'|'Deleting'|'Failed'|'UpdateRollbackFailed'|null,
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args)

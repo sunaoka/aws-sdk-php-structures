@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\UpdateServiceAction;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ServiceActionDetail $ServiceActionDetail
+ * @property Shapes\ServiceActionDetail|null $ServiceActionDetail
  */
 class UpdateServiceActionResponse extends Response
 {

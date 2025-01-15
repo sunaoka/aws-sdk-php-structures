@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeBlueGreenDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BlueGreenDeploymentIdentifier
- * @property string $BlueGreenDeploymentName
- * @property string $Source
- * @property string $Target
- * @property list<SwitchoverDetail> $SwitchoverDetails
- * @property list<BlueGreenDeploymentTask> $Tasks
- * @property string $Status
- * @property string $StatusDetails
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property \Aws\Api\DateTimeResult $DeleteTime
- * @property list<Tag> $TagList
+ * @property string|null $BlueGreenDeploymentIdentifier
+ * @property string|null $BlueGreenDeploymentName
+ * @property string|null $Source
+ * @property string|null $Target
+ * @property list<SwitchoverDetail>|null $SwitchoverDetails
+ * @property list<BlueGreenDeploymentTask>|null $Tasks
+ * @property string|null $Status
+ * @property string|null $StatusDetails
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property \Aws\Api\DateTimeResult|null $DeleteTime
+ * @property list<Tag>|null $TagList
  */
 class BlueGreenDeployment extends Shape
 {
     /**
      * @param array{
-     *     BlueGreenDeploymentIdentifier?: string,
-     *     BlueGreenDeploymentName?: string,
-     *     Source?: string,
-     *     Target?: string,
-     *     SwitchoverDetails?: list<SwitchoverDetail>,
-     *     Tasks?: list<BlueGreenDeploymentTask>,
-     *     Status?: string,
-     *     StatusDetails?: string,
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     DeleteTime?: \Aws\Api\DateTimeResult,
-     *     TagList?: list<Tag>
+     *     BlueGreenDeploymentIdentifier?: string|null,
+     *     BlueGreenDeploymentName?: string|null,
+     *     Source?: string|null,
+     *     Target?: string|null,
+     *     SwitchoverDetails?: list<SwitchoverDetail>|null,
+     *     Tasks?: list<BlueGreenDeploymentTask>|null,
+     *     Status?: string|null,
+     *     StatusDetails?: string|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     DeleteTime?: \Aws\Api\DateTimeResult|null,
+     *     TagList?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

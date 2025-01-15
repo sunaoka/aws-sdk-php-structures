@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppTest\CreateTestSuite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceAction $resourceAction
- * @property MainframeAction $mainframeAction
- * @property CompareAction $compareAction
+ * @property ResourceAction|null $resourceAction
+ * @property MainframeAction|null $mainframeAction
+ * @property CompareAction|null $compareAction
  */
 class StepAction extends Shape
 {
     /**
      * @param array{
-     *     resourceAction?: ResourceAction,
-     *     mainframeAction?: MainframeAction,
-     *     compareAction?: CompareAction
+     *     resourceAction?: ResourceAction|null,
+     *     mainframeAction?: MainframeAction|null,
+     *     compareAction?: CompareAction|null
      * } $args
      */
     public function __construct(array $args = [])

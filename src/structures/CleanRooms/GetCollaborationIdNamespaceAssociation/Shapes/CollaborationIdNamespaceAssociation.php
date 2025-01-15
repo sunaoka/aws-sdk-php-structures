@@ -10,13 +10,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationId
  * @property string $collaborationArn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $creatorAccountId
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property IdNamespaceAssociationInputReferenceConfig $inputReferenceConfig
  * @property IdNamespaceAssociationInputReferenceProperties $inputReferenceProperties
- * @property IdMappingConfig $idMappingConfig
+ * @property IdMappingConfig|null $idMappingConfig
  */
 class CollaborationIdNamespaceAssociation extends Shape
 {
@@ -27,13 +27,13 @@ class CollaborationIdNamespaceAssociation extends Shape
      *     collaborationId: string,
      *     collaborationArn: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     creatorAccountId: string,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     inputReferenceConfig: IdNamespaceAssociationInputReferenceConfig,
      *     inputReferenceProperties: IdNamespaceAssociationInputReferenceProperties,
-     *     idMappingConfig?: IdMappingConfig
+     *     idMappingConfig?: IdMappingConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ListAvailableSolutionStacks\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SolutionStackName
- * @property list<string> $PermittedFileTypes
+ * @property string|null $SolutionStackName
+ * @property list<string>|null $PermittedFileTypes
  */
 class SolutionStackDescription extends Shape
 {
     /**
      * @param array{
-     *     SolutionStackName?: string,
-     *     PermittedFileTypes?: list<string>
+     *     SolutionStackName?: string|null,
+     *     PermittedFileTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

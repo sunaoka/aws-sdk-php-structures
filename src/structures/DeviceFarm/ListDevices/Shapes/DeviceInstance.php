@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $deviceArn
- * @property list<string> $labels
- * @property 'IN_USE'|'PREPARING'|'AVAILABLE'|'NOT_AVAILABLE' $status
- * @property string $udid
- * @property InstanceProfile $instanceProfile
+ * @property string|null $arn
+ * @property string|null $deviceArn
+ * @property list<string>|null $labels
+ * @property 'IN_USE'|'PREPARING'|'AVAILABLE'|'NOT_AVAILABLE'|null $status
+ * @property string|null $udid
+ * @property InstanceProfile|null $instanceProfile
  */
 class DeviceInstance extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     deviceArn?: string,
-     *     labels?: list<string>,
-     *     status?: 'IN_USE'|'PREPARING'|'AVAILABLE'|'NOT_AVAILABLE',
-     *     udid?: string,
-     *     instanceProfile?: InstanceProfile
+     *     arn?: string|null,
+     *     deviceArn?: string|null,
+     *     labels?: list<string>|null,
+     *     status?: 'IN_USE'|'PREPARING'|'AVAILABLE'|'NOT_AVAILABLE'|null,
+     *     udid?: string|null,
+     *     instanceProfile?: InstanceProfile|null
      * } $args
      */
     public function __construct(array $args = [])

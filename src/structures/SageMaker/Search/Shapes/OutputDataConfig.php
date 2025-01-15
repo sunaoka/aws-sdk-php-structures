@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property string $S3OutputPath
- * @property 'GZIP'|'NONE' $CompressionType
+ * @property 'GZIP'|'NONE'|null $CompressionType
  */
 class OutputDataConfig extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     S3OutputPath: string,
-     *     CompressionType?: 'GZIP'|'NONE'
+     *     CompressionType?: 'GZIP'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

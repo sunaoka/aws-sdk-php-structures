@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $path
+ * @property string|null $path
  */
 class EksHostPath extends Shape
 {
     /**
-     * @param array{path?: string} $args
+     * @param array{path?: string|null} $args
      */
     public function __construct(array $args = [])
     {

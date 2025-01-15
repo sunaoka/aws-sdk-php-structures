@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\UpdateMediaPipelineKines
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PoolArn
- * @property string $PoolName
- * @property string $PoolId
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED' $PoolStatus
- * @property int<0, max> $PoolSize
- * @property KinesisVideoStreamConfiguration $StreamConfiguration
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $PoolArn
+ * @property string|null $PoolName
+ * @property string|null $PoolId
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED'|null $PoolStatus
+ * @property int<0, max>|null $PoolSize
+ * @property KinesisVideoStreamConfiguration|null $StreamConfiguration
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class KinesisVideoStreamPoolConfiguration extends Shape
 {
     /**
      * @param array{
-     *     PoolArn?: string,
-     *     PoolName?: string,
-     *     PoolId?: string,
-     *     PoolStatus?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED',
-     *     PoolSize?: int<0, max>,
-     *     StreamConfiguration?: KinesisVideoStreamConfiguration,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     PoolArn?: string|null,
+     *     PoolName?: string|null,
+     *     PoolId?: string|null,
+     *     PoolStatus?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED'|null,
+     *     PoolSize?: int<0, max>|null,
+     *     StreamConfiguration?: KinesisVideoStreamConfiguration|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

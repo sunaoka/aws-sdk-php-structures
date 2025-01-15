@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lambda\ListLayers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextMarker
- * @property list<Shapes\LayersListItem> $Layers
+ * @property string|null $NextMarker
+ * @property list<Shapes\LayersListItem>|null $Layers
  */
 class ListLayersResponse extends Response
 {

@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CustomKeyStoreName
- * @property string $CloudHsmClusterId
- * @property string $TrustAnchorCertificate
- * @property string $KeyStorePassword
- * @property 'AWS_CLOUDHSM'|'EXTERNAL_KEY_STORE' $CustomKeyStoreType
- * @property string $XksProxyUriEndpoint
- * @property string $XksProxyUriPath
- * @property string $XksProxyVpcEndpointServiceName
- * @property Shapes\XksProxyAuthenticationCredentialType $XksProxyAuthenticationCredential
- * @property 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE' $XksProxyConnectivity
+ * @property string|null $CloudHsmClusterId
+ * @property string|null $TrustAnchorCertificate
+ * @property string|null $KeyStorePassword
+ * @property 'AWS_CLOUDHSM'|'EXTERNAL_KEY_STORE'|null $CustomKeyStoreType
+ * @property string|null $XksProxyUriEndpoint
+ * @property string|null $XksProxyUriPath
+ * @property string|null $XksProxyVpcEndpointServiceName
+ * @property Shapes\XksProxyAuthenticationCredentialType|null $XksProxyAuthenticationCredential
+ * @property 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE'|null $XksProxyConnectivity
  */
 class CreateCustomKeyStoreRequest extends Request
 {
     /**
      * @param array{
      *     CustomKeyStoreName: string,
-     *     CloudHsmClusterId?: string,
-     *     TrustAnchorCertificate?: string,
-     *     KeyStorePassword?: string,
-     *     CustomKeyStoreType?: 'AWS_CLOUDHSM'|'EXTERNAL_KEY_STORE',
-     *     XksProxyUriEndpoint?: string,
-     *     XksProxyUriPath?: string,
-     *     XksProxyVpcEndpointServiceName?: string,
-     *     XksProxyAuthenticationCredential?: Shapes\XksProxyAuthenticationCredentialType,
-     *     XksProxyConnectivity?: 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE'
+     *     CloudHsmClusterId?: string|null,
+     *     TrustAnchorCertificate?: string|null,
+     *     KeyStorePassword?: string|null,
+     *     CustomKeyStoreType?: 'AWS_CLOUDHSM'|'EXTERNAL_KEY_STORE'|null,
+     *     XksProxyUriEndpoint?: string|null,
+     *     XksProxyUriPath?: string|null,
+     *     XksProxyVpcEndpointServiceName?: string|null,
+     *     XksProxyAuthenticationCredential?: Shapes\XksProxyAuthenticationCredentialType|null,
+     *     XksProxyConnectivity?: 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE'|null
      * } $args
      */
     public function __construct(array $args)

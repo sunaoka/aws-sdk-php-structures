@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListStacks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StackId
+ * @property string|null $StackId
  * @property string $StackName
- * @property string $TemplateDescription
+ * @property string|null $TemplateDescription
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property \Aws\Api\DateTimeResult $DeletionTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property \Aws\Api\DateTimeResult|null $DeletionTime
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_FAILED'|'ROLLBACK_COMPLETE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'UPDATE_IN_PROGRESS'|'UPDATE_COMPLETE_CLEANUP_IN_PROGRESS'|'UPDATE_COMPLETE'|'UPDATE_FAILED'|'UPDATE_ROLLBACK_IN_PROGRESS'|'UPDATE_ROLLBACK_FAILED'|'UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS'|'UPDATE_ROLLBACK_COMPLETE'|'REVIEW_IN_PROGRESS'|'IMPORT_IN_PROGRESS'|'IMPORT_COMPLETE'|'IMPORT_ROLLBACK_IN_PROGRESS'|'IMPORT_ROLLBACK_FAILED'|'IMPORT_ROLLBACK_COMPLETE' $StackStatus
- * @property string $StackStatusReason
- * @property string $ParentId
- * @property string $RootId
- * @property StackDriftInformationSummary $DriftInformation
+ * @property string|null $StackStatusReason
+ * @property string|null $ParentId
+ * @property string|null $RootId
+ * @property StackDriftInformationSummary|null $DriftInformation
  */
 class StackSummary extends Shape
 {
     /**
      * @param array{
-     *     StackId?: string,
+     *     StackId?: string|null,
      *     StackName: string,
-     *     TemplateDescription?: string,
+     *     TemplateDescription?: string|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     DeletionTime?: \Aws\Api\DateTimeResult,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     DeletionTime?: \Aws\Api\DateTimeResult|null,
      *     StackStatus: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_FAILED'|'ROLLBACK_COMPLETE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'UPDATE_IN_PROGRESS'|'UPDATE_COMPLETE_CLEANUP_IN_PROGRESS'|'UPDATE_COMPLETE'|'UPDATE_FAILED'|'UPDATE_ROLLBACK_IN_PROGRESS'|'UPDATE_ROLLBACK_FAILED'|'UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS'|'UPDATE_ROLLBACK_COMPLETE'|'REVIEW_IN_PROGRESS'|'IMPORT_IN_PROGRESS'|'IMPORT_COMPLETE'|'IMPORT_ROLLBACK_IN_PROGRESS'|'IMPORT_ROLLBACK_FAILED'|'IMPORT_ROLLBACK_COMPLETE',
-     *     StackStatusReason?: string,
-     *     ParentId?: string,
-     *     RootId?: string,
-     *     DriftInformation?: StackDriftInformationSummary
+     *     StackStatusReason?: string|null,
+     *     ParentId?: string|null,
+     *     RootId?: string|null,
+     *     DriftInformation?: StackDriftInformationSummary|null
      * } $args
      */
     public function __construct(array $args)

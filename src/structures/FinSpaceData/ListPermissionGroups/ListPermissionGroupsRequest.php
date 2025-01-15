@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\ListPermissionGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property int<1, 100> $maxResults
  */
 class ListPermissionGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
+     *     nextToken?: string|null,
      *     maxResults: int<1, 100>
      * } $args
      */

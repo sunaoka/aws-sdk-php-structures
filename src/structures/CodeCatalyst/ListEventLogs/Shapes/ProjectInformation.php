@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCatalyst\ListEventLogs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $projectId
+ * @property string|null $name
+ * @property string|null $projectId
  */
 class ProjectInformation extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     projectId?: string
+     *     name?: string|null,
+     *     projectId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

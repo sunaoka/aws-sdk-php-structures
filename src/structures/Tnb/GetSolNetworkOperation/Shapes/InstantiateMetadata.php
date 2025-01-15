@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Tnb\GetSolNetworkOperation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document $additionalParamsForNs
+ * @property Document|null $additionalParamsForNs
  * @property string $nsdInfoId
  */
 class InstantiateMetadata extends Shape
 {
     /**
      * @param array{
-     *     additionalParamsForNs?: Document,
+     *     additionalParamsForNs?: Document|null,
      *     nsdInfoId: string
      * } $args
      */

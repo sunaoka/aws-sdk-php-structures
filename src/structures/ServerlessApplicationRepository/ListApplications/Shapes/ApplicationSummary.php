@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ApplicationId
  * @property string $Author
- * @property string $CreationTime
+ * @property string|null $CreationTime
  * @property string $Description
- * @property string $HomePageUrl
- * @property list<string> $Labels
+ * @property string|null $HomePageUrl
+ * @property list<string>|null $Labels
  * @property string $Name
- * @property string $SpdxLicenseId
+ * @property string|null $SpdxLicenseId
  */
 class ApplicationSummary extends Shape
 {
@@ -20,12 +20,12 @@ class ApplicationSummary extends Shape
      * @param array{
      *     ApplicationId: string,
      *     Author: string,
-     *     CreationTime?: string,
+     *     CreationTime?: string|null,
      *     Description: string,
-     *     HomePageUrl?: string,
-     *     Labels?: list<string>,
+     *     HomePageUrl?: string|null,
+     *     Labels?: list<string>|null,
      *     Name: string,
-     *     SpdxLicenseId?: string
+     *     SpdxLicenseId?: string|null
      * } $args
      */
     public function __construct(array $args)

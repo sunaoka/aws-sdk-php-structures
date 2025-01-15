@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SecurityHub\StartConfigurationPolicyDisassociat
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\Target $Target
+ * @property Shapes\Target|null $Target
  * @property string $ConfigurationPolicyIdentifier
  */
 class StartConfigurationPolicyDisassociationRequest extends Request
 {
     /**
      * @param array{
-     *     Target?: Shapes\Target,
+     *     Target?: Shapes\Target|null,
      *     ConfigurationPolicyIdentifier: string
      * } $args
      */

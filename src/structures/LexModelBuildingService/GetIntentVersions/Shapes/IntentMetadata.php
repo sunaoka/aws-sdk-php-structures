@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LexModelBuildingService\GetIntentVersions\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $description
- * @property \Aws\Api\DateTimeResult $lastUpdatedDate
- * @property \Aws\Api\DateTimeResult $createdDate
- * @property string $version
+ * @property string|null $name
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDate
+ * @property \Aws\Api\DateTimeResult|null $createdDate
+ * @property string|null $version
  */
 class IntentMetadata extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     description?: string,
-     *     lastUpdatedDate?: \Aws\Api\DateTimeResult,
-     *     createdDate?: \Aws\Api\DateTimeResult,
-     *     version?: string
+     *     name?: string|null,
+     *     description?: string|null,
+     *     lastUpdatedDate?: \Aws\Api\DateTimeResult|null,
+     *     createdDate?: \Aws\Api\DateTimeResult|null,
+     *     version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

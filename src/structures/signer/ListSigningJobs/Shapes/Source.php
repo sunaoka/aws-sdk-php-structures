@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\signer\ListSigningJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Source $s3
+ * @property S3Source|null $s3
  */
 class Source extends Shape
 {
     /**
-     * @param array{s3?: S3Source} $args
+     * @param array{s3?: S3Source|null} $args
      */
     public function __construct(array $args = [])
     {

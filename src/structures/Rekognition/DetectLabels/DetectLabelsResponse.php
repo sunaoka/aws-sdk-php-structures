@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectLabels;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Label> $Labels
- * @property 'ROTATE_0'|'ROTATE_90'|'ROTATE_180'|'ROTATE_270' $OrientationCorrection
- * @property string $LabelModelVersion
- * @property Shapes\DetectLabelsImageProperties $ImageProperties
+ * @property list<Shapes\Label>|null $Labels
+ * @property 'ROTATE_0'|'ROTATE_90'|'ROTATE_180'|'ROTATE_270'|null $OrientationCorrection
+ * @property string|null $LabelModelVersion
+ * @property Shapes\DetectLabelsImageProperties|null $ImageProperties
  */
 class DetectLabelsResponse extends Response
 {

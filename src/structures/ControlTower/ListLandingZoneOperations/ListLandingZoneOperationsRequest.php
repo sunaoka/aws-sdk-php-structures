@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ControlTower\ListLandingZoneOperations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\LandingZoneOperationFilter $filter
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property Shapes\LandingZoneOperationFilter|null $filter
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListLandingZoneOperationsRequest extends Request
 {
     /**
      * @param array{
-     *     filter?: Shapes\LandingZoneOperationFilter,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string
+     *     filter?: Shapes\LandingZoneOperationFilter|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

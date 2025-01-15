@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\ListBatchJobDefinitions\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FileBatchJobDefinition $fileBatchJobDefinition
- * @property ScriptBatchJobDefinition $scriptBatchJobDefinition
+ * @property FileBatchJobDefinition|null $fileBatchJobDefinition
+ * @property ScriptBatchJobDefinition|null $scriptBatchJobDefinition
  */
 class BatchJobDefinition extends Shape
 {
     /**
      * @param array{
-     *     fileBatchJobDefinition?: FileBatchJobDefinition,
-     *     scriptBatchJobDefinition?: ScriptBatchJobDefinition
+     *     fileBatchJobDefinition?: FileBatchJobDefinition|null,
+     *     scriptBatchJobDefinition?: ScriptBatchJobDefinition|null
      * } $args
      */
     public function __construct(array $args = [])

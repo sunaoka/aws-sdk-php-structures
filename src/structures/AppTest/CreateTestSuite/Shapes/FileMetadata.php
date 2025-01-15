@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppTest\CreateTestSuite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DataSet> $dataSets
- * @property DatabaseCDC $databaseCDC
+ * @property list<DataSet>|null $dataSets
+ * @property DatabaseCDC|null $databaseCDC
  */
 class FileMetadata extends Shape
 {
     /**
      * @param array{
-     *     dataSets?: list<DataSet>,
-     *     databaseCDC?: DatabaseCDC
+     *     dataSets?: list<DataSet>|null,
+     *     databaseCDC?: DatabaseCDC|null
      * } $args
      */
     public function __construct(array $args = [])

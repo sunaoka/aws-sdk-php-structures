@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ActivateType;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  */
 class ActivateTypeResponse extends Response
 {

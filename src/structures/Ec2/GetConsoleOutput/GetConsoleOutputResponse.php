@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\GetConsoleOutput;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $InstanceId
- * @property \Aws\Api\DateTimeResult $Timestamp
- * @property string $Output
+ * @property string|null $InstanceId
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
+ * @property string|null $Output
  */
 class GetConsoleOutputResponse extends Response
 {

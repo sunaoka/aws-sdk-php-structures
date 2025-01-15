@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property string $Key
- * @property string $MFA
- * @property string $VersionId
- * @property 'requester' $RequestPayer
- * @property bool $BypassGovernanceRetention
- * @property string $ExpectedBucketOwner
- * @property string $IfMatch
- * @property \Aws\Api\DateTimeResult $IfMatchLastModifiedTime
- * @property int $IfMatchSize
+ * @property string|null $MFA
+ * @property string|null $VersionId
+ * @property 'requester'|null $RequestPayer
+ * @property bool|null $BypassGovernanceRetention
+ * @property string|null $ExpectedBucketOwner
+ * @property string|null $IfMatch
+ * @property \Aws\Api\DateTimeResult|null $IfMatchLastModifiedTime
+ * @property int|null $IfMatchSize
  */
 class DeleteObjectRequest extends Request
 {
@@ -22,14 +22,14 @@ class DeleteObjectRequest extends Request
      * @param array{
      *     Bucket: string,
      *     Key: string,
-     *     MFA?: string,
-     *     VersionId?: string,
-     *     RequestPayer?: 'requester',
-     *     BypassGovernanceRetention?: bool,
-     *     ExpectedBucketOwner?: string,
-     *     IfMatch?: string,
-     *     IfMatchLastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     IfMatchSize?: int
+     *     MFA?: string|null,
+     *     VersionId?: string|null,
+     *     RequestPayer?: 'requester'|null,
+     *     BypassGovernanceRetention?: bool|null,
+     *     ExpectedBucketOwner?: string|null,
+     *     IfMatch?: string|null,
+     *     IfMatchLastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     IfMatchSize?: int|null
      * } $args
      */
     public function __construct(array $args)

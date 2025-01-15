@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $configurationId
- * @property bool $portInformationNeeded
- * @property list<string> $neighborConfigurationIds
- * @property int $maxResults
- * @property string $nextToken
+ * @property bool|null $portInformationNeeded
+ * @property list<string>|null $neighborConfigurationIds
+ * @property int|null $maxResults
+ * @property string|null $nextToken
  */
 class ListServerNeighborsRequest extends Request
 {
     /**
      * @param array{
      *     configurationId: string,
-     *     portInformationNeeded?: bool,
-     *     neighborConfigurationIds?: list<string>,
-     *     maxResults?: int,
-     *     nextToken?: string
+     *     portInformationNeeded?: bool|null,
+     *     neighborConfigurationIds?: list<string>|null,
+     *     maxResults?: int|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $CatalogId
+ * @property string|null $CatalogId
  */
 class DeleteLFTagExpressionRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     CatalogId?: string
+     *     CatalogId?: string|null
      * } $args
      */
     public function __construct(array $args)

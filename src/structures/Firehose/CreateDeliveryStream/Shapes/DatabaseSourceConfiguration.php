@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MySQL'|'PostgreSQL' $Type
  * @property string $Endpoint
  * @property int<0, 65535> $Port
- * @property 'Disabled'|'Enabled' $SSLMode
+ * @property 'Disabled'|'Enabled'|null $SSLMode
  * @property DatabaseList $Databases
  * @property DatabaseTableList $Tables
- * @property DatabaseColumnList $Columns
- * @property list<string> $SurrogateKeys
+ * @property DatabaseColumnList|null $Columns
+ * @property list<string>|null $SurrogateKeys
  * @property string $SnapshotWatermarkTable
  * @property DatabaseSourceAuthenticationConfiguration $DatabaseSourceAuthenticationConfiguration
  * @property DatabaseSourceVPCConfiguration $DatabaseSourceVPCConfiguration
@@ -24,11 +24,11 @@ class DatabaseSourceConfiguration extends Shape
      *     Type: 'MySQL'|'PostgreSQL',
      *     Endpoint: string,
      *     Port: int<0, 65535>,
-     *     SSLMode?: 'Disabled'|'Enabled',
+     *     SSLMode?: 'Disabled'|'Enabled'|null,
      *     Databases: DatabaseList,
      *     Tables: DatabaseTableList,
-     *     Columns?: DatabaseColumnList,
-     *     SurrogateKeys?: list<string>,
+     *     Columns?: DatabaseColumnList|null,
+     *     SurrogateKeys?: list<string>|null,
      *     SnapshotWatermarkTable: string,
      *     DatabaseSourceAuthenticationConfiguration: DatabaseSourceAuthenticationConfiguration,
      *     DatabaseSourceVPCConfiguration: DatabaseSourceVPCConfiguration

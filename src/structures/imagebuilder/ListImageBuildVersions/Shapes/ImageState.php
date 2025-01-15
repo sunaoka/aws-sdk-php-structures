@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImageBuildVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED' $status
- * @property string $reason
+ * @property 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED'|null $status
+ * @property string|null $reason
  */
 class ImageState extends Shape
 {
     /**
      * @param array{
-     *     status?: 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED',
-     *     reason?: string
+     *     status?: 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED'|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

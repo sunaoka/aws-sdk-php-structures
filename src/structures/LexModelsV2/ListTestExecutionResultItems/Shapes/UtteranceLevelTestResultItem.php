@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<1, 200000> $recordNumber
- * @property string $conversationId
+ * @property string|null $conversationId
  * @property TestSetTurnResult $turnResult
  */
 class UtteranceLevelTestResultItem extends Shape
@@ -14,7 +14,7 @@ class UtteranceLevelTestResultItem extends Shape
     /**
      * @param array{
      *     recordNumber: int<1, 200000>,
-     *     conversationId?: string,
+     *     conversationId?: string|null,
      *     turnResult: TestSetTurnResult
      * } $args
      */

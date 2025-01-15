@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\SecretsManager\DescribeSecret;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ARN
- * @property string $Name
- * @property string $Description
- * @property string $KmsKeyId
- * @property bool $RotationEnabled
- * @property string $RotationLambdaARN
- * @property Shapes\RotationRulesType $RotationRules
- * @property \Aws\Api\DateTimeResult $LastRotatedDate
- * @property \Aws\Api\DateTimeResult $LastChangedDate
- * @property \Aws\Api\DateTimeResult $LastAccessedDate
- * @property \Aws\Api\DateTimeResult $DeletedDate
- * @property \Aws\Api\DateTimeResult $NextRotationDate
- * @property list<Shapes\Tag> $Tags
- * @property array<string, list<string>> $VersionIdsToStages
- * @property string $OwningService
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property string $PrimaryRegion
- * @property list<Shapes\ReplicationStatusType> $ReplicationStatus
+ * @property string|null $ARN
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $KmsKeyId
+ * @property bool|null $RotationEnabled
+ * @property string|null $RotationLambdaARN
+ * @property Shapes\RotationRulesType|null $RotationRules
+ * @property \Aws\Api\DateTimeResult|null $LastRotatedDate
+ * @property \Aws\Api\DateTimeResult|null $LastChangedDate
+ * @property \Aws\Api\DateTimeResult|null $LastAccessedDate
+ * @property \Aws\Api\DateTimeResult|null $DeletedDate
+ * @property \Aws\Api\DateTimeResult|null $NextRotationDate
+ * @property list<Shapes\Tag>|null $Tags
+ * @property array<string, list<string>>|null $VersionIdsToStages
+ * @property string|null $OwningService
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $PrimaryRegion
+ * @property list<Shapes\ReplicationStatusType>|null $ReplicationStatus
  */
 class DescribeSecretResponse extends Response
 {

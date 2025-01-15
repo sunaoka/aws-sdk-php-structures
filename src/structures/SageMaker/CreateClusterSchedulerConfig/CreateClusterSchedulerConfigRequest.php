@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $ClusterArn
  * @property Shapes\SchedulerConfig $SchedulerConfig
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateClusterSchedulerConfigRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateClusterSchedulerConfigRequest extends Request
      *     Name: string,
      *     ClusterArn: string,
      *     SchedulerConfig: Shapes\SchedulerConfig,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

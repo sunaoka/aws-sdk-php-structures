@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeMatchmaking\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S
- * @property double $N
- * @property list<string> $SL
- * @property array<string, double> $SDM
+ * @property string|null $S
+ * @property double|null $N
+ * @property list<string>|null $SL
+ * @property array<string, double>|null $SDM
  */
 class AttributeValue extends Shape
 {
     /**
      * @param array{
-     *     S?: string,
-     *     N?: double,
-     *     SL?: list<string>,
-     *     SDM?: array<string, double>
+     *     S?: string|null,
+     *     N?: double|null,
+     *     SL?: list<string>|null,
+     *     SDM?: array<string, double>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,34 +6,34 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property string $DisplayName
- * @property list<Shapes\StorageConnector> $StorageConnectors
- * @property string $RedirectURL
- * @property string $FeedbackURL
- * @property list<Shapes\UserSetting> $UserSettings
- * @property Shapes\ApplicationSettings $ApplicationSettings
- * @property array<string, string> $Tags
- * @property list<Shapes\AccessEndpoint> $AccessEndpoints
- * @property list<string> $EmbedHostDomains
- * @property Shapes\StreamingExperienceSettings $StreamingExperienceSettings
+ * @property string|null $Description
+ * @property string|null $DisplayName
+ * @property list<Shapes\StorageConnector>|null $StorageConnectors
+ * @property string|null $RedirectURL
+ * @property string|null $FeedbackURL
+ * @property list<Shapes\UserSetting>|null $UserSettings
+ * @property Shapes\ApplicationSettings|null $ApplicationSettings
+ * @property array<string, string>|null $Tags
+ * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
+ * @property list<string>|null $EmbedHostDomains
+ * @property Shapes\StreamingExperienceSettings|null $StreamingExperienceSettings
  */
 class CreateStackRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     DisplayName?: string,
-     *     StorageConnectors?: list<Shapes\StorageConnector>,
-     *     RedirectURL?: string,
-     *     FeedbackURL?: string,
-     *     UserSettings?: list<Shapes\UserSetting>,
-     *     ApplicationSettings?: Shapes\ApplicationSettings,
-     *     Tags?: array<string, string>,
-     *     AccessEndpoints?: list<Shapes\AccessEndpoint>,
-     *     EmbedHostDomains?: list<string>,
-     *     StreamingExperienceSettings?: Shapes\StreamingExperienceSettings
+     *     Description?: string|null,
+     *     DisplayName?: string|null,
+     *     StorageConnectors?: list<Shapes\StorageConnector>|null,
+     *     RedirectURL?: string|null,
+     *     FeedbackURL?: string|null,
+     *     UserSettings?: list<Shapes\UserSetting>|null,
+     *     ApplicationSettings?: Shapes\ApplicationSettings|null,
+     *     Tags?: array<string, string>|null,
+     *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
+     *     EmbedHostDomains?: list<string>|null,
+     *     StreamingExperienceSettings?: Shapes\StreamingExperienceSettings|null
      * } $args
      */
     public function __construct(array $args)

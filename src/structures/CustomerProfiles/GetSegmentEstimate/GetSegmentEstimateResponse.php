@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetSegmentEstimate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DomainName
- * @property string $EstimateId
- * @property 'RUNNING'|'SUCCEEDED'|'FAILED' $Status
- * @property string $Estimate
- * @property string $Message
- * @property int $StatusCode
+ * @property string|null $DomainName
+ * @property string|null $EstimateId
+ * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|null $Status
+ * @property string|null $Estimate
+ * @property string|null $Message
+ * @property int|null $StatusCode
  */
 class GetSegmentEstimateResponse extends Response
 {

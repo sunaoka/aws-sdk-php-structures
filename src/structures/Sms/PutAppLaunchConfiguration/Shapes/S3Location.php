@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Sms\PutAppLaunchConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucket
- * @property string $key
+ * @property string|null $bucket
+ * @property string|null $key
  */
 class S3Location extends Shape
 {
     /**
      * @param array{
-     *     bucket?: string,
-     *     key?: string
+     *     bucket?: string|null,
+     *     key?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Marker
- * @property string $NextMarker
+ * @property string|null $NextMarker
  * @property int $MaxItems
  * @property bool $IsTruncated
  * @property int $Quantity
- * @property list<DistributionSummary> $Items
+ * @property list<DistributionSummary>|null $Items
  */
 class DistributionList extends Shape
 {
     /**
      * @param array{
      *     Marker: string,
-     *     NextMarker?: string,
+     *     NextMarker?: string|null,
      *     MaxItems: int,
      *     IsTruncated: bool,
      *     Quantity: int,
-     *     Items?: list<DistributionSummary>
+     *     Items?: list<DistributionSummary>|null
      * } $args
      */
     public function __construct(array $args)

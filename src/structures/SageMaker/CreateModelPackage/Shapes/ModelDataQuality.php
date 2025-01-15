@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateModelPackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MetricsSource $Statistics
- * @property MetricsSource $Constraints
+ * @property MetricsSource|null $Statistics
+ * @property MetricsSource|null $Constraints
  */
 class ModelDataQuality extends Shape
 {
     /**
      * @param array{
-     *     Statistics?: MetricsSource,
-     *     Constraints?: MetricsSource
+     *     Statistics?: MetricsSource|null,
+     *     Constraints?: MetricsSource|null
      * } $args
      */
     public function __construct(array $args = [])

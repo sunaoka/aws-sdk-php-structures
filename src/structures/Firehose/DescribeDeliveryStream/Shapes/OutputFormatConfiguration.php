@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Serializer $Serializer
+ * @property Serializer|null $Serializer
  */
 class OutputFormatConfiguration extends Shape
 {
     /**
-     * @param array{Serializer?: Serializer} $args
+     * @param array{Serializer?: Serializer|null} $args
      */
     public function __construct(array $args = [])
     {

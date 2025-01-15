@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Inputs
  * @property string $Database
  * @property string $Table
- * @property string $RedshiftTmpDir
- * @property string $TmpDirIAMRole
- * @property UpsertRedshiftTargetOptions $UpsertRedshiftOptions
+ * @property string|null $RedshiftTmpDir
+ * @property string|null $TmpDirIAMRole
+ * @property UpsertRedshiftTargetOptions|null $UpsertRedshiftOptions
  */
 class RedshiftTarget extends Shape
 {
@@ -21,9 +21,9 @@ class RedshiftTarget extends Shape
      *     Inputs: list<string>,
      *     Database: string,
      *     Table: string,
-     *     RedshiftTmpDir?: string,
-     *     TmpDirIAMRole?: string,
-     *     UpsertRedshiftOptions?: UpsertRedshiftTargetOptions
+     *     RedshiftTmpDir?: string|null,
+     *     TmpDirIAMRole?: string|null,
+     *     UpsertRedshiftOptions?: UpsertRedshiftTargetOptions|null
      * } $args
      */
     public function __construct(array $args)

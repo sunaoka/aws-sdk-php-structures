@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DataZone\GetEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $provider
+ * @property string|null $name
+ * @property string|null $provider
  * @property string $type
  * @property string $value
  */
@@ -14,8 +14,8 @@ class Resource extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     provider?: string,
+     *     name?: string|null,
+     *     provider?: string|null,
      *     type: string,
      *     value: string
      * } $args

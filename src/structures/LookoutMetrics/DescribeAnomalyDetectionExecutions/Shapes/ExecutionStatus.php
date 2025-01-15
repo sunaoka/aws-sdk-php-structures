@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\DescribeAnomalyDetectionExecutio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Timestamp
- * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'FAILED_TO_SCHEDULE' $Status
- * @property string $FailureReason
+ * @property string|null $Timestamp
+ * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'FAILED_TO_SCHEDULE'|null $Status
+ * @property string|null $FailureReason
  */
 class ExecutionStatus extends Shape
 {
     /**
      * @param array{
-     *     Timestamp?: string,
-     *     Status?: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'FAILED_TO_SCHEDULE',
-     *     FailureReason?: string
+     *     Timestamp?: string|null,
+     *     Status?: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'FAILED_TO_SCHEDULE'|null,
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

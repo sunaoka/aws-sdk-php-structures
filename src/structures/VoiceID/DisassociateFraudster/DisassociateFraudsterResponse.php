@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\VoiceID\DisassociateFraudster;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Fraudster $Fraudster
+ * @property Shapes\Fraudster|null $Fraudster
  */
 class DisassociateFraudsterResponse extends Response
 {

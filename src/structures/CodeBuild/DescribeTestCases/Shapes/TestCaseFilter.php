@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeBuild\DescribeTestCases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $status
- * @property string $keyword
+ * @property string|null $status
+ * @property string|null $keyword
  */
 class TestCaseFilter extends Shape
 {
     /**
      * @param array{
-     *     status?: string,
-     *     keyword?: string
+     *     status?: string|null,
+     *     keyword?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\BatchDeleteCustomVocabularyItem\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $itemId
- * @property string $errorMessage
- * @property 'DUPLICATE_INPUT'|'RESOURCE_DOES_NOT_EXIST'|'RESOURCE_ALREADY_EXISTS'|'INTERNAL_SERVER_FAILURE' $errorCode
+ * @property string|null $itemId
+ * @property string|null $errorMessage
+ * @property 'DUPLICATE_INPUT'|'RESOURCE_DOES_NOT_EXIST'|'RESOURCE_ALREADY_EXISTS'|'INTERNAL_SERVER_FAILURE'|null $errorCode
  */
 class FailedCustomVocabularyItem extends Shape
 {
     /**
      * @param array{
-     *     itemId?: string,
-     *     errorMessage?: string,
-     *     errorCode?: 'DUPLICATE_INPUT'|'RESOURCE_DOES_NOT_EXIST'|'RESOURCE_ALREADY_EXISTS'|'INTERNAL_SERVER_FAILURE'
+     *     itemId?: string|null,
+     *     errorMessage?: string|null,
+     *     errorCode?: 'DUPLICATE_INPUT'|'RESOURCE_DOES_NOT_EXIST'|'RESOURCE_ALREADY_EXISTS'|'INTERNAL_SERVER_FAILURE'|null
      * } $args
      */
     public function __construct(array $args = [])

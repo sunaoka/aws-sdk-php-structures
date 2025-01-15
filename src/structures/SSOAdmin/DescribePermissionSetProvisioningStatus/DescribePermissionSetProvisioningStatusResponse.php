@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\DescribePermissionSetProvisioningStatu
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PermissionSetProvisioningStatus $PermissionSetProvisioningStatus
+ * @property Shapes\PermissionSetProvisioningStatus|null $PermissionSetProvisioningStatus
  */
 class DescribePermissionSetProvisioningStatusResponse extends Response
 {

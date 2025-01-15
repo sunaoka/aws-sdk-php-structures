@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClientVpnEndpointId
- * @property string $ConnectionId
- * @property string $Username
- * @property bool $DryRun
+ * @property string|null $ConnectionId
+ * @property string|null $Username
+ * @property bool|null $DryRun
  */
 class TerminateClientVpnConnectionsRequest extends Request
 {
     /**
      * @param array{
      *     ClientVpnEndpointId: string,
-     *     ConnectionId?: string,
-     *     Username?: string,
-     *     DryRun?: bool
+     *     ConnectionId?: string|null,
+     *     Username?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

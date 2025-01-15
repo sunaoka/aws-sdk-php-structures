@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Greengrass\GetLoggerDefinitionVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $CreationTimestamp
- * @property Shapes\LoggerDefinitionVersion $Definition
- * @property string $Id
- * @property string $Version
+ * @property string|null $Arn
+ * @property string|null $CreationTimestamp
+ * @property Shapes\LoggerDefinitionVersion|null $Definition
+ * @property string|null $Id
+ * @property string|null $Version
  */
 class GetLoggerDefinitionVersionResponse extends Response
 {

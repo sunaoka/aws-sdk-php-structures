@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CodeGuruProfiler\UpdateProfilingGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AgentOrchestrationConfig $agentOrchestrationConfig
- * @property string $arn
- * @property 'Default'|'AWSLambda' $computePlatform
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $name
- * @property ProfilingStatus $profilingStatus
- * @property array<string, string> $tags
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property AgentOrchestrationConfig|null $agentOrchestrationConfig
+ * @property string|null $arn
+ * @property 'Default'|'AWSLambda'|null $computePlatform
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $name
+ * @property ProfilingStatus|null $profilingStatus
+ * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class ProfilingGroupDescription extends Shape
 {
     /**
      * @param array{
-     *     agentOrchestrationConfig?: AgentOrchestrationConfig,
-     *     arn?: string,
-     *     computePlatform?: 'Default'|'AWSLambda',
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     name?: string,
-     *     profilingStatus?: ProfilingStatus,
-     *     tags?: array<string, string>,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     agentOrchestrationConfig?: AgentOrchestrationConfig|null,
+     *     arn?: string|null,
+     *     computePlatform?: 'Default'|'AWSLambda'|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     name?: string|null,
+     *     profilingStatus?: ProfilingStatus|null,
+     *     tags?: array<string, string>|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

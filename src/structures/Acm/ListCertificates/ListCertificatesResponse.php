@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Acm\ListCertificates;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\CertificateSummary> $CertificateSummaryList
+ * @property string|null $NextToken
+ * @property list<Shapes\CertificateSummary>|null $CertificateSummaryList
  */
 class ListCertificatesResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\GetSubscriptionRequestDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $content
+ * @property string|null $content
  * @property string $formName
- * @property string $typeName
- * @property string $typeRevision
+ * @property string|null $typeName
+ * @property string|null $typeRevision
  */
 class FormOutput extends Shape
 {
     /**
      * @param array{
-     *     content?: string,
+     *     content?: string|null,
      *     formName: string,
-     *     typeName?: string,
-     *     typeRevision?: string
+     *     typeName?: string|null,
+     *     typeRevision?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeMultiRegionClusters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $MultiRegionClusterName
- * @property int $MaxResults
- * @property string $NextToken
- * @property bool $ShowClusterDetails
+ * @property string|null $MultiRegionClusterName
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
+ * @property bool|null $ShowClusterDetails
  */
 class DescribeMultiRegionClustersRequest extends Request
 {
     /**
      * @param array{
-     *     MultiRegionClusterName?: string,
-     *     MaxResults?: int,
-     *     NextToken?: string,
-     *     ShowClusterDetails?: bool
+     *     MultiRegionClusterName?: string|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null,
+     *     ShowClusterDetails?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

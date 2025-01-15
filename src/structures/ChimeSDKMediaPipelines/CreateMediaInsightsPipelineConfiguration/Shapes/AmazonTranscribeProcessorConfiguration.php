@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaInsightsPipel
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR' $LanguageCode
- * @property string $VocabularyName
- * @property string $VocabularyFilterName
- * @property 'remove'|'mask'|'tag' $VocabularyFilterMethod
- * @property bool $ShowSpeakerLabel
- * @property bool $EnablePartialResultsStabilization
- * @property 'high'|'medium'|'low' $PartialResultsStability
- * @property 'PII' $ContentIdentificationType
- * @property 'PII' $ContentRedactionType
- * @property string $PiiEntityTypes
- * @property string $LanguageModelName
- * @property bool $FilterPartialResults
- * @property bool $IdentifyLanguage
- * @property bool $IdentifyMultipleLanguages
- * @property string $LanguageOptions
- * @property 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR' $PreferredLanguage
- * @property string $VocabularyNames
- * @property string $VocabularyFilterNames
+ * @property 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR'|null $LanguageCode
+ * @property string|null $VocabularyName
+ * @property string|null $VocabularyFilterName
+ * @property 'remove'|'mask'|'tag'|null $VocabularyFilterMethod
+ * @property bool|null $ShowSpeakerLabel
+ * @property bool|null $EnablePartialResultsStabilization
+ * @property 'high'|'medium'|'low'|null $PartialResultsStability
+ * @property 'PII'|null $ContentIdentificationType
+ * @property 'PII'|null $ContentRedactionType
+ * @property string|null $PiiEntityTypes
+ * @property string|null $LanguageModelName
+ * @property bool|null $FilterPartialResults
+ * @property bool|null $IdentifyLanguage
+ * @property bool|null $IdentifyMultipleLanguages
+ * @property string|null $LanguageOptions
+ * @property 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR'|null $PreferredLanguage
+ * @property string|null $VocabularyNames
+ * @property string|null $VocabularyFilterNames
  */
 class AmazonTranscribeProcessorConfiguration extends Shape
 {
     /**
      * @param array{
-     *     LanguageCode?: 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR',
-     *     VocabularyName?: string,
-     *     VocabularyFilterName?: string,
-     *     VocabularyFilterMethod?: 'remove'|'mask'|'tag',
-     *     ShowSpeakerLabel?: bool,
-     *     EnablePartialResultsStabilization?: bool,
-     *     PartialResultsStability?: 'high'|'medium'|'low',
-     *     ContentIdentificationType?: 'PII',
-     *     ContentRedactionType?: 'PII',
-     *     PiiEntityTypes?: string,
-     *     LanguageModelName?: string,
-     *     FilterPartialResults?: bool,
-     *     IdentifyLanguage?: bool,
-     *     IdentifyMultipleLanguages?: bool,
-     *     LanguageOptions?: string,
-     *     PreferredLanguage?: 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR',
-     *     VocabularyNames?: string,
-     *     VocabularyFilterNames?: string
+     *     LanguageCode?: 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR'|null,
+     *     VocabularyName?: string|null,
+     *     VocabularyFilterName?: string|null,
+     *     VocabularyFilterMethod?: 'remove'|'mask'|'tag'|null,
+     *     ShowSpeakerLabel?: bool|null,
+     *     EnablePartialResultsStabilization?: bool|null,
+     *     PartialResultsStability?: 'high'|'medium'|'low'|null,
+     *     ContentIdentificationType?: 'PII'|null,
+     *     ContentRedactionType?: 'PII'|null,
+     *     PiiEntityTypes?: string|null,
+     *     LanguageModelName?: string|null,
+     *     FilterPartialResults?: bool|null,
+     *     IdentifyLanguage?: bool|null,
+     *     IdentifyMultipleLanguages?: bool|null,
+     *     LanguageOptions?: string|null,
+     *     PreferredLanguage?: 'en-US'|'en-GB'|'es-US'|'fr-CA'|'fr-FR'|'en-AU'|'it-IT'|'de-DE'|'pt-BR'|null,
+     *     VocabularyNames?: string|null,
+     *     VocabularyFilterNames?: string|null
      * } $args
      */
     public function __construct(array $args = [])

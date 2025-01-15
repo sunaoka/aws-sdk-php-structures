@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeInstancesHealth\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $User
- * @property double $Nice
- * @property double $System
- * @property double $Idle
- * @property double $IOWait
- * @property double $IRQ
- * @property double $SoftIRQ
- * @property double $Privileged
+ * @property double|null $User
+ * @property double|null $Nice
+ * @property double|null $System
+ * @property double|null $Idle
+ * @property double|null $IOWait
+ * @property double|null $IRQ
+ * @property double|null $SoftIRQ
+ * @property double|null $Privileged
  */
 class CPUUtilization extends Shape
 {
     /**
      * @param array{
-     *     User?: double,
-     *     Nice?: double,
-     *     System?: double,
-     *     Idle?: double,
-     *     IOWait?: double,
-     *     IRQ?: double,
-     *     SoftIRQ?: double,
-     *     Privileged?: double
+     *     User?: double|null,
+     *     Nice?: double|null,
+     *     System?: double|null,
+     *     Idle?: double|null,
+     *     IOWait?: double|null,
+     *     IRQ?: double|null,
+     *     SoftIRQ?: double|null,
+     *     Privileged?: double|null
      * } $args
      */
     public function __construct(array $args = [])

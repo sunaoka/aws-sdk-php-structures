@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateEvaluationForm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NumericQuestionPropertyValueAutomation $PropertyValue
+ * @property NumericQuestionPropertyValueAutomation|null $PropertyValue
  */
 class EvaluationFormNumericQuestionAutomation extends Shape
 {
     /**
-     * @param array{PropertyValue?: NumericQuestionPropertyValueAutomation} $args
+     * @param array{PropertyValue?: NumericQuestionPropertyValueAutomation|null} $args
      */
     public function __construct(array $args = [])
     {

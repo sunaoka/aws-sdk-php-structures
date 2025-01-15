@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ApiId
- * @property string $ApiMappingId
- * @property string $ApiMappingKey
+ * @property string|null $ApiMappingId
+ * @property string|null $ApiMappingKey
  * @property string $Stage
  */
 class ApiMapping extends Shape
@@ -15,8 +15,8 @@ class ApiMapping extends Shape
     /**
      * @param array{
      *     ApiId: string,
-     *     ApiMappingId?: string,
-     *     ApiMappingKey?: string,
+     *     ApiMappingId?: string|null,
+     *     ApiMappingKey?: string|null,
      *     Stage: string
      * } $args
      */

@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\LicenseManager\GetLicenseManagerReportGenerator
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReportGeneratorName
- * @property list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'> $ReportType
- * @property ReportContext $ReportContext
- * @property ReportFrequency $ReportFrequency
- * @property string $LicenseManagerReportGeneratorArn
- * @property string $LastRunStatus
- * @property string $LastRunFailureReason
- * @property string $LastReportGenerationTime
- * @property string $ReportCreatorAccount
- * @property string $Description
- * @property S3Location $S3Location
- * @property string $CreateTime
- * @property list<Tag> $Tags
+ * @property string|null $ReportGeneratorName
+ * @property list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'>|null $ReportType
+ * @property ReportContext|null $ReportContext
+ * @property ReportFrequency|null $ReportFrequency
+ * @property string|null $LicenseManagerReportGeneratorArn
+ * @property string|null $LastRunStatus
+ * @property string|null $LastRunFailureReason
+ * @property string|null $LastReportGenerationTime
+ * @property string|null $ReportCreatorAccount
+ * @property string|null $Description
+ * @property S3Location|null $S3Location
+ * @property string|null $CreateTime
+ * @property list<Tag>|null $Tags
  */
 class ReportGenerator extends Shape
 {
     /**
      * @param array{
-     *     ReportGeneratorName?: string,
-     *     ReportType?: list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'>,
-     *     ReportContext?: ReportContext,
-     *     ReportFrequency?: ReportFrequency,
-     *     LicenseManagerReportGeneratorArn?: string,
-     *     LastRunStatus?: string,
-     *     LastRunFailureReason?: string,
-     *     LastReportGenerationTime?: string,
-     *     ReportCreatorAccount?: string,
-     *     Description?: string,
-     *     S3Location?: S3Location,
-     *     CreateTime?: string,
-     *     Tags?: list<Tag>
+     *     ReportGeneratorName?: string|null,
+     *     ReportType?: list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'>|null,
+     *     ReportContext?: ReportContext|null,
+     *     ReportFrequency?: ReportFrequency|null,
+     *     LicenseManagerReportGeneratorArn?: string|null,
+     *     LastRunStatus?: string|null,
+     *     LastRunFailureReason?: string|null,
+     *     LastReportGenerationTime?: string|null,
+     *     ReportCreatorAccount?: string|null,
+     *     Description?: string|null,
+     *     S3Location?: S3Location|null,
+     *     CreateTime?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\UpdateFileSystemAssociation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FileSystemAssociationARN
+ * @property string|null $FileSystemAssociationARN
  */
 class UpdateFileSystemAssociationResponse extends Response
 {

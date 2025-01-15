@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListAnswers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JiraIssueUrl
- * @property \Aws\Api\DateTimeResult $LastSyncedTime
+ * @property string|null $JiraIssueUrl
+ * @property \Aws\Api\DateTimeResult|null $LastSyncedTime
  */
 class JiraConfiguration extends Shape
 {
     /**
      * @param array{
-     *     JiraIssueUrl?: string,
-     *     LastSyncedTime?: \Aws\Api\DateTimeResult
+     *     JiraIssueUrl?: string|null,
+     *     LastSyncedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

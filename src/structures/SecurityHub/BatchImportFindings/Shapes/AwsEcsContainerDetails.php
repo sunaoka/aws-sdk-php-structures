@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Image
- * @property list<AwsMountPoint> $MountPoints
- * @property bool $Privileged
+ * @property string|null $Name
+ * @property string|null $Image
+ * @property list<AwsMountPoint>|null $MountPoints
+ * @property bool|null $Privileged
  */
 class AwsEcsContainerDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Image?: string,
-     *     MountPoints?: list<AwsMountPoint>,
-     *     Privileged?: bool
+     *     Name?: string|null,
+     *     Image?: string|null,
+     *     MountPoints?: list<AwsMountPoint>|null,
+     *     Privileged?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

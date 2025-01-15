@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\CreateAsset;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $CreatedAt
- * @property list<Shapes\EgressEndpoint> $EgressEndpoints
- * @property string $Id
- * @property string $PackagingGroupId
- * @property string $ResourceId
- * @property string $SourceArn
- * @property string $SourceRoleArn
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property string|null $CreatedAt
+ * @property list<Shapes\EgressEndpoint>|null $EgressEndpoints
+ * @property string|null $Id
+ * @property string|null $PackagingGroupId
+ * @property string|null $ResourceId
+ * @property string|null $SourceArn
+ * @property string|null $SourceRoleArn
+ * @property array<string, string>|null $Tags
  */
 class CreateAssetResponse extends Response
 {

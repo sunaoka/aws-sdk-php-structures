@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
  * @property \Aws\Api\DateTimeResult $createdTime
  */
@@ -17,7 +17,7 @@ class ListSourceRepositoriesItem extends Shape
      * @param array{
      *     id: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     lastUpdatedTime: \Aws\Api\DateTimeResult,
      *     createdTime: \Aws\Api\DateTimeResult
      * } $args

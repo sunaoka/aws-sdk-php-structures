@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateDataSetImportTask\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $encoding
+ * @property string|null $encoding
  * @property string $format
  * @property list<string> $memberFileExtensions
  */
@@ -13,7 +13,7 @@ class PoAttributes extends Shape
 {
     /**
      * @param array{
-     *     encoding?: string,
+     *     encoding?: string|null,
      *     format: string,
      *     memberFileExtensions: list<string>
      * } $args

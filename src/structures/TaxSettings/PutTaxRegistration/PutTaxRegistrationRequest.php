@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxRegistration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountId
+ * @property string|null $accountId
  * @property Shapes\TaxRegistrationEntry $taxRegistrationEntry
  */
 class PutTaxRegistrationRequest extends Request
 {
     /**
      * @param array{
-     *     accountId?: string,
+     *     accountId?: string|null,
      *     taxRegistrationEntry: Shapes\TaxRegistrationEntry
      * } $args
      */

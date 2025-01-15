@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $collaborationIdentifier
- * @property string $name
- * @property string $description
+ * @property string|null $name
+ * @property string|null $description
  */
 class UpdateCollaborationRequest extends Request
 {
     /**
      * @param array{
      *     collaborationIdentifier: string,
-     *     name?: string,
-     *     description?: string
+     *     name?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

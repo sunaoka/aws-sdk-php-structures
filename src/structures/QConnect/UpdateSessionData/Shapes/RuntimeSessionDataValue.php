@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateSessionData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stringValue
+ * @property string|null $stringValue
  */
 class RuntimeSessionDataValue extends Shape
 {
     /**
-     * @param array{stringValue?: string} $args
+     * @param array{stringValue?: string|null} $args
      */
     public function __construct(array $args = [])
     {

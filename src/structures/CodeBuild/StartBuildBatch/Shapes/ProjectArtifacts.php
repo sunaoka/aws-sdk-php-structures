@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CODEPIPELINE'|'S3'|'NO_ARTIFACTS' $type
- * @property string $location
- * @property string $path
- * @property 'NONE'|'BUILD_ID' $namespaceType
- * @property string $name
- * @property 'NONE'|'ZIP' $packaging
- * @property bool $overrideArtifactName
- * @property bool $encryptionDisabled
- * @property string $artifactIdentifier
- * @property 'NONE'|'READ_ONLY'|'FULL' $bucketOwnerAccess
+ * @property string|null $location
+ * @property string|null $path
+ * @property 'NONE'|'BUILD_ID'|null $namespaceType
+ * @property string|null $name
+ * @property 'NONE'|'ZIP'|null $packaging
+ * @property bool|null $overrideArtifactName
+ * @property bool|null $encryptionDisabled
+ * @property string|null $artifactIdentifier
+ * @property 'NONE'|'READ_ONLY'|'FULL'|null $bucketOwnerAccess
  */
 class ProjectArtifacts extends Shape
 {
     /**
      * @param array{
      *     type: 'CODEPIPELINE'|'S3'|'NO_ARTIFACTS',
-     *     location?: string,
-     *     path?: string,
-     *     namespaceType?: 'NONE'|'BUILD_ID',
-     *     name?: string,
-     *     packaging?: 'NONE'|'ZIP',
-     *     overrideArtifactName?: bool,
-     *     encryptionDisabled?: bool,
-     *     artifactIdentifier?: string,
-     *     bucketOwnerAccess?: 'NONE'|'READ_ONLY'|'FULL'
+     *     location?: string|null,
+     *     path?: string|null,
+     *     namespaceType?: 'NONE'|'BUILD_ID'|null,
+     *     name?: string|null,
+     *     packaging?: 'NONE'|'ZIP'|null,
+     *     overrideArtifactName?: bool|null,
+     *     encryptionDisabled?: bool|null,
+     *     artifactIdentifier?: string|null,
+     *     bucketOwnerAccess?: 'NONE'|'READ_ONLY'|'FULL'|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $packageName
  * @property string $versionName
- * @property string $description
- * @property array<string, string> $attributes
- * @property Shapes\PackageVersionArtifact $artifact
- * @property string $recipe
- * @property array<string, string> $tags
- * @property string $clientToken
+ * @property string|null $description
+ * @property array<string, string>|null $attributes
+ * @property Shapes\PackageVersionArtifact|null $artifact
+ * @property string|null $recipe
+ * @property array<string, string>|null $tags
+ * @property string|null $clientToken
  */
 class CreatePackageVersionRequest extends Request
 {
@@ -20,12 +20,12 @@ class CreatePackageVersionRequest extends Request
      * @param array{
      *     packageName: string,
      *     versionName: string,
-     *     description?: string,
-     *     attributes?: array<string, string>,
-     *     artifact?: Shapes\PackageVersionArtifact,
-     *     recipe?: string,
-     *     tags?: array<string, string>,
-     *     clientToken?: string
+     *     description?: string|null,
+     *     attributes?: array<string, string>|null,
+     *     artifact?: Shapes\PackageVersionArtifact|null,
+     *     recipe?: string|null,
+     *     tags?: array<string, string>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

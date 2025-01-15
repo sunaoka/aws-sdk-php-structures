@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Route53\ListGeoLocations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StartContinentCode
- * @property string $StartCountryCode
- * @property string $StartSubdivisionCode
- * @property string $MaxItems
+ * @property string|null $StartContinentCode
+ * @property string|null $StartCountryCode
+ * @property string|null $StartSubdivisionCode
+ * @property string|null $MaxItems
  */
 class ListGeoLocationsRequest extends Request
 {
     /**
      * @param array{
-     *     StartContinentCode?: string,
-     *     StartCountryCode?: string,
-     *     StartSubdivisionCode?: string,
-     *     MaxItems?: string
+     *     StartContinentCode?: string|null,
+     *     StartCountryCode?: string|null,
+     *     StartSubdivisionCode?: string|null,
+     *     MaxItems?: string|null
      * } $args
      */
     public function __construct(array $args = [])

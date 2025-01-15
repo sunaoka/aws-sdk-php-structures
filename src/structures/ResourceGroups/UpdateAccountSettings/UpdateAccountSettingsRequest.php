@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ResourceGroups\UpdateAccountSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ACTIVE'|'INACTIVE' $GroupLifecycleEventsDesiredStatus
+ * @property 'ACTIVE'|'INACTIVE'|null $GroupLifecycleEventsDesiredStatus
  */
 class UpdateAccountSettingsRequest extends Request
 {
     /**
-     * @param array{GroupLifecycleEventsDesiredStatus?: 'ACTIVE'|'INACTIVE'} $args
+     * @param array{GroupLifecycleEventsDesiredStatus?: 'ACTIVE'|'INACTIVE'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\ListDetectMitigationActionsTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $actionsExecuted
- * @property int $actionsSkipped
- * @property int $actionsFailed
+ * @property int|null $actionsExecuted
+ * @property int|null $actionsSkipped
+ * @property int|null $actionsFailed
  */
 class DetectMitigationActionsTaskStatistics extends Shape
 {
     /**
      * @param array{
-     *     actionsExecuted?: int,
-     *     actionsSkipped?: int,
-     *     actionsFailed?: int
+     *     actionsExecuted?: int|null,
+     *     actionsSkipped?: int|null,
+     *     actionsFailed?: int|null
      * } $args
      */
     public function __construct(array $args = [])

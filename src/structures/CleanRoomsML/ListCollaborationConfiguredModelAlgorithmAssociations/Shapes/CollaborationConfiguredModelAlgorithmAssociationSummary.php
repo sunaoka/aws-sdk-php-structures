@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $configuredModelAlgorithmAssociationArn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $membershipIdentifier
  * @property string $collaborationIdentifier
  * @property string $configuredModelAlgorithmArn
@@ -23,7 +23,7 @@ class CollaborationConfiguredModelAlgorithmAssociationSummary extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     configuredModelAlgorithmAssociationArn: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     membershipIdentifier: string,
      *     collaborationIdentifier: string,
      *     configuredModelAlgorithmArn: string,

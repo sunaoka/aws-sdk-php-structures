@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminListUserAuthEvents
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Password'|'Mfa' $ChallengeName
- * @property 'Success'|'Failure' $ChallengeResponse
+ * @property 'Password'|'Mfa'|null $ChallengeName
+ * @property 'Success'|'Failure'|null $ChallengeResponse
  */
 class ChallengeResponseType extends Shape
 {
     /**
      * @param array{
-     *     ChallengeName?: 'Password'|'Mfa',
-     *     ChallengeResponse?: 'Success'|'Failure'
+     *     ChallengeName?: 'Password'|'Mfa'|null,
+     *     ChallengeResponse?: 'Success'|'Failure'|null
      * } $args
      */
     public function __construct(array $args = [])

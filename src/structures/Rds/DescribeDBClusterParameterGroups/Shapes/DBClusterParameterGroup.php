@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBClusterParameterGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBClusterParameterGroupName
- * @property string $DBParameterGroupFamily
- * @property string $Description
- * @property string $DBClusterParameterGroupArn
+ * @property string|null $DBClusterParameterGroupName
+ * @property string|null $DBParameterGroupFamily
+ * @property string|null $Description
+ * @property string|null $DBClusterParameterGroupArn
  */
 class DBClusterParameterGroup extends Shape
 {
     /**
      * @param array{
-     *     DBClusterParameterGroupName?: string,
-     *     DBParameterGroupFamily?: string,
-     *     Description?: string,
-     *     DBClusterParameterGroupArn?: string
+     *     DBClusterParameterGroupName?: string|null,
+     *     DBParameterGroupFamily?: string|null,
+     *     Description?: string|null,
+     *     DBClusterParameterGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

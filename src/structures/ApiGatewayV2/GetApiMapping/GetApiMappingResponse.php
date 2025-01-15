@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\GetApiMapping;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApiId
- * @property string $ApiMappingId
- * @property string $ApiMappingKey
- * @property string $Stage
+ * @property string|null $ApiId
+ * @property string|null $ApiMappingId
+ * @property string|null $ApiMappingKey
+ * @property string|null $Stage
  */
 class GetApiMappingResponse extends Response
 {

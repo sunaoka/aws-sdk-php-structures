@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property 'default'|'vpc-1'|'ebs-1' $BandwidthWeighting
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ModifyInstanceNetworkPerformanceOptionsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ModifyInstanceNetworkPerformanceOptionsRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     BandwidthWeighting: 'default'|'vpc-1'|'ebs-1',
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

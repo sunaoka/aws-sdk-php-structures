@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\GetBatchJobExecution\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FileBatchJobIdentifier $fileBatchJobIdentifier
- * @property RestartBatchJobIdentifier $restartBatchJobIdentifier
- * @property S3BatchJobIdentifier $s3BatchJobIdentifier
- * @property ScriptBatchJobIdentifier $scriptBatchJobIdentifier
+ * @property FileBatchJobIdentifier|null $fileBatchJobIdentifier
+ * @property RestartBatchJobIdentifier|null $restartBatchJobIdentifier
+ * @property S3BatchJobIdentifier|null $s3BatchJobIdentifier
+ * @property ScriptBatchJobIdentifier|null $scriptBatchJobIdentifier
  */
 class BatchJobIdentifier extends Shape
 {
     /**
      * @param array{
-     *     fileBatchJobIdentifier?: FileBatchJobIdentifier,
-     *     restartBatchJobIdentifier?: RestartBatchJobIdentifier,
-     *     s3BatchJobIdentifier?: S3BatchJobIdentifier,
-     *     scriptBatchJobIdentifier?: ScriptBatchJobIdentifier
+     *     fileBatchJobIdentifier?: FileBatchJobIdentifier|null,
+     *     restartBatchJobIdentifier?: RestartBatchJobIdentifier|null,
+     *     s3BatchJobIdentifier?: S3BatchJobIdentifier|null,
+     *     scriptBatchJobIdentifier?: ScriptBatchJobIdentifier|null
      * } $args
      */
     public function __construct(array $args = [])

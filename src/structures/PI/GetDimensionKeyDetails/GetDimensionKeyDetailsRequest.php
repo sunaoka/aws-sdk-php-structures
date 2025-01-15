@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Identifier
  * @property string $Group
  * @property string $GroupIdentifier
- * @property list<string> $RequestedDimensions
+ * @property list<string>|null $RequestedDimensions
  */
 class GetDimensionKeyDetailsRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetDimensionKeyDetailsRequest extends Request
      *     Identifier: string,
      *     Group: string,
      *     GroupIdentifier: string,
-     *     RequestedDimensions?: list<string>
+     *     RequestedDimensions?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

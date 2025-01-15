@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property string $regionName
- * @property string $displayName
- * @property string $description
+ * @property string|null $displayName
+ * @property string|null $description
  */
 class SpaceSummary extends Shape
 {
@@ -16,8 +16,8 @@ class SpaceSummary extends Shape
      * @param array{
      *     name: string,
      *     regionName: string,
-     *     displayName?: string,
-     *     description?: string
+     *     displayName?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

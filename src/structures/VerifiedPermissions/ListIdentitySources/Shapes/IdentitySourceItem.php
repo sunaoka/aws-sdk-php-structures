@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $createdDate
- * @property IdentitySourceItemDetails $details
+ * @property IdentitySourceItemDetails|null $details
  * @property string $identitySourceId
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
  * @property string $policyStoreId
  * @property string $principalEntityType
- * @property ConfigurationItem $configuration
+ * @property ConfigurationItem|null $configuration
  */
 class IdentitySourceItem extends Shape
 {
     /**
      * @param array{
      *     createdDate: \Aws\Api\DateTimeResult,
-     *     details?: IdentitySourceItemDetails,
+     *     details?: IdentitySourceItemDetails|null,
      *     identitySourceId: string,
      *     lastUpdatedDate: \Aws\Api\DateTimeResult,
      *     policyStoreId: string,
      *     principalEntityType: string,
-     *     configuration?: ConfigurationItem
+     *     configuration?: ConfigurationItem|null
      * } $args
      */
     public function __construct(array $args)

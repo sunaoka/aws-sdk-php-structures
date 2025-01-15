@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $ResourceArns
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListResourcesInProtectionGroupResponse extends Response
 {

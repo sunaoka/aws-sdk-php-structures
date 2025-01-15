@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\DeleteTaskDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $namespace
- * @property string $value
+ * @property string|null $namespace
+ * @property string|null $value
  */
 class SystemControl extends Shape
 {
     /**
      * @param array{
-     *     namespace?: string,
-     *     value?: string
+     *     namespace?: string|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

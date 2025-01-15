@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\OpsWorks\RegisterEcsCluster;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $EcsClusterArn
+ * @property string|null $EcsClusterArn
  */
 class RegisterEcsClusterResponse extends Response
 {

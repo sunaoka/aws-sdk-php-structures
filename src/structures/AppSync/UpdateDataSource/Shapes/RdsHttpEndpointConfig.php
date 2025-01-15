@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AppSync\UpdateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $awsRegion
- * @property string $dbClusterIdentifier
- * @property string $databaseName
- * @property string $schema
- * @property string $awsSecretStoreArn
+ * @property string|null $awsRegion
+ * @property string|null $dbClusterIdentifier
+ * @property string|null $databaseName
+ * @property string|null $schema
+ * @property string|null $awsSecretStoreArn
  */
 class RdsHttpEndpointConfig extends Shape
 {
     /**
      * @param array{
-     *     awsRegion?: string,
-     *     dbClusterIdentifier?: string,
-     *     databaseName?: string,
-     *     schema?: string,
-     *     awsSecretStoreArn?: string
+     *     awsRegion?: string|null,
+     *     dbClusterIdentifier?: string|null,
+     *     databaseName?: string|null,
+     *     schema?: string|null,
+     *     awsSecretStoreArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

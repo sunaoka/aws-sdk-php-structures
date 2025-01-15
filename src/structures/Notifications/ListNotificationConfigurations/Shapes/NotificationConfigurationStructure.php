@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $description
  * @property 'ACTIVE'|'PARTIALLY_ACTIVE'|'INACTIVE'|'DELETING' $status
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property 'LONG'|'SHORT'|'NONE' $aggregationDuration
+ * @property 'LONG'|'SHORT'|'NONE'|null $aggregationDuration
  */
 class NotificationConfigurationStructure extends Shape
 {
@@ -21,7 +21,7 @@ class NotificationConfigurationStructure extends Shape
      *     description: string,
      *     status: 'ACTIVE'|'PARTIALLY_ACTIVE'|'INACTIVE'|'DELETING',
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     aggregationDuration?: 'LONG'|'SHORT'|'NONE'
+     *     aggregationDuration?: 'LONG'|'SHORT'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

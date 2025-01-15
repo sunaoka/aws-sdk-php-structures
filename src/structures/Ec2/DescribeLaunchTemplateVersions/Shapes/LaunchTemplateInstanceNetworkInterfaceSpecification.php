@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLaunchTemplateVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AssociateCarrierIpAddress
- * @property bool $AssociatePublicIpAddress
- * @property bool $DeleteOnTermination
- * @property string $Description
- * @property int $DeviceIndex
- * @property list<string> $Groups
- * @property string $InterfaceType
- * @property int $Ipv6AddressCount
- * @property list<InstanceIpv6Address> $Ipv6Addresses
- * @property string $NetworkInterfaceId
- * @property string $PrivateIpAddress
- * @property list<PrivateIpAddressSpecification> $PrivateIpAddresses
- * @property int $SecondaryPrivateIpAddressCount
- * @property string $SubnetId
- * @property int $NetworkCardIndex
- * @property list<Ipv4PrefixSpecificationResponse> $Ipv4Prefixes
- * @property int $Ipv4PrefixCount
- * @property list<Ipv6PrefixSpecificationResponse> $Ipv6Prefixes
- * @property int $Ipv6PrefixCount
- * @property bool $PrimaryIpv6
- * @property LaunchTemplateEnaSrdSpecification $EnaSrdSpecification
- * @property ConnectionTrackingSpecification $ConnectionTrackingSpecification
+ * @property bool|null $AssociateCarrierIpAddress
+ * @property bool|null $AssociatePublicIpAddress
+ * @property bool|null $DeleteOnTermination
+ * @property string|null $Description
+ * @property int|null $DeviceIndex
+ * @property list<string>|null $Groups
+ * @property string|null $InterfaceType
+ * @property int|null $Ipv6AddressCount
+ * @property list<InstanceIpv6Address>|null $Ipv6Addresses
+ * @property string|null $NetworkInterfaceId
+ * @property string|null $PrivateIpAddress
+ * @property list<PrivateIpAddressSpecification>|null $PrivateIpAddresses
+ * @property int|null $SecondaryPrivateIpAddressCount
+ * @property string|null $SubnetId
+ * @property int|null $NetworkCardIndex
+ * @property list<Ipv4PrefixSpecificationResponse>|null $Ipv4Prefixes
+ * @property int|null $Ipv4PrefixCount
+ * @property list<Ipv6PrefixSpecificationResponse>|null $Ipv6Prefixes
+ * @property int|null $Ipv6PrefixCount
+ * @property bool|null $PrimaryIpv6
+ * @property LaunchTemplateEnaSrdSpecification|null $EnaSrdSpecification
+ * @property ConnectionTrackingSpecification|null $ConnectionTrackingSpecification
  */
 class LaunchTemplateInstanceNetworkInterfaceSpecification extends Shape
 {
     /**
      * @param array{
-     *     AssociateCarrierIpAddress?: bool,
-     *     AssociatePublicIpAddress?: bool,
-     *     DeleteOnTermination?: bool,
-     *     Description?: string,
-     *     DeviceIndex?: int,
-     *     Groups?: list<string>,
-     *     InterfaceType?: string,
-     *     Ipv6AddressCount?: int,
-     *     Ipv6Addresses?: list<InstanceIpv6Address>,
-     *     NetworkInterfaceId?: string,
-     *     PrivateIpAddress?: string,
-     *     PrivateIpAddresses?: list<PrivateIpAddressSpecification>,
-     *     SecondaryPrivateIpAddressCount?: int,
-     *     SubnetId?: string,
-     *     NetworkCardIndex?: int,
-     *     Ipv4Prefixes?: list<Ipv4PrefixSpecificationResponse>,
-     *     Ipv4PrefixCount?: int,
-     *     Ipv6Prefixes?: list<Ipv6PrefixSpecificationResponse>,
-     *     Ipv6PrefixCount?: int,
-     *     PrimaryIpv6?: bool,
-     *     EnaSrdSpecification?: LaunchTemplateEnaSrdSpecification,
-     *     ConnectionTrackingSpecification?: ConnectionTrackingSpecification
+     *     AssociateCarrierIpAddress?: bool|null,
+     *     AssociatePublicIpAddress?: bool|null,
+     *     DeleteOnTermination?: bool|null,
+     *     Description?: string|null,
+     *     DeviceIndex?: int|null,
+     *     Groups?: list<string>|null,
+     *     InterfaceType?: string|null,
+     *     Ipv6AddressCount?: int|null,
+     *     Ipv6Addresses?: list<InstanceIpv6Address>|null,
+     *     NetworkInterfaceId?: string|null,
+     *     PrivateIpAddress?: string|null,
+     *     PrivateIpAddresses?: list<PrivateIpAddressSpecification>|null,
+     *     SecondaryPrivateIpAddressCount?: int|null,
+     *     SubnetId?: string|null,
+     *     NetworkCardIndex?: int|null,
+     *     Ipv4Prefixes?: list<Ipv4PrefixSpecificationResponse>|null,
+     *     Ipv4PrefixCount?: int|null,
+     *     Ipv6Prefixes?: list<Ipv6PrefixSpecificationResponse>|null,
+     *     Ipv6PrefixCount?: int|null,
+     *     PrimaryIpv6?: bool|null,
+     *     EnaSrdSpecification?: LaunchTemplateEnaSrdSpecification|null,
+     *     ConnectionTrackingSpecification?: ConnectionTrackingSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ServiceName
- * @property \Aws\Api\DateTimeResult $LastAuthenticated
+ * @property \Aws\Api\DateTimeResult|null $LastAuthenticated
  * @property string $ServiceNamespace
- * @property string $LastAuthenticatedEntity
- * @property string $LastAuthenticatedRegion
- * @property int $TotalAuthenticatedEntities
- * @property list<TrackedActionLastAccessed> $TrackedActionsLastAccessed
+ * @property string|null $LastAuthenticatedEntity
+ * @property string|null $LastAuthenticatedRegion
+ * @property int|null $TotalAuthenticatedEntities
+ * @property list<TrackedActionLastAccessed>|null $TrackedActionsLastAccessed
  */
 class ServiceLastAccessed extends Shape
 {
     /**
      * @param array{
      *     ServiceName: string,
-     *     LastAuthenticated?: \Aws\Api\DateTimeResult,
+     *     LastAuthenticated?: \Aws\Api\DateTimeResult|null,
      *     ServiceNamespace: string,
-     *     LastAuthenticatedEntity?: string,
-     *     LastAuthenticatedRegion?: string,
-     *     TotalAuthenticatedEntities?: int,
-     *     TrackedActionsLastAccessed?: list<TrackedActionLastAccessed>
+     *     LastAuthenticatedEntity?: string|null,
+     *     LastAuthenticatedRegion?: string|null,
+     *     TotalAuthenticatedEntities?: int|null,
+     *     TrackedActionsLastAccessed?: list<TrackedActionLastAccessed>|null
      * } $args
      */
     public function __construct(array $args)

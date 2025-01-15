@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeprovisionIpamByoasn;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $IpamId
  * @property string $Asn
  */
@@ -13,7 +13,7 @@ class DeprovisionIpamByoasnRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     IpamId: string,
      *     Asn: string
      * } $args

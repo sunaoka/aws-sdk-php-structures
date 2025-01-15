@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetRDFGraphSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $count
- * @property list<string> $predicates
+ * @property int|null $count
+ * @property list<string>|null $predicates
  */
 class SubjectStructure extends Shape
 {
     /**
      * @param array{
-     *     count?: int,
-     *     predicates?: list<string>
+     *     count?: int|null,
+     *     predicates?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

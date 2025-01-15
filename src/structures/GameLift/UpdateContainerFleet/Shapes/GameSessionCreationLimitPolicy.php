@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GameLift\UpdateContainerFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $NewGameSessionsPerCreator
- * @property int<0, max> $PolicyPeriodInMinutes
+ * @property int<0, max>|null $NewGameSessionsPerCreator
+ * @property int<0, max>|null $PolicyPeriodInMinutes
  */
 class GameSessionCreationLimitPolicy extends Shape
 {
     /**
      * @param array{
-     *     NewGameSessionsPerCreator?: int<0, max>,
-     *     PolicyPeriodInMinutes?: int<0, max>
+     *     NewGameSessionsPerCreator?: int<0, max>|null,
+     *     PolicyPeriodInMinutes?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

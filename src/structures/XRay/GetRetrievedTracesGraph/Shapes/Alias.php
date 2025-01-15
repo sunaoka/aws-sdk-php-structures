@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\XRay\GetRetrievedTracesGraph\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<string> $Names
- * @property string $Type
+ * @property string|null $Name
+ * @property list<string>|null $Names
+ * @property string|null $Type
  */
 class Alias extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Names?: list<string>,
-     *     Type?: string
+     *     Name?: string|null,
+     *     Names?: list<string>|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

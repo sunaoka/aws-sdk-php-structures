@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeConfigurati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<array<string, string>> $configurations
+ * @property list<array<string, string>>|null $configurations
  */
 class DescribeConfigurationsResponse extends Response
 {

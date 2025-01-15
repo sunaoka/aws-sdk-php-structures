@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\RenderMessageTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $content
+ * @property string|null $content
  */
 class MessageTemplateBodyContentProvider extends Shape
 {
     /**
-     * @param array{content?: string} $args
+     * @param array{content?: string|null} $args
      */
     public function __construct(array $args = [])
     {

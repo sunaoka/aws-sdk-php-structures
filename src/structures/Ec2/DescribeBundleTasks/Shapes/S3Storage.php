@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeBundleTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AWSAccessKeyId
- * @property string $Bucket
- * @property string $Prefix
- * @property \Psr\Http\Message\StreamInterface $UploadPolicy
- * @property string $UploadPolicySignature
+ * @property string|null $AWSAccessKeyId
+ * @property string|null $Bucket
+ * @property string|null $Prefix
+ * @property \Psr\Http\Message\StreamInterface|null $UploadPolicy
+ * @property string|null $UploadPolicySignature
  */
 class S3Storage extends Shape
 {
     /**
      * @param array{
-     *     AWSAccessKeyId?: string,
-     *     Bucket?: string,
-     *     Prefix?: string,
-     *     UploadPolicy?: \Psr\Http\Message\StreamInterface,
-     *     UploadPolicySignature?: string
+     *     AWSAccessKeyId?: string|null,
+     *     Bucket?: string|null,
+     *     Prefix?: string|null,
+     *     UploadPolicy?: \Psr\Http\Message\StreamInterface|null,
+     *     UploadPolicySignature?: string|null
      * } $args
      */
     public function __construct(array $args = [])

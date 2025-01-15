@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Emr\RunJobFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ComputeLimits $ComputeLimits
- * @property int<1, 100> $UtilizationPerformanceIndex
- * @property 'DEFAULT'|'ADVANCED' $ScalingStrategy
+ * @property ComputeLimits|null $ComputeLimits
+ * @property int<1, 100>|null $UtilizationPerformanceIndex
+ * @property 'DEFAULT'|'ADVANCED'|null $ScalingStrategy
  */
 class ManagedScalingPolicy extends Shape
 {
     /**
      * @param array{
-     *     ComputeLimits?: ComputeLimits,
-     *     UtilizationPerformanceIndex?: int<1, 100>,
-     *     ScalingStrategy?: 'DEFAULT'|'ADVANCED'
+     *     ComputeLimits?: ComputeLimits|null,
+     *     UtilizationPerformanceIndex?: int<1, 100>|null,
+     *     ScalingStrategy?: 'DEFAULT'|'ADVANCED'|null
      * } $args
      */
     public function __construct(array $args = [])

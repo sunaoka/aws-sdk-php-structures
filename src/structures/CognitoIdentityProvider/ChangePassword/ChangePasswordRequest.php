@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\ChangePassword;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $PreviousPassword
+ * @property string|null $PreviousPassword
  * @property string $ProposedPassword
  * @property string $AccessToken
  */
@@ -13,7 +13,7 @@ class ChangePasswordRequest extends Request
 {
     /**
      * @param array{
-     *     PreviousPassword?: string,
+     *     PreviousPassword?: string|null,
      *     ProposedPassword: string,
      *     AccessToken: string
      * } $args

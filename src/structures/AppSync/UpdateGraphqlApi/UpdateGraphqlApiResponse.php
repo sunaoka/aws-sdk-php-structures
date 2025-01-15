@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppSync\UpdateGraphqlApi;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\GraphqlApi $graphqlApi
+ * @property Shapes\GraphqlApi|null $graphqlApi
  */
 class UpdateGraphqlApiResponse extends Response
 {

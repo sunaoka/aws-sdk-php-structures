@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Connect\StartOutboundVoiceContact;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property array<string, Shapes\Reference> $References
- * @property string $RelatedContactId
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property array<string, Shapes\Reference>|null $References
+ * @property string|null $RelatedContactId
  * @property string $DestinationPhoneNumber
  * @property string $ContactFlowId
  * @property string $InstanceId
- * @property string $ClientToken
- * @property string $SourcePhoneNumber
- * @property string $QueueId
- * @property array<string, string> $Attributes
- * @property Shapes\AnswerMachineDetectionConfig $AnswerMachineDetectionConfig
- * @property string $CampaignId
- * @property 'GENERAL'|'CAMPAIGN' $TrafficType
+ * @property string|null $ClientToken
+ * @property string|null $SourcePhoneNumber
+ * @property string|null $QueueId
+ * @property array<string, string>|null $Attributes
+ * @property Shapes\AnswerMachineDetectionConfig|null $AnswerMachineDetectionConfig
+ * @property string|null $CampaignId
+ * @property 'GENERAL'|'CAMPAIGN'|null $TrafficType
  */
 class StartOutboundVoiceContactRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Description?: string,
-     *     References?: array<string, Shapes\Reference>,
-     *     RelatedContactId?: string,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     References?: array<string, Shapes\Reference>|null,
+     *     RelatedContactId?: string|null,
      *     DestinationPhoneNumber: string,
      *     ContactFlowId: string,
      *     InstanceId: string,
-     *     ClientToken?: string,
-     *     SourcePhoneNumber?: string,
-     *     QueueId?: string,
-     *     Attributes?: array<string, string>,
-     *     AnswerMachineDetectionConfig?: Shapes\AnswerMachineDetectionConfig,
-     *     CampaignId?: string,
-     *     TrafficType?: 'GENERAL'|'CAMPAIGN'
+     *     ClientToken?: string|null,
+     *     SourcePhoneNumber?: string|null,
+     *     QueueId?: string|null,
+     *     Attributes?: array<string, string>|null,
+     *     AnswerMachineDetectionConfig?: Shapes\AnswerMachineDetectionConfig|null,
+     *     CampaignId?: string|null,
+     *     TrafficType?: 'GENERAL'|'CAMPAIGN'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Appstream\DescribeAppBlockBuilderAppBlockAssoci
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AppBlockArn
- * @property string $AppBlockBuilderName
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $AppBlockArn
+ * @property string|null $AppBlockBuilderName
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeAppBlockBuilderAppBlockAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     AppBlockArn?: string,
-     *     AppBlockBuilderName?: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     AppBlockArn?: string|null,
+     *     AppBlockBuilderName?: string|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

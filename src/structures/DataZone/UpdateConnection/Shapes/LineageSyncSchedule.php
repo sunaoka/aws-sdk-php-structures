@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $schedule
+ * @property string|null $schedule
  */
 class LineageSyncSchedule extends Shape
 {
     /**
-     * @param array{schedule?: string} $args
+     * @param array{schedule?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryControlConfig\DescribeCluster\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Endpoint
- * @property string $Region
+ * @property string|null $Endpoint
+ * @property string|null $Region
  */
 class ClusterEndpoint extends Shape
 {
     /**
      * @param array{
-     *     Endpoint?: string,
-     *     Region?: string
+     *     Endpoint?: string|null,
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

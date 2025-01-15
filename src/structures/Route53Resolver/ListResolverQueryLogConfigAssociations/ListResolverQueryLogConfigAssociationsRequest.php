@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\ListResolverQueryLogConfigAssoc
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property list<Shapes\Filter> $Filters
- * @property string $SortBy
- * @property 'ASCENDING'|'DESCENDING' $SortOrder
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $SortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
  */
 class ListResolverQueryLogConfigAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     SortBy?: string,
-     *     SortOrder?: 'ASCENDING'|'DESCENDING'
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     SortBy?: string|null,
+     *     SortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ExtendLicenseConsumption;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LicenseConsumptionToken
- * @property string $Expiration
+ * @property string|null $LicenseConsumptionToken
+ * @property string|null $Expiration
  */
 class ExtendLicenseConsumptionResponse extends Response
 {

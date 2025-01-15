@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $trainingDatasetArn
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED' $status
- * @property string $description
+ * @property string|null $description
  */
 class AudienceModelSummary extends Shape
 {
@@ -23,7 +23,7 @@ class AudienceModelSummary extends Shape
      *     name: string,
      *     trainingDatasetArn: string,
      *     status: 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED',
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

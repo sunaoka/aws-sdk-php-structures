@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\MediaPackage\UpdateOriginEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConstantInitializationVector
- * @property 'SAMPLE_AES'|'AES_CTR' $EncryptionMethod
- * @property int $KeyRotationIntervalSeconds
+ * @property string|null $ConstantInitializationVector
+ * @property 'SAMPLE_AES'|'AES_CTR'|null $EncryptionMethod
+ * @property int|null $KeyRotationIntervalSeconds
  * @property SpekeKeyProvider $SpekeKeyProvider
  */
 class CmafEncryption extends Shape
 {
     /**
      * @param array{
-     *     ConstantInitializationVector?: string,
-     *     EncryptionMethod?: 'SAMPLE_AES'|'AES_CTR',
-     *     KeyRotationIntervalSeconds?: int,
+     *     ConstantInitializationVector?: string|null,
+     *     EncryptionMethod?: 'SAMPLE_AES'|'AES_CTR'|null,
+     *     KeyRotationIntervalSeconds?: int|null,
      *     SpekeKeyProvider: SpekeKeyProvider
      * } $args
      */

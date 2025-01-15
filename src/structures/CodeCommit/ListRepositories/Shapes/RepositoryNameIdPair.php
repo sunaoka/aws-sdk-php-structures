@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCommit\ListRepositories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repositoryName
- * @property string $repositoryId
+ * @property string|null $repositoryName
+ * @property string|null $repositoryId
  */
 class RepositoryNameIdPair extends Shape
 {
     /**
      * @param array{
-     *     repositoryName?: string,
-     *     repositoryId?: string
+     *     repositoryName?: string|null,
+     *     repositoryId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

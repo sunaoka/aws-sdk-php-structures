@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $configuredTableAssociationIdentifier
  * @property string $membershipIdentifier
- * @property string $description
- * @property string $roleArn
+ * @property string|null $description
+ * @property string|null $roleArn
  */
 class UpdateConfiguredTableAssociationRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateConfiguredTableAssociationRequest extends Request
      * @param array{
      *     configuredTableAssociationIdentifier: string,
      *     membershipIdentifier: string,
-     *     description?: string,
-     *     roleArn?: string
+     *     description?: string|null,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $QueryString
  * @property CookiePreference $Cookies
- * @property Headers $Headers
- * @property QueryStringCacheKeys $QueryStringCacheKeys
+ * @property Headers|null $Headers
+ * @property QueryStringCacheKeys|null $QueryStringCacheKeys
  */
 class ForwardedValues extends Shape
 {
@@ -16,8 +16,8 @@ class ForwardedValues extends Shape
      * @param array{
      *     QueryString: bool,
      *     Cookies: CookiePreference,
-     *     Headers?: Headers,
-     *     QueryStringCacheKeys?: QueryStringCacheKeys
+     *     Headers?: Headers|null,
+     *     QueryStringCacheKeys?: QueryStringCacheKeys|null
      * } $args
      */
     public function __construct(array $args)

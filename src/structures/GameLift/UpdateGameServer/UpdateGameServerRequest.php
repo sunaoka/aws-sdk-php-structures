@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GameServerGroupName
  * @property string $GameServerId
- * @property string $GameServerData
- * @property 'AVAILABLE'|'UTILIZED' $UtilizationStatus
- * @property 'HEALTHY' $HealthCheck
+ * @property string|null $GameServerData
+ * @property 'AVAILABLE'|'UTILIZED'|null $UtilizationStatus
+ * @property 'HEALTHY'|null $HealthCheck
  */
 class UpdateGameServerRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateGameServerRequest extends Request
      * @param array{
      *     GameServerGroupName: string,
      *     GameServerId: string,
-     *     GameServerData?: string,
-     *     UtilizationStatus?: 'AVAILABLE'|'UTILIZED',
-     *     HealthCheck?: 'HEALTHY'
+     *     GameServerData?: string|null,
+     *     UtilizationStatus?: 'AVAILABLE'|'UTILIZED'|null,
+     *     HealthCheck?: 'HEALTHY'|null
      * } $args
      */
     public function __construct(array $args)

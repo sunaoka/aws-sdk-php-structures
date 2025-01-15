@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientRequestToken
  * @property string $MediaRegion
- * @property string $MeetingHostId
+ * @property string|null $MeetingHostId
  * @property string $ExternalMeetingId
- * @property Shapes\MeetingFeaturesConfiguration $MeetingFeatures
- * @property Shapes\NotificationsConfiguration $NotificationsConfiguration
+ * @property Shapes\MeetingFeaturesConfiguration|null $MeetingFeatures
+ * @property Shapes\NotificationsConfiguration|null $NotificationsConfiguration
  * @property list<Shapes\CreateAttendeeRequestItem> $Attendees
- * @property string $PrimaryMeetingId
- * @property list<string> $TenantIds
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $PrimaryMeetingId
+ * @property list<string>|null $TenantIds
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMeetingWithAttendeesRequest extends Request
 {
@@ -22,14 +22,14 @@ class CreateMeetingWithAttendeesRequest extends Request
      * @param array{
      *     ClientRequestToken: string,
      *     MediaRegion: string,
-     *     MeetingHostId?: string,
+     *     MeetingHostId?: string|null,
      *     ExternalMeetingId: string,
-     *     MeetingFeatures?: Shapes\MeetingFeaturesConfiguration,
-     *     NotificationsConfiguration?: Shapes\NotificationsConfiguration,
+     *     MeetingFeatures?: Shapes\MeetingFeaturesConfiguration|null,
+     *     NotificationsConfiguration?: Shapes\NotificationsConfiguration|null,
      *     Attendees: list<Shapes\CreateAttendeeRequestItem>,
-     *     PrimaryMeetingId?: string,
-     *     TenantIds?: list<string>,
-     *     Tags?: list<Shapes\Tag>
+     *     PrimaryMeetingId?: string|null,
+     *     TenantIds?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PrimaryDistributionId
- * @property bool $Staging
- * @property string $IfMatch
+ * @property bool|null $Staging
+ * @property string|null $IfMatch
  * @property string $CallerReference
- * @property bool $Enabled
+ * @property bool|null $Enabled
  */
 class CopyDistributionRequest extends Request
 {
     /**
      * @param array{
      *     PrimaryDistributionId: string,
-     *     Staging?: bool,
-     *     IfMatch?: string,
+     *     Staging?: bool|null,
+     *     IfMatch?: string|null,
      *     CallerReference: string,
-     *     Enabled?: bool
+     *     Enabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

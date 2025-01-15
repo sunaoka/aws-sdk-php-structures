@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CodePipeline\GetPipelineExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $pipelineName
- * @property int<1, max> $pipelineVersion
- * @property string $pipelineExecutionId
- * @property 'Cancelled'|'InProgress'|'Stopped'|'Stopping'|'Succeeded'|'Superseded'|'Failed' $status
- * @property string $statusSummary
- * @property list<ArtifactRevision> $artifactRevisions
- * @property list<ResolvedPipelineVariable> $variables
- * @property ExecutionTrigger $trigger
- * @property 'QUEUED'|'SUPERSEDED'|'PARALLEL' $executionMode
- * @property 'STANDARD'|'ROLLBACK' $executionType
- * @property PipelineRollbackMetadata $rollbackMetadata
+ * @property string|null $pipelineName
+ * @property int<1, max>|null $pipelineVersion
+ * @property string|null $pipelineExecutionId
+ * @property 'Cancelled'|'InProgress'|'Stopped'|'Stopping'|'Succeeded'|'Superseded'|'Failed'|null $status
+ * @property string|null $statusSummary
+ * @property list<ArtifactRevision>|null $artifactRevisions
+ * @property list<ResolvedPipelineVariable>|null $variables
+ * @property ExecutionTrigger|null $trigger
+ * @property 'QUEUED'|'SUPERSEDED'|'PARALLEL'|null $executionMode
+ * @property 'STANDARD'|'ROLLBACK'|null $executionType
+ * @property PipelineRollbackMetadata|null $rollbackMetadata
  */
 class PipelineExecution extends Shape
 {
     /**
      * @param array{
-     *     pipelineName?: string,
-     *     pipelineVersion?: int<1, max>,
-     *     pipelineExecutionId?: string,
-     *     status?: 'Cancelled'|'InProgress'|'Stopped'|'Stopping'|'Succeeded'|'Superseded'|'Failed',
-     *     statusSummary?: string,
-     *     artifactRevisions?: list<ArtifactRevision>,
-     *     variables?: list<ResolvedPipelineVariable>,
-     *     trigger?: ExecutionTrigger,
-     *     executionMode?: 'QUEUED'|'SUPERSEDED'|'PARALLEL',
-     *     executionType?: 'STANDARD'|'ROLLBACK',
-     *     rollbackMetadata?: PipelineRollbackMetadata
+     *     pipelineName?: string|null,
+     *     pipelineVersion?: int<1, max>|null,
+     *     pipelineExecutionId?: string|null,
+     *     status?: 'Cancelled'|'InProgress'|'Stopped'|'Stopping'|'Succeeded'|'Superseded'|'Failed'|null,
+     *     statusSummary?: string|null,
+     *     artifactRevisions?: list<ArtifactRevision>|null,
+     *     variables?: list<ResolvedPipelineVariable>|null,
+     *     trigger?: ExecutionTrigger|null,
+     *     executionMode?: 'QUEUED'|'SUPERSEDED'|'PARALLEL'|null,
+     *     executionType?: 'STANDARD'|'ROLLBACK'|null,
+     *     rollbackMetadata?: PipelineRollbackMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

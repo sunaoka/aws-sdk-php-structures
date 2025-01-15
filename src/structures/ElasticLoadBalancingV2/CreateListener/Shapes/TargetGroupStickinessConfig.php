@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\CreateListener\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property int $DurationSeconds
+ * @property bool|null $Enabled
+ * @property int|null $DurationSeconds
  */
 class TargetGroupStickinessConfig extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     DurationSeconds?: int
+     *     Enabled?: bool|null,
+     *     DurationSeconds?: int|null
      * } $args
      */
     public function __construct(array $args = [])

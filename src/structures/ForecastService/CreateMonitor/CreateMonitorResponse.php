@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ForecastService\CreateMonitor;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $MonitorArn
+ * @property string|null $MonitorArn
  */
 class CreateMonitorResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DirectoryService\UnshareDirectory;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SharedDirectoryId
+ * @property string|null $SharedDirectoryId
  */
 class UnshareDirectoryResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexRuntimeV2\GetSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $originalValue
+ * @property string|null $originalValue
  * @property string $interpretedValue
- * @property list<string> $resolvedValues
+ * @property list<string>|null $resolvedValues
  */
 class Value extends Shape
 {
     /**
      * @param array{
-     *     originalValue?: string,
+     *     originalValue?: string|null,
      *     interpretedValue: string,
-     *     resolvedValues?: list<string>
+     *     resolvedValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

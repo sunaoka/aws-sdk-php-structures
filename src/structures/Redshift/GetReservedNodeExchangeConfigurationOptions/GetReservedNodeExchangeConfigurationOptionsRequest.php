@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'restore-cluster'|'resize-cluster' $ActionType
- * @property string $ClusterIdentifier
- * @property string $SnapshotIdentifier
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $ClusterIdentifier
+ * @property string|null $SnapshotIdentifier
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class GetReservedNodeExchangeConfigurationOptionsRequest extends Request
 {
     /**
      * @param array{
      *     ActionType: 'restore-cluster'|'resize-cluster',
-     *     ClusterIdentifier?: string,
-     *     SnapshotIdentifier?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     ClusterIdentifier?: string|null,
+     *     SnapshotIdentifier?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImagePipelines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $imageScanningEnabled
- * @property EcrConfiguration $ecrConfiguration
+ * @property bool|null $imageScanningEnabled
+ * @property EcrConfiguration|null $ecrConfiguration
  */
 class ImageScanningConfiguration extends Shape
 {
     /**
      * @param array{
-     *     imageScanningEnabled?: bool,
-     *     ecrConfiguration?: EcrConfiguration
+     *     imageScanningEnabled?: bool|null,
+     *     ecrConfiguration?: EcrConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutTransformer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $source
+ * @property string|null $source
  * @property string $match
  */
 class Grok extends Shape
 {
     /**
      * @param array{
-     *     source?: string,
+     *     source?: string|null,
      *     match: string
      * } $args
      */

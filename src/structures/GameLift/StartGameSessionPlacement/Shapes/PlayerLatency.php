@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GameLift\StartGameSessionPlacement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlayerId
- * @property string $RegionIdentifier
- * @property float $LatencyInMilliseconds
+ * @property string|null $PlayerId
+ * @property string|null $RegionIdentifier
+ * @property float|null $LatencyInMilliseconds
  */
 class PlayerLatency extends Shape
 {
     /**
      * @param array{
-     *     PlayerId?: string,
-     *     RegionIdentifier?: string,
-     *     LatencyInMilliseconds?: float
+     *     PlayerId?: string|null,
+     *     RegionIdentifier?: string|null,
+     *     LatencyInMilliseconds?: float|null
      * } $args
      */
     public function __construct(array $args = [])

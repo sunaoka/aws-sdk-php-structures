@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListNetworkAnalyzerConfigurations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Name
+ * @property string|null $Arn
+ * @property string|null $Name
  */
 class NetworkAnalyzerConfigurations extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Name?: string
+     *     Arn?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

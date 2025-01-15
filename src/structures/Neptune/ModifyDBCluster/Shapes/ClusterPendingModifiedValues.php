@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Neptune\ModifyDBCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PendingCloudwatchLogsExports $PendingCloudwatchLogsExports
- * @property string $DBClusterIdentifier
- * @property bool $IAMDatabaseAuthenticationEnabled
- * @property string $EngineVersion
- * @property int $BackupRetentionPeriod
- * @property string $StorageType
- * @property int $AllocatedStorage
- * @property int $Iops
+ * @property PendingCloudwatchLogsExports|null $PendingCloudwatchLogsExports
+ * @property string|null $DBClusterIdentifier
+ * @property bool|null $IAMDatabaseAuthenticationEnabled
+ * @property string|null $EngineVersion
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $StorageType
+ * @property int|null $AllocatedStorage
+ * @property int|null $Iops
  */
 class ClusterPendingModifiedValues extends Shape
 {
     /**
      * @param array{
-     *     PendingCloudwatchLogsExports?: PendingCloudwatchLogsExports,
-     *     DBClusterIdentifier?: string,
-     *     IAMDatabaseAuthenticationEnabled?: bool,
-     *     EngineVersion?: string,
-     *     BackupRetentionPeriod?: int,
-     *     StorageType?: string,
-     *     AllocatedStorage?: int,
-     *     Iops?: int
+     *     PendingCloudwatchLogsExports?: PendingCloudwatchLogsExports|null,
+     *     DBClusterIdentifier?: string|null,
+     *     IAMDatabaseAuthenticationEnabled?: bool|null,
+     *     EngineVersion?: string|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     StorageType?: string|null,
+     *     AllocatedStorage?: int|null,
+     *     Iops?: int|null
      * } $args
      */
     public function __construct(array $args = [])

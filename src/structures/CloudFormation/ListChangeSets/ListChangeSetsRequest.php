@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackName
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListChangeSetsRequest extends Request
 {
     /**
      * @param array{
      *     StackName: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

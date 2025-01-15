@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EKS\CreateFargateProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $namespace
- * @property array<string, string> $labels
+ * @property string|null $namespace
+ * @property array<string, string>|null $labels
  */
 class FargateProfileSelector extends Shape
 {
     /**
      * @param array{
-     *     namespace?: string,
-     *     labels?: array<string, string>
+     *     namespace?: string|null,
+     *     labels?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

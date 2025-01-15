@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RouteNumber $RouteNumber
- * @property LocalizedString $Text
+ * @property RouteNumber|null $RouteNumber
+ * @property LocalizedString|null $Text
  */
 class RouteSignpostLabel extends Shape
 {
     /**
      * @param array{
-     *     RouteNumber?: RouteNumber,
-     *     Text?: LocalizedString
+     *     RouteNumber?: RouteNumber|null,
+     *     Text?: LocalizedString|null
      * } $args
      */
     public function __construct(array $args = [])

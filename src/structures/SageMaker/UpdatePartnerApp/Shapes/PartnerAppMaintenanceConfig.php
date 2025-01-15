@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdatePartnerApp\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MaintenanceWindowStart
+ * @property string|null $MaintenanceWindowStart
  */
 class PartnerAppMaintenanceConfig extends Shape
 {
     /**
-     * @param array{MaintenanceWindowStart?: string} $args
+     * @param array{MaintenanceWindowStart?: string|null} $args
      */
     public function __construct(array $args = [])
     {

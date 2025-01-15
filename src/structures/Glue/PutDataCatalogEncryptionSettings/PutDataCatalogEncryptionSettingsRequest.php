@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\PutDataCatalogEncryptionSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property Shapes\DataCatalogEncryptionSettings $DataCatalogEncryptionSettings
  */
 class PutDataCatalogEncryptionSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DataCatalogEncryptionSettings: Shapes\DataCatalogEncryptionSettings
      * } $args
      */

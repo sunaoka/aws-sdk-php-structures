@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\CreateWorkflowStep\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $integerValue
- * @property string $stringValue
- * @property list<string> $listOfStringValue
+ * @property int|null $integerValue
+ * @property string|null $stringValue
+ * @property list<string>|null $listOfStringValue
  */
 class WorkflowStepOutputUnion extends Shape
 {
     /**
      * @param array{
-     *     integerValue?: int,
-     *     stringValue?: string,
-     *     listOfStringValue?: list<string>
+     *     integerValue?: int|null,
+     *     stringValue?: string|null,
+     *     listOfStringValue?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

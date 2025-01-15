@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LoadBalancerName
  * @property list<Shapes\Listener> $Listeners
- * @property list<string> $AvailabilityZones
- * @property list<string> $Subnets
- * @property list<string> $SecurityGroups
- * @property string $Scheme
- * @property list<Shapes\Tag> $Tags
+ * @property list<string>|null $AvailabilityZones
+ * @property list<string>|null $Subnets
+ * @property list<string>|null $SecurityGroups
+ * @property string|null $Scheme
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateLoadBalancerRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateLoadBalancerRequest extends Request
      * @param array{
      *     LoadBalancerName: string,
      *     Listeners: list<Shapes\Listener>,
-     *     AvailabilityZones?: list<string>,
-     *     Subnets?: list<string>,
-     *     SecurityGroups?: list<string>,
-     *     Scheme?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     AvailabilityZones?: list<string>|null,
+     *     Subnets?: list<string>|null,
+     *     SecurityGroups?: list<string>|null,
+     *     Scheme?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

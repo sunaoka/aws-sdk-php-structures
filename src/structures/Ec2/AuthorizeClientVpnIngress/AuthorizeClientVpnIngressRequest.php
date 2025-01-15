@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientVpnEndpointId
  * @property string $TargetNetworkCidr
- * @property string $AccessGroupId
- * @property bool $AuthorizeAllGroups
- * @property string $Description
- * @property string $ClientToken
- * @property bool $DryRun
+ * @property string|null $AccessGroupId
+ * @property bool|null $AuthorizeAllGroups
+ * @property string|null $Description
+ * @property string|null $ClientToken
+ * @property bool|null $DryRun
  */
 class AuthorizeClientVpnIngressRequest extends Request
 {
@@ -19,11 +19,11 @@ class AuthorizeClientVpnIngressRequest extends Request
      * @param array{
      *     ClientVpnEndpointId: string,
      *     TargetNetworkCidr: string,
-     *     AccessGroupId?: string,
-     *     AuthorizeAllGroups?: bool,
-     *     Description?: string,
-     *     ClientToken?: string,
-     *     DryRun?: bool
+     *     AccessGroupId?: string|null,
+     *     AuthorizeAllGroups?: bool|null,
+     *     Description?: string|null,
+     *     ClientToken?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

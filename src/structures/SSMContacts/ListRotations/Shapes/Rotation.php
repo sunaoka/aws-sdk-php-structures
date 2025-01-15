@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RotationArn
  * @property string $Name
- * @property list<string> $ContactIds
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property string $TimeZoneId
- * @property RecurrenceSettings $Recurrence
+ * @property list<string>|null $ContactIds
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property string|null $TimeZoneId
+ * @property RecurrenceSettings|null $Recurrence
  */
 class Rotation extends Shape
 {
@@ -18,10 +18,10 @@ class Rotation extends Shape
      * @param array{
      *     RotationArn: string,
      *     Name: string,
-     *     ContactIds?: list<string>,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     TimeZoneId?: string,
-     *     Recurrence?: RecurrenceSettings
+     *     ContactIds?: list<string>|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     TimeZoneId?: string|null,
+     *     Recurrence?: RecurrenceSettings|null
      * } $args
      */
     public function __construct(array $args)

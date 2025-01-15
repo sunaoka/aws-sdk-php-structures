@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\LicenseEndpointSummary> $licenseEndpoints
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListLicenseEndpointsResponse extends Response
 {

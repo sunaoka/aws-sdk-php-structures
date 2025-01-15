@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Bayesian'|'Random'|'Hyperband'|'Grid' $Strategy
- * @property HyperParameterTuningJobStrategyConfig $StrategyConfig
- * @property HyperParameterTuningJobObjective $HyperParameterTuningJobObjective
+ * @property HyperParameterTuningJobStrategyConfig|null $StrategyConfig
+ * @property HyperParameterTuningJobObjective|null $HyperParameterTuningJobObjective
  * @property ResourceLimits $ResourceLimits
- * @property ParameterRanges $ParameterRanges
- * @property 'Off'|'Auto' $TrainingJobEarlyStoppingType
- * @property TuningJobCompletionCriteria $TuningJobCompletionCriteria
- * @property int<0, max> $RandomSeed
+ * @property ParameterRanges|null $ParameterRanges
+ * @property 'Off'|'Auto'|null $TrainingJobEarlyStoppingType
+ * @property TuningJobCompletionCriteria|null $TuningJobCompletionCriteria
+ * @property int<0, max>|null $RandomSeed
  */
 class HyperParameterTuningJobConfig extends Shape
 {
     /**
      * @param array{
      *     Strategy: 'Bayesian'|'Random'|'Hyperband'|'Grid',
-     *     StrategyConfig?: HyperParameterTuningJobStrategyConfig,
-     *     HyperParameterTuningJobObjective?: HyperParameterTuningJobObjective,
+     *     StrategyConfig?: HyperParameterTuningJobStrategyConfig|null,
+     *     HyperParameterTuningJobObjective?: HyperParameterTuningJobObjective|null,
      *     ResourceLimits: ResourceLimits,
-     *     ParameterRanges?: ParameterRanges,
-     *     TrainingJobEarlyStoppingType?: 'Off'|'Auto',
-     *     TuningJobCompletionCriteria?: TuningJobCompletionCriteria,
-     *     RandomSeed?: int<0, max>
+     *     ParameterRanges?: ParameterRanges|null,
+     *     TrainingJobEarlyStoppingType?: 'Off'|'Auto'|null,
+     *     TuningJobCompletionCriteria?: TuningJobCompletionCriteria|null,
+     *     RandomSeed?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

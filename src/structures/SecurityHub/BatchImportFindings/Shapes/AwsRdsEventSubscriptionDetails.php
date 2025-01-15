@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustSubscriptionId
- * @property string $CustomerAwsId
- * @property bool $Enabled
- * @property list<string> $EventCategoriesList
- * @property string $EventSubscriptionArn
- * @property string $SnsTopicArn
- * @property list<string> $SourceIdsList
- * @property string $SourceType
- * @property string $Status
- * @property string $SubscriptionCreationTime
+ * @property string|null $CustSubscriptionId
+ * @property string|null $CustomerAwsId
+ * @property bool|null $Enabled
+ * @property list<string>|null $EventCategoriesList
+ * @property string|null $EventSubscriptionArn
+ * @property string|null $SnsTopicArn
+ * @property list<string>|null $SourceIdsList
+ * @property string|null $SourceType
+ * @property string|null $Status
+ * @property string|null $SubscriptionCreationTime
  */
 class AwsRdsEventSubscriptionDetails extends Shape
 {
     /**
      * @param array{
-     *     CustSubscriptionId?: string,
-     *     CustomerAwsId?: string,
-     *     Enabled?: bool,
-     *     EventCategoriesList?: list<string>,
-     *     EventSubscriptionArn?: string,
-     *     SnsTopicArn?: string,
-     *     SourceIdsList?: list<string>,
-     *     SourceType?: string,
-     *     Status?: string,
-     *     SubscriptionCreationTime?: string
+     *     CustSubscriptionId?: string|null,
+     *     CustomerAwsId?: string|null,
+     *     Enabled?: bool|null,
+     *     EventCategoriesList?: list<string>|null,
+     *     EventSubscriptionArn?: string|null,
+     *     SnsTopicArn?: string|null,
+     *     SourceIdsList?: list<string>|null,
+     *     SourceType?: string|null,
+     *     Status?: string|null,
+     *     SubscriptionCreationTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

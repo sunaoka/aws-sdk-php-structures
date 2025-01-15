@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $NatGatewayId
  * @property list<string> $AllocationIds
- * @property list<string> $PrivateIpAddresses
- * @property bool $DryRun
+ * @property list<string>|null $PrivateIpAddresses
+ * @property bool|null $DryRun
  */
 class AssociateNatGatewayAddressRequest extends Request
 {
@@ -16,8 +16,8 @@ class AssociateNatGatewayAddressRequest extends Request
      * @param array{
      *     NatGatewayId: string,
      *     AllocationIds: list<string>,
-     *     PrivateIpAddresses?: list<string>,
-     *     DryRun?: bool
+     *     PrivateIpAddresses?: list<string>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

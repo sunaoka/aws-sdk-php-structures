@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DetectorId
  * @property list<string> $FindingIds
- * @property Shapes\SortCriteria $SortCriteria
+ * @property Shapes\SortCriteria|null $SortCriteria
  */
 class GetFindingsRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetFindingsRequest extends Request
      * @param array{
      *     DetectorId: string,
      *     FindingIds: list<string>,
-     *     SortCriteria?: Shapes\SortCriteria
+     *     SortCriteria?: Shapes\SortCriteria|null
      * } $args
      */
     public function __construct(array $args)

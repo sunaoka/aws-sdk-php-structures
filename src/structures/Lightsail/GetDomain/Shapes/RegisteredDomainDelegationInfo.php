@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NameServersUpdateState $nameServersUpdateState
- * @property R53HostedZoneDeletionState $r53HostedZoneDeletionState
+ * @property NameServersUpdateState|null $nameServersUpdateState
+ * @property R53HostedZoneDeletionState|null $r53HostedZoneDeletionState
  */
 class RegisteredDomainDelegationInfo extends Shape
 {
     /**
      * @param array{
-     *     nameServersUpdateState?: NameServersUpdateState,
-     *     r53HostedZoneDeletionState?: R53HostedZoneDeletionState
+     *     nameServersUpdateState?: NameServersUpdateState|null,
+     *     r53HostedZoneDeletionState?: R53HostedZoneDeletionState|null
      * } $args
      */
     public function __construct(array $args = [])

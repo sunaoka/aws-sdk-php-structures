@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $projectArn
- * @property string $name
- * @property string $description
- * @property Shapes\TestGridVpcConfig $vpcConfig
+ * @property string|null $name
+ * @property string|null $description
+ * @property Shapes\TestGridVpcConfig|null $vpcConfig
  */
 class UpdateTestGridProjectRequest extends Request
 {
     /**
      * @param array{
      *     projectArn: string,
-     *     name?: string,
-     *     description?: string,
-     *     vpcConfig?: Shapes\TestGridVpcConfig
+     *     name?: string|null,
+     *     description?: string|null,
+     *     vpcConfig?: Shapes\TestGridVpcConfig|null
      * } $args
      */
     public function __construct(array $args)

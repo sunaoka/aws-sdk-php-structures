@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $sequenceStoreId
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property Shapes\ActivateReadSetFilter $filter
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property Shapes\ActivateReadSetFilter|null $filter
  */
 class ListReadSetActivationJobsRequest extends Request
 {
     /**
      * @param array{
      *     sequenceStoreId: string,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     filter?: Shapes\ActivateReadSetFilter
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     filter?: Shapes\ActivateReadSetFilter|null
      * } $args
      */
     public function __construct(array $args)

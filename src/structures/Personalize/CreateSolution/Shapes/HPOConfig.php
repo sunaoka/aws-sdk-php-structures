@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Personalize\CreateSolution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HPOObjective $hpoObjective
- * @property HPOResourceConfig $hpoResourceConfig
- * @property HyperParameterRanges $algorithmHyperParameterRanges
+ * @property HPOObjective|null $hpoObjective
+ * @property HPOResourceConfig|null $hpoResourceConfig
+ * @property HyperParameterRanges|null $algorithmHyperParameterRanges
  */
 class HPOConfig extends Shape
 {
     /**
      * @param array{
-     *     hpoObjective?: HPOObjective,
-     *     hpoResourceConfig?: HPOResourceConfig,
-     *     algorithmHyperParameterRanges?: HyperParameterRanges
+     *     hpoObjective?: HPOObjective|null,
+     *     hpoResourceConfig?: HPOResourceConfig|null,
+     *     algorithmHyperParameterRanges?: HyperParameterRanges|null
      * } $args
      */
     public function __construct(array $args = [])

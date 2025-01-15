@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $thingGroupNames
- * @property bool $overrideDynamicGroups
+ * @property bool|null $overrideDynamicGroups
  */
 class AddThingsToThingGroupParams extends Shape
 {
     /**
      * @param array{
      *     thingGroupNames: list<string>,
-     *     overrideDynamicGroups?: bool
+     *     overrideDynamicGroups?: bool|null
      * } $args
      */
     public function __construct(array $args)

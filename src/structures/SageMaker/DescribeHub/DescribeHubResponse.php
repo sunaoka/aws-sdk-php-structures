@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $HubName
  * @property string $HubArn
- * @property string $HubDisplayName
- * @property string $HubDescription
- * @property list<string> $HubSearchKeywords
- * @property Shapes\HubS3StorageConfig $S3StorageConfig
+ * @property string|null $HubDisplayName
+ * @property string|null $HubDescription
+ * @property list<string>|null $HubSearchKeywords
+ * @property Shapes\HubS3StorageConfig|null $S3StorageConfig
  * @property 'InService'|'Creating'|'Updating'|'Deleting'|'CreateFailed'|'UpdateFailed'|'DeleteFailed' $HubStatus
- * @property string $FailureReason
+ * @property string|null $FailureReason
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  */

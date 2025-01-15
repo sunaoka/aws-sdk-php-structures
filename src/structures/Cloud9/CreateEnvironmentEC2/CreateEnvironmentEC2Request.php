@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property string $clientRequestToken
+ * @property string|null $description
+ * @property string|null $clientRequestToken
  * @property string $instanceType
- * @property string $subnetId
+ * @property string|null $subnetId
  * @property string $imageId
- * @property int<0, 20160> $automaticStopTimeMinutes
- * @property string $ownerArn
- * @property list<Shapes\Tag> $tags
- * @property 'CONNECT_SSH'|'CONNECT_SSM' $connectionType
- * @property bool $dryRun
+ * @property int<0, 20160>|null $automaticStopTimeMinutes
+ * @property string|null $ownerArn
+ * @property list<Shapes\Tag>|null $tags
+ * @property 'CONNECT_SSH'|'CONNECT_SSM'|null $connectionType
+ * @property bool|null $dryRun
  */
 class CreateEnvironmentEC2Request extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     clientRequestToken?: string,
+     *     description?: string|null,
+     *     clientRequestToken?: string|null,
      *     instanceType: string,
-     *     subnetId?: string,
+     *     subnetId?: string|null,
      *     imageId: string,
-     *     automaticStopTimeMinutes?: int<0, 20160>,
-     *     ownerArn?: string,
-     *     tags?: list<Shapes\Tag>,
-     *     connectionType?: 'CONNECT_SSH'|'CONNECT_SSM',
-     *     dryRun?: bool
+     *     automaticStopTimeMinutes?: int<0, 20160>|null,
+     *     ownerArn?: string|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     connectionType?: 'CONNECT_SSH'|'CONNECT_SSM'|null,
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

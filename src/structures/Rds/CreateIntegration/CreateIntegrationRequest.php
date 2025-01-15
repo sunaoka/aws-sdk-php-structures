@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceArn
  * @property string $TargetArn
  * @property string $IntegrationName
- * @property string $KMSKeyId
- * @property array<string, string> $AdditionalEncryptionContext
- * @property list<Shapes\Tag> $Tags
- * @property string $DataFilter
- * @property string $Description
+ * @property string|null $KMSKeyId
+ * @property array<string, string>|null $AdditionalEncryptionContext
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $DataFilter
+ * @property string|null $Description
  */
 class CreateIntegrationRequest extends Request
 {
@@ -21,11 +21,11 @@ class CreateIntegrationRequest extends Request
      *     SourceArn: string,
      *     TargetArn: string,
      *     IntegrationName: string,
-     *     KMSKeyId?: string,
-     *     AdditionalEncryptionContext?: array<string, string>,
-     *     Tags?: list<Shapes\Tag>,
-     *     DataFilter?: string,
-     *     Description?: string
+     *     KMSKeyId?: string|null,
+     *     AdditionalEncryptionContext?: array<string, string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DataFilter?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

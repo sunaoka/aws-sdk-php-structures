@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AssociationId
- * @property string $ClientRequestToken
- * @property bool $DeleteDataInFileSystem
+ * @property string|null $ClientRequestToken
+ * @property bool|null $DeleteDataInFileSystem
  */
 class DeleteDataRepositoryAssociationRequest extends Request
 {
     /**
      * @param array{
      *     AssociationId: string,
-     *     ClientRequestToken?: string,
-     *     DeleteDataInFileSystem?: bool
+     *     ClientRequestToken?: string|null,
+     *     DeleteDataInFileSystem?: bool|null
      * } $args
      */
     public function __construct(array $args)

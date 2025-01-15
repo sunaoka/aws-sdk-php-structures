@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\EMRContainers\GetManagedEndpointSessionCredenti
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $id
- * @property Shapes\Credentials $credentials
- * @property \Aws\Api\DateTimeResult $expiresAt
+ * @property string|null $id
+ * @property Shapes\Credentials|null $credentials
+ * @property \Aws\Api\DateTimeResult|null $expiresAt
  */
 class GetManagedEndpointSessionCredentialsResponse extends Response
 {

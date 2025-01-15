@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\StartRecomm
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $id
+ * @property string|null $id
  */
 class StartRecommendationReportGenerationResponse extends Response
 {

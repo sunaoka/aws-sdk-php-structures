@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CustomColor> $CustomColors
+ * @property list<CustomColor>|null $CustomColors
  */
 class ColorsConfiguration extends Shape
 {
     /**
-     * @param array{CustomColors?: list<CustomColor>} $args
+     * @param array{CustomColors?: list<CustomColor>|null} $args
      */
     public function __construct(array $args = [])
     {

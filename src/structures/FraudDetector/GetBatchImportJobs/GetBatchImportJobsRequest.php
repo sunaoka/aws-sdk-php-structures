@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetBatchImportJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $jobId
- * @property int<1, 50> $maxResults
- * @property string $nextToken
+ * @property string|null $jobId
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
  */
 class GetBatchImportJobsRequest extends Request
 {
     /**
      * @param array{
-     *     jobId?: string,
-     *     maxResults?: int<1, 50>,
-     *     nextToken?: string
+     *     jobId?: string|null,
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

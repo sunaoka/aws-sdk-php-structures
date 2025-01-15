@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BlueGreenDeploymentIdentifier
- * @property bool $DeleteTarget
+ * @property bool|null $DeleteTarget
  */
 class DeleteBlueGreenDeploymentRequest extends Request
 {
     /**
      * @param array{
      *     BlueGreenDeploymentIdentifier: string,
-     *     DeleteTarget?: bool
+     *     DeleteTarget?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceQuotas\GetAssociationForServiceQuotaTemp
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'ASSOCIATED'|'DISASSOCIATED' $ServiceQuotaTemplateAssociationStatus
+ * @property 'ASSOCIATED'|'DISASSOCIATED'|null $ServiceQuotaTemplateAssociationStatus
  */
 class GetAssociationForServiceQuotaTemplateResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $value
- * @property string $unit
+ * @property string|null $unit
  */
 class LocationTimestamp extends Shape
 {
     /**
      * @param array{
      *     value: string,
-     *     unit?: string
+     *     unit?: string|null
      * } $args
      */
     public function __construct(array $args)

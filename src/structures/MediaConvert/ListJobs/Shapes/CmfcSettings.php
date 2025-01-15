@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION' $AudioDuration
- * @property string $AudioGroupId
- * @property string $AudioRenditionSets
- * @property 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|'AUDIO_ONLY_VARIANT_STREAM' $AudioTrackType
- * @property 'DONT_FLAG'|'FLAG' $DescriptiveVideoServiceFlag
- * @property 'INCLUDE'|'EXCLUDE' $IFrameOnlyManifest
- * @property 'PASSTHROUGH'|'NONE' $KlvMetadata
- * @property 'ENABLED'|'DISABLED' $ManifestMetadataSignaling
- * @property 'INSERT'|'NONE' $Scte35Esam
- * @property 'PASSTHROUGH'|'NONE' $Scte35Source
- * @property 'PASSTHROUGH'|'NONE' $TimedMetadata
- * @property 'VERSION_0'|'VERSION_1' $TimedMetadataBoxVersion
- * @property string $TimedMetadataSchemeIdUri
- * @property string $TimedMetadataValue
+ * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null $AudioDuration
+ * @property string|null $AudioGroupId
+ * @property string|null $AudioRenditionSets
+ * @property 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|'AUDIO_ONLY_VARIANT_STREAM'|null $AudioTrackType
+ * @property 'DONT_FLAG'|'FLAG'|null $DescriptiveVideoServiceFlag
+ * @property 'INCLUDE'|'EXCLUDE'|null $IFrameOnlyManifest
+ * @property 'PASSTHROUGH'|'NONE'|null $KlvMetadata
+ * @property 'ENABLED'|'DISABLED'|null $ManifestMetadataSignaling
+ * @property 'INSERT'|'NONE'|null $Scte35Esam
+ * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
+ * @property 'PASSTHROUGH'|'NONE'|null $TimedMetadata
+ * @property 'VERSION_0'|'VERSION_1'|null $TimedMetadataBoxVersion
+ * @property string|null $TimedMetadataSchemeIdUri
+ * @property string|null $TimedMetadataValue
  */
 class CmfcSettings extends Shape
 {
     /**
      * @param array{
-     *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION',
-     *     AudioGroupId?: string,
-     *     AudioRenditionSets?: string,
-     *     AudioTrackType?: 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|'AUDIO_ONLY_VARIANT_STREAM',
-     *     DescriptiveVideoServiceFlag?: 'DONT_FLAG'|'FLAG',
-     *     IFrameOnlyManifest?: 'INCLUDE'|'EXCLUDE',
-     *     KlvMetadata?: 'PASSTHROUGH'|'NONE',
-     *     ManifestMetadataSignaling?: 'ENABLED'|'DISABLED',
-     *     Scte35Esam?: 'INSERT'|'NONE',
-     *     Scte35Source?: 'PASSTHROUGH'|'NONE',
-     *     TimedMetadata?: 'PASSTHROUGH'|'NONE',
-     *     TimedMetadataBoxVersion?: 'VERSION_0'|'VERSION_1',
-     *     TimedMetadataSchemeIdUri?: string,
-     *     TimedMetadataValue?: string
+     *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null,
+     *     AudioGroupId?: string|null,
+     *     AudioRenditionSets?: string|null,
+     *     AudioTrackType?: 'ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT'|'ALTERNATE_AUDIO_AUTO_SELECT'|'ALTERNATE_AUDIO_NOT_AUTO_SELECT'|'AUDIO_ONLY_VARIANT_STREAM'|null,
+     *     DescriptiveVideoServiceFlag?: 'DONT_FLAG'|'FLAG'|null,
+     *     IFrameOnlyManifest?: 'INCLUDE'|'EXCLUDE'|null,
+     *     KlvMetadata?: 'PASSTHROUGH'|'NONE'|null,
+     *     ManifestMetadataSignaling?: 'ENABLED'|'DISABLED'|null,
+     *     Scte35Esam?: 'INSERT'|'NONE'|null,
+     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
+     *     TimedMetadata?: 'PASSTHROUGH'|'NONE'|null,
+     *     TimedMetadataBoxVersion?: 'VERSION_0'|'VERSION_1'|null,
+     *     TimedMetadataSchemeIdUri?: string|null,
+     *     TimedMetadataValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

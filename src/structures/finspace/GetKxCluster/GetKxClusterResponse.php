@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\finspace\GetKxCluster;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'PENDING'|'CREATING'|'CREATE_FAILED'|'RUNNING'|'UPDATING'|'DELETING'|'DELETED'|'DELETE_FAILED' $status
- * @property string $statusReason
- * @property string $clusterName
- * @property 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT' $clusterType
- * @property Shapes\TickerplantLogConfiguration $tickerplantLogConfiguration
- * @property list<Shapes\Volume> $volumes
- * @property list<Shapes\KxDatabaseConfiguration> $databases
- * @property list<Shapes\KxCacheStorageConfiguration> $cacheStorageConfigurations
- * @property Shapes\AutoScalingConfiguration $autoScalingConfiguration
- * @property string $clusterDescription
- * @property Shapes\CapacityConfiguration $capacityConfiguration
- * @property string $releaseLabel
- * @property Shapes\VpcConfiguration $vpcConfiguration
- * @property string $initializationScript
- * @property list<Shapes\KxCommandLineArgument> $commandLineArguments
- * @property Shapes\CodeConfiguration $code
- * @property string $executionRole
- * @property \Aws\Api\DateTimeResult $lastModifiedTimestamp
- * @property Shapes\KxSavedownStorageConfiguration $savedownStorageConfiguration
- * @property 'SINGLE'|'MULTI' $azMode
- * @property string $availabilityZoneId
- * @property \Aws\Api\DateTimeResult $createdTimestamp
- * @property Shapes\KxScalingGroupConfiguration $scalingGroupConfiguration
+ * @property 'PENDING'|'CREATING'|'CREATE_FAILED'|'RUNNING'|'UPDATING'|'DELETING'|'DELETED'|'DELETE_FAILED'|null $status
+ * @property string|null $statusReason
+ * @property string|null $clusterName
+ * @property 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT'|null $clusterType
+ * @property Shapes\TickerplantLogConfiguration|null $tickerplantLogConfiguration
+ * @property list<Shapes\Volume>|null $volumes
+ * @property list<Shapes\KxDatabaseConfiguration>|null $databases
+ * @property list<Shapes\KxCacheStorageConfiguration>|null $cacheStorageConfigurations
+ * @property Shapes\AutoScalingConfiguration|null $autoScalingConfiguration
+ * @property string|null $clusterDescription
+ * @property Shapes\CapacityConfiguration|null $capacityConfiguration
+ * @property string|null $releaseLabel
+ * @property Shapes\VpcConfiguration|null $vpcConfiguration
+ * @property string|null $initializationScript
+ * @property list<Shapes\KxCommandLineArgument>|null $commandLineArguments
+ * @property Shapes\CodeConfiguration|null $code
+ * @property string|null $executionRole
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTimestamp
+ * @property Shapes\KxSavedownStorageConfiguration|null $savedownStorageConfiguration
+ * @property 'SINGLE'|'MULTI'|null $azMode
+ * @property string|null $availabilityZoneId
+ * @property \Aws\Api\DateTimeResult|null $createdTimestamp
+ * @property Shapes\KxScalingGroupConfiguration|null $scalingGroupConfiguration
  */
 class GetKxClusterResponse extends Response
 {

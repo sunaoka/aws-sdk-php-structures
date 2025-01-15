@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\imagebuilder\CreateImage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $imageRecipeArn
- * @property string $containerRecipeArn
- * @property string $distributionConfigurationArn
+ * @property string|null $imageRecipeArn
+ * @property string|null $containerRecipeArn
+ * @property string|null $distributionConfigurationArn
  * @property string $infrastructureConfigurationArn
- * @property Shapes\ImageTestsConfiguration $imageTestsConfiguration
- * @property bool $enhancedImageMetadataEnabled
- * @property array<string, string> $tags
+ * @property Shapes\ImageTestsConfiguration|null $imageTestsConfiguration
+ * @property bool|null $enhancedImageMetadataEnabled
+ * @property array<string, string>|null $tags
  * @property string $clientToken
- * @property Shapes\ImageScanningConfiguration $imageScanningConfiguration
- * @property list<Shapes\WorkflowConfiguration> $workflows
- * @property string $executionRole
+ * @property Shapes\ImageScanningConfiguration|null $imageScanningConfiguration
+ * @property list<Shapes\WorkflowConfiguration>|null $workflows
+ * @property string|null $executionRole
  */
 class CreateImageRequest extends Request
 {
     /**
      * @param array{
-     *     imageRecipeArn?: string,
-     *     containerRecipeArn?: string,
-     *     distributionConfigurationArn?: string,
+     *     imageRecipeArn?: string|null,
+     *     containerRecipeArn?: string|null,
+     *     distributionConfigurationArn?: string|null,
      *     infrastructureConfigurationArn: string,
-     *     imageTestsConfiguration?: Shapes\ImageTestsConfiguration,
-     *     enhancedImageMetadataEnabled?: bool,
-     *     tags?: array<string, string>,
+     *     imageTestsConfiguration?: Shapes\ImageTestsConfiguration|null,
+     *     enhancedImageMetadataEnabled?: bool|null,
+     *     tags?: array<string, string>|null,
      *     clientToken: string,
-     *     imageScanningConfiguration?: Shapes\ImageScanningConfiguration,
-     *     workflows?: list<Shapes\WorkflowConfiguration>,
-     *     executionRole?: string
+     *     imageScanningConfiguration?: Shapes\ImageScanningConfiguration|null,
+     *     workflows?: list<Shapes\WorkflowConfiguration>|null,
+     *     executionRole?: string|null
      * } $args
      */
     public function __construct(array $args)

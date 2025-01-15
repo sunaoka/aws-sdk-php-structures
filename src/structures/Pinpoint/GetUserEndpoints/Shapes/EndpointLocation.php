@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetUserEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $City
- * @property string $Country
- * @property double $Latitude
- * @property double $Longitude
- * @property string $PostalCode
- * @property string $Region
+ * @property string|null $City
+ * @property string|null $Country
+ * @property double|null $Latitude
+ * @property double|null $Longitude
+ * @property string|null $PostalCode
+ * @property string|null $Region
  */
 class EndpointLocation extends Shape
 {
     /**
      * @param array{
-     *     City?: string,
-     *     Country?: string,
-     *     Latitude?: double,
-     *     Longitude?: double,
-     *     PostalCode?: string,
-     *     Region?: string
+     *     City?: string|null,
+     *     Country?: string|null,
+     *     Latitude?: double|null,
+     *     Longitude?: double|null,
+     *     PostalCode?: string|null,
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

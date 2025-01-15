@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IdentityPoolName
  * @property bool $AllowUnauthenticatedIdentities
- * @property bool $AllowClassicFlow
- * @property array<string, string> $SupportedLoginProviders
- * @property string $DeveloperProviderName
- * @property list<string> $OpenIdConnectProviderARNs
- * @property list<Shapes\CognitoIdentityProvider> $CognitoIdentityProviders
- * @property list<string> $SamlProviderARNs
- * @property array<string, string> $IdentityPoolTags
+ * @property bool|null $AllowClassicFlow
+ * @property array<string, string>|null $SupportedLoginProviders
+ * @property string|null $DeveloperProviderName
+ * @property list<string>|null $OpenIdConnectProviderARNs
+ * @property list<Shapes\CognitoIdentityProvider>|null $CognitoIdentityProviders
+ * @property list<string>|null $SamlProviderARNs
+ * @property array<string, string>|null $IdentityPoolTags
  */
 class CreateIdentityPoolRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateIdentityPoolRequest extends Request
      * @param array{
      *     IdentityPoolName: string,
      *     AllowUnauthenticatedIdentities: bool,
-     *     AllowClassicFlow?: bool,
-     *     SupportedLoginProviders?: array<string, string>,
-     *     DeveloperProviderName?: string,
-     *     OpenIdConnectProviderARNs?: list<string>,
-     *     CognitoIdentityProviders?: list<Shapes\CognitoIdentityProvider>,
-     *     SamlProviderARNs?: list<string>,
-     *     IdentityPoolTags?: array<string, string>
+     *     AllowClassicFlow?: bool|null,
+     *     SupportedLoginProviders?: array<string, string>|null,
+     *     DeveloperProviderName?: string|null,
+     *     OpenIdConnectProviderARNs?: list<string>|null,
+     *     CognitoIdentityProviders?: list<Shapes\CognitoIdentityProvider>|null,
+     *     SamlProviderARNs?: list<string>|null,
+     *     IdentityPoolTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

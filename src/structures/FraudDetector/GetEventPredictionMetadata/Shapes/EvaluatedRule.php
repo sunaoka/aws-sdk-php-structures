@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEventPredictionMetadata\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ruleId
- * @property string $ruleVersion
- * @property string $expression
- * @property string $expressionWithValues
- * @property list<string> $outcomes
- * @property bool $evaluated
- * @property bool $matched
+ * @property string|null $ruleId
+ * @property string|null $ruleVersion
+ * @property string|null $expression
+ * @property string|null $expressionWithValues
+ * @property list<string>|null $outcomes
+ * @property bool|null $evaluated
+ * @property bool|null $matched
  */
 class EvaluatedRule extends Shape
 {
     /**
      * @param array{
-     *     ruleId?: string,
-     *     ruleVersion?: string,
-     *     expression?: string,
-     *     expressionWithValues?: string,
-     *     outcomes?: list<string>,
-     *     evaluated?: bool,
-     *     matched?: bool
+     *     ruleId?: string|null,
+     *     ruleVersion?: string|null,
+     *     expression?: string|null,
+     *     expressionWithValues?: string|null,
+     *     outcomes?: list<string>|null,
+     *     evaluated?: bool|null,
+     *     matched?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

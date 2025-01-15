@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PARQUET'|'CSV' $format
  * @property string $destination
  * @property string $kmsKeyIdentifier
- * @property 'COLUMNAR' $parquetType
- * @property string $statusReason
+ * @property 'COLUMNAR'|null $parquetType
+ * @property string|null $statusReason
  */
 class ExportTaskSummary extends Shape
 {
@@ -26,8 +26,8 @@ class ExportTaskSummary extends Shape
      *     format: 'PARQUET'|'CSV',
      *     destination: string,
      *     kmsKeyIdentifier: string,
-     *     parquetType?: 'COLUMNAR',
-     *     statusReason?: string
+     *     parquetType?: 'COLUMNAR'|null,
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args)

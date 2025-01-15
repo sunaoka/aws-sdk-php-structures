@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LakeFormation\DescribeLakeFormationIdentityCent
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  */
 class DescribeLakeFormationIdentityCenterConfigurationRequest extends Request
 {
     /**
-     * @param array{CatalogId?: string} $args
+     * @param array{CatalogId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

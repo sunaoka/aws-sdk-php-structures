@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Bucket
  * @property string $ObjectKey
- * @property string $VersionId
+ * @property string|null $VersionId
  */
 class PipelineDefinitionS3Location extends Shape
 {
@@ -15,7 +15,7 @@ class PipelineDefinitionS3Location extends Shape
      * @param array{
      *     Bucket: string,
      *     ObjectKey: string,
-     *     VersionId?: string
+     *     VersionId?: string|null
      * } $args
      */
     public function __construct(array $args)

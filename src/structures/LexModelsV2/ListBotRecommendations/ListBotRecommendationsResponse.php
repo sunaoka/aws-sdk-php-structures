@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListBotRecommendations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $botId
- * @property string $botVersion
- * @property string $localeId
- * @property list<Shapes\BotRecommendationSummary> $botRecommendationSummaries
- * @property string $nextToken
+ * @property string|null $botId
+ * @property string|null $botVersion
+ * @property string|null $localeId
+ * @property list<Shapes\BotRecommendationSummary>|null $botRecommendationSummaries
+ * @property string|null $nextToken
  */
 class ListBotRecommendationsResponse extends Response
 {

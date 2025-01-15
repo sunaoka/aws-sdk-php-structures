@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\DisassociateResolverEndpointIpA
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpId
- * @property string $SubnetId
- * @property string $Ip
- * @property string $Ipv6
+ * @property string|null $IpId
+ * @property string|null $SubnetId
+ * @property string|null $Ip
+ * @property string|null $Ipv6
  */
 class IpAddressUpdate extends Shape
 {
     /**
      * @param array{
-     *     IpId?: string,
-     *     SubnetId?: string,
-     *     Ip?: string,
-     *     Ipv6?: string
+     *     IpId?: string|null,
+     *     SubnetId?: string|null,
+     *     Ip?: string|null,
+     *     Ipv6?: string|null
      * } $args
      */
     public function __construct(array $args = [])

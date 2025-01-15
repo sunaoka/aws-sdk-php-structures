@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeTags;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ConfigurationTag> $tags
- * @property string $nextToken
+ * @property list<Shapes\ConfigurationTag>|null $tags
+ * @property string|null $nextToken
  */
 class DescribeTagsResponse extends Response
 {

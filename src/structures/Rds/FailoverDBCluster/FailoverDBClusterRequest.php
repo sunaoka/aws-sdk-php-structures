@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBClusterIdentifier
- * @property string $TargetDBInstanceIdentifier
+ * @property string|null $TargetDBInstanceIdentifier
  */
 class FailoverDBClusterRequest extends Request
 {
     /**
      * @param array{
      *     DBClusterIdentifier: string,
-     *     TargetDBInstanceIdentifier?: string
+     *     TargetDBInstanceIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetGlobalSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CONFIGURED'|'NOT_CONFIGURED' $IntegrationStatus
- * @property 'ENABLED'|'DISABLED' $IssueManagementStatus
- * @property 'AUTO'|'MANUAL' $IssueManagementType
- * @property string $Subdomain
- * @property string $JiraProjectKey
- * @property string $StatusMessage
+ * @property 'CONFIGURED'|'NOT_CONFIGURED'|null $IntegrationStatus
+ * @property 'ENABLED'|'DISABLED'|null $IssueManagementStatus
+ * @property 'AUTO'|'MANUAL'|null $IssueManagementType
+ * @property string|null $Subdomain
+ * @property string|null $JiraProjectKey
+ * @property string|null $StatusMessage
  */
 class AccountJiraConfigurationOutput extends Shape
 {
     /**
      * @param array{
-     *     IntegrationStatus?: 'CONFIGURED'|'NOT_CONFIGURED',
-     *     IssueManagementStatus?: 'ENABLED'|'DISABLED',
-     *     IssueManagementType?: 'AUTO'|'MANUAL',
-     *     Subdomain?: string,
-     *     JiraProjectKey?: string,
-     *     StatusMessage?: string
+     *     IntegrationStatus?: 'CONFIGURED'|'NOT_CONFIGURED'|null,
+     *     IssueManagementStatus?: 'ENABLED'|'DISABLED'|null,
+     *     IssueManagementType?: 'AUTO'|'MANUAL'|null,
+     *     Subdomain?: string|null,
+     *     JiraProjectKey?: string|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

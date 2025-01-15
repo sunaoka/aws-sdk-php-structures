@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeReplicationGroups;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\ReplicationGroup> $ReplicationGroups
+ * @property string|null $Marker
+ * @property list<Shapes\ReplicationGroup>|null $ReplicationGroups
  */
 class DescribeReplicationGroupsResponse extends Response
 {

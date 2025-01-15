@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\S3\GetBucketIntelligentTieringConfiguration\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Prefix
- * @property Tag $Tag
- * @property IntelligentTieringAndOperator $And
+ * @property string|null $Prefix
+ * @property Tag|null $Tag
+ * @property IntelligentTieringAndOperator|null $And
  */
 class IntelligentTieringFilter extends Shape
 {
     /**
      * @param array{
-     *     Prefix?: string,
-     *     Tag?: Tag,
-     *     And?: IntelligentTieringAndOperator
+     *     Prefix?: string|null,
+     *     Tag?: Tag|null,
+     *     And?: IntelligentTieringAndOperator|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IdentityPoolId
  * @property string $IdentityProviderName
- * @property bool $UseDefaults
- * @property array<string, string> $PrincipalTags
+ * @property bool|null $UseDefaults
+ * @property array<string, string>|null $PrincipalTags
  */
 class SetPrincipalTagAttributeMapRequest extends Request
 {
@@ -16,8 +16,8 @@ class SetPrincipalTagAttributeMapRequest extends Request
      * @param array{
      *     IdentityPoolId: string,
      *     IdentityProviderName: string,
-     *     UseDefaults?: bool,
-     *     PrincipalTags?: array<string, string>
+     *     UseDefaults?: bool|null,
+     *     PrincipalTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

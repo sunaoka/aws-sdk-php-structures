@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeNotebookInstanceLifecycleConf
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Content
+ * @property string|null $Content
  */
 class NotebookInstanceLifecycleHook extends Shape
 {
     /**
-     * @param array{Content?: string} $args
+     * @param array{Content?: string|null} $args
      */
     public function __construct(array $args = [])
     {

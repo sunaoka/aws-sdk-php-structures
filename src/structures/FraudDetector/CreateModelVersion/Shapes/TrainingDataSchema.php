@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $modelVariables
- * @property LabelSchema $labelSchema
+ * @property LabelSchema|null $labelSchema
  */
 class TrainingDataSchema extends Shape
 {
     /**
      * @param array{
      *     modelVariables: list<string>,
-     *     labelSchema?: LabelSchema
+     *     labelSchema?: LabelSchema|null
      * } $args
      */
     public function __construct(array $args)

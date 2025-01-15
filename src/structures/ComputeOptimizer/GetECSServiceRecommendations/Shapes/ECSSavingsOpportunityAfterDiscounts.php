@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $savingsOpportunityPercentage
- * @property ECSEstimatedMonthlySavings $estimatedMonthlySavings
+ * @property double|null $savingsOpportunityPercentage
+ * @property ECSEstimatedMonthlySavings|null $estimatedMonthlySavings
  */
 class ECSSavingsOpportunityAfterDiscounts extends Shape
 {
     /**
      * @param array{
-     *     savingsOpportunityPercentage?: double,
-     *     estimatedMonthlySavings?: ECSEstimatedMonthlySavings
+     *     savingsOpportunityPercentage?: double|null,
+     *     estimatedMonthlySavings?: ECSEstimatedMonthlySavings|null
      * } $args
      */
     public function __construct(array $args = [])

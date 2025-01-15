@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeMaintenanceWindows;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\MaintenanceWindowFilter> $Filters
- * @property int<10, 100> $MaxResults
- * @property string $NextToken
+ * @property list<Shapes\MaintenanceWindowFilter>|null $Filters
+ * @property int<10, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeMaintenanceWindowsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\MaintenanceWindowFilter>,
-     *     MaxResults?: int<10, 100>,
-     *     NextToken?: string
+     *     Filters?: list<Shapes\MaintenanceWindowFilter>|null,
+     *     MaxResults?: int<10, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

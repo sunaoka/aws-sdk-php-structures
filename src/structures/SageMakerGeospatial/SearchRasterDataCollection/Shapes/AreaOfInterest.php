@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\SearchRasterDataCollection\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AreaOfInterestGeometry $AreaOfInterestGeometry
+ * @property AreaOfInterestGeometry|null $AreaOfInterestGeometry
  */
 class AreaOfInterest extends Shape
 {
     /**
-     * @param array{AreaOfInterestGeometry?: AreaOfInterestGeometry} $args
+     * @param array{AreaOfInterestGeometry?: AreaOfInterestGeometry|null} $args
      */
     public function __construct(array $args = [])
     {

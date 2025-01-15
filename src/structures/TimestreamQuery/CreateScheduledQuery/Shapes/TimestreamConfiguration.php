@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TableName
  * @property string $TimeColumn
  * @property list<DimensionMapping> $DimensionMappings
- * @property MultiMeasureMappings $MultiMeasureMappings
- * @property list<MixedMeasureMapping> $MixedMeasureMappings
- * @property string $MeasureNameColumn
+ * @property MultiMeasureMappings|null $MultiMeasureMappings
+ * @property list<MixedMeasureMapping>|null $MixedMeasureMappings
+ * @property string|null $MeasureNameColumn
  */
 class TimestreamConfiguration extends Shape
 {
@@ -21,9 +21,9 @@ class TimestreamConfiguration extends Shape
      *     TableName: string,
      *     TimeColumn: string,
      *     DimensionMappings: list<DimensionMapping>,
-     *     MultiMeasureMappings?: MultiMeasureMappings,
-     *     MixedMeasureMappings?: list<MixedMeasureMapping>,
-     *     MeasureNameColumn?: string
+     *     MultiMeasureMappings?: MultiMeasureMappings|null,
+     *     MixedMeasureMappings?: list<MixedMeasureMapping>|null,
+     *     MeasureNameColumn?: string|null
      * } $args
      */
     public function __construct(array $args)

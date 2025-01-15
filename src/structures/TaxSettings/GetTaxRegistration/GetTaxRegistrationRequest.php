@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\TaxSettings\GetTaxRegistration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountId
+ * @property string|null $accountId
  */
 class GetTaxRegistrationRequest extends Request
 {
     /**
-     * @param array{accountId?: string} $args
+     * @param array{accountId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

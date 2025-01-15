@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectLabels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DetectLabelsImageQuality $Quality
- * @property list<DominantColor> $DominantColors
+ * @property DetectLabelsImageQuality|null $Quality
+ * @property list<DominantColor>|null $DominantColors
  */
 class DetectLabelsImageForeground extends Shape
 {
     /**
      * @param array{
-     *     Quality?: DetectLabelsImageQuality,
-     *     DominantColors?: list<DominantColor>
+     *     Quality?: DetectLabelsImageQuality|null,
+     *     DominantColors?: list<DominantColor>|null
      * } $args
      */
     public function __construct(array $args = [])

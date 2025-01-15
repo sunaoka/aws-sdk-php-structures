@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $projectArn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property list<Shapes\Rule> $rules
- * @property int $maxDevices
+ * @property int|null $maxDevices
  */
 class CreateDevicePoolRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateDevicePoolRequest extends Request
      * @param array{
      *     projectArn: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     rules: list<Shapes\Rule>,
-     *     maxDevices?: int
+     *     maxDevices?: int|null
      * } $args
      */
     public function __construct(array $args)

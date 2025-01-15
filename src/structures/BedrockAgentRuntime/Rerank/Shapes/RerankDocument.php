@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\Rerank\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document $jsonDocument
- * @property RerankTextDocument $textDocument
+ * @property Document|null $jsonDocument
+ * @property RerankTextDocument|null $textDocument
  * @property 'TEXT'|'JSON' $type
  */
 class RerankDocument extends Shape
 {
     /**
      * @param array{
-     *     jsonDocument?: Document,
-     *     textDocument?: RerankTextDocument,
+     *     jsonDocument?: Document|null,
+     *     textDocument?: RerankTextDocument|null,
      *     type: 'TEXT'|'JSON'
      * } $args
      */

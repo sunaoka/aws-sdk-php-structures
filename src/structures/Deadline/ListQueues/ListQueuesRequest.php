@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $principalId
- * @property 'IDLE'|'SCHEDULING'|'SCHEDULING_BLOCKED' $status
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $principalId
+ * @property 'IDLE'|'SCHEDULING'|'SCHEDULING_BLOCKED'|null $status
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListQueuesRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     principalId?: string,
-     *     status?: 'IDLE'|'SCHEDULING'|'SCHEDULING_BLOCKED',
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     principalId?: string|null,
+     *     status?: 'IDLE'|'SCHEDULING'|'SCHEDULING_BLOCKED'|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

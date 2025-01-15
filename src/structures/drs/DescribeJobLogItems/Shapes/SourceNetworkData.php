@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\drs\DescribeJobLogItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $sourceNetworkID
- * @property string $sourceVpc
- * @property string $stackName
- * @property string $targetVpc
+ * @property string|null $sourceNetworkID
+ * @property string|null $sourceVpc
+ * @property string|null $stackName
+ * @property string|null $targetVpc
  */
 class SourceNetworkData extends Shape
 {
     /**
      * @param array{
-     *     sourceNetworkID?: string,
-     *     sourceVpc?: string,
-     *     stackName?: string,
-     *     targetVpc?: string
+     *     sourceNetworkID?: string|null,
+     *     sourceVpc?: string|null,
+     *     stackName?: string|null,
+     *     targetVpc?: string|null
      * } $args
      */
     public function __construct(array $args = [])

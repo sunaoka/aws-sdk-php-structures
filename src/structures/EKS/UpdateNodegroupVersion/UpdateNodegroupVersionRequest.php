@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterName
  * @property string $nodegroupName
- * @property string $version
- * @property string $releaseVersion
- * @property Shapes\LaunchTemplateSpecification $launchTemplate
- * @property bool $force
- * @property string $clientRequestToken
+ * @property string|null $version
+ * @property string|null $releaseVersion
+ * @property Shapes\LaunchTemplateSpecification|null $launchTemplate
+ * @property bool|null $force
+ * @property string|null $clientRequestToken
  */
 class UpdateNodegroupVersionRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateNodegroupVersionRequest extends Request
      * @param array{
      *     clusterName: string,
      *     nodegroupName: string,
-     *     version?: string,
-     *     releaseVersion?: string,
-     *     launchTemplate?: Shapes\LaunchTemplateSpecification,
-     *     force?: bool,
-     *     clientRequestToken?: string
+     *     version?: string|null,
+     *     releaseVersion?: string|null,
+     *     launchTemplate?: Shapes\LaunchTemplateSpecification|null,
+     *     force?: bool|null,
+     *     clientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

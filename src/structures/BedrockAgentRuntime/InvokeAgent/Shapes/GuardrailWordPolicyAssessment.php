@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<GuardrailCustomWord> $customWords
- * @property list<GuardrailManagedWord> $managedWordLists
+ * @property list<GuardrailCustomWord>|null $customWords
+ * @property list<GuardrailManagedWord>|null $managedWordLists
  */
 class GuardrailWordPolicyAssessment extends Shape
 {
     /**
      * @param array{
-     *     customWords?: list<GuardrailCustomWord>,
-     *     managedWordLists?: list<GuardrailManagedWord>
+     *     customWords?: list<GuardrailCustomWord>|null,
+     *     managedWordLists?: list<GuardrailManagedWord>|null
      * } $args
      */
     public function __construct(array $args = [])

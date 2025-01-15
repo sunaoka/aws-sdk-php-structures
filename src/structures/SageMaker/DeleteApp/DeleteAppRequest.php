@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainId
- * @property string $UserProfileName
- * @property string $SpaceName
+ * @property string|null $UserProfileName
+ * @property string|null $SpaceName
  * @property 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas' $AppType
  * @property string $AppName
  */
@@ -16,8 +16,8 @@ class DeleteAppRequest extends Request
     /**
      * @param array{
      *     DomainId: string,
-     *     UserProfileName?: string,
-     *     SpaceName?: string,
+     *     UserProfileName?: string|null,
+     *     SpaceName?: string|null,
      *     AppType: 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas',
      *     AppName: string
      * } $args

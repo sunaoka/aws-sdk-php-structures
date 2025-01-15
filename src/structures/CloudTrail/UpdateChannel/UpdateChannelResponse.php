@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\CloudTrail\UpdateChannel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
- * @property string $Name
- * @property string $Source
- * @property list<Shapes\Destination> $Destinations
+ * @property string|null $ChannelArn
+ * @property string|null $Name
+ * @property string|null $Source
+ * @property list<Shapes\Destination>|null $Destinations
  */
 class UpdateChannelResponse extends Response
 {

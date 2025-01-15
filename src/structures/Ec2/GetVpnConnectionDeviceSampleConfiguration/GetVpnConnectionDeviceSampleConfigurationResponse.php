@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\GetVpnConnectionDeviceSampleConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $VpnConnectionDeviceSampleConfiguration
+ * @property string|null $VpnConnectionDeviceSampleConfiguration
  */
 class GetVpnConnectionDeviceSampleConfigurationResponse extends Response
 {

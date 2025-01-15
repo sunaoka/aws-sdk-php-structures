@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $title
- * @property string $color
+ * @property string|null $color
  */
 class CategoryInput extends Shape
 {
@@ -15,7 +15,7 @@ class CategoryInput extends Shape
      * @param array{
      *     id: string,
      *     title: string,
-     *     color?: string
+     *     color?: string|null
      * } $args
      */
     public function __construct(array $args)

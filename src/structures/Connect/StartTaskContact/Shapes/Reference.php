@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Connect\StartTaskContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
+ * @property string|null $Value
  * @property 'URL'|'ATTACHMENT'|'CONTACT_ANALYSIS'|'NUMBER'|'STRING'|'DATE'|'EMAIL'|'EMAIL_MESSAGE' $Type
- * @property 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED' $Status
- * @property string $Arn
- * @property string $StatusReason
+ * @property 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|null $Status
+ * @property string|null $Arn
+ * @property string|null $StatusReason
  */
 class Reference extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
+     *     Value?: string|null,
      *     Type: 'URL'|'ATTACHMENT'|'CONTACT_ANALYSIS'|'NUMBER'|'STRING'|'DATE'|'EMAIL'|'EMAIL_MESSAGE',
-     *     Status?: 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED',
-     *     Arn?: string,
-     *     StatusReason?: string
+     *     Status?: 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|null,
+     *     Arn?: string|null,
+     *     StatusReason?: string|null
      * } $args
      */
     public function __construct(array $args)

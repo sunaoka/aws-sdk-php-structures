@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\ListNamespaces;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\NamespaceSummary> $Namespaces
- * @property string $NextToken
+ * @property list<Shapes\NamespaceSummary>|null $Namespaces
+ * @property string|null $NextToken
  */
 class ListNamespacesResponse extends Response
 {

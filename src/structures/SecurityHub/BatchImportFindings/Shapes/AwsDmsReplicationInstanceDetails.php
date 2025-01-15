@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AllocatedStorage
- * @property bool $AutoMinorVersionUpgrade
- * @property string $AvailabilityZone
- * @property string $EngineVersion
- * @property string $KmsKeyId
- * @property bool $MultiAZ
- * @property string $PreferredMaintenanceWindow
- * @property bool $PubliclyAccessible
- * @property string $ReplicationInstanceClass
- * @property string $ReplicationInstanceIdentifier
- * @property AwsDmsReplicationInstanceReplicationSubnetGroupDetails $ReplicationSubnetGroup
- * @property list<AwsDmsReplicationInstanceVpcSecurityGroupsDetails> $VpcSecurityGroups
+ * @property int|null $AllocatedStorage
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $AvailabilityZone
+ * @property string|null $EngineVersion
+ * @property string|null $KmsKeyId
+ * @property bool|null $MultiAZ
+ * @property string|null $PreferredMaintenanceWindow
+ * @property bool|null $PubliclyAccessible
+ * @property string|null $ReplicationInstanceClass
+ * @property string|null $ReplicationInstanceIdentifier
+ * @property AwsDmsReplicationInstanceReplicationSubnetGroupDetails|null $ReplicationSubnetGroup
+ * @property list<AwsDmsReplicationInstanceVpcSecurityGroupsDetails>|null $VpcSecurityGroups
  */
 class AwsDmsReplicationInstanceDetails extends Shape
 {
     /**
      * @param array{
-     *     AllocatedStorage?: int,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     AvailabilityZone?: string,
-     *     EngineVersion?: string,
-     *     KmsKeyId?: string,
-     *     MultiAZ?: bool,
-     *     PreferredMaintenanceWindow?: string,
-     *     PubliclyAccessible?: bool,
-     *     ReplicationInstanceClass?: string,
-     *     ReplicationInstanceIdentifier?: string,
-     *     ReplicationSubnetGroup?: AwsDmsReplicationInstanceReplicationSubnetGroupDetails,
-     *     VpcSecurityGroups?: list<AwsDmsReplicationInstanceVpcSecurityGroupsDetails>
+     *     AllocatedStorage?: int|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     AvailabilityZone?: string|null,
+     *     EngineVersion?: string|null,
+     *     KmsKeyId?: string|null,
+     *     MultiAZ?: bool|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     ReplicationInstanceClass?: string|null,
+     *     ReplicationInstanceIdentifier?: string|null,
+     *     ReplicationSubnetGroup?: AwsDmsReplicationInstanceReplicationSubnetGroupDetails|null,
+     *     VpcSecurityGroups?: list<AwsDmsReplicationInstanceVpcSecurityGroupsDetails>|null
      * } $args
      */
     public function __construct(array $args = [])

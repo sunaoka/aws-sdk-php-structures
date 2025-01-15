@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Macie2\CreateClassificationJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $allowListIds
+ * @property list<string>|null $allowListIds
  * @property string $clientToken
- * @property list<string> $customDataIdentifierIds
- * @property string $description
- * @property bool $initialRun
+ * @property list<string>|null $customDataIdentifierIds
+ * @property string|null $description
+ * @property bool|null $initialRun
  * @property 'ONE_TIME'|'SCHEDULED' $jobType
- * @property list<string> $managedDataIdentifierIds
- * @property 'ALL'|'EXCLUDE'|'INCLUDE'|'NONE'|'RECOMMENDED' $managedDataIdentifierSelector
+ * @property list<string>|null $managedDataIdentifierIds
+ * @property 'ALL'|'EXCLUDE'|'INCLUDE'|'NONE'|'RECOMMENDED'|null $managedDataIdentifierSelector
  * @property string $name
  * @property Shapes\S3JobDefinition $s3JobDefinition
- * @property int $samplingPercentage
- * @property Shapes\JobScheduleFrequency $scheduleFrequency
- * @property array<string, string> $tags
+ * @property int|null $samplingPercentage
+ * @property Shapes\JobScheduleFrequency|null $scheduleFrequency
+ * @property array<string, string>|null $tags
  */
 class CreateClassificationJobRequest extends Request
 {
     /**
      * @param array{
-     *     allowListIds?: list<string>,
+     *     allowListIds?: list<string>|null,
      *     clientToken: string,
-     *     customDataIdentifierIds?: list<string>,
-     *     description?: string,
-     *     initialRun?: bool,
+     *     customDataIdentifierIds?: list<string>|null,
+     *     description?: string|null,
+     *     initialRun?: bool|null,
      *     jobType: 'ONE_TIME'|'SCHEDULED',
-     *     managedDataIdentifierIds?: list<string>,
-     *     managedDataIdentifierSelector?: 'ALL'|'EXCLUDE'|'INCLUDE'|'NONE'|'RECOMMENDED',
+     *     managedDataIdentifierIds?: list<string>|null,
+     *     managedDataIdentifierSelector?: 'ALL'|'EXCLUDE'|'INCLUDE'|'NONE'|'RECOMMENDED'|null,
      *     name: string,
      *     s3JobDefinition: Shapes\S3JobDefinition,
-     *     samplingPercentage?: int,
-     *     scheduleFrequency?: Shapes\JobScheduleFrequency,
-     *     tags?: array<string, string>
+     *     samplingPercentage?: int|null,
+     *     scheduleFrequency?: Shapes\JobScheduleFrequency|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

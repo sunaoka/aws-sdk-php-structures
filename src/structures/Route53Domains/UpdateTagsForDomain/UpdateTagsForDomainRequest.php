@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property list<Shapes\Tag> $TagsToUpdate
+ * @property list<Shapes\Tag>|null $TagsToUpdate
  */
 class UpdateTagsForDomainRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     TagsToUpdate?: list<Shapes\Tag>
+     *     TagsToUpdate?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

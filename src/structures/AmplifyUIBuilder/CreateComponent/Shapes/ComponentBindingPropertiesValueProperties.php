@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\CreateComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $model
- * @property string $field
- * @property list<Predicate> $predicates
- * @property string $userAttribute
- * @property string $bucket
- * @property string $key
- * @property string $defaultValue
- * @property string $slotName
+ * @property string|null $model
+ * @property string|null $field
+ * @property list<Predicate>|null $predicates
+ * @property string|null $userAttribute
+ * @property string|null $bucket
+ * @property string|null $key
+ * @property string|null $defaultValue
+ * @property string|null $slotName
  */
 class ComponentBindingPropertiesValueProperties extends Shape
 {
     /**
      * @param array{
-     *     model?: string,
-     *     field?: string,
-     *     predicates?: list<Predicate>,
-     *     userAttribute?: string,
-     *     bucket?: string,
-     *     key?: string,
-     *     defaultValue?: string,
-     *     slotName?: string
+     *     model?: string|null,
+     *     field?: string|null,
+     *     predicates?: list<Predicate>|null,
+     *     userAttribute?: string|null,
+     *     bucket?: string|null,
+     *     key?: string|null,
+     *     defaultValue?: string|null,
+     *     slotName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

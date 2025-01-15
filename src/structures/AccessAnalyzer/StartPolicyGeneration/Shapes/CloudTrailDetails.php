@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Trail> $trails
  * @property string $accessRole
  * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  */
 class CloudTrailDetails extends Shape
 {
@@ -17,7 +17,7 @@ class CloudTrailDetails extends Shape
      *     trails: list<Trail>,
      *     accessRole: string,
      *     startTime: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult
+     *     endTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

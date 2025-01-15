@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StopContinuousExpor
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $stopTime
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $stopTime
  */
 class StopContinuousExportResponse extends Response
 {

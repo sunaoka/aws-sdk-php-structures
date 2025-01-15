@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property string $EntryPoint
- * @property int<15, 600> $SessionLifetimeInMinutes
- * @property string $UserArn
+ * @property string|null $EntryPoint
+ * @property int<15, 600>|null $SessionLifetimeInMinutes
+ * @property string|null $UserArn
  */
 class GetSessionEmbedUrlRequest extends Request
 {
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     EntryPoint?: string,
-     *     SessionLifetimeInMinutes?: int<15, 600>,
-     *     UserArn?: string
+     *     EntryPoint?: string|null,
+     *     SessionLifetimeInMinutes?: int<15, 600>|null,
+     *     UserArn?: string|null
      * } $args
      */
     public function __construct(array $args)

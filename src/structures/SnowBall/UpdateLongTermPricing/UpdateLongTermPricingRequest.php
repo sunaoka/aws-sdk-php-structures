@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LongTermPricingId
- * @property string $ReplacementJob
- * @property bool $IsLongTermPricingAutoRenew
+ * @property string|null $ReplacementJob
+ * @property bool|null $IsLongTermPricingAutoRenew
  */
 class UpdateLongTermPricingRequest extends Request
 {
     /**
      * @param array{
      *     LongTermPricingId: string,
-     *     ReplacementJob?: string,
-     *     IsLongTermPricingAutoRenew?: bool
+     *     ReplacementJob?: string|null,
+     *     IsLongTermPricingAutoRenew?: bool|null
      * } $args
      */
     public function __construct(array $args)

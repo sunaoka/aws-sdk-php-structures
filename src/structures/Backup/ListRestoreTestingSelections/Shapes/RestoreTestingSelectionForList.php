@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ProtectedResourceType
  * @property string $RestoreTestingPlanName
  * @property string $RestoreTestingSelectionName
- * @property int $ValidationWindowHours
+ * @property int|null $ValidationWindowHours
  */
 class RestoreTestingSelectionForList extends Shape
 {
@@ -21,7 +21,7 @@ class RestoreTestingSelectionForList extends Shape
      *     ProtectedResourceType: string,
      *     RestoreTestingPlanName: string,
      *     RestoreTestingSelectionName: string,
-     *     ValidationWindowHours?: int
+     *     ValidationWindowHours?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentManagedActi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ManagedActionHistoryItem> $ManagedActionHistoryItems
- * @property string $NextToken
+ * @property list<Shapes\ManagedActionHistoryItem>|null $ManagedActionHistoryItems
+ * @property string|null $NextToken
  */
 class DescribeEnvironmentManagedActionHistoryResponse extends Response
 {

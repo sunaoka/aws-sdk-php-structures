@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Sns\CreateTopic;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TopicArn
+ * @property string|null $TopicArn
  */
 class CreateTopicResponse extends Response
 {

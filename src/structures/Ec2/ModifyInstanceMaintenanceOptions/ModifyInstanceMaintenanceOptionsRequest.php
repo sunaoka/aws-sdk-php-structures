@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property 'disabled'|'default' $AutoRecovery
- * @property bool $DryRun
+ * @property 'disabled'|'default'|null $AutoRecovery
+ * @property bool|null $DryRun
  */
 class ModifyInstanceMaintenanceOptionsRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     AutoRecovery?: 'disabled'|'default',
-     *     DryRun?: bool
+     *     AutoRecovery?: 'disabled'|'default'|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

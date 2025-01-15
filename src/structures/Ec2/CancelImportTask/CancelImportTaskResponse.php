@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\CancelImportTask;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ImportTaskId
- * @property string $PreviousState
- * @property string $State
+ * @property string|null $ImportTaskId
+ * @property string|null $PreviousState
+ * @property string|null $State
  */
 class CancelImportTaskResponse extends Response
 {

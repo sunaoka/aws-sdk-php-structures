@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Panorama\ListDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ImageVersion
- * @property 'OTA'|'REBOOT' $JobType
- * @property 'PENDING'|'IN_PROGRESS'|'VERIFYING'|'REBOOTING'|'DOWNLOADING'|'COMPLETED'|'FAILED' $Status
+ * @property string|null $ImageVersion
+ * @property 'OTA'|'REBOOT'|null $JobType
+ * @property 'PENDING'|'IN_PROGRESS'|'VERIFYING'|'REBOOTING'|'DOWNLOADING'|'COMPLETED'|'FAILED'|null $Status
  */
 class LatestDeviceJob extends Shape
 {
     /**
      * @param array{
-     *     ImageVersion?: string,
-     *     JobType?: 'OTA'|'REBOOT',
-     *     Status?: 'PENDING'|'IN_PROGRESS'|'VERIFYING'|'REBOOTING'|'DOWNLOADING'|'COMPLETED'|'FAILED'
+     *     ImageVersion?: string|null,
+     *     JobType?: 'OTA'|'REBOOT'|null,
+     *     Status?: 'PENDING'|'IN_PROGRESS'|'VERIFYING'|'REBOOTING'|'DOWNLOADING'|'COMPLETED'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

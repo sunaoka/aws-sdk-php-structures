@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\Retrieve\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VectorSearchBedrockRerankingConfiguration $bedrockRerankingConfiguration
+ * @property VectorSearchBedrockRerankingConfiguration|null $bedrockRerankingConfiguration
  * @property 'BEDROCK_RERANKING_MODEL' $type
  */
 class VectorSearchRerankingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     bedrockRerankingConfiguration?: VectorSearchBedrockRerankingConfiguration,
+     *     bedrockRerankingConfiguration?: VectorSearchBedrockRerankingConfiguration|null,
      *     type: 'BEDROCK_RERANKING_MODEL'
      * } $args
      */

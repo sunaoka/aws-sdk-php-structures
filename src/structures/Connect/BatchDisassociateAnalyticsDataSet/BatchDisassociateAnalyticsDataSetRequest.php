@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property list<string> $DataSetIds
- * @property string $TargetAccountId
+ * @property string|null $TargetAccountId
  */
 class BatchDisassociateAnalyticsDataSetRequest extends Request
 {
@@ -15,7 +15,7 @@ class BatchDisassociateAnalyticsDataSetRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     DataSetIds: list<string>,
-     *     TargetAccountId?: string
+     *     TargetAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

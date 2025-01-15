@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KinesisAnalytics\DescribeApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NOW'|'TRIM_HORIZON'|'LAST_STOPPED_POINT' $InputStartingPosition
+ * @property 'NOW'|'TRIM_HORIZON'|'LAST_STOPPED_POINT'|null $InputStartingPosition
  */
 class InputStartingPositionConfiguration extends Shape
 {
     /**
-     * @param array{InputStartingPosition?: 'NOW'|'TRIM_HORIZON'|'LAST_STOPPED_POINT'} $args
+     * @param array{InputStartingPosition?: 'NOW'|'TRIM_HORIZON'|'LAST_STOPPED_POINT'|null} $args
      */
     public function __construct(array $args = [])
     {

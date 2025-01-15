@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accountId
  * @property string $vaultName
- * @property Shapes\VaultLockPolicy $policy
+ * @property Shapes\VaultLockPolicy|null $policy
  */
 class InitiateVaultLockRequest extends Request
 {
@@ -15,7 +15,7 @@ class InitiateVaultLockRequest extends Request
      * @param array{
      *     accountId: string,
      *     vaultName: string,
-     *     policy?: Shapes\VaultLockPolicy
+     *     policy?: Shapes\VaultLockPolicy|null
      * } $args
      */
     public function __construct(array $args)

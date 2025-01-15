@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SaslScram512Auth
- * @property string $ClientCertificateTlsAuth
+ * @property string|null $SaslScram512Auth
+ * @property string|null $ClientCertificateTlsAuth
  */
 class MSKAccessCredentials extends Shape
 {
     /**
      * @param array{
-     *     SaslScram512Auth?: string,
-     *     ClientCertificateTlsAuth?: string
+     *     SaslScram512Auth?: string|null,
+     *     ClientCertificateTlsAuth?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\UpdateVTLDeviceType;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $VTLDeviceARN
+ * @property string|null $VTLDeviceARN
  */
 class UpdateVTLDeviceTypeResponse extends Response
 {

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Video $Video
- * @property string $ClientRequestToken
- * @property Shapes\NotificationChannel $NotificationChannel
- * @property string $JobTag
- * @property Shapes\StartTextDetectionFilters $Filters
+ * @property string|null $ClientRequestToken
+ * @property Shapes\NotificationChannel|null $NotificationChannel
+ * @property string|null $JobTag
+ * @property Shapes\StartTextDetectionFilters|null $Filters
  */
 class StartTextDetectionRequest extends Request
 {
     /**
      * @param array{
      *     Video: Shapes\Video,
-     *     ClientRequestToken?: string,
-     *     NotificationChannel?: Shapes\NotificationChannel,
-     *     JobTag?: string,
-     *     Filters?: Shapes\StartTextDetectionFilters
+     *     ClientRequestToken?: string|null,
+     *     NotificationChannel?: Shapes\NotificationChannel|null,
+     *     JobTag?: string|null,
+     *     Filters?: Shapes\StartTextDetectionFilters|null
      * } $args
      */
     public function __construct(array $args)

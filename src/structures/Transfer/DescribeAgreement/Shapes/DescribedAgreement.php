@@ -6,34 +6,34 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property string $AgreementId
- * @property string $Description
- * @property 'ACTIVE'|'INACTIVE' $Status
- * @property string $ServerId
- * @property string $LocalProfileId
- * @property string $PartnerProfileId
- * @property string $BaseDirectory
- * @property string $AccessRole
- * @property list<Tag> $Tags
- * @property 'ENABLED'|'DISABLED' $PreserveFilename
- * @property 'ENABLED'|'DISABLED' $EnforceMessageSigning
+ * @property string|null $AgreementId
+ * @property string|null $Description
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property string|null $ServerId
+ * @property string|null $LocalProfileId
+ * @property string|null $PartnerProfileId
+ * @property string|null $BaseDirectory
+ * @property string|null $AccessRole
+ * @property list<Tag>|null $Tags
+ * @property 'ENABLED'|'DISABLED'|null $PreserveFilename
+ * @property 'ENABLED'|'DISABLED'|null $EnforceMessageSigning
  */
 class DescribedAgreement extends Shape
 {
     /**
      * @param array{
      *     Arn: string,
-     *     AgreementId?: string,
-     *     Description?: string,
-     *     Status?: 'ACTIVE'|'INACTIVE',
-     *     ServerId?: string,
-     *     LocalProfileId?: string,
-     *     PartnerProfileId?: string,
-     *     BaseDirectory?: string,
-     *     AccessRole?: string,
-     *     Tags?: list<Tag>,
-     *     PreserveFilename?: 'ENABLED'|'DISABLED',
-     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'
+     *     AgreementId?: string|null,
+     *     Description?: string|null,
+     *     Status?: 'ACTIVE'|'INACTIVE'|null,
+     *     ServerId?: string|null,
+     *     LocalProfileId?: string|null,
+     *     PartnerProfileId?: string|null,
+     *     BaseDirectory?: string|null,
+     *     AccessRole?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     PreserveFilename?: 'ENABLED'|'DISABLED'|null,
+     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

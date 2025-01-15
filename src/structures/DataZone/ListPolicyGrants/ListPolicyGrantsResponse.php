@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\PolicyGrantMember> $grantList
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListPolicyGrantsResponse extends Response
 {

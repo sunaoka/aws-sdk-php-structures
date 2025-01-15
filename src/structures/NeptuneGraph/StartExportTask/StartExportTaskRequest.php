@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'PARQUET'|'CSV' $format
  * @property string $destination
  * @property string $kmsKeyIdentifier
- * @property 'COLUMNAR' $parquetType
- * @property Shapes\ExportFilter $exportFilter
- * @property array<string, string> $tags
+ * @property 'COLUMNAR'|null $parquetType
+ * @property Shapes\ExportFilter|null $exportFilter
+ * @property array<string, string>|null $tags
  */
 class StartExportTaskRequest extends Request
 {
@@ -23,9 +23,9 @@ class StartExportTaskRequest extends Request
      *     format: 'PARQUET'|'CSV',
      *     destination: string,
      *     kmsKeyIdentifier: string,
-     *     parquetType?: 'COLUMNAR',
-     *     exportFilter?: Shapes\ExportFilter,
-     *     tags?: array<string, string>
+     *     parquetType?: 'COLUMNAR'|null,
+     *     exportFilter?: Shapes\ExportFilter|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

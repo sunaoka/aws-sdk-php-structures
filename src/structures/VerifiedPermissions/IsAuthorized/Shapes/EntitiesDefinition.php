@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\VerifiedPermissions\IsAuthorized\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<EntityItem> $entityList
+ * @property list<EntityItem>|null $entityList
  */
 class EntitiesDefinition extends Shape
 {
     /**
-     * @param array{entityList?: list<EntityItem>} $args
+     * @param array{entityList?: list<EntityItem>|null} $args
      */
     public function __construct(array $args = [])
     {

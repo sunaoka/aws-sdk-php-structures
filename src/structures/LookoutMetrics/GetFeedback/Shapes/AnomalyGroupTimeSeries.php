@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AnomalyGroupId
- * @property string $TimeSeriesId
+ * @property string|null $TimeSeriesId
  */
 class AnomalyGroupTimeSeries extends Shape
 {
     /**
      * @param array{
      *     AnomalyGroupId: string,
-     *     TimeSeriesId?: string
+     *     TimeSeriesId?: string|null
      * } $args
      */
     public function __construct(array $args)

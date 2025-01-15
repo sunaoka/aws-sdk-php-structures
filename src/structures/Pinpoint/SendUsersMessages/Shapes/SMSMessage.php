@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendUsersMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Body
- * @property string $Keyword
- * @property string $MediaUrl
- * @property 'TRANSACTIONAL'|'PROMOTIONAL' $MessageType
- * @property string $OriginationNumber
- * @property string $SenderId
- * @property array<string, list<string>> $Substitutions
- * @property string $EntityId
- * @property string $TemplateId
+ * @property string|null $Body
+ * @property string|null $Keyword
+ * @property string|null $MediaUrl
+ * @property 'TRANSACTIONAL'|'PROMOTIONAL'|null $MessageType
+ * @property string|null $OriginationNumber
+ * @property string|null $SenderId
+ * @property array<string, list<string>>|null $Substitutions
+ * @property string|null $EntityId
+ * @property string|null $TemplateId
  */
 class SMSMessage extends Shape
 {
     /**
      * @param array{
-     *     Body?: string,
-     *     Keyword?: string,
-     *     MediaUrl?: string,
-     *     MessageType?: 'TRANSACTIONAL'|'PROMOTIONAL',
-     *     OriginationNumber?: string,
-     *     SenderId?: string,
-     *     Substitutions?: array<string, list<string>>,
-     *     EntityId?: string,
-     *     TemplateId?: string
+     *     Body?: string|null,
+     *     Keyword?: string|null,
+     *     MediaUrl?: string|null,
+     *     MessageType?: 'TRANSACTIONAL'|'PROMOTIONAL'|null,
+     *     OriginationNumber?: string|null,
+     *     SenderId?: string|null,
+     *     Substitutions?: array<string, list<string>>|null,
+     *     EntityId?: string|null,
+     *     TemplateId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

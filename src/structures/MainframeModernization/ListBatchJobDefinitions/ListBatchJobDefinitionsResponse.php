@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\BatchJobDefinition> $batchJobDefinitions
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListBatchJobDefinitionsResponse extends Response
 {

@@ -10,13 +10,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ChannelName
  * @property string $OriginEndpointName
  * @property 'TS'|'CMAF' $ContainerType
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property list<ListHlsManifestConfiguration> $HlsManifests
- * @property list<ListLowLatencyHlsManifestConfiguration> $LowLatencyHlsManifests
- * @property list<ListDashManifestConfiguration> $DashManifests
- * @property ForceEndpointErrorConfiguration $ForceEndpointErrorConfiguration
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $ModifiedAt
+ * @property list<ListHlsManifestConfiguration>|null $HlsManifests
+ * @property list<ListLowLatencyHlsManifestConfiguration>|null $LowLatencyHlsManifests
+ * @property list<ListDashManifestConfiguration>|null $DashManifests
+ * @property ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
  */
 class OriginEndpointListConfiguration extends Shape
 {
@@ -27,13 +27,13 @@ class OriginEndpointListConfiguration extends Shape
      *     ChannelName: string,
      *     OriginEndpointName: string,
      *     ContainerType: 'TS'|'CMAF',
-     *     Description?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     ModifiedAt?: \Aws\Api\DateTimeResult,
-     *     HlsManifests?: list<ListHlsManifestConfiguration>,
-     *     LowLatencyHlsManifests?: list<ListLowLatencyHlsManifestConfiguration>,
-     *     DashManifests?: list<ListDashManifestConfiguration>,
-     *     ForceEndpointErrorConfiguration?: ForceEndpointErrorConfiguration
+     *     Description?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     ModifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     HlsManifests?: list<ListHlsManifestConfiguration>|null,
+     *     LowLatencyHlsManifests?: list<ListLowLatencyHlsManifestConfiguration>|null,
+     *     DashManifests?: list<ListDashManifestConfiguration>|null,
+     *     ForceEndpointErrorConfiguration?: ForceEndpointErrorConfiguration|null
      * } $args
      */
     public function __construct(array $args)

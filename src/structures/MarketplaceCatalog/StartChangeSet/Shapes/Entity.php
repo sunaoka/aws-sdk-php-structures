@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Type
- * @property string $Identifier
+ * @property string|null $Identifier
  */
 class Entity extends Shape
 {
     /**
      * @param array{
      *     Type: string,
-     *     Identifier?: string
+     *     Identifier?: string|null
      * } $args
      */
     public function __construct(array $args)

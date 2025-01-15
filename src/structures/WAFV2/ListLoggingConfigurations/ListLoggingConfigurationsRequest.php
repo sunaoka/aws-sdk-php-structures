@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
- * @property string $NextMarker
- * @property int<1, 100> $Limit
- * @property 'CUSTOMER'|'SECURITY_LAKE' $LogScope
+ * @property string|null $NextMarker
+ * @property int<1, 100>|null $Limit
+ * @property 'CUSTOMER'|'SECURITY_LAKE'|null $LogScope
  */
 class ListLoggingConfigurationsRequest extends Request
 {
     /**
      * @param array{
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
-     *     NextMarker?: string,
-     *     Limit?: int<1, 100>,
-     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'
+     *     NextMarker?: string|null,
+     *     Limit?: int<1, 100>|null,
+     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'|null
      * } $args
      */
     public function __construct(array $args)

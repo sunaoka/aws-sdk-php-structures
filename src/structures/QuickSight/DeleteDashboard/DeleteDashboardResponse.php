@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\QuickSight\DeleteDashboard;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Status
- * @property string $Arn
- * @property string $DashboardId
- * @property string $RequestId
+ * @property int|null $Status
+ * @property string|null $Arn
+ * @property string|null $DashboardId
+ * @property string|null $RequestId
  */
 class DeleteDashboardResponse extends Response
 {

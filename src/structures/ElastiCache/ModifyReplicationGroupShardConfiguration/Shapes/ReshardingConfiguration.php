@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\ModifyReplicationGroupShardConfigur
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NodeGroupId
- * @property list<string> $PreferredAvailabilityZones
+ * @property string|null $NodeGroupId
+ * @property list<string>|null $PreferredAvailabilityZones
  */
 class ReshardingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     NodeGroupId?: string,
-     *     PreferredAvailabilityZones?: list<string>
+     *     NodeGroupId?: string|null,
+     *     PreferredAvailabilityZones?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

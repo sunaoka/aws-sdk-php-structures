@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Credential
- * @property string $CredentialProvider
+ * @property string|null $Credential
+ * @property string|null $CredentialProvider
  */
 class AwsCodeBuildProjectEnvironmentRegistryCredential extends Shape
 {
     /**
      * @param array{
-     *     Credential?: string,
-     *     CredentialProvider?: string
+     *     Credential?: string|null,
+     *     CredentialProvider?: string|null
      * } $args
      */
     public function __construct(array $args = [])

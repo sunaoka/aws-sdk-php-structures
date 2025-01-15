@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $bucketName
- * @property string $keyPrefix
+ * @property string|null $keyPrefix
  * @property string $kmsKeyArn
  */
 class S3Destination extends Shape
@@ -14,7 +14,7 @@ class S3Destination extends Shape
     /**
      * @param array{
      *     bucketName: string,
-     *     keyPrefix?: string,
+     *     keyPrefix?: string|null,
      *     kmsKeyArn: string
      * } $args
      */

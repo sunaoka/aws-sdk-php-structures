@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeFpgaImageAttribute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $FpgaImageId
  * @property 'description'|'name'|'loadPermission'|'productCodes' $Attribute
  */
@@ -13,7 +13,7 @@ class DescribeFpgaImageAttributeRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     FpgaImageId: string,
      *     Attribute: 'description'|'name'|'loadPermission'|'productCodes'
      * } $args

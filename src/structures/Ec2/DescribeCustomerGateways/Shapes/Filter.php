@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeCustomerGateways\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<string> $Values
+ * @property string|null $Name
+ * @property list<string>|null $Values
  */
 class Filter extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Values?: list<string>
+     *     Name?: string|null,
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

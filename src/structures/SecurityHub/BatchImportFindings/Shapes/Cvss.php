@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Version
- * @property double $BaseScore
- * @property string $BaseVector
- * @property string $Source
- * @property list<Adjustment> $Adjustments
+ * @property string|null $Version
+ * @property double|null $BaseScore
+ * @property string|null $BaseVector
+ * @property string|null $Source
+ * @property list<Adjustment>|null $Adjustments
  */
 class Cvss extends Shape
 {
     /**
      * @param array{
-     *     Version?: string,
-     *     BaseScore?: double,
-     *     BaseVector?: string,
-     *     Source?: string,
-     *     Adjustments?: list<Adjustment>
+     *     Version?: string|null,
+     *     BaseScore?: double|null,
+     *     BaseVector?: string|null,
+     *     Source?: string|null,
+     *     Adjustments?: list<Adjustment>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendationPro
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $recommendedCpuUnits
- * @property int $recommendedMemorySize
- * @property list<ECSServiceProjectedMetric> $projectedMetrics
+ * @property int|null $recommendedCpuUnits
+ * @property int|null $recommendedMemorySize
+ * @property list<ECSServiceProjectedMetric>|null $projectedMetrics
  */
 class ECSServiceRecommendedOptionProjectedMetric extends Shape
 {
     /**
      * @param array{
-     *     recommendedCpuUnits?: int,
-     *     recommendedMemorySize?: int,
-     *     projectedMetrics?: list<ECSServiceProjectedMetric>
+     *     recommendedCpuUnits?: int|null,
+     *     recommendedMemorySize?: int|null,
+     *     projectedMetrics?: list<ECSServiceProjectedMetric>|null
      * } $args
      */
     public function __construct(array $args = [])

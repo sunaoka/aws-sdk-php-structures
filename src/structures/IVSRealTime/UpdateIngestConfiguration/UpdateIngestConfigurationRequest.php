@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $stageArn
+ * @property string|null $stageArn
  */
 class UpdateIngestConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     stageArn?: string
+     *     stageArn?: string|null
      * } $args
      */
     public function __construct(array $args)

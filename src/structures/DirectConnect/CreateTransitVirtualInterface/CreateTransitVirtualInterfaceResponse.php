@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DirectConnect\CreateTransitVirtualInterface;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\VirtualInterface $virtualInterface
+ * @property Shapes\VirtualInterface|null $virtualInterface
  */
 class CreateTransitVirtualInterfaceResponse extends Response
 {

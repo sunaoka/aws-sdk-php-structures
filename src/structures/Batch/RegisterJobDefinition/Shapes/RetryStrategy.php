@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Batch\RegisterJobDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $attempts
- * @property list<EvaluateOnExit> $evaluateOnExit
+ * @property int|null $attempts
+ * @property list<EvaluateOnExit>|null $evaluateOnExit
  */
 class RetryStrategy extends Shape
 {
     /**
      * @param array{
-     *     attempts?: int,
-     *     evaluateOnExit?: list<EvaluateOnExit>
+     *     attempts?: int|null,
+     *     evaluateOnExit?: list<EvaluateOnExit>|null
      * } $args
      */
     public function __construct(array $args = [])

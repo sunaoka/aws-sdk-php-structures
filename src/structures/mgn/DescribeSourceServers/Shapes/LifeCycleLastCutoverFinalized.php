@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeSourceServers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $apiCallDateTime
+ * @property string|null $apiCallDateTime
  */
 class LifeCycleLastCutoverFinalized extends Shape
 {
     /**
-     * @param array{apiCallDateTime?: string} $args
+     * @param array{apiCallDateTime?: string|null} $args
      */
     public function __construct(array $args = [])
     {

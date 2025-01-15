@@ -5,40 +5,40 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RouteContinueStepDetails $ContinueStepDetails
- * @property RouteRoad $CurrentRoad
- * @property int<0, 4294967295> $Distance
+ * @property RouteContinueStepDetails|null $ContinueStepDetails
+ * @property RouteRoad|null $CurrentRoad
+ * @property int<0, 4294967295>|null $Distance
  * @property int<0, 4294967295> $Duration
- * @property list<LocalizedString> $ExitNumber
- * @property int<0, max> $GeometryOffset
- * @property string $Instruction
- * @property RouteKeepStepDetails $KeepStepDetails
- * @property RouteRoad $NextRoad
- * @property RouteRoundaboutEnterStepDetails $RoundaboutEnterStepDetails
- * @property RouteRoundaboutExitStepDetails $RoundaboutExitStepDetails
- * @property RouteRoundaboutPassStepDetails $RoundaboutPassStepDetails
- * @property RouteSignpost $Signpost
- * @property RouteTurnStepDetails $TurnStepDetails
+ * @property list<LocalizedString>|null $ExitNumber
+ * @property int<0, max>|null $GeometryOffset
+ * @property string|null $Instruction
+ * @property RouteKeepStepDetails|null $KeepStepDetails
+ * @property RouteRoad|null $NextRoad
+ * @property RouteRoundaboutEnterStepDetails|null $RoundaboutEnterStepDetails
+ * @property RouteRoundaboutExitStepDetails|null $RoundaboutExitStepDetails
+ * @property RouteRoundaboutPassStepDetails|null $RoundaboutPassStepDetails
+ * @property RouteSignpost|null $Signpost
+ * @property RouteTurnStepDetails|null $TurnStepDetails
  * @property 'Arrive'|'Continue'|'Depart'|'Keep'|'RoundaboutEnter'|'RoundaboutExit'|'RoundaboutPass'|'Turn'|'Exit'|'Ramp'|'UTurn' $Type
  */
 class RoutePedestrianTravelStep extends Shape
 {
     /**
      * @param array{
-     *     ContinueStepDetails?: RouteContinueStepDetails,
-     *     CurrentRoad?: RouteRoad,
-     *     Distance?: int<0, 4294967295>,
+     *     ContinueStepDetails?: RouteContinueStepDetails|null,
+     *     CurrentRoad?: RouteRoad|null,
+     *     Distance?: int<0, 4294967295>|null,
      *     Duration: int<0, 4294967295>,
-     *     ExitNumber?: list<LocalizedString>,
-     *     GeometryOffset?: int<0, max>,
-     *     Instruction?: string,
-     *     KeepStepDetails?: RouteKeepStepDetails,
-     *     NextRoad?: RouteRoad,
-     *     RoundaboutEnterStepDetails?: RouteRoundaboutEnterStepDetails,
-     *     RoundaboutExitStepDetails?: RouteRoundaboutExitStepDetails,
-     *     RoundaboutPassStepDetails?: RouteRoundaboutPassStepDetails,
-     *     Signpost?: RouteSignpost,
-     *     TurnStepDetails?: RouteTurnStepDetails,
+     *     ExitNumber?: list<LocalizedString>|null,
+     *     GeometryOffset?: int<0, max>|null,
+     *     Instruction?: string|null,
+     *     KeepStepDetails?: RouteKeepStepDetails|null,
+     *     NextRoad?: RouteRoad|null,
+     *     RoundaboutEnterStepDetails?: RouteRoundaboutEnterStepDetails|null,
+     *     RoundaboutExitStepDetails?: RouteRoundaboutExitStepDetails|null,
+     *     RoundaboutPassStepDetails?: RouteRoundaboutPassStepDetails|null,
+     *     Signpost?: RouteSignpost|null,
+     *     TurnStepDetails?: RouteTurnStepDetails|null,
      *     Type: 'Arrive'|'Continue'|'Depart'|'Keep'|'RoundaboutEnter'|'RoundaboutExit'|'RoundaboutPass'|'Turn'|'Exit'|'Ramp'|'UTurn'
      * } $args
      */

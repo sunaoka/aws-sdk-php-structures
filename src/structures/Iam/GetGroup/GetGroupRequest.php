@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GroupName
- * @property string $Marker
- * @property int<1, 1000> $MaxItems
+ * @property string|null $Marker
+ * @property int<1, 1000>|null $MaxItems
  */
 class GetGroupRequest extends Request
 {
     /**
      * @param array{
      *     GroupName: string,
-     *     Marker?: string,
-     *     MaxItems?: int<1, 1000>
+     *     Marker?: string|null,
+     *     MaxItems?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

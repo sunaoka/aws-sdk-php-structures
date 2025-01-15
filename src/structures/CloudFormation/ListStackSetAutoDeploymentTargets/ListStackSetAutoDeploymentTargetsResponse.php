@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListStackSetAutoDeploymentTarget
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\StackSetAutoDeploymentTargetSummary> $Summaries
- * @property string $NextToken
+ * @property list<Shapes\StackSetAutoDeploymentTargetSummary>|null $Summaries
+ * @property string|null $NextToken
  */
 class ListStackSetAutoDeploymentTargetsResponse extends Response
 {

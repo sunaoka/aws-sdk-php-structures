@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\ListResolverRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $CreatorRequestId
- * @property string $Arn
- * @property string $DomainName
- * @property 'COMPLETE'|'DELETING'|'UPDATING'|'FAILED' $Status
- * @property string $StatusMessage
- * @property 'FORWARD'|'SYSTEM'|'RECURSIVE' $RuleType
- * @property string $Name
- * @property list<TargetAddress> $TargetIps
- * @property string $ResolverEndpointId
- * @property string $OwnerId
- * @property 'NOT_SHARED'|'SHARED_WITH_ME'|'SHARED_BY_ME' $ShareStatus
- * @property string $CreationTime
- * @property string $ModificationTime
+ * @property string|null $Id
+ * @property string|null $CreatorRequestId
+ * @property string|null $Arn
+ * @property string|null $DomainName
+ * @property 'COMPLETE'|'DELETING'|'UPDATING'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
+ * @property 'FORWARD'|'SYSTEM'|'RECURSIVE'|null $RuleType
+ * @property string|null $Name
+ * @property list<TargetAddress>|null $TargetIps
+ * @property string|null $ResolverEndpointId
+ * @property string|null $OwnerId
+ * @property 'NOT_SHARED'|'SHARED_WITH_ME'|'SHARED_BY_ME'|null $ShareStatus
+ * @property string|null $CreationTime
+ * @property string|null $ModificationTime
  */
 class ResolverRule extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     CreatorRequestId?: string,
-     *     Arn?: string,
-     *     DomainName?: string,
-     *     Status?: 'COMPLETE'|'DELETING'|'UPDATING'|'FAILED',
-     *     StatusMessage?: string,
-     *     RuleType?: 'FORWARD'|'SYSTEM'|'RECURSIVE',
-     *     Name?: string,
-     *     TargetIps?: list<TargetAddress>,
-     *     ResolverEndpointId?: string,
-     *     OwnerId?: string,
-     *     ShareStatus?: 'NOT_SHARED'|'SHARED_WITH_ME'|'SHARED_BY_ME',
-     *     CreationTime?: string,
-     *     ModificationTime?: string
+     *     Id?: string|null,
+     *     CreatorRequestId?: string|null,
+     *     Arn?: string|null,
+     *     DomainName?: string|null,
+     *     Status?: 'COMPLETE'|'DELETING'|'UPDATING'|'FAILED'|null,
+     *     StatusMessage?: string|null,
+     *     RuleType?: 'FORWARD'|'SYSTEM'|'RECURSIVE'|null,
+     *     Name?: string|null,
+     *     TargetIps?: list<TargetAddress>|null,
+     *     ResolverEndpointId?: string|null,
+     *     OwnerId?: string|null,
+     *     ShareStatus?: 'NOT_SHARED'|'SHARED_WITH_ME'|'SHARED_BY_ME'|null,
+     *     CreationTime?: string|null,
+     *     ModificationTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

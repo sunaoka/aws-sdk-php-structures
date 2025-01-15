@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdTime
- * @property string $defaultVariation
- * @property string $description
- * @property array<string, string> $entityOverrides
- * @property list<EvaluationRule> $evaluationRules
+ * @property string|null $defaultVariation
+ * @property string|null $description
+ * @property array<string, string>|null $entityOverrides
+ * @property list<EvaluationRule>|null $evaluationRules
  * @property 'ALL_RULES'|'DEFAULT_VARIATION' $evaluationStrategy
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
  * @property string $name
- * @property string $project
+ * @property string|null $project
  * @property 'AVAILABLE'|'UPDATING' $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property 'STRING'|'LONG'|'DOUBLE'|'BOOLEAN' $valueType
  * @property list<Variation> $variations
  */
@@ -26,16 +26,16 @@ class Feature extends Shape
      * @param array{
      *     arn: string,
      *     createdTime: \Aws\Api\DateTimeResult,
-     *     defaultVariation?: string,
-     *     description?: string,
-     *     entityOverrides?: array<string, string>,
-     *     evaluationRules?: list<EvaluationRule>,
+     *     defaultVariation?: string|null,
+     *     description?: string|null,
+     *     entityOverrides?: array<string, string>|null,
+     *     evaluationRules?: list<EvaluationRule>|null,
      *     evaluationStrategy: 'ALL_RULES'|'DEFAULT_VARIATION',
      *     lastUpdatedTime: \Aws\Api\DateTimeResult,
      *     name: string,
-     *     project?: string,
+     *     project?: string|null,
      *     status: 'AVAILABLE'|'UPDATING',
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     valueType: 'STRING'|'LONG'|'DOUBLE'|'BOOLEAN',
      *     variations: list<Variation>
      * } $args

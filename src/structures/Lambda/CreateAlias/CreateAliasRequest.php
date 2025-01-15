@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FunctionName
  * @property string $Name
  * @property string $FunctionVersion
- * @property string $Description
- * @property Shapes\AliasRoutingConfiguration $RoutingConfig
+ * @property string|null $Description
+ * @property Shapes\AliasRoutingConfiguration|null $RoutingConfig
  */
 class CreateAliasRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateAliasRequest extends Request
      *     FunctionName: string,
      *     Name: string,
      *     FunctionVersion: string,
-     *     Description?: string,
-     *     RoutingConfig?: Shapes\AliasRoutingConfiguration
+     *     Description?: string|null,
+     *     RoutingConfig?: Shapes\AliasRoutingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

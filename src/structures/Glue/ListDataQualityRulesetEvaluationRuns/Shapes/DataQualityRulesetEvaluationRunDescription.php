@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\ListDataQualityRulesetEvaluationRuns\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RunId
- * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT' $Status
- * @property \Aws\Api\DateTimeResult $StartedOn
- * @property DataSource $DataSource
+ * @property string|null $RunId
+ * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $StartedOn
+ * @property DataSource|null $DataSource
  */
 class DataQualityRulesetEvaluationRunDescription extends Shape
 {
     /**
      * @param array{
-     *     RunId?: string,
-     *     Status?: 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT',
-     *     StartedOn?: \Aws\Api\DateTimeResult,
-     *     DataSource?: DataSource
+     *     RunId?: string|null,
+     *     Status?: 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|null,
+     *     StartedOn?: \Aws\Api\DateTimeResult|null,
+     *     DataSource?: DataSource|null
      * } $args
      */
     public function __construct(array $args = [])

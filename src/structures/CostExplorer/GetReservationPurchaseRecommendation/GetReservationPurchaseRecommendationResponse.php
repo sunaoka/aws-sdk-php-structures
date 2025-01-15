@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationPurchaseRecommendati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ReservationPurchaseRecommendationMetadata $Metadata
- * @property list<Shapes\ReservationPurchaseRecommendation> $Recommendations
- * @property string $NextPageToken
+ * @property Shapes\ReservationPurchaseRecommendationMetadata|null $Metadata
+ * @property list<Shapes\ReservationPurchaseRecommendation>|null $Recommendations
+ * @property string|null $NextPageToken
  */
 class GetReservationPurchaseRecommendationResponse extends Response
 {

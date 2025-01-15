@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'S3'|'GitHub'|'String'|'AppSpecContent' $revisionType
- * @property S3Location $s3Location
- * @property GitHubLocation $gitHubLocation
- * @property RawString $string
- * @property AppSpecContent $appSpecContent
+ * @property 'S3'|'GitHub'|'String'|'AppSpecContent'|null $revisionType
+ * @property S3Location|null $s3Location
+ * @property GitHubLocation|null $gitHubLocation
+ * @property RawString|null $string
+ * @property AppSpecContent|null $appSpecContent
  */
 class RevisionLocation extends Shape
 {
     /**
      * @param array{
-     *     revisionType?: 'S3'|'GitHub'|'String'|'AppSpecContent',
-     *     s3Location?: S3Location,
-     *     gitHubLocation?: GitHubLocation,
-     *     string?: RawString,
-     *     appSpecContent?: AppSpecContent
+     *     revisionType?: 'S3'|'GitHub'|'String'|'AppSpecContent'|null,
+     *     s3Location?: S3Location|null,
+     *     gitHubLocation?: GitHubLocation|null,
+     *     string?: RawString|null,
+     *     appSpecContent?: AppSpecContent|null
      * } $args
      */
     public function __construct(array $args = [])

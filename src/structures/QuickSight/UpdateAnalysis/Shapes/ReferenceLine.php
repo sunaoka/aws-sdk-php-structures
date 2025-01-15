@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $Status
+ * @property 'ENABLED'|'DISABLED'|null $Status
  * @property ReferenceLineDataConfiguration $DataConfiguration
- * @property ReferenceLineStyleConfiguration $StyleConfiguration
- * @property ReferenceLineLabelConfiguration $LabelConfiguration
+ * @property ReferenceLineStyleConfiguration|null $StyleConfiguration
+ * @property ReferenceLineLabelConfiguration|null $LabelConfiguration
  */
 class ReferenceLine extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'ENABLED'|'DISABLED',
+     *     Status?: 'ENABLED'|'DISABLED'|null,
      *     DataConfiguration: ReferenceLineDataConfiguration,
-     *     StyleConfiguration?: ReferenceLineStyleConfiguration,
-     *     LabelConfiguration?: ReferenceLineLabelConfiguration
+     *     StyleConfiguration?: ReferenceLineStyleConfiguration|null,
+     *     LabelConfiguration?: ReferenceLineLabelConfiguration|null
      * } $args
      */
     public function __construct(array $args)

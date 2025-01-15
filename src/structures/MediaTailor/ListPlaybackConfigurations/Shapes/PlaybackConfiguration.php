@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\MediaTailor\ListPlaybackConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AdDecisionServerUrl
- * @property AvailSuppression $AvailSuppression
- * @property Bumper $Bumper
- * @property CdnConfiguration $CdnConfiguration
- * @property array<string, array<string, string>> $ConfigurationAliases
- * @property DashConfiguration $DashConfiguration
- * @property HlsConfiguration $HlsConfiguration
- * @property 'STITCHED_ONLY'|'PLAYER_SELECT' $InsertionMode
- * @property LivePreRollConfiguration $LivePreRollConfiguration
- * @property LogConfiguration $LogConfiguration
- * @property ManifestProcessingRules $ManifestProcessingRules
- * @property string $Name
- * @property int<1, max> $PersonalizationThresholdSeconds
- * @property string $PlaybackConfigurationArn
- * @property string $PlaybackEndpointPrefix
- * @property string $SessionInitializationEndpointPrefix
- * @property string $SlateAdUrl
- * @property array<string, string> $Tags
- * @property string $TranscodeProfileName
- * @property string $VideoContentSourceUrl
+ * @property string|null $AdDecisionServerUrl
+ * @property AvailSuppression|null $AvailSuppression
+ * @property Bumper|null $Bumper
+ * @property CdnConfiguration|null $CdnConfiguration
+ * @property array<string, array<string, string>>|null $ConfigurationAliases
+ * @property DashConfiguration|null $DashConfiguration
+ * @property HlsConfiguration|null $HlsConfiguration
+ * @property 'STITCHED_ONLY'|'PLAYER_SELECT'|null $InsertionMode
+ * @property LivePreRollConfiguration|null $LivePreRollConfiguration
+ * @property LogConfiguration|null $LogConfiguration
+ * @property ManifestProcessingRules|null $ManifestProcessingRules
+ * @property string|null $Name
+ * @property int<1, max>|null $PersonalizationThresholdSeconds
+ * @property string|null $PlaybackConfigurationArn
+ * @property string|null $PlaybackEndpointPrefix
+ * @property string|null $SessionInitializationEndpointPrefix
+ * @property string|null $SlateAdUrl
+ * @property array<string, string>|null $Tags
+ * @property string|null $TranscodeProfileName
+ * @property string|null $VideoContentSourceUrl
  */
 class PlaybackConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AdDecisionServerUrl?: string,
-     *     AvailSuppression?: AvailSuppression,
-     *     Bumper?: Bumper,
-     *     CdnConfiguration?: CdnConfiguration,
-     *     ConfigurationAliases?: array<string, array<string, string>>,
-     *     DashConfiguration?: DashConfiguration,
-     *     HlsConfiguration?: HlsConfiguration,
-     *     InsertionMode?: 'STITCHED_ONLY'|'PLAYER_SELECT',
-     *     LivePreRollConfiguration?: LivePreRollConfiguration,
-     *     LogConfiguration?: LogConfiguration,
-     *     ManifestProcessingRules?: ManifestProcessingRules,
-     *     Name?: string,
-     *     PersonalizationThresholdSeconds?: int<1, max>,
-     *     PlaybackConfigurationArn?: string,
-     *     PlaybackEndpointPrefix?: string,
-     *     SessionInitializationEndpointPrefix?: string,
-     *     SlateAdUrl?: string,
-     *     Tags?: array<string, string>,
-     *     TranscodeProfileName?: string,
-     *     VideoContentSourceUrl?: string
+     *     AdDecisionServerUrl?: string|null,
+     *     AvailSuppression?: AvailSuppression|null,
+     *     Bumper?: Bumper|null,
+     *     CdnConfiguration?: CdnConfiguration|null,
+     *     ConfigurationAliases?: array<string, array<string, string>>|null,
+     *     DashConfiguration?: DashConfiguration|null,
+     *     HlsConfiguration?: HlsConfiguration|null,
+     *     InsertionMode?: 'STITCHED_ONLY'|'PLAYER_SELECT'|null,
+     *     LivePreRollConfiguration?: LivePreRollConfiguration|null,
+     *     LogConfiguration?: LogConfiguration|null,
+     *     ManifestProcessingRules?: ManifestProcessingRules|null,
+     *     Name?: string|null,
+     *     PersonalizationThresholdSeconds?: int<1, max>|null,
+     *     PlaybackConfigurationArn?: string|null,
+     *     PlaybackEndpointPrefix?: string|null,
+     *     SessionInitializationEndpointPrefix?: string|null,
+     *     SlateAdUrl?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     TranscodeProfileName?: string|null,
+     *     VideoContentSourceUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

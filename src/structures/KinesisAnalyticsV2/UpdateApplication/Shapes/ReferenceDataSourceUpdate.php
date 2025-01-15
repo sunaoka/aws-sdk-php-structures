@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ReferenceId
- * @property string $TableNameUpdate
- * @property S3ReferenceDataSourceUpdate $S3ReferenceDataSourceUpdate
- * @property SourceSchema $ReferenceSchemaUpdate
+ * @property string|null $TableNameUpdate
+ * @property S3ReferenceDataSourceUpdate|null $S3ReferenceDataSourceUpdate
+ * @property SourceSchema|null $ReferenceSchemaUpdate
  */
 class ReferenceDataSourceUpdate extends Shape
 {
     /**
      * @param array{
      *     ReferenceId: string,
-     *     TableNameUpdate?: string,
-     *     S3ReferenceDataSourceUpdate?: S3ReferenceDataSourceUpdate,
-     *     ReferenceSchemaUpdate?: SourceSchema
+     *     TableNameUpdate?: string|null,
+     *     S3ReferenceDataSourceUpdate?: S3ReferenceDataSourceUpdate|null,
+     *     ReferenceSchemaUpdate?: SourceSchema|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\ListSecurityControlDefinitions\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DefaultValue
- * @property int $Min
- * @property int $Max
+ * @property int|null $DefaultValue
+ * @property int|null $Min
+ * @property int|null $Max
  */
 class IntegerConfigurationOptions extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: int,
-     *     Min?: int,
-     *     Max?: int
+     *     DefaultValue?: int|null,
+     *     Min?: int|null,
+     *     Max?: int|null
      * } $args
      */
     public function __construct(array $args = [])

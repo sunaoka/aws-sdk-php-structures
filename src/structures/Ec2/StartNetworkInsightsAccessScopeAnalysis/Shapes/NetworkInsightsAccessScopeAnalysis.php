@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\StartNetworkInsightsAccessScopeAnalysis\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkInsightsAccessScopeAnalysisId
- * @property string $NetworkInsightsAccessScopeAnalysisArn
- * @property string $NetworkInsightsAccessScopeId
- * @property 'running'|'succeeded'|'failed' $Status
- * @property string $StatusMessage
- * @property string $WarningMessage
- * @property \Aws\Api\DateTimeResult $StartDate
- * @property \Aws\Api\DateTimeResult $EndDate
- * @property 'true'|'false'|'unknown' $FindingsFound
- * @property int $AnalyzedEniCount
- * @property list<Tag> $Tags
+ * @property string|null $NetworkInsightsAccessScopeAnalysisId
+ * @property string|null $NetworkInsightsAccessScopeAnalysisArn
+ * @property string|null $NetworkInsightsAccessScopeId
+ * @property 'running'|'succeeded'|'failed'|null $Status
+ * @property string|null $StatusMessage
+ * @property string|null $WarningMessage
+ * @property \Aws\Api\DateTimeResult|null $StartDate
+ * @property \Aws\Api\DateTimeResult|null $EndDate
+ * @property 'true'|'false'|'unknown'|null $FindingsFound
+ * @property int|null $AnalyzedEniCount
+ * @property list<Tag>|null $Tags
  */
 class NetworkInsightsAccessScopeAnalysis extends Shape
 {
     /**
      * @param array{
-     *     NetworkInsightsAccessScopeAnalysisId?: string,
-     *     NetworkInsightsAccessScopeAnalysisArn?: string,
-     *     NetworkInsightsAccessScopeId?: string,
-     *     Status?: 'running'|'succeeded'|'failed',
-     *     StatusMessage?: string,
-     *     WarningMessage?: string,
-     *     StartDate?: \Aws\Api\DateTimeResult,
-     *     EndDate?: \Aws\Api\DateTimeResult,
-     *     FindingsFound?: 'true'|'false'|'unknown',
-     *     AnalyzedEniCount?: int,
-     *     Tags?: list<Tag>
+     *     NetworkInsightsAccessScopeAnalysisId?: string|null,
+     *     NetworkInsightsAccessScopeAnalysisArn?: string|null,
+     *     NetworkInsightsAccessScopeId?: string|null,
+     *     Status?: 'running'|'succeeded'|'failed'|null,
+     *     StatusMessage?: string|null,
+     *     WarningMessage?: string|null,
+     *     StartDate?: \Aws\Api\DateTimeResult|null,
+     *     EndDate?: \Aws\Api\DateTimeResult|null,
+     *     FindingsFound?: 'true'|'false'|'unknown'|null,
+     *     AnalyzedEniCount?: int|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

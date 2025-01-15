@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
- * @property int<0, 43200> $durationSeconds
+ * @property string|null $domainOwner
+ * @property int<0, 43200>|null $durationSeconds
  */
 class GetAuthorizationTokenRequest extends Request
 {
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
-     *     durationSeconds?: int<0, 43200>
+     *     domainOwner?: string|null,
+     *     durationSeconds?: int<0, 43200>|null
      * } $args
      */
     public function __construct(array $args)

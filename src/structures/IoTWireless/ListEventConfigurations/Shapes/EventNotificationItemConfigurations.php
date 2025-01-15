@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListEventConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DeviceRegistrationStateEventConfiguration $DeviceRegistrationState
- * @property ProximityEventConfiguration $Proximity
- * @property JoinEventConfiguration $Join
- * @property ConnectionStatusEventConfiguration $ConnectionStatus
- * @property MessageDeliveryStatusEventConfiguration $MessageDeliveryStatus
+ * @property DeviceRegistrationStateEventConfiguration|null $DeviceRegistrationState
+ * @property ProximityEventConfiguration|null $Proximity
+ * @property JoinEventConfiguration|null $Join
+ * @property ConnectionStatusEventConfiguration|null $ConnectionStatus
+ * @property MessageDeliveryStatusEventConfiguration|null $MessageDeliveryStatus
  */
 class EventNotificationItemConfigurations extends Shape
 {
     /**
      * @param array{
-     *     DeviceRegistrationState?: DeviceRegistrationStateEventConfiguration,
-     *     Proximity?: ProximityEventConfiguration,
-     *     Join?: JoinEventConfiguration,
-     *     ConnectionStatus?: ConnectionStatusEventConfiguration,
-     *     MessageDeliveryStatus?: MessageDeliveryStatusEventConfiguration
+     *     DeviceRegistrationState?: DeviceRegistrationStateEventConfiguration|null,
+     *     Proximity?: ProximityEventConfiguration|null,
+     *     Join?: JoinEventConfiguration|null,
+     *     ConnectionStatus?: ConnectionStatusEventConfiguration|null,
+     *     MessageDeliveryStatus?: MessageDeliveryStatusEventConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

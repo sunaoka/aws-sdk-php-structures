@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeCommands;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DeploymentId
- * @property string $InstanceId
- * @property list<string> $CommandIds
+ * @property string|null $DeploymentId
+ * @property string|null $InstanceId
+ * @property list<string>|null $CommandIds
  */
 class DescribeCommandsRequest extends Request
 {
     /**
      * @param array{
-     *     DeploymentId?: string,
-     *     InstanceId?: string,
-     *     CommandIds?: list<string>
+     *     DeploymentId?: string|null,
+     *     InstanceId?: string|null,
+     *     CommandIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

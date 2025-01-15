@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ParameterGroupName
- * @property bool $AllParameters
- * @property list<string> $ParameterNames
+ * @property bool|null $AllParameters
+ * @property list<string>|null $ParameterNames
  */
 class ResetParameterGroupRequest extends Request
 {
     /**
      * @param array{
      *     ParameterGroupName: string,
-     *     AllParameters?: bool,
-     *     ParameterNames?: list<string>
+     *     AllParameters?: bool|null,
+     *     ParameterNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

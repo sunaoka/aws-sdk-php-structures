@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FilterId
  * @property ColumnIdentifier $Column
- * @property bool $IncludeMinimum
- * @property bool $IncludeMaximum
- * @property NumericRangeFilterValue $RangeMinimum
- * @property NumericRangeFilterValue $RangeMaximum
- * @property 'FILTER_ALL_VALUES' $SelectAllOptions
- * @property AggregationFunction $AggregationFunction
+ * @property bool|null $IncludeMinimum
+ * @property bool|null $IncludeMaximum
+ * @property NumericRangeFilterValue|null $RangeMinimum
+ * @property NumericRangeFilterValue|null $RangeMaximum
+ * @property 'FILTER_ALL_VALUES'|null $SelectAllOptions
+ * @property AggregationFunction|null $AggregationFunction
  * @property 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY' $NullOption
- * @property DefaultFilterControlConfiguration $DefaultFilterControlConfiguration
+ * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class NumericRangeFilter extends Shape
 {
@@ -22,14 +22,14 @@ class NumericRangeFilter extends Shape
      * @param array{
      *     FilterId: string,
      *     Column: ColumnIdentifier,
-     *     IncludeMinimum?: bool,
-     *     IncludeMaximum?: bool,
-     *     RangeMinimum?: NumericRangeFilterValue,
-     *     RangeMaximum?: NumericRangeFilterValue,
-     *     SelectAllOptions?: 'FILTER_ALL_VALUES',
-     *     AggregationFunction?: AggregationFunction,
+     *     IncludeMinimum?: bool|null,
+     *     IncludeMaximum?: bool|null,
+     *     RangeMinimum?: NumericRangeFilterValue|null,
+     *     RangeMaximum?: NumericRangeFilterValue|null,
+     *     SelectAllOptions?: 'FILTER_ALL_VALUES'|null,
+     *     AggregationFunction?: AggregationFunction|null,
      *     NullOption: 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY',
-     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration
+     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

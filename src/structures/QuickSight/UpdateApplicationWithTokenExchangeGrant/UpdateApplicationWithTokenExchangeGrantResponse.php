@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateApplicationWithTokenExchangeGr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Status
- * @property string $RequestId
+ * @property int|null $Status
+ * @property string|null $RequestId
  */
 class UpdateApplicationWithTokenExchangeGrantResponse extends Response
 {

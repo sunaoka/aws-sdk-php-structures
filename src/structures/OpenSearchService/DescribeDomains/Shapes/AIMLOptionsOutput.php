@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeDomains\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NaturalLanguageQueryGenerationOptionsOutput $NaturalLanguageQueryGenerationOptions
+ * @property NaturalLanguageQueryGenerationOptionsOutput|null $NaturalLanguageQueryGenerationOptions
  */
 class AIMLOptionsOutput extends Shape
 {
     /**
-     * @param array{NaturalLanguageQueryGenerationOptions?: NaturalLanguageQueryGenerationOptionsOutput} $args
+     * @param array{NaturalLanguageQueryGenerationOptions?: NaturalLanguageQueryGenerationOptionsOutput|null} $args
      */
     public function __construct(array $args = [])
     {

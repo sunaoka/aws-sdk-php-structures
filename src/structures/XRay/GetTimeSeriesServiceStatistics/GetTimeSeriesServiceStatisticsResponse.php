@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\XRay\GetTimeSeriesServiceStatistics;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TimeSeriesServiceStatistics> $TimeSeriesServiceStatistics
- * @property bool $ContainsOldGroupVersions
- * @property string $NextToken
+ * @property list<Shapes\TimeSeriesServiceStatistics>|null $TimeSeriesServiceStatistics
+ * @property bool|null $ContainsOldGroupVersions
+ * @property string|null $NextToken
  */
 class GetTimeSeriesServiceStatisticsResponse extends Response
 {

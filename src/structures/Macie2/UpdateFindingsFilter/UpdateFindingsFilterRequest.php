@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Macie2\UpdateFindingsFilter;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ARCHIVE'|'NOOP' $action
- * @property string $clientToken
- * @property string $description
- * @property Shapes\FindingCriteria $findingCriteria
+ * @property 'ARCHIVE'|'NOOP'|null $action
+ * @property string|null $clientToken
+ * @property string|null $description
+ * @property Shapes\FindingCriteria|null $findingCriteria
  * @property string $id
- * @property string $name
- * @property int $position
+ * @property string|null $name
+ * @property int|null $position
  */
 class UpdateFindingsFilterRequest extends Request
 {
     /**
      * @param array{
-     *     action?: 'ARCHIVE'|'NOOP',
-     *     clientToken?: string,
-     *     description?: string,
-     *     findingCriteria?: Shapes\FindingCriteria,
+     *     action?: 'ARCHIVE'|'NOOP'|null,
+     *     clientToken?: string|null,
+     *     description?: string|null,
+     *     findingCriteria?: Shapes\FindingCriteria|null,
      *     id: string,
-     *     name?: string,
-     *     position?: int
+     *     name?: string|null,
+     *     position?: int|null
      * } $args
      */
     public function __construct(array $args)

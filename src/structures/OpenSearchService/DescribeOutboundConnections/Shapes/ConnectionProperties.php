@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeOutboundConnections\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Endpoint
- * @property CrossClusterSearchConnectionProperties $CrossClusterSearch
+ * @property string|null $Endpoint
+ * @property CrossClusterSearchConnectionProperties|null $CrossClusterSearch
  */
 class ConnectionProperties extends Shape
 {
     /**
      * @param array{
-     *     Endpoint?: string,
-     *     CrossClusterSearch?: CrossClusterSearchConnectionProperties
+     *     Endpoint?: string|null,
+     *     CrossClusterSearch?: CrossClusterSearchConnectionProperties|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateUserProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $userIdentifier
- * @property 'IAM_USER'|'IAM_ROLE'|'SSO_USER' $userType
+ * @property 'IAM_USER'|'IAM_ROLE'|'SSO_USER'|null $userType
  */
 class CreateUserProfileRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     userIdentifier: string,
-     *     userType?: 'IAM_USER'|'IAM_ROLE'|'SSO_USER'
+     *     userType?: 'IAM_USER'|'IAM_ROLE'|'SSO_USER'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataProductLastModifiedDateFilterDateRange $DateRange
+ * @property DataProductLastModifiedDateFilterDateRange|null $DateRange
  */
 class DataProductLastModifiedDateFilter extends Shape
 {
     /**
-     * @param array{DateRange?: DataProductLastModifiedDateFilterDateRange} $args
+     * @param array{DateRange?: DataProductLastModifiedDateFilterDateRange|null} $args
      */
     public function __construct(array $args = [])
     {

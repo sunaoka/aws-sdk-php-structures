@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationId
  * @property string $ConfigurationProfileId
- * @property string $Name
- * @property string $Description
- * @property string $RetrievalRoleArn
- * @property list<Shapes\Validator> $Validators
- * @property string $KmsKeyIdentifier
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $RetrievalRoleArn
+ * @property list<Shapes\Validator>|null $Validators
+ * @property string|null $KmsKeyIdentifier
  */
 class UpdateConfigurationProfileRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateConfigurationProfileRequest extends Request
      * @param array{
      *     ApplicationId: string,
      *     ConfigurationProfileId: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     RetrievalRoleArn?: string,
-     *     Validators?: list<Shapes\Validator>,
-     *     KmsKeyIdentifier?: string
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     RetrievalRoleArn?: string|null,
+     *     Validators?: list<Shapes\Validator>|null,
+     *     KmsKeyIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

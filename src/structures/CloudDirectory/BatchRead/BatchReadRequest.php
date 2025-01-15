@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryArn
  * @property list<Shapes\BatchReadOperation> $Operations
- * @property 'SERIALIZABLE'|'EVENTUAL' $ConsistencyLevel
+ * @property 'SERIALIZABLE'|'EVENTUAL'|null $ConsistencyLevel
  */
 class BatchReadRequest extends Request
 {
@@ -15,7 +15,7 @@ class BatchReadRequest extends Request
      * @param array{
      *     DirectoryArn: string,
      *     Operations: list<Shapes\BatchReadOperation>,
-     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'
+     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'|null
      * } $args
      */
     public function __construct(array $args)

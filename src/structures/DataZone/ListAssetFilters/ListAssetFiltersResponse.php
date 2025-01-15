@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AssetFilterSummary> $items
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAssetFiltersResponse extends Response
 {

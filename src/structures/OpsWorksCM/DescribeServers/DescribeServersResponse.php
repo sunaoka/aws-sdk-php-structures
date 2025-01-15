@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OpsWorksCM\DescribeServers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Server> $Servers
- * @property string $NextToken
+ * @property list<Shapes\Server>|null $Servers
+ * @property string|null $NextToken
  */
 class DescribeServersResponse extends Response
 {

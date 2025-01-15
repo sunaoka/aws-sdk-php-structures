@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ClientPolicy $clientPolicy
+ * @property ClientPolicy|null $clientPolicy
  * @property string $virtualServiceName
  */
 class VirtualServiceBackend extends Shape
 {
     /**
      * @param array{
-     *     clientPolicy?: ClientPolicy,
+     *     clientPolicy?: ClientPolicy|null,
      *     virtualServiceName: string
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property BedrockModelSpecification $bedrockModelSpecification
+ * @property BedrockModelSpecification|null $bedrockModelSpecification
  */
 class SampleUtteranceGenerationSpecification extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     bedrockModelSpecification?: BedrockModelSpecification
+     *     bedrockModelSpecification?: BedrockModelSpecification|null
      * } $args
      */
     public function __construct(array $args)

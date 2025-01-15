@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingConfigurationName
- * @property int<1, 200> $MaxConcurrency
- * @property int<1, 25> $MinSize
- * @property int<1, max> $MaxSize
- * @property list<Shapes\Tag> $Tags
+ * @property int<1, 200>|null $MaxConcurrency
+ * @property int<1, 25>|null $MinSize
+ * @property int<1, max>|null $MaxSize
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateAutoScalingConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingConfigurationName: string,
-     *     MaxConcurrency?: int<1, 200>,
-     *     MinSize?: int<1, 25>,
-     *     MaxSize?: int<1, max>,
-     *     Tags?: list<Shapes\Tag>
+     *     MaxConcurrency?: int<1, 200>|null,
+     *     MinSize?: int<1, 25>|null,
+     *     MaxSize?: int<1, max>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

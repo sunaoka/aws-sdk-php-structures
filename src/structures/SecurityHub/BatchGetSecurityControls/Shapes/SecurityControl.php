@@ -12,9 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RemediationUrl
  * @property 'LOW'|'MEDIUM'|'HIGH'|'CRITICAL' $SeverityRating
  * @property 'ENABLED'|'DISABLED' $SecurityControlStatus
- * @property 'READY'|'UPDATING' $UpdateStatus
- * @property array<string, ParameterConfiguration> $Parameters
- * @property string $LastUpdateReason
+ * @property 'READY'|'UPDATING'|null $UpdateStatus
+ * @property array<string, ParameterConfiguration>|null $Parameters
+ * @property string|null $LastUpdateReason
  */
 class SecurityControl extends Shape
 {
@@ -27,9 +27,9 @@ class SecurityControl extends Shape
      *     RemediationUrl: string,
      *     SeverityRating: 'LOW'|'MEDIUM'|'HIGH'|'CRITICAL',
      *     SecurityControlStatus: 'ENABLED'|'DISABLED',
-     *     UpdateStatus?: 'READY'|'UPDATING',
-     *     Parameters?: array<string, ParameterConfiguration>,
-     *     LastUpdateReason?: string
+     *     UpdateStatus?: 'READY'|'UPDATING'|null,
+     *     Parameters?: array<string, ParameterConfiguration>|null,
+     *     LastUpdateReason?: string|null
      * } $args
      */
     public function __construct(array $args)

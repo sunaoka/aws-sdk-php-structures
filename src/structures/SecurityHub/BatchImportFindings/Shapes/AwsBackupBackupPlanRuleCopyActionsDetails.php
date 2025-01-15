@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DestinationBackupVaultArn
- * @property AwsBackupBackupPlanLifecycleDetails $Lifecycle
+ * @property string|null $DestinationBackupVaultArn
+ * @property AwsBackupBackupPlanLifecycleDetails|null $Lifecycle
  */
 class AwsBackupBackupPlanRuleCopyActionsDetails extends Shape
 {
     /**
      * @param array{
-     *     DestinationBackupVaultArn?: string,
-     *     Lifecycle?: AwsBackupBackupPlanLifecycleDetails
+     *     DestinationBackupVaultArn?: string|null,
+     *     Lifecycle?: AwsBackupBackupPlanLifecycleDetails|null
      * } $args
      */
     public function __construct(array $args = [])

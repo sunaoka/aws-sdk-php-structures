@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListUserAccessLoggingSettings\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $kinesisStreamArn
+ * @property string|null $kinesisStreamArn
  * @property string $userAccessLoggingSettingsArn
  */
 class UserAccessLoggingSettingsSummary extends Shape
 {
     /**
      * @param array{
-     *     kinesisStreamArn?: string,
+     *     kinesisStreamArn?: string|null,
      *     userAccessLoggingSettingsArn: string
      * } $args
      */

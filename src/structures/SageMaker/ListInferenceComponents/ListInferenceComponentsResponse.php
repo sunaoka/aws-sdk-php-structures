@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\InferenceComponentSummary> $InferenceComponents
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListInferenceComponentsResponse extends Response
 {

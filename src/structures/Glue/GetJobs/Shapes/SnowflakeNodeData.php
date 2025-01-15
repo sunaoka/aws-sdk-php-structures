@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\Glue\GetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceType
- * @property Option $Connection
- * @property string $Schema
- * @property string $Table
- * @property string $Database
- * @property string $TempDir
- * @property Option $IamRole
- * @property array<string, string> $AdditionalOptions
- * @property string $SampleQuery
- * @property string $PreAction
- * @property string $PostAction
- * @property string $Action
- * @property bool $Upsert
- * @property string $MergeAction
- * @property string $MergeWhenMatched
- * @property string $MergeWhenNotMatched
- * @property string $MergeClause
- * @property string $StagingTable
- * @property list<Option> $SelectedColumns
- * @property bool $AutoPushdown
- * @property list<Option> $TableSchema
+ * @property string|null $SourceType
+ * @property Option|null $Connection
+ * @property string|null $Schema
+ * @property string|null $Table
+ * @property string|null $Database
+ * @property string|null $TempDir
+ * @property Option|null $IamRole
+ * @property array<string, string>|null $AdditionalOptions
+ * @property string|null $SampleQuery
+ * @property string|null $PreAction
+ * @property string|null $PostAction
+ * @property string|null $Action
+ * @property bool|null $Upsert
+ * @property string|null $MergeAction
+ * @property string|null $MergeWhenMatched
+ * @property string|null $MergeWhenNotMatched
+ * @property string|null $MergeClause
+ * @property string|null $StagingTable
+ * @property list<Option>|null $SelectedColumns
+ * @property bool|null $AutoPushdown
+ * @property list<Option>|null $TableSchema
  */
 class SnowflakeNodeData extends Shape
 {
     /**
      * @param array{
-     *     SourceType?: string,
-     *     Connection?: Option,
-     *     Schema?: string,
-     *     Table?: string,
-     *     Database?: string,
-     *     TempDir?: string,
-     *     IamRole?: Option,
-     *     AdditionalOptions?: array<string, string>,
-     *     SampleQuery?: string,
-     *     PreAction?: string,
-     *     PostAction?: string,
-     *     Action?: string,
-     *     Upsert?: bool,
-     *     MergeAction?: string,
-     *     MergeWhenMatched?: string,
-     *     MergeWhenNotMatched?: string,
-     *     MergeClause?: string,
-     *     StagingTable?: string,
-     *     SelectedColumns?: list<Option>,
-     *     AutoPushdown?: bool,
-     *     TableSchema?: list<Option>
+     *     SourceType?: string|null,
+     *     Connection?: Option|null,
+     *     Schema?: string|null,
+     *     Table?: string|null,
+     *     Database?: string|null,
+     *     TempDir?: string|null,
+     *     IamRole?: Option|null,
+     *     AdditionalOptions?: array<string, string>|null,
+     *     SampleQuery?: string|null,
+     *     PreAction?: string|null,
+     *     PostAction?: string|null,
+     *     Action?: string|null,
+     *     Upsert?: bool|null,
+     *     MergeAction?: string|null,
+     *     MergeWhenMatched?: string|null,
+     *     MergeWhenNotMatched?: string|null,
+     *     MergeClause?: string|null,
+     *     StagingTable?: string|null,
+     *     SelectedColumns?: list<Option>|null,
+     *     AutoPushdown?: bool|null,
+     *     TableSchema?: list<Option>|null
      * } $args
      */
     public function __construct(array $args = [])

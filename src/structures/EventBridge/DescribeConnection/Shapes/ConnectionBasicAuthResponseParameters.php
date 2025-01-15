@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EventBridge\DescribeConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Username
+ * @property string|null $Username
  */
 class ConnectionBasicAuthResponseParameters extends Shape
 {
     /**
-     * @param array{Username?: string} $args
+     * @param array{Username?: string|null} $args
      */
     public function __construct(array $args = [])
     {

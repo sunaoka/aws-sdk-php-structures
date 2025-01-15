@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Glue\ListMLTransforms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property 'FIND_MATCHES' $TransformType
- * @property 'NOT_READY'|'READY'|'DELETING' $Status
- * @property string $GlueVersion
- * @property \Aws\Api\DateTimeResult $CreatedBefore
- * @property \Aws\Api\DateTimeResult $CreatedAfter
- * @property \Aws\Api\DateTimeResult $LastModifiedBefore
- * @property \Aws\Api\DateTimeResult $LastModifiedAfter
- * @property list<SchemaColumn> $Schema
+ * @property string|null $Name
+ * @property 'FIND_MATCHES'|null $TransformType
+ * @property 'NOT_READY'|'READY'|'DELETING'|null $Status
+ * @property string|null $GlueVersion
+ * @property \Aws\Api\DateTimeResult|null $CreatedBefore
+ * @property \Aws\Api\DateTimeResult|null $CreatedAfter
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedBefore
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedAfter
+ * @property list<SchemaColumn>|null $Schema
  */
 class TransformFilterCriteria extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     TransformType?: 'FIND_MATCHES',
-     *     Status?: 'NOT_READY'|'READY'|'DELETING',
-     *     GlueVersion?: string,
-     *     CreatedBefore?: \Aws\Api\DateTimeResult,
-     *     CreatedAfter?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBefore?: \Aws\Api\DateTimeResult,
-     *     LastModifiedAfter?: \Aws\Api\DateTimeResult,
-     *     Schema?: list<SchemaColumn>
+     *     Name?: string|null,
+     *     TransformType?: 'FIND_MATCHES'|null,
+     *     Status?: 'NOT_READY'|'READY'|'DELETING'|null,
+     *     GlueVersion?: string|null,
+     *     CreatedBefore?: \Aws\Api\DateTimeResult|null,
+     *     CreatedAfter?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBefore?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedAfter?: \Aws\Api\DateTimeResult|null,
+     *     Schema?: list<SchemaColumn>|null
      * } $args
      */
     public function __construct(array $args = [])

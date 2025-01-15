@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property LabelingJobDataSource $DataSource
- * @property LabelingJobDataAttributes $DataAttributes
+ * @property LabelingJobDataAttributes|null $DataAttributes
  */
 class LabelingJobInputConfig extends Shape
 {
     /**
      * @param array{
      *     DataSource: LabelingJobDataSource,
-     *     DataAttributes?: LabelingJobDataAttributes
+     *     DataAttributes?: LabelingJobDataAttributes|null
      * } $args
      */
     public function __construct(array $args)

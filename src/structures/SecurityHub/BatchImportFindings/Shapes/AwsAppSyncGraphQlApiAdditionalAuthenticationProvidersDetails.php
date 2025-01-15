@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AuthenticationType
- * @property AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails $LambdaAuthorizerConfig
- * @property AwsAppSyncGraphQlApiOpenIdConnectConfigDetails $OpenIdConnectConfig
- * @property AwsAppSyncGraphQlApiUserPoolConfigDetails $UserPoolConfig
+ * @property string|null $AuthenticationType
+ * @property AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails|null $LambdaAuthorizerConfig
+ * @property AwsAppSyncGraphQlApiOpenIdConnectConfigDetails|null $OpenIdConnectConfig
+ * @property AwsAppSyncGraphQlApiUserPoolConfigDetails|null $UserPoolConfig
  */
 class AwsAppSyncGraphQlApiAdditionalAuthenticationProvidersDetails extends Shape
 {
     /**
      * @param array{
-     *     AuthenticationType?: string,
-     *     LambdaAuthorizerConfig?: AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails,
-     *     OpenIdConnectConfig?: AwsAppSyncGraphQlApiOpenIdConnectConfigDetails,
-     *     UserPoolConfig?: AwsAppSyncGraphQlApiUserPoolConfigDetails
+     *     AuthenticationType?: string|null,
+     *     LambdaAuthorizerConfig?: AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails|null,
+     *     OpenIdConnectConfig?: AwsAppSyncGraphQlApiOpenIdConnectConfigDetails|null,
+     *     UserPoolConfig?: AwsAppSyncGraphQlApiUserPoolConfigDetails|null
      * } $args
      */
     public function __construct(array $args = [])

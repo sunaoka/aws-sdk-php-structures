@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property InventoryDestination $Destination
  * @property bool $IsEnabled
- * @property InventoryFilter $Filter
+ * @property InventoryFilter|null $Filter
  * @property string $Id
  * @property 'All'|'Current' $IncludedObjectVersions
- * @property list<'Size'|'LastModifiedDate'|'StorageClass'|'ETag'|'IsMultipartUploaded'|'ReplicationStatus'|'EncryptionStatus'|'ObjectLockRetainUntilDate'|'ObjectLockMode'|'ObjectLockLegalHoldStatus'|'IntelligentTieringAccessTier'|'BucketKeyStatus'|'ChecksumAlgorithm'|'ObjectAccessControlList'|'ObjectOwner'> $OptionalFields
+ * @property list<'Size'|'LastModifiedDate'|'StorageClass'|'ETag'|'IsMultipartUploaded'|'ReplicationStatus'|'EncryptionStatus'|'ObjectLockRetainUntilDate'|'ObjectLockMode'|'ObjectLockLegalHoldStatus'|'IntelligentTieringAccessTier'|'BucketKeyStatus'|'ChecksumAlgorithm'|'ObjectAccessControlList'|'ObjectOwner'>|null $OptionalFields
  * @property InventorySchedule $Schedule
  */
 class InventoryConfiguration extends Shape
@@ -19,10 +19,10 @@ class InventoryConfiguration extends Shape
      * @param array{
      *     Destination: InventoryDestination,
      *     IsEnabled: bool,
-     *     Filter?: InventoryFilter,
+     *     Filter?: InventoryFilter|null,
      *     Id: string,
      *     IncludedObjectVersions: 'All'|'Current',
-     *     OptionalFields?: list<'Size'|'LastModifiedDate'|'StorageClass'|'ETag'|'IsMultipartUploaded'|'ReplicationStatus'|'EncryptionStatus'|'ObjectLockRetainUntilDate'|'ObjectLockMode'|'ObjectLockLegalHoldStatus'|'IntelligentTieringAccessTier'|'BucketKeyStatus'|'ChecksumAlgorithm'|'ObjectAccessControlList'|'ObjectOwner'>,
+     *     OptionalFields?: list<'Size'|'LastModifiedDate'|'StorageClass'|'ETag'|'IsMultipartUploaded'|'ReplicationStatus'|'EncryptionStatus'|'ObjectLockRetainUntilDate'|'ObjectLockMode'|'ObjectLockLegalHoldStatus'|'IntelligentTieringAccessTier'|'BucketKeyStatus'|'ChecksumAlgorithm'|'ObjectAccessControlList'|'ObjectOwner'>|null,
      *     Schedule: InventorySchedule
      * } $args
      */

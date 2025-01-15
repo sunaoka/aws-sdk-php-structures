@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListLicenseSpecificationsForReso
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\LicenseSpecification> $LicenseSpecifications
- * @property string $NextToken
+ * @property list<Shapes\LicenseSpecification>|null $LicenseSpecifications
+ * @property string|null $NextToken
  */
 class ListLicenseSpecificationsForResourceResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Type
+ * @property string|null $Type
  */
 class GlueStudioSchemaColumn extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Type?: string
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args)

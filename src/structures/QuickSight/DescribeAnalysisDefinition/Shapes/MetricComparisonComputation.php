@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ComputationId
- * @property string $Name
- * @property DimensionField $Time
- * @property MeasureField $FromValue
- * @property MeasureField $TargetValue
+ * @property string|null $Name
+ * @property DimensionField|null $Time
+ * @property MeasureField|null $FromValue
+ * @property MeasureField|null $TargetValue
  */
 class MetricComparisonComputation extends Shape
 {
     /**
      * @param array{
      *     ComputationId: string,
-     *     Name?: string,
-     *     Time?: DimensionField,
-     *     FromValue?: MeasureField,
-     *     TargetValue?: MeasureField
+     *     Name?: string|null,
+     *     Time?: DimensionField|null,
+     *     FromValue?: MeasureField|null,
+     *     TargetValue?: MeasureField|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DeliveryStreamName
- * @property string $ExclusiveStartTagKey
- * @property int<1, 50> $Limit
+ * @property string|null $ExclusiveStartTagKey
+ * @property int<1, 50>|null $Limit
  */
 class ListTagsForDeliveryStreamRequest extends Request
 {
     /**
      * @param array{
      *     DeliveryStreamName: string,
-     *     ExclusiveStartTagKey?: string,
-     *     Limit?: int<1, 50>
+     *     ExclusiveStartTagKey?: string|null,
+     *     Limit?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

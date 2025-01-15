@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AnomalyDetectorArn
  * @property string $AnomalyGroupId
  * @property string $MetricName
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListAnomalyGroupTimeSeriesRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListAnomalyGroupTimeSeriesRequest extends Request
      *     AnomalyDetectorArn: string,
      *     AnomalyGroupId: string,
      *     MetricName: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

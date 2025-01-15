@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEC2InstanceRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $instanceType
- * @property GpuInfo $instanceGpuInfo
- * @property list<UtilizationMetric> $projectedUtilizationMetrics
- * @property list<'Hypervisor'|'NetworkInterface'|'StorageInterface'|'InstanceStoreAvailability'|'VirtualizationType'|'Architecture'> $platformDifferences
- * @property double $performanceRisk
- * @property int $rank
- * @property SavingsOpportunity $savingsOpportunity
- * @property InstanceSavingsOpportunityAfterDiscounts $savingsOpportunityAfterDiscounts
- * @property 'VeryLow'|'Low'|'Medium'|'High' $migrationEffort
+ * @property string|null $instanceType
+ * @property GpuInfo|null $instanceGpuInfo
+ * @property list<UtilizationMetric>|null $projectedUtilizationMetrics
+ * @property list<'Hypervisor'|'NetworkInterface'|'StorageInterface'|'InstanceStoreAvailability'|'VirtualizationType'|'Architecture'>|null $platformDifferences
+ * @property double|null $performanceRisk
+ * @property int|null $rank
+ * @property SavingsOpportunity|null $savingsOpportunity
+ * @property InstanceSavingsOpportunityAfterDiscounts|null $savingsOpportunityAfterDiscounts
+ * @property 'VeryLow'|'Low'|'Medium'|'High'|null $migrationEffort
  */
 class InstanceRecommendationOption extends Shape
 {
     /**
      * @param array{
-     *     instanceType?: string,
-     *     instanceGpuInfo?: GpuInfo,
-     *     projectedUtilizationMetrics?: list<UtilizationMetric>,
-     *     platformDifferences?: list<'Hypervisor'|'NetworkInterface'|'StorageInterface'|'InstanceStoreAvailability'|'VirtualizationType'|'Architecture'>,
-     *     performanceRisk?: double,
-     *     rank?: int,
-     *     savingsOpportunity?: SavingsOpportunity,
-     *     savingsOpportunityAfterDiscounts?: InstanceSavingsOpportunityAfterDiscounts,
-     *     migrationEffort?: 'VeryLow'|'Low'|'Medium'|'High'
+     *     instanceType?: string|null,
+     *     instanceGpuInfo?: GpuInfo|null,
+     *     projectedUtilizationMetrics?: list<UtilizationMetric>|null,
+     *     platformDifferences?: list<'Hypervisor'|'NetworkInterface'|'StorageInterface'|'InstanceStoreAvailability'|'VirtualizationType'|'Architecture'>|null,
+     *     performanceRisk?: double|null,
+     *     rank?: int|null,
+     *     savingsOpportunity?: SavingsOpportunity|null,
+     *     savingsOpportunityAfterDiscounts?: InstanceSavingsOpportunityAfterDiscounts|null,
+     *     migrationEffort?: 'VeryLow'|'Low'|'Medium'|'High'|null
      * } $args
      */
     public function __construct(array $args = [])

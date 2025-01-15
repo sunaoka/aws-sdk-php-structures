@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ResponseSpecification $waitingResponse
  * @property ResponseSpecification $continueResponse
- * @property StillWaitingResponseSpecification $stillWaitingResponse
- * @property bool $active
+ * @property StillWaitingResponseSpecification|null $stillWaitingResponse
+ * @property bool|null $active
  */
 class WaitAndContinueSpecification extends Shape
 {
@@ -16,8 +16,8 @@ class WaitAndContinueSpecification extends Shape
      * @param array{
      *     waitingResponse: ResponseSpecification,
      *     continueResponse: ResponseSpecification,
-     *     stillWaitingResponse?: StillWaitingResponseSpecification,
-     *     active?: bool
+     *     stillWaitingResponse?: StillWaitingResponseSpecification|null,
+     *     active?: bool|null
      * } $args
      */
     public function __construct(array $args)

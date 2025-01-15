@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ListAssetModels;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<'ASSET_MODEL'|'COMPONENT_MODEL'> $assetModelTypes
- * @property string $nextToken
- * @property int<1, 250> $maxResults
- * @property string $assetModelVersion
+ * @property list<'ASSET_MODEL'|'COMPONENT_MODEL'>|null $assetModelTypes
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
+ * @property string|null $assetModelVersion
  */
 class ListAssetModelsRequest extends Request
 {
     /**
      * @param array{
-     *     assetModelTypes?: list<'ASSET_MODEL'|'COMPONENT_MODEL'>,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>,
-     *     assetModelVersion?: string
+     *     assetModelTypes?: list<'ASSET_MODEL'|'COMPONENT_MODEL'>|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null,
+     *     assetModelVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

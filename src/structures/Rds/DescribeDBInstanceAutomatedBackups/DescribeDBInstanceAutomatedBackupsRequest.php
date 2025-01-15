@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBInstanceAutomatedBackups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DbiResourceId
- * @property string $DBInstanceIdentifier
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $Marker
- * @property string $DBInstanceAutomatedBackupsArn
+ * @property string|null $DbiResourceId
+ * @property string|null $DBInstanceIdentifier
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property string|null $DBInstanceAutomatedBackupsArn
  */
 class DescribeDBInstanceAutomatedBackupsRequest extends Request
 {
     /**
      * @param array{
-     *     DbiResourceId?: string,
-     *     DBInstanceIdentifier?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     DBInstanceAutomatedBackupsArn?: string
+     *     DbiResourceId?: string|null,
+     *     DBInstanceIdentifier?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     DBInstanceAutomatedBackupsArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

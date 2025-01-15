@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetAnswer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WorkloadId
- * @property int<1, 100> $MilestoneNumber
- * @property string $LensAlias
- * @property string $LensArn
- * @property Shapes\Answer $Answer
+ * @property string|null $WorkloadId
+ * @property int<1, 100>|null $MilestoneNumber
+ * @property string|null $LensAlias
+ * @property string|null $LensArn
+ * @property Shapes\Answer|null $Answer
  */
 class GetAnswerResponse extends Response
 {

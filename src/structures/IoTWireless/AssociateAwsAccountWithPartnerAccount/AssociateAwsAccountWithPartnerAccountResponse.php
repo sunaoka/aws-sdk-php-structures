@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTWireless\AssociateAwsAccountWithPartnerAccou
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SidewalkAccountInfo $Sidewalk
- * @property string $Arn
+ * @property Shapes\SidewalkAccountInfo|null $Sidewalk
+ * @property string|null $Arn
  */
 class AssociateAwsAccountWithPartnerAccountResponse extends Response
 {

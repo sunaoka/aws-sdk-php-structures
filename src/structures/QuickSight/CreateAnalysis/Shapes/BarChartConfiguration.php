@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BarChartFieldWells $FieldWells
- * @property BarChartSortConfiguration $SortConfiguration
- * @property 'HORIZONTAL'|'VERTICAL' $Orientation
- * @property 'CLUSTERED'|'STACKED'|'STACKED_PERCENT' $BarsArrangement
- * @property VisualPalette $VisualPalette
- * @property SmallMultiplesOptions $SmallMultiplesOptions
- * @property AxisDisplayOptions $CategoryAxis
- * @property ChartAxisLabelOptions $CategoryLabelOptions
- * @property AxisDisplayOptions $ValueAxis
- * @property ChartAxisLabelOptions $ValueLabelOptions
- * @property ChartAxisLabelOptions $ColorLabelOptions
- * @property LegendOptions $Legend
- * @property DataLabelOptions $DataLabels
- * @property TooltipOptions $Tooltip
- * @property list<ReferenceLine> $ReferenceLines
- * @property list<ContributionAnalysisDefault> $ContributionAnalysisDefaults
- * @property VisualInteractionOptions $Interactions
+ * @property BarChartFieldWells|null $FieldWells
+ * @property BarChartSortConfiguration|null $SortConfiguration
+ * @property 'HORIZONTAL'|'VERTICAL'|null $Orientation
+ * @property 'CLUSTERED'|'STACKED'|'STACKED_PERCENT'|null $BarsArrangement
+ * @property VisualPalette|null $VisualPalette
+ * @property SmallMultiplesOptions|null $SmallMultiplesOptions
+ * @property AxisDisplayOptions|null $CategoryAxis
+ * @property ChartAxisLabelOptions|null $CategoryLabelOptions
+ * @property AxisDisplayOptions|null $ValueAxis
+ * @property ChartAxisLabelOptions|null $ValueLabelOptions
+ * @property ChartAxisLabelOptions|null $ColorLabelOptions
+ * @property LegendOptions|null $Legend
+ * @property DataLabelOptions|null $DataLabels
+ * @property TooltipOptions|null $Tooltip
+ * @property list<ReferenceLine>|null $ReferenceLines
+ * @property list<ContributionAnalysisDefault>|null $ContributionAnalysisDefaults
+ * @property VisualInteractionOptions|null $Interactions
  */
 class BarChartConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: BarChartFieldWells,
-     *     SortConfiguration?: BarChartSortConfiguration,
-     *     Orientation?: 'HORIZONTAL'|'VERTICAL',
-     *     BarsArrangement?: 'CLUSTERED'|'STACKED'|'STACKED_PERCENT',
-     *     VisualPalette?: VisualPalette,
-     *     SmallMultiplesOptions?: SmallMultiplesOptions,
-     *     CategoryAxis?: AxisDisplayOptions,
-     *     CategoryLabelOptions?: ChartAxisLabelOptions,
-     *     ValueAxis?: AxisDisplayOptions,
-     *     ValueLabelOptions?: ChartAxisLabelOptions,
-     *     ColorLabelOptions?: ChartAxisLabelOptions,
-     *     Legend?: LegendOptions,
-     *     DataLabels?: DataLabelOptions,
-     *     Tooltip?: TooltipOptions,
-     *     ReferenceLines?: list<ReferenceLine>,
-     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: BarChartFieldWells|null,
+     *     SortConfiguration?: BarChartSortConfiguration|null,
+     *     Orientation?: 'HORIZONTAL'|'VERTICAL'|null,
+     *     BarsArrangement?: 'CLUSTERED'|'STACKED'|'STACKED_PERCENT'|null,
+     *     VisualPalette?: VisualPalette|null,
+     *     SmallMultiplesOptions?: SmallMultiplesOptions|null,
+     *     CategoryAxis?: AxisDisplayOptions|null,
+     *     CategoryLabelOptions?: ChartAxisLabelOptions|null,
+     *     ValueAxis?: AxisDisplayOptions|null,
+     *     ValueLabelOptions?: ChartAxisLabelOptions|null,
+     *     ColorLabelOptions?: ChartAxisLabelOptions|null,
+     *     Legend?: LegendOptions|null,
+     *     DataLabels?: DataLabelOptions|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     ReferenceLines?: list<ReferenceLine>|null,
+     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

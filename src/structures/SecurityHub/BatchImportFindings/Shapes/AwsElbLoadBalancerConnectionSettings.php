@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $IdleTimeout
+ * @property int|null $IdleTimeout
  */
 class AwsElbLoadBalancerConnectionSettings extends Shape
 {
     /**
-     * @param array{IdleTimeout?: int} $args
+     * @param array{IdleTimeout?: int|null} $args
      */
     public function __construct(array $args = [])
     {

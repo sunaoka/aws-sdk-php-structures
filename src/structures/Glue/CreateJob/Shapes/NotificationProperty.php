@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, max> $NotifyDelayAfter
+ * @property int<1, max>|null $NotifyDelayAfter
  */
 class NotificationProperty extends Shape
 {
     /**
-     * @param array{NotifyDelayAfter?: int<1, max>} $args
+     * @param array{NotifyDelayAfter?: int<1, max>|null} $args
      */
     public function __construct(array $args = [])
     {

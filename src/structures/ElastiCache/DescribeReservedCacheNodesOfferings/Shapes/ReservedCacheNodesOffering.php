@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeReservedCacheNodesOfferings
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedCacheNodesOfferingId
- * @property string $CacheNodeType
- * @property int $Duration
- * @property double $FixedPrice
- * @property double $UsagePrice
- * @property string $ProductDescription
- * @property string $OfferingType
- * @property list<RecurringCharge> $RecurringCharges
+ * @property string|null $ReservedCacheNodesOfferingId
+ * @property string|null $CacheNodeType
+ * @property int|null $Duration
+ * @property double|null $FixedPrice
+ * @property double|null $UsagePrice
+ * @property string|null $ProductDescription
+ * @property string|null $OfferingType
+ * @property list<RecurringCharge>|null $RecurringCharges
  */
 class ReservedCacheNodesOffering extends Shape
 {
     /**
      * @param array{
-     *     ReservedCacheNodesOfferingId?: string,
-     *     CacheNodeType?: string,
-     *     Duration?: int,
-     *     FixedPrice?: double,
-     *     UsagePrice?: double,
-     *     ProductDescription?: string,
-     *     OfferingType?: string,
-     *     RecurringCharges?: list<RecurringCharge>
+     *     ReservedCacheNodesOfferingId?: string|null,
+     *     CacheNodeType?: string|null,
+     *     Duration?: int|null,
+     *     FixedPrice?: double|null,
+     *     UsagePrice?: double|null,
+     *     ProductDescription?: string|null,
+     *     OfferingType?: string|null,
+     *     RecurringCharges?: list<RecurringCharge>|null
      * } $args
      */
     public function __construct(array $args = [])

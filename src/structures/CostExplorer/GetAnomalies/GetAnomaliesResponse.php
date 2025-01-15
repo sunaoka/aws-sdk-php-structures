@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Anomaly> $Anomalies
- * @property string $NextPageToken
+ * @property string|null $NextPageToken
  */
 class GetAnomaliesResponse extends Response
 {

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ImportToken
  * @property string $WrappedKeyBlock
  * @property 'X9_TR34_2012' $KeyBlockFormat
- * @property string $RandomNonce
+ * @property string|null $RandomNonce
  */
 class ImportTr34KeyBlock extends Shape
 {
@@ -21,7 +21,7 @@ class ImportTr34KeyBlock extends Shape
      *     ImportToken: string,
      *     WrappedKeyBlock: string,
      *     KeyBlockFormat: 'X9_TR34_2012',
-     *     RandomNonce?: string
+     *     RandomNonce?: string|null
      * } $args
      */
     public function __construct(array $args)

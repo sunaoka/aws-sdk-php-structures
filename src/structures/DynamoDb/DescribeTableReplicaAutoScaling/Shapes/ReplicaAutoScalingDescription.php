@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeTableReplicaAutoScaling\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegionName
- * @property list<ReplicaGlobalSecondaryIndexAutoScalingDescription> $GlobalSecondaryIndexes
- * @property AutoScalingSettingsDescription $ReplicaProvisionedReadCapacityAutoScalingSettings
- * @property AutoScalingSettingsDescription $ReplicaProvisionedWriteCapacityAutoScalingSettings
- * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS' $ReplicaStatus
+ * @property string|null $RegionName
+ * @property list<ReplicaGlobalSecondaryIndexAutoScalingDescription>|null $GlobalSecondaryIndexes
+ * @property AutoScalingSettingsDescription|null $ReplicaProvisionedReadCapacityAutoScalingSettings
+ * @property AutoScalingSettingsDescription|null $ReplicaProvisionedWriteCapacityAutoScalingSettings
+ * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null $ReplicaStatus
  */
 class ReplicaAutoScalingDescription extends Shape
 {
     /**
      * @param array{
-     *     RegionName?: string,
-     *     GlobalSecondaryIndexes?: list<ReplicaGlobalSecondaryIndexAutoScalingDescription>,
-     *     ReplicaProvisionedReadCapacityAutoScalingSettings?: AutoScalingSettingsDescription,
-     *     ReplicaProvisionedWriteCapacityAutoScalingSettings?: AutoScalingSettingsDescription,
-     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'
+     *     RegionName?: string|null,
+     *     GlobalSecondaryIndexes?: list<ReplicaGlobalSecondaryIndexAutoScalingDescription>|null,
+     *     ReplicaProvisionedReadCapacityAutoScalingSettings?: AutoScalingSettingsDescription|null,
+     *     ReplicaProvisionedWriteCapacityAutoScalingSettings?: AutoScalingSettingsDescription|null,
+     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null
      * } $args
      */
     public function __construct(array $args = [])

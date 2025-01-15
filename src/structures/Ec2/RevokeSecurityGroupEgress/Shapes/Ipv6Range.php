@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\RevokeSecurityGroupEgress\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $CidrIpv6
+ * @property string|null $Description
+ * @property string|null $CidrIpv6
  */
 class Ipv6Range extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     CidrIpv6?: string
+     *     Description?: string|null,
+     *     CidrIpv6?: string|null
      * } $args
      */
     public function __construct(array $args = [])

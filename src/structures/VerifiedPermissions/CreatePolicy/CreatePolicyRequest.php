@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\VerifiedPermissions\CreatePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $policyStoreId
  * @property Shapes\PolicyDefinition $definition
  */
@@ -13,7 +13,7 @@ class CreatePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     policyStoreId: string,
      *     definition: Shapes\PolicyDefinition
      * } $args

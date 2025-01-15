@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProvisionedProductId
- * @property string $ProvisionedProductStatusMessage
+ * @property string|null $ProvisionedProductId
+ * @property string|null $ProvisionedProductStatusMessage
  */
 class ServiceCatalogProvisionedProductDetails extends Shape
 {
     /**
      * @param array{
-     *     ProvisionedProductId?: string,
-     *     ProvisionedProductStatusMessage?: string
+     *     ProvisionedProductId?: string|null,
+     *     ProvisionedProductStatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

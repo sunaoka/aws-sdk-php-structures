@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeScheduledInstanceAvailability\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Frequency
- * @property int $Interval
- * @property list<int> $OccurrenceDays
- * @property bool $OccurrenceRelativeToEnd
- * @property string $OccurrenceUnit
+ * @property string|null $Frequency
+ * @property int|null $Interval
+ * @property list<int>|null $OccurrenceDays
+ * @property bool|null $OccurrenceRelativeToEnd
+ * @property string|null $OccurrenceUnit
  */
 class ScheduledInstanceRecurrenceRequest extends Shape
 {
     /**
      * @param array{
-     *     Frequency?: string,
-     *     Interval?: int,
-     *     OccurrenceDays?: list<int>,
-     *     OccurrenceRelativeToEnd?: bool,
-     *     OccurrenceUnit?: string
+     *     Frequency?: string|null,
+     *     Interval?: int|null,
+     *     OccurrenceDays?: list<int>|null,
+     *     OccurrenceRelativeToEnd?: bool|null,
+     *     OccurrenceUnit?: string|null
      * } $args
      */
     public function __construct(array $args = [])

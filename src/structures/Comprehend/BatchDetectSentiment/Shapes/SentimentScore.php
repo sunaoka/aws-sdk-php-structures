@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Comprehend\BatchDetectSentiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Positive
- * @property float $Negative
- * @property float $Neutral
- * @property float $Mixed
+ * @property float|null $Positive
+ * @property float|null $Negative
+ * @property float|null $Neutral
+ * @property float|null $Mixed
  */
 class SentimentScore extends Shape
 {
     /**
      * @param array{
-     *     Positive?: float,
-     *     Negative?: float,
-     *     Neutral?: float,
-     *     Mixed?: float
+     *     Positive?: float|null,
+     *     Negative?: float|null,
+     *     Neutral?: float|null,
+     *     Mixed?: float|null
      * } $args
      */
     public function __construct(array $args = [])

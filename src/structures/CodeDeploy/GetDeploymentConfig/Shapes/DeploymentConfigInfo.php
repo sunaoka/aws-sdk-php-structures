@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeploymentConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $deploymentConfigId
- * @property string $deploymentConfigName
- * @property MinimumHealthyHosts $minimumHealthyHosts
- * @property \Aws\Api\DateTimeResult $createTime
- * @property 'Server'|'Lambda'|'ECS' $computePlatform
- * @property TrafficRoutingConfig $trafficRoutingConfig
- * @property ZonalConfig $zonalConfig
+ * @property string|null $deploymentConfigId
+ * @property string|null $deploymentConfigName
+ * @property MinimumHealthyHosts|null $minimumHealthyHosts
+ * @property \Aws\Api\DateTimeResult|null $createTime
+ * @property 'Server'|'Lambda'|'ECS'|null $computePlatform
+ * @property TrafficRoutingConfig|null $trafficRoutingConfig
+ * @property ZonalConfig|null $zonalConfig
  */
 class DeploymentConfigInfo extends Shape
 {
     /**
      * @param array{
-     *     deploymentConfigId?: string,
-     *     deploymentConfigName?: string,
-     *     minimumHealthyHosts?: MinimumHealthyHosts,
-     *     createTime?: \Aws\Api\DateTimeResult,
-     *     computePlatform?: 'Server'|'Lambda'|'ECS',
-     *     trafficRoutingConfig?: TrafficRoutingConfig,
-     *     zonalConfig?: ZonalConfig
+     *     deploymentConfigId?: string|null,
+     *     deploymentConfigName?: string|null,
+     *     minimumHealthyHosts?: MinimumHealthyHosts|null,
+     *     createTime?: \Aws\Api\DateTimeResult|null,
+     *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
+     *     trafficRoutingConfig?: TrafficRoutingConfig|null,
+     *     zonalConfig?: ZonalConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ivschat\CreateLoggingConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $name
+ * @property string|null $name
  * @property Shapes\DestinationConfiguration $destinationConfiguration
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateLoggingConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     name?: string,
+     *     name?: string|null,
      *     destinationConfiguration: Shapes\DestinationConfiguration,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

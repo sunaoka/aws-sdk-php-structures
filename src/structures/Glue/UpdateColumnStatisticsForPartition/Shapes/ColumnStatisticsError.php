@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateColumnStatisticsForPartition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ColumnStatistics $ColumnStatistics
- * @property ErrorDetail $Error
+ * @property ColumnStatistics|null $ColumnStatistics
+ * @property ErrorDetail|null $Error
  */
 class ColumnStatisticsError extends Shape
 {
     /**
      * @param array{
-     *     ColumnStatistics?: ColumnStatistics,
-     *     Error?: ErrorDetail
+     *     ColumnStatistics?: ColumnStatistics|null,
+     *     Error?: ErrorDetail|null
      * } $args
      */
     public function __construct(array $args = [])

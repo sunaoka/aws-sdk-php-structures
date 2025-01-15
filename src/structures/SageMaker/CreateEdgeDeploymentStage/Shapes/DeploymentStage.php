@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $StageName
  * @property DeviceSelectionConfig $DeviceSelectionConfig
- * @property EdgeDeploymentConfig $DeploymentConfig
+ * @property EdgeDeploymentConfig|null $DeploymentConfig
  */
 class DeploymentStage extends Shape
 {
@@ -15,7 +15,7 @@ class DeploymentStage extends Shape
      * @param array{
      *     StageName: string,
      *     DeviceSelectionConfig: DeviceSelectionConfig,
-     *     DeploymentConfig?: EdgeDeploymentConfig
+     *     DeploymentConfig?: EdgeDeploymentConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $assistantArn
  * @property string $assistantId
- * @property string $description
- * @property AssistantIntegrationConfiguration $integrationConfiguration
+ * @property string|null $description
+ * @property AssistantIntegrationConfiguration|null $integrationConfiguration
  * @property string $name
- * @property ServerSideEncryptionConfiguration $serverSideEncryptionConfiguration
+ * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED' $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property 'AGENT' $type
  */
 class AssistantSummary extends Shape
@@ -21,12 +21,12 @@ class AssistantSummary extends Shape
      * @param array{
      *     assistantArn: string,
      *     assistantId: string,
-     *     description?: string,
-     *     integrationConfiguration?: AssistantIntegrationConfiguration,
+     *     description?: string|null,
+     *     integrationConfiguration?: AssistantIntegrationConfiguration|null,
      *     name: string,
-     *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration,
+     *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED',
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     type: 'AGENT'
      * } $args
      */

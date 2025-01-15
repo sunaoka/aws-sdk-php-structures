@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\ListCustomRoutingEndpointGrou
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndpointId
+ * @property string|null $EndpointId
  */
 class CustomRoutingEndpointDescription extends Shape
 {
     /**
-     * @param array{EndpointId?: string} $args
+     * @param array{EndpointId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

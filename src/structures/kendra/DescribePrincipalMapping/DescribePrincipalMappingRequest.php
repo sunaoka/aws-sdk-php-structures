@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IndexId
- * @property string $DataSourceId
+ * @property string|null $DataSourceId
  * @property string $GroupId
  */
 class DescribePrincipalMappingRequest extends Request
@@ -14,7 +14,7 @@ class DescribePrincipalMappingRequest extends Request
     /**
      * @param array{
      *     IndexId: string,
-     *     DataSourceId?: string,
+     *     DataSourceId?: string|null,
      *     GroupId: string
      * } $args
      */

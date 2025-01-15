@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVerifiedAccessInstanceLoggingConfigur
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property VerifiedAccessLogDeliveryStatus $DeliveryStatus
- * @property string $DeliveryStream
+ * @property bool|null $Enabled
+ * @property VerifiedAccessLogDeliveryStatus|null $DeliveryStatus
+ * @property string|null $DeliveryStream
  */
 class VerifiedAccessLogKinesisDataFirehoseDestination extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     DeliveryStatus?: VerifiedAccessLogDeliveryStatus,
-     *     DeliveryStream?: string
+     *     Enabled?: bool|null,
+     *     DeliveryStatus?: VerifiedAccessLogDeliveryStatus|null,
+     *     DeliveryStream?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AffectedSubnets
- * @property string $RouteTableId
- * @property bool $IsRouteTableUsedInDifferentAZ
- * @property Route $ViolatingRoute
- * @property string $CurrentFirewallSubnetRouteTable
- * @property string $ExpectedFirewallEndpoint
- * @property string $ActualFirewallEndpoint
- * @property string $ExpectedFirewallSubnetId
- * @property string $ActualFirewallSubnetId
- * @property list<ExpectedRoute> $ExpectedFirewallSubnetRoutes
- * @property list<Route> $ActualFirewallSubnetRoutes
- * @property string $InternetGatewayId
- * @property string $CurrentInternetGatewayRouteTable
- * @property list<ExpectedRoute> $ExpectedInternetGatewayRoutes
- * @property list<Route> $ActualInternetGatewayRoutes
- * @property string $VpcId
+ * @property list<string>|null $AffectedSubnets
+ * @property string|null $RouteTableId
+ * @property bool|null $IsRouteTableUsedInDifferentAZ
+ * @property Route|null $ViolatingRoute
+ * @property string|null $CurrentFirewallSubnetRouteTable
+ * @property string|null $ExpectedFirewallEndpoint
+ * @property string|null $ActualFirewallEndpoint
+ * @property string|null $ExpectedFirewallSubnetId
+ * @property string|null $ActualFirewallSubnetId
+ * @property list<ExpectedRoute>|null $ExpectedFirewallSubnetRoutes
+ * @property list<Route>|null $ActualFirewallSubnetRoutes
+ * @property string|null $InternetGatewayId
+ * @property string|null $CurrentInternetGatewayRouteTable
+ * @property list<ExpectedRoute>|null $ExpectedInternetGatewayRoutes
+ * @property list<Route>|null $ActualInternetGatewayRoutes
+ * @property string|null $VpcId
  */
 class NetworkFirewallInvalidRouteConfigurationViolation extends Shape
 {
     /**
      * @param array{
-     *     AffectedSubnets?: list<string>,
-     *     RouteTableId?: string,
-     *     IsRouteTableUsedInDifferentAZ?: bool,
-     *     ViolatingRoute?: Route,
-     *     CurrentFirewallSubnetRouteTable?: string,
-     *     ExpectedFirewallEndpoint?: string,
-     *     ActualFirewallEndpoint?: string,
-     *     ExpectedFirewallSubnetId?: string,
-     *     ActualFirewallSubnetId?: string,
-     *     ExpectedFirewallSubnetRoutes?: list<ExpectedRoute>,
-     *     ActualFirewallSubnetRoutes?: list<Route>,
-     *     InternetGatewayId?: string,
-     *     CurrentInternetGatewayRouteTable?: string,
-     *     ExpectedInternetGatewayRoutes?: list<ExpectedRoute>,
-     *     ActualInternetGatewayRoutes?: list<Route>,
-     *     VpcId?: string
+     *     AffectedSubnets?: list<string>|null,
+     *     RouteTableId?: string|null,
+     *     IsRouteTableUsedInDifferentAZ?: bool|null,
+     *     ViolatingRoute?: Route|null,
+     *     CurrentFirewallSubnetRouteTable?: string|null,
+     *     ExpectedFirewallEndpoint?: string|null,
+     *     ActualFirewallEndpoint?: string|null,
+     *     ExpectedFirewallSubnetId?: string|null,
+     *     ActualFirewallSubnetId?: string|null,
+     *     ExpectedFirewallSubnetRoutes?: list<ExpectedRoute>|null,
+     *     ActualFirewallSubnetRoutes?: list<Route>|null,
+     *     InternetGatewayId?: string|null,
+     *     CurrentInternetGatewayRouteTable?: string|null,
+     *     ExpectedInternetGatewayRoutes?: list<ExpectedRoute>|null,
+     *     ActualInternetGatewayRoutes?: list<Route>|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

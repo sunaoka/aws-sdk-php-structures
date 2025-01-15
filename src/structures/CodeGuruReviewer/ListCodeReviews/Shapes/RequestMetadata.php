@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\ListCodeReviews\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RequestId
- * @property string $Requester
- * @property EventInfo $EventInfo
- * @property 'GitHub'|'GitLab'|'NativeS3' $VendorName
+ * @property string|null $RequestId
+ * @property string|null $Requester
+ * @property EventInfo|null $EventInfo
+ * @property 'GitHub'|'GitLab'|'NativeS3'|null $VendorName
  */
 class RequestMetadata extends Shape
 {
     /**
      * @param array{
-     *     RequestId?: string,
-     *     Requester?: string,
-     *     EventInfo?: EventInfo,
-     *     VendorName?: 'GitHub'|'GitLab'|'NativeS3'
+     *     RequestId?: string|null,
+     *     Requester?: string|null,
+     *     EventInfo?: EventInfo|null,
+     *     VendorName?: 'GitHub'|'GitLab'|'NativeS3'|null
      * } $args
      */
     public function __construct(array $args = [])

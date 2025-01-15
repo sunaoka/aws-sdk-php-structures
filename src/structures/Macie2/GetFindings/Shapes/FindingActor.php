@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DomainDetails $domainDetails
- * @property IpAddressDetails $ipAddressDetails
- * @property UserIdentity $userIdentity
+ * @property DomainDetails|null $domainDetails
+ * @property IpAddressDetails|null $ipAddressDetails
+ * @property UserIdentity|null $userIdentity
  */
 class FindingActor extends Shape
 {
     /**
      * @param array{
-     *     domainDetails?: DomainDetails,
-     *     ipAddressDetails?: IpAddressDetails,
-     *     userIdentity?: UserIdentity
+     *     domainDetails?: DomainDetails|null,
+     *     ipAddressDetails?: IpAddressDetails|null,
+     *     userIdentity?: UserIdentity|null
      * } $args
      */
     public function __construct(array $args = [])

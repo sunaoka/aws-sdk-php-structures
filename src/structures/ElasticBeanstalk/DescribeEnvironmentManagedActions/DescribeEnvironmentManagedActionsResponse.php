@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentManagedActi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ManagedAction> $ManagedActions
+ * @property list<Shapes\ManagedAction>|null $ManagedActions
  */
 class DescribeEnvironmentManagedActionsResponse extends Response
 {

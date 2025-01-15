@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $IPSetId
- * @property string $Name
+ * @property string|null $Name
  * @property list<IPSetDescriptor> $IPSetDescriptors
  */
 class IPSet extends Shape
@@ -14,7 +14,7 @@ class IPSet extends Shape
     /**
      * @param array{
      *     IPSetId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     IPSetDescriptors: list<IPSetDescriptor>
      * } $args
      */

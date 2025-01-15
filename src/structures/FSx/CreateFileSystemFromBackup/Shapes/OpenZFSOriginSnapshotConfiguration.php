@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FSx\CreateFileSystemFromBackup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SnapshotARN
- * @property 'CLONE'|'FULL_COPY'|'INCREMENTAL_COPY' $CopyStrategy
+ * @property string|null $SnapshotARN
+ * @property 'CLONE'|'FULL_COPY'|'INCREMENTAL_COPY'|null $CopyStrategy
  */
 class OpenZFSOriginSnapshotConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SnapshotARN?: string,
-     *     CopyStrategy?: 'CLONE'|'FULL_COPY'|'INCREMENTAL_COPY'
+     *     SnapshotARN?: string|null,
+     *     CopyStrategy?: 'CLONE'|'FULL_COPY'|'INCREMENTAL_COPY'|null
      * } $args
      */
     public function __construct(array $args = [])

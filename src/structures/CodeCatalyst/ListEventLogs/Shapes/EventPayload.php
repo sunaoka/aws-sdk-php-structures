@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCatalyst\ListEventLogs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $contentType
- * @property string $data
+ * @property string|null $contentType
+ * @property string|null $data
  */
 class EventPayload extends Shape
 {
     /**
      * @param array{
-     *     contentType?: string,
-     *     data?: string
+     *     contentType?: string|null,
+     *     data?: string|null
      * } $args
      */
     public function __construct(array $args = [])

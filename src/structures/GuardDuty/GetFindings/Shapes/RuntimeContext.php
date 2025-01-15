@@ -5,61 +5,61 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProcessDetails $ModifyingProcess
- * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property string $ScriptPath
- * @property string $LibraryPath
- * @property string $LdPreloadValue
- * @property string $SocketPath
- * @property string $RuncBinaryPath
- * @property string $ReleaseAgentPath
- * @property string $MountSource
- * @property string $MountTarget
- * @property string $FileSystemType
- * @property list<string> $Flags
- * @property string $ModuleName
- * @property string $ModuleFilePath
- * @property string $ModuleSha256
- * @property string $ShellHistoryFilePath
- * @property ProcessDetails $TargetProcess
- * @property string $AddressFamily
- * @property int $IanaProtocolNumber
- * @property list<string> $MemoryRegions
- * @property string $ToolName
- * @property string $ToolCategory
- * @property string $ServiceName
- * @property string $CommandLineExample
- * @property string $ThreatFilePath
+ * @property ProcessDetails|null $ModifyingProcess
+ * @property \Aws\Api\DateTimeResult|null $ModifiedAt
+ * @property string|null $ScriptPath
+ * @property string|null $LibraryPath
+ * @property string|null $LdPreloadValue
+ * @property string|null $SocketPath
+ * @property string|null $RuncBinaryPath
+ * @property string|null $ReleaseAgentPath
+ * @property string|null $MountSource
+ * @property string|null $MountTarget
+ * @property string|null $FileSystemType
+ * @property list<string>|null $Flags
+ * @property string|null $ModuleName
+ * @property string|null $ModuleFilePath
+ * @property string|null $ModuleSha256
+ * @property string|null $ShellHistoryFilePath
+ * @property ProcessDetails|null $TargetProcess
+ * @property string|null $AddressFamily
+ * @property int|null $IanaProtocolNumber
+ * @property list<string>|null $MemoryRegions
+ * @property string|null $ToolName
+ * @property string|null $ToolCategory
+ * @property string|null $ServiceName
+ * @property string|null $CommandLineExample
+ * @property string|null $ThreatFilePath
  */
 class RuntimeContext extends Shape
 {
     /**
      * @param array{
-     *     ModifyingProcess?: ProcessDetails,
-     *     ModifiedAt?: \Aws\Api\DateTimeResult,
-     *     ScriptPath?: string,
-     *     LibraryPath?: string,
-     *     LdPreloadValue?: string,
-     *     SocketPath?: string,
-     *     RuncBinaryPath?: string,
-     *     ReleaseAgentPath?: string,
-     *     MountSource?: string,
-     *     MountTarget?: string,
-     *     FileSystemType?: string,
-     *     Flags?: list<string>,
-     *     ModuleName?: string,
-     *     ModuleFilePath?: string,
-     *     ModuleSha256?: string,
-     *     ShellHistoryFilePath?: string,
-     *     TargetProcess?: ProcessDetails,
-     *     AddressFamily?: string,
-     *     IanaProtocolNumber?: int,
-     *     MemoryRegions?: list<string>,
-     *     ToolName?: string,
-     *     ToolCategory?: string,
-     *     ServiceName?: string,
-     *     CommandLineExample?: string,
-     *     ThreatFilePath?: string
+     *     ModifyingProcess?: ProcessDetails|null,
+     *     ModifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     ScriptPath?: string|null,
+     *     LibraryPath?: string|null,
+     *     LdPreloadValue?: string|null,
+     *     SocketPath?: string|null,
+     *     RuncBinaryPath?: string|null,
+     *     ReleaseAgentPath?: string|null,
+     *     MountSource?: string|null,
+     *     MountTarget?: string|null,
+     *     FileSystemType?: string|null,
+     *     Flags?: list<string>|null,
+     *     ModuleName?: string|null,
+     *     ModuleFilePath?: string|null,
+     *     ModuleSha256?: string|null,
+     *     ShellHistoryFilePath?: string|null,
+     *     TargetProcess?: ProcessDetails|null,
+     *     AddressFamily?: string|null,
+     *     IanaProtocolNumber?: int|null,
+     *     MemoryRegions?: list<string>|null,
+     *     ToolName?: string|null,
+     *     ToolCategory?: string|null,
+     *     ServiceName?: string|null,
+     *     CommandLineExample?: string|null,
+     *     ThreatFilePath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

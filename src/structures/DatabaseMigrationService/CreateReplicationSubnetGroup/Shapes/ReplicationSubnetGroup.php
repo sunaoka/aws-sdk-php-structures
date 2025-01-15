@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateReplicationSubne
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplicationSubnetGroupIdentifier
- * @property string $ReplicationSubnetGroupDescription
- * @property string $VpcId
- * @property string $SubnetGroupStatus
- * @property list<Subnet> $Subnets
- * @property list<string> $SupportedNetworkTypes
+ * @property string|null $ReplicationSubnetGroupIdentifier
+ * @property string|null $ReplicationSubnetGroupDescription
+ * @property string|null $VpcId
+ * @property string|null $SubnetGroupStatus
+ * @property list<Subnet>|null $Subnets
+ * @property list<string>|null $SupportedNetworkTypes
  */
 class ReplicationSubnetGroup extends Shape
 {
     /**
      * @param array{
-     *     ReplicationSubnetGroupIdentifier?: string,
-     *     ReplicationSubnetGroupDescription?: string,
-     *     VpcId?: string,
-     *     SubnetGroupStatus?: string,
-     *     Subnets?: list<Subnet>,
-     *     SupportedNetworkTypes?: list<string>
+     *     ReplicationSubnetGroupIdentifier?: string|null,
+     *     ReplicationSubnetGroupDescription?: string|null,
+     *     VpcId?: string|null,
+     *     SubnetGroupStatus?: string|null,
+     *     Subnets?: list<Subnet>|null,
+     *     SupportedNetworkTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

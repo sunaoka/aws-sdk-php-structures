@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationGroupId
- * @property bool $RetainPrimaryCluster
- * @property string $FinalSnapshotIdentifier
+ * @property bool|null $RetainPrimaryCluster
+ * @property string|null $FinalSnapshotIdentifier
  */
 class DeleteReplicationGroupRequest extends Request
 {
     /**
      * @param array{
      *     ReplicationGroupId: string,
-     *     RetainPrimaryCluster?: bool,
-     *     FinalSnapshotIdentifier?: string
+     *     RetainPrimaryCluster?: bool|null,
+     *     FinalSnapshotIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

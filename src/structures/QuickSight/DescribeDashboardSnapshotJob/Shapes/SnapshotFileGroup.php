@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardSnapshotJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SnapshotFile> $Files
+ * @property list<SnapshotFile>|null $Files
  */
 class SnapshotFileGroup extends Shape
 {
     /**
-     * @param array{Files?: list<SnapshotFile>} $args
+     * @param array{Files?: list<SnapshotFile>|null} $args
      */
     public function __construct(array $args = [])
     {

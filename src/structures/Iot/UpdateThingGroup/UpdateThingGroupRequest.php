@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $thingGroupName
  * @property Shapes\ThingGroupProperties $thingGroupProperties
- * @property int $expectedVersion
+ * @property int|null $expectedVersion
  */
 class UpdateThingGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateThingGroupRequest extends Request
      * @param array{
      *     thingGroupName: string,
      *     thingGroupProperties: Shapes\ThingGroupProperties,
-     *     expectedVersion?: int
+     *     expectedVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DescribeFirewallPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $FirewallPolicyName
- * @property string $FirewallPolicyArn
+ * @property string|null $FirewallPolicyName
+ * @property string|null $FirewallPolicyArn
  */
 class DescribeFirewallPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     FirewallPolicyName?: string,
-     *     FirewallPolicyArn?: string
+     *     FirewallPolicyName?: string|null,
+     *     FirewallPolicyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

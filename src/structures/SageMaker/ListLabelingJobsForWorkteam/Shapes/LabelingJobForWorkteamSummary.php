@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListLabelingJobsForWorkteam\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LabelingJobName
+ * @property string|null $LabelingJobName
  * @property string $JobReferenceCode
  * @property string $WorkRequesterAccountId
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property LabelCountersForWorkteam $LabelCounters
- * @property int<1, 9> $NumberOfHumanWorkersPerDataObject
+ * @property LabelCountersForWorkteam|null $LabelCounters
+ * @property int<1, 9>|null $NumberOfHumanWorkersPerDataObject
  */
 class LabelingJobForWorkteamSummary extends Shape
 {
     /**
      * @param array{
-     *     LabelingJobName?: string,
+     *     LabelingJobName?: string|null,
      *     JobReferenceCode: string,
      *     WorkRequesterAccountId: string,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     LabelCounters?: LabelCountersForWorkteam,
-     *     NumberOfHumanWorkersPerDataObject?: int<1, 9>
+     *     LabelCounters?: LabelCountersForWorkteam|null,
+     *     NumberOfHumanWorkersPerDataObject?: int<1, 9>|null
      * } $args
      */
     public function __construct(array $args)

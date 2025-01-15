@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property int $VolumeThroughput
+ * @property bool|null $Enabled
+ * @property int|null $VolumeThroughput
  */
 class ProvisionedThroughput extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     VolumeThroughput?: int
+     *     Enabled?: bool|null,
+     *     VolumeThroughput?: int|null
      * } $args
      */
     public function __construct(array $args = [])

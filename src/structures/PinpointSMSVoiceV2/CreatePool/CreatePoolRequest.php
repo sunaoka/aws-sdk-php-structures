@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OriginationIdentity
  * @property string $IsoCountryCode
  * @property 'TRANSACTIONAL'|'PROMOTIONAL' $MessageType
- * @property bool $DeletionProtectionEnabled
- * @property list<Shapes\Tag> $Tags
- * @property string $ClientToken
+ * @property bool|null $DeletionProtectionEnabled
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientToken
  */
 class CreatePoolRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreatePoolRequest extends Request
      *     OriginationIdentity: string,
      *     IsoCountryCode: string,
      *     MessageType: 'TRANSACTIONAL'|'PROMOTIONAL',
-     *     DeletionProtectionEnabled?: bool,
-     *     Tags?: list<Shapes\Tag>,
-     *     ClientToken?: string
+     *     DeletionProtectionEnabled?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

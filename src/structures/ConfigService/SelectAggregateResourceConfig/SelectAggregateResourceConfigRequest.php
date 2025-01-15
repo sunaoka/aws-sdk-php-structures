@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Expression
  * @property string $ConfigurationAggregatorName
- * @property int<0, 100> $Limit
- * @property int<0, 100> $MaxResults
- * @property string $NextToken
+ * @property int<0, 100>|null $Limit
+ * @property int<0, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class SelectAggregateResourceConfigRequest extends Request
 {
@@ -17,9 +17,9 @@ class SelectAggregateResourceConfigRequest extends Request
      * @param array{
      *     Expression: string,
      *     ConfigurationAggregatorName: string,
-     *     Limit?: int<0, 100>,
-     *     MaxResults?: int<0, 100>,
-     *     NextToken?: string
+     *     Limit?: int<0, 100>|null,
+     *     MaxResults?: int<0, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

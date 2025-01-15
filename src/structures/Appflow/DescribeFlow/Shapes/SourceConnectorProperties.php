@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AmplitudeSourceProperties $Amplitude
- * @property DatadogSourceProperties $Datadog
- * @property DynatraceSourceProperties $Dynatrace
- * @property GoogleAnalyticsSourceProperties $GoogleAnalytics
- * @property InforNexusSourceProperties $InforNexus
- * @property MarketoSourceProperties $Marketo
- * @property S3SourceProperties $S3
- * @property SalesforceSourceProperties $Salesforce
- * @property ServiceNowSourceProperties $ServiceNow
- * @property SingularSourceProperties $Singular
- * @property SlackSourceProperties $Slack
- * @property TrendmicroSourceProperties $Trendmicro
- * @property VeevaSourceProperties $Veeva
- * @property ZendeskSourceProperties $Zendesk
- * @property SAPODataSourceProperties $SAPOData
- * @property CustomConnectorSourceProperties $CustomConnector
- * @property PardotSourceProperties $Pardot
+ * @property AmplitudeSourceProperties|null $Amplitude
+ * @property DatadogSourceProperties|null $Datadog
+ * @property DynatraceSourceProperties|null $Dynatrace
+ * @property GoogleAnalyticsSourceProperties|null $GoogleAnalytics
+ * @property InforNexusSourceProperties|null $InforNexus
+ * @property MarketoSourceProperties|null $Marketo
+ * @property S3SourceProperties|null $S3
+ * @property SalesforceSourceProperties|null $Salesforce
+ * @property ServiceNowSourceProperties|null $ServiceNow
+ * @property SingularSourceProperties|null $Singular
+ * @property SlackSourceProperties|null $Slack
+ * @property TrendmicroSourceProperties|null $Trendmicro
+ * @property VeevaSourceProperties|null $Veeva
+ * @property ZendeskSourceProperties|null $Zendesk
+ * @property SAPODataSourceProperties|null $SAPOData
+ * @property CustomConnectorSourceProperties|null $CustomConnector
+ * @property PardotSourceProperties|null $Pardot
  */
 class SourceConnectorProperties extends Shape
 {
     /**
      * @param array{
-     *     Amplitude?: AmplitudeSourceProperties,
-     *     Datadog?: DatadogSourceProperties,
-     *     Dynatrace?: DynatraceSourceProperties,
-     *     GoogleAnalytics?: GoogleAnalyticsSourceProperties,
-     *     InforNexus?: InforNexusSourceProperties,
-     *     Marketo?: MarketoSourceProperties,
-     *     S3?: S3SourceProperties,
-     *     Salesforce?: SalesforceSourceProperties,
-     *     ServiceNow?: ServiceNowSourceProperties,
-     *     Singular?: SingularSourceProperties,
-     *     Slack?: SlackSourceProperties,
-     *     Trendmicro?: TrendmicroSourceProperties,
-     *     Veeva?: VeevaSourceProperties,
-     *     Zendesk?: ZendeskSourceProperties,
-     *     SAPOData?: SAPODataSourceProperties,
-     *     CustomConnector?: CustomConnectorSourceProperties,
-     *     Pardot?: PardotSourceProperties
+     *     Amplitude?: AmplitudeSourceProperties|null,
+     *     Datadog?: DatadogSourceProperties|null,
+     *     Dynatrace?: DynatraceSourceProperties|null,
+     *     GoogleAnalytics?: GoogleAnalyticsSourceProperties|null,
+     *     InforNexus?: InforNexusSourceProperties|null,
+     *     Marketo?: MarketoSourceProperties|null,
+     *     S3?: S3SourceProperties|null,
+     *     Salesforce?: SalesforceSourceProperties|null,
+     *     ServiceNow?: ServiceNowSourceProperties|null,
+     *     Singular?: SingularSourceProperties|null,
+     *     Slack?: SlackSourceProperties|null,
+     *     Trendmicro?: TrendmicroSourceProperties|null,
+     *     Veeva?: VeevaSourceProperties|null,
+     *     Zendesk?: ZendeskSourceProperties|null,
+     *     SAPOData?: SAPODataSourceProperties|null,
+     *     CustomConnector?: CustomConnectorSourceProperties|null,
+     *     Pardot?: PardotSourceProperties|null
      * } $args
      */
     public function __construct(array $args = [])

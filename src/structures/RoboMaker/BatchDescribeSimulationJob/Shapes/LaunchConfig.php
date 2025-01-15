@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\RoboMaker\BatchDescribeSimulationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $packageName
- * @property string $launchFile
- * @property array<string, string> $environmentVariables
- * @property PortForwardingConfig $portForwardingConfig
- * @property bool $streamUI
- * @property list<string> $command
+ * @property string|null $packageName
+ * @property string|null $launchFile
+ * @property array<string, string>|null $environmentVariables
+ * @property PortForwardingConfig|null $portForwardingConfig
+ * @property bool|null $streamUI
+ * @property list<string>|null $command
  */
 class LaunchConfig extends Shape
 {
     /**
      * @param array{
-     *     packageName?: string,
-     *     launchFile?: string,
-     *     environmentVariables?: array<string, string>,
-     *     portForwardingConfig?: PortForwardingConfig,
-     *     streamUI?: bool,
-     *     command?: list<string>
+     *     packageName?: string|null,
+     *     launchFile?: string|null,
+     *     environmentVariables?: array<string, string>|null,
+     *     portForwardingConfig?: PortForwardingConfig|null,
+     *     streamUI?: bool|null,
+     *     command?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

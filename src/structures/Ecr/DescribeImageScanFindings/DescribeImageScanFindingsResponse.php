@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeImageScanFindings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $registryId
- * @property string $repositoryName
- * @property Shapes\ImageIdentifier $imageId
- * @property Shapes\ImageScanStatus $imageScanStatus
- * @property Shapes\ImageScanFindings $imageScanFindings
- * @property string $nextToken
+ * @property string|null $registryId
+ * @property string|null $repositoryName
+ * @property Shapes\ImageIdentifier|null $imageId
+ * @property Shapes\ImageScanStatus|null $imageScanStatus
+ * @property Shapes\ImageScanFindings|null $imageScanFindings
+ * @property string|null $nextToken
  */
 class DescribeImageScanFindingsResponse extends Response
 {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $QueryId
  * @property 'QUEUED'|'RUNNING'|'FINISHED'|'FAILED'|'CANCELLED'|'TIMED_OUT' $QueryStatus
- * @property string $EventDataStoreOwnerAccountId
+ * @property string|null $EventDataStoreOwnerAccountId
  */
 class CancelQueryResponse extends Response
 {

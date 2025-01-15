@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $appArn
- * @property 'Disabled'|'Daily' $assessmentSchedule
- * @property string $awsApplicationArn
- * @property 'PolicyBreached'|'PolicyMet'|'NotAssessed'|'ChangesDetected'|'NotApplicable'|'MissingPolicy' $complianceStatus
+ * @property 'Disabled'|'Daily'|null $assessmentSchedule
+ * @property string|null $awsApplicationArn
+ * @property 'PolicyBreached'|'PolicyMet'|'NotAssessed'|'ChangesDetected'|'NotApplicable'|'MissingPolicy'|null $complianceStatus
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $description
- * @property 'NotChecked'|'NotDetected'|'Detected' $driftStatus
- * @property \Aws\Api\DateTimeResult $lastAppComplianceEvaluationTime
+ * @property string|null $description
+ * @property 'NotChecked'|'NotDetected'|'Detected'|null $driftStatus
+ * @property \Aws\Api\DateTimeResult|null $lastAppComplianceEvaluationTime
  * @property string $name
- * @property double $resiliencyScore
- * @property int $rpoInSecs
- * @property int $rtoInSecs
- * @property 'Active'|'Deleting' $status
+ * @property double|null $resiliencyScore
+ * @property int|null $rpoInSecs
+ * @property int|null $rtoInSecs
+ * @property 'Active'|'Deleting'|null $status
  */
 class AppSummary extends Shape
 {
     /**
      * @param array{
      *     appArn: string,
-     *     assessmentSchedule?: 'Disabled'|'Daily',
-     *     awsApplicationArn?: string,
-     *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|'NotAssessed'|'ChangesDetected'|'NotApplicable'|'MissingPolicy',
+     *     assessmentSchedule?: 'Disabled'|'Daily'|null,
+     *     awsApplicationArn?: string|null,
+     *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|'NotAssessed'|'ChangesDetected'|'NotApplicable'|'MissingPolicy'|null,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     driftStatus?: 'NotChecked'|'NotDetected'|'Detected',
-     *     lastAppComplianceEvaluationTime?: \Aws\Api\DateTimeResult,
+     *     description?: string|null,
+     *     driftStatus?: 'NotChecked'|'NotDetected'|'Detected'|null,
+     *     lastAppComplianceEvaluationTime?: \Aws\Api\DateTimeResult|null,
      *     name: string,
-     *     resiliencyScore?: double,
-     *     rpoInSecs?: int,
-     *     rtoInSecs?: int,
-     *     status?: 'Active'|'Deleting'
+     *     resiliencyScore?: double|null,
+     *     rpoInSecs?: int|null,
+     *     rtoInSecs?: int|null,
+     *     status?: 'Active'|'Deleting'|null
      * } $args
      */
     public function __construct(array $args)

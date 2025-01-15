@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Iam\GetAccountAuthorizationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Path
- * @property string $RoleName
- * @property string $RoleId
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property string $AssumeRolePolicyDocument
- * @property list<InstanceProfile> $InstanceProfileList
- * @property list<PolicyDetail> $RolePolicyList
- * @property list<AttachedPolicy> $AttachedManagedPolicies
- * @property AttachedPermissionsBoundary $PermissionsBoundary
- * @property list<Tag> $Tags
- * @property RoleLastUsed $RoleLastUsed
+ * @property string|null $Path
+ * @property string|null $RoleName
+ * @property string|null $RoleId
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property string|null $AssumeRolePolicyDocument
+ * @property list<InstanceProfile>|null $InstanceProfileList
+ * @property list<PolicyDetail>|null $RolePolicyList
+ * @property list<AttachedPolicy>|null $AttachedManagedPolicies
+ * @property AttachedPermissionsBoundary|null $PermissionsBoundary
+ * @property list<Tag>|null $Tags
+ * @property RoleLastUsed|null $RoleLastUsed
  */
 class RoleDetail extends Shape
 {
     /**
      * @param array{
-     *     Path?: string,
-     *     RoleName?: string,
-     *     RoleId?: string,
-     *     Arn?: string,
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     AssumeRolePolicyDocument?: string,
-     *     InstanceProfileList?: list<InstanceProfile>,
-     *     RolePolicyList?: list<PolicyDetail>,
-     *     AttachedManagedPolicies?: list<AttachedPolicy>,
-     *     PermissionsBoundary?: AttachedPermissionsBoundary,
-     *     Tags?: list<Tag>,
-     *     RoleLastUsed?: RoleLastUsed
+     *     Path?: string|null,
+     *     RoleName?: string|null,
+     *     RoleId?: string|null,
+     *     Arn?: string|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     AssumeRolePolicyDocument?: string|null,
+     *     InstanceProfileList?: list<InstanceProfile>|null,
+     *     RolePolicyList?: list<PolicyDetail>|null,
+     *     AttachedManagedPolicies?: list<AttachedPolicy>|null,
+     *     PermissionsBoundary?: AttachedPermissionsBoundary|null,
+     *     Tags?: list<Tag>|null,
+     *     RoleLastUsed?: RoleLastUsed|null
      * } $args
      */
     public function __construct(array $args = [])

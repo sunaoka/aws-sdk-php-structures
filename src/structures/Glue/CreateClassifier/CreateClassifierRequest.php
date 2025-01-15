@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\CreateClassifier;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\CreateGrokClassifierRequest $GrokClassifier
- * @property Shapes\CreateXMLClassifierRequest $XMLClassifier
- * @property Shapes\CreateJsonClassifierRequest $JsonClassifier
- * @property Shapes\CreateCsvClassifierRequest $CsvClassifier
+ * @property Shapes\CreateGrokClassifierRequest|null $GrokClassifier
+ * @property Shapes\CreateXMLClassifierRequest|null $XMLClassifier
+ * @property Shapes\CreateJsonClassifierRequest|null $JsonClassifier
+ * @property Shapes\CreateCsvClassifierRequest|null $CsvClassifier
  */
 class CreateClassifierRequest extends Request
 {
     /**
      * @param array{
-     *     GrokClassifier?: Shapes\CreateGrokClassifierRequest,
-     *     XMLClassifier?: Shapes\CreateXMLClassifierRequest,
-     *     JsonClassifier?: Shapes\CreateJsonClassifierRequest,
-     *     CsvClassifier?: Shapes\CreateCsvClassifierRequest
+     *     GrokClassifier?: Shapes\CreateGrokClassifierRequest|null,
+     *     XMLClassifier?: Shapes\CreateXMLClassifierRequest|null,
+     *     JsonClassifier?: Shapes\CreateJsonClassifierRequest|null,
+     *     CsvClassifier?: Shapes\CreateCsvClassifierRequest|null
      * } $args
      */
     public function __construct(array $args = [])

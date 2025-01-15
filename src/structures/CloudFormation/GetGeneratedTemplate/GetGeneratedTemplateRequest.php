@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudFormation\GetGeneratedTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'JSON'|'YAML' $Format
+ * @property 'JSON'|'YAML'|null $Format
  * @property string $GeneratedTemplateName
  */
 class GetGeneratedTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     Format?: 'JSON'|'YAML',
+     *     Format?: 'JSON'|'YAML'|null,
      *     GeneratedTemplateName: string
      * } $args
      */

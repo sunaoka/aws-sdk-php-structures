@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Detective\GetInvestigation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GraphArn
- * @property string $InvestigationId
- * @property string $EntityArn
- * @property 'IAM_ROLE'|'IAM_USER' $EntityType
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $ScopeStartTime
- * @property \Aws\Api\DateTimeResult $ScopeEndTime
- * @property 'RUNNING'|'FAILED'|'SUCCESSFUL' $Status
- * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL' $Severity
- * @property 'ACTIVE'|'ARCHIVED' $State
+ * @property string|null $GraphArn
+ * @property string|null $InvestigationId
+ * @property string|null $EntityArn
+ * @property 'IAM_ROLE'|'IAM_USER'|null $EntityType
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $ScopeStartTime
+ * @property \Aws\Api\DateTimeResult|null $ScopeEndTime
+ * @property 'RUNNING'|'FAILED'|'SUCCESSFUL'|null $Status
+ * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|null $Severity
+ * @property 'ACTIVE'|'ARCHIVED'|null $State
  */
 class GetInvestigationResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeInstanceTypeLimits\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LimitName
- * @property list<string> $LimitValues
+ * @property string|null $LimitName
+ * @property list<string>|null $LimitValues
  */
 class AdditionalLimit extends Shape
 {
     /**
      * @param array{
-     *     LimitName?: string,
-     *     LimitValues?: list<string>
+     *     LimitName?: string|null,
+     *     LimitValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

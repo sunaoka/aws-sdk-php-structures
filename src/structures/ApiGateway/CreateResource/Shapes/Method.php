@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ApiGateway\CreateResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $httpMethod
- * @property string $authorizationType
- * @property string $authorizerId
- * @property bool $apiKeyRequired
- * @property string $requestValidatorId
- * @property string $operationName
- * @property array<string, bool> $requestParameters
- * @property array<string, string> $requestModels
- * @property array<string, MethodResponse> $methodResponses
- * @property Integration $methodIntegration
- * @property list<string> $authorizationScopes
+ * @property string|null $httpMethod
+ * @property string|null $authorizationType
+ * @property string|null $authorizerId
+ * @property bool|null $apiKeyRequired
+ * @property string|null $requestValidatorId
+ * @property string|null $operationName
+ * @property array<string, bool>|null $requestParameters
+ * @property array<string, string>|null $requestModels
+ * @property array<string, MethodResponse>|null $methodResponses
+ * @property Integration|null $methodIntegration
+ * @property list<string>|null $authorizationScopes
  */
 class Method extends Shape
 {
     /**
      * @param array{
-     *     httpMethod?: string,
-     *     authorizationType?: string,
-     *     authorizerId?: string,
-     *     apiKeyRequired?: bool,
-     *     requestValidatorId?: string,
-     *     operationName?: string,
-     *     requestParameters?: array<string, bool>,
-     *     requestModels?: array<string, string>,
-     *     methodResponses?: array<string, MethodResponse>,
-     *     methodIntegration?: Integration,
-     *     authorizationScopes?: list<string>
+     *     httpMethod?: string|null,
+     *     authorizationType?: string|null,
+     *     authorizerId?: string|null,
+     *     apiKeyRequired?: bool|null,
+     *     requestValidatorId?: string|null,
+     *     operationName?: string|null,
+     *     requestParameters?: array<string, bool>|null,
+     *     requestModels?: array<string, string>|null,
+     *     methodResponses?: array<string, MethodResponse>|null,
+     *     methodIntegration?: Integration|null,
+     *     authorizationScopes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

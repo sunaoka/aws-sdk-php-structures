@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaLive\RebootInputDevice;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'NO'|'YES' $Force
+ * @property 'NO'|'YES'|null $Force
  * @property string $InputDeviceId
  */
 class RebootInputDeviceRequest extends Request
 {
     /**
      * @param array{
-     *     Force?: 'NO'|'YES',
+     *     Force?: 'NO'|'YES'|null,
      *     InputDeviceId: string
      * } $args
      */

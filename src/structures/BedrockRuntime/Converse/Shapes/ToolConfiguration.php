@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<Tool> $tools
- * @property ToolChoice $toolChoice
+ * @property ToolChoice|null $toolChoice
  */
 class ToolConfiguration extends Shape
 {
     /**
      * @param array{
      *     tools: list<Tool>,
-     *     toolChoice?: ToolChoice
+     *     toolChoice?: ToolChoice|null
      * } $args
      */
     public function __construct(array $args)

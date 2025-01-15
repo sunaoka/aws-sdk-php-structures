@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryReadiness\ListCrossAccountAuthor
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $CrossAccountAuthorizations
- * @property string $NextToken
+ * @property list<string>|null $CrossAccountAuthorizations
+ * @property string|null $NextToken
  */
 class ListCrossAccountAuthorizationsResponse extends Response
 {

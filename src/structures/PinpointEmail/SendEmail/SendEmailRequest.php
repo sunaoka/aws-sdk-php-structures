@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\SendEmail;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $FromEmailAddress
+ * @property string|null $FromEmailAddress
  * @property Shapes\Destination $Destination
- * @property list<string> $ReplyToAddresses
- * @property string $FeedbackForwardingEmailAddress
+ * @property list<string>|null $ReplyToAddresses
+ * @property string|null $FeedbackForwardingEmailAddress
  * @property Shapes\EmailContent $Content
- * @property list<Shapes\MessageTag> $EmailTags
- * @property string $ConfigurationSetName
+ * @property list<Shapes\MessageTag>|null $EmailTags
+ * @property string|null $ConfigurationSetName
  */
 class SendEmailRequest extends Request
 {
     /**
      * @param array{
-     *     FromEmailAddress?: string,
+     *     FromEmailAddress?: string|null,
      *     Destination: Shapes\Destination,
-     *     ReplyToAddresses?: list<string>,
-     *     FeedbackForwardingEmailAddress?: string,
+     *     ReplyToAddresses?: list<string>|null,
+     *     FeedbackForwardingEmailAddress?: string|null,
      *     Content: Shapes\EmailContent,
-     *     EmailTags?: list<Shapes\MessageTag>,
-     *     ConfigurationSetName?: string
+     *     EmailTags?: list<Shapes\MessageTag>|null,
+     *     ConfigurationSetName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glacier\InitiateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CSVInput $csv
+ * @property CSVInput|null $csv
  */
 class InputSerialization extends Shape
 {
     /**
-     * @param array{csv?: CSVInput} $args
+     * @param array{csv?: CSVInput|null} $args
      */
     public function __construct(array $args = [])
     {

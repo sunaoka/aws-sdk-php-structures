@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $LineWidth
+ * @property double|null $LineWidth
  */
 class GeospatialLineWidth extends Shape
 {
     /**
-     * @param array{LineWidth?: double} $args
+     * @param array{LineWidth?: double|null} $args
      */
     public function __construct(array $args = [])
     {

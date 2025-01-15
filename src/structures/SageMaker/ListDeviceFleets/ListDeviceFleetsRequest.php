@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListDeviceFleets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<min, 100> $MaxResults
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property \Aws\Api\DateTimeResult $LastModifiedTimeAfter
- * @property \Aws\Api\DateTimeResult $LastModifiedTimeBefore
- * @property string $NameContains
- * @property 'NAME'|'CREATION_TIME'|'LAST_MODIFIED_TIME' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
+ * @property string|null $NextToken
+ * @property int<min, 100>|null $MaxResults
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeBefore
+ * @property string|null $NameContains
+ * @property 'NAME'|'CREATION_TIME'|'LAST_MODIFIED_TIME'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
  */
 class ListDeviceFleetsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<min, 100>,
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult,
-     *     NameContains?: string,
-     *     SortBy?: 'NAME'|'CREATION_TIME'|'LAST_MODIFIED_TIME',
-     *     SortOrder?: 'Ascending'|'Descending'
+     *     NextToken?: string|null,
+     *     MaxResults?: int<min, 100>|null,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     NameContains?: string|null,
+     *     SortBy?: 'NAME'|'CREATION_TIME'|'LAST_MODIFIED_TIME'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args = [])

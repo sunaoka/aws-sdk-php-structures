@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchCreateBillScenarioCom
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property string $errorMessage
- * @property 'CONFLICT'|'INTERNAL_SERVER_ERROR'|'INVALID_ACCOUNT' $errorCode
+ * @property string|null $key
+ * @property string|null $errorMessage
+ * @property 'CONFLICT'|'INTERNAL_SERVER_ERROR'|'INVALID_ACCOUNT'|null $errorCode
  */
 class BatchCreateBillScenarioCommitmentModificationError extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     errorMessage?: string,
-     *     errorCode?: 'CONFLICT'|'INTERNAL_SERVER_ERROR'|'INVALID_ACCOUNT'
+     *     key?: string|null,
+     *     errorMessage?: string|null,
+     *     errorCode?: 'CONFLICT'|'INTERNAL_SERVER_ERROR'|'INVALID_ACCOUNT'|null
      * } $args
      */
     public function __construct(array $args = [])

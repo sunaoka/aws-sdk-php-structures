@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\FSx\CopySnapshotAndUpdateVolume\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AuditLogVolume
- * @property AutocommitPeriod $AutocommitPeriod
- * @property 'DISABLED'|'ENABLED'|'PERMANENTLY_DISABLED' $PrivilegedDelete
- * @property SnaplockRetentionPeriod $RetentionPeriod
- * @property 'COMPLIANCE'|'ENTERPRISE' $SnaplockType
- * @property bool $VolumeAppendModeEnabled
+ * @property bool|null $AuditLogVolume
+ * @property AutocommitPeriod|null $AutocommitPeriod
+ * @property 'DISABLED'|'ENABLED'|'PERMANENTLY_DISABLED'|null $PrivilegedDelete
+ * @property SnaplockRetentionPeriod|null $RetentionPeriod
+ * @property 'COMPLIANCE'|'ENTERPRISE'|null $SnaplockType
+ * @property bool|null $VolumeAppendModeEnabled
  */
 class SnaplockConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AuditLogVolume?: bool,
-     *     AutocommitPeriod?: AutocommitPeriod,
-     *     PrivilegedDelete?: 'DISABLED'|'ENABLED'|'PERMANENTLY_DISABLED',
-     *     RetentionPeriod?: SnaplockRetentionPeriod,
-     *     SnaplockType?: 'COMPLIANCE'|'ENTERPRISE',
-     *     VolumeAppendModeEnabled?: bool
+     *     AuditLogVolume?: bool|null,
+     *     AutocommitPeriod?: AutocommitPeriod|null,
+     *     PrivilegedDelete?: 'DISABLED'|'ENABLED'|'PERMANENTLY_DISABLED'|null,
+     *     RetentionPeriod?: SnaplockRetentionPeriod|null,
+     *     SnaplockType?: 'COMPLIANCE'|'ENTERPRISE'|null,
+     *     VolumeAppendModeEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

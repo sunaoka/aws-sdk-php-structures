@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterName
- * @property string $Description
- * @property string $PreferredMaintenanceWindow
- * @property string $NotificationTopicArn
- * @property string $NotificationTopicStatus
- * @property string $ParameterGroupName
- * @property list<string> $SecurityGroupIds
+ * @property string|null $Description
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $NotificationTopicArn
+ * @property string|null $NotificationTopicStatus
+ * @property string|null $ParameterGroupName
+ * @property list<string>|null $SecurityGroupIds
  */
 class UpdateClusterRequest extends Request
 {
     /**
      * @param array{
      *     ClusterName: string,
-     *     Description?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     NotificationTopicArn?: string,
-     *     NotificationTopicStatus?: string,
-     *     ParameterGroupName?: string,
-     *     SecurityGroupIds?: list<string>
+     *     Description?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     NotificationTopicArn?: string|null,
+     *     NotificationTopicStatus?: string|null,
+     *     ParameterGroupName?: string|null,
+     *     SecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

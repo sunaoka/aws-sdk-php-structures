@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Ec2\EnableFastLaunch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LaunchTemplateId
- * @property string $LaunchTemplateName
+ * @property string|null $LaunchTemplateId
+ * @property string|null $LaunchTemplateName
  * @property string $Version
  */
 class FastLaunchLaunchTemplateSpecificationRequest extends Shape
 {
     /**
      * @param array{
-     *     LaunchTemplateId?: string,
-     *     LaunchTemplateName?: string,
+     *     LaunchTemplateId?: string|null,
+     *     LaunchTemplateName?: string|null,
      *     Version: string
      * } $args
      */

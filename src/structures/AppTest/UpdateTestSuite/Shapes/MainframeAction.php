@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $resource
  * @property MainframeActionType $actionType
- * @property MainframeActionProperties $properties
+ * @property MainframeActionProperties|null $properties
  */
 class MainframeAction extends Shape
 {
@@ -15,7 +15,7 @@ class MainframeAction extends Shape
      * @param array{
      *     resource: string,
      *     actionType: MainframeActionType,
-     *     properties?: MainframeActionProperties
+     *     properties?: MainframeActionProperties|null
      * } $args
      */
     public function __construct(array $args)

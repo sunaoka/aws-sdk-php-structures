@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $solutionArn
- * @property bool $performAutoTraining
- * @property Shapes\SolutionUpdateConfig $solutionUpdateConfig
+ * @property bool|null $performAutoTraining
+ * @property Shapes\SolutionUpdateConfig|null $solutionUpdateConfig
  */
 class UpdateSolutionRequest extends Request
 {
     /**
      * @param array{
      *     solutionArn: string,
-     *     performAutoTraining?: bool,
-     *     solutionUpdateConfig?: Shapes\SolutionUpdateConfig
+     *     performAutoTraining?: bool|null,
+     *     solutionUpdateConfig?: Shapes\SolutionUpdateConfig|null
      * } $args
      */
     public function __construct(array $args)

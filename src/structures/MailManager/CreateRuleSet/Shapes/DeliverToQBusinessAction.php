@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MailManager\CreateRuleSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CONTINUE'|'DROP' $ActionFailurePolicy
+ * @property 'CONTINUE'|'DROP'|null $ActionFailurePolicy
  * @property string $ApplicationId
  * @property string $IndexId
  * @property string $RoleArn
@@ -14,7 +14,7 @@ class DeliverToQBusinessAction extends Shape
 {
     /**
      * @param array{
-     *     ActionFailurePolicy?: 'CONTINUE'|'DROP',
+     *     ActionFailurePolicy?: 'CONTINUE'|'DROP'|null,
      *     ApplicationId: string,
      *     IndexId: string,
      *     RoleArn: string

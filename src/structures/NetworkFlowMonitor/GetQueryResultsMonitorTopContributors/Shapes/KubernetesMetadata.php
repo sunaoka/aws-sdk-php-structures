@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\NetworkFlowMonitor\GetQueryResultsMonitorTopCon
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $localServiceName
- * @property string $localPodName
- * @property string $localPodNamespace
- * @property string $remoteServiceName
- * @property string $remotePodName
- * @property string $remotePodNamespace
+ * @property string|null $localServiceName
+ * @property string|null $localPodName
+ * @property string|null $localPodNamespace
+ * @property string|null $remoteServiceName
+ * @property string|null $remotePodName
+ * @property string|null $remotePodNamespace
  */
 class KubernetesMetadata extends Shape
 {
     /**
      * @param array{
-     *     localServiceName?: string,
-     *     localPodName?: string,
-     *     localPodNamespace?: string,
-     *     remoteServiceName?: string,
-     *     remotePodName?: string,
-     *     remotePodNamespace?: string
+     *     localServiceName?: string|null,
+     *     localPodName?: string|null,
+     *     localPodNamespace?: string|null,
+     *     remoteServiceName?: string|null,
+     *     remotePodName?: string|null,
+     *     remotePodNamespace?: string|null
      * } $args
      */
     public function __construct(array $args = [])

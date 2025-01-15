@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\StartImport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $createdCount
- * @property int<0, max> $modifiedCount
+ * @property int<0, max>|null $createdCount
+ * @property int<0, max>|null $modifiedCount
  */
 class ImportTaskSummaryServers extends Shape
 {
     /**
      * @param array{
-     *     createdCount?: int<0, max>,
-     *     modifiedCount?: int<0, max>
+     *     createdCount?: int<0, max>|null,
+     *     modifiedCount?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

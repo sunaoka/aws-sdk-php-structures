@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelBuildingService\PutBotAlias\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<LogSettingsResponse> $logSettings
- * @property string $iamRoleArn
+ * @property list<LogSettingsResponse>|null $logSettings
+ * @property string|null $iamRoleArn
  */
 class ConversationLogsResponse extends Shape
 {
     /**
      * @param array{
-     *     logSettings?: list<LogSettingsResponse>,
-     *     iamRoleArn?: string
+     *     logSettings?: list<LogSettingsResponse>|null,
+     *     iamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

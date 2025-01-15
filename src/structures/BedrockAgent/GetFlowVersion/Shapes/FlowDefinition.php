@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlowVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FlowConnection> $connections
- * @property list<FlowNode> $nodes
+ * @property list<FlowConnection>|null $connections
+ * @property list<FlowNode>|null $nodes
  */
 class FlowDefinition extends Shape
 {
     /**
      * @param array{
-     *     connections?: list<FlowConnection>,
-     *     nodes?: list<FlowNode>
+     *     connections?: list<FlowConnection>|null,
+     *     nodes?: list<FlowNode>|null
      * } $args
      */
     public function __construct(array $args = [])

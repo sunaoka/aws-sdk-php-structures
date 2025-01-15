@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListTopicReviewedAnswers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  * @property string $AnswerId
  * @property string $DatasetArn
  * @property string $Question
- * @property TopicIR $Mir
- * @property TopicVisual $PrimaryVisual
- * @property TopicTemplate $Template
+ * @property TopicIR|null $Mir
+ * @property TopicVisual|null $PrimaryVisual
+ * @property TopicTemplate|null $Template
  */
 class TopicReviewedAnswer extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
+     *     Arn?: string|null,
      *     AnswerId: string,
      *     DatasetArn: string,
      *     Question: string,
-     *     Mir?: TopicIR,
-     *     PrimaryVisual?: TopicVisual,
-     *     Template?: TopicTemplate
+     *     Mir?: TopicIR|null,
+     *     PrimaryVisual?: TopicVisual|null,
+     *     Template?: TopicTemplate|null
      * } $args
      */
     public function __construct(array $args)

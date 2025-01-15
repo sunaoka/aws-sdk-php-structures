@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PipelineId
- * @property Shapes\JobInput $Input
- * @property list<Shapes\JobInput> $Inputs
- * @property Shapes\CreateJobOutput $Output
- * @property list<Shapes\CreateJobOutput> $Outputs
- * @property string $OutputKeyPrefix
- * @property list<Shapes\CreateJobPlaylist> $Playlists
- * @property array<string, string> $UserMetadata
+ * @property Shapes\JobInput|null $Input
+ * @property list<Shapes\JobInput>|null $Inputs
+ * @property Shapes\CreateJobOutput|null $Output
+ * @property list<Shapes\CreateJobOutput>|null $Outputs
+ * @property string|null $OutputKeyPrefix
+ * @property list<Shapes\CreateJobPlaylist>|null $Playlists
+ * @property array<string, string>|null $UserMetadata
  */
 class CreateJobRequest extends Request
 {
     /**
      * @param array{
      *     PipelineId: string,
-     *     Input?: Shapes\JobInput,
-     *     Inputs?: list<Shapes\JobInput>,
-     *     Output?: Shapes\CreateJobOutput,
-     *     Outputs?: list<Shapes\CreateJobOutput>,
-     *     OutputKeyPrefix?: string,
-     *     Playlists?: list<Shapes\CreateJobPlaylist>,
-     *     UserMetadata?: array<string, string>
+     *     Input?: Shapes\JobInput|null,
+     *     Inputs?: list<Shapes\JobInput>|null,
+     *     Output?: Shapes\CreateJobOutput|null,
+     *     Outputs?: list<Shapes\CreateJobOutput>|null,
+     *     OutputKeyPrefix?: string|null,
+     *     Playlists?: list<Shapes\CreateJobPlaylist>|null,
+     *     UserMetadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Type
- * @property AwsEc2ClientVpnEndpointAuthenticationOptionsActiveDirectoryDetails $ActiveDirectory
- * @property AwsEc2ClientVpnEndpointAuthenticationOptionsMutualAuthenticationDetails $MutualAuthentication
- * @property AwsEc2ClientVpnEndpointAuthenticationOptionsFederatedAuthenticationDetails $FederatedAuthentication
+ * @property string|null $Type
+ * @property AwsEc2ClientVpnEndpointAuthenticationOptionsActiveDirectoryDetails|null $ActiveDirectory
+ * @property AwsEc2ClientVpnEndpointAuthenticationOptionsMutualAuthenticationDetails|null $MutualAuthentication
+ * @property AwsEc2ClientVpnEndpointAuthenticationOptionsFederatedAuthenticationDetails|null $FederatedAuthentication
  */
 class AwsEc2ClientVpnEndpointAuthenticationOptionsDetails extends Shape
 {
     /**
      * @param array{
-     *     Type?: string,
-     *     ActiveDirectory?: AwsEc2ClientVpnEndpointAuthenticationOptionsActiveDirectoryDetails,
-     *     MutualAuthentication?: AwsEc2ClientVpnEndpointAuthenticationOptionsMutualAuthenticationDetails,
-     *     FederatedAuthentication?: AwsEc2ClientVpnEndpointAuthenticationOptionsFederatedAuthenticationDetails
+     *     Type?: string|null,
+     *     ActiveDirectory?: AwsEc2ClientVpnEndpointAuthenticationOptionsActiveDirectoryDetails|null,
+     *     MutualAuthentication?: AwsEc2ClientVpnEndpointAuthenticationOptionsMutualAuthenticationDetails|null,
+     *     FederatedAuthentication?: AwsEc2ClientVpnEndpointAuthenticationOptionsFederatedAuthenticationDetails|null
      * } $args
      */
     public function __construct(array $args = [])

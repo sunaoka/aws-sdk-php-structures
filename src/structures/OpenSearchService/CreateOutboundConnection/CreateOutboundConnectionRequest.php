@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DomainInformationContainer $LocalDomainInfo
  * @property Shapes\DomainInformationContainer $RemoteDomainInfo
  * @property string $ConnectionAlias
- * @property 'DIRECT'|'VPC_ENDPOINT' $ConnectionMode
- * @property Shapes\ConnectionProperties $ConnectionProperties
+ * @property 'DIRECT'|'VPC_ENDPOINT'|null $ConnectionMode
+ * @property Shapes\ConnectionProperties|null $ConnectionProperties
  */
 class CreateOutboundConnectionRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateOutboundConnectionRequest extends Request
      *     LocalDomainInfo: Shapes\DomainInformationContainer,
      *     RemoteDomainInfo: Shapes\DomainInformationContainer,
      *     ConnectionAlias: string,
-     *     ConnectionMode?: 'DIRECT'|'VPC_ENDPOINT',
-     *     ConnectionProperties?: Shapes\ConnectionProperties
+     *     ConnectionMode?: 'DIRECT'|'VPC_ENDPOINT'|null,
+     *     ConnectionProperties?: Shapes\ConnectionProperties|null
      * } $args
      */
     public function __construct(array $args)

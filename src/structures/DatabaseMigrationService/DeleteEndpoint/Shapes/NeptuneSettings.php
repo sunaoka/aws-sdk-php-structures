@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceAccessRoleArn
+ * @property string|null $ServiceAccessRoleArn
  * @property string $S3BucketName
  * @property string $S3BucketFolder
- * @property int $ErrorRetryDuration
- * @property int $MaxFileSize
- * @property int $MaxRetryCount
- * @property bool $IamAuthEnabled
+ * @property int|null $ErrorRetryDuration
+ * @property int|null $MaxFileSize
+ * @property int|null $MaxRetryCount
+ * @property bool|null $IamAuthEnabled
  */
 class NeptuneSettings extends Shape
 {
     /**
      * @param array{
-     *     ServiceAccessRoleArn?: string,
+     *     ServiceAccessRoleArn?: string|null,
      *     S3BucketName: string,
      *     S3BucketFolder: string,
-     *     ErrorRetryDuration?: int,
-     *     MaxFileSize?: int,
-     *     MaxRetryCount?: int,
-     *     IamAuthEnabled?: bool
+     *     ErrorRetryDuration?: int|null,
+     *     MaxFileSize?: int|null,
+     *     MaxRetryCount?: int|null,
+     *     IamAuthEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

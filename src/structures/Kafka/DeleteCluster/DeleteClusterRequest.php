@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterArn
- * @property string $CurrentVersion
+ * @property string|null $CurrentVersion
  */
 class DeleteClusterRequest extends Request
 {
     /**
      * @param array{
      *     ClusterArn: string,
-     *     CurrentVersion?: string
+     *     CurrentVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

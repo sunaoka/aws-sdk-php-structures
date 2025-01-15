@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\UpdateLakeFormationIdentityCenter
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
- * @property list<Shapes\DataLakePrincipal> $ShareRecipients
- * @property 'ENABLED'|'DISABLED' $ApplicationStatus
- * @property Shapes\ExternalFilteringConfiguration $ExternalFiltering
+ * @property string|null $CatalogId
+ * @property list<Shapes\DataLakePrincipal>|null $ShareRecipients
+ * @property 'ENABLED'|'DISABLED'|null $ApplicationStatus
+ * @property Shapes\ExternalFilteringConfiguration|null $ExternalFiltering
  */
 class UpdateLakeFormationIdentityCenterConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
-     *     ShareRecipients?: list<Shapes\DataLakePrincipal>,
-     *     ApplicationStatus?: 'ENABLED'|'DISABLED',
-     *     ExternalFiltering?: Shapes\ExternalFilteringConfiguration
+     *     CatalogId?: string|null,
+     *     ShareRecipients?: list<Shapes\DataLakePrincipal>|null,
+     *     ApplicationStatus?: 'ENABLED'|'DISABLED'|null,
+     *     ExternalFiltering?: Shapes\ExternalFilteringConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

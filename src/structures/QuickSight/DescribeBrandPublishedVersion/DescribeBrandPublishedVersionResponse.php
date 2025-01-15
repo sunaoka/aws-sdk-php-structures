@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeBrandPublishedVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RequestId
- * @property Shapes\BrandDetail $BrandDetail
- * @property Shapes\BrandDefinition $BrandDefinition
+ * @property string|null $RequestId
+ * @property Shapes\BrandDetail|null $BrandDetail
+ * @property Shapes\BrandDefinition|null $BrandDefinition
  */
 class DescribeBrandPublishedVersionResponse extends Response
 {

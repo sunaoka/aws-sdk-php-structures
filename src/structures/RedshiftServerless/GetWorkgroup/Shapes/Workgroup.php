@@ -5,57 +5,57 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\GetWorkgroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $baseCapacity
- * @property list<ConfigParameter> $configParameters
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property list<string> $crossAccountVpcs
- * @property string $customDomainCertificateArn
- * @property \Aws\Api\DateTimeResult $customDomainCertificateExpiryTime
- * @property string $customDomainName
- * @property Endpoint $endpoint
- * @property bool $enhancedVpcRouting
- * @property string $ipAddressType
- * @property int $maxCapacity
- * @property string $namespaceName
- * @property string $patchVersion
- * @property int $port
- * @property PerformanceTarget $pricePerformanceTarget
- * @property bool $publiclyAccessible
- * @property list<string> $securityGroupIds
- * @property 'CREATING'|'AVAILABLE'|'MODIFYING'|'DELETING' $status
- * @property list<string> $subnetIds
- * @property string $workgroupArn
- * @property string $workgroupId
- * @property string $workgroupName
- * @property string $workgroupVersion
+ * @property int|null $baseCapacity
+ * @property list<ConfigParameter>|null $configParameters
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property list<string>|null $crossAccountVpcs
+ * @property string|null $customDomainCertificateArn
+ * @property \Aws\Api\DateTimeResult|null $customDomainCertificateExpiryTime
+ * @property string|null $customDomainName
+ * @property Endpoint|null $endpoint
+ * @property bool|null $enhancedVpcRouting
+ * @property string|null $ipAddressType
+ * @property int|null $maxCapacity
+ * @property string|null $namespaceName
+ * @property string|null $patchVersion
+ * @property int|null $port
+ * @property PerformanceTarget|null $pricePerformanceTarget
+ * @property bool|null $publiclyAccessible
+ * @property list<string>|null $securityGroupIds
+ * @property 'CREATING'|'AVAILABLE'|'MODIFYING'|'DELETING'|null $status
+ * @property list<string>|null $subnetIds
+ * @property string|null $workgroupArn
+ * @property string|null $workgroupId
+ * @property string|null $workgroupName
+ * @property string|null $workgroupVersion
  */
 class Workgroup extends Shape
 {
     /**
      * @param array{
-     *     baseCapacity?: int,
-     *     configParameters?: list<ConfigParameter>,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     crossAccountVpcs?: list<string>,
-     *     customDomainCertificateArn?: string,
-     *     customDomainCertificateExpiryTime?: \Aws\Api\DateTimeResult,
-     *     customDomainName?: string,
-     *     endpoint?: Endpoint,
-     *     enhancedVpcRouting?: bool,
-     *     ipAddressType?: string,
-     *     maxCapacity?: int,
-     *     namespaceName?: string,
-     *     patchVersion?: string,
-     *     port?: int,
-     *     pricePerformanceTarget?: PerformanceTarget,
-     *     publiclyAccessible?: bool,
-     *     securityGroupIds?: list<string>,
-     *     status?: 'CREATING'|'AVAILABLE'|'MODIFYING'|'DELETING',
-     *     subnetIds?: list<string>,
-     *     workgroupArn?: string,
-     *     workgroupId?: string,
-     *     workgroupName?: string,
-     *     workgroupVersion?: string
+     *     baseCapacity?: int|null,
+     *     configParameters?: list<ConfigParameter>|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     crossAccountVpcs?: list<string>|null,
+     *     customDomainCertificateArn?: string|null,
+     *     customDomainCertificateExpiryTime?: \Aws\Api\DateTimeResult|null,
+     *     customDomainName?: string|null,
+     *     endpoint?: Endpoint|null,
+     *     enhancedVpcRouting?: bool|null,
+     *     ipAddressType?: string|null,
+     *     maxCapacity?: int|null,
+     *     namespaceName?: string|null,
+     *     patchVersion?: string|null,
+     *     port?: int|null,
+     *     pricePerformanceTarget?: PerformanceTarget|null,
+     *     publiclyAccessible?: bool|null,
+     *     securityGroupIds?: list<string>|null,
+     *     status?: 'CREATING'|'AVAILABLE'|'MODIFYING'|'DELETING'|null,
+     *     subnetIds?: list<string>|null,
+     *     workgroupArn?: string|null,
+     *     workgroupId?: string|null,
+     *     workgroupName?: string|null,
+     *     workgroupVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

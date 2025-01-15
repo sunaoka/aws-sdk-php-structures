@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Glue\ListTableOptimizerRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfDataFilesDeleted
- * @property int $NumberOfManifestFilesDeleted
- * @property int $NumberOfManifestListsDeleted
- * @property int $NumberOfDpus
- * @property double $JobDurationInHour
+ * @property int|null $NumberOfDataFilesDeleted
+ * @property int|null $NumberOfManifestFilesDeleted
+ * @property int|null $NumberOfManifestListsDeleted
+ * @property int|null $NumberOfDpus
+ * @property double|null $JobDurationInHour
  */
 class IcebergRetentionMetrics extends Shape
 {
     /**
      * @param array{
-     *     NumberOfDataFilesDeleted?: int,
-     *     NumberOfManifestFilesDeleted?: int,
-     *     NumberOfManifestListsDeleted?: int,
-     *     NumberOfDpus?: int,
-     *     JobDurationInHour?: double
+     *     NumberOfDataFilesDeleted?: int|null,
+     *     NumberOfManifestFilesDeleted?: int|null,
+     *     NumberOfManifestListsDeleted?: int|null,
+     *     NumberOfDpus?: int|null,
+     *     JobDurationInHour?: double|null
      * } $args
      */
     public function __construct(array $args = [])

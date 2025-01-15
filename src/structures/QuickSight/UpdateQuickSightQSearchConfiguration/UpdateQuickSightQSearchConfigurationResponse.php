@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateQuickSightQSearchConfiguration
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'ENABLED'|'DISABLED' $QSearchStatus
- * @property string $RequestId
- * @property int $Status
+ * @property 'ENABLED'|'DISABLED'|null $QSearchStatus
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class UpdateQuickSightQSearchConfigurationResponse extends Response
 {

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EmailIdentity
- * @property string $MailFromDomain
- * @property 'USE_DEFAULT_VALUE'|'REJECT_MESSAGE' $BehaviorOnMxFailure
+ * @property string|null $MailFromDomain
+ * @property 'USE_DEFAULT_VALUE'|'REJECT_MESSAGE'|null $BehaviorOnMxFailure
  */
 class PutEmailIdentityMailFromAttributesRequest extends Request
 {
     /**
      * @param array{
      *     EmailIdentity: string,
-     *     MailFromDomain?: string,
-     *     BehaviorOnMxFailure?: 'USE_DEFAULT_VALUE'|'REJECT_MESSAGE'
+     *     MailFromDomain?: string|null,
+     *     BehaviorOnMxFailure?: 'USE_DEFAULT_VALUE'|'REJECT_MESSAGE'|null
      * } $args
      */
     public function __construct(array $args)

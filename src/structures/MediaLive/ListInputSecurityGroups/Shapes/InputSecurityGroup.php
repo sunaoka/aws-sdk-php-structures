@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListInputSecurityGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Id
- * @property list<string> $Inputs
- * @property 'IDLE'|'IN_USE'|'UPDATING'|'DELETED' $State
- * @property array<string, string> $Tags
- * @property list<InputWhitelistRule> $WhitelistRules
+ * @property string|null $Arn
+ * @property string|null $Id
+ * @property list<string>|null $Inputs
+ * @property 'IDLE'|'IN_USE'|'UPDATING'|'DELETED'|null $State
+ * @property array<string, string>|null $Tags
+ * @property list<InputWhitelistRule>|null $WhitelistRules
  */
 class InputSecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Id?: string,
-     *     Inputs?: list<string>,
-     *     State?: 'IDLE'|'IN_USE'|'UPDATING'|'DELETED',
-     *     Tags?: array<string, string>,
-     *     WhitelistRules?: list<InputWhitelistRule>
+     *     Arn?: string|null,
+     *     Id?: string|null,
+     *     Inputs?: list<string>|null,
+     *     State?: 'IDLE'|'IN_USE'|'UPDATING'|'DELETED'|null,
+     *     Tags?: array<string, string>|null,
+     *     WhitelistRules?: list<InputWhitelistRule>|null
      * } $args
      */
     public function __construct(array $args = [])

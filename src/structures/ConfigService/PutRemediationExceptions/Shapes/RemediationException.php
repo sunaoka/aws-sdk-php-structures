@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConfigRuleName
  * @property string $ResourceType
  * @property string $ResourceId
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $ExpirationTime
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTime
  */
 class RemediationException extends Shape
 {
@@ -18,8 +18,8 @@ class RemediationException extends Shape
      *     ConfigRuleName: string,
      *     ResourceType: string,
      *     ResourceId: string,
-     *     Message?: string,
-     *     ExpirationTime?: \Aws\Api\DateTimeResult
+     *     Message?: string|null,
+     *     ExpirationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\GetNetworkInsightsAccessScopeAnalysisFindin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuleGroupArn
- * @property list<RuleOption> $RuleOptions
+ * @property string|null $RuleGroupArn
+ * @property list<RuleOption>|null $RuleOptions
  */
 class RuleGroupRuleOptionsPair extends Shape
 {
     /**
      * @param array{
-     *     RuleGroupArn?: string,
-     *     RuleOptions?: list<RuleOption>
+     *     RuleGroupArn?: string|null,
+     *     RuleOptions?: list<RuleOption>|null
      * } $args
      */
     public function __construct(array $args = [])

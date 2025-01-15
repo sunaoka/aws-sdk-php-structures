@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Sms\GetApp;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $appId
+ * @property string|null $appId
  */
 class GetAppRequest extends Request
 {
     /**
-     * @param array{appId?: string} $args
+     * @param array{appId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\ListWorkflowStepGroups
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<0, 100> $maxResults
+ * @property string|null $nextToken
+ * @property int<0, 100>|null $maxResults
  * @property string $workflowId
  */
 class ListWorkflowStepGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<0, 100>,
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 100>|null,
      *     workflowId: string
      * } $args
      */

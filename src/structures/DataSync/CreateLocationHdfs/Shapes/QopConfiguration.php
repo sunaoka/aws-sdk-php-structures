@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataSync\CreateLocationHdfs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISABLED'|'AUTHENTICATION'|'INTEGRITY'|'PRIVACY' $RpcProtection
- * @property 'DISABLED'|'AUTHENTICATION'|'INTEGRITY'|'PRIVACY' $DataTransferProtection
+ * @property 'DISABLED'|'AUTHENTICATION'|'INTEGRITY'|'PRIVACY'|null $RpcProtection
+ * @property 'DISABLED'|'AUTHENTICATION'|'INTEGRITY'|'PRIVACY'|null $DataTransferProtection
  */
 class QopConfiguration extends Shape
 {
     /**
      * @param array{
-     *     RpcProtection?: 'DISABLED'|'AUTHENTICATION'|'INTEGRITY'|'PRIVACY',
-     *     DataTransferProtection?: 'DISABLED'|'AUTHENTICATION'|'INTEGRITY'|'PRIVACY'
+     *     RpcProtection?: 'DISABLED'|'AUTHENTICATION'|'INTEGRITY'|'PRIVACY'|null,
+     *     DataTransferProtection?: 'DISABLED'|'AUTHENTICATION'|'INTEGRITY'|'PRIVACY'|null
      * } $args
      */
     public function __construct(array $args = [])

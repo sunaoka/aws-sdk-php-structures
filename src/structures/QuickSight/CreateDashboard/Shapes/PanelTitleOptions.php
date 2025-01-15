@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property FontConfiguration $FontConfiguration
- * @property 'LEFT'|'CENTER'|'RIGHT'|'AUTO' $HorizontalTextAlignment
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property FontConfiguration|null $FontConfiguration
+ * @property 'LEFT'|'CENTER'|'RIGHT'|'AUTO'|null $HorizontalTextAlignment
  */
 class PanelTitleOptions extends Shape
 {
     /**
      * @param array{
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     FontConfiguration?: FontConfiguration,
-     *     HorizontalTextAlignment?: 'LEFT'|'CENTER'|'RIGHT'|'AUTO'
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     FontConfiguration?: FontConfiguration|null,
+     *     HorizontalTextAlignment?: 'LEFT'|'CENTER'|'RIGHT'|'AUTO'|null
      * } $args
      */
     public function __construct(array $args = [])

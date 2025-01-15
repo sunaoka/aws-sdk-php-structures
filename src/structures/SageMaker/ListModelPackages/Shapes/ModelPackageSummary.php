@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListModelPackages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelPackageName
- * @property string $ModelPackageGroupName
- * @property int<1, max> $ModelPackageVersion
+ * @property string|null $ModelPackageName
+ * @property string|null $ModelPackageGroupName
+ * @property int<1, max>|null $ModelPackageVersion
  * @property string $ModelPackageArn
- * @property string $ModelPackageDescription
+ * @property string|null $ModelPackageDescription
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting' $ModelPackageStatus
- * @property 'Approved'|'Rejected'|'PendingManualApproval' $ModelApprovalStatus
+ * @property 'Approved'|'Rejected'|'PendingManualApproval'|null $ModelApprovalStatus
  */
 class ModelPackageSummary extends Shape
 {
     /**
      * @param array{
-     *     ModelPackageName?: string,
-     *     ModelPackageGroupName?: string,
-     *     ModelPackageVersion?: int<1, max>,
+     *     ModelPackageName?: string|null,
+     *     ModelPackageGroupName?: string|null,
+     *     ModelPackageVersion?: int<1, max>|null,
      *     ModelPackageArn: string,
-     *     ModelPackageDescription?: string,
+     *     ModelPackageDescription?: string|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     ModelPackageStatus: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting',
-     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'
+     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'|null
      * } $args
      */
     public function __construct(array $args)

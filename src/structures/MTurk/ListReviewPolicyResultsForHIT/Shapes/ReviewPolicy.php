@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $PolicyName
- * @property list<PolicyParameter> $Parameters
+ * @property list<PolicyParameter>|null $Parameters
  */
 class ReviewPolicy extends Shape
 {
     /**
      * @param array{
      *     PolicyName: string,
-     *     Parameters?: list<PolicyParameter>
+     *     Parameters?: list<PolicyParameter>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Creating'|'Running'|'Completed'|'Failed' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  * @property DataSetImportSummary $summary
  * @property string $taskId
  */
@@ -15,7 +15,7 @@ class DataSetImportTask extends Shape
     /**
      * @param array{
      *     status: 'Creating'|'Running'|'Completed'|'Failed',
-     *     statusReason?: string,
+     *     statusReason?: string|null,
      *     summary: DataSetImportSummary,
      *     taskId: string
      * } $args

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetSavingsPlansUtilizationDetails\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetSavings
- * @property string $OnDemandCostEquivalent
+ * @property string|null $NetSavings
+ * @property string|null $OnDemandCostEquivalent
  */
 class SavingsPlansSavings extends Shape
 {
     /**
      * @param array{
-     *     NetSavings?: string,
-     *     OnDemandCostEquivalent?: string
+     *     NetSavings?: string|null,
+     *     OnDemandCostEquivalent?: string|null
      * } $args
      */
     public function __construct(array $args = [])

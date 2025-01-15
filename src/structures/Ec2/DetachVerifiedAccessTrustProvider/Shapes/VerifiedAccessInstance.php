@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\DetachVerifiedAccessTrustProvider\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VerifiedAccessInstanceId
- * @property string $Description
- * @property list<VerifiedAccessTrustProviderCondensed> $VerifiedAccessTrustProviders
- * @property string $CreationTime
- * @property string $LastUpdatedTime
- * @property list<Tag> $Tags
- * @property bool $FipsEnabled
- * @property VerifiedAccessInstanceCustomSubDomain $CidrEndpointsCustomSubDomain
+ * @property string|null $VerifiedAccessInstanceId
+ * @property string|null $Description
+ * @property list<VerifiedAccessTrustProviderCondensed>|null $VerifiedAccessTrustProviders
+ * @property string|null $CreationTime
+ * @property string|null $LastUpdatedTime
+ * @property list<Tag>|null $Tags
+ * @property bool|null $FipsEnabled
+ * @property VerifiedAccessInstanceCustomSubDomain|null $CidrEndpointsCustomSubDomain
  */
 class VerifiedAccessInstance extends Shape
 {
     /**
      * @param array{
-     *     VerifiedAccessInstanceId?: string,
-     *     Description?: string,
-     *     VerifiedAccessTrustProviders?: list<VerifiedAccessTrustProviderCondensed>,
-     *     CreationTime?: string,
-     *     LastUpdatedTime?: string,
-     *     Tags?: list<Tag>,
-     *     FipsEnabled?: bool,
-     *     CidrEndpointsCustomSubDomain?: VerifiedAccessInstanceCustomSubDomain
+     *     VerifiedAccessInstanceId?: string|null,
+     *     Description?: string|null,
+     *     VerifiedAccessTrustProviders?: list<VerifiedAccessTrustProviderCondensed>|null,
+     *     CreationTime?: string|null,
+     *     LastUpdatedTime?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     FipsEnabled?: bool|null,
+     *     CidrEndpointsCustomSubDomain?: VerifiedAccessInstanceCustomSubDomain|null
      * } $args
      */
     public function __construct(array $args = [])

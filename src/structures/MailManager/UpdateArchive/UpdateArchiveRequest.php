@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ArchiveId
- * @property string $ArchiveName
- * @property Shapes\ArchiveRetention $Retention
+ * @property string|null $ArchiveName
+ * @property Shapes\ArchiveRetention|null $Retention
  */
 class UpdateArchiveRequest extends Request
 {
     /**
      * @param array{
      *     ArchiveId: string,
-     *     ArchiveName?: string,
-     *     Retention?: Shapes\ArchiveRetention
+     *     ArchiveName?: string|null,
+     *     Retention?: Shapes\ArchiveRetention|null
      * } $args
      */
     public function __construct(array $args)

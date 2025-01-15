@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $length
- * @property string $name
+ * @property string|null $name
  * @property int $offset
  */
 class PrimaryKey extends Shape
@@ -14,7 +14,7 @@ class PrimaryKey extends Shape
     /**
      * @param array{
      *     length: int,
-     *     name?: string,
+     *     name?: string|null,
      *     offset: int
      * } $args
      */

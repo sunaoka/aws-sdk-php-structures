@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ConverseStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ToolUseBlockStart $toolUse
+ * @property ToolUseBlockStart|null $toolUse
  */
 class ContentBlockStart extends Shape
 {
     /**
-     * @param array{toolUse?: ToolUseBlockStart} $args
+     * @param array{toolUse?: ToolUseBlockStart|null} $args
      */
     public function __construct(array $args = [])
     {

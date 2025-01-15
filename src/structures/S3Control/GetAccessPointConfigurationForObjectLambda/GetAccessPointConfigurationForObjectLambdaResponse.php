@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\S3Control\GetAccessPointConfigurationForObjectL
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ObjectLambdaConfiguration $Configuration
+ * @property Shapes\ObjectLambdaConfiguration|null $Configuration
  */
 class GetAccessPointConfigurationForObjectLambdaResponse extends Response
 {

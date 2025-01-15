@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AuditManager\BatchDisassociateAssessmentReportE
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $evidenceId
- * @property string $errorCode
- * @property string $errorMessage
+ * @property string|null $evidenceId
+ * @property string|null $errorCode
+ * @property string|null $errorMessage
  */
 class AssessmentReportEvidenceError extends Shape
 {
     /**
      * @param array{
-     *     evidenceId?: string,
-     *     errorCode?: string,
-     *     errorMessage?: string
+     *     evidenceId?: string|null,
+     *     errorCode?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

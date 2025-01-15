@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSMContacts\UpdateRotation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HandOffTime $Start
- * @property HandOffTime $End
+ * @property HandOffTime|null $Start
+ * @property HandOffTime|null $End
  */
 class CoverageTime extends Shape
 {
     /**
      * @param array{
-     *     Start?: HandOffTime,
-     *     End?: HandOffTime
+     *     Start?: HandOffTime|null,
+     *     End?: HandOffTime|null
      * } $args
      */
     public function __construct(array $args = [])

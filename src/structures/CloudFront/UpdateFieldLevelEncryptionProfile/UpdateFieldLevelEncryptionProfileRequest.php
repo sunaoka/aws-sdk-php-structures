@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\FieldLevelEncryptionProfileConfig $FieldLevelEncryptionProfileConfig
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class UpdateFieldLevelEncryptionProfileRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateFieldLevelEncryptionProfileRequest extends Request
      * @param array{
      *     FieldLevelEncryptionProfileConfig: Shapes\FieldLevelEncryptionProfileConfig,
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

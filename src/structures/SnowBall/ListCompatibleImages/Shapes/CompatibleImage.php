@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SnowBall\ListCompatibleImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AmiId
- * @property string $Name
+ * @property string|null $AmiId
+ * @property string|null $Name
  */
 class CompatibleImage extends Shape
 {
     /**
      * @param array{
-     *     AmiId?: string,
-     *     Name?: string
+     *     AmiId?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

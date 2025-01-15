@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRContainers\CreateManagedEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Configuration> $applicationConfiguration
- * @property MonitoringConfiguration $monitoringConfiguration
+ * @property list<Configuration>|null $applicationConfiguration
+ * @property MonitoringConfiguration|null $monitoringConfiguration
  */
 class ConfigurationOverrides extends Shape
 {
     /**
      * @param array{
-     *     applicationConfiguration?: list<Configuration>,
-     *     monitoringConfiguration?: MonitoringConfiguration
+     *     applicationConfiguration?: list<Configuration>|null,
+     *     monitoringConfiguration?: MonitoringConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

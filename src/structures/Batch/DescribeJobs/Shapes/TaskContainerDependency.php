@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $containerName
- * @property string $condition
+ * @property string|null $containerName
+ * @property string|null $condition
  */
 class TaskContainerDependency extends Shape
 {
     /**
      * @param array{
-     *     containerName?: string,
-     *     condition?: string
+     *     containerName?: string|null,
+     *     condition?: string|null
      * } $args
      */
     public function __construct(array $args = [])

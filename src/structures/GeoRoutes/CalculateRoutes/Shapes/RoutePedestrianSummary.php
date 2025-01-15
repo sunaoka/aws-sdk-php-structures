@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RoutePedestrianOverviewSummary $Overview
- * @property RoutePedestrianTravelOnlySummary $TravelOnly
+ * @property RoutePedestrianOverviewSummary|null $Overview
+ * @property RoutePedestrianTravelOnlySummary|null $TravelOnly
  */
 class RoutePedestrianSummary extends Shape
 {
     /**
      * @param array{
-     *     Overview?: RoutePedestrianOverviewSummary,
-     *     TravelOnly?: RoutePedestrianTravelOnlySummary
+     *     Overview?: RoutePedestrianOverviewSummary|null,
+     *     TravelOnly?: RoutePedestrianTravelOnlySummary|null
      * } $args
      */
     public function __construct(array $args = [])

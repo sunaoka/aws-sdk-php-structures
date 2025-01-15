@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatabaseName
- * @property string $Password
- * @property int $Port
- * @property string $ServerName
- * @property string $Username
- * @property string $SecretsManagerAccessRoleArn
- * @property string $SecretsManagerSecretId
+ * @property string|null $DatabaseName
+ * @property string|null $Password
+ * @property int|null $Port
+ * @property string|null $ServerName
+ * @property string|null $Username
+ * @property string|null $SecretsManagerAccessRoleArn
+ * @property string|null $SecretsManagerSecretId
  */
 class SybaseSettings extends Shape
 {
     /**
      * @param array{
-     *     DatabaseName?: string,
-     *     Password?: string,
-     *     Port?: int,
-     *     ServerName?: string,
-     *     Username?: string,
-     *     SecretsManagerAccessRoleArn?: string,
-     *     SecretsManagerSecretId?: string
+     *     DatabaseName?: string|null,
+     *     Password?: string|null,
+     *     Port?: int|null,
+     *     ServerName?: string|null,
+     *     Username?: string|null,
+     *     SecretsManagerAccessRoleArn?: string|null,
+     *     SecretsManagerSecretId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

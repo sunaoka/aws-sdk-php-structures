@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AES256'|'KMS'|'KMS_DSSE' $encryptionType
- * @property string $kmsKey
+ * @property string|null $kmsKey
  */
 class EncryptionConfigurationForRepositoryCreationTemplate extends Shape
 {
     /**
      * @param array{
      *     encryptionType: 'AES256'|'KMS'|'KMS_DSSE',
-     *     kmsKey?: string
+     *     kmsKey?: string|null
      * } $args
      */
     public function __construct(array $args)

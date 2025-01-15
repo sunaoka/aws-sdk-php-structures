@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeUserGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UserGroupId
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $UserGroupId
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeUserGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     UserGroupId?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     UserGroupId?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

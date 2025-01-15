@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ValidateFlowDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document $additionalModelRequestFields
- * @property PromptInferenceConfiguration $inferenceConfiguration
+ * @property Document|null $additionalModelRequestFields
+ * @property PromptInferenceConfiguration|null $inferenceConfiguration
  * @property string $modelId
  * @property PromptTemplateConfiguration $templateConfiguration
  * @property 'TEXT'|'CHAT' $templateType
@@ -15,8 +15,8 @@ class PromptFlowNodeInlineConfiguration extends Shape
 {
     /**
      * @param array{
-     *     additionalModelRequestFields?: Document,
-     *     inferenceConfiguration?: PromptInferenceConfiguration,
+     *     additionalModelRequestFields?: Document|null,
+     *     inferenceConfiguration?: PromptInferenceConfiguration|null,
      *     modelId: string,
      *     templateConfiguration: PromptTemplateConfiguration,
      *     templateType: 'TEXT'|'CHAT'

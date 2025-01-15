@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'OriginalValue'|'TopResolution'|'Concatenation' $resolutionStrategy
- * @property SlotValueRegexFilter $regexFilter
- * @property AdvancedRecognitionSetting $advancedRecognitionSetting
+ * @property SlotValueRegexFilter|null $regexFilter
+ * @property AdvancedRecognitionSetting|null $advancedRecognitionSetting
  */
 class SlotValueSelectionSetting extends Shape
 {
     /**
      * @param array{
      *     resolutionStrategy: 'OriginalValue'|'TopResolution'|'Concatenation',
-     *     regexFilter?: SlotValueRegexFilter,
-     *     advancedRecognitionSetting?: AdvancedRecognitionSetting
+     *     regexFilter?: SlotValueRegexFilter|null,
+     *     advancedRecognitionSetting?: AdvancedRecognitionSetting|null
      * } $args
      */
     public function __construct(array $args)

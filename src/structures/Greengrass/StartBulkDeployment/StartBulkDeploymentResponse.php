@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Greengrass\StartBulkDeployment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $BulkDeploymentArn
- * @property string $BulkDeploymentId
+ * @property string|null $BulkDeploymentArn
+ * @property string|null $BulkDeploymentId
  */
 class StartBulkDeploymentResponse extends Response
 {

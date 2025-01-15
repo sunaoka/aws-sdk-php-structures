@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePromptVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PromptModelInferenceConfiguration $text
+ * @property PromptModelInferenceConfiguration|null $text
  */
 class PromptInferenceConfiguration extends Shape
 {
     /**
-     * @param array{text?: PromptModelInferenceConfiguration} $args
+     * @param array{text?: PromptModelInferenceConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

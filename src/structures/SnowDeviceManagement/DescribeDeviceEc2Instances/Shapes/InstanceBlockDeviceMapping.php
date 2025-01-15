@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\DescribeDeviceEc2Instances
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $deviceName
- * @property EbsInstanceBlockDevice $ebs
+ * @property string|null $deviceName
+ * @property EbsInstanceBlockDevice|null $ebs
  */
 class InstanceBlockDeviceMapping extends Shape
 {
     /**
      * @param array{
-     *     deviceName?: string,
-     *     ebs?: EbsInstanceBlockDevice
+     *     deviceName?: string|null,
+     *     ebs?: EbsInstanceBlockDevice|null
      * } $args
      */
     public function __construct(array $args = [])

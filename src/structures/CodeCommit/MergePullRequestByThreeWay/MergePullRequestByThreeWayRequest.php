@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $pullRequestId
  * @property string $repositoryName
- * @property string $sourceCommitId
- * @property 'FILE_LEVEL'|'LINE_LEVEL' $conflictDetailLevel
- * @property 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE' $conflictResolutionStrategy
- * @property string $commitMessage
- * @property string $authorName
- * @property string $email
- * @property bool $keepEmptyFolders
- * @property Shapes\ConflictResolution $conflictResolution
+ * @property string|null $sourceCommitId
+ * @property 'FILE_LEVEL'|'LINE_LEVEL'|null $conflictDetailLevel
+ * @property 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE'|null $conflictResolutionStrategy
+ * @property string|null $commitMessage
+ * @property string|null $authorName
+ * @property string|null $email
+ * @property bool|null $keepEmptyFolders
+ * @property Shapes\ConflictResolution|null $conflictResolution
  */
 class MergePullRequestByThreeWayRequest extends Request
 {
@@ -22,14 +22,14 @@ class MergePullRequestByThreeWayRequest extends Request
      * @param array{
      *     pullRequestId: string,
      *     repositoryName: string,
-     *     sourceCommitId?: string,
-     *     conflictDetailLevel?: 'FILE_LEVEL'|'LINE_LEVEL',
-     *     conflictResolutionStrategy?: 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE',
-     *     commitMessage?: string,
-     *     authorName?: string,
-     *     email?: string,
-     *     keepEmptyFolders?: bool,
-     *     conflictResolution?: Shapes\ConflictResolution
+     *     sourceCommitId?: string|null,
+     *     conflictDetailLevel?: 'FILE_LEVEL'|'LINE_LEVEL'|null,
+     *     conflictResolutionStrategy?: 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE'|null,
+     *     commitMessage?: string|null,
+     *     authorName?: string|null,
+     *     email?: string|null,
+     *     keepEmptyFolders?: bool|null,
+     *     conflictResolution?: Shapes\ConflictResolution|null
      * } $args
      */
     public function __construct(array $args)

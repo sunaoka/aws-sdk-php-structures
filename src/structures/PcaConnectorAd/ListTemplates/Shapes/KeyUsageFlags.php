@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\ListTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DataEncipherment
- * @property bool $DigitalSignature
- * @property bool $KeyAgreement
- * @property bool $KeyEncipherment
- * @property bool $NonRepudiation
+ * @property bool|null $DataEncipherment
+ * @property bool|null $DigitalSignature
+ * @property bool|null $KeyAgreement
+ * @property bool|null $KeyEncipherment
+ * @property bool|null $NonRepudiation
  */
 class KeyUsageFlags extends Shape
 {
     /**
      * @param array{
-     *     DataEncipherment?: bool,
-     *     DigitalSignature?: bool,
-     *     KeyAgreement?: bool,
-     *     KeyEncipherment?: bool,
-     *     NonRepudiation?: bool
+     *     DataEncipherment?: bool|null,
+     *     DigitalSignature?: bool|null,
+     *     KeyAgreement?: bool|null,
+     *     KeyEncipherment?: bool|null,
+     *     NonRepudiation?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

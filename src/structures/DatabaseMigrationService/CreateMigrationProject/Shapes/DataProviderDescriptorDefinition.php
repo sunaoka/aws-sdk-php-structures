@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DataProviderIdentifier
- * @property string $SecretsManagerSecretId
- * @property string $SecretsManagerAccessRoleArn
+ * @property string|null $SecretsManagerSecretId
+ * @property string|null $SecretsManagerAccessRoleArn
  */
 class DataProviderDescriptorDefinition extends Shape
 {
     /**
      * @param array{
      *     DataProviderIdentifier: string,
-     *     SecretsManagerSecretId?: string,
-     *     SecretsManagerAccessRoleArn?: string
+     *     SecretsManagerSecretId?: string|null,
+     *     SecretsManagerAccessRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

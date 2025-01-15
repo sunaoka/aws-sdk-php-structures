@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SecurityHub\ListConfigurationPolicyAssociations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConfigurationPolicyId
- * @property string $TargetId
- * @property 'ACCOUNT'|'ORGANIZATIONAL_UNIT'|'ROOT' $TargetType
- * @property 'INHERITED'|'APPLIED' $AssociationType
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property 'PENDING'|'SUCCESS'|'FAILED' $AssociationStatus
- * @property string $AssociationStatusMessage
+ * @property string|null $ConfigurationPolicyId
+ * @property string|null $TargetId
+ * @property 'ACCOUNT'|'ORGANIZATIONAL_UNIT'|'ROOT'|null $TargetType
+ * @property 'INHERITED'|'APPLIED'|null $AssociationType
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property 'PENDING'|'SUCCESS'|'FAILED'|null $AssociationStatus
+ * @property string|null $AssociationStatusMessage
  */
 class ConfigurationPolicyAssociationSummary extends Shape
 {
     /**
      * @param array{
-     *     ConfigurationPolicyId?: string,
-     *     TargetId?: string,
-     *     TargetType?: 'ACCOUNT'|'ORGANIZATIONAL_UNIT'|'ROOT',
-     *     AssociationType?: 'INHERITED'|'APPLIED',
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     AssociationStatus?: 'PENDING'|'SUCCESS'|'FAILED',
-     *     AssociationStatusMessage?: string
+     *     ConfigurationPolicyId?: string|null,
+     *     TargetId?: string|null,
+     *     TargetType?: 'ACCOUNT'|'ORGANIZATIONAL_UNIT'|'ROOT'|null,
+     *     AssociationType?: 'INHERITED'|'APPLIED'|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     AssociationStatus?: 'PENDING'|'SUCCESS'|'FAILED'|null,
+     *     AssociationStatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

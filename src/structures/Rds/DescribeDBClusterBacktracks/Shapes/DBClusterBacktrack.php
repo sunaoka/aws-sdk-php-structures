@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBClusterBacktracks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBClusterIdentifier
- * @property string $BacktrackIdentifier
- * @property \Aws\Api\DateTimeResult $BacktrackTo
- * @property \Aws\Api\DateTimeResult $BacktrackedFrom
- * @property \Aws\Api\DateTimeResult $BacktrackRequestCreationTime
- * @property string $Status
+ * @property string|null $DBClusterIdentifier
+ * @property string|null $BacktrackIdentifier
+ * @property \Aws\Api\DateTimeResult|null $BacktrackTo
+ * @property \Aws\Api\DateTimeResult|null $BacktrackedFrom
+ * @property \Aws\Api\DateTimeResult|null $BacktrackRequestCreationTime
+ * @property string|null $Status
  */
 class DBClusterBacktrack extends Shape
 {
     /**
      * @param array{
-     *     DBClusterIdentifier?: string,
-     *     BacktrackIdentifier?: string,
-     *     BacktrackTo?: \Aws\Api\DateTimeResult,
-     *     BacktrackedFrom?: \Aws\Api\DateTimeResult,
-     *     BacktrackRequestCreationTime?: \Aws\Api\DateTimeResult,
-     *     Status?: string
+     *     DBClusterIdentifier?: string|null,
+     *     BacktrackIdentifier?: string|null,
+     *     BacktrackTo?: \Aws\Api\DateTimeResult|null,
+     *     BacktrackedFrom?: \Aws\Api\DateTimeResult|null,
+     *     BacktrackRequestCreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

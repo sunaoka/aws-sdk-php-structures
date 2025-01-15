@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MTurk\ListQualificationTypes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Query
+ * @property string|null $Query
  * @property bool $MustBeRequestable
- * @property bool $MustBeOwnedByCaller
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property bool|null $MustBeOwnedByCaller
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListQualificationTypesRequest extends Request
 {
     /**
      * @param array{
-     *     Query?: string,
+     *     Query?: string|null,
      *     MustBeRequestable: bool,
-     *     MustBeOwnedByCaller?: bool,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     MustBeOwnedByCaller?: bool|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

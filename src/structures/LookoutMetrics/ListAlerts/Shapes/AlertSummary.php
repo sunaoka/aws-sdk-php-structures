@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\ListAlerts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AlertArn
- * @property string $AnomalyDetectorArn
- * @property string $AlertName
- * @property int<0, 100> $AlertSensitivityThreshold
- * @property 'SNS'|'LAMBDA' $AlertType
- * @property 'ACTIVE'|'INACTIVE' $AlertStatus
- * @property \Aws\Api\DateTimeResult $LastModificationTime
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property array<string, string> $Tags
+ * @property string|null $AlertArn
+ * @property string|null $AnomalyDetectorArn
+ * @property string|null $AlertName
+ * @property int<0, 100>|null $AlertSensitivityThreshold
+ * @property 'SNS'|'LAMBDA'|null $AlertType
+ * @property 'ACTIVE'|'INACTIVE'|null $AlertStatus
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property array<string, string>|null $Tags
  */
 class AlertSummary extends Shape
 {
     /**
      * @param array{
-     *     AlertArn?: string,
-     *     AnomalyDetectorArn?: string,
-     *     AlertName?: string,
-     *     AlertSensitivityThreshold?: int<0, 100>,
-     *     AlertType?: 'SNS'|'LAMBDA',
-     *     AlertStatus?: 'ACTIVE'|'INACTIVE',
-     *     LastModificationTime?: \Aws\Api\DateTimeResult,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Tags?: array<string, string>
+     *     AlertArn?: string|null,
+     *     AnomalyDetectorArn?: string|null,
+     *     AlertName?: string|null,
+     *     AlertSensitivityThreshold?: int<0, 100>|null,
+     *     AlertType?: 'SNS'|'LAMBDA'|null,
+     *     AlertStatus?: 'ACTIVE'|'INACTIVE'|null,
+     *     LastModificationTime?: \Aws\Api\DateTimeResult|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

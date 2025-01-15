@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $StandardsArn
  * @property array<string, string> $StandardsInput
  * @property 'PENDING'|'READY'|'FAILED'|'DELETING'|'INCOMPLETE' $StandardsStatus
- * @property StandardsStatusReason $StandardsStatusReason
+ * @property StandardsStatusReason|null $StandardsStatusReason
  */
 class StandardsSubscription extends Shape
 {
@@ -19,7 +19,7 @@ class StandardsSubscription extends Shape
      *     StandardsArn: string,
      *     StandardsInput: array<string, string>,
      *     StandardsStatus: 'PENDING'|'READY'|'FAILED'|'DELETING'|'INCOMPLETE',
-     *     StandardsStatusReason?: StandardsStatusReason
+     *     StandardsStatusReason?: StandardsStatusReason|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancers\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Listener $Listener
- * @property list<string> $PolicyNames
+ * @property Listener|null $Listener
+ * @property list<string>|null $PolicyNames
  */
 class ListenerDescription extends Shape
 {
     /**
      * @param array{
-     *     Listener?: Listener,
-     *     PolicyNames?: list<string>
+     *     Listener?: Listener|null,
+     *     PolicyNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

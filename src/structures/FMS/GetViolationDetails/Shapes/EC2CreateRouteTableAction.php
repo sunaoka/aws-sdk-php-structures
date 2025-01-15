@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property ActionTarget $VpcId
  */
 class EC2CreateRouteTableAction extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     VpcId: ActionTarget
      * } $args
      */

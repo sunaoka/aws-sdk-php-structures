@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CodeGuruProfiler\GetRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $countersToAggregate
- * @property string $description
- * @property string $id
- * @property string $name
- * @property string $resolutionSteps
- * @property list<list<string>> $targetFrames
- * @property double $thresholdPercent
+ * @property list<string>|null $countersToAggregate
+ * @property string|null $description
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $resolutionSteps
+ * @property list<list<string>>|null $targetFrames
+ * @property double|null $thresholdPercent
  */
 class Pattern extends Shape
 {
     /**
      * @param array{
-     *     countersToAggregate?: list<string>,
-     *     description?: string,
-     *     id?: string,
-     *     name?: string,
-     *     resolutionSteps?: string,
-     *     targetFrames?: list<list<string>>,
-     *     thresholdPercent?: double
+     *     countersToAggregate?: list<string>|null,
+     *     description?: string|null,
+     *     id?: string|null,
+     *     name?: string|null,
+     *     resolutionSteps?: string|null,
+     *     targetFrames?: list<list<string>>|null,
+     *     thresholdPercent?: double|null
      * } $args
      */
     public function __construct(array $args = [])

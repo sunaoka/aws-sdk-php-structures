@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetCustomerGatewayAssociations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustomerGatewayArn
- * @property string $GlobalNetworkId
- * @property string $DeviceId
- * @property string $LinkId
- * @property 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED' $State
+ * @property string|null $CustomerGatewayArn
+ * @property string|null $GlobalNetworkId
+ * @property string|null $DeviceId
+ * @property string|null $LinkId
+ * @property 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|null $State
  */
 class CustomerGatewayAssociation extends Shape
 {
     /**
      * @param array{
-     *     CustomerGatewayArn?: string,
-     *     GlobalNetworkId?: string,
-     *     DeviceId?: string,
-     *     LinkId?: string,
-     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'
+     *     CustomerGatewayArn?: string|null,
+     *     GlobalNetworkId?: string|null,
+     *     DeviceId?: string|null,
+     *     LinkId?: string|null,
+     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

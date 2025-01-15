@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\BatchDeleteRecipeVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorCode
- * @property string $ErrorMessage
- * @property string $RecipeVersion
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
+ * @property string|null $RecipeVersion
  */
 class RecipeVersionErrorDetail extends Shape
 {
     /**
      * @param array{
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string,
-     *     RecipeVersion?: string
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null,
+     *     RecipeVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

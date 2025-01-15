@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\FIS\UpdateExperimentTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $arn
- * @property string $description
- * @property array<string, ExperimentTemplateTarget> $targets
- * @property array<string, ExperimentTemplateAction> $actions
- * @property list<ExperimentTemplateStopCondition> $stopConditions
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property string $roleArn
- * @property array<string, string> $tags
- * @property ExperimentTemplateLogConfiguration $logConfiguration
- * @property ExperimentTemplateExperimentOptions $experimentOptions
- * @property int<0, max> $targetAccountConfigurationsCount
- * @property ExperimentTemplateReportConfiguration $experimentReportConfiguration
+ * @property string|null $id
+ * @property string|null $arn
+ * @property string|null $description
+ * @property array<string, ExperimentTemplateTarget>|null $targets
+ * @property array<string, ExperimentTemplateAction>|null $actions
+ * @property list<ExperimentTemplateStopCondition>|null $stopConditions
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property string|null $roleArn
+ * @property array<string, string>|null $tags
+ * @property ExperimentTemplateLogConfiguration|null $logConfiguration
+ * @property ExperimentTemplateExperimentOptions|null $experimentOptions
+ * @property int<0, max>|null $targetAccountConfigurationsCount
+ * @property ExperimentTemplateReportConfiguration|null $experimentReportConfiguration
  */
 class ExperimentTemplate extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     arn?: string,
-     *     description?: string,
-     *     targets?: array<string, ExperimentTemplateTarget>,
-     *     actions?: array<string, ExperimentTemplateAction>,
-     *     stopConditions?: list<ExperimentTemplateStopCondition>,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     roleArn?: string,
-     *     tags?: array<string, string>,
-     *     logConfiguration?: ExperimentTemplateLogConfiguration,
-     *     experimentOptions?: ExperimentTemplateExperimentOptions,
-     *     targetAccountConfigurationsCount?: int<0, max>,
-     *     experimentReportConfiguration?: ExperimentTemplateReportConfiguration
+     *     id?: string|null,
+     *     arn?: string|null,
+     *     description?: string|null,
+     *     targets?: array<string, ExperimentTemplateTarget>|null,
+     *     actions?: array<string, ExperimentTemplateAction>|null,
+     *     stopConditions?: list<ExperimentTemplateStopCondition>|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     roleArn?: string|null,
+     *     tags?: array<string, string>|null,
+     *     logConfiguration?: ExperimentTemplateLogConfiguration|null,
+     *     experimentOptions?: ExperimentTemplateExperimentOptions|null,
+     *     targetAccountConfigurationsCount?: int<0, max>|null,
+     *     experimentReportConfiguration?: ExperimentTemplateReportConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

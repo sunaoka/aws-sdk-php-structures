@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceGroupName
  * @property string $PatternSetName
  * @property string $PatternName
- * @property string $AccountId
+ * @property string|null $AccountId
  */
 class DescribeLogPatternRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeLogPatternRequest extends Request
      *     ResourceGroupName: string,
      *     PatternSetName: string,
      *     PatternName: string,
-     *     AccountId?: string
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

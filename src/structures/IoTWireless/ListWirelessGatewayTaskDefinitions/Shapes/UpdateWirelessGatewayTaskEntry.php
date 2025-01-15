@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListWirelessGatewayTaskDefinitions\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property LoRaWANUpdateGatewayTaskEntry $LoRaWAN
- * @property string $Arn
+ * @property string|null $Id
+ * @property LoRaWANUpdateGatewayTaskEntry|null $LoRaWAN
+ * @property string|null $Arn
  */
 class UpdateWirelessGatewayTaskEntry extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     LoRaWAN?: LoRaWANUpdateGatewayTaskEntry,
-     *     Arn?: string
+     *     Id?: string|null,
+     *     LoRaWAN?: LoRaWANUpdateGatewayTaskEntry|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

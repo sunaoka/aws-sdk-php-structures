@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\DeleteEndpointAccess;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\EndpointAccess $endpoint
+ * @property Shapes\EndpointAccess|null $endpoint
  */
 class DeleteEndpointAccessResponse extends Response
 {

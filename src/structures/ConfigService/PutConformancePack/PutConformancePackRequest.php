@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConformancePackName
- * @property string $TemplateS3Uri
- * @property string $TemplateBody
- * @property string $DeliveryS3Bucket
- * @property string $DeliveryS3KeyPrefix
- * @property list<Shapes\ConformancePackInputParameter> $ConformancePackInputParameters
- * @property Shapes\TemplateSSMDocumentDetails $TemplateSSMDocumentDetails
+ * @property string|null $TemplateS3Uri
+ * @property string|null $TemplateBody
+ * @property string|null $DeliveryS3Bucket
+ * @property string|null $DeliveryS3KeyPrefix
+ * @property list<Shapes\ConformancePackInputParameter>|null $ConformancePackInputParameters
+ * @property Shapes\TemplateSSMDocumentDetails|null $TemplateSSMDocumentDetails
  */
 class PutConformancePackRequest extends Request
 {
     /**
      * @param array{
      *     ConformancePackName: string,
-     *     TemplateS3Uri?: string,
-     *     TemplateBody?: string,
-     *     DeliveryS3Bucket?: string,
-     *     DeliveryS3KeyPrefix?: string,
-     *     ConformancePackInputParameters?: list<Shapes\ConformancePackInputParameter>,
-     *     TemplateSSMDocumentDetails?: Shapes\TemplateSSMDocumentDetails
+     *     TemplateS3Uri?: string|null,
+     *     TemplateBody?: string|null,
+     *     DeliveryS3Bucket?: string|null,
+     *     DeliveryS3KeyPrefix?: string|null,
+     *     ConformancePackInputParameters?: list<Shapes\ConformancePackInputParameter>|null,
+     *     TemplateSSMDocumentDetails?: Shapes\TemplateSSMDocumentDetails|null
      * } $args
      */
     public function __construct(array $args)

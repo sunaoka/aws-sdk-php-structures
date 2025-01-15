@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListIntentMetrics;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $botId
- * @property list<Shapes\AnalyticsIntentResult> $results
- * @property string $nextToken
+ * @property string|null $botId
+ * @property list<Shapes\AnalyticsIntentResult>|null $results
+ * @property string|null $nextToken
  */
 class ListIntentMetricsResponse extends Response
 {

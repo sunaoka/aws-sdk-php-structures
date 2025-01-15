@@ -14,8 +14,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $identityCenterApplicationArn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class GetMonitorResponse extends Response
 {

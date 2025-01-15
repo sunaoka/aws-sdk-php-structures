@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataShareArn
- * @property bool $DisassociateEntireAccount
- * @property string $ConsumerArn
- * @property string $ConsumerRegion
+ * @property bool|null $DisassociateEntireAccount
+ * @property string|null $ConsumerArn
+ * @property string|null $ConsumerRegion
  */
 class DisassociateDataShareConsumerRequest extends Request
 {
     /**
      * @param array{
      *     DataShareArn: string,
-     *     DisassociateEntireAccount?: bool,
-     *     ConsumerArn?: string,
-     *     ConsumerRegion?: string
+     *     DisassociateEntireAccount?: bool|null,
+     *     ConsumerArn?: string|null,
+     *     ConsumerRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

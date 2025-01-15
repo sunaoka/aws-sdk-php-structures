@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<DataPathValue> $DataPathList
- * @property string $Width
+ * @property string|null $Width
  */
 class PivotTableDataPathOption extends Shape
 {
     /**
      * @param array{
      *     DataPathList: list<DataPathValue>,
-     *     Width?: string
+     *     Width?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BackupSearch\ListSearchJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'RUNNING'|'COMPLETED'|'STOPPING'|'STOPPED'|'FAILED' $ByStatus
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
+ * @property 'RUNNING'|'COMPLETED'|'STOPPING'|'STOPPED'|'FAILED'|null $ByStatus
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class ListSearchJobsRequest extends Request
 {
     /**
      * @param array{
-     *     ByStatus?: 'RUNNING'|'COMPLETED'|'STOPPING'|'STOPPED'|'FAILED',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>
+     *     ByStatus?: 'RUNNING'|'COMPLETED'|'STOPPING'|'STOPPED'|'FAILED'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

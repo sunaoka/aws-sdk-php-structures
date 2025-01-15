@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateDataProduct;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property string $domainIdentifier
- * @property list<Shapes\FormInput> $formsInput
- * @property list<string> $glossaryTerms
- * @property list<Shapes\DataProductItem> $items
+ * @property list<Shapes\FormInput>|null $formsInput
+ * @property list<string>|null $glossaryTerms
+ * @property list<Shapes\DataProductItem>|null $items
  * @property string $name
  * @property string $owningProjectIdentifier
  */
@@ -18,12 +18,12 @@ class CreateDataProductRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     domainIdentifier: string,
-     *     formsInput?: list<Shapes\FormInput>,
-     *     glossaryTerms?: list<string>,
-     *     items?: list<Shapes\DataProductItem>,
+     *     formsInput?: list<Shapes\FormInput>|null,
+     *     glossaryTerms?: list<string>|null,
+     *     items?: list<Shapes\DataProductItem>|null,
      *     name: string,
      *     owningProjectIdentifier: string
      * } $args

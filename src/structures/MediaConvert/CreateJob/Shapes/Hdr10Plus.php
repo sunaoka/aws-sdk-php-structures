@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 4000> $MasteringMonitorNits
- * @property int<0, 4000> $TargetMonitorNits
+ * @property int<0, 4000>|null $MasteringMonitorNits
+ * @property int<0, 4000>|null $TargetMonitorNits
  */
 class Hdr10Plus extends Shape
 {
     /**
      * @param array{
-     *     MasteringMonitorNits?: int<0, 4000>,
-     *     TargetMonitorNits?: int<0, 4000>
+     *     MasteringMonitorNits?: int<0, 4000>|null,
+     *     TargetMonitorNits?: int<0, 4000>|null
      * } $args
      */
     public function __construct(array $args = [])

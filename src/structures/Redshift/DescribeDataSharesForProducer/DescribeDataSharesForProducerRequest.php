@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeDataSharesForProducer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ProducerArn
- * @property 'ACTIVE'|'AUTHORIZED'|'PENDING_AUTHORIZATION'|'DEAUTHORIZED'|'REJECTED' $Status
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $ProducerArn
+ * @property 'ACTIVE'|'AUTHORIZED'|'PENDING_AUTHORIZATION'|'DEAUTHORIZED'|'REJECTED'|null $Status
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeDataSharesForProducerRequest extends Request
 {
     /**
      * @param array{
-     *     ProducerArn?: string,
-     *     Status?: 'ACTIVE'|'AUTHORIZED'|'PENDING_AUTHORIZATION'|'DEAUTHORIZED'|'REJECTED',
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     ProducerArn?: string|null,
+     *     Status?: 'ACTIVE'|'AUTHORIZED'|'PENDING_AUTHORIZATION'|'DEAUTHORIZED'|'REJECTED'|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetFolder\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $treeId
- * @property string $absolutePath
- * @property string $relativePath
+ * @property string|null $treeId
+ * @property string|null $absolutePath
+ * @property string|null $relativePath
  */
 class Folder extends Shape
 {
     /**
      * @param array{
-     *     treeId?: string,
-     *     absolutePath?: string,
-     *     relativePath?: string
+     *     treeId?: string|null,
+     *     absolutePath?: string|null,
+     *     relativePath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,40 +6,40 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IndexId
- * @property string $QueryText
- * @property Shapes\AttributeFilter $AttributeFilter
- * @property list<Shapes\Facet> $Facets
- * @property list<string> $RequestedDocumentAttributes
- * @property 'DOCUMENT'|'QUESTION_ANSWER'|'ANSWER' $QueryResultTypeFilter
- * @property list<Shapes\DocumentRelevanceConfiguration> $DocumentRelevanceOverrideConfigurations
- * @property int $PageNumber
- * @property int $PageSize
- * @property Shapes\SortingConfiguration $SortingConfiguration
- * @property list<Shapes\SortingConfiguration> $SortingConfigurations
- * @property Shapes\UserContext $UserContext
- * @property string $VisitorId
- * @property Shapes\SpellCorrectionConfiguration $SpellCorrectionConfiguration
- * @property Shapes\CollapseConfiguration $CollapseConfiguration
+ * @property string|null $QueryText
+ * @property Shapes\AttributeFilter|null $AttributeFilter
+ * @property list<Shapes\Facet>|null $Facets
+ * @property list<string>|null $RequestedDocumentAttributes
+ * @property 'DOCUMENT'|'QUESTION_ANSWER'|'ANSWER'|null $QueryResultTypeFilter
+ * @property list<Shapes\DocumentRelevanceConfiguration>|null $DocumentRelevanceOverrideConfigurations
+ * @property int|null $PageNumber
+ * @property int|null $PageSize
+ * @property Shapes\SortingConfiguration|null $SortingConfiguration
+ * @property list<Shapes\SortingConfiguration>|null $SortingConfigurations
+ * @property Shapes\UserContext|null $UserContext
+ * @property string|null $VisitorId
+ * @property Shapes\SpellCorrectionConfiguration|null $SpellCorrectionConfiguration
+ * @property Shapes\CollapseConfiguration|null $CollapseConfiguration
  */
 class QueryRequest extends Request
 {
     /**
      * @param array{
      *     IndexId: string,
-     *     QueryText?: string,
-     *     AttributeFilter?: Shapes\AttributeFilter,
-     *     Facets?: list<Shapes\Facet>,
-     *     RequestedDocumentAttributes?: list<string>,
-     *     QueryResultTypeFilter?: 'DOCUMENT'|'QUESTION_ANSWER'|'ANSWER',
-     *     DocumentRelevanceOverrideConfigurations?: list<Shapes\DocumentRelevanceConfiguration>,
-     *     PageNumber?: int,
-     *     PageSize?: int,
-     *     SortingConfiguration?: Shapes\SortingConfiguration,
-     *     SortingConfigurations?: list<Shapes\SortingConfiguration>,
-     *     UserContext?: Shapes\UserContext,
-     *     VisitorId?: string,
-     *     SpellCorrectionConfiguration?: Shapes\SpellCorrectionConfiguration,
-     *     CollapseConfiguration?: Shapes\CollapseConfiguration
+     *     QueryText?: string|null,
+     *     AttributeFilter?: Shapes\AttributeFilter|null,
+     *     Facets?: list<Shapes\Facet>|null,
+     *     RequestedDocumentAttributes?: list<string>|null,
+     *     QueryResultTypeFilter?: 'DOCUMENT'|'QUESTION_ANSWER'|'ANSWER'|null,
+     *     DocumentRelevanceOverrideConfigurations?: list<Shapes\DocumentRelevanceConfiguration>|null,
+     *     PageNumber?: int|null,
+     *     PageSize?: int|null,
+     *     SortingConfiguration?: Shapes\SortingConfiguration|null,
+     *     SortingConfigurations?: list<Shapes\SortingConfiguration>|null,
+     *     UserContext?: Shapes\UserContext|null,
+     *     VisitorId?: string|null,
+     *     SpellCorrectionConfiguration?: Shapes\SpellCorrectionConfiguration|null,
+     *     CollapseConfiguration?: Shapes\CollapseConfiguration|null
      * } $args
      */
     public function __construct(array $args)

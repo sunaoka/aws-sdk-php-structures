@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'block-all-sharing'|'block-new-sharing'|'unblocked' $State
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class EnableSnapshotBlockPublicAccessRequest extends Request
 {
     /**
      * @param array{
      *     State: 'block-all-sharing'|'block-new-sharing'|'unblocked',
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

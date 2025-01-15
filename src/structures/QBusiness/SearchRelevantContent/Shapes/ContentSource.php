@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QBusiness\SearchRelevantContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RetrieverContentSource $retriever
+ * @property RetrieverContentSource|null $retriever
  */
 class ContentSource extends Shape
 {
     /**
-     * @param array{retriever?: RetrieverContentSource} $args
+     * @param array{retriever?: RetrieverContentSource|null} $args
      */
     public function __construct(array $args = [])
     {

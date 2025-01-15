@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetTableOptimizer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $orphanFileRetentionPeriodInDays
- * @property string $location
+ * @property int|null $orphanFileRetentionPeriodInDays
+ * @property string|null $location
  */
 class IcebergOrphanFileDeletionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     orphanFileRetentionPeriodInDays?: int,
-     *     location?: string
+     *     orphanFileRetentionPeriodInDays?: int|null,
+     *     location?: string|null
      * } $args
      */
     public function __construct(array $args = [])

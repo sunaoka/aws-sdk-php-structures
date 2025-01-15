@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\ListTemplateGroupAccessControlEn
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOW'|'DENY' $AutoEnroll
- * @property 'ALLOW'|'DENY' $Enroll
+ * @property 'ALLOW'|'DENY'|null $AutoEnroll
+ * @property 'ALLOW'|'DENY'|null $Enroll
  */
 class AccessRights extends Shape
 {
     /**
      * @param array{
-     *     AutoEnroll?: 'ALLOW'|'DENY',
-     *     Enroll?: 'ALLOW'|'DENY'
+     *     AutoEnroll?: 'ALLOW'|'DENY'|null,
+     *     Enroll?: 'ALLOW'|'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

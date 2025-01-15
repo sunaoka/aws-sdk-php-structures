@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\PutOutboundRequestBatch\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clientToken
- * @property string $id
+ * @property string|null $clientToken
+ * @property string|null $id
  */
 class SuccessfulRequest extends Shape
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     id?: string
+     *     clientToken?: string|null,
+     *     id?: string|null
      * } $args
      */
     public function __construct(array $args = [])

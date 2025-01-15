@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WhatIfForecastExportName
  * @property list<string> $WhatIfForecastArns
  * @property Shapes\DataDestination $Destination
- * @property list<Shapes\Tag> $Tags
- * @property string $Format
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $Format
  */
 class CreateWhatIfForecastExportRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateWhatIfForecastExportRequest extends Request
      *     WhatIfForecastExportName: string,
      *     WhatIfForecastArns: list<string>,
      *     Destination: Shapes\DataDestination,
-     *     Tags?: list<Shapes\Tag>,
-     *     Format?: string
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Format?: string|null
      * } $args
      */
     public function __construct(array $args)

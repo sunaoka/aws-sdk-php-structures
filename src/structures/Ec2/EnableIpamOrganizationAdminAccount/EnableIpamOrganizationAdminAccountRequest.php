@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\EnableIpamOrganizationAdminAccount;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $DelegatedAdminAccountId
  */
 class EnableIpamOrganizationAdminAccountRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     DelegatedAdminAccountId: string
      * } $args
      */

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property string $CatalogId
+ * @property string|null $Description
+ * @property string|null $CatalogId
  * @property list<Shapes\LFTag> $Expression
  */
 class UpdateLFTagExpressionRequest extends Request
@@ -15,8 +15,8 @@ class UpdateLFTagExpressionRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     CatalogId?: string,
+     *     Description?: string|null,
+     *     CatalogId?: string|null,
      *     Expression: list<Shapes\LFTag>
      * } $args
      */

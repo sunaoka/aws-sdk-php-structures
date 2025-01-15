@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CloudFront\CreateResponseHeadersPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Comment
+ * @property string|null $Comment
  * @property string $Name
- * @property ResponseHeadersPolicyCorsConfig $CorsConfig
- * @property ResponseHeadersPolicySecurityHeadersConfig $SecurityHeadersConfig
- * @property ResponseHeadersPolicyServerTimingHeadersConfig $ServerTimingHeadersConfig
- * @property ResponseHeadersPolicyCustomHeadersConfig $CustomHeadersConfig
- * @property ResponseHeadersPolicyRemoveHeadersConfig $RemoveHeadersConfig
+ * @property ResponseHeadersPolicyCorsConfig|null $CorsConfig
+ * @property ResponseHeadersPolicySecurityHeadersConfig|null $SecurityHeadersConfig
+ * @property ResponseHeadersPolicyServerTimingHeadersConfig|null $ServerTimingHeadersConfig
+ * @property ResponseHeadersPolicyCustomHeadersConfig|null $CustomHeadersConfig
+ * @property ResponseHeadersPolicyRemoveHeadersConfig|null $RemoveHeadersConfig
  */
 class ResponseHeadersPolicyConfig extends Shape
 {
     /**
      * @param array{
-     *     Comment?: string,
+     *     Comment?: string|null,
      *     Name: string,
-     *     CorsConfig?: ResponseHeadersPolicyCorsConfig,
-     *     SecurityHeadersConfig?: ResponseHeadersPolicySecurityHeadersConfig,
-     *     ServerTimingHeadersConfig?: ResponseHeadersPolicyServerTimingHeadersConfig,
-     *     CustomHeadersConfig?: ResponseHeadersPolicyCustomHeadersConfig,
-     *     RemoveHeadersConfig?: ResponseHeadersPolicyRemoveHeadersConfig
+     *     CorsConfig?: ResponseHeadersPolicyCorsConfig|null,
+     *     SecurityHeadersConfig?: ResponseHeadersPolicySecurityHeadersConfig|null,
+     *     ServerTimingHeadersConfig?: ResponseHeadersPolicyServerTimingHeadersConfig|null,
+     *     CustomHeadersConfig?: ResponseHeadersPolicyCustomHeadersConfig|null,
+     *     RemoveHeadersConfig?: ResponseHeadersPolicyRemoveHeadersConfig|null
      * } $args
      */
     public function __construct(array $args)

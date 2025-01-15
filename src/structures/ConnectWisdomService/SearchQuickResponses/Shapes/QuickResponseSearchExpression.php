@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\SearchQuickResponses\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<QuickResponseFilterField> $filters
- * @property QuickResponseOrderField $orderOnField
- * @property list<QuickResponseQueryField> $queries
+ * @property list<QuickResponseFilterField>|null $filters
+ * @property QuickResponseOrderField|null $orderOnField
+ * @property list<QuickResponseQueryField>|null $queries
  */
 class QuickResponseSearchExpression extends Shape
 {
     /**
      * @param array{
-     *     filters?: list<QuickResponseFilterField>,
-     *     orderOnField?: QuickResponseOrderField,
-     *     queries?: list<QuickResponseQueryField>
+     *     filters?: list<QuickResponseFilterField>|null,
+     *     orderOnField?: QuickResponseOrderField|null,
+     *     queries?: list<QuickResponseQueryField>|null
      * } $args
      */
     public function __construct(array $args = [])

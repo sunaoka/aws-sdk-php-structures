@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyInstanceEventWindow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $InstanceIds
- * @property list<Tag> $Tags
- * @property list<string> $DedicatedHostIds
+ * @property list<string>|null $InstanceIds
+ * @property list<Tag>|null $Tags
+ * @property list<string>|null $DedicatedHostIds
  */
 class InstanceEventWindowAssociationTarget extends Shape
 {
     /**
      * @param array{
-     *     InstanceIds?: list<string>,
-     *     Tags?: list<Tag>,
-     *     DedicatedHostIds?: list<string>
+     *     InstanceIds?: list<string>|null,
+     *     Tags?: list<Tag>|null,
+     *     DedicatedHostIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Support\AddCommunicationToCase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $caseId
+ * @property string|null $caseId
  * @property string $communicationBody
- * @property list<string> $ccEmailAddresses
- * @property string $attachmentSetId
+ * @property list<string>|null $ccEmailAddresses
+ * @property string|null $attachmentSetId
  */
 class AddCommunicationToCaseRequest extends Request
 {
     /**
      * @param array{
-     *     caseId?: string,
+     *     caseId?: string|null,
      *     communicationBody: string,
-     *     ccEmailAddresses?: list<string>,
-     *     attachmentSetId?: string
+     *     ccEmailAddresses?: list<string>|null,
+     *     attachmentSetId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $spaceName
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
- * @property string $eventName
- * @property string $nextToken
- * @property int<1, 250> $maxResults
+ * @property string|null $eventName
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
  */
 class ListEventLogsRequest extends Request
 {
@@ -19,9 +19,9 @@ class ListEventLogsRequest extends Request
      *     spaceName: string,
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,
-     *     eventName?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>
+     *     eventName?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null
      * } $args
      */
     public function __construct(array $args)

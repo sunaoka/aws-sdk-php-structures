@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CloudWatch\DescribeAlarms;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $AlarmNames
- * @property string $AlarmNamePrefix
- * @property list<'CompositeAlarm'|'MetricAlarm'> $AlarmTypes
- * @property string $ChildrenOfAlarmName
- * @property string $ParentsOfAlarmName
- * @property 'OK'|'ALARM'|'INSUFFICIENT_DATA' $StateValue
- * @property string $ActionPrefix
- * @property int<1, 100> $MaxRecords
- * @property string $NextToken
+ * @property list<string>|null $AlarmNames
+ * @property string|null $AlarmNamePrefix
+ * @property list<'CompositeAlarm'|'MetricAlarm'>|null $AlarmTypes
+ * @property string|null $ChildrenOfAlarmName
+ * @property string|null $ParentsOfAlarmName
+ * @property 'OK'|'ALARM'|'INSUFFICIENT_DATA'|null $StateValue
+ * @property string|null $ActionPrefix
+ * @property int<1, 100>|null $MaxRecords
+ * @property string|null $NextToken
  */
 class DescribeAlarmsRequest extends Request
 {
     /**
      * @param array{
-     *     AlarmNames?: list<string>,
-     *     AlarmNamePrefix?: string,
-     *     AlarmTypes?: list<'CompositeAlarm'|'MetricAlarm'>,
-     *     ChildrenOfAlarmName?: string,
-     *     ParentsOfAlarmName?: string,
-     *     StateValue?: 'OK'|'ALARM'|'INSUFFICIENT_DATA',
-     *     ActionPrefix?: string,
-     *     MaxRecords?: int<1, 100>,
-     *     NextToken?: string
+     *     AlarmNames?: list<string>|null,
+     *     AlarmNamePrefix?: string|null,
+     *     AlarmTypes?: list<'CompositeAlarm'|'MetricAlarm'>|null,
+     *     ChildrenOfAlarmName?: string|null,
+     *     ParentsOfAlarmName?: string|null,
+     *     StateValue?: 'OK'|'ALARM'|'INSUFFICIENT_DATA'|null,
+     *     ActionPrefix?: string|null,
+     *     MaxRecords?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

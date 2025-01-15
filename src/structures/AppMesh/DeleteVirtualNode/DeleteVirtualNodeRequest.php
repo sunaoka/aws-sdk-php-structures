@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $meshName
- * @property string $meshOwner
+ * @property string|null $meshOwner
  * @property string $virtualNodeName
  */
 class DeleteVirtualNodeRequest extends Request
@@ -14,7 +14,7 @@ class DeleteVirtualNodeRequest extends Request
     /**
      * @param array{
      *     meshName: string,
-     *     meshOwner?: string,
+     *     meshOwner?: string|null,
      *     virtualNodeName: string
      * } $args
      */

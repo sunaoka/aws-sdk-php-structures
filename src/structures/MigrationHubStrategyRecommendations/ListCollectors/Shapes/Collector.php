@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListCollect
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'COLLECTOR_HEALTHY'|'COLLECTOR_UNHEALTHY' $collectorHealth
- * @property string $collectorId
- * @property string $collectorVersion
- * @property ConfigurationSummary $configurationSummary
- * @property string $hostName
- * @property string $ipAddress
- * @property string $lastActivityTimeStamp
- * @property string $registeredTimeStamp
+ * @property 'COLLECTOR_HEALTHY'|'COLLECTOR_UNHEALTHY'|null $collectorHealth
+ * @property string|null $collectorId
+ * @property string|null $collectorVersion
+ * @property ConfigurationSummary|null $configurationSummary
+ * @property string|null $hostName
+ * @property string|null $ipAddress
+ * @property string|null $lastActivityTimeStamp
+ * @property string|null $registeredTimeStamp
  */
 class Collector extends Shape
 {
     /**
      * @param array{
-     *     collectorHealth?: 'COLLECTOR_HEALTHY'|'COLLECTOR_UNHEALTHY',
-     *     collectorId?: string,
-     *     collectorVersion?: string,
-     *     configurationSummary?: ConfigurationSummary,
-     *     hostName?: string,
-     *     ipAddress?: string,
-     *     lastActivityTimeStamp?: string,
-     *     registeredTimeStamp?: string
+     *     collectorHealth?: 'COLLECTOR_HEALTHY'|'COLLECTOR_UNHEALTHY'|null,
+     *     collectorId?: string|null,
+     *     collectorVersion?: string|null,
+     *     configurationSummary?: ConfigurationSummary|null,
+     *     hostName?: string|null,
+     *     ipAddress?: string|null,
+     *     lastActivityTimeStamp?: string|null,
+     *     registeredTimeStamp?: string|null
      * } $args
      */
     public function __construct(array $args = [])

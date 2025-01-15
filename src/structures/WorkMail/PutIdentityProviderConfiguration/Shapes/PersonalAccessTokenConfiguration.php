@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ACTIVE'|'INACTIVE' $Status
- * @property int<1, 3653> $LifetimeInDays
+ * @property int<1, 3653>|null $LifetimeInDays
  */
 class PersonalAccessTokenConfiguration extends Shape
 {
     /**
      * @param array{
      *     Status: 'ACTIVE'|'INACTIVE',
-     *     LifetimeInDays?: int<1, 3653>
+     *     LifetimeInDays?: int<1, 3653>|null
      * } $args
      */
     public function __construct(array $args)

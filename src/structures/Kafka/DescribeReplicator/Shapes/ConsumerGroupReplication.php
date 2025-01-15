@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeReplicator\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ConsumerGroupsToExclude
+ * @property list<string>|null $ConsumerGroupsToExclude
  * @property list<string> $ConsumerGroupsToReplicate
- * @property bool $DetectAndCopyNewConsumerGroups
- * @property bool $SynchroniseConsumerGroupOffsets
+ * @property bool|null $DetectAndCopyNewConsumerGroups
+ * @property bool|null $SynchroniseConsumerGroupOffsets
  */
 class ConsumerGroupReplication extends Shape
 {
     /**
      * @param array{
-     *     ConsumerGroupsToExclude?: list<string>,
+     *     ConsumerGroupsToExclude?: list<string>|null,
      *     ConsumerGroupsToReplicate: list<string>,
-     *     DetectAndCopyNewConsumerGroups?: bool,
-     *     SynchroniseConsumerGroupOffsets?: bool
+     *     DetectAndCopyNewConsumerGroups?: bool|null,
+     *     SynchroniseConsumerGroupOffsets?: bool|null
      * } $args
      */
     public function __construct(array $args)

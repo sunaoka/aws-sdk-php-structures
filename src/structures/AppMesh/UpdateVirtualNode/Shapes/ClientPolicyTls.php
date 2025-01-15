@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ClientTlsCertificate $certificate
- * @property bool $enforce
- * @property list<int<1, 65535>> $ports
+ * @property ClientTlsCertificate|null $certificate
+ * @property bool|null $enforce
+ * @property list<int<1, 65535>>|null $ports
  * @property TlsValidationContext $validation
  */
 class ClientPolicyTls extends Shape
 {
     /**
      * @param array{
-     *     certificate?: ClientTlsCertificate,
-     *     enforce?: bool,
-     *     ports?: list<int<1, 65535>>,
+     *     certificate?: ClientTlsCertificate|null,
+     *     enforce?: bool|null,
+     *     ports?: list<int<1, 65535>>|null,
      *     validation: TlsValidationContext
      * } $args
      */

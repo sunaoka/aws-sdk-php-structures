@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateStorageVirtualMachine;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\UpdateSvmActiveDirectoryConfiguration $ActiveDirectoryConfiguration
- * @property string $ClientRequestToken
+ * @property Shapes\UpdateSvmActiveDirectoryConfiguration|null $ActiveDirectoryConfiguration
+ * @property string|null $ClientRequestToken
  * @property string $StorageVirtualMachineId
- * @property string $SvmAdminPassword
+ * @property string|null $SvmAdminPassword
  */
 class UpdateStorageVirtualMachineRequest extends Request
 {
     /**
      * @param array{
-     *     ActiveDirectoryConfiguration?: Shapes\UpdateSvmActiveDirectoryConfiguration,
-     *     ClientRequestToken?: string,
+     *     ActiveDirectoryConfiguration?: Shapes\UpdateSvmActiveDirectoryConfiguration|null,
+     *     ClientRequestToken?: string|null,
      *     StorageVirtualMachineId: string,
-     *     SvmAdminPassword?: string
+     *     SvmAdminPassword?: string|null
      * } $args
      */
     public function __construct(array $args)

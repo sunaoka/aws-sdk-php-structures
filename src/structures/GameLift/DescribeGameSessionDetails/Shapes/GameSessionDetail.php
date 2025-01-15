@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeGameSessionDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GameSession $GameSession
- * @property 'NoProtection'|'FullProtection' $ProtectionPolicy
+ * @property GameSession|null $GameSession
+ * @property 'NoProtection'|'FullProtection'|null $ProtectionPolicy
  */
 class GameSessionDetail extends Shape
 {
     /**
      * @param array{
-     *     GameSession?: GameSession,
-     *     ProtectionPolicy?: 'NoProtection'|'FullProtection'
+     *     GameSession?: GameSession|null,
+     *     ProtectionPolicy?: 'NoProtection'|'FullProtection'|null
      * } $args
      */
     public function __construct(array $args = [])

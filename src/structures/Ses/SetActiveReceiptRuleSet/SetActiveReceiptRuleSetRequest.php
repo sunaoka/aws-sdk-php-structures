@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ses\SetActiveReceiptRuleSet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $RuleSetName
+ * @property string|null $RuleSetName
  */
 class SetActiveReceiptRuleSetRequest extends Request
 {
     /**
-     * @param array{RuleSetName?: string} $args
+     * @param array{RuleSetName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

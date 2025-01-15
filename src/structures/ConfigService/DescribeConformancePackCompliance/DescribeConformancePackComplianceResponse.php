@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $ConformancePackName
  * @property list<Shapes\ConformancePackRuleCompliance> $ConformancePackRuleComplianceList
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeConformancePackComplianceResponse extends Response
 {

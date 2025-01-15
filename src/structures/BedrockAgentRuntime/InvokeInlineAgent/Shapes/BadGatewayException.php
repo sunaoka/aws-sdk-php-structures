@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $message
- * @property string $resourceName
+ * @property string|null $message
+ * @property string|null $resourceName
  */
 class BadGatewayException extends Shape
 {
     /**
      * @param array{
-     *     message?: string,
-     *     resourceName?: string
+     *     message?: string|null,
+     *     resourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

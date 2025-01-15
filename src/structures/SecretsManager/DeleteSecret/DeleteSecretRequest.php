@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SecretId
- * @property int $RecoveryWindowInDays
- * @property bool $ForceDeleteWithoutRecovery
+ * @property int|null $RecoveryWindowInDays
+ * @property bool|null $ForceDeleteWithoutRecovery
  */
 class DeleteSecretRequest extends Request
 {
     /**
      * @param array{
      *     SecretId: string,
-     *     RecoveryWindowInDays?: int,
-     *     ForceDeleteWithoutRecovery?: bool
+     *     RecoveryWindowInDays?: int|null,
+     *     ForceDeleteWithoutRecovery?: bool|null
      * } $args
      */
     public function __construct(array $args)

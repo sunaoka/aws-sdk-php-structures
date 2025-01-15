@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListClusters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property int<1, 100> $MaxResults
- * @property string $NameContains
- * @property string $NextToken
- * @property 'CREATION_TIME'|'NAME' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
- * @property string $TrainingPlanArn
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NameContains
+ * @property string|null $NextToken
+ * @property 'CREATION_TIME'|'NAME'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property string|null $TrainingPlanArn
  */
 class ListClustersRequest extends Request
 {
     /**
      * @param array{
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int<1, 100>,
-     *     NameContains?: string,
-     *     NextToken?: string,
-     *     SortBy?: 'CREATION_TIME'|'NAME',
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     TrainingPlanArn?: string
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NameContains?: string|null,
+     *     NextToken?: string|null,
+     *     SortBy?: 'CREATION_TIME'|'NAME'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     TrainingPlanArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

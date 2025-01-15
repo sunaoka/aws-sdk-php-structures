@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'COPY'|'CUSTOM'|'TAG'|'DELETE'|'DECRYPT' $Type
- * @property CopyStepDetails $CopyStepDetails
- * @property CustomStepDetails $CustomStepDetails
- * @property DeleteStepDetails $DeleteStepDetails
- * @property TagStepDetails $TagStepDetails
- * @property DecryptStepDetails $DecryptStepDetails
+ * @property 'COPY'|'CUSTOM'|'TAG'|'DELETE'|'DECRYPT'|null $Type
+ * @property CopyStepDetails|null $CopyStepDetails
+ * @property CustomStepDetails|null $CustomStepDetails
+ * @property DeleteStepDetails|null $DeleteStepDetails
+ * @property TagStepDetails|null $TagStepDetails
+ * @property DecryptStepDetails|null $DecryptStepDetails
  */
 class WorkflowStep extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'COPY'|'CUSTOM'|'TAG'|'DELETE'|'DECRYPT',
-     *     CopyStepDetails?: CopyStepDetails,
-     *     CustomStepDetails?: CustomStepDetails,
-     *     DeleteStepDetails?: DeleteStepDetails,
-     *     TagStepDetails?: TagStepDetails,
-     *     DecryptStepDetails?: DecryptStepDetails
+     *     Type?: 'COPY'|'CUSTOM'|'TAG'|'DELETE'|'DECRYPT'|null,
+     *     CopyStepDetails?: CopyStepDetails|null,
+     *     CustomStepDetails?: CustomStepDetails|null,
+     *     DeleteStepDetails?: DeleteStepDetails|null,
+     *     TagStepDetails?: TagStepDetails|null,
+     *     DecryptStepDetails?: DecryptStepDetails|null
      * } $args
      */
     public function __construct(array $args = [])

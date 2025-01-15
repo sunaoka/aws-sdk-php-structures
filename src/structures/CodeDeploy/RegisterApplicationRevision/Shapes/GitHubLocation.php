@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\RegisterApplicationRevision\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repository
- * @property string $commitId
+ * @property string|null $repository
+ * @property string|null $commitId
  */
 class GitHubLocation extends Shape
 {
     /**
      * @param array{
-     *     repository?: string,
-     *     commitId?: string
+     *     repository?: string|null,
+     *     commitId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

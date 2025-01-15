@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeUserPoolClient\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationId
- * @property string $ApplicationArn
- * @property string $RoleArn
- * @property string $ExternalId
- * @property bool $UserDataShared
+ * @property string|null $ApplicationId
+ * @property string|null $ApplicationArn
+ * @property string|null $RoleArn
+ * @property string|null $ExternalId
+ * @property bool|null $UserDataShared
  */
 class AnalyticsConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     ApplicationArn?: string,
-     *     RoleArn?: string,
-     *     ExternalId?: string,
-     *     UserDataShared?: bool
+     *     ApplicationId?: string|null,
+     *     ApplicationArn?: string|null,
+     *     RoleArn?: string|null,
+     *     ExternalId?: string|null,
+     *     UserDataShared?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\ListCalculatedAttributesForPro
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ListCalculatedAttributeForProfileItem> $Items
- * @property string $NextToken
+ * @property list<Shapes\ListCalculatedAttributeForProfileItem>|null $Items
+ * @property string|null $NextToken
  */
 class ListCalculatedAttributesForProfileResponse extends Response
 {

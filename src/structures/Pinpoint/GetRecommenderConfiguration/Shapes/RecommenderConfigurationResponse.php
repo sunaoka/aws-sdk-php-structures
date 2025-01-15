@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetRecommenderConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $Attributes
+ * @property array<string, string>|null $Attributes
  * @property string $CreationDate
- * @property string $Description
+ * @property string|null $Description
  * @property string $Id
  * @property string $LastModifiedDate
- * @property string $Name
- * @property string $RecommendationProviderIdType
+ * @property string|null $Name
+ * @property string|null $RecommendationProviderIdType
  * @property string $RecommendationProviderRoleArn
  * @property string $RecommendationProviderUri
- * @property string $RecommendationTransformerUri
- * @property string $RecommendationsDisplayName
- * @property int $RecommendationsPerMessage
+ * @property string|null $RecommendationTransformerUri
+ * @property string|null $RecommendationsDisplayName
+ * @property int|null $RecommendationsPerMessage
  */
 class RecommenderConfigurationResponse extends Shape
 {
     /**
      * @param array{
-     *     Attributes?: array<string, string>,
+     *     Attributes?: array<string, string>|null,
      *     CreationDate: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Id: string,
      *     LastModifiedDate: string,
-     *     Name?: string,
-     *     RecommendationProviderIdType?: string,
+     *     Name?: string|null,
+     *     RecommendationProviderIdType?: string|null,
      *     RecommendationProviderRoleArn: string,
      *     RecommendationProviderUri: string,
-     *     RecommendationTransformerUri?: string,
-     *     RecommendationsDisplayName?: string,
-     *     RecommendationsPerMessage?: int
+     *     RecommendationTransformerUri?: string|null,
+     *     RecommendationsDisplayName?: string|null,
+     *     RecommendationsPerMessage?: int|null
      * } $args
      */
     public function __construct(array $args)

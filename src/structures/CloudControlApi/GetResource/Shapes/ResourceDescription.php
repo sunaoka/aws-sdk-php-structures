@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudControlApi\GetResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Identifier
- * @property string $Properties
+ * @property string|null $Identifier
+ * @property string|null $Properties
  */
 class ResourceDescription extends Shape
 {
     /**
      * @param array{
-     *     Identifier?: string,
-     *     Properties?: string
+     *     Identifier?: string|null,
+     *     Properties?: string|null
      * } $args
      */
     public function __construct(array $args = [])

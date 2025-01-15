@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $testCaseId
- * @property string $description
- * @property list<Shapes\Step> $steps
+ * @property string|null $description
+ * @property list<Shapes\Step>|null $steps
  */
 class UpdateTestCaseRequest extends Request
 {
     /**
      * @param array{
      *     testCaseId: string,
-     *     description?: string,
-     *     steps?: list<Shapes\Step>
+     *     description?: string|null,
+     *     steps?: list<Shapes\Step>|null
      * } $args
      */
     public function __construct(array $args)

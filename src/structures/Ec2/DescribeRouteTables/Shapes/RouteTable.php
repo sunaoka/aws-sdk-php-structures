@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeRouteTables\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RouteTableAssociation> $Associations
- * @property list<PropagatingVgw> $PropagatingVgws
- * @property string $RouteTableId
- * @property list<Route> $Routes
- * @property list<Tag> $Tags
- * @property string $VpcId
- * @property string $OwnerId
+ * @property list<RouteTableAssociation>|null $Associations
+ * @property list<PropagatingVgw>|null $PropagatingVgws
+ * @property string|null $RouteTableId
+ * @property list<Route>|null $Routes
+ * @property list<Tag>|null $Tags
+ * @property string|null $VpcId
+ * @property string|null $OwnerId
  */
 class RouteTable extends Shape
 {
     /**
      * @param array{
-     *     Associations?: list<RouteTableAssociation>,
-     *     PropagatingVgws?: list<PropagatingVgw>,
-     *     RouteTableId?: string,
-     *     Routes?: list<Route>,
-     *     Tags?: list<Tag>,
-     *     VpcId?: string,
-     *     OwnerId?: string
+     *     Associations?: list<RouteTableAssociation>|null,
+     *     PropagatingVgws?: list<PropagatingVgw>|null,
+     *     RouteTableId?: string|null,
+     *     Routes?: list<Route>|null,
+     *     Tags?: list<Tag>|null,
+     *     VpcId?: string|null,
+     *     OwnerId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

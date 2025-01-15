@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property string $Expression
- * @property PredictiveScalingMetricStat $MetricStat
- * @property string $Label
- * @property bool $ReturnData
+ * @property string|null $Expression
+ * @property PredictiveScalingMetricStat|null $MetricStat
+ * @property string|null $Label
+ * @property bool|null $ReturnData
  */
 class PredictiveScalingMetricDataQuery extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     Expression?: string,
-     *     MetricStat?: PredictiveScalingMetricStat,
-     *     Label?: string,
-     *     ReturnData?: bool
+     *     Expression?: string|null,
+     *     MetricStat?: PredictiveScalingMetricStat|null,
+     *     Label?: string|null,
+     *     ReturnData?: bool|null
      * } $args
      */
     public function __construct(array $args)

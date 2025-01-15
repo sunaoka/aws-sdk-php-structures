@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dimensionKey
- * @property string $price
+ * @property string|null $dimensionKey
+ * @property string|null $price
  */
 class RateCardItem extends Shape
 {
     /**
      * @param array{
-     *     dimensionKey?: string,
-     *     price?: string
+     *     dimensionKey?: string|null,
+     *     price?: string|null
      * } $args
      */
     public function __construct(array $args = [])

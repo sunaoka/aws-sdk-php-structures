@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrivateIpAddress
- * @property string $PrivateDnsName
+ * @property string|null $PrivateIpAddress
+ * @property string|null $PrivateDnsName
  */
 class AwsEc2NetworkInterfacePrivateIpAddressDetail extends Shape
 {
     /**
      * @param array{
-     *     PrivateIpAddress?: string,
-     *     PrivateDnsName?: string
+     *     PrivateIpAddress?: string|null,
+     *     PrivateDnsName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerName
- * @property list<AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetails> $ProxyConfigurationProperties
- * @property string $Type
+ * @property string|null $ContainerName
+ * @property list<AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetails>|null $ProxyConfigurationProperties
+ * @property string|null $Type
  */
 class AwsEcsTaskDefinitionProxyConfigurationDetails extends Shape
 {
     /**
      * @param array{
-     *     ContainerName?: string,
-     *     ProxyConfigurationProperties?: list<AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetails>,
-     *     Type?: string
+     *     ContainerName?: string|null,
+     *     ProxyConfigurationProperties?: list<AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetails>|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

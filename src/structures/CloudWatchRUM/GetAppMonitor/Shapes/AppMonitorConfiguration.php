@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\GetAppMonitor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AllowCookies
- * @property bool $EnableXRay
- * @property list<string> $ExcludedPages
- * @property list<string> $FavoritePages
- * @property string $GuestRoleArn
- * @property string $IdentityPoolId
- * @property list<string> $IncludedPages
- * @property double $SessionSampleRate
- * @property list<'errors'|'performance'|'http'> $Telemetries
+ * @property bool|null $AllowCookies
+ * @property bool|null $EnableXRay
+ * @property list<string>|null $ExcludedPages
+ * @property list<string>|null $FavoritePages
+ * @property string|null $GuestRoleArn
+ * @property string|null $IdentityPoolId
+ * @property list<string>|null $IncludedPages
+ * @property double|null $SessionSampleRate
+ * @property list<'errors'|'performance'|'http'>|null $Telemetries
  */
 class AppMonitorConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AllowCookies?: bool,
-     *     EnableXRay?: bool,
-     *     ExcludedPages?: list<string>,
-     *     FavoritePages?: list<string>,
-     *     GuestRoleArn?: string,
-     *     IdentityPoolId?: string,
-     *     IncludedPages?: list<string>,
-     *     SessionSampleRate?: double,
-     *     Telemetries?: list<'errors'|'performance'|'http'>
+     *     AllowCookies?: bool|null,
+     *     EnableXRay?: bool|null,
+     *     ExcludedPages?: list<string>|null,
+     *     FavoritePages?: list<string>|null,
+     *     GuestRoleArn?: string|null,
+     *     IdentityPoolId?: string|null,
+     *     IncludedPages?: list<string>|null,
+     *     SessionSampleRate?: double|null,
+     *     Telemetries?: list<'errors'|'performance'|'http'>|null
      * } $args
      */
     public function __construct(array $args = [])

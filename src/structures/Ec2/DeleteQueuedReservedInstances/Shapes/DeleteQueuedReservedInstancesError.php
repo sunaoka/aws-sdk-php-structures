@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteQueuedReservedInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'reserved-instances-id-invalid'|'reserved-instances-not-in-queued-state'|'unexpected-error' $Code
- * @property string $Message
+ * @property 'reserved-instances-id-invalid'|'reserved-instances-not-in-queued-state'|'unexpected-error'|null $Code
+ * @property string|null $Message
  */
 class DeleteQueuedReservedInstancesError extends Shape
 {
     /**
      * @param array{
-     *     Code?: 'reserved-instances-id-invalid'|'reserved-instances-not-in-queued-state'|'unexpected-error',
-     *     Message?: string
+     *     Code?: 'reserved-instances-id-invalid'|'reserved-instances-not-in-queued-state'|'unexpected-error'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

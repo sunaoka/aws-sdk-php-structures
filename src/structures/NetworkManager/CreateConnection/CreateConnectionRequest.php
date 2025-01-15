@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GlobalNetworkId
  * @property string $DeviceId
  * @property string $ConnectedDeviceId
- * @property string $LinkId
- * @property string $ConnectedLinkId
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $LinkId
+ * @property string|null $ConnectedLinkId
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateConnectionRequest extends Request
 {
@@ -20,10 +20,10 @@ class CreateConnectionRequest extends Request
      *     GlobalNetworkId: string,
      *     DeviceId: string,
      *     ConnectedDeviceId: string,
-     *     LinkId?: string,
-     *     ConnectedLinkId?: string,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     LinkId?: string|null,
+     *     ConnectedLinkId?: string|null,
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

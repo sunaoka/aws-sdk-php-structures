@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\S3Control\GetStorageLensConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ActivityMetrics $ActivityMetrics
- * @property PrefixLevel $PrefixLevel
- * @property AdvancedCostOptimizationMetrics $AdvancedCostOptimizationMetrics
- * @property AdvancedDataProtectionMetrics $AdvancedDataProtectionMetrics
- * @property DetailedStatusCodesMetrics $DetailedStatusCodesMetrics
+ * @property ActivityMetrics|null $ActivityMetrics
+ * @property PrefixLevel|null $PrefixLevel
+ * @property AdvancedCostOptimizationMetrics|null $AdvancedCostOptimizationMetrics
+ * @property AdvancedDataProtectionMetrics|null $AdvancedDataProtectionMetrics
+ * @property DetailedStatusCodesMetrics|null $DetailedStatusCodesMetrics
  */
 class BucketLevel extends Shape
 {
     /**
      * @param array{
-     *     ActivityMetrics?: ActivityMetrics,
-     *     PrefixLevel?: PrefixLevel,
-     *     AdvancedCostOptimizationMetrics?: AdvancedCostOptimizationMetrics,
-     *     AdvancedDataProtectionMetrics?: AdvancedDataProtectionMetrics,
-     *     DetailedStatusCodesMetrics?: DetailedStatusCodesMetrics
+     *     ActivityMetrics?: ActivityMetrics|null,
+     *     PrefixLevel?: PrefixLevel|null,
+     *     AdvancedCostOptimizationMetrics?: AdvancedCostOptimizationMetrics|null,
+     *     AdvancedDataProtectionMetrics?: AdvancedDataProtectionMetrics|null,
+     *     DetailedStatusCodesMetrics?: DetailedStatusCodesMetrics|null
      * } $args
      */
     public function __construct(array $args = [])

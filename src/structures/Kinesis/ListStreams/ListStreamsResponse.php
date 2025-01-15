@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<string> $StreamNames
  * @property bool $HasMoreStreams
- * @property string $NextToken
- * @property list<Shapes\StreamSummary> $StreamSummaries
+ * @property string|null $NextToken
+ * @property list<Shapes\StreamSummary>|null $StreamSummaries
  */
 class ListStreamsResponse extends Response
 {

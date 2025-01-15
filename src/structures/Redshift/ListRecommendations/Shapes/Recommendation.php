@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Redshift\ListRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $ClusterIdentifier
- * @property string $NamespaceArn
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $RecommendationType
- * @property string $Title
- * @property string $Description
- * @property string $Observation
- * @property 'HIGH'|'MEDIUM'|'LOW' $ImpactRanking
- * @property string $RecommendationText
- * @property list<RecommendedAction> $RecommendedActions
- * @property list<ReferenceLink> $ReferenceLinks
+ * @property string|null $Id
+ * @property string|null $ClusterIdentifier
+ * @property string|null $NamespaceArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $RecommendationType
+ * @property string|null $Title
+ * @property string|null $Description
+ * @property string|null $Observation
+ * @property 'HIGH'|'MEDIUM'|'LOW'|null $ImpactRanking
+ * @property string|null $RecommendationText
+ * @property list<RecommendedAction>|null $RecommendedActions
+ * @property list<ReferenceLink>|null $ReferenceLinks
  */
 class Recommendation extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     ClusterIdentifier?: string,
-     *     NamespaceArn?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     RecommendationType?: string,
-     *     Title?: string,
-     *     Description?: string,
-     *     Observation?: string,
-     *     ImpactRanking?: 'HIGH'|'MEDIUM'|'LOW',
-     *     RecommendationText?: string,
-     *     RecommendedActions?: list<RecommendedAction>,
-     *     ReferenceLinks?: list<ReferenceLink>
+     *     Id?: string|null,
+     *     ClusterIdentifier?: string|null,
+     *     NamespaceArn?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     RecommendationType?: string|null,
+     *     Title?: string|null,
+     *     Description?: string|null,
+     *     Observation?: string|null,
+     *     ImpactRanking?: 'HIGH'|'MEDIUM'|'LOW'|null,
+     *     RecommendationText?: string|null,
+     *     RecommendedActions?: list<RecommendedAction>|null,
+     *     ReferenceLinks?: list<ReferenceLink>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\RunScheduledInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DeleteOnTermination
- * @property bool $Encrypted
- * @property int $Iops
- * @property string $SnapshotId
- * @property int $VolumeSize
- * @property string $VolumeType
+ * @property bool|null $DeleteOnTermination
+ * @property bool|null $Encrypted
+ * @property int|null $Iops
+ * @property string|null $SnapshotId
+ * @property int|null $VolumeSize
+ * @property string|null $VolumeType
  */
 class ScheduledInstancesEbs extends Shape
 {
     /**
      * @param array{
-     *     DeleteOnTermination?: bool,
-     *     Encrypted?: bool,
-     *     Iops?: int,
-     *     SnapshotId?: string,
-     *     VolumeSize?: int,
-     *     VolumeType?: string
+     *     DeleteOnTermination?: bool|null,
+     *     Encrypted?: bool|null,
+     *     Iops?: int|null,
+     *     SnapshotId?: string|null,
+     *     VolumeSize?: int|null,
+     *     VolumeType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

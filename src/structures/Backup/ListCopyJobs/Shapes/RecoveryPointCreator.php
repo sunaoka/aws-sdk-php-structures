@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Backup\ListCopyJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BackupPlanId
- * @property string $BackupPlanArn
- * @property string $BackupPlanVersion
- * @property string $BackupRuleId
+ * @property string|null $BackupPlanId
+ * @property string|null $BackupPlanArn
+ * @property string|null $BackupPlanVersion
+ * @property string|null $BackupRuleId
  */
 class RecoveryPointCreator extends Shape
 {
     /**
      * @param array{
-     *     BackupPlanId?: string,
-     *     BackupPlanArn?: string,
-     *     BackupPlanVersion?: string,
-     *     BackupRuleId?: string
+     *     BackupPlanId?: string|null,
+     *     BackupPlanArn?: string|null,
+     *     BackupPlanVersion?: string|null,
+     *     BackupRuleId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

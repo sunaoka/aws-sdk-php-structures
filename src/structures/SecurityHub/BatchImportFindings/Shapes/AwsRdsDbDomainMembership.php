@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Domain
- * @property string $Status
- * @property string $Fqdn
- * @property string $IamRoleName
+ * @property string|null $Domain
+ * @property string|null $Status
+ * @property string|null $Fqdn
+ * @property string|null $IamRoleName
  */
 class AwsRdsDbDomainMembership extends Shape
 {
     /**
      * @param array{
-     *     Domain?: string,
-     *     Status?: string,
-     *     Fqdn?: string,
-     *     IamRoleName?: string
+     *     Domain?: string|null,
+     *     Status?: string|null,
+     *     Fqdn?: string|null,
+     *     IamRoleName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

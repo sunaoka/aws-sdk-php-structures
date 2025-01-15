@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $expectedAgentPrompt
- * @property string $actualAgentPrompt
- * @property ExecutionErrorDetails $errorDetails
- * @property string $actualElicitedSlot
- * @property string $actualIntent
+ * @property string|null $actualAgentPrompt
+ * @property ExecutionErrorDetails|null $errorDetails
+ * @property string|null $actualElicitedSlot
+ * @property string|null $actualIntent
  */
 class AgentTurnResult extends Shape
 {
     /**
      * @param array{
      *     expectedAgentPrompt: string,
-     *     actualAgentPrompt?: string,
-     *     errorDetails?: ExecutionErrorDetails,
-     *     actualElicitedSlot?: string,
-     *     actualIntent?: string
+     *     actualAgentPrompt?: string|null,
+     *     errorDetails?: ExecutionErrorDetails|null,
+     *     actualElicitedSlot?: string|null,
+     *     actualIntent?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\ListCustomRoutingPortMappings
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 65535> $AcceleratorPort
- * @property string $EndpointGroupArn
- * @property string $EndpointId
- * @property SocketAddress $DestinationSocketAddress
- * @property list<'TCP'|'UDP'> $Protocols
- * @property 'ALLOW'|'DENY' $DestinationTrafficState
+ * @property int<1, 65535>|null $AcceleratorPort
+ * @property string|null $EndpointGroupArn
+ * @property string|null $EndpointId
+ * @property SocketAddress|null $DestinationSocketAddress
+ * @property list<'TCP'|'UDP'>|null $Protocols
+ * @property 'ALLOW'|'DENY'|null $DestinationTrafficState
  */
 class PortMapping extends Shape
 {
     /**
      * @param array{
-     *     AcceleratorPort?: int<1, 65535>,
-     *     EndpointGroupArn?: string,
-     *     EndpointId?: string,
-     *     DestinationSocketAddress?: SocketAddress,
-     *     Protocols?: list<'TCP'|'UDP'>,
-     *     DestinationTrafficState?: 'ALLOW'|'DENY'
+     *     AcceleratorPort?: int<1, 65535>|null,
+     *     EndpointGroupArn?: string|null,
+     *     EndpointId?: string|null,
+     *     DestinationSocketAddress?: SocketAddress|null,
+     *     Protocols?: list<'TCP'|'UDP'>|null,
+     *     DestinationTrafficState?: 'ALLOW'|'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,17 +11,17 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $assistantId
  * @property string $blockedInputMessaging
  * @property string $blockedOutputsMessaging
- * @property AIGuardrailContentPolicyConfig $contentPolicyConfig
- * @property AIGuardrailContextualGroundingPolicyConfig $contextualGroundingPolicyConfig
- * @property string $description
- * @property \Aws\Api\DateTimeResult $modifiedTime
+ * @property AIGuardrailContentPolicyConfig|null $contentPolicyConfig
+ * @property AIGuardrailContextualGroundingPolicyConfig|null $contextualGroundingPolicyConfig
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $modifiedTime
  * @property string $name
- * @property AIGuardrailSensitiveInformationPolicyConfig $sensitiveInformationPolicyConfig
- * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED' $status
- * @property array<string, string> $tags
- * @property AIGuardrailTopicPolicyConfig $topicPolicyConfig
+ * @property AIGuardrailSensitiveInformationPolicyConfig|null $sensitiveInformationPolicyConfig
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null $status
+ * @property array<string, string>|null $tags
+ * @property AIGuardrailTopicPolicyConfig|null $topicPolicyConfig
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
- * @property AIGuardrailWordPolicyConfig $wordPolicyConfig
+ * @property AIGuardrailWordPolicyConfig|null $wordPolicyConfig
  */
 class AIGuardrailData extends Shape
 {
@@ -33,17 +33,17 @@ class AIGuardrailData extends Shape
      *     assistantId: string,
      *     blockedInputMessaging: string,
      *     blockedOutputsMessaging: string,
-     *     contentPolicyConfig?: AIGuardrailContentPolicyConfig,
-     *     contextualGroundingPolicyConfig?: AIGuardrailContextualGroundingPolicyConfig,
-     *     description?: string,
-     *     modifiedTime?: \Aws\Api\DateTimeResult,
+     *     contentPolicyConfig?: AIGuardrailContentPolicyConfig|null,
+     *     contextualGroundingPolicyConfig?: AIGuardrailContextualGroundingPolicyConfig|null,
+     *     description?: string|null,
+     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
      *     name: string,
-     *     sensitiveInformationPolicyConfig?: AIGuardrailSensitiveInformationPolicyConfig,
-     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED',
-     *     tags?: array<string, string>,
-     *     topicPolicyConfig?: AIGuardrailTopicPolicyConfig,
+     *     sensitiveInformationPolicyConfig?: AIGuardrailSensitiveInformationPolicyConfig|null,
+     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null,
+     *     tags?: array<string, string>|null,
+     *     topicPolicyConfig?: AIGuardrailTopicPolicyConfig|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
-     *     wordPolicyConfig?: AIGuardrailWordPolicyConfig
+     *     wordPolicyConfig?: AIGuardrailWordPolicyConfig|null
      * } $args
      */
     public function __construct(array $args)

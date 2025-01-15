@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\UpdateTrustedTokenIssuer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  * @property string $TrustedTokenIssuerArn
- * @property Shapes\TrustedTokenIssuerUpdateConfiguration $TrustedTokenIssuerConfiguration
+ * @property Shapes\TrustedTokenIssuerUpdateConfiguration|null $TrustedTokenIssuerConfiguration
  */
 class UpdateTrustedTokenIssuerRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
+     *     Name?: string|null,
      *     TrustedTokenIssuerArn: string,
-     *     TrustedTokenIssuerConfiguration?: Shapes\TrustedTokenIssuerUpdateConfiguration
+     *     TrustedTokenIssuerConfiguration?: Shapes\TrustedTokenIssuerUpdateConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ConnectionHeaderParameter> $HeaderParameters
- * @property list<ConnectionQueryStringParameter> $QueryStringParameters
- * @property list<ConnectionBodyParameter> $BodyParameters
+ * @property list<ConnectionHeaderParameter>|null $HeaderParameters
+ * @property list<ConnectionQueryStringParameter>|null $QueryStringParameters
+ * @property list<ConnectionBodyParameter>|null $BodyParameters
  */
 class ConnectionHttpParameters extends Shape
 {
     /**
      * @param array{
-     *     HeaderParameters?: list<ConnectionHeaderParameter>,
-     *     QueryStringParameters?: list<ConnectionQueryStringParameter>,
-     *     BodyParameters?: list<ConnectionBodyParameter>
+     *     HeaderParameters?: list<ConnectionHeaderParameter>|null,
+     *     QueryStringParameters?: list<ConnectionQueryStringParameter>|null,
+     *     BodyParameters?: list<ConnectionBodyParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

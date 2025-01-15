@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVerifiedAccessInstanceLoggingConfig
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property VerifiedAccessLogDeliveryStatus $DeliveryStatus
- * @property string $BucketName
- * @property string $Prefix
- * @property string $BucketOwner
+ * @property bool|null $Enabled
+ * @property VerifiedAccessLogDeliveryStatus|null $DeliveryStatus
+ * @property string|null $BucketName
+ * @property string|null $Prefix
+ * @property string|null $BucketOwner
  */
 class VerifiedAccessLogS3Destination extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     DeliveryStatus?: VerifiedAccessLogDeliveryStatus,
-     *     BucketName?: string,
-     *     Prefix?: string,
-     *     BucketOwner?: string
+     *     Enabled?: bool|null,
+     *     DeliveryStatus?: VerifiedAccessLogDeliveryStatus|null,
+     *     BucketName?: string|null,
+     *     Prefix?: string|null,
+     *     BucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args = [])

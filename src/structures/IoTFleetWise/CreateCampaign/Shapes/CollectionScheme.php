@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\CreateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TimeBasedCollectionScheme $timeBasedCollectionScheme
- * @property ConditionBasedCollectionScheme $conditionBasedCollectionScheme
+ * @property TimeBasedCollectionScheme|null $timeBasedCollectionScheme
+ * @property ConditionBasedCollectionScheme|null $conditionBasedCollectionScheme
  */
 class CollectionScheme extends Shape
 {
     /**
      * @param array{
-     *     timeBasedCollectionScheme?: TimeBasedCollectionScheme,
-     *     conditionBasedCollectionScheme?: ConditionBasedCollectionScheme
+     *     timeBasedCollectionScheme?: TimeBasedCollectionScheme|null,
+     *     conditionBasedCollectionScheme?: ConditionBasedCollectionScheme|null
      * } $args
      */
     public function __construct(array $args = [])

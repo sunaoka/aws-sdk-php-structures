@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\CreateStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucket
- * @property string $key
- * @property string $version
+ * @property string|null $bucket
+ * @property string|null $key
+ * @property string|null $version
  */
 class S3Location extends Shape
 {
     /**
      * @param array{
-     *     bucket?: string,
-     *     key?: string,
-     *     version?: string
+     *     bucket?: string|null,
+     *     key?: string|null,
+     *     version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

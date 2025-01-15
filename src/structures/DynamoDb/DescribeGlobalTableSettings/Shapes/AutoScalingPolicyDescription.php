@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeGlobalTableSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PolicyName
- * @property AutoScalingTargetTrackingScalingPolicyConfigurationDescription $TargetTrackingScalingPolicyConfiguration
+ * @property string|null $PolicyName
+ * @property AutoScalingTargetTrackingScalingPolicyConfigurationDescription|null $TargetTrackingScalingPolicyConfiguration
  */
 class AutoScalingPolicyDescription extends Shape
 {
     /**
      * @param array{
-     *     PolicyName?: string,
-     *     TargetTrackingScalingPolicyConfiguration?: AutoScalingTargetTrackingScalingPolicyConfigurationDescription
+     *     PolicyName?: string|null,
+     *     TargetTrackingScalingPolicyConfiguration?: AutoScalingTargetTrackingScalingPolicyConfigurationDescription|null
      * } $args
      */
     public function __construct(array $args = [])

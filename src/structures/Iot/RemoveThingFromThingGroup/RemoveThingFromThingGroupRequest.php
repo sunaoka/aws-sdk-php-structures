@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iot\RemoveThingFromThingGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $thingGroupName
- * @property string $thingGroupArn
- * @property string $thingName
- * @property string $thingArn
+ * @property string|null $thingGroupName
+ * @property string|null $thingGroupArn
+ * @property string|null $thingName
+ * @property string|null $thingArn
  */
 class RemoveThingFromThingGroupRequest extends Request
 {
     /**
      * @param array{
-     *     thingGroupName?: string,
-     *     thingGroupArn?: string,
-     *     thingName?: string,
-     *     thingArn?: string
+     *     thingGroupName?: string|null,
+     *     thingGroupArn?: string|null,
+     *     thingName?: string|null,
+     *     thingArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

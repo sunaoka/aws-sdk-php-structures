@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\QuickSight\StartDashboardSnapshotJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $SnapshotJobId
- * @property string $RequestId
- * @property int $Status
+ * @property string|null $Arn
+ * @property string|null $SnapshotJobId
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class StartDashboardSnapshotJobResponse extends Response
 {

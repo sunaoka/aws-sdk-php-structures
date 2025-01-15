@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $title
- * @property string $color
- * @property int $appCount
+ * @property string|null $color
+ * @property int|null $appCount
  */
 class Category extends Shape
 {
@@ -16,8 +16,8 @@ class Category extends Shape
      * @param array{
      *     id: string,
      *     title: string,
-     *     color?: string,
-     *     appCount?: int
+     *     color?: string|null,
+     *     appCount?: int|null
      * } $args
      */
     public function __construct(array $args)

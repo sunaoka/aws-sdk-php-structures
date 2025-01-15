@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $lagId
- * @property string $lagName
- * @property int $minimumLinks
- * @property string $encryptionMode
+ * @property string|null $lagName
+ * @property int|null $minimumLinks
+ * @property string|null $encryptionMode
  */
 class UpdateLagRequest extends Request
 {
     /**
      * @param array{
      *     lagId: string,
-     *     lagName?: string,
-     *     minimumLinks?: int,
-     *     encryptionMode?: string
+     *     lagName?: string|null,
+     *     minimumLinks?: int|null,
+     *     encryptionMode?: string|null
      * } $args
      */
     public function __construct(array $args)

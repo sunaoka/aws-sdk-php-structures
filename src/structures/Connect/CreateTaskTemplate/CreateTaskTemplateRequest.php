@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $Name
- * @property string $Description
- * @property string $ContactFlowId
- * @property string $SelfAssignFlowId
- * @property Shapes\TaskTemplateConstraints $Constraints
- * @property Shapes\TaskTemplateDefaults $Defaults
- * @property 'ACTIVE'|'INACTIVE' $Status
+ * @property string|null $Description
+ * @property string|null $ContactFlowId
+ * @property string|null $SelfAssignFlowId
+ * @property Shapes\TaskTemplateConstraints|null $Constraints
+ * @property Shapes\TaskTemplateDefaults|null $Defaults
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
  * @property list<Shapes\TaskTemplateField> $Fields
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class CreateTaskTemplateRequest extends Request
 {
@@ -22,14 +22,14 @@ class CreateTaskTemplateRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     Name: string,
-     *     Description?: string,
-     *     ContactFlowId?: string,
-     *     SelfAssignFlowId?: string,
-     *     Constraints?: Shapes\TaskTemplateConstraints,
-     *     Defaults?: Shapes\TaskTemplateDefaults,
-     *     Status?: 'ACTIVE'|'INACTIVE',
+     *     Description?: string|null,
+     *     ContactFlowId?: string|null,
+     *     SelfAssignFlowId?: string|null,
+     *     Constraints?: Shapes\TaskTemplateConstraints|null,
+     *     Defaults?: Shapes\TaskTemplateDefaults|null,
+     *     Status?: 'ACTIVE'|'INACTIVE'|null,
      *     Fields: list<Shapes\TaskTemplateField>,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

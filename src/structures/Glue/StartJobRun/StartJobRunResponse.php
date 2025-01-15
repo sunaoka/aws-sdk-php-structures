@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\StartJobRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $JobRunId
+ * @property string|null $JobRunId
  */
 class StartJobRunResponse extends Response
 {

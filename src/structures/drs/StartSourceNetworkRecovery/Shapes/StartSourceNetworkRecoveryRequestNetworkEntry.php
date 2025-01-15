@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\drs\StartSourceNetworkRecovery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $cfnStackName
+ * @property string|null $cfnStackName
  * @property string $sourceNetworkID
  */
 class StartSourceNetworkRecoveryRequestNetworkEntry extends Shape
 {
     /**
      * @param array{
-     *     cfnStackName?: string,
+     *     cfnStackName?: string|null,
      *     sourceNetworkID: string
      * } $args
      */

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaPackage\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Password
- * @property string $Url
- * @property string $Username
+ * @property string|null $Id
+ * @property string|null $Password
+ * @property string|null $Url
+ * @property string|null $Username
  */
 class IngestEndpoint extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Password?: string,
-     *     Url?: string,
-     *     Username?: string
+     *     Id?: string|null,
+     *     Password?: string|null,
+     *     Url?: string|null,
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

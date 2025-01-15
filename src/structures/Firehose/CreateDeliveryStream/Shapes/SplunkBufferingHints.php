@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Firehose\CreateDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 60> $IntervalInSeconds
- * @property int<1, 5> $SizeInMBs
+ * @property int<0, 60>|null $IntervalInSeconds
+ * @property int<1, 5>|null $SizeInMBs
  */
 class SplunkBufferingHints extends Shape
 {
     /**
      * @param array{
-     *     IntervalInSeconds?: int<0, 60>,
-     *     SizeInMBs?: int<1, 5>
+     *     IntervalInSeconds?: int<0, 60>|null,
+     *     SizeInMBs?: int<1, 5>|null
      * } $args
      */
     public function __construct(array $args = [])

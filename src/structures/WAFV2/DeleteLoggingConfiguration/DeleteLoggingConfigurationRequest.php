@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceArn
- * @property 'WAF_LOGS' $LogType
- * @property 'CUSTOMER'|'SECURITY_LAKE' $LogScope
+ * @property 'WAF_LOGS'|null $LogType
+ * @property 'CUSTOMER'|'SECURITY_LAKE'|null $LogScope
  */
 class DeleteLoggingConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     ResourceArn: string,
-     *     LogType?: 'WAF_LOGS',
-     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'
+     *     LogType?: 'WAF_LOGS'|null,
+     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'|null
      * } $args
      */
     public function __construct(array $args)

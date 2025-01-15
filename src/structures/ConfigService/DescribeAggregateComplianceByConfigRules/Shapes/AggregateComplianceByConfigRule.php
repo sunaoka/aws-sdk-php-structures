@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeAggregateComplianceByConf
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConfigRuleName
- * @property Compliance $Compliance
- * @property string $AccountId
- * @property string $AwsRegion
+ * @property string|null $ConfigRuleName
+ * @property Compliance|null $Compliance
+ * @property string|null $AccountId
+ * @property string|null $AwsRegion
  */
 class AggregateComplianceByConfigRule extends Shape
 {
     /**
      * @param array{
-     *     ConfigRuleName?: string,
-     *     Compliance?: Compliance,
-     *     AccountId?: string,
-     *     AwsRegion?: string
+     *     ConfigRuleName?: string|null,
+     *     Compliance?: Compliance|null,
+     *     AccountId?: string|null,
+     *     AwsRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

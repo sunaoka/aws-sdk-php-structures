@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListFailuresForLicenseConfigurat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\LicenseOperationFailure> $LicenseOperationFailureList
- * @property string $NextToken
+ * @property list<Shapes\LicenseOperationFailure>|null $LicenseOperationFailureList
+ * @property string|null $NextToken
  */
 class ListFailuresForLicenseConfigurationOperationsResponse extends Response
 {

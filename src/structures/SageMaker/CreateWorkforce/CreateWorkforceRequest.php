@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateWorkforce;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\CognitoConfig $CognitoConfig
- * @property Shapes\OidcConfig $OidcConfig
- * @property Shapes\SourceIpConfig $SourceIpConfig
+ * @property Shapes\CognitoConfig|null $CognitoConfig
+ * @property Shapes\OidcConfig|null $OidcConfig
+ * @property Shapes\SourceIpConfig|null $SourceIpConfig
  * @property string $WorkforceName
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\WorkforceVpcConfigRequest $WorkforceVpcConfig
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\WorkforceVpcConfigRequest|null $WorkforceVpcConfig
  */
 class CreateWorkforceRequest extends Request
 {
     /**
      * @param array{
-     *     CognitoConfig?: Shapes\CognitoConfig,
-     *     OidcConfig?: Shapes\OidcConfig,
-     *     SourceIpConfig?: Shapes\SourceIpConfig,
+     *     CognitoConfig?: Shapes\CognitoConfig|null,
+     *     OidcConfig?: Shapes\OidcConfig|null,
+     *     SourceIpConfig?: Shapes\SourceIpConfig|null,
      *     WorkforceName: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     WorkforceVpcConfig?: Shapes\WorkforceVpcConfigRequest
+     *     Tags?: list<Shapes\Tag>|null,
+     *     WorkforceVpcConfig?: Shapes\WorkforceVpcConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $aliasIdentifier
- * @property string $description
+ * @property string|null $description
  * @property string $flowIdentifier
  * @property string $name
  * @property list<Shapes\FlowAliasRoutingConfigurationListItem> $routingConfiguration
@@ -16,7 +16,7 @@ class UpdateFlowAliasRequest extends Request
     /**
      * @param array{
      *     aliasIdentifier: string,
-     *     description?: string,
+     *     description?: string|null,
      *     flowIdentifier: string,
      *     name: string,
      *     routingConfiguration: list<Shapes\FlowAliasRoutingConfigurationListItem>

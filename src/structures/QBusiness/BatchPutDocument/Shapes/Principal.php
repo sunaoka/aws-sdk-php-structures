@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QBusiness\BatchPutDocument\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PrincipalUser $user
- * @property PrincipalGroup $group
+ * @property PrincipalUser|null $user
+ * @property PrincipalGroup|null $group
  */
 class Principal extends Shape
 {
     /**
      * @param array{
-     *     user?: PrincipalUser,
-     *     group?: PrincipalGroup
+     *     user?: PrincipalUser|null,
+     *     group?: PrincipalGroup|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAssetBundleImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $StrictModeForAllResources
+ * @property bool|null $StrictModeForAllResources
  */
 class AssetBundleImportJobOverrideValidationStrategy extends Shape
 {
     /**
-     * @param array{StrictModeForAllResources?: bool} $args
+     * @param array{StrictModeForAllResources?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

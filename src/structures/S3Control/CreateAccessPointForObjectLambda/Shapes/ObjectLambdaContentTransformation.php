@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Control\CreateAccessPointForObjectLambda\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsLambdaTransformation $AwsLambda
+ * @property AwsLambdaTransformation|null $AwsLambda
  */
 class ObjectLambdaContentTransformation extends Shape
 {
     /**
-     * @param array{AwsLambda?: AwsLambdaTransformation} $args
+     * @param array{AwsLambda?: AwsLambdaTransformation|null} $args
      */
     public function __construct(array $args = [])
     {

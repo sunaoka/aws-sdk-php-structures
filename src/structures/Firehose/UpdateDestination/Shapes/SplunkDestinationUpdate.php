@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Firehose\UpdateDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HECEndpoint
- * @property 'Raw'|'Event' $HECEndpointType
- * @property string $HECToken
- * @property int<180, 600> $HECAcknowledgmentTimeoutInSeconds
- * @property SplunkRetryOptions $RetryOptions
- * @property 'FailedEventsOnly'|'AllEvents' $S3BackupMode
- * @property S3DestinationUpdate $S3Update
- * @property ProcessingConfiguration $ProcessingConfiguration
- * @property CloudWatchLoggingOptions $CloudWatchLoggingOptions
- * @property SplunkBufferingHints $BufferingHints
- * @property SecretsManagerConfiguration $SecretsManagerConfiguration
+ * @property string|null $HECEndpoint
+ * @property 'Raw'|'Event'|null $HECEndpointType
+ * @property string|null $HECToken
+ * @property int<180, 600>|null $HECAcknowledgmentTimeoutInSeconds
+ * @property SplunkRetryOptions|null $RetryOptions
+ * @property 'FailedEventsOnly'|'AllEvents'|null $S3BackupMode
+ * @property S3DestinationUpdate|null $S3Update
+ * @property ProcessingConfiguration|null $ProcessingConfiguration
+ * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
+ * @property SplunkBufferingHints|null $BufferingHints
+ * @property SecretsManagerConfiguration|null $SecretsManagerConfiguration
  */
 class SplunkDestinationUpdate extends Shape
 {
     /**
      * @param array{
-     *     HECEndpoint?: string,
-     *     HECEndpointType?: 'Raw'|'Event',
-     *     HECToken?: string,
-     *     HECAcknowledgmentTimeoutInSeconds?: int<180, 600>,
-     *     RetryOptions?: SplunkRetryOptions,
-     *     S3BackupMode?: 'FailedEventsOnly'|'AllEvents',
-     *     S3Update?: S3DestinationUpdate,
-     *     ProcessingConfiguration?: ProcessingConfiguration,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions,
-     *     BufferingHints?: SplunkBufferingHints,
-     *     SecretsManagerConfiguration?: SecretsManagerConfiguration
+     *     HECEndpoint?: string|null,
+     *     HECEndpointType?: 'Raw'|'Event'|null,
+     *     HECToken?: string|null,
+     *     HECAcknowledgmentTimeoutInSeconds?: int<180, 600>|null,
+     *     RetryOptions?: SplunkRetryOptions|null,
+     *     S3BackupMode?: 'FailedEventsOnly'|'AllEvents'|null,
+     *     S3Update?: S3DestinationUpdate|null,
+     *     ProcessingConfiguration?: ProcessingConfiguration|null,
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
+     *     BufferingHints?: SplunkBufferingHints|null,
+     *     SecretsManagerConfiguration?: SecretsManagerConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

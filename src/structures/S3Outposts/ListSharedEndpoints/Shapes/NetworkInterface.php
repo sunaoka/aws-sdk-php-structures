@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Outposts\ListSharedEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkInterfaceId
+ * @property string|null $NetworkInterfaceId
  */
 class NetworkInterface extends Shape
 {
     /**
-     * @param array{NetworkInterfaceId?: string} $args
+     * @param array{NetworkInterfaceId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

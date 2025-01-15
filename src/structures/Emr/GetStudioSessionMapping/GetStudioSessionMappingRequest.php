@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StudioId
- * @property string $IdentityId
- * @property string $IdentityName
+ * @property string|null $IdentityId
+ * @property string|null $IdentityName
  * @property 'USER'|'GROUP' $IdentityType
  */
 class GetStudioSessionMappingRequest extends Request
@@ -15,8 +15,8 @@ class GetStudioSessionMappingRequest extends Request
     /**
      * @param array{
      *     StudioId: string,
-     *     IdentityId?: string,
-     *     IdentityName?: string,
+     *     IdentityId?: string|null,
+     *     IdentityName?: string|null,
      *     IdentityType: 'USER'|'GROUP'
      * } $args
      */

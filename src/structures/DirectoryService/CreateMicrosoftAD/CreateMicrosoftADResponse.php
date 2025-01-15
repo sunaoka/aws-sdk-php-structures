@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DirectoryService\CreateMicrosoftAD;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DirectoryId
+ * @property string|null $DirectoryId
  */
 class CreateMicrosoftADResponse extends Response
 {

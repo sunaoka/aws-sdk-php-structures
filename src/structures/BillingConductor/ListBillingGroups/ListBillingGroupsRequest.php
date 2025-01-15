@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListBillingGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $BillingPeriod
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property Shapes\ListBillingGroupsFilter $Filters
+ * @property string|null $BillingPeriod
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property Shapes\ListBillingGroupsFilter|null $Filters
  */
 class ListBillingGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     BillingPeriod?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     Filters?: Shapes\ListBillingGroupsFilter
+     *     BillingPeriod?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     Filters?: Shapes\ListBillingGroupsFilter|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ecs\StartTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property list<string> $command
- * @property list<KeyValuePair> $environment
- * @property list<EnvironmentFile> $environmentFiles
- * @property int $cpu
- * @property int $memory
- * @property int $memoryReservation
- * @property list<ResourceRequirement> $resourceRequirements
+ * @property string|null $name
+ * @property list<string>|null $command
+ * @property list<KeyValuePair>|null $environment
+ * @property list<EnvironmentFile>|null $environmentFiles
+ * @property int|null $cpu
+ * @property int|null $memory
+ * @property int|null $memoryReservation
+ * @property list<ResourceRequirement>|null $resourceRequirements
  */
 class ContainerOverride extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     command?: list<string>,
-     *     environment?: list<KeyValuePair>,
-     *     environmentFiles?: list<EnvironmentFile>,
-     *     cpu?: int,
-     *     memory?: int,
-     *     memoryReservation?: int,
-     *     resourceRequirements?: list<ResourceRequirement>
+     *     name?: string|null,
+     *     command?: list<string>|null,
+     *     environment?: list<KeyValuePair>|null,
+     *     environmentFiles?: list<EnvironmentFile>|null,
+     *     cpu?: int|null,
+     *     memory?: int|null,
+     *     memoryReservation?: int|null,
+     *     resourceRequirements?: list<ResourceRequirement>|null
      * } $args
      */
     public function __construct(array $args = [])

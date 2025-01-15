@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\UpdateMediaPipelineKines
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\KinesisVideoStreamPoolConfiguration $KinesisVideoStreamPoolConfiguration
+ * @property Shapes\KinesisVideoStreamPoolConfiguration|null $KinesisVideoStreamPoolConfiguration
  */
 class UpdateMediaPipelineKinesisVideoStreamPoolResponse extends Response
 {

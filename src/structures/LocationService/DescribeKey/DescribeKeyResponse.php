@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreateTime
  * @property \Aws\Api\DateTimeResult $ExpireTime
  * @property \Aws\Api\DateTimeResult $UpdateTime
- * @property string $Description
- * @property array<string, string> $Tags
+ * @property string|null $Description
+ * @property array<string, string>|null $Tags
  */
 class DescribeKeyResponse extends Response
 {

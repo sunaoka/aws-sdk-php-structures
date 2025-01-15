@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'East'|'North'|'South'|'West' $Direction
- * @property string $Language
+ * @property 'East'|'North'|'South'|'West'|null $Direction
+ * @property string|null $Language
  * @property string $Value
  */
 class RouteNumber extends Shape
 {
     /**
      * @param array{
-     *     Direction?: 'East'|'North'|'South'|'West',
-     *     Language?: string,
+     *     Direction?: 'East'|'North'|'South'|'West'|null,
+     *     Language?: string|null,
      *     Value: string
      * } $args
      */

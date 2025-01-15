@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DatabaseName
  * @property string $TableName
- * @property Shapes\Record $CommonAttributes
+ * @property Shapes\Record|null $CommonAttributes
  * @property list<Shapes\Record> $Records
  */
 class WriteRecordsRequest extends Request
@@ -16,7 +16,7 @@ class WriteRecordsRequest extends Request
      * @param array{
      *     DatabaseName: string,
      *     TableName: string,
-     *     CommonAttributes?: Shapes\Record,
+     *     CommonAttributes?: Shapes\Record|null,
      *     Records: list<Shapes\Record>
      * } $args
      */

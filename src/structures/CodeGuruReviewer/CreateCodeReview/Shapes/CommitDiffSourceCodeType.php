@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\CreateCodeReview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceCommit
- * @property string $DestinationCommit
- * @property string $MergeBaseCommit
+ * @property string|null $SourceCommit
+ * @property string|null $DestinationCommit
+ * @property string|null $MergeBaseCommit
  */
 class CommitDiffSourceCodeType extends Shape
 {
     /**
      * @param array{
-     *     SourceCommit?: string,
-     *     DestinationCommit?: string,
-     *     MergeBaseCommit?: string
+     *     SourceCommit?: string|null,
+     *     DestinationCommit?: string|null,
+     *     MergeBaseCommit?: string|null
      * } $args
      */
     public function __construct(array $args = [])

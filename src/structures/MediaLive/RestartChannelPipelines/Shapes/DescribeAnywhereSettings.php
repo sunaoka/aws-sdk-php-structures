@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\RestartChannelPipelines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChannelPlacementGroupId
- * @property string $ClusterId
+ * @property string|null $ChannelPlacementGroupId
+ * @property string|null $ClusterId
  */
 class DescribeAnywhereSettings extends Shape
 {
     /**
      * @param array{
-     *     ChannelPlacementGroupId?: string,
-     *     ClusterId?: string
+     *     ChannelPlacementGroupId?: string|null,
+     *     ClusterId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

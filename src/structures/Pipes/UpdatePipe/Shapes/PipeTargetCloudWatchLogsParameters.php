@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LogStreamName
- * @property string $Timestamp
+ * @property string|null $LogStreamName
+ * @property string|null $Timestamp
  */
 class PipeTargetCloudWatchLogsParameters extends Shape
 {
     /**
      * @param array{
-     *     LogStreamName?: string,
-     *     Timestamp?: string
+     *     LogStreamName?: string|null,
+     *     Timestamp?: string|null
      * } $args
      */
     public function __construct(array $args = [])

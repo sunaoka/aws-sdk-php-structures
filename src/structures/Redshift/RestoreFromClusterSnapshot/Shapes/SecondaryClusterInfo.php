@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\RestoreFromClusterSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property list<ClusterNode> $ClusterNodes
+ * @property string|null $AvailabilityZone
+ * @property list<ClusterNode>|null $ClusterNodes
  */
 class SecondaryClusterInfo extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     ClusterNodes?: list<ClusterNode>
+     *     AvailabilityZone?: string|null,
+     *     ClusterNodes?: list<ClusterNode>|null
      * } $args
      */
     public function __construct(array $args = [])

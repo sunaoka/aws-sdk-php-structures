@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CreateCloudFormationStepInput $stepInput
- * @property CreateCloudFormationStepOutput $stepOutput
+ * @property CreateCloudFormationStepOutput|null $stepOutput
  */
 class CreateCloudFormationSummary extends Shape
 {
     /**
      * @param array{
      *     stepInput: CreateCloudFormationStepInput,
-     *     stepOutput?: CreateCloudFormationStepOutput
+     *     stepOutput?: CreateCloudFormationStepOutput|null
      * } $args
      */
     public function __construct(array $args)

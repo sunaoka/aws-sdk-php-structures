@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DeleteDocument;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $DocumentId
  */
 class DeleteDocumentRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     DocumentId: string
      * } $args
      */

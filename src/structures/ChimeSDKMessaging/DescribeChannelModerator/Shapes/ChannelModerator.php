@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\DescribeChannelModerator\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Identity $Moderator
- * @property string $ChannelArn
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property Identity $CreatedBy
+ * @property Identity|null $Moderator
+ * @property string|null $ChannelArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property Identity|null $CreatedBy
  */
 class ChannelModerator extends Shape
 {
     /**
      * @param array{
-     *     Moderator?: Identity,
-     *     ChannelArn?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     CreatedBy?: Identity
+     *     Moderator?: Identity|null,
+     *     ChannelArn?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: Identity|null
      * } $args
      */
     public function __construct(array $args = [])

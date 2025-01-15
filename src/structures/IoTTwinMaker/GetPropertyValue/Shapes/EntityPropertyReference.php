@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\GetPropertyValue\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $componentName
- * @property string $componentPath
- * @property array<string, string> $externalIdProperty
- * @property string $entityId
+ * @property string|null $componentName
+ * @property string|null $componentPath
+ * @property array<string, string>|null $externalIdProperty
+ * @property string|null $entityId
  * @property string $propertyName
  */
 class EntityPropertyReference extends Shape
 {
     /**
      * @param array{
-     *     componentName?: string,
-     *     componentPath?: string,
-     *     externalIdProperty?: array<string, string>,
-     *     entityId?: string,
+     *     componentName?: string|null,
+     *     componentPath?: string|null,
+     *     externalIdProperty?: array<string, string>|null,
+     *     entityId?: string|null,
      *     propertyName: string
      * } $args
      */

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribePipelineDefinitionForExecutio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PipelineDefinition
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $PipelineDefinition
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class DescribePipelineDefinitionForExecutionResponse extends Response
 {

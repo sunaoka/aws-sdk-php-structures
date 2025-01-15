@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $DocumentVersion
- * @property string $VersionName
+ * @property string|null $DocumentVersion
+ * @property string|null $VersionName
  */
 class DescribeDocumentRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     DocumentVersion?: string,
-     *     VersionName?: string
+     *     DocumentVersion?: string|null,
+     *     VersionName?: string|null
      * } $args
      */
     public function __construct(array $args)

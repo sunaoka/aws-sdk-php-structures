@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCases\CreateRelatedItem\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CommentContent $comment
- * @property Contact $contact
- * @property FileContent $file
+ * @property CommentContent|null $comment
+ * @property Contact|null $contact
+ * @property FileContent|null $file
  */
 class RelatedItemInputContent extends Shape
 {
     /**
      * @param array{
-     *     comment?: CommentContent,
-     *     contact?: Contact,
-     *     file?: FileContent
+     *     comment?: CommentContent|null,
+     *     contact?: Contact|null,
+     *     file?: FileContent|null
      * } $args
      */
     public function __construct(array $args = [])

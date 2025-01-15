@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ApplicationSignals\CreateServiceLevelObjective\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RollingInterval $RollingInterval
- * @property CalendarInterval $CalendarInterval
+ * @property RollingInterval|null $RollingInterval
+ * @property CalendarInterval|null $CalendarInterval
  */
 class Interval extends Shape
 {
     /**
      * @param array{
-     *     RollingInterval?: RollingInterval,
-     *     CalendarInterval?: CalendarInterval
+     *     RollingInterval?: RollingInterval|null,
+     *     CalendarInterval?: CalendarInterval|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppSync\UpdateResolver;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Resolver $resolver
+ * @property Shapes\Resolver|null $resolver
  */
 class UpdateResolverResponse extends Response
 {

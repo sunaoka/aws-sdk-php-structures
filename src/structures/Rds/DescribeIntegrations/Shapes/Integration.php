@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeIntegrations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceArn
- * @property string $TargetArn
- * @property string $IntegrationName
- * @property string $IntegrationArn
- * @property string $KMSKeyId
- * @property array<string, string> $AdditionalEncryptionContext
- * @property 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention' $Status
- * @property list<Tag> $Tags
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<IntegrationError> $Errors
- * @property string $DataFilter
- * @property string $Description
+ * @property string|null $SourceArn
+ * @property string|null $TargetArn
+ * @property string|null $IntegrationName
+ * @property string|null $IntegrationArn
+ * @property string|null $KMSKeyId
+ * @property array<string, string>|null $AdditionalEncryptionContext
+ * @property 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention'|null $Status
+ * @property list<Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property list<IntegrationError>|null $Errors
+ * @property string|null $DataFilter
+ * @property string|null $Description
  */
 class Integration extends Shape
 {
     /**
      * @param array{
-     *     SourceArn?: string,
-     *     TargetArn?: string,
-     *     IntegrationName?: string,
-     *     IntegrationArn?: string,
-     *     KMSKeyId?: string,
-     *     AdditionalEncryptionContext?: array<string, string>,
-     *     Status?: 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention',
-     *     Tags?: list<Tag>,
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     Errors?: list<IntegrationError>,
-     *     DataFilter?: string,
-     *     Description?: string
+     *     SourceArn?: string|null,
+     *     TargetArn?: string|null,
+     *     IntegrationName?: string|null,
+     *     IntegrationArn?: string|null,
+     *     KMSKeyId?: string|null,
+     *     AdditionalEncryptionContext?: array<string, string>|null,
+     *     Status?: 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention'|null,
+     *     Tags?: list<Tag>|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     Errors?: list<IntegrationError>|null,
+     *     DataFilter?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListImportF
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $completionTime
- * @property string $id
- * @property string $importName
- * @property string $inputS3Bucket
- * @property string $inputS3Key
- * @property int $numberOfRecordsFailed
- * @property int $numberOfRecordsSuccess
- * @property \Aws\Api\DateTimeResult $startTime
- * @property 'ImportInProgress'|'ImportFailed'|'ImportPartialSuccess'|'ImportSuccess'|'DeleteInProgress'|'DeleteFailed'|'DeletePartialSuccess'|'DeleteSuccess' $status
- * @property string $statusReportS3Bucket
- * @property string $statusReportS3Key
+ * @property \Aws\Api\DateTimeResult|null $completionTime
+ * @property string|null $id
+ * @property string|null $importName
+ * @property string|null $inputS3Bucket
+ * @property string|null $inputS3Key
+ * @property int|null $numberOfRecordsFailed
+ * @property int|null $numberOfRecordsSuccess
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property 'ImportInProgress'|'ImportFailed'|'ImportPartialSuccess'|'ImportSuccess'|'DeleteInProgress'|'DeleteFailed'|'DeletePartialSuccess'|'DeleteSuccess'|null $status
+ * @property string|null $statusReportS3Bucket
+ * @property string|null $statusReportS3Key
  */
 class ImportFileTaskInformation extends Shape
 {
     /**
      * @param array{
-     *     completionTime?: \Aws\Api\DateTimeResult,
-     *     id?: string,
-     *     importName?: string,
-     *     inputS3Bucket?: string,
-     *     inputS3Key?: string,
-     *     numberOfRecordsFailed?: int,
-     *     numberOfRecordsSuccess?: int,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'ImportInProgress'|'ImportFailed'|'ImportPartialSuccess'|'ImportSuccess'|'DeleteInProgress'|'DeleteFailed'|'DeletePartialSuccess'|'DeleteSuccess',
-     *     statusReportS3Bucket?: string,
-     *     statusReportS3Key?: string
+     *     completionTime?: \Aws\Api\DateTimeResult|null,
+     *     id?: string|null,
+     *     importName?: string|null,
+     *     inputS3Bucket?: string|null,
+     *     inputS3Key?: string|null,
+     *     numberOfRecordsFailed?: int|null,
+     *     numberOfRecordsSuccess?: int|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'ImportInProgress'|'ImportFailed'|'ImportPartialSuccess'|'ImportSuccess'|'DeleteInProgress'|'DeleteFailed'|'DeletePartialSuccess'|'DeleteSuccess'|null,
+     *     statusReportS3Bucket?: string|null,
+     *     statusReportS3Key?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $apiId
- * @property string $description
- * @property int $expires
+ * @property string|null $description
+ * @property int|null $expires
  */
 class CreateApiKeyRequest extends Request
 {
     /**
      * @param array{
      *     apiId: string,
-     *     description?: string,
-     *     expires?: int
+     *     description?: string|null,
+     *     expires?: int|null
      * } $args
      */
     public function __construct(array $args)

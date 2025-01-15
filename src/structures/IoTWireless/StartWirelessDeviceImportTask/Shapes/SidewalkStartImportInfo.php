@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\StartWirelessDeviceImportTask\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceCreationFile
- * @property string $Role
+ * @property string|null $DeviceCreationFile
+ * @property string|null $Role
  */
 class SidewalkStartImportInfo extends Shape
 {
     /**
      * @param array{
-     *     DeviceCreationFile?: string,
-     *     Role?: string
+     *     DeviceCreationFile?: string|null,
+     *     Role?: string|null
      * } $args
      */
     public function __construct(array $args = [])

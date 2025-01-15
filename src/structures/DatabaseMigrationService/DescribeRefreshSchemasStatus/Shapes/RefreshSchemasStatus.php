@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRefreshSchemas
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndpointArn
- * @property string $ReplicationInstanceArn
- * @property 'successful'|'failed'|'refreshing' $Status
- * @property \Aws\Api\DateTimeResult $LastRefreshDate
- * @property string $LastFailureMessage
+ * @property string|null $EndpointArn
+ * @property string|null $ReplicationInstanceArn
+ * @property 'successful'|'failed'|'refreshing'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $LastRefreshDate
+ * @property string|null $LastFailureMessage
  */
 class RefreshSchemasStatus extends Shape
 {
     /**
      * @param array{
-     *     EndpointArn?: string,
-     *     ReplicationInstanceArn?: string,
-     *     Status?: 'successful'|'failed'|'refreshing',
-     *     LastRefreshDate?: \Aws\Api\DateTimeResult,
-     *     LastFailureMessage?: string
+     *     EndpointArn?: string|null,
+     *     ReplicationInstanceArn?: string|null,
+     *     Status?: 'successful'|'failed'|'refreshing'|null,
+     *     LastRefreshDate?: \Aws\Api\DateTimeResult|null,
+     *     LastFailureMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

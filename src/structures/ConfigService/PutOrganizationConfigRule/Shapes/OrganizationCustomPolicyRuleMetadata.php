@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ConfigService\PutOrganizationConfigRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property list<'ConfigurationItemChangeNotification'|'OversizedConfigurationItemChangeNotification'> $OrganizationConfigRuleTriggerTypes
- * @property string $InputParameters
- * @property 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours' $MaximumExecutionFrequency
- * @property list<string> $ResourceTypesScope
- * @property string $ResourceIdScope
- * @property string $TagKeyScope
- * @property string $TagValueScope
+ * @property string|null $Description
+ * @property list<'ConfigurationItemChangeNotification'|'OversizedConfigurationItemChangeNotification'>|null $OrganizationConfigRuleTriggerTypes
+ * @property string|null $InputParameters
+ * @property 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours'|null $MaximumExecutionFrequency
+ * @property list<string>|null $ResourceTypesScope
+ * @property string|null $ResourceIdScope
+ * @property string|null $TagKeyScope
+ * @property string|null $TagValueScope
  * @property string $PolicyRuntime
  * @property string $PolicyText
- * @property list<string> $DebugLogDeliveryAccounts
+ * @property list<string>|null $DebugLogDeliveryAccounts
  */
 class OrganizationCustomPolicyRuleMetadata extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     OrganizationConfigRuleTriggerTypes?: list<'ConfigurationItemChangeNotification'|'OversizedConfigurationItemChangeNotification'>,
-     *     InputParameters?: string,
-     *     MaximumExecutionFrequency?: 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours',
-     *     ResourceTypesScope?: list<string>,
-     *     ResourceIdScope?: string,
-     *     TagKeyScope?: string,
-     *     TagValueScope?: string,
+     *     Description?: string|null,
+     *     OrganizationConfigRuleTriggerTypes?: list<'ConfigurationItemChangeNotification'|'OversizedConfigurationItemChangeNotification'>|null,
+     *     InputParameters?: string|null,
+     *     MaximumExecutionFrequency?: 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours'|null,
+     *     ResourceTypesScope?: list<string>|null,
+     *     ResourceIdScope?: string|null,
+     *     TagKeyScope?: string|null,
+     *     TagValueScope?: string|null,
      *     PolicyRuntime: string,
      *     PolicyText: string,
-     *     DebugLogDeliveryAccounts?: list<string>
+     *     DebugLogDeliveryAccounts?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

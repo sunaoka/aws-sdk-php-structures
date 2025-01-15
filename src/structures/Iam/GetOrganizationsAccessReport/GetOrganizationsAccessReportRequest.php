@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobId
- * @property int<1, 1000> $MaxItems
- * @property string $Marker
- * @property 'SERVICE_NAMESPACE_ASCENDING'|'SERVICE_NAMESPACE_DESCENDING'|'LAST_AUTHENTICATED_TIME_ASCENDING'|'LAST_AUTHENTICATED_TIME_DESCENDING' $SortKey
+ * @property int<1, 1000>|null $MaxItems
+ * @property string|null $Marker
+ * @property 'SERVICE_NAMESPACE_ASCENDING'|'SERVICE_NAMESPACE_DESCENDING'|'LAST_AUTHENTICATED_TIME_ASCENDING'|'LAST_AUTHENTICATED_TIME_DESCENDING'|null $SortKey
  */
 class GetOrganizationsAccessReportRequest extends Request
 {
     /**
      * @param array{
      *     JobId: string,
-     *     MaxItems?: int<1, 1000>,
-     *     Marker?: string,
-     *     SortKey?: 'SERVICE_NAMESPACE_ASCENDING'|'SERVICE_NAMESPACE_DESCENDING'|'LAST_AUTHENTICATED_TIME_ASCENDING'|'LAST_AUTHENTICATED_TIME_DESCENDING'
+     *     MaxItems?: int<1, 1000>|null,
+     *     Marker?: string|null,
+     *     SortKey?: 'SERVICE_NAMESPACE_ASCENDING'|'SERVICE_NAMESPACE_DESCENDING'|'LAST_AUTHENTICATED_TIME_ASCENDING'|'LAST_AUTHENTICATED_TIME_DESCENDING'|null
      * } $args
      */
     public function __construct(array $args)

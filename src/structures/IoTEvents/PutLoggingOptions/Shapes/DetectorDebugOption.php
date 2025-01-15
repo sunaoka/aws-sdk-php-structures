@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $detectorModelName
- * @property string $keyValue
+ * @property string|null $keyValue
  */
 class DetectorDebugOption extends Shape
 {
     /**
      * @param array{
      *     detectorModelName: string,
-     *     keyValue?: string
+     *     keyValue?: string|null
      * } $args
      */
     public function __construct(array $args)

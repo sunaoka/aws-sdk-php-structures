@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceId
- * @property string $InstanceName
- * @property list<TagValues> $Tags
- * @property ResourceDetails $ResourceDetails
- * @property ResourceUtilization $ResourceUtilization
- * @property string $ReservationCoveredHoursInLookbackPeriod
- * @property string $SavingsPlansCoveredHoursInLookbackPeriod
- * @property string $OnDemandHoursInLookbackPeriod
- * @property string $TotalRunningHoursInLookbackPeriod
- * @property string $MonthlyCost
- * @property string $CurrencyCode
+ * @property string|null $ResourceId
+ * @property string|null $InstanceName
+ * @property list<TagValues>|null $Tags
+ * @property ResourceDetails|null $ResourceDetails
+ * @property ResourceUtilization|null $ResourceUtilization
+ * @property string|null $ReservationCoveredHoursInLookbackPeriod
+ * @property string|null $SavingsPlansCoveredHoursInLookbackPeriod
+ * @property string|null $OnDemandHoursInLookbackPeriod
+ * @property string|null $TotalRunningHoursInLookbackPeriod
+ * @property string|null $MonthlyCost
+ * @property string|null $CurrencyCode
  */
 class CurrentInstance extends Shape
 {
     /**
      * @param array{
-     *     ResourceId?: string,
-     *     InstanceName?: string,
-     *     Tags?: list<TagValues>,
-     *     ResourceDetails?: ResourceDetails,
-     *     ResourceUtilization?: ResourceUtilization,
-     *     ReservationCoveredHoursInLookbackPeriod?: string,
-     *     SavingsPlansCoveredHoursInLookbackPeriod?: string,
-     *     OnDemandHoursInLookbackPeriod?: string,
-     *     TotalRunningHoursInLookbackPeriod?: string,
-     *     MonthlyCost?: string,
-     *     CurrencyCode?: string
+     *     ResourceId?: string|null,
+     *     InstanceName?: string|null,
+     *     Tags?: list<TagValues>|null,
+     *     ResourceDetails?: ResourceDetails|null,
+     *     ResourceUtilization?: ResourceUtilization|null,
+     *     ReservationCoveredHoursInLookbackPeriod?: string|null,
+     *     SavingsPlansCoveredHoursInLookbackPeriod?: string|null,
+     *     OnDemandHoursInLookbackPeriod?: string|null,
+     *     TotalRunningHoursInLookbackPeriod?: string|null,
+     *     MonthlyCost?: string|null,
+     *     CurrencyCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

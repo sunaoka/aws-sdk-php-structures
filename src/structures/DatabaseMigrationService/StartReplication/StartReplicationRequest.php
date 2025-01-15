@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ReplicationConfigArn
  * @property string $StartReplicationType
- * @property \Aws\Api\DateTimeResult $CdcStartTime
- * @property string $CdcStartPosition
- * @property string $CdcStopPosition
+ * @property \Aws\Api\DateTimeResult|null $CdcStartTime
+ * @property string|null $CdcStartPosition
+ * @property string|null $CdcStopPosition
  */
 class StartReplicationRequest extends Request
 {
@@ -17,9 +17,9 @@ class StartReplicationRequest extends Request
      * @param array{
      *     ReplicationConfigArn: string,
      *     StartReplicationType: string,
-     *     CdcStartTime?: \Aws\Api\DateTimeResult,
-     *     CdcStartPosition?: string,
-     *     CdcStopPosition?: string
+     *     CdcStartTime?: \Aws\Api\DateTimeResult|null,
+     *     CdcStartPosition?: string|null,
+     *     CdcStopPosition?: string|null
      * } $args
      */
     public function __construct(array $args)

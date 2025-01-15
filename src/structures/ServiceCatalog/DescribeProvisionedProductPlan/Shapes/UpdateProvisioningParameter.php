@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisionedProductPlan\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $Value
- * @property bool $UsePreviousValue
+ * @property string|null $Key
+ * @property string|null $Value
+ * @property bool|null $UsePreviousValue
  */
 class UpdateProvisioningParameter extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Value?: string,
-     *     UsePreviousValue?: bool
+     *     Key?: string|null,
+     *     Value?: string|null,
+     *     UsePreviousValue?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

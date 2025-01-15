@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\WorkDocs\UpdateUser;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $UserId
- * @property string $GivenName
- * @property string $Surname
- * @property 'USER'|'ADMIN'|'POWERUSER'|'MINIMALUSER'|'WORKSPACESUSER' $Type
- * @property Shapes\StorageRuleType $StorageRule
- * @property string $TimeZoneId
- * @property 'en'|'fr'|'ko'|'de'|'es'|'ja'|'ru'|'zh_CN'|'zh_TW'|'pt_BR'|'default' $Locale
- * @property 'TRUE'|'FALSE' $GrantPoweruserPrivileges
+ * @property string|null $GivenName
+ * @property string|null $Surname
+ * @property 'USER'|'ADMIN'|'POWERUSER'|'MINIMALUSER'|'WORKSPACESUSER'|null $Type
+ * @property Shapes\StorageRuleType|null $StorageRule
+ * @property string|null $TimeZoneId
+ * @property 'en'|'fr'|'ko'|'de'|'es'|'ja'|'ru'|'zh_CN'|'zh_TW'|'pt_BR'|'default'|null $Locale
+ * @property 'TRUE'|'FALSE'|null $GrantPoweruserPrivileges
  */
 class UpdateUserRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     UserId: string,
-     *     GivenName?: string,
-     *     Surname?: string,
-     *     Type?: 'USER'|'ADMIN'|'POWERUSER'|'MINIMALUSER'|'WORKSPACESUSER',
-     *     StorageRule?: Shapes\StorageRuleType,
-     *     TimeZoneId?: string,
-     *     Locale?: 'en'|'fr'|'ko'|'de'|'es'|'ja'|'ru'|'zh_CN'|'zh_TW'|'pt_BR'|'default',
-     *     GrantPoweruserPrivileges?: 'TRUE'|'FALSE'
+     *     GivenName?: string|null,
+     *     Surname?: string|null,
+     *     Type?: 'USER'|'ADMIN'|'POWERUSER'|'MINIMALUSER'|'WORKSPACESUSER'|null,
+     *     StorageRule?: Shapes\StorageRuleType|null,
+     *     TimeZoneId?: string|null,
+     *     Locale?: 'en'|'fr'|'ko'|'de'|'es'|'ja'|'ru'|'zh_CN'|'zh_TW'|'pt_BR'|'default'|null,
+     *     GrantPoweruserPrivileges?: 'TRUE'|'FALSE'|null
      * } $args
      */
     public function __construct(array $args)

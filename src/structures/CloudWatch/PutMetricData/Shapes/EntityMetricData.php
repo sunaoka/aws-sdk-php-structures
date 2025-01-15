@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatch\PutMetricData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Entity $Entity
- * @property list<MetricDatum> $MetricData
+ * @property Entity|null $Entity
+ * @property list<MetricDatum>|null $MetricData
  */
 class EntityMetricData extends Shape
 {
     /**
      * @param array{
-     *     Entity?: Entity,
-     *     MetricData?: list<MetricDatum>
+     *     Entity?: Entity|null,
+     *     MetricData?: list<MetricDatum>|null
      * } $args
      */
     public function __construct(array $args = [])

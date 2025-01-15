@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryArn
  * @property Shapes\SchemaFacet $SchemaFacet
- * @property list<Shapes\AttributeKeyAndValue> $ObjectAttributeList
+ * @property list<Shapes\AttributeKeyAndValue>|null $ObjectAttributeList
  * @property Shapes\ObjectReference $ObjectReference
  */
 class AddFacetToObjectRequest extends Request
@@ -16,7 +16,7 @@ class AddFacetToObjectRequest extends Request
      * @param array{
      *     DirectoryArn: string,
      *     SchemaFacet: Shapes\SchemaFacet,
-     *     ObjectAttributeList?: list<Shapes\AttributeKeyAndValue>,
+     *     ObjectAttributeList?: list<Shapes\AttributeKeyAndValue>|null,
      *     ObjectReference: Shapes\ObjectReference
      * } $args
      */

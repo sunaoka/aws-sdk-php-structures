@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $workflowArn
- * @property list<WorkflowParameter> $parameters
- * @property string $parallelGroup
- * @property 'CONTINUE'|'ABORT' $onFailure
+ * @property list<WorkflowParameter>|null $parameters
+ * @property string|null $parallelGroup
+ * @property 'CONTINUE'|'ABORT'|null $onFailure
  */
 class WorkflowConfiguration extends Shape
 {
     /**
      * @param array{
      *     workflowArn: string,
-     *     parameters?: list<WorkflowParameter>,
-     *     parallelGroup?: string,
-     *     onFailure?: 'CONTINUE'|'ABORT'
+     *     parameters?: list<WorkflowParameter>|null,
+     *     parallelGroup?: string|null,
+     *     onFailure?: 'CONTINUE'|'ABORT'|null
      * } $args
      */
     public function __construct(array $args)

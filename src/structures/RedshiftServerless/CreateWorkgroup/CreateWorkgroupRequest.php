@@ -5,36 +5,36 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\CreateWorkgroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $baseCapacity
- * @property list<Shapes\ConfigParameter> $configParameters
- * @property bool $enhancedVpcRouting
- * @property string $ipAddressType
- * @property int $maxCapacity
+ * @property int|null $baseCapacity
+ * @property list<Shapes\ConfigParameter>|null $configParameters
+ * @property bool|null $enhancedVpcRouting
+ * @property string|null $ipAddressType
+ * @property int|null $maxCapacity
  * @property string $namespaceName
- * @property int $port
- * @property Shapes\PerformanceTarget $pricePerformanceTarget
- * @property bool $publiclyAccessible
- * @property list<string> $securityGroupIds
- * @property list<string> $subnetIds
- * @property list<Shapes\Tag> $tags
+ * @property int|null $port
+ * @property Shapes\PerformanceTarget|null $pricePerformanceTarget
+ * @property bool|null $publiclyAccessible
+ * @property list<string>|null $securityGroupIds
+ * @property list<string>|null $subnetIds
+ * @property list<Shapes\Tag>|null $tags
  * @property string $workgroupName
  */
 class CreateWorkgroupRequest extends Request
 {
     /**
      * @param array{
-     *     baseCapacity?: int,
-     *     configParameters?: list<Shapes\ConfigParameter>,
-     *     enhancedVpcRouting?: bool,
-     *     ipAddressType?: string,
-     *     maxCapacity?: int,
+     *     baseCapacity?: int|null,
+     *     configParameters?: list<Shapes\ConfigParameter>|null,
+     *     enhancedVpcRouting?: bool|null,
+     *     ipAddressType?: string|null,
+     *     maxCapacity?: int|null,
      *     namespaceName: string,
-     *     port?: int,
-     *     pricePerformanceTarget?: Shapes\PerformanceTarget,
-     *     publiclyAccessible?: bool,
-     *     securityGroupIds?: list<string>,
-     *     subnetIds?: list<string>,
-     *     tags?: list<Shapes\Tag>,
+     *     port?: int|null,
+     *     pricePerformanceTarget?: Shapes\PerformanceTarget|null,
+     *     publiclyAccessible?: bool|null,
+     *     securityGroupIds?: list<string>|null,
+     *     subnetIds?: list<string>|null,
+     *     tags?: list<Shapes\Tag>|null,
      *     workgroupName: string
      * } $args
      */

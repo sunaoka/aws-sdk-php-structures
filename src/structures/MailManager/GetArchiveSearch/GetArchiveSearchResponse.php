@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MailManager\GetArchiveSearch;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ArchiveId
- * @property Shapes\ArchiveFilters $Filters
- * @property \Aws\Api\DateTimeResult $FromTimestamp
- * @property int<0, 1000> $MaxResults
- * @property Shapes\SearchStatus $Status
- * @property \Aws\Api\DateTimeResult $ToTimestamp
+ * @property string|null $ArchiveId
+ * @property Shapes\ArchiveFilters|null $Filters
+ * @property \Aws\Api\DateTimeResult|null $FromTimestamp
+ * @property int<0, 1000>|null $MaxResults
+ * @property Shapes\SearchStatus|null $Status
+ * @property \Aws\Api\DateTimeResult|null $ToTimestamp
  */
 class GetArchiveSearchResponse extends Response
 {

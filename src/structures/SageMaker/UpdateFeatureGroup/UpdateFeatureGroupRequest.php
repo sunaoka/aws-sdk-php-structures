@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FeatureGroupName
- * @property list<Shapes\FeatureDefinition> $FeatureAdditions
- * @property Shapes\OnlineStoreConfigUpdate $OnlineStoreConfig
- * @property Shapes\ThroughputConfigUpdate $ThroughputConfig
+ * @property list<Shapes\FeatureDefinition>|null $FeatureAdditions
+ * @property Shapes\OnlineStoreConfigUpdate|null $OnlineStoreConfig
+ * @property Shapes\ThroughputConfigUpdate|null $ThroughputConfig
  */
 class UpdateFeatureGroupRequest extends Request
 {
     /**
      * @param array{
      *     FeatureGroupName: string,
-     *     FeatureAdditions?: list<Shapes\FeatureDefinition>,
-     *     OnlineStoreConfig?: Shapes\OnlineStoreConfigUpdate,
-     *     ThroughputConfig?: Shapes\ThroughputConfigUpdate
+     *     FeatureAdditions?: list<Shapes\FeatureDefinition>|null,
+     *     OnlineStoreConfig?: Shapes\OnlineStoreConfigUpdate|null,
+     *     ThroughputConfig?: Shapes\ThroughputConfigUpdate|null
      * } $args
      */
     public function __construct(array $args)

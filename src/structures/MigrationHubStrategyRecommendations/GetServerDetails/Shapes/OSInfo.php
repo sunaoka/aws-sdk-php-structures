@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetServerDe
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'LINUX'|'WINDOWS' $type
- * @property string $version
+ * @property 'LINUX'|'WINDOWS'|null $type
+ * @property string|null $version
  */
 class OSInfo extends Shape
 {
     /**
      * @param array{
-     *     type?: 'LINUX'|'WINDOWS',
-     *     version?: string
+     *     type?: 'LINUX'|'WINDOWS'|null,
+     *     version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

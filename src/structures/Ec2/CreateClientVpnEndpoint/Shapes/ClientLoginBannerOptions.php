@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateClientVpnEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property string $BannerText
+ * @property bool|null $Enabled
+ * @property string|null $BannerText
  */
 class ClientLoginBannerOptions extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     BannerText?: string
+     *     Enabled?: bool|null,
+     *     BannerText?: string|null
      * } $args
      */
     public function __construct(array $args = [])

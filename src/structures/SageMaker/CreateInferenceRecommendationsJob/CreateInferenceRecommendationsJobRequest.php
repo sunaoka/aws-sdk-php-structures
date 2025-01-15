@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Default'|'Advanced' $JobType
  * @property string $RoleArn
  * @property Shapes\RecommendationJobInputConfig $InputConfig
- * @property string $JobDescription
- * @property Shapes\RecommendationJobStoppingConditions $StoppingConditions
- * @property Shapes\RecommendationJobOutputConfig $OutputConfig
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $JobDescription
+ * @property Shapes\RecommendationJobStoppingConditions|null $StoppingConditions
+ * @property Shapes\RecommendationJobOutputConfig|null $OutputConfig
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateInferenceRecommendationsJobRequest extends Request
 {
@@ -22,10 +22,10 @@ class CreateInferenceRecommendationsJobRequest extends Request
      *     JobType: 'Default'|'Advanced',
      *     RoleArn: string,
      *     InputConfig: Shapes\RecommendationJobInputConfig,
-     *     JobDescription?: string,
-     *     StoppingConditions?: Shapes\RecommendationJobStoppingConditions,
-     *     OutputConfig?: Shapes\RecommendationJobOutputConfig,
-     *     Tags?: list<Shapes\Tag>
+     *     JobDescription?: string|null,
+     *     StoppingConditions?: Shapes\RecommendationJobStoppingConditions|null,
+     *     OutputConfig?: Shapes\RecommendationJobOutputConfig|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

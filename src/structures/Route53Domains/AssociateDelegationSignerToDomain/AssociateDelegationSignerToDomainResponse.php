@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53Domains\AssociateDelegationSignerToDomai
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $OperationId
+ * @property string|null $OperationId
  */
 class AssociateDelegationSignerToDomainResponse extends Response
 {

@@ -5,63 +5,63 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property 'AMI'|'DOCKER' $type
- * @property string $name
- * @property string $version
- * @property 'Windows'|'Linux'|'macOS' $platform
- * @property bool $enhancedImageMetadataEnabled
- * @property string $osVersion
- * @property ImageState $state
- * @property ImageRecipe $imageRecipe
- * @property ContainerRecipe $containerRecipe
- * @property string $sourcePipelineName
- * @property string $sourcePipelineArn
- * @property InfrastructureConfiguration $infrastructureConfiguration
- * @property DistributionConfiguration $distributionConfiguration
- * @property ImageTestsConfiguration $imageTestsConfiguration
- * @property string $dateCreated
- * @property OutputResources $outputResources
- * @property array<string, string> $tags
- * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO' $buildType
- * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM' $imageSource
- * @property ImageScanState $scanState
- * @property ImageScanningConfiguration $imageScanningConfiguration
- * @property \Aws\Api\DateTimeResult $deprecationTime
- * @property string $lifecycleExecutionId
- * @property string $executionRole
- * @property list<WorkflowConfiguration> $workflows
+ * @property string|null $arn
+ * @property 'AMI'|'DOCKER'|null $type
+ * @property string|null $name
+ * @property string|null $version
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property bool|null $enhancedImageMetadataEnabled
+ * @property string|null $osVersion
+ * @property ImageState|null $state
+ * @property ImageRecipe|null $imageRecipe
+ * @property ContainerRecipe|null $containerRecipe
+ * @property string|null $sourcePipelineName
+ * @property string|null $sourcePipelineArn
+ * @property InfrastructureConfiguration|null $infrastructureConfiguration
+ * @property DistributionConfiguration|null $distributionConfiguration
+ * @property ImageTestsConfiguration|null $imageTestsConfiguration
+ * @property string|null $dateCreated
+ * @property OutputResources|null $outputResources
+ * @property array<string, string>|null $tags
+ * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null $buildType
+ * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null $imageSource
+ * @property ImageScanState|null $scanState
+ * @property ImageScanningConfiguration|null $imageScanningConfiguration
+ * @property \Aws\Api\DateTimeResult|null $deprecationTime
+ * @property string|null $lifecycleExecutionId
+ * @property string|null $executionRole
+ * @property list<WorkflowConfiguration>|null $workflows
  */
 class Image extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     type?: 'AMI'|'DOCKER',
-     *     name?: string,
-     *     version?: string,
-     *     platform?: 'Windows'|'Linux'|'macOS',
-     *     enhancedImageMetadataEnabled?: bool,
-     *     osVersion?: string,
-     *     state?: ImageState,
-     *     imageRecipe?: ImageRecipe,
-     *     containerRecipe?: ContainerRecipe,
-     *     sourcePipelineName?: string,
-     *     sourcePipelineArn?: string,
-     *     infrastructureConfiguration?: InfrastructureConfiguration,
-     *     distributionConfiguration?: DistributionConfiguration,
-     *     imageTestsConfiguration?: ImageTestsConfiguration,
-     *     dateCreated?: string,
-     *     outputResources?: OutputResources,
-     *     tags?: array<string, string>,
-     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO',
-     *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM',
-     *     scanState?: ImageScanState,
-     *     imageScanningConfiguration?: ImageScanningConfiguration,
-     *     deprecationTime?: \Aws\Api\DateTimeResult,
-     *     lifecycleExecutionId?: string,
-     *     executionRole?: string,
-     *     workflows?: list<WorkflowConfiguration>
+     *     arn?: string|null,
+     *     type?: 'AMI'|'DOCKER'|null,
+     *     name?: string|null,
+     *     version?: string|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     enhancedImageMetadataEnabled?: bool|null,
+     *     osVersion?: string|null,
+     *     state?: ImageState|null,
+     *     imageRecipe?: ImageRecipe|null,
+     *     containerRecipe?: ContainerRecipe|null,
+     *     sourcePipelineName?: string|null,
+     *     sourcePipelineArn?: string|null,
+     *     infrastructureConfiguration?: InfrastructureConfiguration|null,
+     *     distributionConfiguration?: DistributionConfiguration|null,
+     *     imageTestsConfiguration?: ImageTestsConfiguration|null,
+     *     dateCreated?: string|null,
+     *     outputResources?: OutputResources|null,
+     *     tags?: array<string, string>|null,
+     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null,
+     *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null,
+     *     scanState?: ImageScanState|null,
+     *     imageScanningConfiguration?: ImageScanningConfiguration|null,
+     *     deprecationTime?: \Aws\Api\DateTimeResult|null,
+     *     lifecycleExecutionId?: string|null,
+     *     executionRole?: string|null,
+     *     workflows?: list<WorkflowConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

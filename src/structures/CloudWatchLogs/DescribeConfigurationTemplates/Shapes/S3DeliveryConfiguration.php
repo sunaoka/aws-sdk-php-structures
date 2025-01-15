@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeConfigurationTemplates\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $suffixPath
- * @property bool $enableHiveCompatiblePath
+ * @property string|null $suffixPath
+ * @property bool|null $enableHiveCompatiblePath
  */
 class S3DeliveryConfiguration extends Shape
 {
     /**
      * @param array{
-     *     suffixPath?: string,
-     *     enableHiveCompatiblePath?: bool
+     *     suffixPath?: string|null,
+     *     enableHiveCompatiblePath?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

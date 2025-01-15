@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalNetworkId
  * @property string $LinkId
- * @property string $Description
- * @property string $Type
- * @property Shapes\Bandwidth $Bandwidth
- * @property string $Provider
+ * @property string|null $Description
+ * @property string|null $Type
+ * @property Shapes\Bandwidth|null $Bandwidth
+ * @property string|null $Provider
  */
 class UpdateLinkRequest extends Request
 {
@@ -18,10 +18,10 @@ class UpdateLinkRequest extends Request
      * @param array{
      *     GlobalNetworkId: string,
      *     LinkId: string,
-     *     Description?: string,
-     *     Type?: string,
-     *     Bandwidth?: Shapes\Bandwidth,
-     *     Provider?: string
+     *     Description?: string|null,
+     *     Type?: string|null,
+     *     Bandwidth?: Shapes\Bandwidth|null,
+     *     Provider?: string|null
      * } $args
      */
     public function __construct(array $args)

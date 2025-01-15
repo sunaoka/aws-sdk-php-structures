@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\BatchGetRecordIdentifier> $Identifiers
- * @property 'Enabled'|'Disabled' $ExpirationTimeResponse
+ * @property 'Enabled'|'Disabled'|null $ExpirationTimeResponse
  */
 class BatchGetRecordRequest extends Request
 {
     /**
      * @param array{
      *     Identifiers: list<Shapes\BatchGetRecordIdentifier>,
-     *     ExpirationTimeResponse?: 'Enabled'|'Disabled'
+     *     ExpirationTimeResponse?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args)

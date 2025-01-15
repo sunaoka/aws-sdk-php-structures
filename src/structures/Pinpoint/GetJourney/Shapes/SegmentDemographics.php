@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SetDimension $AppVersion
- * @property SetDimension $Channel
- * @property SetDimension $DeviceType
- * @property SetDimension $Make
- * @property SetDimension $Model
- * @property SetDimension $Platform
+ * @property SetDimension|null $AppVersion
+ * @property SetDimension|null $Channel
+ * @property SetDimension|null $DeviceType
+ * @property SetDimension|null $Make
+ * @property SetDimension|null $Model
+ * @property SetDimension|null $Platform
  */
 class SegmentDemographics extends Shape
 {
     /**
      * @param array{
-     *     AppVersion?: SetDimension,
-     *     Channel?: SetDimension,
-     *     DeviceType?: SetDimension,
-     *     Make?: SetDimension,
-     *     Model?: SetDimension,
-     *     Platform?: SetDimension
+     *     AppVersion?: SetDimension|null,
+     *     Channel?: SetDimension|null,
+     *     DeviceType?: SetDimension|null,
+     *     Make?: SetDimension|null,
+     *     Model?: SetDimension|null,
+     *     Platform?: SetDimension|null
      * } $args
      */
     public function __construct(array $args = [])

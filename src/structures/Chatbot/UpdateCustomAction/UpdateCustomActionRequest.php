@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CustomActionArn
  * @property Shapes\CustomActionDefinition $Definition
- * @property string $AliasName
- * @property list<Shapes\CustomActionAttachment> $Attachments
+ * @property string|null $AliasName
+ * @property list<Shapes\CustomActionAttachment>|null $Attachments
  */
 class UpdateCustomActionRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateCustomActionRequest extends Request
      * @param array{
      *     CustomActionArn: string,
      *     Definition: Shapes\CustomActionDefinition,
-     *     AliasName?: string,
-     *     Attachments?: list<Shapes\CustomActionAttachment>
+     *     AliasName?: string|null,
+     *     Attachments?: list<Shapes\CustomActionAttachment>|null
      * } $args
      */
     public function __construct(array $args)

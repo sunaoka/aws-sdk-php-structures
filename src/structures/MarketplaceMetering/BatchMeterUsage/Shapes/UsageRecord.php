@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $Timestamp
  * @property string $CustomerIdentifier
  * @property string $Dimension
- * @property int<0, 2147483647> $Quantity
- * @property list<UsageAllocation> $UsageAllocations
+ * @property int<0, 2147483647>|null $Quantity
+ * @property list<UsageAllocation>|null $UsageAllocations
  */
 class UsageRecord extends Shape
 {
@@ -18,8 +18,8 @@ class UsageRecord extends Shape
      *     Timestamp: \Aws\Api\DateTimeResult,
      *     CustomerIdentifier: string,
      *     Dimension: string,
-     *     Quantity?: int<0, 2147483647>,
-     *     UsageAllocations?: list<UsageAllocation>
+     *     Quantity?: int<0, 2147483647>|null,
+     *     UsageAllocations?: list<UsageAllocation>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $agentAliasId
- * @property string $agentId
- * @property string $agentVersion
- * @property list<Caller> $callerChain
- * @property string $collaboratorName
- * @property string $sessionId
- * @property Trace $trace
+ * @property string|null $agentAliasId
+ * @property string|null $agentId
+ * @property string|null $agentVersion
+ * @property list<Caller>|null $callerChain
+ * @property string|null $collaboratorName
+ * @property string|null $sessionId
+ * @property Trace|null $trace
  */
 class TracePart extends Shape
 {
     /**
      * @param array{
-     *     agentAliasId?: string,
-     *     agentId?: string,
-     *     agentVersion?: string,
-     *     callerChain?: list<Caller>,
-     *     collaboratorName?: string,
-     *     sessionId?: string,
-     *     trace?: Trace
+     *     agentAliasId?: string|null,
+     *     agentId?: string|null,
+     *     agentVersion?: string|null,
+     *     callerChain?: list<Caller>|null,
+     *     collaboratorName?: string|null,
+     *     sessionId?: string|null,
+     *     trace?: Trace|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $pipelineName
  * @property string $pipelineExecutionId
- * @property bool $abandon
- * @property string $reason
+ * @property bool|null $abandon
+ * @property string|null $reason
  */
 class StopPipelineExecutionRequest extends Request
 {
@@ -16,8 +16,8 @@ class StopPipelineExecutionRequest extends Request
      * @param array{
      *     pipelineName: string,
      *     pipelineExecutionId: string,
-     *     abandon?: bool,
-     *     reason?: string
+     *     abandon?: bool|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args)

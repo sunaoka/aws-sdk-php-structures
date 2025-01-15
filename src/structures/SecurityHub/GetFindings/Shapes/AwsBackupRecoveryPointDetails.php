@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BackupSizeInBytes
- * @property string $BackupVaultArn
- * @property string $BackupVaultName
- * @property AwsBackupRecoveryPointCalculatedLifecycleDetails $CalculatedLifecycle
- * @property string $CompletionDate
- * @property AwsBackupRecoveryPointCreatedByDetails $CreatedBy
- * @property string $CreationDate
- * @property string $EncryptionKeyArn
- * @property string $IamRoleArn
- * @property bool $IsEncrypted
- * @property string $LastRestoreTime
- * @property AwsBackupRecoveryPointLifecycleDetails $Lifecycle
- * @property string $RecoveryPointArn
- * @property string $ResourceArn
- * @property string $ResourceType
- * @property string $SourceBackupVaultArn
- * @property string $Status
- * @property string $StatusMessage
- * @property string $StorageClass
+ * @property int|null $BackupSizeInBytes
+ * @property string|null $BackupVaultArn
+ * @property string|null $BackupVaultName
+ * @property AwsBackupRecoveryPointCalculatedLifecycleDetails|null $CalculatedLifecycle
+ * @property string|null $CompletionDate
+ * @property AwsBackupRecoveryPointCreatedByDetails|null $CreatedBy
+ * @property string|null $CreationDate
+ * @property string|null $EncryptionKeyArn
+ * @property string|null $IamRoleArn
+ * @property bool|null $IsEncrypted
+ * @property string|null $LastRestoreTime
+ * @property AwsBackupRecoveryPointLifecycleDetails|null $Lifecycle
+ * @property string|null $RecoveryPointArn
+ * @property string|null $ResourceArn
+ * @property string|null $ResourceType
+ * @property string|null $SourceBackupVaultArn
+ * @property string|null $Status
+ * @property string|null $StatusMessage
+ * @property string|null $StorageClass
  */
 class AwsBackupRecoveryPointDetails extends Shape
 {
     /**
      * @param array{
-     *     BackupSizeInBytes?: int,
-     *     BackupVaultArn?: string,
-     *     BackupVaultName?: string,
-     *     CalculatedLifecycle?: AwsBackupRecoveryPointCalculatedLifecycleDetails,
-     *     CompletionDate?: string,
-     *     CreatedBy?: AwsBackupRecoveryPointCreatedByDetails,
-     *     CreationDate?: string,
-     *     EncryptionKeyArn?: string,
-     *     IamRoleArn?: string,
-     *     IsEncrypted?: bool,
-     *     LastRestoreTime?: string,
-     *     Lifecycle?: AwsBackupRecoveryPointLifecycleDetails,
-     *     RecoveryPointArn?: string,
-     *     ResourceArn?: string,
-     *     ResourceType?: string,
-     *     SourceBackupVaultArn?: string,
-     *     Status?: string,
-     *     StatusMessage?: string,
-     *     StorageClass?: string
+     *     BackupSizeInBytes?: int|null,
+     *     BackupVaultArn?: string|null,
+     *     BackupVaultName?: string|null,
+     *     CalculatedLifecycle?: AwsBackupRecoveryPointCalculatedLifecycleDetails|null,
+     *     CompletionDate?: string|null,
+     *     CreatedBy?: AwsBackupRecoveryPointCreatedByDetails|null,
+     *     CreationDate?: string|null,
+     *     EncryptionKeyArn?: string|null,
+     *     IamRoleArn?: string|null,
+     *     IsEncrypted?: bool|null,
+     *     LastRestoreTime?: string|null,
+     *     Lifecycle?: AwsBackupRecoveryPointLifecycleDetails|null,
+     *     RecoveryPointArn?: string|null,
+     *     ResourceArn?: string|null,
+     *     ResourceType?: string|null,
+     *     SourceBackupVaultArn?: string|null,
+     *     Status?: string|null,
+     *     StatusMessage?: string|null,
+     *     StorageClass?: string|null
      * } $args
      */
     public function __construct(array $args = [])

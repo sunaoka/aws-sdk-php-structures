@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MQ\DescribeUser\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ConsoleAccess
- * @property list<string> $Groups
+ * @property bool|null $ConsoleAccess
+ * @property list<string>|null $Groups
  * @property 'CREATE'|'UPDATE'|'DELETE' $PendingChange
  */
 class UserPendingChanges extends Shape
 {
     /**
      * @param array{
-     *     ConsoleAccess?: bool,
-     *     Groups?: list<string>,
+     *     ConsoleAccess?: bool|null,
+     *     Groups?: list<string>|null,
      *     PendingChange: 'CREATE'|'UPDATE'|'DELETE'
      * } $args
      */

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetAggregateConfigRuleComplianceS
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GroupByKey
- * @property list<Shapes\AggregateComplianceCount> $AggregateComplianceCounts
- * @property string $NextToken
+ * @property string|null $GroupByKey
+ * @property list<Shapes\AggregateComplianceCount>|null $AggregateComplianceCounts
+ * @property string|null $NextToken
  */
 class GetAggregateConfigRuleComplianceSummaryResponse extends Response
 {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\ListApplicationOperations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Operation
- * @property string $OperationId
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED' $OperationStatus
+ * @property string|null $Operation
+ * @property string|null $OperationId
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED'|null $OperationStatus
  */
 class ApplicationOperationInfo extends Shape
 {
     /**
      * @param array{
-     *     Operation?: string,
-     *     OperationId?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     OperationStatus?: 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED'
+     *     Operation?: string|null,
+     *     OperationId?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     OperationStatus?: 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

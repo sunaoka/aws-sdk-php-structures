@@ -10,12 +10,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $contentType
  * @property string $knowledgeBaseArn
  * @property string $knowledgeBaseId
- * @property string $linkOutUri
+ * @property string|null $linkOutUri
  * @property array<string, string> $metadata
  * @property string $name
  * @property string $revisionId
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_FAILED' $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $title
  * @property string $url
  * @property \Aws\Api\DateTimeResult $urlExpiry
@@ -29,12 +29,12 @@ class ContentData extends Shape
      *     contentType: string,
      *     knowledgeBaseArn: string,
      *     knowledgeBaseId: string,
-     *     linkOutUri?: string,
+     *     linkOutUri?: string|null,
      *     metadata: array<string, string>,
      *     name: string,
      *     revisionId: string,
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|'UPDATE_FAILED',
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     title: string,
      *     url: string,
      *     urlExpiry: \Aws\Api\DateTimeResult

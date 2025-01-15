@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property 'OWNED'|'ENTITLED' $SourceType
  * @property 'STANDBY'|'ACTIVE'|'UPDATING'|'DELETING'|'STARTING'|'STOPPING'|'ERROR' $Status
- * @property Maintenance $Maintenance
+ * @property Maintenance|null $Maintenance
  */
 class ListedFlow extends Shape
 {
@@ -23,7 +23,7 @@ class ListedFlow extends Shape
      *     Name: string,
      *     SourceType: 'OWNED'|'ENTITLED',
      *     Status: 'STANDBY'|'ACTIVE'|'UPDATING'|'DELETING'|'STARTING'|'STOPPING'|'ERROR',
-     *     Maintenance?: Maintenance
+     *     Maintenance?: Maintenance|null
      * } $args
      */
     public function __construct(array $args)

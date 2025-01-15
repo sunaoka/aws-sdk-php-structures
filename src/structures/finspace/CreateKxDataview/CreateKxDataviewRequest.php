@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $databaseName
  * @property string $dataviewName
  * @property 'SINGLE'|'MULTI' $azMode
- * @property string $availabilityZoneId
- * @property string $changesetId
- * @property list<Shapes\KxDataviewSegmentConfiguration> $segmentConfigurations
- * @property bool $autoUpdate
- * @property bool $readWrite
- * @property string $description
- * @property array<string, string> $tags
+ * @property string|null $availabilityZoneId
+ * @property string|null $changesetId
+ * @property list<Shapes\KxDataviewSegmentConfiguration>|null $segmentConfigurations
+ * @property bool|null $autoUpdate
+ * @property bool|null $readWrite
+ * @property string|null $description
+ * @property array<string, string>|null $tags
  * @property string $clientToken
  */
 class CreateKxDataviewRequest extends Request
@@ -26,13 +26,13 @@ class CreateKxDataviewRequest extends Request
      *     databaseName: string,
      *     dataviewName: string,
      *     azMode: 'SINGLE'|'MULTI',
-     *     availabilityZoneId?: string,
-     *     changesetId?: string,
-     *     segmentConfigurations?: list<Shapes\KxDataviewSegmentConfiguration>,
-     *     autoUpdate?: bool,
-     *     readWrite?: bool,
-     *     description?: string,
-     *     tags?: array<string, string>,
+     *     availabilityZoneId?: string|null,
+     *     changesetId?: string|null,
+     *     segmentConfigurations?: list<Shapes\KxDataviewSegmentConfiguration>|null,
+     *     autoUpdate?: bool|null,
+     *     readWrite?: bool|null,
+     *     description?: string|null,
+     *     tags?: array<string, string>|null,
      *     clientToken: string
      * } $args
      */

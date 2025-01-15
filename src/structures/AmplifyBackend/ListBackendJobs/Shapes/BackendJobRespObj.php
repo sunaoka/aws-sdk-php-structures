@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $AppId
  * @property string $BackendEnvironmentName
- * @property string $CreateTime
- * @property string $Error
- * @property string $JobId
- * @property string $Operation
- * @property string $Status
- * @property string $UpdateTime
+ * @property string|null $CreateTime
+ * @property string|null $Error
+ * @property string|null $JobId
+ * @property string|null $Operation
+ * @property string|null $Status
+ * @property string|null $UpdateTime
  */
 class BackendJobRespObj extends Shape
 {
@@ -20,12 +20,12 @@ class BackendJobRespObj extends Shape
      * @param array{
      *     AppId: string,
      *     BackendEnvironmentName: string,
-     *     CreateTime?: string,
-     *     Error?: string,
-     *     JobId?: string,
-     *     Operation?: string,
-     *     Status?: string,
-     *     UpdateTime?: string
+     *     CreateTime?: string|null,
+     *     Error?: string|null,
+     *     JobId?: string|null,
+     *     Operation?: string|null,
+     *     Status?: string|null,
+     *     UpdateTime?: string|null
      * } $args
      */
     public function __construct(array $args)

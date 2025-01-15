@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualGatewayTlsValidationContextAcmTrust $acm
- * @property VirtualGatewayTlsValidationContextFileTrust $file
- * @property VirtualGatewayTlsValidationContextSdsTrust $sds
+ * @property VirtualGatewayTlsValidationContextAcmTrust|null $acm
+ * @property VirtualGatewayTlsValidationContextFileTrust|null $file
+ * @property VirtualGatewayTlsValidationContextSdsTrust|null $sds
  */
 class VirtualGatewayTlsValidationContextTrust extends Shape
 {
     /**
      * @param array{
-     *     acm?: VirtualGatewayTlsValidationContextAcmTrust,
-     *     file?: VirtualGatewayTlsValidationContextFileTrust,
-     *     sds?: VirtualGatewayTlsValidationContextSdsTrust
+     *     acm?: VirtualGatewayTlsValidationContextAcmTrust|null,
+     *     file?: VirtualGatewayTlsValidationContextFileTrust|null,
+     *     sds?: VirtualGatewayTlsValidationContextSdsTrust|null
      * } $args
      */
     public function __construct(array $args = [])

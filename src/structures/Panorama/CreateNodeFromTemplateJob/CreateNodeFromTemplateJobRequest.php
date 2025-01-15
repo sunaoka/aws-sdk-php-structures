@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Panorama\CreateNodeFromTemplateJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\JobResourceTags> $JobTags
- * @property string $NodeDescription
+ * @property list<Shapes\JobResourceTags>|null $JobTags
+ * @property string|null $NodeDescription
  * @property string $NodeName
  * @property string $OutputPackageName
  * @property string $OutputPackageVersion
@@ -17,8 +17,8 @@ class CreateNodeFromTemplateJobRequest extends Request
 {
     /**
      * @param array{
-     *     JobTags?: list<Shapes\JobResourceTags>,
-     *     NodeDescription?: string,
+     *     JobTags?: list<Shapes\JobResourceTags>|null,
+     *     NodeDescription?: string|null,
      *     NodeName: string,
      *     OutputPackageName: string,
      *     OutputPackageVersion: string,

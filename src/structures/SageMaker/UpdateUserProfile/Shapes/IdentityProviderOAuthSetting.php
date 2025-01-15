@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateUserProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SalesforceGenie'|'Snowflake' $DataSourceName
- * @property 'ENABLED'|'DISABLED' $Status
- * @property string $SecretArn
+ * @property 'SalesforceGenie'|'Snowflake'|null $DataSourceName
+ * @property 'ENABLED'|'DISABLED'|null $Status
+ * @property string|null $SecretArn
  */
 class IdentityProviderOAuthSetting extends Shape
 {
     /**
      * @param array{
-     *     DataSourceName?: 'SalesforceGenie'|'Snowflake',
-     *     Status?: 'ENABLED'|'DISABLED',
-     *     SecretArn?: string
+     *     DataSourceName?: 'SalesforceGenie'|'Snowflake'|null,
+     *     Status?: 'ENABLED'|'DISABLED'|null,
+     *     SecretArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

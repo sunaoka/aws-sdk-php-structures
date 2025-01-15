@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IdcInstanceArn
  * @property string $RedshiftIdcApplicationName
- * @property string $IdentityNamespace
+ * @property string|null $IdentityNamespace
  * @property string $IdcDisplayName
  * @property string $IamRoleArn
- * @property list<Shapes\AuthorizedTokenIssuer> $AuthorizedTokenIssuerList
- * @property list<Shapes\ServiceIntegrationsUnion> $ServiceIntegrations
+ * @property list<Shapes\AuthorizedTokenIssuer>|null $AuthorizedTokenIssuerList
+ * @property list<Shapes\ServiceIntegrationsUnion>|null $ServiceIntegrations
  */
 class CreateRedshiftIdcApplicationRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateRedshiftIdcApplicationRequest extends Request
      * @param array{
      *     IdcInstanceArn: string,
      *     RedshiftIdcApplicationName: string,
-     *     IdentityNamespace?: string,
+     *     IdentityNamespace?: string|null,
      *     IdcDisplayName: string,
      *     IamRoleArn: string,
-     *     AuthorizedTokenIssuerList?: list<Shapes\AuthorizedTokenIssuer>,
-     *     ServiceIntegrations?: list<Shapes\ServiceIntegrationsUnion>
+     *     AuthorizedTokenIssuerList?: list<Shapes\AuthorizedTokenIssuer>|null,
+     *     ServiceIntegrations?: list<Shapes\ServiceIntegrationsUnion>|null
      * } $args
      */
     public function __construct(array $args)

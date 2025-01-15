@@ -7,18 +7,18 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $TeamId
  * @property string $SecretArn
- * @property DataSourceVpcConfiguration $VpcConfiguration
+ * @property DataSourceVpcConfiguration|null $VpcConfiguration
  * @property list<'PUBLIC_CHANNEL'|'PRIVATE_CHANNEL'|'GROUP_MESSAGE'|'DIRECT_MESSAGE'> $SlackEntityList
- * @property bool $UseChangeLog
- * @property bool $CrawlBotMessage
- * @property bool $ExcludeArchived
+ * @property bool|null $UseChangeLog
+ * @property bool|null $CrawlBotMessage
+ * @property bool|null $ExcludeArchived
  * @property string $SinceCrawlDate
- * @property int<0, 168> $LookBackPeriod
- * @property list<string> $PrivateChannelFilter
- * @property list<string> $PublicChannelFilter
- * @property list<string> $InclusionPatterns
- * @property list<string> $ExclusionPatterns
- * @property list<DataSourceToIndexFieldMapping> $FieldMappings
+ * @property int<0, 168>|null $LookBackPeriod
+ * @property list<string>|null $PrivateChannelFilter
+ * @property list<string>|null $PublicChannelFilter
+ * @property list<string>|null $InclusionPatterns
+ * @property list<string>|null $ExclusionPatterns
+ * @property list<DataSourceToIndexFieldMapping>|null $FieldMappings
  */
 class SlackConfiguration extends Shape
 {
@@ -26,18 +26,18 @@ class SlackConfiguration extends Shape
      * @param array{
      *     TeamId: string,
      *     SecretArn: string,
-     *     VpcConfiguration?: DataSourceVpcConfiguration,
+     *     VpcConfiguration?: DataSourceVpcConfiguration|null,
      *     SlackEntityList: list<'PUBLIC_CHANNEL'|'PRIVATE_CHANNEL'|'GROUP_MESSAGE'|'DIRECT_MESSAGE'>,
-     *     UseChangeLog?: bool,
-     *     CrawlBotMessage?: bool,
-     *     ExcludeArchived?: bool,
+     *     UseChangeLog?: bool|null,
+     *     CrawlBotMessage?: bool|null,
+     *     ExcludeArchived?: bool|null,
      *     SinceCrawlDate: string,
-     *     LookBackPeriod?: int<0, 168>,
-     *     PrivateChannelFilter?: list<string>,
-     *     PublicChannelFilter?: list<string>,
-     *     InclusionPatterns?: list<string>,
-     *     ExclusionPatterns?: list<string>,
-     *     FieldMappings?: list<DataSourceToIndexFieldMapping>
+     *     LookBackPeriod?: int<0, 168>|null,
+     *     PrivateChannelFilter?: list<string>|null,
+     *     PublicChannelFilter?: list<string>|null,
+     *     InclusionPatterns?: list<string>|null,
+     *     ExclusionPatterns?: list<string>|null,
+     *     FieldMappings?: list<DataSourceToIndexFieldMapping>|null
      * } $args
      */
     public function __construct(array $args)

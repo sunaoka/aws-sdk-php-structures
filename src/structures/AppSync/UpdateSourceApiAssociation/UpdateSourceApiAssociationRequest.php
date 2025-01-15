@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $associationId
  * @property string $mergedApiIdentifier
- * @property string $description
- * @property Shapes\SourceApiAssociationConfig $sourceApiAssociationConfig
+ * @property string|null $description
+ * @property Shapes\SourceApiAssociationConfig|null $sourceApiAssociationConfig
  */
 class UpdateSourceApiAssociationRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateSourceApiAssociationRequest extends Request
      * @param array{
      *     associationId: string,
      *     mergedApiIdentifier: string,
-     *     description?: string,
-     *     sourceApiAssociationConfig?: Shapes\SourceApiAssociationConfig
+     *     description?: string|null,
+     *     sourceApiAssociationConfig?: Shapes\SourceApiAssociationConfig|null
      * } $args
      */
     public function __construct(array $args)

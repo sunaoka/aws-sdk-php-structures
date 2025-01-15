@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HlsId3SegmentTaggingScheduleActionSettings $HlsId3SegmentTaggingSettings
- * @property HlsTimedMetadataScheduleActionSettings $HlsTimedMetadataSettings
- * @property InputPrepareScheduleActionSettings $InputPrepareSettings
- * @property InputSwitchScheduleActionSettings $InputSwitchSettings
- * @property MotionGraphicsActivateScheduleActionSettings $MotionGraphicsImageActivateSettings
- * @property MotionGraphicsDeactivateScheduleActionSettings $MotionGraphicsImageDeactivateSettings
- * @property PauseStateScheduleActionSettings $PauseStateSettings
- * @property Scte35InputScheduleActionSettings $Scte35InputSettings
- * @property Scte35ReturnToNetworkScheduleActionSettings $Scte35ReturnToNetworkSettings
- * @property Scte35SpliceInsertScheduleActionSettings $Scte35SpliceInsertSettings
- * @property Scte35TimeSignalScheduleActionSettings $Scte35TimeSignalSettings
- * @property StaticImageActivateScheduleActionSettings $StaticImageActivateSettings
- * @property StaticImageDeactivateScheduleActionSettings $StaticImageDeactivateSettings
- * @property StaticImageOutputActivateScheduleActionSettings $StaticImageOutputActivateSettings
- * @property StaticImageOutputDeactivateScheduleActionSettings $StaticImageOutputDeactivateSettings
+ * @property HlsId3SegmentTaggingScheduleActionSettings|null $HlsId3SegmentTaggingSettings
+ * @property HlsTimedMetadataScheduleActionSettings|null $HlsTimedMetadataSettings
+ * @property InputPrepareScheduleActionSettings|null $InputPrepareSettings
+ * @property InputSwitchScheduleActionSettings|null $InputSwitchSettings
+ * @property MotionGraphicsActivateScheduleActionSettings|null $MotionGraphicsImageActivateSettings
+ * @property MotionGraphicsDeactivateScheduleActionSettings|null $MotionGraphicsImageDeactivateSettings
+ * @property PauseStateScheduleActionSettings|null $PauseStateSettings
+ * @property Scte35InputScheduleActionSettings|null $Scte35InputSettings
+ * @property Scte35ReturnToNetworkScheduleActionSettings|null $Scte35ReturnToNetworkSettings
+ * @property Scte35SpliceInsertScheduleActionSettings|null $Scte35SpliceInsertSettings
+ * @property Scte35TimeSignalScheduleActionSettings|null $Scte35TimeSignalSettings
+ * @property StaticImageActivateScheduleActionSettings|null $StaticImageActivateSettings
+ * @property StaticImageDeactivateScheduleActionSettings|null $StaticImageDeactivateSettings
+ * @property StaticImageOutputActivateScheduleActionSettings|null $StaticImageOutputActivateSettings
+ * @property StaticImageOutputDeactivateScheduleActionSettings|null $StaticImageOutputDeactivateSettings
  */
 class ScheduleActionSettings extends Shape
 {
     /**
      * @param array{
-     *     HlsId3SegmentTaggingSettings?: HlsId3SegmentTaggingScheduleActionSettings,
-     *     HlsTimedMetadataSettings?: HlsTimedMetadataScheduleActionSettings,
-     *     InputPrepareSettings?: InputPrepareScheduleActionSettings,
-     *     InputSwitchSettings?: InputSwitchScheduleActionSettings,
-     *     MotionGraphicsImageActivateSettings?: MotionGraphicsActivateScheduleActionSettings,
-     *     MotionGraphicsImageDeactivateSettings?: MotionGraphicsDeactivateScheduleActionSettings,
-     *     PauseStateSettings?: PauseStateScheduleActionSettings,
-     *     Scte35InputSettings?: Scte35InputScheduleActionSettings,
-     *     Scte35ReturnToNetworkSettings?: Scte35ReturnToNetworkScheduleActionSettings,
-     *     Scte35SpliceInsertSettings?: Scte35SpliceInsertScheduleActionSettings,
-     *     Scte35TimeSignalSettings?: Scte35TimeSignalScheduleActionSettings,
-     *     StaticImageActivateSettings?: StaticImageActivateScheduleActionSettings,
-     *     StaticImageDeactivateSettings?: StaticImageDeactivateScheduleActionSettings,
-     *     StaticImageOutputActivateSettings?: StaticImageOutputActivateScheduleActionSettings,
-     *     StaticImageOutputDeactivateSettings?: StaticImageOutputDeactivateScheduleActionSettings
+     *     HlsId3SegmentTaggingSettings?: HlsId3SegmentTaggingScheduleActionSettings|null,
+     *     HlsTimedMetadataSettings?: HlsTimedMetadataScheduleActionSettings|null,
+     *     InputPrepareSettings?: InputPrepareScheduleActionSettings|null,
+     *     InputSwitchSettings?: InputSwitchScheduleActionSettings|null,
+     *     MotionGraphicsImageActivateSettings?: MotionGraphicsActivateScheduleActionSettings|null,
+     *     MotionGraphicsImageDeactivateSettings?: MotionGraphicsDeactivateScheduleActionSettings|null,
+     *     PauseStateSettings?: PauseStateScheduleActionSettings|null,
+     *     Scte35InputSettings?: Scte35InputScheduleActionSettings|null,
+     *     Scte35ReturnToNetworkSettings?: Scte35ReturnToNetworkScheduleActionSettings|null,
+     *     Scte35SpliceInsertSettings?: Scte35SpliceInsertScheduleActionSettings|null,
+     *     Scte35TimeSignalSettings?: Scte35TimeSignalScheduleActionSettings|null,
+     *     StaticImageActivateSettings?: StaticImageActivateScheduleActionSettings|null,
+     *     StaticImageDeactivateSettings?: StaticImageDeactivateScheduleActionSettings|null,
+     *     StaticImageOutputActivateSettings?: StaticImageOutputActivateScheduleActionSettings|null,
+     *     StaticImageOutputDeactivateSettings?: StaticImageOutputDeactivateScheduleActionSettings|null
      * } $args
      */
     public function __construct(array $args = [])

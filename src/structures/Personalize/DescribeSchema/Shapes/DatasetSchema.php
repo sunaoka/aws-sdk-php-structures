@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeSchema\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $schemaArn
- * @property string $schema
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND' $domain
+ * @property string|null $name
+ * @property string|null $schemaArn
+ * @property string|null $schema
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null $domain
  */
 class DatasetSchema extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     schemaArn?: string,
-     *     schema?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'
+     *     name?: string|null,
+     *     schemaArn?: string|null,
+     *     schema?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null
      * } $args
      */
     public function __construct(array $args = [])

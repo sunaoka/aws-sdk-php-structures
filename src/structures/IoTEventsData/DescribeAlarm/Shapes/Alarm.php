@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\IoTEventsData\DescribeAlarm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $alarmModelName
- * @property string $alarmModelVersion
- * @property string $keyValue
- * @property AlarmState $alarmState
- * @property int<0, 2147483647> $severity
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
+ * @property string|null $alarmModelName
+ * @property string|null $alarmModelVersion
+ * @property string|null $keyValue
+ * @property AlarmState|null $alarmState
+ * @property int<0, 2147483647>|null $severity
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
  */
 class Alarm extends Shape
 {
     /**
      * @param array{
-     *     alarmModelName?: string,
-     *     alarmModelVersion?: string,
-     *     keyValue?: string,
-     *     alarmState?: AlarmState,
-     *     severity?: int<0, 2147483647>,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult
+     *     alarmModelName?: string|null,
+     *     alarmModelVersion?: string|null,
+     *     keyValue?: string|null,
+     *     alarmState?: AlarmState|null,
+     *     severity?: int<0, 2147483647>|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

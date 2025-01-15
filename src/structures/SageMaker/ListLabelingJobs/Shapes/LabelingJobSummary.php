@@ -12,11 +12,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Initializing'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $LabelingJobStatus
  * @property LabelCounters $LabelCounters
  * @property string $WorkteamArn
- * @property string $PreHumanTaskLambdaArn
- * @property string $AnnotationConsolidationLambdaArn
- * @property string $FailureReason
- * @property LabelingJobOutput $LabelingJobOutput
- * @property LabelingJobInputConfig $InputConfig
+ * @property string|null $PreHumanTaskLambdaArn
+ * @property string|null $AnnotationConsolidationLambdaArn
+ * @property string|null $FailureReason
+ * @property LabelingJobOutput|null $LabelingJobOutput
+ * @property LabelingJobInputConfig|null $InputConfig
  */
 class LabelingJobSummary extends Shape
 {
@@ -29,11 +29,11 @@ class LabelingJobSummary extends Shape
      *     LabelingJobStatus: 'Initializing'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
      *     LabelCounters: LabelCounters,
      *     WorkteamArn: string,
-     *     PreHumanTaskLambdaArn?: string,
-     *     AnnotationConsolidationLambdaArn?: string,
-     *     FailureReason?: string,
-     *     LabelingJobOutput?: LabelingJobOutput,
-     *     InputConfig?: LabelingJobInputConfig
+     *     PreHumanTaskLambdaArn?: string|null,
+     *     AnnotationConsolidationLambdaArn?: string|null,
+     *     FailureReason?: string|null,
+     *     LabelingJobOutput?: LabelingJobOutput|null,
+     *     InputConfig?: LabelingJobInputConfig|null
      * } $args
      */
     public function __construct(array $args)

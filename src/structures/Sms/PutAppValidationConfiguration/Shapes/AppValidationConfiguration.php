@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Sms\PutAppValidationConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $validationId
- * @property string $name
- * @property 'SSM' $appValidationStrategy
- * @property SSMValidationParameters $ssmValidationParameters
+ * @property string|null $validationId
+ * @property string|null $name
+ * @property 'SSM'|null $appValidationStrategy
+ * @property SSMValidationParameters|null $ssmValidationParameters
  */
 class AppValidationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     validationId?: string,
-     *     name?: string,
-     *     appValidationStrategy?: 'SSM',
-     *     ssmValidationParameters?: SSMValidationParameters
+     *     validationId?: string|null,
+     *     name?: string|null,
+     *     appValidationStrategy?: 'SSM'|null,
+     *     ssmValidationParameters?: SSMValidationParameters|null
      * } $args
      */
     public function __construct(array $args = [])

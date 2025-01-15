@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $jobId
  * @property string $thingName
- * @property bool $includeJobDocument
- * @property int $executionNumber
+ * @property bool|null $includeJobDocument
+ * @property int|null $executionNumber
  */
 class DescribeJobExecutionRequest extends Request
 {
@@ -16,8 +16,8 @@ class DescribeJobExecutionRequest extends Request
      * @param array{
      *     jobId: string,
      *     thingName: string,
-     *     includeJobDocument?: bool,
-     *     executionNumber?: int
+     *     includeJobDocument?: bool|null,
+     *     executionNumber?: int|null
      * } $args
      */
     public function __construct(array $args)

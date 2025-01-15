@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $NewContactIds
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $IdempotencyToken
+ * @property string|null $IdempotencyToken
  */
 class CreateRotationOverrideRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateRotationOverrideRequest extends Request
      *     NewContactIds: list<string>,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
-     *     IdempotencyToken?: string
+     *     IdempotencyToken?: string|null
      * } $args
      */
     public function __construct(array $args)

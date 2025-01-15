@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $outputPath
  * @property string $eventTypeName
  * @property string $detectorName
- * @property string $detectorVersion
+ * @property string|null $detectorVersion
  * @property string $iamRoleArn
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateBatchPredictionJobRequest extends Request
 {
@@ -23,9 +23,9 @@ class CreateBatchPredictionJobRequest extends Request
      *     outputPath: string,
      *     eventTypeName: string,
      *     detectorName: string,
-     *     detectorVersion?: string,
+     *     detectorVersion?: string|null,
      *     iamRoleArn: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

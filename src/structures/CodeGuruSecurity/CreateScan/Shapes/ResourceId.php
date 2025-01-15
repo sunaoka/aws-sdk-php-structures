@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\CreateScan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $codeArtifactId
+ * @property string|null $codeArtifactId
  */
 class ResourceId extends Shape
 {
     /**
-     * @param array{codeArtifactId?: string} $args
+     * @param array{codeArtifactId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

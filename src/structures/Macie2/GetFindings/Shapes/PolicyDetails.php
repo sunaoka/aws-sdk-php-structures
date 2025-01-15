@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FindingAction $action
- * @property FindingActor $actor
+ * @property FindingAction|null $action
+ * @property FindingActor|null $actor
  */
 class PolicyDetails extends Shape
 {
     /**
      * @param array{
-     *     action?: FindingAction,
-     *     actor?: FindingActor
+     *     action?: FindingAction|null,
+     *     actor?: FindingActor|null
      * } $args
      */
     public function __construct(array $args = [])

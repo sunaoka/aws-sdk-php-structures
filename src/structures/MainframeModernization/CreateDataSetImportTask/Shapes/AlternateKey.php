@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateDataSetImportTask\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $allowDuplicates
+ * @property bool|null $allowDuplicates
  * @property int $length
- * @property string $name
+ * @property string|null $name
  * @property int $offset
  */
 class AlternateKey extends Shape
 {
     /**
      * @param array{
-     *     allowDuplicates?: bool,
+     *     allowDuplicates?: bool|null,
      *     length: int,
-     *     name?: string,
+     *     name?: string|null,
      *     offset: int
      * } $args
      */

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $jobId
- * @property bool $force
- * @property string $namespaceId
+ * @property bool|null $force
+ * @property string|null $namespaceId
  */
 class DeleteJobRequest extends Request
 {
     /**
      * @param array{
      *     jobId: string,
-     *     force?: bool,
-     *     namespaceId?: string
+     *     force?: bool|null,
+     *     namespaceId?: string|null
      * } $args
      */
     public function __construct(array $args)

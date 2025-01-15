@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\VPCLattice\ListRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $id
- * @property bool $isDefault
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property string $name
- * @property int<1, 100> $priority
+ * @property string|null $arn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $id
+ * @property bool|null $isDefault
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $name
+ * @property int<1, 100>|null $priority
  */
 class RuleSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     id?: string,
-     *     isDefault?: bool,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     name?: string,
-     *     priority?: int<1, 100>
+     *     arn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     id?: string|null,
+     *     isDefault?: bool|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     name?: string|null,
+     *     priority?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

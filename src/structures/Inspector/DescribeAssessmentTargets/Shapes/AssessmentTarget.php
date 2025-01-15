@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property string $name
- * @property string $resourceGroupArn
+ * @property string|null $resourceGroupArn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
@@ -17,7 +17,7 @@ class AssessmentTarget extends Shape
      * @param array{
      *     arn: string,
      *     name: string,
-     *     resourceGroupArn?: string,
+     *     resourceGroupArn?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args

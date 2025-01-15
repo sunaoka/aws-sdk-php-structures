@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ChannelArn
  * @property string $MessageId
- * @property string $Content
- * @property string $Metadata
- * @property string $ChimeBearer
+ * @property string|null $Content
+ * @property string|null $Metadata
+ * @property string|null $ChimeBearer
  */
 class UpdateChannelMessageRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateChannelMessageRequest extends Request
      * @param array{
      *     ChannelArn: string,
      *     MessageId: string,
-     *     Content?: string,
-     *     Metadata?: string,
-     *     ChimeBearer?: string
+     *     Content?: string|null,
+     *     Metadata?: string|null,
+     *     ChimeBearer?: string|null
      * } $args
      */
     public function __construct(array $args)

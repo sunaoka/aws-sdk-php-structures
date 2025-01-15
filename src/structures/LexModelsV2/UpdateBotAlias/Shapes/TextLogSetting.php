@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $enabled
  * @property TextLogDestination $destination
- * @property bool $selectiveLoggingEnabled
+ * @property bool|null $selectiveLoggingEnabled
  */
 class TextLogSetting extends Shape
 {
@@ -15,7 +15,7 @@ class TextLogSetting extends Shape
      * @param array{
      *     enabled: bool,
      *     destination: TextLogDestination,
-     *     selectiveLoggingEnabled?: bool
+     *     selectiveLoggingEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

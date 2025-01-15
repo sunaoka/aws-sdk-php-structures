@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\RemoveTargets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetId
- * @property string $ErrorCode
- * @property string $ErrorMessage
+ * @property string|null $TargetId
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
  */
 class RemoveTargetsResultEntry extends Shape
 {
     /**
      * @param array{
-     *     TargetId?: string,
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string
+     *     TargetId?: string|null,
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

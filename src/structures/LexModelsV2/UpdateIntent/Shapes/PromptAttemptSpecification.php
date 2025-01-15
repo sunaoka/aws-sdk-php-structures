@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateIntent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $allowInterrupt
+ * @property bool|null $allowInterrupt
  * @property AllowedInputTypes $allowedInputTypes
- * @property AudioAndDTMFInputSpecification $audioAndDTMFInputSpecification
- * @property TextInputSpecification $textInputSpecification
+ * @property AudioAndDTMFInputSpecification|null $audioAndDTMFInputSpecification
+ * @property TextInputSpecification|null $textInputSpecification
  */
 class PromptAttemptSpecification extends Shape
 {
     /**
      * @param array{
-     *     allowInterrupt?: bool,
+     *     allowInterrupt?: bool|null,
      *     allowedInputTypes: AllowedInputTypes,
-     *     audioAndDTMFInputSpecification?: AudioAndDTMFInputSpecification,
-     *     textInputSpecification?: TextInputSpecification
+     *     audioAndDTMFInputSpecification?: AudioAndDTMFInputSpecification|null,
+     *     textInputSpecification?: TextInputSpecification|null
      * } $args
      */
     public function __construct(array $args)

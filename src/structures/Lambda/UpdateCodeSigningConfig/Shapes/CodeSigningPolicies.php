@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lambda\UpdateCodeSigningConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Warn'|'Enforce' $UntrustedArtifactOnDeployment
+ * @property 'Warn'|'Enforce'|null $UntrustedArtifactOnDeployment
  */
 class CodeSigningPolicies extends Shape
 {
     /**
-     * @param array{UntrustedArtifactOnDeployment?: 'Warn'|'Enforce'} $args
+     * @param array{UntrustedArtifactOnDeployment?: 'Warn'|'Enforce'|null} $args
      */
     public function __construct(array $args = [])
     {

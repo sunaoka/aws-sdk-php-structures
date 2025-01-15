@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Schemas\ExportSchema;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Content
- * @property string $SchemaArn
- * @property string $SchemaName
- * @property string $SchemaVersion
- * @property string $Type
+ * @property string|null $Content
+ * @property string|null $SchemaArn
+ * @property string|null $SchemaName
+ * @property string|null $SchemaVersion
+ * @property string|null $Type
  */
 class ExportSchemaResponse extends Response
 {

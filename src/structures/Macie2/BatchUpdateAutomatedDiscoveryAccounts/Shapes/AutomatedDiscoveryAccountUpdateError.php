@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\BatchUpdateAutomatedDiscoveryAccounts\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property 'ACCOUNT_PAUSED'|'ACCOUNT_NOT_FOUND' $errorCode
+ * @property string|null $accountId
+ * @property 'ACCOUNT_PAUSED'|'ACCOUNT_NOT_FOUND'|null $errorCode
  */
 class AutomatedDiscoveryAccountUpdateError extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     errorCode?: 'ACCOUNT_PAUSED'|'ACCOUNT_NOT_FOUND'
+     *     accountId?: string|null,
+     *     errorCode?: 'ACCOUNT_PAUSED'|'ACCOUNT_NOT_FOUND'|null
      * } $args
      */
     public function __construct(array $args = [])

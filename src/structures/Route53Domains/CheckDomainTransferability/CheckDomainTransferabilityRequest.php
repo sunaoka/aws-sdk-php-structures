@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $AuthCode
+ * @property string|null $AuthCode
  */
 class CheckDomainTransferabilityRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     AuthCode?: string
+     *     AuthCode?: string|null
      * } $args
      */
     public function __construct(array $args)

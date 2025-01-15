@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateReplicationConfi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ReplicationConfig $ReplicationConfig
+ * @property Shapes\ReplicationConfig|null $ReplicationConfig
  */
 class CreateReplicationConfigResponse extends Response
 {

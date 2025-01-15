@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\Regex> $RegularExpressionList
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateRegexPatternSetRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateRegexPatternSetRequest extends Request
      * @param array{
      *     Name: string,
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
-     *     Description?: string,
+     *     Description?: string|null,
      *     RegularExpressionList: list<Shapes\Regex>,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,14 +9,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $assistantId
  * @property string $blockedInputMessaging
  * @property string $blockedOutputsMessaging
- * @property string $clientToken
- * @property Shapes\AIGuardrailContentPolicyConfig $contentPolicyConfig
- * @property Shapes\AIGuardrailContextualGroundingPolicyConfig $contextualGroundingPolicyConfig
- * @property string $description
- * @property Shapes\AIGuardrailSensitiveInformationPolicyConfig $sensitiveInformationPolicyConfig
- * @property Shapes\AIGuardrailTopicPolicyConfig $topicPolicyConfig
+ * @property string|null $clientToken
+ * @property Shapes\AIGuardrailContentPolicyConfig|null $contentPolicyConfig
+ * @property Shapes\AIGuardrailContextualGroundingPolicyConfig|null $contextualGroundingPolicyConfig
+ * @property string|null $description
+ * @property Shapes\AIGuardrailSensitiveInformationPolicyConfig|null $sensitiveInformationPolicyConfig
+ * @property Shapes\AIGuardrailTopicPolicyConfig|null $topicPolicyConfig
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
- * @property Shapes\AIGuardrailWordPolicyConfig $wordPolicyConfig
+ * @property Shapes\AIGuardrailWordPolicyConfig|null $wordPolicyConfig
  */
 class UpdateAIGuardrailRequest extends Request
 {
@@ -26,14 +26,14 @@ class UpdateAIGuardrailRequest extends Request
      *     assistantId: string,
      *     blockedInputMessaging: string,
      *     blockedOutputsMessaging: string,
-     *     clientToken?: string,
-     *     contentPolicyConfig?: Shapes\AIGuardrailContentPolicyConfig,
-     *     contextualGroundingPolicyConfig?: Shapes\AIGuardrailContextualGroundingPolicyConfig,
-     *     description?: string,
-     *     sensitiveInformationPolicyConfig?: Shapes\AIGuardrailSensitiveInformationPolicyConfig,
-     *     topicPolicyConfig?: Shapes\AIGuardrailTopicPolicyConfig,
+     *     clientToken?: string|null,
+     *     contentPolicyConfig?: Shapes\AIGuardrailContentPolicyConfig|null,
+     *     contextualGroundingPolicyConfig?: Shapes\AIGuardrailContextualGroundingPolicyConfig|null,
+     *     description?: string|null,
+     *     sensitiveInformationPolicyConfig?: Shapes\AIGuardrailSensitiveInformationPolicyConfig|null,
+     *     topicPolicyConfig?: Shapes\AIGuardrailTopicPolicyConfig|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
-     *     wordPolicyConfig?: Shapes\AIGuardrailWordPolicyConfig
+     *     wordPolicyConfig?: Shapes\AIGuardrailWordPolicyConfig|null
      * } $args
      */
     public function __construct(array $args)

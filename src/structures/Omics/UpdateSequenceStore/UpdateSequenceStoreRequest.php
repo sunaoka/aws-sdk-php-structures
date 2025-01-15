@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property string $name
- * @property string $description
- * @property string $clientToken
- * @property string $fallbackLocation
- * @property list<string> $propagatedSetLevelTags
- * @property Shapes\S3AccessConfig $s3AccessConfig
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $clientToken
+ * @property string|null $fallbackLocation
+ * @property list<string>|null $propagatedSetLevelTags
+ * @property Shapes\S3AccessConfig|null $s3AccessConfig
  */
 class UpdateSequenceStoreRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     name?: string,
-     *     description?: string,
-     *     clientToken?: string,
-     *     fallbackLocation?: string,
-     *     propagatedSetLevelTags?: list<string>,
-     *     s3AccessConfig?: Shapes\S3AccessConfig
+     *     name?: string|null,
+     *     description?: string|null,
+     *     clientToken?: string|null,
+     *     fallbackLocation?: string|null,
+     *     propagatedSetLevelTags?: list<string>|null,
+     *     s3AccessConfig?: Shapes\S3AccessConfig|null
      * } $args
      */
     public function __construct(array $args)

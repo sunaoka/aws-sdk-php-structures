@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetLogDeliveryConfigura
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BucketArn
+ * @property string|null $BucketArn
  */
 class S3ConfigurationType extends Shape
 {
     /**
-     * @param array{BucketArn?: string} $args
+     * @param array{BucketArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

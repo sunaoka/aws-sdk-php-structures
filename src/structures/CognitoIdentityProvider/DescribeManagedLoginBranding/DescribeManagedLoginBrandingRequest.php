@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $UserPoolId
  * @property string $ManagedLoginBrandingId
- * @property bool $ReturnMergedResources
+ * @property bool|null $ReturnMergedResources
  */
 class DescribeManagedLoginBrandingRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeManagedLoginBrandingRequest extends Request
      * @param array{
      *     UserPoolId: string,
      *     ManagedLoginBrandingId: string,
-     *     ReturnMergedResources?: bool
+     *     ReturnMergedResources?: bool|null
      * } $args
      */
     public function __construct(array $args)

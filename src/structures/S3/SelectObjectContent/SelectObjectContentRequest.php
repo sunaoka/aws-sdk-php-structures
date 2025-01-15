@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property string $Key
- * @property string $SSECustomerAlgorithm
- * @property string $SSECustomerKey
- * @property string $SSECustomerKeyMD5
+ * @property string|null $SSECustomerAlgorithm
+ * @property string|null $SSECustomerKey
+ * @property string|null $SSECustomerKeyMD5
  * @property string $Expression
  * @property 'SQL' $ExpressionType
- * @property Shapes\RequestProgress $RequestProgress
+ * @property Shapes\RequestProgress|null $RequestProgress
  * @property Shapes\InputSerialization $InputSerialization
  * @property Shapes\OutputSerialization $OutputSerialization
- * @property Shapes\ScanRange $ScanRange
- * @property string $ExpectedBucketOwner
+ * @property Shapes\ScanRange|null $ScanRange
+ * @property string|null $ExpectedBucketOwner
  */
 class SelectObjectContentRequest extends Request
 {
@@ -24,16 +24,16 @@ class SelectObjectContentRequest extends Request
      * @param array{
      *     Bucket: string,
      *     Key: string,
-     *     SSECustomerAlgorithm?: string,
-     *     SSECustomerKey?: string,
-     *     SSECustomerKeyMD5?: string,
+     *     SSECustomerAlgorithm?: string|null,
+     *     SSECustomerKey?: string|null,
+     *     SSECustomerKeyMD5?: string|null,
      *     Expression: string,
      *     ExpressionType: 'SQL',
-     *     RequestProgress?: Shapes\RequestProgress,
+     *     RequestProgress?: Shapes\RequestProgress|null,
      *     InputSerialization: Shapes\InputSerialization,
      *     OutputSerialization: Shapes\OutputSerialization,
-     *     ScanRange?: Shapes\ScanRange,
-     *     ExpectedBucketOwner?: string
+     *     ScanRange?: Shapes\ScanRange|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

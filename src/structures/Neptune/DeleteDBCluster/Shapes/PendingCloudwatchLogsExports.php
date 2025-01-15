@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptune\DeleteDBCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $LogTypesToEnable
- * @property list<string> $LogTypesToDisable
+ * @property list<string>|null $LogTypesToEnable
+ * @property list<string>|null $LogTypesToDisable
  */
 class PendingCloudwatchLogsExports extends Shape
 {
     /**
      * @param array{
-     *     LogTypesToEnable?: list<string>,
-     *     LogTypesToDisable?: list<string>
+     *     LogTypesToEnable?: list<string>|null,
+     *     LogTypesToDisable?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

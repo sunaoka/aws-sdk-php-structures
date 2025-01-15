@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $policyStoreId
- * @property Shapes\EntityIdentifier $principal
- * @property Shapes\ActionIdentifier $action
- * @property Shapes\EntityIdentifier $resource
- * @property Shapes\ContextDefinition $context
- * @property Shapes\EntitiesDefinition $entities
+ * @property Shapes\EntityIdentifier|null $principal
+ * @property Shapes\ActionIdentifier|null $action
+ * @property Shapes\EntityIdentifier|null $resource
+ * @property Shapes\ContextDefinition|null $context
+ * @property Shapes\EntitiesDefinition|null $entities
  */
 class IsAuthorizedRequest extends Request
 {
     /**
      * @param array{
      *     policyStoreId: string,
-     *     principal?: Shapes\EntityIdentifier,
-     *     action?: Shapes\ActionIdentifier,
-     *     resource?: Shapes\EntityIdentifier,
-     *     context?: Shapes\ContextDefinition,
-     *     entities?: Shapes\EntitiesDefinition
+     *     principal?: Shapes\EntityIdentifier|null,
+     *     action?: Shapes\ActionIdentifier|null,
+     *     resource?: Shapes\EntityIdentifier|null,
+     *     context?: Shapes\ContextDefinition|null,
+     *     entities?: Shapes\EntitiesDefinition|null
      * } $args
      */
     public function __construct(array $args)

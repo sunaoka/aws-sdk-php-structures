@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Rds\FailoverGlobalCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBClusterArn
- * @property list<string> $Readers
- * @property bool $IsWriter
- * @property 'enabled'|'disabled'|'enabling'|'disabling'|'unknown' $GlobalWriteForwardingStatus
- * @property 'connected'|'pending-resync' $SynchronizationStatus
+ * @property string|null $DBClusterArn
+ * @property list<string>|null $Readers
+ * @property bool|null $IsWriter
+ * @property 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null $GlobalWriteForwardingStatus
+ * @property 'connected'|'pending-resync'|null $SynchronizationStatus
  */
 class GlobalClusterMember extends Shape
 {
     /**
      * @param array{
-     *     DBClusterArn?: string,
-     *     Readers?: list<string>,
-     *     IsWriter?: bool,
-     *     GlobalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'unknown',
-     *     SynchronizationStatus?: 'connected'|'pending-resync'
+     *     DBClusterArn?: string|null,
+     *     Readers?: list<string>|null,
+     *     IsWriter?: bool|null,
+     *     GlobalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null,
+     *     SynchronizationStatus?: 'connected'|'pending-resync'|null
      * } $args
      */
     public function __construct(array $args = [])

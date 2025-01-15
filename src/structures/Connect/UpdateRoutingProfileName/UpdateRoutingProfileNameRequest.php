@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $RoutingProfileId
- * @property string $Name
- * @property string $Description
+ * @property string|null $Name
+ * @property string|null $Description
  */
 class UpdateRoutingProfileNameRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateRoutingProfileNameRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     RoutingProfileId: string,
-     *     Name?: string,
-     *     Description?: string
+     *     Name?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

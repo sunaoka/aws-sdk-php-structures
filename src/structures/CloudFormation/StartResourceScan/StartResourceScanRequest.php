@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudFormation\StartResourceScan;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class StartResourceScanRequest extends Request
 {
     /**
-     * @param array{ClientRequestToken?: string} $args
+     * @param array{ClientRequestToken?: string|null} $args
      */
     public function __construct(array $args = [])
     {

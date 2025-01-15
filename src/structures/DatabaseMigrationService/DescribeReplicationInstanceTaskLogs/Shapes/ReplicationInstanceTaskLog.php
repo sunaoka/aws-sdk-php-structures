@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationIns
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplicationTaskName
- * @property string $ReplicationTaskArn
- * @property int $ReplicationInstanceTaskLogSize
+ * @property string|null $ReplicationTaskName
+ * @property string|null $ReplicationTaskArn
+ * @property int|null $ReplicationInstanceTaskLogSize
  */
 class ReplicationInstanceTaskLog extends Shape
 {
     /**
      * @param array{
-     *     ReplicationTaskName?: string,
-     *     ReplicationTaskArn?: string,
-     *     ReplicationInstanceTaskLogSize?: int
+     *     ReplicationTaskName?: string|null,
+     *     ReplicationTaskArn?: string|null,
+     *     ReplicationInstanceTaskLogSize?: int|null
      * } $args
      */
     public function __construct(array $args = [])

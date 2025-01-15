@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3Uri
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  */
 class PiiOutputDataConfig extends Shape
 {
     /**
      * @param array{
      *     S3Uri: string,
-     *     KmsKeyId?: string
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

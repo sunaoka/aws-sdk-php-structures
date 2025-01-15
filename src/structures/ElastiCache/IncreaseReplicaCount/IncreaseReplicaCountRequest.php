@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationGroupId
- * @property int $NewReplicaCount
- * @property list<Shapes\ConfigureShard> $ReplicaConfiguration
+ * @property int|null $NewReplicaCount
+ * @property list<Shapes\ConfigureShard>|null $ReplicaConfiguration
  * @property bool $ApplyImmediately
  */
 class IncreaseReplicaCountRequest extends Request
@@ -15,8 +15,8 @@ class IncreaseReplicaCountRequest extends Request
     /**
      * @param array{
      *     ReplicationGroupId: string,
-     *     NewReplicaCount?: int,
-     *     ReplicaConfiguration?: list<Shapes\ConfigureShard>,
+     *     NewReplicaCount?: int|null,
+     *     ReplicaConfiguration?: list<Shapes\ConfigureShard>|null,
      *     ApplyImmediately: bool
      * } $args
      */

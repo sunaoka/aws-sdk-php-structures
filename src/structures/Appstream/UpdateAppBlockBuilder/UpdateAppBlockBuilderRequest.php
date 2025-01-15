@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property string $DisplayName
- * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8' $Platform
- * @property string $InstanceType
- * @property Shapes\VpcConfig $VpcConfig
- * @property bool $EnableDefaultInternetAccess
- * @property string $IamRoleArn
- * @property list<Shapes\AccessEndpoint> $AccessEndpoints
- * @property list<'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'VPC_CONFIGURATION_SECURITY_GROUP_IDS'> $AttributesToDelete
+ * @property string|null $Description
+ * @property string|null $DisplayName
+ * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|null $Platform
+ * @property string|null $InstanceType
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property bool|null $EnableDefaultInternetAccess
+ * @property string|null $IamRoleArn
+ * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
+ * @property list<'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'VPC_CONFIGURATION_SECURITY_GROUP_IDS'>|null $AttributesToDelete
  */
 class UpdateAppBlockBuilderRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     DisplayName?: string,
-     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8',
-     *     InstanceType?: string,
-     *     VpcConfig?: Shapes\VpcConfig,
-     *     EnableDefaultInternetAccess?: bool,
-     *     IamRoleArn?: string,
-     *     AccessEndpoints?: list<Shapes\AccessEndpoint>,
-     *     AttributesToDelete?: list<'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'VPC_CONFIGURATION_SECURITY_GROUP_IDS'>
+     *     Description?: string|null,
+     *     DisplayName?: string|null,
+     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|null,
+     *     InstanceType?: string|null,
+     *     VpcConfig?: Shapes\VpcConfig|null,
+     *     EnableDefaultInternetAccess?: bool|null,
+     *     IamRoleArn?: string|null,
+     *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
+     *     AttributesToDelete?: list<'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'VPC_CONFIGURATION_SECURITY_GROUP_IDS'>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingName
- * @property int $expectedVersion
+ * @property int|null $expectedVersion
  */
 class DeleteThingRequest extends Request
 {
     /**
      * @param array{
      *     thingName: string,
-     *     expectedVersion?: int
+     *     expectedVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

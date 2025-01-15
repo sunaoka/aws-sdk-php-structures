@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSecurityGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $GroupIds
- * @property list<string> $GroupNames
- * @property string $NextToken
- * @property int<5, 1000> $MaxResults
- * @property bool $DryRun
- * @property list<Shapes\Filter> $Filters
+ * @property list<string>|null $GroupIds
+ * @property list<string>|null $GroupNames
+ * @property string|null $NextToken
+ * @property int<5, 1000>|null $MaxResults
+ * @property bool|null $DryRun
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeSecurityGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     GroupIds?: list<string>,
-     *     GroupNames?: list<string>,
-     *     NextToken?: string,
-     *     MaxResults?: int<5, 1000>,
-     *     DryRun?: bool,
-     *     Filters?: list<Shapes\Filter>
+     *     GroupIds?: list<string>|null,
+     *     GroupNames?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<5, 1000>|null,
+     *     DryRun?: bool|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetLoadBalancers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property string $supportCode
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property ResourceLocation $location
- * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket' $resourceType
- * @property list<Tag> $tags
- * @property string $dnsName
- * @property 'active'|'provisioning'|'active_impaired'|'failed'|'unknown' $state
- * @property 'HTTP_HTTPS'|'HTTP' $protocol
- * @property list<int<-1, 65535>> $publicPorts
- * @property string $healthCheckPath
- * @property int $instancePort
- * @property list<InstanceHealthSummary> $instanceHealthSummary
- * @property list<LoadBalancerTlsCertificateSummary> $tlsCertificateSummaries
- * @property array<'HealthCheckPath'|'SessionStickinessEnabled'|'SessionStickiness_LB_CookieDurationSeconds'|'HttpsRedirectionEnabled'|'TlsPolicyName', string> $configurationOptions
- * @property 'dualstack'|'ipv4'|'ipv6' $ipAddressType
- * @property bool $httpsRedirectionEnabled
- * @property string $tlsPolicyName
+ * @property string|null $name
+ * @property string|null $arn
+ * @property string|null $supportCode
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property ResourceLocation|null $location
+ * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null $resourceType
+ * @property list<Tag>|null $tags
+ * @property string|null $dnsName
+ * @property 'active'|'provisioning'|'active_impaired'|'failed'|'unknown'|null $state
+ * @property 'HTTP_HTTPS'|'HTTP'|null $protocol
+ * @property list<int<-1, 65535>>|null $publicPorts
+ * @property string|null $healthCheckPath
+ * @property int|null $instancePort
+ * @property list<InstanceHealthSummary>|null $instanceHealthSummary
+ * @property list<LoadBalancerTlsCertificateSummary>|null $tlsCertificateSummaries
+ * @property array<'HealthCheckPath'|'SessionStickinessEnabled'|'SessionStickiness_LB_CookieDurationSeconds'|'HttpsRedirectionEnabled'|'TlsPolicyName', string>|null $configurationOptions
+ * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
+ * @property bool|null $httpsRedirectionEnabled
+ * @property string|null $tlsPolicyName
  */
 class LoadBalancer extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     supportCode?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     location?: ResourceLocation,
-     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket',
-     *     tags?: list<Tag>,
-     *     dnsName?: string,
-     *     state?: 'active'|'provisioning'|'active_impaired'|'failed'|'unknown',
-     *     protocol?: 'HTTP_HTTPS'|'HTTP',
-     *     publicPorts?: list<int<-1, 65535>>,
-     *     healthCheckPath?: string,
-     *     instancePort?: int,
-     *     instanceHealthSummary?: list<InstanceHealthSummary>,
-     *     tlsCertificateSummaries?: list<LoadBalancerTlsCertificateSummary>,
-     *     configurationOptions?: array<'HealthCheckPath'|'SessionStickinessEnabled'|'SessionStickiness_LB_CookieDurationSeconds'|'HttpsRedirectionEnabled'|'TlsPolicyName', string>,
-     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6',
-     *     httpsRedirectionEnabled?: bool,
-     *     tlsPolicyName?: string
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     supportCode?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     location?: ResourceLocation|null,
+     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null,
+     *     tags?: list<Tag>|null,
+     *     dnsName?: string|null,
+     *     state?: 'active'|'provisioning'|'active_impaired'|'failed'|'unknown'|null,
+     *     protocol?: 'HTTP_HTTPS'|'HTTP'|null,
+     *     publicPorts?: list<int<-1, 65535>>|null,
+     *     healthCheckPath?: string|null,
+     *     instancePort?: int|null,
+     *     instanceHealthSummary?: list<InstanceHealthSummary>|null,
+     *     tlsCertificateSummaries?: list<LoadBalancerTlsCertificateSummary>|null,
+     *     configurationOptions?: array<'HealthCheckPath'|'SessionStickinessEnabled'|'SessionStickiness_LB_CookieDurationSeconds'|'HttpsRedirectionEnabled'|'TlsPolicyName', string>|null,
+     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
+     *     httpsRedirectionEnabled?: bool|null,
+     *     tlsPolicyName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

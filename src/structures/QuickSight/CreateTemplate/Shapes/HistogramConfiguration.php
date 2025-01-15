@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HistogramFieldWells $FieldWells
- * @property AxisDisplayOptions $XAxisDisplayOptions
- * @property ChartAxisLabelOptions $XAxisLabelOptions
- * @property AxisDisplayOptions $YAxisDisplayOptions
- * @property HistogramBinOptions $BinOptions
- * @property DataLabelOptions $DataLabels
- * @property TooltipOptions $Tooltip
- * @property VisualPalette $VisualPalette
- * @property VisualInteractionOptions $Interactions
+ * @property HistogramFieldWells|null $FieldWells
+ * @property AxisDisplayOptions|null $XAxisDisplayOptions
+ * @property ChartAxisLabelOptions|null $XAxisLabelOptions
+ * @property AxisDisplayOptions|null $YAxisDisplayOptions
+ * @property HistogramBinOptions|null $BinOptions
+ * @property DataLabelOptions|null $DataLabels
+ * @property TooltipOptions|null $Tooltip
+ * @property VisualPalette|null $VisualPalette
+ * @property VisualInteractionOptions|null $Interactions
  */
 class HistogramConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: HistogramFieldWells,
-     *     XAxisDisplayOptions?: AxisDisplayOptions,
-     *     XAxisLabelOptions?: ChartAxisLabelOptions,
-     *     YAxisDisplayOptions?: AxisDisplayOptions,
-     *     BinOptions?: HistogramBinOptions,
-     *     DataLabels?: DataLabelOptions,
-     *     Tooltip?: TooltipOptions,
-     *     VisualPalette?: VisualPalette,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: HistogramFieldWells|null,
+     *     XAxisDisplayOptions?: AxisDisplayOptions|null,
+     *     XAxisLabelOptions?: ChartAxisLabelOptions|null,
+     *     YAxisDisplayOptions?: AxisDisplayOptions|null,
+     *     BinOptions?: HistogramBinOptions|null,
+     *     DataLabels?: DataLabelOptions|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     VisualPalette?: VisualPalette|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

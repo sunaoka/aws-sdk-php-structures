@@ -6,94 +6,94 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBInstanceIdentifier
- * @property string $DBSnapshotIdentifier
- * @property string $DBInstanceClass
- * @property int $Port
- * @property string $AvailabilityZone
- * @property string $DBSubnetGroupName
- * @property bool $MultiAZ
- * @property bool $PubliclyAccessible
- * @property bool $AutoMinorVersionUpgrade
- * @property string $LicenseModel
- * @property string $DBName
- * @property string $Engine
- * @property int $Iops
- * @property string $OptionGroupName
- * @property list<Shapes\Tag> $Tags
- * @property string $StorageType
- * @property string $TdeCredentialArn
- * @property string $TdeCredentialPassword
- * @property list<string> $VpcSecurityGroupIds
- * @property string $Domain
- * @property string $DomainFqdn
- * @property string $DomainOu
- * @property string $DomainAuthSecretArn
- * @property list<string> $DomainDnsIps
- * @property bool $CopyTagsToSnapshot
- * @property string $DomainIAMRoleName
- * @property bool $EnableIAMDatabaseAuthentication
- * @property list<string> $EnableCloudwatchLogsExports
- * @property list<Shapes\ProcessorFeature> $ProcessorFeatures
- * @property bool $UseDefaultProcessorFeatures
- * @property string $DBParameterGroupName
- * @property bool $DeletionProtection
- * @property bool $EnableCustomerOwnedIp
- * @property string $CustomIamInstanceProfile
- * @property string $BackupTarget
- * @property string $NetworkType
- * @property int $StorageThroughput
- * @property string $DBClusterSnapshotIdentifier
- * @property int $AllocatedStorage
- * @property bool $DedicatedLogVolume
- * @property string $CACertificateIdentifier
- * @property string $EngineLifecycleSupport
+ * @property string|null $DBSnapshotIdentifier
+ * @property string|null $DBInstanceClass
+ * @property int|null $Port
+ * @property string|null $AvailabilityZone
+ * @property string|null $DBSubnetGroupName
+ * @property bool|null $MultiAZ
+ * @property bool|null $PubliclyAccessible
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $LicenseModel
+ * @property string|null $DBName
+ * @property string|null $Engine
+ * @property int|null $Iops
+ * @property string|null $OptionGroupName
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $StorageType
+ * @property string|null $TdeCredentialArn
+ * @property string|null $TdeCredentialPassword
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $Domain
+ * @property string|null $DomainFqdn
+ * @property string|null $DomainOu
+ * @property string|null $DomainAuthSecretArn
+ * @property list<string>|null $DomainDnsIps
+ * @property bool|null $CopyTagsToSnapshot
+ * @property string|null $DomainIAMRoleName
+ * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property list<Shapes\ProcessorFeature>|null $ProcessorFeatures
+ * @property bool|null $UseDefaultProcessorFeatures
+ * @property string|null $DBParameterGroupName
+ * @property bool|null $DeletionProtection
+ * @property bool|null $EnableCustomerOwnedIp
+ * @property string|null $CustomIamInstanceProfile
+ * @property string|null $BackupTarget
+ * @property string|null $NetworkType
+ * @property int|null $StorageThroughput
+ * @property string|null $DBClusterSnapshotIdentifier
+ * @property int|null $AllocatedStorage
+ * @property bool|null $DedicatedLogVolume
+ * @property string|null $CACertificateIdentifier
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBInstanceFromDBSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     DBInstanceIdentifier: string,
-     *     DBSnapshotIdentifier?: string,
-     *     DBInstanceClass?: string,
-     *     Port?: int,
-     *     AvailabilityZone?: string,
-     *     DBSubnetGroupName?: string,
-     *     MultiAZ?: bool,
-     *     PubliclyAccessible?: bool,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     LicenseModel?: string,
-     *     DBName?: string,
-     *     Engine?: string,
-     *     Iops?: int,
-     *     OptionGroupName?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     StorageType?: string,
-     *     TdeCredentialArn?: string,
-     *     TdeCredentialPassword?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     Domain?: string,
-     *     DomainFqdn?: string,
-     *     DomainOu?: string,
-     *     DomainAuthSecretArn?: string,
-     *     DomainDnsIps?: list<string>,
-     *     CopyTagsToSnapshot?: bool,
-     *     DomainIAMRoleName?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     ProcessorFeatures?: list<Shapes\ProcessorFeature>,
-     *     UseDefaultProcessorFeatures?: bool,
-     *     DBParameterGroupName?: string,
-     *     DeletionProtection?: bool,
-     *     EnableCustomerOwnedIp?: bool,
-     *     CustomIamInstanceProfile?: string,
-     *     BackupTarget?: string,
-     *     NetworkType?: string,
-     *     StorageThroughput?: int,
-     *     DBClusterSnapshotIdentifier?: string,
-     *     AllocatedStorage?: int,
-     *     DedicatedLogVolume?: bool,
-     *     CACertificateIdentifier?: string,
-     *     EngineLifecycleSupport?: string
+     *     DBSnapshotIdentifier?: string|null,
+     *     DBInstanceClass?: string|null,
+     *     Port?: int|null,
+     *     AvailabilityZone?: string|null,
+     *     DBSubnetGroupName?: string|null,
+     *     MultiAZ?: bool|null,
+     *     PubliclyAccessible?: bool|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     LicenseModel?: string|null,
+     *     DBName?: string|null,
+     *     Engine?: string|null,
+     *     Iops?: int|null,
+     *     OptionGroupName?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     StorageType?: string|null,
+     *     TdeCredentialArn?: string|null,
+     *     TdeCredentialPassword?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     Domain?: string|null,
+     *     DomainFqdn?: string|null,
+     *     DomainOu?: string|null,
+     *     DomainAuthSecretArn?: string|null,
+     *     DomainDnsIps?: list<string>|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     DomainIAMRoleName?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     ProcessorFeatures?: list<Shapes\ProcessorFeature>|null,
+     *     UseDefaultProcessorFeatures?: bool|null,
+     *     DBParameterGroupName?: string|null,
+     *     DeletionProtection?: bool|null,
+     *     EnableCustomerOwnedIp?: bool|null,
+     *     CustomIamInstanceProfile?: string|null,
+     *     BackupTarget?: string|null,
+     *     NetworkType?: string|null,
+     *     StorageThroughput?: int|null,
+     *     DBClusterSnapshotIdentifier?: string|null,
+     *     AllocatedStorage?: int|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     CACertificateIdentifier?: string|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

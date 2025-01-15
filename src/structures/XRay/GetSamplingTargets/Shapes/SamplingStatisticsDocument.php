@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $Timestamp
  * @property int<0, max> $RequestCount
  * @property int<0, max> $SampledCount
- * @property int<0, max> $BorrowCount
+ * @property int<0, max>|null $BorrowCount
  */
 class SamplingStatisticsDocument extends Shape
 {
@@ -21,7 +21,7 @@ class SamplingStatisticsDocument extends Shape
      *     Timestamp: \Aws\Api\DateTimeResult,
      *     RequestCount: int<0, max>,
      *     SampledCount: int<0, max>,
-     *     BorrowCount?: int<0, max>
+     *     BorrowCount?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

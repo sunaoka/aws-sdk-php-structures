@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\RevokeSnapshotAccess\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $AccountAlias
+ * @property string|null $AccountId
+ * @property string|null $AccountAlias
  */
 class AccountWithRestoreAccess extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     AccountAlias?: string
+     *     AccountId?: string|null,
+     *     AccountAlias?: string|null
      * } $args
      */
     public function __construct(array $args = [])

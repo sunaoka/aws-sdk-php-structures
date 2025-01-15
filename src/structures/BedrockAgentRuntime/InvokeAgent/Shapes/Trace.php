@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomOrchestrationTrace $customOrchestrationTrace
- * @property FailureTrace $failureTrace
- * @property GuardrailTrace $guardrailTrace
- * @property OrchestrationTrace $orchestrationTrace
- * @property PostProcessingTrace $postProcessingTrace
- * @property PreProcessingTrace $preProcessingTrace
- * @property RoutingClassifierTrace $routingClassifierTrace
+ * @property CustomOrchestrationTrace|null $customOrchestrationTrace
+ * @property FailureTrace|null $failureTrace
+ * @property GuardrailTrace|null $guardrailTrace
+ * @property OrchestrationTrace|null $orchestrationTrace
+ * @property PostProcessingTrace|null $postProcessingTrace
+ * @property PreProcessingTrace|null $preProcessingTrace
+ * @property RoutingClassifierTrace|null $routingClassifierTrace
  */
 class Trace extends Shape
 {
     /**
      * @param array{
-     *     customOrchestrationTrace?: CustomOrchestrationTrace,
-     *     failureTrace?: FailureTrace,
-     *     guardrailTrace?: GuardrailTrace,
-     *     orchestrationTrace?: OrchestrationTrace,
-     *     postProcessingTrace?: PostProcessingTrace,
-     *     preProcessingTrace?: PreProcessingTrace,
-     *     routingClassifierTrace?: RoutingClassifierTrace
+     *     customOrchestrationTrace?: CustomOrchestrationTrace|null,
+     *     failureTrace?: FailureTrace|null,
+     *     guardrailTrace?: GuardrailTrace|null,
+     *     orchestrationTrace?: OrchestrationTrace|null,
+     *     postProcessingTrace?: PostProcessingTrace|null,
+     *     preProcessingTrace?: PreProcessingTrace|null,
+     *     routingClassifierTrace?: RoutingClassifierTrace|null
      * } $args
      */
     public function __construct(array $args = [])

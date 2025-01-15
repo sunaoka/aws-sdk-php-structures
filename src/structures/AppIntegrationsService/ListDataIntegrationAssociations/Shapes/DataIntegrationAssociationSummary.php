@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\ListDataIntegrationAssoc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataIntegrationAssociationArn
- * @property string $DataIntegrationArn
- * @property string $ClientId
- * @property string $DestinationURI
- * @property LastExecutionStatus $LastExecutionStatus
- * @property ExecutionConfiguration $ExecutionConfiguration
+ * @property string|null $DataIntegrationAssociationArn
+ * @property string|null $DataIntegrationArn
+ * @property string|null $ClientId
+ * @property string|null $DestinationURI
+ * @property LastExecutionStatus|null $LastExecutionStatus
+ * @property ExecutionConfiguration|null $ExecutionConfiguration
  */
 class DataIntegrationAssociationSummary extends Shape
 {
     /**
      * @param array{
-     *     DataIntegrationAssociationArn?: string,
-     *     DataIntegrationArn?: string,
-     *     ClientId?: string,
-     *     DestinationURI?: string,
-     *     LastExecutionStatus?: LastExecutionStatus,
-     *     ExecutionConfiguration?: ExecutionConfiguration
+     *     DataIntegrationAssociationArn?: string|null,
+     *     DataIntegrationArn?: string|null,
+     *     ClientId?: string|null,
+     *     DestinationURI?: string|null,
+     *     LastExecutionStatus?: LastExecutionStatus|null,
+     *     ExecutionConfiguration?: ExecutionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

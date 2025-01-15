@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\UpdateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ColumnDefinition> $columns
- * @property list<string> $primaryKeyColumns
+ * @property list<ColumnDefinition>|null $columns
+ * @property list<string>|null $primaryKeyColumns
  */
 class SchemaDefinition extends Shape
 {
     /**
      * @param array{
-     *     columns?: list<ColumnDefinition>,
-     *     primaryKeyColumns?: list<string>
+     *     columns?: list<ColumnDefinition>|null,
+     *     primaryKeyColumns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

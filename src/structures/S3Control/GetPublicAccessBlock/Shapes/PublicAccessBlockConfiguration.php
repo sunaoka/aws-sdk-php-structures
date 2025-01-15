@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3Control\GetPublicAccessBlock\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $BlockPublicAcls
- * @property bool $IgnorePublicAcls
- * @property bool $BlockPublicPolicy
- * @property bool $RestrictPublicBuckets
+ * @property bool|null $BlockPublicAcls
+ * @property bool|null $IgnorePublicAcls
+ * @property bool|null $BlockPublicPolicy
+ * @property bool|null $RestrictPublicBuckets
  */
 class PublicAccessBlockConfiguration extends Shape
 {
     /**
      * @param array{
-     *     BlockPublicAcls?: bool,
-     *     IgnorePublicAcls?: bool,
-     *     BlockPublicPolicy?: bool,
-     *     RestrictPublicBuckets?: bool
+     *     BlockPublicAcls?: bool|null,
+     *     IgnorePublicAcls?: bool|null,
+     *     BlockPublicPolicy?: bool|null,
+     *     RestrictPublicBuckets?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

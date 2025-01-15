@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $TopicId
  * @property Shapes\TopicDetails $Topic
- * @property list<Shapes\Tag> $Tags
- * @property list<string> $FolderArns
+ * @property list<Shapes\Tag>|null $Tags
+ * @property list<string>|null $FolderArns
  */
 class CreateTopicRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateTopicRequest extends Request
      *     AwsAccountId: string,
      *     TopicId: string,
      *     Topic: Shapes\TopicDetails,
-     *     Tags?: list<Shapes\Tag>,
-     *     FolderArns?: list<string>
+     *     Tags?: list<Shapes\Tag>|null,
+     *     FolderArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

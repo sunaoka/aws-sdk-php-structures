@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptunedata\DeletePropertygraphStatistics\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $active
- * @property string $statisticsId
+ * @property bool|null $active
+ * @property string|null $statisticsId
  */
 class DeleteStatisticsValueMap extends Shape
 {
     /**
      * @param array{
-     *     active?: bool,
-     *     statisticsId?: string
+     *     active?: bool|null,
+     *     statisticsId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

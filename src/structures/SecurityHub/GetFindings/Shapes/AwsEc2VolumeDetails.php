@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CreateTime
- * @property string $DeviceName
- * @property bool $Encrypted
- * @property int $Size
- * @property string $SnapshotId
- * @property string $Status
- * @property string $KmsKeyId
- * @property list<AwsEc2VolumeAttachment> $Attachments
- * @property string $VolumeId
- * @property string $VolumeType
- * @property string $VolumeScanStatus
+ * @property string|null $CreateTime
+ * @property string|null $DeviceName
+ * @property bool|null $Encrypted
+ * @property int|null $Size
+ * @property string|null $SnapshotId
+ * @property string|null $Status
+ * @property string|null $KmsKeyId
+ * @property list<AwsEc2VolumeAttachment>|null $Attachments
+ * @property string|null $VolumeId
+ * @property string|null $VolumeType
+ * @property string|null $VolumeScanStatus
  */
 class AwsEc2VolumeDetails extends Shape
 {
     /**
      * @param array{
-     *     CreateTime?: string,
-     *     DeviceName?: string,
-     *     Encrypted?: bool,
-     *     Size?: int,
-     *     SnapshotId?: string,
-     *     Status?: string,
-     *     KmsKeyId?: string,
-     *     Attachments?: list<AwsEc2VolumeAttachment>,
-     *     VolumeId?: string,
-     *     VolumeType?: string,
-     *     VolumeScanStatus?: string
+     *     CreateTime?: string|null,
+     *     DeviceName?: string|null,
+     *     Encrypted?: bool|null,
+     *     Size?: int|null,
+     *     SnapshotId?: string|null,
+     *     Status?: string|null,
+     *     KmsKeyId?: string|null,
+     *     Attachments?: list<AwsEc2VolumeAttachment>|null,
+     *     VolumeId?: string|null,
+     *     VolumeType?: string|null,
+     *     VolumeScanStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

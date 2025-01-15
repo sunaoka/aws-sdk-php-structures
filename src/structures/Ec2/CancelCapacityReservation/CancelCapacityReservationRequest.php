@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CapacityReservationId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class CancelCapacityReservationRequest extends Request
 {
     /**
      * @param array{
      *     CapacityReservationId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

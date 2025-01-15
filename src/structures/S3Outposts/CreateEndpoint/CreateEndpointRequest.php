@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OutpostId
  * @property string $SubnetId
  * @property string $SecurityGroupId
- * @property 'Private'|'CustomerOwnedIp' $AccessType
- * @property string $CustomerOwnedIpv4Pool
+ * @property 'Private'|'CustomerOwnedIp'|null $AccessType
+ * @property string|null $CustomerOwnedIpv4Pool
  */
 class CreateEndpointRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateEndpointRequest extends Request
      *     OutpostId: string,
      *     SubnetId: string,
      *     SecurityGroupId: string,
-     *     AccessType?: 'Private'|'CustomerOwnedIp',
-     *     CustomerOwnedIpv4Pool?: string
+     *     AccessType?: 'Private'|'CustomerOwnedIp'|null,
+     *     CustomerOwnedIpv4Pool?: string|null
      * } $args
      */
     public function __construct(array $args)

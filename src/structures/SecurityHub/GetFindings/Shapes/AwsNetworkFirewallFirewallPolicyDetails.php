@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FirewallPolicyDetails $FirewallPolicy
- * @property string $FirewallPolicyArn
- * @property string $FirewallPolicyId
- * @property string $FirewallPolicyName
- * @property string $Description
+ * @property FirewallPolicyDetails|null $FirewallPolicy
+ * @property string|null $FirewallPolicyArn
+ * @property string|null $FirewallPolicyId
+ * @property string|null $FirewallPolicyName
+ * @property string|null $Description
  */
 class AwsNetworkFirewallFirewallPolicyDetails extends Shape
 {
     /**
      * @param array{
-     *     FirewallPolicy?: FirewallPolicyDetails,
-     *     FirewallPolicyArn?: string,
-     *     FirewallPolicyId?: string,
-     *     FirewallPolicyName?: string,
-     *     Description?: string
+     *     FirewallPolicy?: FirewallPolicyDetails|null,
+     *     FirewallPolicyArn?: string|null,
+     *     FirewallPolicyId?: string|null,
+     *     FirewallPolicyName?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

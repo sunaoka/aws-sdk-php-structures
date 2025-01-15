@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ecs\StartTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $attachmentId
- * @property string $privateIpv4Address
- * @property string $ipv6Address
+ * @property string|null $attachmentId
+ * @property string|null $privateIpv4Address
+ * @property string|null $ipv6Address
  */
 class NetworkInterface extends Shape
 {
     /**
      * @param array{
-     *     attachmentId?: string,
-     *     privateIpv4Address?: string,
-     *     ipv6Address?: string
+     *     attachmentId?: string|null,
+     *     privateIpv4Address?: string|null,
+     *     ipv6Address?: string|null
      * } $args
      */
     public function __construct(array $args = [])

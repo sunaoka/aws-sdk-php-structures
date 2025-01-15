@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LoadBalancerArn
- * @property list<string> $Subnets
- * @property list<Shapes\SubnetMapping> $SubnetMappings
- * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4' $IpAddressType
- * @property 'on'|'off' $EnablePrefixForIpv6SourceNat
+ * @property list<string>|null $Subnets
+ * @property list<Shapes\SubnetMapping>|null $SubnetMappings
+ * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
+ * @property 'on'|'off'|null $EnablePrefixForIpv6SourceNat
  */
 class SetSubnetsRequest extends Request
 {
     /**
      * @param array{
      *     LoadBalancerArn: string,
-     *     Subnets?: list<string>,
-     *     SubnetMappings?: list<Shapes\SubnetMapping>,
-     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4',
-     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'
+     *     Subnets?: list<string>|null,
+     *     SubnetMappings?: list<Shapes\SubnetMapping>|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null,
+     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'|null
      * } $args
      */
     public function __construct(array $args)

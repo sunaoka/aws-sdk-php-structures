@@ -6,52 +6,52 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $EngineVersion
- * @property Shapes\ClusterConfig $ClusterConfig
- * @property Shapes\EBSOptions $EBSOptions
- * @property string $AccessPolicies
- * @property 'ipv4'|'dualstack' $IPAddressType
- * @property Shapes\SnapshotOptions $SnapshotOptions
- * @property Shapes\VPCOptions $VPCOptions
- * @property Shapes\CognitoOptions $CognitoOptions
- * @property Shapes\EncryptionAtRestOptions $EncryptionAtRestOptions
- * @property Shapes\NodeToNodeEncryptionOptions $NodeToNodeEncryptionOptions
- * @property array<string, string> $AdvancedOptions
- * @property array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption> $LogPublishingOptions
- * @property Shapes\DomainEndpointOptions $DomainEndpointOptions
- * @property Shapes\AdvancedSecurityOptionsInput $AdvancedSecurityOptions
- * @property Shapes\IdentityCenterOptionsInput $IdentityCenterOptions
- * @property list<Shapes\Tag> $TagList
- * @property Shapes\AutoTuneOptionsInput $AutoTuneOptions
- * @property Shapes\OffPeakWindowOptions $OffPeakWindowOptions
- * @property Shapes\SoftwareUpdateOptions $SoftwareUpdateOptions
- * @property Shapes\AIMLOptionsInput $AIMLOptions
+ * @property string|null $EngineVersion
+ * @property Shapes\ClusterConfig|null $ClusterConfig
+ * @property Shapes\EBSOptions|null $EBSOptions
+ * @property string|null $AccessPolicies
+ * @property 'ipv4'|'dualstack'|null $IPAddressType
+ * @property Shapes\SnapshotOptions|null $SnapshotOptions
+ * @property Shapes\VPCOptions|null $VPCOptions
+ * @property Shapes\CognitoOptions|null $CognitoOptions
+ * @property Shapes\EncryptionAtRestOptions|null $EncryptionAtRestOptions
+ * @property Shapes\NodeToNodeEncryptionOptions|null $NodeToNodeEncryptionOptions
+ * @property array<string, string>|null $AdvancedOptions
+ * @property array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>|null $LogPublishingOptions
+ * @property Shapes\DomainEndpointOptions|null $DomainEndpointOptions
+ * @property Shapes\AdvancedSecurityOptionsInput|null $AdvancedSecurityOptions
+ * @property Shapes\IdentityCenterOptionsInput|null $IdentityCenterOptions
+ * @property list<Shapes\Tag>|null $TagList
+ * @property Shapes\AutoTuneOptionsInput|null $AutoTuneOptions
+ * @property Shapes\OffPeakWindowOptions|null $OffPeakWindowOptions
+ * @property Shapes\SoftwareUpdateOptions|null $SoftwareUpdateOptions
+ * @property Shapes\AIMLOptionsInput|null $AIMLOptions
  */
 class CreateDomainRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     EngineVersion?: string,
-     *     ClusterConfig?: Shapes\ClusterConfig,
-     *     EBSOptions?: Shapes\EBSOptions,
-     *     AccessPolicies?: string,
-     *     IPAddressType?: 'ipv4'|'dualstack',
-     *     SnapshotOptions?: Shapes\SnapshotOptions,
-     *     VPCOptions?: Shapes\VPCOptions,
-     *     CognitoOptions?: Shapes\CognitoOptions,
-     *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions,
-     *     NodeToNodeEncryptionOptions?: Shapes\NodeToNodeEncryptionOptions,
-     *     AdvancedOptions?: array<string, string>,
-     *     LogPublishingOptions?: array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>,
-     *     DomainEndpointOptions?: Shapes\DomainEndpointOptions,
-     *     AdvancedSecurityOptions?: Shapes\AdvancedSecurityOptionsInput,
-     *     IdentityCenterOptions?: Shapes\IdentityCenterOptionsInput,
-     *     TagList?: list<Shapes\Tag>,
-     *     AutoTuneOptions?: Shapes\AutoTuneOptionsInput,
-     *     OffPeakWindowOptions?: Shapes\OffPeakWindowOptions,
-     *     SoftwareUpdateOptions?: Shapes\SoftwareUpdateOptions,
-     *     AIMLOptions?: Shapes\AIMLOptionsInput
+     *     EngineVersion?: string|null,
+     *     ClusterConfig?: Shapes\ClusterConfig|null,
+     *     EBSOptions?: Shapes\EBSOptions|null,
+     *     AccessPolicies?: string|null,
+     *     IPAddressType?: 'ipv4'|'dualstack'|null,
+     *     SnapshotOptions?: Shapes\SnapshotOptions|null,
+     *     VPCOptions?: Shapes\VPCOptions|null,
+     *     CognitoOptions?: Shapes\CognitoOptions|null,
+     *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions|null,
+     *     NodeToNodeEncryptionOptions?: Shapes\NodeToNodeEncryptionOptions|null,
+     *     AdvancedOptions?: array<string, string>|null,
+     *     LogPublishingOptions?: array<'INDEX_SLOW_LOGS'|'SEARCH_SLOW_LOGS'|'ES_APPLICATION_LOGS'|'AUDIT_LOGS', Shapes\LogPublishingOption>|null,
+     *     DomainEndpointOptions?: Shapes\DomainEndpointOptions|null,
+     *     AdvancedSecurityOptions?: Shapes\AdvancedSecurityOptionsInput|null,
+     *     IdentityCenterOptions?: Shapes\IdentityCenterOptionsInput|null,
+     *     TagList?: list<Shapes\Tag>|null,
+     *     AutoTuneOptions?: Shapes\AutoTuneOptionsInput|null,
+     *     OffPeakWindowOptions?: Shapes\OffPeakWindowOptions|null,
+     *     SoftwareUpdateOptions?: Shapes\SoftwareUpdateOptions|null,
+     *     AIMLOptions?: Shapes\AIMLOptionsInput|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteLaunchTemplateVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LaunchTemplateId
- * @property string $LaunchTemplateName
- * @property int $VersionNumber
- * @property ResponseError $ResponseError
+ * @property string|null $LaunchTemplateId
+ * @property string|null $LaunchTemplateName
+ * @property int|null $VersionNumber
+ * @property ResponseError|null $ResponseError
  */
 class DeleteLaunchTemplateVersionsResponseErrorItem extends Shape
 {
     /**
      * @param array{
-     *     LaunchTemplateId?: string,
-     *     LaunchTemplateName?: string,
-     *     VersionNumber?: int,
-     *     ResponseError?: ResponseError
+     *     LaunchTemplateId?: string|null,
+     *     LaunchTemplateName?: string|null,
+     *     VersionNumber?: int|null,
+     *     ResponseError?: ResponseError|null
      * } $args
      */
     public function __construct(array $args = [])

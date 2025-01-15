@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'X12' $toFormat
- * @property FormatOptions $formatOptions
+ * @property FormatOptions|null $formatOptions
  */
 class OutputConversion extends Shape
 {
     /**
      * @param array{
      *     toFormat: 'X12',
-     *     formatOptions?: FormatOptions
+     *     formatOptions?: FormatOptions|null
      * } $args
      */
     public function __construct(array $args)

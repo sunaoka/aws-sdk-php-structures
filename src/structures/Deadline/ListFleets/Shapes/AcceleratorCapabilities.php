@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<AcceleratorSelection> $selections
- * @property AcceleratorCountRange $count
+ * @property AcceleratorCountRange|null $count
  */
 class AcceleratorCapabilities extends Shape
 {
     /**
      * @param array{
      *     selections: list<AcceleratorSelection>,
-     *     count?: AcceleratorCountRange
+     *     count?: AcceleratorCountRange|null
      * } $args
      */
     public function __construct(array $args)

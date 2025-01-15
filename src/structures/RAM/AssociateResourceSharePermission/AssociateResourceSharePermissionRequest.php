@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $resourceShareArn
  * @property string $permissionArn
- * @property bool $replace
- * @property string $clientToken
- * @property int $permissionVersion
+ * @property bool|null $replace
+ * @property string|null $clientToken
+ * @property int|null $permissionVersion
  */
 class AssociateResourceSharePermissionRequest extends Request
 {
@@ -17,9 +17,9 @@ class AssociateResourceSharePermissionRequest extends Request
      * @param array{
      *     resourceShareArn: string,
      *     permissionArn: string,
-     *     replace?: bool,
-     *     clientToken?: string,
-     *     permissionVersion?: int
+     *     replace?: bool|null,
+     *     clientToken?: string|null,
+     *     permissionVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

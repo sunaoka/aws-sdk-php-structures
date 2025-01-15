@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $multipleDimensionSelection
- * @property string $quantityConfiguration
+ * @property string|null $multipleDimensionSelection
+ * @property string|null $quantityConfiguration
  */
 class Constraints extends Shape
 {
     /**
      * @param array{
-     *     multipleDimensionSelection?: string,
-     *     quantityConfiguration?: string
+     *     multipleDimensionSelection?: string|null,
+     *     quantityConfiguration?: string|null
      * } $args
      */
     public function __construct(array $args = [])

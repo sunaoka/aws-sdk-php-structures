@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'SELF'|'OTHER-ACCOUNTS' $resourceOwner
- * @property string $resourceArn
- * @property list<string> $principals
- * @property string $resourceType
- * @property list<string> $resourceShareArns
- * @property string $nextToken
- * @property int<1, 500> $maxResults
+ * @property string|null $resourceArn
+ * @property list<string>|null $principals
+ * @property string|null $resourceType
+ * @property list<string>|null $resourceShareArns
+ * @property string|null $nextToken
+ * @property int<1, 500>|null $maxResults
  */
 class ListPrincipalsRequest extends Request
 {
     /**
      * @param array{
      *     resourceOwner: 'SELF'|'OTHER-ACCOUNTS',
-     *     resourceArn?: string,
-     *     principals?: list<string>,
-     *     resourceType?: string,
-     *     resourceShareArns?: list<string>,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 500>
+     *     resourceArn?: string|null,
+     *     principals?: list<string>|null,
+     *     resourceType?: string|null,
+     *     resourceShareArns?: list<string>|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 500>|null
      * } $args
      */
     public function __construct(array $args)

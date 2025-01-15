@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\ExportComponents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $type
- * @property ComponentBindingPropertiesValueProperties $bindingProperties
- * @property string $defaultValue
+ * @property string|null $type
+ * @property ComponentBindingPropertiesValueProperties|null $bindingProperties
+ * @property string|null $defaultValue
  */
 class ComponentBindingPropertiesValue extends Shape
 {
     /**
      * @param array{
-     *     type?: string,
-     *     bindingProperties?: ComponentBindingPropertiesValueProperties,
-     *     defaultValue?: string
+     *     type?: string|null,
+     *     bindingProperties?: ComponentBindingPropertiesValueProperties|null,
+     *     defaultValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

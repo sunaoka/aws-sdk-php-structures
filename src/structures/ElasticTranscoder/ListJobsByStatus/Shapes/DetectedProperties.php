@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ListJobsByStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Width
- * @property int $Height
- * @property string $FrameRate
- * @property int $FileSize
- * @property int $DurationMillis
+ * @property int|null $Width
+ * @property int|null $Height
+ * @property string|null $FrameRate
+ * @property int|null $FileSize
+ * @property int|null $DurationMillis
  */
 class DetectedProperties extends Shape
 {
     /**
      * @param array{
-     *     Width?: int,
-     *     Height?: int,
-     *     FrameRate?: string,
-     *     FileSize?: int,
-     *     DurationMillis?: int
+     *     Width?: int|null,
+     *     Height?: int|null,
+     *     FrameRate?: string|null,
+     *     FileSize?: int|null,
+     *     DurationMillis?: int|null
      * } $args
      */
     public function __construct(array $args = [])

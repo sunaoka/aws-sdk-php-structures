@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Inspector\ListAssessmentTargets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $assessmentTargetNamePattern
+ * @property string|null $assessmentTargetNamePattern
  */
 class AssessmentTargetFilter extends Shape
 {
     /**
-     * @param array{assessmentTargetNamePattern?: string} $args
+     * @param array{assessmentTargetNamePattern?: string|null} $args
      */
     public function __construct(array $args = [])
     {

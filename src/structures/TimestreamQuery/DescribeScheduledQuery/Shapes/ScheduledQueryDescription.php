@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property string $Name
  * @property string $QueryString
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property 'ENABLED'|'DISABLED' $State
- * @property \Aws\Api\DateTimeResult $PreviousInvocationTime
- * @property \Aws\Api\DateTimeResult $NextInvocationTime
+ * @property \Aws\Api\DateTimeResult|null $PreviousInvocationTime
+ * @property \Aws\Api\DateTimeResult|null $NextInvocationTime
  * @property ScheduleConfiguration $ScheduleConfiguration
  * @property NotificationConfiguration $NotificationConfiguration
- * @property TargetConfiguration $TargetConfiguration
- * @property string $ScheduledQueryExecutionRoleArn
- * @property string $KmsKeyId
- * @property ErrorReportConfiguration $ErrorReportConfiguration
- * @property ScheduledQueryRunSummary $LastRunSummary
- * @property list<ScheduledQueryRunSummary> $RecentlyFailedRuns
+ * @property TargetConfiguration|null $TargetConfiguration
+ * @property string|null $ScheduledQueryExecutionRoleArn
+ * @property string|null $KmsKeyId
+ * @property ErrorReportConfiguration|null $ErrorReportConfiguration
+ * @property ScheduledQueryRunSummary|null $LastRunSummary
+ * @property list<ScheduledQueryRunSummary>|null $RecentlyFailedRuns
  */
 class ScheduledQueryDescription extends Shape
 {
@@ -28,18 +28,18 @@ class ScheduledQueryDescription extends Shape
      *     Arn: string,
      *     Name: string,
      *     QueryString: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     State: 'ENABLED'|'DISABLED',
-     *     PreviousInvocationTime?: \Aws\Api\DateTimeResult,
-     *     NextInvocationTime?: \Aws\Api\DateTimeResult,
+     *     PreviousInvocationTime?: \Aws\Api\DateTimeResult|null,
+     *     NextInvocationTime?: \Aws\Api\DateTimeResult|null,
      *     ScheduleConfiguration: ScheduleConfiguration,
      *     NotificationConfiguration: NotificationConfiguration,
-     *     TargetConfiguration?: TargetConfiguration,
-     *     ScheduledQueryExecutionRoleArn?: string,
-     *     KmsKeyId?: string,
-     *     ErrorReportConfiguration?: ErrorReportConfiguration,
-     *     LastRunSummary?: ScheduledQueryRunSummary,
-     *     RecentlyFailedRuns?: list<ScheduledQueryRunSummary>
+     *     TargetConfiguration?: TargetConfiguration|null,
+     *     ScheduledQueryExecutionRoleArn?: string|null,
+     *     KmsKeyId?: string|null,
+     *     ErrorReportConfiguration?: ErrorReportConfiguration|null,
+     *     LastRunSummary?: ScheduledQueryRunSummary|null,
+     *     RecentlyFailedRuns?: list<ScheduledQueryRunSummary>|null
      * } $args
      */
     public function __construct(array $args)

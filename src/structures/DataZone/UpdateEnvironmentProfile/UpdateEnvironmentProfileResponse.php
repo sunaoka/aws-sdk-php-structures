@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateEnvironmentProfile;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $awsAccountId
- * @property string $awsAccountRegion
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $awsAccountId
+ * @property string|null $awsAccountRegion
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string $createdBy
- * @property string $description
+ * @property string|null $description
  * @property string $domainId
  * @property string $environmentBlueprintId
  * @property string $id
  * @property string $name
- * @property string $projectId
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property list<Shapes\CustomParameter> $userParameters
+ * @property string|null $projectId
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property list<Shapes\CustomParameter>|null $userParameters
  */
 class UpdateEnvironmentProfileResponse extends Response
 {

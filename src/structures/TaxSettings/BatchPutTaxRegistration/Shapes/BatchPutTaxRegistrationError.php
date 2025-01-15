@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $accountId
- * @property string $code
+ * @property string|null $code
  * @property string $message
  */
 class BatchPutTaxRegistrationError extends Shape
@@ -14,7 +14,7 @@ class BatchPutTaxRegistrationError extends Shape
     /**
      * @param array{
      *     accountId: string,
-     *     code?: string,
+     *     code?: string|null,
      *     message: string
      * } $args
      */

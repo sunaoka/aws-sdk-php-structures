@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $instanceName
- * @property string $iamSessionArn
- * @property string $iamUserArn
+ * @property string|null $iamSessionArn
+ * @property string|null $iamUserArn
  */
 class RegisterOnPremisesInstanceRequest extends Request
 {
     /**
      * @param array{
      *     instanceName: string,
-     *     iamSessionArn?: string,
-     *     iamUserArn?: string
+     *     iamSessionArn?: string|null,
+     *     iamUserArn?: string|null
      * } $args
      */
     public function __construct(array $args)

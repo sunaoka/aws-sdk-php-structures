@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRContainers\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SparkSubmitJobDriver $sparkSubmitJobDriver
- * @property SparkSqlJobDriver $sparkSqlJobDriver
+ * @property SparkSubmitJobDriver|null $sparkSubmitJobDriver
+ * @property SparkSqlJobDriver|null $sparkSqlJobDriver
  */
 class JobDriver extends Shape
 {
     /**
      * @param array{
-     *     sparkSubmitJobDriver?: SparkSubmitJobDriver,
-     *     sparkSqlJobDriver?: SparkSqlJobDriver
+     *     sparkSubmitJobDriver?: SparkSubmitJobDriver|null,
+     *     sparkSqlJobDriver?: SparkSqlJobDriver|null
      * } $args
      */
     public function __construct(array $args = [])

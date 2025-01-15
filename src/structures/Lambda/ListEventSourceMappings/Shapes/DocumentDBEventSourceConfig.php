@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Lambda\ListEventSourceMappings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatabaseName
- * @property string $CollectionName
- * @property 'UpdateLookup'|'Default' $FullDocument
+ * @property string|null $DatabaseName
+ * @property string|null $CollectionName
+ * @property 'UpdateLookup'|'Default'|null $FullDocument
  */
 class DocumentDBEventSourceConfig extends Shape
 {
     /**
      * @param array{
-     *     DatabaseName?: string,
-     *     CollectionName?: string,
-     *     FullDocument?: 'UpdateLookup'|'Default'
+     *     DatabaseName?: string|null,
+     *     CollectionName?: string|null,
+     *     FullDocument?: 'UpdateLookup'|'Default'|null
      * } $args
      */
     public function __construct(array $args = [])

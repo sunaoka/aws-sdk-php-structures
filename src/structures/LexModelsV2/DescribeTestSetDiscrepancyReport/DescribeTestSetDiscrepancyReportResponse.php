@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeTestSetDiscrepancyReport;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $testSetDiscrepancyReportId
- * @property string $testSetId
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property Shapes\TestSetDiscrepancyReportResourceTarget $target
- * @property 'InProgress'|'Completed'|'Failed' $testSetDiscrepancyReportStatus
- * @property \Aws\Api\DateTimeResult $lastUpdatedDataTime
- * @property Shapes\TestSetDiscrepancyErrors $testSetDiscrepancyTopErrors
- * @property string $testSetDiscrepancyRawOutputUrl
- * @property list<string> $failureReasons
+ * @property string|null $testSetDiscrepancyReportId
+ * @property string|null $testSetId
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property Shapes\TestSetDiscrepancyReportResourceTarget|null $target
+ * @property 'InProgress'|'Completed'|'Failed'|null $testSetDiscrepancyReportStatus
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDataTime
+ * @property Shapes\TestSetDiscrepancyErrors|null $testSetDiscrepancyTopErrors
+ * @property string|null $testSetDiscrepancyRawOutputUrl
+ * @property list<string>|null $failureReasons
  */
 class DescribeTestSetDiscrepancyReportResponse extends Response
 {

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property int $MaxCount
- * @property bool $DeleteSourceFromS3
+ * @property int|null $MaxCount
+ * @property bool|null $DeleteSourceFromS3
  */
 class MaxCountRule extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     MaxCount?: int,
-     *     DeleteSourceFromS3?: bool
+     *     MaxCount?: int|null,
+     *     DeleteSourceFromS3?: bool|null
      * } $args
      */
     public function __construct(array $args)

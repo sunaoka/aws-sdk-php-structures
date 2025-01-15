@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Glue\GetBlueprint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedOn
- * @property \Aws\Api\DateTimeResult $LastModifiedOn
- * @property string $ParameterSpec
- * @property string $BlueprintLocation
- * @property string $BlueprintServiceLocation
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED' $Status
- * @property string $ErrorMessage
- * @property LastActiveDefinition $LastActiveDefinition
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedOn
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedOn
+ * @property string|null $ParameterSpec
+ * @property string|null $BlueprintLocation
+ * @property string|null $BlueprintServiceLocation
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED'|null $Status
+ * @property string|null $ErrorMessage
+ * @property LastActiveDefinition|null $LastActiveDefinition
  */
 class Blueprint extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Description?: string,
-     *     CreatedOn?: \Aws\Api\DateTimeResult,
-     *     LastModifiedOn?: \Aws\Api\DateTimeResult,
-     *     ParameterSpec?: string,
-     *     BlueprintLocation?: string,
-     *     BlueprintServiceLocation?: string,
-     *     Status?: 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED',
-     *     ErrorMessage?: string,
-     *     LastActiveDefinition?: LastActiveDefinition
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     CreatedOn?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedOn?: \Aws\Api\DateTimeResult|null,
+     *     ParameterSpec?: string|null,
+     *     BlueprintLocation?: string|null,
+     *     BlueprintServiceLocation?: string|null,
+     *     Status?: 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED'|null,
+     *     ErrorMessage?: string|null,
+     *     LastActiveDefinition?: LastActiveDefinition|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetSegmentDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SegmentDefinitionName
+ * @property string|null $SegmentDefinitionName
  */
 class SourceSegment extends Shape
 {
     /**
-     * @param array{SegmentDefinitionName?: string} $args
+     * @param array{SegmentDefinitionName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

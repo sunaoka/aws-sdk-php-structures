@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $S3Bucket
- * @property 'ApplicationDiscoveryService'|'MPA'|'Import'|'StrategyRecommendationsApplicationDataCollector' $dataSourceType
- * @property list<Shapes\Group> $groupId
+ * @property 'ApplicationDiscoveryService'|'MPA'|'Import'|'StrategyRecommendationsApplicationDataCollector'|null $dataSourceType
+ * @property list<Shapes\Group>|null $groupId
  * @property string $name
- * @property string $s3bucketForReportData
+ * @property string|null $s3bucketForReportData
  * @property string $s3key
  */
 class StartImportFileTaskRequest extends Request
@@ -17,10 +17,10 @@ class StartImportFileTaskRequest extends Request
     /**
      * @param array{
      *     S3Bucket: string,
-     *     dataSourceType?: 'ApplicationDiscoveryService'|'MPA'|'Import'|'StrategyRecommendationsApplicationDataCollector',
-     *     groupId?: list<Shapes\Group>,
+     *     dataSourceType?: 'ApplicationDiscoveryService'|'MPA'|'Import'|'StrategyRecommendationsApplicationDataCollector'|null,
+     *     groupId?: list<Shapes\Group>|null,
      *     name: string,
-     *     s3bucketForReportData?: string,
+     *     s3bucketForReportData?: string|null,
      *     s3key: string
      * } $args
      */

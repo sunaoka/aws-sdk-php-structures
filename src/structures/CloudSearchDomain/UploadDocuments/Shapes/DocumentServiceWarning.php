@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudSearchDomain\UploadDocuments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $message
+ * @property string|null $message
  */
 class DocumentServiceWarning extends Shape
 {
     /**
-     * @param array{message?: string} $args
+     * @param array{message?: string|null} $args
      */
     public function __construct(array $args = [])
     {

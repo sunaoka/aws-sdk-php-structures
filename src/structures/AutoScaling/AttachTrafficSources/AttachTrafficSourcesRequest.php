@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AutoScalingGroupName
  * @property list<Shapes\TrafficSourceIdentifier> $TrafficSources
- * @property bool $SkipZonalShiftValidation
+ * @property bool|null $SkipZonalShiftValidation
  */
 class AttachTrafficSourcesRequest extends Request
 {
@@ -15,7 +15,7 @@ class AttachTrafficSourcesRequest extends Request
      * @param array{
      *     AutoScalingGroupName: string,
      *     TrafficSources: list<Shapes\TrafficSourceIdentifier>,
-     *     SkipZonalShiftValidation?: bool
+     *     SkipZonalShiftValidation?: bool|null
      * } $args
      */
     public function __construct(array $args)

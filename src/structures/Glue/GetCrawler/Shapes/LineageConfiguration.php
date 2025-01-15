@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\GetCrawler\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLE'|'DISABLE' $CrawlerLineageSettings
+ * @property 'ENABLE'|'DISABLE'|null $CrawlerLineageSettings
  */
 class LineageConfiguration extends Shape
 {
     /**
-     * @param array{CrawlerLineageSettings?: 'ENABLE'|'DISABLE'} $args
+     * @param array{CrawlerLineageSettings?: 'ENABLE'|'DISABLE'|null} $args
      */
     public function __construct(array $args = [])
     {

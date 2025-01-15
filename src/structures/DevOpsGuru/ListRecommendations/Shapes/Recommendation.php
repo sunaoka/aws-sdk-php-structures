@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $Link
- * @property string $Name
- * @property string $Reason
- * @property list<RecommendationRelatedEvent> $RelatedEvents
- * @property list<RecommendationRelatedAnomaly> $RelatedAnomalies
- * @property string $Category
+ * @property string|null $Description
+ * @property string|null $Link
+ * @property string|null $Name
+ * @property string|null $Reason
+ * @property list<RecommendationRelatedEvent>|null $RelatedEvents
+ * @property list<RecommendationRelatedAnomaly>|null $RelatedAnomalies
+ * @property string|null $Category
  */
 class Recommendation extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     Link?: string,
-     *     Name?: string,
-     *     Reason?: string,
-     *     RelatedEvents?: list<RecommendationRelatedEvent>,
-     *     RelatedAnomalies?: list<RecommendationRelatedAnomaly>,
-     *     Category?: string
+     *     Description?: string|null,
+     *     Link?: string|null,
+     *     Name?: string|null,
+     *     Reason?: string|null,
+     *     RelatedEvents?: list<RecommendationRelatedEvent>|null,
+     *     RelatedAnomalies?: list<RecommendationRelatedAnomaly>|null,
+     *     Category?: string|null
      * } $args
      */
     public function __construct(array $args = [])

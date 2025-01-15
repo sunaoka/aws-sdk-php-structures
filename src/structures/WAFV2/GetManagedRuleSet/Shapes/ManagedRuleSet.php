@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Id
  * @property string $ARN
- * @property string $Description
- * @property array<string, ManagedRuleSetVersion> $PublishedVersions
- * @property string $RecommendedVersion
- * @property string $LabelNamespace
+ * @property string|null $Description
+ * @property array<string, ManagedRuleSetVersion>|null $PublishedVersions
+ * @property string|null $RecommendedVersion
+ * @property string|null $LabelNamespace
  */
 class ManagedRuleSet extends Shape
 {
@@ -20,10 +20,10 @@ class ManagedRuleSet extends Shape
      *     Name: string,
      *     Id: string,
      *     ARN: string,
-     *     Description?: string,
-     *     PublishedVersions?: array<string, ManagedRuleSetVersion>,
-     *     RecommendedVersion?: string,
-     *     LabelNamespace?: string
+     *     Description?: string|null,
+     *     PublishedVersions?: array<string, ManagedRuleSetVersion>|null,
+     *     RecommendedVersion?: string|null,
+     *     LabelNamespace?: string|null
      * } $args
      */
     public function __construct(array $args)

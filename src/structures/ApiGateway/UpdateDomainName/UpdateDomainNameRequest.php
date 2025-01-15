@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainName
- * @property string $domainNameId
- * @property list<Shapes\PatchOperation> $patchOperations
+ * @property string|null $domainNameId
+ * @property list<Shapes\PatchOperation>|null $patchOperations
  */
 class UpdateDomainNameRequest extends Request
 {
     /**
      * @param array{
      *     domainName: string,
-     *     domainNameId?: string,
-     *     patchOperations?: list<Shapes\PatchOperation>
+     *     domainNameId?: string|null,
+     *     patchOperations?: list<Shapes\PatchOperation>|null
      * } $args
      */
     public function __construct(array $args)

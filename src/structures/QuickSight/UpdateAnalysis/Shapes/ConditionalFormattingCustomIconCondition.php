@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Expression
  * @property ConditionalFormattingCustomIconOptions $IconOptions
- * @property string $Color
- * @property ConditionalFormattingIconDisplayConfiguration $DisplayConfiguration
+ * @property string|null $Color
+ * @property ConditionalFormattingIconDisplayConfiguration|null $DisplayConfiguration
  */
 class ConditionalFormattingCustomIconCondition extends Shape
 {
@@ -16,8 +16,8 @@ class ConditionalFormattingCustomIconCondition extends Shape
      * @param array{
      *     Expression: string,
      *     IconOptions: ConditionalFormattingCustomIconOptions,
-     *     Color?: string,
-     *     DisplayConfiguration?: ConditionalFormattingIconDisplayConfiguration
+     *     Color?: string|null,
+     *     DisplayConfiguration?: ConditionalFormattingIconDisplayConfiguration|null
      * } $args
      */
     public function __construct(array $args)

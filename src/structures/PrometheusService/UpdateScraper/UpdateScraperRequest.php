@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\PrometheusService\UpdateScraper;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $alias
- * @property string $clientToken
- * @property Shapes\Destination $destination
- * @property Shapes\ScrapeConfiguration $scrapeConfiguration
+ * @property string|null $alias
+ * @property string|null $clientToken
+ * @property Shapes\Destination|null $destination
+ * @property Shapes\ScrapeConfiguration|null $scrapeConfiguration
  * @property string $scraperId
  */
 class UpdateScraperRequest extends Request
 {
     /**
      * @param array{
-     *     alias?: string,
-     *     clientToken?: string,
-     *     destination?: Shapes\Destination,
-     *     scrapeConfiguration?: Shapes\ScrapeConfiguration,
+     *     alias?: string|null,
+     *     clientToken?: string|null,
+     *     destination?: Shapes\Destination|null,
+     *     scrapeConfiguration?: Shapes\ScrapeConfiguration|null,
      *     scraperId: string
      * } $args
      */

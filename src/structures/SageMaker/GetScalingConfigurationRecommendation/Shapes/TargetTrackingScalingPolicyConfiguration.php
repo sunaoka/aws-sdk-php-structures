@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetScalingConfigurationRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MetricSpecification $MetricSpecification
- * @property double $TargetValue
+ * @property MetricSpecification|null $MetricSpecification
+ * @property double|null $TargetValue
  */
 class TargetTrackingScalingPolicyConfiguration extends Shape
 {
     /**
      * @param array{
-     *     MetricSpecification?: MetricSpecification,
-     *     TargetValue?: double
+     *     MetricSpecification?: MetricSpecification|null,
+     *     TargetValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImageBuildVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $region
- * @property string $image
- * @property string $name
- * @property string $description
- * @property ImageState $state
- * @property string $accountId
+ * @property string|null $region
+ * @property string|null $image
+ * @property string|null $name
+ * @property string|null $description
+ * @property ImageState|null $state
+ * @property string|null $accountId
  */
 class Ami extends Shape
 {
     /**
      * @param array{
-     *     region?: string,
-     *     image?: string,
-     *     name?: string,
-     *     description?: string,
-     *     state?: ImageState,
-     *     accountId?: string
+     *     region?: string|null,
+     *     image?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     state?: ImageState|null,
+     *     accountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

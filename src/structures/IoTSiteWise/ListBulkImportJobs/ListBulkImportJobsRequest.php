@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ListBulkImportJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 250> $maxResults
- * @property 'ALL'|'PENDING'|'RUNNING'|'CANCELLED'|'FAILED'|'COMPLETED_WITH_FAILURES'|'COMPLETED' $filter
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
+ * @property 'ALL'|'PENDING'|'RUNNING'|'CANCELLED'|'FAILED'|'COMPLETED_WITH_FAILURES'|'COMPLETED'|null $filter
  */
 class ListBulkImportJobsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>,
-     *     filter?: 'ALL'|'PENDING'|'RUNNING'|'CANCELLED'|'FAILED'|'COMPLETED_WITH_FAILURES'|'COMPLETED'
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null,
+     *     filter?: 'ALL'|'PENDING'|'RUNNING'|'CANCELLED'|'FAILED'|'COMPLETED_WITH_FAILURES'|'COMPLETED'|null
      * } $args
      */
     public function __construct(array $args = [])

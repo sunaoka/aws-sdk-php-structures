@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'POTENTIAL_ISSUE_DETECTED'|'NO_ISSUE_DETECTED' $Status
- * @property int $NumberOfLargeTimestampGaps
- * @property int $MaxTimestampGapInDays
+ * @property int|null $NumberOfLargeTimestampGaps
+ * @property int|null $MaxTimestampGapInDays
  */
 class LargeTimestampGaps extends Shape
 {
     /**
      * @param array{
      *     Status: 'POTENTIAL_ISSUE_DETECTED'|'NO_ISSUE_DETECTED',
-     *     NumberOfLargeTimestampGaps?: int,
-     *     MaxTimestampGapInDays?: int
+     *     NumberOfLargeTimestampGaps?: int|null,
+     *     MaxTimestampGapInDays?: int|null
      * } $args
      */
     public function __construct(array $args)

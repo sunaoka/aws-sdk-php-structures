@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ReadPipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GranteeType
- * @property string $Grantee
- * @property list<string> $Access
+ * @property string|null $GranteeType
+ * @property string|null $Grantee
+ * @property list<string>|null $Access
  */
 class Permission extends Shape
 {
     /**
      * @param array{
-     *     GranteeType?: string,
-     *     Grantee?: string,
-     *     Access?: list<string>
+     *     GranteeType?: string|null,
+     *     Grantee?: string|null,
+     *     Access?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

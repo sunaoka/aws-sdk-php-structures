@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConfigService\DeliverConfigSnapshot;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $configSnapshotId
+ * @property string|null $configSnapshotId
  */
 class DeliverConfigSnapshotResponse extends Response
 {

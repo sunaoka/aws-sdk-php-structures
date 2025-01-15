@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SourceColumn
- * @property string $TargetMultiMeasureAttributeName
- * @property 'DOUBLE'|'BIGINT'|'BOOLEAN'|'VARCHAR'|'TIMESTAMP' $MeasureValueType
+ * @property string|null $TargetMultiMeasureAttributeName
+ * @property 'DOUBLE'|'BIGINT'|'BOOLEAN'|'VARCHAR'|'TIMESTAMP'|null $MeasureValueType
  */
 class MultiMeasureAttributeMapping extends Shape
 {
     /**
      * @param array{
      *     SourceColumn: string,
-     *     TargetMultiMeasureAttributeName?: string,
-     *     MeasureValueType?: 'DOUBLE'|'BIGINT'|'BOOLEAN'|'VARCHAR'|'TIMESTAMP'
+     *     TargetMultiMeasureAttributeName?: string|null,
+     *     MeasureValueType?: 'DOUBLE'|'BIGINT'|'BOOLEAN'|'VARCHAR'|'TIMESTAMP'|null
      * } $args
      */
     public function __construct(array $args)

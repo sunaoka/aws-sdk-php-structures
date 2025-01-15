@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\DescribeScheduledQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ExecutionTimeInMillis
- * @property int $DataWrites
- * @property int $BytesMetered
- * @property int $CumulativeBytesScanned
- * @property int $RecordsIngested
- * @property int $QueryResultRows
+ * @property int|null $ExecutionTimeInMillis
+ * @property int|null $DataWrites
+ * @property int|null $BytesMetered
+ * @property int|null $CumulativeBytesScanned
+ * @property int|null $RecordsIngested
+ * @property int|null $QueryResultRows
  */
 class ExecutionStats extends Shape
 {
     /**
      * @param array{
-     *     ExecutionTimeInMillis?: int,
-     *     DataWrites?: int,
-     *     BytesMetered?: int,
-     *     CumulativeBytesScanned?: int,
-     *     RecordsIngested?: int,
-     *     QueryResultRows?: int
+     *     ExecutionTimeInMillis?: int|null,
+     *     DataWrites?: int|null,
+     *     BytesMetered?: int|null,
+     *     CumulativeBytesScanned?: int|null,
+     *     RecordsIngested?: int|null,
+     *     QueryResultRows?: int|null
      * } $args
      */
     public function __construct(array $args = [])

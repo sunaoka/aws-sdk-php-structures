@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\ListProblems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Title
- * @property string $ShortName
- * @property string $Insights
- * @property 'IGNORE'|'RESOLVED'|'PENDING'|'RECURRING'|'RECOVERING' $Status
- * @property string $AffectedResource
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property 'Informative'|'Low'|'Medium'|'High' $SeverityLevel
- * @property string $AccountId
- * @property string $ResourceGroupName
- * @property array<'INSIGHTS_FEEDBACK', 'NOT_SPECIFIED'|'USEFUL'|'NOT_USEFUL'> $Feedback
- * @property int $RecurringCount
- * @property \Aws\Api\DateTimeResult $LastRecurrenceTime
- * @property 'IGNORED'|'VISIBLE' $Visibility
- * @property 'MANUAL'|'AUTOMATIC'|'UNRESOLVED' $ResolutionMethod
+ * @property string|null $Id
+ * @property string|null $Title
+ * @property string|null $ShortName
+ * @property string|null $Insights
+ * @property 'IGNORE'|'RESOLVED'|'PENDING'|'RECURRING'|'RECOVERING'|null $Status
+ * @property string|null $AffectedResource
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property 'Informative'|'Low'|'Medium'|'High'|null $SeverityLevel
+ * @property string|null $AccountId
+ * @property string|null $ResourceGroupName
+ * @property array<'INSIGHTS_FEEDBACK', 'NOT_SPECIFIED'|'USEFUL'|'NOT_USEFUL'>|null $Feedback
+ * @property int|null $RecurringCount
+ * @property \Aws\Api\DateTimeResult|null $LastRecurrenceTime
+ * @property 'IGNORED'|'VISIBLE'|null $Visibility
+ * @property 'MANUAL'|'AUTOMATIC'|'UNRESOLVED'|null $ResolutionMethod
  */
 class Problem extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Title?: string,
-     *     ShortName?: string,
-     *     Insights?: string,
-     *     Status?: 'IGNORE'|'RESOLVED'|'PENDING'|'RECURRING'|'RECOVERING',
-     *     AffectedResource?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     SeverityLevel?: 'Informative'|'Low'|'Medium'|'High',
-     *     AccountId?: string,
-     *     ResourceGroupName?: string,
-     *     Feedback?: array<'INSIGHTS_FEEDBACK', 'NOT_SPECIFIED'|'USEFUL'|'NOT_USEFUL'>,
-     *     RecurringCount?: int,
-     *     LastRecurrenceTime?: \Aws\Api\DateTimeResult,
-     *     Visibility?: 'IGNORED'|'VISIBLE',
-     *     ResolutionMethod?: 'MANUAL'|'AUTOMATIC'|'UNRESOLVED'
+     *     Id?: string|null,
+     *     Title?: string|null,
+     *     ShortName?: string|null,
+     *     Insights?: string|null,
+     *     Status?: 'IGNORE'|'RESOLVED'|'PENDING'|'RECURRING'|'RECOVERING'|null,
+     *     AffectedResource?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     SeverityLevel?: 'Informative'|'Low'|'Medium'|'High'|null,
+     *     AccountId?: string|null,
+     *     ResourceGroupName?: string|null,
+     *     Feedback?: array<'INSIGHTS_FEEDBACK', 'NOT_SPECIFIED'|'USEFUL'|'NOT_USEFUL'>|null,
+     *     RecurringCount?: int|null,
+     *     LastRecurrenceTime?: \Aws\Api\DateTimeResult|null,
+     *     Visibility?: 'IGNORED'|'VISIBLE'|null,
+     *     ResolutionMethod?: 'MANUAL'|'AUTOMATIC'|'UNRESOLVED'|null
      * } $args
      */
     public function __construct(array $args = [])

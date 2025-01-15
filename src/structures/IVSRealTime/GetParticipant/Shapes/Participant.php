@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\GetParticipant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $participantId
- * @property string $userId
- * @property 'CONNECTED'|'DISCONNECTED' $state
- * @property \Aws\Api\DateTimeResult $firstJoinTime
- * @property array<string, string> $attributes
- * @property bool $published
- * @property string $ispName
- * @property string $osName
- * @property string $osVersion
- * @property string $browserName
- * @property string $browserVersion
- * @property string $sdkVersion
- * @property string $recordingS3BucketName
- * @property string $recordingS3Prefix
- * @property 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED' $recordingState
- * @property 'UNKNOWN'|'WHIP'|'RTMP'|'RTMPS' $protocol
+ * @property string|null $participantId
+ * @property string|null $userId
+ * @property 'CONNECTED'|'DISCONNECTED'|null $state
+ * @property \Aws\Api\DateTimeResult|null $firstJoinTime
+ * @property array<string, string>|null $attributes
+ * @property bool|null $published
+ * @property string|null $ispName
+ * @property string|null $osName
+ * @property string|null $osVersion
+ * @property string|null $browserName
+ * @property string|null $browserVersion
+ * @property string|null $sdkVersion
+ * @property string|null $recordingS3BucketName
+ * @property string|null $recordingS3Prefix
+ * @property 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED'|null $recordingState
+ * @property 'UNKNOWN'|'WHIP'|'RTMP'|'RTMPS'|null $protocol
  */
 class Participant extends Shape
 {
     /**
      * @param array{
-     *     participantId?: string,
-     *     userId?: string,
-     *     state?: 'CONNECTED'|'DISCONNECTED',
-     *     firstJoinTime?: \Aws\Api\DateTimeResult,
-     *     attributes?: array<string, string>,
-     *     published?: bool,
-     *     ispName?: string,
-     *     osName?: string,
-     *     osVersion?: string,
-     *     browserName?: string,
-     *     browserVersion?: string,
-     *     sdkVersion?: string,
-     *     recordingS3BucketName?: string,
-     *     recordingS3Prefix?: string,
-     *     recordingState?: 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED',
-     *     protocol?: 'UNKNOWN'|'WHIP'|'RTMP'|'RTMPS'
+     *     participantId?: string|null,
+     *     userId?: string|null,
+     *     state?: 'CONNECTED'|'DISCONNECTED'|null,
+     *     firstJoinTime?: \Aws\Api\DateTimeResult|null,
+     *     attributes?: array<string, string>|null,
+     *     published?: bool|null,
+     *     ispName?: string|null,
+     *     osName?: string|null,
+     *     osVersion?: string|null,
+     *     browserName?: string|null,
+     *     browserVersion?: string|null,
+     *     sdkVersion?: string|null,
+     *     recordingS3BucketName?: string|null,
+     *     recordingS3Prefix?: string|null,
+     *     recordingState?: 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED'|null,
+     *     protocol?: 'UNKNOWN'|'WHIP'|'RTMP'|'RTMPS'|null
      * } $args
      */
     public function __construct(array $args = [])

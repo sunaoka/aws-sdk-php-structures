@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetIdentityResolutionJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3BucketName
- * @property string $S3KeyName
+ * @property string|null $S3BucketName
+ * @property string|null $S3KeyName
  */
 class S3ExportingLocation extends Shape
 {
     /**
      * @param array{
-     *     S3BucketName?: string,
-     *     S3KeyName?: string
+     *     S3BucketName?: string|null,
+     *     S3KeyName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ElasticIp
- * @property string $Status
+ * @property string|null $ElasticIp
+ * @property string|null $Status
  */
 class ElasticIpStatus extends Shape
 {
     /**
      * @param array{
-     *     ElasticIp?: string,
-     *     Status?: string
+     *     ElasticIp?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

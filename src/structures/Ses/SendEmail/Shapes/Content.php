@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Data
- * @property string $Charset
+ * @property string|null $Charset
  */
 class Content extends Shape
 {
     /**
      * @param array{
      *     Data: string,
-     *     Charset?: string
+     *     Charset?: string|null
      * } $args
      */
     public function __construct(array $args)

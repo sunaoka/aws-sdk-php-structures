@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Swf\GetWorkflowExecutionHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $details
+ * @property string|null $details
  * @property int $scheduledEventId
  * @property int $startedEventId
- * @property int $latestCancelRequestedEventId
+ * @property int|null $latestCancelRequestedEventId
  */
 class ActivityTaskCanceledEventAttributes extends Shape
 {
     /**
      * @param array{
-     *     details?: string,
+     *     details?: string|null,
      *     scheduledEventId: int,
      *     startedEventId: int,
-     *     latestCancelRequestedEventId?: int
+     *     latestCancelRequestedEventId?: int|null
      * } $args
      */
     public function __construct(array $args)

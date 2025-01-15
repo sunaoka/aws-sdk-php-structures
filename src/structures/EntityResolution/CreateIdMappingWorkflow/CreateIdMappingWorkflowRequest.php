@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\EntityResolution\CreateIdMappingWorkflow;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property Shapes\IdMappingTechniques $idMappingTechniques
  * @property list<Shapes\IdMappingWorkflowInputSource> $inputSourceConfig
- * @property list<Shapes\IdMappingWorkflowOutputSource> $outputSourceConfig
- * @property string $roleArn
- * @property array<string, string> $tags
+ * @property list<Shapes\IdMappingWorkflowOutputSource>|null $outputSourceConfig
+ * @property string|null $roleArn
+ * @property array<string, string>|null $tags
  * @property string $workflowName
  */
 class CreateIdMappingWorkflowRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     idMappingTechniques: Shapes\IdMappingTechniques,
      *     inputSourceConfig: list<Shapes\IdMappingWorkflowInputSource>,
-     *     outputSourceConfig?: list<Shapes\IdMappingWorkflowOutputSource>,
-     *     roleArn?: string,
-     *     tags?: array<string, string>,
+     *     outputSourceConfig?: list<Shapes\IdMappingWorkflowOutputSource>|null,
+     *     roleArn?: string|null,
+     *     tags?: array<string, string>|null,
      *     workflowName: string
      * } $args
      */

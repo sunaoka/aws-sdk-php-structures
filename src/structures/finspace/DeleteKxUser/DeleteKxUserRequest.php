@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $userName
  * @property string $environmentId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteKxUserRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteKxUserRequest extends Request
      * @param array{
      *     userName: string,
      *     environmentId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

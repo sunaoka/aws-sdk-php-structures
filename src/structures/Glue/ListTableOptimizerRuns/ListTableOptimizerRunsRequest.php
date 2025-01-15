@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatabaseName
  * @property string $TableName
  * @property 'compaction'|'retention'|'orphan_file_deletion' $Type
- * @property int $MaxResults
- * @property string $NextToken
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListTableOptimizerRunsRequest extends Request
 {
@@ -20,8 +20,8 @@ class ListTableOptimizerRunsRequest extends Request
      *     DatabaseName: string,
      *     TableName: string,
      *     Type: 'compaction'|'retention'|'orphan_file_deletion',
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

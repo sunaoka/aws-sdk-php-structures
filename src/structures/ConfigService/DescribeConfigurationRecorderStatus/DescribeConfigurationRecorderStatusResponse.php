@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeConfigurationRecorderStat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ConfigurationRecorderStatus> $ConfigurationRecordersStatus
+ * @property list<Shapes\ConfigurationRecorderStatus>|null $ConfigurationRecordersStatus
  */
 class DescribeConfigurationRecorderStatusResponse extends Response
 {

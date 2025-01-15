@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $scopeId
  * @property 'SUCCEEDED'|'IN_PROGRESS'|'FAILED' $status
  * @property string $scopeArn
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class UpdateScopeResponse extends Response
 {

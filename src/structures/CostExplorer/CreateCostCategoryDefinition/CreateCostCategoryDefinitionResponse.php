@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CostExplorer\CreateCostCategoryDefinition;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CostCategoryArn
- * @property string $EffectiveStart
+ * @property string|null $CostCategoryArn
+ * @property string|null $EffectiveStart
  */
 class CreateCostCategoryDefinitionResponse extends Response
 {

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $findingId
- * @property string $nextToken
- * @property int<1, 250> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
  */
 class ListRelatedResourcesForAuditFindingRequest extends Request
 {
     /**
      * @param array{
      *     findingId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ScannedItemCount $ScannedItemCount
- * @property ThreatsDetectedItemCount $ThreatsDetectedItemCount
- * @property HighestSeverityThreatDetails $HighestSeverityThreatDetails
- * @property ThreatDetectedByName $ThreatDetectedByName
+ * @property ScannedItemCount|null $ScannedItemCount
+ * @property ThreatsDetectedItemCount|null $ThreatsDetectedItemCount
+ * @property HighestSeverityThreatDetails|null $HighestSeverityThreatDetails
+ * @property ThreatDetectedByName|null $ThreatDetectedByName
  */
 class ScanDetections extends Shape
 {
     /**
      * @param array{
-     *     ScannedItemCount?: ScannedItemCount,
-     *     ThreatsDetectedItemCount?: ThreatsDetectedItemCount,
-     *     HighestSeverityThreatDetails?: HighestSeverityThreatDetails,
-     *     ThreatDetectedByName?: ThreatDetectedByName
+     *     ScannedItemCount?: ScannedItemCount|null,
+     *     ThreatsDetectedItemCount?: ThreatsDetectedItemCount|null,
+     *     HighestSeverityThreatDetails?: HighestSeverityThreatDetails|null,
+     *     ThreatDetectedByName?: ThreatDetectedByName|null
      * } $args
      */
     public function __construct(array $args = [])

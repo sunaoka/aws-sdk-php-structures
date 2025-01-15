@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Function
  * @property list<Shapes\RuleAction> $Actions
  * @property 'DRAFT'|'PUBLISHED' $PublishStatus
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class CreateRuleRequest extends Request
 {
@@ -23,7 +23,7 @@ class CreateRuleRequest extends Request
      *     Function: string,
      *     Actions: list<Shapes\RuleAction>,
      *     PublishStatus: 'DRAFT'|'PUBLISHED',
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

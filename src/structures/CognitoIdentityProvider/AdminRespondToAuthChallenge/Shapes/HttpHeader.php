@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminRespondToAuthChall
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $headerName
- * @property string $headerValue
+ * @property string|null $headerName
+ * @property string|null $headerValue
  */
 class HttpHeader extends Shape
 {
     /**
      * @param array{
-     *     headerName?: string,
-     *     headerValue?: string
+     *     headerName?: string|null,
+     *     headerValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

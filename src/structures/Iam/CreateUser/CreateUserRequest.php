@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iam\CreateUser;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Path
+ * @property string|null $Path
  * @property string $UserName
- * @property string $PermissionsBoundary
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $PermissionsBoundary
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateUserRequest extends Request
 {
     /**
      * @param array{
-     *     Path?: string,
+     *     Path?: string|null,
      *     UserName: string,
-     *     PermissionsBoundary?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     PermissionsBoundary?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

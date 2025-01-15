@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EstimatedMonthlyCost
- * @property string $EstimatedMonthlySavings
- * @property string $CurrencyCode
- * @property bool $DefaultTargetInstance
- * @property ResourceDetails $ResourceDetails
- * @property ResourceUtilization $ExpectedResourceUtilization
- * @property list<'HYPERVISOR'|'NETWORK_INTERFACE'|'STORAGE_INTERFACE'|'INSTANCE_STORE_AVAILABILITY'|'VIRTUALIZATION_TYPE'> $PlatformDifferences
+ * @property string|null $EstimatedMonthlyCost
+ * @property string|null $EstimatedMonthlySavings
+ * @property string|null $CurrencyCode
+ * @property bool|null $DefaultTargetInstance
+ * @property ResourceDetails|null $ResourceDetails
+ * @property ResourceUtilization|null $ExpectedResourceUtilization
+ * @property list<'HYPERVISOR'|'NETWORK_INTERFACE'|'STORAGE_INTERFACE'|'INSTANCE_STORE_AVAILABILITY'|'VIRTUALIZATION_TYPE'>|null $PlatformDifferences
  */
 class TargetInstance extends Shape
 {
     /**
      * @param array{
-     *     EstimatedMonthlyCost?: string,
-     *     EstimatedMonthlySavings?: string,
-     *     CurrencyCode?: string,
-     *     DefaultTargetInstance?: bool,
-     *     ResourceDetails?: ResourceDetails,
-     *     ExpectedResourceUtilization?: ResourceUtilization,
-     *     PlatformDifferences?: list<'HYPERVISOR'|'NETWORK_INTERFACE'|'STORAGE_INTERFACE'|'INSTANCE_STORE_AVAILABILITY'|'VIRTUALIZATION_TYPE'>
+     *     EstimatedMonthlyCost?: string|null,
+     *     EstimatedMonthlySavings?: string|null,
+     *     CurrencyCode?: string|null,
+     *     DefaultTargetInstance?: bool|null,
+     *     ResourceDetails?: ResourceDetails|null,
+     *     ExpectedResourceUtilization?: ResourceUtilization|null,
+     *     PlatformDifferences?: list<'HYPERVISOR'|'NETWORK_INTERFACE'|'STORAGE_INTERFACE'|'INSTANCE_STORE_AVAILABILITY'|'VIRTUALIZATION_TYPE'>|null
      * } $args
      */
     public function __construct(array $args = [])

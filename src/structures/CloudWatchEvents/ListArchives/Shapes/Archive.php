@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\ListArchives\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ArchiveName
- * @property string $EventSourceArn
- * @property 'ENABLED'|'DISABLED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED' $State
- * @property string $StateReason
- * @property int<0, max> $RetentionDays
- * @property int $SizeBytes
- * @property int $EventCount
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $ArchiveName
+ * @property string|null $EventSourceArn
+ * @property 'ENABLED'|'DISABLED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|null $State
+ * @property string|null $StateReason
+ * @property int<0, max>|null $RetentionDays
+ * @property int|null $SizeBytes
+ * @property int|null $EventCount
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class Archive extends Shape
 {
     /**
      * @param array{
-     *     ArchiveName?: string,
-     *     EventSourceArn?: string,
-     *     State?: 'ENABLED'|'DISABLED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED',
-     *     StateReason?: string,
-     *     RetentionDays?: int<0, max>,
-     *     SizeBytes?: int,
-     *     EventCount?: int,
-     *     CreationTime?: \Aws\Api\DateTimeResult
+     *     ArchiveName?: string|null,
+     *     EventSourceArn?: string|null,
+     *     State?: 'ENABLED'|'DISABLED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED'|null,
+     *     StateReason?: string|null,
+     *     RetentionDays?: int<0, max>|null,
+     *     SizeBytes?: int|null,
+     *     EventCount?: int|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

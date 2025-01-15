@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ObservabilityAdmin\ListResourceTelemetryForOrga
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TelemetryConfiguration> $TelemetryConfigurations
- * @property string $NextToken
+ * @property list<Shapes\TelemetryConfiguration>|null $TelemetryConfigurations
+ * @property string|null $NextToken
  */
 class ListResourceTelemetryForOrganizationResponse extends Response
 {

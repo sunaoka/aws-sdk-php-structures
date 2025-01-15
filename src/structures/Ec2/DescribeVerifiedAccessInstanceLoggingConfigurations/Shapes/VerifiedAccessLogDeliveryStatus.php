@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVerifiedAccessInstanceLoggingConfig
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'success'|'failed' $Code
- * @property string $Message
+ * @property 'success'|'failed'|null $Code
+ * @property string|null $Message
  */
 class VerifiedAccessLogDeliveryStatus extends Shape
 {
     /**
      * @param array{
-     *     Code?: 'success'|'failed',
-     *     Message?: string
+     *     Code?: 'success'|'failed'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

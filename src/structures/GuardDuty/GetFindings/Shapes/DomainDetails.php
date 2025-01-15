@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Domain
+ * @property string|null $Domain
  */
 class DomainDetails extends Shape
 {
     /**
-     * @param array{Domain?: string} $args
+     * @param array{Domain?: string|null} $args
      */
     public function __construct(array $args = [])
     {

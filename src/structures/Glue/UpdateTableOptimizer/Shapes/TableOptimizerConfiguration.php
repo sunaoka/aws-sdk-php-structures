@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateTableOptimizer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $roleArn
- * @property bool $enabled
- * @property TableOptimizerVpcConfiguration $vpcConfiguration
- * @property RetentionConfiguration $retentionConfiguration
- * @property OrphanFileDeletionConfiguration $orphanFileDeletionConfiguration
+ * @property string|null $roleArn
+ * @property bool|null $enabled
+ * @property TableOptimizerVpcConfiguration|null $vpcConfiguration
+ * @property RetentionConfiguration|null $retentionConfiguration
+ * @property OrphanFileDeletionConfiguration|null $orphanFileDeletionConfiguration
  */
 class TableOptimizerConfiguration extends Shape
 {
     /**
      * @param array{
-     *     roleArn?: string,
-     *     enabled?: bool,
-     *     vpcConfiguration?: TableOptimizerVpcConfiguration,
-     *     retentionConfiguration?: RetentionConfiguration,
-     *     orphanFileDeletionConfiguration?: OrphanFileDeletionConfiguration
+     *     roleArn?: string|null,
+     *     enabled?: bool|null,
+     *     vpcConfiguration?: TableOptimizerVpcConfiguration|null,
+     *     retentionConfiguration?: RetentionConfiguration|null,
+     *     orphanFileDeletionConfiguration?: OrphanFileDeletionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

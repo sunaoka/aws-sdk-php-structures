@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FIS\StopExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $code
+ * @property string|null $code
  */
 class ExperimentReportError extends Shape
 {
     /**
-     * @param array{code?: string} $args
+     * @param array{code?: string|null} $args
      */
     public function __construct(array $args = [])
     {

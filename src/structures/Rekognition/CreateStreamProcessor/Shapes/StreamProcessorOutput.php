@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\CreateStreamProcessor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property KinesisDataStream $KinesisDataStream
- * @property S3Destination $S3Destination
+ * @property KinesisDataStream|null $KinesisDataStream
+ * @property S3Destination|null $S3Destination
  */
 class StreamProcessorOutput extends Shape
 {
     /**
      * @param array{
-     *     KinesisDataStream?: KinesisDataStream,
-     *     S3Destination?: S3Destination
+     *     KinesisDataStream?: KinesisDataStream|null,
+     *     S3Destination?: S3Destination|null
      * } $args
      */
     public function __construct(array $args = [])

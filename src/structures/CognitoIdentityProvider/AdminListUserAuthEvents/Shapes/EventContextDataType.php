@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminListUserAuthEvents
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpAddress
- * @property string $DeviceName
- * @property string $Timezone
- * @property string $City
- * @property string $Country
+ * @property string|null $IpAddress
+ * @property string|null $DeviceName
+ * @property string|null $Timezone
+ * @property string|null $City
+ * @property string|null $Country
  */
 class EventContextDataType extends Shape
 {
     /**
      * @param array{
-     *     IpAddress?: string,
-     *     DeviceName?: string,
-     *     Timezone?: string,
-     *     City?: string,
-     *     Country?: string
+     *     IpAddress?: string|null,
+     *     DeviceName?: string|null,
+     *     Timezone?: string|null,
+     *     City?: string|null,
+     *     Country?: string|null
      * } $args
      */
     public function __construct(array $args = [])

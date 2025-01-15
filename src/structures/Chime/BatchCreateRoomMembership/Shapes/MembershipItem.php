@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chime\BatchCreateRoomMembership\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MemberId
- * @property 'Administrator'|'Member' $Role
+ * @property string|null $MemberId
+ * @property 'Administrator'|'Member'|null $Role
  */
 class MembershipItem extends Shape
 {
     /**
      * @param array{
-     *     MemberId?: string,
-     *     Role?: 'Administrator'|'Member'
+     *     MemberId?: string|null,
+     *     Role?: 'Administrator'|'Member'|null
      * } $args
      */
     public function __construct(array $args = [])

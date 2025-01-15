@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\TranscribeService\CreateCallAnalyticsCategory\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CategoryName
- * @property list<Rule> $Rules
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property \Aws\Api\DateTimeResult $LastUpdateTime
- * @property list<Tag> $Tags
- * @property 'REAL_TIME'|'POST_CALL' $InputType
+ * @property string|null $CategoryName
+ * @property list<Rule>|null $Rules
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateTime
+ * @property list<Tag>|null $Tags
+ * @property 'REAL_TIME'|'POST_CALL'|null $InputType
  */
 class CategoryProperties extends Shape
 {
     /**
      * @param array{
-     *     CategoryName?: string,
-     *     Rules?: list<Rule>,
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     Tags?: list<Tag>,
-     *     InputType?: 'REAL_TIME'|'POST_CALL'
+     *     CategoryName?: string|null,
+     *     Rules?: list<Rule>|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: list<Tag>|null,
+     *     InputType?: 'REAL_TIME'|'POST_CALL'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InstancePath
- * @property string $ContainerPath
- * @property 'READ_ONLY'|'READ_AND_WRITE' $AccessLevel
+ * @property string|null $ContainerPath
+ * @property 'READ_ONLY'|'READ_AND_WRITE'|null $AccessLevel
  */
 class ContainerMountPoint extends Shape
 {
     /**
      * @param array{
      *     InstancePath: string,
-     *     ContainerPath?: string,
-     *     AccessLevel?: 'READ_ONLY'|'READ_AND_WRITE'
+     *     ContainerPath?: string|null,
+     *     AccessLevel?: 'READ_ONLY'|'READ_AND_WRITE'|null
      * } $args
      */
     public function __construct(array $args)

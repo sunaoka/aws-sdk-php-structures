@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string> $eventId
  * @property PropertygraphData $data
  * @property string $op
- * @property bool $isLastOp
+ * @property bool|null $isLastOp
  */
 class PropertygraphRecord extends Shape
 {
@@ -19,7 +19,7 @@ class PropertygraphRecord extends Shape
      *     eventId: array<string, string>,
      *     data: PropertygraphData,
      *     op: string,
-     *     isLastOp?: bool
+     *     isLastOp?: bool|null
      * } $args
      */
     public function __construct(array $args)

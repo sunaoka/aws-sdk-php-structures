@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $fileName
- * @property string $folderPath
+ * @property string|null $folderPath
  */
 class FileBatchJobDefinition extends Shape
 {
     /**
      * @param array{
      *     fileName: string,
-     *     folderPath?: string
+     *     folderPath?: string|null
      * } $args
      */
     public function __construct(array $args)

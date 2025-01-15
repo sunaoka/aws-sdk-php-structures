@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeBundleTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Storage $S3
+ * @property S3Storage|null $S3
  */
 class Storage extends Shape
 {
     /**
-     * @param array{S3?: S3Storage} $args
+     * @param array{S3?: S3Storage|null} $args
      */
     public function __construct(array $args = [])
     {

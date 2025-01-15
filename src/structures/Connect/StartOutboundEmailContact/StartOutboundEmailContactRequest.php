@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $ContactId
- * @property Shapes\EmailAddressInfo $FromEmailAddress
+ * @property Shapes\EmailAddressInfo|null $FromEmailAddress
  * @property Shapes\EmailAddressInfo $DestinationEmailAddress
- * @property Shapes\OutboundAdditionalRecipients $AdditionalRecipients
+ * @property Shapes\OutboundAdditionalRecipients|null $AdditionalRecipients
  * @property Shapes\OutboundEmailContent $EmailMessage
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class StartOutboundEmailContactRequest extends Request
 {
@@ -19,11 +19,11 @@ class StartOutboundEmailContactRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     ContactId: string,
-     *     FromEmailAddress?: Shapes\EmailAddressInfo,
+     *     FromEmailAddress?: Shapes\EmailAddressInfo|null,
      *     DestinationEmailAddress: Shapes\EmailAddressInfo,
-     *     AdditionalRecipients?: Shapes\OutboundAdditionalRecipients,
+     *     AdditionalRecipients?: Shapes\OutboundAdditionalRecipients|null,
      *     EmailMessage: Shapes\OutboundEmailContent,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

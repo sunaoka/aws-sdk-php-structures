@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\TimestreamWrite\ListTables;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Table> $Tables
- * @property string $NextToken
+ * @property list<Shapes\Table>|null $Tables
+ * @property string|null $NextToken
  */
 class ListTablesResponse extends Response
 {

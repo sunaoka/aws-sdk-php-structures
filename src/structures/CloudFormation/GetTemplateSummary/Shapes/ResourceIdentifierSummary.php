@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFormation\GetTemplateSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceType
- * @property list<string> $LogicalResourceIds
- * @property list<string> $ResourceIdentifiers
+ * @property string|null $ResourceType
+ * @property list<string>|null $LogicalResourceIds
+ * @property list<string>|null $ResourceIdentifiers
  */
 class ResourceIdentifierSummary extends Shape
 {
     /**
      * @param array{
-     *     ResourceType?: string,
-     *     LogicalResourceIds?: list<string>,
-     *     ResourceIdentifiers?: list<string>
+     *     ResourceType?: string|null,
+     *     LogicalResourceIds?: list<string>|null,
+     *     ResourceIdentifiers?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

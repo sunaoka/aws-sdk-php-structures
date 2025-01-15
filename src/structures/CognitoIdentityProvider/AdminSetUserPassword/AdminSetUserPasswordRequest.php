@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property string $Username
  * @property string $Password
- * @property bool $Permanent
+ * @property bool|null $Permanent
  */
 class AdminSetUserPasswordRequest extends Request
 {
@@ -17,7 +17,7 @@ class AdminSetUserPasswordRequest extends Request
      *     UserPoolId: string,
      *     Username: string,
      *     Password: string,
-     *     Permanent?: bool
+     *     Permanent?: bool|null
      * } $args
      */
     public function __construct(array $args)

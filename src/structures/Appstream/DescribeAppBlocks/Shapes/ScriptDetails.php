@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property S3Location $ScriptS3Location
  * @property string $ExecutablePath
- * @property string $ExecutableParameters
+ * @property string|null $ExecutableParameters
  * @property int $TimeoutInSeconds
  */
 class ScriptDetails extends Shape
@@ -16,7 +16,7 @@ class ScriptDetails extends Shape
      * @param array{
      *     ScriptS3Location: S3Location,
      *     ExecutablePath: string,
-     *     ExecutableParameters?: string,
+     *     ExecutableParameters?: string|null,
      *     TimeoutInSeconds: int
      * } $args
      */

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateNetworkInsightsPath\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceAddress
- * @property FilterPortRange $SourcePortRange
- * @property string $DestinationAddress
- * @property FilterPortRange $DestinationPortRange
+ * @property string|null $SourceAddress
+ * @property FilterPortRange|null $SourcePortRange
+ * @property string|null $DestinationAddress
+ * @property FilterPortRange|null $DestinationPortRange
  */
 class PathFilter extends Shape
 {
     /**
      * @param array{
-     *     SourceAddress?: string,
-     *     SourcePortRange?: FilterPortRange,
-     *     DestinationAddress?: string,
-     *     DestinationPortRange?: FilterPortRange
+     *     SourceAddress?: string|null,
+     *     SourcePortRange?: FilterPortRange|null,
+     *     DestinationAddress?: string|null,
+     *     DestinationPortRange?: FilterPortRange|null
      * } $args
      */
     public function __construct(array $args = [])

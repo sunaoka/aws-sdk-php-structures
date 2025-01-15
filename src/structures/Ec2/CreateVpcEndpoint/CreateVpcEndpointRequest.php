@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVpcEndpoint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork' $VpcEndpointType
+ * @property bool|null $DryRun
+ * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null $VpcEndpointType
  * @property string $VpcId
- * @property string $ServiceName
- * @property string $PolicyDocument
- * @property list<string> $RouteTableIds
- * @property list<string> $SubnetIds
- * @property list<string> $SecurityGroupIds
- * @property 'ipv4'|'dualstack'|'ipv6' $IpAddressType
- * @property Shapes\DnsOptionsSpecification $DnsOptions
- * @property string $ClientToken
- * @property bool $PrivateDnsEnabled
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property list<Shapes\SubnetConfiguration> $SubnetConfigurations
- * @property string $ServiceNetworkArn
- * @property string $ResourceConfigurationArn
- * @property string $ServiceRegion
+ * @property string|null $ServiceName
+ * @property string|null $PolicyDocument
+ * @property list<string>|null $RouteTableIds
+ * @property list<string>|null $SubnetIds
+ * @property list<string>|null $SecurityGroupIds
+ * @property 'ipv4'|'dualstack'|'ipv6'|null $IpAddressType
+ * @property Shapes\DnsOptionsSpecification|null $DnsOptions
+ * @property string|null $ClientToken
+ * @property bool|null $PrivateDnsEnabled
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property list<Shapes\SubnetConfiguration>|null $SubnetConfigurations
+ * @property string|null $ServiceNetworkArn
+ * @property string|null $ResourceConfigurationArn
+ * @property string|null $ServiceRegion
  */
 class CreateVpcEndpointRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork',
+     *     DryRun?: bool|null,
+     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null,
      *     VpcId: string,
-     *     ServiceName?: string,
-     *     PolicyDocument?: string,
-     *     RouteTableIds?: list<string>,
-     *     SubnetIds?: list<string>,
-     *     SecurityGroupIds?: list<string>,
-     *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6',
-     *     DnsOptions?: Shapes\DnsOptionsSpecification,
-     *     ClientToken?: string,
-     *     PrivateDnsEnabled?: bool,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     SubnetConfigurations?: list<Shapes\SubnetConfiguration>,
-     *     ServiceNetworkArn?: string,
-     *     ResourceConfigurationArn?: string,
-     *     ServiceRegion?: string
+     *     ServiceName?: string|null,
+     *     PolicyDocument?: string|null,
+     *     RouteTableIds?: list<string>|null,
+     *     SubnetIds?: list<string>|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6'|null,
+     *     DnsOptions?: Shapes\DnsOptionsSpecification|null,
+     *     ClientToken?: string|null,
+     *     PrivateDnsEnabled?: bool|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     SubnetConfigurations?: list<Shapes\SubnetConfiguration>|null,
+     *     ServiceNetworkArn?: string|null,
+     *     ResourceConfigurationArn?: string|null,
+     *     ServiceRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

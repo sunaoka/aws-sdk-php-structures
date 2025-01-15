@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Omics\GetReadSetMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 10000> $totalParts
- * @property int<1, 5368709120> $partSize
- * @property int<1, 5497558138880> $contentLength
- * @property ReadSetS3Access $s3Access
+ * @property int<1, 10000>|null $totalParts
+ * @property int<1, 5368709120>|null $partSize
+ * @property int<1, 5497558138880>|null $contentLength
+ * @property ReadSetS3Access|null $s3Access
  */
 class FileInformation extends Shape
 {
     /**
      * @param array{
-     *     totalParts?: int<1, 10000>,
-     *     partSize?: int<1, 5368709120>,
-     *     contentLength?: int<1, 5497558138880>,
-     *     s3Access?: ReadSetS3Access
+     *     totalParts?: int<1, 10000>|null,
+     *     partSize?: int<1, 5368709120>|null,
+     *     contentLength?: int<1, 5497558138880>|null,
+     *     s3Access?: ReadSetS3Access|null
      * } $args
      */
     public function __construct(array $args = [])

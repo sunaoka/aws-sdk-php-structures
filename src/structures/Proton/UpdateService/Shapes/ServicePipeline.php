@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'CANCELLING'|'CANCELLED' $deploymentStatus
- * @property string $deploymentStatusMessage
- * @property string $lastAttemptedDeploymentId
+ * @property string|null $deploymentStatusMessage
+ * @property string|null $lastAttemptedDeploymentId
  * @property \Aws\Api\DateTimeResult $lastDeploymentAttemptedAt
  * @property \Aws\Api\DateTimeResult $lastDeploymentSucceededAt
- * @property string $lastSucceededDeploymentId
- * @property string $spec
+ * @property string|null $lastSucceededDeploymentId
+ * @property string|null $spec
  * @property string $templateMajorVersion
  * @property string $templateMinorVersion
  * @property string $templateName
@@ -25,12 +25,12 @@ class ServicePipeline extends Shape
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     deploymentStatus: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'CANCELLING'|'CANCELLED',
-     *     deploymentStatusMessage?: string,
-     *     lastAttemptedDeploymentId?: string,
+     *     deploymentStatusMessage?: string|null,
+     *     lastAttemptedDeploymentId?: string|null,
      *     lastDeploymentAttemptedAt: \Aws\Api\DateTimeResult,
      *     lastDeploymentSucceededAt: \Aws\Api\DateTimeResult,
-     *     lastSucceededDeploymentId?: string,
-     *     spec?: string,
+     *     lastSucceededDeploymentId?: string|null,
+     *     spec?: string|null,
      *     templateMajorVersion: string,
      *     templateMinorVersion: string,
      *     templateName: string

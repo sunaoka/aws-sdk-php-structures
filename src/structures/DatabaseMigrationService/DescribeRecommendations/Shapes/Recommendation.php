@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatabaseId
- * @property string $EngineName
- * @property string $CreatedDate
- * @property string $Status
- * @property bool $Preferred
- * @property RecommendationSettings $Settings
- * @property RecommendationData $Data
+ * @property string|null $DatabaseId
+ * @property string|null $EngineName
+ * @property string|null $CreatedDate
+ * @property string|null $Status
+ * @property bool|null $Preferred
+ * @property RecommendationSettings|null $Settings
+ * @property RecommendationData|null $Data
  */
 class Recommendation extends Shape
 {
     /**
      * @param array{
-     *     DatabaseId?: string,
-     *     EngineName?: string,
-     *     CreatedDate?: string,
-     *     Status?: string,
-     *     Preferred?: bool,
-     *     Settings?: RecommendationSettings,
-     *     Data?: RecommendationData
+     *     DatabaseId?: string|null,
+     *     EngineName?: string|null,
+     *     CreatedDate?: string|null,
+     *     Status?: string|null,
+     *     Preferred?: bool|null,
+     *     Settings?: RecommendationSettings|null,
+     *     Data?: RecommendationData|null
      * } $args
      */
     public function __construct(array $args = [])

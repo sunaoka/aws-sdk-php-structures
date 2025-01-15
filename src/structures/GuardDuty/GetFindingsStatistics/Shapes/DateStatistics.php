@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindingsStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Date
- * @property \Aws\Api\DateTimeResult $LastGeneratedAt
- * @property double $Severity
- * @property int $TotalFindings
+ * @property \Aws\Api\DateTimeResult|null $Date
+ * @property \Aws\Api\DateTimeResult|null $LastGeneratedAt
+ * @property double|null $Severity
+ * @property int|null $TotalFindings
  */
 class DateStatistics extends Shape
 {
     /**
      * @param array{
-     *     Date?: \Aws\Api\DateTimeResult,
-     *     LastGeneratedAt?: \Aws\Api\DateTimeResult,
-     *     Severity?: double,
-     *     TotalFindings?: int
+     *     Date?: \Aws\Api\DateTimeResult|null,
+     *     LastGeneratedAt?: \Aws\Api\DateTimeResult|null,
+     *     Severity?: double|null,
+     *     TotalFindings?: int|null
      * } $args
      */
     public function __construct(array $args = [])

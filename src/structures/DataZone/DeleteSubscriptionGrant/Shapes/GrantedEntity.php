@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\DeleteSubscriptionGrant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ListingRevision $listing
+ * @property ListingRevision|null $listing
  */
 class GrantedEntity extends Shape
 {
     /**
-     * @param array{listing?: ListingRevision} $args
+     * @param array{listing?: ListingRevision|null} $args
      */
     public function __construct(array $args = [])
     {

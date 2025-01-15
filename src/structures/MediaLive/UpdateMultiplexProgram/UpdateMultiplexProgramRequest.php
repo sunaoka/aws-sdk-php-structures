@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $MultiplexId
- * @property Shapes\MultiplexProgramSettings $MultiplexProgramSettings
+ * @property Shapes\MultiplexProgramSettings|null $MultiplexProgramSettings
  * @property string $ProgramName
  */
 class UpdateMultiplexProgramRequest extends Request
@@ -14,7 +14,7 @@ class UpdateMultiplexProgramRequest extends Request
     /**
      * @param array{
      *     MultiplexId: string,
-     *     MultiplexProgramSettings?: Shapes\MultiplexProgramSettings,
+     *     MultiplexProgramSettings?: Shapes\MultiplexProgramSettings|null,
      *     ProgramName: string
      * } $args
      */

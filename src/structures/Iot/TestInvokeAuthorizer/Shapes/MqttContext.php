@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\TestInvokeAuthorizer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $username
- * @property string|resource|\Psr\Http\Message\StreamInterface $password
- * @property string $clientId
+ * @property string|null $username
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $password
+ * @property string|null $clientId
  */
 class MqttContext extends Shape
 {
     /**
      * @param array{
-     *     username?: string,
-     *     password?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     clientId?: string
+     *     username?: string|null,
+     *     password?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     clientId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

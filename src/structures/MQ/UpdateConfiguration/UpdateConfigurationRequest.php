@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ConfigurationId
  * @property string $Data
- * @property string $Description
+ * @property string|null $Description
  */
 class UpdateConfigurationRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateConfigurationRequest extends Request
      * @param array{
      *     ConfigurationId: string,
      *     Data: string,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

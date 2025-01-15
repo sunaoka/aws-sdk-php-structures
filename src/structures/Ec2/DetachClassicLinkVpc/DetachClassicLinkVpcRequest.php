@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DetachClassicLinkVpc;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $InstanceId
  * @property string $VpcId
  */
@@ -13,7 +13,7 @@ class DetachClassicLinkVpcRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InstanceId: string,
      *     VpcId: string
      * } $args

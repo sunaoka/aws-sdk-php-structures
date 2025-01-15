@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ListJobsByStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StartTime
- * @property string $Duration
+ * @property string|null $StartTime
+ * @property string|null $Duration
  */
 class TimeSpan extends Shape
 {
     /**
      * @param array{
-     *     StartTime?: string,
-     *     Duration?: string
+     *     StartTime?: string|null,
+     *     Duration?: string|null
      * } $args
      */
     public function __construct(array $args = [])

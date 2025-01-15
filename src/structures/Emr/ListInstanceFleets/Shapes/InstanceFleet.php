@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Emr\ListInstanceFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property InstanceFleetStatus $Status
- * @property 'MASTER'|'CORE'|'TASK' $InstanceFleetType
- * @property int<0, max> $TargetOnDemandCapacity
- * @property int<0, max> $TargetSpotCapacity
- * @property int<0, max> $ProvisionedOnDemandCapacity
- * @property int<0, max> $ProvisionedSpotCapacity
- * @property list<InstanceTypeSpecification> $InstanceTypeSpecifications
- * @property InstanceFleetProvisioningSpecifications $LaunchSpecifications
- * @property InstanceFleetResizingSpecifications $ResizeSpecifications
- * @property string $Context
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property InstanceFleetStatus|null $Status
+ * @property 'MASTER'|'CORE'|'TASK'|null $InstanceFleetType
+ * @property int<0, max>|null $TargetOnDemandCapacity
+ * @property int<0, max>|null $TargetSpotCapacity
+ * @property int<0, max>|null $ProvisionedOnDemandCapacity
+ * @property int<0, max>|null $ProvisionedSpotCapacity
+ * @property list<InstanceTypeSpecification>|null $InstanceTypeSpecifications
+ * @property InstanceFleetProvisioningSpecifications|null $LaunchSpecifications
+ * @property InstanceFleetResizingSpecifications|null $ResizeSpecifications
+ * @property string|null $Context
  */
 class InstanceFleet extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Status?: InstanceFleetStatus,
-     *     InstanceFleetType?: 'MASTER'|'CORE'|'TASK',
-     *     TargetOnDemandCapacity?: int<0, max>,
-     *     TargetSpotCapacity?: int<0, max>,
-     *     ProvisionedOnDemandCapacity?: int<0, max>,
-     *     ProvisionedSpotCapacity?: int<0, max>,
-     *     InstanceTypeSpecifications?: list<InstanceTypeSpecification>,
-     *     LaunchSpecifications?: InstanceFleetProvisioningSpecifications,
-     *     ResizeSpecifications?: InstanceFleetResizingSpecifications,
-     *     Context?: string
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Status?: InstanceFleetStatus|null,
+     *     InstanceFleetType?: 'MASTER'|'CORE'|'TASK'|null,
+     *     TargetOnDemandCapacity?: int<0, max>|null,
+     *     TargetSpotCapacity?: int<0, max>|null,
+     *     ProvisionedOnDemandCapacity?: int<0, max>|null,
+     *     ProvisionedSpotCapacity?: int<0, max>|null,
+     *     InstanceTypeSpecifications?: list<InstanceTypeSpecification>|null,
+     *     LaunchSpecifications?: InstanceFleetProvisioningSpecifications|null,
+     *     ResizeSpecifications?: InstanceFleetResizingSpecifications|null,
+     *     Context?: string|null
      * } $args
      */
     public function __construct(array $args = [])

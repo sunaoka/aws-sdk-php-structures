@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Schemas\ListSchemas;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $Limit
- * @property string $NextToken
+ * @property int|null $Limit
+ * @property string|null $NextToken
  * @property string $RegistryName
- * @property string $SchemaNamePrefix
+ * @property string|null $SchemaNamePrefix
  */
 class ListSchemasRequest extends Request
 {
     /**
      * @param array{
-     *     Limit?: int,
-     *     NextToken?: string,
+     *     Limit?: int|null,
+     *     NextToken?: string|null,
      *     RegistryName: string,
-     *     SchemaNamePrefix?: string
+     *     SchemaNamePrefix?: string|null
      * } $args
      */
     public function __construct(array $args)

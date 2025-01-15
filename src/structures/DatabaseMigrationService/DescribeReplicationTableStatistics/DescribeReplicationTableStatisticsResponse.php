@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationTab
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReplicationConfigArn
- * @property string $Marker
- * @property list<Shapes\TableStatistics> $ReplicationTableStatistics
+ * @property string|null $ReplicationConfigArn
+ * @property string|null $Marker
+ * @property list<Shapes\TableStatistics>|null $ReplicationTableStatistics
  */
 class DescribeReplicationTableStatisticsResponse extends Response
 {

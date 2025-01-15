@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\InternetMonitor\ListMonitors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 25> $MaxResults
- * @property string $MonitorStatus
- * @property bool $IncludeLinkedAccounts
+ * @property string|null $NextToken
+ * @property int<1, 25>|null $MaxResults
+ * @property string|null $MonitorStatus
+ * @property bool|null $IncludeLinkedAccounts
  */
 class ListMonitorsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 25>,
-     *     MonitorStatus?: string,
-     *     IncludeLinkedAccounts?: bool
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 25>|null,
+     *     MonitorStatus?: string|null,
+     *     IncludeLinkedAccounts?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

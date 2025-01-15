@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ModelName
  * @property string $InferenceSchedulerName
- * @property int<0, 60> $DataDelayOffsetInMinutes
+ * @property int<0, 60>|null $DataDelayOffsetInMinutes
  * @property 'PT5M'|'PT10M'|'PT15M'|'PT30M'|'PT1H' $DataUploadFrequency
  * @property Shapes\InferenceInputConfiguration $DataInputConfiguration
  * @property Shapes\InferenceOutputConfiguration $DataOutputConfiguration
  * @property string $RoleArn
- * @property string $ServerSideKmsKeyId
+ * @property string|null $ServerSideKmsKeyId
  * @property string $ClientToken
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateInferenceSchedulerRequest extends Request
 {
@@ -22,14 +22,14 @@ class CreateInferenceSchedulerRequest extends Request
      * @param array{
      *     ModelName: string,
      *     InferenceSchedulerName: string,
-     *     DataDelayOffsetInMinutes?: int<0, 60>,
+     *     DataDelayOffsetInMinutes?: int<0, 60>|null,
      *     DataUploadFrequency: 'PT5M'|'PT10M'|'PT15M'|'PT30M'|'PT1H',
      *     DataInputConfiguration: Shapes\InferenceInputConfiguration,
      *     DataOutputConfiguration: Shapes\InferenceOutputConfiguration,
      *     RoleArn: string,
-     *     ServerSideKmsKeyId?: string,
+     *     ServerSideKmsKeyId?: string|null,
      *     ClientToken: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MinimumInstanceMetadataServiceVersion
+ * @property string|null $MinimumInstanceMetadataServiceVersion
  */
 class AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetails extends Shape
 {
     /**
-     * @param array{MinimumInstanceMetadataServiceVersion?: string} $args
+     * @param array{MinimumInstanceMetadataServiceVersion?: string|null} $args
      */
     public function __construct(array $args = [])
     {

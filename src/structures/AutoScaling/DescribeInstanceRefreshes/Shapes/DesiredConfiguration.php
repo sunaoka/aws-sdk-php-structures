@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeInstanceRefreshes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LaunchTemplateSpecification $LaunchTemplate
- * @property MixedInstancesPolicy $MixedInstancesPolicy
+ * @property LaunchTemplateSpecification|null $LaunchTemplate
+ * @property MixedInstancesPolicy|null $MixedInstancesPolicy
  */
 class DesiredConfiguration extends Shape
 {
     /**
      * @param array{
-     *     LaunchTemplate?: LaunchTemplateSpecification,
-     *     MixedInstancesPolicy?: MixedInstancesPolicy
+     *     LaunchTemplate?: LaunchTemplateSpecification|null,
+     *     MixedInstancesPolicy?: MixedInstancesPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

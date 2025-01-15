@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\UpdatePackagingGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\Authorization $Authorization
+ * @property Shapes\Authorization|null $Authorization
  * @property string $Id
  */
 class UpdatePackagingGroupRequest extends Request
 {
     /**
      * @param array{
-     *     Authorization?: Shapes\Authorization,
+     *     Authorization?: Shapes\Authorization|null,
      *     Id: string
      * } $args
      */

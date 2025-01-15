@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LogicalInterfaceName
- * @property 'NAT'|'BRIDGE' $NetworkInterfaceMode
- * @property string $PhysicalInterfaceName
+ * @property string|null $LogicalInterfaceName
+ * @property 'NAT'|'BRIDGE'|null $NetworkInterfaceMode
+ * @property string|null $PhysicalInterfaceName
  */
 class NodeInterfaceMappingCreateRequest extends Shape
 {
     /**
      * @param array{
-     *     LogicalInterfaceName?: string,
-     *     NetworkInterfaceMode?: 'NAT'|'BRIDGE',
-     *     PhysicalInterfaceName?: string
+     *     LogicalInterfaceName?: string|null,
+     *     NetworkInterfaceMode?: 'NAT'|'BRIDGE'|null,
+     *     PhysicalInterfaceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\CreateUserPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PreSignUp
- * @property string $CustomMessage
- * @property string $PostConfirmation
- * @property string $PreAuthentication
- * @property string $PostAuthentication
- * @property string $DefineAuthChallenge
- * @property string $CreateAuthChallenge
- * @property string $VerifyAuthChallengeResponse
- * @property string $PreTokenGeneration
- * @property string $UserMigration
- * @property PreTokenGenerationVersionConfigType $PreTokenGenerationConfig
- * @property CustomSMSLambdaVersionConfigType $CustomSMSSender
- * @property CustomEmailLambdaVersionConfigType $CustomEmailSender
- * @property string $KMSKeyID
+ * @property string|null $PreSignUp
+ * @property string|null $CustomMessage
+ * @property string|null $PostConfirmation
+ * @property string|null $PreAuthentication
+ * @property string|null $PostAuthentication
+ * @property string|null $DefineAuthChallenge
+ * @property string|null $CreateAuthChallenge
+ * @property string|null $VerifyAuthChallengeResponse
+ * @property string|null $PreTokenGeneration
+ * @property string|null $UserMigration
+ * @property PreTokenGenerationVersionConfigType|null $PreTokenGenerationConfig
+ * @property CustomSMSLambdaVersionConfigType|null $CustomSMSSender
+ * @property CustomEmailLambdaVersionConfigType|null $CustomEmailSender
+ * @property string|null $KMSKeyID
  */
 class LambdaConfigType extends Shape
 {
     /**
      * @param array{
-     *     PreSignUp?: string,
-     *     CustomMessage?: string,
-     *     PostConfirmation?: string,
-     *     PreAuthentication?: string,
-     *     PostAuthentication?: string,
-     *     DefineAuthChallenge?: string,
-     *     CreateAuthChallenge?: string,
-     *     VerifyAuthChallengeResponse?: string,
-     *     PreTokenGeneration?: string,
-     *     UserMigration?: string,
-     *     PreTokenGenerationConfig?: PreTokenGenerationVersionConfigType,
-     *     CustomSMSSender?: CustomSMSLambdaVersionConfigType,
-     *     CustomEmailSender?: CustomEmailLambdaVersionConfigType,
-     *     KMSKeyID?: string
+     *     PreSignUp?: string|null,
+     *     CustomMessage?: string|null,
+     *     PostConfirmation?: string|null,
+     *     PreAuthentication?: string|null,
+     *     PostAuthentication?: string|null,
+     *     DefineAuthChallenge?: string|null,
+     *     CreateAuthChallenge?: string|null,
+     *     VerifyAuthChallengeResponse?: string|null,
+     *     PreTokenGeneration?: string|null,
+     *     UserMigration?: string|null,
+     *     PreTokenGenerationConfig?: PreTokenGenerationVersionConfigType|null,
+     *     CustomSMSSender?: CustomSMSLambdaVersionConfigType|null,
+     *     CustomEmailSender?: CustomEmailLambdaVersionConfigType|null,
+     *     KMSKeyID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

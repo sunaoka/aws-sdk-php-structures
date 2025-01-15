@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceId
- * @property string $AuthenticationToken
- * @property list<string> $Labels
- * @property bool $DeleteAll
+ * @property string|null $AuthenticationToken
+ * @property list<string>|null $Labels
+ * @property bool|null $DeleteAll
  */
 class DeleteLabelsRequest extends Request
 {
     /**
      * @param array{
      *     ResourceId: string,
-     *     AuthenticationToken?: string,
-     *     Labels?: list<string>,
-     *     DeleteAll?: bool
+     *     AuthenticationToken?: string|null,
+     *     Labels?: list<string>|null,
+     *     DeleteAll?: bool|null
      * } $args
      */
     public function __construct(array $args)

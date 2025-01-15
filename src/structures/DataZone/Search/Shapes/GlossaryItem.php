@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DataZone\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property string|null $description
  * @property string $domainId
  * @property string $id
  * @property string $name
  * @property string $owningProjectId
  * @property 'DISABLED'|'ENABLED' $status
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class GlossaryItem extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string,
-     *     description?: string,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     description?: string|null,
      *     domainId: string,
      *     id: string,
      *     name: string,
      *     owningProjectId: string,
      *     status: 'DISABLED'|'ENABLED',
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

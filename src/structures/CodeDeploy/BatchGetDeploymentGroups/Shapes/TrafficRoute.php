@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\BatchGetDeploymentGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $listenerArns
+ * @property list<string>|null $listenerArns
  */
 class TrafficRoute extends Shape
 {
     /**
-     * @param array{listenerArns?: list<string>} $args
+     * @param array{listenerArns?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

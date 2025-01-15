@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeregisterTransitGatewayMulticastGroupMembe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TransitGatewayMulticastDeregisteredGroupMembers $DeregisteredMulticastGroupMembers
+ * @property Shapes\TransitGatewayMulticastDeregisteredGroupMembers|null $DeregisteredMulticastGroupMembers
  */
 class DeregisterTransitGatewayMulticastGroupMembersResponse extends Response
 {

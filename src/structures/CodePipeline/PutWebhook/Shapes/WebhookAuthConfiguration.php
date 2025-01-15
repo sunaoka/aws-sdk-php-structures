@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodePipeline\PutWebhook\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AllowedIPRange
- * @property string $SecretToken
+ * @property string|null $AllowedIPRange
+ * @property string|null $SecretToken
  */
 class WebhookAuthConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AllowedIPRange?: string,
-     *     SecretToken?: string
+     *     AllowedIPRange?: string|null,
+     *     SecretToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

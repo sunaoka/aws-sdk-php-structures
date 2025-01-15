@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botId
  * @property string $botVersion
  * @property string $localeId
- * @property Shapes\GenerationSortBy $sortBy
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property Shapes\GenerationSortBy|null $sortBy
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListBotResourceGenerationsRequest extends Request
 {
@@ -19,9 +19,9 @@ class ListBotResourceGenerationsRequest extends Request
      *     botId: string,
      *     botVersion: string,
      *     localeId: string,
-     *     sortBy?: Shapes\GenerationSortBy,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     sortBy?: Shapes\GenerationSortBy|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeAuditFinding\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $issuerCertificateSubject
- * @property string $issuerId
- * @property string $issuerCertificateSerialNumber
+ * @property string|null $issuerCertificateSubject
+ * @property string|null $issuerId
+ * @property string|null $issuerCertificateSerialNumber
  */
 class IssuerCertificateIdentifier extends Shape
 {
     /**
      * @param array{
-     *     issuerCertificateSubject?: string,
-     *     issuerId?: string,
-     *     issuerCertificateSerialNumber?: string
+     *     issuerCertificateSubject?: string|null,
+     *     issuerId?: string|null,
+     *     issuerCertificateSerialNumber?: string|null
      * } $args
      */
     public function __construct(array $args = [])

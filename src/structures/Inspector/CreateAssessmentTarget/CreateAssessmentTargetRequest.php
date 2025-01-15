@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assessmentTargetName
- * @property string $resourceGroupArn
+ * @property string|null $resourceGroupArn
  */
 class CreateAssessmentTargetRequest extends Request
 {
     /**
      * @param array{
      *     assessmentTargetName: string,
-     *     resourceGroupArn?: string
+     *     resourceGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args)

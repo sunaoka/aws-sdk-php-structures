@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails $DockerVolumeConfiguration
- * @property AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails $EfsVolumeConfiguration
- * @property AwsEcsTaskDefinitionVolumesHostDetails $Host
- * @property string $Name
+ * @property AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails|null $DockerVolumeConfiguration
+ * @property AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails|null $EfsVolumeConfiguration
+ * @property AwsEcsTaskDefinitionVolumesHostDetails|null $Host
+ * @property string|null $Name
  */
 class AwsEcsTaskDefinitionVolumesDetails extends Shape
 {
     /**
      * @param array{
-     *     DockerVolumeConfiguration?: AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails,
-     *     EfsVolumeConfiguration?: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails,
-     *     Host?: AwsEcsTaskDefinitionVolumesHostDetails,
-     *     Name?: string
+     *     DockerVolumeConfiguration?: AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails|null,
+     *     EfsVolumeConfiguration?: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails|null,
+     *     Host?: AwsEcsTaskDefinitionVolumesHostDetails|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

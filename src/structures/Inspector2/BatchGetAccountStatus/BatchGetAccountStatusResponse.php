@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AccountState> $accounts
- * @property list<Shapes\FailedAccount> $failedAccounts
+ * @property list<Shapes\FailedAccount>|null $failedAccounts
  */
 class BatchGetAccountStatusResponse extends Response
 {

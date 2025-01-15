@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\ImportClientVpnClientCertificateRevocationL
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $Return
+ * @property bool|null $Return
  */
 class ImportClientVpnClientCertificateRevocationListResponse extends Response
 {

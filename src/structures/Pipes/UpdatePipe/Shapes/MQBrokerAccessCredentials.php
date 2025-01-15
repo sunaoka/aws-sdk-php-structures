@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BasicAuth
+ * @property string|null $BasicAuth
  */
 class MQBrokerAccessCredentials extends Shape
 {
     /**
-     * @param array{BasicAuth?: string} $args
+     * @param array{BasicAuth?: string|null} $args
      */
     public function __construct(array $args = [])
     {

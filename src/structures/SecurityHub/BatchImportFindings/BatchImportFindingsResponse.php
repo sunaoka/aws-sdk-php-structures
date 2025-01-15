@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property int $FailedCount
  * @property int $SuccessCount
- * @property list<Shapes\ImportFindingsError> $FailedFindings
+ * @property list<Shapes\ImportFindingsError>|null $FailedFindings
  */
 class BatchImportFindingsResponse extends Response
 {

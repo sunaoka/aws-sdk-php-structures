@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Identifier
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreatePerformanceAnalysisReportRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreatePerformanceAnalysisReportRequest extends Request
      *     Identifier: string,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

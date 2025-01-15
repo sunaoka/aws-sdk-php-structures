@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\kendra\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StringValue
- * @property list<string> $StringListValue
- * @property int $LongValue
- * @property \Aws\Api\DateTimeResult $DateValue
+ * @property string|null $StringValue
+ * @property list<string>|null $StringListValue
+ * @property int|null $LongValue
+ * @property \Aws\Api\DateTimeResult|null $DateValue
  */
 class DocumentAttributeValue extends Shape
 {
     /**
      * @param array{
-     *     StringValue?: string,
-     *     StringListValue?: list<string>,
-     *     LongValue?: int,
-     *     DateValue?: \Aws\Api\DateTimeResult
+     *     StringValue?: string|null,
+     *     StringListValue?: list<string>|null,
+     *     LongValue?: int|null,
+     *     DateValue?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

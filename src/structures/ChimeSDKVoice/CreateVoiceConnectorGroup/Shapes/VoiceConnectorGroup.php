@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\CreateVoiceConnectorGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VoiceConnectorGroupId
- * @property string $Name
- * @property list<VoiceConnectorItem> $VoiceConnectorItems
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
- * @property string $VoiceConnectorGroupArn
+ * @property string|null $VoiceConnectorGroupId
+ * @property string|null $Name
+ * @property list<VoiceConnectorItem>|null $VoiceConnectorItems
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
+ * @property string|null $VoiceConnectorGroupArn
  */
 class VoiceConnectorGroup extends Shape
 {
     /**
      * @param array{
-     *     VoiceConnectorGroupId?: string,
-     *     Name?: string,
-     *     VoiceConnectorItems?: list<VoiceConnectorItem>,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     VoiceConnectorGroupArn?: string
+     *     VoiceConnectorGroupId?: string|null,
+     *     Name?: string|null,
+     *     VoiceConnectorItems?: list<VoiceConnectorItem>|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     VoiceConnectorGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

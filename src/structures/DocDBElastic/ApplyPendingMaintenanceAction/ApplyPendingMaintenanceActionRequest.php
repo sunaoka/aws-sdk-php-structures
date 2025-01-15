@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $applyAction
- * @property string $applyOn
+ * @property string|null $applyOn
  * @property 'IMMEDIATE'|'NEXT_MAINTENANCE'|'APPLY_ON'|'UNDO_OPT_IN' $optInType
  * @property string $resourceArn
  */
@@ -15,7 +15,7 @@ class ApplyPendingMaintenanceActionRequest extends Request
     /**
      * @param array{
      *     applyAction: string,
-     *     applyOn?: string,
+     *     applyOn?: string|null,
      *     optInType: 'IMMEDIATE'|'NEXT_MAINTENANCE'|'APPLY_ON'|'UNDO_OPT_IN',
      *     resourceArn: string
      * } $args

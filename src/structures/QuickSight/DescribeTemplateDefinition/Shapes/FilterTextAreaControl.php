@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FilterControlId
  * @property string $Title
  * @property string $SourceFilterId
- * @property string $Delimiter
- * @property TextAreaControlDisplayOptions $DisplayOptions
+ * @property string|null $Delimiter
+ * @property TextAreaControlDisplayOptions|null $DisplayOptions
  */
 class FilterTextAreaControl extends Shape
 {
@@ -18,8 +18,8 @@ class FilterTextAreaControl extends Shape
      *     FilterControlId: string,
      *     Title: string,
      *     SourceFilterId: string,
-     *     Delimiter?: string,
-     *     DisplayOptions?: TextAreaControlDisplayOptions
+     *     Delimiter?: string|null,
+     *     DisplayOptions?: TextAreaControlDisplayOptions|null
      * } $args
      */
     public function __construct(array $args)

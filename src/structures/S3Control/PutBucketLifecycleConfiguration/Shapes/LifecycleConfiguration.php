@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Control\PutBucketLifecycleConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<LifecycleRule> $Rules
+ * @property list<LifecycleRule>|null $Rules
  */
 class LifecycleConfiguration extends Shape
 {
     /**
-     * @param array{Rules?: list<LifecycleRule>} $args
+     * @param array{Rules?: list<LifecycleRule>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListInfrastructureConfigurations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property list<Shapes\InfrastructureConfigurationSummary> $infrastructureConfigurationSummaryList
- * @property string $nextToken
+ * @property string|null $requestId
+ * @property list<Shapes\InfrastructureConfigurationSummary>|null $infrastructureConfigurationSummaryList
+ * @property string|null $nextToken
  */
 class ListInfrastructureConfigurationsResponse extends Response
 {

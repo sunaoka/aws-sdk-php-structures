@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AxisDisplayMinMaxRange $MinMax
- * @property AxisDisplayDataDrivenRange $DataDriven
+ * @property AxisDisplayMinMaxRange|null $MinMax
+ * @property AxisDisplayDataDrivenRange|null $DataDriven
  */
 class AxisDisplayRange extends Shape
 {
     /**
      * @param array{
-     *     MinMax?: AxisDisplayMinMaxRange,
-     *     DataDriven?: AxisDisplayDataDrivenRange
+     *     MinMax?: AxisDisplayMinMaxRange|null,
+     *     DataDriven?: AxisDisplayDataDrivenRange|null
      * } $args
      */
     public function __construct(array $args = [])

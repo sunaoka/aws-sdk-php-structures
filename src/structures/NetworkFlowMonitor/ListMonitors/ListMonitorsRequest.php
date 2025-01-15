@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkFlowMonitor\ListMonitors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 25> $maxResults
- * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING' $monitorStatus
+ * @property string|null $nextToken
+ * @property int<1, 25>|null $maxResults
+ * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING'|null $monitorStatus
  */
 class ListMonitorsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 25>,
-     *     monitorStatus?: 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING'
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 25>|null,
+     *     monitorStatus?: 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING'|null
      * } $args
      */
     public function __construct(array $args = [])

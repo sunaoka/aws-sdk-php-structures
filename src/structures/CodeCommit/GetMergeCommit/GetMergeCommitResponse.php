@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetMergeCommit;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $sourceCommitId
- * @property string $destinationCommitId
- * @property string $baseCommitId
- * @property string $mergedCommitId
+ * @property string|null $sourceCommitId
+ * @property string|null $destinationCommitId
+ * @property string|null $baseCommitId
+ * @property string|null $mergedCommitId
  */
 class GetMergeCommitResponse extends Response
 {

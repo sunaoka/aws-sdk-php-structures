@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<VpcConfig> $VpcConfigs
- * @property ServerlessClientAuthentication $ClientAuthentication
+ * @property ServerlessClientAuthentication|null $ClientAuthentication
  */
 class ServerlessRequest extends Shape
 {
     /**
      * @param array{
      *     VpcConfigs: list<VpcConfig>,
-     *     ClientAuthentication?: ServerlessClientAuthentication
+     *     ClientAuthentication?: ServerlessClientAuthentication|null
      * } $args
      */
     public function __construct(array $args)

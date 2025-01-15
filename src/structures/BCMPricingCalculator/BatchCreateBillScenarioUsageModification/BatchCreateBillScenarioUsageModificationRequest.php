@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $billScenarioId
  * @property list<Shapes\BatchCreateBillScenarioUsageModificationEntry> $usageModifications
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class BatchCreateBillScenarioUsageModificationRequest extends Request
 {
@@ -15,7 +15,7 @@ class BatchCreateBillScenarioUsageModificationRequest extends Request
      * @param array{
      *     billScenarioId: string,
      *     usageModifications: list<Shapes\BatchCreateBillScenarioUsageModificationEntry>,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

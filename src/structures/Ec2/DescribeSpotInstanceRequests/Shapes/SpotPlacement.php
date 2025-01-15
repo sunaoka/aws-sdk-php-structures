@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSpotInstanceRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property string $GroupName
- * @property 'default'|'dedicated'|'host' $Tenancy
+ * @property string|null $AvailabilityZone
+ * @property string|null $GroupName
+ * @property 'default'|'dedicated'|'host'|null $Tenancy
  */
 class SpotPlacement extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     GroupName?: string,
-     *     Tenancy?: 'default'|'dedicated'|'host'
+     *     AvailabilityZone?: string|null,
+     *     GroupName?: string|null,
+     *     Tenancy?: 'default'|'dedicated'|'host'|null
      * } $args
      */
     public function __construct(array $args = [])

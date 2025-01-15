@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeCapacityBlockOfferings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $InstanceType
- * @property int $InstanceCount
- * @property \Aws\Api\DateTimeResult $StartDateRange
- * @property \Aws\Api\DateTimeResult $EndDateRange
+ * @property bool|null $DryRun
+ * @property string|null $InstanceType
+ * @property int|null $InstanceCount
+ * @property \Aws\Api\DateTimeResult|null $StartDateRange
+ * @property \Aws\Api\DateTimeResult|null $EndDateRange
  * @property int $CapacityDurationHours
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class DescribeCapacityBlockOfferingsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     InstanceType?: string,
-     *     InstanceCount?: int,
-     *     StartDateRange?: \Aws\Api\DateTimeResult,
-     *     EndDateRange?: \Aws\Api\DateTimeResult,
+     *     DryRun?: bool|null,
+     *     InstanceType?: string|null,
+     *     InstanceCount?: int|null,
+     *     StartDateRange?: \Aws\Api\DateTimeResult|null,
+     *     EndDateRange?: \Aws\Api\DateTimeResult|null,
      *     CapacityDurationHours: int,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

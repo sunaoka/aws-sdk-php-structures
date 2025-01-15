@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchCreateBillScenarioCom
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property string $id
- * @property string $group
- * @property string $usageAccountId
- * @property BillScenarioCommitmentModificationAction $commitmentAction
+ * @property string|null $key
+ * @property string|null $id
+ * @property string|null $group
+ * @property string|null $usageAccountId
+ * @property BillScenarioCommitmentModificationAction|null $commitmentAction
  */
 class BatchCreateBillScenarioCommitmentModificationItem extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     id?: string,
-     *     group?: string,
-     *     usageAccountId?: string,
-     *     commitmentAction?: BillScenarioCommitmentModificationAction
+     *     key?: string|null,
+     *     id?: string|null,
+     *     group?: string|null,
+     *     usageAccountId?: string|null,
+     *     commitmentAction?: BillScenarioCommitmentModificationAction|null
      * } $args
      */
     public function __construct(array $args = [])

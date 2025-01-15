@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $ReturnConnectionPasswordEncrypted
- * @property string $AwsKmsKeyId
+ * @property string|null $AwsKmsKeyId
  */
 class ConnectionPasswordEncryption extends Shape
 {
     /**
      * @param array{
      *     ReturnConnectionPasswordEncrypted: bool,
-     *     AwsKmsKeyId?: string
+     *     AwsKmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

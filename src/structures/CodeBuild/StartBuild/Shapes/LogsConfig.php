@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeBuild\StartBuild\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudWatchLogsConfig $cloudWatchLogs
- * @property S3LogsConfig $s3Logs
+ * @property CloudWatchLogsConfig|null $cloudWatchLogs
+ * @property S3LogsConfig|null $s3Logs
  */
 class LogsConfig extends Shape
 {
     /**
      * @param array{
-     *     cloudWatchLogs?: CloudWatchLogsConfig,
-     *     s3Logs?: S3LogsConfig
+     *     cloudWatchLogs?: CloudWatchLogsConfig|null,
+     *     s3Logs?: S3LogsConfig|null
      * } $args
      */
     public function __construct(array $args = [])

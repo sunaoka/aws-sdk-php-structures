@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AwsCloudFrontDistributionCacheBehavior> $Items
+ * @property list<AwsCloudFrontDistributionCacheBehavior>|null $Items
  */
 class AwsCloudFrontDistributionCacheBehaviors extends Shape
 {
     /**
-     * @param array{Items?: list<AwsCloudFrontDistributionCacheBehavior>} $args
+     * @param array{Items?: list<AwsCloudFrontDistributionCacheBehavior>|null} $args
      */
     public function __construct(array $args = [])
     {

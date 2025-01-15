@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $OrganizationConfigRuleName
  * @property string $OrganizationConfigRuleArn
- * @property OrganizationManagedRuleMetadata $OrganizationManagedRuleMetadata
- * @property OrganizationCustomRuleMetadata $OrganizationCustomRuleMetadata
- * @property list<string> $ExcludedAccounts
- * @property \Aws\Api\DateTimeResult $LastUpdateTime
- * @property OrganizationCustomPolicyRuleMetadataNoPolicy $OrganizationCustomPolicyRuleMetadata
+ * @property OrganizationManagedRuleMetadata|null $OrganizationManagedRuleMetadata
+ * @property OrganizationCustomRuleMetadata|null $OrganizationCustomRuleMetadata
+ * @property list<string>|null $ExcludedAccounts
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateTime
+ * @property OrganizationCustomPolicyRuleMetadataNoPolicy|null $OrganizationCustomPolicyRuleMetadata
  */
 class OrganizationConfigRule extends Shape
 {
@@ -19,11 +19,11 @@ class OrganizationConfigRule extends Shape
      * @param array{
      *     OrganizationConfigRuleName: string,
      *     OrganizationConfigRuleArn: string,
-     *     OrganizationManagedRuleMetadata?: OrganizationManagedRuleMetadata,
-     *     OrganizationCustomRuleMetadata?: OrganizationCustomRuleMetadata,
-     *     ExcludedAccounts?: list<string>,
-     *     LastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     OrganizationCustomPolicyRuleMetadata?: OrganizationCustomPolicyRuleMetadataNoPolicy
+     *     OrganizationManagedRuleMetadata?: OrganizationManagedRuleMetadata|null,
+     *     OrganizationCustomRuleMetadata?: OrganizationCustomRuleMetadata|null,
+     *     ExcludedAccounts?: list<string>|null,
+     *     LastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     OrganizationCustomPolicyRuleMetadata?: OrganizationCustomPolicyRuleMetadataNoPolicy|null
      * } $args
      */
     public function __construct(array $args)

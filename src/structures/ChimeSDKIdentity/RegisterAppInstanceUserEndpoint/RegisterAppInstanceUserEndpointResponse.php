@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\RegisterAppInstanceUserEndpoin
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppInstanceUserArn
- * @property string $EndpointId
+ * @property string|null $AppInstanceUserArn
+ * @property string|null $EndpointId
  */
 class RegisterAppInstanceUserEndpointResponse extends Response
 {

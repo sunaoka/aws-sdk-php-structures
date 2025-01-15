@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\CreateFeature\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
+ * @property string|null $name
  * @property string $type
  */
 class EvaluationRule extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
+     *     name?: string|null,
      *     type: string
      * } $args
      */

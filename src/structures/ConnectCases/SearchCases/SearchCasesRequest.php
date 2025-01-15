@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainId
- * @property list<Shapes\FieldIdentifier> $fields
- * @property Shapes\CaseFilter $filter
- * @property int<1, 25> $maxResults
- * @property string $nextToken
- * @property string $searchTerm
- * @property list<Shapes\Sort> $sorts
+ * @property list<Shapes\FieldIdentifier>|null $fields
+ * @property Shapes\CaseFilter|null $filter
+ * @property int<1, 25>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $searchTerm
+ * @property list<Shapes\Sort>|null $sorts
  */
 class SearchCasesRequest extends Request
 {
     /**
      * @param array{
      *     domainId: string,
-     *     fields?: list<Shapes\FieldIdentifier>,
-     *     filter?: Shapes\CaseFilter,
-     *     maxResults?: int<1, 25>,
-     *     nextToken?: string,
-     *     searchTerm?: string,
-     *     sorts?: list<Shapes\Sort>
+     *     fields?: list<Shapes\FieldIdentifier>|null,
+     *     filter?: Shapes\CaseFilter|null,
+     *     maxResults?: int<1, 25>|null,
+     *     nextToken?: string|null,
+     *     searchTerm?: string|null,
+     *     sorts?: list<Shapes\Sort>|null
      * } $args
      */
     public function __construct(array $args)

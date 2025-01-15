@@ -7,19 +7,19 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $Role
- * @property string $DatabaseName
- * @property string $Description
+ * @property string|null $DatabaseName
+ * @property string|null $Description
  * @property Shapes\CrawlerTargets $Targets
- * @property string $Schedule
- * @property list<string> $Classifiers
- * @property string $TablePrefix
- * @property Shapes\SchemaChangePolicy $SchemaChangePolicy
- * @property Shapes\RecrawlPolicy $RecrawlPolicy
- * @property Shapes\LineageConfiguration $LineageConfiguration
- * @property Shapes\LakeFormationConfiguration $LakeFormationConfiguration
- * @property string $Configuration
- * @property string $CrawlerSecurityConfiguration
- * @property array<string, string> $Tags
+ * @property string|null $Schedule
+ * @property list<string>|null $Classifiers
+ * @property string|null $TablePrefix
+ * @property Shapes\SchemaChangePolicy|null $SchemaChangePolicy
+ * @property Shapes\RecrawlPolicy|null $RecrawlPolicy
+ * @property Shapes\LineageConfiguration|null $LineageConfiguration
+ * @property Shapes\LakeFormationConfiguration|null $LakeFormationConfiguration
+ * @property string|null $Configuration
+ * @property string|null $CrawlerSecurityConfiguration
+ * @property array<string, string>|null $Tags
  */
 class CreateCrawlerRequest extends Request
 {
@@ -27,19 +27,19 @@ class CreateCrawlerRequest extends Request
      * @param array{
      *     Name: string,
      *     Role: string,
-     *     DatabaseName?: string,
-     *     Description?: string,
+     *     DatabaseName?: string|null,
+     *     Description?: string|null,
      *     Targets: Shapes\CrawlerTargets,
-     *     Schedule?: string,
-     *     Classifiers?: list<string>,
-     *     TablePrefix?: string,
-     *     SchemaChangePolicy?: Shapes\SchemaChangePolicy,
-     *     RecrawlPolicy?: Shapes\RecrawlPolicy,
-     *     LineageConfiguration?: Shapes\LineageConfiguration,
-     *     LakeFormationConfiguration?: Shapes\LakeFormationConfiguration,
-     *     Configuration?: string,
-     *     CrawlerSecurityConfiguration?: string,
-     *     Tags?: array<string, string>
+     *     Schedule?: string|null,
+     *     Classifiers?: list<string>|null,
+     *     TablePrefix?: string|null,
+     *     SchemaChangePolicy?: Shapes\SchemaChangePolicy|null,
+     *     RecrawlPolicy?: Shapes\RecrawlPolicy|null,
+     *     LineageConfiguration?: Shapes\LineageConfiguration|null,
+     *     LakeFormationConfiguration?: Shapes\LakeFormationConfiguration|null,
+     *     Configuration?: string|null,
+     *     CrawlerSecurityConfiguration?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

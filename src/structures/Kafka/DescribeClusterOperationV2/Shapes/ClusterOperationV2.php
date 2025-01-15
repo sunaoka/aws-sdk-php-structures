@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterOperationV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterArn
- * @property 'PROVISIONED'|'SERVERLESS' $ClusterType
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $OperationArn
- * @property string $OperationState
- * @property string $OperationType
- * @property ClusterOperationV2Provisioned $Provisioned
- * @property ClusterOperationV2Serverless $Serverless
+ * @property string|null $ClusterArn
+ * @property 'PROVISIONED'|'SERVERLESS'|null $ClusterType
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $OperationArn
+ * @property string|null $OperationState
+ * @property string|null $OperationType
+ * @property ClusterOperationV2Provisioned|null $Provisioned
+ * @property ClusterOperationV2Serverless|null $Serverless
  */
 class ClusterOperationV2 extends Shape
 {
     /**
      * @param array{
-     *     ClusterArn?: string,
-     *     ClusterType?: 'PROVISIONED'|'SERVERLESS',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     OperationArn?: string,
-     *     OperationState?: string,
-     *     OperationType?: string,
-     *     Provisioned?: ClusterOperationV2Provisioned,
-     *     Serverless?: ClusterOperationV2Serverless
+     *     ClusterArn?: string|null,
+     *     ClusterType?: 'PROVISIONED'|'SERVERLESS'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     OperationArn?: string|null,
+     *     OperationState?: string|null,
+     *     OperationType?: string|null,
+     *     Provisioned?: ClusterOperationV2Provisioned|null,
+     *     Serverless?: ClusterOperationV2Serverless|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRecommendationSummaries\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Idle'|'Unattached' $name
- * @property double $value
+ * @property 'Idle'|'Unattached'|null $name
+ * @property double|null $value
  */
 class IdleSummary extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Idle'|'Unattached',
-     *     value?: double
+     *     name?: 'Idle'|'Unattached'|null,
+     *     value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

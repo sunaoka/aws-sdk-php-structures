@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property 'CREATED'|'ONBOARDED'|'ERROR' $onboardingState
  * @property 'ENABLED'|'DISABLED' $operationalState
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property 'IN_USE'|'NOT_IN_USE' $usageState
  */
 class CreateSolFunctionPackageResponse extends Response

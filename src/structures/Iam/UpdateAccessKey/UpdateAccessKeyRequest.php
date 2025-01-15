@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iam\UpdateAccessKey;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UserName
+ * @property string|null $UserName
  * @property string $AccessKeyId
  * @property 'Active'|'Inactive' $Status
  */
@@ -13,7 +13,7 @@ class UpdateAccessKeyRequest extends Request
 {
     /**
      * @param array{
-     *     UserName?: string,
+     *     UserName?: string|null,
      *     AccessKeyId: string,
      *     Status: 'Active'|'Inactive'
      * } $args

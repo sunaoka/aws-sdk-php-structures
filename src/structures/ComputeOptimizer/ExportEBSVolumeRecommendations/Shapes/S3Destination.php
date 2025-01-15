@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\ExportEBSVolumeRecommendations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucket
- * @property string $key
- * @property string $metadataKey
+ * @property string|null $bucket
+ * @property string|null $key
+ * @property string|null $metadataKey
  */
 class S3Destination extends Shape
 {
     /**
      * @param array{
-     *     bucket?: string,
-     *     key?: string,
-     *     metadataKey?: string
+     *     bucket?: string|null,
+     *     key?: string|null,
+     *     metadataKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

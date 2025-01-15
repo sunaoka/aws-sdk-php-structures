@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeCommit\EvaluatePullRequestApprovalRules\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $approved
- * @property bool $overridden
- * @property list<string> $approvalRulesSatisfied
- * @property list<string> $approvalRulesNotSatisfied
+ * @property bool|null $approved
+ * @property bool|null $overridden
+ * @property list<string>|null $approvalRulesSatisfied
+ * @property list<string>|null $approvalRulesNotSatisfied
  */
 class Evaluation extends Shape
 {
     /**
      * @param array{
-     *     approved?: bool,
-     *     overridden?: bool,
-     *     approvalRulesSatisfied?: list<string>,
-     *     approvalRulesNotSatisfied?: list<string>
+     *     approved?: bool|null,
+     *     overridden?: bool|null,
+     *     approvalRulesSatisfied?: list<string>|null,
+     *     approvalRulesNotSatisfied?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

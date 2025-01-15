@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteIpamPool;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $IpamPoolId
- * @property bool $Cascade
+ * @property bool|null $Cascade
  */
 class DeleteIpamPoolRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     IpamPoolId: string,
-     *     Cascade?: bool
+     *     Cascade?: bool|null
      * } $args
      */
     public function __construct(array $args)

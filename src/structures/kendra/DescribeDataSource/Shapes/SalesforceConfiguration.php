@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ServerUrl
  * @property string $SecretArn
- * @property list<SalesforceStandardObjectConfiguration> $StandardObjectConfigurations
- * @property SalesforceKnowledgeArticleConfiguration $KnowledgeArticleConfiguration
- * @property SalesforceChatterFeedConfiguration $ChatterFeedConfiguration
- * @property bool $CrawlAttachments
- * @property SalesforceStandardObjectAttachmentConfiguration $StandardObjectAttachmentConfiguration
- * @property list<string> $IncludeAttachmentFilePatterns
- * @property list<string> $ExcludeAttachmentFilePatterns
+ * @property list<SalesforceStandardObjectConfiguration>|null $StandardObjectConfigurations
+ * @property SalesforceKnowledgeArticleConfiguration|null $KnowledgeArticleConfiguration
+ * @property SalesforceChatterFeedConfiguration|null $ChatterFeedConfiguration
+ * @property bool|null $CrawlAttachments
+ * @property SalesforceStandardObjectAttachmentConfiguration|null $StandardObjectAttachmentConfiguration
+ * @property list<string>|null $IncludeAttachmentFilePatterns
+ * @property list<string>|null $ExcludeAttachmentFilePatterns
  */
 class SalesforceConfiguration extends Shape
 {
@@ -21,13 +21,13 @@ class SalesforceConfiguration extends Shape
      * @param array{
      *     ServerUrl: string,
      *     SecretArn: string,
-     *     StandardObjectConfigurations?: list<SalesforceStandardObjectConfiguration>,
-     *     KnowledgeArticleConfiguration?: SalesforceKnowledgeArticleConfiguration,
-     *     ChatterFeedConfiguration?: SalesforceChatterFeedConfiguration,
-     *     CrawlAttachments?: bool,
-     *     StandardObjectAttachmentConfiguration?: SalesforceStandardObjectAttachmentConfiguration,
-     *     IncludeAttachmentFilePatterns?: list<string>,
-     *     ExcludeAttachmentFilePatterns?: list<string>
+     *     StandardObjectConfigurations?: list<SalesforceStandardObjectConfiguration>|null,
+     *     KnowledgeArticleConfiguration?: SalesforceKnowledgeArticleConfiguration|null,
+     *     ChatterFeedConfiguration?: SalesforceChatterFeedConfiguration|null,
+     *     CrawlAttachments?: bool|null,
+     *     StandardObjectAttachmentConfiguration?: SalesforceStandardObjectAttachmentConfiguration|null,
+     *     IncludeAttachmentFilePatterns?: list<string>|null,
+     *     ExcludeAttachmentFilePatterns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $CloudWatchLoggingOptionId
- * @property string $LogStreamARNUpdate
+ * @property string|null $LogStreamARNUpdate
  */
 class CloudWatchLoggingOptionUpdate extends Shape
 {
     /**
      * @param array{
      *     CloudWatchLoggingOptionId: string,
-     *     LogStreamARNUpdate?: string
+     *     LogStreamARNUpdate?: string|null
      * } $args
      */
     public function __construct(array $args)

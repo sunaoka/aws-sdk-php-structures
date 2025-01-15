@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $datastoreId
  * @property string $datastoreName
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETED' $datastoreStatus
- * @property string $datastoreArn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $datastoreArn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class DatastoreSummary extends Shape
 {
@@ -19,9 +19,9 @@ class DatastoreSummary extends Shape
      *     datastoreId: string,
      *     datastoreName: string,
      *     datastoreStatus: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETED',
-     *     datastoreArn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     datastoreArn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

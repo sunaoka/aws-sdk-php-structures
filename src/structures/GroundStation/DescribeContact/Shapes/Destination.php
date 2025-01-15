@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GroundStation\DescribeContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConfigDetails $configDetails
- * @property string $configId
- * @property 'antenna-downlink'|'antenna-downlink-demod-decode'|'antenna-uplink'|'dataflow-endpoint'|'tracking'|'uplink-echo'|'s3-recording' $configType
- * @property string $dataflowDestinationRegion
+ * @property ConfigDetails|null $configDetails
+ * @property string|null $configId
+ * @property 'antenna-downlink'|'antenna-downlink-demod-decode'|'antenna-uplink'|'dataflow-endpoint'|'tracking'|'uplink-echo'|'s3-recording'|null $configType
+ * @property string|null $dataflowDestinationRegion
  */
 class Destination extends Shape
 {
     /**
      * @param array{
-     *     configDetails?: ConfigDetails,
-     *     configId?: string,
-     *     configType?: 'antenna-downlink'|'antenna-downlink-demod-decode'|'antenna-uplink'|'dataflow-endpoint'|'tracking'|'uplink-echo'|'s3-recording',
-     *     dataflowDestinationRegion?: string
+     *     configDetails?: ConfigDetails|null,
+     *     configId?: string|null,
+     *     configType?: 'antenna-downlink'|'antenna-downlink-demod-decode'|'antenna-uplink'|'dataflow-endpoint'|'tracking'|'uplink-echo'|'s3-recording'|null,
+     *     dataflowDestinationRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

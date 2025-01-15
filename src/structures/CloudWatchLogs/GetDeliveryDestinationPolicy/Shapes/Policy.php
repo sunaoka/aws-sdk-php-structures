@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetDeliveryDestinationPolicy\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $deliveryDestinationPolicy
+ * @property string|null $deliveryDestinationPolicy
  */
 class Policy extends Shape
 {
     /**
-     * @param array{deliveryDestinationPolicy?: string} $args
+     * @param array{deliveryDestinationPolicy?: string|null} $args
      */
     public function __construct(array $args = [])
     {

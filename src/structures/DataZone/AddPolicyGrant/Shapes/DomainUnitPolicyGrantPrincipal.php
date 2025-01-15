@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'OWNER' $domainUnitDesignation
- * @property DomainUnitGrantFilter $domainUnitGrantFilter
- * @property string $domainUnitIdentifier
+ * @property DomainUnitGrantFilter|null $domainUnitGrantFilter
+ * @property string|null $domainUnitIdentifier
  */
 class DomainUnitPolicyGrantPrincipal extends Shape
 {
     /**
      * @param array{
      *     domainUnitDesignation: 'OWNER',
-     *     domainUnitGrantFilter?: DomainUnitGrantFilter,
-     *     domainUnitIdentifier?: string
+     *     domainUnitGrantFilter?: DomainUnitGrantFilter|null,
+     *     domainUnitIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,99 +5,99 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AddSupplementalLogging
- * @property int $ArchivedLogDestId
- * @property int $AdditionalArchivedLogDestId
- * @property list<int> $ExtraArchivedLogDestIds
- * @property bool $AllowSelectNestedTables
- * @property int $ParallelAsmReadThreads
- * @property int $ReadAheadBlocks
- * @property bool $AccessAlternateDirectly
- * @property bool $UseAlternateFolderForOnline
- * @property string $OraclePathPrefix
- * @property string $UsePathPrefix
- * @property bool $ReplacePathPrefix
- * @property bool $EnableHomogenousTablespace
- * @property bool $DirectPathNoLog
- * @property bool $ArchivedLogsOnly
- * @property string $AsmPassword
- * @property string $AsmServer
- * @property string $AsmUser
- * @property 'default'|'char'|'byte' $CharLengthSemantics
- * @property string $DatabaseName
- * @property bool $DirectPathParallelLoad
- * @property bool $FailTasksOnLobTruncation
- * @property int $NumberDatatypeScale
- * @property string $Password
- * @property int $Port
- * @property bool $ReadTableSpaceName
- * @property int $RetryInterval
- * @property string $SecurityDbEncryption
- * @property string $SecurityDbEncryptionName
- * @property string $ServerName
- * @property string $SpatialDataOptionToGeoJsonFunctionName
- * @property int $StandbyDelayTime
- * @property string $Username
- * @property bool $UseBFile
- * @property bool $UseDirectPathFullLoad
- * @property bool $UseLogminerReader
- * @property string $SecretsManagerAccessRoleArn
- * @property string $SecretsManagerSecretId
- * @property string $SecretsManagerOracleAsmAccessRoleArn
- * @property string $SecretsManagerOracleAsmSecretId
- * @property bool $TrimSpaceInChar
- * @property bool $ConvertTimestampWithZoneToUTC
- * @property int $OpenTransactionWindow
- * @property 'password'|'kerberos' $AuthenticationMethod
+ * @property bool|null $AddSupplementalLogging
+ * @property int|null $ArchivedLogDestId
+ * @property int|null $AdditionalArchivedLogDestId
+ * @property list<int>|null $ExtraArchivedLogDestIds
+ * @property bool|null $AllowSelectNestedTables
+ * @property int|null $ParallelAsmReadThreads
+ * @property int|null $ReadAheadBlocks
+ * @property bool|null $AccessAlternateDirectly
+ * @property bool|null $UseAlternateFolderForOnline
+ * @property string|null $OraclePathPrefix
+ * @property string|null $UsePathPrefix
+ * @property bool|null $ReplacePathPrefix
+ * @property bool|null $EnableHomogenousTablespace
+ * @property bool|null $DirectPathNoLog
+ * @property bool|null $ArchivedLogsOnly
+ * @property string|null $AsmPassword
+ * @property string|null $AsmServer
+ * @property string|null $AsmUser
+ * @property 'default'|'char'|'byte'|null $CharLengthSemantics
+ * @property string|null $DatabaseName
+ * @property bool|null $DirectPathParallelLoad
+ * @property bool|null $FailTasksOnLobTruncation
+ * @property int|null $NumberDatatypeScale
+ * @property string|null $Password
+ * @property int|null $Port
+ * @property bool|null $ReadTableSpaceName
+ * @property int|null $RetryInterval
+ * @property string|null $SecurityDbEncryption
+ * @property string|null $SecurityDbEncryptionName
+ * @property string|null $ServerName
+ * @property string|null $SpatialDataOptionToGeoJsonFunctionName
+ * @property int|null $StandbyDelayTime
+ * @property string|null $Username
+ * @property bool|null $UseBFile
+ * @property bool|null $UseDirectPathFullLoad
+ * @property bool|null $UseLogminerReader
+ * @property string|null $SecretsManagerAccessRoleArn
+ * @property string|null $SecretsManagerSecretId
+ * @property string|null $SecretsManagerOracleAsmAccessRoleArn
+ * @property string|null $SecretsManagerOracleAsmSecretId
+ * @property bool|null $TrimSpaceInChar
+ * @property bool|null $ConvertTimestampWithZoneToUTC
+ * @property int|null $OpenTransactionWindow
+ * @property 'password'|'kerberos'|null $AuthenticationMethod
  */
 class OracleSettings extends Shape
 {
     /**
      * @param array{
-     *     AddSupplementalLogging?: bool,
-     *     ArchivedLogDestId?: int,
-     *     AdditionalArchivedLogDestId?: int,
-     *     ExtraArchivedLogDestIds?: list<int>,
-     *     AllowSelectNestedTables?: bool,
-     *     ParallelAsmReadThreads?: int,
-     *     ReadAheadBlocks?: int,
-     *     AccessAlternateDirectly?: bool,
-     *     UseAlternateFolderForOnline?: bool,
-     *     OraclePathPrefix?: string,
-     *     UsePathPrefix?: string,
-     *     ReplacePathPrefix?: bool,
-     *     EnableHomogenousTablespace?: bool,
-     *     DirectPathNoLog?: bool,
-     *     ArchivedLogsOnly?: bool,
-     *     AsmPassword?: string,
-     *     AsmServer?: string,
-     *     AsmUser?: string,
-     *     CharLengthSemantics?: 'default'|'char'|'byte',
-     *     DatabaseName?: string,
-     *     DirectPathParallelLoad?: bool,
-     *     FailTasksOnLobTruncation?: bool,
-     *     NumberDatatypeScale?: int,
-     *     Password?: string,
-     *     Port?: int,
-     *     ReadTableSpaceName?: bool,
-     *     RetryInterval?: int,
-     *     SecurityDbEncryption?: string,
-     *     SecurityDbEncryptionName?: string,
-     *     ServerName?: string,
-     *     SpatialDataOptionToGeoJsonFunctionName?: string,
-     *     StandbyDelayTime?: int,
-     *     Username?: string,
-     *     UseBFile?: bool,
-     *     UseDirectPathFullLoad?: bool,
-     *     UseLogminerReader?: bool,
-     *     SecretsManagerAccessRoleArn?: string,
-     *     SecretsManagerSecretId?: string,
-     *     SecretsManagerOracleAsmAccessRoleArn?: string,
-     *     SecretsManagerOracleAsmSecretId?: string,
-     *     TrimSpaceInChar?: bool,
-     *     ConvertTimestampWithZoneToUTC?: bool,
-     *     OpenTransactionWindow?: int,
-     *     AuthenticationMethod?: 'password'|'kerberos'
+     *     AddSupplementalLogging?: bool|null,
+     *     ArchivedLogDestId?: int|null,
+     *     AdditionalArchivedLogDestId?: int|null,
+     *     ExtraArchivedLogDestIds?: list<int>|null,
+     *     AllowSelectNestedTables?: bool|null,
+     *     ParallelAsmReadThreads?: int|null,
+     *     ReadAheadBlocks?: int|null,
+     *     AccessAlternateDirectly?: bool|null,
+     *     UseAlternateFolderForOnline?: bool|null,
+     *     OraclePathPrefix?: string|null,
+     *     UsePathPrefix?: string|null,
+     *     ReplacePathPrefix?: bool|null,
+     *     EnableHomogenousTablespace?: bool|null,
+     *     DirectPathNoLog?: bool|null,
+     *     ArchivedLogsOnly?: bool|null,
+     *     AsmPassword?: string|null,
+     *     AsmServer?: string|null,
+     *     AsmUser?: string|null,
+     *     CharLengthSemantics?: 'default'|'char'|'byte'|null,
+     *     DatabaseName?: string|null,
+     *     DirectPathParallelLoad?: bool|null,
+     *     FailTasksOnLobTruncation?: bool|null,
+     *     NumberDatatypeScale?: int|null,
+     *     Password?: string|null,
+     *     Port?: int|null,
+     *     ReadTableSpaceName?: bool|null,
+     *     RetryInterval?: int|null,
+     *     SecurityDbEncryption?: string|null,
+     *     SecurityDbEncryptionName?: string|null,
+     *     ServerName?: string|null,
+     *     SpatialDataOptionToGeoJsonFunctionName?: string|null,
+     *     StandbyDelayTime?: int|null,
+     *     Username?: string|null,
+     *     UseBFile?: bool|null,
+     *     UseDirectPathFullLoad?: bool|null,
+     *     UseLogminerReader?: bool|null,
+     *     SecretsManagerAccessRoleArn?: string|null,
+     *     SecretsManagerSecretId?: string|null,
+     *     SecretsManagerOracleAsmAccessRoleArn?: string|null,
+     *     SecretsManagerOracleAsmSecretId?: string|null,
+     *     TrimSpaceInChar?: bool|null,
+     *     ConvertTimestampWithZoneToUTC?: bool|null,
+     *     OpenTransactionWindow?: int|null,
+     *     AuthenticationMethod?: 'password'|'kerberos'|null
      * } $args
      */
     public function __construct(array $args = [])

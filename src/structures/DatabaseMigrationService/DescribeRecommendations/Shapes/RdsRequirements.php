@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EngineEdition
- * @property double $InstanceVcpu
- * @property double $InstanceMemory
- * @property int $StorageSize
- * @property int $StorageIops
- * @property string $DeploymentOption
- * @property string $EngineVersion
+ * @property string|null $EngineEdition
+ * @property double|null $InstanceVcpu
+ * @property double|null $InstanceMemory
+ * @property int|null $StorageSize
+ * @property int|null $StorageIops
+ * @property string|null $DeploymentOption
+ * @property string|null $EngineVersion
  */
 class RdsRequirements extends Shape
 {
     /**
      * @param array{
-     *     EngineEdition?: string,
-     *     InstanceVcpu?: double,
-     *     InstanceMemory?: double,
-     *     StorageSize?: int,
-     *     StorageIops?: int,
-     *     DeploymentOption?: string,
-     *     EngineVersion?: string
+     *     EngineEdition?: string|null,
+     *     InstanceVcpu?: double|null,
+     *     InstanceMemory?: double|null,
+     *     StorageSize?: int|null,
+     *     StorageIops?: int|null,
+     *     DeploymentOption?: string|null,
+     *     EngineVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

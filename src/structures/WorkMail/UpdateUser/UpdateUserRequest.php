@@ -7,22 +7,22 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OrganizationId
  * @property string $UserId
- * @property 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER' $Role
- * @property string $DisplayName
- * @property string $FirstName
- * @property string $LastName
- * @property bool $HiddenFromGlobalAddressList
- * @property string $Initials
- * @property string $Telephone
- * @property string $Street
- * @property string $JobTitle
- * @property string $City
- * @property string $Company
- * @property string $ZipCode
- * @property string $Department
- * @property string $Country
- * @property string $Office
- * @property string $IdentityProviderUserId
+ * @property 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER'|null $Role
+ * @property string|null $DisplayName
+ * @property string|null $FirstName
+ * @property string|null $LastName
+ * @property bool|null $HiddenFromGlobalAddressList
+ * @property string|null $Initials
+ * @property string|null $Telephone
+ * @property string|null $Street
+ * @property string|null $JobTitle
+ * @property string|null $City
+ * @property string|null $Company
+ * @property string|null $ZipCode
+ * @property string|null $Department
+ * @property string|null $Country
+ * @property string|null $Office
+ * @property string|null $IdentityProviderUserId
  */
 class UpdateUserRequest extends Request
 {
@@ -30,22 +30,22 @@ class UpdateUserRequest extends Request
      * @param array{
      *     OrganizationId: string,
      *     UserId: string,
-     *     Role?: 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER',
-     *     DisplayName?: string,
-     *     FirstName?: string,
-     *     LastName?: string,
-     *     HiddenFromGlobalAddressList?: bool,
-     *     Initials?: string,
-     *     Telephone?: string,
-     *     Street?: string,
-     *     JobTitle?: string,
-     *     City?: string,
-     *     Company?: string,
-     *     ZipCode?: string,
-     *     Department?: string,
-     *     Country?: string,
-     *     Office?: string,
-     *     IdentityProviderUserId?: string
+     *     Role?: 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER'|null,
+     *     DisplayName?: string|null,
+     *     FirstName?: string|null,
+     *     LastName?: string|null,
+     *     HiddenFromGlobalAddressList?: bool|null,
+     *     Initials?: string|null,
+     *     Telephone?: string|null,
+     *     Street?: string|null,
+     *     JobTitle?: string|null,
+     *     City?: string|null,
+     *     Company?: string|null,
+     *     ZipCode?: string|null,
+     *     Department?: string|null,
+     *     Country?: string|null,
+     *     Office?: string|null,
+     *     IdentityProviderUserId?: string|null
      * } $args
      */
     public function __construct(array $args)

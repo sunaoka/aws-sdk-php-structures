@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeLaunchConfigurationTemplates\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $cloudWatchLogGroupName
- * @property 'TEST_AND_CUTOVER'|'CUTOVER_ONLY'|'TEST_ONLY' $deployment
- * @property string $s3LogBucket
- * @property string $s3OutputKeyPrefix
- * @property list<SsmDocument> $ssmDocuments
+ * @property string|null $cloudWatchLogGroupName
+ * @property 'TEST_AND_CUTOVER'|'CUTOVER_ONLY'|'TEST_ONLY'|null $deployment
+ * @property string|null $s3LogBucket
+ * @property string|null $s3OutputKeyPrefix
+ * @property list<SsmDocument>|null $ssmDocuments
  */
 class PostLaunchActions extends Shape
 {
     /**
      * @param array{
-     *     cloudWatchLogGroupName?: string,
-     *     deployment?: 'TEST_AND_CUTOVER'|'CUTOVER_ONLY'|'TEST_ONLY',
-     *     s3LogBucket?: string,
-     *     s3OutputKeyPrefix?: string,
-     *     ssmDocuments?: list<SsmDocument>
+     *     cloudWatchLogGroupName?: string|null,
+     *     deployment?: 'TEST_AND_CUTOVER'|'CUTOVER_ONLY'|'TEST_ONLY'|null,
+     *     s3LogBucket?: string|null,
+     *     s3OutputKeyPrefix?: string|null,
+     *     ssmDocuments?: list<SsmDocument>|null
      * } $args
      */
     public function __construct(array $args = [])

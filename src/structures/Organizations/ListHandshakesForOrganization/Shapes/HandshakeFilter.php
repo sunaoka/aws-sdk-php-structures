@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Organizations\ListHandshakesForOrganization\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INVITE'|'ENABLE_ALL_FEATURES'|'APPROVE_ALL_FEATURES'|'ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE' $ActionType
- * @property string $ParentHandshakeId
+ * @property 'INVITE'|'ENABLE_ALL_FEATURES'|'APPROVE_ALL_FEATURES'|'ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE'|null $ActionType
+ * @property string|null $ParentHandshakeId
  */
 class HandshakeFilter extends Shape
 {
     /**
      * @param array{
-     *     ActionType?: 'INVITE'|'ENABLE_ALL_FEATURES'|'APPROVE_ALL_FEATURES'|'ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE',
-     *     ParentHandshakeId?: string
+     *     ActionType?: 'INVITE'|'ENABLE_ALL_FEATURES'|'APPROVE_ALL_FEATURES'|'ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE'|null,
+     *     ParentHandshakeId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

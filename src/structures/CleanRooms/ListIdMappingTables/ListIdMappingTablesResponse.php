@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\IdMappingTableSummary> $idMappingTableSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListIdMappingTablesResponse extends Response
 {

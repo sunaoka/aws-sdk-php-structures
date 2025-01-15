@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTargetHealth\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'anomalous'|'normal' $Result
- * @property 'yes'|'no' $MitigationInEffect
+ * @property 'anomalous'|'normal'|null $Result
+ * @property 'yes'|'no'|null $MitigationInEffect
  */
 class AnomalyDetection extends Shape
 {
     /**
      * @param array{
-     *     Result?: 'anomalous'|'normal',
-     *     MitigationInEffect?: 'yes'|'no'
+     *     Result?: 'anomalous'|'normal'|null,
+     *     MitigationInEffect?: 'yes'|'no'|null
      * } $args
      */
     public function __construct(array $args = [])

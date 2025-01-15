@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $domainName
- * @property string $objectTypeName
+ * @property string|null $objectTypeName
  */
 class CustomerProfilesDestinationProperties extends Shape
 {
     /**
      * @param array{
      *     domainName: string,
-     *     objectTypeName?: string
+     *     objectTypeName?: string|null
      * } $args
      */
     public function __construct(array $args)

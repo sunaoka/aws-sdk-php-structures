@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MarketplaceEntitlementService\GetEntitlements\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $IntegerValue
- * @property double $DoubleValue
- * @property bool $BooleanValue
- * @property string $StringValue
+ * @property int|null $IntegerValue
+ * @property double|null $DoubleValue
+ * @property bool|null $BooleanValue
+ * @property string|null $StringValue
  */
 class EntitlementValue extends Shape
 {
     /**
      * @param array{
-     *     IntegerValue?: int,
-     *     DoubleValue?: double,
-     *     BooleanValue?: bool,
-     *     StringValue?: string
+     *     IntegerValue?: int|null,
+     *     DoubleValue?: double|null,
+     *     BooleanValue?: bool|null,
+     *     StringValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

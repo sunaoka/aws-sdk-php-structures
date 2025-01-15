@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeRedshiftIdcApplications\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IdcInstanceArn
- * @property string $RedshiftIdcApplicationName
- * @property string $RedshiftIdcApplicationArn
- * @property string $IdentityNamespace
- * @property string $IdcDisplayName
- * @property string $IamRoleArn
- * @property string $IdcManagedApplicationArn
- * @property string $IdcOnboardStatus
- * @property list<AuthorizedTokenIssuer> $AuthorizedTokenIssuerList
- * @property list<ServiceIntegrationsUnion> $ServiceIntegrations
+ * @property string|null $IdcInstanceArn
+ * @property string|null $RedshiftIdcApplicationName
+ * @property string|null $RedshiftIdcApplicationArn
+ * @property string|null $IdentityNamespace
+ * @property string|null $IdcDisplayName
+ * @property string|null $IamRoleArn
+ * @property string|null $IdcManagedApplicationArn
+ * @property string|null $IdcOnboardStatus
+ * @property list<AuthorizedTokenIssuer>|null $AuthorizedTokenIssuerList
+ * @property list<ServiceIntegrationsUnion>|null $ServiceIntegrations
  */
 class RedshiftIdcApplication extends Shape
 {
     /**
      * @param array{
-     *     IdcInstanceArn?: string,
-     *     RedshiftIdcApplicationName?: string,
-     *     RedshiftIdcApplicationArn?: string,
-     *     IdentityNamespace?: string,
-     *     IdcDisplayName?: string,
-     *     IamRoleArn?: string,
-     *     IdcManagedApplicationArn?: string,
-     *     IdcOnboardStatus?: string,
-     *     AuthorizedTokenIssuerList?: list<AuthorizedTokenIssuer>,
-     *     ServiceIntegrations?: list<ServiceIntegrationsUnion>
+     *     IdcInstanceArn?: string|null,
+     *     RedshiftIdcApplicationName?: string|null,
+     *     RedshiftIdcApplicationArn?: string|null,
+     *     IdentityNamespace?: string|null,
+     *     IdcDisplayName?: string|null,
+     *     IamRoleArn?: string|null,
+     *     IdcManagedApplicationArn?: string|null,
+     *     IdcOnboardStatus?: string|null,
+     *     AuthorizedTokenIssuerList?: list<AuthorizedTokenIssuer>|null,
+     *     ServiceIntegrations?: list<ServiceIntegrationsUnion>|null
      * } $args
      */
     public function __construct(array $args = [])

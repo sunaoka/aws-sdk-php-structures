@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property int $Timeout
+ * @property int|null $Timeout
  */
 class ConnectionDraining extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     Timeout?: int
+     *     Timeout?: int|null
      * } $args
      */
     public function __construct(array $args)

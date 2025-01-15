@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $expression
  * @property list<ExpressionVariable> $variables
  * @property MetricWindow $window
- * @property MetricProcessingConfig $processingConfig
+ * @property MetricProcessingConfig|null $processingConfig
  */
 class Metric extends Shape
 {
@@ -17,7 +17,7 @@ class Metric extends Shape
      *     expression: string,
      *     variables: list<ExpressionVariable>,
      *     window: MetricWindow,
-     *     processingConfig?: MetricProcessingConfig
+     *     processingConfig?: MetricProcessingConfig|null
      * } $args
      */
     public function __construct(array $args)

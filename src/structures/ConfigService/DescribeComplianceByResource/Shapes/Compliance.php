@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeComplianceByResource\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA' $ComplianceType
- * @property ComplianceContributorCount $ComplianceContributorCount
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA'|null $ComplianceType
+ * @property ComplianceContributorCount|null $ComplianceContributorCount
  */
 class Compliance extends Shape
 {
     /**
      * @param array{
-     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA',
-     *     ComplianceContributorCount?: ComplianceContributorCount
+     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA'|null,
+     *     ComplianceContributorCount?: ComplianceContributorCount|null
      * } $args
      */
     public function __construct(array $args = [])

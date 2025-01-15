@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceConnectEndpoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
- * @property list<Shapes\Filter> $Filters
- * @property list<string> $InstanceConnectEndpointIds
+ * @property bool|null $DryRun
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<Shapes\Filter>|null $Filters
+ * @property list<string>|null $InstanceConnectEndpointIds
  */
 class DescribeInstanceConnectEndpointsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     InstanceConnectEndpointIds?: list<string>
+     *     DryRun?: bool|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     InstanceConnectEndpointIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

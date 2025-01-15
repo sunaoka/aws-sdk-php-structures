@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Allow'|'Deny' $effect
  * @property list<Shapes\Principal> $principal
  * @property list<string> $action
- * @property array<string, array<string, string>> $condition
- * @property string $expectedRevisionId
+ * @property array<string, array<string, string>>|null $condition
+ * @property string|null $expectedRevisionId
  */
 class CreateResourcePolicyStatementRequest extends Request
 {
@@ -22,8 +22,8 @@ class CreateResourcePolicyStatementRequest extends Request
      *     effect: 'Allow'|'Deny',
      *     principal: list<Shapes\Principal>,
      *     action: list<string>,
-     *     condition?: array<string, array<string, string>>,
-     *     expectedRevisionId?: string
+     *     condition?: array<string, array<string, string>>|null,
+     *     expectedRevisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

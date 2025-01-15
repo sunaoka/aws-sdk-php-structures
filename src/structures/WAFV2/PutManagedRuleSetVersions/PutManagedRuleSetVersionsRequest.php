@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
  * @property string $Id
  * @property string $LockToken
- * @property string $RecommendedVersion
- * @property array<string, Shapes\VersionToPublish> $VersionsToPublish
+ * @property string|null $RecommendedVersion
+ * @property array<string, Shapes\VersionToPublish>|null $VersionsToPublish
  */
 class PutManagedRuleSetVersionsRequest extends Request
 {
@@ -20,8 +20,8 @@ class PutManagedRuleSetVersionsRequest extends Request
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
      *     Id: string,
      *     LockToken: string,
-     *     RecommendedVersion?: string,
-     *     VersionsToPublish?: array<string, Shapes\VersionToPublish>
+     *     RecommendedVersion?: string|null,
+     *     VersionsToPublish?: array<string, Shapes\VersionToPublish>|null
      * } $args
      */
     public function __construct(array $args)

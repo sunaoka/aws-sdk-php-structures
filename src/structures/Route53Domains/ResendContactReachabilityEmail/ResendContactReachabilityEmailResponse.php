@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Route53Domains\ResendContactReachabilityEmail;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $domainName
- * @property string $emailAddress
- * @property bool $isAlreadyVerified
+ * @property string|null $domainName
+ * @property string|null $emailAddress
+ * @property bool|null $isAlreadyVerified
  */
 class ResendContactReachabilityEmailResponse extends Response
 {

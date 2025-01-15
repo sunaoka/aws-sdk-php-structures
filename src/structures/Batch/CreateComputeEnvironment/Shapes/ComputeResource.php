@@ -6,44 +6,44 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT' $type
- * @property 'BEST_FIT'|'BEST_FIT_PROGRESSIVE'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED' $allocationStrategy
- * @property int $minvCpus
+ * @property 'BEST_FIT'|'BEST_FIT_PROGRESSIVE'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED'|null $allocationStrategy
+ * @property int|null $minvCpus
  * @property int $maxvCpus
- * @property int $desiredvCpus
- * @property list<string> $instanceTypes
- * @property string $imageId
+ * @property int|null $desiredvCpus
+ * @property list<string>|null $instanceTypes
+ * @property string|null $imageId
  * @property list<string> $subnets
- * @property list<string> $securityGroupIds
- * @property string $ec2KeyPair
- * @property string $instanceRole
- * @property array<string, string> $tags
- * @property string $placementGroup
- * @property int $bidPercentage
- * @property string $spotIamFleetRole
- * @property LaunchTemplateSpecification $launchTemplate
- * @property list<Ec2Configuration> $ec2Configuration
+ * @property list<string>|null $securityGroupIds
+ * @property string|null $ec2KeyPair
+ * @property string|null $instanceRole
+ * @property array<string, string>|null $tags
+ * @property string|null $placementGroup
+ * @property int|null $bidPercentage
+ * @property string|null $spotIamFleetRole
+ * @property LaunchTemplateSpecification|null $launchTemplate
+ * @property list<Ec2Configuration>|null $ec2Configuration
  */
 class ComputeResource extends Shape
 {
     /**
      * @param array{
      *     type: 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT',
-     *     allocationStrategy?: 'BEST_FIT'|'BEST_FIT_PROGRESSIVE'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED',
-     *     minvCpus?: int,
+     *     allocationStrategy?: 'BEST_FIT'|'BEST_FIT_PROGRESSIVE'|'SPOT_CAPACITY_OPTIMIZED'|'SPOT_PRICE_CAPACITY_OPTIMIZED'|null,
+     *     minvCpus?: int|null,
      *     maxvCpus: int,
-     *     desiredvCpus?: int,
-     *     instanceTypes?: list<string>,
-     *     imageId?: string,
+     *     desiredvCpus?: int|null,
+     *     instanceTypes?: list<string>|null,
+     *     imageId?: string|null,
      *     subnets: list<string>,
-     *     securityGroupIds?: list<string>,
-     *     ec2KeyPair?: string,
-     *     instanceRole?: string,
-     *     tags?: array<string, string>,
-     *     placementGroup?: string,
-     *     bidPercentage?: int,
-     *     spotIamFleetRole?: string,
-     *     launchTemplate?: LaunchTemplateSpecification,
-     *     ec2Configuration?: list<Ec2Configuration>
+     *     securityGroupIds?: list<string>|null,
+     *     ec2KeyPair?: string|null,
+     *     instanceRole?: string|null,
+     *     tags?: array<string, string>|null,
+     *     placementGroup?: string|null,
+     *     bidPercentage?: int|null,
+     *     spotIamFleetRole?: string|null,
+     *     launchTemplate?: LaunchTemplateSpecification|null,
+     *     ec2Configuration?: list<Ec2Configuration>|null
      * } $args
      */
     public function __construct(array $args)

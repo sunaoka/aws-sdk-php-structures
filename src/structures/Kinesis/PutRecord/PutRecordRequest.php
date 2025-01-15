@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Kinesis\PutRecord;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
+ * @property string|null $StreamName
  * @property string|resource|\Psr\Http\Message\StreamInterface $Data
  * @property string $PartitionKey
- * @property string $ExplicitHashKey
- * @property string $SequenceNumberForOrdering
- * @property string $StreamARN
+ * @property string|null $ExplicitHashKey
+ * @property string|null $SequenceNumberForOrdering
+ * @property string|null $StreamARN
  */
 class PutRecordRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
+     *     StreamName?: string|null,
      *     Data: string|resource|\Psr\Http\Message\StreamInterface,
      *     PartitionKey: string,
-     *     ExplicitHashKey?: string,
-     *     SequenceNumberForOrdering?: string,
-     *     StreamARN?: string
+     *     ExplicitHashKey?: string|null,
+     *     SequenceNumberForOrdering?: string|null,
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args)

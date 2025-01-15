@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $workspace
- * @property list<IotTwinMakerSourceConfigurationFilter> $filters
+ * @property list<IotTwinMakerSourceConfigurationFilter>|null $filters
  */
 class IotTwinMakerSourceConfiguration extends Shape
 {
     /**
      * @param array{
      *     workspace: string,
-     *     filters?: list<IotTwinMakerSourceConfigurationFilter>
+     *     filters?: list<IotTwinMakerSourceConfigurationFilter>|null
      * } $args
      */
     public function __construct(array $args)

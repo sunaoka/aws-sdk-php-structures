@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomActionFilterOperation $FilterOperation
- * @property CustomActionNavigationOperation $NavigationOperation
- * @property CustomActionURLOperation $URLOperation
- * @property CustomActionSetParametersOperation $SetParametersOperation
+ * @property CustomActionFilterOperation|null $FilterOperation
+ * @property CustomActionNavigationOperation|null $NavigationOperation
+ * @property CustomActionURLOperation|null $URLOperation
+ * @property CustomActionSetParametersOperation|null $SetParametersOperation
  */
 class VisualCustomActionOperation extends Shape
 {
     /**
      * @param array{
-     *     FilterOperation?: CustomActionFilterOperation,
-     *     NavigationOperation?: CustomActionNavigationOperation,
-     *     URLOperation?: CustomActionURLOperation,
-     *     SetParametersOperation?: CustomActionSetParametersOperation
+     *     FilterOperation?: CustomActionFilterOperation|null,
+     *     NavigationOperation?: CustomActionNavigationOperation|null,
+     *     URLOperation?: CustomActionURLOperation|null,
+     *     SetParametersOperation?: CustomActionSetParametersOperation|null
      * } $args
      */
     public function __construct(array $args = [])

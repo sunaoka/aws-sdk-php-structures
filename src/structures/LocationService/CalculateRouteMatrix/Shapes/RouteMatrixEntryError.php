@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'RouteNotFound'|'RouteTooLong'|'PositionsNotFound'|'DestinationPositionNotFound'|'DeparturePositionNotFound'|'OtherValidationError' $Code
- * @property string $Message
+ * @property string|null $Message
  */
 class RouteMatrixEntryError extends Shape
 {
     /**
      * @param array{
      *     Code: 'RouteNotFound'|'RouteTooLong'|'PositionsNotFound'|'DestinationPositionNotFound'|'DeparturePositionNotFound'|'OtherValidationError',
-     *     Message?: string
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args)

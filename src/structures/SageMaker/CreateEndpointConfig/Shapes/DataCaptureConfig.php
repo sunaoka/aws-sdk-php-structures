@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateEndpointConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableCapture
+ * @property bool|null $EnableCapture
  * @property int<0, 100> $InitialSamplingPercentage
  * @property string $DestinationS3Uri
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property list<CaptureOption> $CaptureOptions
- * @property CaptureContentTypeHeader $CaptureContentTypeHeader
+ * @property CaptureContentTypeHeader|null $CaptureContentTypeHeader
  */
 class DataCaptureConfig extends Shape
 {
     /**
      * @param array{
-     *     EnableCapture?: bool,
+     *     EnableCapture?: bool|null,
      *     InitialSamplingPercentage: int<0, 100>,
      *     DestinationS3Uri: string,
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     CaptureOptions: list<CaptureOption>,
-     *     CaptureContentTypeHeader?: CaptureContentTypeHeader
+     *     CaptureContentTypeHeader?: CaptureContentTypeHeader|null
      * } $args
      */
     public function __construct(array $args)

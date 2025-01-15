@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\GetVehicleStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $campaignName
- * @property string $vehicleName
- * @property 'CREATED'|'READY'|'HEALTHY'|'SUSPENDED'|'DELETING' $status
+ * @property string|null $campaignName
+ * @property string|null $vehicleName
+ * @property 'CREATED'|'READY'|'HEALTHY'|'SUSPENDED'|'DELETING'|null $status
  */
 class VehicleStatus extends Shape
 {
     /**
      * @param array{
-     *     campaignName?: string,
-     *     vehicleName?: string,
-     *     status?: 'CREATED'|'READY'|'HEALTHY'|'SUSPENDED'|'DELETING'
+     *     campaignName?: string|null,
+     *     vehicleName?: string|null,
+     *     status?: 'CREATED'|'READY'|'HEALTHY'|'SUSPENDED'|'DELETING'|null
      * } $args
      */
     public function __construct(array $args = [])

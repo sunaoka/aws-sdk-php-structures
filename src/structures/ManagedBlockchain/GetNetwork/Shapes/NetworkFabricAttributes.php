@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\GetNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OrderingServiceEndpoint
- * @property 'STARTER'|'STANDARD' $Edition
+ * @property string|null $OrderingServiceEndpoint
+ * @property 'STARTER'|'STANDARD'|null $Edition
  */
 class NetworkFabricAttributes extends Shape
 {
     /**
      * @param array{
-     *     OrderingServiceEndpoint?: string,
-     *     Edition?: 'STARTER'|'STANDARD'
+     *     OrderingServiceEndpoint?: string|null,
+     *     Edition?: 'STARTER'|'STANDARD'|null
      * } $args
      */
     public function __construct(array $args = [])

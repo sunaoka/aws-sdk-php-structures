@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PublishMetricAction $PublishMetricAction
+ * @property PublishMetricAction|null $PublishMetricAction
  */
 class ActionDefinition extends Shape
 {
     /**
-     * @param array{PublishMetricAction?: PublishMetricAction} $args
+     * @param array{PublishMetricAction?: PublishMetricAction|null} $args
      */
     public function __construct(array $args = [])
     {

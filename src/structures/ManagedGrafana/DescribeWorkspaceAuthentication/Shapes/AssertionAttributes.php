@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\DescribeWorkspaceAuthentication\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $email
- * @property string $groups
- * @property string $login
- * @property string $name
- * @property string $org
- * @property string $role
+ * @property string|null $email
+ * @property string|null $groups
+ * @property string|null $login
+ * @property string|null $name
+ * @property string|null $org
+ * @property string|null $role
  */
 class AssertionAttributes extends Shape
 {
     /**
      * @param array{
-     *     email?: string,
-     *     groups?: string,
-     *     login?: string,
-     *     name?: string,
-     *     org?: string,
-     *     role?: string
+     *     email?: string|null,
+     *     groups?: string|null,
+     *     login?: string|null,
+     *     name?: string|null,
+     *     org?: string|null,
+     *     role?: string|null
      * } $args
      */
     public function __construct(array $args = [])

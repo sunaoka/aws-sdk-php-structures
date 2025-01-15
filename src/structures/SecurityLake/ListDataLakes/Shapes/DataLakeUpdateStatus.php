@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityLake\ListDataLakes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataLakeUpdateException $exception
- * @property string $requestId
- * @property 'INITIALIZED'|'PENDING'|'COMPLETED'|'FAILED' $status
+ * @property DataLakeUpdateException|null $exception
+ * @property string|null $requestId
+ * @property 'INITIALIZED'|'PENDING'|'COMPLETED'|'FAILED'|null $status
  */
 class DataLakeUpdateStatus extends Shape
 {
     /**
      * @param array{
-     *     exception?: DataLakeUpdateException,
-     *     requestId?: string,
-     *     status?: 'INITIALIZED'|'PENDING'|'COMPLETED'|'FAILED'
+     *     exception?: DataLakeUpdateException|null,
+     *     requestId?: string|null,
+     *     status?: 'INITIALIZED'|'PENDING'|'COMPLETED'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

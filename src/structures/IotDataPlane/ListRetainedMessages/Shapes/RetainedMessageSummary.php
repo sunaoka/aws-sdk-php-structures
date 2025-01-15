@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IotDataPlane\ListRetainedMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $topic
- * @property int $payloadSize
- * @property int<0, 1> $qos
- * @property int $lastModifiedTime
+ * @property string|null $topic
+ * @property int|null $payloadSize
+ * @property int<0, 1>|null $qos
+ * @property int|null $lastModifiedTime
  */
 class RetainedMessageSummary extends Shape
 {
     /**
      * @param array{
-     *     topic?: string,
-     *     payloadSize?: int,
-     *     qos?: int<0, 1>,
-     *     lastModifiedTime?: int
+     *     topic?: string|null,
+     *     payloadSize?: int|null,
+     *     qos?: int<0, 1>|null,
+     *     lastModifiedTime?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyName
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $ExpireTime
- * @property bool $NoExpiry
- * @property bool $ForceUpdate
- * @property Shapes\ApiKeyRestrictions $Restrictions
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $ExpireTime
+ * @property bool|null $NoExpiry
+ * @property bool|null $ForceUpdate
+ * @property Shapes\ApiKeyRestrictions|null $Restrictions
  */
 class UpdateKeyRequest extends Request
 {
     /**
      * @param array{
      *     KeyName: string,
-     *     Description?: string,
-     *     ExpireTime?: \Aws\Api\DateTimeResult,
-     *     NoExpiry?: bool,
-     *     ForceUpdate?: bool,
-     *     Restrictions?: Shapes\ApiKeyRestrictions
+     *     Description?: string|null,
+     *     ExpireTime?: \Aws\Api\DateTimeResult|null,
+     *     NoExpiry?: bool|null,
+     *     ForceUpdate?: bool|null,
+     *     Restrictions?: Shapes\ApiKeyRestrictions|null
      * } $args
      */
     public function __construct(array $args)

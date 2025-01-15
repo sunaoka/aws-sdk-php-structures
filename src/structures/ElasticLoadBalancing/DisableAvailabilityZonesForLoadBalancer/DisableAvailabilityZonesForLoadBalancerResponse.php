@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DisableAvailabilityZonesFo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $AvailabilityZones
+ * @property list<string>|null $AvailabilityZones
  */
 class DisableAvailabilityZonesForLoadBalancerResponse extends Response
 {

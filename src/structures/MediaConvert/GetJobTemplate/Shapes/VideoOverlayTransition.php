@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VideoOverlayPosition $EndPosition
- * @property string $EndTimecode
- * @property string $StartTimecode
+ * @property VideoOverlayPosition|null $EndPosition
+ * @property string|null $EndTimecode
+ * @property string|null $StartTimecode
  */
 class VideoOverlayTransition extends Shape
 {
     /**
      * @param array{
-     *     EndPosition?: VideoOverlayPosition,
-     *     EndTimecode?: string,
-     *     StartTimecode?: string
+     *     EndPosition?: VideoOverlayPosition|null,
+     *     EndTimecode?: string|null,
+     *     StartTimecode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

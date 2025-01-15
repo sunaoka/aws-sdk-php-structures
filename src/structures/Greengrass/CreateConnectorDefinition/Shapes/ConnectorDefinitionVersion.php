@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateConnectorDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Connector> $Connectors
+ * @property list<Connector>|null $Connectors
  */
 class ConnectorDefinitionVersion extends Shape
 {
     /**
-     * @param array{Connectors?: list<Connector>} $args
+     * @param array{Connectors?: list<Connector>|null} $args
      */
     public function __construct(array $args = [])
     {

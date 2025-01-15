@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Rds\CreateCustomDBEngineVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $Description
- * @property bool $AutoUpgrade
- * @property bool $IsMajorVersionUpgrade
- * @property list<string> $SupportedEngineModes
- * @property bool $SupportsParallelQuery
- * @property bool $SupportsGlobalDatabases
- * @property bool $SupportsBabelfish
- * @property bool $SupportsLimitlessDatabase
- * @property bool $SupportsLocalWriteForwarding
- * @property bool $SupportsIntegrations
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $Description
+ * @property bool|null $AutoUpgrade
+ * @property bool|null $IsMajorVersionUpgrade
+ * @property list<string>|null $SupportedEngineModes
+ * @property bool|null $SupportsParallelQuery
+ * @property bool|null $SupportsGlobalDatabases
+ * @property bool|null $SupportsBabelfish
+ * @property bool|null $SupportsLimitlessDatabase
+ * @property bool|null $SupportsLocalWriteForwarding
+ * @property bool|null $SupportsIntegrations
  */
 class UpgradeTarget extends Shape
 {
     /**
      * @param array{
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     Description?: string,
-     *     AutoUpgrade?: bool,
-     *     IsMajorVersionUpgrade?: bool,
-     *     SupportedEngineModes?: list<string>,
-     *     SupportsParallelQuery?: bool,
-     *     SupportsGlobalDatabases?: bool,
-     *     SupportsBabelfish?: bool,
-     *     SupportsLimitlessDatabase?: bool,
-     *     SupportsLocalWriteForwarding?: bool,
-     *     SupportsIntegrations?: bool
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     Description?: string|null,
+     *     AutoUpgrade?: bool|null,
+     *     IsMajorVersionUpgrade?: bool|null,
+     *     SupportedEngineModes?: list<string>|null,
+     *     SupportsParallelQuery?: bool|null,
+     *     SupportsGlobalDatabases?: bool|null,
+     *     SupportsBabelfish?: bool|null,
+     *     SupportsLimitlessDatabase?: bool|null,
+     *     SupportsLocalWriteForwarding?: bool|null,
+     *     SupportsIntegrations?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

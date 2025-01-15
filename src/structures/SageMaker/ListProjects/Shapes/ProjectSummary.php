@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ProjectName
- * @property string $ProjectDescription
+ * @property string|null $ProjectDescription
  * @property string $ProjectArn
  * @property string $ProjectId
  * @property \Aws\Api\DateTimeResult $CreationTime
@@ -17,7 +17,7 @@ class ProjectSummary extends Shape
     /**
      * @param array{
      *     ProjectName: string,
-     *     ProjectDescription?: string,
+     *     ProjectDescription?: string|null,
      *     ProjectArn: string,
      *     ProjectId: string,
      *     CreationTime: \Aws\Api\DateTimeResult,

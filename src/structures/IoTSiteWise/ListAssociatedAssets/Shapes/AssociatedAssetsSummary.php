@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $lastUpdateDate
  * @property AssetStatus $status
  * @property list<AssetHierarchy> $hierarchies
- * @property string $description
- * @property string $externalId
+ * @property string|null $description
+ * @property string|null $externalId
  */
 class AssociatedAssetsSummary extends Shape
 {
@@ -28,8 +28,8 @@ class AssociatedAssetsSummary extends Shape
      *     lastUpdateDate: \Aws\Api\DateTimeResult,
      *     status: AssetStatus,
      *     hierarchies: list<AssetHierarchy>,
-     *     description?: string,
-     *     externalId?: string
+     *     description?: string|null,
+     *     externalId?: string|null
      * } $args
      */
     public function __construct(array $args)

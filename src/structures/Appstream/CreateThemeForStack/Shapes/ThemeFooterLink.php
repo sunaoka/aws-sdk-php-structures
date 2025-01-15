@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Appstream\CreateThemeForStack\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DisplayName
- * @property string $FooterLinkURL
+ * @property string|null $DisplayName
+ * @property string|null $FooterLinkURL
  */
 class ThemeFooterLink extends Shape
 {
     /**
      * @param array{
-     *     DisplayName?: string,
-     *     FooterLinkURL?: string
+     *     DisplayName?: string|null,
+     *     FooterLinkURL?: string|null
      * } $args
      */
     public function __construct(array $args = [])

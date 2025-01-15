@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IdentityStoreId
- * @property string $DisplayName
- * @property string $Description
+ * @property string|null $DisplayName
+ * @property string|null $Description
  */
 class CreateGroupRequest extends Request
 {
     /**
      * @param array{
      *     IdentityStoreId: string,
-     *     DisplayName?: string,
-     *     Description?: string
+     *     DisplayName?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

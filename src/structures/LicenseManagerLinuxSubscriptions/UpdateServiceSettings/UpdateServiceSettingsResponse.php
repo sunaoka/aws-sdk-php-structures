@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\UpdateServiceS
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $HomeRegions
- * @property 'Enabled'|'Disabled' $LinuxSubscriptionsDiscovery
- * @property Shapes\LinuxSubscriptionsDiscoverySettings $LinuxSubscriptionsDiscoverySettings
- * @property 'InProgress'|'Completed'|'Successful'|'Failed' $Status
- * @property array<string, string> $StatusMessage
+ * @property list<string>|null $HomeRegions
+ * @property 'Enabled'|'Disabled'|null $LinuxSubscriptionsDiscovery
+ * @property Shapes\LinuxSubscriptionsDiscoverySettings|null $LinuxSubscriptionsDiscoverySettings
+ * @property 'InProgress'|'Completed'|'Successful'|'Failed'|null $Status
+ * @property array<string, string>|null $StatusMessage
  */
 class UpdateServiceSettingsResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property TaskManagedEBSVolumeConfiguration $managedEBSVolume
+ * @property TaskManagedEBSVolumeConfiguration|null $managedEBSVolume
  */
 class TaskVolumeConfiguration extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     managedEBSVolume?: TaskManagedEBSVolumeConfiguration
+     *     managedEBSVolume?: TaskManagedEBSVolumeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

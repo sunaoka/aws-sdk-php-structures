@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SECONDS'|'MINUTES'|'HOURS'|'DAYS'|'MONTHS'|'YEARS'|'INFINITE'|'UNSPECIFIED' $Type
- * @property int<0, 65535> $Value
+ * @property int<0, 65535>|null $Value
  */
 class RetentionPeriod extends Shape
 {
     /**
      * @param array{
      *     Type: 'SECONDS'|'MINUTES'|'HOURS'|'DAYS'|'MONTHS'|'YEARS'|'INFINITE'|'UNSPECIFIED',
-     *     Value?: int<0, 65535>
+     *     Value?: int<0, 65535>|null
      * } $args
      */
     public function __construct(array $args)

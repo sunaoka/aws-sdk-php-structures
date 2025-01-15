@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\UpdateDataAutomationProje
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DocumentStandardExtraction $extraction
- * @property DocumentStandardGenerativeField $generativeField
- * @property DocumentOutputFormat $outputFormat
+ * @property DocumentStandardExtraction|null $extraction
+ * @property DocumentStandardGenerativeField|null $generativeField
+ * @property DocumentOutputFormat|null $outputFormat
  */
 class DocumentStandardOutputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     extraction?: DocumentStandardExtraction,
-     *     generativeField?: DocumentStandardGenerativeField,
-     *     outputFormat?: DocumentOutputFormat
+     *     extraction?: DocumentStandardExtraction|null,
+     *     generativeField?: DocumentStandardGenerativeField|null,
+     *     outputFormat?: DocumentOutputFormat|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $analyzerArn
- * @property string $nextToken
- * @property int $maxResults
+ * @property string|null $nextToken
+ * @property int|null $maxResults
  */
 class ListAccessPreviewsRequest extends Request
 {
     /**
      * @param array{
      *     analyzerArn: string,
-     *     nextToken?: string,
-     *     maxResults?: int
+     *     nextToken?: string|null,
+     *     maxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

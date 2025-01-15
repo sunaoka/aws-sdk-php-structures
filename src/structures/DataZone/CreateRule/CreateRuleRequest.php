@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'CREATE_SUBSCRIPTION_REQUEST' $action
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property Shapes\RuleDetail $detail
  * @property string $domainIdentifier
  * @property string $name
@@ -19,8 +19,8 @@ class CreateRuleRequest extends Request
     /**
      * @param array{
      *     action: 'CREATE_SUBSCRIPTION_REQUEST',
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     detail: Shapes\RuleDetail,
      *     domainIdentifier: string,
      *     name: string,

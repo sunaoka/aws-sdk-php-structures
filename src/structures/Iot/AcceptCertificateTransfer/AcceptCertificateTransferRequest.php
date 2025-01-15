@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $certificateId
- * @property bool $setAsActive
+ * @property bool|null $setAsActive
  */
 class AcceptCertificateTransferRequest extends Request
 {
     /**
      * @param array{
      *     certificateId: string,
-     *     setAsActive?: bool
+     *     setAsActive?: bool|null
      * } $args
      */
     public function __construct(array $args)

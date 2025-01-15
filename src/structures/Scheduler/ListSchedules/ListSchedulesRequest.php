@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Scheduler\ListSchedules;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GroupName
- * @property int<1, 100> $MaxResults
- * @property string $NamePrefix
- * @property string $NextToken
- * @property 'ENABLED'|'DISABLED' $State
+ * @property string|null $GroupName
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NamePrefix
+ * @property string|null $NextToken
+ * @property 'ENABLED'|'DISABLED'|null $State
  */
 class ListSchedulesRequest extends Request
 {
     /**
      * @param array{
-     *     GroupName?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NamePrefix?: string,
-     *     NextToken?: string,
-     *     State?: 'ENABLED'|'DISABLED'
+     *     GroupName?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NamePrefix?: string|null,
+     *     NextToken?: string|null,
+     *     State?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
- * @property array<string, string> $BackupVaultTags
- * @property string $CreatorRequestId
+ * @property array<string, string>|null $BackupVaultTags
+ * @property string|null $CreatorRequestId
  * @property int $MinRetentionDays
  * @property int $MaxRetentionDays
  */
@@ -16,8 +16,8 @@ class CreateLogicallyAirGappedBackupVaultRequest extends Request
     /**
      * @param array{
      *     BackupVaultName: string,
-     *     BackupVaultTags?: array<string, string>,
-     *     CreatorRequestId?: string,
+     *     BackupVaultTags?: array<string, string>|null,
+     *     CreatorRequestId?: string|null,
      *     MinRetentionDays: int,
      *     MaxRetentionDays: int
      * } $args

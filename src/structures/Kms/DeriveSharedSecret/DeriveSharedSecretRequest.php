@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $KeyId
  * @property 'ECDH' $KeyAgreementAlgorithm
  * @property string|resource|\Psr\Http\Message\StreamInterface $PublicKey
- * @property list<string> $GrantTokens
- * @property bool $DryRun
- * @property Shapes\RecipientInfo $Recipient
+ * @property list<string>|null $GrantTokens
+ * @property bool|null $DryRun
+ * @property Shapes\RecipientInfo|null $Recipient
  */
 class DeriveSharedSecretRequest extends Request
 {
@@ -19,9 +19,9 @@ class DeriveSharedSecretRequest extends Request
      *     KeyId: string,
      *     KeyAgreementAlgorithm: 'ECDH',
      *     PublicKey: string|resource|\Psr\Http\Message\StreamInterface,
-     *     GrantTokens?: list<string>,
-     *     DryRun?: bool,
-     *     Recipient?: Shapes\RecipientInfo
+     *     GrantTokens?: list<string>|null,
+     *     DryRun?: bool|null,
+     *     Recipient?: Shapes\RecipientInfo|null
      * } $args
      */
     public function __construct(array $args)

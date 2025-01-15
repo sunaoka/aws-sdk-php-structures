@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryId
- * @property list<string> $DomainControllerIds
- * @property string $NextToken
- * @property int<0, max> $Limit
+ * @property list<string>|null $DomainControllerIds
+ * @property string|null $NextToken
+ * @property int<0, max>|null $Limit
  */
 class DescribeDomainControllersRequest extends Request
 {
     /**
      * @param array{
      *     DirectoryId: string,
-     *     DomainControllerIds?: list<string>,
-     *     NextToken?: string,
-     *     Limit?: int<0, max>
+     *     DomainControllerIds?: list<string>|null,
+     *     NextToken?: string|null,
+     *     Limit?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

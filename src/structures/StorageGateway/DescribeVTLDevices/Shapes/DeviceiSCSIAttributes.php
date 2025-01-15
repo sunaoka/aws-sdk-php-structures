@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeVTLDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetARN
- * @property string $NetworkInterfaceId
- * @property int $NetworkInterfacePort
- * @property bool $ChapEnabled
+ * @property string|null $TargetARN
+ * @property string|null $NetworkInterfaceId
+ * @property int|null $NetworkInterfacePort
+ * @property bool|null $ChapEnabled
  */
 class DeviceiSCSIAttributes extends Shape
 {
     /**
      * @param array{
-     *     TargetARN?: string,
-     *     NetworkInterfaceId?: string,
-     *     NetworkInterfacePort?: int,
-     *     ChapEnabled?: bool
+     *     TargetARN?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     NetworkInterfacePort?: int|null,
+     *     ChapEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

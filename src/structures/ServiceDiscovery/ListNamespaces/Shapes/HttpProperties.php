@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\ListNamespaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HttpName
+ * @property string|null $HttpName
  */
 class HttpProperties extends Shape
 {
     /**
-     * @param array{HttpName?: string} $args
+     * @param array{HttpName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

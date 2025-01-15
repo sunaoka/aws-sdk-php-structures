@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property string $namespace
- * @property list<ServiceConnectService> $services
- * @property LogConfiguration $logConfiguration
+ * @property string|null $namespace
+ * @property list<ServiceConnectService>|null $services
+ * @property LogConfiguration|null $logConfiguration
  */
 class ServiceConnectConfiguration extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     namespace?: string,
-     *     services?: list<ServiceConnectService>,
-     *     logConfiguration?: LogConfiguration
+     *     namespace?: string|null,
+     *     services?: list<ServiceConnectService>|null,
+     *     logConfiguration?: LogConfiguration|null
      * } $args
      */
     public function __construct(array $args)

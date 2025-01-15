@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $startTime
+ * @property string|null $startTime
  */
 class ScheduledJobRollout extends Shape
 {
     /**
-     * @param array{startTime?: string} $args
+     * @param array{startTime?: string|null} $args
      */
     public function __construct(array $args = [])
     {

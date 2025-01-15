@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchRead\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Path
- * @property list<string> $ObjectIdentifiers
+ * @property string|null $Path
+ * @property list<string>|null $ObjectIdentifiers
  */
 class PathToObjectIdentifiers extends Shape
 {
     /**
      * @param array{
-     *     Path?: string,
-     *     ObjectIdentifiers?: list<string>
+     *     Path?: string|null,
+     *     ObjectIdentifiers?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

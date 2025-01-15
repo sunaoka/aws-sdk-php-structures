@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ChannelGroupName
  * @property string $ChannelName
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListOriginEndpointsRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListOriginEndpointsRequest extends Request
      * @param array{
      *     ChannelGroupName: string,
      *     ChannelName: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

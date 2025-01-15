@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $object
- * @property list<string> $idFieldNames
- * @property ErrorHandlingConfig $errorHandlingConfig
- * @property 'INSERT'|'UPSERT'|'UPDATE'|'DELETE' $writeOperationType
+ * @property list<string>|null $idFieldNames
+ * @property ErrorHandlingConfig|null $errorHandlingConfig
+ * @property 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'|null $writeOperationType
  */
 class ZendeskDestinationProperties extends Shape
 {
     /**
      * @param array{
      *     object: string,
-     *     idFieldNames?: list<string>,
-     *     errorHandlingConfig?: ErrorHandlingConfig,
-     *     writeOperationType?: 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'
+     *     idFieldNames?: list<string>|null,
+     *     errorHandlingConfig?: ErrorHandlingConfig|null,
+     *     writeOperationType?: 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'|null
      * } $args
      */
     public function __construct(array $args)

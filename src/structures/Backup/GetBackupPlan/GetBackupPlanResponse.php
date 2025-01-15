@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Backup\GetBackupPlan;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\BackupPlan $BackupPlan
- * @property string $BackupPlanId
- * @property string $BackupPlanArn
- * @property string $VersionId
- * @property string $CreatorRequestId
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $DeletionDate
- * @property \Aws\Api\DateTimeResult $LastExecutionDate
- * @property list<Shapes\AdvancedBackupSetting> $AdvancedBackupSettings
+ * @property Shapes\BackupPlan|null $BackupPlan
+ * @property string|null $BackupPlanId
+ * @property string|null $BackupPlanArn
+ * @property string|null $VersionId
+ * @property string|null $CreatorRequestId
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $DeletionDate
+ * @property \Aws\Api\DateTimeResult|null $LastExecutionDate
+ * @property list<Shapes\AdvancedBackupSetting>|null $AdvancedBackupSettings
  */
 class GetBackupPlanResponse extends Response
 {

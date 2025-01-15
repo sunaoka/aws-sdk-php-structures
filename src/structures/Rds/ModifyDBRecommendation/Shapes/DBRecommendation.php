@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyDBRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RecommendationId
- * @property string $TypeId
- * @property string $Severity
- * @property string $ResourceArn
- * @property string $Status
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $UpdatedTime
- * @property string $Detection
- * @property string $Recommendation
- * @property string $Description
- * @property string $Reason
- * @property list<RecommendedAction> $RecommendedActions
- * @property string $Category
- * @property string $Source
- * @property string $TypeDetection
- * @property string $TypeRecommendation
- * @property string $Impact
- * @property string $AdditionalInfo
- * @property list<DocLink> $Links
- * @property IssueDetails $IssueDetails
+ * @property string|null $RecommendationId
+ * @property string|null $TypeId
+ * @property string|null $Severity
+ * @property string|null $ResourceArn
+ * @property string|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTime
+ * @property string|null $Detection
+ * @property string|null $Recommendation
+ * @property string|null $Description
+ * @property string|null $Reason
+ * @property list<RecommendedAction>|null $RecommendedActions
+ * @property string|null $Category
+ * @property string|null $Source
+ * @property string|null $TypeDetection
+ * @property string|null $TypeRecommendation
+ * @property string|null $Impact
+ * @property string|null $AdditionalInfo
+ * @property list<DocLink>|null $Links
+ * @property IssueDetails|null $IssueDetails
  */
 class DBRecommendation extends Shape
 {
     /**
      * @param array{
-     *     RecommendationId?: string,
-     *     TypeId?: string,
-     *     Severity?: string,
-     *     ResourceArn?: string,
-     *     Status?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     UpdatedTime?: \Aws\Api\DateTimeResult,
-     *     Detection?: string,
-     *     Recommendation?: string,
-     *     Description?: string,
-     *     Reason?: string,
-     *     RecommendedActions?: list<RecommendedAction>,
-     *     Category?: string,
-     *     Source?: string,
-     *     TypeDetection?: string,
-     *     TypeRecommendation?: string,
-     *     Impact?: string,
-     *     AdditionalInfo?: string,
-     *     Links?: list<DocLink>,
-     *     IssueDetails?: IssueDetails
+     *     RecommendationId?: string|null,
+     *     TypeId?: string|null,
+     *     Severity?: string|null,
+     *     ResourceArn?: string|null,
+     *     Status?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     Detection?: string|null,
+     *     Recommendation?: string|null,
+     *     Description?: string|null,
+     *     Reason?: string|null,
+     *     RecommendedActions?: list<RecommendedAction>|null,
+     *     Category?: string|null,
+     *     Source?: string|null,
+     *     TypeDetection?: string|null,
+     *     TypeRecommendation?: string|null,
+     *     Impact?: string|null,
+     *     AdditionalInfo?: string|null,
+     *     Links?: list<DocLink>|null,
+     *     IssueDetails?: IssueDetails|null
      * } $args
      */
     public function __construct(array $args = [])

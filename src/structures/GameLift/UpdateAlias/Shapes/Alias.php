@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\GameLift\UpdateAlias\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AliasId
- * @property string $Name
- * @property string $AliasArn
- * @property string $Description
- * @property RoutingStrategy $RoutingStrategy
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
+ * @property string|null $AliasId
+ * @property string|null $Name
+ * @property string|null $AliasArn
+ * @property string|null $Description
+ * @property RoutingStrategy|null $RoutingStrategy
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  */
 class Alias extends Shape
 {
     /**
      * @param array{
-     *     AliasId?: string,
-     *     Name?: string,
-     *     AliasArn?: string,
-     *     Description?: string,
-     *     RoutingStrategy?: RoutingStrategy,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult
+     *     AliasId?: string|null,
+     *     Name?: string|null,
+     *     AliasArn?: string|null,
+     *     Description?: string|null,
+     *     RoutingStrategy?: RoutingStrategy|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

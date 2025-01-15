@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $QueryId
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property list<Shapes\Row> $Rows
  * @property list<Shapes\ColumnInfo> $ColumnInfo
- * @property Shapes\QueryStatus $QueryStatus
- * @property Shapes\QueryInsightsResponse $QueryInsightsResponse
+ * @property Shapes\QueryStatus|null $QueryStatus
+ * @property Shapes\QueryInsightsResponse|null $QueryInsightsResponse
  */
 class QueryResponse extends Response
 {

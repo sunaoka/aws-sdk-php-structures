@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterOperation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpcConnectionArn
- * @property string $Owner
- * @property UserIdentity $UserIdentity
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $VpcConnectionArn
+ * @property string|null $Owner
+ * @property UserIdentity|null $UserIdentity
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class VpcConnectionInfo extends Shape
 {
     /**
      * @param array{
-     *     VpcConnectionArn?: string,
-     *     Owner?: string,
-     *     UserIdentity?: UserIdentity,
-     *     CreationTime?: \Aws\Api\DateTimeResult
+     *     VpcConnectionArn?: string|null,
+     *     Owner?: string|null,
+     *     UserIdentity?: UserIdentity|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

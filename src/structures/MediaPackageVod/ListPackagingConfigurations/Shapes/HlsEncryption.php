@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\ListPackagingConfigurations\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConstantInitializationVector
- * @property 'AES_128'|'SAMPLE_AES' $EncryptionMethod
+ * @property string|null $ConstantInitializationVector
+ * @property 'AES_128'|'SAMPLE_AES'|null $EncryptionMethod
  * @property SpekeKeyProvider $SpekeKeyProvider
  */
 class HlsEncryption extends Shape
 {
     /**
      * @param array{
-     *     ConstantInitializationVector?: string,
-     *     EncryptionMethod?: 'AES_128'|'SAMPLE_AES',
+     *     ConstantInitializationVector?: string|null,
+     *     EncryptionMethod?: 'AES_128'|'SAMPLE_AES'|null,
      *     SpekeKeyProvider: SpekeKeyProvider
      * } $args
      */

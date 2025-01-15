@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $detectorVersionId
  * @property list<string> $externalModelEndpoints
  * @property list<Shapes\Rule> $rules
- * @property string $description
- * @property list<Shapes\ModelVersion> $modelVersions
- * @property 'ALL_MATCHED'|'FIRST_MATCHED' $ruleExecutionMode
+ * @property string|null $description
+ * @property list<Shapes\ModelVersion>|null $modelVersions
+ * @property 'ALL_MATCHED'|'FIRST_MATCHED'|null $ruleExecutionMode
  */
 class UpdateDetectorVersionRequest extends Request
 {
@@ -21,9 +21,9 @@ class UpdateDetectorVersionRequest extends Request
      *     detectorVersionId: string,
      *     externalModelEndpoints: list<string>,
      *     rules: list<Shapes\Rule>,
-     *     description?: string,
-     *     modelVersions?: list<Shapes\ModelVersion>,
-     *     ruleExecutionMode?: 'ALL_MATCHED'|'FIRST_MATCHED'
+     *     description?: string|null,
+     *     modelVersions?: list<Shapes\ModelVersion>|null,
+     *     ruleExecutionMode?: 'ALL_MATCHED'|'FIRST_MATCHED'|null
      * } $args
      */
     public function __construct(array $args)

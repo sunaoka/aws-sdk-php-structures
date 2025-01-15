@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\BCMDataExports\GetTable;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Description
- * @property list<Shapes\Column> $Schema
- * @property string $TableName
- * @property array<string, string> $TableProperties
+ * @property string|null $Description
+ * @property list<Shapes\Column>|null $Schema
+ * @property string|null $TableName
+ * @property array<string, string>|null $TableProperties
  */
 class GetTableResponse extends Response
 {

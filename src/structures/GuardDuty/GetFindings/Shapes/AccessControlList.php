@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AllowsPublicReadAccess
- * @property bool $AllowsPublicWriteAccess
+ * @property bool|null $AllowsPublicReadAccess
+ * @property bool|null $AllowsPublicWriteAccess
  */
 class AccessControlList extends Shape
 {
     /**
      * @param array{
-     *     AllowsPublicReadAccess?: bool,
-     *     AllowsPublicWriteAccess?: bool
+     *     AllowsPublicReadAccess?: bool|null,
+     *     AllowsPublicWriteAccess?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

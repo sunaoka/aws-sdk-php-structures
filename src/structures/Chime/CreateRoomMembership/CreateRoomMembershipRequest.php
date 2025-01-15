@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $RoomId
  * @property string $MemberId
- * @property 'Administrator'|'Member' $Role
+ * @property 'Administrator'|'Member'|null $Role
  */
 class CreateRoomMembershipRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateRoomMembershipRequest extends Request
      *     AccountId: string,
      *     RoomId: string,
      *     MemberId: string,
-     *     Role?: 'Administrator'|'Member'
+     *     Role?: 'Administrator'|'Member'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaPackage\ConfigureLogs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\EgressAccessLogs $EgressAccessLogs
+ * @property Shapes\EgressAccessLogs|null $EgressAccessLogs
  * @property string $Id
- * @property Shapes\IngressAccessLogs $IngressAccessLogs
+ * @property Shapes\IngressAccessLogs|null $IngressAccessLogs
  */
 class ConfigureLogsRequest extends Request
 {
     /**
      * @param array{
-     *     EgressAccessLogs?: Shapes\EgressAccessLogs,
+     *     EgressAccessLogs?: Shapes\EgressAccessLogs|null,
      *     Id: string,
-     *     IngressAccessLogs?: Shapes\IngressAccessLogs
+     *     IngressAccessLogs?: Shapes\IngressAccessLogs|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SsmSap\GetDatabase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ApplicationId
- * @property string $ComponentId
- * @property string $DatabaseId
- * @property string $DatabaseArn
+ * @property string|null $ApplicationId
+ * @property string|null $ComponentId
+ * @property string|null $DatabaseId
+ * @property string|null $DatabaseArn
  */
 class GetDatabaseRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     ComponentId?: string,
-     *     DatabaseId?: string,
-     *     DatabaseArn?: string
+     *     ApplicationId?: string|null,
+     *     ComponentId?: string|null,
+     *     DatabaseId?: string|null,
+     *     DatabaseArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

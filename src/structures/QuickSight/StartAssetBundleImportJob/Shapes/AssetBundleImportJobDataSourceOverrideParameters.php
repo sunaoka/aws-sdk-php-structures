@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DataSourceId
- * @property string $Name
- * @property DataSourceParameters $DataSourceParameters
- * @property VpcConnectionProperties $VpcConnectionProperties
- * @property SslProperties $SslProperties
- * @property AssetBundleImportJobDataSourceCredentials $Credentials
+ * @property string|null $Name
+ * @property DataSourceParameters|null $DataSourceParameters
+ * @property VpcConnectionProperties|null $VpcConnectionProperties
+ * @property SslProperties|null $SslProperties
+ * @property AssetBundleImportJobDataSourceCredentials|null $Credentials
  */
 class AssetBundleImportJobDataSourceOverrideParameters extends Shape
 {
     /**
      * @param array{
      *     DataSourceId: string,
-     *     Name?: string,
-     *     DataSourceParameters?: DataSourceParameters,
-     *     VpcConnectionProperties?: VpcConnectionProperties,
-     *     SslProperties?: SslProperties,
-     *     Credentials?: AssetBundleImportJobDataSourceCredentials
+     *     Name?: string|null,
+     *     DataSourceParameters?: DataSourceParameters|null,
+     *     VpcConnectionProperties?: VpcConnectionProperties|null,
+     *     SslProperties?: SslProperties|null,
+     *     Credentials?: AssetBundleImportJobDataSourceCredentials|null
      * } $args
      */
     public function __construct(array $args)

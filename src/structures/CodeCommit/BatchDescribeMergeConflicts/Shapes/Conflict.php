@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCommit\BatchDescribeMergeConflicts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConflictMetadata $conflictMetadata
- * @property list<MergeHunk> $mergeHunks
+ * @property ConflictMetadata|null $conflictMetadata
+ * @property list<MergeHunk>|null $mergeHunks
  */
 class Conflict extends Shape
 {
     /**
      * @param array{
-     *     conflictMetadata?: ConflictMetadata,
-     *     mergeHunks?: list<MergeHunk>
+     *     conflictMetadata?: ConflictMetadata|null,
+     *     mergeHunks?: list<MergeHunk>|null
      * } $args
      */
     public function __construct(array $args = [])

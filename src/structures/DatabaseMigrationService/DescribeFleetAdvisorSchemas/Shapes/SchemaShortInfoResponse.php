@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorSc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SchemaId
- * @property string $SchemaName
- * @property string $DatabaseId
- * @property string $DatabaseName
- * @property string $DatabaseIpAddress
+ * @property string|null $SchemaId
+ * @property string|null $SchemaName
+ * @property string|null $DatabaseId
+ * @property string|null $DatabaseName
+ * @property string|null $DatabaseIpAddress
  */
 class SchemaShortInfoResponse extends Shape
 {
     /**
      * @param array{
-     *     SchemaId?: string,
-     *     SchemaName?: string,
-     *     DatabaseId?: string,
-     *     DatabaseName?: string,
-     *     DatabaseIpAddress?: string
+     *     SchemaId?: string|null,
+     *     SchemaName?: string|null,
+     *     DatabaseId?: string|null,
+     *     DatabaseName?: string|null,
+     *     DatabaseIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

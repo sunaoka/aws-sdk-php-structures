@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\EMRContainers\DescribeVirtualCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property string $arn
- * @property 'RUNNING'|'TERMINATING'|'TERMINATED'|'ARRESTED' $state
- * @property ContainerProvider $containerProvider
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property array<string, string> $tags
- * @property string $securityConfigurationId
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $arn
+ * @property 'RUNNING'|'TERMINATING'|'TERMINATED'|'ARRESTED'|null $state
+ * @property ContainerProvider|null $containerProvider
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property array<string, string>|null $tags
+ * @property string|null $securityConfigurationId
  */
 class VirtualCluster extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     arn?: string,
-     *     state?: 'RUNNING'|'TERMINATING'|'TERMINATED'|'ARRESTED',
-     *     containerProvider?: ContainerProvider,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>,
-     *     securityConfigurationId?: string
+     *     id?: string|null,
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     state?: 'RUNNING'|'TERMINATING'|'TERMINATED'|'ARRESTED'|null,
+     *     containerProvider?: ContainerProvider|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     tags?: array<string, string>|null,
+     *     securityConfigurationId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

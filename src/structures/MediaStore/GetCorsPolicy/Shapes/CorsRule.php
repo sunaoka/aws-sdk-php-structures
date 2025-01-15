@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $AllowedOrigins
- * @property list<'PUT'|'GET'|'DELETE'|'HEAD'> $AllowedMethods
+ * @property list<'PUT'|'GET'|'DELETE'|'HEAD'>|null $AllowedMethods
  * @property list<string> $AllowedHeaders
- * @property int<0, 2147483647> $MaxAgeSeconds
- * @property list<string> $ExposeHeaders
+ * @property int<0, 2147483647>|null $MaxAgeSeconds
+ * @property list<string>|null $ExposeHeaders
  */
 class CorsRule extends Shape
 {
     /**
      * @param array{
      *     AllowedOrigins: list<string>,
-     *     AllowedMethods?: list<'PUT'|'GET'|'DELETE'|'HEAD'>,
+     *     AllowedMethods?: list<'PUT'|'GET'|'DELETE'|'HEAD'>|null,
      *     AllowedHeaders: list<string>,
-     *     MaxAgeSeconds?: int<0, 2147483647>,
-     *     ExposeHeaders?: list<string>
+     *     MaxAgeSeconds?: int<0, 2147483647>|null,
+     *     ExposeHeaders?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

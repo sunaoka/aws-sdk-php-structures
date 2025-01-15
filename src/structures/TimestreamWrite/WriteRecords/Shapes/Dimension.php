@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property string $Value
- * @property 'VARCHAR' $DimensionValueType
+ * @property 'VARCHAR'|null $DimensionValueType
  */
 class Dimension extends Shape
 {
@@ -15,7 +15,7 @@ class Dimension extends Shape
      * @param array{
      *     Name: string,
      *     Value: string,
-     *     DimensionValueType?: 'VARCHAR'
+     *     DimensionValueType?: 'VARCHAR'|null
      * } $args
      */
     public function __construct(array $args)

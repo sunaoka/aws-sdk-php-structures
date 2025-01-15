@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AppId
- * @property string $BackendEnvironmentName
+ * @property string|null $BackendEnvironmentName
  */
 class GetBackendRequest extends Request
 {
     /**
      * @param array{
      *     AppId: string,
-     *     BackendEnvironmentName?: string
+     *     BackendEnvironmentName?: string|null
      * } $args
      */
     public function __construct(array $args)

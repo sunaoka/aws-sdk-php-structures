@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\SendCommand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NotificationArn
- * @property list<'All'|'InProgress'|'Success'|'TimedOut'|'Cancelled'|'Failed'> $NotificationEvents
- * @property 'Command'|'Invocation' $NotificationType
+ * @property string|null $NotificationArn
+ * @property list<'All'|'InProgress'|'Success'|'TimedOut'|'Cancelled'|'Failed'>|null $NotificationEvents
+ * @property 'Command'|'Invocation'|null $NotificationType
  */
 class NotificationConfig extends Shape
 {
     /**
      * @param array{
-     *     NotificationArn?: string,
-     *     NotificationEvents?: list<'All'|'InProgress'|'Success'|'TimedOut'|'Cancelled'|'Failed'>,
-     *     NotificationType?: 'Command'|'Invocation'
+     *     NotificationArn?: string|null,
+     *     NotificationEvents?: list<'All'|'InProgress'|'Success'|'TimedOut'|'Cancelled'|'Failed'>|null,
+     *     NotificationType?: 'Command'|'Invocation'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeCatalyst\ListSourceRepositoryBranches\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ref
- * @property string $name
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property string $headCommitId
+ * @property string|null $ref
+ * @property string|null $name
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property string|null $headCommitId
  */
 class ListSourceRepositoryBranchesItem extends Shape
 {
     /**
      * @param array{
-     *     ref?: string,
-     *     name?: string,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     headCommitId?: string
+     *     ref?: string|null,
+     *     name?: string|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     headCommitId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

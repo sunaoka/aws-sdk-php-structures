@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeSourceServers;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountID
- * @property Shapes\DescribeSourceServersRequestFilters $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property string|null $accountID
+ * @property Shapes\DescribeSourceServersRequestFilters|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class DescribeSourceServersRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string,
-     *     filters?: Shapes\DescribeSourceServersRequestFilters,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     accountID?: string|null,
+     *     filters?: Shapes\DescribeSourceServersRequestFilters|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

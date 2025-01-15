@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Synthetics\CreateCanary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Expression
- * @property int<0, 31622400> $DurationInSeconds
+ * @property string|null $Expression
+ * @property int<0, 31622400>|null $DurationInSeconds
  */
 class CanaryScheduleOutput extends Shape
 {
     /**
      * @param array{
-     *     Expression?: string,
-     *     DurationInSeconds?: int<0, 31622400>
+     *     Expression?: string|null,
+     *     DurationInSeconds?: int<0, 31622400>|null
      * } $args
      */
     public function __construct(array $args = [])

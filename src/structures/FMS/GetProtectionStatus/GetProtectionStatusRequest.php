@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PolicyId
- * @property string $MemberAccountId
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $MemberAccountId
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class GetProtectionStatusRequest extends Request
 {
     /**
      * @param array{
      *     PolicyId: string,
-     *     MemberAccountId?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     MemberAccountId?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

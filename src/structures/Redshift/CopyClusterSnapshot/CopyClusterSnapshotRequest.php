@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SourceSnapshotIdentifier
- * @property string $SourceSnapshotClusterIdentifier
+ * @property string|null $SourceSnapshotClusterIdentifier
  * @property string $TargetSnapshotIdentifier
- * @property int $ManualSnapshotRetentionPeriod
+ * @property int|null $ManualSnapshotRetentionPeriod
  */
 class CopyClusterSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     SourceSnapshotIdentifier: string,
-     *     SourceSnapshotClusterIdentifier?: string,
+     *     SourceSnapshotClusterIdentifier?: string|null,
      *     TargetSnapshotIdentifier: string,
-     *     ManualSnapshotRetentionPeriod?: int
+     *     ManualSnapshotRetentionPeriod?: int|null
      * } $args
      */
     public function __construct(array $args)

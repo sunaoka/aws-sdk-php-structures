@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\CreateConstraint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ConstraintDetail $ConstraintDetail
- * @property string $ConstraintParameters
- * @property 'AVAILABLE'|'CREATING'|'FAILED' $Status
+ * @property Shapes\ConstraintDetail|null $ConstraintDetail
+ * @property string|null $ConstraintParameters
+ * @property 'AVAILABLE'|'CREATING'|'FAILED'|null $Status
  */
 class CreateConstraintResponse extends Response
 {

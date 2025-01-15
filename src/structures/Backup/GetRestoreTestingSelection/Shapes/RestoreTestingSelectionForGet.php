@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $CreatorRequestId
+ * @property string|null $CreatorRequestId
  * @property string $IamRoleArn
- * @property list<string> $ProtectedResourceArns
- * @property ProtectedResourceConditions $ProtectedResourceConditions
+ * @property list<string>|null $ProtectedResourceArns
+ * @property ProtectedResourceConditions|null $ProtectedResourceConditions
  * @property string $ProtectedResourceType
- * @property array<string, string> $RestoreMetadataOverrides
+ * @property array<string, string>|null $RestoreMetadataOverrides
  * @property string $RestoreTestingPlanName
  * @property string $RestoreTestingSelectionName
- * @property int $ValidationWindowHours
+ * @property int|null $ValidationWindowHours
  */
 class RestoreTestingSelectionForGet extends Shape
 {
     /**
      * @param array{
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     CreatorRequestId?: string,
+     *     CreatorRequestId?: string|null,
      *     IamRoleArn: string,
-     *     ProtectedResourceArns?: list<string>,
-     *     ProtectedResourceConditions?: ProtectedResourceConditions,
+     *     ProtectedResourceArns?: list<string>|null,
+     *     ProtectedResourceConditions?: ProtectedResourceConditions|null,
      *     ProtectedResourceType: string,
-     *     RestoreMetadataOverrides?: array<string, string>,
+     *     RestoreMetadataOverrides?: array<string, string>|null,
      *     RestoreTestingPlanName: string,
      *     RestoreTestingSelectionName: string,
-     *     ValidationWindowHours?: int
+     *     ValidationWindowHours?: int|null
      * } $args
      */
     public function __construct(array $args)

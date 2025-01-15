@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Support\DescribeAttachment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fileName
- * @property \Psr\Http\Message\StreamInterface $data
+ * @property string|null $fileName
+ * @property \Psr\Http\Message\StreamInterface|null $data
  */
 class Attachment extends Shape
 {
     /**
      * @param array{
-     *     fileName?: string,
-     *     data?: \Psr\Http\Message\StreamInterface
+     *     fileName?: string|null,
+     *     data?: \Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args = [])

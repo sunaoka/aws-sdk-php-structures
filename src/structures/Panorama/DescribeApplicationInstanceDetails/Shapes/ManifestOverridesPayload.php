@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Panorama\DescribeApplicationInstanceDetails\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PayloadData
+ * @property string|null $PayloadData
  */
 class ManifestOverridesPayload extends Shape
 {
     /**
-     * @param array{PayloadData?: string} $args
+     * @param array{PayloadData?: string|null} $args
      */
     public function __construct(array $args = [])
     {

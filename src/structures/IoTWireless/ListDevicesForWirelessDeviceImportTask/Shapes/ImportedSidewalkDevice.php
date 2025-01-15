@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListDevicesForWirelessDeviceImportT
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SidewalkManufacturingSn
- * @property 'INITIALIZED'|'PENDING'|'ONBOARDED'|'FAILED' $OnboardingStatus
- * @property string $OnboardingStatusReason
- * @property \Aws\Api\DateTimeResult $LastUpdateTime
+ * @property string|null $SidewalkManufacturingSn
+ * @property 'INITIALIZED'|'PENDING'|'ONBOARDED'|'FAILED'|null $OnboardingStatus
+ * @property string|null $OnboardingStatusReason
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateTime
  */
 class ImportedSidewalkDevice extends Shape
 {
     /**
      * @param array{
-     *     SidewalkManufacturingSn?: string,
-     *     OnboardingStatus?: 'INITIALIZED'|'PENDING'|'ONBOARDED'|'FAILED',
-     *     OnboardingStatusReason?: string,
-     *     LastUpdateTime?: \Aws\Api\DateTimeResult
+     *     SidewalkManufacturingSn?: string|null,
+     *     OnboardingStatus?: 'INITIALIZED'|'PENDING'|'ONBOARDED'|'FAILED'|null,
+     *     OnboardingStatusReason?: string|null,
+     *     LastUpdateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

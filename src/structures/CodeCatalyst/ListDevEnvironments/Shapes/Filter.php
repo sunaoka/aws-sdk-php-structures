@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $key
  * @property list<string> $values
- * @property string $comparisonOperator
+ * @property string|null $comparisonOperator
  */
 class Filter extends Shape
 {
@@ -15,7 +15,7 @@ class Filter extends Shape
      * @param array{
      *     key: string,
      *     values: list<string>,
-     *     comparisonOperator?: string
+     *     comparisonOperator?: string|null
      * } $args
      */
     public function __construct(array $args)

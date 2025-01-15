@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $WrappingKeyIdentifier
- * @property KeyBlockHeaders $KeyBlockHeaders
+ * @property KeyBlockHeaders|null $KeyBlockHeaders
  */
 class ExportTr31KeyBlock extends Shape
 {
     /**
      * @param array{
      *     WrappingKeyIdentifier: string,
-     *     KeyBlockHeaders?: KeyBlockHeaders
+     *     KeyBlockHeaders?: KeyBlockHeaders|null
      * } $args
      */
     public function __construct(array $args)

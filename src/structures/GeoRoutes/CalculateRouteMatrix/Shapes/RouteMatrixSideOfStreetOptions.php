@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<double> $Position
- * @property 'AnyStreet'|'DividedStreetOnly' $UseWith
+ * @property 'AnyStreet'|'DividedStreetOnly'|null $UseWith
  */
 class RouteMatrixSideOfStreetOptions extends Shape
 {
     /**
      * @param array{
      *     Position: list<double>,
-     *     UseWith?: 'AnyStreet'|'DividedStreetOnly'
+     *     UseWith?: 'AnyStreet'|'DividedStreetOnly'|null
      * } $args
      */
     public function __construct(array $args)

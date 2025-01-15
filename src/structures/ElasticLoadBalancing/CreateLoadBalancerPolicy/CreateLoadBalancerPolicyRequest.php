@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LoadBalancerName
  * @property string $PolicyName
  * @property string $PolicyTypeName
- * @property list<Shapes\PolicyAttribute> $PolicyAttributes
+ * @property list<Shapes\PolicyAttribute>|null $PolicyAttributes
  */
 class CreateLoadBalancerPolicyRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateLoadBalancerPolicyRequest extends Request
      *     LoadBalancerName: string,
      *     PolicyName: string,
      *     PolicyTypeName: string,
-     *     PolicyAttributes?: list<Shapes\PolicyAttribute>
+     *     PolicyAttributes?: list<Shapes\PolicyAttribute>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\CreateEndpointAccess\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $availabilityZone
- * @property string $ipv6Address
- * @property string $networkInterfaceId
- * @property string $privateIpAddress
- * @property string $subnetId
+ * @property string|null $availabilityZone
+ * @property string|null $ipv6Address
+ * @property string|null $networkInterfaceId
+ * @property string|null $privateIpAddress
+ * @property string|null $subnetId
  */
 class NetworkInterface extends Shape
 {
     /**
      * @param array{
-     *     availabilityZone?: string,
-     *     ipv6Address?: string,
-     *     networkInterfaceId?: string,
-     *     privateIpAddress?: string,
-     *     subnetId?: string
+     *     availabilityZone?: string|null,
+     *     ipv6Address?: string|null,
+     *     networkInterfaceId?: string|null,
+     *     privateIpAddress?: string|null,
+     *     subnetId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

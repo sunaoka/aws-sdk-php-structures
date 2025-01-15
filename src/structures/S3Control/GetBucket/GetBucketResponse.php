@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\S3Control\GetBucket;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Bucket
- * @property bool $PublicAccessBlockEnabled
- * @property \Aws\Api\DateTimeResult $CreationDate
+ * @property string|null $Bucket
+ * @property bool|null $PublicAccessBlockEnabled
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
  */
 class GetBucketResponse extends Response
 {

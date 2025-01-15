@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\ListExperiences\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HOME' $EndpointType
- * @property string $Endpoint
+ * @property 'HOME'|null $EndpointType
+ * @property string|null $Endpoint
  */
 class ExperienceEndpoint extends Shape
 {
     /**
      * @param array{
-     *     EndpointType?: 'HOME',
-     *     Endpoint?: string
+     *     EndpointType?: 'HOME'|null,
+     *     Endpoint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

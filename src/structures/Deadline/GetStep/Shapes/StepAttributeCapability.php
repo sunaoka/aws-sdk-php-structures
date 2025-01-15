@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property list<string> $anyOf
- * @property list<string> $allOf
+ * @property list<string>|null $anyOf
+ * @property list<string>|null $allOf
  */
 class StepAttributeCapability extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     anyOf?: list<string>,
-     *     allOf?: list<string>
+     *     anyOf?: list<string>|null,
+     *     allOf?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyCapacityReservatio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'provisioned'|'pending'|'rebalancing'|'failed' $Code
- * @property string $Reason
+ * @property 'provisioned'|'pending'|'rebalancing'|'failed'|null $Code
+ * @property string|null $Reason
  */
 class CapacityReservationStatus extends Shape
 {
     /**
      * @param array{
-     *     Code?: 'provisioned'|'pending'|'rebalancing'|'failed',
-     *     Reason?: string
+     *     Code?: 'provisioned'|'pending'|'rebalancing'|'failed'|null,
+     *     Reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FirewallSubnetId
- * @property list<Route> $ViolatingRoutes
- * @property string $RouteTableId
- * @property string $FirewallEndpoint
- * @property string $VpcId
+ * @property string|null $FirewallSubnetId
+ * @property list<Route>|null $ViolatingRoutes
+ * @property string|null $RouteTableId
+ * @property string|null $FirewallEndpoint
+ * @property string|null $VpcId
  */
 class NetworkFirewallUnexpectedFirewallRoutesViolation extends Shape
 {
     /**
      * @param array{
-     *     FirewallSubnetId?: string,
-     *     ViolatingRoutes?: list<Route>,
-     *     RouteTableId?: string,
-     *     FirewallEndpoint?: string,
-     *     VpcId?: string
+     *     FirewallSubnetId?: string|null,
+     *     ViolatingRoutes?: list<Route>|null,
+     *     RouteTableId?: string|null,
+     *     FirewallEndpoint?: string|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetIpAccessSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $additionalEncryptionContext
- * @property list<string> $associatedPortalArns
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property string $customerManagedKey
- * @property string $description
- * @property string $displayName
+ * @property array<string, string>|null $additionalEncryptionContext
+ * @property list<string>|null $associatedPortalArns
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $customerManagedKey
+ * @property string|null $description
+ * @property string|null $displayName
  * @property string $ipAccessSettingsArn
- * @property list<IpRule> $ipRules
+ * @property list<IpRule>|null $ipRules
  */
 class IpAccessSettings extends Shape
 {
     /**
      * @param array{
-     *     additionalEncryptionContext?: array<string, string>,
-     *     associatedPortalArns?: list<string>,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     customerManagedKey?: string,
-     *     description?: string,
-     *     displayName?: string,
+     *     additionalEncryptionContext?: array<string, string>|null,
+     *     associatedPortalArns?: list<string>|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     customerManagedKey?: string|null,
+     *     description?: string|null,
+     *     displayName?: string|null,
      *     ipAccessSettingsArn: string,
-     *     ipRules?: list<IpRule>
+     *     ipRules?: list<IpRule>|null
      * } $args
      */
     public function __construct(array $args)

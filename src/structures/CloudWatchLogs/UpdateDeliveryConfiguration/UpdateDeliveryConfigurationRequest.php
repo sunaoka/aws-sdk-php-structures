@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property list<string> $recordFields
- * @property string $fieldDelimiter
- * @property Shapes\S3DeliveryConfiguration $s3DeliveryConfiguration
+ * @property list<string>|null $recordFields
+ * @property string|null $fieldDelimiter
+ * @property Shapes\S3DeliveryConfiguration|null $s3DeliveryConfiguration
  */
 class UpdateDeliveryConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     recordFields?: list<string>,
-     *     fieldDelimiter?: string,
-     *     s3DeliveryConfiguration?: Shapes\S3DeliveryConfiguration
+     *     recordFields?: list<string>|null,
+     *     fieldDelimiter?: string|null,
+     *     s3DeliveryConfiguration?: Shapes\S3DeliveryConfiguration|null
      * } $args
      */
     public function __construct(array $args)

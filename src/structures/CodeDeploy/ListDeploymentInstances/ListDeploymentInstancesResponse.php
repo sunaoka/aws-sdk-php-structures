@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\ListDeploymentInstances;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $instancesList
- * @property string $nextToken
+ * @property list<string>|null $instancesList
+ * @property string|null $nextToken
  */
 class ListDeploymentInstancesResponse extends Response
 {

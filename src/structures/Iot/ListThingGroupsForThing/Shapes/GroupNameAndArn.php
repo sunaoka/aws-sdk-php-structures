@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\ListThingGroupsForThing\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $groupName
- * @property string $groupArn
+ * @property string|null $groupName
+ * @property string|null $groupArn
  */
 class GroupNameAndArn extends Shape
 {
     /**
      * @param array{
-     *     groupName?: string,
-     *     groupArn?: string
+     *     groupName?: string|null,
+     *     groupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

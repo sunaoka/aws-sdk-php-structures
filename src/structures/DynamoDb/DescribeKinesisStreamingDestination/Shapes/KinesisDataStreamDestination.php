@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeKinesisStreamingDestination\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StreamArn
- * @property 'ENABLING'|'ACTIVE'|'DISABLING'|'DISABLED'|'ENABLE_FAILED'|'UPDATING' $DestinationStatus
- * @property string $DestinationStatusDescription
- * @property 'MILLISECOND'|'MICROSECOND' $ApproximateCreationDateTimePrecision
+ * @property string|null $StreamArn
+ * @property 'ENABLING'|'ACTIVE'|'DISABLING'|'DISABLED'|'ENABLE_FAILED'|'UPDATING'|null $DestinationStatus
+ * @property string|null $DestinationStatusDescription
+ * @property 'MILLISECOND'|'MICROSECOND'|null $ApproximateCreationDateTimePrecision
  */
 class KinesisDataStreamDestination extends Shape
 {
     /**
      * @param array{
-     *     StreamArn?: string,
-     *     DestinationStatus?: 'ENABLING'|'ACTIVE'|'DISABLING'|'DISABLED'|'ENABLE_FAILED'|'UPDATING',
-     *     DestinationStatusDescription?: string,
-     *     ApproximateCreationDateTimePrecision?: 'MILLISECOND'|'MICROSECOND'
+     *     StreamArn?: string|null,
+     *     DestinationStatus?: 'ENABLING'|'ACTIVE'|'DISABLING'|'DISABLED'|'ENABLE_FAILED'|'UPDATING'|null,
+     *     DestinationStatusDescription?: string|null,
+     *     ApproximateCreationDateTimePrecision?: 'MILLISECOND'|'MICROSECOND'|null
      * } $args
      */
     public function __construct(array $args = [])

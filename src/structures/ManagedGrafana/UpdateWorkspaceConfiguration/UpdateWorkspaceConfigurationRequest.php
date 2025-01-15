@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $configuration
- * @property string $grafanaVersion
+ * @property string|null $grafanaVersion
  * @property string $workspaceId
  */
 class UpdateWorkspaceConfigurationRequest extends Request
@@ -14,7 +14,7 @@ class UpdateWorkspaceConfigurationRequest extends Request
     /**
      * @param array{
      *     configuration: string,
-     *     grafanaVersion?: string,
+     *     grafanaVersion?: string|null,
      *     workspaceId: string
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\BatchCreateTopicReviewedAnswer\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TemplateType
- * @property list<Slot> $Slots
+ * @property string|null $TemplateType
+ * @property list<Slot>|null $Slots
  */
 class TopicTemplate extends Shape
 {
     /**
      * @param array{
-     *     TemplateType?: string,
-     *     Slots?: list<Slot>
+     *     TemplateType?: string|null,
+     *     Slots?: list<Slot>|null
      * } $args
      */
     public function __construct(array $args = [])

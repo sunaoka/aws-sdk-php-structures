@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Bucket
- * @property string $Prefix
+ * @property string|null $Prefix
  */
 class InferenceS3OutputConfiguration extends Shape
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     Prefix?: string
+     *     Prefix?: string|null
      * } $args
      */
     public function __construct(array $args)

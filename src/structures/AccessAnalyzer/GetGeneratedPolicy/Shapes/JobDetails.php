@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobId
  * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'CANCELED' $status
  * @property \Aws\Api\DateTimeResult $startedOn
- * @property \Aws\Api\DateTimeResult $completedOn
- * @property JobError $jobError
+ * @property \Aws\Api\DateTimeResult|null $completedOn
+ * @property JobError|null $jobError
  */
 class JobDetails extends Shape
 {
@@ -18,8 +18,8 @@ class JobDetails extends Shape
      *     jobId: string,
      *     status: 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'CANCELED',
      *     startedOn: \Aws\Api\DateTimeResult,
-     *     completedOn?: \Aws\Api\DateTimeResult,
-     *     jobError?: JobError
+     *     completedOn?: \Aws\Api\DateTimeResult|null,
+     *     jobError?: JobError|null
      * } $args
      */
     public function __construct(array $args)

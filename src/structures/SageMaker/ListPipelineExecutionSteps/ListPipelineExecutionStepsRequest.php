@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListPipelineExecutionSteps;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $PipelineExecutionArn
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property 'Ascending'|'Descending' $SortOrder
+ * @property string|null $PipelineExecutionArn
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property 'Ascending'|'Descending'|null $SortOrder
  */
 class ListPipelineExecutionStepsRequest extends Request
 {
     /**
      * @param array{
-     *     PipelineExecutionArn?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     SortOrder?: 'Ascending'|'Descending'
+     *     PipelineExecutionArn?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args = [])

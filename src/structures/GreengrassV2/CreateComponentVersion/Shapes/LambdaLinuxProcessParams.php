@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\CreateComponentVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GreengrassContainer'|'NoContainer' $isolationMode
- * @property LambdaContainerParams $containerParams
+ * @property 'GreengrassContainer'|'NoContainer'|null $isolationMode
+ * @property LambdaContainerParams|null $containerParams
  */
 class LambdaLinuxProcessParams extends Shape
 {
     /**
      * @param array{
-     *     isolationMode?: 'GreengrassContainer'|'NoContainer',
-     *     containerParams?: LambdaContainerParams
+     *     isolationMode?: 'GreengrassContainer'|'NoContainer'|null,
+     *     containerParams?: LambdaContainerParams|null
      * } $args
      */
     public function __construct(array $args = [])

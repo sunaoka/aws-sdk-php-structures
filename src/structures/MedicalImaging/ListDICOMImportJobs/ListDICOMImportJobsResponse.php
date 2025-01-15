@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DICOMImportJobSummary> $jobSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListDICOMImportJobsResponse extends Response
 {

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RoleArn
- * @property list<string> $AwsRegions
- * @property bool $AllAwsRegions
+ * @property list<string>|null $AwsRegions
+ * @property bool|null $AllAwsRegions
  */
 class OrganizationAggregationSource extends Shape
 {
     /**
      * @param array{
      *     RoleArn: string,
-     *     AwsRegions?: list<string>,
-     *     AllAwsRegions?: bool
+     *     AwsRegions?: list<string>|null,
+     *     AllAwsRegions?: bool|null
      * } $args
      */
     public function __construct(array $args)

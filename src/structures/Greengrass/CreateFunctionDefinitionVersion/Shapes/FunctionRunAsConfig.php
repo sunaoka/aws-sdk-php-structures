@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateFunctionDefinitionVersion\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Gid
- * @property int $Uid
+ * @property int|null $Gid
+ * @property int|null $Uid
  */
 class FunctionRunAsConfig extends Shape
 {
     /**
      * @param array{
-     *     Gid?: int,
-     *     Uid?: int
+     *     Gid?: int|null,
+     *     Uid?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainIdentifier
  * @property string $identifier
- * @property bool $withSecret
+ * @property bool|null $withSecret
  */
 class GetConnectionRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetConnectionRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     identifier: string,
-     *     withSecret?: bool
+     *     withSecret?: bool|null
      * } $args
      */
     public function __construct(array $args)

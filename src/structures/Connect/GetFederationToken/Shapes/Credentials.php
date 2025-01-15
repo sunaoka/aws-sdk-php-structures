@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Connect\GetFederationToken\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccessToken
- * @property \Aws\Api\DateTimeResult $AccessTokenExpiration
- * @property string $RefreshToken
- * @property \Aws\Api\DateTimeResult $RefreshTokenExpiration
+ * @property string|null $AccessToken
+ * @property \Aws\Api\DateTimeResult|null $AccessTokenExpiration
+ * @property string|null $RefreshToken
+ * @property \Aws\Api\DateTimeResult|null $RefreshTokenExpiration
  */
 class Credentials extends Shape
 {
     /**
      * @param array{
-     *     AccessToken?: string,
-     *     AccessTokenExpiration?: \Aws\Api\DateTimeResult,
-     *     RefreshToken?: string,
-     *     RefreshTokenExpiration?: \Aws\Api\DateTimeResult
+     *     AccessToken?: string|null,
+     *     AccessTokenExpiration?: \Aws\Api\DateTimeResult|null,
+     *     RefreshToken?: string|null,
+     *     RefreshTokenExpiration?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

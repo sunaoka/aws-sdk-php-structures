@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SesV2\GetMultiRegionEndpoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $EndpointName
- * @property string $EndpointId
- * @property list<Shapes\Route> $Routes
- * @property 'CREATING'|'READY'|'FAILED'|'DELETING' $Status
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
+ * @property string|null $EndpointName
+ * @property string|null $EndpointId
+ * @property list<Shapes\Route>|null $Routes
+ * @property 'CREATING'|'READY'|'FAILED'|'DELETING'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
  */
 class GetMultiRegionEndpointResponse extends Response
 {

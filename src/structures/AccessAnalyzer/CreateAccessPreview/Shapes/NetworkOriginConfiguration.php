@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\CreateAccessPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VpcConfiguration $vpcConfiguration
- * @property InternetConfiguration $internetConfiguration
+ * @property VpcConfiguration|null $vpcConfiguration
+ * @property InternetConfiguration|null $internetConfiguration
  */
 class NetworkOriginConfiguration extends Shape
 {
     /**
      * @param array{
-     *     vpcConfiguration?: VpcConfiguration,
-     *     internetConfiguration?: InternetConfiguration
+     *     vpcConfiguration?: VpcConfiguration|null,
+     *     internetConfiguration?: InternetConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

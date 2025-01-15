@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $appVersion
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property int $identifier
- * @property string $versionName
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property int|null $identifier
+ * @property string|null $versionName
  */
 class AppVersionSummary extends Shape
 {
     /**
      * @param array{
      *     appVersion: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     identifier?: int,
-     *     versionName?: string
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     identifier?: int|null,
+     *     versionName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DataSourceArn
  * @property string $Name
  * @property string $SqlQuery
- * @property list<InputColumn> $Columns
+ * @property list<InputColumn>|null $Columns
  */
 class CustomSql extends Shape
 {
@@ -17,7 +17,7 @@ class CustomSql extends Shape
      *     DataSourceArn: string,
      *     Name: string,
      *     SqlQuery: string,
-     *     Columns?: list<InputColumn>
+     *     Columns?: list<InputColumn>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $HumanTaskUiArn
  * @property string $HumanTaskUiName
- * @property 'Active'|'Deleting' $HumanTaskUiStatus
+ * @property 'Active'|'Deleting'|null $HumanTaskUiStatus
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property Shapes\UiTemplateInfo $UiTemplate
  */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostandUsageReportService\PutReportDefinition\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $lastDelivery
- * @property 'SUCCESS'|'ERROR_PERMISSIONS'|'ERROR_NO_BUCKET' $lastStatus
+ * @property string|null $lastDelivery
+ * @property 'SUCCESS'|'ERROR_PERMISSIONS'|'ERROR_NO_BUCKET'|null $lastStatus
  */
 class ReportStatus extends Shape
 {
     /**
      * @param array{
-     *     lastDelivery?: string,
-     *     lastStatus?: 'SUCCESS'|'ERROR_PERMISSIONS'|'ERROR_NO_BUCKET'
+     *     lastDelivery?: string|null,
+     *     lastStatus?: 'SUCCESS'|'ERROR_PERMISSIONS'|'ERROR_NO_BUCKET'|null
      * } $args
      */
     public function __construct(array $args = [])

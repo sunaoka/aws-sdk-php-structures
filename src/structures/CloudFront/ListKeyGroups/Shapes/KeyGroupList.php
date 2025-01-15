@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListKeyGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NextMarker
+ * @property string|null $NextMarker
  * @property int $MaxItems
  * @property int $Quantity
- * @property list<KeyGroupSummary> $Items
+ * @property list<KeyGroupSummary>|null $Items
  */
 class KeyGroupList extends Shape
 {
     /**
      * @param array{
-     *     NextMarker?: string,
+     *     NextMarker?: string|null,
      *     MaxItems: int,
      *     Quantity: int,
-     *     Items?: list<KeyGroupSummary>
+     *     Items?: list<KeyGroupSummary>|null
      * } $args
      */
     public function __construct(array $args)

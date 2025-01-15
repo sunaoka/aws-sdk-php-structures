@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ScheduleId
  * @property RefreshFrequency $ScheduleFrequency
- * @property \Aws\Api\DateTimeResult $StartAfterDateTime
+ * @property \Aws\Api\DateTimeResult|null $StartAfterDateTime
  * @property 'INCREMENTAL_REFRESH'|'FULL_REFRESH' $RefreshType
- * @property string $Arn
+ * @property string|null $Arn
  */
 class RefreshSchedule extends Shape
 {
@@ -17,9 +17,9 @@ class RefreshSchedule extends Shape
      * @param array{
      *     ScheduleId: string,
      *     ScheduleFrequency: RefreshFrequency,
-     *     StartAfterDateTime?: \Aws\Api\DateTimeResult,
+     *     StartAfterDateTime?: \Aws\Api\DateTimeResult|null,
      *     RefreshType: 'INCREMENTAL_REFRESH'|'FULL_REFRESH',
-     *     Arn?: string
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args)

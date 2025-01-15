@@ -6,42 +6,42 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Description
- * @property string $OpsItemType
- * @property array<string, Shapes\OpsItemDataValue> $OperationalData
- * @property list<Shapes\OpsItemNotification> $Notifications
- * @property int<1, 5> $Priority
- * @property list<Shapes\RelatedOpsItem> $RelatedOpsItems
+ * @property string|null $OpsItemType
+ * @property array<string, Shapes\OpsItemDataValue>|null $OperationalData
+ * @property list<Shapes\OpsItemNotification>|null $Notifications
+ * @property int<1, 5>|null $Priority
+ * @property list<Shapes\RelatedOpsItem>|null $RelatedOpsItems
  * @property string $Source
  * @property string $Title
- * @property list<Shapes\Tag> $Tags
- * @property string $Category
- * @property string $Severity
- * @property \Aws\Api\DateTimeResult $ActualStartTime
- * @property \Aws\Api\DateTimeResult $ActualEndTime
- * @property \Aws\Api\DateTimeResult $PlannedStartTime
- * @property \Aws\Api\DateTimeResult $PlannedEndTime
- * @property string $AccountId
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $Category
+ * @property string|null $Severity
+ * @property \Aws\Api\DateTimeResult|null $ActualStartTime
+ * @property \Aws\Api\DateTimeResult|null $ActualEndTime
+ * @property \Aws\Api\DateTimeResult|null $PlannedStartTime
+ * @property \Aws\Api\DateTimeResult|null $PlannedEndTime
+ * @property string|null $AccountId
  */
 class CreateOpsItemRequest extends Request
 {
     /**
      * @param array{
      *     Description: string,
-     *     OpsItemType?: string,
-     *     OperationalData?: array<string, Shapes\OpsItemDataValue>,
-     *     Notifications?: list<Shapes\OpsItemNotification>,
-     *     Priority?: int<1, 5>,
-     *     RelatedOpsItems?: list<Shapes\RelatedOpsItem>,
+     *     OpsItemType?: string|null,
+     *     OperationalData?: array<string, Shapes\OpsItemDataValue>|null,
+     *     Notifications?: list<Shapes\OpsItemNotification>|null,
+     *     Priority?: int<1, 5>|null,
+     *     RelatedOpsItems?: list<Shapes\RelatedOpsItem>|null,
      *     Source: string,
      *     Title: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     Category?: string,
-     *     Severity?: string,
-     *     ActualStartTime?: \Aws\Api\DateTimeResult,
-     *     ActualEndTime?: \Aws\Api\DateTimeResult,
-     *     PlannedStartTime?: \Aws\Api\DateTimeResult,
-     *     PlannedEndTime?: \Aws\Api\DateTimeResult,
-     *     AccountId?: string
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Category?: string|null,
+     *     Severity?: string|null,
+     *     ActualStartTime?: \Aws\Api\DateTimeResult|null,
+     *     ActualEndTime?: \Aws\Api\DateTimeResult|null,
+     *     PlannedStartTime?: \Aws\Api\DateTimeResult|null,
+     *     PlannedEndTime?: \Aws\Api\DateTimeResult|null,
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

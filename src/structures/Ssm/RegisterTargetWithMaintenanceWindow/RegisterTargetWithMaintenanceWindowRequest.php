@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WindowId
  * @property 'INSTANCE'|'RESOURCE_GROUP' $ResourceType
  * @property list<Shapes\Target> $Targets
- * @property string $OwnerInformation
- * @property string $Name
- * @property string $Description
- * @property string $ClientToken
+ * @property string|null $OwnerInformation
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $ClientToken
  */
 class RegisterTargetWithMaintenanceWindowRequest extends Request
 {
@@ -20,10 +20,10 @@ class RegisterTargetWithMaintenanceWindowRequest extends Request
      *     WindowId: string,
      *     ResourceType: 'INSTANCE'|'RESOURCE_GROUP',
      *     Targets: list<Shapes\Target>,
-     *     OwnerInformation?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     ClientToken?: string
+     *     OwnerInformation?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

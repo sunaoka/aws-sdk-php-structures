@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DeleteOnTermination
- * @property bool $Encrypted
- * @property int $Iops
- * @property string $KmsKeyId
- * @property string $SnapshotId
- * @property int $Throughput
- * @property int $VolumeSize
- * @property string $VolumeType
+ * @property bool|null $DeleteOnTermination
+ * @property bool|null $Encrypted
+ * @property int|null $Iops
+ * @property string|null $KmsKeyId
+ * @property string|null $SnapshotId
+ * @property int|null $Throughput
+ * @property int|null $VolumeSize
+ * @property string|null $VolumeType
  */
 class AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetails extends Shape
 {
     /**
      * @param array{
-     *     DeleteOnTermination?: bool,
-     *     Encrypted?: bool,
-     *     Iops?: int,
-     *     KmsKeyId?: string,
-     *     SnapshotId?: string,
-     *     Throughput?: int,
-     *     VolumeSize?: int,
-     *     VolumeType?: string
+     *     DeleteOnTermination?: bool|null,
+     *     Encrypted?: bool|null,
+     *     Iops?: int|null,
+     *     KmsKeyId?: string|null,
+     *     SnapshotId?: string|null,
+     *     Throughput?: int|null,
+     *     VolumeSize?: int|null,
+     *     VolumeType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

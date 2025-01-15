@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $destinationEmailAddress
- * @property string $connectSourceEmailAddress
- * @property string $templateArn
+ * @property string|null $connectSourceEmailAddress
+ * @property string|null $templateArn
  * @property array<string, string> $templateParameters
  */
 class EmailChannelSubtypeParameters extends Shape
@@ -15,8 +15,8 @@ class EmailChannelSubtypeParameters extends Shape
     /**
      * @param array{
      *     destinationEmailAddress: string,
-     *     connectSourceEmailAddress?: string,
-     *     templateArn?: string,
+     *     connectSourceEmailAddress?: string|null,
+     *     templateArn?: string|null,
      *     templateParameters: array<string, string>
      * } $args
      */

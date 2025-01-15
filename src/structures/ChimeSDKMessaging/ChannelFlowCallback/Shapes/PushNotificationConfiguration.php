@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ChannelFlowCallback\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Title
- * @property string $Body
- * @property 'DEFAULT'|'VOIP' $Type
+ * @property string|null $Title
+ * @property string|null $Body
+ * @property 'DEFAULT'|'VOIP'|null $Type
  */
 class PushNotificationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Title?: string,
-     *     Body?: string,
-     *     Type?: 'DEFAULT'|'VOIP'
+     *     Title?: string|null,
+     *     Body?: string|null,
+     *     Type?: 'DEFAULT'|'VOIP'|null
      * } $args
      */
     public function __construct(array $args = [])

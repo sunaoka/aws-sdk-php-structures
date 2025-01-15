@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\StartIncident\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $generatedId
+ * @property string|null $generatedId
  * @property ItemIdentifier $identifier
- * @property string $title
+ * @property string|null $title
  */
 class RelatedItem extends Shape
 {
     /**
      * @param array{
-     *     generatedId?: string,
+     *     generatedId?: string|null,
      *     identifier: ItemIdentifier,
-     *     title?: string
+     *     title?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateQueue\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PosixUser $posix
- * @property WindowsUser $windows
+ * @property PosixUser|null $posix
+ * @property WindowsUser|null $windows
  * @property 'QUEUE_CONFIGURED_USER'|'WORKER_AGENT_USER' $runAs
  */
 class JobRunAsUser extends Shape
 {
     /**
      * @param array{
-     *     posix?: PosixUser,
-     *     windows?: WindowsUser,
+     *     posix?: PosixUser|null,
+     *     windows?: WindowsUser|null,
      *     runAs: 'QUEUE_CONFIGURED_USER'|'WORKER_AGENT_USER'
      * } $args
      */

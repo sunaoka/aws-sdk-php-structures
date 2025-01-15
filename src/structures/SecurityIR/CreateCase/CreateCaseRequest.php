@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityIR\CreateCase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property 'AWS'|'Self' $resolverType
  * @property string $title
  * @property string $description
@@ -13,16 +13,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $reportedIncidentStartDate
  * @property list<string> $impactedAccounts
  * @property list<Shapes\Watcher> $watchers
- * @property list<Shapes\ThreatActorIp> $threatActorIpAddresses
- * @property list<string> $impactedServices
- * @property list<Shapes\ImpactedAwsRegion> $impactedAwsRegions
- * @property array<string, string> $tags
+ * @property list<Shapes\ThreatActorIp>|null $threatActorIpAddresses
+ * @property list<string>|null $impactedServices
+ * @property list<Shapes\ImpactedAwsRegion>|null $impactedAwsRegions
+ * @property array<string, string>|null $tags
  */
 class CreateCaseRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     resolverType: 'AWS'|'Self',
      *     title: string,
      *     description: string,
@@ -30,10 +30,10 @@ class CreateCaseRequest extends Request
      *     reportedIncidentStartDate: \Aws\Api\DateTimeResult,
      *     impactedAccounts: list<string>,
      *     watchers: list<Shapes\Watcher>,
-     *     threatActorIpAddresses?: list<Shapes\ThreatActorIp>,
-     *     impactedServices?: list<string>,
-     *     impactedAwsRegions?: list<Shapes\ImpactedAwsRegion>,
-     *     tags?: array<string, string>
+     *     threatActorIpAddresses?: list<Shapes\ThreatActorIp>|null,
+     *     impactedServices?: list<string>|null,
+     *     impactedAwsRegions?: list<Shapes\ImpactedAwsRegion>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

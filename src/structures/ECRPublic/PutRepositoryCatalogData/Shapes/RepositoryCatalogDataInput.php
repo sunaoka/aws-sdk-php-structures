@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ECRPublic\PutRepositoryCatalogData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property list<string> $architectures
- * @property list<string> $operatingSystems
- * @property string|resource|\Psr\Http\Message\StreamInterface $logoImageBlob
- * @property string $aboutText
- * @property string $usageText
+ * @property string|null $description
+ * @property list<string>|null $architectures
+ * @property list<string>|null $operatingSystems
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $logoImageBlob
+ * @property string|null $aboutText
+ * @property string|null $usageText
  */
 class RepositoryCatalogDataInput extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     architectures?: list<string>,
-     *     operatingSystems?: list<string>,
-     *     logoImageBlob?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     aboutText?: string,
-     *     usageText?: string
+     *     description?: string|null,
+     *     architectures?: list<string>|null,
+     *     operatingSystems?: list<string>|null,
+     *     logoImageBlob?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     aboutText?: string|null,
+     *     usageText?: string|null
      * } $args
      */
     public function __construct(array $args = [])

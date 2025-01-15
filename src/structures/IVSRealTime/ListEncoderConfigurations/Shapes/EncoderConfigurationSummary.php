@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property string $name
- * @property array<string, string> $tags
+ * @property string|null $name
+ * @property array<string, string>|null $tags
  */
 class EncoderConfigurationSummary extends Shape
 {
     /**
      * @param array{
      *     arn: string,
-     *     name?: string,
-     *     tags?: array<string, string>
+     *     name?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

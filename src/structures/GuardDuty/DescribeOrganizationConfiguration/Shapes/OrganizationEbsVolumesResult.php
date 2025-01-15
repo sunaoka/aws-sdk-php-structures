@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\DescribeOrganizationConfiguration\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AutoEnable
+ * @property bool|null $AutoEnable
  */
 class OrganizationEbsVolumesResult extends Shape
 {
     /**
-     * @param array{AutoEnable?: bool} $args
+     * @param array{AutoEnable?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\DeleteCoreNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<string> $EdgeLocations
- * @property list<string> $SharedSegments
+ * @property string|null $Name
+ * @property list<string>|null $EdgeLocations
+ * @property list<string>|null $SharedSegments
  */
 class CoreNetworkSegment extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     EdgeLocations?: list<string>,
-     *     SharedSegments?: list<string>
+     *     Name?: string|null,
+     *     EdgeLocations?: list<string>|null,
+     *     SharedSegments?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

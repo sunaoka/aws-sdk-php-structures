@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $referenceStoreId
  * @property string $md5
- * @property 'ACTIVE'|'DELETING'|'DELETED' $status
- * @property string $name
- * @property string $description
+ * @property 'ACTIVE'|'DELETING'|'DELETED'|null $status
+ * @property string|null $name
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $updateTime
  */
@@ -23,9 +23,9 @@ class ReferenceListItem extends Shape
      *     arn: string,
      *     referenceStoreId: string,
      *     md5: string,
-     *     status?: 'ACTIVE'|'DELETING'|'DELETED',
-     *     name?: string,
-     *     description?: string,
+     *     status?: 'ACTIVE'|'DELETING'|'DELETED'|null,
+     *     name?: string|null,
+     *     description?: string|null,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult
      * } $args

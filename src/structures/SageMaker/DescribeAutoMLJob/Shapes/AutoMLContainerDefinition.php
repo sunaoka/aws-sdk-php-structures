@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Image
  * @property string $ModelDataUrl
- * @property array<string, string> $Environment
+ * @property array<string, string>|null $Environment
  */
 class AutoMLContainerDefinition extends Shape
 {
@@ -15,7 +15,7 @@ class AutoMLContainerDefinition extends Shape
      * @param array{
      *     Image: string,
      *     ModelDataUrl: string,
-     *     Environment?: array<string, string>
+     *     Environment?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

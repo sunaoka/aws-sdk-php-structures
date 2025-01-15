@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Acm\UpdateCertificateOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $CertificateTransparencyLoggingPreference
+ * @property 'ENABLED'|'DISABLED'|null $CertificateTransparencyLoggingPreference
  */
 class CertificateOptions extends Shape
 {
     /**
-     * @param array{CertificateTransparencyLoggingPreference?: 'ENABLED'|'DISABLED'} $args
+     * @param array{CertificateTransparencyLoggingPreference?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

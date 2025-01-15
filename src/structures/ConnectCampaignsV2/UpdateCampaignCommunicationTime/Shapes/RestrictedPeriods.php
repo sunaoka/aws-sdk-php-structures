@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\UpdateCampaignCommunicationT
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RestrictedPeriod> $restrictedPeriodList
+ * @property list<RestrictedPeriod>|null $restrictedPeriodList
  */
 class RestrictedPeriods extends Shape
 {
     /**
-     * @param array{restrictedPeriodList?: list<RestrictedPeriod>} $args
+     * @param array{restrictedPeriodList?: list<RestrictedPeriod>|null} $args
      */
     public function __construct(array $args = [])
     {

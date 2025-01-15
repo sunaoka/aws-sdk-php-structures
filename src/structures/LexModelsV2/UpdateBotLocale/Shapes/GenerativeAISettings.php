@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateBotLocale\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RuntimeSettings $runtimeSettings
- * @property BuildtimeSettings $buildtimeSettings
+ * @property RuntimeSettings|null $runtimeSettings
+ * @property BuildtimeSettings|null $buildtimeSettings
  */
 class GenerativeAISettings extends Shape
 {
     /**
      * @param array{
-     *     runtimeSettings?: RuntimeSettings,
-     *     buildtimeSettings?: BuildtimeSettings
+     *     runtimeSettings?: RuntimeSettings|null,
+     *     buildtimeSettings?: BuildtimeSettings|null
      * } $args
      */
     public function __construct(array $args = [])

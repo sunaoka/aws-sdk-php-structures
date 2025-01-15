@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FlywheelArn
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class StartFlywheelIterationRequest extends Request
 {
     /**
      * @param array{
      *     FlywheelArn: string,
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

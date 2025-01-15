@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\CreateDatabase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property Shapes\DatabaseInput $DatabaseInput
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateDatabaseRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseInput: Shapes\DatabaseInput,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

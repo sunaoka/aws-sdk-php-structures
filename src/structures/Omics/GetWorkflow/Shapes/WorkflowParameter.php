@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Omics\GetWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property bool $optional
+ * @property string|null $description
+ * @property bool|null $optional
  */
 class WorkflowParameter extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     optional?: bool
+     *     description?: string|null,
+     *     optional?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

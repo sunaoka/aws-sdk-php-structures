@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Keyspaces\RestoreTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $disableScaleIn
- * @property int $scaleInCooldown
- * @property int $scaleOutCooldown
+ * @property bool|null $disableScaleIn
+ * @property int|null $scaleInCooldown
+ * @property int|null $scaleOutCooldown
  * @property double $targetValue
  */
 class TargetTrackingScalingPolicyConfiguration extends Shape
 {
     /**
      * @param array{
-     *     disableScaleIn?: bool,
-     *     scaleInCooldown?: int,
-     *     scaleOutCooldown?: int,
+     *     disableScaleIn?: bool|null,
+     *     scaleInCooldown?: int|null,
+     *     scaleOutCooldown?: int|null,
      *     targetValue: double
      * } $args
      */

@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property int<0, max> $Priority
  * @property Statement $Statement
- * @property RuleAction $Action
- * @property OverrideAction $OverrideAction
- * @property list<Label> $RuleLabels
+ * @property RuleAction|null $Action
+ * @property OverrideAction|null $OverrideAction
+ * @property list<Label>|null $RuleLabels
  * @property VisibilityConfig $VisibilityConfig
- * @property CaptchaConfig $CaptchaConfig
- * @property ChallengeConfig $ChallengeConfig
+ * @property CaptchaConfig|null $CaptchaConfig
+ * @property ChallengeConfig|null $ChallengeConfig
  */
 class Rule extends Shape
 {
@@ -22,12 +22,12 @@ class Rule extends Shape
      *     Name: string,
      *     Priority: int<0, max>,
      *     Statement: Statement,
-     *     Action?: RuleAction,
-     *     OverrideAction?: OverrideAction,
-     *     RuleLabels?: list<Label>,
+     *     Action?: RuleAction|null,
+     *     OverrideAction?: OverrideAction|null,
+     *     RuleLabels?: list<Label>|null,
      *     VisibilityConfig: VisibilityConfig,
-     *     CaptchaConfig?: CaptchaConfig,
-     *     ChallengeConfig?: ChallengeConfig
+     *     CaptchaConfig?: CaptchaConfig|null,
+     *     ChallengeConfig?: ChallengeConfig|null
      * } $args
      */
     public function __construct(array $args)

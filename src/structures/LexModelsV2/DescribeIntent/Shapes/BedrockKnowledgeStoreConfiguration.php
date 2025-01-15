@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $bedrockKnowledgeBaseArn
- * @property bool $exactResponse
- * @property BedrockKnowledgeStoreExactResponseFields $exactResponseFields
+ * @property bool|null $exactResponse
+ * @property BedrockKnowledgeStoreExactResponseFields|null $exactResponseFields
  */
 class BedrockKnowledgeStoreConfiguration extends Shape
 {
     /**
      * @param array{
      *     bedrockKnowledgeBaseArn: string,
-     *     exactResponse?: bool,
-     *     exactResponseFields?: BedrockKnowledgeStoreExactResponseFields
+     *     exactResponse?: bool|null,
+     *     exactResponseFields?: BedrockKnowledgeStoreExactResponseFields|null
      * } $args
      */
     public function __construct(array $args)

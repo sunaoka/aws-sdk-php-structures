@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property string $Key
- * @property 'requester' $RequestPayer
- * @property string $ExpectedBucketOwner
+ * @property 'requester'|null $RequestPayer
+ * @property string|null $ExpectedBucketOwner
  */
 class GetObjectTorrentRequest extends Request
 {
@@ -16,8 +16,8 @@ class GetObjectTorrentRequest extends Request
      * @param array{
      *     Bucket: string,
      *     Key: string,
-     *     RequestPayer?: 'requester',
-     *     ExpectedBucketOwner?: string
+     *     RequestPayer?: 'requester'|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

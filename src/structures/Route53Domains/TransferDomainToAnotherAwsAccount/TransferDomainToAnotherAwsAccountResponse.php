@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Route53Domains\TransferDomainToAnotherAwsAccoun
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $OperationId
- * @property string $Password
+ * @property string|null $OperationId
+ * @property string|null $Password
  */
 class TransferDomainToAnotherAwsAccountResponse extends Response
 {

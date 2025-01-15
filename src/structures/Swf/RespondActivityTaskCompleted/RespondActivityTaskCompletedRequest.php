@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $taskToken
- * @property string $result
+ * @property string|null $result
  */
 class RespondActivityTaskCompletedRequest extends Request
 {
     /**
      * @param array{
      *     taskToken: string,
-     *     result?: string
+     *     result?: string|null
      * } $args
      */
     public function __construct(array $args)

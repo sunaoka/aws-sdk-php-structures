@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\drs\StartSourceNetworkRecovery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $actionCode
- * @property string $actionId
- * @property string $actionVersion
- * @property bool $active
- * @property 'MONITORING'|'VALIDATION'|'CONFIGURATION'|'SECURITY'|'OTHER' $category
- * @property string $description
- * @property string $name
- * @property bool $optional
- * @property int<2, 10000> $order
- * @property array<string, LaunchActionParameter> $parameters
- * @property 'SSM_AUTOMATION'|'SSM_COMMAND' $type
+ * @property string|null $actionCode
+ * @property string|null $actionId
+ * @property string|null $actionVersion
+ * @property bool|null $active
+ * @property 'MONITORING'|'VALIDATION'|'CONFIGURATION'|'SECURITY'|'OTHER'|null $category
+ * @property string|null $description
+ * @property string|null $name
+ * @property bool|null $optional
+ * @property int<2, 10000>|null $order
+ * @property array<string, LaunchActionParameter>|null $parameters
+ * @property 'SSM_AUTOMATION'|'SSM_COMMAND'|null $type
  */
 class LaunchAction extends Shape
 {
     /**
      * @param array{
-     *     actionCode?: string,
-     *     actionId?: string,
-     *     actionVersion?: string,
-     *     active?: bool,
-     *     category?: 'MONITORING'|'VALIDATION'|'CONFIGURATION'|'SECURITY'|'OTHER',
-     *     description?: string,
-     *     name?: string,
-     *     optional?: bool,
-     *     order?: int<2, 10000>,
-     *     parameters?: array<string, LaunchActionParameter>,
-     *     type?: 'SSM_AUTOMATION'|'SSM_COMMAND'
+     *     actionCode?: string|null,
+     *     actionId?: string|null,
+     *     actionVersion?: string|null,
+     *     active?: bool|null,
+     *     category?: 'MONITORING'|'VALIDATION'|'CONFIGURATION'|'SECURITY'|'OTHER'|null,
+     *     description?: string|null,
+     *     name?: string|null,
+     *     optional?: bool|null,
+     *     order?: int<2, 10000>|null,
+     *     parameters?: array<string, LaunchActionParameter>|null,
+     *     type?: 'SSM_AUTOMATION'|'SSM_COMMAND'|null
      * } $args
      */
     public function __construct(array $args = [])

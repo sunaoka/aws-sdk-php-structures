@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SnowBall\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $PhoneNumber
- * @property string $Email
- * @property string $IdentificationNumber
- * @property \Aws\Api\DateTimeResult $IdentificationExpirationDate
- * @property string $IdentificationIssuingOrg
- * @property string $DevicePickupId
+ * @property string|null $Name
+ * @property string|null $PhoneNumber
+ * @property string|null $Email
+ * @property string|null $IdentificationNumber
+ * @property \Aws\Api\DateTimeResult|null $IdentificationExpirationDate
+ * @property string|null $IdentificationIssuingOrg
+ * @property string|null $DevicePickupId
  */
 class PickupDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     PhoneNumber?: string,
-     *     Email?: string,
-     *     IdentificationNumber?: string,
-     *     IdentificationExpirationDate?: \Aws\Api\DateTimeResult,
-     *     IdentificationIssuingOrg?: string,
-     *     DevicePickupId?: string
+     *     Name?: string|null,
+     *     PhoneNumber?: string|null,
+     *     Email?: string|null,
+     *     IdentificationNumber?: string|null,
+     *     IdentificationExpirationDate?: \Aws\Api\DateTimeResult|null,
+     *     IdentificationIssuingOrg?: string|null,
+     *     DevicePickupId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InitialDashboardId
- * @property list<'SHARED_VIEW'> $EnabledFeatures
- * @property list<'SHARED_VIEW'> $DisabledFeatures
- * @property AnonymousUserDashboardFeatureConfigurations $FeatureConfigurations
+ * @property list<'SHARED_VIEW'>|null $EnabledFeatures
+ * @property list<'SHARED_VIEW'>|null $DisabledFeatures
+ * @property AnonymousUserDashboardFeatureConfigurations|null $FeatureConfigurations
  */
 class AnonymousUserDashboardEmbeddingConfiguration extends Shape
 {
     /**
      * @param array{
      *     InitialDashboardId: string,
-     *     EnabledFeatures?: list<'SHARED_VIEW'>,
-     *     DisabledFeatures?: list<'SHARED_VIEW'>,
-     *     FeatureConfigurations?: AnonymousUserDashboardFeatureConfigurations
+     *     EnabledFeatures?: list<'SHARED_VIEW'>|null,
+     *     DisabledFeatures?: list<'SHARED_VIEW'>|null,
+     *     FeatureConfigurations?: AnonymousUserDashboardFeatureConfigurations|null
      * } $args
      */
     public function __construct(array $args)

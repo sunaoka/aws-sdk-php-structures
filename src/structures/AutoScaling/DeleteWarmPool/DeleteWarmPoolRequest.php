@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property bool $ForceDelete
+ * @property bool|null $ForceDelete
  */
 class DeleteWarmPoolRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     ForceDelete?: bool
+     *     ForceDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

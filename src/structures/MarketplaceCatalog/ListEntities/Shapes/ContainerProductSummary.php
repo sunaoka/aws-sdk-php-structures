@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProductTitle
- * @property 'Limited'|'Public'|'Restricted'|'Draft' $Visibility
+ * @property string|null $ProductTitle
+ * @property 'Limited'|'Public'|'Restricted'|'Draft'|null $Visibility
  */
 class ContainerProductSummary extends Shape
 {
     /**
      * @param array{
-     *     ProductTitle?: string,
-     *     Visibility?: 'Limited'|'Public'|'Restricted'|'Draft'
+     *     ProductTitle?: string|null,
+     *     Visibility?: 'Limited'|'Public'|'Restricted'|'Draft'|null
      * } $args
      */
     public function __construct(array $args = [])

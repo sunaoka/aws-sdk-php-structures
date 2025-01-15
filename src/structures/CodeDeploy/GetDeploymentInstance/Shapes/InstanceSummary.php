@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeploymentInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $deploymentId
- * @property string $instanceId
- * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|'Ready' $status
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property list<LifecycleEvent> $lifecycleEvents
- * @property 'Blue'|'Green' $instanceType
+ * @property string|null $deploymentId
+ * @property string|null $instanceId
+ * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|'Ready'|null $status
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property list<LifecycleEvent>|null $lifecycleEvents
+ * @property 'Blue'|'Green'|null $instanceType
  */
 class InstanceSummary extends Shape
 {
     /**
      * @param array{
-     *     deploymentId?: string,
-     *     instanceId?: string,
-     *     status?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|'Ready',
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     lifecycleEvents?: list<LifecycleEvent>,
-     *     instanceType?: 'Blue'|'Green'
+     *     deploymentId?: string|null,
+     *     instanceId?: string|null,
+     *     status?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|'Ready'|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     lifecycleEvents?: list<LifecycleEvent>|null,
+     *     instanceType?: 'Blue'|'Green'|null
      * } $args
      */
     public function __construct(array $args = [])

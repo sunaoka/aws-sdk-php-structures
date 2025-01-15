@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $name
- * @property \Aws\Api\DateTimeResult $expiresTime
+ * @property \Aws\Api\DateTimeResult|null $expiresTime
  */
 class AccessTokenSummary extends Shape
 {
@@ -15,7 +15,7 @@ class AccessTokenSummary extends Shape
      * @param array{
      *     id: string,
      *     name: string,
-     *     expiresTime?: \Aws\Api\DateTimeResult
+     *     expiresTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

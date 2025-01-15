@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardPermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ResourcePermission> $Permissions
+ * @property list<ResourcePermission>|null $Permissions
  */
 class LinkSharingConfiguration extends Shape
 {
     /**
-     * @param array{Permissions?: list<ResourcePermission>} $args
+     * @param array{Permissions?: list<ResourcePermission>|null} $args
      */
     public function __construct(array $args = [])
     {

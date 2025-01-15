@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property bool $isRequired
- * @property string $label
- * @property string $description
- * @property bool $isSensitiveField
- * @property list<string> $connectorSuppliedValues
- * @property 'TOKEN_URL'|'AUTH_URL' $type
+ * @property string|null $key
+ * @property bool|null $isRequired
+ * @property string|null $label
+ * @property string|null $description
+ * @property bool|null $isSensitiveField
+ * @property list<string>|null $connectorSuppliedValues
+ * @property 'TOKEN_URL'|'AUTH_URL'|null $type
  */
 class OAuth2CustomParameter extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     isRequired?: bool,
-     *     label?: string,
-     *     description?: string,
-     *     isSensitiveField?: bool,
-     *     connectorSuppliedValues?: list<string>,
-     *     type?: 'TOKEN_URL'|'AUTH_URL'
+     *     key?: string|null,
+     *     isRequired?: bool|null,
+     *     label?: string|null,
+     *     description?: string|null,
+     *     isSensitiveField?: bool|null,
+     *     connectorSuppliedValues?: list<string>|null,
+     *     type?: 'TOKEN_URL'|'AUTH_URL'|null
      * } $args
      */
     public function __construct(array $args = [])

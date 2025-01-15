@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\RebootCacheCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecurityGroupId
- * @property string $Status
+ * @property string|null $SecurityGroupId
+ * @property string|null $Status
  */
 class SecurityGroupMembership extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupId?: string,
-     *     Status?: string
+     *     SecurityGroupId?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property 'ShadowMode' $Type
- * @property Shapes\InferenceExperimentSchedule $Schedule
- * @property string $Description
+ * @property Shapes\InferenceExperimentSchedule|null $Schedule
+ * @property string|null $Description
  * @property string $RoleArn
  * @property string $EndpointName
  * @property list<Shapes\ModelVariantConfig> $ModelVariants
- * @property Shapes\InferenceExperimentDataStorageConfig $DataStorageConfig
+ * @property Shapes\InferenceExperimentDataStorageConfig|null $DataStorageConfig
  * @property Shapes\ShadowModeConfig $ShadowModeConfig
- * @property string $KmsKey
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $KmsKey
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateInferenceExperimentRequest extends Request
 {
@@ -23,15 +23,15 @@ class CreateInferenceExperimentRequest extends Request
      * @param array{
      *     Name: string,
      *     Type: 'ShadowMode',
-     *     Schedule?: Shapes\InferenceExperimentSchedule,
-     *     Description?: string,
+     *     Schedule?: Shapes\InferenceExperimentSchedule|null,
+     *     Description?: string|null,
      *     RoleArn: string,
      *     EndpointName: string,
      *     ModelVariants: list<Shapes\ModelVariantConfig>,
-     *     DataStorageConfig?: Shapes\InferenceExperimentDataStorageConfig,
+     *     DataStorageConfig?: Shapes\InferenceExperimentDataStorageConfig|null,
      *     ShadowModeConfig: Shapes\ShadowModeConfig,
-     *     KmsKey?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     KmsKey?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $datastoreId
  * @property string $imageSetId
- * @property string $versionId
+ * @property string|null $versionId
  */
 class GetImageSetRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetImageSetRequest extends Request
      * @param array{
      *     datastoreId: string,
      *     imageSetId: string,
-     *     versionId?: string
+     *     versionId?: string|null
      * } $args
      */
     public function __construct(array $args)

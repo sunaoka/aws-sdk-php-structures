@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeAuditSuppression;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $checkName
- * @property Shapes\ResourceIdentifier $resourceIdentifier
- * @property \Aws\Api\DateTimeResult $expirationDate
- * @property bool $suppressIndefinitely
- * @property string $description
+ * @property string|null $checkName
+ * @property Shapes\ResourceIdentifier|null $resourceIdentifier
+ * @property \Aws\Api\DateTimeResult|null $expirationDate
+ * @property bool|null $suppressIndefinitely
+ * @property string|null $description
  */
 class DescribeAuditSuppressionResponse extends Response
 {

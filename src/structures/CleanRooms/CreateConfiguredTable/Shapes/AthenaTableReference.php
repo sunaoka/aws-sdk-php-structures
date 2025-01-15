@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $workGroup
- * @property string $outputLocation
+ * @property string|null $outputLocation
  * @property string $databaseName
  * @property string $tableName
  */
@@ -15,7 +15,7 @@ class AthenaTableReference extends Shape
     /**
      * @param array{
      *     workGroup: string,
-     *     outputLocation?: string,
+     *     outputLocation?: string|null,
      *     databaseName: string,
      *     tableName: string
      * } $args

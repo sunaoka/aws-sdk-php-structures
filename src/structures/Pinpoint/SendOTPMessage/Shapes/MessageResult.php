@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SUCCESSFUL'|'THROTTLED'|'TEMPORARY_FAILURE'|'PERMANENT_FAILURE'|'UNKNOWN_FAILURE'|'OPT_OUT'|'DUPLICATE' $DeliveryStatus
- * @property string $MessageId
+ * @property string|null $MessageId
  * @property int $StatusCode
- * @property string $StatusMessage
- * @property string $UpdatedToken
+ * @property string|null $StatusMessage
+ * @property string|null $UpdatedToken
  */
 class MessageResult extends Shape
 {
     /**
      * @param array{
      *     DeliveryStatus: 'SUCCESSFUL'|'THROTTLED'|'TEMPORARY_FAILURE'|'PERMANENT_FAILURE'|'UNKNOWN_FAILURE'|'OPT_OUT'|'DUPLICATE',
-     *     MessageId?: string,
+     *     MessageId?: string|null,
      *     StatusCode: int,
-     *     StatusMessage?: string,
-     *     UpdatedToken?: string
+     *     StatusMessage?: string|null,
+     *     UpdatedToken?: string|null
      * } $args
      */
     public function __construct(array $args)

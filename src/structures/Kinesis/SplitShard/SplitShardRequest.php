@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Kinesis\SplitShard;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
+ * @property string|null $StreamName
  * @property string $ShardToSplit
  * @property string $NewStartingHashKey
- * @property string $StreamARN
+ * @property string|null $StreamARN
  */
 class SplitShardRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
+     *     StreamName?: string|null,
      *     ShardToSplit: string,
      *     NewStartingHashKey: string,
-     *     StreamARN?: string
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args)

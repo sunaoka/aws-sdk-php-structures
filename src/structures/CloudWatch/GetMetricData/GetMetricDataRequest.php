@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\MetricDataQuery> $MetricDataQueries
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $NextToken
- * @property 'TimestampDescending'|'TimestampAscending' $ScanBy
- * @property int $MaxDatapoints
- * @property Shapes\LabelOptions $LabelOptions
+ * @property string|null $NextToken
+ * @property 'TimestampDescending'|'TimestampAscending'|null $ScanBy
+ * @property int|null $MaxDatapoints
+ * @property Shapes\LabelOptions|null $LabelOptions
  */
 class GetMetricDataRequest extends Request
 {
@@ -20,10 +20,10 @@ class GetMetricDataRequest extends Request
      *     MetricDataQueries: list<Shapes\MetricDataQuery>,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
-     *     NextToken?: string,
-     *     ScanBy?: 'TimestampDescending'|'TimestampAscending',
-     *     MaxDatapoints?: int,
-     *     LabelOptions?: Shapes\LabelOptions
+     *     NextToken?: string|null,
+     *     ScanBy?: 'TimestampDescending'|'TimestampAscending'|null,
+     *     MaxDatapoints?: int|null,
+     *     LabelOptions?: Shapes\LabelOptions|null
      * } $args
      */
     public function __construct(array $args)

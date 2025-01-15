@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\UpdateTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
+ * @property string|null $id
+ * @property string|null $name
  * @property list<ThemeValues> $values
- * @property list<ThemeValues> $overrides
+ * @property list<ThemeValues>|null $overrides
  */
 class UpdateThemeData extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
+     *     id?: string|null,
+     *     name?: string|null,
      *     values: list<ThemeValues>,
-     *     overrides?: list<ThemeValues>
+     *     overrides?: list<ThemeValues>|null
      * } $args
      */
     public function __construct(array $args)

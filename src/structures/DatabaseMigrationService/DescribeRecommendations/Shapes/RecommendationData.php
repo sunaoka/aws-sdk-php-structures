@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RdsRecommendation $RdsEngine
+ * @property RdsRecommendation|null $RdsEngine
  */
 class RecommendationData extends Shape
 {
     /**
-     * @param array{RdsEngine?: RdsRecommendation} $args
+     * @param array{RdsEngine?: RdsRecommendation|null} $args
      */
     public function __construct(array $args = [])
     {

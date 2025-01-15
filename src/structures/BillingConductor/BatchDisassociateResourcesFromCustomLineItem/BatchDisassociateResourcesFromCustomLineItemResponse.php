@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BillingConductor\BatchDisassociateResourcesFrom
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DisassociateResourceResponseElement> $SuccessfullyDisassociatedResources
- * @property list<Shapes\DisassociateResourceResponseElement> $FailedDisassociatedResources
+ * @property list<Shapes\DisassociateResourceResponseElement>|null $SuccessfullyDisassociatedResources
+ * @property list<Shapes\DisassociateResourceResponseElement>|null $FailedDisassociatedResources
  */
 class BatchDisassociateResourcesFromCustomLineItemResponse extends Response
 {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVerifiedAccessInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VerifiedAccessTrustProviderId
- * @property string $Description
- * @property 'user'|'device' $TrustProviderType
- * @property 'iam-identity-center'|'oidc' $UserTrustProviderType
- * @property 'jamf'|'crowdstrike'|'jumpcloud' $DeviceTrustProviderType
+ * @property string|null $VerifiedAccessTrustProviderId
+ * @property string|null $Description
+ * @property 'user'|'device'|null $TrustProviderType
+ * @property 'iam-identity-center'|'oidc'|null $UserTrustProviderType
+ * @property 'jamf'|'crowdstrike'|'jumpcloud'|null $DeviceTrustProviderType
  */
 class VerifiedAccessTrustProviderCondensed extends Shape
 {
     /**
      * @param array{
-     *     VerifiedAccessTrustProviderId?: string,
-     *     Description?: string,
-     *     TrustProviderType?: 'user'|'device',
-     *     UserTrustProviderType?: 'iam-identity-center'|'oidc',
-     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|'jumpcloud'
+     *     VerifiedAccessTrustProviderId?: string|null,
+     *     Description?: string|null,
+     *     TrustProviderType?: 'user'|'device'|null,
+     *     UserTrustProviderType?: 'iam-identity-center'|'oidc'|null,
+     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|'jumpcloud'|null
      * } $args
      */
     public function __construct(array $args = [])

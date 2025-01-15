@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property string $businessName
  * @property string $phone
- * @property string $email
- * @property 'ENABLED'|'DISABLED' $logging
- * @property string $logGroupName
+ * @property string|null $email
+ * @property 'ENABLED'|'DISABLED'|null $logging
+ * @property string|null $logGroupName
  * @property \Aws\Api\DateTimeResult $createdAt
  */
 class CreateProfileResponse extends Response

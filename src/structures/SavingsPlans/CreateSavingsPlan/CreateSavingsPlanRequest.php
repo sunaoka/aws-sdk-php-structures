@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $savingsPlanOfferingId
  * @property string $commitment
- * @property string $upfrontPaymentAmount
- * @property \Aws\Api\DateTimeResult $purchaseTime
- * @property string $clientToken
- * @property array<string, string> $tags
+ * @property string|null $upfrontPaymentAmount
+ * @property \Aws\Api\DateTimeResult|null $purchaseTime
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateSavingsPlanRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateSavingsPlanRequest extends Request
      * @param array{
      *     savingsPlanOfferingId: string,
      *     commitment: string,
-     *     upfrontPaymentAmount?: string,
-     *     purchaseTime?: \Aws\Api\DateTimeResult,
-     *     clientToken?: string,
-     *     tags?: array<string, string>
+     *     upfrontPaymentAmount?: string|null,
+     *     purchaseTime?: \Aws\Api\DateTimeResult|null,
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

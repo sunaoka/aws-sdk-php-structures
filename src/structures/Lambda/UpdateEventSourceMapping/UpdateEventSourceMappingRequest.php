@@ -6,48 +6,48 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UUID
- * @property string $FunctionName
- * @property bool $Enabled
- * @property int<1, 10000> $BatchSize
- * @property Shapes\FilterCriteria $FilterCriteria
- * @property int<0, 300> $MaximumBatchingWindowInSeconds
- * @property Shapes\DestinationConfig $DestinationConfig
- * @property int<-1, 604800> $MaximumRecordAgeInSeconds
- * @property bool $BisectBatchOnFunctionError
- * @property int<-1, 10000> $MaximumRetryAttempts
- * @property int<1, 10> $ParallelizationFactor
- * @property list<Shapes\SourceAccessConfiguration> $SourceAccessConfigurations
- * @property int<0, 900> $TumblingWindowInSeconds
- * @property list<'ReportBatchItemFailures'> $FunctionResponseTypes
- * @property Shapes\ScalingConfig $ScalingConfig
- * @property Shapes\DocumentDBEventSourceConfig $DocumentDBEventSourceConfig
- * @property string $KMSKeyArn
- * @property Shapes\EventSourceMappingMetricsConfig $MetricsConfig
- * @property Shapes\ProvisionedPollerConfig $ProvisionedPollerConfig
+ * @property string|null $FunctionName
+ * @property bool|null $Enabled
+ * @property int<1, 10000>|null $BatchSize
+ * @property Shapes\FilterCriteria|null $FilterCriteria
+ * @property int<0, 300>|null $MaximumBatchingWindowInSeconds
+ * @property Shapes\DestinationConfig|null $DestinationConfig
+ * @property int<-1, 604800>|null $MaximumRecordAgeInSeconds
+ * @property bool|null $BisectBatchOnFunctionError
+ * @property int<-1, 10000>|null $MaximumRetryAttempts
+ * @property int<1, 10>|null $ParallelizationFactor
+ * @property list<Shapes\SourceAccessConfiguration>|null $SourceAccessConfigurations
+ * @property int<0, 900>|null $TumblingWindowInSeconds
+ * @property list<'ReportBatchItemFailures'>|null $FunctionResponseTypes
+ * @property Shapes\ScalingConfig|null $ScalingConfig
+ * @property Shapes\DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
+ * @property string|null $KMSKeyArn
+ * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class UpdateEventSourceMappingRequest extends Request
 {
     /**
      * @param array{
      *     UUID: string,
-     *     FunctionName?: string,
-     *     Enabled?: bool,
-     *     BatchSize?: int<1, 10000>,
-     *     FilterCriteria?: Shapes\FilterCriteria,
-     *     MaximumBatchingWindowInSeconds?: int<0, 300>,
-     *     DestinationConfig?: Shapes\DestinationConfig,
-     *     MaximumRecordAgeInSeconds?: int<-1, 604800>,
-     *     BisectBatchOnFunctionError?: bool,
-     *     MaximumRetryAttempts?: int<-1, 10000>,
-     *     ParallelizationFactor?: int<1, 10>,
-     *     SourceAccessConfigurations?: list<Shapes\SourceAccessConfiguration>,
-     *     TumblingWindowInSeconds?: int<0, 900>,
-     *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>,
-     *     ScalingConfig?: Shapes\ScalingConfig,
-     *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig,
-     *     KMSKeyArn?: string,
-     *     MetricsConfig?: Shapes\EventSourceMappingMetricsConfig,
-     *     ProvisionedPollerConfig?: Shapes\ProvisionedPollerConfig
+     *     FunctionName?: string|null,
+     *     Enabled?: bool|null,
+     *     BatchSize?: int<1, 10000>|null,
+     *     FilterCriteria?: Shapes\FilterCriteria|null,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>|null,
+     *     DestinationConfig?: Shapes\DestinationConfig|null,
+     *     MaximumRecordAgeInSeconds?: int<-1, 604800>|null,
+     *     BisectBatchOnFunctionError?: bool|null,
+     *     MaximumRetryAttempts?: int<-1, 10000>|null,
+     *     ParallelizationFactor?: int<1, 10>|null,
+     *     SourceAccessConfigurations?: list<Shapes\SourceAccessConfiguration>|null,
+     *     TumblingWindowInSeconds?: int<0, 900>|null,
+     *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>|null,
+     *     ScalingConfig?: Shapes\ScalingConfig|null,
+     *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig|null,
+     *     KMSKeyArn?: string|null,
+     *     MetricsConfig?: Shapes\EventSourceMappingMetricsConfig|null,
+     *     ProvisionedPollerConfig?: Shapes\ProvisionedPollerConfig|null
      * } $args
      */
     public function __construct(array $args)

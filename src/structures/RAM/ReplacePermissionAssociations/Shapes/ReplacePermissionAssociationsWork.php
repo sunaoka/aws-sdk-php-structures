@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\RAM\ReplacePermissionAssociations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $fromPermissionArn
- * @property string $fromPermissionVersion
- * @property string $toPermissionArn
- * @property string $toPermissionVersion
- * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED' $status
- * @property string $statusMessage
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
+ * @property string|null $id
+ * @property string|null $fromPermissionArn
+ * @property string|null $fromPermissionVersion
+ * @property string|null $toPermissionArn
+ * @property string|null $toPermissionVersion
+ * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $status
+ * @property string|null $statusMessage
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
  */
 class ReplacePermissionAssociationsWork extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     fromPermissionArn?: string,
-     *     fromPermissionVersion?: string,
-     *     toPermissionArn?: string,
-     *     toPermissionVersion?: string,
-     *     status?: 'IN_PROGRESS'|'COMPLETED'|'FAILED',
-     *     statusMessage?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult
+     *     id?: string|null,
+     *     fromPermissionArn?: string|null,
+     *     fromPermissionVersion?: string|null,
+     *     toPermissionArn?: string|null,
+     *     toPermissionVersion?: string|null,
+     *     status?: 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null,
+     *     statusMessage?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

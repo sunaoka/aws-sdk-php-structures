@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $policyStoreId
- * @property string $identityToken
- * @property string $accessToken
- * @property Shapes\EntitiesDefinition $entities
+ * @property string|null $identityToken
+ * @property string|null $accessToken
+ * @property Shapes\EntitiesDefinition|null $entities
  * @property list<Shapes\BatchIsAuthorizedWithTokenInputItem> $requests
  */
 class BatchIsAuthorizedWithTokenRequest extends Request
@@ -16,9 +16,9 @@ class BatchIsAuthorizedWithTokenRequest extends Request
     /**
      * @param array{
      *     policyStoreId: string,
-     *     identityToken?: string,
-     *     accessToken?: string,
-     *     entities?: Shapes\EntitiesDefinition,
+     *     identityToken?: string|null,
+     *     accessToken?: string|null,
+     *     entities?: Shapes\EntitiesDefinition|null,
      *     requests: list<Shapes\BatchIsAuthorizedWithTokenInputItem>
      * } $args
      */

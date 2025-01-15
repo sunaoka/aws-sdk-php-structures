@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Priority
- * @property RuleGroupSourceStatelessRuleDefinition $RuleDefinition
+ * @property int|null $Priority
+ * @property RuleGroupSourceStatelessRuleDefinition|null $RuleDefinition
  */
 class RuleGroupSourceStatelessRulesDetails extends Shape
 {
     /**
      * @param array{
-     *     Priority?: int,
-     *     RuleDefinition?: RuleGroupSourceStatelessRuleDefinition
+     *     Priority?: int|null,
+     *     RuleDefinition?: RuleGroupSourceStatelessRuleDefinition|null
      * } $args
      */
     public function __construct(array $args = [])

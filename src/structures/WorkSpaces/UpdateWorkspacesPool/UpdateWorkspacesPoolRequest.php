@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PoolId
- * @property string $Description
- * @property string $BundleId
- * @property string $DirectoryId
- * @property Shapes\Capacity $Capacity
- * @property Shapes\ApplicationSettingsRequest $ApplicationSettings
- * @property Shapes\TimeoutSettings $TimeoutSettings
+ * @property string|null $Description
+ * @property string|null $BundleId
+ * @property string|null $DirectoryId
+ * @property Shapes\Capacity|null $Capacity
+ * @property Shapes\ApplicationSettingsRequest|null $ApplicationSettings
+ * @property Shapes\TimeoutSettings|null $TimeoutSettings
  */
 class UpdateWorkspacesPoolRequest extends Request
 {
     /**
      * @param array{
      *     PoolId: string,
-     *     Description?: string,
-     *     BundleId?: string,
-     *     DirectoryId?: string,
-     *     Capacity?: Shapes\Capacity,
-     *     ApplicationSettings?: Shapes\ApplicationSettingsRequest,
-     *     TimeoutSettings?: Shapes\TimeoutSettings
+     *     Description?: string|null,
+     *     BundleId?: string|null,
+     *     DirectoryId?: string|null,
+     *     Capacity?: Shapes\Capacity|null,
+     *     ApplicationSettings?: Shapes\ApplicationSettingsRequest|null,
+     *     TimeoutSettings?: Shapes\TimeoutSettings|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TableName
  * @property list<AttributeDefinition> $AttributeDefinitions
  * @property list<KeySchemaElement> $KeySchema
- * @property 'PROVISIONED'|'PAY_PER_REQUEST' $BillingMode
- * @property ProvisionedThroughput $ProvisionedThroughput
- * @property OnDemandThroughput $OnDemandThroughput
- * @property SSESpecification $SSESpecification
- * @property list<GlobalSecondaryIndex> $GlobalSecondaryIndexes
+ * @property 'PROVISIONED'|'PAY_PER_REQUEST'|null $BillingMode
+ * @property ProvisionedThroughput|null $ProvisionedThroughput
+ * @property OnDemandThroughput|null $OnDemandThroughput
+ * @property SSESpecification|null $SSESpecification
+ * @property list<GlobalSecondaryIndex>|null $GlobalSecondaryIndexes
  */
 class TableCreationParameters extends Shape
 {
@@ -21,11 +21,11 @@ class TableCreationParameters extends Shape
      *     TableName: string,
      *     AttributeDefinitions: list<AttributeDefinition>,
      *     KeySchema: list<KeySchemaElement>,
-     *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST',
-     *     ProvisionedThroughput?: ProvisionedThroughput,
-     *     OnDemandThroughput?: OnDemandThroughput,
-     *     SSESpecification?: SSESpecification,
-     *     GlobalSecondaryIndexes?: list<GlobalSecondaryIndex>
+     *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'|null,
+     *     ProvisionedThroughput?: ProvisionedThroughput|null,
+     *     OnDemandThroughput?: OnDemandThroughput|null,
+     *     SSESpecification?: SSESpecification|null,
+     *     GlobalSecondaryIndexes?: list<GlobalSecondaryIndex>|null
      * } $args
      */
     public function __construct(array $args)

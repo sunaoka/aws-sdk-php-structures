@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\QuickSight\BatchCreateTopicReviewedAnswer\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Identifier $MetricId
- * @property AggFunction $Function
- * @property list<Identifier> $Operands
- * @property TopicIRComparisonMethod $ComparisonMethod
- * @property string $Expression
- * @property list<Identifier> $CalculatedFieldReferences
- * @property 'AUTO'|'PERCENT'|'CURRENCY'|'NUMBER'|'DATE'|'STRING' $DisplayFormat
- * @property DisplayFormatOptions $DisplayFormatOptions
- * @property NamedEntityRef $NamedEntity
+ * @property Identifier|null $MetricId
+ * @property AggFunction|null $Function
+ * @property list<Identifier>|null $Operands
+ * @property TopicIRComparisonMethod|null $ComparisonMethod
+ * @property string|null $Expression
+ * @property list<Identifier>|null $CalculatedFieldReferences
+ * @property 'AUTO'|'PERCENT'|'CURRENCY'|'NUMBER'|'DATE'|'STRING'|null $DisplayFormat
+ * @property DisplayFormatOptions|null $DisplayFormatOptions
+ * @property NamedEntityRef|null $NamedEntity
  */
 class TopicIRMetric extends Shape
 {
     /**
      * @param array{
-     *     MetricId?: Identifier,
-     *     Function?: AggFunction,
-     *     Operands?: list<Identifier>,
-     *     ComparisonMethod?: TopicIRComparisonMethod,
-     *     Expression?: string,
-     *     CalculatedFieldReferences?: list<Identifier>,
-     *     DisplayFormat?: 'AUTO'|'PERCENT'|'CURRENCY'|'NUMBER'|'DATE'|'STRING',
-     *     DisplayFormatOptions?: DisplayFormatOptions,
-     *     NamedEntity?: NamedEntityRef
+     *     MetricId?: Identifier|null,
+     *     Function?: AggFunction|null,
+     *     Operands?: list<Identifier>|null,
+     *     ComparisonMethod?: TopicIRComparisonMethod|null,
+     *     Expression?: string|null,
+     *     CalculatedFieldReferences?: list<Identifier>|null,
+     *     DisplayFormat?: 'AUTO'|'PERCENT'|'CURRENCY'|'NUMBER'|'DATE'|'STRING'|null,
+     *     DisplayFormatOptions?: DisplayFormatOptions|null,
+     *     NamedEntity?: NamedEntityRef|null
      * } $args
      */
     public function __construct(array $args = [])

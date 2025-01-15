@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\GetLineageNode;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property string|null $description
  * @property string $domainId
- * @property list<Shapes\LineageNodeReference> $downstreamNodes
- * @property \Aws\Api\DateTimeResult $eventTimestamp
- * @property list<Shapes\FormOutput> $formsOutput
+ * @property list<Shapes\LineageNodeReference>|null $downstreamNodes
+ * @property \Aws\Api\DateTimeResult|null $eventTimestamp
+ * @property list<Shapes\FormOutput>|null $formsOutput
  * @property string $id
- * @property string $name
- * @property string $sourceIdentifier
+ * @property string|null $name
+ * @property string|null $sourceIdentifier
  * @property string $typeName
- * @property string $typeRevision
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
- * @property list<Shapes\LineageNodeReference> $upstreamNodes
+ * @property string|null $typeRevision
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
+ * @property list<Shapes\LineageNodeReference>|null $upstreamNodes
  */
 class GetLineageNodeResponse extends Response
 {

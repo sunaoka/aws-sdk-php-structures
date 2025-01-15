@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FSx\DeleteStorageVirtualMachine;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property string $StorageVirtualMachineId
  */
 class DeleteStorageVirtualMachineRequest extends Request
 {
     /**
      * @param array{
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     StorageVirtualMachineId: string
      * } $args
      */

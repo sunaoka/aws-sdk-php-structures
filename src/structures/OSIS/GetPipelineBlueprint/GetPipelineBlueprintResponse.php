@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OSIS\GetPipelineBlueprint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PipelineBlueprint $Blueprint
- * @property string $Format
+ * @property Shapes\PipelineBlueprint|null $Blueprint
+ * @property string|null $Format
  */
 class GetPipelineBlueprintResponse extends Response
 {

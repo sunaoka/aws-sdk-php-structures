@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisVideoArchivedMedia\GetHLSStreamingSessio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PRODUCER_TIMESTAMP'|'SERVER_TIMESTAMP' $FragmentSelectorType
- * @property HLSTimestampRange $TimestampRange
+ * @property 'PRODUCER_TIMESTAMP'|'SERVER_TIMESTAMP'|null $FragmentSelectorType
+ * @property HLSTimestampRange|null $TimestampRange
  */
 class HLSFragmentSelector extends Shape
 {
     /**
      * @param array{
-     *     FragmentSelectorType?: 'PRODUCER_TIMESTAMP'|'SERVER_TIMESTAMP',
-     *     TimestampRange?: HLSTimestampRange
+     *     FragmentSelectorType?: 'PRODUCER_TIMESTAMP'|'SERVER_TIMESTAMP'|null,
+     *     TimestampRange?: HLSTimestampRange|null
      * } $args
      */
     public function __construct(array $args = [])

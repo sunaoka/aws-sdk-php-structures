@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InstanceGroupId
- * @property int $InstanceCount
- * @property list<string> $EC2InstanceIdsToTerminate
- * @property ShrinkPolicy $ShrinkPolicy
- * @property 'OVERWRITE'|'MERGE' $ReconfigurationType
- * @property list<Configuration> $Configurations
+ * @property int|null $InstanceCount
+ * @property list<string>|null $EC2InstanceIdsToTerminate
+ * @property ShrinkPolicy|null $ShrinkPolicy
+ * @property 'OVERWRITE'|'MERGE'|null $ReconfigurationType
+ * @property list<Configuration>|null $Configurations
  */
 class InstanceGroupModifyConfig extends Shape
 {
     /**
      * @param array{
      *     InstanceGroupId: string,
-     *     InstanceCount?: int,
-     *     EC2InstanceIdsToTerminate?: list<string>,
-     *     ShrinkPolicy?: ShrinkPolicy,
-     *     ReconfigurationType?: 'OVERWRITE'|'MERGE',
-     *     Configurations?: list<Configuration>
+     *     InstanceCount?: int|null,
+     *     EC2InstanceIdsToTerminate?: list<string>|null,
+     *     ShrinkPolicy?: ShrinkPolicy|null,
+     *     ReconfigurationType?: 'OVERWRITE'|'MERGE'|null,
+     *     Configurations?: list<Configuration>|null
      * } $args
      */
     public function __construct(array $args)

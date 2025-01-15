@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeModelPackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ModelQuality $ModelQuality
- * @property ModelDataQuality $ModelDataQuality
- * @property Bias $Bias
- * @property Explainability $Explainability
+ * @property ModelQuality|null $ModelQuality
+ * @property ModelDataQuality|null $ModelDataQuality
+ * @property Bias|null $Bias
+ * @property Explainability|null $Explainability
  */
 class ModelMetrics extends Shape
 {
     /**
      * @param array{
-     *     ModelQuality?: ModelQuality,
-     *     ModelDataQuality?: ModelDataQuality,
-     *     Bias?: Bias,
-     *     Explainability?: Explainability
+     *     ModelQuality?: ModelQuality|null,
+     *     ModelDataQuality?: ModelDataQuality|null,
+     *     Bias?: Bias|null,
+     *     Explainability?: Explainability|null
      * } $args
      */
     public function __construct(array $args = [])

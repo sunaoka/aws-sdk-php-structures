@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProductCode
  * @property \Aws\Api\DateTimeResult $Timestamp
  * @property string $UsageDimension
- * @property int<0, 2147483647> $UsageQuantity
- * @property bool $DryRun
- * @property list<Shapes\UsageAllocation> $UsageAllocations
+ * @property int<0, 2147483647>|null $UsageQuantity
+ * @property bool|null $DryRun
+ * @property list<Shapes\UsageAllocation>|null $UsageAllocations
  */
 class MeterUsageRequest extends Request
 {
@@ -19,9 +19,9 @@ class MeterUsageRequest extends Request
      *     ProductCode: string,
      *     Timestamp: \Aws\Api\DateTimeResult,
      *     UsageDimension: string,
-     *     UsageQuantity?: int<0, 2147483647>,
-     *     DryRun?: bool,
-     *     UsageAllocations?: list<Shapes\UsageAllocation>
+     *     UsageQuantity?: int<0, 2147483647>|null,
+     *     DryRun?: bool|null,
+     *     UsageAllocations?: list<Shapes\UsageAllocation>|null
      * } $args
      */
     public function __construct(array $args)

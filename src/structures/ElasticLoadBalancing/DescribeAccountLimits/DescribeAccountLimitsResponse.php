@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeAccountLimits;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Limit> $Limits
- * @property string $NextMarker
+ * @property list<Shapes\Limit>|null $Limits
+ * @property string|null $NextMarker
  */
 class DescribeAccountLimitsResponse extends Response
 {

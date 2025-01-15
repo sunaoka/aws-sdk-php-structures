@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayArn
- * @property string $GatewayDisplayName
+ * @property string|null $GatewayDisplayName
  */
 class UpdateGatewayInformationRequest extends Request
 {
     /**
      * @param array{
      *     GatewayArn: string,
-     *     GatewayDisplayName?: string
+     *     GatewayDisplayName?: string|null
      * } $args
      */
     public function __construct(array $args)

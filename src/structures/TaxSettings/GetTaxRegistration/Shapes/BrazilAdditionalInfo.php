@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TaxSettings\GetTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ccmCode
- * @property string $legalNatureCode
+ * @property string|null $ccmCode
+ * @property string|null $legalNatureCode
  */
 class BrazilAdditionalInfo extends Shape
 {
     /**
      * @param array{
-     *     ccmCode?: string,
-     *     legalNatureCode?: string
+     *     ccmCode?: string|null,
+     *     legalNatureCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

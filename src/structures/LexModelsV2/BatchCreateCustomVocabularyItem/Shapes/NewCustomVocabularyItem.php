@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $phrase
- * @property int<0, 3> $weight
- * @property string $displayAs
+ * @property int<0, 3>|null $weight
+ * @property string|null $displayAs
  */
 class NewCustomVocabularyItem extends Shape
 {
     /**
      * @param array{
      *     phrase: string,
-     *     weight?: int<0, 3>,
-     *     displayAs?: string
+     *     weight?: int<0, 3>|null,
+     *     displayAs?: string|null
      * } $args
      */
     public function __construct(array $args)

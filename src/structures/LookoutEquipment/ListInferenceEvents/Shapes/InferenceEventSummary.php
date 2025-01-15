@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LookoutEquipment\ListInferenceEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InferenceSchedulerArn
- * @property string $InferenceSchedulerName
- * @property \Aws\Api\DateTimeResult $EventStartTime
- * @property \Aws\Api\DateTimeResult $EventEndTime
- * @property string $Diagnostics
- * @property int<0, max> $EventDurationInSeconds
+ * @property string|null $InferenceSchedulerArn
+ * @property string|null $InferenceSchedulerName
+ * @property \Aws\Api\DateTimeResult|null $EventStartTime
+ * @property \Aws\Api\DateTimeResult|null $EventEndTime
+ * @property string|null $Diagnostics
+ * @property int<0, max>|null $EventDurationInSeconds
  */
 class InferenceEventSummary extends Shape
 {
     /**
      * @param array{
-     *     InferenceSchedulerArn?: string,
-     *     InferenceSchedulerName?: string,
-     *     EventStartTime?: \Aws\Api\DateTimeResult,
-     *     EventEndTime?: \Aws\Api\DateTimeResult,
-     *     Diagnostics?: string,
-     *     EventDurationInSeconds?: int<0, max>
+     *     InferenceSchedulerArn?: string|null,
+     *     InferenceSchedulerName?: string|null,
+     *     EventStartTime?: \Aws\Api\DateTimeResult|null,
+     *     EventEndTime?: \Aws\Api\DateTimeResult|null,
+     *     Diagnostics?: string|null,
+     *     EventDurationInSeconds?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

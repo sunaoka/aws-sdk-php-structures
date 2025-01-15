@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\MigrationHubRefactorSpaces\DeleteEnvironment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $EnvironmentId
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property string $Name
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED' $State
+ * @property string|null $Arn
+ * @property string|null $EnvironmentId
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property string|null $Name
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null $State
  */
 class DeleteEnvironmentResponse extends Response
 {

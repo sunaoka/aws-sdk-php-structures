@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeBackup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BackupDetails $BackupDetails
- * @property SourceTableDetails $SourceTableDetails
- * @property SourceTableFeatureDetails $SourceTableFeatureDetails
+ * @property BackupDetails|null $BackupDetails
+ * @property SourceTableDetails|null $SourceTableDetails
+ * @property SourceTableFeatureDetails|null $SourceTableFeatureDetails
  */
 class BackupDescription extends Shape
 {
     /**
      * @param array{
-     *     BackupDetails?: BackupDetails,
-     *     SourceTableDetails?: SourceTableDetails,
-     *     SourceTableFeatureDetails?: SourceTableFeatureDetails
+     *     BackupDetails?: BackupDetails|null,
+     *     SourceTableDetails?: SourceTableDetails|null,
+     *     SourceTableFeatureDetails?: SourceTableFeatureDetails|null
      * } $args
      */
     public function __construct(array $args = [])

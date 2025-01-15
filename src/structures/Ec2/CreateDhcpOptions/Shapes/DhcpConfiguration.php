@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateDhcpOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property list<AttributeValue> $Values
+ * @property string|null $Key
+ * @property list<AttributeValue>|null $Values
  */
 class DhcpConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Values?: list<AttributeValue>
+     *     Key?: string|null,
+     *     Values?: list<AttributeValue>|null
      * } $args
      */
     public function __construct(array $args = [])

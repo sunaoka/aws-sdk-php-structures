@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkGroup
- * @property 'CREATING'|'CREATED'|'IDLE'|'BUSY'|'TERMINATING'|'TERMINATED'|'DEGRADED'|'FAILED' $StateFilter
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property 'CREATING'|'CREATED'|'IDLE'|'BUSY'|'TERMINATING'|'TERMINATED'|'DEGRADED'|'FAILED'|null $StateFilter
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListSessionsRequest extends Request
 {
     /**
      * @param array{
      *     WorkGroup: string,
-     *     StateFilter?: 'CREATING'|'CREATED'|'IDLE'|'BUSY'|'TERMINATING'|'TERMINATED'|'DEGRADED'|'FAILED',
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     StateFilter?: 'CREATING'|'CREATED'|'IDLE'|'BUSY'|'TERMINATING'|'TERMINATED'|'DEGRADED'|'FAILED'|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

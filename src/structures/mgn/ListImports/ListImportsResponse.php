@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\mgn\ListImports;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ImportTask> $items
- * @property string $nextToken
+ * @property list<Shapes\ImportTask>|null $items
+ * @property string|null $nextToken
  */
 class ListImportsResponse extends Response
 {

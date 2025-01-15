@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLambdaFunctionRecommendatio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LambdaSavingsEstimationMode $savingsEstimationMode
+ * @property LambdaSavingsEstimationMode|null $savingsEstimationMode
  */
 class LambdaEffectiveRecommendationPreferences extends Shape
 {
     /**
-     * @param array{savingsEstimationMode?: LambdaSavingsEstimationMode} $args
+     * @param array{savingsEstimationMode?: LambdaSavingsEstimationMode|null} $args
      */
     public function __construct(array $args = [])
     {

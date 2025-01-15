@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\GetStatement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TextPlain
+ * @property string|null $TextPlain
  */
 class StatementOutputData extends Shape
 {
     /**
-     * @param array{TextPlain?: string} $args
+     * @param array{TextPlain?: string|null} $args
      */
     public function __construct(array $args = [])
     {

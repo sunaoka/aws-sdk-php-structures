@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $pattern
  * @property 'BLOCK'|'ANONYMIZE' $action
  */
@@ -15,7 +15,7 @@ class GuardrailRegex extends Shape
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     pattern: string,
      *     action: 'BLOCK'|'ANONYMIZE'
      * } $args

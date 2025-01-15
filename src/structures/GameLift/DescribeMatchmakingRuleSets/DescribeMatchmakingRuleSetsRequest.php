@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeMatchmakingRuleSets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $Names
- * @property int<1, 10> $Limit
- * @property string $NextToken
+ * @property list<string>|null $Names
+ * @property int<1, 10>|null $Limit
+ * @property string|null $NextToken
  */
 class DescribeMatchmakingRuleSetsRequest extends Request
 {
     /**
      * @param array{
-     *     Names?: list<string>,
-     *     Limit?: int<1, 10>,
-     *     NextToken?: string
+     *     Names?: list<string>|null,
+     *     Limit?: int<1, 10>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

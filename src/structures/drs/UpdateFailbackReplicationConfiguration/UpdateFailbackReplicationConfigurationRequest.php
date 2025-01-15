@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\drs\UpdateFailbackReplicationConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<0, max> $bandwidthThrottling
- * @property string $name
+ * @property int<0, max>|null $bandwidthThrottling
+ * @property string|null $name
  * @property string $recoveryInstanceID
- * @property bool $usePrivateIP
+ * @property bool|null $usePrivateIP
  */
 class UpdateFailbackReplicationConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     bandwidthThrottling?: int<0, max>,
-     *     name?: string,
+     *     bandwidthThrottling?: int<0, max>|null,
+     *     name?: string|null,
      *     recoveryInstanceID: string,
-     *     usePrivateIP?: bool
+     *     usePrivateIP?: bool|null
      * } $args
      */
     public function __construct(array $args)

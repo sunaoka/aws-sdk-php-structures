@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\PutMessagingStreamingConfigur
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\StreamingConfiguration> $StreamingConfigurations
+ * @property list<Shapes\StreamingConfiguration>|null $StreamingConfigurations
  */
 class PutMessagingStreamingConfigurationsResponse extends Response
 {

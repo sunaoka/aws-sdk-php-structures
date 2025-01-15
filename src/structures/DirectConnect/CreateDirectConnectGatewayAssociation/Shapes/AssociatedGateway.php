@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DirectConnect\CreateDirectConnectGatewayAssocia
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property 'virtualPrivateGateway'|'transitGateway' $type
- * @property string $ownerAccount
- * @property string $region
+ * @property string|null $id
+ * @property 'virtualPrivateGateway'|'transitGateway'|null $type
+ * @property string|null $ownerAccount
+ * @property string|null $region
  */
 class AssociatedGateway extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     type?: 'virtualPrivateGateway'|'transitGateway',
-     *     ownerAccount?: string,
-     *     region?: string
+     *     id?: string|null,
+     *     type?: 'virtualPrivateGateway'|'transitGateway'|null,
+     *     ownerAccount?: string|null,
+     *     region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

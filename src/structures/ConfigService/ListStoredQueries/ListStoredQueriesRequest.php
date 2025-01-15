@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\ListStoredQueries;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<0, 100> $MaxResults
+ * @property string|null $NextToken
+ * @property int<0, 100>|null $MaxResults
  */
 class ListStoredQueriesRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 100>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

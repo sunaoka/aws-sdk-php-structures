@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelARN
- * @property string $CurrentVersion
+ * @property string|null $CurrentVersion
  */
 class DeleteSignalingChannelRequest extends Request
 {
     /**
      * @param array{
      *     ChannelARN: string,
-     *     CurrentVersion?: string
+     *     CurrentVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\ListStreams\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BEGINS_WITH' $ComparisonOperator
- * @property string $ComparisonValue
+ * @property 'BEGINS_WITH'|null $ComparisonOperator
+ * @property string|null $ComparisonValue
  */
 class StreamNameCondition extends Shape
 {
     /**
      * @param array{
-     *     ComparisonOperator?: 'BEGINS_WITH',
-     *     ComparisonValue?: string
+     *     ComparisonOperator?: 'BEGINS_WITH'|null,
+     *     ComparisonValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

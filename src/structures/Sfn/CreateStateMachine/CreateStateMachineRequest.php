@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $definition
  * @property string $roleArn
- * @property 'STANDARD'|'EXPRESS' $type
- * @property Shapes\LoggingConfiguration $loggingConfiguration
- * @property list<Shapes\Tag> $tags
- * @property Shapes\TracingConfiguration $tracingConfiguration
- * @property bool $publish
- * @property string $versionDescription
- * @property Shapes\EncryptionConfiguration $encryptionConfiguration
+ * @property 'STANDARD'|'EXPRESS'|null $type
+ * @property Shapes\LoggingConfiguration|null $loggingConfiguration
+ * @property list<Shapes\Tag>|null $tags
+ * @property Shapes\TracingConfiguration|null $tracingConfiguration
+ * @property bool|null $publish
+ * @property string|null $versionDescription
+ * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
  */
 class CreateStateMachineRequest extends Request
 {
@@ -23,13 +23,13 @@ class CreateStateMachineRequest extends Request
      *     name: string,
      *     definition: string,
      *     roleArn: string,
-     *     type?: 'STANDARD'|'EXPRESS',
-     *     loggingConfiguration?: Shapes\LoggingConfiguration,
-     *     tags?: list<Shapes\Tag>,
-     *     tracingConfiguration?: Shapes\TracingConfiguration,
-     *     publish?: bool,
-     *     versionDescription?: string,
-     *     encryptionConfiguration?: Shapes\EncryptionConfiguration
+     *     type?: 'STANDARD'|'EXPRESS'|null,
+     *     loggingConfiguration?: Shapes\LoggingConfiguration|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     tracingConfiguration?: Shapes\TracingConfiguration|null,
+     *     publish?: bool|null,
+     *     versionDescription?: string|null,
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

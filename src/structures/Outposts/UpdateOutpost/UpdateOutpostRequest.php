@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OutpostId
- * @property string $Name
- * @property string $Description
- * @property 'RACK'|'SERVER' $SupportedHardwareType
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'RACK'|'SERVER'|null $SupportedHardwareType
  */
 class UpdateOutpostRequest extends Request
 {
     /**
      * @param array{
      *     OutpostId: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     SupportedHardwareType?: 'RACK'|'SERVER'
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     SupportedHardwareType?: 'RACK'|'SERVER'|null
      * } $args
      */
     public function __construct(array $args)

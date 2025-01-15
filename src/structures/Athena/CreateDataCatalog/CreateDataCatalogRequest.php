@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property 'LAMBDA'|'GLUE'|'HIVE'|'FEDERATED' $Type
- * @property string $Description
- * @property array<string, string> $Parameters
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Description
+ * @property array<string, string>|null $Parameters
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDataCatalogRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateDataCatalogRequest extends Request
      * @param array{
      *     Name: string,
      *     Type: 'LAMBDA'|'GLUE'|'HIVE'|'FEDERATED',
-     *     Description?: string,
-     *     Parameters?: array<string, string>,
-     *     Tags?: list<Shapes\Tag>
+     *     Description?: string|null,
+     *     Parameters?: array<string, string>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

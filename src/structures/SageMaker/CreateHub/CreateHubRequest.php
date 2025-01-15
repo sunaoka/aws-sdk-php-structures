@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HubName
  * @property string $HubDescription
- * @property string $HubDisplayName
- * @property list<string> $HubSearchKeywords
- * @property Shapes\HubS3StorageConfig $S3StorageConfig
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $HubDisplayName
+ * @property list<string>|null $HubSearchKeywords
+ * @property Shapes\HubS3StorageConfig|null $S3StorageConfig
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateHubRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateHubRequest extends Request
      * @param array{
      *     HubName: string,
      *     HubDescription: string,
-     *     HubDisplayName?: string,
-     *     HubSearchKeywords?: list<string>,
-     *     S3StorageConfig?: Shapes\HubS3StorageConfig,
-     *     Tags?: list<Shapes\Tag>
+     *     HubDisplayName?: string|null,
+     *     HubSearchKeywords?: list<string>|null,
+     *     S3StorageConfig?: Shapes\HubS3StorageConfig|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

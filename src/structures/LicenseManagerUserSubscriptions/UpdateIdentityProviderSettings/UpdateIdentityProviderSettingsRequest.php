@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\UpdateIdentityP
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\IdentityProvider $IdentityProvider
- * @property string $IdentityProviderArn
- * @property string $Product
+ * @property Shapes\IdentityProvider|null $IdentityProvider
+ * @property string|null $IdentityProviderArn
+ * @property string|null $Product
  * @property Shapes\UpdateSettings $UpdateSettings
  */
 class UpdateIdentityProviderSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     IdentityProvider?: Shapes\IdentityProvider,
-     *     IdentityProviderArn?: string,
-     *     Product?: string,
+     *     IdentityProvider?: Shapes\IdentityProvider|null,
+     *     IdentityProviderArn?: string|null,
+     *     Product?: string|null,
      *     UpdateSettings: Shapes\UpdateSettings
      * } $args
      */

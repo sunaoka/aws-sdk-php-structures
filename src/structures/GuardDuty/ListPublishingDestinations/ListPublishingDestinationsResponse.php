@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Destination> $Destinations
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListPublishingDestinationsResponse extends Response
 {

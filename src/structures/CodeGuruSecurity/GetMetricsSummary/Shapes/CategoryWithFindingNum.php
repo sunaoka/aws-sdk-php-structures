@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\GetMetricsSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $categoryName
- * @property int $findingNumber
+ * @property string|null $categoryName
+ * @property int|null $findingNumber
  */
 class CategoryWithFindingNum extends Shape
 {
     /**
      * @param array{
-     *     categoryName?: string,
-     *     findingNumber?: int
+     *     categoryName?: string|null,
+     *     findingNumber?: int|null
      * } $args
      */
     public function __construct(array $args = [])

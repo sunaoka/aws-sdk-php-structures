@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DeleteTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $ArchivalDateTime
- * @property string $ArchivalReason
- * @property string $ArchivalBackupArn
+ * @property \Aws\Api\DateTimeResult|null $ArchivalDateTime
+ * @property string|null $ArchivalReason
+ * @property string|null $ArchivalBackupArn
  */
 class ArchivalSummary extends Shape
 {
     /**
      * @param array{
-     *     ArchivalDateTime?: \Aws\Api\DateTimeResult,
-     *     ArchivalReason?: string,
-     *     ArchivalBackupArn?: string
+     *     ArchivalDateTime?: \Aws\Api\DateTimeResult|null,
+     *     ArchivalReason?: string|null,
+     *     ArchivalBackupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

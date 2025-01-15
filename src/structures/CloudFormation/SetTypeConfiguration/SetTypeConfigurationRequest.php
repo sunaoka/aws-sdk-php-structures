@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudFormation\SetTypeConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TypeArn
+ * @property string|null $TypeArn
  * @property string $Configuration
- * @property string $ConfigurationAlias
- * @property string $TypeName
- * @property 'RESOURCE'|'MODULE'|'HOOK' $Type
+ * @property string|null $ConfigurationAlias
+ * @property string|null $TypeName
+ * @property 'RESOURCE'|'MODULE'|'HOOK'|null $Type
  */
 class SetTypeConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     TypeArn?: string,
+     *     TypeArn?: string|null,
      *     Configuration: string,
-     *     ConfigurationAlias?: string,
-     *     TypeName?: string,
-     *     Type?: 'RESOURCE'|'MODULE'|'HOOK'
+     *     ConfigurationAlias?: string|null,
+     *     TypeName?: string|null,
+     *     Type?: 'RESOURCE'|'MODULE'|'HOOK'|null
      * } $args
      */
     public function __construct(array $args)

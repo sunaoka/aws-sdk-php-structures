@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PassiveIp
- * @property 'DISABLED'|'ENABLED'|'ENFORCED' $TlsSessionResumptionMode
- * @property 'DEFAULT'|'ENABLE_NO_OP' $SetStatOption
- * @property list<'HTTP'> $As2Transports
+ * @property string|null $PassiveIp
+ * @property 'DISABLED'|'ENABLED'|'ENFORCED'|null $TlsSessionResumptionMode
+ * @property 'DEFAULT'|'ENABLE_NO_OP'|null $SetStatOption
+ * @property list<'HTTP'>|null $As2Transports
  */
 class ProtocolDetails extends Shape
 {
     /**
      * @param array{
-     *     PassiveIp?: string,
-     *     TlsSessionResumptionMode?: 'DISABLED'|'ENABLED'|'ENFORCED',
-     *     SetStatOption?: 'DEFAULT'|'ENABLE_NO_OP',
-     *     As2Transports?: list<'HTTP'>
+     *     PassiveIp?: string|null,
+     *     TlsSessionResumptionMode?: 'DISABLED'|'ENABLED'|'ENFORCED'|null,
+     *     SetStatOption?: 'DEFAULT'|'ENABLE_NO_OP'|null,
+     *     As2Transports?: list<'HTTP'>|null
      * } $args
      */
     public function __construct(array $args = [])

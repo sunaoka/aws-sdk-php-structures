@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AuditManager\CreateControl\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $sourceName
- * @property string $sourceDescription
- * @property 'System_Controls_Mapping'|'Procedural_Controls_Mapping' $sourceSetUpOption
- * @property 'AWS_Cloudtrail'|'AWS_Config'|'AWS_Security_Hub'|'AWS_API_Call'|'MANUAL'|'Common_Control'|'Core_Control' $sourceType
- * @property SourceKeyword $sourceKeyword
- * @property 'DAILY'|'WEEKLY'|'MONTHLY' $sourceFrequency
- * @property string $troubleshootingText
+ * @property string|null $sourceName
+ * @property string|null $sourceDescription
+ * @property 'System_Controls_Mapping'|'Procedural_Controls_Mapping'|null $sourceSetUpOption
+ * @property 'AWS_Cloudtrail'|'AWS_Config'|'AWS_Security_Hub'|'AWS_API_Call'|'MANUAL'|'Common_Control'|'Core_Control'|null $sourceType
+ * @property SourceKeyword|null $sourceKeyword
+ * @property 'DAILY'|'WEEKLY'|'MONTHLY'|null $sourceFrequency
+ * @property string|null $troubleshootingText
  */
 class CreateControlMappingSource extends Shape
 {
     /**
      * @param array{
-     *     sourceName?: string,
-     *     sourceDescription?: string,
-     *     sourceSetUpOption?: 'System_Controls_Mapping'|'Procedural_Controls_Mapping',
-     *     sourceType?: 'AWS_Cloudtrail'|'AWS_Config'|'AWS_Security_Hub'|'AWS_API_Call'|'MANUAL'|'Common_Control'|'Core_Control',
-     *     sourceKeyword?: SourceKeyword,
-     *     sourceFrequency?: 'DAILY'|'WEEKLY'|'MONTHLY',
-     *     troubleshootingText?: string
+     *     sourceName?: string|null,
+     *     sourceDescription?: string|null,
+     *     sourceSetUpOption?: 'System_Controls_Mapping'|'Procedural_Controls_Mapping'|null,
+     *     sourceType?: 'AWS_Cloudtrail'|'AWS_Config'|'AWS_Security_Hub'|'AWS_API_Call'|'MANUAL'|'Common_Control'|'Core_Control'|null,
+     *     sourceKeyword?: SourceKeyword|null,
+     *     sourceFrequency?: 'DAILY'|'WEEKLY'|'MONTHLY'|null,
+     *     troubleshootingText?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IndexId
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\S3Path $SourceS3Path
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $RoleArn
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateQuerySuggestionsBlockListRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateQuerySuggestionsBlockListRequest extends Request
      * @param array{
      *     IndexId: string,
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     SourceS3Path: Shapes\S3Path,
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     RoleArn: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

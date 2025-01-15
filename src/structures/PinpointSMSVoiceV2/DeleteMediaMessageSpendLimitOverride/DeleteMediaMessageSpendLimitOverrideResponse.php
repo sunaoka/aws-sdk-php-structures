@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DeleteMediaMessageSpendLimit
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int<0, 1000000000> $MonthlyLimit
+ * @property int<0, 1000000000>|null $MonthlyLimit
  */
 class DeleteMediaMessageSpendLimitOverrideResponse extends Response
 {

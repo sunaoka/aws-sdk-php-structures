@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\PutAppInstanceRetentionSetting
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 5475> $RetentionDays
+ * @property int<1, 5475>|null $RetentionDays
  */
 class ChannelRetentionSettings extends Shape
 {
     /**
-     * @param array{RetentionDays?: int<1, 5475>} $args
+     * @param array{RetentionDays?: int<1, 5475>|null} $args
      */
     public function __construct(array $args = [])
     {

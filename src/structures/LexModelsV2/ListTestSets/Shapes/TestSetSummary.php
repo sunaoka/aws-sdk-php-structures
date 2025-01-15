@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListTestSets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $testSetId
- * @property string $testSetName
- * @property string $description
- * @property 'Text'|'Audio' $modality
- * @property 'Importing'|'PendingAnnotation'|'Deleting'|'ValidationError'|'Ready' $status
- * @property string $roleArn
- * @property int $numTurns
- * @property TestSetStorageLocation $storageLocation
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $testSetId
+ * @property string|null $testSetName
+ * @property string|null $description
+ * @property 'Text'|'Audio'|null $modality
+ * @property 'Importing'|'PendingAnnotation'|'Deleting'|'ValidationError'|'Ready'|null $status
+ * @property string|null $roleArn
+ * @property int|null $numTurns
+ * @property TestSetStorageLocation|null $storageLocation
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class TestSetSummary extends Shape
 {
     /**
      * @param array{
-     *     testSetId?: string,
-     *     testSetName?: string,
-     *     description?: string,
-     *     modality?: 'Text'|'Audio',
-     *     status?: 'Importing'|'PendingAnnotation'|'Deleting'|'ValidationError'|'Ready',
-     *     roleArn?: string,
-     *     numTurns?: int,
-     *     storageLocation?: TestSetStorageLocation,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     testSetId?: string|null,
+     *     testSetName?: string|null,
+     *     description?: string|null,
+     *     modality?: 'Text'|'Audio'|null,
+     *     status?: 'Importing'|'PendingAnnotation'|'Deleting'|'ValidationError'|'Ready'|null,
+     *     roleArn?: string|null,
+     *     numTurns?: int|null,
+     *     storageLocation?: TestSetStorageLocation|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

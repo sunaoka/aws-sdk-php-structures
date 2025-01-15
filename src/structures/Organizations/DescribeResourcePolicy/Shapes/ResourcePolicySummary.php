@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Organizations\DescribeResourcePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
+ * @property string|null $Id
+ * @property string|null $Arn
  */
 class ResourcePolicySummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string
+     *     Id?: string|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

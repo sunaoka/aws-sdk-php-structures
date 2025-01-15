@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\SearchText\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Restricted
- * @property list<Category> $Categories
+ * @property bool|null $Restricted
+ * @property list<Category>|null $Categories
  */
 class AccessRestriction extends Shape
 {
     /**
      * @param array{
-     *     Restricted?: bool,
-     *     Categories?: list<Category>
+     *     Restricted?: bool|null,
+     *     Categories?: list<Category>|null
      * } $args
      */
     public function __construct(array $args = [])

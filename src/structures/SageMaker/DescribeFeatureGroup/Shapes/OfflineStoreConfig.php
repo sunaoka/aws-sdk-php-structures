@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property S3StorageConfig $S3StorageConfig
- * @property bool $DisableGlueTableCreation
- * @property DataCatalogConfig $DataCatalogConfig
- * @property 'Default'|'Glue'|'Iceberg' $TableFormat
+ * @property bool|null $DisableGlueTableCreation
+ * @property DataCatalogConfig|null $DataCatalogConfig
+ * @property 'Default'|'Glue'|'Iceberg'|null $TableFormat
  */
 class OfflineStoreConfig extends Shape
 {
     /**
      * @param array{
      *     S3StorageConfig: S3StorageConfig,
-     *     DisableGlueTableCreation?: bool,
-     *     DataCatalogConfig?: DataCatalogConfig,
-     *     TableFormat?: 'Default'|'Glue'|'Iceberg'
+     *     DisableGlueTableCreation?: bool|null,
+     *     DataCatalogConfig?: DataCatalogConfig|null,
+     *     TableFormat?: 'Default'|'Glue'|'Iceberg'|null
      * } $args
      */
     public function __construct(array $args)

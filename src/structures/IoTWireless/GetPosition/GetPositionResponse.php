@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetPosition;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<float> $Position
- * @property Shapes\Accuracy $Accuracy
- * @property 'GNSS' $SolverType
- * @property 'Semtech' $SolverProvider
- * @property string $SolverVersion
- * @property string $Timestamp
+ * @property list<float>|null $Position
+ * @property Shapes\Accuracy|null $Accuracy
+ * @property 'GNSS'|null $SolverType
+ * @property 'Semtech'|null $SolverProvider
+ * @property string|null $SolverVersion
+ * @property string|null $Timestamp
  */
 class GetPositionResponse extends Response
 {

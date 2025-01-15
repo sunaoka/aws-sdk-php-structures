@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkSpacesThinClient\ListEnvironments;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EnvironmentSummary> $environments
- * @property string $nextToken
+ * @property list<Shapes\EnvironmentSummary>|null $environments
+ * @property string|null $nextToken
  */
 class ListEnvironmentsResponse extends Response
 {

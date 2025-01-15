@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\CancelStatement;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $Status
+ * @property bool|null $Status
  */
 class CancelStatementResponse extends Response
 {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateIpAccessSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
- * @property string $displayName
+ * @property string|null $clientToken
+ * @property string|null $description
+ * @property string|null $displayName
  * @property string $ipAccessSettingsArn
- * @property list<Shapes\IpRule> $ipRules
+ * @property list<Shapes\IpRule>|null $ipRules
  */
 class UpdateIpAccessSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
-     *     displayName?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
+     *     displayName?: string|null,
      *     ipAccessSettingsArn: string,
-     *     ipRules?: list<Shapes\IpRule>
+     *     ipRules?: list<Shapes\IpRule>|null
      * } $args
      */
     public function __construct(array $args)

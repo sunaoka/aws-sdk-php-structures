@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTopicRefresh;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TopicRefreshDetails $RefreshDetails
- * @property string $RequestId
- * @property int $Status
+ * @property Shapes\TopicRefreshDetails|null $RefreshDetails
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class DescribeTopicRefreshResponse extends Response
 {

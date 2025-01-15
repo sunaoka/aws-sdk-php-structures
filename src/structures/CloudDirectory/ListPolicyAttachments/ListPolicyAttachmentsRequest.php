@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryArn
  * @property Shapes\ObjectReference $PolicyReference
- * @property string $NextToken
- * @property int<1, max> $MaxResults
- * @property 'SERIALIZABLE'|'EVENTUAL' $ConsistencyLevel
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
+ * @property 'SERIALIZABLE'|'EVENTUAL'|null $ConsistencyLevel
  */
 class ListPolicyAttachmentsRequest extends Request
 {
@@ -17,9 +17,9 @@ class ListPolicyAttachmentsRequest extends Request
      * @param array{
      *     DirectoryArn: string,
      *     PolicyReference: Shapes\ObjectReference,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>,
-     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null,
+     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'|null
      * } $args
      */
     public function __construct(array $args)

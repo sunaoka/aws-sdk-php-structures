@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'SITEWISE_DEFAULT_STORAGE'|'MULTI_LAYER_STORAGE' $storageType
- * @property Shapes\MultiLayerStorage $multiLayerStorage
- * @property 'ENABLED'|'DISABLED' $disassociatedDataStorage
- * @property Shapes\RetentionPeriod $retentionPeriod
- * @property 'ENABLED'|'DISABLED' $warmTier
- * @property Shapes\WarmTierRetentionPeriod $warmTierRetentionPeriod
+ * @property Shapes\MultiLayerStorage|null $multiLayerStorage
+ * @property 'ENABLED'|'DISABLED'|null $disassociatedDataStorage
+ * @property Shapes\RetentionPeriod|null $retentionPeriod
+ * @property 'ENABLED'|'DISABLED'|null $warmTier
+ * @property Shapes\WarmTierRetentionPeriod|null $warmTierRetentionPeriod
  */
 class PutStorageConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     storageType: 'SITEWISE_DEFAULT_STORAGE'|'MULTI_LAYER_STORAGE',
-     *     multiLayerStorage?: Shapes\MultiLayerStorage,
-     *     disassociatedDataStorage?: 'ENABLED'|'DISABLED',
-     *     retentionPeriod?: Shapes\RetentionPeriod,
-     *     warmTier?: 'ENABLED'|'DISABLED',
-     *     warmTierRetentionPeriod?: Shapes\WarmTierRetentionPeriod
+     *     multiLayerStorage?: Shapes\MultiLayerStorage|null,
+     *     disassociatedDataStorage?: 'ENABLED'|'DISABLED'|null,
+     *     retentionPeriod?: Shapes\RetentionPeriod|null,
+     *     warmTier?: 'ENABLED'|'DISABLED'|null,
+     *     warmTierRetentionPeriod?: Shapes\WarmTierRetentionPeriod|null
      * } $args
      */
     public function __construct(array $args)

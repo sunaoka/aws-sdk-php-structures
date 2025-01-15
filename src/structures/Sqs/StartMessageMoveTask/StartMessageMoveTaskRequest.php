@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SourceArn
- * @property string $DestinationArn
- * @property int $MaxNumberOfMessagesPerSecond
+ * @property string|null $DestinationArn
+ * @property int|null $MaxNumberOfMessagesPerSecond
  */
 class StartMessageMoveTaskRequest extends Request
 {
     /**
      * @param array{
      *     SourceArn: string,
-     *     DestinationArn?: string,
-     *     MaxNumberOfMessagesPerSecond?: int
+     *     DestinationArn?: string|null,
+     *     MaxNumberOfMessagesPerSecond?: int|null
      * } $args
      */
     public function __construct(array $args)

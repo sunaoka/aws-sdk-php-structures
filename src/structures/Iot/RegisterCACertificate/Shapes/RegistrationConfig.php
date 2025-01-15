@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\RegisterCACertificate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $templateBody
- * @property string $roleArn
- * @property string $templateName
+ * @property string|null $templateBody
+ * @property string|null $roleArn
+ * @property string|null $templateName
  */
 class RegistrationConfig extends Shape
 {
     /**
      * @param array{
-     *     templateBody?: string,
-     *     roleArn?: string,
-     *     templateName?: string
+     *     templateBody?: string|null,
+     *     roleArn?: string|null,
+     *     templateName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

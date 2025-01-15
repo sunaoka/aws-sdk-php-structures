@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\RebootDBInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBParameterGroupName
- * @property string $ParameterApplyStatus
+ * @property string|null $DBParameterGroupName
+ * @property string|null $ParameterApplyStatus
  */
 class DBParameterGroupStatus extends Shape
 {
     /**
      * @param array{
-     *     DBParameterGroupName?: string,
-     *     ParameterApplyStatus?: string
+     *     DBParameterGroupName?: string|null,
+     *     ParameterApplyStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

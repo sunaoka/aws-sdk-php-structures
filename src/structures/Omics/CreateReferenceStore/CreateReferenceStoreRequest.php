@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property Shapes\SseConfig $sseConfig
- * @property array<string, string> $tags
- * @property string $clientToken
+ * @property string|null $description
+ * @property Shapes\SseConfig|null $sseConfig
+ * @property array<string, string>|null $tags
+ * @property string|null $clientToken
  */
 class CreateReferenceStoreRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     sseConfig?: Shapes\SseConfig,
-     *     tags?: array<string, string>,
-     *     clientToken?: string
+     *     description?: string|null,
+     *     sseConfig?: Shapes\SseConfig|null,
+     *     tags?: array<string, string>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

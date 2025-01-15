@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListAccountAssociations\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Association
- * @property string $AccountId
- * @property list<string> $AccountIds
+ * @property string|null $Association
+ * @property string|null $AccountId
+ * @property list<string>|null $AccountIds
  */
 class ListAccountAssociationsFilter extends Shape
 {
     /**
      * @param array{
-     *     Association?: string,
-     *     AccountId?: string,
-     *     AccountIds?: list<string>
+     *     Association?: string|null,
+     *     AccountId?: string|null,
+     *     AccountIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

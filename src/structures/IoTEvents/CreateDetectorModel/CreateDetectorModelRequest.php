@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $detectorModelName
  * @property Shapes\DetectorModelDefinition $detectorModelDefinition
- * @property string $detectorModelDescription
- * @property string $key
+ * @property string|null $detectorModelDescription
+ * @property string|null $key
  * @property string $roleArn
- * @property list<Shapes\Tag> $tags
- * @property 'BATCH'|'SERIAL' $evaluationMethod
+ * @property list<Shapes\Tag>|null $tags
+ * @property 'BATCH'|'SERIAL'|null $evaluationMethod
  */
 class CreateDetectorModelRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateDetectorModelRequest extends Request
      * @param array{
      *     detectorModelName: string,
      *     detectorModelDefinition: Shapes\DetectorModelDefinition,
-     *     detectorModelDescription?: string,
-     *     key?: string,
+     *     detectorModelDescription?: string|null,
+     *     key?: string|null,
      *     roleArn: string,
-     *     tags?: list<Shapes\Tag>,
-     *     evaluationMethod?: 'BATCH'|'SERIAL'
+     *     tags?: list<Shapes\Tag>|null,
+     *     evaluationMethod?: 'BATCH'|'SERIAL'|null
      * } $args
      */
     public function __construct(array $args)

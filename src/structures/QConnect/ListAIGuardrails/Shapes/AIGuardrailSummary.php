@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $aiGuardrailId
  * @property string $assistantArn
  * @property string $assistantId
- * @property string $description
- * @property \Aws\Api\DateTimeResult $modifiedTime
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $modifiedTime
  * @property string $name
- * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED' $status
- * @property array<string, string> $tags
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null $status
+ * @property array<string, string>|null $tags
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  */
 class AIGuardrailSummary extends Shape
@@ -24,11 +24,11 @@ class AIGuardrailSummary extends Shape
      *     aiGuardrailId: string,
      *     assistantArn: string,
      *     assistantId: string,
-     *     description?: string,
-     *     modifiedTime?: \Aws\Api\DateTimeResult,
+     *     description?: string|null,
+     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
      *     name: string,
-     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED',
-     *     tags?: array<string, string>,
+     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null,
+     *     tags?: array<string, string>|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED'
      * } $args
      */

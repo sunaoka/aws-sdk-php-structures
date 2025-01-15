@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DataSourceName
  * @property Shapes\DirectQueryDataSourceType $DataSourceType
- * @property string $Description
+ * @property string|null $Description
  * @property list<string> $OpenSearchArns
  */
 class UpdateDirectQueryDataSourceRequest extends Request
@@ -16,7 +16,7 @@ class UpdateDirectQueryDataSourceRequest extends Request
      * @param array{
      *     DataSourceName: string,
      *     DataSourceType: Shapes\DirectQueryDataSourceType,
-     *     Description?: string,
+     *     Description?: string|null,
      *     OpenSearchArns: list<string>
      * } $args
      */

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\User> $Users
- * @property bool $IsTruncated
- * @property string $Marker
+ * @property bool|null $IsTruncated
+ * @property string|null $Marker
  */
 class ListUsersResponse extends Response
 {

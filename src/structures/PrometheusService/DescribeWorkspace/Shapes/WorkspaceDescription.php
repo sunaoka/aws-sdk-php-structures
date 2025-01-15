@@ -5,26 +5,26 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DescribeWorkspace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $alias
+ * @property string|null $alias
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $kmsKeyArn
- * @property string $prometheusEndpoint
+ * @property string|null $kmsKeyArn
+ * @property string|null $prometheusEndpoint
  * @property WorkspaceStatus $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $workspaceId
  */
 class WorkspaceDescription extends Shape
 {
     /**
      * @param array{
-     *     alias?: string,
+     *     alias?: string|null,
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     kmsKeyArn?: string,
-     *     prometheusEndpoint?: string,
+     *     kmsKeyArn?: string|null,
+     *     prometheusEndpoint?: string|null,
      *     status: WorkspaceStatus,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     workspaceId: string
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LoggerDefinitionId
- * @property string $Name
+ * @property string|null $Name
  */
 class UpdateLoggerDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     LoggerDefinitionId: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

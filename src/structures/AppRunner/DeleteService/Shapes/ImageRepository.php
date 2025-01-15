@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ImageIdentifier
- * @property ImageConfiguration $ImageConfiguration
+ * @property ImageConfiguration|null $ImageConfiguration
  * @property 'ECR'|'ECR_PUBLIC' $ImageRepositoryType
  */
 class ImageRepository extends Shape
@@ -14,7 +14,7 @@ class ImageRepository extends Shape
     /**
      * @param array{
      *     ImageIdentifier: string,
-     *     ImageConfiguration?: ImageConfiguration,
+     *     ImageConfiguration?: ImageConfiguration|null,
      *     ImageRepositoryType: 'ECR'|'ECR_PUBLIC'
      * } $args
      */

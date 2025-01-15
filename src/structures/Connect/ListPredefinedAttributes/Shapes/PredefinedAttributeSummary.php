@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\ListPredefinedAttributes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
+ * @property string|null $Name
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class PredefinedAttributeSummary extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedRegion?: string
+     *     Name?: string|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

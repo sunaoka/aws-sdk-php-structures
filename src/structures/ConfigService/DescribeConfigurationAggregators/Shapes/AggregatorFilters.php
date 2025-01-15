@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeConfigurationAggregators\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AggregatorFilterResourceType $ResourceType
- * @property AggregatorFilterServicePrincipal $ServicePrincipal
+ * @property AggregatorFilterResourceType|null $ResourceType
+ * @property AggregatorFilterServicePrincipal|null $ServicePrincipal
  */
 class AggregatorFilters extends Shape
 {
     /**
      * @param array{
-     *     ResourceType?: AggregatorFilterResourceType,
-     *     ServicePrincipal?: AggregatorFilterServicePrincipal
+     *     ResourceType?: AggregatorFilterResourceType|null,
+     *     ServicePrincipal?: AggregatorFilterServicePrincipal|null
      * } $args
      */
     public function __construct(array $args = [])

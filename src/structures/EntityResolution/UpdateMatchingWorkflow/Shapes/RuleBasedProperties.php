@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ONE_TO_ONE'|'MANY_TO_MANY' $attributeMatchingModel
- * @property 'IDENTIFIER_GENERATION'|'INDEXING' $matchPurpose
+ * @property 'IDENTIFIER_GENERATION'|'INDEXING'|null $matchPurpose
  * @property list<Rule> $rules
  */
 class RuleBasedProperties extends Shape
@@ -14,7 +14,7 @@ class RuleBasedProperties extends Shape
     /**
      * @param array{
      *     attributeMatchingModel: 'ONE_TO_ONE'|'MANY_TO_MANY',
-     *     matchPurpose?: 'IDENTIFIER_GENERATION'|'INDEXING',
+     *     matchPurpose?: 'IDENTIFIER_GENERATION'|'INDEXING'|null,
      *     rules: list<Rule>
      * } $args
      */

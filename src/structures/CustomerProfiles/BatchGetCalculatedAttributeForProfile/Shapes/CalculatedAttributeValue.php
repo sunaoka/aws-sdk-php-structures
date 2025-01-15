@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\BatchGetCalculatedAttributeFor
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CalculatedAttributeName
- * @property string $DisplayName
- * @property string $IsDataPartial
- * @property string $ProfileId
- * @property string $Value
+ * @property string|null $CalculatedAttributeName
+ * @property string|null $DisplayName
+ * @property string|null $IsDataPartial
+ * @property string|null $ProfileId
+ * @property string|null $Value
  */
 class CalculatedAttributeValue extends Shape
 {
     /**
      * @param array{
-     *     CalculatedAttributeName?: string,
-     *     DisplayName?: string,
-     *     IsDataPartial?: string,
-     *     ProfileId?: string,
-     *     Value?: string
+     *     CalculatedAttributeName?: string|null,
+     *     DisplayName?: string|null,
+     *     IsDataPartial?: string|null,
+     *     ProfileId?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CloudControlApi\GetResourceRequestStatus\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HookTypeName
- * @property string $HookTypeVersionId
- * @property string $HookTypeArn
- * @property string $InvocationPoint
- * @property string $HookStatus
- * @property \Aws\Api\DateTimeResult $HookEventTime
- * @property string $HookStatusMessage
- * @property string $FailureMode
+ * @property string|null $HookTypeName
+ * @property string|null $HookTypeVersionId
+ * @property string|null $HookTypeArn
+ * @property string|null $InvocationPoint
+ * @property string|null $HookStatus
+ * @property \Aws\Api\DateTimeResult|null $HookEventTime
+ * @property string|null $HookStatusMessage
+ * @property string|null $FailureMode
  */
 class HookProgressEvent extends Shape
 {
     /**
      * @param array{
-     *     HookTypeName?: string,
-     *     HookTypeVersionId?: string,
-     *     HookTypeArn?: string,
-     *     InvocationPoint?: string,
-     *     HookStatus?: string,
-     *     HookEventTime?: \Aws\Api\DateTimeResult,
-     *     HookStatusMessage?: string,
-     *     FailureMode?: string
+     *     HookTypeName?: string|null,
+     *     HookTypeVersionId?: string|null,
+     *     HookTypeArn?: string|null,
+     *     InvocationPoint?: string|null,
+     *     HookStatus?: string|null,
+     *     HookEventTime?: \Aws\Api\DateTimeResult|null,
+     *     HookStatusMessage?: string|null,
+     *     FailureMode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

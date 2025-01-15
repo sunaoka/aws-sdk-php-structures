@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'IPV4'|'DUAL_STACK' $IpAddressType
- * @property list<string> $IpAddresses
- * @property bool $Enabled
+ * @property 'IPV4'|'DUAL_STACK'|null $IpAddressType
+ * @property list<string>|null $IpAddresses
+ * @property bool|null $Enabled
  * @property string $IdempotencyToken
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateAcceleratorRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     IpAddressType?: 'IPV4'|'DUAL_STACK',
-     *     IpAddresses?: list<string>,
-     *     Enabled?: bool,
+     *     IpAddressType?: 'IPV4'|'DUAL_STACK'|null,
+     *     IpAddresses?: list<string>|null,
+     *     Enabled?: bool|null,
      *     IdempotencyToken: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

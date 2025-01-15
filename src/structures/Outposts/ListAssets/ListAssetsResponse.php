@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Outposts\ListAssets;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AssetInfo> $Assets
- * @property string $NextToken
+ * @property list<Shapes\AssetInfo>|null $Assets
+ * @property string|null $NextToken
  */
 class ListAssetsResponse extends Response
 {

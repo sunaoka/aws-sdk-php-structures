@@ -5,71 +5,71 @@ namespace Sunaoka\Aws\Structures\DocDB\DescribeDBInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBInstanceIdentifier
- * @property string $DBInstanceClass
- * @property string $Engine
- * @property string $DBInstanceStatus
- * @property Endpoint $Endpoint
- * @property \Aws\Api\DateTimeResult $InstanceCreateTime
- * @property string $PreferredBackupWindow
- * @property int $BackupRetentionPeriod
- * @property list<VpcSecurityGroupMembership> $VpcSecurityGroups
- * @property string $AvailabilityZone
- * @property DBSubnetGroup $DBSubnetGroup
- * @property string $PreferredMaintenanceWindow
- * @property PendingModifiedValues $PendingModifiedValues
- * @property \Aws\Api\DateTimeResult $LatestRestorableTime
- * @property string $EngineVersion
- * @property bool $AutoMinorVersionUpgrade
- * @property bool $PubliclyAccessible
- * @property list<DBInstanceStatusInfo> $StatusInfos
- * @property string $DBClusterIdentifier
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $DbiResourceId
- * @property string $CACertificateIdentifier
- * @property bool $CopyTagsToSnapshot
- * @property int $PromotionTier
- * @property string $DBInstanceArn
- * @property list<string> $EnabledCloudwatchLogsExports
- * @property CertificateDetails $CertificateDetails
- * @property bool $PerformanceInsightsEnabled
- * @property string $PerformanceInsightsKMSKeyId
+ * @property string|null $DBInstanceIdentifier
+ * @property string|null $DBInstanceClass
+ * @property string|null $Engine
+ * @property string|null $DBInstanceStatus
+ * @property Endpoint|null $Endpoint
+ * @property \Aws\Api\DateTimeResult|null $InstanceCreateTime
+ * @property string|null $PreferredBackupWindow
+ * @property int|null $BackupRetentionPeriod
+ * @property list<VpcSecurityGroupMembership>|null $VpcSecurityGroups
+ * @property string|null $AvailabilityZone
+ * @property DBSubnetGroup|null $DBSubnetGroup
+ * @property string|null $PreferredMaintenanceWindow
+ * @property PendingModifiedValues|null $PendingModifiedValues
+ * @property \Aws\Api\DateTimeResult|null $LatestRestorableTime
+ * @property string|null $EngineVersion
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property bool|null $PubliclyAccessible
+ * @property list<DBInstanceStatusInfo>|null $StatusInfos
+ * @property string|null $DBClusterIdentifier
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $DbiResourceId
+ * @property string|null $CACertificateIdentifier
+ * @property bool|null $CopyTagsToSnapshot
+ * @property int|null $PromotionTier
+ * @property string|null $DBInstanceArn
+ * @property list<string>|null $EnabledCloudwatchLogsExports
+ * @property CertificateDetails|null $CertificateDetails
+ * @property bool|null $PerformanceInsightsEnabled
+ * @property string|null $PerformanceInsightsKMSKeyId
  */
 class DBInstance extends Shape
 {
     /**
      * @param array{
-     *     DBInstanceIdentifier?: string,
-     *     DBInstanceClass?: string,
-     *     Engine?: string,
-     *     DBInstanceStatus?: string,
-     *     Endpoint?: Endpoint,
-     *     InstanceCreateTime?: \Aws\Api\DateTimeResult,
-     *     PreferredBackupWindow?: string,
-     *     BackupRetentionPeriod?: int,
-     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>,
-     *     AvailabilityZone?: string,
-     *     DBSubnetGroup?: DBSubnetGroup,
-     *     PreferredMaintenanceWindow?: string,
-     *     PendingModifiedValues?: PendingModifiedValues,
-     *     LatestRestorableTime?: \Aws\Api\DateTimeResult,
-     *     EngineVersion?: string,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     PubliclyAccessible?: bool,
-     *     StatusInfos?: list<DBInstanceStatusInfo>,
-     *     DBClusterIdentifier?: string,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     DbiResourceId?: string,
-     *     CACertificateIdentifier?: string,
-     *     CopyTagsToSnapshot?: bool,
-     *     PromotionTier?: int,
-     *     DBInstanceArn?: string,
-     *     EnabledCloudwatchLogsExports?: list<string>,
-     *     CertificateDetails?: CertificateDetails,
-     *     PerformanceInsightsEnabled?: bool,
-     *     PerformanceInsightsKMSKeyId?: string
+     *     DBInstanceIdentifier?: string|null,
+     *     DBInstanceClass?: string|null,
+     *     Engine?: string|null,
+     *     DBInstanceStatus?: string|null,
+     *     Endpoint?: Endpoint|null,
+     *     InstanceCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     PreferredBackupWindow?: string|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>|null,
+     *     AvailabilityZone?: string|null,
+     *     DBSubnetGroup?: DBSubnetGroup|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     PendingModifiedValues?: PendingModifiedValues|null,
+     *     LatestRestorableTime?: \Aws\Api\DateTimeResult|null,
+     *     EngineVersion?: string|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     PubliclyAccessible?: bool|null,
+     *     StatusInfos?: list<DBInstanceStatusInfo>|null,
+     *     DBClusterIdentifier?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     DbiResourceId?: string|null,
+     *     CACertificateIdentifier?: string|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     PromotionTier?: int|null,
+     *     DBInstanceArn?: string|null,
+     *     EnabledCloudwatchLogsExports?: list<string>|null,
+     *     CertificateDetails?: CertificateDetails|null,
+     *     PerformanceInsightsEnabled?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GroupName
  * @property string $UserPoolId
- * @property string $Description
- * @property string $RoleArn
- * @property int<0, max> $Precedence
+ * @property string|null $Description
+ * @property string|null $RoleArn
+ * @property int<0, max>|null $Precedence
  */
 class CreateGroupRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateGroupRequest extends Request
      * @param array{
      *     GroupName: string,
      *     UserPoolId: string,
-     *     Description?: string,
-     *     RoleArn?: string,
-     *     Precedence?: int<0, max>
+     *     Description?: string|null,
+     *     RoleArn?: string|null,
+     *     Precedence?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

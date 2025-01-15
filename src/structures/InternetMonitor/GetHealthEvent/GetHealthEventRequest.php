@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $MonitorName
  * @property string $EventId
- * @property string $LinkedAccountId
+ * @property string|null $LinkedAccountId
  */
 class GetHealthEventRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetHealthEventRequest extends Request
      * @param array{
      *     MonitorName: string,
      *     EventId: string,
-     *     LinkedAccountId?: string
+     *     LinkedAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

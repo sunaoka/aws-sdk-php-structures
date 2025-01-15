@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\DescribeScalingPolicies\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricName
- * @property string $Namespace
- * @property list<MetricDimension> $Dimensions
- * @property 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum' $Statistic
- * @property string $Unit
- * @property list<TargetTrackingMetricDataQuery> $Metrics
+ * @property string|null $MetricName
+ * @property string|null $Namespace
+ * @property list<MetricDimension>|null $Dimensions
+ * @property 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum'|null $Statistic
+ * @property string|null $Unit
+ * @property list<TargetTrackingMetricDataQuery>|null $Metrics
  */
 class CustomizedMetricSpecification extends Shape
 {
     /**
      * @param array{
-     *     MetricName?: string,
-     *     Namespace?: string,
-     *     Dimensions?: list<MetricDimension>,
-     *     Statistic?: 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum',
-     *     Unit?: string,
-     *     Metrics?: list<TargetTrackingMetricDataQuery>
+     *     MetricName?: string|null,
+     *     Namespace?: string|null,
+     *     Dimensions?: list<MetricDimension>|null,
+     *     Statistic?: 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum'|null,
+     *     Unit?: string|null,
+     *     Metrics?: list<TargetTrackingMetricDataQuery>|null
      * } $args
      */
     public function __construct(array $args = [])

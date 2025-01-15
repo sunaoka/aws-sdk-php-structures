@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GatewayARN
  * @property string $DiskId
- * @property string $SnapshotId
+ * @property string|null $SnapshotId
  * @property bool $PreserveExistingData
  * @property string $TargetName
  * @property string $NetworkInterfaceId
- * @property bool $KMSEncrypted
- * @property string $KMSKey
- * @property list<Shapes\Tag> $Tags
+ * @property bool|null $KMSEncrypted
+ * @property string|null $KMSKey
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateStorediSCSIVolumeRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateStorediSCSIVolumeRequest extends Request
      * @param array{
      *     GatewayARN: string,
      *     DiskId: string,
-     *     SnapshotId?: string,
+     *     SnapshotId?: string|null,
      *     PreserveExistingData: bool,
      *     TargetName: string,
      *     NetworkInterfaceId: string,
-     *     KMSEncrypted?: bool,
-     *     KMSKey?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     KMSEncrypted?: bool|null,
+     *     KMSKey?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

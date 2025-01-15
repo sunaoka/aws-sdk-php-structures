@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetAggregateConformancePackCompli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $AwsRegion
+ * @property string|null $AccountId
+ * @property string|null $AwsRegion
  */
 class AggregateConformancePackComplianceSummaryFilters extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     AwsRegion?: string
+     *     AccountId?: string|null,
+     *     AwsRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

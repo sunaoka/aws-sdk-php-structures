@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\RejectVpcPeeringConnection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $VpcPeeringConnectionId
  */
 class RejectVpcPeeringConnectionRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     VpcPeeringConnectionId: string
      * } $args
      */

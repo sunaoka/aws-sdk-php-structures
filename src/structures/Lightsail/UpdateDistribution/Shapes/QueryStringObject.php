@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\UpdateDistribution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $option
- * @property list<string> $queryStringsAllowList
+ * @property bool|null $option
+ * @property list<string>|null $queryStringsAllowList
  */
 class QueryStringObject extends Shape
 {
     /**
      * @param array{
-     *     option?: bool,
-     *     queryStringsAllowList?: list<string>
+     *     option?: bool|null,
+     *     queryStringsAllowList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

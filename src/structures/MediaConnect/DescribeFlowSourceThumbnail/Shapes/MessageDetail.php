@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Code
  * @property string $Message
- * @property string $ResourceName
+ * @property string|null $ResourceName
  */
 class MessageDetail extends Shape
 {
@@ -15,7 +15,7 @@ class MessageDetail extends Shape
      * @param array{
      *     Code: string,
      *     Message: string,
-     *     ResourceName?: string
+     *     ResourceName?: string|null
      * } $args
      */
     public function __construct(array $args)

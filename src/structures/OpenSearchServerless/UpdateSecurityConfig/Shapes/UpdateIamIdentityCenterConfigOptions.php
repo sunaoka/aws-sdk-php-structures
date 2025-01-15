@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateSecurityConfig\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GroupId'|'GroupName' $groupAttribute
- * @property 'UserId'|'UserName'|'Email' $userAttribute
+ * @property 'GroupId'|'GroupName'|null $groupAttribute
+ * @property 'UserId'|'UserName'|'Email'|null $userAttribute
  */
 class UpdateIamIdentityCenterConfigOptions extends Shape
 {
     /**
      * @param array{
-     *     groupAttribute?: 'GroupId'|'GroupName',
-     *     userAttribute?: 'UserId'|'UserName'|'Email'
+     *     groupAttribute?: 'GroupId'|'GroupName'|null,
+     *     userAttribute?: 'UserId'|'UserName'|'Email'|null
      * } $args
      */
     public function __construct(array $args = [])

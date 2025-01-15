@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\DeleteCoreNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $SendVia
- * @property list<string> $SendTo
+ * @property list<string>|null $SendVia
+ * @property list<string>|null $SendTo
  */
 class ServiceInsertionSegments extends Shape
 {
     /**
      * @param array{
-     *     SendVia?: list<string>,
-     *     SendTo?: list<string>
+     *     SendVia?: list<string>|null,
+     *     SendTo?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ssm\GetInventorySchema;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TypeName
- * @property string $NextToken
- * @property int<50, 200> $MaxResults
- * @property bool $Aggregator
- * @property bool $SubType
+ * @property string|null $TypeName
+ * @property string|null $NextToken
+ * @property int<50, 200>|null $MaxResults
+ * @property bool|null $Aggregator
+ * @property bool|null $SubType
  */
 class GetInventorySchemaRequest extends Request
 {
     /**
      * @param array{
-     *     TypeName?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<50, 200>,
-     *     Aggregator?: bool,
-     *     SubType?: bool
+     *     TypeName?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<50, 200>|null,
+     *     Aggregator?: bool|null,
+     *     SubType?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FileSystemId
  * @property string $Policy
- * @property bool $BypassPolicyLockoutSafetyCheck
+ * @property bool|null $BypassPolicyLockoutSafetyCheck
  */
 class PutFileSystemPolicyRequest extends Request
 {
@@ -15,7 +15,7 @@ class PutFileSystemPolicyRequest extends Request
      * @param array{
      *     FileSystemId: string,
      *     Policy: string,
-     *     BypassPolicyLockoutSafetyCheck?: bool
+     *     BypassPolicyLockoutSafetyCheck?: bool|null
      * } $args
      */
     public function __construct(array $args)

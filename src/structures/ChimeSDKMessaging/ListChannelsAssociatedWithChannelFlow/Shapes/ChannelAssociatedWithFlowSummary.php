@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ListChannelsAssociatedWithCha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $ChannelArn
- * @property 'UNRESTRICTED'|'RESTRICTED' $Mode
- * @property 'PUBLIC'|'PRIVATE' $Privacy
- * @property string $Metadata
+ * @property string|null $Name
+ * @property string|null $ChannelArn
+ * @property 'UNRESTRICTED'|'RESTRICTED'|null $Mode
+ * @property 'PUBLIC'|'PRIVATE'|null $Privacy
+ * @property string|null $Metadata
  */
 class ChannelAssociatedWithFlowSummary extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     ChannelArn?: string,
-     *     Mode?: 'UNRESTRICTED'|'RESTRICTED',
-     *     Privacy?: 'PUBLIC'|'PRIVATE',
-     *     Metadata?: string
+     *     Name?: string|null,
+     *     ChannelArn?: string|null,
+     *     Mode?: 'UNRESTRICTED'|'RESTRICTED'|null,
+     *     Privacy?: 'PUBLIC'|'PRIVATE'|null,
+     *     Metadata?: string|null
      * } $args
      */
     public function __construct(array $args = [])

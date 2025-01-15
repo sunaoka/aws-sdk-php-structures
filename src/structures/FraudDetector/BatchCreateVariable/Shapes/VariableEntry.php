@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\FraudDetector\BatchCreateVariable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $dataType
- * @property string $dataSource
- * @property string $defaultValue
- * @property string $description
- * @property string $variableType
+ * @property string|null $name
+ * @property string|null $dataType
+ * @property string|null $dataSource
+ * @property string|null $defaultValue
+ * @property string|null $description
+ * @property string|null $variableType
  */
 class VariableEntry extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     dataType?: string,
-     *     dataSource?: string,
-     *     defaultValue?: string,
-     *     description?: string,
-     *     variableType?: string
+     *     name?: string|null,
+     *     dataType?: string|null,
+     *     dataSource?: string|null,
+     *     defaultValue?: string|null,
+     *     description?: string|null,
+     *     variableType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

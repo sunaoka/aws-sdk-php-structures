@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplayName
- * @property string $Description
+ * @property string|null $Description
  * @property string $EventSourceArn
  * @property \Aws\Api\DateTimeResult $EventStartTime
  * @property \Aws\Api\DateTimeResult $EventEndTime
@@ -17,7 +17,7 @@ class StartReplayRequest extends Request
     /**
      * @param array{
      *     ReplayName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     EventSourceArn: string,
      *     EventStartTime: \Aws\Api\DateTimeResult,
      *     EventEndTime: \Aws\Api\DateTimeResult,

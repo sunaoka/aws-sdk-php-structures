@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetStoredQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QueryId
- * @property string $QueryArn
+ * @property string|null $QueryId
+ * @property string|null $QueryArn
  * @property string $QueryName
- * @property string $Description
- * @property string $Expression
+ * @property string|null $Description
+ * @property string|null $Expression
  */
 class StoredQuery extends Shape
 {
     /**
      * @param array{
-     *     QueryId?: string,
-     *     QueryArn?: string,
+     *     QueryId?: string|null,
+     *     QueryArn?: string|null,
      *     QueryName: string,
-     *     Description?: string,
-     *     Expression?: string
+     *     Description?: string|null,
+     *     Expression?: string|null
      * } $args
      */
     public function __construct(array $args)

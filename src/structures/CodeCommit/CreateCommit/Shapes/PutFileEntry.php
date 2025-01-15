@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $filePath
- * @property 'EXECUTABLE'|'NORMAL'|'SYMLINK' $fileMode
- * @property string|resource|\Psr\Http\Message\StreamInterface $fileContent
- * @property SourceFileSpecifier $sourceFile
+ * @property 'EXECUTABLE'|'NORMAL'|'SYMLINK'|null $fileMode
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $fileContent
+ * @property SourceFileSpecifier|null $sourceFile
  */
 class PutFileEntry extends Shape
 {
     /**
      * @param array{
      *     filePath: string,
-     *     fileMode?: 'EXECUTABLE'|'NORMAL'|'SYMLINK',
-     *     fileContent?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     sourceFile?: SourceFileSpecifier
+     *     fileMode?: 'EXECUTABLE'|'NORMAL'|'SYMLINK'|null,
+     *     fileContent?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     sourceFile?: SourceFileSpecifier|null
      * } $args
      */
     public function __construct(array $args)

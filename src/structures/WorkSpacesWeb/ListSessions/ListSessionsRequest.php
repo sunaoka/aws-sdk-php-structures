@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListSessions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, max> $maxResults
- * @property string $nextToken
+ * @property int<1, max>|null $maxResults
+ * @property string|null $nextToken
  * @property string $portalId
- * @property string $sessionId
- * @property 'StartTimeAscending'|'StartTimeDescending' $sortBy
- * @property 'Active'|'Terminated' $status
- * @property string $username
+ * @property string|null $sessionId
+ * @property 'StartTimeAscending'|'StartTimeDescending'|null $sortBy
+ * @property 'Active'|'Terminated'|null $status
+ * @property string|null $username
  */
 class ListSessionsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<1, max>,
-     *     nextToken?: string,
+     *     maxResults?: int<1, max>|null,
+     *     nextToken?: string|null,
      *     portalId: string,
-     *     sessionId?: string,
-     *     sortBy?: 'StartTimeAscending'|'StartTimeDescending',
-     *     status?: 'Active'|'Terminated',
-     *     username?: string
+     *     sessionId?: string|null,
+     *     sortBy?: 'StartTimeAscending'|'StartTimeDescending'|null,
+     *     status?: 'Active'|'Terminated'|null,
+     *     username?: string|null
      * } $args
      */
     public function __construct(array $args)

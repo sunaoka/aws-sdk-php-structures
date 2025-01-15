@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $projectArn
  * @property string $deviceArn
- * @property string $instanceArn
- * @property string $sshPublicKey
- * @property bool $remoteDebugEnabled
- * @property bool $remoteRecordEnabled
- * @property string $remoteRecordAppArn
- * @property string $name
- * @property string $clientId
- * @property Shapes\CreateRemoteAccessSessionConfiguration $configuration
- * @property 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY' $interactionMode
- * @property bool $skipAppResign
+ * @property string|null $instanceArn
+ * @property string|null $sshPublicKey
+ * @property bool|null $remoteDebugEnabled
+ * @property bool|null $remoteRecordEnabled
+ * @property string|null $remoteRecordAppArn
+ * @property string|null $name
+ * @property string|null $clientId
+ * @property Shapes\CreateRemoteAccessSessionConfiguration|null $configuration
+ * @property 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY'|null $interactionMode
+ * @property bool|null $skipAppResign
  */
 class CreateRemoteAccessSessionRequest extends Request
 {
@@ -24,16 +24,16 @@ class CreateRemoteAccessSessionRequest extends Request
      * @param array{
      *     projectArn: string,
      *     deviceArn: string,
-     *     instanceArn?: string,
-     *     sshPublicKey?: string,
-     *     remoteDebugEnabled?: bool,
-     *     remoteRecordEnabled?: bool,
-     *     remoteRecordAppArn?: string,
-     *     name?: string,
-     *     clientId?: string,
-     *     configuration?: Shapes\CreateRemoteAccessSessionConfiguration,
-     *     interactionMode?: 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY',
-     *     skipAppResign?: bool
+     *     instanceArn?: string|null,
+     *     sshPublicKey?: string|null,
+     *     remoteDebugEnabled?: bool|null,
+     *     remoteRecordEnabled?: bool|null,
+     *     remoteRecordAppArn?: string|null,
+     *     name?: string|null,
+     *     clientId?: string|null,
+     *     configuration?: Shapes\CreateRemoteAccessSessionConfiguration|null,
+     *     interactionMode?: 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY'|null,
+     *     skipAppResign?: bool|null
      * } $args
      */
     public function __construct(array $args)

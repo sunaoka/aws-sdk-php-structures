@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaConnect\DeregisterGatewayInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $Force
+ * @property bool|null $Force
  * @property string $GatewayInstanceArn
  */
 class DeregisterGatewayInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     Force?: bool,
+     *     Force?: bool|null,
      *     GatewayInstanceArn: string
      * } $args
      */

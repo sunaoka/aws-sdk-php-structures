@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MQ\DescribeBroker\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATE'|'UPDATE'|'DELETE' $PendingChange
+ * @property 'CREATE'|'UPDATE'|'DELETE'|null $PendingChange
  * @property string $Username
  */
 class UserSummary extends Shape
 {
     /**
      * @param array{
-     *     PendingChange?: 'CREATE'|'UPDATE'|'DELETE',
+     *     PendingChange?: 'CREATE'|'UPDATE'|'DELETE'|null,
      *     Username: string
      * } $args
      */

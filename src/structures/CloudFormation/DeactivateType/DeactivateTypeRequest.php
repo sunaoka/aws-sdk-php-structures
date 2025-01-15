@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DeactivateType;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TypeName
- * @property 'RESOURCE'|'MODULE'|'HOOK' $Type
- * @property string $Arn
+ * @property string|null $TypeName
+ * @property 'RESOURCE'|'MODULE'|'HOOK'|null $Type
+ * @property string|null $Arn
  */
 class DeactivateTypeRequest extends Request
 {
     /**
      * @param array{
-     *     TypeName?: string,
-     *     Type?: 'RESOURCE'|'MODULE'|'HOOK',
-     *     Arn?: string
+     *     TypeName?: string|null,
+     *     Type?: 'RESOURCE'|'MODULE'|'HOOK'|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

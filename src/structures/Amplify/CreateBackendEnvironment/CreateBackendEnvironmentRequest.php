@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appId
  * @property string $environmentName
- * @property string $stackName
- * @property string $deploymentArtifacts
+ * @property string|null $stackName
+ * @property string|null $deploymentArtifacts
  */
 class CreateBackendEnvironmentRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateBackendEnvironmentRequest extends Request
      * @param array{
      *     appId: string,
      *     environmentName: string,
-     *     stackName?: string,
-     *     deploymentArtifacts?: string
+     *     stackName?: string|null,
+     *     deploymentArtifacts?: string|null
      * } $args
      */
     public function __construct(array $args)

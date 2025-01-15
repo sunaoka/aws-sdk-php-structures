@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StartImportTask;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientRequestToken
+ * @property string|null $clientRequestToken
  * @property string $name
  * @property string $importUrl
  */
@@ -13,7 +13,7 @@ class StartImportTaskRequest extends Request
 {
     /**
      * @param array{
-     *     clientRequestToken?: string,
+     *     clientRequestToken?: string|null,
      *     name: string,
      *     importUrl: string
      * } $args

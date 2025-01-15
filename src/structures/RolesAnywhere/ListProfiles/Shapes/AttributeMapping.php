@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\ListProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'x509Subject'|'x509Issuer'|'x509SAN' $certificateField
- * @property list<MappingRule> $mappingRules
+ * @property 'x509Subject'|'x509Issuer'|'x509SAN'|null $certificateField
+ * @property list<MappingRule>|null $mappingRules
  */
 class AttributeMapping extends Shape
 {
     /**
      * @param array{
-     *     certificateField?: 'x509Subject'|'x509Issuer'|'x509SAN',
-     *     mappingRules?: list<MappingRule>
+     *     certificateField?: 'x509Subject'|'x509Issuer'|'x509SAN'|null,
+     *     mappingRules?: list<MappingRule>|null
      * } $args
      */
     public function __construct(array $args = [])

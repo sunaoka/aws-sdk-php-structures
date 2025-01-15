@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Invoicing\UpdateInvoiceUnit;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $InvoiceUnitArn
+ * @property string|null $InvoiceUnitArn
  */
 class UpdateInvoiceUnitResponse extends Response
 {

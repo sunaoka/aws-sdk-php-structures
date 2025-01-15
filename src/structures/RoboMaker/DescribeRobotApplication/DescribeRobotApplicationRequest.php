@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $application
- * @property string $applicationVersion
+ * @property string|null $applicationVersion
  */
 class DescribeRobotApplicationRequest extends Request
 {
     /**
      * @param array{
      *     application: string,
-     *     applicationVersion?: string
+     *     applicationVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

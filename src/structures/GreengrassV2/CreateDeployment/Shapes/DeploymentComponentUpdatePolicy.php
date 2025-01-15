@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\CreateDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $timeoutInSeconds
- * @property 'NOTIFY_COMPONENTS'|'SKIP_NOTIFY_COMPONENTS' $action
+ * @property int|null $timeoutInSeconds
+ * @property 'NOTIFY_COMPONENTS'|'SKIP_NOTIFY_COMPONENTS'|null $action
  */
 class DeploymentComponentUpdatePolicy extends Shape
 {
     /**
      * @param array{
-     *     timeoutInSeconds?: int,
-     *     action?: 'NOTIFY_COMPONENTS'|'SKIP_NOTIFY_COMPONENTS'
+     *     timeoutInSeconds?: int|null,
+     *     action?: 'NOTIFY_COMPONENTS'|'SKIP_NOTIFY_COMPONENTS'|null
      * } $args
      */
     public function __construct(array $args = [])

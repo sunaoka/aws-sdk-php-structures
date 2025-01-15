@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
+ * @property string|null $name
  */
 class PromptInputVariable extends Shape
 {
     /**
-     * @param array{name?: string} $args
+     * @param array{name?: string|null} $args
      */
     public function __construct(array $args = [])
     {

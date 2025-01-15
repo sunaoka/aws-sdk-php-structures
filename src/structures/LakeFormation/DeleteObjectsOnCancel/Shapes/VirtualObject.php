@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Uri
- * @property string $ETag
+ * @property string|null $ETag
  */
 class VirtualObject extends Shape
 {
     /**
      * @param array{
      *     Uri: string,
-     *     ETag?: string
+     *     ETag?: string|null
      * } $args
      */
     public function __construct(array $args)

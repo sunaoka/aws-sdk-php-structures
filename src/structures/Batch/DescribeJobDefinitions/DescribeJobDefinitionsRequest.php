@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobDefinitions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $jobDefinitions
- * @property int $maxResults
- * @property string $jobDefinitionName
- * @property string $status
- * @property string $nextToken
+ * @property list<string>|null $jobDefinitions
+ * @property int|null $maxResults
+ * @property string|null $jobDefinitionName
+ * @property string|null $status
+ * @property string|null $nextToken
  */
 class DescribeJobDefinitionsRequest extends Request
 {
     /**
      * @param array{
-     *     jobDefinitions?: list<string>,
-     *     maxResults?: int,
-     *     jobDefinitionName?: string,
-     *     status?: string,
-     *     nextToken?: string
+     *     jobDefinitions?: list<string>|null,
+     *     maxResults?: int|null,
+     *     jobDefinitionName?: string|null,
+     *     status?: string|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

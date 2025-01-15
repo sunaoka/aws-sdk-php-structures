@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceProfileDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VoiceProfileDomainId
- * @property string $VoiceProfileDomainArn
- * @property string $Name
- * @property string $Description
- * @property ServerSideEncryptionConfiguration $ServerSideEncryptionConfiguration
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $VoiceProfileDomainId
+ * @property string|null $VoiceProfileDomainArn
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property ServerSideEncryptionConfiguration|null $ServerSideEncryptionConfiguration
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class VoiceProfileDomain extends Shape
 {
     /**
      * @param array{
-     *     VoiceProfileDomainId?: string,
-     *     VoiceProfileDomainArn?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     ServerSideEncryptionConfiguration?: ServerSideEncryptionConfiguration,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     VoiceProfileDomainId?: string|null,
+     *     VoiceProfileDomainArn?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     ServerSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

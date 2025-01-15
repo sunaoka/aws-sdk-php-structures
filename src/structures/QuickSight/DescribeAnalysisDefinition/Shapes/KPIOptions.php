@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProgressBarOptions $ProgressBar
- * @property TrendArrowOptions $TrendArrows
- * @property SecondaryValueOptions $SecondaryValue
- * @property ComparisonConfiguration $Comparison
- * @property 'HIDDEN'|'COMPARISON'|'ACTUAL' $PrimaryValueDisplayType
- * @property FontConfiguration $PrimaryValueFontConfiguration
- * @property FontConfiguration $SecondaryValueFontConfiguration
- * @property KPISparklineOptions $Sparkline
- * @property KPIVisualLayoutOptions $VisualLayoutOptions
+ * @property ProgressBarOptions|null $ProgressBar
+ * @property TrendArrowOptions|null $TrendArrows
+ * @property SecondaryValueOptions|null $SecondaryValue
+ * @property ComparisonConfiguration|null $Comparison
+ * @property 'HIDDEN'|'COMPARISON'|'ACTUAL'|null $PrimaryValueDisplayType
+ * @property FontConfiguration|null $PrimaryValueFontConfiguration
+ * @property FontConfiguration|null $SecondaryValueFontConfiguration
+ * @property KPISparklineOptions|null $Sparkline
+ * @property KPIVisualLayoutOptions|null $VisualLayoutOptions
  */
 class KPIOptions extends Shape
 {
     /**
      * @param array{
-     *     ProgressBar?: ProgressBarOptions,
-     *     TrendArrows?: TrendArrowOptions,
-     *     SecondaryValue?: SecondaryValueOptions,
-     *     Comparison?: ComparisonConfiguration,
-     *     PrimaryValueDisplayType?: 'HIDDEN'|'COMPARISON'|'ACTUAL',
-     *     PrimaryValueFontConfiguration?: FontConfiguration,
-     *     SecondaryValueFontConfiguration?: FontConfiguration,
-     *     Sparkline?: KPISparklineOptions,
-     *     VisualLayoutOptions?: KPIVisualLayoutOptions
+     *     ProgressBar?: ProgressBarOptions|null,
+     *     TrendArrows?: TrendArrowOptions|null,
+     *     SecondaryValue?: SecondaryValueOptions|null,
+     *     Comparison?: ComparisonConfiguration|null,
+     *     PrimaryValueDisplayType?: 'HIDDEN'|'COMPARISON'|'ACTUAL'|null,
+     *     PrimaryValueFontConfiguration?: FontConfiguration|null,
+     *     SecondaryValueFontConfiguration?: FontConfiguration|null,
+     *     Sparkline?: KPISparklineOptions|null,
+     *     VisualLayoutOptions?: KPIVisualLayoutOptions|null
      * } $args
      */
     public function __construct(array $args = [])

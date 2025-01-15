@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<Shapes\ServiceVersion> $ServiceVersions
  * @property 'KUBERNETES'|'EKS_ANYWHERE' $ServiceName
- * @property list<Shapes\DependentService> $DependentServices
- * @property string $NextToken
+ * @property list<Shapes\DependentService>|null $DependentServices
+ * @property string|null $NextToken
  */
 class ListServiceVersionsResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateContinuousBackups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $PointInTimeRecoveryStatus
- * @property int<1, 35> $RecoveryPeriodInDays
- * @property \Aws\Api\DateTimeResult $EarliestRestorableDateTime
- * @property \Aws\Api\DateTimeResult $LatestRestorableDateTime
+ * @property 'ENABLED'|'DISABLED'|null $PointInTimeRecoveryStatus
+ * @property int<1, 35>|null $RecoveryPeriodInDays
+ * @property \Aws\Api\DateTimeResult|null $EarliestRestorableDateTime
+ * @property \Aws\Api\DateTimeResult|null $LatestRestorableDateTime
  */
 class PointInTimeRecoveryDescription extends Shape
 {
     /**
      * @param array{
-     *     PointInTimeRecoveryStatus?: 'ENABLED'|'DISABLED',
-     *     RecoveryPeriodInDays?: int<1, 35>,
-     *     EarliestRestorableDateTime?: \Aws\Api\DateTimeResult,
-     *     LatestRestorableDateTime?: \Aws\Api\DateTimeResult
+     *     PointInTimeRecoveryStatus?: 'ENABLED'|'DISABLED'|null,
+     *     RecoveryPeriodInDays?: int<1, 35>|null,
+     *     EarliestRestorableDateTime?: \Aws\Api\DateTimeResult|null,
+     *     LatestRestorableDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

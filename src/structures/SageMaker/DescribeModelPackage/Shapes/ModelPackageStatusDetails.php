@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<ModelPackageStatusItem> $ValidationStatuses
- * @property list<ModelPackageStatusItem> $ImageScanStatuses
+ * @property list<ModelPackageStatusItem>|null $ImageScanStatuses
  */
 class ModelPackageStatusDetails extends Shape
 {
     /**
      * @param array{
      *     ValidationStatuses: list<ModelPackageStatusItem>,
-     *     ImageScanStatuses?: list<ModelPackageStatusItem>
+     *     ImageScanStatuses?: list<ModelPackageStatusItem>|null
      * } $args
      */
     public function __construct(array $args)

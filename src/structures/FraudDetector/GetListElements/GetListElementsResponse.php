@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetListElements;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $elements
- * @property string $nextToken
+ * @property list<string>|null $elements
+ * @property string|null $nextToken
  */
 class GetListElementsResponse extends Response
 {

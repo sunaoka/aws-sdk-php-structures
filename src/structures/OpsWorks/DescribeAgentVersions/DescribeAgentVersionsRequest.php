@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeAgentVersions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StackId
- * @property Shapes\StackConfigurationManager $ConfigurationManager
+ * @property string|null $StackId
+ * @property Shapes\StackConfigurationManager|null $ConfigurationManager
  */
 class DescribeAgentVersionsRequest extends Request
 {
     /**
      * @param array{
-     *     StackId?: string,
-     *     ConfigurationManager?: Shapes\StackConfigurationManager
+     *     StackId?: string|null,
+     *     ConfigurationManager?: Shapes\StackConfigurationManager|null
      * } $args
      */
     public function __construct(array $args = [])

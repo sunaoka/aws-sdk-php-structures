@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TransitGatewayRouteTableId
  * @property string $PrefixListId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteTransitGatewayPrefixListReferenceRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteTransitGatewayPrefixListReferenceRequest extends Request
      * @param array{
      *     TransitGatewayRouteTableId: string,
      *     PrefixListId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

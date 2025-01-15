@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\WorkMail\GetImpersonationRole;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ImpersonationRoleId
- * @property string $Name
- * @property 'FULL_ACCESS'|'READ_ONLY' $Type
- * @property string $Description
- * @property list<Shapes\ImpersonationRule> $Rules
- * @property \Aws\Api\DateTimeResult $DateCreated
- * @property \Aws\Api\DateTimeResult $DateModified
+ * @property string|null $ImpersonationRoleId
+ * @property string|null $Name
+ * @property 'FULL_ACCESS'|'READ_ONLY'|null $Type
+ * @property string|null $Description
+ * @property list<Shapes\ImpersonationRule>|null $Rules
+ * @property \Aws\Api\DateTimeResult|null $DateCreated
+ * @property \Aws\Api\DateTimeResult|null $DateModified
  */
 class GetImpersonationRoleResponse extends Response
 {

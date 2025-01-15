@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateJourneyState\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INCLUSIVE'|'EXCLUSIVE'|'CONTAINS'|'BEFORE'|'AFTER'|'BETWEEN'|'ON' $AttributeType
+ * @property 'INCLUSIVE'|'EXCLUSIVE'|'CONTAINS'|'BEFORE'|'AFTER'|'BETWEEN'|'ON'|null $AttributeType
  * @property list<string> $Values
  */
 class AttributeDimension extends Shape
 {
     /**
      * @param array{
-     *     AttributeType?: 'INCLUSIVE'|'EXCLUSIVE'|'CONTAINS'|'BEFORE'|'AFTER'|'BETWEEN'|'ON',
+     *     AttributeType?: 'INCLUSIVE'|'EXCLUSIVE'|'CONTAINS'|'BEFORE'|'AFTER'|'BETWEEN'|'ON'|null,
      *     Values: list<string>
      * } $args
      */

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\RAM\ListResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $type
- * @property string $resourceShareArn
- * @property string $resourceGroupArn
- * @property 'AVAILABLE'|'ZONAL_RESOURCE_INACCESSIBLE'|'LIMIT_EXCEEDED'|'UNAVAILABLE'|'PENDING' $status
- * @property string $statusMessage
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property 'REGIONAL'|'GLOBAL' $resourceRegionScope
+ * @property string|null $arn
+ * @property string|null $type
+ * @property string|null $resourceShareArn
+ * @property string|null $resourceGroupArn
+ * @property 'AVAILABLE'|'ZONAL_RESOURCE_INACCESSIBLE'|'LIMIT_EXCEEDED'|'UNAVAILABLE'|'PENDING'|null $status
+ * @property string|null $statusMessage
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property 'REGIONAL'|'GLOBAL'|null $resourceRegionScope
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     type?: string,
-     *     resourceShareArn?: string,
-     *     resourceGroupArn?: string,
-     *     status?: 'AVAILABLE'|'ZONAL_RESOURCE_INACCESSIBLE'|'LIMIT_EXCEEDED'|'UNAVAILABLE'|'PENDING',
-     *     statusMessage?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     resourceRegionScope?: 'REGIONAL'|'GLOBAL'
+     *     arn?: string|null,
+     *     type?: string|null,
+     *     resourceShareArn?: string|null,
+     *     resourceGroupArn?: string|null,
+     *     status?: 'AVAILABLE'|'ZONAL_RESOURCE_INACCESSIBLE'|'LIMIT_EXCEEDED'|'UNAVAILABLE'|'PENDING'|null,
+     *     statusMessage?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     resourceRegionScope?: 'REGIONAL'|'GLOBAL'|null
      * } $args
      */
     public function __construct(array $args = [])

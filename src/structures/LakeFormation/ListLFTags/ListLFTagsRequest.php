@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\ListLFTags;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
- * @property 'FOREIGN'|'ALL' $ResourceShareType
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property string|null $CatalogId
+ * @property 'FOREIGN'|'ALL'|null $ResourceShareType
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListLFTagsRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
-     *     ResourceShareType?: 'FOREIGN'|'ALL',
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     CatalogId?: string|null,
+     *     ResourceShareType?: 'FOREIGN'|'ALL'|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

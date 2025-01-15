@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualGatewayBackendDefaults $backendDefaults
+ * @property VirtualGatewayBackendDefaults|null $backendDefaults
  * @property list<VirtualGatewayListener> $listeners
- * @property VirtualGatewayLogging $logging
+ * @property VirtualGatewayLogging|null $logging
  */
 class VirtualGatewaySpec extends Shape
 {
     /**
      * @param array{
-     *     backendDefaults?: VirtualGatewayBackendDefaults,
+     *     backendDefaults?: VirtualGatewayBackendDefaults|null,
      *     listeners: list<VirtualGatewayListener>,
-     *     logging?: VirtualGatewayLogging
+     *     logging?: VirtualGatewayLogging|null
      * } $args
      */
     public function __construct(array $args)

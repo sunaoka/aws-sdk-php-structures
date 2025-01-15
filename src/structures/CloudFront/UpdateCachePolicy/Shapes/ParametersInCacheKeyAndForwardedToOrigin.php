@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $EnableAcceptEncodingGzip
- * @property bool $EnableAcceptEncodingBrotli
+ * @property bool|null $EnableAcceptEncodingBrotli
  * @property CachePolicyHeadersConfig $HeadersConfig
  * @property CachePolicyCookiesConfig $CookiesConfig
  * @property CachePolicyQueryStringsConfig $QueryStringsConfig
@@ -16,7 +16,7 @@ class ParametersInCacheKeyAndForwardedToOrigin extends Shape
     /**
      * @param array{
      *     EnableAcceptEncodingGzip: bool,
-     *     EnableAcceptEncodingBrotli?: bool,
+     *     EnableAcceptEncodingBrotli?: bool|null,
      *     HeadersConfig: CachePolicyHeadersConfig,
      *     CookiesConfig: CachePolicyCookiesConfig,
      *     QueryStringsConfig: CachePolicyQueryStringsConfig

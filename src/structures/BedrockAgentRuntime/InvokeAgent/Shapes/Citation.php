@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeneratedResponsePart $generatedResponsePart
- * @property list<RetrievedReference> $retrievedReferences
+ * @property GeneratedResponsePart|null $generatedResponsePart
+ * @property list<RetrievedReference>|null $retrievedReferences
  */
 class Citation extends Shape
 {
     /**
      * @param array{
-     *     generatedResponsePart?: GeneratedResponsePart,
-     *     retrievedReferences?: list<RetrievedReference>
+     *     generatedResponsePart?: GeneratedResponsePart|null,
+     *     retrievedReferences?: list<RetrievedReference>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeLayers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Setup
- * @property list<string> $Configure
- * @property list<string> $Deploy
- * @property list<string> $Undeploy
- * @property list<string> $Shutdown
+ * @property list<string>|null $Setup
+ * @property list<string>|null $Configure
+ * @property list<string>|null $Deploy
+ * @property list<string>|null $Undeploy
+ * @property list<string>|null $Shutdown
  */
 class Recipes extends Shape
 {
     /**
      * @param array{
-     *     Setup?: list<string>,
-     *     Configure?: list<string>,
-     *     Deploy?: list<string>,
-     *     Undeploy?: list<string>,
-     *     Shutdown?: list<string>
+     *     Setup?: list<string>|null,
+     *     Configure?: list<string>|null,
+     *     Deploy?: list<string>|null,
+     *     Undeploy?: list<string>|null,
+     *     Shutdown?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

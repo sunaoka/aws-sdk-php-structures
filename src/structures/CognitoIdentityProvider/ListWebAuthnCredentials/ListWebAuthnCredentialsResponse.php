@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\WebAuthnCredentialDescription> $Credentials
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListWebAuthnCredentialsResponse extends Response
 {

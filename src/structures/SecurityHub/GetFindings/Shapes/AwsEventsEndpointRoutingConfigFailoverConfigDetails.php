@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsEventsEndpointRoutingConfigFailoverConfigPrimaryDetails $Primary
- * @property AwsEventsEndpointRoutingConfigFailoverConfigSecondaryDetails $Secondary
+ * @property AwsEventsEndpointRoutingConfigFailoverConfigPrimaryDetails|null $Primary
+ * @property AwsEventsEndpointRoutingConfigFailoverConfigSecondaryDetails|null $Secondary
  */
 class AwsEventsEndpointRoutingConfigFailoverConfigDetails extends Shape
 {
     /**
      * @param array{
-     *     Primary?: AwsEventsEndpointRoutingConfigFailoverConfigPrimaryDetails,
-     *     Secondary?: AwsEventsEndpointRoutingConfigFailoverConfigSecondaryDetails
+     *     Primary?: AwsEventsEndpointRoutingConfigFailoverConfigPrimaryDetails|null,
+     *     Secondary?: AwsEventsEndpointRoutingConfigFailoverConfigSecondaryDetails|null
      * } $args
      */
     public function __construct(array $args = [])

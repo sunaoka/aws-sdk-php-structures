@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $RoomId
- * @property string $Name
+ * @property string|null $Name
  */
 class UpdateRoomRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateRoomRequest extends Request
      * @param array{
      *     AccountId: string,
      *     RoomId: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

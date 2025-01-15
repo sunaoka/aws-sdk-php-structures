@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int<0, max> $DataRetentionInHours
  * @property bool $Disabled
- * @property list<StreamingNotificationTarget> $StreamingNotificationTargets
- * @property MediaInsightsConfiguration $MediaInsightsConfiguration
+ * @property list<StreamingNotificationTarget>|null $StreamingNotificationTargets
+ * @property MediaInsightsConfiguration|null $MediaInsightsConfiguration
  */
 class StreamingConfiguration extends Shape
 {
@@ -16,8 +16,8 @@ class StreamingConfiguration extends Shape
      * @param array{
      *     DataRetentionInHours: int<0, max>,
      *     Disabled: bool,
-     *     StreamingNotificationTargets?: list<StreamingNotificationTarget>,
-     *     MediaInsightsConfiguration?: MediaInsightsConfiguration
+     *     StreamingNotificationTargets?: list<StreamingNotificationTarget>|null,
+     *     MediaInsightsConfiguration?: MediaInsightsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

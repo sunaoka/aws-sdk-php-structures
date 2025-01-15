@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GrantArn
- * @property string $StatusReason
+ * @property string|null $StatusReason
  * @property string $Version
  */
 class DeleteGrantRequest extends Request
@@ -14,7 +14,7 @@ class DeleteGrantRequest extends Request
     /**
      * @param array{
      *     GrantArn: string,
-     *     StatusReason?: string,
+     *     StatusReason?: string|null,
      *     Version: string
      * } $args
      */

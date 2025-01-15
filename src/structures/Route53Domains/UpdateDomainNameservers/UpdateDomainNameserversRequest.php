@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $FIAuthKey
+ * @property string|null $FIAuthKey
  * @property list<Shapes\Nameserver> $Nameservers
  */
 class UpdateDomainNameserversRequest extends Request
@@ -14,7 +14,7 @@ class UpdateDomainNameserversRequest extends Request
     /**
      * @param array{
      *     DomainName: string,
-     *     FIAuthKey?: string,
+     *     FIAuthKey?: string|null,
      *     Nameservers: list<Shapes\Nameserver>
      * } $args
      */

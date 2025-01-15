@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreatePartnerInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FlowArn
+ * @property string|null $FlowArn
  */
 class MediaConnectFlow extends Shape
 {
     /**
-     * @param array{FlowArn?: string} $args
+     * @param array{FlowArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

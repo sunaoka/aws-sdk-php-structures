@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\StartDataQualityRulesetEvaluationRun\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $CloudWatchMetricsEnabled
- * @property string $ResultsS3Prefix
- * @property 'COLUMN'|'ROW' $CompositeRuleEvaluationMethod
+ * @property bool|null $CloudWatchMetricsEnabled
+ * @property string|null $ResultsS3Prefix
+ * @property 'COLUMN'|'ROW'|null $CompositeRuleEvaluationMethod
  */
 class DataQualityEvaluationRunAdditionalRunOptions extends Shape
 {
     /**
      * @param array{
-     *     CloudWatchMetricsEnabled?: bool,
-     *     ResultsS3Prefix?: string,
-     *     CompositeRuleEvaluationMethod?: 'COLUMN'|'ROW'
+     *     CloudWatchMetricsEnabled?: bool|null,
+     *     ResultsS3Prefix?: string|null,
+     *     CompositeRuleEvaluationMethod?: 'COLUMN'|'ROW'|null
      * } $args
      */
     public function __construct(array $args = [])

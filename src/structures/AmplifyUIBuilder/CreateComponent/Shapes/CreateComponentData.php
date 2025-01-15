@@ -6,34 +6,34 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $sourceId
+ * @property string|null $sourceId
  * @property string $componentType
  * @property array<string, ComponentProperty> $properties
- * @property list<ComponentChild> $children
+ * @property list<ComponentChild>|null $children
  * @property list<ComponentVariant> $variants
  * @property array<string, array<string, string>> $overrides
  * @property array<string, ComponentBindingPropertiesValue> $bindingProperties
- * @property array<string, ComponentDataConfiguration> $collectionProperties
- * @property array<string, string> $tags
- * @property array<string, ComponentEvent> $events
- * @property string $schemaVersion
+ * @property array<string, ComponentDataConfiguration>|null $collectionProperties
+ * @property array<string, string>|null $tags
+ * @property array<string, ComponentEvent>|null $events
+ * @property string|null $schemaVersion
  */
 class CreateComponentData extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     sourceId?: string,
+     *     sourceId?: string|null,
      *     componentType: string,
      *     properties: array<string, ComponentProperty>,
-     *     children?: list<ComponentChild>,
+     *     children?: list<ComponentChild>|null,
      *     variants: list<ComponentVariant>,
      *     overrides: array<string, array<string, string>>,
      *     bindingProperties: array<string, ComponentBindingPropertiesValue>,
-     *     collectionProperties?: array<string, ComponentDataConfiguration>,
-     *     tags?: array<string, string>,
-     *     events?: array<string, ComponentEvent>,
-     *     schemaVersion?: string
+     *     collectionProperties?: array<string, ComponentDataConfiguration>|null,
+     *     tags?: array<string, string>|null,
+     *     events?: array<string, ComponentEvent>|null,
+     *     schemaVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuleId
+ * @property string|null $RuleId
  */
 class WafExcludedRule extends Shape
 {
     /**
-     * @param array{RuleId?: string} $args
+     * @param array{RuleId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

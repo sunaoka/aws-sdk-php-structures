@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CleanRooms\GetConfiguredTableAnalysisRule\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AnalysisRuleList $list
- * @property AnalysisRuleAggregation $aggregation
- * @property AnalysisRuleCustom $custom
+ * @property AnalysisRuleList|null $list
+ * @property AnalysisRuleAggregation|null $aggregation
+ * @property AnalysisRuleCustom|null $custom
  */
 class ConfiguredTableAnalysisRulePolicyV1 extends Shape
 {
     /**
      * @param array{
-     *     list?: AnalysisRuleList,
-     *     aggregation?: AnalysisRuleAggregation,
-     *     custom?: AnalysisRuleCustom
+     *     list?: AnalysisRuleList|null,
+     *     aggregation?: AnalysisRuleAggregation|null,
+     *     custom?: AnalysisRuleCustom|null
      * } $args
      */
     public function __construct(array $args = [])

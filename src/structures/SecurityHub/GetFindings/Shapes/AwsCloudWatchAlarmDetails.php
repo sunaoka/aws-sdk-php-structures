@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ActionsEnabled
- * @property list<string> $AlarmActions
- * @property string $AlarmArn
- * @property string $AlarmConfigurationUpdatedTimestamp
- * @property string $AlarmDescription
- * @property string $AlarmName
- * @property string $ComparisonOperator
- * @property int $DatapointsToAlarm
- * @property list<AwsCloudWatchAlarmDimensionsDetails> $Dimensions
- * @property string $EvaluateLowSampleCountPercentile
- * @property int $EvaluationPeriods
- * @property string $ExtendedStatistic
- * @property list<string> $InsufficientDataActions
- * @property string $MetricName
- * @property string $Namespace
- * @property list<string> $OkActions
- * @property int $Period
- * @property string $Statistic
- * @property double $Threshold
- * @property string $ThresholdMetricId
- * @property string $TreatMissingData
- * @property string $Unit
+ * @property bool|null $ActionsEnabled
+ * @property list<string>|null $AlarmActions
+ * @property string|null $AlarmArn
+ * @property string|null $AlarmConfigurationUpdatedTimestamp
+ * @property string|null $AlarmDescription
+ * @property string|null $AlarmName
+ * @property string|null $ComparisonOperator
+ * @property int|null $DatapointsToAlarm
+ * @property list<AwsCloudWatchAlarmDimensionsDetails>|null $Dimensions
+ * @property string|null $EvaluateLowSampleCountPercentile
+ * @property int|null $EvaluationPeriods
+ * @property string|null $ExtendedStatistic
+ * @property list<string>|null $InsufficientDataActions
+ * @property string|null $MetricName
+ * @property string|null $Namespace
+ * @property list<string>|null $OkActions
+ * @property int|null $Period
+ * @property string|null $Statistic
+ * @property double|null $Threshold
+ * @property string|null $ThresholdMetricId
+ * @property string|null $TreatMissingData
+ * @property string|null $Unit
  */
 class AwsCloudWatchAlarmDetails extends Shape
 {
     /**
      * @param array{
-     *     ActionsEnabled?: bool,
-     *     AlarmActions?: list<string>,
-     *     AlarmArn?: string,
-     *     AlarmConfigurationUpdatedTimestamp?: string,
-     *     AlarmDescription?: string,
-     *     AlarmName?: string,
-     *     ComparisonOperator?: string,
-     *     DatapointsToAlarm?: int,
-     *     Dimensions?: list<AwsCloudWatchAlarmDimensionsDetails>,
-     *     EvaluateLowSampleCountPercentile?: string,
-     *     EvaluationPeriods?: int,
-     *     ExtendedStatistic?: string,
-     *     InsufficientDataActions?: list<string>,
-     *     MetricName?: string,
-     *     Namespace?: string,
-     *     OkActions?: list<string>,
-     *     Period?: int,
-     *     Statistic?: string,
-     *     Threshold?: double,
-     *     ThresholdMetricId?: string,
-     *     TreatMissingData?: string,
-     *     Unit?: string
+     *     ActionsEnabled?: bool|null,
+     *     AlarmActions?: list<string>|null,
+     *     AlarmArn?: string|null,
+     *     AlarmConfigurationUpdatedTimestamp?: string|null,
+     *     AlarmDescription?: string|null,
+     *     AlarmName?: string|null,
+     *     ComparisonOperator?: string|null,
+     *     DatapointsToAlarm?: int|null,
+     *     Dimensions?: list<AwsCloudWatchAlarmDimensionsDetails>|null,
+     *     EvaluateLowSampleCountPercentile?: string|null,
+     *     EvaluationPeriods?: int|null,
+     *     ExtendedStatistic?: string|null,
+     *     InsufficientDataActions?: list<string>|null,
+     *     MetricName?: string|null,
+     *     Namespace?: string|null,
+     *     OkActions?: list<string>|null,
+     *     Period?: int|null,
+     *     Statistic?: string|null,
+     *     Threshold?: double|null,
+     *     ThresholdMetricId?: string|null,
+     *     TreatMissingData?: string|null,
+     *     Unit?: string|null
      * } $args
      */
     public function __construct(array $args = [])

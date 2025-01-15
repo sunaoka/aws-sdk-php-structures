@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $MonthlyLeasingPrice
  * @property bool $DeletionProtectionEnabled
  * @property bool $Registered
- * @property string $RegistrationId
+ * @property string|null $RegistrationId
  */
 class UpdateSenderIdResponse extends Response
 {

@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\UpdateAppMonitor;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\AppMonitorConfiguration $AppMonitorConfiguration
- * @property Shapes\CustomEvents $CustomEvents
- * @property bool $CwLogEnabled
- * @property string $Domain
+ * @property Shapes\AppMonitorConfiguration|null $AppMonitorConfiguration
+ * @property Shapes\CustomEvents|null $CustomEvents
+ * @property bool|null $CwLogEnabled
+ * @property string|null $Domain
  * @property string $Name
  */
 class UpdateAppMonitorRequest extends Request
 {
     /**
      * @param array{
-     *     AppMonitorConfiguration?: Shapes\AppMonitorConfiguration,
-     *     CustomEvents?: Shapes\CustomEvents,
-     *     CwLogEnabled?: bool,
-     *     Domain?: string,
+     *     AppMonitorConfiguration?: Shapes\AppMonitorConfiguration|null,
+     *     CustomEvents?: Shapes\CustomEvents|null,
+     *     CwLogEnabled?: bool|null,
+     *     Domain?: string|null,
      *     Name: string
      * } $args
      */

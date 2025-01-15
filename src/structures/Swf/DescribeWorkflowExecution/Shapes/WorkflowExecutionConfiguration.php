@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $taskStartToCloseTimeout
  * @property string $executionStartToCloseTimeout
  * @property TaskList $taskList
- * @property string $taskPriority
+ * @property string|null $taskPriority
  * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON' $childPolicy
- * @property string $lambdaRole
+ * @property string|null $lambdaRole
  */
 class WorkflowExecutionConfiguration extends Shape
 {
@@ -19,9 +19,9 @@ class WorkflowExecutionConfiguration extends Shape
      *     taskStartToCloseTimeout: string,
      *     executionStartToCloseTimeout: string,
      *     taskList: TaskList,
-     *     taskPriority?: string,
+     *     taskPriority?: string|null,
      *     childPolicy: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON',
-     *     lambdaRole?: string
+     *     lambdaRole?: string|null
      * } $args
      */
     public function __construct(array $args)

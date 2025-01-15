@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SheetImageStaticFileSource $SheetImageStaticFileSource
+ * @property SheetImageStaticFileSource|null $SheetImageStaticFileSource
  */
 class SheetImageSource extends Shape
 {
     /**
-     * @param array{SheetImageStaticFileSource?: SheetImageStaticFileSource} $args
+     * @param array{SheetImageStaticFileSource?: SheetImageStaticFileSource|null} $args
      */
     public function __construct(array $args = [])
     {

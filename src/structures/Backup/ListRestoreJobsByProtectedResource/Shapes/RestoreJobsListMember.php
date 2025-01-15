@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\Backup\ListRestoreJobsByProtectedResource\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $RestoreJobId
- * @property string $RecoveryPointArn
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $CompletionDate
- * @property 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED' $Status
- * @property string $StatusMessage
- * @property string $PercentDone
- * @property int $BackupSizeInBytes
- * @property string $IamRoleArn
- * @property int $ExpectedCompletionTimeMinutes
- * @property string $CreatedResourceArn
- * @property string $ResourceType
- * @property \Aws\Api\DateTimeResult $RecoveryPointCreationDate
- * @property RestoreJobCreator $CreatedBy
- * @property 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING' $ValidationStatus
- * @property string $ValidationStatusMessage
- * @property 'DELETING'|'FAILED'|'SUCCESSFUL' $DeletionStatus
- * @property string $DeletionStatusMessage
+ * @property string|null $AccountId
+ * @property string|null $RestoreJobId
+ * @property string|null $RecoveryPointArn
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $CompletionDate
+ * @property 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
+ * @property string|null $PercentDone
+ * @property int|null $BackupSizeInBytes
+ * @property string|null $IamRoleArn
+ * @property int|null $ExpectedCompletionTimeMinutes
+ * @property string|null $CreatedResourceArn
+ * @property string|null $ResourceType
+ * @property \Aws\Api\DateTimeResult|null $RecoveryPointCreationDate
+ * @property RestoreJobCreator|null $CreatedBy
+ * @property 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING'|null $ValidationStatus
+ * @property string|null $ValidationStatusMessage
+ * @property 'DELETING'|'FAILED'|'SUCCESSFUL'|null $DeletionStatus
+ * @property string|null $DeletionStatusMessage
  */
 class RestoreJobsListMember extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     RestoreJobId?: string,
-     *     RecoveryPointArn?: string,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     CompletionDate?: \Aws\Api\DateTimeResult,
-     *     Status?: 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED',
-     *     StatusMessage?: string,
-     *     PercentDone?: string,
-     *     BackupSizeInBytes?: int,
-     *     IamRoleArn?: string,
-     *     ExpectedCompletionTimeMinutes?: int,
-     *     CreatedResourceArn?: string,
-     *     ResourceType?: string,
-     *     RecoveryPointCreationDate?: \Aws\Api\DateTimeResult,
-     *     CreatedBy?: RestoreJobCreator,
-     *     ValidationStatus?: 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING',
-     *     ValidationStatusMessage?: string,
-     *     DeletionStatus?: 'DELETING'|'FAILED'|'SUCCESSFUL',
-     *     DeletionStatusMessage?: string
+     *     AccountId?: string|null,
+     *     RestoreJobId?: string|null,
+     *     RecoveryPointArn?: string|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     CompletionDate?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED'|null,
+     *     StatusMessage?: string|null,
+     *     PercentDone?: string|null,
+     *     BackupSizeInBytes?: int|null,
+     *     IamRoleArn?: string|null,
+     *     ExpectedCompletionTimeMinutes?: int|null,
+     *     CreatedResourceArn?: string|null,
+     *     ResourceType?: string|null,
+     *     RecoveryPointCreationDate?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: RestoreJobCreator|null,
+     *     ValidationStatus?: 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING'|null,
+     *     ValidationStatusMessage?: string|null,
+     *     DeletionStatus?: 'DELETING'|'FAILED'|'SUCCESSFUL'|null,
+     *     DeletionStatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

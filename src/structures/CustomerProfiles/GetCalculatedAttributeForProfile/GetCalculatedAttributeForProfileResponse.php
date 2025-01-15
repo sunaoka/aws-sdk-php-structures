@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetCalculatedAttributeForProfi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CalculatedAttributeName
- * @property string $DisplayName
- * @property string $IsDataPartial
- * @property string $Value
+ * @property string|null $CalculatedAttributeName
+ * @property string|null $DisplayName
+ * @property string|null $IsDataPartial
+ * @property string|null $Value
  */
 class GetCalculatedAttributeForProfileResponse extends Response
 {

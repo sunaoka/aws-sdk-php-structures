@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\Synthetics\DescribeCanaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property CanaryCodeOutput $Code
- * @property string $ExecutionRoleArn
- * @property CanaryScheduleOutput $Schedule
- * @property CanaryRunConfigOutput $RunConfig
- * @property int<1, 1024> $SuccessRetentionPeriodInDays
- * @property int<1, 1024> $FailureRetentionPeriodInDays
- * @property CanaryStatus $Status
- * @property CanaryTimeline $Timeline
- * @property string $ArtifactS3Location
- * @property string $EngineArn
- * @property string $RuntimeVersion
- * @property VpcConfigOutput $VpcConfig
- * @property VisualReferenceOutput $VisualReference
- * @property 'AUTOMATIC'|'OFF' $ProvisionedResourceCleanup
- * @property array<string, string> $Tags
- * @property ArtifactConfigOutput $ArtifactConfig
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property CanaryCodeOutput|null $Code
+ * @property string|null $ExecutionRoleArn
+ * @property CanaryScheduleOutput|null $Schedule
+ * @property CanaryRunConfigOutput|null $RunConfig
+ * @property int<1, 1024>|null $SuccessRetentionPeriodInDays
+ * @property int<1, 1024>|null $FailureRetentionPeriodInDays
+ * @property CanaryStatus|null $Status
+ * @property CanaryTimeline|null $Timeline
+ * @property string|null $ArtifactS3Location
+ * @property string|null $EngineArn
+ * @property string|null $RuntimeVersion
+ * @property VpcConfigOutput|null $VpcConfig
+ * @property VisualReferenceOutput|null $VisualReference
+ * @property 'AUTOMATIC'|'OFF'|null $ProvisionedResourceCleanup
+ * @property array<string, string>|null $Tags
+ * @property ArtifactConfigOutput|null $ArtifactConfig
  */
 class Canary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Code?: CanaryCodeOutput,
-     *     ExecutionRoleArn?: string,
-     *     Schedule?: CanaryScheduleOutput,
-     *     RunConfig?: CanaryRunConfigOutput,
-     *     SuccessRetentionPeriodInDays?: int<1, 1024>,
-     *     FailureRetentionPeriodInDays?: int<1, 1024>,
-     *     Status?: CanaryStatus,
-     *     Timeline?: CanaryTimeline,
-     *     ArtifactS3Location?: string,
-     *     EngineArn?: string,
-     *     RuntimeVersion?: string,
-     *     VpcConfig?: VpcConfigOutput,
-     *     VisualReference?: VisualReferenceOutput,
-     *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF',
-     *     Tags?: array<string, string>,
-     *     ArtifactConfig?: ArtifactConfigOutput
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Code?: CanaryCodeOutput|null,
+     *     ExecutionRoleArn?: string|null,
+     *     Schedule?: CanaryScheduleOutput|null,
+     *     RunConfig?: CanaryRunConfigOutput|null,
+     *     SuccessRetentionPeriodInDays?: int<1, 1024>|null,
+     *     FailureRetentionPeriodInDays?: int<1, 1024>|null,
+     *     Status?: CanaryStatus|null,
+     *     Timeline?: CanaryTimeline|null,
+     *     ArtifactS3Location?: string|null,
+     *     EngineArn?: string|null,
+     *     RuntimeVersion?: string|null,
+     *     VpcConfig?: VpcConfigOutput|null,
+     *     VisualReference?: VisualReferenceOutput|null,
+     *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null,
+     *     Tags?: array<string, string>|null,
+     *     ArtifactConfig?: ArtifactConfigOutput|null
      * } $args
      */
     public function __construct(array $args = [])

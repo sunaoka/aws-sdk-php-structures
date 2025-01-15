@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AllowOrigins
- * @property bool $AllowCredentials
- * @property list<string> $ExposeHeaders
- * @property int $MaxAge
- * @property list<string> $AllowMethods
- * @property list<string> $AllowHeaders
+ * @property list<string>|null $AllowOrigins
+ * @property bool|null $AllowCredentials
+ * @property list<string>|null $ExposeHeaders
+ * @property int|null $MaxAge
+ * @property list<string>|null $AllowMethods
+ * @property list<string>|null $AllowHeaders
  */
 class AwsCorsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AllowOrigins?: list<string>,
-     *     AllowCredentials?: bool,
-     *     ExposeHeaders?: list<string>,
-     *     MaxAge?: int,
-     *     AllowMethods?: list<string>,
-     *     AllowHeaders?: list<string>
+     *     AllowOrigins?: list<string>|null,
+     *     AllowCredentials?: bool|null,
+     *     ExposeHeaders?: list<string>|null,
+     *     MaxAge?: int|null,
+     *     AllowMethods?: list<string>|null,
+     *     AllowHeaders?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

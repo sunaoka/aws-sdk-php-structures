@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $LambdaFunctionARN
  * @property 'viewer-request'|'viewer-response'|'origin-request'|'origin-response' $EventType
- * @property bool $IncludeBody
+ * @property bool|null $IncludeBody
  */
 class LambdaFunctionAssociation extends Shape
 {
@@ -15,7 +15,7 @@ class LambdaFunctionAssociation extends Shape
      * @param array{
      *     LambdaFunctionARN: string,
      *     EventType: 'viewer-request'|'viewer-response'|'origin-request'|'origin-response',
-     *     IncludeBody?: bool
+     *     IncludeBody?: bool|null
      * } $args
      */
     public function __construct(array $args)

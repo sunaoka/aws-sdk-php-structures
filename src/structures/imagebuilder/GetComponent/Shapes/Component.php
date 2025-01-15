@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property string $version
- * @property string $description
- * @property string $changeDescription
- * @property 'BUILD'|'TEST' $type
- * @property 'Windows'|'Linux'|'macOS' $platform
- * @property list<string> $supportedOsVersions
- * @property ComponentState $state
- * @property list<ComponentParameterDetail> $parameters
- * @property string $owner
- * @property string $data
- * @property string $kmsKeyId
- * @property bool $encrypted
- * @property string $dateCreated
- * @property array<string, string> $tags
- * @property string $publisher
- * @property bool $obfuscate
- * @property list<ProductCodeListItem> $productCodes
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $version
+ * @property string|null $description
+ * @property string|null $changeDescription
+ * @property 'BUILD'|'TEST'|null $type
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property list<string>|null $supportedOsVersions
+ * @property ComponentState|null $state
+ * @property list<ComponentParameterDetail>|null $parameters
+ * @property string|null $owner
+ * @property string|null $data
+ * @property string|null $kmsKeyId
+ * @property bool|null $encrypted
+ * @property string|null $dateCreated
+ * @property array<string, string>|null $tags
+ * @property string|null $publisher
+ * @property bool|null $obfuscate
+ * @property list<ProductCodeListItem>|null $productCodes
  */
 class Component extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     version?: string,
-     *     description?: string,
-     *     changeDescription?: string,
-     *     type?: 'BUILD'|'TEST',
-     *     platform?: 'Windows'|'Linux'|'macOS',
-     *     supportedOsVersions?: list<string>,
-     *     state?: ComponentState,
-     *     parameters?: list<ComponentParameterDetail>,
-     *     owner?: string,
-     *     data?: string,
-     *     kmsKeyId?: string,
-     *     encrypted?: bool,
-     *     dateCreated?: string,
-     *     tags?: array<string, string>,
-     *     publisher?: string,
-     *     obfuscate?: bool,
-     *     productCodes?: list<ProductCodeListItem>
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     version?: string|null,
+     *     description?: string|null,
+     *     changeDescription?: string|null,
+     *     type?: 'BUILD'|'TEST'|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     supportedOsVersions?: list<string>|null,
+     *     state?: ComponentState|null,
+     *     parameters?: list<ComponentParameterDetail>|null,
+     *     owner?: string|null,
+     *     data?: string|null,
+     *     kmsKeyId?: string|null,
+     *     encrypted?: bool|null,
+     *     dateCreated?: string|null,
+     *     tags?: array<string, string>|null,
+     *     publisher?: string|null,
+     *     obfuscate?: bool|null,
+     *     productCodes?: list<ProductCodeListItem>|null
      * } $args
      */
     public function __construct(array $args = [])

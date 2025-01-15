@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DatastoreProperties> $DatastorePropertiesList
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListFHIRDatastoresResponse extends Response
 {

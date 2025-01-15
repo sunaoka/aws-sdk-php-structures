@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property ActorUser $User
- * @property ActorSession $Session
+ * @property string|null $Id
+ * @property ActorUser|null $User
+ * @property ActorSession|null $Session
  */
 class Actor extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     User?: ActorUser,
-     *     Session?: ActorSession
+     *     Id?: string|null,
+     *     User?: ActorUser|null,
+     *     Session?: ActorSession|null
      * } $args
      */
     public function __construct(array $args = [])

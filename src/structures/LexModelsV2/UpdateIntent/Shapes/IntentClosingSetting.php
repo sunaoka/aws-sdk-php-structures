@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateIntent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResponseSpecification $closingResponse
- * @property bool $active
- * @property DialogState $nextStep
- * @property ConditionalSpecification $conditional
+ * @property ResponseSpecification|null $closingResponse
+ * @property bool|null $active
+ * @property DialogState|null $nextStep
+ * @property ConditionalSpecification|null $conditional
  */
 class IntentClosingSetting extends Shape
 {
     /**
      * @param array{
-     *     closingResponse?: ResponseSpecification,
-     *     active?: bool,
-     *     nextStep?: DialogState,
-     *     conditional?: ConditionalSpecification
+     *     closingResponse?: ResponseSpecification|null,
+     *     active?: bool|null,
+     *     nextStep?: DialogState|null,
+     *     conditional?: ConditionalSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

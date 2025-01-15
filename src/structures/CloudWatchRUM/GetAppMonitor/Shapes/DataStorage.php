@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\GetAppMonitor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CwLog $CwLog
+ * @property CwLog|null $CwLog
  */
 class DataStorage extends Shape
 {
     /**
-     * @param array{CwLog?: CwLog} $args
+     * @param array{CwLog?: CwLog|null} $args
      */
     public function __construct(array $args = [])
     {

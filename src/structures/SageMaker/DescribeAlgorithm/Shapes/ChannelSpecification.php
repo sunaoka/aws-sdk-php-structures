@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property bool $IsRequired
+ * @property string|null $Description
+ * @property bool|null $IsRequired
  * @property list<string> $SupportedContentTypes
- * @property list<'None'|'Gzip'> $SupportedCompressionTypes
+ * @property list<'None'|'Gzip'>|null $SupportedCompressionTypes
  * @property list<'Pipe'|'File'|'FastFile'> $SupportedInputModes
  */
 class ChannelSpecification extends Shape
@@ -17,10 +17,10 @@ class ChannelSpecification extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     IsRequired?: bool,
+     *     Description?: string|null,
+     *     IsRequired?: bool|null,
      *     SupportedContentTypes: list<string>,
-     *     SupportedCompressionTypes?: list<'None'|'Gzip'>,
+     *     SupportedCompressionTypes?: list<'None'|'Gzip'>|null,
      *     SupportedInputModes: list<'Pipe'|'File'|'FastFile'>
      * } $args
      */

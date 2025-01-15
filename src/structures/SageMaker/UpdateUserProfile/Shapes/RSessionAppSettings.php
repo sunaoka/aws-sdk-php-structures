@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateUserProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceSpec $DefaultResourceSpec
- * @property list<CustomImage> $CustomImages
+ * @property ResourceSpec|null $DefaultResourceSpec
+ * @property list<CustomImage>|null $CustomImages
  */
 class RSessionAppSettings extends Shape
 {
     /**
      * @param array{
-     *     DefaultResourceSpec?: ResourceSpec,
-     *     CustomImages?: list<CustomImage>
+     *     DefaultResourceSpec?: ResourceSpec|null,
+     *     CustomImages?: list<CustomImage>|null
      * } $args
      */
     public function __construct(array $args = [])

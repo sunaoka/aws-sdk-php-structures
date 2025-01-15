@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetComplianceSummaryByResourceTyp
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceType
- * @property ComplianceSummary $ComplianceSummary
+ * @property string|null $ResourceType
+ * @property ComplianceSummary|null $ComplianceSummary
  */
 class ComplianceSummaryByResourceType extends Shape
 {
     /**
      * @param array{
-     *     ResourceType?: string,
-     *     ComplianceSummary?: ComplianceSummary
+     *     ResourceType?: string|null,
+     *     ComplianceSummary?: ComplianceSummary|null
      * } $args
      */
     public function __construct(array $args = [])

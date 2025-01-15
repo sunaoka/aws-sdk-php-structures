@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AutoScalingPlans\UpdateScalingPlan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CloudFormationStackARN
- * @property list<TagFilter> $TagFilters
+ * @property string|null $CloudFormationStackARN
+ * @property list<TagFilter>|null $TagFilters
  */
 class ApplicationSource extends Shape
 {
     /**
      * @param array{
-     *     CloudFormationStackARN?: string,
-     *     TagFilters?: list<TagFilter>
+     *     CloudFormationStackARN?: string|null,
+     *     TagFilters?: list<TagFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

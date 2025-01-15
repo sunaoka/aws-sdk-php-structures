@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyLaunchTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $ClientToken
- * @property string $LaunchTemplateId
- * @property string $LaunchTemplateName
- * @property string $DefaultVersion
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
+ * @property string|null $LaunchTemplateId
+ * @property string|null $LaunchTemplateName
+ * @property string|null $DefaultVersion
  */
 class ModifyLaunchTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     ClientToken?: string,
-     *     LaunchTemplateId?: string,
-     *     LaunchTemplateName?: string,
-     *     DefaultVersion?: string
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null,
+     *     LaunchTemplateId?: string|null,
+     *     LaunchTemplateName?: string|null,
+     *     DefaultVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

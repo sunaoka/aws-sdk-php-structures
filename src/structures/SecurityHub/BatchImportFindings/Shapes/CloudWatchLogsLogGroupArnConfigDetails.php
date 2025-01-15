@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CloudWatchLogsLogGroupArn
- * @property string $HostedZoneId
- * @property string $Id
+ * @property string|null $CloudWatchLogsLogGroupArn
+ * @property string|null $HostedZoneId
+ * @property string|null $Id
  */
 class CloudWatchLogsLogGroupArnConfigDetails extends Shape
 {
     /**
      * @param array{
-     *     CloudWatchLogsLogGroupArn?: string,
-     *     HostedZoneId?: string,
-     *     Id?: string
+     *     CloudWatchLogsLogGroupArn?: string|null,
+     *     HostedZoneId?: string|null,
+     *     Id?: string|null
      * } $args
      */
     public function __construct(array $args = [])

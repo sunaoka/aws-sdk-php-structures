@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $applicationName
- * @property string $applicationDescription
- * @property string $clientToken
+ * @property string|null $applicationDescription
+ * @property string|null $clientToken
  * @property string $roleArn
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateApplicationRequest extends Request
 {
     /**
      * @param array{
      *     applicationName: string,
-     *     applicationDescription?: string,
-     *     clientToken?: string,
+     *     applicationDescription?: string|null,
+     *     clientToken?: string|null,
      *     roleArn: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StepCount
- * @property double $StepSize
+ * @property int|null $StepCount
+ * @property double|null $StepSize
  */
 class AxisLinearScale extends Shape
 {
     /**
      * @param array{
-     *     StepCount?: int,
-     *     StepSize?: double
+     *     StepCount?: int|null,
+     *     StepSize?: double|null
      * } $args
      */
     public function __construct(array $args = [])

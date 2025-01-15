@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\SearchRasterDataCollection\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AreaOfInterest $AreaOfInterest
- * @property list<string> $BandFilter
- * @property PropertyFilters $PropertyFilters
+ * @property AreaOfInterest|null $AreaOfInterest
+ * @property list<string>|null $BandFilter
+ * @property PropertyFilters|null $PropertyFilters
  * @property TimeRangeFilterInput $TimeRangeFilter
  */
 class RasterDataCollectionQueryWithBandFilterInput extends Shape
 {
     /**
      * @param array{
-     *     AreaOfInterest?: AreaOfInterest,
-     *     BandFilter?: list<string>,
-     *     PropertyFilters?: PropertyFilters,
+     *     AreaOfInterest?: AreaOfInterest|null,
+     *     BandFilter?: list<string>|null,
+     *     PropertyFilters?: PropertyFilters|null,
      *     TimeRangeFilter: TimeRangeFilterInput
      * } $args
      */

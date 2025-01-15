@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\CreateBucket\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AvailabilityZone'|'LocalZone' $Type
- * @property string $Name
+ * @property 'AvailabilityZone'|'LocalZone'|null $Type
+ * @property string|null $Name
  */
 class LocationInfo extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'AvailabilityZone'|'LocalZone',
-     *     Name?: string
+     *     Type?: 'AvailabilityZone'|'LocalZone'|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

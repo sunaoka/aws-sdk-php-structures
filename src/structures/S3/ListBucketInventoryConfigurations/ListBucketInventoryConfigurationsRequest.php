@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $ContinuationToken
- * @property string $ExpectedBucketOwner
+ * @property string|null $ContinuationToken
+ * @property string|null $ExpectedBucketOwner
  */
 class ListBucketInventoryConfigurationsRequest extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     ContinuationToken?: string,
-     *     ExpectedBucketOwner?: string
+     *     ContinuationToken?: string|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

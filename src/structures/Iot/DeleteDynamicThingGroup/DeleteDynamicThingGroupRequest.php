@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingGroupName
- * @property int $expectedVersion
+ * @property int|null $expectedVersion
  */
 class DeleteDynamicThingGroupRequest extends Request
 {
     /**
      * @param array{
      *     thingGroupName: string,
-     *     expectedVersion?: int
+     *     expectedVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

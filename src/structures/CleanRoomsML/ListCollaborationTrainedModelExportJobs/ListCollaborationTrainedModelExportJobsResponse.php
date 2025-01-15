@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\ListCollaborationTrainedModelExpor
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property list<Shapes\CollaborationTrainedModelExportJobSummary> $collaborationTrainedModelExportJobs
  */
 class ListCollaborationTrainedModelExportJobsResponse extends Response

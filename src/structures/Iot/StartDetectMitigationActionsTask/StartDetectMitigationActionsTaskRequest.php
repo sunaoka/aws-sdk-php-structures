@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $taskId
  * @property Shapes\DetectMitigationActionsTaskTarget $target
  * @property list<string> $actions
- * @property Shapes\ViolationEventOccurrenceRange $violationEventOccurrenceRange
- * @property bool $includeOnlyActiveViolations
- * @property bool $includeSuppressedAlerts
+ * @property Shapes\ViolationEventOccurrenceRange|null $violationEventOccurrenceRange
+ * @property bool|null $includeOnlyActiveViolations
+ * @property bool|null $includeSuppressedAlerts
  * @property string $clientRequestToken
  */
 class StartDetectMitigationActionsTaskRequest extends Request
@@ -20,9 +20,9 @@ class StartDetectMitigationActionsTaskRequest extends Request
      *     taskId: string,
      *     target: Shapes\DetectMitigationActionsTaskTarget,
      *     actions: list<string>,
-     *     violationEventOccurrenceRange?: Shapes\ViolationEventOccurrenceRange,
-     *     includeOnlyActiveViolations?: bool,
-     *     includeSuppressedAlerts?: bool,
+     *     violationEventOccurrenceRange?: Shapes\ViolationEventOccurrenceRange|null,
+     *     includeOnlyActiveViolations?: bool|null,
+     *     includeSuppressedAlerts?: bool|null,
      *     clientRequestToken: string
      * } $args
      */

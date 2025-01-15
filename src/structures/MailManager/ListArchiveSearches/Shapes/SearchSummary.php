@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\ListArchiveSearches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SearchId
- * @property SearchStatus $Status
+ * @property string|null $SearchId
+ * @property SearchStatus|null $Status
  */
 class SearchSummary extends Shape
 {
     /**
      * @param array{
-     *     SearchId?: string,
-     *     Status?: SearchStatus
+     *     SearchId?: string|null,
+     *     Status?: SearchStatus|null
      * } $args
      */
     public function __construct(array $args = [])

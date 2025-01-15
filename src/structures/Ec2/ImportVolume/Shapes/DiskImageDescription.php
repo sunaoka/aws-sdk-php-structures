@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\ImportVolume\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Checksum
- * @property 'VMDK'|'RAW'|'VHD' $Format
- * @property string $ImportManifestUrl
- * @property int $Size
+ * @property string|null $Checksum
+ * @property 'VMDK'|'RAW'|'VHD'|null $Format
+ * @property string|null $ImportManifestUrl
+ * @property int|null $Size
  */
 class DiskImageDescription extends Shape
 {
     /**
      * @param array{
-     *     Checksum?: string,
-     *     Format?: 'VMDK'|'RAW'|'VHD',
-     *     ImportManifestUrl?: string,
-     *     Size?: int
+     *     Checksum?: string|null,
+     *     Format?: 'VMDK'|'RAW'|'VHD'|null,
+     *     ImportManifestUrl?: string|null,
+     *     Size?: int|null
      * } $args
      */
     public function __construct(array $args = [])

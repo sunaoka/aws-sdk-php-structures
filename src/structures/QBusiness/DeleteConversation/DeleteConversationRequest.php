@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $conversationId
  * @property string $applicationId
- * @property string $userId
+ * @property string|null $userId
  */
 class DeleteConversationRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteConversationRequest extends Request
      * @param array{
      *     conversationId: string,
      *     applicationId: string,
-     *     userId?: string
+     *     userId?: string|null
      * } $args
      */
     public function __construct(array $args)

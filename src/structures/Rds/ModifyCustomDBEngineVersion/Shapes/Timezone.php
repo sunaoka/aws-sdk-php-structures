@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyCustomDBEngineVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TimezoneName
+ * @property string|null $TimezoneName
  */
 class Timezone extends Shape
 {
     /**
-     * @param array{TimezoneName?: string} $args
+     * @param array{TimezoneName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SenderId
  * @property string $IsoCountryCode
- * @property list<'TRANSACTIONAL'|'PROMOTIONAL'> $MessageTypes
- * @property bool $DeletionProtectionEnabled
- * @property list<Shapes\Tag> $Tags
- * @property string $ClientToken
+ * @property list<'TRANSACTIONAL'|'PROMOTIONAL'>|null $MessageTypes
+ * @property bool|null $DeletionProtectionEnabled
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientToken
  */
 class RequestSenderIdRequest extends Request
 {
@@ -18,10 +18,10 @@ class RequestSenderIdRequest extends Request
      * @param array{
      *     SenderId: string,
      *     IsoCountryCode: string,
-     *     MessageTypes?: list<'TRANSACTIONAL'|'PROMOTIONAL'>,
-     *     DeletionProtectionEnabled?: bool,
-     *     Tags?: list<Shapes\Tag>,
-     *     ClientToken?: string
+     *     MessageTypes?: list<'TRANSACTIONAL'|'PROMOTIONAL'>|null,
+     *     DeletionProtectionEnabled?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

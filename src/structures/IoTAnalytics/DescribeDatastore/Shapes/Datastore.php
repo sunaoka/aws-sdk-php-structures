@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\DescribeDatastore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property DatastoreStorage $storage
- * @property string $arn
- * @property 'CREATING'|'ACTIVE'|'DELETING' $status
- * @property RetentionPeriod $retentionPeriod
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property \Aws\Api\DateTimeResult $lastMessageArrivalTime
- * @property FileFormatConfiguration $fileFormatConfiguration
- * @property DatastorePartitions $datastorePartitions
+ * @property string|null $name
+ * @property DatastoreStorage|null $storage
+ * @property string|null $arn
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|null $status
+ * @property RetentionPeriod|null $retentionPeriod
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property \Aws\Api\DateTimeResult|null $lastMessageArrivalTime
+ * @property FileFormatConfiguration|null $fileFormatConfiguration
+ * @property DatastorePartitions|null $datastorePartitions
  */
 class Datastore extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     storage?: DatastoreStorage,
-     *     arn?: string,
-     *     status?: 'CREATING'|'ACTIVE'|'DELETING',
-     *     retentionPeriod?: RetentionPeriod,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     lastMessageArrivalTime?: \Aws\Api\DateTimeResult,
-     *     fileFormatConfiguration?: FileFormatConfiguration,
-     *     datastorePartitions?: DatastorePartitions
+     *     name?: string|null,
+     *     storage?: DatastoreStorage|null,
+     *     arn?: string|null,
+     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|null,
+     *     retentionPeriod?: RetentionPeriod|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastMessageArrivalTime?: \Aws\Api\DateTimeResult|null,
+     *     fileFormatConfiguration?: FileFormatConfiguration|null,
+     *     datastorePartitions?: DatastorePartitions|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $name
  * @property string $arn
- * @property string $description
- * @property string $modelManifestArn
- * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING' $status
+ * @property string|null $description
+ * @property string|null $modelManifestArn
+ * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModificationTime
- * @property string $message
+ * @property string|null $message
  */
 class GetDecoderManifestResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConditionalFormattingSolidColor $Solid
- * @property ConditionalFormattingGradientColor $Gradient
+ * @property ConditionalFormattingSolidColor|null $Solid
+ * @property ConditionalFormattingGradientColor|null $Gradient
  */
 class ConditionalFormattingColor extends Shape
 {
     /**
      * @param array{
-     *     Solid?: ConditionalFormattingSolidColor,
-     *     Gradient?: ConditionalFormattingGradientColor
+     *     Solid?: ConditionalFormattingSolidColor|null,
+     *     Gradient?: ConditionalFormattingGradientColor|null
      * } $args
      */
     public function __construct(array $args = [])

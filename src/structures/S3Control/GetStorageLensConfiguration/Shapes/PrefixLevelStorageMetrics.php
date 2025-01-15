@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Control\GetStorageLensConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IsEnabled
- * @property SelectionCriteria $SelectionCriteria
+ * @property bool|null $IsEnabled
+ * @property SelectionCriteria|null $SelectionCriteria
  */
 class PrefixLevelStorageMetrics extends Shape
 {
     /**
      * @param array{
-     *     IsEnabled?: bool,
-     *     SelectionCriteria?: SelectionCriteria
+     *     IsEnabled?: bool|null,
+     *     SelectionCriteria?: SelectionCriteria|null
      * } $args
      */
     public function __construct(array $args = [])

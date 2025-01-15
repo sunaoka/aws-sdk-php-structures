@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NetworkId
- * @property string $MemberId
+ * @property string|null $MemberId
  * @property string $NodeId
- * @property Shapes\NodeLogPublishingConfiguration $LogPublishingConfiguration
+ * @property Shapes\NodeLogPublishingConfiguration|null $LogPublishingConfiguration
  */
 class UpdateNodeRequest extends Request
 {
     /**
      * @param array{
      *     NetworkId: string,
-     *     MemberId?: string,
+     *     MemberId?: string|null,
      *     NodeId: string,
-     *     LogPublishingConfiguration?: Shapes\NodeLogPublishingConfiguration
+     *     LogPublishingConfiguration?: Shapes\NodeLogPublishingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property int<1, 65535> $Port
- * @property string $AvailabilityZone
+ * @property int<1, 65535>|null $Port
+ * @property string|null $AvailabilityZone
  */
 class TargetDescription extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     Port?: int<1, 65535>,
-     *     AvailabilityZone?: string
+     *     Port?: int<1, 65535>|null,
+     *     AvailabilityZone?: string|null
      * } $args
      */
     public function __construct(array $args)

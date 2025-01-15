@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetSecurityControlDefinition\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $DefaultValue
- * @property int $MaxItems
- * @property list<string> $AllowedValues
+ * @property list<string>|null $DefaultValue
+ * @property int|null $MaxItems
+ * @property list<string>|null $AllowedValues
  */
 class EnumListConfigurationOptions extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: list<string>,
-     *     MaxItems?: int,
-     *     AllowedValues?: list<string>
+     *     DefaultValue?: list<string>|null,
+     *     MaxItems?: int|null,
+     *     AllowedValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

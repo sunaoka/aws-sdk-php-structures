@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\KinesisVideoArchivedMedia\GetDASHStreamingSessi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DASHStreamingSessionURL
+ * @property string|null $DASHStreamingSessionURL
  */
 class GetDASHStreamingSessionURLResponse extends Response
 {

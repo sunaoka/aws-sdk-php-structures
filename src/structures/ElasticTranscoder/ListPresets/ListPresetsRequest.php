@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ListPresets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Ascending
- * @property string $PageToken
+ * @property string|null $Ascending
+ * @property string|null $PageToken
  */
 class ListPresetsRequest extends Request
 {
     /**
      * @param array{
-     *     Ascending?: string,
-     *     PageToken?: string
+     *     Ascending?: string|null,
+     *     PageToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

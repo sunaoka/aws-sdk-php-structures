@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AuthTtL
- * @property string $ClientId
- * @property int $IatTtL
- * @property string $Issuer
+ * @property int|null $AuthTtL
+ * @property string|null $ClientId
+ * @property int|null $IatTtL
+ * @property string|null $Issuer
  */
 class AwsAppSyncGraphQlApiOpenIdConnectConfigDetails extends Shape
 {
     /**
      * @param array{
-     *     AuthTtL?: int,
-     *     ClientId?: string,
-     *     IatTtL?: int,
-     *     Issuer?: string
+     *     AuthTtL?: int|null,
+     *     ClientId?: string|null,
+     *     IatTtL?: int|null,
+     *     Issuer?: string|null
      * } $args
      */
     public function __construct(array $args = [])

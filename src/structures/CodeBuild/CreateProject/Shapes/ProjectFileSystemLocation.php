@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CodeBuild\CreateProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EFS' $type
- * @property string $location
- * @property string $mountPoint
- * @property string $identifier
- * @property string $mountOptions
+ * @property 'EFS'|null $type
+ * @property string|null $location
+ * @property string|null $mountPoint
+ * @property string|null $identifier
+ * @property string|null $mountOptions
  */
 class ProjectFileSystemLocation extends Shape
 {
     /**
      * @param array{
-     *     type?: 'EFS',
-     *     location?: string,
-     *     mountPoint?: string,
-     *     identifier?: string,
-     *     mountOptions?: string
+     *     type?: 'EFS'|null,
+     *     location?: string|null,
+     *     mountPoint?: string|null,
+     *     identifier?: string|null,
+     *     mountOptions?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateInferenceRecommendationsJob\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Percentile
- * @property int $ValueInMilliseconds
+ * @property string|null $Percentile
+ * @property int|null $ValueInMilliseconds
  */
 class ModelLatencyThreshold extends Shape
 {
     /**
      * @param array{
-     *     Percentile?: string,
-     *     ValueInMilliseconds?: int
+     *     Percentile?: string|null,
+     *     ValueInMilliseconds?: int|null
      * } $args
      */
     public function __construct(array $args = [])

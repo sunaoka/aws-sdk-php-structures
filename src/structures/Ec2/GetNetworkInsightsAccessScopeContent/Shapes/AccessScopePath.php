@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\GetNetworkInsightsAccessScopeContent\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PathStatement $Source
- * @property PathStatement $Destination
- * @property list<ThroughResourcesStatement> $ThroughResources
+ * @property PathStatement|null $Source
+ * @property PathStatement|null $Destination
+ * @property list<ThroughResourcesStatement>|null $ThroughResources
  */
 class AccessScopePath extends Shape
 {
     /**
      * @param array{
-     *     Source?: PathStatement,
-     *     Destination?: PathStatement,
-     *     ThroughResources?: list<ThroughResourcesStatement>
+     *     Source?: PathStatement|null,
+     *     Destination?: PathStatement|null,
+     *     ThroughResources?: list<ThroughResourcesStatement>|null
      * } $args
      */
     public function __construct(array $args = [])

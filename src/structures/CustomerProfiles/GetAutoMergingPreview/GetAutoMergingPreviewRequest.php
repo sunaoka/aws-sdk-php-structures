@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property Shapes\Consolidation $Consolidation
  * @property Shapes\ConflictResolution $ConflictResolution
- * @property double $MinAllowedConfidenceScoreForMerging
+ * @property double|null $MinAllowedConfidenceScoreForMerging
  */
 class GetAutoMergingPreviewRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetAutoMergingPreviewRequest extends Request
      *     DomainName: string,
      *     Consolidation: Shapes\Consolidation,
      *     ConflictResolution: Shapes\ConflictResolution,
-     *     MinAllowedConfidenceScoreForMerging?: double
+     *     MinAllowedConfidenceScoreForMerging?: double|null
      * } $args
      */
     public function __construct(array $args)

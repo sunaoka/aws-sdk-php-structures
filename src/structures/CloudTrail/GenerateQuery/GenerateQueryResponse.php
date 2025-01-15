@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CloudTrail\GenerateQuery;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $QueryStatement
- * @property string $QueryAlias
- * @property string $EventDataStoreOwnerAccountId
+ * @property string|null $QueryStatement
+ * @property string|null $QueryAlias
+ * @property string|null $EventDataStoreOwnerAccountId
  */
 class GenerateQueryResponse extends Response
 {

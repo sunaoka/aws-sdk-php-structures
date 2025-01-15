@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateCapacityReservation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CommittedInstanceCount
- * @property \Aws\Api\DateTimeResult $CommitmentEndDate
+ * @property int|null $CommittedInstanceCount
+ * @property \Aws\Api\DateTimeResult|null $CommitmentEndDate
  */
 class CapacityReservationCommitmentInfo extends Shape
 {
     /**
      * @param array{
-     *     CommittedInstanceCount?: int,
-     *     CommitmentEndDate?: \Aws\Api\DateTimeResult
+     *     CommittedInstanceCount?: int|null,
+     *     CommitmentEndDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

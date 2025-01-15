@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Begin
- * @property string $End
+ * @property string|null $End
  */
 class DatetimeRange extends Shape
 {
     /**
      * @param array{
      *     Begin: string,
-     *     End?: string
+     *     End?: string|null
      * } $args
      */
     public function __construct(array $args)

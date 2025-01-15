@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Kafka\CreateReplicator;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReplicatorArn
- * @property string $ReplicatorName
- * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED' $ReplicatorState
+ * @property string|null $ReplicatorArn
+ * @property string|null $ReplicatorName
+ * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|null $ReplicatorState
  */
 class CreateReplicatorResponse extends Response
 {

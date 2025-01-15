@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateGUISessionAccessDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $url
- * @property bool $isPrimary
+ * @property string|null $name
+ * @property string|null $url
+ * @property bool|null $isPrimary
  */
 class Session extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     url?: string,
-     *     isPrimary?: bool
+     *     name?: string|null,
+     *     url?: string|null,
+     *     isPrimary?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

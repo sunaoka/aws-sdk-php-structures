@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\GetUpgradeStatus;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'PRE_UPGRADE_CHECK'|'SNAPSHOT'|'UPGRADE' $UpgradeStep
- * @property 'IN_PROGRESS'|'SUCCEEDED'|'SUCCEEDED_WITH_ISSUES'|'FAILED' $StepStatus
- * @property string $UpgradeName
+ * @property 'PRE_UPGRADE_CHECK'|'SNAPSHOT'|'UPGRADE'|null $UpgradeStep
+ * @property 'IN_PROGRESS'|'SUCCEEDED'|'SUCCEEDED_WITH_ISSUES'|'FAILED'|null $StepStatus
+ * @property string|null $UpgradeName
  */
 class GetUpgradeStatusResponse extends Response
 {

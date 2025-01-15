@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $jobId
  * @property string $thingName
- * @property bool $force
- * @property int $expectedVersion
- * @property array<string, string> $statusDetails
+ * @property bool|null $force
+ * @property int|null $expectedVersion
+ * @property array<string, string>|null $statusDetails
  */
 class CancelJobExecutionRequest extends Request
 {
@@ -17,9 +17,9 @@ class CancelJobExecutionRequest extends Request
      * @param array{
      *     jobId: string,
      *     thingName: string,
-     *     force?: bool,
-     *     expectedVersion?: int,
-     *     statusDetails?: array<string, string>
+     *     force?: bool|null,
+     *     expectedVersion?: int|null,
+     *     statusDetails?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

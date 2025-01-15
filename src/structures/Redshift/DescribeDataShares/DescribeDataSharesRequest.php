@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeDataShares;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DataShareArn
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $DataShareArn
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeDataSharesRequest extends Request
 {
     /**
      * @param array{
-     *     DataShareArn?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     DataShareArn?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

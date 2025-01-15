@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateBrand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NavbarStyle $NavbarStyle
+ * @property NavbarStyle|null $NavbarStyle
  */
 class BrandElementStyle extends Shape
 {
     /**
-     * @param array{NavbarStyle?: NavbarStyle} $args
+     * @param array{NavbarStyle?: NavbarStyle|null} $args
      */
     public function __construct(array $args = [])
     {

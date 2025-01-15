@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property 'USER'|'ROLE'|'GROUP' $Type
  * @property string $Id
- * @property string $Path
+ * @property string|null $Path
  */
 class EntityInfo extends Shape
 {
@@ -19,7 +19,7 @@ class EntityInfo extends Shape
      *     Name: string,
      *     Type: 'USER'|'ROLE'|'GROUP',
      *     Id: string,
-     *     Path?: string
+     *     Path?: string|null
      * } $args
      */
     public function __construct(array $args)

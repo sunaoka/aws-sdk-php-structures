@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\UpdateStage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 86400> $targetIntervalSeconds
- * @property list<'SEQUENTIAL'|'LATEST'> $storage
- * @property 'INTERVAL'|'DISABLED' $recordingMode
+ * @property int<1, 86400>|null $targetIntervalSeconds
+ * @property list<'SEQUENTIAL'|'LATEST'>|null $storage
+ * @property 'INTERVAL'|'DISABLED'|null $recordingMode
  */
 class ParticipantThumbnailConfiguration extends Shape
 {
     /**
      * @param array{
-     *     targetIntervalSeconds?: int<1, 86400>,
-     *     storage?: list<'SEQUENTIAL'|'LATEST'>,
-     *     recordingMode?: 'INTERVAL'|'DISABLED'
+     *     targetIntervalSeconds?: int<1, 86400>|null,
+     *     storage?: list<'SEQUENTIAL'|'LATEST'>|null,
+     *     recordingMode?: 'INTERVAL'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

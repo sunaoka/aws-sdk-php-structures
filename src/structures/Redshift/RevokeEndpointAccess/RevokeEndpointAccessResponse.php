@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\RevokeEndpointAccess;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Grantor
- * @property string $Grantee
- * @property string $ClusterIdentifier
- * @property \Aws\Api\DateTimeResult $AuthorizeTime
- * @property string $ClusterStatus
- * @property 'Authorized'|'Revoking' $Status
- * @property bool $AllowedAllVPCs
- * @property list<string> $AllowedVPCs
- * @property int $EndpointCount
+ * @property string|null $Grantor
+ * @property string|null $Grantee
+ * @property string|null $ClusterIdentifier
+ * @property \Aws\Api\DateTimeResult|null $AuthorizeTime
+ * @property string|null $ClusterStatus
+ * @property 'Authorized'|'Revoking'|null $Status
+ * @property bool|null $AllowedAllVPCs
+ * @property list<string>|null $AllowedVPCs
+ * @property int|null $EndpointCount
  */
 class RevokeEndpointAccessResponse extends Response
 {

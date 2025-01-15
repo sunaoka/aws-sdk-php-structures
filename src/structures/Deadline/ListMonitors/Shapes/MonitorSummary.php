@@ -14,8 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $identityCenterApplicationArn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class MonitorSummary extends Shape
 {
@@ -30,8 +30,8 @@ class MonitorSummary extends Shape
      *     identityCenterApplicationArn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     createdBy: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeTagOption;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TagOptionDetail $TagOptionDetail
+ * @property Shapes\TagOptionDetail|null $TagOptionDetail
  */
 class DescribeTagOptionResponse extends Response
 {

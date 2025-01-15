@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetCampaigns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Message $ADMMessage
- * @property Message $APNSMessage
- * @property Message $BaiduMessage
- * @property CampaignCustomMessage $CustomMessage
- * @property Message $DefaultMessage
- * @property CampaignEmailMessage $EmailMessage
- * @property Message $GCMMessage
- * @property CampaignSmsMessage $SMSMessage
- * @property CampaignInAppMessage $InAppMessage
+ * @property Message|null $ADMMessage
+ * @property Message|null $APNSMessage
+ * @property Message|null $BaiduMessage
+ * @property CampaignCustomMessage|null $CustomMessage
+ * @property Message|null $DefaultMessage
+ * @property CampaignEmailMessage|null $EmailMessage
+ * @property Message|null $GCMMessage
+ * @property CampaignSmsMessage|null $SMSMessage
+ * @property CampaignInAppMessage|null $InAppMessage
  */
 class MessageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ADMMessage?: Message,
-     *     APNSMessage?: Message,
-     *     BaiduMessage?: Message,
-     *     CustomMessage?: CampaignCustomMessage,
-     *     DefaultMessage?: Message,
-     *     EmailMessage?: CampaignEmailMessage,
-     *     GCMMessage?: Message,
-     *     SMSMessage?: CampaignSmsMessage,
-     *     InAppMessage?: CampaignInAppMessage
+     *     ADMMessage?: Message|null,
+     *     APNSMessage?: Message|null,
+     *     BaiduMessage?: Message|null,
+     *     CustomMessage?: CampaignCustomMessage|null,
+     *     DefaultMessage?: Message|null,
+     *     EmailMessage?: CampaignEmailMessage|null,
+     *     GCMMessage?: Message|null,
+     *     SMSMessage?: CampaignSmsMessage|null,
+     *     InAppMessage?: CampaignInAppMessage|null
      * } $args
      */
     public function __construct(array $args = [])

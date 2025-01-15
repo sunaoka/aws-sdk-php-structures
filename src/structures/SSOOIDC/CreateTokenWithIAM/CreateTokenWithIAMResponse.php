@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\SSOOIDC\CreateTokenWithIAM;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $accessToken
- * @property string $tokenType
- * @property int $expiresIn
- * @property string $refreshToken
- * @property string $idToken
- * @property string $issuedTokenType
- * @property list<string> $scope
+ * @property string|null $accessToken
+ * @property string|null $tokenType
+ * @property int|null $expiresIn
+ * @property string|null $refreshToken
+ * @property string|null $idToken
+ * @property string|null $issuedTokenType
+ * @property list<string>|null $scope
  */
 class CreateTokenWithIAMResponse extends Response
 {

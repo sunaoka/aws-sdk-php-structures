@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListApplications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationUrl
+ * @property string|null $ApplicationUrl
  * @property 'IDENTITY_CENTER'|'APPLICATION' $Origin
  */
 class SignInOptions extends Shape
 {
     /**
      * @param array{
-     *     ApplicationUrl?: string,
+     *     ApplicationUrl?: string|null,
      *     Origin: 'IDENTITY_CENTER'|'APPLICATION'
      * } $args
      */

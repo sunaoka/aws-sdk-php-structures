@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property Shapes\AccelerateConfiguration $AccelerateConfiguration
- * @property string $ExpectedBucketOwner
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
+ * @property string|null $ExpectedBucketOwner
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  */
 class PutBucketAccelerateConfigurationRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutBucketAccelerateConfigurationRequest extends Request
      * @param array{
      *     Bucket: string,
      *     AccelerateConfiguration: Shapes\AccelerateConfiguration,
-     *     ExpectedBucketOwner?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'
+     *     ExpectedBucketOwner?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeBackup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\BackupDescription $BackupDescription
+ * @property Shapes\BackupDescription|null $BackupDescription
  */
 class DescribeBackupResponse extends Response
 {

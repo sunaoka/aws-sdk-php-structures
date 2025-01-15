@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FIS\GetExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucketName
- * @property string $prefix
+ * @property string|null $bucketName
+ * @property string|null $prefix
  */
 class ExperimentS3LogConfiguration extends Shape
 {
     /**
      * @param array{
-     *     bucketName?: string,
-     *     prefix?: string
+     *     bucketName?: string|null,
+     *     prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

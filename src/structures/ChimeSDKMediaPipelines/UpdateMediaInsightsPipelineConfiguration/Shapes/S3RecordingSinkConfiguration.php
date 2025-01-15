@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\UpdateMediaInsightsPipel
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Destination
- * @property 'Wav'|'Opus' $RecordingFileFormat
+ * @property string|null $Destination
+ * @property 'Wav'|'Opus'|null $RecordingFileFormat
  */
 class S3RecordingSinkConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Destination?: string,
-     *     RecordingFileFormat?: 'Wav'|'Opus'
+     *     Destination?: string|null,
+     *     RecordingFileFormat?: 'Wav'|'Opus'|null
      * } $args
      */
     public function __construct(array $args = [])

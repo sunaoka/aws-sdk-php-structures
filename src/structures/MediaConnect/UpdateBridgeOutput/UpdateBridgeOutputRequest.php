@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BridgeArn
- * @property Shapes\UpdateBridgeNetworkOutputRequest $NetworkOutput
+ * @property Shapes\UpdateBridgeNetworkOutputRequest|null $NetworkOutput
  * @property string $OutputName
  */
 class UpdateBridgeOutputRequest extends Request
@@ -14,7 +14,7 @@ class UpdateBridgeOutputRequest extends Request
     /**
      * @param array{
      *     BridgeArn: string,
-     *     NetworkOutput?: Shapes\UpdateBridgeNetworkOutputRequest,
+     *     NetworkOutput?: Shapes\UpdateBridgeNetworkOutputRequest|null,
      *     OutputName: string
      * } $args
      */

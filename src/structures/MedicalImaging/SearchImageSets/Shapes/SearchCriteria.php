@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MedicalImaging\SearchImageSets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SearchFilter> $filters
- * @property Sort $sort
+ * @property list<SearchFilter>|null $filters
+ * @property Sort|null $sort
  */
 class SearchCriteria extends Shape
 {
     /**
      * @param array{
-     *     filters?: list<SearchFilter>,
-     *     sort?: Sort
+     *     filters?: list<SearchFilter>|null,
+     *     sort?: Sort|null
      * } $args
      */
     public function __construct(array $args = [])

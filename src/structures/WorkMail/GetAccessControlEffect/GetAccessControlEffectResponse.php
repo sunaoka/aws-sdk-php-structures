@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkMail\GetAccessControlEffect;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'ALLOW'|'DENY' $Effect
- * @property list<string> $MatchedRules
+ * @property 'ALLOW'|'DENY'|null $Effect
+ * @property list<string>|null $MatchedRules
  */
 class GetAccessControlEffectResponse extends Response
 {

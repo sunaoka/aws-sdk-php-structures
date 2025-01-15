@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MQ\DescribeBroker\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Audit
- * @property string $AuditLogGroup
+ * @property bool|null $Audit
+ * @property string|null $AuditLogGroup
  * @property bool $General
  * @property string $GeneralLogGroup
- * @property PendingLogs $Pending
+ * @property PendingLogs|null $Pending
  */
 class LogsSummary extends Shape
 {
     /**
      * @param array{
-     *     Audit?: bool,
-     *     AuditLogGroup?: string,
+     *     Audit?: bool|null,
+     *     AuditLogGroup?: string|null,
      *     General: bool,
      *     GeneralLogGroup: string,
-     *     Pending?: PendingLogs
+     *     Pending?: PendingLogs|null
      * } $args
      */
     public function __construct(array $args)

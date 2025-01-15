@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEventTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $description
- * @property list<string> $eventVariables
- * @property list<string> $labels
- * @property list<string> $entityTypes
- * @property 'ENABLED'|'DISABLED' $eventIngestion
- * @property IngestedEventStatistics $ingestedEventStatistics
- * @property string $lastUpdatedTime
- * @property string $createdTime
- * @property string $arn
- * @property EventOrchestration $eventOrchestration
+ * @property string|null $name
+ * @property string|null $description
+ * @property list<string>|null $eventVariables
+ * @property list<string>|null $labels
+ * @property list<string>|null $entityTypes
+ * @property 'ENABLED'|'DISABLED'|null $eventIngestion
+ * @property IngestedEventStatistics|null $ingestedEventStatistics
+ * @property string|null $lastUpdatedTime
+ * @property string|null $createdTime
+ * @property string|null $arn
+ * @property EventOrchestration|null $eventOrchestration
  */
 class EventType extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     description?: string,
-     *     eventVariables?: list<string>,
-     *     labels?: list<string>,
-     *     entityTypes?: list<string>,
-     *     eventIngestion?: 'ENABLED'|'DISABLED',
-     *     ingestedEventStatistics?: IngestedEventStatistics,
-     *     lastUpdatedTime?: string,
-     *     createdTime?: string,
-     *     arn?: string,
-     *     eventOrchestration?: EventOrchestration
+     *     name?: string|null,
+     *     description?: string|null,
+     *     eventVariables?: list<string>|null,
+     *     labels?: list<string>|null,
+     *     entityTypes?: list<string>|null,
+     *     eventIngestion?: 'ENABLED'|'DISABLED'|null,
+     *     ingestedEventStatistics?: IngestedEventStatistics|null,
+     *     lastUpdatedTime?: string|null,
+     *     createdTime?: string|null,
+     *     arn?: string|null,
+     *     eventOrchestration?: EventOrchestration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $count
- * @property 'dataCollectionTaskToBeScheduled'|'dataCollectionTaskScheduled'|'dataCollectionTaskStarted'|'dataCollectionTaskStopped'|'dataCollectionTaskSuccess'|'dataCollectionTaskFailed'|'dataCollectionTaskPartialSuccess' $runTimeAssessmentStatus
+ * @property int|null $count
+ * @property 'dataCollectionTaskToBeScheduled'|'dataCollectionTaskScheduled'|'dataCollectionTaskStarted'|'dataCollectionTaskStopped'|'dataCollectionTaskSuccess'|'dataCollectionTaskFailed'|'dataCollectionTaskPartialSuccess'|null $runTimeAssessmentStatus
  */
 class ServerStatusSummary extends Shape
 {
     /**
      * @param array{
-     *     count?: int,
-     *     runTimeAssessmentStatus?: 'dataCollectionTaskToBeScheduled'|'dataCollectionTaskScheduled'|'dataCollectionTaskStarted'|'dataCollectionTaskStopped'|'dataCollectionTaskSuccess'|'dataCollectionTaskFailed'|'dataCollectionTaskPartialSuccess'
+     *     count?: int|null,
+     *     runTimeAssessmentStatus?: 'dataCollectionTaskToBeScheduled'|'dataCollectionTaskScheduled'|'dataCollectionTaskStarted'|'dataCollectionTaskStopped'|'dataCollectionTaskSuccess'|'dataCollectionTaskFailed'|'dataCollectionTaskPartialSuccess'|null
      * } $args
      */
     public function __construct(array $args = [])

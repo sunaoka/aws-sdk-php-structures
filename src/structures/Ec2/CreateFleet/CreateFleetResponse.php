@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateFleet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FleetId
- * @property list<Shapes\CreateFleetError> $Errors
- * @property list<Shapes\CreateFleetInstance> $Instances
+ * @property string|null $FleetId
+ * @property list<Shapes\CreateFleetError>|null $Errors
+ * @property list<Shapes\CreateFleetInstance>|null $Instances
  */
 class CreateFleetResponse extends Response
 {

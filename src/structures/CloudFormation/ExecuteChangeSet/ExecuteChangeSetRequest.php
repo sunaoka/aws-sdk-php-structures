@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChangeSetName
- * @property string $StackName
- * @property string $ClientRequestToken
- * @property bool $DisableRollback
- * @property bool $RetainExceptOnCreate
+ * @property string|null $StackName
+ * @property string|null $ClientRequestToken
+ * @property bool|null $DisableRollback
+ * @property bool|null $RetainExceptOnCreate
  */
 class ExecuteChangeSetRequest extends Request
 {
     /**
      * @param array{
      *     ChangeSetName: string,
-     *     StackName?: string,
-     *     ClientRequestToken?: string,
-     *     DisableRollback?: bool,
-     *     RetainExceptOnCreate?: bool
+     *     StackName?: string|null,
+     *     ClientRequestToken?: string|null,
+     *     DisableRollback?: bool|null,
+     *     RetainExceptOnCreate?: bool|null
      * } $args
      */
     public function __construct(array $args)

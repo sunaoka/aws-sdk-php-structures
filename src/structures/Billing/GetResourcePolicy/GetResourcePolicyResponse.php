@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $resourceArn
- * @property string $policy
+ * @property string|null $policy
  */
 class GetResourcePolicyResponse extends Response
 {

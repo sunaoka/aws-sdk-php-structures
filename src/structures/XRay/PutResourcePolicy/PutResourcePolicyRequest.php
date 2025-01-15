@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PolicyName
  * @property string $PolicyDocument
- * @property string $PolicyRevisionId
- * @property bool $BypassPolicyLockoutCheck
+ * @property string|null $PolicyRevisionId
+ * @property bool|null $BypassPolicyLockoutCheck
  */
 class PutResourcePolicyRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutResourcePolicyRequest extends Request
      * @param array{
      *     PolicyName: string,
      *     PolicyDocument: string,
-     *     PolicyRevisionId?: string,
-     *     BypassPolicyLockoutCheck?: bool
+     *     PolicyRevisionId?: string|null,
+     *     BypassPolicyLockoutCheck?: bool|null
      * } $args
      */
     public function __construct(array $args)

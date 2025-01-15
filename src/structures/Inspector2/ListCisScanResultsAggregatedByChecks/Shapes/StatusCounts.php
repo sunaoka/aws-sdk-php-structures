@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScanResultsAggregatedByChecks
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $failed
- * @property int $passed
- * @property int $skipped
+ * @property int|null $failed
+ * @property int|null $passed
+ * @property int|null $skipped
  */
 class StatusCounts extends Shape
 {
     /**
      * @param array{
-     *     failed?: int,
-     *     passed?: int,
-     *     skipped?: int
+     *     failed?: int|null,
+     *     passed?: int|null,
+     *     skipped?: int|null
      * } $args
      */
     public function __construct(array $args = [])

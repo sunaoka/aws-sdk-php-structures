@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\CreateOutboundConnection\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'VALIDATING'|'VALIDATION_FAILED'|'PENDING_ACCEPTANCE'|'APPROVED'|'PROVISIONING'|'ACTIVE'|'REJECTING'|'REJECTED'|'DELETING'|'DELETED' $StatusCode
- * @property string $Message
+ * @property 'VALIDATING'|'VALIDATION_FAILED'|'PENDING_ACCEPTANCE'|'APPROVED'|'PROVISIONING'|'ACTIVE'|'REJECTING'|'REJECTED'|'DELETING'|'DELETED'|null $StatusCode
+ * @property string|null $Message
  */
 class OutboundConnectionStatus extends Shape
 {
     /**
      * @param array{
-     *     StatusCode?: 'VALIDATING'|'VALIDATION_FAILED'|'PENDING_ACCEPTANCE'|'APPROVED'|'PROVISIONING'|'ACTIVE'|'REJECTING'|'REJECTED'|'DELETING'|'DELETED',
-     *     Message?: string
+     *     StatusCode?: 'VALIDATING'|'VALIDATION_FAILED'|'PENDING_ACCEPTANCE'|'APPROVED'|'PROVISIONING'|'ACTIVE'|'REJECTING'|'REJECTED'|'DELETING'|'DELETED'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

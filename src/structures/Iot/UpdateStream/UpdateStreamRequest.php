@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $streamId
- * @property string $description
- * @property list<Shapes\StreamFile> $files
- * @property string $roleArn
+ * @property string|null $description
+ * @property list<Shapes\StreamFile>|null $files
+ * @property string|null $roleArn
  */
 class UpdateStreamRequest extends Request
 {
     /**
      * @param array{
      *     streamId: string,
-     *     description?: string,
-     *     files?: list<Shapes\StreamFile>,
-     *     roleArn?: string
+     *     description?: string|null,
+     *     files?: list<Shapes\StreamFile>|null,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

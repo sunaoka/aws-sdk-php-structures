@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataSync\ListAgents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AgentArn
- * @property string $Name
- * @property 'ONLINE'|'OFFLINE' $Status
- * @property Platform $Platform
+ * @property string|null $AgentArn
+ * @property string|null $Name
+ * @property 'ONLINE'|'OFFLINE'|null $Status
+ * @property Platform|null $Platform
  */
 class AgentListEntry extends Shape
 {
     /**
      * @param array{
-     *     AgentArn?: string,
-     *     Name?: string,
-     *     Status?: 'ONLINE'|'OFFLINE',
-     *     Platform?: Platform
+     *     AgentArn?: string|null,
+     *     Name?: string|null,
+     *     Status?: 'ONLINE'|'OFFLINE'|null,
+     *     Platform?: Platform|null
      * } $args
      */
     public function __construct(array $args = [])

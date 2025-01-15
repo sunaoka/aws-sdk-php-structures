@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DocDB\DescribeDBInstances;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DBInstanceIdentifier
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $DBInstanceIdentifier
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeDBInstancesRequest extends Request
 {
     /**
      * @param array{
-     *     DBInstanceIdentifier?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     DBInstanceIdentifier?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

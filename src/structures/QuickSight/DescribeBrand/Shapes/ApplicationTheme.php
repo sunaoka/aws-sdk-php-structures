@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeBrand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BrandColorPalette $BrandColorPalette
- * @property BrandElementStyle $BrandElementStyle
+ * @property BrandColorPalette|null $BrandColorPalette
+ * @property BrandElementStyle|null $BrandElementStyle
  */
 class ApplicationTheme extends Shape
 {
     /**
      * @param array{
-     *     BrandColorPalette?: BrandColorPalette,
-     *     BrandElementStyle?: BrandElementStyle
+     *     BrandColorPalette?: BrandColorPalette|null,
+     *     BrandElementStyle?: BrandElementStyle|null
      * } $args
      */
     public function __construct(array $args = [])

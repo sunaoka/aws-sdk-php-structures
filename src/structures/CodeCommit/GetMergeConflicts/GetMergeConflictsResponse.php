@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool $mergeable
  * @property string $destinationCommitId
  * @property string $sourceCommitId
- * @property string $baseCommitId
+ * @property string|null $baseCommitId
  * @property list<Shapes\ConflictMetadata> $conflictMetadataList
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class GetMergeConflictsResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\SetV2LoggingOptions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $roleArn
- * @property 'DEBUG'|'INFO'|'ERROR'|'WARN'|'DISABLED' $defaultLogLevel
- * @property bool $disableAllLogs
+ * @property string|null $roleArn
+ * @property 'DEBUG'|'INFO'|'ERROR'|'WARN'|'DISABLED'|null $defaultLogLevel
+ * @property bool|null $disableAllLogs
  */
 class SetV2LoggingOptionsRequest extends Request
 {
     /**
      * @param array{
-     *     roleArn?: string,
-     *     defaultLogLevel?: 'DEBUG'|'INFO'|'ERROR'|'WARN'|'DISABLED',
-     *     disableAllLogs?: bool
+     *     roleArn?: string|null,
+     *     defaultLogLevel?: 'DEBUG'|'INFO'|'ERROR'|'WARN'|'DISABLED'|null,
+     *     disableAllLogs?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

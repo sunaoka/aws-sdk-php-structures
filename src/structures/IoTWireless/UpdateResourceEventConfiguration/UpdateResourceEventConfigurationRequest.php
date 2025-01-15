@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Identifier
  * @property 'PartnerAccountId'|'DevEui'|'FuotaTaskId'|'GatewayEui'|'WirelessDeviceId'|'WirelessGatewayId' $IdentifierType
- * @property 'Sidewalk' $PartnerType
- * @property Shapes\DeviceRegistrationStateEventConfiguration $DeviceRegistrationState
- * @property Shapes\ProximityEventConfiguration $Proximity
- * @property Shapes\JoinEventConfiguration $Join
- * @property Shapes\ConnectionStatusEventConfiguration $ConnectionStatus
- * @property Shapes\MessageDeliveryStatusEventConfiguration $MessageDeliveryStatus
+ * @property 'Sidewalk'|null $PartnerType
+ * @property Shapes\DeviceRegistrationStateEventConfiguration|null $DeviceRegistrationState
+ * @property Shapes\ProximityEventConfiguration|null $Proximity
+ * @property Shapes\JoinEventConfiguration|null $Join
+ * @property Shapes\ConnectionStatusEventConfiguration|null $ConnectionStatus
+ * @property Shapes\MessageDeliveryStatusEventConfiguration|null $MessageDeliveryStatus
  */
 class UpdateResourceEventConfigurationRequest extends Request
 {
@@ -20,12 +20,12 @@ class UpdateResourceEventConfigurationRequest extends Request
      * @param array{
      *     Identifier: string,
      *     IdentifierType: 'PartnerAccountId'|'DevEui'|'FuotaTaskId'|'GatewayEui'|'WirelessDeviceId'|'WirelessGatewayId',
-     *     PartnerType?: 'Sidewalk',
-     *     DeviceRegistrationState?: Shapes\DeviceRegistrationStateEventConfiguration,
-     *     Proximity?: Shapes\ProximityEventConfiguration,
-     *     Join?: Shapes\JoinEventConfiguration,
-     *     ConnectionStatus?: Shapes\ConnectionStatusEventConfiguration,
-     *     MessageDeliveryStatus?: Shapes\MessageDeliveryStatusEventConfiguration
+     *     PartnerType?: 'Sidewalk'|null,
+     *     DeviceRegistrationState?: Shapes\DeviceRegistrationStateEventConfiguration|null,
+     *     Proximity?: Shapes\ProximityEventConfiguration|null,
+     *     Join?: Shapes\JoinEventConfiguration|null,
+     *     ConnectionStatus?: Shapes\ConnectionStatusEventConfiguration|null,
+     *     MessageDeliveryStatus?: Shapes\MessageDeliveryStatusEventConfiguration|null
      * } $args
      */
     public function __construct(array $args)

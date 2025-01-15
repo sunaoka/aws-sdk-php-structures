@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CancelReplicationTaskA
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Passed
- * @property int $Failed
- * @property int $Error
- * @property int $Warning
- * @property int $Cancelled
+ * @property int|null $Passed
+ * @property int|null $Failed
+ * @property int|null $Error
+ * @property int|null $Warning
+ * @property int|null $Cancelled
  */
 class ReplicationTaskAssessmentRunResultStatistic extends Shape
 {
     /**
      * @param array{
-     *     Passed?: int,
-     *     Failed?: int,
-     *     Error?: int,
-     *     Warning?: int,
-     *     Cancelled?: int
+     *     Passed?: int|null,
+     *     Failed?: int|null,
+     *     Error?: int|null,
+     *     Warning?: int|null,
+     *     Cancelled?: int|null
      * } $args
      */
     public function __construct(array $args = [])

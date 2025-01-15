@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\CreateDataset;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $datasetId
+ * @property string|null $datasetId
  * @property string $datasetName
- * @property string $datasetDescription
+ * @property string|null $datasetDescription
  * @property Shapes\DatasetSource $datasetSource
- * @property string $clientToken
- * @property array<string, string> $tags
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateDatasetRequest extends Request
 {
     /**
      * @param array{
-     *     datasetId?: string,
+     *     datasetId?: string|null,
      *     datasetName: string,
-     *     datasetDescription?: string,
+     *     datasetDescription?: string|null,
      *     datasetSource: Shapes\DatasetSource,
-     *     clientToken?: string,
-     *     tags?: array<string, string>
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SnowBall\DescribeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NFSOnDeviceServiceConfiguration $NFSOnDeviceService
- * @property TGWOnDeviceServiceConfiguration $TGWOnDeviceService
- * @property EKSOnDeviceServiceConfiguration $EKSOnDeviceService
- * @property S3OnDeviceServiceConfiguration $S3OnDeviceService
+ * @property NFSOnDeviceServiceConfiguration|null $NFSOnDeviceService
+ * @property TGWOnDeviceServiceConfiguration|null $TGWOnDeviceService
+ * @property EKSOnDeviceServiceConfiguration|null $EKSOnDeviceService
+ * @property S3OnDeviceServiceConfiguration|null $S3OnDeviceService
  */
 class OnDeviceServiceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     NFSOnDeviceService?: NFSOnDeviceServiceConfiguration,
-     *     TGWOnDeviceService?: TGWOnDeviceServiceConfiguration,
-     *     EKSOnDeviceService?: EKSOnDeviceServiceConfiguration,
-     *     S3OnDeviceService?: S3OnDeviceServiceConfiguration
+     *     NFSOnDeviceService?: NFSOnDeviceServiceConfiguration|null,
+     *     TGWOnDeviceService?: TGWOnDeviceServiceConfiguration|null,
+     *     EKSOnDeviceService?: EKSOnDeviceServiceConfiguration|null,
+     *     S3OnDeviceService?: S3OnDeviceServiceConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

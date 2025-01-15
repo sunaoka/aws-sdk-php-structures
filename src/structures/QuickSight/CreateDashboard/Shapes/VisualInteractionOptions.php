@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VisualMenuOption $VisualMenuOption
- * @property ContextMenuOption $ContextMenuOption
+ * @property VisualMenuOption|null $VisualMenuOption
+ * @property ContextMenuOption|null $ContextMenuOption
  */
 class VisualInteractionOptions extends Shape
 {
     /**
      * @param array{
-     *     VisualMenuOption?: VisualMenuOption,
-     *     ContextMenuOption?: ContextMenuOption
+     *     VisualMenuOption?: VisualMenuOption|null,
+     *     ContextMenuOption?: ContextMenuOption|null
      * } $args
      */
     public function __construct(array $args = [])

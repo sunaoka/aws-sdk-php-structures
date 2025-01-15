@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\EKS\ListAccessEntries;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $accessEntries
- * @property string $nextToken
+ * @property list<string>|null $accessEntries
+ * @property string|null $nextToken
  */
 class ListAccessEntriesResponse extends Response
 {

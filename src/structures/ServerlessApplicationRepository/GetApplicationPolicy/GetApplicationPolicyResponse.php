@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServerlessApplicationRepository\GetApplicationP
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ApplicationPolicyStatement> $Statements
+ * @property list<Shapes\ApplicationPolicyStatement>|null $Statements
  */
 class GetApplicationPolicyResponse extends Response
 {

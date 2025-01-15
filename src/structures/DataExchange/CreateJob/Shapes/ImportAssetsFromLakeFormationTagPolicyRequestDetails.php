@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $CatalogId
- * @property DatabaseLFTagPolicyAndPermissions $Database
- * @property TableLFTagPolicyAndPermissions $Table
+ * @property DatabaseLFTagPolicyAndPermissions|null $Database
+ * @property TableLFTagPolicyAndPermissions|null $Table
  * @property string $RoleArn
  * @property string $DataSetId
  * @property string $RevisionId
@@ -17,8 +17,8 @@ class ImportAssetsFromLakeFormationTagPolicyRequestDetails extends Shape
     /**
      * @param array{
      *     CatalogId: string,
-     *     Database?: DatabaseLFTagPolicyAndPermissions,
-     *     Table?: TableLFTagPolicyAndPermissions,
+     *     Database?: DatabaseLFTagPolicyAndPermissions|null,
+     *     Table?: TableLFTagPolicyAndPermissions|null,
      *     RoleArn: string,
      *     DataSetId: string,
      *     RevisionId: string

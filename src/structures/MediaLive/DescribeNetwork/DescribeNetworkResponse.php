@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeNetwork;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property list<string> $AssociatedClusterIds
- * @property string $Id
- * @property list<Shapes\IpPool> $IpPools
- * @property string $Name
- * @property list<Shapes\Route> $Routes
- * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'IDLE'|'IN_USE'|'UPDATING'|'DELETE_FAILED'|'DELETED' $State
+ * @property string|null $Arn
+ * @property list<string>|null $AssociatedClusterIds
+ * @property string|null $Id
+ * @property list<Shapes\IpPool>|null $IpPools
+ * @property string|null $Name
+ * @property list<Shapes\Route>|null $Routes
+ * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'IDLE'|'IN_USE'|'UPDATING'|'DELETE_FAILED'|'DELETED'|null $State
  */
 class DescribeNetworkResponse extends Response
 {

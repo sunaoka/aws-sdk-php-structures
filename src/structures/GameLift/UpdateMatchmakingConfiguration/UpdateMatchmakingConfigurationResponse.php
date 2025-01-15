@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GameLift\UpdateMatchmakingConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\MatchmakingConfiguration $Configuration
+ * @property Shapes\MatchmakingConfiguration|null $Configuration
  */
 class UpdateMatchmakingConfigurationResponse extends Response
 {

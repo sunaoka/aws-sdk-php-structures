@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ResourceType
- * @property string $LogicalResourceId
+ * @property string|null $LogicalResourceId
  * @property array<string, string> $ResourceIdentifier
  */
 class ResourceDefinition extends Shape
@@ -14,7 +14,7 @@ class ResourceDefinition extends Shape
     /**
      * @param array{
      *     ResourceType: string,
-     *     LogicalResourceId?: string,
+     *     LogicalResourceId?: string|null,
      *     ResourceIdentifier: array<string, string>
      * } $args
      */

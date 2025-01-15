@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'HOMEFOLDERS'|'GOOGLE_DRIVE'|'ONE_DRIVE' $ConnectorType
- * @property string $ResourceIdentifier
- * @property list<string> $Domains
+ * @property string|null $ResourceIdentifier
+ * @property list<string>|null $Domains
  */
 class StorageConnector extends Shape
 {
     /**
      * @param array{
      *     ConnectorType: 'HOMEFOLDERS'|'GOOGLE_DRIVE'|'ONE_DRIVE',
-     *     ResourceIdentifier?: string,
-     *     Domains?: list<string>
+     *     ResourceIdentifier?: string|null,
+     *     Domains?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

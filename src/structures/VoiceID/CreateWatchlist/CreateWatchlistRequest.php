@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\VoiceID\CreateWatchlist;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
- * @property string $Description
+ * @property string|null $ClientToken
+ * @property string|null $Description
  * @property string $DomainId
  * @property string $Name
  */
@@ -14,8 +14,8 @@ class CreateWatchlistRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
-     *     Description?: string,
+     *     ClientToken?: string|null,
+     *     Description?: string|null,
      *     DomainId: string,
      *     Name: string
      * } $args

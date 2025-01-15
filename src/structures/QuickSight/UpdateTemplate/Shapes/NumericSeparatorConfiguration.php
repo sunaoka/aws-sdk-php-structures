@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'COMMA'|'DOT'|'SPACE' $DecimalSeparator
- * @property ThousandSeparatorOptions $ThousandsSeparator
+ * @property 'COMMA'|'DOT'|'SPACE'|null $DecimalSeparator
+ * @property ThousandSeparatorOptions|null $ThousandsSeparator
  */
 class NumericSeparatorConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DecimalSeparator?: 'COMMA'|'DOT'|'SPACE',
-     *     ThousandsSeparator?: ThousandSeparatorOptions
+     *     DecimalSeparator?: 'COMMA'|'DOT'|'SPACE'|null,
+     *     ThousandsSeparator?: ThousandSeparatorOptions|null
      * } $args
      */
     public function __construct(array $args = [])

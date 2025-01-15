@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancerPolici
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\PolicyDescription> $PolicyDescriptions
+ * @property list<Shapes\PolicyDescription>|null $PolicyDescriptions
  */
 class DescribeLoadBalancerPoliciesResponse extends Response
 {

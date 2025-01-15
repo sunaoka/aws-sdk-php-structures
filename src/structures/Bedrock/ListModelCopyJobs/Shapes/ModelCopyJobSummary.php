@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'InProgress'|'Completed'|'Failed' $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $targetModelArn
- * @property string $targetModelName
+ * @property string|null $targetModelName
  * @property string $sourceAccountId
  * @property string $sourceModelArn
- * @property string $targetModelKmsKeyArn
- * @property list<Tag> $targetModelTags
- * @property string $failureMessage
- * @property string $sourceModelName
+ * @property string|null $targetModelKmsKeyArn
+ * @property list<Tag>|null $targetModelTags
+ * @property string|null $failureMessage
+ * @property string|null $sourceModelName
  */
 class ModelCopyJobSummary extends Shape
 {
@@ -25,13 +25,13 @@ class ModelCopyJobSummary extends Shape
      *     status: 'InProgress'|'Completed'|'Failed',
      *     creationTime: \Aws\Api\DateTimeResult,
      *     targetModelArn: string,
-     *     targetModelName?: string,
+     *     targetModelName?: string|null,
      *     sourceAccountId: string,
      *     sourceModelArn: string,
-     *     targetModelKmsKeyArn?: string,
-     *     targetModelTags?: list<Tag>,
-     *     failureMessage?: string,
-     *     sourceModelName?: string
+     *     targetModelKmsKeyArn?: string|null,
+     *     targetModelTags?: list<Tag>|null,
+     *     failureMessage?: string|null,
+     *     sourceModelName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\EntityResolution\UpdateSchemaMapping;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property list<Shapes\SchemaInputAttribute> $mappedInputFields
  * @property string $schemaName
  */
@@ -13,7 +13,7 @@ class UpdateSchemaMappingRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     mappedInputFields: list<Shapes\SchemaInputAttribute>,
      *     schemaName: string
      * } $args

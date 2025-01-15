@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\DescribeDeviceEc2Instances
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $amiLaunchIndex
- * @property list<InstanceBlockDeviceMapping> $blockDeviceMappings
- * @property CpuOptions $cpuOptions
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $imageId
- * @property string $instanceId
- * @property string $instanceType
- * @property string $privateIpAddress
- * @property string $publicIpAddress
- * @property string $rootDeviceName
- * @property list<SecurityGroupIdentifier> $securityGroups
- * @property InstanceState $state
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property int|null $amiLaunchIndex
+ * @property list<InstanceBlockDeviceMapping>|null $blockDeviceMappings
+ * @property CpuOptions|null $cpuOptions
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $imageId
+ * @property string|null $instanceId
+ * @property string|null $instanceType
+ * @property string|null $privateIpAddress
+ * @property string|null $publicIpAddress
+ * @property string|null $rootDeviceName
+ * @property list<SecurityGroupIdentifier>|null $securityGroups
+ * @property InstanceState|null $state
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class Instance extends Shape
 {
     /**
      * @param array{
-     *     amiLaunchIndex?: int,
-     *     blockDeviceMappings?: list<InstanceBlockDeviceMapping>,
-     *     cpuOptions?: CpuOptions,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     imageId?: string,
-     *     instanceId?: string,
-     *     instanceType?: string,
-     *     privateIpAddress?: string,
-     *     publicIpAddress?: string,
-     *     rootDeviceName?: string,
-     *     securityGroups?: list<SecurityGroupIdentifier>,
-     *     state?: InstanceState,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     amiLaunchIndex?: int|null,
+     *     blockDeviceMappings?: list<InstanceBlockDeviceMapping>|null,
+     *     cpuOptions?: CpuOptions|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     imageId?: string|null,
+     *     instanceId?: string|null,
+     *     instanceType?: string|null,
+     *     privateIpAddress?: string|null,
+     *     publicIpAddress?: string|null,
+     *     rootDeviceName?: string|null,
+     *     securityGroups?: list<SecurityGroupIdentifier>|null,
+     *     state?: InstanceState|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

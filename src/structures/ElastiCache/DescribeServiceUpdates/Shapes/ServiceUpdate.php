@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeServiceUpdates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceUpdateName
- * @property \Aws\Api\DateTimeResult $ServiceUpdateReleaseDate
- * @property \Aws\Api\DateTimeResult $ServiceUpdateEndDate
- * @property 'critical'|'important'|'medium'|'low' $ServiceUpdateSeverity
- * @property \Aws\Api\DateTimeResult $ServiceUpdateRecommendedApplyByDate
- * @property 'available'|'cancelled'|'expired' $ServiceUpdateStatus
- * @property string $ServiceUpdateDescription
- * @property 'security-update' $ServiceUpdateType
- * @property string $Engine
- * @property string $EngineVersion
- * @property bool $AutoUpdateAfterRecommendedApplyByDate
- * @property string $EstimatedUpdateTime
+ * @property string|null $ServiceUpdateName
+ * @property \Aws\Api\DateTimeResult|null $ServiceUpdateReleaseDate
+ * @property \Aws\Api\DateTimeResult|null $ServiceUpdateEndDate
+ * @property 'critical'|'important'|'medium'|'low'|null $ServiceUpdateSeverity
+ * @property \Aws\Api\DateTimeResult|null $ServiceUpdateRecommendedApplyByDate
+ * @property 'available'|'cancelled'|'expired'|null $ServiceUpdateStatus
+ * @property string|null $ServiceUpdateDescription
+ * @property 'security-update'|null $ServiceUpdateType
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property bool|null $AutoUpdateAfterRecommendedApplyByDate
+ * @property string|null $EstimatedUpdateTime
  */
 class ServiceUpdate extends Shape
 {
     /**
      * @param array{
-     *     ServiceUpdateName?: string,
-     *     ServiceUpdateReleaseDate?: \Aws\Api\DateTimeResult,
-     *     ServiceUpdateEndDate?: \Aws\Api\DateTimeResult,
-     *     ServiceUpdateSeverity?: 'critical'|'important'|'medium'|'low',
-     *     ServiceUpdateRecommendedApplyByDate?: \Aws\Api\DateTimeResult,
-     *     ServiceUpdateStatus?: 'available'|'cancelled'|'expired',
-     *     ServiceUpdateDescription?: string,
-     *     ServiceUpdateType?: 'security-update',
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     AutoUpdateAfterRecommendedApplyByDate?: bool,
-     *     EstimatedUpdateTime?: string
+     *     ServiceUpdateName?: string|null,
+     *     ServiceUpdateReleaseDate?: \Aws\Api\DateTimeResult|null,
+     *     ServiceUpdateEndDate?: \Aws\Api\DateTimeResult|null,
+     *     ServiceUpdateSeverity?: 'critical'|'important'|'medium'|'low'|null,
+     *     ServiceUpdateRecommendedApplyByDate?: \Aws\Api\DateTimeResult|null,
+     *     ServiceUpdateStatus?: 'available'|'cancelled'|'expired'|null,
+     *     ServiceUpdateDescription?: string|null,
+     *     ServiceUpdateType?: 'security-update'|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     AutoUpdateAfterRecommendedApplyByDate?: bool|null,
+     *     EstimatedUpdateTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

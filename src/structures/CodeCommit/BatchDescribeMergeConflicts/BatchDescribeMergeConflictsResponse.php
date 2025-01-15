@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Conflict> $conflicts
- * @property string $nextToken
- * @property list<Shapes\BatchDescribeMergeConflictsError> $errors
+ * @property string|null $nextToken
+ * @property list<Shapes\BatchDescribeMergeConflictsError>|null $errors
  * @property string $destinationCommitId
  * @property string $sourceCommitId
- * @property string $baseCommitId
+ * @property string|null $baseCommitId
  */
 class BatchDescribeMergeConflictsResponse extends Response
 {

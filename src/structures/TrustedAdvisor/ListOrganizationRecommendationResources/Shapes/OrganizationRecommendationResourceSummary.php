@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\TrustedAdvisor\ListOrganizationRecommendationRe
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
+ * @property string|null $accountId
  * @property string $arn
  * @property string $awsResourceId
- * @property 'excluded'|'included' $exclusionStatus
+ * @property 'excluded'|'included'|null $exclusionStatus
  * @property string $id
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property array<string, string> $metadata
@@ -20,10 +20,10 @@ class OrganizationRecommendationResourceSummary extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
+     *     accountId?: string|null,
      *     arn: string,
      *     awsResourceId: string,
-     *     exclusionStatus?: 'excluded'|'included',
+     *     exclusionStatus?: 'excluded'|'included'|null,
      *     id: string,
      *     lastUpdatedAt: \Aws\Api\DateTimeResult,
      *     metadata: array<string, string>,

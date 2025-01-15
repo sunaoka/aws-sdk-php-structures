@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImageStaticFile $ImageStaticFile
- * @property SpatialStaticFile $SpatialStaticFile
+ * @property ImageStaticFile|null $ImageStaticFile
+ * @property SpatialStaticFile|null $SpatialStaticFile
  */
 class StaticFile extends Shape
 {
     /**
      * @param array{
-     *     ImageStaticFile?: ImageStaticFile,
-     *     SpatialStaticFile?: SpatialStaticFile
+     *     ImageStaticFile?: ImageStaticFile|null,
+     *     SpatialStaticFile?: SpatialStaticFile|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\CreateOutboundConnection\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AWSDomainInformation $AWSDomainInformation
+ * @property AWSDomainInformation|null $AWSDomainInformation
  */
 class DomainInformationContainer extends Shape
 {
     /**
-     * @param array{AWSDomainInformation?: AWSDomainInformation} $args
+     * @param array{AWSDomainInformation?: AWSDomainInformation|null} $args
      */
     public function __construct(array $args = [])
     {

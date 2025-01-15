@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Pinpoint\ListTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  * @property string $CreationDate
- * @property string $DefaultSubstitutions
+ * @property string|null $DefaultSubstitutions
  * @property string $LastModifiedDate
- * @property array<string, string> $tags
- * @property string $TemplateDescription
+ * @property array<string, string>|null $tags
+ * @property string|null $TemplateDescription
  * @property string $TemplateName
  * @property 'EMAIL'|'SMS'|'VOICE'|'PUSH'|'INAPP' $TemplateType
- * @property string $Version
+ * @property string|null $Version
  */
 class TemplateResponse extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
+     *     Arn?: string|null,
      *     CreationDate: string,
-     *     DefaultSubstitutions?: string,
+     *     DefaultSubstitutions?: string|null,
      *     LastModifiedDate: string,
-     *     tags?: array<string, string>,
-     *     TemplateDescription?: string,
+     *     tags?: array<string, string>|null,
+     *     TemplateDescription?: string|null,
      *     TemplateName: string,
      *     TemplateType: 'EMAIL'|'SMS'|'VOICE'|'PUSH'|'INAPP',
-     *     Version?: string
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListMonitoredResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MonitoredResourceName
- * @property string $Type
- * @property 'FULL_PERMISSION'|'MISSING_PERMISSION' $ResourcePermission
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property ResourceCollection $ResourceCollection
+ * @property string|null $MonitoredResourceName
+ * @property string|null $Type
+ * @property 'FULL_PERMISSION'|'MISSING_PERMISSION'|null $ResourcePermission
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property ResourceCollection|null $ResourceCollection
  */
 class MonitoredResourceIdentifier extends Shape
 {
     /**
      * @param array{
-     *     MonitoredResourceName?: string,
-     *     Type?: string,
-     *     ResourcePermission?: 'FULL_PERMISSION'|'MISSING_PERMISSION',
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     ResourceCollection?: ResourceCollection
+     *     MonitoredResourceName?: string|null,
+     *     Type?: string|null,
+     *     ResourcePermission?: 'FULL_PERMISSION'|'MISSING_PERMISSION'|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     ResourceCollection?: ResourceCollection|null
      * } $args
      */
     public function __construct(array $args = [])

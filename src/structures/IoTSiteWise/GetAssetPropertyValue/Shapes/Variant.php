@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\GetAssetPropertyValue\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stringValue
- * @property int $integerValue
- * @property double $doubleValue
- * @property bool $booleanValue
+ * @property string|null $stringValue
+ * @property int|null $integerValue
+ * @property double|null $doubleValue
+ * @property bool|null $booleanValue
  */
 class Variant extends Shape
 {
     /**
      * @param array{
-     *     stringValue?: string,
-     *     integerValue?: int,
-     *     doubleValue?: double,
-     *     booleanValue?: bool
+     *     stringValue?: string|null,
+     *     integerValue?: int|null,
+     *     doubleValue?: double|null,
+     *     booleanValue?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

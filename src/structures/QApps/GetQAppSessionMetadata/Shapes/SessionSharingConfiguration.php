@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property bool $acceptResponses
- * @property bool $revealCards
+ * @property bool|null $acceptResponses
+ * @property bool|null $revealCards
  */
 class SessionSharingConfiguration extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     acceptResponses?: bool,
-     *     revealCards?: bool
+     *     acceptResponses?: bool|null,
+     *     revealCards?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property bool $ManagedbyFirewallManager
- * @property string $Id
- * @property int $Capacity
- * @property AwsWafv2WebAclCaptchaConfigDetails $CaptchaConfig
- * @property AwsWafv2WebAclActionDetails $DefaultAction
- * @property string $Description
- * @property list<AwsWafv2RulesDetails> $Rules
- * @property AwsWafv2VisibilityConfigDetails $VisibilityConfig
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property bool|null $ManagedbyFirewallManager
+ * @property string|null $Id
+ * @property int|null $Capacity
+ * @property AwsWafv2WebAclCaptchaConfigDetails|null $CaptchaConfig
+ * @property AwsWafv2WebAclActionDetails|null $DefaultAction
+ * @property string|null $Description
+ * @property list<AwsWafv2RulesDetails>|null $Rules
+ * @property AwsWafv2VisibilityConfigDetails|null $VisibilityConfig
  */
 class AwsWafv2WebAclDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Arn?: string,
-     *     ManagedbyFirewallManager?: bool,
-     *     Id?: string,
-     *     Capacity?: int,
-     *     CaptchaConfig?: AwsWafv2WebAclCaptchaConfigDetails,
-     *     DefaultAction?: AwsWafv2WebAclActionDetails,
-     *     Description?: string,
-     *     Rules?: list<AwsWafv2RulesDetails>,
-     *     VisibilityConfig?: AwsWafv2VisibilityConfigDetails
+     *     Name?: string|null,
+     *     Arn?: string|null,
+     *     ManagedbyFirewallManager?: bool|null,
+     *     Id?: string|null,
+     *     Capacity?: int|null,
+     *     CaptchaConfig?: AwsWafv2WebAclCaptchaConfigDetails|null,
+     *     DefaultAction?: AwsWafv2WebAclActionDetails|null,
+     *     Description?: string|null,
+     *     Rules?: list<AwsWafv2RulesDetails>|null,
+     *     VisibilityConfig?: AwsWafv2VisibilityConfigDetails|null
      * } $args
      */
     public function __construct(array $args = [])

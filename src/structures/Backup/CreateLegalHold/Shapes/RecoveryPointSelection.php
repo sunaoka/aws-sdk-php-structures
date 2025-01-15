@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Backup\CreateLegalHold\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $VaultNames
- * @property list<string> $ResourceIdentifiers
- * @property DateRange $DateRange
+ * @property list<string>|null $VaultNames
+ * @property list<string>|null $ResourceIdentifiers
+ * @property DateRange|null $DateRange
  */
 class RecoveryPointSelection extends Shape
 {
     /**
      * @param array{
-     *     VaultNames?: list<string>,
-     *     ResourceIdentifiers?: list<string>,
-     *     DateRange?: DateRange
+     *     VaultNames?: list<string>|null,
+     *     ResourceIdentifiers?: list<string>|null,
+     *     DateRange?: DateRange|null
      * } $args
      */
     public function __construct(array $args = [])

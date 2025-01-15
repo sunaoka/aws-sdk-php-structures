@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBProxyName
- * @property string $NewDBProxyName
- * @property list<Shapes\UserAuthConfig> $Auth
- * @property bool $RequireTLS
- * @property int $IdleClientTimeout
- * @property bool $DebugLogging
- * @property string $RoleArn
- * @property list<string> $SecurityGroups
+ * @property string|null $NewDBProxyName
+ * @property list<Shapes\UserAuthConfig>|null $Auth
+ * @property bool|null $RequireTLS
+ * @property int|null $IdleClientTimeout
+ * @property bool|null $DebugLogging
+ * @property string|null $RoleArn
+ * @property list<string>|null $SecurityGroups
  */
 class ModifyDBProxyRequest extends Request
 {
     /**
      * @param array{
      *     DBProxyName: string,
-     *     NewDBProxyName?: string,
-     *     Auth?: list<Shapes\UserAuthConfig>,
-     *     RequireTLS?: bool,
-     *     IdleClientTimeout?: int,
-     *     DebugLogging?: bool,
-     *     RoleArn?: string,
-     *     SecurityGroups?: list<string>
+     *     NewDBProxyName?: string|null,
+     *     Auth?: list<Shapes\UserAuthConfig>|null,
+     *     RequireTLS?: bool|null,
+     *     IdleClientTimeout?: int|null,
+     *     DebugLogging?: bool|null,
+     *     RoleArn?: string|null,
+     *     SecurityGroups?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

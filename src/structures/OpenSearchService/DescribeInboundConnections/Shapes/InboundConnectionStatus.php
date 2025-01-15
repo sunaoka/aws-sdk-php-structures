@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeInboundConnections\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PENDING_ACCEPTANCE'|'APPROVED'|'PROVISIONING'|'ACTIVE'|'REJECTING'|'REJECTED'|'DELETING'|'DELETED' $StatusCode
- * @property string $Message
+ * @property 'PENDING_ACCEPTANCE'|'APPROVED'|'PROVISIONING'|'ACTIVE'|'REJECTING'|'REJECTED'|'DELETING'|'DELETED'|null $StatusCode
+ * @property string|null $Message
  */
 class InboundConnectionStatus extends Shape
 {
     /**
      * @param array{
-     *     StatusCode?: 'PENDING_ACCEPTANCE'|'APPROVED'|'PROVISIONING'|'ACTIVE'|'REJECTING'|'REJECTED'|'DELETING'|'DELETED',
-     *     Message?: string
+     *     StatusCode?: 'PENDING_ACCEPTANCE'|'APPROVED'|'PROVISIONING'|'ACTIVE'|'REJECTING'|'REJECTED'|'DELETING'|'DELETED'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Glue\ListStatements\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StatementOutputData $Data
- * @property int $ExecutionCount
- * @property 'WAITING'|'RUNNING'|'AVAILABLE'|'CANCELLING'|'CANCELLED'|'ERROR' $Status
- * @property string $ErrorName
- * @property string $ErrorValue
- * @property list<string> $Traceback
+ * @property StatementOutputData|null $Data
+ * @property int|null $ExecutionCount
+ * @property 'WAITING'|'RUNNING'|'AVAILABLE'|'CANCELLING'|'CANCELLED'|'ERROR'|null $Status
+ * @property string|null $ErrorName
+ * @property string|null $ErrorValue
+ * @property list<string>|null $Traceback
  */
 class StatementOutput extends Shape
 {
     /**
      * @param array{
-     *     Data?: StatementOutputData,
-     *     ExecutionCount?: int,
-     *     Status?: 'WAITING'|'RUNNING'|'AVAILABLE'|'CANCELLING'|'CANCELLED'|'ERROR',
-     *     ErrorName?: string,
-     *     ErrorValue?: string,
-     *     Traceback?: list<string>
+     *     Data?: StatementOutputData|null,
+     *     ExecutionCount?: int|null,
+     *     Status?: 'WAITING'|'RUNNING'|'AVAILABLE'|'CANCELLING'|'CANCELLED'|'ERROR'|null,
+     *     ErrorName?: string|null,
+     *     ErrorValue?: string|null,
+     *     Traceback?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

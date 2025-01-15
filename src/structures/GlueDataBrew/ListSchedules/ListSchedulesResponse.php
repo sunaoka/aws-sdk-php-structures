@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Schedule> $Schedules
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListSchedulesResponse extends Response
 {

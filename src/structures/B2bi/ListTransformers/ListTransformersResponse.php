@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\TransformerSummary> $transformers
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListTransformersResponse extends Response
 {

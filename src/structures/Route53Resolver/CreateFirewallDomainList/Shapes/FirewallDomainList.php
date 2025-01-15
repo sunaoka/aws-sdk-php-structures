@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\CreateFirewallDomainList\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $Name
- * @property int $DomainCount
- * @property 'COMPLETE'|'COMPLETE_IMPORT_FAILED'|'IMPORTING'|'DELETING'|'UPDATING' $Status
- * @property string $StatusMessage
- * @property string $ManagedOwnerName
- * @property string $CreatorRequestId
- * @property string $CreationTime
- * @property string $ModificationTime
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property int|null $DomainCount
+ * @property 'COMPLETE'|'COMPLETE_IMPORT_FAILED'|'IMPORTING'|'DELETING'|'UPDATING'|null $Status
+ * @property string|null $StatusMessage
+ * @property string|null $ManagedOwnerName
+ * @property string|null $CreatorRequestId
+ * @property string|null $CreationTime
+ * @property string|null $ModificationTime
  */
 class FirewallDomainList extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     DomainCount?: int,
-     *     Status?: 'COMPLETE'|'COMPLETE_IMPORT_FAILED'|'IMPORTING'|'DELETING'|'UPDATING',
-     *     StatusMessage?: string,
-     *     ManagedOwnerName?: string,
-     *     CreatorRequestId?: string,
-     *     CreationTime?: string,
-     *     ModificationTime?: string
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     DomainCount?: int|null,
+     *     Status?: 'COMPLETE'|'COMPLETE_IMPORT_FAILED'|'IMPORTING'|'DELETING'|'UPDATING'|null,
+     *     StatusMessage?: string|null,
+     *     ManagedOwnerName?: string|null,
+     *     CreatorRequestId?: string|null,
+     *     CreationTime?: string|null,
+     *     ModificationTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyId
- * @property list<string> $GrantTokens
+ * @property list<string>|null $GrantTokens
  */
 class GetPublicKeyRequest extends Request
 {
     /**
      * @param array{
      *     KeyId: string,
-     *     GrantTokens?: list<string>
+     *     GrantTokens?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

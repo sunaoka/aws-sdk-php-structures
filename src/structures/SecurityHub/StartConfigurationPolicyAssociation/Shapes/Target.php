@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\StartConfigurationPolicyAssociation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $OrganizationalUnitId
- * @property string $RootId
+ * @property string|null $AccountId
+ * @property string|null $OrganizationalUnitId
+ * @property string|null $RootId
  */
 class Target extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     OrganizationalUnitId?: string,
-     *     RootId?: string
+     *     AccountId?: string|null,
+     *     OrganizationalUnitId?: string|null,
+     *     RootId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

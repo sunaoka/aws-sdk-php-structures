@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegistryId
- * @property string $RepositoryName
- * @property string $Architecture
- * @property string $ImageDigest
- * @property list<string> $ImageTags
- * @property string $ImagePublishedAt
+ * @property string|null $RegistryId
+ * @property string|null $RepositoryName
+ * @property string|null $Architecture
+ * @property string|null $ImageDigest
+ * @property list<string>|null $ImageTags
+ * @property string|null $ImagePublishedAt
  */
 class AwsEcrContainerImageDetails extends Shape
 {
     /**
      * @param array{
-     *     RegistryId?: string,
-     *     RepositoryName?: string,
-     *     Architecture?: string,
-     *     ImageDigest?: string,
-     *     ImageTags?: list<string>,
-     *     ImagePublishedAt?: string
+     *     RegistryId?: string|null,
+     *     RepositoryName?: string|null,
+     *     Architecture?: string|null,
+     *     ImageDigest?: string|null,
+     *     ImageTags?: list<string>|null,
+     *     ImagePublishedAt?: string|null
      * } $args
      */
     public function __construct(array $args = [])

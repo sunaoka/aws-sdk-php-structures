@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\StartEarthObservationJob\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PreviousEarthObservationJobArn
- * @property RasterDataCollectionQueryInput $RasterDataCollectionQuery
+ * @property string|null $PreviousEarthObservationJobArn
+ * @property RasterDataCollectionQueryInput|null $RasterDataCollectionQuery
  */
 class InputConfigInput extends Shape
 {
     /**
      * @param array{
-     *     PreviousEarthObservationJobArn?: string,
-     *     RasterDataCollectionQuery?: RasterDataCollectionQueryInput
+     *     PreviousEarthObservationJobArn?: string|null,
+     *     RasterDataCollectionQuery?: RasterDataCollectionQueryInput|null
      * } $args
      */
     public function __construct(array $args = [])

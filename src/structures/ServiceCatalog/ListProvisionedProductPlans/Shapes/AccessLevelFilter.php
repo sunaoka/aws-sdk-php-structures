@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListProvisionedProductPlans\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Account'|'Role'|'User' $Key
- * @property string $Value
+ * @property 'Account'|'Role'|'User'|null $Key
+ * @property string|null $Value
  */
 class AccessLevelFilter extends Shape
 {
     /**
      * @param array{
-     *     Key?: 'Account'|'Role'|'User',
-     *     Value?: string
+     *     Key?: 'Account'|'Role'|'User'|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

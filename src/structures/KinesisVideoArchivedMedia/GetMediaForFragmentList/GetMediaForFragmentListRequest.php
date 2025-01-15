@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\KinesisVideoArchivedMedia\GetMediaForFragmentLi
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
- * @property string $StreamARN
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
  * @property list<string> $Fragments
  */
 class GetMediaForFragmentListRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     StreamARN?: string,
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null,
      *     Fragments: list<string>
      * } $args
      */

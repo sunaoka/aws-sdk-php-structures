@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\OpsWorksCM\UpdateServer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DisableAutomatedBackup
- * @property int $BackupRetentionCount
+ * @property bool|null $DisableAutomatedBackup
+ * @property int|null $BackupRetentionCount
  * @property string $ServerName
- * @property string $PreferredMaintenanceWindow
- * @property string $PreferredBackupWindow
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $PreferredBackupWindow
  */
 class UpdateServerRequest extends Request
 {
     /**
      * @param array{
-     *     DisableAutomatedBackup?: bool,
-     *     BackupRetentionCount?: int,
+     *     DisableAutomatedBackup?: bool|null,
+     *     BackupRetentionCount?: int|null,
      *     ServerName: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     PreferredBackupWindow?: string
+     *     PreferredMaintenanceWindow?: string|null,
+     *     PreferredBackupWindow?: string|null
      * } $args
      */
     public function __construct(array $args)

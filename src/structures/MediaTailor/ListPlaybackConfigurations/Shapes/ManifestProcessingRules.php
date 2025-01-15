@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaTailor\ListPlaybackConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AdMarkerPassthrough $AdMarkerPassthrough
+ * @property AdMarkerPassthrough|null $AdMarkerPassthrough
  */
 class ManifestProcessingRules extends Shape
 {
     /**
-     * @param array{AdMarkerPassthrough?: AdMarkerPassthrough} $args
+     * @param array{AdMarkerPassthrough?: AdMarkerPassthrough|null} $args
      */
     public function __construct(array $args = [])
     {

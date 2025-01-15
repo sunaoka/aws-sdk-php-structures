@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Url
- * @property string $InvocationRole
- * @property string $DirectoryId
- * @property string $Function
- * @property 'PASSWORD'|'PUBLIC_KEY'|'PUBLIC_KEY_OR_PASSWORD'|'PUBLIC_KEY_AND_PASSWORD' $SftpAuthenticationMethods
+ * @property string|null $Url
+ * @property string|null $InvocationRole
+ * @property string|null $DirectoryId
+ * @property string|null $Function
+ * @property 'PASSWORD'|'PUBLIC_KEY'|'PUBLIC_KEY_OR_PASSWORD'|'PUBLIC_KEY_AND_PASSWORD'|null $SftpAuthenticationMethods
  */
 class IdentityProviderDetails extends Shape
 {
     /**
      * @param array{
-     *     Url?: string,
-     *     InvocationRole?: string,
-     *     DirectoryId?: string,
-     *     Function?: string,
-     *     SftpAuthenticationMethods?: 'PASSWORD'|'PUBLIC_KEY'|'PUBLIC_KEY_OR_PASSWORD'|'PUBLIC_KEY_AND_PASSWORD'
+     *     Url?: string|null,
+     *     InvocationRole?: string|null,
+     *     DirectoryId?: string|null,
+     *     Function?: string|null,
+     *     SftpAuthenticationMethods?: 'PASSWORD'|'PUBLIC_KEY'|'PUBLIC_KEY_OR_PASSWORD'|'PUBLIC_KEY_AND_PASSWORD'|null
      * } $args
      */
     public function __construct(array $args = [])

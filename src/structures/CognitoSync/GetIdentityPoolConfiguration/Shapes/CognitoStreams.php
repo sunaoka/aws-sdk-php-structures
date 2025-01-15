@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoSync\GetIdentityPoolConfiguration\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StreamName
- * @property string $RoleArn
- * @property 'ENABLED'|'DISABLED' $StreamingStatus
+ * @property string|null $StreamName
+ * @property string|null $RoleArn
+ * @property 'ENABLED'|'DISABLED'|null $StreamingStatus
  */
 class CognitoStreams extends Shape
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     RoleArn?: string,
-     *     StreamingStatus?: 'ENABLED'|'DISABLED'
+     *     StreamName?: string|null,
+     *     RoleArn?: string|null,
+     *     StreamingStatus?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ListChannelFlows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChannelFlowArn
- * @property string $Name
- * @property list<Processor> $Processors
+ * @property string|null $ChannelFlowArn
+ * @property string|null $Name
+ * @property list<Processor>|null $Processors
  */
 class ChannelFlowSummary extends Shape
 {
     /**
      * @param array{
-     *     ChannelFlowArn?: string,
-     *     Name?: string,
-     *     Processors?: list<Processor>
+     *     ChannelFlowArn?: string|null,
+     *     Name?: string|null,
+     *     Processors?: list<Processor>|null
      * } $args
      */
     public function __construct(array $args = [])

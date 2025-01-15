@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEnrollmentStatusesForOrgani
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property 'Active'|'Inactive'|'Pending'|'Failed' $status
- * @property string $statusReason
- * @property \Aws\Api\DateTimeResult $lastUpdatedTimestamp
+ * @property string|null $accountId
+ * @property 'Active'|'Inactive'|'Pending'|'Failed'|null $status
+ * @property string|null $statusReason
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTimestamp
  */
 class AccountEnrollmentStatus extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     status?: 'Active'|'Inactive'|'Pending'|'Failed',
-     *     statusReason?: string,
-     *     lastUpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     accountId?: string|null,
+     *     status?: 'Active'|'Inactive'|'Pending'|'Failed'|null,
+     *     statusReason?: string|null,
+     *     lastUpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

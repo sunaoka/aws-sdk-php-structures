@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\XRay\GetTraceSummaries;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TraceSummary> $TraceSummaries
- * @property \Aws\Api\DateTimeResult $ApproximateTime
- * @property int $TracesProcessedCount
- * @property string $NextToken
+ * @property list<Shapes\TraceSummary>|null $TraceSummaries
+ * @property \Aws\Api\DateTimeResult|null $ApproximateTime
+ * @property int|null $TracesProcessedCount
+ * @property string|null $NextToken
  */
 class GetTraceSummariesResponse extends Response
 {

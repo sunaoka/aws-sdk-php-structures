@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property int $Validity
+ * @property int|null $Validity
  */
 class CreateImageBuilderStreamingURLRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Validity?: int
+     *     Validity?: int|null
      * } $args
      */
     public function __construct(array $args)

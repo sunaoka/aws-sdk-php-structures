@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FMS\PutAdminAccount\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Regions
- * @property bool $AllRegionsEnabled
+ * @property list<string>|null $Regions
+ * @property bool|null $AllRegionsEnabled
  */
 class RegionScope extends Shape
 {
     /**
      * @param array{
-     *     Regions?: list<string>,
-     *     AllRegionsEnabled?: bool
+     *     Regions?: list<string>|null,
+     *     AllRegionsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

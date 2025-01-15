@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrimaryForeground
- * @property string $PrimaryBackground
- * @property string $SecondaryForeground
- * @property string $SecondaryBackground
- * @property string $Accent
- * @property string $AccentForeground
- * @property string $Danger
- * @property string $DangerForeground
- * @property string $Warning
- * @property string $WarningForeground
- * @property string $Success
- * @property string $SuccessForeground
- * @property string $Dimension
- * @property string $DimensionForeground
- * @property string $Measure
- * @property string $MeasureForeground
+ * @property string|null $PrimaryForeground
+ * @property string|null $PrimaryBackground
+ * @property string|null $SecondaryForeground
+ * @property string|null $SecondaryBackground
+ * @property string|null $Accent
+ * @property string|null $AccentForeground
+ * @property string|null $Danger
+ * @property string|null $DangerForeground
+ * @property string|null $Warning
+ * @property string|null $WarningForeground
+ * @property string|null $Success
+ * @property string|null $SuccessForeground
+ * @property string|null $Dimension
+ * @property string|null $DimensionForeground
+ * @property string|null $Measure
+ * @property string|null $MeasureForeground
  */
 class UIColorPalette extends Shape
 {
     /**
      * @param array{
-     *     PrimaryForeground?: string,
-     *     PrimaryBackground?: string,
-     *     SecondaryForeground?: string,
-     *     SecondaryBackground?: string,
-     *     Accent?: string,
-     *     AccentForeground?: string,
-     *     Danger?: string,
-     *     DangerForeground?: string,
-     *     Warning?: string,
-     *     WarningForeground?: string,
-     *     Success?: string,
-     *     SuccessForeground?: string,
-     *     Dimension?: string,
-     *     DimensionForeground?: string,
-     *     Measure?: string,
-     *     MeasureForeground?: string
+     *     PrimaryForeground?: string|null,
+     *     PrimaryBackground?: string|null,
+     *     SecondaryForeground?: string|null,
+     *     SecondaryBackground?: string|null,
+     *     Accent?: string|null,
+     *     AccentForeground?: string|null,
+     *     Danger?: string|null,
+     *     DangerForeground?: string|null,
+     *     Warning?: string|null,
+     *     WarningForeground?: string|null,
+     *     Success?: string|null,
+     *     SuccessForeground?: string|null,
+     *     Dimension?: string|null,
+     *     DimensionForeground?: string|null,
+     *     Measure?: string|null,
+     *     MeasureForeground?: string|null
      * } $args
      */
     public function __construct(array $args = [])

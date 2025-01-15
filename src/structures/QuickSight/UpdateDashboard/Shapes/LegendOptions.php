@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property LabelOptions $Title
- * @property 'AUTO'|'RIGHT'|'BOTTOM'|'TOP' $Position
- * @property string $Width
- * @property string $Height
- * @property FontConfiguration $ValueFontConfiguration
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property LabelOptions|null $Title
+ * @property 'AUTO'|'RIGHT'|'BOTTOM'|'TOP'|null $Position
+ * @property string|null $Width
+ * @property string|null $Height
+ * @property FontConfiguration|null $ValueFontConfiguration
  */
 class LegendOptions extends Shape
 {
     /**
      * @param array{
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     Title?: LabelOptions,
-     *     Position?: 'AUTO'|'RIGHT'|'BOTTOM'|'TOP',
-     *     Width?: string,
-     *     Height?: string,
-     *     ValueFontConfiguration?: FontConfiguration
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     Title?: LabelOptions|null,
+     *     Position?: 'AUTO'|'RIGHT'|'BOTTOM'|'TOP'|null,
+     *     Width?: string|null,
+     *     Height?: string|null,
+     *     ValueFontConfiguration?: FontConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

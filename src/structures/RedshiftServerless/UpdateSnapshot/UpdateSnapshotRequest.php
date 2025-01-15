@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\UpdateSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $retentionPeriod
+ * @property int|null $retentionPeriod
  * @property string $snapshotName
  */
 class UpdateSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     retentionPeriod?: int,
+     *     retentionPeriod?: int|null,
      *     snapshotName: string
      * } $args
      */

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeFastLaunchImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ImageId
- * @property 'snapshot' $ResourceType
- * @property FastLaunchSnapshotConfigurationResponse $SnapshotConfiguration
- * @property FastLaunchLaunchTemplateSpecificationResponse $LaunchTemplate
- * @property int $MaxParallelLaunches
- * @property string $OwnerId
- * @property 'enabling'|'enabling-failed'|'enabled'|'enabled-failed'|'disabling'|'disabling-failed' $State
- * @property string $StateTransitionReason
- * @property \Aws\Api\DateTimeResult $StateTransitionTime
+ * @property string|null $ImageId
+ * @property 'snapshot'|null $ResourceType
+ * @property FastLaunchSnapshotConfigurationResponse|null $SnapshotConfiguration
+ * @property FastLaunchLaunchTemplateSpecificationResponse|null $LaunchTemplate
+ * @property int|null $MaxParallelLaunches
+ * @property string|null $OwnerId
+ * @property 'enabling'|'enabling-failed'|'enabled'|'enabled-failed'|'disabling'|'disabling-failed'|null $State
+ * @property string|null $StateTransitionReason
+ * @property \Aws\Api\DateTimeResult|null $StateTransitionTime
  */
 class DescribeFastLaunchImagesSuccessItem extends Shape
 {
     /**
      * @param array{
-     *     ImageId?: string,
-     *     ResourceType?: 'snapshot',
-     *     SnapshotConfiguration?: FastLaunchSnapshotConfigurationResponse,
-     *     LaunchTemplate?: FastLaunchLaunchTemplateSpecificationResponse,
-     *     MaxParallelLaunches?: int,
-     *     OwnerId?: string,
-     *     State?: 'enabling'|'enabling-failed'|'enabled'|'enabled-failed'|'disabling'|'disabling-failed',
-     *     StateTransitionReason?: string,
-     *     StateTransitionTime?: \Aws\Api\DateTimeResult
+     *     ImageId?: string|null,
+     *     ResourceType?: 'snapshot'|null,
+     *     SnapshotConfiguration?: FastLaunchSnapshotConfigurationResponse|null,
+     *     LaunchTemplate?: FastLaunchLaunchTemplateSpecificationResponse|null,
+     *     MaxParallelLaunches?: int|null,
+     *     OwnerId?: string|null,
+     *     State?: 'enabling'|'enabling-failed'|'enabled'|'enabled-failed'|'disabling'|'disabling-failed'|null,
+     *     StateTransitionReason?: string|null,
+     *     StateTransitionTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

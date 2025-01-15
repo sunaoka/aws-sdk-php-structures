@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListAppImageConfigs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MountPath
- * @property int<0, 65535> $DefaultUid
- * @property int<0, 65535> $DefaultGid
+ * @property string|null $MountPath
+ * @property int<0, 65535>|null $DefaultUid
+ * @property int<0, 65535>|null $DefaultGid
  */
 class FileSystemConfig extends Shape
 {
     /**
      * @param array{
-     *     MountPath?: string,
-     *     DefaultUid?: int<0, 65535>,
-     *     DefaultGid?: int<0, 65535>
+     *     MountPath?: string|null,
+     *     DefaultUid?: int<0, 65535>|null,
+     *     DefaultGid?: int<0, 65535>|null
      * } $args
      */
     public function __construct(array $args = [])

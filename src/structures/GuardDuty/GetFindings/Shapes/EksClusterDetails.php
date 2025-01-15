@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property string $VpcId
- * @property string $Status
- * @property list<Tag> $Tags
- * @property \Aws\Api\DateTimeResult $CreatedAt
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property string|null $VpcId
+ * @property string|null $Status
+ * @property list<Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
  */
 class EksClusterDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Arn?: string,
-     *     VpcId?: string,
-     *     Status?: string,
-     *     Tags?: list<Tag>,
-     *     CreatedAt?: \Aws\Api\DateTimeResult
+     *     Name?: string|null,
+     *     Arn?: string|null,
+     *     VpcId?: string|null,
+     *     Status?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

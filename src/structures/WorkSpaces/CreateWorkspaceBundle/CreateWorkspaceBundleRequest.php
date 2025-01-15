@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ImageId
  * @property Shapes\ComputeType $ComputeType
  * @property Shapes\UserStorage $UserStorage
- * @property Shapes\RootStorage $RootStorage
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\RootStorage|null $RootStorage
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateWorkspaceBundleRequest extends Request
 {
@@ -22,8 +22,8 @@ class CreateWorkspaceBundleRequest extends Request
      *     ImageId: string,
      *     ComputeType: Shapes\ComputeType,
      *     UserStorage: Shapes\UserStorage,
-     *     RootStorage?: Shapes\RootStorage,
-     *     Tags?: list<Shapes\Tag>
+     *     RootStorage?: Shapes\RootStorage|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

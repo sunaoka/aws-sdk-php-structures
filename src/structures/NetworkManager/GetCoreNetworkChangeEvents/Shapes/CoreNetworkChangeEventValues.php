@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetCoreNetworkChangeEvents\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EdgeLocation
- * @property string $SegmentName
- * @property string $NetworkFunctionGroupName
- * @property string $AttachmentId
- * @property string $Cidr
+ * @property string|null $EdgeLocation
+ * @property string|null $SegmentName
+ * @property string|null $NetworkFunctionGroupName
+ * @property string|null $AttachmentId
+ * @property string|null $Cidr
  */
 class CoreNetworkChangeEventValues extends Shape
 {
     /**
      * @param array{
-     *     EdgeLocation?: string,
-     *     SegmentName?: string,
-     *     NetworkFunctionGroupName?: string,
-     *     AttachmentId?: string,
-     *     Cidr?: string
+     *     EdgeLocation?: string|null,
+     *     SegmentName?: string|null,
+     *     NetworkFunctionGroupName?: string|null,
+     *     AttachmentId?: string|null,
+     *     Cidr?: string|null
      * } $args
      */
     public function __construct(array $args = [])

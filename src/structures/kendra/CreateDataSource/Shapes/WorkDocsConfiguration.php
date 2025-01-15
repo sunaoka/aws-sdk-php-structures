@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $OrganizationId
- * @property bool $CrawlComments
- * @property bool $UseChangeLog
- * @property list<string> $InclusionPatterns
- * @property list<string> $ExclusionPatterns
- * @property list<DataSourceToIndexFieldMapping> $FieldMappings
+ * @property bool|null $CrawlComments
+ * @property bool|null $UseChangeLog
+ * @property list<string>|null $InclusionPatterns
+ * @property list<string>|null $ExclusionPatterns
+ * @property list<DataSourceToIndexFieldMapping>|null $FieldMappings
  */
 class WorkDocsConfiguration extends Shape
 {
     /**
      * @param array{
      *     OrganizationId: string,
-     *     CrawlComments?: bool,
-     *     UseChangeLog?: bool,
-     *     InclusionPatterns?: list<string>,
-     *     ExclusionPatterns?: list<string>,
-     *     FieldMappings?: list<DataSourceToIndexFieldMapping>
+     *     CrawlComments?: bool|null,
+     *     UseChangeLog?: bool|null,
+     *     InclusionPatterns?: list<string>|null,
+     *     ExclusionPatterns?: list<string>|null,
+     *     FieldMappings?: list<DataSourceToIndexFieldMapping>|null
      * } $args
      */
     public function __construct(array $args)

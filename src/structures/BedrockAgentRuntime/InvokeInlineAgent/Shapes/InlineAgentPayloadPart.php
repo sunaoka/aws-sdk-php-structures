@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attribution $attribution
- * @property \Psr\Http\Message\StreamInterface $bytes
+ * @property Attribution|null $attribution
+ * @property \Psr\Http\Message\StreamInterface|null $bytes
  */
 class InlineAgentPayloadPart extends Shape
 {
     /**
      * @param array{
-     *     attribution?: Attribution,
-     *     bytes?: \Psr\Http\Message\StreamInterface
+     *     attribution?: Attribution|null,
+     *     bytes?: \Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args = [])

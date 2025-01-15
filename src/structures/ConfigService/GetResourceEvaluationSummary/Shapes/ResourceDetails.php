@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ResourceId
  * @property string $ResourceType
  * @property string $ResourceConfiguration
- * @property 'CFN_RESOURCE_SCHEMA' $ResourceConfigurationSchemaType
+ * @property 'CFN_RESOURCE_SCHEMA'|null $ResourceConfigurationSchemaType
  */
 class ResourceDetails extends Shape
 {
@@ -17,7 +17,7 @@ class ResourceDetails extends Shape
      *     ResourceId: string,
      *     ResourceType: string,
      *     ResourceConfiguration: string,
-     *     ResourceConfigurationSchemaType?: 'CFN_RESOURCE_SCHEMA'
+     *     ResourceConfigurationSchemaType?: 'CFN_RESOURCE_SCHEMA'|null
      * } $args
      */
     public function __construct(array $args)

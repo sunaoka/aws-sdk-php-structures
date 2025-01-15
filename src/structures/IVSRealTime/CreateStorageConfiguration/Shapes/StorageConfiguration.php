@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property string $name
- * @property S3StorageConfiguration $s3
- * @property array<string, string> $tags
+ * @property string|null $name
+ * @property S3StorageConfiguration|null $s3
+ * @property array<string, string>|null $tags
  */
 class StorageConfiguration extends Shape
 {
     /**
      * @param array{
      *     arn: string,
-     *     name?: string,
-     *     s3?: S3StorageConfiguration,
-     *     tags?: array<string, string>
+     *     name?: string|null,
+     *     s3?: S3StorageConfiguration|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

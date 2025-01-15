@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\ListPackageVersionDependencies\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $namespace
- * @property string $package
- * @property string $dependencyType
- * @property string $versionRequirement
+ * @property string|null $namespace
+ * @property string|null $package
+ * @property string|null $dependencyType
+ * @property string|null $versionRequirement
  */
 class PackageDependency extends Shape
 {
     /**
      * @param array{
-     *     namespace?: string,
-     *     package?: string,
-     *     dependencyType?: string,
-     *     versionRequirement?: string
+     *     namespace?: string|null,
+     *     package?: string|null,
+     *     dependencyType?: string|null,
+     *     versionRequirement?: string|null
      * } $args
      */
     public function __construct(array $args = [])

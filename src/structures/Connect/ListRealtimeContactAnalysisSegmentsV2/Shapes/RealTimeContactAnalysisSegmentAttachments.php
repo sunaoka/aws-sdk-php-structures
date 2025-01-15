@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $ParticipantId
  * @property 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR' $ParticipantRole
- * @property string $DisplayName
+ * @property string|null $DisplayName
  * @property list<RealTimeContactAnalysisAttachment> $Attachments
  * @property RealTimeContactAnalysisTimeData $Time
  */
@@ -19,7 +19,7 @@ class RealTimeContactAnalysisSegmentAttachments extends Shape
      *     Id: string,
      *     ParticipantId: string,
      *     ParticipantRole: 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR',
-     *     DisplayName?: string,
+     *     DisplayName?: string|null,
      *     Attachments: list<RealTimeContactAnalysisAttachment>,
      *     Time: RealTimeContactAnalysisTimeData
      * } $args

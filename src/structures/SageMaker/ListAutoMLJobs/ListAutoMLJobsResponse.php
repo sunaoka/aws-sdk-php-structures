@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AutoMLJobSummary> $AutoMLJobSummaries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListAutoMLJobsResponse extends Response
 {

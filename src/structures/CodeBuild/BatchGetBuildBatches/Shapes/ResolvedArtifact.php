@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeBuild\BatchGetBuildBatches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CODEPIPELINE'|'S3'|'NO_ARTIFACTS' $type
- * @property string $location
- * @property string $identifier
+ * @property 'CODEPIPELINE'|'S3'|'NO_ARTIFACTS'|null $type
+ * @property string|null $location
+ * @property string|null $identifier
  */
 class ResolvedArtifact extends Shape
 {
     /**
      * @param array{
-     *     type?: 'CODEPIPELINE'|'S3'|'NO_ARTIFACTS',
-     *     location?: string,
-     *     identifier?: string
+     *     type?: 'CODEPIPELINE'|'S3'|'NO_ARTIFACTS'|null,
+     *     location?: string|null,
+     *     identifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

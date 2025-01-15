@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $blueprintArn
  * @property string $schema
- * @property 'DEVELOPMENT'|'LIVE' $blueprintStage
+ * @property 'DEVELOPMENT'|'LIVE'|null $blueprintStage
  */
 class UpdateBlueprintRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateBlueprintRequest extends Request
      * @param array{
      *     blueprintArn: string,
      *     schema: string,
-     *     blueprintStage?: 'DEVELOPMENT'|'LIVE'
+     *     blueprintStage?: 'DEVELOPMENT'|'LIVE'|null
      * } $args
      */
     public function __construct(array $args)

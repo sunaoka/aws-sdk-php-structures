@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListDistributionsByRealtimeLogConfig
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Marker
- * @property string $MaxItems
- * @property string $RealtimeLogConfigName
- * @property string $RealtimeLogConfigArn
+ * @property string|null $Marker
+ * @property string|null $MaxItems
+ * @property string|null $RealtimeLogConfigName
+ * @property string|null $RealtimeLogConfigArn
  */
 class ListDistributionsByRealtimeLogConfigRequest extends Request
 {
     /**
      * @param array{
-     *     Marker?: string,
-     *     MaxItems?: string,
-     *     RealtimeLogConfigName?: string,
-     *     RealtimeLogConfigArn?: string
+     *     Marker?: string|null,
+     *     MaxItems?: string|null,
+     *     RealtimeLogConfigName?: string|null,
+     *     RealtimeLogConfigArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

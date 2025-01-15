@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Connect\SearchQuickConnects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QuickConnectARN
- * @property string $QuickConnectId
- * @property string $Name
- * @property string $Description
- * @property QuickConnectConfig $QuickConnectConfig
- * @property array<string, string> $Tags
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
+ * @property string|null $QuickConnectARN
+ * @property string|null $QuickConnectId
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property QuickConnectConfig|null $QuickConnectConfig
+ * @property array<string, string>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class QuickConnect extends Shape
 {
     /**
      * @param array{
-     *     QuickConnectARN?: string,
-     *     QuickConnectId?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     QuickConnectConfig?: QuickConnectConfig,
-     *     Tags?: array<string, string>,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedRegion?: string
+     *     QuickConnectARN?: string|null,
+     *     QuickConnectId?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     QuickConnectConfig?: QuickConnectConfig|null,
+     *     Tags?: array<string, string>|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

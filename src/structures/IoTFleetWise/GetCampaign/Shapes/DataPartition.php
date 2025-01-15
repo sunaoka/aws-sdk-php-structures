@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property DataPartitionStorageOptions $storageOptions
- * @property DataPartitionUploadOptions $uploadOptions
+ * @property DataPartitionUploadOptions|null $uploadOptions
  */
 class DataPartition extends Shape
 {
@@ -15,7 +15,7 @@ class DataPartition extends Shape
      * @param array{
      *     id: string,
      *     storageOptions: DataPartitionStorageOptions,
-     *     uploadOptions?: DataPartitionUploadOptions
+     *     uploadOptions?: DataPartitionUploadOptions|null
      * } $args
      */
     public function __construct(array $args)

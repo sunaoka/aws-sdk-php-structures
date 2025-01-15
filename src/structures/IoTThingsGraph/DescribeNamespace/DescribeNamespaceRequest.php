@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTThingsGraph\DescribeNamespace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $namespaceName
+ * @property string|null $namespaceName
  */
 class DescribeNamespaceRequest extends Request
 {
     /**
-     * @param array{namespaceName?: string} $args
+     * @param array{namespaceName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

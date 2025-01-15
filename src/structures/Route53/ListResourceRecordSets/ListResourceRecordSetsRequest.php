@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HostedZoneId
- * @property string $StartRecordName
- * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS' $StartRecordType
- * @property string $StartRecordIdentifier
- * @property string $MaxItems
+ * @property string|null $StartRecordName
+ * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS'|null $StartRecordType
+ * @property string|null $StartRecordIdentifier
+ * @property string|null $MaxItems
  */
 class ListResourceRecordSetsRequest extends Request
 {
     /**
      * @param array{
      *     HostedZoneId: string,
-     *     StartRecordName?: string,
-     *     StartRecordType?: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS',
-     *     StartRecordIdentifier?: string,
-     *     MaxItems?: string
+     *     StartRecordName?: string|null,
+     *     StartRecordType?: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS'|null,
+     *     StartRecordIdentifier?: string|null,
+     *     MaxItems?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MarketplaceMetering\BatchMeterUsage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UsageRecord $UsageRecord
- * @property string $MeteringRecordId
- * @property 'Success'|'CustomerNotSubscribed'|'DuplicateRecord' $Status
+ * @property UsageRecord|null $UsageRecord
+ * @property string|null $MeteringRecordId
+ * @property 'Success'|'CustomerNotSubscribed'|'DuplicateRecord'|null $Status
  */
 class UsageRecordResult extends Shape
 {
     /**
      * @param array{
-     *     UsageRecord?: UsageRecord,
-     *     MeteringRecordId?: string,
-     *     Status?: 'Success'|'CustomerNotSubscribed'|'DuplicateRecord'
+     *     UsageRecord?: UsageRecord|null,
+     *     MeteringRecordId?: string|null,
+     *     Status?: 'Success'|'CustomerNotSubscribed'|'DuplicateRecord'|null
      * } $args
      */
     public function __construct(array $args = [])

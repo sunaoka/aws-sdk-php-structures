@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeregisterInstanceEventNotificationAttribut
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\InstanceTagNotificationAttribute $InstanceTagAttribute
+ * @property Shapes\InstanceTagNotificationAttribute|null $InstanceTagAttribute
  */
 class DeregisterInstanceEventNotificationAttributesResponse extends Response
 {

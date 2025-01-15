@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VolumeId
- * @property string $InstanceId
+ * @property string|null $InstanceId
  */
 class AssignVolumeRequest extends Request
 {
     /**
      * @param array{
      *     VolumeId: string,
-     *     InstanceId?: string
+     *     InstanceId?: string|null
      * } $args
      */
     public function __construct(array $args)

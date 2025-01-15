@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $appArn
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $id
  */
 class DeleteAppVersionAppComponentRequest extends Request
@@ -14,7 +14,7 @@ class DeleteAppVersionAppComponentRequest extends Request
     /**
      * @param array{
      *     appArn: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     id: string
      * } $args
      */

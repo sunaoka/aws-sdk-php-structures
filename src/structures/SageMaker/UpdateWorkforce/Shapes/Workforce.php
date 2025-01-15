@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $WorkforceName
  * @property string $WorkforceArn
- * @property \Aws\Api\DateTimeResult $LastUpdatedDate
- * @property SourceIpConfig $SourceIpConfig
- * @property string $SubDomain
- * @property CognitoConfig $CognitoConfig
- * @property OidcConfigForResponse $OidcConfig
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property WorkforceVpcConfigResponse $WorkforceVpcConfig
- * @property 'Initializing'|'Updating'|'Deleting'|'Failed'|'Active' $Status
- * @property string $FailureReason
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedDate
+ * @property SourceIpConfig|null $SourceIpConfig
+ * @property string|null $SubDomain
+ * @property CognitoConfig|null $CognitoConfig
+ * @property OidcConfigForResponse|null $OidcConfig
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property WorkforceVpcConfigResponse|null $WorkforceVpcConfig
+ * @property 'Initializing'|'Updating'|'Deleting'|'Failed'|'Active'|null $Status
+ * @property string|null $FailureReason
  */
 class Workforce extends Shape
 {
@@ -23,15 +23,15 @@ class Workforce extends Shape
      * @param array{
      *     WorkforceName: string,
      *     WorkforceArn: string,
-     *     LastUpdatedDate?: \Aws\Api\DateTimeResult,
-     *     SourceIpConfig?: SourceIpConfig,
-     *     SubDomain?: string,
-     *     CognitoConfig?: CognitoConfig,
-     *     OidcConfig?: OidcConfigForResponse,
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     WorkforceVpcConfig?: WorkforceVpcConfigResponse,
-     *     Status?: 'Initializing'|'Updating'|'Deleting'|'Failed'|'Active',
-     *     FailureReason?: string
+     *     LastUpdatedDate?: \Aws\Api\DateTimeResult|null,
+     *     SourceIpConfig?: SourceIpConfig|null,
+     *     SubDomain?: string|null,
+     *     CognitoConfig?: CognitoConfig|null,
+     *     OidcConfig?: OidcConfigForResponse|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     WorkforceVpcConfig?: WorkforceVpcConfigResponse|null,
+     *     Status?: 'Initializing'|'Updating'|'Deleting'|'Failed'|'Active'|null,
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args)

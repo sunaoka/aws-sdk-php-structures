@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AppMonitorName
  * @property 'CloudWatch'|'Evidently' $Destination
- * @property string $DestinationArn
+ * @property string|null $DestinationArn
  */
 class DeleteRumMetricsDestinationRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteRumMetricsDestinationRequest extends Request
      * @param array{
      *     AppMonitorName: string,
      *     Destination: 'CloudWatch'|'Evidently',
-     *     DestinationArn?: string
+     *     DestinationArn?: string|null
      * } $args
      */
     public function __construct(array $args)

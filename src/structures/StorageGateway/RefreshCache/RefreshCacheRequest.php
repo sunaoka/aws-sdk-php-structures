@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FileShareARN
- * @property list<string> $FolderList
- * @property bool $Recursive
+ * @property list<string>|null $FolderList
+ * @property bool|null $Recursive
  */
 class RefreshCacheRequest extends Request
 {
     /**
      * @param array{
      *     FileShareARN: string,
-     *     FolderList?: list<string>,
-     *     Recursive?: bool
+     *     FolderList?: list<string>|null,
+     *     Recursive?: bool|null
      * } $args
      */
     public function __construct(array $args)

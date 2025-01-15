@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrialName
- * @property string $TrialArn
- * @property string $DisplayName
- * @property string $ExperimentName
- * @property TrialSource $Source
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property UserContext $CreatedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property UserContext $LastModifiedBy
- * @property MetadataProperties $MetadataProperties
- * @property list<Tag> $Tags
- * @property list<TrialComponentSimpleSummary> $TrialComponentSummaries
+ * @property string|null $TrialName
+ * @property string|null $TrialArn
+ * @property string|null $DisplayName
+ * @property string|null $ExperimentName
+ * @property TrialSource|null $Source
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property UserContext|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property UserContext|null $LastModifiedBy
+ * @property MetadataProperties|null $MetadataProperties
+ * @property list<Tag>|null $Tags
+ * @property list<TrialComponentSimpleSummary>|null $TrialComponentSummaries
  */
 class Trial extends Shape
 {
     /**
      * @param array{
-     *     TrialName?: string,
-     *     TrialArn?: string,
-     *     DisplayName?: string,
-     *     ExperimentName?: string,
-     *     Source?: TrialSource,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     CreatedBy?: UserContext,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBy?: UserContext,
-     *     MetadataProperties?: MetadataProperties,
-     *     Tags?: list<Tag>,
-     *     TrialComponentSummaries?: list<TrialComponentSimpleSummary>
+     *     TrialName?: string|null,
+     *     TrialArn?: string|null,
+     *     DisplayName?: string|null,
+     *     ExperimentName?: string|null,
+     *     Source?: TrialSource|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: UserContext|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBy?: UserContext|null,
+     *     MetadataProperties?: MetadataProperties|null,
+     *     Tags?: list<Tag>|null,
+     *     TrialComponentSummaries?: list<TrialComponentSimpleSummary>|null
      * } $args
      */
     public function __construct(array $args = [])

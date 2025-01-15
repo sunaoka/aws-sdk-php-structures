@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EKS\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'STANDARD'|'EXTENDED' $supportType
+ * @property 'STANDARD'|'EXTENDED'|null $supportType
  */
 class UpgradePolicyResponse extends Shape
 {
     /**
-     * @param array{supportType?: 'STANDARD'|'EXTENDED'} $args
+     * @param array{supportType?: 'STANDARD'|'EXTENDED'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateIsolines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<double> $BoundingBox
- * @property Corridor $Corridor
- * @property list<list<list<double>>> $Polygon
- * @property PolylineCorridor $PolylineCorridor
- * @property list<string> $PolylinePolygon
+ * @property list<double>|null $BoundingBox
+ * @property Corridor|null $Corridor
+ * @property list<list<list<double>>>|null $Polygon
+ * @property PolylineCorridor|null $PolylineCorridor
+ * @property list<string>|null $PolylinePolygon
  */
 class IsolineAvoidanceAreaGeometry extends Shape
 {
     /**
      * @param array{
-     *     BoundingBox?: list<double>,
-     *     Corridor?: Corridor,
-     *     Polygon?: list<list<list<double>>>,
-     *     PolylineCorridor?: PolylineCorridor,
-     *     PolylinePolygon?: list<string>
+     *     BoundingBox?: list<double>|null,
+     *     Corridor?: Corridor|null,
+     *     Polygon?: list<list<list<double>>>|null,
+     *     PolylineCorridor?: PolylineCorridor|null,
+     *     PolylinePolygon?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

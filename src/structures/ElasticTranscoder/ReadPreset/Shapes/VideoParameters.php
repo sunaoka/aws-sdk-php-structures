@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ReadPreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Codec
- * @property array<string, string> $CodecOptions
- * @property string $KeyframesMaxDist
- * @property string $FixedGOP
- * @property string $BitRate
- * @property string $FrameRate
- * @property string $MaxFrameRate
- * @property string $Resolution
- * @property string $AspectRatio
- * @property string $MaxWidth
- * @property string $MaxHeight
- * @property string $DisplayAspectRatio
- * @property string $SizingPolicy
- * @property string $PaddingPolicy
- * @property list<PresetWatermark> $Watermarks
+ * @property string|null $Codec
+ * @property array<string, string>|null $CodecOptions
+ * @property string|null $KeyframesMaxDist
+ * @property string|null $FixedGOP
+ * @property string|null $BitRate
+ * @property string|null $FrameRate
+ * @property string|null $MaxFrameRate
+ * @property string|null $Resolution
+ * @property string|null $AspectRatio
+ * @property string|null $MaxWidth
+ * @property string|null $MaxHeight
+ * @property string|null $DisplayAspectRatio
+ * @property string|null $SizingPolicy
+ * @property string|null $PaddingPolicy
+ * @property list<PresetWatermark>|null $Watermarks
  */
 class VideoParameters extends Shape
 {
     /**
      * @param array{
-     *     Codec?: string,
-     *     CodecOptions?: array<string, string>,
-     *     KeyframesMaxDist?: string,
-     *     FixedGOP?: string,
-     *     BitRate?: string,
-     *     FrameRate?: string,
-     *     MaxFrameRate?: string,
-     *     Resolution?: string,
-     *     AspectRatio?: string,
-     *     MaxWidth?: string,
-     *     MaxHeight?: string,
-     *     DisplayAspectRatio?: string,
-     *     SizingPolicy?: string,
-     *     PaddingPolicy?: string,
-     *     Watermarks?: list<PresetWatermark>
+     *     Codec?: string|null,
+     *     CodecOptions?: array<string, string>|null,
+     *     KeyframesMaxDist?: string|null,
+     *     FixedGOP?: string|null,
+     *     BitRate?: string|null,
+     *     FrameRate?: string|null,
+     *     MaxFrameRate?: string|null,
+     *     Resolution?: string|null,
+     *     AspectRatio?: string|null,
+     *     MaxWidth?: string|null,
+     *     MaxHeight?: string|null,
+     *     DisplayAspectRatio?: string|null,
+     *     SizingPolicy?: string|null,
+     *     PaddingPolicy?: string|null,
+     *     Watermarks?: list<PresetWatermark>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DataProductRevision> $items
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListDataProductRevisionsResponse extends Response
 {

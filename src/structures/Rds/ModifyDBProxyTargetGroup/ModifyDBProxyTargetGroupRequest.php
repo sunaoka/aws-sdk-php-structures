@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TargetGroupName
  * @property string $DBProxyName
- * @property Shapes\ConnectionPoolConfiguration $ConnectionPoolConfig
- * @property string $NewName
+ * @property Shapes\ConnectionPoolConfiguration|null $ConnectionPoolConfig
+ * @property string|null $NewName
  */
 class ModifyDBProxyTargetGroupRequest extends Request
 {
@@ -16,8 +16,8 @@ class ModifyDBProxyTargetGroupRequest extends Request
      * @param array{
      *     TargetGroupName: string,
      *     DBProxyName: string,
-     *     ConnectionPoolConfig?: Shapes\ConnectionPoolConfiguration,
-     *     NewName?: string
+     *     ConnectionPoolConfig?: Shapes\ConnectionPoolConfiguration|null,
+     *     NewName?: string|null
      * } $args
      */
     public function __construct(array $args)

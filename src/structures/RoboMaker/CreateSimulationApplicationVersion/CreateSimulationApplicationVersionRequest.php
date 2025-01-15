@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $application
- * @property string $currentRevisionId
- * @property list<string> $s3Etags
- * @property string $imageDigest
+ * @property string|null $currentRevisionId
+ * @property list<string>|null $s3Etags
+ * @property string|null $imageDigest
  */
 class CreateSimulationApplicationVersionRequest extends Request
 {
     /**
      * @param array{
      *     application: string,
-     *     currentRevisionId?: string,
-     *     s3Etags?: list<string>,
-     *     imageDigest?: string
+     *     currentRevisionId?: string|null,
+     *     s3Etags?: list<string>|null,
+     *     imageDigest?: string|null
      * } $args
      */
     public function __construct(array $args)

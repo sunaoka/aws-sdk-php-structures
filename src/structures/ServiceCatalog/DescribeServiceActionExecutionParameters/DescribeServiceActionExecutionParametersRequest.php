@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProvisionedProductId
  * @property string $ServiceActionId
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  */
 class DescribeServiceActionExecutionParametersRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeServiceActionExecutionParametersRequest extends Request
      * @param array{
      *     ProvisionedProductId: string,
      *     ServiceActionId: string,
-     *     AcceptLanguage?: string
+     *     AcceptLanguage?: string|null
      * } $args
      */
     public function __construct(array $args)

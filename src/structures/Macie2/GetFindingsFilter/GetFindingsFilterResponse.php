@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindingsFilter;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'ARCHIVE'|'NOOP' $action
- * @property string $arn
- * @property string $description
- * @property Shapes\FindingCriteria $findingCriteria
- * @property string $id
- * @property string $name
- * @property int $position
- * @property array<string, string> $tags
+ * @property 'ARCHIVE'|'NOOP'|null $action
+ * @property string|null $arn
+ * @property string|null $description
+ * @property Shapes\FindingCriteria|null $findingCriteria
+ * @property string|null $id
+ * @property string|null $name
+ * @property int|null $position
+ * @property array<string, string>|null $tags
  */
 class GetFindingsFilterResponse extends Response
 {

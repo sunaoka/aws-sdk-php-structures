@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcEndpointServices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceName
- * @property string $ServiceId
- * @property list<ServiceTypeDetail> $ServiceType
- * @property string $ServiceRegion
- * @property list<string> $AvailabilityZones
- * @property string $Owner
- * @property list<string> $BaseEndpointDnsNames
- * @property string $PrivateDnsName
- * @property list<PrivateDnsDetails> $PrivateDnsNames
- * @property bool $VpcEndpointPolicySupported
- * @property bool $AcceptanceRequired
- * @property bool $ManagesVpcEndpoints
- * @property 'ServiceOwner' $PayerResponsibility
- * @property list<Tag> $Tags
- * @property 'pendingVerification'|'verified'|'failed' $PrivateDnsNameVerificationState
- * @property list<'ipv4'|'ipv6'> $SupportedIpAddressTypes
+ * @property string|null $ServiceName
+ * @property string|null $ServiceId
+ * @property list<ServiceTypeDetail>|null $ServiceType
+ * @property string|null $ServiceRegion
+ * @property list<string>|null $AvailabilityZones
+ * @property string|null $Owner
+ * @property list<string>|null $BaseEndpointDnsNames
+ * @property string|null $PrivateDnsName
+ * @property list<PrivateDnsDetails>|null $PrivateDnsNames
+ * @property bool|null $VpcEndpointPolicySupported
+ * @property bool|null $AcceptanceRequired
+ * @property bool|null $ManagesVpcEndpoints
+ * @property 'ServiceOwner'|null $PayerResponsibility
+ * @property list<Tag>|null $Tags
+ * @property 'pendingVerification'|'verified'|'failed'|null $PrivateDnsNameVerificationState
+ * @property list<'ipv4'|'ipv6'>|null $SupportedIpAddressTypes
  */
 class ServiceDetail extends Shape
 {
     /**
      * @param array{
-     *     ServiceName?: string,
-     *     ServiceId?: string,
-     *     ServiceType?: list<ServiceTypeDetail>,
-     *     ServiceRegion?: string,
-     *     AvailabilityZones?: list<string>,
-     *     Owner?: string,
-     *     BaseEndpointDnsNames?: list<string>,
-     *     PrivateDnsName?: string,
-     *     PrivateDnsNames?: list<PrivateDnsDetails>,
-     *     VpcEndpointPolicySupported?: bool,
-     *     AcceptanceRequired?: bool,
-     *     ManagesVpcEndpoints?: bool,
-     *     PayerResponsibility?: 'ServiceOwner',
-     *     Tags?: list<Tag>,
-     *     PrivateDnsNameVerificationState?: 'pendingVerification'|'verified'|'failed',
-     *     SupportedIpAddressTypes?: list<'ipv4'|'ipv6'>
+     *     ServiceName?: string|null,
+     *     ServiceId?: string|null,
+     *     ServiceType?: list<ServiceTypeDetail>|null,
+     *     ServiceRegion?: string|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     Owner?: string|null,
+     *     BaseEndpointDnsNames?: list<string>|null,
+     *     PrivateDnsName?: string|null,
+     *     PrivateDnsNames?: list<PrivateDnsDetails>|null,
+     *     VpcEndpointPolicySupported?: bool|null,
+     *     AcceptanceRequired?: bool|null,
+     *     ManagesVpcEndpoints?: bool|null,
+     *     PayerResponsibility?: 'ServiceOwner'|null,
+     *     Tags?: list<Tag>|null,
+     *     PrivateDnsNameVerificationState?: 'pendingVerification'|'verified'|'failed'|null,
+     *     SupportedIpAddressTypes?: list<'ipv4'|'ipv6'>|null
      * } $args
      */
     public function __construct(array $args = [])

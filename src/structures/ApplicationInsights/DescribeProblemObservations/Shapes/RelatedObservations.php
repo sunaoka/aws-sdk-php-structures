@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\DescribeProblemObservations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Observation> $ObservationList
+ * @property list<Observation>|null $ObservationList
  */
 class RelatedObservations extends Shape
 {
     /**
-     * @param array{ObservationList?: list<Observation>} $args
+     * @param array{ObservationList?: list<Observation>|null} $args
      */
     public function __construct(array $args = [])
     {

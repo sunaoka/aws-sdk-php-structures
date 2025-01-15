@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Redshift\AuthorizeDataShare\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConsumerIdentifier
- * @property 'ACTIVE'|'PENDING_AUTHORIZATION'|'AUTHORIZED'|'DEAUTHORIZED'|'REJECTED'|'AVAILABLE' $Status
- * @property string $ConsumerRegion
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property \Aws\Api\DateTimeResult $StatusChangeDate
- * @property bool $ProducerAllowedWrites
- * @property bool $ConsumerAcceptedWrites
+ * @property string|null $ConsumerIdentifier
+ * @property 'ACTIVE'|'PENDING_AUTHORIZATION'|'AUTHORIZED'|'DEAUTHORIZED'|'REJECTED'|'AVAILABLE'|null $Status
+ * @property string|null $ConsumerRegion
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property \Aws\Api\DateTimeResult|null $StatusChangeDate
+ * @property bool|null $ProducerAllowedWrites
+ * @property bool|null $ConsumerAcceptedWrites
  */
 class DataShareAssociation extends Shape
 {
     /**
      * @param array{
-     *     ConsumerIdentifier?: string,
-     *     Status?: 'ACTIVE'|'PENDING_AUTHORIZATION'|'AUTHORIZED'|'DEAUTHORIZED'|'REJECTED'|'AVAILABLE',
-     *     ConsumerRegion?: string,
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     StatusChangeDate?: \Aws\Api\DateTimeResult,
-     *     ProducerAllowedWrites?: bool,
-     *     ConsumerAcceptedWrites?: bool
+     *     ConsumerIdentifier?: string|null,
+     *     Status?: 'ACTIVE'|'PENDING_AUTHORIZATION'|'AUTHORIZED'|'DEAUTHORIZED'|'REJECTED'|'AVAILABLE'|null,
+     *     ConsumerRegion?: string|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     StatusChangeDate?: \Aws\Api\DateTimeResult|null,
+     *     ProducerAllowedWrites?: bool|null,
+     *     ConsumerAcceptedWrites?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

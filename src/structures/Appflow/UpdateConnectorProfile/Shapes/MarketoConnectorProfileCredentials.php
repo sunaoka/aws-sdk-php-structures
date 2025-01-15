@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $clientId
  * @property string $clientSecret
- * @property string $accessToken
- * @property ConnectorOAuthRequest $oAuthRequest
+ * @property string|null $accessToken
+ * @property ConnectorOAuthRequest|null $oAuthRequest
  */
 class MarketoConnectorProfileCredentials extends Shape
 {
@@ -16,8 +16,8 @@ class MarketoConnectorProfileCredentials extends Shape
      * @param array{
      *     clientId: string,
      *     clientSecret: string,
-     *     accessToken?: string,
-     *     oAuthRequest?: ConnectorOAuthRequest
+     *     accessToken?: string|null,
+     *     oAuthRequest?: ConnectorOAuthRequest|null
      * } $args
      */
     public function __construct(array $args)

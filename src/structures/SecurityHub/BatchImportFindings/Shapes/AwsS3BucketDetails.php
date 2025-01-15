@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OwnerId
- * @property string $OwnerName
- * @property string $OwnerAccountId
- * @property string $CreatedAt
- * @property AwsS3BucketServerSideEncryptionConfiguration $ServerSideEncryptionConfiguration
- * @property AwsS3BucketBucketLifecycleConfigurationDetails $BucketLifecycleConfiguration
- * @property AwsS3AccountPublicAccessBlockDetails $PublicAccessBlockConfiguration
- * @property string $AccessControlList
- * @property AwsS3BucketLoggingConfiguration $BucketLoggingConfiguration
- * @property AwsS3BucketWebsiteConfiguration $BucketWebsiteConfiguration
- * @property AwsS3BucketNotificationConfiguration $BucketNotificationConfiguration
- * @property AwsS3BucketBucketVersioningConfiguration $BucketVersioningConfiguration
- * @property AwsS3BucketObjectLockConfiguration $ObjectLockConfiguration
- * @property string $Name
+ * @property string|null $OwnerId
+ * @property string|null $OwnerName
+ * @property string|null $OwnerAccountId
+ * @property string|null $CreatedAt
+ * @property AwsS3BucketServerSideEncryptionConfiguration|null $ServerSideEncryptionConfiguration
+ * @property AwsS3BucketBucketLifecycleConfigurationDetails|null $BucketLifecycleConfiguration
+ * @property AwsS3AccountPublicAccessBlockDetails|null $PublicAccessBlockConfiguration
+ * @property string|null $AccessControlList
+ * @property AwsS3BucketLoggingConfiguration|null $BucketLoggingConfiguration
+ * @property AwsS3BucketWebsiteConfiguration|null $BucketWebsiteConfiguration
+ * @property AwsS3BucketNotificationConfiguration|null $BucketNotificationConfiguration
+ * @property AwsS3BucketBucketVersioningConfiguration|null $BucketVersioningConfiguration
+ * @property AwsS3BucketObjectLockConfiguration|null $ObjectLockConfiguration
+ * @property string|null $Name
  */
 class AwsS3BucketDetails extends Shape
 {
     /**
      * @param array{
-     *     OwnerId?: string,
-     *     OwnerName?: string,
-     *     OwnerAccountId?: string,
-     *     CreatedAt?: string,
-     *     ServerSideEncryptionConfiguration?: AwsS3BucketServerSideEncryptionConfiguration,
-     *     BucketLifecycleConfiguration?: AwsS3BucketBucketLifecycleConfigurationDetails,
-     *     PublicAccessBlockConfiguration?: AwsS3AccountPublicAccessBlockDetails,
-     *     AccessControlList?: string,
-     *     BucketLoggingConfiguration?: AwsS3BucketLoggingConfiguration,
-     *     BucketWebsiteConfiguration?: AwsS3BucketWebsiteConfiguration,
-     *     BucketNotificationConfiguration?: AwsS3BucketNotificationConfiguration,
-     *     BucketVersioningConfiguration?: AwsS3BucketBucketVersioningConfiguration,
-     *     ObjectLockConfiguration?: AwsS3BucketObjectLockConfiguration,
-     *     Name?: string
+     *     OwnerId?: string|null,
+     *     OwnerName?: string|null,
+     *     OwnerAccountId?: string|null,
+     *     CreatedAt?: string|null,
+     *     ServerSideEncryptionConfiguration?: AwsS3BucketServerSideEncryptionConfiguration|null,
+     *     BucketLifecycleConfiguration?: AwsS3BucketBucketLifecycleConfigurationDetails|null,
+     *     PublicAccessBlockConfiguration?: AwsS3AccountPublicAccessBlockDetails|null,
+     *     AccessControlList?: string|null,
+     *     BucketLoggingConfiguration?: AwsS3BucketLoggingConfiguration|null,
+     *     BucketWebsiteConfiguration?: AwsS3BucketWebsiteConfiguration|null,
+     *     BucketNotificationConfiguration?: AwsS3BucketNotificationConfiguration|null,
+     *     BucketVersioningConfiguration?: AwsS3BucketBucketVersioningConfiguration|null,
+     *     ObjectLockConfiguration?: AwsS3BucketObjectLockConfiguration|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

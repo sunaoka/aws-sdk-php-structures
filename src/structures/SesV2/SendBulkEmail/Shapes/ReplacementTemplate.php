@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SesV2\SendBulkEmail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplacementTemplateData
+ * @property string|null $ReplacementTemplateData
  */
 class ReplacementTemplate extends Shape
 {
     /**
-     * @param array{ReplacementTemplateData?: string} $args
+     * @param array{ReplacementTemplateData?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $identifier
- * @property string $description
- * @property list<string> $stateTemplatePropertiesToAdd
- * @property list<string> $stateTemplatePropertiesToRemove
- * @property list<string> $dataExtraDimensions
- * @property list<string> $metadataExtraDimensions
+ * @property string|null $description
+ * @property list<string>|null $stateTemplatePropertiesToAdd
+ * @property list<string>|null $stateTemplatePropertiesToRemove
+ * @property list<string>|null $dataExtraDimensions
+ * @property list<string>|null $metadataExtraDimensions
  */
 class UpdateStateTemplateRequest extends Request
 {
     /**
      * @param array{
      *     identifier: string,
-     *     description?: string,
-     *     stateTemplatePropertiesToAdd?: list<string>,
-     *     stateTemplatePropertiesToRemove?: list<string>,
-     *     dataExtraDimensions?: list<string>,
-     *     metadataExtraDimensions?: list<string>
+     *     description?: string|null,
+     *     stateTemplatePropertiesToAdd?: list<string>|null,
+     *     stateTemplatePropertiesToRemove?: list<string>|null,
+     *     dataExtraDimensions?: list<string>|null,
+     *     metadataExtraDimensions?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

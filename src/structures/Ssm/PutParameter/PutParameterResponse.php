@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ssm\PutParameter;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Version
- * @property 'Standard'|'Advanced'|'Intelligent-Tiering' $Tier
+ * @property int|null $Version
+ * @property 'Standard'|'Advanced'|'Intelligent-Tiering'|null $Tier
  */
 class PutParameterResponse extends Response
 {

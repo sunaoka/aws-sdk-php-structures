@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\GetBucketLifecycle\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NoncurrentDays
- * @property int $NewerNoncurrentVersions
+ * @property int|null $NoncurrentDays
+ * @property int|null $NewerNoncurrentVersions
  */
 class NoncurrentVersionExpiration extends Shape
 {
     /**
      * @param array{
-     *     NoncurrentDays?: int,
-     *     NewerNoncurrentVersions?: int
+     *     NoncurrentDays?: int|null,
+     *     NewerNoncurrentVersions?: int|null
      * } $args
      */
     public function __construct(array $args = [])

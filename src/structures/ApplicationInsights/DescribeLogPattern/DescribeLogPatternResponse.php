@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\DescribeLogPattern;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceGroupName
- * @property string $AccountId
- * @property Shapes\LogPattern $LogPattern
+ * @property string|null $ResourceGroupName
+ * @property string|null $AccountId
+ * @property Shapes\LogPattern|null $LogPattern
  */
 class DescribeLogPatternResponse extends Response
 {

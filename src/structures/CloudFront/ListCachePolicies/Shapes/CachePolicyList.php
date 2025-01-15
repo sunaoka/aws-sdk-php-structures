@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListCachePolicies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NextMarker
+ * @property string|null $NextMarker
  * @property int $MaxItems
  * @property int $Quantity
- * @property list<CachePolicySummary> $Items
+ * @property list<CachePolicySummary>|null $Items
  */
 class CachePolicyList extends Shape
 {
     /**
      * @param array{
-     *     NextMarker?: string,
+     *     NextMarker?: string|null,
      *     MaxItems: int,
      *     Quantity: int,
-     *     Items?: list<CachePolicySummary>
+     *     Items?: list<CachePolicySummary>|null
      * } $args
      */
     public function __construct(array $args)

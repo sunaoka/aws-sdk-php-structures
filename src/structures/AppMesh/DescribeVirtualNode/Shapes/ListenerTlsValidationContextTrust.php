@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TlsValidationContextFileTrust $file
- * @property TlsValidationContextSdsTrust $sds
+ * @property TlsValidationContextFileTrust|null $file
+ * @property TlsValidationContextSdsTrust|null $sds
  */
 class ListenerTlsValidationContextTrust extends Shape
 {
     /**
      * @param array{
-     *     file?: TlsValidationContextFileTrust,
-     *     sds?: TlsValidationContextSdsTrust
+     *     file?: TlsValidationContextFileTrust|null,
+     *     sds?: TlsValidationContextSdsTrust|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SSMQuickSetup\GetConfigurationManager;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ConfigurationDefinition> $ConfigurationDefinitions
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $LastModifiedAt
+ * @property list<Shapes\ConfigurationDefinition>|null $ConfigurationDefinitions
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedAt
  * @property string $ManagerArn
- * @property string $Name
- * @property list<Shapes\StatusSummary> $StatusSummaries
- * @property array<string, string> $Tags
+ * @property string|null $Name
+ * @property list<Shapes\StatusSummary>|null $StatusSummaries
+ * @property array<string, string>|null $Tags
  */
 class GetConfigurationManagerResponse extends Response
 {

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NetworkInsightsAccessScopeId
- * @property bool $DryRun
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property bool|null $DryRun
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property string $ClientToken
  */
 class StartNetworkInsightsAccessScopeAnalysisRequest extends Request
@@ -15,8 +15,8 @@ class StartNetworkInsightsAccessScopeAnalysisRequest extends Request
     /**
      * @param array{
      *     NetworkInsightsAccessScopeId: string,
-     *     DryRun?: bool,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
+     *     DryRun?: bool|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     ClientToken: string
      * } $args
      */

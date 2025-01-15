@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribeOptedOutNumbers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $OptOutListArn
- * @property string $OptOutListName
- * @property list<Shapes\OptedOutNumberInformation> $OptedOutNumbers
- * @property string $NextToken
+ * @property string|null $OptOutListArn
+ * @property string|null $OptOutListName
+ * @property list<Shapes\OptedOutNumberInformation>|null $OptedOutNumbers
+ * @property string|null $NextToken
  */
 class DescribeOptedOutNumbersResponse extends Response
 {

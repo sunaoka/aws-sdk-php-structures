@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QConnect\QueryAssistant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ContentDataDetails $contentData
- * @property GenerativeDataDetails $generativeData
- * @property IntentDetectedDataDetails $intentDetectedData
- * @property SourceContentDataDetails $sourceContentData
+ * @property ContentDataDetails|null $contentData
+ * @property GenerativeDataDetails|null $generativeData
+ * @property IntentDetectedDataDetails|null $intentDetectedData
+ * @property SourceContentDataDetails|null $sourceContentData
  */
 class DataDetails extends Shape
 {
     /**
      * @param array{
-     *     contentData?: ContentDataDetails,
-     *     generativeData?: GenerativeDataDetails,
-     *     intentDetectedData?: IntentDetectedDataDetails,
-     *     sourceContentData?: SourceContentDataDetails
+     *     contentData?: ContentDataDetails|null,
+     *     generativeData?: GenerativeDataDetails|null,
+     *     intentDetectedData?: IntentDetectedDataDetails|null,
+     *     sourceContentData?: SourceContentDataDetails|null
      * } $args
      */
     public function __construct(array $args = [])

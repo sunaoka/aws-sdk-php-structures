@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Api
- * @property string $CallerType
- * @property DomainDetails $DomainDetails
- * @property string $ErrorCode
- * @property string $UserAgent
- * @property RemoteIpDetails $RemoteIpDetails
- * @property string $ServiceName
- * @property RemoteAccountDetails $RemoteAccountDetails
- * @property array<string, string> $AffectedResources
+ * @property string|null $Api
+ * @property string|null $CallerType
+ * @property DomainDetails|null $DomainDetails
+ * @property string|null $ErrorCode
+ * @property string|null $UserAgent
+ * @property RemoteIpDetails|null $RemoteIpDetails
+ * @property string|null $ServiceName
+ * @property RemoteAccountDetails|null $RemoteAccountDetails
+ * @property array<string, string>|null $AffectedResources
  */
 class AwsApiCallAction extends Shape
 {
     /**
      * @param array{
-     *     Api?: string,
-     *     CallerType?: string,
-     *     DomainDetails?: DomainDetails,
-     *     ErrorCode?: string,
-     *     UserAgent?: string,
-     *     RemoteIpDetails?: RemoteIpDetails,
-     *     ServiceName?: string,
-     *     RemoteAccountDetails?: RemoteAccountDetails,
-     *     AffectedResources?: array<string, string>
+     *     Api?: string|null,
+     *     CallerType?: string|null,
+     *     DomainDetails?: DomainDetails|null,
+     *     ErrorCode?: string|null,
+     *     UserAgent?: string|null,
+     *     RemoteIpDetails?: RemoteIpDetails|null,
+     *     ServiceName?: string|null,
+     *     RemoteAccountDetails?: RemoteAccountDetails|null,
+     *     AffectedResources?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

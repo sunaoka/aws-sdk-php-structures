@@ -12,9 +12,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $collaborationIdentifier
  * @property string $configuredModelAlgorithmArn
  * @property string $name
- * @property Shapes\PrivacyConfiguration $privacyConfiguration
- * @property string $description
- * @property array<string, string> $tags
+ * @property Shapes\PrivacyConfiguration|null $privacyConfiguration
+ * @property string|null $description
+ * @property array<string, string>|null $tags
  */
 class GetConfiguredModelAlgorithmAssociationResponse extends Response
 {

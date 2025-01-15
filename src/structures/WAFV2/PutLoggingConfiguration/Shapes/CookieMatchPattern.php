@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WAFV2\PutLoggingConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property All $All
- * @property list<string> $IncludedCookies
- * @property list<string> $ExcludedCookies
+ * @property All|null $All
+ * @property list<string>|null $IncludedCookies
+ * @property list<string>|null $ExcludedCookies
  */
 class CookieMatchPattern extends Shape
 {
     /**
      * @param array{
-     *     All?: All,
-     *     IncludedCookies?: list<string>,
-     *     ExcludedCookies?: list<string>
+     *     All?: All|null,
+     *     IncludedCookies?: list<string>|null,
+     *     ExcludedCookies?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

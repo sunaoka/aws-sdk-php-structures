@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeApps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppId
- * @property string $StackId
- * @property string $Shortname
- * @property string $Name
- * @property string $Description
- * @property list<DataSource> $DataSources
- * @property 'aws-flow-ruby'|'java'|'rails'|'php'|'nodejs'|'static'|'other' $Type
- * @property Source $AppSource
- * @property list<string> $Domains
- * @property bool $EnableSsl
- * @property SslConfiguration $SslConfiguration
- * @property array<'DocumentRoot'|'RailsEnv'|'AutoBundleOnDeploy'|'AwsFlowRubySettings', string> $Attributes
- * @property string $CreatedAt
- * @property list<EnvironmentVariable> $Environment
+ * @property string|null $AppId
+ * @property string|null $StackId
+ * @property string|null $Shortname
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property list<DataSource>|null $DataSources
+ * @property 'aws-flow-ruby'|'java'|'rails'|'php'|'nodejs'|'static'|'other'|null $Type
+ * @property Source|null $AppSource
+ * @property list<string>|null $Domains
+ * @property bool|null $EnableSsl
+ * @property SslConfiguration|null $SslConfiguration
+ * @property array<'DocumentRoot'|'RailsEnv'|'AutoBundleOnDeploy'|'AwsFlowRubySettings', string>|null $Attributes
+ * @property string|null $CreatedAt
+ * @property list<EnvironmentVariable>|null $Environment
  */
 class App extends Shape
 {
     /**
      * @param array{
-     *     AppId?: string,
-     *     StackId?: string,
-     *     Shortname?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     DataSources?: list<DataSource>,
-     *     Type?: 'aws-flow-ruby'|'java'|'rails'|'php'|'nodejs'|'static'|'other',
-     *     AppSource?: Source,
-     *     Domains?: list<string>,
-     *     EnableSsl?: bool,
-     *     SslConfiguration?: SslConfiguration,
-     *     Attributes?: array<'DocumentRoot'|'RailsEnv'|'AutoBundleOnDeploy'|'AwsFlowRubySettings', string>,
-     *     CreatedAt?: string,
-     *     Environment?: list<EnvironmentVariable>
+     *     AppId?: string|null,
+     *     StackId?: string|null,
+     *     Shortname?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     DataSources?: list<DataSource>|null,
+     *     Type?: 'aws-flow-ruby'|'java'|'rails'|'php'|'nodejs'|'static'|'other'|null,
+     *     AppSource?: Source|null,
+     *     Domains?: list<string>|null,
+     *     EnableSsl?: bool|null,
+     *     SslConfiguration?: SslConfiguration|null,
+     *     Attributes?: array<'DocumentRoot'|'RailsEnv'|'AutoBundleOnDeploy'|'AwsFlowRubySettings', string>|null,
+     *     CreatedAt?: string|null,
+     *     Environment?: list<EnvironmentVariable>|null
      * } $args
      */
     public function __construct(array $args = [])

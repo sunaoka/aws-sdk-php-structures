@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DAX\RebootNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecurityGroupIdentifier
- * @property string $Status
+ * @property string|null $SecurityGroupIdentifier
+ * @property string|null $Status
  */
 class SecurityGroupMembership extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupIdentifier?: string,
-     *     Status?: string
+     *     SecurityGroupIdentifier?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

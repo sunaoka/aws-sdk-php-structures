@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListStreamingDistributions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\StreamingDistributionList $StreamingDistributionList
+ * @property Shapes\StreamingDistributionList|null $StreamingDistributionList
  */
 class ListStreamingDistributionsResponse extends Response
 {

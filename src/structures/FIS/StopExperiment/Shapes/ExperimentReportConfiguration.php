@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FIS\StopExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExperimentReportConfigurationOutputs $outputs
- * @property ExperimentReportConfigurationDataSources $dataSources
- * @property string $preExperimentDuration
- * @property string $postExperimentDuration
+ * @property ExperimentReportConfigurationOutputs|null $outputs
+ * @property ExperimentReportConfigurationDataSources|null $dataSources
+ * @property string|null $preExperimentDuration
+ * @property string|null $postExperimentDuration
  */
 class ExperimentReportConfiguration extends Shape
 {
     /**
      * @param array{
-     *     outputs?: ExperimentReportConfigurationOutputs,
-     *     dataSources?: ExperimentReportConfigurationDataSources,
-     *     preExperimentDuration?: string,
-     *     postExperimentDuration?: string
+     *     outputs?: ExperimentReportConfigurationOutputs|null,
+     *     dataSources?: ExperimentReportConfigurationDataSources|null,
+     *     preExperimentDuration?: string|null,
+     *     postExperimentDuration?: string|null
      * } $args
      */
     public function __construct(array $args = [])

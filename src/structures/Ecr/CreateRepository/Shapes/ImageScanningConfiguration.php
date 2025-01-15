@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ecr\CreateRepository\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $scanOnPush
+ * @property bool|null $scanOnPush
  */
 class ImageScanningConfiguration extends Shape
 {
     /**
-     * @param array{scanOnPush?: bool} $args
+     * @param array{scanOnPush?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

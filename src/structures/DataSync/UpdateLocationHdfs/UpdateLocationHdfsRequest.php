@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LocationArn
- * @property string $Subdirectory
- * @property list<Shapes\HdfsNameNode> $NameNodes
- * @property int<1048576, 1073741824> $BlockSize
- * @property int<1, 512> $ReplicationFactor
- * @property string $KmsKeyProviderUri
- * @property Shapes\QopConfiguration $QopConfiguration
- * @property 'SIMPLE'|'KERBEROS' $AuthenticationType
- * @property string $SimpleUser
- * @property string $KerberosPrincipal
- * @property string|resource|\Psr\Http\Message\StreamInterface $KerberosKeytab
- * @property string|resource|\Psr\Http\Message\StreamInterface $KerberosKrb5Conf
- * @property list<string> $AgentArns
+ * @property string|null $Subdirectory
+ * @property list<Shapes\HdfsNameNode>|null $NameNodes
+ * @property int<1048576, 1073741824>|null $BlockSize
+ * @property int<1, 512>|null $ReplicationFactor
+ * @property string|null $KmsKeyProviderUri
+ * @property Shapes\QopConfiguration|null $QopConfiguration
+ * @property 'SIMPLE'|'KERBEROS'|null $AuthenticationType
+ * @property string|null $SimpleUser
+ * @property string|null $KerberosPrincipal
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $KerberosKeytab
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $KerberosKrb5Conf
+ * @property list<string>|null $AgentArns
  */
 class UpdateLocationHdfsRequest extends Request
 {
     /**
      * @param array{
      *     LocationArn: string,
-     *     Subdirectory?: string,
-     *     NameNodes?: list<Shapes\HdfsNameNode>,
-     *     BlockSize?: int<1048576, 1073741824>,
-     *     ReplicationFactor?: int<1, 512>,
-     *     KmsKeyProviderUri?: string,
-     *     QopConfiguration?: Shapes\QopConfiguration,
-     *     AuthenticationType?: 'SIMPLE'|'KERBEROS',
-     *     SimpleUser?: string,
-     *     KerberosPrincipal?: string,
-     *     KerberosKeytab?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     KerberosKrb5Conf?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     AgentArns?: list<string>
+     *     Subdirectory?: string|null,
+     *     NameNodes?: list<Shapes\HdfsNameNode>|null,
+     *     BlockSize?: int<1048576, 1073741824>|null,
+     *     ReplicationFactor?: int<1, 512>|null,
+     *     KmsKeyProviderUri?: string|null,
+     *     QopConfiguration?: Shapes\QopConfiguration|null,
+     *     AuthenticationType?: 'SIMPLE'|'KERBEROS'|null,
+     *     SimpleUser?: string|null,
+     *     KerberosPrincipal?: string|null,
+     *     KerberosKeytab?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     KerberosKrb5Conf?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     AgentArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

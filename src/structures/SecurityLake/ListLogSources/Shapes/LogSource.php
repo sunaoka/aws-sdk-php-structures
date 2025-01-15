@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityLake\ListLogSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $account
- * @property string $region
- * @property list<LogSourceResource> $sources
+ * @property string|null $account
+ * @property string|null $region
+ * @property list<LogSourceResource>|null $sources
  */
 class LogSource extends Shape
 {
     /**
      * @param array{
-     *     account?: string,
-     *     region?: string,
-     *     sources?: list<LogSourceResource>
+     *     account?: string|null,
+     *     region?: string|null,
+     *     sources?: list<LogSourceResource>|null
      * } $args
      */
     public function __construct(array $args = [])

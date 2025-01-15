@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\ListMembers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property string $Description
- * @property 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY' $Status
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property bool $IsOwned
- * @property string $Arn
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property bool|null $IsOwned
+ * @property string|null $Arn
  */
 class MemberSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Status?: 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY',
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     IsOwned?: bool,
-     *     Arn?: string
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Status?: 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY'|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     IsOwned?: bool|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

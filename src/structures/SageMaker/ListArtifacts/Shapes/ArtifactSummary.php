@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListArtifacts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ArtifactArn
- * @property string $ArtifactName
- * @property ArtifactSource $Source
- * @property string $ArtifactType
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $ArtifactArn
+ * @property string|null $ArtifactName
+ * @property ArtifactSource|null $Source
+ * @property string|null $ArtifactType
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class ArtifactSummary extends Shape
 {
     /**
      * @param array{
-     *     ArtifactArn?: string,
-     *     ArtifactName?: string,
-     *     Source?: ArtifactSource,
-     *     ArtifactType?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     ArtifactArn?: string|null,
+     *     ArtifactName?: string|null,
+     *     Source?: ArtifactSource|null,
+     *     ArtifactType?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

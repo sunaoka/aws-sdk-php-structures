@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstanceSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $status
- * @property string $snapshotTimeOfDay
- * @property string $nextSnapshotTimeOfDay
- * @property string $threshold
- * @property string $duration
+ * @property string|null $name
+ * @property string|null $status
+ * @property string|null $snapshotTimeOfDay
+ * @property string|null $nextSnapshotTimeOfDay
+ * @property string|null $threshold
+ * @property string|null $duration
  */
 class AddOn extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     status?: string,
-     *     snapshotTimeOfDay?: string,
-     *     nextSnapshotTimeOfDay?: string,
-     *     threshold?: string,
-     *     duration?: string
+     *     name?: string|null,
+     *     status?: string|null,
+     *     snapshotTimeOfDay?: string|null,
+     *     nextSnapshotTimeOfDay?: string|null,
+     *     threshold?: string|null,
+     *     duration?: string|null
      * } $args
      */
     public function __construct(array $args = [])

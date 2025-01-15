@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetImportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DefineSegment
- * @property string $ExternalId
+ * @property bool|null $DefineSegment
+ * @property string|null $ExternalId
  * @property 'CSV'|'JSON' $Format
- * @property bool $RegisterEndpoints
+ * @property bool|null $RegisterEndpoints
  * @property string $RoleArn
  * @property string $S3Url
- * @property string $SegmentId
- * @property string $SegmentName
+ * @property string|null $SegmentId
+ * @property string|null $SegmentName
  */
 class ImportJobResource extends Shape
 {
     /**
      * @param array{
-     *     DefineSegment?: bool,
-     *     ExternalId?: string,
+     *     DefineSegment?: bool|null,
+     *     ExternalId?: string|null,
      *     Format: 'CSV'|'JSON',
-     *     RegisterEndpoints?: bool,
+     *     RegisterEndpoints?: bool|null,
      *     RoleArn: string,
      *     S3Url: string,
-     *     SegmentId?: string,
-     *     SegmentName?: string
+     *     SegmentId?: string|null,
+     *     SegmentName?: string|null
      * } $args
      */
     public function __construct(array $args)

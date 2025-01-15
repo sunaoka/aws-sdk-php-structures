@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ExportVerifiedAccessInstanceClientConfigura
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Config
- * @property list<VerifiedAccessInstanceOpenVpnClientConfigurationRoute> $Routes
+ * @property string|null $Config
+ * @property list<VerifiedAccessInstanceOpenVpnClientConfigurationRoute>|null $Routes
  */
 class VerifiedAccessInstanceOpenVpnClientConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Config?: string,
-     *     Routes?: list<VerifiedAccessInstanceOpenVpnClientConfigurationRoute>
+     *     Config?: string|null,
+     *     Routes?: list<VerifiedAccessInstanceOpenVpnClientConfigurationRoute>|null
      * } $args
      */
     public function __construct(array $args = [])

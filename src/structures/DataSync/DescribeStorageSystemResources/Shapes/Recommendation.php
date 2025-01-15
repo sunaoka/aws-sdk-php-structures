@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeStorageSystemResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StorageType
- * @property array<string, string> $StorageConfiguration
- * @property string $EstimatedMonthlyStorageCost
+ * @property string|null $StorageType
+ * @property array<string, string>|null $StorageConfiguration
+ * @property string|null $EstimatedMonthlyStorageCost
  */
 class Recommendation extends Shape
 {
     /**
      * @param array{
-     *     StorageType?: string,
-     *     StorageConfiguration?: array<string, string>,
-     *     EstimatedMonthlyStorageCost?: string
+     *     StorageType?: string|null,
+     *     StorageConfiguration?: array<string, string>|null,
+     *     EstimatedMonthlyStorageCost?: string|null
      * } $args
      */
     public function __construct(array $args = [])

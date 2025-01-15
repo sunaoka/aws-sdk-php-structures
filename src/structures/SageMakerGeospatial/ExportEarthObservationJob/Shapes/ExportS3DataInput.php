@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\ExportEarthObservationJob\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property string $S3Uri
  */
 class ExportS3DataInput extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     S3Uri: string
      * } $args
      */

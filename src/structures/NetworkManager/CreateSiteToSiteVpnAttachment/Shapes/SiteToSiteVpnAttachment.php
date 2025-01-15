@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateSiteToSiteVpnAttachment\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attachment $Attachment
- * @property string $VpnConnectionArn
+ * @property Attachment|null $Attachment
+ * @property string|null $VpnConnectionArn
  */
 class SiteToSiteVpnAttachment extends Shape
 {
     /**
      * @param array{
-     *     Attachment?: Attachment,
-     *     VpnConnectionArn?: string
+     *     Attachment?: Attachment|null,
+     *     VpnConnectionArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

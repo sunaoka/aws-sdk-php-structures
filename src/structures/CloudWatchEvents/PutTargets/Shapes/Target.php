@@ -7,20 +7,20 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property string $Arn
- * @property string $RoleArn
- * @property string $Input
- * @property string $InputPath
- * @property InputTransformer $InputTransformer
- * @property KinesisParameters $KinesisParameters
- * @property RunCommandParameters $RunCommandParameters
- * @property EcsParameters $EcsParameters
- * @property BatchParameters $BatchParameters
- * @property SqsParameters $SqsParameters
- * @property HttpParameters $HttpParameters
- * @property RedshiftDataParameters $RedshiftDataParameters
- * @property SageMakerPipelineParameters $SageMakerPipelineParameters
- * @property DeadLetterConfig $DeadLetterConfig
- * @property RetryPolicy $RetryPolicy
+ * @property string|null $RoleArn
+ * @property string|null $Input
+ * @property string|null $InputPath
+ * @property InputTransformer|null $InputTransformer
+ * @property KinesisParameters|null $KinesisParameters
+ * @property RunCommandParameters|null $RunCommandParameters
+ * @property EcsParameters|null $EcsParameters
+ * @property BatchParameters|null $BatchParameters
+ * @property SqsParameters|null $SqsParameters
+ * @property HttpParameters|null $HttpParameters
+ * @property RedshiftDataParameters|null $RedshiftDataParameters
+ * @property SageMakerPipelineParameters|null $SageMakerPipelineParameters
+ * @property DeadLetterConfig|null $DeadLetterConfig
+ * @property RetryPolicy|null $RetryPolicy
  */
 class Target extends Shape
 {
@@ -28,20 +28,20 @@ class Target extends Shape
      * @param array{
      *     Id: string,
      *     Arn: string,
-     *     RoleArn?: string,
-     *     Input?: string,
-     *     InputPath?: string,
-     *     InputTransformer?: InputTransformer,
-     *     KinesisParameters?: KinesisParameters,
-     *     RunCommandParameters?: RunCommandParameters,
-     *     EcsParameters?: EcsParameters,
-     *     BatchParameters?: BatchParameters,
-     *     SqsParameters?: SqsParameters,
-     *     HttpParameters?: HttpParameters,
-     *     RedshiftDataParameters?: RedshiftDataParameters,
-     *     SageMakerPipelineParameters?: SageMakerPipelineParameters,
-     *     DeadLetterConfig?: DeadLetterConfig,
-     *     RetryPolicy?: RetryPolicy
+     *     RoleArn?: string|null,
+     *     Input?: string|null,
+     *     InputPath?: string|null,
+     *     InputTransformer?: InputTransformer|null,
+     *     KinesisParameters?: KinesisParameters|null,
+     *     RunCommandParameters?: RunCommandParameters|null,
+     *     EcsParameters?: EcsParameters|null,
+     *     BatchParameters?: BatchParameters|null,
+     *     SqsParameters?: SqsParameters|null,
+     *     HttpParameters?: HttpParameters|null,
+     *     RedshiftDataParameters?: RedshiftDataParameters|null,
+     *     SageMakerPipelineParameters?: SageMakerPipelineParameters|null,
+     *     DeadLetterConfig?: DeadLetterConfig|null,
+     *     RetryPolicy?: RetryPolicy|null
      * } $args
      */
     public function __construct(array $args)

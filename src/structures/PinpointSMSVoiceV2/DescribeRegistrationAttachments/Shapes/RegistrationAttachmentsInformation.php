@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RegistrationAttachmentArn
  * @property string $RegistrationAttachmentId
  * @property 'UPLOAD_IN_PROGRESS'|'UPLOAD_COMPLETE'|'UPLOAD_FAILED'|'DELETED' $AttachmentStatus
- * @property 'INTERNAL_ERROR' $AttachmentUploadErrorReason
+ * @property 'INTERNAL_ERROR'|null $AttachmentUploadErrorReason
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  */
 class RegistrationAttachmentsInformation extends Shape
@@ -18,7 +18,7 @@ class RegistrationAttachmentsInformation extends Shape
      *     RegistrationAttachmentArn: string,
      *     RegistrationAttachmentId: string,
      *     AttachmentStatus: 'UPLOAD_IN_PROGRESS'|'UPLOAD_COMPLETE'|'UPLOAD_FAILED'|'DELETED',
-     *     AttachmentUploadErrorReason?: 'INTERNAL_ERROR',
+     *     AttachmentUploadErrorReason?: 'INTERNAL_ERROR'|null,
      *     CreatedTimestamp: \Aws\Api\DateTimeResult
      * } $args
      */

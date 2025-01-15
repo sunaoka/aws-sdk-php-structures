@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\CreateIntent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OpensearchConfiguration $opensearchConfiguration
- * @property QnAKendraConfiguration $kendraConfiguration
- * @property BedrockKnowledgeStoreConfiguration $bedrockKnowledgeStoreConfiguration
+ * @property OpensearchConfiguration|null $opensearchConfiguration
+ * @property QnAKendraConfiguration|null $kendraConfiguration
+ * @property BedrockKnowledgeStoreConfiguration|null $bedrockKnowledgeStoreConfiguration
  */
 class DataSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     opensearchConfiguration?: OpensearchConfiguration,
-     *     kendraConfiguration?: QnAKendraConfiguration,
-     *     bedrockKnowledgeStoreConfiguration?: BedrockKnowledgeStoreConfiguration
+     *     opensearchConfiguration?: OpensearchConfiguration|null,
+     *     kendraConfiguration?: QnAKendraConfiguration|null,
+     *     bedrockKnowledgeStoreConfiguration?: BedrockKnowledgeStoreConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

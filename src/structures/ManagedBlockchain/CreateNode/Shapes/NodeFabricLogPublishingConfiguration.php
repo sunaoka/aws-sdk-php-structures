@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\CreateNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LogConfigurations $ChaincodeLogs
- * @property LogConfigurations $PeerLogs
+ * @property LogConfigurations|null $ChaincodeLogs
+ * @property LogConfigurations|null $PeerLogs
  */
 class NodeFabricLogPublishingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ChaincodeLogs?: LogConfigurations,
-     *     PeerLogs?: LogConfigurations
+     *     ChaincodeLogs?: LogConfigurations|null,
+     *     PeerLogs?: LogConfigurations|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ActionID
  * @property 'SERVICE_SOFTWARE_UPDATE'|'JVM_HEAP_SIZE_TUNING'|'JVM_YOUNG_GEN_TUNING' $ActionType
  * @property 'NOW'|'TIMESTAMP'|'OFF_PEAK_WINDOW' $ScheduleAt
- * @property int $DesiredStartTime
+ * @property int|null $DesiredStartTime
  */
 class UpdateScheduledActionRequest extends Request
 {
@@ -19,7 +19,7 @@ class UpdateScheduledActionRequest extends Request
      *     ActionID: string,
      *     ActionType: 'SERVICE_SOFTWARE_UPDATE'|'JVM_HEAP_SIZE_TUNING'|'JVM_YOUNG_GEN_TUNING',
      *     ScheduleAt: 'NOW'|'TIMESTAMP'|'OFF_PEAK_WINDOW',
-     *     DesiredStartTime?: int
+     *     DesiredStartTime?: int|null
      * } $args
      */
     public function __construct(array $args)

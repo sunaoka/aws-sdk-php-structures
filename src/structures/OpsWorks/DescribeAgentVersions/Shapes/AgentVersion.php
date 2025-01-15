@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeAgentVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Version
- * @property StackConfigurationManager $ConfigurationManager
+ * @property string|null $Version
+ * @property StackConfigurationManager|null $ConfigurationManager
  */
 class AgentVersion extends Shape
 {
     /**
      * @param array{
-     *     Version?: string,
-     *     ConfigurationManager?: StackConfigurationManager
+     *     Version?: string|null,
+     *     ConfigurationManager?: StackConfigurationManager|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'RESOLVED' $Status
  * @property string $CreatedReason
  * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property list<SyncBlockerContext> $Contexts
- * @property string $ResolvedReason
- * @property \Aws\Api\DateTimeResult $ResolvedAt
+ * @property list<SyncBlockerContext>|null $Contexts
+ * @property string|null $ResolvedReason
+ * @property \Aws\Api\DateTimeResult|null $ResolvedAt
  */
 class SyncBlocker extends Shape
 {
@@ -23,9 +23,9 @@ class SyncBlocker extends Shape
      *     Status: 'ACTIVE'|'RESOLVED',
      *     CreatedReason: string,
      *     CreatedAt: \Aws\Api\DateTimeResult,
-     *     Contexts?: list<SyncBlockerContext>,
-     *     ResolvedReason?: string,
-     *     ResolvedAt?: \Aws\Api\DateTimeResult
+     *     Contexts?: list<SyncBlockerContext>|null,
+     *     ResolvedReason?: string|null,
+     *     ResolvedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

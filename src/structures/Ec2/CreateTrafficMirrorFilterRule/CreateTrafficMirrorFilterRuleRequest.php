@@ -9,15 +9,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ingress'|'egress' $TrafficDirection
  * @property int $RuleNumber
  * @property 'accept'|'reject' $RuleAction
- * @property Shapes\TrafficMirrorPortRangeRequest $DestinationPortRange
- * @property Shapes\TrafficMirrorPortRangeRequest $SourcePortRange
- * @property int $Protocol
+ * @property Shapes\TrafficMirrorPortRangeRequest|null $DestinationPortRange
+ * @property Shapes\TrafficMirrorPortRangeRequest|null $SourcePortRange
+ * @property int|null $Protocol
  * @property string $DestinationCidrBlock
  * @property string $SourceCidrBlock
- * @property string $Description
- * @property bool $DryRun
- * @property string $ClientToken
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property string|null $Description
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateTrafficMirrorFilterRuleRequest extends Request
 {
@@ -27,15 +27,15 @@ class CreateTrafficMirrorFilterRuleRequest extends Request
      *     TrafficDirection: 'ingress'|'egress',
      *     RuleNumber: int,
      *     RuleAction: 'accept'|'reject',
-     *     DestinationPortRange?: Shapes\TrafficMirrorPortRangeRequest,
-     *     SourcePortRange?: Shapes\TrafficMirrorPortRangeRequest,
-     *     Protocol?: int,
+     *     DestinationPortRange?: Shapes\TrafficMirrorPortRangeRequest|null,
+     *     SourcePortRange?: Shapes\TrafficMirrorPortRangeRequest|null,
+     *     Protocol?: int|null,
      *     DestinationCidrBlock: string,
      *     SourceCidrBlock: string,
-     *     Description?: string,
-     *     DryRun?: bool,
-     *     ClientToken?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>
+     *     Description?: string|null,
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\SavingsPlansUtilizationDetail> $SavingsPlansUtilizationDetails
- * @property Shapes\SavingsPlansUtilizationAggregates $Total
+ * @property Shapes\SavingsPlansUtilizationAggregates|null $Total
  * @property Shapes\DateInterval $TimePeriod
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetSavingsPlansUtilizationDetailsResponse extends Response
 {

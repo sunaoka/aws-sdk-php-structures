@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\ListDeployments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\DeploymentFilter> $filters
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property list<Shapes\DeploymentFilter>|null $filters
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListDeploymentsRequest extends Request
 {
     /**
      * @param array{
-     *     filters?: list<Shapes\DeploymentFilter>,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string
+     *     filters?: list<Shapes\DeploymentFilter>|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

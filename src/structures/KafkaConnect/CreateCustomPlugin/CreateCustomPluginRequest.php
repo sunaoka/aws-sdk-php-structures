@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'JAR'|'ZIP' $contentType
- * @property string $description
+ * @property string|null $description
  * @property Shapes\CustomPluginLocation $location
  * @property string $name
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateCustomPluginRequest extends Request
 {
     /**
      * @param array{
      *     contentType: 'JAR'|'ZIP',
-     *     description?: string,
+     *     description?: string|null,
      *     location: Shapes\CustomPluginLocation,
      *     name: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

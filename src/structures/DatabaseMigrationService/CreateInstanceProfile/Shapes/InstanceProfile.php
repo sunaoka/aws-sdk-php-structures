@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateInstanceProfile\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceProfileArn
- * @property string $AvailabilityZone
- * @property string $KmsKeyArn
- * @property bool $PubliclyAccessible
- * @property string $NetworkType
- * @property string $InstanceProfileName
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $InstanceProfileCreationTime
- * @property string $SubnetGroupIdentifier
- * @property list<string> $VpcSecurityGroups
+ * @property string|null $InstanceProfileArn
+ * @property string|null $AvailabilityZone
+ * @property string|null $KmsKeyArn
+ * @property bool|null $PubliclyAccessible
+ * @property string|null $NetworkType
+ * @property string|null $InstanceProfileName
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $InstanceProfileCreationTime
+ * @property string|null $SubnetGroupIdentifier
+ * @property list<string>|null $VpcSecurityGroups
  */
 class InstanceProfile extends Shape
 {
     /**
      * @param array{
-     *     InstanceProfileArn?: string,
-     *     AvailabilityZone?: string,
-     *     KmsKeyArn?: string,
-     *     PubliclyAccessible?: bool,
-     *     NetworkType?: string,
-     *     InstanceProfileName?: string,
-     *     Description?: string,
-     *     InstanceProfileCreationTime?: \Aws\Api\DateTimeResult,
-     *     SubnetGroupIdentifier?: string,
-     *     VpcSecurityGroups?: list<string>
+     *     InstanceProfileArn?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     KmsKeyArn?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     NetworkType?: string|null,
+     *     InstanceProfileName?: string|null,
+     *     Description?: string|null,
+     *     InstanceProfileCreationTime?: \Aws\Api\DateTimeResult|null,
+     *     SubnetGroupIdentifier?: string|null,
+     *     VpcSecurityGroups?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

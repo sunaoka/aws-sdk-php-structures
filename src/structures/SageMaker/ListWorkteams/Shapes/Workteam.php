@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $WorkteamName
  * @property list<MemberDefinition> $MemberDefinitions
  * @property string $WorkteamArn
- * @property string $WorkforceArn
- * @property list<string> $ProductListingIds
+ * @property string|null $WorkforceArn
+ * @property list<string>|null $ProductListingIds
  * @property string $Description
- * @property string $SubDomain
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property \Aws\Api\DateTimeResult $LastUpdatedDate
- * @property NotificationConfiguration $NotificationConfiguration
- * @property WorkerAccessConfiguration $WorkerAccessConfiguration
+ * @property string|null $SubDomain
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedDate
+ * @property NotificationConfiguration|null $NotificationConfiguration
+ * @property WorkerAccessConfiguration|null $WorkerAccessConfiguration
  */
 class Workteam extends Shape
 {
@@ -24,14 +24,14 @@ class Workteam extends Shape
      *     WorkteamName: string,
      *     MemberDefinitions: list<MemberDefinition>,
      *     WorkteamArn: string,
-     *     WorkforceArn?: string,
-     *     ProductListingIds?: list<string>,
+     *     WorkforceArn?: string|null,
+     *     ProductListingIds?: list<string>|null,
      *     Description: string,
-     *     SubDomain?: string,
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedDate?: \Aws\Api\DateTimeResult,
-     *     NotificationConfiguration?: NotificationConfiguration,
-     *     WorkerAccessConfiguration?: WorkerAccessConfiguration
+     *     SubDomain?: string|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedDate?: \Aws\Api\DateTimeResult|null,
+     *     NotificationConfiguration?: NotificationConfiguration|null,
+     *     WorkerAccessConfiguration?: WorkerAccessConfiguration|null
      * } $args
      */
     public function __construct(array $args)

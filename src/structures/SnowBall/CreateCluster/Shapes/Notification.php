@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SnowBall\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SnsTopicARN
- * @property list<'New'|'PreparingAppliance'|'PreparingShipment'|'InTransitToCustomer'|'WithCustomer'|'InTransitToAWS'|'WithAWSSortingFacility'|'WithAWS'|'InProgress'|'Complete'|'Cancelled'|'Listing'|'Pending'> $JobStatesToNotify
- * @property bool $NotifyAll
- * @property string $DevicePickupSnsTopicARN
+ * @property string|null $SnsTopicARN
+ * @property list<'New'|'PreparingAppliance'|'PreparingShipment'|'InTransitToCustomer'|'WithCustomer'|'InTransitToAWS'|'WithAWSSortingFacility'|'WithAWS'|'InProgress'|'Complete'|'Cancelled'|'Listing'|'Pending'>|null $JobStatesToNotify
+ * @property bool|null $NotifyAll
+ * @property string|null $DevicePickupSnsTopicARN
  */
 class Notification extends Shape
 {
     /**
      * @param array{
-     *     SnsTopicARN?: string,
-     *     JobStatesToNotify?: list<'New'|'PreparingAppliance'|'PreparingShipment'|'InTransitToCustomer'|'WithCustomer'|'InTransitToAWS'|'WithAWSSortingFacility'|'WithAWS'|'InProgress'|'Complete'|'Cancelled'|'Listing'|'Pending'>,
-     *     NotifyAll?: bool,
-     *     DevicePickupSnsTopicARN?: string
+     *     SnsTopicARN?: string|null,
+     *     JobStatesToNotify?: list<'New'|'PreparingAppliance'|'PreparingShipment'|'InTransitToCustomer'|'WithCustomer'|'InTransitToAWS'|'WithAWSSortingFacility'|'WithAWS'|'InProgress'|'Complete'|'Cancelled'|'Listing'|'Pending'>|null,
+     *     NotifyAll?: bool|null,
+     *     DevicePickupSnsTopicARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

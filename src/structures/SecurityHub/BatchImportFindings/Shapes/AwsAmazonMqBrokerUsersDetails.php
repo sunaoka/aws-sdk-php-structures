@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PendingChange
- * @property string $Username
+ * @property string|null $PendingChange
+ * @property string|null $Username
  */
 class AwsAmazonMqBrokerUsersDetails extends Shape
 {
     /**
      * @param array{
-     *     PendingChange?: string,
-     *     Username?: string
+     *     PendingChange?: string|null,
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $KeyArn
  * @property string $KeyCheckValue
- * @property string $AuthResponseValue
+ * @property string|null $AuthResponseValue
  */
 class VerifyAuthRequestCryptogramResponse extends Response
 {

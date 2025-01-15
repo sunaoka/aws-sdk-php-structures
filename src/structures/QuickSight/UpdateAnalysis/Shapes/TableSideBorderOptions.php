@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TableBorderOptions $InnerVertical
- * @property TableBorderOptions $InnerHorizontal
- * @property TableBorderOptions $Left
- * @property TableBorderOptions $Right
- * @property TableBorderOptions $Top
- * @property TableBorderOptions $Bottom
+ * @property TableBorderOptions|null $InnerVertical
+ * @property TableBorderOptions|null $InnerHorizontal
+ * @property TableBorderOptions|null $Left
+ * @property TableBorderOptions|null $Right
+ * @property TableBorderOptions|null $Top
+ * @property TableBorderOptions|null $Bottom
  */
 class TableSideBorderOptions extends Shape
 {
     /**
      * @param array{
-     *     InnerVertical?: TableBorderOptions,
-     *     InnerHorizontal?: TableBorderOptions,
-     *     Left?: TableBorderOptions,
-     *     Right?: TableBorderOptions,
-     *     Top?: TableBorderOptions,
-     *     Bottom?: TableBorderOptions
+     *     InnerVertical?: TableBorderOptions|null,
+     *     InnerHorizontal?: TableBorderOptions|null,
+     *     Left?: TableBorderOptions|null,
+     *     Right?: TableBorderOptions|null,
+     *     Top?: TableBorderOptions|null,
+     *     Bottom?: TableBorderOptions|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\DeleteDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftClusterStorage $redshiftClusterSource
- * @property RedshiftServerlessStorage $redshiftServerlessSource
+ * @property RedshiftClusterStorage|null $redshiftClusterSource
+ * @property RedshiftServerlessStorage|null $redshiftServerlessSource
  */
 class RedshiftStorage extends Shape
 {
     /**
      * @param array{
-     *     redshiftClusterSource?: RedshiftClusterStorage,
-     *     redshiftServerlessSource?: RedshiftServerlessStorage
+     *     redshiftClusterSource?: RedshiftClusterStorage|null,
+     *     redshiftServerlessSource?: RedshiftServerlessStorage|null
      * } $args
      */
     public function __construct(array $args = [])

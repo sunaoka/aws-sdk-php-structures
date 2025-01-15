@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\AttachNetworkInterface\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnaSrdUdpEnabled
+ * @property bool|null $EnaSrdUdpEnabled
  */
 class EnaSrdUdpSpecification extends Shape
 {
     /**
-     * @param array{EnaSrdUdpEnabled?: bool} $args
+     * @param array{EnaSrdUdpEnabled?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

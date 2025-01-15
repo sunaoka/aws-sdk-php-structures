@@ -10,15 +10,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ArtifactS3Location
  * @property string $ExecutionRoleArn
  * @property Shapes\CanaryScheduleInput $Schedule
- * @property Shapes\CanaryRunConfigInput $RunConfig
- * @property int<1, 1024> $SuccessRetentionPeriodInDays
- * @property int<1, 1024> $FailureRetentionPeriodInDays
+ * @property Shapes\CanaryRunConfigInput|null $RunConfig
+ * @property int<1, 1024>|null $SuccessRetentionPeriodInDays
+ * @property int<1, 1024>|null $FailureRetentionPeriodInDays
  * @property string $RuntimeVersion
- * @property Shapes\VpcConfigInput $VpcConfig
- * @property list<'lambda-function'> $ResourcesToReplicateTags
- * @property 'AUTOMATIC'|'OFF' $ProvisionedResourceCleanup
- * @property array<string, string> $Tags
- * @property Shapes\ArtifactConfigInput $ArtifactConfig
+ * @property Shapes\VpcConfigInput|null $VpcConfig
+ * @property list<'lambda-function'>|null $ResourcesToReplicateTags
+ * @property 'AUTOMATIC'|'OFF'|null $ProvisionedResourceCleanup
+ * @property array<string, string>|null $Tags
+ * @property Shapes\ArtifactConfigInput|null $ArtifactConfig
  */
 class CreateCanaryRequest extends Request
 {
@@ -29,15 +29,15 @@ class CreateCanaryRequest extends Request
      *     ArtifactS3Location: string,
      *     ExecutionRoleArn: string,
      *     Schedule: Shapes\CanaryScheduleInput,
-     *     RunConfig?: Shapes\CanaryRunConfigInput,
-     *     SuccessRetentionPeriodInDays?: int<1, 1024>,
-     *     FailureRetentionPeriodInDays?: int<1, 1024>,
+     *     RunConfig?: Shapes\CanaryRunConfigInput|null,
+     *     SuccessRetentionPeriodInDays?: int<1, 1024>|null,
+     *     FailureRetentionPeriodInDays?: int<1, 1024>|null,
      *     RuntimeVersion: string,
-     *     VpcConfig?: Shapes\VpcConfigInput,
-     *     ResourcesToReplicateTags?: list<'lambda-function'>,
-     *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF',
-     *     Tags?: array<string, string>,
-     *     ArtifactConfig?: Shapes\ArtifactConfigInput
+     *     VpcConfig?: Shapes\VpcConfigInput|null,
+     *     ResourcesToReplicateTags?: list<'lambda-function'>|null,
+     *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null,
+     *     Tags?: array<string, string>|null,
+     *     ArtifactConfig?: Shapes\ArtifactConfigInput|null
      * } $args
      */
     public function __construct(array $args)

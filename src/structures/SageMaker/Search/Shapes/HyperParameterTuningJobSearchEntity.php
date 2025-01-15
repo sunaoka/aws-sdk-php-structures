@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HyperParameterTuningJobName
- * @property string $HyperParameterTuningJobArn
- * @property HyperParameterTuningJobConfig $HyperParameterTuningJobConfig
- * @property HyperParameterTrainingJobDefinition $TrainingJobDefinition
- * @property list<HyperParameterTrainingJobDefinition> $TrainingJobDefinitions
- * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed' $HyperParameterTuningJobStatus
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $HyperParameterTuningEndTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property TrainingJobStatusCounters $TrainingJobStatusCounters
- * @property ObjectiveStatusCounters $ObjectiveStatusCounters
- * @property HyperParameterTrainingJobSummary $BestTrainingJob
- * @property HyperParameterTrainingJobSummary $OverallBestTrainingJob
- * @property HyperParameterTuningJobWarmStartConfig $WarmStartConfig
- * @property string $FailureReason
- * @property HyperParameterTuningJobCompletionDetails $TuningJobCompletionDetails
- * @property HyperParameterTuningJobConsumedResources $ConsumedResources
- * @property list<Tag> $Tags
+ * @property string|null $HyperParameterTuningJobName
+ * @property string|null $HyperParameterTuningJobArn
+ * @property HyperParameterTuningJobConfig|null $HyperParameterTuningJobConfig
+ * @property HyperParameterTrainingJobDefinition|null $TrainingJobDefinition
+ * @property list<HyperParameterTrainingJobDefinition>|null $TrainingJobDefinitions
+ * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed'|null $HyperParameterTuningJobStatus
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $HyperParameterTuningEndTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property TrainingJobStatusCounters|null $TrainingJobStatusCounters
+ * @property ObjectiveStatusCounters|null $ObjectiveStatusCounters
+ * @property HyperParameterTrainingJobSummary|null $BestTrainingJob
+ * @property HyperParameterTrainingJobSummary|null $OverallBestTrainingJob
+ * @property HyperParameterTuningJobWarmStartConfig|null $WarmStartConfig
+ * @property string|null $FailureReason
+ * @property HyperParameterTuningJobCompletionDetails|null $TuningJobCompletionDetails
+ * @property HyperParameterTuningJobConsumedResources|null $ConsumedResources
+ * @property list<Tag>|null $Tags
  */
 class HyperParameterTuningJobSearchEntity extends Shape
 {
     /**
      * @param array{
-     *     HyperParameterTuningJobName?: string,
-     *     HyperParameterTuningJobArn?: string,
-     *     HyperParameterTuningJobConfig?: HyperParameterTuningJobConfig,
-     *     TrainingJobDefinition?: HyperParameterTrainingJobDefinition,
-     *     TrainingJobDefinitions?: list<HyperParameterTrainingJobDefinition>,
-     *     HyperParameterTuningJobStatus?: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     HyperParameterTuningEndTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     TrainingJobStatusCounters?: TrainingJobStatusCounters,
-     *     ObjectiveStatusCounters?: ObjectiveStatusCounters,
-     *     BestTrainingJob?: HyperParameterTrainingJobSummary,
-     *     OverallBestTrainingJob?: HyperParameterTrainingJobSummary,
-     *     WarmStartConfig?: HyperParameterTuningJobWarmStartConfig,
-     *     FailureReason?: string,
-     *     TuningJobCompletionDetails?: HyperParameterTuningJobCompletionDetails,
-     *     ConsumedResources?: HyperParameterTuningJobConsumedResources,
-     *     Tags?: list<Tag>
+     *     HyperParameterTuningJobName?: string|null,
+     *     HyperParameterTuningJobArn?: string|null,
+     *     HyperParameterTuningJobConfig?: HyperParameterTuningJobConfig|null,
+     *     TrainingJobDefinition?: HyperParameterTrainingJobDefinition|null,
+     *     TrainingJobDefinitions?: list<HyperParameterTrainingJobDefinition>|null,
+     *     HyperParameterTuningJobStatus?: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     HyperParameterTuningEndTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     TrainingJobStatusCounters?: TrainingJobStatusCounters|null,
+     *     ObjectiveStatusCounters?: ObjectiveStatusCounters|null,
+     *     BestTrainingJob?: HyperParameterTrainingJobSummary|null,
+     *     OverallBestTrainingJob?: HyperParameterTrainingJobSummary|null,
+     *     WarmStartConfig?: HyperParameterTuningJobWarmStartConfig|null,
+     *     FailureReason?: string|null,
+     *     TuningJobCompletionDetails?: HyperParameterTuningJobCompletionDetails|null,
+     *     ConsumedResources?: HyperParameterTuningJobConsumedResources|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

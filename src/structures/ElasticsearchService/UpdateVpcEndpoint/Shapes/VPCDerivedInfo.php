@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\UpdateVpcEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VPCId
- * @property list<string> $SubnetIds
- * @property list<string> $AvailabilityZones
- * @property list<string> $SecurityGroupIds
+ * @property string|null $VPCId
+ * @property list<string>|null $SubnetIds
+ * @property list<string>|null $AvailabilityZones
+ * @property list<string>|null $SecurityGroupIds
  */
 class VPCDerivedInfo extends Shape
 {
     /**
      * @param array{
-     *     VPCId?: string,
-     *     SubnetIds?: list<string>,
-     *     AvailabilityZones?: list<string>,
-     *     SecurityGroupIds?: list<string>
+     *     VPCId?: string|null,
+     *     SubnetIds?: list<string>|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     SecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

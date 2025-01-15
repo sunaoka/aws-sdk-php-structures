@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, max> $MinUnits
  * @property int<1, max> $MaxUnits
  * @property string $PipelineConfigurationBody
- * @property Shapes\LogPublishingOptions $LogPublishingOptions
- * @property Shapes\VpcOptions $VpcOptions
- * @property Shapes\BufferOptions $BufferOptions
- * @property Shapes\EncryptionAtRestOptions $EncryptionAtRestOptions
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\LogPublishingOptions|null $LogPublishingOptions
+ * @property Shapes\VpcOptions|null $VpcOptions
+ * @property Shapes\BufferOptions|null $BufferOptions
+ * @property Shapes\EncryptionAtRestOptions|null $EncryptionAtRestOptions
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreatePipelineRequest extends Request
 {
@@ -23,11 +23,11 @@ class CreatePipelineRequest extends Request
      *     MinUnits: int<1, max>,
      *     MaxUnits: int<1, max>,
      *     PipelineConfigurationBody: string,
-     *     LogPublishingOptions?: Shapes\LogPublishingOptions,
-     *     VpcOptions?: Shapes\VpcOptions,
-     *     BufferOptions?: Shapes\BufferOptions,
-     *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions,
-     *     Tags?: list<Shapes\Tag>
+     *     LogPublishingOptions?: Shapes\LogPublishingOptions|null,
+     *     VpcOptions?: Shapes\VpcOptions|null,
+     *     BufferOptions?: Shapes\BufferOptions|null,
+     *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

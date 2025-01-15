@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PrometheusService\ListScrapers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AmpConfiguration $ampConfiguration
+ * @property AmpConfiguration|null $ampConfiguration
  */
 class Destination extends Shape
 {
     /**
-     * @param array{ampConfiguration?: AmpConfiguration} $args
+     * @param array{ampConfiguration?: AmpConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

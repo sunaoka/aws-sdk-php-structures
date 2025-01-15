@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\DeregisterTaskDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'memberOf' $type
- * @property string $expression
+ * @property 'memberOf'|null $type
+ * @property string|null $expression
  */
 class TaskDefinitionPlacementConstraint extends Shape
 {
     /**
      * @param array{
-     *     type?: 'memberOf',
-     *     expression?: string
+     *     type?: 'memberOf'|null,
+     *     expression?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ComputationId
- * @property string $Name
- * @property MeasureField $Value
+ * @property string|null $Name
+ * @property MeasureField|null $Value
  */
 class TotalAggregationComputation extends Shape
 {
     /**
      * @param array{
      *     ComputationId: string,
-     *     Name?: string,
-     *     Value?: MeasureField
+     *     Name?: string|null,
+     *     Value?: MeasureField|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Object $antipatternReportS3Object
- * @property 'FAILED'|'IN_PROGRESS'|'SUCCESS' $antipatternReportStatus
- * @property string $antipatternReportStatusMessage
- * @property \Aws\Api\DateTimeResult $lastAnalyzedTimestamp
- * @property list<AntipatternSeveritySummary> $listAntipatternSeveritySummary
- * @property list<ApplicationComponentStatusSummary> $listApplicationComponentStatusSummary
- * @property list<StrategySummary> $listApplicationComponentStrategySummary
- * @property list<ApplicationComponentSummary> $listApplicationComponentSummary
- * @property list<ServerStatusSummary> $listServerStatusSummary
- * @property list<StrategySummary> $listServerStrategySummary
- * @property list<ServerSummary> $listServerSummary
+ * @property S3Object|null $antipatternReportS3Object
+ * @property 'FAILED'|'IN_PROGRESS'|'SUCCESS'|null $antipatternReportStatus
+ * @property string|null $antipatternReportStatusMessage
+ * @property \Aws\Api\DateTimeResult|null $lastAnalyzedTimestamp
+ * @property list<AntipatternSeveritySummary>|null $listAntipatternSeveritySummary
+ * @property list<ApplicationComponentStatusSummary>|null $listApplicationComponentStatusSummary
+ * @property list<StrategySummary>|null $listApplicationComponentStrategySummary
+ * @property list<ApplicationComponentSummary>|null $listApplicationComponentSummary
+ * @property list<ServerStatusSummary>|null $listServerStatusSummary
+ * @property list<StrategySummary>|null $listServerStrategySummary
+ * @property list<ServerSummary>|null $listServerSummary
  */
 class AssessmentSummary extends Shape
 {
     /**
      * @param array{
-     *     antipatternReportS3Object?: S3Object,
-     *     antipatternReportStatus?: 'FAILED'|'IN_PROGRESS'|'SUCCESS',
-     *     antipatternReportStatusMessage?: string,
-     *     lastAnalyzedTimestamp?: \Aws\Api\DateTimeResult,
-     *     listAntipatternSeveritySummary?: list<AntipatternSeveritySummary>,
-     *     listApplicationComponentStatusSummary?: list<ApplicationComponentStatusSummary>,
-     *     listApplicationComponentStrategySummary?: list<StrategySummary>,
-     *     listApplicationComponentSummary?: list<ApplicationComponentSummary>,
-     *     listServerStatusSummary?: list<ServerStatusSummary>,
-     *     listServerStrategySummary?: list<StrategySummary>,
-     *     listServerSummary?: list<ServerSummary>
+     *     antipatternReportS3Object?: S3Object|null,
+     *     antipatternReportStatus?: 'FAILED'|'IN_PROGRESS'|'SUCCESS'|null,
+     *     antipatternReportStatusMessage?: string|null,
+     *     lastAnalyzedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     listAntipatternSeveritySummary?: list<AntipatternSeveritySummary>|null,
+     *     listApplicationComponentStatusSummary?: list<ApplicationComponentStatusSummary>|null,
+     *     listApplicationComponentStrategySummary?: list<StrategySummary>|null,
+     *     listApplicationComponentSummary?: list<ApplicationComponentSummary>|null,
+     *     listServerStatusSummary?: list<ServerStatusSummary>|null,
+     *     listServerStrategySummary?: list<StrategySummary>|null,
+     *     listServerSummary?: list<ServerSummary>|null
      * } $args
      */
     public function __construct(array $args = [])

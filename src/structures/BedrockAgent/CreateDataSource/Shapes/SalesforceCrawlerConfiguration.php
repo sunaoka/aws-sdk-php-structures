@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CrawlFilterConfiguration $filterConfiguration
+ * @property CrawlFilterConfiguration|null $filterConfiguration
  */
 class SalesforceCrawlerConfiguration extends Shape
 {
     /**
-     * @param array{filterConfiguration?: CrawlFilterConfiguration} $args
+     * @param array{filterConfiguration?: CrawlFilterConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

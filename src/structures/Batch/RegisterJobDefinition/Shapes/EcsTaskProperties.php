@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<TaskContainerProperties> $containers
- * @property EphemeralStorage $ephemeralStorage
- * @property string $executionRoleArn
- * @property string $platformVersion
- * @property string $ipcMode
- * @property string $taskRoleArn
- * @property string $pidMode
- * @property NetworkConfiguration $networkConfiguration
- * @property RuntimePlatform $runtimePlatform
- * @property list<Volume> $volumes
+ * @property EphemeralStorage|null $ephemeralStorage
+ * @property string|null $executionRoleArn
+ * @property string|null $platformVersion
+ * @property string|null $ipcMode
+ * @property string|null $taskRoleArn
+ * @property string|null $pidMode
+ * @property NetworkConfiguration|null $networkConfiguration
+ * @property RuntimePlatform|null $runtimePlatform
+ * @property list<Volume>|null $volumes
  */
 class EcsTaskProperties extends Shape
 {
     /**
      * @param array{
      *     containers: list<TaskContainerProperties>,
-     *     ephemeralStorage?: EphemeralStorage,
-     *     executionRoleArn?: string,
-     *     platformVersion?: string,
-     *     ipcMode?: string,
-     *     taskRoleArn?: string,
-     *     pidMode?: string,
-     *     networkConfiguration?: NetworkConfiguration,
-     *     runtimePlatform?: RuntimePlatform,
-     *     volumes?: list<Volume>
+     *     ephemeralStorage?: EphemeralStorage|null,
+     *     executionRoleArn?: string|null,
+     *     platformVersion?: string|null,
+     *     ipcMode?: string|null,
+     *     taskRoleArn?: string|null,
+     *     pidMode?: string|null,
+     *     networkConfiguration?: NetworkConfiguration|null,
+     *     runtimePlatform?: RuntimePlatform|null,
+     *     volumes?: list<Volume>|null
      * } $args
      */
     public function __construct(array $args)

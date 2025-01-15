@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ECRPublic\PutRegistryCatalogData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $displayName
+ * @property string|null $displayName
  */
 class RegistryCatalogData extends Shape
 {
     /**
-     * @param array{displayName?: string} $args
+     * @param array{displayName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lambda\GetAccountSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AccountLimit $AccountLimit
- * @property Shapes\AccountUsage $AccountUsage
+ * @property Shapes\AccountLimit|null $AccountLimit
+ * @property Shapes\AccountUsage|null $AccountUsage
  */
 class GetAccountSettingsResponse extends Response
 {

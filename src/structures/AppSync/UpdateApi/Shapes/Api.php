@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\AppSync\UpdateApi\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $apiId
- * @property string $name
- * @property string $ownerContact
- * @property array<string, string> $tags
- * @property array<string, string> $dns
- * @property string $apiArn
- * @property \Aws\Api\DateTimeResult $created
- * @property bool $xrayEnabled
- * @property string $wafWebAclArn
- * @property EventConfig $eventConfig
+ * @property string|null $apiId
+ * @property string|null $name
+ * @property string|null $ownerContact
+ * @property array<string, string>|null $tags
+ * @property array<string, string>|null $dns
+ * @property string|null $apiArn
+ * @property \Aws\Api\DateTimeResult|null $created
+ * @property bool|null $xrayEnabled
+ * @property string|null $wafWebAclArn
+ * @property EventConfig|null $eventConfig
  */
 class Api extends Shape
 {
     /**
      * @param array{
-     *     apiId?: string,
-     *     name?: string,
-     *     ownerContact?: string,
-     *     tags?: array<string, string>,
-     *     dns?: array<string, string>,
-     *     apiArn?: string,
-     *     created?: \Aws\Api\DateTimeResult,
-     *     xrayEnabled?: bool,
-     *     wafWebAclArn?: string,
-     *     eventConfig?: EventConfig
+     *     apiId?: string|null,
+     *     name?: string|null,
+     *     ownerContact?: string|null,
+     *     tags?: array<string, string>|null,
+     *     dns?: array<string, string>|null,
+     *     apiArn?: string|null,
+     *     created?: \Aws\Api\DateTimeResult|null,
+     *     xrayEnabled?: bool|null,
+     *     wafWebAclArn?: string|null,
+     *     eventConfig?: EventConfig|null
      * } $args
      */
     public function __construct(array $args = [])

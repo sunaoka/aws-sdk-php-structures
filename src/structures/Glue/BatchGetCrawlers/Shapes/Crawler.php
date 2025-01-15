@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetCrawlers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Role
- * @property CrawlerTargets $Targets
- * @property string $DatabaseName
- * @property string $Description
- * @property list<string> $Classifiers
- * @property RecrawlPolicy $RecrawlPolicy
- * @property SchemaChangePolicy $SchemaChangePolicy
- * @property LineageConfiguration $LineageConfiguration
- * @property 'READY'|'RUNNING'|'STOPPING' $State
- * @property string $TablePrefix
- * @property Schedule $Schedule
- * @property int $CrawlElapsedTime
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property LastCrawlInfo $LastCrawl
- * @property int $Version
- * @property string $Configuration
- * @property string $CrawlerSecurityConfiguration
- * @property LakeFormationConfiguration $LakeFormationConfiguration
+ * @property string|null $Name
+ * @property string|null $Role
+ * @property CrawlerTargets|null $Targets
+ * @property string|null $DatabaseName
+ * @property string|null $Description
+ * @property list<string>|null $Classifiers
+ * @property RecrawlPolicy|null $RecrawlPolicy
+ * @property SchemaChangePolicy|null $SchemaChangePolicy
+ * @property LineageConfiguration|null $LineageConfiguration
+ * @property 'READY'|'RUNNING'|'STOPPING'|null $State
+ * @property string|null $TablePrefix
+ * @property Schedule|null $Schedule
+ * @property int|null $CrawlElapsedTime
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property LastCrawlInfo|null $LastCrawl
+ * @property int|null $Version
+ * @property string|null $Configuration
+ * @property string|null $CrawlerSecurityConfiguration
+ * @property LakeFormationConfiguration|null $LakeFormationConfiguration
  */
 class Crawler extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Role?: string,
-     *     Targets?: CrawlerTargets,
-     *     DatabaseName?: string,
-     *     Description?: string,
-     *     Classifiers?: list<string>,
-     *     RecrawlPolicy?: RecrawlPolicy,
-     *     SchemaChangePolicy?: SchemaChangePolicy,
-     *     LineageConfiguration?: LineageConfiguration,
-     *     State?: 'READY'|'RUNNING'|'STOPPING',
-     *     TablePrefix?: string,
-     *     Schedule?: Schedule,
-     *     CrawlElapsedTime?: int,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     LastCrawl?: LastCrawlInfo,
-     *     Version?: int,
-     *     Configuration?: string,
-     *     CrawlerSecurityConfiguration?: string,
-     *     LakeFormationConfiguration?: LakeFormationConfiguration
+     *     Name?: string|null,
+     *     Role?: string|null,
+     *     Targets?: CrawlerTargets|null,
+     *     DatabaseName?: string|null,
+     *     Description?: string|null,
+     *     Classifiers?: list<string>|null,
+     *     RecrawlPolicy?: RecrawlPolicy|null,
+     *     SchemaChangePolicy?: SchemaChangePolicy|null,
+     *     LineageConfiguration?: LineageConfiguration|null,
+     *     State?: 'READY'|'RUNNING'|'STOPPING'|null,
+     *     TablePrefix?: string|null,
+     *     Schedule?: Schedule|null,
+     *     CrawlElapsedTime?: int|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     LastCrawl?: LastCrawlInfo|null,
+     *     Version?: int|null,
+     *     Configuration?: string|null,
+     *     CrawlerSecurityConfiguration?: string|null,
+     *     LakeFormationConfiguration?: LakeFormationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

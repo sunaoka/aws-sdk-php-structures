@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeSubnetGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SubnetGroupName
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $SubnetGroupName
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeSubnetGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     SubnetGroupName?: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     SubnetGroupName?: string|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

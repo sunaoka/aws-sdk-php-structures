@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $ParticipantId
  * @property 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR' $ParticipantRole
- * @property string $DisplayName
+ * @property string|null $DisplayName
  * @property string $Content
- * @property string $ContentType
+ * @property string|null $ContentType
  * @property RealTimeContactAnalysisTimeData $Time
- * @property RealTimeContactAnalysisTranscriptItemRedaction $Redaction
- * @property 'POSITIVE'|'NEGATIVE'|'NEUTRAL' $Sentiment
+ * @property RealTimeContactAnalysisTranscriptItemRedaction|null $Redaction
+ * @property 'POSITIVE'|'NEGATIVE'|'NEUTRAL'|null $Sentiment
  */
 class RealTimeContactAnalysisSegmentTranscript extends Shape
 {
@@ -22,12 +22,12 @@ class RealTimeContactAnalysisSegmentTranscript extends Shape
      *     Id: string,
      *     ParticipantId: string,
      *     ParticipantRole: 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR',
-     *     DisplayName?: string,
+     *     DisplayName?: string|null,
      *     Content: string,
-     *     ContentType?: string,
+     *     ContentType?: string|null,
      *     Time: RealTimeContactAnalysisTimeData,
-     *     Redaction?: RealTimeContactAnalysisTranscriptItemRedaction,
-     *     Sentiment?: 'POSITIVE'|'NEGATIVE'|'NEUTRAL'
+     *     Redaction?: RealTimeContactAnalysisTranscriptItemRedaction|null,
+     *     Sentiment?: 'POSITIVE'|'NEGATIVE'|'NEUTRAL'|null
      * } $args
      */
     public function __construct(array $args)

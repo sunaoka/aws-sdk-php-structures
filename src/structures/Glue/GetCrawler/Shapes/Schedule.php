@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetCrawler\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ScheduleExpression
- * @property 'SCHEDULED'|'NOT_SCHEDULED'|'TRANSITIONING' $State
+ * @property string|null $ScheduleExpression
+ * @property 'SCHEDULED'|'NOT_SCHEDULED'|'TRANSITIONING'|null $State
  */
 class Schedule extends Shape
 {
     /**
      * @param array{
-     *     ScheduleExpression?: string,
-     *     State?: 'SCHEDULED'|'NOT_SCHEDULED'|'TRANSITIONING'
+     *     ScheduleExpression?: string|null,
+     *     State?: 'SCHEDULED'|'NOT_SCHEDULED'|'TRANSITIONING'|null
      * } $args
      */
     public function __construct(array $args = [])

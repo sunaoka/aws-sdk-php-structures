@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property 'RUNNING'|'STOPPED' $DesiredState
- * @property Shapes\UpdatePipeSourceParameters $SourceParameters
- * @property string $Enrichment
- * @property Shapes\PipeEnrichmentParameters $EnrichmentParameters
- * @property string $Target
- * @property Shapes\PipeTargetParameters $TargetParameters
+ * @property string|null $Description
+ * @property 'RUNNING'|'STOPPED'|null $DesiredState
+ * @property Shapes\UpdatePipeSourceParameters|null $SourceParameters
+ * @property string|null $Enrichment
+ * @property Shapes\PipeEnrichmentParameters|null $EnrichmentParameters
+ * @property string|null $Target
+ * @property Shapes\PipeTargetParameters|null $TargetParameters
  * @property string $RoleArn
- * @property Shapes\PipeLogConfigurationParameters $LogConfiguration
- * @property string $KmsKeyIdentifier
+ * @property Shapes\PipeLogConfigurationParameters|null $LogConfiguration
+ * @property string|null $KmsKeyIdentifier
  */
 class UpdatePipeRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     DesiredState?: 'RUNNING'|'STOPPED',
-     *     SourceParameters?: Shapes\UpdatePipeSourceParameters,
-     *     Enrichment?: string,
-     *     EnrichmentParameters?: Shapes\PipeEnrichmentParameters,
-     *     Target?: string,
-     *     TargetParameters?: Shapes\PipeTargetParameters,
+     *     Description?: string|null,
+     *     DesiredState?: 'RUNNING'|'STOPPED'|null,
+     *     SourceParameters?: Shapes\UpdatePipeSourceParameters|null,
+     *     Enrichment?: string|null,
+     *     EnrichmentParameters?: Shapes\PipeEnrichmentParameters|null,
+     *     Target?: string|null,
+     *     TargetParameters?: Shapes\PipeTargetParameters|null,
      *     RoleArn: string,
-     *     LogConfiguration?: Shapes\PipeLogConfigurationParameters,
-     *     KmsKeyIdentifier?: string
+     *     LogConfiguration?: Shapes\PipeLogConfigurationParameters|null,
+     *     KmsKeyIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

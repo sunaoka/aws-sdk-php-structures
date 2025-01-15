@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Iot\ListCommands\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $commandArn
- * @property string $commandId
- * @property string $displayName
- * @property bool $deprecated
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property bool $pendingDeletion
+ * @property string|null $commandArn
+ * @property string|null $commandId
+ * @property string|null $displayName
+ * @property bool|null $deprecated
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property bool|null $pendingDeletion
  */
 class CommandSummary extends Shape
 {
     /**
      * @param array{
-     *     commandArn?: string,
-     *     commandId?: string,
-     *     displayName?: string,
-     *     deprecated?: bool,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     pendingDeletion?: bool
+     *     commandArn?: string|null,
+     *     commandId?: string|null,
+     *     displayName?: string|null,
+     *     deprecated?: bool|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     pendingDeletion?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AliasId
- * @property string $Name
- * @property string $Description
- * @property Shapes\RoutingStrategy $RoutingStrategy
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property Shapes\RoutingStrategy|null $RoutingStrategy
  */
 class UpdateAliasRequest extends Request
 {
     /**
      * @param array{
      *     AliasId: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     RoutingStrategy?: Shapes\RoutingStrategy
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     RoutingStrategy?: Shapes\RoutingStrategy|null
      * } $args
      */
     public function __construct(array $args)

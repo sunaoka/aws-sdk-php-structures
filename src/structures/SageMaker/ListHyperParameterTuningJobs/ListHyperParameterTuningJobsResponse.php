@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\HyperParameterTuningJobSummary> $HyperParameterTuningJobSummaries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListHyperParameterTuningJobsResponse extends Response
 {

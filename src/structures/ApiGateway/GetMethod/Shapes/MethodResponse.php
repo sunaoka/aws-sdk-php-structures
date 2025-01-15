@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetMethod\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $statusCode
- * @property array<string, bool> $responseParameters
- * @property array<string, string> $responseModels
+ * @property string|null $statusCode
+ * @property array<string, bool>|null $responseParameters
+ * @property array<string, string>|null $responseModels
  */
 class MethodResponse extends Shape
 {
     /**
      * @param array{
-     *     statusCode?: string,
-     *     responseParameters?: array<string, bool>,
-     *     responseModels?: array<string, string>
+     *     statusCode?: string|null,
+     *     responseParameters?: array<string, bool>|null,
+     *     responseModels?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

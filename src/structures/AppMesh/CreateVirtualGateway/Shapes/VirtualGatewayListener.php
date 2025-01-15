@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualGatewayConnectionPool $connectionPool
- * @property VirtualGatewayHealthCheckPolicy $healthCheck
+ * @property VirtualGatewayConnectionPool|null $connectionPool
+ * @property VirtualGatewayHealthCheckPolicy|null $healthCheck
  * @property VirtualGatewayPortMapping $portMapping
- * @property VirtualGatewayListenerTls $tls
+ * @property VirtualGatewayListenerTls|null $tls
  */
 class VirtualGatewayListener extends Shape
 {
     /**
      * @param array{
-     *     connectionPool?: VirtualGatewayConnectionPool,
-     *     healthCheck?: VirtualGatewayHealthCheckPolicy,
+     *     connectionPool?: VirtualGatewayConnectionPool|null,
+     *     healthCheck?: VirtualGatewayHealthCheckPolicy|null,
      *     portMapping: VirtualGatewayPortMapping,
-     *     tls?: VirtualGatewayListenerTls
+     *     tls?: VirtualGatewayListenerTls|null
      * } $args
      */
     public function __construct(array $args)

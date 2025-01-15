@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceName
  * @property string $RoleArn
  * @property 'CFN_STACK_SYNC' $SyncType
- * @property 'ENABLED'|'DISABLED' $PublishDeploymentStatus
- * @property 'ANY_CHANGE'|'FILE_CHANGE' $TriggerResourceUpdateOn
- * @property 'ENABLED'|'DISABLED' $PullRequestComment
+ * @property 'ENABLED'|'DISABLED'|null $PublishDeploymentStatus
+ * @property 'ANY_CHANGE'|'FILE_CHANGE'|null $TriggerResourceUpdateOn
+ * @property 'ENABLED'|'DISABLED'|null $PullRequestComment
  */
 class CreateSyncConfigurationRequest extends Request
 {
@@ -25,9 +25,9 @@ class CreateSyncConfigurationRequest extends Request
      *     ResourceName: string,
      *     RoleArn: string,
      *     SyncType: 'CFN_STACK_SYNC',
-     *     PublishDeploymentStatus?: 'ENABLED'|'DISABLED',
-     *     TriggerResourceUpdateOn?: 'ANY_CHANGE'|'FILE_CHANGE',
-     *     PullRequestComment?: 'ENABLED'|'DISABLED'
+     *     PublishDeploymentStatus?: 'ENABLED'|'DISABLED'|null,
+     *     TriggerResourceUpdateOn?: 'ANY_CHANGE'|'FILE_CHANGE'|null,
+     *     PullRequestComment?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeIdentityIdFormat;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Resource
+ * @property string|null $Resource
  * @property string $PrincipalArn
  */
 class DescribeIdentityIdFormatRequest extends Request
 {
     /**
      * @param array{
-     *     Resource?: string,
+     *     Resource?: string|null,
      *     PrincipalArn: string
      * } $args
      */

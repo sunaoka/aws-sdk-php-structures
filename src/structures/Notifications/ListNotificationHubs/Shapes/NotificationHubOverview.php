@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $notificationHubRegion
  * @property NotificationHubStatusSummary $statusSummary
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastActivationTime
+ * @property \Aws\Api\DateTimeResult|null $lastActivationTime
  */
 class NotificationHubOverview extends Shape
 {
@@ -17,7 +17,7 @@ class NotificationHubOverview extends Shape
      *     notificationHubRegion: string,
      *     statusSummary: NotificationHubStatusSummary,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     lastActivationTime?: \Aws\Api\DateTimeResult
+     *     lastActivationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

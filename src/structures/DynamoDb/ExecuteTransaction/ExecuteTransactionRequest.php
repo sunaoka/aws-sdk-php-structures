@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\ParameterizedStatement> $TransactStatements
- * @property string $ClientRequestToken
- * @property 'INDEXES'|'TOTAL'|'NONE' $ReturnConsumedCapacity
+ * @property string|null $ClientRequestToken
+ * @property 'INDEXES'|'TOTAL'|'NONE'|null $ReturnConsumedCapacity
  */
 class ExecuteTransactionRequest extends Request
 {
     /**
      * @param array{
      *     TransactStatements: list<Shapes\ParameterizedStatement>,
-     *     ClientRequestToken?: string,
-     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE'
+     *     ClientRequestToken?: string|null,
+     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

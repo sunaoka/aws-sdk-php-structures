@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\TimeSeriesSummary> $TimeSeriesSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListTimeSeriesResponse extends Response
 {

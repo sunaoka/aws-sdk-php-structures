@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $testConfigurationId
  * @property string $name
- * @property string $statusReason
+ * @property string|null $statusReason
  * @property int $latestVersion
  * @property string $testConfigurationArn
  * @property 'Active'|'Deleting' $status
@@ -20,7 +20,7 @@ class TestConfigurationSummary extends Shape
      * @param array{
      *     testConfigurationId: string,
      *     name: string,
-     *     statusReason?: string,
+     *     statusReason?: string|null,
      *     latestVersion: int,
      *     testConfigurationArn: string,
      *     status: 'Active'|'Deleting',

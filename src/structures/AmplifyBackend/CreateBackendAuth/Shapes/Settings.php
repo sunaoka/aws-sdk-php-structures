@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\CreateBackendAuth\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'SMS'|'TOTP'> $MfaTypes
- * @property string $SmsMessage
+ * @property list<'SMS'|'TOTP'>|null $MfaTypes
+ * @property string|null $SmsMessage
  */
 class Settings extends Shape
 {
     /**
      * @param array{
-     *     MfaTypes?: list<'SMS'|'TOTP'>,
-     *     SmsMessage?: string
+     *     MfaTypes?: list<'SMS'|'TOTP'>|null,
+     *     SmsMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

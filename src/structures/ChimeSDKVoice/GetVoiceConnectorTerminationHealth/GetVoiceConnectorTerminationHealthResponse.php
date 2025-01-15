@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceConnectorTerminationHealt
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TerminationHealth $TerminationHealth
+ * @property Shapes\TerminationHealth|null $TerminationHealth
  */
 class GetVoiceConnectorTerminationHealthResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\SearchRoutingProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RoutingProfileSearchCriteria> $OrConditions
- * @property list<RoutingProfileSearchCriteria> $AndConditions
- * @property StringCondition $StringCondition
+ * @property list<RoutingProfileSearchCriteria>|null $OrConditions
+ * @property list<RoutingProfileSearchCriteria>|null $AndConditions
+ * @property StringCondition|null $StringCondition
  */
 class RoutingProfileSearchCriteria extends Shape
 {
     /**
      * @param array{
-     *     OrConditions?: list<RoutingProfileSearchCriteria>,
-     *     AndConditions?: list<RoutingProfileSearchCriteria>,
-     *     StringCondition?: StringCondition
+     *     OrConditions?: list<RoutingProfileSearchCriteria>|null,
+     *     AndConditions?: list<RoutingProfileSearchCriteria>|null,
+     *     StringCondition?: StringCondition|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $workerGroup
- * @property string $hostname
- * @property Shapes\InstanceIdentity $instanceIdentity
+ * @property string|null $hostname
+ * @property Shapes\InstanceIdentity|null $instanceIdentity
  */
 class PollForTaskRequest extends Request
 {
     /**
      * @param array{
      *     workerGroup: string,
-     *     hostname?: string,
-     *     instanceIdentity?: Shapes\InstanceIdentity
+     *     hostname?: string|null,
+     *     instanceIdentity?: Shapes\InstanceIdentity|null
      * } $args
      */
     public function __construct(array $args)

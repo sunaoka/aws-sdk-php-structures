@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Tables\GetTableMaintenanceConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'enabled'|'disabled' $status
- * @property TableMaintenanceSettings $settings
+ * @property 'enabled'|'disabled'|null $status
+ * @property TableMaintenanceSettings|null $settings
  */
 class TableMaintenanceConfigurationValue extends Shape
 {
     /**
      * @param array{
-     *     status?: 'enabled'|'disabled',
-     *     settings?: TableMaintenanceSettings
+     *     status?: 'enabled'|'disabled'|null,
+     *     settings?: TableMaintenanceSettings|null
      * } $args
      */
     public function __construct(array $args = [])

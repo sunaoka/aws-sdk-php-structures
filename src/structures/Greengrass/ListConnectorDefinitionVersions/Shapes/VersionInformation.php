@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Greengrass\ListConnectorDefinitionVersions\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $CreationTimestamp
- * @property string $Id
- * @property string $Version
+ * @property string|null $Arn
+ * @property string|null $CreationTimestamp
+ * @property string|null $Id
+ * @property string|null $Version
  */
 class VersionInformation extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CreationTimestamp?: string,
-     *     Id?: string,
-     *     Version?: string
+     *     Arn?: string|null,
+     *     CreationTimestamp?: string|null,
+     *     Id?: string|null,
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

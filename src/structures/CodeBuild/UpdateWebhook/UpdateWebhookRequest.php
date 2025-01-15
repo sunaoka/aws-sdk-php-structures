@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $projectName
- * @property string $branchFilter
- * @property bool $rotateSecret
- * @property list<list<Shapes\WebhookFilter>> $filterGroups
- * @property 'BUILD'|'BUILD_BATCH' $buildType
+ * @property string|null $branchFilter
+ * @property bool|null $rotateSecret
+ * @property list<list<Shapes\WebhookFilter>>|null $filterGroups
+ * @property 'BUILD'|'BUILD_BATCH'|null $buildType
  */
 class UpdateWebhookRequest extends Request
 {
     /**
      * @param array{
      *     projectName: string,
-     *     branchFilter?: string,
-     *     rotateSecret?: bool,
-     *     filterGroups?: list<list<Shapes\WebhookFilter>>,
-     *     buildType?: 'BUILD'|'BUILD_BATCH'
+     *     branchFilter?: string|null,
+     *     rotateSecret?: bool|null,
+     *     filterGroups?: list<list<Shapes\WebhookFilter>>|null,
+     *     buildType?: 'BUILD'|'BUILD_BATCH'|null
      * } $args
      */
     public function __construct(array $args)

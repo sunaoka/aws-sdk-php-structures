@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBInstanceIdentifier
- * @property bool $ForceFailover
+ * @property bool|null $ForceFailover
  */
 class RebootDBInstanceRequest extends Request
 {
     /**
      * @param array{
      *     DBInstanceIdentifier: string,
-     *     ForceFailover?: bool
+     *     ForceFailover?: bool|null
      * } $args
      */
     public function __construct(array $args)

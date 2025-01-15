@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteReplicationInsta
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplicationInstanceClass
- * @property int $AllocatedStorage
- * @property bool $MultiAZ
- * @property string $EngineVersion
- * @property string $NetworkType
+ * @property string|null $ReplicationInstanceClass
+ * @property int|null $AllocatedStorage
+ * @property bool|null $MultiAZ
+ * @property string|null $EngineVersion
+ * @property string|null $NetworkType
  */
 class ReplicationPendingModifiedValues extends Shape
 {
     /**
      * @param array{
-     *     ReplicationInstanceClass?: string,
-     *     AllocatedStorage?: int,
-     *     MultiAZ?: bool,
-     *     EngineVersion?: string,
-     *     NetworkType?: string
+     *     ReplicationInstanceClass?: string|null,
+     *     AllocatedStorage?: int|null,
+     *     MultiAZ?: bool|null,
+     *     EngineVersion?: string|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

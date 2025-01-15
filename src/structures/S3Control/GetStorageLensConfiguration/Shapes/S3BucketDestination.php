@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'V_1' $OutputSchemaVersion
  * @property string $AccountId
  * @property string $Arn
- * @property string $Prefix
- * @property StorageLensDataExportEncryption $Encryption
+ * @property string|null $Prefix
+ * @property StorageLensDataExportEncryption|null $Encryption
  */
 class S3BucketDestination extends Shape
 {
@@ -20,8 +20,8 @@ class S3BucketDestination extends Shape
      *     OutputSchemaVersion: 'V_1',
      *     AccountId: string,
      *     Arn: string,
-     *     Prefix?: string,
-     *     Encryption?: StorageLensDataExportEncryption
+     *     Prefix?: string|null,
+     *     Encryption?: StorageLensDataExportEncryption|null
      * } $args
      */
     public function __construct(array $args)

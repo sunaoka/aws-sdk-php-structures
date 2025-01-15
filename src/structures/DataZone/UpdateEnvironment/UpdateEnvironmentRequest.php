@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateEnvironment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $domainIdentifier
- * @property list<string> $glossaryTerms
+ * @property list<string>|null $glossaryTerms
  * @property string $identifier
- * @property string $name
+ * @property string|null $name
  */
 class UpdateEnvironmentRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     domainIdentifier: string,
-     *     glossaryTerms?: list<string>,
+     *     glossaryTerms?: list<string>|null,
      *     identifier: string,
-     *     name?: string
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

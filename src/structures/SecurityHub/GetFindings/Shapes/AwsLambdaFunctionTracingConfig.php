@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Mode
+ * @property string|null $Mode
  */
 class AwsLambdaFunctionTracingConfig extends Shape
 {
     /**
-     * @param array{Mode?: string} $args
+     * @param array{Mode?: string|null} $args
      */
     public function __construct(array $args = [])
     {

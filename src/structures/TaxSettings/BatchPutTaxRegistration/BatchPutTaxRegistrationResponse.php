@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\BatchPutTaxRegistrationError> $errors
- * @property 'Verified'|'Pending'|'Deleted'|'Rejected' $status
+ * @property 'Verified'|'Pending'|'Deleted'|'Rejected'|null $status
  */
 class BatchPutTaxRegistrationResponse extends Response
 {

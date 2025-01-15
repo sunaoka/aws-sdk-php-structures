@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property MembershipProtectedQueryOutputConfiguration $outputConfiguration
- * @property string $roleArn
+ * @property string|null $roleArn
  */
 class MembershipProtectedQueryResultConfiguration extends Shape
 {
     /**
      * @param array{
      *     outputConfiguration: MembershipProtectedQueryOutputConfiguration,
-     *     roleArn?: string
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

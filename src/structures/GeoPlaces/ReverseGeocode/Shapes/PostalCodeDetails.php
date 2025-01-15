@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\ReverseGeocode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PostalCode
- * @property 'Usps' $PostalAuthority
- * @property 'UspsZip'|'UspsZipPlus4' $PostalCodeType
- * @property UspsZip $UspsZip
- * @property UspsZipPlus4 $UspsZipPlus4
+ * @property string|null $PostalCode
+ * @property 'Usps'|null $PostalAuthority
+ * @property 'UspsZip'|'UspsZipPlus4'|null $PostalCodeType
+ * @property UspsZip|null $UspsZip
+ * @property UspsZipPlus4|null $UspsZipPlus4
  */
 class PostalCodeDetails extends Shape
 {
     /**
      * @param array{
-     *     PostalCode?: string,
-     *     PostalAuthority?: 'Usps',
-     *     PostalCodeType?: 'UspsZip'|'UspsZipPlus4',
-     *     UspsZip?: UspsZip,
-     *     UspsZipPlus4?: UspsZipPlus4
+     *     PostalCode?: string|null,
+     *     PostalAuthority?: 'Usps'|null,
+     *     PostalCodeType?: 'UspsZip'|'UspsZipPlus4'|null,
+     *     UspsZip?: UspsZip|null,
+     *     UspsZipPlus4?: UspsZipPlus4|null
      * } $args
      */
     public function __construct(array $args = [])

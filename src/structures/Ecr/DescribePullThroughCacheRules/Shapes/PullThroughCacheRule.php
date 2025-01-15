@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribePullThroughCacheRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ecrRepositoryPrefix
- * @property string $upstreamRegistryUrl
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $registryId
- * @property string $credentialArn
- * @property 'ecr-public'|'quay'|'k8s'|'docker-hub'|'github-container-registry'|'azure-container-registry'|'gitlab-container-registry' $upstreamRegistry
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $ecrRepositoryPrefix
+ * @property string|null $upstreamRegistryUrl
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $registryId
+ * @property string|null $credentialArn
+ * @property 'ecr-public'|'quay'|'k8s'|'docker-hub'|'github-container-registry'|'azure-container-registry'|'gitlab-container-registry'|null $upstreamRegistry
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class PullThroughCacheRule extends Shape
 {
     /**
      * @param array{
-     *     ecrRepositoryPrefix?: string,
-     *     upstreamRegistryUrl?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     registryId?: string,
-     *     credentialArn?: string,
-     *     upstreamRegistry?: 'ecr-public'|'quay'|'k8s'|'docker-hub'|'github-container-registry'|'azure-container-registry'|'gitlab-container-registry',
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     ecrRepositoryPrefix?: string|null,
+     *     upstreamRegistryUrl?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     registryId?: string|null,
+     *     credentialArn?: string|null,
+     *     upstreamRegistry?: 'ecr-public'|'quay'|'k8s'|'docker-hub'|'github-container-registry'|'azure-container-registry'|'gitlab-container-registry'|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AppSync\CreateDomainName\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $domainName
- * @property string $description
- * @property string $certificateArn
- * @property string $appsyncDomainName
- * @property string $hostedZoneId
+ * @property string|null $domainName
+ * @property string|null $description
+ * @property string|null $certificateArn
+ * @property string|null $appsyncDomainName
+ * @property string|null $hostedZoneId
  */
 class DomainNameConfig extends Shape
 {
     /**
      * @param array{
-     *     domainName?: string,
-     *     description?: string,
-     *     certificateArn?: string,
-     *     appsyncDomainName?: string,
-     *     hostedZoneId?: string
+     *     domainName?: string|null,
+     *     description?: string|null,
+     *     certificateArn?: string|null,
+     *     appsyncDomainName?: string|null,
+     *     hostedZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

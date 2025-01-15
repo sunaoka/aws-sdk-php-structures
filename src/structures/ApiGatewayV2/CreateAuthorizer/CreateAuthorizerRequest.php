@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApiId
- * @property string $AuthorizerCredentialsArn
- * @property int<0, 3600> $AuthorizerResultTtlInSeconds
+ * @property string|null $AuthorizerCredentialsArn
+ * @property int<0, 3600>|null $AuthorizerResultTtlInSeconds
  * @property 'REQUEST'|'JWT' $AuthorizerType
- * @property string $AuthorizerUri
+ * @property string|null $AuthorizerUri
  * @property list<string> $IdentitySource
- * @property string $IdentityValidationExpression
- * @property Shapes\JWTConfiguration $JwtConfiguration
+ * @property string|null $IdentityValidationExpression
+ * @property Shapes\JWTConfiguration|null $JwtConfiguration
  * @property string $Name
- * @property string $AuthorizerPayloadFormatVersion
- * @property bool $EnableSimpleResponses
+ * @property string|null $AuthorizerPayloadFormatVersion
+ * @property bool|null $EnableSimpleResponses
  */
 class CreateAuthorizerRequest extends Request
 {
     /**
      * @param array{
      *     ApiId: string,
-     *     AuthorizerCredentialsArn?: string,
-     *     AuthorizerResultTtlInSeconds?: int<0, 3600>,
+     *     AuthorizerCredentialsArn?: string|null,
+     *     AuthorizerResultTtlInSeconds?: int<0, 3600>|null,
      *     AuthorizerType: 'REQUEST'|'JWT',
-     *     AuthorizerUri?: string,
+     *     AuthorizerUri?: string|null,
      *     IdentitySource: list<string>,
-     *     IdentityValidationExpression?: string,
-     *     JwtConfiguration?: Shapes\JWTConfiguration,
+     *     IdentityValidationExpression?: string|null,
+     *     JwtConfiguration?: Shapes\JWTConfiguration|null,
      *     Name: string,
-     *     AuthorizerPayloadFormatVersion?: string,
-     *     EnableSimpleResponses?: bool
+     *     AuthorizerPayloadFormatVersion?: string|null,
+     *     EnableSimpleResponses?: bool|null
      * } $args
      */
     public function __construct(array $args)

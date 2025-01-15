@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssociationId
- * @property string $Ipv6CidrBlock
- * @property VpcCidrBlockState $Ipv6CidrBlockState
- * @property string $NetworkBorderGroup
- * @property string $Ipv6Pool
- * @property 'public'|'private' $Ipv6AddressAttribute
- * @property 'amazon'|'byoip'|'none' $IpSource
+ * @property string|null $AssociationId
+ * @property string|null $Ipv6CidrBlock
+ * @property VpcCidrBlockState|null $Ipv6CidrBlockState
+ * @property string|null $NetworkBorderGroup
+ * @property string|null $Ipv6Pool
+ * @property 'public'|'private'|null $Ipv6AddressAttribute
+ * @property 'amazon'|'byoip'|'none'|null $IpSource
  */
 class VpcIpv6CidrBlockAssociation extends Shape
 {
     /**
      * @param array{
-     *     AssociationId?: string,
-     *     Ipv6CidrBlock?: string,
-     *     Ipv6CidrBlockState?: VpcCidrBlockState,
-     *     NetworkBorderGroup?: string,
-     *     Ipv6Pool?: string,
-     *     Ipv6AddressAttribute?: 'public'|'private',
-     *     IpSource?: 'amazon'|'byoip'|'none'
+     *     AssociationId?: string|null,
+     *     Ipv6CidrBlock?: string|null,
+     *     Ipv6CidrBlockState?: VpcCidrBlockState|null,
+     *     NetworkBorderGroup?: string|null,
+     *     Ipv6Pool?: string|null,
+     *     Ipv6AddressAttribute?: 'public'|'private'|null,
+     *     IpSource?: 'amazon'|'byoip'|'none'|null
      * } $args
      */
     public function __construct(array $args = [])

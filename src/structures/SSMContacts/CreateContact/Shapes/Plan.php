@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSMContacts\CreateContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Stage> $Stages
- * @property list<string> $RotationIds
+ * @property list<Stage>|null $Stages
+ * @property list<string>|null $RotationIds
  */
 class Plan extends Shape
 {
     /**
      * @param array{
-     *     Stages?: list<Stage>,
-     *     RotationIds?: list<string>
+     *     Stages?: list<Stage>|null,
+     *     RotationIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

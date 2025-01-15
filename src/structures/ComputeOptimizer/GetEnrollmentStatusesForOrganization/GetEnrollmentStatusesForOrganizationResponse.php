@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEnrollmentStatusesForOrgani
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AccountEnrollmentStatus> $accountEnrollmentStatuses
- * @property string $nextToken
+ * @property list<Shapes\AccountEnrollmentStatus>|null $accountEnrollmentStatuses
+ * @property string|null $nextToken
  */
 class GetEnrollmentStatusesForOrganizationResponse extends Response
 {

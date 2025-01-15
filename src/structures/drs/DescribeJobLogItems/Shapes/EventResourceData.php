@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\drs\DescribeJobLogItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SourceNetworkData $sourceNetworkData
+ * @property SourceNetworkData|null $sourceNetworkData
  */
 class EventResourceData extends Shape
 {
     /**
-     * @param array{sourceNetworkData?: SourceNetworkData} $args
+     * @param array{sourceNetworkData?: SourceNetworkData|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $DestinationArn
  * @property string $CreatorRequestId
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateResolverQueryLogConfigRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateResolverQueryLogConfigRequest extends Request
      *     Name: string,
      *     DestinationArn: string,
      *     CreatorRequestId: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

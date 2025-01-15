@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ImageSetProperties> $imageSetPropertiesList
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListImageSetVersionsResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ReportDefinition $ReportDefinition
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class PutReportDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     ReportDefinition: Shapes\ReportDefinition,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

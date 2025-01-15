@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyNetworkInterfaceAttribute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\EnaSrdSpecification $EnaSrdSpecification
- * @property bool $EnablePrimaryIpv6
- * @property Shapes\ConnectionTrackingSpecificationRequest $ConnectionTrackingSpecification
- * @property bool $AssociatePublicIpAddress
- * @property bool $DryRun
+ * @property Shapes\EnaSrdSpecification|null $EnaSrdSpecification
+ * @property bool|null $EnablePrimaryIpv6
+ * @property Shapes\ConnectionTrackingSpecificationRequest|null $ConnectionTrackingSpecification
+ * @property bool|null $AssociatePublicIpAddress
+ * @property bool|null $DryRun
  * @property string $NetworkInterfaceId
- * @property Shapes\AttributeValue $Description
- * @property Shapes\AttributeBooleanValue $SourceDestCheck
- * @property list<string> $Groups
- * @property Shapes\NetworkInterfaceAttachmentChanges $Attachment
+ * @property Shapes\AttributeValue|null $Description
+ * @property Shapes\AttributeBooleanValue|null $SourceDestCheck
+ * @property list<string>|null $Groups
+ * @property Shapes\NetworkInterfaceAttachmentChanges|null $Attachment
  */
 class ModifyNetworkInterfaceAttributeRequest extends Request
 {
     /**
      * @param array{
-     *     EnaSrdSpecification?: Shapes\EnaSrdSpecification,
-     *     EnablePrimaryIpv6?: bool,
-     *     ConnectionTrackingSpecification?: Shapes\ConnectionTrackingSpecificationRequest,
-     *     AssociatePublicIpAddress?: bool,
-     *     DryRun?: bool,
+     *     EnaSrdSpecification?: Shapes\EnaSrdSpecification|null,
+     *     EnablePrimaryIpv6?: bool|null,
+     *     ConnectionTrackingSpecification?: Shapes\ConnectionTrackingSpecificationRequest|null,
+     *     AssociatePublicIpAddress?: bool|null,
+     *     DryRun?: bool|null,
      *     NetworkInterfaceId: string,
-     *     Description?: Shapes\AttributeValue,
-     *     SourceDestCheck?: Shapes\AttributeBooleanValue,
-     *     Groups?: list<string>,
-     *     Attachment?: Shapes\NetworkInterfaceAttachmentChanges
+     *     Description?: Shapes\AttributeValue|null,
+     *     SourceDestCheck?: Shapes\AttributeBooleanValue|null,
+     *     Groups?: list<string>|null,
+     *     Attachment?: Shapes\NetworkInterfaceAttachmentChanges|null
      * } $args
      */
     public function __construct(array $args)

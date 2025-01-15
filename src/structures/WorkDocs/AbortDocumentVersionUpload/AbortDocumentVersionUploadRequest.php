@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkDocs\AbortDocumentVersionUpload;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $DocumentId
  * @property string $VersionId
  */
@@ -13,7 +13,7 @@ class AbortDocumentVersionUploadRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     DocumentId: string,
      *     VersionId: string
      * } $args

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PredictorBacktestExportJobName
  * @property string $PredictorArn
  * @property Shapes\DataDestination $Destination
- * @property list<Shapes\Tag> $Tags
- * @property string $Format
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $Format
  */
 class CreatePredictorBacktestExportJobRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreatePredictorBacktestExportJobRequest extends Request
      *     PredictorBacktestExportJobName: string,
      *     PredictorArn: string,
      *     Destination: Shapes\DataDestination,
-     *     Tags?: list<Shapes\Tag>,
-     *     Format?: string
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Format?: string|null
      * } $args
      */
     public function __construct(array $args)

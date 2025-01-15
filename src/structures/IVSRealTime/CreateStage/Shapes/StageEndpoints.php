@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\CreateStage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $events
- * @property string $whip
- * @property string $rtmp
- * @property string $rtmps
+ * @property string|null $events
+ * @property string|null $whip
+ * @property string|null $rtmp
+ * @property string|null $rtmps
  */
 class StageEndpoints extends Shape
 {
     /**
      * @param array{
-     *     events?: string,
-     *     whip?: string,
-     *     rtmp?: string,
-     *     rtmps?: string
+     *     events?: string|null,
+     *     whip?: string|null,
+     *     rtmp?: string|null,
+     *     rtmps?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $taskDefinition
- * @property list<'TAGS'> $include
+ * @property list<'TAGS'>|null $include
  */
 class DescribeTaskDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     taskDefinition: string,
-     *     include?: list<'TAGS'>
+     *     include?: list<'TAGS'>|null
      * } $args
      */
     public function __construct(array $args)

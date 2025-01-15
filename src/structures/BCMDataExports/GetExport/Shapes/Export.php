@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property DataQuery $DataQuery
- * @property string $Description
+ * @property string|null $Description
  * @property DestinationConfigurations $DestinationConfigurations
- * @property string $ExportArn
+ * @property string|null $ExportArn
  * @property string $Name
  * @property RefreshCadence $RefreshCadence
  */
@@ -17,9 +17,9 @@ class Export extends Shape
     /**
      * @param array{
      *     DataQuery: DataQuery,
-     *     Description?: string,
+     *     Description?: string|null,
      *     DestinationConfigurations: DestinationConfigurations,
-     *     ExportArn?: string,
+     *     ExportArn?: string|null,
      *     Name: string,
      *     RefreshCadence: RefreshCadence
      * } $args

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DefaultGridLayoutConfiguration $Grid
- * @property DefaultFreeFormLayoutConfiguration $FreeForm
+ * @property DefaultGridLayoutConfiguration|null $Grid
+ * @property DefaultFreeFormLayoutConfiguration|null $FreeForm
  */
 class DefaultInteractiveLayoutConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Grid?: DefaultGridLayoutConfiguration,
-     *     FreeForm?: DefaultFreeFormLayoutConfiguration
+     *     Grid?: DefaultGridLayoutConfiguration|null,
+     *     FreeForm?: DefaultFreeFormLayoutConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

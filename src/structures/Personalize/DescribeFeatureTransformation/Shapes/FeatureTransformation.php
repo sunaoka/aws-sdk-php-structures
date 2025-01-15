@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeFeatureTransformation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $featureTransformationArn
- * @property array<string, string> $defaultParameters
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property string $status
+ * @property string|null $name
+ * @property string|null $featureTransformationArn
+ * @property array<string, string>|null $defaultParameters
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property string|null $status
  */
 class FeatureTransformation extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     featureTransformationArn?: string,
-     *     defaultParameters?: array<string, string>,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     status?: string
+     *     name?: string|null,
+     *     featureTransformationArn?: string|null,
+     *     defaultParameters?: array<string, string>|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AutomatedAbrSettings $AbrSettings
+ * @property AutomatedAbrSettings|null $AbrSettings
  */
 class AutomatedEncodingSettings extends Shape
 {
     /**
-     * @param array{AbrSettings?: AutomatedAbrSettings} $args
+     * @param array{AbrSettings?: AutomatedAbrSettings|null} $args
      */
     public function __construct(array $args = [])
     {

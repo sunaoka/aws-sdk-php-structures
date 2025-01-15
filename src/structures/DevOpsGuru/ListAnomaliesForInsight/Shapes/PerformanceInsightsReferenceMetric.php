@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListAnomaliesForInsight\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PerformanceInsightsMetricQuery $MetricQuery
+ * @property PerformanceInsightsMetricQuery|null $MetricQuery
  */
 class PerformanceInsightsReferenceMetric extends Shape
 {
     /**
-     * @param array{MetricQuery?: PerformanceInsightsMetricQuery} $args
+     * @param array{MetricQuery?: PerformanceInsightsMetricQuery|null} $args
      */
     public function __construct(array $args = [])
     {

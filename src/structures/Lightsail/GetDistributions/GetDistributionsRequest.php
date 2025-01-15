@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetDistributions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $distributionName
- * @property string $pageToken
+ * @property string|null $distributionName
+ * @property string|null $pageToken
  */
 class GetDistributionsRequest extends Request
 {
     /**
      * @param array{
-     *     distributionName?: string,
-     *     pageToken?: string
+     *     distributionName?: string|null,
+     *     pageToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

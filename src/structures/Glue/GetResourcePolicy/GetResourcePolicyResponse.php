@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Glue\GetResourcePolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PolicyInJson
- * @property string $PolicyHash
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property \Aws\Api\DateTimeResult $UpdateTime
+ * @property string|null $PolicyInJson
+ * @property string|null $PolicyHash
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property \Aws\Api\DateTimeResult|null $UpdateTime
  */
 class GetResourcePolicyResponse extends Response
 {

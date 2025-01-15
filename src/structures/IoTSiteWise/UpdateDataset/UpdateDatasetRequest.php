@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $datasetId
  * @property string $datasetName
- * @property string $datasetDescription
+ * @property string|null $datasetDescription
  * @property Shapes\DatasetSource $datasetSource
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class UpdateDatasetRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateDatasetRequest extends Request
      * @param array{
      *     datasetId: string,
      *     datasetName: string,
-     *     datasetDescription?: string,
+     *     datasetDescription?: string|null,
      *     datasetSource: Shapes\DatasetSource,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

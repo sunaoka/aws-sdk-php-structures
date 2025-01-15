@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeBuild\BatchGetProjects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maximumBuildsAllowed
- * @property list<string> $computeTypesAllowed
- * @property list<string> $fleetsAllowed
+ * @property int|null $maximumBuildsAllowed
+ * @property list<string>|null $computeTypesAllowed
+ * @property list<string>|null $fleetsAllowed
  */
 class BatchRestrictions extends Shape
 {
     /**
      * @param array{
-     *     maximumBuildsAllowed?: int,
-     *     computeTypesAllowed?: list<string>,
-     *     fleetsAllowed?: list<string>
+     *     maximumBuildsAllowed?: int|null,
+     *     computeTypesAllowed?: list<string>|null,
+     *     fleetsAllowed?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

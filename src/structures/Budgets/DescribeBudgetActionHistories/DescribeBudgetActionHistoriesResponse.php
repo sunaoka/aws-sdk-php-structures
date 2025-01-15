@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ActionHistory> $ActionHistories
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeBudgetActionHistoriesResponse extends Response
 {

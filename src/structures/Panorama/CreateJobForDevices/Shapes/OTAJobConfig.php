@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Panorama\CreateJobForDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AllowMajorVersionUpdate
+ * @property bool|null $AllowMajorVersionUpdate
  * @property string $ImageVersion
  */
 class OTAJobConfig extends Shape
 {
     /**
      * @param array{
-     *     AllowMajorVersionUpdate?: bool,
+     *     AllowMajorVersionUpdate?: bool|null,
      *     ImageVersion: string
      * } $args
      */

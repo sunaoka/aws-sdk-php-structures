@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DocumentDataFieldName
- * @property string $DocumentTitleFieldName
- * @property list<DataSourceToIndexFieldMapping> $FieldMappings
- * @property list<'ACTIVE_USER'|'STANDARD_USER'> $IncludeFilterTypes
+ * @property string|null $DocumentTitleFieldName
+ * @property list<DataSourceToIndexFieldMapping>|null $FieldMappings
+ * @property list<'ACTIVE_USER'|'STANDARD_USER'>|null $IncludeFilterTypes
  */
 class SalesforceChatterFeedConfiguration extends Shape
 {
     /**
      * @param array{
      *     DocumentDataFieldName: string,
-     *     DocumentTitleFieldName?: string,
-     *     FieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     IncludeFilterTypes?: list<'ACTIVE_USER'|'STANDARD_USER'>
+     *     DocumentTitleFieldName?: string|null,
+     *     FieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     IncludeFilterTypes?: list<'ACTIVE_USER'|'STANDARD_USER'>|null
      * } $args
      */
     public function __construct(array $args)

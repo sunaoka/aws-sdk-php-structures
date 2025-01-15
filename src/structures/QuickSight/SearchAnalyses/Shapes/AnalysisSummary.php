@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\SearchAnalyses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $AnalysisId
- * @property string $Name
- * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED' $Status
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
+ * @property string|null $Arn
+ * @property string|null $AnalysisId
+ * @property string|null $Name
+ * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  */
 class AnalysisSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     AnalysisId?: string,
-     *     Name?: string,
-     *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED',
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult
+     *     Arn?: string|null,
+     *     AnalysisId?: string|null,
+     *     Name?: string|null,
+     *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

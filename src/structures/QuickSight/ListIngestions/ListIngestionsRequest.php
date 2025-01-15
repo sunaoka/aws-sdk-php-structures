@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataSetId
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property string $AwsAccountId
- * @property int<1, 100> $MaxResults
+ * @property int<1, 100>|null $MaxResults
  */
 class ListIngestionsRequest extends Request
 {
     /**
      * @param array{
      *     DataSetId: string,
-     *     NextToken?: string,
+     *     NextToken?: string|null,
      *     AwsAccountId: string,
-     *     MaxResults?: int<1, 100>
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

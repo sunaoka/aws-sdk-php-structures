@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\GetAllowedImagesSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $State
- * @property list<Shapes\ImageCriterion> $ImageCriteria
- * @property 'account'|'declarative-policy' $ManagedBy
+ * @property string|null $State
+ * @property list<Shapes\ImageCriterion>|null $ImageCriteria
+ * @property 'account'|'declarative-policy'|null $ManagedBy
  */
 class GetAllowedImagesSettingsResponse extends Response
 {

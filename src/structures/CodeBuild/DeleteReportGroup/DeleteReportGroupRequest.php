@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property bool $deleteReports
+ * @property bool|null $deleteReports
  */
 class DeleteReportGroupRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     deleteReports?: bool
+     *     deleteReports?: bool|null
      * } $args
      */
     public function __construct(array $args)

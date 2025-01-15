@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property PatchFilterGroup $PatchFilterGroup
- * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'INFORMATIONAL'|'UNSPECIFIED' $ComplianceLevel
- * @property int<0, 360> $ApproveAfterDays
- * @property string $ApproveUntilDate
- * @property bool $EnableNonSecurity
+ * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'INFORMATIONAL'|'UNSPECIFIED'|null $ComplianceLevel
+ * @property int<0, 360>|null $ApproveAfterDays
+ * @property string|null $ApproveUntilDate
+ * @property bool|null $EnableNonSecurity
  */
 class PatchRule extends Shape
 {
     /**
      * @param array{
      *     PatchFilterGroup: PatchFilterGroup,
-     *     ComplianceLevel?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'INFORMATIONAL'|'UNSPECIFIED',
-     *     ApproveAfterDays?: int<0, 360>,
-     *     ApproveUntilDate?: string,
-     *     EnableNonSecurity?: bool
+     *     ComplianceLevel?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'INFORMATIONAL'|'UNSPECIFIED'|null,
+     *     ApproveAfterDays?: int<0, 360>|null,
+     *     ApproveUntilDate?: string|null,
+     *     EnableNonSecurity?: bool|null
      * } $args
      */
     public function __construct(array $args)

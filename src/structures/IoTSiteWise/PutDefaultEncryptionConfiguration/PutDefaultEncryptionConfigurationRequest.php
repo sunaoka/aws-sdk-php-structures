@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'SITEWISE_DEFAULT_ENCRYPTION'|'KMS_BASED_ENCRYPTION' $encryptionType
- * @property string $kmsKeyId
+ * @property string|null $kmsKeyId
  */
 class PutDefaultEncryptionConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     encryptionType: 'SITEWISE_DEFAULT_ENCRYPTION'|'KMS_BASED_ENCRYPTION',
-     *     kmsKeyId?: string
+     *     kmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

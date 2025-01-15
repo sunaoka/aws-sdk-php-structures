@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $DashboardId
  * @property string $Name
- * @property Shapes\DashboardSourceEntity $SourceEntity
- * @property Shapes\Parameters $Parameters
- * @property string $VersionDescription
- * @property Shapes\DashboardPublishOptions $DashboardPublishOptions
- * @property string $ThemeArn
- * @property Shapes\DashboardVersionDefinition $Definition
- * @property Shapes\ValidationStrategy $ValidationStrategy
+ * @property Shapes\DashboardSourceEntity|null $SourceEntity
+ * @property Shapes\Parameters|null $Parameters
+ * @property string|null $VersionDescription
+ * @property Shapes\DashboardPublishOptions|null $DashboardPublishOptions
+ * @property string|null $ThemeArn
+ * @property Shapes\DashboardVersionDefinition|null $Definition
+ * @property Shapes\ValidationStrategy|null $ValidationStrategy
  */
 class UpdateDashboardRequest extends Request
 {
@@ -23,13 +23,13 @@ class UpdateDashboardRequest extends Request
      *     AwsAccountId: string,
      *     DashboardId: string,
      *     Name: string,
-     *     SourceEntity?: Shapes\DashboardSourceEntity,
-     *     Parameters?: Shapes\Parameters,
-     *     VersionDescription?: string,
-     *     DashboardPublishOptions?: Shapes\DashboardPublishOptions,
-     *     ThemeArn?: string,
-     *     Definition?: Shapes\DashboardVersionDefinition,
-     *     ValidationStrategy?: Shapes\ValidationStrategy
+     *     SourceEntity?: Shapes\DashboardSourceEntity|null,
+     *     Parameters?: Shapes\Parameters|null,
+     *     VersionDescription?: string|null,
+     *     DashboardPublishOptions?: Shapes\DashboardPublishOptions|null,
+     *     ThemeArn?: string|null,
+     *     Definition?: Shapes\DashboardVersionDefinition|null,
+     *     ValidationStrategy?: Shapes\ValidationStrategy|null
      * } $args
      */
     public function __construct(array $args)

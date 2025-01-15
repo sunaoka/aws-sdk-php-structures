@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeAccountModifications;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AccountModification> $AccountModifications
- * @property string $NextToken
+ * @property list<Shapes\AccountModification>|null $AccountModifications
+ * @property string|null $NextToken
  */
 class DescribeAccountModificationsResponse extends Response
 {

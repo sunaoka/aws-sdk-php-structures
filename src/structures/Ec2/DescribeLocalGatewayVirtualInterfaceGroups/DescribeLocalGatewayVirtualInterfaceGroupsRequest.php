@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLocalGatewayVirtualInterfaceGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $LocalGatewayVirtualInterfaceGroupIds
- * @property list<Shapes\Filter> $Filters
- * @property int<5, 1000> $MaxResults
- * @property string $NextToken
- * @property bool $DryRun
+ * @property list<string>|null $LocalGatewayVirtualInterfaceGroupIds
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int<5, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property bool|null $DryRun
  */
 class DescribeLocalGatewayVirtualInterfaceGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     LocalGatewayVirtualInterfaceGroupIds?: list<string>,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int<5, 1000>,
-     *     NextToken?: string,
-     *     DryRun?: bool
+     *     LocalGatewayVirtualInterfaceGroupIds?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxResults?: int<5, 1000>|null,
+     *     NextToken?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

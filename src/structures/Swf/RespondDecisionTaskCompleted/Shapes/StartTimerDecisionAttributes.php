@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $timerId
- * @property string $control
+ * @property string|null $control
  * @property string $startToFireTimeout
  */
 class StartTimerDecisionAttributes extends Shape
@@ -14,7 +14,7 @@ class StartTimerDecisionAttributes extends Shape
     /**
      * @param array{
      *     timerId: string,
-     *     control?: string,
+     *     control?: string|null,
      *     startToFireTimeout: string
      * } $args
      */

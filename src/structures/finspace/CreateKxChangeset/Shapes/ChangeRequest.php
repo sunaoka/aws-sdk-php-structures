@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'PUT'|'DELETE' $changeType
- * @property string $s3Path
+ * @property string|null $s3Path
  * @property string $dbPath
  */
 class ChangeRequest extends Shape
@@ -14,7 +14,7 @@ class ChangeRequest extends Shape
     /**
      * @param array{
      *     changeType: 'PUT'|'DELETE',
-     *     s3Path?: string,
+     *     s3Path?: string|null,
      *     dbPath: string
      * } $args
      */

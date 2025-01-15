@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Schemas\UpdateSchema;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientTokenId
- * @property string $Content
- * @property string $Description
+ * @property string|null $ClientTokenId
+ * @property string|null $Content
+ * @property string|null $Description
  * @property string $RegistryName
  * @property string $SchemaName
- * @property 'OpenApi3' $Type
+ * @property 'OpenApi3'|null $Type
  */
 class UpdateSchemaRequest extends Request
 {
     /**
      * @param array{
-     *     ClientTokenId?: string,
-     *     Content?: string,
-     *     Description?: string,
+     *     ClientTokenId?: string|null,
+     *     Content?: string|null,
+     *     Description?: string|null,
      *     RegistryName: string,
      *     SchemaName: string,
-     *     Type?: 'OpenApi3'
+     *     Type?: 'OpenApi3'|null
      * } $args
      */
     public function __construct(array $args)

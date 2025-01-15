@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LocationArn
- * @property string $Subdirectory
- * @property string $Domain
- * @property string $User
- * @property string $Password
+ * @property string|null $Subdirectory
+ * @property string|null $Domain
+ * @property string|null $User
+ * @property string|null $Password
  */
 class UpdateLocationFsxWindowsRequest extends Request
 {
     /**
      * @param array{
      *     LocationArn: string,
-     *     Subdirectory?: string,
-     *     Domain?: string,
-     *     User?: string,
-     *     Password?: string
+     *     Subdirectory?: string|null,
+     *     Domain?: string|null,
+     *     User?: string|null,
+     *     Password?: string|null
      * } $args
      */
     public function __construct(array $args)

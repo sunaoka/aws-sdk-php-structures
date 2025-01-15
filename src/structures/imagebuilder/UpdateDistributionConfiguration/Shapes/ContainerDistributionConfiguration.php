@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\imagebuilder\UpdateDistributionConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property list<string> $containerTags
+ * @property string|null $description
+ * @property list<string>|null $containerTags
  * @property TargetContainerRepository $targetRepository
  */
 class ContainerDistributionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     containerTags?: list<string>,
+     *     description?: string|null,
+     *     containerTags?: list<string>|null,
      *     targetRepository: TargetContainerRepository
      * } $args
      */

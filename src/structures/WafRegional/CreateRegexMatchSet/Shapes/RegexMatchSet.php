@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WafRegional\CreateRegexMatchSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegexMatchSetId
- * @property string $Name
- * @property list<RegexMatchTuple> $RegexMatchTuples
+ * @property string|null $RegexMatchSetId
+ * @property string|null $Name
+ * @property list<RegexMatchTuple>|null $RegexMatchTuples
  */
 class RegexMatchSet extends Shape
 {
     /**
      * @param array{
-     *     RegexMatchSetId?: string,
-     *     Name?: string,
-     *     RegexMatchTuples?: list<RegexMatchTuple>
+     *     RegexMatchSetId?: string|null,
+     *     Name?: string|null,
+     *     RegexMatchTuples?: list<RegexMatchTuple>|null
      * } $args
      */
     public function __construct(array $args = [])

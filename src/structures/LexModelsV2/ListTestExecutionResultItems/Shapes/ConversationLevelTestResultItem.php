@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $conversationId
  * @property 'Matched'|'Mismatched'|'ExecutionError' $endToEndResult
- * @property 'Matched'|'Mismatched'|'ExecutionError' $speechTranscriptionResult
+ * @property 'Matched'|'Mismatched'|'ExecutionError'|null $speechTranscriptionResult
  * @property list<ConversationLevelIntentClassificationResultItem> $intentClassificationResults
  * @property list<ConversationLevelSlotResolutionResultItem> $slotResolutionResults
  */
@@ -17,7 +17,7 @@ class ConversationLevelTestResultItem extends Shape
      * @param array{
      *     conversationId: string,
      *     endToEndResult: 'Matched'|'Mismatched'|'ExecutionError',
-     *     speechTranscriptionResult?: 'Matched'|'Mismatched'|'ExecutionError',
+     *     speechTranscriptionResult?: 'Matched'|'Mismatched'|'ExecutionError'|null,
      *     intentClassificationResults: list<ConversationLevelIntentClassificationResultItem>,
      *     slotResolutionResults: list<ConversationLevelSlotResolutionResultItem>
      * } $args

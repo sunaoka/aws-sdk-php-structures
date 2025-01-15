@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property StructuredMessage $memberType
  * @property 'FIXED_CAPACITY'|'DYNAMIC_UNBOUNDED_CAPACITY'|'DYNAMIC_BOUNDED_CAPACITY' $listType
- * @property int<0, max> $capacity
+ * @property int<0, max>|null $capacity
  */
 class StructuredMessageListDefinition extends Shape
 {
@@ -17,7 +17,7 @@ class StructuredMessageListDefinition extends Shape
      *     name: string,
      *     memberType: StructuredMessage,
      *     listType: 'FIXED_CAPACITY'|'DYNAMIC_UNBOUNDED_CAPACITY'|'DYNAMIC_BOUNDED_CAPACITY',
-     *     capacity?: int<0, max>
+     *     capacity?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

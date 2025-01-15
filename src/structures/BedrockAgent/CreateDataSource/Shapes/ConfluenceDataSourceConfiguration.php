@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConfluenceCrawlerConfiguration $crawlerConfiguration
+ * @property ConfluenceCrawlerConfiguration|null $crawlerConfiguration
  * @property ConfluenceSourceConfiguration $sourceConfiguration
  */
 class ConfluenceDataSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     crawlerConfiguration?: ConfluenceCrawlerConfiguration,
+     *     crawlerConfiguration?: ConfluenceCrawlerConfiguration|null,
      *     sourceConfiguration: ConfluenceSourceConfiguration
      * } $args
      */

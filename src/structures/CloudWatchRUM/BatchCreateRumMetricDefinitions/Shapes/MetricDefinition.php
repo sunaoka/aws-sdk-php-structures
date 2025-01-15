@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\BatchCreateRumMetricDefinitions\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $DimensionKeys
- * @property string $EventPattern
+ * @property array<string, string>|null $DimensionKeys
+ * @property string|null $EventPattern
  * @property string $MetricDefinitionId
  * @property string $Name
- * @property string $Namespace
- * @property string $UnitLabel
- * @property string $ValueKey
+ * @property string|null $Namespace
+ * @property string|null $UnitLabel
+ * @property string|null $ValueKey
  */
 class MetricDefinition extends Shape
 {
     /**
      * @param array{
-     *     DimensionKeys?: array<string, string>,
-     *     EventPattern?: string,
+     *     DimensionKeys?: array<string, string>|null,
+     *     EventPattern?: string|null,
      *     MetricDefinitionId: string,
      *     Name: string,
-     *     Namespace?: string,
-     *     UnitLabel?: string,
-     *     ValueKey?: string
+     *     Namespace?: string|null,
+     *     UnitLabel?: string|null,
+     *     ValueKey?: string|null
      * } $args
      */
     public function __construct(array $args)

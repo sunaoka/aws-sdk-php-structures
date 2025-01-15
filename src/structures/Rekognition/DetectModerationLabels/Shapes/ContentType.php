@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectModerationLabels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Confidence
- * @property string $Name
+ * @property float|null $Confidence
+ * @property string|null $Name
  */
 class ContentType extends Shape
 {
     /**
      * @param array{
-     *     Confidence?: float,
-     *     Name?: string
+     *     Confidence?: float|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

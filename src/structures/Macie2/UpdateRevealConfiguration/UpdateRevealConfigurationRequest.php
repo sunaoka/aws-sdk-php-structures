@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\RevealConfiguration $configuration
- * @property Shapes\UpdateRetrievalConfiguration $retrievalConfiguration
+ * @property Shapes\UpdateRetrievalConfiguration|null $retrievalConfiguration
  */
 class UpdateRevealConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     configuration: Shapes\RevealConfiguration,
-     *     retrievalConfiguration?: Shapes\UpdateRetrievalConfiguration
+     *     retrievalConfiguration?: Shapes\UpdateRetrievalConfiguration|null
      * } $args
      */
     public function __construct(array $args)

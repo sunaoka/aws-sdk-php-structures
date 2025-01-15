@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $overrideLambda
+ * @property string|null $overrideLambda
  * @property list<PromptConfiguration> $promptConfigurations
  */
 class PromptOverrideConfiguration extends Shape
 {
     /**
      * @param array{
-     *     overrideLambda?: string,
+     *     overrideLambda?: string|null,
      *     promptConfigurations: list<PromptConfiguration>
      * } $args
      */

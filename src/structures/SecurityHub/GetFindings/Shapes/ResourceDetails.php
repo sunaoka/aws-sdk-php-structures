@@ -5,209 +5,209 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsAutoScalingAutoScalingGroupDetails $AwsAutoScalingAutoScalingGroup
- * @property AwsCodeBuildProjectDetails $AwsCodeBuildProject
- * @property AwsCloudFrontDistributionDetails $AwsCloudFrontDistribution
- * @property AwsEc2InstanceDetails $AwsEc2Instance
- * @property AwsEc2NetworkInterfaceDetails $AwsEc2NetworkInterface
- * @property AwsEc2SecurityGroupDetails $AwsEc2SecurityGroup
- * @property AwsEc2VolumeDetails $AwsEc2Volume
- * @property AwsEc2VpcDetails $AwsEc2Vpc
- * @property AwsEc2EipDetails $AwsEc2Eip
- * @property AwsEc2SubnetDetails $AwsEc2Subnet
- * @property AwsEc2NetworkAclDetails $AwsEc2NetworkAcl
- * @property AwsElbv2LoadBalancerDetails $AwsElbv2LoadBalancer
- * @property AwsElasticBeanstalkEnvironmentDetails $AwsElasticBeanstalkEnvironment
- * @property AwsElasticsearchDomainDetails $AwsElasticsearchDomain
- * @property AwsS3BucketDetails $AwsS3Bucket
- * @property AwsS3AccountPublicAccessBlockDetails $AwsS3AccountPublicAccessBlock
- * @property AwsS3ObjectDetails $AwsS3Object
- * @property AwsSecretsManagerSecretDetails $AwsSecretsManagerSecret
- * @property AwsIamAccessKeyDetails $AwsIamAccessKey
- * @property AwsIamUserDetails $AwsIamUser
- * @property AwsIamPolicyDetails $AwsIamPolicy
- * @property AwsApiGatewayV2StageDetails $AwsApiGatewayV2Stage
- * @property AwsApiGatewayV2ApiDetails $AwsApiGatewayV2Api
- * @property AwsDynamoDbTableDetails $AwsDynamoDbTable
- * @property AwsApiGatewayStageDetails $AwsApiGatewayStage
- * @property AwsApiGatewayRestApiDetails $AwsApiGatewayRestApi
- * @property AwsCloudTrailTrailDetails $AwsCloudTrailTrail
- * @property AwsSsmPatchComplianceDetails $AwsSsmPatchCompliance
- * @property AwsCertificateManagerCertificateDetails $AwsCertificateManagerCertificate
- * @property AwsRedshiftClusterDetails $AwsRedshiftCluster
- * @property AwsElbLoadBalancerDetails $AwsElbLoadBalancer
- * @property AwsIamGroupDetails $AwsIamGroup
- * @property AwsIamRoleDetails $AwsIamRole
- * @property AwsKmsKeyDetails $AwsKmsKey
- * @property AwsLambdaFunctionDetails $AwsLambdaFunction
- * @property AwsLambdaLayerVersionDetails $AwsLambdaLayerVersion
- * @property AwsRdsDbInstanceDetails $AwsRdsDbInstance
- * @property AwsSnsTopicDetails $AwsSnsTopic
- * @property AwsSqsQueueDetails $AwsSqsQueue
- * @property AwsWafWebAclDetails $AwsWafWebAcl
- * @property AwsRdsDbSnapshotDetails $AwsRdsDbSnapshot
- * @property AwsRdsDbClusterSnapshotDetails $AwsRdsDbClusterSnapshot
- * @property AwsRdsDbClusterDetails $AwsRdsDbCluster
- * @property AwsEcsClusterDetails $AwsEcsCluster
- * @property AwsEcsContainerDetails $AwsEcsContainer
- * @property AwsEcsTaskDefinitionDetails $AwsEcsTaskDefinition
- * @property ContainerDetails $Container
- * @property array<string, string> $Other
- * @property AwsRdsEventSubscriptionDetails $AwsRdsEventSubscription
- * @property AwsEcsServiceDetails $AwsEcsService
- * @property AwsAutoScalingLaunchConfigurationDetails $AwsAutoScalingLaunchConfiguration
- * @property AwsEc2VpnConnectionDetails $AwsEc2VpnConnection
- * @property AwsEcrContainerImageDetails $AwsEcrContainerImage
- * @property AwsOpenSearchServiceDomainDetails $AwsOpenSearchServiceDomain
- * @property AwsEc2VpcEndpointServiceDetails $AwsEc2VpcEndpointService
- * @property AwsXrayEncryptionConfigDetails $AwsXrayEncryptionConfig
- * @property AwsWafRateBasedRuleDetails $AwsWafRateBasedRule
- * @property AwsWafRegionalRateBasedRuleDetails $AwsWafRegionalRateBasedRule
- * @property AwsEcrRepositoryDetails $AwsEcrRepository
- * @property AwsEksClusterDetails $AwsEksCluster
- * @property AwsNetworkFirewallFirewallPolicyDetails $AwsNetworkFirewallFirewallPolicy
- * @property AwsNetworkFirewallFirewallDetails $AwsNetworkFirewallFirewall
- * @property AwsNetworkFirewallRuleGroupDetails $AwsNetworkFirewallRuleGroup
- * @property AwsRdsDbSecurityGroupDetails $AwsRdsDbSecurityGroup
- * @property AwsKinesisStreamDetails $AwsKinesisStream
- * @property AwsEc2TransitGatewayDetails $AwsEc2TransitGateway
- * @property AwsEfsAccessPointDetails $AwsEfsAccessPoint
- * @property AwsCloudFormationStackDetails $AwsCloudFormationStack
- * @property AwsCloudWatchAlarmDetails $AwsCloudWatchAlarm
- * @property AwsEc2VpcPeeringConnectionDetails $AwsEc2VpcPeeringConnection
- * @property AwsWafRegionalRuleGroupDetails $AwsWafRegionalRuleGroup
- * @property AwsWafRegionalRuleDetails $AwsWafRegionalRule
- * @property AwsWafRegionalWebAclDetails $AwsWafRegionalWebAcl
- * @property AwsWafRuleDetails $AwsWafRule
- * @property AwsWafRuleGroupDetails $AwsWafRuleGroup
- * @property AwsEcsTaskDetails $AwsEcsTask
- * @property AwsBackupBackupVaultDetails $AwsBackupBackupVault
- * @property AwsBackupBackupPlanDetails $AwsBackupBackupPlan
- * @property AwsBackupRecoveryPointDetails $AwsBackupRecoveryPoint
- * @property AwsEc2LaunchTemplateDetails $AwsEc2LaunchTemplate
- * @property AwsSageMakerNotebookInstanceDetails $AwsSageMakerNotebookInstance
- * @property AwsWafv2WebAclDetails $AwsWafv2WebAcl
- * @property AwsWafv2RuleGroupDetails $AwsWafv2RuleGroup
- * @property AwsEc2RouteTableDetails $AwsEc2RouteTable
- * @property AwsAmazonMqBrokerDetails $AwsAmazonMqBroker
- * @property AwsAppSyncGraphQlApiDetails $AwsAppSyncGraphQlApi
- * @property AwsEventSchemasRegistryDetails $AwsEventSchemasRegistry
- * @property AwsGuardDutyDetectorDetails $AwsGuardDutyDetector
- * @property AwsStepFunctionStateMachineDetails $AwsStepFunctionStateMachine
- * @property AwsAthenaWorkGroupDetails $AwsAthenaWorkGroup
- * @property AwsEventsEventbusDetails $AwsEventsEventbus
- * @property AwsDmsEndpointDetails $AwsDmsEndpoint
- * @property AwsEventsEndpointDetails $AwsEventsEndpoint
- * @property AwsDmsReplicationTaskDetails $AwsDmsReplicationTask
- * @property AwsDmsReplicationInstanceDetails $AwsDmsReplicationInstance
- * @property AwsRoute53HostedZoneDetails $AwsRoute53HostedZone
- * @property AwsMskClusterDetails $AwsMskCluster
- * @property AwsS3AccessPointDetails $AwsS3AccessPoint
- * @property AwsEc2ClientVpnEndpointDetails $AwsEc2ClientVpnEndpoint
+ * @property AwsAutoScalingAutoScalingGroupDetails|null $AwsAutoScalingAutoScalingGroup
+ * @property AwsCodeBuildProjectDetails|null $AwsCodeBuildProject
+ * @property AwsCloudFrontDistributionDetails|null $AwsCloudFrontDistribution
+ * @property AwsEc2InstanceDetails|null $AwsEc2Instance
+ * @property AwsEc2NetworkInterfaceDetails|null $AwsEc2NetworkInterface
+ * @property AwsEc2SecurityGroupDetails|null $AwsEc2SecurityGroup
+ * @property AwsEc2VolumeDetails|null $AwsEc2Volume
+ * @property AwsEc2VpcDetails|null $AwsEc2Vpc
+ * @property AwsEc2EipDetails|null $AwsEc2Eip
+ * @property AwsEc2SubnetDetails|null $AwsEc2Subnet
+ * @property AwsEc2NetworkAclDetails|null $AwsEc2NetworkAcl
+ * @property AwsElbv2LoadBalancerDetails|null $AwsElbv2LoadBalancer
+ * @property AwsElasticBeanstalkEnvironmentDetails|null $AwsElasticBeanstalkEnvironment
+ * @property AwsElasticsearchDomainDetails|null $AwsElasticsearchDomain
+ * @property AwsS3BucketDetails|null $AwsS3Bucket
+ * @property AwsS3AccountPublicAccessBlockDetails|null $AwsS3AccountPublicAccessBlock
+ * @property AwsS3ObjectDetails|null $AwsS3Object
+ * @property AwsSecretsManagerSecretDetails|null $AwsSecretsManagerSecret
+ * @property AwsIamAccessKeyDetails|null $AwsIamAccessKey
+ * @property AwsIamUserDetails|null $AwsIamUser
+ * @property AwsIamPolicyDetails|null $AwsIamPolicy
+ * @property AwsApiGatewayV2StageDetails|null $AwsApiGatewayV2Stage
+ * @property AwsApiGatewayV2ApiDetails|null $AwsApiGatewayV2Api
+ * @property AwsDynamoDbTableDetails|null $AwsDynamoDbTable
+ * @property AwsApiGatewayStageDetails|null $AwsApiGatewayStage
+ * @property AwsApiGatewayRestApiDetails|null $AwsApiGatewayRestApi
+ * @property AwsCloudTrailTrailDetails|null $AwsCloudTrailTrail
+ * @property AwsSsmPatchComplianceDetails|null $AwsSsmPatchCompliance
+ * @property AwsCertificateManagerCertificateDetails|null $AwsCertificateManagerCertificate
+ * @property AwsRedshiftClusterDetails|null $AwsRedshiftCluster
+ * @property AwsElbLoadBalancerDetails|null $AwsElbLoadBalancer
+ * @property AwsIamGroupDetails|null $AwsIamGroup
+ * @property AwsIamRoleDetails|null $AwsIamRole
+ * @property AwsKmsKeyDetails|null $AwsKmsKey
+ * @property AwsLambdaFunctionDetails|null $AwsLambdaFunction
+ * @property AwsLambdaLayerVersionDetails|null $AwsLambdaLayerVersion
+ * @property AwsRdsDbInstanceDetails|null $AwsRdsDbInstance
+ * @property AwsSnsTopicDetails|null $AwsSnsTopic
+ * @property AwsSqsQueueDetails|null $AwsSqsQueue
+ * @property AwsWafWebAclDetails|null $AwsWafWebAcl
+ * @property AwsRdsDbSnapshotDetails|null $AwsRdsDbSnapshot
+ * @property AwsRdsDbClusterSnapshotDetails|null $AwsRdsDbClusterSnapshot
+ * @property AwsRdsDbClusterDetails|null $AwsRdsDbCluster
+ * @property AwsEcsClusterDetails|null $AwsEcsCluster
+ * @property AwsEcsContainerDetails|null $AwsEcsContainer
+ * @property AwsEcsTaskDefinitionDetails|null $AwsEcsTaskDefinition
+ * @property ContainerDetails|null $Container
+ * @property array<string, string>|null $Other
+ * @property AwsRdsEventSubscriptionDetails|null $AwsRdsEventSubscription
+ * @property AwsEcsServiceDetails|null $AwsEcsService
+ * @property AwsAutoScalingLaunchConfigurationDetails|null $AwsAutoScalingLaunchConfiguration
+ * @property AwsEc2VpnConnectionDetails|null $AwsEc2VpnConnection
+ * @property AwsEcrContainerImageDetails|null $AwsEcrContainerImage
+ * @property AwsOpenSearchServiceDomainDetails|null $AwsOpenSearchServiceDomain
+ * @property AwsEc2VpcEndpointServiceDetails|null $AwsEc2VpcEndpointService
+ * @property AwsXrayEncryptionConfigDetails|null $AwsXrayEncryptionConfig
+ * @property AwsWafRateBasedRuleDetails|null $AwsWafRateBasedRule
+ * @property AwsWafRegionalRateBasedRuleDetails|null $AwsWafRegionalRateBasedRule
+ * @property AwsEcrRepositoryDetails|null $AwsEcrRepository
+ * @property AwsEksClusterDetails|null $AwsEksCluster
+ * @property AwsNetworkFirewallFirewallPolicyDetails|null $AwsNetworkFirewallFirewallPolicy
+ * @property AwsNetworkFirewallFirewallDetails|null $AwsNetworkFirewallFirewall
+ * @property AwsNetworkFirewallRuleGroupDetails|null $AwsNetworkFirewallRuleGroup
+ * @property AwsRdsDbSecurityGroupDetails|null $AwsRdsDbSecurityGroup
+ * @property AwsKinesisStreamDetails|null $AwsKinesisStream
+ * @property AwsEc2TransitGatewayDetails|null $AwsEc2TransitGateway
+ * @property AwsEfsAccessPointDetails|null $AwsEfsAccessPoint
+ * @property AwsCloudFormationStackDetails|null $AwsCloudFormationStack
+ * @property AwsCloudWatchAlarmDetails|null $AwsCloudWatchAlarm
+ * @property AwsEc2VpcPeeringConnectionDetails|null $AwsEc2VpcPeeringConnection
+ * @property AwsWafRegionalRuleGroupDetails|null $AwsWafRegionalRuleGroup
+ * @property AwsWafRegionalRuleDetails|null $AwsWafRegionalRule
+ * @property AwsWafRegionalWebAclDetails|null $AwsWafRegionalWebAcl
+ * @property AwsWafRuleDetails|null $AwsWafRule
+ * @property AwsWafRuleGroupDetails|null $AwsWafRuleGroup
+ * @property AwsEcsTaskDetails|null $AwsEcsTask
+ * @property AwsBackupBackupVaultDetails|null $AwsBackupBackupVault
+ * @property AwsBackupBackupPlanDetails|null $AwsBackupBackupPlan
+ * @property AwsBackupRecoveryPointDetails|null $AwsBackupRecoveryPoint
+ * @property AwsEc2LaunchTemplateDetails|null $AwsEc2LaunchTemplate
+ * @property AwsSageMakerNotebookInstanceDetails|null $AwsSageMakerNotebookInstance
+ * @property AwsWafv2WebAclDetails|null $AwsWafv2WebAcl
+ * @property AwsWafv2RuleGroupDetails|null $AwsWafv2RuleGroup
+ * @property AwsEc2RouteTableDetails|null $AwsEc2RouteTable
+ * @property AwsAmazonMqBrokerDetails|null $AwsAmazonMqBroker
+ * @property AwsAppSyncGraphQlApiDetails|null $AwsAppSyncGraphQlApi
+ * @property AwsEventSchemasRegistryDetails|null $AwsEventSchemasRegistry
+ * @property AwsGuardDutyDetectorDetails|null $AwsGuardDutyDetector
+ * @property AwsStepFunctionStateMachineDetails|null $AwsStepFunctionStateMachine
+ * @property AwsAthenaWorkGroupDetails|null $AwsAthenaWorkGroup
+ * @property AwsEventsEventbusDetails|null $AwsEventsEventbus
+ * @property AwsDmsEndpointDetails|null $AwsDmsEndpoint
+ * @property AwsEventsEndpointDetails|null $AwsEventsEndpoint
+ * @property AwsDmsReplicationTaskDetails|null $AwsDmsReplicationTask
+ * @property AwsDmsReplicationInstanceDetails|null $AwsDmsReplicationInstance
+ * @property AwsRoute53HostedZoneDetails|null $AwsRoute53HostedZone
+ * @property AwsMskClusterDetails|null $AwsMskCluster
+ * @property AwsS3AccessPointDetails|null $AwsS3AccessPoint
+ * @property AwsEc2ClientVpnEndpointDetails|null $AwsEc2ClientVpnEndpoint
  */
 class ResourceDetails extends Shape
 {
     /**
      * @param array{
-     *     AwsAutoScalingAutoScalingGroup?: AwsAutoScalingAutoScalingGroupDetails,
-     *     AwsCodeBuildProject?: AwsCodeBuildProjectDetails,
-     *     AwsCloudFrontDistribution?: AwsCloudFrontDistributionDetails,
-     *     AwsEc2Instance?: AwsEc2InstanceDetails,
-     *     AwsEc2NetworkInterface?: AwsEc2NetworkInterfaceDetails,
-     *     AwsEc2SecurityGroup?: AwsEc2SecurityGroupDetails,
-     *     AwsEc2Volume?: AwsEc2VolumeDetails,
-     *     AwsEc2Vpc?: AwsEc2VpcDetails,
-     *     AwsEc2Eip?: AwsEc2EipDetails,
-     *     AwsEc2Subnet?: AwsEc2SubnetDetails,
-     *     AwsEc2NetworkAcl?: AwsEc2NetworkAclDetails,
-     *     AwsElbv2LoadBalancer?: AwsElbv2LoadBalancerDetails,
-     *     AwsElasticBeanstalkEnvironment?: AwsElasticBeanstalkEnvironmentDetails,
-     *     AwsElasticsearchDomain?: AwsElasticsearchDomainDetails,
-     *     AwsS3Bucket?: AwsS3BucketDetails,
-     *     AwsS3AccountPublicAccessBlock?: AwsS3AccountPublicAccessBlockDetails,
-     *     AwsS3Object?: AwsS3ObjectDetails,
-     *     AwsSecretsManagerSecret?: AwsSecretsManagerSecretDetails,
-     *     AwsIamAccessKey?: AwsIamAccessKeyDetails,
-     *     AwsIamUser?: AwsIamUserDetails,
-     *     AwsIamPolicy?: AwsIamPolicyDetails,
-     *     AwsApiGatewayV2Stage?: AwsApiGatewayV2StageDetails,
-     *     AwsApiGatewayV2Api?: AwsApiGatewayV2ApiDetails,
-     *     AwsDynamoDbTable?: AwsDynamoDbTableDetails,
-     *     AwsApiGatewayStage?: AwsApiGatewayStageDetails,
-     *     AwsApiGatewayRestApi?: AwsApiGatewayRestApiDetails,
-     *     AwsCloudTrailTrail?: AwsCloudTrailTrailDetails,
-     *     AwsSsmPatchCompliance?: AwsSsmPatchComplianceDetails,
-     *     AwsCertificateManagerCertificate?: AwsCertificateManagerCertificateDetails,
-     *     AwsRedshiftCluster?: AwsRedshiftClusterDetails,
-     *     AwsElbLoadBalancer?: AwsElbLoadBalancerDetails,
-     *     AwsIamGroup?: AwsIamGroupDetails,
-     *     AwsIamRole?: AwsIamRoleDetails,
-     *     AwsKmsKey?: AwsKmsKeyDetails,
-     *     AwsLambdaFunction?: AwsLambdaFunctionDetails,
-     *     AwsLambdaLayerVersion?: AwsLambdaLayerVersionDetails,
-     *     AwsRdsDbInstance?: AwsRdsDbInstanceDetails,
-     *     AwsSnsTopic?: AwsSnsTopicDetails,
-     *     AwsSqsQueue?: AwsSqsQueueDetails,
-     *     AwsWafWebAcl?: AwsWafWebAclDetails,
-     *     AwsRdsDbSnapshot?: AwsRdsDbSnapshotDetails,
-     *     AwsRdsDbClusterSnapshot?: AwsRdsDbClusterSnapshotDetails,
-     *     AwsRdsDbCluster?: AwsRdsDbClusterDetails,
-     *     AwsEcsCluster?: AwsEcsClusterDetails,
-     *     AwsEcsContainer?: AwsEcsContainerDetails,
-     *     AwsEcsTaskDefinition?: AwsEcsTaskDefinitionDetails,
-     *     Container?: ContainerDetails,
-     *     Other?: array<string, string>,
-     *     AwsRdsEventSubscription?: AwsRdsEventSubscriptionDetails,
-     *     AwsEcsService?: AwsEcsServiceDetails,
-     *     AwsAutoScalingLaunchConfiguration?: AwsAutoScalingLaunchConfigurationDetails,
-     *     AwsEc2VpnConnection?: AwsEc2VpnConnectionDetails,
-     *     AwsEcrContainerImage?: AwsEcrContainerImageDetails,
-     *     AwsOpenSearchServiceDomain?: AwsOpenSearchServiceDomainDetails,
-     *     AwsEc2VpcEndpointService?: AwsEc2VpcEndpointServiceDetails,
-     *     AwsXrayEncryptionConfig?: AwsXrayEncryptionConfigDetails,
-     *     AwsWafRateBasedRule?: AwsWafRateBasedRuleDetails,
-     *     AwsWafRegionalRateBasedRule?: AwsWafRegionalRateBasedRuleDetails,
-     *     AwsEcrRepository?: AwsEcrRepositoryDetails,
-     *     AwsEksCluster?: AwsEksClusterDetails,
-     *     AwsNetworkFirewallFirewallPolicy?: AwsNetworkFirewallFirewallPolicyDetails,
-     *     AwsNetworkFirewallFirewall?: AwsNetworkFirewallFirewallDetails,
-     *     AwsNetworkFirewallRuleGroup?: AwsNetworkFirewallRuleGroupDetails,
-     *     AwsRdsDbSecurityGroup?: AwsRdsDbSecurityGroupDetails,
-     *     AwsKinesisStream?: AwsKinesisStreamDetails,
-     *     AwsEc2TransitGateway?: AwsEc2TransitGatewayDetails,
-     *     AwsEfsAccessPoint?: AwsEfsAccessPointDetails,
-     *     AwsCloudFormationStack?: AwsCloudFormationStackDetails,
-     *     AwsCloudWatchAlarm?: AwsCloudWatchAlarmDetails,
-     *     AwsEc2VpcPeeringConnection?: AwsEc2VpcPeeringConnectionDetails,
-     *     AwsWafRegionalRuleGroup?: AwsWafRegionalRuleGroupDetails,
-     *     AwsWafRegionalRule?: AwsWafRegionalRuleDetails,
-     *     AwsWafRegionalWebAcl?: AwsWafRegionalWebAclDetails,
-     *     AwsWafRule?: AwsWafRuleDetails,
-     *     AwsWafRuleGroup?: AwsWafRuleGroupDetails,
-     *     AwsEcsTask?: AwsEcsTaskDetails,
-     *     AwsBackupBackupVault?: AwsBackupBackupVaultDetails,
-     *     AwsBackupBackupPlan?: AwsBackupBackupPlanDetails,
-     *     AwsBackupRecoveryPoint?: AwsBackupRecoveryPointDetails,
-     *     AwsEc2LaunchTemplate?: AwsEc2LaunchTemplateDetails,
-     *     AwsSageMakerNotebookInstance?: AwsSageMakerNotebookInstanceDetails,
-     *     AwsWafv2WebAcl?: AwsWafv2WebAclDetails,
-     *     AwsWafv2RuleGroup?: AwsWafv2RuleGroupDetails,
-     *     AwsEc2RouteTable?: AwsEc2RouteTableDetails,
-     *     AwsAmazonMqBroker?: AwsAmazonMqBrokerDetails,
-     *     AwsAppSyncGraphQlApi?: AwsAppSyncGraphQlApiDetails,
-     *     AwsEventSchemasRegistry?: AwsEventSchemasRegistryDetails,
-     *     AwsGuardDutyDetector?: AwsGuardDutyDetectorDetails,
-     *     AwsStepFunctionStateMachine?: AwsStepFunctionStateMachineDetails,
-     *     AwsAthenaWorkGroup?: AwsAthenaWorkGroupDetails,
-     *     AwsEventsEventbus?: AwsEventsEventbusDetails,
-     *     AwsDmsEndpoint?: AwsDmsEndpointDetails,
-     *     AwsEventsEndpoint?: AwsEventsEndpointDetails,
-     *     AwsDmsReplicationTask?: AwsDmsReplicationTaskDetails,
-     *     AwsDmsReplicationInstance?: AwsDmsReplicationInstanceDetails,
-     *     AwsRoute53HostedZone?: AwsRoute53HostedZoneDetails,
-     *     AwsMskCluster?: AwsMskClusterDetails,
-     *     AwsS3AccessPoint?: AwsS3AccessPointDetails,
-     *     AwsEc2ClientVpnEndpoint?: AwsEc2ClientVpnEndpointDetails
+     *     AwsAutoScalingAutoScalingGroup?: AwsAutoScalingAutoScalingGroupDetails|null,
+     *     AwsCodeBuildProject?: AwsCodeBuildProjectDetails|null,
+     *     AwsCloudFrontDistribution?: AwsCloudFrontDistributionDetails|null,
+     *     AwsEc2Instance?: AwsEc2InstanceDetails|null,
+     *     AwsEc2NetworkInterface?: AwsEc2NetworkInterfaceDetails|null,
+     *     AwsEc2SecurityGroup?: AwsEc2SecurityGroupDetails|null,
+     *     AwsEc2Volume?: AwsEc2VolumeDetails|null,
+     *     AwsEc2Vpc?: AwsEc2VpcDetails|null,
+     *     AwsEc2Eip?: AwsEc2EipDetails|null,
+     *     AwsEc2Subnet?: AwsEc2SubnetDetails|null,
+     *     AwsEc2NetworkAcl?: AwsEc2NetworkAclDetails|null,
+     *     AwsElbv2LoadBalancer?: AwsElbv2LoadBalancerDetails|null,
+     *     AwsElasticBeanstalkEnvironment?: AwsElasticBeanstalkEnvironmentDetails|null,
+     *     AwsElasticsearchDomain?: AwsElasticsearchDomainDetails|null,
+     *     AwsS3Bucket?: AwsS3BucketDetails|null,
+     *     AwsS3AccountPublicAccessBlock?: AwsS3AccountPublicAccessBlockDetails|null,
+     *     AwsS3Object?: AwsS3ObjectDetails|null,
+     *     AwsSecretsManagerSecret?: AwsSecretsManagerSecretDetails|null,
+     *     AwsIamAccessKey?: AwsIamAccessKeyDetails|null,
+     *     AwsIamUser?: AwsIamUserDetails|null,
+     *     AwsIamPolicy?: AwsIamPolicyDetails|null,
+     *     AwsApiGatewayV2Stage?: AwsApiGatewayV2StageDetails|null,
+     *     AwsApiGatewayV2Api?: AwsApiGatewayV2ApiDetails|null,
+     *     AwsDynamoDbTable?: AwsDynamoDbTableDetails|null,
+     *     AwsApiGatewayStage?: AwsApiGatewayStageDetails|null,
+     *     AwsApiGatewayRestApi?: AwsApiGatewayRestApiDetails|null,
+     *     AwsCloudTrailTrail?: AwsCloudTrailTrailDetails|null,
+     *     AwsSsmPatchCompliance?: AwsSsmPatchComplianceDetails|null,
+     *     AwsCertificateManagerCertificate?: AwsCertificateManagerCertificateDetails|null,
+     *     AwsRedshiftCluster?: AwsRedshiftClusterDetails|null,
+     *     AwsElbLoadBalancer?: AwsElbLoadBalancerDetails|null,
+     *     AwsIamGroup?: AwsIamGroupDetails|null,
+     *     AwsIamRole?: AwsIamRoleDetails|null,
+     *     AwsKmsKey?: AwsKmsKeyDetails|null,
+     *     AwsLambdaFunction?: AwsLambdaFunctionDetails|null,
+     *     AwsLambdaLayerVersion?: AwsLambdaLayerVersionDetails|null,
+     *     AwsRdsDbInstance?: AwsRdsDbInstanceDetails|null,
+     *     AwsSnsTopic?: AwsSnsTopicDetails|null,
+     *     AwsSqsQueue?: AwsSqsQueueDetails|null,
+     *     AwsWafWebAcl?: AwsWafWebAclDetails|null,
+     *     AwsRdsDbSnapshot?: AwsRdsDbSnapshotDetails|null,
+     *     AwsRdsDbClusterSnapshot?: AwsRdsDbClusterSnapshotDetails|null,
+     *     AwsRdsDbCluster?: AwsRdsDbClusterDetails|null,
+     *     AwsEcsCluster?: AwsEcsClusterDetails|null,
+     *     AwsEcsContainer?: AwsEcsContainerDetails|null,
+     *     AwsEcsTaskDefinition?: AwsEcsTaskDefinitionDetails|null,
+     *     Container?: ContainerDetails|null,
+     *     Other?: array<string, string>|null,
+     *     AwsRdsEventSubscription?: AwsRdsEventSubscriptionDetails|null,
+     *     AwsEcsService?: AwsEcsServiceDetails|null,
+     *     AwsAutoScalingLaunchConfiguration?: AwsAutoScalingLaunchConfigurationDetails|null,
+     *     AwsEc2VpnConnection?: AwsEc2VpnConnectionDetails|null,
+     *     AwsEcrContainerImage?: AwsEcrContainerImageDetails|null,
+     *     AwsOpenSearchServiceDomain?: AwsOpenSearchServiceDomainDetails|null,
+     *     AwsEc2VpcEndpointService?: AwsEc2VpcEndpointServiceDetails|null,
+     *     AwsXrayEncryptionConfig?: AwsXrayEncryptionConfigDetails|null,
+     *     AwsWafRateBasedRule?: AwsWafRateBasedRuleDetails|null,
+     *     AwsWafRegionalRateBasedRule?: AwsWafRegionalRateBasedRuleDetails|null,
+     *     AwsEcrRepository?: AwsEcrRepositoryDetails|null,
+     *     AwsEksCluster?: AwsEksClusterDetails|null,
+     *     AwsNetworkFirewallFirewallPolicy?: AwsNetworkFirewallFirewallPolicyDetails|null,
+     *     AwsNetworkFirewallFirewall?: AwsNetworkFirewallFirewallDetails|null,
+     *     AwsNetworkFirewallRuleGroup?: AwsNetworkFirewallRuleGroupDetails|null,
+     *     AwsRdsDbSecurityGroup?: AwsRdsDbSecurityGroupDetails|null,
+     *     AwsKinesisStream?: AwsKinesisStreamDetails|null,
+     *     AwsEc2TransitGateway?: AwsEc2TransitGatewayDetails|null,
+     *     AwsEfsAccessPoint?: AwsEfsAccessPointDetails|null,
+     *     AwsCloudFormationStack?: AwsCloudFormationStackDetails|null,
+     *     AwsCloudWatchAlarm?: AwsCloudWatchAlarmDetails|null,
+     *     AwsEc2VpcPeeringConnection?: AwsEc2VpcPeeringConnectionDetails|null,
+     *     AwsWafRegionalRuleGroup?: AwsWafRegionalRuleGroupDetails|null,
+     *     AwsWafRegionalRule?: AwsWafRegionalRuleDetails|null,
+     *     AwsWafRegionalWebAcl?: AwsWafRegionalWebAclDetails|null,
+     *     AwsWafRule?: AwsWafRuleDetails|null,
+     *     AwsWafRuleGroup?: AwsWafRuleGroupDetails|null,
+     *     AwsEcsTask?: AwsEcsTaskDetails|null,
+     *     AwsBackupBackupVault?: AwsBackupBackupVaultDetails|null,
+     *     AwsBackupBackupPlan?: AwsBackupBackupPlanDetails|null,
+     *     AwsBackupRecoveryPoint?: AwsBackupRecoveryPointDetails|null,
+     *     AwsEc2LaunchTemplate?: AwsEc2LaunchTemplateDetails|null,
+     *     AwsSageMakerNotebookInstance?: AwsSageMakerNotebookInstanceDetails|null,
+     *     AwsWafv2WebAcl?: AwsWafv2WebAclDetails|null,
+     *     AwsWafv2RuleGroup?: AwsWafv2RuleGroupDetails|null,
+     *     AwsEc2RouteTable?: AwsEc2RouteTableDetails|null,
+     *     AwsAmazonMqBroker?: AwsAmazonMqBrokerDetails|null,
+     *     AwsAppSyncGraphQlApi?: AwsAppSyncGraphQlApiDetails|null,
+     *     AwsEventSchemasRegistry?: AwsEventSchemasRegistryDetails|null,
+     *     AwsGuardDutyDetector?: AwsGuardDutyDetectorDetails|null,
+     *     AwsStepFunctionStateMachine?: AwsStepFunctionStateMachineDetails|null,
+     *     AwsAthenaWorkGroup?: AwsAthenaWorkGroupDetails|null,
+     *     AwsEventsEventbus?: AwsEventsEventbusDetails|null,
+     *     AwsDmsEndpoint?: AwsDmsEndpointDetails|null,
+     *     AwsEventsEndpoint?: AwsEventsEndpointDetails|null,
+     *     AwsDmsReplicationTask?: AwsDmsReplicationTaskDetails|null,
+     *     AwsDmsReplicationInstance?: AwsDmsReplicationInstanceDetails|null,
+     *     AwsRoute53HostedZone?: AwsRoute53HostedZoneDetails|null,
+     *     AwsMskCluster?: AwsMskClusterDetails|null,
+     *     AwsS3AccessPoint?: AwsS3AccessPointDetails|null,
+     *     AwsEc2ClientVpnEndpoint?: AwsEc2ClientVpnEndpointDetails|null
      * } $args
      */
     public function __construct(array $args = [])

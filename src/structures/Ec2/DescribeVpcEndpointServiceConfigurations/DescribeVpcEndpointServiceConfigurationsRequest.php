@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcEndpointServiceConfigurations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property list<string> $ServiceIds
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
- * @property string $NextToken
+ * @property bool|null $DryRun
+ * @property list<string>|null $ServiceIds
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeVpcEndpointServiceConfigurationsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     ServiceIds?: list<string>,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     DryRun?: bool|null,
+     *     ServiceIds?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

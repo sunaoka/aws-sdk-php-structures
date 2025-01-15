@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\ListAccelerators\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpFamily
- * @property list<string> $IpAddresses
- * @property 'IPv4'|'IPv6' $IpAddressFamily
+ * @property string|null $IpFamily
+ * @property list<string>|null $IpAddresses
+ * @property 'IPv4'|'IPv6'|null $IpAddressFamily
  */
 class IpSet extends Shape
 {
     /**
      * @param array{
-     *     IpFamily?: string,
-     *     IpAddresses?: list<string>,
-     *     IpAddressFamily?: 'IPv4'|'IPv6'
+     *     IpFamily?: string|null,
+     *     IpAddresses?: list<string>|null,
+     *     IpAddressFamily?: 'IPv4'|'IPv6'|null
      * } $args
      */
     public function __construct(array $args = [])

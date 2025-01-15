@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\DescribeDatastore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $estimatedSizeInBytes
- * @property \Aws\Api\DateTimeResult $estimatedOn
+ * @property double|null $estimatedSizeInBytes
+ * @property \Aws\Api\DateTimeResult|null $estimatedOn
  */
 class EstimatedResourceSize extends Shape
 {
     /**
      * @param array{
-     *     estimatedSizeInBytes?: double,
-     *     estimatedOn?: \Aws\Api\DateTimeResult
+     *     estimatedSizeInBytes?: double|null,
+     *     estimatedOn?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

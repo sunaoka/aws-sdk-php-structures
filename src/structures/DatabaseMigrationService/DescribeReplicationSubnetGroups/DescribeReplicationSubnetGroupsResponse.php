@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationSub
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\ReplicationSubnetGroup> $ReplicationSubnetGroups
+ * @property string|null $Marker
+ * @property list<Shapes\ReplicationSubnetGroup>|null $ReplicationSubnetGroups
  */
 class DescribeReplicationSubnetGroupsResponse extends Response
 {

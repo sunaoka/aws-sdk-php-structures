@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ApplicationProviderArn
- * @property DisplayData $DisplayData
- * @property 'SAML'|'OAUTH' $FederationProtocol
- * @property ResourceServerConfig $ResourceServerConfig
+ * @property DisplayData|null $DisplayData
+ * @property 'SAML'|'OAUTH'|null $FederationProtocol
+ * @property ResourceServerConfig|null $ResourceServerConfig
  */
 class ApplicationProvider extends Shape
 {
     /**
      * @param array{
      *     ApplicationProviderArn: string,
-     *     DisplayData?: DisplayData,
-     *     FederationProtocol?: 'SAML'|'OAUTH',
-     *     ResourceServerConfig?: ResourceServerConfig
+     *     DisplayData?: DisplayData|null,
+     *     FederationProtocol?: 'SAML'|'OAUTH'|null,
+     *     ResourceServerConfig?: ResourceServerConfig|null
      * } $args
      */
     public function __construct(array $args)

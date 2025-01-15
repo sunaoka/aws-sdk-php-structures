@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\UpdateManagedLoginBrand
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UserPoolId
- * @property string $ManagedLoginBrandingId
- * @property bool $UseCognitoProvidedValues
- * @property Shapes\Document $Settings
- * @property list<Shapes\AssetType> $Assets
+ * @property string|null $UserPoolId
+ * @property string|null $ManagedLoginBrandingId
+ * @property bool|null $UseCognitoProvidedValues
+ * @property Shapes\Document|null $Settings
+ * @property list<Shapes\AssetType>|null $Assets
  */
 class UpdateManagedLoginBrandingRequest extends Request
 {
     /**
      * @param array{
-     *     UserPoolId?: string,
-     *     ManagedLoginBrandingId?: string,
-     *     UseCognitoProvidedValues?: bool,
-     *     Settings?: Shapes\Document,
-     *     Assets?: list<Shapes\AssetType>
+     *     UserPoolId?: string|null,
+     *     ManagedLoginBrandingId?: string|null,
+     *     UseCognitoProvidedValues?: bool|null,
+     *     Settings?: Shapes\Document|null,
+     *     Assets?: list<Shapes\AssetType>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InsightId
- * @property string $InsightType
- * @property 'CAUSAL'|'CONTEXTUAL' $Context
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property 'LOW'|'MEDIUM'|'HIGH' $Severity
- * @property list<Insight> $SupportingInsights
- * @property string $Description
- * @property list<Recommendation> $Recommendations
- * @property list<Data> $InsightData
- * @property list<Data> $BaselineData
+ * @property string|null $InsightType
+ * @property 'CAUSAL'|'CONTEXTUAL'|null $Context
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property 'LOW'|'MEDIUM'|'HIGH'|null $Severity
+ * @property list<Insight>|null $SupportingInsights
+ * @property string|null $Description
+ * @property list<Recommendation>|null $Recommendations
+ * @property list<Data>|null $InsightData
+ * @property list<Data>|null $BaselineData
  */
 class Insight extends Shape
 {
     /**
      * @param array{
      *     InsightId: string,
-     *     InsightType?: string,
-     *     Context?: 'CAUSAL'|'CONTEXTUAL',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Severity?: 'LOW'|'MEDIUM'|'HIGH',
-     *     SupportingInsights?: list<Insight>,
-     *     Description?: string,
-     *     Recommendations?: list<Recommendation>,
-     *     InsightData?: list<Data>,
-     *     BaselineData?: list<Data>
+     *     InsightType?: string|null,
+     *     Context?: 'CAUSAL'|'CONTEXTUAL'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Severity?: 'LOW'|'MEDIUM'|'HIGH'|null,
+     *     SupportingInsights?: list<Insight>|null,
+     *     Description?: string|null,
+     *     Recommendations?: list<Recommendation>|null,
+     *     InsightData?: list<Data>|null,
+     *     BaselineData?: list<Data>|null
      * } $args
      */
     public function __construct(array $args)

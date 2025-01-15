@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProjectArn
- * @property string $NextToken
- * @property int<1, 5> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 5>|null $MaxResults
  */
 class ListProjectPoliciesRequest extends Request
 {
     /**
      * @param array{
      *     ProjectArn: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 5>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 5>|null
      * } $args
      */
     public function __construct(array $args)

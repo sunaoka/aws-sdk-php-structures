@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LegendOptions $Legend
- * @property list<GeospatialLayerItem> $MapLayers
- * @property GeospatialMapState $MapState
- * @property GeospatialMapStyle $MapStyle
- * @property VisualInteractionOptions $Interactions
+ * @property LegendOptions|null $Legend
+ * @property list<GeospatialLayerItem>|null $MapLayers
+ * @property GeospatialMapState|null $MapState
+ * @property GeospatialMapStyle|null $MapStyle
+ * @property VisualInteractionOptions|null $Interactions
  */
 class GeospatialLayerMapConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Legend?: LegendOptions,
-     *     MapLayers?: list<GeospatialLayerItem>,
-     *     MapState?: GeospatialMapState,
-     *     MapStyle?: GeospatialMapStyle,
-     *     Interactions?: VisualInteractionOptions
+     *     Legend?: LegendOptions|null,
+     *     MapLayers?: list<GeospatialLayerItem>|null,
+     *     MapState?: GeospatialMapState|null,
+     *     MapStyle?: GeospatialMapStyle|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,38 +6,38 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AvailabilityZone
- * @property bool $Encrypted
- * @property int $Iops
- * @property string $KmsKeyId
- * @property string $OutpostArn
- * @property int $Size
- * @property string $SnapshotId
- * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3' $VolumeType
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $MultiAttachEnabled
- * @property int $Throughput
- * @property string $ClientToken
- * @property Shapes\OperatorRequest $Operator
- * @property bool $DryRun
+ * @property bool|null $Encrypted
+ * @property int|null $Iops
+ * @property string|null $KmsKeyId
+ * @property string|null $OutpostArn
+ * @property int|null $Size
+ * @property string|null $SnapshotId
+ * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $MultiAttachEnabled
+ * @property int|null $Throughput
+ * @property string|null $ClientToken
+ * @property Shapes\OperatorRequest|null $Operator
+ * @property bool|null $DryRun
  */
 class CreateVolumeRequest extends Request
 {
     /**
      * @param array{
      *     AvailabilityZone: string,
-     *     Encrypted?: bool,
-     *     Iops?: int,
-     *     KmsKeyId?: string,
-     *     OutpostArn?: string,
-     *     Size?: int,
-     *     SnapshotId?: string,
-     *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3',
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     MultiAttachEnabled?: bool,
-     *     Throughput?: int,
-     *     ClientToken?: string,
-     *     Operator?: Shapes\OperatorRequest,
-     *     DryRun?: bool
+     *     Encrypted?: bool|null,
+     *     Iops?: int|null,
+     *     KmsKeyId?: string|null,
+     *     OutpostArn?: string|null,
+     *     Size?: int|null,
+     *     SnapshotId?: string|null,
+     *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     MultiAttachEnabled?: bool|null,
+     *     Throughput?: int|null,
+     *     ClientToken?: string|null,
+     *     Operator?: Shapes\OperatorRequest|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

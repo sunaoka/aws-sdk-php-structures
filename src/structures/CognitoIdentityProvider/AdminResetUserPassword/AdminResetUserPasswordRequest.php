@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $UserPoolId
  * @property string $Username
- * @property array<string, string> $ClientMetadata
+ * @property array<string, string>|null $ClientMetadata
  */
 class AdminResetUserPasswordRequest extends Request
 {
@@ -15,7 +15,7 @@ class AdminResetUserPasswordRequest extends Request
      * @param array{
      *     UserPoolId: string,
      *     Username: string,
-     *     ClientMetadata?: array<string, string>
+     *     ClientMetadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $instanceId
- * @property string $instanceName
- * @property string $instanceDescription
+ * @property string|null $instanceName
+ * @property string|null $instanceDescription
  */
 class UpdateInstanceRequest extends Request
 {
     /**
      * @param array{
      *     instanceId: string,
-     *     instanceName?: string,
-     *     instanceDescription?: string
+     *     instanceName?: string|null,
+     *     instanceDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

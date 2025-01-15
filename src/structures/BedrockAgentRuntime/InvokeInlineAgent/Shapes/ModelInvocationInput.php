@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $foundationModel
- * @property InferenceConfiguration $inferenceConfiguration
- * @property string $overrideLambda
- * @property 'DEFAULT'|'OVERRIDDEN' $parserMode
- * @property 'DEFAULT'|'OVERRIDDEN' $promptCreationMode
- * @property string $text
- * @property string $traceId
- * @property 'PRE_PROCESSING'|'ORCHESTRATION'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'POST_PROCESSING'|'ROUTING_CLASSIFIER' $type
+ * @property string|null $foundationModel
+ * @property InferenceConfiguration|null $inferenceConfiguration
+ * @property string|null $overrideLambda
+ * @property 'DEFAULT'|'OVERRIDDEN'|null $parserMode
+ * @property 'DEFAULT'|'OVERRIDDEN'|null $promptCreationMode
+ * @property string|null $text
+ * @property string|null $traceId
+ * @property 'PRE_PROCESSING'|'ORCHESTRATION'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'POST_PROCESSING'|'ROUTING_CLASSIFIER'|null $type
  */
 class ModelInvocationInput extends Shape
 {
     /**
      * @param array{
-     *     foundationModel?: string,
-     *     inferenceConfiguration?: InferenceConfiguration,
-     *     overrideLambda?: string,
-     *     parserMode?: 'DEFAULT'|'OVERRIDDEN',
-     *     promptCreationMode?: 'DEFAULT'|'OVERRIDDEN',
-     *     text?: string,
-     *     traceId?: string,
-     *     type?: 'PRE_PROCESSING'|'ORCHESTRATION'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'POST_PROCESSING'|'ROUTING_CLASSIFIER'
+     *     foundationModel?: string|null,
+     *     inferenceConfiguration?: InferenceConfiguration|null,
+     *     overrideLambda?: string|null,
+     *     parserMode?: 'DEFAULT'|'OVERRIDDEN'|null,
+     *     promptCreationMode?: 'DEFAULT'|'OVERRIDDEN'|null,
+     *     text?: string|null,
+     *     traceId?: string|null,
+     *     type?: 'PRE_PROCESSING'|'ORCHESTRATION'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'POST_PROCESSING'|'ROUTING_CLASSIFIER'|null
      * } $args
      */
     public function __construct(array $args = [])

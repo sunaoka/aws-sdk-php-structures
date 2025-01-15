@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\GetTrustStoreCaCertifica
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Location
+ * @property string|null $Location
  */
 class GetTrustStoreCaCertificatesBundleResponse extends Response
 {

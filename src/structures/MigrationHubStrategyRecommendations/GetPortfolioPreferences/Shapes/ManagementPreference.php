@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsManagedResources $awsManagedResources
- * @property NoManagementPreference $noPreference
- * @property SelfManageResources $selfManageResources
+ * @property AwsManagedResources|null $awsManagedResources
+ * @property NoManagementPreference|null $noPreference
+ * @property SelfManageResources|null $selfManageResources
  */
 class ManagementPreference extends Shape
 {
     /**
      * @param array{
-     *     awsManagedResources?: AwsManagedResources,
-     *     noPreference?: NoManagementPreference,
-     *     selfManageResources?: SelfManageResources
+     *     awsManagedResources?: AwsManagedResources|null,
+     *     noPreference?: NoManagementPreference|null,
+     *     selfManageResources?: SelfManageResources|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetScalingConfigurationRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TargetTrackingScalingPolicyConfiguration $TargetTracking
+ * @property TargetTrackingScalingPolicyConfiguration|null $TargetTracking
  */
 class ScalingPolicy extends Shape
 {
     /**
-     * @param array{TargetTracking?: TargetTrackingScalingPolicyConfiguration} $args
+     * @param array{TargetTracking?: TargetTrackingScalingPolicyConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

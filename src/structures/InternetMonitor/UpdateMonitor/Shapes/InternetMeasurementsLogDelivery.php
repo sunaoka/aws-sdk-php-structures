@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\InternetMonitor\UpdateMonitor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Config $S3Config
+ * @property S3Config|null $S3Config
  */
 class InternetMeasurementsLogDelivery extends Shape
 {
     /**
-     * @param array{S3Config?: S3Config} $args
+     * @param array{S3Config?: S3Config|null} $args
      */
     public function __construct(array $args = [])
     {

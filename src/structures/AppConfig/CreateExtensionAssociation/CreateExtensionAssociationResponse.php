@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppConfig\CreateExtensionAssociation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Id
- * @property string $ExtensionArn
- * @property string $ResourceArn
- * @property string $Arn
- * @property array<string, string> $Parameters
- * @property int $ExtensionVersionNumber
+ * @property string|null $Id
+ * @property string|null $ExtensionArn
+ * @property string|null $ResourceArn
+ * @property string|null $Arn
+ * @property array<string, string>|null $Parameters
+ * @property int|null $ExtensionVersionNumber
  */
 class CreateExtensionAssociationResponse extends Response
 {

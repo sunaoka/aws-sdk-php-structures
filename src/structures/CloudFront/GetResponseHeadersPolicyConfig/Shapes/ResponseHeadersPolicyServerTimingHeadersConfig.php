@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property double $SamplingRate
+ * @property double|null $SamplingRate
  */
 class ResponseHeadersPolicyServerTimingHeadersConfig extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     SamplingRate?: double
+     *     SamplingRate?: double|null
      * } $args
      */
     public function __construct(array $args)

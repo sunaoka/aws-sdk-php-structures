@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationInstanceArn
- * @property int $AllocatedStorage
- * @property bool $ApplyImmediately
- * @property string $ReplicationInstanceClass
- * @property list<string> $VpcSecurityGroupIds
- * @property string $PreferredMaintenanceWindow
- * @property bool $MultiAZ
- * @property string $EngineVersion
- * @property bool $AllowMajorVersionUpgrade
- * @property bool $AutoMinorVersionUpgrade
- * @property string $ReplicationInstanceIdentifier
- * @property string $NetworkType
- * @property Shapes\KerberosAuthenticationSettings $KerberosAuthenticationSettings
+ * @property int|null $AllocatedStorage
+ * @property bool|null $ApplyImmediately
+ * @property string|null $ReplicationInstanceClass
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $PreferredMaintenanceWindow
+ * @property bool|null $MultiAZ
+ * @property string|null $EngineVersion
+ * @property bool|null $AllowMajorVersionUpgrade
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $ReplicationInstanceIdentifier
+ * @property string|null $NetworkType
+ * @property Shapes\KerberosAuthenticationSettings|null $KerberosAuthenticationSettings
  */
 class ModifyReplicationInstanceRequest extends Request
 {
     /**
      * @param array{
      *     ReplicationInstanceArn: string,
-     *     AllocatedStorage?: int,
-     *     ApplyImmediately?: bool,
-     *     ReplicationInstanceClass?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     PreferredMaintenanceWindow?: string,
-     *     MultiAZ?: bool,
-     *     EngineVersion?: string,
-     *     AllowMajorVersionUpgrade?: bool,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     ReplicationInstanceIdentifier?: string,
-     *     NetworkType?: string,
-     *     KerberosAuthenticationSettings?: Shapes\KerberosAuthenticationSettings
+     *     AllocatedStorage?: int|null,
+     *     ApplyImmediately?: bool|null,
+     *     ReplicationInstanceClass?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     MultiAZ?: bool|null,
+     *     EngineVersion?: string|null,
+     *     AllowMajorVersionUpgrade?: bool|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     ReplicationInstanceIdentifier?: string|null,
+     *     NetworkType?: string|null,
+     *     KerberosAuthenticationSettings?: Shapes\KerberosAuthenticationSettings|null
      * } $args
      */
     public function __construct(array $args)

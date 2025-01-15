@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\CreateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceArn
+ * @property string|null $SourceArn
  */
 class Metadata extends Shape
 {
     /**
-     * @param array{SourceArn?: string} $args
+     * @param array{SourceArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

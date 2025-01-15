@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $roleAlias
- * @property string $roleArn
- * @property int<900, 43200> $credentialDurationSeconds
+ * @property string|null $roleArn
+ * @property int<900, 43200>|null $credentialDurationSeconds
  */
 class UpdateRoleAliasRequest extends Request
 {
     /**
      * @param array{
      *     roleAlias: string,
-     *     roleArn?: string,
-     *     credentialDurationSeconds?: int<900, 43200>
+     *     roleArn?: string|null,
+     *     credentialDurationSeconds?: int<900, 43200>|null
      * } $args
      */
     public function __construct(array $args)

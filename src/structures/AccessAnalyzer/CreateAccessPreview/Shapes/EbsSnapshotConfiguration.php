@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\CreateAccessPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $userIds
- * @property list<string> $groups
- * @property string $kmsKeyId
+ * @property list<string>|null $userIds
+ * @property list<string>|null $groups
+ * @property string|null $kmsKeyId
  */
 class EbsSnapshotConfiguration extends Shape
 {
     /**
      * @param array{
-     *     userIds?: list<string>,
-     *     groups?: list<string>,
-     *     kmsKeyId?: string
+     *     userIds?: list<string>|null,
+     *     groups?: list<string>|null,
+     *     kmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

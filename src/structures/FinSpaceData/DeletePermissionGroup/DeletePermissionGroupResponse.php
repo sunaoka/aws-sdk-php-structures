@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\DeletePermissionGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $permissionGroupId
+ * @property string|null $permissionGroupId
  */
 class DeletePermissionGroupResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CodePipeline\GetPipelineExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $rollbackTargetPipelineExecutionId
+ * @property string|null $rollbackTargetPipelineExecutionId
  */
 class PipelineRollbackMetadata extends Shape
 {
     /**
-     * @param array{rollbackTargetPipelineExecutionId?: string} $args
+     * @param array{rollbackTargetPipelineExecutionId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

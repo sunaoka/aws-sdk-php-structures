@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $AssetBundleImportJobId
  * @property Shapes\AssetBundleImportSource $AssetBundleImportSource
- * @property Shapes\AssetBundleImportJobOverrideParameters $OverrideParameters
- * @property 'DO_NOTHING'|'ROLLBACK' $FailureAction
- * @property Shapes\AssetBundleImportJobOverridePermissions $OverridePermissions
- * @property Shapes\AssetBundleImportJobOverrideTags $OverrideTags
- * @property Shapes\AssetBundleImportJobOverrideValidationStrategy $OverrideValidationStrategy
+ * @property Shapes\AssetBundleImportJobOverrideParameters|null $OverrideParameters
+ * @property 'DO_NOTHING'|'ROLLBACK'|null $FailureAction
+ * @property Shapes\AssetBundleImportJobOverridePermissions|null $OverridePermissions
+ * @property Shapes\AssetBundleImportJobOverrideTags|null $OverrideTags
+ * @property Shapes\AssetBundleImportJobOverrideValidationStrategy|null $OverrideValidationStrategy
  */
 class StartAssetBundleImportJobRequest extends Request
 {
@@ -21,11 +21,11 @@ class StartAssetBundleImportJobRequest extends Request
      *     AwsAccountId: string,
      *     AssetBundleImportJobId: string,
      *     AssetBundleImportSource: Shapes\AssetBundleImportSource,
-     *     OverrideParameters?: Shapes\AssetBundleImportJobOverrideParameters,
-     *     FailureAction?: 'DO_NOTHING'|'ROLLBACK',
-     *     OverridePermissions?: Shapes\AssetBundleImportJobOverridePermissions,
-     *     OverrideTags?: Shapes\AssetBundleImportJobOverrideTags,
-     *     OverrideValidationStrategy?: Shapes\AssetBundleImportJobOverrideValidationStrategy
+     *     OverrideParameters?: Shapes\AssetBundleImportJobOverrideParameters|null,
+     *     FailureAction?: 'DO_NOTHING'|'ROLLBACK'|null,
+     *     OverridePermissions?: Shapes\AssetBundleImportJobOverridePermissions|null,
+     *     OverrideTags?: Shapes\AssetBundleImportJobOverrideTags|null,
+     *     OverrideValidationStrategy?: Shapes\AssetBundleImportJobOverrideValidationStrategy|null
      * } $args
      */
     public function __construct(array $args)

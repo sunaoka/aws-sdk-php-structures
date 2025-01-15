@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property list<string> $FieldNames
- * @property bool $Deployed
+ * @property list<string>|null $FieldNames
+ * @property bool|null $Deployed
  */
 class DescribeIndexFieldsRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     FieldNames?: list<string>,
-     *     Deployed?: bool
+     *     FieldNames?: list<string>|null,
+     *     Deployed?: bool|null
      * } $args
      */
     public function __construct(array $args)

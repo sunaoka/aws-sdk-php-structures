@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property string $Namespace
+ * @property string|null $Namespace
  * @property string $ApplicationId
  */
 class UpdateDefaultQBusinessApplicationRequest extends Request
@@ -14,7 +14,7 @@ class UpdateDefaultQBusinessApplicationRequest extends Request
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     Namespace?: string,
+     *     Namespace?: string|null,
      *     ApplicationId: string
      * } $args
      */

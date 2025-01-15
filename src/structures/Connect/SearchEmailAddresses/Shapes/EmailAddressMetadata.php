@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Connect\SearchEmailAddresses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EmailAddressId
- * @property string $EmailAddressArn
- * @property string $EmailAddress
- * @property string $Description
- * @property string $DisplayName
+ * @property string|null $EmailAddressId
+ * @property string|null $EmailAddressArn
+ * @property string|null $EmailAddress
+ * @property string|null $Description
+ * @property string|null $DisplayName
  */
 class EmailAddressMetadata extends Shape
 {
     /**
      * @param array{
-     *     EmailAddressId?: string,
-     *     EmailAddressArn?: string,
-     *     EmailAddress?: string,
-     *     Description?: string,
-     *     DisplayName?: string
+     *     EmailAddressId?: string|null,
+     *     EmailAddressArn?: string|null,
+     *     EmailAddress?: string|null,
+     *     Description?: string|null,
+     *     DisplayName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

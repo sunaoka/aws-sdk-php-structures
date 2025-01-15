@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Comprehend\DetectDominantLanguage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LanguageCode
- * @property float $Score
+ * @property string|null $LanguageCode
+ * @property float|null $Score
  */
 class DominantLanguage extends Shape
 {
     /**
      * @param array{
-     *     LanguageCode?: string,
-     *     Score?: float
+     *     LanguageCode?: string|null,
+     *     Score?: float|null
      * } $args
      */
     public function __construct(array $args = [])

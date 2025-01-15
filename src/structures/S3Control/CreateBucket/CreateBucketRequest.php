@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\S3Control\CreateBucket;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'private'|'public-read'|'public-read-write'|'authenticated-read' $ACL
+ * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|null $ACL
  * @property string $Bucket
- * @property Shapes\CreateBucketConfiguration $CreateBucketConfiguration
- * @property string $GrantFullControl
- * @property string $GrantRead
- * @property string $GrantReadACP
- * @property string $GrantWrite
- * @property string $GrantWriteACP
- * @property bool $ObjectLockEnabledForBucket
- * @property string $OutpostId
+ * @property Shapes\CreateBucketConfiguration|null $CreateBucketConfiguration
+ * @property string|null $GrantFullControl
+ * @property string|null $GrantRead
+ * @property string|null $GrantReadACP
+ * @property string|null $GrantWrite
+ * @property string|null $GrantWriteACP
+ * @property bool|null $ObjectLockEnabledForBucket
+ * @property string|null $OutpostId
  */
 class CreateBucketRequest extends Request
 {
     /**
      * @param array{
-     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read',
+     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|null,
      *     Bucket: string,
-     *     CreateBucketConfiguration?: Shapes\CreateBucketConfiguration,
-     *     GrantFullControl?: string,
-     *     GrantRead?: string,
-     *     GrantReadACP?: string,
-     *     GrantWrite?: string,
-     *     GrantWriteACP?: string,
-     *     ObjectLockEnabledForBucket?: bool,
-     *     OutpostId?: string
+     *     CreateBucketConfiguration?: Shapes\CreateBucketConfiguration|null,
+     *     GrantFullControl?: string|null,
+     *     GrantRead?: string|null,
+     *     GrantReadACP?: string|null,
+     *     GrantWrite?: string|null,
+     *     GrantWriteACP?: string|null,
+     *     ObjectLockEnabledForBucket?: bool|null,
+     *     OutpostId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SqlInjectionMatchSetId
- * @property string $Name
+ * @property string|null $Name
  * @property list<SqlInjectionMatchTuple> $SqlInjectionMatchTuples
  */
 class SqlInjectionMatchSet extends Shape
@@ -14,7 +14,7 @@ class SqlInjectionMatchSet extends Shape
     /**
      * @param array{
      *     SqlInjectionMatchSetId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     SqlInjectionMatchTuples: list<SqlInjectionMatchTuple>
      * } $args
      */

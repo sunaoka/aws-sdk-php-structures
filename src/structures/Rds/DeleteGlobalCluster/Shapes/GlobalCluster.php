@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Rds\DeleteGlobalCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GlobalClusterIdentifier
- * @property string $GlobalClusterResourceId
- * @property string $GlobalClusterArn
- * @property string $Status
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $EngineLifecycleSupport
- * @property string $DatabaseName
- * @property bool $StorageEncrypted
- * @property bool $DeletionProtection
- * @property list<GlobalClusterMember> $GlobalClusterMembers
- * @property string $Endpoint
- * @property FailoverState $FailoverState
- * @property list<Tag> $TagList
+ * @property string|null $GlobalClusterIdentifier
+ * @property string|null $GlobalClusterResourceId
+ * @property string|null $GlobalClusterArn
+ * @property string|null $Status
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $EngineLifecycleSupport
+ * @property string|null $DatabaseName
+ * @property bool|null $StorageEncrypted
+ * @property bool|null $DeletionProtection
+ * @property list<GlobalClusterMember>|null $GlobalClusterMembers
+ * @property string|null $Endpoint
+ * @property FailoverState|null $FailoverState
+ * @property list<Tag>|null $TagList
  */
 class GlobalCluster extends Shape
 {
     /**
      * @param array{
-     *     GlobalClusterIdentifier?: string,
-     *     GlobalClusterResourceId?: string,
-     *     GlobalClusterArn?: string,
-     *     Status?: string,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     EngineLifecycleSupport?: string,
-     *     DatabaseName?: string,
-     *     StorageEncrypted?: bool,
-     *     DeletionProtection?: bool,
-     *     GlobalClusterMembers?: list<GlobalClusterMember>,
-     *     Endpoint?: string,
-     *     FailoverState?: FailoverState,
-     *     TagList?: list<Tag>
+     *     GlobalClusterIdentifier?: string|null,
+     *     GlobalClusterResourceId?: string|null,
+     *     GlobalClusterArn?: string|null,
+     *     Status?: string|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     EngineLifecycleSupport?: string|null,
+     *     DatabaseName?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     DeletionProtection?: bool|null,
+     *     GlobalClusterMembers?: list<GlobalClusterMember>|null,
+     *     Endpoint?: string|null,
+     *     FailoverState?: FailoverState|null,
+     *     TagList?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

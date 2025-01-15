@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MediaTailor\DescribeProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AdBreak> $AdBreaks
- * @property ClipRange $ClipRange
- * @property int $DurationMillis
- * @property string $LiveSourceName
- * @property int $ScheduledStartTimeMillis
- * @property string $SourceLocationName
- * @property string $VodSourceName
+ * @property list<AdBreak>|null $AdBreaks
+ * @property ClipRange|null $ClipRange
+ * @property int|null $DurationMillis
+ * @property string|null $LiveSourceName
+ * @property int|null $ScheduledStartTimeMillis
+ * @property string|null $SourceLocationName
+ * @property string|null $VodSourceName
  */
 class AlternateMedia extends Shape
 {
     /**
      * @param array{
-     *     AdBreaks?: list<AdBreak>,
-     *     ClipRange?: ClipRange,
-     *     DurationMillis?: int,
-     *     LiveSourceName?: string,
-     *     ScheduledStartTimeMillis?: int,
-     *     SourceLocationName?: string,
-     *     VodSourceName?: string
+     *     AdBreaks?: list<AdBreak>|null,
+     *     ClipRange?: ClipRange|null,
+     *     DurationMillis?: int|null,
+     *     LiveSourceName?: string|null,
+     *     ScheduledStartTimeMillis?: int|null,
+     *     SourceLocationName?: string|null,
+     *     VodSourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

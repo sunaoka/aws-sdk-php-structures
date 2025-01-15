@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConformancePackName
- * @property Shapes\ConformancePackEvaluationFilters $Filters
- * @property int<0, 100> $Limit
- * @property string $NextToken
+ * @property Shapes\ConformancePackEvaluationFilters|null $Filters
+ * @property int<0, 100>|null $Limit
+ * @property string|null $NextToken
  */
 class GetConformancePackComplianceDetailsRequest extends Request
 {
     /**
      * @param array{
      *     ConformancePackName: string,
-     *     Filters?: Shapes\ConformancePackEvaluationFilters,
-     *     Limit?: int<0, 100>,
-     *     NextToken?: string
+     *     Filters?: Shapes\ConformancePackEvaluationFilters|null,
+     *     Limit?: int<0, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

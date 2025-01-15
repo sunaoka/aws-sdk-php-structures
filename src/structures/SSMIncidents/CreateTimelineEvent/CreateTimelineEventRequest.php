@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\CreateTimelineEvent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $eventData
- * @property list<Shapes\EventReference> $eventReferences
+ * @property list<Shapes\EventReference>|null $eventReferences
  * @property \Aws\Api\DateTimeResult $eventTime
  * @property string $eventType
  * @property string $incidentRecordArn
@@ -16,9 +16,9 @@ class CreateTimelineEventRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     eventData: string,
-     *     eventReferences?: list<Shapes\EventReference>,
+     *     eventReferences?: list<Shapes\EventReference>|null,
      *     eventTime: \Aws\Api\DateTimeResult,
      *     eventType: string,
      *     incidentRecordArn: string

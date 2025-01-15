@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateHsmClientCertificate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HsmClientCertificateIdentifier
- * @property string $HsmClientCertificatePublicKey
- * @property list<Tag> $Tags
+ * @property string|null $HsmClientCertificateIdentifier
+ * @property string|null $HsmClientCertificatePublicKey
+ * @property list<Tag>|null $Tags
  */
 class HsmClientCertificate extends Shape
 {
     /**
      * @param array{
-     *     HsmClientCertificateIdentifier?: string,
-     *     HsmClientCertificatePublicKey?: string,
-     *     Tags?: list<Tag>
+     *     HsmClientCertificateIdentifier?: string|null,
+     *     HsmClientCertificatePublicKey?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

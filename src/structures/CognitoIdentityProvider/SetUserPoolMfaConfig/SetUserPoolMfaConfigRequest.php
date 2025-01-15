@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UserPoolId
- * @property Shapes\SmsMfaConfigType $SmsMfaConfiguration
- * @property Shapes\SoftwareTokenMfaConfigType $SoftwareTokenMfaConfiguration
- * @property Shapes\EmailMfaConfigType $EmailMfaConfiguration
- * @property 'OFF'|'ON'|'OPTIONAL' $MfaConfiguration
- * @property Shapes\WebAuthnConfigurationType $WebAuthnConfiguration
+ * @property Shapes\SmsMfaConfigType|null $SmsMfaConfiguration
+ * @property Shapes\SoftwareTokenMfaConfigType|null $SoftwareTokenMfaConfiguration
+ * @property Shapes\EmailMfaConfigType|null $EmailMfaConfiguration
+ * @property 'OFF'|'ON'|'OPTIONAL'|null $MfaConfiguration
+ * @property Shapes\WebAuthnConfigurationType|null $WebAuthnConfiguration
  */
 class SetUserPoolMfaConfigRequest extends Request
 {
     /**
      * @param array{
      *     UserPoolId: string,
-     *     SmsMfaConfiguration?: Shapes\SmsMfaConfigType,
-     *     SoftwareTokenMfaConfiguration?: Shapes\SoftwareTokenMfaConfigType,
-     *     EmailMfaConfiguration?: Shapes\EmailMfaConfigType,
-     *     MfaConfiguration?: 'OFF'|'ON'|'OPTIONAL',
-     *     WebAuthnConfiguration?: Shapes\WebAuthnConfigurationType
+     *     SmsMfaConfiguration?: Shapes\SmsMfaConfigType|null,
+     *     SoftwareTokenMfaConfiguration?: Shapes\SoftwareTokenMfaConfigType|null,
+     *     EmailMfaConfiguration?: Shapes\EmailMfaConfigType|null,
+     *     MfaConfiguration?: 'OFF'|'ON'|'OPTIONAL'|null,
+     *     WebAuthnConfiguration?: Shapes\WebAuthnConfigurationType|null
      * } $args
      */
     public function __construct(array $args)

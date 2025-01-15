@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Detective\ListIndicators\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserAgent
- * @property bool $IsNewForEntireAccount
+ * @property string|null $UserAgent
+ * @property bool|null $IsNewForEntireAccount
  */
 class NewUserAgentDetail extends Shape
 {
     /**
      * @param array{
-     *     UserAgent?: string,
-     *     IsNewForEntireAccount?: bool
+     *     UserAgent?: string|null,
+     *     IsNewForEntireAccount?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

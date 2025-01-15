@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConfigurationSetArn
  * @property string $ConfigurationSetName
  * @property list<EventDestination> $EventDestinations
- * @property 'TRANSACTIONAL'|'PROMOTIONAL' $DefaultMessageType
- * @property string $DefaultSenderId
- * @property bool $DefaultMessageFeedbackEnabled
+ * @property 'TRANSACTIONAL'|'PROMOTIONAL'|null $DefaultMessageType
+ * @property string|null $DefaultSenderId
+ * @property bool|null $DefaultMessageFeedbackEnabled
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property string $ProtectConfigurationId
+ * @property string|null $ProtectConfigurationId
  */
 class ConfigurationSetInformation extends Shape
 {
@@ -21,11 +21,11 @@ class ConfigurationSetInformation extends Shape
      *     ConfigurationSetArn: string,
      *     ConfigurationSetName: string,
      *     EventDestinations: list<EventDestination>,
-     *     DefaultMessageType?: 'TRANSACTIONAL'|'PROMOTIONAL',
-     *     DefaultSenderId?: string,
-     *     DefaultMessageFeedbackEnabled?: bool,
+     *     DefaultMessageType?: 'TRANSACTIONAL'|'PROMOTIONAL'|null,
+     *     DefaultSenderId?: string|null,
+     *     DefaultMessageFeedbackEnabled?: bool|null,
      *     CreatedTimestamp: \Aws\Api\DateTimeResult,
-     *     ProtectConfigurationId?: string
+     *     ProtectConfigurationId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListRecommendationTemplates;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\RecommendationTemplate> $recommendationTemplates
+ * @property string|null $nextToken
+ * @property list<Shapes\RecommendationTemplate>|null $recommendationTemplates
  */
 class ListRecommendationTemplatesResponse extends Response
 {

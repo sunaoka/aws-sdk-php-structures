@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property string $JobId
- * @property list<Shapes\JobResourceTags> $JobTags
+ * @property list<Shapes\JobResourceTags>|null $JobTags
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property string $NodeDescription
+ * @property string|null $NodeDescription
  * @property string $NodeName
  * @property string $OutputPackageName
  * @property string $OutputPackageVersion

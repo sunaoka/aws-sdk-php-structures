@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CoreCount
- * @property int $ThreadsPerCore
- * @property 'enabled'|'disabled' $AmdSevSnp
+ * @property int|null $CoreCount
+ * @property int|null $ThreadsPerCore
+ * @property 'enabled'|'disabled'|null $AmdSevSnp
  */
 class LaunchTemplateCpuOptions extends Shape
 {
     /**
      * @param array{
-     *     CoreCount?: int,
-     *     ThreadsPerCore?: int,
-     *     AmdSevSnp?: 'enabled'|'disabled'
+     *     CoreCount?: int|null,
+     *     ThreadsPerCore?: int|null,
+     *     AmdSevSnp?: 'enabled'|'disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

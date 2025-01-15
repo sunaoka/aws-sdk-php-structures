@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCatalyst\UpdateDevEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $runtime
- * @property string $name
+ * @property string|null $runtime
+ * @property string|null $name
  */
 class IdeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     runtime?: string,
-     *     name?: string
+     *     runtime?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

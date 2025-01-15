@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PcaConnectorScep\ListConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IntuneConfiguration $Intune
+ * @property IntuneConfiguration|null $Intune
  */
 class MobileDeviceManagement extends Shape
 {
     /**
-     * @param array{Intune?: IntuneConfiguration} $args
+     * @param array{Intune?: IntuneConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ECRPublic\BatchCheckLayerAvailability\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $layerDigest
- * @property 'InvalidLayerDigest'|'MissingLayerDigest' $failureCode
- * @property string $failureReason
+ * @property string|null $layerDigest
+ * @property 'InvalidLayerDigest'|'MissingLayerDigest'|null $failureCode
+ * @property string|null $failureReason
  */
 class LayerFailure extends Shape
 {
     /**
      * @param array{
-     *     layerDigest?: string,
-     *     failureCode?: 'InvalidLayerDigest'|'MissingLayerDigest',
-     *     failureReason?: string
+     *     layerDigest?: string|null,
+     *     failureCode?: 'InvalidLayerDigest'|'MissingLayerDigest'|null,
+     *     failureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

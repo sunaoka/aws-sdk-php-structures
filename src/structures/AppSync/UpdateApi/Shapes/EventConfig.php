@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AuthMode> $connectionAuthModes
  * @property list<AuthMode> $defaultPublishAuthModes
  * @property list<AuthMode> $defaultSubscribeAuthModes
- * @property EventLogConfig $logConfig
+ * @property EventLogConfig|null $logConfig
  */
 class EventConfig extends Shape
 {
@@ -19,7 +19,7 @@ class EventConfig extends Shape
      *     connectionAuthModes: list<AuthMode>,
      *     defaultPublishAuthModes: list<AuthMode>,
      *     defaultSubscribeAuthModes: list<AuthMode>,
-     *     logConfig?: EventLogConfig
+     *     logConfig?: EventLogConfig|null
      * } $args
      */
     public function __construct(array $args)

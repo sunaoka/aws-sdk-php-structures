@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\ListCustomRoutingPortMappings
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AcceleratorArn
- * @property list<SocketAddress> $AcceleratorSocketAddresses
- * @property string $EndpointGroupArn
- * @property string $EndpointId
- * @property string $EndpointGroupRegion
- * @property SocketAddress $DestinationSocketAddress
- * @property 'IPV4'|'DUAL_STACK' $IpAddressType
- * @property 'ALLOW'|'DENY' $DestinationTrafficState
+ * @property string|null $AcceleratorArn
+ * @property list<SocketAddress>|null $AcceleratorSocketAddresses
+ * @property string|null $EndpointGroupArn
+ * @property string|null $EndpointId
+ * @property string|null $EndpointGroupRegion
+ * @property SocketAddress|null $DestinationSocketAddress
+ * @property 'IPV4'|'DUAL_STACK'|null $IpAddressType
+ * @property 'ALLOW'|'DENY'|null $DestinationTrafficState
  */
 class DestinationPortMapping extends Shape
 {
     /**
      * @param array{
-     *     AcceleratorArn?: string,
-     *     AcceleratorSocketAddresses?: list<SocketAddress>,
-     *     EndpointGroupArn?: string,
-     *     EndpointId?: string,
-     *     EndpointGroupRegion?: string,
-     *     DestinationSocketAddress?: SocketAddress,
-     *     IpAddressType?: 'IPV4'|'DUAL_STACK',
-     *     DestinationTrafficState?: 'ALLOW'|'DENY'
+     *     AcceleratorArn?: string|null,
+     *     AcceleratorSocketAddresses?: list<SocketAddress>|null,
+     *     EndpointGroupArn?: string|null,
+     *     EndpointId?: string|null,
+     *     EndpointGroupRegion?: string|null,
+     *     DestinationSocketAddress?: SocketAddress|null,
+     *     IpAddressType?: 'IPV4'|'DUAL_STACK'|null,
+     *     DestinationTrafficState?: 'ALLOW'|'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

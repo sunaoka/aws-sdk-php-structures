@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketWebsite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ErrorDocument $ErrorDocument
- * @property IndexDocument $IndexDocument
- * @property RedirectAllRequestsTo $RedirectAllRequestsTo
- * @property list<RoutingRule> $RoutingRules
+ * @property ErrorDocument|null $ErrorDocument
+ * @property IndexDocument|null $IndexDocument
+ * @property RedirectAllRequestsTo|null $RedirectAllRequestsTo
+ * @property list<RoutingRule>|null $RoutingRules
  */
 class WebsiteConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ErrorDocument?: ErrorDocument,
-     *     IndexDocument?: IndexDocument,
-     *     RedirectAllRequestsTo?: RedirectAllRequestsTo,
-     *     RoutingRules?: list<RoutingRule>
+     *     ErrorDocument?: ErrorDocument|null,
+     *     IndexDocument?: IndexDocument|null,
+     *     RedirectAllRequestsTo?: RedirectAllRequestsTo|null,
+     *     RoutingRules?: list<RoutingRule>|null
      * } $args
      */
     public function __construct(array $args = [])

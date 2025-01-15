@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetResourceEventConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LoRaWANConnectionStatusEventNotificationConfigurations $LoRaWAN
- * @property 'Enabled'|'Disabled' $WirelessGatewayIdEventTopic
+ * @property LoRaWANConnectionStatusEventNotificationConfigurations|null $LoRaWAN
+ * @property 'Enabled'|'Disabled'|null $WirelessGatewayIdEventTopic
  */
 class ConnectionStatusEventConfiguration extends Shape
 {
     /**
      * @param array{
-     *     LoRaWAN?: LoRaWANConnectionStatusEventNotificationConfigurations,
-     *     WirelessGatewayIdEventTopic?: 'Enabled'|'Disabled'
+     *     LoRaWAN?: LoRaWANConnectionStatusEventNotificationConfigurations|null,
+     *     WirelessGatewayIdEventTopic?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

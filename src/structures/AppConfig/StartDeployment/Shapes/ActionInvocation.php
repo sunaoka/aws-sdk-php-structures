@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AppConfig\StartDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExtensionIdentifier
- * @property string $ActionName
- * @property string $Uri
- * @property string $RoleArn
- * @property string $ErrorMessage
- * @property string $ErrorCode
- * @property string $InvocationId
+ * @property string|null $ExtensionIdentifier
+ * @property string|null $ActionName
+ * @property string|null $Uri
+ * @property string|null $RoleArn
+ * @property string|null $ErrorMessage
+ * @property string|null $ErrorCode
+ * @property string|null $InvocationId
  */
 class ActionInvocation extends Shape
 {
     /**
      * @param array{
-     *     ExtensionIdentifier?: string,
-     *     ActionName?: string,
-     *     Uri?: string,
-     *     RoleArn?: string,
-     *     ErrorMessage?: string,
-     *     ErrorCode?: string,
-     *     InvocationId?: string
+     *     ExtensionIdentifier?: string|null,
+     *     ActionName?: string|null,
+     *     Uri?: string|null,
+     *     RoleArn?: string|null,
+     *     ErrorMessage?: string|null,
+     *     ErrorCode?: string|null,
+     *     InvocationId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

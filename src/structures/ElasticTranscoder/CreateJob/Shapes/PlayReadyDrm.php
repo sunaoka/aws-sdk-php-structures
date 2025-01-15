@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Format
- * @property string $Key
- * @property string $KeyMd5
- * @property string $KeyId
- * @property string $InitializationVector
- * @property string $LicenseAcquisitionUrl
+ * @property string|null $Format
+ * @property string|null $Key
+ * @property string|null $KeyMd5
+ * @property string|null $KeyId
+ * @property string|null $InitializationVector
+ * @property string|null $LicenseAcquisitionUrl
  */
 class PlayReadyDrm extends Shape
 {
     /**
      * @param array{
-     *     Format?: string,
-     *     Key?: string,
-     *     KeyMd5?: string,
-     *     KeyId?: string,
-     *     InitializationVector?: string,
-     *     LicenseAcquisitionUrl?: string
+     *     Format?: string|null,
+     *     Key?: string|null,
+     *     KeyMd5?: string|null,
+     *     KeyId?: string|null,
+     *     InitializationVector?: string|null,
+     *     LicenseAcquisitionUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

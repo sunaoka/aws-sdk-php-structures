@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ReadPreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Codec
- * @property string $SampleRate
- * @property string $BitRate
- * @property string $Channels
- * @property string $AudioPackingMode
- * @property AudioCodecOptions $CodecOptions
+ * @property string|null $Codec
+ * @property string|null $SampleRate
+ * @property string|null $BitRate
+ * @property string|null $Channels
+ * @property string|null $AudioPackingMode
+ * @property AudioCodecOptions|null $CodecOptions
  */
 class AudioParameters extends Shape
 {
     /**
      * @param array{
-     *     Codec?: string,
-     *     SampleRate?: string,
-     *     BitRate?: string,
-     *     Channels?: string,
-     *     AudioPackingMode?: string,
-     *     CodecOptions?: AudioCodecOptions
+     *     Codec?: string|null,
+     *     SampleRate?: string|null,
+     *     BitRate?: string|null,
+     *     Channels?: string|null,
+     *     AudioPackingMode?: string|null,
+     *     CodecOptions?: AudioCodecOptions|null
      * } $args
      */
     public function __construct(array $args = [])

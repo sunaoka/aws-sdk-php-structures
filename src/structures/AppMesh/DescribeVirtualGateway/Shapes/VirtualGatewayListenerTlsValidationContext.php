@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SubjectAlternativeNames $subjectAlternativeNames
+ * @property SubjectAlternativeNames|null $subjectAlternativeNames
  * @property VirtualGatewayListenerTlsValidationContextTrust $trust
  */
 class VirtualGatewayListenerTlsValidationContext extends Shape
 {
     /**
      * @param array{
-     *     subjectAlternativeNames?: SubjectAlternativeNames,
+     *     subjectAlternativeNames?: SubjectAlternativeNames|null,
      *     trust: VirtualGatewayListenerTlsValidationContextTrust
      * } $args
      */

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $templateName
- * @property string $templateDescription
+ * @property string|null $templateDescription
  * @property Shapes\TemplateSource $templateSource
- * @property string $clientToken
- * @property array<string, string> $tags
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateTemplateRequest extends Request
 {
     /**
      * @param array{
      *     templateName: string,
-     *     templateDescription?: string,
+     *     templateDescription?: string|null,
      *     templateSource: Shapes\TemplateSource,
-     *     clientToken?: string,
-     *     tags?: array<string, string>
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

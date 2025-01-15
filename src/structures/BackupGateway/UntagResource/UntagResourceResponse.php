@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BackupGateway\UntagResource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceARN
+ * @property string|null $ResourceARN
  */
 class UntagResourceResponse extends Response
 {

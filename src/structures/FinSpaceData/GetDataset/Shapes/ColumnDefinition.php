@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\GetDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'STRING'|'CHAR'|'INTEGER'|'TINYINT'|'SMALLINT'|'BIGINT'|'FLOAT'|'DOUBLE'|'DATE'|'DATETIME'|'BOOLEAN'|'BINARY' $dataType
- * @property string $columnName
- * @property string $columnDescription
+ * @property 'STRING'|'CHAR'|'INTEGER'|'TINYINT'|'SMALLINT'|'BIGINT'|'FLOAT'|'DOUBLE'|'DATE'|'DATETIME'|'BOOLEAN'|'BINARY'|null $dataType
+ * @property string|null $columnName
+ * @property string|null $columnDescription
  */
 class ColumnDefinition extends Shape
 {
     /**
      * @param array{
-     *     dataType?: 'STRING'|'CHAR'|'INTEGER'|'TINYINT'|'SMALLINT'|'BIGINT'|'FLOAT'|'DOUBLE'|'DATE'|'DATETIME'|'BOOLEAN'|'BINARY',
-     *     columnName?: string,
-     *     columnDescription?: string
+     *     dataType?: 'STRING'|'CHAR'|'INTEGER'|'TINYINT'|'SMALLINT'|'BIGINT'|'FLOAT'|'DOUBLE'|'DATE'|'DATETIME'|'BOOLEAN'|'BINARY'|null,
+     *     columnName?: string|null,
+     *     columnDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

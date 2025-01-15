@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetId
- * @property bool $excludeProperties
+ * @property bool|null $excludeProperties
  */
 class DescribeAssetRequest extends Request
 {
     /**
      * @param array{
      *     assetId: string,
-     *     excludeProperties?: bool
+     *     excludeProperties?: bool|null
      * } $args
      */
     public function __construct(array $args)

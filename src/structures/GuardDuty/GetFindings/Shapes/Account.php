@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Uid
- * @property string $Name
+ * @property string|null $Name
  */
 class Account extends Shape
 {
     /**
      * @param array{
      *     Uid: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

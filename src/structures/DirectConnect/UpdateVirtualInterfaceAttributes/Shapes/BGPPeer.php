@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DirectConnect\UpdateVirtualInterfaceAttributes\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bgpPeerId
- * @property int $asn
- * @property string $authKey
- * @property 'ipv4'|'ipv6' $addressFamily
- * @property string $amazonAddress
- * @property string $customerAddress
- * @property 'verifying'|'pending'|'available'|'deleting'|'deleted' $bgpPeerState
- * @property 'up'|'down'|'unknown' $bgpStatus
- * @property string $awsDeviceV2
- * @property string $awsLogicalDeviceId
+ * @property string|null $bgpPeerId
+ * @property int|null $asn
+ * @property string|null $authKey
+ * @property 'ipv4'|'ipv6'|null $addressFamily
+ * @property string|null $amazonAddress
+ * @property string|null $customerAddress
+ * @property 'verifying'|'pending'|'available'|'deleting'|'deleted'|null $bgpPeerState
+ * @property 'up'|'down'|'unknown'|null $bgpStatus
+ * @property string|null $awsDeviceV2
+ * @property string|null $awsLogicalDeviceId
  */
 class BGPPeer extends Shape
 {
     /**
      * @param array{
-     *     bgpPeerId?: string,
-     *     asn?: int,
-     *     authKey?: string,
-     *     addressFamily?: 'ipv4'|'ipv6',
-     *     amazonAddress?: string,
-     *     customerAddress?: string,
-     *     bgpPeerState?: 'verifying'|'pending'|'available'|'deleting'|'deleted',
-     *     bgpStatus?: 'up'|'down'|'unknown',
-     *     awsDeviceV2?: string,
-     *     awsLogicalDeviceId?: string
+     *     bgpPeerId?: string|null,
+     *     asn?: int|null,
+     *     authKey?: string|null,
+     *     addressFamily?: 'ipv4'|'ipv6'|null,
+     *     amazonAddress?: string|null,
+     *     customerAddress?: string|null,
+     *     bgpPeerState?: 'verifying'|'pending'|'available'|'deleting'|'deleted'|null,
+     *     bgpStatus?: 'up'|'down'|'unknown'|null,
+     *     awsDeviceV2?: string|null,
+     *     awsLogicalDeviceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

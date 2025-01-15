@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\ListCertificateProviders\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $certificateProviderName
- * @property string $certificateProviderArn
+ * @property string|null $certificateProviderName
+ * @property string|null $certificateProviderArn
  */
 class CertificateProviderSummary extends Shape
 {
     /**
      * @param array{
-     *     certificateProviderName?: string,
-     *     certificateProviderArn?: string
+     *     certificateProviderName?: string|null,
+     *     certificateProviderArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

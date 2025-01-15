@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetCachePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Comment
+ * @property string|null $Comment
  * @property string $Name
- * @property int $DefaultTTL
- * @property int $MaxTTL
+ * @property int|null $DefaultTTL
+ * @property int|null $MaxTTL
  * @property int $MinTTL
- * @property ParametersInCacheKeyAndForwardedToOrigin $ParametersInCacheKeyAndForwardedToOrigin
+ * @property ParametersInCacheKeyAndForwardedToOrigin|null $ParametersInCacheKeyAndForwardedToOrigin
  */
 class CachePolicyConfig extends Shape
 {
     /**
      * @param array{
-     *     Comment?: string,
+     *     Comment?: string|null,
      *     Name: string,
-     *     DefaultTTL?: int,
-     *     MaxTTL?: int,
+     *     DefaultTTL?: int|null,
+     *     MaxTTL?: int|null,
      *     MinTTL: int,
-     *     ParametersInCacheKeyAndForwardedToOrigin?: ParametersInCacheKeyAndForwardedToOrigin
+     *     ParametersInCacheKeyAndForwardedToOrigin?: ParametersInCacheKeyAndForwardedToOrigin|null
      * } $args
      */
     public function __construct(array $args)

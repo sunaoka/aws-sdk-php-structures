@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OrganizationId
  * @property string $EntityId
- * @property Shapes\ListGroupsForEntityFilters $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property Shapes\ListGroupsForEntityFilters|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListGroupsForEntityRequest extends Request
 {
@@ -17,9 +17,9 @@ class ListGroupsForEntityRequest extends Request
      * @param array{
      *     OrganizationId: string,
      *     EntityId: string,
-     *     Filters?: Shapes\ListGroupsForEntityFilters,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     Filters?: Shapes\ListGroupsForEntityFilters|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

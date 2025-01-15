@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MQ\ListConfigurations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Configuration> $Configurations
- * @property int $MaxResults
- * @property string $NextToken
+ * @property list<Shapes\Configuration>|null $Configurations
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListConfigurationsResponse extends Response
 {

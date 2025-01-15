@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\CreateServicePrincipalName;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $ConnectorArn
  * @property string $DirectoryRegistrationArn
  */
@@ -13,7 +13,7 @@ class CreateServicePrincipalNameRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     ConnectorArn: string,
      *     DirectoryRegistrationArn: string
      * } $args

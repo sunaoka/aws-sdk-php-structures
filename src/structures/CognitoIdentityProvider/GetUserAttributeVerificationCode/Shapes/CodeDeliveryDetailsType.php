@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetUserAttributeVerific
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Destination
- * @property 'SMS'|'EMAIL' $DeliveryMedium
- * @property string $AttributeName
+ * @property string|null $Destination
+ * @property 'SMS'|'EMAIL'|null $DeliveryMedium
+ * @property string|null $AttributeName
  */
 class CodeDeliveryDetailsType extends Shape
 {
     /**
      * @param array{
-     *     Destination?: string,
-     *     DeliveryMedium?: 'SMS'|'EMAIL',
-     *     AttributeName?: string
+     *     Destination?: string|null,
+     *     DeliveryMedium?: 'SMS'|'EMAIL'|null,
+     *     AttributeName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

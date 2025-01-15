@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FilterControlId
  * @property string $Title
  * @property string $SourceFilterId
- * @property RelativeDateTimeControlDisplayOptions $DisplayOptions
- * @property 'AUTO'|'MANUAL' $CommitMode
+ * @property RelativeDateTimeControlDisplayOptions|null $DisplayOptions
+ * @property 'AUTO'|'MANUAL'|null $CommitMode
  */
 class FilterRelativeDateTimeControl extends Shape
 {
@@ -18,8 +18,8 @@ class FilterRelativeDateTimeControl extends Shape
      *     FilterControlId: string,
      *     Title: string,
      *     SourceFilterId: string,
-     *     DisplayOptions?: RelativeDateTimeControlDisplayOptions,
-     *     CommitMode?: 'AUTO'|'MANUAL'
+     *     DisplayOptions?: RelativeDateTimeControlDisplayOptions|null,
+     *     CommitMode?: 'AUTO'|'MANUAL'|null
      * } $args
      */
     public function __construct(array $args)

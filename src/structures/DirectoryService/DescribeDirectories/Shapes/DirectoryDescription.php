@@ -5,63 +5,63 @@ namespace Sunaoka\Aws\Structures\DirectoryService\DescribeDirectories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DirectoryId
- * @property string $Name
- * @property string $ShortName
- * @property 'Small'|'Large' $Size
- * @property 'Enterprise'|'Standard' $Edition
- * @property string $Alias
- * @property string $AccessUrl
- * @property string $Description
- * @property list<string> $DnsIpAddrs
- * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating' $Stage
- * @property 'Shared'|'PendingAcceptance'|'Rejected'|'Rejecting'|'RejectFailed'|'Sharing'|'ShareFailed'|'Deleted'|'Deleting' $ShareStatus
- * @property 'ORGANIZATIONS'|'HANDSHAKE' $ShareMethod
- * @property string $ShareNotes
- * @property \Aws\Api\DateTimeResult $LaunchTime
- * @property \Aws\Api\DateTimeResult $StageLastUpdatedDateTime
- * @property 'SimpleAD'|'ADConnector'|'MicrosoftAD'|'SharedMicrosoftAD' $Type
- * @property DirectoryVpcSettingsDescription $VpcSettings
- * @property DirectoryConnectSettingsDescription $ConnectSettings
- * @property RadiusSettings $RadiusSettings
- * @property 'Creating'|'Completed'|'Failed' $RadiusStatus
- * @property string $StageReason
- * @property bool $SsoEnabled
- * @property int<2, max> $DesiredNumberOfDomainControllers
- * @property OwnerDirectoryDescription $OwnerDirectoryDescription
- * @property RegionsInfo $RegionsInfo
- * @property 'SERVER_2012'|'SERVER_2019' $OsVersion
+ * @property string|null $DirectoryId
+ * @property string|null $Name
+ * @property string|null $ShortName
+ * @property 'Small'|'Large'|null $Size
+ * @property 'Enterprise'|'Standard'|null $Edition
+ * @property string|null $Alias
+ * @property string|null $AccessUrl
+ * @property string|null $Description
+ * @property list<string>|null $DnsIpAddrs
+ * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating'|null $Stage
+ * @property 'Shared'|'PendingAcceptance'|'Rejected'|'Rejecting'|'RejectFailed'|'Sharing'|'ShareFailed'|'Deleted'|'Deleting'|null $ShareStatus
+ * @property 'ORGANIZATIONS'|'HANDSHAKE'|null $ShareMethod
+ * @property string|null $ShareNotes
+ * @property \Aws\Api\DateTimeResult|null $LaunchTime
+ * @property \Aws\Api\DateTimeResult|null $StageLastUpdatedDateTime
+ * @property 'SimpleAD'|'ADConnector'|'MicrosoftAD'|'SharedMicrosoftAD'|null $Type
+ * @property DirectoryVpcSettingsDescription|null $VpcSettings
+ * @property DirectoryConnectSettingsDescription|null $ConnectSettings
+ * @property RadiusSettings|null $RadiusSettings
+ * @property 'Creating'|'Completed'|'Failed'|null $RadiusStatus
+ * @property string|null $StageReason
+ * @property bool|null $SsoEnabled
+ * @property int<2, max>|null $DesiredNumberOfDomainControllers
+ * @property OwnerDirectoryDescription|null $OwnerDirectoryDescription
+ * @property RegionsInfo|null $RegionsInfo
+ * @property 'SERVER_2012'|'SERVER_2019'|null $OsVersion
  */
 class DirectoryDescription extends Shape
 {
     /**
      * @param array{
-     *     DirectoryId?: string,
-     *     Name?: string,
-     *     ShortName?: string,
-     *     Size?: 'Small'|'Large',
-     *     Edition?: 'Enterprise'|'Standard',
-     *     Alias?: string,
-     *     AccessUrl?: string,
-     *     Description?: string,
-     *     DnsIpAddrs?: list<string>,
-     *     Stage?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating',
-     *     ShareStatus?: 'Shared'|'PendingAcceptance'|'Rejected'|'Rejecting'|'RejectFailed'|'Sharing'|'ShareFailed'|'Deleted'|'Deleting',
-     *     ShareMethod?: 'ORGANIZATIONS'|'HANDSHAKE',
-     *     ShareNotes?: string,
-     *     LaunchTime?: \Aws\Api\DateTimeResult,
-     *     StageLastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     Type?: 'SimpleAD'|'ADConnector'|'MicrosoftAD'|'SharedMicrosoftAD',
-     *     VpcSettings?: DirectoryVpcSettingsDescription,
-     *     ConnectSettings?: DirectoryConnectSettingsDescription,
-     *     RadiusSettings?: RadiusSettings,
-     *     RadiusStatus?: 'Creating'|'Completed'|'Failed',
-     *     StageReason?: string,
-     *     SsoEnabled?: bool,
-     *     DesiredNumberOfDomainControllers?: int<2, max>,
-     *     OwnerDirectoryDescription?: OwnerDirectoryDescription,
-     *     RegionsInfo?: RegionsInfo,
-     *     OsVersion?: 'SERVER_2012'|'SERVER_2019'
+     *     DirectoryId?: string|null,
+     *     Name?: string|null,
+     *     ShortName?: string|null,
+     *     Size?: 'Small'|'Large'|null,
+     *     Edition?: 'Enterprise'|'Standard'|null,
+     *     Alias?: string|null,
+     *     AccessUrl?: string|null,
+     *     Description?: string|null,
+     *     DnsIpAddrs?: list<string>|null,
+     *     Stage?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating'|null,
+     *     ShareStatus?: 'Shared'|'PendingAcceptance'|'Rejected'|'Rejecting'|'RejectFailed'|'Sharing'|'ShareFailed'|'Deleted'|'Deleting'|null,
+     *     ShareMethod?: 'ORGANIZATIONS'|'HANDSHAKE'|null,
+     *     ShareNotes?: string|null,
+     *     LaunchTime?: \Aws\Api\DateTimeResult|null,
+     *     StageLastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     Type?: 'SimpleAD'|'ADConnector'|'MicrosoftAD'|'SharedMicrosoftAD'|null,
+     *     VpcSettings?: DirectoryVpcSettingsDescription|null,
+     *     ConnectSettings?: DirectoryConnectSettingsDescription|null,
+     *     RadiusSettings?: RadiusSettings|null,
+     *     RadiusStatus?: 'Creating'|'Completed'|'Failed'|null,
+     *     StageReason?: string|null,
+     *     SsoEnabled?: bool|null,
+     *     DesiredNumberOfDomainControllers?: int<2, max>|null,
+     *     OwnerDirectoryDescription?: OwnerDirectoryDescription|null,
+     *     RegionsInfo?: RegionsInfo|null,
+     *     OsVersion?: 'SERVER_2012'|'SERVER_2019'|null
      * } $args
      */
     public function __construct(array $args = [])

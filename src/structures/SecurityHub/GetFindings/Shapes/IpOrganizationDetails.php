@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Asn
- * @property string $AsnOrg
- * @property string $Isp
- * @property string $Org
+ * @property int|null $Asn
+ * @property string|null $AsnOrg
+ * @property string|null $Isp
+ * @property string|null $Org
  */
 class IpOrganizationDetails extends Shape
 {
     /**
      * @param array{
-     *     Asn?: int,
-     *     AsnOrg?: string,
-     *     Isp?: string,
-     *     Org?: string
+     *     Asn?: int|null,
+     *     AsnOrg?: string|null,
+     *     Isp?: string|null,
+     *     Org?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $IdnLangCode
+ * @property string|null $IdnLangCode
  */
 class CheckDomainAvailabilityRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     IdnLangCode?: string
+     *     IdnLangCode?: string|null
      * } $args
      */
     public function __construct(array $args)

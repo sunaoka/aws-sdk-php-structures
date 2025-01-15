@@ -6,50 +6,50 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $LaunchConfigurationName
- * @property string $LaunchConfigurationARN
+ * @property string|null $LaunchConfigurationARN
  * @property string $ImageId
- * @property string $KeyName
- * @property list<string> $SecurityGroups
- * @property string $ClassicLinkVPCId
- * @property list<string> $ClassicLinkVPCSecurityGroups
- * @property string $UserData
+ * @property string|null $KeyName
+ * @property list<string>|null $SecurityGroups
+ * @property string|null $ClassicLinkVPCId
+ * @property list<string>|null $ClassicLinkVPCSecurityGroups
+ * @property string|null $UserData
  * @property string $InstanceType
- * @property string $KernelId
- * @property string $RamdiskId
- * @property list<BlockDeviceMapping> $BlockDeviceMappings
- * @property InstanceMonitoring $InstanceMonitoring
- * @property string $SpotPrice
- * @property string $IamInstanceProfile
+ * @property string|null $KernelId
+ * @property string|null $RamdiskId
+ * @property list<BlockDeviceMapping>|null $BlockDeviceMappings
+ * @property InstanceMonitoring|null $InstanceMonitoring
+ * @property string|null $SpotPrice
+ * @property string|null $IamInstanceProfile
  * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property bool $EbsOptimized
- * @property bool $AssociatePublicIpAddress
- * @property string $PlacementTenancy
- * @property InstanceMetadataOptions $MetadataOptions
+ * @property bool|null $EbsOptimized
+ * @property bool|null $AssociatePublicIpAddress
+ * @property string|null $PlacementTenancy
+ * @property InstanceMetadataOptions|null $MetadataOptions
  */
 class LaunchConfiguration extends Shape
 {
     /**
      * @param array{
      *     LaunchConfigurationName: string,
-     *     LaunchConfigurationARN?: string,
+     *     LaunchConfigurationARN?: string|null,
      *     ImageId: string,
-     *     KeyName?: string,
-     *     SecurityGroups?: list<string>,
-     *     ClassicLinkVPCId?: string,
-     *     ClassicLinkVPCSecurityGroups?: list<string>,
-     *     UserData?: string,
+     *     KeyName?: string|null,
+     *     SecurityGroups?: list<string>|null,
+     *     ClassicLinkVPCId?: string|null,
+     *     ClassicLinkVPCSecurityGroups?: list<string>|null,
+     *     UserData?: string|null,
      *     InstanceType: string,
-     *     KernelId?: string,
-     *     RamdiskId?: string,
-     *     BlockDeviceMappings?: list<BlockDeviceMapping>,
-     *     InstanceMonitoring?: InstanceMonitoring,
-     *     SpotPrice?: string,
-     *     IamInstanceProfile?: string,
+     *     KernelId?: string|null,
+     *     RamdiskId?: string|null,
+     *     BlockDeviceMappings?: list<BlockDeviceMapping>|null,
+     *     InstanceMonitoring?: InstanceMonitoring|null,
+     *     SpotPrice?: string|null,
+     *     IamInstanceProfile?: string|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
-     *     EbsOptimized?: bool,
-     *     AssociatePublicIpAddress?: bool,
-     *     PlacementTenancy?: string,
-     *     MetadataOptions?: InstanceMetadataOptions
+     *     EbsOptimized?: bool|null,
+     *     AssociatePublicIpAddress?: bool|null,
+     *     PlacementTenancy?: string|null,
+     *     MetadataOptions?: InstanceMetadataOptions|null
      * } $args
      */
     public function __construct(array $args)

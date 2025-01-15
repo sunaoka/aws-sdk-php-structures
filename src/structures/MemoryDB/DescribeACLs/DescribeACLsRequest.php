@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeACLs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ACLName
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $ACLName
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeACLsRequest extends Request
 {
     /**
      * @param array{
-     *     ACLName?: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     ACLName?: string|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

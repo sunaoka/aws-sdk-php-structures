@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\SendMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TextMessage $text
+ * @property TextMessage|null $text
  */
 class MessageData extends Shape
 {
     /**
-     * @param array{text?: TextMessage} $args
+     * @param array{text?: TextMessage|null} $args
      */
     public function __construct(array $args = [])
     {

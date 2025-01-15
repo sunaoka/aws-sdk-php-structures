@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iam\GetSSHPublicKey;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SSHPublicKey $SSHPublicKey
+ * @property Shapes\SSHPublicKey|null $SSHPublicKey
  */
 class GetSSHPublicKeyResponse extends Response
 {

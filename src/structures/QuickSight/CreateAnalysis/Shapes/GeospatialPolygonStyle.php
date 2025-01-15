@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialPolygonSymbolStyle $PolygonSymbolStyle
+ * @property GeospatialPolygonSymbolStyle|null $PolygonSymbolStyle
  */
 class GeospatialPolygonStyle extends Shape
 {
     /**
-     * @param array{PolygonSymbolStyle?: GeospatialPolygonSymbolStyle} $args
+     * @param array{PolygonSymbolStyle?: GeospatialPolygonSymbolStyle|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $datasetGroupArn
  * @property string $recipeArn
- * @property Shapes\RecommenderConfig $recommenderConfig
- * @property list<Shapes\Tag> $tags
+ * @property Shapes\RecommenderConfig|null $recommenderConfig
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateRecommenderRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateRecommenderRequest extends Request
      *     name: string,
      *     datasetGroupArn: string,
      *     recipeArn: string,
-     *     recommenderConfig?: Shapes\RecommenderConfig,
-     *     tags?: list<Shapes\Tag>
+     *     recommenderConfig?: Shapes\RecommenderConfig|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

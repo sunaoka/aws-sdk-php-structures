@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ColumnIdentifier $Column
- * @property int<1, 1000> $Limit
- * @property list<ColumnSort> $SortByMetrics
+ * @property int<1, 1000>|null $Limit
+ * @property list<ColumnSort>|null $SortByMetrics
  */
 class BodySectionDynamicCategoryDimensionConfiguration extends Shape
 {
     /**
      * @param array{
      *     Column: ColumnIdentifier,
-     *     Limit?: int<1, 1000>,
-     *     SortByMetrics?: list<ColumnSort>
+     *     Limit?: int<1, 1000>|null,
+     *     SortByMetrics?: list<ColumnSort>|null
      * } $args
      */
     public function __construct(array $args)

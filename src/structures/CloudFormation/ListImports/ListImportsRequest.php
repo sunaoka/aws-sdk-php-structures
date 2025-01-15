@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ExportName
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListImportsRequest extends Request
 {
     /**
      * @param array{
      *     ExportName: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

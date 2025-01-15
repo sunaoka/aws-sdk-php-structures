@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chime\GetPhoneNumber;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PhoneNumber $PhoneNumber
+ * @property Shapes\PhoneNumber|null $PhoneNumber
  */
 class GetPhoneNumberResponse extends Response
 {

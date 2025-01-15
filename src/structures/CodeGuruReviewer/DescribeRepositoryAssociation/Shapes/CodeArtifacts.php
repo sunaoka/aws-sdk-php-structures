@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SourceCodeArtifactsObjectKey
- * @property string $BuildArtifactsObjectKey
+ * @property string|null $BuildArtifactsObjectKey
  */
 class CodeArtifacts extends Shape
 {
     /**
      * @param array{
      *     SourceCodeArtifactsObjectKey: string,
-     *     BuildArtifactsObjectKey?: string
+     *     BuildArtifactsObjectKey?: string|null
      * } $args
      */
     public function __construct(array $args)

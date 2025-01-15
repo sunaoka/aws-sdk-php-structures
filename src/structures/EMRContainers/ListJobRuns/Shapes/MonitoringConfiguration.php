@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\EMRContainers\ListJobRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $persistentAppUI
- * @property CloudWatchMonitoringConfiguration $cloudWatchMonitoringConfiguration
- * @property S3MonitoringConfiguration $s3MonitoringConfiguration
- * @property ContainerLogRotationConfiguration $containerLogRotationConfiguration
+ * @property 'ENABLED'|'DISABLED'|null $persistentAppUI
+ * @property CloudWatchMonitoringConfiguration|null $cloudWatchMonitoringConfiguration
+ * @property S3MonitoringConfiguration|null $s3MonitoringConfiguration
+ * @property ContainerLogRotationConfiguration|null $containerLogRotationConfiguration
  */
 class MonitoringConfiguration extends Shape
 {
     /**
      * @param array{
-     *     persistentAppUI?: 'ENABLED'|'DISABLED',
-     *     cloudWatchMonitoringConfiguration?: CloudWatchMonitoringConfiguration,
-     *     s3MonitoringConfiguration?: S3MonitoringConfiguration,
-     *     containerLogRotationConfiguration?: ContainerLogRotationConfiguration
+     *     persistentAppUI?: 'ENABLED'|'DISABLED'|null,
+     *     cloudWatchMonitoringConfiguration?: CloudWatchMonitoringConfiguration|null,
+     *     s3MonitoringConfiguration?: S3MonitoringConfiguration|null,
+     *     containerLogRotationConfiguration?: ContainerLogRotationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

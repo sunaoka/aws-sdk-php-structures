@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\UpdateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dataSourceArn
- * @property string $dataSourceDescription
+ * @property string|null $dataSourceArn
+ * @property string|null $dataSourceDescription
  */
 class DataSource extends Shape
 {
     /**
      * @param array{
-     *     dataSourceArn?: string,
-     *     dataSourceDescription?: string
+     *     dataSourceArn?: string|null,
+     *     dataSourceDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

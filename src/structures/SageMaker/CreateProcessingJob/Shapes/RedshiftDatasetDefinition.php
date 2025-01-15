@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $QueryString
  * @property string $ClusterRoleArn
  * @property string $OutputS3Uri
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property 'PARQUET'|'CSV' $OutputFormat
- * @property 'None'|'GZIP'|'BZIP2'|'ZSTD'|'SNAPPY' $OutputCompression
+ * @property 'None'|'GZIP'|'BZIP2'|'ZSTD'|'SNAPPY'|null $OutputCompression
  */
 class RedshiftDatasetDefinition extends Shape
 {
@@ -25,9 +25,9 @@ class RedshiftDatasetDefinition extends Shape
      *     QueryString: string,
      *     ClusterRoleArn: string,
      *     OutputS3Uri: string,
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     OutputFormat: 'PARQUET'|'CSV',
-     *     OutputCompression?: 'None'|'GZIP'|'BZIP2'|'ZSTD'|'SNAPPY'
+     *     OutputCompression?: 'None'|'GZIP'|'BZIP2'|'ZSTD'|'SNAPPY'|null
      * } $args
      */
     public function __construct(array $args)

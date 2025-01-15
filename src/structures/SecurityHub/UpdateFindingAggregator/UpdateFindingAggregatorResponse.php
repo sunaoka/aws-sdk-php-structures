@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\SecurityHub\UpdateFindingAggregator;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FindingAggregatorArn
- * @property string $FindingAggregationRegion
- * @property string $RegionLinkingMode
- * @property list<string> $Regions
+ * @property string|null $FindingAggregatorArn
+ * @property string|null $FindingAggregationRegion
+ * @property string|null $RegionLinkingMode
+ * @property list<string>|null $Regions
  */
 class UpdateFindingAggregatorResponse extends Response
 {

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $SessionId
- * @property string $NextToken
- * @property list<Shapes\ExecutorsSummary> $ExecutorsSummary
+ * @property string|null $NextToken
+ * @property list<Shapes\ExecutorsSummary>|null $ExecutorsSummary
  */
 class ListExecutorsResponse extends Response
 {

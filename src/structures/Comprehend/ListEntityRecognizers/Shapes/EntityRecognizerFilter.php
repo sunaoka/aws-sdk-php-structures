@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Comprehend\ListEntityRecognizers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SUBMITTED'|'TRAINING'|'DELETING'|'STOP_REQUESTED'|'STOPPED'|'IN_ERROR'|'TRAINED'|'TRAINED_WITH_WARNING' $Status
- * @property string $RecognizerName
- * @property \Aws\Api\DateTimeResult $SubmitTimeBefore
- * @property \Aws\Api\DateTimeResult $SubmitTimeAfter
+ * @property 'SUBMITTED'|'TRAINING'|'DELETING'|'STOP_REQUESTED'|'STOPPED'|'IN_ERROR'|'TRAINED'|'TRAINED_WITH_WARNING'|null $Status
+ * @property string|null $RecognizerName
+ * @property \Aws\Api\DateTimeResult|null $SubmitTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $SubmitTimeAfter
  */
 class EntityRecognizerFilter extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'SUBMITTED'|'TRAINING'|'DELETING'|'STOP_REQUESTED'|'STOPPED'|'IN_ERROR'|'TRAINED'|'TRAINED_WITH_WARNING',
-     *     RecognizerName?: string,
-     *     SubmitTimeBefore?: \Aws\Api\DateTimeResult,
-     *     SubmitTimeAfter?: \Aws\Api\DateTimeResult
+     *     Status?: 'SUBMITTED'|'TRAINING'|'DELETING'|'STOP_REQUESTED'|'STOPPED'|'IN_ERROR'|'TRAINED'|'TRAINED_WITH_WARNING'|null,
+     *     RecognizerName?: string|null,
+     *     SubmitTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     SubmitTimeAfter?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

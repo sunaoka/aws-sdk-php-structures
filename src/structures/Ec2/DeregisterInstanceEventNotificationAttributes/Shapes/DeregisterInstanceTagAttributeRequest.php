@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DeregisterInstanceEventNotificationAttribut
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IncludeAllTagsOfInstance
- * @property list<string> $InstanceTagKeys
+ * @property bool|null $IncludeAllTagsOfInstance
+ * @property list<string>|null $InstanceTagKeys
  */
 class DeregisterInstanceTagAttributeRequest extends Shape
 {
     /**
      * @param array{
-     *     IncludeAllTagsOfInstance?: bool,
-     *     InstanceTagKeys?: list<string>
+     *     IncludeAllTagsOfInstance?: bool|null,
+     *     InstanceTagKeys?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

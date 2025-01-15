@@ -7,17 +7,17 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $stepName
  * @property string $testRunId
- * @property string $testCaseId
- * @property int $testCaseVersion
- * @property string $testSuiteId
- * @property int $testSuiteVersion
- * @property bool $beforeStep
- * @property bool $afterStep
+ * @property string|null $testCaseId
+ * @property int|null $testCaseVersion
+ * @property string|null $testSuiteId
+ * @property int|null $testSuiteVersion
+ * @property bool|null $beforeStep
+ * @property bool|null $afterStep
  * @property 'Success'|'Failed'|'Running' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  * @property \Aws\Api\DateTimeResult $runStartTime
- * @property \Aws\Api\DateTimeResult $runEndTime
- * @property Shapes\StepRunSummary $stepRunSummary
+ * @property \Aws\Api\DateTimeResult|null $runEndTime
+ * @property Shapes\StepRunSummary|null $stepRunSummary
  */
 class GetTestRunStepResponse extends Response
 {

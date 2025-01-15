@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainId
- * @property Shapes\RetentionPolicy $RetentionPolicy
+ * @property Shapes\RetentionPolicy|null $RetentionPolicy
  */
 class DeleteDomainRequest extends Request
 {
     /**
      * @param array{
      *     DomainId: string,
-     *     RetentionPolicy?: Shapes\RetentionPolicy
+     *     RetentionPolicy?: Shapes\RetentionPolicy|null
      * } $args
      */
     public function __construct(array $args)

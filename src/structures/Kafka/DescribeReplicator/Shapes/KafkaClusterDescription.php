@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeReplicator\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AmazonMskCluster $AmazonMskCluster
- * @property string $KafkaClusterAlias
- * @property KafkaClusterClientVpcConfig $VpcConfig
+ * @property AmazonMskCluster|null $AmazonMskCluster
+ * @property string|null $KafkaClusterAlias
+ * @property KafkaClusterClientVpcConfig|null $VpcConfig
  */
 class KafkaClusterDescription extends Shape
 {
     /**
      * @param array{
-     *     AmazonMskCluster?: AmazonMskCluster,
-     *     KafkaClusterAlias?: string,
-     *     VpcConfig?: KafkaClusterClientVpcConfig
+     *     AmazonMskCluster?: AmazonMskCluster|null,
+     *     KafkaClusterAlias?: string|null,
+     *     VpcConfig?: KafkaClusterClientVpcConfig|null
      * } $args
      */
     public function __construct(array $args = [])

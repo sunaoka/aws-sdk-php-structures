@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EbsReadOpsPerSecond
- * @property string $EbsWriteOpsPerSecond
- * @property string $EbsReadBytesPerSecond
- * @property string $EbsWriteBytesPerSecond
+ * @property string|null $EbsReadOpsPerSecond
+ * @property string|null $EbsWriteOpsPerSecond
+ * @property string|null $EbsReadBytesPerSecond
+ * @property string|null $EbsWriteBytesPerSecond
  */
 class EBSResourceUtilization extends Shape
 {
     /**
      * @param array{
-     *     EbsReadOpsPerSecond?: string,
-     *     EbsWriteOpsPerSecond?: string,
-     *     EbsReadBytesPerSecond?: string,
-     *     EbsWriteBytesPerSecond?: string
+     *     EbsReadOpsPerSecond?: string|null,
+     *     EbsWriteOpsPerSecond?: string|null,
+     *     EbsReadBytesPerSecond?: string|null,
+     *     EbsWriteBytesPerSecond?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Sms\PutAppReplicationConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $seedTime
- * @property int $frequency
- * @property bool $runOnce
- * @property 'AWS'|'BYOL' $licenseType
- * @property int $numberOfRecentAmisToKeep
- * @property bool $encrypted
- * @property string $kmsKeyId
+ * @property \Aws\Api\DateTimeResult|null $seedTime
+ * @property int|null $frequency
+ * @property bool|null $runOnce
+ * @property 'AWS'|'BYOL'|null $licenseType
+ * @property int|null $numberOfRecentAmisToKeep
+ * @property bool|null $encrypted
+ * @property string|null $kmsKeyId
  */
 class ServerReplicationParameters extends Shape
 {
     /**
      * @param array{
-     *     seedTime?: \Aws\Api\DateTimeResult,
-     *     frequency?: int,
-     *     runOnce?: bool,
-     *     licenseType?: 'AWS'|'BYOL',
-     *     numberOfRecentAmisToKeep?: int,
-     *     encrypted?: bool,
-     *     kmsKeyId?: string
+     *     seedTime?: \Aws\Api\DateTimeResult|null,
+     *     frequency?: int|null,
+     *     runOnce?: bool|null,
+     *     licenseType?: 'AWS'|'BYOL'|null,
+     *     numberOfRecentAmisToKeep?: int|null,
+     *     encrypted?: bool|null,
+     *     kmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

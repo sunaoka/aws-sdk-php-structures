@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\GetResolverDnssecConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $OwnerId
- * @property string $ResourceId
- * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'UPDATING_TO_USE_LOCAL_RESOURCE_SETTING'|'USE_LOCAL_RESOURCE_SETTING' $ValidationStatus
+ * @property string|null $Id
+ * @property string|null $OwnerId
+ * @property string|null $ResourceId
+ * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'UPDATING_TO_USE_LOCAL_RESOURCE_SETTING'|'USE_LOCAL_RESOURCE_SETTING'|null $ValidationStatus
  */
 class ResolverDnssecConfig extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     OwnerId?: string,
-     *     ResourceId?: string,
-     *     ValidationStatus?: 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'UPDATING_TO_USE_LOCAL_RESOURCE_SETTING'|'USE_LOCAL_RESOURCE_SETTING'
+     *     Id?: string|null,
+     *     OwnerId?: string|null,
+     *     ResourceId?: string|null,
+     *     ValidationStatus?: 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'UPDATING_TO_USE_LOCAL_RESOURCE_SETTING'|'USE_LOCAL_RESOURCE_SETTING'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\UpdateBackendAuth\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UpdateBackendAuthForgotPasswordConfig $ForgotPassword
- * @property UpdateBackendAuthMFAConfig $Mfa
- * @property UpdateBackendAuthOAuthConfig $OAuth
- * @property UpdateBackendAuthPasswordPolicyConfig $PasswordPolicy
- * @property UpdateBackendAuthVerificationMessageConfig $VerificationMessage
+ * @property UpdateBackendAuthForgotPasswordConfig|null $ForgotPassword
+ * @property UpdateBackendAuthMFAConfig|null $Mfa
+ * @property UpdateBackendAuthOAuthConfig|null $OAuth
+ * @property UpdateBackendAuthPasswordPolicyConfig|null $PasswordPolicy
+ * @property UpdateBackendAuthVerificationMessageConfig|null $VerificationMessage
  */
 class UpdateBackendAuthUserPoolConfig extends Shape
 {
     /**
      * @param array{
-     *     ForgotPassword?: UpdateBackendAuthForgotPasswordConfig,
-     *     Mfa?: UpdateBackendAuthMFAConfig,
-     *     OAuth?: UpdateBackendAuthOAuthConfig,
-     *     PasswordPolicy?: UpdateBackendAuthPasswordPolicyConfig,
-     *     VerificationMessage?: UpdateBackendAuthVerificationMessageConfig
+     *     ForgotPassword?: UpdateBackendAuthForgotPasswordConfig|null,
+     *     Mfa?: UpdateBackendAuthMFAConfig|null,
+     *     OAuth?: UpdateBackendAuthOAuthConfig|null,
+     *     PasswordPolicy?: UpdateBackendAuthPasswordPolicyConfig|null,
+     *     VerificationMessage?: UpdateBackendAuthVerificationMessageConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\FMS\ListThirdPartyFirewallFirewallPolicies;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ThirdPartyFirewallFirewallPolicy> $ThirdPartyFirewallFirewallPolicies
- * @property string $NextToken
+ * @property list<Shapes\ThirdPartyFirewallFirewallPolicy>|null $ThirdPartyFirewallFirewallPolicies
+ * @property string|null $NextToken
  */
 class ListThirdPartyFirewallFirewallPoliciesResponse extends Response
 {

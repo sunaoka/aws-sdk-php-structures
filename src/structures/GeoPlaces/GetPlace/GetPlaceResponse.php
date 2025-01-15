@@ -9,21 +9,21 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress' $PlaceType
  * @property string $Title
  * @property string $PricingBucket
- * @property Shapes\Address $Address
- * @property bool $AddressNumberCorrected
- * @property list<Shapes\PostalCodeDetails> $PostalCodeDetails
- * @property list<double> $Position
- * @property list<double> $MapView
- * @property list<Shapes\Category> $Categories
- * @property list<Shapes\FoodType> $FoodTypes
- * @property list<Shapes\BusinessChain> $BusinessChains
- * @property Shapes\Contacts $Contacts
- * @property list<Shapes\OpeningHours> $OpeningHours
- * @property list<Shapes\AccessPoint> $AccessPoints
- * @property list<Shapes\AccessRestriction> $AccessRestrictions
- * @property Shapes\TimeZone $TimeZone
- * @property string $PoliticalView
- * @property Shapes\PhonemeDetails $Phonemes
+ * @property Shapes\Address|null $Address
+ * @property bool|null $AddressNumberCorrected
+ * @property list<Shapes\PostalCodeDetails>|null $PostalCodeDetails
+ * @property list<double>|null $Position
+ * @property list<double>|null $MapView
+ * @property list<Shapes\Category>|null $Categories
+ * @property list<Shapes\FoodType>|null $FoodTypes
+ * @property list<Shapes\BusinessChain>|null $BusinessChains
+ * @property Shapes\Contacts|null $Contacts
+ * @property list<Shapes\OpeningHours>|null $OpeningHours
+ * @property list<Shapes\AccessPoint>|null $AccessPoints
+ * @property list<Shapes\AccessRestriction>|null $AccessRestrictions
+ * @property Shapes\TimeZone|null $TimeZone
+ * @property string|null $PoliticalView
+ * @property Shapes\PhonemeDetails|null $Phonemes
  */
 class GetPlaceResponse extends Response
 {

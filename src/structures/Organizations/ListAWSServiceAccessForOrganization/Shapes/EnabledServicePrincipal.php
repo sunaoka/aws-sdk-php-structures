@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Organizations\ListAWSServiceAccessForOrganizati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServicePrincipal
- * @property \Aws\Api\DateTimeResult $DateEnabled
+ * @property string|null $ServicePrincipal
+ * @property \Aws\Api\DateTimeResult|null $DateEnabled
  */
 class EnabledServicePrincipal extends Shape
 {
     /**
      * @param array{
-     *     ServicePrincipal?: string,
-     *     DateEnabled?: \Aws\Api\DateTimeResult
+     *     ServicePrincipal?: string|null,
+     *     DateEnabled?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

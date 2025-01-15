@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisionedProduct;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ProvisionedProductDetail $ProvisionedProductDetail
- * @property list<Shapes\CloudWatchDashboard> $CloudWatchDashboards
+ * @property Shapes\ProvisionedProductDetail|null $ProvisionedProductDetail
+ * @property list<Shapes\CloudWatchDashboard>|null $CloudWatchDashboards
  */
 class DescribeProvisionedProductResponse extends Response
 {

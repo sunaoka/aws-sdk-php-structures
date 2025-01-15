@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\StartVoiceToneAnalysisTask\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VoiceConnectorId
- * @property string $TransactionId
- * @property bool $IsCaller
+ * @property string|null $VoiceConnectorId
+ * @property string|null $TransactionId
+ * @property bool|null $IsCaller
  */
 class CallDetails extends Shape
 {
     /**
      * @param array{
-     *     VoiceConnectorId?: string,
-     *     TransactionId?: string,
-     *     IsCaller?: bool
+     *     VoiceConnectorId?: string|null,
+     *     TransactionId?: string|null,
+     *     IsCaller?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

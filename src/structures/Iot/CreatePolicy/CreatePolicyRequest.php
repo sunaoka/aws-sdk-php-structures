@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $policyName
  * @property string $policyDocument
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreatePolicyRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreatePolicyRequest extends Request
      * @param array{
      *     policyName: string,
      *     policyDocument: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\mgn\FinalizeCutover\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $addedToServiceDateTime
- * @property string $elapsedReplicationDuration
- * @property string $firstByteDateTime
- * @property LifeCycleLastCutover $lastCutover
- * @property string $lastSeenByServiceDateTime
- * @property LifeCycleLastTest $lastTest
- * @property 'STOPPED'|'NOT_READY'|'READY_FOR_TEST'|'TESTING'|'READY_FOR_CUTOVER'|'CUTTING_OVER'|'CUTOVER'|'DISCONNECTED'|'DISCOVERED'|'PENDING_INSTALLATION' $state
+ * @property string|null $addedToServiceDateTime
+ * @property string|null $elapsedReplicationDuration
+ * @property string|null $firstByteDateTime
+ * @property LifeCycleLastCutover|null $lastCutover
+ * @property string|null $lastSeenByServiceDateTime
+ * @property LifeCycleLastTest|null $lastTest
+ * @property 'STOPPED'|'NOT_READY'|'READY_FOR_TEST'|'TESTING'|'READY_FOR_CUTOVER'|'CUTTING_OVER'|'CUTOVER'|'DISCONNECTED'|'DISCOVERED'|'PENDING_INSTALLATION'|null $state
  */
 class LifeCycle extends Shape
 {
     /**
      * @param array{
-     *     addedToServiceDateTime?: string,
-     *     elapsedReplicationDuration?: string,
-     *     firstByteDateTime?: string,
-     *     lastCutover?: LifeCycleLastCutover,
-     *     lastSeenByServiceDateTime?: string,
-     *     lastTest?: LifeCycleLastTest,
-     *     state?: 'STOPPED'|'NOT_READY'|'READY_FOR_TEST'|'TESTING'|'READY_FOR_CUTOVER'|'CUTTING_OVER'|'CUTOVER'|'DISCONNECTED'|'DISCOVERED'|'PENDING_INSTALLATION'
+     *     addedToServiceDateTime?: string|null,
+     *     elapsedReplicationDuration?: string|null,
+     *     firstByteDateTime?: string|null,
+     *     lastCutover?: LifeCycleLastCutover|null,
+     *     lastSeenByServiceDateTime?: string|null,
+     *     lastTest?: LifeCycleLastTest|null,
+     *     state?: 'STOPPED'|'NOT_READY'|'READY_FOR_TEST'|'TESTING'|'READY_FOR_CUTOVER'|'CUTTING_OVER'|'CUTOVER'|'DISCONNECTED'|'DISCOVERED'|'PENDING_INSTALLATION'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Kafka\CreateConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
- * @property list<string> $KafkaVersions
+ * @property string|null $Description
+ * @property list<string>|null $KafkaVersions
  * @property string $Name
  * @property string|resource|\Psr\Http\Message\StreamInterface $ServerProperties
  */
@@ -14,8 +14,8 @@ class CreateConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     KafkaVersions?: list<string>,
+     *     Description?: string|null,
+     *     KafkaVersions?: list<string>|null,
      *     Name: string,
      *     ServerProperties: string|resource|\Psr\Http\Message\StreamInterface
      * } $args

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\StartExtensionPackAsso
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RequestIdentifier
+ * @property string|null $RequestIdentifier
  */
 class StartExtensionPackAssociationResponse extends Response
 {

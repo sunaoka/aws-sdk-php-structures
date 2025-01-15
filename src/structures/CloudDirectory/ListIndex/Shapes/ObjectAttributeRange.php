@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\ListIndex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AttributeKey $AttributeKey
- * @property TypedAttributeValueRange $Range
+ * @property AttributeKey|null $AttributeKey
+ * @property TypedAttributeValueRange|null $Range
  */
 class ObjectAttributeRange extends Shape
 {
     /**
      * @param array{
-     *     AttributeKey?: AttributeKey,
-     *     Range?: TypedAttributeValueRange
+     *     AttributeKey?: AttributeKey|null,
+     *     Range?: TypedAttributeValueRange|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Schemas\CreateRegistry;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Description
- * @property string $RegistryArn
- * @property string $RegistryName
- * @property array<string, string> $Tags
+ * @property string|null $Description
+ * @property string|null $RegistryArn
+ * @property string|null $RegistryName
+ * @property array<string, string>|null $Tags
  */
 class CreateRegistryResponse extends Response
 {

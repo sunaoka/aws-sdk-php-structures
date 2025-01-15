@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $awayFrom
  * @property string $comment
  * @property \Aws\Api\DateTimeResult $expiryTime
- * @property 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED' $practiceRunOutcome
+ * @property 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|null $practiceRunOutcome
  * @property string $resourceIdentifier
  * @property \Aws\Api\DateTimeResult $startTime
  * @property string $zonalShiftId
@@ -22,7 +22,7 @@ class ZonalShiftInResource extends Shape
      *     awayFrom: string,
      *     comment: string,
      *     expiryTime: \Aws\Api\DateTimeResult,
-     *     practiceRunOutcome?: 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED',
+     *     practiceRunOutcome?: 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|null,
      *     resourceIdentifier: string,
      *     startTime: \Aws\Api\DateTimeResult,
      *     zonalShiftId: string

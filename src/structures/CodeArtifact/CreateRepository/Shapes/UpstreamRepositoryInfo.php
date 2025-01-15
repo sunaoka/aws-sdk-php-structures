@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\CreateRepository\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repositoryName
+ * @property string|null $repositoryName
  */
 class UpstreamRepositoryInfo extends Shape
 {
     /**
-     * @param array{repositoryName?: string} $args
+     * @param array{repositoryName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

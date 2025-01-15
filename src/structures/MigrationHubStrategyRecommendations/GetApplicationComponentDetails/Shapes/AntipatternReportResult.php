@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetApplicat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AnalyzerNameUnion $analyzerName
- * @property S3Object $antiPatternReportS3Object
- * @property 'FAILED'|'IN_PROGRESS'|'SUCCESS' $antipatternReportStatus
- * @property string $antipatternReportStatusMessage
+ * @property AnalyzerNameUnion|null $analyzerName
+ * @property S3Object|null $antiPatternReportS3Object
+ * @property 'FAILED'|'IN_PROGRESS'|'SUCCESS'|null $antipatternReportStatus
+ * @property string|null $antipatternReportStatusMessage
  */
 class AntipatternReportResult extends Shape
 {
     /**
      * @param array{
-     *     analyzerName?: AnalyzerNameUnion,
-     *     antiPatternReportS3Object?: S3Object,
-     *     antipatternReportStatus?: 'FAILED'|'IN_PROGRESS'|'SUCCESS',
-     *     antipatternReportStatusMessage?: string
+     *     analyzerName?: AnalyzerNameUnion|null,
+     *     antiPatternReportS3Object?: S3Object|null,
+     *     antipatternReportStatus?: 'FAILED'|'IN_PROGRESS'|'SUCCESS'|null,
+     *     antipatternReportStatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListProductSubs
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter> $Filters
+ * @property list<Shapes\Filter>|null $Filters
  * @property Shapes\IdentityProvider $IdentityProvider
- * @property int $MaxResults
- * @property string $NextToken
- * @property string $Product
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $Product
  */
 class ListProductSubscriptionsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\Filter>,
+     *     Filters?: list<Shapes\Filter>|null,
      *     IdentityProvider: Shapes\IdentityProvider,
-     *     MaxResults?: int,
-     *     NextToken?: string,
-     *     Product?: string
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null,
+     *     Product?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceProfileName
- * @property string $Path
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Path
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateInstanceProfileRequest extends Request
 {
     /**
      * @param array{
      *     InstanceProfileName: string,
-     *     Path?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Path?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

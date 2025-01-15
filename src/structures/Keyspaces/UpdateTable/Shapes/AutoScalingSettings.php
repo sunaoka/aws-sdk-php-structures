@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Keyspaces\UpdateTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $autoScalingDisabled
- * @property int<1, max> $minimumUnits
- * @property int<1, max> $maximumUnits
- * @property AutoScalingPolicy $scalingPolicy
+ * @property bool|null $autoScalingDisabled
+ * @property int<1, max>|null $minimumUnits
+ * @property int<1, max>|null $maximumUnits
+ * @property AutoScalingPolicy|null $scalingPolicy
  */
 class AutoScalingSettings extends Shape
 {
     /**
      * @param array{
-     *     autoScalingDisabled?: bool,
-     *     minimumUnits?: int<1, max>,
-     *     maximumUnits?: int<1, max>,
-     *     scalingPolicy?: AutoScalingPolicy
+     *     autoScalingDisabled?: bool|null,
+     *     minimumUnits?: int<1, max>|null,
+     *     maximumUnits?: int<1, max>|null,
+     *     scalingPolicy?: AutoScalingPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

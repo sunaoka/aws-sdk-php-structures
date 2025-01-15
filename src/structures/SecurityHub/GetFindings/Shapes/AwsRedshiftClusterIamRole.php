@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplyStatus
- * @property string $IamRoleArn
+ * @property string|null $ApplyStatus
+ * @property string|null $IamRoleArn
  */
 class AwsRedshiftClusterIamRole extends Shape
 {
     /**
      * @param array{
-     *     ApplyStatus?: string,
-     *     IamRoleArn?: string
+     *     ApplyStatus?: string|null,
+     *     IamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

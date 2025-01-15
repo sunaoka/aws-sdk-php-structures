@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Glacier\InitiateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Format
- * @property string $Type
- * @property string $ArchiveId
- * @property string $Description
- * @property string $SNSTopic
- * @property string $RetrievalByteRange
- * @property string $Tier
- * @property InventoryRetrievalJobInput $InventoryRetrievalParameters
- * @property SelectParameters $SelectParameters
- * @property OutputLocation $OutputLocation
+ * @property string|null $Format
+ * @property string|null $Type
+ * @property string|null $ArchiveId
+ * @property string|null $Description
+ * @property string|null $SNSTopic
+ * @property string|null $RetrievalByteRange
+ * @property string|null $Tier
+ * @property InventoryRetrievalJobInput|null $InventoryRetrievalParameters
+ * @property SelectParameters|null $SelectParameters
+ * @property OutputLocation|null $OutputLocation
  */
 class JobParameters extends Shape
 {
     /**
      * @param array{
-     *     Format?: string,
-     *     Type?: string,
-     *     ArchiveId?: string,
-     *     Description?: string,
-     *     SNSTopic?: string,
-     *     RetrievalByteRange?: string,
-     *     Tier?: string,
-     *     InventoryRetrievalParameters?: InventoryRetrievalJobInput,
-     *     SelectParameters?: SelectParameters,
-     *     OutputLocation?: OutputLocation
+     *     Format?: string|null,
+     *     Type?: string|null,
+     *     ArchiveId?: string|null,
+     *     Description?: string|null,
+     *     SNSTopic?: string|null,
+     *     RetrievalByteRange?: string|null,
+     *     Tier?: string|null,
+     *     InventoryRetrievalParameters?: InventoryRetrievalJobInput|null,
+     *     SelectParameters?: SelectParameters|null,
+     *     OutputLocation?: OutputLocation|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InputSecurityGroupId
- * @property array<string, string> $Tags
- * @property list<Shapes\InputWhitelistRuleCidr> $WhitelistRules
+ * @property array<string, string>|null $Tags
+ * @property list<Shapes\InputWhitelistRuleCidr>|null $WhitelistRules
  */
 class UpdateInputSecurityGroupRequest extends Request
 {
     /**
      * @param array{
      *     InputSecurityGroupId: string,
-     *     Tags?: array<string, string>,
-     *     WhitelistRules?: list<Shapes\InputWhitelistRuleCidr>
+     *     Tags?: array<string, string>|null,
+     *     WhitelistRules?: list<Shapes\InputWhitelistRuleCidr>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SsmSap\GetComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HostName
- * @property string $HostIp
- * @property string $EC2InstanceId
- * @property string $InstanceId
- * @property 'LEADER'|'WORKER'|'STANDBY'|'UNKNOWN' $HostRole
- * @property string $OsVersion
+ * @property string|null $HostName
+ * @property string|null $HostIp
+ * @property string|null $EC2InstanceId
+ * @property string|null $InstanceId
+ * @property 'LEADER'|'WORKER'|'STANDBY'|'UNKNOWN'|null $HostRole
+ * @property string|null $OsVersion
  */
 class Host extends Shape
 {
     /**
      * @param array{
-     *     HostName?: string,
-     *     HostIp?: string,
-     *     EC2InstanceId?: string,
-     *     InstanceId?: string,
-     *     HostRole?: 'LEADER'|'WORKER'|'STANDBY'|'UNKNOWN',
-     *     OsVersion?: string
+     *     HostName?: string|null,
+     *     HostIp?: string|null,
+     *     EC2InstanceId?: string|null,
+     *     InstanceId?: string|null,
+     *     HostRole?: 'LEADER'|'WORKER'|'STANDBY'|'UNKNOWN'|null,
+     *     OsVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Route53\GetGeoLocation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ContinentCode
- * @property string $CountryCode
- * @property string $SubdivisionCode
+ * @property string|null $ContinentCode
+ * @property string|null $CountryCode
+ * @property string|null $SubdivisionCode
  */
 class GetGeoLocationRequest extends Request
 {
     /**
      * @param array{
-     *     ContinentCode?: string,
-     *     CountryCode?: string,
-     *     SubdivisionCode?: string
+     *     ContinentCode?: string|null,
+     *     CountryCode?: string|null,
+     *     SubdivisionCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

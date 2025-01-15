@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QBusiness\GetRetriever\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NativeIndexConfiguration $nativeIndexConfiguration
- * @property KendraIndexConfiguration $kendraIndexConfiguration
+ * @property NativeIndexConfiguration|null $nativeIndexConfiguration
+ * @property KendraIndexConfiguration|null $kendraIndexConfiguration
  */
 class RetrieverConfiguration extends Shape
 {
     /**
      * @param array{
-     *     nativeIndexConfiguration?: NativeIndexConfiguration,
-     *     kendraIndexConfiguration?: KendraIndexConfiguration
+     *     nativeIndexConfiguration?: NativeIndexConfiguration|null,
+     *     kendraIndexConfiguration?: KendraIndexConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRecommendationPreferences\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Datadog'|'Dynatrace'|'NewRelic'|'Instana' $source
+ * @property 'Datadog'|'Dynatrace'|'NewRelic'|'Instana'|null $source
  */
 class ExternalMetricsPreference extends Shape
 {
     /**
-     * @param array{source?: 'Datadog'|'Dynatrace'|'NewRelic'|'Instana'} $args
+     * @param array{source?: 'Datadog'|'Dynatrace'|'NewRelic'|'Instana'|null} $args
      */
     public function __construct(array $args = [])
     {

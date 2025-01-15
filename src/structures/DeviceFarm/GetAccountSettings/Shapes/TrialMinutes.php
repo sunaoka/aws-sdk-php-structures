@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\GetAccountSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $total
- * @property double $remaining
+ * @property double|null $total
+ * @property double|null $remaining
  */
 class TrialMinutes extends Shape
 {
     /**
      * @param array{
-     *     total?: double,
-     *     remaining?: double
+     *     total?: double|null,
+     *     remaining?: double|null
      * } $args
      */
     public function __construct(array $args = [])

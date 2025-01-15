@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetSdkType;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $id
- * @property string $friendlyName
- * @property string $description
- * @property list<Shapes\SdkConfigurationProperty> $configurationProperties
+ * @property string|null $id
+ * @property string|null $friendlyName
+ * @property string|null $description
+ * @property list<Shapes\SdkConfigurationProperty>|null $configurationProperties
  */
 class GetSdkTypeResponse extends Response
 {

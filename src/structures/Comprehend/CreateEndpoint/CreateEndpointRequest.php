@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EndpointName
- * @property string $ModelArn
+ * @property string|null $ModelArn
  * @property int<1, max> $DesiredInferenceUnits
- * @property string $ClientRequestToken
- * @property list<Shapes\Tag> $Tags
- * @property string $DataAccessRoleArn
- * @property string $FlywheelArn
+ * @property string|null $ClientRequestToken
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $DataAccessRoleArn
+ * @property string|null $FlywheelArn
  */
 class CreateEndpointRequest extends Request
 {
     /**
      * @param array{
      *     EndpointName: string,
-     *     ModelArn?: string,
+     *     ModelArn?: string|null,
      *     DesiredInferenceUnits: int<1, max>,
-     *     ClientRequestToken?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     DataAccessRoleArn?: string,
-     *     FlywheelArn?: string
+     *     ClientRequestToken?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DataAccessRoleArn?: string|null,
+     *     FlywheelArn?: string|null
      * } $args
      */
     public function __construct(array $args)

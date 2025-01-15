@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\GetPackageVersionHistory;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PackageID
- * @property list<Shapes\PackageVersionHistory> $PackageVersionHistoryList
- * @property string $NextToken
+ * @property string|null $PackageID
+ * @property list<Shapes\PackageVersionHistory>|null $PackageVersionHistoryList
+ * @property string|null $NextToken
  */
 class GetPackageVersionHistoryResponse extends Response
 {

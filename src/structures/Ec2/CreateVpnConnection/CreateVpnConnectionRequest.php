@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CustomerGatewayId
  * @property string $Type
- * @property string $VpnGatewayId
- * @property string $TransitGatewayId
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
- * @property Shapes\VpnConnectionOptionsSpecification $Options
+ * @property string|null $VpnGatewayId
+ * @property string|null $TransitGatewayId
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
+ * @property Shapes\VpnConnectionOptionsSpecification|null $Options
  */
 class CreateVpnConnectionRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateVpnConnectionRequest extends Request
      * @param array{
      *     CustomerGatewayId: string,
      *     Type: string,
-     *     VpnGatewayId?: string,
-     *     TransitGatewayId?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool,
-     *     Options?: Shapes\VpnConnectionOptionsSpecification
+     *     VpnGatewayId?: string|null,
+     *     TransitGatewayId?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null,
+     *     Options?: Shapes\VpnConnectionOptionsSpecification|null
      * } $args
      */
     public function __construct(array $args)

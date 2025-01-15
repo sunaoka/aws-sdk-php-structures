@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CREATE' $MetadataOperation
- * @property string $Version
+ * @property string|null $Version
  */
 class IcebergInput extends Shape
 {
     /**
      * @param array{
      *     MetadataOperation: 'CREATE',
-     *     Version?: string
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args)

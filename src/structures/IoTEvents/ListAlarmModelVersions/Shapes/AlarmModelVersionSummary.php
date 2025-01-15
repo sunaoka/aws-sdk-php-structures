@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\IoTEvents\ListAlarmModelVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $alarmModelName
- * @property string $alarmModelArn
- * @property string $alarmModelVersion
- * @property string $roleArn
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property 'ACTIVE'|'ACTIVATING'|'INACTIVE'|'FAILED' $status
- * @property string $statusMessage
+ * @property string|null $alarmModelName
+ * @property string|null $alarmModelArn
+ * @property string|null $alarmModelVersion
+ * @property string|null $roleArn
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property 'ACTIVE'|'ACTIVATING'|'INACTIVE'|'FAILED'|null $status
+ * @property string|null $statusMessage
  */
 class AlarmModelVersionSummary extends Shape
 {
     /**
      * @param array{
-     *     alarmModelName?: string,
-     *     alarmModelArn?: string,
-     *     alarmModelVersion?: string,
-     *     roleArn?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'ACTIVE'|'ACTIVATING'|'INACTIVE'|'FAILED',
-     *     statusMessage?: string
+     *     alarmModelName?: string|null,
+     *     alarmModelArn?: string|null,
+     *     alarmModelVersion?: string|null,
+     *     roleArn?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'ACTIVE'|'ACTIVATING'|'INACTIVE'|'FAILED'|null,
+     *     statusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

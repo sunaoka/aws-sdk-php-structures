@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateSmsTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $CreateNewVersion
+ * @property bool|null $CreateNewVersion
  * @property Shapes\SMSTemplateRequest $SMSTemplateRequest
  * @property string $TemplateName
- * @property string $Version
+ * @property string|null $Version
  */
 class UpdateSmsTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     CreateNewVersion?: bool,
+     *     CreateNewVersion?: bool|null,
      *     SMSTemplateRequest: Shapes\SMSTemplateRequest,
      *     TemplateName: string,
-     *     Version?: string
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args)

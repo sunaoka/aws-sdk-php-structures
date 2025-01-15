@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HttpEndpoint
- * @property string $HttpProtocolIpv6
- * @property int $HttpPutResponseHopLimit
- * @property string $HttpTokens
- * @property string $InstanceMetadataTags
+ * @property string|null $HttpEndpoint
+ * @property string|null $HttpProtocolIpv6
+ * @property int|null $HttpPutResponseHopLimit
+ * @property string|null $HttpTokens
+ * @property string|null $InstanceMetadataTags
  */
 class AwsEc2InstanceMetadataOptions extends Shape
 {
     /**
      * @param array{
-     *     HttpEndpoint?: string,
-     *     HttpProtocolIpv6?: string,
-     *     HttpPutResponseHopLimit?: int,
-     *     HttpTokens?: string,
-     *     InstanceMetadataTags?: string
+     *     HttpEndpoint?: string|null,
+     *     HttpProtocolIpv6?: string|null,
+     *     HttpPutResponseHopLimit?: int|null,
+     *     HttpTokens?: string|null,
+     *     InstanceMetadataTags?: string|null
      * } $args
      */
     public function __construct(array $args = [])

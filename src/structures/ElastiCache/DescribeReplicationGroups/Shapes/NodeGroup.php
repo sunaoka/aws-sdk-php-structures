@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeReplicationGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NodeGroupId
- * @property string $Status
- * @property Endpoint $PrimaryEndpoint
- * @property Endpoint $ReaderEndpoint
- * @property string $Slots
- * @property list<NodeGroupMember> $NodeGroupMembers
+ * @property string|null $NodeGroupId
+ * @property string|null $Status
+ * @property Endpoint|null $PrimaryEndpoint
+ * @property Endpoint|null $ReaderEndpoint
+ * @property string|null $Slots
+ * @property list<NodeGroupMember>|null $NodeGroupMembers
  */
 class NodeGroup extends Shape
 {
     /**
      * @param array{
-     *     NodeGroupId?: string,
-     *     Status?: string,
-     *     PrimaryEndpoint?: Endpoint,
-     *     ReaderEndpoint?: Endpoint,
-     *     Slots?: string,
-     *     NodeGroupMembers?: list<NodeGroupMember>
+     *     NodeGroupId?: string|null,
+     *     Status?: string|null,
+     *     PrimaryEndpoint?: Endpoint|null,
+     *     ReaderEndpoint?: Endpoint|null,
+     *     Slots?: string|null,
+     *     NodeGroupMembers?: list<NodeGroupMember>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetApplicationSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LambdaFunctionName
- * @property 'DELIVERY'|'FILTER' $Mode
- * @property string $WebUrl
+ * @property string|null $LambdaFunctionName
+ * @property 'DELIVERY'|'FILTER'|null $Mode
+ * @property string|null $WebUrl
  */
 class CampaignHook extends Shape
 {
     /**
      * @param array{
-     *     LambdaFunctionName?: string,
-     *     Mode?: 'DELIVERY'|'FILTER',
-     *     WebUrl?: string
+     *     LambdaFunctionName?: string|null,
+     *     Mode?: 'DELIVERY'|'FILTER'|null,
+     *     WebUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

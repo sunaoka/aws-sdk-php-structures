@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeImportSnapshotTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $ImportTaskId
- * @property SnapshotTaskDetail $SnapshotTaskDetail
- * @property list<Tag> $Tags
+ * @property string|null $Description
+ * @property string|null $ImportTaskId
+ * @property SnapshotTaskDetail|null $SnapshotTaskDetail
+ * @property list<Tag>|null $Tags
  */
 class ImportSnapshotTask extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     ImportTaskId?: string,
-     *     SnapshotTaskDetail?: SnapshotTaskDetail,
-     *     Tags?: list<Tag>
+     *     Description?: string|null,
+     *     ImportTaskId?: string|null,
+     *     SnapshotTaskDetail?: SnapshotTaskDetail|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

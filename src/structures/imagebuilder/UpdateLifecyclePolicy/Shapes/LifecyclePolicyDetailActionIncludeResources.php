@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\imagebuilder\UpdateLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $amis
- * @property bool $snapshots
- * @property bool $containers
+ * @property bool|null $amis
+ * @property bool|null $snapshots
+ * @property bool|null $containers
  */
 class LifecyclePolicyDetailActionIncludeResources extends Shape
 {
     /**
      * @param array{
-     *     amis?: bool,
-     *     snapshots?: bool,
-     *     containers?: bool
+     *     amis?: bool|null,
+     *     snapshots?: bool|null,
+     *     containers?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

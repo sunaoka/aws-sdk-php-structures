@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WellArchitected\UpdateWorkloadShare\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ShareId
- * @property string $SharedBy
- * @property string $SharedWith
- * @property 'READONLY'|'CONTRIBUTOR' $PermissionType
- * @property 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED' $Status
- * @property string $WorkloadName
- * @property string $WorkloadId
+ * @property string|null $ShareId
+ * @property string|null $SharedBy
+ * @property string|null $SharedWith
+ * @property 'READONLY'|'CONTRIBUTOR'|null $PermissionType
+ * @property 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED'|null $Status
+ * @property string|null $WorkloadName
+ * @property string|null $WorkloadId
  */
 class WorkloadShare extends Shape
 {
     /**
      * @param array{
-     *     ShareId?: string,
-     *     SharedBy?: string,
-     *     SharedWith?: string,
-     *     PermissionType?: 'READONLY'|'CONTRIBUTOR',
-     *     Status?: 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED',
-     *     WorkloadName?: string,
-     *     WorkloadId?: string
+     *     ShareId?: string|null,
+     *     SharedBy?: string|null,
+     *     SharedWith?: string|null,
+     *     PermissionType?: 'READONLY'|'CONTRIBUTOR'|null,
+     *     Status?: 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED'|null,
+     *     WorkloadName?: string|null,
+     *     WorkloadId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

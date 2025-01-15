@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\ListEventTriggers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ObjectTypeName
- * @property string $EventTriggerName
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property array<string, string> $Tags
+ * @property string|null $ObjectTypeName
+ * @property string|null $EventTriggerName
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property array<string, string>|null $Tags
  */
 class EventTriggerSummaryItem extends Shape
 {
     /**
      * @param array{
-     *     ObjectTypeName?: string,
-     *     EventTriggerName?: string,
-     *     Description?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     Tags?: array<string, string>
+     *     ObjectTypeName?: string|null,
+     *     EventTriggerName?: string|null,
+     *     Description?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

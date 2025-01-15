@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\S3Control\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExpectedBucketOwner
+ * @property string|null $ExpectedBucketOwner
  * @property string $SourceBucket
- * @property S3ManifestOutputLocation $ManifestOutputLocation
- * @property JobManifestGeneratorFilter $Filter
+ * @property S3ManifestOutputLocation|null $ManifestOutputLocation
+ * @property JobManifestGeneratorFilter|null $Filter
  * @property bool $EnableManifestOutput
  */
 class S3JobManifestGenerator extends Shape
 {
     /**
      * @param array{
-     *     ExpectedBucketOwner?: string,
+     *     ExpectedBucketOwner?: string|null,
      *     SourceBucket: string,
-     *     ManifestOutputLocation?: S3ManifestOutputLocation,
-     *     Filter?: JobManifestGeneratorFilter,
+     *     ManifestOutputLocation?: S3ManifestOutputLocation|null,
+     *     Filter?: JobManifestGeneratorFilter|null,
      *     EnableManifestOutput: bool
      * } $args
      */

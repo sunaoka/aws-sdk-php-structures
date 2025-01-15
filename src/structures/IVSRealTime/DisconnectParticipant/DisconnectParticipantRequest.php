@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $stageArn
  * @property string $participantId
- * @property string $reason
+ * @property string|null $reason
  */
 class DisconnectParticipantRequest extends Request
 {
@@ -15,7 +15,7 @@ class DisconnectParticipantRequest extends Request
      * @param array{
      *     stageArn: string,
      *     participantId: string,
-     *     reason?: string
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args)

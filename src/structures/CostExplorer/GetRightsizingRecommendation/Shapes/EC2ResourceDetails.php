@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HourlyOnDemandRate
- * @property string $InstanceType
- * @property string $Platform
- * @property string $Region
- * @property string $Sku
- * @property string $Memory
- * @property string $NetworkPerformance
- * @property string $Storage
- * @property string $Vcpu
+ * @property string|null $HourlyOnDemandRate
+ * @property string|null $InstanceType
+ * @property string|null $Platform
+ * @property string|null $Region
+ * @property string|null $Sku
+ * @property string|null $Memory
+ * @property string|null $NetworkPerformance
+ * @property string|null $Storage
+ * @property string|null $Vcpu
  */
 class EC2ResourceDetails extends Shape
 {
     /**
      * @param array{
-     *     HourlyOnDemandRate?: string,
-     *     InstanceType?: string,
-     *     Platform?: string,
-     *     Region?: string,
-     *     Sku?: string,
-     *     Memory?: string,
-     *     NetworkPerformance?: string,
-     *     Storage?: string,
-     *     Vcpu?: string
+     *     HourlyOnDemandRate?: string|null,
+     *     InstanceType?: string|null,
+     *     Platform?: string|null,
+     *     Region?: string|null,
+     *     Sku?: string|null,
+     *     Memory?: string|null,
+     *     NetworkPerformance?: string|null,
+     *     Storage?: string|null,
+     *     Vcpu?: string|null
      * } $args
      */
     public function __construct(array $args = [])

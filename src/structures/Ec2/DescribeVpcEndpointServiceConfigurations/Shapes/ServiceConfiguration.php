@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcEndpointServiceConfigurations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ServiceTypeDetail> $ServiceType
- * @property string $ServiceId
- * @property string $ServiceName
- * @property 'Pending'|'Available'|'Deleting'|'Deleted'|'Failed' $ServiceState
- * @property list<string> $AvailabilityZones
- * @property bool $AcceptanceRequired
- * @property bool $ManagesVpcEndpoints
- * @property list<string> $NetworkLoadBalancerArns
- * @property list<string> $GatewayLoadBalancerArns
- * @property list<'ipv4'|'ipv6'> $SupportedIpAddressTypes
- * @property list<string> $BaseEndpointDnsNames
- * @property string $PrivateDnsName
- * @property PrivateDnsNameConfiguration $PrivateDnsNameConfiguration
- * @property 'ServiceOwner' $PayerResponsibility
- * @property list<Tag> $Tags
- * @property list<SupportedRegionDetail> $SupportedRegions
- * @property bool $RemoteAccessEnabled
+ * @property list<ServiceTypeDetail>|null $ServiceType
+ * @property string|null $ServiceId
+ * @property string|null $ServiceName
+ * @property 'Pending'|'Available'|'Deleting'|'Deleted'|'Failed'|null $ServiceState
+ * @property list<string>|null $AvailabilityZones
+ * @property bool|null $AcceptanceRequired
+ * @property bool|null $ManagesVpcEndpoints
+ * @property list<string>|null $NetworkLoadBalancerArns
+ * @property list<string>|null $GatewayLoadBalancerArns
+ * @property list<'ipv4'|'ipv6'>|null $SupportedIpAddressTypes
+ * @property list<string>|null $BaseEndpointDnsNames
+ * @property string|null $PrivateDnsName
+ * @property PrivateDnsNameConfiguration|null $PrivateDnsNameConfiguration
+ * @property 'ServiceOwner'|null $PayerResponsibility
+ * @property list<Tag>|null $Tags
+ * @property list<SupportedRegionDetail>|null $SupportedRegions
+ * @property bool|null $RemoteAccessEnabled
  */
 class ServiceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ServiceType?: list<ServiceTypeDetail>,
-     *     ServiceId?: string,
-     *     ServiceName?: string,
-     *     ServiceState?: 'Pending'|'Available'|'Deleting'|'Deleted'|'Failed',
-     *     AvailabilityZones?: list<string>,
-     *     AcceptanceRequired?: bool,
-     *     ManagesVpcEndpoints?: bool,
-     *     NetworkLoadBalancerArns?: list<string>,
-     *     GatewayLoadBalancerArns?: list<string>,
-     *     SupportedIpAddressTypes?: list<'ipv4'|'ipv6'>,
-     *     BaseEndpointDnsNames?: list<string>,
-     *     PrivateDnsName?: string,
-     *     PrivateDnsNameConfiguration?: PrivateDnsNameConfiguration,
-     *     PayerResponsibility?: 'ServiceOwner',
-     *     Tags?: list<Tag>,
-     *     SupportedRegions?: list<SupportedRegionDetail>,
-     *     RemoteAccessEnabled?: bool
+     *     ServiceType?: list<ServiceTypeDetail>|null,
+     *     ServiceId?: string|null,
+     *     ServiceName?: string|null,
+     *     ServiceState?: 'Pending'|'Available'|'Deleting'|'Deleted'|'Failed'|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     AcceptanceRequired?: bool|null,
+     *     ManagesVpcEndpoints?: bool|null,
+     *     NetworkLoadBalancerArns?: list<string>|null,
+     *     GatewayLoadBalancerArns?: list<string>|null,
+     *     SupportedIpAddressTypes?: list<'ipv4'|'ipv6'>|null,
+     *     BaseEndpointDnsNames?: list<string>|null,
+     *     PrivateDnsName?: string|null,
+     *     PrivateDnsNameConfiguration?: PrivateDnsNameConfiguration|null,
+     *     PayerResponsibility?: 'ServiceOwner'|null,
+     *     Tags?: list<Tag>|null,
+     *     SupportedRegions?: list<SupportedRegionDetail>|null,
+     *     RemoteAccessEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

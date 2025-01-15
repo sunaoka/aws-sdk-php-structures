@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCases\GetTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdTime
- * @property bool $deleted
- * @property string $description
- * @property \Aws\Api\DateTimeResult $lastModifiedTime
- * @property Shapes\LayoutConfiguration $layoutConfiguration
+ * @property \Aws\Api\DateTimeResult|null $createdTime
+ * @property bool|null $deleted
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property Shapes\LayoutConfiguration|null $layoutConfiguration
  * @property string $name
- * @property list<Shapes\RequiredField> $requiredFields
+ * @property list<Shapes\RequiredField>|null $requiredFields
  * @property 'Active'|'Inactive' $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $templateArn
  * @property string $templateId
  */

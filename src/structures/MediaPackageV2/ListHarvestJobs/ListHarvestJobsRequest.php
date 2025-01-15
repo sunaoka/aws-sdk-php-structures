@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelGroupName
- * @property string $ChannelName
- * @property string $OriginEndpointName
- * @property 'QUEUED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED' $Status
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $ChannelName
+ * @property string|null $OriginEndpointName
+ * @property 'QUEUED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED'|null $Status
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListHarvestJobsRequest extends Request
 {
     /**
      * @param array{
      *     ChannelGroupName: string,
-     *     ChannelName?: string,
-     *     OriginEndpointName?: string,
-     *     Status?: 'QUEUED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED',
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     ChannelName?: string|null,
+     *     OriginEndpointName?: string|null,
+     *     Status?: 'QUEUED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED'|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

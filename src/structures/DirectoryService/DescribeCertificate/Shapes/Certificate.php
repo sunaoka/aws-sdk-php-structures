@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DirectoryService\DescribeCertificate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateId
- * @property 'Registering'|'Registered'|'RegisterFailed'|'Deregistering'|'Deregistered'|'DeregisterFailed' $State
- * @property string $StateReason
- * @property string $CommonName
- * @property \Aws\Api\DateTimeResult $RegisteredDateTime
- * @property \Aws\Api\DateTimeResult $ExpiryDateTime
- * @property 'ClientCertAuth'|'ClientLDAPS' $Type
- * @property ClientCertAuthSettings $ClientCertAuthSettings
+ * @property string|null $CertificateId
+ * @property 'Registering'|'Registered'|'RegisterFailed'|'Deregistering'|'Deregistered'|'DeregisterFailed'|null $State
+ * @property string|null $StateReason
+ * @property string|null $CommonName
+ * @property \Aws\Api\DateTimeResult|null $RegisteredDateTime
+ * @property \Aws\Api\DateTimeResult|null $ExpiryDateTime
+ * @property 'ClientCertAuth'|'ClientLDAPS'|null $Type
+ * @property ClientCertAuthSettings|null $ClientCertAuthSettings
  */
 class Certificate extends Shape
 {
     /**
      * @param array{
-     *     CertificateId?: string,
-     *     State?: 'Registering'|'Registered'|'RegisterFailed'|'Deregistering'|'Deregistered'|'DeregisterFailed',
-     *     StateReason?: string,
-     *     CommonName?: string,
-     *     RegisteredDateTime?: \Aws\Api\DateTimeResult,
-     *     ExpiryDateTime?: \Aws\Api\DateTimeResult,
-     *     Type?: 'ClientCertAuth'|'ClientLDAPS',
-     *     ClientCertAuthSettings?: ClientCertAuthSettings
+     *     CertificateId?: string|null,
+     *     State?: 'Registering'|'Registered'|'RegisterFailed'|'Deregistering'|'Deregistered'|'DeregisterFailed'|null,
+     *     StateReason?: string|null,
+     *     CommonName?: string|null,
+     *     RegisteredDateTime?: \Aws\Api\DateTimeResult|null,
+     *     ExpiryDateTime?: \Aws\Api\DateTimeResult|null,
+     *     Type?: 'ClientCertAuth'|'ClientLDAPS'|null,
+     *     ClientCertAuthSettings?: ClientCertAuthSettings|null
      * } $args
      */
     public function __construct(array $args = [])

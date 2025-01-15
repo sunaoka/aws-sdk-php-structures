@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteVirtualService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualNodeServiceProvider $virtualNode
- * @property VirtualRouterServiceProvider $virtualRouter
+ * @property VirtualNodeServiceProvider|null $virtualNode
+ * @property VirtualRouterServiceProvider|null $virtualRouter
  */
 class VirtualServiceProvider extends Shape
 {
     /**
      * @param array{
-     *     virtualNode?: VirtualNodeServiceProvider,
-     *     virtualRouter?: VirtualRouterServiceProvider
+     *     virtualNode?: VirtualNodeServiceProvider|null,
+     *     virtualRouter?: VirtualRouterServiceProvider|null
      * } $args
      */
     public function __construct(array $args = [])

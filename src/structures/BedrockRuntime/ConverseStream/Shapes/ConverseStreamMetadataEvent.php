@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property TokenUsage $usage
  * @property ConverseStreamMetrics $metrics
- * @property ConverseStreamTrace $trace
- * @property PerformanceConfiguration $performanceConfig
+ * @property ConverseStreamTrace|null $trace
+ * @property PerformanceConfiguration|null $performanceConfig
  */
 class ConverseStreamMetadataEvent extends Shape
 {
@@ -16,8 +16,8 @@ class ConverseStreamMetadataEvent extends Shape
      * @param array{
      *     usage: TokenUsage,
      *     metrics: ConverseStreamMetrics,
-     *     trace?: ConverseStreamTrace,
-     *     performanceConfig?: PerformanceConfiguration
+     *     trace?: ConverseStreamTrace|null,
+     *     performanceConfig?: PerformanceConfiguration|null
      * } $args
      */
     public function __construct(array $args)

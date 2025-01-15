@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AfterConnectScript
- * @property bool $CleanSourceMetadataOnMismatch
- * @property string $DatabaseName
- * @property int $EventsPollInterval
- * @property 'specific-database'|'multiple-databases' $TargetDbType
- * @property int $MaxFileSize
- * @property int $ParallelLoadThreads
- * @property string $Password
- * @property int $Port
- * @property string $ServerName
- * @property string $ServerTimezone
- * @property string $Username
- * @property string $SecretsManagerAccessRoleArn
- * @property string $SecretsManagerSecretId
+ * @property string|null $AfterConnectScript
+ * @property bool|null $CleanSourceMetadataOnMismatch
+ * @property string|null $DatabaseName
+ * @property int|null $EventsPollInterval
+ * @property 'specific-database'|'multiple-databases'|null $TargetDbType
+ * @property int|null $MaxFileSize
+ * @property int|null $ParallelLoadThreads
+ * @property string|null $Password
+ * @property int|null $Port
+ * @property string|null $ServerName
+ * @property string|null $ServerTimezone
+ * @property string|null $Username
+ * @property string|null $SecretsManagerAccessRoleArn
+ * @property string|null $SecretsManagerSecretId
  */
 class GcpMySQLSettings extends Shape
 {
     /**
      * @param array{
-     *     AfterConnectScript?: string,
-     *     CleanSourceMetadataOnMismatch?: bool,
-     *     DatabaseName?: string,
-     *     EventsPollInterval?: int,
-     *     TargetDbType?: 'specific-database'|'multiple-databases',
-     *     MaxFileSize?: int,
-     *     ParallelLoadThreads?: int,
-     *     Password?: string,
-     *     Port?: int,
-     *     ServerName?: string,
-     *     ServerTimezone?: string,
-     *     Username?: string,
-     *     SecretsManagerAccessRoleArn?: string,
-     *     SecretsManagerSecretId?: string
+     *     AfterConnectScript?: string|null,
+     *     CleanSourceMetadataOnMismatch?: bool|null,
+     *     DatabaseName?: string|null,
+     *     EventsPollInterval?: int|null,
+     *     TargetDbType?: 'specific-database'|'multiple-databases'|null,
+     *     MaxFileSize?: int|null,
+     *     ParallelLoadThreads?: int|null,
+     *     Password?: string|null,
+     *     Port?: int|null,
+     *     ServerName?: string|null,
+     *     ServerTimezone?: string|null,
+     *     Username?: string|null,
+     *     SecretsManagerAccessRoleArn?: string|null,
+     *     SecretsManagerSecretId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

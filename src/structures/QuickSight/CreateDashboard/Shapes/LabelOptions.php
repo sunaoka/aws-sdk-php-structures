@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property FontConfiguration $FontConfiguration
- * @property string $CustomLabel
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property FontConfiguration|null $FontConfiguration
+ * @property string|null $CustomLabel
  */
 class LabelOptions extends Shape
 {
     /**
      * @param array{
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     FontConfiguration?: FontConfiguration,
-     *     CustomLabel?: string
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     FontConfiguration?: FontConfiguration|null,
+     *     CustomLabel?: string|null
      * } $args
      */
     public function __construct(array $args = [])

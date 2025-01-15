@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DetailedResultsLocation
- * @property ClassificationResult $Result
+ * @property string|null $DetailedResultsLocation
+ * @property ClassificationResult|null $Result
  */
 class DataClassificationDetails extends Shape
 {
     /**
      * @param array{
-     *     DetailedResultsLocation?: string,
-     *     Result?: ClassificationResult
+     *     DetailedResultsLocation?: string|null,
+     *     Result?: ClassificationResult|null
      * } $args
      */
     public function __construct(array $args = [])

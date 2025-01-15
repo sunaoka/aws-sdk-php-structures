@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ListImports;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TableArn
- * @property int<1, 25> $PageSize
- * @property string $NextToken
+ * @property string|null $TableArn
+ * @property int<1, 25>|null $PageSize
+ * @property string|null $NextToken
  */
 class ListImportsRequest extends Request
 {
     /**
      * @param array{
-     *     TableArn?: string,
-     *     PageSize?: int<1, 25>,
-     *     NextToken?: string
+     *     TableArn?: string|null,
+     *     PageSize?: int<1, 25>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

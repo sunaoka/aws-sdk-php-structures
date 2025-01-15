@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SageMaker\QueryLineage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $StartArns
- * @property 'Both'|'Ascendants'|'Descendants' $Direction
- * @property bool $IncludeEdges
- * @property Shapes\QueryFilters $Filters
- * @property int<min, 10> $MaxDepth
- * @property int<min, 50> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $StartArns
+ * @property 'Both'|'Ascendants'|'Descendants'|null $Direction
+ * @property bool|null $IncludeEdges
+ * @property Shapes\QueryFilters|null $Filters
+ * @property int<min, 10>|null $MaxDepth
+ * @property int<min, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class QueryLineageRequest extends Request
 {
     /**
      * @param array{
-     *     StartArns?: list<string>,
-     *     Direction?: 'Both'|'Ascendants'|'Descendants',
-     *     IncludeEdges?: bool,
-     *     Filters?: Shapes\QueryFilters,
-     *     MaxDepth?: int<min, 10>,
-     *     MaxResults?: int<min, 50>,
-     *     NextToken?: string
+     *     StartArns?: list<string>|null,
+     *     Direction?: 'Both'|'Ascendants'|'Descendants'|null,
+     *     IncludeEdges?: bool|null,
+     *     Filters?: Shapes\QueryFilters|null,
+     *     MaxDepth?: int<min, 10>|null,
+     *     MaxResults?: int<min, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

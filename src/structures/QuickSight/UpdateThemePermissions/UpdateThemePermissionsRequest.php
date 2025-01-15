@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $ThemeId
- * @property list<Shapes\ResourcePermission> $GrantPermissions
- * @property list<Shapes\ResourcePermission> $RevokePermissions
+ * @property list<Shapes\ResourcePermission>|null $GrantPermissions
+ * @property list<Shapes\ResourcePermission>|null $RevokePermissions
  */
 class UpdateThemePermissionsRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateThemePermissionsRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     ThemeId: string,
-     *     GrantPermissions?: list<Shapes\ResourcePermission>,
-     *     RevokePermissions?: list<Shapes\ResourcePermission>
+     *     GrantPermissions?: list<Shapes\ResourcePermission>|null,
+     *     RevokePermissions?: list<Shapes\ResourcePermission>|null
      * } $args
      */
     public function __construct(array $args)

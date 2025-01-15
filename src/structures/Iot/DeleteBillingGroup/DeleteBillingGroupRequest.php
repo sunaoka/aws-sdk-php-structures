@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $billingGroupName
- * @property int $expectedVersion
+ * @property int|null $expectedVersion
  */
 class DeleteBillingGroupRequest extends Request
 {
     /**
      * @param array{
      *     billingGroupName: string,
-     *     expectedVersion?: int
+     *     expectedVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

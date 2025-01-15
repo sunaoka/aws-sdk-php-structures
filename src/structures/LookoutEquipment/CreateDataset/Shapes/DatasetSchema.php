@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LookoutEquipment\CreateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InlineDataSchema
+ * @property string|null $InlineDataSchema
  */
 class DatasetSchema extends Shape
 {
     /**
-     * @param array{InlineDataSchema?: string} $args
+     * @param array{InlineDataSchema?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FirewallPolicyName
  * @property Shapes\FirewallPolicy $FirewallPolicy
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
- * @property bool $DryRun
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $DryRun
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class CreateFirewallPolicyRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateFirewallPolicyRequest extends Request
      * @param array{
      *     FirewallPolicyName: string,
      *     FirewallPolicy: Shapes\FirewallPolicy,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     DryRun?: bool,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DryRun?: bool|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

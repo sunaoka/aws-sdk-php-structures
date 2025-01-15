@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\ListTargetsByRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MessageGroupId
+ * @property string|null $MessageGroupId
  */
 class SqsParameters extends Shape
 {
     /**
-     * @param array{MessageGroupId?: string} $args
+     * @param array{MessageGroupId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

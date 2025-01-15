@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListWirelessDeviceImportTasks\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $DestinationName
- * @property SidewalkGetStartImportInfo $Sidewalk
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property 'INITIALIZING'|'INITIALIZED'|'PENDING'|'COMPLETE'|'FAILED'|'DELETING' $Status
- * @property string $StatusReason
- * @property int $InitializedImportedDeviceCount
- * @property int $PendingImportedDeviceCount
- * @property int $OnboardedImportedDeviceCount
- * @property int $FailedImportedDeviceCount
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $DestinationName
+ * @property SidewalkGetStartImportInfo|null $Sidewalk
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property 'INITIALIZING'|'INITIALIZED'|'PENDING'|'COMPLETE'|'FAILED'|'DELETING'|null $Status
+ * @property string|null $StatusReason
+ * @property int|null $InitializedImportedDeviceCount
+ * @property int|null $PendingImportedDeviceCount
+ * @property int|null $OnboardedImportedDeviceCount
+ * @property int|null $FailedImportedDeviceCount
  */
 class WirelessDeviceImportTask extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     DestinationName?: string,
-     *     Sidewalk?: SidewalkGetStartImportInfo,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Status?: 'INITIALIZING'|'INITIALIZED'|'PENDING'|'COMPLETE'|'FAILED'|'DELETING',
-     *     StatusReason?: string,
-     *     InitializedImportedDeviceCount?: int,
-     *     PendingImportedDeviceCount?: int,
-     *     OnboardedImportedDeviceCount?: int,
-     *     FailedImportedDeviceCount?: int
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     DestinationName?: string|null,
+     *     Sidewalk?: SidewalkGetStartImportInfo|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'INITIALIZING'|'INITIALIZED'|'PENDING'|'COMPLETE'|'FAILED'|'DELETING'|null,
+     *     StatusReason?: string|null,
+     *     InitializedImportedDeviceCount?: int|null,
+     *     PendingImportedDeviceCount?: int|null,
+     *     OnboardedImportedDeviceCount?: int|null,
+     *     FailedImportedDeviceCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Rekognition\SearchUsersByImage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\UserMatch> $UserMatches
- * @property string $FaceModelVersion
- * @property Shapes\SearchedFaceDetails $SearchedFace
- * @property list<Shapes\UnsearchedFace> $UnsearchedFaces
+ * @property list<Shapes\UserMatch>|null $UserMatches
+ * @property string|null $FaceModelVersion
+ * @property Shapes\SearchedFaceDetails|null $SearchedFace
+ * @property list<Shapes\UnsearchedFace>|null $UnsearchedFaces
  */
 class SearchUsersByImageResponse extends Response
 {

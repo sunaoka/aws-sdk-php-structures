@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EdgeLocation
  * @property string $TransportAttachmentId
  * @property Shapes\ConnectAttachmentOptions $Options
- * @property list<Shapes\Tag> $Tags
- * @property string $ClientToken
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientToken
  */
 class CreateConnectAttachmentRequest extends Request
 {
@@ -20,8 +20,8 @@ class CreateConnectAttachmentRequest extends Request
      *     EdgeLocation: string,
      *     TransportAttachmentId: string,
      *     Options: Shapes\ConnectAttachmentOptions,
-     *     Tags?: list<Shapes\Tag>,
-     *     ClientToken?: string
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

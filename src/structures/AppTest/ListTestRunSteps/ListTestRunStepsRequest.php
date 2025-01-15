@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $testRunId
- * @property string $testCaseId
- * @property string $testSuiteId
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $testCaseId
+ * @property string|null $testSuiteId
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListTestRunStepsRequest extends Request
 {
     /**
      * @param array{
      *     testRunId: string,
-     *     testCaseId?: string,
-     *     testSuiteId?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     testCaseId?: string|null,
+     *     testSuiteId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

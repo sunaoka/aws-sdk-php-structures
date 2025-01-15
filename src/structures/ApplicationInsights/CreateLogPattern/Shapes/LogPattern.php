@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\CreateLogPattern\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PatternSetName
- * @property string $PatternName
- * @property string $Pattern
- * @property int $Rank
+ * @property string|null $PatternSetName
+ * @property string|null $PatternName
+ * @property string|null $Pattern
+ * @property int|null $Rank
  */
 class LogPattern extends Shape
 {
     /**
      * @param array{
-     *     PatternSetName?: string,
-     *     PatternName?: string,
-     *     Pattern?: string,
-     *     Rank?: int
+     *     PatternSetName?: string|null,
+     *     PatternName?: string|null,
+     *     Pattern?: string|null,
+     *     Rank?: int|null
      * } $args
      */
     public function __construct(array $args = [])

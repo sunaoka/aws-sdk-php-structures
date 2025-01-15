@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\UpdateComponentType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $requiredProperties
- * @property 'ENTITY'|'WORKSPACE' $scope
- * @property DataConnector $implementedBy
+ * @property list<string>|null $requiredProperties
+ * @property 'ENTITY'|'WORKSPACE'|null $scope
+ * @property DataConnector|null $implementedBy
  */
 class FunctionRequest extends Shape
 {
     /**
      * @param array{
-     *     requiredProperties?: list<string>,
-     *     scope?: 'ENTITY'|'WORKSPACE',
-     *     implementedBy?: DataConnector
+     *     requiredProperties?: list<string>|null,
+     *     scope?: 'ENTITY'|'WORKSPACE'|null,
+     *     implementedBy?: DataConnector|null
      * } $args
      */
     public function __construct(array $args = [])

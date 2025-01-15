@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\B2bi\ListPartnerships\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $componentSeparator
- * @property string $dataElementSeparator
- * @property string $segmentTerminator
+ * @property string|null $componentSeparator
+ * @property string|null $dataElementSeparator
+ * @property string|null $segmentTerminator
  */
 class X12Delimiters extends Shape
 {
     /**
      * @param array{
-     *     componentSeparator?: string,
-     *     dataElementSeparator?: string,
-     *     segmentTerminator?: string
+     *     componentSeparator?: string|null,
+     *     dataElementSeparator?: string|null,
+     *     segmentTerminator?: string|null
      * } $args
      */
     public function __construct(array $args = [])

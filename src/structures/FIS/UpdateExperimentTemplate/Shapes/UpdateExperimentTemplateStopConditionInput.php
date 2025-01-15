@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $source
- * @property string $value
+ * @property string|null $value
  */
 class UpdateExperimentTemplateStopConditionInput extends Shape
 {
     /**
      * @param array{
      *     source: string,
-     *     value?: string
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args)

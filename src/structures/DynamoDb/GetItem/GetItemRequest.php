@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TableName
  * @property array<string, Shapes\AttributeValue> $Key
- * @property list<string> $AttributesToGet
- * @property bool $ConsistentRead
- * @property 'INDEXES'|'TOTAL'|'NONE' $ReturnConsumedCapacity
- * @property string $ProjectionExpression
- * @property array<string, string> $ExpressionAttributeNames
+ * @property list<string>|null $AttributesToGet
+ * @property bool|null $ConsistentRead
+ * @property 'INDEXES'|'TOTAL'|'NONE'|null $ReturnConsumedCapacity
+ * @property string|null $ProjectionExpression
+ * @property array<string, string>|null $ExpressionAttributeNames
  */
 class GetItemRequest extends Request
 {
@@ -19,11 +19,11 @@ class GetItemRequest extends Request
      * @param array{
      *     TableName: string,
      *     Key: array<string, Shapes\AttributeValue>,
-     *     AttributesToGet?: list<string>,
-     *     ConsistentRead?: bool,
-     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE',
-     *     ProjectionExpression?: string,
-     *     ExpressionAttributeNames?: array<string, string>
+     *     AttributesToGet?: list<string>|null,
+     *     ConsistentRead?: bool|null,
+     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE'|null,
+     *     ProjectionExpression?: string|null,
+     *     ExpressionAttributeNames?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

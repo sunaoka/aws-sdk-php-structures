@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\DeleteRecommendationTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $recommendationTemplateArn
  */
 class DeleteRecommendationTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     recommendationTemplateArn: string
      * } $args
      */

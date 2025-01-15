@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLocalGatewayVirtualInterfaces\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LocalGatewayVirtualInterfaceId
- * @property string $LocalGatewayId
- * @property int $Vlan
- * @property string $LocalAddress
- * @property string $PeerAddress
- * @property int $LocalBgpAsn
- * @property int $PeerBgpAsn
- * @property string $OwnerId
- * @property list<Tag> $Tags
+ * @property string|null $LocalGatewayVirtualInterfaceId
+ * @property string|null $LocalGatewayId
+ * @property int|null $Vlan
+ * @property string|null $LocalAddress
+ * @property string|null $PeerAddress
+ * @property int|null $LocalBgpAsn
+ * @property int|null $PeerBgpAsn
+ * @property string|null $OwnerId
+ * @property list<Tag>|null $Tags
  */
 class LocalGatewayVirtualInterface extends Shape
 {
     /**
      * @param array{
-     *     LocalGatewayVirtualInterfaceId?: string,
-     *     LocalGatewayId?: string,
-     *     Vlan?: int,
-     *     LocalAddress?: string,
-     *     PeerAddress?: string,
-     *     LocalBgpAsn?: int,
-     *     PeerBgpAsn?: int,
-     *     OwnerId?: string,
-     *     Tags?: list<Tag>
+     *     LocalGatewayVirtualInterfaceId?: string|null,
+     *     LocalGatewayId?: string|null,
+     *     Vlan?: int|null,
+     *     LocalAddress?: string|null,
+     *     PeerAddress?: string|null,
+     *     LocalBgpAsn?: int|null,
+     *     PeerBgpAsn?: int|null,
+     *     OwnerId?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

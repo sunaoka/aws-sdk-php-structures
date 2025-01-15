@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\GetBatchJobExecution\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fileName
- * @property string $scriptName
+ * @property string|null $fileName
+ * @property string|null $scriptName
  */
 class JobIdentifier extends Shape
 {
     /**
      * @param array{
-     *     fileName?: string,
-     *     scriptName?: string
+     *     fileName?: string|null,
+     *     scriptName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

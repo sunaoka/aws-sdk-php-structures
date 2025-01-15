@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\DescribePackagingConfiguration\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NONE'|'SCTE35_ENHANCED'|'PASSTHROUGH' $AdMarkers
- * @property bool $IncludeIframeOnlyStream
- * @property string $ManifestName
- * @property int $ProgramDateTimeIntervalSeconds
- * @property bool $RepeatExtXKey
- * @property StreamSelection $StreamSelection
+ * @property 'NONE'|'SCTE35_ENHANCED'|'PASSTHROUGH'|null $AdMarkers
+ * @property bool|null $IncludeIframeOnlyStream
+ * @property string|null $ManifestName
+ * @property int|null $ProgramDateTimeIntervalSeconds
+ * @property bool|null $RepeatExtXKey
+ * @property StreamSelection|null $StreamSelection
  */
 class HlsManifest extends Shape
 {
     /**
      * @param array{
-     *     AdMarkers?: 'NONE'|'SCTE35_ENHANCED'|'PASSTHROUGH',
-     *     IncludeIframeOnlyStream?: bool,
-     *     ManifestName?: string,
-     *     ProgramDateTimeIntervalSeconds?: int,
-     *     RepeatExtXKey?: bool,
-     *     StreamSelection?: StreamSelection
+     *     AdMarkers?: 'NONE'|'SCTE35_ENHANCED'|'PASSTHROUGH'|null,
+     *     IncludeIframeOnlyStream?: bool|null,
+     *     ManifestName?: string|null,
+     *     ProgramDateTimeIntervalSeconds?: int|null,
+     *     RepeatExtXKey?: bool|null,
+     *     StreamSelection?: StreamSelection|null
      * } $args
      */
     public function __construct(array $args = [])

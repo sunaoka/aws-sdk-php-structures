@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetAutoScalingGroupRecommendat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property string $autoScalingGroupArn
- * @property string $autoScalingGroupName
- * @property 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized' $finding
- * @property list<UtilizationMetric> $utilizationMetrics
- * @property double $lookBackPeriodInDays
- * @property AutoScalingGroupConfiguration $currentConfiguration
- * @property GpuInfo $currentInstanceGpuInfo
- * @property list<AutoScalingGroupRecommendationOption> $recommendationOptions
- * @property \Aws\Api\DateTimeResult $lastRefreshTimestamp
- * @property 'VeryLow'|'Low'|'Medium'|'High' $currentPerformanceRisk
- * @property EffectiveRecommendationPreferences $effectiveRecommendationPreferences
- * @property list<'AmazonEmr'|'ApacheCassandra'|'ApacheHadoop'|'Memcached'|'Nginx'|'PostgreSql'|'Redis'|'Kafka'|'SQLServer'> $inferredWorkloadTypes
+ * @property string|null $accountId
+ * @property string|null $autoScalingGroupArn
+ * @property string|null $autoScalingGroupName
+ * @property 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized'|null $finding
+ * @property list<UtilizationMetric>|null $utilizationMetrics
+ * @property double|null $lookBackPeriodInDays
+ * @property AutoScalingGroupConfiguration|null $currentConfiguration
+ * @property GpuInfo|null $currentInstanceGpuInfo
+ * @property list<AutoScalingGroupRecommendationOption>|null $recommendationOptions
+ * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
+ * @property 'VeryLow'|'Low'|'Medium'|'High'|null $currentPerformanceRisk
+ * @property EffectiveRecommendationPreferences|null $effectiveRecommendationPreferences
+ * @property list<'AmazonEmr'|'ApacheCassandra'|'ApacheHadoop'|'Memcached'|'Nginx'|'PostgreSql'|'Redis'|'Kafka'|'SQLServer'>|null $inferredWorkloadTypes
  */
 class AutoScalingGroupRecommendation extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     autoScalingGroupArn?: string,
-     *     autoScalingGroupName?: string,
-     *     finding?: 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized',
-     *     utilizationMetrics?: list<UtilizationMetric>,
-     *     lookBackPeriodInDays?: double,
-     *     currentConfiguration?: AutoScalingGroupConfiguration,
-     *     currentInstanceGpuInfo?: GpuInfo,
-     *     recommendationOptions?: list<AutoScalingGroupRecommendationOption>,
-     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult,
-     *     currentPerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High',
-     *     effectiveRecommendationPreferences?: EffectiveRecommendationPreferences,
-     *     inferredWorkloadTypes?: list<'AmazonEmr'|'ApacheCassandra'|'ApacheHadoop'|'Memcached'|'Nginx'|'PostgreSql'|'Redis'|'Kafka'|'SQLServer'>
+     *     accountId?: string|null,
+     *     autoScalingGroupArn?: string|null,
+     *     autoScalingGroupName?: string|null,
+     *     finding?: 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized'|null,
+     *     utilizationMetrics?: list<UtilizationMetric>|null,
+     *     lookBackPeriodInDays?: double|null,
+     *     currentConfiguration?: AutoScalingGroupConfiguration|null,
+     *     currentInstanceGpuInfo?: GpuInfo|null,
+     *     recommendationOptions?: list<AutoScalingGroupRecommendationOption>|null,
+     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     currentPerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High'|null,
+     *     effectiveRecommendationPreferences?: EffectiveRecommendationPreferences|null,
+     *     inferredWorkloadTypes?: list<'AmazonEmr'|'ApacheCassandra'|'ApacheHadoop'|'Memcached'|'Nginx'|'PostgreSql'|'Redis'|'Kafka'|'SQLServer'>|null
      * } $args
      */
     public function __construct(array $args = [])

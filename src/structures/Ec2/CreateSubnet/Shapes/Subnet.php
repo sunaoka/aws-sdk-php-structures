@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateSubnet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZoneId
- * @property int $EnableLniAtDeviceIndex
- * @property bool $MapCustomerOwnedIpOnLaunch
- * @property string $CustomerOwnedIpv4Pool
- * @property string $OwnerId
- * @property bool $AssignIpv6AddressOnCreation
- * @property list<SubnetIpv6CidrBlockAssociation> $Ipv6CidrBlockAssociationSet
- * @property list<Tag> $Tags
- * @property string $SubnetArn
- * @property string $OutpostArn
- * @property bool $EnableDns64
- * @property bool $Ipv6Native
- * @property PrivateDnsNameOptionsOnLaunch $PrivateDnsNameOptionsOnLaunch
- * @property BlockPublicAccessStates $BlockPublicAccessStates
- * @property string $SubnetId
- * @property 'pending'|'available'|'unavailable' $State
- * @property string $VpcId
- * @property string $CidrBlock
- * @property int $AvailableIpAddressCount
- * @property string $AvailabilityZone
- * @property bool $DefaultForAz
- * @property bool $MapPublicIpOnLaunch
+ * @property string|null $AvailabilityZoneId
+ * @property int|null $EnableLniAtDeviceIndex
+ * @property bool|null $MapCustomerOwnedIpOnLaunch
+ * @property string|null $CustomerOwnedIpv4Pool
+ * @property string|null $OwnerId
+ * @property bool|null $AssignIpv6AddressOnCreation
+ * @property list<SubnetIpv6CidrBlockAssociation>|null $Ipv6CidrBlockAssociationSet
+ * @property list<Tag>|null $Tags
+ * @property string|null $SubnetArn
+ * @property string|null $OutpostArn
+ * @property bool|null $EnableDns64
+ * @property bool|null $Ipv6Native
+ * @property PrivateDnsNameOptionsOnLaunch|null $PrivateDnsNameOptionsOnLaunch
+ * @property BlockPublicAccessStates|null $BlockPublicAccessStates
+ * @property string|null $SubnetId
+ * @property 'pending'|'available'|'unavailable'|null $State
+ * @property string|null $VpcId
+ * @property string|null $CidrBlock
+ * @property int|null $AvailableIpAddressCount
+ * @property string|null $AvailabilityZone
+ * @property bool|null $DefaultForAz
+ * @property bool|null $MapPublicIpOnLaunch
  */
 class Subnet extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZoneId?: string,
-     *     EnableLniAtDeviceIndex?: int,
-     *     MapCustomerOwnedIpOnLaunch?: bool,
-     *     CustomerOwnedIpv4Pool?: string,
-     *     OwnerId?: string,
-     *     AssignIpv6AddressOnCreation?: bool,
-     *     Ipv6CidrBlockAssociationSet?: list<SubnetIpv6CidrBlockAssociation>,
-     *     Tags?: list<Tag>,
-     *     SubnetArn?: string,
-     *     OutpostArn?: string,
-     *     EnableDns64?: bool,
-     *     Ipv6Native?: bool,
-     *     PrivateDnsNameOptionsOnLaunch?: PrivateDnsNameOptionsOnLaunch,
-     *     BlockPublicAccessStates?: BlockPublicAccessStates,
-     *     SubnetId?: string,
-     *     State?: 'pending'|'available'|'unavailable',
-     *     VpcId?: string,
-     *     CidrBlock?: string,
-     *     AvailableIpAddressCount?: int,
-     *     AvailabilityZone?: string,
-     *     DefaultForAz?: bool,
-     *     MapPublicIpOnLaunch?: bool
+     *     AvailabilityZoneId?: string|null,
+     *     EnableLniAtDeviceIndex?: int|null,
+     *     MapCustomerOwnedIpOnLaunch?: bool|null,
+     *     CustomerOwnedIpv4Pool?: string|null,
+     *     OwnerId?: string|null,
+     *     AssignIpv6AddressOnCreation?: bool|null,
+     *     Ipv6CidrBlockAssociationSet?: list<SubnetIpv6CidrBlockAssociation>|null,
+     *     Tags?: list<Tag>|null,
+     *     SubnetArn?: string|null,
+     *     OutpostArn?: string|null,
+     *     EnableDns64?: bool|null,
+     *     Ipv6Native?: bool|null,
+     *     PrivateDnsNameOptionsOnLaunch?: PrivateDnsNameOptionsOnLaunch|null,
+     *     BlockPublicAccessStates?: BlockPublicAccessStates|null,
+     *     SubnetId?: string|null,
+     *     State?: 'pending'|'available'|'unavailable'|null,
+     *     VpcId?: string|null,
+     *     CidrBlock?: string|null,
+     *     AvailableIpAddressCount?: int|null,
+     *     AvailabilityZone?: string|null,
+     *     DefaultForAz?: bool|null,
+     *     MapPublicIpOnLaunch?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

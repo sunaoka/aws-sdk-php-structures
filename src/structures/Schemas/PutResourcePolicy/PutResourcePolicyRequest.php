@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Policy
- * @property string $RegistryName
- * @property string $RevisionId
+ * @property string|null $RegistryName
+ * @property string|null $RevisionId
  */
 class PutResourcePolicyRequest extends Request
 {
     /**
      * @param array{
      *     Policy: string,
-     *     RegistryName?: string,
-     *     RevisionId?: string
+     *     RegistryName?: string|null,
+     *     RevisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

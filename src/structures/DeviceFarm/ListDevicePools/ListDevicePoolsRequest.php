@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property 'CURATED'|'PRIVATE' $type
- * @property string $nextToken
+ * @property 'CURATED'|'PRIVATE'|null $type
+ * @property string|null $nextToken
  */
 class ListDevicePoolsRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     type?: 'CURATED'|'PRIVATE',
-     *     nextToken?: string
+     *     type?: 'CURATED'|'PRIVATE'|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

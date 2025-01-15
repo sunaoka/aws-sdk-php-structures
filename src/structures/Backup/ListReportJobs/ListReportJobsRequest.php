@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Backup\ListReportJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ByReportPlanName
- * @property \Aws\Api\DateTimeResult $ByCreationBefore
- * @property \Aws\Api\DateTimeResult $ByCreationAfter
- * @property string $ByStatus
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property string|null $ByReportPlanName
+ * @property \Aws\Api\DateTimeResult|null $ByCreationBefore
+ * @property \Aws\Api\DateTimeResult|null $ByCreationAfter
+ * @property string|null $ByStatus
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListReportJobsRequest extends Request
 {
     /**
      * @param array{
-     *     ByReportPlanName?: string,
-     *     ByCreationBefore?: \Aws\Api\DateTimeResult,
-     *     ByCreationAfter?: \Aws\Api\DateTimeResult,
-     *     ByStatus?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     ByReportPlanName?: string|null,
+     *     ByCreationBefore?: \Aws\Api\DateTimeResult|null,
+     *     ByCreationAfter?: \Aws\Api\DateTimeResult|null,
+     *     ByStatus?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

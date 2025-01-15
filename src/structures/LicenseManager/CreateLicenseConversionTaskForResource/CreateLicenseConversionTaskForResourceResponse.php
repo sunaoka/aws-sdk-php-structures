@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LicenseManager\CreateLicenseConversionTaskForRe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LicenseConversionTaskId
+ * @property string|null $LicenseConversionTaskId
  */
 class CreateLicenseConversionTaskForResourceResponse extends Response
 {

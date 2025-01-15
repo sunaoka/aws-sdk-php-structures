@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TableName
  * @property string $StreamArn
- * @property Shapes\UpdateKinesisStreamingConfiguration $UpdateKinesisStreamingConfiguration
+ * @property Shapes\UpdateKinesisStreamingConfiguration|null $UpdateKinesisStreamingConfiguration
  */
 class UpdateKinesisStreamingDestinationRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateKinesisStreamingDestinationRequest extends Request
      * @param array{
      *     TableName: string,
      *     StreamArn: string,
-     *     UpdateKinesisStreamingConfiguration?: Shapes\UpdateKinesisStreamingConfiguration
+     *     UpdateKinesisStreamingConfiguration?: Shapes\UpdateKinesisStreamingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

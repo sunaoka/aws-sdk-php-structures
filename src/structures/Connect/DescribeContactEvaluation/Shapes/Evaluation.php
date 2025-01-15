@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, EvaluationAnswerOutput> $Answers
  * @property array<string, EvaluationNote> $Notes
  * @property 'DRAFT'|'SUBMITTED' $Status
- * @property array<string, EvaluationScore> $Scores
+ * @property array<string, EvaluationScore>|null $Scores
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class Evaluation extends Shape
 {
@@ -26,10 +26,10 @@ class Evaluation extends Shape
      *     Answers: array<string, EvaluationAnswerOutput>,
      *     Notes: array<string, EvaluationNote>,
      *     Status: 'DRAFT'|'SUBMITTED',
-     *     Scores?: array<string, EvaluationScore>,
+     *     Scores?: array<string, EvaluationScore>|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

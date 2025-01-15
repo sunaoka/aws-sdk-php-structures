@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\UpdatePackageConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\VersionUpdateByJobsConfig $versionUpdateByJobsConfig
- * @property string $clientToken
+ * @property Shapes\VersionUpdateByJobsConfig|null $versionUpdateByJobsConfig
+ * @property string|null $clientToken
  */
 class UpdatePackageConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     versionUpdateByJobsConfig?: Shapes\VersionUpdateByJobsConfig,
-     *     clientToken?: string
+     *     versionUpdateByJobsConfig?: Shapes\VersionUpdateByJobsConfig|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

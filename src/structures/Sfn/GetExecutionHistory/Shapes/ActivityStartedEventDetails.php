@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Sfn\GetExecutionHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $workerName
+ * @property string|null $workerName
  */
 class ActivityStartedEventDetails extends Shape
 {
     /**
-     * @param array{workerName?: string} $args
+     * @param array{workerName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property InputLocation $KeyProviderServer
+ * @property InputLocation|null $KeyProviderServer
  * @property string $StaticKeyValue
  */
 class StaticKeySettings extends Shape
 {
     /**
      * @param array{
-     *     KeyProviderServer?: InputLocation,
+     *     KeyProviderServer?: InputLocation|null,
      *     StaticKeyValue: string
      * } $args
      */

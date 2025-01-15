@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Backup\DescribeProtectedResource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceArn
- * @property string $ResourceType
- * @property \Aws\Api\DateTimeResult $LastBackupTime
- * @property string $ResourceName
- * @property string $LastBackupVaultArn
- * @property string $LastRecoveryPointArn
- * @property int $LatestRestoreExecutionTimeMinutes
- * @property \Aws\Api\DateTimeResult $LatestRestoreJobCreationDate
- * @property \Aws\Api\DateTimeResult $LatestRestoreRecoveryPointCreationDate
+ * @property string|null $ResourceArn
+ * @property string|null $ResourceType
+ * @property \Aws\Api\DateTimeResult|null $LastBackupTime
+ * @property string|null $ResourceName
+ * @property string|null $LastBackupVaultArn
+ * @property string|null $LastRecoveryPointArn
+ * @property int|null $LatestRestoreExecutionTimeMinutes
+ * @property \Aws\Api\DateTimeResult|null $LatestRestoreJobCreationDate
+ * @property \Aws\Api\DateTimeResult|null $LatestRestoreRecoveryPointCreationDate
  */
 class DescribeProtectedResourceResponse extends Response
 {

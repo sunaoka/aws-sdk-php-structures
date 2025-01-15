@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeRemediationExecutionStatu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceKey $ResourceKey
- * @property 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $State
- * @property list<RemediationExecutionStep> $StepDetails
- * @property \Aws\Api\DateTimeResult $InvocationTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
+ * @property ResourceKey|null $ResourceKey
+ * @property 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null $State
+ * @property list<RemediationExecutionStep>|null $StepDetails
+ * @property \Aws\Api\DateTimeResult|null $InvocationTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  */
 class RemediationExecutionStatus extends Shape
 {
     /**
      * @param array{
-     *     ResourceKey?: ResourceKey,
-     *     State?: 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED',
-     *     StepDetails?: list<RemediationExecutionStep>,
-     *     InvocationTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult
+     *     ResourceKey?: ResourceKey|null,
+     *     State?: 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null,
+     *     StepDetails?: list<RemediationExecutionStep>|null,
+     *     InvocationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

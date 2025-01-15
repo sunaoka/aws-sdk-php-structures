@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Cidr
- * @property string $Description
+ * @property string|null $Description
  */
 class AddPrefixListEntry extends Shape
 {
     /**
      * @param array{
      *     Cidr: string,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

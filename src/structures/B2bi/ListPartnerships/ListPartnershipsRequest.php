@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\B2bi\ListPartnerships;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $profileId
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $profileId
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListPartnershipsRequest extends Request
 {
     /**
      * @param array{
-     *     profileId?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     profileId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

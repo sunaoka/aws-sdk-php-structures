@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListProvisionedProductPlans\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlanName
- * @property string $PlanId
- * @property string $ProvisionProductId
- * @property string $ProvisionProductName
- * @property 'CLOUDFORMATION' $PlanType
- * @property string $ProvisioningArtifactId
+ * @property string|null $PlanName
+ * @property string|null $PlanId
+ * @property string|null $ProvisionProductId
+ * @property string|null $ProvisionProductName
+ * @property 'CLOUDFORMATION'|null $PlanType
+ * @property string|null $ProvisioningArtifactId
  */
 class ProvisionedProductPlanSummary extends Shape
 {
     /**
      * @param array{
-     *     PlanName?: string,
-     *     PlanId?: string,
-     *     ProvisionProductId?: string,
-     *     ProvisionProductName?: string,
-     *     PlanType?: 'CLOUDFORMATION',
-     *     ProvisioningArtifactId?: string
+     *     PlanName?: string|null,
+     *     PlanId?: string|null,
+     *     ProvisionProductId?: string|null,
+     *     ProvisionProductName?: string|null,
+     *     PlanType?: 'CLOUDFORMATION'|null,
+     *     ProvisioningArtifactId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

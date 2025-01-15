@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisioningParameters\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property list<string> $Values
+ * @property string|null $Key
+ * @property list<string>|null $Values
  */
 class TagOptionSummary extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Values?: list<string>
+     *     Key?: string|null,
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

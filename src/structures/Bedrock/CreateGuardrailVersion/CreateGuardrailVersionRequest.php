@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $guardrailIdentifier
- * @property string $description
- * @property string $clientRequestToken
+ * @property string|null $description
+ * @property string|null $clientRequestToken
  */
 class CreateGuardrailVersionRequest extends Request
 {
     /**
      * @param array{
      *     guardrailIdentifier: string,
-     *     description?: string,
-     *     clientRequestToken?: string
+     *     description?: string|null,
+     *     clientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

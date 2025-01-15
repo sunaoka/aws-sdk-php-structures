@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxResultItemsToExpand
- * @property int $MaxExpandedResultsPerItem
+ * @property int|null $MaxResultItemsToExpand
+ * @property int|null $MaxExpandedResultsPerItem
  */
 class ExpandConfiguration extends Shape
 {
     /**
      * @param array{
-     *     MaxResultItemsToExpand?: int,
-     *     MaxExpandedResultsPerItem?: int
+     *     MaxResultItemsToExpand?: int|null,
+     *     MaxExpandedResultsPerItem?: int|null
      * } $args
      */
     public function __construct(array $args = [])

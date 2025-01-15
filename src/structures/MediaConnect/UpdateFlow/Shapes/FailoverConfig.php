@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MERGE'|'FAILOVER' $FailoverMode
- * @property int $RecoveryWindow
- * @property SourcePriority $SourcePriority
- * @property 'ENABLED'|'DISABLED' $State
+ * @property 'MERGE'|'FAILOVER'|null $FailoverMode
+ * @property int|null $RecoveryWindow
+ * @property SourcePriority|null $SourcePriority
+ * @property 'ENABLED'|'DISABLED'|null $State
  */
 class FailoverConfig extends Shape
 {
     /**
      * @param array{
-     *     FailoverMode?: 'MERGE'|'FAILOVER',
-     *     RecoveryWindow?: int,
-     *     SourcePriority?: SourcePriority,
-     *     State?: 'ENABLED'|'DISABLED'
+     *     FailoverMode?: 'MERGE'|'FAILOVER'|null,
+     *     RecoveryWindow?: int|null,
+     *     SourcePriority?: SourcePriority|null,
+     *     State?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

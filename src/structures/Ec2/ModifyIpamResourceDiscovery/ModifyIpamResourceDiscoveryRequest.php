@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyIpamResourceDiscovery;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $IpamResourceDiscoveryId
- * @property string $Description
- * @property list<Shapes\AddIpamOperatingRegion> $AddOperatingRegions
- * @property list<Shapes\RemoveIpamOperatingRegion> $RemoveOperatingRegions
- * @property list<Shapes\AddIpamOrganizationalUnitExclusion> $AddOrganizationalUnitExclusions
- * @property list<Shapes\RemoveIpamOrganizationalUnitExclusion> $RemoveOrganizationalUnitExclusions
+ * @property string|null $Description
+ * @property list<Shapes\AddIpamOperatingRegion>|null $AddOperatingRegions
+ * @property list<Shapes\RemoveIpamOperatingRegion>|null $RemoveOperatingRegions
+ * @property list<Shapes\AddIpamOrganizationalUnitExclusion>|null $AddOrganizationalUnitExclusions
+ * @property list<Shapes\RemoveIpamOrganizationalUnitExclusion>|null $RemoveOrganizationalUnitExclusions
  */
 class ModifyIpamResourceDiscoveryRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     IpamResourceDiscoveryId: string,
-     *     Description?: string,
-     *     AddOperatingRegions?: list<Shapes\AddIpamOperatingRegion>,
-     *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>,
-     *     AddOrganizationalUnitExclusions?: list<Shapes\AddIpamOrganizationalUnitExclusion>,
-     *     RemoveOrganizationalUnitExclusions?: list<Shapes\RemoveIpamOrganizationalUnitExclusion>
+     *     Description?: string|null,
+     *     AddOperatingRegions?: list<Shapes\AddIpamOperatingRegion>|null,
+     *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>|null,
+     *     AddOrganizationalUnitExclusions?: list<Shapes\AddIpamOrganizationalUnitExclusion>|null,
+     *     RemoveOrganizationalUnitExclusions?: list<Shapes\RemoveIpamOrganizationalUnitExclusion>|null
      * } $args
      */
     public function __construct(array $args)

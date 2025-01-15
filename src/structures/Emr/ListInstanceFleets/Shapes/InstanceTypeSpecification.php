@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Emr\ListInstanceFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceType
- * @property int<0, max> $WeightedCapacity
- * @property string $BidPrice
- * @property double $BidPriceAsPercentageOfOnDemandPrice
- * @property list<Configuration> $Configurations
- * @property list<EbsBlockDevice> $EbsBlockDevices
- * @property bool $EbsOptimized
- * @property string $CustomAmiId
- * @property double $Priority
+ * @property string|null $InstanceType
+ * @property int<0, max>|null $WeightedCapacity
+ * @property string|null $BidPrice
+ * @property double|null $BidPriceAsPercentageOfOnDemandPrice
+ * @property list<Configuration>|null $Configurations
+ * @property list<EbsBlockDevice>|null $EbsBlockDevices
+ * @property bool|null $EbsOptimized
+ * @property string|null $CustomAmiId
+ * @property double|null $Priority
  */
 class InstanceTypeSpecification extends Shape
 {
     /**
      * @param array{
-     *     InstanceType?: string,
-     *     WeightedCapacity?: int<0, max>,
-     *     BidPrice?: string,
-     *     BidPriceAsPercentageOfOnDemandPrice?: double,
-     *     Configurations?: list<Configuration>,
-     *     EbsBlockDevices?: list<EbsBlockDevice>,
-     *     EbsOptimized?: bool,
-     *     CustomAmiId?: string,
-     *     Priority?: double
+     *     InstanceType?: string|null,
+     *     WeightedCapacity?: int<0, max>|null,
+     *     BidPrice?: string|null,
+     *     BidPriceAsPercentageOfOnDemandPrice?: double|null,
+     *     Configurations?: list<Configuration>|null,
+     *     EbsBlockDevices?: list<EbsBlockDevice>|null,
+     *     EbsOptimized?: bool|null,
+     *     CustomAmiId?: string|null,
+     *     Priority?: double|null
      * } $args
      */
     public function __construct(array $args = [])

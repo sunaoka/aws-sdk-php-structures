@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\SetRulePriorities\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetGroupArn
- * @property int $Weight
+ * @property string|null $TargetGroupArn
+ * @property int|null $Weight
  */
 class TargetGroupTuple extends Shape
 {
     /**
      * @param array{
-     *     TargetGroupArn?: string,
-     *     Weight?: int
+     *     TargetGroupArn?: string|null,
+     *     Weight?: int|null
      * } $args
      */
     public function __construct(array $args = [])

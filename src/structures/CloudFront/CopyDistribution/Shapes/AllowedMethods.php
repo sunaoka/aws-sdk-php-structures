@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int $Quantity
  * @property list<'GET'|'HEAD'|'POST'|'PUT'|'PATCH'|'OPTIONS'|'DELETE'> $Items
- * @property CachedMethods $CachedMethods
+ * @property CachedMethods|null $CachedMethods
  */
 class AllowedMethods extends Shape
 {
@@ -15,7 +15,7 @@ class AllowedMethods extends Shape
      * @param array{
      *     Quantity: int,
      *     Items: list<'GET'|'HEAD'|'POST'|'PUT'|'PATCH'|'OPTIONS'|'DELETE'>,
-     *     CachedMethods?: CachedMethods
+     *     CachedMethods?: CachedMethods|null
      * } $args
      */
     public function __construct(array $args)

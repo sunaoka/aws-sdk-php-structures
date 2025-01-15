@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $membershipIdentifier
  * @property string $analysisTemplateIdentifier
- * @property string $description
+ * @property string|null $description
  */
 class UpdateAnalysisTemplateRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateAnalysisTemplateRequest extends Request
      * @param array{
      *     membershipIdentifier: string,
      *     analysisTemplateIdentifier: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

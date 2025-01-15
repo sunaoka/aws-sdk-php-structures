@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'SSM_AUTOMATION' $DefinitionType
  * @property array<'Name'|'Version'|'AssumeRole'|'Parameters', string> $Definition
- * @property string $Description
- * @property string $AcceptLanguage
+ * @property string|null $Description
+ * @property string|null $AcceptLanguage
  * @property string $IdempotencyToken
  */
 class CreateServiceActionRequest extends Request
@@ -19,8 +19,8 @@ class CreateServiceActionRequest extends Request
      *     Name: string,
      *     DefinitionType: 'SSM_AUTOMATION',
      *     Definition: array<'Name'|'Version'|'AssumeRole'|'Parameters', string>,
-     *     Description?: string,
-     *     AcceptLanguage?: string,
+     *     Description?: string|null,
+     *     AcceptLanguage?: string|null,
      *     IdempotencyToken: string
      * } $args
      */

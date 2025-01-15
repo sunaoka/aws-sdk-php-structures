@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SesV2\PutDeliverabilityDashboardOption\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Domain
- * @property \Aws\Api\DateTimeResult $SubscriptionStartDate
- * @property InboxPlacementTrackingOption $InboxPlacementTrackingOption
+ * @property string|null $Domain
+ * @property \Aws\Api\DateTimeResult|null $SubscriptionStartDate
+ * @property InboxPlacementTrackingOption|null $InboxPlacementTrackingOption
  */
 class DomainDeliverabilityTrackingOption extends Shape
 {
     /**
      * @param array{
-     *     Domain?: string,
-     *     SubscriptionStartDate?: \Aws\Api\DateTimeResult,
-     *     InboxPlacementTrackingOption?: InboxPlacementTrackingOption
+     *     Domain?: string|null,
+     *     SubscriptionStartDate?: \Aws\Api\DateTimeResult|null,
+     *     InboxPlacementTrackingOption?: InboxPlacementTrackingOption|null
      * } $args
      */
     public function __construct(array $args = [])

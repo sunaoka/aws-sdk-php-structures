@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ItemsLimit
+ * @property int|null $ItemsLimit
  */
 class PluginVisualItemsLimitConfiguration extends Shape
 {
     /**
-     * @param array{ItemsLimit?: int} $args
+     * @param array{ItemsLimit?: int|null} $args
      */
     public function __construct(array $args = [])
     {

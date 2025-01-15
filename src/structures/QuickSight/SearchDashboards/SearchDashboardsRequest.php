@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property list<Shapes\DashboardSearchFilter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class SearchDashboardsRequest extends Request
 {
@@ -16,8 +16,8 @@ class SearchDashboardsRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     Filters: list<Shapes\DashboardSearchFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

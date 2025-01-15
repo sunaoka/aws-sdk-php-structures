@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateDataRepositoryAssociation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssociationId
- * @property string $ResourceARN
- * @property string $FileSystemId
- * @property 'CREATING'|'AVAILABLE'|'MISCONFIGURED'|'UPDATING'|'DELETING'|'FAILED' $Lifecycle
- * @property DataRepositoryFailureDetails $FailureDetails
- * @property string $FileSystemPath
- * @property string $DataRepositoryPath
- * @property bool $BatchImportMetaDataOnCreate
- * @property int<1, 512000> $ImportedFileChunkSize
- * @property S3DataRepositoryConfiguration $S3
- * @property list<Tag> $Tags
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $FileCacheId
- * @property string $FileCachePath
- * @property list<string> $DataRepositorySubdirectories
- * @property NFSDataRepositoryConfiguration $NFS
+ * @property string|null $AssociationId
+ * @property string|null $ResourceARN
+ * @property string|null $FileSystemId
+ * @property 'CREATING'|'AVAILABLE'|'MISCONFIGURED'|'UPDATING'|'DELETING'|'FAILED'|null $Lifecycle
+ * @property DataRepositoryFailureDetails|null $FailureDetails
+ * @property string|null $FileSystemPath
+ * @property string|null $DataRepositoryPath
+ * @property bool|null $BatchImportMetaDataOnCreate
+ * @property int<1, 512000>|null $ImportedFileChunkSize
+ * @property S3DataRepositoryConfiguration|null $S3
+ * @property list<Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $FileCacheId
+ * @property string|null $FileCachePath
+ * @property list<string>|null $DataRepositorySubdirectories
+ * @property NFSDataRepositoryConfiguration|null $NFS
  */
 class DataRepositoryAssociation extends Shape
 {
     /**
      * @param array{
-     *     AssociationId?: string,
-     *     ResourceARN?: string,
-     *     FileSystemId?: string,
-     *     Lifecycle?: 'CREATING'|'AVAILABLE'|'MISCONFIGURED'|'UPDATING'|'DELETING'|'FAILED',
-     *     FailureDetails?: DataRepositoryFailureDetails,
-     *     FileSystemPath?: string,
-     *     DataRepositoryPath?: string,
-     *     BatchImportMetaDataOnCreate?: bool,
-     *     ImportedFileChunkSize?: int<1, 512000>,
-     *     S3?: S3DataRepositoryConfiguration,
-     *     Tags?: list<Tag>,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     FileCacheId?: string,
-     *     FileCachePath?: string,
-     *     DataRepositorySubdirectories?: list<string>,
-     *     NFS?: NFSDataRepositoryConfiguration
+     *     AssociationId?: string|null,
+     *     ResourceARN?: string|null,
+     *     FileSystemId?: string|null,
+     *     Lifecycle?: 'CREATING'|'AVAILABLE'|'MISCONFIGURED'|'UPDATING'|'DELETING'|'FAILED'|null,
+     *     FailureDetails?: DataRepositoryFailureDetails|null,
+     *     FileSystemPath?: string|null,
+     *     DataRepositoryPath?: string|null,
+     *     BatchImportMetaDataOnCreate?: bool|null,
+     *     ImportedFileChunkSize?: int<1, 512000>|null,
+     *     S3?: S3DataRepositoryConfiguration|null,
+     *     Tags?: list<Tag>|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     FileCacheId?: string|null,
+     *     FileCachePath?: string|null,
+     *     DataRepositorySubdirectories?: list<string>|null,
+     *     NFS?: NFSDataRepositoryConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

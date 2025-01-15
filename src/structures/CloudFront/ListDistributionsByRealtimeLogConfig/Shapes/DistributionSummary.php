@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DomainName
  * @property Aliases $Aliases
  * @property Origins $Origins
- * @property OriginGroups $OriginGroups
+ * @property OriginGroups|null $OriginGroups
  * @property DefaultCacheBehavior $DefaultCacheBehavior
  * @property CacheBehaviors $CacheBehaviors
  * @property CustomErrorResponses $CustomErrorResponses
@@ -24,9 +24,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $WebACLId
  * @property 'http1.1'|'http2'|'http3'|'http2and3' $HttpVersion
  * @property bool $IsIPV6Enabled
- * @property list<AliasICPRecordal> $AliasICPRecordals
+ * @property list<AliasICPRecordal>|null $AliasICPRecordals
  * @property bool $Staging
- * @property string $AnycastIpListId
+ * @property string|null $AnycastIpListId
  */
 class DistributionSummary extends Shape
 {
@@ -39,7 +39,7 @@ class DistributionSummary extends Shape
      *     DomainName: string,
      *     Aliases: Aliases,
      *     Origins: Origins,
-     *     OriginGroups?: OriginGroups,
+     *     OriginGroups?: OriginGroups|null,
      *     DefaultCacheBehavior: DefaultCacheBehavior,
      *     CacheBehaviors: CacheBehaviors,
      *     CustomErrorResponses: CustomErrorResponses,
@@ -51,9 +51,9 @@ class DistributionSummary extends Shape
      *     WebACLId: string,
      *     HttpVersion: 'http1.1'|'http2'|'http3'|'http2and3',
      *     IsIPV6Enabled: bool,
-     *     AliasICPRecordals?: list<AliasICPRecordal>,
+     *     AliasICPRecordals?: list<AliasICPRecordal>|null,
      *     Staging: bool,
-     *     AnycastIpListId?: string
+     *     AnycastIpListId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $interval
- * @property string $offset
+ * @property string|null $offset
  */
 class TumblingWindow extends Shape
 {
     /**
      * @param array{
      *     interval: string,
-     *     offset?: string
+     *     offset?: string|null
      * } $args
      */
     public function __construct(array $args)

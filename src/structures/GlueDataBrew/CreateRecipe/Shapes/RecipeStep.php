@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RecipeAction $Action
- * @property list<ConditionExpression> $ConditionExpressions
+ * @property list<ConditionExpression>|null $ConditionExpressions
  */
 class RecipeStep extends Shape
 {
     /**
      * @param array{
      *     Action: RecipeAction,
-     *     ConditionExpressions?: list<ConditionExpression>
+     *     ConditionExpressions?: list<ConditionExpression>|null
      * } $args
      */
     public function __construct(array $args)

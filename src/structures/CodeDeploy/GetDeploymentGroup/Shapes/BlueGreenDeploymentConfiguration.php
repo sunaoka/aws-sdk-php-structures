@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeploymentGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BlueInstanceTerminationOption $terminateBlueInstancesOnDeploymentSuccess
- * @property DeploymentReadyOption $deploymentReadyOption
- * @property GreenFleetProvisioningOption $greenFleetProvisioningOption
+ * @property BlueInstanceTerminationOption|null $terminateBlueInstancesOnDeploymentSuccess
+ * @property DeploymentReadyOption|null $deploymentReadyOption
+ * @property GreenFleetProvisioningOption|null $greenFleetProvisioningOption
  */
 class BlueGreenDeploymentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     terminateBlueInstancesOnDeploymentSuccess?: BlueInstanceTerminationOption,
-     *     deploymentReadyOption?: DeploymentReadyOption,
-     *     greenFleetProvisioningOption?: GreenFleetProvisioningOption
+     *     terminateBlueInstancesOnDeploymentSuccess?: BlueInstanceTerminationOption|null,
+     *     deploymentReadyOption?: DeploymentReadyOption|null,
+     *     greenFleetProvisioningOption?: GreenFleetProvisioningOption|null
      * } $args
      */
     public function __construct(array $args = [])

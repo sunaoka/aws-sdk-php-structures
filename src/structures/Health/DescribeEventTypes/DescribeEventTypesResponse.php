@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Health\DescribeEventTypes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EventType> $eventTypes
- * @property string $nextToken
+ * @property list<Shapes\EventType>|null $eventTypes
+ * @property string|null $nextToken
  */
 class DescribeEventTypesResponse extends Response
 {

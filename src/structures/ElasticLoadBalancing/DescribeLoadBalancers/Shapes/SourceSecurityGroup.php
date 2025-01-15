@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancers\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OwnerAlias
- * @property string $GroupName
+ * @property string|null $OwnerAlias
+ * @property string|null $GroupName
  */
 class SourceSecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     OwnerAlias?: string,
-     *     GroupName?: string
+     *     OwnerAlias?: string|null,
+     *     GroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

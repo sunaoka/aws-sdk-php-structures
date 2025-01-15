@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\MedicalImaging\SearchImageSets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DICOMPatientId
- * @property string $DICOMPatientName
- * @property string $DICOMPatientBirthDate
- * @property string $DICOMPatientSex
- * @property string $DICOMStudyInstanceUID
- * @property string $DICOMStudyId
- * @property string $DICOMStudyDescription
- * @property int<0, 1000000> $DICOMNumberOfStudyRelatedSeries
- * @property int<0, 10000> $DICOMNumberOfStudyRelatedInstances
- * @property string $DICOMAccessionNumber
- * @property string $DICOMSeriesInstanceUID
- * @property string $DICOMSeriesModality
- * @property string $DICOMSeriesBodyPart
- * @property int<-2147483648, 2147483647> $DICOMSeriesNumber
- * @property string $DICOMStudyDate
- * @property string $DICOMStudyTime
+ * @property string|null $DICOMPatientId
+ * @property string|null $DICOMPatientName
+ * @property string|null $DICOMPatientBirthDate
+ * @property string|null $DICOMPatientSex
+ * @property string|null $DICOMStudyInstanceUID
+ * @property string|null $DICOMStudyId
+ * @property string|null $DICOMStudyDescription
+ * @property int<0, 1000000>|null $DICOMNumberOfStudyRelatedSeries
+ * @property int<0, 10000>|null $DICOMNumberOfStudyRelatedInstances
+ * @property string|null $DICOMAccessionNumber
+ * @property string|null $DICOMSeriesInstanceUID
+ * @property string|null $DICOMSeriesModality
+ * @property string|null $DICOMSeriesBodyPart
+ * @property int<-2147483648, 2147483647>|null $DICOMSeriesNumber
+ * @property string|null $DICOMStudyDate
+ * @property string|null $DICOMStudyTime
  */
 class DICOMTags extends Shape
 {
     /**
      * @param array{
-     *     DICOMPatientId?: string,
-     *     DICOMPatientName?: string,
-     *     DICOMPatientBirthDate?: string,
-     *     DICOMPatientSex?: string,
-     *     DICOMStudyInstanceUID?: string,
-     *     DICOMStudyId?: string,
-     *     DICOMStudyDescription?: string,
-     *     DICOMNumberOfStudyRelatedSeries?: int<0, 1000000>,
-     *     DICOMNumberOfStudyRelatedInstances?: int<0, 10000>,
-     *     DICOMAccessionNumber?: string,
-     *     DICOMSeriesInstanceUID?: string,
-     *     DICOMSeriesModality?: string,
-     *     DICOMSeriesBodyPart?: string,
-     *     DICOMSeriesNumber?: int<-2147483648, 2147483647>,
-     *     DICOMStudyDate?: string,
-     *     DICOMStudyTime?: string
+     *     DICOMPatientId?: string|null,
+     *     DICOMPatientName?: string|null,
+     *     DICOMPatientBirthDate?: string|null,
+     *     DICOMPatientSex?: string|null,
+     *     DICOMStudyInstanceUID?: string|null,
+     *     DICOMStudyId?: string|null,
+     *     DICOMStudyDescription?: string|null,
+     *     DICOMNumberOfStudyRelatedSeries?: int<0, 1000000>|null,
+     *     DICOMNumberOfStudyRelatedInstances?: int<0, 10000>|null,
+     *     DICOMAccessionNumber?: string|null,
+     *     DICOMSeriesInstanceUID?: string|null,
+     *     DICOMSeriesModality?: string|null,
+     *     DICOMSeriesBodyPart?: string|null,
+     *     DICOMSeriesNumber?: int<-2147483648, 2147483647>|null,
+     *     DICOMStudyDate?: string|null,
+     *     DICOMStudyTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

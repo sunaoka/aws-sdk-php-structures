@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'us-east-1'|'us-west-2' $AwsRegion
+ * @property 'us-east-1'|'us-west-2'|null $AwsRegion
  * @property bool $RequireEncryption
  */
 class CreateVoiceConnectorRequest extends Request
@@ -14,7 +14,7 @@ class CreateVoiceConnectorRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     AwsRegion?: 'us-east-1'|'us-west-2',
+     *     AwsRegion?: 'us-east-1'|'us-west-2'|null,
      *     RequireEncryption: bool
      * } $args
      */

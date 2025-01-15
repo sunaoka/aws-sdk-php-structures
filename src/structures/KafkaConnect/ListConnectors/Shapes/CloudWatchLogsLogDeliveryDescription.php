@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\ListConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $enabled
- * @property string $logGroup
+ * @property bool|null $enabled
+ * @property string|null $logGroup
  */
 class CloudWatchLogsLogDeliveryDescription extends Shape
 {
     /**
      * @param array{
-     *     enabled?: bool,
-     *     logGroup?: string
+     *     enabled?: bool|null,
+     *     logGroup?: string|null
      * } $args
      */
     public function __construct(array $args = [])

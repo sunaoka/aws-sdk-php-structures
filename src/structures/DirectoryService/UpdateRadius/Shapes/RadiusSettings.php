@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DirectoryService\UpdateRadius\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $RadiusServers
- * @property int<1025, 65535> $RadiusPort
- * @property int<1, 50> $RadiusTimeout
- * @property int<0, 10> $RadiusRetries
- * @property string $SharedSecret
- * @property 'PAP'|'CHAP'|'MS-CHAPv1'|'MS-CHAPv2' $AuthenticationProtocol
- * @property string $DisplayLabel
- * @property bool $UseSameUsername
+ * @property list<string>|null $RadiusServers
+ * @property int<1025, 65535>|null $RadiusPort
+ * @property int<1, 50>|null $RadiusTimeout
+ * @property int<0, 10>|null $RadiusRetries
+ * @property string|null $SharedSecret
+ * @property 'PAP'|'CHAP'|'MS-CHAPv1'|'MS-CHAPv2'|null $AuthenticationProtocol
+ * @property string|null $DisplayLabel
+ * @property bool|null $UseSameUsername
  */
 class RadiusSettings extends Shape
 {
     /**
      * @param array{
-     *     RadiusServers?: list<string>,
-     *     RadiusPort?: int<1025, 65535>,
-     *     RadiusTimeout?: int<1, 50>,
-     *     RadiusRetries?: int<0, 10>,
-     *     SharedSecret?: string,
-     *     AuthenticationProtocol?: 'PAP'|'CHAP'|'MS-CHAPv1'|'MS-CHAPv2',
-     *     DisplayLabel?: string,
-     *     UseSameUsername?: bool
+     *     RadiusServers?: list<string>|null,
+     *     RadiusPort?: int<1025, 65535>|null,
+     *     RadiusTimeout?: int<1, 50>|null,
+     *     RadiusRetries?: int<0, 10>|null,
+     *     SharedSecret?: string|null,
+     *     AuthenticationProtocol?: 'PAP'|'CHAP'|'MS-CHAPv1'|'MS-CHAPv2'|null,
+     *     DisplayLabel?: string|null,
+     *     UseSameUsername?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

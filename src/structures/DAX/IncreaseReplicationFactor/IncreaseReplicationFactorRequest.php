@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClusterName
  * @property int $NewReplicationFactor
- * @property list<string> $AvailabilityZones
+ * @property list<string>|null $AvailabilityZones
  */
 class IncreaseReplicationFactorRequest extends Request
 {
@@ -15,7 +15,7 @@ class IncreaseReplicationFactorRequest extends Request
      * @param array{
      *     ClusterName: string,
      *     NewReplicationFactor: int,
-     *     AvailabilityZones?: list<string>
+     *     AvailabilityZones?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

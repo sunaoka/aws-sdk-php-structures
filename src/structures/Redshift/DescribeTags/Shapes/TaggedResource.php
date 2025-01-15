@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeTags\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Tag $Tag
- * @property string $ResourceName
- * @property string $ResourceType
+ * @property Tag|null $Tag
+ * @property string|null $ResourceName
+ * @property string|null $ResourceType
  */
 class TaggedResource extends Shape
 {
     /**
      * @param array{
-     *     Tag?: Tag,
-     *     ResourceName?: string,
-     *     ResourceType?: string
+     *     Tag?: Tag|null,
+     *     ResourceName?: string|null,
+     *     ResourceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

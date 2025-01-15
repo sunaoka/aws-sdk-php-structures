@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AutoScaling\PutWarmPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ReuseOnScaleIn
+ * @property bool|null $ReuseOnScaleIn
  */
 class InstanceReusePolicy extends Shape
 {
     /**
-     * @param array{ReuseOnScaleIn?: bool} $args
+     * @param array{ReuseOnScaleIn?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

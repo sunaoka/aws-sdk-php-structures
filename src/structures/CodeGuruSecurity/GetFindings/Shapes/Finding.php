@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
- * @property string $detectorId
- * @property string $detectorName
- * @property list<string> $detectorTags
- * @property string $generatorId
- * @property string $id
- * @property Remediation $remediation
- * @property Resource $resource
- * @property string $ruleId
- * @property 'Critical'|'High'|'Medium'|'Low'|'Info' $severity
- * @property 'Closed'|'Open'|'All' $status
- * @property string $title
- * @property string $type
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property Vulnerability $vulnerability
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $description
+ * @property string|null $detectorId
+ * @property string|null $detectorName
+ * @property list<string>|null $detectorTags
+ * @property string|null $generatorId
+ * @property string|null $id
+ * @property Remediation|null $remediation
+ * @property Resource|null $resource
+ * @property string|null $ruleId
+ * @property 'Critical'|'High'|'Medium'|'Low'|'Info'|null $severity
+ * @property 'Closed'|'Open'|'All'|null $status
+ * @property string|null $title
+ * @property string|null $type
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property Vulnerability|null $vulnerability
  */
 class Finding extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     detectorId?: string,
-     *     detectorName?: string,
-     *     detectorTags?: list<string>,
-     *     generatorId?: string,
-     *     id?: string,
-     *     remediation?: Remediation,
-     *     resource?: Resource,
-     *     ruleId?: string,
-     *     severity?: 'Critical'|'High'|'Medium'|'Low'|'Info',
-     *     status?: 'Closed'|'Open'|'All',
-     *     title?: string,
-     *     type?: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     vulnerability?: Vulnerability
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     description?: string|null,
+     *     detectorId?: string|null,
+     *     detectorName?: string|null,
+     *     detectorTags?: list<string>|null,
+     *     generatorId?: string|null,
+     *     id?: string|null,
+     *     remediation?: Remediation|null,
+     *     resource?: Resource|null,
+     *     ruleId?: string|null,
+     *     severity?: 'Critical'|'High'|'Medium'|'Low'|'Info'|null,
+     *     status?: 'Closed'|'Open'|'All'|null,
+     *     title?: string|null,
+     *     type?: string|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     vulnerability?: Vulnerability|null
      * } $args
      */
     public function __construct(array $args = [])

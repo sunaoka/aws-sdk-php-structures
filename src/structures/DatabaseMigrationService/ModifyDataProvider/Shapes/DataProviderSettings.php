@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyDataProvider\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftDataProviderSettings $RedshiftSettings
- * @property PostgreSqlDataProviderSettings $PostgreSqlSettings
- * @property MySqlDataProviderSettings $MySqlSettings
- * @property OracleDataProviderSettings $OracleSettings
- * @property MicrosoftSqlServerDataProviderSettings $MicrosoftSqlServerSettings
- * @property DocDbDataProviderSettings $DocDbSettings
- * @property MariaDbDataProviderSettings $MariaDbSettings
- * @property MongoDbDataProviderSettings $MongoDbSettings
+ * @property RedshiftDataProviderSettings|null $RedshiftSettings
+ * @property PostgreSqlDataProviderSettings|null $PostgreSqlSettings
+ * @property MySqlDataProviderSettings|null $MySqlSettings
+ * @property OracleDataProviderSettings|null $OracleSettings
+ * @property MicrosoftSqlServerDataProviderSettings|null $MicrosoftSqlServerSettings
+ * @property DocDbDataProviderSettings|null $DocDbSettings
+ * @property MariaDbDataProviderSettings|null $MariaDbSettings
+ * @property MongoDbDataProviderSettings|null $MongoDbSettings
  */
 class DataProviderSettings extends Shape
 {
     /**
      * @param array{
-     *     RedshiftSettings?: RedshiftDataProviderSettings,
-     *     PostgreSqlSettings?: PostgreSqlDataProviderSettings,
-     *     MySqlSettings?: MySqlDataProviderSettings,
-     *     OracleSettings?: OracleDataProviderSettings,
-     *     MicrosoftSqlServerSettings?: MicrosoftSqlServerDataProviderSettings,
-     *     DocDbSettings?: DocDbDataProviderSettings,
-     *     MariaDbSettings?: MariaDbDataProviderSettings,
-     *     MongoDbSettings?: MongoDbDataProviderSettings
+     *     RedshiftSettings?: RedshiftDataProviderSettings|null,
+     *     PostgreSqlSettings?: PostgreSqlDataProviderSettings|null,
+     *     MySqlSettings?: MySqlDataProviderSettings|null,
+     *     OracleSettings?: OracleDataProviderSettings|null,
+     *     MicrosoftSqlServerSettings?: MicrosoftSqlServerDataProviderSettings|null,
+     *     DocDbSettings?: DocDbDataProviderSettings|null,
+     *     MariaDbSettings?: MariaDbDataProviderSettings|null,
+     *     MongoDbSettings?: MongoDbDataProviderSettings|null
      * } $args
      */
     public function __construct(array $args = [])

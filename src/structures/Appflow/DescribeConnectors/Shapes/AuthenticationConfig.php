@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isBasicAuthSupported
- * @property bool $isApiKeyAuthSupported
- * @property bool $isOAuth2Supported
- * @property bool $isCustomAuthSupported
- * @property OAuth2Defaults $oAuth2Defaults
- * @property list<CustomAuthConfig> $customAuthConfigs
+ * @property bool|null $isBasicAuthSupported
+ * @property bool|null $isApiKeyAuthSupported
+ * @property bool|null $isOAuth2Supported
+ * @property bool|null $isCustomAuthSupported
+ * @property OAuth2Defaults|null $oAuth2Defaults
+ * @property list<CustomAuthConfig>|null $customAuthConfigs
  */
 class AuthenticationConfig extends Shape
 {
     /**
      * @param array{
-     *     isBasicAuthSupported?: bool,
-     *     isApiKeyAuthSupported?: bool,
-     *     isOAuth2Supported?: bool,
-     *     isCustomAuthSupported?: bool,
-     *     oAuth2Defaults?: OAuth2Defaults,
-     *     customAuthConfigs?: list<CustomAuthConfig>
+     *     isBasicAuthSupported?: bool|null,
+     *     isApiKeyAuthSupported?: bool|null,
+     *     isOAuth2Supported?: bool|null,
+     *     isCustomAuthSupported?: bool|null,
+     *     oAuth2Defaults?: OAuth2Defaults|null,
+     *     customAuthConfigs?: list<CustomAuthConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

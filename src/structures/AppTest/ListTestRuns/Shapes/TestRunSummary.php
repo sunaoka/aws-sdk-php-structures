@@ -9,12 +9,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $testRunArn
  * @property string $testSuiteId
  * @property int $testSuiteVersion
- * @property string $testConfigurationId
- * @property int $testConfigurationVersion
+ * @property string|null $testConfigurationId
+ * @property int|null $testConfigurationVersion
  * @property 'Success'|'Running'|'Failed'|'Deleting' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  * @property \Aws\Api\DateTimeResult $runStartTime
- * @property \Aws\Api\DateTimeResult $runEndTime
+ * @property \Aws\Api\DateTimeResult|null $runEndTime
  */
 class TestRunSummary extends Shape
 {
@@ -24,12 +24,12 @@ class TestRunSummary extends Shape
      *     testRunArn: string,
      *     testSuiteId: string,
      *     testSuiteVersion: int,
-     *     testConfigurationId?: string,
-     *     testConfigurationVersion?: int,
+     *     testConfigurationId?: string|null,
+     *     testConfigurationVersion?: int|null,
      *     status: 'Success'|'Running'|'Failed'|'Deleting',
-     *     statusReason?: string,
+     *     statusReason?: string|null,
      *     runStartTime: \Aws\Api\DateTimeResult,
-     *     runEndTime?: \Aws\Api\DateTimeResult
+     *     runEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

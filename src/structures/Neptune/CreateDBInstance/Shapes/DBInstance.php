@@ -5,117 +5,117 @@ namespace Sunaoka\Aws\Structures\Neptune\CreateDBInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBInstanceIdentifier
- * @property string $DBInstanceClass
- * @property string $Engine
- * @property string $DBInstanceStatus
- * @property string $MasterUsername
- * @property string $DBName
- * @property Endpoint $Endpoint
- * @property int $AllocatedStorage
- * @property \Aws\Api\DateTimeResult $InstanceCreateTime
- * @property string $PreferredBackupWindow
- * @property int $BackupRetentionPeriod
- * @property list<DBSecurityGroupMembership> $DBSecurityGroups
- * @property list<VpcSecurityGroupMembership> $VpcSecurityGroups
- * @property list<DBParameterGroupStatus> $DBParameterGroups
- * @property string $AvailabilityZone
- * @property DBSubnetGroup $DBSubnetGroup
- * @property string $PreferredMaintenanceWindow
- * @property PendingModifiedValues $PendingModifiedValues
- * @property \Aws\Api\DateTimeResult $LatestRestorableTime
- * @property bool $MultiAZ
- * @property string $EngineVersion
- * @property bool $AutoMinorVersionUpgrade
- * @property string $ReadReplicaSourceDBInstanceIdentifier
- * @property list<string> $ReadReplicaDBInstanceIdentifiers
- * @property list<string> $ReadReplicaDBClusterIdentifiers
- * @property string $LicenseModel
- * @property int $Iops
- * @property list<OptionGroupMembership> $OptionGroupMemberships
- * @property string $CharacterSetName
- * @property string $SecondaryAvailabilityZone
- * @property bool $PubliclyAccessible
- * @property list<DBInstanceStatusInfo> $StatusInfos
- * @property string $StorageType
- * @property string $TdeCredentialArn
- * @property int $DbInstancePort
- * @property string $DBClusterIdentifier
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $DbiResourceId
- * @property string $CACertificateIdentifier
- * @property list<DomainMembership> $DomainMemberships
- * @property bool $CopyTagsToSnapshot
- * @property int $MonitoringInterval
- * @property string $EnhancedMonitoringResourceArn
- * @property string $MonitoringRoleArn
- * @property int $PromotionTier
- * @property string $DBInstanceArn
- * @property string $Timezone
- * @property bool $IAMDatabaseAuthenticationEnabled
- * @property bool $PerformanceInsightsEnabled
- * @property string $PerformanceInsightsKMSKeyId
- * @property list<string> $EnabledCloudwatchLogsExports
- * @property bool $DeletionProtection
+ * @property string|null $DBInstanceIdentifier
+ * @property string|null $DBInstanceClass
+ * @property string|null $Engine
+ * @property string|null $DBInstanceStatus
+ * @property string|null $MasterUsername
+ * @property string|null $DBName
+ * @property Endpoint|null $Endpoint
+ * @property int|null $AllocatedStorage
+ * @property \Aws\Api\DateTimeResult|null $InstanceCreateTime
+ * @property string|null $PreferredBackupWindow
+ * @property int|null $BackupRetentionPeriod
+ * @property list<DBSecurityGroupMembership>|null $DBSecurityGroups
+ * @property list<VpcSecurityGroupMembership>|null $VpcSecurityGroups
+ * @property list<DBParameterGroupStatus>|null $DBParameterGroups
+ * @property string|null $AvailabilityZone
+ * @property DBSubnetGroup|null $DBSubnetGroup
+ * @property string|null $PreferredMaintenanceWindow
+ * @property PendingModifiedValues|null $PendingModifiedValues
+ * @property \Aws\Api\DateTimeResult|null $LatestRestorableTime
+ * @property bool|null $MultiAZ
+ * @property string|null $EngineVersion
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $ReadReplicaSourceDBInstanceIdentifier
+ * @property list<string>|null $ReadReplicaDBInstanceIdentifiers
+ * @property list<string>|null $ReadReplicaDBClusterIdentifiers
+ * @property string|null $LicenseModel
+ * @property int|null $Iops
+ * @property list<OptionGroupMembership>|null $OptionGroupMemberships
+ * @property string|null $CharacterSetName
+ * @property string|null $SecondaryAvailabilityZone
+ * @property bool|null $PubliclyAccessible
+ * @property list<DBInstanceStatusInfo>|null $StatusInfos
+ * @property string|null $StorageType
+ * @property string|null $TdeCredentialArn
+ * @property int|null $DbInstancePort
+ * @property string|null $DBClusterIdentifier
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $DbiResourceId
+ * @property string|null $CACertificateIdentifier
+ * @property list<DomainMembership>|null $DomainMemberships
+ * @property bool|null $CopyTagsToSnapshot
+ * @property int|null $MonitoringInterval
+ * @property string|null $EnhancedMonitoringResourceArn
+ * @property string|null $MonitoringRoleArn
+ * @property int|null $PromotionTier
+ * @property string|null $DBInstanceArn
+ * @property string|null $Timezone
+ * @property bool|null $IAMDatabaseAuthenticationEnabled
+ * @property bool|null $PerformanceInsightsEnabled
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property list<string>|null $EnabledCloudwatchLogsExports
+ * @property bool|null $DeletionProtection
  */
 class DBInstance extends Shape
 {
     /**
      * @param array{
-     *     DBInstanceIdentifier?: string,
-     *     DBInstanceClass?: string,
-     *     Engine?: string,
-     *     DBInstanceStatus?: string,
-     *     MasterUsername?: string,
-     *     DBName?: string,
-     *     Endpoint?: Endpoint,
-     *     AllocatedStorage?: int,
-     *     InstanceCreateTime?: \Aws\Api\DateTimeResult,
-     *     PreferredBackupWindow?: string,
-     *     BackupRetentionPeriod?: int,
-     *     DBSecurityGroups?: list<DBSecurityGroupMembership>,
-     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>,
-     *     DBParameterGroups?: list<DBParameterGroupStatus>,
-     *     AvailabilityZone?: string,
-     *     DBSubnetGroup?: DBSubnetGroup,
-     *     PreferredMaintenanceWindow?: string,
-     *     PendingModifiedValues?: PendingModifiedValues,
-     *     LatestRestorableTime?: \Aws\Api\DateTimeResult,
-     *     MultiAZ?: bool,
-     *     EngineVersion?: string,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     ReadReplicaSourceDBInstanceIdentifier?: string,
-     *     ReadReplicaDBInstanceIdentifiers?: list<string>,
-     *     ReadReplicaDBClusterIdentifiers?: list<string>,
-     *     LicenseModel?: string,
-     *     Iops?: int,
-     *     OptionGroupMemberships?: list<OptionGroupMembership>,
-     *     CharacterSetName?: string,
-     *     SecondaryAvailabilityZone?: string,
-     *     PubliclyAccessible?: bool,
-     *     StatusInfos?: list<DBInstanceStatusInfo>,
-     *     StorageType?: string,
-     *     TdeCredentialArn?: string,
-     *     DbInstancePort?: int,
-     *     DBClusterIdentifier?: string,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     DbiResourceId?: string,
-     *     CACertificateIdentifier?: string,
-     *     DomainMemberships?: list<DomainMembership>,
-     *     CopyTagsToSnapshot?: bool,
-     *     MonitoringInterval?: int,
-     *     EnhancedMonitoringResourceArn?: string,
-     *     MonitoringRoleArn?: string,
-     *     PromotionTier?: int,
-     *     DBInstanceArn?: string,
-     *     Timezone?: string,
-     *     IAMDatabaseAuthenticationEnabled?: bool,
-     *     PerformanceInsightsEnabled?: bool,
-     *     PerformanceInsightsKMSKeyId?: string,
-     *     EnabledCloudwatchLogsExports?: list<string>,
-     *     DeletionProtection?: bool
+     *     DBInstanceIdentifier?: string|null,
+     *     DBInstanceClass?: string|null,
+     *     Engine?: string|null,
+     *     DBInstanceStatus?: string|null,
+     *     MasterUsername?: string|null,
+     *     DBName?: string|null,
+     *     Endpoint?: Endpoint|null,
+     *     AllocatedStorage?: int|null,
+     *     InstanceCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     PreferredBackupWindow?: string|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     DBSecurityGroups?: list<DBSecurityGroupMembership>|null,
+     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>|null,
+     *     DBParameterGroups?: list<DBParameterGroupStatus>|null,
+     *     AvailabilityZone?: string|null,
+     *     DBSubnetGroup?: DBSubnetGroup|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     PendingModifiedValues?: PendingModifiedValues|null,
+     *     LatestRestorableTime?: \Aws\Api\DateTimeResult|null,
+     *     MultiAZ?: bool|null,
+     *     EngineVersion?: string|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     ReadReplicaSourceDBInstanceIdentifier?: string|null,
+     *     ReadReplicaDBInstanceIdentifiers?: list<string>|null,
+     *     ReadReplicaDBClusterIdentifiers?: list<string>|null,
+     *     LicenseModel?: string|null,
+     *     Iops?: int|null,
+     *     OptionGroupMemberships?: list<OptionGroupMembership>|null,
+     *     CharacterSetName?: string|null,
+     *     SecondaryAvailabilityZone?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     StatusInfos?: list<DBInstanceStatusInfo>|null,
+     *     StorageType?: string|null,
+     *     TdeCredentialArn?: string|null,
+     *     DbInstancePort?: int|null,
+     *     DBClusterIdentifier?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     DbiResourceId?: string|null,
+     *     CACertificateIdentifier?: string|null,
+     *     DomainMemberships?: list<DomainMembership>|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     MonitoringInterval?: int|null,
+     *     EnhancedMonitoringResourceArn?: string|null,
+     *     MonitoringRoleArn?: string|null,
+     *     PromotionTier?: int|null,
+     *     DBInstanceArn?: string|null,
+     *     Timezone?: string|null,
+     *     IAMDatabaseAuthenticationEnabled?: bool|null,
+     *     PerformanceInsightsEnabled?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     EnabledCloudwatchLogsExports?: list<string>|null,
+     *     DeletionProtection?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

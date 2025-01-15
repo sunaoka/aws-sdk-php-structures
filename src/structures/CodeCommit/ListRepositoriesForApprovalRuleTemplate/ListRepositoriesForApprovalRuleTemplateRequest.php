@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $approvalRuleTemplateName
- * @property string $nextToken
- * @property int $maxResults
+ * @property string|null $nextToken
+ * @property int|null $maxResults
  */
 class ListRepositoriesForApprovalRuleTemplateRequest extends Request
 {
     /**
      * @param array{
      *     approvalRuleTemplateName: string,
-     *     nextToken?: string,
-     *     maxResults?: int
+     *     nextToken?: string|null,
+     *     maxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

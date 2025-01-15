@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEC2InstanceRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $savingsOpportunityPercentage
- * @property InstanceEstimatedMonthlySavings $estimatedMonthlySavings
+ * @property double|null $savingsOpportunityPercentage
+ * @property InstanceEstimatedMonthlySavings|null $estimatedMonthlySavings
  */
 class InstanceSavingsOpportunityAfterDiscounts extends Shape
 {
     /**
      * @param array{
-     *     savingsOpportunityPercentage?: double,
-     *     estimatedMonthlySavings?: InstanceEstimatedMonthlySavings
+     *     savingsOpportunityPercentage?: double|null,
+     *     estimatedMonthlySavings?: InstanceEstimatedMonthlySavings|null
      * } $args
      */
     public function __construct(array $args = [])

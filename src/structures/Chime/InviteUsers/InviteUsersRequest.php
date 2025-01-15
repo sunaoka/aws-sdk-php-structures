@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property list<string> $UserEmailList
- * @property 'PrivateUser'|'SharedDevice' $UserType
+ * @property 'PrivateUser'|'SharedDevice'|null $UserType
  */
 class InviteUsersRequest extends Request
 {
@@ -15,7 +15,7 @@ class InviteUsersRequest extends Request
      * @param array{
      *     AccountId: string,
      *     UserEmailList: list<string>,
-     *     UserType?: 'PrivateUser'|'SharedDevice'
+     *     UserType?: 'PrivateUser'|'SharedDevice'|null
      * } $args
      */
     public function __construct(array $args)

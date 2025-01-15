@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AddCustomAttributes\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property 'String'|'Number'|'DateTime'|'Boolean' $AttributeDataType
- * @property bool $DeveloperOnlyAttribute
- * @property bool $Mutable
- * @property bool $Required
- * @property NumberAttributeConstraintsType $NumberAttributeConstraints
- * @property StringAttributeConstraintsType $StringAttributeConstraints
+ * @property string|null $Name
+ * @property 'String'|'Number'|'DateTime'|'Boolean'|null $AttributeDataType
+ * @property bool|null $DeveloperOnlyAttribute
+ * @property bool|null $Mutable
+ * @property bool|null $Required
+ * @property NumberAttributeConstraintsType|null $NumberAttributeConstraints
+ * @property StringAttributeConstraintsType|null $StringAttributeConstraints
  */
 class SchemaAttributeType extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     AttributeDataType?: 'String'|'Number'|'DateTime'|'Boolean',
-     *     DeveloperOnlyAttribute?: bool,
-     *     Mutable?: bool,
-     *     Required?: bool,
-     *     NumberAttributeConstraints?: NumberAttributeConstraintsType,
-     *     StringAttributeConstraints?: StringAttributeConstraintsType
+     *     Name?: string|null,
+     *     AttributeDataType?: 'String'|'Number'|'DateTime'|'Boolean'|null,
+     *     DeveloperOnlyAttribute?: bool|null,
+     *     Mutable?: bool|null,
+     *     Required?: bool|null,
+     *     NumberAttributeConstraints?: NumberAttributeConstraintsType|null,
+     *     StringAttributeConstraints?: StringAttributeConstraintsType|null
      * } $args
      */
     public function __construct(array $args = [])

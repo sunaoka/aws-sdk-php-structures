@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AppId
  * @property string $BackendEnvironmentName
  * @property string $JobId
- * @property string $Operation
- * @property string $Status
+ * @property string|null $Operation
+ * @property string|null $Status
  */
 class UpdateBackendJobRequest extends Request
 {
@@ -18,8 +18,8 @@ class UpdateBackendJobRequest extends Request
      *     AppId: string,
      *     BackendEnvironmentName: string,
      *     JobId: string,
-     *     Operation?: string,
-     *     Status?: string
+     *     Operation?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args)

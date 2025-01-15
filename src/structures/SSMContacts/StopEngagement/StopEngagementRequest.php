@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EngagementId
- * @property string $Reason
+ * @property string|null $Reason
  */
 class StopEngagementRequest extends Request
 {
     /**
      * @param array{
      *     EngagementId: string,
-     *     Reason?: string
+     *     Reason?: string|null
      * } $args
      */
     public function __construct(array $args)

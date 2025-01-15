@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\CreateTimelineEvent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $relatedItemId
- * @property string $resource
+ * @property string|null $relatedItemId
+ * @property string|null $resource
  */
 class EventReference extends Shape
 {
     /**
      * @param array{
-     *     relatedItemId?: string,
-     *     resource?: string
+     *     relatedItemId?: string|null,
+     *     resource?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'URI'|'QUERY_STRING'|'HEADER'|'METHOD'|'BODY'|'SINGLE_QUERY_ARG'|'ALL_QUERY_ARGS' $Type
- * @property string $Data
+ * @property string|null $Data
  */
 class FieldToMatch extends Shape
 {
     /**
      * @param array{
      *     Type: 'URI'|'QUERY_STRING'|'HEADER'|'METHOD'|'BODY'|'SINGLE_QUERY_ARG'|'ALL_QUERY_ARGS',
-     *     Data?: string
+     *     Data?: string|null
      * } $args
      */
     public function __construct(array $args)

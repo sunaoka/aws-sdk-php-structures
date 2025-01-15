@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Schemas\UpdateRegistry;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $RegistryName
  */
 class UpdateRegistryRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     RegistryName: string
      * } $args
      */

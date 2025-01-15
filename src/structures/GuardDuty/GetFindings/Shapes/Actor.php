@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property User $User
- * @property Session $Session
+ * @property User|null $User
+ * @property Session|null $Session
  */
 class Actor extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     User?: User,
-     *     Session?: Session
+     *     User?: User|null,
+     *     Session?: Session|null
      * } $args
      */
     public function __construct(array $args)

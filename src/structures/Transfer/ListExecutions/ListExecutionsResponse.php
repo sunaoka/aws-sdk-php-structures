@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Transfer\ListExecutions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property string $WorkflowId
  * @property list<Shapes\ListedExecution> $Executions
  */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $DkimEnabled
  * @property 'Pending'|'Success'|'Failed'|'TemporaryFailure'|'NotStarted' $DkimVerificationStatus
- * @property list<string> $DkimTokens
+ * @property list<string>|null $DkimTokens
  */
 class IdentityDkimAttributes extends Shape
 {
@@ -15,7 +15,7 @@ class IdentityDkimAttributes extends Shape
      * @param array{
      *     DkimEnabled: bool,
      *     DkimVerificationStatus: 'Pending'|'Success'|'Failed'|'TemporaryFailure'|'NotStarted',
-     *     DkimTokens?: list<string>
+     *     DkimTokens?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

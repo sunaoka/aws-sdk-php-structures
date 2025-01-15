@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\ListBlueprints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $blueprintArn
- * @property 'SERVICE'|'ACCOUNT' $resourceOwner
- * @property 'DEVELOPMENT'|'LIVE'|'ALL' $blueprintStageFilter
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
- * @property Shapes\DataAutomationProjectFilter $projectFilter
+ * @property string|null $blueprintArn
+ * @property 'SERVICE'|'ACCOUNT'|null $resourceOwner
+ * @property 'DEVELOPMENT'|'LIVE'|'ALL'|null $blueprintStageFilter
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
+ * @property Shapes\DataAutomationProjectFilter|null $projectFilter
  */
 class ListBlueprintsRequest extends Request
 {
     /**
      * @param array{
-     *     blueprintArn?: string,
-     *     resourceOwner?: 'SERVICE'|'ACCOUNT',
-     *     blueprintStageFilter?: 'DEVELOPMENT'|'LIVE'|'ALL',
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string,
-     *     projectFilter?: Shapes\DataAutomationProjectFilter
+     *     blueprintArn?: string|null,
+     *     resourceOwner?: 'SERVICE'|'ACCOUNT'|null,
+     *     blueprintStageFilter?: 'DEVELOPMENT'|'LIVE'|'ALL'|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null,
+     *     projectFilter?: Shapes\DataAutomationProjectFilter|null
      * } $args
      */
     public function __construct(array $args = [])

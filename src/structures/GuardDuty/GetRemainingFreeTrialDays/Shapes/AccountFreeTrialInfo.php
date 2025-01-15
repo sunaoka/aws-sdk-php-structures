@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetRemainingFreeTrialDays\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property DataSourcesFreeTrial $DataSources
- * @property list<FreeTrialFeatureConfigurationResult> $Features
+ * @property string|null $AccountId
+ * @property DataSourcesFreeTrial|null $DataSources
+ * @property list<FreeTrialFeatureConfigurationResult>|null $Features
  */
 class AccountFreeTrialInfo extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     DataSources?: DataSourcesFreeTrial,
-     *     Features?: list<FreeTrialFeatureConfigurationResult>
+     *     AccountId?: string|null,
+     *     DataSources?: DataSourcesFreeTrial|null,
+     *     Features?: list<FreeTrialFeatureConfigurationResult>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'Import'|'Export' $JobType
  * @property string $Manifest
- * @property string $ManifestAddendum
+ * @property string|null $ManifestAddendum
  * @property bool $ValidateOnly
- * @property string $APIVersion
+ * @property string|null $APIVersion
  */
 class CreateJobRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateJobRequest extends Request
      * @param array{
      *     JobType: 'Import'|'Export',
      *     Manifest: string,
-     *     ManifestAddendum?: string,
+     *     ManifestAddendum?: string|null,
      *     ValidateOnly: bool,
-     *     APIVersion?: string
+     *     APIVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

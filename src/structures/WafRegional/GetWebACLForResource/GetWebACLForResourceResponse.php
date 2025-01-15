@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WafRegional\GetWebACLForResource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\WebACLSummary $WebACLSummary
+ * @property Shapes\WebACLSummary|null $WebACLSummary
  */
 class GetWebACLForResourceResponse extends Response
 {

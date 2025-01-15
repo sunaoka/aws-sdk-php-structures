@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\RespondToAuthChallenge\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceKey
- * @property string $DeviceGroupKey
+ * @property string|null $DeviceKey
+ * @property string|null $DeviceGroupKey
  */
 class NewDeviceMetadataType extends Shape
 {
     /**
      * @param array{
-     *     DeviceKey?: string,
-     *     DeviceGroupKey?: string
+     *     DeviceKey?: string|null,
+     *     DeviceGroupKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

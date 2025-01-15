@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int<2, 10> $healthyThreshold
  * @property int<5000, 300000> $intervalMillis
- * @property string $path
- * @property int<1, 65535> $port
+ * @property string|null $path
+ * @property int<1, 65535>|null $port
  * @property 'http'|'http2'|'grpc' $protocol
  * @property int<2000, 60000> $timeoutMillis
  * @property int<2, 10> $unhealthyThreshold
@@ -19,8 +19,8 @@ class VirtualGatewayHealthCheckPolicy extends Shape
      * @param array{
      *     healthyThreshold: int<2, 10>,
      *     intervalMillis: int<5000, 300000>,
-     *     path?: string,
-     *     port?: int<1, 65535>,
+     *     path?: string|null,
+     *     port?: int<1, 65535>|null,
      *     protocol: 'http'|'http2'|'grpc',
      *     timeoutMillis: int<2000, 60000>,
      *     unhealthyThreshold: int<2, 10>

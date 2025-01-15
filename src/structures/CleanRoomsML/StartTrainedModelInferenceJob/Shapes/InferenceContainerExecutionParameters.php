@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\StartTrainedModelInferenceJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 100> $maxPayloadInMB
+ * @property int<1, 100>|null $maxPayloadInMB
  */
 class InferenceContainerExecutionParameters extends Shape
 {
     /**
-     * @param array{maxPayloadInMB?: int<1, 100>} $args
+     * @param array{maxPayloadInMB?: int<1, 100>|null} $args
      */
     public function __construct(array $args = [])
     {

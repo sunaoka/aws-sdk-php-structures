@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Backup\DescribeFramework;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FrameworkName
- * @property string $FrameworkArn
- * @property string $FrameworkDescription
- * @property list<Shapes\FrameworkControl> $FrameworkControls
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $DeploymentStatus
- * @property string $FrameworkStatus
- * @property string $IdempotencyToken
+ * @property string|null $FrameworkName
+ * @property string|null $FrameworkArn
+ * @property string|null $FrameworkDescription
+ * @property list<Shapes\FrameworkControl>|null $FrameworkControls
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $DeploymentStatus
+ * @property string|null $FrameworkStatus
+ * @property string|null $IdempotencyToken
  */
 class DescribeFrameworkResponse extends Response
 {

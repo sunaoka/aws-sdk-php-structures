@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProjectArn
- * @property string $ProjectName
- * @property string $ProjectId
- * @property string $ProjectDescription
- * @property ServiceCatalogProvisioningDetails $ServiceCatalogProvisioningDetails
- * @property ServiceCatalogProvisionedProductDetails $ServiceCatalogProvisionedProductDetails
- * @property 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed' $ProjectStatus
- * @property UserContext $CreatedBy
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property list<Tag> $Tags
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property UserContext $LastModifiedBy
+ * @property string|null $ProjectArn
+ * @property string|null $ProjectName
+ * @property string|null $ProjectId
+ * @property string|null $ProjectDescription
+ * @property ServiceCatalogProvisioningDetails|null $ServiceCatalogProvisioningDetails
+ * @property ServiceCatalogProvisionedProductDetails|null $ServiceCatalogProvisionedProductDetails
+ * @property 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed'|null $ProjectStatus
+ * @property UserContext|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property list<Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property UserContext|null $LastModifiedBy
  */
 class Project extends Shape
 {
     /**
      * @param array{
-     *     ProjectArn?: string,
-     *     ProjectName?: string,
-     *     ProjectId?: string,
-     *     ProjectDescription?: string,
-     *     ServiceCatalogProvisioningDetails?: ServiceCatalogProvisioningDetails,
-     *     ServiceCatalogProvisionedProductDetails?: ServiceCatalogProvisionedProductDetails,
-     *     ProjectStatus?: 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed',
-     *     CreatedBy?: UserContext,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Tags?: list<Tag>,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBy?: UserContext
+     *     ProjectArn?: string|null,
+     *     ProjectName?: string|null,
+     *     ProjectId?: string|null,
+     *     ProjectDescription?: string|null,
+     *     ServiceCatalogProvisioningDetails?: ServiceCatalogProvisioningDetails|null,
+     *     ServiceCatalogProvisionedProductDetails?: ServiceCatalogProvisionedProductDetails|null,
+     *     ProjectStatus?: 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed'|null,
+     *     CreatedBy?: UserContext|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: list<Tag>|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBy?: UserContext|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Textract\GetAdapterVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $F1Score
- * @property float $Precision
- * @property float $Recall
+ * @property float|null $F1Score
+ * @property float|null $Precision
+ * @property float|null $Recall
  */
 class EvaluationMetric extends Shape
 {
     /**
      * @param array{
-     *     F1Score?: float,
-     *     Precision?: float,
-     *     Recall?: float
+     *     F1Score?: float|null,
+     *     Precision?: float|null,
+     *     Recall?: float|null
      * } $args
      */
     public function __construct(array $args = [])

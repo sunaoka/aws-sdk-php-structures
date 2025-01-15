@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceArn
  * @property string $TableName
- * @property Shapes\SourceTableConfig $SourceTableConfig
- * @property Shapes\TargetTableConfig $TargetTableConfig
+ * @property Shapes\SourceTableConfig|null $SourceTableConfig
+ * @property Shapes\TargetTableConfig|null $TargetTableConfig
  */
 class CreateIntegrationTablePropertiesRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateIntegrationTablePropertiesRequest extends Request
      * @param array{
      *     ResourceArn: string,
      *     TableName: string,
-     *     SourceTableConfig?: Shapes\SourceTableConfig,
-     *     TargetTableConfig?: Shapes\TargetTableConfig
+     *     SourceTableConfig?: Shapes\SourceTableConfig|null,
+     *     TargetTableConfig?: Shapes\TargetTableConfig|null
      * } $args
      */
     public function __construct(array $args)

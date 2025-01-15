@@ -6,44 +6,44 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $version
+ * @property string|null $version
  * @property string $roleArn
  * @property Shapes\VpcConfigRequest $resourcesVpcConfig
- * @property Shapes\KubernetesNetworkConfigRequest $kubernetesNetworkConfig
- * @property Shapes\Logging $logging
- * @property string $clientRequestToken
- * @property array<string, string> $tags
- * @property list<Shapes\EncryptionConfig> $encryptionConfig
- * @property Shapes\OutpostConfigRequest $outpostConfig
- * @property Shapes\CreateAccessConfigRequest $accessConfig
- * @property bool $bootstrapSelfManagedAddons
- * @property Shapes\UpgradePolicyRequest $upgradePolicy
- * @property Shapes\ZonalShiftConfigRequest $zonalShiftConfig
- * @property Shapes\RemoteNetworkConfigRequest $remoteNetworkConfig
- * @property Shapes\ComputeConfigRequest $computeConfig
- * @property Shapes\StorageConfigRequest $storageConfig
+ * @property Shapes\KubernetesNetworkConfigRequest|null $kubernetesNetworkConfig
+ * @property Shapes\Logging|null $logging
+ * @property string|null $clientRequestToken
+ * @property array<string, string>|null $tags
+ * @property list<Shapes\EncryptionConfig>|null $encryptionConfig
+ * @property Shapes\OutpostConfigRequest|null $outpostConfig
+ * @property Shapes\CreateAccessConfigRequest|null $accessConfig
+ * @property bool|null $bootstrapSelfManagedAddons
+ * @property Shapes\UpgradePolicyRequest|null $upgradePolicy
+ * @property Shapes\ZonalShiftConfigRequest|null $zonalShiftConfig
+ * @property Shapes\RemoteNetworkConfigRequest|null $remoteNetworkConfig
+ * @property Shapes\ComputeConfigRequest|null $computeConfig
+ * @property Shapes\StorageConfigRequest|null $storageConfig
  */
 class CreateClusterRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     version?: string,
+     *     version?: string|null,
      *     roleArn: string,
      *     resourcesVpcConfig: Shapes\VpcConfigRequest,
-     *     kubernetesNetworkConfig?: Shapes\KubernetesNetworkConfigRequest,
-     *     logging?: Shapes\Logging,
-     *     clientRequestToken?: string,
-     *     tags?: array<string, string>,
-     *     encryptionConfig?: list<Shapes\EncryptionConfig>,
-     *     outpostConfig?: Shapes\OutpostConfigRequest,
-     *     accessConfig?: Shapes\CreateAccessConfigRequest,
-     *     bootstrapSelfManagedAddons?: bool,
-     *     upgradePolicy?: Shapes\UpgradePolicyRequest,
-     *     zonalShiftConfig?: Shapes\ZonalShiftConfigRequest,
-     *     remoteNetworkConfig?: Shapes\RemoteNetworkConfigRequest,
-     *     computeConfig?: Shapes\ComputeConfigRequest,
-     *     storageConfig?: Shapes\StorageConfigRequest
+     *     kubernetesNetworkConfig?: Shapes\KubernetesNetworkConfigRequest|null,
+     *     logging?: Shapes\Logging|null,
+     *     clientRequestToken?: string|null,
+     *     tags?: array<string, string>|null,
+     *     encryptionConfig?: list<Shapes\EncryptionConfig>|null,
+     *     outpostConfig?: Shapes\OutpostConfigRequest|null,
+     *     accessConfig?: Shapes\CreateAccessConfigRequest|null,
+     *     bootstrapSelfManagedAddons?: bool|null,
+     *     upgradePolicy?: Shapes\UpgradePolicyRequest|null,
+     *     zonalShiftConfig?: Shapes\ZonalShiftConfigRequest|null,
+     *     remoteNetworkConfig?: Shapes\RemoteNetworkConfigRequest|null,
+     *     computeConfig?: Shapes\ComputeConfigRequest|null,
+     *     storageConfig?: Shapes\StorageConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

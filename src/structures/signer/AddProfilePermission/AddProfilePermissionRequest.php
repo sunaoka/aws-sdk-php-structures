@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $profileName
- * @property string $profileVersion
+ * @property string|null $profileVersion
  * @property string $action
  * @property string $principal
- * @property string $revisionId
+ * @property string|null $revisionId
  * @property string $statementId
  */
 class AddProfilePermissionRequest extends Request
@@ -17,10 +17,10 @@ class AddProfilePermissionRequest extends Request
     /**
      * @param array{
      *     profileName: string,
-     *     profileVersion?: string,
+     *     profileVersion?: string|null,
      *     action: string,
      *     principal: string,
-     *     revisionId?: string,
+     *     revisionId?: string|null,
      *     statementId: string
      * } $args
      */

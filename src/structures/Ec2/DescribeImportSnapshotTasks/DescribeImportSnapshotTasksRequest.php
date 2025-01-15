@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeImportSnapshotTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property list<Shapes\Filter> $Filters
- * @property list<string> $ImportTaskIds
- * @property int $MaxResults
- * @property string $NextToken
+ * @property bool|null $DryRun
+ * @property list<Shapes\Filter>|null $Filters
+ * @property list<string>|null $ImportTaskIds
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeImportSnapshotTasksRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     Filters?: list<Shapes\Filter>,
-     *     ImportTaskIds?: list<string>,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     DryRun?: bool|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     ImportTaskIds?: list<string>|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

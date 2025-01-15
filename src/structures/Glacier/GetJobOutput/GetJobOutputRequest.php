@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $accountId
  * @property string $vaultName
  * @property string $jobId
- * @property string $range
+ * @property string|null $range
  */
 class GetJobOutputRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetJobOutputRequest extends Request
      *     accountId: string,
      *     vaultName: string,
      *     jobId: string,
-     *     range?: string
+     *     range?: string|null
      * } $args
      */
     public function __construct(array $args)

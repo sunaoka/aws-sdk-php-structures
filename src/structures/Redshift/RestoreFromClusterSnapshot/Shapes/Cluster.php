@@ -5,131 +5,131 @@ namespace Sunaoka\Aws\Structures\Redshift\RestoreFromClusterSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterIdentifier
- * @property string $NodeType
- * @property string $ClusterStatus
- * @property string $ClusterAvailabilityStatus
- * @property string $ModifyStatus
- * @property string $MasterUsername
- * @property string $DBName
- * @property Endpoint $Endpoint
- * @property \Aws\Api\DateTimeResult $ClusterCreateTime
- * @property int $AutomatedSnapshotRetentionPeriod
- * @property int $ManualSnapshotRetentionPeriod
- * @property list<ClusterSecurityGroupMembership> $ClusterSecurityGroups
- * @property list<VpcSecurityGroupMembership> $VpcSecurityGroups
- * @property list<ClusterParameterGroupStatus> $ClusterParameterGroups
- * @property string $ClusterSubnetGroupName
- * @property string $VpcId
- * @property string $AvailabilityZone
- * @property string $PreferredMaintenanceWindow
- * @property PendingModifiedValues $PendingModifiedValues
- * @property string $ClusterVersion
- * @property bool $AllowVersionUpgrade
- * @property int $NumberOfNodes
- * @property bool $PubliclyAccessible
- * @property bool $Encrypted
- * @property RestoreStatus $RestoreStatus
- * @property DataTransferProgress $DataTransferProgress
- * @property HsmStatus $HsmStatus
- * @property ClusterSnapshotCopyStatus $ClusterSnapshotCopyStatus
- * @property string $ClusterPublicKey
- * @property list<ClusterNode> $ClusterNodes
- * @property ElasticIpStatus $ElasticIpStatus
- * @property string $ClusterRevisionNumber
- * @property list<Tag> $Tags
- * @property string $KmsKeyId
- * @property bool $EnhancedVpcRouting
- * @property list<ClusterIamRole> $IamRoles
- * @property list<string> $PendingActions
- * @property string $MaintenanceTrackName
- * @property string $ElasticResizeNumberOfNodeOptions
- * @property list<DeferredMaintenanceWindow> $DeferredMaintenanceWindows
- * @property string $SnapshotScheduleIdentifier
- * @property 'MODIFYING'|'ACTIVE'|'FAILED' $SnapshotScheduleState
- * @property \Aws\Api\DateTimeResult $ExpectedNextSnapshotScheduleTime
- * @property string $ExpectedNextSnapshotScheduleTimeStatus
- * @property \Aws\Api\DateTimeResult $NextMaintenanceWindowStartTime
- * @property ResizeInfo $ResizeInfo
- * @property string $AvailabilityZoneRelocationStatus
- * @property string $ClusterNamespaceArn
- * @property int $TotalStorageCapacityInMegaBytes
- * @property AquaConfiguration $AquaConfiguration
- * @property string $DefaultIamRoleArn
- * @property ReservedNodeExchangeStatus $ReservedNodeExchangeStatus
- * @property string $CustomDomainName
- * @property string $CustomDomainCertificateArn
- * @property \Aws\Api\DateTimeResult $CustomDomainCertificateExpiryDate
- * @property string $MasterPasswordSecretArn
- * @property string $MasterPasswordSecretKmsKeyId
- * @property string $IpAddressType
- * @property string $MultiAZ
- * @property SecondaryClusterInfo $MultiAZSecondary
+ * @property string|null $ClusterIdentifier
+ * @property string|null $NodeType
+ * @property string|null $ClusterStatus
+ * @property string|null $ClusterAvailabilityStatus
+ * @property string|null $ModifyStatus
+ * @property string|null $MasterUsername
+ * @property string|null $DBName
+ * @property Endpoint|null $Endpoint
+ * @property \Aws\Api\DateTimeResult|null $ClusterCreateTime
+ * @property int|null $AutomatedSnapshotRetentionPeriod
+ * @property int|null $ManualSnapshotRetentionPeriod
+ * @property list<ClusterSecurityGroupMembership>|null $ClusterSecurityGroups
+ * @property list<VpcSecurityGroupMembership>|null $VpcSecurityGroups
+ * @property list<ClusterParameterGroupStatus>|null $ClusterParameterGroups
+ * @property string|null $ClusterSubnetGroupName
+ * @property string|null $VpcId
+ * @property string|null $AvailabilityZone
+ * @property string|null $PreferredMaintenanceWindow
+ * @property PendingModifiedValues|null $PendingModifiedValues
+ * @property string|null $ClusterVersion
+ * @property bool|null $AllowVersionUpgrade
+ * @property int|null $NumberOfNodes
+ * @property bool|null $PubliclyAccessible
+ * @property bool|null $Encrypted
+ * @property RestoreStatus|null $RestoreStatus
+ * @property DataTransferProgress|null $DataTransferProgress
+ * @property HsmStatus|null $HsmStatus
+ * @property ClusterSnapshotCopyStatus|null $ClusterSnapshotCopyStatus
+ * @property string|null $ClusterPublicKey
+ * @property list<ClusterNode>|null $ClusterNodes
+ * @property ElasticIpStatus|null $ElasticIpStatus
+ * @property string|null $ClusterRevisionNumber
+ * @property list<Tag>|null $Tags
+ * @property string|null $KmsKeyId
+ * @property bool|null $EnhancedVpcRouting
+ * @property list<ClusterIamRole>|null $IamRoles
+ * @property list<string>|null $PendingActions
+ * @property string|null $MaintenanceTrackName
+ * @property string|null $ElasticResizeNumberOfNodeOptions
+ * @property list<DeferredMaintenanceWindow>|null $DeferredMaintenanceWindows
+ * @property string|null $SnapshotScheduleIdentifier
+ * @property 'MODIFYING'|'ACTIVE'|'FAILED'|null $SnapshotScheduleState
+ * @property \Aws\Api\DateTimeResult|null $ExpectedNextSnapshotScheduleTime
+ * @property string|null $ExpectedNextSnapshotScheduleTimeStatus
+ * @property \Aws\Api\DateTimeResult|null $NextMaintenanceWindowStartTime
+ * @property ResizeInfo|null $ResizeInfo
+ * @property string|null $AvailabilityZoneRelocationStatus
+ * @property string|null $ClusterNamespaceArn
+ * @property int|null $TotalStorageCapacityInMegaBytes
+ * @property AquaConfiguration|null $AquaConfiguration
+ * @property string|null $DefaultIamRoleArn
+ * @property ReservedNodeExchangeStatus|null $ReservedNodeExchangeStatus
+ * @property string|null $CustomDomainName
+ * @property string|null $CustomDomainCertificateArn
+ * @property \Aws\Api\DateTimeResult|null $CustomDomainCertificateExpiryDate
+ * @property string|null $MasterPasswordSecretArn
+ * @property string|null $MasterPasswordSecretKmsKeyId
+ * @property string|null $IpAddressType
+ * @property string|null $MultiAZ
+ * @property SecondaryClusterInfo|null $MultiAZSecondary
  */
 class Cluster extends Shape
 {
     /**
      * @param array{
-     *     ClusterIdentifier?: string,
-     *     NodeType?: string,
-     *     ClusterStatus?: string,
-     *     ClusterAvailabilityStatus?: string,
-     *     ModifyStatus?: string,
-     *     MasterUsername?: string,
-     *     DBName?: string,
-     *     Endpoint?: Endpoint,
-     *     ClusterCreateTime?: \Aws\Api\DateTimeResult,
-     *     AutomatedSnapshotRetentionPeriod?: int,
-     *     ManualSnapshotRetentionPeriod?: int,
-     *     ClusterSecurityGroups?: list<ClusterSecurityGroupMembership>,
-     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>,
-     *     ClusterParameterGroups?: list<ClusterParameterGroupStatus>,
-     *     ClusterSubnetGroupName?: string,
-     *     VpcId?: string,
-     *     AvailabilityZone?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     PendingModifiedValues?: PendingModifiedValues,
-     *     ClusterVersion?: string,
-     *     AllowVersionUpgrade?: bool,
-     *     NumberOfNodes?: int,
-     *     PubliclyAccessible?: bool,
-     *     Encrypted?: bool,
-     *     RestoreStatus?: RestoreStatus,
-     *     DataTransferProgress?: DataTransferProgress,
-     *     HsmStatus?: HsmStatus,
-     *     ClusterSnapshotCopyStatus?: ClusterSnapshotCopyStatus,
-     *     ClusterPublicKey?: string,
-     *     ClusterNodes?: list<ClusterNode>,
-     *     ElasticIpStatus?: ElasticIpStatus,
-     *     ClusterRevisionNumber?: string,
-     *     Tags?: list<Tag>,
-     *     KmsKeyId?: string,
-     *     EnhancedVpcRouting?: bool,
-     *     IamRoles?: list<ClusterIamRole>,
-     *     PendingActions?: list<string>,
-     *     MaintenanceTrackName?: string,
-     *     ElasticResizeNumberOfNodeOptions?: string,
-     *     DeferredMaintenanceWindows?: list<DeferredMaintenanceWindow>,
-     *     SnapshotScheduleIdentifier?: string,
-     *     SnapshotScheduleState?: 'MODIFYING'|'ACTIVE'|'FAILED',
-     *     ExpectedNextSnapshotScheduleTime?: \Aws\Api\DateTimeResult,
-     *     ExpectedNextSnapshotScheduleTimeStatus?: string,
-     *     NextMaintenanceWindowStartTime?: \Aws\Api\DateTimeResult,
-     *     ResizeInfo?: ResizeInfo,
-     *     AvailabilityZoneRelocationStatus?: string,
-     *     ClusterNamespaceArn?: string,
-     *     TotalStorageCapacityInMegaBytes?: int,
-     *     AquaConfiguration?: AquaConfiguration,
-     *     DefaultIamRoleArn?: string,
-     *     ReservedNodeExchangeStatus?: ReservedNodeExchangeStatus,
-     *     CustomDomainName?: string,
-     *     CustomDomainCertificateArn?: string,
-     *     CustomDomainCertificateExpiryDate?: \Aws\Api\DateTimeResult,
-     *     MasterPasswordSecretArn?: string,
-     *     MasterPasswordSecretKmsKeyId?: string,
-     *     IpAddressType?: string,
-     *     MultiAZ?: string,
-     *     MultiAZSecondary?: SecondaryClusterInfo
+     *     ClusterIdentifier?: string|null,
+     *     NodeType?: string|null,
+     *     ClusterStatus?: string|null,
+     *     ClusterAvailabilityStatus?: string|null,
+     *     ModifyStatus?: string|null,
+     *     MasterUsername?: string|null,
+     *     DBName?: string|null,
+     *     Endpoint?: Endpoint|null,
+     *     ClusterCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     AutomatedSnapshotRetentionPeriod?: int|null,
+     *     ManualSnapshotRetentionPeriod?: int|null,
+     *     ClusterSecurityGroups?: list<ClusterSecurityGroupMembership>|null,
+     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>|null,
+     *     ClusterParameterGroups?: list<ClusterParameterGroupStatus>|null,
+     *     ClusterSubnetGroupName?: string|null,
+     *     VpcId?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     PendingModifiedValues?: PendingModifiedValues|null,
+     *     ClusterVersion?: string|null,
+     *     AllowVersionUpgrade?: bool|null,
+     *     NumberOfNodes?: int|null,
+     *     PubliclyAccessible?: bool|null,
+     *     Encrypted?: bool|null,
+     *     RestoreStatus?: RestoreStatus|null,
+     *     DataTransferProgress?: DataTransferProgress|null,
+     *     HsmStatus?: HsmStatus|null,
+     *     ClusterSnapshotCopyStatus?: ClusterSnapshotCopyStatus|null,
+     *     ClusterPublicKey?: string|null,
+     *     ClusterNodes?: list<ClusterNode>|null,
+     *     ElasticIpStatus?: ElasticIpStatus|null,
+     *     ClusterRevisionNumber?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     KmsKeyId?: string|null,
+     *     EnhancedVpcRouting?: bool|null,
+     *     IamRoles?: list<ClusterIamRole>|null,
+     *     PendingActions?: list<string>|null,
+     *     MaintenanceTrackName?: string|null,
+     *     ElasticResizeNumberOfNodeOptions?: string|null,
+     *     DeferredMaintenanceWindows?: list<DeferredMaintenanceWindow>|null,
+     *     SnapshotScheduleIdentifier?: string|null,
+     *     SnapshotScheduleState?: 'MODIFYING'|'ACTIVE'|'FAILED'|null,
+     *     ExpectedNextSnapshotScheduleTime?: \Aws\Api\DateTimeResult|null,
+     *     ExpectedNextSnapshotScheduleTimeStatus?: string|null,
+     *     NextMaintenanceWindowStartTime?: \Aws\Api\DateTimeResult|null,
+     *     ResizeInfo?: ResizeInfo|null,
+     *     AvailabilityZoneRelocationStatus?: string|null,
+     *     ClusterNamespaceArn?: string|null,
+     *     TotalStorageCapacityInMegaBytes?: int|null,
+     *     AquaConfiguration?: AquaConfiguration|null,
+     *     DefaultIamRoleArn?: string|null,
+     *     ReservedNodeExchangeStatus?: ReservedNodeExchangeStatus|null,
+     *     CustomDomainName?: string|null,
+     *     CustomDomainCertificateArn?: string|null,
+     *     CustomDomainCertificateExpiryDate?: \Aws\Api\DateTimeResult|null,
+     *     MasterPasswordSecretArn?: string|null,
+     *     MasterPasswordSecretKmsKeyId?: string|null,
+     *     IpAddressType?: string|null,
+     *     MultiAZ?: string|null,
+     *     MultiAZSecondary?: SecondaryClusterInfo|null
      * } $args
      */
     public function __construct(array $args = [])

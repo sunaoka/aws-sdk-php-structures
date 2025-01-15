@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Bedrock\ListModelInvocationJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ModelInvocationJobS3InputDataConfig $s3InputDataConfig
+ * @property ModelInvocationJobS3InputDataConfig|null $s3InputDataConfig
  */
 class ModelInvocationJobInputDataConfig extends Shape
 {
     /**
-     * @param array{s3InputDataConfig?: ModelInvocationJobS3InputDataConfig} $args
+     * @param array{s3InputDataConfig?: ModelInvocationJobS3InputDataConfig|null} $args
      */
     public function __construct(array $args = [])
     {

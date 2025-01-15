@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListAccountAssignmentDeletionStatus\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED' $Status
+ * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null $Status
  */
 class OperationStatusFilter extends Shape
 {
     /**
-     * @param array{Status?: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'} $args
+     * @param array{Status?: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\SecurityLake\CreateSubscriberNotification\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $authorizationApiKeyName
- * @property string $authorizationApiKeyValue
+ * @property string|null $authorizationApiKeyName
+ * @property string|null $authorizationApiKeyValue
  * @property string $endpoint
- * @property 'POST'|'PUT' $httpMethod
+ * @property 'POST'|'PUT'|null $httpMethod
  * @property string $targetRoleArn
  */
 class HttpsNotificationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     authorizationApiKeyName?: string,
-     *     authorizationApiKeyValue?: string,
+     *     authorizationApiKeyName?: string|null,
+     *     authorizationApiKeyValue?: string|null,
      *     endpoint: string,
-     *     httpMethod?: 'POST'|'PUT',
+     *     httpMethod?: 'POST'|'PUT'|null,
      *     targetRoleArn: string
      * } $args
      */

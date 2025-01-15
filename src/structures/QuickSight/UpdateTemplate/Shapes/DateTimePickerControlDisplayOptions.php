@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LabelOptions $TitleOptions
- * @property string $DateTimeFormat
- * @property SheetControlInfoIconLabelOptions $InfoIconLabelOptions
- * @property 'HIDDEN'|'VISIBLE' $HelperTextVisibility
- * @property 'HIDDEN'|'VISIBLE' $DateIconVisibility
+ * @property LabelOptions|null $TitleOptions
+ * @property string|null $DateTimeFormat
+ * @property SheetControlInfoIconLabelOptions|null $InfoIconLabelOptions
+ * @property 'HIDDEN'|'VISIBLE'|null $HelperTextVisibility
+ * @property 'HIDDEN'|'VISIBLE'|null $DateIconVisibility
  */
 class DateTimePickerControlDisplayOptions extends Shape
 {
     /**
      * @param array{
-     *     TitleOptions?: LabelOptions,
-     *     DateTimeFormat?: string,
-     *     InfoIconLabelOptions?: SheetControlInfoIconLabelOptions,
-     *     HelperTextVisibility?: 'HIDDEN'|'VISIBLE',
-     *     DateIconVisibility?: 'HIDDEN'|'VISIBLE'
+     *     TitleOptions?: LabelOptions|null,
+     *     DateTimeFormat?: string|null,
+     *     InfoIconLabelOptions?: SheetControlInfoIconLabelOptions|null,
+     *     HelperTextVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     DateIconVisibility?: 'HIDDEN'|'VISIBLE'|null
      * } $args
      */
     public function __construct(array $args = [])

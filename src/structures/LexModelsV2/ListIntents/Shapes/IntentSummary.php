@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListIntents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $intentId
- * @property string $intentName
- * @property string $description
- * @property string $parentIntentSignature
- * @property list<InputContext> $inputContexts
- * @property list<OutputContext> $outputContexts
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $intentId
+ * @property string|null $intentName
+ * @property string|null $description
+ * @property string|null $parentIntentSignature
+ * @property list<InputContext>|null $inputContexts
+ * @property list<OutputContext>|null $outputContexts
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class IntentSummary extends Shape
 {
     /**
      * @param array{
-     *     intentId?: string,
-     *     intentName?: string,
-     *     description?: string,
-     *     parentIntentSignature?: string,
-     *     inputContexts?: list<InputContext>,
-     *     outputContexts?: list<OutputContext>,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     intentId?: string|null,
+     *     intentName?: string|null,
+     *     description?: string|null,
+     *     parentIntentSignature?: string|null,
+     *     inputContexts?: list<InputContext>|null,
+     *     outputContexts?: list<OutputContext>|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

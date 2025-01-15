@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTWireless\SendDataToMulticastGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 223> $FPort
+ * @property int<1, 223>|null $FPort
  */
 class LoRaWANMulticastMetadata extends Shape
 {
     /**
-     * @param array{FPort?: int<1, 223>} $args
+     * @param array{FPort?: int<1, 223>|null} $args
      */
     public function __construct(array $args = [])
     {

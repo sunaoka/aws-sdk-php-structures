@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\InvokeModelWithResponseStream\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $message
- * @property int<100, 599> $originalStatusCode
- * @property string $originalMessage
+ * @property string|null $message
+ * @property int<100, 599>|null $originalStatusCode
+ * @property string|null $originalMessage
  */
 class ModelStreamErrorException extends Shape
 {
     /**
      * @param array{
-     *     message?: string,
-     *     originalStatusCode?: int<100, 599>,
-     *     originalMessage?: string
+     *     message?: string|null,
+     *     originalStatusCode?: int<100, 599>|null,
+     *     originalMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

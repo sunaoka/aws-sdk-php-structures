@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrustId
- * @property bool $DeleteAssociatedConditionalForwarder
+ * @property bool|null $DeleteAssociatedConditionalForwarder
  */
 class DeleteTrustRequest extends Request
 {
     /**
      * @param array{
      *     TrustId: string,
-     *     DeleteAssociatedConditionalForwarder?: bool
+     *     DeleteAssociatedConditionalForwarder?: bool|null
      * } $args
      */
     public function __construct(array $args)

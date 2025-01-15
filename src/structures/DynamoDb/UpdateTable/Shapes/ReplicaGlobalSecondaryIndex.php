@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $IndexName
- * @property ProvisionedThroughputOverride $ProvisionedThroughputOverride
- * @property OnDemandThroughputOverride $OnDemandThroughputOverride
+ * @property ProvisionedThroughputOverride|null $ProvisionedThroughputOverride
+ * @property OnDemandThroughputOverride|null $OnDemandThroughputOverride
  */
 class ReplicaGlobalSecondaryIndex extends Shape
 {
     /**
      * @param array{
      *     IndexName: string,
-     *     ProvisionedThroughputOverride?: ProvisionedThroughputOverride,
-     *     OnDemandThroughputOverride?: OnDemandThroughputOverride
+     *     ProvisionedThroughputOverride?: ProvisionedThroughputOverride|null,
+     *     OnDemandThroughputOverride?: OnDemandThroughputOverride|null
      * } $args
      */
     public function __construct(array $args)

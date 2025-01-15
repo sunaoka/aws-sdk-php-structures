@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ConnectCases\SearchCases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FieldValue $contains
- * @property FieldValue $equalTo
- * @property FieldValue $greaterThan
- * @property FieldValue $greaterThanOrEqualTo
- * @property FieldValue $lessThan
- * @property FieldValue $lessThanOrEqualTo
+ * @property FieldValue|null $contains
+ * @property FieldValue|null $equalTo
+ * @property FieldValue|null $greaterThan
+ * @property FieldValue|null $greaterThanOrEqualTo
+ * @property FieldValue|null $lessThan
+ * @property FieldValue|null $lessThanOrEqualTo
  */
 class FieldFilter extends Shape
 {
     /**
      * @param array{
-     *     contains?: FieldValue,
-     *     equalTo?: FieldValue,
-     *     greaterThan?: FieldValue,
-     *     greaterThanOrEqualTo?: FieldValue,
-     *     lessThan?: FieldValue,
-     *     lessThanOrEqualTo?: FieldValue
+     *     contains?: FieldValue|null,
+     *     equalTo?: FieldValue|null,
+     *     greaterThan?: FieldValue|null,
+     *     greaterThanOrEqualTo?: FieldValue|null,
+     *     lessThan?: FieldValue|null,
+     *     lessThanOrEqualTo?: FieldValue|null
      * } $args
      */
     public function __construct(array $args = [])

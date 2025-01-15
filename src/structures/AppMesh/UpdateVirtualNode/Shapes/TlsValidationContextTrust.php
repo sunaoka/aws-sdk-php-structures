@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TlsValidationContextAcmTrust $acm
- * @property TlsValidationContextFileTrust $file
- * @property TlsValidationContextSdsTrust $sds
+ * @property TlsValidationContextAcmTrust|null $acm
+ * @property TlsValidationContextFileTrust|null $file
+ * @property TlsValidationContextSdsTrust|null $sds
  */
 class TlsValidationContextTrust extends Shape
 {
     /**
      * @param array{
-     *     acm?: TlsValidationContextAcmTrust,
-     *     file?: TlsValidationContextFileTrust,
-     *     sds?: TlsValidationContextSdsTrust
+     *     acm?: TlsValidationContextAcmTrust|null,
+     *     file?: TlsValidationContextFileTrust|null,
+     *     sds?: TlsValidationContextSdsTrust|null
      * } $args
      */
     public function __construct(array $args = [])

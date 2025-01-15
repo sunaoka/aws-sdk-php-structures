@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GaugeChartFieldWells $FieldWells
- * @property GaugeChartOptions $GaugeChartOptions
- * @property DataLabelOptions $DataLabels
- * @property TooltipOptions $TooltipOptions
- * @property VisualPalette $VisualPalette
- * @property GaugeChartColorConfiguration $ColorConfiguration
- * @property VisualInteractionOptions $Interactions
+ * @property GaugeChartFieldWells|null $FieldWells
+ * @property GaugeChartOptions|null $GaugeChartOptions
+ * @property DataLabelOptions|null $DataLabels
+ * @property TooltipOptions|null $TooltipOptions
+ * @property VisualPalette|null $VisualPalette
+ * @property GaugeChartColorConfiguration|null $ColorConfiguration
+ * @property VisualInteractionOptions|null $Interactions
  */
 class GaugeChartConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: GaugeChartFieldWells,
-     *     GaugeChartOptions?: GaugeChartOptions,
-     *     DataLabels?: DataLabelOptions,
-     *     TooltipOptions?: TooltipOptions,
-     *     VisualPalette?: VisualPalette,
-     *     ColorConfiguration?: GaugeChartColorConfiguration,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: GaugeChartFieldWells|null,
+     *     GaugeChartOptions?: GaugeChartOptions|null,
+     *     DataLabels?: DataLabelOptions|null,
+     *     TooltipOptions?: TooltipOptions|null,
+     *     VisualPalette?: VisualPalette|null,
+     *     ColorConfiguration?: GaugeChartColorConfiguration|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

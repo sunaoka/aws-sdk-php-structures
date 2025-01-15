@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CollectorName
- * @property string $Description
+ * @property string|null $Description
  * @property string $ServiceAccessRoleArn
  * @property string $S3BucketName
  */
@@ -15,7 +15,7 @@ class CreateFleetAdvisorCollectorRequest extends Request
     /**
      * @param array{
      *     CollectorName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     ServiceAccessRoleArn: string,
      *     S3BucketName: string
      * } $args

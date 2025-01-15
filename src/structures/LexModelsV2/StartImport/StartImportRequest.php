@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $importId
  * @property Shapes\ImportResourceSpecification $resourceSpecification
  * @property 'Overwrite'|'FailOnConflict'|'Append' $mergeStrategy
- * @property string $filePassword
+ * @property string|null $filePassword
  */
 class StartImportRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartImportRequest extends Request
      *     importId: string,
      *     resourceSpecification: Shapes\ImportResourceSpecification,
      *     mergeStrategy: 'Overwrite'|'FailOnConflict'|'Append',
-     *     filePassword?: string
+     *     filePassword?: string|null
      * } $args
      */
     public function __construct(array $args)

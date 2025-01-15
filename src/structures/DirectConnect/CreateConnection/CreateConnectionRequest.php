@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $location
  * @property string $bandwidth
  * @property string $connectionName
- * @property string $lagId
- * @property list<Shapes\Tag> $tags
- * @property string $providerName
- * @property bool $requestMACSec
+ * @property string|null $lagId
+ * @property list<Shapes\Tag>|null $tags
+ * @property string|null $providerName
+ * @property bool|null $requestMACSec
  */
 class CreateConnectionRequest extends Request
 {
@@ -20,10 +20,10 @@ class CreateConnectionRequest extends Request
      *     location: string,
      *     bandwidth: string,
      *     connectionName: string,
-     *     lagId?: string,
-     *     tags?: list<Shapes\Tag>,
-     *     providerName?: string,
-     *     requestMACSec?: bool
+     *     lagId?: string|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     providerName?: string|null,
+     *     requestMACSec?: bool|null
      * } $args
      */
     public function __construct(array $args)

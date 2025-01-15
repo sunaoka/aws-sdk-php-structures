@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ChannelArn
  * @property string $MemberArn
  * @property string $ChimeBearer
- * @property string $SubChannelId
+ * @property string|null $SubChannelId
  */
 class DeleteChannelMembershipRequest extends Request
 {
@@ -17,7 +17,7 @@ class DeleteChannelMembershipRequest extends Request
      *     ChannelArn: string,
      *     MemberArn: string,
      *     ChimeBearer: string,
-     *     SubChannelId?: string
+     *     SubChannelId?: string|null
      * } $args
      */
     public function __construct(array $args)

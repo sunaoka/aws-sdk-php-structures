@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateChatControlsConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $systemMessageOverride
+ * @property string|null $systemMessageOverride
  */
 class ContentBlockerRule extends Shape
 {
     /**
-     * @param array{systemMessageOverride?: string} $args
+     * @param array{systemMessageOverride?: string|null} $args
      */
     public function __construct(array $args = [])
     {

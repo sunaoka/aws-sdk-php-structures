@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\DescribeClassificationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property JobScopingBlock $excludes
- * @property JobScopingBlock $includes
+ * @property JobScopingBlock|null $excludes
+ * @property JobScopingBlock|null $includes
  */
 class Scoping extends Shape
 {
     /**
      * @param array{
-     *     excludes?: JobScopingBlock,
-     *     includes?: JobScopingBlock
+     *     excludes?: JobScopingBlock|null,
+     *     includes?: JobScopingBlock|null
      * } $args
      */
     public function __construct(array $args = [])

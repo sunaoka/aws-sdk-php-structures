@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EventDataStore
- * @property string $Name
- * @property list<Shapes\AdvancedEventSelector> $AdvancedEventSelectors
- * @property bool $MultiRegionEnabled
- * @property bool $OrganizationEnabled
- * @property int<7, 3653> $RetentionPeriod
- * @property bool $TerminationProtectionEnabled
- * @property string $KmsKeyId
- * @property 'EXTENDABLE_RETENTION_PRICING'|'FIXED_RETENTION_PRICING' $BillingMode
+ * @property string|null $Name
+ * @property list<Shapes\AdvancedEventSelector>|null $AdvancedEventSelectors
+ * @property bool|null $MultiRegionEnabled
+ * @property bool|null $OrganizationEnabled
+ * @property int<7, 3653>|null $RetentionPeriod
+ * @property bool|null $TerminationProtectionEnabled
+ * @property string|null $KmsKeyId
+ * @property 'EXTENDABLE_RETENTION_PRICING'|'FIXED_RETENTION_PRICING'|null $BillingMode
  */
 class UpdateEventDataStoreRequest extends Request
 {
     /**
      * @param array{
      *     EventDataStore: string,
-     *     Name?: string,
-     *     AdvancedEventSelectors?: list<Shapes\AdvancedEventSelector>,
-     *     MultiRegionEnabled?: bool,
-     *     OrganizationEnabled?: bool,
-     *     RetentionPeriod?: int<7, 3653>,
-     *     TerminationProtectionEnabled?: bool,
-     *     KmsKeyId?: string,
-     *     BillingMode?: 'EXTENDABLE_RETENTION_PRICING'|'FIXED_RETENTION_PRICING'
+     *     Name?: string|null,
+     *     AdvancedEventSelectors?: list<Shapes\AdvancedEventSelector>|null,
+     *     MultiRegionEnabled?: bool|null,
+     *     OrganizationEnabled?: bool|null,
+     *     RetentionPeriod?: int<7, 3653>|null,
+     *     TerminationProtectionEnabled?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     BillingMode?: 'EXTENDABLE_RETENTION_PRICING'|'FIXED_RETENTION_PRICING'|null
      * } $args
      */
     public function __construct(array $args)

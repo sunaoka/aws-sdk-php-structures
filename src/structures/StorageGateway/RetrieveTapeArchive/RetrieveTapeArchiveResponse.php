@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\RetrieveTapeArchive;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TapeARN
+ * @property string|null $TapeARN
  */
 class RetrieveTapeArchiveResponse extends Response
 {

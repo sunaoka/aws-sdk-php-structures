@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GameServerGroupName
  * @property string $GameServerId
  * @property string $InstanceId
- * @property string $ConnectionInfo
- * @property string $GameServerData
+ * @property string|null $ConnectionInfo
+ * @property string|null $GameServerData
  */
 class RegisterGameServerRequest extends Request
 {
@@ -18,8 +18,8 @@ class RegisterGameServerRequest extends Request
      *     GameServerGroupName: string,
      *     GameServerId: string,
      *     InstanceId: string,
-     *     ConnectionInfo?: string,
-     *     GameServerData?: string
+     *     ConnectionInfo?: string|null,
+     *     GameServerData?: string|null
      * } $args
      */
     public function __construct(array $args)

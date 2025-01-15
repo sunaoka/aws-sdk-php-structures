@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TableName
- * @property string $IndexName
+ * @property string|null $IndexName
  * @property 'ENABLE'|'DISABLE' $ContributorInsightsAction
  */
 class UpdateContributorInsightsRequest extends Request
@@ -14,7 +14,7 @@ class UpdateContributorInsightsRequest extends Request
     /**
      * @param array{
      *     TableName: string,
-     *     IndexName?: string,
+     *     IndexName?: string|null,
      *     ContributorInsightsAction: 'ENABLE'|'DISABLE'
      * } $args
      */

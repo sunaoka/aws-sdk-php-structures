@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $experimentId
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property string $targetName
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $targetName
  */
 class ListExperimentResolvedTargetsRequest extends Request
 {
     /**
      * @param array{
      *     experimentId: string,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     targetName?: string
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     targetName?: string|null
      * } $args
      */
     public function __construct(array $args)

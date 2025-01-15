@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\SecretsManager\RotateSecret;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ARN
- * @property string $Name
- * @property string $VersionId
+ * @property string|null $ARN
+ * @property string|null $Name
+ * @property string|null $VersionId
  */
 class RotateSecretResponse extends Response
 {

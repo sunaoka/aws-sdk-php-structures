@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DestinationS3Uri
- * @property string $KmsKeyId
- * @property bool $GenerateInferenceId
+ * @property string|null $KmsKeyId
+ * @property bool|null $GenerateInferenceId
  */
 class BatchDataCaptureConfig extends Shape
 {
     /**
      * @param array{
      *     DestinationS3Uri: string,
-     *     KmsKeyId?: string,
-     *     GenerateInferenceId?: bool
+     *     KmsKeyId?: string|null,
+     *     GenerateInferenceId?: bool|null
      * } $args
      */
     public function __construct(array $args)

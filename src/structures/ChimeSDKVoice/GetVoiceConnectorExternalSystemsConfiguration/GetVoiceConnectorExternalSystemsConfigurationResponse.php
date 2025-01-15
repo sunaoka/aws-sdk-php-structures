@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceConnectorExternalSystemsC
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ExternalSystemsConfiguration $ExternalSystemsConfiguration
+ * @property Shapes\ExternalSystemsConfiguration|null $ExternalSystemsConfiguration
  */
 class GetVoiceConnectorExternalSystemsConfigurationResponse extends Response
 {

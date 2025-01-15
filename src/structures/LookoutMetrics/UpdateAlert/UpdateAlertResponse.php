@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\UpdateAlert;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AlertArn
+ * @property string|null $AlertArn
  */
 class UpdateAlertResponse extends Response
 {

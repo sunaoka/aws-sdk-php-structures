@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $workflowId
  * @property string $workflowName
  * @property 'SUCCEEDED'|'FAILED'|'STOPPED'|'SUPERSEDED'|'CANCELLED'|'NOT_RUN'|'VALIDATING'|'PROVISIONING'|'IN_PROGRESS'|'STOPPING'|'ABANDONED' $status
- * @property list<WorkflowRunStatusReason> $statusReasons
+ * @property list<WorkflowRunStatusReason>|null $statusReasons
  * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
  */
 class WorkflowRunSummary extends Shape
@@ -22,9 +22,9 @@ class WorkflowRunSummary extends Shape
      *     workflowId: string,
      *     workflowName: string,
      *     status: 'SUCCEEDED'|'FAILED'|'STOPPED'|'SUPERSEDED'|'CANCELLED'|'NOT_RUN'|'VALIDATING'|'PROVISIONING'|'IN_PROGRESS'|'STOPPING'|'ABANDONED',
-     *     statusReasons?: list<WorkflowRunStatusReason>,
+     *     statusReasons?: list<WorkflowRunStatusReason>|null,
      *     startTime: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedTime: \Aws\Api\DateTimeResult
      * } $args
      */

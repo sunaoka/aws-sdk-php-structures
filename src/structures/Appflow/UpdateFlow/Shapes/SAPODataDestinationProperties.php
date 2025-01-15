@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $objectPath
- * @property SuccessResponseHandlingConfig $successResponseHandlingConfig
- * @property list<string> $idFieldNames
- * @property ErrorHandlingConfig $errorHandlingConfig
- * @property 'INSERT'|'UPSERT'|'UPDATE'|'DELETE' $writeOperationType
+ * @property SuccessResponseHandlingConfig|null $successResponseHandlingConfig
+ * @property list<string>|null $idFieldNames
+ * @property ErrorHandlingConfig|null $errorHandlingConfig
+ * @property 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'|null $writeOperationType
  */
 class SAPODataDestinationProperties extends Shape
 {
     /**
      * @param array{
      *     objectPath: string,
-     *     successResponseHandlingConfig?: SuccessResponseHandlingConfig,
-     *     idFieldNames?: list<string>,
-     *     errorHandlingConfig?: ErrorHandlingConfig,
-     *     writeOperationType?: 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'
+     *     successResponseHandlingConfig?: SuccessResponseHandlingConfig|null,
+     *     idFieldNames?: list<string>|null,
+     *     errorHandlingConfig?: ErrorHandlingConfig|null,
+     *     writeOperationType?: 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'|null
      * } $args
      */
     public function __construct(array $args)

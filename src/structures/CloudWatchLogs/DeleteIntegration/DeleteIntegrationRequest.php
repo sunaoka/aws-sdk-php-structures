@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $integrationName
- * @property bool $force
+ * @property bool|null $force
  */
 class DeleteIntegrationRequest extends Request
 {
     /**
      * @param array{
      *     integrationName: string,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

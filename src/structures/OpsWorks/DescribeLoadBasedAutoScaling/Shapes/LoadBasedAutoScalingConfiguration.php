@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeLoadBasedAutoScaling\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LayerId
- * @property bool $Enable
- * @property AutoScalingThresholds $UpScaling
- * @property AutoScalingThresholds $DownScaling
+ * @property string|null $LayerId
+ * @property bool|null $Enable
+ * @property AutoScalingThresholds|null $UpScaling
+ * @property AutoScalingThresholds|null $DownScaling
  */
 class LoadBasedAutoScalingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     LayerId?: string,
-     *     Enable?: bool,
-     *     UpScaling?: AutoScalingThresholds,
-     *     DownScaling?: AutoScalingThresholds
+     *     LayerId?: string|null,
+     *     Enable?: bool|null,
+     *     UpScaling?: AutoScalingThresholds|null,
+     *     DownScaling?: AutoScalingThresholds|null
      * } $args
      */
     public function __construct(array $args = [])

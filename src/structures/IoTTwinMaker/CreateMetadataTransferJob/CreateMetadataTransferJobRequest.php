@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\CreateMetadataTransferJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $metadataTransferJobId
- * @property string $description
+ * @property string|null $metadataTransferJobId
+ * @property string|null $description
  * @property list<Shapes\SourceConfiguration> $sources
  * @property Shapes\DestinationConfiguration $destination
  */
@@ -14,8 +14,8 @@ class CreateMetadataTransferJobRequest extends Request
 {
     /**
      * @param array{
-     *     metadataTransferJobId?: string,
-     *     description?: string,
+     *     metadataTransferJobId?: string|null,
+     *     description?: string|null,
      *     sources: list<Shapes\SourceConfiguration>,
      *     destination: Shapes\DestinationConfiguration
      * } $args

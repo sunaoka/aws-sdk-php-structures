@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\KinesisVideoArchivedMedia\ListFragments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
- * @property string $StreamARN
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
- * @property Shapes\FragmentSelector $FragmentSelector
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property Shapes\FragmentSelector|null $FragmentSelector
  */
 class ListFragmentsRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     StreamARN?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string,
-     *     FragmentSelector?: Shapes\FragmentSelector
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null,
+     *     FragmentSelector?: Shapes\FragmentSelector|null
      * } $args
      */
     public function __construct(array $args = [])

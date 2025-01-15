@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ARCZonalShift\UpdateZonalShift;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $comment
- * @property string $expiresIn
+ * @property string|null $comment
+ * @property string|null $expiresIn
  * @property string $zonalShiftId
  */
 class UpdateZonalShiftRequest extends Request
 {
     /**
      * @param array{
-     *     comment?: string,
-     *     expiresIn?: string,
+     *     comment?: string|null,
+     *     expiresIn?: string|null,
      *     zonalShiftId: string
      * } $args
      */

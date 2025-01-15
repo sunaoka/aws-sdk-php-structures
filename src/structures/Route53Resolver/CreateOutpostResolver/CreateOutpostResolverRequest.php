@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CreatorRequestId
  * @property string $Name
- * @property int $InstanceCount
+ * @property int|null $InstanceCount
  * @property string $PreferredInstanceType
  * @property string $OutpostArn
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateOutpostResolverRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateOutpostResolverRequest extends Request
      * @param array{
      *     CreatorRequestId: string,
      *     Name: string,
-     *     InstanceCount?: int,
+     *     InstanceCount?: int|null,
      *     PreferredInstanceType: string,
      *     OutpostArn: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

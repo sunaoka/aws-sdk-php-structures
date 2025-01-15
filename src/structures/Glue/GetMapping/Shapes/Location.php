@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetMapping\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CodeGenNodeArg> $Jdbc
- * @property list<CodeGenNodeArg> $S3
- * @property list<CodeGenNodeArg> $DynamoDB
+ * @property list<CodeGenNodeArg>|null $Jdbc
+ * @property list<CodeGenNodeArg>|null $S3
+ * @property list<CodeGenNodeArg>|null $DynamoDB
  */
 class Location extends Shape
 {
     /**
      * @param array{
-     *     Jdbc?: list<CodeGenNodeArg>,
-     *     S3?: list<CodeGenNodeArg>,
-     *     DynamoDB?: list<CodeGenNodeArg>
+     *     Jdbc?: list<CodeGenNodeArg>|null,
+     *     S3?: list<CodeGenNodeArg>|null,
+     *     DynamoDB?: list<CodeGenNodeArg>|null
      * } $args
      */
     public function __construct(array $args = [])

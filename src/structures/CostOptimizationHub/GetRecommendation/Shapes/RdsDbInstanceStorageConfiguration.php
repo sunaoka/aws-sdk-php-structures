@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $storageType
- * @property double $allocatedStorageInGb
- * @property double $iops
- * @property double $storageThroughput
+ * @property string|null $storageType
+ * @property double|null $allocatedStorageInGb
+ * @property double|null $iops
+ * @property double|null $storageThroughput
  */
 class RdsDbInstanceStorageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     storageType?: string,
-     *     allocatedStorageInGb?: double,
-     *     iops?: double,
-     *     storageThroughput?: double
+     *     storageType?: string|null,
+     *     allocatedStorageInGb?: double|null,
+     *     iops?: double|null,
+     *     storageThroughput?: double|null
      * } $args
      */
     public function __construct(array $args = [])

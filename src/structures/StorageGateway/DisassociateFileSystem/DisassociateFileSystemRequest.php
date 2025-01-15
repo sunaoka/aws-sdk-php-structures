@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FileSystemAssociationARN
- * @property bool $ForceDelete
+ * @property bool|null $ForceDelete
  */
 class DisassociateFileSystemRequest extends Request
 {
     /**
      * @param array{
      *     FileSystemAssociationARN: string,
-     *     ForceDelete?: bool
+     *     ForceDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

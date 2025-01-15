@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MQ\DescribeBroker\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataReplicationCounterpart $DataReplicationCounterpart
+ * @property DataReplicationCounterpart|null $DataReplicationCounterpart
  * @property string $DataReplicationRole
  */
 class DataReplicationMetadataOutput extends Shape
 {
     /**
      * @param array{
-     *     DataReplicationCounterpart?: DataReplicationCounterpart,
+     *     DataReplicationCounterpart?: DataReplicationCounterpart|null,
      *     DataReplicationRole: string
      * } $args
      */

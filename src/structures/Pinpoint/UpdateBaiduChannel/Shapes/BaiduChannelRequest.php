@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ApiKey
- * @property bool $Enabled
+ * @property bool|null $Enabled
  * @property string $SecretKey
  */
 class BaiduChannelRequest extends Shape
@@ -14,7 +14,7 @@ class BaiduChannelRequest extends Shape
     /**
      * @param array{
      *     ApiKey: string,
-     *     Enabled?: bool,
+     *     Enabled?: bool|null,
      *     SecretKey: string
      * } $args
      */

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $functionName
  * @property string $layerArn
  * @property string $resourceId
- * @property SeverityCounts $severityCounts
+ * @property SeverityCounts|null $severityCounts
  */
 class LambdaLayerAggregationResponse extends Shape
 {
@@ -19,7 +19,7 @@ class LambdaLayerAggregationResponse extends Shape
      *     functionName: string,
      *     layerArn: string,
      *     resourceId: string,
-     *     severityCounts?: SeverityCounts
+     *     severityCounts?: SeverityCounts|null
      * } $args
      */
     public function __construct(array $args)

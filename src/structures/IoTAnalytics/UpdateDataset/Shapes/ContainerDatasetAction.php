@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $image
  * @property string $executionRoleArn
  * @property ResourceConfiguration $resourceConfiguration
- * @property list<Variable> $variables
+ * @property list<Variable>|null $variables
  */
 class ContainerDatasetAction extends Shape
 {
@@ -17,7 +17,7 @@ class ContainerDatasetAction extends Shape
      *     image: string,
      *     executionRoleArn: string,
      *     resourceConfiguration: ResourceConfiguration,
-     *     variables?: list<Variable>
+     *     variables?: list<Variable>|null
      * } $args
      */
     public function __construct(array $args)

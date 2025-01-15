@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $sql
- * @property string $description
+ * @property string|null $description
  * @property list<Action> $actions
- * @property bool $ruleDisabled
- * @property string $awsIotSqlVersion
- * @property Action $errorAction
+ * @property bool|null $ruleDisabled
+ * @property string|null $awsIotSqlVersion
+ * @property Action|null $errorAction
  */
 class TopicRulePayload extends Shape
 {
     /**
      * @param array{
      *     sql: string,
-     *     description?: string,
+     *     description?: string|null,
      *     actions: list<Action>,
-     *     ruleDisabled?: bool,
-     *     awsIotSqlVersion?: string,
-     *     errorAction?: Action
+     *     ruleDisabled?: bool|null,
+     *     awsIotSqlVersion?: string|null,
+     *     errorAction?: Action|null
      * } $args
      */
     public function __construct(array $args)

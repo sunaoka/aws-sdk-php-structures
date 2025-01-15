@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\TerminateProvisionedProduct;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ProvisionedProductName
- * @property string $ProvisionedProductId
+ * @property string|null $ProvisionedProductName
+ * @property string|null $ProvisionedProductId
  * @property string $TerminateToken
- * @property bool $IgnoreErrors
- * @property string $AcceptLanguage
- * @property bool $RetainPhysicalResources
+ * @property bool|null $IgnoreErrors
+ * @property string|null $AcceptLanguage
+ * @property bool|null $RetainPhysicalResources
  */
 class TerminateProvisionedProductRequest extends Request
 {
     /**
      * @param array{
-     *     ProvisionedProductName?: string,
-     *     ProvisionedProductId?: string,
+     *     ProvisionedProductName?: string|null,
+     *     ProvisionedProductId?: string|null,
      *     TerminateToken: string,
-     *     IgnoreErrors?: bool,
-     *     AcceptLanguage?: string,
-     *     RetainPhysicalResources?: bool
+     *     IgnoreErrors?: bool|null,
+     *     AcceptLanguage?: string|null,
+     *     RetainPhysicalResources?: bool|null
      * } $args
      */
     public function __construct(array $args)

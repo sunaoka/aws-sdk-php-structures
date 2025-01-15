@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\DeactivateDeviceIdentifier;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $deviceIdentifierArn
  */
 class DeactivateDeviceIdentifierRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     deviceIdentifierArn: string
      * } $args
      */

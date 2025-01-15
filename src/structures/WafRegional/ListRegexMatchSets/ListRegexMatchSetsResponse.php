@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WafRegional\ListRegexMatchSets;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextMarker
- * @property list<Shapes\RegexMatchSetSummary> $RegexMatchSets
+ * @property string|null $NextMarker
+ * @property list<Shapes\RegexMatchSetSummary>|null $RegexMatchSets
  */
 class ListRegexMatchSetsResponse extends Response
 {

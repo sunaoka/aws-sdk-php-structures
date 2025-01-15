@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\DeregisterIdent
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ActiveDirectoryIdentityProvider $ActiveDirectoryIdentityProvider
+ * @property ActiveDirectoryIdentityProvider|null $ActiveDirectoryIdentityProvider
  */
 class IdentityProvider extends Shape
 {
     /**
-     * @param array{ActiveDirectoryIdentityProvider?: ActiveDirectoryIdentityProvider} $args
+     * @param array{ActiveDirectoryIdentityProvider?: ActiveDirectoryIdentityProvider|null} $args
      */
     public function __construct(array $args = [])
     {

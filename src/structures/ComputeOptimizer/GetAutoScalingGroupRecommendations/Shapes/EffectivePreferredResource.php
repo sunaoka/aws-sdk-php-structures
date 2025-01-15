@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetAutoScalingGroupRecommendat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Ec2InstanceTypes' $name
- * @property list<string> $includeList
- * @property list<string> $effectiveIncludeList
- * @property list<string> $excludeList
+ * @property 'Ec2InstanceTypes'|null $name
+ * @property list<string>|null $includeList
+ * @property list<string>|null $effectiveIncludeList
+ * @property list<string>|null $excludeList
  */
 class EffectivePreferredResource extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Ec2InstanceTypes',
-     *     includeList?: list<string>,
-     *     effectiveIncludeList?: list<string>,
-     *     excludeList?: list<string>
+     *     name?: 'Ec2InstanceTypes'|null,
+     *     includeList?: list<string>|null,
+     *     effectiveIncludeList?: list<string>|null,
+     *     excludeList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

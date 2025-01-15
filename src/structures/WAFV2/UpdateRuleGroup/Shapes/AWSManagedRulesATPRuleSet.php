@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $LoginPath
- * @property RequestInspection $RequestInspection
- * @property ResponseInspection $ResponseInspection
- * @property bool $EnableRegexInPath
+ * @property RequestInspection|null $RequestInspection
+ * @property ResponseInspection|null $ResponseInspection
+ * @property bool|null $EnableRegexInPath
  */
 class AWSManagedRulesATPRuleSet extends Shape
 {
     /**
      * @param array{
      *     LoginPath: string,
-     *     RequestInspection?: RequestInspection,
-     *     ResponseInspection?: ResponseInspection,
-     *     EnableRegexInPath?: bool
+     *     RequestInspection?: RequestInspection|null,
+     *     ResponseInspection?: ResponseInspection|null,
+     *     EnableRegexInPath?: bool|null
      * } $args
      */
     public function __construct(array $args)

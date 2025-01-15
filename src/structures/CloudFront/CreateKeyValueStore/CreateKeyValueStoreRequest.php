@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Comment
- * @property Shapes\ImportSource $ImportSource
+ * @property string|null $Comment
+ * @property Shapes\ImportSource|null $ImportSource
  */
 class CreateKeyValueStoreRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Comment?: string,
-     *     ImportSource?: Shapes\ImportSource
+     *     Comment?: string|null,
+     *     ImportSource?: Shapes\ImportSource|null
      * } $args
      */
     public function __construct(array $args)

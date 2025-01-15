@@ -8,17 +8,17 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $keyspaceName
  * @property string $tableName
  * @property string $resourceArn
- * @property \Aws\Api\DateTimeResult $creationTimestamp
- * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'DELETED'|'RESTORING'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS' $status
- * @property Shapes\SchemaDefinition $schemaDefinition
- * @property Shapes\CapacitySpecificationSummary $capacitySpecification
- * @property Shapes\EncryptionSpecification $encryptionSpecification
- * @property Shapes\PointInTimeRecoverySummary $pointInTimeRecovery
- * @property Shapes\TimeToLive $ttl
- * @property int<0, 630720000> $defaultTimeToLive
- * @property Shapes\Comment $comment
- * @property Shapes\ClientSideTimestamps $clientSideTimestamps
- * @property list<Shapes\ReplicaSpecificationSummary> $replicaSpecifications
+ * @property \Aws\Api\DateTimeResult|null $creationTimestamp
+ * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'DELETED'|'RESTORING'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null $status
+ * @property Shapes\SchemaDefinition|null $schemaDefinition
+ * @property Shapes\CapacitySpecificationSummary|null $capacitySpecification
+ * @property Shapes\EncryptionSpecification|null $encryptionSpecification
+ * @property Shapes\PointInTimeRecoverySummary|null $pointInTimeRecovery
+ * @property Shapes\TimeToLive|null $ttl
+ * @property int<0, 630720000>|null $defaultTimeToLive
+ * @property Shapes\Comment|null $comment
+ * @property Shapes\ClientSideTimestamps|null $clientSideTimestamps
+ * @property list<Shapes\ReplicaSpecificationSummary>|null $replicaSpecifications
  */
 class GetTableResponse extends Response
 {

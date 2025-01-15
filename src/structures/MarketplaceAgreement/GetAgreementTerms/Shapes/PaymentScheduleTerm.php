@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $currencyCode
- * @property list<ScheduleItem> $schedule
- * @property string $type
+ * @property string|null $currencyCode
+ * @property list<ScheduleItem>|null $schedule
+ * @property string|null $type
  */
 class PaymentScheduleTerm extends Shape
 {
     /**
      * @param array{
-     *     currencyCode?: string,
-     *     schedule?: list<ScheduleItem>,
-     *     type?: string
+     *     currencyCode?: string|null,
+     *     schedule?: list<ScheduleItem>|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

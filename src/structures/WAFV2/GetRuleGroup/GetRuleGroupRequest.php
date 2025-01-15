@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WAFV2\GetRuleGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
- * @property 'CLOUDFRONT'|'REGIONAL' $Scope
- * @property string $Id
- * @property string $ARN
+ * @property string|null $Name
+ * @property 'CLOUDFRONT'|'REGIONAL'|null $Scope
+ * @property string|null $Id
+ * @property string|null $ARN
  */
 class GetRuleGroupRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Scope?: 'CLOUDFRONT'|'REGIONAL',
-     *     Id?: string,
-     *     ARN?: string
+     *     Name?: string|null,
+     *     Scope?: 'CLOUDFRONT'|'REGIONAL'|null,
+     *     Id?: string|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

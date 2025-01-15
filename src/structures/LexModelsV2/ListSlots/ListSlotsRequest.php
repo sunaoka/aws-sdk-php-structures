@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botVersion
  * @property string $localeId
  * @property string $intentId
- * @property Shapes\SlotSortBy $sortBy
- * @property list<Shapes\SlotFilter> $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property Shapes\SlotSortBy|null $sortBy
+ * @property list<Shapes\SlotFilter>|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListSlotsRequest extends Request
 {
@@ -22,10 +22,10 @@ class ListSlotsRequest extends Request
      *     botVersion: string,
      *     localeId: string,
      *     intentId: string,
-     *     sortBy?: Shapes\SlotSortBy,
-     *     filters?: list<Shapes\SlotFilter>,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     sortBy?: Shapes\SlotSortBy|null,
+     *     filters?: list<Shapes\SlotFilter>|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

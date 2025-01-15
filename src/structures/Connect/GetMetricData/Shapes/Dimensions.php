@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Connect\GetMetricData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property QueueReference $Queue
- * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL' $Channel
- * @property RoutingProfileReference $RoutingProfile
- * @property string $RoutingStepExpression
+ * @property QueueReference|null $Queue
+ * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null $Channel
+ * @property RoutingProfileReference|null $RoutingProfile
+ * @property string|null $RoutingStepExpression
  */
 class Dimensions extends Shape
 {
     /**
      * @param array{
-     *     Queue?: QueueReference,
-     *     Channel?: 'VOICE'|'CHAT'|'TASK'|'EMAIL',
-     *     RoutingProfile?: RoutingProfileReference,
-     *     RoutingStepExpression?: string
+     *     Queue?: QueueReference|null,
+     *     Channel?: 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null,
+     *     RoutingProfile?: RoutingProfileReference|null,
+     *     RoutingStepExpression?: string|null
      * } $args
      */
     public function __construct(array $args = [])

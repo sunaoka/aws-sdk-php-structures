@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\UpdateRepository;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RepositoryDescription $repository
+ * @property Shapes\RepositoryDescription|null $repository
  */
 class UpdateRepositoryResponse extends Response
 {

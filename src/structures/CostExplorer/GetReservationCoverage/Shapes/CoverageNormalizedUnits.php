@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationCoverage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OnDemandNormalizedUnits
- * @property string $ReservedNormalizedUnits
- * @property string $TotalRunningNormalizedUnits
- * @property string $CoverageNormalizedUnitsPercentage
+ * @property string|null $OnDemandNormalizedUnits
+ * @property string|null $ReservedNormalizedUnits
+ * @property string|null $TotalRunningNormalizedUnits
+ * @property string|null $CoverageNormalizedUnitsPercentage
  */
 class CoverageNormalizedUnits extends Shape
 {
     /**
      * @param array{
-     *     OnDemandNormalizedUnits?: string,
-     *     ReservedNormalizedUnits?: string,
-     *     TotalRunningNormalizedUnits?: string,
-     *     CoverageNormalizedUnitsPercentage?: string
+     *     OnDemandNormalizedUnits?: string|null,
+     *     ReservedNormalizedUnits?: string|null,
+     *     TotalRunningNormalizedUnits?: string|null,
+     *     CoverageNormalizedUnitsPercentage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

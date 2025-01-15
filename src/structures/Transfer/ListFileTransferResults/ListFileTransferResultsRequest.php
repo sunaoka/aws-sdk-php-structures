@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ConnectorId
  * @property string $TransferId
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class ListFileTransferResultsRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListFileTransferResultsRequest extends Request
      * @param array{
      *     ConnectorId: string,
      *     TransferId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

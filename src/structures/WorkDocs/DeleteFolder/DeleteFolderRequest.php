@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DeleteFolder;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $FolderId
  */
 class DeleteFolderRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     FolderId: string
      * } $args
      */

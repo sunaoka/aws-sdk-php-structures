@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetLabelDetection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NAME'|'TIMESTAMP' $SortBy
- * @property 'TIMESTAMPS'|'SEGMENTS' $AggregateBy
+ * @property 'NAME'|'TIMESTAMP'|null $SortBy
+ * @property 'TIMESTAMPS'|'SEGMENTS'|null $AggregateBy
  */
 class GetLabelDetectionRequestMetadata extends Shape
 {
     /**
      * @param array{
-     *     SortBy?: 'NAME'|'TIMESTAMP',
-     *     AggregateBy?: 'TIMESTAMPS'|'SEGMENTS'
+     *     SortBy?: 'NAME'|'TIMESTAMP'|null,
+     *     AggregateBy?: 'TIMESTAMPS'|'SEGMENTS'|null
      * } $args
      */
     public function __construct(array $args = [])

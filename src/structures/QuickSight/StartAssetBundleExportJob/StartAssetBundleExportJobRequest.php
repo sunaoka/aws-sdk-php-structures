@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $AssetBundleExportJobId
  * @property list<string> $ResourceArns
- * @property bool $IncludeAllDependencies
+ * @property bool|null $IncludeAllDependencies
  * @property 'CLOUDFORMATION_JSON'|'QUICKSIGHT_JSON' $ExportFormat
- * @property Shapes\AssetBundleCloudFormationOverridePropertyConfiguration $CloudFormationOverridePropertyConfiguration
- * @property bool $IncludePermissions
- * @property bool $IncludeTags
- * @property Shapes\AssetBundleExportJobValidationStrategy $ValidationStrategy
- * @property bool $IncludeFolderMemberships
- * @property 'RECURSE'|'ONE_LEVEL'|'NONE' $IncludeFolderMembers
+ * @property Shapes\AssetBundleCloudFormationOverridePropertyConfiguration|null $CloudFormationOverridePropertyConfiguration
+ * @property bool|null $IncludePermissions
+ * @property bool|null $IncludeTags
+ * @property Shapes\AssetBundleExportJobValidationStrategy|null $ValidationStrategy
+ * @property bool|null $IncludeFolderMemberships
+ * @property 'RECURSE'|'ONE_LEVEL'|'NONE'|null $IncludeFolderMembers
  */
 class StartAssetBundleExportJobRequest extends Request
 {
@@ -24,14 +24,14 @@ class StartAssetBundleExportJobRequest extends Request
      *     AwsAccountId: string,
      *     AssetBundleExportJobId: string,
      *     ResourceArns: list<string>,
-     *     IncludeAllDependencies?: bool,
+     *     IncludeAllDependencies?: bool|null,
      *     ExportFormat: 'CLOUDFORMATION_JSON'|'QUICKSIGHT_JSON',
-     *     CloudFormationOverridePropertyConfiguration?: Shapes\AssetBundleCloudFormationOverridePropertyConfiguration,
-     *     IncludePermissions?: bool,
-     *     IncludeTags?: bool,
-     *     ValidationStrategy?: Shapes\AssetBundleExportJobValidationStrategy,
-     *     IncludeFolderMemberships?: bool,
-     *     IncludeFolderMembers?: 'RECURSE'|'ONE_LEVEL'|'NONE'
+     *     CloudFormationOverridePropertyConfiguration?: Shapes\AssetBundleCloudFormationOverridePropertyConfiguration|null,
+     *     IncludePermissions?: bool|null,
+     *     IncludeTags?: bool|null,
+     *     ValidationStrategy?: Shapes\AssetBundleExportJobValidationStrategy|null,
+     *     IncludeFolderMemberships?: bool|null,
+     *     IncludeFolderMembers?: 'RECURSE'|'ONE_LEVEL'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

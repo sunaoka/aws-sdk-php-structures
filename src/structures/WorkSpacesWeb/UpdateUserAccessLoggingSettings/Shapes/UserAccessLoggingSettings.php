@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateUserAccessLoggingSettings\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $associatedPortalArns
- * @property string $kinesisStreamArn
+ * @property list<string>|null $associatedPortalArns
+ * @property string|null $kinesisStreamArn
  * @property string $userAccessLoggingSettingsArn
  */
 class UserAccessLoggingSettings extends Shape
 {
     /**
      * @param array{
-     *     associatedPortalArns?: list<string>,
-     *     kinesisStreamArn?: string,
+     *     associatedPortalArns?: list<string>|null,
+     *     kinesisStreamArn?: string|null,
      *     userAccessLoggingSettingsArn: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WorkloadId
  * @property string $LensAlias
  * @property string $MilestoneName
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class UpgradeLensReviewRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpgradeLensReviewRequest extends Request
      *     WorkloadId: string,
      *     LensAlias: string,
      *     MilestoneName: string,
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

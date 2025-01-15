@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ComprehendMedical\DescribeEntitiesDetectionV2Jo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ComprehendMedicalAsyncJobProperties $ComprehendMedicalAsyncJobProperties
+ * @property Shapes\ComprehendMedicalAsyncJobProperties|null $ComprehendMedicalAsyncJobProperties
  */
 class DescribeEntitiesDetectionV2JobResponse extends Response
 {

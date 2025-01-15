@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateUserProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
+ * @property string|null $arn
  */
 class IamUserProfileDetails extends Shape
 {
     /**
-     * @param array{arn?: string} $args
+     * @param array{arn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeVTLDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VTLDeviceARN
- * @property string $VTLDeviceType
- * @property string $VTLDeviceVendor
- * @property string $VTLDeviceProductIdentifier
- * @property DeviceiSCSIAttributes $DeviceiSCSIAttributes
+ * @property string|null $VTLDeviceARN
+ * @property string|null $VTLDeviceType
+ * @property string|null $VTLDeviceVendor
+ * @property string|null $VTLDeviceProductIdentifier
+ * @property DeviceiSCSIAttributes|null $DeviceiSCSIAttributes
  */
 class VTLDevice extends Shape
 {
     /**
      * @param array{
-     *     VTLDeviceARN?: string,
-     *     VTLDeviceType?: string,
-     *     VTLDeviceVendor?: string,
-     *     VTLDeviceProductIdentifier?: string,
-     *     DeviceiSCSIAttributes?: DeviceiSCSIAttributes
+     *     VTLDeviceARN?: string|null,
+     *     VTLDeviceType?: string|null,
+     *     VTLDeviceVendor?: string|null,
+     *     VTLDeviceProductIdentifier?: string|null,
+     *     DeviceiSCSIAttributes?: DeviceiSCSIAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,44 +6,44 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ColumnName
- * @property string $ColumnFriendlyName
- * @property string $ColumnDescription
- * @property list<string> $ColumnSynonyms
- * @property 'DIMENSION'|'MEASURE' $ColumnDataRole
- * @property 'SUM'|'MAX'|'MIN'|'COUNT'|'DISTINCT_COUNT'|'AVERAGE'|'MEDIAN'|'STDEV'|'STDEVP'|'VAR'|'VARP' $Aggregation
- * @property bool $IsIncludedInTopic
- * @property bool $DisableIndexing
- * @property ComparativeOrder $ComparativeOrder
- * @property SemanticType $SemanticType
- * @property 'SECOND'|'MINUTE'|'HOUR'|'DAY'|'WEEK'|'MONTH'|'QUARTER'|'YEAR' $TimeGranularity
- * @property list<'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|'MEDIAN'|'SUM'|'AVERAGE'|'STDEV'|'STDEVP'|'VAR'|'VARP'|'PERCENTILE'> $AllowedAggregations
- * @property list<'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|'MEDIAN'|'SUM'|'AVERAGE'|'STDEV'|'STDEVP'|'VAR'|'VARP'|'PERCENTILE'> $NotAllowedAggregations
- * @property DefaultFormatting $DefaultFormatting
- * @property bool $NeverAggregateInFilter
- * @property list<CellValueSynonym> $CellValueSynonyms
- * @property bool $NonAdditive
+ * @property string|null $ColumnFriendlyName
+ * @property string|null $ColumnDescription
+ * @property list<string>|null $ColumnSynonyms
+ * @property 'DIMENSION'|'MEASURE'|null $ColumnDataRole
+ * @property 'SUM'|'MAX'|'MIN'|'COUNT'|'DISTINCT_COUNT'|'AVERAGE'|'MEDIAN'|'STDEV'|'STDEVP'|'VAR'|'VARP'|null $Aggregation
+ * @property bool|null $IsIncludedInTopic
+ * @property bool|null $DisableIndexing
+ * @property ComparativeOrder|null $ComparativeOrder
+ * @property SemanticType|null $SemanticType
+ * @property 'SECOND'|'MINUTE'|'HOUR'|'DAY'|'WEEK'|'MONTH'|'QUARTER'|'YEAR'|null $TimeGranularity
+ * @property list<'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|'MEDIAN'|'SUM'|'AVERAGE'|'STDEV'|'STDEVP'|'VAR'|'VARP'|'PERCENTILE'>|null $AllowedAggregations
+ * @property list<'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|'MEDIAN'|'SUM'|'AVERAGE'|'STDEV'|'STDEVP'|'VAR'|'VARP'|'PERCENTILE'>|null $NotAllowedAggregations
+ * @property DefaultFormatting|null $DefaultFormatting
+ * @property bool|null $NeverAggregateInFilter
+ * @property list<CellValueSynonym>|null $CellValueSynonyms
+ * @property bool|null $NonAdditive
  */
 class TopicColumn extends Shape
 {
     /**
      * @param array{
      *     ColumnName: string,
-     *     ColumnFriendlyName?: string,
-     *     ColumnDescription?: string,
-     *     ColumnSynonyms?: list<string>,
-     *     ColumnDataRole?: 'DIMENSION'|'MEASURE',
-     *     Aggregation?: 'SUM'|'MAX'|'MIN'|'COUNT'|'DISTINCT_COUNT'|'AVERAGE'|'MEDIAN'|'STDEV'|'STDEVP'|'VAR'|'VARP',
-     *     IsIncludedInTopic?: bool,
-     *     DisableIndexing?: bool,
-     *     ComparativeOrder?: ComparativeOrder,
-     *     SemanticType?: SemanticType,
-     *     TimeGranularity?: 'SECOND'|'MINUTE'|'HOUR'|'DAY'|'WEEK'|'MONTH'|'QUARTER'|'YEAR',
-     *     AllowedAggregations?: list<'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|'MEDIAN'|'SUM'|'AVERAGE'|'STDEV'|'STDEVP'|'VAR'|'VARP'|'PERCENTILE'>,
-     *     NotAllowedAggregations?: list<'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|'MEDIAN'|'SUM'|'AVERAGE'|'STDEV'|'STDEVP'|'VAR'|'VARP'|'PERCENTILE'>,
-     *     DefaultFormatting?: DefaultFormatting,
-     *     NeverAggregateInFilter?: bool,
-     *     CellValueSynonyms?: list<CellValueSynonym>,
-     *     NonAdditive?: bool
+     *     ColumnFriendlyName?: string|null,
+     *     ColumnDescription?: string|null,
+     *     ColumnSynonyms?: list<string>|null,
+     *     ColumnDataRole?: 'DIMENSION'|'MEASURE'|null,
+     *     Aggregation?: 'SUM'|'MAX'|'MIN'|'COUNT'|'DISTINCT_COUNT'|'AVERAGE'|'MEDIAN'|'STDEV'|'STDEVP'|'VAR'|'VARP'|null,
+     *     IsIncludedInTopic?: bool|null,
+     *     DisableIndexing?: bool|null,
+     *     ComparativeOrder?: ComparativeOrder|null,
+     *     SemanticType?: SemanticType|null,
+     *     TimeGranularity?: 'SECOND'|'MINUTE'|'HOUR'|'DAY'|'WEEK'|'MONTH'|'QUARTER'|'YEAR'|null,
+     *     AllowedAggregations?: list<'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|'MEDIAN'|'SUM'|'AVERAGE'|'STDEV'|'STDEVP'|'VAR'|'VARP'|'PERCENTILE'>|null,
+     *     NotAllowedAggregations?: list<'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|'MEDIAN'|'SUM'|'AVERAGE'|'STDEV'|'STDEVP'|'VAR'|'VARP'|'PERCENTILE'>|null,
+     *     DefaultFormatting?: DefaultFormatting|null,
+     *     NeverAggregateInFilter?: bool|null,
+     *     CellValueSynonyms?: list<CellValueSynonym>|null,
+     *     NonAdditive?: bool|null
      * } $args
      */
     public function __construct(array $args)

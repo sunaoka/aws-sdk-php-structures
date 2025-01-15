@@ -5,42 +5,42 @@ namespace Sunaoka\Aws\Structures\IdentityStore\ListUsers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserName
+ * @property string|null $UserName
  * @property string $UserId
- * @property list<ExternalId> $ExternalIds
- * @property Name $Name
- * @property string $DisplayName
- * @property string $NickName
- * @property string $ProfileUrl
- * @property list<Email> $Emails
- * @property list<Address> $Addresses
- * @property list<PhoneNumber> $PhoneNumbers
- * @property string $UserType
- * @property string $Title
- * @property string $PreferredLanguage
- * @property string $Locale
- * @property string $Timezone
+ * @property list<ExternalId>|null $ExternalIds
+ * @property Name|null $Name
+ * @property string|null $DisplayName
+ * @property string|null $NickName
+ * @property string|null $ProfileUrl
+ * @property list<Email>|null $Emails
+ * @property list<Address>|null $Addresses
+ * @property list<PhoneNumber>|null $PhoneNumbers
+ * @property string|null $UserType
+ * @property string|null $Title
+ * @property string|null $PreferredLanguage
+ * @property string|null $Locale
+ * @property string|null $Timezone
  * @property string $IdentityStoreId
  */
 class User extends Shape
 {
     /**
      * @param array{
-     *     UserName?: string,
+     *     UserName?: string|null,
      *     UserId: string,
-     *     ExternalIds?: list<ExternalId>,
-     *     Name?: Name,
-     *     DisplayName?: string,
-     *     NickName?: string,
-     *     ProfileUrl?: string,
-     *     Emails?: list<Email>,
-     *     Addresses?: list<Address>,
-     *     PhoneNumbers?: list<PhoneNumber>,
-     *     UserType?: string,
-     *     Title?: string,
-     *     PreferredLanguage?: string,
-     *     Locale?: string,
-     *     Timezone?: string,
+     *     ExternalIds?: list<ExternalId>|null,
+     *     Name?: Name|null,
+     *     DisplayName?: string|null,
+     *     NickName?: string|null,
+     *     ProfileUrl?: string|null,
+     *     Emails?: list<Email>|null,
+     *     Addresses?: list<Address>|null,
+     *     PhoneNumbers?: list<PhoneNumber>|null,
+     *     UserType?: string|null,
+     *     Title?: string|null,
+     *     PreferredLanguage?: string|null,
+     *     Locale?: string|null,
+     *     Timezone?: string|null,
      *     IdentityStoreId: string
      * } $args
      */

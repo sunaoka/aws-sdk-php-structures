@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContextName
- * @property string $Description
- * @property array<string, string> $Properties
- * @property list<string> $PropertiesToRemove
+ * @property string|null $Description
+ * @property array<string, string>|null $Properties
+ * @property list<string>|null $PropertiesToRemove
  */
 class UpdateContextRequest extends Request
 {
     /**
      * @param array{
      *     ContextName: string,
-     *     Description?: string,
-     *     Properties?: array<string, string>,
-     *     PropertiesToRemove?: list<string>
+     *     Description?: string|null,
+     *     Properties?: array<string, string>|null,
+     *     PropertiesToRemove?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

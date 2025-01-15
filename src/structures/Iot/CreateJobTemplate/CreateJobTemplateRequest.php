@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $jobTemplateId
- * @property string $jobArn
- * @property string $documentSource
- * @property string $document
+ * @property string|null $jobArn
+ * @property string|null $documentSource
+ * @property string|null $document
  * @property string $description
- * @property Shapes\PresignedUrlConfig $presignedUrlConfig
- * @property Shapes\JobExecutionsRolloutConfig $jobExecutionsRolloutConfig
- * @property Shapes\AbortConfig $abortConfig
- * @property Shapes\TimeoutConfig $timeoutConfig
- * @property list<Shapes\Tag> $tags
- * @property Shapes\JobExecutionsRetryConfig $jobExecutionsRetryConfig
- * @property list<Shapes\MaintenanceWindow> $maintenanceWindows
- * @property list<string> $destinationPackageVersions
+ * @property Shapes\PresignedUrlConfig|null $presignedUrlConfig
+ * @property Shapes\JobExecutionsRolloutConfig|null $jobExecutionsRolloutConfig
+ * @property Shapes\AbortConfig|null $abortConfig
+ * @property Shapes\TimeoutConfig|null $timeoutConfig
+ * @property list<Shapes\Tag>|null $tags
+ * @property Shapes\JobExecutionsRetryConfig|null $jobExecutionsRetryConfig
+ * @property list<Shapes\MaintenanceWindow>|null $maintenanceWindows
+ * @property list<string>|null $destinationPackageVersions
  */
 class CreateJobTemplateRequest extends Request
 {
     /**
      * @param array{
      *     jobTemplateId: string,
-     *     jobArn?: string,
-     *     documentSource?: string,
-     *     document?: string,
+     *     jobArn?: string|null,
+     *     documentSource?: string|null,
+     *     document?: string|null,
      *     description: string,
-     *     presignedUrlConfig?: Shapes\PresignedUrlConfig,
-     *     jobExecutionsRolloutConfig?: Shapes\JobExecutionsRolloutConfig,
-     *     abortConfig?: Shapes\AbortConfig,
-     *     timeoutConfig?: Shapes\TimeoutConfig,
-     *     tags?: list<Shapes\Tag>,
-     *     jobExecutionsRetryConfig?: Shapes\JobExecutionsRetryConfig,
-     *     maintenanceWindows?: list<Shapes\MaintenanceWindow>,
-     *     destinationPackageVersions?: list<string>
+     *     presignedUrlConfig?: Shapes\PresignedUrlConfig|null,
+     *     jobExecutionsRolloutConfig?: Shapes\JobExecutionsRolloutConfig|null,
+     *     abortConfig?: Shapes\AbortConfig|null,
+     *     timeoutConfig?: Shapes\TimeoutConfig|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     jobExecutionsRetryConfig?: Shapes\JobExecutionsRetryConfig|null,
+     *     maintenanceWindows?: list<Shapes\MaintenanceWindow>|null,
+     *     destinationPackageVersions?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

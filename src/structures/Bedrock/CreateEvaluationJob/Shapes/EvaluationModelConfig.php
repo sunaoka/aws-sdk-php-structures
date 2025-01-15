@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Bedrock\CreateEvaluationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EvaluationBedrockModel $bedrockModel
+ * @property EvaluationBedrockModel|null $bedrockModel
  */
 class EvaluationModelConfig extends Shape
 {
     /**
-     * @param array{bedrockModel?: EvaluationBedrockModel} $args
+     * @param array{bedrockModel?: EvaluationBedrockModel|null} $args
      */
     public function __construct(array $args = [])
     {

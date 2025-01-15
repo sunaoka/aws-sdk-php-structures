@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FromPhoneNumber
  * @property string $ToPhoneNumber
  * @property string $SipMediaApplicationId
- * @property array<string, string> $SipHeaders
- * @property array<string, string> $ArgumentsMap
+ * @property array<string, string>|null $SipHeaders
+ * @property array<string, string>|null $ArgumentsMap
  */
 class CreateSipMediaApplicationCallRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateSipMediaApplicationCallRequest extends Request
      *     FromPhoneNumber: string,
      *     ToPhoneNumber: string,
      *     SipMediaApplicationId: string,
-     *     SipHeaders?: array<string, string>,
-     *     ArgumentsMap?: array<string, string>
+     *     SipHeaders?: array<string, string>|null,
+     *     ArgumentsMap?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

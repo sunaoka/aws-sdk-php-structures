@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Appstream\CreateAppBlock;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AppBlock $AppBlock
+ * @property Shapes\AppBlock|null $AppBlock
  */
 class CreateAppBlockResponse extends Response
 {

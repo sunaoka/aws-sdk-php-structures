@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Sns\ListEndpointsByPlatformApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndpointArn
- * @property array<string, string> $Attributes
+ * @property string|null $EndpointArn
+ * @property array<string, string>|null $Attributes
  */
 class Endpoint extends Shape
 {
     /**
      * @param array{
-     *     EndpointArn?: string,
-     *     Attributes?: array<string, string>
+     *     EndpointArn?: string|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

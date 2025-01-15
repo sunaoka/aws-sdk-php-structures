@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $datasetName
  * @property DatasetOrgAttributes $datasetOrg
  * @property RecordLength $recordLength
- * @property string $relativePath
- * @property string $storageType
+ * @property string|null $relativePath
+ * @property string|null $storageType
  */
 class DataSet extends Shape
 {
@@ -18,8 +18,8 @@ class DataSet extends Shape
      *     datasetName: string,
      *     datasetOrg: DatasetOrgAttributes,
      *     recordLength: RecordLength,
-     *     relativePath?: string,
-     *     storageType?: string
+     *     relativePath?: string|null,
+     *     storageType?: string|null
      * } $args
      */
     public function __construct(array $args)

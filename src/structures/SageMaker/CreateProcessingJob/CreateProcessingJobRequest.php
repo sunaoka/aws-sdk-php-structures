@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateProcessingJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\ProcessingInput> $ProcessingInputs
- * @property Shapes\ProcessingOutputConfig $ProcessingOutputConfig
+ * @property list<Shapes\ProcessingInput>|null $ProcessingInputs
+ * @property Shapes\ProcessingOutputConfig|null $ProcessingOutputConfig
  * @property string $ProcessingJobName
  * @property Shapes\ProcessingResources $ProcessingResources
- * @property Shapes\ProcessingStoppingCondition $StoppingCondition
+ * @property Shapes\ProcessingStoppingCondition|null $StoppingCondition
  * @property Shapes\AppSpecification $AppSpecification
- * @property array<string, string> $Environment
- * @property Shapes\NetworkConfig $NetworkConfig
+ * @property array<string, string>|null $Environment
+ * @property Shapes\NetworkConfig|null $NetworkConfig
  * @property string $RoleArn
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\ExperimentConfig $ExperimentConfig
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\ExperimentConfig|null $ExperimentConfig
  */
 class CreateProcessingJobRequest extends Request
 {
     /**
      * @param array{
-     *     ProcessingInputs?: list<Shapes\ProcessingInput>,
-     *     ProcessingOutputConfig?: Shapes\ProcessingOutputConfig,
+     *     ProcessingInputs?: list<Shapes\ProcessingInput>|null,
+     *     ProcessingOutputConfig?: Shapes\ProcessingOutputConfig|null,
      *     ProcessingJobName: string,
      *     ProcessingResources: Shapes\ProcessingResources,
-     *     StoppingCondition?: Shapes\ProcessingStoppingCondition,
+     *     StoppingCondition?: Shapes\ProcessingStoppingCondition|null,
      *     AppSpecification: Shapes\AppSpecification,
-     *     Environment?: array<string, string>,
-     *     NetworkConfig?: Shapes\NetworkConfig,
+     *     Environment?: array<string, string>|null,
+     *     NetworkConfig?: Shapes\NetworkConfig|null,
      *     RoleArn: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     ExperimentConfig?: Shapes\ExperimentConfig
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ExperimentConfig?: Shapes\ExperimentConfig|null
      * } $args
      */
     public function __construct(array $args)

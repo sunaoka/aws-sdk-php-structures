@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $targetNodes
- * @property ContainerProperties $container
- * @property list<string> $instanceTypes
- * @property EcsProperties $ecsProperties
- * @property EksProperties $eksProperties
+ * @property ContainerProperties|null $container
+ * @property list<string>|null $instanceTypes
+ * @property EcsProperties|null $ecsProperties
+ * @property EksProperties|null $eksProperties
  */
 class NodeRangeProperty extends Shape
 {
     /**
      * @param array{
      *     targetNodes: string,
-     *     container?: ContainerProperties,
-     *     instanceTypes?: list<string>,
-     *     ecsProperties?: EcsProperties,
-     *     eksProperties?: EksProperties
+     *     container?: ContainerProperties|null,
+     *     instanceTypes?: list<string>|null,
+     *     ecsProperties?: EcsProperties|null,
+     *     eksProperties?: EksProperties|null
      * } $args
      */
     public function __construct(array $args)

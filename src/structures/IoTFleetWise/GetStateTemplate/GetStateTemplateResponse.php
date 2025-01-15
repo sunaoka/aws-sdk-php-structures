@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\GetStateTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $name
- * @property string $arn
- * @property string $description
- * @property string $signalCatalogArn
- * @property list<string> $stateTemplateProperties
- * @property list<string> $dataExtraDimensions
- * @property list<string> $metadataExtraDimensions
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastModificationTime
- * @property string $id
+ * @property string|null $name
+ * @property string|null $arn
+ * @property string|null $description
+ * @property string|null $signalCatalogArn
+ * @property list<string>|null $stateTemplateProperties
+ * @property list<string>|null $dataExtraDimensions
+ * @property list<string>|null $metadataExtraDimensions
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastModificationTime
+ * @property string|null $id
  */
 class GetStateTemplateResponse extends Response
 {

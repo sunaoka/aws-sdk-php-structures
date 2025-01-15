@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property string $MainProfileId
  * @property list<string> $ProfileIdsToBeMerged
- * @property Shapes\FieldSourceProfileIds $FieldSourceProfileIds
+ * @property Shapes\FieldSourceProfileIds|null $FieldSourceProfileIds
  */
 class MergeProfilesRequest extends Request
 {
@@ -17,7 +17,7 @@ class MergeProfilesRequest extends Request
      *     DomainName: string,
      *     MainProfileId: string,
      *     ProfileIdsToBeMerged: list<string>,
-     *     FieldSourceProfileIds?: Shapes\FieldSourceProfileIds
+     *     FieldSourceProfileIds?: Shapes\FieldSourceProfileIds|null
      * } $args
      */
     public function __construct(array $args)

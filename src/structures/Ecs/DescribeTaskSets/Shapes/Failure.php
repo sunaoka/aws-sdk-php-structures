@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeTaskSets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $reason
- * @property string $detail
+ * @property string|null $arn
+ * @property string|null $reason
+ * @property string|null $detail
  */
 class Failure extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     reason?: string,
-     *     detail?: string
+     *     arn?: string|null,
+     *     reason?: string|null,
+     *     detail?: string|null
      * } $args
      */
     public function __construct(array $args = [])

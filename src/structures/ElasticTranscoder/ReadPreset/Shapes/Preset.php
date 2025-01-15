@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ReadPreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $Name
- * @property string $Description
- * @property string $Container
- * @property AudioParameters $Audio
- * @property VideoParameters $Video
- * @property Thumbnails $Thumbnails
- * @property string $Type
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $Container
+ * @property AudioParameters|null $Audio
+ * @property VideoParameters|null $Video
+ * @property Thumbnails|null $Thumbnails
+ * @property string|null $Type
  */
 class Preset extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Container?: string,
-     *     Audio?: AudioParameters,
-     *     Video?: VideoParameters,
-     *     Thumbnails?: Thumbnails,
-     *     Type?: string
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Container?: string|null,
+     *     Audio?: AudioParameters|null,
+     *     Video?: VideoParameters|null,
+     *     Thumbnails?: Thumbnails|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

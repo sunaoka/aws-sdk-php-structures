@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetMergeConflicts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK' $source
- * @property 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK' $destination
- * @property 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK' $base
+ * @property 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK'|null $source
+ * @property 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK'|null $destination
+ * @property 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK'|null $base
  */
 class ObjectTypes extends Shape
 {
     /**
      * @param array{
-     *     source?: 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK',
-     *     destination?: 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK',
-     *     base?: 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK'
+     *     source?: 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK'|null,
+     *     destination?: 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK'|null,
+     *     base?: 'FILE'|'DIRECTORY'|'GIT_LINK'|'SYMBOLIC_LINK'|null
      * } $args
      */
     public function __construct(array $args = [])

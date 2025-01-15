@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Glue\GetWorkflowRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TotalActions
- * @property int $TimeoutActions
- * @property int $FailedActions
- * @property int $StoppedActions
- * @property int $SucceededActions
- * @property int $RunningActions
- * @property int $ErroredActions
- * @property int $WaitingActions
+ * @property int|null $TotalActions
+ * @property int|null $TimeoutActions
+ * @property int|null $FailedActions
+ * @property int|null $StoppedActions
+ * @property int|null $SucceededActions
+ * @property int|null $RunningActions
+ * @property int|null $ErroredActions
+ * @property int|null $WaitingActions
  */
 class WorkflowRunStatistics extends Shape
 {
     /**
      * @param array{
-     *     TotalActions?: int,
-     *     TimeoutActions?: int,
-     *     FailedActions?: int,
-     *     StoppedActions?: int,
-     *     SucceededActions?: int,
-     *     RunningActions?: int,
-     *     ErroredActions?: int,
-     *     WaitingActions?: int
+     *     TotalActions?: int|null,
+     *     TimeoutActions?: int|null,
+     *     FailedActions?: int|null,
+     *     StoppedActions?: int|null,
+     *     SucceededActions?: int|null,
+     *     RunningActions?: int|null,
+     *     ErroredActions?: int|null,
+     *     WaitingActions?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping' $AutoMLJobStatus
  * @property 'Starting'|'MaxCandidatesReached'|'Failed'|'Stopped'|'MaxAutoMLJobRuntimeReached'|'Stopping'|'CandidateDefinitionsGenerated'|'Completed'|'ExplainabilityError'|'DeployingModel'|'ModelDeploymentError'|'GeneratingModelInsightsReport'|'ModelInsightsError'|'AnalyzingData'|'FeatureEngineering'|'ModelTuning'|'GeneratingExplainabilityReport'|'TrainingModels'|'PreTraining' $AutoMLJobSecondaryStatus
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $EndTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $FailureReason
- * @property list<AutoMLPartialFailureReason> $PartialFailureReasons
+ * @property string|null $FailureReason
+ * @property list<AutoMLPartialFailureReason>|null $PartialFailureReasons
  */
 class AutoMLJobSummary extends Shape
 {
@@ -24,10 +24,10 @@ class AutoMLJobSummary extends Shape
      *     AutoMLJobStatus: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping',
      *     AutoMLJobSecondaryStatus: 'Starting'|'MaxCandidatesReached'|'Failed'|'Stopped'|'MaxAutoMLJobRuntimeReached'|'Stopping'|'CandidateDefinitionsGenerated'|'Completed'|'ExplainabilityError'|'DeployingModel'|'ModelDeploymentError'|'GeneratingModelInsightsReport'|'ModelInsightsError'|'AnalyzingData'|'FeatureEngineering'|'ModelTuning'|'GeneratingExplainabilityReport'|'TrainingModels'|'PreTraining',
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
-     *     FailureReason?: string,
-     *     PartialFailureReasons?: list<AutoMLPartialFailureReason>
+     *     FailureReason?: string|null,
+     *     PartialFailureReasons?: list<AutoMLPartialFailureReason>|null
      * } $args
      */
     public function __construct(array $args)

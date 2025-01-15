@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FraudDetector\DescribeModelVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $title
- * @property string $content
- * @property string $type
+ * @property string|null $title
+ * @property string|null $content
+ * @property string|null $type
  */
 class FileValidationMessage extends Shape
 {
     /**
      * @param array{
-     *     title?: string,
-     *     content?: string,
-     *     type?: string
+     *     title?: string|null,
+     *     content?: string|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

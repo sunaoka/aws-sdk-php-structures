@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Account\DeleteAlternateContact;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountId
+ * @property string|null $AccountId
  * @property 'BILLING'|'OPERATIONS'|'SECURITY' $AlternateContactType
  */
 class DeleteAlternateContactRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId?: string,
+     *     AccountId?: string|null,
      *     AlternateContactType: 'BILLING'|'OPERATIONS'|'SECURITY'
      * } $args
      */

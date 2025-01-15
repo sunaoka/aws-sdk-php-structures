@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\CreateNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ApprovalThresholdPolicy $ApprovalThresholdPolicy
+ * @property ApprovalThresholdPolicy|null $ApprovalThresholdPolicy
  */
 class VotingPolicy extends Shape
 {
     /**
-     * @param array{ApprovalThresholdPolicy?: ApprovalThresholdPolicy} $args
+     * @param array{ApprovalThresholdPolicy?: ApprovalThresholdPolicy|null} $args
      */
     public function __construct(array $args = [])
     {

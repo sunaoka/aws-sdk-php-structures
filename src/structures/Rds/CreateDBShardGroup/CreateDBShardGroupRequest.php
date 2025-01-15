@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DBShardGroupIdentifier
  * @property string $DBClusterIdentifier
- * @property int $ComputeRedundancy
+ * @property int|null $ComputeRedundancy
  * @property double $MaxACU
- * @property double $MinACU
- * @property bool $PubliclyAccessible
- * @property list<Shapes\Tag> $Tags
+ * @property double|null $MinACU
+ * @property bool|null $PubliclyAccessible
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDBShardGroupRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateDBShardGroupRequest extends Request
      * @param array{
      *     DBShardGroupIdentifier: string,
      *     DBClusterIdentifier: string,
-     *     ComputeRedundancy?: int,
+     *     ComputeRedundancy?: int|null,
      *     MaxACU: double,
-     *     MinACU?: double,
-     *     PubliclyAccessible?: bool,
-     *     Tags?: list<Shapes\Tag>
+     *     MinACU?: double|null,
+     *     PubliclyAccessible?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $workerId
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED' $lifecycleStatus
- * @property \Aws\Api\DateTimeResult $endedAt
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
- * @property 'ENDED' $targetLifecycleStatus
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
+ * @property 'ENDED'|null $targetLifecycleStatus
  */
 class SessionSummary extends Shape
 {
@@ -24,10 +24,10 @@ class SessionSummary extends Shape
      *     workerId: string,
      *     startedAt: \Aws\Api\DateTimeResult,
      *     lifecycleStatus: 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED',
-     *     endedAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string,
-     *     targetLifecycleStatus?: 'ENDED'
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null,
+     *     targetLifecycleStatus?: 'ENDED'|null
      * } $args
      */
     public function __construct(array $args)

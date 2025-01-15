@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CodeGuruProfiler\GetNotificationConfiguration\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Channel> $channels
+ * @property list<Channel>|null $channels
  */
 class NotificationConfiguration extends Shape
 {
     /**
-     * @param array{channels?: list<Channel>} $args
+     * @param array{channels?: list<Channel>|null} $args
      */
     public function __construct(array $args = [])
     {

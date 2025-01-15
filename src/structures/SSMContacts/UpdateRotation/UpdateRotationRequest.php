@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RotationId
- * @property list<string> $ContactIds
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property string $TimeZoneId
+ * @property list<string>|null $ContactIds
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property string|null $TimeZoneId
  * @property Shapes\RecurrenceSettings $Recurrence
  */
 class UpdateRotationRequest extends Request
@@ -16,9 +16,9 @@ class UpdateRotationRequest extends Request
     /**
      * @param array{
      *     RotationId: string,
-     *     ContactIds?: list<string>,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     TimeZoneId?: string,
+     *     ContactIds?: list<string>|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     TimeZoneId?: string|null,
      *     Recurrence: Shapes\RecurrenceSettings
      * } $args
      */

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Fingerprint
  * @property string $SSHPublicKeyBody
  * @property 'Active'|'Inactive' $Status
- * @property \Aws\Api\DateTimeResult $UploadDate
+ * @property \Aws\Api\DateTimeResult|null $UploadDate
  */
 class SSHPublicKey extends Shape
 {
@@ -21,7 +21,7 @@ class SSHPublicKey extends Shape
      *     Fingerprint: string,
      *     SSHPublicKeyBody: string,
      *     Status: 'Active'|'Inactive',
-     *     UploadDate?: \Aws\Api\DateTimeResult
+     *     UploadDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

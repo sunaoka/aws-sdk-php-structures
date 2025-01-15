@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientVpnEndpointId
- * @property string $Description
- * @property string $ClientCidrBlock
- * @property list<string> $DnsServer
- * @property bool $SplitTunnel
- * @property string $TransportProtocol
- * @property int $VpnPort
- * @property string $ServerCertificateArn
- * @property list<AwsEc2ClientVpnEndpointAuthenticationOptionsDetails> $AuthenticationOptions
- * @property AwsEc2ClientVpnEndpointConnectionLogOptionsDetails $ConnectionLogOptions
- * @property list<string> $SecurityGroupIdSet
- * @property string $VpcId
- * @property string $SelfServicePortalUrl
- * @property AwsEc2ClientVpnEndpointClientConnectOptionsDetails $ClientConnectOptions
- * @property int $SessionTimeoutHours
- * @property AwsEc2ClientVpnEndpointClientLoginBannerOptionsDetails $ClientLoginBannerOptions
+ * @property string|null $ClientVpnEndpointId
+ * @property string|null $Description
+ * @property string|null $ClientCidrBlock
+ * @property list<string>|null $DnsServer
+ * @property bool|null $SplitTunnel
+ * @property string|null $TransportProtocol
+ * @property int|null $VpnPort
+ * @property string|null $ServerCertificateArn
+ * @property list<AwsEc2ClientVpnEndpointAuthenticationOptionsDetails>|null $AuthenticationOptions
+ * @property AwsEc2ClientVpnEndpointConnectionLogOptionsDetails|null $ConnectionLogOptions
+ * @property list<string>|null $SecurityGroupIdSet
+ * @property string|null $VpcId
+ * @property string|null $SelfServicePortalUrl
+ * @property AwsEc2ClientVpnEndpointClientConnectOptionsDetails|null $ClientConnectOptions
+ * @property int|null $SessionTimeoutHours
+ * @property AwsEc2ClientVpnEndpointClientLoginBannerOptionsDetails|null $ClientLoginBannerOptions
  */
 class AwsEc2ClientVpnEndpointDetails extends Shape
 {
     /**
      * @param array{
-     *     ClientVpnEndpointId?: string,
-     *     Description?: string,
-     *     ClientCidrBlock?: string,
-     *     DnsServer?: list<string>,
-     *     SplitTunnel?: bool,
-     *     TransportProtocol?: string,
-     *     VpnPort?: int,
-     *     ServerCertificateArn?: string,
-     *     AuthenticationOptions?: list<AwsEc2ClientVpnEndpointAuthenticationOptionsDetails>,
-     *     ConnectionLogOptions?: AwsEc2ClientVpnEndpointConnectionLogOptionsDetails,
-     *     SecurityGroupIdSet?: list<string>,
-     *     VpcId?: string,
-     *     SelfServicePortalUrl?: string,
-     *     ClientConnectOptions?: AwsEc2ClientVpnEndpointClientConnectOptionsDetails,
-     *     SessionTimeoutHours?: int,
-     *     ClientLoginBannerOptions?: AwsEc2ClientVpnEndpointClientLoginBannerOptionsDetails
+     *     ClientVpnEndpointId?: string|null,
+     *     Description?: string|null,
+     *     ClientCidrBlock?: string|null,
+     *     DnsServer?: list<string>|null,
+     *     SplitTunnel?: bool|null,
+     *     TransportProtocol?: string|null,
+     *     VpnPort?: int|null,
+     *     ServerCertificateArn?: string|null,
+     *     AuthenticationOptions?: list<AwsEc2ClientVpnEndpointAuthenticationOptionsDetails>|null,
+     *     ConnectionLogOptions?: AwsEc2ClientVpnEndpointConnectionLogOptionsDetails|null,
+     *     SecurityGroupIdSet?: list<string>|null,
+     *     VpcId?: string|null,
+     *     SelfServicePortalUrl?: string|null,
+     *     ClientConnectOptions?: AwsEc2ClientVpnEndpointClientConnectOptionsDetails|null,
+     *     SessionTimeoutHours?: int|null,
+     *     ClientLoginBannerOptions?: AwsEc2ClientVpnEndpointClientLoginBannerOptionsDetails|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ProductInformationFilterName
- * @property list<string> $ProductInformationFilterValue
+ * @property list<string>|null $ProductInformationFilterValue
  * @property string $ProductInformationFilterComparator
  */
 class ProductInformationFilter extends Shape
@@ -14,7 +14,7 @@ class ProductInformationFilter extends Shape
     /**
      * @param array{
      *     ProductInformationFilterName: string,
-     *     ProductInformationFilterValue?: list<string>,
+     *     ProductInformationFilterValue?: list<string>|null,
      *     ProductInformationFilterComparator: string
      * } $args
      */

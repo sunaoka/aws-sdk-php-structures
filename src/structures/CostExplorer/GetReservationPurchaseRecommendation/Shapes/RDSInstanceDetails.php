@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationPurchaseRecommendati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Family
- * @property string $InstanceType
- * @property string $Region
- * @property string $DatabaseEngine
- * @property string $DatabaseEdition
- * @property string $DeploymentOption
- * @property string $LicenseModel
- * @property bool $CurrentGeneration
- * @property bool $SizeFlexEligible
+ * @property string|null $Family
+ * @property string|null $InstanceType
+ * @property string|null $Region
+ * @property string|null $DatabaseEngine
+ * @property string|null $DatabaseEdition
+ * @property string|null $DeploymentOption
+ * @property string|null $LicenseModel
+ * @property bool|null $CurrentGeneration
+ * @property bool|null $SizeFlexEligible
  */
 class RDSInstanceDetails extends Shape
 {
     /**
      * @param array{
-     *     Family?: string,
-     *     InstanceType?: string,
-     *     Region?: string,
-     *     DatabaseEngine?: string,
-     *     DatabaseEdition?: string,
-     *     DeploymentOption?: string,
-     *     LicenseModel?: string,
-     *     CurrentGeneration?: bool,
-     *     SizeFlexEligible?: bool
+     *     Family?: string|null,
+     *     InstanceType?: string|null,
+     *     Region?: string|null,
+     *     DatabaseEngine?: string|null,
+     *     DatabaseEdition?: string|null,
+     *     DeploymentOption?: string|null,
+     *     LicenseModel?: string|null,
+     *     CurrentGeneration?: bool|null,
+     *     SizeFlexEligible?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminCreateUser\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Username
- * @property list<AttributeType> $Attributes
- * @property \Aws\Api\DateTimeResult $UserCreateDate
- * @property \Aws\Api\DateTimeResult $UserLastModifiedDate
- * @property bool $Enabled
- * @property 'UNCONFIRMED'|'CONFIRMED'|'ARCHIVED'|'COMPROMISED'|'UNKNOWN'|'RESET_REQUIRED'|'FORCE_CHANGE_PASSWORD'|'EXTERNAL_PROVIDER' $UserStatus
- * @property list<MFAOptionType> $MFAOptions
+ * @property string|null $Username
+ * @property list<AttributeType>|null $Attributes
+ * @property \Aws\Api\DateTimeResult|null $UserCreateDate
+ * @property \Aws\Api\DateTimeResult|null $UserLastModifiedDate
+ * @property bool|null $Enabled
+ * @property 'UNCONFIRMED'|'CONFIRMED'|'ARCHIVED'|'COMPROMISED'|'UNKNOWN'|'RESET_REQUIRED'|'FORCE_CHANGE_PASSWORD'|'EXTERNAL_PROVIDER'|null $UserStatus
+ * @property list<MFAOptionType>|null $MFAOptions
  */
 class UserType extends Shape
 {
     /**
      * @param array{
-     *     Username?: string,
-     *     Attributes?: list<AttributeType>,
-     *     UserCreateDate?: \Aws\Api\DateTimeResult,
-     *     UserLastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     Enabled?: bool,
-     *     UserStatus?: 'UNCONFIRMED'|'CONFIRMED'|'ARCHIVED'|'COMPROMISED'|'UNKNOWN'|'RESET_REQUIRED'|'FORCE_CHANGE_PASSWORD'|'EXTERNAL_PROVIDER',
-     *     MFAOptions?: list<MFAOptionType>
+     *     Username?: string|null,
+     *     Attributes?: list<AttributeType>|null,
+     *     UserCreateDate?: \Aws\Api\DateTimeResult|null,
+     *     UserLastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     Enabled?: bool|null,
+     *     UserStatus?: 'UNCONFIRMED'|'CONFIRMED'|'ARCHIVED'|'COMPROMISED'|'UNKNOWN'|'RESET_REQUIRED'|'FORCE_CHANGE_PASSWORD'|'EXTERNAL_PROVIDER'|null,
+     *     MFAOptions?: list<MFAOptionType>|null
      * } $args
      */
     public function __construct(array $args = [])

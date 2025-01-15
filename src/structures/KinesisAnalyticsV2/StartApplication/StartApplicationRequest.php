@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property Shapes\RunConfiguration $RunConfiguration
+ * @property Shapes\RunConfiguration|null $RunConfiguration
  */
 class StartApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationName: string,
-     *     RunConfiguration?: Shapes\RunConfiguration
+     *     RunConfiguration?: Shapes\RunConfiguration|null
      * } $args
      */
     public function __construct(array $args)

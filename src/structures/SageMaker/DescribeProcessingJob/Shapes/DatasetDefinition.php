@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeProcessingJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AthenaDatasetDefinition $AthenaDatasetDefinition
- * @property RedshiftDatasetDefinition $RedshiftDatasetDefinition
- * @property string $LocalPath
- * @property 'FullyReplicated'|'ShardedByS3Key' $DataDistributionType
- * @property 'Pipe'|'File' $InputMode
+ * @property AthenaDatasetDefinition|null $AthenaDatasetDefinition
+ * @property RedshiftDatasetDefinition|null $RedshiftDatasetDefinition
+ * @property string|null $LocalPath
+ * @property 'FullyReplicated'|'ShardedByS3Key'|null $DataDistributionType
+ * @property 'Pipe'|'File'|null $InputMode
  */
 class DatasetDefinition extends Shape
 {
     /**
      * @param array{
-     *     AthenaDatasetDefinition?: AthenaDatasetDefinition,
-     *     RedshiftDatasetDefinition?: RedshiftDatasetDefinition,
-     *     LocalPath?: string,
-     *     DataDistributionType?: 'FullyReplicated'|'ShardedByS3Key',
-     *     InputMode?: 'Pipe'|'File'
+     *     AthenaDatasetDefinition?: AthenaDatasetDefinition|null,
+     *     RedshiftDatasetDefinition?: RedshiftDatasetDefinition|null,
+     *     LocalPath?: string|null,
+     *     DataDistributionType?: 'FullyReplicated'|'ShardedByS3Key'|null,
+     *     InputMode?: 'Pipe'|'File'|null
      * } $args
      */
     public function __construct(array $args = [])

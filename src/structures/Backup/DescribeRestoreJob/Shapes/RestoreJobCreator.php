@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Backup\DescribeRestoreJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RestoreTestingPlanArn
+ * @property string|null $RestoreTestingPlanArn
  */
 class RestoreJobCreator extends Shape
 {
     /**
-     * @param array{RestoreTestingPlanArn?: string} $args
+     * @param array{RestoreTestingPlanArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

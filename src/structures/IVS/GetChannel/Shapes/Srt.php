@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IVS\GetChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $endpoint
- * @property string $passphrase
+ * @property string|null $endpoint
+ * @property string|null $passphrase
  */
 class Srt extends Shape
 {
     /**
      * @param array{
-     *     endpoint?: string,
-     *     passphrase?: string
+     *     endpoint?: string|null,
+     *     passphrase?: string|null
      * } $args
      */
     public function __construct(array $args = [])

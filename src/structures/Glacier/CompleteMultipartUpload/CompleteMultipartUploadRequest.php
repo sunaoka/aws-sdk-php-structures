@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $accountId
  * @property string $vaultName
  * @property string $uploadId
- * @property string $archiveSize
- * @property string $checksum
+ * @property string|null $archiveSize
+ * @property string|null $checksum
  */
 class CompleteMultipartUploadRequest extends Request
 {
@@ -18,8 +18,8 @@ class CompleteMultipartUploadRequest extends Request
      *     accountId: string,
      *     vaultName: string,
      *     uploadId: string,
-     *     archiveSize?: string,
-     *     checksum?: string
+     *     archiveSize?: string|null,
+     *     checksum?: string|null
      * } $args
      */
     public function __construct(array $args)

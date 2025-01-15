@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\CustomActionDefinition $Definition
- * @property string $AliasName
- * @property list<Shapes\CustomActionAttachment> $Attachments
- * @property list<Shapes\Tag> $Tags
- * @property string $ClientToken
+ * @property string|null $AliasName
+ * @property list<Shapes\CustomActionAttachment>|null $Attachments
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientToken
  * @property string $ActionName
  */
 class CreateCustomActionRequest extends Request
@@ -17,10 +17,10 @@ class CreateCustomActionRequest extends Request
     /**
      * @param array{
      *     Definition: Shapes\CustomActionDefinition,
-     *     AliasName?: string,
-     *     Attachments?: list<Shapes\CustomActionAttachment>,
-     *     Tags?: list<Shapes\Tag>,
-     *     ClientToken?: string,
+     *     AliasName?: string|null,
+     *     Attachments?: list<Shapes\CustomActionAttachment>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientToken?: string|null,
      *     ActionName: string
      * } $args
      */

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\RoboMaker\ListWorldGenerationJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $template
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property 'Pending'|'Running'|'Completed'|'Failed'|'PartialFailed'|'Canceling'|'Canceled' $status
- * @property WorldCount $worldCount
- * @property int $succeededWorldCount
- * @property int $failedWorldCount
+ * @property string|null $arn
+ * @property string|null $template
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property 'Pending'|'Running'|'Completed'|'Failed'|'PartialFailed'|'Canceling'|'Canceled'|null $status
+ * @property WorldCount|null $worldCount
+ * @property int|null $succeededWorldCount
+ * @property int|null $failedWorldCount
  */
 class WorldGenerationJobSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     template?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     status?: 'Pending'|'Running'|'Completed'|'Failed'|'PartialFailed'|'Canceling'|'Canceled',
-     *     worldCount?: WorldCount,
-     *     succeededWorldCount?: int,
-     *     failedWorldCount?: int
+     *     arn?: string|null,
+     *     template?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'Pending'|'Running'|'Completed'|'Failed'|'PartialFailed'|'Canceling'|'Canceled'|null,
+     *     worldCount?: WorldCount|null,
+     *     succeededWorldCount?: int|null,
+     *     failedWorldCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

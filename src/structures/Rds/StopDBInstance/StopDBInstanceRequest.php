@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBInstanceIdentifier
- * @property string $DBSnapshotIdentifier
+ * @property string|null $DBSnapshotIdentifier
  */
 class StopDBInstanceRequest extends Request
 {
     /**
      * @param array{
      *     DBInstanceIdentifier: string,
-     *     DBSnapshotIdentifier?: string
+     *     DBSnapshotIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

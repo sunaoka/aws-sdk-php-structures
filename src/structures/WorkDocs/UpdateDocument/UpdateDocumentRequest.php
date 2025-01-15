@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkDocs\UpdateDocument;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $DocumentId
- * @property string $Name
- * @property string $ParentFolderId
- * @property 'ACTIVE'|'RESTORING'|'RECYCLING'|'RECYCLED' $ResourceState
+ * @property string|null $Name
+ * @property string|null $ParentFolderId
+ * @property 'ACTIVE'|'RESTORING'|'RECYCLING'|'RECYCLED'|null $ResourceState
  */
 class UpdateDocumentRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     DocumentId: string,
-     *     Name?: string,
-     *     ParentFolderId?: string,
-     *     ResourceState?: 'ACTIVE'|'RESTORING'|'RECYCLING'|'RECYCLED'
+     *     Name?: string|null,
+     *     ParentFolderId?: string|null,
+     *     ResourceState?: 'ACTIVE'|'RESTORING'|'RECYCLING'|'RECYCLED'|null
      * } $args
      */
     public function __construct(array $args)

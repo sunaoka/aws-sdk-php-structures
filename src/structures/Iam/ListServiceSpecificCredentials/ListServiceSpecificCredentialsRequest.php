@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iam\ListServiceSpecificCredentials;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UserName
- * @property string $ServiceName
+ * @property string|null $UserName
+ * @property string|null $ServiceName
  */
 class ListServiceSpecificCredentialsRequest extends Request
 {
     /**
      * @param array{
-     *     UserName?: string,
-     *     ServiceName?: string
+     *     UserName?: string|null,
+     *     ServiceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

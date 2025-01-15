@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AuditManager\UpdateAssessmentStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $authorName
- * @property string $commentBody
- * @property \Aws\Api\DateTimeResult $postedDate
+ * @property string|null $authorName
+ * @property string|null $commentBody
+ * @property \Aws\Api\DateTimeResult|null $postedDate
  */
 class ControlComment extends Shape
 {
     /**
      * @param array{
-     *     authorName?: string,
-     *     commentBody?: string,
-     *     postedDate?: \Aws\Api\DateTimeResult
+     *     authorName?: string|null,
+     *     commentBody?: string|null,
+     *     postedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

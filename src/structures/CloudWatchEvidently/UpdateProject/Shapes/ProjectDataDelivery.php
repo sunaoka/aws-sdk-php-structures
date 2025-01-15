@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\UpdateProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudWatchLogsDestination $cloudWatchLogs
- * @property S3Destination $s3Destination
+ * @property CloudWatchLogsDestination|null $cloudWatchLogs
+ * @property S3Destination|null $s3Destination
  */
 class ProjectDataDelivery extends Shape
 {
     /**
      * @param array{
-     *     cloudWatchLogs?: CloudWatchLogsDestination,
-     *     s3Destination?: S3Destination
+     *     cloudWatchLogs?: CloudWatchLogsDestination|null,
+     *     s3Destination?: S3Destination|null
      * } $args
      */
     public function __construct(array $args = [])

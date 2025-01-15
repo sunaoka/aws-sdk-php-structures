@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkDocs\CreateNotificationSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubscriptionId
- * @property string $EndPoint
- * @property 'HTTPS'|'SQS' $Protocol
+ * @property string|null $SubscriptionId
+ * @property string|null $EndPoint
+ * @property 'HTTPS'|'SQS'|null $Protocol
  */
 class Subscription extends Shape
 {
     /**
      * @param array{
-     *     SubscriptionId?: string,
-     *     EndPoint?: string,
-     *     Protocol?: 'HTTPS'|'SQS'
+     *     SubscriptionId?: string|null,
+     *     EndPoint?: string|null,
+     *     Protocol?: 'HTTPS'|'SQS'|null
      * } $args
      */
     public function __construct(array $args = [])

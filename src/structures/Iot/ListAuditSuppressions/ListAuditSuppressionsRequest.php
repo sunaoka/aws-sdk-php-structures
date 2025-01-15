@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\ListAuditSuppressions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $checkName
- * @property Shapes\ResourceIdentifier $resourceIdentifier
- * @property bool $ascendingOrder
- * @property string $nextToken
- * @property int<1, 250> $maxResults
+ * @property string|null $checkName
+ * @property Shapes\ResourceIdentifier|null $resourceIdentifier
+ * @property bool|null $ascendingOrder
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
  */
 class ListAuditSuppressionsRequest extends Request
 {
     /**
      * @param array{
-     *     checkName?: string,
-     *     resourceIdentifier?: Shapes\ResourceIdentifier,
-     *     ascendingOrder?: bool,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>
+     *     checkName?: string|null,
+     *     resourceIdentifier?: Shapes\ResourceIdentifier|null,
+     *     ascendingOrder?: bool|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null
      * } $args
      */
     public function __construct(array $args = [])

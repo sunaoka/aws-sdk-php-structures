@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\SearchAssociatedTranscripts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $transcript
+ * @property string|null $transcript
  */
 class AssociatedTranscript extends Shape
 {
     /**
-     * @param array{transcript?: string} $args
+     * @param array{transcript?: string|null} $args
      */
     public function __construct(array $args = [])
     {

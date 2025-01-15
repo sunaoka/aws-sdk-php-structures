@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Source'|'Build'|'Deploy'|'Test'|'Invoke'|'Approval'|'Compute' $category
  * @property string $provider
  * @property string $version
- * @property Shapes\ActionTypeSettings $settings
- * @property list<Shapes\ActionConfigurationProperty> $configurationProperties
+ * @property Shapes\ActionTypeSettings|null $settings
+ * @property list<Shapes\ActionConfigurationProperty>|null $configurationProperties
  * @property Shapes\ArtifactDetails $inputArtifactDetails
  * @property Shapes\ArtifactDetails $outputArtifactDetails
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateCustomActionTypeRequest extends Request
 {
@@ -21,11 +21,11 @@ class CreateCustomActionTypeRequest extends Request
      *     category: 'Source'|'Build'|'Deploy'|'Test'|'Invoke'|'Approval'|'Compute',
      *     provider: string,
      *     version: string,
-     *     settings?: Shapes\ActionTypeSettings,
-     *     configurationProperties?: list<Shapes\ActionConfigurationProperty>,
+     *     settings?: Shapes\ActionTypeSettings|null,
+     *     configurationProperties?: list<Shapes\ActionConfigurationProperty>|null,
      *     inputArtifactDetails: Shapes\ArtifactDetails,
      *     outputArtifactDetails: Shapes\ArtifactDetails,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeLoadBalancerTargetGroups\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LoadBalancerTargetGroupARN
- * @property string $State
+ * @property string|null $LoadBalancerTargetGroupARN
+ * @property string|null $State
  */
 class LoadBalancerTargetGroupState extends Shape
 {
     /**
      * @param array{
-     *     LoadBalancerTargetGroupARN?: string,
-     *     State?: string
+     *     LoadBalancerTargetGroupARN?: string|null,
+     *     State?: string|null
      * } $args
      */
     public function __construct(array $args = [])

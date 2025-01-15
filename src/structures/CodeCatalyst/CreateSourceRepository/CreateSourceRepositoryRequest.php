@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $spaceName
  * @property string $projectName
  * @property string $name
- * @property string $description
+ * @property string|null $description
  */
 class CreateSourceRepositoryRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateSourceRepositoryRequest extends Request
      *     spaceName: string,
      *     projectName: string,
      *     name: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

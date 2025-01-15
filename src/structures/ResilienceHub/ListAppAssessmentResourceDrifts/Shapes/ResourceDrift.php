@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppAssessmentResourceDrifts\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $appArn
- * @property string $appVersion
- * @property 'NotEqual'|'Added'|'Removed' $diffType
- * @property string $referenceId
- * @property ResourceIdentifier $resourceIdentifier
+ * @property string|null $appArn
+ * @property string|null $appVersion
+ * @property 'NotEqual'|'Added'|'Removed'|null $diffType
+ * @property string|null $referenceId
+ * @property ResourceIdentifier|null $resourceIdentifier
  */
 class ResourceDrift extends Shape
 {
     /**
      * @param array{
-     *     appArn?: string,
-     *     appVersion?: string,
-     *     diffType?: 'NotEqual'|'Added'|'Removed',
-     *     referenceId?: string,
-     *     resourceIdentifier?: ResourceIdentifier
+     *     appArn?: string|null,
+     *     appVersion?: string|null,
+     *     diffType?: 'NotEqual'|'Added'|'Removed'|null,
+     *     referenceId?: string|null,
+     *     resourceIdentifier?: ResourceIdentifier|null
      * } $args
      */
     public function __construct(array $args = [])

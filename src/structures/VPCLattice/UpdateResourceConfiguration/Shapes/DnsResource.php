@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateResourceConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $domainName
- * @property 'IPV4'|'IPV6'|'DUALSTACK' $ipAddressType
+ * @property string|null $domainName
+ * @property 'IPV4'|'IPV6'|'DUALSTACK'|null $ipAddressType
  */
 class DnsResource extends Shape
 {
     /**
      * @param array{
-     *     domainName?: string,
-     *     ipAddressType?: 'IPV4'|'IPV6'|'DUALSTACK'
+     *     domainName?: string|null,
+     *     ipAddressType?: 'IPV4'|'IPV6'|'DUALSTACK'|null
      * } $args
      */
     public function __construct(array $args = [])

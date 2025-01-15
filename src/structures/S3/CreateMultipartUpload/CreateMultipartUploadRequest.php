@@ -5,71 +5,71 @@ namespace Sunaoka\Aws\Structures\S3\CreateMultipartUpload;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control' $ACL
+ * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null $ACL
  * @property string $Bucket
- * @property string $CacheControl
- * @property string $ContentDisposition
- * @property string $ContentEncoding
- * @property string $ContentLanguage
- * @property string $ContentType
- * @property \Aws\Api\DateTimeResult $Expires
- * @property string $GrantFullControl
- * @property string $GrantRead
- * @property string $GrantReadACP
- * @property string $GrantWriteACP
+ * @property string|null $CacheControl
+ * @property string|null $ContentDisposition
+ * @property string|null $ContentEncoding
+ * @property string|null $ContentLanguage
+ * @property string|null $ContentType
+ * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $GrantFullControl
+ * @property string|null $GrantRead
+ * @property string|null $GrantReadACP
+ * @property string|null $GrantWriteACP
  * @property string $Key
- * @property array<string, string> $Metadata
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse' $ServerSideEncryption
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE' $StorageClass
- * @property string $WebsiteRedirectLocation
- * @property string $SSECustomerAlgorithm
- * @property string $SSECustomerKey
- * @property string $SSECustomerKeyMD5
- * @property string $SSEKMSKeyId
- * @property string $SSEKMSEncryptionContext
- * @property bool $BucketKeyEnabled
- * @property 'requester' $RequestPayer
- * @property string $Tagging
- * @property 'GOVERNANCE'|'COMPLIANCE' $ObjectLockMode
- * @property \Aws\Api\DateTimeResult $ObjectLockRetainUntilDate
- * @property 'ON'|'OFF' $ObjectLockLegalHoldStatus
- * @property string $ExpectedBucketOwner
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
+ * @property array<string, string>|null $Metadata
+ * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property string|null $WebsiteRedirectLocation
+ * @property string|null $SSECustomerAlgorithm
+ * @property string|null $SSECustomerKey
+ * @property string|null $SSECustomerKeyMD5
+ * @property string|null $SSEKMSKeyId
+ * @property string|null $SSEKMSEncryptionContext
+ * @property bool|null $BucketKeyEnabled
+ * @property 'requester'|null $RequestPayer
+ * @property string|null $Tagging
+ * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
+ * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
+ * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
+ * @property string|null $ExpectedBucketOwner
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  */
 class CreateMultipartUploadRequest extends Request
 {
     /**
      * @param array{
-     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control',
+     *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null,
      *     Bucket: string,
-     *     CacheControl?: string,
-     *     ContentDisposition?: string,
-     *     ContentEncoding?: string,
-     *     ContentLanguage?: string,
-     *     ContentType?: string,
-     *     Expires?: \Aws\Api\DateTimeResult,
-     *     GrantFullControl?: string,
-     *     GrantRead?: string,
-     *     GrantReadACP?: string,
-     *     GrantWriteACP?: string,
+     *     CacheControl?: string|null,
+     *     ContentDisposition?: string|null,
+     *     ContentEncoding?: string|null,
+     *     ContentLanguage?: string|null,
+     *     ContentType?: string|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     GrantFullControl?: string|null,
+     *     GrantRead?: string|null,
+     *     GrantReadACP?: string|null,
+     *     GrantWriteACP?: string|null,
      *     Key: string,
-     *     Metadata?: array<string, string>,
-     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse',
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE',
-     *     WebsiteRedirectLocation?: string,
-     *     SSECustomerAlgorithm?: string,
-     *     SSECustomerKey?: string,
-     *     SSECustomerKeyMD5?: string,
-     *     SSEKMSKeyId?: string,
-     *     SSEKMSEncryptionContext?: string,
-     *     BucketKeyEnabled?: bool,
-     *     RequestPayer?: 'requester',
-     *     Tagging?: string,
-     *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE',
-     *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult,
-     *     ObjectLockLegalHoldStatus?: 'ON'|'OFF',
-     *     ExpectedBucketOwner?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'
+     *     Metadata?: array<string, string>|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     WebsiteRedirectLocation?: string|null,
+     *     SSECustomerAlgorithm?: string|null,
+     *     SSECustomerKey?: string|null,
+     *     SSECustomerKeyMD5?: string|null,
+     *     SSEKMSKeyId?: string|null,
+     *     SSEKMSEncryptionContext?: string|null,
+     *     BucketKeyEnabled?: bool|null,
+     *     RequestPayer?: 'requester'|null,
+     *     Tagging?: string|null,
+     *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE'|null,
+     *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
+     *     ObjectLockLegalHoldStatus?: 'ON'|'OFF'|null,
+     *     ExpectedBucketOwner?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null
      * } $args
      */
     public function __construct(array $args)

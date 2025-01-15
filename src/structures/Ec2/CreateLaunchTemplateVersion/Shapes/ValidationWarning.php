@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ValidationError> $Errors
+ * @property list<ValidationError>|null $Errors
  */
 class ValidationWarning extends Shape
 {
     /**
-     * @param array{Errors?: list<ValidationError>} $args
+     * @param array{Errors?: list<ValidationError>|null} $args
      */
     public function __construct(array $args = [])
     {

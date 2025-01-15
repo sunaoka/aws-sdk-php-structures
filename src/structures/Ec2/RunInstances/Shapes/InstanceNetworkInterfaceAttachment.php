@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\RunInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $AttachTime
- * @property string $AttachmentId
- * @property bool $DeleteOnTermination
- * @property int $DeviceIndex
- * @property 'attaching'|'attached'|'detaching'|'detached' $Status
- * @property int $NetworkCardIndex
- * @property InstanceAttachmentEnaSrdSpecification $EnaSrdSpecification
+ * @property \Aws\Api\DateTimeResult|null $AttachTime
+ * @property string|null $AttachmentId
+ * @property bool|null $DeleteOnTermination
+ * @property int|null $DeviceIndex
+ * @property 'attaching'|'attached'|'detaching'|'detached'|null $Status
+ * @property int|null $NetworkCardIndex
+ * @property InstanceAttachmentEnaSrdSpecification|null $EnaSrdSpecification
  */
 class InstanceNetworkInterfaceAttachment extends Shape
 {
     /**
      * @param array{
-     *     AttachTime?: \Aws\Api\DateTimeResult,
-     *     AttachmentId?: string,
-     *     DeleteOnTermination?: bool,
-     *     DeviceIndex?: int,
-     *     Status?: 'attaching'|'attached'|'detaching'|'detached',
-     *     NetworkCardIndex?: int,
-     *     EnaSrdSpecification?: InstanceAttachmentEnaSrdSpecification
+     *     AttachTime?: \Aws\Api\DateTimeResult|null,
+     *     AttachmentId?: string|null,
+     *     DeleteOnTermination?: bool|null,
+     *     DeviceIndex?: int|null,
+     *     Status?: 'attaching'|'attached'|'detaching'|'detached'|null,
+     *     NetworkCardIndex?: int|null,
+     *     EnaSrdSpecification?: InstanceAttachmentEnaSrdSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

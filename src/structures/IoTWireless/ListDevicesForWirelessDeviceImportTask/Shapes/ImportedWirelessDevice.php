@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListDevicesForWirelessDeviceImportT
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImportedSidewalkDevice $Sidewalk
+ * @property ImportedSidewalkDevice|null $Sidewalk
  */
 class ImportedWirelessDevice extends Shape
 {
     /**
-     * @param array{Sidewalk?: ImportedSidewalkDevice} $args
+     * @param array{Sidewalk?: ImportedSidewalkDevice|null} $args
      */
     public function __construct(array $args = [])
     {

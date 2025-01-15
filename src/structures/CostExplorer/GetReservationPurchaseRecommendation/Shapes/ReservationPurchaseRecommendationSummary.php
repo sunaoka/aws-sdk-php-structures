@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationPurchaseRecommendati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TotalEstimatedMonthlySavingsAmount
- * @property string $TotalEstimatedMonthlySavingsPercentage
- * @property string $CurrencyCode
+ * @property string|null $TotalEstimatedMonthlySavingsAmount
+ * @property string|null $TotalEstimatedMonthlySavingsPercentage
+ * @property string|null $CurrencyCode
  */
 class ReservationPurchaseRecommendationSummary extends Shape
 {
     /**
      * @param array{
-     *     TotalEstimatedMonthlySavingsAmount?: string,
-     *     TotalEstimatedMonthlySavingsPercentage?: string,
-     *     CurrencyCode?: string
+     *     TotalEstimatedMonthlySavingsAmount?: string|null,
+     *     TotalEstimatedMonthlySavingsPercentage?: string|null,
+     *     CurrencyCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

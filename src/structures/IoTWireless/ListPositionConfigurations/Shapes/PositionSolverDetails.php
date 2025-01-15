@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListPositionConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SemtechGnssDetail $SemtechGnss
+ * @property SemtechGnssDetail|null $SemtechGnss
  */
 class PositionSolverDetails extends Shape
 {
     /**
-     * @param array{SemtechGnss?: SemtechGnssDetail} $args
+     * @param array{SemtechGnss?: SemtechGnssDetail|null} $args
      */
     public function __construct(array $args = [])
     {

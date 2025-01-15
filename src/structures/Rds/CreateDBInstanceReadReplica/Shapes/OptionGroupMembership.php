@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\CreateDBInstanceReadReplica\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OptionGroupName
- * @property string $Status
+ * @property string|null $OptionGroupName
+ * @property string|null $Status
  */
 class OptionGroupMembership extends Shape
 {
     /**
      * @param array{
-     *     OptionGroupName?: string,
-     *     Status?: string
+     *     OptionGroupName?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\CreateAssetModelCompositeModel\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $defaultValue
+ * @property string|null $defaultValue
  */
 class Attribute extends Shape
 {
     /**
-     * @param array{defaultValue?: string} $args
+     * @param array{defaultValue?: string|null} $args
      */
     public function __construct(array $args = [])
     {

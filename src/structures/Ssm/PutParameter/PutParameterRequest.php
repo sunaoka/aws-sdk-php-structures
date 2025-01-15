@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $Value
- * @property 'String'|'StringList'|'SecureString' $Type
- * @property string $KeyId
- * @property bool $Overwrite
- * @property string $AllowedPattern
- * @property list<Shapes\Tag> $Tags
- * @property 'Standard'|'Advanced'|'Intelligent-Tiering' $Tier
- * @property string $Policies
- * @property string $DataType
+ * @property 'String'|'StringList'|'SecureString'|null $Type
+ * @property string|null $KeyId
+ * @property bool|null $Overwrite
+ * @property string|null $AllowedPattern
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'Standard'|'Advanced'|'Intelligent-Tiering'|null $Tier
+ * @property string|null $Policies
+ * @property string|null $DataType
  */
 class PutParameterRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Value: string,
-     *     Type?: 'String'|'StringList'|'SecureString',
-     *     KeyId?: string,
-     *     Overwrite?: bool,
-     *     AllowedPattern?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     Tier?: 'Standard'|'Advanced'|'Intelligent-Tiering',
-     *     Policies?: string,
-     *     DataType?: string
+     *     Type?: 'String'|'StringList'|'SecureString'|null,
+     *     KeyId?: string|null,
+     *     Overwrite?: bool|null,
+     *     AllowedPattern?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Tier?: 'Standard'|'Advanced'|'Intelligent-Tiering'|null,
+     *     Policies?: string|null,
+     *     DataType?: string|null
      * } $args
      */
     public function __construct(array $args)

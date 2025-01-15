@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateIndex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property 'STRING'|'STRING_LIST'|'NUMBER'|'DATE' $type
- * @property 'ENABLED'|'DISABLED' $search
+ * @property string|null $name
+ * @property 'STRING'|'STRING_LIST'|'NUMBER'|'DATE'|null $type
+ * @property 'ENABLED'|'DISABLED'|null $search
  */
 class DocumentAttributeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     type?: 'STRING'|'STRING_LIST'|'NUMBER'|'DATE',
-     *     search?: 'ENABLED'|'DISABLED'
+     *     name?: string|null,
+     *     type?: 'STRING'|'STRING_LIST'|'NUMBER'|'DATE'|null,
+     *     search?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

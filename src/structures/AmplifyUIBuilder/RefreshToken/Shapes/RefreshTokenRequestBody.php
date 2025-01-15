@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $token
- * @property string $clientId
+ * @property string|null $clientId
  */
 class RefreshTokenRequestBody extends Shape
 {
     /**
      * @param array{
      *     token: string,
-     *     clientId?: string
+     *     clientId?: string|null
      * } $args
      */
     public function __construct(array $args)

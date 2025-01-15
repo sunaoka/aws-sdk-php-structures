@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\DescribeDeviceEc2Instances
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $code
- * @property 'PENDING'|'RUNNING'|'SHUTTING_DOWN'|'TERMINATED'|'STOPPING'|'STOPPED' $name
+ * @property int|null $code
+ * @property 'PENDING'|'RUNNING'|'SHUTTING_DOWN'|'TERMINATED'|'STOPPING'|'STOPPED'|null $name
  */
 class InstanceState extends Shape
 {
     /**
      * @param array{
-     *     code?: int,
-     *     name?: 'PENDING'|'RUNNING'|'SHUTTING_DOWN'|'TERMINATED'|'STOPPING'|'STOPPED'
+     *     code?: int|null,
+     *     name?: 'PENDING'|'RUNNING'|'SHUTTING_DOWN'|'TERMINATED'|'STOPPING'|'STOPPED'|null
      * } $args
      */
     public function __construct(array $args = [])

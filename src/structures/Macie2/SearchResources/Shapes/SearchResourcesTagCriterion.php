@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\SearchResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EQ'|'NE' $comparator
- * @property list<SearchResourcesTagCriterionPair> $tagValues
+ * @property 'EQ'|'NE'|null $comparator
+ * @property list<SearchResourcesTagCriterionPair>|null $tagValues
  */
 class SearchResourcesTagCriterion extends Shape
 {
     /**
      * @param array{
-     *     comparator?: 'EQ'|'NE',
-     *     tagValues?: list<SearchResourcesTagCriterionPair>
+     *     comparator?: 'EQ'|'NE'|null,
+     *     tagValues?: list<SearchResourcesTagCriterionPair>|null
      * } $args
      */
     public function __construct(array $args = [])

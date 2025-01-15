@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Personalize\ListBatchInferenceJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $solutionVersionArn
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $solutionVersionArn
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListBatchInferenceJobsRequest extends Request
 {
     /**
      * @param array{
-     *     solutionVersionArn?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     solutionVersionArn?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

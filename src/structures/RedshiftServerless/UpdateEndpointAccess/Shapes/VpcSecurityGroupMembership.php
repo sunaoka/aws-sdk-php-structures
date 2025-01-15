@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\UpdateEndpointAccess\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $status
- * @property string $vpcSecurityGroupId
+ * @property string|null $status
+ * @property string|null $vpcSecurityGroupId
  */
 class VpcSecurityGroupMembership extends Shape
 {
     /**
      * @param array{
-     *     status?: string,
-     *     vpcSecurityGroupId?: string
+     *     status?: string|null,
+     *     vpcSecurityGroupId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DestinationBucketName
- * @property string $LogFilePrefix
+ * @property string|null $DestinationBucketName
+ * @property string|null $LogFilePrefix
  */
 class AwsS3BucketLoggingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DestinationBucketName?: string,
-     *     LogFilePrefix?: string
+     *     DestinationBucketName?: string|null,
+     *     LogFilePrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

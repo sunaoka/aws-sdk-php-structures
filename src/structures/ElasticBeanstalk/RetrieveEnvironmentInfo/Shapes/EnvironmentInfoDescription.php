@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\RetrieveEnvironmentInfo\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'tail'|'bundle' $InfoType
- * @property string $Ec2InstanceId
- * @property \Aws\Api\DateTimeResult $SampleTimestamp
- * @property string $Message
+ * @property 'tail'|'bundle'|null $InfoType
+ * @property string|null $Ec2InstanceId
+ * @property \Aws\Api\DateTimeResult|null $SampleTimestamp
+ * @property string|null $Message
  */
 class EnvironmentInfoDescription extends Shape
 {
     /**
      * @param array{
-     *     InfoType?: 'tail'|'bundle',
-     *     Ec2InstanceId?: string,
-     *     SampleTimestamp?: \Aws\Api\DateTimeResult,
-     *     Message?: string
+     *     InfoType?: 'tail'|'bundle'|null,
+     *     Ec2InstanceId?: string|null,
+     *     SampleTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

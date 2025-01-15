@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'agentPermissions' $actionGroup
  * @property list<string> $principals
  * @property string $profilingGroupName
- * @property string $revisionId
+ * @property string|null $revisionId
  */
 class PutPermissionRequest extends Request
 {
@@ -17,7 +17,7 @@ class PutPermissionRequest extends Request
      *     actionGroup: 'agentPermissions',
      *     principals: list<string>,
      *     profilingGroupName: string,
-     *     revisionId?: string
+     *     revisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

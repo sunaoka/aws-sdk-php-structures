@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\Artifact\GetReportMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property string $description
- * @property \Aws\Api\DateTimeResult $periodStart
- * @property \Aws\Api\DateTimeResult $periodEnd
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastModifiedAt
- * @property \Aws\Api\DateTimeResult $deletedAt
- * @property 'PUBLISHED'|'UNPUBLISHED' $state
- * @property string $arn
- * @property string $series
- * @property string $category
- * @property string $companyName
- * @property string $productName
- * @property string $termArn
- * @property int<1, max> $version
- * @property 'PASSTHROUGH'|'EXPLICIT' $acceptanceType
- * @property int<1, max> $sequenceNumber
- * @property 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT' $uploadState
- * @property string $statusMessage
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $periodStart
+ * @property \Aws\Api\DateTimeResult|null $periodEnd
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedAt
+ * @property \Aws\Api\DateTimeResult|null $deletedAt
+ * @property 'PUBLISHED'|'UNPUBLISHED'|null $state
+ * @property string|null $arn
+ * @property string|null $series
+ * @property string|null $category
+ * @property string|null $companyName
+ * @property string|null $productName
+ * @property string|null $termArn
+ * @property int<1, max>|null $version
+ * @property 'PASSTHROUGH'|'EXPLICIT'|null $acceptanceType
+ * @property int<1, max>|null $sequenceNumber
+ * @property 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT'|null $uploadState
+ * @property string|null $statusMessage
  */
 class ReportDetail extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     description?: string,
-     *     periodStart?: \Aws\Api\DateTimeResult,
-     *     periodEnd?: \Aws\Api\DateTimeResult,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     lastModifiedAt?: \Aws\Api\DateTimeResult,
-     *     deletedAt?: \Aws\Api\DateTimeResult,
-     *     state?: 'PUBLISHED'|'UNPUBLISHED',
-     *     arn?: string,
-     *     series?: string,
-     *     category?: string,
-     *     companyName?: string,
-     *     productName?: string,
-     *     termArn?: string,
-     *     version?: int<1, max>,
-     *     acceptanceType?: 'PASSTHROUGH'|'EXPLICIT',
-     *     sequenceNumber?: int<1, max>,
-     *     uploadState?: 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT',
-     *     statusMessage?: string
+     *     id?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     periodStart?: \Aws\Api\DateTimeResult|null,
+     *     periodEnd?: \Aws\Api\DateTimeResult|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     deletedAt?: \Aws\Api\DateTimeResult|null,
+     *     state?: 'PUBLISHED'|'UNPUBLISHED'|null,
+     *     arn?: string|null,
+     *     series?: string|null,
+     *     category?: string|null,
+     *     companyName?: string|null,
+     *     productName?: string|null,
+     *     termArn?: string|null,
+     *     version?: int<1, max>|null,
+     *     acceptanceType?: 'PASSTHROUGH'|'EXPLICIT'|null,
+     *     sequenceNumber?: int<1, max>|null,
+     *     uploadState?: 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT'|null,
+     *     statusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

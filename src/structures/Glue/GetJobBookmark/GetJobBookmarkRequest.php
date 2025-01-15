@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobName
- * @property string $RunId
+ * @property string|null $RunId
  */
 class GetJobBookmarkRequest extends Request
 {
     /**
      * @param array{
      *     JobName: string,
-     *     RunId?: string
+     *     RunId?: string|null
      * } $args
      */
     public function __construct(array $args)

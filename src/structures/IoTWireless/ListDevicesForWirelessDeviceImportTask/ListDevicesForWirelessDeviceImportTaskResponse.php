@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListDevicesForWirelessDeviceImportT
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property string $DestinationName
- * @property list<Shapes\ImportedWirelessDevice> $ImportedWirelessDeviceList
+ * @property string|null $NextToken
+ * @property string|null $DestinationName
+ * @property list<Shapes\ImportedWirelessDevice>|null $ImportedWirelessDeviceList
  */
 class ListDevicesForWirelessDeviceImportTaskResponse extends Response
 {

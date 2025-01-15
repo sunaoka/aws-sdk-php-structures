@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRecommendation
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $NextToken
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $NextToken
  */
 class DescribeRecommendationLimitationsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     NextToken?: string
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Translate\GetTerminology;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TerminologyProperties $TerminologyProperties
- * @property Shapes\TerminologyDataLocation $TerminologyDataLocation
- * @property Shapes\TerminologyDataLocation $AuxiliaryDataLocation
+ * @property Shapes\TerminologyProperties|null $TerminologyProperties
+ * @property Shapes\TerminologyDataLocation|null $TerminologyDataLocation
+ * @property Shapes\TerminologyDataLocation|null $AuxiliaryDataLocation
  */
 class GetTerminologyResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeRegions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $RegionNames
- * @property bool $AllRegions
- * @property bool $DryRun
- * @property list<Shapes\Filter> $Filters
+ * @property list<string>|null $RegionNames
+ * @property bool|null $AllRegions
+ * @property bool|null $DryRun
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeRegionsRequest extends Request
 {
     /**
      * @param array{
-     *     RegionNames?: list<string>,
-     *     AllRegions?: bool,
-     *     DryRun?: bool,
-     *     Filters?: list<Shapes\Filter>
+     *     RegionNames?: list<string>|null,
+     *     AllRegions?: bool|null,
+     *     DryRun?: bool|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetConnectAttachment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attachment $Attachment
- * @property string $TransportAttachmentId
- * @property ConnectAttachmentOptions $Options
+ * @property Attachment|null $Attachment
+ * @property string|null $TransportAttachmentId
+ * @property ConnectAttachmentOptions|null $Options
  */
 class ConnectAttachment extends Shape
 {
     /**
      * @param array{
-     *     Attachment?: Attachment,
-     *     TransportAttachmentId?: string,
-     *     Options?: ConnectAttachmentOptions
+     *     Attachment?: Attachment|null,
+     *     TransportAttachmentId?: string|null,
+     *     Options?: ConnectAttachmentOptions|null
      * } $args
      */
     public function __construct(array $args = [])

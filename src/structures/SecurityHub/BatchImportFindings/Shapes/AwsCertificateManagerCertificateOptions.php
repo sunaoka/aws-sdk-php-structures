@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateTransparencyLoggingPreference
+ * @property string|null $CertificateTransparencyLoggingPreference
  */
 class AwsCertificateManagerCertificateOptions extends Shape
 {
     /**
-     * @param array{CertificateTransparencyLoggingPreference?: string} $args
+     * @param array{CertificateTransparencyLoggingPreference?: string|null} $args
      */
     public function __construct(array $args = [])
     {

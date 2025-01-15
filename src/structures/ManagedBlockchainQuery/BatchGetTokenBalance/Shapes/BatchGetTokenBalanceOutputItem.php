@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchainQuery\BatchGetTokenBalance\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OwnerIdentifier $ownerIdentifier
- * @property TokenIdentifier $tokenIdentifier
+ * @property OwnerIdentifier|null $ownerIdentifier
+ * @property TokenIdentifier|null $tokenIdentifier
  * @property string $balance
  * @property BlockchainInstant $atBlockchainInstant
- * @property BlockchainInstant $lastUpdatedTime
+ * @property BlockchainInstant|null $lastUpdatedTime
  */
 class BatchGetTokenBalanceOutputItem extends Shape
 {
     /**
      * @param array{
-     *     ownerIdentifier?: OwnerIdentifier,
-     *     tokenIdentifier?: TokenIdentifier,
+     *     ownerIdentifier?: OwnerIdentifier|null,
+     *     tokenIdentifier?: TokenIdentifier|null,
      *     balance: string,
      *     atBlockchainInstant: BlockchainInstant,
-     *     lastUpdatedTime?: BlockchainInstant
+     *     lastUpdatedTime?: BlockchainInstant|null
      * } $args
      */
     public function __construct(array $args)

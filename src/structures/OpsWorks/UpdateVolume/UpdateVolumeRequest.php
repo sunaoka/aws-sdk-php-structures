@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VolumeId
- * @property string $Name
- * @property string $MountPoint
+ * @property string|null $Name
+ * @property string|null $MountPoint
  */
 class UpdateVolumeRequest extends Request
 {
     /**
      * @param array{
      *     VolumeId: string,
-     *     Name?: string,
-     *     MountPoint?: string
+     *     Name?: string|null,
+     *     MountPoint?: string|null
      * } $args
      */
     public function __construct(array $args)

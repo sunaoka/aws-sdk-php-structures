@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\ListAutomaticTapeCreationPolicie
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AutomaticTapeCreationPolicyInfo> $AutomaticTapeCreationPolicyInfos
+ * @property list<Shapes\AutomaticTapeCreationPolicyInfo>|null $AutomaticTapeCreationPolicyInfos
  */
 class ListAutomaticTapeCreationPoliciesResponse extends Response
 {

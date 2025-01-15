@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeCommit\ListRepositoriesForApprovalRuleTempl
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $repositoryNames
- * @property string $nextToken
+ * @property list<string>|null $repositoryNames
+ * @property string|null $nextToken
  */
 class ListRepositoriesForApprovalRuleTemplateResponse extends Response
 {

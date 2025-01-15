@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Ecr\DeletePullThroughCacheRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ecrRepositoryPrefix
- * @property string $upstreamRegistryUrl
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $registryId
- * @property string $credentialArn
+ * @property string|null $ecrRepositoryPrefix
+ * @property string|null $upstreamRegistryUrl
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $registryId
+ * @property string|null $credentialArn
  */
 class DeletePullThroughCacheRuleResponse extends Response
 {

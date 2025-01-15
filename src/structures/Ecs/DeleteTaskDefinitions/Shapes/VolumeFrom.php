@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\DeleteTaskDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $sourceContainer
- * @property bool $readOnly
+ * @property string|null $sourceContainer
+ * @property bool|null $readOnly
  */
 class VolumeFrom extends Shape
 {
     /**
      * @param array{
-     *     sourceContainer?: string,
-     *     readOnly?: bool
+     *     sourceContainer?: string|null,
+     *     readOnly?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

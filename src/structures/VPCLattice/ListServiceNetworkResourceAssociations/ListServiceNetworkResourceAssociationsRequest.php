@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\VPCLattice\ListServiceNetworkResourceAssociatio
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property string $resourceConfigurationIdentifier
- * @property string $serviceNetworkIdentifier
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $resourceConfigurationIdentifier
+ * @property string|null $serviceNetworkIdentifier
  */
 class ListServiceNetworkResourceAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     resourceConfigurationIdentifier?: string,
-     *     serviceNetworkIdentifier?: string
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     resourceConfigurationIdentifier?: string|null,
+     *     serviceNetworkIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

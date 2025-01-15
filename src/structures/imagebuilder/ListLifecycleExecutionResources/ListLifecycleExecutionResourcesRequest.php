@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $lifecycleExecutionId
- * @property string $parentResourceId
- * @property int<1, 25> $maxResults
- * @property string $nextToken
+ * @property string|null $parentResourceId
+ * @property int<1, 25>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListLifecycleExecutionResourcesRequest extends Request
 {
     /**
      * @param array{
      *     lifecycleExecutionId: string,
-     *     parentResourceId?: string,
-     *     maxResults?: int<1, 25>,
-     *     nextToken?: string
+     *     parentResourceId?: string|null,
+     *     maxResults?: int<1, 25>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

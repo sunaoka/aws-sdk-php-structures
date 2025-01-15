@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateTLSInspectionConfiguratio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ServerCertificate> $ServerCertificates
- * @property list<ServerCertificateScope> $Scopes
- * @property string $CertificateAuthorityArn
- * @property CheckCertificateRevocationStatusActions $CheckCertificateRevocationStatus
+ * @property list<ServerCertificate>|null $ServerCertificates
+ * @property list<ServerCertificateScope>|null $Scopes
+ * @property string|null $CertificateAuthorityArn
+ * @property CheckCertificateRevocationStatusActions|null $CheckCertificateRevocationStatus
  */
 class ServerCertificateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ServerCertificates?: list<ServerCertificate>,
-     *     Scopes?: list<ServerCertificateScope>,
-     *     CertificateAuthorityArn?: string,
-     *     CheckCertificateRevocationStatus?: CheckCertificateRevocationStatusActions
+     *     ServerCertificates?: list<ServerCertificate>|null,
+     *     Scopes?: list<ServerCertificateScope>|null,
+     *     CertificateAuthorityArn?: string|null,
+     *     CheckCertificateRevocationStatus?: CheckCertificateRevocationStatusActions|null
      * } $args
      */
     public function __construct(array $args = [])

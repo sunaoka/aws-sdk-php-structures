@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\CreateDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $merge
- * @property list<string> $reset
+ * @property string|null $merge
+ * @property list<string>|null $reset
  */
 class ComponentConfigurationUpdate extends Shape
 {
     /**
      * @param array{
-     *     merge?: string,
-     *     reset?: list<string>
+     *     merge?: string|null,
+     *     reset?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

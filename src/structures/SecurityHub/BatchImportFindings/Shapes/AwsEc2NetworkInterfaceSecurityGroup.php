@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroupName
- * @property string $GroupId
+ * @property string|null $GroupName
+ * @property string|null $GroupId
  */
 class AwsEc2NetworkInterfaceSecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     GroupName?: string,
-     *     GroupId?: string
+     *     GroupName?: string|null,
+     *     GroupId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

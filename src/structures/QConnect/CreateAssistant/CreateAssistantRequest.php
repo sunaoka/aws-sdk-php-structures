@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAssistant;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property string $name
- * @property Shapes\ServerSideEncryptionConfiguration $serverSideEncryptionConfiguration
- * @property array<string, string> $tags
+ * @property Shapes\ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
+ * @property array<string, string>|null $tags
  * @property 'AGENT' $type
  */
 class CreateAssistantRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     name: string,
-     *     serverSideEncryptionConfiguration?: Shapes\ServerSideEncryptionConfiguration,
-     *     tags?: array<string, string>,
+     *     serverSideEncryptionConfiguration?: Shapes\ServerSideEncryptionConfiguration|null,
+     *     tags?: array<string, string>|null,
      *     type: 'AGENT'
      * } $args
      */

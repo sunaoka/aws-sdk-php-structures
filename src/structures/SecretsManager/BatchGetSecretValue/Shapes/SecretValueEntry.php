@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SecretsManager\BatchGetSecretValue\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ARN
- * @property string $Name
- * @property string $VersionId
- * @property \Psr\Http\Message\StreamInterface $SecretBinary
- * @property string $SecretString
- * @property list<string> $VersionStages
- * @property \Aws\Api\DateTimeResult $CreatedDate
+ * @property string|null $ARN
+ * @property string|null $Name
+ * @property string|null $VersionId
+ * @property \Psr\Http\Message\StreamInterface|null $SecretBinary
+ * @property string|null $SecretString
+ * @property list<string>|null $VersionStages
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
  */
 class SecretValueEntry extends Shape
 {
     /**
      * @param array{
-     *     ARN?: string,
-     *     Name?: string,
-     *     VersionId?: string,
-     *     SecretBinary?: \Psr\Http\Message\StreamInterface,
-     *     SecretString?: string,
-     *     VersionStages?: list<string>,
-     *     CreatedDate?: \Aws\Api\DateTimeResult
+     *     ARN?: string|null,
+     *     Name?: string|null,
+     *     VersionId?: string|null,
+     *     SecretBinary?: \Psr\Http\Message\StreamInterface|null,
+     *     SecretString?: string|null,
+     *     VersionStages?: list<string>|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

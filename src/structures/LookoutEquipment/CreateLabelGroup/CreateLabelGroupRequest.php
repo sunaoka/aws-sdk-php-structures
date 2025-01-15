@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LabelGroupName
- * @property list<string> $FaultCodes
+ * @property list<string>|null $FaultCodes
  * @property string $ClientToken
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateLabelGroupRequest extends Request
 {
     /**
      * @param array{
      *     LabelGroupName: string,
-     *     FaultCodes?: list<string>,
+     *     FaultCodes?: list<string>|null,
      *     ClientToken: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

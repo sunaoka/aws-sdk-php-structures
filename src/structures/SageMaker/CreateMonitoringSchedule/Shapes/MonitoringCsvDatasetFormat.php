@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateMonitoringSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Header
+ * @property bool|null $Header
  */
 class MonitoringCsvDatasetFormat extends Shape
 {
     /**
-     * @param array{Header?: bool} $args
+     * @param array{Header?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

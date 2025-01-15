@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'lakera-guard'|'comet'|'deepchecks-llm-evaluation'|'fiddler' $Type
  * @property string $ExecutionRoleArn
- * @property Shapes\PartnerAppMaintenanceConfig $MaintenanceConfig
+ * @property Shapes\PartnerAppMaintenanceConfig|null $MaintenanceConfig
  * @property string $Tier
- * @property Shapes\PartnerAppConfig $ApplicationConfig
+ * @property Shapes\PartnerAppConfig|null $ApplicationConfig
  * @property 'IAM' $AuthType
- * @property bool $EnableIamSessionBasedIdentity
- * @property string $ClientToken
- * @property list<Shapes\Tag> $Tags
+ * @property bool|null $EnableIamSessionBasedIdentity
+ * @property string|null $ClientToken
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreatePartnerAppRequest extends Request
 {
@@ -23,13 +23,13 @@ class CreatePartnerAppRequest extends Request
      *     Name: string,
      *     Type: 'lakera-guard'|'comet'|'deepchecks-llm-evaluation'|'fiddler',
      *     ExecutionRoleArn: string,
-     *     MaintenanceConfig?: Shapes\PartnerAppMaintenanceConfig,
+     *     MaintenanceConfig?: Shapes\PartnerAppMaintenanceConfig|null,
      *     Tier: string,
-     *     ApplicationConfig?: Shapes\PartnerAppConfig,
+     *     ApplicationConfig?: Shapes\PartnerAppConfig|null,
      *     AuthType: 'IAM',
-     *     EnableIamSessionBasedIdentity?: bool,
-     *     ClientToken?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     EnableIamSessionBasedIdentity?: bool|null,
+     *     ClientToken?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

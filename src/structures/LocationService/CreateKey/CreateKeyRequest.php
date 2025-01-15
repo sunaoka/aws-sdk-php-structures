@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $KeyName
  * @property Shapes\ApiKeyRestrictions $Restrictions
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $ExpireTime
- * @property bool $NoExpiry
- * @property array<string, string> $Tags
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $ExpireTime
+ * @property bool|null $NoExpiry
+ * @property array<string, string>|null $Tags
  */
 class CreateKeyRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateKeyRequest extends Request
      * @param array{
      *     KeyName: string,
      *     Restrictions: Shapes\ApiKeyRestrictions,
-     *     Description?: string,
-     *     ExpireTime?: \Aws\Api\DateTimeResult,
-     *     NoExpiry?: bool,
-     *     Tags?: array<string, string>
+     *     Description?: string|null,
+     *     ExpireTime?: \Aws\Api\DateTimeResult|null,
+     *     NoExpiry?: bool|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

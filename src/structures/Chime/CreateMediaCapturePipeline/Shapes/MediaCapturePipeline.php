@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Chime\CreateMediaCapturePipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MediaPipelineId
- * @property 'ChimeSdkMeeting' $SourceType
- * @property string $SourceArn
- * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped' $Status
- * @property 'S3Bucket' $SinkType
- * @property string $SinkArn
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
- * @property ChimeSdkMeetingConfiguration $ChimeSdkMeetingConfiguration
+ * @property string|null $MediaPipelineId
+ * @property 'ChimeSdkMeeting'|null $SourceType
+ * @property string|null $SourceArn
+ * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|null $Status
+ * @property 'S3Bucket'|null $SinkType
+ * @property string|null $SinkArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
+ * @property ChimeSdkMeetingConfiguration|null $ChimeSdkMeetingConfiguration
  */
 class MediaCapturePipeline extends Shape
 {
     /**
      * @param array{
-     *     MediaPipelineId?: string,
-     *     SourceType?: 'ChimeSdkMeeting',
-     *     SourceArn?: string,
-     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped',
-     *     SinkType?: 'S3Bucket',
-     *     SinkArn?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ChimeSdkMeetingConfiguration?: ChimeSdkMeetingConfiguration
+     *     MediaPipelineId?: string|null,
+     *     SourceType?: 'ChimeSdkMeeting'|null,
+     *     SourceArn?: string|null,
+     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|null,
+     *     SinkType?: 'S3Bucket'|null,
+     *     SinkArn?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ChimeSdkMeetingConfiguration?: ChimeSdkMeetingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

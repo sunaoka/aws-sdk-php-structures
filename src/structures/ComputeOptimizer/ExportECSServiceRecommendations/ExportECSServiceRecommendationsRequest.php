@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\ExportECSServiceRecommendation
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $accountIds
- * @property list<Shapes\ECSServiceRecommendationFilter> $filters
- * @property list<'AccountId'|'ServiceArn'|'LookbackPeriodInDays'|'LastRefreshTimestamp'|'LaunchType'|'CurrentPerformanceRisk'|'CurrentServiceConfigurationMemory'|'CurrentServiceConfigurationCpu'|'CurrentServiceConfigurationTaskDefinitionArn'|'CurrentServiceConfigurationAutoScalingConfiguration'|'CurrentServiceContainerConfigurations'|'UtilizationMetricsCpuMaximum'|'UtilizationMetricsMemoryMaximum'|'Finding'|'FindingReasonCodes'|'RecommendationOptionsMemory'|'RecommendationOptionsCpu'|'RecommendationOptionsSavingsOpportunityPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrency'|'RecommendationOptionsEstimatedMonthlySavingsValue'|'RecommendationOptionsContainerRecommendations'|'RecommendationOptionsProjectedUtilizationMetricsCpuMaximum'|'RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum'|'Tags'|'EffectiveRecommendationPreferencesSavingsEstimationMode'|'RecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'RecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'> $fieldsToExport
+ * @property list<string>|null $accountIds
+ * @property list<Shapes\ECSServiceRecommendationFilter>|null $filters
+ * @property list<'AccountId'|'ServiceArn'|'LookbackPeriodInDays'|'LastRefreshTimestamp'|'LaunchType'|'CurrentPerformanceRisk'|'CurrentServiceConfigurationMemory'|'CurrentServiceConfigurationCpu'|'CurrentServiceConfigurationTaskDefinitionArn'|'CurrentServiceConfigurationAutoScalingConfiguration'|'CurrentServiceContainerConfigurations'|'UtilizationMetricsCpuMaximum'|'UtilizationMetricsMemoryMaximum'|'Finding'|'FindingReasonCodes'|'RecommendationOptionsMemory'|'RecommendationOptionsCpu'|'RecommendationOptionsSavingsOpportunityPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrency'|'RecommendationOptionsEstimatedMonthlySavingsValue'|'RecommendationOptionsContainerRecommendations'|'RecommendationOptionsProjectedUtilizationMetricsCpuMaximum'|'RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum'|'Tags'|'EffectiveRecommendationPreferencesSavingsEstimationMode'|'RecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'RecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'>|null $fieldsToExport
  * @property Shapes\S3DestinationConfig $s3DestinationConfig
- * @property 'Csv' $fileFormat
- * @property bool $includeMemberAccounts
+ * @property 'Csv'|null $fileFormat
+ * @property bool|null $includeMemberAccounts
  */
 class ExportECSServiceRecommendationsRequest extends Request
 {
     /**
      * @param array{
-     *     accountIds?: list<string>,
-     *     filters?: list<Shapes\ECSServiceRecommendationFilter>,
-     *     fieldsToExport?: list<'AccountId'|'ServiceArn'|'LookbackPeriodInDays'|'LastRefreshTimestamp'|'LaunchType'|'CurrentPerformanceRisk'|'CurrentServiceConfigurationMemory'|'CurrentServiceConfigurationCpu'|'CurrentServiceConfigurationTaskDefinitionArn'|'CurrentServiceConfigurationAutoScalingConfiguration'|'CurrentServiceContainerConfigurations'|'UtilizationMetricsCpuMaximum'|'UtilizationMetricsMemoryMaximum'|'Finding'|'FindingReasonCodes'|'RecommendationOptionsMemory'|'RecommendationOptionsCpu'|'RecommendationOptionsSavingsOpportunityPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrency'|'RecommendationOptionsEstimatedMonthlySavingsValue'|'RecommendationOptionsContainerRecommendations'|'RecommendationOptionsProjectedUtilizationMetricsCpuMaximum'|'RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum'|'Tags'|'EffectiveRecommendationPreferencesSavingsEstimationMode'|'RecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'RecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'>,
+     *     accountIds?: list<string>|null,
+     *     filters?: list<Shapes\ECSServiceRecommendationFilter>|null,
+     *     fieldsToExport?: list<'AccountId'|'ServiceArn'|'LookbackPeriodInDays'|'LastRefreshTimestamp'|'LaunchType'|'CurrentPerformanceRisk'|'CurrentServiceConfigurationMemory'|'CurrentServiceConfigurationCpu'|'CurrentServiceConfigurationTaskDefinitionArn'|'CurrentServiceConfigurationAutoScalingConfiguration'|'CurrentServiceContainerConfigurations'|'UtilizationMetricsCpuMaximum'|'UtilizationMetricsMemoryMaximum'|'Finding'|'FindingReasonCodes'|'RecommendationOptionsMemory'|'RecommendationOptionsCpu'|'RecommendationOptionsSavingsOpportunityPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrency'|'RecommendationOptionsEstimatedMonthlySavingsValue'|'RecommendationOptionsContainerRecommendations'|'RecommendationOptionsProjectedUtilizationMetricsCpuMaximum'|'RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum'|'Tags'|'EffectiveRecommendationPreferencesSavingsEstimationMode'|'RecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'RecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'>|null,
      *     s3DestinationConfig: Shapes\S3DestinationConfig,
-     *     fileFormat?: 'Csv',
-     *     includeMemberAccounts?: bool
+     *     fileFormat?: 'Csv'|null,
+     *     includeMemberAccounts?: bool|null
      * } $args
      */
     public function __construct(array $args)

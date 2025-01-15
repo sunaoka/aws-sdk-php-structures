@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property 'AMI'|'DOCKER' $type
- * @property string $version
- * @property 'Windows'|'Linux'|'macOS' $platform
- * @property string $osVersion
- * @property string $owner
- * @property string $dateCreated
- * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO' $buildType
- * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM' $imageSource
+ * @property string|null $arn
+ * @property string|null $name
+ * @property 'AMI'|'DOCKER'|null $type
+ * @property string|null $version
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property string|null $osVersion
+ * @property string|null $owner
+ * @property string|null $dateCreated
+ * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null $buildType
+ * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null $imageSource
  */
 class ImageVersion extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     type?: 'AMI'|'DOCKER',
-     *     version?: string,
-     *     platform?: 'Windows'|'Linux'|'macOS',
-     *     osVersion?: string,
-     *     owner?: string,
-     *     dateCreated?: string,
-     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO',
-     *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     type?: 'AMI'|'DOCKER'|null,
+     *     version?: string|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     osVersion?: string|null,
+     *     owner?: string|null,
+     *     dateCreated?: string|null,
+     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null,
+     *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null
      * } $args
      */
     public function __construct(array $args = [])

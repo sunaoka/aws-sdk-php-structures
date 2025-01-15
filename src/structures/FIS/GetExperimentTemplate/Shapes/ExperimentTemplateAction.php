@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\FIS\GetExperimentTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $actionId
- * @property string $description
- * @property array<string, string> $parameters
- * @property array<string, string> $targets
- * @property list<string> $startAfter
+ * @property string|null $actionId
+ * @property string|null $description
+ * @property array<string, string>|null $parameters
+ * @property array<string, string>|null $targets
+ * @property list<string>|null $startAfter
  */
 class ExperimentTemplateAction extends Shape
 {
     /**
      * @param array{
-     *     actionId?: string,
-     *     description?: string,
-     *     parameters?: array<string, string>,
-     *     targets?: array<string, string>,
-     *     startAfter?: list<string>
+     *     actionId?: string|null,
+     *     description?: string|null,
+     *     parameters?: array<string, string>|null,
+     *     targets?: array<string, string>|null,
+     *     startAfter?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

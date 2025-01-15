@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeAggregateComplianceByConf
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConformancePackName
- * @property 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA' $ComplianceType
- * @property string $AccountId
- * @property string $AwsRegion
+ * @property string|null $ConformancePackName
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA'|null $ComplianceType
+ * @property string|null $AccountId
+ * @property string|null $AwsRegion
  */
 class AggregateConformancePackComplianceFilters extends Shape
 {
     /**
      * @param array{
-     *     ConformancePackName?: string,
-     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA',
-     *     AccountId?: string,
-     *     AwsRegion?: string
+     *     ConformancePackName?: string|null,
+     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA'|null,
+     *     AccountId?: string|null,
+     *     AwsRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

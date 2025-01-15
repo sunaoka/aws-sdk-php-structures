@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyTrustStore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $TrustStoreArn
- * @property 'ACTIVE'|'CREATING' $Status
- * @property int $NumberOfCaCertificates
- * @property int $TotalRevokedEntries
+ * @property string|null $Name
+ * @property string|null $TrustStoreArn
+ * @property 'ACTIVE'|'CREATING'|null $Status
+ * @property int|null $NumberOfCaCertificates
+ * @property int|null $TotalRevokedEntries
  */
 class TrustStore extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     TrustStoreArn?: string,
-     *     Status?: 'ACTIVE'|'CREATING',
-     *     NumberOfCaCertificates?: int,
-     *     TotalRevokedEntries?: int
+     *     Name?: string|null,
+     *     TrustStoreArn?: string|null,
+     *     Status?: 'ACTIVE'|'CREATING'|null,
+     *     NumberOfCaCertificates?: int|null,
+     *     TotalRevokedEntries?: int|null
      * } $args
      */
     public function __construct(array $args = [])

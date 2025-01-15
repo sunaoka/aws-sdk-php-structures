@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DAX\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED' $Status
+ * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|null $Status
  */
 class SSEDescription extends Shape
 {
     /**
-     * @param array{Status?: 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'} $args
+     * @param array{Status?: 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $applicationId
  * @property 'MicroFocus' $runtime
- * @property string $vpcEndpointServiceName
- * @property string $listenerPort
+ * @property string|null $vpcEndpointServiceName
+ * @property string|null $listenerPort
  */
 class M2ManagedApplication extends Shape
 {
@@ -16,8 +16,8 @@ class M2ManagedApplication extends Shape
      * @param array{
      *     applicationId: string,
      *     runtime: 'MicroFocus',
-     *     vpcEndpointServiceName?: string,
-     *     listenerPort?: string
+     *     vpcEndpointServiceName?: string|null,
+     *     listenerPort?: string|null
      * } $args
      */
     public function __construct(array $args)

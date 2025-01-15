@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $audienceGenerationJobArn
  * @property Shapes\AudienceSize $audienceSize
- * @property string $description
+ * @property string|null $description
  */
 class StartAudienceExportJobRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartAudienceExportJobRequest extends Request
      *     name: string,
      *     audienceGenerationJobArn: string,
      *     audienceSize: Shapes\AudienceSize,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

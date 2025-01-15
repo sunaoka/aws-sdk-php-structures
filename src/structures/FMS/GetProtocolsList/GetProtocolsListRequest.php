@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ListId
- * @property bool $DefaultList
+ * @property bool|null $DefaultList
  */
 class GetProtocolsListRequest extends Request
 {
     /**
      * @param array{
      *     ListId: string,
-     *     DefaultList?: bool
+     *     DefaultList?: bool|null
      * } $args
      */
     public function __construct(array $args)

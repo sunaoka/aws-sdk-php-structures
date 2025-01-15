@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeThing;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $defaultClientId
- * @property string $thingName
- * @property string $thingId
- * @property string $thingArn
- * @property string $thingTypeName
- * @property array<string, string> $attributes
- * @property int $version
- * @property string $billingGroupName
+ * @property string|null $defaultClientId
+ * @property string|null $thingName
+ * @property string|null $thingId
+ * @property string|null $thingArn
+ * @property string|null $thingTypeName
+ * @property array<string, string>|null $attributes
+ * @property int|null $version
+ * @property string|null $billingGroupName
  */
 class DescribeThingResponse extends Response
 {

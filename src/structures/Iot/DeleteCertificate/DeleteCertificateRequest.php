@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $certificateId
- * @property bool $forceDelete
+ * @property bool|null $forceDelete
  */
 class DeleteCertificateRequest extends Request
 {
     /**
      * @param array{
      *     certificateId: string,
-     *     forceDelete?: bool
+     *     forceDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

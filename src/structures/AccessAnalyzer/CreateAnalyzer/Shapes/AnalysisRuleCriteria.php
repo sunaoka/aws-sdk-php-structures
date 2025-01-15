@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\CreateAnalyzer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $accountIds
- * @property list<array<string, string>> $resourceTags
+ * @property list<string>|null $accountIds
+ * @property list<array<string, string>>|null $resourceTags
  */
 class AnalysisRuleCriteria extends Shape
 {
     /**
      * @param array{
-     *     accountIds?: list<string>,
-     *     resourceTags?: list<array<string, string>>
+     *     accountIds?: list<string>|null,
+     *     resourceTags?: list<array<string, string>>|null
      * } $args
      */
     public function __construct(array $args = [])

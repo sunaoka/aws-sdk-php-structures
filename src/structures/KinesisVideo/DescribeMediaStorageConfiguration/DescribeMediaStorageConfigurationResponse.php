@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeMediaStorageConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\MediaStorageConfiguration $MediaStorageConfiguration
+ * @property Shapes\MediaStorageConfiguration|null $MediaStorageConfiguration
  */
 class DescribeMediaStorageConfigurationResponse extends Response
 {

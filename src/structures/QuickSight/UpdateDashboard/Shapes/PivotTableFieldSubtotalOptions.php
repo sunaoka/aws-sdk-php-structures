@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FieldId
+ * @property string|null $FieldId
  */
 class PivotTableFieldSubtotalOptions extends Shape
 {
     /**
-     * @param array{FieldId?: string} $args
+     * @param array{FieldId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

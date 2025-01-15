@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateMessageTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SystemEndpointAttributes $customerEndpoint
- * @property string $name
- * @property SystemEndpointAttributes $systemEndpoint
+ * @property SystemEndpointAttributes|null $customerEndpoint
+ * @property string|null $name
+ * @property SystemEndpointAttributes|null $systemEndpoint
  */
 class SystemAttributes extends Shape
 {
     /**
      * @param array{
-     *     customerEndpoint?: SystemEndpointAttributes,
-     *     name?: string,
-     *     systemEndpoint?: SystemEndpointAttributes
+     *     customerEndpoint?: SystemEndpointAttributes|null,
+     *     name?: string|null,
+     *     systemEndpoint?: SystemEndpointAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

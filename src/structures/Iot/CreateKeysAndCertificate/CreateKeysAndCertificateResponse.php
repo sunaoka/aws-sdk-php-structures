@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Iot\CreateKeysAndCertificate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $certificateArn
- * @property string $certificateId
- * @property string $certificatePem
- * @property Shapes\KeyPair $keyPair
+ * @property string|null $certificateArn
+ * @property string|null $certificateId
+ * @property string|null $certificatePem
+ * @property Shapes\KeyPair|null $keyPair
  */
 class CreateKeysAndCertificateResponse extends Response
 {

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEC2InstanceRecommendations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\InstanceRecommendation> $instanceRecommendations
- * @property list<Shapes\GetRecommendationError> $errors
+ * @property string|null $nextToken
+ * @property list<Shapes\InstanceRecommendation>|null $instanceRecommendations
+ * @property list<Shapes\GetRecommendationError>|null $errors
  */
 class GetEC2InstanceRecommendationsResponse extends Response
 {

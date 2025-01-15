@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\DescribeStandards\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Company
- * @property string $Product
+ * @property string|null $Company
+ * @property string|null $Product
  */
 class StandardsManagedBy extends Shape
 {
     /**
      * @param array{
-     *     Company?: string,
-     *     Product?: string
+     *     Company?: string|null,
+     *     Product?: string|null
      * } $args
      */
     public function __construct(array $args = [])

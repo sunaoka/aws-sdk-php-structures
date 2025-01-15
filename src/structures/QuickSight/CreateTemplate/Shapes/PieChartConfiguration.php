@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PieChartFieldWells $FieldWells
- * @property PieChartSortConfiguration $SortConfiguration
- * @property DonutOptions $DonutOptions
- * @property SmallMultiplesOptions $SmallMultiplesOptions
- * @property ChartAxisLabelOptions $CategoryLabelOptions
- * @property ChartAxisLabelOptions $ValueLabelOptions
- * @property LegendOptions $Legend
- * @property DataLabelOptions $DataLabels
- * @property TooltipOptions $Tooltip
- * @property VisualPalette $VisualPalette
- * @property list<ContributionAnalysisDefault> $ContributionAnalysisDefaults
- * @property VisualInteractionOptions $Interactions
+ * @property PieChartFieldWells|null $FieldWells
+ * @property PieChartSortConfiguration|null $SortConfiguration
+ * @property DonutOptions|null $DonutOptions
+ * @property SmallMultiplesOptions|null $SmallMultiplesOptions
+ * @property ChartAxisLabelOptions|null $CategoryLabelOptions
+ * @property ChartAxisLabelOptions|null $ValueLabelOptions
+ * @property LegendOptions|null $Legend
+ * @property DataLabelOptions|null $DataLabels
+ * @property TooltipOptions|null $Tooltip
+ * @property VisualPalette|null $VisualPalette
+ * @property list<ContributionAnalysisDefault>|null $ContributionAnalysisDefaults
+ * @property VisualInteractionOptions|null $Interactions
  */
 class PieChartConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: PieChartFieldWells,
-     *     SortConfiguration?: PieChartSortConfiguration,
-     *     DonutOptions?: DonutOptions,
-     *     SmallMultiplesOptions?: SmallMultiplesOptions,
-     *     CategoryLabelOptions?: ChartAxisLabelOptions,
-     *     ValueLabelOptions?: ChartAxisLabelOptions,
-     *     Legend?: LegendOptions,
-     *     DataLabels?: DataLabelOptions,
-     *     Tooltip?: TooltipOptions,
-     *     VisualPalette?: VisualPalette,
-     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: PieChartFieldWells|null,
+     *     SortConfiguration?: PieChartSortConfiguration|null,
+     *     DonutOptions?: DonutOptions|null,
+     *     SmallMultiplesOptions?: SmallMultiplesOptions|null,
+     *     CategoryLabelOptions?: ChartAxisLabelOptions|null,
+     *     ValueLabelOptions?: ChartAxisLabelOptions|null,
+     *     Legend?: LegendOptions|null,
+     *     DataLabels?: DataLabelOptions|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     VisualPalette?: VisualPalette|null,
+     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

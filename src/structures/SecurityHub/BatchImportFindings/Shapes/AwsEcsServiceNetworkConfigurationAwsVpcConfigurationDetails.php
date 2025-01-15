@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssignPublicIp
- * @property list<string> $SecurityGroups
- * @property list<string> $Subnets
+ * @property string|null $AssignPublicIp
+ * @property list<string>|null $SecurityGroups
+ * @property list<string>|null $Subnets
  */
 class AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails extends Shape
 {
     /**
      * @param array{
-     *     AssignPublicIp?: string,
-     *     SecurityGroups?: list<string>,
-     *     Subnets?: list<string>
+     *     AssignPublicIp?: string|null,
+     *     SecurityGroups?: list<string>|null,
+     *     Subnets?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

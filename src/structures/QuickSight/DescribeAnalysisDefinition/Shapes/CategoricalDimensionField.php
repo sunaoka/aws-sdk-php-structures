@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FieldId
  * @property ColumnIdentifier $Column
- * @property string $HierarchyId
- * @property StringFormatConfiguration $FormatConfiguration
+ * @property string|null $HierarchyId
+ * @property StringFormatConfiguration|null $FormatConfiguration
  */
 class CategoricalDimensionField extends Shape
 {
@@ -16,8 +16,8 @@ class CategoricalDimensionField extends Shape
      * @param array{
      *     FieldId: string,
      *     Column: ColumnIdentifier,
-     *     HierarchyId?: string,
-     *     FormatConfiguration?: StringFormatConfiguration
+     *     HierarchyId?: string|null,
+     *     FormatConfiguration?: StringFormatConfiguration|null
      * } $args
      */
     public function __construct(array $args)

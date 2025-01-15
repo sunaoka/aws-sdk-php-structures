@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Ses\DescribeConfigurationSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ConfigurationSet $ConfigurationSet
- * @property list<Shapes\EventDestination> $EventDestinations
- * @property Shapes\TrackingOptions $TrackingOptions
- * @property Shapes\DeliveryOptions $DeliveryOptions
- * @property Shapes\ReputationOptions $ReputationOptions
+ * @property Shapes\ConfigurationSet|null $ConfigurationSet
+ * @property list<Shapes\EventDestination>|null $EventDestinations
+ * @property Shapes\TrackingOptions|null $TrackingOptions
+ * @property Shapes\DeliveryOptions|null $DeliveryOptions
+ * @property Shapes\ReputationOptions|null $ReputationOptions
  */
 class DescribeConfigurationSetResponse extends Response
 {

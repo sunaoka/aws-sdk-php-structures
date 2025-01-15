@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelBuildingService\GetUtterancesView\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $botVersion
- * @property list<UtteranceData> $utterances
+ * @property string|null $botVersion
+ * @property list<UtteranceData>|null $utterances
  */
 class UtteranceList extends Shape
 {
     /**
      * @param array{
-     *     botVersion?: string,
-     *     utterances?: list<UtteranceData>
+     *     botVersion?: string|null,
+     *     utterances?: list<UtteranceData>|null
      * } $args
      */
     public function __construct(array $args = [])

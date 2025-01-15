@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigurationSetName
- * @property Shapes\EventDestinationDefinition $EventDestination
+ * @property Shapes\EventDestinationDefinition|null $EventDestination
  * @property string $EventDestinationName
  */
 class UpdateConfigurationSetEventDestinationRequest extends Request
@@ -14,7 +14,7 @@ class UpdateConfigurationSetEventDestinationRequest extends Request
     /**
      * @param array{
      *     ConfigurationSetName: string,
-     *     EventDestination?: Shapes\EventDestinationDefinition,
+     *     EventDestination?: Shapes\EventDestinationDefinition|null,
      *     EventDestinationName: string
      * } $args
      */

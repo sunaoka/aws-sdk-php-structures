@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryReadiness\UpdateResourceSet\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DomainName
- * @property string $HostedZoneArn
- * @property string $RecordSetId
- * @property string $RecordType
- * @property TargetResource $TargetResource
+ * @property string|null $DomainName
+ * @property string|null $HostedZoneArn
+ * @property string|null $RecordSetId
+ * @property string|null $RecordType
+ * @property TargetResource|null $TargetResource
  */
 class DNSTargetResource extends Shape
 {
     /**
      * @param array{
-     *     DomainName?: string,
-     *     HostedZoneArn?: string,
-     *     RecordSetId?: string,
-     *     RecordType?: string,
-     *     TargetResource?: TargetResource
+     *     DomainName?: string|null,
+     *     HostedZoneArn?: string|null,
+     *     RecordSetId?: string|null,
+     *     RecordType?: string|null,
+     *     TargetResource?: TargetResource|null
      * } $args
      */
     public function __construct(array $args = [])

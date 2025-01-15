@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateWebExperience\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SamlConfiguration $samlConfiguration
+ * @property SamlConfiguration|null $samlConfiguration
  */
 class WebExperienceAuthConfiguration extends Shape
 {
     /**
-     * @param array{samlConfiguration?: SamlConfiguration} $args
+     * @param array{samlConfiguration?: SamlConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

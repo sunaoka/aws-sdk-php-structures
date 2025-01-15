@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ActionLocalPortDetails $LocalPortDetails
- * @property ActionLocalIpDetails $LocalIpDetails
- * @property ActionRemoteIpDetails $RemoteIpDetails
+ * @property ActionLocalPortDetails|null $LocalPortDetails
+ * @property ActionLocalIpDetails|null $LocalIpDetails
+ * @property ActionRemoteIpDetails|null $RemoteIpDetails
  */
 class PortProbeDetail extends Shape
 {
     /**
      * @param array{
-     *     LocalPortDetails?: ActionLocalPortDetails,
-     *     LocalIpDetails?: ActionLocalIpDetails,
-     *     RemoteIpDetails?: ActionRemoteIpDetails
+     *     LocalPortDetails?: ActionLocalPortDetails|null,
+     *     LocalIpDetails?: ActionLocalIpDetails|null,
+     *     RemoteIpDetails?: ActionRemoteIpDetails|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appId
  * @property string $environmentName
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property Shapes\CreateThemeData $themeToCreate
  */
 class CreateThemeRequest extends Request
@@ -16,7 +16,7 @@ class CreateThemeRequest extends Request
      * @param array{
      *     appId: string,
      *     environmentName: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     themeToCreate: Shapes\CreateThemeData
      * } $args
      */

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Rekognition\DescribeProjectVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Asset> $Assets
+ * @property list<Asset>|null $Assets
  */
 class TrainingData extends Shape
 {
     /**
-     * @param array{Assets?: list<Asset>} $args
+     * @param array{Assets?: list<Asset>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $appId
  * @property string $environmentName
  * @property string $id
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property Shapes\UpdateFormData $updatedForm
  */
 class UpdateFormRequest extends Request
@@ -18,7 +18,7 @@ class UpdateFormRequest extends Request
      *     appId: string,
      *     environmentName: string,
      *     id: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     updatedForm: Shapes\UpdateFormData
      * } $args
      */

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetContainerServicePowers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $powerId
- * @property float $price
- * @property float $cpuCount
- * @property float $ramSizeInGb
- * @property string $name
- * @property bool $isActive
+ * @property string|null $powerId
+ * @property float|null $price
+ * @property float|null $cpuCount
+ * @property float|null $ramSizeInGb
+ * @property string|null $name
+ * @property bool|null $isActive
  */
 class ContainerServicePower extends Shape
 {
     /**
      * @param array{
-     *     powerId?: string,
-     *     price?: float,
-     *     cpuCount?: float,
-     *     ramSizeInGb?: float,
-     *     name?: string,
-     *     isActive?: bool
+     *     powerId?: string|null,
+     *     price?: float|null,
+     *     cpuCount?: float|null,
+     *     ramSizeInGb?: float|null,
+     *     name?: string|null,
+     *     isActive?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

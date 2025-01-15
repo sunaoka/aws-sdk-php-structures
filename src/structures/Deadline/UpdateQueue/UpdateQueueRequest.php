@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateQueue;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $farmId
  * @property string $queueId
- * @property string $displayName
- * @property string $description
- * @property 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS' $defaultBudgetAction
- * @property Shapes\JobAttachmentSettings $jobAttachmentSettings
- * @property string $roleArn
- * @property Shapes\JobRunAsUser $jobRunAsUser
- * @property list<string> $requiredFileSystemLocationNamesToAdd
- * @property list<string> $requiredFileSystemLocationNamesToRemove
- * @property list<string> $allowedStorageProfileIdsToAdd
- * @property list<string> $allowedStorageProfileIdsToRemove
+ * @property string|null $displayName
+ * @property string|null $description
+ * @property 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null $defaultBudgetAction
+ * @property Shapes\JobAttachmentSettings|null $jobAttachmentSettings
+ * @property string|null $roleArn
+ * @property Shapes\JobRunAsUser|null $jobRunAsUser
+ * @property list<string>|null $requiredFileSystemLocationNamesToAdd
+ * @property list<string>|null $requiredFileSystemLocationNamesToRemove
+ * @property list<string>|null $allowedStorageProfileIdsToAdd
+ * @property list<string>|null $allowedStorageProfileIdsToRemove
  */
 class UpdateQueueRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     farmId: string,
      *     queueId: string,
-     *     displayName?: string,
-     *     description?: string,
-     *     defaultBudgetAction?: 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS',
-     *     jobAttachmentSettings?: Shapes\JobAttachmentSettings,
-     *     roleArn?: string,
-     *     jobRunAsUser?: Shapes\JobRunAsUser,
-     *     requiredFileSystemLocationNamesToAdd?: list<string>,
-     *     requiredFileSystemLocationNamesToRemove?: list<string>,
-     *     allowedStorageProfileIdsToAdd?: list<string>,
-     *     allowedStorageProfileIdsToRemove?: list<string>
+     *     displayName?: string|null,
+     *     description?: string|null,
+     *     defaultBudgetAction?: 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null,
+     *     jobAttachmentSettings?: Shapes\JobAttachmentSettings|null,
+     *     roleArn?: string|null,
+     *     jobRunAsUser?: Shapes\JobRunAsUser|null,
+     *     requiredFileSystemLocationNamesToAdd?: list<string>|null,
+     *     requiredFileSystemLocationNamesToRemove?: list<string>|null,
+     *     allowedStorageProfileIdsToAdd?: list<string>|null,
+     *     allowedStorageProfileIdsToRemove?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

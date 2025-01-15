@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\ListCollaborationTrainedModelExpor
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $statusCode
- * @property string $message
+ * @property string|null $statusCode
+ * @property string|null $message
  */
 class StatusDetails extends Shape
 {
     /**
      * @param array{
-     *     statusCode?: string,
-     *     message?: string
+     *     statusCode?: string|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ComponentId
- * @property string $ComponentType
- * @property NetworkHeader $Egress
- * @property NetworkHeader $Ingress
+ * @property string|null $ComponentId
+ * @property string|null $ComponentType
+ * @property NetworkHeader|null $Egress
+ * @property NetworkHeader|null $Ingress
  */
 class NetworkPathComponent extends Shape
 {
     /**
      * @param array{
-     *     ComponentId?: string,
-     *     ComponentType?: string,
-     *     Egress?: NetworkHeader,
-     *     Ingress?: NetworkHeader
+     *     ComponentId?: string|null,
+     *     ComponentType?: string|null,
+     *     Egress?: NetworkHeader|null,
+     *     Ingress?: NetworkHeader|null
      * } $args
      */
     public function __construct(array $args = [])

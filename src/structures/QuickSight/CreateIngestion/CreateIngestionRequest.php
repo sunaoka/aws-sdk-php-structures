@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DataSetId
  * @property string $IngestionId
  * @property string $AwsAccountId
- * @property 'INCREMENTAL_REFRESH'|'FULL_REFRESH' $IngestionType
+ * @property 'INCREMENTAL_REFRESH'|'FULL_REFRESH'|null $IngestionType
  */
 class CreateIngestionRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateIngestionRequest extends Request
      *     DataSetId: string,
      *     IngestionId: string,
      *     AwsAccountId: string,
-     *     IngestionType?: 'INCREMENTAL_REFRESH'|'FULL_REFRESH'
+     *     IngestionType?: 'INCREMENTAL_REFRESH'|'FULL_REFRESH'|null
      * } $args
      */
     public function __construct(array $args)

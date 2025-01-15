@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AnomalySubscription> $AnomalySubscriptions
- * @property string $NextPageToken
+ * @property string|null $NextPageToken
  */
 class GetAnomalySubscriptionsResponse extends Response
 {

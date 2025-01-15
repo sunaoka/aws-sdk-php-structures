@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $apiId
  * @property string $id
- * @property string $description
- * @property int $expires
+ * @property string|null $description
+ * @property int|null $expires
  */
 class UpdateApiKeyRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateApiKeyRequest extends Request
      * @param array{
      *     apiId: string,
      *     id: string,
-     *     description?: string,
-     *     expires?: int
+     *     description?: string|null,
+     *     expires?: int|null
      * } $args
      */
     public function __construct(array $args)

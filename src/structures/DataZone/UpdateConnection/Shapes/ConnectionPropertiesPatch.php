@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AthenaPropertiesPatch $athenaProperties
- * @property GluePropertiesPatch $glueProperties
- * @property IamPropertiesPatch $iamProperties
- * @property RedshiftPropertiesPatch $redshiftProperties
- * @property SparkEmrPropertiesPatch $sparkEmrProperties
+ * @property AthenaPropertiesPatch|null $athenaProperties
+ * @property GluePropertiesPatch|null $glueProperties
+ * @property IamPropertiesPatch|null $iamProperties
+ * @property RedshiftPropertiesPatch|null $redshiftProperties
+ * @property SparkEmrPropertiesPatch|null $sparkEmrProperties
  */
 class ConnectionPropertiesPatch extends Shape
 {
     /**
      * @param array{
-     *     athenaProperties?: AthenaPropertiesPatch,
-     *     glueProperties?: GluePropertiesPatch,
-     *     iamProperties?: IamPropertiesPatch,
-     *     redshiftProperties?: RedshiftPropertiesPatch,
-     *     sparkEmrProperties?: SparkEmrPropertiesPatch
+     *     athenaProperties?: AthenaPropertiesPatch|null,
+     *     glueProperties?: GluePropertiesPatch|null,
+     *     iamProperties?: IamPropertiesPatch|null,
+     *     redshiftProperties?: RedshiftPropertiesPatch|null,
+     *     sparkEmrProperties?: SparkEmrPropertiesPatch|null
      * } $args
      */
     public function __construct(array $args = [])

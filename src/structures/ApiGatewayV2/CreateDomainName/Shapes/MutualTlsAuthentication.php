@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\CreateDomainName\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TruststoreUri
- * @property string $TruststoreVersion
- * @property list<string> $TruststoreWarnings
+ * @property string|null $TruststoreUri
+ * @property string|null $TruststoreVersion
+ * @property list<string>|null $TruststoreWarnings
  */
 class MutualTlsAuthentication extends Shape
 {
     /**
      * @param array{
-     *     TruststoreUri?: string,
-     *     TruststoreVersion?: string,
-     *     TruststoreWarnings?: list<string>
+     *     TruststoreUri?: string|null,
+     *     TruststoreVersion?: string|null,
+     *     TruststoreWarnings?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

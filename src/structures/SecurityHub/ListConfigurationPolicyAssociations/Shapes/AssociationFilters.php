@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\ListConfigurationPolicyAssociations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConfigurationPolicyId
- * @property 'INHERITED'|'APPLIED' $AssociationType
- * @property 'PENDING'|'SUCCESS'|'FAILED' $AssociationStatus
+ * @property string|null $ConfigurationPolicyId
+ * @property 'INHERITED'|'APPLIED'|null $AssociationType
+ * @property 'PENDING'|'SUCCESS'|'FAILED'|null $AssociationStatus
  */
 class AssociationFilters extends Shape
 {
     /**
      * @param array{
-     *     ConfigurationPolicyId?: string,
-     *     AssociationType?: 'INHERITED'|'APPLIED',
-     *     AssociationStatus?: 'PENDING'|'SUCCESS'|'FAILED'
+     *     ConfigurationPolicyId?: string|null,
+     *     AssociationType?: 'INHERITED'|'APPLIED'|null,
+     *     AssociationStatus?: 'PENDING'|'SUCCESS'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationCon
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\ReplicationConfig> $ReplicationConfigs
+ * @property string|null $Marker
+ * @property list<Shapes\ReplicationConfig>|null $ReplicationConfigs
  */
 class DescribeReplicationConfigsResponse extends Response
 {

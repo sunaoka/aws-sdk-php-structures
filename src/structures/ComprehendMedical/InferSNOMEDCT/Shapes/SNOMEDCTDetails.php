@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComprehendMedical\InferSNOMEDCT\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Edition
- * @property string $Language
- * @property string $VersionDate
+ * @property string|null $Edition
+ * @property string|null $Language
+ * @property string|null $VersionDate
  */
 class SNOMEDCTDetails extends Shape
 {
     /**
      * @param array{
-     *     Edition?: string,
-     *     Language?: string,
-     *     VersionDate?: string
+     *     Edition?: string|null,
+     *     Language?: string|null,
+     *     VersionDate?: string|null
      * } $args
      */
     public function __construct(array $args = [])

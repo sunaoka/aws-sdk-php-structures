@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Glue\GetDataQualityRulesetEvaluationRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RunId
- * @property Shapes\DataSource $DataSource
- * @property string $Role
- * @property int $NumberOfWorkers
- * @property int<1, max> $Timeout
- * @property Shapes\DataQualityEvaluationRunAdditionalRunOptions $AdditionalRunOptions
- * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT' $Status
- * @property string $ErrorString
- * @property \Aws\Api\DateTimeResult $StartedOn
- * @property \Aws\Api\DateTimeResult $LastModifiedOn
- * @property \Aws\Api\DateTimeResult $CompletedOn
- * @property int $ExecutionTime
- * @property list<string> $RulesetNames
- * @property list<string> $ResultIds
- * @property array<string, Shapes\DataSource> $AdditionalDataSources
+ * @property string|null $RunId
+ * @property Shapes\DataSource|null $DataSource
+ * @property string|null $Role
+ * @property int|null $NumberOfWorkers
+ * @property int<1, max>|null $Timeout
+ * @property Shapes\DataQualityEvaluationRunAdditionalRunOptions|null $AdditionalRunOptions
+ * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|null $Status
+ * @property string|null $ErrorString
+ * @property \Aws\Api\DateTimeResult|null $StartedOn
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedOn
+ * @property \Aws\Api\DateTimeResult|null $CompletedOn
+ * @property int|null $ExecutionTime
+ * @property list<string>|null $RulesetNames
+ * @property list<string>|null $ResultIds
+ * @property array<string, Shapes\DataSource>|null $AdditionalDataSources
  */
 class GetDataQualityRulesetEvaluationRunResponse extends Response
 {

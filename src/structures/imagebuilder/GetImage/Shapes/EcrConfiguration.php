@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repositoryName
- * @property list<string> $containerTags
+ * @property string|null $repositoryName
+ * @property list<string>|null $containerTags
  */
 class EcrConfiguration extends Shape
 {
     /**
      * @param array{
-     *     repositoryName?: string,
-     *     containerTags?: list<string>
+     *     repositoryName?: string|null,
+     *     containerTags?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

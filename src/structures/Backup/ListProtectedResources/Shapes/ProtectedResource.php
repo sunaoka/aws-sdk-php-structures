@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Backup\ListProtectedResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceArn
- * @property string $ResourceType
- * @property \Aws\Api\DateTimeResult $LastBackupTime
- * @property string $ResourceName
- * @property string $LastBackupVaultArn
- * @property string $LastRecoveryPointArn
+ * @property string|null $ResourceArn
+ * @property string|null $ResourceType
+ * @property \Aws\Api\DateTimeResult|null $LastBackupTime
+ * @property string|null $ResourceName
+ * @property string|null $LastBackupVaultArn
+ * @property string|null $LastRecoveryPointArn
  */
 class ProtectedResource extends Shape
 {
     /**
      * @param array{
-     *     ResourceArn?: string,
-     *     ResourceType?: string,
-     *     LastBackupTime?: \Aws\Api\DateTimeResult,
-     *     ResourceName?: string,
-     *     LastBackupVaultArn?: string,
-     *     LastRecoveryPointArn?: string
+     *     ResourceArn?: string|null,
+     *     ResourceType?: string|null,
+     *     LastBackupTime?: \Aws\Api\DateTimeResult|null,
+     *     ResourceName?: string|null,
+     *     LastBackupVaultArn?: string|null,
+     *     LastRecoveryPointArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\LicenseManager\GetServiceSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $S3BucketArn
- * @property string $SnsTopicArn
- * @property Shapes\OrganizationConfiguration $OrganizationConfiguration
- * @property bool $EnableCrossAccountsDiscovery
- * @property string $LicenseManagerResourceShareArn
+ * @property string|null $S3BucketArn
+ * @property string|null $SnsTopicArn
+ * @property Shapes\OrganizationConfiguration|null $OrganizationConfiguration
+ * @property bool|null $EnableCrossAccountsDiscovery
+ * @property string|null $LicenseManagerResourceShareArn
  */
 class GetServiceSettingsResponse extends Response
 {

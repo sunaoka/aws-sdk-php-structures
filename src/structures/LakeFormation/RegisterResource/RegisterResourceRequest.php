@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceArn
- * @property bool $UseServiceLinkedRole
- * @property string $RoleArn
- * @property bool $WithFederation
- * @property bool $HybridAccessEnabled
+ * @property bool|null $UseServiceLinkedRole
+ * @property string|null $RoleArn
+ * @property bool|null $WithFederation
+ * @property bool|null $HybridAccessEnabled
  */
 class RegisterResourceRequest extends Request
 {
     /**
      * @param array{
      *     ResourceArn: string,
-     *     UseServiceLinkedRole?: bool,
-     *     RoleArn?: string,
-     *     WithFederation?: bool,
-     *     HybridAccessEnabled?: bool
+     *     UseServiceLinkedRole?: bool|null,
+     *     RoleArn?: string|null,
+     *     WithFederation?: bool|null,
+     *     HybridAccessEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

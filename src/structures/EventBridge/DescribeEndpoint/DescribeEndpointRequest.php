@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $HomeRegion
+ * @property string|null $HomeRegion
  */
 class DescribeEndpointRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     HomeRegion?: string
+     *     HomeRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

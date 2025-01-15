@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket' $resourceType
  * @property string $resourceName
  * @property 'dualstack'|'ipv4'|'ipv6' $ipAddressType
- * @property bool $acceptBundleUpdate
+ * @property bool|null $acceptBundleUpdate
  */
 class SetIpAddressTypeRequest extends Request
 {
@@ -17,7 +17,7 @@ class SetIpAddressTypeRequest extends Request
      *     resourceType: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket',
      *     resourceName: string,
      *     ipAddressType: 'dualstack'|'ipv4'|'ipv6',
-     *     acceptBundleUpdate?: bool
+     *     acceptBundleUpdate?: bool|null
      * } $args
      */
     public function __construct(array $args)

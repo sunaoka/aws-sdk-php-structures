@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $TargetObjectiveMetricValue
- * @property BestObjectiveNotImproving $BestObjectiveNotImproving
- * @property ConvergenceDetected $ConvergenceDetected
+ * @property float|null $TargetObjectiveMetricValue
+ * @property BestObjectiveNotImproving|null $BestObjectiveNotImproving
+ * @property ConvergenceDetected|null $ConvergenceDetected
  */
 class TuningJobCompletionCriteria extends Shape
 {
     /**
      * @param array{
-     *     TargetObjectiveMetricValue?: float,
-     *     BestObjectiveNotImproving?: BestObjectiveNotImproving,
-     *     ConvergenceDetected?: ConvergenceDetected
+     *     TargetObjectiveMetricValue?: float|null,
+     *     BestObjectiveNotImproving?: BestObjectiveNotImproving|null,
+     *     ConvergenceDetected?: ConvergenceDetected|null
      * } $args
      */
     public function __construct(array $args = [])

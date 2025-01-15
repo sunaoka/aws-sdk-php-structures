@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterIdentifier
- * @property string $ScheduleIdentifier
- * @property bool $DisassociateSchedule
+ * @property string|null $ScheduleIdentifier
+ * @property bool|null $DisassociateSchedule
  */
 class ModifyClusterSnapshotScheduleRequest extends Request
 {
     /**
      * @param array{
      *     ClusterIdentifier: string,
-     *     ScheduleIdentifier?: string,
-     *     DisassociateSchedule?: bool
+     *     ScheduleIdentifier?: string|null,
+     *     DisassociateSchedule?: bool|null
      * } $args
      */
     public function __construct(array $args)

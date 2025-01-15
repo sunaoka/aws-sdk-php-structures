@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Namespace
  * @property string $MetricName
- * @property list<MetricDimension> $Dimensions
+ * @property list<MetricDimension>|null $Dimensions
  */
 class Metric extends Shape
 {
@@ -15,7 +15,7 @@ class Metric extends Shape
      * @param array{
      *     Namespace: string,
      *     MetricName: string,
-     *     Dimensions?: list<MetricDimension>
+     *     Dimensions?: list<MetricDimension>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\CreateDeploymentGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TERMINATE'|'KEEP_ALIVE' $action
- * @property int $terminationWaitTimeInMinutes
+ * @property 'TERMINATE'|'KEEP_ALIVE'|null $action
+ * @property int|null $terminationWaitTimeInMinutes
  */
 class BlueInstanceTerminationOption extends Shape
 {
     /**
      * @param array{
-     *     action?: 'TERMINATE'|'KEEP_ALIVE',
-     *     terminationWaitTimeInMinutes?: int
+     *     action?: 'TERMINATE'|'KEEP_ALIVE'|null,
+     *     terminationWaitTimeInMinutes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

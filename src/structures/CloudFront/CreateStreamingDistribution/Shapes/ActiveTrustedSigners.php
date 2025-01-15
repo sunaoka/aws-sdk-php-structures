@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $Enabled
  * @property int $Quantity
- * @property list<Signer> $Items
+ * @property list<Signer>|null $Items
  */
 class ActiveTrustedSigners extends Shape
 {
@@ -15,7 +15,7 @@ class ActiveTrustedSigners extends Shape
      * @param array{
      *     Enabled: bool,
      *     Quantity: int,
-     *     Items?: list<Signer>
+     *     Items?: list<Signer>|null
      * } $args
      */
     public function __construct(array $args)

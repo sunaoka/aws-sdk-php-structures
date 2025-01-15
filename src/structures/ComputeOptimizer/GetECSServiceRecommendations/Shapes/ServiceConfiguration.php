@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $memory
- * @property int $cpu
- * @property list<ContainerConfiguration> $containerConfigurations
- * @property 'TargetTrackingScalingCpu'|'TargetTrackingScalingMemory' $autoScalingConfiguration
- * @property string $taskDefinitionArn
+ * @property int|null $memory
+ * @property int|null $cpu
+ * @property list<ContainerConfiguration>|null $containerConfigurations
+ * @property 'TargetTrackingScalingCpu'|'TargetTrackingScalingMemory'|null $autoScalingConfiguration
+ * @property string|null $taskDefinitionArn
  */
 class ServiceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     memory?: int,
-     *     cpu?: int,
-     *     containerConfigurations?: list<ContainerConfiguration>,
-     *     autoScalingConfiguration?: 'TargetTrackingScalingCpu'|'TargetTrackingScalingMemory',
-     *     taskDefinitionArn?: string
+     *     memory?: int|null,
+     *     cpu?: int|null,
+     *     containerConfigurations?: list<ContainerConfiguration>|null,
+     *     autoScalingConfiguration?: 'TargetTrackingScalingCpu'|'TargetTrackingScalingMemory'|null,
+     *     taskDefinitionArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

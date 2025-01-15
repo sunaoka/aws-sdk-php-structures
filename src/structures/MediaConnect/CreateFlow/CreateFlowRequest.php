@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MediaConnect\CreateFlow;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AvailabilityZone
- * @property list<Shapes\GrantEntitlementRequest> $Entitlements
- * @property list<Shapes\AddMediaStreamRequest> $MediaStreams
+ * @property string|null $AvailabilityZone
+ * @property list<Shapes\GrantEntitlementRequest>|null $Entitlements
+ * @property list<Shapes\AddMediaStreamRequest>|null $MediaStreams
  * @property string $Name
- * @property list<Shapes\AddOutputRequest> $Outputs
- * @property Shapes\SetSourceRequest $Source
- * @property Shapes\FailoverConfig $SourceFailoverConfig
- * @property list<Shapes\SetSourceRequest> $Sources
- * @property list<Shapes\VpcInterfaceRequest> $VpcInterfaces
- * @property Shapes\AddMaintenance $Maintenance
- * @property Shapes\MonitoringConfig $SourceMonitoringConfig
+ * @property list<Shapes\AddOutputRequest>|null $Outputs
+ * @property Shapes\SetSourceRequest|null $Source
+ * @property Shapes\FailoverConfig|null $SourceFailoverConfig
+ * @property list<Shapes\SetSourceRequest>|null $Sources
+ * @property list<Shapes\VpcInterfaceRequest>|null $VpcInterfaces
+ * @property Shapes\AddMaintenance|null $Maintenance
+ * @property Shapes\MonitoringConfig|null $SourceMonitoringConfig
  */
 class CreateFlowRequest extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     Entitlements?: list<Shapes\GrantEntitlementRequest>,
-     *     MediaStreams?: list<Shapes\AddMediaStreamRequest>,
+     *     AvailabilityZone?: string|null,
+     *     Entitlements?: list<Shapes\GrantEntitlementRequest>|null,
+     *     MediaStreams?: list<Shapes\AddMediaStreamRequest>|null,
      *     Name: string,
-     *     Outputs?: list<Shapes\AddOutputRequest>,
-     *     Source?: Shapes\SetSourceRequest,
-     *     SourceFailoverConfig?: Shapes\FailoverConfig,
-     *     Sources?: list<Shapes\SetSourceRequest>,
-     *     VpcInterfaces?: list<Shapes\VpcInterfaceRequest>,
-     *     Maintenance?: Shapes\AddMaintenance,
-     *     SourceMonitoringConfig?: Shapes\MonitoringConfig
+     *     Outputs?: list<Shapes\AddOutputRequest>|null,
+     *     Source?: Shapes\SetSourceRequest|null,
+     *     SourceFailoverConfig?: Shapes\FailoverConfig|null,
+     *     Sources?: list<Shapes\SetSourceRequest>|null,
+     *     VpcInterfaces?: list<Shapes\VpcInterfaceRequest>|null,
+     *     Maintenance?: Shapes\AddMaintenance|null,
+     *     SourceMonitoringConfig?: Shapes\MonitoringConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FIS\GetTargetResourceType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resourceType
- * @property string $description
- * @property array<string, TargetResourceTypeParameter> $parameters
+ * @property string|null $resourceType
+ * @property string|null $description
+ * @property array<string, TargetResourceTypeParameter>|null $parameters
  */
 class TargetResourceType extends Shape
 {
     /**
      * @param array{
-     *     resourceType?: string,
-     *     description?: string,
-     *     parameters?: array<string, TargetResourceTypeParameter>
+     *     resourceType?: string|null,
+     *     description?: string|null,
+     *     parameters?: array<string, TargetResourceTypeParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Kms\DescribeKey\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Region
+ * @property string|null $Arn
+ * @property string|null $Region
  */
 class MultiRegionKey extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Region?: string
+     *     Arn?: string|null,
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

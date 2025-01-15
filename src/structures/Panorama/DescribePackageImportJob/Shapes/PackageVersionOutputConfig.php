@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Panorama\DescribePackageImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $MarkLatest
+ * @property bool|null $MarkLatest
  * @property string $PackageName
  * @property string $PackageVersion
  */
@@ -13,7 +13,7 @@ class PackageVersionOutputConfig extends Shape
 {
     /**
      * @param array{
-     *     MarkLatest?: bool,
+     *     MarkLatest?: bool|null,
      *     PackageName: string,
      *     PackageVersion: string
      * } $args

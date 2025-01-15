@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\UpdateReplicationSetAction> $actions
  * @property string $arn
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class UpdateReplicationSetRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateReplicationSetRequest extends Request
      * @param array{
      *     actions: list<Shapes\UpdateReplicationSetAction>,
      *     arn: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

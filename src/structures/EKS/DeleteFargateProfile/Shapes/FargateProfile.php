@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\EKS\DeleteFargateProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fargateProfileName
- * @property string $fargateProfileArn
- * @property string $clusterName
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $podExecutionRoleArn
- * @property list<string> $subnets
- * @property list<FargateProfileSelector> $selectors
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED' $status
- * @property array<string, string> $tags
- * @property FargateProfileHealth $health
+ * @property string|null $fargateProfileName
+ * @property string|null $fargateProfileArn
+ * @property string|null $clusterName
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $podExecutionRoleArn
+ * @property list<string>|null $subnets
+ * @property list<FargateProfileSelector>|null $selectors
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|null $status
+ * @property array<string, string>|null $tags
+ * @property FargateProfileHealth|null $health
  */
 class FargateProfile extends Shape
 {
     /**
      * @param array{
-     *     fargateProfileName?: string,
-     *     fargateProfileArn?: string,
-     *     clusterName?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     podExecutionRoleArn?: string,
-     *     subnets?: list<string>,
-     *     selectors?: list<FargateProfileSelector>,
-     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED',
-     *     tags?: array<string, string>,
-     *     health?: FargateProfileHealth
+     *     fargateProfileName?: string|null,
+     *     fargateProfileArn?: string|null,
+     *     clusterName?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     podExecutionRoleArn?: string|null,
+     *     subnets?: list<string>|null,
+     *     selectors?: list<FargateProfileSelector>|null,
+     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|null,
+     *     tags?: array<string, string>|null,
+     *     health?: FargateProfileHealth|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property bool $force
+ * @property bool|null $force
  */
 class DeleteVariantStoreRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

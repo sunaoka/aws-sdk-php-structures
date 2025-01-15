@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $lowerInclusive
- * @property double $upperInclusive
+ * @property double|null $lowerInclusive
+ * @property double|null $upperInclusive
  */
 class NumberFilter extends Shape
 {
     /**
      * @param array{
-     *     lowerInclusive?: double,
-     *     upperInclusive?: double
+     *     lowerInclusive?: double|null,
+     *     upperInclusive?: double|null
      * } $args
      */
     public function __construct(array $args = [])

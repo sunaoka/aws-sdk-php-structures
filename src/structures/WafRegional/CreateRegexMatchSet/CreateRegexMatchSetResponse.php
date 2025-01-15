@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WafRegional\CreateRegexMatchSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RegexMatchSet $RegexMatchSet
- * @property string $ChangeToken
+ * @property Shapes\RegexMatchSet|null $RegexMatchSet
+ * @property string|null $ChangeToken
  */
 class CreateRegexMatchSetResponse extends Response
 {

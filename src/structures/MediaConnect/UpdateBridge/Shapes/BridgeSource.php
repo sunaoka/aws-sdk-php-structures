@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateBridge\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BridgeFlowSource $FlowSource
- * @property BridgeNetworkSource $NetworkSource
+ * @property BridgeFlowSource|null $FlowSource
+ * @property BridgeNetworkSource|null $NetworkSource
  */
 class BridgeSource extends Shape
 {
     /**
      * @param array{
-     *     FlowSource?: BridgeFlowSource,
-     *     NetworkSource?: BridgeNetworkSource
+     *     FlowSource?: BridgeFlowSource|null,
+     *     NetworkSource?: BridgeNetworkSource|null
      * } $args
      */
     public function __construct(array $args = [])

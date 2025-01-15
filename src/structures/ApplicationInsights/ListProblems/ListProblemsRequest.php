@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\ListProblems;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountId
- * @property string $ResourceGroupName
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property int<1, 40> $MaxResults
- * @property string $NextToken
- * @property string $ComponentName
- * @property 'IGNORED'|'VISIBLE' $Visibility
+ * @property string|null $AccountId
+ * @property string|null $ResourceGroupName
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property int<1, 40>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $ComponentName
+ * @property 'IGNORED'|'VISIBLE'|null $Visibility
  */
 class ListProblemsRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     ResourceGroupName?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int<1, 40>,
-     *     NextToken?: string,
-     *     ComponentName?: string,
-     *     Visibility?: 'IGNORED'|'VISIBLE'
+     *     AccountId?: string|null,
+     *     ResourceGroupName?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     MaxResults?: int<1, 40>|null,
+     *     NextToken?: string|null,
+     *     ComponentName?: string|null,
+     *     Visibility?: 'IGNORED'|'VISIBLE'|null
      * } $args
      */
     public function __construct(array $args = [])

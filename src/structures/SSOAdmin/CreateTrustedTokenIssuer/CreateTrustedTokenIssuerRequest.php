@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\CreateTrustedTokenIssuer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $InstanceArn
  * @property string $Name
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\TrustedTokenIssuerConfiguration $TrustedTokenIssuerConfiguration
  * @property 'OIDC_JWT' $TrustedTokenIssuerType
  */
@@ -16,10 +16,10 @@ class CreateTrustedTokenIssuerRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     InstanceArn: string,
      *     Name: string,
-     *     Tags?: list<Shapes\Tag>,
+     *     Tags?: list<Shapes\Tag>|null,
      *     TrustedTokenIssuerConfiguration: Shapes\TrustedTokenIssuerConfiguration,
      *     TrustedTokenIssuerType: 'OIDC_JWT'
      * } $args

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $environmentId
  * @property string $scalingGroupName
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteKxScalingGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteKxScalingGroupRequest extends Request
      * @param array{
      *     environmentId: string,
      *     scalingGroupName: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

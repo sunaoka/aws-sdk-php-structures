@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property Shapes\EmailAddressSearchCriteria $SearchCriteria
- * @property Shapes\EmailAddressSearchFilter $SearchFilter
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property Shapes\EmailAddressSearchCriteria|null $SearchCriteria
+ * @property Shapes\EmailAddressSearchFilter|null $SearchFilter
  */
 class SearchEmailAddressesRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     SearchCriteria?: Shapes\EmailAddressSearchCriteria,
-     *     SearchFilter?: Shapes\EmailAddressSearchFilter
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     SearchCriteria?: Shapes\EmailAddressSearchCriteria|null,
+     *     SearchFilter?: Shapes\EmailAddressSearchFilter|null
      * } $args
      */
     public function __construct(array $args)

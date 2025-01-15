@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\GetConsoleScreenshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $InstanceId
- * @property bool $WakeUp
+ * @property bool|null $WakeUp
  */
 class GetConsoleScreenshotRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InstanceId: string,
-     *     WakeUp?: bool
+     *     WakeUp?: bool|null
      * } $args
      */
     public function __construct(array $args)

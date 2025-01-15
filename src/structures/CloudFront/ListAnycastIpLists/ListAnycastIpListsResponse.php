@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListAnycastIpLists;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AnycastIpListCollection $AnycastIpLists
+ * @property Shapes\AnycastIpListCollection|null $AnycastIpLists
  */
 class ListAnycastIpListsResponse extends Response
 {

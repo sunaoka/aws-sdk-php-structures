@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Health\DescribeEntityAggregatesForOrganization\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eventArn
- * @property int $count
- * @property array<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED', int> $statuses
- * @property list<AccountEntityAggregate> $accounts
+ * @property string|null $eventArn
+ * @property int|null $count
+ * @property array<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED', int>|null $statuses
+ * @property list<AccountEntityAggregate>|null $accounts
  */
 class OrganizationEntityAggregate extends Shape
 {
     /**
      * @param array{
-     *     eventArn?: string,
-     *     count?: int,
-     *     statuses?: array<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED', int>,
-     *     accounts?: list<AccountEntityAggregate>
+     *     eventArn?: string|null,
+     *     count?: int|null,
+     *     statuses?: array<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED', int>|null,
+     *     accounts?: list<AccountEntityAggregate>|null
      * } $args
      */
     public function __construct(array $args = [])

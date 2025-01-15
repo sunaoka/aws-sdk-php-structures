@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\ModifyServerlessCache\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Address
- * @property int $Port
+ * @property string|null $Address
+ * @property int|null $Port
  */
 class Endpoint extends Shape
 {
     /**
      * @param array{
-     *     Address?: string,
-     *     Port?: int
+     *     Address?: string|null,
+     *     Port?: int|null
      * } $args
      */
     public function __construct(array $args = [])

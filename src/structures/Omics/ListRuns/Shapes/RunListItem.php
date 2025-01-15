@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Omics\ListRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $id
- * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED' $status
- * @property string $workflowId
- * @property string $name
- * @property int<0, 100000> $priority
- * @property int<0, 100000> $storageCapacity
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $stopTime
- * @property 'STATIC'|'DYNAMIC' $storageType
+ * @property string|null $arn
+ * @property string|null $id
+ * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED'|null $status
+ * @property string|null $workflowId
+ * @property string|null $name
+ * @property int<0, 100000>|null $priority
+ * @property int<0, 100000>|null $storageCapacity
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $stopTime
+ * @property 'STATIC'|'DYNAMIC'|null $storageType
  */
 class RunListItem extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     id?: string,
-     *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED',
-     *     workflowId?: string,
-     *     name?: string,
-     *     priority?: int<0, 100000>,
-     *     storageCapacity?: int<0, 100000>,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     stopTime?: \Aws\Api\DateTimeResult,
-     *     storageType?: 'STATIC'|'DYNAMIC'
+     *     arn?: string|null,
+     *     id?: string|null,
+     *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED'|null,
+     *     workflowId?: string|null,
+     *     name?: string|null,
+     *     priority?: int<0, 100000>|null,
+     *     storageCapacity?: int<0, 100000>|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     stopTime?: \Aws\Api\DateTimeResult|null,
+     *     storageType?: 'STATIC'|'DYNAMIC'|null
      * } $args
      */
     public function __construct(array $args = [])

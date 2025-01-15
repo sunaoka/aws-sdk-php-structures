@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $After
- * @property int $Before
+ * @property int|null $Before
  */
 class TimeRange extends Shape
 {
     /**
      * @param array{
      *     After: int,
-     *     Before?: int
+     *     Before?: int|null
      * } $args
      */
     public function __construct(array $args)

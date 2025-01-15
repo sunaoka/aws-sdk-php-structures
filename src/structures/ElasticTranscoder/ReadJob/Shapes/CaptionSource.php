@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ReadJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $Language
- * @property string $TimeOffset
- * @property string $Label
- * @property Encryption $Encryption
+ * @property string|null $Key
+ * @property string|null $Language
+ * @property string|null $TimeOffset
+ * @property string|null $Label
+ * @property Encryption|null $Encryption
  */
 class CaptionSource extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Language?: string,
-     *     TimeOffset?: string,
-     *     Label?: string,
-     *     Encryption?: Encryption
+     *     Key?: string|null,
+     *     Language?: string|null,
+     *     TimeOffset?: string|null,
+     *     Label?: string|null,
+     *     Encryption?: Encryption|null
      * } $args
      */
     public function __construct(array $args = [])

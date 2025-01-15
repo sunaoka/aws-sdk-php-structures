@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TopicArn
  * @property string $AttributeName
- * @property string $AttributeValue
+ * @property string|null $AttributeValue
  */
 class SetTopicAttributesRequest extends Request
 {
@@ -15,7 +15,7 @@ class SetTopicAttributesRequest extends Request
      * @param array{
      *     TopicArn: string,
      *     AttributeName: string,
-     *     AttributeValue?: string
+     *     AttributeValue?: string|null
      * } $args
      */
     public function __construct(array $args)

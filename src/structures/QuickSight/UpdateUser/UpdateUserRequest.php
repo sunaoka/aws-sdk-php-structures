@@ -10,11 +10,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Namespace
  * @property string $Email
  * @property 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|'ADMIN_PRO'|'AUTHOR_PRO'|'READER_PRO' $Role
- * @property string $CustomPermissionsName
- * @property bool $UnapplyCustomPermissions
- * @property string $ExternalLoginFederationProviderType
- * @property string $CustomFederationProviderUrl
- * @property string $ExternalLoginId
+ * @property string|null $CustomPermissionsName
+ * @property bool|null $UnapplyCustomPermissions
+ * @property string|null $ExternalLoginFederationProviderType
+ * @property string|null $CustomFederationProviderUrl
+ * @property string|null $ExternalLoginId
  */
 class UpdateUserRequest extends Request
 {
@@ -25,11 +25,11 @@ class UpdateUserRequest extends Request
      *     Namespace: string,
      *     Email: string,
      *     Role: 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|'ADMIN_PRO'|'AUTHOR_PRO'|'READER_PRO',
-     *     CustomPermissionsName?: string,
-     *     UnapplyCustomPermissions?: bool,
-     *     ExternalLoginFederationProviderType?: string,
-     *     CustomFederationProviderUrl?: string,
-     *     ExternalLoginId?: string
+     *     CustomPermissionsName?: string|null,
+     *     UnapplyCustomPermissions?: bool|null,
+     *     ExternalLoginFederationProviderType?: string|null,
+     *     CustomFederationProviderUrl?: string|null,
+     *     ExternalLoginId?: string|null
      * } $args
      */
     public function __construct(array $args)

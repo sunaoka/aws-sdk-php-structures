@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetMLDataProcessingJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property string $status
- * @property string $outputLocation
- * @property string $failureReason
- * @property string $cloudwatchLogUrl
+ * @property string|null $name
+ * @property string|null $arn
+ * @property string|null $status
+ * @property string|null $outputLocation
+ * @property string|null $failureReason
+ * @property string|null $cloudwatchLogUrl
  */
 class MlResourceDefinition extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     status?: string,
-     *     outputLocation?: string,
-     *     failureReason?: string,
-     *     cloudwatchLogUrl?: string
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     status?: string|null,
+     *     outputLocation?: string|null,
+     *     failureReason?: string|null,
+     *     cloudwatchLogUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

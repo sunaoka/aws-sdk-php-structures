@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $NamedQueryId
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $QueryString
  */
 class UpdateNamedQueryRequest extends Request
@@ -16,7 +16,7 @@ class UpdateNamedQueryRequest extends Request
      * @param array{
      *     NamedQueryId: string,
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     QueryString: string
      * } $args
      */

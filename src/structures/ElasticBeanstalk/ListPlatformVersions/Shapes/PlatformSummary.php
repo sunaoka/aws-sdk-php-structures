@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ListPlatformVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlatformArn
- * @property string $PlatformOwner
- * @property 'Creating'|'Failed'|'Ready'|'Deleting'|'Deleted' $PlatformStatus
- * @property string $PlatformCategory
- * @property string $OperatingSystemName
- * @property string $OperatingSystemVersion
- * @property list<string> $SupportedTierList
- * @property list<string> $SupportedAddonList
- * @property string $PlatformLifecycleState
- * @property string $PlatformVersion
- * @property string $PlatformBranchName
- * @property string $PlatformBranchLifecycleState
+ * @property string|null $PlatformArn
+ * @property string|null $PlatformOwner
+ * @property 'Creating'|'Failed'|'Ready'|'Deleting'|'Deleted'|null $PlatformStatus
+ * @property string|null $PlatformCategory
+ * @property string|null $OperatingSystemName
+ * @property string|null $OperatingSystemVersion
+ * @property list<string>|null $SupportedTierList
+ * @property list<string>|null $SupportedAddonList
+ * @property string|null $PlatformLifecycleState
+ * @property string|null $PlatformVersion
+ * @property string|null $PlatformBranchName
+ * @property string|null $PlatformBranchLifecycleState
  */
 class PlatformSummary extends Shape
 {
     /**
      * @param array{
-     *     PlatformArn?: string,
-     *     PlatformOwner?: string,
-     *     PlatformStatus?: 'Creating'|'Failed'|'Ready'|'Deleting'|'Deleted',
-     *     PlatformCategory?: string,
-     *     OperatingSystemName?: string,
-     *     OperatingSystemVersion?: string,
-     *     SupportedTierList?: list<string>,
-     *     SupportedAddonList?: list<string>,
-     *     PlatformLifecycleState?: string,
-     *     PlatformVersion?: string,
-     *     PlatformBranchName?: string,
-     *     PlatformBranchLifecycleState?: string
+     *     PlatformArn?: string|null,
+     *     PlatformOwner?: string|null,
+     *     PlatformStatus?: 'Creating'|'Failed'|'Ready'|'Deleting'|'Deleted'|null,
+     *     PlatformCategory?: string|null,
+     *     OperatingSystemName?: string|null,
+     *     OperatingSystemVersion?: string|null,
+     *     SupportedTierList?: list<string>|null,
+     *     SupportedAddonList?: list<string>|null,
+     *     PlatformLifecycleState?: string|null,
+     *     PlatformVersion?: string|null,
+     *     PlatformBranchName?: string|null,
+     *     PlatformBranchLifecycleState?: string|null
      * } $args
      */
     public function __construct(array $args = [])

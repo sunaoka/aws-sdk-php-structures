@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\AuthorizeEndpointAccess;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterIdentifier
+ * @property string|null $ClusterIdentifier
  * @property string $Account
- * @property list<string> $VpcIds
+ * @property list<string>|null $VpcIds
  */
 class AuthorizeEndpointAccessRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterIdentifier?: string,
+     *     ClusterIdentifier?: string|null,
      *     Account: string,
-     *     VpcIds?: list<string>
+     *     VpcIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

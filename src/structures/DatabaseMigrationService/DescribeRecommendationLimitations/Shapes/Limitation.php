@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatabaseId
- * @property string $EngineName
- * @property string $Name
- * @property string $Description
- * @property string $Impact
- * @property string $Type
+ * @property string|null $DatabaseId
+ * @property string|null $EngineName
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $Impact
+ * @property string|null $Type
  */
 class Limitation extends Shape
 {
     /**
      * @param array{
-     *     DatabaseId?: string,
-     *     EngineName?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Impact?: string,
-     *     Type?: string
+     *     DatabaseId?: string|null,
+     *     EngineName?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Impact?: string|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

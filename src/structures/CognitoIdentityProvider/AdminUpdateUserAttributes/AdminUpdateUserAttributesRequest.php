@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property string $Username
  * @property list<Shapes\AttributeType> $UserAttributes
- * @property array<string, string> $ClientMetadata
+ * @property array<string, string>|null $ClientMetadata
  */
 class AdminUpdateUserAttributesRequest extends Request
 {
@@ -17,7 +17,7 @@ class AdminUpdateUserAttributesRequest extends Request
      *     UserPoolId: string,
      *     Username: string,
      *     UserAttributes: list<Shapes\AttributeType>,
-     *     ClientMetadata?: array<string, string>
+     *     ClientMetadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

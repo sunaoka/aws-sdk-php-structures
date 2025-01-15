@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $rulesPackageArns
  * @property list<Attribute> $userAttributesForFindings
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property \Aws\Api\DateTimeResult $completedAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $completedAt
  * @property \Aws\Api\DateTimeResult $stateChangedAt
  * @property bool $dataCollected
  * @property list<AssessmentRunStateChange> $stateChanges
@@ -33,8 +33,8 @@ class AssessmentRun extends Shape
      *     rulesPackageArns: list<string>,
      *     userAttributesForFindings: list<Attribute>,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     completedAt?: \Aws\Api\DateTimeResult,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     completedAt?: \Aws\Api\DateTimeResult|null,
      *     stateChangedAt: \Aws\Api\DateTimeResult,
      *     dataCollected: bool,
      *     stateChanges: list<AssessmentRunStateChange>,

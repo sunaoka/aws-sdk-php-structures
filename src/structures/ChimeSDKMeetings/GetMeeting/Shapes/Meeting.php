@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMeetings\GetMeeting\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MeetingId
- * @property string $MeetingHostId
- * @property string $ExternalMeetingId
- * @property string $MediaRegion
- * @property MediaPlacement $MediaPlacement
- * @property MeetingFeaturesConfiguration $MeetingFeatures
- * @property string $PrimaryMeetingId
- * @property list<string> $TenantIds
- * @property string $MeetingArn
+ * @property string|null $MeetingId
+ * @property string|null $MeetingHostId
+ * @property string|null $ExternalMeetingId
+ * @property string|null $MediaRegion
+ * @property MediaPlacement|null $MediaPlacement
+ * @property MeetingFeaturesConfiguration|null $MeetingFeatures
+ * @property string|null $PrimaryMeetingId
+ * @property list<string>|null $TenantIds
+ * @property string|null $MeetingArn
  */
 class Meeting extends Shape
 {
     /**
      * @param array{
-     *     MeetingId?: string,
-     *     MeetingHostId?: string,
-     *     ExternalMeetingId?: string,
-     *     MediaRegion?: string,
-     *     MediaPlacement?: MediaPlacement,
-     *     MeetingFeatures?: MeetingFeaturesConfiguration,
-     *     PrimaryMeetingId?: string,
-     *     TenantIds?: list<string>,
-     *     MeetingArn?: string
+     *     MeetingId?: string|null,
+     *     MeetingHostId?: string|null,
+     *     ExternalMeetingId?: string|null,
+     *     MediaRegion?: string|null,
+     *     MediaPlacement?: MediaPlacement|null,
+     *     MeetingFeatures?: MeetingFeaturesConfiguration|null,
+     *     PrimaryMeetingId?: string|null,
+     *     TenantIds?: list<string>|null,
+     *     MeetingArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

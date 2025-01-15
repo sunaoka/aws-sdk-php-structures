@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Alias
- * @property list<TransformOperation> $DataTransforms
+ * @property list<TransformOperation>|null $DataTransforms
  * @property LogicalTableSource $Source
  */
 class LogicalTable extends Shape
@@ -14,7 +14,7 @@ class LogicalTable extends Shape
     /**
      * @param array{
      *     Alias: string,
-     *     DataTransforms?: list<TransformOperation>,
+     *     DataTransforms?: list<TransformOperation>|null,
      *     Source: LogicalTableSource
      * } $args
      */

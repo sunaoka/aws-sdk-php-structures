@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Synthetics\GetCanary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceLocationArn
- * @property string $Handler
+ * @property string|null $SourceLocationArn
+ * @property string|null $Handler
  */
 class CanaryCodeOutput extends Shape
 {
     /**
      * @param array{
-     *     SourceLocationArn?: string,
-     *     Handler?: string
+     *     SourceLocationArn?: string|null,
+     *     Handler?: string|null
      * } $args
      */
     public function __construct(array $args = [])

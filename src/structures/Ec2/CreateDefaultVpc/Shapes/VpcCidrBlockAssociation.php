@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateDefaultVpc\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssociationId
- * @property string $CidrBlock
- * @property VpcCidrBlockState $CidrBlockState
+ * @property string|null $AssociationId
+ * @property string|null $CidrBlock
+ * @property VpcCidrBlockState|null $CidrBlockState
  */
 class VpcCidrBlockAssociation extends Shape
 {
     /**
      * @param array{
-     *     AssociationId?: string,
-     *     CidrBlock?: string,
-     *     CidrBlockState?: VpcCidrBlockState
+     *     AssociationId?: string|null,
+     *     CidrBlock?: string|null,
+     *     CidrBlockState?: VpcCidrBlockState|null
      * } $args
      */
     public function __construct(array $args = [])

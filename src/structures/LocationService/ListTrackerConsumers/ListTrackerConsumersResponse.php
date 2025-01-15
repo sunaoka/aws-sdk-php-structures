@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $ConsumerArns
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListTrackerConsumersResponse extends Response
 {

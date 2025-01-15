@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\DescribePackagingConfiguration\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CmafEncryption $Encryption
+ * @property CmafEncryption|null $Encryption
  * @property list<HlsManifest> $HlsManifests
- * @property bool $IncludeEncoderConfigurationInSegments
- * @property int $SegmentDurationSeconds
+ * @property bool|null $IncludeEncoderConfigurationInSegments
+ * @property int|null $SegmentDurationSeconds
  */
 class CmafPackage extends Shape
 {
     /**
      * @param array{
-     *     Encryption?: CmafEncryption,
+     *     Encryption?: CmafEncryption|null,
      *     HlsManifests: list<HlsManifest>,
-     *     IncludeEncoderConfigurationInSegments?: bool,
-     *     SegmentDurationSeconds?: int
+     *     IncludeEncoderConfigurationInSegments?: bool|null,
+     *     SegmentDurationSeconds?: int|null
      * } $args
      */
     public function __construct(array $args)

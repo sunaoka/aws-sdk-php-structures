@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $SiteId
- * @property string $AvailabilityZone
- * @property string $AvailabilityZoneId
- * @property array<string, string> $Tags
- * @property 'RACK'|'SERVER' $SupportedHardwareType
+ * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
+ * @property array<string, string>|null $Tags
+ * @property 'RACK'|'SERVER'|null $SupportedHardwareType
  */
 class CreateOutpostRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     SiteId: string,
-     *     AvailabilityZone?: string,
-     *     AvailabilityZoneId?: string,
-     *     Tags?: array<string, string>,
-     *     SupportedHardwareType?: 'RACK'|'SERVER'
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     SupportedHardwareType?: 'RACK'|'SERVER'|null
      * } $args
      */
     public function __construct(array $args)

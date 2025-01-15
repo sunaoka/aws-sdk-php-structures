@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CpuCredits
+ * @property string|null $CpuCredits
  */
 class CreditSpecification extends Shape
 {
     /**
-     * @param array{CpuCredits?: string} $args
+     * @param array{CpuCredits?: string|null} $args
      */
     public function __construct(array $args = [])
     {

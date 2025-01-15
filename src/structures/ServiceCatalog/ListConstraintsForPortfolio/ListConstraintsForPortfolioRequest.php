@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListConstraintsForPortfolio;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $PortfolioId
- * @property string $ProductId
- * @property int<0, 20> $PageSize
- * @property string $PageToken
+ * @property string|null $ProductId
+ * @property int<0, 20>|null $PageSize
+ * @property string|null $PageToken
  */
 class ListConstraintsForPortfolioRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     PortfolioId: string,
-     *     ProductId?: string,
-     *     PageSize?: int<0, 20>,
-     *     PageToken?: string
+     *     ProductId?: string|null,
+     *     PageSize?: int<0, 20>|null,
+     *     PageToken?: string|null
      * } $args
      */
     public function __construct(array $args)

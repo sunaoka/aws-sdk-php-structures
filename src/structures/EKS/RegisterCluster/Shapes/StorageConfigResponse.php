@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EKS\RegisterCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BlockStorage $blockStorage
+ * @property BlockStorage|null $blockStorage
  */
 class StorageConfigResponse extends Shape
 {
     /**
-     * @param array{blockStorage?: BlockStorage} $args
+     * @param array{blockStorage?: BlockStorage|null} $args
      */
     public function __construct(array $args = [])
     {

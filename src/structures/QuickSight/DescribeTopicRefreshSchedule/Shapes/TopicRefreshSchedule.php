@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $IsEnabled
  * @property bool $BasedOnSpiceSchedule
- * @property \Aws\Api\DateTimeResult $StartingAt
- * @property string $Timezone
- * @property string $RepeatAt
- * @property 'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY' $TopicScheduleType
+ * @property \Aws\Api\DateTimeResult|null $StartingAt
+ * @property string|null $Timezone
+ * @property string|null $RepeatAt
+ * @property 'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'|null $TopicScheduleType
  */
 class TopicRefreshSchedule extends Shape
 {
@@ -18,10 +18,10 @@ class TopicRefreshSchedule extends Shape
      * @param array{
      *     IsEnabled: bool,
      *     BasedOnSpiceSchedule: bool,
-     *     StartingAt?: \Aws\Api\DateTimeResult,
-     *     Timezone?: string,
-     *     RepeatAt?: string,
-     *     TopicScheduleType?: 'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'
+     *     StartingAt?: \Aws\Api\DateTimeResult|null,
+     *     Timezone?: string|null,
+     *     RepeatAt?: string|null,
+     *     TopicScheduleType?: 'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeAvailabilityZones;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ZoneNames
- * @property list<string> $ZoneIds
- * @property bool $AllAvailabilityZones
- * @property bool $DryRun
- * @property list<Shapes\Filter> $Filters
+ * @property list<string>|null $ZoneNames
+ * @property list<string>|null $ZoneIds
+ * @property bool|null $AllAvailabilityZones
+ * @property bool|null $DryRun
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeAvailabilityZonesRequest extends Request
 {
     /**
      * @param array{
-     *     ZoneNames?: list<string>,
-     *     ZoneIds?: list<string>,
-     *     AllAvailabilityZones?: bool,
-     *     DryRun?: bool,
-     *     Filters?: list<Shapes\Filter>
+     *     ZoneNames?: list<string>|null,
+     *     ZoneIds?: list<string>|null,
+     *     AllAvailabilityZones?: bool|null,
+     *     DryRun?: bool|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

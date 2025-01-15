@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\CodeCatalyst\GetProject;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $spaceName
+ * @property string|null $spaceName
  * @property string $name
- * @property string $displayName
- * @property string $description
+ * @property string|null $displayName
+ * @property string|null $description
  */
 class GetProjectResponse extends Response
 {

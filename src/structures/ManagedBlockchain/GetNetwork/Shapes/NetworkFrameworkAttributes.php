@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\GetNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NetworkFabricAttributes $Fabric
- * @property NetworkEthereumAttributes $Ethereum
+ * @property NetworkFabricAttributes|null $Fabric
+ * @property NetworkEthereumAttributes|null $Ethereum
  */
 class NetworkFrameworkAttributes extends Shape
 {
     /**
      * @param array{
-     *     Fabric?: NetworkFabricAttributes,
-     *     Ethereum?: NetworkEthereumAttributes
+     *     Fabric?: NetworkFabricAttributes|null,
+     *     Ethereum?: NetworkEthereumAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

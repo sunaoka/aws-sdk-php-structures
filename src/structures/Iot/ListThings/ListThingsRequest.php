@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Iot\ListThings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 250> $maxResults
- * @property string $attributeName
- * @property string $attributeValue
- * @property string $thingTypeName
- * @property bool $usePrefixAttributeValue
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
+ * @property string|null $attributeName
+ * @property string|null $attributeValue
+ * @property string|null $thingTypeName
+ * @property bool|null $usePrefixAttributeValue
  */
 class ListThingsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>,
-     *     attributeName?: string,
-     *     attributeValue?: string,
-     *     thingTypeName?: string,
-     *     usePrefixAttributeValue?: bool
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null,
+     *     attributeName?: string|null,
+     *     attributeValue?: string|null,
+     *     thingTypeName?: string|null,
+     *     usePrefixAttributeValue?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

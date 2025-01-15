@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property bool $DefaultKeyOnly
+ * @property bool|null $DefaultKeyOnly
  */
 class DescribeKeyRegistrationRequest extends Request
 {
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     DefaultKeyOnly?: bool
+     *     DefaultKeyOnly?: bool|null
      * } $args
      */
     public function __construct(array $args)

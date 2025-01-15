@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PoolName
- * @property list<Shapes\Tag> $Tags
- * @property 'STANDARD'|'MANAGED' $ScalingMode
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'STANDARD'|'MANAGED'|null $ScalingMode
  */
 class CreateDedicatedIpPoolRequest extends Request
 {
     /**
      * @param array{
      *     PoolName: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     ScalingMode?: 'STANDARD'|'MANAGED'
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ScalingMode?: 'STANDARD'|'MANAGED'|null
      * } $args
      */
     public function __construct(array $args)

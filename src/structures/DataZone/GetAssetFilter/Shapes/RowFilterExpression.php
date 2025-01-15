@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\DataZone\GetAssetFilter\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EqualToExpression $equalTo
- * @property GreaterThanExpression $greaterThan
- * @property GreaterThanOrEqualToExpression $greaterThanOrEqualTo
- * @property InExpression $in
- * @property IsNotNullExpression $isNotNull
- * @property IsNullExpression $isNull
- * @property LessThanExpression $lessThan
- * @property LessThanOrEqualToExpression $lessThanOrEqualTo
- * @property LikeExpression $like
- * @property NotEqualToExpression $notEqualTo
- * @property NotInExpression $notIn
- * @property NotLikeExpression $notLike
+ * @property EqualToExpression|null $equalTo
+ * @property GreaterThanExpression|null $greaterThan
+ * @property GreaterThanOrEqualToExpression|null $greaterThanOrEqualTo
+ * @property InExpression|null $in
+ * @property IsNotNullExpression|null $isNotNull
+ * @property IsNullExpression|null $isNull
+ * @property LessThanExpression|null $lessThan
+ * @property LessThanOrEqualToExpression|null $lessThanOrEqualTo
+ * @property LikeExpression|null $like
+ * @property NotEqualToExpression|null $notEqualTo
+ * @property NotInExpression|null $notIn
+ * @property NotLikeExpression|null $notLike
  */
 class RowFilterExpression extends Shape
 {
     /**
      * @param array{
-     *     equalTo?: EqualToExpression,
-     *     greaterThan?: GreaterThanExpression,
-     *     greaterThanOrEqualTo?: GreaterThanOrEqualToExpression,
-     *     in?: InExpression,
-     *     isNotNull?: IsNotNullExpression,
-     *     isNull?: IsNullExpression,
-     *     lessThan?: LessThanExpression,
-     *     lessThanOrEqualTo?: LessThanOrEqualToExpression,
-     *     like?: LikeExpression,
-     *     notEqualTo?: NotEqualToExpression,
-     *     notIn?: NotInExpression,
-     *     notLike?: NotLikeExpression
+     *     equalTo?: EqualToExpression|null,
+     *     greaterThan?: GreaterThanExpression|null,
+     *     greaterThanOrEqualTo?: GreaterThanOrEqualToExpression|null,
+     *     in?: InExpression|null,
+     *     isNotNull?: IsNotNullExpression|null,
+     *     isNull?: IsNullExpression|null,
+     *     lessThan?: LessThanExpression|null,
+     *     lessThanOrEqualTo?: LessThanOrEqualToExpression|null,
+     *     like?: LikeExpression|null,
+     *     notEqualTo?: NotEqualToExpression|null,
+     *     notIn?: NotInExpression|null,
+     *     notLike?: NotLikeExpression|null
      * } $args
      */
     public function __construct(array $args = [])

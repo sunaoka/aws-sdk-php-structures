@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutAccountPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $policyName
- * @property string $policyDocument
- * @property int<0, max> $lastUpdatedTime
- * @property 'DATA_PROTECTION_POLICY'|'SUBSCRIPTION_FILTER_POLICY'|'FIELD_INDEX_POLICY'|'TRANSFORMER_POLICY' $policyType
- * @property 'ALL' $scope
- * @property string $selectionCriteria
- * @property string $accountId
+ * @property string|null $policyName
+ * @property string|null $policyDocument
+ * @property int<0, max>|null $lastUpdatedTime
+ * @property 'DATA_PROTECTION_POLICY'|'SUBSCRIPTION_FILTER_POLICY'|'FIELD_INDEX_POLICY'|'TRANSFORMER_POLICY'|null $policyType
+ * @property 'ALL'|null $scope
+ * @property string|null $selectionCriteria
+ * @property string|null $accountId
  */
 class AccountPolicy extends Shape
 {
     /**
      * @param array{
-     *     policyName?: string,
-     *     policyDocument?: string,
-     *     lastUpdatedTime?: int<0, max>,
-     *     policyType?: 'DATA_PROTECTION_POLICY'|'SUBSCRIPTION_FILTER_POLICY'|'FIELD_INDEX_POLICY'|'TRANSFORMER_POLICY',
-     *     scope?: 'ALL',
-     *     selectionCriteria?: string,
-     *     accountId?: string
+     *     policyName?: string|null,
+     *     policyDocument?: string|null,
+     *     lastUpdatedTime?: int<0, max>|null,
+     *     policyType?: 'DATA_PROTECTION_POLICY'|'SUBSCRIPTION_FILTER_POLICY'|'FIELD_INDEX_POLICY'|'TRANSFORMER_POLICY'|null,
+     *     scope?: 'ALL'|null,
+     *     selectionCriteria?: string|null,
+     *     accountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

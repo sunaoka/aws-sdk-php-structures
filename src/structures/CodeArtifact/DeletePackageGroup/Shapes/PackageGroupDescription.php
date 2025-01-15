@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\DeletePackageGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $pattern
- * @property string $domainName
- * @property string $domainOwner
- * @property \Aws\Api\DateTimeResult $createdTime
- * @property string $contactInfo
- * @property string $description
- * @property PackageGroupOriginConfiguration $originConfiguration
- * @property PackageGroupReference $parent
+ * @property string|null $arn
+ * @property string|null $pattern
+ * @property string|null $domainName
+ * @property string|null $domainOwner
+ * @property \Aws\Api\DateTimeResult|null $createdTime
+ * @property string|null $contactInfo
+ * @property string|null $description
+ * @property PackageGroupOriginConfiguration|null $originConfiguration
+ * @property PackageGroupReference|null $parent
  */
 class PackageGroupDescription extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     pattern?: string,
-     *     domainName?: string,
-     *     domainOwner?: string,
-     *     createdTime?: \Aws\Api\DateTimeResult,
-     *     contactInfo?: string,
-     *     description?: string,
-     *     originConfiguration?: PackageGroupOriginConfiguration,
-     *     parent?: PackageGroupReference
+     *     arn?: string|null,
+     *     pattern?: string|null,
+     *     domainName?: string|null,
+     *     domainOwner?: string|null,
+     *     createdTime?: \Aws\Api\DateTimeResult|null,
+     *     contactInfo?: string|null,
+     *     description?: string|null,
+     *     originConfiguration?: PackageGroupOriginConfiguration|null,
+     *     parent?: PackageGroupReference|null
      * } $args
      */
     public function __construct(array $args = [])

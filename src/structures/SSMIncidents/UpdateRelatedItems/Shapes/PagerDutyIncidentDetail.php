@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\UpdateRelatedItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $autoResolve
+ * @property bool|null $autoResolve
  * @property string $id
- * @property string $secretId
+ * @property string|null $secretId
  */
 class PagerDutyIncidentDetail extends Shape
 {
     /**
      * @param array{
-     *     autoResolve?: bool,
+     *     autoResolve?: bool|null,
      *     id: string,
-     *     secretId?: string
+     *     secretId?: string|null
      * } $args
      */
     public function __construct(array $args)

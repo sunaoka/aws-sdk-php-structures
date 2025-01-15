@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Enabled'|'Disabled' $State
- * @property 'ContentOnly' $MuxType
+ * @property 'ContentOnly'|null $MuxType
  */
 class ContentArtifactsConfiguration extends Shape
 {
     /**
      * @param array{
      *     State: 'Enabled'|'Disabled',
-     *     MuxType?: 'ContentOnly'
+     *     MuxType?: 'ContentOnly'|null
      * } $args
      */
     public function __construct(array $args)

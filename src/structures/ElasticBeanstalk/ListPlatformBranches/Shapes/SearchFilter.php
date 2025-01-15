@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ListPlatformBranches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Attribute
- * @property string $Operator
- * @property list<string> $Values
+ * @property string|null $Attribute
+ * @property string|null $Operator
+ * @property list<string>|null $Values
  */
 class SearchFilter extends Shape
 {
     /**
      * @param array{
-     *     Attribute?: string,
-     *     Operator?: string,
-     *     Values?: list<string>
+     *     Attribute?: string|null,
+     *     Operator?: string|null,
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

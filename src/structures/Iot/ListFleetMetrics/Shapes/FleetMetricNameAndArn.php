@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\ListFleetMetrics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $metricName
- * @property string $metricArn
+ * @property string|null $metricName
+ * @property string|null $metricArn
  */
 class FleetMetricNameAndArn extends Shape
 {
     /**
      * @param array{
-     *     metricName?: string,
-     *     metricArn?: string
+     *     metricName?: string|null,
+     *     metricArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

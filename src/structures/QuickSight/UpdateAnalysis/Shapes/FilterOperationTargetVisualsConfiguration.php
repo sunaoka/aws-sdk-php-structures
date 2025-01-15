@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SameSheetTargetVisualConfiguration $SameSheetTargetVisualConfiguration
+ * @property SameSheetTargetVisualConfiguration|null $SameSheetTargetVisualConfiguration
  */
 class FilterOperationTargetVisualsConfiguration extends Shape
 {
     /**
-     * @param array{SameSheetTargetVisualConfiguration?: SameSheetTargetVisualConfiguration} $args
+     * @param array{SameSheetTargetVisualConfiguration?: SameSheetTargetVisualConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MemoryDB\ResetParameterGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ParameterGroup $ParameterGroup
+ * @property Shapes\ParameterGroup|null $ParameterGroup
  */
 class ResetParameterGroupResponse extends Response
 {

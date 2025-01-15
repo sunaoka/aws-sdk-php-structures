@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FSx\CopyBackup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DomainName
- * @property string $ActiveDirectoryId
- * @property string $ResourceARN
+ * @property string|null $DomainName
+ * @property string|null $ActiveDirectoryId
+ * @property string|null $ResourceARN
  */
 class ActiveDirectoryBackupAttributes extends Shape
 {
     /**
      * @param array{
-     *     DomainName?: string,
-     *     ActiveDirectoryId?: string,
-     *     ResourceARN?: string
+     *     DomainName?: string|null,
+     *     ActiveDirectoryId?: string|null,
+     *     ResourceARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

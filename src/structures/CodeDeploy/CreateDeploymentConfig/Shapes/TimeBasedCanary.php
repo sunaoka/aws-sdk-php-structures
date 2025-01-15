@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\CreateDeploymentConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $canaryPercentage
- * @property int $canaryInterval
+ * @property int|null $canaryPercentage
+ * @property int|null $canaryInterval
  */
 class TimeBasedCanary extends Shape
 {
     /**
      * @param array{
-     *     canaryPercentage?: int,
-     *     canaryInterval?: int
+     *     canaryPercentage?: int|null,
+     *     canaryInterval?: int|null
      * } $args
      */
     public function __construct(array $args = [])

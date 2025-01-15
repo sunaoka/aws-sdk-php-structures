@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ADMMessage $ADMMessage
- * @property APNSMessage $APNSMessage
- * @property BaiduMessage $BaiduMessage
- * @property DefaultMessage $DefaultMessage
- * @property DefaultPushNotificationMessage $DefaultPushNotificationMessage
- * @property EmailMessage $EmailMessage
- * @property GCMMessage $GCMMessage
- * @property SMSMessage $SMSMessage
- * @property VoiceMessage $VoiceMessage
+ * @property ADMMessage|null $ADMMessage
+ * @property APNSMessage|null $APNSMessage
+ * @property BaiduMessage|null $BaiduMessage
+ * @property DefaultMessage|null $DefaultMessage
+ * @property DefaultPushNotificationMessage|null $DefaultPushNotificationMessage
+ * @property EmailMessage|null $EmailMessage
+ * @property GCMMessage|null $GCMMessage
+ * @property SMSMessage|null $SMSMessage
+ * @property VoiceMessage|null $VoiceMessage
  */
 class DirectMessageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ADMMessage?: ADMMessage,
-     *     APNSMessage?: APNSMessage,
-     *     BaiduMessage?: BaiduMessage,
-     *     DefaultMessage?: DefaultMessage,
-     *     DefaultPushNotificationMessage?: DefaultPushNotificationMessage,
-     *     EmailMessage?: EmailMessage,
-     *     GCMMessage?: GCMMessage,
-     *     SMSMessage?: SMSMessage,
-     *     VoiceMessage?: VoiceMessage
+     *     ADMMessage?: ADMMessage|null,
+     *     APNSMessage?: APNSMessage|null,
+     *     BaiduMessage?: BaiduMessage|null,
+     *     DefaultMessage?: DefaultMessage|null,
+     *     DefaultPushNotificationMessage?: DefaultPushNotificationMessage|null,
+     *     EmailMessage?: EmailMessage|null,
+     *     GCMMessage?: GCMMessage|null,
+     *     SMSMessage?: SMSMessage|null,
+     *     VoiceMessage?: VoiceMessage|null
      * } $args
      */
     public function __construct(array $args = [])

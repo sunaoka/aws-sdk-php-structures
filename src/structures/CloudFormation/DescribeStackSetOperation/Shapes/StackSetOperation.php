@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DescribeStackSetOperation\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OperationId
- * @property string $StackSetId
- * @property 'CREATE'|'UPDATE'|'DELETE'|'DETECT_DRIFT' $Action
- * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPING'|'STOPPED'|'QUEUED' $Status
- * @property StackSetOperationPreferences $OperationPreferences
- * @property bool $RetainStacks
- * @property string $AdministrationRoleARN
- * @property string $ExecutionRoleName
- * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property \Aws\Api\DateTimeResult $EndTimestamp
- * @property DeploymentTargets $DeploymentTargets
- * @property StackSetDriftDetectionDetails $StackSetDriftDetectionDetails
- * @property string $StatusReason
- * @property StackSetOperationStatusDetails $StatusDetails
+ * @property string|null $OperationId
+ * @property string|null $StackSetId
+ * @property 'CREATE'|'UPDATE'|'DELETE'|'DETECT_DRIFT'|null $Action
+ * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPING'|'STOPPED'|'QUEUED'|null $Status
+ * @property StackSetOperationPreferences|null $OperationPreferences
+ * @property bool|null $RetainStacks
+ * @property string|null $AdministrationRoleARN
+ * @property string|null $ExecutionRoleName
+ * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $EndTimestamp
+ * @property DeploymentTargets|null $DeploymentTargets
+ * @property StackSetDriftDetectionDetails|null $StackSetDriftDetectionDetails
+ * @property string|null $StatusReason
+ * @property StackSetOperationStatusDetails|null $StatusDetails
  */
 class StackSetOperation extends Shape
 {
     /**
      * @param array{
-     *     OperationId?: string,
-     *     StackSetId?: string,
-     *     Action?: 'CREATE'|'UPDATE'|'DELETE'|'DETECT_DRIFT',
-     *     Status?: 'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPING'|'STOPPED'|'QUEUED',
-     *     OperationPreferences?: StackSetOperationPreferences,
-     *     RetainStacks?: bool,
-     *     AdministrationRoleARN?: string,
-     *     ExecutionRoleName?: string,
-     *     CreationTimestamp?: \Aws\Api\DateTimeResult,
-     *     EndTimestamp?: \Aws\Api\DateTimeResult,
-     *     DeploymentTargets?: DeploymentTargets,
-     *     StackSetDriftDetectionDetails?: StackSetDriftDetectionDetails,
-     *     StatusReason?: string,
-     *     StatusDetails?: StackSetOperationStatusDetails
+     *     OperationId?: string|null,
+     *     StackSetId?: string|null,
+     *     Action?: 'CREATE'|'UPDATE'|'DELETE'|'DETECT_DRIFT'|null,
+     *     Status?: 'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPING'|'STOPPED'|'QUEUED'|null,
+     *     OperationPreferences?: StackSetOperationPreferences|null,
+     *     RetainStacks?: bool|null,
+     *     AdministrationRoleARN?: string|null,
+     *     ExecutionRoleName?: string|null,
+     *     CreationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     EndTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     DeploymentTargets?: DeploymentTargets|null,
+     *     StackSetDriftDetectionDetails?: StackSetDriftDetectionDetails|null,
+     *     StatusReason?: string|null,
+     *     StatusDetails?: StackSetOperationStatusDetails|null
      * } $args
      */
     public function __construct(array $args = [])

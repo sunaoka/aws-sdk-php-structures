@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $OperationType
  * @property 'INITIALIZING'|'IN_PROGRESS'|'STOPPING'|'COMPLETED'|'STOPPED'|'FAILED'|'DELETING'|'DELETED' $Status
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class ListEarthObservationJobOutputConfig extends Shape
 {
@@ -23,7 +23,7 @@ class ListEarthObservationJobOutputConfig extends Shape
      *     Name: string,
      *     OperationType: string,
      *     Status: 'INITIALIZING'|'IN_PROGRESS'|'STOPPING'|'COMPLETED'|'STOPPED'|'FAILED'|'DELETING'|'DELETED',
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

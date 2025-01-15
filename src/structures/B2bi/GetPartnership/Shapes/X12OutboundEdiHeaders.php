@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\B2bi\GetPartnership\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property X12InterchangeControlHeaders $interchangeControlHeaders
- * @property X12FunctionalGroupHeaders $functionalGroupHeaders
- * @property X12Delimiters $delimiters
- * @property bool $validateEdi
+ * @property X12InterchangeControlHeaders|null $interchangeControlHeaders
+ * @property X12FunctionalGroupHeaders|null $functionalGroupHeaders
+ * @property X12Delimiters|null $delimiters
+ * @property bool|null $validateEdi
  */
 class X12OutboundEdiHeaders extends Shape
 {
     /**
      * @param array{
-     *     interchangeControlHeaders?: X12InterchangeControlHeaders,
-     *     functionalGroupHeaders?: X12FunctionalGroupHeaders,
-     *     delimiters?: X12Delimiters,
-     *     validateEdi?: bool
+     *     interchangeControlHeaders?: X12InterchangeControlHeaders|null,
+     *     functionalGroupHeaders?: X12FunctionalGroupHeaders|null,
+     *     delimiters?: X12Delimiters|null,
+     *     validateEdi?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

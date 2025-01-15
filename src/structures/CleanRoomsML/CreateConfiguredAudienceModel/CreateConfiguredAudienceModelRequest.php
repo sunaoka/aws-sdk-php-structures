@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $audienceModelArn
  * @property Shapes\ConfiguredAudienceModelOutputConfig $outputConfig
- * @property string $description
+ * @property string|null $description
  * @property list<'ALL'|'NONE'> $sharedAudienceMetrics
- * @property int<25, 500000> $minMatchingSeedSize
- * @property Shapes\AudienceSizeConfig $audienceSizeConfig
- * @property array<string, string> $tags
- * @property 'FROM_PARENT_RESOURCE'|'NONE' $childResourceTagOnCreatePolicy
+ * @property int<25, 500000>|null $minMatchingSeedSize
+ * @property Shapes\AudienceSizeConfig|null $audienceSizeConfig
+ * @property array<string, string>|null $tags
+ * @property 'FROM_PARENT_RESOURCE'|'NONE'|null $childResourceTagOnCreatePolicy
  */
 class CreateConfiguredAudienceModelRequest extends Request
 {
@@ -22,12 +22,12 @@ class CreateConfiguredAudienceModelRequest extends Request
      *     name: string,
      *     audienceModelArn: string,
      *     outputConfig: Shapes\ConfiguredAudienceModelOutputConfig,
-     *     description?: string,
+     *     description?: string|null,
      *     sharedAudienceMetrics: list<'ALL'|'NONE'>,
-     *     minMatchingSeedSize?: int<25, 500000>,
-     *     audienceSizeConfig?: Shapes\AudienceSizeConfig,
-     *     tags?: array<string, string>,
-     *     childResourceTagOnCreatePolicy?: 'FROM_PARENT_RESOURCE'|'NONE'
+     *     minMatchingSeedSize?: int<25, 500000>|null,
+     *     audienceSizeConfig?: Shapes\AudienceSizeConfig|null,
+     *     tags?: array<string, string>|null,
+     *     childResourceTagOnCreatePolicy?: 'FROM_PARENT_RESOURCE'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

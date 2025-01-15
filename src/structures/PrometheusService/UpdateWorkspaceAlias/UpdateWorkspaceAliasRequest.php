@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\PrometheusService\UpdateWorkspaceAlias;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $alias
- * @property string $clientToken
+ * @property string|null $alias
+ * @property string|null $clientToken
  * @property string $workspaceId
  */
 class UpdateWorkspaceAliasRequest extends Request
 {
     /**
      * @param array{
-     *     alias?: string,
-     *     clientToken?: string,
+     *     alias?: string|null,
+     *     clientToken?: string|null,
      *     workspaceId: string
      * } $args
      */

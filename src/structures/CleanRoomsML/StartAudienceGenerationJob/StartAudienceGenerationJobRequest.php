@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $configuredAudienceModelArn
  * @property Shapes\AudienceGenerationJobDataSource $seedAudience
- * @property bool $includeSeedInOutput
- * @property string $collaborationId
- * @property string $description
- * @property array<string, string> $tags
+ * @property bool|null $includeSeedInOutput
+ * @property string|null $collaborationId
+ * @property string|null $description
+ * @property array<string, string>|null $tags
  */
 class StartAudienceGenerationJobRequest extends Request
 {
@@ -20,10 +20,10 @@ class StartAudienceGenerationJobRequest extends Request
      *     name: string,
      *     configuredAudienceModelArn: string,
      *     seedAudience: Shapes\AudienceGenerationJobDataSource,
-     *     includeSeedInOutput?: bool,
-     *     collaborationId?: string,
-     *     description?: string,
-     *     tags?: array<string, string>
+     *     includeSeedInOutput?: bool|null,
+     *     collaborationId?: string|null,
+     *     description?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

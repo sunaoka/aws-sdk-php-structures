@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PrivateKeyAttributesV3 $PrivateKeyAttributes
  * @property PrivateKeyFlagsV3 $PrivateKeyFlags
  * @property SubjectNameFlagsV3 $SubjectNameFlags
- * @property list<string> $SupersededTemplates
+ * @property list<string>|null $SupersededTemplates
  */
 class TemplateV3 extends Shape
 {
@@ -27,7 +27,7 @@ class TemplateV3 extends Shape
      *     PrivateKeyAttributes: PrivateKeyAttributesV3,
      *     PrivateKeyFlags: PrivateKeyFlagsV3,
      *     SubjectNameFlags: SubjectNameFlagsV3,
-     *     SupersededTemplates?: list<string>
+     *     SupersededTemplates?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

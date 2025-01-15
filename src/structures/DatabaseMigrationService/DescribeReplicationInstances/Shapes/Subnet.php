@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationIns
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubnetIdentifier
- * @property AvailabilityZone $SubnetAvailabilityZone
- * @property string $SubnetStatus
+ * @property string|null $SubnetIdentifier
+ * @property AvailabilityZone|null $SubnetAvailabilityZone
+ * @property string|null $SubnetStatus
  */
 class Subnet extends Shape
 {
     /**
      * @param array{
-     *     SubnetIdentifier?: string,
-     *     SubnetAvailabilityZone?: AvailabilityZone,
-     *     SubnetStatus?: string
+     *     SubnetIdentifier?: string|null,
+     *     SubnetAvailabilityZone?: AvailabilityZone|null,
+     *     SubnetStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

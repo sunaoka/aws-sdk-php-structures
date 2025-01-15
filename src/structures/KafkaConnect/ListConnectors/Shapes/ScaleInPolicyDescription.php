@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\ListConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $cpuUtilizationPercentage
+ * @property int|null $cpuUtilizationPercentage
  */
 class ScaleInPolicyDescription extends Shape
 {
     /**
-     * @param array{cpuUtilizationPercentage?: int} $args
+     * @param array{cpuUtilizationPercentage?: int|null} $args
      */
     public function __construct(array $args = [])
     {

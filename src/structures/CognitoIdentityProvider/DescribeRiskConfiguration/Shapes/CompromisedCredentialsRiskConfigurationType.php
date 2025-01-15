@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeRiskConfigurati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'SIGN_IN'|'PASSWORD_CHANGE'|'SIGN_UP'> $EventFilter
+ * @property list<'SIGN_IN'|'PASSWORD_CHANGE'|'SIGN_UP'>|null $EventFilter
  * @property CompromisedCredentialsActionsType $Actions
  */
 class CompromisedCredentialsRiskConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     EventFilter?: list<'SIGN_IN'|'PASSWORD_CHANGE'|'SIGN_UP'>,
+     *     EventFilter?: list<'SIGN_IN'|'PASSWORD_CHANGE'|'SIGN_UP'>|null,
      *     Actions: CompromisedCredentialsActionsType
      * } $args
      */

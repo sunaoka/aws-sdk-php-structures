@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ssm\ListNodes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AgentType
- * @property string $AgentVersion
- * @property string $ComputerName
- * @property string $InstanceStatus
- * @property string $IpAddress
- * @property 'All'|'Managed'|'Unmanaged' $ManagedStatus
- * @property 'Windows'|'Linux'|'MacOS' $PlatformType
- * @property string $PlatformName
- * @property string $PlatformVersion
- * @property 'ManagedInstance'|'EC2Instance' $ResourceType
+ * @property string|null $AgentType
+ * @property string|null $AgentVersion
+ * @property string|null $ComputerName
+ * @property string|null $InstanceStatus
+ * @property string|null $IpAddress
+ * @property 'All'|'Managed'|'Unmanaged'|null $ManagedStatus
+ * @property 'Windows'|'Linux'|'MacOS'|null $PlatformType
+ * @property string|null $PlatformName
+ * @property string|null $PlatformVersion
+ * @property 'ManagedInstance'|'EC2Instance'|null $ResourceType
  */
 class InstanceInfo extends Shape
 {
     /**
      * @param array{
-     *     AgentType?: string,
-     *     AgentVersion?: string,
-     *     ComputerName?: string,
-     *     InstanceStatus?: string,
-     *     IpAddress?: string,
-     *     ManagedStatus?: 'All'|'Managed'|'Unmanaged',
-     *     PlatformType?: 'Windows'|'Linux'|'MacOS',
-     *     PlatformName?: string,
-     *     PlatformVersion?: string,
-     *     ResourceType?: 'ManagedInstance'|'EC2Instance'
+     *     AgentType?: string|null,
+     *     AgentVersion?: string|null,
+     *     ComputerName?: string|null,
+     *     InstanceStatus?: string|null,
+     *     IpAddress?: string|null,
+     *     ManagedStatus?: 'All'|'Managed'|'Unmanaged'|null,
+     *     PlatformType?: 'Windows'|'Linux'|'MacOS'|null,
+     *     PlatformName?: string|null,
+     *     PlatformVersion?: string|null,
+     *     ResourceType?: 'ManagedInstance'|'EC2Instance'|null
      * } $args
      */
     public function __construct(array $args = [])

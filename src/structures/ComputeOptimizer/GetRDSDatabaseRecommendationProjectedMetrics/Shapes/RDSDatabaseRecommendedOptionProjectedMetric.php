@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendationPr
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $recommendedDBInstanceClass
- * @property int $rank
- * @property list<RDSDatabaseProjectedMetric> $projectedMetrics
+ * @property string|null $recommendedDBInstanceClass
+ * @property int|null $rank
+ * @property list<RDSDatabaseProjectedMetric>|null $projectedMetrics
  */
 class RDSDatabaseRecommendedOptionProjectedMetric extends Shape
 {
     /**
      * @param array{
-     *     recommendedDBInstanceClass?: string,
-     *     rank?: int,
-     *     projectedMetrics?: list<RDSDatabaseProjectedMetric>
+     *     recommendedDBInstanceClass?: string|null,
+     *     rank?: int|null,
+     *     projectedMetrics?: list<RDSDatabaseProjectedMetric>|null
      * } $args
      */
     public function __construct(array $args = [])

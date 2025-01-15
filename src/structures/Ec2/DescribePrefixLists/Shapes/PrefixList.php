@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribePrefixLists\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Cidrs
- * @property string $PrefixListId
- * @property string $PrefixListName
+ * @property list<string>|null $Cidrs
+ * @property string|null $PrefixListId
+ * @property string|null $PrefixListName
  */
 class PrefixList extends Shape
 {
     /**
      * @param array{
-     *     Cidrs?: list<string>,
-     *     PrefixListId?: string,
-     *     PrefixListName?: string
+     *     Cidrs?: list<string>|null,
+     *     PrefixListId?: string|null,
+     *     PrefixListName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

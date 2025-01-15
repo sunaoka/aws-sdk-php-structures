@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $deliverySourceName
  * @property string $deliveryDestinationArn
- * @property list<string> $recordFields
- * @property string $fieldDelimiter
- * @property Shapes\S3DeliveryConfiguration $s3DeliveryConfiguration
- * @property array<string, string> $tags
+ * @property list<string>|null $recordFields
+ * @property string|null $fieldDelimiter
+ * @property Shapes\S3DeliveryConfiguration|null $s3DeliveryConfiguration
+ * @property array<string, string>|null $tags
  */
 class CreateDeliveryRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateDeliveryRequest extends Request
      * @param array{
      *     deliverySourceName: string,
      *     deliveryDestinationArn: string,
-     *     recordFields?: list<string>,
-     *     fieldDelimiter?: string,
-     *     s3DeliveryConfiguration?: Shapes\S3DeliveryConfiguration,
-     *     tags?: array<string, string>
+     *     recordFields?: list<string>|null,
+     *     fieldDelimiter?: string|null,
+     *     s3DeliveryConfiguration?: Shapes\S3DeliveryConfiguration|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

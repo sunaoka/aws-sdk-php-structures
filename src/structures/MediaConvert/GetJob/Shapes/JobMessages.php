@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Info
- * @property list<string> $Warning
+ * @property list<string>|null $Info
+ * @property list<string>|null $Warning
  */
 class JobMessages extends Shape
 {
     /**
      * @param array{
-     *     Info?: list<string>,
-     *     Warning?: list<string>
+     *     Info?: list<string>|null,
+     *     Warning?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

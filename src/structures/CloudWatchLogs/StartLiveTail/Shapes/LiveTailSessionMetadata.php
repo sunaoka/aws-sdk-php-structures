@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\StartLiveTail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $sampled
+ * @property bool|null $sampled
  */
 class LiveTailSessionMetadata extends Shape
 {
     /**
-     * @param array{sampled?: bool} $args
+     * @param array{sampled?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

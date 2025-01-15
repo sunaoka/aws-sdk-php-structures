@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property list<'VIEWER'|'CONTRIBUTOR'|'OWNER'|'COOWNER'> $Roles
+ * @property list<'VIEWER'|'CONTRIBUTOR'|'OWNER'|'COOWNER'>|null $Roles
  */
 class SearchPrincipalType extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     Roles?: list<'VIEWER'|'CONTRIBUTOR'|'OWNER'|'COOWNER'>
+     *     Roles?: list<'VIEWER'|'CONTRIBUTOR'|'OWNER'|'COOWNER'>|null
      * } $args
      */
     public function __construct(array $args)

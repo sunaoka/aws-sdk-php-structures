@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateDataProvider\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServerName
- * @property int $Port
- * @property 'none'|'require'|'verify-ca'|'verify-full' $SslMode
- * @property string $CertificateArn
+ * @property string|null $ServerName
+ * @property int|null $Port
+ * @property 'none'|'require'|'verify-ca'|'verify-full'|null $SslMode
+ * @property string|null $CertificateArn
  */
 class MariaDbDataProviderSettings extends Shape
 {
     /**
      * @param array{
-     *     ServerName?: string,
-     *     Port?: int,
-     *     SslMode?: 'none'|'require'|'verify-ca'|'verify-full',
-     *     CertificateArn?: string
+     *     ServerName?: string|null,
+     *     Port?: int|null,
+     *     SslMode?: 'none'|'require'|'verify-ca'|'verify-full'|null,
+     *     CertificateArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

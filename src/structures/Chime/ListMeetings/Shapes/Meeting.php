@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Chime\ListMeetings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MeetingId
- * @property string $ExternalMeetingId
- * @property MediaPlacement $MediaPlacement
- * @property string $MediaRegion
+ * @property string|null $MeetingId
+ * @property string|null $ExternalMeetingId
+ * @property MediaPlacement|null $MediaPlacement
+ * @property string|null $MediaRegion
  */
 class Meeting extends Shape
 {
     /**
      * @param array{
-     *     MeetingId?: string,
-     *     ExternalMeetingId?: string,
-     *     MediaPlacement?: MediaPlacement,
-     *     MediaRegion?: string
+     *     MeetingId?: string|null,
+     *     ExternalMeetingId?: string|null,
+     *     MediaPlacement?: MediaPlacement|null,
+     *     MediaRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

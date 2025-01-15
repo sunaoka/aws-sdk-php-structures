@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayARN
- * @property string $TargetName
+ * @property string|null $TargetName
  * @property string $VolumeARN
  * @property string $NetworkInterfaceId
- * @property string $DiskId
+ * @property string|null $DiskId
  */
 class AttachVolumeRequest extends Request
 {
     /**
      * @param array{
      *     GatewayARN: string,
-     *     TargetName?: string,
+     *     TargetName?: string|null,
      *     VolumeARN: string,
      *     NetworkInterfaceId: string,
-     *     DiskId?: string
+     *     DiskId?: string|null
      * } $args
      */
     public function __construct(array $args)

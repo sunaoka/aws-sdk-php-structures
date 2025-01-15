@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReportPlanName
- * @property string $IdempotencyToken
+ * @property string|null $IdempotencyToken
  */
 class StartReportJobRequest extends Request
 {
     /**
      * @param array{
      *     ReportPlanName: string,
-     *     IdempotencyToken?: string
+     *     IdempotencyToken?: string|null
      * } $args
      */
     public function __construct(array $args)

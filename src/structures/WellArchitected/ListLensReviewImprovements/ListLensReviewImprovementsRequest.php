@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WorkloadId
  * @property string $LensAlias
- * @property string $PillarId
- * @property int<1, 100> $MilestoneNumber
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property 'PRIORITIZED'|'NONE' $QuestionPriority
+ * @property string|null $PillarId
+ * @property int<1, 100>|null $MilestoneNumber
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property 'PRIORITIZED'|'NONE'|null $QuestionPriority
  */
 class ListLensReviewImprovementsRequest extends Request
 {
@@ -19,11 +19,11 @@ class ListLensReviewImprovementsRequest extends Request
      * @param array{
      *     WorkloadId: string,
      *     LensAlias: string,
-     *     PillarId?: string,
-     *     MilestoneNumber?: int<1, 100>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     QuestionPriority?: 'PRIORITIZED'|'NONE'
+     *     PillarId?: string|null,
+     *     MilestoneNumber?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     QuestionPriority?: 'PRIORITIZED'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

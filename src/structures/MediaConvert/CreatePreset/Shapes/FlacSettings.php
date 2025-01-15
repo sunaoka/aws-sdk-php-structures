@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreatePreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<16, 24> $BitDepth
- * @property int<1, 8> $Channels
- * @property int<22050, 48000> $SampleRate
+ * @property int<16, 24>|null $BitDepth
+ * @property int<1, 8>|null $Channels
+ * @property int<22050, 48000>|null $SampleRate
  */
 class FlacSettings extends Shape
 {
     /**
      * @param array{
-     *     BitDepth?: int<16, 24>,
-     *     Channels?: int<1, 8>,
-     *     SampleRate?: int<22050, 48000>
+     *     BitDepth?: int<16, 24>|null,
+     *     Channels?: int<1, 8>|null,
+     *     SampleRate?: int<22050, 48000>|null
      * } $args
      */
     public function __construct(array $args = [])

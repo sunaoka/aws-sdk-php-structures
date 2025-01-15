@@ -10,13 +10,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ChannelGroupName
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property string $Description
- * @property list<Shapes\IngestEndpoint> $IngestEndpoints
- * @property 'HLS'|'CMAF' $InputType
- * @property string $ETag
- * @property array<string, string> $Tags
- * @property Shapes\InputSwitchConfiguration $InputSwitchConfiguration
- * @property Shapes\OutputHeaderConfiguration $OutputHeaderConfiguration
+ * @property string|null $Description
+ * @property list<Shapes\IngestEndpoint>|null $IngestEndpoints
+ * @property 'HLS'|'CMAF'|null $InputType
+ * @property string|null $ETag
+ * @property array<string, string>|null $Tags
+ * @property Shapes\InputSwitchConfiguration|null $InputSwitchConfiguration
+ * @property Shapes\OutputHeaderConfiguration|null $OutputHeaderConfiguration
  */
 class CreateChannelResponse extends Response
 {

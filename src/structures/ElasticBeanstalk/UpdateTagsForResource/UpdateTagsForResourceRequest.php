@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceArn
- * @property list<Shapes\Tag> $TagsToAdd
- * @property list<string> $TagsToRemove
+ * @property list<Shapes\Tag>|null $TagsToAdd
+ * @property list<string>|null $TagsToRemove
  */
 class UpdateTagsForResourceRequest extends Request
 {
     /**
      * @param array{
      *     ResourceArn: string,
-     *     TagsToAdd?: list<Shapes\Tag>,
-     *     TagsToRemove?: list<string>
+     *     TagsToAdd?: list<Shapes\Tag>|null,
+     *     TagsToRemove?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

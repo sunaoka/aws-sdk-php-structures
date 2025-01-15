@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetFaceSearch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Timestamp
- * @property PersonDetail $Person
- * @property list<FaceMatch> $FaceMatches
+ * @property int|null $Timestamp
+ * @property PersonDetail|null $Person
+ * @property list<FaceMatch>|null $FaceMatches
  */
 class PersonMatch extends Shape
 {
     /**
      * @param array{
-     *     Timestamp?: int,
-     *     Person?: PersonDetail,
-     *     FaceMatches?: list<FaceMatch>
+     *     Timestamp?: int|null,
+     *     Person?: PersonDetail|null,
+     *     FaceMatches?: list<FaceMatch>|null
      * } $args
      */
     public function __construct(array $args = [])

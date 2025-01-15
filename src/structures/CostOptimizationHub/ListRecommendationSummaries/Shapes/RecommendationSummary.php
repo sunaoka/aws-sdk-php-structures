@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\ListRecommendationSummaries
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $group
- * @property double $estimatedMonthlySavings
- * @property int $recommendationCount
+ * @property string|null $group
+ * @property double|null $estimatedMonthlySavings
+ * @property int|null $recommendationCount
  */
 class RecommendationSummary extends Shape
 {
     /**
      * @param array{
-     *     group?: string,
-     *     estimatedMonthlySavings?: double,
-     *     recommendationCount?: int
+     *     group?: string|null,
+     *     estimatedMonthlySavings?: double|null,
+     *     recommendationCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

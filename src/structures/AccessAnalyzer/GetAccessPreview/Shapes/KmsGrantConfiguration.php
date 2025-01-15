@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<'CreateGrant'|'Decrypt'|'DescribeKey'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateDataKeyWithoutPlaintext'|'GetPublicKey'|'ReEncryptFrom'|'ReEncryptTo'|'RetireGrant'|'Sign'|'Verify'> $operations
  * @property string $granteePrincipal
- * @property string $retiringPrincipal
- * @property KmsGrantConstraints $constraints
+ * @property string|null $retiringPrincipal
+ * @property KmsGrantConstraints|null $constraints
  * @property string $issuingAccount
  */
 class KmsGrantConfiguration extends Shape
@@ -17,8 +17,8 @@ class KmsGrantConfiguration extends Shape
      * @param array{
      *     operations: list<'CreateGrant'|'Decrypt'|'DescribeKey'|'Encrypt'|'GenerateDataKey'|'GenerateDataKeyPair'|'GenerateDataKeyPairWithoutPlaintext'|'GenerateDataKeyWithoutPlaintext'|'GetPublicKey'|'ReEncryptFrom'|'ReEncryptTo'|'RetireGrant'|'Sign'|'Verify'>,
      *     granteePrincipal: string,
-     *     retiringPrincipal?: string,
-     *     constraints?: KmsGrantConstraints,
+     *     retiringPrincipal?: string|null,
+     *     constraints?: KmsGrantConstraints|null,
      *     issuingAccount: string
      * } $args
      */

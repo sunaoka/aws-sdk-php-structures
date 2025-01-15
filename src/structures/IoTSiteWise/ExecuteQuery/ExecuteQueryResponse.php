@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ExecuteQuery;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ColumnInfo> $columns
- * @property list<Shapes\Row> $rows
- * @property string $nextToken
+ * @property list<Shapes\ColumnInfo>|null $columns
+ * @property list<Shapes\Row>|null $rows
+ * @property string|null $nextToken
  */
 class ExecuteQueryResponse extends Response
 {

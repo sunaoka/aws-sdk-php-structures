@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 2147483647> $FramerateDenominator
- * @property int<1, 2147483647> $FramerateNumerator
- * @property int<1, 10000000> $MaxCaptures
- * @property int<1, 100> $Quality
+ * @property int<1, 2147483647>|null $FramerateDenominator
+ * @property int<1, 2147483647>|null $FramerateNumerator
+ * @property int<1, 10000000>|null $MaxCaptures
+ * @property int<1, 100>|null $Quality
  */
 class FrameCaptureSettings extends Shape
 {
     /**
      * @param array{
-     *     FramerateDenominator?: int<1, 2147483647>,
-     *     FramerateNumerator?: int<1, 2147483647>,
-     *     MaxCaptures?: int<1, 10000000>,
-     *     Quality?: int<1, 100>
+     *     FramerateDenominator?: int<1, 2147483647>|null,
+     *     FramerateNumerator?: int<1, 2147483647>|null,
+     *     MaxCaptures?: int<1, 10000000>|null,
+     *     Quality?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

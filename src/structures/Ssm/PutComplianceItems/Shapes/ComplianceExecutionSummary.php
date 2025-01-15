@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $ExecutionTime
- * @property string $ExecutionId
- * @property string $ExecutionType
+ * @property string|null $ExecutionId
+ * @property string|null $ExecutionType
  */
 class ComplianceExecutionSummary extends Shape
 {
     /**
      * @param array{
      *     ExecutionTime: \Aws\Api\DateTimeResult,
-     *     ExecutionId?: string,
-     *     ExecutionType?: string
+     *     ExecutionId?: string|null,
+     *     ExecutionType?: string|null
      * } $args
      */
     public function __construct(array $args)

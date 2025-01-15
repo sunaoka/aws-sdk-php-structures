@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\HostedZone> $HostedZones
- * @property string $DNSName
- * @property string $HostedZoneId
+ * @property string|null $DNSName
+ * @property string|null $HostedZoneId
  * @property bool $IsTruncated
- * @property string $NextDNSName
- * @property string $NextHostedZoneId
+ * @property string|null $NextDNSName
+ * @property string|null $NextHostedZoneId
  * @property string $MaxItems
  */
 class ListHostedZonesByNameResponse extends Response

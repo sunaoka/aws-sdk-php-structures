@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\StartVpcEndpointServicePrivateDnsVerificati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $ReturnValue
+ * @property bool|null $ReturnValue
  */
 class StartVpcEndpointServicePrivateDnsVerificationResponse extends Response
 {

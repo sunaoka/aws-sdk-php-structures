@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetCommitmentPurchaseAnalysis\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SavingsPlansPurchaseAnalysisConfiguration $SavingsPlansPurchaseAnalysisConfiguration
+ * @property SavingsPlansPurchaseAnalysisConfiguration|null $SavingsPlansPurchaseAnalysisConfiguration
  */
 class CommitmentPurchaseAnalysisConfiguration extends Shape
 {
     /**
-     * @param array{SavingsPlansPurchaseAnalysisConfiguration?: SavingsPlansPurchaseAnalysisConfiguration} $args
+     * @param array{SavingsPlansPurchaseAnalysisConfiguration?: SavingsPlansPurchaseAnalysisConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

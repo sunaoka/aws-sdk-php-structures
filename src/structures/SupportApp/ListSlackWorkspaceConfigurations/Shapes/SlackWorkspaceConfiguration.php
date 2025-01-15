@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SupportApp\ListSlackWorkspaceConfigurations\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $allowOrganizationMemberAccount
+ * @property bool|null $allowOrganizationMemberAccount
  * @property string $teamId
- * @property string $teamName
+ * @property string|null $teamName
  */
 class SlackWorkspaceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     allowOrganizationMemberAccount?: bool,
+     *     allowOrganizationMemberAccount?: bool|null,
      *     teamId: string,
-     *     teamName?: string
+     *     teamName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElastiCache\RebootCacheCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeliveryStream
+ * @property string|null $DeliveryStream
  */
 class KinesisFirehoseDestinationDetails extends Shape
 {
     /**
-     * @param array{DeliveryStream?: string} $args
+     * @param array{DeliveryStream?: string|null} $args
      */
     public function __construct(array $args = [])
     {

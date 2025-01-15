@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateBudget\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $queueId
+ * @property string|null $queueId
  */
 class UsageTrackingResource extends Shape
 {
     /**
-     * @param array{queueId?: string} $args
+     * @param array{queueId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

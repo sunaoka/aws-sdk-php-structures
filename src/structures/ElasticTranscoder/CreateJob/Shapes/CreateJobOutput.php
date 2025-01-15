@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $ThumbnailPattern
- * @property Encryption $ThumbnailEncryption
- * @property string $Rotate
- * @property string $PresetId
- * @property string $SegmentDuration
- * @property list<JobWatermark> $Watermarks
- * @property JobAlbumArt $AlbumArt
- * @property list<Clip> $Composition
- * @property Captions $Captions
- * @property Encryption $Encryption
+ * @property string|null $Key
+ * @property string|null $ThumbnailPattern
+ * @property Encryption|null $ThumbnailEncryption
+ * @property string|null $Rotate
+ * @property string|null $PresetId
+ * @property string|null $SegmentDuration
+ * @property list<JobWatermark>|null $Watermarks
+ * @property JobAlbumArt|null $AlbumArt
+ * @property list<Clip>|null $Composition
+ * @property Captions|null $Captions
+ * @property Encryption|null $Encryption
  */
 class CreateJobOutput extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     ThumbnailPattern?: string,
-     *     ThumbnailEncryption?: Encryption,
-     *     Rotate?: string,
-     *     PresetId?: string,
-     *     SegmentDuration?: string,
-     *     Watermarks?: list<JobWatermark>,
-     *     AlbumArt?: JobAlbumArt,
-     *     Composition?: list<Clip>,
-     *     Captions?: Captions,
-     *     Encryption?: Encryption
+     *     Key?: string|null,
+     *     ThumbnailPattern?: string|null,
+     *     ThumbnailEncryption?: Encryption|null,
+     *     Rotate?: string|null,
+     *     PresetId?: string|null,
+     *     SegmentDuration?: string|null,
+     *     Watermarks?: list<JobWatermark>|null,
+     *     AlbumArt?: JobAlbumArt|null,
+     *     Composition?: list<Clip>|null,
+     *     Captions?: Captions|null,
+     *     Encryption?: Encryption|null
      * } $args
      */
     public function __construct(array $args = [])

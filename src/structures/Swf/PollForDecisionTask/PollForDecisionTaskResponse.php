@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\WorkflowExecution $workflowExecution
  * @property Shapes\WorkflowType $workflowType
  * @property list<Shapes\HistoryEvent> $events
- * @property string $nextPageToken
- * @property int $previousStartedEventId
+ * @property string|null $nextPageToken
+ * @property int|null $previousStartedEventId
  */
 class PollForDecisionTaskResponse extends Response
 {

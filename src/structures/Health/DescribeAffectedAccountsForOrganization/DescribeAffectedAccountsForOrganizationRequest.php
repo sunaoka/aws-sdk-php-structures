@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $eventArn
- * @property string $nextToken
- * @property int<10, 100> $maxResults
+ * @property string|null $nextToken
+ * @property int<10, 100>|null $maxResults
  */
 class DescribeAffectedAccountsForOrganizationRequest extends Request
 {
     /**
      * @param array{
      *     eventArn: string,
-     *     nextToken?: string,
-     *     maxResults?: int<10, 100>
+     *     nextToken?: string|null,
+     *     maxResults?: int<10, 100>|null
      * } $args
      */
     public function __construct(array $args)

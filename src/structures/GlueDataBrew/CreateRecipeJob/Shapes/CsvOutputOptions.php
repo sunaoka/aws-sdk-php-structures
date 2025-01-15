@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\CreateRecipeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Delimiter
+ * @property string|null $Delimiter
  */
 class CsvOutputOptions extends Shape
 {
     /**
-     * @param array{Delimiter?: string} $args
+     * @param array{Delimiter?: string|null} $args
      */
     public function __construct(array $args = [])
     {

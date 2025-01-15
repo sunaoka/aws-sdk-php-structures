@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AgentArn
- * @property string $Name
+ * @property string|null $Name
  */
 class UpdateAgentRequest extends Request
 {
     /**
      * @param array{
      *     AgentArn: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

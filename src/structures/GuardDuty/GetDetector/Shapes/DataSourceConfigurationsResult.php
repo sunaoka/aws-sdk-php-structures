@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DNSLogsConfigurationResult $DNSLogs
  * @property FlowLogsConfigurationResult $FlowLogs
  * @property S3LogsConfigurationResult $S3Logs
- * @property KubernetesConfigurationResult $Kubernetes
- * @property MalwareProtectionConfigurationResult $MalwareProtection
+ * @property KubernetesConfigurationResult|null $Kubernetes
+ * @property MalwareProtectionConfigurationResult|null $MalwareProtection
  */
 class DataSourceConfigurationsResult extends Shape
 {
@@ -20,8 +20,8 @@ class DataSourceConfigurationsResult extends Shape
      *     DNSLogs: DNSLogsConfigurationResult,
      *     FlowLogs: FlowLogsConfigurationResult,
      *     S3Logs: S3LogsConfigurationResult,
-     *     Kubernetes?: KubernetesConfigurationResult,
-     *     MalwareProtection?: MalwareProtectionConfigurationResult
+     *     Kubernetes?: KubernetesConfigurationResult|null,
+     *     MalwareProtection?: MalwareProtectionConfigurationResult|null
      * } $args
      */
     public function __construct(array $args)

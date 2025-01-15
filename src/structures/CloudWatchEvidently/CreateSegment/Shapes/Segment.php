@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdTime
- * @property string $description
- * @property int $experimentCount
+ * @property string|null $description
+ * @property int|null $experimentCount
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property int $launchCount
+ * @property int|null $launchCount
  * @property string $name
  * @property string $pattern
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class Segment extends Shape
 {
@@ -21,13 +21,13 @@ class Segment extends Shape
      * @param array{
      *     arn: string,
      *     createdTime: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     experimentCount?: int,
+     *     description?: string|null,
+     *     experimentCount?: int|null,
      *     lastUpdatedTime: \Aws\Api\DateTimeResult,
-     *     launchCount?: int,
+     *     launchCount?: int|null,
      *     name: string,
      *     pattern: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property double $MaxValue
  * @property double $MinValue
- * @property 'Auto'|'Linear'|'Logarithmic'|'ReverseLogarithmic' $ScalingType
+ * @property 'Auto'|'Linear'|'Logarithmic'|'ReverseLogarithmic'|null $ScalingType
  */
 class ContinuousParameterRange extends Shape
 {
@@ -17,7 +17,7 @@ class ContinuousParameterRange extends Shape
      *     Name: string,
      *     MaxValue: double,
      *     MinValue: double,
-     *     ScalingType?: 'Auto'|'Linear'|'Logarithmic'|'ReverseLogarithmic'
+     *     ScalingType?: 'Auto'|'Linear'|'Logarithmic'|'ReverseLogarithmic'|null
      * } $args
      */
     public function __construct(array $args)

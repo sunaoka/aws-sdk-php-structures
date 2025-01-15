@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RetrievedReference> $retrievedReferences
+ * @property list<RetrievedReference>|null $retrievedReferences
  */
 class KnowledgeBaseLookupOutput extends Shape
 {
     /**
-     * @param array{retrievedReferences?: list<RetrievedReference>} $args
+     * @param array{retrievedReferences?: list<RetrievedReference>|null} $args
      */
     public function __construct(array $args = [])
     {

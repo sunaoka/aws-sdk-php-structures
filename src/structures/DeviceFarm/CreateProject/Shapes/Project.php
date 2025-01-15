@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\CreateProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property int $defaultJobTimeoutMinutes
- * @property \Aws\Api\DateTimeResult $created
- * @property VpcConfig $vpcConfig
+ * @property string|null $arn
+ * @property string|null $name
+ * @property int|null $defaultJobTimeoutMinutes
+ * @property \Aws\Api\DateTimeResult|null $created
+ * @property VpcConfig|null $vpcConfig
  */
 class Project extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     defaultJobTimeoutMinutes?: int,
-     *     created?: \Aws\Api\DateTimeResult,
-     *     vpcConfig?: VpcConfig
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     defaultJobTimeoutMinutes?: int|null,
+     *     created?: \Aws\Api\DateTimeResult|null,
+     *     vpcConfig?: VpcConfig|null
      * } $args
      */
     public function __construct(array $args = [])

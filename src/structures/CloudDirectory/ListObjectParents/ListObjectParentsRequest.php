@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryArn
  * @property Shapes\ObjectReference $ObjectReference
- * @property string $NextToken
- * @property int<1, max> $MaxResults
- * @property 'SERIALIZABLE'|'EVENTUAL' $ConsistencyLevel
- * @property bool $IncludeAllLinksToEachParent
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
+ * @property 'SERIALIZABLE'|'EVENTUAL'|null $ConsistencyLevel
+ * @property bool|null $IncludeAllLinksToEachParent
  */
 class ListObjectParentsRequest extends Request
 {
@@ -18,10 +18,10 @@ class ListObjectParentsRequest extends Request
      * @param array{
      *     DirectoryArn: string,
      *     ObjectReference: Shapes\ObjectReference,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>,
-     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL',
-     *     IncludeAllLinksToEachParent?: bool
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null,
+     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'|null,
+     *     IncludeAllLinksToEachParent?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetProviderService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property Document $providerSourceConfigurationDefinition
- * @property Document $providerTargetConfigurationDefinition
+ * @property string|null $description
+ * @property Document|null $providerSourceConfigurationDefinition
+ * @property Document|null $providerTargetConfigurationDefinition
  */
 class ProviderIdNameSpaceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     providerSourceConfigurationDefinition?: Document,
-     *     providerTargetConfigurationDefinition?: Document
+     *     description?: string|null,
+     *     providerSourceConfigurationDefinition?: Document|null,
+     *     providerTargetConfigurationDefinition?: Document|null
      * } $args
      */
     public function __construct(array $args = [])

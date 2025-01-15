@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\XRay\GetTraceSummaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FaultRootCauseService> $Services
- * @property bool $ClientImpacting
+ * @property list<FaultRootCauseService>|null $Services
+ * @property bool|null $ClientImpacting
  */
 class FaultRootCause extends Shape
 {
     /**
      * @param array{
-     *     Services?: list<FaultRootCauseService>,
-     *     ClientImpacting?: bool
+     *     Services?: list<FaultRootCauseService>|null,
+     *     ClientImpacting?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

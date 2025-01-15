@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeEgressOnlyInternetGateways\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<InternetGatewayAttachment> $Attachments
- * @property string $EgressOnlyInternetGatewayId
- * @property list<Tag> $Tags
+ * @property list<InternetGatewayAttachment>|null $Attachments
+ * @property string|null $EgressOnlyInternetGatewayId
+ * @property list<Tag>|null $Tags
  */
 class EgressOnlyInternetGateway extends Shape
 {
     /**
      * @param array{
-     *     Attachments?: list<InternetGatewayAttachment>,
-     *     EgressOnlyInternetGatewayId?: string,
-     *     Tags?: list<Tag>
+     *     Attachments?: list<InternetGatewayAttachment>|null,
+     *     EgressOnlyInternetGatewayId?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

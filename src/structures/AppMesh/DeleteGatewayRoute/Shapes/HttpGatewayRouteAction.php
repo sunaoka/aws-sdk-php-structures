@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteGatewayRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HttpGatewayRouteRewrite $rewrite
+ * @property HttpGatewayRouteRewrite|null $rewrite
  * @property GatewayRouteTarget $target
  */
 class HttpGatewayRouteAction extends Shape
 {
     /**
      * @param array{
-     *     rewrite?: HttpGatewayRouteRewrite,
+     *     rewrite?: HttpGatewayRouteRewrite|null,
      *     target: GatewayRouteTarget
      * } $args
      */

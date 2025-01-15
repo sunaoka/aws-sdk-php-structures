@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $roleArn
  * @property string $deliveryStreamName
- * @property string $separator
- * @property bool $batchMode
+ * @property string|null $separator
+ * @property bool|null $batchMode
  */
 class FirehoseAction extends Shape
 {
@@ -16,8 +16,8 @@ class FirehoseAction extends Shape
      * @param array{
      *     roleArn: string,
      *     deliveryStreamName: string,
-     *     separator?: string,
-     *     batchMode?: bool
+     *     separator?: string|null,
+     *     batchMode?: bool|null
      * } $args
      */
     public function __construct(array $args)

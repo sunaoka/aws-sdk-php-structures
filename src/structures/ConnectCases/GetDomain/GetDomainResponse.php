@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $domainId
  * @property 'Active'|'CreationInProgress'|'CreationFailed' $domainStatus
  * @property string $name
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class GetDomainResponse extends Response
 {

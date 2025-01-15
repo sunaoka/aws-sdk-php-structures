@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $object
- * @property list<string> $idFieldNames
- * @property ErrorHandlingConfig $errorHandlingConfig
- * @property 'INSERT'|'UPSERT'|'UPDATE'|'DELETE' $writeOperationType
- * @property 'AUTOMATIC'|'BULKV2'|'REST_SYNC' $dataTransferApi
+ * @property list<string>|null $idFieldNames
+ * @property ErrorHandlingConfig|null $errorHandlingConfig
+ * @property 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'|null $writeOperationType
+ * @property 'AUTOMATIC'|'BULKV2'|'REST_SYNC'|null $dataTransferApi
  */
 class SalesforceDestinationProperties extends Shape
 {
     /**
      * @param array{
      *     object: string,
-     *     idFieldNames?: list<string>,
-     *     errorHandlingConfig?: ErrorHandlingConfig,
-     *     writeOperationType?: 'INSERT'|'UPSERT'|'UPDATE'|'DELETE',
-     *     dataTransferApi?: 'AUTOMATIC'|'BULKV2'|'REST_SYNC'
+     *     idFieldNames?: list<string>|null,
+     *     errorHandlingConfig?: ErrorHandlingConfig|null,
+     *     writeOperationType?: 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'|null,
+     *     dataTransferApi?: 'AUTOMATIC'|'BULKV2'|'REST_SYNC'|null
      * } $args
      */
     public function __construct(array $args)

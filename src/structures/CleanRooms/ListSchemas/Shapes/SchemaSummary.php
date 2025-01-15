@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationId
  * @property string $collaborationArn
  * @property list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'> $analysisRuleTypes
- * @property 'DIRECT_QUERY' $analysisMethod
+ * @property 'DIRECT_QUERY'|null $analysisMethod
  */
 class SchemaSummary extends Shape
 {
@@ -27,7 +27,7 @@ class SchemaSummary extends Shape
      *     collaborationId: string,
      *     collaborationArn: string,
      *     analysisRuleTypes: list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'>,
-     *     analysisMethod?: 'DIRECT_QUERY'
+     *     analysisMethod?: 'DIRECT_QUERY'|null
      * } $args
      */
     public function __construct(array $args)

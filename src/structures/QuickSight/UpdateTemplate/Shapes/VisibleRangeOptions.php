@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PercentVisibleRange $PercentRange
+ * @property PercentVisibleRange|null $PercentRange
  */
 class VisibleRangeOptions extends Shape
 {
     /**
-     * @param array{PercentRange?: PercentVisibleRange} $args
+     * @param array{PercentRange?: PercentVisibleRange|null} $args
      */
     public function __construct(array $args = [])
     {

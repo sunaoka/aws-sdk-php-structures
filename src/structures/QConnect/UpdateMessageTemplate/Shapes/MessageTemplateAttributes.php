@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateMessageTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AgentAttributes $agentAttributes
- * @property array<string, string> $customAttributes
- * @property CustomerProfileAttributes $customerProfileAttributes
- * @property SystemAttributes $systemAttributes
+ * @property AgentAttributes|null $agentAttributes
+ * @property array<string, string>|null $customAttributes
+ * @property CustomerProfileAttributes|null $customerProfileAttributes
+ * @property SystemAttributes|null $systemAttributes
  */
 class MessageTemplateAttributes extends Shape
 {
     /**
      * @param array{
-     *     agentAttributes?: AgentAttributes,
-     *     customAttributes?: array<string, string>,
-     *     customerProfileAttributes?: CustomerProfileAttributes,
-     *     systemAttributes?: SystemAttributes
+     *     agentAttributes?: AgentAttributes|null,
+     *     customAttributes?: array<string, string>|null,
+     *     customerProfileAttributes?: CustomerProfileAttributes|null,
+     *     systemAttributes?: SystemAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

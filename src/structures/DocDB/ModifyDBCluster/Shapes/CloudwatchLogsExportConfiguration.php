@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DocDB\ModifyDBCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $EnableLogTypes
- * @property list<string> $DisableLogTypes
+ * @property list<string>|null $EnableLogTypes
+ * @property list<string>|null $DisableLogTypes
  */
 class CloudwatchLogsExportConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EnableLogTypes?: list<string>,
-     *     DisableLogTypes?: list<string>
+     *     EnableLogTypes?: list<string>|null,
+     *     DisableLogTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

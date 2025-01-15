@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $version
- * @property string $clientRequestToken
+ * @property string|null $clientRequestToken
  */
 class UpdateClusterVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateClusterVersionRequest extends Request
      * @param array{
      *     name: string,
      *     version: string,
-     *     clientRequestToken?: string
+     *     clientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

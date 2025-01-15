@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FieldId
- * @property TextConditionalFormat $TextFormat
+ * @property TextConditionalFormat|null $TextFormat
  */
 class TableCellConditionalFormatting extends Shape
 {
     /**
      * @param array{
      *     FieldId: string,
-     *     TextFormat?: TextConditionalFormat
+     *     TextFormat?: TextConditionalFormat|null
      * } $args
      */
     public function __construct(array $args)

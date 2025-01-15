@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReservedNodeOfferingId
- * @property int $NodeCount
+ * @property int|null $NodeCount
  */
 class PurchaseReservedNodeOfferingRequest extends Request
 {
     /**
      * @param array{
      *     ReservedNodeOfferingId: string,
-     *     NodeCount?: int
+     *     NodeCount?: int|null
      * } $args
      */
     public function __construct(array $args)

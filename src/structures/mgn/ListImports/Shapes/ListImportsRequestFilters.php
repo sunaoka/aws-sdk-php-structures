@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\mgn\ListImports\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $importIDs
+ * @property list<string>|null $importIDs
  */
 class ListImportsRequestFilters extends Shape
 {
     /**
-     * @param array{importIDs?: list<string>} $args
+     * @param array{importIDs?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

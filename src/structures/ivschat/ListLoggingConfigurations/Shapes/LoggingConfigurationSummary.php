@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ivschat\ListLoggingConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $id
- * @property \Aws\Api\DateTimeResult $createTime
- * @property \Aws\Api\DateTimeResult $updateTime
- * @property string $name
- * @property DestinationConfiguration $destinationConfiguration
- * @property 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'ACTIVE' $state
- * @property array<string, string> $tags
+ * @property string|null $arn
+ * @property string|null $id
+ * @property \Aws\Api\DateTimeResult|null $createTime
+ * @property \Aws\Api\DateTimeResult|null $updateTime
+ * @property string|null $name
+ * @property DestinationConfiguration|null $destinationConfiguration
+ * @property 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'ACTIVE'|null $state
+ * @property array<string, string>|null $tags
  */
 class LoggingConfigurationSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     id?: string,
-     *     createTime?: \Aws\Api\DateTimeResult,
-     *     updateTime?: \Aws\Api\DateTimeResult,
-     *     name?: string,
-     *     destinationConfiguration?: DestinationConfiguration,
-     *     state?: 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'ACTIVE',
-     *     tags?: array<string, string>
+     *     arn?: string|null,
+     *     id?: string|null,
+     *     createTime?: \Aws\Api\DateTimeResult|null,
+     *     updateTime?: \Aws\Api\DateTimeResult|null,
+     *     name?: string|null,
+     *     destinationConfiguration?: DestinationConfiguration|null,
+     *     state?: 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'ACTIVE'|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

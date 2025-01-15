@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CreatorRequestId
  * @property string $Name
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateFirewallRuleGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateFirewallRuleGroupRequest extends Request
      * @param array{
      *     CreatorRequestId: string,
      *     Name: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

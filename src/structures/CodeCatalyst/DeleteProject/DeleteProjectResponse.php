@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $spaceName
  * @property string $name
- * @property string $displayName
+ * @property string|null $displayName
  */
 class DeleteProjectResponse extends Response
 {

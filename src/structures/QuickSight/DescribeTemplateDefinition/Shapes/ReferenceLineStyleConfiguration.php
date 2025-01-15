@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SOLID'|'DASHED'|'DOTTED' $Pattern
- * @property string $Color
+ * @property 'SOLID'|'DASHED'|'DOTTED'|null $Pattern
+ * @property string|null $Color
  */
 class ReferenceLineStyleConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Pattern?: 'SOLID'|'DASHED'|'DOTTED',
-     *     Color?: string
+     *     Pattern?: 'SOLID'|'DASHED'|'DOTTED'|null,
+     *     Color?: string|null
      * } $args
      */
     public function __construct(array $args = [])

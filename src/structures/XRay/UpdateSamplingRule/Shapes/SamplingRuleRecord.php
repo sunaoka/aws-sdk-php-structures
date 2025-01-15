@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\XRay\UpdateSamplingRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SamplingRule $SamplingRule
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $ModifiedAt
+ * @property SamplingRule|null $SamplingRule
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $ModifiedAt
  */
 class SamplingRuleRecord extends Shape
 {
     /**
      * @param array{
-     *     SamplingRule?: SamplingRule,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     ModifiedAt?: \Aws\Api\DateTimeResult
+     *     SamplingRule?: SamplingRule|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     ModifiedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

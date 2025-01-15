@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrimarySource
+ * @property string|null $PrimarySource
  */
 class SourcePriority extends Shape
 {
     /**
-     * @param array{PrimarySource?: string} $args
+     * @param array{PrimarySource?: string|null} $args
      */
     public function __construct(array $args = [])
     {

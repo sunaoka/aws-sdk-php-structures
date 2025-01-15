@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Glacier\UploadArchive;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $location
- * @property string $checksum
- * @property string $archiveId
+ * @property string|null $location
+ * @property string|null $checksum
+ * @property string|null $archiveId
  */
 class UploadArchiveResponse extends Response
 {

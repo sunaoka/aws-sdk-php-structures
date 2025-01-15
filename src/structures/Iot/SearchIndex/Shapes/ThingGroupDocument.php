@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\SearchIndex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $thingGroupName
- * @property string $thingGroupId
- * @property string $thingGroupDescription
- * @property array<string, string> $attributes
- * @property list<string> $parentGroupNames
+ * @property string|null $thingGroupName
+ * @property string|null $thingGroupId
+ * @property string|null $thingGroupDescription
+ * @property array<string, string>|null $attributes
+ * @property list<string>|null $parentGroupNames
  */
 class ThingGroupDocument extends Shape
 {
     /**
      * @param array{
-     *     thingGroupName?: string,
-     *     thingGroupId?: string,
-     *     thingGroupDescription?: string,
-     *     attributes?: array<string, string>,
-     *     parentGroupNames?: list<string>
+     *     thingGroupName?: string|null,
+     *     thingGroupId?: string|null,
+     *     thingGroupDescription?: string|null,
+     *     attributes?: array<string, string>|null,
+     *     parentGroupNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

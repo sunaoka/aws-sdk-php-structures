@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Firehose\StartDeliveryStreamEncryption\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyARN
+ * @property string|null $KeyARN
  * @property 'AWS_OWNED_CMK'|'CUSTOMER_MANAGED_CMK' $KeyType
  */
 class DeliveryStreamEncryptionConfigurationInput extends Shape
 {
     /**
      * @param array{
-     *     KeyARN?: string,
+     *     KeyARN?: string|null,
      *     KeyType: 'AWS_OWNED_CMK'|'CUSTOMER_MANAGED_CMK'
      * } $args
      */

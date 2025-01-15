@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListBillEstimateInputCommi
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $reservedInstancesOfferingId
- * @property int<1, max> $instanceCount
+ * @property string|null $reservedInstancesOfferingId
+ * @property int<1, max>|null $instanceCount
  */
 class AddReservedInstanceAction extends Shape
 {
     /**
      * @param array{
-     *     reservedInstancesOfferingId?: string,
-     *     instanceCount?: int<1, max>
+     *     reservedInstancesOfferingId?: string|null,
+     *     instanceCount?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

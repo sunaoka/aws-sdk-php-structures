@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\ListSecurityControlDefinitions\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DefaultValue
- * @property list<string> $AllowedValues
+ * @property string|null $DefaultValue
+ * @property list<string>|null $AllowedValues
  */
 class EnumConfigurationOptions extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: string,
-     *     AllowedValues?: list<string>
+     *     DefaultValue?: string|null,
+     *     AllowedValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

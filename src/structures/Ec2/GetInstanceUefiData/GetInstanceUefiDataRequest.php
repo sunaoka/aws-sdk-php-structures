@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class GetInstanceUefiDataRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HapgArn
- * @property string $Label
- * @property list<string> $PartitionSerialList
+ * @property string|null $Label
+ * @property list<string>|null $PartitionSerialList
  */
 class ModifyHapgRequest extends Request
 {
     /**
      * @param array{
      *     HapgArn: string,
-     *     Label?: string,
-     *     PartitionSerialList?: list<string>
+     *     Label?: string|null,
+     *     PartitionSerialList?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

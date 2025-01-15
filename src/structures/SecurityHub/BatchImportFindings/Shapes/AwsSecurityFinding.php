@@ -8,48 +8,48 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SchemaVersion
  * @property string $Id
  * @property string $ProductArn
- * @property string $ProductName
- * @property string $CompanyName
- * @property string $Region
+ * @property string|null $ProductName
+ * @property string|null $CompanyName
+ * @property string|null $Region
  * @property string $GeneratorId
  * @property string $AwsAccountId
- * @property list<string> $Types
- * @property string $FirstObservedAt
- * @property string $LastObservedAt
+ * @property list<string>|null $Types
+ * @property string|null $FirstObservedAt
+ * @property string|null $LastObservedAt
  * @property string $CreatedAt
  * @property string $UpdatedAt
- * @property Severity $Severity
- * @property int $Confidence
- * @property int $Criticality
+ * @property Severity|null $Severity
+ * @property int|null $Confidence
+ * @property int|null $Criticality
  * @property string $Title
  * @property string $Description
- * @property Remediation $Remediation
- * @property string $SourceUrl
- * @property array<string, string> $ProductFields
- * @property array<string, string> $UserDefinedFields
- * @property list<Malware> $Malware
- * @property Network $Network
- * @property list<NetworkPathComponent> $NetworkPath
- * @property ProcessDetails $Process
- * @property list<Threat> $Threats
- * @property list<ThreatIntelIndicator> $ThreatIntelIndicators
+ * @property Remediation|null $Remediation
+ * @property string|null $SourceUrl
+ * @property array<string, string>|null $ProductFields
+ * @property array<string, string>|null $UserDefinedFields
+ * @property list<Malware>|null $Malware
+ * @property Network|null $Network
+ * @property list<NetworkPathComponent>|null $NetworkPath
+ * @property ProcessDetails|null $Process
+ * @property list<Threat>|null $Threats
+ * @property list<ThreatIntelIndicator>|null $ThreatIntelIndicators
  * @property list<Resource> $Resources
- * @property Compliance $Compliance
- * @property 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE' $VerificationState
- * @property 'NEW'|'ASSIGNED'|'IN_PROGRESS'|'DEFERRED'|'RESOLVED' $WorkflowState
- * @property Workflow $Workflow
- * @property 'ACTIVE'|'ARCHIVED' $RecordState
- * @property list<RelatedFinding> $RelatedFindings
- * @property Note $Note
- * @property list<Vulnerability> $Vulnerabilities
- * @property PatchSummary $PatchSummary
- * @property Action $Action
- * @property FindingProviderFields $FindingProviderFields
- * @property bool $Sample
- * @property GeneratorDetails $GeneratorDetails
- * @property string $ProcessedAt
- * @property string $AwsAccountName
- * @property Detection $Detection
+ * @property Compliance|null $Compliance
+ * @property 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE'|null $VerificationState
+ * @property 'NEW'|'ASSIGNED'|'IN_PROGRESS'|'DEFERRED'|'RESOLVED'|null $WorkflowState
+ * @property Workflow|null $Workflow
+ * @property 'ACTIVE'|'ARCHIVED'|null $RecordState
+ * @property list<RelatedFinding>|null $RelatedFindings
+ * @property Note|null $Note
+ * @property list<Vulnerability>|null $Vulnerabilities
+ * @property PatchSummary|null $PatchSummary
+ * @property Action|null $Action
+ * @property FindingProviderFields|null $FindingProviderFields
+ * @property bool|null $Sample
+ * @property GeneratorDetails|null $GeneratorDetails
+ * @property string|null $ProcessedAt
+ * @property string|null $AwsAccountName
+ * @property Detection|null $Detection
  */
 class AwsSecurityFinding extends Shape
 {
@@ -58,48 +58,48 @@ class AwsSecurityFinding extends Shape
      *     SchemaVersion: string,
      *     Id: string,
      *     ProductArn: string,
-     *     ProductName?: string,
-     *     CompanyName?: string,
-     *     Region?: string,
+     *     ProductName?: string|null,
+     *     CompanyName?: string|null,
+     *     Region?: string|null,
      *     GeneratorId: string,
      *     AwsAccountId: string,
-     *     Types?: list<string>,
-     *     FirstObservedAt?: string,
-     *     LastObservedAt?: string,
+     *     Types?: list<string>|null,
+     *     FirstObservedAt?: string|null,
+     *     LastObservedAt?: string|null,
      *     CreatedAt: string,
      *     UpdatedAt: string,
-     *     Severity?: Severity,
-     *     Confidence?: int,
-     *     Criticality?: int,
+     *     Severity?: Severity|null,
+     *     Confidence?: int|null,
+     *     Criticality?: int|null,
      *     Title: string,
      *     Description: string,
-     *     Remediation?: Remediation,
-     *     SourceUrl?: string,
-     *     ProductFields?: array<string, string>,
-     *     UserDefinedFields?: array<string, string>,
-     *     Malware?: list<Malware>,
-     *     Network?: Network,
-     *     NetworkPath?: list<NetworkPathComponent>,
-     *     Process?: ProcessDetails,
-     *     Threats?: list<Threat>,
-     *     ThreatIntelIndicators?: list<ThreatIntelIndicator>,
+     *     Remediation?: Remediation|null,
+     *     SourceUrl?: string|null,
+     *     ProductFields?: array<string, string>|null,
+     *     UserDefinedFields?: array<string, string>|null,
+     *     Malware?: list<Malware>|null,
+     *     Network?: Network|null,
+     *     NetworkPath?: list<NetworkPathComponent>|null,
+     *     Process?: ProcessDetails|null,
+     *     Threats?: list<Threat>|null,
+     *     ThreatIntelIndicators?: list<ThreatIntelIndicator>|null,
      *     Resources: list<Resource>,
-     *     Compliance?: Compliance,
-     *     VerificationState?: 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE',
-     *     WorkflowState?: 'NEW'|'ASSIGNED'|'IN_PROGRESS'|'DEFERRED'|'RESOLVED',
-     *     Workflow?: Workflow,
-     *     RecordState?: 'ACTIVE'|'ARCHIVED',
-     *     RelatedFindings?: list<RelatedFinding>,
-     *     Note?: Note,
-     *     Vulnerabilities?: list<Vulnerability>,
-     *     PatchSummary?: PatchSummary,
-     *     Action?: Action,
-     *     FindingProviderFields?: FindingProviderFields,
-     *     Sample?: bool,
-     *     GeneratorDetails?: GeneratorDetails,
-     *     ProcessedAt?: string,
-     *     AwsAccountName?: string,
-     *     Detection?: Detection
+     *     Compliance?: Compliance|null,
+     *     VerificationState?: 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE'|null,
+     *     WorkflowState?: 'NEW'|'ASSIGNED'|'IN_PROGRESS'|'DEFERRED'|'RESOLVED'|null,
+     *     Workflow?: Workflow|null,
+     *     RecordState?: 'ACTIVE'|'ARCHIVED'|null,
+     *     RelatedFindings?: list<RelatedFinding>|null,
+     *     Note?: Note|null,
+     *     Vulnerabilities?: list<Vulnerability>|null,
+     *     PatchSummary?: PatchSummary|null,
+     *     Action?: Action|null,
+     *     FindingProviderFields?: FindingProviderFields|null,
+     *     Sample?: bool|null,
+     *     GeneratorDetails?: GeneratorDetails|null,
+     *     ProcessedAt?: string|null,
+     *     AwsAccountName?: string|null,
+     *     Detection?: Detection|null
      * } $args
      */
     public function __construct(array $args)

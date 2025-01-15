@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\BatchUpdateRecommendationStatus\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resourceId
- * @property string $targetAccountId
- * @property string $targetRegion
+ * @property string|null $resourceId
+ * @property string|null $targetAccountId
+ * @property string|null $targetRegion
  */
 class UpdateRecommendationStatusItem extends Shape
 {
     /**
      * @param array{
-     *     resourceId?: string,
-     *     targetAccountId?: string,
-     *     targetRegion?: string
+     *     resourceId?: string|null,
+     *     targetAccountId?: string|null,
+     *     targetRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

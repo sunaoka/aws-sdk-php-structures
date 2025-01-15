@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $stateMachineArn
- * @property string $name
- * @property string $input
- * @property string $traceHeader
+ * @property string|null $name
+ * @property string|null $input
+ * @property string|null $traceHeader
  */
 class StartExecutionRequest extends Request
 {
     /**
      * @param array{
      *     stateMachineArn: string,
-     *     name?: string,
-     *     input?: string,
-     *     traceHeader?: string
+     *     name?: string|null,
+     *     input?: string|null,
+     *     traceHeader?: string|null
      * } $args
      */
     public function __construct(array $args)

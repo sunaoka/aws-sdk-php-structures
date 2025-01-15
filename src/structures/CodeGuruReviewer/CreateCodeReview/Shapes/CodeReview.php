@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\CreateCodeReview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $CodeReviewArn
- * @property string $RepositoryName
- * @property string $Owner
- * @property 'CodeCommit'|'GitHub'|'Bitbucket'|'GitHubEnterpriseServer'|'S3Bucket' $ProviderType
- * @property 'Completed'|'Pending'|'Failed'|'Deleting' $State
- * @property string $StateReason
- * @property \Aws\Api\DateTimeResult $CreatedTimeStamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimeStamp
- * @property 'PullRequest'|'RepositoryAnalysis' $Type
- * @property string $PullRequestId
- * @property SourceCodeType $SourceCodeType
- * @property string $AssociationArn
- * @property Metrics $Metrics
- * @property list<'Security'|'CodeQuality'> $AnalysisTypes
- * @property 'Present'|'Absent'|'PresentWithErrors' $ConfigFileState
+ * @property string|null $Name
+ * @property string|null $CodeReviewArn
+ * @property string|null $RepositoryName
+ * @property string|null $Owner
+ * @property 'CodeCommit'|'GitHub'|'Bitbucket'|'GitHubEnterpriseServer'|'S3Bucket'|null $ProviderType
+ * @property 'Completed'|'Pending'|'Failed'|'Deleting'|null $State
+ * @property string|null $StateReason
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimeStamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimeStamp
+ * @property 'PullRequest'|'RepositoryAnalysis'|null $Type
+ * @property string|null $PullRequestId
+ * @property SourceCodeType|null $SourceCodeType
+ * @property string|null $AssociationArn
+ * @property Metrics|null $Metrics
+ * @property list<'Security'|'CodeQuality'>|null $AnalysisTypes
+ * @property 'Present'|'Absent'|'PresentWithErrors'|null $ConfigFileState
  */
 class CodeReview extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     CodeReviewArn?: string,
-     *     RepositoryName?: string,
-     *     Owner?: string,
-     *     ProviderType?: 'CodeCommit'|'GitHub'|'Bitbucket'|'GitHubEnterpriseServer'|'S3Bucket',
-     *     State?: 'Completed'|'Pending'|'Failed'|'Deleting',
-     *     StateReason?: string,
-     *     CreatedTimeStamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimeStamp?: \Aws\Api\DateTimeResult,
-     *     Type?: 'PullRequest'|'RepositoryAnalysis',
-     *     PullRequestId?: string,
-     *     SourceCodeType?: SourceCodeType,
-     *     AssociationArn?: string,
-     *     Metrics?: Metrics,
-     *     AnalysisTypes?: list<'Security'|'CodeQuality'>,
-     *     ConfigFileState?: 'Present'|'Absent'|'PresentWithErrors'
+     *     Name?: string|null,
+     *     CodeReviewArn?: string|null,
+     *     RepositoryName?: string|null,
+     *     Owner?: string|null,
+     *     ProviderType?: 'CodeCommit'|'GitHub'|'Bitbucket'|'GitHubEnterpriseServer'|'S3Bucket'|null,
+     *     State?: 'Completed'|'Pending'|'Failed'|'Deleting'|null,
+     *     StateReason?: string|null,
+     *     CreatedTimeStamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimeStamp?: \Aws\Api\DateTimeResult|null,
+     *     Type?: 'PullRequest'|'RepositoryAnalysis'|null,
+     *     PullRequestId?: string|null,
+     *     SourceCodeType?: SourceCodeType|null,
+     *     AssociationArn?: string|null,
+     *     Metrics?: Metrics|null,
+     *     AnalysisTypes?: list<'Security'|'CodeQuality'>|null,
+     *     ConfigFileState?: 'Present'|'Absent'|'PresentWithErrors'|null
      * } $args
      */
     public function __construct(array $args = [])

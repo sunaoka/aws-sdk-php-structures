@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutDeliverySource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property list<string> $resourceArns
- * @property string $service
- * @property string $logType
- * @property array<string, string> $tags
+ * @property string|null $name
+ * @property string|null $arn
+ * @property list<string>|null $resourceArns
+ * @property string|null $service
+ * @property string|null $logType
+ * @property array<string, string>|null $tags
  */
 class DeliverySource extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     resourceArns?: list<string>,
-     *     service?: string,
-     *     logType?: string,
-     *     tags?: array<string, string>
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     resourceArns?: list<string>|null,
+     *     service?: string|null,
+     *     logType?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

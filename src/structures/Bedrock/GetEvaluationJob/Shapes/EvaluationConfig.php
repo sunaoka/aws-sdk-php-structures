@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetEvaluationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AutomatedEvaluationConfig $automated
- * @property HumanEvaluationConfig $human
+ * @property AutomatedEvaluationConfig|null $automated
+ * @property HumanEvaluationConfig|null $human
  */
 class EvaluationConfig extends Shape
 {
     /**
      * @param array{
-     *     automated?: AutomatedEvaluationConfig,
-     *     human?: HumanEvaluationConfig
+     *     automated?: AutomatedEvaluationConfig|null,
+     *     human?: HumanEvaluationConfig|null
      * } $args
      */
     public function __construct(array $args = [])

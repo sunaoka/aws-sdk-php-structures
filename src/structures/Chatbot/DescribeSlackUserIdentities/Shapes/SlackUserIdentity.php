@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ChatConfigurationArn
  * @property string $SlackTeamId
  * @property string $SlackUserId
- * @property string $AwsUserIdentity
+ * @property string|null $AwsUserIdentity
  */
 class SlackUserIdentity extends Shape
 {
@@ -19,7 +19,7 @@ class SlackUserIdentity extends Shape
      *     ChatConfigurationArn: string,
      *     SlackTeamId: string,
      *     SlackUserId: string,
-     *     AwsUserIdentity?: string
+     *     AwsUserIdentity?: string|null
      * } $args
      */
     public function __construct(array $args)

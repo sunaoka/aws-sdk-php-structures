@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAIAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $answerGenerationAIGuardrailId
- * @property string $answerGenerationAIPromptId
- * @property list<AssociationConfiguration> $associationConfigurations
- * @property string $intentLabelingGenerationAIPromptId
- * @property string $locale
- * @property string $queryReformulationAIPromptId
+ * @property string|null $answerGenerationAIGuardrailId
+ * @property string|null $answerGenerationAIPromptId
+ * @property list<AssociationConfiguration>|null $associationConfigurations
+ * @property string|null $intentLabelingGenerationAIPromptId
+ * @property string|null $locale
+ * @property string|null $queryReformulationAIPromptId
  */
 class AnswerRecommendationAIAgentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     answerGenerationAIGuardrailId?: string,
-     *     answerGenerationAIPromptId?: string,
-     *     associationConfigurations?: list<AssociationConfiguration>,
-     *     intentLabelingGenerationAIPromptId?: string,
-     *     locale?: string,
-     *     queryReformulationAIPromptId?: string
+     *     answerGenerationAIGuardrailId?: string|null,
+     *     answerGenerationAIPromptId?: string|null,
+     *     associationConfigurations?: list<AssociationConfiguration>|null,
+     *     intentLabelingGenerationAIPromptId?: string|null,
+     *     locale?: string|null,
+     *     queryReformulationAIPromptId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

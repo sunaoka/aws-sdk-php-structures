@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorCo
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'UNREGISTERED'|'ACTIVE' $CollectorStatus
- * @property bool $LocalCollectorS3Access
- * @property bool $WebCollectorS3Access
- * @property bool $WebCollectorGrantedRoleBasedAccess
+ * @property 'UNREGISTERED'|'ACTIVE'|null $CollectorStatus
+ * @property bool|null $LocalCollectorS3Access
+ * @property bool|null $WebCollectorS3Access
+ * @property bool|null $WebCollectorGrantedRoleBasedAccess
  */
 class CollectorHealthCheck extends Shape
 {
     /**
      * @param array{
-     *     CollectorStatus?: 'UNREGISTERED'|'ACTIVE',
-     *     LocalCollectorS3Access?: bool,
-     *     WebCollectorS3Access?: bool,
-     *     WebCollectorGrantedRoleBasedAccess?: bool
+     *     CollectorStatus?: 'UNREGISTERED'|'ACTIVE'|null,
+     *     LocalCollectorS3Access?: bool|null,
+     *     WebCollectorS3Access?: bool|null,
+     *     WebCollectorGrantedRoleBasedAccess?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

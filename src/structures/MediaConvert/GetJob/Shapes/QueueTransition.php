@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DestinationQueue
- * @property string $SourceQueue
- * @property \Aws\Api\DateTimeResult $Timestamp
+ * @property string|null $DestinationQueue
+ * @property string|null $SourceQueue
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
  */
 class QueueTransition extends Shape
 {
     /**
      * @param array{
-     *     DestinationQueue?: string,
-     *     SourceQueue?: string,
-     *     Timestamp?: \Aws\Api\DateTimeResult
+     *     DestinationQueue?: string|null,
+     *     SourceQueue?: string|null,
+     *     Timestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

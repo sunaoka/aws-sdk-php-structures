@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\ImportKey\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RootCertificatePublicKey $RootCertificatePublicKey
- * @property TrustedCertificatePublicKey $TrustedCertificatePublicKey
- * @property ImportTr31KeyBlock $Tr31KeyBlock
- * @property ImportTr34KeyBlock $Tr34KeyBlock
- * @property ImportKeyCryptogram $KeyCryptogram
+ * @property RootCertificatePublicKey|null $RootCertificatePublicKey
+ * @property TrustedCertificatePublicKey|null $TrustedCertificatePublicKey
+ * @property ImportTr31KeyBlock|null $Tr31KeyBlock
+ * @property ImportTr34KeyBlock|null $Tr34KeyBlock
+ * @property ImportKeyCryptogram|null $KeyCryptogram
  */
 class ImportKeyMaterial extends Shape
 {
     /**
      * @param array{
-     *     RootCertificatePublicKey?: RootCertificatePublicKey,
-     *     TrustedCertificatePublicKey?: TrustedCertificatePublicKey,
-     *     Tr31KeyBlock?: ImportTr31KeyBlock,
-     *     Tr34KeyBlock?: ImportTr34KeyBlock,
-     *     KeyCryptogram?: ImportKeyCryptogram
+     *     RootCertificatePublicKey?: RootCertificatePublicKey|null,
+     *     TrustedCertificatePublicKey?: TrustedCertificatePublicKey|null,
+     *     Tr31KeyBlock?: ImportTr31KeyBlock|null,
+     *     Tr34KeyBlock?: ImportTr34KeyBlock|null,
+     *     KeyCryptogram?: ImportKeyCryptogram|null
      * } $args
      */
     public function __construct(array $args = [])

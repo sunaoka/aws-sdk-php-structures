@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\CreateEnvironment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $EnvironmentName
- * @property string $EnvironmentId
- * @property string $ApplicationName
- * @property string $VersionLabel
- * @property string $SolutionStackName
- * @property string $PlatformArn
- * @property string $TemplateName
- * @property string $Description
- * @property string $EndpointURL
- * @property string $CNAME
- * @property \Aws\Api\DateTimeResult $DateCreated
- * @property \Aws\Api\DateTimeResult $DateUpdated
- * @property 'Aborting'|'Launching'|'Updating'|'LinkingFrom'|'LinkingTo'|'Ready'|'Terminating'|'Terminated' $Status
- * @property bool $AbortableOperationInProgress
- * @property 'Green'|'Yellow'|'Red'|'Grey' $Health
- * @property 'NoData'|'Unknown'|'Pending'|'Ok'|'Info'|'Warning'|'Degraded'|'Severe'|'Suspended' $HealthStatus
- * @property Shapes\EnvironmentResourcesDescription $Resources
- * @property Shapes\EnvironmentTier $Tier
- * @property list<Shapes\EnvironmentLink> $EnvironmentLinks
- * @property string $EnvironmentArn
- * @property string $OperationsRole
+ * @property string|null $EnvironmentName
+ * @property string|null $EnvironmentId
+ * @property string|null $ApplicationName
+ * @property string|null $VersionLabel
+ * @property string|null $SolutionStackName
+ * @property string|null $PlatformArn
+ * @property string|null $TemplateName
+ * @property string|null $Description
+ * @property string|null $EndpointURL
+ * @property string|null $CNAME
+ * @property \Aws\Api\DateTimeResult|null $DateCreated
+ * @property \Aws\Api\DateTimeResult|null $DateUpdated
+ * @property 'Aborting'|'Launching'|'Updating'|'LinkingFrom'|'LinkingTo'|'Ready'|'Terminating'|'Terminated'|null $Status
+ * @property bool|null $AbortableOperationInProgress
+ * @property 'Green'|'Yellow'|'Red'|'Grey'|null $Health
+ * @property 'NoData'|'Unknown'|'Pending'|'Ok'|'Info'|'Warning'|'Degraded'|'Severe'|'Suspended'|null $HealthStatus
+ * @property Shapes\EnvironmentResourcesDescription|null $Resources
+ * @property Shapes\EnvironmentTier|null $Tier
+ * @property list<Shapes\EnvironmentLink>|null $EnvironmentLinks
+ * @property string|null $EnvironmentArn
+ * @property string|null $OperationsRole
  */
 class CreateEnvironmentResponse extends Response
 {

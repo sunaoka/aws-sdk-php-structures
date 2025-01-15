@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Type
- * @property string $ImageId
- * @property list<string> $IpV4Addresses
- * @property list<string> $IpV6Addresses
- * @property string $KeyName
- * @property string $IamInstanceProfileArn
- * @property string $VpcId
- * @property string $SubnetId
- * @property string $LaunchedAt
- * @property list<AwsEc2InstanceNetworkInterfacesDetails> $NetworkInterfaces
- * @property string $VirtualizationType
- * @property AwsEc2InstanceMetadataOptions $MetadataOptions
- * @property AwsEc2InstanceMonitoringDetails $Monitoring
+ * @property string|null $Type
+ * @property string|null $ImageId
+ * @property list<string>|null $IpV4Addresses
+ * @property list<string>|null $IpV6Addresses
+ * @property string|null $KeyName
+ * @property string|null $IamInstanceProfileArn
+ * @property string|null $VpcId
+ * @property string|null $SubnetId
+ * @property string|null $LaunchedAt
+ * @property list<AwsEc2InstanceNetworkInterfacesDetails>|null $NetworkInterfaces
+ * @property string|null $VirtualizationType
+ * @property AwsEc2InstanceMetadataOptions|null $MetadataOptions
+ * @property AwsEc2InstanceMonitoringDetails|null $Monitoring
  */
 class AwsEc2InstanceDetails extends Shape
 {
     /**
      * @param array{
-     *     Type?: string,
-     *     ImageId?: string,
-     *     IpV4Addresses?: list<string>,
-     *     IpV6Addresses?: list<string>,
-     *     KeyName?: string,
-     *     IamInstanceProfileArn?: string,
-     *     VpcId?: string,
-     *     SubnetId?: string,
-     *     LaunchedAt?: string,
-     *     NetworkInterfaces?: list<AwsEc2InstanceNetworkInterfacesDetails>,
-     *     VirtualizationType?: string,
-     *     MetadataOptions?: AwsEc2InstanceMetadataOptions,
-     *     Monitoring?: AwsEc2InstanceMonitoringDetails
+     *     Type?: string|null,
+     *     ImageId?: string|null,
+     *     IpV4Addresses?: list<string>|null,
+     *     IpV6Addresses?: list<string>|null,
+     *     KeyName?: string|null,
+     *     IamInstanceProfileArn?: string|null,
+     *     VpcId?: string|null,
+     *     SubnetId?: string|null,
+     *     LaunchedAt?: string|null,
+     *     NetworkInterfaces?: list<AwsEc2InstanceNetworkInterfacesDetails>|null,
+     *     VirtualizationType?: string|null,
+     *     MetadataOptions?: AwsEc2InstanceMetadataOptions|null,
+     *     Monitoring?: AwsEc2InstanceMonitoringDetails|null
      * } $args
      */
     public function __construct(array $args = [])

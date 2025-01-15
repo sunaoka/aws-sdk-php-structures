@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingName
- * @property string $thingTypeName
- * @property Shapes\AttributePayload $attributePayload
- * @property string $billingGroupName
+ * @property string|null $thingTypeName
+ * @property Shapes\AttributePayload|null $attributePayload
+ * @property string|null $billingGroupName
  */
 class CreateThingRequest extends Request
 {
     /**
      * @param array{
      *     thingName: string,
-     *     thingTypeName?: string,
-     *     attributePayload?: Shapes\AttributePayload,
-     *     billingGroupName?: string
+     *     thingTypeName?: string|null,
+     *     attributePayload?: Shapes\AttributePayload|null,
+     *     billingGroupName?: string|null
      * } $args
      */
     public function __construct(array $args)

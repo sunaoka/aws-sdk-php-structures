@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialColor $FillColor
- * @property GeospatialColor $StrokeColor
- * @property GeospatialLineWidth $StrokeWidth
- * @property GeospatialCircleRadius $CircleRadius
+ * @property GeospatialColor|null $FillColor
+ * @property GeospatialColor|null $StrokeColor
+ * @property GeospatialLineWidth|null $StrokeWidth
+ * @property GeospatialCircleRadius|null $CircleRadius
  */
 class GeospatialCircleSymbolStyle extends Shape
 {
     /**
      * @param array{
-     *     FillColor?: GeospatialColor,
-     *     StrokeColor?: GeospatialColor,
-     *     StrokeWidth?: GeospatialLineWidth,
-     *     CircleRadius?: GeospatialCircleRadius
+     *     FillColor?: GeospatialColor|null,
+     *     StrokeColor?: GeospatialColor|null,
+     *     StrokeWidth?: GeospatialLineWidth|null,
+     *     CircleRadius?: GeospatialCircleRadius|null
      * } $args
      */
     public function __construct(array $args = [])

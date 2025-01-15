@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeCustomDomainAssociations\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustomDomainName
- * @property string $ClusterIdentifier
+ * @property string|null $CustomDomainName
+ * @property string|null $ClusterIdentifier
  */
 class CertificateAssociation extends Shape
 {
     /**
      * @param array{
-     *     CustomDomainName?: string,
-     *     ClusterIdentifier?: string
+     *     CustomDomainName?: string|null,
+     *     ClusterIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

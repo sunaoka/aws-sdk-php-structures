@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\BatchDisassociateClientDeviceFromC
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\DisassociateClientDeviceFromCoreDeviceEntry> $entries
+ * @property list<Shapes\DisassociateClientDeviceFromCoreDeviceEntry>|null $entries
  * @property string $coreDeviceThingName
  */
 class BatchDisassociateClientDeviceFromCoreDeviceRequest extends Request
 {
     /**
      * @param array{
-     *     entries?: list<Shapes\DisassociateClientDeviceFromCoreDeviceEntry>,
+     *     entries?: list<Shapes\DisassociateClientDeviceFromCoreDeviceEntry>|null,
      *     coreDeviceThingName: string
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableResourceNameDnsAAAARecord
- * @property bool $EnableResourceNameDnsARecord
- * @property string $HostnameType
+ * @property bool|null $EnableResourceNameDnsAAAARecord
+ * @property bool|null $EnableResourceNameDnsARecord
+ * @property string|null $HostnameType
  */
 class AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetails extends Shape
 {
     /**
      * @param array{
-     *     EnableResourceNameDnsAAAARecord?: bool,
-     *     EnableResourceNameDnsARecord?: bool,
-     *     HostnameType?: string
+     *     EnableResourceNameDnsAAAARecord?: bool|null,
+     *     EnableResourceNameDnsARecord?: bool|null,
+     *     HostnameType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SessionId
- * @property string $RequestOrigin
- * @property string $NextToken
+ * @property string|null $RequestOrigin
+ * @property string|null $NextToken
  */
 class ListStatementsRequest extends Request
 {
     /**
      * @param array{
      *     SessionId: string,
-     *     RequestOrigin?: string,
-     *     NextToken?: string
+     *     RequestOrigin?: string|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

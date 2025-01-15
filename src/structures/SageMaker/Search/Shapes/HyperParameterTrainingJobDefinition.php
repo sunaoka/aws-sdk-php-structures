@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DefinitionName
- * @property HyperParameterTuningJobObjective $TuningObjective
- * @property ParameterRanges $HyperParameterRanges
- * @property array<string, string> $StaticHyperParameters
+ * @property string|null $DefinitionName
+ * @property HyperParameterTuningJobObjective|null $TuningObjective
+ * @property ParameterRanges|null $HyperParameterRanges
+ * @property array<string, string>|null $StaticHyperParameters
  * @property HyperParameterAlgorithmSpecification $AlgorithmSpecification
  * @property string $RoleArn
- * @property list<Channel> $InputDataConfig
- * @property VpcConfig $VpcConfig
+ * @property list<Channel>|null $InputDataConfig
+ * @property VpcConfig|null $VpcConfig
  * @property OutputDataConfig $OutputDataConfig
- * @property ResourceConfig $ResourceConfig
- * @property HyperParameterTuningResourceConfig $HyperParameterTuningResourceConfig
+ * @property ResourceConfig|null $ResourceConfig
+ * @property HyperParameterTuningResourceConfig|null $HyperParameterTuningResourceConfig
  * @property StoppingCondition $StoppingCondition
- * @property bool $EnableNetworkIsolation
- * @property bool $EnableInterContainerTrafficEncryption
- * @property bool $EnableManagedSpotTraining
- * @property CheckpointConfig $CheckpointConfig
- * @property RetryStrategy $RetryStrategy
- * @property array<string, string> $Environment
+ * @property bool|null $EnableNetworkIsolation
+ * @property bool|null $EnableInterContainerTrafficEncryption
+ * @property bool|null $EnableManagedSpotTraining
+ * @property CheckpointConfig|null $CheckpointConfig
+ * @property RetryStrategy|null $RetryStrategy
+ * @property array<string, string>|null $Environment
  */
 class HyperParameterTrainingJobDefinition extends Shape
 {
     /**
      * @param array{
-     *     DefinitionName?: string,
-     *     TuningObjective?: HyperParameterTuningJobObjective,
-     *     HyperParameterRanges?: ParameterRanges,
-     *     StaticHyperParameters?: array<string, string>,
+     *     DefinitionName?: string|null,
+     *     TuningObjective?: HyperParameterTuningJobObjective|null,
+     *     HyperParameterRanges?: ParameterRanges|null,
+     *     StaticHyperParameters?: array<string, string>|null,
      *     AlgorithmSpecification: HyperParameterAlgorithmSpecification,
      *     RoleArn: string,
-     *     InputDataConfig?: list<Channel>,
-     *     VpcConfig?: VpcConfig,
+     *     InputDataConfig?: list<Channel>|null,
+     *     VpcConfig?: VpcConfig|null,
      *     OutputDataConfig: OutputDataConfig,
-     *     ResourceConfig?: ResourceConfig,
-     *     HyperParameterTuningResourceConfig?: HyperParameterTuningResourceConfig,
+     *     ResourceConfig?: ResourceConfig|null,
+     *     HyperParameterTuningResourceConfig?: HyperParameterTuningResourceConfig|null,
      *     StoppingCondition: StoppingCondition,
-     *     EnableNetworkIsolation?: bool,
-     *     EnableInterContainerTrafficEncryption?: bool,
-     *     EnableManagedSpotTraining?: bool,
-     *     CheckpointConfig?: CheckpointConfig,
-     *     RetryStrategy?: RetryStrategy,
-     *     Environment?: array<string, string>
+     *     EnableNetworkIsolation?: bool|null,
+     *     EnableInterContainerTrafficEncryption?: bool|null,
+     *     EnableManagedSpotTraining?: bool|null,
+     *     CheckpointConfig?: CheckpointConfig|null,
+     *     RetryStrategy?: RetryStrategy|null,
+     *     Environment?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

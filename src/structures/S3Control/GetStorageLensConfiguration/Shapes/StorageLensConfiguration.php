@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property AccountLevel $AccountLevel
- * @property IncludeShape $Include
- * @property Exclude $Exclude
- * @property StorageLensDataExport $DataExport
+ * @property IncludeShape|null $Include
+ * @property Exclude|null $Exclude
+ * @property StorageLensDataExport|null $DataExport
  * @property bool $IsEnabled
- * @property StorageLensAwsOrg $AwsOrg
- * @property string $StorageLensArn
+ * @property StorageLensAwsOrg|null $AwsOrg
+ * @property string|null $StorageLensArn
  */
 class StorageLensConfiguration extends Shape
 {
@@ -20,12 +20,12 @@ class StorageLensConfiguration extends Shape
      * @param array{
      *     Id: string,
      *     AccountLevel: AccountLevel,
-     *     Include?: IncludeShape,
-     *     Exclude?: Exclude,
-     *     DataExport?: StorageLensDataExport,
+     *     Include?: IncludeShape|null,
+     *     Exclude?: Exclude|null,
+     *     DataExport?: StorageLensDataExport|null,
      *     IsEnabled: bool,
-     *     AwsOrg?: StorageLensAwsOrg,
-     *     StorageLensArn?: string
+     *     AwsOrg?: StorageLensAwsOrg|null,
+     *     StorageLensArn?: string|null
      * } $args
      */
     public function __construct(array $args)

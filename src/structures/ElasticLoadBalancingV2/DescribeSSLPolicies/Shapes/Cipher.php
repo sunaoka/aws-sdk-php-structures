@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeSSLPolicies\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property int $Priority
+ * @property string|null $Name
+ * @property int|null $Priority
  */
 class Cipher extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Priority?: int
+     *     Name?: string|null,
+     *     Priority?: int|null
      * } $args
      */
     public function __construct(array $args = [])

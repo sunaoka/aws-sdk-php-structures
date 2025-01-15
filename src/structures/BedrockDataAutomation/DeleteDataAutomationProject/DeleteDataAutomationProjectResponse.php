@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $projectArn
- * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED' $status
+ * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED'|null $status
  */
 class DeleteDataAutomationProjectResponse extends Response
 {

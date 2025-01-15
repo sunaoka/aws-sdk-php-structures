@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccessKeyDetails $AccessKeyDetails
- * @property list<S3BucketDetail> $S3BucketDetails
- * @property InstanceDetails $InstanceDetails
- * @property EksClusterDetails $EksClusterDetails
- * @property KubernetesDetails $KubernetesDetails
- * @property string $ResourceType
- * @property EbsVolumeDetails $EbsVolumeDetails
- * @property EcsClusterDetails $EcsClusterDetails
- * @property Container $ContainerDetails
- * @property RdsDbInstanceDetails $RdsDbInstanceDetails
- * @property RdsLimitlessDbDetails $RdsLimitlessDbDetails
- * @property RdsDbUserDetails $RdsDbUserDetails
- * @property LambdaDetails $LambdaDetails
+ * @property AccessKeyDetails|null $AccessKeyDetails
+ * @property list<S3BucketDetail>|null $S3BucketDetails
+ * @property InstanceDetails|null $InstanceDetails
+ * @property EksClusterDetails|null $EksClusterDetails
+ * @property KubernetesDetails|null $KubernetesDetails
+ * @property string|null $ResourceType
+ * @property EbsVolumeDetails|null $EbsVolumeDetails
+ * @property EcsClusterDetails|null $EcsClusterDetails
+ * @property Container|null $ContainerDetails
+ * @property RdsDbInstanceDetails|null $RdsDbInstanceDetails
+ * @property RdsLimitlessDbDetails|null $RdsLimitlessDbDetails
+ * @property RdsDbUserDetails|null $RdsDbUserDetails
+ * @property LambdaDetails|null $LambdaDetails
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     AccessKeyDetails?: AccessKeyDetails,
-     *     S3BucketDetails?: list<S3BucketDetail>,
-     *     InstanceDetails?: InstanceDetails,
-     *     EksClusterDetails?: EksClusterDetails,
-     *     KubernetesDetails?: KubernetesDetails,
-     *     ResourceType?: string,
-     *     EbsVolumeDetails?: EbsVolumeDetails,
-     *     EcsClusterDetails?: EcsClusterDetails,
-     *     ContainerDetails?: Container,
-     *     RdsDbInstanceDetails?: RdsDbInstanceDetails,
-     *     RdsLimitlessDbDetails?: RdsLimitlessDbDetails,
-     *     RdsDbUserDetails?: RdsDbUserDetails,
-     *     LambdaDetails?: LambdaDetails
+     *     AccessKeyDetails?: AccessKeyDetails|null,
+     *     S3BucketDetails?: list<S3BucketDetail>|null,
+     *     InstanceDetails?: InstanceDetails|null,
+     *     EksClusterDetails?: EksClusterDetails|null,
+     *     KubernetesDetails?: KubernetesDetails|null,
+     *     ResourceType?: string|null,
+     *     EbsVolumeDetails?: EbsVolumeDetails|null,
+     *     EcsClusterDetails?: EcsClusterDetails|null,
+     *     ContainerDetails?: Container|null,
+     *     RdsDbInstanceDetails?: RdsDbInstanceDetails|null,
+     *     RdsLimitlessDbDetails?: RdsLimitlessDbDetails|null,
+     *     RdsDbUserDetails?: RdsDbUserDetails|null,
+     *     LambdaDetails?: LambdaDetails|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectProtectiveEquipment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Confidence
- * @property bool $Value
+ * @property float|null $Confidence
+ * @property bool|null $Value
  */
 class CoversBodyPart extends Shape
 {
     /**
      * @param array{
-     *     Confidence?: float,
-     *     Value?: bool
+     *     Confidence?: float|null,
+     *     Value?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

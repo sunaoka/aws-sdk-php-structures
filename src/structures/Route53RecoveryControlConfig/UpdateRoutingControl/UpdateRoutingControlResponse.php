@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryControlConfig\UpdateRoutingContr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RoutingControl $RoutingControl
+ * @property Shapes\RoutingControl|null $RoutingControl
  */
 class UpdateRoutingControlResponse extends Response
 {

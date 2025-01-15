@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetSdkTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $friendlyName
- * @property string $description
- * @property bool $required
- * @property string $defaultValue
+ * @property string|null $name
+ * @property string|null $friendlyName
+ * @property string|null $description
+ * @property bool|null $required
+ * @property string|null $defaultValue
  */
 class SdkConfigurationProperty extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     friendlyName?: string,
-     *     description?: string,
-     *     required?: bool,
-     *     defaultValue?: string
+     *     name?: string|null,
+     *     friendlyName?: string|null,
+     *     description?: string|null,
+     *     required?: bool|null,
+     *     defaultValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

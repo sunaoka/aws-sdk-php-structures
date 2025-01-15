@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EvaluationFormId
  * @property string $EvaluationFormArn
  * @property string $Title
- * @property string $Description
+ * @property string|null $Description
  * @property list<EvaluationFormItem> $Items
- * @property EvaluationFormScoringStrategy $ScoringStrategy
+ * @property EvaluationFormScoringStrategy|null $ScoringStrategy
  */
 class EvaluationFormContent extends Shape
 {
@@ -21,9 +21,9 @@ class EvaluationFormContent extends Shape
      *     EvaluationFormId: string,
      *     EvaluationFormArn: string,
      *     Title: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Items: list<EvaluationFormItem>,
-     *     ScoringStrategy?: EvaluationFormScoringStrategy
+     *     ScoringStrategy?: EvaluationFormScoringStrategy|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<3, max> $MaxNumberOfTrainingJobsNotImproving
+ * @property int<3, max>|null $MaxNumberOfTrainingJobsNotImproving
  */
 class BestObjectiveNotImproving extends Shape
 {
     /**
-     * @param array{MaxNumberOfTrainingJobsNotImproving?: int<3, max>} $args
+     * @param array{MaxNumberOfTrainingJobsNotImproving?: int<3, max>|null} $args
      */
     public function __construct(array $args = [])
     {

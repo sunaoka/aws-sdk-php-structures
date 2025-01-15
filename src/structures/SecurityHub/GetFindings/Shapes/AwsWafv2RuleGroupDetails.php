@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Capacity
- * @property string $Description
- * @property string $Id
- * @property string $Name
- * @property string $Arn
- * @property list<AwsWafv2RulesDetails> $Rules
- * @property string $Scope
- * @property AwsWafv2VisibilityConfigDetails $VisibilityConfig
+ * @property int|null $Capacity
+ * @property string|null $Description
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property list<AwsWafv2RulesDetails>|null $Rules
+ * @property string|null $Scope
+ * @property AwsWafv2VisibilityConfigDetails|null $VisibilityConfig
  */
 class AwsWafv2RuleGroupDetails extends Shape
 {
     /**
      * @param array{
-     *     Capacity?: int,
-     *     Description?: string,
-     *     Id?: string,
-     *     Name?: string,
-     *     Arn?: string,
-     *     Rules?: list<AwsWafv2RulesDetails>,
-     *     Scope?: string,
-     *     VisibilityConfig?: AwsWafv2VisibilityConfigDetails
+     *     Capacity?: int|null,
+     *     Description?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Arn?: string|null,
+     *     Rules?: list<AwsWafv2RulesDetails>|null,
+     *     Scope?: string|null,
+     *     VisibilityConfig?: AwsWafv2VisibilityConfigDetails|null
      * } $args
      */
     public function __construct(array $args = [])

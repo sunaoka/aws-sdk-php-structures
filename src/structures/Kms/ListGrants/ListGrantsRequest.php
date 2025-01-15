@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Kms\ListGrants;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 1000> $Limit
- * @property string $Marker
+ * @property int<1, 1000>|null $Limit
+ * @property string|null $Marker
  * @property string $KeyId
- * @property string $GrantId
- * @property string $GranteePrincipal
+ * @property string|null $GrantId
+ * @property string|null $GranteePrincipal
  */
 class ListGrantsRequest extends Request
 {
     /**
      * @param array{
-     *     Limit?: int<1, 1000>,
-     *     Marker?: string,
+     *     Limit?: int<1, 1000>|null,
+     *     Marker?: string|null,
      *     KeyId: string,
-     *     GrantId?: string,
-     *     GranteePrincipal?: string
+     *     GrantId?: string|null,
+     *     GranteePrincipal?: string|null
      * } $args
      */
     public function __construct(array $args)

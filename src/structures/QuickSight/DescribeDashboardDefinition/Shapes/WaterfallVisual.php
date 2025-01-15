@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VisualId
- * @property VisualTitleLabelOptions $Title
- * @property VisualSubtitleLabelOptions $Subtitle
- * @property WaterfallChartConfiguration $ChartConfiguration
- * @property list<VisualCustomAction> $Actions
- * @property list<ColumnHierarchy> $ColumnHierarchies
- * @property string $VisualContentAltText
+ * @property VisualTitleLabelOptions|null $Title
+ * @property VisualSubtitleLabelOptions|null $Subtitle
+ * @property WaterfallChartConfiguration|null $ChartConfiguration
+ * @property list<VisualCustomAction>|null $Actions
+ * @property list<ColumnHierarchy>|null $ColumnHierarchies
+ * @property string|null $VisualContentAltText
  */
 class WaterfallVisual extends Shape
 {
     /**
      * @param array{
      *     VisualId: string,
-     *     Title?: VisualTitleLabelOptions,
-     *     Subtitle?: VisualSubtitleLabelOptions,
-     *     ChartConfiguration?: WaterfallChartConfiguration,
-     *     Actions?: list<VisualCustomAction>,
-     *     ColumnHierarchies?: list<ColumnHierarchy>,
-     *     VisualContentAltText?: string
+     *     Title?: VisualTitleLabelOptions|null,
+     *     Subtitle?: VisualSubtitleLabelOptions|null,
+     *     ChartConfiguration?: WaterfallChartConfiguration|null,
+     *     Actions?: list<VisualCustomAction>|null,
+     *     ColumnHierarchies?: list<ColumnHierarchy>|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

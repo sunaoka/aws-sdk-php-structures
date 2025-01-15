@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LifecyclePolicyText
- * @property string $RegistryId
+ * @property string|null $LifecyclePolicyText
+ * @property string|null $RegistryId
  */
 class AwsEcrRepositoryLifecyclePolicyDetails extends Shape
 {
     /**
      * @param array{
-     *     LifecyclePolicyText?: string,
-     *     RegistryId?: string
+     *     LifecyclePolicyText?: string|null,
+     *     RegistryId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

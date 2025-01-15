@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Emr\StartNotebookExecution;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $EditorId
- * @property string $RelativePath
- * @property string $NotebookExecutionName
- * @property string $NotebookParams
+ * @property string|null $EditorId
+ * @property string|null $RelativePath
+ * @property string|null $NotebookExecutionName
+ * @property string|null $NotebookParams
  * @property Shapes\ExecutionEngineConfig $ExecutionEngine
  * @property string $ServiceRole
- * @property string $NotebookInstanceSecurityGroupId
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\NotebookS3LocationFromInput $NotebookS3Location
- * @property Shapes\OutputNotebookS3LocationFromInput $OutputNotebookS3Location
- * @property 'HTML' $OutputNotebookFormat
- * @property array<string, string> $EnvironmentVariables
+ * @property string|null $NotebookInstanceSecurityGroupId
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\NotebookS3LocationFromInput|null $NotebookS3Location
+ * @property Shapes\OutputNotebookS3LocationFromInput|null $OutputNotebookS3Location
+ * @property 'HTML'|null $OutputNotebookFormat
+ * @property array<string, string>|null $EnvironmentVariables
  */
 class StartNotebookExecutionRequest extends Request
 {
     /**
      * @param array{
-     *     EditorId?: string,
-     *     RelativePath?: string,
-     *     NotebookExecutionName?: string,
-     *     NotebookParams?: string,
+     *     EditorId?: string|null,
+     *     RelativePath?: string|null,
+     *     NotebookExecutionName?: string|null,
+     *     NotebookParams?: string|null,
      *     ExecutionEngine: Shapes\ExecutionEngineConfig,
      *     ServiceRole: string,
-     *     NotebookInstanceSecurityGroupId?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     NotebookS3Location?: Shapes\NotebookS3LocationFromInput,
-     *     OutputNotebookS3Location?: Shapes\OutputNotebookS3LocationFromInput,
-     *     OutputNotebookFormat?: 'HTML',
-     *     EnvironmentVariables?: array<string, string>
+     *     NotebookInstanceSecurityGroupId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     NotebookS3Location?: Shapes\NotebookS3LocationFromInput|null,
+     *     OutputNotebookS3Location?: Shapes\OutputNotebookS3LocationFromInput|null,
+     *     OutputNotebookFormat?: 'HTML'|null,
+     *     EnvironmentVariables?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

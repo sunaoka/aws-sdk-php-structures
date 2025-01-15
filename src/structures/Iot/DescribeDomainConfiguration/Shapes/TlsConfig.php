@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeDomainConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $securityPolicy
+ * @property string|null $securityPolicy
  */
 class TlsConfig extends Shape
 {
     /**
-     * @param array{securityPolicy?: string} $args
+     * @param array{securityPolicy?: string|null} $args
      */
     public function __construct(array $args = [])
     {

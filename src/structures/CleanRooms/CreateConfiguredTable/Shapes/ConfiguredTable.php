@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $id
  * @property string $arn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property TableReference $tableReference
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
@@ -23,7 +23,7 @@ class ConfiguredTable extends Shape
      *     id: string,
      *     arn: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     tableReference: TableReference,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,

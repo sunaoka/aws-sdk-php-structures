@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListLicenseManagerReportGenerato
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $value
- * @property 'DAY'|'WEEK'|'MONTH' $period
+ * @property int|null $value
+ * @property 'DAY'|'WEEK'|'MONTH'|null $period
  */
 class ReportFrequency extends Shape
 {
     /**
      * @param array{
-     *     value?: int,
-     *     period?: 'DAY'|'WEEK'|'MONTH'
+     *     value?: int|null,
+     *     period?: 'DAY'|'WEEK'|'MONTH'|null
      * } $args
      */
     public function __construct(array $args = [])

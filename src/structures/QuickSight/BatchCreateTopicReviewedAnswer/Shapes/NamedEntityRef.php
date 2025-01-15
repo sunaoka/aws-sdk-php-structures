@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\BatchCreateTopicReviewedAnswer\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NamedEntityName
+ * @property string|null $NamedEntityName
  */
 class NamedEntityRef extends Shape
 {
     /**
-     * @param array{NamedEntityName?: string} $args
+     * @param array{NamedEntityName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

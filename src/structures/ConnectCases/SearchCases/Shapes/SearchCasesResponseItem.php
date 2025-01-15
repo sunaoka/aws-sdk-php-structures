@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $caseId
  * @property list<FieldValue> $fields
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $templateId
  */
 class SearchCasesResponseItem extends Shape
@@ -16,7 +16,7 @@ class SearchCasesResponseItem extends Shape
      * @param array{
      *     caseId: string,
      *     fields: list<FieldValue>,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     templateId: string
      * } $args
      */

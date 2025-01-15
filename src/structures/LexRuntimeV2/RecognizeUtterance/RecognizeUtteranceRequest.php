@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botAliasId
  * @property string $localeId
  * @property string $sessionId
- * @property string $sessionState
- * @property string $requestAttributes
+ * @property string|null $sessionState
+ * @property string|null $requestAttributes
  * @property string $requestContentType
- * @property string $responseContentType
- * @property string|resource|\Psr\Http\Message\StreamInterface $inputStream
+ * @property string|null $responseContentType
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $inputStream
  */
 class RecognizeUtteranceRequest extends Request
 {
@@ -23,11 +23,11 @@ class RecognizeUtteranceRequest extends Request
      *     botAliasId: string,
      *     localeId: string,
      *     sessionId: string,
-     *     sessionState?: string,
-     *     requestAttributes?: string,
+     *     sessionState?: string|null,
+     *     requestAttributes?: string|null,
      *     requestContentType: string,
-     *     responseContentType?: string,
-     *     inputStream?: string|resource|\Psr\Http\Message\StreamInterface
+     *     responseContentType?: string|null,
+     *     inputStream?: string|resource|\Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args)

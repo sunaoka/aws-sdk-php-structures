@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AWSServiceName
- * @property string $Description
- * @property string $CustomSuffix
+ * @property string|null $Description
+ * @property string|null $CustomSuffix
  */
 class CreateServiceLinkedRoleRequest extends Request
 {
     /**
      * @param array{
      *     AWSServiceName: string,
-     *     Description?: string,
-     *     CustomSuffix?: string
+     *     Description?: string|null,
+     *     CustomSuffix?: string|null
      * } $args
      */
     public function __construct(array $args)

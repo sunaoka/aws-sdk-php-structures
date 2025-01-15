@@ -9,14 +9,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PoolArn
  * @property CapacityStatus $CapacityStatus
  * @property string $PoolName
- * @property string $Description
+ * @property string|null $Description
  * @property 'CREATING'|'DELETING'|'RUNNING'|'STARTING'|'STOPPED'|'STOPPING'|'UPDATING' $State
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property string $BundleId
  * @property string $DirectoryId
- * @property list<WorkspacesPoolError> $Errors
- * @property ApplicationSettingsResponse $ApplicationSettings
- * @property TimeoutSettings $TimeoutSettings
+ * @property list<WorkspacesPoolError>|null $Errors
+ * @property ApplicationSettingsResponse|null $ApplicationSettings
+ * @property TimeoutSettings|null $TimeoutSettings
  */
 class WorkspacesPool extends Shape
 {
@@ -26,14 +26,14 @@ class WorkspacesPool extends Shape
      *     PoolArn: string,
      *     CapacityStatus: CapacityStatus,
      *     PoolName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     State: 'CREATING'|'DELETING'|'RUNNING'|'STARTING'|'STOPPED'|'STOPPING'|'UPDATING',
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     BundleId: string,
      *     DirectoryId: string,
-     *     Errors?: list<WorkspacesPoolError>,
-     *     ApplicationSettings?: ApplicationSettingsResponse,
-     *     TimeoutSettings?: TimeoutSettings
+     *     Errors?: list<WorkspacesPoolError>|null,
+     *     ApplicationSettings?: ApplicationSettingsResponse|null,
+     *     TimeoutSettings?: TimeoutSettings|null
      * } $args
      */
     public function __construct(array $args)

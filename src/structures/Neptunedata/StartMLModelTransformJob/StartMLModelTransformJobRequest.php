@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Neptunedata\StartMLModelTransformJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
- * @property string $dataProcessingJobId
- * @property string $mlModelTrainingJobId
- * @property string $trainingJobName
+ * @property string|null $id
+ * @property string|null $dataProcessingJobId
+ * @property string|null $mlModelTrainingJobId
+ * @property string|null $trainingJobName
  * @property string $modelTransformOutputS3Location
- * @property string $sagemakerIamRoleArn
- * @property string $neptuneIamRoleArn
- * @property Shapes\CustomModelTransformParameters $customModelTransformParameters
- * @property string $baseProcessingInstanceType
- * @property int $baseProcessingInstanceVolumeSizeInGB
- * @property list<string> $subnets
- * @property list<string> $securityGroupIds
- * @property string $volumeEncryptionKMSKey
- * @property string $s3OutputEncryptionKMSKey
+ * @property string|null $sagemakerIamRoleArn
+ * @property string|null $neptuneIamRoleArn
+ * @property Shapes\CustomModelTransformParameters|null $customModelTransformParameters
+ * @property string|null $baseProcessingInstanceType
+ * @property int|null $baseProcessingInstanceVolumeSizeInGB
+ * @property list<string>|null $subnets
+ * @property list<string>|null $securityGroupIds
+ * @property string|null $volumeEncryptionKMSKey
+ * @property string|null $s3OutputEncryptionKMSKey
  */
 class StartMLModelTransformJobRequest extends Request
 {
     /**
      * @param array{
-     *     id?: string,
-     *     dataProcessingJobId?: string,
-     *     mlModelTrainingJobId?: string,
-     *     trainingJobName?: string,
+     *     id?: string|null,
+     *     dataProcessingJobId?: string|null,
+     *     mlModelTrainingJobId?: string|null,
+     *     trainingJobName?: string|null,
      *     modelTransformOutputS3Location: string,
-     *     sagemakerIamRoleArn?: string,
-     *     neptuneIamRoleArn?: string,
-     *     customModelTransformParameters?: Shapes\CustomModelTransformParameters,
-     *     baseProcessingInstanceType?: string,
-     *     baseProcessingInstanceVolumeSizeInGB?: int,
-     *     subnets?: list<string>,
-     *     securityGroupIds?: list<string>,
-     *     volumeEncryptionKMSKey?: string,
-     *     s3OutputEncryptionKMSKey?: string
+     *     sagemakerIamRoleArn?: string|null,
+     *     neptuneIamRoleArn?: string|null,
+     *     customModelTransformParameters?: Shapes\CustomModelTransformParameters|null,
+     *     baseProcessingInstanceType?: string|null,
+     *     baseProcessingInstanceVolumeSizeInGB?: int|null,
+     *     subnets?: list<string>|null,
+     *     securityGroupIds?: list<string>|null,
+     *     volumeEncryptionKMSKey?: string|null,
+     *     s3OutputEncryptionKMSKey?: string|null
      * } $args
      */
     public function __construct(array $args)

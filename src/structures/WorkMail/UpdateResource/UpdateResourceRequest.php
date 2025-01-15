@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OrganizationId
  * @property string $ResourceId
- * @property string $Name
- * @property Shapes\BookingOptions $BookingOptions
- * @property string $Description
- * @property 'ROOM'|'EQUIPMENT' $Type
- * @property bool $HiddenFromGlobalAddressList
+ * @property string|null $Name
+ * @property Shapes\BookingOptions|null $BookingOptions
+ * @property string|null $Description
+ * @property 'ROOM'|'EQUIPMENT'|null $Type
+ * @property bool|null $HiddenFromGlobalAddressList
  */
 class UpdateResourceRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateResourceRequest extends Request
      * @param array{
      *     OrganizationId: string,
      *     ResourceId: string,
-     *     Name?: string,
-     *     BookingOptions?: Shapes\BookingOptions,
-     *     Description?: string,
-     *     Type?: 'ROOM'|'EQUIPMENT',
-     *     HiddenFromGlobalAddressList?: bool
+     *     Name?: string|null,
+     *     BookingOptions?: Shapes\BookingOptions|null,
+     *     Description?: string|null,
+     *     Type?: 'ROOM'|'EQUIPMENT'|null,
+     *     HiddenFromGlobalAddressList?: bool|null
      * } $args
      */
     public function __construct(array $args)

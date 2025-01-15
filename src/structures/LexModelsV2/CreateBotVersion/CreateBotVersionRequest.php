@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $botId
- * @property string $description
+ * @property string|null $description
  * @property array<string, Shapes\BotVersionLocaleDetails> $botVersionLocaleSpecification
  */
 class CreateBotVersionRequest extends Request
@@ -14,7 +14,7 @@ class CreateBotVersionRequest extends Request
     /**
      * @param array{
      *     botId: string,
-     *     description?: string,
+     *     description?: string|null,
      *     botVersionLocaleSpecification: array<string, Shapes\BotVersionLocaleDetails>
      * } $args
      */

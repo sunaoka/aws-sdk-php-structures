@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Neptune\CreateDBSubnetGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBSubnetGroupName
- * @property string $DBSubnetGroupDescription
- * @property string $VpcId
- * @property string $SubnetGroupStatus
- * @property list<Subnet> $Subnets
- * @property string $DBSubnetGroupArn
+ * @property string|null $DBSubnetGroupName
+ * @property string|null $DBSubnetGroupDescription
+ * @property string|null $VpcId
+ * @property string|null $SubnetGroupStatus
+ * @property list<Subnet>|null $Subnets
+ * @property string|null $DBSubnetGroupArn
  */
 class DBSubnetGroup extends Shape
 {
     /**
      * @param array{
-     *     DBSubnetGroupName?: string,
-     *     DBSubnetGroupDescription?: string,
-     *     VpcId?: string,
-     *     SubnetGroupStatus?: string,
-     *     Subnets?: list<Subnet>,
-     *     DBSubnetGroupArn?: string
+     *     DBSubnetGroupName?: string|null,
+     *     DBSubnetGroupDescription?: string|null,
+     *     VpcId?: string|null,
+     *     SubnetGroupStatus?: string|null,
+     *     Subnets?: list<Subnet>|null,
+     *     DBSubnetGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

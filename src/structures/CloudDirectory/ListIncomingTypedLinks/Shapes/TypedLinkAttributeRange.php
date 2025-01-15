@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\ListIncomingTypedLinks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AttributeName
+ * @property string|null $AttributeName
  * @property TypedAttributeValueRange $Range
  */
 class TypedLinkAttributeRange extends Shape
 {
     /**
      * @param array{
-     *     AttributeName?: string,
+     *     AttributeName?: string|null,
      *     Range: TypedAttributeValueRange
      * } $args
      */

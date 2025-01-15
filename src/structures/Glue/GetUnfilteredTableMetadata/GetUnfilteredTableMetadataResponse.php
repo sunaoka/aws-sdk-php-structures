@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Glue\GetUnfilteredTableMetadata;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Table $Table
- * @property list<string> $AuthorizedColumns
- * @property bool $IsRegisteredWithLakeFormation
- * @property list<Shapes\ColumnRowFilter> $CellFilters
- * @property string $QueryAuthorizationId
- * @property bool $IsMultiDialectView
- * @property string $ResourceArn
- * @property bool $IsProtected
- * @property list<'ALL'|'SELECT'|'ALTER'|'DROP'|'DELETE'|'INSERT'|'CREATE_DATABASE'|'CREATE_TABLE'|'DATA_LOCATION_ACCESS'> $Permissions
- * @property string $RowFilter
+ * @property Shapes\Table|null $Table
+ * @property list<string>|null $AuthorizedColumns
+ * @property bool|null $IsRegisteredWithLakeFormation
+ * @property list<Shapes\ColumnRowFilter>|null $CellFilters
+ * @property string|null $QueryAuthorizationId
+ * @property bool|null $IsMultiDialectView
+ * @property string|null $ResourceArn
+ * @property bool|null $IsProtected
+ * @property list<'ALL'|'SELECT'|'ALTER'|'DROP'|'DELETE'|'INSERT'|'CREATE_DATABASE'|'CREATE_TABLE'|'DATA_LOCATION_ACCESS'>|null $Permissions
+ * @property string|null $RowFilter
  */
 class GetUnfilteredTableMetadataResponse extends Response
 {

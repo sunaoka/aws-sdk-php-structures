@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ParameterControlId
  * @property string $Title
  * @property string $SourceParameterName
- * @property string $Delimiter
- * @property TextAreaControlDisplayOptions $DisplayOptions
+ * @property string|null $Delimiter
+ * @property TextAreaControlDisplayOptions|null $DisplayOptions
  */
 class ParameterTextAreaControl extends Shape
 {
@@ -18,8 +18,8 @@ class ParameterTextAreaControl extends Shape
      *     ParameterControlId: string,
      *     Title: string,
      *     SourceParameterName: string,
-     *     Delimiter?: string,
-     *     DisplayOptions?: TextAreaControlDisplayOptions
+     *     Delimiter?: string|null,
+     *     DisplayOptions?: TextAreaControlDisplayOptions|null
      * } $args
      */
     public function __construct(array $args)

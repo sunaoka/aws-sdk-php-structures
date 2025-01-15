@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $attribute
  * @property string $thingName
  * @property string $roleArn
- * @property string $next
+ * @property string|null $next
  */
 class DeviceShadowEnrichActivity extends Shape
 {
@@ -19,7 +19,7 @@ class DeviceShadowEnrichActivity extends Shape
      *     attribute: string,
      *     thingName: string,
      *     roleArn: string,
-     *     next?: string
+     *     next?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FIS\GetSafetyLever\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'disengaged'|'engaged'|'engaging' $status
- * @property string $reason
+ * @property 'disengaged'|'engaged'|'engaging'|null $status
+ * @property string|null $reason
  */
 class SafetyLeverState extends Shape
 {
     /**
      * @param array{
-     *     status?: 'disengaged'|'engaged'|'engaging',
-     *     reason?: string
+     *     status?: 'disengaged'|'engaged'|'engaging'|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

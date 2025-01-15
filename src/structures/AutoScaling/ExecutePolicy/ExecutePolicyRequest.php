@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AutoScaling\ExecutePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AutoScalingGroupName
+ * @property string|null $AutoScalingGroupName
  * @property string $PolicyName
- * @property bool $HonorCooldown
- * @property double $MetricValue
- * @property double $BreachThreshold
+ * @property bool|null $HonorCooldown
+ * @property double|null $MetricValue
+ * @property double|null $BreachThreshold
  */
 class ExecutePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     AutoScalingGroupName?: string,
+     *     AutoScalingGroupName?: string|null,
      *     PolicyName: string,
-     *     HonorCooldown?: bool,
-     *     MetricValue?: double,
-     *     BreachThreshold?: double
+     *     HonorCooldown?: bool|null,
+     *     MetricValue?: double|null,
+     *     BreachThreshold?: double|null
      * } $args
      */
     public function __construct(array $args)

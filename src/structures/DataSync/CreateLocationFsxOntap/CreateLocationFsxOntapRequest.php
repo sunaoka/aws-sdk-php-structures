@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\FsxProtocol $Protocol
  * @property list<string> $SecurityGroupArns
  * @property string $StorageVirtualMachineArn
- * @property string $Subdirectory
- * @property list<Shapes\TagListEntry> $Tags
+ * @property string|null $Subdirectory
+ * @property list<Shapes\TagListEntry>|null $Tags
  */
 class CreateLocationFsxOntapRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateLocationFsxOntapRequest extends Request
      *     Protocol: Shapes\FsxProtocol,
      *     SecurityGroupArns: list<string>,
      *     StorageVirtualMachineArn: string,
-     *     Subdirectory?: string,
-     *     Tags?: list<Shapes\TagListEntry>
+     *     Subdirectory?: string|null,
+     *     Tags?: list<Shapes\TagListEntry>|null
      * } $args
      */
     public function __construct(array $args)

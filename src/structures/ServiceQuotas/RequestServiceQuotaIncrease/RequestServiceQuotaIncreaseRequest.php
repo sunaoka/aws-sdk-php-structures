@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ServiceCode
  * @property string $QuotaCode
  * @property double $DesiredValue
- * @property string $ContextId
+ * @property string|null $ContextId
  */
 class RequestServiceQuotaIncreaseRequest extends Request
 {
@@ -17,7 +17,7 @@ class RequestServiceQuotaIncreaseRequest extends Request
      *     ServiceCode: string,
      *     QuotaCode: string,
      *     DesiredValue: double,
-     *     ContextId?: string
+     *     ContextId?: string|null
      * } $args
      */
     public function __construct(array $args)

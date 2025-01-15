@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property PredictiveScalingMetric $Metric
  * @property string $Stat
- * @property string $Unit
+ * @property string|null $Unit
  */
 class PredictiveScalingMetricStat extends Shape
 {
@@ -15,7 +15,7 @@ class PredictiveScalingMetricStat extends Shape
      * @param array{
      *     Metric: PredictiveScalingMetric,
      *     Stat: string,
-     *     Unit?: string
+     *     Unit?: string|null
      * } $args
      */
     public function __construct(array $args)

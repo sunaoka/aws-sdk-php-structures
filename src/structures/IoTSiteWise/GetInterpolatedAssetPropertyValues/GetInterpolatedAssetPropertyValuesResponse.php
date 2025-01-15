@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\InterpolatedAssetPropertyValue> $interpolatedAssetPropertyValues
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class GetInterpolatedAssetPropertyValuesResponse extends Response
 {

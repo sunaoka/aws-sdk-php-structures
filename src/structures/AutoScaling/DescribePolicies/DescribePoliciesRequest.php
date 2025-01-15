@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribePolicies;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AutoScalingGroupName
- * @property list<string> $PolicyNames
- * @property list<string> $PolicyTypes
- * @property string $NextToken
- * @property int $MaxRecords
+ * @property string|null $AutoScalingGroupName
+ * @property list<string>|null $PolicyNames
+ * @property list<string>|null $PolicyTypes
+ * @property string|null $NextToken
+ * @property int|null $MaxRecords
  */
 class DescribePoliciesRequest extends Request
 {
     /**
      * @param array{
-     *     AutoScalingGroupName?: string,
-     *     PolicyNames?: list<string>,
-     *     PolicyTypes?: list<string>,
-     *     NextToken?: string,
-     *     MaxRecords?: int
+     *     AutoScalingGroupName?: string|null,
+     *     PolicyNames?: list<string>|null,
+     *     PolicyTypes?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxRecords?: int|null
      * } $args
      */
     public function __construct(array $args = [])

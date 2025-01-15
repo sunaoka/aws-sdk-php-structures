@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\ModifyStreamingProperties\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TCP'|'UDP' $StreamingExperiencePreferredProtocol
- * @property list<UserSetting> $UserSettings
- * @property list<StorageConnector> $StorageConnectors
- * @property GlobalAcceleratorForDirectory $GlobalAccelerator
+ * @property 'TCP'|'UDP'|null $StreamingExperiencePreferredProtocol
+ * @property list<UserSetting>|null $UserSettings
+ * @property list<StorageConnector>|null $StorageConnectors
+ * @property GlobalAcceleratorForDirectory|null $GlobalAccelerator
  */
 class StreamingProperties extends Shape
 {
     /**
      * @param array{
-     *     StreamingExperiencePreferredProtocol?: 'TCP'|'UDP',
-     *     UserSettings?: list<UserSetting>,
-     *     StorageConnectors?: list<StorageConnector>,
-     *     GlobalAccelerator?: GlobalAcceleratorForDirectory
+     *     StreamingExperiencePreferredProtocol?: 'TCP'|'UDP'|null,
+     *     UserSettings?: list<UserSetting>|null,
+     *     StorageConnectors?: list<StorageConnector>|null,
+     *     GlobalAccelerator?: GlobalAcceleratorForDirectory|null
      * } $args
      */
     public function __construct(array $args = [])

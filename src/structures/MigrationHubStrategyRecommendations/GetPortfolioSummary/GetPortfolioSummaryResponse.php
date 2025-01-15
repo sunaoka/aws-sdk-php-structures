@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetPortfoli
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AssessmentSummary $assessmentSummary
+ * @property Shapes\AssessmentSummary|null $assessmentSummary
  */
 class GetPortfolioSummaryResponse extends Response
 {

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $environmentId
  * @property string $databaseName
- * @property string $nextToken
- * @property int<0, 100> $maxResults
+ * @property string|null $nextToken
+ * @property int<0, 100>|null $maxResults
  */
 class ListKxDataviewsRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListKxDataviewsRequest extends Request
      * @param array{
      *     environmentId: string,
      *     databaseName: string,
-     *     nextToken?: string,
-     *     maxResults?: int<0, 100>
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args)

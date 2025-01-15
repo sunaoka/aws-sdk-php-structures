@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\kendra\UpdateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $CrawlAttachments
- * @property list<string> $IncludeAttachmentFilePatterns
- * @property list<string> $ExcludeAttachmentFilePatterns
+ * @property bool|null $CrawlAttachments
+ * @property list<string>|null $IncludeAttachmentFilePatterns
+ * @property list<string>|null $ExcludeAttachmentFilePatterns
  * @property string $DocumentDataFieldName
- * @property string $DocumentTitleFieldName
- * @property list<DataSourceToIndexFieldMapping> $FieldMappings
- * @property string $FilterQuery
+ * @property string|null $DocumentTitleFieldName
+ * @property list<DataSourceToIndexFieldMapping>|null $FieldMappings
+ * @property string|null $FilterQuery
  */
 class ServiceNowKnowledgeArticleConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CrawlAttachments?: bool,
-     *     IncludeAttachmentFilePatterns?: list<string>,
-     *     ExcludeAttachmentFilePatterns?: list<string>,
+     *     CrawlAttachments?: bool|null,
+     *     IncludeAttachmentFilePatterns?: list<string>|null,
+     *     ExcludeAttachmentFilePatterns?: list<string>|null,
      *     DocumentDataFieldName: string,
-     *     DocumentTitleFieldName?: string,
-     *     FieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     FilterQuery?: string
+     *     DocumentTitleFieldName?: string|null,
+     *     FieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     FilterQuery?: string|null
      * } $args
      */
     public function __construct(array $args)

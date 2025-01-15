@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeAwsNetworkPerformanceMetricSubscrip
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<0, 100> $MaxResults
- * @property string $NextToken
- * @property list<Shapes\Filter> $Filters
- * @property bool $DryRun
+ * @property int<0, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<Shapes\Filter>|null $Filters
+ * @property bool|null $DryRun
  */
 class DescribeAwsNetworkPerformanceMetricSubscriptionsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<0, 100>,
-     *     NextToken?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     DryRun?: bool
+     *     MaxResults?: int<0, 100>|null,
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

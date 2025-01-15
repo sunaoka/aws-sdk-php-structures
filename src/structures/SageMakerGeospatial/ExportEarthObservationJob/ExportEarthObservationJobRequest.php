@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $ExecutionRoleArn
- * @property bool $ExportSourceImages
+ * @property bool|null $ExportSourceImages
  * @property Shapes\OutputConfigInput $OutputConfig
  */
 class ExportEarthObservationJobRequest extends Request
@@ -16,9 +16,9 @@ class ExportEarthObservationJobRequest extends Request
     /**
      * @param array{
      *     Arn: string,
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     ExecutionRoleArn: string,
-     *     ExportSourceImages?: bool,
+     *     ExportSourceImages?: bool|null,
      *     OutputConfig: Shapes\OutputConfigInput
      * } $args
      */

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DbSubnetGroupName
- * @property string $DbSubnetGroupDescription
- * @property string $VpcId
- * @property string $SubnetGroupStatus
- * @property list<AwsRdsDbSubnetGroupSubnet> $Subnets
- * @property string $DbSubnetGroupArn
+ * @property string|null $DbSubnetGroupName
+ * @property string|null $DbSubnetGroupDescription
+ * @property string|null $VpcId
+ * @property string|null $SubnetGroupStatus
+ * @property list<AwsRdsDbSubnetGroupSubnet>|null $Subnets
+ * @property string|null $DbSubnetGroupArn
  */
 class AwsRdsDbSubnetGroup extends Shape
 {
     /**
      * @param array{
-     *     DbSubnetGroupName?: string,
-     *     DbSubnetGroupDescription?: string,
-     *     VpcId?: string,
-     *     SubnetGroupStatus?: string,
-     *     Subnets?: list<AwsRdsDbSubnetGroupSubnet>,
-     *     DbSubnetGroupArn?: string
+     *     DbSubnetGroupName?: string|null,
+     *     DbSubnetGroupDescription?: string|null,
+     *     VpcId?: string|null,
+     *     SubnetGroupStatus?: string|null,
+     *     Subnets?: list<AwsRdsDbSubnetGroupSubnet>|null,
+     *     DbSubnetGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

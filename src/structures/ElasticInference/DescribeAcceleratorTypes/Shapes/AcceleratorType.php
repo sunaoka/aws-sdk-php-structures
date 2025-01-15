@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticInference\DescribeAcceleratorTypes\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $acceleratorTypeName
- * @property MemoryInfo $memoryInfo
- * @property list<KeyValuePair> $throughputInfo
+ * @property string|null $acceleratorTypeName
+ * @property MemoryInfo|null $memoryInfo
+ * @property list<KeyValuePair>|null $throughputInfo
  */
 class AcceleratorType extends Shape
 {
     /**
      * @param array{
-     *     acceleratorTypeName?: string,
-     *     memoryInfo?: MemoryInfo,
-     *     throughputInfo?: list<KeyValuePair>
+     *     acceleratorTypeName?: string|null,
+     *     memoryInfo?: MemoryInfo|null,
+     *     throughputInfo?: list<KeyValuePair>|null
      * } $args
      */
     public function __construct(array $args = [])

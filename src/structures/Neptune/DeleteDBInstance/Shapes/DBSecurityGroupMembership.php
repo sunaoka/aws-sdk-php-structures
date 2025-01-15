@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptune\DeleteDBInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBSecurityGroupName
- * @property string $Status
+ * @property string|null $DBSecurityGroupName
+ * @property string|null $Status
  */
 class DBSecurityGroupMembership extends Shape
 {
     /**
      * @param array{
-     *     DBSecurityGroupName?: string,
-     *     Status?: string
+     *     DBSecurityGroupName?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property string $ignoreJobChecks
+ * @property string|null $ignoreJobChecks
  */
 class DeleteAllowListRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     ignoreJobChecks?: string
+     *     ignoreJobChecks?: string|null
      * } $args
      */
     public function __construct(array $args)

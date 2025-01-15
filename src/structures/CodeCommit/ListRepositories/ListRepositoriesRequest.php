@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeCommit\ListRepositories;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property 'repositoryName'|'lastModifiedDate' $sortBy
- * @property 'ascending'|'descending' $order
+ * @property string|null $nextToken
+ * @property 'repositoryName'|'lastModifiedDate'|null $sortBy
+ * @property 'ascending'|'descending'|null $order
  */
 class ListRepositoriesRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     sortBy?: 'repositoryName'|'lastModifiedDate',
-     *     order?: 'ascending'|'descending'
+     *     nextToken?: string|null,
+     *     sortBy?: 'repositoryName'|'lastModifiedDate'|null,
+     *     order?: 'ascending'|'descending'|null
      * } $args
      */
     public function __construct(array $args = [])

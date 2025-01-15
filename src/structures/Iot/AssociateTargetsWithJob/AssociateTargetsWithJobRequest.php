@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $targets
  * @property string $jobId
- * @property string $comment
- * @property string $namespaceId
+ * @property string|null $comment
+ * @property string|null $namespaceId
  */
 class AssociateTargetsWithJobRequest extends Request
 {
@@ -16,8 +16,8 @@ class AssociateTargetsWithJobRequest extends Request
      * @param array{
      *     targets: list<string>,
      *     jobId: string,
-     *     comment?: string,
-     *     namespaceId?: string
+     *     comment?: string|null,
+     *     namespaceId?: string|null
      * } $args
      */
     public function __construct(array $args)

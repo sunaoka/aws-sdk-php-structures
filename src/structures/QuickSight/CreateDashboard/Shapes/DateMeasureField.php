@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FieldId
  * @property ColumnIdentifier $Column
- * @property 'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX' $AggregationFunction
- * @property DateTimeFormatConfiguration $FormatConfiguration
+ * @property 'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|null $AggregationFunction
+ * @property DateTimeFormatConfiguration|null $FormatConfiguration
  */
 class DateMeasureField extends Shape
 {
@@ -16,8 +16,8 @@ class DateMeasureField extends Shape
      * @param array{
      *     FieldId: string,
      *     Column: ColumnIdentifier,
-     *     AggregationFunction?: 'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX',
-     *     FormatConfiguration?: DateTimeFormatConfiguration
+     *     AggregationFunction?: 'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|null,
+     *     FormatConfiguration?: DateTimeFormatConfiguration|null
      * } $args
      */
     public function __construct(array $args)

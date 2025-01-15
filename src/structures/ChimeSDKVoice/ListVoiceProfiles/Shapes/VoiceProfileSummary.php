@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\ListVoiceProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VoiceProfileId
- * @property string $VoiceProfileArn
- * @property string $VoiceProfileDomainId
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
- * @property \Aws\Api\DateTimeResult $ExpirationTimestamp
+ * @property string|null $VoiceProfileId
+ * @property string|null $VoiceProfileArn
+ * @property string|null $VoiceProfileDomainId
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTimestamp
  */
 class VoiceProfileSummary extends Shape
 {
     /**
      * @param array{
-     *     VoiceProfileId?: string,
-     *     VoiceProfileArn?: string,
-     *     VoiceProfileDomainId?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ExpirationTimestamp?: \Aws\Api\DateTimeResult
+     *     VoiceProfileId?: string|null,
+     *     VoiceProfileArn?: string|null,
+     *     VoiceProfileDomainId?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ExpirationTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

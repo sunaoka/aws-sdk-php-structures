@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NetworkId
- * @property string $MemberId
- * @property 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY' $Status
- * @property int<1, 20> $MaxResults
- * @property string $NextToken
+ * @property string|null $MemberId
+ * @property 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY'|null $Status
+ * @property int<1, 20>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListNodesRequest extends Request
 {
     /**
      * @param array{
      *     NetworkId: string,
-     *     MemberId?: string,
-     *     Status?: 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY',
-     *     MaxResults?: int<1, 20>,
-     *     NextToken?: string
+     *     MemberId?: string|null,
+     *     Status?: 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY'|null,
+     *     MaxResults?: int<1, 20>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

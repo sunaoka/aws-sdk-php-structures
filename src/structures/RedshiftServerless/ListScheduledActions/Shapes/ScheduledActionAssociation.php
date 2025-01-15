@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\ListScheduledActions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $namespaceName
- * @property string $scheduledActionName
+ * @property string|null $namespaceName
+ * @property string|null $scheduledActionName
  */
 class ScheduledActionAssociation extends Shape
 {
     /**
      * @param array{
-     *     namespaceName?: string,
-     *     scheduledActionName?: string
+     *     namespaceName?: string|null,
+     *     scheduledActionName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

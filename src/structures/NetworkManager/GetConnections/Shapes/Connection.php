@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetConnections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectionId
- * @property string $ConnectionArn
- * @property string $GlobalNetworkId
- * @property string $DeviceId
- * @property string $ConnectedDeviceId
- * @property string $LinkId
- * @property string $ConnectedLinkId
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING' $State
- * @property list<Tag> $Tags
+ * @property string|null $ConnectionId
+ * @property string|null $ConnectionArn
+ * @property string|null $GlobalNetworkId
+ * @property string|null $DeviceId
+ * @property string|null $ConnectedDeviceId
+ * @property string|null $LinkId
+ * @property string|null $ConnectedLinkId
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING'|null $State
+ * @property list<Tag>|null $Tags
  */
 class Connection extends Shape
 {
     /**
      * @param array{
-     *     ConnectionId?: string,
-     *     ConnectionArn?: string,
-     *     GlobalNetworkId?: string,
-     *     DeviceId?: string,
-     *     ConnectedDeviceId?: string,
-     *     LinkId?: string,
-     *     ConnectedLinkId?: string,
-     *     Description?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING',
-     *     Tags?: list<Tag>
+     *     ConnectionId?: string|null,
+     *     ConnectionArn?: string|null,
+     *     GlobalNetworkId?: string|null,
+     *     DeviceId?: string|null,
+     *     ConnectedDeviceId?: string|null,
+     *     LinkId?: string|null,
+     *     ConnectedLinkId?: string|null,
+     *     Description?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING'|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

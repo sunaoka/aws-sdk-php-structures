@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetWirelessDeviceStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProviderNetId
- * @property string $Id
- * @property double $Rssi
- * @property double $Snr
- * @property string $RfRegion
- * @property bool $DlAllowed
+ * @property string|null $ProviderNetId
+ * @property string|null $Id
+ * @property double|null $Rssi
+ * @property double|null $Snr
+ * @property string|null $RfRegion
+ * @property bool|null $DlAllowed
  */
 class LoRaWANPublicGatewayMetadata extends Shape
 {
     /**
      * @param array{
-     *     ProviderNetId?: string,
-     *     Id?: string,
-     *     Rssi?: double,
-     *     Snr?: double,
-     *     RfRegion?: string,
-     *     DlAllowed?: bool
+     *     ProviderNetId?: string|null,
+     *     Id?: string|null,
+     *     Rssi?: double|null,
+     *     Snr?: double|null,
+     *     RfRegion?: string|null,
+     *     DlAllowed?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GlobalReplicationGroupIdSuffix
- * @property string $GlobalReplicationGroupDescription
+ * @property string|null $GlobalReplicationGroupDescription
  * @property string $PrimaryReplicationGroupId
  */
 class CreateGlobalReplicationGroupRequest extends Request
@@ -14,7 +14,7 @@ class CreateGlobalReplicationGroupRequest extends Request
     /**
      * @param array{
      *     GlobalReplicationGroupIdSuffix: string,
-     *     GlobalReplicationGroupDescription?: string,
+     *     GlobalReplicationGroupDescription?: string|null,
      *     PrimaryReplicationGroupId: string
      * } $args
      */

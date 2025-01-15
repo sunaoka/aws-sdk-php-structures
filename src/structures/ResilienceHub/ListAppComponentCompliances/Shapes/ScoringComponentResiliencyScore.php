@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppComponentCompliances\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $excludedCount
- * @property int $outstandingCount
- * @property double $possibleScore
- * @property double $score
+ * @property int|null $excludedCount
+ * @property int|null $outstandingCount
+ * @property double|null $possibleScore
+ * @property double|null $score
  */
 class ScoringComponentResiliencyScore extends Shape
 {
     /**
      * @param array{
-     *     excludedCount?: int,
-     *     outstandingCount?: int,
-     *     possibleScore?: double,
-     *     score?: double
+     *     excludedCount?: int|null,
+     *     outstandingCount?: int|null,
+     *     possibleScore?: double|null,
+     *     score?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\CostExplorer\ListCommitmentPurchaseAnalyses\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PAYER'|'LINKED' $AccountScope
- * @property string $AccountId
+ * @property 'PAYER'|'LINKED'|null $AccountScope
+ * @property string|null $AccountId
  * @property 'MAX_SAVINGS'|'CUSTOM_COMMITMENT' $AnalysisType
  * @property list<SavingsPlans> $SavingsPlansToAdd
- * @property list<string> $SavingsPlansToExclude
+ * @property list<string>|null $SavingsPlansToExclude
  * @property DateInterval $LookBackTimePeriod
  */
 class SavingsPlansPurchaseAnalysisConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AccountScope?: 'PAYER'|'LINKED',
-     *     AccountId?: string,
+     *     AccountScope?: 'PAYER'|'LINKED'|null,
+     *     AccountId?: string|null,
      *     AnalysisType: 'MAX_SAVINGS'|'CUSTOM_COMMITMENT',
      *     SavingsPlansToAdd: list<SavingsPlans>,
-     *     SavingsPlansToExclude?: list<string>,
+     *     SavingsPlansToExclude?: list<string>|null,
      *     LookBackTimePeriod: DateInterval
      * } $args
      */

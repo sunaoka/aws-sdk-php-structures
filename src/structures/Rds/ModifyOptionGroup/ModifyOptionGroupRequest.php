@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OptionGroupName
- * @property list<Shapes\OptionConfiguration> $OptionsToInclude
- * @property list<string> $OptionsToRemove
- * @property bool $ApplyImmediately
+ * @property list<Shapes\OptionConfiguration>|null $OptionsToInclude
+ * @property list<string>|null $OptionsToRemove
+ * @property bool|null $ApplyImmediately
  */
 class ModifyOptionGroupRequest extends Request
 {
     /**
      * @param array{
      *     OptionGroupName: string,
-     *     OptionsToInclude?: list<Shapes\OptionConfiguration>,
-     *     OptionsToRemove?: list<string>,
-     *     ApplyImmediately?: bool
+     *     OptionsToInclude?: list<Shapes\OptionConfiguration>|null,
+     *     OptionsToRemove?: list<string>|null,
+     *     ApplyImmediately?: bool|null
      * } $args
      */
     public function __construct(array $args)

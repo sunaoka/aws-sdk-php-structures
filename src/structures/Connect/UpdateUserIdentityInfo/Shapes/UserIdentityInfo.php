@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateUserIdentityInfo\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FirstName
- * @property string $LastName
- * @property string $Email
- * @property string $SecondaryEmail
- * @property string $Mobile
+ * @property string|null $FirstName
+ * @property string|null $LastName
+ * @property string|null $Email
+ * @property string|null $SecondaryEmail
+ * @property string|null $Mobile
  */
 class UserIdentityInfo extends Shape
 {
     /**
      * @param array{
-     *     FirstName?: string,
-     *     LastName?: string,
-     *     Email?: string,
-     *     SecondaryEmail?: string,
-     *     Mobile?: string
+     *     FirstName?: string|null,
+     *     LastName?: string|null,
+     *     Email?: string|null,
+     *     SecondaryEmail?: string|null,
+     *     Mobile?: string|null
      * } $args
      */
     public function __construct(array $args = [])

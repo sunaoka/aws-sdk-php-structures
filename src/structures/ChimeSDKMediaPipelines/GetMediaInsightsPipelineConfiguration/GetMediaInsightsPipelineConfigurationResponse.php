@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\GetMediaInsightsPipeline
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\MediaInsightsPipelineConfiguration $MediaInsightsPipelineConfiguration
+ * @property Shapes\MediaInsightsPipelineConfiguration|null $MediaInsightsPipelineConfiguration
  */
 class GetMediaInsightsPipelineConfigurationResponse extends Response
 {

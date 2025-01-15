@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEventPrediction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $modelEndpoint
- * @property 'SAGEMAKER' $modelSource
+ * @property string|null $modelEndpoint
+ * @property 'SAGEMAKER'|null $modelSource
  */
 class ExternalModelSummary extends Shape
 {
     /**
      * @param array{
-     *     modelEndpoint?: string,
-     *     modelSource?: 'SAGEMAKER'
+     *     modelEndpoint?: string|null,
+     *     modelSource?: 'SAGEMAKER'|null
      * } $args
      */
     public function __construct(array $args = [])

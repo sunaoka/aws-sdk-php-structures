@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $DefaultNamespace
- * @property string $NotificationEmail
- * @property bool $TerminationProtectionEnabled
+ * @property string|null $NotificationEmail
+ * @property bool|null $TerminationProtectionEnabled
  */
 class UpdateAccountSettingsRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateAccountSettingsRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     DefaultNamespace: string,
-     *     NotificationEmail?: string,
-     *     TerminationProtectionEnabled?: bool
+     *     NotificationEmail?: string|null,
+     *     TerminationProtectionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

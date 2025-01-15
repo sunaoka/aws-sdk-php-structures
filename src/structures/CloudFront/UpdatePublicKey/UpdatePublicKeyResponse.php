@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFront\UpdatePublicKey;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PublicKey $PublicKey
- * @property string $ETag
+ * @property Shapes\PublicKey|null $PublicKey
+ * @property string|null $ETag
  */
 class UpdatePublicKeyResponse extends Response
 {

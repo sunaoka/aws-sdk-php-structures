@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AppInstanceUserArn
- * @property Shapes\ExpirationSettings $ExpirationSettings
+ * @property Shapes\ExpirationSettings|null $ExpirationSettings
  */
 class PutAppInstanceUserExpirationSettingsRequest extends Request
 {
     /**
      * @param array{
      *     AppInstanceUserArn: string,
-     *     ExpirationSettings?: Shapes\ExpirationSettings
+     *     ExpirationSettings?: Shapes\ExpirationSettings|null
      * } $args
      */
     public function __construct(array $args)

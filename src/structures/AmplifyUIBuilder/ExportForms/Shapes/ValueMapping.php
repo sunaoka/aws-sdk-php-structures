@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\ExportForms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FormInputValueProperty $displayValue
+ * @property FormInputValueProperty|null $displayValue
  * @property FormInputValueProperty $value
  */
 class ValueMapping extends Shape
 {
     /**
      * @param array{
-     *     displayValue?: FormInputValueProperty,
+     *     displayValue?: FormInputValueProperty|null,
      *     value: FormInputValueProperty
      * } $args
      */

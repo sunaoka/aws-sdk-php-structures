@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DeleteFirewall\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubnetId
- * @property string $EndpointId
- * @property 'CREATING'|'DELETING'|'FAILED'|'ERROR'|'SCALING'|'READY' $Status
- * @property string $StatusMessage
+ * @property string|null $SubnetId
+ * @property string|null $EndpointId
+ * @property 'CREATING'|'DELETING'|'FAILED'|'ERROR'|'SCALING'|'READY'|null $Status
+ * @property string|null $StatusMessage
  */
 class Attachment extends Shape
 {
     /**
      * @param array{
-     *     SubnetId?: string,
-     *     EndpointId?: string,
-     *     Status?: 'CREATING'|'DELETING'|'FAILED'|'ERROR'|'SCALING'|'READY',
-     *     StatusMessage?: string
+     *     SubnetId?: string|null,
+     *     EndpointId?: string|null,
+     *     Status?: 'CREATING'|'DELETING'|'FAILED'|'ERROR'|'SCALING'|'READY'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

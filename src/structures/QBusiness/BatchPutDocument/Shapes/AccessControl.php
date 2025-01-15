@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<Principal> $principals
- * @property 'AND'|'OR' $memberRelation
+ * @property 'AND'|'OR'|null $memberRelation
  */
 class AccessControl extends Shape
 {
     /**
      * @param array{
      *     principals: list<Principal>,
-     *     memberRelation?: 'AND'|'OR'
+     *     memberRelation?: 'AND'|'OR'|null
      * } $args
      */
     public function __construct(array $args)

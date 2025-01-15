@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\CreateComponentVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|resource|\Psr\Http\Message\StreamInterface $inlineRecipe
- * @property Shapes\LambdaFunctionRecipeSource $lambdaFunction
- * @property array<string, string> $tags
- * @property string $clientToken
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $inlineRecipe
+ * @property Shapes\LambdaFunctionRecipeSource|null $lambdaFunction
+ * @property array<string, string>|null $tags
+ * @property string|null $clientToken
  */
 class CreateComponentVersionRequest extends Request
 {
     /**
      * @param array{
-     *     inlineRecipe?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     lambdaFunction?: Shapes\LambdaFunctionRecipeSource,
-     *     tags?: array<string, string>,
-     *     clientToken?: string
+     *     inlineRecipe?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     lambdaFunction?: Shapes\LambdaFunctionRecipeSource|null,
+     *     tags?: array<string, string>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

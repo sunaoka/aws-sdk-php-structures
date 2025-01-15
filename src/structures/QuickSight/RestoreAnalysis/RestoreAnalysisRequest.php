@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $AnalysisId
- * @property bool $RestoreToFolders
+ * @property bool|null $RestoreToFolders
  */
 class RestoreAnalysisRequest extends Request
 {
@@ -15,7 +15,7 @@ class RestoreAnalysisRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     AnalysisId: string,
-     *     RestoreToFolders?: bool
+     *     RestoreToFolders?: bool|null
      * } $args
      */
     public function __construct(array $args)

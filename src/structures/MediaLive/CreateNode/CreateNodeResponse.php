@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateNode;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property list<string> $ChannelPlacementGroups
- * @property string $ClusterId
- * @property 'CONNECTED'|'DISCONNECTED' $ConnectionState
- * @property string $Id
- * @property string $InstanceArn
- * @property string $Name
- * @property list<Shapes\NodeInterfaceMapping> $NodeInterfaceMappings
- * @property 'BACKUP'|'ACTIVE' $Role
- * @property 'CREATED'|'REGISTERING'|'READY_TO_ACTIVATE'|'REGISTRATION_FAILED'|'ACTIVATION_FAILED'|'ACTIVE'|'READY'|'IN_USE'|'DEREGISTERING'|'DRAINING'|'DEREGISTRATION_FAILED'|'DEREGISTERED' $State
+ * @property string|null $Arn
+ * @property list<string>|null $ChannelPlacementGroups
+ * @property string|null $ClusterId
+ * @property 'CONNECTED'|'DISCONNECTED'|null $ConnectionState
+ * @property string|null $Id
+ * @property string|null $InstanceArn
+ * @property string|null $Name
+ * @property list<Shapes\NodeInterfaceMapping>|null $NodeInterfaceMappings
+ * @property 'BACKUP'|'ACTIVE'|null $Role
+ * @property 'CREATED'|'REGISTERING'|'READY_TO_ACTIVATE'|'REGISTRATION_FAILED'|'ACTIVATION_FAILED'|'ACTIVE'|'READY'|'IN_USE'|'DEREGISTERING'|'DRAINING'|'DEREGISTRATION_FAILED'|'DEREGISTERED'|null $State
  */
 class CreateNodeResponse extends Response
 {

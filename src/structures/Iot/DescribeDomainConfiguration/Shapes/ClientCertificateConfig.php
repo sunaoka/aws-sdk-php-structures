@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeDomainConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clientCertificateCallbackArn
+ * @property string|null $clientCertificateCallbackArn
  */
 class ClientCertificateConfig extends Shape
 {
     /**
-     * @param array{clientCertificateCallbackArn?: string} $args
+     * @param array{clientCertificateCallbackArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

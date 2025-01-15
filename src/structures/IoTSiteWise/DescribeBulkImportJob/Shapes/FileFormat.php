@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribeBulkImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Csv $csv
- * @property Parquet $parquet
+ * @property Csv|null $csv
+ * @property Parquet|null $parquet
  */
 class FileFormat extends Shape
 {
     /**
      * @param array{
-     *     csv?: Csv,
-     *     parquet?: Parquet
+     *     csv?: Csv|null,
+     *     parquet?: Parquet|null
      * } $args
      */
     public function __construct(array $args = [])

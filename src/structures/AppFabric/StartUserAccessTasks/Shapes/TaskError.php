@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppFabric\StartUserAccessTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $errorCode
- * @property string $errorMessage
+ * @property string|null $errorCode
+ * @property string|null $errorMessage
  */
 class TaskError extends Shape
 {
     /**
      * @param array{
-     *     errorCode?: string,
-     *     errorMessage?: string
+     *     errorCode?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

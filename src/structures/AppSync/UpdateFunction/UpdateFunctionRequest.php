@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $apiId
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $functionId
  * @property string $dataSourceName
- * @property string $requestMappingTemplate
- * @property string $responseMappingTemplate
- * @property string $functionVersion
- * @property Shapes\SyncConfig $syncConfig
- * @property int<0, 2000> $maxBatchSize
- * @property Shapes\AppSyncRuntime $runtime
- * @property string $code
+ * @property string|null $requestMappingTemplate
+ * @property string|null $responseMappingTemplate
+ * @property string|null $functionVersion
+ * @property Shapes\SyncConfig|null $syncConfig
+ * @property int<0, 2000>|null $maxBatchSize
+ * @property Shapes\AppSyncRuntime|null $runtime
+ * @property string|null $code
  */
 class UpdateFunctionRequest extends Request
 {
@@ -24,16 +24,16 @@ class UpdateFunctionRequest extends Request
      * @param array{
      *     apiId: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     functionId: string,
      *     dataSourceName: string,
-     *     requestMappingTemplate?: string,
-     *     responseMappingTemplate?: string,
-     *     functionVersion?: string,
-     *     syncConfig?: Shapes\SyncConfig,
-     *     maxBatchSize?: int<0, 2000>,
-     *     runtime?: Shapes\AppSyncRuntime,
-     *     code?: string
+     *     requestMappingTemplate?: string|null,
+     *     responseMappingTemplate?: string|null,
+     *     functionVersion?: string|null,
+     *     syncConfig?: Shapes\SyncConfig|null,
+     *     maxBatchSize?: int<0, 2000>|null,
+     *     runtime?: Shapes\AppSyncRuntime|null,
+     *     code?: string|null
      * } $args
      */
     public function __construct(array $args)

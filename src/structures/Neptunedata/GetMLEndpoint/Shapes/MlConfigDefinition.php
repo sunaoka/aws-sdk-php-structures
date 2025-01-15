@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetMLEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
+ * @property string|null $name
+ * @property string|null $arn
  */
 class MlConfigDefinition extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string
+     *     name?: string|null,
+     *     arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

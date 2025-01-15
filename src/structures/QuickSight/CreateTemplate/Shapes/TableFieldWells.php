@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TableAggregatedFieldWells $TableAggregatedFieldWells
- * @property TableUnaggregatedFieldWells $TableUnaggregatedFieldWells
+ * @property TableAggregatedFieldWells|null $TableAggregatedFieldWells
+ * @property TableUnaggregatedFieldWells|null $TableUnaggregatedFieldWells
  */
 class TableFieldWells extends Shape
 {
     /**
      * @param array{
-     *     TableAggregatedFieldWells?: TableAggregatedFieldWells,
-     *     TableUnaggregatedFieldWells?: TableUnaggregatedFieldWells
+     *     TableAggregatedFieldWells?: TableAggregatedFieldWells|null,
+     *     TableUnaggregatedFieldWells?: TableUnaggregatedFieldWells|null
      * } $args
      */
     public function __construct(array $args = [])

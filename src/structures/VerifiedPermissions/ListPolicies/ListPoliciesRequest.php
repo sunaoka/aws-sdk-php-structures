@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $policyStoreId
- * @property string $nextToken
- * @property int<1, max> $maxResults
- * @property Shapes\PolicyFilter $filter
+ * @property string|null $nextToken
+ * @property int<1, max>|null $maxResults
+ * @property Shapes\PolicyFilter|null $filter
  */
 class ListPoliciesRequest extends Request
 {
     /**
      * @param array{
      *     policyStoreId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, max>,
-     *     filter?: Shapes\PolicyFilter
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, max>|null,
+     *     filter?: Shapes\PolicyFilter|null
      * } $args
      */
     public function __construct(array $args)

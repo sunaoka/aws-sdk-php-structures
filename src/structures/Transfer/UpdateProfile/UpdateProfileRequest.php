@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProfileId
- * @property list<string> $CertificateIds
+ * @property list<string>|null $CertificateIds
  */
 class UpdateProfileRequest extends Request
 {
     /**
      * @param array{
      *     ProfileId: string,
-     *     CertificateIds?: list<string>
+     *     CertificateIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

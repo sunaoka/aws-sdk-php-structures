@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeNodeConfigurationOptions\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NodeType'|'NumberOfNodes'|'EstimatedDiskUtilizationPercent'|'Mode' $Name
- * @property 'eq'|'lt'|'gt'|'le'|'ge'|'in'|'between' $Operator
- * @property list<string> $Values
+ * @property 'NodeType'|'NumberOfNodes'|'EstimatedDiskUtilizationPercent'|'Mode'|null $Name
+ * @property 'eq'|'lt'|'gt'|'le'|'ge'|'in'|'between'|null $Operator
+ * @property list<string>|null $Values
  */
 class NodeConfigurationOptionsFilter extends Shape
 {
     /**
      * @param array{
-     *     Name?: 'NodeType'|'NumberOfNodes'|'EstimatedDiskUtilizationPercent'|'Mode',
-     *     Operator?: 'eq'|'lt'|'gt'|'le'|'ge'|'in'|'between',
-     *     Values?: list<string>
+     *     Name?: 'NodeType'|'NumberOfNodes'|'EstimatedDiskUtilizationPercent'|'Mode'|null,
+     *     Operator?: 'eq'|'lt'|'gt'|'le'|'ge'|'in'|'between'|null,
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

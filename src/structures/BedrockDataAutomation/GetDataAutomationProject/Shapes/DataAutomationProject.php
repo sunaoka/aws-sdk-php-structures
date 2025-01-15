@@ -9,14 +9,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
  * @property string $projectName
- * @property 'DEVELOPMENT'|'LIVE' $projectStage
- * @property string $projectDescription
- * @property StandardOutputConfiguration $standardOutputConfiguration
- * @property CustomOutputConfiguration $customOutputConfiguration
- * @property OverrideConfiguration $overrideConfiguration
+ * @property 'DEVELOPMENT'|'LIVE'|null $projectStage
+ * @property string|null $projectDescription
+ * @property StandardOutputConfiguration|null $standardOutputConfiguration
+ * @property CustomOutputConfiguration|null $customOutputConfiguration
+ * @property OverrideConfiguration|null $overrideConfiguration
  * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED' $status
- * @property string $kmsKeyId
- * @property array<string, string> $kmsEncryptionContext
+ * @property string|null $kmsKeyId
+ * @property array<string, string>|null $kmsEncryptionContext
  */
 class DataAutomationProject extends Shape
 {
@@ -26,14 +26,14 @@ class DataAutomationProject extends Shape
      *     creationTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult,
      *     projectName: string,
-     *     projectStage?: 'DEVELOPMENT'|'LIVE',
-     *     projectDescription?: string,
-     *     standardOutputConfiguration?: StandardOutputConfiguration,
-     *     customOutputConfiguration?: CustomOutputConfiguration,
-     *     overrideConfiguration?: OverrideConfiguration,
+     *     projectStage?: 'DEVELOPMENT'|'LIVE'|null,
+     *     projectDescription?: string|null,
+     *     standardOutputConfiguration?: StandardOutputConfiguration|null,
+     *     customOutputConfiguration?: CustomOutputConfiguration|null,
+     *     overrideConfiguration?: OverrideConfiguration|null,
      *     status: 'COMPLETED'|'IN_PROGRESS'|'FAILED',
-     *     kmsKeyId?: string,
-     *     kmsEncryptionContext?: array<string, string>
+     *     kmsKeyId?: string|null,
+     *     kmsEncryptionContext?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeHsmClientCertificates;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\HsmClientCertificate> $HsmClientCertificates
+ * @property string|null $Marker
+ * @property list<Shapes\HsmClientCertificate>|null $HsmClientCertificates
  */
 class DescribeHsmClientCertificatesResponse extends Response
 {

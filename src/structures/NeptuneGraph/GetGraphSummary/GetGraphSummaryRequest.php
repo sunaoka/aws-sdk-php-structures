@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $graphIdentifier
- * @property 'BASIC'|'DETAILED' $mode
+ * @property 'BASIC'|'DETAILED'|null $mode
  */
 class GetGraphSummaryRequest extends Request
 {
     /**
      * @param array{
      *     graphIdentifier: string,
-     *     mode?: 'BASIC'|'DETAILED'
+     *     mode?: 'BASIC'|'DETAILED'|null
      * } $args
      */
     public function __construct(array $args)

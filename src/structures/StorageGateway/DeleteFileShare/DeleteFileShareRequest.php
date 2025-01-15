@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FileShareARN
- * @property bool $ForceDelete
+ * @property bool|null $ForceDelete
  */
 class DeleteFileShareRequest extends Request
 {
     /**
      * @param array{
      *     FileShareARN: string,
-     *     ForceDelete?: bool
+     *     ForceDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

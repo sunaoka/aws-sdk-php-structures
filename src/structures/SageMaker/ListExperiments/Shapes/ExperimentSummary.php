@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListExperiments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExperimentArn
- * @property string $ExperimentName
- * @property string $DisplayName
- * @property ExperimentSource $ExperimentSource
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $ExperimentArn
+ * @property string|null $ExperimentName
+ * @property string|null $DisplayName
+ * @property ExperimentSource|null $ExperimentSource
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class ExperimentSummary extends Shape
 {
     /**
      * @param array{
-     *     ExperimentArn?: string,
-     *     ExperimentName?: string,
-     *     DisplayName?: string,
-     *     ExperimentSource?: ExperimentSource,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     ExperimentArn?: string|null,
+     *     ExperimentName?: string|null,
+     *     DisplayName?: string|null,
+     *     ExperimentSource?: ExperimentSource|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

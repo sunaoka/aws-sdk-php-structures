@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $resourceArn
  * @property string $policy
- * @property string $expectedRevisionId
+ * @property string|null $expectedRevisionId
  */
 class UpdateResourcePolicyRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateResourcePolicyRequest extends Request
      * @param array{
      *     resourceArn: string,
      *     policy: string,
-     *     expectedRevisionId?: string
+     *     expectedRevisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

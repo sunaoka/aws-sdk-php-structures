@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Ec2\ImportInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $Description
- * @property Shapes\ImportInstanceLaunchSpecification $LaunchSpecification
- * @property list<Shapes\DiskImage> $DiskImages
+ * @property bool|null $DryRun
+ * @property string|null $Description
+ * @property Shapes\ImportInstanceLaunchSpecification|null $LaunchSpecification
+ * @property list<Shapes\DiskImage>|null $DiskImages
  * @property 'Windows' $Platform
  */
 class ImportInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     Description?: string,
-     *     LaunchSpecification?: Shapes\ImportInstanceLaunchSpecification,
-     *     DiskImages?: list<Shapes\DiskImage>,
+     *     DryRun?: bool|null,
+     *     Description?: string|null,
+     *     LaunchSpecification?: Shapes\ImportInstanceLaunchSpecification|null,
+     *     DiskImages?: list<Shapes\DiskImage>|null,
      *     Platform: 'Windows'
      * } $args
      */

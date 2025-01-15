@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ses\UpdateReceiptRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TopicArn
+ * @property string|null $TopicArn
  * @property string $OrganizationArn
  */
 class WorkmailAction extends Shape
 {
     /**
      * @param array{
-     *     TopicArn?: string,
+     *     TopicArn?: string|null,
      *     OrganizationArn: string
      * } $args
      */

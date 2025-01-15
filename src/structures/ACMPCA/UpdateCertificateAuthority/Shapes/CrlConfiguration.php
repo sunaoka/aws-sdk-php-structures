@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property int<1, 5000> $ExpirationInDays
- * @property string $CustomCname
- * @property string $S3BucketName
- * @property 'PUBLIC_READ'|'BUCKET_OWNER_FULL_CONTROL' $S3ObjectAcl
- * @property CrlDistributionPointExtensionConfiguration $CrlDistributionPointExtensionConfiguration
+ * @property int<1, 5000>|null $ExpirationInDays
+ * @property string|null $CustomCname
+ * @property string|null $S3BucketName
+ * @property 'PUBLIC_READ'|'BUCKET_OWNER_FULL_CONTROL'|null $S3ObjectAcl
+ * @property CrlDistributionPointExtensionConfiguration|null $CrlDistributionPointExtensionConfiguration
  */
 class CrlConfiguration extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     ExpirationInDays?: int<1, 5000>,
-     *     CustomCname?: string,
-     *     S3BucketName?: string,
-     *     S3ObjectAcl?: 'PUBLIC_READ'|'BUCKET_OWNER_FULL_CONTROL',
-     *     CrlDistributionPointExtensionConfiguration?: CrlDistributionPointExtensionConfiguration
+     *     ExpirationInDays?: int<1, 5000>|null,
+     *     CustomCname?: string|null,
+     *     S3BucketName?: string|null,
+     *     S3ObjectAcl?: 'PUBLIC_READ'|'BUCKET_OWNER_FULL_CONTROL'|null,
+     *     CrlDistributionPointExtensionConfiguration?: CrlDistributionPointExtensionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

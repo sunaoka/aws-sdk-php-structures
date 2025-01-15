@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FontSize $FontSize
- * @property 'UNDERLINE'|'NONE' $FontDecoration
- * @property string $FontColor
- * @property FontWeight $FontWeight
- * @property 'NORMAL'|'ITALIC' $FontStyle
- * @property string $FontFamily
+ * @property FontSize|null $FontSize
+ * @property 'UNDERLINE'|'NONE'|null $FontDecoration
+ * @property string|null $FontColor
+ * @property FontWeight|null $FontWeight
+ * @property 'NORMAL'|'ITALIC'|null $FontStyle
+ * @property string|null $FontFamily
  */
 class FontConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FontSize?: FontSize,
-     *     FontDecoration?: 'UNDERLINE'|'NONE',
-     *     FontColor?: string,
-     *     FontWeight?: FontWeight,
-     *     FontStyle?: 'NORMAL'|'ITALIC',
-     *     FontFamily?: string
+     *     FontSize?: FontSize|null,
+     *     FontDecoration?: 'UNDERLINE'|'NONE'|null,
+     *     FontColor?: string|null,
+     *     FontWeight?: FontWeight|null,
+     *     FontStyle?: 'NORMAL'|'ITALIC'|null,
+     *     FontFamily?: string|null
      * } $args
      */
     public function __construct(array $args = [])

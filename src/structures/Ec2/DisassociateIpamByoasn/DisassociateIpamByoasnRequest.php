@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DisassociateIpamByoasn;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $Asn
  * @property string $Cidr
  */
@@ -13,7 +13,7 @@ class DisassociateIpamByoasnRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     Asn: string,
      *     Cidr: string
      * } $args

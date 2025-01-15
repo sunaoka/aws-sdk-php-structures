@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Iot\CreateCertificateFromCsr;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $certificateArn
- * @property string $certificateId
- * @property string $certificatePem
+ * @property string|null $certificateArn
+ * @property string|null $certificateId
+ * @property string|null $certificatePem
  */
 class CreateCertificateFromCsrResponse extends Response
 {

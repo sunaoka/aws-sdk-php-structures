@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaPackageV2\GetOriginEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BINARY'|'XML' $AdMarkerDash
+ * @property 'BINARY'|'XML'|null $AdMarkerDash
  */
 class ScteDash extends Shape
 {
     /**
-     * @param array{AdMarkerDash?: 'BINARY'|'XML'} $args
+     * @param array{AdMarkerDash?: 'BINARY'|'XML'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QBusiness\ListIndices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $displayName
- * @property string $indexId
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING' $status
+ * @property string|null $displayName
+ * @property string|null $indexId
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|null $status
  */
 class Index extends Shape
 {
     /**
      * @param array{
-     *     displayName?: string,
-     *     indexId?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'
+     *     displayName?: string|null,
+     *     indexId?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|null
      * } $args
      */
     public function __construct(array $args = [])

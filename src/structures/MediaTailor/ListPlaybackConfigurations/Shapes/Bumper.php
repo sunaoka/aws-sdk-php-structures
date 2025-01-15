@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\ListPlaybackConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndUrl
- * @property string $StartUrl
+ * @property string|null $EndUrl
+ * @property string|null $StartUrl
  */
 class Bumper extends Shape
 {
     /**
      * @param array{
-     *     EndUrl?: string,
-     *     StartUrl?: string
+     *     EndUrl?: string|null,
+     *     StartUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

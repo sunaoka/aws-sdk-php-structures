@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainId
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property list<'Active'|'Inactive'> $status
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property list<'Active'|'Inactive'>|null $status
  */
 class ListTemplatesRequest extends Request
 {
     /**
      * @param array{
      *     domainId: string,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     status?: list<'Active'|'Inactive'>
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     status?: list<'Active'|'Inactive'>|null
      * } $args
      */
     public function __construct(array $args)

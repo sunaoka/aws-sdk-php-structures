@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Route53Domains\GetContactReachabilityStatus;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $domainName
+ * @property string|null $domainName
  */
 class GetContactReachabilityStatusRequest extends Request
 {
     /**
-     * @param array{domainName?: string} $args
+     * @param array{domainName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

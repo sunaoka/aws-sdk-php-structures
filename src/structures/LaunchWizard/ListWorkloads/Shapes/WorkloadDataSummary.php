@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\ListWorkloads\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $displayName
- * @property string $workloadName
+ * @property string|null $displayName
+ * @property string|null $workloadName
  */
 class WorkloadDataSummary extends Shape
 {
     /**
      * @param array{
-     *     displayName?: string,
-     *     workloadName?: string
+     *     displayName?: string|null,
+     *     workloadName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorSc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SchemaId
- * @property string $ObjectType
- * @property int $NumberOfObjects
- * @property int $CodeLineCount
- * @property int $CodeSize
+ * @property string|null $SchemaId
+ * @property string|null $ObjectType
+ * @property int|null $NumberOfObjects
+ * @property int|null $CodeLineCount
+ * @property int|null $CodeSize
  */
 class FleetAdvisorSchemaObjectResponse extends Shape
 {
     /**
      * @param array{
-     *     SchemaId?: string,
-     *     ObjectType?: string,
-     *     NumberOfObjects?: int,
-     *     CodeLineCount?: int,
-     *     CodeSize?: int
+     *     SchemaId?: string|null,
+     *     ObjectType?: string|null,
+     *     NumberOfObjects?: int|null,
+     *     CodeLineCount?: int|null,
+     *     CodeSize?: int|null
      * } $args
      */
     public function __construct(array $args = [])

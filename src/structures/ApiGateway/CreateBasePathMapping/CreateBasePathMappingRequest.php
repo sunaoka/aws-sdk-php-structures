@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainName
- * @property string $domainNameId
- * @property string $basePath
+ * @property string|null $domainNameId
+ * @property string|null $basePath
  * @property string $restApiId
- * @property string $stage
+ * @property string|null $stage
  */
 class CreateBasePathMappingRequest extends Request
 {
     /**
      * @param array{
      *     domainName: string,
-     *     domainNameId?: string,
-     *     basePath?: string,
+     *     domainNameId?: string|null,
+     *     basePath?: string|null,
      *     restApiId: string,
-     *     stage?: string
+     *     stage?: string|null
      * } $args
      */
     public function __construct(array $args)

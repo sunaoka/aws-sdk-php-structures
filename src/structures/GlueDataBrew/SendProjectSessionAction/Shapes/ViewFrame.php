@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<0, max> $StartColumnIndex
- * @property int<0, 20> $ColumnRange
- * @property list<string> $HiddenColumns
- * @property int<0, max> $StartRowIndex
- * @property int $RowRange
- * @property 'ENABLE'|'DISABLE' $Analytics
+ * @property int<0, 20>|null $ColumnRange
+ * @property list<string>|null $HiddenColumns
+ * @property int<0, max>|null $StartRowIndex
+ * @property int|null $RowRange
+ * @property 'ENABLE'|'DISABLE'|null $Analytics
  */
 class ViewFrame extends Shape
 {
     /**
      * @param array{
      *     StartColumnIndex: int<0, max>,
-     *     ColumnRange?: int<0, 20>,
-     *     HiddenColumns?: list<string>,
-     *     StartRowIndex?: int<0, max>,
-     *     RowRange?: int,
-     *     Analytics?: 'ENABLE'|'DISABLE'
+     *     ColumnRange?: int<0, 20>|null,
+     *     HiddenColumns?: list<string>|null,
+     *     StartRowIndex?: int<0, max>|null,
+     *     RowRange?: int|null,
+     *     Analytics?: 'ENABLE'|'DISABLE'|null
      * } $args
      */
     public function __construct(array $args)

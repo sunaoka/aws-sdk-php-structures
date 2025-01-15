@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Property $AuthenticationType
- * @property Property $SecretArn
- * @property array<string, Property> $OAuth2Properties
- * @property array<string, Property> $BasicAuthenticationProperties
- * @property array<string, Property> $CustomAuthenticationProperties
+ * @property Property|null $SecretArn
+ * @property array<string, Property>|null $OAuth2Properties
+ * @property array<string, Property>|null $BasicAuthenticationProperties
+ * @property array<string, Property>|null $CustomAuthenticationProperties
  */
 class AuthConfiguration extends Shape
 {
     /**
      * @param array{
      *     AuthenticationType: Property,
-     *     SecretArn?: Property,
-     *     OAuth2Properties?: array<string, Property>,
-     *     BasicAuthenticationProperties?: array<string, Property>,
-     *     CustomAuthenticationProperties?: array<string, Property>
+     *     SecretArn?: Property|null,
+     *     OAuth2Properties?: array<string, Property>|null,
+     *     BasicAuthenticationProperties?: array<string, Property>|null,
+     *     CustomAuthenticationProperties?: array<string, Property>|null
      * } $args
      */
     public function __construct(array $args)

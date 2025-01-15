@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\XRay\GetTraceSummaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<string> $Names
- * @property string $Type
- * @property string $AccountId
- * @property list<ErrorRootCauseEntity> $EntityPath
- * @property bool $Inferred
+ * @property string|null $Name
+ * @property list<string>|null $Names
+ * @property string|null $Type
+ * @property string|null $AccountId
+ * @property list<ErrorRootCauseEntity>|null $EntityPath
+ * @property bool|null $Inferred
  */
 class ErrorRootCauseService extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Names?: list<string>,
-     *     Type?: string,
-     *     AccountId?: string,
-     *     EntityPath?: list<ErrorRootCauseEntity>,
-     *     Inferred?: bool
+     *     Name?: string|null,
+     *     Names?: list<string>|null,
+     *     Type?: string|null,
+     *     AccountId?: string|null,
+     *     EntityPath?: list<ErrorRootCauseEntity>|null,
+     *     Inferred?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutTransformer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $source
+ * @property string|null $source
  */
 class ParseWAF extends Shape
 {
     /**
-     * @param array{source?: string} $args
+     * @param array{source?: string|null} $args
      */
     public function __construct(array $args = [])
     {

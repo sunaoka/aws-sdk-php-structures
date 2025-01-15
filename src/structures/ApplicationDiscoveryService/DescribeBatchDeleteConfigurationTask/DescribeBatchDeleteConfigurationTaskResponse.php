@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeBatchDelete
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\BatchDeleteConfigurationTask $task
+ * @property Shapes\BatchDeleteConfigurationTask|null $task
  */
 class DescribeBatchDeleteConfigurationTaskResponse extends Response
 {

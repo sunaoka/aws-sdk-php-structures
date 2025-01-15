@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateQueueOutboundCallerConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OutboundCallerIdName
- * @property string $OutboundCallerIdNumberId
- * @property string $OutboundFlowId
+ * @property string|null $OutboundCallerIdName
+ * @property string|null $OutboundCallerIdNumberId
+ * @property string|null $OutboundFlowId
  */
 class OutboundCallerConfig extends Shape
 {
     /**
      * @param array{
-     *     OutboundCallerIdName?: string,
-     *     OutboundCallerIdNumberId?: string,
-     *     OutboundFlowId?: string
+     *     OutboundCallerIdName?: string|null,
+     *     OutboundCallerIdNumberId?: string|null,
+     *     OutboundFlowId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

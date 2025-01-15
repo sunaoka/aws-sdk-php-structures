@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property list<CreateAssessmentFrameworkControl> $controls
+ * @property list<CreateAssessmentFrameworkControl>|null $controls
  */
 class CreateAssessmentFrameworkControlSet extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     controls?: list<CreateAssessmentFrameworkControl>
+     *     controls?: list<CreateAssessmentFrameworkControl>|null
      * } $args
      */
     public function __construct(array $args)

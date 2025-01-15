@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $connectInstanceId
  * @property Shapes\DialerConfig $dialerConfig
  * @property Shapes\OutboundCallConfig $outboundCallConfig
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateCampaignRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateCampaignRequest extends Request
      *     connectInstanceId: string,
      *     dialerConfig: Shapes\DialerConfig,
      *     outboundCallConfig: Shapes\OutboundCallConfig,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AutoScaling\PutScalingPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AlarmName
- * @property string $AlarmARN
+ * @property string|null $AlarmName
+ * @property string|null $AlarmARN
  */
 class Alarm extends Shape
 {
     /**
      * @param array{
-     *     AlarmName?: string,
-     *     AlarmARN?: string
+     *     AlarmName?: string|null,
+     *     AlarmARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IdentityPoolId
  * @property string $IdentityId
  * @property string $DatasetName
- * @property string $DeviceId
- * @property list<Shapes\RecordPatch> $RecordPatches
+ * @property string|null $DeviceId
+ * @property list<Shapes\RecordPatch>|null $RecordPatches
  * @property string $SyncSessionToken
- * @property string $ClientContext
+ * @property string|null $ClientContext
  */
 class UpdateRecordsRequest extends Request
 {
@@ -20,10 +20,10 @@ class UpdateRecordsRequest extends Request
      *     IdentityPoolId: string,
      *     IdentityId: string,
      *     DatasetName: string,
-     *     DeviceId?: string,
-     *     RecordPatches?: list<Shapes\RecordPatch>,
+     *     DeviceId?: string|null,
+     *     RecordPatches?: list<Shapes\RecordPatch>|null,
      *     SyncSessionToken: string,
-     *     ClientContext?: string
+     *     ClientContext?: string|null
      * } $args
      */
     public function __construct(array $args)

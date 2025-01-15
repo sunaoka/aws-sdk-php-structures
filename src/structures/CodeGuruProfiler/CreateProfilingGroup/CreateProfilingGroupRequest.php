@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CodeGuruProfiler\CreateProfilingGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\AgentOrchestrationConfig $agentOrchestrationConfig
+ * @property Shapes\AgentOrchestrationConfig|null $agentOrchestrationConfig
  * @property string $clientToken
- * @property 'Default'|'AWSLambda' $computePlatform
+ * @property 'Default'|'AWSLambda'|null $computePlatform
  * @property string $profilingGroupName
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateProfilingGroupRequest extends Request
 {
     /**
      * @param array{
-     *     agentOrchestrationConfig?: Shapes\AgentOrchestrationConfig,
+     *     agentOrchestrationConfig?: Shapes\AgentOrchestrationConfig|null,
      *     clientToken: string,
-     *     computePlatform?: 'Default'|'AWSLambda',
+     *     computePlatform?: 'Default'|'AWSLambda'|null,
      *     profilingGroupName: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

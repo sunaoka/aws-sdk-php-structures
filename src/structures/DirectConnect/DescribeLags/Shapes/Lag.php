@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeLags\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $connectionsBandwidth
- * @property int $numberOfConnections
- * @property string $lagId
- * @property string $ownerAccount
- * @property string $lagName
- * @property 'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'unknown' $lagState
- * @property string $location
- * @property string $region
- * @property int $minimumLinks
- * @property string $awsDevice
- * @property string $awsDeviceV2
- * @property string $awsLogicalDeviceId
- * @property list<Connection> $connections
- * @property bool $allowsHostedConnections
- * @property bool $jumboFrameCapable
- * @property 'unknown'|'yes'|'no' $hasLogicalRedundancy
- * @property list<Tag> $tags
- * @property string $providerName
- * @property bool $macSecCapable
- * @property string $encryptionMode
- * @property list<MacSecKey> $macSecKeys
+ * @property string|null $connectionsBandwidth
+ * @property int|null $numberOfConnections
+ * @property string|null $lagId
+ * @property string|null $ownerAccount
+ * @property string|null $lagName
+ * @property 'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'unknown'|null $lagState
+ * @property string|null $location
+ * @property string|null $region
+ * @property int|null $minimumLinks
+ * @property string|null $awsDevice
+ * @property string|null $awsDeviceV2
+ * @property string|null $awsLogicalDeviceId
+ * @property list<Connection>|null $connections
+ * @property bool|null $allowsHostedConnections
+ * @property bool|null $jumboFrameCapable
+ * @property 'unknown'|'yes'|'no'|null $hasLogicalRedundancy
+ * @property list<Tag>|null $tags
+ * @property string|null $providerName
+ * @property bool|null $macSecCapable
+ * @property string|null $encryptionMode
+ * @property list<MacSecKey>|null $macSecKeys
  */
 class Lag extends Shape
 {
     /**
      * @param array{
-     *     connectionsBandwidth?: string,
-     *     numberOfConnections?: int,
-     *     lagId?: string,
-     *     ownerAccount?: string,
-     *     lagName?: string,
-     *     lagState?: 'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'unknown',
-     *     location?: string,
-     *     region?: string,
-     *     minimumLinks?: int,
-     *     awsDevice?: string,
-     *     awsDeviceV2?: string,
-     *     awsLogicalDeviceId?: string,
-     *     connections?: list<Connection>,
-     *     allowsHostedConnections?: bool,
-     *     jumboFrameCapable?: bool,
-     *     hasLogicalRedundancy?: 'unknown'|'yes'|'no',
-     *     tags?: list<Tag>,
-     *     providerName?: string,
-     *     macSecCapable?: bool,
-     *     encryptionMode?: string,
-     *     macSecKeys?: list<MacSecKey>
+     *     connectionsBandwidth?: string|null,
+     *     numberOfConnections?: int|null,
+     *     lagId?: string|null,
+     *     ownerAccount?: string|null,
+     *     lagName?: string|null,
+     *     lagState?: 'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'unknown'|null,
+     *     location?: string|null,
+     *     region?: string|null,
+     *     minimumLinks?: int|null,
+     *     awsDevice?: string|null,
+     *     awsDeviceV2?: string|null,
+     *     awsLogicalDeviceId?: string|null,
+     *     connections?: list<Connection>|null,
+     *     allowsHostedConnections?: bool|null,
+     *     jumboFrameCapable?: bool|null,
+     *     hasLogicalRedundancy?: 'unknown'|'yes'|'no'|null,
+     *     tags?: list<Tag>|null,
+     *     providerName?: string|null,
+     *     macSecCapable?: bool|null,
+     *     encryptionMode?: string|null,
+     *     macSecKeys?: list<MacSecKey>|null
      * } $args
      */
     public function __construct(array $args = [])

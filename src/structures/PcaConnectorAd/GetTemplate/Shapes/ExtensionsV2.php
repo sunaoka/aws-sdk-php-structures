@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\GetTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ApplicationPolicies $ApplicationPolicies
+ * @property ApplicationPolicies|null $ApplicationPolicies
  * @property KeyUsage $KeyUsage
  */
 class ExtensionsV2 extends Shape
 {
     /**
      * @param array{
-     *     ApplicationPolicies?: ApplicationPolicies,
+     *     ApplicationPolicies?: ApplicationPolicies|null,
      *     KeyUsage: KeyUsage
      * } $args
      */

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\StorageGateway\ListFileShares\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NFS'|'SMB' $FileShareType
- * @property string $FileShareARN
- * @property string $FileShareId
- * @property string $FileShareStatus
- * @property string $GatewayARN
+ * @property 'NFS'|'SMB'|null $FileShareType
+ * @property string|null $FileShareARN
+ * @property string|null $FileShareId
+ * @property string|null $FileShareStatus
+ * @property string|null $GatewayARN
  */
 class FileShareInfo extends Shape
 {
     /**
      * @param array{
-     *     FileShareType?: 'NFS'|'SMB',
-     *     FileShareARN?: string,
-     *     FileShareId?: string,
-     *     FileShareStatus?: string,
-     *     GatewayARN?: string
+     *     FileShareType?: 'NFS'|'SMB'|null,
+     *     FileShareARN?: string|null,
+     *     FileShareId?: string|null,
+     *     FileShareStatus?: string|null,
+     *     GatewayARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

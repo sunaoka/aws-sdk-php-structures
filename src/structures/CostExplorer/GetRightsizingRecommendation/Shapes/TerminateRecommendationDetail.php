@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EstimatedMonthlySavings
- * @property string $CurrencyCode
+ * @property string|null $EstimatedMonthlySavings
+ * @property string|null $CurrencyCode
  */
 class TerminateRecommendationDetail extends Shape
 {
     /**
      * @param array{
-     *     EstimatedMonthlySavings?: string,
-     *     CurrencyCode?: string
+     *     EstimatedMonthlySavings?: string|null,
+     *     CurrencyCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

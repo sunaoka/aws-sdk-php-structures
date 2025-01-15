@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribeAssetModelCompositeModel\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
+ * @property string|null $id
+ * @property string|null $name
  */
 class AssetModelCompositeModelPathSegment extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string
+     *     id?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

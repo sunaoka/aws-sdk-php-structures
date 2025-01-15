@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\GetNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChainId
+ * @property string|null $ChainId
  */
 class NetworkEthereumAttributes extends Shape
 {
     /**
-     * @param array{ChainId?: string} $args
+     * @param array{ChainId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

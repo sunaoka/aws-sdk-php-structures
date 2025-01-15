@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $associateInProgressToken
  * @property list<WabaPhoneNumberSetupFinalization> $phoneNumbers
- * @property string $phoneNumberParent
- * @property WabaSetupFinalization $waba
+ * @property string|null $phoneNumberParent
+ * @property WabaSetupFinalization|null $waba
  */
 class WhatsAppSetupFinalization extends Shape
 {
@@ -16,8 +16,8 @@ class WhatsAppSetupFinalization extends Shape
      * @param array{
      *     associateInProgressToken: string,
      *     phoneNumbers: list<WabaPhoneNumberSetupFinalization>,
-     *     phoneNumberParent?: string,
-     *     waba?: WabaSetupFinalization
+     *     phoneNumberParent?: string|null,
+     *     waba?: WabaSetupFinalization|null
      * } $args
      */
     public function __construct(array $args)

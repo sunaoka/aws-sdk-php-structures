@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DAX\DescribeClusters;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\Cluster> $Clusters
+ * @property string|null $NextToken
+ * @property list<Shapes\Cluster>|null $Clusters
  */
 class DescribeClustersResponse extends Response
 {

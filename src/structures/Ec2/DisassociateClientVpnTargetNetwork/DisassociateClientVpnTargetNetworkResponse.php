@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\DisassociateClientVpnTargetNetwork;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AssociationId
- * @property Shapes\AssociationStatus $Status
+ * @property string|null $AssociationId
+ * @property Shapes\AssociationStatus|null $Status
  */
 class DisassociateClientVpnTargetNetworkResponse extends Response
 {

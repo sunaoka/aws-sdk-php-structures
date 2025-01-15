@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property DataSourceS3Configuration $DataSourceS3Configuration
- * @property CsvConfiguration $CsvConfiguration
+ * @property CsvConfiguration|null $CsvConfiguration
  * @property 'CSV' $DataFormat
  */
 class DataSourceConfiguration extends Shape
@@ -14,7 +14,7 @@ class DataSourceConfiguration extends Shape
     /**
      * @param array{
      *     DataSourceS3Configuration: DataSourceS3Configuration,
-     *     CsvConfiguration?: CsvConfiguration,
+     *     CsvConfiguration?: CsvConfiguration|null,
      *     DataFormat: 'CSV'
      * } $args
      */

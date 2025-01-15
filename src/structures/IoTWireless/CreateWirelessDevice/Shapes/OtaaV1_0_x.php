@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTWireless\CreateWirelessDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppKey
- * @property string $AppEui
- * @property string $JoinEui
- * @property string $GenAppKey
+ * @property string|null $AppKey
+ * @property string|null $AppEui
+ * @property string|null $JoinEui
+ * @property string|null $GenAppKey
  */
 class OtaaV1_0_x extends Shape
 {
     /**
      * @param array{
-     *     AppKey?: string,
-     *     AppEui?: string,
-     *     JoinEui?: string,
-     *     GenAppKey?: string
+     *     AppKey?: string|null,
+     *     AppEui?: string|null,
+     *     JoinEui?: string|null,
+     *     GenAppKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

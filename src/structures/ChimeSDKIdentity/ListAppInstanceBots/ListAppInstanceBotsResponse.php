@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\ListAppInstanceBots;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppInstanceArn
- * @property list<Shapes\AppInstanceBotSummary> $AppInstanceBots
- * @property string $NextToken
+ * @property string|null $AppInstanceArn
+ * @property list<Shapes\AppInstanceBotSummary>|null $AppInstanceBots
+ * @property string|null $NextToken
  */
 class ListAppInstanceBotsResponse extends Response
 {

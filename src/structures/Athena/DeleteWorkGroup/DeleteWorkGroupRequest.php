@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkGroup
- * @property bool $RecursiveDeleteOption
+ * @property bool|null $RecursiveDeleteOption
  */
 class DeleteWorkGroupRequest extends Request
 {
     /**
      * @param array{
      *     WorkGroup: string,
-     *     RecursiveDeleteOption?: bool
+     *     RecursiveDeleteOption?: bool|null
      * } $args
      */
     public function __construct(array $args)

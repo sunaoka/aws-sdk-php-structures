@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $portalArn
- * @property string $serviceProviderSamlMetadata
+ * @property string|null $serviceProviderSamlMetadata
  */
 class GetPortalServiceProviderMetadataResponse extends Response
 {

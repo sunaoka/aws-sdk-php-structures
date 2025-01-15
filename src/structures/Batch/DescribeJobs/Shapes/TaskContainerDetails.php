@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $command
- * @property list<TaskContainerDependency> $dependsOn
- * @property list<KeyValuePair> $environment
- * @property bool $essential
- * @property string $image
- * @property LinuxParameters $linuxParameters
- * @property LogConfiguration $logConfiguration
- * @property list<MountPoint> $mountPoints
- * @property string $name
- * @property bool $privileged
- * @property bool $readonlyRootFilesystem
- * @property RepositoryCredentials $repositoryCredentials
- * @property list<ResourceRequirement> $resourceRequirements
- * @property list<Secret> $secrets
- * @property list<Ulimit> $ulimits
- * @property string $user
- * @property int $exitCode
- * @property string $reason
- * @property string $logStreamName
- * @property list<NetworkInterface> $networkInterfaces
+ * @property list<string>|null $command
+ * @property list<TaskContainerDependency>|null $dependsOn
+ * @property list<KeyValuePair>|null $environment
+ * @property bool|null $essential
+ * @property string|null $image
+ * @property LinuxParameters|null $linuxParameters
+ * @property LogConfiguration|null $logConfiguration
+ * @property list<MountPoint>|null $mountPoints
+ * @property string|null $name
+ * @property bool|null $privileged
+ * @property bool|null $readonlyRootFilesystem
+ * @property RepositoryCredentials|null $repositoryCredentials
+ * @property list<ResourceRequirement>|null $resourceRequirements
+ * @property list<Secret>|null $secrets
+ * @property list<Ulimit>|null $ulimits
+ * @property string|null $user
+ * @property int|null $exitCode
+ * @property string|null $reason
+ * @property string|null $logStreamName
+ * @property list<NetworkInterface>|null $networkInterfaces
  */
 class TaskContainerDetails extends Shape
 {
     /**
      * @param array{
-     *     command?: list<string>,
-     *     dependsOn?: list<TaskContainerDependency>,
-     *     environment?: list<KeyValuePair>,
-     *     essential?: bool,
-     *     image?: string,
-     *     linuxParameters?: LinuxParameters,
-     *     logConfiguration?: LogConfiguration,
-     *     mountPoints?: list<MountPoint>,
-     *     name?: string,
-     *     privileged?: bool,
-     *     readonlyRootFilesystem?: bool,
-     *     repositoryCredentials?: RepositoryCredentials,
-     *     resourceRequirements?: list<ResourceRequirement>,
-     *     secrets?: list<Secret>,
-     *     ulimits?: list<Ulimit>,
-     *     user?: string,
-     *     exitCode?: int,
-     *     reason?: string,
-     *     logStreamName?: string,
-     *     networkInterfaces?: list<NetworkInterface>
+     *     command?: list<string>|null,
+     *     dependsOn?: list<TaskContainerDependency>|null,
+     *     environment?: list<KeyValuePair>|null,
+     *     essential?: bool|null,
+     *     image?: string|null,
+     *     linuxParameters?: LinuxParameters|null,
+     *     logConfiguration?: LogConfiguration|null,
+     *     mountPoints?: list<MountPoint>|null,
+     *     name?: string|null,
+     *     privileged?: bool|null,
+     *     readonlyRootFilesystem?: bool|null,
+     *     repositoryCredentials?: RepositoryCredentials|null,
+     *     resourceRequirements?: list<ResourceRequirement>|null,
+     *     secrets?: list<Secret>|null,
+     *     ulimits?: list<Ulimit>|null,
+     *     user?: string|null,
+     *     exitCode?: int|null,
+     *     reason?: string|null,
+     *     logStreamName?: string|null,
+     *     networkInterfaces?: list<NetworkInterface>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property string $GivenName
+ * @property string|null $GivenName
  * @property string $SAMAccountName
  * @property string $SID
- * @property string $Surname
+ * @property string|null $Surname
  */
 class UserSummary extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     GivenName?: string,
+     *     GivenName?: string|null,
      *     SAMAccountName: string,
      *     SID: string,
-     *     Surname?: string
+     *     Surname?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\ListEnvironmentBlueprintConfigurations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LakeFormationConfiguration $lakeFormationConfiguration
+ * @property LakeFormationConfiguration|null $lakeFormationConfiguration
  */
 class ProvisioningConfiguration extends Shape
 {
     /**
-     * @param array{lakeFormationConfiguration?: LakeFormationConfiguration} $args
+     * @param array{lakeFormationConfiguration?: LakeFormationConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

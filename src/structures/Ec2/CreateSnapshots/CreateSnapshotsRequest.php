@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateSnapshots;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\InstanceSpecification $InstanceSpecification
- * @property string $OutpostArn
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
- * @property 'volume' $CopyTagsFromSource
- * @property 'regional'|'local' $Location
+ * @property string|null $OutpostArn
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
+ * @property 'volume'|null $CopyTagsFromSource
+ * @property 'regional'|'local'|null $Location
  */
 class CreateSnapshotsRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     InstanceSpecification: Shapes\InstanceSpecification,
-     *     OutpostArn?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool,
-     *     CopyTagsFromSource?: 'volume',
-     *     Location?: 'regional'|'local'
+     *     OutpostArn?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null,
+     *     CopyTagsFromSource?: 'volume'|null,
+     *     Location?: 'regional'|'local'|null
      * } $args
      */
     public function __construct(array $args)

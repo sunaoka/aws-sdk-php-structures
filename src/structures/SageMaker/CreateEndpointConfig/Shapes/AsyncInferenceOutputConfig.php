@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateEndpointConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
- * @property string $S3OutputPath
- * @property AsyncInferenceNotificationConfig $NotificationConfig
- * @property string $S3FailurePath
+ * @property string|null $KmsKeyId
+ * @property string|null $S3OutputPath
+ * @property AsyncInferenceNotificationConfig|null $NotificationConfig
+ * @property string|null $S3FailurePath
  */
 class AsyncInferenceOutputConfig extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
-     *     S3OutputPath?: string,
-     *     NotificationConfig?: AsyncInferenceNotificationConfig,
-     *     S3FailurePath?: string
+     *     KmsKeyId?: string|null,
+     *     S3OutputPath?: string|null,
+     *     NotificationConfig?: AsyncInferenceNotificationConfig|null,
+     *     S3FailurePath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

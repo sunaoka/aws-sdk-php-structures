@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DBProxyName
  * @property string $DBProxyEndpointName
  * @property list<string> $VpcSubnetIds
- * @property list<string> $VpcSecurityGroupIds
- * @property 'READ_WRITE'|'READ_ONLY' $TargetRole
- * @property list<Shapes\Tag> $Tags
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property 'READ_WRITE'|'READ_ONLY'|null $TargetRole
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDBProxyEndpointRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateDBProxyEndpointRequest extends Request
      *     DBProxyName: string,
      *     DBProxyEndpointName: string,
      *     VpcSubnetIds: list<string>,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     TargetRole?: 'READ_WRITE'|'READ_ONLY',
-     *     Tags?: list<Shapes\Tag>
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     TargetRole?: 'READ_WRITE'|'READ_ONLY'|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LakeFormation\ListLakeFormationOptIns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Resource $Resource
- * @property DataLakePrincipal $Principal
- * @property Condition $Condition
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property string $LastUpdatedBy
+ * @property Resource|null $Resource
+ * @property DataLakePrincipal|null $Principal
+ * @property Condition|null $Condition
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property string|null $LastUpdatedBy
  */
 class LakeFormationOptInsInfo extends Shape
 {
     /**
      * @param array{
-     *     Resource?: Resource,
-     *     Principal?: DataLakePrincipal,
-     *     Condition?: Condition,
-     *     LastModified?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedBy?: string
+     *     Resource?: Resource|null,
+     *     Principal?: DataLakePrincipal|null,
+     *     Condition?: Condition|null,
+     *     LastModified?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedBy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\RAM\GetPermission\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $version
- * @property bool $defaultVersion
- * @property string $name
- * @property string $resourceType
- * @property string $permission
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property bool $isResourceTypeDefault
- * @property 'CUSTOMER_MANAGED'|'AWS_MANAGED' $permissionType
- * @property 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD' $featureSet
- * @property 'ATTACHABLE'|'UNATTACHABLE'|'DELETING'|'DELETED' $status
- * @property list<Tag> $tags
+ * @property string|null $arn
+ * @property string|null $version
+ * @property bool|null $defaultVersion
+ * @property string|null $name
+ * @property string|null $resourceType
+ * @property string|null $permission
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property bool|null $isResourceTypeDefault
+ * @property 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null $permissionType
+ * @property 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null $featureSet
+ * @property 'ATTACHABLE'|'UNATTACHABLE'|'DELETING'|'DELETED'|null $status
+ * @property list<Tag>|null $tags
  */
 class ResourceSharePermissionDetail extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     version?: string,
-     *     defaultVersion?: bool,
-     *     name?: string,
-     *     resourceType?: string,
-     *     permission?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     isResourceTypeDefault?: bool,
-     *     permissionType?: 'CUSTOMER_MANAGED'|'AWS_MANAGED',
-     *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD',
-     *     status?: 'ATTACHABLE'|'UNATTACHABLE'|'DELETING'|'DELETED',
-     *     tags?: list<Tag>
+     *     arn?: string|null,
+     *     version?: string|null,
+     *     defaultVersion?: bool|null,
+     *     name?: string|null,
+     *     resourceType?: string|null,
+     *     permission?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     isResourceTypeDefault?: bool|null,
+     *     permissionType?: 'CUSTOMER_MANAGED'|'AWS_MANAGED'|null,
+     *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null,
+     *     status?: 'ATTACHABLE'|'UNATTACHABLE'|'DELETING'|'DELETED'|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeMatchmaking\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GameSessionArn
- * @property string $IpAddress
- * @property string $DnsName
- * @property int<1, max> $Port
- * @property list<MatchedPlayerSession> $MatchedPlayerSessions
+ * @property string|null $GameSessionArn
+ * @property string|null $IpAddress
+ * @property string|null $DnsName
+ * @property int<1, max>|null $Port
+ * @property list<MatchedPlayerSession>|null $MatchedPlayerSessions
  */
 class GameSessionConnectionInfo extends Shape
 {
     /**
      * @param array{
-     *     GameSessionArn?: string,
-     *     IpAddress?: string,
-     *     DnsName?: string,
-     *     Port?: int<1, max>,
-     *     MatchedPlayerSessions?: list<MatchedPlayerSession>
+     *     GameSessionArn?: string|null,
+     *     IpAddress?: string|null,
+     *     DnsName?: string|null,
+     *     Port?: int<1, max>|null,
+     *     MatchedPlayerSessions?: list<MatchedPlayerSession>|null
      * } $args
      */
     public function __construct(array $args = [])

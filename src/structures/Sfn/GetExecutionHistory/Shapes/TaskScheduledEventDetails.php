@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $resource
  * @property string $region
  * @property string $parameters
- * @property int $timeoutInSeconds
- * @property int $heartbeatInSeconds
- * @property TaskCredentials $taskCredentials
+ * @property int|null $timeoutInSeconds
+ * @property int|null $heartbeatInSeconds
+ * @property TaskCredentials|null $taskCredentials
  */
 class TaskScheduledEventDetails extends Shape
 {
@@ -21,9 +21,9 @@ class TaskScheduledEventDetails extends Shape
      *     resource: string,
      *     region: string,
      *     parameters: string,
-     *     timeoutInSeconds?: int,
-     *     heartbeatInSeconds?: int,
-     *     taskCredentials?: TaskCredentials
+     *     timeoutInSeconds?: int|null,
+     *     heartbeatInSeconds?: int|null,
+     *     taskCredentials?: TaskCredentials|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Z
  * @property string $X
  * @property string $Y
- * @property string $Key
+ * @property string|null $Key
  */
 class GetTileRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetTileRequest extends Request
      *     Z: string,
      *     X: string,
      *     Y: string,
-     *     Key?: string
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

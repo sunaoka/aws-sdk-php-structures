@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PackageID
  * @property string $DomainName
- * @property list<string> $PrerequisitePackageIDList
- * @property Shapes\PackageAssociationConfiguration $AssociationConfiguration
+ * @property list<string>|null $PrerequisitePackageIDList
+ * @property Shapes\PackageAssociationConfiguration|null $AssociationConfiguration
  */
 class AssociatePackageRequest extends Request
 {
@@ -16,8 +16,8 @@ class AssociatePackageRequest extends Request
      * @param array{
      *     PackageID: string,
      *     DomainName: string,
-     *     PrerequisitePackageIDList?: list<string>,
-     *     AssociationConfiguration?: Shapes\PackageAssociationConfiguration
+     *     PrerequisitePackageIDList?: list<string>|null,
+     *     AssociationConfiguration?: Shapes\PackageAssociationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

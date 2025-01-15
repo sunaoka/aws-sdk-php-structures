@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DeleteOutboundCrossCluster
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\OutboundCrossClusterSearchConnection $CrossClusterSearchConnection
+ * @property Shapes\OutboundCrossClusterSearchConnection|null $CrossClusterSearchConnection
  */
 class DeleteOutboundCrossClusterSearchConnectionResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeNetworkInterfacePermissions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $NetworkInterfacePermissionIds
- * @property list<Shapes\Filter> $Filters
- * @property string $NextToken
- * @property int<5, 255> $MaxResults
+ * @property list<string>|null $NetworkInterfacePermissionIds
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<5, 255>|null $MaxResults
  */
 class DescribeNetworkInterfacePermissionsRequest extends Request
 {
     /**
      * @param array{
-     *     NetworkInterfacePermissionIds?: list<string>,
-     *     Filters?: list<Shapes\Filter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<5, 255>
+     *     NetworkInterfacePermissionIds?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<5, 255>|null
      * } $args
      */
     public function __construct(array $args = [])

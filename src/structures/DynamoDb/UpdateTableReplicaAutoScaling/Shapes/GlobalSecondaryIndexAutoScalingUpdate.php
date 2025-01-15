@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateTableReplicaAutoScaling\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IndexName
- * @property AutoScalingSettingsUpdate $ProvisionedWriteCapacityAutoScalingUpdate
+ * @property string|null $IndexName
+ * @property AutoScalingSettingsUpdate|null $ProvisionedWriteCapacityAutoScalingUpdate
  */
 class GlobalSecondaryIndexAutoScalingUpdate extends Shape
 {
     /**
      * @param array{
-     *     IndexName?: string,
-     *     ProvisionedWriteCapacityAutoScalingUpdate?: AutoScalingSettingsUpdate
+     *     IndexName?: string|null,
+     *     ProvisionedWriteCapacityAutoScalingUpdate?: AutoScalingSettingsUpdate|null
      * } $args
      */
     public function __construct(array $args = [])

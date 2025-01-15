@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientRequestToken
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property 'HYPERLEDGER_FABRIC'|'ETHEREUM' $Framework
  * @property string $FrameworkVersion
- * @property Shapes\NetworkFrameworkConfiguration $FrameworkConfiguration
+ * @property Shapes\NetworkFrameworkConfiguration|null $FrameworkConfiguration
  * @property Shapes\VotingPolicy $VotingPolicy
  * @property Shapes\MemberConfiguration $MemberConfiguration
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateNetworkRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateNetworkRequest extends Request
      * @param array{
      *     ClientRequestToken: string,
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Framework: 'HYPERLEDGER_FABRIC'|'ETHEREUM',
      *     FrameworkVersion: string,
-     *     FrameworkConfiguration?: Shapes\NetworkFrameworkConfiguration,
+     *     FrameworkConfiguration?: Shapes\NetworkFrameworkConfiguration|null,
      *     VotingPolicy: Shapes\VotingPolicy,
      *     MemberConfiguration: Shapes\MemberConfiguration,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

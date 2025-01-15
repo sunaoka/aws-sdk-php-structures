@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Title
- * @property string $Instructions
+ * @property string|null $Instructions
  * @property string $RefId
- * @property bool $NotApplicableEnabled
+ * @property bool|null $NotApplicableEnabled
  * @property 'TEXT'|'SINGLESELECT'|'NUMERIC' $QuestionType
- * @property EvaluationFormQuestionTypeProperties $QuestionTypeProperties
- * @property double $Weight
+ * @property EvaluationFormQuestionTypeProperties|null $QuestionTypeProperties
+ * @property double|null $Weight
  */
 class EvaluationFormQuestion extends Shape
 {
     /**
      * @param array{
      *     Title: string,
-     *     Instructions?: string,
+     *     Instructions?: string|null,
      *     RefId: string,
-     *     NotApplicableEnabled?: bool,
+     *     NotApplicableEnabled?: bool|null,
      *     QuestionType: 'TEXT'|'SINGLESELECT'|'NUMERIC',
-     *     QuestionTypeProperties?: EvaluationFormQuestionTypeProperties,
-     *     Weight?: double
+     *     QuestionTypeProperties?: EvaluationFormQuestionTypeProperties|null,
+     *     Weight?: double|null
      * } $args
      */
     public function __construct(array $args)

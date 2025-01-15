@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
- * @property string $MFA
+ * @property string|null $ContentMD5
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property string|null $MFA
  * @property Shapes\VersioningConfiguration $VersioningConfiguration
- * @property string $ExpectedBucketOwner
+ * @property string|null $ExpectedBucketOwner
  */
 class PutBucketVersioningRequest extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     ContentMD5?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
-     *     MFA?: string,
+     *     ContentMD5?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     MFA?: string|null,
      *     VersioningConfiguration: Shapes\VersioningConfiguration,
-     *     ExpectedBucketOwner?: string
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

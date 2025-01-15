@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 23> $EndHourOfDay
  * @property int<0, 59> $EndMinuteOfHour
  * @property list<int<0, 6>> $DaysOfWeek
- * @property int<51200, max> $AverageUploadRateLimitInBitsPerSec
- * @property int<102400, max> $AverageDownloadRateLimitInBitsPerSec
+ * @property int<51200, max>|null $AverageUploadRateLimitInBitsPerSec
+ * @property int<102400, max>|null $AverageDownloadRateLimitInBitsPerSec
  */
 class BandwidthRateLimitInterval extends Shape
 {
@@ -22,8 +22,8 @@ class BandwidthRateLimitInterval extends Shape
      *     EndHourOfDay: int<0, 23>,
      *     EndMinuteOfHour: int<0, 59>,
      *     DaysOfWeek: list<int<0, 6>>,
-     *     AverageUploadRateLimitInBitsPerSec?: int<51200, max>,
-     *     AverageDownloadRateLimitInBitsPerSec?: int<102400, max>
+     *     AverageUploadRateLimitInBitsPerSec?: int<51200, max>|null,
+     *     AverageDownloadRateLimitInBitsPerSec?: int<102400, max>|null
      * } $args
      */
     public function __construct(array $args)

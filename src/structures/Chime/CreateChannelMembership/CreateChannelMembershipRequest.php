@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ChannelArn
  * @property string $MemberArn
  * @property 'DEFAULT'|'HIDDEN' $Type
- * @property string $ChimeBearer
+ * @property string|null $ChimeBearer
  */
 class CreateChannelMembershipRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateChannelMembershipRequest extends Request
      *     ChannelArn: string,
      *     MemberArn: string,
      *     Type: 'DEFAULT'|'HIDDEN',
-     *     ChimeBearer?: string
+     *     ChimeBearer?: string|null
      * } $args
      */
     public function __construct(array $args)

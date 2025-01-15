@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $SnapshotId
- * @property string $ClientToken
- * @property bool $DryRun
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property string $ImageId
- * @property bool $DeleteReplacedRootVolume
+ * @property string|null $SnapshotId
+ * @property string|null $ClientToken
+ * @property bool|null $DryRun
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $ImageId
+ * @property bool|null $DeleteReplacedRootVolume
  */
 class CreateReplaceRootVolumeTaskRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     SnapshotId?: string,
-     *     ClientToken?: string,
-     *     DryRun?: bool,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     ImageId?: string,
-     *     DeleteReplacedRootVolume?: bool
+     *     SnapshotId?: string|null,
+     *     ClientToken?: string|null,
+     *     DryRun?: bool|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     ImageId?: string|null,
+     *     DeleteReplacedRootVolume?: bool|null
      * } $args
      */
     public function __construct(array $args)

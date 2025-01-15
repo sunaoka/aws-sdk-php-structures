@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ReportingMta
- * @property \Aws\Api\DateTimeResult $ArrivalDate
- * @property list<ExtensionField> $ExtensionFields
+ * @property \Aws\Api\DateTimeResult|null $ArrivalDate
+ * @property list<ExtensionField>|null $ExtensionFields
  */
 class MessageDsn extends Shape
 {
     /**
      * @param array{
      *     ReportingMta: string,
-     *     ArrivalDate?: \Aws\Api\DateTimeResult,
-     *     ExtensionFields?: list<ExtensionField>
+     *     ArrivalDate?: \Aws\Api\DateTimeResult|null,
+     *     ExtensionFields?: list<ExtensionField>|null
      * } $args
      */
     public function __construct(array $args)

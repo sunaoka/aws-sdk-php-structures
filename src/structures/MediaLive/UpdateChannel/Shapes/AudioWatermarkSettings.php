@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NielsenWatermarksSettings $NielsenWatermarksSettings
+ * @property NielsenWatermarksSettings|null $NielsenWatermarksSettings
  */
 class AudioWatermarkSettings extends Shape
 {
     /**
-     * @param array{NielsenWatermarksSettings?: NielsenWatermarksSettings} $args
+     * @param array{NielsenWatermarksSettings?: NielsenWatermarksSettings|null} $args
      */
     public function __construct(array $args = [])
     {

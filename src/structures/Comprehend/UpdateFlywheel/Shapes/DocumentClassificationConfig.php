@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'MULTI_CLASS'|'MULTI_LABEL' $Mode
- * @property list<string> $Labels
+ * @property list<string>|null $Labels
  */
 class DocumentClassificationConfig extends Shape
 {
     /**
      * @param array{
      *     Mode: 'MULTI_CLASS'|'MULTI_LABEL',
-     *     Labels?: list<string>
+     *     Labels?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

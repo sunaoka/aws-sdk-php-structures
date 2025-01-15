@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property Consolidation $Consolidation
- * @property ConflictResolution $ConflictResolution
- * @property double $MinAllowedConfidenceScoreForMerging
+ * @property Consolidation|null $Consolidation
+ * @property ConflictResolution|null $ConflictResolution
+ * @property double|null $MinAllowedConfidenceScoreForMerging
  */
 class AutoMerging extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     Consolidation?: Consolidation,
-     *     ConflictResolution?: ConflictResolution,
-     *     MinAllowedConfidenceScoreForMerging?: double
+     *     Consolidation?: Consolidation|null,
+     *     ConflictResolution?: ConflictResolution|null,
+     *     MinAllowedConfidenceScoreForMerging?: double|null
      * } $args
      */
     public function __construct(array $args)

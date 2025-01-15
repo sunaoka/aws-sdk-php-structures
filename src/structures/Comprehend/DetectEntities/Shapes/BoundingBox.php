@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Comprehend\DetectEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Height
- * @property float $Left
- * @property float $Top
- * @property float $Width
+ * @property float|null $Height
+ * @property float|null $Left
+ * @property float|null $Top
+ * @property float|null $Width
  */
 class BoundingBox extends Shape
 {
     /**
      * @param array{
-     *     Height?: float,
-     *     Left?: float,
-     *     Top?: float,
-     *     Width?: float
+     *     Height?: float|null,
+     *     Left?: float|null,
+     *     Top?: float|null,
+     *     Width?: float|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetImageRecipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $uninstallAfterBuild
+ * @property bool|null $uninstallAfterBuild
  */
 class SystemsManagerAgent extends Shape
 {
     /**
-     * @param array{uninstallAfterBuild?: bool} $args
+     * @param array{uninstallAfterBuild?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

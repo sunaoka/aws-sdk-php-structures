@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateInferenceComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Image
- * @property string $ArtifactUrl
- * @property array<string, string> $Environment
+ * @property string|null $Image
+ * @property string|null $ArtifactUrl
+ * @property array<string, string>|null $Environment
  */
 class InferenceComponentContainerSpecification extends Shape
 {
     /**
      * @param array{
-     *     Image?: string,
-     *     ArtifactUrl?: string,
-     *     Environment?: array<string, string>
+     *     Image?: string|null,
+     *     ArtifactUrl?: string|null,
+     *     Environment?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

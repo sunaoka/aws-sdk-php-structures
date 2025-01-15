@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<MessageGroup> $messageGroups
  * @property int<1, 300> $frequencyInSeconds
  * @property int<1, 900> $timeoutInSeconds
- * @property bool $allowInterrupt
+ * @property bool|null $allowInterrupt
  */
 class StillWaitingResponseSpecification extends Shape
 {
@@ -17,7 +17,7 @@ class StillWaitingResponseSpecification extends Shape
      *     messageGroups: list<MessageGroup>,
      *     frequencyInSeconds: int<1, 300>,
      *     timeoutInSeconds: int<1, 900>,
-     *     allowInterrupt?: bool
+     *     allowInterrupt?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OpenSearchReservedInstancesConfiguration $configuration
- * @property ReservedInstancesCostCalculation $costCalculation
+ * @property OpenSearchReservedInstancesConfiguration|null $configuration
+ * @property ReservedInstancesCostCalculation|null $costCalculation
  */
 class OpenSearchReservedInstances extends Shape
 {
     /**
      * @param array{
-     *     configuration?: OpenSearchReservedInstancesConfiguration,
-     *     costCalculation?: ReservedInstancesCostCalculation
+     *     configuration?: OpenSearchReservedInstancesConfiguration|null,
+     *     costCalculation?: ReservedInstancesCostCalculation|null
      * } $args
      */
     public function __construct(array $args = [])

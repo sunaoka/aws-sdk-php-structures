@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstanceMetricData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $average
- * @property double $maximum
- * @property double $minimum
- * @property double $sampleCount
- * @property double $sum
- * @property \Aws\Api\DateTimeResult $timestamp
- * @property 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None' $unit
+ * @property double|null $average
+ * @property double|null $maximum
+ * @property double|null $minimum
+ * @property double|null $sampleCount
+ * @property double|null $sum
+ * @property \Aws\Api\DateTimeResult|null $timestamp
+ * @property 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None'|null $unit
  */
 class MetricDatapoint extends Shape
 {
     /**
      * @param array{
-     *     average?: double,
-     *     maximum?: double,
-     *     minimum?: double,
-     *     sampleCount?: double,
-     *     sum?: double,
-     *     timestamp?: \Aws\Api\DateTimeResult,
-     *     unit?: 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None'
+     *     average?: double|null,
+     *     maximum?: double|null,
+     *     minimum?: double|null,
+     *     sampleCount?: double|null,
+     *     sum?: double|null,
+     *     timestamp?: \Aws\Api\DateTimeResult|null,
+     *     unit?: 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None'|null
      * } $args
      */
     public function __construct(array $args = [])

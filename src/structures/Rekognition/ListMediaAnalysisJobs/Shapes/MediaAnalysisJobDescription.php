@@ -6,34 +6,34 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $JobId
- * @property string $JobName
+ * @property string|null $JobName
  * @property MediaAnalysisOperationsConfig $OperationsConfig
  * @property 'CREATED'|'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $Status
- * @property MediaAnalysisJobFailureDetails $FailureDetails
+ * @property MediaAnalysisJobFailureDetails|null $FailureDetails
  * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property \Aws\Api\DateTimeResult $CompletionTimestamp
+ * @property \Aws\Api\DateTimeResult|null $CompletionTimestamp
  * @property MediaAnalysisInput $Input
  * @property MediaAnalysisOutputConfig $OutputConfig
- * @property string $KmsKeyId
- * @property MediaAnalysisResults $Results
- * @property MediaAnalysisManifestSummary $ManifestSummary
+ * @property string|null $KmsKeyId
+ * @property MediaAnalysisResults|null $Results
+ * @property MediaAnalysisManifestSummary|null $ManifestSummary
  */
 class MediaAnalysisJobDescription extends Shape
 {
     /**
      * @param array{
      *     JobId: string,
-     *     JobName?: string,
+     *     JobName?: string|null,
      *     OperationsConfig: MediaAnalysisOperationsConfig,
      *     Status: 'CREATED'|'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED',
-     *     FailureDetails?: MediaAnalysisJobFailureDetails,
+     *     FailureDetails?: MediaAnalysisJobFailureDetails|null,
      *     CreationTimestamp: \Aws\Api\DateTimeResult,
-     *     CompletionTimestamp?: \Aws\Api\DateTimeResult,
+     *     CompletionTimestamp?: \Aws\Api\DateTimeResult|null,
      *     Input: MediaAnalysisInput,
      *     OutputConfig: MediaAnalysisOutputConfig,
-     *     KmsKeyId?: string,
-     *     Results?: MediaAnalysisResults,
-     *     ManifestSummary?: MediaAnalysisManifestSummary
+     *     KmsKeyId?: string|null,
+     *     Results?: MediaAnalysisResults|null,
+     *     ManifestSummary?: MediaAnalysisManifestSummary|null
      * } $args
      */
     public function __construct(array $args)

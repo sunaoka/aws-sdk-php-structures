@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ImageUri
- * @property list<string> $ContainerEntrypoint
- * @property list<string> $ContainerArguments
- * @property string $RecordPreprocessorSourceUri
- * @property string $PostAnalyticsProcessorSourceUri
+ * @property list<string>|null $ContainerEntrypoint
+ * @property list<string>|null $ContainerArguments
+ * @property string|null $RecordPreprocessorSourceUri
+ * @property string|null $PostAnalyticsProcessorSourceUri
  */
 class MonitoringAppSpecification extends Shape
 {
     /**
      * @param array{
      *     ImageUri: string,
-     *     ContainerEntrypoint?: list<string>,
-     *     ContainerArguments?: list<string>,
-     *     RecordPreprocessorSourceUri?: string,
-     *     PostAnalyticsProcessorSourceUri?: string
+     *     ContainerEntrypoint?: list<string>|null,
+     *     ContainerArguments?: list<string>|null,
+     *     RecordPreprocessorSourceUri?: string|null,
+     *     PostAnalyticsProcessorSourceUri?: string|null
      * } $args
      */
     public function __construct(array $args)

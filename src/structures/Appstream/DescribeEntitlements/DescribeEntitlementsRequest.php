@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Appstream\DescribeEntitlements;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  * @property string $StackName
- * @property string $NextToken
- * @property int $MaxResults
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
  */
 class DescribeEntitlementsRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
+     *     Name?: string|null,
      *     StackName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

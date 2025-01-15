@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetAutoScalingGroupRecommendat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $savingsOpportunityPercentage
- * @property AutoScalingGroupEstimatedMonthlySavings $estimatedMonthlySavings
+ * @property double|null $savingsOpportunityPercentage
+ * @property AutoScalingGroupEstimatedMonthlySavings|null $estimatedMonthlySavings
  */
 class AutoScalingGroupSavingsOpportunityAfterDiscounts extends Shape
 {
     /**
      * @param array{
-     *     savingsOpportunityPercentage?: double,
-     *     estimatedMonthlySavings?: AutoScalingGroupEstimatedMonthlySavings
+     *     savingsOpportunityPercentage?: double|null,
+     *     estimatedMonthlySavings?: AutoScalingGroupEstimatedMonthlySavings|null
      * } $args
      */
     public function __construct(array $args = [])

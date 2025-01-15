@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyListener\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MessageBody
+ * @property string|null $MessageBody
  * @property string $StatusCode
- * @property string $ContentType
+ * @property string|null $ContentType
  */
 class FixedResponseActionConfig extends Shape
 {
     /**
      * @param array{
-     *     MessageBody?: string,
+     *     MessageBody?: string|null,
      *     StatusCode: string,
-     *     ContentType?: string
+     *     ContentType?: string|null
      * } $args
      */
     public function __construct(array $args)

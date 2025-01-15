@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyDBShardGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DBShardGroupResourceId
- * @property string $DBShardGroupIdentifier
- * @property string $DBClusterIdentifier
- * @property double $MaxACU
- * @property double $MinACU
- * @property int $ComputeRedundancy
- * @property string $Status
- * @property bool $PubliclyAccessible
- * @property string $Endpoint
- * @property string $DBShardGroupArn
- * @property list<Shapes\Tag> $TagList
+ * @property string|null $DBShardGroupResourceId
+ * @property string|null $DBShardGroupIdentifier
+ * @property string|null $DBClusterIdentifier
+ * @property double|null $MaxACU
+ * @property double|null $MinACU
+ * @property int|null $ComputeRedundancy
+ * @property string|null $Status
+ * @property bool|null $PubliclyAccessible
+ * @property string|null $Endpoint
+ * @property string|null $DBShardGroupArn
+ * @property list<Shapes\Tag>|null $TagList
  */
 class ModifyDBShardGroupResponse extends Response
 {

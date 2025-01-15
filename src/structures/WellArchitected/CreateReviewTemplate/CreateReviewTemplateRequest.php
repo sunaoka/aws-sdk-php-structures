@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TemplateName
  * @property string $Description
  * @property list<string> $Lenses
- * @property string $Notes
- * @property array<string, string> $Tags
+ * @property string|null $Notes
+ * @property array<string, string>|null $Tags
  * @property string $ClientRequestToken
  */
 class CreateReviewTemplateRequest extends Request
@@ -19,8 +19,8 @@ class CreateReviewTemplateRequest extends Request
      *     TemplateName: string,
      *     Description: string,
      *     Lenses: list<string>,
-     *     Notes?: string,
-     *     Tags?: array<string, string>,
+     *     Notes?: string|null,
+     *     Tags?: array<string, string>|null,
      *     ClientRequestToken: string
      * } $args
      */

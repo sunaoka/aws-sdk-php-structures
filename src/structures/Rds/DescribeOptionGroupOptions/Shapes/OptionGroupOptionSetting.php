@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeOptionGroupOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SettingName
- * @property string $SettingDescription
- * @property string $DefaultValue
- * @property string $ApplyType
- * @property string $AllowedValues
- * @property bool $IsModifiable
- * @property bool $IsRequired
- * @property list<MinimumEngineVersionPerAllowedValue> $MinimumEngineVersionPerAllowedValue
+ * @property string|null $SettingName
+ * @property string|null $SettingDescription
+ * @property string|null $DefaultValue
+ * @property string|null $ApplyType
+ * @property string|null $AllowedValues
+ * @property bool|null $IsModifiable
+ * @property bool|null $IsRequired
+ * @property list<MinimumEngineVersionPerAllowedValue>|null $MinimumEngineVersionPerAllowedValue
  */
 class OptionGroupOptionSetting extends Shape
 {
     /**
      * @param array{
-     *     SettingName?: string,
-     *     SettingDescription?: string,
-     *     DefaultValue?: string,
-     *     ApplyType?: string,
-     *     AllowedValues?: string,
-     *     IsModifiable?: bool,
-     *     IsRequired?: bool,
-     *     MinimumEngineVersionPerAllowedValue?: list<MinimumEngineVersionPerAllowedValue>
+     *     SettingName?: string|null,
+     *     SettingDescription?: string|null,
+     *     DefaultValue?: string|null,
+     *     ApplyType?: string|null,
+     *     AllowedValues?: string|null,
+     *     IsModifiable?: bool|null,
+     *     IsRequired?: bool|null,
+     *     MinimumEngineVersionPerAllowedValue?: list<MinimumEngineVersionPerAllowedValue>|null
      * } $args
      */
     public function __construct(array $args = [])

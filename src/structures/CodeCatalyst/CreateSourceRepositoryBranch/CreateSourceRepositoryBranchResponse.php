@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\CodeCatalyst\CreateSourceRepositoryBranch;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ref
- * @property string $name
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property string $headCommitId
+ * @property string|null $ref
+ * @property string|null $name
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property string|null $headCommitId
  */
 class CreateSourceRepositoryBranchResponse extends Response
 {

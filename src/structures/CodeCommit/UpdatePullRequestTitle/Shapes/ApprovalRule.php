@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CodeCommit\UpdatePullRequestTitle\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $approvalRuleId
- * @property string $approvalRuleName
- * @property string $approvalRuleContent
- * @property string $ruleContentSha256
- * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property string $lastModifiedUser
- * @property OriginApprovalRuleTemplate $originApprovalRuleTemplate
+ * @property string|null $approvalRuleId
+ * @property string|null $approvalRuleName
+ * @property string|null $approvalRuleContent
+ * @property string|null $ruleContentSha256
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $lastModifiedUser
+ * @property OriginApprovalRuleTemplate|null $originApprovalRuleTemplate
  */
 class ApprovalRule extends Shape
 {
     /**
      * @param array{
-     *     approvalRuleId?: string,
-     *     approvalRuleName?: string,
-     *     approvalRuleContent?: string,
-     *     ruleContentSha256?: string,
-     *     lastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     lastModifiedUser?: string,
-     *     originApprovalRuleTemplate?: OriginApprovalRuleTemplate
+     *     approvalRuleId?: string|null,
+     *     approvalRuleName?: string|null,
+     *     approvalRuleContent?: string|null,
+     *     ruleContentSha256?: string|null,
+     *     lastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedUser?: string|null,
+     *     originApprovalRuleTemplate?: OriginApprovalRuleTemplate|null
      * } $args
      */
     public function __construct(array $args = [])

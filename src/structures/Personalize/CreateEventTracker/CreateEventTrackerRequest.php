@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $datasetGroupArn
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateEventTrackerRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateEventTrackerRequest extends Request
      * @param array{
      *     name: string,
      *     datasetGroupArn: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\SearchEmailAddresses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<EmailAddressSearchCriteria> $OrConditions
- * @property list<EmailAddressSearchCriteria> $AndConditions
- * @property StringCondition $StringCondition
+ * @property list<EmailAddressSearchCriteria>|null $OrConditions
+ * @property list<EmailAddressSearchCriteria>|null $AndConditions
+ * @property StringCondition|null $StringCondition
  */
 class EmailAddressSearchCriteria extends Shape
 {
     /**
      * @param array{
-     *     OrConditions?: list<EmailAddressSearchCriteria>,
-     *     AndConditions?: list<EmailAddressSearchCriteria>,
-     *     StringCondition?: StringCondition
+     *     OrConditions?: list<EmailAddressSearchCriteria>|null,
+     *     AndConditions?: list<EmailAddressSearchCriteria>|null,
+     *     StringCondition?: StringCondition|null
      * } $args
      */
     public function __construct(array $args = [])

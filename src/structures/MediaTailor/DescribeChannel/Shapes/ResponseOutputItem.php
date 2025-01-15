@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaTailor\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DashPlaylistSettings $DashPlaylistSettings
- * @property HlsPlaylistSettings $HlsPlaylistSettings
+ * @property DashPlaylistSettings|null $DashPlaylistSettings
+ * @property HlsPlaylistSettings|null $HlsPlaylistSettings
  * @property string $ManifestName
  * @property string $PlaybackUrl
  * @property string $SourceGroup
@@ -15,8 +15,8 @@ class ResponseOutputItem extends Shape
 {
     /**
      * @param array{
-     *     DashPlaylistSettings?: DashPlaylistSettings,
-     *     HlsPlaylistSettings?: HlsPlaylistSettings,
+     *     DashPlaylistSettings?: DashPlaylistSettings|null,
+     *     HlsPlaylistSettings?: HlsPlaylistSettings|null,
      *     ManifestName: string,
      *     PlaybackUrl: string,
      *     SourceGroup: string

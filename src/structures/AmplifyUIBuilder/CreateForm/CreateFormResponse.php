@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\CreateForm;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Form $entity
+ * @property Shapes\Form|null $entity
  */
 class CreateFormResponse extends Response
 {

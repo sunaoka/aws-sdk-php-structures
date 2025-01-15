@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $KeyId
  * @property string $ReplicaRegion
- * @property string $Policy
- * @property bool $BypassPolicyLockoutSafetyCheck
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Policy
+ * @property bool|null $BypassPolicyLockoutSafetyCheck
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class ReplicateKeyRequest extends Request
 {
@@ -18,10 +18,10 @@ class ReplicateKeyRequest extends Request
      * @param array{
      *     KeyId: string,
      *     ReplicaRegion: string,
-     *     Policy?: string,
-     *     BypassPolicyLockoutSafetyCheck?: bool,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Policy?: string|null,
+     *     BypassPolicyLockoutSafetyCheck?: bool|null,
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

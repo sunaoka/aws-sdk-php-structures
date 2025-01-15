@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $userId
  * @property string $userArn
  * @property string $environmentId
- * @property \Aws\Api\DateTimeResult $lastAccess
+ * @property \Aws\Api\DateTimeResult|null $lastAccess
  */
 class EnvironmentMember extends Shape
 {
@@ -19,7 +19,7 @@ class EnvironmentMember extends Shape
      *     userId: string,
      *     userArn: string,
      *     environmentId: string,
-     *     lastAccess?: \Aws\Api\DateTimeResult
+     *     lastAccess?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

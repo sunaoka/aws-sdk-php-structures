@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property 'CREATING'|'UPDATING'|'VERSIONING'|'READY'|'FAILED'|'DELETING' $status
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $version
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
@@ -22,7 +22,7 @@ class GuardrailSummary extends Shape
      *     arn: string,
      *     status: 'CREATING'|'UPDATING'|'VERSIONING'|'READY'|'FAILED'|'DELETING',
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     version: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult

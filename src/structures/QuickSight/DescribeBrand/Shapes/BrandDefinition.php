@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $BrandName
- * @property string $Description
- * @property ApplicationTheme $ApplicationTheme
- * @property LogoConfiguration $LogoConfiguration
+ * @property string|null $Description
+ * @property ApplicationTheme|null $ApplicationTheme
+ * @property LogoConfiguration|null $LogoConfiguration
  */
 class BrandDefinition extends Shape
 {
     /**
      * @param array{
      *     BrandName: string,
-     *     Description?: string,
-     *     ApplicationTheme?: ApplicationTheme,
-     *     LogoConfiguration?: LogoConfiguration
+     *     Description?: string|null,
+     *     ApplicationTheme?: ApplicationTheme|null,
+     *     LogoConfiguration?: LogoConfiguration|null
      * } $args
      */
     public function __construct(array $args)

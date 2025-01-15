@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property string $name
  * @property RuleGroupsNamespaceStatus $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class RuleGroupsNamespaceSummary extends Shape
 {
@@ -21,7 +21,7 @@ class RuleGroupsNamespaceSummary extends Shape
      *     modifiedAt: \Aws\Api\DateTimeResult,
      *     name: string,
      *     status: RuleGroupsNamespaceStatus,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

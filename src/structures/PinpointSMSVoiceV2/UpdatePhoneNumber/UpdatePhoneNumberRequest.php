@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PhoneNumberId
- * @property bool $TwoWayEnabled
- * @property string $TwoWayChannelArn
- * @property string $TwoWayChannelRole
- * @property bool $SelfManagedOptOutsEnabled
- * @property string $OptOutListName
- * @property bool $DeletionProtectionEnabled
+ * @property bool|null $TwoWayEnabled
+ * @property string|null $TwoWayChannelArn
+ * @property string|null $TwoWayChannelRole
+ * @property bool|null $SelfManagedOptOutsEnabled
+ * @property string|null $OptOutListName
+ * @property bool|null $DeletionProtectionEnabled
  */
 class UpdatePhoneNumberRequest extends Request
 {
     /**
      * @param array{
      *     PhoneNumberId: string,
-     *     TwoWayEnabled?: bool,
-     *     TwoWayChannelArn?: string,
-     *     TwoWayChannelRole?: string,
-     *     SelfManagedOptOutsEnabled?: bool,
-     *     OptOutListName?: string,
-     *     DeletionProtectionEnabled?: bool
+     *     TwoWayEnabled?: bool|null,
+     *     TwoWayChannelArn?: string|null,
+     *     TwoWayChannelRole?: string|null,
+     *     SelfManagedOptOutsEnabled?: bool|null,
+     *     OptOutListName?: string|null,
+     *     DeletionProtectionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

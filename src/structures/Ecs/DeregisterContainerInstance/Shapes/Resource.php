@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ecs\DeregisterContainerInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $type
- * @property double $doubleValue
- * @property int $longValue
- * @property int $integerValue
- * @property list<string> $stringSetValue
+ * @property string|null $name
+ * @property string|null $type
+ * @property double|null $doubleValue
+ * @property int|null $longValue
+ * @property int|null $integerValue
+ * @property list<string>|null $stringSetValue
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     type?: string,
-     *     doubleValue?: double,
-     *     longValue?: int,
-     *     integerValue?: int,
-     *     stringSetValue?: list<string>
+     *     name?: string|null,
+     *     type?: string|null,
+     *     doubleValue?: double|null,
+     *     longValue?: int|null,
+     *     integerValue?: int|null,
+     *     stringSetValue?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

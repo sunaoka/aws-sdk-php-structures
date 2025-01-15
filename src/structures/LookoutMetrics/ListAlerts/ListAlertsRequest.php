@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\ListAlerts;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AnomalyDetectorArn
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $AnomalyDetectorArn
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListAlertsRequest extends Request
 {
     /**
      * @param array{
-     *     AnomalyDetectorArn?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     AnomalyDetectorArn?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeRecord;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RecordDetail $RecordDetail
- * @property list<Shapes\RecordOutput> $RecordOutputs
- * @property string $NextPageToken
+ * @property Shapes\RecordDetail|null $RecordDetail
+ * @property list<Shapes\RecordOutput>|null $RecordOutputs
+ * @property string|null $NextPageToken
  */
 class DescribeRecordResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeBatchInferenceJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $itemExplorationConfig
+ * @property array<string, string>|null $itemExplorationConfig
  */
 class BatchInferenceJobConfig extends Shape
 {
     /**
-     * @param array{itemExplorationConfig?: array<string, string>} $args
+     * @param array{itemExplorationConfig?: array<string, string>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DescribeComments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StorageUtilizedInBytes
- * @property StorageRuleType $StorageRule
+ * @property int|null $StorageUtilizedInBytes
+ * @property StorageRuleType|null $StorageRule
  */
 class UserStorageMetadata extends Shape
 {
     /**
      * @param array{
-     *     StorageUtilizedInBytes?: int,
-     *     StorageRule?: StorageRuleType
+     *     StorageUtilizedInBytes?: int|null,
+     *     StorageRule?: StorageRuleType|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateGlossaryTerm;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $glossaryIdentifier
- * @property string $longDescription
+ * @property string|null $longDescription
  * @property string $name
- * @property string $shortDescription
- * @property 'ENABLED'|'DISABLED' $status
- * @property Shapes\TermRelations $termRelations
+ * @property string|null $shortDescription
+ * @property 'ENABLED'|'DISABLED'|null $status
+ * @property Shapes\TermRelations|null $termRelations
  */
 class CreateGlossaryTermRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     glossaryIdentifier: string,
-     *     longDescription?: string,
+     *     longDescription?: string|null,
      *     name: string,
-     *     shortDescription?: string,
-     *     status?: 'ENABLED'|'DISABLED',
-     *     termRelations?: Shapes\TermRelations
+     *     shortDescription?: string|null,
+     *     status?: 'ENABLED'|'DISABLED'|null,
+     *     termRelations?: Shapes\TermRelations|null
      * } $args
      */
     public function __construct(array $args)

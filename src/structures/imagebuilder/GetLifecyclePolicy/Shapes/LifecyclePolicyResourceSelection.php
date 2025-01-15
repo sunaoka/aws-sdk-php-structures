@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<LifecyclePolicyResourceSelectionRecipe> $recipes
- * @property array<string, string> $tagMap
+ * @property list<LifecyclePolicyResourceSelectionRecipe>|null $recipes
+ * @property array<string, string>|null $tagMap
  */
 class LifecyclePolicyResourceSelection extends Shape
 {
     /**
      * @param array{
-     *     recipes?: list<LifecyclePolicyResourceSelectionRecipe>,
-     *     tagMap?: array<string, string>
+     *     recipes?: list<LifecyclePolicyResourceSelectionRecipe>|null,
+     *     tagMap?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

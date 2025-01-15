@@ -6,86 +6,86 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AutoScalingGroupName
- * @property string $AutoScalingGroupARN
- * @property string $LaunchConfigurationName
- * @property LaunchTemplateSpecification $LaunchTemplate
- * @property MixedInstancesPolicy $MixedInstancesPolicy
+ * @property string|null $AutoScalingGroupARN
+ * @property string|null $LaunchConfigurationName
+ * @property LaunchTemplateSpecification|null $LaunchTemplate
+ * @property MixedInstancesPolicy|null $MixedInstancesPolicy
  * @property int $MinSize
  * @property int $MaxSize
  * @property int $DesiredCapacity
- * @property int $PredictedCapacity
+ * @property int|null $PredictedCapacity
  * @property int $DefaultCooldown
  * @property list<string> $AvailabilityZones
- * @property list<string> $LoadBalancerNames
- * @property list<string> $TargetGroupARNs
+ * @property list<string>|null $LoadBalancerNames
+ * @property list<string>|null $TargetGroupARNs
  * @property string $HealthCheckType
- * @property int $HealthCheckGracePeriod
- * @property list<Instance> $Instances
+ * @property int|null $HealthCheckGracePeriod
+ * @property list<Instance>|null $Instances
  * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property list<SuspendedProcess> $SuspendedProcesses
- * @property string $PlacementGroup
- * @property string $VPCZoneIdentifier
- * @property list<EnabledMetric> $EnabledMetrics
- * @property string $Status
- * @property list<TagDescription> $Tags
- * @property list<string> $TerminationPolicies
- * @property bool $NewInstancesProtectedFromScaleIn
- * @property string $ServiceLinkedRoleARN
- * @property int $MaxInstanceLifetime
- * @property bool $CapacityRebalance
- * @property WarmPoolConfiguration $WarmPoolConfiguration
- * @property int $WarmPoolSize
- * @property string $Context
- * @property string $DesiredCapacityType
- * @property int $DefaultInstanceWarmup
- * @property list<TrafficSourceIdentifier> $TrafficSources
- * @property InstanceMaintenancePolicy $InstanceMaintenancePolicy
- * @property AvailabilityZoneDistribution $AvailabilityZoneDistribution
- * @property AvailabilityZoneImpairmentPolicy $AvailabilityZoneImpairmentPolicy
- * @property CapacityReservationSpecification $CapacityReservationSpecification
+ * @property list<SuspendedProcess>|null $SuspendedProcesses
+ * @property string|null $PlacementGroup
+ * @property string|null $VPCZoneIdentifier
+ * @property list<EnabledMetric>|null $EnabledMetrics
+ * @property string|null $Status
+ * @property list<TagDescription>|null $Tags
+ * @property list<string>|null $TerminationPolicies
+ * @property bool|null $NewInstancesProtectedFromScaleIn
+ * @property string|null $ServiceLinkedRoleARN
+ * @property int|null $MaxInstanceLifetime
+ * @property bool|null $CapacityRebalance
+ * @property WarmPoolConfiguration|null $WarmPoolConfiguration
+ * @property int|null $WarmPoolSize
+ * @property string|null $Context
+ * @property string|null $DesiredCapacityType
+ * @property int|null $DefaultInstanceWarmup
+ * @property list<TrafficSourceIdentifier>|null $TrafficSources
+ * @property InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
+ * @property AvailabilityZoneDistribution|null $AvailabilityZoneDistribution
+ * @property AvailabilityZoneImpairmentPolicy|null $AvailabilityZoneImpairmentPolicy
+ * @property CapacityReservationSpecification|null $CapacityReservationSpecification
  */
 class AutoScalingGroup extends Shape
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     AutoScalingGroupARN?: string,
-     *     LaunchConfigurationName?: string,
-     *     LaunchTemplate?: LaunchTemplateSpecification,
-     *     MixedInstancesPolicy?: MixedInstancesPolicy,
+     *     AutoScalingGroupARN?: string|null,
+     *     LaunchConfigurationName?: string|null,
+     *     LaunchTemplate?: LaunchTemplateSpecification|null,
+     *     MixedInstancesPolicy?: MixedInstancesPolicy|null,
      *     MinSize: int,
      *     MaxSize: int,
      *     DesiredCapacity: int,
-     *     PredictedCapacity?: int,
+     *     PredictedCapacity?: int|null,
      *     DefaultCooldown: int,
      *     AvailabilityZones: list<string>,
-     *     LoadBalancerNames?: list<string>,
-     *     TargetGroupARNs?: list<string>,
+     *     LoadBalancerNames?: list<string>|null,
+     *     TargetGroupARNs?: list<string>|null,
      *     HealthCheckType: string,
-     *     HealthCheckGracePeriod?: int,
-     *     Instances?: list<Instance>,
+     *     HealthCheckGracePeriod?: int|null,
+     *     Instances?: list<Instance>|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
-     *     SuspendedProcesses?: list<SuspendedProcess>,
-     *     PlacementGroup?: string,
-     *     VPCZoneIdentifier?: string,
-     *     EnabledMetrics?: list<EnabledMetric>,
-     *     Status?: string,
-     *     Tags?: list<TagDescription>,
-     *     TerminationPolicies?: list<string>,
-     *     NewInstancesProtectedFromScaleIn?: bool,
-     *     ServiceLinkedRoleARN?: string,
-     *     MaxInstanceLifetime?: int,
-     *     CapacityRebalance?: bool,
-     *     WarmPoolConfiguration?: WarmPoolConfiguration,
-     *     WarmPoolSize?: int,
-     *     Context?: string,
-     *     DesiredCapacityType?: string,
-     *     DefaultInstanceWarmup?: int,
-     *     TrafficSources?: list<TrafficSourceIdentifier>,
-     *     InstanceMaintenancePolicy?: InstanceMaintenancePolicy,
-     *     AvailabilityZoneDistribution?: AvailabilityZoneDistribution,
-     *     AvailabilityZoneImpairmentPolicy?: AvailabilityZoneImpairmentPolicy,
-     *     CapacityReservationSpecification?: CapacityReservationSpecification
+     *     SuspendedProcesses?: list<SuspendedProcess>|null,
+     *     PlacementGroup?: string|null,
+     *     VPCZoneIdentifier?: string|null,
+     *     EnabledMetrics?: list<EnabledMetric>|null,
+     *     Status?: string|null,
+     *     Tags?: list<TagDescription>|null,
+     *     TerminationPolicies?: list<string>|null,
+     *     NewInstancesProtectedFromScaleIn?: bool|null,
+     *     ServiceLinkedRoleARN?: string|null,
+     *     MaxInstanceLifetime?: int|null,
+     *     CapacityRebalance?: bool|null,
+     *     WarmPoolConfiguration?: WarmPoolConfiguration|null,
+     *     WarmPoolSize?: int|null,
+     *     Context?: string|null,
+     *     DesiredCapacityType?: string|null,
+     *     DefaultInstanceWarmup?: int|null,
+     *     TrafficSources?: list<TrafficSourceIdentifier>|null,
+     *     InstanceMaintenancePolicy?: InstanceMaintenancePolicy|null,
+     *     AvailabilityZoneDistribution?: AvailabilityZoneDistribution|null,
+     *     AvailabilityZoneImpairmentPolicy?: AvailabilityZoneImpairmentPolicy|null,
+     *     CapacityReservationSpecification?: CapacityReservationSpecification|null
      * } $args
      */
     public function __construct(array $args)

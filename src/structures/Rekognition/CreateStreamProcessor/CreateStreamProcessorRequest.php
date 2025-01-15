@@ -10,11 +10,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property Shapes\StreamProcessorSettings $Settings
  * @property string $RoleArn
- * @property array<string, string> $Tags
- * @property Shapes\StreamProcessorNotificationChannel $NotificationChannel
- * @property string $KmsKeyId
- * @property list<Shapes\RegionOfInterest> $RegionsOfInterest
- * @property Shapes\StreamProcessorDataSharingPreference $DataSharingPreference
+ * @property array<string, string>|null $Tags
+ * @property Shapes\StreamProcessorNotificationChannel|null $NotificationChannel
+ * @property string|null $KmsKeyId
+ * @property list<Shapes\RegionOfInterest>|null $RegionsOfInterest
+ * @property Shapes\StreamProcessorDataSharingPreference|null $DataSharingPreference
  */
 class CreateStreamProcessorRequest extends Request
 {
@@ -25,11 +25,11 @@ class CreateStreamProcessorRequest extends Request
      *     Name: string,
      *     Settings: Shapes\StreamProcessorSettings,
      *     RoleArn: string,
-     *     Tags?: array<string, string>,
-     *     NotificationChannel?: Shapes\StreamProcessorNotificationChannel,
-     *     KmsKeyId?: string,
-     *     RegionsOfInterest?: list<Shapes\RegionOfInterest>,
-     *     DataSharingPreference?: Shapes\StreamProcessorDataSharingPreference
+     *     Tags?: array<string, string>|null,
+     *     NotificationChannel?: Shapes\StreamProcessorNotificationChannel|null,
+     *     KmsKeyId?: string|null,
+     *     RegionsOfInterest?: list<Shapes\RegionOfInterest>|null,
+     *     DataSharingPreference?: Shapes\StreamProcessorDataSharingPreference|null
      * } $args
      */
     public function __construct(array $args)

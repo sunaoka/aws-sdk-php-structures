@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $datastoreName
- * @property bool $includeStatistics
+ * @property bool|null $includeStatistics
  */
 class DescribeDatastoreRequest extends Request
 {
     /**
      * @param array{
      *     datastoreName: string,
-     *     includeStatistics?: bool
+     *     includeStatistics?: bool|null
      * } $args
      */
     public function __construct(array $args)

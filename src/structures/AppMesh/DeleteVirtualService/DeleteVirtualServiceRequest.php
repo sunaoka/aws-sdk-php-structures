@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $meshName
- * @property string $meshOwner
+ * @property string|null $meshOwner
  * @property string $virtualServiceName
  */
 class DeleteVirtualServiceRequest extends Request
@@ -14,7 +14,7 @@ class DeleteVirtualServiceRequest extends Request
     /**
      * @param array{
      *     meshName: string,
-     *     meshOwner?: string,
+     *     meshOwner?: string|null,
      *     virtualServiceName: string
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $PartyName
- * @property string $NameAssigner
+ * @property string|null $NameAssigner
  */
 class EdiPartyName extends Shape
 {
     /**
      * @param array{
      *     PartyName: string,
-     *     NameAssigner?: string
+     *     NameAssigner?: string|null
      * } $args
      */
     public function __construct(array $args)

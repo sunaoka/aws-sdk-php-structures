@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeAutomationStepExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IgnorePollAlarmFailure
+ * @property bool|null $IgnorePollAlarmFailure
  * @property list<Alarm> $Alarms
  */
 class AlarmConfiguration extends Shape
 {
     /**
      * @param array{
-     *     IgnorePollAlarmFailure?: bool,
+     *     IgnorePollAlarmFailure?: bool|null,
      *     Alarms: list<Alarm>
      * } $args
      */

@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $relationalDatabaseName
- * @property string $availabilityZone
- * @property bool $publiclyAccessible
- * @property string $relationalDatabaseSnapshotName
- * @property string $relationalDatabaseBundleId
- * @property string $sourceRelationalDatabaseName
- * @property \Aws\Api\DateTimeResult $restoreTime
- * @property bool $useLatestRestorableTime
- * @property list<Shapes\Tag> $tags
+ * @property string|null $availabilityZone
+ * @property bool|null $publiclyAccessible
+ * @property string|null $relationalDatabaseSnapshotName
+ * @property string|null $relationalDatabaseBundleId
+ * @property string|null $sourceRelationalDatabaseName
+ * @property \Aws\Api\DateTimeResult|null $restoreTime
+ * @property bool|null $useLatestRestorableTime
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateRelationalDatabaseFromSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     relationalDatabaseName: string,
-     *     availabilityZone?: string,
-     *     publiclyAccessible?: bool,
-     *     relationalDatabaseSnapshotName?: string,
-     *     relationalDatabaseBundleId?: string,
-     *     sourceRelationalDatabaseName?: string,
-     *     restoreTime?: \Aws\Api\DateTimeResult,
-     *     useLatestRestorableTime?: bool,
-     *     tags?: list<Shapes\Tag>
+     *     availabilityZone?: string|null,
+     *     publiclyAccessible?: bool|null,
+     *     relationalDatabaseSnapshotName?: string|null,
+     *     relationalDatabaseBundleId?: string|null,
+     *     sourceRelationalDatabaseName?: string|null,
+     *     restoreTime?: \Aws\Api\DateTimeResult|null,
+     *     useLatestRestorableTime?: bool|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

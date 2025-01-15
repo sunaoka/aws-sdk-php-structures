@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationConfigArn
- * @property string $ReplicationConfigIdentifier
- * @property 'full-load'|'cdc'|'full-load-and-cdc' $ReplicationType
- * @property string $TableMappings
- * @property string $ReplicationSettings
- * @property string $SupplementalSettings
- * @property Shapes\ComputeConfig $ComputeConfig
- * @property string $SourceEndpointArn
- * @property string $TargetEndpointArn
+ * @property string|null $ReplicationConfigIdentifier
+ * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $ReplicationType
+ * @property string|null $TableMappings
+ * @property string|null $ReplicationSettings
+ * @property string|null $SupplementalSettings
+ * @property Shapes\ComputeConfig|null $ComputeConfig
+ * @property string|null $SourceEndpointArn
+ * @property string|null $TargetEndpointArn
  */
 class ModifyReplicationConfigRequest extends Request
 {
     /**
      * @param array{
      *     ReplicationConfigArn: string,
-     *     ReplicationConfigIdentifier?: string,
-     *     ReplicationType?: 'full-load'|'cdc'|'full-load-and-cdc',
-     *     TableMappings?: string,
-     *     ReplicationSettings?: string,
-     *     SupplementalSettings?: string,
-     *     ComputeConfig?: Shapes\ComputeConfig,
-     *     SourceEndpointArn?: string,
-     *     TargetEndpointArn?: string
+     *     ReplicationConfigIdentifier?: string|null,
+     *     ReplicationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
+     *     TableMappings?: string|null,
+     *     ReplicationSettings?: string|null,
+     *     SupplementalSettings?: string|null,
+     *     ComputeConfig?: Shapes\ComputeConfig|null,
+     *     SourceEndpointArn?: string|null,
+     *     TargetEndpointArn?: string|null
      * } $args
      */
     public function __construct(array $args)

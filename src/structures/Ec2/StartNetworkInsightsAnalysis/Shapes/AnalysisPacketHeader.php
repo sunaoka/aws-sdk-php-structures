@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\StartNetworkInsightsAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $DestinationAddresses
- * @property list<PortRange> $DestinationPortRanges
- * @property string $Protocol
- * @property list<string> $SourceAddresses
- * @property list<PortRange> $SourcePortRanges
+ * @property list<string>|null $DestinationAddresses
+ * @property list<PortRange>|null $DestinationPortRanges
+ * @property string|null $Protocol
+ * @property list<string>|null $SourceAddresses
+ * @property list<PortRange>|null $SourcePortRanges
  */
 class AnalysisPacketHeader extends Shape
 {
     /**
      * @param array{
-     *     DestinationAddresses?: list<string>,
-     *     DestinationPortRanges?: list<PortRange>,
-     *     Protocol?: string,
-     *     SourceAddresses?: list<string>,
-     *     SourcePortRanges?: list<PortRange>
+     *     DestinationAddresses?: list<string>|null,
+     *     DestinationPortRanges?: list<PortRange>|null,
+     *     Protocol?: string|null,
+     *     SourceAddresses?: list<string>|null,
+     *     SourcePortRanges?: list<PortRange>|null
      * } $args
      */
     public function __construct(array $args = [])

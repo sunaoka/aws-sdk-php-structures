@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\ParallelDataConfig $ParallelDataConfig
  * @property string $ClientToken
  */
@@ -15,7 +15,7 @@ class UpdateParallelDataRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     ParallelDataConfig: Shapes\ParallelDataConfig,
      *     ClientToken: string
      * } $args

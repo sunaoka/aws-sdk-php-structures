@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $JobCreationDate
  * @property \Aws\Api\DateTimeResult $JobCompletionDate
  * @property list<Shapes\EntityDetails> $EntityDetailsList
- * @property bool $IsTruncated
- * @property string $Marker
- * @property Shapes\ErrorDetails $Error
+ * @property bool|null $IsTruncated
+ * @property string|null $Marker
+ * @property Shapes\ErrorDetails|null $Error
  */
 class GetServiceLastAccessedDetailsWithEntitiesResponse extends Response
 {

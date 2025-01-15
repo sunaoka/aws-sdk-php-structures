@@ -5,30 +5,30 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\GetExperimentResults;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'Mean' $baseStat
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property 'Mean'|null $baseStat
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property string $experiment
  * @property list<string> $metricNames
- * @property int<300, 90000> $period
+ * @property int<300, 90000>|null $period
  * @property string $project
- * @property list<'BayesianInference'> $reportNames
- * @property list<'BaseStat'|'TreatmentEffect'|'ConfidenceInterval'|'PValue'> $resultStats
- * @property \Aws\Api\DateTimeResult $startTime
+ * @property list<'BayesianInference'>|null $reportNames
+ * @property list<'BaseStat'|'TreatmentEffect'|'ConfidenceInterval'|'PValue'>|null $resultStats
+ * @property \Aws\Api\DateTimeResult|null $startTime
  * @property list<string> $treatmentNames
  */
 class GetExperimentResultsRequest extends Request
 {
     /**
      * @param array{
-     *     baseStat?: 'Mean',
-     *     endTime?: \Aws\Api\DateTimeResult,
+     *     baseStat?: 'Mean'|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
      *     experiment: string,
      *     metricNames: list<string>,
-     *     period?: int<300, 90000>,
+     *     period?: int<300, 90000>|null,
      *     project: string,
-     *     reportNames?: list<'BayesianInference'>,
-     *     resultStats?: list<'BaseStat'|'TreatmentEffect'|'ConfidenceInterval'|'PValue'>,
-     *     startTime?: \Aws\Api\DateTimeResult,
+     *     reportNames?: list<'BayesianInference'>|null,
+     *     resultStats?: list<'BaseStat'|'TreatmentEffect'|'ConfidenceInterval'|'PValue'>|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
      *     treatmentNames: list<string>
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeAnomaly\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Type
- * @property double $Value
+ * @property string|null $Type
+ * @property double|null $Value
  */
 class PerformanceInsightsStat extends Shape
 {
     /**
      * @param array{
-     *     Type?: string,
-     *     Value?: double
+     *     Type?: string|null,
+     *     Value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

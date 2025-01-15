@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\RunFleetAdvisorLsaAnal
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LsaAnalysisId
- * @property string $Status
+ * @property string|null $LsaAnalysisId
+ * @property string|null $Status
  */
 class RunFleetAdvisorLsaAnalysisResponse extends Response
 {

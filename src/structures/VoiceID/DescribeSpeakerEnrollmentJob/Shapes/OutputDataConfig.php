@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\VoiceID\DescribeSpeakerEnrollmentJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property string $S3Uri
  */
 class OutputDataConfig extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     S3Uri: string
      * } $args
      */

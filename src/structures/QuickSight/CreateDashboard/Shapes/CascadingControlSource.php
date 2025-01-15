@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceSheetControlId
- * @property ColumnIdentifier $ColumnToMatch
+ * @property string|null $SourceSheetControlId
+ * @property ColumnIdentifier|null $ColumnToMatch
  */
 class CascadingControlSource extends Shape
 {
     /**
      * @param array{
-     *     SourceSheetControlId?: string,
-     *     ColumnToMatch?: ColumnIdentifier
+     *     SourceSheetControlId?: string|null,
+     *     ColumnToMatch?: ColumnIdentifier|null
      * } $args
      */
     public function __construct(array $args = [])

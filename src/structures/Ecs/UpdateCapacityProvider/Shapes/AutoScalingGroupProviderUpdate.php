@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateCapacityProvider\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ManagedScaling $managedScaling
- * @property 'ENABLED'|'DISABLED' $managedTerminationProtection
- * @property 'ENABLED'|'DISABLED' $managedDraining
+ * @property ManagedScaling|null $managedScaling
+ * @property 'ENABLED'|'DISABLED'|null $managedTerminationProtection
+ * @property 'ENABLED'|'DISABLED'|null $managedDraining
  */
 class AutoScalingGroupProviderUpdate extends Shape
 {
     /**
      * @param array{
-     *     managedScaling?: ManagedScaling,
-     *     managedTerminationProtection?: 'ENABLED'|'DISABLED',
-     *     managedDraining?: 'ENABLED'|'DISABLED'
+     *     managedScaling?: ManagedScaling|null,
+     *     managedTerminationProtection?: 'ENABLED'|'DISABLED'|null,
+     *     managedDraining?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

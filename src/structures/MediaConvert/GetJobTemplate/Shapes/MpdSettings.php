@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INCLUDE'|'EXCLUDE' $AccessibilityCaptionHints
- * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION' $AudioDuration
- * @property 'RAW'|'FRAGMENTED_MP4' $CaptionContainerType
- * @property 'NONE'|'PASSTHROUGH' $KlvMetadata
- * @property 'ENABLED'|'DISABLED' $ManifestMetadataSignaling
- * @property 'INSERT'|'NONE' $Scte35Esam
- * @property 'PASSTHROUGH'|'NONE' $Scte35Source
- * @property 'PASSTHROUGH'|'NONE' $TimedMetadata
- * @property 'VERSION_0'|'VERSION_1' $TimedMetadataBoxVersion
- * @property string $TimedMetadataSchemeIdUri
- * @property string $TimedMetadataValue
+ * @property 'INCLUDE'|'EXCLUDE'|null $AccessibilityCaptionHints
+ * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null $AudioDuration
+ * @property 'RAW'|'FRAGMENTED_MP4'|null $CaptionContainerType
+ * @property 'NONE'|'PASSTHROUGH'|null $KlvMetadata
+ * @property 'ENABLED'|'DISABLED'|null $ManifestMetadataSignaling
+ * @property 'INSERT'|'NONE'|null $Scte35Esam
+ * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
+ * @property 'PASSTHROUGH'|'NONE'|null $TimedMetadata
+ * @property 'VERSION_0'|'VERSION_1'|null $TimedMetadataBoxVersion
+ * @property string|null $TimedMetadataSchemeIdUri
+ * @property string|null $TimedMetadataValue
  */
 class MpdSettings extends Shape
 {
     /**
      * @param array{
-     *     AccessibilityCaptionHints?: 'INCLUDE'|'EXCLUDE',
-     *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION',
-     *     CaptionContainerType?: 'RAW'|'FRAGMENTED_MP4',
-     *     KlvMetadata?: 'NONE'|'PASSTHROUGH',
-     *     ManifestMetadataSignaling?: 'ENABLED'|'DISABLED',
-     *     Scte35Esam?: 'INSERT'|'NONE',
-     *     Scte35Source?: 'PASSTHROUGH'|'NONE',
-     *     TimedMetadata?: 'PASSTHROUGH'|'NONE',
-     *     TimedMetadataBoxVersion?: 'VERSION_0'|'VERSION_1',
-     *     TimedMetadataSchemeIdUri?: string,
-     *     TimedMetadataValue?: string
+     *     AccessibilityCaptionHints?: 'INCLUDE'|'EXCLUDE'|null,
+     *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null,
+     *     CaptionContainerType?: 'RAW'|'FRAGMENTED_MP4'|null,
+     *     KlvMetadata?: 'NONE'|'PASSTHROUGH'|null,
+     *     ManifestMetadataSignaling?: 'ENABLED'|'DISABLED'|null,
+     *     Scte35Esam?: 'INSERT'|'NONE'|null,
+     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
+     *     TimedMetadata?: 'PASSTHROUGH'|'NONE'|null,
+     *     TimedMetadataBoxVersion?: 'VERSION_0'|'VERSION_1'|null,
+     *     TimedMetadataSchemeIdUri?: string|null,
+     *     TimedMetadataValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

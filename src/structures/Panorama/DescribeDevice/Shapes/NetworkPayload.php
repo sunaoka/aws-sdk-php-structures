@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Panorama\DescribeDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EthernetPayload $Ethernet0
- * @property EthernetPayload $Ethernet1
- * @property NtpPayload $Ntp
+ * @property EthernetPayload|null $Ethernet0
+ * @property EthernetPayload|null $Ethernet1
+ * @property NtpPayload|null $Ntp
  */
 class NetworkPayload extends Shape
 {
     /**
      * @param array{
-     *     Ethernet0?: EthernetPayload,
-     *     Ethernet1?: EthernetPayload,
-     *     Ntp?: NtpPayload
+     *     Ethernet0?: EthernetPayload|null,
+     *     Ethernet1?: EthernetPayload|null,
+     *     Ntp?: NtpPayload|null
      * } $args
      */
     public function __construct(array $args = [])

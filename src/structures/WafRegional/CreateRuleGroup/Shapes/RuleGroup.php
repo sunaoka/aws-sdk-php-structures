@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RuleGroupId
- * @property string $Name
- * @property string $MetricName
+ * @property string|null $Name
+ * @property string|null $MetricName
  */
 class RuleGroup extends Shape
 {
     /**
      * @param array{
      *     RuleGroupId: string,
-     *     Name?: string,
-     *     MetricName?: string
+     *     Name?: string|null,
+     *     MetricName?: string|null
      * } $args
      */
     public function __construct(array $args)

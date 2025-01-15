@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationTas
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $IndividualAssessmentCount
- * @property int $IndividualAssessmentCompletedCount
+ * @property int|null $IndividualAssessmentCount
+ * @property int|null $IndividualAssessmentCompletedCount
  */
 class ReplicationTaskAssessmentRunProgress extends Shape
 {
     /**
      * @param array{
-     *     IndividualAssessmentCount?: int,
-     *     IndividualAssessmentCompletedCount?: int
+     *     IndividualAssessmentCount?: int|null,
+     *     IndividualAssessmentCompletedCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

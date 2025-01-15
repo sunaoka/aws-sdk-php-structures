@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BASIC'|'OAUTH2'|'CUSTOM' $authenticationType
- * @property BasicAuthenticationCredentials $basicAuthenticationCredentials
- * @property array<string, string> $customAuthenticationCredentials
- * @property string $kmsKeyArn
- * @property OAuth2Properties $oAuth2Properties
- * @property string $secretArn
+ * @property 'BASIC'|'OAUTH2'|'CUSTOM'|null $authenticationType
+ * @property BasicAuthenticationCredentials|null $basicAuthenticationCredentials
+ * @property array<string, string>|null $customAuthenticationCredentials
+ * @property string|null $kmsKeyArn
+ * @property OAuth2Properties|null $oAuth2Properties
+ * @property string|null $secretArn
  */
 class AuthenticationConfigurationInput extends Shape
 {
     /**
      * @param array{
-     *     authenticationType?: 'BASIC'|'OAUTH2'|'CUSTOM',
-     *     basicAuthenticationCredentials?: BasicAuthenticationCredentials,
-     *     customAuthenticationCredentials?: array<string, string>,
-     *     kmsKeyArn?: string,
-     *     oAuth2Properties?: OAuth2Properties,
-     *     secretArn?: string
+     *     authenticationType?: 'BASIC'|'OAUTH2'|'CUSTOM'|null,
+     *     basicAuthenticationCredentials?: BasicAuthenticationCredentials|null,
+     *     customAuthenticationCredentials?: array<string, string>|null,
+     *     kmsKeyArn?: string|null,
+     *     oAuth2Properties?: OAuth2Properties|null,
+     *     secretArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

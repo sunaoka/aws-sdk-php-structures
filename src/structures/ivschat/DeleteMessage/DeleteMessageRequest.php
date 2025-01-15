@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $roomIdentifier
  * @property string $id
- * @property string $reason
+ * @property string|null $reason
  */
 class DeleteMessageRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteMessageRequest extends Request
      * @param array{
      *     roomIdentifier: string,
      *     id: string,
-     *     reason?: string
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args)

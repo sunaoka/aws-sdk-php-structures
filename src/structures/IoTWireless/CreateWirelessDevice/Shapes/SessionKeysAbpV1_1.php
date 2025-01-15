@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTWireless\CreateWirelessDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FNwkSIntKey
- * @property string $SNwkSIntKey
- * @property string $NwkSEncKey
- * @property string $AppSKey
+ * @property string|null $FNwkSIntKey
+ * @property string|null $SNwkSIntKey
+ * @property string|null $NwkSEncKey
+ * @property string|null $AppSKey
  */
 class SessionKeysAbpV1_1 extends Shape
 {
     /**
      * @param array{
-     *     FNwkSIntKey?: string,
-     *     SNwkSIntKey?: string,
-     *     NwkSEncKey?: string,
-     *     AppSKey?: string
+     *     FNwkSIntKey?: string|null,
+     *     SNwkSIntKey?: string|null,
+     *     NwkSEncKey?: string|null,
+     *     AppSKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

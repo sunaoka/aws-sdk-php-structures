@@ -6,48 +6,48 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FunctionName
- * @property string $Role
- * @property string $Handler
- * @property string $Description
- * @property int<1, max> $Timeout
- * @property int<128, 10240> $MemorySize
- * @property Shapes\VpcConfig $VpcConfig
- * @property Shapes\Environment $Environment
- * @property 'nodejs'|'nodejs4.3'|'nodejs6.10'|'nodejs8.10'|'nodejs10.x'|'nodejs12.x'|'nodejs14.x'|'nodejs16.x'|'java8'|'java8.al2'|'java11'|'python2.7'|'python3.6'|'python3.7'|'python3.8'|'python3.9'|'dotnetcore1.0'|'dotnetcore2.0'|'dotnetcore2.1'|'dotnetcore3.1'|'dotnet6'|'dotnet8'|'nodejs4.3-edge'|'go1.x'|'ruby2.5'|'ruby2.7'|'provided'|'provided.al2'|'nodejs18.x'|'python3.10'|'java17'|'ruby3.2'|'ruby3.3'|'python3.11'|'nodejs20.x'|'provided.al2023'|'python3.12'|'java21'|'python3.13'|'nodejs22.x' $Runtime
- * @property Shapes\DeadLetterConfig $DeadLetterConfig
- * @property string $KMSKeyArn
- * @property Shapes\TracingConfig $TracingConfig
- * @property string $RevisionId
- * @property list<string> $Layers
- * @property list<Shapes\FileSystemConfig> $FileSystemConfigs
- * @property Shapes\ImageConfig $ImageConfig
- * @property Shapes\EphemeralStorage $EphemeralStorage
- * @property Shapes\SnapStart $SnapStart
- * @property Shapes\LoggingConfig $LoggingConfig
+ * @property string|null $Role
+ * @property string|null $Handler
+ * @property string|null $Description
+ * @property int<1, max>|null $Timeout
+ * @property int<128, 10240>|null $MemorySize
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property Shapes\Environment|null $Environment
+ * @property 'nodejs'|'nodejs4.3'|'nodejs6.10'|'nodejs8.10'|'nodejs10.x'|'nodejs12.x'|'nodejs14.x'|'nodejs16.x'|'java8'|'java8.al2'|'java11'|'python2.7'|'python3.6'|'python3.7'|'python3.8'|'python3.9'|'dotnetcore1.0'|'dotnetcore2.0'|'dotnetcore2.1'|'dotnetcore3.1'|'dotnet6'|'dotnet8'|'nodejs4.3-edge'|'go1.x'|'ruby2.5'|'ruby2.7'|'provided'|'provided.al2'|'nodejs18.x'|'python3.10'|'java17'|'ruby3.2'|'ruby3.3'|'python3.11'|'nodejs20.x'|'provided.al2023'|'python3.12'|'java21'|'python3.13'|'nodejs22.x'|null $Runtime
+ * @property Shapes\DeadLetterConfig|null $DeadLetterConfig
+ * @property string|null $KMSKeyArn
+ * @property Shapes\TracingConfig|null $TracingConfig
+ * @property string|null $RevisionId
+ * @property list<string>|null $Layers
+ * @property list<Shapes\FileSystemConfig>|null $FileSystemConfigs
+ * @property Shapes\ImageConfig|null $ImageConfig
+ * @property Shapes\EphemeralStorage|null $EphemeralStorage
+ * @property Shapes\SnapStart|null $SnapStart
+ * @property Shapes\LoggingConfig|null $LoggingConfig
  */
 class UpdateFunctionConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     FunctionName: string,
-     *     Role?: string,
-     *     Handler?: string,
-     *     Description?: string,
-     *     Timeout?: int<1, max>,
-     *     MemorySize?: int<128, 10240>,
-     *     VpcConfig?: Shapes\VpcConfig,
-     *     Environment?: Shapes\Environment,
-     *     Runtime?: 'nodejs'|'nodejs4.3'|'nodejs6.10'|'nodejs8.10'|'nodejs10.x'|'nodejs12.x'|'nodejs14.x'|'nodejs16.x'|'java8'|'java8.al2'|'java11'|'python2.7'|'python3.6'|'python3.7'|'python3.8'|'python3.9'|'dotnetcore1.0'|'dotnetcore2.0'|'dotnetcore2.1'|'dotnetcore3.1'|'dotnet6'|'dotnet8'|'nodejs4.3-edge'|'go1.x'|'ruby2.5'|'ruby2.7'|'provided'|'provided.al2'|'nodejs18.x'|'python3.10'|'java17'|'ruby3.2'|'ruby3.3'|'python3.11'|'nodejs20.x'|'provided.al2023'|'python3.12'|'java21'|'python3.13'|'nodejs22.x',
-     *     DeadLetterConfig?: Shapes\DeadLetterConfig,
-     *     KMSKeyArn?: string,
-     *     TracingConfig?: Shapes\TracingConfig,
-     *     RevisionId?: string,
-     *     Layers?: list<string>,
-     *     FileSystemConfigs?: list<Shapes\FileSystemConfig>,
-     *     ImageConfig?: Shapes\ImageConfig,
-     *     EphemeralStorage?: Shapes\EphemeralStorage,
-     *     SnapStart?: Shapes\SnapStart,
-     *     LoggingConfig?: Shapes\LoggingConfig
+     *     Role?: string|null,
+     *     Handler?: string|null,
+     *     Description?: string|null,
+     *     Timeout?: int<1, max>|null,
+     *     MemorySize?: int<128, 10240>|null,
+     *     VpcConfig?: Shapes\VpcConfig|null,
+     *     Environment?: Shapes\Environment|null,
+     *     Runtime?: 'nodejs'|'nodejs4.3'|'nodejs6.10'|'nodejs8.10'|'nodejs10.x'|'nodejs12.x'|'nodejs14.x'|'nodejs16.x'|'java8'|'java8.al2'|'java11'|'python2.7'|'python3.6'|'python3.7'|'python3.8'|'python3.9'|'dotnetcore1.0'|'dotnetcore2.0'|'dotnetcore2.1'|'dotnetcore3.1'|'dotnet6'|'dotnet8'|'nodejs4.3-edge'|'go1.x'|'ruby2.5'|'ruby2.7'|'provided'|'provided.al2'|'nodejs18.x'|'python3.10'|'java17'|'ruby3.2'|'ruby3.3'|'python3.11'|'nodejs20.x'|'provided.al2023'|'python3.12'|'java21'|'python3.13'|'nodejs22.x'|null,
+     *     DeadLetterConfig?: Shapes\DeadLetterConfig|null,
+     *     KMSKeyArn?: string|null,
+     *     TracingConfig?: Shapes\TracingConfig|null,
+     *     RevisionId?: string|null,
+     *     Layers?: list<string>|null,
+     *     FileSystemConfigs?: list<Shapes\FileSystemConfig>|null,
+     *     ImageConfig?: Shapes\ImageConfig|null,
+     *     EphemeralStorage?: Shapes\EphemeralStorage|null,
+     *     SnapStart?: Shapes\SnapStart|null,
+     *     LoggingConfig?: Shapes\LoggingConfig|null
      * } $args
      */
     public function __construct(array $args)

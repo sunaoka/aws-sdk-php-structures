@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FieldSortOptions> $RowSort
- * @property PluginVisualItemsLimitConfiguration $ItemsLimitConfiguration
+ * @property list<FieldSortOptions>|null $RowSort
+ * @property PluginVisualItemsLimitConfiguration|null $ItemsLimitConfiguration
  */
 class PluginVisualTableQuerySort extends Shape
 {
     /**
      * @param array{
-     *     RowSort?: list<FieldSortOptions>,
-     *     ItemsLimitConfiguration?: PluginVisualItemsLimitConfiguration
+     *     RowSort?: list<FieldSortOptions>|null,
+     *     ItemsLimitConfiguration?: PluginVisualItemsLimitConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

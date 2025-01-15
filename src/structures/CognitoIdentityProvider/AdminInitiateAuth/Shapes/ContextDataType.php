@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ServerName
  * @property string $ServerPath
  * @property list<HttpHeader> $HttpHeaders
- * @property string $EncodedData
+ * @property string|null $EncodedData
  */
 class ContextDataType extends Shape
 {
@@ -19,7 +19,7 @@ class ContextDataType extends Shape
      *     ServerName: string,
      *     ServerPath: string,
      *     HttpHeaders: list<HttpHeader>,
-     *     EncodedData?: string
+     *     EncodedData?: string|null
      * } $args
      */
     public function __construct(array $args)

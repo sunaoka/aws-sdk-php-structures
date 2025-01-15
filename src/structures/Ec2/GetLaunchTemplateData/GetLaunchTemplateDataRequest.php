@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\GetLaunchTemplateData;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $InstanceId
  */
 class GetLaunchTemplateDataRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InstanceId: string
      * } $args
      */

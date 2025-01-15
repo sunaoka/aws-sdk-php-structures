@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\CodeCommit\CreateCommit;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $commitId
- * @property string $treeId
- * @property list<Shapes\FileMetadata> $filesAdded
- * @property list<Shapes\FileMetadata> $filesUpdated
- * @property list<Shapes\FileMetadata> $filesDeleted
+ * @property string|null $commitId
+ * @property string|null $treeId
+ * @property list<Shapes\FileMetadata>|null $filesAdded
+ * @property list<Shapes\FileMetadata>|null $filesUpdated
+ * @property list<Shapes\FileMetadata>|null $filesDeleted
  */
 class CreateCommitResponse extends Response
 {

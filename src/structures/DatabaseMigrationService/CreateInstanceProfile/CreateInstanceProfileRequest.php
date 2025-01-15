@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateInstanceProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AvailabilityZone
- * @property string $KmsKeyArn
- * @property bool $PubliclyAccessible
- * @property list<Shapes\Tag> $Tags
- * @property string $NetworkType
- * @property string $InstanceProfileName
- * @property string $Description
- * @property string $SubnetGroupIdentifier
- * @property list<string> $VpcSecurityGroups
+ * @property string|null $AvailabilityZone
+ * @property string|null $KmsKeyArn
+ * @property bool|null $PubliclyAccessible
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $NetworkType
+ * @property string|null $InstanceProfileName
+ * @property string|null $Description
+ * @property string|null $SubnetGroupIdentifier
+ * @property list<string>|null $VpcSecurityGroups
  */
 class CreateInstanceProfileRequest extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     KmsKeyArn?: string,
-     *     PubliclyAccessible?: bool,
-     *     Tags?: list<Shapes\Tag>,
-     *     NetworkType?: string,
-     *     InstanceProfileName?: string,
-     *     Description?: string,
-     *     SubnetGroupIdentifier?: string,
-     *     VpcSecurityGroups?: list<string>
+     *     AvailabilityZone?: string|null,
+     *     KmsKeyArn?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     NetworkType?: string|null,
+     *     InstanceProfileName?: string|null,
+     *     Description?: string|null,
+     *     SubnetGroupIdentifier?: string|null,
+     *     VpcSecurityGroups?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

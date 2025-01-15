@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeOptionGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Value
- * @property string $DefaultValue
- * @property string $Description
- * @property string $ApplyType
- * @property string $DataType
- * @property string $AllowedValues
- * @property bool $IsModifiable
- * @property bool $IsCollection
+ * @property string|null $Name
+ * @property string|null $Value
+ * @property string|null $DefaultValue
+ * @property string|null $Description
+ * @property string|null $ApplyType
+ * @property string|null $DataType
+ * @property string|null $AllowedValues
+ * @property bool|null $IsModifiable
+ * @property bool|null $IsCollection
  */
 class OptionSetting extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Value?: string,
-     *     DefaultValue?: string,
-     *     Description?: string,
-     *     ApplyType?: string,
-     *     DataType?: string,
-     *     AllowedValues?: string,
-     *     IsModifiable?: bool,
-     *     IsCollection?: bool
+     *     Name?: string|null,
+     *     Value?: string|null,
+     *     DefaultValue?: string|null,
+     *     Description?: string|null,
+     *     ApplyType?: string|null,
+     *     DataType?: string|null,
+     *     AllowedValues?: string|null,
+     *     IsModifiable?: bool|null,
+     *     IsCollection?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeAuditTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $totalChecks
- * @property int $inProgressChecks
- * @property int $waitingForDataCollectionChecks
- * @property int $compliantChecks
- * @property int $nonCompliantChecks
- * @property int $failedChecks
- * @property int $canceledChecks
+ * @property int|null $totalChecks
+ * @property int|null $inProgressChecks
+ * @property int|null $waitingForDataCollectionChecks
+ * @property int|null $compliantChecks
+ * @property int|null $nonCompliantChecks
+ * @property int|null $failedChecks
+ * @property int|null $canceledChecks
  */
 class TaskStatistics extends Shape
 {
     /**
      * @param array{
-     *     totalChecks?: int,
-     *     inProgressChecks?: int,
-     *     waitingForDataCollectionChecks?: int,
-     *     compliantChecks?: int,
-     *     nonCompliantChecks?: int,
-     *     failedChecks?: int,
-     *     canceledChecks?: int
+     *     totalChecks?: int|null,
+     *     inProgressChecks?: int|null,
+     *     waitingForDataCollectionChecks?: int|null,
+     *     compliantChecks?: int|null,
+     *     nonCompliantChecks?: int|null,
+     *     failedChecks?: int|null,
+     *     canceledChecks?: int|null
      * } $args
      */
     public function __construct(array $args = [])

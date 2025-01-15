@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $Name
- * @property string $InputBucket
- * @property string $Role
- * @property string $AwsKmsKeyArn
- * @property Shapes\Notifications $Notifications
- * @property Shapes\PipelineOutputConfig $ContentConfig
- * @property Shapes\PipelineOutputConfig $ThumbnailConfig
+ * @property string|null $Name
+ * @property string|null $InputBucket
+ * @property string|null $Role
+ * @property string|null $AwsKmsKeyArn
+ * @property Shapes\Notifications|null $Notifications
+ * @property Shapes\PipelineOutputConfig|null $ContentConfig
+ * @property Shapes\PipelineOutputConfig|null $ThumbnailConfig
  */
 class UpdatePipelineRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     Name?: string,
-     *     InputBucket?: string,
-     *     Role?: string,
-     *     AwsKmsKeyArn?: string,
-     *     Notifications?: Shapes\Notifications,
-     *     ContentConfig?: Shapes\PipelineOutputConfig,
-     *     ThumbnailConfig?: Shapes\PipelineOutputConfig
+     *     Name?: string|null,
+     *     InputBucket?: string|null,
+     *     Role?: string|null,
+     *     AwsKmsKeyArn?: string|null,
+     *     Notifications?: Shapes\Notifications|null,
+     *     ContentConfig?: Shapes\PipelineOutputConfig|null,
+     *     ThumbnailConfig?: Shapes\PipelineOutputConfig|null
      * } $args
      */
     public function __construct(array $args)

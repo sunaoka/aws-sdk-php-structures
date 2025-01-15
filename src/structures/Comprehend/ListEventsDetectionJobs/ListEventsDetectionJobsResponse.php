@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Comprehend\ListEventsDetectionJobs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EventsDetectionJobProperties> $EventsDetectionJobPropertiesList
- * @property string $NextToken
+ * @property list<Shapes\EventsDetectionJobProperties>|null $EventsDetectionJobPropertiesList
+ * @property string|null $NextToken
  */
 class ListEventsDetectionJobsResponse extends Response
 {

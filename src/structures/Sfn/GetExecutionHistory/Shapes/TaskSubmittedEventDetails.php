@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $resourceType
  * @property string $resource
- * @property string $output
- * @property HistoryEventExecutionDataDetails $outputDetails
+ * @property string|null $output
+ * @property HistoryEventExecutionDataDetails|null $outputDetails
  */
 class TaskSubmittedEventDetails extends Shape
 {
@@ -16,8 +16,8 @@ class TaskSubmittedEventDetails extends Shape
      * @param array{
      *     resourceType: string,
      *     resource: string,
-     *     output?: string,
-     *     outputDetails?: HistoryEventExecutionDataDetails
+     *     output?: string|null,
+     *     outputDetails?: HistoryEventExecutionDataDetails|null
      * } $args
      */
     public function __construct(array $args)

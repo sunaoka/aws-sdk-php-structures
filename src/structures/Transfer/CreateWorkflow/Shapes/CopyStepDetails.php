@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property InputFileLocation $DestinationFileLocation
- * @property 'TRUE'|'FALSE' $OverwriteExisting
- * @property string $SourceFileLocation
+ * @property string|null $Name
+ * @property InputFileLocation|null $DestinationFileLocation
+ * @property 'TRUE'|'FALSE'|null $OverwriteExisting
+ * @property string|null $SourceFileLocation
  */
 class CopyStepDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     DestinationFileLocation?: InputFileLocation,
-     *     OverwriteExisting?: 'TRUE'|'FALSE',
-     *     SourceFileLocation?: string
+     *     Name?: string|null,
+     *     DestinationFileLocation?: InputFileLocation|null,
+     *     OverwriteExisting?: 'TRUE'|'FALSE'|null,
+     *     SourceFileLocation?: string|null
      * } $args
      */
     public function __construct(array $args = [])

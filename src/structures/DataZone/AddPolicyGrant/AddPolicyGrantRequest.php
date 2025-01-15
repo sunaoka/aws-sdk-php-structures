@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\AddPolicyGrant;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property Shapes\PolicyGrantDetail $detail
  * @property string $domainIdentifier
  * @property string $entityIdentifier
@@ -17,7 +17,7 @@ class AddPolicyGrantRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     detail: Shapes\PolicyGrantDetail,
      *     domainIdentifier: string,
      *     entityIdentifier: string,

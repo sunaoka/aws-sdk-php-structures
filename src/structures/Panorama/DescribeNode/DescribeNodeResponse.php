@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Panorama\DescribeNode;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AssetName
+ * @property string|null $AssetName
  * @property 'BUSINESS_LOGIC'|'ML_MODEL'|'MEDIA_SOURCE'|'MEDIA_SINK' $Category
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property string $Description
@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $NodeId
  * @property Shapes\NodeInterface $NodeInterface
  * @property string $OwnerAccount
- * @property string $PackageArn
+ * @property string|null $PackageArn
  * @property string $PackageId
  * @property string $PackageName
  * @property string $PackageVersion

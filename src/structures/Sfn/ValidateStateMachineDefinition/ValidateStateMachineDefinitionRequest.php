@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $definition
- * @property 'STANDARD'|'EXPRESS' $type
- * @property 'ERROR'|'WARNING' $severity
- * @property int<0, 100> $maxResults
+ * @property 'STANDARD'|'EXPRESS'|null $type
+ * @property 'ERROR'|'WARNING'|null $severity
+ * @property int<0, 100>|null $maxResults
  */
 class ValidateStateMachineDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     definition: string,
-     *     type?: 'STANDARD'|'EXPRESS',
-     *     severity?: 'ERROR'|'WARNING',
-     *     maxResults?: int<0, 100>
+     *     type?: 'STANDARD'|'EXPRESS'|null,
+     *     severity?: 'ERROR'|'WARNING'|null,
+     *     maxResults?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args)

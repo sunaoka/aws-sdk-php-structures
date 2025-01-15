@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property string $Key
- * @property string $VersionId
- * @property string $ExpectedBucketOwner
+ * @property string|null $VersionId
+ * @property string|null $ExpectedBucketOwner
  */
 class DeleteObjectTaggingRequest extends Request
 {
@@ -16,8 +16,8 @@ class DeleteObjectTaggingRequest extends Request
      * @param array{
      *     Bucket: string,
      *     Key: string,
-     *     VersionId?: string,
-     *     ExpectedBucketOwner?: string
+     *     VersionId?: string|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

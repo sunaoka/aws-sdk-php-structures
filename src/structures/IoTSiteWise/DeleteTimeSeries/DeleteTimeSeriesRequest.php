@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DeleteTimeSeries;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $alias
- * @property string $assetId
- * @property string $propertyId
- * @property string $clientToken
+ * @property string|null $alias
+ * @property string|null $assetId
+ * @property string|null $propertyId
+ * @property string|null $clientToken
  */
 class DeleteTimeSeriesRequest extends Request
 {
     /**
      * @param array{
-     *     alias?: string,
-     *     assetId?: string,
-     *     propertyId?: string,
-     *     clientToken?: string
+     *     alias?: string|null,
+     *     assetId?: string|null,
+     *     propertyId?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\StopDBInstanceAutomatedBackupsReplication\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $EarliestTime
- * @property \Aws\Api\DateTimeResult $LatestTime
+ * @property \Aws\Api\DateTimeResult|null $EarliestTime
+ * @property \Aws\Api\DateTimeResult|null $LatestTime
  */
 class RestoreWindow extends Shape
 {
     /**
      * @param array{
-     *     EarliestTime?: \Aws\Api\DateTimeResult,
-     *     LatestTime?: \Aws\Api\DateTimeResult
+     *     EarliestTime?: \Aws\Api\DateTimeResult|null,
+     *     LatestTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

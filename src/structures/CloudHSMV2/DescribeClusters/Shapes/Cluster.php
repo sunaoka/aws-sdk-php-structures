@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\CloudHSMV2\DescribeClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DEFAULT' $BackupPolicy
- * @property BackupRetentionPolicy $BackupRetentionPolicy
- * @property string $ClusterId
- * @property \Aws\Api\DateTimeResult $CreateTimestamp
- * @property list<Hsm> $Hsms
- * @property string $HsmType
- * @property \Aws\Api\DateTimeResult $HsmTypeRollbackExpiration
- * @property string $PreCoPassword
- * @property string $SecurityGroup
- * @property string $SourceBackupId
- * @property 'CREATE_IN_PROGRESS'|'UNINITIALIZED'|'INITIALIZE_IN_PROGRESS'|'INITIALIZED'|'ACTIVE'|'UPDATE_IN_PROGRESS'|'MODIFY_IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'DELETED'|'DEGRADED' $State
- * @property string $StateMessage
- * @property array<string, string> $SubnetMapping
- * @property string $VpcId
- * @property 'IPV4'|'DUALSTACK' $NetworkType
- * @property Certificates $Certificates
- * @property list<Tag> $TagList
- * @property 'FIPS'|'NON_FIPS' $Mode
+ * @property 'DEFAULT'|null $BackupPolicy
+ * @property BackupRetentionPolicy|null $BackupRetentionPolicy
+ * @property string|null $ClusterId
+ * @property \Aws\Api\DateTimeResult|null $CreateTimestamp
+ * @property list<Hsm>|null $Hsms
+ * @property string|null $HsmType
+ * @property \Aws\Api\DateTimeResult|null $HsmTypeRollbackExpiration
+ * @property string|null $PreCoPassword
+ * @property string|null $SecurityGroup
+ * @property string|null $SourceBackupId
+ * @property 'CREATE_IN_PROGRESS'|'UNINITIALIZED'|'INITIALIZE_IN_PROGRESS'|'INITIALIZED'|'ACTIVE'|'UPDATE_IN_PROGRESS'|'MODIFY_IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'DELETED'|'DEGRADED'|null $State
+ * @property string|null $StateMessage
+ * @property array<string, string>|null $SubnetMapping
+ * @property string|null $VpcId
+ * @property 'IPV4'|'DUALSTACK'|null $NetworkType
+ * @property Certificates|null $Certificates
+ * @property list<Tag>|null $TagList
+ * @property 'FIPS'|'NON_FIPS'|null $Mode
  */
 class Cluster extends Shape
 {
     /**
      * @param array{
-     *     BackupPolicy?: 'DEFAULT',
-     *     BackupRetentionPolicy?: BackupRetentionPolicy,
-     *     ClusterId?: string,
-     *     CreateTimestamp?: \Aws\Api\DateTimeResult,
-     *     Hsms?: list<Hsm>,
-     *     HsmType?: string,
-     *     HsmTypeRollbackExpiration?: \Aws\Api\DateTimeResult,
-     *     PreCoPassword?: string,
-     *     SecurityGroup?: string,
-     *     SourceBackupId?: string,
-     *     State?: 'CREATE_IN_PROGRESS'|'UNINITIALIZED'|'INITIALIZE_IN_PROGRESS'|'INITIALIZED'|'ACTIVE'|'UPDATE_IN_PROGRESS'|'MODIFY_IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'DELETED'|'DEGRADED',
-     *     StateMessage?: string,
-     *     SubnetMapping?: array<string, string>,
-     *     VpcId?: string,
-     *     NetworkType?: 'IPV4'|'DUALSTACK',
-     *     Certificates?: Certificates,
-     *     TagList?: list<Tag>,
-     *     Mode?: 'FIPS'|'NON_FIPS'
+     *     BackupPolicy?: 'DEFAULT'|null,
+     *     BackupRetentionPolicy?: BackupRetentionPolicy|null,
+     *     ClusterId?: string|null,
+     *     CreateTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Hsms?: list<Hsm>|null,
+     *     HsmType?: string|null,
+     *     HsmTypeRollbackExpiration?: \Aws\Api\DateTimeResult|null,
+     *     PreCoPassword?: string|null,
+     *     SecurityGroup?: string|null,
+     *     SourceBackupId?: string|null,
+     *     State?: 'CREATE_IN_PROGRESS'|'UNINITIALIZED'|'INITIALIZE_IN_PROGRESS'|'INITIALIZED'|'ACTIVE'|'UPDATE_IN_PROGRESS'|'MODIFY_IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'DELETED'|'DEGRADED'|null,
+     *     StateMessage?: string|null,
+     *     SubnetMapping?: array<string, string>|null,
+     *     VpcId?: string|null,
+     *     NetworkType?: 'IPV4'|'DUALSTACK'|null,
+     *     Certificates?: Certificates|null,
+     *     TagList?: list<Tag>|null,
+     *     Mode?: 'FIPS'|'NON_FIPS'|null
      * } $args
      */
     public function __construct(array $args = [])

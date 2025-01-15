@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReleaseLabel
- * @property string $Marker
+ * @property string|null $Marker
  */
 class ListSupportedInstanceTypesRequest extends Request
 {
     /**
      * @param array{
      *     ReleaseLabel: string,
-     *     Marker?: string
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args)

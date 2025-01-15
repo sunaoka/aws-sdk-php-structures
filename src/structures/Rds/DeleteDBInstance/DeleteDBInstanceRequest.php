@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBInstanceIdentifier
- * @property bool $SkipFinalSnapshot
- * @property string $FinalDBSnapshotIdentifier
- * @property bool $DeleteAutomatedBackups
+ * @property bool|null $SkipFinalSnapshot
+ * @property string|null $FinalDBSnapshotIdentifier
+ * @property bool|null $DeleteAutomatedBackups
  */
 class DeleteDBInstanceRequest extends Request
 {
     /**
      * @param array{
      *     DBInstanceIdentifier: string,
-     *     SkipFinalSnapshot?: bool,
-     *     FinalDBSnapshotIdentifier?: string,
-     *     DeleteAutomatedBackups?: bool
+     *     SkipFinalSnapshot?: bool|null,
+     *     FinalDBSnapshotIdentifier?: string|null,
+     *     DeleteAutomatedBackups?: bool|null
      * } $args
      */
     public function __construct(array $args)

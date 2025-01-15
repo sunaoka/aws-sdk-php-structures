@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\DescribeModelPackagingJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GreengrassOutputDetails $Greengrass
+ * @property GreengrassOutputDetails|null $Greengrass
  */
 class ModelPackagingOutputDetails extends Shape
 {
     /**
-     * @param array{Greengrass?: GreengrassOutputDetails} $args
+     * @param array{Greengrass?: GreengrassOutputDetails|null} $args
      */
     public function __construct(array $args = [])
     {

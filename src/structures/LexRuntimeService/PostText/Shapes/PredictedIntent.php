@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexRuntimeService\PostText\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $intentName
- * @property IntentConfidence $nluIntentConfidence
- * @property array<string, string> $slots
+ * @property string|null $intentName
+ * @property IntentConfidence|null $nluIntentConfidence
+ * @property array<string, string>|null $slots
  */
 class PredictedIntent extends Shape
 {
     /**
      * @param array{
-     *     intentName?: string,
-     *     nluIntentConfidence?: IntentConfidence,
-     *     slots?: array<string, string>
+     *     intentName?: string|null,
+     *     nluIntentConfidence?: IntentConfidence|null,
+     *     slots?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

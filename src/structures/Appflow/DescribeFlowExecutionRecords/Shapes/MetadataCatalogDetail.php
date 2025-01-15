@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeFlowExecutionRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GLUE' $catalogType
- * @property string $tableName
- * @property RegistrationOutput $tableRegistrationOutput
- * @property RegistrationOutput $partitionRegistrationOutput
+ * @property 'GLUE'|null $catalogType
+ * @property string|null $tableName
+ * @property RegistrationOutput|null $tableRegistrationOutput
+ * @property RegistrationOutput|null $partitionRegistrationOutput
  */
 class MetadataCatalogDetail extends Shape
 {
     /**
      * @param array{
-     *     catalogType?: 'GLUE',
-     *     tableName?: string,
-     *     tableRegistrationOutput?: RegistrationOutput,
-     *     partitionRegistrationOutput?: RegistrationOutput
+     *     catalogType?: 'GLUE'|null,
+     *     tableName?: string|null,
+     *     tableRegistrationOutput?: RegistrationOutput|null,
+     *     partitionRegistrationOutput?: RegistrationOutput|null
      * } $args
      */
     public function __construct(array $args = [])

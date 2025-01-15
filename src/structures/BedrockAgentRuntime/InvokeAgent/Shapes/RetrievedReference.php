@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RetrievalResultContent $content
- * @property RetrievalResultLocation $location
- * @property array<string, RetrievalResultMetadataValue> $metadata
+ * @property RetrievalResultContent|null $content
+ * @property RetrievalResultLocation|null $location
+ * @property array<string, RetrievalResultMetadataValue>|null $metadata
  */
 class RetrievedReference extends Shape
 {
     /**
      * @param array{
-     *     content?: RetrievalResultContent,
-     *     location?: RetrievalResultLocation,
-     *     metadata?: array<string, RetrievalResultMetadataValue>
+     *     content?: RetrievalResultContent|null,
+     *     location?: RetrievalResultLocation|null,
+     *     metadata?: array<string, RetrievalResultMetadataValue>|null
      * } $args
      */
     public function __construct(array $args = [])

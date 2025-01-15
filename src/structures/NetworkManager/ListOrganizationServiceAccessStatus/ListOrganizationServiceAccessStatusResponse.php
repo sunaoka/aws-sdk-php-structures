@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\NetworkManager\ListOrganizationServiceAccessSta
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\OrganizationStatus $OrganizationStatus
- * @property string $NextToken
+ * @property Shapes\OrganizationStatus|null $OrganizationStatus
+ * @property string|null $NextToken
  */
 class ListOrganizationServiceAccessStatusResponse extends Response
 {

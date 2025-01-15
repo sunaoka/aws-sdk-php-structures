@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CodeCommit\DescribePullRequestEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $pullRequestId
- * @property \Aws\Api\DateTimeResult $eventDate
- * @property 'PULL_REQUEST_CREATED'|'PULL_REQUEST_STATUS_CHANGED'|'PULL_REQUEST_SOURCE_REFERENCE_UPDATED'|'PULL_REQUEST_MERGE_STATE_CHANGED'|'PULL_REQUEST_APPROVAL_RULE_CREATED'|'PULL_REQUEST_APPROVAL_RULE_UPDATED'|'PULL_REQUEST_APPROVAL_RULE_DELETED'|'PULL_REQUEST_APPROVAL_RULE_OVERRIDDEN'|'PULL_REQUEST_APPROVAL_STATE_CHANGED' $pullRequestEventType
- * @property string $actorArn
- * @property PullRequestCreatedEventMetadata $pullRequestCreatedEventMetadata
- * @property PullRequestStatusChangedEventMetadata $pullRequestStatusChangedEventMetadata
- * @property PullRequestSourceReferenceUpdatedEventMetadata $pullRequestSourceReferenceUpdatedEventMetadata
- * @property PullRequestMergedStateChangedEventMetadata $pullRequestMergedStateChangedEventMetadata
- * @property ApprovalRuleEventMetadata $approvalRuleEventMetadata
- * @property ApprovalStateChangedEventMetadata $approvalStateChangedEventMetadata
- * @property ApprovalRuleOverriddenEventMetadata $approvalRuleOverriddenEventMetadata
+ * @property string|null $pullRequestId
+ * @property \Aws\Api\DateTimeResult|null $eventDate
+ * @property 'PULL_REQUEST_CREATED'|'PULL_REQUEST_STATUS_CHANGED'|'PULL_REQUEST_SOURCE_REFERENCE_UPDATED'|'PULL_REQUEST_MERGE_STATE_CHANGED'|'PULL_REQUEST_APPROVAL_RULE_CREATED'|'PULL_REQUEST_APPROVAL_RULE_UPDATED'|'PULL_REQUEST_APPROVAL_RULE_DELETED'|'PULL_REQUEST_APPROVAL_RULE_OVERRIDDEN'|'PULL_REQUEST_APPROVAL_STATE_CHANGED'|null $pullRequestEventType
+ * @property string|null $actorArn
+ * @property PullRequestCreatedEventMetadata|null $pullRequestCreatedEventMetadata
+ * @property PullRequestStatusChangedEventMetadata|null $pullRequestStatusChangedEventMetadata
+ * @property PullRequestSourceReferenceUpdatedEventMetadata|null $pullRequestSourceReferenceUpdatedEventMetadata
+ * @property PullRequestMergedStateChangedEventMetadata|null $pullRequestMergedStateChangedEventMetadata
+ * @property ApprovalRuleEventMetadata|null $approvalRuleEventMetadata
+ * @property ApprovalStateChangedEventMetadata|null $approvalStateChangedEventMetadata
+ * @property ApprovalRuleOverriddenEventMetadata|null $approvalRuleOverriddenEventMetadata
  */
 class PullRequestEvent extends Shape
 {
     /**
      * @param array{
-     *     pullRequestId?: string,
-     *     eventDate?: \Aws\Api\DateTimeResult,
-     *     pullRequestEventType?: 'PULL_REQUEST_CREATED'|'PULL_REQUEST_STATUS_CHANGED'|'PULL_REQUEST_SOURCE_REFERENCE_UPDATED'|'PULL_REQUEST_MERGE_STATE_CHANGED'|'PULL_REQUEST_APPROVAL_RULE_CREATED'|'PULL_REQUEST_APPROVAL_RULE_UPDATED'|'PULL_REQUEST_APPROVAL_RULE_DELETED'|'PULL_REQUEST_APPROVAL_RULE_OVERRIDDEN'|'PULL_REQUEST_APPROVAL_STATE_CHANGED',
-     *     actorArn?: string,
-     *     pullRequestCreatedEventMetadata?: PullRequestCreatedEventMetadata,
-     *     pullRequestStatusChangedEventMetadata?: PullRequestStatusChangedEventMetadata,
-     *     pullRequestSourceReferenceUpdatedEventMetadata?: PullRequestSourceReferenceUpdatedEventMetadata,
-     *     pullRequestMergedStateChangedEventMetadata?: PullRequestMergedStateChangedEventMetadata,
-     *     approvalRuleEventMetadata?: ApprovalRuleEventMetadata,
-     *     approvalStateChangedEventMetadata?: ApprovalStateChangedEventMetadata,
-     *     approvalRuleOverriddenEventMetadata?: ApprovalRuleOverriddenEventMetadata
+     *     pullRequestId?: string|null,
+     *     eventDate?: \Aws\Api\DateTimeResult|null,
+     *     pullRequestEventType?: 'PULL_REQUEST_CREATED'|'PULL_REQUEST_STATUS_CHANGED'|'PULL_REQUEST_SOURCE_REFERENCE_UPDATED'|'PULL_REQUEST_MERGE_STATE_CHANGED'|'PULL_REQUEST_APPROVAL_RULE_CREATED'|'PULL_REQUEST_APPROVAL_RULE_UPDATED'|'PULL_REQUEST_APPROVAL_RULE_DELETED'|'PULL_REQUEST_APPROVAL_RULE_OVERRIDDEN'|'PULL_REQUEST_APPROVAL_STATE_CHANGED'|null,
+     *     actorArn?: string|null,
+     *     pullRequestCreatedEventMetadata?: PullRequestCreatedEventMetadata|null,
+     *     pullRequestStatusChangedEventMetadata?: PullRequestStatusChangedEventMetadata|null,
+     *     pullRequestSourceReferenceUpdatedEventMetadata?: PullRequestSourceReferenceUpdatedEventMetadata|null,
+     *     pullRequestMergedStateChangedEventMetadata?: PullRequestMergedStateChangedEventMetadata|null,
+     *     approvalRuleEventMetadata?: ApprovalRuleEventMetadata|null,
+     *     approvalStateChangedEventMetadata?: ApprovalStateChangedEventMetadata|null,
+     *     approvalRuleOverriddenEventMetadata?: ApprovalRuleOverriddenEventMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

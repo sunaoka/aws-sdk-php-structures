@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chatbot\UpdateMicrosoftTeamsChannelConfiguratio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TeamsChannelConfiguration $ChannelConfiguration
+ * @property Shapes\TeamsChannelConfiguration|null $ChannelConfiguration
  */
 class UpdateMicrosoftTeamsChannelConfigurationResponse extends Response
 {

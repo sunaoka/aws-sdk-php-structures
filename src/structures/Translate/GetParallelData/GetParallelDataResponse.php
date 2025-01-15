@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Translate\GetParallelData;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ParallelDataProperties $ParallelDataProperties
- * @property Shapes\ParallelDataDataLocation $DataLocation
- * @property Shapes\ParallelDataDataLocation $AuxiliaryDataLocation
- * @property Shapes\ParallelDataDataLocation $LatestUpdateAttemptAuxiliaryDataLocation
+ * @property Shapes\ParallelDataProperties|null $ParallelDataProperties
+ * @property Shapes\ParallelDataDataLocation|null $DataLocation
+ * @property Shapes\ParallelDataDataLocation|null $AuxiliaryDataLocation
+ * @property Shapes\ParallelDataDataLocation|null $LatestUpdateAttemptAuxiliaryDataLocation
  */
 class GetParallelDataResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\GetInstanceTypesFromInstanceRequirements\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceType
+ * @property string|null $InstanceType
  */
 class InstanceTypeInfoFromInstanceRequirements extends Shape
 {
     /**
-     * @param array{InstanceType?: string} $args
+     * @param array{InstanceType?: string|null} $args
      */
     public function __construct(array $args = [])
     {

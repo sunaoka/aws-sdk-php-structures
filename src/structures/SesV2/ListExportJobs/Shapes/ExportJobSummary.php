@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SesV2\ListExportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JobId
- * @property 'METRICS_DATA'|'MESSAGE_INSIGHTS' $ExportSourceType
- * @property 'CREATED'|'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLED' $JobStatus
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $CompletedTimestamp
+ * @property string|null $JobId
+ * @property 'METRICS_DATA'|'MESSAGE_INSIGHTS'|null $ExportSourceType
+ * @property 'CREATED'|'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLED'|null $JobStatus
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $CompletedTimestamp
  */
 class ExportJobSummary extends Shape
 {
     /**
      * @param array{
-     *     JobId?: string,
-     *     ExportSourceType?: 'METRICS_DATA'|'MESSAGE_INSIGHTS',
-     *     JobStatus?: 'CREATED'|'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLED',
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     CompletedTimestamp?: \Aws\Api\DateTimeResult
+     *     JobId?: string|null,
+     *     ExportSourceType?: 'METRICS_DATA'|'MESSAGE_INSIGHTS'|null,
+     *     JobStatus?: 'CREATED'|'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLED'|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     CompletedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

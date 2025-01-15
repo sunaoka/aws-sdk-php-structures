@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FunctionArn
- * @property string $FunctionPayload
+ * @property string|null $FunctionPayload
  */
 class AwsLambdaTransformation extends Shape
 {
     /**
      * @param array{
      *     FunctionArn: string,
-     *     FunctionPayload?: string
+     *     FunctionPayload?: string|null
      * } $args
      */
     public function __construct(array $args)

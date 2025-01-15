@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rekognition\CreateFaceLivenessSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $KmsKeyId
- * @property Shapes\CreateFaceLivenessSessionRequestSettings $Settings
- * @property string $ClientRequestToken
+ * @property string|null $KmsKeyId
+ * @property Shapes\CreateFaceLivenessSessionRequestSettings|null $Settings
+ * @property string|null $ClientRequestToken
  */
 class CreateFaceLivenessSessionRequest extends Request
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
-     *     Settings?: Shapes\CreateFaceLivenessSessionRequestSettings,
-     *     ClientRequestToken?: string
+     *     KmsKeyId?: string|null,
+     *     Settings?: Shapes\CreateFaceLivenessSessionRequestSettings|null,
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Macie2\GetRevealConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $kmsKeyId
+ * @property string|null $kmsKeyId
  * @property 'ENABLED'|'DISABLED' $status
  */
 class RevealConfiguration extends Shape
 {
     /**
      * @param array{
-     *     kmsKeyId?: string,
+     *     kmsKeyId?: string|null,
      *     status: 'ENABLED'|'DISABLED'
      * } $args
      */

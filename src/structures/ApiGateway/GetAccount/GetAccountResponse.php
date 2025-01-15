@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetAccount;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $cloudwatchRoleArn
- * @property Shapes\ThrottleSettings $throttleSettings
- * @property list<string> $features
- * @property string $apiKeyVersion
+ * @property string|null $cloudwatchRoleArn
+ * @property Shapes\ThrottleSettings|null $throttleSettings
+ * @property list<string>|null $features
+ * @property string|null $apiKeyVersion
  */
 class GetAccountResponse extends Response
 {

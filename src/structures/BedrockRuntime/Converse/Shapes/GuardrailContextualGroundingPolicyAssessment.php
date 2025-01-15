@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\Converse\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<GuardrailContextualGroundingFilter> $filters
+ * @property list<GuardrailContextualGroundingFilter>|null $filters
  */
 class GuardrailContextualGroundingPolicyAssessment extends Shape
 {
     /**
-     * @param array{filters?: list<GuardrailContextualGroundingFilter>} $args
+     * @param array{filters?: list<GuardrailContextualGroundingFilter>|null} $args
      */
     public function __construct(array $args = [])
     {

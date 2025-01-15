@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<LocalizedString> $Intersection
- * @property int<1, 12> $RelativeExit
- * @property 'Left'|'Right'|'Straight' $SteeringDirection
- * @property double $TurnAngle
- * @property 'Sharp'|'Slight'|'Typical' $TurnIntensity
+ * @property int<1, 12>|null $RelativeExit
+ * @property 'Left'|'Right'|'Straight'|null $SteeringDirection
+ * @property double|null $TurnAngle
+ * @property 'Sharp'|'Slight'|'Typical'|null $TurnIntensity
  */
 class RouteExitStepDetails extends Shape
 {
     /**
      * @param array{
      *     Intersection: list<LocalizedString>,
-     *     RelativeExit?: int<1, 12>,
-     *     SteeringDirection?: 'Left'|'Right'|'Straight',
-     *     TurnAngle?: double,
-     *     TurnIntensity?: 'Sharp'|'Slight'|'Typical'
+     *     RelativeExit?: int<1, 12>|null,
+     *     SteeringDirection?: 'Left'|'Right'|'Straight'|null,
+     *     TurnAngle?: double|null,
+     *     TurnIntensity?: 'Sharp'|'Slight'|'Typical'|null
      * } $args
      */
     public function __construct(array $args)

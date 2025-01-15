@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property string $value
+ * @property string|null $key
+ * @property string|null $value
  */
 class ConfigurableActionParameter extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     value?: string
+     *     key?: string|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

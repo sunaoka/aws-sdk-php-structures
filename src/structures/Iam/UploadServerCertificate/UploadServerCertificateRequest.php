@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Iam\UploadServerCertificate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Path
+ * @property string|null $Path
  * @property string $ServerCertificateName
  * @property string $CertificateBody
  * @property string $PrivateKey
- * @property string $CertificateChain
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $CertificateChain
+ * @property list<Shapes\Tag>|null $Tags
  */
 class UploadServerCertificateRequest extends Request
 {
     /**
      * @param array{
-     *     Path?: string,
+     *     Path?: string|null,
      *     ServerCertificateName: string,
      *     CertificateBody: string,
      *     PrivateKey: string,
-     *     CertificateChain?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     CertificateChain?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ConnectorDefinitionId
  * @property string $ConnectorDefinitionVersionId
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetConnectorDefinitionVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetConnectorDefinitionVersionRequest extends Request
      * @param array{
      *     ConnectorDefinitionId: string,
      *     ConnectorDefinitionVersionId: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<GrpcRouteMetadata> $metadata
- * @property string $methodName
- * @property int<1, 65535> $port
- * @property string $serviceName
+ * @property list<GrpcRouteMetadata>|null $metadata
+ * @property string|null $methodName
+ * @property int<1, 65535>|null $port
+ * @property string|null $serviceName
  */
 class GrpcRouteMatch extends Shape
 {
     /**
      * @param array{
-     *     metadata?: list<GrpcRouteMetadata>,
-     *     methodName?: string,
-     *     port?: int<1, 65535>,
-     *     serviceName?: string
+     *     metadata?: list<GrpcRouteMetadata>|null,
+     *     methodName?: string|null,
+     *     port?: int<1, 65535>|null,
+     *     serviceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobId
- * @property int<1, 1000> $MaxItems
- * @property string $Marker
+ * @property int<1, 1000>|null $MaxItems
+ * @property string|null $Marker
  */
 class GetServiceLastAccessedDetailsRequest extends Request
 {
     /**
      * @param array{
      *     JobId: string,
-     *     MaxItems?: int<1, 1000>,
-     *     Marker?: string
+     *     MaxItems?: int<1, 1000>|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args)

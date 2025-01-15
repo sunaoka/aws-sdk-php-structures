@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannelClass\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property InputLocation $AvailBlankingImage
- * @property 'DISABLED'|'ENABLED' $State
+ * @property InputLocation|null $AvailBlankingImage
+ * @property 'DISABLED'|'ENABLED'|null $State
  */
 class AvailBlanking extends Shape
 {
     /**
      * @param array{
-     *     AvailBlankingImage?: InputLocation,
-     *     State?: 'DISABLED'|'ENABLED'
+     *     AvailBlankingImage?: InputLocation|null,
+     *     State?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

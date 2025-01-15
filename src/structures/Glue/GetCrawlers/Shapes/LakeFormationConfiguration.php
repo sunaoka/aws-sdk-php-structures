@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetCrawlers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $UseLakeFormationCredentials
- * @property string $AccountId
+ * @property bool|null $UseLakeFormationCredentials
+ * @property string|null $AccountId
  */
 class LakeFormationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     UseLakeFormationCredentials?: bool,
-     *     AccountId?: string
+     *     UseLakeFormationCredentials?: bool|null,
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

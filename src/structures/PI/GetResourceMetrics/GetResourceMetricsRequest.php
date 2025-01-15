@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\MetricQuery> $MetricQueries
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $PeriodInSeconds
- * @property int<0, 25> $MaxResults
- * @property string $NextToken
- * @property 'END_TIME'|'START_TIME' $PeriodAlignment
+ * @property int|null $PeriodInSeconds
+ * @property int<0, 25>|null $MaxResults
+ * @property string|null $NextToken
+ * @property 'END_TIME'|'START_TIME'|null $PeriodAlignment
  */
 class GetResourceMetricsRequest extends Request
 {
@@ -24,10 +24,10 @@ class GetResourceMetricsRequest extends Request
      *     MetricQueries: list<Shapes\MetricQuery>,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
-     *     PeriodInSeconds?: int,
-     *     MaxResults?: int<0, 25>,
-     *     NextToken?: string,
-     *     PeriodAlignment?: 'END_TIME'|'START_TIME'
+     *     PeriodInSeconds?: int|null,
+     *     MaxResults?: int<0, 25>|null,
+     *     NextToken?: string|null,
+     *     PeriodAlignment?: 'END_TIME'|'START_TIME'|null
      * } $args
      */
     public function __construct(array $args)

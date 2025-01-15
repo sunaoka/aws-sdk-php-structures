@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MasterUserArn
- * @property string $MasterUserName
- * @property string $MasterUserPassword
+ * @property string|null $MasterUserArn
+ * @property string|null $MasterUserName
+ * @property string|null $MasterUserPassword
  */
 class AwsOpenSearchServiceDomainMasterUserOptionsDetails extends Shape
 {
     /**
      * @param array{
-     *     MasterUserArn?: string,
-     *     MasterUserName?: string,
-     *     MasterUserPassword?: string
+     *     MasterUserArn?: string|null,
+     *     MasterUserName?: string|null,
+     *     MasterUserPassword?: string|null
      * } $args
      */
     public function __construct(array $args = [])

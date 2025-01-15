@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\S3\SelectObjectContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RecordsEvent $Records
- * @property StatsEvent $Stats
- * @property ProgressEvent $Progress
- * @property ContinuationEvent $Cont
- * @property EndEvent $End
+ * @property RecordsEvent|null $Records
+ * @property StatsEvent|null $Stats
+ * @property ProgressEvent|null $Progress
+ * @property ContinuationEvent|null $Cont
+ * @property EndEvent|null $End
  */
 class SelectObjectContentEventStream extends Shape
 {
     /**
      * @param array{
-     *     Records?: RecordsEvent,
-     *     Stats?: StatsEvent,
-     *     Progress?: ProgressEvent,
-     *     Cont?: ContinuationEvent,
-     *     End?: EndEvent
+     *     Records?: RecordsEvent|null,
+     *     Stats?: StatsEvent|null,
+     *     Progress?: ProgressEvent|null,
+     *     Cont?: ContinuationEvent|null,
+     *     End?: EndEvent|null
      * } $args
      */
     public function __construct(array $args = [])

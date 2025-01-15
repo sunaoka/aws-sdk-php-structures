@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DistributionId
- * @property string $Marker
- * @property string $MaxItems
+ * @property string|null $Marker
+ * @property string|null $MaxItems
  */
 class ListInvalidationsRequest extends Request
 {
     /**
      * @param array{
      *     DistributionId: string,
-     *     Marker?: string,
-     *     MaxItems?: string
+     *     Marker?: string|null,
+     *     MaxItems?: string|null
      * } $args
      */
     public function __construct(array $args)

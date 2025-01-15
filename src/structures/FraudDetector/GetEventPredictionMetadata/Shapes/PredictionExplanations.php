@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEventPredictionMetadata\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<VariableImpactExplanation> $variableImpactExplanations
- * @property list<AggregatedVariablesImpactExplanation> $aggregatedVariablesImpactExplanations
+ * @property list<VariableImpactExplanation>|null $variableImpactExplanations
+ * @property list<AggregatedVariablesImpactExplanation>|null $aggregatedVariablesImpactExplanations
  */
 class PredictionExplanations extends Shape
 {
     /**
      * @param array{
-     *     variableImpactExplanations?: list<VariableImpactExplanation>,
-     *     aggregatedVariablesImpactExplanations?: list<AggregatedVariablesImpactExplanation>
+     *     variableImpactExplanations?: list<VariableImpactExplanation>|null,
+     *     aggregatedVariablesImpactExplanations?: list<AggregatedVariablesImpactExplanation>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLambdaFunctionRecommendatio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $savingsOpportunityPercentage
- * @property LambdaEstimatedMonthlySavings $estimatedMonthlySavings
+ * @property double|null $savingsOpportunityPercentage
+ * @property LambdaEstimatedMonthlySavings|null $estimatedMonthlySavings
  */
 class LambdaSavingsOpportunityAfterDiscounts extends Shape
 {
     /**
      * @param array{
-     *     savingsOpportunityPercentage?: double,
-     *     estimatedMonthlySavings?: LambdaEstimatedMonthlySavings
+     *     savingsOpportunityPercentage?: double|null,
+     *     estimatedMonthlySavings?: LambdaEstimatedMonthlySavings|null
      * } $args
      */
     public function __construct(array $args = [])

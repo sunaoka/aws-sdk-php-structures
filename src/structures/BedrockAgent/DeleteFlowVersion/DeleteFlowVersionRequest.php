@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $flowIdentifier
  * @property string $flowVersion
- * @property bool $skipResourceInUseCheck
+ * @property bool|null $skipResourceInUseCheck
  */
 class DeleteFlowVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteFlowVersionRequest extends Request
      * @param array{
      *     flowIdentifier: string,
      *     flowVersion: string,
-     *     skipResourceInUseCheck?: bool
+     *     skipResourceInUseCheck?: bool|null
      * } $args
      */
     public function __construct(array $args)

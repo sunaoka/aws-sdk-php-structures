@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Macie2\DescribeBuckets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TRUE'|'FALSE'|'UNKNOWN' $isDefinedInJob
- * @property 'TRUE'|'FALSE'|'UNKNOWN' $isMonitoredByJob
- * @property string $lastJobId
- * @property \Aws\Api\DateTimeResult $lastJobRunTime
+ * @property 'TRUE'|'FALSE'|'UNKNOWN'|null $isDefinedInJob
+ * @property 'TRUE'|'FALSE'|'UNKNOWN'|null $isMonitoredByJob
+ * @property string|null $lastJobId
+ * @property \Aws\Api\DateTimeResult|null $lastJobRunTime
  */
 class JobDetails extends Shape
 {
     /**
      * @param array{
-     *     isDefinedInJob?: 'TRUE'|'FALSE'|'UNKNOWN',
-     *     isMonitoredByJob?: 'TRUE'|'FALSE'|'UNKNOWN',
-     *     lastJobId?: string,
-     *     lastJobRunTime?: \Aws\Api\DateTimeResult
+     *     isDefinedInJob?: 'TRUE'|'FALSE'|'UNKNOWN'|null,
+     *     isMonitoredByJob?: 'TRUE'|'FALSE'|'UNKNOWN'|null,
+     *     lastJobId?: string|null,
+     *     lastJobRunTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

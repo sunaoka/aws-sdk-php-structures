@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\UpdateMetricSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoleArn
- * @property BackTestConfiguration $BackTestConfiguration
+ * @property string|null $RoleArn
+ * @property BackTestConfiguration|null $BackTestConfiguration
  */
 class CloudWatchConfig extends Shape
 {
     /**
      * @param array{
-     *     RoleArn?: string,
-     *     BackTestConfiguration?: BackTestConfiguration
+     *     RoleArn?: string|null,
+     *     BackTestConfiguration?: BackTestConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyCapacityReservatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property int $DecreaseRequestsRemaining
- * @property Shapes\MinimumLoadBalancerCapacity $MinimumLoadBalancerCapacity
- * @property list<Shapes\ZonalCapacityReservationState> $CapacityReservationState
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property int|null $DecreaseRequestsRemaining
+ * @property Shapes\MinimumLoadBalancerCapacity|null $MinimumLoadBalancerCapacity
+ * @property list<Shapes\ZonalCapacityReservationState>|null $CapacityReservationState
  */
 class ModifyCapacityReservationResponse extends Response
 {

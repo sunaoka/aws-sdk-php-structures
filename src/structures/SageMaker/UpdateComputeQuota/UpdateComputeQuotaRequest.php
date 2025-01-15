@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ComputeQuotaId
  * @property int $TargetVersion
- * @property Shapes\ComputeQuotaConfig $ComputeQuotaConfig
- * @property Shapes\ComputeQuotaTarget $ComputeQuotaTarget
- * @property 'Enabled'|'Disabled' $ActivationState
- * @property string $Description
+ * @property Shapes\ComputeQuotaConfig|null $ComputeQuotaConfig
+ * @property Shapes\ComputeQuotaTarget|null $ComputeQuotaTarget
+ * @property 'Enabled'|'Disabled'|null $ActivationState
+ * @property string|null $Description
  */
 class UpdateComputeQuotaRequest extends Request
 {
@@ -18,10 +18,10 @@ class UpdateComputeQuotaRequest extends Request
      * @param array{
      *     ComputeQuotaId: string,
      *     TargetVersion: int,
-     *     ComputeQuotaConfig?: Shapes\ComputeQuotaConfig,
-     *     ComputeQuotaTarget?: Shapes\ComputeQuotaTarget,
-     *     ActivationState?: 'Enabled'|'Disabled',
-     *     Description?: string
+     *     ComputeQuotaConfig?: Shapes\ComputeQuotaConfig|null,
+     *     ComputeQuotaTarget?: Shapes\ComputeQuotaTarget|null,
+     *     ActivationState?: 'Enabled'|'Disabled'|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

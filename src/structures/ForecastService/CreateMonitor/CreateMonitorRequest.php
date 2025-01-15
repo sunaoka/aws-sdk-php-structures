@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $MonitorName
  * @property string $ResourceArn
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMonitorRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateMonitorRequest extends Request
      * @param array{
      *     MonitorName: string,
      *     ResourceArn: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

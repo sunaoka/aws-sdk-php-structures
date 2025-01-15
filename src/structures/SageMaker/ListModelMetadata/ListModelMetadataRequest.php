@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListModelMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\ModelMetadataSearchExpression $SearchExpression
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property Shapes\ModelMetadataSearchExpression|null $SearchExpression
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListModelMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     SearchExpression?: Shapes\ModelMetadataSearchExpression,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     SearchExpression?: Shapes\ModelMetadataSearchExpression|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

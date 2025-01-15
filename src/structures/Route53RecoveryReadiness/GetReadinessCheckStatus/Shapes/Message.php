@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryReadiness\GetReadinessCheckStatu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MessageText
+ * @property string|null $MessageText
  */
 class Message extends Shape
 {
     /**
-     * @param array{MessageText?: string} $args
+     * @param array{MessageText?: string|null} $args
      */
     public function __construct(array $args = [])
     {

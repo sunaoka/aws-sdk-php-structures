@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Catalog
- * @property list<string> $EngagementIdentifier
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $EngagementIdentifier
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  * @property 'SENDER'|'RECEIVER' $ParticipantType
- * @property list<'OpportunityInvitation'> $PayloadType
- * @property list<string> $SenderAwsAccountId
- * @property Shapes\OpportunityEngagementInvitationSort $Sort
- * @property list<'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'> $Status
+ * @property list<'OpportunityInvitation'>|null $PayloadType
+ * @property list<string>|null $SenderAwsAccountId
+ * @property Shapes\OpportunityEngagementInvitationSort|null $Sort
+ * @property list<'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'>|null $Status
  */
 class ListEngagementInvitationsRequest extends Request
 {
     /**
      * @param array{
      *     Catalog: string,
-     *     EngagementIdentifier?: list<string>,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
+     *     EngagementIdentifier?: list<string>|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
      *     ParticipantType: 'SENDER'|'RECEIVER',
-     *     PayloadType?: list<'OpportunityInvitation'>,
-     *     SenderAwsAccountId?: list<string>,
-     *     Sort?: Shapes\OpportunityEngagementInvitationSort,
-     *     Status?: list<'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'>
+     *     PayloadType?: list<'OpportunityInvitation'>|null,
+     *     SenderAwsAccountId?: list<string>|null,
+     *     Sort?: Shapes\OpportunityEngagementInvitationSort|null,
+     *     Status?: list<'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'>|null
      * } $args
      */
     public function __construct(array $args)

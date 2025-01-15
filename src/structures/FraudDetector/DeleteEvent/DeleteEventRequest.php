@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $eventId
  * @property string $eventTypeName
- * @property bool $deleteAuditHistory
+ * @property bool|null $deleteAuditHistory
  */
 class DeleteEventRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteEventRequest extends Request
      * @param array{
      *     eventId: string,
      *     eventTypeName: string,
-     *     deleteAuditHistory?: bool
+     *     deleteAuditHistory?: bool|null
      * } $args
      */
     public function __construct(array $args)

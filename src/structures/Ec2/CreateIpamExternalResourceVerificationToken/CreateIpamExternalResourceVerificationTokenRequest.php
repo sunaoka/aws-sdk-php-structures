@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateIpamExternalResourceVerificationToken
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $IpamId
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property string $ClientToken
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $ClientToken
  */
 class CreateIpamExternalResourceVerificationTokenRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     IpamId: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     ClientToken?: string
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\UpdateEc2DeepInspectionConfiguration
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $activateDeepInspection
- * @property list<string> $packagePaths
+ * @property bool|null $activateDeepInspection
+ * @property list<string>|null $packagePaths
  */
 class UpdateEc2DeepInspectionConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     activateDeepInspection?: bool,
-     *     packagePaths?: list<string>
+     *     activateDeepInspection?: bool|null,
+     *     packagePaths?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

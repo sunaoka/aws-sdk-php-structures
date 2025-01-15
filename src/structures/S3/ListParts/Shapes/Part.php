@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\S3\ListParts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PartNumber
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property string $ETag
- * @property int $Size
- * @property string $ChecksumCRC32
- * @property string $ChecksumCRC32C
- * @property string $ChecksumSHA1
- * @property string $ChecksumSHA256
+ * @property int|null $PartNumber
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property string|null $ETag
+ * @property int|null $Size
+ * @property string|null $ChecksumCRC32
+ * @property string|null $ChecksumCRC32C
+ * @property string|null $ChecksumSHA1
+ * @property string|null $ChecksumSHA256
  */
 class Part extends Shape
 {
     /**
      * @param array{
-     *     PartNumber?: int,
-     *     LastModified?: \Aws\Api\DateTimeResult,
-     *     ETag?: string,
-     *     Size?: int,
-     *     ChecksumCRC32?: string,
-     *     ChecksumCRC32C?: string,
-     *     ChecksumSHA1?: string,
-     *     ChecksumSHA256?: string
+     *     PartNumber?: int|null,
+     *     LastModified?: \Aws\Api\DateTimeResult|null,
+     *     ETag?: string|null,
+     *     Size?: int|null,
+     *     ChecksumCRC32?: string|null,
+     *     ChecksumCRC32C?: string|null,
+     *     ChecksumSHA1?: string|null,
+     *     ChecksumSHA256?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\ListNetworks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $description
  * @property string $networkArn
  * @property string $networkName
  * @property 'CREATED'|'PROVISIONING'|'AVAILABLE'|'DEPROVISIONING'|'DELETED' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  */
 class Network extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     description?: string,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     description?: string|null,
      *     networkArn: string,
      *     networkName: string,
      *     status: 'CREATED'|'PROVISIONING'|'AVAILABLE'|'DEPROVISIONING'|'DELETED',
-     *     statusReason?: string
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args)

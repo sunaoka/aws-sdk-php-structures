@@ -6,12 +6,12 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $accountId
- * @property Shapes\CisScanResultDetailsFilterCriteria $filterCriteria
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property Shapes\CisScanResultDetailsFilterCriteria|null $filterCriteria
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  * @property string $scanArn
- * @property 'CHECK_ID'|'STATUS' $sortBy
- * @property 'ASC'|'DESC' $sortOrder
+ * @property 'CHECK_ID'|'STATUS'|null $sortBy
+ * @property 'ASC'|'DESC'|null $sortOrder
  * @property string $targetResourceId
  */
 class GetCisScanResultDetailsRequest extends Request
@@ -19,12 +19,12 @@ class GetCisScanResultDetailsRequest extends Request
     /**
      * @param array{
      *     accountId: string,
-     *     filterCriteria?: Shapes\CisScanResultDetailsFilterCriteria,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string,
+     *     filterCriteria?: Shapes\CisScanResultDetailsFilterCriteria|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null,
      *     scanArn: string,
-     *     sortBy?: 'CHECK_ID'|'STATUS',
-     *     sortOrder?: 'ASC'|'DESC',
+     *     sortBy?: 'CHECK_ID'|'STATUS'|null,
+     *     sortOrder?: 'ASC'|'DESC'|null,
      *     targetResourceId: string
      * } $args
      */

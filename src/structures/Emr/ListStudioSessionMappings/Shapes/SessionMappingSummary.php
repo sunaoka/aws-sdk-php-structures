@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Emr\ListStudioSessionMappings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StudioId
- * @property string $IdentityId
- * @property string $IdentityName
- * @property 'USER'|'GROUP' $IdentityType
- * @property string $SessionPolicyArn
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $StudioId
+ * @property string|null $IdentityId
+ * @property string|null $IdentityName
+ * @property 'USER'|'GROUP'|null $IdentityType
+ * @property string|null $SessionPolicyArn
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class SessionMappingSummary extends Shape
 {
     /**
      * @param array{
-     *     StudioId?: string,
-     *     IdentityId?: string,
-     *     IdentityName?: string,
-     *     IdentityType?: 'USER'|'GROUP',
-     *     SessionPolicyArn?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult
+     *     StudioId?: string|null,
+     *     IdentityId?: string|null,
+     *     IdentityName?: string|null,
+     *     IdentityType?: 'USER'|'GROUP'|null,
+     *     SessionPolicyArn?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

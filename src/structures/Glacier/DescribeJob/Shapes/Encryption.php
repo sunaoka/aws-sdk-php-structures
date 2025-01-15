@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glacier\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'aws:kms'|'AES256' $EncryptionType
- * @property string $KMSKeyId
- * @property string $KMSContext
+ * @property 'aws:kms'|'AES256'|null $EncryptionType
+ * @property string|null $KMSKeyId
+ * @property string|null $KMSContext
  */
 class Encryption extends Shape
 {
     /**
      * @param array{
-     *     EncryptionType?: 'aws:kms'|'AES256',
-     *     KMSKeyId?: string,
-     *     KMSContext?: string
+     *     EncryptionType?: 'aws:kms'|'AES256'|null,
+     *     KMSKeyId?: string|null,
+     *     KMSContext?: string|null
      * } $args
      */
     public function __construct(array $args = [])

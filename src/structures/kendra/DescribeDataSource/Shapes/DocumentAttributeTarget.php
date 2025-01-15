@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\kendra\DescribeDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetDocumentAttributeKey
- * @property bool $TargetDocumentAttributeValueDeletion
- * @property DocumentAttributeValue $TargetDocumentAttributeValue
+ * @property string|null $TargetDocumentAttributeKey
+ * @property bool|null $TargetDocumentAttributeValueDeletion
+ * @property DocumentAttributeValue|null $TargetDocumentAttributeValue
  */
 class DocumentAttributeTarget extends Shape
 {
     /**
      * @param array{
-     *     TargetDocumentAttributeKey?: string,
-     *     TargetDocumentAttributeValueDeletion?: bool,
-     *     TargetDocumentAttributeValue?: DocumentAttributeValue
+     *     TargetDocumentAttributeKey?: string|null,
+     *     TargetDocumentAttributeValueDeletion?: bool|null,
+     *     TargetDocumentAttributeValue?: DocumentAttributeValue|null
      * } $args
      */
     public function __construct(array $args = [])

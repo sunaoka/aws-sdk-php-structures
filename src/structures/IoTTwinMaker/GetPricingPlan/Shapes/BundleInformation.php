@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $bundleNames
- * @property 'TIER_1'|'TIER_2'|'TIER_3'|'TIER_4' $pricingTier
+ * @property 'TIER_1'|'TIER_2'|'TIER_3'|'TIER_4'|null $pricingTier
  */
 class BundleInformation extends Shape
 {
     /**
      * @param array{
      *     bundleNames: list<string>,
-     *     pricingTier?: 'TIER_1'|'TIER_2'|'TIER_3'|'TIER_4'
+     *     pricingTier?: 'TIER_1'|'TIER_2'|'TIER_3'|'TIER_4'|null
      * } $args
      */
     public function __construct(array $args)

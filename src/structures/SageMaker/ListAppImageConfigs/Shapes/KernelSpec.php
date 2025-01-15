@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $DisplayName
+ * @property string|null $DisplayName
  */
 class KernelSpec extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     DisplayName?: string
+     *     DisplayName?: string|null
      * } $args
      */
     public function __construct(array $args)

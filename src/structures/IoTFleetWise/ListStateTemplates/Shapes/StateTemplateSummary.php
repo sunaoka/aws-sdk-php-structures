@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\ListStateTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property string $signalCatalogArn
- * @property string $description
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastModificationTime
- * @property string $id
+ * @property string|null $name
+ * @property string|null $arn
+ * @property string|null $signalCatalogArn
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastModificationTime
+ * @property string|null $id
  */
 class StateTemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     signalCatalogArn?: string,
-     *     description?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastModificationTime?: \Aws\Api\DateTimeResult,
-     *     id?: string
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     signalCatalogArn?: string|null,
+     *     description?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModificationTime?: \Aws\Api\DateTimeResult|null,
+     *     id?: string|null
      * } $args
      */
     public function __construct(array $args = [])

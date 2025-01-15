@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CodePipeline\ListPipelineExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $reason
+ * @property string|null $reason
  */
 class StopExecutionTrigger extends Shape
 {
     /**
-     * @param array{reason?: string} $args
+     * @param array{reason?: string|null} $args
      */
     public function __construct(array $args = [])
     {

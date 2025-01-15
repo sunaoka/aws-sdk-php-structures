@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\Glue\GetColumnStatisticsTaskRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustomerId
- * @property string $ColumnStatisticsTaskRunId
- * @property string $DatabaseName
- * @property string $TableName
- * @property list<string> $ColumnNameList
- * @property string $CatalogID
- * @property string $Role
- * @property double $SampleSize
- * @property string $SecurityConfiguration
- * @property int<1, max> $NumberOfWorkers
- * @property string $WorkerType
- * @property 'FULL'|'INCREMENTAL' $ComputationType
- * @property 'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPED' $Status
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $ErrorMessage
- * @property double $DPUSeconds
+ * @property string|null $CustomerId
+ * @property string|null $ColumnStatisticsTaskRunId
+ * @property string|null $DatabaseName
+ * @property string|null $TableName
+ * @property list<string>|null $ColumnNameList
+ * @property string|null $CatalogID
+ * @property string|null $Role
+ * @property double|null $SampleSize
+ * @property string|null $SecurityConfiguration
+ * @property int<1, max>|null $NumberOfWorkers
+ * @property string|null $WorkerType
+ * @property 'FULL'|'INCREMENTAL'|null $ComputationType
+ * @property 'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $ErrorMessage
+ * @property double|null $DPUSeconds
  */
 class ColumnStatisticsTaskRun extends Shape
 {
     /**
      * @param array{
-     *     CustomerId?: string,
-     *     ColumnStatisticsTaskRunId?: string,
-     *     DatabaseName?: string,
-     *     TableName?: string,
-     *     ColumnNameList?: list<string>,
-     *     CatalogID?: string,
-     *     Role?: string,
-     *     SampleSize?: double,
-     *     SecurityConfiguration?: string,
-     *     NumberOfWorkers?: int<1, max>,
-     *     WorkerType?: string,
-     *     ComputationType?: 'FULL'|'INCREMENTAL',
-     *     Status?: 'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPED',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     ErrorMessage?: string,
-     *     DPUSeconds?: double
+     *     CustomerId?: string|null,
+     *     ColumnStatisticsTaskRunId?: string|null,
+     *     DatabaseName?: string|null,
+     *     TableName?: string|null,
+     *     ColumnNameList?: list<string>|null,
+     *     CatalogID?: string|null,
+     *     Role?: string|null,
+     *     SampleSize?: double|null,
+     *     SecurityConfiguration?: string|null,
+     *     NumberOfWorkers?: int<1, max>|null,
+     *     WorkerType?: string|null,
+     *     ComputationType?: 'FULL'|'INCREMENTAL'|null,
+     *     Status?: 'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPED'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     ErrorMessage?: string|null,
+     *     DPUSeconds?: double|null
      * } $args
      */
     public function __construct(array $args = [])

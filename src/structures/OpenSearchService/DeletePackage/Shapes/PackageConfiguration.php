@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'REQUIRED'|'OPTIONAL'|'NONE' $LicenseRequirement
- * @property string $LicenseFilepath
+ * @property string|null $LicenseFilepath
  * @property 'REQUIRED'|'OPTIONAL'|'NONE' $ConfigurationRequirement
- * @property bool $RequiresRestartForConfigurationUpdate
+ * @property bool|null $RequiresRestartForConfigurationUpdate
  */
 class PackageConfiguration extends Shape
 {
     /**
      * @param array{
      *     LicenseRequirement: 'REQUIRED'|'OPTIONAL'|'NONE',
-     *     LicenseFilepath?: string,
+     *     LicenseFilepath?: string|null,
      *     ConfigurationRequirement: 'REQUIRED'|'OPTIONAL'|'NONE',
-     *     RequiresRestartForConfigurationUpdate?: bool
+     *     RequiresRestartForConfigurationUpdate?: bool|null
      * } $args
      */
     public function __construct(array $args)

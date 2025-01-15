@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateResourceDefinition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AmznClientToken
- * @property Shapes\ResourceDefinitionVersion $InitialVersion
- * @property string $Name
- * @property array<string, string> $tags
+ * @property string|null $AmznClientToken
+ * @property Shapes\ResourceDefinitionVersion|null $InitialVersion
+ * @property string|null $Name
+ * @property array<string, string>|null $tags
  */
 class CreateResourceDefinitionRequest extends Request
 {
     /**
      * @param array{
-     *     AmznClientToken?: string,
-     *     InitialVersion?: Shapes\ResourceDefinitionVersion,
-     *     Name?: string,
-     *     tags?: array<string, string>
+     *     AmznClientToken?: string|null,
+     *     InitialVersion?: Shapes\ResourceDefinitionVersion|null,
+     *     Name?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

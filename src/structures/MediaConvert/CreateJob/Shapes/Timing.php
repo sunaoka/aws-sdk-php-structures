@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $FinishTime
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $SubmitTime
+ * @property \Aws\Api\DateTimeResult|null $FinishTime
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $SubmitTime
  */
 class Timing extends Shape
 {
     /**
      * @param array{
-     *     FinishTime?: \Aws\Api\DateTimeResult,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     SubmitTime?: \Aws\Api\DateTimeResult
+     *     FinishTime?: \Aws\Api\DateTimeResult|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     SubmitTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

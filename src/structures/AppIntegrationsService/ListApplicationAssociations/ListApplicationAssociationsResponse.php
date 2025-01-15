@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\ListApplicationAssociati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ApplicationAssociationSummary> $ApplicationAssociations
- * @property string $NextToken
+ * @property list<Shapes\ApplicationAssociationSummary>|null $ApplicationAssociations
+ * @property string|null $NextToken
  */
 class ListApplicationAssociationsResponse extends Response
 {

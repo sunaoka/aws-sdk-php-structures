@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UpdateToken
- * @property string $RuleGroupArn
- * @property string $RuleGroupName
- * @property Shapes\RuleGroup $RuleGroup
- * @property string $Rules
- * @property 'STATELESS'|'STATEFUL' $Type
- * @property string $Description
- * @property bool $DryRun
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
- * @property Shapes\SourceMetadata $SourceMetadata
- * @property bool $AnalyzeRuleGroup
+ * @property string|null $RuleGroupArn
+ * @property string|null $RuleGroupName
+ * @property Shapes\RuleGroup|null $RuleGroup
+ * @property string|null $Rules
+ * @property 'STATELESS'|'STATEFUL'|null $Type
+ * @property string|null $Description
+ * @property bool|null $DryRun
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
+ * @property Shapes\SourceMetadata|null $SourceMetadata
+ * @property bool|null $AnalyzeRuleGroup
  */
 class UpdateRuleGroupRequest extends Request
 {
     /**
      * @param array{
      *     UpdateToken: string,
-     *     RuleGroupArn?: string,
-     *     RuleGroupName?: string,
-     *     RuleGroup?: Shapes\RuleGroup,
-     *     Rules?: string,
-     *     Type?: 'STATELESS'|'STATEFUL',
-     *     Description?: string,
-     *     DryRun?: bool,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration,
-     *     SourceMetadata?: Shapes\SourceMetadata,
-     *     AnalyzeRuleGroup?: bool
+     *     RuleGroupArn?: string|null,
+     *     RuleGroupName?: string|null,
+     *     RuleGroup?: Shapes\RuleGroup|null,
+     *     Rules?: string|null,
+     *     Type?: 'STATELESS'|'STATEFUL'|null,
+     *     Description?: string|null,
+     *     DryRun?: bool|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     SourceMetadata?: Shapes\SourceMetadata|null,
+     *     AnalyzeRuleGroup?: bool|null
      * } $args
      */
     public function __construct(array $args)

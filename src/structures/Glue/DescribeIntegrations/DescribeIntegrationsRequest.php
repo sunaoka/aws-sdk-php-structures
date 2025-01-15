@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\DescribeIntegrations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $IntegrationIdentifier
- * @property string $Marker
- * @property int $MaxRecords
- * @property list<Shapes\IntegrationFilter> $Filters
+ * @property string|null $IntegrationIdentifier
+ * @property string|null $Marker
+ * @property int|null $MaxRecords
+ * @property list<Shapes\IntegrationFilter>|null $Filters
  */
 class DescribeIntegrationsRequest extends Request
 {
     /**
      * @param array{
-     *     IntegrationIdentifier?: string,
-     *     Marker?: string,
-     *     MaxRecords?: int,
-     *     Filters?: list<Shapes\IntegrationFilter>
+     *     IntegrationIdentifier?: string|null,
+     *     Marker?: string|null,
+     *     MaxRecords?: int|null,
+     *     Filters?: list<Shapes\IntegrationFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

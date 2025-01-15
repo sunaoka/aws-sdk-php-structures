@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\ListComponents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $componentVersion
- * @property \Aws\Api\DateTimeResult $creationTimestamp
- * @property string $description
- * @property string $publisher
- * @property list<ComponentPlatform> $platforms
+ * @property string|null $arn
+ * @property string|null $componentVersion
+ * @property \Aws\Api\DateTimeResult|null $creationTimestamp
+ * @property string|null $description
+ * @property string|null $publisher
+ * @property list<ComponentPlatform>|null $platforms
  */
 class ComponentLatestVersion extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     componentVersion?: string,
-     *     creationTimestamp?: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     publisher?: string,
-     *     platforms?: list<ComponentPlatform>
+     *     arn?: string|null,
+     *     componentVersion?: string|null,
+     *     creationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     description?: string|null,
+     *     publisher?: string|null,
+     *     platforms?: list<ComponentPlatform>|null
      * } $args
      */
     public function __construct(array $args = [])

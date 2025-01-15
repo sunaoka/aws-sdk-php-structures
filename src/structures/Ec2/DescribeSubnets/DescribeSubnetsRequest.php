@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSubnets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter> $Filters
- * @property list<string> $SubnetIds
- * @property string $NextToken
- * @property int<5, 1000> $MaxResults
- * @property bool $DryRun
+ * @property list<Shapes\Filter>|null $Filters
+ * @property list<string>|null $SubnetIds
+ * @property string|null $NextToken
+ * @property int<5, 1000>|null $MaxResults
+ * @property bool|null $DryRun
  */
 class DescribeSubnetsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\Filter>,
-     *     SubnetIds?: list<string>,
-     *     NextToken?: string,
-     *     MaxResults?: int<5, 1000>,
-     *     DryRun?: bool
+     *     Filters?: list<Shapes\Filter>|null,
+     *     SubnetIds?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<5, 1000>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Identifier
  * @property 'en-US' $LanguageCode
- * @property Shapes\KinesisVideoStreamSourceTaskConfiguration $KinesisVideoStreamSourceTaskConfiguration
- * @property string $ClientRequestToken
+ * @property Shapes\KinesisVideoStreamSourceTaskConfiguration|null $KinesisVideoStreamSourceTaskConfiguration
+ * @property string|null $ClientRequestToken
  */
 class StartVoiceToneAnalysisTaskRequest extends Request
 {
@@ -16,8 +16,8 @@ class StartVoiceToneAnalysisTaskRequest extends Request
      * @param array{
      *     Identifier: string,
      *     LanguageCode: 'en-US',
-     *     KinesisVideoStreamSourceTaskConfiguration?: Shapes\KinesisVideoStreamSourceTaskConfiguration,
-     *     ClientRequestToken?: string
+     *     KinesisVideoStreamSourceTaskConfiguration?: Shapes\KinesisVideoStreamSourceTaskConfiguration|null,
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Category
- * @property list<MeasureField> $BarValues
- * @property list<DimensionField> $Colors
- * @property list<MeasureField> $LineValues
+ * @property list<DimensionField>|null $Category
+ * @property list<MeasureField>|null $BarValues
+ * @property list<DimensionField>|null $Colors
+ * @property list<MeasureField>|null $LineValues
  */
 class ComboChartAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Category?: list<DimensionField>,
-     *     BarValues?: list<MeasureField>,
-     *     Colors?: list<DimensionField>,
-     *     LineValues?: list<MeasureField>
+     *     Category?: list<DimensionField>|null,
+     *     BarValues?: list<MeasureField>|null,
+     *     Colors?: list<DimensionField>|null,
+     *     LineValues?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $MessageId
  * @property string $MD5OfMessageBody
- * @property string $MD5OfMessageAttributes
- * @property string $MD5OfMessageSystemAttributes
- * @property string $SequenceNumber
+ * @property string|null $MD5OfMessageAttributes
+ * @property string|null $MD5OfMessageSystemAttributes
+ * @property string|null $SequenceNumber
  */
 class SendMessageBatchResultEntry extends Shape
 {
@@ -19,9 +19,9 @@ class SendMessageBatchResultEntry extends Shape
      *     Id: string,
      *     MessageId: string,
      *     MD5OfMessageBody: string,
-     *     MD5OfMessageAttributes?: string,
-     *     MD5OfMessageSystemAttributes?: string,
-     *     SequenceNumber?: string
+     *     MD5OfMessageAttributes?: string|null,
+     *     MD5OfMessageSystemAttributes?: string|null,
+     *     SequenceNumber?: string|null
      * } $args
      */
     public function __construct(array $args)

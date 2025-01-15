@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeIpamResourceDiscoveries;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property list<string> $IpamResourceDiscoveryIds
- * @property string $NextToken
- * @property int<5, 1000> $MaxResults
- * @property list<Shapes\Filter> $Filters
+ * @property bool|null $DryRun
+ * @property list<string>|null $IpamResourceDiscoveryIds
+ * @property string|null $NextToken
+ * @property int<5, 1000>|null $MaxResults
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeIpamResourceDiscoveriesRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     IpamResourceDiscoveryIds?: list<string>,
-     *     NextToken?: string,
-     *     MaxResults?: int<5, 1000>,
-     *     Filters?: list<Shapes\Filter>
+     *     DryRun?: bool|null,
+     *     IpamResourceDiscoveryIds?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<5, 1000>|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

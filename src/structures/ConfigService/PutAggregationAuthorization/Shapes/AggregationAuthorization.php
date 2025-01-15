@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConfigService\PutAggregationAuthorization\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AggregationAuthorizationArn
- * @property string $AuthorizedAccountId
- * @property string $AuthorizedAwsRegion
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $AggregationAuthorizationArn
+ * @property string|null $AuthorizedAccountId
+ * @property string|null $AuthorizedAwsRegion
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class AggregationAuthorization extends Shape
 {
     /**
      * @param array{
-     *     AggregationAuthorizationArn?: string,
-     *     AuthorizedAccountId?: string,
-     *     AuthorizedAwsRegion?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult
+     *     AggregationAuthorizationArn?: string|null,
+     *     AuthorizedAccountId?: string|null,
+     *     AuthorizedAwsRegion?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

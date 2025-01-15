@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $exact
+ * @property string|null $exact
  */
 class QueryParameterMatch extends Shape
 {
     /**
-     * @param array{exact?: string} $args
+     * @param array{exact?: string|null} $args
      */
     public function __construct(array $args = [])
     {

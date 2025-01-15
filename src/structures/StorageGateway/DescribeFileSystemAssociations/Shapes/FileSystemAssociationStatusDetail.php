@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeFileSystemAssociations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorCode
+ * @property string|null $ErrorCode
  */
 class FileSystemAssociationStatusDetail extends Shape
 {
     /**
-     * @param array{ErrorCode?: string} $args
+     * @param array{ErrorCode?: string|null} $args
      */
     public function __construct(array $args = [])
     {

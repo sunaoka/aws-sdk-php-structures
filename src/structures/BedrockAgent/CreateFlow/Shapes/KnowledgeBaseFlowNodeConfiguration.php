@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GuardrailConfiguration $guardrailConfiguration
+ * @property GuardrailConfiguration|null $guardrailConfiguration
  * @property string $knowledgeBaseId
- * @property string $modelId
+ * @property string|null $modelId
  */
 class KnowledgeBaseFlowNodeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     guardrailConfiguration?: GuardrailConfiguration,
+     *     guardrailConfiguration?: GuardrailConfiguration|null,
      *     knowledgeBaseId: string,
-     *     modelId?: string
+     *     modelId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AuditManager\DeregisterOrganizationAdminAccount
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $adminAccountId
+ * @property string|null $adminAccountId
  */
 class DeregisterOrganizationAdminAccountRequest extends Request
 {
     /**
-     * @param array{adminAccountId?: string} $args
+     * @param array{adminAccountId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

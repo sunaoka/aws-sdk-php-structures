@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\DeprovisionByoipCidr;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ByoipCidr $ByoipCidr
+ * @property Shapes\ByoipCidr|null $ByoipCidr
  */
 class DeprovisionByoipCidrResponse extends Response
 {

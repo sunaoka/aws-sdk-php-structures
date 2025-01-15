@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $detectorModelName
- * @property string $stateName
- * @property string $nextToken
- * @property int<1, 250> $maxResults
+ * @property string|null $stateName
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
  */
 class ListDetectorsRequest extends Request
 {
     /**
      * @param array{
      *     detectorModelName: string,
-     *     stateName?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>
+     *     stateName?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null
      * } $args
      */
     public function __construct(array $args)

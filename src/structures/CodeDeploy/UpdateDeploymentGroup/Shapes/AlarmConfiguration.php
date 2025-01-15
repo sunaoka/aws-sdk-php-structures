@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\UpdateDeploymentGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $enabled
- * @property bool $ignorePollAlarmFailure
- * @property list<Alarm> $alarms
+ * @property bool|null $enabled
+ * @property bool|null $ignorePollAlarmFailure
+ * @property list<Alarm>|null $alarms
  */
 class AlarmConfiguration extends Shape
 {
     /**
      * @param array{
-     *     enabled?: bool,
-     *     ignorePollAlarmFailure?: bool,
-     *     alarms?: list<Alarm>
+     *     enabled?: bool|null,
+     *     ignorePollAlarmFailure?: bool|null,
+     *     alarms?: list<Alarm>|null
      * } $args
      */
     public function __construct(array $args = [])

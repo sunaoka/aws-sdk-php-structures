@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAssetBundleImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssetBundleImportJobDataSourceCredentialPair $CredentialPair
- * @property string $SecretArn
+ * @property AssetBundleImportJobDataSourceCredentialPair|null $CredentialPair
+ * @property string|null $SecretArn
  */
 class AssetBundleImportJobDataSourceCredentials extends Shape
 {
     /**
      * @param array{
-     *     CredentialPair?: AssetBundleImportJobDataSourceCredentialPair,
-     *     SecretArn?: string
+     *     CredentialPair?: AssetBundleImportJobDataSourceCredentialPair|null,
+     *     SecretArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

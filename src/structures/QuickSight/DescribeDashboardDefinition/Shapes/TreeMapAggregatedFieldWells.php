@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Groups
- * @property list<MeasureField> $Sizes
- * @property list<MeasureField> $Colors
+ * @property list<DimensionField>|null $Groups
+ * @property list<MeasureField>|null $Sizes
+ * @property list<MeasureField>|null $Colors
  */
 class TreeMapAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Groups?: list<DimensionField>,
-     *     Sizes?: list<MeasureField>,
-     *     Colors?: list<MeasureField>
+     *     Groups?: list<DimensionField>|null,
+     *     Sizes?: list<MeasureField>|null,
+     *     Colors?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

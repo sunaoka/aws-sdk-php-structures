@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeStorageSystemResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterUuid
- * @property string $ResourceId
- * @property string $SvmName
- * @property int<0, max> $CifsShareCount
- * @property list<string> $EnabledProtocols
- * @property int<0, max> $TotalCapacityUsed
- * @property int<0, max> $TotalCapacityProvisioned
- * @property int<0, max> $TotalLogicalCapacityUsed
- * @property MaxP95Performance $MaxP95Performance
- * @property list<Recommendation> $Recommendations
- * @property int<0, max> $NfsExportedVolumes
- * @property 'NONE'|'IN_PROGRESS'|'COMPLETED'|'FAILED' $RecommendationStatus
- * @property int<0, max> $TotalSnapshotCapacityUsed
- * @property int<0, max> $LunCount
+ * @property string|null $ClusterUuid
+ * @property string|null $ResourceId
+ * @property string|null $SvmName
+ * @property int<0, max>|null $CifsShareCount
+ * @property list<string>|null $EnabledProtocols
+ * @property int<0, max>|null $TotalCapacityUsed
+ * @property int<0, max>|null $TotalCapacityProvisioned
+ * @property int<0, max>|null $TotalLogicalCapacityUsed
+ * @property MaxP95Performance|null $MaxP95Performance
+ * @property list<Recommendation>|null $Recommendations
+ * @property int<0, max>|null $NfsExportedVolumes
+ * @property 'NONE'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $RecommendationStatus
+ * @property int<0, max>|null $TotalSnapshotCapacityUsed
+ * @property int<0, max>|null $LunCount
  */
 class NetAppONTAPSVM extends Shape
 {
     /**
      * @param array{
-     *     ClusterUuid?: string,
-     *     ResourceId?: string,
-     *     SvmName?: string,
-     *     CifsShareCount?: int<0, max>,
-     *     EnabledProtocols?: list<string>,
-     *     TotalCapacityUsed?: int<0, max>,
-     *     TotalCapacityProvisioned?: int<0, max>,
-     *     TotalLogicalCapacityUsed?: int<0, max>,
-     *     MaxP95Performance?: MaxP95Performance,
-     *     Recommendations?: list<Recommendation>,
-     *     NfsExportedVolumes?: int<0, max>,
-     *     RecommendationStatus?: 'NONE'|'IN_PROGRESS'|'COMPLETED'|'FAILED',
-     *     TotalSnapshotCapacityUsed?: int<0, max>,
-     *     LunCount?: int<0, max>
+     *     ClusterUuid?: string|null,
+     *     ResourceId?: string|null,
+     *     SvmName?: string|null,
+     *     CifsShareCount?: int<0, max>|null,
+     *     EnabledProtocols?: list<string>|null,
+     *     TotalCapacityUsed?: int<0, max>|null,
+     *     TotalCapacityProvisioned?: int<0, max>|null,
+     *     TotalLogicalCapacityUsed?: int<0, max>|null,
+     *     MaxP95Performance?: MaxP95Performance|null,
+     *     Recommendations?: list<Recommendation>|null,
+     *     NfsExportedVolumes?: int<0, max>|null,
+     *     RecommendationStatus?: 'NONE'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|null,
+     *     TotalSnapshotCapacityUsed?: int<0, max>|null,
+     *     LunCount?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

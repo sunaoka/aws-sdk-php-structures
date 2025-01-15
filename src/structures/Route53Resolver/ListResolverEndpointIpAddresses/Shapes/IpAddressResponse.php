@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\ListResolverEndpointIpAddresses
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpId
- * @property string $SubnetId
- * @property string $Ip
- * @property string $Ipv6
- * @property 'CREATING'|'FAILED_CREATION'|'ATTACHING'|'ATTACHED'|'REMAP_DETACHING'|'REMAP_ATTACHING'|'DETACHING'|'FAILED_RESOURCE_GONE'|'DELETING'|'DELETE_FAILED_FAS_EXPIRED'|'UPDATING'|'UPDATE_FAILED' $Status
- * @property string $StatusMessage
- * @property string $CreationTime
- * @property string $ModificationTime
+ * @property string|null $IpId
+ * @property string|null $SubnetId
+ * @property string|null $Ip
+ * @property string|null $Ipv6
+ * @property 'CREATING'|'FAILED_CREATION'|'ATTACHING'|'ATTACHED'|'REMAP_DETACHING'|'REMAP_ATTACHING'|'DETACHING'|'FAILED_RESOURCE_GONE'|'DELETING'|'DELETE_FAILED_FAS_EXPIRED'|'UPDATING'|'UPDATE_FAILED'|null $Status
+ * @property string|null $StatusMessage
+ * @property string|null $CreationTime
+ * @property string|null $ModificationTime
  */
 class IpAddressResponse extends Shape
 {
     /**
      * @param array{
-     *     IpId?: string,
-     *     SubnetId?: string,
-     *     Ip?: string,
-     *     Ipv6?: string,
-     *     Status?: 'CREATING'|'FAILED_CREATION'|'ATTACHING'|'ATTACHED'|'REMAP_DETACHING'|'REMAP_ATTACHING'|'DETACHING'|'FAILED_RESOURCE_GONE'|'DELETING'|'DELETE_FAILED_FAS_EXPIRED'|'UPDATING'|'UPDATE_FAILED',
-     *     StatusMessage?: string,
-     *     CreationTime?: string,
-     *     ModificationTime?: string
+     *     IpId?: string|null,
+     *     SubnetId?: string|null,
+     *     Ip?: string|null,
+     *     Ipv6?: string|null,
+     *     Status?: 'CREATING'|'FAILED_CREATION'|'ATTACHING'|'ATTACHED'|'REMAP_DETACHING'|'REMAP_ATTACHING'|'DETACHING'|'FAILED_RESOURCE_GONE'|'DELETING'|'DELETE_FAILED_FAS_EXPIRED'|'UPDATING'|'UPDATE_FAILED'|null,
+     *     StatusMessage?: string|null,
+     *     CreationTime?: string|null,
+     *     ModificationTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $CloudWatchLoggingOptionId
- * @property string $LogStreamARNUpdate
- * @property string $RoleARNUpdate
+ * @property string|null $LogStreamARNUpdate
+ * @property string|null $RoleARNUpdate
  */
 class CloudWatchLoggingOptionUpdate extends Shape
 {
     /**
      * @param array{
      *     CloudWatchLoggingOptionId: string,
-     *     LogStreamARNUpdate?: string,
-     *     RoleARNUpdate?: string
+     *     LogStreamARNUpdate?: string|null,
+     *     RoleARNUpdate?: string|null
      * } $args
      */
     public function __construct(array $args)

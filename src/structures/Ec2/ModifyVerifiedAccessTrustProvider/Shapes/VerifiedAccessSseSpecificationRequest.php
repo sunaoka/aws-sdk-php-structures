@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVerifiedAccessTrustProvider\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $CustomerManagedKeyEnabled
- * @property string $KmsKeyArn
+ * @property bool|null $CustomerManagedKeyEnabled
+ * @property string|null $KmsKeyArn
  */
 class VerifiedAccessSseSpecificationRequest extends Shape
 {
     /**
      * @param array{
-     *     CustomerManagedKeyEnabled?: bool,
-     *     KmsKeyArn?: string
+     *     CustomerManagedKeyEnabled?: bool|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

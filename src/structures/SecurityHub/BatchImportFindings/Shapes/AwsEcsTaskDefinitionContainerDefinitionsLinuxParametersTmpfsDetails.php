@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerPath
- * @property list<string> $MountOptions
- * @property int $Size
+ * @property string|null $ContainerPath
+ * @property list<string>|null $MountOptions
+ * @property int|null $Size
  */
 class AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails extends Shape
 {
     /**
      * @param array{
-     *     ContainerPath?: string,
-     *     MountOptions?: list<string>,
-     *     Size?: int
+     *     ContainerPath?: string|null,
+     *     MountOptions?: list<string>|null,
+     *     Size?: int|null
      * } $args
      */
     public function __construct(array $args = [])

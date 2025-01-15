@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateSoftwareUpdateJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $IotJobArn
- * @property string $IotJobId
- * @property string $PlatformSoftwareVersion
+ * @property string|null $IotJobArn
+ * @property string|null $IotJobId
+ * @property string|null $PlatformSoftwareVersion
  */
 class CreateSoftwareUpdateJobResponse extends Response
 {

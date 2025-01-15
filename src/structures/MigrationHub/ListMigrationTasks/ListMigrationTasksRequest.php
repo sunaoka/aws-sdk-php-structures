@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MigrationHub\ListMigrationTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property string $ResourceName
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $ResourceName
  */
 class ListMigrationTasksRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     ResourceName?: string
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     ResourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

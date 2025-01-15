@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\WorldExportJobSummary> $worldExportJobSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListWorldExportJobsResponse extends Response
 {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AuditManager\ListAssessmentFrameworkShareReques
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AssessmentFrameworkShareRequest> $assessmentFrameworkShareRequests
- * @property string $nextToken
+ * @property list<Shapes\AssessmentFrameworkShareRequest>|null $assessmentFrameworkShareRequests
+ * @property string|null $nextToken
  */
 class ListAssessmentFrameworkShareRequestsResponse extends Response
 {

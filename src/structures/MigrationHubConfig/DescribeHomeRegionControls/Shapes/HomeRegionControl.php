@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubConfig\DescribeHomeRegionControls\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ControlId
- * @property string $HomeRegion
- * @property Target $Target
- * @property \Aws\Api\DateTimeResult $RequestedTime
+ * @property string|null $ControlId
+ * @property string|null $HomeRegion
+ * @property Target|null $Target
+ * @property \Aws\Api\DateTimeResult|null $RequestedTime
  */
 class HomeRegionControl extends Shape
 {
     /**
      * @param array{
-     *     ControlId?: string,
-     *     HomeRegion?: string,
-     *     Target?: Target,
-     *     RequestedTime?: \Aws\Api\DateTimeResult
+     *     ControlId?: string|null,
+     *     HomeRegion?: string|null,
+     *     Target?: Target|null,
+     *     RequestedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

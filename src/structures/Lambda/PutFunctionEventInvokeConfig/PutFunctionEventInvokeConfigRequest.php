@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FunctionName
- * @property string $Qualifier
- * @property int<0, 2> $MaximumRetryAttempts
- * @property int<60, 21600> $MaximumEventAgeInSeconds
- * @property Shapes\DestinationConfig $DestinationConfig
+ * @property string|null $Qualifier
+ * @property int<0, 2>|null $MaximumRetryAttempts
+ * @property int<60, 21600>|null $MaximumEventAgeInSeconds
+ * @property Shapes\DestinationConfig|null $DestinationConfig
  */
 class PutFunctionEventInvokeConfigRequest extends Request
 {
     /**
      * @param array{
      *     FunctionName: string,
-     *     Qualifier?: string,
-     *     MaximumRetryAttempts?: int<0, 2>,
-     *     MaximumEventAgeInSeconds?: int<60, 21600>,
-     *     DestinationConfig?: Shapes\DestinationConfig
+     *     Qualifier?: string|null,
+     *     MaximumRetryAttempts?: int<0, 2>|null,
+     *     MaximumEventAgeInSeconds?: int<60, 21600>|null,
+     *     DestinationConfig?: Shapes\DestinationConfig|null
      * } $args
      */
     public function __construct(array $args)

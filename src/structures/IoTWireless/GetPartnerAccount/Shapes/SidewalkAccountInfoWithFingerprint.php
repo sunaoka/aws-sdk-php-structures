@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetPartnerAccount\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AmazonId
- * @property string $Fingerprint
- * @property string $Arn
+ * @property string|null $AmazonId
+ * @property string|null $Fingerprint
+ * @property string|null $Arn
  */
 class SidewalkAccountInfoWithFingerprint extends Shape
 {
     /**
      * @param array{
-     *     AmazonId?: string,
-     *     Fingerprint?: string,
-     *     Arn?: string
+     *     AmazonId?: string|null,
+     *     Fingerprint?: string|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

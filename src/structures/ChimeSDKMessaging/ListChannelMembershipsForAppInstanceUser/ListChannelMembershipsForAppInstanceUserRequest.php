@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ListChannelMembershipsForAppI
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AppInstanceUserArn
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property string|null $AppInstanceUserArn
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  * @property string $ChimeBearer
  */
 class ListChannelMembershipsForAppInstanceUserRequest extends Request
 {
     /**
      * @param array{
-     *     AppInstanceUserArn?: string,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string,
+     *     AppInstanceUserArn?: string|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null,
      *     ChimeBearer: string
      * } $args
      */

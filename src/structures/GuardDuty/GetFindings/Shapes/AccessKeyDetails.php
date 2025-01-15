@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccessKeyId
- * @property string $PrincipalId
- * @property string $UserName
- * @property string $UserType
+ * @property string|null $AccessKeyId
+ * @property string|null $PrincipalId
+ * @property string|null $UserName
+ * @property string|null $UserType
  */
 class AccessKeyDetails extends Shape
 {
     /**
      * @param array{
-     *     AccessKeyId?: string,
-     *     PrincipalId?: string,
-     *     UserName?: string,
-     *     UserType?: string
+     *     AccessKeyId?: string|null,
+     *     PrincipalId?: string|null,
+     *     UserName?: string|null,
+     *     UserType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

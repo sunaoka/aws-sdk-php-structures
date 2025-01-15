@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetGatewayResponses;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $position
- * @property list<Shapes\GatewayResponse> $items
+ * @property string|null $position
+ * @property list<Shapes\GatewayResponse>|null $items
  */
 class GetGatewayResponsesResponse extends Response
 {

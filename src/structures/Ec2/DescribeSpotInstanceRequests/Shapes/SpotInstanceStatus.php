@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSpotInstanceRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Code
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $UpdateTime
+ * @property string|null $Code
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $UpdateTime
  */
 class SpotInstanceStatus extends Shape
 {
     /**
      * @param array{
-     *     Code?: string,
-     *     Message?: string,
-     *     UpdateTime?: \Aws\Api\DateTimeResult
+     *     Code?: string|null,
+     *     Message?: string|null,
+     *     UpdateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

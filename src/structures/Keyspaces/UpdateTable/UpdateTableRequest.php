@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $keyspaceName
  * @property string $tableName
- * @property list<Shapes\ColumnDefinition> $addColumns
- * @property Shapes\CapacitySpecification $capacitySpecification
- * @property Shapes\EncryptionSpecification $encryptionSpecification
- * @property Shapes\PointInTimeRecovery $pointInTimeRecovery
- * @property Shapes\TimeToLive $ttl
- * @property int<0, 630720000> $defaultTimeToLive
- * @property Shapes\ClientSideTimestamps $clientSideTimestamps
- * @property Shapes\AutoScalingSpecification $autoScalingSpecification
- * @property list<Shapes\ReplicaSpecification> $replicaSpecifications
+ * @property list<Shapes\ColumnDefinition>|null $addColumns
+ * @property Shapes\CapacitySpecification|null $capacitySpecification
+ * @property Shapes\EncryptionSpecification|null $encryptionSpecification
+ * @property Shapes\PointInTimeRecovery|null $pointInTimeRecovery
+ * @property Shapes\TimeToLive|null $ttl
+ * @property int<0, 630720000>|null $defaultTimeToLive
+ * @property Shapes\ClientSideTimestamps|null $clientSideTimestamps
+ * @property Shapes\AutoScalingSpecification|null $autoScalingSpecification
+ * @property list<Shapes\ReplicaSpecification>|null $replicaSpecifications
  */
 class UpdateTableRequest extends Request
 {
@@ -23,15 +23,15 @@ class UpdateTableRequest extends Request
      * @param array{
      *     keyspaceName: string,
      *     tableName: string,
-     *     addColumns?: list<Shapes\ColumnDefinition>,
-     *     capacitySpecification?: Shapes\CapacitySpecification,
-     *     encryptionSpecification?: Shapes\EncryptionSpecification,
-     *     pointInTimeRecovery?: Shapes\PointInTimeRecovery,
-     *     ttl?: Shapes\TimeToLive,
-     *     defaultTimeToLive?: int<0, 630720000>,
-     *     clientSideTimestamps?: Shapes\ClientSideTimestamps,
-     *     autoScalingSpecification?: Shapes\AutoScalingSpecification,
-     *     replicaSpecifications?: list<Shapes\ReplicaSpecification>
+     *     addColumns?: list<Shapes\ColumnDefinition>|null,
+     *     capacitySpecification?: Shapes\CapacitySpecification|null,
+     *     encryptionSpecification?: Shapes\EncryptionSpecification|null,
+     *     pointInTimeRecovery?: Shapes\PointInTimeRecovery|null,
+     *     ttl?: Shapes\TimeToLive|null,
+     *     defaultTimeToLive?: int<0, 630720000>|null,
+     *     clientSideTimestamps?: Shapes\ClientSideTimestamps|null,
+     *     autoScalingSpecification?: Shapes\AutoScalingSpecification|null,
+     *     replicaSpecifications?: list<Shapes\ReplicaSpecification>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateRouteTable;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RouteTable $RouteTable
- * @property string $ClientToken
+ * @property Shapes\RouteTable|null $RouteTable
+ * @property string|null $ClientToken
  */
 class CreateRouteTableResponse extends Response
 {

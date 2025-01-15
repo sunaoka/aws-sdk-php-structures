@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AIGuardrailSummary> $aiGuardrailSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAIGuardrailsResponse extends Response
 {

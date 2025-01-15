@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListInputDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property 'DISCONNECTED'|'CONNECTED' $ConnectionState
- * @property 'SYNCED'|'SYNCING' $DeviceSettingsSyncState
- * @property 'UP_TO_DATE'|'NOT_UP_TO_DATE'|'UPDATING' $DeviceUpdateStatus
- * @property InputDeviceHdSettings $HdDeviceSettings
- * @property string $Id
- * @property string $MacAddress
- * @property string $Name
- * @property InputDeviceNetworkSettings $NetworkSettings
- * @property string $SerialNumber
- * @property 'HD'|'UHD' $Type
- * @property InputDeviceUhdSettings $UhdDeviceSettings
- * @property array<string, string> $Tags
- * @property string $AvailabilityZone
- * @property list<string> $MedialiveInputArns
- * @property 'NONE'|'MEDIALIVE_INPUT'|'MEDIACONNECT_FLOW' $OutputType
+ * @property string|null $Arn
+ * @property 'DISCONNECTED'|'CONNECTED'|null $ConnectionState
+ * @property 'SYNCED'|'SYNCING'|null $DeviceSettingsSyncState
+ * @property 'UP_TO_DATE'|'NOT_UP_TO_DATE'|'UPDATING'|null $DeviceUpdateStatus
+ * @property InputDeviceHdSettings|null $HdDeviceSettings
+ * @property string|null $Id
+ * @property string|null $MacAddress
+ * @property string|null $Name
+ * @property InputDeviceNetworkSettings|null $NetworkSettings
+ * @property string|null $SerialNumber
+ * @property 'HD'|'UHD'|null $Type
+ * @property InputDeviceUhdSettings|null $UhdDeviceSettings
+ * @property array<string, string>|null $Tags
+ * @property string|null $AvailabilityZone
+ * @property list<string>|null $MedialiveInputArns
+ * @property 'NONE'|'MEDIALIVE_INPUT'|'MEDIACONNECT_FLOW'|null $OutputType
  */
 class InputDeviceSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     ConnectionState?: 'DISCONNECTED'|'CONNECTED',
-     *     DeviceSettingsSyncState?: 'SYNCED'|'SYNCING',
-     *     DeviceUpdateStatus?: 'UP_TO_DATE'|'NOT_UP_TO_DATE'|'UPDATING',
-     *     HdDeviceSettings?: InputDeviceHdSettings,
-     *     Id?: string,
-     *     MacAddress?: string,
-     *     Name?: string,
-     *     NetworkSettings?: InputDeviceNetworkSettings,
-     *     SerialNumber?: string,
-     *     Type?: 'HD'|'UHD',
-     *     UhdDeviceSettings?: InputDeviceUhdSettings,
-     *     Tags?: array<string, string>,
-     *     AvailabilityZone?: string,
-     *     MedialiveInputArns?: list<string>,
-     *     OutputType?: 'NONE'|'MEDIALIVE_INPUT'|'MEDIACONNECT_FLOW'
+     *     Arn?: string|null,
+     *     ConnectionState?: 'DISCONNECTED'|'CONNECTED'|null,
+     *     DeviceSettingsSyncState?: 'SYNCED'|'SYNCING'|null,
+     *     DeviceUpdateStatus?: 'UP_TO_DATE'|'NOT_UP_TO_DATE'|'UPDATING'|null,
+     *     HdDeviceSettings?: InputDeviceHdSettings|null,
+     *     Id?: string|null,
+     *     MacAddress?: string|null,
+     *     Name?: string|null,
+     *     NetworkSettings?: InputDeviceNetworkSettings|null,
+     *     SerialNumber?: string|null,
+     *     Type?: 'HD'|'UHD'|null,
+     *     UhdDeviceSettings?: InputDeviceUhdSettings|null,
+     *     Tags?: array<string, string>|null,
+     *     AvailabilityZone?: string|null,
+     *     MedialiveInputArns?: list<string>|null,
+     *     OutputType?: 'NONE'|'MEDIALIVE_INPUT'|'MEDIACONNECT_FLOW'|null
      * } $args
      */
     public function __construct(array $args = [])

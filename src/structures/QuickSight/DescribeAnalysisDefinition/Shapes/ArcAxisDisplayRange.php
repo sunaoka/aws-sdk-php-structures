@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Min
- * @property double $Max
+ * @property double|null $Min
+ * @property double|null $Max
  */
 class ArcAxisDisplayRange extends Shape
 {
     /**
      * @param array{
-     *     Min?: double,
-     *     Max?: double
+     *     Min?: double|null,
+     *     Max?: double|null
      * } $args
      */
     public function __construct(array $args = [])

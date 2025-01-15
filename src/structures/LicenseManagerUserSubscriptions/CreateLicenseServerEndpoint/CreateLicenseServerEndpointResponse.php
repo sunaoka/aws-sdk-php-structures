@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\CreateLicenseSe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $IdentityProviderArn
- * @property string $LicenseServerEndpointArn
+ * @property string|null $IdentityProviderArn
+ * @property string|null $LicenseServerEndpointArn
  */
 class CreateLicenseServerEndpointResponse extends Response
 {

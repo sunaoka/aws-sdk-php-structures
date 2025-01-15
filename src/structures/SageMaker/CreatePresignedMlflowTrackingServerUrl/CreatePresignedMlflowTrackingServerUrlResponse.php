@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreatePresignedMlflowTrackingServerUr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AuthorizedUrl
+ * @property string|null $AuthorizedUrl
  */
 class CreatePresignedMlflowTrackingServerUrlResponse extends Response
 {

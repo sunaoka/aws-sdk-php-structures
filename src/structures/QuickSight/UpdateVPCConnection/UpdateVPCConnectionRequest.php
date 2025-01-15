@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property list<string> $SubnetIds
  * @property list<string> $SecurityGroupIds
- * @property list<string> $DnsResolvers
+ * @property list<string>|null $DnsResolvers
  * @property string $RoleArn
  */
 class UpdateVPCConnectionRequest extends Request
@@ -22,7 +22,7 @@ class UpdateVPCConnectionRequest extends Request
      *     Name: string,
      *     SubnetIds: list<string>,
      *     SecurityGroupIds: list<string>,
-     *     DnsResolvers?: list<string>,
+     *     DnsResolvers?: list<string>|null,
      *     RoleArn: string
      * } $args
      */

@@ -5,73 +5,73 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AcceptAnyDate
- * @property string $AfterConnectScript
- * @property string $BucketFolder
- * @property string $BucketName
- * @property bool $CaseSensitiveNames
- * @property bool $CompUpdate
- * @property int $ConnectionTimeout
- * @property string $DatabaseName
- * @property string $DateFormat
- * @property bool $EmptyAsNull
- * @property 'sse-s3'|'sse-kms' $EncryptionMode
- * @property bool $ExplicitIds
- * @property int $FileTransferUploadStreams
- * @property int $LoadTimeout
- * @property int $MaxFileSize
- * @property string $Password
- * @property int $Port
- * @property bool $RemoveQuotes
- * @property string $ReplaceInvalidChars
- * @property string $ReplaceChars
- * @property string $ServerName
- * @property string $ServiceAccessRoleArn
- * @property string $ServerSideEncryptionKmsKeyId
- * @property string $TimeFormat
- * @property bool $TrimBlanks
- * @property bool $TruncateColumns
- * @property string $Username
- * @property int $WriteBufferSize
- * @property string $SecretsManagerAccessRoleArn
- * @property string $SecretsManagerSecretId
- * @property bool $MapBooleanAsBoolean
+ * @property bool|null $AcceptAnyDate
+ * @property string|null $AfterConnectScript
+ * @property string|null $BucketFolder
+ * @property string|null $BucketName
+ * @property bool|null $CaseSensitiveNames
+ * @property bool|null $CompUpdate
+ * @property int|null $ConnectionTimeout
+ * @property string|null $DatabaseName
+ * @property string|null $DateFormat
+ * @property bool|null $EmptyAsNull
+ * @property 'sse-s3'|'sse-kms'|null $EncryptionMode
+ * @property bool|null $ExplicitIds
+ * @property int|null $FileTransferUploadStreams
+ * @property int|null $LoadTimeout
+ * @property int|null $MaxFileSize
+ * @property string|null $Password
+ * @property int|null $Port
+ * @property bool|null $RemoveQuotes
+ * @property string|null $ReplaceInvalidChars
+ * @property string|null $ReplaceChars
+ * @property string|null $ServerName
+ * @property string|null $ServiceAccessRoleArn
+ * @property string|null $ServerSideEncryptionKmsKeyId
+ * @property string|null $TimeFormat
+ * @property bool|null $TrimBlanks
+ * @property bool|null $TruncateColumns
+ * @property string|null $Username
+ * @property int|null $WriteBufferSize
+ * @property string|null $SecretsManagerAccessRoleArn
+ * @property string|null $SecretsManagerSecretId
+ * @property bool|null $MapBooleanAsBoolean
  */
 class RedshiftSettings extends Shape
 {
     /**
      * @param array{
-     *     AcceptAnyDate?: bool,
-     *     AfterConnectScript?: string,
-     *     BucketFolder?: string,
-     *     BucketName?: string,
-     *     CaseSensitiveNames?: bool,
-     *     CompUpdate?: bool,
-     *     ConnectionTimeout?: int,
-     *     DatabaseName?: string,
-     *     DateFormat?: string,
-     *     EmptyAsNull?: bool,
-     *     EncryptionMode?: 'sse-s3'|'sse-kms',
-     *     ExplicitIds?: bool,
-     *     FileTransferUploadStreams?: int,
-     *     LoadTimeout?: int,
-     *     MaxFileSize?: int,
-     *     Password?: string,
-     *     Port?: int,
-     *     RemoveQuotes?: bool,
-     *     ReplaceInvalidChars?: string,
-     *     ReplaceChars?: string,
-     *     ServerName?: string,
-     *     ServiceAccessRoleArn?: string,
-     *     ServerSideEncryptionKmsKeyId?: string,
-     *     TimeFormat?: string,
-     *     TrimBlanks?: bool,
-     *     TruncateColumns?: bool,
-     *     Username?: string,
-     *     WriteBufferSize?: int,
-     *     SecretsManagerAccessRoleArn?: string,
-     *     SecretsManagerSecretId?: string,
-     *     MapBooleanAsBoolean?: bool
+     *     AcceptAnyDate?: bool|null,
+     *     AfterConnectScript?: string|null,
+     *     BucketFolder?: string|null,
+     *     BucketName?: string|null,
+     *     CaseSensitiveNames?: bool|null,
+     *     CompUpdate?: bool|null,
+     *     ConnectionTimeout?: int|null,
+     *     DatabaseName?: string|null,
+     *     DateFormat?: string|null,
+     *     EmptyAsNull?: bool|null,
+     *     EncryptionMode?: 'sse-s3'|'sse-kms'|null,
+     *     ExplicitIds?: bool|null,
+     *     FileTransferUploadStreams?: int|null,
+     *     LoadTimeout?: int|null,
+     *     MaxFileSize?: int|null,
+     *     Password?: string|null,
+     *     Port?: int|null,
+     *     RemoveQuotes?: bool|null,
+     *     ReplaceInvalidChars?: string|null,
+     *     ReplaceChars?: string|null,
+     *     ServerName?: string|null,
+     *     ServiceAccessRoleArn?: string|null,
+     *     ServerSideEncryptionKmsKeyId?: string|null,
+     *     TimeFormat?: string|null,
+     *     TrimBlanks?: bool|null,
+     *     TruncateColumns?: bool|null,
+     *     Username?: string|null,
+     *     WriteBufferSize?: int|null,
+     *     SecretsManagerAccessRoleArn?: string|null,
+     *     SecretsManagerSecretId?: string|null,
+     *     MapBooleanAsBoolean?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

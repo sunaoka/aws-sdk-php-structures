@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\ApplySecurityGroupsToLoadB
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $SecurityGroups
+ * @property list<string>|null $SecurityGroups
  */
 class ApplySecurityGroupsToLoadBalancerResponse extends Response
 {

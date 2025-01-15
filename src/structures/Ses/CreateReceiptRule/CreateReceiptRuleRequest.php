@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RuleSetName
- * @property string $After
+ * @property string|null $After
  * @property Shapes\ReceiptRule $Rule
  */
 class CreateReceiptRuleRequest extends Request
@@ -14,7 +14,7 @@ class CreateReceiptRuleRequest extends Request
     /**
      * @param array{
      *     RuleSetName: string,
-     *     After?: string,
+     *     After?: string|null,
      *     Rule: Shapes\ReceiptRule
      * } $args
      */

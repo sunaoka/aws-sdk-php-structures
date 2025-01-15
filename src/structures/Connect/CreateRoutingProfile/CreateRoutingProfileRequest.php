@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Description
  * @property string $DefaultOutboundQueueId
- * @property list<Shapes\RoutingProfileQueueConfig> $QueueConfigs
+ * @property list<Shapes\RoutingProfileQueueConfig>|null $QueueConfigs
  * @property list<Shapes\MediaConcurrency> $MediaConcurrencies
- * @property array<string, string> $Tags
- * @property 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND' $AgentAvailabilityTimer
+ * @property array<string, string>|null $Tags
+ * @property 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND'|null $AgentAvailabilityTimer
  */
 class CreateRoutingProfileRequest extends Request
 {
@@ -22,10 +22,10 @@ class CreateRoutingProfileRequest extends Request
      *     Name: string,
      *     Description: string,
      *     DefaultOutboundQueueId: string,
-     *     QueueConfigs?: list<Shapes\RoutingProfileQueueConfig>,
+     *     QueueConfigs?: list<Shapes\RoutingProfileQueueConfig>|null,
      *     MediaConcurrencies: list<Shapes\MediaConcurrency>,
-     *     Tags?: array<string, string>,
-     *     AgentAvailabilityTimer?: 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND'
+     *     Tags?: array<string, string>|null,
+     *     AgentAvailabilityTimer?: 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND'|null
      * } $args
      */
     public function __construct(array $args)

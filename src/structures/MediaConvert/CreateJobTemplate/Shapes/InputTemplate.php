@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $AdvancedInputFilter
- * @property AdvancedInputFilterSettings $AdvancedInputFilterSettings
- * @property array<string, AudioSelectorGroup> $AudioSelectorGroups
- * @property array<string, AudioSelector> $AudioSelectors
- * @property array<string, CaptionSelector> $CaptionSelectors
- * @property Rectangle $Crop
- * @property 'ENABLED'|'DISABLED' $DeblockFilter
- * @property 'ENABLED'|'DISABLED' $DenoiseFilter
- * @property string $DolbyVisionMetadataXml
- * @property 'AUTO'|'DISABLE'|'FORCE' $FilterEnable
- * @property int<0, 5> $FilterStrength
- * @property ImageInserter $ImageInserter
- * @property list<InputClipping> $InputClippings
- * @property 'AUTO'|'PSF' $InputScanType
- * @property Rectangle $Position
- * @property int<1, 2147483647> $ProgramNumber
- * @property 'IGNORE_PSI'|'USE_PSI' $PsiControl
- * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART' $TimecodeSource
- * @property string $TimecodeStart
- * @property list<VideoOverlay> $VideoOverlays
- * @property VideoSelector $VideoSelector
+ * @property 'ENABLED'|'DISABLED'|null $AdvancedInputFilter
+ * @property AdvancedInputFilterSettings|null $AdvancedInputFilterSettings
+ * @property array<string, AudioSelectorGroup>|null $AudioSelectorGroups
+ * @property array<string, AudioSelector>|null $AudioSelectors
+ * @property array<string, CaptionSelector>|null $CaptionSelectors
+ * @property Rectangle|null $Crop
+ * @property 'ENABLED'|'DISABLED'|null $DeblockFilter
+ * @property 'ENABLED'|'DISABLED'|null $DenoiseFilter
+ * @property string|null $DolbyVisionMetadataXml
+ * @property 'AUTO'|'DISABLE'|'FORCE'|null $FilterEnable
+ * @property int<0, 5>|null $FilterStrength
+ * @property ImageInserter|null $ImageInserter
+ * @property list<InputClipping>|null $InputClippings
+ * @property 'AUTO'|'PSF'|null $InputScanType
+ * @property Rectangle|null $Position
+ * @property int<1, 2147483647>|null $ProgramNumber
+ * @property 'IGNORE_PSI'|'USE_PSI'|null $PsiControl
+ * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null $TimecodeSource
+ * @property string|null $TimecodeStart
+ * @property list<VideoOverlay>|null $VideoOverlays
+ * @property VideoSelector|null $VideoSelector
  */
 class InputTemplate extends Shape
 {
     /**
      * @param array{
-     *     AdvancedInputFilter?: 'ENABLED'|'DISABLED',
-     *     AdvancedInputFilterSettings?: AdvancedInputFilterSettings,
-     *     AudioSelectorGroups?: array<string, AudioSelectorGroup>,
-     *     AudioSelectors?: array<string, AudioSelector>,
-     *     CaptionSelectors?: array<string, CaptionSelector>,
-     *     Crop?: Rectangle,
-     *     DeblockFilter?: 'ENABLED'|'DISABLED',
-     *     DenoiseFilter?: 'ENABLED'|'DISABLED',
-     *     DolbyVisionMetadataXml?: string,
-     *     FilterEnable?: 'AUTO'|'DISABLE'|'FORCE',
-     *     FilterStrength?: int<0, 5>,
-     *     ImageInserter?: ImageInserter,
-     *     InputClippings?: list<InputClipping>,
-     *     InputScanType?: 'AUTO'|'PSF',
-     *     Position?: Rectangle,
-     *     ProgramNumber?: int<1, 2147483647>,
-     *     PsiControl?: 'IGNORE_PSI'|'USE_PSI',
-     *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART',
-     *     TimecodeStart?: string,
-     *     VideoOverlays?: list<VideoOverlay>,
-     *     VideoSelector?: VideoSelector
+     *     AdvancedInputFilter?: 'ENABLED'|'DISABLED'|null,
+     *     AdvancedInputFilterSettings?: AdvancedInputFilterSettings|null,
+     *     AudioSelectorGroups?: array<string, AudioSelectorGroup>|null,
+     *     AudioSelectors?: array<string, AudioSelector>|null,
+     *     CaptionSelectors?: array<string, CaptionSelector>|null,
+     *     Crop?: Rectangle|null,
+     *     DeblockFilter?: 'ENABLED'|'DISABLED'|null,
+     *     DenoiseFilter?: 'ENABLED'|'DISABLED'|null,
+     *     DolbyVisionMetadataXml?: string|null,
+     *     FilterEnable?: 'AUTO'|'DISABLE'|'FORCE'|null,
+     *     FilterStrength?: int<0, 5>|null,
+     *     ImageInserter?: ImageInserter|null,
+     *     InputClippings?: list<InputClipping>|null,
+     *     InputScanType?: 'AUTO'|'PSF'|null,
+     *     Position?: Rectangle|null,
+     *     ProgramNumber?: int<1, 2147483647>|null,
+     *     PsiControl?: 'IGNORE_PSI'|'USE_PSI'|null,
+     *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null,
+     *     TimecodeStart?: string|null,
+     *     VideoOverlays?: list<VideoOverlay>|null,
+     *     VideoSelector?: VideoSelector|null
      * } $args
      */
     public function __construct(array $args = [])

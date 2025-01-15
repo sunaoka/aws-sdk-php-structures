@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetDataProtectionSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DataProtectionSettings $dataProtectionSettings
+ * @property Shapes\DataProtectionSettings|null $dataProtectionSettings
  */
 class GetDataProtectionSettingsResponse extends Response
 {

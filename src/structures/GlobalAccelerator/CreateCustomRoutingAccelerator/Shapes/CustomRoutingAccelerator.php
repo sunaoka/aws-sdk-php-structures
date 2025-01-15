@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\CreateCustomRoutingAccelerato
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AcceleratorArn
- * @property string $Name
- * @property 'IPV4'|'DUAL_STACK' $IpAddressType
- * @property bool $Enabled
- * @property list<IpSet> $IpSets
- * @property string $DnsName
- * @property 'DEPLOYED'|'IN_PROGRESS' $Status
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $AcceleratorArn
+ * @property string|null $Name
+ * @property 'IPV4'|'DUAL_STACK'|null $IpAddressType
+ * @property bool|null $Enabled
+ * @property list<IpSet>|null $IpSets
+ * @property string|null $DnsName
+ * @property 'DEPLOYED'|'IN_PROGRESS'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class CustomRoutingAccelerator extends Shape
 {
     /**
      * @param array{
-     *     AcceleratorArn?: string,
-     *     Name?: string,
-     *     IpAddressType?: 'IPV4'|'DUAL_STACK',
-     *     Enabled?: bool,
-     *     IpSets?: list<IpSet>,
-     *     DnsName?: string,
-     *     Status?: 'DEPLOYED'|'IN_PROGRESS',
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     AcceleratorArn?: string|null,
+     *     Name?: string|null,
+     *     IpAddressType?: 'IPV4'|'DUAL_STACK'|null,
+     *     Enabled?: bool|null,
+     *     IpSets?: list<IpSet>|null,
+     *     DnsName?: string|null,
+     *     Status?: 'DEPLOYED'|'IN_PROGRESS'|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

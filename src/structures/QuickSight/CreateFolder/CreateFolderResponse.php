@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateFolder;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Status
- * @property string $Arn
- * @property string $FolderId
- * @property string $RequestId
+ * @property int|null $Status
+ * @property string|null $Arn
+ * @property string|null $FolderId
+ * @property string|null $RequestId
  */
 class CreateFolderResponse extends Response
 {

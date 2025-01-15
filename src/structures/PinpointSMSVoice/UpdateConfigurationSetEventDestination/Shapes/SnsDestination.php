@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoice\UpdateConfigurationSetEventDes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TopicArn
+ * @property string|null $TopicArn
  */
 class SnsDestination extends Shape
 {
     /**
-     * @param array{TopicArn?: string} $args
+     * @param array{TopicArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

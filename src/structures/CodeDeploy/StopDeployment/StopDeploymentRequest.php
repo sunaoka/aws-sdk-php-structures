@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $deploymentId
- * @property bool $autoRollbackEnabled
+ * @property bool|null $autoRollbackEnabled
  */
 class StopDeploymentRequest extends Request
 {
     /**
      * @param array{
      *     deploymentId: string,
-     *     autoRollbackEnabled?: bool
+     *     autoRollbackEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

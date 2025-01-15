@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Kafka\ListClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $CertificateAuthorityArnList
- * @property bool $Enabled
+ * @property list<string>|null $CertificateAuthorityArnList
+ * @property bool|null $Enabled
  */
 class Tls extends Shape
 {
     /**
      * @param array{
-     *     CertificateAuthorityArnList?: list<string>,
-     *     Enabled?: bool
+     *     CertificateAuthorityArnList?: list<string>|null,
+     *     Enabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

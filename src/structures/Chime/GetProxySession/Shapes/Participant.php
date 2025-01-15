@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chime\GetProxySession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PhoneNumber
- * @property string $ProxyPhoneNumber
+ * @property string|null $PhoneNumber
+ * @property string|null $ProxyPhoneNumber
  */
 class Participant extends Shape
 {
     /**
      * @param array{
-     *     PhoneNumber?: string,
-     *     ProxyPhoneNumber?: string
+     *     PhoneNumber?: string|null,
+     *     ProxyPhoneNumber?: string|null
      * } $args
      */
     public function __construct(array $args = [])

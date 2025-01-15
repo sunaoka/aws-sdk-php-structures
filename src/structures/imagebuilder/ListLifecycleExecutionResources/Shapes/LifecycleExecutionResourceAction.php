@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListLifecycleExecutionResources\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AVAILABLE'|'DELETE'|'DEPRECATE'|'DISABLE' $name
- * @property string $reason
+ * @property 'AVAILABLE'|'DELETE'|'DEPRECATE'|'DISABLE'|null $name
+ * @property string|null $reason
  */
 class LifecycleExecutionResourceAction extends Shape
 {
     /**
      * @param array{
-     *     name?: 'AVAILABLE'|'DELETE'|'DEPRECATE'|'DISABLE',
-     *     reason?: string
+     *     name?: 'AVAILABLE'|'DELETE'|'DEPRECATE'|'DISABLE'|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

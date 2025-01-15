@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Connect\ListContactReferences\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UrlReference $Url
- * @property AttachmentReference $Attachment
- * @property EmailMessageReference $EmailMessage
- * @property StringReference $String
- * @property NumberReference $Number
- * @property DateReference $Date
- * @property EmailReference $Email
+ * @property UrlReference|null $Url
+ * @property AttachmentReference|null $Attachment
+ * @property EmailMessageReference|null $EmailMessage
+ * @property StringReference|null $String
+ * @property NumberReference|null $Number
+ * @property DateReference|null $Date
+ * @property EmailReference|null $Email
  */
 class ReferenceSummary extends Shape
 {
     /**
      * @param array{
-     *     Url?: UrlReference,
-     *     Attachment?: AttachmentReference,
-     *     EmailMessage?: EmailMessageReference,
-     *     String?: StringReference,
-     *     Number?: NumberReference,
-     *     Date?: DateReference,
-     *     Email?: EmailReference
+     *     Url?: UrlReference|null,
+     *     Attachment?: AttachmentReference|null,
+     *     EmailMessage?: EmailMessageReference|null,
+     *     String?: StringReference|null,
+     *     Number?: NumberReference|null,
+     *     Date?: DateReference|null,
+     *     Email?: EmailReference|null
      * } $args
      */
     public function __construct(array $args = [])

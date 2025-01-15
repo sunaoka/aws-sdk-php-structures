@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateAssetType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $required
+ * @property bool|null $required
  * @property string $typeIdentifier
  * @property string $typeRevision
  */
@@ -13,7 +13,7 @@ class FormEntryInput extends Shape
 {
     /**
      * @param array{
-     *     required?: bool,
+     *     required?: bool|null,
      *     typeIdentifier: string,
      *     typeRevision: string
      * } $args

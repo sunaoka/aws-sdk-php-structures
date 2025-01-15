@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'NarrowBand'|'WideBand' $BaseModelName
  * @property string $ModelName
  * @property Shapes\InputDataConfig $InputDataConfig
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateLanguageModelRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateLanguageModelRequest extends Request
      *     BaseModelName: 'NarrowBand'|'WideBand',
      *     ModelName: string,
      *     InputDataConfig: Shapes\InputDataConfig,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

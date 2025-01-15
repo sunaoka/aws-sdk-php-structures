@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $sequenceStoreId
  * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELLING'|'CANCELLED'|'FAILED'|'COMPLETED'|'COMPLETED_WITH_FAILURES' $status
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $completionTime
+ * @property \Aws\Api\DateTimeResult|null $completionTime
  */
 class ActivateReadSetJobItem extends Shape
 {
@@ -19,7 +19,7 @@ class ActivateReadSetJobItem extends Shape
      *     sequenceStoreId: string,
      *     status: 'SUBMITTED'|'IN_PROGRESS'|'CANCELLING'|'CANCELLED'|'FAILED'|'COMPLETED'|'COMPLETED_WITH_FAILURES',
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     completionTime?: \Aws\Api\DateTimeResult
+     *     completionTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

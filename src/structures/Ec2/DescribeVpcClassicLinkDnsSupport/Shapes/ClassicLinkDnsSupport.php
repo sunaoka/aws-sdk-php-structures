@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcClassicLinkDnsSupport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ClassicLinkDnsSupported
- * @property string $VpcId
+ * @property bool|null $ClassicLinkDnsSupported
+ * @property string|null $VpcId
  */
 class ClassicLinkDnsSupport extends Shape
 {
     /**
      * @param array{
-     *     ClassicLinkDnsSupported?: bool,
-     *     VpcId?: string
+     *     ClassicLinkDnsSupported?: bool|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

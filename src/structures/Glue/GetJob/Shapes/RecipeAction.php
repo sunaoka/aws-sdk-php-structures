@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Operation
- * @property array<string, string> $Parameters
+ * @property array<string, string>|null $Parameters
  */
 class RecipeAction extends Shape
 {
     /**
      * @param array{
      *     Operation: string,
-     *     Parameters?: array<string, string>
+     *     Parameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

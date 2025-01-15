@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'CANCELLING'|'CANCELLED' $deploymentStatus
- * @property string $deploymentStatusMessage
+ * @property string|null $deploymentStatusMessage
  * @property string $environmentName
- * @property string $lastAttemptedDeploymentId
+ * @property string|null $lastAttemptedDeploymentId
  * @property \Aws\Api\DateTimeResult $lastDeploymentAttemptedAt
  * @property \Aws\Api\DateTimeResult $lastDeploymentSucceededAt
- * @property string $lastSucceededDeploymentId
+ * @property string|null $lastSucceededDeploymentId
  * @property string $name
  * @property string $serviceName
  * @property string $templateMajorVersion
@@ -27,12 +27,12 @@ class ServiceInstanceSummary extends Shape
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     deploymentStatus: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'CANCELLING'|'CANCELLED',
-     *     deploymentStatusMessage?: string,
+     *     deploymentStatusMessage?: string|null,
      *     environmentName: string,
-     *     lastAttemptedDeploymentId?: string,
+     *     lastAttemptedDeploymentId?: string|null,
      *     lastDeploymentAttemptedAt: \Aws\Api\DateTimeResult,
      *     lastDeploymentSucceededAt: \Aws\Api\DateTimeResult,
-     *     lastSucceededDeploymentId?: string,
+     *     lastSucceededDeploymentId?: string|null,
      *     name: string,
      *     serviceName: string,
      *     templateMajorVersion: string,

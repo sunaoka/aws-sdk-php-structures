@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $WrappingKeyCertificate
  * @property string $ExportToken
  * @property 'X9_TR34_2012' $KeyBlockFormat
- * @property string $RandomNonce
- * @property KeyBlockHeaders $KeyBlockHeaders
+ * @property string|null $RandomNonce
+ * @property KeyBlockHeaders|null $KeyBlockHeaders
  */
 class ExportTr34KeyBlock extends Shape
 {
@@ -20,8 +20,8 @@ class ExportTr34KeyBlock extends Shape
      *     WrappingKeyCertificate: string,
      *     ExportToken: string,
      *     KeyBlockFormat: 'X9_TR34_2012',
-     *     RandomNonce?: string,
-     *     KeyBlockHeaders?: KeyBlockHeaders
+     *     RandomNonce?: string|null,
+     *     KeyBlockHeaders?: KeyBlockHeaders|null
      * } $args
      */
     public function __construct(array $args)

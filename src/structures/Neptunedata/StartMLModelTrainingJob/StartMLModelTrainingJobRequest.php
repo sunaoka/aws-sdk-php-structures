@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\Neptunedata\StartMLModelTrainingJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
- * @property string $previousModelTrainingJobId
+ * @property string|null $id
+ * @property string|null $previousModelTrainingJobId
  * @property string $dataProcessingJobId
  * @property string $trainModelS3Location
- * @property string $sagemakerIamRoleArn
- * @property string $neptuneIamRoleArn
- * @property string $baseProcessingInstanceType
- * @property string $trainingInstanceType
- * @property int $trainingInstanceVolumeSizeInGB
- * @property int $trainingTimeOutInSeconds
- * @property int $maxHPONumberOfTrainingJobs
- * @property int $maxHPOParallelTrainingJobs
- * @property list<string> $subnets
- * @property list<string> $securityGroupIds
- * @property string $volumeEncryptionKMSKey
- * @property string $s3OutputEncryptionKMSKey
- * @property bool $enableManagedSpotTraining
- * @property Shapes\CustomModelTrainingParameters $customModelTrainingParameters
+ * @property string|null $sagemakerIamRoleArn
+ * @property string|null $neptuneIamRoleArn
+ * @property string|null $baseProcessingInstanceType
+ * @property string|null $trainingInstanceType
+ * @property int|null $trainingInstanceVolumeSizeInGB
+ * @property int|null $trainingTimeOutInSeconds
+ * @property int|null $maxHPONumberOfTrainingJobs
+ * @property int|null $maxHPOParallelTrainingJobs
+ * @property list<string>|null $subnets
+ * @property list<string>|null $securityGroupIds
+ * @property string|null $volumeEncryptionKMSKey
+ * @property string|null $s3OutputEncryptionKMSKey
+ * @property bool|null $enableManagedSpotTraining
+ * @property Shapes\CustomModelTrainingParameters|null $customModelTrainingParameters
  */
 class StartMLModelTrainingJobRequest extends Request
 {
     /**
      * @param array{
-     *     id?: string,
-     *     previousModelTrainingJobId?: string,
+     *     id?: string|null,
+     *     previousModelTrainingJobId?: string|null,
      *     dataProcessingJobId: string,
      *     trainModelS3Location: string,
-     *     sagemakerIamRoleArn?: string,
-     *     neptuneIamRoleArn?: string,
-     *     baseProcessingInstanceType?: string,
-     *     trainingInstanceType?: string,
-     *     trainingInstanceVolumeSizeInGB?: int,
-     *     trainingTimeOutInSeconds?: int,
-     *     maxHPONumberOfTrainingJobs?: int,
-     *     maxHPOParallelTrainingJobs?: int,
-     *     subnets?: list<string>,
-     *     securityGroupIds?: list<string>,
-     *     volumeEncryptionKMSKey?: string,
-     *     s3OutputEncryptionKMSKey?: string,
-     *     enableManagedSpotTraining?: bool,
-     *     customModelTrainingParameters?: Shapes\CustomModelTrainingParameters
+     *     sagemakerIamRoleArn?: string|null,
+     *     neptuneIamRoleArn?: string|null,
+     *     baseProcessingInstanceType?: string|null,
+     *     trainingInstanceType?: string|null,
+     *     trainingInstanceVolumeSizeInGB?: int|null,
+     *     trainingTimeOutInSeconds?: int|null,
+     *     maxHPONumberOfTrainingJobs?: int|null,
+     *     maxHPOParallelTrainingJobs?: int|null,
+     *     subnets?: list<string>|null,
+     *     securityGroupIds?: list<string>|null,
+     *     volumeEncryptionKMSKey?: string|null,
+     *     s3OutputEncryptionKMSKey?: string|null,
+     *     enableManagedSpotTraining?: bool|null,
+     *     customModelTrainingParameters?: Shapes\CustomModelTrainingParameters|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DynamicDefaultValue $DynamicValue
- * @property list<double> $StaticValues
+ * @property DynamicDefaultValue|null $DynamicValue
+ * @property list<double>|null $StaticValues
  */
 class DecimalDefaultValues extends Shape
 {
     /**
      * @param array{
-     *     DynamicValue?: DynamicDefaultValue,
-     *     StaticValues?: list<double>
+     *     DynamicValue?: DynamicDefaultValue|null,
+     *     StaticValues?: list<double>|null
      * } $args
      */
     public function __construct(array $args = [])

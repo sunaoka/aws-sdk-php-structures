@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $queryId
- * @property bool $silent
+ * @property bool|null $silent
  */
 class CancelOpenCypherQueryRequest extends Request
 {
     /**
      * @param array{
      *     queryId: string,
-     *     silent?: bool
+     *     silent?: bool|null
      * } $args
      */
     public function __construct(array $args)

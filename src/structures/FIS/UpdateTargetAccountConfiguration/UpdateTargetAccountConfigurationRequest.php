@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $experimentTemplateId
  * @property string $accountId
- * @property string $roleArn
- * @property string $description
+ * @property string|null $roleArn
+ * @property string|null $description
  */
 class UpdateTargetAccountConfigurationRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateTargetAccountConfigurationRequest extends Request
      * @param array{
      *     experimentTemplateId: string,
      *     accountId: string,
-     *     roleArn?: string,
-     *     description?: string
+     *     roleArn?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

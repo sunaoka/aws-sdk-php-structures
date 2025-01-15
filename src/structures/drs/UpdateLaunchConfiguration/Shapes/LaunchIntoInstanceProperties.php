@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\drs\UpdateLaunchConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $launchIntoEC2InstanceID
+ * @property string|null $launchIntoEC2InstanceID
  */
 class LaunchIntoInstanceProperties extends Shape
 {
     /**
-     * @param array{launchIntoEC2InstanceID?: string} $args
+     * @param array{launchIntoEC2InstanceID?: string|null} $args
      */
     public function __construct(array $args = [])
     {

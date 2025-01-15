@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeBrand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImageSource $Source
- * @property string $GeneratedImageUrl
+ * @property ImageSource|null $Source
+ * @property string|null $GeneratedImageUrl
  */
 class Image extends Shape
 {
     /**
      * @param array{
-     *     Source?: ImageSource,
-     *     GeneratedImageUrl?: string
+     *     Source?: ImageSource|null,
+     *     GeneratedImageUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

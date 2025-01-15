@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ListDevicePositionsResponseEntry> $Entries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListDevicePositionsResponse extends Response
 {

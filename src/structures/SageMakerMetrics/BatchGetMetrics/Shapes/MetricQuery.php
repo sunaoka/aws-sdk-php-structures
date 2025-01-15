@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Min'|'Max'|'Avg'|'Count'|'StdDev'|'Last' $MetricStat
  * @property 'OneMinute'|'FiveMinute'|'OneHour'|'IterationNumber' $Period
  * @property 'IterationNumber'|'Timestamp' $XAxisType
- * @property int $Start
- * @property int $End
+ * @property int|null $Start
+ * @property int|null $End
  */
 class MetricQuery extends Shape
 {
@@ -22,8 +22,8 @@ class MetricQuery extends Shape
      *     MetricStat: 'Min'|'Max'|'Avg'|'Count'|'StdDev'|'Last',
      *     Period: 'OneMinute'|'FiveMinute'|'OneHour'|'IterationNumber',
      *     XAxisType: 'IterationNumber'|'Timestamp',
-     *     Start?: int,
-     *     End?: int
+     *     Start?: int|null,
+     *     End?: int|null
      * } $args
      */
     public function __construct(array $args)

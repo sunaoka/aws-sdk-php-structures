@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\AuthorizeSecurityGroupIngress\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpProtocol
- * @property int $FromPort
- * @property int $ToPort
- * @property list<UserIdGroupPair> $UserIdGroupPairs
- * @property list<IpRange> $IpRanges
- * @property list<Ipv6Range> $Ipv6Ranges
- * @property list<PrefixListId> $PrefixListIds
+ * @property string|null $IpProtocol
+ * @property int|null $FromPort
+ * @property int|null $ToPort
+ * @property list<UserIdGroupPair>|null $UserIdGroupPairs
+ * @property list<IpRange>|null $IpRanges
+ * @property list<Ipv6Range>|null $Ipv6Ranges
+ * @property list<PrefixListId>|null $PrefixListIds
  */
 class IpPermission extends Shape
 {
     /**
      * @param array{
-     *     IpProtocol?: string,
-     *     FromPort?: int,
-     *     ToPort?: int,
-     *     UserIdGroupPairs?: list<UserIdGroupPair>,
-     *     IpRanges?: list<IpRange>,
-     *     Ipv6Ranges?: list<Ipv6Range>,
-     *     PrefixListIds?: list<PrefixListId>
+     *     IpProtocol?: string|null,
+     *     FromPort?: int|null,
+     *     ToPort?: int|null,
+     *     UserIdGroupPairs?: list<UserIdGroupPair>|null,
+     *     IpRanges?: list<IpRange>|null,
+     *     Ipv6Ranges?: list<Ipv6Range>|null,
+     *     PrefixListIds?: list<PrefixListId>|null
      * } $args
      */
     public function __construct(array $args = [])

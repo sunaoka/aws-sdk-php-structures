@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\ListConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucket
- * @property bool $enabled
- * @property string $prefix
+ * @property string|null $bucket
+ * @property bool|null $enabled
+ * @property string|null $prefix
  */
 class S3LogDeliveryDescription extends Shape
 {
     /**
      * @param array{
-     *     bucket?: string,
-     *     enabled?: bool,
-     *     prefix?: string
+     *     bucket?: string|null,
+     *     enabled?: bool|null,
+     *     prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

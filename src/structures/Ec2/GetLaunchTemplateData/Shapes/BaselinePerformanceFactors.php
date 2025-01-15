@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\GetLaunchTemplateData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CpuPerformanceFactor $Cpu
+ * @property CpuPerformanceFactor|null $Cpu
  */
 class BaselinePerformanceFactors extends Shape
 {
     /**
-     * @param array{Cpu?: CpuPerformanceFactor} $args
+     * @param array{Cpu?: CpuPerformanceFactor|null} $args
      */
     public function __construct(array $args = [])
     {

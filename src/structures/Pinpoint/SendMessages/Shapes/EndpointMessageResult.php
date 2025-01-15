@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Address
+ * @property string|null $Address
  * @property 'SUCCESSFUL'|'THROTTLED'|'TEMPORARY_FAILURE'|'PERMANENT_FAILURE'|'UNKNOWN_FAILURE'|'OPT_OUT'|'DUPLICATE' $DeliveryStatus
- * @property string $MessageId
+ * @property string|null $MessageId
  * @property int $StatusCode
- * @property string $StatusMessage
- * @property string $UpdatedToken
+ * @property string|null $StatusMessage
+ * @property string|null $UpdatedToken
  */
 class EndpointMessageResult extends Shape
 {
     /**
      * @param array{
-     *     Address?: string,
+     *     Address?: string|null,
      *     DeliveryStatus: 'SUCCESSFUL'|'THROTTLED'|'TEMPORARY_FAILURE'|'PERMANENT_FAILURE'|'UNKNOWN_FAILURE'|'OPT_OUT'|'DUPLICATE',
-     *     MessageId?: string,
+     *     MessageId?: string|null,
      *     StatusCode: int,
-     *     StatusMessage?: string,
-     *     UpdatedToken?: string
+     *     StatusMessage?: string|null,
+     *     UpdatedToken?: string|null
      * } $args
      */
     public function __construct(array $args)

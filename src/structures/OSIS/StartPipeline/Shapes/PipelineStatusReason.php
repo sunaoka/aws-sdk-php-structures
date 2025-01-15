@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\OSIS\StartPipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  */
 class PipelineStatusReason extends Shape
 {
     /**
-     * @param array{Description?: string} $args
+     * @param array{Description?: string|null} $args
      */
     public function __construct(array $args = [])
     {

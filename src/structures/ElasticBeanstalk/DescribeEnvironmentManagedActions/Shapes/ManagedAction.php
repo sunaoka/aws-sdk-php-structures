@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentManagedActi
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ActionId
- * @property string $ActionDescription
- * @property 'InstanceRefresh'|'PlatformUpdate'|'Unknown' $ActionType
- * @property 'Scheduled'|'Pending'|'Running'|'Unknown' $Status
- * @property \Aws\Api\DateTimeResult $WindowStartTime
+ * @property string|null $ActionId
+ * @property string|null $ActionDescription
+ * @property 'InstanceRefresh'|'PlatformUpdate'|'Unknown'|null $ActionType
+ * @property 'Scheduled'|'Pending'|'Running'|'Unknown'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $WindowStartTime
  */
 class ManagedAction extends Shape
 {
     /**
      * @param array{
-     *     ActionId?: string,
-     *     ActionDescription?: string,
-     *     ActionType?: 'InstanceRefresh'|'PlatformUpdate'|'Unknown',
-     *     Status?: 'Scheduled'|'Pending'|'Running'|'Unknown',
-     *     WindowStartTime?: \Aws\Api\DateTimeResult
+     *     ActionId?: string|null,
+     *     ActionDescription?: string|null,
+     *     ActionType?: 'InstanceRefresh'|'PlatformUpdate'|'Unknown'|null,
+     *     Status?: 'Scheduled'|'Pending'|'Running'|'Unknown'|null,
+     *     WindowStartTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

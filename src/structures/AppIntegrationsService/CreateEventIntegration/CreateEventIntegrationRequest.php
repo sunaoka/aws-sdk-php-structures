@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\EventFilter $EventFilter
  * @property string $EventBridgeBus
- * @property string $ClientToken
- * @property array<string, string> $Tags
+ * @property string|null $ClientToken
+ * @property array<string, string>|null $Tags
  */
 class CreateEventIntegrationRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     EventFilter: Shapes\EventFilter,
      *     EventBridgeBus: string,
-     *     ClientToken?: string,
-     *     Tags?: array<string, string>
+     *     ClientToken?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

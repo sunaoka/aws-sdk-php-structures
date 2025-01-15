@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VideoCodecSettings $CodecSettings
- * @property int $Height
+ * @property VideoCodecSettings|null $CodecSettings
+ * @property int|null $Height
  * @property string $Name
- * @property 'NONE'|'PASSTHROUGH'|'RESPOND' $RespondToAfd
- * @property 'DEFAULT'|'STRETCH_TO_OUTPUT' $ScalingBehavior
- * @property int<0, 100> $Sharpness
- * @property int $Width
+ * @property 'NONE'|'PASSTHROUGH'|'RESPOND'|null $RespondToAfd
+ * @property 'DEFAULT'|'STRETCH_TO_OUTPUT'|null $ScalingBehavior
+ * @property int<0, 100>|null $Sharpness
+ * @property int|null $Width
  */
 class VideoDescription extends Shape
 {
     /**
      * @param array{
-     *     CodecSettings?: VideoCodecSettings,
-     *     Height?: int,
+     *     CodecSettings?: VideoCodecSettings|null,
+     *     Height?: int|null,
      *     Name: string,
-     *     RespondToAfd?: 'NONE'|'PASSTHROUGH'|'RESPOND',
-     *     ScalingBehavior?: 'DEFAULT'|'STRETCH_TO_OUTPUT',
-     *     Sharpness?: int<0, 100>,
-     *     Width?: int
+     *     RespondToAfd?: 'NONE'|'PASSTHROUGH'|'RESPOND'|null,
+     *     ScalingBehavior?: 'DEFAULT'|'STRETCH_TO_OUTPUT'|null,
+     *     Sharpness?: int<0, 100>|null,
+     *     Width?: int|null
      * } $args
      */
     public function __construct(array $args)

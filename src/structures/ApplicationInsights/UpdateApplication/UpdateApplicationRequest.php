@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceGroupName
- * @property bool $OpsCenterEnabled
- * @property bool $CWEMonitorEnabled
- * @property string $OpsItemSNSTopicArn
- * @property string $SNSNotificationArn
- * @property bool $RemoveSNSTopic
- * @property bool $AutoConfigEnabled
- * @property bool $AttachMissingPermission
+ * @property bool|null $OpsCenterEnabled
+ * @property bool|null $CWEMonitorEnabled
+ * @property string|null $OpsItemSNSTopicArn
+ * @property string|null $SNSNotificationArn
+ * @property bool|null $RemoveSNSTopic
+ * @property bool|null $AutoConfigEnabled
+ * @property bool|null $AttachMissingPermission
  */
 class UpdateApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ResourceGroupName: string,
-     *     OpsCenterEnabled?: bool,
-     *     CWEMonitorEnabled?: bool,
-     *     OpsItemSNSTopicArn?: string,
-     *     SNSNotificationArn?: string,
-     *     RemoveSNSTopic?: bool,
-     *     AutoConfigEnabled?: bool,
-     *     AttachMissingPermission?: bool
+     *     OpsCenterEnabled?: bool|null,
+     *     CWEMonitorEnabled?: bool|null,
+     *     OpsItemSNSTopicArn?: string|null,
+     *     SNSNotificationArn?: string|null,
+     *     RemoveSNSTopic?: bool|null,
+     *     AutoConfigEnabled?: bool|null,
+     *     AttachMissingPermission?: bool|null
      * } $args
      */
     public function __construct(array $args)

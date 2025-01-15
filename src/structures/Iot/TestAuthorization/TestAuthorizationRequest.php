@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Iot\TestAuthorization;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $principal
- * @property string $cognitoIdentityPoolId
+ * @property string|null $principal
+ * @property string|null $cognitoIdentityPoolId
  * @property list<Shapes\AuthInfo> $authInfos
- * @property string $clientId
- * @property list<string> $policyNamesToAdd
- * @property list<string> $policyNamesToSkip
+ * @property string|null $clientId
+ * @property list<string>|null $policyNamesToAdd
+ * @property list<string>|null $policyNamesToSkip
  */
 class TestAuthorizationRequest extends Request
 {
     /**
      * @param array{
-     *     principal?: string,
-     *     cognitoIdentityPoolId?: string,
+     *     principal?: string|null,
+     *     cognitoIdentityPoolId?: string|null,
      *     authInfos: list<Shapes\AuthInfo>,
-     *     clientId?: string,
-     *     policyNamesToAdd?: list<string>,
-     *     policyNamesToSkip?: list<string>
+     *     clientId?: string|null,
+     *     policyNamesToAdd?: list<string>|null,
+     *     policyNamesToSkip?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetMethod;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $httpMethod
- * @property string $authorizationType
- * @property string $authorizerId
- * @property bool $apiKeyRequired
- * @property string $requestValidatorId
- * @property string $operationName
- * @property array<string, bool> $requestParameters
- * @property array<string, string> $requestModels
- * @property array<string, Shapes\MethodResponse> $methodResponses
- * @property Shapes\Integration $methodIntegration
- * @property list<string> $authorizationScopes
+ * @property string|null $httpMethod
+ * @property string|null $authorizationType
+ * @property string|null $authorizerId
+ * @property bool|null $apiKeyRequired
+ * @property string|null $requestValidatorId
+ * @property string|null $operationName
+ * @property array<string, bool>|null $requestParameters
+ * @property array<string, string>|null $requestModels
+ * @property array<string, Shapes\MethodResponse>|null $methodResponses
+ * @property Shapes\Integration|null $methodIntegration
+ * @property list<string>|null $authorizationScopes
  */
 class GetMethodResponse extends Response
 {

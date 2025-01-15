@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateFileCache\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WeeklyMaintenanceStartTime
+ * @property string|null $WeeklyMaintenanceStartTime
  */
 class UpdateFileCacheLustreConfiguration extends Shape
 {
     /**
-     * @param array{WeeklyMaintenanceStartTime?: string} $args
+     * @param array{WeeklyMaintenanceStartTime?: string|null} $args
      */
     public function __construct(array $args = [])
     {

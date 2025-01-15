@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InputDeviceId
- * @property string $TargetCustomerId
- * @property string $TargetRegion
- * @property string $TransferMessage
+ * @property string|null $TargetCustomerId
+ * @property string|null $TargetRegion
+ * @property string|null $TransferMessage
  */
 class TransferInputDeviceRequest extends Request
 {
     /**
      * @param array{
      *     InputDeviceId: string,
-     *     TargetCustomerId?: string,
-     *     TargetRegion?: string,
-     *     TransferMessage?: string
+     *     TargetCustomerId?: string|null,
+     *     TargetRegion?: string|null,
+     *     TransferMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

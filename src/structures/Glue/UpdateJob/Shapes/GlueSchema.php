@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<GlueStudioSchemaColumn> $Columns
+ * @property list<GlueStudioSchemaColumn>|null $Columns
  */
 class GlueSchema extends Shape
 {
     /**
-     * @param array{Columns?: list<GlueStudioSchemaColumn>} $args
+     * @param array{Columns?: list<GlueStudioSchemaColumn>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int $scheduledEventId
  * @property int $startedEventId
- * @property 'START_TO_CLOSE' $timeoutType
+ * @property 'START_TO_CLOSE'|null $timeoutType
  */
 class LambdaFunctionTimedOutEventAttributes extends Shape
 {
@@ -15,7 +15,7 @@ class LambdaFunctionTimedOutEventAttributes extends Shape
      * @param array{
      *     scheduledEventId: int,
      *     startedEventId: int,
-     *     timeoutType?: 'START_TO_CLOSE'
+     *     timeoutType?: 'START_TO_CLOSE'|null
      * } $args
      */
     public function __construct(array $args)

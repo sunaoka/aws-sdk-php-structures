@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property int $Offset
+ * @property int|null $Offset
  */
 class TimeZone extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Offset?: int
+     *     Offset?: int|null
      * } $args
      */
     public function __construct(array $args)

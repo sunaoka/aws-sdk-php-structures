@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisionedProduct\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property string $Type
- * @property string $Id
- * @property 'AVAILABLE'|'UNDER_CHANGE'|'TAINTED'|'ERROR'|'PLAN_IN_PROGRESS' $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property string $IdempotencyToken
- * @property string $LastRecordId
- * @property string $LastProvisioningRecordId
- * @property string $LastSuccessfulProvisioningRecordId
- * @property string $ProductId
- * @property string $ProvisioningArtifactId
- * @property string $LaunchRoleArn
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property string|null $Type
+ * @property string|null $Id
+ * @property 'AVAILABLE'|'UNDER_CHANGE'|'TAINTED'|'ERROR'|'PLAN_IN_PROGRESS'|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property string|null $IdempotencyToken
+ * @property string|null $LastRecordId
+ * @property string|null $LastProvisioningRecordId
+ * @property string|null $LastSuccessfulProvisioningRecordId
+ * @property string|null $ProductId
+ * @property string|null $ProvisioningArtifactId
+ * @property string|null $LaunchRoleArn
  */
 class ProvisionedProductDetail extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Arn?: string,
-     *     Type?: string,
-     *     Id?: string,
-     *     Status?: 'AVAILABLE'|'UNDER_CHANGE'|'TAINTED'|'ERROR'|'PLAN_IN_PROGRESS',
-     *     StatusMessage?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     IdempotencyToken?: string,
-     *     LastRecordId?: string,
-     *     LastProvisioningRecordId?: string,
-     *     LastSuccessfulProvisioningRecordId?: string,
-     *     ProductId?: string,
-     *     ProvisioningArtifactId?: string,
-     *     LaunchRoleArn?: string
+     *     Name?: string|null,
+     *     Arn?: string|null,
+     *     Type?: string|null,
+     *     Id?: string|null,
+     *     Status?: 'AVAILABLE'|'UNDER_CHANGE'|'TAINTED'|'ERROR'|'PLAN_IN_PROGRESS'|null,
+     *     StatusMessage?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     IdempotencyToken?: string|null,
+     *     LastRecordId?: string|null,
+     *     LastProvisioningRecordId?: string|null,
+     *     LastSuccessfulProvisioningRecordId?: string|null,
+     *     ProductId?: string|null,
+     *     ProvisioningArtifactId?: string|null,
+     *     LaunchRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\PutPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Heterogeneous $heterogeneous
- * @property Homogeneous $homogeneous
- * @property NoDatabaseMigrationPreference $noPreference
+ * @property Heterogeneous|null $heterogeneous
+ * @property Homogeneous|null $homogeneous
+ * @property NoDatabaseMigrationPreference|null $noPreference
  */
 class DatabaseMigrationPreference extends Shape
 {
     /**
      * @param array{
-     *     heterogeneous?: Heterogeneous,
-     *     homogeneous?: Homogeneous,
-     *     noPreference?: NoDatabaseMigrationPreference
+     *     heterogeneous?: Heterogeneous|null,
+     *     homogeneous?: Homogeneous|null,
+     *     noPreference?: NoDatabaseMigrationPreference|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetServerDe
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
- * @property string $nextToken
+ * @property int|null $maxResults
+ * @property string|null $nextToken
  * @property string $serverId
  */
 class GetServerDetailsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
-     *     nextToken?: string,
+     *     maxResults?: int|null,
+     *     nextToken?: string|null,
      *     serverId: string
      * } $args
      */

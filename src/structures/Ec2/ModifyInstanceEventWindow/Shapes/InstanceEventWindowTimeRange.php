@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyInstanceEventWindow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'sunday'|'monday'|'tuesday'|'wednesday'|'thursday'|'friday'|'saturday' $StartWeekDay
- * @property int<0, 23> $StartHour
- * @property 'sunday'|'monday'|'tuesday'|'wednesday'|'thursday'|'friday'|'saturday' $EndWeekDay
- * @property int<0, 23> $EndHour
+ * @property 'sunday'|'monday'|'tuesday'|'wednesday'|'thursday'|'friday'|'saturday'|null $StartWeekDay
+ * @property int<0, 23>|null $StartHour
+ * @property 'sunday'|'monday'|'tuesday'|'wednesday'|'thursday'|'friday'|'saturday'|null $EndWeekDay
+ * @property int<0, 23>|null $EndHour
  */
 class InstanceEventWindowTimeRange extends Shape
 {
     /**
      * @param array{
-     *     StartWeekDay?: 'sunday'|'monday'|'tuesday'|'wednesday'|'thursday'|'friday'|'saturday',
-     *     StartHour?: int<0, 23>,
-     *     EndWeekDay?: 'sunday'|'monday'|'tuesday'|'wednesday'|'thursday'|'friday'|'saturday',
-     *     EndHour?: int<0, 23>
+     *     StartWeekDay?: 'sunday'|'monday'|'tuesday'|'wednesday'|'thursday'|'friday'|'saturday'|null,
+     *     StartHour?: int<0, 23>|null,
+     *     EndWeekDay?: 'sunday'|'monday'|'tuesday'|'wednesday'|'thursday'|'friday'|'saturday'|null,
+     *     EndHour?: int<0, 23>|null
      * } $args
      */
     public function __construct(array $args = [])

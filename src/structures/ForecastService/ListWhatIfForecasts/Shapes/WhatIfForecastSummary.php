@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListWhatIfForecasts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WhatIfForecastArn
- * @property string $WhatIfForecastName
- * @property string $WhatIfAnalysisArn
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
+ * @property string|null $WhatIfForecastArn
+ * @property string|null $WhatIfForecastName
+ * @property string|null $WhatIfAnalysisArn
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
  */
 class WhatIfForecastSummary extends Shape
 {
     /**
      * @param array{
-     *     WhatIfForecastArn?: string,
-     *     WhatIfForecastName?: string,
-     *     WhatIfAnalysisArn?: string,
-     *     Status?: string,
-     *     Message?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModificationTime?: \Aws\Api\DateTimeResult
+     *     WhatIfForecastArn?: string|null,
+     *     WhatIfForecastName?: string|null,
+     *     WhatIfAnalysisArn?: string|null,
+     *     Status?: string|null,
+     *     Message?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

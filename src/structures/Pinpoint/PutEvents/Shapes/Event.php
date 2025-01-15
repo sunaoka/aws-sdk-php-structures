@@ -5,30 +5,30 @@ namespace Sunaoka\Aws\Structures\Pinpoint\PutEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppPackageName
- * @property string $AppTitle
- * @property string $AppVersionCode
- * @property array<string, string> $Attributes
- * @property string $ClientSdkVersion
+ * @property string|null $AppPackageName
+ * @property string|null $AppTitle
+ * @property string|null $AppVersionCode
+ * @property array<string, string>|null $Attributes
+ * @property string|null $ClientSdkVersion
  * @property string $EventType
- * @property array<string, double> $Metrics
- * @property string $SdkName
- * @property Session $Session
+ * @property array<string, double>|null $Metrics
+ * @property string|null $SdkName
+ * @property Session|null $Session
  * @property string $Timestamp
  */
 class Event extends Shape
 {
     /**
      * @param array{
-     *     AppPackageName?: string,
-     *     AppTitle?: string,
-     *     AppVersionCode?: string,
-     *     Attributes?: array<string, string>,
-     *     ClientSdkVersion?: string,
+     *     AppPackageName?: string|null,
+     *     AppTitle?: string|null,
+     *     AppVersionCode?: string|null,
+     *     Attributes?: array<string, string>|null,
+     *     ClientSdkVersion?: string|null,
      *     EventType: string,
-     *     Metrics?: array<string, double>,
-     *     SdkName?: string,
-     *     Session?: Session,
+     *     Metrics?: array<string, double>|null,
+     *     SdkName?: string|null,
+     *     Session?: Session|null,
      *     Timestamp: string
      * } $args
      */

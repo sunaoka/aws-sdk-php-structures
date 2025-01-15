@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CertificateId
  * @property string $CertificateBody
  * @property 'Active'|'Inactive' $Status
- * @property \Aws\Api\DateTimeResult $UploadDate
+ * @property \Aws\Api\DateTimeResult|null $UploadDate
  */
 class SigningCertificate extends Shape
 {
@@ -19,7 +19,7 @@ class SigningCertificate extends Shape
      *     CertificateId: string,
      *     CertificateBody: string,
      *     Status: 'Active'|'Inactive',
-     *     UploadDate?: \Aws\Api\DateTimeResult
+     *     UploadDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRContainers\DescribeJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $logGroupName
- * @property string $logStreamNamePrefix
+ * @property string|null $logGroupName
+ * @property string|null $logStreamNamePrefix
  */
 class ParametricCloudWatchMonitoringConfiguration extends Shape
 {
     /**
      * @param array{
-     *     logGroupName?: string,
-     *     logStreamNamePrefix?: string
+     *     logGroupName?: string|null,
+     *     logStreamNamePrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

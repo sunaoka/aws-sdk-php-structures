@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $BrandId
- * @property string $VersionId
+ * @property string|null $VersionId
  */
 class DescribeBrandRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeBrandRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     BrandId: string,
-     *     VersionId?: string
+     *     VersionId?: string|null
      * } $args
      */
     public function __construct(array $args)

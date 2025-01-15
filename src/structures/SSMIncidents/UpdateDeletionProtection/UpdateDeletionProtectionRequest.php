@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property bool $deletionProtected
  */
 class UpdateDeletionProtectionRequest extends Request
@@ -14,7 +14,7 @@ class UpdateDeletionProtectionRequest extends Request
     /**
      * @param array{
      *     arn: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     deletionProtected: bool
      * } $args
      */

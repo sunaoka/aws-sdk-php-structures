@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $assetId
- * @property string $errorMessage
+ * @property string|null $errorMessage
  * @property list<string> $filterIds
  * @property string $status
  */
@@ -15,7 +15,7 @@ class AssetScope extends Shape
     /**
      * @param array{
      *     assetId: string,
-     *     errorMessage?: string,
+     *     errorMessage?: string|null,
      *     filterIds: list<string>,
      *     status: string
      * } $args

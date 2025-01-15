@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\CreateBrowserSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property array<string, string> $additionalEncryptionContext
+ * @property array<string, string>|null $additionalEncryptionContext
  * @property string $browserPolicy
- * @property string $clientToken
- * @property string $customerManagedKey
- * @property list<Shapes\Tag> $tags
+ * @property string|null $clientToken
+ * @property string|null $customerManagedKey
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateBrowserSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     additionalEncryptionContext?: array<string, string>,
+     *     additionalEncryptionContext?: array<string, string>|null,
      *     browserPolicy: string,
-     *     clientToken?: string,
-     *     customerManagedKey?: string,
-     *     tags?: list<Shapes\Tag>
+     *     clientToken?: string|null,
+     *     customerManagedKey?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

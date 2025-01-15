@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $clientIpAddresses
- * @property \Aws\Api\DateTimeResult $endTime
- * @property string $portalArn
- * @property string $sessionId
- * @property \Aws\Api\DateTimeResult $startTime
- * @property 'Active'|'Terminated' $status
- * @property string $username
+ * @property list<string>|null $clientIpAddresses
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $portalArn
+ * @property string|null $sessionId
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property 'Active'|'Terminated'|null $status
+ * @property string|null $username
  */
 class Session extends Shape
 {
     /**
      * @param array{
-     *     clientIpAddresses?: list<string>,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     portalArn?: string,
-     *     sessionId?: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'Active'|'Terminated',
-     *     username?: string
+     *     clientIpAddresses?: list<string>|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     portalArn?: string|null,
+     *     sessionId?: string|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'Active'|'Terminated'|null,
+     *     username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

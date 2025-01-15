@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContactId
- * @property string $DisplayName
- * @property Shapes\Plan $Plan
+ * @property string|null $DisplayName
+ * @property Shapes\Plan|null $Plan
  */
 class UpdateContactRequest extends Request
 {
     /**
      * @param array{
      *     ContactId: string,
-     *     DisplayName?: string,
-     *     Plan?: Shapes\Plan
+     *     DisplayName?: string|null,
+     *     Plan?: Shapes\Plan|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Appstream\DescribeStacks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property string $SettingsGroup
- * @property string $S3BucketName
+ * @property bool|null $Enabled
+ * @property string|null $SettingsGroup
+ * @property string|null $S3BucketName
  */
 class ApplicationSettingsResponse extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     SettingsGroup?: string,
-     *     S3BucketName?: string
+     *     Enabled?: bool|null,
+     *     SettingsGroup?: string|null,
+     *     S3BucketName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

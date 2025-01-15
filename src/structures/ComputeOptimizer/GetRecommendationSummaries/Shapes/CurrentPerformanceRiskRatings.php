@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRecommendationSummaries\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $high
- * @property int $medium
- * @property int $low
- * @property int $veryLow
+ * @property int|null $high
+ * @property int|null $medium
+ * @property int|null $low
+ * @property int|null $veryLow
  */
 class CurrentPerformanceRiskRatings extends Shape
 {
     /**
      * @param array{
-     *     high?: int,
-     *     medium?: int,
-     *     low?: int,
-     *     veryLow?: int
+     *     high?: int|null,
+     *     medium?: int|null,
+     *     low?: int|null,
+     *     veryLow?: int|null
      * } $args
      */
     public function __construct(array $args = [])

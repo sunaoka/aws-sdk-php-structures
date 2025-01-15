@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $CreationDate
- * @property string $DefaultSubstitutions
+ * @property string|null $DefaultSubstitutions
  * @property string $LastModifiedDate
- * @property string $TemplateDescription
+ * @property string|null $TemplateDescription
  * @property string $TemplateName
  * @property string $TemplateType
- * @property string $Version
+ * @property string|null $Version
  */
 class TemplateVersionResponse extends Shape
 {
     /**
      * @param array{
      *     CreationDate: string,
-     *     DefaultSubstitutions?: string,
+     *     DefaultSubstitutions?: string|null,
      *     LastModifiedDate: string,
-     *     TemplateDescription?: string,
+     *     TemplateDescription?: string|null,
      *     TemplateName: string,
      *     TemplateType: string,
-     *     Version?: string
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args)

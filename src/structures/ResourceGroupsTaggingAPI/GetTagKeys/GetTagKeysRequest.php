@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ResourceGroupsTaggingAPI\GetTagKeys;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $PaginationToken
+ * @property string|null $PaginationToken
  */
 class GetTagKeysRequest extends Request
 {
     /**
-     * @param array{PaginationToken?: string} $args
+     * @param array{PaginationToken?: string|null} $args
      */
     public function __construct(array $args = [])
     {

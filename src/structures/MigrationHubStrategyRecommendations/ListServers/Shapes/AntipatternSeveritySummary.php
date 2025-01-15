@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListServers
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $count
- * @property 'HIGH'|'MEDIUM'|'LOW' $severity
+ * @property int|null $count
+ * @property 'HIGH'|'MEDIUM'|'LOW'|null $severity
  */
 class AntipatternSeveritySummary extends Shape
 {
     /**
      * @param array{
-     *     count?: int,
-     *     severity?: 'HIGH'|'MEDIUM'|'LOW'
+     *     count?: int|null,
+     *     severity?: 'HIGH'|'MEDIUM'|'LOW'|null
      * } $args
      */
     public function __construct(array $args = [])

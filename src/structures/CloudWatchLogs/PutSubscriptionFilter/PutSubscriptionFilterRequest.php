@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $filterName
  * @property string $filterPattern
  * @property string $destinationArn
- * @property string $roleArn
- * @property 'Random'|'ByLogStream' $distribution
- * @property bool $applyOnTransformedLogs
+ * @property string|null $roleArn
+ * @property 'Random'|'ByLogStream'|null $distribution
+ * @property bool|null $applyOnTransformedLogs
  */
 class PutSubscriptionFilterRequest extends Request
 {
@@ -21,9 +21,9 @@ class PutSubscriptionFilterRequest extends Request
      *     filterName: string,
      *     filterPattern: string,
      *     destinationArn: string,
-     *     roleArn?: string,
-     *     distribution?: 'Random'|'ByLogStream',
-     *     applyOnTransformedLogs?: bool
+     *     roleArn?: string|null,
+     *     distribution?: 'Random'|'ByLogStream'|null,
+     *     applyOnTransformedLogs?: bool|null
      * } $args
      */
     public function __construct(array $args)

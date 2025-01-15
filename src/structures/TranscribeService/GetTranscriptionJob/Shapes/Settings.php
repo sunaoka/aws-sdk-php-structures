@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\TranscribeService\GetTranscriptionJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VocabularyName
- * @property bool $ShowSpeakerLabels
- * @property int<2, 30> $MaxSpeakerLabels
- * @property bool $ChannelIdentification
- * @property bool $ShowAlternatives
- * @property int<2, 10> $MaxAlternatives
- * @property string $VocabularyFilterName
- * @property 'remove'|'mask'|'tag' $VocabularyFilterMethod
+ * @property string|null $VocabularyName
+ * @property bool|null $ShowSpeakerLabels
+ * @property int<2, 30>|null $MaxSpeakerLabels
+ * @property bool|null $ChannelIdentification
+ * @property bool|null $ShowAlternatives
+ * @property int<2, 10>|null $MaxAlternatives
+ * @property string|null $VocabularyFilterName
+ * @property 'remove'|'mask'|'tag'|null $VocabularyFilterMethod
  */
 class Settings extends Shape
 {
     /**
      * @param array{
-     *     VocabularyName?: string,
-     *     ShowSpeakerLabels?: bool,
-     *     MaxSpeakerLabels?: int<2, 30>,
-     *     ChannelIdentification?: bool,
-     *     ShowAlternatives?: bool,
-     *     MaxAlternatives?: int<2, 10>,
-     *     VocabularyFilterName?: string,
-     *     VocabularyFilterMethod?: 'remove'|'mask'|'tag'
+     *     VocabularyName?: string|null,
+     *     ShowSpeakerLabels?: bool|null,
+     *     MaxSpeakerLabels?: int<2, 30>|null,
+     *     ChannelIdentification?: bool|null,
+     *     ShowAlternatives?: bool|null,
+     *     MaxAlternatives?: int<2, 10>|null,
+     *     VocabularyFilterName?: string|null,
+     *     VocabularyFilterMethod?: 'remove'|'mask'|'tag'|null
      * } $args
      */
     public function __construct(array $args = [])

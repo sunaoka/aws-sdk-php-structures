@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Macie2\PutClassificationExportConfiguration\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Destination $s3Destination
+ * @property S3Destination|null $s3Destination
  */
 class ClassificationExportConfiguration extends Shape
 {
     /**
-     * @param array{s3Destination?: S3Destination} $args
+     * @param array{s3Destination?: S3Destination|null} $args
      */
     public function __construct(array $args = [])
     {

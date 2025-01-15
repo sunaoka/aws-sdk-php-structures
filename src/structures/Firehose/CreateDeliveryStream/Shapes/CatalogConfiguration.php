@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Firehose\CreateDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogARN
- * @property string $WarehouseLocation
+ * @property string|null $CatalogARN
+ * @property string|null $WarehouseLocation
  */
 class CatalogConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CatalogARN?: string,
-     *     WarehouseLocation?: string
+     *     CatalogARN?: string|null,
+     *     WarehouseLocation?: string|null
      * } $args
      */
     public function __construct(array $args = [])

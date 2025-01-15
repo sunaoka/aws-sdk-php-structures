@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\PutSchemaVersionMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetadataKey
- * @property string $MetadataValue
+ * @property string|null $MetadataKey
+ * @property string|null $MetadataValue
  */
 class MetadataKeyValuePair extends Shape
 {
     /**
      * @param array{
-     *     MetadataKey?: string,
-     *     MetadataValue?: string
+     *     MetadataKey?: string|null,
+     *     MetadataValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

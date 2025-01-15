@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RegistrationType
- * @property list<SupportedAssociation> $SupportedAssociations
+ * @property list<SupportedAssociation>|null $SupportedAssociations
  * @property RegistrationTypeDisplayHints $DisplayHints
  */
 class RegistrationTypeDefinition extends Shape
@@ -14,7 +14,7 @@ class RegistrationTypeDefinition extends Shape
     /**
      * @param array{
      *     RegistrationType: string,
-     *     SupportedAssociations?: list<SupportedAssociation>,
+     *     SupportedAssociations?: list<SupportedAssociation>|null,
      *     DisplayHints: RegistrationTypeDisplayHints
      * } $args
      */

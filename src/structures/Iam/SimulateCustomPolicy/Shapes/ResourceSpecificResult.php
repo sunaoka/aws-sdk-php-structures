@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $EvalResourceName
  * @property 'allowed'|'explicitDeny'|'implicitDeny' $EvalResourceDecision
- * @property list<Statement> $MatchedStatements
- * @property list<string> $MissingContextValues
- * @property array<string, 'allowed'|'explicitDeny'|'implicitDeny'> $EvalDecisionDetails
- * @property PermissionsBoundaryDecisionDetail $PermissionsBoundaryDecisionDetail
+ * @property list<Statement>|null $MatchedStatements
+ * @property list<string>|null $MissingContextValues
+ * @property array<string, 'allowed'|'explicitDeny'|'implicitDeny'>|null $EvalDecisionDetails
+ * @property PermissionsBoundaryDecisionDetail|null $PermissionsBoundaryDecisionDetail
  */
 class ResourceSpecificResult extends Shape
 {
@@ -18,10 +18,10 @@ class ResourceSpecificResult extends Shape
      * @param array{
      *     EvalResourceName: string,
      *     EvalResourceDecision: 'allowed'|'explicitDeny'|'implicitDeny',
-     *     MatchedStatements?: list<Statement>,
-     *     MissingContextValues?: list<string>,
-     *     EvalDecisionDetails?: array<string, 'allowed'|'explicitDeny'|'implicitDeny'>,
-     *     PermissionsBoundaryDecisionDetail?: PermissionsBoundaryDecisionDetail
+     *     MatchedStatements?: list<Statement>|null,
+     *     MissingContextValues?: list<string>|null,
+     *     EvalDecisionDetails?: array<string, 'allowed'|'explicitDeny'|'implicitDeny'>|null,
+     *     PermissionsBoundaryDecisionDetail?: PermissionsBoundaryDecisionDetail|null
      * } $args
      */
     public function __construct(array $args)

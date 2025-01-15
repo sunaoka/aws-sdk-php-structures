@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $roleArn
  * @property string $logGroupName
- * @property bool $batchMode
+ * @property bool|null $batchMode
  */
 class CloudwatchLogsAction extends Shape
 {
@@ -15,7 +15,7 @@ class CloudwatchLogsAction extends Shape
      * @param array{
      *     roleArn: string,
      *     logGroupName: string,
-     *     batchMode?: bool
+     *     batchMode?: bool|null
      * } $args
      */
     public function __construct(array $args)

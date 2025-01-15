@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botVersion
  * @property string $localeId
  * @property Shapes\TranscriptSourceSetting $transcriptSourceSetting
- * @property Shapes\EncryptionSetting $encryptionSetting
+ * @property Shapes\EncryptionSetting|null $encryptionSetting
  */
 class StartBotRecommendationRequest extends Request
 {
@@ -19,7 +19,7 @@ class StartBotRecommendationRequest extends Request
      *     botVersion: string,
      *     localeId: string,
      *     transcriptSourceSetting: Shapes\TranscriptSourceSetting,
-     *     encryptionSetting?: Shapes\EncryptionSetting
+     *     encryptionSetting?: Shapes\EncryptionSetting|null
      * } $args
      */
     public function __construct(array $args)

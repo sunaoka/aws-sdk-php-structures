@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeCommit\DescribeMergeConflicts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $source
- * @property int $destination
- * @property int $base
+ * @property int|null $source
+ * @property int|null $destination
+ * @property int|null $base
  */
 class FileSizes extends Shape
 {
     /**
      * @param array{
-     *     source?: int,
-     *     destination?: int,
-     *     base?: int
+     *     source?: int|null,
+     *     destination?: int|null,
+     *     base?: int|null
      * } $args
      */
     public function __construct(array $args = [])

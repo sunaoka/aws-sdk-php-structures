@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeGuruProfiler\ListProfilingGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $includeDescription
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property bool|null $includeDescription
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListProfilingGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     includeDescription?: bool,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     includeDescription?: bool|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Glue\GetCustomEntityType;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property string $RegexString
- * @property list<string> $ContextWords
+ * @property string|null $Name
+ * @property string|null $RegexString
+ * @property list<string>|null $ContextWords
  */
 class GetCustomEntityTypeResponse extends Response
 {

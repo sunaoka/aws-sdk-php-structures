@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GroundStation\DescribeContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Destination $destination
- * @property string $errorMessage
- * @property Source $source
+ * @property Destination|null $destination
+ * @property string|null $errorMessage
+ * @property Source|null $source
  */
 class DataflowDetail extends Shape
 {
     /**
      * @param array{
-     *     destination?: Destination,
-     *     errorMessage?: string,
-     *     source?: Source
+     *     destination?: Destination|null,
+     *     errorMessage?: string|null,
+     *     source?: Source|null
      * } $args
      */
     public function __construct(array $args = [])

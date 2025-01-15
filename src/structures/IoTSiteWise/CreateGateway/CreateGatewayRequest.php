@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $gatewayName
  * @property Shapes\GatewayPlatform $gatewayPlatform
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateGatewayRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateGatewayRequest extends Request
      * @param array{
      *     gatewayName: string,
      *     gatewayPlatform: Shapes\GatewayPlatform,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

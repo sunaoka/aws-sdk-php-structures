@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DISABLED'|'ENABLED' $Status
- * @property string $SettingsGroup
- * @property string $S3BucketName
+ * @property string|null $SettingsGroup
+ * @property string|null $S3BucketName
  */
 class ApplicationSettingsResponse extends Shape
 {
     /**
      * @param array{
      *     Status: 'DISABLED'|'ENABLED',
-     *     SettingsGroup?: string,
-     *     S3BucketName?: string
+     *     SettingsGroup?: string|null,
+     *     S3BucketName?: string|null
      * } $args
      */
     public function __construct(array $args)

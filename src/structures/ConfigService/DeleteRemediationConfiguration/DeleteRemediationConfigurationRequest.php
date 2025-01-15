@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigRuleName
- * @property string $ResourceType
+ * @property string|null $ResourceType
  */
 class DeleteRemediationConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     ConfigRuleName: string,
-     *     ResourceType?: string
+     *     ResourceType?: string|null
      * } $args
      */
     public function __construct(array $args)

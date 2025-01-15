@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTEvents\UpdateAlarmModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $subject
- * @property string $additionalMessage
+ * @property string|null $subject
+ * @property string|null $additionalMessage
  */
 class EmailContent extends Shape
 {
     /**
      * @param array{
-     *     subject?: string,
-     *     additionalMessage?: string
+     *     subject?: string|null,
+     *     additionalMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

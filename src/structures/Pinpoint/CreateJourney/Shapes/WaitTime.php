@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WaitFor
- * @property string $WaitUntil
+ * @property string|null $WaitFor
+ * @property string|null $WaitUntil
  */
 class WaitTime extends Shape
 {
     /**
      * @param array{
-     *     WaitFor?: string,
-     *     WaitUntil?: string
+     *     WaitFor?: string|null,
+     *     WaitUntil?: string|null
      * } $args
      */
     public function __construct(array $args = [])

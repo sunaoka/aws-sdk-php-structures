@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeServiceUpdates;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ServiceUpdateName
- * @property list<string> $ClusterNames
- * @property list<'available'|'in-progress'|'complete'|'scheduled'> $Status
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $ServiceUpdateName
+ * @property list<string>|null $ClusterNames
+ * @property list<'available'|'in-progress'|'complete'|'scheduled'>|null $Status
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeServiceUpdatesRequest extends Request
 {
     /**
      * @param array{
-     *     ServiceUpdateName?: string,
-     *     ClusterNames?: list<string>,
-     *     Status?: list<'available'|'in-progress'|'complete'|'scheduled'>,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     ServiceUpdateName?: string|null,
+     *     ClusterNames?: list<string>|null,
+     *     Status?: list<'available'|'in-progress'|'complete'|'scheduled'>|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ACMPCA\CreateCertificateAuthority\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CrlConfiguration $CrlConfiguration
- * @property OcspConfiguration $OcspConfiguration
+ * @property CrlConfiguration|null $CrlConfiguration
+ * @property OcspConfiguration|null $OcspConfiguration
  */
 class RevocationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CrlConfiguration?: CrlConfiguration,
-     *     OcspConfiguration?: OcspConfiguration
+     *     CrlConfiguration?: CrlConfiguration|null,
+     *     OcspConfiguration?: OcspConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

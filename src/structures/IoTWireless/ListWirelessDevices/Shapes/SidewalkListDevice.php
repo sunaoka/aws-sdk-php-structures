@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListWirelessDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AmazonId
- * @property string $SidewalkId
- * @property string $SidewalkManufacturingSn
- * @property list<CertificateList> $DeviceCertificates
- * @property string $DeviceProfileId
- * @property 'PROVISIONED'|'REGISTERED'|'ACTIVATED'|'UNKNOWN' $Status
+ * @property string|null $AmazonId
+ * @property string|null $SidewalkId
+ * @property string|null $SidewalkManufacturingSn
+ * @property list<CertificateList>|null $DeviceCertificates
+ * @property string|null $DeviceProfileId
+ * @property 'PROVISIONED'|'REGISTERED'|'ACTIVATED'|'UNKNOWN'|null $Status
  */
 class SidewalkListDevice extends Shape
 {
     /**
      * @param array{
-     *     AmazonId?: string,
-     *     SidewalkId?: string,
-     *     SidewalkManufacturingSn?: string,
-     *     DeviceCertificates?: list<CertificateList>,
-     *     DeviceProfileId?: string,
-     *     Status?: 'PROVISIONED'|'REGISTERED'|'ACTIVATED'|'UNKNOWN'
+     *     AmazonId?: string|null,
+     *     SidewalkId?: string|null,
+     *     SidewalkManufacturingSn?: string|null,
+     *     DeviceCertificates?: list<CertificateList>|null,
+     *     DeviceProfileId?: string|null,
+     *     Status?: 'PROVISIONED'|'REGISTERED'|'ACTIVATED'|'UNKNOWN'|null
      * } $args
      */
     public function __construct(array $args = [])

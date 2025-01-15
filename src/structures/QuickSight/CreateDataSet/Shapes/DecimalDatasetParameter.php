@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $Name
  * @property 'MULTI_VALUED'|'SINGLE_VALUED' $ValueType
- * @property DecimalDatasetParameterDefaultValues $DefaultValues
+ * @property DecimalDatasetParameterDefaultValues|null $DefaultValues
  */
 class DecimalDatasetParameter extends Shape
 {
@@ -17,7 +17,7 @@ class DecimalDatasetParameter extends Shape
      *     Id: string,
      *     Name: string,
      *     ValueType: 'MULTI_VALUED'|'SINGLE_VALUED',
-     *     DefaultValues?: DecimalDatasetParameterDefaultValues
+     *     DefaultValues?: DecimalDatasetParameterDefaultValues|null
      * } $args
      */
     public function __construct(array $args)

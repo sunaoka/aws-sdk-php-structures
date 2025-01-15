@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $ClientToken
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
  * @property string $LaunchTemplateName
- * @property string $VersionDescription
+ * @property string|null $VersionDescription
  * @property Shapes\RequestLaunchTemplateData $LaunchTemplateData
- * @property Shapes\OperatorRequest $Operator
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property Shapes\OperatorRequest|null $Operator
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateLaunchTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     ClientToken?: string,
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null,
      *     LaunchTemplateName: string,
-     *     VersionDescription?: string,
+     *     VersionDescription?: string|null,
      *     LaunchTemplateData: Shapes\RequestLaunchTemplateData,
-     *     Operator?: Shapes\OperatorRequest,
-     *     TagSpecifications?: list<Shapes\TagSpecification>
+     *     Operator?: Shapes\OperatorRequest|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

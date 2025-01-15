@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\CreateIndex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property JwtTokenTypeConfiguration $JwtTokenTypeConfiguration
- * @property JsonTokenTypeConfiguration $JsonTokenTypeConfiguration
+ * @property JwtTokenTypeConfiguration|null $JwtTokenTypeConfiguration
+ * @property JsonTokenTypeConfiguration|null $JsonTokenTypeConfiguration
  */
 class UserTokenConfiguration extends Shape
 {
     /**
      * @param array{
-     *     JwtTokenTypeConfiguration?: JwtTokenTypeConfiguration,
-     *     JsonTokenTypeConfiguration?: JsonTokenTypeConfiguration
+     *     JwtTokenTypeConfiguration?: JwtTokenTypeConfiguration|null,
+     *     JsonTokenTypeConfiguration?: JsonTokenTypeConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

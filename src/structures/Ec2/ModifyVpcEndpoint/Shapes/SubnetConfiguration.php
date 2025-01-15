@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVpcEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubnetId
- * @property string $Ipv4
- * @property string $Ipv6
+ * @property string|null $SubnetId
+ * @property string|null $Ipv4
+ * @property string|null $Ipv6
  */
 class SubnetConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SubnetId?: string,
-     *     Ipv4?: string,
-     *     Ipv6?: string
+     *     SubnetId?: string|null,
+     *     Ipv4?: string|null,
+     *     Ipv6?: string|null
      * } $args
      */
     public function __construct(array $args = [])

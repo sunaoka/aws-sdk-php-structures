@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\PutFindingsPublicationConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property Shapes\SecurityHubConfiguration $securityHubConfiguration
+ * @property string|null $clientToken
+ * @property Shapes\SecurityHubConfiguration|null $securityHubConfiguration
  */
 class PutFindingsPublicationConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     securityHubConfiguration?: Shapes\SecurityHubConfiguration
+     *     clientToken?: string|null,
+     *     securityHubConfiguration?: Shapes\SecurityHubConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

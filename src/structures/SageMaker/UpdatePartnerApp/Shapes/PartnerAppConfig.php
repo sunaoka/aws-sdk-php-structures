@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdatePartnerApp\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AdminUsers
- * @property array<string, string> $Arguments
+ * @property list<string>|null $AdminUsers
+ * @property array<string, string>|null $Arguments
  */
 class PartnerAppConfig extends Shape
 {
     /**
      * @param array{
-     *     AdminUsers?: list<string>,
-     *     Arguments?: array<string, string>
+     *     AdminUsers?: list<string>|null,
+     *     Arguments?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

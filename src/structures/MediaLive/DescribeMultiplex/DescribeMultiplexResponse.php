@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeMultiplex;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property list<string> $AvailabilityZones
- * @property list<Shapes\MultiplexOutputDestination> $Destinations
- * @property string $Id
- * @property Shapes\MultiplexSettings $MultiplexSettings
- * @property string $Name
- * @property int $PipelinesRunningCount
- * @property int $ProgramCount
- * @property 'CREATING'|'CREATE_FAILED'|'IDLE'|'STARTING'|'RUNNING'|'RECOVERING'|'STOPPING'|'DELETING'|'DELETED' $State
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property list<string>|null $AvailabilityZones
+ * @property list<Shapes\MultiplexOutputDestination>|null $Destinations
+ * @property string|null $Id
+ * @property Shapes\MultiplexSettings|null $MultiplexSettings
+ * @property string|null $Name
+ * @property int|null $PipelinesRunningCount
+ * @property int|null $ProgramCount
+ * @property 'CREATING'|'CREATE_FAILED'|'IDLE'|'STARTING'|'RUNNING'|'RECOVERING'|'STOPPING'|'DELETING'|'DELETED'|null $State
+ * @property array<string, string>|null $Tags
  */
 class DescribeMultiplexResponse extends Response
 {

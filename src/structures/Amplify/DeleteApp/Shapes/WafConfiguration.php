@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Amplify\DeleteApp\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $webAclArn
- * @property 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ASSOCIATION_SUCCESS'|'DISASSOCIATING'|'DISASSOCIATION_FAILED' $wafStatus
- * @property string $statusReason
+ * @property string|null $webAclArn
+ * @property 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ASSOCIATION_SUCCESS'|'DISASSOCIATING'|'DISASSOCIATION_FAILED'|null $wafStatus
+ * @property string|null $statusReason
  */
 class WafConfiguration extends Shape
 {
     /**
      * @param array{
-     *     webAclArn?: string,
-     *     wafStatus?: 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ASSOCIATION_SUCCESS'|'DISASSOCIATING'|'DISASSOCIATION_FAILED',
-     *     statusReason?: string
+     *     webAclArn?: string|null,
+     *     wafStatus?: 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ASSOCIATION_SUCCESS'|'DISASSOCIATING'|'DISASSOCIATION_FAILED'|null,
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

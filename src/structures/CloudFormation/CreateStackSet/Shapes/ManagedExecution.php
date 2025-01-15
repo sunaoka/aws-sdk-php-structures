@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudFormation\CreateStackSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Active
+ * @property bool|null $Active
  */
 class ManagedExecution extends Shape
 {
     /**
-     * @param array{Active?: bool} $args
+     * @param array{Active?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateTrafficMirrorTarget\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrafficMirrorTargetId
- * @property string $NetworkInterfaceId
- * @property string $NetworkLoadBalancerArn
- * @property 'network-interface'|'network-load-balancer'|'gateway-load-balancer-endpoint' $Type
- * @property string $Description
- * @property string $OwnerId
- * @property list<Tag> $Tags
- * @property string $GatewayLoadBalancerEndpointId
+ * @property string|null $TrafficMirrorTargetId
+ * @property string|null $NetworkInterfaceId
+ * @property string|null $NetworkLoadBalancerArn
+ * @property 'network-interface'|'network-load-balancer'|'gateway-load-balancer-endpoint'|null $Type
+ * @property string|null $Description
+ * @property string|null $OwnerId
+ * @property list<Tag>|null $Tags
+ * @property string|null $GatewayLoadBalancerEndpointId
  */
 class TrafficMirrorTarget extends Shape
 {
     /**
      * @param array{
-     *     TrafficMirrorTargetId?: string,
-     *     NetworkInterfaceId?: string,
-     *     NetworkLoadBalancerArn?: string,
-     *     Type?: 'network-interface'|'network-load-balancer'|'gateway-load-balancer-endpoint',
-     *     Description?: string,
-     *     OwnerId?: string,
-     *     Tags?: list<Tag>,
-     *     GatewayLoadBalancerEndpointId?: string
+     *     TrafficMirrorTargetId?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     NetworkLoadBalancerArn?: string|null,
+     *     Type?: 'network-interface'|'network-load-balancer'|'gateway-load-balancer-endpoint'|null,
+     *     Description?: string|null,
+     *     OwnerId?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     GatewayLoadBalancerEndpointId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

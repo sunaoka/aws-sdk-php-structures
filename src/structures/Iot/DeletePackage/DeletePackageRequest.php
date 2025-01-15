@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $packageName
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeletePackageRequest extends Request
 {
     /**
      * @param array{
      *     packageName: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

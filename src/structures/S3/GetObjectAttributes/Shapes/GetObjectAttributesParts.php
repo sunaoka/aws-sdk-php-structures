@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\S3\GetObjectAttributes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TotalPartsCount
- * @property int $PartNumberMarker
- * @property int $NextPartNumberMarker
- * @property int $MaxParts
- * @property bool $IsTruncated
- * @property list<ObjectPart> $Parts
+ * @property int|null $TotalPartsCount
+ * @property int|null $PartNumberMarker
+ * @property int|null $NextPartNumberMarker
+ * @property int|null $MaxParts
+ * @property bool|null $IsTruncated
+ * @property list<ObjectPart>|null $Parts
  */
 class GetObjectAttributesParts extends Shape
 {
     /**
      * @param array{
-     *     TotalPartsCount?: int,
-     *     PartNumberMarker?: int,
-     *     NextPartNumberMarker?: int,
-     *     MaxParts?: int,
-     *     IsTruncated?: bool,
-     *     Parts?: list<ObjectPart>
+     *     TotalPartsCount?: int|null,
+     *     PartNumberMarker?: int|null,
+     *     NextPartNumberMarker?: int|null,
+     *     MaxParts?: int|null,
+     *     IsTruncated?: bool|null,
+     *     Parts?: list<ObjectPart>|null
      * } $args
      */
     public function __construct(array $args = [])

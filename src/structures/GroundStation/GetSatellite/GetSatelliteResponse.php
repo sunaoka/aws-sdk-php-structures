@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\GroundStation\GetSatellite;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\EphemerisMetaData $currentEphemeris
- * @property list<string> $groundStations
- * @property int<0, 99999> $noradSatelliteID
- * @property string $satelliteArn
- * @property string $satelliteId
+ * @property Shapes\EphemerisMetaData|null $currentEphemeris
+ * @property list<string>|null $groundStations
+ * @property int<0, 99999>|null $noradSatelliteID
+ * @property string|null $satelliteArn
+ * @property string|null $satelliteId
  */
 class GetSatelliteResponse extends Response
 {

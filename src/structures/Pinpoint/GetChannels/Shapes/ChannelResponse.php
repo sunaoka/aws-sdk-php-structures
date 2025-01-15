@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetChannels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationId
- * @property string $CreationDate
- * @property bool $Enabled
- * @property bool $HasCredential
- * @property string $Id
- * @property bool $IsArchived
- * @property string $LastModifiedBy
- * @property string $LastModifiedDate
- * @property int $Version
+ * @property string|null $ApplicationId
+ * @property string|null $CreationDate
+ * @property bool|null $Enabled
+ * @property bool|null $HasCredential
+ * @property string|null $Id
+ * @property bool|null $IsArchived
+ * @property string|null $LastModifiedBy
+ * @property string|null $LastModifiedDate
+ * @property int|null $Version
  */
 class ChannelResponse extends Shape
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     CreationDate?: string,
-     *     Enabled?: bool,
-     *     HasCredential?: bool,
-     *     Id?: string,
-     *     IsArchived?: bool,
-     *     LastModifiedBy?: string,
-     *     LastModifiedDate?: string,
-     *     Version?: int
+     *     ApplicationId?: string|null,
+     *     CreationDate?: string|null,
+     *     Enabled?: bool|null,
+     *     HasCredential?: bool|null,
+     *     Id?: string|null,
+     *     IsArchived?: bool|null,
+     *     LastModifiedBy?: string|null,
+     *     LastModifiedDate?: string|null,
+     *     Version?: int|null
      * } $args
      */
     public function __construct(array $args = [])

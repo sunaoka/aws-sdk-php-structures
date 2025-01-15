@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateAssetRevision;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property string $domainIdentifier
- * @property list<Shapes\FormInput> $formsInput
- * @property list<string> $glossaryTerms
+ * @property list<Shapes\FormInput>|null $formsInput
+ * @property list<string>|null $glossaryTerms
  * @property string $identifier
  * @property string $name
- * @property Shapes\PredictionConfiguration $predictionConfiguration
- * @property string $typeRevision
+ * @property Shapes\PredictionConfiguration|null $predictionConfiguration
+ * @property string|null $typeRevision
  */
 class CreateAssetRevisionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     domainIdentifier: string,
-     *     formsInput?: list<Shapes\FormInput>,
-     *     glossaryTerms?: list<string>,
+     *     formsInput?: list<Shapes\FormInput>|null,
+     *     glossaryTerms?: list<string>|null,
      *     identifier: string,
      *     name: string,
-     *     predictionConfiguration?: Shapes\PredictionConfiguration,
-     *     typeRevision?: string
+     *     predictionConfiguration?: Shapes\PredictionConfiguration|null,
+     *     typeRevision?: string|null
      * } $args
      */
     public function __construct(array $args)

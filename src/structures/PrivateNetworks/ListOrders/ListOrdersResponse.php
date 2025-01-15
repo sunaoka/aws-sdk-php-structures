@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\ListOrders;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\Order> $orders
+ * @property string|null $nextToken
+ * @property list<Shapes\Order>|null $orders
  */
 class ListOrdersResponse extends Response
 {

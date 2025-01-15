@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\AssignPrivateIpAddresses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrivateIpAddress
+ * @property string|null $PrivateIpAddress
  */
 class AssignedPrivateIpAddress extends Shape
 {
     /**
-     * @param array{PrivateIpAddress?: string} $args
+     * @param array{PrivateIpAddress?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -8,16 +8,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'IAM'|'QUICKSIGHT'|'IAM_IDENTITY_CENTER' $IdentityType
  * @property string $Email
  * @property 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|'ADMIN_PRO'|'AUTHOR_PRO'|'READER_PRO' $UserRole
- * @property string $IamArn
- * @property string $SessionName
+ * @property string|null $IamArn
+ * @property string|null $SessionName
  * @property string $AwsAccountId
  * @property string $Namespace
- * @property string $UserName
- * @property string $CustomPermissionsName
- * @property string $ExternalLoginFederationProviderType
- * @property string $CustomFederationProviderUrl
- * @property string $ExternalLoginId
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $UserName
+ * @property string|null $CustomPermissionsName
+ * @property string|null $ExternalLoginFederationProviderType
+ * @property string|null $CustomFederationProviderUrl
+ * @property string|null $ExternalLoginId
+ * @property list<Shapes\Tag>|null $Tags
  */
 class RegisterUserRequest extends Request
 {
@@ -26,16 +26,16 @@ class RegisterUserRequest extends Request
      *     IdentityType: 'IAM'|'QUICKSIGHT'|'IAM_IDENTITY_CENTER',
      *     Email: string,
      *     UserRole: 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|'ADMIN_PRO'|'AUTHOR_PRO'|'READER_PRO',
-     *     IamArn?: string,
-     *     SessionName?: string,
+     *     IamArn?: string|null,
+     *     SessionName?: string|null,
      *     AwsAccountId: string,
      *     Namespace: string,
-     *     UserName?: string,
-     *     CustomPermissionsName?: string,
-     *     ExternalLoginFederationProviderType?: string,
-     *     CustomFederationProviderUrl?: string,
-     *     ExternalLoginId?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     UserName?: string|null,
+     *     CustomPermissionsName?: string|null,
+     *     ExternalLoginFederationProviderType?: string|null,
+     *     CustomFederationProviderUrl?: string|null,
+     *     ExternalLoginId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

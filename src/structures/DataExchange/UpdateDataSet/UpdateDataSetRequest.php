@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataSetId
- * @property string $Description
- * @property string $Name
+ * @property string|null $Description
+ * @property string|null $Name
  */
 class UpdateDataSetRequest extends Request
 {
     /**
      * @param array{
      *     DataSetId: string,
-     *     Description?: string,
-     *     Name?: string
+     *     Description?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

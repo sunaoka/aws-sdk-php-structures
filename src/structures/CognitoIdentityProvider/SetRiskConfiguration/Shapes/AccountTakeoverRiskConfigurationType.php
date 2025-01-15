@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\SetRiskConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NotifyConfigurationType $NotifyConfiguration
+ * @property NotifyConfigurationType|null $NotifyConfiguration
  * @property AccountTakeoverActionsType $Actions
  */
 class AccountTakeoverRiskConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     NotifyConfiguration?: NotifyConfigurationType,
+     *     NotifyConfiguration?: NotifyConfigurationType|null,
      *     Actions: AccountTakeoverActionsType
      * } $args
      */

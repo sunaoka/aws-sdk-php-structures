@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\CreateDataset;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $datasetName
- * @property string $datasetArn
- * @property Shapes\RetentionPeriod $retentionPeriod
+ * @property string|null $datasetName
+ * @property string|null $datasetArn
+ * @property Shapes\RetentionPeriod|null $retentionPeriod
  */
 class CreateDatasetResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribeAssetModelCompositeModel\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MeasurementProcessingConfig $processingConfig
+ * @property MeasurementProcessingConfig|null $processingConfig
  */
 class Measurement extends Shape
 {
     /**
-     * @param array{processingConfig?: MeasurementProcessingConfig} $args
+     * @param array{processingConfig?: MeasurementProcessingConfig|null} $args
      */
     public function __construct(array $args = [])
     {

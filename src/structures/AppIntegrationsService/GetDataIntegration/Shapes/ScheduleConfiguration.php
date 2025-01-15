@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\GetDataIntegration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FirstExecutionFrom
- * @property string $Object
+ * @property string|null $FirstExecutionFrom
+ * @property string|null $Object
  * @property string $ScheduleExpression
  */
 class ScheduleConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FirstExecutionFrom?: string,
-     *     Object?: string,
+     *     FirstExecutionFrom?: string|null,
+     *     Object?: string|null,
      *     ScheduleExpression: string
      * } $args
      */

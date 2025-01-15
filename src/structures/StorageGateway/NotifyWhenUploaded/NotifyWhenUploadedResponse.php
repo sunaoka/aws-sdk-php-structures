@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\StorageGateway\NotifyWhenUploaded;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FileShareARN
- * @property string $NotificationId
+ * @property string|null $FileShareARN
+ * @property string|null $NotificationId
  */
 class NotifyWhenUploadedResponse extends Response
 {

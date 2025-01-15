@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\ListRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $recommendationId
- * @property string $accountId
- * @property string $region
- * @property string $resourceId
- * @property string $resourceArn
- * @property string $currentResourceType
- * @property string $recommendedResourceType
- * @property double $estimatedMonthlySavings
- * @property double $estimatedSavingsPercentage
- * @property double $estimatedMonthlyCost
- * @property string $currencyCode
- * @property string $implementationEffort
- * @property bool $restartNeeded
- * @property string $actionType
- * @property bool $rollbackPossible
- * @property string $currentResourceSummary
- * @property string $recommendedResourceSummary
- * @property \Aws\Api\DateTimeResult $lastRefreshTimestamp
- * @property int $recommendationLookbackPeriodInDays
- * @property 'ComputeOptimizer'|'CostExplorer' $source
- * @property list<Tag> $tags
+ * @property string|null $recommendationId
+ * @property string|null $accountId
+ * @property string|null $region
+ * @property string|null $resourceId
+ * @property string|null $resourceArn
+ * @property string|null $currentResourceType
+ * @property string|null $recommendedResourceType
+ * @property double|null $estimatedMonthlySavings
+ * @property double|null $estimatedSavingsPercentage
+ * @property double|null $estimatedMonthlyCost
+ * @property string|null $currencyCode
+ * @property string|null $implementationEffort
+ * @property bool|null $restartNeeded
+ * @property string|null $actionType
+ * @property bool|null $rollbackPossible
+ * @property string|null $currentResourceSummary
+ * @property string|null $recommendedResourceSummary
+ * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
+ * @property int|null $recommendationLookbackPeriodInDays
+ * @property 'ComputeOptimizer'|'CostExplorer'|null $source
+ * @property list<Tag>|null $tags
  */
 class Recommendation extends Shape
 {
     /**
      * @param array{
-     *     recommendationId?: string,
-     *     accountId?: string,
-     *     region?: string,
-     *     resourceId?: string,
-     *     resourceArn?: string,
-     *     currentResourceType?: string,
-     *     recommendedResourceType?: string,
-     *     estimatedMonthlySavings?: double,
-     *     estimatedSavingsPercentage?: double,
-     *     estimatedMonthlyCost?: double,
-     *     currencyCode?: string,
-     *     implementationEffort?: string,
-     *     restartNeeded?: bool,
-     *     actionType?: string,
-     *     rollbackPossible?: bool,
-     *     currentResourceSummary?: string,
-     *     recommendedResourceSummary?: string,
-     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult,
-     *     recommendationLookbackPeriodInDays?: int,
-     *     source?: 'ComputeOptimizer'|'CostExplorer',
-     *     tags?: list<Tag>
+     *     recommendationId?: string|null,
+     *     accountId?: string|null,
+     *     region?: string|null,
+     *     resourceId?: string|null,
+     *     resourceArn?: string|null,
+     *     currentResourceType?: string|null,
+     *     recommendedResourceType?: string|null,
+     *     estimatedMonthlySavings?: double|null,
+     *     estimatedSavingsPercentage?: double|null,
+     *     estimatedMonthlyCost?: double|null,
+     *     currencyCode?: string|null,
+     *     implementationEffort?: string|null,
+     *     restartNeeded?: bool|null,
+     *     actionType?: string|null,
+     *     rollbackPossible?: bool|null,
+     *     currentResourceSummary?: string|null,
+     *     recommendedResourceSummary?: string|null,
+     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     recommendationLookbackPeriodInDays?: int|null,
+     *     source?: 'ComputeOptimizer'|'CostExplorer'|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

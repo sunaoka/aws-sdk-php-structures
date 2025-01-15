@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BodySectionDynamicCategoryDimensionConfiguration $DynamicCategoryDimensionConfiguration
- * @property BodySectionDynamicNumericDimensionConfiguration $DynamicNumericDimensionConfiguration
+ * @property BodySectionDynamicCategoryDimensionConfiguration|null $DynamicCategoryDimensionConfiguration
+ * @property BodySectionDynamicNumericDimensionConfiguration|null $DynamicNumericDimensionConfiguration
  */
 class BodySectionRepeatDimensionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DynamicCategoryDimensionConfiguration?: BodySectionDynamicCategoryDimensionConfiguration,
-     *     DynamicNumericDimensionConfiguration?: BodySectionDynamicNumericDimensionConfiguration
+     *     DynamicCategoryDimensionConfiguration?: BodySectionDynamicCategoryDimensionConfiguration|null,
+     *     DynamicNumericDimensionConfiguration?: BodySectionDynamicNumericDimensionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

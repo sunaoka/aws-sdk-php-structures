@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\FSx\CreateFileSystemFromBackup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WeeklyMaintenanceStartTime
- * @property string $ImportPath
- * @property string $ExportPath
- * @property int<1, 512000> $ImportedFileChunkSize
- * @property 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2' $DeploymentType
- * @property 'NONE'|'NEW'|'NEW_CHANGED'|'NEW_CHANGED_DELETED' $AutoImportPolicy
- * @property int<12, 1000> $PerUnitStorageThroughput
- * @property string $DailyAutomaticBackupStartTime
- * @property int<0, 90> $AutomaticBackupRetentionDays
- * @property bool $CopyTagsToBackups
- * @property 'NONE'|'READ' $DriveCacheType
- * @property 'NONE'|'LZ4' $DataCompressionType
- * @property bool $EfaEnabled
- * @property LustreLogCreateConfiguration $LogConfiguration
- * @property LustreRootSquashConfiguration $RootSquashConfiguration
- * @property CreateFileSystemLustreMetadataConfiguration $MetadataConfiguration
+ * @property string|null $WeeklyMaintenanceStartTime
+ * @property string|null $ImportPath
+ * @property string|null $ExportPath
+ * @property int<1, 512000>|null $ImportedFileChunkSize
+ * @property 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2'|null $DeploymentType
+ * @property 'NONE'|'NEW'|'NEW_CHANGED'|'NEW_CHANGED_DELETED'|null $AutoImportPolicy
+ * @property int<12, 1000>|null $PerUnitStorageThroughput
+ * @property string|null $DailyAutomaticBackupStartTime
+ * @property int<0, 90>|null $AutomaticBackupRetentionDays
+ * @property bool|null $CopyTagsToBackups
+ * @property 'NONE'|'READ'|null $DriveCacheType
+ * @property 'NONE'|'LZ4'|null $DataCompressionType
+ * @property bool|null $EfaEnabled
+ * @property LustreLogCreateConfiguration|null $LogConfiguration
+ * @property LustreRootSquashConfiguration|null $RootSquashConfiguration
+ * @property CreateFileSystemLustreMetadataConfiguration|null $MetadataConfiguration
  */
 class CreateFileSystemLustreConfiguration extends Shape
 {
     /**
      * @param array{
-     *     WeeklyMaintenanceStartTime?: string,
-     *     ImportPath?: string,
-     *     ExportPath?: string,
-     *     ImportedFileChunkSize?: int<1, 512000>,
-     *     DeploymentType?: 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2',
-     *     AutoImportPolicy?: 'NONE'|'NEW'|'NEW_CHANGED'|'NEW_CHANGED_DELETED',
-     *     PerUnitStorageThroughput?: int<12, 1000>,
-     *     DailyAutomaticBackupStartTime?: string,
-     *     AutomaticBackupRetentionDays?: int<0, 90>,
-     *     CopyTagsToBackups?: bool,
-     *     DriveCacheType?: 'NONE'|'READ',
-     *     DataCompressionType?: 'NONE'|'LZ4',
-     *     EfaEnabled?: bool,
-     *     LogConfiguration?: LustreLogCreateConfiguration,
-     *     RootSquashConfiguration?: LustreRootSquashConfiguration,
-     *     MetadataConfiguration?: CreateFileSystemLustreMetadataConfiguration
+     *     WeeklyMaintenanceStartTime?: string|null,
+     *     ImportPath?: string|null,
+     *     ExportPath?: string|null,
+     *     ImportedFileChunkSize?: int<1, 512000>|null,
+     *     DeploymentType?: 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2'|null,
+     *     AutoImportPolicy?: 'NONE'|'NEW'|'NEW_CHANGED'|'NEW_CHANGED_DELETED'|null,
+     *     PerUnitStorageThroughput?: int<12, 1000>|null,
+     *     DailyAutomaticBackupStartTime?: string|null,
+     *     AutomaticBackupRetentionDays?: int<0, 90>|null,
+     *     CopyTagsToBackups?: bool|null,
+     *     DriveCacheType?: 'NONE'|'READ'|null,
+     *     DataCompressionType?: 'NONE'|'LZ4'|null,
+     *     EfaEnabled?: bool|null,
+     *     LogConfiguration?: LustreLogCreateConfiguration|null,
+     *     RootSquashConfiguration?: LustreRootSquashConfiguration|null,
+     *     MetadataConfiguration?: CreateFileSystemLustreMetadataConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

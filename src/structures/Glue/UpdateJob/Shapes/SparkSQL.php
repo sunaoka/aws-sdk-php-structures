@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Inputs
  * @property string $SqlQuery
  * @property list<SqlAlias> $SqlAliases
- * @property list<GlueSchema> $OutputSchemas
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class SparkSQL extends Shape
 {
@@ -19,7 +19,7 @@ class SparkSQL extends Shape
      *     Inputs: list<string>,
      *     SqlQuery: string,
      *     SqlAliases: list<SqlAlias>,
-     *     OutputSchemas?: list<GlueSchema>
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\StartAssess
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'StrategyRecommendationsApplicationDataCollector'|'ManualImport'|'ApplicationDiscoveryService' $assessmentDataSourceType
- * @property list<Shapes\AssessmentTarget> $assessmentTargets
- * @property string $s3bucketForAnalysisData
- * @property string $s3bucketForReportData
+ * @property 'StrategyRecommendationsApplicationDataCollector'|'ManualImport'|'ApplicationDiscoveryService'|null $assessmentDataSourceType
+ * @property list<Shapes\AssessmentTarget>|null $assessmentTargets
+ * @property string|null $s3bucketForAnalysisData
+ * @property string|null $s3bucketForReportData
  */
 class StartAssessmentRequest extends Request
 {
     /**
      * @param array{
-     *     assessmentDataSourceType?: 'StrategyRecommendationsApplicationDataCollector'|'ManualImport'|'ApplicationDiscoveryService',
-     *     assessmentTargets?: list<Shapes\AssessmentTarget>,
-     *     s3bucketForAnalysisData?: string,
-     *     s3bucketForReportData?: string
+     *     assessmentDataSourceType?: 'StrategyRecommendationsApplicationDataCollector'|'ManualImport'|'ApplicationDiscoveryService'|null,
+     *     assessmentTargets?: list<Shapes\AssessmentTarget>|null,
+     *     s3bucketForAnalysisData?: string|null,
+     *     s3bucketForReportData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

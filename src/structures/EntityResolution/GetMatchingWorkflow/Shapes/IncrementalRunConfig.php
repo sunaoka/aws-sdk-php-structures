@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetMatchingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IMMEDIATE' $incrementalRunType
+ * @property 'IMMEDIATE'|null $incrementalRunType
  */
 class IncrementalRunConfig extends Shape
 {
     /**
-     * @param array{incrementalRunType?: 'IMMEDIATE'} $args
+     * @param array{incrementalRunType?: 'IMMEDIATE'|null} $args
      */
     public function __construct(array $args = [])
     {

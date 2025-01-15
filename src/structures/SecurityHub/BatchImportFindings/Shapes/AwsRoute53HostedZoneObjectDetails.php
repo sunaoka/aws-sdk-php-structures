@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property AwsRoute53HostedZoneConfigDetails $Config
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property AwsRoute53HostedZoneConfigDetails|null $Config
  */
 class AwsRoute53HostedZoneObjectDetails extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Config?: AwsRoute53HostedZoneConfigDetails
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Config?: AwsRoute53HostedZoneConfigDetails|null
      * } $args
      */
     public function __construct(array $args = [])

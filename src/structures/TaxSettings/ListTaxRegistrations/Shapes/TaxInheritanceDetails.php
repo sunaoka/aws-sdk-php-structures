@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TaxSettings\ListTaxRegistrations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $inheritanceObtainedReason
- * @property string $parentEntityId
+ * @property string|null $inheritanceObtainedReason
+ * @property string|null $parentEntityId
  */
 class TaxInheritanceDetails extends Shape
 {
     /**
      * @param array{
-     *     inheritanceObtainedReason?: string,
-     *     parentEntityId?: string
+     *     inheritanceObtainedReason?: string|null,
+     *     parentEntityId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GroupingAppComponent $groupingAppComponent
  * @property string $groupingRecommendationId
  * @property list<string> $recommendationReasons
- * @property 'DistinctBusinessPurpose'|'SeparateDataConcern'|'DistinctUserGroupHandling'|'Other' $rejectionReason
+ * @property 'DistinctBusinessPurpose'|'SeparateDataConcern'|'DistinctUserGroupHandling'|'Other'|null $rejectionReason
  * @property list<GroupingResource> $resources
  * @property double $score
  * @property 'Accepted'|'Rejected'|'PendingDecision' $status
@@ -24,7 +24,7 @@ class GroupingRecommendation extends Shape
      *     groupingAppComponent: GroupingAppComponent,
      *     groupingRecommendationId: string,
      *     recommendationReasons: list<string>,
-     *     rejectionReason?: 'DistinctBusinessPurpose'|'SeparateDataConcern'|'DistinctUserGroupHandling'|'Other',
+     *     rejectionReason?: 'DistinctBusinessPurpose'|'SeparateDataConcern'|'DistinctUserGroupHandling'|'Other'|null,
      *     resources: list<GroupingResource>,
      *     score: double,
      *     status: 'Accepted'|'Rejected'|'PendingDecision'

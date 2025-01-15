@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeDomains\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property bool $InternalUserDatabaseEnabled
- * @property SAMLOptionsOutput $SAMLOptions
- * @property JWTOptionsOutput $JWTOptions
- * @property \Aws\Api\DateTimeResult $AnonymousAuthDisableDate
- * @property bool $AnonymousAuthEnabled
+ * @property bool|null $Enabled
+ * @property bool|null $InternalUserDatabaseEnabled
+ * @property SAMLOptionsOutput|null $SAMLOptions
+ * @property JWTOptionsOutput|null $JWTOptions
+ * @property \Aws\Api\DateTimeResult|null $AnonymousAuthDisableDate
+ * @property bool|null $AnonymousAuthEnabled
  */
 class AdvancedSecurityOptions extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     InternalUserDatabaseEnabled?: bool,
-     *     SAMLOptions?: SAMLOptionsOutput,
-     *     JWTOptions?: JWTOptionsOutput,
-     *     AnonymousAuthDisableDate?: \Aws\Api\DateTimeResult,
-     *     AnonymousAuthEnabled?: bool
+     *     Enabled?: bool|null,
+     *     InternalUserDatabaseEnabled?: bool|null,
+     *     SAMLOptions?: SAMLOptionsOutput|null,
+     *     JWTOptions?: JWTOptionsOutput|null,
+     *     AnonymousAuthDisableDate?: \Aws\Api\DateTimeResult|null,
+     *     AnonymousAuthEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property string $Name
- * @property 'ENABLED'|'DISABLED' $Status
- * @property list<string> $EventTypeIds
- * @property list<Shapes\Target> $Targets
- * @property 'BASIC'|'FULL' $DetailType
+ * @property string|null $Name
+ * @property 'ENABLED'|'DISABLED'|null $Status
+ * @property list<string>|null $EventTypeIds
+ * @property list<Shapes\Target>|null $Targets
+ * @property 'BASIC'|'FULL'|null $DetailType
  */
 class UpdateNotificationRuleRequest extends Request
 {
     /**
      * @param array{
      *     Arn: string,
-     *     Name?: string,
-     *     Status?: 'ENABLED'|'DISABLED',
-     *     EventTypeIds?: list<string>,
-     *     Targets?: list<Shapes\Target>,
-     *     DetailType?: 'BASIC'|'FULL'
+     *     Name?: string|null,
+     *     Status?: 'ENABLED'|'DISABLED'|null,
+     *     EventTypeIds?: list<string>|null,
+     *     Targets?: list<Shapes\Target>|null,
+     *     DetailType?: 'BASIC'|'FULL'|null
      * } $args
      */
     public function __construct(array $args)

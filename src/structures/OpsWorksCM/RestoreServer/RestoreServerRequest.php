@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $BackupId
  * @property string $ServerName
- * @property string $InstanceType
- * @property string $KeyPair
+ * @property string|null $InstanceType
+ * @property string|null $KeyPair
  */
 class RestoreServerRequest extends Request
 {
@@ -16,8 +16,8 @@ class RestoreServerRequest extends Request
      * @param array{
      *     BackupId: string,
      *     ServerName: string,
-     *     InstanceType?: string,
-     *     KeyPair?: string
+     *     InstanceType?: string|null,
+     *     KeyPair?: string|null
      * } $args
      */
     public function __construct(array $args)

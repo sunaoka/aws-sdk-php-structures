@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DistributorId
- * @property 'DISABLED'|'ENABLED' $NielsenPcmToId3Tagging
+ * @property string|null $DistributorId
+ * @property 'DISABLED'|'ENABLED'|null $NielsenPcmToId3Tagging
  */
 class NielsenConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DistributorId?: string,
-     *     NielsenPcmToId3Tagging?: 'DISABLED'|'ENABLED'
+     *     DistributorId?: string|null,
+     *     NielsenPcmToId3Tagging?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

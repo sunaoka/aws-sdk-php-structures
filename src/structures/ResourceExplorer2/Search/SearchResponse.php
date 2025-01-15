@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\Search;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResourceCount $Count
- * @property string $NextToken
- * @property list<Shapes\Resource> $Resources
- * @property string $ViewArn
+ * @property Shapes\ResourceCount|null $Count
+ * @property string|null $NextToken
+ * @property list<Shapes\Resource>|null $Resources
+ * @property string|null $ViewArn
  */
 class SearchResponse extends Response
 {

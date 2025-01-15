@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $VendorName
  * @property string $Name
- * @property string $Version
- * @property list<ExcludedRule> $ExcludedRules
- * @property Statement $ScopeDownStatement
- * @property list<ManagedRuleGroupConfig> $ManagedRuleGroupConfigs
- * @property list<RuleActionOverride> $RuleActionOverrides
+ * @property string|null $Version
+ * @property list<ExcludedRule>|null $ExcludedRules
+ * @property Statement|null $ScopeDownStatement
+ * @property list<ManagedRuleGroupConfig>|null $ManagedRuleGroupConfigs
+ * @property list<RuleActionOverride>|null $RuleActionOverrides
  */
 class ManagedRuleGroupStatement extends Shape
 {
@@ -19,11 +19,11 @@ class ManagedRuleGroupStatement extends Shape
      * @param array{
      *     VendorName: string,
      *     Name: string,
-     *     Version?: string,
-     *     ExcludedRules?: list<ExcludedRule>,
-     *     ScopeDownStatement?: Statement,
-     *     ManagedRuleGroupConfigs?: list<ManagedRuleGroupConfig>,
-     *     RuleActionOverrides?: list<RuleActionOverride>
+     *     Version?: string|null,
+     *     ExcludedRules?: list<ExcludedRule>|null,
+     *     ScopeDownStatement?: Statement|null,
+     *     ManagedRuleGroupConfigs?: list<ManagedRuleGroupConfig>|null,
+     *     RuleActionOverrides?: list<RuleActionOverride>|null
      * } $args
      */
     public function __construct(array $args)

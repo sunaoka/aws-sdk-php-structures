@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetIntegration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'HTTP'|'AWS'|'MOCK'|'HTTP_PROXY'|'AWS_PROXY' $type
- * @property string $httpMethod
- * @property string $uri
- * @property 'INTERNET'|'VPC_LINK' $connectionType
- * @property string $connectionId
- * @property string $credentials
- * @property array<string, string> $requestParameters
- * @property array<string, string> $requestTemplates
- * @property string $passthroughBehavior
- * @property 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT' $contentHandling
- * @property int $timeoutInMillis
- * @property string $cacheNamespace
- * @property list<string> $cacheKeyParameters
- * @property array<string, Shapes\IntegrationResponse> $integrationResponses
- * @property Shapes\TlsConfig $tlsConfig
+ * @property 'HTTP'|'AWS'|'MOCK'|'HTTP_PROXY'|'AWS_PROXY'|null $type
+ * @property string|null $httpMethod
+ * @property string|null $uri
+ * @property 'INTERNET'|'VPC_LINK'|null $connectionType
+ * @property string|null $connectionId
+ * @property string|null $credentials
+ * @property array<string, string>|null $requestParameters
+ * @property array<string, string>|null $requestTemplates
+ * @property string|null $passthroughBehavior
+ * @property 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'|null $contentHandling
+ * @property int|null $timeoutInMillis
+ * @property string|null $cacheNamespace
+ * @property list<string>|null $cacheKeyParameters
+ * @property array<string, Shapes\IntegrationResponse>|null $integrationResponses
+ * @property Shapes\TlsConfig|null $tlsConfig
  */
 class GetIntegrationResponse extends Response
 {

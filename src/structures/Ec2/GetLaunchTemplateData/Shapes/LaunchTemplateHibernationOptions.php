@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\GetLaunchTemplateData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Configured
+ * @property bool|null $Configured
  */
 class LaunchTemplateHibernationOptions extends Shape
 {
     /**
-     * @param array{Configured?: bool} $args
+     * @param array{Configured?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

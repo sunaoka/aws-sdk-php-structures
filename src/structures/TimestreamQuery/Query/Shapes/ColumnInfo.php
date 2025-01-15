@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  * @property Type $Type
  */
 class ColumnInfo extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
+     *     Name?: string|null,
      *     Type: Type
      * } $args
      */

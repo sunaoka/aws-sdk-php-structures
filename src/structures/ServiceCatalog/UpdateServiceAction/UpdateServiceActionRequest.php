@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $Name
- * @property array<'Name'|'Version'|'AssumeRole'|'Parameters', string> $Definition
- * @property string $Description
- * @property string $AcceptLanguage
+ * @property string|null $Name
+ * @property array<'Name'|'Version'|'AssumeRole'|'Parameters', string>|null $Definition
+ * @property string|null $Description
+ * @property string|null $AcceptLanguage
  */
 class UpdateServiceActionRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     Name?: string,
-     *     Definition?: array<'Name'|'Version'|'AssumeRole'|'Parameters', string>,
-     *     Description?: string,
-     *     AcceptLanguage?: string
+     *     Name?: string|null,
+     *     Definition?: array<'Name'|'Version'|'AssumeRole'|'Parameters', string>|null,
+     *     Description?: string|null,
+     *     AcceptLanguage?: string|null
      * } $args
      */
     public function __construct(array $args)

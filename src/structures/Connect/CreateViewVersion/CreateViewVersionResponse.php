@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\CreateViewVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\View $View
+ * @property Shapes\View|null $View
  */
 class CreateViewVersionResponse extends Response
 {

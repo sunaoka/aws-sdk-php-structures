@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\DescribeChannelFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChannelFlowArn
- * @property list<Processor> $Processors
- * @property string $Name
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
+ * @property string|null $ChannelFlowArn
+ * @property list<Processor>|null $Processors
+ * @property string|null $Name
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
  */
 class ChannelFlow extends Shape
 {
     /**
      * @param array{
-     *     ChannelFlowArn?: string,
-     *     Processors?: list<Processor>,
-     *     Name?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     ChannelFlowArn?: string|null,
+     *     Processors?: list<Processor>|null,
+     *     Name?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

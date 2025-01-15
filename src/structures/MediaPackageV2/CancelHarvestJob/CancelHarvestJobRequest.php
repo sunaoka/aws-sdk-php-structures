@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ChannelName
  * @property string $OriginEndpointName
  * @property string $HarvestJobName
- * @property string $ETag
+ * @property string|null $ETag
  */
 class CancelHarvestJobRequest extends Request
 {
@@ -19,7 +19,7 @@ class CancelHarvestJobRequest extends Request
      *     ChannelName: string,
      *     OriginEndpointName: string,
      *     HarvestJobName: string,
-     *     ETag?: string
+     *     ETag?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lambda\ListLayerVersions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextMarker
- * @property list<Shapes\LayerVersionsListItem> $LayerVersions
+ * @property string|null $NextMarker
+ * @property list<Shapes\LayerVersionsListItem>|null $LayerVersions
  */
 class ListLayerVersionsResponse extends Response
 {

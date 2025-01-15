@@ -5,79 +5,79 @@ namespace Sunaoka\Aws\Structures\DocDB\ModifyDBCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AvailabilityZones
- * @property int $BackupRetentionPeriod
- * @property string $DBClusterIdentifier
- * @property string $DBClusterParameterGroup
- * @property string $DBSubnetGroup
- * @property string $Status
- * @property string $PercentProgress
- * @property \Aws\Api\DateTimeResult $EarliestRestorableTime
- * @property string $Endpoint
- * @property string $ReaderEndpoint
- * @property bool $MultiAZ
- * @property string $Engine
- * @property string $EngineVersion
- * @property \Aws\Api\DateTimeResult $LatestRestorableTime
- * @property int $Port
- * @property string $MasterUsername
- * @property string $PreferredBackupWindow
- * @property string $PreferredMaintenanceWindow
- * @property string $ReplicationSourceIdentifier
- * @property list<string> $ReadReplicaIdentifiers
- * @property list<DBClusterMember> $DBClusterMembers
- * @property list<VpcSecurityGroupMembership> $VpcSecurityGroups
- * @property string $HostedZoneId
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $DbClusterResourceId
- * @property string $DBClusterArn
- * @property list<DBClusterRole> $AssociatedRoles
- * @property string $CloneGroupId
- * @property \Aws\Api\DateTimeResult $ClusterCreateTime
- * @property list<string> $EnabledCloudwatchLogsExports
- * @property bool $DeletionProtection
- * @property string $StorageType
- * @property ClusterMasterUserSecret $MasterUserSecret
+ * @property list<string>|null $AvailabilityZones
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $DBClusterIdentifier
+ * @property string|null $DBClusterParameterGroup
+ * @property string|null $DBSubnetGroup
+ * @property string|null $Status
+ * @property string|null $PercentProgress
+ * @property \Aws\Api\DateTimeResult|null $EarliestRestorableTime
+ * @property string|null $Endpoint
+ * @property string|null $ReaderEndpoint
+ * @property bool|null $MultiAZ
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property \Aws\Api\DateTimeResult|null $LatestRestorableTime
+ * @property int|null $Port
+ * @property string|null $MasterUsername
+ * @property string|null $PreferredBackupWindow
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $ReplicationSourceIdentifier
+ * @property list<string>|null $ReadReplicaIdentifiers
+ * @property list<DBClusterMember>|null $DBClusterMembers
+ * @property list<VpcSecurityGroupMembership>|null $VpcSecurityGroups
+ * @property string|null $HostedZoneId
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $DbClusterResourceId
+ * @property string|null $DBClusterArn
+ * @property list<DBClusterRole>|null $AssociatedRoles
+ * @property string|null $CloneGroupId
+ * @property \Aws\Api\DateTimeResult|null $ClusterCreateTime
+ * @property list<string>|null $EnabledCloudwatchLogsExports
+ * @property bool|null $DeletionProtection
+ * @property string|null $StorageType
+ * @property ClusterMasterUserSecret|null $MasterUserSecret
  */
 class DBCluster extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZones?: list<string>,
-     *     BackupRetentionPeriod?: int,
-     *     DBClusterIdentifier?: string,
-     *     DBClusterParameterGroup?: string,
-     *     DBSubnetGroup?: string,
-     *     Status?: string,
-     *     PercentProgress?: string,
-     *     EarliestRestorableTime?: \Aws\Api\DateTimeResult,
-     *     Endpoint?: string,
-     *     ReaderEndpoint?: string,
-     *     MultiAZ?: bool,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     LatestRestorableTime?: \Aws\Api\DateTimeResult,
-     *     Port?: int,
-     *     MasterUsername?: string,
-     *     PreferredBackupWindow?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     ReplicationSourceIdentifier?: string,
-     *     ReadReplicaIdentifiers?: list<string>,
-     *     DBClusterMembers?: list<DBClusterMember>,
-     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>,
-     *     HostedZoneId?: string,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     DbClusterResourceId?: string,
-     *     DBClusterArn?: string,
-     *     AssociatedRoles?: list<DBClusterRole>,
-     *     CloneGroupId?: string,
-     *     ClusterCreateTime?: \Aws\Api\DateTimeResult,
-     *     EnabledCloudwatchLogsExports?: list<string>,
-     *     DeletionProtection?: bool,
-     *     StorageType?: string,
-     *     MasterUserSecret?: ClusterMasterUserSecret
+     *     AvailabilityZones?: list<string>|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     DBClusterIdentifier?: string|null,
+     *     DBClusterParameterGroup?: string|null,
+     *     DBSubnetGroup?: string|null,
+     *     Status?: string|null,
+     *     PercentProgress?: string|null,
+     *     EarliestRestorableTime?: \Aws\Api\DateTimeResult|null,
+     *     Endpoint?: string|null,
+     *     ReaderEndpoint?: string|null,
+     *     MultiAZ?: bool|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     LatestRestorableTime?: \Aws\Api\DateTimeResult|null,
+     *     Port?: int|null,
+     *     MasterUsername?: string|null,
+     *     PreferredBackupWindow?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     ReplicationSourceIdentifier?: string|null,
+     *     ReadReplicaIdentifiers?: list<string>|null,
+     *     DBClusterMembers?: list<DBClusterMember>|null,
+     *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>|null,
+     *     HostedZoneId?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     DbClusterResourceId?: string|null,
+     *     DBClusterArn?: string|null,
+     *     AssociatedRoles?: list<DBClusterRole>|null,
+     *     CloneGroupId?: string|null,
+     *     ClusterCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     EnabledCloudwatchLogsExports?: list<string>|null,
+     *     DeletionProtection?: bool|null,
+     *     StorageType?: string|null,
+     *     MasterUserSecret?: ClusterMasterUserSecret|null
      * } $args
      */
     public function __construct(array $args = [])

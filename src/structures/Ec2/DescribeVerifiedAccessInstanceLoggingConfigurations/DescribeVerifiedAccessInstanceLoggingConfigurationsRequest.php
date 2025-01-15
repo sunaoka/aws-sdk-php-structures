@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVerifiedAccessInstanceLoggingConfig
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $VerifiedAccessInstanceIds
- * @property int<1, 10> $MaxResults
- * @property string $NextToken
- * @property list<Shapes\Filter> $Filters
- * @property bool $DryRun
+ * @property list<string>|null $VerifiedAccessInstanceIds
+ * @property int<1, 10>|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<Shapes\Filter>|null $Filters
+ * @property bool|null $DryRun
  */
 class DescribeVerifiedAccessInstanceLoggingConfigurationsRequest extends Request
 {
     /**
      * @param array{
-     *     VerifiedAccessInstanceIds?: list<string>,
-     *     MaxResults?: int<1, 10>,
-     *     NextToken?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     DryRun?: bool
+     *     VerifiedAccessInstanceIds?: list<string>|null,
+     *     MaxResults?: int<1, 10>|null,
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

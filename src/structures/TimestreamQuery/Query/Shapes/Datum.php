@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ScalarValue
- * @property list<TimeSeriesDataPoint> $TimeSeriesValue
- * @property list<Datum> $ArrayValue
- * @property Row $RowValue
- * @property bool $NullValue
+ * @property string|null $ScalarValue
+ * @property list<TimeSeriesDataPoint>|null $TimeSeriesValue
+ * @property list<Datum>|null $ArrayValue
+ * @property Row|null $RowValue
+ * @property bool|null $NullValue
  */
 class Datum extends Shape
 {
     /**
      * @param array{
-     *     ScalarValue?: string,
-     *     TimeSeriesValue?: list<TimeSeriesDataPoint>,
-     *     ArrayValue?: list<Datum>,
-     *     RowValue?: Row,
-     *     NullValue?: bool
+     *     ScalarValue?: string|null,
+     *     TimeSeriesValue?: list<TimeSeriesDataPoint>|null,
+     *     ArrayValue?: list<Datum>|null,
+     *     RowValue?: Row|null,
+     *     NullValue?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

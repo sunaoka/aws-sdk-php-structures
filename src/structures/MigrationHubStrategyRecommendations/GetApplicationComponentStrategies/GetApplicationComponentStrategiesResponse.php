@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetApplicat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ApplicationComponentStrategy> $applicationComponentStrategies
+ * @property list<Shapes\ApplicationComponentStrategy>|null $applicationComponentStrategies
  */
 class GetApplicationComponentStrategiesResponse extends Response
 {

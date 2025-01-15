@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UserPoolId
- * @property int<0, 60> $Limit
- * @property string $NextToken
+ * @property int<0, 60>|null $Limit
+ * @property string|null $NextToken
  */
 class ListGroupsRequest extends Request
 {
     /**
      * @param array{
      *     UserPoolId: string,
-     *     Limit?: int<0, 60>,
-     *     NextToken?: string
+     *     Limit?: int<0, 60>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

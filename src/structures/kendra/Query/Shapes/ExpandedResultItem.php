@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\kendra\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $DocumentId
- * @property TextWithHighlights $DocumentTitle
- * @property TextWithHighlights $DocumentExcerpt
- * @property string $DocumentURI
- * @property list<DocumentAttribute> $DocumentAttributes
+ * @property string|null $Id
+ * @property string|null $DocumentId
+ * @property TextWithHighlights|null $DocumentTitle
+ * @property TextWithHighlights|null $DocumentExcerpt
+ * @property string|null $DocumentURI
+ * @property list<DocumentAttribute>|null $DocumentAttributes
  */
 class ExpandedResultItem extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     DocumentId?: string,
-     *     DocumentTitle?: TextWithHighlights,
-     *     DocumentExcerpt?: TextWithHighlights,
-     *     DocumentURI?: string,
-     *     DocumentAttributes?: list<DocumentAttribute>
+     *     Id?: string|null,
+     *     DocumentId?: string|null,
+     *     DocumentTitle?: TextWithHighlights|null,
+     *     DocumentExcerpt?: TextWithHighlights|null,
+     *     DocumentURI?: string|null,
+     *     DocumentAttributes?: list<DocumentAttribute>|null
      * } $args
      */
     public function __construct(array $args = [])

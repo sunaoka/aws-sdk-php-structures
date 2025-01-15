@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListInputDevices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FlowArn
- * @property string $RoleArn
- * @property string $SecretArn
- * @property string $SourceName
+ * @property string|null $FlowArn
+ * @property string|null $RoleArn
+ * @property string|null $SecretArn
+ * @property string|null $SourceName
  */
 class InputDeviceMediaConnectSettings extends Shape
 {
     /**
      * @param array{
-     *     FlowArn?: string,
-     *     RoleArn?: string,
-     *     SecretArn?: string,
-     *     SourceName?: string
+     *     FlowArn?: string|null,
+     *     RoleArn?: string|null,
+     *     SecretArn?: string|null,
+     *     SourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

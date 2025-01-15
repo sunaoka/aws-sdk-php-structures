@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetSearchSuggestions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PropertyNameQuery $PropertyNameQuery
+ * @property PropertyNameQuery|null $PropertyNameQuery
  */
 class SuggestionQuery extends Shape
 {
     /**
-     * @param array{PropertyNameQuery?: PropertyNameQuery} $args
+     * @param array{PropertyNameQuery?: PropertyNameQuery|null} $args
      */
     public function __construct(array $args = [])
     {

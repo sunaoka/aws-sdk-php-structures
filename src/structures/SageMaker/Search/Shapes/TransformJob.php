@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransformJobName
- * @property string $TransformJobArn
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TransformJobStatus
- * @property string $FailureReason
- * @property string $ModelName
- * @property int<0, max> $MaxConcurrentTransforms
- * @property ModelClientConfig $ModelClientConfig
- * @property int<0, max> $MaxPayloadInMB
- * @property 'MultiRecord'|'SingleRecord' $BatchStrategy
- * @property array<string, string> $Environment
- * @property TransformInput $TransformInput
- * @property TransformOutput $TransformOutput
- * @property BatchDataCaptureConfig $DataCaptureConfig
- * @property TransformResources $TransformResources
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $TransformStartTime
- * @property \Aws\Api\DateTimeResult $TransformEndTime
- * @property string $LabelingJobArn
- * @property string $AutoMLJobArn
- * @property DataProcessing $DataProcessing
- * @property ExperimentConfig $ExperimentConfig
- * @property list<Tag> $Tags
+ * @property string|null $TransformJobName
+ * @property string|null $TransformJobArn
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $TransformJobStatus
+ * @property string|null $FailureReason
+ * @property string|null $ModelName
+ * @property int<0, max>|null $MaxConcurrentTransforms
+ * @property ModelClientConfig|null $ModelClientConfig
+ * @property int<0, max>|null $MaxPayloadInMB
+ * @property 'MultiRecord'|'SingleRecord'|null $BatchStrategy
+ * @property array<string, string>|null $Environment
+ * @property TransformInput|null $TransformInput
+ * @property TransformOutput|null $TransformOutput
+ * @property BatchDataCaptureConfig|null $DataCaptureConfig
+ * @property TransformResources|null $TransformResources
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $TransformStartTime
+ * @property \Aws\Api\DateTimeResult|null $TransformEndTime
+ * @property string|null $LabelingJobArn
+ * @property string|null $AutoMLJobArn
+ * @property DataProcessing|null $DataProcessing
+ * @property ExperimentConfig|null $ExperimentConfig
+ * @property list<Tag>|null $Tags
  */
 class TransformJob extends Shape
 {
     /**
      * @param array{
-     *     TransformJobName?: string,
-     *     TransformJobArn?: string,
-     *     TransformJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
-     *     FailureReason?: string,
-     *     ModelName?: string,
-     *     MaxConcurrentTransforms?: int<0, max>,
-     *     ModelClientConfig?: ModelClientConfig,
-     *     MaxPayloadInMB?: int<0, max>,
-     *     BatchStrategy?: 'MultiRecord'|'SingleRecord',
-     *     Environment?: array<string, string>,
-     *     TransformInput?: TransformInput,
-     *     TransformOutput?: TransformOutput,
-     *     DataCaptureConfig?: BatchDataCaptureConfig,
-     *     TransformResources?: TransformResources,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     TransformStartTime?: \Aws\Api\DateTimeResult,
-     *     TransformEndTime?: \Aws\Api\DateTimeResult,
-     *     LabelingJobArn?: string,
-     *     AutoMLJobArn?: string,
-     *     DataProcessing?: DataProcessing,
-     *     ExperimentConfig?: ExperimentConfig,
-     *     Tags?: list<Tag>
+     *     TransformJobName?: string|null,
+     *     TransformJobArn?: string|null,
+     *     TransformJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null,
+     *     FailureReason?: string|null,
+     *     ModelName?: string|null,
+     *     MaxConcurrentTransforms?: int<0, max>|null,
+     *     ModelClientConfig?: ModelClientConfig|null,
+     *     MaxPayloadInMB?: int<0, max>|null,
+     *     BatchStrategy?: 'MultiRecord'|'SingleRecord'|null,
+     *     Environment?: array<string, string>|null,
+     *     TransformInput?: TransformInput|null,
+     *     TransformOutput?: TransformOutput|null,
+     *     DataCaptureConfig?: BatchDataCaptureConfig|null,
+     *     TransformResources?: TransformResources|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     TransformStartTime?: \Aws\Api\DateTimeResult|null,
+     *     TransformEndTime?: \Aws\Api\DateTimeResult|null,
+     *     LabelingJobArn?: string|null,
+     *     AutoMLJobArn?: string|null,
+     *     DataProcessing?: DataProcessing|null,
+     *     ExperimentConfig?: ExperimentConfig|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

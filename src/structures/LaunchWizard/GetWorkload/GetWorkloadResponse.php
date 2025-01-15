@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\GetWorkload;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\WorkloadData $workload
+ * @property Shapes\WorkloadData|null $workload
  */
 class GetWorkloadResponse extends Response
 {

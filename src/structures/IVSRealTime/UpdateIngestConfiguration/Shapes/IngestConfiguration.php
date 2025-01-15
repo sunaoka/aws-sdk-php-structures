@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\UpdateIngestConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
+ * @property string|null $name
  * @property string $arn
  * @property 'RTMP'|'RTMPS' $ingestProtocol
  * @property string $streamKey
  * @property string $stageArn
  * @property string $participantId
  * @property 'ACTIVE'|'INACTIVE' $state
- * @property string $userId
- * @property array<string, string> $attributes
- * @property array<string, string> $tags
+ * @property string|null $userId
+ * @property array<string, string>|null $attributes
+ * @property array<string, string>|null $tags
  */
 class IngestConfiguration extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
+     *     name?: string|null,
      *     arn: string,
      *     ingestProtocol: 'RTMP'|'RTMPS',
      *     streamKey: string,
      *     stageArn: string,
      *     participantId: string,
      *     state: 'ACTIVE'|'INACTIVE',
-     *     userId?: string,
-     *     attributes?: array<string, string>,
-     *     tags?: array<string, string>
+     *     userId?: string|null,
+     *     attributes?: array<string, string>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

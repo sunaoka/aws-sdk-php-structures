@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $findingIds
- * @property Shapes\SortCriteria $sortCriteria
+ * @property Shapes\SortCriteria|null $sortCriteria
  */
 class GetFindingsRequest extends Request
 {
     /**
      * @param array{
      *     findingIds: list<string>,
-     *     sortCriteria?: Shapes\SortCriteria
+     *     sortCriteria?: Shapes\SortCriteria|null
      * } $args
      */
     public function __construct(array $args)

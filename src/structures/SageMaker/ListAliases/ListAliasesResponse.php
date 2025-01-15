@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListAliases;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $SageMakerImageVersionAliases
- * @property string $NextToken
+ * @property list<string>|null $SageMakerImageVersionAliases
+ * @property string|null $NextToken
  */
 class ListAliasesResponse extends Response
 {

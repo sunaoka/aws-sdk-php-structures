@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $spaceName
  * @property string $displayName
- * @property string $description
+ * @property string|null $description
  */
 class CreateProjectRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateProjectRequest extends Request
      * @param array{
      *     spaceName: string,
      *     displayName: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetModelInvocationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'JSONL' $s3InputFormat
+ * @property 'JSONL'|null $s3InputFormat
  * @property string $s3Uri
- * @property string $s3BucketOwner
+ * @property string|null $s3BucketOwner
  */
 class ModelInvocationJobS3InputDataConfig extends Shape
 {
     /**
      * @param array{
-     *     s3InputFormat?: 'JSONL',
+     *     s3InputFormat?: 'JSONL'|null,
      *     s3Uri: string,
-     *     s3BucketOwner?: string
+     *     s3BucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

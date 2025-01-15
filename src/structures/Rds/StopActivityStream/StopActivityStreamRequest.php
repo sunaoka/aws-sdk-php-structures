@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceArn
- * @property bool $ApplyImmediately
+ * @property bool|null $ApplyImmediately
  */
 class StopActivityStreamRequest extends Request
 {
     /**
      * @param array{
      *     ResourceArn: string,
-     *     ApplyImmediately?: bool
+     *     ApplyImmediately?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'ScheduledAssessmentFailure'|'DriftDetected' $eventType
  * @property string $name
- * @property string $snsTopicArn
+ * @property string|null $snsTopicArn
  */
 class EventSubscription extends Shape
 {
@@ -15,7 +15,7 @@ class EventSubscription extends Shape
      * @param array{
      *     eventType: 'ScheduledAssessmentFailure'|'DriftDetected',
      *     name: string,
-     *     snsTopicArn?: string
+     *     snsTopicArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaPackage\DescribeOriginEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateArn
- * @property EncryptionContractConfiguration $EncryptionContractConfiguration
+ * @property string|null $CertificateArn
+ * @property EncryptionContractConfiguration|null $EncryptionContractConfiguration
  * @property string $ResourceId
  * @property string $RoleArn
  * @property list<string> $SystemIds
@@ -16,8 +16,8 @@ class SpekeKeyProvider extends Shape
 {
     /**
      * @param array{
-     *     CertificateArn?: string,
-     *     EncryptionContractConfiguration?: EncryptionContractConfiguration,
+     *     CertificateArn?: string|null,
+     *     EncryptionContractConfiguration?: EncryptionContractConfiguration|null,
      *     ResourceId: string,
      *     RoleArn: string,
      *     SystemIds: list<string>,

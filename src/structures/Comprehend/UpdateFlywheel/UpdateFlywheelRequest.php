@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FlywheelArn
- * @property string $ActiveModelArn
- * @property string $DataAccessRoleArn
- * @property Shapes\UpdateDataSecurityConfig $DataSecurityConfig
+ * @property string|null $ActiveModelArn
+ * @property string|null $DataAccessRoleArn
+ * @property Shapes\UpdateDataSecurityConfig|null $DataSecurityConfig
  */
 class UpdateFlywheelRequest extends Request
 {
     /**
      * @param array{
      *     FlywheelArn: string,
-     *     ActiveModelArn?: string,
-     *     DataAccessRoleArn?: string,
-     *     DataSecurityConfig?: Shapes\UpdateDataSecurityConfig
+     *     ActiveModelArn?: string|null,
+     *     DataAccessRoleArn?: string|null,
+     *     DataSecurityConfig?: Shapes\UpdateDataSecurityConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRecommendationSummaries;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\RecommendationSummary> $recommendationSummaries
+ * @property string|null $nextToken
+ * @property list<Shapes\RecommendationSummary>|null $recommendationSummaries
  */
 class GetRecommendationSummariesResponse extends Response
 {

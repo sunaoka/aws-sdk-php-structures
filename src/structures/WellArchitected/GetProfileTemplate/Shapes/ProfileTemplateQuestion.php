@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetProfileTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QuestionId
- * @property string $QuestionTitle
- * @property string $QuestionDescription
- * @property list<ProfileTemplateChoice> $QuestionChoices
- * @property int<0, max> $MinSelectedChoices
- * @property int<0, max> $MaxSelectedChoices
+ * @property string|null $QuestionId
+ * @property string|null $QuestionTitle
+ * @property string|null $QuestionDescription
+ * @property list<ProfileTemplateChoice>|null $QuestionChoices
+ * @property int<0, max>|null $MinSelectedChoices
+ * @property int<0, max>|null $MaxSelectedChoices
  */
 class ProfileTemplateQuestion extends Shape
 {
     /**
      * @param array{
-     *     QuestionId?: string,
-     *     QuestionTitle?: string,
-     *     QuestionDescription?: string,
-     *     QuestionChoices?: list<ProfileTemplateChoice>,
-     *     MinSelectedChoices?: int<0, max>,
-     *     MaxSelectedChoices?: int<0, max>
+     *     QuestionId?: string|null,
+     *     QuestionTitle?: string|null,
+     *     QuestionDescription?: string|null,
+     *     QuestionChoices?: list<ProfileTemplateChoice>|null,
+     *     MinSelectedChoices?: int<0, max>|null,
+     *     MaxSelectedChoices?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeProvisioningTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $templateArn
- * @property string $templateName
- * @property string $description
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property int $defaultVersionId
- * @property string $templateBody
- * @property bool $enabled
- * @property string $provisioningRoleArn
- * @property Shapes\ProvisioningHook $preProvisioningHook
- * @property 'FLEET_PROVISIONING'|'JITP' $type
+ * @property string|null $templateArn
+ * @property string|null $templateName
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property int|null $defaultVersionId
+ * @property string|null $templateBody
+ * @property bool|null $enabled
+ * @property string|null $provisioningRoleArn
+ * @property Shapes\ProvisioningHook|null $preProvisioningHook
+ * @property 'FLEET_PROVISIONING'|'JITP'|null $type
  */
 class DescribeProvisioningTemplateResponse extends Response
 {

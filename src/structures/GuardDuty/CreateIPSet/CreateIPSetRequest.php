@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'TXT'|'STIX'|'OTX_CSV'|'ALIEN_VAULT'|'PROOF_POINT'|'FIRE_EYE' $Format
  * @property string $Location
  * @property bool $Activate
- * @property string $ClientToken
- * @property array<string, string> $Tags
+ * @property string|null $ClientToken
+ * @property array<string, string>|null $Tags
  */
 class CreateIPSetRequest extends Request
 {
@@ -22,8 +22,8 @@ class CreateIPSetRequest extends Request
      *     Format: 'TXT'|'STIX'|'OTX_CSV'|'ALIEN_VAULT'|'PROOF_POINT'|'FIRE_EYE',
      *     Location: string,
      *     Activate: bool,
-     *     ClientToken?: string,
-     *     Tags?: array<string, string>
+     *     ClientToken?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListOfferings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MonetaryAmount $cost
- * @property 'MONTHLY' $frequency
+ * @property MonetaryAmount|null $cost
+ * @property 'MONTHLY'|null $frequency
  */
 class RecurringCharge extends Shape
 {
     /**
      * @param array{
-     *     cost?: MonetaryAmount,
-     *     frequency?: 'MONTHLY'
+     *     cost?: MonetaryAmount|null,
+     *     frequency?: 'MONTHLY'|null
      * } $args
      */
     public function __construct(array $args = [])

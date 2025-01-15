@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $type
  * @property Property $assetProperty
- * @property string $id
- * @property string $externalId
+ * @property string|null $id
+ * @property string|null $externalId
  */
 class CompositeModelProperty extends Shape
 {
@@ -18,8 +18,8 @@ class CompositeModelProperty extends Shape
      *     name: string,
      *     type: string,
      *     assetProperty: Property,
-     *     id?: string,
-     *     externalId?: string
+     *     id?: string|null,
+     *     externalId?: string|null
      * } $args
      */
     public function __construct(array $args)

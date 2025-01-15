@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\UpdateBackendAPI\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<BackendAPIAuthType> $AdditionalAuthTypes
- * @property string $ApiName
- * @property BackendAPIConflictResolution $ConflictResolution
- * @property BackendAPIAuthType $DefaultAuthType
- * @property string $Service
- * @property string $TransformSchema
+ * @property list<BackendAPIAuthType>|null $AdditionalAuthTypes
+ * @property string|null $ApiName
+ * @property BackendAPIConflictResolution|null $ConflictResolution
+ * @property BackendAPIAuthType|null $DefaultAuthType
+ * @property string|null $Service
+ * @property string|null $TransformSchema
  */
 class BackendAPIResourceConfig extends Shape
 {
     /**
      * @param array{
-     *     AdditionalAuthTypes?: list<BackendAPIAuthType>,
-     *     ApiName?: string,
-     *     ConflictResolution?: BackendAPIConflictResolution,
-     *     DefaultAuthType?: BackendAPIAuthType,
-     *     Service?: string,
-     *     TransformSchema?: string
+     *     AdditionalAuthTypes?: list<BackendAPIAuthType>|null,
+     *     ApiName?: string|null,
+     *     ConflictResolution?: BackendAPIConflictResolution|null,
+     *     DefaultAuthType?: BackendAPIAuthType|null,
+     *     Service?: string|null,
+     *     TransformSchema?: string|null
      * } $args
      */
     public function __construct(array $args = [])

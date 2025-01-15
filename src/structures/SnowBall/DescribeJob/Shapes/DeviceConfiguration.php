@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SnowBall\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SnowconeDeviceConfiguration $SnowconeDeviceConfiguration
+ * @property SnowconeDeviceConfiguration|null $SnowconeDeviceConfiguration
  */
 class DeviceConfiguration extends Shape
 {
     /**
-     * @param array{SnowconeDeviceConfiguration?: SnowconeDeviceConfiguration} $args
+     * @param array{SnowconeDeviceConfiguration?: SnowconeDeviceConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

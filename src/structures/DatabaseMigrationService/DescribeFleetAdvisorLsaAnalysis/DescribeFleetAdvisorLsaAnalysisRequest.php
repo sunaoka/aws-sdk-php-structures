@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorLs
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxRecords
- * @property string $NextToken
+ * @property int|null $MaxRecords
+ * @property string|null $NextToken
  */
 class DescribeFleetAdvisorLsaAnalysisRequest extends Request
 {
     /**
      * @param array{
-     *     MaxRecords?: int,
-     *     NextToken?: string
+     *     MaxRecords?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

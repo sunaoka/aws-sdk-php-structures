@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetExternalModels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eventTypeName
- * @property 'TEXT_CSV'|'APPLICATION_JSON' $format
+ * @property string|null $eventTypeName
+ * @property 'TEXT_CSV'|'APPLICATION_JSON'|null $format
  * @property bool $useEventVariables
- * @property string $jsonInputTemplate
- * @property string $csvInputTemplate
+ * @property string|null $jsonInputTemplate
+ * @property string|null $csvInputTemplate
  */
 class ModelInputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     eventTypeName?: string,
-     *     format?: 'TEXT_CSV'|'APPLICATION_JSON',
+     *     eventTypeName?: string|null,
+     *     format?: 'TEXT_CSV'|'APPLICATION_JSON'|null,
      *     useEventVariables: bool,
-     *     jsonInputTemplate?: string,
-     *     csvInputTemplate?: string
+     *     jsonInputTemplate?: string|null,
+     *     csvInputTemplate?: string|null
      * } $args
      */
     public function __construct(array $args)

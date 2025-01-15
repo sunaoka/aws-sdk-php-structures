@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PcaConnectorScep\GetConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Issuer
- * @property string $Subject
- * @property string $Audience
+ * @property string|null $Issuer
+ * @property string|null $Subject
+ * @property string|null $Audience
  */
 class OpenIdConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Issuer?: string,
-     *     Subject?: string,
-     *     Audience?: string
+     *     Issuer?: string|null,
+     *     Subject?: string|null,
+     *     Audience?: string|null
      * } $args
      */
     public function __construct(array $args = [])

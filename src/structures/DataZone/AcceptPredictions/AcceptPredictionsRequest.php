@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\AcceptPredictions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\AcceptChoice> $acceptChoices
- * @property Shapes\AcceptRule $acceptRule
- * @property string $clientToken
+ * @property list<Shapes\AcceptChoice>|null $acceptChoices
+ * @property Shapes\AcceptRule|null $acceptRule
+ * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $identifier
- * @property string $revision
+ * @property string|null $revision
  */
 class AcceptPredictionsRequest extends Request
 {
     /**
      * @param array{
-     *     acceptChoices?: list<Shapes\AcceptChoice>,
-     *     acceptRule?: Shapes\AcceptRule,
-     *     clientToken?: string,
+     *     acceptChoices?: list<Shapes\AcceptChoice>|null,
+     *     acceptRule?: Shapes\AcceptRule|null,
+     *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     identifier: string,
-     *     revision?: string
+     *     revision?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateContainerService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isActive
- * @property string $principalArn
+ * @property bool|null $isActive
+ * @property string|null $principalArn
  */
 class ContainerServiceECRImagePullerRole extends Shape
 {
     /**
      * @param array{
-     *     isActive?: bool,
-     *     principalArn?: string
+     *     isActive?: bool|null,
+     *     principalArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

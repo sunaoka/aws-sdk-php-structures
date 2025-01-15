@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ExportTableToPointInTime\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $ExportFromTime
- * @property \Aws\Api\DateTimeResult $ExportToTime
- * @property 'NEW_IMAGE'|'NEW_AND_OLD_IMAGES' $ExportViewType
+ * @property \Aws\Api\DateTimeResult|null $ExportFromTime
+ * @property \Aws\Api\DateTimeResult|null $ExportToTime
+ * @property 'NEW_IMAGE'|'NEW_AND_OLD_IMAGES'|null $ExportViewType
  */
 class IncrementalExportSpecification extends Shape
 {
     /**
      * @param array{
-     *     ExportFromTime?: \Aws\Api\DateTimeResult,
-     *     ExportToTime?: \Aws\Api\DateTimeResult,
-     *     ExportViewType?: 'NEW_IMAGE'|'NEW_AND_OLD_IMAGES'
+     *     ExportFromTime?: \Aws\Api\DateTimeResult|null,
+     *     ExportToTime?: \Aws\Api\DateTimeResult|null,
+     *     ExportViewType?: 'NEW_IMAGE'|'NEW_AND_OLD_IMAGES'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeBandwidthRateLimitSchedu
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GatewayARN
- * @property list<Shapes\BandwidthRateLimitInterval> $BandwidthRateLimitIntervals
+ * @property string|null $GatewayARN
+ * @property list<Shapes\BandwidthRateLimitInterval>|null $BandwidthRateLimitIntervals
  */
 class DescribeBandwidthRateLimitScheduleResponse extends Response
 {

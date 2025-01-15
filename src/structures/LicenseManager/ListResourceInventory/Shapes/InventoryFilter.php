@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property 'EQUALS'|'NOT_EQUALS'|'BEGINS_WITH'|'CONTAINS' $Condition
- * @property string $Value
+ * @property string|null $Value
  */
 class InventoryFilter extends Shape
 {
@@ -15,7 +15,7 @@ class InventoryFilter extends Shape
      * @param array{
      *     Name: string,
      *     Condition: 'EQUALS'|'NOT_EQUALS'|'BEGINS_WITH'|'CONTAINS',
-     *     Value?: string
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args)

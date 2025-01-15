@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Glue\CreateTable;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property Shapes\TableInput $TableInput
- * @property list<Shapes\PartitionIndex> $PartitionIndexes
- * @property string $TransactionId
- * @property Shapes\OpenTableFormatInput $OpenTableFormatInput
+ * @property list<Shapes\PartitionIndex>|null $PartitionIndexes
+ * @property string|null $TransactionId
+ * @property Shapes\OpenTableFormatInput|null $OpenTableFormatInput
  */
 class CreateTableRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TableInput: Shapes\TableInput,
-     *     PartitionIndexes?: list<Shapes\PartitionIndex>,
-     *     TransactionId?: string,
-     *     OpenTableFormatInput?: Shapes\OpenTableFormatInput
+     *     PartitionIndexes?: list<Shapes\PartitionIndex>|null,
+     *     TransactionId?: string|null,
+     *     OpenTableFormatInput?: Shapes\OpenTableFormatInput|null
      * } $args
      */
     public function __construct(array $args)

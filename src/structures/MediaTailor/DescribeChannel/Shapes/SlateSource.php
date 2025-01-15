@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceLocationName
- * @property string $VodSourceName
+ * @property string|null $SourceLocationName
+ * @property string|null $VodSourceName
  */
 class SlateSource extends Shape
 {
     /**
      * @param array{
-     *     SourceLocationName?: string,
-     *     VodSourceName?: string
+     *     SourceLocationName?: string|null,
+     *     VodSourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

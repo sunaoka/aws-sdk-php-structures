@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $DefinitionArn
- * @property string $Version
- * @property \Aws\Api\DateTimeResult $TaskCreatedAt
- * @property \Aws\Api\DateTimeResult $StartedAt
- * @property string $StartedBy
- * @property list<Tag> $Tags
- * @property list<Volume> $Volumes
- * @property list<Container> $Containers
- * @property string $Group
- * @property string $LaunchType
+ * @property string|null $Arn
+ * @property string|null $DefinitionArn
+ * @property string|null $Version
+ * @property \Aws\Api\DateTimeResult|null $TaskCreatedAt
+ * @property \Aws\Api\DateTimeResult|null $StartedAt
+ * @property string|null $StartedBy
+ * @property list<Tag>|null $Tags
+ * @property list<Volume>|null $Volumes
+ * @property list<Container>|null $Containers
+ * @property string|null $Group
+ * @property string|null $LaunchType
  */
 class EcsTaskDetails extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     DefinitionArn?: string,
-     *     Version?: string,
-     *     TaskCreatedAt?: \Aws\Api\DateTimeResult,
-     *     StartedAt?: \Aws\Api\DateTimeResult,
-     *     StartedBy?: string,
-     *     Tags?: list<Tag>,
-     *     Volumes?: list<Volume>,
-     *     Containers?: list<Container>,
-     *     Group?: string,
-     *     LaunchType?: string
+     *     Arn?: string|null,
+     *     DefinitionArn?: string|null,
+     *     Version?: string|null,
+     *     TaskCreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     StartedAt?: \Aws\Api\DateTimeResult|null,
+     *     StartedBy?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     Volumes?: list<Volume>|null,
+     *     Containers?: list<Container>|null,
+     *     Group?: string|null,
+     *     LaunchType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

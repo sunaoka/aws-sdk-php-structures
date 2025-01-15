@@ -5,63 +5,63 @@ namespace Sunaoka\Aws\Structures\EKS\RegisterCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $version
- * @property string $endpoint
- * @property string $roleArn
- * @property VpcConfigResponse $resourcesVpcConfig
- * @property KubernetesNetworkConfigResponse $kubernetesNetworkConfig
- * @property Logging $logging
- * @property Identity $identity
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|'PENDING' $status
- * @property Certificate $certificateAuthority
- * @property string $clientRequestToken
- * @property string $platformVersion
- * @property array<string, string> $tags
- * @property list<EncryptionConfig> $encryptionConfig
- * @property ConnectorConfigResponse $connectorConfig
- * @property string $id
- * @property ClusterHealth $health
- * @property OutpostConfigResponse $outpostConfig
- * @property AccessConfigResponse $accessConfig
- * @property UpgradePolicyResponse $upgradePolicy
- * @property ZonalShiftConfigResponse $zonalShiftConfig
- * @property RemoteNetworkConfigResponse $remoteNetworkConfig
- * @property ComputeConfigResponse $computeConfig
- * @property StorageConfigResponse $storageConfig
+ * @property string|null $name
+ * @property string|null $arn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $version
+ * @property string|null $endpoint
+ * @property string|null $roleArn
+ * @property VpcConfigResponse|null $resourcesVpcConfig
+ * @property KubernetesNetworkConfigResponse|null $kubernetesNetworkConfig
+ * @property Logging|null $logging
+ * @property Identity|null $identity
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|'PENDING'|null $status
+ * @property Certificate|null $certificateAuthority
+ * @property string|null $clientRequestToken
+ * @property string|null $platformVersion
+ * @property array<string, string>|null $tags
+ * @property list<EncryptionConfig>|null $encryptionConfig
+ * @property ConnectorConfigResponse|null $connectorConfig
+ * @property string|null $id
+ * @property ClusterHealth|null $health
+ * @property OutpostConfigResponse|null $outpostConfig
+ * @property AccessConfigResponse|null $accessConfig
+ * @property UpgradePolicyResponse|null $upgradePolicy
+ * @property ZonalShiftConfigResponse|null $zonalShiftConfig
+ * @property RemoteNetworkConfigResponse|null $remoteNetworkConfig
+ * @property ComputeConfigResponse|null $computeConfig
+ * @property StorageConfigResponse|null $storageConfig
  */
 class Cluster extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     version?: string,
-     *     endpoint?: string,
-     *     roleArn?: string,
-     *     resourcesVpcConfig?: VpcConfigResponse,
-     *     kubernetesNetworkConfig?: KubernetesNetworkConfigResponse,
-     *     logging?: Logging,
-     *     identity?: Identity,
-     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|'PENDING',
-     *     certificateAuthority?: Certificate,
-     *     clientRequestToken?: string,
-     *     platformVersion?: string,
-     *     tags?: array<string, string>,
-     *     encryptionConfig?: list<EncryptionConfig>,
-     *     connectorConfig?: ConnectorConfigResponse,
-     *     id?: string,
-     *     health?: ClusterHealth,
-     *     outpostConfig?: OutpostConfigResponse,
-     *     accessConfig?: AccessConfigResponse,
-     *     upgradePolicy?: UpgradePolicyResponse,
-     *     zonalShiftConfig?: ZonalShiftConfigResponse,
-     *     remoteNetworkConfig?: RemoteNetworkConfigResponse,
-     *     computeConfig?: ComputeConfigResponse,
-     *     storageConfig?: StorageConfigResponse
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     version?: string|null,
+     *     endpoint?: string|null,
+     *     roleArn?: string|null,
+     *     resourcesVpcConfig?: VpcConfigResponse|null,
+     *     kubernetesNetworkConfig?: KubernetesNetworkConfigResponse|null,
+     *     logging?: Logging|null,
+     *     identity?: Identity|null,
+     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|'PENDING'|null,
+     *     certificateAuthority?: Certificate|null,
+     *     clientRequestToken?: string|null,
+     *     platformVersion?: string|null,
+     *     tags?: array<string, string>|null,
+     *     encryptionConfig?: list<EncryptionConfig>|null,
+     *     connectorConfig?: ConnectorConfigResponse|null,
+     *     id?: string|null,
+     *     health?: ClusterHealth|null,
+     *     outpostConfig?: OutpostConfigResponse|null,
+     *     accessConfig?: AccessConfigResponse|null,
+     *     upgradePolicy?: UpgradePolicyResponse|null,
+     *     zonalShiftConfig?: ZonalShiftConfigResponse|null,
+     *     remoteNetworkConfig?: RemoteNetworkConfigResponse|null,
+     *     computeConfig?: ComputeConfigResponse|null,
+     *     storageConfig?: StorageConfigResponse|null
      * } $args
      */
     public function __construct(array $args = [])

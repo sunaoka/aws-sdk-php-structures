@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Outposts\ListAssets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $RackElevation
+ * @property float|null $RackElevation
  */
 class AssetLocation extends Shape
 {
     /**
-     * @param array{RackElevation?: float} $args
+     * @param array{RackElevation?: float|null} $args
      */
     public function __construct(array $args = [])
     {

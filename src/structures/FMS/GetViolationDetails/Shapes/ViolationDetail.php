@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ResourceId
  * @property string $ResourceType
  * @property list<ResourceViolation> $ResourceViolations
- * @property list<Tag> $ResourceTags
- * @property string $ResourceDescription
+ * @property list<Tag>|null $ResourceTags
+ * @property string|null $ResourceDescription
  */
 class ViolationDetail extends Shape
 {
@@ -22,8 +22,8 @@ class ViolationDetail extends Shape
      *     ResourceId: string,
      *     ResourceType: string,
      *     ResourceViolations: list<ResourceViolation>,
-     *     ResourceTags?: list<Tag>,
-     *     ResourceDescription?: string
+     *     ResourceTags?: list<Tag>|null,
+     *     ResourceDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

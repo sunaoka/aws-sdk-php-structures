@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property int<0, 1440> $DeploymentDurationInMinutes
- * @property int<0, 1440> $FinalBakeTimeInMinutes
+ * @property int<0, 1440>|null $FinalBakeTimeInMinutes
  * @property float $GrowthFactor
- * @property 'LINEAR'|'EXPONENTIAL' $GrowthType
- * @property 'NONE'|'SSM_DOCUMENT' $ReplicateTo
- * @property array<string, string> $Tags
+ * @property 'LINEAR'|'EXPONENTIAL'|null $GrowthType
+ * @property 'NONE'|'SSM_DOCUMENT'|null $ReplicateTo
+ * @property array<string, string>|null $Tags
  */
 class CreateDeploymentStrategyRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     DeploymentDurationInMinutes: int<0, 1440>,
-     *     FinalBakeTimeInMinutes?: int<0, 1440>,
+     *     FinalBakeTimeInMinutes?: int<0, 1440>|null,
      *     GrowthFactor: float,
-     *     GrowthType?: 'LINEAR'|'EXPONENTIAL',
-     *     ReplicateTo?: 'NONE'|'SSM_DOCUMENT',
-     *     Tags?: array<string, string>
+     *     GrowthType?: 'LINEAR'|'EXPONENTIAL'|null,
+     *     ReplicateTo?: 'NONE'|'SSM_DOCUMENT'|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

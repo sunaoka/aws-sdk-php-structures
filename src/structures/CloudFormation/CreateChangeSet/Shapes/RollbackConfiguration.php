@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFormation\CreateChangeSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RollbackTrigger> $RollbackTriggers
- * @property int<0, 180> $MonitoringTimeInMinutes
+ * @property list<RollbackTrigger>|null $RollbackTriggers
+ * @property int<0, 180>|null $MonitoringTimeInMinutes
  */
 class RollbackConfiguration extends Shape
 {
     /**
      * @param array{
-     *     RollbackTriggers?: list<RollbackTrigger>,
-     *     MonitoringTimeInMinutes?: int<0, 180>
+     *     RollbackTriggers?: list<RollbackTrigger>|null,
+     *     MonitoringTimeInMinutes?: int<0, 180>|null
      * } $args
      */
     public function __construct(array $args = [])

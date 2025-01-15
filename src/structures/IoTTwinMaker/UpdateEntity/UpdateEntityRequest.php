@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $workspaceId
  * @property string $entityId
- * @property string $entityName
- * @property string $description
- * @property array<string, Shapes\ComponentUpdateRequest> $componentUpdates
- * @property array<string, Shapes\CompositeComponentUpdateRequest> $compositeComponentUpdates
- * @property Shapes\ParentEntityUpdateRequest $parentEntityUpdate
+ * @property string|null $entityName
+ * @property string|null $description
+ * @property array<string, Shapes\ComponentUpdateRequest>|null $componentUpdates
+ * @property array<string, Shapes\CompositeComponentUpdateRequest>|null $compositeComponentUpdates
+ * @property Shapes\ParentEntityUpdateRequest|null $parentEntityUpdate
  */
 class UpdateEntityRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateEntityRequest extends Request
      * @param array{
      *     workspaceId: string,
      *     entityId: string,
-     *     entityName?: string,
-     *     description?: string,
-     *     componentUpdates?: array<string, Shapes\ComponentUpdateRequest>,
-     *     compositeComponentUpdates?: array<string, Shapes\CompositeComponentUpdateRequest>,
-     *     parentEntityUpdate?: Shapes\ParentEntityUpdateRequest
+     *     entityName?: string|null,
+     *     description?: string|null,
+     *     componentUpdates?: array<string, Shapes\ComponentUpdateRequest>|null,
+     *     compositeComponentUpdates?: array<string, Shapes\CompositeComponentUpdateRequest>|null,
+     *     parentEntityUpdate?: Shapes\ParentEntityUpdateRequest|null
      * } $args
      */
     public function __construct(array $args)

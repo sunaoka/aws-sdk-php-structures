@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceARN
- * @property string $NextToken
- * @property int<1, 500> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 500>|null $MaxResults
  */
 class ListManagedInsightRulesRequest extends Request
 {
     /**
      * @param array{
      *     ResourceARN: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 500>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 500>|null
      * } $args
      */
     public function __construct(array $args)

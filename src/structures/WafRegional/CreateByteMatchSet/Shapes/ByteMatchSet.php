@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ByteMatchSetId
- * @property string $Name
+ * @property string|null $Name
  * @property list<ByteMatchTuple> $ByteMatchTuples
  */
 class ByteMatchSet extends Shape
@@ -14,7 +14,7 @@ class ByteMatchSet extends Shape
     /**
      * @param array{
      *     ByteMatchSetId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     ByteMatchTuples: list<ByteMatchTuple>
      * } $args
      */

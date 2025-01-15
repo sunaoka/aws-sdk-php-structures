@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeLocationFsxOpenZfs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AUTOMATIC'|'SMB2'|'SMB3'|'SMB1'|'SMB2_0' $Version
+ * @property 'AUTOMATIC'|'SMB2'|'SMB3'|'SMB1'|'SMB2_0'|null $Version
  */
 class SmbMountOptions extends Shape
 {
     /**
-     * @param array{Version?: 'AUTOMATIC'|'SMB2'|'SMB3'|'SMB1'|'SMB2_0'} $args
+     * @param array{Version?: 'AUTOMATIC'|'SMB2'|'SMB3'|'SMB1'|'SMB2_0'|null} $args
      */
     public function __construct(array $args = [])
     {

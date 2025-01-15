@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\DeleteWorkspace;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $message
+ * @property string|null $message
  */
 class DeleteWorkspaceResponse extends Response
 {

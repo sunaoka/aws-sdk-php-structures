@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\PutObjectLockConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Enabled' $ObjectLockEnabled
- * @property ObjectLockRule $Rule
+ * @property 'Enabled'|null $ObjectLockEnabled
+ * @property ObjectLockRule|null $Rule
  */
 class ObjectLockConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ObjectLockEnabled?: 'Enabled',
-     *     Rule?: ObjectLockRule
+     *     ObjectLockEnabled?: 'Enabled'|null,
+     *     Rule?: ObjectLockRule|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeOpsItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CreatedBy
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property string $LastModifiedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property int<1, 5> $Priority
- * @property string $Source
- * @property 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed' $Status
- * @property string $OpsItemId
- * @property string $Title
- * @property array<string, OpsItemDataValue> $OperationalData
- * @property string $Category
- * @property string $Severity
- * @property string $OpsItemType
- * @property \Aws\Api\DateTimeResult $ActualStartTime
- * @property \Aws\Api\DateTimeResult $ActualEndTime
- * @property \Aws\Api\DateTimeResult $PlannedStartTime
- * @property \Aws\Api\DateTimeResult $PlannedEndTime
+ * @property string|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property string|null $LastModifiedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property int<1, 5>|null $Priority
+ * @property string|null $Source
+ * @property 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed'|null $Status
+ * @property string|null $OpsItemId
+ * @property string|null $Title
+ * @property array<string, OpsItemDataValue>|null $OperationalData
+ * @property string|null $Category
+ * @property string|null $Severity
+ * @property string|null $OpsItemType
+ * @property \Aws\Api\DateTimeResult|null $ActualStartTime
+ * @property \Aws\Api\DateTimeResult|null $ActualEndTime
+ * @property \Aws\Api\DateTimeResult|null $PlannedStartTime
+ * @property \Aws\Api\DateTimeResult|null $PlannedEndTime
  */
 class OpsItemSummary extends Shape
 {
     /**
      * @param array{
-     *     CreatedBy?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBy?: string,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     Priority?: int<1, 5>,
-     *     Source?: string,
-     *     Status?: 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed',
-     *     OpsItemId?: string,
-     *     Title?: string,
-     *     OperationalData?: array<string, OpsItemDataValue>,
-     *     Category?: string,
-     *     Severity?: string,
-     *     OpsItemType?: string,
-     *     ActualStartTime?: \Aws\Api\DateTimeResult,
-     *     ActualEndTime?: \Aws\Api\DateTimeResult,
-     *     PlannedStartTime?: \Aws\Api\DateTimeResult,
-     *     PlannedEndTime?: \Aws\Api\DateTimeResult
+     *     CreatedBy?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBy?: string|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     Priority?: int<1, 5>|null,
+     *     Source?: string|null,
+     *     Status?: 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed'|null,
+     *     OpsItemId?: string|null,
+     *     Title?: string|null,
+     *     OperationalData?: array<string, OpsItemDataValue>|null,
+     *     Category?: string|null,
+     *     Severity?: string|null,
+     *     OpsItemType?: string|null,
+     *     ActualStartTime?: \Aws\Api\DateTimeResult|null,
+     *     ActualEndTime?: \Aws\Api\DateTimeResult|null,
+     *     PlannedStartTime?: \Aws\Api\DateTimeResult|null,
+     *     PlannedEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

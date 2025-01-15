@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $executionRoleArn
  * @property string $releaseLabel
- * @property ParametricConfigurationOverrides $configurationOverrides
+ * @property ParametricConfigurationOverrides|null $configurationOverrides
  * @property JobDriver $jobDriver
- * @property array<string, TemplateParameterConfiguration> $parameterConfiguration
- * @property array<string, string> $jobTags
+ * @property array<string, TemplateParameterConfiguration>|null $parameterConfiguration
+ * @property array<string, string>|null $jobTags
  */
 class JobTemplateData extends Shape
 {
@@ -18,10 +18,10 @@ class JobTemplateData extends Shape
      * @param array{
      *     executionRoleArn: string,
      *     releaseLabel: string,
-     *     configurationOverrides?: ParametricConfigurationOverrides,
+     *     configurationOverrides?: ParametricConfigurationOverrides|null,
      *     jobDriver: JobDriver,
-     *     parameterConfiguration?: array<string, TemplateParameterConfiguration>,
-     *     jobTags?: array<string, string>
+     *     parameterConfiguration?: array<string, TemplateParameterConfiguration>|null,
+     *     jobTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

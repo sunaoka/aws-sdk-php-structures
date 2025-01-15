@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectCases\UpdateLayout\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Section> $sections
+ * @property list<Section>|null $sections
  */
 class LayoutSections extends Shape
 {
     /**
-     * @param array{sections?: list<Section>} $args
+     * @param array{sections?: list<Section>|null} $args
      */
     public function __construct(array $args = [])
     {

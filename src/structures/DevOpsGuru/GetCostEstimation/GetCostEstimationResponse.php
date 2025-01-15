@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\GetCostEstimation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\CostEstimationResourceCollectionFilter $ResourceCollection
- * @property 'ONGOING'|'COMPLETED' $Status
- * @property list<Shapes\ServiceResourceCost> $Costs
- * @property Shapes\CostEstimationTimeRange $TimeRange
- * @property double $TotalCost
- * @property string $NextToken
+ * @property Shapes\CostEstimationResourceCollectionFilter|null $ResourceCollection
+ * @property 'ONGOING'|'COMPLETED'|null $Status
+ * @property list<Shapes\ServiceResourceCost>|null $Costs
+ * @property Shapes\CostEstimationTimeRange|null $TimeRange
+ * @property double|null $TotalCost
+ * @property string|null $NextToken
  */
 class GetCostEstimationResponse extends Response
 {

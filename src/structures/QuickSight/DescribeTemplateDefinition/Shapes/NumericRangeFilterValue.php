@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $StaticValue
- * @property string $Parameter
+ * @property double|null $StaticValue
+ * @property string|null $Parameter
  */
 class NumericRangeFilterValue extends Shape
 {
     /**
      * @param array{
-     *     StaticValue?: double,
-     *     Parameter?: string
+     *     StaticValue?: double|null,
+     *     Parameter?: string|null
      * } $args
      */
     public function __construct(array $args = [])

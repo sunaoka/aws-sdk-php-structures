@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\CopyPackageVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $revision
- * @property 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted' $status
+ * @property string|null $revision
+ * @property 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted'|null $status
  */
 class SuccessfulPackageVersionInfo extends Shape
 {
     /**
      * @param array{
-     *     revision?: string,
-     *     status?: 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted'
+     *     revision?: string|null,
+     *     status?: 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyInstancePlacement;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GroupName
- * @property int $PartitionNumber
- * @property string $HostResourceGroupArn
- * @property string $GroupId
+ * @property string|null $GroupName
+ * @property int|null $PartitionNumber
+ * @property string|null $HostResourceGroupArn
+ * @property string|null $GroupId
  * @property string $InstanceId
- * @property 'default'|'dedicated'|'host' $Tenancy
- * @property 'default'|'host' $Affinity
- * @property string $HostId
+ * @property 'default'|'dedicated'|'host'|null $Tenancy
+ * @property 'default'|'host'|null $Affinity
+ * @property string|null $HostId
  */
 class ModifyInstancePlacementRequest extends Request
 {
     /**
      * @param array{
-     *     GroupName?: string,
-     *     PartitionNumber?: int,
-     *     HostResourceGroupArn?: string,
-     *     GroupId?: string,
+     *     GroupName?: string|null,
+     *     PartitionNumber?: int|null,
+     *     HostResourceGroupArn?: string|null,
+     *     GroupId?: string|null,
      *     InstanceId: string,
-     *     Tenancy?: 'default'|'dedicated'|'host',
-     *     Affinity?: 'default'|'host',
-     *     HostId?: string
+     *     Tenancy?: 'default'|'dedicated'|'host'|null,
+     *     Affinity?: 'default'|'host'|null,
+     *     HostId?: string|null
      * } $args
      */
     public function __construct(array $args)

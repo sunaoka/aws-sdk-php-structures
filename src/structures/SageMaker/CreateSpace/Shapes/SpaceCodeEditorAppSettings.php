@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateSpace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceSpec $DefaultResourceSpec
- * @property SpaceAppLifecycleManagement $AppLifecycleManagement
+ * @property ResourceSpec|null $DefaultResourceSpec
+ * @property SpaceAppLifecycleManagement|null $AppLifecycleManagement
  */
 class SpaceCodeEditorAppSettings extends Shape
 {
     /**
      * @param array{
-     *     DefaultResourceSpec?: ResourceSpec,
-     *     AppLifecycleManagement?: SpaceAppLifecycleManagement
+     *     DefaultResourceSpec?: ResourceSpec|null,
+     *     AppLifecycleManagement?: SpaceAppLifecycleManagement|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryControlConfig\DescribeControlPan
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ControlPanel $ControlPanel
+ * @property Shapes\ControlPanel|null $ControlPanel
  */
 class DescribeControlPanelResponse extends Response
 {

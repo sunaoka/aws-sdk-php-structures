@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\ListAIAgents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<TagCondition> $andConditions
- * @property TagCondition $tagCondition
+ * @property list<TagCondition>|null $andConditions
+ * @property TagCondition|null $tagCondition
  */
 class OrCondition extends Shape
 {
     /**
      * @param array{
-     *     andConditions?: list<TagCondition>,
-     *     tagCondition?: TagCondition
+     *     andConditions?: list<TagCondition>|null,
+     *     tagCondition?: TagCondition|null
      * } $args
      */
     public function __construct(array $args = [])

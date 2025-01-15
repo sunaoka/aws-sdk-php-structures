@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  */
 class DescribeServiceActionRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     AcceptLanguage?: string
+     *     AcceptLanguage?: string|null
      * } $args
      */
     public function __construct(array $args)

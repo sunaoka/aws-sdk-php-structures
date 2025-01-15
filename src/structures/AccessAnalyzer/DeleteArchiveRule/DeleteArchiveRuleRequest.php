@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $analyzerName
  * @property string $ruleName
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteArchiveRuleRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteArchiveRuleRequest extends Request
      * @param array{
      *     analyzerName: string,
      *     ruleName: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

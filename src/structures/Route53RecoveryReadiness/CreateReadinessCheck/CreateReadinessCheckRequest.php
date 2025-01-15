@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ReadinessCheckName
  * @property string $ResourceSetName
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateReadinessCheckRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateReadinessCheckRequest extends Request
      * @param array{
      *     ReadinessCheckName: string,
      *     ResourceSetName: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

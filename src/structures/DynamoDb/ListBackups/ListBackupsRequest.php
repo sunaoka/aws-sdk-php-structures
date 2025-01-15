@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ListBackups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TableName
- * @property int<1, 100> $Limit
- * @property \Aws\Api\DateTimeResult $TimeRangeLowerBound
- * @property \Aws\Api\DateTimeResult $TimeRangeUpperBound
- * @property string $ExclusiveStartBackupArn
- * @property 'USER'|'SYSTEM'|'AWS_BACKUP'|'ALL' $BackupType
+ * @property string|null $TableName
+ * @property int<1, 100>|null $Limit
+ * @property \Aws\Api\DateTimeResult|null $TimeRangeLowerBound
+ * @property \Aws\Api\DateTimeResult|null $TimeRangeUpperBound
+ * @property string|null $ExclusiveStartBackupArn
+ * @property 'USER'|'SYSTEM'|'AWS_BACKUP'|'ALL'|null $BackupType
  */
 class ListBackupsRequest extends Request
 {
     /**
      * @param array{
-     *     TableName?: string,
-     *     Limit?: int<1, 100>,
-     *     TimeRangeLowerBound?: \Aws\Api\DateTimeResult,
-     *     TimeRangeUpperBound?: \Aws\Api\DateTimeResult,
-     *     ExclusiveStartBackupArn?: string,
-     *     BackupType?: 'USER'|'SYSTEM'|'AWS_BACKUP'|'ALL'
+     *     TableName?: string|null,
+     *     Limit?: int<1, 100>|null,
+     *     TimeRangeLowerBound?: \Aws\Api\DateTimeResult|null,
+     *     TimeRangeUpperBound?: \Aws\Api\DateTimeResult|null,
+     *     ExclusiveStartBackupArn?: string|null,
+     *     BackupType?: 'USER'|'SYSTEM'|'AWS_BACKUP'|'ALL'|null
      * } $args
      */
     public function __construct(array $args = [])

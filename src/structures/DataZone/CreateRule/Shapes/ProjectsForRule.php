@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ALL'|'SPECIFIC' $selectionMode
- * @property list<string> $specificProjects
+ * @property list<string>|null $specificProjects
  */
 class ProjectsForRule extends Shape
 {
     /**
      * @param array{
      *     selectionMode: 'ALL'|'SPECIFIC',
-     *     specificProjects?: list<string>
+     *     specificProjects?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

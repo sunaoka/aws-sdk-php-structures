@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InclusiveStartBillingPeriod
- * @property string $ExclusiveEndBillingPeriod
+ * @property string|null $ExclusiveEndBillingPeriod
  */
 class CustomLineItemBillingPeriodRange extends Shape
 {
     /**
      * @param array{
      *     InclusiveStartBillingPeriod: string,
-     *     ExclusiveEndBillingPeriod?: string
+     *     ExclusiveEndBillingPeriod?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $stageArn
  * @property list<DestinationSummary> $destinations
  * @property 'STARTING'|'ACTIVE'|'STOPPING'|'FAILED'|'STOPPED' $state
- * @property array<string, string> $tags
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  */
 class CompositionSummary extends Shape
 {
@@ -21,9 +21,9 @@ class CompositionSummary extends Shape
      *     stageArn: string,
      *     destinations: list<DestinationSummary>,
      *     state: 'STARTING'|'ACTIVE'|'STOPPING'|'FAILED'|'STOPPED',
-     *     tags?: array<string, string>,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult
+     *     tags?: array<string, string>|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

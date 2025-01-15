@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OrganizationId
  * @property string $IpAddress
  * @property string $Action
- * @property string $UserId
- * @property string $ImpersonationRoleId
+ * @property string|null $UserId
+ * @property string|null $ImpersonationRoleId
  */
 class GetAccessControlEffectRequest extends Request
 {
@@ -18,8 +18,8 @@ class GetAccessControlEffectRequest extends Request
      *     OrganizationId: string,
      *     IpAddress: string,
      *     Action: string,
-     *     UserId?: string,
-     *     ImpersonationRoleId?: string
+     *     UserId?: string|null,
+     *     ImpersonationRoleId?: string|null
      * } $args
      */
     public function __construct(array $args)

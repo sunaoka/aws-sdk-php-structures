@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\GetInventory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Expression
- * @property list<InventoryAggregator> $Aggregators
- * @property list<InventoryGroup> $Groups
+ * @property string|null $Expression
+ * @property list<InventoryAggregator>|null $Aggregators
+ * @property list<InventoryGroup>|null $Groups
  */
 class InventoryAggregator extends Shape
 {
     /**
      * @param array{
-     *     Expression?: string,
-     *     Aggregators?: list<InventoryAggregator>,
-     *     Groups?: list<InventoryGroup>
+     *     Expression?: string|null,
+     *     Aggregators?: list<InventoryAggregator>|null,
+     *     Groups?: list<InventoryGroup>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateClusterParameterGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterGroupName
- * @property string $ParameterGroupFamily
- * @property string $Description
- * @property list<Tag> $Tags
+ * @property string|null $ParameterGroupName
+ * @property string|null $ParameterGroupFamily
+ * @property string|null $Description
+ * @property list<Tag>|null $Tags
  */
 class ClusterParameterGroup extends Shape
 {
     /**
      * @param array{
-     *     ParameterGroupName?: string,
-     *     ParameterGroupFamily?: string,
-     *     Description?: string,
-     *     Tags?: list<Tag>
+     *     ParameterGroupName?: string|null,
+     *     ParameterGroupFamily?: string|null,
+     *     Description?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

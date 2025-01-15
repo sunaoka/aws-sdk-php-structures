@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspaceDirectories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $RestartWorkspace
- * @property 'ENABLED'|'DISABLED' $IncreaseVolumeSize
- * @property 'ENABLED'|'DISABLED' $ChangeComputeType
- * @property 'ENABLED'|'DISABLED' $SwitchRunningMode
- * @property 'ENABLED'|'DISABLED' $RebuildWorkspace
+ * @property 'ENABLED'|'DISABLED'|null $RestartWorkspace
+ * @property 'ENABLED'|'DISABLED'|null $IncreaseVolumeSize
+ * @property 'ENABLED'|'DISABLED'|null $ChangeComputeType
+ * @property 'ENABLED'|'DISABLED'|null $SwitchRunningMode
+ * @property 'ENABLED'|'DISABLED'|null $RebuildWorkspace
  */
 class SelfservicePermissions extends Shape
 {
     /**
      * @param array{
-     *     RestartWorkspace?: 'ENABLED'|'DISABLED',
-     *     IncreaseVolumeSize?: 'ENABLED'|'DISABLED',
-     *     ChangeComputeType?: 'ENABLED'|'DISABLED',
-     *     SwitchRunningMode?: 'ENABLED'|'DISABLED',
-     *     RebuildWorkspace?: 'ENABLED'|'DISABLED'
+     *     RestartWorkspace?: 'ENABLED'|'DISABLED'|null,
+     *     IncreaseVolumeSize?: 'ENABLED'|'DISABLED'|null,
+     *     ChangeComputeType?: 'ENABLED'|'DISABLED'|null,
+     *     SwitchRunningMode?: 'ENABLED'|'DISABLED'|null,
+     *     RebuildWorkspace?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

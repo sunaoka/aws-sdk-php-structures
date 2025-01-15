@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLambdaFunctionRecommendatio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $rank
- * @property int $memorySize
- * @property list<LambdaFunctionMemoryProjectedMetric> $projectedUtilizationMetrics
- * @property SavingsOpportunity $savingsOpportunity
- * @property LambdaSavingsOpportunityAfterDiscounts $savingsOpportunityAfterDiscounts
+ * @property int|null $rank
+ * @property int|null $memorySize
+ * @property list<LambdaFunctionMemoryProjectedMetric>|null $projectedUtilizationMetrics
+ * @property SavingsOpportunity|null $savingsOpportunity
+ * @property LambdaSavingsOpportunityAfterDiscounts|null $savingsOpportunityAfterDiscounts
  */
 class LambdaFunctionMemoryRecommendationOption extends Shape
 {
     /**
      * @param array{
-     *     rank?: int,
-     *     memorySize?: int,
-     *     projectedUtilizationMetrics?: list<LambdaFunctionMemoryProjectedMetric>,
-     *     savingsOpportunity?: SavingsOpportunity,
-     *     savingsOpportunityAfterDiscounts?: LambdaSavingsOpportunityAfterDiscounts
+     *     rank?: int|null,
+     *     memorySize?: int|null,
+     *     projectedUtilizationMetrics?: list<LambdaFunctionMemoryProjectedMetric>|null,
+     *     savingsOpportunity?: SavingsOpportunity|null,
+     *     savingsOpportunityAfterDiscounts?: LambdaSavingsOpportunityAfterDiscounts|null
      * } $args
      */
     public function __construct(array $args = [])

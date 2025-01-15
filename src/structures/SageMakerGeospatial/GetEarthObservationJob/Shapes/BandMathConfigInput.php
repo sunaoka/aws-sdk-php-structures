@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\GetEarthObservationJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomIndicesInput $CustomIndices
- * @property list<string> $PredefinedIndices
+ * @property CustomIndicesInput|null $CustomIndices
+ * @property list<string>|null $PredefinedIndices
  */
 class BandMathConfigInput extends Shape
 {
     /**
      * @param array{
-     *     CustomIndices?: CustomIndicesInput,
-     *     PredefinedIndices?: list<string>
+     *     CustomIndices?: CustomIndicesInput|null,
+     *     PredefinedIndices?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

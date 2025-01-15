@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property 'Datetime'|'Number'|'String' $Type
- * @property DatetimeOptions $DatetimeOptions
- * @property bool $CreateColumn
- * @property FilterExpression $Filter
+ * @property DatetimeOptions|null $DatetimeOptions
+ * @property bool|null $CreateColumn
+ * @property FilterExpression|null $Filter
  */
 class DatasetParameter extends Shape
 {
@@ -17,9 +17,9 @@ class DatasetParameter extends Shape
      * @param array{
      *     Name: string,
      *     Type: 'Datetime'|'Number'|'String',
-     *     DatetimeOptions?: DatetimeOptions,
-     *     CreateColumn?: bool,
-     *     Filter?: FilterExpression
+     *     DatetimeOptions?: DatetimeOptions|null,
+     *     CreateColumn?: bool|null,
+     *     Filter?: FilterExpression|null
      * } $args
      */
     public function __construct(array $args)

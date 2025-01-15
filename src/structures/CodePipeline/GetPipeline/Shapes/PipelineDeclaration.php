@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property string $roleArn
- * @property ArtifactStore $artifactStore
- * @property array<string, ArtifactStore> $artifactStores
+ * @property ArtifactStore|null $artifactStore
+ * @property array<string, ArtifactStore>|null $artifactStores
  * @property list<StageDeclaration> $stages
- * @property int<1, max> $version
- * @property 'QUEUED'|'SUPERSEDED'|'PARALLEL' $executionMode
- * @property 'V1'|'V2' $pipelineType
- * @property list<PipelineVariableDeclaration> $variables
- * @property list<PipelineTriggerDeclaration> $triggers
+ * @property int<1, max>|null $version
+ * @property 'QUEUED'|'SUPERSEDED'|'PARALLEL'|null $executionMode
+ * @property 'V1'|'V2'|null $pipelineType
+ * @property list<PipelineVariableDeclaration>|null $variables
+ * @property list<PipelineTriggerDeclaration>|null $triggers
  */
 class PipelineDeclaration extends Shape
 {
@@ -22,14 +22,14 @@ class PipelineDeclaration extends Shape
      * @param array{
      *     name: string,
      *     roleArn: string,
-     *     artifactStore?: ArtifactStore,
-     *     artifactStores?: array<string, ArtifactStore>,
+     *     artifactStore?: ArtifactStore|null,
+     *     artifactStores?: array<string, ArtifactStore>|null,
      *     stages: list<StageDeclaration>,
-     *     version?: int<1, max>,
-     *     executionMode?: 'QUEUED'|'SUPERSEDED'|'PARALLEL',
-     *     pipelineType?: 'V1'|'V2',
-     *     variables?: list<PipelineVariableDeclaration>,
-     *     triggers?: list<PipelineTriggerDeclaration>
+     *     version?: int<1, max>|null,
+     *     executionMode?: 'QUEUED'|'SUPERSEDED'|'PARALLEL'|null,
+     *     pipelineType?: 'V1'|'V2'|null,
+     *     variables?: list<PipelineVariableDeclaration>|null,
+     *     triggers?: list<PipelineTriggerDeclaration>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $password
- * @property string $userName
+ * @property string|null $password
+ * @property string|null $userName
  */
 class BasicAuthenticationCredentials extends Shape
 {
     /**
      * @param array{
-     *     password?: string,
-     *     userName?: string
+     *     password?: string|null,
+     *     userName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

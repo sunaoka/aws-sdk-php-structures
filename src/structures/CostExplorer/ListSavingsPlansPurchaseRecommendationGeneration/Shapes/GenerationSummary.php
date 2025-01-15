@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CostExplorer\ListSavingsPlansPurchaseRecommenda
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RecommendationId
- * @property 'SUCCEEDED'|'PROCESSING'|'FAILED' $GenerationStatus
- * @property string $GenerationStartedTime
- * @property string $GenerationCompletionTime
- * @property string $EstimatedCompletionTime
+ * @property string|null $RecommendationId
+ * @property 'SUCCEEDED'|'PROCESSING'|'FAILED'|null $GenerationStatus
+ * @property string|null $GenerationStartedTime
+ * @property string|null $GenerationCompletionTime
+ * @property string|null $EstimatedCompletionTime
  */
 class GenerationSummary extends Shape
 {
     /**
      * @param array{
-     *     RecommendationId?: string,
-     *     GenerationStatus?: 'SUCCEEDED'|'PROCESSING'|'FAILED',
-     *     GenerationStartedTime?: string,
-     *     GenerationCompletionTime?: string,
-     *     EstimatedCompletionTime?: string
+     *     RecommendationId?: string|null,
+     *     GenerationStatus?: 'SUCCEEDED'|'PROCESSING'|'FAILED'|null,
+     *     GenerationStartedTime?: string|null,
+     *     GenerationCompletionTime?: string|null,
+     *     EstimatedCompletionTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

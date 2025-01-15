@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateManagedPrefixList;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $PrefixListName
- * @property list<Shapes\AddPrefixListEntry> $Entries
+ * @property list<Shapes\AddPrefixListEntry>|null $Entries
  * @property int $MaxEntries
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property string $AddressFamily
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class CreateManagedPrefixListRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     PrefixListName: string,
-     *     Entries?: list<Shapes\AddPrefixListEntry>,
+     *     Entries?: list<Shapes\AddPrefixListEntry>|null,
      *     MaxEntries: int,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     AddressFamily: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property Shapes\NotificationConfiguration $NotificationConfiguration
- * @property string $ExpectedBucketOwner
- * @property bool $SkipDestinationValidation
+ * @property string|null $ExpectedBucketOwner
+ * @property bool|null $SkipDestinationValidation
  */
 class PutBucketNotificationConfigurationRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutBucketNotificationConfigurationRequest extends Request
      * @param array{
      *     Bucket: string,
      *     NotificationConfiguration: Shapes\NotificationConfiguration,
-     *     ExpectedBucketOwner?: string,
-     *     SkipDestinationValidation?: bool
+     *     ExpectedBucketOwner?: string|null,
+     *     SkipDestinationValidation?: bool|null
      * } $args
      */
     public function __construct(array $args)

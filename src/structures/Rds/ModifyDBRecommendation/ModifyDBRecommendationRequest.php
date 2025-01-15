@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RecommendationId
- * @property string $Locale
- * @property string $Status
- * @property list<Shapes\RecommendedActionUpdate> $RecommendedActionUpdates
+ * @property string|null $Locale
+ * @property string|null $Status
+ * @property list<Shapes\RecommendedActionUpdate>|null $RecommendedActionUpdates
  */
 class ModifyDBRecommendationRequest extends Request
 {
     /**
      * @param array{
      *     RecommendationId: string,
-     *     Locale?: string,
-     *     Status?: string,
-     *     RecommendedActionUpdates?: list<Shapes\RecommendedActionUpdate>
+     *     Locale?: string|null,
+     *     Status?: string|null,
+     *     RecommendedActionUpdates?: list<Shapes\RecommendedActionUpdate>|null
      * } $args
      */
     public function __construct(array $args)

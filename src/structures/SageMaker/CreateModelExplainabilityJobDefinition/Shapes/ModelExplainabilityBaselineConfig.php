@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateModelExplainabilityJobDefinitio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BaseliningJobName
- * @property MonitoringConstraintsResource $ConstraintsResource
+ * @property string|null $BaseliningJobName
+ * @property MonitoringConstraintsResource|null $ConstraintsResource
  */
 class ModelExplainabilityBaselineConfig extends Shape
 {
     /**
      * @param array{
-     *     BaseliningJobName?: string,
-     *     ConstraintsResource?: MonitoringConstraintsResource
+     *     BaseliningJobName?: string|null,
+     *     ConstraintsResource?: MonitoringConstraintsResource|null
      * } $args
      */
     public function __construct(array $args = [])

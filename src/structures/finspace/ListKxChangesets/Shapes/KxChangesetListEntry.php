@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\finspace\ListKxChangesets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $changesetId
- * @property \Aws\Api\DateTimeResult $createdTimestamp
- * @property \Aws\Api\DateTimeResult $activeFromTimestamp
- * @property \Aws\Api\DateTimeResult $lastModifiedTimestamp
- * @property 'PENDING'|'PROCESSING'|'FAILED'|'COMPLETED' $status
+ * @property string|null $changesetId
+ * @property \Aws\Api\DateTimeResult|null $createdTimestamp
+ * @property \Aws\Api\DateTimeResult|null $activeFromTimestamp
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTimestamp
+ * @property 'PENDING'|'PROCESSING'|'FAILED'|'COMPLETED'|null $status
  */
 class KxChangesetListEntry extends Shape
 {
     /**
      * @param array{
-     *     changesetId?: string,
-     *     createdTimestamp?: \Aws\Api\DateTimeResult,
-     *     activeFromTimestamp?: \Aws\Api\DateTimeResult,
-     *     lastModifiedTimestamp?: \Aws\Api\DateTimeResult,
-     *     status?: 'PENDING'|'PROCESSING'|'FAILED'|'COMPLETED'
+     *     changesetId?: string|null,
+     *     createdTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     activeFromTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'PENDING'|'PROCESSING'|'FAILED'|'COMPLETED'|null
      * } $args
      */
     public function __construct(array $args = [])

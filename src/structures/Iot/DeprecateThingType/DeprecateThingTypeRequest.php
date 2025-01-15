@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingTypeName
- * @property bool $undoDeprecate
+ * @property bool|null $undoDeprecate
  */
 class DeprecateThingTypeRequest extends Request
 {
     /**
      * @param array{
      *     thingTypeName: string,
-     *     undoDeprecate?: bool
+     *     undoDeprecate?: bool|null
      * } $args
      */
     public function __construct(array $args)

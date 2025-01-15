@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationName
  * @property string $TemplateName
- * @property string $SolutionStackName
- * @property string $PlatformArn
- * @property Shapes\SourceConfiguration $SourceConfiguration
- * @property string $EnvironmentId
- * @property string $Description
- * @property list<Shapes\ConfigurationOptionSetting> $OptionSettings
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $SolutionStackName
+ * @property string|null $PlatformArn
+ * @property Shapes\SourceConfiguration|null $SourceConfiguration
+ * @property string|null $EnvironmentId
+ * @property string|null $Description
+ * @property list<Shapes\ConfigurationOptionSetting>|null $OptionSettings
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateConfigurationTemplateRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateConfigurationTemplateRequest extends Request
      * @param array{
      *     ApplicationName: string,
      *     TemplateName: string,
-     *     SolutionStackName?: string,
-     *     PlatformArn?: string,
-     *     SourceConfiguration?: Shapes\SourceConfiguration,
-     *     EnvironmentId?: string,
-     *     Description?: string,
-     *     OptionSettings?: list<Shapes\ConfigurationOptionSetting>,
-     *     Tags?: list<Shapes\Tag>
+     *     SolutionStackName?: string|null,
+     *     PlatformArn?: string|null,
+     *     SourceConfiguration?: Shapes\SourceConfiguration|null,
+     *     EnvironmentId?: string|null,
+     *     Description?: string|null,
+     *     OptionSettings?: list<Shapes\ConfigurationOptionSetting>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

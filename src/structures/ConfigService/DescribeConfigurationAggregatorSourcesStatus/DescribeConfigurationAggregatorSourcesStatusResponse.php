@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeConfigurationAggregatorSo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AggregatedSourceStatus> $AggregatedSourceStatusList
- * @property string $NextToken
+ * @property list<Shapes\AggregatedSourceStatus>|null $AggregatedSourceStatusList
+ * @property string|null $NextToken
  */
 class DescribeConfigurationAggregatorSourcesStatusResponse extends Response
 {

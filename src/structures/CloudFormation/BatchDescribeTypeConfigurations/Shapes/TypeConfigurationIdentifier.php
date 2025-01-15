@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudFormation\BatchDescribeTypeConfigurations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TypeArn
- * @property string $TypeConfigurationAlias
- * @property string $TypeConfigurationArn
- * @property 'RESOURCE'|'MODULE'|'HOOK' $Type
- * @property string $TypeName
+ * @property string|null $TypeArn
+ * @property string|null $TypeConfigurationAlias
+ * @property string|null $TypeConfigurationArn
+ * @property 'RESOURCE'|'MODULE'|'HOOK'|null $Type
+ * @property string|null $TypeName
  */
 class TypeConfigurationIdentifier extends Shape
 {
     /**
      * @param array{
-     *     TypeArn?: string,
-     *     TypeConfigurationAlias?: string,
-     *     TypeConfigurationArn?: string,
-     *     Type?: 'RESOURCE'|'MODULE'|'HOOK',
-     *     TypeName?: string
+     *     TypeArn?: string|null,
+     *     TypeConfigurationAlias?: string|null,
+     *     TypeConfigurationArn?: string|null,
+     *     Type?: 'RESOURCE'|'MODULE'|'HOOK'|null,
+     *     TypeName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

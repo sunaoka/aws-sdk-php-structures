@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GuardDuty\ListCoverage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
- * @property string $InstanceType
- * @property string $ClusterArn
- * @property AgentDetails $AgentDetails
- * @property 'AUTO_MANAGED'|'MANUAL'|'DISABLED' $ManagementType
+ * @property string|null $InstanceId
+ * @property string|null $InstanceType
+ * @property string|null $ClusterArn
+ * @property AgentDetails|null $AgentDetails
+ * @property 'AUTO_MANAGED'|'MANUAL'|'DISABLED'|null $ManagementType
  */
 class CoverageEc2InstanceDetails extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string,
-     *     InstanceType?: string,
-     *     ClusterArn?: string,
-     *     AgentDetails?: AgentDetails,
-     *     ManagementType?: 'AUTO_MANAGED'|'MANUAL'|'DISABLED'
+     *     InstanceId?: string|null,
+     *     InstanceType?: string|null,
+     *     ClusterArn?: string|null,
+     *     AgentDetails?: AgentDetails|null,
+     *     ManagementType?: 'AUTO_MANAGED'|'MANUAL'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NumericFormatConfiguration $FormatConfiguration
+ * @property NumericFormatConfiguration|null $FormatConfiguration
  */
 class NumberFormatConfiguration extends Shape
 {
     /**
-     * @param array{FormatConfiguration?: NumericFormatConfiguration} $args
+     * @param array{FormatConfiguration?: NumericFormatConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

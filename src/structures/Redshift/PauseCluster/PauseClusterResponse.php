@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Redshift\PauseCluster;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Cluster $Cluster
+ * @property Shapes\Cluster|null $Cluster
  */
 class PauseClusterResponse extends Response
 {

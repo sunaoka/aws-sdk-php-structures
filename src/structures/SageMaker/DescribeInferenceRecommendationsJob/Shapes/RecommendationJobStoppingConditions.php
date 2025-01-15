@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeInferenceRecommendationsJob\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxInvocations
- * @property list<ModelLatencyThreshold> $ModelLatencyThresholds
- * @property 'Continue'|'Stop' $FlatInvocations
+ * @property int|null $MaxInvocations
+ * @property list<ModelLatencyThreshold>|null $ModelLatencyThresholds
+ * @property 'Continue'|'Stop'|null $FlatInvocations
  */
 class RecommendationJobStoppingConditions extends Shape
 {
     /**
      * @param array{
-     *     MaxInvocations?: int,
-     *     ModelLatencyThresholds?: list<ModelLatencyThreshold>,
-     *     FlatInvocations?: 'Continue'|'Stop'
+     *     MaxInvocations?: int|null,
+     *     ModelLatencyThresholds?: list<ModelLatencyThreshold>|null,
+     *     FlatInvocations?: 'Continue'|'Stop'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LifecycleHookName
  * @property string $AutoScalingGroupName
- * @property string $LifecycleActionToken
+ * @property string|null $LifecycleActionToken
  * @property string $LifecycleActionResult
- * @property string $InstanceId
+ * @property string|null $InstanceId
  */
 class CompleteLifecycleActionRequest extends Request
 {
@@ -17,9 +17,9 @@ class CompleteLifecycleActionRequest extends Request
      * @param array{
      *     LifecycleHookName: string,
      *     AutoScalingGroupName: string,
-     *     LifecycleActionToken?: string,
+     *     LifecycleActionToken?: string|null,
      *     LifecycleActionResult: string,
-     *     InstanceId?: string
+     *     InstanceId?: string|null
      * } $args
      */
     public function __construct(array $args)

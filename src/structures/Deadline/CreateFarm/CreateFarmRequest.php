@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateFarm;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $displayName
- * @property string $description
- * @property string $kmsKeyArn
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property string|null $kmsKeyArn
+ * @property array<string, string>|null $tags
  */
 class CreateFarmRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     displayName: string,
-     *     description?: string,
-     *     kmsKeyArn?: string,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     kmsKeyArn?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

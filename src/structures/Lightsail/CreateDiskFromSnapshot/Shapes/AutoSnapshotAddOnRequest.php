@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateDiskFromSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $snapshotTimeOfDay
+ * @property string|null $snapshotTimeOfDay
  */
 class AutoSnapshotAddOnRequest extends Shape
 {
     /**
-     * @param array{snapshotTimeOfDay?: string} $args
+     * @param array{snapshotTimeOfDay?: string|null} $args
      */
     public function __construct(array $args = [])
     {

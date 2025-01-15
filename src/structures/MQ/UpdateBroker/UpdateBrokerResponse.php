@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\MQ\UpdateBroker;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'SIMPLE'|'LDAP' $AuthenticationStrategy
- * @property bool $AutoMinorVersionUpgrade
- * @property string $BrokerId
- * @property Shapes\ConfigurationId $Configuration
- * @property string $EngineVersion
- * @property string $HostInstanceType
- * @property Shapes\LdapServerMetadataOutput $LdapServerMetadata
- * @property Shapes\Logs $Logs
- * @property Shapes\WeeklyStartTime $MaintenanceWindowStartTime
- * @property list<string> $SecurityGroups
- * @property Shapes\DataReplicationMetadataOutput $DataReplicationMetadata
- * @property 'NONE'|'CRDR' $DataReplicationMode
- * @property Shapes\DataReplicationMetadataOutput $PendingDataReplicationMetadata
- * @property 'NONE'|'CRDR' $PendingDataReplicationMode
+ * @property 'SIMPLE'|'LDAP'|null $AuthenticationStrategy
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $BrokerId
+ * @property Shapes\ConfigurationId|null $Configuration
+ * @property string|null $EngineVersion
+ * @property string|null $HostInstanceType
+ * @property Shapes\LdapServerMetadataOutput|null $LdapServerMetadata
+ * @property Shapes\Logs|null $Logs
+ * @property Shapes\WeeklyStartTime|null $MaintenanceWindowStartTime
+ * @property list<string>|null $SecurityGroups
+ * @property Shapes\DataReplicationMetadataOutput|null $DataReplicationMetadata
+ * @property 'NONE'|'CRDR'|null $DataReplicationMode
+ * @property Shapes\DataReplicationMetadataOutput|null $PendingDataReplicationMetadata
+ * @property 'NONE'|'CRDR'|null $PendingDataReplicationMode
  */
 class UpdateBrokerResponse extends Response
 {

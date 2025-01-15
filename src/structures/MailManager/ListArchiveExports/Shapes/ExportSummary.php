@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\ListArchiveExports\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExportId
- * @property ExportStatus $Status
+ * @property string|null $ExportId
+ * @property ExportStatus|null $Status
  */
 class ExportSummary extends Shape
 {
     /**
      * @param array{
-     *     ExportId?: string,
-     *     Status?: ExportStatus
+     *     ExportId?: string|null,
+     *     Status?: ExportStatus|null
      * } $args
      */
     public function __construct(array $args = [])

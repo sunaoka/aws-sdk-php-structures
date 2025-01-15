@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetCostCategories;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SearchString
+ * @property string|null $SearchString
  * @property Shapes\DateInterval $TimePeriod
- * @property string $CostCategoryName
- * @property Shapes\Expression $Filter
- * @property list<Shapes\SortDefinition> $SortBy
- * @property string $BillingViewArn
- * @property int<1, max> $MaxResults
- * @property string $NextPageToken
+ * @property string|null $CostCategoryName
+ * @property Shapes\Expression|null $Filter
+ * @property list<Shapes\SortDefinition>|null $SortBy
+ * @property string|null $BillingViewArn
+ * @property int<1, max>|null $MaxResults
+ * @property string|null $NextPageToken
  */
 class GetCostCategoriesRequest extends Request
 {
     /**
      * @param array{
-     *     SearchString?: string,
+     *     SearchString?: string|null,
      *     TimePeriod: Shapes\DateInterval,
-     *     CostCategoryName?: string,
-     *     Filter?: Shapes\Expression,
-     *     SortBy?: list<Shapes\SortDefinition>,
-     *     BillingViewArn?: string,
-     *     MaxResults?: int<1, max>,
-     *     NextPageToken?: string
+     *     CostCategoryName?: string|null,
+     *     Filter?: Shapes\Expression|null,
+     *     SortBy?: list<Shapes\SortDefinition>|null,
+     *     BillingViewArn?: string|null,
+     *     MaxResults?: int<1, max>|null,
+     *     NextPageToken?: string|null
      * } $args
      */
     public function __construct(array $args)

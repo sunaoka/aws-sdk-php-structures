@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $maxWorkerCount
  * @property int<1, 8> $mcuCount
  * @property int $minWorkerCount
- * @property ScaleInPolicy $scaleInPolicy
- * @property ScaleOutPolicy $scaleOutPolicy
+ * @property ScaleInPolicy|null $scaleInPolicy
+ * @property ScaleOutPolicy|null $scaleOutPolicy
  */
 class AutoScaling extends Shape
 {
@@ -18,8 +18,8 @@ class AutoScaling extends Shape
      *     maxWorkerCount: int,
      *     mcuCount: int<1, 8>,
      *     minWorkerCount: int,
-     *     scaleInPolicy?: ScaleInPolicy,
-     *     scaleOutPolicy?: ScaleOutPolicy
+     *     scaleInPolicy?: ScaleInPolicy|null,
+     *     scaleOutPolicy?: ScaleOutPolicy|null
      * } $args
      */
     public function __construct(array $args)

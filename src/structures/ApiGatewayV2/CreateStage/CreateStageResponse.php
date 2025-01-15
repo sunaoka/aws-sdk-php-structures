@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\CreateStage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AccessLogSettings $AccessLogSettings
- * @property bool $ApiGatewayManaged
- * @property bool $AutoDeploy
- * @property string $ClientCertificateId
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property Shapes\RouteSettings $DefaultRouteSettings
- * @property string $DeploymentId
- * @property string $Description
- * @property string $LastDeploymentStatusMessage
- * @property \Aws\Api\DateTimeResult $LastUpdatedDate
- * @property array<string, Shapes\RouteSettings> $RouteSettings
- * @property string $StageName
- * @property array<string, string> $StageVariables
- * @property array<string, string> $Tags
+ * @property Shapes\AccessLogSettings|null $AccessLogSettings
+ * @property bool|null $ApiGatewayManaged
+ * @property bool|null $AutoDeploy
+ * @property string|null $ClientCertificateId
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property Shapes\RouteSettings|null $DefaultRouteSettings
+ * @property string|null $DeploymentId
+ * @property string|null $Description
+ * @property string|null $LastDeploymentStatusMessage
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedDate
+ * @property array<string, Shapes\RouteSettings>|null $RouteSettings
+ * @property string|null $StageName
+ * @property array<string, string>|null $StageVariables
+ * @property array<string, string>|null $Tags
  */
 class CreateStageResponse extends Response
 {

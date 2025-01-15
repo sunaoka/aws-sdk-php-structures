@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ENABLED'|'DISABLED' $state
- * @property list<'CONTENT_MODERATION'|'TEXT_DETECTION'> $types
+ * @property list<'CONTENT_MODERATION'|'TEXT_DETECTION'>|null $types
  */
 class ImageExtractionCategory extends Shape
 {
     /**
      * @param array{
      *     state: 'ENABLED'|'DISABLED',
-     *     types?: list<'CONTENT_MODERATION'|'TEXT_DETECTION'>
+     *     types?: list<'CONTENT_MODERATION'|'TEXT_DETECTION'>|null
      * } $args
      */
     public function __construct(array $args)

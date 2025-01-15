@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $inferenceProfileName
- * @property string $description
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string $inferenceProfileArn
  * @property list<InferenceProfileModel> $models
  * @property string $inferenceProfileId
@@ -20,9 +20,9 @@ class InferenceProfileSummary extends Shape
     /**
      * @param array{
      *     inferenceProfileName: string,
-     *     description?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
+     *     description?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     inferenceProfileArn: string,
      *     models: list<InferenceProfileModel>,
      *     inferenceProfileId: string,

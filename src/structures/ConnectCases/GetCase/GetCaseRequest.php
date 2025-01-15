@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $caseId
  * @property string $domainId
  * @property list<Shapes\FieldIdentifier> $fields
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class GetCaseRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetCaseRequest extends Request
      *     caseId: string,
      *     domainId: string,
      *     fields: list<Shapes\FieldIdentifier>,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

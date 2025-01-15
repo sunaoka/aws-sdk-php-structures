@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $status
- * @property Shapes\FastResetToken $payload
+ * @property Shapes\FastResetToken|null $payload
  */
 class ExecuteFastResetResponse extends Response
 {

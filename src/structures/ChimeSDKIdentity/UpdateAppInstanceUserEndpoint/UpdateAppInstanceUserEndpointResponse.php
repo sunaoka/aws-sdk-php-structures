@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\UpdateAppInstanceUserEndpoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppInstanceUserArn
- * @property string $EndpointId
+ * @property string|null $AppInstanceUserArn
+ * @property string|null $EndpointId
  */
 class UpdateAppInstanceUserEndpointResponse extends Response
 {

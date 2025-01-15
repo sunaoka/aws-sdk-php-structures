@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $SectionId
  * @property SectionLayoutConfiguration $Layout
- * @property SectionStyle $Style
+ * @property SectionStyle|null $Style
  */
 class HeaderFooterSectionConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class HeaderFooterSectionConfiguration extends Shape
      * @param array{
      *     SectionId: string,
      *     Layout: SectionLayoutConfiguration,
-     *     Style?: SectionStyle
+     *     Style?: SectionStyle|null
      * } $args
      */
     public function __construct(array $args)

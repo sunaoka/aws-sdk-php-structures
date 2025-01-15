@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AuditManager\BatchImportEvidenceToAssessmentCon
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $s3ResourcePath
- * @property string $textResponse
- * @property string $evidenceFileName
+ * @property string|null $s3ResourcePath
+ * @property string|null $textResponse
+ * @property string|null $evidenceFileName
  */
 class ManualEvidence extends Shape
 {
     /**
      * @param array{
-     *     s3ResourcePath?: string,
-     *     textResponse?: string,
-     *     evidenceFileName?: string
+     *     s3ResourcePath?: string|null,
+     *     textResponse?: string|null,
+     *     evidenceFileName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

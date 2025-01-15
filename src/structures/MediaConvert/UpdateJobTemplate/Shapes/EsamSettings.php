@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EsamManifestConfirmConditionNotification $ManifestConfirmConditionNotification
- * @property int<0, 30000> $ResponseSignalPreroll
- * @property EsamSignalProcessingNotification $SignalProcessingNotification
+ * @property EsamManifestConfirmConditionNotification|null $ManifestConfirmConditionNotification
+ * @property int<0, 30000>|null $ResponseSignalPreroll
+ * @property EsamSignalProcessingNotification|null $SignalProcessingNotification
  */
 class EsamSettings extends Shape
 {
     /**
      * @param array{
-     *     ManifestConfirmConditionNotification?: EsamManifestConfirmConditionNotification,
-     *     ResponseSignalPreroll?: int<0, 30000>,
-     *     SignalProcessingNotification?: EsamSignalProcessingNotification
+     *     ManifestConfirmConditionNotification?: EsamManifestConfirmConditionNotification|null,
+     *     ResponseSignalPreroll?: int<0, 30000>|null,
+     *     SignalProcessingNotification?: EsamSignalProcessingNotification|null
      * } $args
      */
     public function __construct(array $args = [])

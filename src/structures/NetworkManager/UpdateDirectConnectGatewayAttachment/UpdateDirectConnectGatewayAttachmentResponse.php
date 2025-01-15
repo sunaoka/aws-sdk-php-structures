@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\NetworkManager\UpdateDirectConnectGatewayAttach
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DirectConnectGatewayAttachment $DirectConnectGatewayAttachment
+ * @property Shapes\DirectConnectGatewayAttachment|null $DirectConnectGatewayAttachment
  */
 class UpdateDirectConnectGatewayAttachmentResponse extends Response
 {

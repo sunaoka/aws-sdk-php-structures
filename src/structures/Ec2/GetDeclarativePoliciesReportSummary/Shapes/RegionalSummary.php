@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\GetDeclarativePoliciesReportSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegionName
- * @property int $NumberOfMatchedAccounts
- * @property int $NumberOfUnmatchedAccounts
+ * @property string|null $RegionName
+ * @property int|null $NumberOfMatchedAccounts
+ * @property int|null $NumberOfUnmatchedAccounts
  */
 class RegionalSummary extends Shape
 {
     /**
      * @param array{
-     *     RegionName?: string,
-     *     NumberOfMatchedAccounts?: int,
-     *     NumberOfUnmatchedAccounts?: int
+     *     RegionName?: string|null,
+     *     NumberOfMatchedAccounts?: int|null,
+     *     NumberOfUnmatchedAccounts?: int|null
      * } $args
      */
     public function __construct(array $args = [])

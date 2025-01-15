@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\TranscribeService\UpdateCallAnalyticsCategory\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 14400000> $Threshold
- * @property AbsoluteTimeRange $AbsoluteTimeRange
- * @property RelativeTimeRange $RelativeTimeRange
- * @property bool $Negate
+ * @property int<0, 14400000>|null $Threshold
+ * @property AbsoluteTimeRange|null $AbsoluteTimeRange
+ * @property RelativeTimeRange|null $RelativeTimeRange
+ * @property bool|null $Negate
  */
 class NonTalkTimeFilter extends Shape
 {
     /**
      * @param array{
-     *     Threshold?: int<0, 14400000>,
-     *     AbsoluteTimeRange?: AbsoluteTimeRange,
-     *     RelativeTimeRange?: RelativeTimeRange,
-     *     Negate?: bool
+     *     Threshold?: int<0, 14400000>|null,
+     *     AbsoluteTimeRange?: AbsoluteTimeRange|null,
+     *     RelativeTimeRange?: RelativeTimeRange|null,
+     *     Negate?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

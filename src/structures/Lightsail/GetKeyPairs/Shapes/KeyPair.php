@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetKeyPairs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property string $supportCode
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property ResourceLocation $location
- * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket' $resourceType
- * @property list<Tag> $tags
- * @property string $fingerprint
+ * @property string|null $name
+ * @property string|null $arn
+ * @property string|null $supportCode
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property ResourceLocation|null $location
+ * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null $resourceType
+ * @property list<Tag>|null $tags
+ * @property string|null $fingerprint
  */
 class KeyPair extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     supportCode?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     location?: ResourceLocation,
-     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket',
-     *     tags?: list<Tag>,
-     *     fingerprint?: string
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     supportCode?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     location?: ResourceLocation|null,
+     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null,
+     *     tags?: list<Tag>|null,
+     *     fingerprint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

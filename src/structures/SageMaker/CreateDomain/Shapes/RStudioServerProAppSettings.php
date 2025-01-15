@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $AccessStatus
- * @property 'R_STUDIO_ADMIN'|'R_STUDIO_USER' $UserGroup
+ * @property 'ENABLED'|'DISABLED'|null $AccessStatus
+ * @property 'R_STUDIO_ADMIN'|'R_STUDIO_USER'|null $UserGroup
  */
 class RStudioServerProAppSettings extends Shape
 {
     /**
      * @param array{
-     *     AccessStatus?: 'ENABLED'|'DISABLED',
-     *     UserGroup?: 'R_STUDIO_ADMIN'|'R_STUDIO_USER'
+     *     AccessStatus?: 'ENABLED'|'DISABLED'|null,
+     *     UserGroup?: 'R_STUDIO_ADMIN'|'R_STUDIO_USER'|null
      * } $args
      */
     public function __construct(array $args = [])

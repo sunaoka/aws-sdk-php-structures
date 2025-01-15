@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PageNumber
+ * @property string|null $PageNumber
  */
 class TeletextSourceSettings extends Shape
 {
     /**
-     * @param array{PageNumber?: string} $args
+     * @param array{PageNumber?: string|null} $args
      */
     public function __construct(array $args = [])
     {

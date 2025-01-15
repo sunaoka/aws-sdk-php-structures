@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\PipelineObject> $pipelineObjects
- * @property string $marker
- * @property bool $hasMoreResults
+ * @property string|null $marker
+ * @property bool|null $hasMoreResults
  */
 class DescribeObjectsResponse extends Response
 {

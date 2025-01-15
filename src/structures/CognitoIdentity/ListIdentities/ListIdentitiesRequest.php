@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IdentityPoolId
  * @property int<1, 60> $MaxResults
- * @property string $NextToken
- * @property bool $HideDisabled
+ * @property string|null $NextToken
+ * @property bool|null $HideDisabled
  */
 class ListIdentitiesRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListIdentitiesRequest extends Request
      * @param array{
      *     IdentityPoolId: string,
      *     MaxResults: int<1, 60>,
-     *     NextToken?: string,
-     *     HideDisabled?: bool
+     *     NextToken?: string|null,
+     *     HideDisabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListRecommendedIntents;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $botId
- * @property string $botVersion
- * @property string $localeId
- * @property string $botRecommendationId
- * @property list<Shapes\RecommendedIntentSummary> $summaryList
- * @property string $nextToken
+ * @property string|null $botId
+ * @property string|null $botVersion
+ * @property string|null $localeId
+ * @property string|null $botRecommendationId
+ * @property list<Shapes\RecommendedIntentSummary>|null $summaryList
+ * @property string|null $nextToken
  */
 class ListRecommendedIntentsResponse extends Response
 {

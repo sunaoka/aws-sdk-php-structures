@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Neptune\StartDBCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoleArn
- * @property string $Status
- * @property string $FeatureName
+ * @property string|null $RoleArn
+ * @property string|null $Status
+ * @property string|null $FeatureName
  */
 class DBClusterRole extends Shape
 {
     /**
      * @param array{
-     *     RoleArn?: string,
-     *     Status?: string,
-     *     FeatureName?: string
+     *     RoleArn?: string|null,
+     *     Status?: string|null,
+     *     FeatureName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

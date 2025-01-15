@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $MonitorName
- * @property list<string> $Resources
- * @property string $ClientToken
- * @property array<string, string> $Tags
- * @property int<1, 500000> $MaxCityNetworksToMonitor
- * @property Shapes\InternetMeasurementsLogDelivery $InternetMeasurementsLogDelivery
- * @property int<1, 100> $TrafficPercentageToMonitor
- * @property Shapes\HealthEventsConfig $HealthEventsConfig
+ * @property list<string>|null $Resources
+ * @property string|null $ClientToken
+ * @property array<string, string>|null $Tags
+ * @property int<1, 500000>|null $MaxCityNetworksToMonitor
+ * @property Shapes\InternetMeasurementsLogDelivery|null $InternetMeasurementsLogDelivery
+ * @property int<1, 100>|null $TrafficPercentageToMonitor
+ * @property Shapes\HealthEventsConfig|null $HealthEventsConfig
  */
 class CreateMonitorRequest extends Request
 {
     /**
      * @param array{
      *     MonitorName: string,
-     *     Resources?: list<string>,
-     *     ClientToken?: string,
-     *     Tags?: array<string, string>,
-     *     MaxCityNetworksToMonitor?: int<1, 500000>,
-     *     InternetMeasurementsLogDelivery?: Shapes\InternetMeasurementsLogDelivery,
-     *     TrafficPercentageToMonitor?: int<1, 100>,
-     *     HealthEventsConfig?: Shapes\HealthEventsConfig
+     *     Resources?: list<string>|null,
+     *     ClientToken?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     MaxCityNetworksToMonitor?: int<1, 500000>|null,
+     *     InternetMeasurementsLogDelivery?: Shapes\InternetMeasurementsLogDelivery|null,
+     *     TrafficPercentageToMonitor?: int<1, 100>|null,
+     *     HealthEventsConfig?: Shapes\HealthEventsConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WAFV2\CreateRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property All $All
- * @property list<string> $IncludedHeaders
- * @property list<string> $ExcludedHeaders
+ * @property All|null $All
+ * @property list<string>|null $IncludedHeaders
+ * @property list<string>|null $ExcludedHeaders
  */
 class HeaderMatchPattern extends Shape
 {
     /**
      * @param array{
-     *     All?: All,
-     *     IncludedHeaders?: list<string>,
-     *     ExcludedHeaders?: list<string>
+     *     All?: All|null,
+     *     IncludedHeaders?: list<string>|null,
+     *     ExcludedHeaders?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

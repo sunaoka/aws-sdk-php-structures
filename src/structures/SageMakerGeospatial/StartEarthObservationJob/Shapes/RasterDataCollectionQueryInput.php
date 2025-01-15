@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\StartEarthObservationJob\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AreaOfInterest $AreaOfInterest
- * @property PropertyFilters $PropertyFilters
+ * @property AreaOfInterest|null $AreaOfInterest
+ * @property PropertyFilters|null $PropertyFilters
  * @property string $RasterDataCollectionArn
  * @property TimeRangeFilterInput $TimeRangeFilter
  */
@@ -14,8 +14,8 @@ class RasterDataCollectionQueryInput extends Shape
 {
     /**
      * @param array{
-     *     AreaOfInterest?: AreaOfInterest,
-     *     PropertyFilters?: PropertyFilters,
+     *     AreaOfInterest?: AreaOfInterest|null,
+     *     PropertyFilters?: PropertyFilters|null,
      *     RasterDataCollectionArn: string,
      *     TimeRangeFilter: TimeRangeFilterInput
      * } $args

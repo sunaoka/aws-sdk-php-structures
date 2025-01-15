@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MTurk\CreateHITWithHITType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property list<string> $Values
- * @property list<ParameterMapEntry> $MapEntries
+ * @property string|null $Key
+ * @property list<string>|null $Values
+ * @property list<ParameterMapEntry>|null $MapEntries
  */
 class PolicyParameter extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Values?: list<string>,
-     *     MapEntries?: list<ParameterMapEntry>
+     *     Key?: string|null,
+     *     Values?: list<string>|null,
+     *     MapEntries?: list<ParameterMapEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

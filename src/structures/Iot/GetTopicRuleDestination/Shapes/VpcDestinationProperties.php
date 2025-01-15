@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iot\GetTopicRuleDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $subnetIds
- * @property list<string> $securityGroups
- * @property string $vpcId
- * @property string $roleArn
+ * @property list<string>|null $subnetIds
+ * @property list<string>|null $securityGroups
+ * @property string|null $vpcId
+ * @property string|null $roleArn
  */
 class VpcDestinationProperties extends Shape
 {
     /**
      * @param array{
-     *     subnetIds?: list<string>,
-     *     securityGroups?: list<string>,
-     *     vpcId?: string,
-     *     roleArn?: string
+     *     subnetIds?: list<string>|null,
+     *     securityGroups?: list<string>|null,
+     *     vpcId?: string|null,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

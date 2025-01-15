@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CertificateAuthorityArn
- * @property Shapes\RevocationConfiguration $RevocationConfiguration
- * @property 'CREATING'|'PENDING_CERTIFICATE'|'ACTIVE'|'DELETED'|'DISABLED'|'EXPIRED'|'FAILED' $Status
+ * @property Shapes\RevocationConfiguration|null $RevocationConfiguration
+ * @property 'CREATING'|'PENDING_CERTIFICATE'|'ACTIVE'|'DELETED'|'DISABLED'|'EXPIRED'|'FAILED'|null $Status
  */
 class UpdateCertificateAuthorityRequest extends Request
 {
     /**
      * @param array{
      *     CertificateAuthorityArn: string,
-     *     RevocationConfiguration?: Shapes\RevocationConfiguration,
-     *     Status?: 'CREATING'|'PENDING_CERTIFICATE'|'ACTIVE'|'DELETED'|'DISABLED'|'EXPIRED'|'FAILED'
+     *     RevocationConfiguration?: Shapes\RevocationConfiguration|null,
+     *     Status?: 'CREATING'|'PENDING_CERTIFICATE'|'ACTIVE'|'DELETED'|'DISABLED'|'EXPIRED'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args)

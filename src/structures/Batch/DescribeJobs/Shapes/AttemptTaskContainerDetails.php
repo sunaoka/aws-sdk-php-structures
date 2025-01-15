@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $exitCode
- * @property string $name
- * @property string $reason
- * @property string $logStreamName
- * @property list<NetworkInterface> $networkInterfaces
+ * @property int|null $exitCode
+ * @property string|null $name
+ * @property string|null $reason
+ * @property string|null $logStreamName
+ * @property list<NetworkInterface>|null $networkInterfaces
  */
 class AttemptTaskContainerDetails extends Shape
 {
     /**
      * @param array{
-     *     exitCode?: int,
-     *     name?: string,
-     *     reason?: string,
-     *     logStreamName?: string,
-     *     networkInterfaces?: list<NetworkInterface>
+     *     exitCode?: int|null,
+     *     name?: string|null,
+     *     reason?: string|null,
+     *     logStreamName?: string|null,
+     *     networkInterfaces?: list<NetworkInterface>|null
      * } $args
      */
     public function __construct(array $args = [])

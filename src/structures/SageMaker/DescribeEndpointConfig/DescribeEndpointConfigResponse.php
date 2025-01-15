@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $EndpointConfigName
  * @property string $EndpointConfigArn
  * @property list<Shapes\ProductionVariant> $ProductionVariants
- * @property Shapes\DataCaptureConfig $DataCaptureConfig
- * @property string $KmsKeyId
+ * @property Shapes\DataCaptureConfig|null $DataCaptureConfig
+ * @property string|null $KmsKeyId
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property Shapes\AsyncInferenceConfig $AsyncInferenceConfig
- * @property Shapes\ExplainerConfig $ExplainerConfig
- * @property list<Shapes\ProductionVariant> $ShadowProductionVariants
- * @property string $ExecutionRoleArn
- * @property Shapes\VpcConfig $VpcConfig
- * @property bool $EnableNetworkIsolation
+ * @property Shapes\AsyncInferenceConfig|null $AsyncInferenceConfig
+ * @property Shapes\ExplainerConfig|null $ExplainerConfig
+ * @property list<Shapes\ProductionVariant>|null $ShadowProductionVariants
+ * @property string|null $ExecutionRoleArn
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property bool|null $EnableNetworkIsolation
  */
 class DescribeEndpointConfigResponse extends Response
 {

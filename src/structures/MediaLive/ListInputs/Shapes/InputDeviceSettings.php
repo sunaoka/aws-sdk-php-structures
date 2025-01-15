@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListInputs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
+ * @property string|null $Id
  */
 class InputDeviceSettings extends Shape
 {
     /**
-     * @param array{Id?: string} $args
+     * @param array{Id?: string|null} $args
      */
     public function __construct(array $args = [])
     {

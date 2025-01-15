@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ERROR'|'WARNING' $severity
  * @property string $code
  * @property string $message
- * @property string $location
+ * @property string|null $location
  */
 class ValidateStateMachineDefinitionDiagnostic extends Shape
 {
@@ -17,7 +17,7 @@ class ValidateStateMachineDefinitionDiagnostic extends Shape
      *     severity: 'ERROR'|'WARNING',
      *     code: string,
      *     message: string,
-     *     location?: string
+     *     location?: string|null
      * } $args
      */
     public function __construct(array $args)

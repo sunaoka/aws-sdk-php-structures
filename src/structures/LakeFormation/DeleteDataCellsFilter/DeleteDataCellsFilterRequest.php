@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\DeleteDataCellsFilter;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TableCatalogId
- * @property string $DatabaseName
- * @property string $TableName
- * @property string $Name
+ * @property string|null $TableCatalogId
+ * @property string|null $DatabaseName
+ * @property string|null $TableName
+ * @property string|null $Name
  */
 class DeleteDataCellsFilterRequest extends Request
 {
     /**
      * @param array{
-     *     TableCatalogId?: string,
-     *     DatabaseName?: string,
-     *     TableName?: string,
-     *     Name?: string
+     *     TableCatalogId?: string|null,
+     *     DatabaseName?: string|null,
+     *     TableName?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

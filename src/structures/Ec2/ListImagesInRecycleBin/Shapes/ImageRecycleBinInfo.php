@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\ListImagesInRecycleBin\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ImageId
- * @property string $Name
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $RecycleBinEnterTime
- * @property \Aws\Api\DateTimeResult $RecycleBinExitTime
+ * @property string|null $ImageId
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $RecycleBinEnterTime
+ * @property \Aws\Api\DateTimeResult|null $RecycleBinExitTime
  */
 class ImageRecycleBinInfo extends Shape
 {
     /**
      * @param array{
-     *     ImageId?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     RecycleBinEnterTime?: \Aws\Api\DateTimeResult,
-     *     RecycleBinExitTime?: \Aws\Api\DateTimeResult
+     *     ImageId?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     RecycleBinEnterTime?: \Aws\Api\DateTimeResult|null,
+     *     RecycleBinExitTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

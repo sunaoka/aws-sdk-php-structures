@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'RECENCY'|'SOURCE' $ConflictResolvingModel
- * @property string $SourceName
+ * @property string|null $SourceName
  */
 class ConflictResolution extends Shape
 {
     /**
      * @param array{
      *     ConflictResolvingModel: 'RECENCY'|'SOURCE',
-     *     SourceName?: string
+     *     SourceName?: string|null
      * } $args
      */
     public function __construct(array $args)

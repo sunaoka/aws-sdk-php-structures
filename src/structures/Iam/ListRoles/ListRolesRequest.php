@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iam\ListRoles;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $PathPrefix
- * @property string $Marker
- * @property int<1, 1000> $MaxItems
+ * @property string|null $PathPrefix
+ * @property string|null $Marker
+ * @property int<1, 1000>|null $MaxItems
  */
 class ListRolesRequest extends Request
 {
     /**
      * @param array{
-     *     PathPrefix?: string,
-     *     Marker?: string,
-     *     MaxItems?: int<1, 1000>
+     *     PathPrefix?: string|null,
+     *     Marker?: string|null,
+     *     MaxItems?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

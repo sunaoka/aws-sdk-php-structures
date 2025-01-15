@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property array<string, string> $RunProperties
+ * @property array<string, string>|null $RunProperties
  */
 class StartWorkflowRunRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     RunProperties?: array<string, string>
+     *     RunProperties?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

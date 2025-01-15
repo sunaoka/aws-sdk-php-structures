@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'URLEncoded' $Format
- * @property string $ProfileId
+ * @property string|null $ProfileId
  * @property string $ContentType
  */
 class ContentTypeProfile extends Shape
@@ -14,7 +14,7 @@ class ContentTypeProfile extends Shape
     /**
      * @param array{
      *     Format: 'URLEncoded',
-     *     ProfileId?: string,
+     *     ProfileId?: string|null,
      *     ContentType: string
      * } $args
      */

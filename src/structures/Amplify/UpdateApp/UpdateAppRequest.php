@@ -6,50 +6,50 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $appId
- * @property string $name
- * @property string $description
- * @property 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE' $platform
- * @property string $iamServiceRoleArn
- * @property array<string, string> $environmentVariables
- * @property bool $enableBranchAutoBuild
- * @property bool $enableBranchAutoDeletion
- * @property bool $enableBasicAuth
- * @property string $basicAuthCredentials
- * @property list<Shapes\CustomRule> $customRules
- * @property string $buildSpec
- * @property string $customHeaders
- * @property bool $enableAutoBranchCreation
- * @property list<string> $autoBranchCreationPatterns
- * @property Shapes\AutoBranchCreationConfig $autoBranchCreationConfig
- * @property string $repository
- * @property string $oauthToken
- * @property string $accessToken
- * @property Shapes\CacheConfig $cacheConfig
+ * @property string|null $name
+ * @property string|null $description
+ * @property 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE'|null $platform
+ * @property string|null $iamServiceRoleArn
+ * @property array<string, string>|null $environmentVariables
+ * @property bool|null $enableBranchAutoBuild
+ * @property bool|null $enableBranchAutoDeletion
+ * @property bool|null $enableBasicAuth
+ * @property string|null $basicAuthCredentials
+ * @property list<Shapes\CustomRule>|null $customRules
+ * @property string|null $buildSpec
+ * @property string|null $customHeaders
+ * @property bool|null $enableAutoBranchCreation
+ * @property list<string>|null $autoBranchCreationPatterns
+ * @property Shapes\AutoBranchCreationConfig|null $autoBranchCreationConfig
+ * @property string|null $repository
+ * @property string|null $oauthToken
+ * @property string|null $accessToken
+ * @property Shapes\CacheConfig|null $cacheConfig
  */
 class UpdateAppRequest extends Request
 {
     /**
      * @param array{
      *     appId: string,
-     *     name?: string,
-     *     description?: string,
-     *     platform?: 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE',
-     *     iamServiceRoleArn?: string,
-     *     environmentVariables?: array<string, string>,
-     *     enableBranchAutoBuild?: bool,
-     *     enableBranchAutoDeletion?: bool,
-     *     enableBasicAuth?: bool,
-     *     basicAuthCredentials?: string,
-     *     customRules?: list<Shapes\CustomRule>,
-     *     buildSpec?: string,
-     *     customHeaders?: string,
-     *     enableAutoBranchCreation?: bool,
-     *     autoBranchCreationPatterns?: list<string>,
-     *     autoBranchCreationConfig?: Shapes\AutoBranchCreationConfig,
-     *     repository?: string,
-     *     oauthToken?: string,
-     *     accessToken?: string,
-     *     cacheConfig?: Shapes\CacheConfig
+     *     name?: string|null,
+     *     description?: string|null,
+     *     platform?: 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE'|null,
+     *     iamServiceRoleArn?: string|null,
+     *     environmentVariables?: array<string, string>|null,
+     *     enableBranchAutoBuild?: bool|null,
+     *     enableBranchAutoDeletion?: bool|null,
+     *     enableBasicAuth?: bool|null,
+     *     basicAuthCredentials?: string|null,
+     *     customRules?: list<Shapes\CustomRule>|null,
+     *     buildSpec?: string|null,
+     *     customHeaders?: string|null,
+     *     enableAutoBranchCreation?: bool|null,
+     *     autoBranchCreationPatterns?: list<string>|null,
+     *     autoBranchCreationConfig?: Shapes\AutoBranchCreationConfig|null,
+     *     repository?: string|null,
+     *     oauthToken?: string|null,
+     *     accessToken?: string|null,
+     *     cacheConfig?: Shapes\CacheConfig|null
      * } $args
      */
     public function __construct(array $args)

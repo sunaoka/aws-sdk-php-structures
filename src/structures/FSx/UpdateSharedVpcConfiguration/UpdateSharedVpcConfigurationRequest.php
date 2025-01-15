@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateSharedVpcConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $EnableFsxRouteTableUpdatesFromParticipantAccounts
- * @property string $ClientRequestToken
+ * @property string|null $EnableFsxRouteTableUpdatesFromParticipantAccounts
+ * @property string|null $ClientRequestToken
  */
 class UpdateSharedVpcConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     EnableFsxRouteTableUpdatesFromParticipantAccounts?: string,
-     *     ClientRequestToken?: string
+     *     EnableFsxRouteTableUpdatesFromParticipantAccounts?: string|null,
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

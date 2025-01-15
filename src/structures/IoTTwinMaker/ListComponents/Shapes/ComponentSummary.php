@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $componentName
  * @property string $componentTypeId
- * @property string $definedIn
- * @property string $description
- * @property array<string, ComponentPropertyGroupResponse> $propertyGroups
+ * @property string|null $definedIn
+ * @property string|null $description
+ * @property array<string, ComponentPropertyGroupResponse>|null $propertyGroups
  * @property Status $status
- * @property string $syncSource
- * @property string $componentPath
+ * @property string|null $syncSource
+ * @property string|null $componentPath
  */
 class ComponentSummary extends Shape
 {
@@ -20,12 +20,12 @@ class ComponentSummary extends Shape
      * @param array{
      *     componentName: string,
      *     componentTypeId: string,
-     *     definedIn?: string,
-     *     description?: string,
-     *     propertyGroups?: array<string, ComponentPropertyGroupResponse>,
+     *     definedIn?: string|null,
+     *     description?: string|null,
+     *     propertyGroups?: array<string, ComponentPropertyGroupResponse>|null,
      *     status: Status,
-     *     syncSource?: string,
-     *     componentPath?: string
+     *     syncSource?: string|null,
+     *     componentPath?: string|null
      * } $args
      */
     public function __construct(array $args)

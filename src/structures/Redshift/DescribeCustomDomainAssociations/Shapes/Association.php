@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeCustomDomainAssociations\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustomDomainCertificateArn
- * @property \Aws\Api\DateTimeResult $CustomDomainCertificateExpiryDate
- * @property list<CertificateAssociation> $CertificateAssociations
+ * @property string|null $CustomDomainCertificateArn
+ * @property \Aws\Api\DateTimeResult|null $CustomDomainCertificateExpiryDate
+ * @property list<CertificateAssociation>|null $CertificateAssociations
  */
 class Association extends Shape
 {
     /**
      * @param array{
-     *     CustomDomainCertificateArn?: string,
-     *     CustomDomainCertificateExpiryDate?: \Aws\Api\DateTimeResult,
-     *     CertificateAssociations?: list<CertificateAssociation>
+     *     CustomDomainCertificateArn?: string|null,
+     *     CustomDomainCertificateExpiryDate?: \Aws\Api\DateTimeResult|null,
+     *     CertificateAssociations?: list<CertificateAssociation>|null
      * } $args
      */
     public function __construct(array $args = [])

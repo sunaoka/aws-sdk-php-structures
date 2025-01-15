@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AppRunner\DeleteService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CodeRepository $CodeRepository
- * @property ImageRepository $ImageRepository
- * @property bool $AutoDeploymentsEnabled
- * @property AuthenticationConfiguration $AuthenticationConfiguration
+ * @property CodeRepository|null $CodeRepository
+ * @property ImageRepository|null $ImageRepository
+ * @property bool|null $AutoDeploymentsEnabled
+ * @property AuthenticationConfiguration|null $AuthenticationConfiguration
  */
 class SourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CodeRepository?: CodeRepository,
-     *     ImageRepository?: ImageRepository,
-     *     AutoDeploymentsEnabled?: bool,
-     *     AuthenticationConfiguration?: AuthenticationConfiguration
+     *     CodeRepository?: CodeRepository|null,
+     *     ImageRepository?: ImageRepository|null,
+     *     AutoDeploymentsEnabled?: bool|null,
+     *     AuthenticationConfiguration?: AuthenticationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

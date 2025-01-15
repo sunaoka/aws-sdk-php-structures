@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ModelPackageGroupName
  * @property string $ModelPackageGroupArn
- * @property string $ModelPackageGroupDescription
+ * @property string|null $ModelPackageGroupDescription
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting'|'DeleteFailed' $ModelPackageGroupStatus
  */
@@ -17,7 +17,7 @@ class ModelPackageGroupSummary extends Shape
      * @param array{
      *     ModelPackageGroupName: string,
      *     ModelPackageGroupArn: string,
-     *     ModelPackageGroupDescription?: string,
+     *     ModelPackageGroupDescription?: string|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     ModelPackageGroupStatus: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting'|'DeleteFailed'
      * } $args

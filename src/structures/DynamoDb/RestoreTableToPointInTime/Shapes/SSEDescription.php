@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DynamoDb\RestoreTableToPointInTime\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'UPDATING' $Status
- * @property 'AES256'|'KMS' $SSEType
- * @property string $KMSMasterKeyArn
- * @property \Aws\Api\DateTimeResult $InaccessibleEncryptionDateTime
+ * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'UPDATING'|null $Status
+ * @property 'AES256'|'KMS'|null $SSEType
+ * @property string|null $KMSMasterKeyArn
+ * @property \Aws\Api\DateTimeResult|null $InaccessibleEncryptionDateTime
  */
 class SSEDescription extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'UPDATING',
-     *     SSEType?: 'AES256'|'KMS',
-     *     KMSMasterKeyArn?: string,
-     *     InaccessibleEncryptionDateTime?: \Aws\Api\DateTimeResult
+     *     Status?: 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'UPDATING'|null,
+     *     SSEType?: 'AES256'|'KMS'|null,
+     *     KMSMasterKeyArn?: string|null,
+     *     InaccessibleEncryptionDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

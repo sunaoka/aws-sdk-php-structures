@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Tables\PutTableMaintenanceConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 2147483647> $minSnapshotsToKeep
- * @property int<1, 2147483647> $maxSnapshotAgeHours
+ * @property int<1, 2147483647>|null $minSnapshotsToKeep
+ * @property int<1, 2147483647>|null $maxSnapshotAgeHours
  */
 class IcebergSnapshotManagementSettings extends Shape
 {
     /**
      * @param array{
-     *     minSnapshotsToKeep?: int<1, 2147483647>,
-     *     maxSnapshotAgeHours?: int<1, 2147483647>
+     *     minSnapshotsToKeep?: int<1, 2147483647>|null,
+     *     maxSnapshotAgeHours?: int<1, 2147483647>|null
      * } $args
      */
     public function __construct(array $args = [])

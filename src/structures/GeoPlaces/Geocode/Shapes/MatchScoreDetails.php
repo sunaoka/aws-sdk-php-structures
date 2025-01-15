@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\Geocode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Overall
- * @property ComponentMatchScores $Components
+ * @property double|null $Overall
+ * @property ComponentMatchScores|null $Components
  */
 class MatchScoreDetails extends Shape
 {
     /**
      * @param array{
-     *     Overall?: double,
-     *     Components?: ComponentMatchScores
+     *     Overall?: double|null,
+     *     Components?: ComponentMatchScores|null
      * } $args
      */
     public function __construct(array $args = [])

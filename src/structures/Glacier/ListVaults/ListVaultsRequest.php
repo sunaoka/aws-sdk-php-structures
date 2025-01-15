@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $accountId
- * @property string $marker
- * @property string $limit
+ * @property string|null $marker
+ * @property string|null $limit
  */
 class ListVaultsRequest extends Request
 {
     /**
      * @param array{
      *     accountId: string,
-     *     marker?: string,
-     *     limit?: string
+     *     marker?: string|null,
+     *     limit?: string|null
      * } $args
      */
     public function __construct(array $args)

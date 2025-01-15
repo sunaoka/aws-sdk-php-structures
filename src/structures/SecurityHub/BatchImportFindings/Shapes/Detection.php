@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Sequence $Sequence
+ * @property Sequence|null $Sequence
  */
 class Detection extends Shape
 {
     /**
-     * @param array{Sequence?: Sequence} $args
+     * @param array{Sequence?: Sequence|null} $args
      */
     public function __construct(array $args = [])
     {

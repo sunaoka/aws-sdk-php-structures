@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\LexRuntimeService\PostText;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $intentName
- * @property Shapes\IntentConfidence $nluIntentConfidence
- * @property list<Shapes\PredictedIntent> $alternativeIntents
- * @property array<string, string> $slots
- * @property array<string, string> $sessionAttributes
- * @property string $message
- * @property Shapes\SentimentResponse $sentimentResponse
- * @property 'PlainText'|'CustomPayload'|'SSML'|'Composite' $messageFormat
- * @property 'ElicitIntent'|'ConfirmIntent'|'ElicitSlot'|'Fulfilled'|'ReadyForFulfillment'|'Failed' $dialogState
- * @property string $slotToElicit
- * @property Shapes\ResponseCard $responseCard
- * @property string $sessionId
- * @property string $botVersion
- * @property list<Shapes\ActiveContext> $activeContexts
+ * @property string|null $intentName
+ * @property Shapes\IntentConfidence|null $nluIntentConfidence
+ * @property list<Shapes\PredictedIntent>|null $alternativeIntents
+ * @property array<string, string>|null $slots
+ * @property array<string, string>|null $sessionAttributes
+ * @property string|null $message
+ * @property Shapes\SentimentResponse|null $sentimentResponse
+ * @property 'PlainText'|'CustomPayload'|'SSML'|'Composite'|null $messageFormat
+ * @property 'ElicitIntent'|'ConfirmIntent'|'ElicitSlot'|'Fulfilled'|'ReadyForFulfillment'|'Failed'|null $dialogState
+ * @property string|null $slotToElicit
+ * @property Shapes\ResponseCard|null $responseCard
+ * @property string|null $sessionId
+ * @property string|null $botVersion
+ * @property list<Shapes\ActiveContext>|null $activeContexts
  */
 class PostTextResponse extends Response
 {

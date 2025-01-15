@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\ListNetworkSites\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $availabilityZone
- * @property string $availabilityZoneId
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property SitePlan $currentPlan
- * @property string $description
+ * @property string|null $availabilityZone
+ * @property string|null $availabilityZoneId
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property SitePlan|null $currentPlan
+ * @property string|null $description
  * @property string $networkArn
  * @property string $networkSiteArn
  * @property string $networkSiteName
- * @property SitePlan $pendingPlan
+ * @property SitePlan|null $pendingPlan
  * @property 'CREATED'|'PROVISIONING'|'AVAILABLE'|'DEPROVISIONING'|'DELETED' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  */
 class NetworkSite extends Shape
 {
     /**
      * @param array{
-     *     availabilityZone?: string,
-     *     availabilityZoneId?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     currentPlan?: SitePlan,
-     *     description?: string,
+     *     availabilityZone?: string|null,
+     *     availabilityZoneId?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     currentPlan?: SitePlan|null,
+     *     description?: string|null,
      *     networkArn: string,
      *     networkSiteArn: string,
      *     networkSiteName: string,
-     *     pendingPlan?: SitePlan,
+     *     pendingPlan?: SitePlan|null,
      *     status: 'CREATED'|'PROVISIONING'|'AVAILABLE'|'DEPROVISIONING'|'DELETED',
-     *     statusReason?: string
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property string $MemberId
- * @property int<1, 99> $MaxResults
- * @property string $NextToken
+ * @property string|null $MemberId
+ * @property int<1, 99>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListRoomsRequest extends Request
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     MemberId?: string,
-     *     MaxResults?: int<1, 99>,
-     *     NextToken?: string
+     *     MemberId?: string|null,
+     *     MaxResults?: int<1, 99>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\ListOrganizationAdminAccounts\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property 'ENABLED'|'DISABLE_IN_PROGRESS' $Status
+ * @property string|null $AccountId
+ * @property 'ENABLED'|'DISABLE_IN_PROGRESS'|null $Status
  */
 class AdminAccount extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     Status?: 'ENABLED'|'DISABLE_IN_PROGRESS'
+     *     AccountId?: string|null,
+     *     Status?: 'ENABLED'|'DISABLE_IN_PROGRESS'|null
      * } $args
      */
     public function __construct(array $args = [])

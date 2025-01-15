@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CommandId
  * @property string $InstanceId
- * @property string $PluginName
+ * @property string|null $PluginName
  */
 class GetCommandInvocationRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetCommandInvocationRequest extends Request
      * @param array{
      *     CommandId: string,
      *     InstanceId: string,
-     *     PluginName?: string
+     *     PluginName?: string|null
      * } $args
      */
     public function __construct(array $args)

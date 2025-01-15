@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\LakeFormation\DeleteLFTag;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $TagKey
  */
 class DeleteLFTagRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     TagKey: string
      * } $args
      */

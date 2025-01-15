@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $KeyId
  * @property 'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512' $MacAlgorithm
  * @property string|resource|\Psr\Http\Message\StreamInterface $Mac
- * @property list<string> $GrantTokens
- * @property bool $DryRun
+ * @property list<string>|null $GrantTokens
+ * @property bool|null $DryRun
  */
 class VerifyMacRequest extends Request
 {
@@ -20,8 +20,8 @@ class VerifyMacRequest extends Request
      *     KeyId: string,
      *     MacAlgorithm: 'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512',
      *     Mac: string|resource|\Psr\Http\Message\StreamInterface,
-     *     GrantTokens?: list<string>,
-     *     DryRun?: bool
+     *     GrantTokens?: list<string>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

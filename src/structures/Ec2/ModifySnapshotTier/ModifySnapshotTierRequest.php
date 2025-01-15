@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SnapshotId
- * @property 'archive' $StorageTier
- * @property bool $DryRun
+ * @property 'archive'|null $StorageTier
+ * @property bool|null $DryRun
  */
 class ModifySnapshotTierRequest extends Request
 {
     /**
      * @param array{
      *     SnapshotId: string,
-     *     StorageTier?: 'archive',
-     *     DryRun?: bool
+     *     StorageTier?: 'archive'|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

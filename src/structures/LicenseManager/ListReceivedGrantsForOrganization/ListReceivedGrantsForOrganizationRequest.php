@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LicenseArn
- * @property list<Shapes\Filter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListReceivedGrantsForOrganizationRequest extends Request
 {
     /**
      * @param array{
      *     LicenseArn: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     Filters?: list<Shapes\Filter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

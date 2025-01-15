@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property FastLaunchSnapshotConfiguration $snapshotConfiguration
- * @property int<1, max> $maxParallelLaunches
- * @property FastLaunchLaunchTemplateSpecification $launchTemplate
- * @property string $accountId
+ * @property FastLaunchSnapshotConfiguration|null $snapshotConfiguration
+ * @property int<1, max>|null $maxParallelLaunches
+ * @property FastLaunchLaunchTemplateSpecification|null $launchTemplate
+ * @property string|null $accountId
  */
 class FastLaunchConfiguration extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     snapshotConfiguration?: FastLaunchSnapshotConfiguration,
-     *     maxParallelLaunches?: int<1, max>,
-     *     launchTemplate?: FastLaunchLaunchTemplateSpecification,
-     *     accountId?: string
+     *     snapshotConfiguration?: FastLaunchSnapshotConfiguration|null,
+     *     maxParallelLaunches?: int<1, max>|null,
+     *     launchTemplate?: FastLaunchLaunchTemplateSpecification|null,
+     *     accountId?: string|null
      * } $args
      */
     public function __construct(array $args)

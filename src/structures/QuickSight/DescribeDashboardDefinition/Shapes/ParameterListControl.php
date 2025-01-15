@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ParameterControlId
  * @property string $Title
  * @property string $SourceParameterName
- * @property ListControlDisplayOptions $DisplayOptions
- * @property 'MULTI_SELECT'|'SINGLE_SELECT' $Type
- * @property ParameterSelectableValues $SelectableValues
- * @property CascadingControlConfiguration $CascadingControlConfiguration
+ * @property ListControlDisplayOptions|null $DisplayOptions
+ * @property 'MULTI_SELECT'|'SINGLE_SELECT'|null $Type
+ * @property ParameterSelectableValues|null $SelectableValues
+ * @property CascadingControlConfiguration|null $CascadingControlConfiguration
  */
 class ParameterListControl extends Shape
 {
@@ -20,10 +20,10 @@ class ParameterListControl extends Shape
      *     ParameterControlId: string,
      *     Title: string,
      *     SourceParameterName: string,
-     *     DisplayOptions?: ListControlDisplayOptions,
-     *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT',
-     *     SelectableValues?: ParameterSelectableValues,
-     *     CascadingControlConfiguration?: CascadingControlConfiguration
+     *     DisplayOptions?: ListControlDisplayOptions|null,
+     *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT'|null,
+     *     SelectableValues?: ParameterSelectableValues|null,
+     *     CascadingControlConfiguration?: CascadingControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

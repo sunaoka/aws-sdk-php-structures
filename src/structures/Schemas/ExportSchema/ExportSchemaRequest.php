@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $RegistryName
  * @property string $SchemaName
- * @property string $SchemaVersion
+ * @property string|null $SchemaVersion
  * @property string $Type
  */
 class ExportSchemaRequest extends Request
@@ -16,7 +16,7 @@ class ExportSchemaRequest extends Request
      * @param array{
      *     RegistryName: string,
      *     SchemaName: string,
-     *     SchemaVersion?: string,
+     *     SchemaVersion?: string|null,
      *     Type: string
      * } $args
      */

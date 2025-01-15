@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<IntegerParameterRange> $IntegerParameterRanges
- * @property list<ContinuousParameterRange> $ContinuousParameterRanges
- * @property list<CategoricalParameterRange> $CategoricalParameterRanges
- * @property list<AutoParameter> $AutoParameters
+ * @property list<IntegerParameterRange>|null $IntegerParameterRanges
+ * @property list<ContinuousParameterRange>|null $ContinuousParameterRanges
+ * @property list<CategoricalParameterRange>|null $CategoricalParameterRanges
+ * @property list<AutoParameter>|null $AutoParameters
  */
 class ParameterRanges extends Shape
 {
     /**
      * @param array{
-     *     IntegerParameterRanges?: list<IntegerParameterRange>,
-     *     ContinuousParameterRanges?: list<ContinuousParameterRange>,
-     *     CategoricalParameterRanges?: list<CategoricalParameterRange>,
-     *     AutoParameters?: list<AutoParameter>
+     *     IntegerParameterRanges?: list<IntegerParameterRange>|null,
+     *     ContinuousParameterRanges?: list<ContinuousParameterRange>|null,
+     *     CategoricalParameterRanges?: list<CategoricalParameterRange>|null,
+     *     AutoParameters?: list<AutoParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

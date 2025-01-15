@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Emr\DescribeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Version
- * @property list<string> $Args
- * @property array<string, string> $AdditionalInfo
+ * @property string|null $Name
+ * @property string|null $Version
+ * @property list<string>|null $Args
+ * @property array<string, string>|null $AdditionalInfo
  */
 class Application extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Version?: string,
-     *     Args?: list<string>,
-     *     AdditionalInfo?: array<string, string>
+     *     Name?: string|null,
+     *     Version?: string|null,
+     *     Args?: list<string>|null,
+     *     AdditionalInfo?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

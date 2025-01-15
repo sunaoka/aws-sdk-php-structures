@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ClusterMarker $ClusterMarker
+ * @property ClusterMarker|null $ClusterMarker
  */
 class ClusterMarkerConfiguration extends Shape
 {
     /**
-     * @param array{ClusterMarker?: ClusterMarker} $args
+     * @param array{ClusterMarker?: ClusterMarker|null} $args
      */
     public function __construct(array $args = [])
     {

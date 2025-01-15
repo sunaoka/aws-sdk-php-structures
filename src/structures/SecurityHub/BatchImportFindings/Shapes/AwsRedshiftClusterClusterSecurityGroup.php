@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterSecurityGroupName
- * @property string $Status
+ * @property string|null $ClusterSecurityGroupName
+ * @property string|null $Status
  */
 class AwsRedshiftClusterClusterSecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     ClusterSecurityGroupName?: string,
-     *     Status?: string
+     *     ClusterSecurityGroupName?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

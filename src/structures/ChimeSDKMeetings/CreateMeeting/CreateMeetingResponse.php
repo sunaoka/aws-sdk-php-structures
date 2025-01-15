@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMeetings\CreateMeeting;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Meeting $Meeting
+ * @property Shapes\Meeting|null $Meeting
  */
 class CreateMeetingResponse extends Response
 {

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UserId
- * @property string $AccessString
- * @property string $AppendAccessString
- * @property list<string> $Passwords
- * @property bool $NoPasswordRequired
- * @property Shapes\AuthenticationMode $AuthenticationMode
- * @property string $Engine
+ * @property string|null $AccessString
+ * @property string|null $AppendAccessString
+ * @property list<string>|null $Passwords
+ * @property bool|null $NoPasswordRequired
+ * @property Shapes\AuthenticationMode|null $AuthenticationMode
+ * @property string|null $Engine
  */
 class ModifyUserRequest extends Request
 {
     /**
      * @param array{
      *     UserId: string,
-     *     AccessString?: string,
-     *     AppendAccessString?: string,
-     *     Passwords?: list<string>,
-     *     NoPasswordRequired?: bool,
-     *     AuthenticationMode?: Shapes\AuthenticationMode,
-     *     Engine?: string
+     *     AccessString?: string|null,
+     *     AppendAccessString?: string|null,
+     *     Passwords?: list<string>|null,
+     *     NoPasswordRequired?: bool|null,
+     *     AuthenticationMode?: Shapes\AuthenticationMode|null,
+     *     Engine?: string|null
      * } $args
      */
     public function __construct(array $args)

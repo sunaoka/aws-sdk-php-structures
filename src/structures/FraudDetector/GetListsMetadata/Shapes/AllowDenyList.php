@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $description
- * @property string $variableType
- * @property string $createdTime
- * @property string $updatedTime
- * @property string $arn
+ * @property string|null $description
+ * @property string|null $variableType
+ * @property string|null $createdTime
+ * @property string|null $updatedTime
+ * @property string|null $arn
  */
 class AllowDenyList extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     variableType?: string,
-     *     createdTime?: string,
-     *     updatedTime?: string,
-     *     arn?: string
+     *     description?: string|null,
+     *     variableType?: string|null,
+     *     createdTime?: string|null,
+     *     updatedTime?: string|null,
+     *     arn?: string|null
      * } $args
      */
     public function __construct(array $args)

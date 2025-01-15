@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class DeleteKeyGroupRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $RecoveryPointArn
  * @property array<string, string> $Metadata
- * @property string $IamRoleArn
- * @property string $IdempotencyToken
- * @property string $ResourceType
- * @property bool $CopySourceTagsToRestoredResource
+ * @property string|null $IamRoleArn
+ * @property string|null $IdempotencyToken
+ * @property string|null $ResourceType
+ * @property bool|null $CopySourceTagsToRestoredResource
  */
 class StartRestoreJobRequest extends Request
 {
@@ -18,10 +18,10 @@ class StartRestoreJobRequest extends Request
      * @param array{
      *     RecoveryPointArn: string,
      *     Metadata: array<string, string>,
-     *     IamRoleArn?: string,
-     *     IdempotencyToken?: string,
-     *     ResourceType?: string,
-     *     CopySourceTagsToRestoredResource?: bool
+     *     IamRoleArn?: string|null,
+     *     IdempotencyToken?: string|null,
+     *     ResourceType?: string|null,
+     *     CopySourceTagsToRestoredResource?: bool|null
      * } $args
      */
     public function __construct(array $args)

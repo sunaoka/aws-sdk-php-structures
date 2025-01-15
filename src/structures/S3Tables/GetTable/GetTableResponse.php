@@ -10,11 +10,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $tableARN
  * @property list<string> $namespace
  * @property string $versionToken
- * @property string $metadataLocation
+ * @property string|null $metadataLocation
  * @property string $warehouseLocation
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property string $managedByService
+ * @property string|null $managedByService
  * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property string $modifiedBy
  * @property string $ownerAccountId

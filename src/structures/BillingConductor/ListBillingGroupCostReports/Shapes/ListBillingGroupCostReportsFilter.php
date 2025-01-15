@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListBillingGroupCostReports\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $BillingGroupArns
+ * @property list<string>|null $BillingGroupArns
  */
 class ListBillingGroupCostReportsFilter extends Shape
 {
     /**
-     * @param array{BillingGroupArns?: list<string>} $args
+     * @param array{BillingGroupArns?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

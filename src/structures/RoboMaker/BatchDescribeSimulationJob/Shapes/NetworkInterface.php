@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\RoboMaker\BatchDescribeSimulationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $networkInterfaceId
- * @property string $privateIpAddress
- * @property string $publicIpAddress
+ * @property string|null $networkInterfaceId
+ * @property string|null $privateIpAddress
+ * @property string|null $publicIpAddress
  */
 class NetworkInterface extends Shape
 {
     /**
      * @param array{
-     *     networkInterfaceId?: string,
-     *     privateIpAddress?: string,
-     *     publicIpAddress?: string
+     *     networkInterfaceId?: string|null,
+     *     privateIpAddress?: string|null,
+     *     publicIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ScheduleRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $extraDataPackageArn
- * @property string $networkProfileArn
- * @property string $locale
- * @property Location $location
- * @property list<string> $vpceConfigurationArns
- * @property CustomerArtifactPaths $customerArtifactPaths
- * @property Radios $radios
- * @property list<string> $auxiliaryApps
- * @property 'METERED'|'UNMETERED' $billingMethod
+ * @property string|null $extraDataPackageArn
+ * @property string|null $networkProfileArn
+ * @property string|null $locale
+ * @property Location|null $location
+ * @property list<string>|null $vpceConfigurationArns
+ * @property CustomerArtifactPaths|null $customerArtifactPaths
+ * @property Radios|null $radios
+ * @property list<string>|null $auxiliaryApps
+ * @property 'METERED'|'UNMETERED'|null $billingMethod
  */
 class ScheduleRunConfiguration extends Shape
 {
     /**
      * @param array{
-     *     extraDataPackageArn?: string,
-     *     networkProfileArn?: string,
-     *     locale?: string,
-     *     location?: Location,
-     *     vpceConfigurationArns?: list<string>,
-     *     customerArtifactPaths?: CustomerArtifactPaths,
-     *     radios?: Radios,
-     *     auxiliaryApps?: list<string>,
-     *     billingMethod?: 'METERED'|'UNMETERED'
+     *     extraDataPackageArn?: string|null,
+     *     networkProfileArn?: string|null,
+     *     locale?: string|null,
+     *     location?: Location|null,
+     *     vpceConfigurationArns?: list<string>|null,
+     *     customerArtifactPaths?: CustomerArtifactPaths|null,
+     *     radios?: Radios|null,
+     *     auxiliaryApps?: list<string>|null,
+     *     billingMethod?: 'METERED'|'UNMETERED'|null
      * } $args
      */
     public function __construct(array $args = [])

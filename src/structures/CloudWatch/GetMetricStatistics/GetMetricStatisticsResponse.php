@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudWatch\GetMetricStatistics;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Label
- * @property list<Shapes\Datapoint> $Datapoints
+ * @property string|null $Label
+ * @property list<Shapes\Datapoint>|null $Datapoints
  */
 class GetMetricStatisticsResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $datasetIdentifier
- * @property DataIntegrationFlowDatasetOptions $options
+ * @property DataIntegrationFlowDatasetOptions|null $options
  */
 class DataIntegrationFlowDatasetSourceConfiguration extends Shape
 {
     /**
      * @param array{
      *     datasetIdentifier: string,
-     *     options?: DataIntegrationFlowDatasetOptions
+     *     options?: DataIntegrationFlowDatasetOptions|null
      * } $args
      */
     public function __construct(array $args)

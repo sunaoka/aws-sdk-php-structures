@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AttachmentId
- * @property list<string> $AddSubnetArns
- * @property list<string> $RemoveSubnetArns
- * @property Shapes\VpcOptions $Options
+ * @property list<string>|null $AddSubnetArns
+ * @property list<string>|null $RemoveSubnetArns
+ * @property Shapes\VpcOptions|null $Options
  */
 class UpdateVpcAttachmentRequest extends Request
 {
     /**
      * @param array{
      *     AttachmentId: string,
-     *     AddSubnetArns?: list<string>,
-     *     RemoveSubnetArns?: list<string>,
-     *     Options?: Shapes\VpcOptions
+     *     AddSubnetArns?: list<string>|null,
+     *     RemoveSubnetArns?: list<string>|null,
+     *     Options?: Shapes\VpcOptions|null
      * } $args
      */
     public function __construct(array $args)

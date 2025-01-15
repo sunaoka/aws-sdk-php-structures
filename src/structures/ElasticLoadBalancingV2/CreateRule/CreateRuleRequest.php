@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\RuleCondition> $Conditions
  * @property int<1, 50000> $Priority
  * @property list<Shapes\Action> $Actions
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateRuleRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateRuleRequest extends Request
      *     Conditions: list<Shapes\RuleCondition>,
      *     Priority: int<1, 50000>,
      *     Actions: list<Shapes\Action>,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

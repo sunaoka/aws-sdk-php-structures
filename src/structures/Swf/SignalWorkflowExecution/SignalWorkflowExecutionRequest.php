@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domain
  * @property string $workflowId
- * @property string $runId
+ * @property string|null $runId
  * @property string $signalName
- * @property string $input
+ * @property string|null $input
  */
 class SignalWorkflowExecutionRequest extends Request
 {
@@ -17,9 +17,9 @@ class SignalWorkflowExecutionRequest extends Request
      * @param array{
      *     domain: string,
      *     workflowId: string,
-     *     runId?: string,
+     *     runId?: string|null,
      *     signalName: string,
-     *     input?: string
+     *     input?: string|null
      * } $args
      */
     public function __construct(array $args)

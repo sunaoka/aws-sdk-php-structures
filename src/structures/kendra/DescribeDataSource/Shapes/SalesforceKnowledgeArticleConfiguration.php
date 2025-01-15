@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<'DRAFT'|'PUBLISHED'|'ARCHIVED'> $IncludedStates
- * @property SalesforceStandardKnowledgeArticleTypeConfiguration $StandardKnowledgeArticleTypeConfiguration
- * @property list<SalesforceCustomKnowledgeArticleTypeConfiguration> $CustomKnowledgeArticleTypeConfigurations
+ * @property SalesforceStandardKnowledgeArticleTypeConfiguration|null $StandardKnowledgeArticleTypeConfiguration
+ * @property list<SalesforceCustomKnowledgeArticleTypeConfiguration>|null $CustomKnowledgeArticleTypeConfigurations
  */
 class SalesforceKnowledgeArticleConfiguration extends Shape
 {
     /**
      * @param array{
      *     IncludedStates: list<'DRAFT'|'PUBLISHED'|'ARCHIVED'>,
-     *     StandardKnowledgeArticleTypeConfiguration?: SalesforceStandardKnowledgeArticleTypeConfiguration,
-     *     CustomKnowledgeArticleTypeConfigurations?: list<SalesforceCustomKnowledgeArticleTypeConfiguration>
+     *     StandardKnowledgeArticleTypeConfiguration?: SalesforceStandardKnowledgeArticleTypeConfiguration|null,
+     *     CustomKnowledgeArticleTypeConfigurations?: list<SalesforceCustomKnowledgeArticleTypeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

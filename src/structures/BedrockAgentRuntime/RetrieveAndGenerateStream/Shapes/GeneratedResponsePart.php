@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TextResponsePart $textResponsePart
+ * @property TextResponsePart|null $textResponsePart
  */
 class GeneratedResponsePart extends Shape
 {
     /**
-     * @param array{textResponsePart?: TextResponsePart} $args
+     * @param array{textResponsePart?: TextResponsePart|null} $args
      */
     public function __construct(array $args = [])
     {

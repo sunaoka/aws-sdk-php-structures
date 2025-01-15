@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorSc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CodeLineCount
- * @property int $CodeSize
- * @property string $Complexity
- * @property ServerShortInfoResponse $Server
- * @property DatabaseShortInfoResponse $DatabaseInstance
- * @property string $SchemaId
- * @property string $SchemaName
- * @property SchemaShortInfoResponse $OriginalSchema
- * @property double $Similarity
+ * @property int|null $CodeLineCount
+ * @property int|null $CodeSize
+ * @property string|null $Complexity
+ * @property ServerShortInfoResponse|null $Server
+ * @property DatabaseShortInfoResponse|null $DatabaseInstance
+ * @property string|null $SchemaId
+ * @property string|null $SchemaName
+ * @property SchemaShortInfoResponse|null $OriginalSchema
+ * @property double|null $Similarity
  */
 class SchemaResponse extends Shape
 {
     /**
      * @param array{
-     *     CodeLineCount?: int,
-     *     CodeSize?: int,
-     *     Complexity?: string,
-     *     Server?: ServerShortInfoResponse,
-     *     DatabaseInstance?: DatabaseShortInfoResponse,
-     *     SchemaId?: string,
-     *     SchemaName?: string,
-     *     OriginalSchema?: SchemaShortInfoResponse,
-     *     Similarity?: double
+     *     CodeLineCount?: int|null,
+     *     CodeSize?: int|null,
+     *     Complexity?: string|null,
+     *     Server?: ServerShortInfoResponse|null,
+     *     DatabaseInstance?: DatabaseShortInfoResponse|null,
+     *     SchemaId?: string|null,
+     *     SchemaName?: string|null,
+     *     OriginalSchema?: SchemaShortInfoResponse|null,
+     *     Similarity?: double|null
      * } $args
      */
     public function __construct(array $args = [])

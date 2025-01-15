@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeHosts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AvailableCapacity
- * @property string $InstanceType
- * @property int $TotalCapacity
+ * @property int|null $AvailableCapacity
+ * @property string|null $InstanceType
+ * @property int|null $TotalCapacity
  */
 class InstanceCapacity extends Shape
 {
     /**
      * @param array{
-     *     AvailableCapacity?: int,
-     *     InstanceType?: string,
-     *     TotalCapacity?: int
+     *     AvailableCapacity?: int|null,
+     *     InstanceType?: string|null,
+     *     TotalCapacity?: int|null
      * } $args
      */
     public function __construct(array $args = [])

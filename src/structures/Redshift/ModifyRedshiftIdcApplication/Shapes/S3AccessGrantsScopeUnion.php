@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Redshift\ModifyRedshiftIdcApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReadWriteAccess $ReadWriteAccess
+ * @property ReadWriteAccess|null $ReadWriteAccess
  */
 class S3AccessGrantsScopeUnion extends Shape
 {
     /**
-     * @param array{ReadWriteAccess?: ReadWriteAccess} $args
+     * @param array{ReadWriteAccess?: ReadWriteAccess|null} $args
      */
     public function __construct(array $args = [])
     {

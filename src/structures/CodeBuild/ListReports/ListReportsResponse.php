@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeBuild\ListReports;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<string> $reports
+ * @property string|null $nextToken
+ * @property list<string>|null $reports
  */
 class ListReportsResponse extends Response
 {

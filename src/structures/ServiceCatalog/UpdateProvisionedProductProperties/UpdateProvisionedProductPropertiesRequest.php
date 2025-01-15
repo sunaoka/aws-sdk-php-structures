@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\UpdateProvisionedProductProperti
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $ProvisionedProductId
  * @property array<'OWNER'|'LAUNCH_ROLE', string> $ProvisionedProductProperties
  * @property string $IdempotencyToken
@@ -14,7 +14,7 @@ class UpdateProvisionedProductPropertiesRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     ProvisionedProductId: string,
      *     ProvisionedProductProperties: array<'OWNER'|'LAUNCH_ROLE', string>,
      *     IdempotencyToken: string

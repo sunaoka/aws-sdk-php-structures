@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $workflowId
- * @property string $runId
+ * @property string|null $runId
  * @property int $decisionTaskCompletedEventId
- * @property string $control
+ * @property string|null $control
  */
 class RequestCancelExternalWorkflowExecutionInitiatedEventAttributes extends Shape
 {
     /**
      * @param array{
      *     workflowId: string,
-     *     runId?: string,
+     *     runId?: string|null,
      *     decisionTaskCompletedEventId: int,
-     *     control?: string
+     *     control?: string|null
      * } $args
      */
     public function __construct(array $args)

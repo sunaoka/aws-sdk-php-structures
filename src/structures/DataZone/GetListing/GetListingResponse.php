@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\GetListing;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property string|null $description
  * @property string $domainId
  * @property string $id
- * @property Shapes\ListingItem $item
+ * @property Shapes\ListingItem|null $item
  * @property string $listingRevision
- * @property string $name
- * @property 'CREATING'|'ACTIVE'|'INACTIVE' $status
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property string|null $name
+ * @property 'CREATING'|'ACTIVE'|'INACTIVE'|null $status
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class GetListingResponse extends Response
 {

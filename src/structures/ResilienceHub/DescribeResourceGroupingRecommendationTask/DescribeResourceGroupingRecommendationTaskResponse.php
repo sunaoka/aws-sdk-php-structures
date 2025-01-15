@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\DescribeResourceGroupingRecommend
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $errorMessage
+ * @property string|null $errorMessage
  * @property string $groupingId
  * @property 'Pending'|'InProgress'|'Failed'|'Success' $status
  */

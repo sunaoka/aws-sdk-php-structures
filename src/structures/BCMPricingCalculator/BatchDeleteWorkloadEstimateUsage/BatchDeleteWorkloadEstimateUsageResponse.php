@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchDeleteWorkloadEstimat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BatchDeleteWorkloadEstimateUsageError> $errors
+ * @property list<Shapes\BatchDeleteWorkloadEstimateUsageError>|null $errors
  */
 class BatchDeleteWorkloadEstimateUsageResponse extends Response
 {

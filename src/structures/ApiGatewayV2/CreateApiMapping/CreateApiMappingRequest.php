@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApiId
- * @property string $ApiMappingKey
+ * @property string|null $ApiMappingKey
  * @property string $DomainName
  * @property string $Stage
  */
@@ -15,7 +15,7 @@ class CreateApiMappingRequest extends Request
     /**
      * @param array{
      *     ApiId: string,
-     *     ApiMappingKey?: string,
+     *     ApiMappingKey?: string|null,
      *     DomainName: string,
      *     Stage: string
      * } $args

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RoutePedestrianPlace $Place
- * @property string $Time
+ * @property string|null $Time
  */
 class RoutePedestrianDeparture extends Shape
 {
     /**
      * @param array{
      *     Place: RoutePedestrianPlace,
-     *     Time?: string
+     *     Time?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\XRay\UpdateIndexingRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property IndexingRuleValue $Rule
+ * @property string|null $Name
+ * @property \Aws\Api\DateTimeResult|null $ModifiedAt
+ * @property IndexingRuleValue|null $Rule
  */
 class IndexingRule extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     ModifiedAt?: \Aws\Api\DateTimeResult,
-     *     Rule?: IndexingRuleValue
+     *     Name?: string|null,
+     *     ModifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     Rule?: IndexingRuleValue|null
      * } $args
      */
     public function __construct(array $args = [])

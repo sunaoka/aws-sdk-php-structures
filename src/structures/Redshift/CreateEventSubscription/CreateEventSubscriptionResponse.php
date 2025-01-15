@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateEventSubscription;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\EventSubscription $EventSubscription
+ * @property Shapes\EventSubscription|null $EventSubscription
  */
 class CreateEventSubscriptionResponse extends Response
 {

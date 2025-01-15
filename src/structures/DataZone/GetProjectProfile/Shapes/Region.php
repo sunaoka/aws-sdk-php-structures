@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\GetProjectProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $regionName
- * @property string $regionNamePath
+ * @property string|null $regionName
+ * @property string|null $regionNamePath
  */
 class Region extends Shape
 {
     /**
      * @param array{
-     *     regionName?: string,
-     *     regionNamePath?: string
+     *     regionName?: string|null,
+     *     regionNamePath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeValidDBInstanceModifications\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ValidStorageOptions> $Storage
- * @property list<AvailableProcessorFeature> $ValidProcessorFeatures
- * @property bool $SupportsDedicatedLogVolume
+ * @property list<ValidStorageOptions>|null $Storage
+ * @property list<AvailableProcessorFeature>|null $ValidProcessorFeatures
+ * @property bool|null $SupportsDedicatedLogVolume
  */
 class ValidDBInstanceModificationsMessage extends Shape
 {
     /**
      * @param array{
-     *     Storage?: list<ValidStorageOptions>,
-     *     ValidProcessorFeatures?: list<AvailableProcessorFeature>,
-     *     SupportsDedicatedLogVolume?: bool
+     *     Storage?: list<ValidStorageOptions>|null,
+     *     ValidProcessorFeatures?: list<AvailableProcessorFeature>|null,
+     *     SupportsDedicatedLogVolume?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

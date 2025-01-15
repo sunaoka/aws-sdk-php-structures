@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\ApiGateway\UpdateUsage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $usagePlanId
- * @property string $startDate
- * @property string $endDate
- * @property string $position
- * @property array<string, list<list<int>>> $items
+ * @property string|null $usagePlanId
+ * @property string|null $startDate
+ * @property string|null $endDate
+ * @property string|null $position
+ * @property array<string, list<list<int>>>|null $items
  */
 class UpdateUsageResponse extends Response
 {

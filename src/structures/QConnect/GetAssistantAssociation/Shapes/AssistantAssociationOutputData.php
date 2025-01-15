@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\GetAssistantAssociation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property KnowledgeBaseAssociationData $knowledgeBaseAssociation
+ * @property KnowledgeBaseAssociationData|null $knowledgeBaseAssociation
  */
 class AssistantAssociationOutputData extends Shape
 {
     /**
-     * @param array{knowledgeBaseAssociation?: KnowledgeBaseAssociationData} $args
+     * @param array{knowledgeBaseAssociation?: KnowledgeBaseAssociationData|null} $args
      */
     public function __construct(array $args = [])
     {

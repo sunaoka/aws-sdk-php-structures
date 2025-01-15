@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SubscriptionArn
- * @property double $Threshold
- * @property 'DAILY'|'IMMEDIATE'|'WEEKLY' $Frequency
- * @property list<string> $MonitorArnList
- * @property list<Shapes\Subscriber> $Subscribers
- * @property string $SubscriptionName
- * @property Shapes\Expression $ThresholdExpression
+ * @property double|null $Threshold
+ * @property 'DAILY'|'IMMEDIATE'|'WEEKLY'|null $Frequency
+ * @property list<string>|null $MonitorArnList
+ * @property list<Shapes\Subscriber>|null $Subscribers
+ * @property string|null $SubscriptionName
+ * @property Shapes\Expression|null $ThresholdExpression
  */
 class UpdateAnomalySubscriptionRequest extends Request
 {
     /**
      * @param array{
      *     SubscriptionArn: string,
-     *     Threshold?: double,
-     *     Frequency?: 'DAILY'|'IMMEDIATE'|'WEEKLY',
-     *     MonitorArnList?: list<string>,
-     *     Subscribers?: list<Shapes\Subscriber>,
-     *     SubscriptionName?: string,
-     *     ThresholdExpression?: Shapes\Expression
+     *     Threshold?: double|null,
+     *     Frequency?: 'DAILY'|'IMMEDIATE'|'WEEKLY'|null,
+     *     MonitorArnList?: list<string>|null,
+     *     Subscribers?: list<Shapes\Subscriber>|null,
+     *     SubscriptionName?: string|null,
+     *     ThresholdExpression?: Shapes\Expression|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\CreateProvisioningClaim\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PublicKey
- * @property string $PrivateKey
+ * @property string|null $PublicKey
+ * @property string|null $PrivateKey
  */
 class KeyPair extends Shape
 {
     /**
      * @param array{
-     *     PublicKey?: string,
-     *     PrivateKey?: string
+     *     PublicKey?: string|null,
+     *     PrivateKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\StartAttachedFileUpload\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectUserArn
- * @property string $AWSIdentityArn
+ * @property string|null $ConnectUserArn
+ * @property string|null $AWSIdentityArn
  */
 class CreatedByInfo extends Shape
 {
     /**
      * @param array{
-     *     ConnectUserArn?: string,
-     *     AWSIdentityArn?: string
+     *     ConnectUserArn?: string|null,
+     *     AWSIdentityArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

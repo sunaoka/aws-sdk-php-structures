@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $restApiId
  * @property string $resourceId
  * @property string $httpMethod
- * @property string $pathWithQueryString
- * @property string $body
- * @property array<string, string> $headers
- * @property array<string, list<string>> $multiValueHeaders
- * @property string $clientCertificateId
- * @property array<string, string> $stageVariables
+ * @property string|null $pathWithQueryString
+ * @property string|null $body
+ * @property array<string, string>|null $headers
+ * @property array<string, list<string>>|null $multiValueHeaders
+ * @property string|null $clientCertificateId
+ * @property array<string, string>|null $stageVariables
  */
 class TestInvokeMethodRequest extends Request
 {
@@ -22,12 +22,12 @@ class TestInvokeMethodRequest extends Request
      *     restApiId: string,
      *     resourceId: string,
      *     httpMethod: string,
-     *     pathWithQueryString?: string,
-     *     body?: string,
-     *     headers?: array<string, string>,
-     *     multiValueHeaders?: array<string, list<string>>,
-     *     clientCertificateId?: string,
-     *     stageVariables?: array<string, string>
+     *     pathWithQueryString?: string|null,
+     *     body?: string|null,
+     *     headers?: array<string, string>|null,
+     *     multiValueHeaders?: array<string, list<string>>|null,
+     *     clientCertificateId?: string|null,
+     *     stageVariables?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

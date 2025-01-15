@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\GetAsset;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property string|null $description
  * @property string $domainId
- * @property string $externalIdentifier
- * @property \Aws\Api\DateTimeResult $firstRevisionCreatedAt
- * @property string $firstRevisionCreatedBy
+ * @property string|null $externalIdentifier
+ * @property \Aws\Api\DateTimeResult|null $firstRevisionCreatedAt
+ * @property string|null $firstRevisionCreatedBy
  * @property list<Shapes\FormOutput> $formsOutput
- * @property list<string> $glossaryTerms
+ * @property list<string>|null $glossaryTerms
  * @property string $id
- * @property list<Shapes\TimeSeriesDataPointSummaryFormOutput> $latestTimeSeriesDataPointFormsOutput
- * @property Shapes\AssetListingDetails $listing
+ * @property list<Shapes\TimeSeriesDataPointSummaryFormOutput>|null $latestTimeSeriesDataPointFormsOutput
+ * @property Shapes\AssetListingDetails|null $listing
  * @property string $name
  * @property string $owningProjectId
- * @property list<Shapes\FormOutput> $readOnlyFormsOutput
+ * @property list<Shapes\FormOutput>|null $readOnlyFormsOutput
  * @property string $revision
  * @property string $typeIdentifier
  * @property string $typeRevision

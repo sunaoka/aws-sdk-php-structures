@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VolumeARN
  * @property int<0, 23> $StartAt
  * @property int<1, 24> $RecurrenceInHours
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class UpdateSnapshotScheduleRequest extends Request
 {
@@ -18,8 +18,8 @@ class UpdateSnapshotScheduleRequest extends Request
      *     VolumeARN: string,
      *     StartAt: int<0, 23>,
      *     RecurrenceInHours: int<1, 24>,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

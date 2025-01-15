@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Athena\GetQueryRuntimeStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StageId
- * @property string $State
- * @property int $OutputBytes
- * @property int $OutputRows
- * @property int $InputBytes
- * @property int $InputRows
- * @property int $ExecutionTime
- * @property QueryStagePlanNode $QueryStagePlan
- * @property list<QueryStage> $SubStages
+ * @property int|null $StageId
+ * @property string|null $State
+ * @property int|null $OutputBytes
+ * @property int|null $OutputRows
+ * @property int|null $InputBytes
+ * @property int|null $InputRows
+ * @property int|null $ExecutionTime
+ * @property QueryStagePlanNode|null $QueryStagePlan
+ * @property list<QueryStage>|null $SubStages
  */
 class QueryStage extends Shape
 {
     /**
      * @param array{
-     *     StageId?: int,
-     *     State?: string,
-     *     OutputBytes?: int,
-     *     OutputRows?: int,
-     *     InputBytes?: int,
-     *     InputRows?: int,
-     *     ExecutionTime?: int,
-     *     QueryStagePlan?: QueryStagePlanNode,
-     *     SubStages?: list<QueryStage>
+     *     StageId?: int|null,
+     *     State?: string|null,
+     *     OutputBytes?: int|null,
+     *     OutputRows?: int|null,
+     *     InputBytes?: int|null,
+     *     InputRows?: int|null,
+     *     ExecutionTime?: int|null,
+     *     QueryStagePlan?: QueryStagePlanNode|null,
+     *     SubStages?: list<QueryStage>|null
      * } $args
      */
     public function __construct(array $args = [])

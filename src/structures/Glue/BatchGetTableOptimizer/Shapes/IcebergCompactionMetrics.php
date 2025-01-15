@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetTableOptimizer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfBytesCompacted
- * @property int $NumberOfFilesCompacted
- * @property int $NumberOfDpus
- * @property double $JobDurationInHour
+ * @property int|null $NumberOfBytesCompacted
+ * @property int|null $NumberOfFilesCompacted
+ * @property int|null $NumberOfDpus
+ * @property double|null $JobDurationInHour
  */
 class IcebergCompactionMetrics extends Shape
 {
     /**
      * @param array{
-     *     NumberOfBytesCompacted?: int,
-     *     NumberOfFilesCompacted?: int,
-     *     NumberOfDpus?: int,
-     *     JobDurationInHour?: double
+     *     NumberOfBytesCompacted?: int|null,
+     *     NumberOfFilesCompacted?: int|null,
+     *     NumberOfDpus?: int|null,
+     *     JobDurationInHour?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CloudTrail\LookupEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EventId
- * @property string $EventName
- * @property string $ReadOnly
- * @property string $AccessKeyId
- * @property \Aws\Api\DateTimeResult $EventTime
- * @property string $EventSource
- * @property string $Username
- * @property list<Resource> $Resources
- * @property string $CloudTrailEvent
+ * @property string|null $EventId
+ * @property string|null $EventName
+ * @property string|null $ReadOnly
+ * @property string|null $AccessKeyId
+ * @property \Aws\Api\DateTimeResult|null $EventTime
+ * @property string|null $EventSource
+ * @property string|null $Username
+ * @property list<Resource>|null $Resources
+ * @property string|null $CloudTrailEvent
  */
 class Event extends Shape
 {
     /**
      * @param array{
-     *     EventId?: string,
-     *     EventName?: string,
-     *     ReadOnly?: string,
-     *     AccessKeyId?: string,
-     *     EventTime?: \Aws\Api\DateTimeResult,
-     *     EventSource?: string,
-     *     Username?: string,
-     *     Resources?: list<Resource>,
-     *     CloudTrailEvent?: string
+     *     EventId?: string|null,
+     *     EventName?: string|null,
+     *     ReadOnly?: string|null,
+     *     AccessKeyId?: string|null,
+     *     EventTime?: \Aws\Api\DateTimeResult|null,
+     *     EventSource?: string|null,
+     *     Username?: string|null,
+     *     Resources?: list<Resource>|null,
+     *     CloudTrailEvent?: string|null
      * } $args
      */
     public function __construct(array $args = [])

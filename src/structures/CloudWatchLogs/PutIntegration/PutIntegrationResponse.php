@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutIntegration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $integrationName
- * @property 'PROVISIONING'|'ACTIVE'|'FAILED' $integrationStatus
+ * @property string|null $integrationName
+ * @property 'PROVISIONING'|'ACTIVE'|'FAILED'|null $integrationStatus
  */
 class PutIntegrationResponse extends Response
 {

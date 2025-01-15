@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FieldId
  * @property ColumnIdentifier $Column
- * @property FormatConfiguration $FormatConfiguration
+ * @property FormatConfiguration|null $FormatConfiguration
  */
 class UnaggregatedField extends Shape
 {
@@ -15,7 +15,7 @@ class UnaggregatedField extends Shape
      * @param array{
      *     FieldId: string,
      *     Column: ColumnIdentifier,
-     *     FormatConfiguration?: FormatConfiguration
+     *     FormatConfiguration?: FormatConfiguration|null
      * } $args
      */
     public function __construct(array $args)

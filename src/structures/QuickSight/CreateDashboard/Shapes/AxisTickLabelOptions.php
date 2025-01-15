@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LabelOptions $LabelOptions
- * @property double $RotationAngle
+ * @property LabelOptions|null $LabelOptions
+ * @property double|null $RotationAngle
  */
 class AxisTickLabelOptions extends Shape
 {
     /**
      * @param array{
-     *     LabelOptions?: LabelOptions,
-     *     RotationAngle?: double
+     *     LabelOptions?: LabelOptions|null,
+     *     RotationAngle?: double|null
      * } $args
      */
     public function __construct(array $args = [])

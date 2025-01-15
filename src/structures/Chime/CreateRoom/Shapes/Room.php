@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Chime\CreateRoom\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoomId
- * @property string $Name
- * @property string $AccountId
- * @property string $CreatedBy
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $RoomId
+ * @property string|null $Name
+ * @property string|null $AccountId
+ * @property string|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class Room extends Shape
 {
     /**
      * @param array{
-     *     RoomId?: string,
-     *     Name?: string,
-     *     AccountId?: string,
-     *     CreatedBy?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     RoomId?: string|null,
+     *     Name?: string|null,
+     *     AccountId?: string|null,
+     *     CreatedBy?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

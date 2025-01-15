@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ApplicationSignals\ListServiceLevelObjectives;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property array<string, string> $KeyAttributes
- * @property string $OperationName
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property array<string, string>|null $KeyAttributes
+ * @property string|null $OperationName
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListServiceLevelObjectivesRequest extends Request
 {
     /**
      * @param array{
-     *     KeyAttributes?: array<string, string>,
-     *     OperationName?: string,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     KeyAttributes?: array<string, string>|null,
+     *     OperationName?: string|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

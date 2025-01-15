@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ListTrackersResponseEntry> $Entries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListTrackersResponse extends Response
 {

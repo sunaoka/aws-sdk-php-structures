@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Files
+ * @property int|null $Files
  */
 class ThreatsDetectedItemCount extends Shape
 {
     /**
-     * @param array{Files?: int} $args
+     * @param array{Files?: int|null} $args
      */
     public function __construct(array $args = [])
     {

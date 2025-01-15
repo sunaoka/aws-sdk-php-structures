@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribeAssetModelCompositeModel\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
+ * @property string|null $id
  */
 class CompositionRelationshipItem extends Shape
 {
     /**
-     * @param array{id?: string} $args
+     * @param array{id?: string|null} $args
      */
     public function __construct(array $args = [])
     {

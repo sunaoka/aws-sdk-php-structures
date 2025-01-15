@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ForecastFrequency
- * @property list<string> $ForecastDimensions
- * @property list<Featurization> $Featurizations
+ * @property list<string>|null $ForecastDimensions
+ * @property list<Featurization>|null $Featurizations
  */
 class FeaturizationConfig extends Shape
 {
     /**
      * @param array{
      *     ForecastFrequency: string,
-     *     ForecastDimensions?: list<string>,
-     *     Featurizations?: list<Featurization>
+     *     ForecastDimensions?: list<string>|null,
+     *     Featurizations?: list<Featurization>|null
      * } $args
      */
     public function __construct(array $args)

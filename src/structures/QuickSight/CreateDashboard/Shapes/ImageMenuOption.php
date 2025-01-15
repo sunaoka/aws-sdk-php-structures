@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $AvailabilityStatus
+ * @property 'ENABLED'|'DISABLED'|null $AvailabilityStatus
  */
 class ImageMenuOption extends Shape
 {
     /**
-     * @param array{AvailabilityStatus?: 'ENABLED'|'DISABLED'} $args
+     * @param array{AvailabilityStatus?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

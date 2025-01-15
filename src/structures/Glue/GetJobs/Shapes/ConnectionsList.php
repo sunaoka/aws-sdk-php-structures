@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\GetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Connections
+ * @property list<string>|null $Connections
  */
 class ConnectionsList extends Shape
 {
     /**
-     * @param array{Connections?: list<string>} $args
+     * @param array{Connections?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeploymentId
- * @property string $ClientCertificateId
- * @property string $StageName
- * @property string $Description
- * @property bool $CacheClusterEnabled
- * @property string $CacheClusterSize
- * @property string $CacheClusterStatus
- * @property list<AwsApiGatewayMethodSettings> $MethodSettings
- * @property array<string, string> $Variables
- * @property string $DocumentationVersion
- * @property AwsApiGatewayAccessLogSettings $AccessLogSettings
- * @property AwsApiGatewayCanarySettings $CanarySettings
- * @property bool $TracingEnabled
- * @property string $CreatedDate
- * @property string $LastUpdatedDate
- * @property string $WebAclArn
+ * @property string|null $DeploymentId
+ * @property string|null $ClientCertificateId
+ * @property string|null $StageName
+ * @property string|null $Description
+ * @property bool|null $CacheClusterEnabled
+ * @property string|null $CacheClusterSize
+ * @property string|null $CacheClusterStatus
+ * @property list<AwsApiGatewayMethodSettings>|null $MethodSettings
+ * @property array<string, string>|null $Variables
+ * @property string|null $DocumentationVersion
+ * @property AwsApiGatewayAccessLogSettings|null $AccessLogSettings
+ * @property AwsApiGatewayCanarySettings|null $CanarySettings
+ * @property bool|null $TracingEnabled
+ * @property string|null $CreatedDate
+ * @property string|null $LastUpdatedDate
+ * @property string|null $WebAclArn
  */
 class AwsApiGatewayStageDetails extends Shape
 {
     /**
      * @param array{
-     *     DeploymentId?: string,
-     *     ClientCertificateId?: string,
-     *     StageName?: string,
-     *     Description?: string,
-     *     CacheClusterEnabled?: bool,
-     *     CacheClusterSize?: string,
-     *     CacheClusterStatus?: string,
-     *     MethodSettings?: list<AwsApiGatewayMethodSettings>,
-     *     Variables?: array<string, string>,
-     *     DocumentationVersion?: string,
-     *     AccessLogSettings?: AwsApiGatewayAccessLogSettings,
-     *     CanarySettings?: AwsApiGatewayCanarySettings,
-     *     TracingEnabled?: bool,
-     *     CreatedDate?: string,
-     *     LastUpdatedDate?: string,
-     *     WebAclArn?: string
+     *     DeploymentId?: string|null,
+     *     ClientCertificateId?: string|null,
+     *     StageName?: string|null,
+     *     Description?: string|null,
+     *     CacheClusterEnabled?: bool|null,
+     *     CacheClusterSize?: string|null,
+     *     CacheClusterStatus?: string|null,
+     *     MethodSettings?: list<AwsApiGatewayMethodSettings>|null,
+     *     Variables?: array<string, string>|null,
+     *     DocumentationVersion?: string|null,
+     *     AccessLogSettings?: AwsApiGatewayAccessLogSettings|null,
+     *     CanarySettings?: AwsApiGatewayCanarySettings|null,
+     *     TracingEnabled?: bool|null,
+     *     CreatedDate?: string|null,
+     *     LastUpdatedDate?: string|null,
+     *     WebAclArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

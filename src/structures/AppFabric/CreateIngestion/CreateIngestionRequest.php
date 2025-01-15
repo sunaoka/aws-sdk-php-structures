@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $app
  * @property string $tenantId
  * @property 'auditLog' $ingestionType
- * @property string $clientToken
- * @property list<Shapes\Tag> $tags
+ * @property string|null $clientToken
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateIngestionRequest extends Request
 {
@@ -20,8 +20,8 @@ class CreateIngestionRequest extends Request
      *     app: string,
      *     tenantId: string,
      *     ingestionType: 'auditLog',
-     *     clientToken?: string,
-     *     tags?: list<Shapes\Tag>
+     *     clientToken?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

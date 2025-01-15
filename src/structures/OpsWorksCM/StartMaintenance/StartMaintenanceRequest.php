@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ServerName
- * @property list<Shapes\EngineAttribute> $EngineAttributes
+ * @property list<Shapes\EngineAttribute>|null $EngineAttributes
  */
 class StartMaintenanceRequest extends Request
 {
     /**
      * @param array{
      *     ServerName: string,
-     *     EngineAttributes?: list<Shapes\EngineAttribute>
+     *     EngineAttributes?: list<Shapes\EngineAttribute>|null
      * } $args
      */
     public function __construct(array $args)

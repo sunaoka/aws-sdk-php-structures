@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Ec2\ReplaceRoute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DestinationPrefixListId
- * @property string $VpcEndpointId
- * @property bool $LocalTarget
- * @property string $TransitGatewayId
- * @property string $LocalGatewayId
- * @property string $CarrierGatewayId
- * @property string $CoreNetworkArn
- * @property bool $DryRun
+ * @property string|null $DestinationPrefixListId
+ * @property string|null $VpcEndpointId
+ * @property bool|null $LocalTarget
+ * @property string|null $TransitGatewayId
+ * @property string|null $LocalGatewayId
+ * @property string|null $CarrierGatewayId
+ * @property string|null $CoreNetworkArn
+ * @property bool|null $DryRun
  * @property string $RouteTableId
- * @property string $DestinationCidrBlock
- * @property string $GatewayId
- * @property string $DestinationIpv6CidrBlock
- * @property string $EgressOnlyInternetGatewayId
- * @property string $InstanceId
- * @property string $NetworkInterfaceId
- * @property string $VpcPeeringConnectionId
- * @property string $NatGatewayId
+ * @property string|null $DestinationCidrBlock
+ * @property string|null $GatewayId
+ * @property string|null $DestinationIpv6CidrBlock
+ * @property string|null $EgressOnlyInternetGatewayId
+ * @property string|null $InstanceId
+ * @property string|null $NetworkInterfaceId
+ * @property string|null $VpcPeeringConnectionId
+ * @property string|null $NatGatewayId
  */
 class ReplaceRouteRequest extends Request
 {
     /**
      * @param array{
-     *     DestinationPrefixListId?: string,
-     *     VpcEndpointId?: string,
-     *     LocalTarget?: bool,
-     *     TransitGatewayId?: string,
-     *     LocalGatewayId?: string,
-     *     CarrierGatewayId?: string,
-     *     CoreNetworkArn?: string,
-     *     DryRun?: bool,
+     *     DestinationPrefixListId?: string|null,
+     *     VpcEndpointId?: string|null,
+     *     LocalTarget?: bool|null,
+     *     TransitGatewayId?: string|null,
+     *     LocalGatewayId?: string|null,
+     *     CarrierGatewayId?: string|null,
+     *     CoreNetworkArn?: string|null,
+     *     DryRun?: bool|null,
      *     RouteTableId: string,
-     *     DestinationCidrBlock?: string,
-     *     GatewayId?: string,
-     *     DestinationIpv6CidrBlock?: string,
-     *     EgressOnlyInternetGatewayId?: string,
-     *     InstanceId?: string,
-     *     NetworkInterfaceId?: string,
-     *     VpcPeeringConnectionId?: string,
-     *     NatGatewayId?: string
+     *     DestinationCidrBlock?: string|null,
+     *     GatewayId?: string|null,
+     *     DestinationIpv6CidrBlock?: string|null,
+     *     EgressOnlyInternetGatewayId?: string|null,
+     *     InstanceId?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     VpcPeeringConnectionId?: string|null,
+     *     NatGatewayId?: string|null
      * } $args
      */
     public function __construct(array $args)

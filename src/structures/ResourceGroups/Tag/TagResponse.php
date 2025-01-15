@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ResourceGroups\Tag;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property array<string, string>|null $Tags
  */
 class TagResponse extends Response
 {

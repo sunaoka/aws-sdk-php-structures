@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeBuild\BatchGetBuilds\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $sessionEnabled
- * @property string $sessionTarget
+ * @property bool|null $sessionEnabled
+ * @property string|null $sessionTarget
  */
 class DebugSession extends Shape
 {
     /**
      * @param array{
-     *     sessionEnabled?: bool,
-     *     sessionTarget?: string
+     *     sessionEnabled?: bool|null,
+     *     sessionTarget?: string|null
      * } $args
      */
     public function __construct(array $args = [])

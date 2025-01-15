@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Rds\DownloadDBLogFilePortion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LogFileData
- * @property string $Marker
- * @property bool $AdditionalDataPending
+ * @property string|null $LogFileData
+ * @property string|null $Marker
+ * @property bool|null $AdditionalDataPending
  */
 class DownloadDBLogFilePortionResponse extends Response
 {

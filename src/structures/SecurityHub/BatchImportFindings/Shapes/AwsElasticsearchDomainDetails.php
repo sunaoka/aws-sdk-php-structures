@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccessPolicies
- * @property AwsElasticsearchDomainDomainEndpointOptions $DomainEndpointOptions
- * @property string $DomainId
- * @property string $DomainName
- * @property string $Endpoint
- * @property array<string, string> $Endpoints
- * @property string $ElasticsearchVersion
- * @property AwsElasticsearchDomainElasticsearchClusterConfigDetails $ElasticsearchClusterConfig
- * @property AwsElasticsearchDomainEncryptionAtRestOptions $EncryptionAtRestOptions
- * @property AwsElasticsearchDomainLogPublishingOptions $LogPublishingOptions
- * @property AwsElasticsearchDomainNodeToNodeEncryptionOptions $NodeToNodeEncryptionOptions
- * @property AwsElasticsearchDomainServiceSoftwareOptions $ServiceSoftwareOptions
- * @property AwsElasticsearchDomainVPCOptions $VPCOptions
+ * @property string|null $AccessPolicies
+ * @property AwsElasticsearchDomainDomainEndpointOptions|null $DomainEndpointOptions
+ * @property string|null $DomainId
+ * @property string|null $DomainName
+ * @property string|null $Endpoint
+ * @property array<string, string>|null $Endpoints
+ * @property string|null $ElasticsearchVersion
+ * @property AwsElasticsearchDomainElasticsearchClusterConfigDetails|null $ElasticsearchClusterConfig
+ * @property AwsElasticsearchDomainEncryptionAtRestOptions|null $EncryptionAtRestOptions
+ * @property AwsElasticsearchDomainLogPublishingOptions|null $LogPublishingOptions
+ * @property AwsElasticsearchDomainNodeToNodeEncryptionOptions|null $NodeToNodeEncryptionOptions
+ * @property AwsElasticsearchDomainServiceSoftwareOptions|null $ServiceSoftwareOptions
+ * @property AwsElasticsearchDomainVPCOptions|null $VPCOptions
  */
 class AwsElasticsearchDomainDetails extends Shape
 {
     /**
      * @param array{
-     *     AccessPolicies?: string,
-     *     DomainEndpointOptions?: AwsElasticsearchDomainDomainEndpointOptions,
-     *     DomainId?: string,
-     *     DomainName?: string,
-     *     Endpoint?: string,
-     *     Endpoints?: array<string, string>,
-     *     ElasticsearchVersion?: string,
-     *     ElasticsearchClusterConfig?: AwsElasticsearchDomainElasticsearchClusterConfigDetails,
-     *     EncryptionAtRestOptions?: AwsElasticsearchDomainEncryptionAtRestOptions,
-     *     LogPublishingOptions?: AwsElasticsearchDomainLogPublishingOptions,
-     *     NodeToNodeEncryptionOptions?: AwsElasticsearchDomainNodeToNodeEncryptionOptions,
-     *     ServiceSoftwareOptions?: AwsElasticsearchDomainServiceSoftwareOptions,
-     *     VPCOptions?: AwsElasticsearchDomainVPCOptions
+     *     AccessPolicies?: string|null,
+     *     DomainEndpointOptions?: AwsElasticsearchDomainDomainEndpointOptions|null,
+     *     DomainId?: string|null,
+     *     DomainName?: string|null,
+     *     Endpoint?: string|null,
+     *     Endpoints?: array<string, string>|null,
+     *     ElasticsearchVersion?: string|null,
+     *     ElasticsearchClusterConfig?: AwsElasticsearchDomainElasticsearchClusterConfigDetails|null,
+     *     EncryptionAtRestOptions?: AwsElasticsearchDomainEncryptionAtRestOptions|null,
+     *     LogPublishingOptions?: AwsElasticsearchDomainLogPublishingOptions|null,
+     *     NodeToNodeEncryptionOptions?: AwsElasticsearchDomainNodeToNodeEncryptionOptions|null,
+     *     ServiceSoftwareOptions?: AwsElasticsearchDomainServiceSoftwareOptions|null,
+     *     VPCOptions?: AwsElasticsearchDomainVPCOptions|null
      * } $args
      */
     public function __construct(array $args = [])

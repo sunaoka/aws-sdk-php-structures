@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Outposts\ListOutposts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OutpostId
- * @property string $OwnerId
- * @property string $OutpostArn
- * @property string $SiteId
- * @property string $Name
- * @property string $Description
- * @property string $LifeCycleStatus
- * @property string $AvailabilityZone
- * @property string $AvailabilityZoneId
- * @property array<string, string> $Tags
- * @property string $SiteArn
- * @property 'RACK'|'SERVER' $SupportedHardwareType
+ * @property string|null $OutpostId
+ * @property string|null $OwnerId
+ * @property string|null $OutpostArn
+ * @property string|null $SiteId
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $LifeCycleStatus
+ * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
+ * @property array<string, string>|null $Tags
+ * @property string|null $SiteArn
+ * @property 'RACK'|'SERVER'|null $SupportedHardwareType
  */
 class Outpost extends Shape
 {
     /**
      * @param array{
-     *     OutpostId?: string,
-     *     OwnerId?: string,
-     *     OutpostArn?: string,
-     *     SiteId?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     LifeCycleStatus?: string,
-     *     AvailabilityZone?: string,
-     *     AvailabilityZoneId?: string,
-     *     Tags?: array<string, string>,
-     *     SiteArn?: string,
-     *     SupportedHardwareType?: 'RACK'|'SERVER'
+     *     OutpostId?: string|null,
+     *     OwnerId?: string|null,
+     *     OutpostArn?: string|null,
+     *     SiteId?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     LifeCycleStatus?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     SiteArn?: string|null,
+     *     SupportedHardwareType?: 'RACK'|'SERVER'|null
      * } $args
      */
     public function __construct(array $args = [])

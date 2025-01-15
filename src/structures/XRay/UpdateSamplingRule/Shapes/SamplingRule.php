@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\XRay\UpdateSamplingRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuleName
- * @property string $RuleARN
+ * @property string|null $RuleName
+ * @property string|null $RuleARN
  * @property string $ResourceARN
  * @property int<1, 9999> $Priority
  * @property double $FixedRate
@@ -17,14 +17,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $HTTPMethod
  * @property string $URLPath
  * @property int<1, max> $Version
- * @property array<string, string> $Attributes
+ * @property array<string, string>|null $Attributes
  */
 class SamplingRule extends Shape
 {
     /**
      * @param array{
-     *     RuleName?: string,
-     *     RuleARN?: string,
+     *     RuleName?: string|null,
+     *     RuleARN?: string|null,
      *     ResourceARN: string,
      *     Priority: int<1, 9999>,
      *     FixedRate: double,
@@ -35,7 +35,7 @@ class SamplingRule extends Shape
      *     HTTPMethod: string,
      *     URLPath: string,
      *     Version: int<1, max>,
-     *     Attributes?: array<string, string>
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

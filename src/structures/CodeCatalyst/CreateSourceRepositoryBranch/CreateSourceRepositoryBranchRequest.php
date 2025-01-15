@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $projectName
  * @property string $sourceRepositoryName
  * @property string $name
- * @property string $headCommitId
+ * @property string|null $headCommitId
  */
 class CreateSourceRepositoryBranchRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateSourceRepositoryBranchRequest extends Request
      *     projectName: string,
      *     sourceRepositoryName: string,
      *     name: string,
-     *     headCommitId?: string
+     *     headCommitId?: string|null
      * } $args
      */
     public function __construct(array $args)

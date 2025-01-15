@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GameLift\CreateFleet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\FleetAttributes $FleetAttributes
- * @property list<Shapes\LocationState> $LocationStates
+ * @property Shapes\FleetAttributes|null $FleetAttributes
+ * @property list<Shapes\LocationState>|null $LocationStates
  */
 class CreateFleetResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\UpdateKnowledgeBaseTemplat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AppIntegrationsConfiguration $appIntegrations
+ * @property AppIntegrationsConfiguration|null $appIntegrations
  */
 class SourceConfiguration extends Shape
 {
     /**
-     * @param array{appIntegrations?: AppIntegrationsConfiguration} $args
+     * @param array{appIntegrations?: AppIntegrationsConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\FMS\PutPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NetworkAclIcmpTypeCode $IcmpTypeCode
+ * @property NetworkAclIcmpTypeCode|null $IcmpTypeCode
  * @property string $Protocol
- * @property NetworkAclPortRange $PortRange
- * @property string $CidrBlock
- * @property string $Ipv6CidrBlock
+ * @property NetworkAclPortRange|null $PortRange
+ * @property string|null $CidrBlock
+ * @property string|null $Ipv6CidrBlock
  * @property 'allow'|'deny' $RuleAction
  * @property bool $Egress
  */
@@ -17,11 +17,11 @@ class NetworkAclEntry extends Shape
 {
     /**
      * @param array{
-     *     IcmpTypeCode?: NetworkAclIcmpTypeCode,
+     *     IcmpTypeCode?: NetworkAclIcmpTypeCode|null,
      *     Protocol: string,
-     *     PortRange?: NetworkAclPortRange,
-     *     CidrBlock?: string,
-     *     Ipv6CidrBlock?: string,
+     *     PortRange?: NetworkAclPortRange|null,
+     *     CidrBlock?: string|null,
+     *     Ipv6CidrBlock?: string|null,
      *     RuleAction: 'allow'|'deny',
      *     Egress: bool
      * } $args

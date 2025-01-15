@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeServiceActionExecutionPa
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Type
- * @property list<string> $DefaultValues
+ * @property string|null $Name
+ * @property string|null $Type
+ * @property list<string>|null $DefaultValues
  */
 class ExecutionParameter extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Type?: string,
-     *     DefaultValues?: list<string>
+     *     Name?: string|null,
+     *     Type?: string|null,
+     *     DefaultValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

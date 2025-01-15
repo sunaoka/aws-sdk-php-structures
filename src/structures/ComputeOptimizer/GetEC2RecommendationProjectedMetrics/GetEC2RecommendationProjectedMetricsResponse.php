@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEC2RecommendationProjectedM
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\RecommendedOptionProjectedMetric> $recommendedOptionProjectedMetrics
+ * @property list<Shapes\RecommendedOptionProjectedMetric>|null $recommendedOptionProjectedMetrics
  */
 class GetEC2RecommendationProjectedMetricsResponse extends Response
 {

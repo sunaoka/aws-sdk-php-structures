@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Token'|'Rules' $Type
- * @property 'AuthenticatedRole'|'Deny' $AmbiguousRoleResolution
- * @property RulesConfigurationType $RulesConfiguration
+ * @property 'AuthenticatedRole'|'Deny'|null $AmbiguousRoleResolution
+ * @property RulesConfigurationType|null $RulesConfiguration
  */
 class RoleMapping extends Shape
 {
     /**
      * @param array{
      *     Type: 'Token'|'Rules',
-     *     AmbiguousRoleResolution?: 'AuthenticatedRole'|'Deny',
-     *     RulesConfiguration?: RulesConfigurationType
+     *     AmbiguousRoleResolution?: 'AuthenticatedRole'|'Deny'|null,
+     *     RulesConfiguration?: RulesConfigurationType|null
      * } $args
      */
     public function __construct(array $args)

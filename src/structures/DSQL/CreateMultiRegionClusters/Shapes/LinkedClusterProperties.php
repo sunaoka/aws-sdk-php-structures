@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DSQL\CreateMultiRegionClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $deletionProtectionEnabled
- * @property array<string, string> $tags
+ * @property bool|null $deletionProtectionEnabled
+ * @property array<string, string>|null $tags
  */
 class LinkedClusterProperties extends Shape
 {
     /**
      * @param array{
-     *     deletionProtectionEnabled?: bool,
-     *     tags?: array<string, string>
+     *     deletionProtectionEnabled?: bool|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $assessmentId
  * @property string $controlSetId
  * @property string $evidenceFolderId
- * @property string $nextToken
- * @property int<1, 1000> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 1000>|null $maxResults
  */
 class GetEvidenceByEvidenceFolderRequest extends Request
 {
@@ -18,8 +18,8 @@ class GetEvidenceByEvidenceFolderRequest extends Request
      *     assessmentId: string,
      *     controlSetId: string,
      *     evidenceFolderId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 1000>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

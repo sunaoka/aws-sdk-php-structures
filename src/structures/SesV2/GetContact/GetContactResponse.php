@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SesV2\GetContact;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ContactListName
- * @property string $EmailAddress
- * @property list<Shapes\TopicPreference> $TopicPreferences
- * @property list<Shapes\TopicPreference> $TopicDefaultPreferences
- * @property bool $UnsubscribeAll
- * @property string $AttributesData
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
+ * @property string|null $ContactListName
+ * @property string|null $EmailAddress
+ * @property list<Shapes\TopicPreference>|null $TopicPreferences
+ * @property list<Shapes\TopicPreference>|null $TopicDefaultPreferences
+ * @property bool|null $UnsubscribeAll
+ * @property string|null $AttributesData
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
  */
 class GetContactResponse extends Response
 {

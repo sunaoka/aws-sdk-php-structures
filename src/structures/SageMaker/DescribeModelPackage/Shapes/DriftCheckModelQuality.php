@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeModelPackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MetricsSource $Statistics
- * @property MetricsSource $Constraints
+ * @property MetricsSource|null $Statistics
+ * @property MetricsSource|null $Constraints
  */
 class DriftCheckModelQuality extends Shape
 {
     /**
      * @param array{
-     *     Statistics?: MetricsSource,
-     *     Constraints?: MetricsSource
+     *     Statistics?: MetricsSource|null,
+     *     Constraints?: MetricsSource|null
      * } $args
      */
     public function __construct(array $args = [])

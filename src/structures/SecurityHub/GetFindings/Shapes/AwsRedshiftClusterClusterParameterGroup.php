@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AwsRedshiftClusterClusterParameterStatus> $ClusterParameterStatusList
- * @property string $ParameterApplyStatus
- * @property string $ParameterGroupName
+ * @property list<AwsRedshiftClusterClusterParameterStatus>|null $ClusterParameterStatusList
+ * @property string|null $ParameterApplyStatus
+ * @property string|null $ParameterGroupName
  */
 class AwsRedshiftClusterClusterParameterGroup extends Shape
 {
     /**
      * @param array{
-     *     ClusterParameterStatusList?: list<AwsRedshiftClusterClusterParameterStatus>,
-     *     ParameterApplyStatus?: string,
-     *     ParameterGroupName?: string
+     *     ClusterParameterStatusList?: list<AwsRedshiftClusterClusterParameterStatus>|null,
+     *     ParameterApplyStatus?: string|null,
+     *     ParameterGroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChangeSetName
- * @property string $StackName
- * @property string $NextToken
- * @property string $LogicalResourceId
+ * @property string|null $StackName
+ * @property string|null $NextToken
+ * @property string|null $LogicalResourceId
  */
 class DescribeChangeSetHooksRequest extends Request
 {
     /**
      * @param array{
      *     ChangeSetName: string,
-     *     StackName?: string,
-     *     NextToken?: string,
-     *     LogicalResourceId?: string
+     *     StackName?: string|null,
+     *     NextToken?: string|null,
+     *     LogicalResourceId?: string|null
      * } $args
      */
     public function __construct(array $args)

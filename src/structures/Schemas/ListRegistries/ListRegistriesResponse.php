@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Schemas\ListRegistries;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\RegistrySummary> $Registries
+ * @property string|null $NextToken
+ * @property list<Shapes\RegistrySummary>|null $Registries
  */
 class ListRegistriesResponse extends Response
 {

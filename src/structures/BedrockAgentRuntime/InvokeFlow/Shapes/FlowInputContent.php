@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document $document
+ * @property Document|null $document
  */
 class FlowInputContent extends Shape
 {
     /**
-     * @param array{document?: Document} $args
+     * @param array{document?: Document|null} $args
      */
     public function __construct(array $args = [])
     {

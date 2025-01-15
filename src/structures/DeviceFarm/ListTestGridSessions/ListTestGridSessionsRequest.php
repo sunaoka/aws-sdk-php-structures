@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $projectArn
- * @property 'ACTIVE'|'CLOSED'|'ERRORED' $status
- * @property \Aws\Api\DateTimeResult $creationTimeAfter
- * @property \Aws\Api\DateTimeResult $creationTimeBefore
- * @property \Aws\Api\DateTimeResult $endTimeAfter
- * @property \Aws\Api\DateTimeResult $endTimeBefore
- * @property int<1, 1000> $maxResult
- * @property string $nextToken
+ * @property 'ACTIVE'|'CLOSED'|'ERRORED'|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $creationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $endTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $endTimeBefore
+ * @property int<1, 1000>|null $maxResult
+ * @property string|null $nextToken
  */
 class ListTestGridSessionsRequest extends Request
 {
     /**
      * @param array{
      *     projectArn: string,
-     *     status?: 'ACTIVE'|'CLOSED'|'ERRORED',
-     *     creationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     creationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     endTimeAfter?: \Aws\Api\DateTimeResult,
-     *     endTimeBefore?: \Aws\Api\DateTimeResult,
-     *     maxResult?: int<1, 1000>,
-     *     nextToken?: string
+     *     status?: 'ACTIVE'|'CLOSED'|'ERRORED'|null,
+     *     creationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     creationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     endTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     endTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     maxResult?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

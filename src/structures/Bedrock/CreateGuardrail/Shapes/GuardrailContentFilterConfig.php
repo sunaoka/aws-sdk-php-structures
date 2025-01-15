@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SEXUAL'|'VIOLENCE'|'HATE'|'INSULTS'|'MISCONDUCT'|'PROMPT_ATTACK' $type
  * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH' $inputStrength
  * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH' $outputStrength
- * @property list<'TEXT'|'IMAGE'> $inputModalities
- * @property list<'TEXT'|'IMAGE'> $outputModalities
+ * @property list<'TEXT'|'IMAGE'>|null $inputModalities
+ * @property list<'TEXT'|'IMAGE'>|null $outputModalities
  */
 class GuardrailContentFilterConfig extends Shape
 {
@@ -18,8 +18,8 @@ class GuardrailContentFilterConfig extends Shape
      *     type: 'SEXUAL'|'VIOLENCE'|'HATE'|'INSULTS'|'MISCONDUCT'|'PROMPT_ATTACK',
      *     inputStrength: 'NONE'|'LOW'|'MEDIUM'|'HIGH',
      *     outputStrength: 'NONE'|'LOW'|'MEDIUM'|'HIGH',
-     *     inputModalities?: list<'TEXT'|'IMAGE'>,
-     *     outputModalities?: list<'TEXT'|'IMAGE'>
+     *     inputModalities?: list<'TEXT'|'IMAGE'>|null,
+     *     outputModalities?: list<'TEXT'|'IMAGE'>|null
      * } $args
      */
     public function __construct(array $args)

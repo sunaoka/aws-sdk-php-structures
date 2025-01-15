@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\DeleteTableVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property string $TableName
  * @property string $VersionId
@@ -14,7 +14,7 @@ class DeleteTableVersionRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TableName: string,
      *     VersionId: string

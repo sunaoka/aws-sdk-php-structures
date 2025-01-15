@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NetworkInsightsAccessScopeAnalysisId
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
- * @property bool $DryRun
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property bool|null $DryRun
  */
 class GetNetworkInsightsAccessScopeAnalysisFindingsRequest extends Request
 {
     /**
      * @param array{
      *     NetworkInsightsAccessScopeAnalysisId: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string,
-     *     DryRun?: bool
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3OutputPath
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  */
 class FlowDefinitionOutputConfig extends Shape
 {
     /**
      * @param array{
      *     S3OutputPath: string,
-     *     KmsKeyId?: string
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

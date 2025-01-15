@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\RevokeSecurityGroupIngress;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CidrIp
- * @property int $FromPort
- * @property string $GroupId
- * @property string $GroupName
- * @property list<Shapes\IpPermission> $IpPermissions
- * @property string $IpProtocol
- * @property string $SourceSecurityGroupName
- * @property string $SourceSecurityGroupOwnerId
- * @property int $ToPort
- * @property list<string> $SecurityGroupRuleIds
- * @property bool $DryRun
+ * @property string|null $CidrIp
+ * @property int|null $FromPort
+ * @property string|null $GroupId
+ * @property string|null $GroupName
+ * @property list<Shapes\IpPermission>|null $IpPermissions
+ * @property string|null $IpProtocol
+ * @property string|null $SourceSecurityGroupName
+ * @property string|null $SourceSecurityGroupOwnerId
+ * @property int|null $ToPort
+ * @property list<string>|null $SecurityGroupRuleIds
+ * @property bool|null $DryRun
  */
 class RevokeSecurityGroupIngressRequest extends Request
 {
     /**
      * @param array{
-     *     CidrIp?: string,
-     *     FromPort?: int,
-     *     GroupId?: string,
-     *     GroupName?: string,
-     *     IpPermissions?: list<Shapes\IpPermission>,
-     *     IpProtocol?: string,
-     *     SourceSecurityGroupName?: string,
-     *     SourceSecurityGroupOwnerId?: string,
-     *     ToPort?: int,
-     *     SecurityGroupRuleIds?: list<string>,
-     *     DryRun?: bool
+     *     CidrIp?: string|null,
+     *     FromPort?: int|null,
+     *     GroupId?: string|null,
+     *     GroupName?: string|null,
+     *     IpPermissions?: list<Shapes\IpPermission>|null,
+     *     IpProtocol?: string|null,
+     *     SourceSecurityGroupName?: string|null,
+     *     SourceSecurityGroupOwnerId?: string|null,
+     *     ToPort?: int|null,
+     *     SecurityGroupRuleIds?: list<string>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

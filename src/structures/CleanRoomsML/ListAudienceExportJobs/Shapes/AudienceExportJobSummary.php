@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $audienceGenerationJobArn
  * @property AudienceSize $audienceSize
- * @property string $description
+ * @property string|null $description
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE' $status
- * @property StatusDetails $statusDetails
- * @property string $outputLocation
+ * @property StatusDetails|null $statusDetails
+ * @property string|null $outputLocation
  */
 class AudienceExportJobSummary extends Shape
 {
@@ -24,10 +24,10 @@ class AudienceExportJobSummary extends Shape
      *     name: string,
      *     audienceGenerationJobArn: string,
      *     audienceSize: AudienceSize,
-     *     description?: string,
+     *     description?: string|null,
      *     status: 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE',
-     *     statusDetails?: StatusDetails,
-     *     outputLocation?: string
+     *     statusDetails?: StatusDetails|null,
+     *     outputLocation?: string|null
      * } $args
      */
     public function __construct(array $args)

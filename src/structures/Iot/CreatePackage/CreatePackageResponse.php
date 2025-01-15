@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Iot\CreatePackage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $packageName
- * @property string $packageArn
- * @property string $description
+ * @property string|null $packageName
+ * @property string|null $packageArn
+ * @property string|null $description
  */
 class CreatePackageResponse extends Response
 {

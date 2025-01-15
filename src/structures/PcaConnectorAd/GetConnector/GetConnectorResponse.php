@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\GetConnector;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Connector $Connector
+ * @property Shapes\Connector|null $Connector
  */
 class GetConnectorResponse extends Response
 {

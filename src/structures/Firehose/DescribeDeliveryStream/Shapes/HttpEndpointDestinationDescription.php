@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HttpEndpointDescription $EndpointConfiguration
- * @property HttpEndpointBufferingHints $BufferingHints
- * @property CloudWatchLoggingOptions $CloudWatchLoggingOptions
- * @property HttpEndpointRequestConfiguration $RequestConfiguration
- * @property ProcessingConfiguration $ProcessingConfiguration
- * @property string $RoleARN
- * @property HttpEndpointRetryOptions $RetryOptions
- * @property 'FailedDataOnly'|'AllData' $S3BackupMode
- * @property S3DestinationDescription $S3DestinationDescription
- * @property SecretsManagerConfiguration $SecretsManagerConfiguration
+ * @property HttpEndpointDescription|null $EndpointConfiguration
+ * @property HttpEndpointBufferingHints|null $BufferingHints
+ * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
+ * @property HttpEndpointRequestConfiguration|null $RequestConfiguration
+ * @property ProcessingConfiguration|null $ProcessingConfiguration
+ * @property string|null $RoleARN
+ * @property HttpEndpointRetryOptions|null $RetryOptions
+ * @property 'FailedDataOnly'|'AllData'|null $S3BackupMode
+ * @property S3DestinationDescription|null $S3DestinationDescription
+ * @property SecretsManagerConfiguration|null $SecretsManagerConfiguration
  */
 class HttpEndpointDestinationDescription extends Shape
 {
     /**
      * @param array{
-     *     EndpointConfiguration?: HttpEndpointDescription,
-     *     BufferingHints?: HttpEndpointBufferingHints,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions,
-     *     RequestConfiguration?: HttpEndpointRequestConfiguration,
-     *     ProcessingConfiguration?: ProcessingConfiguration,
-     *     RoleARN?: string,
-     *     RetryOptions?: HttpEndpointRetryOptions,
-     *     S3BackupMode?: 'FailedDataOnly'|'AllData',
-     *     S3DestinationDescription?: S3DestinationDescription,
-     *     SecretsManagerConfiguration?: SecretsManagerConfiguration
+     *     EndpointConfiguration?: HttpEndpointDescription|null,
+     *     BufferingHints?: HttpEndpointBufferingHints|null,
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
+     *     RequestConfiguration?: HttpEndpointRequestConfiguration|null,
+     *     ProcessingConfiguration?: ProcessingConfiguration|null,
+     *     RoleARN?: string|null,
+     *     RetryOptions?: HttpEndpointRetryOptions|null,
+     *     S3BackupMode?: 'FailedDataOnly'|'AllData'|null,
+     *     S3DestinationDescription?: S3DestinationDescription|null,
+     *     SecretsManagerConfiguration?: SecretsManagerConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

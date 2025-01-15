@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FileSystemId
- * @property string $FileSystemPath
+ * @property string|null $FileSystemPath
  * @property string $DataRepositoryPath
- * @property bool $BatchImportMetaDataOnCreate
- * @property int<1, 512000> $ImportedFileChunkSize
- * @property Shapes\S3DataRepositoryConfiguration $S3
- * @property string $ClientRequestToken
- * @property list<Shapes\Tag> $Tags
+ * @property bool|null $BatchImportMetaDataOnCreate
+ * @property int<1, 512000>|null $ImportedFileChunkSize
+ * @property Shapes\S3DataRepositoryConfiguration|null $S3
+ * @property string|null $ClientRequestToken
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDataRepositoryAssociationRequest extends Request
 {
     /**
      * @param array{
      *     FileSystemId: string,
-     *     FileSystemPath?: string,
+     *     FileSystemPath?: string|null,
      *     DataRepositoryPath: string,
-     *     BatchImportMetaDataOnCreate?: bool,
-     *     ImportedFileChunkSize?: int<1, 512000>,
-     *     S3?: Shapes\S3DataRepositoryConfiguration,
-     *     ClientRequestToken?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     BatchImportMetaDataOnCreate?: bool|null,
+     *     ImportedFileChunkSize?: int<1, 512000>|null,
+     *     S3?: Shapes\S3DataRepositoryConfiguration|null,
+     *     ClientRequestToken?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

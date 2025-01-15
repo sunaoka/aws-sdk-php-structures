@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\GetDomainStatisticsReport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IspName
- * @property int $InboxRawCount
- * @property int $SpamRawCount
- * @property double $InboxPercentage
- * @property double $SpamPercentage
+ * @property string|null $IspName
+ * @property int|null $InboxRawCount
+ * @property int|null $SpamRawCount
+ * @property double|null $InboxPercentage
+ * @property double|null $SpamPercentage
  */
 class DomainIspPlacement extends Shape
 {
     /**
      * @param array{
-     *     IspName?: string,
-     *     InboxRawCount?: int,
-     *     SpamRawCount?: int,
-     *     InboxPercentage?: double,
-     *     SpamPercentage?: double
+     *     IspName?: string|null,
+     *     InboxRawCount?: int|null,
+     *     SpamRawCount?: int|null,
+     *     InboxPercentage?: double|null,
+     *     SpamPercentage?: double|null
      * } $args
      */
     public function __construct(array $args = [])

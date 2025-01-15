@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListAnomaliesForInsight\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Source
- * @property string $SourceResourceName
- * @property string $SourceResourceType
+ * @property string|null $Source
+ * @property string|null $SourceResourceName
+ * @property string|null $SourceResourceType
  */
 class AnomalySourceMetadata extends Shape
 {
     /**
      * @param array{
-     *     Source?: string,
-     *     SourceResourceName?: string,
-     *     SourceResourceType?: string
+     *     Source?: string|null,
+     *     SourceResourceName?: string|null,
+     *     SourceResourceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

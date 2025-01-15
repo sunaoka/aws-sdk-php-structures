@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Omics\GetAnnotationImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ignoreQualField
- * @property bool $ignoreFilterField
+ * @property bool|null $ignoreQualField
+ * @property bool|null $ignoreFilterField
  */
 class VcfOptions extends Shape
 {
     /**
      * @param array{
-     *     ignoreQualField?: bool,
-     *     ignoreFilterField?: bool
+     *     ignoreQualField?: bool|null,
+     *     ignoreFilterField?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

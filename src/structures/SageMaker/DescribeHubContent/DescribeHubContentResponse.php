@@ -12,17 +12,17 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $DocumentSchemaVersion
  * @property string $HubName
  * @property string $HubArn
- * @property string $HubContentDisplayName
- * @property string $HubContentDescription
- * @property string $HubContentMarkdown
+ * @property string|null $HubContentDisplayName
+ * @property string|null $HubContentDescription
+ * @property string|null $HubContentMarkdown
  * @property string $HubContentDocument
- * @property string $SageMakerPublicHubContentArn
- * @property string $ReferenceMinVersion
- * @property 'Supported'|'Deprecated' $SupportStatus
- * @property list<string> $HubContentSearchKeywords
- * @property list<Shapes\HubContentDependency> $HubContentDependencies
+ * @property string|null $SageMakerPublicHubContentArn
+ * @property string|null $ReferenceMinVersion
+ * @property 'Supported'|'Deprecated'|null $SupportStatus
+ * @property list<string>|null $HubContentSearchKeywords
+ * @property list<Shapes\HubContentDependency>|null $HubContentDependencies
  * @property 'Available'|'Importing'|'Deleting'|'ImportFailed'|'DeleteFailed' $HubContentStatus
- * @property string $FailureReason
+ * @property string|null $FailureReason
  * @property \Aws\Api\DateTimeResult $CreationTime
  */
 class DescribeHubContentResponse extends Response

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rekognition\PutProjectPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PolicyRevisionId
+ * @property string|null $PolicyRevisionId
  */
 class PutProjectPolicyResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFront\UpdateDistribution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyGroupId
- * @property KeyPairIds $KeyPairIds
+ * @property string|null $KeyGroupId
+ * @property KeyPairIds|null $KeyPairIds
  */
 class KGKeyPairIds extends Shape
 {
     /**
      * @param array{
-     *     KeyGroupId?: string,
-     *     KeyPairIds?: KeyPairIds
+     *     KeyGroupId?: string|null,
+     *     KeyPairIds?: KeyPairIds|null
      * } $args
      */
     public function __construct(array $args = [])

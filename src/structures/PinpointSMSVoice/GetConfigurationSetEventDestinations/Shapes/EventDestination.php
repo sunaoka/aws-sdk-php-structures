@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoice\GetConfigurationSetEventDestin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudWatchLogsDestination $CloudWatchLogsDestination
- * @property bool $Enabled
- * @property KinesisFirehoseDestination $KinesisFirehoseDestination
- * @property list<'INITIATED_CALL'|'RINGING'|'ANSWERED'|'COMPLETED_CALL'|'BUSY'|'FAILED'|'NO_ANSWER'> $MatchingEventTypes
- * @property string $Name
- * @property SnsDestination $SnsDestination
+ * @property CloudWatchLogsDestination|null $CloudWatchLogsDestination
+ * @property bool|null $Enabled
+ * @property KinesisFirehoseDestination|null $KinesisFirehoseDestination
+ * @property list<'INITIATED_CALL'|'RINGING'|'ANSWERED'|'COMPLETED_CALL'|'BUSY'|'FAILED'|'NO_ANSWER'>|null $MatchingEventTypes
+ * @property string|null $Name
+ * @property SnsDestination|null $SnsDestination
  */
 class EventDestination extends Shape
 {
     /**
      * @param array{
-     *     CloudWatchLogsDestination?: CloudWatchLogsDestination,
-     *     Enabled?: bool,
-     *     KinesisFirehoseDestination?: KinesisFirehoseDestination,
-     *     MatchingEventTypes?: list<'INITIATED_CALL'|'RINGING'|'ANSWERED'|'COMPLETED_CALL'|'BUSY'|'FAILED'|'NO_ANSWER'>,
-     *     Name?: string,
-     *     SnsDestination?: SnsDestination
+     *     CloudWatchLogsDestination?: CloudWatchLogsDestination|null,
+     *     Enabled?: bool|null,
+     *     KinesisFirehoseDestination?: KinesisFirehoseDestination|null,
+     *     MatchingEventTypes?: list<'INITIATED_CALL'|'RINGING'|'ANSWERED'|'COMPLETED_CALL'|'BUSY'|'FAILED'|'NO_ANSWER'>|null,
+     *     Name?: string|null,
+     *     SnsDestination?: SnsDestination|null
      * } $args
      */
     public function __construct(array $args = [])

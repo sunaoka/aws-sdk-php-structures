@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<WriteTreatmentResource> $AdditionalTreatments
- * @property CustomDeliveryConfiguration $CustomDeliveryConfiguration
- * @property string $Description
- * @property int $HoldoutPercent
- * @property CampaignHook $Hook
- * @property bool $IsPaused
- * @property CampaignLimits $Limits
- * @property MessageConfiguration $MessageConfiguration
- * @property string $Name
- * @property Schedule $Schedule
- * @property string $SegmentId
- * @property int $SegmentVersion
- * @property array<string, string> $tags
- * @property TemplateConfiguration $TemplateConfiguration
- * @property string $TreatmentDescription
- * @property string $TreatmentName
- * @property int $Priority
+ * @property list<WriteTreatmentResource>|null $AdditionalTreatments
+ * @property CustomDeliveryConfiguration|null $CustomDeliveryConfiguration
+ * @property string|null $Description
+ * @property int|null $HoldoutPercent
+ * @property CampaignHook|null $Hook
+ * @property bool|null $IsPaused
+ * @property CampaignLimits|null $Limits
+ * @property MessageConfiguration|null $MessageConfiguration
+ * @property string|null $Name
+ * @property Schedule|null $Schedule
+ * @property string|null $SegmentId
+ * @property int|null $SegmentVersion
+ * @property array<string, string>|null $tags
+ * @property TemplateConfiguration|null $TemplateConfiguration
+ * @property string|null $TreatmentDescription
+ * @property string|null $TreatmentName
+ * @property int|null $Priority
  */
 class WriteCampaignRequest extends Shape
 {
     /**
      * @param array{
-     *     AdditionalTreatments?: list<WriteTreatmentResource>,
-     *     CustomDeliveryConfiguration?: CustomDeliveryConfiguration,
-     *     Description?: string,
-     *     HoldoutPercent?: int,
-     *     Hook?: CampaignHook,
-     *     IsPaused?: bool,
-     *     Limits?: CampaignLimits,
-     *     MessageConfiguration?: MessageConfiguration,
-     *     Name?: string,
-     *     Schedule?: Schedule,
-     *     SegmentId?: string,
-     *     SegmentVersion?: int,
-     *     tags?: array<string, string>,
-     *     TemplateConfiguration?: TemplateConfiguration,
-     *     TreatmentDescription?: string,
-     *     TreatmentName?: string,
-     *     Priority?: int
+     *     AdditionalTreatments?: list<WriteTreatmentResource>|null,
+     *     CustomDeliveryConfiguration?: CustomDeliveryConfiguration|null,
+     *     Description?: string|null,
+     *     HoldoutPercent?: int|null,
+     *     Hook?: CampaignHook|null,
+     *     IsPaused?: bool|null,
+     *     Limits?: CampaignLimits|null,
+     *     MessageConfiguration?: MessageConfiguration|null,
+     *     Name?: string|null,
+     *     Schedule?: Schedule|null,
+     *     SegmentId?: string|null,
+     *     SegmentVersion?: int|null,
+     *     tags?: array<string, string>|null,
+     *     TemplateConfiguration?: TemplateConfiguration|null,
+     *     TreatmentDescription?: string|null,
+     *     TreatmentName?: string|null,
+     *     Priority?: int|null
      * } $args
      */
     public function __construct(array $args = [])

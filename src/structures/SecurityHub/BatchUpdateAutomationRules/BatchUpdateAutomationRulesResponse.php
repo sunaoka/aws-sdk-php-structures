@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchUpdateAutomationRules;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $ProcessedAutomationRules
- * @property list<Shapes\UnprocessedAutomationRule> $UnprocessedAutomationRules
+ * @property list<string>|null $ProcessedAutomationRules
+ * @property list<Shapes\UnprocessedAutomationRule>|null $UnprocessedAutomationRules
  */
 class BatchUpdateAutomationRulesResponse extends Response
 {

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateReplicationConfi
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property string $DnsNameServers
- * @property string $KmsKeyId
- * @property int $MaxCapacityUnits
- * @property int $MinCapacityUnits
- * @property bool $MultiAZ
- * @property string $PreferredMaintenanceWindow
- * @property string $ReplicationSubnetGroupId
- * @property list<string> $VpcSecurityGroupIds
+ * @property string|null $AvailabilityZone
+ * @property string|null $DnsNameServers
+ * @property string|null $KmsKeyId
+ * @property int|null $MaxCapacityUnits
+ * @property int|null $MinCapacityUnits
+ * @property bool|null $MultiAZ
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $ReplicationSubnetGroupId
+ * @property list<string>|null $VpcSecurityGroupIds
  */
 class ComputeConfig extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     DnsNameServers?: string,
-     *     KmsKeyId?: string,
-     *     MaxCapacityUnits?: int,
-     *     MinCapacityUnits?: int,
-     *     MultiAZ?: bool,
-     *     PreferredMaintenanceWindow?: string,
-     *     ReplicationSubnetGroupId?: string,
-     *     VpcSecurityGroupIds?: list<string>
+     *     AvailabilityZone?: string|null,
+     *     DnsNameServers?: string|null,
+     *     KmsKeyId?: string|null,
+     *     MaxCapacityUnits?: int|null,
+     *     MinCapacityUnits?: int|null,
+     *     MultiAZ?: bool|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     ReplicationSubnetGroupId?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

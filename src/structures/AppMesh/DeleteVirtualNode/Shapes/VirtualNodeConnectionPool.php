@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualNodeGrpcConnectionPool $grpc
- * @property VirtualNodeHttpConnectionPool $http
- * @property VirtualNodeHttp2ConnectionPool $http2
- * @property VirtualNodeTcpConnectionPool $tcp
+ * @property VirtualNodeGrpcConnectionPool|null $grpc
+ * @property VirtualNodeHttpConnectionPool|null $http
+ * @property VirtualNodeHttp2ConnectionPool|null $http2
+ * @property VirtualNodeTcpConnectionPool|null $tcp
  */
 class VirtualNodeConnectionPool extends Shape
 {
     /**
      * @param array{
-     *     grpc?: VirtualNodeGrpcConnectionPool,
-     *     http?: VirtualNodeHttpConnectionPool,
-     *     http2?: VirtualNodeHttp2ConnectionPool,
-     *     tcp?: VirtualNodeTcpConnectionPool
+     *     grpc?: VirtualNodeGrpcConnectionPool|null,
+     *     http?: VirtualNodeHttpConnectionPool|null,
+     *     http2?: VirtualNodeHttp2ConnectionPool|null,
+     *     tcp?: VirtualNodeTcpConnectionPool|null
      * } $args
      */
     public function __construct(array $args = [])

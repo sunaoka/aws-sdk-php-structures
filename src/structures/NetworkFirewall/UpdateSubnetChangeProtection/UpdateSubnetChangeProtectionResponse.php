@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateSubnetChangeProtection;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $UpdateToken
- * @property string $FirewallArn
- * @property string $FirewallName
- * @property bool $SubnetChangeProtection
+ * @property string|null $UpdateToken
+ * @property string|null $FirewallArn
+ * @property string|null $FirewallName
+ * @property bool|null $SubnetChangeProtection
  */
 class UpdateSubnetChangeProtectionResponse extends Response
 {

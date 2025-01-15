@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GutterStyle $Gutter
- * @property MarginStyle $Margin
+ * @property GutterStyle|null $Gutter
+ * @property MarginStyle|null $Margin
  */
 class TileLayoutStyle extends Shape
 {
     /**
      * @param array{
-     *     Gutter?: GutterStyle,
-     *     Margin?: MarginStyle
+     *     Gutter?: GutterStyle|null,
+     *     Margin?: MarginStyle|null
      * } $args
      */
     public function __construct(array $args = [])

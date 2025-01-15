@@ -7,22 +7,22 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appId
  * @property string $branchName
- * @property string $description
- * @property string $framework
- * @property 'PRODUCTION'|'BETA'|'DEVELOPMENT'|'EXPERIMENTAL'|'PULL_REQUEST' $stage
- * @property bool $enableNotification
- * @property bool $enableAutoBuild
- * @property array<string, string> $environmentVariables
- * @property string $basicAuthCredentials
- * @property bool $enableBasicAuth
- * @property bool $enablePerformanceMode
- * @property string $buildSpec
- * @property string $ttl
- * @property string $displayName
- * @property bool $enablePullRequestPreview
- * @property string $pullRequestEnvironmentName
- * @property string $backendEnvironmentArn
- * @property Shapes\Backend $backend
+ * @property string|null $description
+ * @property string|null $framework
+ * @property 'PRODUCTION'|'BETA'|'DEVELOPMENT'|'EXPERIMENTAL'|'PULL_REQUEST'|null $stage
+ * @property bool|null $enableNotification
+ * @property bool|null $enableAutoBuild
+ * @property array<string, string>|null $environmentVariables
+ * @property string|null $basicAuthCredentials
+ * @property bool|null $enableBasicAuth
+ * @property bool|null $enablePerformanceMode
+ * @property string|null $buildSpec
+ * @property string|null $ttl
+ * @property string|null $displayName
+ * @property bool|null $enablePullRequestPreview
+ * @property string|null $pullRequestEnvironmentName
+ * @property string|null $backendEnvironmentArn
+ * @property Shapes\Backend|null $backend
  */
 class UpdateBranchRequest extends Request
 {
@@ -30,22 +30,22 @@ class UpdateBranchRequest extends Request
      * @param array{
      *     appId: string,
      *     branchName: string,
-     *     description?: string,
-     *     framework?: string,
-     *     stage?: 'PRODUCTION'|'BETA'|'DEVELOPMENT'|'EXPERIMENTAL'|'PULL_REQUEST',
-     *     enableNotification?: bool,
-     *     enableAutoBuild?: bool,
-     *     environmentVariables?: array<string, string>,
-     *     basicAuthCredentials?: string,
-     *     enableBasicAuth?: bool,
-     *     enablePerformanceMode?: bool,
-     *     buildSpec?: string,
-     *     ttl?: string,
-     *     displayName?: string,
-     *     enablePullRequestPreview?: bool,
-     *     pullRequestEnvironmentName?: string,
-     *     backendEnvironmentArn?: string,
-     *     backend?: Shapes\Backend
+     *     description?: string|null,
+     *     framework?: string|null,
+     *     stage?: 'PRODUCTION'|'BETA'|'DEVELOPMENT'|'EXPERIMENTAL'|'PULL_REQUEST'|null,
+     *     enableNotification?: bool|null,
+     *     enableAutoBuild?: bool|null,
+     *     environmentVariables?: array<string, string>|null,
+     *     basicAuthCredentials?: string|null,
+     *     enableBasicAuth?: bool|null,
+     *     enablePerformanceMode?: bool|null,
+     *     buildSpec?: string|null,
+     *     ttl?: string|null,
+     *     displayName?: string|null,
+     *     enablePullRequestPreview?: bool|null,
+     *     pullRequestEnvironmentName?: string|null,
+     *     backendEnvironmentArn?: string|null,
+     *     backend?: Shapes\Backend|null
      * } $args
      */
     public function __construct(array $args)

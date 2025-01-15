@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Bucket
- * @property string $KeyPattern
+ * @property string|null $KeyPattern
  * @property string $RevisionId
  */
 class RevisionDestinationEntry extends Shape
@@ -14,7 +14,7 @@ class RevisionDestinationEntry extends Shape
     /**
      * @param array{
      *     Bucket: string,
-     *     KeyPattern?: string,
+     *     KeyPattern?: string|null,
      *     RevisionId: string
      * } $args
      */

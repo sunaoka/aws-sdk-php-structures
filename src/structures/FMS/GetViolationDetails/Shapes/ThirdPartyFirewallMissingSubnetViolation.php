@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ViolationTarget
- * @property string $VPC
- * @property string $AvailabilityZone
- * @property string $TargetViolationReason
+ * @property string|null $ViolationTarget
+ * @property string|null $VPC
+ * @property string|null $AvailabilityZone
+ * @property string|null $TargetViolationReason
  */
 class ThirdPartyFirewallMissingSubnetViolation extends Shape
 {
     /**
      * @param array{
-     *     ViolationTarget?: string,
-     *     VPC?: string,
-     *     AvailabilityZone?: string,
-     *     TargetViolationReason?: string
+     *     ViolationTarget?: string|null,
+     *     VPC?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     TargetViolationReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

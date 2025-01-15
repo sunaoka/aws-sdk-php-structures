@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListAccountAssignmentsForPrincipal\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
+ * @property string|null $AccountId
  */
 class ListAccountAssignmentsFilter extends Shape
 {
     /**
-     * @param array{AccountId?: string} $args
+     * @param array{AccountId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

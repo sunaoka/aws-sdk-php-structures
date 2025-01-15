@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $appArn
  * @property string $appVersion
- * @property Shapes\PhysicalResource $physicalResource
+ * @property Shapes\PhysicalResource|null $physicalResource
  */
 class DescribeAppVersionResourceResponse extends Response
 {

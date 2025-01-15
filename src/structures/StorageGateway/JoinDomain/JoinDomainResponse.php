@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\StorageGateway\JoinDomain;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GatewayARN
- * @property 'ACCESS_DENIED'|'DETACHED'|'JOINED'|'JOINING'|'NETWORK_ERROR'|'TIMEOUT'|'UNKNOWN_ERROR' $ActiveDirectoryStatus
+ * @property string|null $GatewayARN
+ * @property 'ACCESS_DENIED'|'DETACHED'|'JOINED'|'JOINING'|'NETWORK_ERROR'|'TIMEOUT'|'UNKNOWN_ERROR'|null $ActiveDirectoryStatus
  */
 class JoinDomainResponse extends Response
 {

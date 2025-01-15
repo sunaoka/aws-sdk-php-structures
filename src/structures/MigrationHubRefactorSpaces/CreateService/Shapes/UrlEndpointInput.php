@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MigrationHubRefactorSpaces\CreateService\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HealthUrl
+ * @property string|null $HealthUrl
  * @property string $Url
  */
 class UrlEndpointInput extends Shape
 {
     /**
      * @param array{
-     *     HealthUrl?: string,
+     *     HealthUrl?: string|null,
      *     Url: string
      * } $args
      */

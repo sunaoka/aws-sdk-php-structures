@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListOpportunities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $AfterLastModifiedDate
- * @property \Aws\Api\DateTimeResult $BeforeLastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $AfterLastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $BeforeLastModifiedDate
  */
 class LastModifiedDate extends Shape
 {
     /**
      * @param array{
-     *     AfterLastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     BeforeLastModifiedDate?: \Aws\Api\DateTimeResult
+     *     AfterLastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     BeforeLastModifiedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

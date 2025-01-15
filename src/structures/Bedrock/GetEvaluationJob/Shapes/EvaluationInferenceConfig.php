@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetEvaluationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<EvaluationModelConfig> $models
- * @property list<RAGConfig> $ragConfigs
+ * @property list<EvaluationModelConfig>|null $models
+ * @property list<RAGConfig>|null $ragConfigs
  */
 class EvaluationInferenceConfig extends Shape
 {
     /**
      * @param array{
-     *     models?: list<EvaluationModelConfig>,
-     *     ragConfigs?: list<RAGConfig>
+     *     models?: list<EvaluationModelConfig>|null,
+     *     ragConfigs?: list<RAGConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

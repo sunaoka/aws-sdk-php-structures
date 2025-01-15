@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MarketplaceCommerceAnalytics\StartSupportDataEx
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $dataSetRequestId
+ * @property string|null $dataSetRequestId
  */
 class StartSupportDataExportResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QBusiness\GetWebExperience\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $customCSSUrl
- * @property string $logoUrl
- * @property string $fontUrl
- * @property string $faviconUrl
+ * @property string|null $customCSSUrl
+ * @property string|null $logoUrl
+ * @property string|null $fontUrl
+ * @property string|null $faviconUrl
  */
 class CustomizationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     customCSSUrl?: string,
-     *     logoUrl?: string,
-     *     fontUrl?: string,
-     *     faviconUrl?: string
+     *     customCSSUrl?: string|null,
+     *     logoUrl?: string|null,
+     *     fontUrl?: string|null,
+     *     faviconUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

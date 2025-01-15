@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $inputName
- * @property string $messageId
- * @property bool $batchMode
+ * @property string|null $messageId
+ * @property bool|null $batchMode
  * @property string $roleArn
  */
 class IotEventsAction extends Shape
@@ -15,8 +15,8 @@ class IotEventsAction extends Shape
     /**
      * @param array{
      *     inputName: string,
-     *     messageId?: string,
-     *     batchMode?: bool,
+     *     messageId?: string|null,
+     *     batchMode?: bool|null,
      *     roleArn: string
      * } $args
      */

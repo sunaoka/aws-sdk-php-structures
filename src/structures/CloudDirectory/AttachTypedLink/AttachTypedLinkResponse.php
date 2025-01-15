@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\AttachTypedLink;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TypedLinkSpecifier $TypedLinkSpecifier
+ * @property Shapes\TypedLinkSpecifier|null $TypedLinkSpecifier
  */
 class AttachTypedLinkResponse extends Response
 {

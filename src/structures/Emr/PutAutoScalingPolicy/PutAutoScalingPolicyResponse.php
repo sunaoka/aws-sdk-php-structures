@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Emr\PutAutoScalingPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ClusterId
- * @property string $InstanceGroupId
- * @property Shapes\AutoScalingPolicyDescription $AutoScalingPolicy
- * @property string $ClusterArn
+ * @property string|null $ClusterId
+ * @property string|null $InstanceGroupId
+ * @property Shapes\AutoScalingPolicyDescription|null $AutoScalingPolicy
+ * @property string|null $ClusterArn
  */
 class PutAutoScalingPolicyResponse extends Response
 {

@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\MediaConnect\CreateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $CidrAllowList
- * @property string $Description
- * @property string $Destination
- * @property Encryption $Encryption
- * @property int $MaxLatency
- * @property list<MediaStreamOutputConfigurationRequest> $MediaStreamOutputConfigurations
- * @property int $MinLatency
- * @property string $Name
- * @property int $Port
+ * @property list<string>|null $CidrAllowList
+ * @property string|null $Description
+ * @property string|null $Destination
+ * @property Encryption|null $Encryption
+ * @property int|null $MaxLatency
+ * @property list<MediaStreamOutputConfigurationRequest>|null $MediaStreamOutputConfigurations
+ * @property int|null $MinLatency
+ * @property string|null $Name
+ * @property int|null $Port
  * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp' $Protocol
- * @property string $RemoteId
- * @property int $SenderControlPort
- * @property int $SmoothingLatency
- * @property string $StreamId
- * @property VpcInterfaceAttachment $VpcInterfaceAttachment
- * @property 'ENABLED'|'DISABLED' $OutputStatus
+ * @property string|null $RemoteId
+ * @property int|null $SenderControlPort
+ * @property int|null $SmoothingLatency
+ * @property string|null $StreamId
+ * @property VpcInterfaceAttachment|null $VpcInterfaceAttachment
+ * @property 'ENABLED'|'DISABLED'|null $OutputStatus
  */
 class AddOutputRequest extends Shape
 {
     /**
      * @param array{
-     *     CidrAllowList?: list<string>,
-     *     Description?: string,
-     *     Destination?: string,
-     *     Encryption?: Encryption,
-     *     MaxLatency?: int,
-     *     MediaStreamOutputConfigurations?: list<MediaStreamOutputConfigurationRequest>,
-     *     MinLatency?: int,
-     *     Name?: string,
-     *     Port?: int,
+     *     CidrAllowList?: list<string>|null,
+     *     Description?: string|null,
+     *     Destination?: string|null,
+     *     Encryption?: Encryption|null,
+     *     MaxLatency?: int|null,
+     *     MediaStreamOutputConfigurations?: list<MediaStreamOutputConfigurationRequest>|null,
+     *     MinLatency?: int|null,
+     *     Name?: string|null,
+     *     Port?: int|null,
      *     Protocol: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp',
-     *     RemoteId?: string,
-     *     SenderControlPort?: int,
-     *     SmoothingLatency?: int,
-     *     StreamId?: string,
-     *     VpcInterfaceAttachment?: VpcInterfaceAttachment,
-     *     OutputStatus?: 'ENABLED'|'DISABLED'
+     *     RemoteId?: string|null,
+     *     SenderControlPort?: int|null,
+     *     SmoothingLatency?: int|null,
+     *     StreamId?: string|null,
+     *     VpcInterfaceAttachment?: VpcInterfaceAttachment|null,
+     *     OutputStatus?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetRouteAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RouteAnalysisCompletion $CompletionStatus
- * @property list<PathComponent> $Path
+ * @property RouteAnalysisCompletion|null $CompletionStatus
+ * @property list<PathComponent>|null $Path
  */
 class RouteAnalysisPath extends Shape
 {
     /**
      * @param array{
-     *     CompletionStatus?: RouteAnalysisCompletion,
-     *     Path?: list<PathComponent>
+     *     CompletionStatus?: RouteAnalysisCompletion|null,
+     *     Path?: list<PathComponent>|null
      * } $args
      */
     public function __construct(array $args = [])

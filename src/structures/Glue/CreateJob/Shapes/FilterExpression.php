@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'EQ'|'LT'|'GT'|'LTE'|'GTE'|'REGEX'|'ISNULL' $Operation
- * @property bool $Negated
+ * @property bool|null $Negated
  * @property list<FilterValue> $Values
  */
 class FilterExpression extends Shape
@@ -14,7 +14,7 @@ class FilterExpression extends Shape
     /**
      * @param array{
      *     Operation: 'EQ'|'LT'|'GT'|'LTE'|'GTE'|'REGEX'|'ISNULL',
-     *     Negated?: bool,
+     *     Negated?: bool|null,
      *     Values: list<FilterValue>
      * } $args
      */

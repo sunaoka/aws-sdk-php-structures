@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\BatchGetEffectiveLifecycle
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EffectiveLifecyclePolicyDetail> $effectiveLifecyclePolicyDetails
- * @property list<Shapes\EffectiveLifecyclePolicyErrorDetail> $effectiveLifecyclePolicyErrorDetails
+ * @property list<Shapes\EffectiveLifecyclePolicyDetail>|null $effectiveLifecyclePolicyDetails
+ * @property list<Shapes\EffectiveLifecyclePolicyErrorDetail>|null $effectiveLifecyclePolicyErrorDetails
  */
 class BatchGetEffectiveLifecyclePolicyResponse extends Response
 {

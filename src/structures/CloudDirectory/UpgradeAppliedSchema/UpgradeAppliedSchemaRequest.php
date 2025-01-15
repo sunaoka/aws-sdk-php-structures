@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PublishedSchemaArn
  * @property string $DirectoryArn
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class UpgradeAppliedSchemaRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpgradeAppliedSchemaRequest extends Request
      * @param array{
      *     PublishedSchemaArn: string,
      *     DirectoryArn: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

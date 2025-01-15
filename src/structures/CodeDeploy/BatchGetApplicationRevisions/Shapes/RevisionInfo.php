@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\BatchGetApplicationRevisions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RevisionLocation $revisionLocation
- * @property GenericRevisionInfo $genericRevisionInfo
+ * @property RevisionLocation|null $revisionLocation
+ * @property GenericRevisionInfo|null $genericRevisionInfo
  */
 class RevisionInfo extends Shape
 {
     /**
      * @param array{
-     *     revisionLocation?: RevisionLocation,
-     *     genericRevisionInfo?: GenericRevisionInfo
+     *     revisionLocation?: RevisionLocation|null,
+     *     genericRevisionInfo?: GenericRevisionInfo|null
      * } $args
      */
     public function __construct(array $args = [])

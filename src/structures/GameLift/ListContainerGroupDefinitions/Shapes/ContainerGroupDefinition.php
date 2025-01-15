@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\GameLift\ListContainerGroupDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerGroupDefinitionArn
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property 'AMAZON_LINUX_2023' $OperatingSystem
+ * @property string|null $ContainerGroupDefinitionArn
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property 'AMAZON_LINUX_2023'|null $OperatingSystem
  * @property string $Name
- * @property 'GAME_SERVER'|'PER_INSTANCE' $ContainerGroupType
- * @property int<4, 1024000> $TotalMemoryLimitMebibytes
- * @property double $TotalVcpuLimit
- * @property GameServerContainerDefinition $GameServerContainerDefinition
- * @property list<SupportContainerDefinition> $SupportContainerDefinitions
- * @property int<1, max> $VersionNumber
- * @property string $VersionDescription
- * @property 'READY'|'COPYING'|'FAILED' $Status
- * @property string $StatusReason
+ * @property 'GAME_SERVER'|'PER_INSTANCE'|null $ContainerGroupType
+ * @property int<4, 1024000>|null $TotalMemoryLimitMebibytes
+ * @property double|null $TotalVcpuLimit
+ * @property GameServerContainerDefinition|null $GameServerContainerDefinition
+ * @property list<SupportContainerDefinition>|null $SupportContainerDefinitions
+ * @property int<1, max>|null $VersionNumber
+ * @property string|null $VersionDescription
+ * @property 'READY'|'COPYING'|'FAILED'|null $Status
+ * @property string|null $StatusReason
  */
 class ContainerGroupDefinition extends Shape
 {
     /**
      * @param array{
-     *     ContainerGroupDefinitionArn?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     OperatingSystem?: 'AMAZON_LINUX_2023',
+     *     ContainerGroupDefinitionArn?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     OperatingSystem?: 'AMAZON_LINUX_2023'|null,
      *     Name: string,
-     *     ContainerGroupType?: 'GAME_SERVER'|'PER_INSTANCE',
-     *     TotalMemoryLimitMebibytes?: int<4, 1024000>,
-     *     TotalVcpuLimit?: double,
-     *     GameServerContainerDefinition?: GameServerContainerDefinition,
-     *     SupportContainerDefinitions?: list<SupportContainerDefinition>,
-     *     VersionNumber?: int<1, max>,
-     *     VersionDescription?: string,
-     *     Status?: 'READY'|'COPYING'|'FAILED',
-     *     StatusReason?: string
+     *     ContainerGroupType?: 'GAME_SERVER'|'PER_INSTANCE'|null,
+     *     TotalMemoryLimitMebibytes?: int<4, 1024000>|null,
+     *     TotalVcpuLimit?: double|null,
+     *     GameServerContainerDefinition?: GameServerContainerDefinition|null,
+     *     SupportContainerDefinitions?: list<SupportContainerDefinition>|null,
+     *     VersionNumber?: int<1, max>|null,
+     *     VersionDescription?: string|null,
+     *     Status?: 'READY'|'COPYING'|'FAILED'|null,
+     *     StatusReason?: string|null
      * } $args
      */
     public function __construct(array $args)

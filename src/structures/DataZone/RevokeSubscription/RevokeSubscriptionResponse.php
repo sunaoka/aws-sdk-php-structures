@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $createdBy
  * @property string $domainId
  * @property string $id
- * @property bool $retainPermissions
+ * @property bool|null $retainPermissions
  * @property 'APPROVED'|'REVOKED'|'CANCELLED' $status
  * @property Shapes\SubscribedListing $subscribedListing
  * @property Shapes\SubscribedPrincipal $subscribedPrincipal
- * @property string $subscriptionRequestId
+ * @property string|null $subscriptionRequestId
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property string|null $updatedBy
  */
 class RevokeSubscriptionResponse extends Response
 {

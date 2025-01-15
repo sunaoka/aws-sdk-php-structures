@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AutomatedSnapshotRetentionPeriod
- * @property string $ClusterIdentifier
- * @property string $ClusterType
- * @property string $ClusterVersion
- * @property string $EncryptionType
- * @property bool $EnhancedVpcRouting
- * @property string $MaintenanceTrackName
- * @property string $MasterUserPassword
- * @property string $NodeType
- * @property int $NumberOfNodes
- * @property bool $PubliclyAccessible
+ * @property int|null $AutomatedSnapshotRetentionPeriod
+ * @property string|null $ClusterIdentifier
+ * @property string|null $ClusterType
+ * @property string|null $ClusterVersion
+ * @property string|null $EncryptionType
+ * @property bool|null $EnhancedVpcRouting
+ * @property string|null $MaintenanceTrackName
+ * @property string|null $MasterUserPassword
+ * @property string|null $NodeType
+ * @property int|null $NumberOfNodes
+ * @property bool|null $PubliclyAccessible
  */
 class AwsRedshiftClusterPendingModifiedValues extends Shape
 {
     /**
      * @param array{
-     *     AutomatedSnapshotRetentionPeriod?: int,
-     *     ClusterIdentifier?: string,
-     *     ClusterType?: string,
-     *     ClusterVersion?: string,
-     *     EncryptionType?: string,
-     *     EnhancedVpcRouting?: bool,
-     *     MaintenanceTrackName?: string,
-     *     MasterUserPassword?: string,
-     *     NodeType?: string,
-     *     NumberOfNodes?: int,
-     *     PubliclyAccessible?: bool
+     *     AutomatedSnapshotRetentionPeriod?: int|null,
+     *     ClusterIdentifier?: string|null,
+     *     ClusterType?: string|null,
+     *     ClusterVersion?: string|null,
+     *     EncryptionType?: string|null,
+     *     EnhancedVpcRouting?: bool|null,
+     *     MaintenanceTrackName?: string|null,
+     *     MasterUserPassword?: string|null,
+     *     NodeType?: string|null,
+     *     NumberOfNodes?: int|null,
+     *     PubliclyAccessible?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

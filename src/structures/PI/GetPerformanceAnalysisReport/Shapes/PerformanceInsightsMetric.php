@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PI\GetPerformanceAnalysisReport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Metric
- * @property string $DisplayName
- * @property array<string, string> $Dimensions
- * @property double $Value
+ * @property string|null $Metric
+ * @property string|null $DisplayName
+ * @property array<string, string>|null $Dimensions
+ * @property double|null $Value
  */
 class PerformanceInsightsMetric extends Shape
 {
     /**
      * @param array{
-     *     Metric?: string,
-     *     DisplayName?: string,
-     *     Dimensions?: array<string, string>,
-     *     Value?: double
+     *     Metric?: string|null,
+     *     DisplayName?: string|null,
+     *     Dimensions?: array<string, string>|null,
+     *     Value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

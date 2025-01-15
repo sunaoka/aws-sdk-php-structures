@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataSync\UpdateTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReportDestination $Destination
- * @property 'SUMMARY_ONLY'|'STANDARD' $OutputType
- * @property 'ERRORS_ONLY'|'SUCCESSES_AND_ERRORS' $ReportLevel
- * @property 'INCLUDE'|'NONE' $ObjectVersionIds
- * @property ReportOverrides $Overrides
+ * @property ReportDestination|null $Destination
+ * @property 'SUMMARY_ONLY'|'STANDARD'|null $OutputType
+ * @property 'ERRORS_ONLY'|'SUCCESSES_AND_ERRORS'|null $ReportLevel
+ * @property 'INCLUDE'|'NONE'|null $ObjectVersionIds
+ * @property ReportOverrides|null $Overrides
  */
 class TaskReportConfig extends Shape
 {
     /**
      * @param array{
-     *     Destination?: ReportDestination,
-     *     OutputType?: 'SUMMARY_ONLY'|'STANDARD',
-     *     ReportLevel?: 'ERRORS_ONLY'|'SUCCESSES_AND_ERRORS',
-     *     ObjectVersionIds?: 'INCLUDE'|'NONE',
-     *     Overrides?: ReportOverrides
+     *     Destination?: ReportDestination|null,
+     *     OutputType?: 'SUMMARY_ONLY'|'STANDARD'|null,
+     *     ReportLevel?: 'ERRORS_ONLY'|'SUCCESSES_AND_ERRORS'|null,
+     *     ObjectVersionIds?: 'INCLUDE'|'NONE'|null,
+     *     Overrides?: ReportOverrides|null
      * } $args
      */
     public function __construct(array $args = [])

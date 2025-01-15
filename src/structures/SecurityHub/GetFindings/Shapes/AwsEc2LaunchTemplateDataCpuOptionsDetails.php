@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CoreCount
- * @property int $ThreadsPerCore
+ * @property int|null $CoreCount
+ * @property int|null $ThreadsPerCore
  */
 class AwsEc2LaunchTemplateDataCpuOptionsDetails extends Shape
 {
     /**
      * @param array{
-     *     CoreCount?: int,
-     *     ThreadsPerCore?: int
+     *     CoreCount?: int|null,
+     *     ThreadsPerCore?: int|null
      * } $args
      */
     public function __construct(array $args = [])

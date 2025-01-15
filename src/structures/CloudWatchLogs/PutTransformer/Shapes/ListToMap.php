@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $source
  * @property string $key
- * @property string $valueKey
- * @property string $target
- * @property bool $flatten
- * @property 'first'|'last' $flattenedElement
+ * @property string|null $valueKey
+ * @property string|null $target
+ * @property bool|null $flatten
+ * @property 'first'|'last'|null $flattenedElement
  */
 class ListToMap extends Shape
 {
@@ -18,10 +18,10 @@ class ListToMap extends Shape
      * @param array{
      *     source: string,
      *     key: string,
-     *     valueKey?: string,
-     *     target?: string,
-     *     flatten?: bool,
-     *     flattenedElement?: 'first'|'last'
+     *     valueKey?: string|null,
+     *     target?: string|null,
+     *     flatten?: bool|null,
+     *     flattenedElement?: 'first'|'last'|null
      * } $args
      */
     public function __construct(array $args)

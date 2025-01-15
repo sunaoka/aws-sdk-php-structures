@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeDirectConnectGatewayAssoc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $ownerAccount
- * @property string $attachmentId
+ * @property string|null $id
+ * @property string|null $ownerAccount
+ * @property string|null $attachmentId
  */
 class AssociatedCoreNetwork extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     ownerAccount?: string,
-     *     attachmentId?: string
+     *     id?: string|null,
+     *     ownerAccount?: string|null,
+     *     attachmentId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

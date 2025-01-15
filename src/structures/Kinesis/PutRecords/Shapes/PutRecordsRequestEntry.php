@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|resource|\Psr\Http\Message\StreamInterface $Data
- * @property string $ExplicitHashKey
+ * @property string|null $ExplicitHashKey
  * @property string $PartitionKey
  */
 class PutRecordsRequestEntry extends Shape
@@ -14,7 +14,7 @@ class PutRecordsRequestEntry extends Shape
     /**
      * @param array{
      *     Data: string|resource|\Psr\Http\Message\StreamInterface,
-     *     ExplicitHashKey?: string,
+     *     ExplicitHashKey?: string|null,
      *     PartitionKey: string
      * } $args
      */

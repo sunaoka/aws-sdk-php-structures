@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CategoryName
  * @property list<Shapes\Rule> $Rules
- * @property 'REAL_TIME'|'POST_CALL' $InputType
+ * @property 'REAL_TIME'|'POST_CALL'|null $InputType
  */
 class UpdateCallAnalyticsCategoryRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateCallAnalyticsCategoryRequest extends Request
      * @param array{
      *     CategoryName: string,
      *     Rules: list<Shapes\Rule>,
-     *     InputType?: 'REAL_TIME'|'POST_CALL'
+     *     InputType?: 'REAL_TIME'|'POST_CALL'|null
      * } $args
      */
     public function __construct(array $args)

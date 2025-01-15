@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Classification
  * @property string $Name
  * @property string $GrokPattern
- * @property string $CustomPatterns
+ * @property string|null $CustomPatterns
  */
 class CreateGrokClassifierRequest extends Shape
 {
@@ -17,7 +17,7 @@ class CreateGrokClassifierRequest extends Shape
      *     Classification: string,
      *     Name: string,
      *     GrokPattern: string,
-     *     CustomPatterns?: string
+     *     CustomPatterns?: string|null
      * } $args
      */
     public function __construct(array $args)

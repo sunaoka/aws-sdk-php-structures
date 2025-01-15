@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\StorageGateway\UpdateFileSystemAssociation\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CacheStaleTimeoutInSeconds
+ * @property int|null $CacheStaleTimeoutInSeconds
  */
 class CacheAttributes extends Shape
 {
     /**
-     * @param array{CacheStaleTimeoutInSeconds?: int} $args
+     * @param array{CacheStaleTimeoutInSeconds?: int|null} $args
      */
     public function __construct(array $args = [])
     {

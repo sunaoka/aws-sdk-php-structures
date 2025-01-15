@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetProfileObjectTypeTemplate\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Source
- * @property string $Target
- * @property 'STRING'|'NUMBER'|'PHONE_NUMBER'|'EMAIL_ADDRESS'|'NAME' $ContentType
+ * @property string|null $Source
+ * @property string|null $Target
+ * @property 'STRING'|'NUMBER'|'PHONE_NUMBER'|'EMAIL_ADDRESS'|'NAME'|null $ContentType
  */
 class ObjectTypeField extends Shape
 {
     /**
      * @param array{
-     *     Source?: string,
-     *     Target?: string,
-     *     ContentType?: 'STRING'|'NUMBER'|'PHONE_NUMBER'|'EMAIL_ADDRESS'|'NAME'
+     *     Source?: string|null,
+     *     Target?: string|null,
+     *     ContentType?: 'STRING'|'NUMBER'|'PHONE_NUMBER'|'EMAIL_ADDRESS'|'NAME'|null
      * } $args
      */
     public function __construct(array $args = [])

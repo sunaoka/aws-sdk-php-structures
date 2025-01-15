@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\BackupSearch\StartSearchJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SearchJobArn
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $SearchJobIdentifier
+ * @property string|null $SearchJobArn
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $SearchJobIdentifier
  */
 class StartSearchJobResponse extends Response
 {

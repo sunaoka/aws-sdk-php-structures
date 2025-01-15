@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\GetApplicationGrant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AuthorizationCodeGrant $AuthorizationCode
- * @property JwtBearerGrant $JwtBearer
- * @property RefreshTokenGrant $RefreshToken
- * @property TokenExchangeGrant $TokenExchange
+ * @property AuthorizationCodeGrant|null $AuthorizationCode
+ * @property JwtBearerGrant|null $JwtBearer
+ * @property RefreshTokenGrant|null $RefreshToken
+ * @property TokenExchangeGrant|null $TokenExchange
  */
 class Grant extends Shape
 {
     /**
      * @param array{
-     *     AuthorizationCode?: AuthorizationCodeGrant,
-     *     JwtBearer?: JwtBearerGrant,
-     *     RefreshToken?: RefreshTokenGrant,
-     *     TokenExchange?: TokenExchangeGrant
+     *     AuthorizationCode?: AuthorizationCodeGrant|null,
+     *     JwtBearer?: JwtBearerGrant|null,
+     *     RefreshToken?: RefreshTokenGrant|null,
+     *     TokenExchange?: TokenExchangeGrant|null
      * } $args
      */
     public function __construct(array $args = [])

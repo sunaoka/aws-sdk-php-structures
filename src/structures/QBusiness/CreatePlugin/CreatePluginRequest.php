@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $displayName
  * @property 'SERVICE_NOW'|'SALESFORCE'|'JIRA'|'ZENDESK'|'CUSTOM'|'QUICKSIGHT'|'SERVICENOW_NOW_PLATFORM'|'JIRA_CLOUD'|'SALESFORCE_CRM'|'ZENDESK_SUITE'|'ATLASSIAN_CONFLUENCE'|'GOOGLE_CALENDAR'|'MICROSOFT_TEAMS'|'MICROSOFT_EXCHANGE'|'PAGERDUTY_ADVANCE'|'SMARTSHEET'|'ASANA' $type
  * @property Shapes\PluginAuthConfiguration $authConfiguration
- * @property string $serverUrl
- * @property Shapes\CustomPluginConfiguration $customPluginConfiguration
- * @property list<Shapes\Tag> $tags
- * @property string $clientToken
+ * @property string|null $serverUrl
+ * @property Shapes\CustomPluginConfiguration|null $customPluginConfiguration
+ * @property list<Shapes\Tag>|null $tags
+ * @property string|null $clientToken
  */
 class CreatePluginRequest extends Request
 {
@@ -22,10 +22,10 @@ class CreatePluginRequest extends Request
      *     displayName: string,
      *     type: 'SERVICE_NOW'|'SALESFORCE'|'JIRA'|'ZENDESK'|'CUSTOM'|'QUICKSIGHT'|'SERVICENOW_NOW_PLATFORM'|'JIRA_CLOUD'|'SALESFORCE_CRM'|'ZENDESK_SUITE'|'ATLASSIAN_CONFLUENCE'|'GOOGLE_CALENDAR'|'MICROSOFT_TEAMS'|'MICROSOFT_EXCHANGE'|'PAGERDUTY_ADVANCE'|'SMARTSHEET'|'ASANA',
      *     authConfiguration: Shapes\PluginAuthConfiguration,
-     *     serverUrl?: string,
-     *     customPluginConfiguration?: Shapes\CustomPluginConfiguration,
-     *     tags?: list<Shapes\Tag>,
-     *     clientToken?: string
+     *     serverUrl?: string|null,
+     *     customPluginConfiguration?: Shapes\CustomPluginConfiguration|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

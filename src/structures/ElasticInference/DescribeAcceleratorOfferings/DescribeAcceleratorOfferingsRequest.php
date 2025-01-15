@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'region'|'availability-zone'|'availability-zone-id' $locationType
- * @property list<string> $acceleratorTypes
+ * @property list<string>|null $acceleratorTypes
  */
 class DescribeAcceleratorOfferingsRequest extends Request
 {
     /**
      * @param array{
      *     locationType: 'region'|'availability-zone'|'availability-zone-id',
-     *     acceleratorTypes?: list<string>
+     *     acceleratorTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

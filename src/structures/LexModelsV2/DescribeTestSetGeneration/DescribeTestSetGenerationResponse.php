@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeTestSetGeneration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $testSetGenerationId
- * @property 'Generating'|'Ready'|'Failed'|'Pending' $testSetGenerationStatus
- * @property list<string> $failureReasons
- * @property string $testSetId
- * @property string $testSetName
- * @property string $description
- * @property Shapes\TestSetStorageLocation $storageLocation
- * @property Shapes\TestSetGenerationDataSource $generationDataSource
- * @property string $roleArn
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $testSetGenerationId
+ * @property 'Generating'|'Ready'|'Failed'|'Pending'|null $testSetGenerationStatus
+ * @property list<string>|null $failureReasons
+ * @property string|null $testSetId
+ * @property string|null $testSetName
+ * @property string|null $description
+ * @property Shapes\TestSetStorageLocation|null $storageLocation
+ * @property Shapes\TestSetGenerationDataSource|null $generationDataSource
+ * @property string|null $roleArn
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class DescribeTestSetGenerationResponse extends Response
 {

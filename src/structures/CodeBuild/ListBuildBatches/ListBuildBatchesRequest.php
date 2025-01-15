@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeBuild\ListBuildBatches;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\BuildBatchFilter $filter
- * @property int<1, 100> $maxResults
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
- * @property string $nextToken
+ * @property Shapes\BuildBatchFilter|null $filter
+ * @property int<1, 100>|null $maxResults
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property string|null $nextToken
  */
 class ListBuildBatchesRequest extends Request
 {
     /**
      * @param array{
-     *     filter?: Shapes\BuildBatchFilter,
-     *     maxResults?: int<1, 100>,
-     *     sortOrder?: 'ASCENDING'|'DESCENDING',
-     *     nextToken?: string
+     *     filter?: Shapes\BuildBatchFilter|null,
+     *     maxResults?: int<1, 100>|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

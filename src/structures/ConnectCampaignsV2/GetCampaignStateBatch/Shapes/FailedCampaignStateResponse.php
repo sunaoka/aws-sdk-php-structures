@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\GetCampaignStateBatch\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $campaignId
- * @property 'ResourceNotFound'|'UnknownError' $failureCode
+ * @property string|null $campaignId
+ * @property 'ResourceNotFound'|'UnknownError'|null $failureCode
  */
 class FailedCampaignStateResponse extends Shape
 {
     /**
      * @param array{
-     *     campaignId?: string,
-     *     failureCode?: 'ResourceNotFound'|'UnknownError'
+     *     campaignId?: string|null,
+     *     failureCode?: 'ResourceNotFound'|'UnknownError'|null
      * } $args
      */
     public function __construct(array $args = [])

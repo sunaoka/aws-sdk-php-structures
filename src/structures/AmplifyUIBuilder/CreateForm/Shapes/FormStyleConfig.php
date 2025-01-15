@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\CreateForm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $tokenReference
- * @property string $value
+ * @property string|null $tokenReference
+ * @property string|null $value
  */
 class FormStyleConfig extends Shape
 {
     /**
      * @param array{
-     *     tokenReference?: string,
-     *     value?: string
+     *     tokenReference?: string|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

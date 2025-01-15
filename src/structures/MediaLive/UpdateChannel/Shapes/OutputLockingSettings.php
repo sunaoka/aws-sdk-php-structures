@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EpochLockingSettings $EpochLockingSettings
- * @property PipelineLockingSettings $PipelineLockingSettings
+ * @property EpochLockingSettings|null $EpochLockingSettings
+ * @property PipelineLockingSettings|null $PipelineLockingSettings
  */
 class OutputLockingSettings extends Shape
 {
     /**
      * @param array{
-     *     EpochLockingSettings?: EpochLockingSettings,
-     *     PipelineLockingSettings?: PipelineLockingSettings
+     *     EpochLockingSettings?: EpochLockingSettings|null,
+     *     PipelineLockingSettings?: PipelineLockingSettings|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\DataZone\AcceptPredictions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $editedValue
- * @property int $predictionChoice
+ * @property string|null $editedValue
+ * @property int|null $predictionChoice
  * @property string $predictionTarget
  */
 class AcceptChoice extends Shape
 {
     /**
      * @param array{
-     *     editedValue?: string,
-     *     predictionChoice?: int,
+     *     editedValue?: string|null,
+     *     predictionChoice?: int|null,
      *     predictionTarget: string
      * } $args
      */

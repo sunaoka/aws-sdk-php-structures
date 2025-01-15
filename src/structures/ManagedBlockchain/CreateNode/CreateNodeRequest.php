@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientRequestToken
  * @property string $NetworkId
- * @property string $MemberId
+ * @property string|null $MemberId
  * @property Shapes\NodeConfiguration $NodeConfiguration
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateNodeRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateNodeRequest extends Request
      * @param array{
      *     ClientRequestToken: string,
      *     NetworkId: string,
-     *     MemberId?: string,
+     *     MemberId?: string|null,
      *     NodeConfiguration: Shapes\NodeConfiguration,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

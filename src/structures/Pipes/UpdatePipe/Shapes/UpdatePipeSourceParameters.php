@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FilterCriteria $FilterCriteria
- * @property UpdatePipeSourceKinesisStreamParameters $KinesisStreamParameters
- * @property UpdatePipeSourceDynamoDBStreamParameters $DynamoDBStreamParameters
- * @property UpdatePipeSourceSqsQueueParameters $SqsQueueParameters
- * @property UpdatePipeSourceActiveMQBrokerParameters $ActiveMQBrokerParameters
- * @property UpdatePipeSourceRabbitMQBrokerParameters $RabbitMQBrokerParameters
- * @property UpdatePipeSourceManagedStreamingKafkaParameters $ManagedStreamingKafkaParameters
- * @property UpdatePipeSourceSelfManagedKafkaParameters $SelfManagedKafkaParameters
+ * @property FilterCriteria|null $FilterCriteria
+ * @property UpdatePipeSourceKinesisStreamParameters|null $KinesisStreamParameters
+ * @property UpdatePipeSourceDynamoDBStreamParameters|null $DynamoDBStreamParameters
+ * @property UpdatePipeSourceSqsQueueParameters|null $SqsQueueParameters
+ * @property UpdatePipeSourceActiveMQBrokerParameters|null $ActiveMQBrokerParameters
+ * @property UpdatePipeSourceRabbitMQBrokerParameters|null $RabbitMQBrokerParameters
+ * @property UpdatePipeSourceManagedStreamingKafkaParameters|null $ManagedStreamingKafkaParameters
+ * @property UpdatePipeSourceSelfManagedKafkaParameters|null $SelfManagedKafkaParameters
  */
 class UpdatePipeSourceParameters extends Shape
 {
     /**
      * @param array{
-     *     FilterCriteria?: FilterCriteria,
-     *     KinesisStreamParameters?: UpdatePipeSourceKinesisStreamParameters,
-     *     DynamoDBStreamParameters?: UpdatePipeSourceDynamoDBStreamParameters,
-     *     SqsQueueParameters?: UpdatePipeSourceSqsQueueParameters,
-     *     ActiveMQBrokerParameters?: UpdatePipeSourceActiveMQBrokerParameters,
-     *     RabbitMQBrokerParameters?: UpdatePipeSourceRabbitMQBrokerParameters,
-     *     ManagedStreamingKafkaParameters?: UpdatePipeSourceManagedStreamingKafkaParameters,
-     *     SelfManagedKafkaParameters?: UpdatePipeSourceSelfManagedKafkaParameters
+     *     FilterCriteria?: FilterCriteria|null,
+     *     KinesisStreamParameters?: UpdatePipeSourceKinesisStreamParameters|null,
+     *     DynamoDBStreamParameters?: UpdatePipeSourceDynamoDBStreamParameters|null,
+     *     SqsQueueParameters?: UpdatePipeSourceSqsQueueParameters|null,
+     *     ActiveMQBrokerParameters?: UpdatePipeSourceActiveMQBrokerParameters|null,
+     *     RabbitMQBrokerParameters?: UpdatePipeSourceRabbitMQBrokerParameters|null,
+     *     ManagedStreamingKafkaParameters?: UpdatePipeSourceManagedStreamingKafkaParameters|null,
+     *     SelfManagedKafkaParameters?: UpdatePipeSourceSelfManagedKafkaParameters|null
      * } $args
      */
     public function __construct(array $args = [])

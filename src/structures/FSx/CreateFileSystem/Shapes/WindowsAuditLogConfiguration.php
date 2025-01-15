@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'DISABLED'|'SUCCESS_ONLY'|'FAILURE_ONLY'|'SUCCESS_AND_FAILURE' $FileAccessAuditLogLevel
  * @property 'DISABLED'|'SUCCESS_ONLY'|'FAILURE_ONLY'|'SUCCESS_AND_FAILURE' $FileShareAccessAuditLogLevel
- * @property string $AuditLogDestination
+ * @property string|null $AuditLogDestination
  */
 class WindowsAuditLogConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class WindowsAuditLogConfiguration extends Shape
      * @param array{
      *     FileAccessAuditLogLevel: 'DISABLED'|'SUCCESS_ONLY'|'FAILURE_ONLY'|'SUCCESS_AND_FAILURE',
      *     FileShareAccessAuditLogLevel: 'DISABLED'|'SUCCESS_ONLY'|'FAILURE_ONLY'|'SUCCESS_AND_FAILURE',
-     *     AuditLogDestination?: string
+     *     AuditLogDestination?: string|null
      * } $args
      */
     public function __construct(array $args)

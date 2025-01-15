@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LogDriver
- * @property array<string, string> $Options
- * @property list<AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetails> $SecretOptions
+ * @property string|null $LogDriver
+ * @property array<string, string>|null $Options
+ * @property list<AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetails>|null $SecretOptions
  */
 class AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetails extends Shape
 {
     /**
      * @param array{
-     *     LogDriver?: string,
-     *     Options?: array<string, string>,
-     *     SecretOptions?: list<AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetails>
+     *     LogDriver?: string|null,
+     *     Options?: array<string, string>|null,
+     *     SecretOptions?: list<AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetails>|null
      * } $args
      */
     public function __construct(array $args = [])

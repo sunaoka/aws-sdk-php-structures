@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $serviceName
  * @property 'nano'|'micro'|'small'|'medium'|'large'|'xlarge' $power
  * @property int<1, 20> $scale
- * @property list<Shapes\Tag> $tags
- * @property array<string, list<string>> $publicDomainNames
- * @property Shapes\ContainerServiceDeploymentRequest $deployment
- * @property Shapes\PrivateRegistryAccessRequest $privateRegistryAccess
+ * @property list<Shapes\Tag>|null $tags
+ * @property array<string, list<string>>|null $publicDomainNames
+ * @property Shapes\ContainerServiceDeploymentRequest|null $deployment
+ * @property Shapes\PrivateRegistryAccessRequest|null $privateRegistryAccess
  */
 class CreateContainerServiceRequest extends Request
 {
@@ -20,10 +20,10 @@ class CreateContainerServiceRequest extends Request
      *     serviceName: string,
      *     power: 'nano'|'micro'|'small'|'medium'|'large'|'xlarge',
      *     scale: int<1, 20>,
-     *     tags?: list<Shapes\Tag>,
-     *     publicDomainNames?: array<string, list<string>>,
-     *     deployment?: Shapes\ContainerServiceDeploymentRequest,
-     *     privateRegistryAccess?: Shapes\PrivateRegistryAccessRequest
+     *     tags?: list<Shapes\Tag>|null,
+     *     publicDomainNames?: array<string, list<string>>|null,
+     *     deployment?: Shapes\ContainerServiceDeploymentRequest|null,
+     *     privateRegistryAccess?: Shapes\PrivateRegistryAccessRequest|null
      * } $args
      */
     public function __construct(array $args)

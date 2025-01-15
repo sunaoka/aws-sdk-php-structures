@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DocumentAttributeCondition $condition
- * @property DocumentAttributeTarget $target
- * @property 'DELETE' $documentContentOperator
+ * @property DocumentAttributeCondition|null $condition
+ * @property DocumentAttributeTarget|null $target
+ * @property 'DELETE'|null $documentContentOperator
  */
 class InlineDocumentEnrichmentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     condition?: DocumentAttributeCondition,
-     *     target?: DocumentAttributeTarget,
-     *     documentContentOperator?: 'DELETE'
+     *     condition?: DocumentAttributeCondition|null,
+     *     target?: DocumentAttributeTarget|null,
+     *     documentContentOperator?: 'DELETE'|null
      * } $args
      */
     public function __construct(array $args = [])

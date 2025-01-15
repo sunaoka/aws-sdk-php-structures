@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackName
- * @property string $RoleARN
- * @property list<string> $ResourcesToSkip
- * @property string $ClientRequestToken
+ * @property string|null $RoleARN
+ * @property list<string>|null $ResourcesToSkip
+ * @property string|null $ClientRequestToken
  */
 class ContinueUpdateRollbackRequest extends Request
 {
     /**
      * @param array{
      *     StackName: string,
-     *     RoleARN?: string,
-     *     ResourcesToSkip?: list<string>,
-     *     ClientRequestToken?: string
+     *     RoleARN?: string|null,
+     *     ResourcesToSkip?: list<string>|null,
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

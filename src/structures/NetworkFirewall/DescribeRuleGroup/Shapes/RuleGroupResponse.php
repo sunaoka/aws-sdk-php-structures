@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RuleGroupArn
  * @property string $RuleGroupName
  * @property string $RuleGroupId
- * @property string $Description
- * @property 'STATELESS'|'STATEFUL' $Type
- * @property int $Capacity
- * @property 'ACTIVE'|'DELETING'|'ERROR' $RuleGroupStatus
- * @property list<Tag> $Tags
- * @property int $ConsumedCapacity
- * @property int $NumberOfAssociations
- * @property EncryptionConfiguration $EncryptionConfiguration
- * @property SourceMetadata $SourceMetadata
- * @property string $SnsTopic
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property list<AnalysisResult> $AnalysisResults
+ * @property string|null $Description
+ * @property 'STATELESS'|'STATEFUL'|null $Type
+ * @property int|null $Capacity
+ * @property 'ACTIVE'|'DELETING'|'ERROR'|null $RuleGroupStatus
+ * @property list<Tag>|null $Tags
+ * @property int|null $ConsumedCapacity
+ * @property int|null $NumberOfAssociations
+ * @property EncryptionConfiguration|null $EncryptionConfiguration
+ * @property SourceMetadata|null $SourceMetadata
+ * @property string|null $SnsTopic
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property list<AnalysisResult>|null $AnalysisResults
  */
 class RuleGroupResponse extends Shape
 {
@@ -28,18 +28,18 @@ class RuleGroupResponse extends Shape
      *     RuleGroupArn: string,
      *     RuleGroupName: string,
      *     RuleGroupId: string,
-     *     Description?: string,
-     *     Type?: 'STATELESS'|'STATEFUL',
-     *     Capacity?: int,
-     *     RuleGroupStatus?: 'ACTIVE'|'DELETING'|'ERROR',
-     *     Tags?: list<Tag>,
-     *     ConsumedCapacity?: int,
-     *     NumberOfAssociations?: int,
-     *     EncryptionConfiguration?: EncryptionConfiguration,
-     *     SourceMetadata?: SourceMetadata,
-     *     SnsTopic?: string,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     AnalysisResults?: list<AnalysisResult>
+     *     Description?: string|null,
+     *     Type?: 'STATELESS'|'STATEFUL'|null,
+     *     Capacity?: int|null,
+     *     RuleGroupStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
+     *     Tags?: list<Tag>|null,
+     *     ConsumedCapacity?: int|null,
+     *     NumberOfAssociations?: int|null,
+     *     EncryptionConfiguration?: EncryptionConfiguration|null,
+     *     SourceMetadata?: SourceMetadata|null,
+     *     SnsTopic?: string|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     AnalysisResults?: list<AnalysisResult>|null
      * } $args
      */
     public function __construct(array $args)

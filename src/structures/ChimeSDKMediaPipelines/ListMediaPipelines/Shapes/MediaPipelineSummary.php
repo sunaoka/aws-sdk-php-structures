@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\ListMediaPipelines\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MediaPipelineId
- * @property string $MediaPipelineArn
+ * @property string|null $MediaPipelineId
+ * @property string|null $MediaPipelineArn
  */
 class MediaPipelineSummary extends Shape
 {
     /**
      * @param array{
-     *     MediaPipelineId?: string,
-     *     MediaPipelineArn?: string
+     *     MediaPipelineId?: string|null,
+     *     MediaPipelineArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

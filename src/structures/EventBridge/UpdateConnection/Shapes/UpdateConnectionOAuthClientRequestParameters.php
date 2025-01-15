@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EventBridge\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientID
- * @property string $ClientSecret
+ * @property string|null $ClientID
+ * @property string|null $ClientSecret
  */
 class UpdateConnectionOAuthClientRequestParameters extends Shape
 {
     /**
      * @param array{
-     *     ClientID?: string,
-     *     ClientSecret?: string
+     *     ClientID?: string|null,
+     *     ClientSecret?: string|null
      * } $args
      */
     public function __construct(array $args = [])

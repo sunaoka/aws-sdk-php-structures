@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property list<string> $targetArns
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateVpcLinkRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     targetArns: list<string>,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

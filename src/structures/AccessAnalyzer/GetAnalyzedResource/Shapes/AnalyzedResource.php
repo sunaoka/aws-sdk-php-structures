@@ -11,11 +11,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $analyzedAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property bool $isPublic
- * @property list<string> $actions
- * @property list<string> $sharedVia
- * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED' $status
+ * @property list<string>|null $actions
+ * @property list<string>|null $sharedVia
+ * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED'|null $status
  * @property string $resourceOwnerAccount
- * @property string $error
+ * @property string|null $error
  */
 class AnalyzedResource extends Shape
 {
@@ -27,11 +27,11 @@ class AnalyzedResource extends Shape
      *     analyzedAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     isPublic: bool,
-     *     actions?: list<string>,
-     *     sharedVia?: list<string>,
-     *     status?: 'ACTIVE'|'ARCHIVED'|'RESOLVED',
+     *     actions?: list<string>|null,
+     *     sharedVia?: list<string>|null,
+     *     status?: 'ACTIVE'|'ARCHIVED'|'RESOLVED'|null,
      *     resourceOwnerAccount: string,
-     *     error?: string
+     *     error?: string|null
      * } $args
      */
     public function __construct(array $args)

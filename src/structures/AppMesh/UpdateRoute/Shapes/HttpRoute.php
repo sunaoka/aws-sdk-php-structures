@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property HttpRouteAction $action
  * @property HttpRouteMatch $match
- * @property HttpRetryPolicy $retryPolicy
- * @property HttpTimeout $timeout
+ * @property HttpRetryPolicy|null $retryPolicy
+ * @property HttpTimeout|null $timeout
  */
 class HttpRoute extends Shape
 {
@@ -16,8 +16,8 @@ class HttpRoute extends Shape
      * @param array{
      *     action: HttpRouteAction,
      *     match: HttpRouteMatch,
-     *     retryPolicy?: HttpRetryPolicy,
-     *     timeout?: HttpTimeout
+     *     retryPolicy?: HttpRetryPolicy|null,
+     *     timeout?: HttpTimeout|null
      * } $args
      */
     public function __construct(array $args)

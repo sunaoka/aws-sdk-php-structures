@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $taskId
  * @property 'FINISHED'|'FAILED'|'FALSE' $taskStatus
- * @property string $errorId
- * @property string $errorMessage
- * @property string $errorStackTrace
+ * @property string|null $errorId
+ * @property string|null $errorMessage
+ * @property string|null $errorStackTrace
  */
 class SetTaskStatusRequest extends Request
 {
@@ -17,9 +17,9 @@ class SetTaskStatusRequest extends Request
      * @param array{
      *     taskId: string,
      *     taskStatus: 'FINISHED'|'FAILED'|'FALSE',
-     *     errorId?: string,
-     *     errorMessage?: string,
-     *     errorStackTrace?: string
+     *     errorId?: string|null,
+     *     errorMessage?: string|null,
+     *     errorStackTrace?: string|null
      * } $args
      */
     public function __construct(array $args)

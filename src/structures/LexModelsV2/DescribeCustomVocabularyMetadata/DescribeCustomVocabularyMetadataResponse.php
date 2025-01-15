@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeCustomVocabularyMetadata;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $botId
- * @property string $botVersion
- * @property string $localeId
- * @property 'Ready'|'Deleting'|'Exporting'|'Importing'|'Creating' $customVocabularyStatus
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $botId
+ * @property string|null $botVersion
+ * @property string|null $localeId
+ * @property 'Ready'|'Deleting'|'Exporting'|'Importing'|'Creating'|null $customVocabularyStatus
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class DescribeCustomVocabularyMetadataResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\TranscribeService\CreateCallAnalyticsCategory\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 100> $StartPercentage
- * @property int<0, 100> $EndPercentage
- * @property int<0, 100> $First
- * @property int<0, 100> $Last
+ * @property int<0, 100>|null $StartPercentage
+ * @property int<0, 100>|null $EndPercentage
+ * @property int<0, 100>|null $First
+ * @property int<0, 100>|null $Last
  */
 class RelativeTimeRange extends Shape
 {
     /**
      * @param array{
-     *     StartPercentage?: int<0, 100>,
-     *     EndPercentage?: int<0, 100>,
-     *     First?: int<0, 100>,
-     *     Last?: int<0, 100>
+     *     StartPercentage?: int<0, 100>|null,
+     *     EndPercentage?: int<0, 100>|null,
+     *     First?: int<0, 100>|null,
+     *     Last?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

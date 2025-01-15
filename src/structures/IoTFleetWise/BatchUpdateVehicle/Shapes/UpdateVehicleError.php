@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\BatchUpdateVehicle\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $vehicleName
- * @property int $code
- * @property string $message
+ * @property string|null $vehicleName
+ * @property int|null $code
+ * @property string|null $message
  */
 class UpdateVehicleError extends Shape
 {
     /**
      * @param array{
-     *     vehicleName?: string,
-     *     code?: int,
-     *     message?: string
+     *     vehicleName?: string|null,
+     *     code?: int|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

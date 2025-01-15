@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\UpdateNotificationConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
- * @property string $StreamARN
- * @property Shapes\NotificationConfiguration $NotificationConfiguration
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
+ * @property Shapes\NotificationConfiguration|null $NotificationConfiguration
  */
 class UpdateNotificationConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     StreamARN?: string,
-     *     NotificationConfiguration?: Shapes\NotificationConfiguration
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null,
+     *     NotificationConfiguration?: Shapes\NotificationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

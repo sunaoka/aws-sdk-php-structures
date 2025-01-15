@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AudioSelectorNames
+ * @property list<string>|null $AudioSelectorNames
  */
 class AudioSelectorGroup extends Shape
 {
     /**
-     * @param array{AudioSelectorNames?: list<string>} $args
+     * @param array{AudioSelectorNames?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

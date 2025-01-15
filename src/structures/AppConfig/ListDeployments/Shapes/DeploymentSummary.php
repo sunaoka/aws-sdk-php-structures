@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\AppConfig\ListDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DeploymentNumber
- * @property string $ConfigurationName
- * @property string $ConfigurationVersion
- * @property int<0, 1440> $DeploymentDurationInMinutes
- * @property 'LINEAR'|'EXPONENTIAL' $GrowthType
- * @property float $GrowthFactor
- * @property int<0, 1440> $FinalBakeTimeInMinutes
- * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED' $State
- * @property float $PercentageComplete
- * @property \Aws\Api\DateTimeResult $StartedAt
- * @property \Aws\Api\DateTimeResult $CompletedAt
- * @property string $VersionLabel
+ * @property int|null $DeploymentNumber
+ * @property string|null $ConfigurationName
+ * @property string|null $ConfigurationVersion
+ * @property int<0, 1440>|null $DeploymentDurationInMinutes
+ * @property 'LINEAR'|'EXPONENTIAL'|null $GrowthType
+ * @property float|null $GrowthFactor
+ * @property int<0, 1440>|null $FinalBakeTimeInMinutes
+ * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED'|null $State
+ * @property float|null $PercentageComplete
+ * @property \Aws\Api\DateTimeResult|null $StartedAt
+ * @property \Aws\Api\DateTimeResult|null $CompletedAt
+ * @property string|null $VersionLabel
  */
 class DeploymentSummary extends Shape
 {
     /**
      * @param array{
-     *     DeploymentNumber?: int,
-     *     ConfigurationName?: string,
-     *     ConfigurationVersion?: string,
-     *     DeploymentDurationInMinutes?: int<0, 1440>,
-     *     GrowthType?: 'LINEAR'|'EXPONENTIAL',
-     *     GrowthFactor?: float,
-     *     FinalBakeTimeInMinutes?: int<0, 1440>,
-     *     State?: 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED',
-     *     PercentageComplete?: float,
-     *     StartedAt?: \Aws\Api\DateTimeResult,
-     *     CompletedAt?: \Aws\Api\DateTimeResult,
-     *     VersionLabel?: string
+     *     DeploymentNumber?: int|null,
+     *     ConfigurationName?: string|null,
+     *     ConfigurationVersion?: string|null,
+     *     DeploymentDurationInMinutes?: int<0, 1440>|null,
+     *     GrowthType?: 'LINEAR'|'EXPONENTIAL'|null,
+     *     GrowthFactor?: float|null,
+     *     FinalBakeTimeInMinutes?: int<0, 1440>|null,
+     *     State?: 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED'|null,
+     *     PercentageComplete?: float|null,
+     *     StartedAt?: \Aws\Api\DateTimeResult|null,
+     *     CompletedAt?: \Aws\Api\DateTimeResult|null,
+     *     VersionLabel?: string|null
      * } $args
      */
     public function __construct(array $args = [])

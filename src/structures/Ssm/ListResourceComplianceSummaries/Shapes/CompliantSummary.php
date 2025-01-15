@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\ListResourceComplianceSummaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CompliantCount
- * @property SeveritySummary $SeveritySummary
+ * @property int|null $CompliantCount
+ * @property SeveritySummary|null $SeveritySummary
  */
 class CompliantSummary extends Shape
 {
     /**
      * @param array{
-     *     CompliantCount?: int,
-     *     SeveritySummary?: SeveritySummary
+     *     CompliantCount?: int|null,
+     *     SeveritySummary?: SeveritySummary|null
      * } $args
      */
     public function __construct(array $args = [])

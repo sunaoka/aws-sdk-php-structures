@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\DeleteLicenseSe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\LicenseServerEndpoint $LicenseServerEndpoint
+ * @property Shapes\LicenseServerEndpoint|null $LicenseServerEndpoint
  */
 class DeleteLicenseServerEndpointResponse extends Response
 {

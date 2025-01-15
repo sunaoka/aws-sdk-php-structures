@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListLicenseServ
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $IdentityProviderArn
- * @property string $LicenseServerEndpointArn
- * @property string $LicenseServerEndpointId
- * @property 'PROVISIONING'|'PROVISIONING_FAILED'|'PROVISIONED'|'DELETING'|'DELETION_FAILED'|'DELETED' $LicenseServerEndpointProvisioningStatus
- * @property list<LicenseServer> $LicenseServers
- * @property ServerEndpoint $ServerEndpoint
- * @property 'RDS_SAL' $ServerType
- * @property string $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $IdentityProviderArn
+ * @property string|null $LicenseServerEndpointArn
+ * @property string|null $LicenseServerEndpointId
+ * @property 'PROVISIONING'|'PROVISIONING_FAILED'|'PROVISIONED'|'DELETING'|'DELETION_FAILED'|'DELETED'|null $LicenseServerEndpointProvisioningStatus
+ * @property list<LicenseServer>|null $LicenseServers
+ * @property ServerEndpoint|null $ServerEndpoint
+ * @property 'RDS_SAL'|null $ServerType
+ * @property string|null $StatusMessage
  */
 class LicenseServerEndpoint extends Shape
 {
     /**
      * @param array{
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     IdentityProviderArn?: string,
-     *     LicenseServerEndpointArn?: string,
-     *     LicenseServerEndpointId?: string,
-     *     LicenseServerEndpointProvisioningStatus?: 'PROVISIONING'|'PROVISIONING_FAILED'|'PROVISIONED'|'DELETING'|'DELETION_FAILED'|'DELETED',
-     *     LicenseServers?: list<LicenseServer>,
-     *     ServerEndpoint?: ServerEndpoint,
-     *     ServerType?: 'RDS_SAL',
-     *     StatusMessage?: string
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     IdentityProviderArn?: string|null,
+     *     LicenseServerEndpointArn?: string|null,
+     *     LicenseServerEndpointId?: string|null,
+     *     LicenseServerEndpointProvisioningStatus?: 'PROVISIONING'|'PROVISIONING_FAILED'|'PROVISIONED'|'DELETING'|'DELETION_FAILED'|'DELETED'|null,
+     *     LicenseServers?: list<LicenseServer>|null,
+     *     ServerEndpoint?: ServerEndpoint|null,
+     *     ServerType?: 'RDS_SAL'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

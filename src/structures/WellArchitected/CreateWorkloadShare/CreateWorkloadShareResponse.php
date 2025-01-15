@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WellArchitected\CreateWorkloadShare;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WorkloadId
- * @property string $ShareId
+ * @property string|null $WorkloadId
+ * @property string|null $ShareId
  */
 class CreateWorkloadShareResponse extends Response
 {

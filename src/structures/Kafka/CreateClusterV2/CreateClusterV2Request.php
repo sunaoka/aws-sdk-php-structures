@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterName
- * @property array<string, string> $Tags
- * @property Shapes\ProvisionedRequest $Provisioned
- * @property Shapes\ServerlessRequest $Serverless
+ * @property array<string, string>|null $Tags
+ * @property Shapes\ProvisionedRequest|null $Provisioned
+ * @property Shapes\ServerlessRequest|null $Serverless
  */
 class CreateClusterV2Request extends Request
 {
     /**
      * @param array{
      *     ClusterName: string,
-     *     Tags?: array<string, string>,
-     *     Provisioned?: Shapes\ProvisionedRequest,
-     *     Serverless?: Shapes\ServerlessRequest
+     *     Tags?: array<string, string>|null,
+     *     Provisioned?: Shapes\ProvisionedRequest|null,
+     *     Serverless?: Shapes\ServerlessRequest|null
      * } $args
      */
     public function __construct(array $args)

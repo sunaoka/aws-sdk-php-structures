@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ServiceQuotas\ListRequestedServiceQuotaChangeHi
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ServiceCode
- * @property 'PENDING'|'CASE_OPENED'|'APPROVED'|'DENIED'|'CASE_CLOSED'|'NOT_APPROVED'|'INVALID_REQUEST' $Status
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property 'ACCOUNT'|'RESOURCE'|'ALL' $QuotaRequestedAtLevel
+ * @property string|null $ServiceCode
+ * @property 'PENDING'|'CASE_OPENED'|'APPROVED'|'DENIED'|'CASE_CLOSED'|'NOT_APPROVED'|'INVALID_REQUEST'|null $Status
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property 'ACCOUNT'|'RESOURCE'|'ALL'|null $QuotaRequestedAtLevel
  */
 class ListRequestedServiceQuotaChangeHistoryRequest extends Request
 {
     /**
      * @param array{
-     *     ServiceCode?: string,
-     *     Status?: 'PENDING'|'CASE_OPENED'|'APPROVED'|'DENIED'|'CASE_CLOSED'|'NOT_APPROVED'|'INVALID_REQUEST',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     QuotaRequestedAtLevel?: 'ACCOUNT'|'RESOURCE'|'ALL'
+     *     ServiceCode?: string|null,
+     *     Status?: 'PENDING'|'CASE_OPENED'|'APPROVED'|'DENIED'|'CASE_CLOSED'|'NOT_APPROVED'|'INVALID_REQUEST'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     QuotaRequestedAtLevel?: 'ACCOUNT'|'RESOURCE'|'ALL'|null
      * } $args
      */
     public function __construct(array $args = [])

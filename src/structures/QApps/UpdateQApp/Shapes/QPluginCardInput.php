@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input' $type
  * @property string $prompt
  * @property string $pluginId
- * @property string $actionIdentifier
+ * @property string|null $actionIdentifier
  */
 class QPluginCardInput extends Shape
 {
@@ -21,7 +21,7 @@ class QPluginCardInput extends Shape
      *     type: 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input',
      *     prompt: string,
      *     pluginId: string,
-     *     actionIdentifier?: string
+     *     actionIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

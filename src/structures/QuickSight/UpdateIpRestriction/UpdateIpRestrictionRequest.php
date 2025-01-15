@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property array<string, string> $IpRestrictionRuleMap
- * @property array<string, string> $VpcIdRestrictionRuleMap
- * @property array<string, string> $VpcEndpointIdRestrictionRuleMap
- * @property bool $Enabled
+ * @property array<string, string>|null $IpRestrictionRuleMap
+ * @property array<string, string>|null $VpcIdRestrictionRuleMap
+ * @property array<string, string>|null $VpcEndpointIdRestrictionRuleMap
+ * @property bool|null $Enabled
  */
 class UpdateIpRestrictionRequest extends Request
 {
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     IpRestrictionRuleMap?: array<string, string>,
-     *     VpcIdRestrictionRuleMap?: array<string, string>,
-     *     VpcEndpointIdRestrictionRuleMap?: array<string, string>,
-     *     Enabled?: bool
+     *     IpRestrictionRuleMap?: array<string, string>|null,
+     *     VpcIdRestrictionRuleMap?: array<string, string>|null,
+     *     VpcEndpointIdRestrictionRuleMap?: array<string, string>|null,
+     *     Enabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

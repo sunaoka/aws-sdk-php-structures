@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EKS\CreateAddon\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $productId
- * @property string $productUrl
+ * @property string|null $productId
+ * @property string|null $productUrl
  */
 class MarketplaceInformation extends Shape
 {
     /**
      * @param array{
-     *     productId?: string,
-     *     productUrl?: string
+     *     productId?: string|null,
+     *     productUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

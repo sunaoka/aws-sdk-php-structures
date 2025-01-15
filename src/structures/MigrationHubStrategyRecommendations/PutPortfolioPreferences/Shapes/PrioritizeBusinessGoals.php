@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\PutPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BusinessGoals $businessGoals
+ * @property BusinessGoals|null $businessGoals
  */
 class PrioritizeBusinessGoals extends Shape
 {
     /**
-     * @param array{businessGoals?: BusinessGoals} $args
+     * @param array{businessGoals?: BusinessGoals|null} $args
      */
     public function __construct(array $args = [])
     {

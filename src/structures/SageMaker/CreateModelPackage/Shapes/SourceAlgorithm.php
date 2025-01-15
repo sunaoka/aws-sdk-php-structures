@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateModelPackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelDataUrl
- * @property ModelDataSource $ModelDataSource
- * @property string $ModelDataETag
+ * @property string|null $ModelDataUrl
+ * @property ModelDataSource|null $ModelDataSource
+ * @property string|null $ModelDataETag
  * @property string $AlgorithmName
  */
 class SourceAlgorithm extends Shape
 {
     /**
      * @param array{
-     *     ModelDataUrl?: string,
-     *     ModelDataSource?: ModelDataSource,
-     *     ModelDataETag?: string,
+     *     ModelDataUrl?: string|null,
+     *     ModelDataSource?: ModelDataSource|null,
+     *     ModelDataETag?: string|null,
      *     AlgorithmName: string
      * } $args
      */

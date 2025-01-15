@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeManagedJobTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $templateName
- * @property string $templateArn
- * @property string $description
- * @property string $templateVersion
- * @property list<string> $environments
- * @property list<Shapes\DocumentParameter> $documentParameters
- * @property string $document
+ * @property string|null $templateName
+ * @property string|null $templateArn
+ * @property string|null $description
+ * @property string|null $templateVersion
+ * @property list<string>|null $environments
+ * @property list<Shapes\DocumentParameter>|null $documentParameters
+ * @property string|null $document
  */
 class DescribeManagedJobTemplateResponse extends Response
 {

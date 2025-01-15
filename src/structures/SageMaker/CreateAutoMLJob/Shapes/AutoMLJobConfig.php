@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateAutoMLJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AutoMLJobCompletionCriteria $CompletionCriteria
- * @property AutoMLSecurityConfig $SecurityConfig
- * @property AutoMLCandidateGenerationConfig $CandidateGenerationConfig
- * @property AutoMLDataSplitConfig $DataSplitConfig
- * @property 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING' $Mode
+ * @property AutoMLJobCompletionCriteria|null $CompletionCriteria
+ * @property AutoMLSecurityConfig|null $SecurityConfig
+ * @property AutoMLCandidateGenerationConfig|null $CandidateGenerationConfig
+ * @property AutoMLDataSplitConfig|null $DataSplitConfig
+ * @property 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING'|null $Mode
  */
 class AutoMLJobConfig extends Shape
 {
     /**
      * @param array{
-     *     CompletionCriteria?: AutoMLJobCompletionCriteria,
-     *     SecurityConfig?: AutoMLSecurityConfig,
-     *     CandidateGenerationConfig?: AutoMLCandidateGenerationConfig,
-     *     DataSplitConfig?: AutoMLDataSplitConfig,
-     *     Mode?: 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING'
+     *     CompletionCriteria?: AutoMLJobCompletionCriteria|null,
+     *     SecurityConfig?: AutoMLSecurityConfig|null,
+     *     CandidateGenerationConfig?: AutoMLCandidateGenerationConfig|null,
+     *     DataSplitConfig?: AutoMLDataSplitConfig|null,
+     *     Mode?: 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateSegment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SegmentDimensions $Dimensions
- * @property string $Name
- * @property SegmentGroupList $SegmentGroups
- * @property array<string, string> $tags
+ * @property SegmentDimensions|null $Dimensions
+ * @property string|null $Name
+ * @property SegmentGroupList|null $SegmentGroups
+ * @property array<string, string>|null $tags
  */
 class WriteSegmentRequest extends Shape
 {
     /**
      * @param array{
-     *     Dimensions?: SegmentDimensions,
-     *     Name?: string,
-     *     SegmentGroups?: SegmentGroupList,
-     *     tags?: array<string, string>
+     *     Dimensions?: SegmentDimensions|null,
+     *     Name?: string|null,
+     *     SegmentGroups?: SegmentGroupList|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

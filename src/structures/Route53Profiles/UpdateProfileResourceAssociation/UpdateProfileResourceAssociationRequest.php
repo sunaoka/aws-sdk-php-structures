@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Route53Profiles\UpdateProfileResourceAssociatio
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  * @property string $ProfileResourceAssociationId
- * @property string $ResourceProperties
+ * @property string|null $ResourceProperties
  */
 class UpdateProfileResourceAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
+     *     Name?: string|null,
      *     ProfileResourceAssociationId: string,
-     *     ResourceProperties?: string
+     *     ResourceProperties?: string|null
      * } $args
      */
     public function __construct(array $args)

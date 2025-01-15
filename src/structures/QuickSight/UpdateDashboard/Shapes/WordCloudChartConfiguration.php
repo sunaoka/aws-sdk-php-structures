@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property WordCloudFieldWells $FieldWells
- * @property WordCloudSortConfiguration $SortConfiguration
- * @property ChartAxisLabelOptions $CategoryLabelOptions
- * @property WordCloudOptions $WordCloudOptions
- * @property VisualInteractionOptions $Interactions
+ * @property WordCloudFieldWells|null $FieldWells
+ * @property WordCloudSortConfiguration|null $SortConfiguration
+ * @property ChartAxisLabelOptions|null $CategoryLabelOptions
+ * @property WordCloudOptions|null $WordCloudOptions
+ * @property VisualInteractionOptions|null $Interactions
  */
 class WordCloudChartConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: WordCloudFieldWells,
-     *     SortConfiguration?: WordCloudSortConfiguration,
-     *     CategoryLabelOptions?: ChartAxisLabelOptions,
-     *     WordCloudOptions?: WordCloudOptions,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: WordCloudFieldWells|null,
+     *     SortConfiguration?: WordCloudSortConfiguration|null,
+     *     CategoryLabelOptions?: ChartAxisLabelOptions|null,
+     *     WordCloudOptions?: WordCloudOptions|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

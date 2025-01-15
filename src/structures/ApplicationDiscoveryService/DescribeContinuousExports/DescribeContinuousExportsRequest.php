@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeContinuousE
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $exportIds
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property list<string>|null $exportIds
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  */
 class DescribeContinuousExportsRequest extends Request
 {
     /**
      * @param array{
-     *     exportIds?: list<string>,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string
+     *     exportIds?: list<string>|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

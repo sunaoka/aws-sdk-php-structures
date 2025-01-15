@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $dbClusterOrInstanceArn
  * @property string $awsSecretStoreArn
  * @property string $sqlStatements
- * @property string $database
- * @property string $schema
+ * @property string|null $database
+ * @property string|null $schema
  */
 class ExecuteSqlRequest extends Request
 {
@@ -18,8 +18,8 @@ class ExecuteSqlRequest extends Request
      *     dbClusterOrInstanceArn: string,
      *     awsSecretStoreArn: string,
      *     sqlStatements: string,
-     *     database?: string,
-     *     schema?: string
+     *     database?: string|null,
+     *     schema?: string|null
      * } $args
      */
     public function __construct(array $args)

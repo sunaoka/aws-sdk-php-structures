@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\EBS\PutSnapshotBlock;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Checksum
- * @property 'SHA256' $ChecksumAlgorithm
+ * @property string|null $Checksum
+ * @property 'SHA256'|null $ChecksumAlgorithm
  */
 class PutSnapshotBlockResponse extends Response
 {

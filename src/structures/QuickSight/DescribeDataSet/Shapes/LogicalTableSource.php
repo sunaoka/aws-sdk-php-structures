@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property JoinInstruction $JoinInstruction
- * @property string $PhysicalTableId
- * @property string $DataSetArn
+ * @property JoinInstruction|null $JoinInstruction
+ * @property string|null $PhysicalTableId
+ * @property string|null $DataSetArn
  */
 class LogicalTableSource extends Shape
 {
     /**
      * @param array{
-     *     JoinInstruction?: JoinInstruction,
-     *     PhysicalTableId?: string,
-     *     DataSetArn?: string
+     *     JoinInstruction?: JoinInstruction|null,
+     *     PhysicalTableId?: string|null,
+     *     DataSetArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

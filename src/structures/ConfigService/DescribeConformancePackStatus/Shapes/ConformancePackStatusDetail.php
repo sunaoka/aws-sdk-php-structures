@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConformancePackArn
  * @property 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED' $ConformancePackState
  * @property string $StackArn
- * @property string $ConformancePackStatusReason
+ * @property string|null $ConformancePackStatusReason
  * @property \Aws\Api\DateTimeResult $LastUpdateRequestedTime
- * @property \Aws\Api\DateTimeResult $LastUpdateCompletedTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateCompletedTime
  */
 class ConformancePackStatusDetail extends Shape
 {
@@ -23,9 +23,9 @@ class ConformancePackStatusDetail extends Shape
      *     ConformancePackArn: string,
      *     ConformancePackState: 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED',
      *     StackArn: string,
-     *     ConformancePackStatusReason?: string,
+     *     ConformancePackStatusReason?: string|null,
      *     LastUpdateRequestedTime: \Aws\Api\DateTimeResult,
-     *     LastUpdateCompletedTime?: \Aws\Api\DateTimeResult
+     *     LastUpdateCompletedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

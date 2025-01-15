@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupId
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property string $Name
- * @property Shapes\CreateOntapVolumeConfiguration $OntapConfiguration
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\CreateOntapVolumeConfiguration|null $OntapConfiguration
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateVolumeFromBackupRequest extends Request
 {
     /**
      * @param array{
      *     BackupId: string,
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     Name: string,
-     *     OntapConfiguration?: Shapes\CreateOntapVolumeConfiguration,
-     *     Tags?: list<Shapes\Tag>
+     *     OntapConfiguration?: Shapes\CreateOntapVolumeConfiguration|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

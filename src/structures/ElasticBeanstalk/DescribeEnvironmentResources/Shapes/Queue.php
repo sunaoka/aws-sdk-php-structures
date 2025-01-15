@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentResources\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $URL
+ * @property string|null $Name
+ * @property string|null $URL
  */
 class Queue extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     URL?: string
+     *     Name?: string|null,
+     *     URL?: string|null
      * } $args
      */
     public function __construct(array $args = [])

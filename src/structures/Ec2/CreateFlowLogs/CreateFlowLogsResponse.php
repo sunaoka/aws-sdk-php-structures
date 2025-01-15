@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateFlowLogs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ClientToken
- * @property list<string> $FlowLogIds
- * @property list<Shapes\UnsuccessfulItem> $Unsuccessful
+ * @property string|null $ClientToken
+ * @property list<string>|null $FlowLogIds
+ * @property list<Shapes\UnsuccessfulItem>|null $Unsuccessful
  */
 class CreateFlowLogsResponse extends Response
 {

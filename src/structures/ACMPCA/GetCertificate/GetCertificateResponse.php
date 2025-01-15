@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ACMPCA\GetCertificate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Certificate
- * @property string $CertificateChain
+ * @property string|null $Certificate
+ * @property string|null $CertificateChain
  */
 class GetCertificateResponse extends Response
 {

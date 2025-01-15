@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<KPIConditionalFormattingOption> $ConditionalFormattingOptions
+ * @property list<KPIConditionalFormattingOption>|null $ConditionalFormattingOptions
  */
 class KPIConditionalFormatting extends Shape
 {
     /**
-     * @param array{ConditionalFormattingOptions?: list<KPIConditionalFormattingOption>} $args
+     * @param array{ConditionalFormattingOptions?: list<KPIConditionalFormattingOption>|null} $args
      */
     public function __construct(array $args = [])
     {

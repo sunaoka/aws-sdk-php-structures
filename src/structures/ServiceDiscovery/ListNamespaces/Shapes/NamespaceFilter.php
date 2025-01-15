@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'TYPE'|'NAME'|'HTTP_NAME' $Name
  * @property list<string> $Values
- * @property 'EQ'|'IN'|'BETWEEN'|'BEGINS_WITH' $Condition
+ * @property 'EQ'|'IN'|'BETWEEN'|'BEGINS_WITH'|null $Condition
  */
 class NamespaceFilter extends Shape
 {
@@ -15,7 +15,7 @@ class NamespaceFilter extends Shape
      * @param array{
      *     Name: 'TYPE'|'NAME'|'HTTP_NAME',
      *     Values: list<string>,
-     *     Condition?: 'EQ'|'IN'|'BETWEEN'|'BEGINS_WITH'
+     *     Condition?: 'EQ'|'IN'|'BETWEEN'|'BEGINS_WITH'|null
      * } $args
      */
     public function __construct(array $args)

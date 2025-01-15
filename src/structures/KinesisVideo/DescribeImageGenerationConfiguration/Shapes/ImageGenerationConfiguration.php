@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ImageGenerationDestinationConfig $DestinationConfig
  * @property int $SamplingInterval
  * @property 'JPEG'|'PNG' $Format
- * @property array<'JPEGQuality', string> $FormatConfig
- * @property int<1, 3840> $WidthPixels
- * @property int<1, 2160> $HeightPixels
+ * @property array<'JPEGQuality', string>|null $FormatConfig
+ * @property int<1, 3840>|null $WidthPixels
+ * @property int<1, 2160>|null $HeightPixels
  */
 class ImageGenerationConfiguration extends Shape
 {
@@ -23,9 +23,9 @@ class ImageGenerationConfiguration extends Shape
      *     DestinationConfig: ImageGenerationDestinationConfig,
      *     SamplingInterval: int,
      *     Format: 'JPEG'|'PNG',
-     *     FormatConfig?: array<'JPEGQuality', string>,
-     *     WidthPixels?: int<1, 3840>,
-     *     HeightPixels?: int<1, 2160>
+     *     FormatConfig?: array<'JPEGQuality', string>|null,
+     *     WidthPixels?: int<1, 3840>|null,
+     *     HeightPixels?: int<1, 2160>|null
      * } $args
      */
     public function __construct(array $args)

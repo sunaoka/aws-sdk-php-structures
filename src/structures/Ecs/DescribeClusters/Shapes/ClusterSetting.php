@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'containerInsights' $name
- * @property string $value
+ * @property 'containerInsights'|null $name
+ * @property string|null $value
  */
 class ClusterSetting extends Shape
 {
     /**
      * @param array{
-     *     name?: 'containerInsights',
-     *     value?: string
+     *     name?: 'containerInsights'|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

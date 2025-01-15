@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property string $classificationResultStatus
- * @property bool $sensitive
+ * @property bool|null $sensitive
  */
 class ResourceProfileArtifact extends Shape
 {
@@ -15,7 +15,7 @@ class ResourceProfileArtifact extends Shape
      * @param array{
      *     arn: string,
      *     classificationResultStatus: string,
-     *     sensitive?: bool
+     *     sensitive?: bool|null
      * } $args
      */
     public function __construct(array $args)

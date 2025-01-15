@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $roleName
  * @property 'VMDK'|'RAW'|'VHD' $diskImageFormat
  * @property string $s3Bucket
- * @property string $s3Prefix
+ * @property string|null $s3Prefix
  */
 class S3ExportConfiguration extends Shape
 {
@@ -17,7 +17,7 @@ class S3ExportConfiguration extends Shape
      *     roleName: string,
      *     diskImageFormat: 'VMDK'|'RAW'|'VHD',
      *     s3Bucket: string,
-     *     s3Prefix?: string
+     *     s3Prefix?: string|null
      * } $args
      */
     public function __construct(array $args)

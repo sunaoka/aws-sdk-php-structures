@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\ListDatasets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $expression
+ * @property string|null $expression
  */
 class Schedule extends Shape
 {
     /**
-     * @param array{expression?: string} $args
+     * @param array{expression?: string|null} $args
      */
     public function __construct(array $args = [])
     {

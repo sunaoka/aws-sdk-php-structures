@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $description
  * @property 'ACTIVE'|'PARTIALLY_ACTIVE'|'INACTIVE'|'DELETING' $status
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property 'LONG'|'SHORT'|'NONE' $aggregationDuration
+ * @property 'LONG'|'SHORT'|'NONE'|null $aggregationDuration
  */
 class GetNotificationConfigurationResponse extends Response
 {

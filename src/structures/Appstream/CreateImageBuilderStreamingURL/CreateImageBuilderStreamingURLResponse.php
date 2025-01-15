@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Appstream\CreateImageBuilderStreamingURL;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $StreamingURL
- * @property \Aws\Api\DateTimeResult $Expires
+ * @property string|null $StreamingURL
+ * @property \Aws\Api\DateTimeResult|null $Expires
  */
 class CreateImageBuilderStreamingURLResponse extends Response
 {

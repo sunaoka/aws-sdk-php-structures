@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\Glue\GetMLTransforms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransformId
- * @property string $Name
- * @property string $Description
- * @property 'NOT_READY'|'READY'|'DELETING' $Status
- * @property \Aws\Api\DateTimeResult $CreatedOn
- * @property \Aws\Api\DateTimeResult $LastModifiedOn
- * @property list<GlueTable> $InputRecordTables
- * @property TransformParameters $Parameters
- * @property EvaluationMetrics $EvaluationMetrics
- * @property int $LabelCount
- * @property list<SchemaColumn> $Schema
- * @property string $Role
- * @property string $GlueVersion
- * @property double $MaxCapacity
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X' $WorkerType
- * @property int $NumberOfWorkers
- * @property int<1, max> $Timeout
- * @property int $MaxRetries
- * @property TransformEncryption $TransformEncryption
+ * @property string|null $TransformId
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'NOT_READY'|'READY'|'DELETING'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedOn
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedOn
+ * @property list<GlueTable>|null $InputRecordTables
+ * @property TransformParameters|null $Parameters
+ * @property EvaluationMetrics|null $EvaluationMetrics
+ * @property int|null $LabelCount
+ * @property list<SchemaColumn>|null $Schema
+ * @property string|null $Role
+ * @property string|null $GlueVersion
+ * @property double|null $MaxCapacity
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property int|null $NumberOfWorkers
+ * @property int<1, max>|null $Timeout
+ * @property int|null $MaxRetries
+ * @property TransformEncryption|null $TransformEncryption
  */
 class MLTransform extends Shape
 {
     /**
      * @param array{
-     *     TransformId?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Status?: 'NOT_READY'|'READY'|'DELETING',
-     *     CreatedOn?: \Aws\Api\DateTimeResult,
-     *     LastModifiedOn?: \Aws\Api\DateTimeResult,
-     *     InputRecordTables?: list<GlueTable>,
-     *     Parameters?: TransformParameters,
-     *     EvaluationMetrics?: EvaluationMetrics,
-     *     LabelCount?: int,
-     *     Schema?: list<SchemaColumn>,
-     *     Role?: string,
-     *     GlueVersion?: string,
-     *     MaxCapacity?: double,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X',
-     *     NumberOfWorkers?: int,
-     *     Timeout?: int<1, max>,
-     *     MaxRetries?: int,
-     *     TransformEncryption?: TransformEncryption
+     *     TransformId?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Status?: 'NOT_READY'|'READY'|'DELETING'|null,
+     *     CreatedOn?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedOn?: \Aws\Api\DateTimeResult|null,
+     *     InputRecordTables?: list<GlueTable>|null,
+     *     Parameters?: TransformParameters|null,
+     *     EvaluationMetrics?: EvaluationMetrics|null,
+     *     LabelCount?: int|null,
+     *     Schema?: list<SchemaColumn>|null,
+     *     Role?: string|null,
+     *     GlueVersion?: string|null,
+     *     MaxCapacity?: double|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     NumberOfWorkers?: int|null,
+     *     Timeout?: int<1, max>|null,
+     *     MaxRetries?: int|null,
+     *     TransformEncryption?: TransformEncryption|null
      * } $args
      */
     public function __construct(array $args = [])

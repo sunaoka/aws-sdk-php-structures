@@ -7,18 +7,18 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CreatorRequestId
  * @property string $FirewallRuleGroupId
- * @property string $FirewallDomainListId
+ * @property string|null $FirewallDomainListId
  * @property int $Priority
  * @property 'ALLOW'|'BLOCK'|'ALERT' $Action
- * @property 'NODATA'|'NXDOMAIN'|'OVERRIDE' $BlockResponse
- * @property string $BlockOverrideDomain
- * @property 'CNAME' $BlockOverrideDnsType
- * @property int<0, 604800> $BlockOverrideTtl
+ * @property 'NODATA'|'NXDOMAIN'|'OVERRIDE'|null $BlockResponse
+ * @property string|null $BlockOverrideDomain
+ * @property 'CNAME'|null $BlockOverrideDnsType
+ * @property int<0, 604800>|null $BlockOverrideTtl
  * @property string $Name
- * @property 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN' $FirewallDomainRedirectionAction
- * @property string $Qtype
- * @property 'DGA'|'DNS_TUNNELING' $DnsThreatProtection
- * @property 'LOW'|'MEDIUM'|'HIGH' $ConfidenceThreshold
+ * @property 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null $FirewallDomainRedirectionAction
+ * @property string|null $Qtype
+ * @property 'DGA'|'DNS_TUNNELING'|null $DnsThreatProtection
+ * @property 'LOW'|'MEDIUM'|'HIGH'|null $ConfidenceThreshold
  */
 class CreateFirewallRuleRequest extends Request
 {
@@ -26,18 +26,18 @@ class CreateFirewallRuleRequest extends Request
      * @param array{
      *     CreatorRequestId: string,
      *     FirewallRuleGroupId: string,
-     *     FirewallDomainListId?: string,
+     *     FirewallDomainListId?: string|null,
      *     Priority: int,
      *     Action: 'ALLOW'|'BLOCK'|'ALERT',
-     *     BlockResponse?: 'NODATA'|'NXDOMAIN'|'OVERRIDE',
-     *     BlockOverrideDomain?: string,
-     *     BlockOverrideDnsType?: 'CNAME',
-     *     BlockOverrideTtl?: int<0, 604800>,
+     *     BlockResponse?: 'NODATA'|'NXDOMAIN'|'OVERRIDE'|null,
+     *     BlockOverrideDomain?: string|null,
+     *     BlockOverrideDnsType?: 'CNAME'|null,
+     *     BlockOverrideTtl?: int<0, 604800>|null,
      *     Name: string,
-     *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN',
-     *     Qtype?: string,
-     *     DnsThreatProtection?: 'DGA'|'DNS_TUNNELING',
-     *     ConfidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'
+     *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null,
+     *     Qtype?: string|null,
+     *     DnsThreatProtection?: 'DGA'|'DNS_TUNNELING'|null,
+     *     ConfidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'POINT'|'CLUSTER'|'HEATMAP' $SelectedPointStyle
- * @property ClusterMarkerConfiguration $ClusterMarkerConfiguration
- * @property GeospatialHeatmapConfiguration $HeatmapConfiguration
+ * @property 'POINT'|'CLUSTER'|'HEATMAP'|null $SelectedPointStyle
+ * @property ClusterMarkerConfiguration|null $ClusterMarkerConfiguration
+ * @property GeospatialHeatmapConfiguration|null $HeatmapConfiguration
  */
 class GeospatialPointStyleOptions extends Shape
 {
     /**
      * @param array{
-     *     SelectedPointStyle?: 'POINT'|'CLUSTER'|'HEATMAP',
-     *     ClusterMarkerConfiguration?: ClusterMarkerConfiguration,
-     *     HeatmapConfiguration?: GeospatialHeatmapConfiguration
+     *     SelectedPointStyle?: 'POINT'|'CLUSTER'|'HEATMAP'|null,
+     *     ClusterMarkerConfiguration?: ClusterMarkerConfiguration|null,
+     *     HeatmapConfiguration?: GeospatialHeatmapConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\GetBucketAcl\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DisplayName
- * @property string $ID
+ * @property string|null $DisplayName
+ * @property string|null $ID
  */
 class Owner extends Shape
 {
     /**
      * @param array{
-     *     DisplayName?: string,
-     *     ID?: string
+     *     DisplayName?: string|null,
+     *     ID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

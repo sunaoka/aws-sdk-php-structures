@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCatalyst\GetUserDetails;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
- * @property string $userName
+ * @property string|null $id
+ * @property string|null $userName
  */
 class GetUserDetailsRequest extends Request
 {
     /**
      * @param array{
-     *     id?: string,
-     *     userName?: string
+     *     id?: string|null,
+     *     userName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

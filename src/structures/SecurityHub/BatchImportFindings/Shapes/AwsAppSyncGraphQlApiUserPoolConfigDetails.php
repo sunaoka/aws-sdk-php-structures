@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppIdClientRegex
- * @property string $AwsRegion
- * @property string $DefaultAction
- * @property string $UserPoolId
+ * @property string|null $AppIdClientRegex
+ * @property string|null $AwsRegion
+ * @property string|null $DefaultAction
+ * @property string|null $UserPoolId
  */
 class AwsAppSyncGraphQlApiUserPoolConfigDetails extends Shape
 {
     /**
      * @param array{
-     *     AppIdClientRegex?: string,
-     *     AwsRegion?: string,
-     *     DefaultAction?: string,
-     *     UserPoolId?: string
+     *     AppIdClientRegex?: string|null,
+     *     AwsRegion?: string|null,
+     *     DefaultAction?: string|null,
+     *     UserPoolId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

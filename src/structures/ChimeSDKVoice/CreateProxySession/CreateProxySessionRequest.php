@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $VoiceConnectorId
  * @property list<string> $ParticipantPhoneNumbers
- * @property string $Name
- * @property int<1, max> $ExpiryMinutes
+ * @property string|null $Name
+ * @property int<1, max>|null $ExpiryMinutes
  * @property list<'Voice'|'SMS'> $Capabilities
- * @property 'PreferSticky'|'AvoidSticky' $NumberSelectionBehavior
- * @property 'Country'|'AreaCode' $GeoMatchLevel
- * @property Shapes\GeoMatchParams $GeoMatchParams
+ * @property 'PreferSticky'|'AvoidSticky'|null $NumberSelectionBehavior
+ * @property 'Country'|'AreaCode'|null $GeoMatchLevel
+ * @property Shapes\GeoMatchParams|null $GeoMatchParams
  */
 class CreateProxySessionRequest extends Request
 {
@@ -20,12 +20,12 @@ class CreateProxySessionRequest extends Request
      * @param array{
      *     VoiceConnectorId: string,
      *     ParticipantPhoneNumbers: list<string>,
-     *     Name?: string,
-     *     ExpiryMinutes?: int<1, max>,
+     *     Name?: string|null,
+     *     ExpiryMinutes?: int<1, max>|null,
      *     Capabilities: list<'Voice'|'SMS'>,
-     *     NumberSelectionBehavior?: 'PreferSticky'|'AvoidSticky',
-     *     GeoMatchLevel?: 'Country'|'AreaCode',
-     *     GeoMatchParams?: Shapes\GeoMatchParams
+     *     NumberSelectionBehavior?: 'PreferSticky'|'AvoidSticky'|null,
+     *     GeoMatchLevel?: 'Country'|'AreaCode'|null,
+     *     GeoMatchParams?: Shapes\GeoMatchParams|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AppSync\ListApiKeys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $description
- * @property int $expires
- * @property int $deletes
+ * @property string|null $id
+ * @property string|null $description
+ * @property int|null $expires
+ * @property int|null $deletes
  */
 class ApiKey extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     description?: string,
-     *     expires?: int,
-     *     deletes?: int
+     *     id?: string|null,
+     *     description?: string|null,
+     *     expires?: int|null,
+     *     deletes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

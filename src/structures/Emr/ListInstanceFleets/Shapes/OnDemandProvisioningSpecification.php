@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'lowest-price'|'prioritized' $AllocationStrategy
- * @property OnDemandCapacityReservationOptions $CapacityReservationOptions
+ * @property OnDemandCapacityReservationOptions|null $CapacityReservationOptions
  */
 class OnDemandProvisioningSpecification extends Shape
 {
     /**
      * @param array{
      *     AllocationStrategy: 'lowest-price'|'prioritized',
-     *     CapacityReservationOptions?: OnDemandCapacityReservationOptions
+     *     CapacityReservationOptions?: OnDemandCapacityReservationOptions|null
      * } $args
      */
     public function __construct(array $args)

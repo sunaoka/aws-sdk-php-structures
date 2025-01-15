@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FirewallPolicyName
  * @property string $FirewallPolicyArn
  * @property string $FirewallPolicyId
- * @property string $Description
- * @property 'ACTIVE'|'DELETING'|'ERROR' $FirewallPolicyStatus
- * @property list<Tag> $Tags
- * @property int $ConsumedStatelessRuleCapacity
- * @property int $ConsumedStatefulRuleCapacity
- * @property int $NumberOfAssociations
- * @property EncryptionConfiguration $EncryptionConfiguration
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $Description
+ * @property 'ACTIVE'|'DELETING'|'ERROR'|null $FirewallPolicyStatus
+ * @property list<Tag>|null $Tags
+ * @property int|null $ConsumedStatelessRuleCapacity
+ * @property int|null $ConsumedStatefulRuleCapacity
+ * @property int|null $NumberOfAssociations
+ * @property EncryptionConfiguration|null $EncryptionConfiguration
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class FirewallPolicyResponse extends Shape
 {
@@ -24,14 +24,14 @@ class FirewallPolicyResponse extends Shape
      *     FirewallPolicyName: string,
      *     FirewallPolicyArn: string,
      *     FirewallPolicyId: string,
-     *     Description?: string,
-     *     FirewallPolicyStatus?: 'ACTIVE'|'DELETING'|'ERROR',
-     *     Tags?: list<Tag>,
-     *     ConsumedStatelessRuleCapacity?: int,
-     *     ConsumedStatefulRuleCapacity?: int,
-     *     NumberOfAssociations?: int,
-     *     EncryptionConfiguration?: EncryptionConfiguration,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     Description?: string|null,
+     *     FirewallPolicyStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
+     *     Tags?: list<Tag>|null,
+     *     ConsumedStatelessRuleCapacity?: int|null,
+     *     ConsumedStatefulRuleCapacity?: int|null,
+     *     NumberOfAssociations?: int|null,
+     *     EncryptionConfiguration?: EncryptionConfiguration|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

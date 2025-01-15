@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\SimSpaceWeaver\StartApp;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
- * @property string $Description
+ * @property string|null $ClientToken
+ * @property string|null $Description
  * @property string $Domain
- * @property Shapes\LaunchOverrides $LaunchOverrides
+ * @property Shapes\LaunchOverrides|null $LaunchOverrides
  * @property string $Name
  * @property string $Simulation
  */
@@ -16,10 +16,10 @@ class StartAppRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
-     *     Description?: string,
+     *     ClientToken?: string|null,
+     *     Description?: string|null,
      *     Domain: string,
-     *     LaunchOverrides?: Shapes\LaunchOverrides,
+     *     LaunchOverrides?: Shapes\LaunchOverrides|null,
      *     Name: string,
      *     Simulation: string
      * } $args

@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property string $IngestionId
+ * @property string|null $IngestionId
  * @property 'INITIALIZED'|'QUEUED'|'RUNNING'|'FAILED'|'COMPLETED'|'CANCELLED' $IngestionStatus
- * @property ErrorInfo $ErrorInfo
- * @property RowInfo $RowInfo
- * @property QueueInfo $QueueInfo
+ * @property ErrorInfo|null $ErrorInfo
+ * @property RowInfo|null $RowInfo
+ * @property QueueInfo|null $QueueInfo
  * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property int $IngestionTimeInSeconds
- * @property int $IngestionSizeInBytes
- * @property 'MANUAL'|'SCHEDULED' $RequestSource
- * @property 'INITIAL_INGESTION'|'EDIT'|'INCREMENTAL_REFRESH'|'FULL_REFRESH' $RequestType
+ * @property int|null $IngestionTimeInSeconds
+ * @property int|null $IngestionSizeInBytes
+ * @property 'MANUAL'|'SCHEDULED'|null $RequestSource
+ * @property 'INITIAL_INGESTION'|'EDIT'|'INCREMENTAL_REFRESH'|'FULL_REFRESH'|null $RequestType
  */
 class Ingestion extends Shape
 {
     /**
      * @param array{
      *     Arn: string,
-     *     IngestionId?: string,
+     *     IngestionId?: string|null,
      *     IngestionStatus: 'INITIALIZED'|'QUEUED'|'RUNNING'|'FAILED'|'COMPLETED'|'CANCELLED',
-     *     ErrorInfo?: ErrorInfo,
-     *     RowInfo?: RowInfo,
-     *     QueueInfo?: QueueInfo,
+     *     ErrorInfo?: ErrorInfo|null,
+     *     RowInfo?: RowInfo|null,
+     *     QueueInfo?: QueueInfo|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
-     *     IngestionTimeInSeconds?: int,
-     *     IngestionSizeInBytes?: int,
-     *     RequestSource?: 'MANUAL'|'SCHEDULED',
-     *     RequestType?: 'INITIAL_INGESTION'|'EDIT'|'INCREMENTAL_REFRESH'|'FULL_REFRESH'
+     *     IngestionTimeInSeconds?: int|null,
+     *     IngestionSizeInBytes?: int|null,
+     *     RequestSource?: 'MANUAL'|'SCHEDULED'|null,
+     *     RequestType?: 'INITIAL_INGESTION'|'EDIT'|'INCREMENTAL_REFRESH'|'FULL_REFRESH'|null
      * } $args
      */
     public function __construct(array $args)

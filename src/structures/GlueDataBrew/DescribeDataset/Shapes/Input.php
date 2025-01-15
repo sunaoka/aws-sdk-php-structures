@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\DescribeDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Location $S3InputDefinition
- * @property DataCatalogInputDefinition $DataCatalogInputDefinition
- * @property DatabaseInputDefinition $DatabaseInputDefinition
- * @property Metadata $Metadata
+ * @property S3Location|null $S3InputDefinition
+ * @property DataCatalogInputDefinition|null $DataCatalogInputDefinition
+ * @property DatabaseInputDefinition|null $DatabaseInputDefinition
+ * @property Metadata|null $Metadata
  */
 class Input extends Shape
 {
     /**
      * @param array{
-     *     S3InputDefinition?: S3Location,
-     *     DataCatalogInputDefinition?: DataCatalogInputDefinition,
-     *     DatabaseInputDefinition?: DatabaseInputDefinition,
-     *     Metadata?: Metadata
+     *     S3InputDefinition?: S3Location|null,
+     *     DataCatalogInputDefinition?: DataCatalogInputDefinition|null,
+     *     DatabaseInputDefinition?: DatabaseInputDefinition|null,
+     *     Metadata?: Metadata|null
      * } $args
      */
     public function __construct(array $args = [])

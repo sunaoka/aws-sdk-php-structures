@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetAwsOpportunitySummary\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ExpectedCustomerSpend> $ExpectedCustomerSpend
+ * @property list<ExpectedCustomerSpend>|null $ExpectedCustomerSpend
  */
 class AwsOpportunityProject extends Shape
 {
     /**
-     * @param array{ExpectedCustomerSpend?: list<ExpectedCustomerSpend>} $args
+     * @param array{ExpectedCustomerSpend?: list<ExpectedCustomerSpend>|null} $args
      */
     public function __construct(array $args = [])
     {

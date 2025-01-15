@@ -13,9 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $isImported
  * @property bool $isFinal
  * @property bool $isInherited
- * @property DataValue $defaultValue
- * @property array<string, string> $configuration
- * @property string $displayName
+ * @property DataValue|null $defaultValue
+ * @property array<string, string>|null $configuration
+ * @property string|null $displayName
  */
 class PropertyDefinitionResponse extends Shape
 {
@@ -29,9 +29,9 @@ class PropertyDefinitionResponse extends Shape
      *     isImported: bool,
      *     isFinal: bool,
      *     isInherited: bool,
-     *     defaultValue?: DataValue,
-     *     configuration?: array<string, string>,
-     *     displayName?: string
+     *     defaultValue?: DataValue|null,
+     *     configuration?: array<string, string>|null,
+     *     displayName?: string|null
      * } $args
      */
     public function __construct(array $args)

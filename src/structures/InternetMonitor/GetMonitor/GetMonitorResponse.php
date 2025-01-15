@@ -11,13 +11,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR' $Status
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property 'OK'|'INACTIVE'|'COLLECTING_DATA'|'INSUFFICIENT_DATA'|'FAULT_SERVICE'|'FAULT_ACCESS_CLOUDWATCH' $ProcessingStatus
- * @property string $ProcessingStatusInfo
- * @property array<string, string> $Tags
- * @property int<1, 500000> $MaxCityNetworksToMonitor
- * @property Shapes\InternetMeasurementsLogDelivery $InternetMeasurementsLogDelivery
- * @property int<1, 100> $TrafficPercentageToMonitor
- * @property Shapes\HealthEventsConfig $HealthEventsConfig
+ * @property 'OK'|'INACTIVE'|'COLLECTING_DATA'|'INSUFFICIENT_DATA'|'FAULT_SERVICE'|'FAULT_ACCESS_CLOUDWATCH'|null $ProcessingStatus
+ * @property string|null $ProcessingStatusInfo
+ * @property array<string, string>|null $Tags
+ * @property int<1, 500000>|null $MaxCityNetworksToMonitor
+ * @property Shapes\InternetMeasurementsLogDelivery|null $InternetMeasurementsLogDelivery
+ * @property int<1, 100>|null $TrafficPercentageToMonitor
+ * @property Shapes\HealthEventsConfig|null $HealthEventsConfig
  */
 class GetMonitorResponse extends Response
 {

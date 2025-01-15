@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\RetrieveEnvironmentInfo;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $EnvironmentId
- * @property string $EnvironmentName
+ * @property string|null $EnvironmentId
+ * @property string|null $EnvironmentName
  * @property 'tail'|'bundle' $InfoType
  */
 class RetrieveEnvironmentInfoRequest extends Request
 {
     /**
      * @param array{
-     *     EnvironmentId?: string,
-     *     EnvironmentName?: string,
+     *     EnvironmentId?: string|null,
+     *     EnvironmentName?: string|null,
      *     InfoType: 'tail'|'bundle'
      * } $args
      */

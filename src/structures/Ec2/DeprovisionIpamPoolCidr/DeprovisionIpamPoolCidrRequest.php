@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DeprovisionIpamPoolCidr;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $IpamPoolId
- * @property string $Cidr
+ * @property string|null $Cidr
  */
 class DeprovisionIpamPoolCidrRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     IpamPoolId: string,
-     *     Cidr?: string
+     *     Cidr?: string|null
      * } $args
      */
     public function __construct(array $args)

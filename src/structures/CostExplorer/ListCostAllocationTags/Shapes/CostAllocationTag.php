@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TagKey
  * @property 'AWSGenerated'|'UserDefined' $Type
  * @property 'Active'|'Inactive' $Status
- * @property string $LastUpdatedDate
- * @property string $LastUsedDate
+ * @property string|null $LastUpdatedDate
+ * @property string|null $LastUsedDate
  */
 class CostAllocationTag extends Shape
 {
@@ -18,8 +18,8 @@ class CostAllocationTag extends Shape
      *     TagKey: string,
      *     Type: 'AWSGenerated'|'UserDefined',
      *     Status: 'Active'|'Inactive',
-     *     LastUpdatedDate?: string,
-     *     LastUsedDate?: string
+     *     LastUpdatedDate?: string|null,
+     *     LastUsedDate?: string|null
      * } $args
      */
     public function __construct(array $args)

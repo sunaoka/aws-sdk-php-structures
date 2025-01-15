@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AllowCancelResize
- * @property string $ResizeType
+ * @property bool|null $AllowCancelResize
+ * @property string|null $ResizeType
  */
 class AwsRedshiftClusterResizeInfo extends Shape
 {
     /**
      * @param array{
-     *     AllowCancelResize?: bool,
-     *     ResizeType?: string
+     *     AllowCancelResize?: bool|null,
+     *     ResizeType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

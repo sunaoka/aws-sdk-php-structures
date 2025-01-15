@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\GetReplicationSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
+ * @property string|null $arn
  * @property string $createdBy
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property bool $deletionProtected
@@ -18,7 +18,7 @@ class ReplicationSet extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
+     *     arn?: string|null,
      *     createdBy: string,
      *     createdTime: \Aws\Api\DateTimeResult,
      *     deletionProtected: bool,

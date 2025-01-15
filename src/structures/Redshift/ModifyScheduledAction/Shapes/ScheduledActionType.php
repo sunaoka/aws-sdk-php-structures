@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\ModifyScheduledAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResizeClusterMessage $ResizeCluster
- * @property PauseClusterMessage $PauseCluster
- * @property ResumeClusterMessage $ResumeCluster
+ * @property ResizeClusterMessage|null $ResizeCluster
+ * @property PauseClusterMessage|null $PauseCluster
+ * @property ResumeClusterMessage|null $ResumeCluster
  */
 class ScheduledActionType extends Shape
 {
     /**
      * @param array{
-     *     ResizeCluster?: ResizeClusterMessage,
-     *     PauseCluster?: PauseClusterMessage,
-     *     ResumeCluster?: ResumeClusterMessage
+     *     ResizeCluster?: ResizeClusterMessage|null,
+     *     PauseCluster?: PauseClusterMessage|null,
+     *     ResumeCluster?: ResumeClusterMessage|null
      * } $args
      */
     public function __construct(array $args = [])

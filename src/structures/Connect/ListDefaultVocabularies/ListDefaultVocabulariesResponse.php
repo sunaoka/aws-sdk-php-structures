@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DefaultVocabulary> $DefaultVocabularyList
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListDefaultVocabulariesResponse extends Response
 {

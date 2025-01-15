@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AES128'|'AES192'|'AES256' $Algorithm
- * @property string $PassphraseSecretArn
+ * @property 'AES128'|'AES192'|'AES256'|null $Algorithm
+ * @property string|null $PassphraseSecretArn
  */
 class SrtCallerDecryption extends Shape
 {
     /**
      * @param array{
-     *     Algorithm?: 'AES128'|'AES192'|'AES256',
-     *     PassphraseSecretArn?: string
+     *     Algorithm?: 'AES128'|'AES192'|'AES256'|null,
+     *     PassphraseSecretArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

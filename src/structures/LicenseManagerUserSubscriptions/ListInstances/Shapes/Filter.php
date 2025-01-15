@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListInstances\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Attribute
- * @property string $Operation
- * @property string $Value
+ * @property string|null $Attribute
+ * @property string|null $Operation
+ * @property string|null $Value
  */
 class Filter extends Shape
 {
     /**
      * @param array{
-     *     Attribute?: string,
-     *     Operation?: string,
-     *     Value?: string
+     *     Attribute?: string|null,
+     *     Operation?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

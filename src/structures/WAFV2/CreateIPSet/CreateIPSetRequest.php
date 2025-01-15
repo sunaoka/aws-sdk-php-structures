@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
- * @property string $Description
+ * @property string|null $Description
  * @property 'IPV4'|'IPV6' $IPAddressVersion
  * @property list<string> $Addresses
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateIPSetRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateIPSetRequest extends Request
      * @param array{
      *     Name: string,
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
-     *     Description?: string,
+     *     Description?: string|null,
      *     IPAddressVersion: 'IPV4'|'IPV6',
      *     Addresses: list<string>,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetSavingsPlansCoverage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SpendCoveredBySavingsPlans
- * @property string $OnDemandCost
- * @property string $TotalCost
- * @property string $CoveragePercentage
+ * @property string|null $SpendCoveredBySavingsPlans
+ * @property string|null $OnDemandCost
+ * @property string|null $TotalCost
+ * @property string|null $CoveragePercentage
  */
 class SavingsPlansCoverageData extends Shape
 {
     /**
      * @param array{
-     *     SpendCoveredBySavingsPlans?: string,
-     *     OnDemandCost?: string,
-     *     TotalCost?: string,
-     *     CoveragePercentage?: string
+     *     SpendCoveredBySavingsPlans?: string|null,
+     *     OnDemandCost?: string|null,
+     *     TotalCost?: string|null,
+     *     CoveragePercentage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

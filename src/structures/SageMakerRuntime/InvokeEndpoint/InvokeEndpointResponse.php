@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|resource|\Psr\Http\Message\StreamInterface $Body
- * @property string $ContentType
- * @property string $InvokedProductionVariant
- * @property string $CustomAttributes
- * @property string $NewSessionId
- * @property string $ClosedSessionId
+ * @property string|null $ContentType
+ * @property string|null $InvokedProductionVariant
+ * @property string|null $CustomAttributes
+ * @property string|null $NewSessionId
+ * @property string|null $ClosedSessionId
  */
 class InvokeEndpointResponse extends Response
 {

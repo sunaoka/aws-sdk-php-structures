@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $identityProviderConfigName
  * @property string $issuerUrl
  * @property string $clientId
- * @property string $usernameClaim
- * @property string $usernamePrefix
- * @property string $groupsClaim
- * @property string $groupsPrefix
- * @property array<string, string> $requiredClaims
+ * @property string|null $usernameClaim
+ * @property string|null $usernamePrefix
+ * @property string|null $groupsClaim
+ * @property string|null $groupsPrefix
+ * @property array<string, string>|null $requiredClaims
  */
 class OidcIdentityProviderConfigRequest extends Shape
 {
@@ -21,11 +21,11 @@ class OidcIdentityProviderConfigRequest extends Shape
      *     identityProviderConfigName: string,
      *     issuerUrl: string,
      *     clientId: string,
-     *     usernameClaim?: string,
-     *     usernamePrefix?: string,
-     *     groupsClaim?: string,
-     *     groupsPrefix?: string,
-     *     requiredClaims?: array<string, string>
+     *     usernameClaim?: string|null,
+     *     usernamePrefix?: string|null,
+     *     groupsClaim?: string|null,
+     *     groupsPrefix?: string|null,
+     *     requiredClaims?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

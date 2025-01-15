@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AnomalyDetectorArn
- * @property string $MetricSetArn
+ * @property string|null $MetricSetArn
  */
 class GetDataQualityMetricsRequest extends Request
 {
     /**
      * @param array{
      *     AnomalyDetectorArn: string,
-     *     MetricSetArn?: string
+     *     MetricSetArn?: string|null
      * } $args
      */
     public function __construct(array $args)

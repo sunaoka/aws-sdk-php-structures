@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SINGLE_REGION'|'MULTI_REGION' $replicationStrategy
- * @property list<string> $regionList
+ * @property list<string>|null $regionList
  */
 class ReplicationSpecification extends Shape
 {
     /**
      * @param array{
      *     replicationStrategy: 'SINGLE_REGION'|'MULTI_REGION',
-     *     regionList?: list<string>
+     *     regionList?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Colors
- * @property list<string> $MinMaxGradient
- * @property string $EmptyFillColor
+ * @property list<string>|null $Colors
+ * @property list<string>|null $MinMaxGradient
+ * @property string|null $EmptyFillColor
  */
 class DataColorPalette extends Shape
 {
     /**
      * @param array{
-     *     Colors?: list<string>,
-     *     MinMaxGradient?: list<string>,
-     *     EmptyFillColor?: string
+     *     Colors?: list<string>|null,
+     *     MinMaxGradient?: list<string>|null,
+     *     EmptyFillColor?: string|null
      * } $args
      */
     public function __construct(array $args = [])

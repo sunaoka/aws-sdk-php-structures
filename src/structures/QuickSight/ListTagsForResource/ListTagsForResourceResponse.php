@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListTagsForResource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Tag> $Tags
- * @property string $RequestId
- * @property int $Status
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class ListTagsForResourceResponse extends Response
 {

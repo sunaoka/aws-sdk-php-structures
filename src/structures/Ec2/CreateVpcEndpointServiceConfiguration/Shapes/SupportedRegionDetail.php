@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVpcEndpointServiceConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Region
- * @property string $ServiceState
+ * @property string|null $Region
+ * @property string|null $ServiceState
  */
 class SupportedRegionDetail extends Shape
 {
     /**
      * @param array{
-     *     Region?: string,
-     *     ServiceState?: string
+     *     Region?: string|null,
+     *     ServiceState?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UserPoolId
- * @property string $ClientId
- * @property Shapes\CompromisedCredentialsRiskConfigurationType $CompromisedCredentialsRiskConfiguration
- * @property Shapes\AccountTakeoverRiskConfigurationType $AccountTakeoverRiskConfiguration
- * @property Shapes\RiskExceptionConfigurationType $RiskExceptionConfiguration
+ * @property string|null $ClientId
+ * @property Shapes\CompromisedCredentialsRiskConfigurationType|null $CompromisedCredentialsRiskConfiguration
+ * @property Shapes\AccountTakeoverRiskConfigurationType|null $AccountTakeoverRiskConfiguration
+ * @property Shapes\RiskExceptionConfigurationType|null $RiskExceptionConfiguration
  */
 class SetRiskConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     UserPoolId: string,
-     *     ClientId?: string,
-     *     CompromisedCredentialsRiskConfiguration?: Shapes\CompromisedCredentialsRiskConfigurationType,
-     *     AccountTakeoverRiskConfiguration?: Shapes\AccountTakeoverRiskConfigurationType,
-     *     RiskExceptionConfiguration?: Shapes\RiskExceptionConfigurationType
+     *     ClientId?: string|null,
+     *     CompromisedCredentialsRiskConfiguration?: Shapes\CompromisedCredentialsRiskConfigurationType|null,
+     *     AccountTakeoverRiskConfiguration?: Shapes\AccountTakeoverRiskConfigurationType|null,
+     *     RiskExceptionConfiguration?: Shapes\RiskExceptionConfigurationType|null
      * } $args
      */
     public function __construct(array $args)

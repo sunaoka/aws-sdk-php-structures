@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetPropertygraphSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $count
- * @property list<string> $nodeProperties
- * @property list<string> $distinctOutgoingEdgeLabels
+ * @property int|null $count
+ * @property list<string>|null $nodeProperties
+ * @property list<string>|null $distinctOutgoingEdgeLabels
  */
 class NodeStructure extends Shape
 {
     /**
      * @param array{
-     *     count?: int,
-     *     nodeProperties?: list<string>,
-     *     distinctOutgoingEdgeLabels?: list<string>
+     *     count?: int|null,
+     *     nodeProperties?: list<string>|null,
+     *     distinctOutgoingEdgeLabels?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

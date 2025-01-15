@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DescribeActivities;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $OrganizationId
- * @property string $ActivityTypes
- * @property string $ResourceId
- * @property string $UserId
- * @property bool $IncludeIndirectActivities
- * @property int<1, 999> $Limit
- * @property string $Marker
+ * @property string|null $AuthenticationToken
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $OrganizationId
+ * @property string|null $ActivityTypes
+ * @property string|null $ResourceId
+ * @property string|null $UserId
+ * @property bool|null $IncludeIndirectActivities
+ * @property int<1, 999>|null $Limit
+ * @property string|null $Marker
  */
 class DescribeActivitiesRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     OrganizationId?: string,
-     *     ActivityTypes?: string,
-     *     ResourceId?: string,
-     *     UserId?: string,
-     *     IncludeIndirectActivities?: bool,
-     *     Limit?: int<1, 999>,
-     *     Marker?: string
+     *     AuthenticationToken?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     OrganizationId?: string|null,
+     *     ActivityTypes?: string|null,
+     *     ResourceId?: string|null,
+     *     UserId?: string|null,
+     *     IncludeIndirectActivities?: bool|null,
+     *     Limit?: int<1, 999>|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

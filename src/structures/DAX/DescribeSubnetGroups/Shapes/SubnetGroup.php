@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DAX\DescribeSubnetGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubnetGroupName
- * @property string $Description
- * @property string $VpcId
- * @property list<Subnet> $Subnets
+ * @property string|null $SubnetGroupName
+ * @property string|null $Description
+ * @property string|null $VpcId
+ * @property list<Subnet>|null $Subnets
  */
 class SubnetGroup extends Shape
 {
     /**
      * @param array{
-     *     SubnetGroupName?: string,
-     *     Description?: string,
-     *     VpcId?: string,
-     *     Subnets?: list<Subnet>
+     *     SubnetGroupName?: string|null,
+     *     Description?: string|null,
+     *     VpcId?: string|null,
+     *     Subnets?: list<Subnet>|null
      * } $args
      */
     public function __construct(array $args = [])

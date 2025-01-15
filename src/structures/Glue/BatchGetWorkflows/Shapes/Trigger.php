@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetWorkflows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $WorkflowName
- * @property string $Id
- * @property 'SCHEDULED'|'CONDITIONAL'|'ON_DEMAND'|'EVENT' $Type
- * @property 'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVATED'|'DEACTIVATING'|'DEACTIVATED'|'DELETING'|'UPDATING' $State
- * @property string $Description
- * @property string $Schedule
- * @property list<Action> $Actions
- * @property Predicate $Predicate
- * @property EventBatchingCondition $EventBatchingCondition
+ * @property string|null $Name
+ * @property string|null $WorkflowName
+ * @property string|null $Id
+ * @property 'SCHEDULED'|'CONDITIONAL'|'ON_DEMAND'|'EVENT'|null $Type
+ * @property 'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVATED'|'DEACTIVATING'|'DEACTIVATED'|'DELETING'|'UPDATING'|null $State
+ * @property string|null $Description
+ * @property string|null $Schedule
+ * @property list<Action>|null $Actions
+ * @property Predicate|null $Predicate
+ * @property EventBatchingCondition|null $EventBatchingCondition
  */
 class Trigger extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     WorkflowName?: string,
-     *     Id?: string,
-     *     Type?: 'SCHEDULED'|'CONDITIONAL'|'ON_DEMAND'|'EVENT',
-     *     State?: 'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVATED'|'DEACTIVATING'|'DEACTIVATED'|'DELETING'|'UPDATING',
-     *     Description?: string,
-     *     Schedule?: string,
-     *     Actions?: list<Action>,
-     *     Predicate?: Predicate,
-     *     EventBatchingCondition?: EventBatchingCondition
+     *     Name?: string|null,
+     *     WorkflowName?: string|null,
+     *     Id?: string|null,
+     *     Type?: 'SCHEDULED'|'CONDITIONAL'|'ON_DEMAND'|'EVENT'|null,
+     *     State?: 'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVATED'|'DEACTIVATING'|'DEACTIVATED'|'DELETING'|'UPDATING'|null,
+     *     Description?: string|null,
+     *     Schedule?: string|null,
+     *     Actions?: list<Action>|null,
+     *     Predicate?: Predicate|null,
+     *     EventBatchingCondition?: EventBatchingCondition|null
      * } $args
      */
     public function __construct(array $args = [])

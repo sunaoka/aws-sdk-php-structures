@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\GetEndpointAccess;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\EndpointAccess $endpoint
+ * @property Shapes\EndpointAccess|null $endpoint
  */
 class GetEndpointAccessResponse extends Response
 {

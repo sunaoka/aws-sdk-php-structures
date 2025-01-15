@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GameLift\StartGameSessionPlacement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlayerId
- * @property string $PlayerSessionId
+ * @property string|null $PlayerId
+ * @property string|null $PlayerSessionId
  */
 class PlacedPlayerSession extends Shape
 {
     /**
      * @param array{
-     *     PlayerId?: string,
-     *     PlayerSessionId?: string
+     *     PlayerId?: string|null,
+     *     PlayerSessionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListPipelineExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PipelineExecutionArn
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded' $PipelineExecutionStatus
- * @property string $PipelineExecutionDescription
- * @property string $PipelineExecutionDisplayName
- * @property string $PipelineExecutionFailureReason
+ * @property string|null $PipelineExecutionArn
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|null $PipelineExecutionStatus
+ * @property string|null $PipelineExecutionDescription
+ * @property string|null $PipelineExecutionDisplayName
+ * @property string|null $PipelineExecutionFailureReason
  */
 class PipelineExecutionSummary extends Shape
 {
     /**
      * @param array{
-     *     PipelineExecutionArn?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     PipelineExecutionStatus?: 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded',
-     *     PipelineExecutionDescription?: string,
-     *     PipelineExecutionDisplayName?: string,
-     *     PipelineExecutionFailureReason?: string
+     *     PipelineExecutionArn?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     PipelineExecutionStatus?: 'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|null,
+     *     PipelineExecutionDescription?: string|null,
+     *     PipelineExecutionDisplayName?: string|null,
+     *     PipelineExecutionFailureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

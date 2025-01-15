@@ -7,17 +7,17 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $farmId
  * @property string $queueId
- * @property string $clientToken
- * @property string $template
- * @property 'JSON'|'YAML' $templateType
+ * @property string|null $clientToken
+ * @property string|null $template
+ * @property 'JSON'|'YAML'|null $templateType
  * @property int<0, 100> $priority
- * @property array<string, Shapes\JobParameter> $parameters
- * @property Shapes\Attachments $attachments
- * @property string $storageProfileId
- * @property 'READY'|'SUSPENDED' $targetTaskRunStatus
- * @property int<0, 2147483647> $maxFailedTasksCount
- * @property int<0, 2147483647> $maxRetriesPerTask
- * @property string $sourceJobId
+ * @property array<string, Shapes\JobParameter>|null $parameters
+ * @property Shapes\Attachments|null $attachments
+ * @property string|null $storageProfileId
+ * @property 'READY'|'SUSPENDED'|null $targetTaskRunStatus
+ * @property int<0, 2147483647>|null $maxFailedTasksCount
+ * @property int<0, 2147483647>|null $maxRetriesPerTask
+ * @property string|null $sourceJobId
  */
 class CreateJobRequest extends Request
 {
@@ -25,17 +25,17 @@ class CreateJobRequest extends Request
      * @param array{
      *     farmId: string,
      *     queueId: string,
-     *     clientToken?: string,
-     *     template?: string,
-     *     templateType?: 'JSON'|'YAML',
+     *     clientToken?: string|null,
+     *     template?: string|null,
+     *     templateType?: 'JSON'|'YAML'|null,
      *     priority: int<0, 100>,
-     *     parameters?: array<string, Shapes\JobParameter>,
-     *     attachments?: Shapes\Attachments,
-     *     storageProfileId?: string,
-     *     targetTaskRunStatus?: 'READY'|'SUSPENDED',
-     *     maxFailedTasksCount?: int<0, 2147483647>,
-     *     maxRetriesPerTask?: int<0, 2147483647>,
-     *     sourceJobId?: string
+     *     parameters?: array<string, Shapes\JobParameter>|null,
+     *     attachments?: Shapes\Attachments|null,
+     *     storageProfileId?: string|null,
+     *     targetTaskRunStatus?: 'READY'|'SUSPENDED'|null,
+     *     maxFailedTasksCount?: int<0, 2147483647>|null,
+     *     maxRetriesPerTask?: int<0, 2147483647>|null,
+     *     sourceJobId?: string|null
      * } $args
      */
     public function __construct(array $args)

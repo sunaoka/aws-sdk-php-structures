@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkInBytesPerSecond
- * @property string $NetworkOutBytesPerSecond
- * @property string $NetworkPacketsInPerSecond
- * @property string $NetworkPacketsOutPerSecond
+ * @property string|null $NetworkInBytesPerSecond
+ * @property string|null $NetworkOutBytesPerSecond
+ * @property string|null $NetworkPacketsInPerSecond
+ * @property string|null $NetworkPacketsOutPerSecond
  */
 class NetworkResourceUtilization extends Shape
 {
     /**
      * @param array{
-     *     NetworkInBytesPerSecond?: string,
-     *     NetworkOutBytesPerSecond?: string,
-     *     NetworkPacketsInPerSecond?: string,
-     *     NetworkPacketsOutPerSecond?: string
+     *     NetworkInBytesPerSecond?: string|null,
+     *     NetworkOutBytesPerSecond?: string|null,
+     *     NetworkPacketsInPerSecond?: string|null,
+     *     NetworkPacketsOutPerSecond?: string|null
      * } $args
      */
     public function __construct(array $args = [])

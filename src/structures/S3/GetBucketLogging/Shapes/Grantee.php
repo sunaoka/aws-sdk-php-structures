@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\S3\GetBucketLogging\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DisplayName
- * @property string $EmailAddress
- * @property string $ID
+ * @property string|null $DisplayName
+ * @property string|null $EmailAddress
+ * @property string|null $ID
  * @property 'CanonicalUser'|'AmazonCustomerByEmail'|'Group' $Type
- * @property string $URI
+ * @property string|null $URI
  */
 class Grantee extends Shape
 {
     /**
      * @param array{
-     *     DisplayName?: string,
-     *     EmailAddress?: string,
-     *     ID?: string,
+     *     DisplayName?: string|null,
+     *     EmailAddress?: string|null,
+     *     ID?: string|null,
      *     Type: 'CanonicalUser'|'AmazonCustomerByEmail'|'Group',
-     *     URI?: string
+     *     URI?: string|null
      * } $args
      */
     public function __construct(array $args)

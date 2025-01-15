@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisioningParameters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
- * @property string $ProductId
- * @property string $ProductName
- * @property string $ProvisioningArtifactId
- * @property string $ProvisioningArtifactName
- * @property string $PathId
- * @property string $PathName
+ * @property string|null $AcceptLanguage
+ * @property string|null $ProductId
+ * @property string|null $ProductName
+ * @property string|null $ProvisioningArtifactId
+ * @property string|null $ProvisioningArtifactName
+ * @property string|null $PathId
+ * @property string|null $PathName
  */
 class DescribeProvisioningParametersRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
-     *     ProductId?: string,
-     *     ProductName?: string,
-     *     ProvisioningArtifactId?: string,
-     *     ProvisioningArtifactName?: string,
-     *     PathId?: string,
-     *     PathName?: string
+     *     AcceptLanguage?: string|null,
+     *     ProductId?: string|null,
+     *     ProductName?: string|null,
+     *     ProvisioningArtifactId?: string|null,
+     *     ProvisioningArtifactName?: string|null,
+     *     PathId?: string|null,
+     *     PathName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

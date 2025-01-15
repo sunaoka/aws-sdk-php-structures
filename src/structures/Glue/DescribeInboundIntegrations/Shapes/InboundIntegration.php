@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $IntegrationArn
  * @property 'CREATING'|'ACTIVE'|'MODIFYING'|'FAILED'|'DELETING'|'SYNCING'|'NEEDS_ATTENTION' $Status
  * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<IntegrationError> $Errors
+ * @property list<IntegrationError>|null $Errors
  */
 class InboundIntegration extends Shape
 {
@@ -21,7 +21,7 @@ class InboundIntegration extends Shape
      *     IntegrationArn: string,
      *     Status: 'CREATING'|'ACTIVE'|'MODIFYING'|'FAILED'|'DELETING'|'SYNCING'|'NEEDS_ATTENTION',
      *     CreateTime: \Aws\Api\DateTimeResult,
-     *     Errors?: list<IntegrationError>
+     *     Errors?: list<IntegrationError>|null
      * } $args
      */
     public function __construct(array $args)

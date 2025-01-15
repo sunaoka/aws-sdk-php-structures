@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $serviceName
- * @property 'nano'|'micro'|'small'|'medium'|'large'|'xlarge' $power
- * @property int<1, 20> $scale
- * @property bool $isDisabled
- * @property array<string, list<string>> $publicDomainNames
- * @property Shapes\PrivateRegistryAccessRequest $privateRegistryAccess
+ * @property 'nano'|'micro'|'small'|'medium'|'large'|'xlarge'|null $power
+ * @property int<1, 20>|null $scale
+ * @property bool|null $isDisabled
+ * @property array<string, list<string>>|null $publicDomainNames
+ * @property Shapes\PrivateRegistryAccessRequest|null $privateRegistryAccess
  */
 class UpdateContainerServiceRequest extends Request
 {
     /**
      * @param array{
      *     serviceName: string,
-     *     power?: 'nano'|'micro'|'small'|'medium'|'large'|'xlarge',
-     *     scale?: int<1, 20>,
-     *     isDisabled?: bool,
-     *     publicDomainNames?: array<string, list<string>>,
-     *     privateRegistryAccess?: Shapes\PrivateRegistryAccessRequest
+     *     power?: 'nano'|'micro'|'small'|'medium'|'large'|'xlarge'|null,
+     *     scale?: int<1, 20>|null,
+     *     isDisabled?: bool|null,
+     *     publicDomainNames?: array<string, list<string>>|null,
+     *     privateRegistryAccess?: Shapes\PrivateRegistryAccessRequest|null
      * } $args
      */
     public function __construct(array $args)

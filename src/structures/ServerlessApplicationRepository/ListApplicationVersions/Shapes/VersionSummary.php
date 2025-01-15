@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ApplicationId
  * @property string $CreationTime
  * @property string $SemanticVersion
- * @property string $SourceCodeUrl
+ * @property string|null $SourceCodeUrl
  */
 class VersionSummary extends Shape
 {
@@ -17,7 +17,7 @@ class VersionSummary extends Shape
      *     ApplicationId: string,
      *     CreationTime: string,
      *     SemanticVersion: string,
-     *     SourceCodeUrl?: string
+     *     SourceCodeUrl?: string|null
      * } $args
      */
     public function __construct(array $args)

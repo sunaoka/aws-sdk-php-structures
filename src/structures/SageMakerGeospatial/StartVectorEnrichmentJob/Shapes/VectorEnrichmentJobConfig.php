@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\StartVectorEnrichmentJob\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MapMatchingConfig $MapMatchingConfig
- * @property ReverseGeocodingConfig $ReverseGeocodingConfig
+ * @property MapMatchingConfig|null $MapMatchingConfig
+ * @property ReverseGeocodingConfig|null $ReverseGeocodingConfig
  */
 class VectorEnrichmentJobConfig extends Shape
 {
     /**
      * @param array{
-     *     MapMatchingConfig?: MapMatchingConfig,
-     *     ReverseGeocodingConfig?: ReverseGeocodingConfig
+     *     MapMatchingConfig?: MapMatchingConfig|null,
+     *     ReverseGeocodingConfig?: ReverseGeocodingConfig|null
      * } $args
      */
     public function __construct(array $args = [])

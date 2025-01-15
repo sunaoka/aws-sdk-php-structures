@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetMarketplaceResource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $resourceArn
- * @property string $url
- * @property string $data
+ * @property string|null $resourceArn
+ * @property string|null $url
+ * @property string|null $data
  */
 class GetMarketplaceResourceResponse extends Response
 {

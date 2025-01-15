@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\UpdateFeature;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\VariationConfig> $addOrUpdateVariations
- * @property string $defaultVariation
- * @property string $description
- * @property array<string, string> $entityOverrides
- * @property 'ALL_RULES'|'DEFAULT_VARIATION' $evaluationStrategy
+ * @property list<Shapes\VariationConfig>|null $addOrUpdateVariations
+ * @property string|null $defaultVariation
+ * @property string|null $description
+ * @property array<string, string>|null $entityOverrides
+ * @property 'ALL_RULES'|'DEFAULT_VARIATION'|null $evaluationStrategy
  * @property string $feature
  * @property string $project
- * @property list<string> $removeVariations
+ * @property list<string>|null $removeVariations
  */
 class UpdateFeatureRequest extends Request
 {
     /**
      * @param array{
-     *     addOrUpdateVariations?: list<Shapes\VariationConfig>,
-     *     defaultVariation?: string,
-     *     description?: string,
-     *     entityOverrides?: array<string, string>,
-     *     evaluationStrategy?: 'ALL_RULES'|'DEFAULT_VARIATION',
+     *     addOrUpdateVariations?: list<Shapes\VariationConfig>|null,
+     *     defaultVariation?: string|null,
+     *     description?: string|null,
+     *     entityOverrides?: array<string, string>|null,
+     *     evaluationStrategy?: 'ALL_RULES'|'DEFAULT_VARIATION'|null,
      *     feature: string,
      *     project: string,
-     *     removeVariations?: list<string>
+     *     removeVariations?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

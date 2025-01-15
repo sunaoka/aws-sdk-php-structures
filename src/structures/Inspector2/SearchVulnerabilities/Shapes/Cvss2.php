@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\SearchVulnerabilities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $baseScore
- * @property string $scoringVector
+ * @property double|null $baseScore
+ * @property string|null $scoringVector
  */
 class Cvss2 extends Shape
 {
     /**
      * @param array{
-     *     baseScore?: double,
-     *     scoringVector?: string
+     *     baseScore?: double|null,
+     *     scoringVector?: string|null
      * } $args
      */
     public function __construct(array $args = [])

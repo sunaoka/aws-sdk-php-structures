@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindingHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UpdatedField
- * @property string $OldValue
- * @property string $NewValue
+ * @property string|null $UpdatedField
+ * @property string|null $OldValue
+ * @property string|null $NewValue
  */
 class FindingHistoryUpdate extends Shape
 {
     /**
      * @param array{
-     *     UpdatedField?: string,
-     *     OldValue?: string,
-     *     NewValue?: string
+     *     UpdatedField?: string|null,
+     *     OldValue?: string|null,
+     *     NewValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

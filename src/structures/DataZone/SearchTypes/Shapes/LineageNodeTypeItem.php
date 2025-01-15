@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DataZone\SearchTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property string|null $description
  * @property string $domainId
  * @property array<string, FormEntryOutput> $formsOutput
- * @property string $name
+ * @property string|null $name
  * @property string $revision
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class LineageNodeTypeItem extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string,
-     *     description?: string,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     description?: string|null,
      *     domainId: string,
      *     formsOutput: array<string, FormEntryOutput>,
-     *     name?: string,
+     *     name?: string|null,
      *     revision: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

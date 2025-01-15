@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $recoveryPointId
- * @property int $retentionPeriod
+ * @property int|null $retentionPeriod
  * @property string $snapshotName
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class ConvertRecoveryPointToSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     recoveryPointId: string,
-     *     retentionPeriod?: int,
+     *     retentionPeriod?: int|null,
      *     snapshotName: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppSync\EvaluateCode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $line
- * @property int $column
- * @property int $span
+ * @property int|null $line
+ * @property int|null $column
+ * @property int|null $span
  */
 class CodeErrorLocation extends Shape
 {
     /**
      * @param array{
-     *     line?: int,
-     *     column?: int,
-     *     span?: int
+     *     line?: int|null,
+     *     column?: int|null,
+     *     span?: int|null
      * } $args
      */
     public function __construct(array $args = [])

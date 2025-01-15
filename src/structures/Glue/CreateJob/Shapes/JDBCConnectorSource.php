@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConnectionName
  * @property string $ConnectorName
  * @property string $ConnectionType
- * @property JDBCConnectorOptions $AdditionalOptions
- * @property string $ConnectionTable
- * @property string $Query
- * @property list<GlueSchema> $OutputSchemas
+ * @property JDBCConnectorOptions|null $AdditionalOptions
+ * @property string|null $ConnectionTable
+ * @property string|null $Query
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class JDBCConnectorSource extends Shape
 {
@@ -22,10 +22,10 @@ class JDBCConnectorSource extends Shape
      *     ConnectionName: string,
      *     ConnectorName: string,
      *     ConnectionType: string,
-     *     AdditionalOptions?: JDBCConnectorOptions,
-     *     ConnectionTable?: string,
-     *     Query?: string,
-     *     OutputSchemas?: list<GlueSchema>
+     *     AdditionalOptions?: JDBCConnectorOptions|null,
+     *     ConnectionTable?: string|null,
+     *     Query?: string|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

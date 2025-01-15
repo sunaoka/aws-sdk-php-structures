@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $MultiRegionClusterName
- * @property string $NodeType
- * @property string $Description
- * @property string $EngineVersion
- * @property Shapes\ShardConfigurationRequest $ShardConfiguration
- * @property string $MultiRegionParameterGroupName
- * @property 'coordinated'|'uncoordinated' $UpdateStrategy
+ * @property string|null $NodeType
+ * @property string|null $Description
+ * @property string|null $EngineVersion
+ * @property Shapes\ShardConfigurationRequest|null $ShardConfiguration
+ * @property string|null $MultiRegionParameterGroupName
+ * @property 'coordinated'|'uncoordinated'|null $UpdateStrategy
  */
 class UpdateMultiRegionClusterRequest extends Request
 {
     /**
      * @param array{
      *     MultiRegionClusterName: string,
-     *     NodeType?: string,
-     *     Description?: string,
-     *     EngineVersion?: string,
-     *     ShardConfiguration?: Shapes\ShardConfigurationRequest,
-     *     MultiRegionParameterGroupName?: string,
-     *     UpdateStrategy?: 'coordinated'|'uncoordinated'
+     *     NodeType?: string|null,
+     *     Description?: string|null,
+     *     EngineVersion?: string|null,
+     *     ShardConfiguration?: Shapes\ShardConfigurationRequest|null,
+     *     MultiRegionParameterGroupName?: string|null,
+     *     UpdateStrategy?: 'coordinated'|'uncoordinated'|null
      * } $args
      */
     public function __construct(array $args)

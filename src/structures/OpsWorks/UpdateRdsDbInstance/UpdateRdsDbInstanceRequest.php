@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RdsDbInstanceArn
- * @property string $DbUser
- * @property string $DbPassword
+ * @property string|null $DbUser
+ * @property string|null $DbPassword
  */
 class UpdateRdsDbInstanceRequest extends Request
 {
     /**
      * @param array{
      *     RdsDbInstanceArn: string,
-     *     DbUser?: string,
-     *     DbPassword?: string
+     *     DbUser?: string|null,
+     *     DbPassword?: string|null
      * } $args
      */
     public function __construct(array $args)

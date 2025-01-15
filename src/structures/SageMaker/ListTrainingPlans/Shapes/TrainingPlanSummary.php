@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TrainingPlanArn
  * @property string $TrainingPlanName
  * @property 'Pending'|'Active'|'Scheduled'|'Expired'|'Failed' $Status
- * @property string $StatusMessage
- * @property int<0, 87600> $DurationHours
- * @property int<0, 59> $DurationMinutes
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $UpfrontFee
- * @property string $CurrencyCode
- * @property int<0, max> $TotalInstanceCount
- * @property int<0, max> $AvailableInstanceCount
- * @property int<0, max> $InUseInstanceCount
- * @property list<'training-job'|'hyperpod-cluster'> $TargetResources
- * @property list<ReservedCapacitySummary> $ReservedCapacitySummaries
+ * @property string|null $StatusMessage
+ * @property int<0, 87600>|null $DurationHours
+ * @property int<0, 59>|null $DurationMinutes
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $UpfrontFee
+ * @property string|null $CurrencyCode
+ * @property int<0, max>|null $TotalInstanceCount
+ * @property int<0, max>|null $AvailableInstanceCount
+ * @property int<0, max>|null $InUseInstanceCount
+ * @property list<'training-job'|'hyperpod-cluster'>|null $TargetResources
+ * @property list<ReservedCapacitySummary>|null $ReservedCapacitySummaries
  */
 class TrainingPlanSummary extends Shape
 {
@@ -28,18 +28,18 @@ class TrainingPlanSummary extends Shape
      *     TrainingPlanArn: string,
      *     TrainingPlanName: string,
      *     Status: 'Pending'|'Active'|'Scheduled'|'Expired'|'Failed',
-     *     StatusMessage?: string,
-     *     DurationHours?: int<0, 87600>,
-     *     DurationMinutes?: int<0, 59>,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     UpfrontFee?: string,
-     *     CurrencyCode?: string,
-     *     TotalInstanceCount?: int<0, max>,
-     *     AvailableInstanceCount?: int<0, max>,
-     *     InUseInstanceCount?: int<0, max>,
-     *     TargetResources?: list<'training-job'|'hyperpod-cluster'>,
-     *     ReservedCapacitySummaries?: list<ReservedCapacitySummary>
+     *     StatusMessage?: string|null,
+     *     DurationHours?: int<0, 87600>|null,
+     *     DurationMinutes?: int<0, 59>|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     UpfrontFee?: string|null,
+     *     CurrencyCode?: string|null,
+     *     TotalInstanceCount?: int<0, max>|null,
+     *     AvailableInstanceCount?: int<0, max>|null,
+     *     InUseInstanceCount?: int<0, max>|null,
+     *     TargetResources?: list<'training-job'|'hyperpod-cluster'>|null,
+     *     ReservedCapacitySummaries?: list<ReservedCapacitySummary>|null
      * } $args
      */
     public function __construct(array $args)

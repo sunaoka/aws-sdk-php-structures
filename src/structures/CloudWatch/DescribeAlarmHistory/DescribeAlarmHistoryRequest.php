@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CloudWatch\DescribeAlarmHistory;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AlarmName
- * @property list<'CompositeAlarm'|'MetricAlarm'> $AlarmTypes
- * @property 'ConfigurationUpdate'|'StateUpdate'|'Action' $HistoryItemType
- * @property \Aws\Api\DateTimeResult $StartDate
- * @property \Aws\Api\DateTimeResult $EndDate
- * @property int<1, 100> $MaxRecords
- * @property string $NextToken
- * @property 'TimestampDescending'|'TimestampAscending' $ScanBy
+ * @property string|null $AlarmName
+ * @property list<'CompositeAlarm'|'MetricAlarm'>|null $AlarmTypes
+ * @property 'ConfigurationUpdate'|'StateUpdate'|'Action'|null $HistoryItemType
+ * @property \Aws\Api\DateTimeResult|null $StartDate
+ * @property \Aws\Api\DateTimeResult|null $EndDate
+ * @property int<1, 100>|null $MaxRecords
+ * @property string|null $NextToken
+ * @property 'TimestampDescending'|'TimestampAscending'|null $ScanBy
  */
 class DescribeAlarmHistoryRequest extends Request
 {
     /**
      * @param array{
-     *     AlarmName?: string,
-     *     AlarmTypes?: list<'CompositeAlarm'|'MetricAlarm'>,
-     *     HistoryItemType?: 'ConfigurationUpdate'|'StateUpdate'|'Action',
-     *     StartDate?: \Aws\Api\DateTimeResult,
-     *     EndDate?: \Aws\Api\DateTimeResult,
-     *     MaxRecords?: int<1, 100>,
-     *     NextToken?: string,
-     *     ScanBy?: 'TimestampDescending'|'TimestampAscending'
+     *     AlarmName?: string|null,
+     *     AlarmTypes?: list<'CompositeAlarm'|'MetricAlarm'>|null,
+     *     HistoryItemType?: 'ConfigurationUpdate'|'StateUpdate'|'Action'|null,
+     *     StartDate?: \Aws\Api\DateTimeResult|null,
+     *     EndDate?: \Aws\Api\DateTimeResult|null,
+     *     MaxRecords?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     ScanBy?: 'TimestampDescending'|'TimestampAscending'|null
      * } $args
      */
     public function __construct(array $args = [])

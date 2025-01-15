@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\ConfigurationDefinitionInput> $ConfigurationDefinitions
- * @property string $Description
- * @property string $Name
- * @property array<string, string> $Tags
+ * @property string|null $Description
+ * @property string|null $Name
+ * @property array<string, string>|null $Tags
  */
 class CreateConfigurationManagerRequest extends Request
 {
     /**
      * @param array{
      *     ConfigurationDefinitions: list<Shapes\ConfigurationDefinitionInput>,
-     *     Description?: string,
-     *     Name?: string,
-     *     Tags?: array<string, string>
+     *     Description?: string|null,
+     *     Name?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

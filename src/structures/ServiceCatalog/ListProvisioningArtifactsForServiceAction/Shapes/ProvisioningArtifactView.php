@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListProvisioningArtifactsForServ
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProductViewSummary $ProductViewSummary
- * @property ProvisioningArtifact $ProvisioningArtifact
+ * @property ProductViewSummary|null $ProductViewSummary
+ * @property ProvisioningArtifact|null $ProvisioningArtifact
  */
 class ProvisioningArtifactView extends Shape
 {
     /**
      * @param array{
-     *     ProductViewSummary?: ProductViewSummary,
-     *     ProvisioningArtifact?: ProvisioningArtifact
+     *     ProductViewSummary?: ProductViewSummary|null,
+     *     ProvisioningArtifact?: ProvisioningArtifact|null
      * } $args
      */
     public function __construct(array $args = [])

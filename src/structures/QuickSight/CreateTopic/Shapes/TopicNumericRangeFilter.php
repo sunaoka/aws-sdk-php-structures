@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Inclusive
- * @property TopicRangeFilterConstant $Constant
- * @property 'NO_AGGREGATION'|'SUM'|'AVERAGE'|'COUNT'|'DISTINCT_COUNT'|'MAX'|'MEDIAN'|'MIN'|'STDEV'|'STDEVP'|'VAR'|'VARP' $Aggregation
+ * @property bool|null $Inclusive
+ * @property TopicRangeFilterConstant|null $Constant
+ * @property 'NO_AGGREGATION'|'SUM'|'AVERAGE'|'COUNT'|'DISTINCT_COUNT'|'MAX'|'MEDIAN'|'MIN'|'STDEV'|'STDEVP'|'VAR'|'VARP'|null $Aggregation
  */
 class TopicNumericRangeFilter extends Shape
 {
     /**
      * @param array{
-     *     Inclusive?: bool,
-     *     Constant?: TopicRangeFilterConstant,
-     *     Aggregation?: 'NO_AGGREGATION'|'SUM'|'AVERAGE'|'COUNT'|'DISTINCT_COUNT'|'MAX'|'MEDIAN'|'MIN'|'STDEV'|'STDEVP'|'VAR'|'VARP'
+     *     Inclusive?: bool|null,
+     *     Constant?: TopicRangeFilterConstant|null,
+     *     Aggregation?: 'NO_AGGREGATION'|'SUM'|'AVERAGE'|'COUNT'|'DISTINCT_COUNT'|'MAX'|'MEDIAN'|'MIN'|'STDEV'|'STDEVP'|'VAR'|'VARP'|null
      * } $args
      */
     public function __construct(array $args = [])

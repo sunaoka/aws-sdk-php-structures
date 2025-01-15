@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<1, 200000> $recordNumber
- * @property string $conversationId
- * @property int<0, 30> $turnNumber
+ * @property string|null $conversationId
+ * @property int<0, 30>|null $turnNumber
  * @property TurnSpecification $turnSpecification
  */
 class TestSetTurnRecord extends Shape
@@ -15,8 +15,8 @@ class TestSetTurnRecord extends Shape
     /**
      * @param array{
      *     recordNumber: int<1, 200000>,
-     *     conversationId?: string,
-     *     turnNumber?: int<0, 30>,
+     *     conversationId?: string|null,
+     *     turnNumber?: int<0, 30>|null,
      *     turnSpecification: TurnSpecification
      * } $args
      */

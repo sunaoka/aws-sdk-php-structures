@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $interconnectName
  * @property string $bandwidth
  * @property string $location
- * @property string $lagId
- * @property list<Shapes\Tag> $tags
- * @property string $providerName
+ * @property string|null $lagId
+ * @property list<Shapes\Tag>|null $tags
+ * @property string|null $providerName
  */
 class CreateInterconnectRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateInterconnectRequest extends Request
      *     interconnectName: string,
      *     bandwidth: string,
      *     location: string,
-     *     lagId?: string,
-     *     tags?: list<Shapes\Tag>,
-     *     providerName?: string
+     *     lagId?: string|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     providerName?: string|null
      * } $args
      */
     public function __construct(array $args)

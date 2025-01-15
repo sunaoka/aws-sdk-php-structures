@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListWorkloadEstimates\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $afterTimestamp
- * @property \Aws\Api\DateTimeResult $beforeTimestamp
+ * @property \Aws\Api\DateTimeResult|null $afterTimestamp
+ * @property \Aws\Api\DateTimeResult|null $beforeTimestamp
  */
 class FilterTimestamp extends Shape
 {
     /**
      * @param array{
-     *     afterTimestamp?: \Aws\Api\DateTimeResult,
-     *     beforeTimestamp?: \Aws\Api\DateTimeResult
+     *     afterTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     beforeTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PolicyArn
- * @property 'User'|'Role'|'Group'|'LocalManagedPolicy'|'AWSManagedPolicy' $EntityFilter
- * @property string $PathPrefix
- * @property 'PermissionsPolicy'|'PermissionsBoundary' $PolicyUsageFilter
- * @property string $Marker
- * @property int<1, 1000> $MaxItems
+ * @property 'User'|'Role'|'Group'|'LocalManagedPolicy'|'AWSManagedPolicy'|null $EntityFilter
+ * @property string|null $PathPrefix
+ * @property 'PermissionsPolicy'|'PermissionsBoundary'|null $PolicyUsageFilter
+ * @property string|null $Marker
+ * @property int<1, 1000>|null $MaxItems
  */
 class ListEntitiesForPolicyRequest extends Request
 {
     /**
      * @param array{
      *     PolicyArn: string,
-     *     EntityFilter?: 'User'|'Role'|'Group'|'LocalManagedPolicy'|'AWSManagedPolicy',
-     *     PathPrefix?: string,
-     *     PolicyUsageFilter?: 'PermissionsPolicy'|'PermissionsBoundary',
-     *     Marker?: string,
-     *     MaxItems?: int<1, 1000>
+     *     EntityFilter?: 'User'|'Role'|'Group'|'LocalManagedPolicy'|'AWSManagedPolicy'|null,
+     *     PathPrefix?: string|null,
+     *     PolicyUsageFilter?: 'PermissionsPolicy'|'PermissionsBoundary'|null,
+     *     Marker?: string|null,
+     *     MaxItems?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

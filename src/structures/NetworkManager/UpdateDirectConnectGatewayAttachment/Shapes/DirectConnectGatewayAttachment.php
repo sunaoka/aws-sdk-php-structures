@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\UpdateDirectConnectGatewayAttach
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attachment $Attachment
- * @property string $DirectConnectGatewayArn
+ * @property Attachment|null $Attachment
+ * @property string|null $DirectConnectGatewayArn
  */
 class DirectConnectGatewayAttachment extends Shape
 {
     /**
      * @param array{
-     *     Attachment?: Attachment,
-     *     DirectConnectGatewayArn?: string
+     *     Attachment?: Attachment|null,
+     *     DirectConnectGatewayArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

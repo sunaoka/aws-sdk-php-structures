@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $workloadEstimateId
  * @property list<Shapes\BatchCreateWorkloadEstimateUsageEntry> $usage
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class BatchCreateWorkloadEstimateUsageRequest extends Request
 {
@@ -15,7 +15,7 @@ class BatchCreateWorkloadEstimateUsageRequest extends Request
      * @param array{
      *     workloadEstimateId: string,
      *     usage: list<Shapes\BatchCreateWorkloadEstimateUsageEntry>,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

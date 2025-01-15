@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateDisk\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $threshold
- * @property string $duration
+ * @property string|null $threshold
+ * @property string|null $duration
  */
 class StopInstanceOnIdleRequest extends Shape
 {
     /**
      * @param array{
-     *     threshold?: string,
-     *     duration?: string
+     *     threshold?: string|null,
+     *     duration?: string|null
      * } $args
      */
     public function __construct(array $args = [])

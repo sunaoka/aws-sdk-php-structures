@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $AnalysisId
  * @property string $Name
- * @property Shapes\Parameters $Parameters
- * @property Shapes\AnalysisSourceEntity $SourceEntity
- * @property string $ThemeArn
- * @property Shapes\AnalysisDefinition $Definition
- * @property Shapes\ValidationStrategy $ValidationStrategy
+ * @property Shapes\Parameters|null $Parameters
+ * @property Shapes\AnalysisSourceEntity|null $SourceEntity
+ * @property string|null $ThemeArn
+ * @property Shapes\AnalysisDefinition|null $Definition
+ * @property Shapes\ValidationStrategy|null $ValidationStrategy
  */
 class UpdateAnalysisRequest extends Request
 {
@@ -21,11 +21,11 @@ class UpdateAnalysisRequest extends Request
      *     AwsAccountId: string,
      *     AnalysisId: string,
      *     Name: string,
-     *     Parameters?: Shapes\Parameters,
-     *     SourceEntity?: Shapes\AnalysisSourceEntity,
-     *     ThemeArn?: string,
-     *     Definition?: Shapes\AnalysisDefinition,
-     *     ValidationStrategy?: Shapes\ValidationStrategy
+     *     Parameters?: Shapes\Parameters|null,
+     *     SourceEntity?: Shapes\AnalysisSourceEntity|null,
+     *     ThemeArn?: string|null,
+     *     Definition?: Shapes\AnalysisDefinition|null,
+     *     ValidationStrategy?: Shapes\ValidationStrategy|null
      * } $args
      */
     public function __construct(array $args)

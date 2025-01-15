@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProgressUpdateStream
  * @property string $MigrationTaskName
  * @property Shapes\DiscoveredResource $DiscoveredResource
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class AssociateDiscoveredResourceRequest extends Request
 {
@@ -17,7 +17,7 @@ class AssociateDiscoveredResourceRequest extends Request
      *     ProgressUpdateStream: string,
      *     MigrationTaskName: string,
      *     DiscoveredResource: Shapes\DiscoveredResource,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

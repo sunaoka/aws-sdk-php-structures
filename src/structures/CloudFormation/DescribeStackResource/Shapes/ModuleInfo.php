@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DescribeStackResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TypeHierarchy
- * @property string $LogicalIdHierarchy
+ * @property string|null $TypeHierarchy
+ * @property string|null $LogicalIdHierarchy
  */
 class ModuleInfo extends Shape
 {
     /**
      * @param array{
-     *     TypeHierarchy?: string,
-     *     LogicalIdHierarchy?: string
+     *     TypeHierarchy?: string|null,
+     *     LogicalIdHierarchy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

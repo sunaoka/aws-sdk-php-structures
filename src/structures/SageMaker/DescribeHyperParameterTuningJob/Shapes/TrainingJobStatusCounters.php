@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $Completed
- * @property int<0, max> $InProgress
- * @property int<0, max> $RetryableError
- * @property int<0, max> $NonRetryableError
- * @property int<0, max> $Stopped
+ * @property int<0, max>|null $Completed
+ * @property int<0, max>|null $InProgress
+ * @property int<0, max>|null $RetryableError
+ * @property int<0, max>|null $NonRetryableError
+ * @property int<0, max>|null $Stopped
  */
 class TrainingJobStatusCounters extends Shape
 {
     /**
      * @param array{
-     *     Completed?: int<0, max>,
-     *     InProgress?: int<0, max>,
-     *     RetryableError?: int<0, max>,
-     *     NonRetryableError?: int<0, max>,
-     *     Stopped?: int<0, max>
+     *     Completed?: int<0, max>|null,
+     *     InProgress?: int<0, max>|null,
+     *     RetryableError?: int<0, max>|null,
+     *     NonRetryableError?: int<0, max>|null,
+     *     Stopped?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

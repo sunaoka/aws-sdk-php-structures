@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateAgent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED' $agentCollaboration
+ * @property 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null $agentCollaboration
  * @property string $agentName
- * @property string $agentResourceRoleArn
- * @property string $clientToken
- * @property Shapes\CustomOrchestration $customOrchestration
- * @property string $customerEncryptionKeyArn
- * @property string $description
- * @property string $foundationModel
- * @property Shapes\GuardrailConfiguration $guardrailConfiguration
- * @property int<60, 3600> $idleSessionTTLInSeconds
- * @property string $instruction
- * @property Shapes\MemoryConfiguration $memoryConfiguration
- * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION' $orchestrationType
- * @property Shapes\PromptOverrideConfiguration $promptOverrideConfiguration
- * @property array<string, string> $tags
+ * @property string|null $agentResourceRoleArn
+ * @property string|null $clientToken
+ * @property Shapes\CustomOrchestration|null $customOrchestration
+ * @property string|null $customerEncryptionKeyArn
+ * @property string|null $description
+ * @property string|null $foundationModel
+ * @property Shapes\GuardrailConfiguration|null $guardrailConfiguration
+ * @property int<60, 3600>|null $idleSessionTTLInSeconds
+ * @property string|null $instruction
+ * @property Shapes\MemoryConfiguration|null $memoryConfiguration
+ * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null $orchestrationType
+ * @property Shapes\PromptOverrideConfiguration|null $promptOverrideConfiguration
+ * @property array<string, string>|null $tags
  */
 class CreateAgentRequest extends Request
 {
     /**
      * @param array{
-     *     agentCollaboration?: 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED',
+     *     agentCollaboration?: 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null,
      *     agentName: string,
-     *     agentResourceRoleArn?: string,
-     *     clientToken?: string,
-     *     customOrchestration?: Shapes\CustomOrchestration,
-     *     customerEncryptionKeyArn?: string,
-     *     description?: string,
-     *     foundationModel?: string,
-     *     guardrailConfiguration?: Shapes\GuardrailConfiguration,
-     *     idleSessionTTLInSeconds?: int<60, 3600>,
-     *     instruction?: string,
-     *     memoryConfiguration?: Shapes\MemoryConfiguration,
-     *     orchestrationType?: 'DEFAULT'|'CUSTOM_ORCHESTRATION',
-     *     promptOverrideConfiguration?: Shapes\PromptOverrideConfiguration,
-     *     tags?: array<string, string>
+     *     agentResourceRoleArn?: string|null,
+     *     clientToken?: string|null,
+     *     customOrchestration?: Shapes\CustomOrchestration|null,
+     *     customerEncryptionKeyArn?: string|null,
+     *     description?: string|null,
+     *     foundationModel?: string|null,
+     *     guardrailConfiguration?: Shapes\GuardrailConfiguration|null,
+     *     idleSessionTTLInSeconds?: int<60, 3600>|null,
+     *     instruction?: string|null,
+     *     memoryConfiguration?: Shapes\MemoryConfiguration|null,
+     *     orchestrationType?: 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null,
+     *     promptOverrideConfiguration?: Shapes\PromptOverrideConfiguration|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

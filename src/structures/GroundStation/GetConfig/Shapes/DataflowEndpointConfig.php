@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $dataflowEndpointName
- * @property string $dataflowEndpointRegion
+ * @property string|null $dataflowEndpointRegion
  */
 class DataflowEndpointConfig extends Shape
 {
     /**
      * @param array{
      *     dataflowEndpointName: string,
-     *     dataflowEndpointRegion?: string
+     *     dataflowEndpointRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

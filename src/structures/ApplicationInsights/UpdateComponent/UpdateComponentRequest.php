@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceGroupName
  * @property string $ComponentName
- * @property string $NewComponentName
- * @property list<string> $ResourceList
+ * @property string|null $NewComponentName
+ * @property list<string>|null $ResourceList
  */
 class UpdateComponentRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateComponentRequest extends Request
      * @param array{
      *     ResourceGroupName: string,
      *     ComponentName: string,
-     *     NewComponentName?: string,
-     *     ResourceList?: list<string>
+     *     NewComponentName?: string|null,
+     *     ResourceList?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

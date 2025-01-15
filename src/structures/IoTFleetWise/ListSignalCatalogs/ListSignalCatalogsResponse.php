@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\ListSignalCatalogs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\SignalCatalogSummary> $summaries
- * @property string $nextToken
+ * @property list<Shapes\SignalCatalogSummary>|null $summaries
+ * @property string|null $nextToken
  */
 class ListSignalCatalogsResponse extends Response
 {

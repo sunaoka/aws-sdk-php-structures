@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GenerateClientCertificate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $clientCertificateId
- * @property string $description
- * @property string $pemEncodedCertificate
- * @property \Aws\Api\DateTimeResult $createdDate
- * @property \Aws\Api\DateTimeResult $expirationDate
- * @property array<string, string> $tags
+ * @property string|null $clientCertificateId
+ * @property string|null $description
+ * @property string|null $pemEncodedCertificate
+ * @property \Aws\Api\DateTimeResult|null $createdDate
+ * @property \Aws\Api\DateTimeResult|null $expirationDate
+ * @property array<string, string>|null $tags
  */
 class GenerateClientCertificateResponse extends Response
 {

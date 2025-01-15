@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListLicenseServ
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\LicenseServerEndpoint> $LicenseServerEndpoints
- * @property string $NextToken
+ * @property list<Shapes\LicenseServerEndpoint>|null $LicenseServerEndpoints
+ * @property string|null $NextToken
  */
 class ListLicenseServerEndpointsResponse extends Response
 {

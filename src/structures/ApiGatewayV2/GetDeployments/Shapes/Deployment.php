@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\GetDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AutoDeployed
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property string $DeploymentId
- * @property 'PENDING'|'FAILED'|'DEPLOYED' $DeploymentStatus
- * @property string $DeploymentStatusMessage
- * @property string $Description
+ * @property bool|null $AutoDeployed
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $DeploymentId
+ * @property 'PENDING'|'FAILED'|'DEPLOYED'|null $DeploymentStatus
+ * @property string|null $DeploymentStatusMessage
+ * @property string|null $Description
  */
 class Deployment extends Shape
 {
     /**
      * @param array{
-     *     AutoDeployed?: bool,
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     DeploymentId?: string,
-     *     DeploymentStatus?: 'PENDING'|'FAILED'|'DEPLOYED',
-     *     DeploymentStatusMessage?: string,
-     *     Description?: string
+     *     AutoDeployed?: bool|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     DeploymentId?: string|null,
+     *     DeploymentStatus?: 'PENDING'|'FAILED'|'DEPLOYED'|null,
+     *     DeploymentStatusMessage?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

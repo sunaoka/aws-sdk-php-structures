@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ExportMetadataModelAss
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ExportMetadataModelAssessmentResultEntry $PdfReport
- * @property Shapes\ExportMetadataModelAssessmentResultEntry $CsvReport
+ * @property Shapes\ExportMetadataModelAssessmentResultEntry|null $PdfReport
+ * @property Shapes\ExportMetadataModelAssessmentResultEntry|null $CsvReport
  */
 class ExportMetadataModelAssessmentResponse extends Response
 {

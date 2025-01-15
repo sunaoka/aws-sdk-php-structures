@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resourceArn
- * @property string $accountId
- * @property string $engine
- * @property string $engineVersion
- * @property int $promotionTier
- * @property string $currentDBInstanceClass
- * @property DBStorageConfiguration $currentStorageConfiguration
- * @property string $dbClusterIdentifier
- * @property 'True'|'False' $idle
- * @property 'Optimized'|'Underprovisioned'|'Overprovisioned' $instanceFinding
- * @property 'Optimized'|'Underprovisioned'|'Overprovisioned' $storageFinding
- * @property list<'CPUOverprovisioned'|'NetworkBandwidthOverprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'EBSThroughputOverprovisioned'|'CPUUnderprovisioned'|'NetworkBandwidthUnderprovisioned'|'EBSThroughputUnderprovisioned'|'NewGenerationDBInstanceClassAvailable'|'NewEngineVersionAvailable'|'DBClusterWriterUnderprovisioned'|'MemoryUnderprovisioned'|'InstanceStorageReadIOPSUnderprovisioned'|'InstanceStorageWriteIOPSUnderprovisioned'> $instanceFindingReasonCodes
- * @property 'VeryLow'|'Low'|'Medium'|'High' $currentInstancePerformanceRisk
- * @property list<'EBSVolumeAllocatedStorageUnderprovisioned'|'EBSVolumeThroughputUnderprovisioned'|'EBSVolumeIOPSOverprovisioned'|'EBSVolumeThroughputOverprovisioned'|'NewGenerationStorageTypeAvailable'> $storageFindingReasonCodes
- * @property list<RDSDBInstanceRecommendationOption> $instanceRecommendationOptions
- * @property list<RDSDBStorageRecommendationOption> $storageRecommendationOptions
- * @property list<RDSDBUtilizationMetric> $utilizationMetrics
- * @property RDSEffectiveRecommendationPreferences $effectiveRecommendationPreferences
- * @property double $lookbackPeriodInDays
- * @property \Aws\Api\DateTimeResult $lastRefreshTimestamp
- * @property list<Tag> $tags
+ * @property string|null $resourceArn
+ * @property string|null $accountId
+ * @property string|null $engine
+ * @property string|null $engineVersion
+ * @property int|null $promotionTier
+ * @property string|null $currentDBInstanceClass
+ * @property DBStorageConfiguration|null $currentStorageConfiguration
+ * @property string|null $dbClusterIdentifier
+ * @property 'True'|'False'|null $idle
+ * @property 'Optimized'|'Underprovisioned'|'Overprovisioned'|null $instanceFinding
+ * @property 'Optimized'|'Underprovisioned'|'Overprovisioned'|null $storageFinding
+ * @property list<'CPUOverprovisioned'|'NetworkBandwidthOverprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'EBSThroughputOverprovisioned'|'CPUUnderprovisioned'|'NetworkBandwidthUnderprovisioned'|'EBSThroughputUnderprovisioned'|'NewGenerationDBInstanceClassAvailable'|'NewEngineVersionAvailable'|'DBClusterWriterUnderprovisioned'|'MemoryUnderprovisioned'|'InstanceStorageReadIOPSUnderprovisioned'|'InstanceStorageWriteIOPSUnderprovisioned'>|null $instanceFindingReasonCodes
+ * @property 'VeryLow'|'Low'|'Medium'|'High'|null $currentInstancePerformanceRisk
+ * @property list<'EBSVolumeAllocatedStorageUnderprovisioned'|'EBSVolumeThroughputUnderprovisioned'|'EBSVolumeIOPSOverprovisioned'|'EBSVolumeThroughputOverprovisioned'|'NewGenerationStorageTypeAvailable'>|null $storageFindingReasonCodes
+ * @property list<RDSDBInstanceRecommendationOption>|null $instanceRecommendationOptions
+ * @property list<RDSDBStorageRecommendationOption>|null $storageRecommendationOptions
+ * @property list<RDSDBUtilizationMetric>|null $utilizationMetrics
+ * @property RDSEffectiveRecommendationPreferences|null $effectiveRecommendationPreferences
+ * @property double|null $lookbackPeriodInDays
+ * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
+ * @property list<Tag>|null $tags
  */
 class RDSDBRecommendation extends Shape
 {
     /**
      * @param array{
-     *     resourceArn?: string,
-     *     accountId?: string,
-     *     engine?: string,
-     *     engineVersion?: string,
-     *     promotionTier?: int,
-     *     currentDBInstanceClass?: string,
-     *     currentStorageConfiguration?: DBStorageConfiguration,
-     *     dbClusterIdentifier?: string,
-     *     idle?: 'True'|'False',
-     *     instanceFinding?: 'Optimized'|'Underprovisioned'|'Overprovisioned',
-     *     storageFinding?: 'Optimized'|'Underprovisioned'|'Overprovisioned',
-     *     instanceFindingReasonCodes?: list<'CPUOverprovisioned'|'NetworkBandwidthOverprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'EBSThroughputOverprovisioned'|'CPUUnderprovisioned'|'NetworkBandwidthUnderprovisioned'|'EBSThroughputUnderprovisioned'|'NewGenerationDBInstanceClassAvailable'|'NewEngineVersionAvailable'|'DBClusterWriterUnderprovisioned'|'MemoryUnderprovisioned'|'InstanceStorageReadIOPSUnderprovisioned'|'InstanceStorageWriteIOPSUnderprovisioned'>,
-     *     currentInstancePerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High',
-     *     storageFindingReasonCodes?: list<'EBSVolumeAllocatedStorageUnderprovisioned'|'EBSVolumeThroughputUnderprovisioned'|'EBSVolumeIOPSOverprovisioned'|'EBSVolumeThroughputOverprovisioned'|'NewGenerationStorageTypeAvailable'>,
-     *     instanceRecommendationOptions?: list<RDSDBInstanceRecommendationOption>,
-     *     storageRecommendationOptions?: list<RDSDBStorageRecommendationOption>,
-     *     utilizationMetrics?: list<RDSDBUtilizationMetric>,
-     *     effectiveRecommendationPreferences?: RDSEffectiveRecommendationPreferences,
-     *     lookbackPeriodInDays?: double,
-     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult,
-     *     tags?: list<Tag>
+     *     resourceArn?: string|null,
+     *     accountId?: string|null,
+     *     engine?: string|null,
+     *     engineVersion?: string|null,
+     *     promotionTier?: int|null,
+     *     currentDBInstanceClass?: string|null,
+     *     currentStorageConfiguration?: DBStorageConfiguration|null,
+     *     dbClusterIdentifier?: string|null,
+     *     idle?: 'True'|'False'|null,
+     *     instanceFinding?: 'Optimized'|'Underprovisioned'|'Overprovisioned'|null,
+     *     storageFinding?: 'Optimized'|'Underprovisioned'|'Overprovisioned'|null,
+     *     instanceFindingReasonCodes?: list<'CPUOverprovisioned'|'NetworkBandwidthOverprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'EBSThroughputOverprovisioned'|'CPUUnderprovisioned'|'NetworkBandwidthUnderprovisioned'|'EBSThroughputUnderprovisioned'|'NewGenerationDBInstanceClassAvailable'|'NewEngineVersionAvailable'|'DBClusterWriterUnderprovisioned'|'MemoryUnderprovisioned'|'InstanceStorageReadIOPSUnderprovisioned'|'InstanceStorageWriteIOPSUnderprovisioned'>|null,
+     *     currentInstancePerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High'|null,
+     *     storageFindingReasonCodes?: list<'EBSVolumeAllocatedStorageUnderprovisioned'|'EBSVolumeThroughputUnderprovisioned'|'EBSVolumeIOPSOverprovisioned'|'EBSVolumeThroughputOverprovisioned'|'NewGenerationStorageTypeAvailable'>|null,
+     *     instanceRecommendationOptions?: list<RDSDBInstanceRecommendationOption>|null,
+     *     storageRecommendationOptions?: list<RDSDBStorageRecommendationOption>|null,
+     *     utilizationMetrics?: list<RDSDBUtilizationMetric>|null,
+     *     effectiveRecommendationPreferences?: RDSEffectiveRecommendationPreferences|null,
+     *     lookbackPeriodInDays?: double|null,
+     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

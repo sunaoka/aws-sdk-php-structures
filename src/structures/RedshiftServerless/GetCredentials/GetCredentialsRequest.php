@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\GetCredentials;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $customDomainName
- * @property string $dbName
- * @property int $durationSeconds
- * @property string $workgroupName
+ * @property string|null $customDomainName
+ * @property string|null $dbName
+ * @property int|null $durationSeconds
+ * @property string|null $workgroupName
  */
 class GetCredentialsRequest extends Request
 {
     /**
      * @param array{
-     *     customDomainName?: string,
-     *     dbName?: string,
-     *     durationSeconds?: int,
-     *     workgroupName?: string
+     *     customDomainName?: string|null,
+     *     dbName?: string|null,
+     *     durationSeconds?: int|null,
+     *     workgroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

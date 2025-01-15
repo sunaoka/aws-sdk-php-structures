@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\BatchCreateTopicReviewedAnswer\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VisualId
- * @property 'PRIMARY'|'COMPLIMENTARY'|'MULTI_INTENT'|'FALLBACK'|'FRAGMENT' $Role
- * @property TopicIR $Ir
- * @property list<TopicVisual> $SupportingVisuals
+ * @property string|null $VisualId
+ * @property 'PRIMARY'|'COMPLIMENTARY'|'MULTI_INTENT'|'FALLBACK'|'FRAGMENT'|null $Role
+ * @property TopicIR|null $Ir
+ * @property list<TopicVisual>|null $SupportingVisuals
  */
 class TopicVisual extends Shape
 {
     /**
      * @param array{
-     *     VisualId?: string,
-     *     Role?: 'PRIMARY'|'COMPLIMENTARY'|'MULTI_INTENT'|'FALLBACK'|'FRAGMENT',
-     *     Ir?: TopicIR,
-     *     SupportingVisuals?: list<TopicVisual>
+     *     VisualId?: string|null,
+     *     Role?: 'PRIMARY'|'COMPLIMENTARY'|'MULTI_INTENT'|'FALLBACK'|'FRAGMENT'|null,
+     *     Ir?: TopicIR|null,
+     *     SupportingVisuals?: list<TopicVisual>|null
      * } $args
      */
     public function __construct(array $args = [])

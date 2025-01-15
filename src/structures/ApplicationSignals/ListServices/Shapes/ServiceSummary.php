@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property array<string, string> $KeyAttributes
- * @property list<array<string, string>> $AttributeMaps
+ * @property list<array<string, string>>|null $AttributeMaps
  * @property list<MetricReference> $MetricReferences
  */
 class ServiceSummary extends Shape
@@ -14,7 +14,7 @@ class ServiceSummary extends Shape
     /**
      * @param array{
      *     KeyAttributes: array<string, string>,
-     *     AttributeMaps?: list<array<string, string>>,
+     *     AttributeMaps?: list<array<string, string>>|null,
      *     MetricReferences: list<MetricReference>
      * } $args
      */

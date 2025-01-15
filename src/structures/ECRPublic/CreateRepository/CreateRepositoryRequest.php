@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $repositoryName
- * @property Shapes\RepositoryCatalogDataInput $catalogData
- * @property list<Shapes\Tag> $tags
+ * @property Shapes\RepositoryCatalogDataInput|null $catalogData
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateRepositoryRequest extends Request
 {
     /**
      * @param array{
      *     repositoryName: string,
-     *     catalogData?: Shapes\RepositoryCatalogDataInput,
-     *     tags?: list<Shapes\Tag>
+     *     catalogData?: Shapes\RepositoryCatalogDataInput|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

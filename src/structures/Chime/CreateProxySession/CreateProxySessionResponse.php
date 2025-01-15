@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chime\CreateProxySession;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ProxySession $ProxySession
+ * @property Shapes\ProxySession|null $ProxySession
  */
 class CreateProxySessionResponse extends Response
 {

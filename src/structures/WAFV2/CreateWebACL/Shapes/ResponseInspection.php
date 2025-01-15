@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WAFV2\CreateWebACL\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResponseInspectionStatusCode $StatusCode
- * @property ResponseInspectionHeader $Header
- * @property ResponseInspectionBodyContains $BodyContains
- * @property ResponseInspectionJson $Json
+ * @property ResponseInspectionStatusCode|null $StatusCode
+ * @property ResponseInspectionHeader|null $Header
+ * @property ResponseInspectionBodyContains|null $BodyContains
+ * @property ResponseInspectionJson|null $Json
  */
 class ResponseInspection extends Shape
 {
     /**
      * @param array{
-     *     StatusCode?: ResponseInspectionStatusCode,
-     *     Header?: ResponseInspectionHeader,
-     *     BodyContains?: ResponseInspectionBodyContains,
-     *     Json?: ResponseInspectionJson
+     *     StatusCode?: ResponseInspectionStatusCode|null,
+     *     Header?: ResponseInspectionHeader|null,
+     *     BodyContains?: ResponseInspectionBodyContains|null,
+     *     Json?: ResponseInspectionJson|null
      * } $args
      */
     public function __construct(array $args = [])

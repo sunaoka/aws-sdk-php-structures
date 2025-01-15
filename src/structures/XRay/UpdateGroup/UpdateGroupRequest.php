@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\XRay\UpdateGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GroupName
- * @property string $GroupARN
- * @property string $FilterExpression
- * @property Shapes\InsightsConfiguration $InsightsConfiguration
+ * @property string|null $GroupName
+ * @property string|null $GroupARN
+ * @property string|null $FilterExpression
+ * @property Shapes\InsightsConfiguration|null $InsightsConfiguration
  */
 class UpdateGroupRequest extends Request
 {
     /**
      * @param array{
-     *     GroupName?: string,
-     *     GroupARN?: string,
-     *     FilterExpression?: string,
-     *     InsightsConfiguration?: Shapes\InsightsConfiguration
+     *     GroupName?: string|null,
+     *     GroupARN?: string|null,
+     *     FilterExpression?: string|null,
+     *     InsightsConfiguration?: Shapes\InsightsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

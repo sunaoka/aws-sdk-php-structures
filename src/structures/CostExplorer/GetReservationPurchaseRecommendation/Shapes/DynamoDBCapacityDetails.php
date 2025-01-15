@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationPurchaseRecommendati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CapacityUnits
- * @property string $Region
+ * @property string|null $CapacityUnits
+ * @property string|null $Region
  */
 class DynamoDBCapacityDetails extends Shape
 {
     /**
      * @param array{
-     *     CapacityUnits?: string,
-     *     Region?: string
+     *     CapacityUnits?: string|null,
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

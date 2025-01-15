@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $clientToken
  * @property string $profileId
- * @property \Aws\Api\DateTimeResult $expirationTime
+ * @property \Aws\Api\DateTimeResult|null $expirationTime
  */
 class ProfileOutboundRequest extends Shape
 {
@@ -15,7 +15,7 @@ class ProfileOutboundRequest extends Shape
      * @param array{
      *     clientToken: string,
      *     profileId: string,
-     *     expirationTime?: \Aws\Api\DateTimeResult
+     *     expirationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

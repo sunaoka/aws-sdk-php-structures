@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetCoreNetworkChangeSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'send-via'|'send-to' $Action
- * @property 'dual-hop'|'single-hop' $Mode
- * @property WhenSentTo $WhenSentTo
- * @property Via $Via
+ * @property 'send-via'|'send-to'|null $Action
+ * @property 'dual-hop'|'single-hop'|null $Mode
+ * @property WhenSentTo|null $WhenSentTo
+ * @property Via|null $Via
  */
 class ServiceInsertionAction extends Shape
 {
     /**
      * @param array{
-     *     Action?: 'send-via'|'send-to',
-     *     Mode?: 'dual-hop'|'single-hop',
-     *     WhenSentTo?: WhenSentTo,
-     *     Via?: Via
+     *     Action?: 'send-via'|'send-to'|null,
+     *     Mode?: 'dual-hop'|'single-hop'|null,
+     *     WhenSentTo?: WhenSentTo|null,
+     *     Via?: Via|null
      * } $args
      */
     public function __construct(array $args = [])

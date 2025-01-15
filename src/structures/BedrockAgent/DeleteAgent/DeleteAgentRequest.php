@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $agentId
- * @property bool $skipResourceInUseCheck
+ * @property bool|null $skipResourceInUseCheck
  */
 class DeleteAgentRequest extends Request
 {
     /**
      * @param array{
      *     agentId: string,
-     *     skipResourceInUseCheck?: bool
+     *     skipResourceInUseCheck?: bool|null
      * } $args
      */
     public function __construct(array $args)

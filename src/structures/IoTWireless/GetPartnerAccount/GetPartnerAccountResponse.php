@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetPartnerAccount;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SidewalkAccountInfoWithFingerprint $Sidewalk
- * @property bool $AccountLinked
+ * @property Shapes\SidewalkAccountInfoWithFingerprint|null $Sidewalk
+ * @property bool|null $AccountLinked
  */
 class GetPartnerAccountResponse extends Response
 {

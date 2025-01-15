@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeInstanceRefreshes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LaunchTemplateSpecification $LaunchTemplateSpecification
- * @property list<LaunchTemplateOverrides> $Overrides
+ * @property LaunchTemplateSpecification|null $LaunchTemplateSpecification
+ * @property list<LaunchTemplateOverrides>|null $Overrides
  */
 class LaunchTemplate extends Shape
 {
     /**
      * @param array{
-     *     LaunchTemplateSpecification?: LaunchTemplateSpecification,
-     *     Overrides?: list<LaunchTemplateOverrides>
+     *     LaunchTemplateSpecification?: LaunchTemplateSpecification|null,
+     *     Overrides?: list<LaunchTemplateOverrides>|null
      * } $args
      */
     public function __construct(array $args = [])

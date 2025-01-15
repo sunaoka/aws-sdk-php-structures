@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SipRuleId
  * @property string $Name
- * @property bool $Disabled
- * @property list<Shapes\SipRuleTargetApplication> $TargetApplications
+ * @property bool|null $Disabled
+ * @property list<Shapes\SipRuleTargetApplication>|null $TargetApplications
  */
 class UpdateSipRuleRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateSipRuleRequest extends Request
      * @param array{
      *     SipRuleId: string,
      *     Name: string,
-     *     Disabled?: bool,
-     *     TargetApplications?: list<Shapes\SipRuleTargetApplication>
+     *     Disabled?: bool|null,
+     *     TargetApplications?: list<Shapes\SipRuleTargetApplication>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DnsName
- * @property string $HostedZoneId
+ * @property string|null $DnsName
+ * @property string|null $HostedZoneId
  */
 class DnsEntry extends Shape
 {
     /**
      * @param array{
-     *     DnsName?: string,
-     *     HostedZoneId?: string
+     *     DnsName?: string|null,
+     *     HostedZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

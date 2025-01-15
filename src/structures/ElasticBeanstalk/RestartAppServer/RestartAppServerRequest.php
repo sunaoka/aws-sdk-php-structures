@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\RestartAppServer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $EnvironmentId
- * @property string $EnvironmentName
+ * @property string|null $EnvironmentId
+ * @property string|null $EnvironmentName
  */
 class RestartAppServerRequest extends Request
 {
     /**
      * @param array{
-     *     EnvironmentId?: string,
-     *     EnvironmentName?: string
+     *     EnvironmentId?: string|null,
+     *     EnvironmentName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

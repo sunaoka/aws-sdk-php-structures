@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $configuredModelAlgorithmArn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  */
 class ConfiguredModelAlgorithmSummary extends Shape
 {
@@ -19,7 +19,7 @@ class ConfiguredModelAlgorithmSummary extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     configuredModelAlgorithmArn: string,
      *     name: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

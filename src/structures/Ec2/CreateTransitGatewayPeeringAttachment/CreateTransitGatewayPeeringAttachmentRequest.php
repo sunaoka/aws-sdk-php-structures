@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PeerTransitGatewayId
  * @property string $PeerAccountId
  * @property string $PeerRegion
- * @property Shapes\CreateTransitGatewayPeeringAttachmentRequestOptions $Options
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
+ * @property Shapes\CreateTransitGatewayPeeringAttachmentRequestOptions|null $Options
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
  */
 class CreateTransitGatewayPeeringAttachmentRequest extends Request
 {
@@ -21,9 +21,9 @@ class CreateTransitGatewayPeeringAttachmentRequest extends Request
      *     PeerTransitGatewayId: string,
      *     PeerAccountId: string,
      *     PeerRegion: string,
-     *     Options?: Shapes\CreateTransitGatewayPeeringAttachmentRequestOptions,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool
+     *     Options?: Shapes\CreateTransitGatewayPeeringAttachmentRequestOptions|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

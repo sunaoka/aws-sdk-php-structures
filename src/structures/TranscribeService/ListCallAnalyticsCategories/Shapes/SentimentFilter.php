@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<'POSITIVE'|'NEGATIVE'|'NEUTRAL'|'MIXED'> $Sentiments
- * @property AbsoluteTimeRange $AbsoluteTimeRange
- * @property RelativeTimeRange $RelativeTimeRange
- * @property 'AGENT'|'CUSTOMER' $ParticipantRole
- * @property bool $Negate
+ * @property AbsoluteTimeRange|null $AbsoluteTimeRange
+ * @property RelativeTimeRange|null $RelativeTimeRange
+ * @property 'AGENT'|'CUSTOMER'|null $ParticipantRole
+ * @property bool|null $Negate
  */
 class SentimentFilter extends Shape
 {
     /**
      * @param array{
      *     Sentiments: list<'POSITIVE'|'NEGATIVE'|'NEUTRAL'|'MIXED'>,
-     *     AbsoluteTimeRange?: AbsoluteTimeRange,
-     *     RelativeTimeRange?: RelativeTimeRange,
-     *     ParticipantRole?: 'AGENT'|'CUSTOMER',
-     *     Negate?: bool
+     *     AbsoluteTimeRange?: AbsoluteTimeRange|null,
+     *     RelativeTimeRange?: RelativeTimeRange|null,
+     *     ParticipantRole?: 'AGENT'|'CUSTOMER'|null,
+     *     Negate?: bool|null
      * } $args
      */
     public function __construct(array $args)

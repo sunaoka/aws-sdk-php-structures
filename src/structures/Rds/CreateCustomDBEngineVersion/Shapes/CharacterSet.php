@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\CreateCustomDBEngineVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CharacterSetName
- * @property string $CharacterSetDescription
+ * @property string|null $CharacterSetName
+ * @property string|null $CharacterSetDescription
  */
 class CharacterSet extends Shape
 {
     /**
      * @param array{
-     *     CharacterSetName?: string,
-     *     CharacterSetDescription?: string
+     *     CharacterSetName?: string|null,
+     *     CharacterSetDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

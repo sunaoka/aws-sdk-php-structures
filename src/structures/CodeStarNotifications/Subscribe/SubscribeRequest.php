@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Arn
  * @property Shapes\Target $Target
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class SubscribeRequest extends Request
 {
@@ -15,7 +15,7 @@ class SubscribeRequest extends Request
      * @param array{
      *     Arn: string,
      *     Target: Shapes\Target,
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

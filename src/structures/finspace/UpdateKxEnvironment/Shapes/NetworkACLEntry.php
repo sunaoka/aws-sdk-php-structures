@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 32766> $ruleNumber
  * @property string $protocol
  * @property 'allow'|'deny' $ruleAction
- * @property PortRange $portRange
- * @property IcmpTypeCode $icmpTypeCode
+ * @property PortRange|null $portRange
+ * @property IcmpTypeCode|null $icmpTypeCode
  * @property string $cidrBlock
  */
 class NetworkACLEntry extends Shape
@@ -19,8 +19,8 @@ class NetworkACLEntry extends Shape
      *     ruleNumber: int<1, 32766>,
      *     protocol: string,
      *     ruleAction: 'allow'|'deny',
-     *     portRange?: PortRange,
-     *     icmpTypeCode?: IcmpTypeCode,
+     *     portRange?: PortRange|null,
+     *     icmpTypeCode?: IcmpTypeCode|null,
      *     cidrBlock: string
      * } $args
      */

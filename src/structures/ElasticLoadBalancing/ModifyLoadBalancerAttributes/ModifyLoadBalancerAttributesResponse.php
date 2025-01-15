@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\ModifyLoadBalancerAttribut
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LoadBalancerName
- * @property Shapes\LoadBalancerAttributes $LoadBalancerAttributes
+ * @property string|null $LoadBalancerName
+ * @property Shapes\LoadBalancerAttributes|null $LoadBalancerAttributes
  */
 class ModifyLoadBalancerAttributesResponse extends Response
 {

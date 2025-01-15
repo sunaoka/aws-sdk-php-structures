@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\UpdateMetricSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ColumnName
- * @property string $ColumnFormat
+ * @property string|null $ColumnName
+ * @property string|null $ColumnFormat
  */
 class TimestampColumn extends Shape
 {
     /**
      * @param array{
-     *     ColumnName?: string,
-     *     ColumnFormat?: string
+     *     ColumnName?: string|null,
+     *     ColumnFormat?: string|null
      * } $args
      */
     public function __construct(array $args = [])

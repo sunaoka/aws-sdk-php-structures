@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $PercentTraffic
- * @property string $DeploymentId
- * @property array<string, string> $StageVariableOverrides
- * @property bool $UseStageCache
+ * @property double|null $PercentTraffic
+ * @property string|null $DeploymentId
+ * @property array<string, string>|null $StageVariableOverrides
+ * @property bool|null $UseStageCache
  */
 class AwsApiGatewayCanarySettings extends Shape
 {
     /**
      * @param array{
-     *     PercentTraffic?: double,
-     *     DeploymentId?: string,
-     *     StageVariableOverrides?: array<string, string>,
-     *     UseStageCache?: bool
+     *     PercentTraffic?: double|null,
+     *     DeploymentId?: string|null,
+     *     StageVariableOverrides?: array<string, string>|null,
+     *     UseStageCache?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

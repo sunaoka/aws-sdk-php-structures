@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domain
  * @property string $workflowId
- * @property string $runId
+ * @property string|null $runId
  */
 class RequestCancelWorkflowExecutionRequest extends Request
 {
@@ -15,7 +15,7 @@ class RequestCancelWorkflowExecutionRequest extends Request
      * @param array{
      *     domain: string,
      *     workflowId: string,
-     *     runId?: string
+     *     runId?: string|null
      * } $args
      */
     public function __construct(array $args)

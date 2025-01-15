@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateAssetRevision\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BusinessNameGenerationConfiguration $businessNameGeneration
+ * @property BusinessNameGenerationConfiguration|null $businessNameGeneration
  */
 class PredictionConfiguration extends Shape
 {
     /**
-     * @param array{businessNameGeneration?: BusinessNameGenerationConfiguration} $args
+     * @param array{businessNameGeneration?: BusinessNameGenerationConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

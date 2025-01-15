@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $Arn
- * @property string $Name
- * @property list<Shapes\EventTypeSummary> $EventTypes
- * @property string $Resource
- * @property list<Shapes\TargetSummary> $Targets
- * @property 'BASIC'|'FULL' $DetailType
- * @property string $CreatedBy
- * @property 'ENABLED'|'DISABLED' $Status
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $LastModifiedTimestamp
- * @property array<string, string> $Tags
+ * @property string|null $Name
+ * @property list<Shapes\EventTypeSummary>|null $EventTypes
+ * @property string|null $Resource
+ * @property list<Shapes\TargetSummary>|null $Targets
+ * @property 'BASIC'|'FULL'|null $DetailType
+ * @property string|null $CreatedBy
+ * @property 'ENABLED'|'DISABLED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTimestamp
+ * @property array<string, string>|null $Tags
  */
 class DescribeNotificationRuleResponse extends Response
 {

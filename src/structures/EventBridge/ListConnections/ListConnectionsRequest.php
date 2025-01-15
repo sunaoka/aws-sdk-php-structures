@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\EventBridge\ListConnections;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NamePrefix
- * @property 'CREATING'|'UPDATING'|'DELETING'|'AUTHORIZED'|'DEAUTHORIZED'|'AUTHORIZING'|'DEAUTHORIZING'|'ACTIVE'|'FAILED_CONNECTIVITY' $ConnectionState
- * @property string $NextToken
- * @property int<1, 100> $Limit
+ * @property string|null $NamePrefix
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'AUTHORIZED'|'DEAUTHORIZED'|'AUTHORIZING'|'DEAUTHORIZING'|'ACTIVE'|'FAILED_CONNECTIVITY'|null $ConnectionState
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $Limit
  */
 class ListConnectionsRequest extends Request
 {
     /**
      * @param array{
-     *     NamePrefix?: string,
-     *     ConnectionState?: 'CREATING'|'UPDATING'|'DELETING'|'AUTHORIZED'|'DEAUTHORIZED'|'AUTHORIZING'|'DEAUTHORIZING'|'ACTIVE'|'FAILED_CONNECTIVITY',
-     *     NextToken?: string,
-     *     Limit?: int<1, 100>
+     *     NamePrefix?: string|null,
+     *     ConnectionState?: 'CREATING'|'UPDATING'|'DELETING'|'AUTHORIZED'|'DEAUTHORIZED'|'AUTHORIZING'|'DEAUTHORIZING'|'ACTIVE'|'FAILED_CONNECTIVITY'|null,
+     *     NextToken?: string|null,
+     *     Limit?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\XRay\GetTimeSeriesServiceStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Timestamp
- * @property EdgeStatistics $EdgeSummaryStatistics
- * @property ServiceStatistics $ServiceSummaryStatistics
- * @property ForecastStatistics $ServiceForecastStatistics
- * @property list<HistogramEntry> $ResponseTimeHistogram
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
+ * @property EdgeStatistics|null $EdgeSummaryStatistics
+ * @property ServiceStatistics|null $ServiceSummaryStatistics
+ * @property ForecastStatistics|null $ServiceForecastStatistics
+ * @property list<HistogramEntry>|null $ResponseTimeHistogram
  */
 class TimeSeriesServiceStatistics extends Shape
 {
     /**
      * @param array{
-     *     Timestamp?: \Aws\Api\DateTimeResult,
-     *     EdgeSummaryStatistics?: EdgeStatistics,
-     *     ServiceSummaryStatistics?: ServiceStatistics,
-     *     ServiceForecastStatistics?: ForecastStatistics,
-     *     ResponseTimeHistogram?: list<HistogramEntry>
+     *     Timestamp?: \Aws\Api\DateTimeResult|null,
+     *     EdgeSummaryStatistics?: EdgeStatistics|null,
+     *     ServiceSummaryStatistics?: ServiceStatistics|null,
+     *     ServiceForecastStatistics?: ForecastStatistics|null,
+     *     ResponseTimeHistogram?: list<HistogramEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

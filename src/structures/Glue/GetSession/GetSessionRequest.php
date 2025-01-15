@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $RequestOrigin
+ * @property string|null $RequestOrigin
  */
 class GetSessionRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     RequestOrigin?: string
+     *     RequestOrigin?: string|null
      * } $args
      */
     public function __construct(array $args)

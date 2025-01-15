@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $eventData
- * @property string $eventDataChecksum
+ * @property string|null $eventDataChecksum
  * @property string $id
  */
 class AuditEvent extends Shape
@@ -14,7 +14,7 @@ class AuditEvent extends Shape
     /**
      * @param array{
      *     eventData: string,
-     *     eventDataChecksum?: string,
+     *     eventDataChecksum?: string|null,
      *     id: string
      * } $args
      */

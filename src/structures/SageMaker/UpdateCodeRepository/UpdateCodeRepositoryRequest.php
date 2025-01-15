@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CodeRepositoryName
- * @property Shapes\GitConfigForUpdate $GitConfig
+ * @property Shapes\GitConfigForUpdate|null $GitConfig
  */
 class UpdateCodeRepositoryRequest extends Request
 {
     /**
      * @param array{
      *     CodeRepositoryName: string,
-     *     GitConfig?: Shapes\GitConfigForUpdate
+     *     GitConfig?: Shapes\GitConfigForUpdate|null
      * } $args
      */
     public function __construct(array $args)

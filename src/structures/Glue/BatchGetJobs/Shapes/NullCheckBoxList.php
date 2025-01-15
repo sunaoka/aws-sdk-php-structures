@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IsEmpty
- * @property bool $IsNullString
- * @property bool $IsNegOne
+ * @property bool|null $IsEmpty
+ * @property bool|null $IsNullString
+ * @property bool|null $IsNegOne
  */
 class NullCheckBoxList extends Shape
 {
     /**
      * @param array{
-     *     IsEmpty?: bool,
-     *     IsNullString?: bool,
-     *     IsNegOne?: bool
+     *     IsEmpty?: bool|null,
+     *     IsNullString?: bool|null,
+     *     IsNegOne?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Category
- * @property list<MeasureField> $Values
+ * @property list<DimensionField>|null $Category
+ * @property list<MeasureField>|null $Values
  */
 class FunnelChartAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Category?: list<DimensionField>,
-     *     Values?: list<MeasureField>
+     *     Category?: list<DimensionField>|null,
+     *     Values?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

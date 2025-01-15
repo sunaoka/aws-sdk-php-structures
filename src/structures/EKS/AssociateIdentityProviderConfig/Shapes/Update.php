@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\EKS\AssociateIdentityProviderConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property 'InProgress'|'Failed'|'Cancelled'|'Successful' $status
- * @property 'VersionUpdate'|'EndpointAccessUpdate'|'LoggingUpdate'|'ConfigUpdate'|'AssociateIdentityProviderConfig'|'DisassociateIdentityProviderConfig'|'AssociateEncryptionConfig'|'AddonUpdate'|'VpcConfigUpdate'|'AccessConfigUpdate'|'UpgradePolicyUpdate'|'ZonalShiftConfigUpdate'|'AutoModeUpdate' $type
- * @property list<UpdateParam> $params
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property list<ErrorDetail> $errors
+ * @property string|null $id
+ * @property 'InProgress'|'Failed'|'Cancelled'|'Successful'|null $status
+ * @property 'VersionUpdate'|'EndpointAccessUpdate'|'LoggingUpdate'|'ConfigUpdate'|'AssociateIdentityProviderConfig'|'DisassociateIdentityProviderConfig'|'AssociateEncryptionConfig'|'AddonUpdate'|'VpcConfigUpdate'|'AccessConfigUpdate'|'UpgradePolicyUpdate'|'ZonalShiftConfigUpdate'|'AutoModeUpdate'|null $type
+ * @property list<UpdateParam>|null $params
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property list<ErrorDetail>|null $errors
  */
 class Update extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     status?: 'InProgress'|'Failed'|'Cancelled'|'Successful',
-     *     type?: 'VersionUpdate'|'EndpointAccessUpdate'|'LoggingUpdate'|'ConfigUpdate'|'AssociateIdentityProviderConfig'|'DisassociateIdentityProviderConfig'|'AssociateEncryptionConfig'|'AddonUpdate'|'VpcConfigUpdate'|'AccessConfigUpdate'|'UpgradePolicyUpdate'|'ZonalShiftConfigUpdate'|'AutoModeUpdate',
-     *     params?: list<UpdateParam>,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     errors?: list<ErrorDetail>
+     *     id?: string|null,
+     *     status?: 'InProgress'|'Failed'|'Cancelled'|'Successful'|null,
+     *     type?: 'VersionUpdate'|'EndpointAccessUpdate'|'LoggingUpdate'|'ConfigUpdate'|'AssociateIdentityProviderConfig'|'DisassociateIdentityProviderConfig'|'AssociateEncryptionConfig'|'AddonUpdate'|'VpcConfigUpdate'|'AccessConfigUpdate'|'UpgradePolicyUpdate'|'ZonalShiftConfigUpdate'|'AutoModeUpdate'|null,
+     *     params?: list<UpdateParam>|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     errors?: list<ErrorDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FIS\StartExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $reportType
+ * @property string|null $arn
+ * @property string|null $reportType
  */
 class ExperimentReportS3Report extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     reportType?: string
+     *     arn?: string|null,
+     *     reportType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

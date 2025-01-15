@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchGetConfigurationPolicyAssociat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ConfigurationPolicyAssociationSummary> $ConfigurationPolicyAssociations
- * @property list<Shapes\UnprocessedConfigurationPolicyAssociation> $UnprocessedConfigurationPolicyAssociations
+ * @property list<Shapes\ConfigurationPolicyAssociationSummary>|null $ConfigurationPolicyAssociations
+ * @property list<Shapes\UnprocessedConfigurationPolicyAssociation>|null $UnprocessedConfigurationPolicyAssociations
  */
 class BatchGetConfigurationPolicyAssociationsResponse extends Response
 {

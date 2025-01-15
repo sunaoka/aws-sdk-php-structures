@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $frameworkId
  * @property string $destinationAccount
  * @property string $destinationRegion
- * @property string $comment
+ * @property string|null $comment
  */
 class StartAssessmentFrameworkShareRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartAssessmentFrameworkShareRequest extends Request
      *     frameworkId: string,
      *     destinationAccount: string,
      *     destinationRegion: string,
-     *     comment?: string
+     *     comment?: string|null
      * } $args
      */
     public function __construct(array $args)

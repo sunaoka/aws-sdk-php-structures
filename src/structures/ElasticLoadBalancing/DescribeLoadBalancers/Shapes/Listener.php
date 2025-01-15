@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Protocol
  * @property int $LoadBalancerPort
- * @property string $InstanceProtocol
+ * @property string|null $InstanceProtocol
  * @property int<1, 65535> $InstancePort
- * @property string $SSLCertificateId
+ * @property string|null $SSLCertificateId
  */
 class Listener extends Shape
 {
@@ -17,9 +17,9 @@ class Listener extends Shape
      * @param array{
      *     Protocol: string,
      *     LoadBalancerPort: int,
-     *     InstanceProtocol?: string,
+     *     InstanceProtocol?: string|null,
      *     InstancePort: int<1, 65535>,
-     *     SSLCertificateId?: string
+     *     SSLCertificateId?: string|null
      * } $args
      */
     public function __construct(array $args)

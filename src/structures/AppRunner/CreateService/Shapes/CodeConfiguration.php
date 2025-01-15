@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'REPOSITORY'|'API' $ConfigurationSource
- * @property CodeConfigurationValues $CodeConfigurationValues
+ * @property CodeConfigurationValues|null $CodeConfigurationValues
  */
 class CodeConfiguration extends Shape
 {
     /**
      * @param array{
      *     ConfigurationSource: 'REPOSITORY'|'API',
-     *     CodeConfigurationValues?: CodeConfigurationValues
+     *     CodeConfigurationValues?: CodeConfigurationValues|null
      * } $args
      */
     public function __construct(array $args)

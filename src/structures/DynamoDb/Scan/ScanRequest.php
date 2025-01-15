@@ -6,42 +6,42 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TableName
- * @property string $IndexName
- * @property list<string> $AttributesToGet
- * @property int<1, max> $Limit
- * @property 'ALL_ATTRIBUTES'|'ALL_PROJECTED_ATTRIBUTES'|'SPECIFIC_ATTRIBUTES'|'COUNT' $Select
- * @property array<string, Shapes\Condition> $ScanFilter
- * @property 'AND'|'OR' $ConditionalOperator
- * @property array<string, Shapes\AttributeValue> $ExclusiveStartKey
- * @property 'INDEXES'|'TOTAL'|'NONE' $ReturnConsumedCapacity
- * @property int<1, 1000000> $TotalSegments
- * @property int<0, 999999> $Segment
- * @property string $ProjectionExpression
- * @property string $FilterExpression
- * @property array<string, string> $ExpressionAttributeNames
- * @property array<string, Shapes\AttributeValue> $ExpressionAttributeValues
- * @property bool $ConsistentRead
+ * @property string|null $IndexName
+ * @property list<string>|null $AttributesToGet
+ * @property int<1, max>|null $Limit
+ * @property 'ALL_ATTRIBUTES'|'ALL_PROJECTED_ATTRIBUTES'|'SPECIFIC_ATTRIBUTES'|'COUNT'|null $Select
+ * @property array<string, Shapes\Condition>|null $ScanFilter
+ * @property 'AND'|'OR'|null $ConditionalOperator
+ * @property array<string, Shapes\AttributeValue>|null $ExclusiveStartKey
+ * @property 'INDEXES'|'TOTAL'|'NONE'|null $ReturnConsumedCapacity
+ * @property int<1, 1000000>|null $TotalSegments
+ * @property int<0, 999999>|null $Segment
+ * @property string|null $ProjectionExpression
+ * @property string|null $FilterExpression
+ * @property array<string, string>|null $ExpressionAttributeNames
+ * @property array<string, Shapes\AttributeValue>|null $ExpressionAttributeValues
+ * @property bool|null $ConsistentRead
  */
 class ScanRequest extends Request
 {
     /**
      * @param array{
      *     TableName: string,
-     *     IndexName?: string,
-     *     AttributesToGet?: list<string>,
-     *     Limit?: int<1, max>,
-     *     Select?: 'ALL_ATTRIBUTES'|'ALL_PROJECTED_ATTRIBUTES'|'SPECIFIC_ATTRIBUTES'|'COUNT',
-     *     ScanFilter?: array<string, Shapes\Condition>,
-     *     ConditionalOperator?: 'AND'|'OR',
-     *     ExclusiveStartKey?: array<string, Shapes\AttributeValue>,
-     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE',
-     *     TotalSegments?: int<1, 1000000>,
-     *     Segment?: int<0, 999999>,
-     *     ProjectionExpression?: string,
-     *     FilterExpression?: string,
-     *     ExpressionAttributeNames?: array<string, string>,
-     *     ExpressionAttributeValues?: array<string, Shapes\AttributeValue>,
-     *     ConsistentRead?: bool
+     *     IndexName?: string|null,
+     *     AttributesToGet?: list<string>|null,
+     *     Limit?: int<1, max>|null,
+     *     Select?: 'ALL_ATTRIBUTES'|'ALL_PROJECTED_ATTRIBUTES'|'SPECIFIC_ATTRIBUTES'|'COUNT'|null,
+     *     ScanFilter?: array<string, Shapes\Condition>|null,
+     *     ConditionalOperator?: 'AND'|'OR'|null,
+     *     ExclusiveStartKey?: array<string, Shapes\AttributeValue>|null,
+     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE'|null,
+     *     TotalSegments?: int<1, 1000000>|null,
+     *     Segment?: int<0, 999999>|null,
+     *     ProjectionExpression?: string|null,
+     *     FilterExpression?: string|null,
+     *     ExpressionAttributeNames?: array<string, string>|null,
+     *     ExpressionAttributeValues?: array<string, Shapes\AttributeValue>|null,
+     *     ConsistentRead?: bool|null
      * } $args
      */
     public function __construct(array $args)

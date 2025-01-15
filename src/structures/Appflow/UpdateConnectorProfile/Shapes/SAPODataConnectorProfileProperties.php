@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $applicationServicePath
  * @property int<1, 65535> $portNumber
  * @property string $clientNumber
- * @property string $logonLanguage
- * @property string $privateLinkServiceName
- * @property OAuthProperties $oAuthProperties
- * @property bool $disableSSO
+ * @property string|null $logonLanguage
+ * @property string|null $privateLinkServiceName
+ * @property OAuthProperties|null $oAuthProperties
+ * @property bool|null $disableSSO
  */
 class SAPODataConnectorProfileProperties extends Shape
 {
@@ -22,10 +22,10 @@ class SAPODataConnectorProfileProperties extends Shape
      *     applicationServicePath: string,
      *     portNumber: int<1, 65535>,
      *     clientNumber: string,
-     *     logonLanguage?: string,
-     *     privateLinkServiceName?: string,
-     *     oAuthProperties?: OAuthProperties,
-     *     disableSSO?: bool
+     *     logonLanguage?: string|null,
+     *     privateLinkServiceName?: string|null,
+     *     oAuthProperties?: OAuthProperties|null,
+     *     disableSSO?: bool|null
      * } $args
      */
     public function __construct(array $args)

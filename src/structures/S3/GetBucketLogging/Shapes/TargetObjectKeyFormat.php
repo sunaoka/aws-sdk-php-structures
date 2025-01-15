@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\GetBucketLogging\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SimplePrefix $SimplePrefix
- * @property PartitionedPrefix $PartitionedPrefix
+ * @property SimplePrefix|null $SimplePrefix
+ * @property PartitionedPrefix|null $PartitionedPrefix
  */
 class TargetObjectKeyFormat extends Shape
 {
     /**
      * @param array{
-     *     SimplePrefix?: SimplePrefix,
-     *     PartitionedPrefix?: PartitionedPrefix
+     *     SimplePrefix?: SimplePrefix|null,
+     *     PartitionedPrefix?: PartitionedPrefix|null
      * } $args
      */
     public function __construct(array $args = [])

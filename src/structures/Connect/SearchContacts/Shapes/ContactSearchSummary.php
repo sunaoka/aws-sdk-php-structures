@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Connect\SearchContacts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Id
- * @property string $InitialContactId
- * @property string $PreviousContactId
- * @property 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|'WEBRTC_API'|'AGENT_REPLY'|'FLOW' $InitiationMethod
- * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL' $Channel
- * @property ContactSearchSummaryQueueInfo $QueueInfo
- * @property ContactSearchSummaryAgentInfo $AgentInfo
- * @property \Aws\Api\DateTimeResult $InitiationTimestamp
- * @property \Aws\Api\DateTimeResult $DisconnectTimestamp
- * @property \Aws\Api\DateTimeResult $ScheduledTimestamp
- * @property array<string, ContactSearchSummarySegmentAttributeValue> $SegmentAttributes
+ * @property string|null $Arn
+ * @property string|null $Id
+ * @property string|null $InitialContactId
+ * @property string|null $PreviousContactId
+ * @property 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|'WEBRTC_API'|'AGENT_REPLY'|'FLOW'|null $InitiationMethod
+ * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null $Channel
+ * @property ContactSearchSummaryQueueInfo|null $QueueInfo
+ * @property ContactSearchSummaryAgentInfo|null $AgentInfo
+ * @property \Aws\Api\DateTimeResult|null $InitiationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $DisconnectTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ScheduledTimestamp
+ * @property array<string, ContactSearchSummarySegmentAttributeValue>|null $SegmentAttributes
  */
 class ContactSearchSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Id?: string,
-     *     InitialContactId?: string,
-     *     PreviousContactId?: string,
-     *     InitiationMethod?: 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|'WEBRTC_API'|'AGENT_REPLY'|'FLOW',
-     *     Channel?: 'VOICE'|'CHAT'|'TASK'|'EMAIL',
-     *     QueueInfo?: ContactSearchSummaryQueueInfo,
-     *     AgentInfo?: ContactSearchSummaryAgentInfo,
-     *     InitiationTimestamp?: \Aws\Api\DateTimeResult,
-     *     DisconnectTimestamp?: \Aws\Api\DateTimeResult,
-     *     ScheduledTimestamp?: \Aws\Api\DateTimeResult,
-     *     SegmentAttributes?: array<string, ContactSearchSummarySegmentAttributeValue>
+     *     Arn?: string|null,
+     *     Id?: string|null,
+     *     InitialContactId?: string|null,
+     *     PreviousContactId?: string|null,
+     *     InitiationMethod?: 'INBOUND'|'OUTBOUND'|'TRANSFER'|'QUEUE_TRANSFER'|'CALLBACK'|'API'|'DISCONNECT'|'MONITOR'|'EXTERNAL_OUTBOUND'|'WEBRTC_API'|'AGENT_REPLY'|'FLOW'|null,
+     *     Channel?: 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null,
+     *     QueueInfo?: ContactSearchSummaryQueueInfo|null,
+     *     AgentInfo?: ContactSearchSummaryAgentInfo|null,
+     *     InitiationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     DisconnectTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ScheduledTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     SegmentAttributes?: array<string, ContactSearchSummarySegmentAttributeValue>|null
      * } $args
      */
     public function __construct(array $args = [])

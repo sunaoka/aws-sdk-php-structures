@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $certificatePem
- * @property string $caCertificatePem
- * @property bool $setAsActive
- * @property 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION' $status
+ * @property string|null $caCertificatePem
+ * @property bool|null $setAsActive
+ * @property 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION'|null $status
  */
 class RegisterCertificateRequest extends Request
 {
     /**
      * @param array{
      *     certificatePem: string,
-     *     caCertificatePem?: string,
-     *     setAsActive?: bool,
-     *     status?: 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION'
+     *     caCertificatePem?: string|null,
+     *     setAsActive?: bool|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION'|null
      * } $args
      */
     public function __construct(array $args)

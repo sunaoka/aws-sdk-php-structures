@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\TimestreamWrite\ListDatabases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $DatabaseName
- * @property int $TableCount
- * @property string $KmsKeyId
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
+ * @property string|null $Arn
+ * @property string|null $DatabaseName
+ * @property int|null $TableCount
+ * @property string|null $KmsKeyId
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  */
 class Database extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     DatabaseName?: string,
-     *     TableCount?: int,
-     *     KmsKeyId?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult
+     *     Arn?: string|null,
+     *     DatabaseName?: string|null,
+     *     TableCount?: int|null,
+     *     KmsKeyId?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

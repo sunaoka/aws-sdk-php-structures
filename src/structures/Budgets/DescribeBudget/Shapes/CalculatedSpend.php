@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Spend $ActualSpend
- * @property Spend $ForecastedSpend
+ * @property Spend|null $ForecastedSpend
  */
 class CalculatedSpend extends Shape
 {
     /**
      * @param array{
      *     ActualSpend: Spend,
-     *     ForecastedSpend?: Spend
+     *     ForecastedSpend?: Spend|null
      * } $args
      */
     public function __construct(array $args)

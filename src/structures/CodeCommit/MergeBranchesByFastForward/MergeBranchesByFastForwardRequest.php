@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $repositoryName
  * @property string $sourceCommitSpecifier
  * @property string $destinationCommitSpecifier
- * @property string $targetBranch
+ * @property string|null $targetBranch
  */
 class MergeBranchesByFastForwardRequest extends Request
 {
@@ -17,7 +17,7 @@ class MergeBranchesByFastForwardRequest extends Request
      *     repositoryName: string,
      *     sourceCommitSpecifier: string,
      *     destinationCommitSpecifier: string,
-     *     targetBranch?: string
+     *     targetBranch?: string|null
      * } $args
      */
     public function __construct(array $args)

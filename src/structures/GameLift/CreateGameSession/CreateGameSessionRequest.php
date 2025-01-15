@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\GameLift\CreateGameSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $FleetId
- * @property string $AliasId
+ * @property string|null $FleetId
+ * @property string|null $AliasId
  * @property int<0, max> $MaximumPlayerSessionCount
- * @property string $Name
- * @property list<Shapes\GameProperty> $GameProperties
- * @property string $CreatorId
- * @property string $GameSessionId
- * @property string $IdempotencyToken
- * @property string $GameSessionData
- * @property string $Location
+ * @property string|null $Name
+ * @property list<Shapes\GameProperty>|null $GameProperties
+ * @property string|null $CreatorId
+ * @property string|null $GameSessionId
+ * @property string|null $IdempotencyToken
+ * @property string|null $GameSessionData
+ * @property string|null $Location
  */
 class CreateGameSessionRequest extends Request
 {
     /**
      * @param array{
-     *     FleetId?: string,
-     *     AliasId?: string,
+     *     FleetId?: string|null,
+     *     AliasId?: string|null,
      *     MaximumPlayerSessionCount: int<0, max>,
-     *     Name?: string,
-     *     GameProperties?: list<Shapes\GameProperty>,
-     *     CreatorId?: string,
-     *     GameSessionId?: string,
-     *     IdempotencyToken?: string,
-     *     GameSessionData?: string,
-     *     Location?: string
+     *     Name?: string|null,
+     *     GameProperties?: list<Shapes\GameProperty>|null,
+     *     CreatorId?: string|null,
+     *     GameSessionId?: string|null,
+     *     IdempotencyToken?: string|null,
+     *     GameSessionData?: string|null,
+     *     Location?: string|null
      * } $args
      */
     public function __construct(array $args)

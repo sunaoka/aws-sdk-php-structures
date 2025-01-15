@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetSegmentVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, int> $ChannelCounts
+ * @property array<string, int>|null $ChannelCounts
  * @property string $ExternalId
  * @property 'CSV'|'JSON' $Format
  * @property string $RoleArn
@@ -16,7 +16,7 @@ class SegmentImportResource extends Shape
 {
     /**
      * @param array{
-     *     ChannelCounts?: array<string, int>,
+     *     ChannelCounts?: array<string, int>|null,
      *     ExternalId: string,
      *     Format: 'CSV'|'JSON',
      *     RoleArn: string,

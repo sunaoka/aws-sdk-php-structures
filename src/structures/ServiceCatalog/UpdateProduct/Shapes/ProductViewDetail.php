@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\UpdateProduct\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProductViewSummary $ProductViewSummary
- * @property 'AVAILABLE'|'CREATING'|'FAILED' $Status
- * @property string $ProductARN
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property SourceConnectionDetail $SourceConnection
+ * @property ProductViewSummary|null $ProductViewSummary
+ * @property 'AVAILABLE'|'CREATING'|'FAILED'|null $Status
+ * @property string|null $ProductARN
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property SourceConnectionDetail|null $SourceConnection
  */
 class ProductViewDetail extends Shape
 {
     /**
      * @param array{
-     *     ProductViewSummary?: ProductViewSummary,
-     *     Status?: 'AVAILABLE'|'CREATING'|'FAILED',
-     *     ProductARN?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     SourceConnection?: SourceConnectionDetail
+     *     ProductViewSummary?: ProductViewSummary|null,
+     *     Status?: 'AVAILABLE'|'CREATING'|'FAILED'|null,
+     *     ProductARN?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     SourceConnection?: SourceConnectionDetail|null
      * } $args
      */
     public function __construct(array $args = [])

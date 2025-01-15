@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\UpdateAssetModelCompositeModel\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Attribute $attribute
- * @property Measurement $measurement
- * @property Transform $transform
- * @property Metric $metric
+ * @property Attribute|null $attribute
+ * @property Measurement|null $measurement
+ * @property Transform|null $transform
+ * @property Metric|null $metric
  */
 class PropertyType extends Shape
 {
     /**
      * @param array{
-     *     attribute?: Attribute,
-     *     measurement?: Measurement,
-     *     transform?: Transform,
-     *     metric?: Metric
+     *     attribute?: Attribute|null,
+     *     measurement?: Measurement|null,
+     *     transform?: Transform|null,
+     *     metric?: Metric|null
      * } $args
      */
     public function __construct(array $args = [])

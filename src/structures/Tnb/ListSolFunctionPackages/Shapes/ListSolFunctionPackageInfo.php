@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property string $id
- * @property ListSolFunctionPackageMetadata $metadata
+ * @property ListSolFunctionPackageMetadata|null $metadata
  * @property 'CREATED'|'ONBOARDED'|'ERROR' $onboardingState
  * @property 'ENABLED'|'DISABLED' $operationalState
  * @property 'IN_USE'|'NOT_IN_USE' $usageState
- * @property string $vnfProductName
- * @property string $vnfProvider
- * @property string $vnfdId
- * @property string $vnfdVersion
+ * @property string|null $vnfProductName
+ * @property string|null $vnfProvider
+ * @property string|null $vnfdId
+ * @property string|null $vnfdVersion
  */
 class ListSolFunctionPackageInfo extends Shape
 {
@@ -22,14 +22,14 @@ class ListSolFunctionPackageInfo extends Shape
      * @param array{
      *     arn: string,
      *     id: string,
-     *     metadata?: ListSolFunctionPackageMetadata,
+     *     metadata?: ListSolFunctionPackageMetadata|null,
      *     onboardingState: 'CREATED'|'ONBOARDED'|'ERROR',
      *     operationalState: 'ENABLED'|'DISABLED',
      *     usageState: 'IN_USE'|'NOT_IN_USE',
-     *     vnfProductName?: string,
-     *     vnfProvider?: string,
-     *     vnfdId?: string,
-     *     vnfdVersion?: string
+     *     vnfProductName?: string|null,
+     *     vnfProvider?: string|null,
+     *     vnfdId?: string|null,
+     *     vnfdVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

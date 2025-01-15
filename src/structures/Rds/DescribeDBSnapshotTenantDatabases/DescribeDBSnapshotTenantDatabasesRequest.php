@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBSnapshotTenantDatabases;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DBInstanceIdentifier
- * @property string $DBSnapshotIdentifier
- * @property string $SnapshotType
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $Marker
- * @property string $DbiResourceId
+ * @property string|null $DBInstanceIdentifier
+ * @property string|null $DBSnapshotIdentifier
+ * @property string|null $SnapshotType
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property string|null $DbiResourceId
  */
 class DescribeDBSnapshotTenantDatabasesRequest extends Request
 {
     /**
      * @param array{
-     *     DBInstanceIdentifier?: string,
-     *     DBSnapshotIdentifier?: string,
-     *     SnapshotType?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     DbiResourceId?: string
+     *     DBInstanceIdentifier?: string|null,
+     *     DBSnapshotIdentifier?: string|null,
+     *     SnapshotType?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     DbiResourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

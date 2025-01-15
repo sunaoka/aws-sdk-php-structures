@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\SendOutboundEmail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CampaignId
- * @property string $OutboundRequestId
+ * @property string|null $CampaignId
+ * @property string|null $OutboundRequestId
  */
 class SourceCampaign extends Shape
 {
     /**
      * @param array{
-     *     CampaignId?: string,
-     *     OutboundRequestId?: string
+     *     CampaignId?: string|null,
+     *     OutboundRequestId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

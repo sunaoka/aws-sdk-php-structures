@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeSnapshots;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterName
- * @property string $SnapshotName
- * @property string $Source
- * @property string $NextToken
- * @property int $MaxResults
- * @property bool $ShowDetail
+ * @property string|null $ClusterName
+ * @property string|null $SnapshotName
+ * @property string|null $Source
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
+ * @property bool|null $ShowDetail
  */
 class DescribeSnapshotsRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterName?: string,
-     *     SnapshotName?: string,
-     *     Source?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int,
-     *     ShowDetail?: bool
+     *     ClusterName?: string|null,
+     *     SnapshotName?: string|null,
+     *     Source?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null,
+     *     ShowDetail?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

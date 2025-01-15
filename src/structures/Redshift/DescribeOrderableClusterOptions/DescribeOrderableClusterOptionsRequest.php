@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeOrderableClusterOptions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterVersion
- * @property string $NodeType
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $ClusterVersion
+ * @property string|null $NodeType
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeOrderableClusterOptionsRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterVersion?: string,
-     *     NodeType?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     ClusterVersion?: string|null,
+     *     NodeType?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

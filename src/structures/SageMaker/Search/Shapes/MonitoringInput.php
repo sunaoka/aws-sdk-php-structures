@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EndpointInput $EndpointInput
- * @property BatchTransformInput $BatchTransformInput
+ * @property EndpointInput|null $EndpointInput
+ * @property BatchTransformInput|null $BatchTransformInput
  */
 class MonitoringInput extends Shape
 {
     /**
      * @param array{
-     *     EndpointInput?: EndpointInput,
-     *     BatchTransformInput?: BatchTransformInput
+     *     EndpointInput?: EndpointInput|null,
+     *     BatchTransformInput?: BatchTransformInput|null
      * } $args
      */
     public function __construct(array $args = [])

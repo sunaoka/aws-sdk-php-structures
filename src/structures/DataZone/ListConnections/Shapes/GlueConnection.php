@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\DataZone\ListConnections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $athenaProperties
- * @property AuthenticationConfiguration $authenticationConfiguration
- * @property list<'SPARK'|'ATHENA'|'PYTHON'> $compatibleComputeEnvironments
- * @property array<string, string> $connectionProperties
- * @property int<1, 2> $connectionSchemaVersion
- * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA' $connectionType
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $description
- * @property \Aws\Api\DateTimeResult $lastConnectionValidationTime
- * @property string $lastUpdatedBy
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property list<string> $matchCriteria
- * @property string $name
- * @property PhysicalConnectionRequirements $physicalConnectionRequirements
- * @property array<string, string> $pythonProperties
- * @property array<string, string> $sparkProperties
- * @property 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'READY'|'UPDATING'|'UPDATE_FAILED'|'DELETED' $status
- * @property string $statusReason
+ * @property array<string, string>|null $athenaProperties
+ * @property AuthenticationConfiguration|null $authenticationConfiguration
+ * @property list<'SPARK'|'ATHENA'|'PYTHON'>|null $compatibleComputeEnvironments
+ * @property array<string, string>|null $connectionProperties
+ * @property int<1, 2>|null $connectionSchemaVersion
+ * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|null $connectionType
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $lastConnectionValidationTime
+ * @property string|null $lastUpdatedBy
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property list<string>|null $matchCriteria
+ * @property string|null $name
+ * @property PhysicalConnectionRequirements|null $physicalConnectionRequirements
+ * @property array<string, string>|null $pythonProperties
+ * @property array<string, string>|null $sparkProperties
+ * @property 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'READY'|'UPDATING'|'UPDATE_FAILED'|'DELETED'|null $status
+ * @property string|null $statusReason
  */
 class GlueConnection extends Shape
 {
     /**
      * @param array{
-     *     athenaProperties?: array<string, string>,
-     *     authenticationConfiguration?: AuthenticationConfiguration,
-     *     compatibleComputeEnvironments?: list<'SPARK'|'ATHENA'|'PYTHON'>,
-     *     connectionProperties?: array<string, string>,
-     *     connectionSchemaVersion?: int<1, 2>,
-     *     connectionType?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA',
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     lastConnectionValidationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedBy?: string,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     matchCriteria?: list<string>,
-     *     name?: string,
-     *     physicalConnectionRequirements?: PhysicalConnectionRequirements,
-     *     pythonProperties?: array<string, string>,
-     *     sparkProperties?: array<string, string>,
-     *     status?: 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'READY'|'UPDATING'|'UPDATE_FAILED'|'DELETED',
-     *     statusReason?: string
+     *     athenaProperties?: array<string, string>|null,
+     *     authenticationConfiguration?: AuthenticationConfiguration|null,
+     *     compatibleComputeEnvironments?: list<'SPARK'|'ATHENA'|'PYTHON'>|null,
+     *     connectionProperties?: array<string, string>|null,
+     *     connectionSchemaVersion?: int<1, 2>|null,
+     *     connectionType?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     description?: string|null,
+     *     lastConnectionValidationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedBy?: string|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     matchCriteria?: list<string>|null,
+     *     name?: string|null,
+     *     physicalConnectionRequirements?: PhysicalConnectionRequirements|null,
+     *     pythonProperties?: array<string, string>|null,
+     *     sparkProperties?: array<string, string>|null,
+     *     status?: 'CREATING'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED'|'READY'|'UPDATING'|'UPDATE_FAILED'|'DELETED'|null,
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteNetworkInsightsAccessScope;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $NetworkInsightsAccessScopeId
  */
 class DeleteNetworkInsightsAccessScopeRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     NetworkInsightsAccessScopeId: string
      * } $args
      */

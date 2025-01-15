@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MemoryDB\BatchUpdateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $ProgressPercentage
+ * @property double|null $ProgressPercentage
  */
 class SlotMigration extends Shape
 {
     /**
-     * @param array{ProgressPercentage?: double} $args
+     * @param array{ProgressPercentage?: double|null} $args
      */
     public function __construct(array $args = [])
     {

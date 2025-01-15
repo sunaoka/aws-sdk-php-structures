@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AwsStepFunctionStateMachineLoggingConfigurationDestinationsDetails> $Destinations
- * @property bool $IncludeExecutionData
- * @property string $Level
+ * @property list<AwsStepFunctionStateMachineLoggingConfigurationDestinationsDetails>|null $Destinations
+ * @property bool|null $IncludeExecutionData
+ * @property string|null $Level
  */
 class AwsStepFunctionStateMachineLoggingConfigurationDetails extends Shape
 {
     /**
      * @param array{
-     *     Destinations?: list<AwsStepFunctionStateMachineLoggingConfigurationDestinationsDetails>,
-     *     IncludeExecutionData?: bool,
-     *     Level?: string
+     *     Destinations?: list<AwsStepFunctionStateMachineLoggingConfigurationDestinationsDetails>|null,
+     *     IncludeExecutionData?: bool|null,
+     *     Level?: string|null
      * } $args
      */
     public function __construct(array $args = [])

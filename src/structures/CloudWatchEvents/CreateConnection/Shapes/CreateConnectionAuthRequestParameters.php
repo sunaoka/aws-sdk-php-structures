@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CreateConnectionBasicAuthRequestParameters $BasicAuthParameters
- * @property CreateConnectionOAuthRequestParameters $OAuthParameters
- * @property CreateConnectionApiKeyAuthRequestParameters $ApiKeyAuthParameters
- * @property ConnectionHttpParameters $InvocationHttpParameters
+ * @property CreateConnectionBasicAuthRequestParameters|null $BasicAuthParameters
+ * @property CreateConnectionOAuthRequestParameters|null $OAuthParameters
+ * @property CreateConnectionApiKeyAuthRequestParameters|null $ApiKeyAuthParameters
+ * @property ConnectionHttpParameters|null $InvocationHttpParameters
  */
 class CreateConnectionAuthRequestParameters extends Shape
 {
     /**
      * @param array{
-     *     BasicAuthParameters?: CreateConnectionBasicAuthRequestParameters,
-     *     OAuthParameters?: CreateConnectionOAuthRequestParameters,
-     *     ApiKeyAuthParameters?: CreateConnectionApiKeyAuthRequestParameters,
-     *     InvocationHttpParameters?: ConnectionHttpParameters
+     *     BasicAuthParameters?: CreateConnectionBasicAuthRequestParameters|null,
+     *     OAuthParameters?: CreateConnectionOAuthRequestParameters|null,
+     *     ApiKeyAuthParameters?: CreateConnectionApiKeyAuthRequestParameters|null,
+     *     InvocationHttpParameters?: ConnectionHttpParameters|null
      * } $args
      */
     public function __construct(array $args = [])

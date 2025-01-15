@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'Count'|'Missed'|'Detected'|'UtteranceTimestamp' $name
  * @property 'Sum'|'Avg'|'Max' $statistic
- * @property 'Ascending'|'Descending' $order
+ * @property 'Ascending'|'Descending'|null $order
  */
 class AnalyticsUtteranceMetric extends Shape
 {
@@ -15,7 +15,7 @@ class AnalyticsUtteranceMetric extends Shape
      * @param array{
      *     name: 'Count'|'Missed'|'Detected'|'UtteranceTimestamp',
      *     statistic: 'Sum'|'Avg'|'Max',
-     *     order?: 'Ascending'|'Descending'
+     *     order?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args)

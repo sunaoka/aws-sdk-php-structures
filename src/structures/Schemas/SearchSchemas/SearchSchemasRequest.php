@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Keywords
- * @property int $Limit
- * @property string $NextToken
+ * @property int|null $Limit
+ * @property string|null $NextToken
  * @property string $RegistryName
  */
 class SearchSchemasRequest extends Request
@@ -15,8 +15,8 @@ class SearchSchemasRequest extends Request
     /**
      * @param array{
      *     Keywords: string,
-     *     Limit?: int,
-     *     NextToken?: string,
+     *     Limit?: int|null,
+     *     NextToken?: string|null,
      *     RegistryName: string
      * } $args
      */

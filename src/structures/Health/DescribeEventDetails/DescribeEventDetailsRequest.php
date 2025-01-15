@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $eventArns
- * @property string $locale
+ * @property string|null $locale
  */
 class DescribeEventDetailsRequest extends Request
 {
     /**
      * @param array{
      *     eventArns: list<string>,
-     *     locale?: string
+     *     locale?: string|null
      * } $args
      */
     public function __construct(array $args)

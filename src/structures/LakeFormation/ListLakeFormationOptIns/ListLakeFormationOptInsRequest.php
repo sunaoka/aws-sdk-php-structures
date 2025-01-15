@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\ListLakeFormationOptIns;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\DataLakePrincipal $Principal
- * @property Shapes\Resource $Resource
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property Shapes\DataLakePrincipal|null $Principal
+ * @property Shapes\Resource|null $Resource
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListLakeFormationOptInsRequest extends Request
 {
     /**
      * @param array{
-     *     Principal?: Shapes\DataLakePrincipal,
-     *     Resource?: Shapes\Resource,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     Principal?: Shapes\DataLakePrincipal|null,
+     *     Resource?: Shapes\Resource|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

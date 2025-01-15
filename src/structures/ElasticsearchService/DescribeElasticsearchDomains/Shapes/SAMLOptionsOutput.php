@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeElasticsearchDomai
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property SAMLIdp $Idp
- * @property string $SubjectKey
- * @property string $RolesKey
- * @property int $SessionTimeoutMinutes
+ * @property bool|null $Enabled
+ * @property SAMLIdp|null $Idp
+ * @property string|null $SubjectKey
+ * @property string|null $RolesKey
+ * @property int|null $SessionTimeoutMinutes
  */
 class SAMLOptionsOutput extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     Idp?: SAMLIdp,
-     *     SubjectKey?: string,
-     *     RolesKey?: string,
-     *     SessionTimeoutMinutes?: int
+     *     Enabled?: bool|null,
+     *     Idp?: SAMLIdp|null,
+     *     SubjectKey?: string|null,
+     *     RolesKey?: string|null,
+     *     SessionTimeoutMinutes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

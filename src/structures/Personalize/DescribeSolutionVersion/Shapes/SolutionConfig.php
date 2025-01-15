@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeSolutionVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eventValueThreshold
- * @property HPOConfig $hpoConfig
- * @property array<string, string> $algorithmHyperParameters
- * @property array<string, string> $featureTransformationParameters
- * @property AutoMLConfig $autoMLConfig
- * @property OptimizationObjective $optimizationObjective
- * @property TrainingDataConfig $trainingDataConfig
- * @property AutoTrainingConfig $autoTrainingConfig
+ * @property string|null $eventValueThreshold
+ * @property HPOConfig|null $hpoConfig
+ * @property array<string, string>|null $algorithmHyperParameters
+ * @property array<string, string>|null $featureTransformationParameters
+ * @property AutoMLConfig|null $autoMLConfig
+ * @property OptimizationObjective|null $optimizationObjective
+ * @property TrainingDataConfig|null $trainingDataConfig
+ * @property AutoTrainingConfig|null $autoTrainingConfig
  */
 class SolutionConfig extends Shape
 {
     /**
      * @param array{
-     *     eventValueThreshold?: string,
-     *     hpoConfig?: HPOConfig,
-     *     algorithmHyperParameters?: array<string, string>,
-     *     featureTransformationParameters?: array<string, string>,
-     *     autoMLConfig?: AutoMLConfig,
-     *     optimizationObjective?: OptimizationObjective,
-     *     trainingDataConfig?: TrainingDataConfig,
-     *     autoTrainingConfig?: AutoTrainingConfig
+     *     eventValueThreshold?: string|null,
+     *     hpoConfig?: HPOConfig|null,
+     *     algorithmHyperParameters?: array<string, string>|null,
+     *     featureTransformationParameters?: array<string, string>|null,
+     *     autoMLConfig?: AutoMLConfig|null,
+     *     optimizationObjective?: OptimizationObjective|null,
+     *     trainingDataConfig?: TrainingDataConfig|null,
+     *     autoTrainingConfig?: AutoTrainingConfig|null
      * } $args
      */
     public function __construct(array $args = [])

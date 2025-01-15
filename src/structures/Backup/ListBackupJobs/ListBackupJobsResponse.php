@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Backup\ListBackupJobs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BackupJob> $BackupJobs
- * @property string $NextToken
+ * @property list<Shapes\BackupJob>|null $BackupJobs
+ * @property string|null $NextToken
  */
 class ListBackupJobsResponse extends Response
 {

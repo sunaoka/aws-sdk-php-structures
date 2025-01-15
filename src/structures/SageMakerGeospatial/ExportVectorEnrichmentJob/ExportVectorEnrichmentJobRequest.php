@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $ExecutionRoleArn
  * @property Shapes\ExportVectorEnrichmentJobOutputConfig $OutputConfig
  */
@@ -15,7 +15,7 @@ class ExportVectorEnrichmentJobRequest extends Request
     /**
      * @param array{
      *     Arn: string,
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     ExecutionRoleArn: string,
      *     OutputConfig: Shapes\ExportVectorEnrichmentJobOutputConfig
      * } $args

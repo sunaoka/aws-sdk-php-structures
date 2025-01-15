@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceBackupVaultName
  * @property string $DestinationBackupVaultArn
  * @property string $IamRoleArn
- * @property string $IdempotencyToken
- * @property Shapes\Lifecycle $Lifecycle
+ * @property string|null $IdempotencyToken
+ * @property Shapes\Lifecycle|null $Lifecycle
  */
 class StartCopyJobRequest extends Request
 {
@@ -20,8 +20,8 @@ class StartCopyJobRequest extends Request
      *     SourceBackupVaultName: string,
      *     DestinationBackupVaultArn: string,
      *     IamRoleArn: string,
-     *     IdempotencyToken?: string,
-     *     Lifecycle?: Shapes\Lifecycle
+     *     IdempotencyToken?: string|null,
+     *     Lifecycle?: Shapes\Lifecycle|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $DestinationName
- * @property string $Name
- * @property string $Description
- * @property Shapes\LoRaWANUpdateDevice $LoRaWAN
- * @property 'Enabled'|'Disabled' $Positioning
+ * @property string|null $DestinationName
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property Shapes\LoRaWANUpdateDevice|null $LoRaWAN
+ * @property 'Enabled'|'Disabled'|null $Positioning
  */
 class UpdateWirelessDeviceRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     DestinationName?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     LoRaWAN?: Shapes\LoRaWANUpdateDevice,
-     *     Positioning?: 'Enabled'|'Disabled'
+     *     DestinationName?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     LoRaWAN?: Shapes\LoRaWANUpdateDevice|null,
+     *     Positioning?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args)

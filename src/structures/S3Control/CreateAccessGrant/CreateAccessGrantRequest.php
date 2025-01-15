@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $AccessGrantsLocationId
- * @property Shapes\AccessGrantsLocationConfiguration $AccessGrantsLocationConfiguration
+ * @property Shapes\AccessGrantsLocationConfiguration|null $AccessGrantsLocationConfiguration
  * @property Shapes\Grantee $Grantee
  * @property 'READ'|'WRITE'|'READWRITE' $Permission
- * @property string $ApplicationArn
- * @property 'Object' $S3PrefixType
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ApplicationArn
+ * @property 'Object'|null $S3PrefixType
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateAccessGrantRequest extends Request
 {
@@ -20,12 +20,12 @@ class CreateAccessGrantRequest extends Request
      * @param array{
      *     AccountId: string,
      *     AccessGrantsLocationId: string,
-     *     AccessGrantsLocationConfiguration?: Shapes\AccessGrantsLocationConfiguration,
+     *     AccessGrantsLocationConfiguration?: Shapes\AccessGrantsLocationConfiguration|null,
      *     Grantee: Shapes\Grantee,
      *     Permission: 'READ'|'WRITE'|'READWRITE',
-     *     ApplicationArn?: string,
-     *     S3PrefixType?: 'Object',
-     *     Tags?: list<Shapes\Tag>
+     *     ApplicationArn?: string|null,
+     *     S3PrefixType?: 'Object'|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsCloudFrontDistributionOriginGroupFailover $FailoverCriteria
+ * @property AwsCloudFrontDistributionOriginGroupFailover|null $FailoverCriteria
  */
 class AwsCloudFrontDistributionOriginGroup extends Shape
 {
     /**
-     * @param array{FailoverCriteria?: AwsCloudFrontDistributionOriginGroupFailover} $args
+     * @param array{FailoverCriteria?: AwsCloudFrontDistributionOriginGroupFailover|null} $args
      */
     public function __construct(array $args = [])
     {

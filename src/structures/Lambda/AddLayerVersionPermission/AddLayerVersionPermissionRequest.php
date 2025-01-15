@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StatementId
  * @property string $Action
  * @property string $Principal
- * @property string $OrganizationId
- * @property string $RevisionId
+ * @property string|null $OrganizationId
+ * @property string|null $RevisionId
  */
 class AddLayerVersionPermissionRequest extends Request
 {
@@ -22,8 +22,8 @@ class AddLayerVersionPermissionRequest extends Request
      *     StatementId: string,
      *     Action: string,
      *     Principal: string,
-     *     OrganizationId?: string,
-     *     RevisionId?: string
+     *     OrganizationId?: string|null,
+     *     RevisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

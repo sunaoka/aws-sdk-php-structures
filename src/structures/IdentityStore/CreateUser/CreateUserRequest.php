@@ -6,38 +6,38 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IdentityStoreId
- * @property string $UserName
- * @property Shapes\Name $Name
- * @property string $DisplayName
- * @property string $NickName
- * @property string $ProfileUrl
- * @property list<Shapes\Email> $Emails
- * @property list<Shapes\Address> $Addresses
- * @property list<Shapes\PhoneNumber> $PhoneNumbers
- * @property string $UserType
- * @property string $Title
- * @property string $PreferredLanguage
- * @property string $Locale
- * @property string $Timezone
+ * @property string|null $UserName
+ * @property Shapes\Name|null $Name
+ * @property string|null $DisplayName
+ * @property string|null $NickName
+ * @property string|null $ProfileUrl
+ * @property list<Shapes\Email>|null $Emails
+ * @property list<Shapes\Address>|null $Addresses
+ * @property list<Shapes\PhoneNumber>|null $PhoneNumbers
+ * @property string|null $UserType
+ * @property string|null $Title
+ * @property string|null $PreferredLanguage
+ * @property string|null $Locale
+ * @property string|null $Timezone
  */
 class CreateUserRequest extends Request
 {
     /**
      * @param array{
      *     IdentityStoreId: string,
-     *     UserName?: string,
-     *     Name?: Shapes\Name,
-     *     DisplayName?: string,
-     *     NickName?: string,
-     *     ProfileUrl?: string,
-     *     Emails?: list<Shapes\Email>,
-     *     Addresses?: list<Shapes\Address>,
-     *     PhoneNumbers?: list<Shapes\PhoneNumber>,
-     *     UserType?: string,
-     *     Title?: string,
-     *     PreferredLanguage?: string,
-     *     Locale?: string,
-     *     Timezone?: string
+     *     UserName?: string|null,
+     *     Name?: Shapes\Name|null,
+     *     DisplayName?: string|null,
+     *     NickName?: string|null,
+     *     ProfileUrl?: string|null,
+     *     Emails?: list<Shapes\Email>|null,
+     *     Addresses?: list<Shapes\Address>|null,
+     *     PhoneNumbers?: list<Shapes\PhoneNumber>|null,
+     *     UserType?: string|null,
+     *     Title?: string|null,
+     *     PreferredLanguage?: string|null,
+     *     Locale?: string|null,
+     *     Timezone?: string|null
      * } $args
      */
     public function __construct(array $args)

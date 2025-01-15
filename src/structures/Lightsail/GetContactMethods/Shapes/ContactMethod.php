@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetContactMethods\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $contactEndpoint
- * @property 'PendingVerification'|'Valid'|'Invalid' $status
- * @property 'Email'|'SMS' $protocol
- * @property string $name
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property ResourceLocation $location
- * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket' $resourceType
- * @property string $supportCode
+ * @property string|null $contactEndpoint
+ * @property 'PendingVerification'|'Valid'|'Invalid'|null $status
+ * @property 'Email'|'SMS'|null $protocol
+ * @property string|null $name
+ * @property string|null $arn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property ResourceLocation|null $location
+ * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null $resourceType
+ * @property string|null $supportCode
  */
 class ContactMethod extends Shape
 {
     /**
      * @param array{
-     *     contactEndpoint?: string,
-     *     status?: 'PendingVerification'|'Valid'|'Invalid',
-     *     protocol?: 'Email'|'SMS',
-     *     name?: string,
-     *     arn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     location?: ResourceLocation,
-     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket',
-     *     supportCode?: string
+     *     contactEndpoint?: string|null,
+     *     status?: 'PendingVerification'|'Valid'|'Invalid'|null,
+     *     protocol?: 'Email'|'SMS'|null,
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     location?: ResourceLocation|null,
+     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null,
+     *     supportCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

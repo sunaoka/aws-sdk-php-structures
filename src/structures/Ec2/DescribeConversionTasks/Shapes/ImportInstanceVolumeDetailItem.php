@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeConversionTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property int $BytesConverted
- * @property string $Description
- * @property DiskImageDescription $Image
- * @property string $Status
- * @property string $StatusMessage
- * @property DiskImageVolumeDescription $Volume
+ * @property string|null $AvailabilityZone
+ * @property int|null $BytesConverted
+ * @property string|null $Description
+ * @property DiskImageDescription|null $Image
+ * @property string|null $Status
+ * @property string|null $StatusMessage
+ * @property DiskImageVolumeDescription|null $Volume
  */
 class ImportInstanceVolumeDetailItem extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     BytesConverted?: int,
-     *     Description?: string,
-     *     Image?: DiskImageDescription,
-     *     Status?: string,
-     *     StatusMessage?: string,
-     *     Volume?: DiskImageVolumeDescription
+     *     AvailabilityZone?: string|null,
+     *     BytesConverted?: int|null,
+     *     Description?: string|null,
+     *     Image?: DiskImageDescription|null,
+     *     Status?: string|null,
+     *     StatusMessage?: string|null,
+     *     Volume?: DiskImageVolumeDescription|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CategoryFilter $CategoryFilter
- * @property NumericRangeFilter $NumericRangeFilter
- * @property NumericEqualityFilter $NumericEqualityFilter
- * @property TimeEqualityFilter $TimeEqualityFilter
- * @property TimeRangeFilter $TimeRangeFilter
- * @property RelativeDatesFilter $RelativeDatesFilter
- * @property TopBottomFilter $TopBottomFilter
- * @property NestedFilter $NestedFilter
+ * @property CategoryFilter|null $CategoryFilter
+ * @property NumericRangeFilter|null $NumericRangeFilter
+ * @property NumericEqualityFilter|null $NumericEqualityFilter
+ * @property TimeEqualityFilter|null $TimeEqualityFilter
+ * @property TimeRangeFilter|null $TimeRangeFilter
+ * @property RelativeDatesFilter|null $RelativeDatesFilter
+ * @property TopBottomFilter|null $TopBottomFilter
+ * @property NestedFilter|null $NestedFilter
  */
 class Filter extends Shape
 {
     /**
      * @param array{
-     *     CategoryFilter?: CategoryFilter,
-     *     NumericRangeFilter?: NumericRangeFilter,
-     *     NumericEqualityFilter?: NumericEqualityFilter,
-     *     TimeEqualityFilter?: TimeEqualityFilter,
-     *     TimeRangeFilter?: TimeRangeFilter,
-     *     RelativeDatesFilter?: RelativeDatesFilter,
-     *     TopBottomFilter?: TopBottomFilter,
-     *     NestedFilter?: NestedFilter
+     *     CategoryFilter?: CategoryFilter|null,
+     *     NumericRangeFilter?: NumericRangeFilter|null,
+     *     NumericEqualityFilter?: NumericEqualityFilter|null,
+     *     TimeEqualityFilter?: TimeEqualityFilter|null,
+     *     TimeRangeFilter?: TimeRangeFilter|null,
+     *     RelativeDatesFilter?: RelativeDatesFilter|null,
+     *     TopBottomFilter?: TopBottomFilter|null,
+     *     NestedFilter?: NestedFilter|null
      * } $args
      */
     public function __construct(array $args = [])

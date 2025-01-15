@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ResourceGroups\ListTagSyncTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroupArn
- * @property string $GroupName
- * @property string $TaskArn
- * @property string $TagKey
- * @property string $TagValue
- * @property string $RoleArn
- * @property 'ACTIVE'|'ERROR' $Status
- * @property string $ErrorMessage
- * @property \Aws\Api\DateTimeResult $CreatedAt
+ * @property string|null $GroupArn
+ * @property string|null $GroupName
+ * @property string|null $TaskArn
+ * @property string|null $TagKey
+ * @property string|null $TagValue
+ * @property string|null $RoleArn
+ * @property 'ACTIVE'|'ERROR'|null $Status
+ * @property string|null $ErrorMessage
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
  */
 class TagSyncTaskItem extends Shape
 {
     /**
      * @param array{
-     *     GroupArn?: string,
-     *     GroupName?: string,
-     *     TaskArn?: string,
-     *     TagKey?: string,
-     *     TagValue?: string,
-     *     RoleArn?: string,
-     *     Status?: 'ACTIVE'|'ERROR',
-     *     ErrorMessage?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult
+     *     GroupArn?: string|null,
+     *     GroupName?: string|null,
+     *     TaskArn?: string|null,
+     *     TagKey?: string|null,
+     *     TagValue?: string|null,
+     *     RoleArn?: string|null,
+     *     Status?: 'ACTIVE'|'ERROR'|null,
+     *     ErrorMessage?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecr\BatchCheckLayerAvailability\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $layerDigest
- * @property 'AVAILABLE'|'UNAVAILABLE' $layerAvailability
- * @property int $layerSize
- * @property string $mediaType
+ * @property string|null $layerDigest
+ * @property 'AVAILABLE'|'UNAVAILABLE'|null $layerAvailability
+ * @property int|null $layerSize
+ * @property string|null $mediaType
  */
 class Layer extends Shape
 {
     /**
      * @param array{
-     *     layerDigest?: string,
-     *     layerAvailability?: 'AVAILABLE'|'UNAVAILABLE',
-     *     layerSize?: int,
-     *     mediaType?: string
+     *     layerDigest?: string|null,
+     *     layerAvailability?: 'AVAILABLE'|'UNAVAILABLE'|null,
+     *     layerSize?: int|null,
+     *     mediaType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

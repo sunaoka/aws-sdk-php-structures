@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $KeyFingerprint
  * @property list<Shapes\EntitlementData> $Entitlements
  * @property string $ClientToken
- * @property string $Beneficiary
- * @property string $NodeId
+ * @property string|null $Beneficiary
+ * @property string|null $NodeId
  */
 class CheckoutLicenseRequest extends Request
 {
@@ -22,8 +22,8 @@ class CheckoutLicenseRequest extends Request
      *     KeyFingerprint: string,
      *     Entitlements: list<Shapes\EntitlementData>,
      *     ClientToken: string,
-     *     Beneficiary?: string,
-     *     NodeId?: string
+     *     Beneficiary?: string|null,
+     *     NodeId?: string|null
      * } $args
      */
     public function __construct(array $args)

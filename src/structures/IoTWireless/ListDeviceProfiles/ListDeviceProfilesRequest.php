@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListDeviceProfiles;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<0, 250> $MaxResults
- * @property 'Sidewalk'|'LoRaWAN' $DeviceProfileType
+ * @property string|null $NextToken
+ * @property int<0, 250>|null $MaxResults
+ * @property 'Sidewalk'|'LoRaWAN'|null $DeviceProfileType
  */
 class ListDeviceProfilesRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 250>,
-     *     DeviceProfileType?: 'Sidewalk'|'LoRaWAN'
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 250>|null,
+     *     DeviceProfileType?: 'Sidewalk'|'LoRaWAN'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $inReplyTo
- * @property string $clientRequestToken
+ * @property string|null $clientRequestToken
  * @property string $content
  */
 class PostCommentReplyRequest extends Request
@@ -14,7 +14,7 @@ class PostCommentReplyRequest extends Request
     /**
      * @param array{
      *     inReplyTo: string,
-     *     clientRequestToken?: string,
+     *     clientRequestToken?: string|null,
      *     content: string
      * } $args
      */

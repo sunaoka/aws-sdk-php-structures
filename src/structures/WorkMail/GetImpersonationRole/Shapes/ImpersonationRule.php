@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ImpersonationRuleId
- * @property string $Name
- * @property string $Description
+ * @property string|null $Name
+ * @property string|null $Description
  * @property 'ALLOW'|'DENY' $Effect
- * @property list<string> $TargetUsers
- * @property list<string> $NotTargetUsers
+ * @property list<string>|null $TargetUsers
+ * @property list<string>|null $NotTargetUsers
  */
 class ImpersonationRule extends Shape
 {
     /**
      * @param array{
      *     ImpersonationRuleId: string,
-     *     Name?: string,
-     *     Description?: string,
+     *     Name?: string|null,
+     *     Description?: string|null,
      *     Effect: 'ALLOW'|'DENY',
-     *     TargetUsers?: list<string>,
-     *     NotTargetUsers?: list<string>
+     *     TargetUsers?: list<string>|null,
+     *     NotTargetUsers?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

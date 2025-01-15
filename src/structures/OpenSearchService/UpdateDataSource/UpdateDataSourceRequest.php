@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property string $Name
  * @property Shapes\DataSourceType $DataSourceType
- * @property string $Description
- * @property 'ACTIVE'|'DISABLED' $Status
+ * @property string|null $Description
+ * @property 'ACTIVE'|'DISABLED'|null $Status
  */
 class UpdateDataSourceRequest extends Request
 {
@@ -18,8 +18,8 @@ class UpdateDataSourceRequest extends Request
      *     DomainName: string,
      *     Name: string,
      *     DataSourceType: Shapes\DataSourceType,
-     *     Description?: string,
-     *     Status?: 'ACTIVE'|'DISABLED'
+     *     Description?: string|null,
+     *     Status?: 'ACTIVE'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

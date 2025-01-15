@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListTokens\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TokenId
- * @property string $TokenType
- * @property string $LicenseArn
- * @property string $ExpirationTime
- * @property list<string> $TokenProperties
- * @property list<string> $RoleArns
- * @property string $Status
+ * @property string|null $TokenId
+ * @property string|null $TokenType
+ * @property string|null $LicenseArn
+ * @property string|null $ExpirationTime
+ * @property list<string>|null $TokenProperties
+ * @property list<string>|null $RoleArns
+ * @property string|null $Status
  */
 class TokenData extends Shape
 {
     /**
      * @param array{
-     *     TokenId?: string,
-     *     TokenType?: string,
-     *     LicenseArn?: string,
-     *     ExpirationTime?: string,
-     *     TokenProperties?: list<string>,
-     *     RoleArns?: list<string>,
-     *     Status?: string
+     *     TokenId?: string|null,
+     *     TokenType?: string|null,
+     *     LicenseArn?: string|null,
+     *     ExpirationTime?: string|null,
+     *     TokenProperties?: list<string>|null,
+     *     RoleArns?: list<string>|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

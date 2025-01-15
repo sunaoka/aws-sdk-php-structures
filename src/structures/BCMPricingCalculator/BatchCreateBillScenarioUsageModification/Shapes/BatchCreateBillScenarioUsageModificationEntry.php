@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $serviceCode
  * @property string $usageType
  * @property string $operation
- * @property string $availabilityZone
+ * @property string|null $availabilityZone
  * @property string $key
- * @property string $group
+ * @property string|null $group
  * @property string $usageAccountId
- * @property list<UsageAmount> $amounts
- * @property HistoricalUsageEntity $historicalUsage
+ * @property list<UsageAmount>|null $amounts
+ * @property HistoricalUsageEntity|null $historicalUsage
  */
 class BatchCreateBillScenarioUsageModificationEntry extends Shape
 {
@@ -22,12 +22,12 @@ class BatchCreateBillScenarioUsageModificationEntry extends Shape
      *     serviceCode: string,
      *     usageType: string,
      *     operation: string,
-     *     availabilityZone?: string,
+     *     availabilityZone?: string|null,
      *     key: string,
-     *     group?: string,
+     *     group?: string|null,
      *     usageAccountId: string,
-     *     amounts?: list<UsageAmount>,
-     *     historicalUsage?: HistoricalUsageEntity
+     *     amounts?: list<UsageAmount>|null,
+     *     historicalUsage?: HistoricalUsageEntity|null
      * } $args
      */
     public function __construct(array $args)

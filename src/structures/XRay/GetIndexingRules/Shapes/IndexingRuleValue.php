@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\XRay\GetIndexingRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProbabilisticRuleValue $Probabilistic
+ * @property ProbabilisticRuleValue|null $Probabilistic
  */
 class IndexingRuleValue extends Shape
 {
     /**
-     * @param array{Probabilistic?: ProbabilisticRuleValue} $args
+     * @param array{Probabilistic?: ProbabilisticRuleValue|null} $args
      */
     public function __construct(array $args = [])
     {

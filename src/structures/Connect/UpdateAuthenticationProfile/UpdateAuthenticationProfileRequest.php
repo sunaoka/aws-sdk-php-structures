@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AuthenticationProfileId
  * @property string $InstanceId
- * @property string $Name
- * @property string $Description
- * @property list<string> $AllowedIps
- * @property list<string> $BlockedIps
- * @property int<10, 60> $PeriodicSessionDuration
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property list<string>|null $AllowedIps
+ * @property list<string>|null $BlockedIps
+ * @property int<10, 60>|null $PeriodicSessionDuration
  */
 class UpdateAuthenticationProfileRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateAuthenticationProfileRequest extends Request
      * @param array{
      *     AuthenticationProfileId: string,
      *     InstanceId: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     AllowedIps?: list<string>,
-     *     BlockedIps?: list<string>,
-     *     PeriodicSessionDuration?: int<10, 60>
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     AllowedIps?: list<string>|null,
+     *     BlockedIps?: list<string>|null,
+     *     PeriodicSessionDuration?: int<10, 60>|null
      * } $args
      */
     public function __construct(array $args)

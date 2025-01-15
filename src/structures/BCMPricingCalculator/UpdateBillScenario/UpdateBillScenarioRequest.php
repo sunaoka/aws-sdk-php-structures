@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $identifier
- * @property string $name
- * @property \Aws\Api\DateTimeResult $expiresAt
+ * @property string|null $name
+ * @property \Aws\Api\DateTimeResult|null $expiresAt
  */
 class UpdateBillScenarioRequest extends Request
 {
     /**
      * @param array{
      *     identifier: string,
-     *     name?: string,
-     *     expiresAt?: \Aws\Api\DateTimeResult
+     *     name?: string|null,
+     *     expiresAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

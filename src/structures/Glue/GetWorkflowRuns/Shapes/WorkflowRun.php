@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Glue\GetWorkflowRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $WorkflowRunId
- * @property string $PreviousRunId
- * @property array<string, string> $WorkflowRunProperties
- * @property \Aws\Api\DateTimeResult $StartedOn
- * @property \Aws\Api\DateTimeResult $CompletedOn
- * @property 'RUNNING'|'COMPLETED'|'STOPPING'|'STOPPED'|'ERROR' $Status
- * @property string $ErrorMessage
- * @property WorkflowRunStatistics $Statistics
- * @property WorkflowGraph $Graph
- * @property StartingEventBatchCondition $StartingEventBatchCondition
+ * @property string|null $Name
+ * @property string|null $WorkflowRunId
+ * @property string|null $PreviousRunId
+ * @property array<string, string>|null $WorkflowRunProperties
+ * @property \Aws\Api\DateTimeResult|null $StartedOn
+ * @property \Aws\Api\DateTimeResult|null $CompletedOn
+ * @property 'RUNNING'|'COMPLETED'|'STOPPING'|'STOPPED'|'ERROR'|null $Status
+ * @property string|null $ErrorMessage
+ * @property WorkflowRunStatistics|null $Statistics
+ * @property WorkflowGraph|null $Graph
+ * @property StartingEventBatchCondition|null $StartingEventBatchCondition
  */
 class WorkflowRun extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     WorkflowRunId?: string,
-     *     PreviousRunId?: string,
-     *     WorkflowRunProperties?: array<string, string>,
-     *     StartedOn?: \Aws\Api\DateTimeResult,
-     *     CompletedOn?: \Aws\Api\DateTimeResult,
-     *     Status?: 'RUNNING'|'COMPLETED'|'STOPPING'|'STOPPED'|'ERROR',
-     *     ErrorMessage?: string,
-     *     Statistics?: WorkflowRunStatistics,
-     *     Graph?: WorkflowGraph,
-     *     StartingEventBatchCondition?: StartingEventBatchCondition
+     *     Name?: string|null,
+     *     WorkflowRunId?: string|null,
+     *     PreviousRunId?: string|null,
+     *     WorkflowRunProperties?: array<string, string>|null,
+     *     StartedOn?: \Aws\Api\DateTimeResult|null,
+     *     CompletedOn?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'RUNNING'|'COMPLETED'|'STOPPING'|'STOPPED'|'ERROR'|null,
+     *     ErrorMessage?: string|null,
+     *     Statistics?: WorkflowRunStatistics|null,
+     *     Graph?: WorkflowGraph|null,
+     *     StartingEventBatchCondition?: StartingEventBatchCondition|null
      * } $args
      */
     public function __construct(array $args = [])

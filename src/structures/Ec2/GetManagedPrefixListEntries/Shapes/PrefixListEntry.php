@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\GetManagedPrefixListEntries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Cidr
- * @property string $Description
+ * @property string|null $Cidr
+ * @property string|null $Description
  */
 class PrefixListEntry extends Shape
 {
     /**
      * @param array{
-     *     Cidr?: string,
-     *     Description?: string
+     *     Cidr?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

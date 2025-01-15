@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property list<string> $InstanceRefreshIds
- * @property string $NextToken
- * @property int $MaxRecords
+ * @property list<string>|null $InstanceRefreshIds
+ * @property string|null $NextToken
+ * @property int|null $MaxRecords
  */
 class DescribeInstanceRefreshesRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     InstanceRefreshIds?: list<string>,
-     *     NextToken?: string,
-     *     MaxRecords?: int
+     *     InstanceRefreshIds?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxRecords?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\FilterLogEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $logStreamName
- * @property bool $searchedCompletely
+ * @property string|null $logStreamName
+ * @property bool|null $searchedCompletely
  */
 class SearchedLogStream extends Shape
 {
     /**
      * @param array{
-     *     logStreamName?: string,
-     *     searchedCompletely?: bool
+     *     logStreamName?: string|null,
+     *     searchedCompletely?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

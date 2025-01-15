@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MongoDbAtlasConfiguration $mongoDbAtlasConfiguration
- * @property OpenSearchServerlessConfiguration $opensearchServerlessConfiguration
- * @property PineconeConfiguration $pineconeConfiguration
- * @property RdsConfiguration $rdsConfiguration
- * @property RedisEnterpriseCloudConfiguration $redisEnterpriseCloudConfiguration
+ * @property MongoDbAtlasConfiguration|null $mongoDbAtlasConfiguration
+ * @property OpenSearchServerlessConfiguration|null $opensearchServerlessConfiguration
+ * @property PineconeConfiguration|null $pineconeConfiguration
+ * @property RdsConfiguration|null $rdsConfiguration
+ * @property RedisEnterpriseCloudConfiguration|null $redisEnterpriseCloudConfiguration
  * @property 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS' $type
  */
 class StorageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     mongoDbAtlasConfiguration?: MongoDbAtlasConfiguration,
-     *     opensearchServerlessConfiguration?: OpenSearchServerlessConfiguration,
-     *     pineconeConfiguration?: PineconeConfiguration,
-     *     rdsConfiguration?: RdsConfiguration,
-     *     redisEnterpriseCloudConfiguration?: RedisEnterpriseCloudConfiguration,
+     *     mongoDbAtlasConfiguration?: MongoDbAtlasConfiguration|null,
+     *     opensearchServerlessConfiguration?: OpenSearchServerlessConfiguration|null,
+     *     pineconeConfiguration?: PineconeConfiguration|null,
+     *     rdsConfiguration?: RdsConfiguration|null,
+     *     redisEnterpriseCloudConfiguration?: RedisEnterpriseCloudConfiguration|null,
      *     type: 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS'
      * } $args
      */

@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botAliasId
  * @property string $localeId
  * @property string $sessionId
- * @property list<Shapes\Message> $messages
+ * @property list<Shapes\Message>|null $messages
  * @property Shapes\SessionState $sessionState
- * @property array<string, string> $requestAttributes
- * @property string $responseContentType
+ * @property array<string, string>|null $requestAttributes
+ * @property string|null $responseContentType
  */
 class PutSessionRequest extends Request
 {
@@ -22,10 +22,10 @@ class PutSessionRequest extends Request
      *     botAliasId: string,
      *     localeId: string,
      *     sessionId: string,
-     *     messages?: list<Shapes\Message>,
+     *     messages?: list<Shapes\Message>|null,
      *     sessionState: Shapes\SessionState,
-     *     requestAttributes?: array<string, string>,
-     *     responseContentType?: string
+     *     requestAttributes?: array<string, string>|null,
+     *     responseContentType?: string|null
      * } $args
      */
     public function __construct(array $args)

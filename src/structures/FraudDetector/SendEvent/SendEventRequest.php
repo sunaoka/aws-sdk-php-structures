@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $eventTypeName
  * @property string $eventTimestamp
  * @property array<string, string> $eventVariables
- * @property string $assignedLabel
- * @property string $labelTimestamp
+ * @property string|null $assignedLabel
+ * @property string|null $labelTimestamp
  * @property list<Shapes\Entity> $entities
  */
 class SendEventRequest extends Request
@@ -21,8 +21,8 @@ class SendEventRequest extends Request
      *     eventTypeName: string,
      *     eventTimestamp: string,
      *     eventVariables: array<string, string>,
-     *     assignedLabel?: string,
-     *     labelTimestamp?: string,
+     *     assignedLabel?: string|null,
+     *     labelTimestamp?: string|null,
      *     entities: list<Shapes\Entity>
      * } $args
      */

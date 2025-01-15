@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\kendra\Retrieve;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $QueryId
- * @property list<Shapes\RetrieveResultItem> $ResultItems
+ * @property string|null $QueryId
+ * @property list<Shapes\RetrieveResultItem>|null $ResultItems
  */
 class RetrieveResponse extends Response
 {

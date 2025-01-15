@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteDeviceRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

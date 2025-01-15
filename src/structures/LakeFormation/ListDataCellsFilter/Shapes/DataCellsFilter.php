@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DatabaseName
  * @property string $TableName
  * @property string $Name
- * @property RowFilter $RowFilter
- * @property list<string> $ColumnNames
- * @property ColumnWildcard $ColumnWildcard
- * @property string $VersionId
+ * @property RowFilter|null $RowFilter
+ * @property list<string>|null $ColumnNames
+ * @property ColumnWildcard|null $ColumnWildcard
+ * @property string|null $VersionId
  */
 class DataCellsFilter extends Shape
 {
@@ -22,10 +22,10 @@ class DataCellsFilter extends Shape
      *     DatabaseName: string,
      *     TableName: string,
      *     Name: string,
-     *     RowFilter?: RowFilter,
-     *     ColumnNames?: list<string>,
-     *     ColumnWildcard?: ColumnWildcard,
-     *     VersionId?: string
+     *     RowFilter?: RowFilter|null,
+     *     ColumnNames?: list<string>|null,
+     *     ColumnWildcard?: ColumnWildcard|null,
+     *     VersionId?: string|null
      * } $args
      */
     public function __construct(array $args)

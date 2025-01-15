@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\CreateMetricSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoleArn
- * @property list<string> $TemplatedPathList
- * @property list<string> $HistoricalDataPathList
- * @property FileFormatDescriptor $FileFormatDescriptor
+ * @property string|null $RoleArn
+ * @property list<string>|null $TemplatedPathList
+ * @property list<string>|null $HistoricalDataPathList
+ * @property FileFormatDescriptor|null $FileFormatDescriptor
  */
 class S3SourceConfig extends Shape
 {
     /**
      * @param array{
-     *     RoleArn?: string,
-     *     TemplatedPathList?: list<string>,
-     *     HistoricalDataPathList?: list<string>,
-     *     FileFormatDescriptor?: FileFormatDescriptor
+     *     RoleArn?: string|null,
+     *     TemplatedPathList?: list<string>|null,
+     *     HistoricalDataPathList?: list<string>|null,
+     *     FileFormatDescriptor?: FileFormatDescriptor|null
      * } $args
      */
     public function __construct(array $args = [])

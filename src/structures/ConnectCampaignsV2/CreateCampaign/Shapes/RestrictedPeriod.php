@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\CreateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
+ * @property string|null $name
  * @property string $startDate
  * @property string $endDate
  */
@@ -13,7 +13,7 @@ class RestrictedPeriod extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
+     *     name?: string|null,
      *     startDate: string,
      *     endDate: string
      * } $args

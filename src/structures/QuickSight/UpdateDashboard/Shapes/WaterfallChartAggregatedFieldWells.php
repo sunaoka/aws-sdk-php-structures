@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Categories
- * @property list<MeasureField> $Values
- * @property list<DimensionField> $Breakdowns
+ * @property list<DimensionField>|null $Categories
+ * @property list<MeasureField>|null $Values
+ * @property list<DimensionField>|null $Breakdowns
  */
 class WaterfallChartAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Categories?: list<DimensionField>,
-     *     Values?: list<MeasureField>,
-     *     Breakdowns?: list<DimensionField>
+     *     Categories?: list<DimensionField>|null,
+     *     Values?: list<MeasureField>|null,
+     *     Breakdowns?: list<DimensionField>|null
      * } $args
      */
     public function __construct(array $args = [])

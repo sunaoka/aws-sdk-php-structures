@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DescribeGeneratedTemplate\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PropertyPath
- * @property bool $Required
- * @property string $Description
+ * @property string|null $PropertyPath
+ * @property bool|null $Required
+ * @property string|null $Description
  */
 class WarningProperty extends Shape
 {
     /**
      * @param array{
-     *     PropertyPath?: string,
-     *     Required?: bool,
-     *     Description?: string
+     *     PropertyPath?: string|null,
+     *     Required?: bool|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property DeleteCloudFormationStepInput $stepInput
- * @property DeleteCloudFormationStepOutput $stepOutput
+ * @property DeleteCloudFormationStepOutput|null $stepOutput
  */
 class DeleteCloudFormationSummary extends Shape
 {
     /**
      * @param array{
      *     stepInput: DeleteCloudFormationStepInput,
-     *     stepOutput?: DeleteCloudFormationStepOutput
+     *     stepOutput?: DeleteCloudFormationStepOutput|null
      * } $args
      */
     public function __construct(array $args)

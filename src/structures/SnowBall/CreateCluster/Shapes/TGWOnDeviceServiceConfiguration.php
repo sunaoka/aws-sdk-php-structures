@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SnowBall\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $StorageLimit
- * @property 'TB' $StorageUnit
+ * @property int<0, max>|null $StorageLimit
+ * @property 'TB'|null $StorageUnit
  */
 class TGWOnDeviceServiceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     StorageLimit?: int<0, max>,
-     *     StorageUnit?: 'TB'
+     *     StorageLimit?: int<0, max>|null,
+     *     StorageUnit?: 'TB'|null
      * } $args
      */
     public function __construct(array $args = [])

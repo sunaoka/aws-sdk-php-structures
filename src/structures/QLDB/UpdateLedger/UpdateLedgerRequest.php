@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property bool $DeletionProtection
- * @property string $KmsKey
+ * @property bool|null $DeletionProtection
+ * @property string|null $KmsKey
  */
 class UpdateLedgerRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     DeletionProtection?: bool,
-     *     KmsKey?: string
+     *     DeletionProtection?: bool|null,
+     *     KmsKey?: string|null
      * } $args
      */
     public function __construct(array $args)

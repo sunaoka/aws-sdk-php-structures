@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'none'|'whitelist' $HeaderBehavior
- * @property Headers $Headers
+ * @property Headers|null $Headers
  */
 class CachePolicyHeadersConfig extends Shape
 {
     /**
      * @param array{
      *     HeaderBehavior: 'none'|'whitelist',
-     *     Headers?: Headers
+     *     Headers?: Headers|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeCapacityBlockExtensionHistory;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $CapacityReservationIds
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
- * @property list<Shapes\Filter> $Filters
- * @property bool $DryRun
+ * @property list<string>|null $CapacityReservationIds
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property list<Shapes\Filter>|null $Filters
+ * @property bool|null $DryRun
  */
 class DescribeCapacityBlockExtensionHistoryRequest extends Request
 {
     /**
      * @param array{
-     *     CapacityReservationIds?: list<string>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     Filters?: list<Shapes\Filter>,
-     *     DryRun?: bool
+     *     CapacityReservationIds?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

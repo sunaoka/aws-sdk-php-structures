@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\DescribeDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DeltaTime $deltaTime
+ * @property DeltaTime|null $deltaTime
  */
 class QueryFilter extends Shape
 {
     /**
-     * @param array{deltaTime?: DeltaTime} $args
+     * @param array{deltaTime?: DeltaTime|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\MergeProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountNumber
- * @property string $AdditionalInformation
- * @property string $PartyType
- * @property string $BusinessName
- * @property string $FirstName
- * @property string $MiddleName
- * @property string $LastName
- * @property string $BirthDate
- * @property string $Gender
- * @property string $PhoneNumber
- * @property string $MobilePhoneNumber
- * @property string $HomePhoneNumber
- * @property string $BusinessPhoneNumber
- * @property string $EmailAddress
- * @property string $PersonalEmailAddress
- * @property string $BusinessEmailAddress
- * @property string $Address
- * @property string $ShippingAddress
- * @property string $MailingAddress
- * @property string $BillingAddress
- * @property array<string, string> $Attributes
+ * @property string|null $AccountNumber
+ * @property string|null $AdditionalInformation
+ * @property string|null $PartyType
+ * @property string|null $BusinessName
+ * @property string|null $FirstName
+ * @property string|null $MiddleName
+ * @property string|null $LastName
+ * @property string|null $BirthDate
+ * @property string|null $Gender
+ * @property string|null $PhoneNumber
+ * @property string|null $MobilePhoneNumber
+ * @property string|null $HomePhoneNumber
+ * @property string|null $BusinessPhoneNumber
+ * @property string|null $EmailAddress
+ * @property string|null $PersonalEmailAddress
+ * @property string|null $BusinessEmailAddress
+ * @property string|null $Address
+ * @property string|null $ShippingAddress
+ * @property string|null $MailingAddress
+ * @property string|null $BillingAddress
+ * @property array<string, string>|null $Attributes
  */
 class FieldSourceProfileIds extends Shape
 {
     /**
      * @param array{
-     *     AccountNumber?: string,
-     *     AdditionalInformation?: string,
-     *     PartyType?: string,
-     *     BusinessName?: string,
-     *     FirstName?: string,
-     *     MiddleName?: string,
-     *     LastName?: string,
-     *     BirthDate?: string,
-     *     Gender?: string,
-     *     PhoneNumber?: string,
-     *     MobilePhoneNumber?: string,
-     *     HomePhoneNumber?: string,
-     *     BusinessPhoneNumber?: string,
-     *     EmailAddress?: string,
-     *     PersonalEmailAddress?: string,
-     *     BusinessEmailAddress?: string,
-     *     Address?: string,
-     *     ShippingAddress?: string,
-     *     MailingAddress?: string,
-     *     BillingAddress?: string,
-     *     Attributes?: array<string, string>
+     *     AccountNumber?: string|null,
+     *     AdditionalInformation?: string|null,
+     *     PartyType?: string|null,
+     *     BusinessName?: string|null,
+     *     FirstName?: string|null,
+     *     MiddleName?: string|null,
+     *     LastName?: string|null,
+     *     BirthDate?: string|null,
+     *     Gender?: string|null,
+     *     PhoneNumber?: string|null,
+     *     MobilePhoneNumber?: string|null,
+     *     HomePhoneNumber?: string|null,
+     *     BusinessPhoneNumber?: string|null,
+     *     EmailAddress?: string|null,
+     *     PersonalEmailAddress?: string|null,
+     *     BusinessEmailAddress?: string|null,
+     *     Address?: string|null,
+     *     ShippingAddress?: string|null,
+     *     MailingAddress?: string|null,
+     *     BillingAddress?: string|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

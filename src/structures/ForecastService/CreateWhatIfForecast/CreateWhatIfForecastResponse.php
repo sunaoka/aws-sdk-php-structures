@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ForecastService\CreateWhatIfForecast;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WhatIfForecastArn
+ * @property string|null $WhatIfForecastArn
  */
 class CreateWhatIfForecastResponse extends Response
 {

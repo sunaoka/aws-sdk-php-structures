@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Certificate
  * @property string $PrivateKey
- * @property string $Chain
+ * @property string|null $Chain
  */
 class SslConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class SslConfiguration extends Shape
      * @param array{
      *     Certificate: string,
      *     PrivateKey: string,
-     *     Chain?: string
+     *     Chain?: string|null
      * } $args
      */
     public function __construct(array $args)

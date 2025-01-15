@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeImport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Delimiter
- * @property list<string> $HeaderList
+ * @property string|null $Delimiter
+ * @property list<string>|null $HeaderList
  */
 class CsvOptions extends Shape
 {
     /**
      * @param array{
-     *     Delimiter?: string,
-     *     HeaderList?: list<string>
+     *     Delimiter?: string|null,
+     *     HeaderList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

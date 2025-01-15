@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigurationSetName
- * @property list<'BOUNCE'|'COMPLAINT'> $SuppressedReasons
+ * @property list<'BOUNCE'|'COMPLAINT'>|null $SuppressedReasons
  */
 class PutConfigurationSetSuppressionOptionsRequest extends Request
 {
     /**
      * @param array{
      *     ConfigurationSetName: string,
-     *     SuppressedReasons?: list<'BOUNCE'|'COMPLAINT'>
+     *     SuppressedReasons?: list<'BOUNCE'|'COMPLAINT'>|null
      * } $args
      */
     public function __construct(array $args)

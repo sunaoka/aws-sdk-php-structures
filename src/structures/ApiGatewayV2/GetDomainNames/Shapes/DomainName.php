@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\GetDomainNames\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApiMappingSelectionExpression
+ * @property string|null $ApiMappingSelectionExpression
  * @property string $DomainName
- * @property list<DomainNameConfiguration> $DomainNameConfigurations
- * @property MutualTlsAuthentication $MutualTlsAuthentication
- * @property array<string, string> $Tags
+ * @property list<DomainNameConfiguration>|null $DomainNameConfigurations
+ * @property MutualTlsAuthentication|null $MutualTlsAuthentication
+ * @property array<string, string>|null $Tags
  */
 class DomainName extends Shape
 {
     /**
      * @param array{
-     *     ApiMappingSelectionExpression?: string,
+     *     ApiMappingSelectionExpression?: string|null,
      *     DomainName: string,
-     *     DomainNameConfigurations?: list<DomainNameConfiguration>,
-     *     MutualTlsAuthentication?: MutualTlsAuthentication,
-     *     Tags?: array<string, string>
+     *     DomainNameConfigurations?: list<DomainNameConfiguration>|null,
+     *     MutualTlsAuthentication?: MutualTlsAuthentication|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

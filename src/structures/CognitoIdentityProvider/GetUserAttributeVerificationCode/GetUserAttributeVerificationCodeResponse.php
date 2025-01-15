@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetUserAttributeVerific
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\CodeDeliveryDetailsType $CodeDeliveryDetails
+ * @property Shapes\CodeDeliveryDetailsType|null $CodeDeliveryDetails
  */
 class GetUserAttributeVerificationCodeResponse extends Response
 {

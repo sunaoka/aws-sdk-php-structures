@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Connect\SearchPrompts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PromptARN
- * @property string $PromptId
- * @property string $Name
- * @property string $Description
- * @property array<string, string> $Tags
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
+ * @property string|null $PromptARN
+ * @property string|null $PromptId
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property array<string, string>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class Prompt extends Shape
 {
     /**
      * @param array{
-     *     PromptARN?: string,
-     *     PromptId?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Tags?: array<string, string>,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedRegion?: string
+     *     PromptARN?: string|null,
+     *     PromptId?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

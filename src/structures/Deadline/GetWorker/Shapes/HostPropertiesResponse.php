@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Deadline\GetWorker\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IpAddresses $ipAddresses
- * @property string $hostName
- * @property string $ec2InstanceArn
- * @property string $ec2InstanceType
+ * @property IpAddresses|null $ipAddresses
+ * @property string|null $hostName
+ * @property string|null $ec2InstanceArn
+ * @property string|null $ec2InstanceType
  */
 class HostPropertiesResponse extends Shape
 {
     /**
      * @param array{
-     *     ipAddresses?: IpAddresses,
-     *     hostName?: string,
-     *     ec2InstanceArn?: string,
-     *     ec2InstanceType?: string
+     *     ipAddresses?: IpAddresses|null,
+     *     hostName?: string|null,
+     *     ec2InstanceArn?: string|null,
+     *     ec2InstanceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

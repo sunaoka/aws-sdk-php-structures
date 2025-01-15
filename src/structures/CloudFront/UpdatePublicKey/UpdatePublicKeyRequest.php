@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\PublicKeyConfig $PublicKeyConfig
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class UpdatePublicKeyRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdatePublicKeyRequest extends Request
      * @param array{
      *     PublicKeyConfig: Shapes\PublicKeyConfig,
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

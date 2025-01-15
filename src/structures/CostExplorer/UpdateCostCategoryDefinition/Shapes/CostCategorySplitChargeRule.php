@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Source
  * @property list<string> $Targets
  * @property 'FIXED'|'PROPORTIONAL'|'EVEN' $Method
- * @property list<CostCategorySplitChargeRuleParameter> $Parameters
+ * @property list<CostCategorySplitChargeRuleParameter>|null $Parameters
  */
 class CostCategorySplitChargeRule extends Shape
 {
@@ -17,7 +17,7 @@ class CostCategorySplitChargeRule extends Shape
      *     Source: string,
      *     Targets: list<string>,
      *     Method: 'FIXED'|'PROPORTIONAL'|'EVEN',
-     *     Parameters?: list<CostCategorySplitChargeRuleParameter>
+     *     Parameters?: list<CostCategorySplitChargeRuleParameter>|null
      * } $args
      */
     public function __construct(array $args)

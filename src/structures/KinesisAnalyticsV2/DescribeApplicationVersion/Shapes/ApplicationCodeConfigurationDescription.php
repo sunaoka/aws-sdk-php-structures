@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'PLAINTEXT'|'ZIPFILE' $CodeContentType
- * @property CodeContentDescription $CodeContentDescription
+ * @property CodeContentDescription|null $CodeContentDescription
  */
 class ApplicationCodeConfigurationDescription extends Shape
 {
     /**
      * @param array{
      *     CodeContentType: 'PLAINTEXT'|'ZIPFILE',
-     *     CodeContentDescription?: CodeContentDescription
+     *     CodeContentDescription?: CodeContentDescription|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetEventTrigger\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $EventExpiration
- * @property list<Period> $Periods
+ * @property int|null $EventExpiration
+ * @property list<Period>|null $Periods
  */
 class EventTriggerLimits extends Shape
 {
     /**
      * @param array{
-     *     EventExpiration?: int,
-     *     Periods?: list<Period>
+     *     EventExpiration?: int|null,
+     *     Periods?: list<Period>|null
      * } $args
      */
     public function __construct(array $args = [])

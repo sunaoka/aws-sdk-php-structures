@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeLocationAzureBlob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LocationArn
- * @property string $LocationUri
- * @property 'SAS' $AuthenticationType
- * @property 'BLOCK' $BlobType
- * @property 'HOT'|'COOL'|'ARCHIVE' $AccessTier
- * @property list<string> $AgentArns
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $LocationArn
+ * @property string|null $LocationUri
+ * @property 'SAS'|null $AuthenticationType
+ * @property 'BLOCK'|null $BlobType
+ * @property 'HOT'|'COOL'|'ARCHIVE'|null $AccessTier
+ * @property list<string>|null $AgentArns
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class DescribeLocationAzureBlobResponse extends Response
 {

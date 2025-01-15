@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $insecureSkipVerification
+ * @property bool|null $insecureSkipVerification
  */
 class TlsConfig extends Shape
 {
     /**
-     * @param array{insecureSkipVerification?: bool} $args
+     * @param array{insecureSkipVerification?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

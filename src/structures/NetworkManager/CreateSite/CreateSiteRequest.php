@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GlobalNetworkId
- * @property string $Description
- * @property Shapes\Location $Location
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Description
+ * @property Shapes\Location|null $Location
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateSiteRequest extends Request
 {
     /**
      * @param array{
      *     GlobalNetworkId: string,
-     *     Description?: string,
-     *     Location?: Shapes\Location,
-     *     Tags?: list<Shapes\Tag>
+     *     Description?: string|null,
+     *     Location?: Shapes\Location|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

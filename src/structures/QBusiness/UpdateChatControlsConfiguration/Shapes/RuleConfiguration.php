@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateChatControlsConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ContentBlockerRule $contentBlockerRule
- * @property ContentRetrievalRule $contentRetrievalRule
+ * @property ContentBlockerRule|null $contentBlockerRule
+ * @property ContentRetrievalRule|null $contentRetrievalRule
  */
 class RuleConfiguration extends Shape
 {
     /**
      * @param array{
-     *     contentBlockerRule?: ContentBlockerRule,
-     *     contentRetrievalRule?: ContentRetrievalRule
+     *     contentBlockerRule?: ContentBlockerRule|null,
+     *     contentRetrievalRule?: ContentRetrievalRule|null
      * } $args
      */
     public function __construct(array $args = [])

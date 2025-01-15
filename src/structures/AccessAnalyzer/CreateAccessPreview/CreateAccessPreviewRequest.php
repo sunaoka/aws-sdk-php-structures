@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $analyzerArn
  * @property array<string, Shapes\Configuration> $configurations
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class CreateAccessPreviewRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateAccessPreviewRequest extends Request
      * @param array{
      *     analyzerArn: string,
      *     configurations: array<string, Shapes\Configuration>,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

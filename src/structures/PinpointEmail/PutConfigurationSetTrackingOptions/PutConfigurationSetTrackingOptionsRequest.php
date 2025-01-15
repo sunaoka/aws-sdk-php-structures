@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigurationSetName
- * @property string $CustomRedirectDomain
+ * @property string|null $CustomRedirectDomain
  */
 class PutConfigurationSetTrackingOptionsRequest extends Request
 {
     /**
      * @param array{
      *     ConfigurationSetName: string,
-     *     CustomRedirectDomain?: string
+     *     CustomRedirectDomain?: string|null
      * } $args
      */
     public function __construct(array $args)

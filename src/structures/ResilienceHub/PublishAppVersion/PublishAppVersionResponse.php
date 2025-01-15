@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $appArn
- * @property string $appVersion
- * @property int $identifier
- * @property string $versionName
+ * @property string|null $appVersion
+ * @property int|null $identifier
+ * @property string|null $versionName
  */
 class PublishAppVersionResponse extends Response
 {

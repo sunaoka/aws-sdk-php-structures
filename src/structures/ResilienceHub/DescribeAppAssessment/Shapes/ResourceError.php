@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\DescribeAppAssessment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $logicalResourceId
- * @property string $physicalResourceId
- * @property string $reason
+ * @property string|null $logicalResourceId
+ * @property string|null $physicalResourceId
+ * @property string|null $reason
  */
 class ResourceError extends Shape
 {
     /**
      * @param array{
-     *     logicalResourceId?: string,
-     *     physicalResourceId?: string,
-     *     reason?: string
+     *     logicalResourceId?: string|null,
+     *     physicalResourceId?: string|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

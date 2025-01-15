@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeCapacityReservationBillingRequests\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CapacityReservationId
- * @property string $RequestedBy
- * @property string $UnusedReservationBillingOwnerId
- * @property \Aws\Api\DateTimeResult $LastUpdateTime
- * @property 'pending'|'accepted'|'rejected'|'cancelled'|'revoked'|'expired' $Status
- * @property string $StatusMessage
- * @property CapacityReservationInfo $CapacityReservationInfo
+ * @property string|null $CapacityReservationId
+ * @property string|null $RequestedBy
+ * @property string|null $UnusedReservationBillingOwnerId
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateTime
+ * @property 'pending'|'accepted'|'rejected'|'cancelled'|'revoked'|'expired'|null $Status
+ * @property string|null $StatusMessage
+ * @property CapacityReservationInfo|null $CapacityReservationInfo
  */
 class CapacityReservationBillingRequest extends Shape
 {
     /**
      * @param array{
-     *     CapacityReservationId?: string,
-     *     RequestedBy?: string,
-     *     UnusedReservationBillingOwnerId?: string,
-     *     LastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     Status?: 'pending'|'accepted'|'rejected'|'cancelled'|'revoked'|'expired',
-     *     StatusMessage?: string,
-     *     CapacityReservationInfo?: CapacityReservationInfo
+     *     CapacityReservationId?: string|null,
+     *     RequestedBy?: string|null,
+     *     UnusedReservationBillingOwnerId?: string|null,
+     *     LastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'pending'|'accepted'|'rejected'|'cancelled'|'revoked'|'expired'|null,
+     *     StatusMessage?: string|null,
+     *     CapacityReservationInfo?: CapacityReservationInfo|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property BrokerNodeGroupInfo $BrokerNodeGroupInfo
- * @property ClientAuthentication $ClientAuthentication
- * @property ConfigurationInfo $ConfigurationInfo
- * @property EncryptionInfo $EncryptionInfo
- * @property 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION' $EnhancedMonitoring
- * @property OpenMonitoringInfo $OpenMonitoring
+ * @property ClientAuthentication|null $ClientAuthentication
+ * @property ConfigurationInfo|null $ConfigurationInfo
+ * @property EncryptionInfo|null $EncryptionInfo
+ * @property 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION'|null $EnhancedMonitoring
+ * @property OpenMonitoringInfo|null $OpenMonitoring
  * @property string $KafkaVersion
- * @property LoggingInfo $LoggingInfo
+ * @property LoggingInfo|null $LoggingInfo
  * @property int<1, 15> $NumberOfBrokerNodes
- * @property 'LOCAL'|'TIERED' $StorageMode
+ * @property 'LOCAL'|'TIERED'|null $StorageMode
  */
 class ProvisionedRequest extends Shape
 {
     /**
      * @param array{
      *     BrokerNodeGroupInfo: BrokerNodeGroupInfo,
-     *     ClientAuthentication?: ClientAuthentication,
-     *     ConfigurationInfo?: ConfigurationInfo,
-     *     EncryptionInfo?: EncryptionInfo,
-     *     EnhancedMonitoring?: 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION',
-     *     OpenMonitoring?: OpenMonitoringInfo,
+     *     ClientAuthentication?: ClientAuthentication|null,
+     *     ConfigurationInfo?: ConfigurationInfo|null,
+     *     EncryptionInfo?: EncryptionInfo|null,
+     *     EnhancedMonitoring?: 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION'|null,
+     *     OpenMonitoring?: OpenMonitoringInfo|null,
      *     KafkaVersion: string,
-     *     LoggingInfo?: LoggingInfo,
+     *     LoggingInfo?: LoggingInfo|null,
      *     NumberOfBrokerNodes: int<1, 15>,
-     *     StorageMode?: 'LOCAL'|'TIERED'
+     *     StorageMode?: 'LOCAL'|'TIERED'|null
      * } $args
      */
     public function __construct(array $args)

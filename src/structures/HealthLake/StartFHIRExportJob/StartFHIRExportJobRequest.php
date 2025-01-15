@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\HealthLake\StartFHIRExportJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $JobName
+ * @property string|null $JobName
  * @property Shapes\OutputDataConfig $OutputDataConfig
  * @property string $DatastoreId
  * @property string $DataAccessRoleArn
@@ -15,7 +15,7 @@ class StartFHIRExportJobRequest extends Request
 {
     /**
      * @param array{
-     *     JobName?: string,
+     *     JobName?: string|null,
      *     OutputDataConfig: Shapes\OutputDataConfig,
      *     DatastoreId: string,
      *     DataAccessRoleArn: string,

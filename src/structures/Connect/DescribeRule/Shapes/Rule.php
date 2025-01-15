@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
  * @property string $LastUpdatedBy
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class Rule extends Shape
 {
@@ -31,7 +31,7 @@ class Rule extends Shape
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastUpdatedTime: \Aws\Api\DateTimeResult,
      *     LastUpdatedBy: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

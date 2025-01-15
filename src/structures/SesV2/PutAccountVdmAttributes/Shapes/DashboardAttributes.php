@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SesV2\PutAccountVdmAttributes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $EngagementMetrics
+ * @property 'ENABLED'|'DISABLED'|null $EngagementMetrics
  */
 class DashboardAttributes extends Shape
 {
     /**
-     * @param array{EngagementMetrics?: 'ENABLED'|'DISABLED'} $args
+     * @param array{EngagementMetrics?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

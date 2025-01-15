@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationTaskArn
- * @property string $ReplicationTaskIdentifier
- * @property 'full-load'|'cdc'|'full-load-and-cdc' $MigrationType
- * @property string $TableMappings
- * @property string $ReplicationTaskSettings
- * @property \Aws\Api\DateTimeResult $CdcStartTime
- * @property string $CdcStartPosition
- * @property string $CdcStopPosition
- * @property string $TaskData
+ * @property string|null $ReplicationTaskIdentifier
+ * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $MigrationType
+ * @property string|null $TableMappings
+ * @property string|null $ReplicationTaskSettings
+ * @property \Aws\Api\DateTimeResult|null $CdcStartTime
+ * @property string|null $CdcStartPosition
+ * @property string|null $CdcStopPosition
+ * @property string|null $TaskData
  */
 class ModifyReplicationTaskRequest extends Request
 {
     /**
      * @param array{
      *     ReplicationTaskArn: string,
-     *     ReplicationTaskIdentifier?: string,
-     *     MigrationType?: 'full-load'|'cdc'|'full-load-and-cdc',
-     *     TableMappings?: string,
-     *     ReplicationTaskSettings?: string,
-     *     CdcStartTime?: \Aws\Api\DateTimeResult,
-     *     CdcStartPosition?: string,
-     *     CdcStopPosition?: string,
-     *     TaskData?: string
+     *     ReplicationTaskIdentifier?: string|null,
+     *     MigrationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
+     *     TableMappings?: string|null,
+     *     ReplicationTaskSettings?: string|null,
+     *     CdcStartTime?: \Aws\Api\DateTimeResult|null,
+     *     CdcStartPosition?: string|null,
+     *     CdcStopPosition?: string|null,
+     *     TaskData?: string|null
      * } $args
      */
     public function __construct(array $args)

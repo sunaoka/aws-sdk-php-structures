@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\S3Control\PutBucketLifecycleConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Prefix
- * @property S3Tag $Tag
- * @property LifecycleRuleAndOperator $And
- * @property int $ObjectSizeGreaterThan
- * @property int $ObjectSizeLessThan
+ * @property string|null $Prefix
+ * @property S3Tag|null $Tag
+ * @property LifecycleRuleAndOperator|null $And
+ * @property int|null $ObjectSizeGreaterThan
+ * @property int|null $ObjectSizeLessThan
  */
 class LifecycleRuleFilter extends Shape
 {
     /**
      * @param array{
-     *     Prefix?: string,
-     *     Tag?: S3Tag,
-     *     And?: LifecycleRuleAndOperator,
-     *     ObjectSizeGreaterThan?: int,
-     *     ObjectSizeLessThan?: int
+     *     Prefix?: string|null,
+     *     Tag?: S3Tag|null,
+     *     And?: LifecycleRuleAndOperator|null,
+     *     ObjectSizeGreaterThan?: int|null,
+     *     ObjectSizeLessThan?: int|null
      * } $args
      */
     public function __construct(array $args = [])

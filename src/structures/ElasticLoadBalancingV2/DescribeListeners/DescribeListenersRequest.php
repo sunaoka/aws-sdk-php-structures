@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeListeners;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $LoadBalancerArn
- * @property list<string> $ListenerArns
- * @property string $Marker
- * @property int<1, 400> $PageSize
+ * @property string|null $LoadBalancerArn
+ * @property list<string>|null $ListenerArns
+ * @property string|null $Marker
+ * @property int<1, 400>|null $PageSize
  */
 class DescribeListenersRequest extends Request
 {
     /**
      * @param array{
-     *     LoadBalancerArn?: string,
-     *     ListenerArns?: list<string>,
-     *     Marker?: string,
-     *     PageSize?: int<1, 400>
+     *     LoadBalancerArn?: string|null,
+     *     ListenerArns?: list<string>|null,
+     *     Marker?: string|null,
+     *     PageSize?: int<1, 400>|null
      * } $args
      */
     public function __construct(array $args = [])

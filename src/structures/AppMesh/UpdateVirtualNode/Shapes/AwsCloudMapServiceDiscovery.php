@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AwsCloudMapInstanceAttribute> $attributes
- * @property 'IPv6_PREFERRED'|'IPv4_PREFERRED'|'IPv4_ONLY'|'IPv6_ONLY' $ipPreference
+ * @property list<AwsCloudMapInstanceAttribute>|null $attributes
+ * @property 'IPv6_PREFERRED'|'IPv4_PREFERRED'|'IPv4_ONLY'|'IPv6_ONLY'|null $ipPreference
  * @property string $namespaceName
  * @property string $serviceName
  */
@@ -14,8 +14,8 @@ class AwsCloudMapServiceDiscovery extends Shape
 {
     /**
      * @param array{
-     *     attributes?: list<AwsCloudMapInstanceAttribute>,
-     *     ipPreference?: 'IPv6_PREFERRED'|'IPv4_PREFERRED'|'IPv4_ONLY'|'IPv6_ONLY',
+     *     attributes?: list<AwsCloudMapInstanceAttribute>|null,
+     *     ipPreference?: 'IPv6_PREFERRED'|'IPv4_PREFERRED'|'IPv4_ONLY'|'IPv6_ONLY'|null,
      *     namespaceName: string,
      *     serviceName: string
      * } $args

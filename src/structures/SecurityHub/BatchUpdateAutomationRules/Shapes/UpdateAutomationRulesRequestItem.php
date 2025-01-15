@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RuleArn
- * @property 'ENABLED'|'DISABLED' $RuleStatus
- * @property int<1, 1000> $RuleOrder
- * @property string $Description
- * @property string $RuleName
- * @property bool $IsTerminal
- * @property AutomationRulesFindingFilters $Criteria
- * @property list<AutomationRulesAction> $Actions
+ * @property 'ENABLED'|'DISABLED'|null $RuleStatus
+ * @property int<1, 1000>|null $RuleOrder
+ * @property string|null $Description
+ * @property string|null $RuleName
+ * @property bool|null $IsTerminal
+ * @property AutomationRulesFindingFilters|null $Criteria
+ * @property list<AutomationRulesAction>|null $Actions
  */
 class UpdateAutomationRulesRequestItem extends Shape
 {
     /**
      * @param array{
      *     RuleArn: string,
-     *     RuleStatus?: 'ENABLED'|'DISABLED',
-     *     RuleOrder?: int<1, 1000>,
-     *     Description?: string,
-     *     RuleName?: string,
-     *     IsTerminal?: bool,
-     *     Criteria?: AutomationRulesFindingFilters,
-     *     Actions?: list<AutomationRulesAction>
+     *     RuleStatus?: 'ENABLED'|'DISABLED'|null,
+     *     RuleOrder?: int<1, 1000>|null,
+     *     Description?: string|null,
+     *     RuleName?: string|null,
+     *     IsTerminal?: bool|null,
+     *     Criteria?: AutomationRulesFindingFilters|null,
+     *     Actions?: list<AutomationRulesAction>|null
      * } $args
      */
     public function __construct(array $args)

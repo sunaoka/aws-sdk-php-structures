@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListPredictors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PredictorArn
- * @property string $PredictorName
- * @property string $DatasetGroupArn
- * @property bool $IsAutoPredictor
- * @property ReferencePredictorSummary $ReferencePredictorSummary
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
+ * @property string|null $PredictorArn
+ * @property string|null $PredictorName
+ * @property string|null $DatasetGroupArn
+ * @property bool|null $IsAutoPredictor
+ * @property ReferencePredictorSummary|null $ReferencePredictorSummary
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
  */
 class PredictorSummary extends Shape
 {
     /**
      * @param array{
-     *     PredictorArn?: string,
-     *     PredictorName?: string,
-     *     DatasetGroupArn?: string,
-     *     IsAutoPredictor?: bool,
-     *     ReferencePredictorSummary?: ReferencePredictorSummary,
-     *     Status?: string,
-     *     Message?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModificationTime?: \Aws\Api\DateTimeResult
+     *     PredictorArn?: string|null,
+     *     PredictorName?: string|null,
+     *     DatasetGroupArn?: string|null,
+     *     IsAutoPredictor?: bool|null,
+     *     ReferencePredictorSummary?: ReferencePredictorSummary|null,
+     *     Status?: string|null,
+     *     Message?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

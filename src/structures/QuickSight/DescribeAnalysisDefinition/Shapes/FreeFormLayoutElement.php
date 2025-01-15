@@ -11,12 +11,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $YAxisLocation
  * @property string $Width
  * @property string $Height
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property list<SheetElementRenderingRule> $RenderingRules
- * @property FreeFormLayoutElementBorderStyle $BorderStyle
- * @property FreeFormLayoutElementBorderStyle $SelectedBorderStyle
- * @property FreeFormLayoutElementBackgroundStyle $BackgroundStyle
- * @property LoadingAnimation $LoadingAnimation
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property list<SheetElementRenderingRule>|null $RenderingRules
+ * @property FreeFormLayoutElementBorderStyle|null $BorderStyle
+ * @property FreeFormLayoutElementBorderStyle|null $SelectedBorderStyle
+ * @property FreeFormLayoutElementBackgroundStyle|null $BackgroundStyle
+ * @property LoadingAnimation|null $LoadingAnimation
  */
 class FreeFormLayoutElement extends Shape
 {
@@ -28,12 +28,12 @@ class FreeFormLayoutElement extends Shape
      *     YAxisLocation: string,
      *     Width: string,
      *     Height: string,
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     RenderingRules?: list<SheetElementRenderingRule>,
-     *     BorderStyle?: FreeFormLayoutElementBorderStyle,
-     *     SelectedBorderStyle?: FreeFormLayoutElementBorderStyle,
-     *     BackgroundStyle?: FreeFormLayoutElementBackgroundStyle,
-     *     LoadingAnimation?: LoadingAnimation
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     RenderingRules?: list<SheetElementRenderingRule>|null,
+     *     BorderStyle?: FreeFormLayoutElementBorderStyle|null,
+     *     SelectedBorderStyle?: FreeFormLayoutElementBorderStyle|null,
+     *     BackgroundStyle?: FreeFormLayoutElementBackgroundStyle|null,
+     *     LoadingAnimation?: LoadingAnimation|null
      * } $args
      */
     public function __construct(array $args)

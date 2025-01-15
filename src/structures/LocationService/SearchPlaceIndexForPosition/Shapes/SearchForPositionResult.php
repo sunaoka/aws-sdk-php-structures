@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property Place $Place
  * @property double $Distance
- * @property string $PlaceId
+ * @property string|null $PlaceId
  */
 class SearchForPositionResult extends Shape
 {
@@ -15,7 +15,7 @@ class SearchForPositionResult extends Shape
      * @param array{
      *     Place: Place,
      *     Distance: double,
-     *     PlaceId?: string
+     *     PlaceId?: string|null
      * } $args
      */
     public function __construct(array $args)

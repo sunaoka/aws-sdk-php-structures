@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DataZone\ListRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATE_SUBSCRIPTION_REQUEST' $action
- * @property string $identifier
- * @property string $lastUpdatedBy
- * @property string $name
- * @property string $revision
- * @property 'METADATA_FORM_ENFORCEMENT' $ruleType
- * @property RuleScope $scope
- * @property RuleTarget $target
- * @property 'DOMAIN_UNIT' $targetType
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property 'CREATE_SUBSCRIPTION_REQUEST'|null $action
+ * @property string|null $identifier
+ * @property string|null $lastUpdatedBy
+ * @property string|null $name
+ * @property string|null $revision
+ * @property 'METADATA_FORM_ENFORCEMENT'|null $ruleType
+ * @property RuleScope|null $scope
+ * @property RuleTarget|null $target
+ * @property 'DOMAIN_UNIT'|null $targetType
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class RuleSummary extends Shape
 {
     /**
      * @param array{
-     *     action?: 'CREATE_SUBSCRIPTION_REQUEST',
-     *     identifier?: string,
-     *     lastUpdatedBy?: string,
-     *     name?: string,
-     *     revision?: string,
-     *     ruleType?: 'METADATA_FORM_ENFORCEMENT',
-     *     scope?: RuleScope,
-     *     target?: RuleTarget,
-     *     targetType?: 'DOMAIN_UNIT',
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     action?: 'CREATE_SUBSCRIPTION_REQUEST'|null,
+     *     identifier?: string|null,
+     *     lastUpdatedBy?: string|null,
+     *     name?: string|null,
+     *     revision?: string|null,
+     *     ruleType?: 'METADATA_FORM_ENFORCEMENT'|null,
+     *     scope?: RuleScope|null,
+     *     target?: RuleTarget|null,
+     *     targetType?: 'DOMAIN_UNIT'|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetConsolidatedReport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChoiceId
- * @property string $ChoiceTitle
+ * @property string|null $ChoiceId
+ * @property string|null $ChoiceTitle
  */
 class BestPractice extends Shape
 {
     /**
      * @param array{
-     *     ChoiceId?: string,
-     *     ChoiceTitle?: string
+     *     ChoiceId?: string|null,
+     *     ChoiceTitle?: string|null
      * } $args
      */
     public function __construct(array $args = [])

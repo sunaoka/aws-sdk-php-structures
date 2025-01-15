@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ExecuteProvisionedProductPlan;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $PlanId
  * @property string $IdempotencyToken
  */
@@ -13,7 +13,7 @@ class ExecuteProvisionedProductPlanRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     PlanId: string,
      *     IdempotencyToken: string
      * } $args

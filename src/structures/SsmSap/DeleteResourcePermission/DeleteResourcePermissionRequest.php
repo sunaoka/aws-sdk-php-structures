@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\SsmSap\DeleteResourcePermission;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'RESTORE' $ActionType
- * @property string $SourceResourceArn
+ * @property 'RESTORE'|null $ActionType
+ * @property string|null $SourceResourceArn
  * @property string $ResourceArn
  */
 class DeleteResourcePermissionRequest extends Request
 {
     /**
      * @param array{
-     *     ActionType?: 'RESTORE',
-     *     SourceResourceArn?: string,
+     *     ActionType?: 'RESTORE'|null,
+     *     SourceResourceArn?: string|null,
      *     ResourceArn: string
      * } $args
      */

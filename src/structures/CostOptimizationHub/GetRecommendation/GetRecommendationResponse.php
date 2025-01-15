@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $recommendationId
- * @property string $resourceId
- * @property string $resourceArn
- * @property string $accountId
- * @property string $currencyCode
- * @property int $recommendationLookbackPeriodInDays
- * @property int $costCalculationLookbackPeriodInDays
- * @property double $estimatedSavingsPercentage
- * @property double $estimatedSavingsOverCostCalculationLookbackPeriod
- * @property 'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance' $currentResourceType
- * @property 'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance' $recommendedResourceType
- * @property string $region
- * @property 'ComputeOptimizer'|'CostExplorer' $source
- * @property \Aws\Api\DateTimeResult $lastRefreshTimestamp
- * @property double $estimatedMonthlySavings
- * @property double $estimatedMonthlyCost
- * @property 'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh' $implementationEffort
- * @property bool $restartNeeded
- * @property 'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete' $actionType
- * @property bool $rollbackPossible
- * @property Shapes\ResourceDetails $currentResourceDetails
- * @property Shapes\ResourceDetails $recommendedResourceDetails
- * @property list<Shapes\Tag> $tags
+ * @property string|null $recommendationId
+ * @property string|null $resourceId
+ * @property string|null $resourceArn
+ * @property string|null $accountId
+ * @property string|null $currencyCode
+ * @property int|null $recommendationLookbackPeriodInDays
+ * @property int|null $costCalculationLookbackPeriodInDays
+ * @property double|null $estimatedSavingsPercentage
+ * @property double|null $estimatedSavingsOverCostCalculationLookbackPeriod
+ * @property 'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|null $currentResourceType
+ * @property 'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|null $recommendedResourceType
+ * @property string|null $region
+ * @property 'ComputeOptimizer'|'CostExplorer'|null $source
+ * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
+ * @property double|null $estimatedMonthlySavings
+ * @property double|null $estimatedMonthlyCost
+ * @property 'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'|null $implementationEffort
+ * @property bool|null $restartNeeded
+ * @property 'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'|null $actionType
+ * @property bool|null $rollbackPossible
+ * @property Shapes\ResourceDetails|null $currentResourceDetails
+ * @property Shapes\ResourceDetails|null $recommendedResourceDetails
+ * @property list<Shapes\Tag>|null $tags
  */
 class GetRecommendationResponse extends Response
 {

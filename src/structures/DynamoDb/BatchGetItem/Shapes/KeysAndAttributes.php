@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<array<string, AttributeValue>> $Keys
- * @property list<string> $AttributesToGet
- * @property bool $ConsistentRead
- * @property string $ProjectionExpression
- * @property array<string, string> $ExpressionAttributeNames
+ * @property list<string>|null $AttributesToGet
+ * @property bool|null $ConsistentRead
+ * @property string|null $ProjectionExpression
+ * @property array<string, string>|null $ExpressionAttributeNames
  */
 class KeysAndAttributes extends Shape
 {
     /**
      * @param array{
      *     Keys: list<array<string, AttributeValue>>,
-     *     AttributesToGet?: list<string>,
-     *     ConsistentRead?: bool,
-     *     ProjectionExpression?: string,
-     *     ExpressionAttributeNames?: array<string, string>
+     *     AttributesToGet?: list<string>|null,
+     *     ConsistentRead?: bool|null,
+     *     ProjectionExpression?: string|null,
+     *     ExpressionAttributeNames?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

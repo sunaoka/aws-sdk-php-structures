@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $cardId
- * @property Document $value
+ * @property Document|null $value
  * @property User $user
- * @property string $submissionId
- * @property \Aws\Api\DateTimeResult $timestamp
+ * @property string|null $submissionId
+ * @property \Aws\Api\DateTimeResult|null $timestamp
  */
 class QAppSessionData extends Shape
 {
     /**
      * @param array{
      *     cardId: string,
-     *     value?: Document,
+     *     value?: Document|null,
      *     user: User,
-     *     submissionId?: string,
-     *     timestamp?: \Aws\Api\DateTimeResult
+     *     submissionId?: string|null,
+     *     timestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\GetReplicationSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $sseKmsKeyId
+ * @property string|null $sseKmsKeyId
  * @property 'ACTIVE'|'CREATING'|'DELETING'|'FAILED' $status
- * @property string $statusMessage
+ * @property string|null $statusMessage
  * @property \Aws\Api\DateTimeResult $statusUpdateDateTime
  */
 class RegionInfo extends Shape
 {
     /**
      * @param array{
-     *     sseKmsKeyId?: string,
+     *     sseKmsKeyId?: string|null,
      *     status: 'ACTIVE'|'CREATING'|'DELETING'|'FAILED',
-     *     statusMessage?: string,
+     *     statusMessage?: string|null,
      *     statusUpdateDateTime: \Aws\Api\DateTimeResult
      * } $args
      */

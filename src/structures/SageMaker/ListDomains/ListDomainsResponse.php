@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListDomains;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DomainDetails> $Domains
- * @property string $NextToken
+ * @property list<Shapes\DomainDetails>|null $Domains
+ * @property string|null $NextToken
  */
 class ListDomainsResponse extends Response
 {

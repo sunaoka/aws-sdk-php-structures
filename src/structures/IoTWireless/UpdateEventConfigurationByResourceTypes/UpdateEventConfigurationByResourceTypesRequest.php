@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\IoTWireless\UpdateEventConfigurationByResourceT
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\DeviceRegistrationStateResourceTypeEventConfiguration $DeviceRegistrationState
- * @property Shapes\ProximityResourceTypeEventConfiguration $Proximity
- * @property Shapes\JoinResourceTypeEventConfiguration $Join
- * @property Shapes\ConnectionStatusResourceTypeEventConfiguration $ConnectionStatus
- * @property Shapes\MessageDeliveryStatusResourceTypeEventConfiguration $MessageDeliveryStatus
+ * @property Shapes\DeviceRegistrationStateResourceTypeEventConfiguration|null $DeviceRegistrationState
+ * @property Shapes\ProximityResourceTypeEventConfiguration|null $Proximity
+ * @property Shapes\JoinResourceTypeEventConfiguration|null $Join
+ * @property Shapes\ConnectionStatusResourceTypeEventConfiguration|null $ConnectionStatus
+ * @property Shapes\MessageDeliveryStatusResourceTypeEventConfiguration|null $MessageDeliveryStatus
  */
 class UpdateEventConfigurationByResourceTypesRequest extends Request
 {
     /**
      * @param array{
-     *     DeviceRegistrationState?: Shapes\DeviceRegistrationStateResourceTypeEventConfiguration,
-     *     Proximity?: Shapes\ProximityResourceTypeEventConfiguration,
-     *     Join?: Shapes\JoinResourceTypeEventConfiguration,
-     *     ConnectionStatus?: Shapes\ConnectionStatusResourceTypeEventConfiguration,
-     *     MessageDeliveryStatus?: Shapes\MessageDeliveryStatusResourceTypeEventConfiguration
+     *     DeviceRegistrationState?: Shapes\DeviceRegistrationStateResourceTypeEventConfiguration|null,
+     *     Proximity?: Shapes\ProximityResourceTypeEventConfiguration|null,
+     *     Join?: Shapes\JoinResourceTypeEventConfiguration|null,
+     *     ConnectionStatus?: Shapes\ConnectionStatusResourceTypeEventConfiguration|null,
+     *     MessageDeliveryStatus?: Shapes\MessageDeliveryStatusResourceTypeEventConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Athena\GetCapacityAssignmentConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CapacityReservationName
- * @property list<CapacityAssignment> $CapacityAssignments
+ * @property string|null $CapacityReservationName
+ * @property list<CapacityAssignment>|null $CapacityAssignments
  */
 class CapacityAssignmentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CapacityReservationName?: string,
-     *     CapacityAssignments?: list<CapacityAssignment>
+     *     CapacityReservationName?: string|null,
+     *     CapacityAssignments?: list<CapacityAssignment>|null
      * } $args
      */
     public function __construct(array $args = [])

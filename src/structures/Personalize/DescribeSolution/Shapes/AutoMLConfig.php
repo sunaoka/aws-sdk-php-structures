@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeSolution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $metricName
- * @property list<string> $recipeList
+ * @property string|null $metricName
+ * @property list<string>|null $recipeList
  */
 class AutoMLConfig extends Shape
 {
     /**
      * @param array{
-     *     metricName?: string,
-     *     recipeList?: list<string>
+     *     metricName?: string|null,
+     *     recipeList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

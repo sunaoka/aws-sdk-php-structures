@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTJobsDataPlane\UpdateJobExecution;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\JobExecutionState $executionState
- * @property string $jobDocument
+ * @property Shapes\JobExecutionState|null $executionState
+ * @property string|null $jobDocument
  */
 class UpdateJobExecutionResponse extends Response
 {

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\CreateLaunch;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property list<Shapes\LaunchGroupConfig> $groups
- * @property list<Shapes\MetricMonitorConfig> $metricMonitors
+ * @property list<Shapes\MetricMonitorConfig>|null $metricMonitors
  * @property string $name
  * @property string $project
- * @property string $randomizationSalt
- * @property Shapes\ScheduledSplitsLaunchConfig $scheduledSplitsConfig
- * @property array<string, string> $tags
+ * @property string|null $randomizationSalt
+ * @property Shapes\ScheduledSplitsLaunchConfig|null $scheduledSplitsConfig
+ * @property array<string, string>|null $tags
  */
 class CreateLaunchRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     groups: list<Shapes\LaunchGroupConfig>,
-     *     metricMonitors?: list<Shapes\MetricMonitorConfig>,
+     *     metricMonitors?: list<Shapes\MetricMonitorConfig>|null,
      *     name: string,
      *     project: string,
-     *     randomizationSalt?: string,
-     *     scheduledSplitsConfig?: Shapes\ScheduledSplitsLaunchConfig,
-     *     tags?: array<string, string>
+     *     randomizationSalt?: string|null,
+     *     scheduledSplitsConfig?: Shapes\ScheduledSplitsLaunchConfig|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

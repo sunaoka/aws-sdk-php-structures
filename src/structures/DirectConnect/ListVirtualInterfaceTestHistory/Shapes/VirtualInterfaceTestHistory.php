@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DirectConnect\ListVirtualInterfaceTestHistory\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $testId
- * @property string $virtualInterfaceId
- * @property list<string> $bgpPeers
- * @property string $status
- * @property string $ownerAccount
- * @property int $testDurationInMinutes
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property string|null $testId
+ * @property string|null $virtualInterfaceId
+ * @property list<string>|null $bgpPeers
+ * @property string|null $status
+ * @property string|null $ownerAccount
+ * @property int|null $testDurationInMinutes
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  */
 class VirtualInterfaceTestHistory extends Shape
 {
     /**
      * @param array{
-     *     testId?: string,
-     *     virtualInterfaceId?: string,
-     *     bgpPeers?: list<string>,
-     *     status?: string,
-     *     ownerAccount?: string,
-     *     testDurationInMinutes?: int,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult
+     *     testId?: string|null,
+     *     virtualInterfaceId?: string|null,
+     *     bgpPeers?: list<string>|null,
+     *     status?: string|null,
+     *     ownerAccount?: string|null,
+     *     testDurationInMinutes?: int|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

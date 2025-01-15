@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\UpdateSMBFileShare;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FileShareARN
+ * @property string|null $FileShareARN
  */
 class UpdateSMBFileShareResponse extends Response
 {

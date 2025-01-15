@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $stateMachineArn
  * @property \Aws\Api\DateTimeResult $creationDate
- * @property string $stateMachineVersionArn
+ * @property string|null $stateMachineVersionArn
  */
 class CreateStateMachineResponse extends Response
 {

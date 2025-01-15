@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<SnapshotFileGroup> $FileGroups
- * @property SnapshotDestinationConfiguration $DestinationConfiguration
- * @property Parameters $Parameters
+ * @property SnapshotDestinationConfiguration|null $DestinationConfiguration
+ * @property Parameters|null $Parameters
  */
 class SnapshotConfiguration extends Shape
 {
     /**
      * @param array{
      *     FileGroups: list<SnapshotFileGroup>,
-     *     DestinationConfiguration?: SnapshotDestinationConfiguration,
-     *     Parameters?: Parameters
+     *     DestinationConfiguration?: SnapshotDestinationConfiguration|null,
+     *     Parameters?: Parameters|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserId
  * @property string $UserName
  * @property string $Engine
- * @property list<string> $Passwords
+ * @property list<string>|null $Passwords
  * @property string $AccessString
- * @property bool $NoPasswordRequired
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\AuthenticationMode $AuthenticationMode
+ * @property bool|null $NoPasswordRequired
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\AuthenticationMode|null $AuthenticationMode
  */
 class CreateUserRequest extends Request
 {
@@ -21,11 +21,11 @@ class CreateUserRequest extends Request
      *     UserId: string,
      *     UserName: string,
      *     Engine: string,
-     *     Passwords?: list<string>,
+     *     Passwords?: list<string>|null,
      *     AccessString: string,
-     *     NoPasswordRequired?: bool,
-     *     Tags?: list<Shapes\Tag>,
-     *     AuthenticationMode?: Shapes\AuthenticationMode
+     *     NoPasswordRequired?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     AuthenticationMode?: Shapes\AuthenticationMode|null
      * } $args
      */
     public function __construct(array $args)

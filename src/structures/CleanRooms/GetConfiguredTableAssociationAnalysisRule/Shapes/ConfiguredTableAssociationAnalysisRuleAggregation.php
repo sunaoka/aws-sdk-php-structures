@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CleanRooms\GetConfiguredTableAssociationAnalysi
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $allowedResultReceivers
- * @property list<string> $allowedAdditionalAnalyses
+ * @property list<string>|null $allowedResultReceivers
+ * @property list<string>|null $allowedAdditionalAnalyses
  */
 class ConfiguredTableAssociationAnalysisRuleAggregation extends Shape
 {
     /**
      * @param array{
-     *     allowedResultReceivers?: list<string>,
-     *     allowedAdditionalAnalyses?: list<string>
+     *     allowedResultReceivers?: list<string>|null,
+     *     allowedAdditionalAnalyses?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

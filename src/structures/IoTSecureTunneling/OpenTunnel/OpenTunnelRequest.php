@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTSecureTunneling\OpenTunnel;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
- * @property list<Shapes\Tag> $tags
- * @property Shapes\DestinationConfig $destinationConfig
- * @property Shapes\TimeoutConfig $timeoutConfig
+ * @property string|null $description
+ * @property list<Shapes\Tag>|null $tags
+ * @property Shapes\DestinationConfig|null $destinationConfig
+ * @property Shapes\TimeoutConfig|null $timeoutConfig
  */
 class OpenTunnelRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
-     *     tags?: list<Shapes\Tag>,
-     *     destinationConfig?: Shapes\DestinationConfig,
-     *     timeoutConfig?: Shapes\TimeoutConfig
+     *     description?: string|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     destinationConfig?: Shapes\DestinationConfig|null,
+     *     timeoutConfig?: Shapes\TimeoutConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\UpdatePackageGroupOriginConfigurat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repositoryName
- * @property 'EXTERNAL_UPSTREAM'|'INTERNAL_UPSTREAM'|'PUBLISH' $originRestrictionType
+ * @property string|null $repositoryName
+ * @property 'EXTERNAL_UPSTREAM'|'INTERNAL_UPSTREAM'|'PUBLISH'|null $originRestrictionType
  */
 class PackageGroupAllowedRepository extends Shape
 {
     /**
      * @param array{
-     *     repositoryName?: string,
-     *     originRestrictionType?: 'EXTERNAL_UPSTREAM'|'INTERNAL_UPSTREAM'|'PUBLISH'
+     *     repositoryName?: string|null,
+     *     originRestrictionType?: 'EXTERNAL_UPSTREAM'|'INTERNAL_UPSTREAM'|'PUBLISH'|null
      * } $args
      */
     public function __construct(array $args = [])

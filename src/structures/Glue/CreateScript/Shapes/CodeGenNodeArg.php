@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property string $Value
- * @property bool $Param
+ * @property bool|null $Param
  */
 class CodeGenNodeArg extends Shape
 {
@@ -15,7 +15,7 @@ class CodeGenNodeArg extends Shape
      * @param array{
      *     Name: string,
      *     Value: string,
-     *     Param?: bool
+     *     Param?: bool|null
      * } $args
      */
     public function __construct(array $args)

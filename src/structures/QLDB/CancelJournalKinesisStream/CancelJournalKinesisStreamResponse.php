@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\QLDB\CancelJournalKinesisStream;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $StreamId
+ * @property string|null $StreamId
  */
 class CancelJournalKinesisStreamResponse extends Response
 {

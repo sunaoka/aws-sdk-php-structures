@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SesV2\PutConfigurationSetVdmOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DashboardOptions $DashboardOptions
- * @property GuardianOptions $GuardianOptions
+ * @property DashboardOptions|null $DashboardOptions
+ * @property GuardianOptions|null $GuardianOptions
  */
 class VdmOptions extends Shape
 {
     /**
      * @param array{
-     *     DashboardOptions?: DashboardOptions,
-     *     GuardianOptions?: GuardianOptions
+     *     DashboardOptions?: DashboardOptions|null,
+     *     GuardianOptions?: GuardianOptions|null
      * } $args
      */
     public function __construct(array $args = [])

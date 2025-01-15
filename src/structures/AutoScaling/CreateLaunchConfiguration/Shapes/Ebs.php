@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AutoScaling\CreateLaunchConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SnapshotId
- * @property int<1, 16384> $VolumeSize
- * @property string $VolumeType
- * @property bool $DeleteOnTermination
- * @property int<100, 20000> $Iops
- * @property bool $Encrypted
- * @property int<125, 1000> $Throughput
+ * @property string|null $SnapshotId
+ * @property int<1, 16384>|null $VolumeSize
+ * @property string|null $VolumeType
+ * @property bool|null $DeleteOnTermination
+ * @property int<100, 20000>|null $Iops
+ * @property bool|null $Encrypted
+ * @property int<125, 1000>|null $Throughput
  */
 class Ebs extends Shape
 {
     /**
      * @param array{
-     *     SnapshotId?: string,
-     *     VolumeSize?: int<1, 16384>,
-     *     VolumeType?: string,
-     *     DeleteOnTermination?: bool,
-     *     Iops?: int<100, 20000>,
-     *     Encrypted?: bool,
-     *     Throughput?: int<125, 1000>
+     *     SnapshotId?: string|null,
+     *     VolumeSize?: int<1, 16384>|null,
+     *     VolumeType?: string|null,
+     *     DeleteOnTermination?: bool|null,
+     *     Iops?: int<100, 20000>|null,
+     *     Encrypted?: bool|null,
+     *     Throughput?: int<125, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

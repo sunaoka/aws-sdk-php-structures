@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\TaxSettings\GetTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $pan
+ * @property string|null $pan
  */
 class IndiaAdditionalInfo extends Shape
 {
     /**
-     * @param array{pan?: string} $args
+     * @param array{pan?: string|null} $args
      */
     public function __construct(array $args = [])
     {

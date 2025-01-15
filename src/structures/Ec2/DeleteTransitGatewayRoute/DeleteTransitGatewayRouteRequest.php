@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TransitGatewayRouteTableId
  * @property string $DestinationCidrBlock
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteTransitGatewayRouteRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteTransitGatewayRouteRequest extends Request
      * @param array{
      *     TransitGatewayRouteTableId: string,
      *     DestinationCidrBlock: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ON'|'OFF'|'OPTIONAL' $MFAMode
- * @property Settings $Settings
+ * @property Settings|null $Settings
  */
 class CreateBackendAuthMFAConfig extends Shape
 {
     /**
      * @param array{
      *     MFAMode: 'ON'|'OFF'|'OPTIONAL',
-     *     Settings?: Settings
+     *     Settings?: Settings|null
      * } $args
      */
     public function __construct(array $args)

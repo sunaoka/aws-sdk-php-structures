@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\ListPolicies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $policyName
- * @property string $policyArn
+ * @property string|null $policyName
+ * @property string|null $policyArn
  */
 class Policy extends Shape
 {
     /**
      * @param array{
-     *     policyName?: string,
-     *     policyArn?: string
+     *     policyName?: string|null,
+     *     policyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

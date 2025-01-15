@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\CreateAutomationRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Gte
- * @property double $Lte
- * @property double $Eq
- * @property double $Gt
- * @property double $Lt
+ * @property double|null $Gte
+ * @property double|null $Lte
+ * @property double|null $Eq
+ * @property double|null $Gt
+ * @property double|null $Lt
  */
 class NumberFilter extends Shape
 {
     /**
      * @param array{
-     *     Gte?: double,
-     *     Lte?: double,
-     *     Eq?: double,
-     *     Gt?: double,
-     *     Lt?: double
+     *     Gte?: double|null,
+     *     Lte?: double|null,
+     *     Eq?: double|null,
+     *     Gt?: double|null,
+     *     Lt?: double|null
      * } $args
      */
     public function __construct(array $args = [])

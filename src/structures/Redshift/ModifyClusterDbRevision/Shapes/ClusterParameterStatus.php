@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\ModifyClusterDbRevision\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterName
- * @property string $ParameterApplyStatus
- * @property string $ParameterApplyErrorDescription
+ * @property string|null $ParameterName
+ * @property string|null $ParameterApplyStatus
+ * @property string|null $ParameterApplyErrorDescription
  */
 class ClusterParameterStatus extends Shape
 {
     /**
      * @param array{
-     *     ParameterName?: string,
-     *     ParameterApplyStatus?: string,
-     *     ParameterApplyErrorDescription?: string
+     *     ParameterName?: string|null,
+     *     ParameterApplyStatus?: string|null,
+     *     ParameterApplyErrorDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

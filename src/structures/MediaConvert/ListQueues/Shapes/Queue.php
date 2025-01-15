@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListQueues\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property int $ConcurrentJobs
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $LastUpdated
+ * @property string|null $Arn
+ * @property int|null $ConcurrentJobs
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
  * @property string $Name
- * @property 'ON_DEMAND'|'RESERVED' $PricingPlan
- * @property int $ProgressingJobsCount
- * @property ReservationPlan $ReservationPlan
- * @property list<ServiceOverride> $ServiceOverrides
- * @property 'ACTIVE'|'PAUSED' $Status
- * @property int $SubmittedJobsCount
- * @property 'SYSTEM'|'CUSTOM' $Type
+ * @property 'ON_DEMAND'|'RESERVED'|null $PricingPlan
+ * @property int|null $ProgressingJobsCount
+ * @property ReservationPlan|null $ReservationPlan
+ * @property list<ServiceOverride>|null $ServiceOverrides
+ * @property 'ACTIVE'|'PAUSED'|null $Status
+ * @property int|null $SubmittedJobsCount
+ * @property 'SYSTEM'|'CUSTOM'|null $Type
  */
 class Queue extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     ConcurrentJobs?: int,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
+     *     Arn?: string|null,
+     *     ConcurrentJobs?: int|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
      *     Name: string,
-     *     PricingPlan?: 'ON_DEMAND'|'RESERVED',
-     *     ProgressingJobsCount?: int,
-     *     ReservationPlan?: ReservationPlan,
-     *     ServiceOverrides?: list<ServiceOverride>,
-     *     Status?: 'ACTIVE'|'PAUSED',
-     *     SubmittedJobsCount?: int,
-     *     Type?: 'SYSTEM'|'CUSTOM'
+     *     PricingPlan?: 'ON_DEMAND'|'RESERVED'|null,
+     *     ProgressingJobsCount?: int|null,
+     *     ReservationPlan?: ReservationPlan|null,
+     *     ServiceOverrides?: list<ServiceOverride>|null,
+     *     Status?: 'ACTIVE'|'PAUSED'|null,
+     *     SubmittedJobsCount?: int|null,
+     *     Type?: 'SYSTEM'|'CUSTOM'|null
      * } $args
      */
     public function __construct(array $args)

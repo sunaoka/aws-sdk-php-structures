@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ChannelFlowCallback\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $StringValues
+ * @property list<string>|null $StringValues
  */
 class MessageAttributeValue extends Shape
 {
     /**
-     * @param array{StringValues?: list<string>} $args
+     * @param array{StringValues?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

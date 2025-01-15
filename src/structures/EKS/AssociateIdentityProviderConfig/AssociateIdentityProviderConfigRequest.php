@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterName
  * @property Shapes\OidcIdentityProviderConfigRequest $oidc
- * @property array<string, string> $tags
- * @property string $clientRequestToken
+ * @property array<string, string>|null $tags
+ * @property string|null $clientRequestToken
  */
 class AssociateIdentityProviderConfigRequest extends Request
 {
@@ -16,8 +16,8 @@ class AssociateIdentityProviderConfigRequest extends Request
      * @param array{
      *     clusterName: string,
      *     oidc: Shapes\OidcIdentityProviderConfigRequest,
-     *     tags?: array<string, string>,
-     *     clientRequestToken?: string
+     *     tags?: array<string, string>|null,
+     *     clientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

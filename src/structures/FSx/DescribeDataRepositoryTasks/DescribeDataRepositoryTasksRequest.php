@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FSx\DescribeDataRepositoryTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $TaskIds
- * @property list<Shapes\DataRepositoryTaskFilter> $Filters
- * @property int<1, 2147483647> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $TaskIds
+ * @property list<Shapes\DataRepositoryTaskFilter>|null $Filters
+ * @property int<1, 2147483647>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeDataRepositoryTasksRequest extends Request
 {
     /**
      * @param array{
-     *     TaskIds?: list<string>,
-     *     Filters?: list<Shapes\DataRepositoryTaskFilter>,
-     *     MaxResults?: int<1, 2147483647>,
-     *     NextToken?: string
+     *     TaskIds?: list<string>|null,
+     *     Filters?: list<Shapes\DataRepositoryTaskFilter>|null,
+     *     MaxResults?: int<1, 2147483647>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

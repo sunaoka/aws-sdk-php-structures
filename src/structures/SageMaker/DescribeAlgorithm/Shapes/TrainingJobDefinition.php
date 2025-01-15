@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Pipe'|'File'|'FastFile' $TrainingInputMode
- * @property array<string, string> $HyperParameters
+ * @property array<string, string>|null $HyperParameters
  * @property list<Channel> $InputDataConfig
  * @property OutputDataConfig $OutputDataConfig
  * @property ResourceConfig $ResourceConfig
@@ -17,7 +17,7 @@ class TrainingJobDefinition extends Shape
     /**
      * @param array{
      *     TrainingInputMode: 'Pipe'|'File'|'FastFile',
-     *     HyperParameters?: array<string, string>,
+     *     HyperParameters?: array<string, string>|null,
      *     InputDataConfig: list<Channel>,
      *     OutputDataConfig: OutputDataConfig,
      *     ResourceConfig: ResourceConfig,

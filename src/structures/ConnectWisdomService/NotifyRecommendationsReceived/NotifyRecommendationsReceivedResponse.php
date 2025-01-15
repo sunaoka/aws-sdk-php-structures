@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\NotifyRecommendationsRecei
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\NotifyRecommendationsReceivedError> $errors
- * @property list<string> $recommendationIds
+ * @property list<Shapes\NotifyRecommendationsReceivedError>|null $errors
+ * @property list<string>|null $recommendationIds
  */
 class NotifyRecommendationsReceivedResponse extends Response
 {

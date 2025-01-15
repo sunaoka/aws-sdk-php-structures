@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property HttpEndpointConfiguration $EndpointConfiguration
- * @property HttpEndpointBufferingHints $BufferingHints
- * @property CloudWatchLoggingOptions $CloudWatchLoggingOptions
- * @property HttpEndpointRequestConfiguration $RequestConfiguration
- * @property ProcessingConfiguration $ProcessingConfiguration
- * @property string $RoleARN
- * @property HttpEndpointRetryOptions $RetryOptions
- * @property 'FailedDataOnly'|'AllData' $S3BackupMode
+ * @property HttpEndpointBufferingHints|null $BufferingHints
+ * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
+ * @property HttpEndpointRequestConfiguration|null $RequestConfiguration
+ * @property ProcessingConfiguration|null $ProcessingConfiguration
+ * @property string|null $RoleARN
+ * @property HttpEndpointRetryOptions|null $RetryOptions
+ * @property 'FailedDataOnly'|'AllData'|null $S3BackupMode
  * @property S3DestinationConfiguration $S3Configuration
- * @property SecretsManagerConfiguration $SecretsManagerConfiguration
+ * @property SecretsManagerConfiguration|null $SecretsManagerConfiguration
  */
 class HttpEndpointDestinationConfiguration extends Shape
 {
     /**
      * @param array{
      *     EndpointConfiguration: HttpEndpointConfiguration,
-     *     BufferingHints?: HttpEndpointBufferingHints,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions,
-     *     RequestConfiguration?: HttpEndpointRequestConfiguration,
-     *     ProcessingConfiguration?: ProcessingConfiguration,
-     *     RoleARN?: string,
-     *     RetryOptions?: HttpEndpointRetryOptions,
-     *     S3BackupMode?: 'FailedDataOnly'|'AllData',
+     *     BufferingHints?: HttpEndpointBufferingHints|null,
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
+     *     RequestConfiguration?: HttpEndpointRequestConfiguration|null,
+     *     ProcessingConfiguration?: ProcessingConfiguration|null,
+     *     RoleARN?: string|null,
+     *     RetryOptions?: HttpEndpointRetryOptions|null,
+     *     S3BackupMode?: 'FailedDataOnly'|'AllData'|null,
      *     S3Configuration: S3DestinationConfiguration,
-     *     SecretsManagerConfiguration?: SecretsManagerConfiguration
+     *     SecretsManagerConfiguration?: SecretsManagerConfiguration|null
      * } $args
      */
     public function __construct(array $args)

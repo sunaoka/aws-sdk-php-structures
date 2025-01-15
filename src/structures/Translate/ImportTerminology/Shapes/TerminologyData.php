@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|resource|\Psr\Http\Message\StreamInterface $File
  * @property 'CSV'|'TMX'|'TSV' $Format
- * @property 'UNI'|'MULTI' $Directionality
+ * @property 'UNI'|'MULTI'|null $Directionality
  */
 class TerminologyData extends Shape
 {
@@ -15,7 +15,7 @@ class TerminologyData extends Shape
      * @param array{
      *     File: string|resource|\Psr\Http\Message\StreamInterface,
      *     Format: 'CSV'|'TMX'|'TSV',
-     *     Directionality?: 'UNI'|'MULTI'
+     *     Directionality?: 'UNI'|'MULTI'|null
      * } $args
      */
     public function __construct(array $args)

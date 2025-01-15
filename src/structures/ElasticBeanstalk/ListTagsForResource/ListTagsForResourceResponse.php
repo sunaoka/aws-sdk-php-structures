@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ListTagsForResource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceArn
- * @property list<Shapes\Tag> $ResourceTags
+ * @property string|null $ResourceArn
+ * @property list<Shapes\Tag>|null $ResourceTags
  */
 class ListTagsForResourceResponse extends Response
 {

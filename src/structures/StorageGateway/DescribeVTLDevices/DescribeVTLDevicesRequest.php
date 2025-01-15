@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayARN
- * @property list<string> $VTLDeviceARNs
- * @property string $Marker
- * @property int<1, max> $Limit
+ * @property list<string>|null $VTLDeviceARNs
+ * @property string|null $Marker
+ * @property int<1, max>|null $Limit
  */
 class DescribeVTLDevicesRequest extends Request
 {
     /**
      * @param array{
      *     GatewayARN: string,
-     *     VTLDeviceARNs?: list<string>,
-     *     Marker?: string,
-     *     Limit?: int<1, max>
+     *     VTLDeviceARNs?: list<string>|null,
+     *     Marker?: string|null,
+     *     Limit?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

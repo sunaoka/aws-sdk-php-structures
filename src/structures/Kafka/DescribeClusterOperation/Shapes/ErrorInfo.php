@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterOperation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorCode
- * @property string $ErrorString
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorString
  */
 class ErrorInfo extends Shape
 {
     /**
      * @param array{
-     *     ErrorCode?: string,
-     *     ErrorString?: string
+     *     ErrorCode?: string|null,
+     *     ErrorString?: string|null
      * } $args
      */
     public function __construct(array $args = [])

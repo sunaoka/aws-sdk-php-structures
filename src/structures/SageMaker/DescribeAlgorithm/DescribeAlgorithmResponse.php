@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $AlgorithmName
  * @property string $AlgorithmArn
- * @property string $AlgorithmDescription
+ * @property string|null $AlgorithmDescription
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property Shapes\TrainingSpecification $TrainingSpecification
- * @property Shapes\InferenceSpecification $InferenceSpecification
- * @property Shapes\AlgorithmValidationSpecification $ValidationSpecification
+ * @property Shapes\InferenceSpecification|null $InferenceSpecification
+ * @property Shapes\AlgorithmValidationSpecification|null $ValidationSpecification
  * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting' $AlgorithmStatus
  * @property Shapes\AlgorithmStatusDetails $AlgorithmStatusDetails
- * @property string $ProductId
- * @property bool $CertifyForMarketplace
+ * @property string|null $ProductId
+ * @property bool|null $CertifyForMarketplace
  */
 class DescribeAlgorithmResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chatbot\CreateMicrosoftTeamsChannelConfiguratio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TeamsChannelConfiguration $ChannelConfiguration
+ * @property Shapes\TeamsChannelConfiguration|null $ChannelConfiguration
  */
 class CreateMicrosoftTeamsChannelConfigurationResponse extends Response
 {

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeTransitGatewayAttachments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayAttachmentId
- * @property string $TransitGatewayId
- * @property string $TransitGatewayOwnerId
- * @property string $ResourceOwnerId
- * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering' $ResourceType
- * @property string $ResourceId
- * @property 'initiating'|'initiatingRequest'|'pendingAcceptance'|'rollingBack'|'pending'|'available'|'modifying'|'deleting'|'deleted'|'failed'|'rejected'|'rejecting'|'failing' $State
- * @property TransitGatewayAttachmentAssociation $Association
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property list<Tag> $Tags
+ * @property string|null $TransitGatewayAttachmentId
+ * @property string|null $TransitGatewayId
+ * @property string|null $TransitGatewayOwnerId
+ * @property string|null $ResourceOwnerId
+ * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null $ResourceType
+ * @property string|null $ResourceId
+ * @property 'initiating'|'initiatingRequest'|'pendingAcceptance'|'rollingBack'|'pending'|'available'|'modifying'|'deleting'|'deleted'|'failed'|'rejected'|'rejecting'|'failing'|null $State
+ * @property TransitGatewayAttachmentAssociation|null $Association
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property list<Tag>|null $Tags
  */
 class TransitGatewayAttachment extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayAttachmentId?: string,
-     *     TransitGatewayId?: string,
-     *     TransitGatewayOwnerId?: string,
-     *     ResourceOwnerId?: string,
-     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering',
-     *     ResourceId?: string,
-     *     State?: 'initiating'|'initiatingRequest'|'pendingAcceptance'|'rollingBack'|'pending'|'available'|'modifying'|'deleting'|'deleted'|'failed'|'rejected'|'rejecting'|'failing',
-     *     Association?: TransitGatewayAttachmentAssociation,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Tags?: list<Tag>
+     *     TransitGatewayAttachmentId?: string|null,
+     *     TransitGatewayId?: string|null,
+     *     TransitGatewayOwnerId?: string|null,
+     *     ResourceOwnerId?: string|null,
+     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null,
+     *     ResourceId?: string|null,
+     *     State?: 'initiating'|'initiatingRequest'|'pendingAcceptance'|'rollingBack'|'pending'|'available'|'modifying'|'deleting'|'deleted'|'failed'|'rejected'|'rejecting'|'failing'|null,
+     *     Association?: TransitGatewayAttachmentAssociation|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

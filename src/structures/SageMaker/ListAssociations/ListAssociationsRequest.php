@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListAssociations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SourceArn
- * @property string $DestinationArn
- * @property string $SourceType
- * @property string $DestinationType
- * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs' $AssociationType
- * @property \Aws\Api\DateTimeResult $CreatedAfter
- * @property \Aws\Api\DateTimeResult $CreatedBefore
- * @property 'SourceArn'|'DestinationArn'|'SourceType'|'DestinationType'|'CreationTime' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $SourceArn
+ * @property string|null $DestinationArn
+ * @property string|null $SourceType
+ * @property string|null $DestinationType
+ * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null $AssociationType
+ * @property \Aws\Api\DateTimeResult|null $CreatedAfter
+ * @property \Aws\Api\DateTimeResult|null $CreatedBefore
+ * @property 'SourceArn'|'DestinationArn'|'SourceType'|'DestinationType'|'CreationTime'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     SourceArn?: string,
-     *     DestinationArn?: string,
-     *     SourceType?: string,
-     *     DestinationType?: string,
-     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs',
-     *     CreatedAfter?: \Aws\Api\DateTimeResult,
-     *     CreatedBefore?: \Aws\Api\DateTimeResult,
-     *     SortBy?: 'SourceArn'|'DestinationArn'|'SourceType'|'DestinationType'|'CreationTime',
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     SourceArn?: string|null,
+     *     DestinationArn?: string|null,
+     *     SourceType?: string|null,
+     *     DestinationType?: string|null,
+     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null,
+     *     CreatedAfter?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBefore?: \Aws\Api\DateTimeResult|null,
+     *     SortBy?: 'SourceArn'|'DestinationArn'|'SourceType'|'DestinationType'|'CreationTime'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

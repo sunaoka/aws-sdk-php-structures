@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\DeleteResourcePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $PolicyHashCondition
- * @property string $ResourceArn
+ * @property string|null $PolicyHashCondition
+ * @property string|null $ResourceArn
  */
 class DeleteResourcePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     PolicyHashCondition?: string,
-     *     ResourceArn?: string
+     *     PolicyHashCondition?: string|null,
+     *     ResourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

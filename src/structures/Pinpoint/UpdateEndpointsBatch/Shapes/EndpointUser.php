@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateEndpointsBatch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, list<string>> $UserAttributes
- * @property string $UserId
+ * @property array<string, list<string>>|null $UserAttributes
+ * @property string|null $UserId
  */
 class EndpointUser extends Shape
 {
     /**
      * @param array{
-     *     UserAttributes?: array<string, list<string>>,
-     *     UserId?: string
+     *     UserAttributes?: array<string, list<string>>|null,
+     *     UserId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

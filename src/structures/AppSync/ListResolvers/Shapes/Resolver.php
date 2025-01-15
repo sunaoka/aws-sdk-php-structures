@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\AppSync\ListResolvers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $typeName
- * @property string $fieldName
- * @property string $dataSourceName
- * @property string $resolverArn
- * @property string $requestMappingTemplate
- * @property string $responseMappingTemplate
- * @property 'UNIT'|'PIPELINE' $kind
- * @property PipelineConfig $pipelineConfig
- * @property SyncConfig $syncConfig
- * @property CachingConfig $cachingConfig
- * @property int<0, 2000> $maxBatchSize
- * @property AppSyncRuntime $runtime
- * @property string $code
- * @property 'ENABLED'|'DISABLED' $metricsConfig
+ * @property string|null $typeName
+ * @property string|null $fieldName
+ * @property string|null $dataSourceName
+ * @property string|null $resolverArn
+ * @property string|null $requestMappingTemplate
+ * @property string|null $responseMappingTemplate
+ * @property 'UNIT'|'PIPELINE'|null $kind
+ * @property PipelineConfig|null $pipelineConfig
+ * @property SyncConfig|null $syncConfig
+ * @property CachingConfig|null $cachingConfig
+ * @property int<0, 2000>|null $maxBatchSize
+ * @property AppSyncRuntime|null $runtime
+ * @property string|null $code
+ * @property 'ENABLED'|'DISABLED'|null $metricsConfig
  */
 class Resolver extends Shape
 {
     /**
      * @param array{
-     *     typeName?: string,
-     *     fieldName?: string,
-     *     dataSourceName?: string,
-     *     resolverArn?: string,
-     *     requestMappingTemplate?: string,
-     *     responseMappingTemplate?: string,
-     *     kind?: 'UNIT'|'PIPELINE',
-     *     pipelineConfig?: PipelineConfig,
-     *     syncConfig?: SyncConfig,
-     *     cachingConfig?: CachingConfig,
-     *     maxBatchSize?: int<0, 2000>,
-     *     runtime?: AppSyncRuntime,
-     *     code?: string,
-     *     metricsConfig?: 'ENABLED'|'DISABLED'
+     *     typeName?: string|null,
+     *     fieldName?: string|null,
+     *     dataSourceName?: string|null,
+     *     resolverArn?: string|null,
+     *     requestMappingTemplate?: string|null,
+     *     responseMappingTemplate?: string|null,
+     *     kind?: 'UNIT'|'PIPELINE'|null,
+     *     pipelineConfig?: PipelineConfig|null,
+     *     syncConfig?: SyncConfig|null,
+     *     cachingConfig?: CachingConfig|null,
+     *     maxBatchSize?: int<0, 2000>|null,
+     *     runtime?: AppSyncRuntime|null,
+     *     code?: string|null,
+     *     metricsConfig?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

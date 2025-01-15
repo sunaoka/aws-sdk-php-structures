@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\NotifyProvisionProductEngineWork
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UniqueTagResourceIdentifier $UniqueTag
+ * @property UniqueTagResourceIdentifier|null $UniqueTag
  */
 class EngineWorkflowResourceIdentifier extends Shape
 {
     /**
-     * @param array{UniqueTag?: UniqueTagResourceIdentifier} $args
+     * @param array{UniqueTag?: UniqueTagResourceIdentifier|null} $args
      */
     public function __construct(array $args = [])
     {

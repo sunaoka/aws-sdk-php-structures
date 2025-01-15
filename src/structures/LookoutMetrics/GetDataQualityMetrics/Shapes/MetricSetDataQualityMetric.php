@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\GetDataQualityMetrics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricSetArn
- * @property list<DataQualityMetric> $DataQualityMetricList
+ * @property string|null $MetricSetArn
+ * @property list<DataQualityMetric>|null $DataQualityMetricList
  */
 class MetricSetDataQualityMetric extends Shape
 {
     /**
      * @param array{
-     *     MetricSetArn?: string,
-     *     DataQualityMetricList?: list<DataQualityMetric>
+     *     MetricSetArn?: string|null,
+     *     DataQualityMetricList?: list<DataQualityMetric>|null
      * } $args
      */
     public function __construct(array $args = [])

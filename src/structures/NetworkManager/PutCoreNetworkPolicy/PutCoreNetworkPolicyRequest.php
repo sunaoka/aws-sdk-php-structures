@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CoreNetworkId
  * @property string $PolicyDocument
- * @property string $Description
- * @property int $LatestVersionId
- * @property string $ClientToken
+ * @property string|null $Description
+ * @property int|null $LatestVersionId
+ * @property string|null $ClientToken
  */
 class PutCoreNetworkPolicyRequest extends Request
 {
@@ -17,9 +17,9 @@ class PutCoreNetworkPolicyRequest extends Request
      * @param array{
      *     CoreNetworkId: string,
      *     PolicyDocument: string,
-     *     Description?: string,
-     *     LatestVersionId?: int,
-     *     ClientToken?: string
+     *     Description?: string|null,
+     *     LatestVersionId?: int|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

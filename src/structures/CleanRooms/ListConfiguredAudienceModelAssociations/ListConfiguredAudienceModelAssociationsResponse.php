@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ConfiguredAudienceModelAssociationSummary> $configuredAudienceModelAssociationSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListConfiguredAudienceModelAssociationsResponse extends Response
 {

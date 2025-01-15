@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\InvokeModelWithResponseStream\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PayloadPart $chunk
- * @property InternalServerException $internalServerException
- * @property ModelStreamErrorException $modelStreamErrorException
- * @property ValidationException $validationException
- * @property ThrottlingException $throttlingException
- * @property ModelTimeoutException $modelTimeoutException
- * @property ServiceUnavailableException $serviceUnavailableException
+ * @property PayloadPart|null $chunk
+ * @property InternalServerException|null $internalServerException
+ * @property ModelStreamErrorException|null $modelStreamErrorException
+ * @property ValidationException|null $validationException
+ * @property ThrottlingException|null $throttlingException
+ * @property ModelTimeoutException|null $modelTimeoutException
+ * @property ServiceUnavailableException|null $serviceUnavailableException
  */
 class ResponseStream extends Shape
 {
     /**
      * @param array{
-     *     chunk?: PayloadPart,
-     *     internalServerException?: InternalServerException,
-     *     modelStreamErrorException?: ModelStreamErrorException,
-     *     validationException?: ValidationException,
-     *     throttlingException?: ThrottlingException,
-     *     modelTimeoutException?: ModelTimeoutException,
-     *     serviceUnavailableException?: ServiceUnavailableException
+     *     chunk?: PayloadPart|null,
+     *     internalServerException?: InternalServerException|null,
+     *     modelStreamErrorException?: ModelStreamErrorException|null,
+     *     validationException?: ValidationException|null,
+     *     throttlingException?: ThrottlingException|null,
+     *     modelTimeoutException?: ModelTimeoutException|null,
+     *     serviceUnavailableException?: ServiceUnavailableException|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DescribeRuleGroupMetadata\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DEFAULT_ACTION_ORDER'|'STRICT_ORDER' $RuleOrder
+ * @property 'DEFAULT_ACTION_ORDER'|'STRICT_ORDER'|null $RuleOrder
  */
 class StatefulRuleOptions extends Shape
 {
     /**
-     * @param array{RuleOrder?: 'DEFAULT_ACTION_ORDER'|'STRICT_ORDER'} $args
+     * @param array{RuleOrder?: 'DEFAULT_ACTION_ORDER'|'STRICT_ORDER'|null} $args
      */
     public function __construct(array $args = [])
     {

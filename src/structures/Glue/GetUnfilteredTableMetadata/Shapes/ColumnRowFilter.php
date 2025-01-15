@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetUnfilteredTableMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ColumnName
- * @property string $RowFilterExpression
+ * @property string|null $ColumnName
+ * @property string|null $RowFilterExpression
  */
 class ColumnRowFilter extends Shape
 {
     /**
      * @param array{
-     *     ColumnName?: string,
-     *     RowFilterExpression?: string
+     *     ColumnName?: string|null,
+     *     RowFilterExpression?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
  * @property string $Id
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\Regex> $RegularExpressionList
  * @property string $LockToken
  */
@@ -19,7 +19,7 @@ class UpdateRegexPatternSetRequest extends Request
      *     Name: string,
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
      *     Id: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     RegularExpressionList: list<Shapes\Regex>,
      *     LockToken: string
      * } $args

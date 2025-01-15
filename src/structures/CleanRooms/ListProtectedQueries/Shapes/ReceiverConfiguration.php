@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DIRECT_ANALYSIS'|'ADDITIONAL_ANALYSIS' $analysisType
- * @property ConfigurationDetails $configurationDetails
+ * @property ConfigurationDetails|null $configurationDetails
  */
 class ReceiverConfiguration extends Shape
 {
     /**
      * @param array{
      *     analysisType: 'DIRECT_ANALYSIS'|'ADDITIONAL_ANALYSIS',
-     *     configurationDetails?: ConfigurationDetails
+     *     configurationDetails?: ConfigurationDetails|null
      * } $args
      */
     public function __construct(array $args)

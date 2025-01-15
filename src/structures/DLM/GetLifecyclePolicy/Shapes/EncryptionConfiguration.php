@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Encrypted
- * @property string $CmkArn
+ * @property string|null $CmkArn
  */
 class EncryptionConfiguration extends Shape
 {
     /**
      * @param array{
      *     Encrypted: bool,
-     *     CmkArn?: string
+     *     CmkArn?: string|null
      * } $args
      */
     public function __construct(array $args)

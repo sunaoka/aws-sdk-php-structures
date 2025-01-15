@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\FunctionUrlConfig> $FunctionUrlConfigs
- * @property string $NextMarker
+ * @property string|null $NextMarker
  */
 class ListFunctionUrlConfigsResponse extends Response
 {

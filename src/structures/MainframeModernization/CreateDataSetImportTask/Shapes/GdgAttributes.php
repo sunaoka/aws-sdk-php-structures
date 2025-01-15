@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateDataSetImportTask\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $limit
- * @property string $rollDisposition
+ * @property int|null $limit
+ * @property string|null $rollDisposition
  */
 class GdgAttributes extends Shape
 {
     /**
      * @param array{
-     *     limit?: int,
-     *     rollDisposition?: string
+     *     limit?: int|null,
+     *     rollDisposition?: string|null
      * } $args
      */
     public function __construct(array $args = [])

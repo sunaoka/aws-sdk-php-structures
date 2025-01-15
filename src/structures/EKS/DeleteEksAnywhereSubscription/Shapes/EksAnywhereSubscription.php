@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\EKS\DeleteEksAnywhereSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $effectiveDate
- * @property \Aws\Api\DateTimeResult $expirationDate
- * @property int $licenseQuantity
- * @property 'Cluster' $licenseType
- * @property EksAnywhereSubscriptionTerm $term
- * @property string $status
- * @property bool $autoRenew
- * @property list<string> $licenseArns
- * @property array<string, string> $tags
+ * @property string|null $id
+ * @property string|null $arn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $effectiveDate
+ * @property \Aws\Api\DateTimeResult|null $expirationDate
+ * @property int|null $licenseQuantity
+ * @property 'Cluster'|null $licenseType
+ * @property EksAnywhereSubscriptionTerm|null $term
+ * @property string|null $status
+ * @property bool|null $autoRenew
+ * @property list<string>|null $licenseArns
+ * @property array<string, string>|null $tags
  */
 class EksAnywhereSubscription extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     arn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     effectiveDate?: \Aws\Api\DateTimeResult,
-     *     expirationDate?: \Aws\Api\DateTimeResult,
-     *     licenseQuantity?: int,
-     *     licenseType?: 'Cluster',
-     *     term?: EksAnywhereSubscriptionTerm,
-     *     status?: string,
-     *     autoRenew?: bool,
-     *     licenseArns?: list<string>,
-     *     tags?: array<string, string>
+     *     id?: string|null,
+     *     arn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     effectiveDate?: \Aws\Api\DateTimeResult|null,
+     *     expirationDate?: \Aws\Api\DateTimeResult|null,
+     *     licenseQuantity?: int|null,
+     *     licenseType?: 'Cluster'|null,
+     *     term?: EksAnywhereSubscriptionTerm|null,
+     *     status?: string|null,
+     *     autoRenew?: bool|null,
+     *     licenseArns?: list<string>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

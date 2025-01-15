@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAssetBundleImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssetBundleResourcePermissions $Permissions
+ * @property AssetBundleResourcePermissions|null $Permissions
  */
 class AssetBundleResourceLinkSharingConfiguration extends Shape
 {
     /**
-     * @param array{Permissions?: AssetBundleResourcePermissions} $args
+     * @param array{Permissions?: AssetBundleResourcePermissions|null} $args
      */
     public function __construct(array $args = [])
     {

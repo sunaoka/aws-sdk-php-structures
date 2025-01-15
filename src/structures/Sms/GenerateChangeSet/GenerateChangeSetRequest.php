@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Sms\GenerateChangeSet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $appId
- * @property 'JSON'|'YAML' $changesetFormat
+ * @property string|null $appId
+ * @property 'JSON'|'YAML'|null $changesetFormat
  */
 class GenerateChangeSetRequest extends Request
 {
     /**
      * @param array{
-     *     appId?: string,
-     *     changesetFormat?: 'JSON'|'YAML'
+     *     appId?: string|null,
+     *     changesetFormat?: 'JSON'|'YAML'|null
      * } $args
      */
     public function __construct(array $args = [])

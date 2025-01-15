@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVerifiedAccessTrustProvider\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TenantId
- * @property string $PublicSigningKeyUrl
+ * @property string|null $TenantId
+ * @property string|null $PublicSigningKeyUrl
  */
 class DeviceOptions extends Shape
 {
     /**
      * @param array{
-     *     TenantId?: string,
-     *     PublicSigningKeyUrl?: string
+     *     TenantId?: string|null,
+     *     PublicSigningKeyUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

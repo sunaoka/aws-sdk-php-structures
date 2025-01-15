@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\CreateDeploymentGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISCOVER_EXISTING'|'COPY_AUTO_SCALING_GROUP' $action
+ * @property 'DISCOVER_EXISTING'|'COPY_AUTO_SCALING_GROUP'|null $action
  */
 class GreenFleetProvisioningOption extends Shape
 {
     /**
-     * @param array{action?: 'DISCOVER_EXISTING'|'COPY_AUTO_SCALING_GROUP'} $args
+     * @param array{action?: 'DISCOVER_EXISTING'|'COPY_AUTO_SCALING_GROUP'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TcpEstablishedTimeout
- * @property int $UdpTimeout
- * @property int $UdpStreamTimeout
+ * @property int|null $TcpEstablishedTimeout
+ * @property int|null $UdpTimeout
+ * @property int|null $UdpStreamTimeout
  */
 class ConnectionTrackingSpecification extends Shape
 {
     /**
      * @param array{
-     *     TcpEstablishedTimeout?: int,
-     *     UdpTimeout?: int,
-     *     UdpStreamTimeout?: int
+     *     TcpEstablishedTimeout?: int|null,
+     *     UdpTimeout?: int|null,
+     *     UdpStreamTimeout?: int|null
      * } $args
      */
     public function __construct(array $args = [])

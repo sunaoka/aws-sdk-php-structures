@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $jobId
- * @property bool $beforeSubstitution
+ * @property bool|null $beforeSubstitution
  */
 class DescribeJobRequest extends Request
 {
     /**
      * @param array{
      *     jobId: string,
-     *     beforeSubstitution?: bool
+     *     beforeSubstitution?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetDiskSnapshot;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DiskSnapshot $diskSnapshot
+ * @property Shapes\DiskSnapshot|null $diskSnapshot
  */
 class GetDiskSnapshotResponse extends Response
 {

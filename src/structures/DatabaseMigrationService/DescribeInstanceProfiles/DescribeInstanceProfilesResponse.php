@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeInstanceProfil
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\InstanceProfile> $InstanceProfiles
+ * @property string|null $Marker
+ * @property list<Shapes\InstanceProfile>|null $InstanceProfiles
  */
 class DescribeInstanceProfilesResponse extends Response
 {

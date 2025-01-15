@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateCatalog\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataLakeAccessProperties $DataLakeAccessProperties
- * @property array<string, string> $CustomProperties
+ * @property DataLakeAccessProperties|null $DataLakeAccessProperties
+ * @property array<string, string>|null $CustomProperties
  */
 class CatalogProperties extends Shape
 {
     /**
      * @param array{
-     *     DataLakeAccessProperties?: DataLakeAccessProperties,
-     *     CustomProperties?: array<string, string>
+     *     DataLakeAccessProperties?: DataLakeAccessProperties|null,
+     *     CustomProperties?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

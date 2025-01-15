@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property string $type
- * @property list<string> $defaultValue
- * @property string $description
+ * @property list<string>|null $defaultValue
+ * @property string|null $description
  */
 class ComponentParameterDetail extends Shape
 {
@@ -16,8 +16,8 @@ class ComponentParameterDetail extends Shape
      * @param array{
      *     name: string,
      *     type: string,
-     *     defaultValue?: list<string>,
-     *     description?: string
+     *     defaultValue?: list<string>|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

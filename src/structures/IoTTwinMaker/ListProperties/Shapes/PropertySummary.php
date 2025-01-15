@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\ListProperties\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PropertyDefinitionResponse $definition
+ * @property PropertyDefinitionResponse|null $definition
  * @property string $propertyName
- * @property DataValue $value
- * @property bool $areAllPropertyValuesReturned
+ * @property DataValue|null $value
+ * @property bool|null $areAllPropertyValuesReturned
  */
 class PropertySummary extends Shape
 {
     /**
      * @param array{
-     *     definition?: PropertyDefinitionResponse,
+     *     definition?: PropertyDefinitionResponse|null,
      *     propertyName: string,
-     *     value?: DataValue,
-     *     areAllPropertyValuesReturned?: bool
+     *     value?: DataValue|null,
+     *     areAllPropertyValuesReturned?: bool|null
      * } $args
      */
     public function __construct(array $args)

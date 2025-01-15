@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $DocumentVersion
+ * @property string|null $DocumentVersion
  * @property Shapes\DocumentReviews $DocumentReviews
  */
 class UpdateDocumentMetadataRequest extends Request
@@ -14,7 +14,7 @@ class UpdateDocumentMetadataRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     DocumentVersion?: string,
+     *     DocumentVersion?: string|null,
      *     DocumentReviews: Shapes\DocumentReviews
      * } $args
      */

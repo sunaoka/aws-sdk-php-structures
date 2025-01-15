@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceAttribute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
+ * @property string|null $Value
  */
 class AttributeValue extends Shape
 {
     /**
-     * @param array{Value?: string} $args
+     * @param array{Value?: string|null} $args
      */
     public function __construct(array $args = [])
     {

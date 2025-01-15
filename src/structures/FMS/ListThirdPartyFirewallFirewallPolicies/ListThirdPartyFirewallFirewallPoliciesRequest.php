@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'PALO_ALTO_NETWORKS_CLOUD_NGFW'|'FORTIGATE_CLOUD_NATIVE_FIREWALL' $ThirdPartyFirewall
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property int<1, 100> $MaxResults
  */
 class ListThirdPartyFirewallFirewallPoliciesRequest extends Request
@@ -14,7 +14,7 @@ class ListThirdPartyFirewallFirewallPoliciesRequest extends Request
     /**
      * @param array{
      *     ThirdPartyFirewall: 'PALO_ALTO_NETWORKS_CLOUD_NGFW'|'FORTIGATE_CLOUD_NATIVE_FIREWALL',
-     *     NextToken?: string,
+     *     NextToken?: string|null,
      *     MaxResults: int<1, 100>
      * } $args
      */

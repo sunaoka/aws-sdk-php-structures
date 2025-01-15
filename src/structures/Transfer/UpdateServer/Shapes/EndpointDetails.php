@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Transfer\UpdateServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AddressAllocationIds
- * @property list<string> $SubnetIds
- * @property string $VpcEndpointId
- * @property string $VpcId
- * @property list<string> $SecurityGroupIds
+ * @property list<string>|null $AddressAllocationIds
+ * @property list<string>|null $SubnetIds
+ * @property string|null $VpcEndpointId
+ * @property string|null $VpcId
+ * @property list<string>|null $SecurityGroupIds
  */
 class EndpointDetails extends Shape
 {
     /**
      * @param array{
-     *     AddressAllocationIds?: list<string>,
-     *     SubnetIds?: list<string>,
-     *     VpcEndpointId?: string,
-     *     VpcId?: string,
-     *     SecurityGroupIds?: list<string>
+     *     AddressAllocationIds?: list<string>|null,
+     *     SubnetIds?: list<string>|null,
+     *     VpcEndpointId?: string|null,
+     *     VpcId?: string|null,
+     *     SecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

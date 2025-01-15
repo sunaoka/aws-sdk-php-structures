@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property Shapes\UserHierarchyGroupSearchFilter $SearchFilter
- * @property Shapes\UserHierarchyGroupSearchCriteria $SearchCriteria
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property Shapes\UserHierarchyGroupSearchFilter|null $SearchFilter
+ * @property Shapes\UserHierarchyGroupSearchCriteria|null $SearchCriteria
  */
 class SearchUserHierarchyGroupsRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     SearchFilter?: Shapes\UserHierarchyGroupSearchFilter,
-     *     SearchCriteria?: Shapes\UserHierarchyGroupSearchCriteria
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     SearchFilter?: Shapes\UserHierarchyGroupSearchFilter|null,
+     *     SearchCriteria?: Shapes\UserHierarchyGroupSearchCriteria|null
      * } $args
      */
     public function __construct(array $args)

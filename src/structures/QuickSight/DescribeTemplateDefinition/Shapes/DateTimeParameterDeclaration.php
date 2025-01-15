@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property DateTimeDefaultValues $DefaultValues
- * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND' $TimeGranularity
- * @property DateTimeValueWhenUnsetConfiguration $ValueWhenUnset
- * @property list<MappedDataSetParameter> $MappedDataSetParameters
+ * @property DateTimeDefaultValues|null $DefaultValues
+ * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null $TimeGranularity
+ * @property DateTimeValueWhenUnsetConfiguration|null $ValueWhenUnset
+ * @property list<MappedDataSetParameter>|null $MappedDataSetParameters
  */
 class DateTimeParameterDeclaration extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     DefaultValues?: DateTimeDefaultValues,
-     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND',
-     *     ValueWhenUnset?: DateTimeValueWhenUnsetConfiguration,
-     *     MappedDataSetParameters?: list<MappedDataSetParameter>
+     *     DefaultValues?: DateTimeDefaultValues|null,
+     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null,
+     *     ValueWhenUnset?: DateTimeValueWhenUnsetConfiguration|null,
+     *     MappedDataSetParameters?: list<MappedDataSetParameter>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeGuruProfiler\RemoveNotificationChannel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\NotificationConfiguration $notificationConfiguration
+ * @property Shapes\NotificationConfiguration|null $notificationConfiguration
  */
 class RemoveNotificationChannelResponse extends Response
 {

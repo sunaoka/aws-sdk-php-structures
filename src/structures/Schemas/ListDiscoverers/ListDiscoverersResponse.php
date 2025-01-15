@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Schemas\ListDiscoverers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DiscovererSummary> $Discoverers
- * @property string $NextToken
+ * @property list<Shapes\DiscovererSummary>|null $Discoverers
+ * @property string|null $NextToken
  */
 class ListDiscoverersResponse extends Response
 {

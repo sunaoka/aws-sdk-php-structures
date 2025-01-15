@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ItemsLimit
- * @property 'INCLUDE'|'EXCLUDE' $OtherCategories
+ * @property int|null $ItemsLimit
+ * @property 'INCLUDE'|'EXCLUDE'|null $OtherCategories
  */
 class ItemsLimitConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ItemsLimit?: int,
-     *     OtherCategories?: 'INCLUDE'|'EXCLUDE'
+     *     ItemsLimit?: int|null,
+     *     OtherCategories?: 'INCLUDE'|'EXCLUDE'|null
      * } $args
      */
     public function __construct(array $args = [])

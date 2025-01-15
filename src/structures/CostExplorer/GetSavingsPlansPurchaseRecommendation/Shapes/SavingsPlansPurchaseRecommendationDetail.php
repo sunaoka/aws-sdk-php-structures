@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetSavingsPlansPurchaseRecommendat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SavingsPlansDetails $SavingsPlansDetails
- * @property string $AccountId
- * @property string $UpfrontCost
- * @property string $EstimatedROI
- * @property string $CurrencyCode
- * @property string $EstimatedSPCost
- * @property string $EstimatedOnDemandCost
- * @property string $EstimatedOnDemandCostWithCurrentCommitment
- * @property string $EstimatedSavingsAmount
- * @property string $EstimatedSavingsPercentage
- * @property string $HourlyCommitmentToPurchase
- * @property string $EstimatedAverageUtilization
- * @property string $EstimatedMonthlySavingsAmount
- * @property string $CurrentMinimumHourlyOnDemandSpend
- * @property string $CurrentMaximumHourlyOnDemandSpend
- * @property string $CurrentAverageHourlyOnDemandSpend
- * @property string $RecommendationDetailId
+ * @property SavingsPlansDetails|null $SavingsPlansDetails
+ * @property string|null $AccountId
+ * @property string|null $UpfrontCost
+ * @property string|null $EstimatedROI
+ * @property string|null $CurrencyCode
+ * @property string|null $EstimatedSPCost
+ * @property string|null $EstimatedOnDemandCost
+ * @property string|null $EstimatedOnDemandCostWithCurrentCommitment
+ * @property string|null $EstimatedSavingsAmount
+ * @property string|null $EstimatedSavingsPercentage
+ * @property string|null $HourlyCommitmentToPurchase
+ * @property string|null $EstimatedAverageUtilization
+ * @property string|null $EstimatedMonthlySavingsAmount
+ * @property string|null $CurrentMinimumHourlyOnDemandSpend
+ * @property string|null $CurrentMaximumHourlyOnDemandSpend
+ * @property string|null $CurrentAverageHourlyOnDemandSpend
+ * @property string|null $RecommendationDetailId
  */
 class SavingsPlansPurchaseRecommendationDetail extends Shape
 {
     /**
      * @param array{
-     *     SavingsPlansDetails?: SavingsPlansDetails,
-     *     AccountId?: string,
-     *     UpfrontCost?: string,
-     *     EstimatedROI?: string,
-     *     CurrencyCode?: string,
-     *     EstimatedSPCost?: string,
-     *     EstimatedOnDemandCost?: string,
-     *     EstimatedOnDemandCostWithCurrentCommitment?: string,
-     *     EstimatedSavingsAmount?: string,
-     *     EstimatedSavingsPercentage?: string,
-     *     HourlyCommitmentToPurchase?: string,
-     *     EstimatedAverageUtilization?: string,
-     *     EstimatedMonthlySavingsAmount?: string,
-     *     CurrentMinimumHourlyOnDemandSpend?: string,
-     *     CurrentMaximumHourlyOnDemandSpend?: string,
-     *     CurrentAverageHourlyOnDemandSpend?: string,
-     *     RecommendationDetailId?: string
+     *     SavingsPlansDetails?: SavingsPlansDetails|null,
+     *     AccountId?: string|null,
+     *     UpfrontCost?: string|null,
+     *     EstimatedROI?: string|null,
+     *     CurrencyCode?: string|null,
+     *     EstimatedSPCost?: string|null,
+     *     EstimatedOnDemandCost?: string|null,
+     *     EstimatedOnDemandCostWithCurrentCommitment?: string|null,
+     *     EstimatedSavingsAmount?: string|null,
+     *     EstimatedSavingsPercentage?: string|null,
+     *     HourlyCommitmentToPurchase?: string|null,
+     *     EstimatedAverageUtilization?: string|null,
+     *     EstimatedMonthlySavingsAmount?: string|null,
+     *     CurrentMinimumHourlyOnDemandSpend?: string|null,
+     *     CurrentMaximumHourlyOnDemandSpend?: string|null,
+     *     CurrentAverageHourlyOnDemandSpend?: string|null,
+     *     RecommendationDetailId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\MonitoredResourceIdentifier> $MonitoredResourceIdentifiers
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListMonitoredResourcesResponse extends Response
 {

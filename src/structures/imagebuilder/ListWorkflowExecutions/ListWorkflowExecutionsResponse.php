@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListWorkflowExecutions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property list<Shapes\WorkflowExecutionMetadata> $workflowExecutions
- * @property string $imageBuildVersionArn
- * @property string $message
- * @property string $nextToken
+ * @property string|null $requestId
+ * @property list<Shapes\WorkflowExecutionMetadata>|null $workflowExecutions
+ * @property string|null $imageBuildVersionArn
+ * @property string|null $message
+ * @property string|null $nextToken
  */
 class ListWorkflowExecutionsResponse extends Response
 {

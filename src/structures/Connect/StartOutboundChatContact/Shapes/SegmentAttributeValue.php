@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\StartOutboundChatContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ValueString
- * @property array<string, SegmentAttributeValue> $ValueMap
- * @property int $ValueInteger
+ * @property string|null $ValueString
+ * @property array<string, SegmentAttributeValue>|null $ValueMap
+ * @property int|null $ValueInteger
  */
 class SegmentAttributeValue extends Shape
 {
     /**
      * @param array{
-     *     ValueString?: string,
-     *     ValueMap?: array<string, SegmentAttributeValue>,
-     *     ValueInteger?: int
+     *     ValueString?: string|null,
+     *     ValueMap?: array<string, SegmentAttributeValue>|null,
+     *     ValueInteger?: int|null
      * } $args
      */
     public function __construct(array $args = [])

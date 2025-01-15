@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $cpu
  * @property string $memory
- * @property string $disk
+ * @property string|null $disk
  */
 class MaximumAllowedResources extends Shape
 {
@@ -15,7 +15,7 @@ class MaximumAllowedResources extends Shape
      * @param array{
      *     cpu: string,
      *     memory: string,
-     *     disk?: string
+     *     disk?: string|null
      * } $args
      */
     public function __construct(array $args)

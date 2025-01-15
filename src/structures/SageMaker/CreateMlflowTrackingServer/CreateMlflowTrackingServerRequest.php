@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TrackingServerName
  * @property string $ArtifactStoreUri
- * @property 'Small'|'Medium'|'Large' $TrackingServerSize
- * @property string $MlflowVersion
+ * @property 'Small'|'Medium'|'Large'|null $TrackingServerSize
+ * @property string|null $MlflowVersion
  * @property string $RoleArn
- * @property bool $AutomaticModelRegistration
- * @property string $WeeklyMaintenanceWindowStart
- * @property list<Shapes\Tag> $Tags
+ * @property bool|null $AutomaticModelRegistration
+ * @property string|null $WeeklyMaintenanceWindowStart
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMlflowTrackingServerRequest extends Request
 {
@@ -20,12 +20,12 @@ class CreateMlflowTrackingServerRequest extends Request
      * @param array{
      *     TrackingServerName: string,
      *     ArtifactStoreUri: string,
-     *     TrackingServerSize?: 'Small'|'Medium'|'Large',
-     *     MlflowVersion?: string,
+     *     TrackingServerSize?: 'Small'|'Medium'|'Large'|null,
+     *     MlflowVersion?: string|null,
      *     RoleArn: string,
-     *     AutomaticModelRegistration?: bool,
-     *     WeeklyMaintenanceWindowStart?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     AutomaticModelRegistration?: bool|null,
+     *     WeeklyMaintenanceWindowStart?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

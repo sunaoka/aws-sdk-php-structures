@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\DescribeChannelBan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Identity $Member
- * @property string $ChannelArn
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property Identity $CreatedBy
+ * @property Identity|null $Member
+ * @property string|null $ChannelArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property Identity|null $CreatedBy
  */
 class ChannelBan extends Shape
 {
     /**
      * @param array{
-     *     Member?: Identity,
-     *     ChannelArn?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     CreatedBy?: Identity
+     *     Member?: Identity|null,
+     *     ChannelArn?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: Identity|null
      * } $args
      */
     public function __construct(array $args = [])

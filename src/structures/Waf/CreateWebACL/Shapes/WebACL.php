@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $WebACLId
- * @property string $Name
- * @property string $MetricName
+ * @property string|null $Name
+ * @property string|null $MetricName
  * @property WafAction $DefaultAction
  * @property list<ActivatedRule> $Rules
- * @property string $WebACLArn
+ * @property string|null $WebACLArn
  */
 class WebACL extends Shape
 {
     /**
      * @param array{
      *     WebACLId: string,
-     *     Name?: string,
-     *     MetricName?: string,
+     *     Name?: string|null,
+     *     MetricName?: string|null,
      *     DefaultAction: WafAction,
      *     Rules: list<ActivatedRule>,
-     *     WebACLArn?: string
+     *     WebACLArn?: string|null
      * } $args
      */
     public function __construct(array $args)

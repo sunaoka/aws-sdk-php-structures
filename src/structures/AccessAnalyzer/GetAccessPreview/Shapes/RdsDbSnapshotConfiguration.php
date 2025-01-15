@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetAccessPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, RdsDbSnapshotAttributeValue> $attributes
- * @property string $kmsKeyId
+ * @property array<string, RdsDbSnapshotAttributeValue>|null $attributes
+ * @property string|null $kmsKeyId
  */
 class RdsDbSnapshotConfiguration extends Shape
 {
     /**
      * @param array{
-     *     attributes?: array<string, RdsDbSnapshotAttributeValue>,
-     *     kmsKeyId?: string
+     *     attributes?: array<string, RdsDbSnapshotAttributeValue>|null,
+     *     kmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

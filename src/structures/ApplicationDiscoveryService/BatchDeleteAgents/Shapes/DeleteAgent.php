@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $agentId
- * @property bool $force
+ * @property bool|null $force
  */
 class DeleteAgent extends Shape
 {
     /**
      * @param array{
      *     agentId: string,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

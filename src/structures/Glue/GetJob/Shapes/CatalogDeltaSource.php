@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Database
  * @property string $Table
- * @property array<string, string> $AdditionalDeltaOptions
- * @property list<GlueSchema> $OutputSchemas
+ * @property array<string, string>|null $AdditionalDeltaOptions
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class CatalogDeltaSource extends Shape
 {
@@ -18,8 +18,8 @@ class CatalogDeltaSource extends Shape
      *     Name: string,
      *     Database: string,
      *     Table: string,
-     *     AdditionalDeltaOptions?: array<string, string>,
-     *     OutputSchemas?: list<GlueSchema>
+     *     AdditionalDeltaOptions?: array<string, string>|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\ListCampaigns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property InstanceIdFilter $instanceIdFilter
+ * @property InstanceIdFilter|null $instanceIdFilter
  */
 class CampaignFilters extends Shape
 {
     /**
-     * @param array{instanceIdFilter?: InstanceIdFilter} $args
+     * @param array{instanceIdFilter?: InstanceIdFilter|null} $args
      */
     public function __construct(array $args = [])
     {

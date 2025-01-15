@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\InternetMonitor\StartQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Field
- * @property 'EQUALS'|'NOT_EQUALS' $Operator
- * @property list<string> $Values
+ * @property string|null $Field
+ * @property 'EQUALS'|'NOT_EQUALS'|null $Operator
+ * @property list<string>|null $Values
  */
 class FilterParameter extends Shape
 {
     /**
      * @param array{
-     *     Field?: string,
-     *     Operator?: 'EQUALS'|'NOT_EQUALS',
-     *     Values?: list<string>
+     *     Field?: string|null,
+     *     Operator?: 'EQUALS'|'NOT_EQUALS'|null,
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FileCacheId
- * @property string $ClientRequestToken
- * @property Shapes\UpdateFileCacheLustreConfiguration $LustreConfiguration
+ * @property string|null $ClientRequestToken
+ * @property Shapes\UpdateFileCacheLustreConfiguration|null $LustreConfiguration
  */
 class UpdateFileCacheRequest extends Request
 {
     /**
      * @param array{
      *     FileCacheId: string,
-     *     ClientRequestToken?: string,
-     *     LustreConfiguration?: Shapes\UpdateFileCacheLustreConfiguration
+     *     ClientRequestToken?: string|null,
+     *     LustreConfiguration?: Shapes\UpdateFileCacheLustreConfiguration|null
      * } $args
      */
     public function __construct(array $args)

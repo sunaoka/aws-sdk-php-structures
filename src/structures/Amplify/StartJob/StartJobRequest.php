@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appId
  * @property string $branchName
- * @property string $jobId
+ * @property string|null $jobId
  * @property 'RELEASE'|'RETRY'|'MANUAL'|'WEB_HOOK' $jobType
- * @property string $jobReason
- * @property string $commitId
- * @property string $commitMessage
- * @property \Aws\Api\DateTimeResult $commitTime
+ * @property string|null $jobReason
+ * @property string|null $commitId
+ * @property string|null $commitMessage
+ * @property \Aws\Api\DateTimeResult|null $commitTime
  */
 class StartJobRequest extends Request
 {
@@ -20,12 +20,12 @@ class StartJobRequest extends Request
      * @param array{
      *     appId: string,
      *     branchName: string,
-     *     jobId?: string,
+     *     jobId?: string|null,
      *     jobType: 'RELEASE'|'RETRY'|'MANUAL'|'WEB_HOOK',
-     *     jobReason?: string,
-     *     commitId?: string,
-     *     commitMessage?: string,
-     *     commitTime?: \Aws\Api\DateTimeResult
+     *     jobReason?: string|null,
+     *     commitId?: string|null,
+     *     commitMessage?: string|null,
+     *     commitTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

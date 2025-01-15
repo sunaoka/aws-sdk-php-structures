@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RegionName
- * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS' $ReplicaStatus
- * @property BillingModeSummary $ReplicaBillingModeSummary
- * @property int<0, max> $ReplicaProvisionedReadCapacityUnits
- * @property AutoScalingSettingsDescription $ReplicaProvisionedReadCapacityAutoScalingSettings
- * @property int<0, max> $ReplicaProvisionedWriteCapacityUnits
- * @property AutoScalingSettingsDescription $ReplicaProvisionedWriteCapacityAutoScalingSettings
- * @property list<ReplicaGlobalSecondaryIndexSettingsDescription> $ReplicaGlobalSecondaryIndexSettings
- * @property TableClassSummary $ReplicaTableClassSummary
+ * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null $ReplicaStatus
+ * @property BillingModeSummary|null $ReplicaBillingModeSummary
+ * @property int<0, max>|null $ReplicaProvisionedReadCapacityUnits
+ * @property AutoScalingSettingsDescription|null $ReplicaProvisionedReadCapacityAutoScalingSettings
+ * @property int<0, max>|null $ReplicaProvisionedWriteCapacityUnits
+ * @property AutoScalingSettingsDescription|null $ReplicaProvisionedWriteCapacityAutoScalingSettings
+ * @property list<ReplicaGlobalSecondaryIndexSettingsDescription>|null $ReplicaGlobalSecondaryIndexSettings
+ * @property TableClassSummary|null $ReplicaTableClassSummary
  */
 class ReplicaSettingsDescription extends Shape
 {
     /**
      * @param array{
      *     RegionName: string,
-     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS',
-     *     ReplicaBillingModeSummary?: BillingModeSummary,
-     *     ReplicaProvisionedReadCapacityUnits?: int<0, max>,
-     *     ReplicaProvisionedReadCapacityAutoScalingSettings?: AutoScalingSettingsDescription,
-     *     ReplicaProvisionedWriteCapacityUnits?: int<0, max>,
-     *     ReplicaProvisionedWriteCapacityAutoScalingSettings?: AutoScalingSettingsDescription,
-     *     ReplicaGlobalSecondaryIndexSettings?: list<ReplicaGlobalSecondaryIndexSettingsDescription>,
-     *     ReplicaTableClassSummary?: TableClassSummary
+     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null,
+     *     ReplicaBillingModeSummary?: BillingModeSummary|null,
+     *     ReplicaProvisionedReadCapacityUnits?: int<0, max>|null,
+     *     ReplicaProvisionedReadCapacityAutoScalingSettings?: AutoScalingSettingsDescription|null,
+     *     ReplicaProvisionedWriteCapacityUnits?: int<0, max>|null,
+     *     ReplicaProvisionedWriteCapacityAutoScalingSettings?: AutoScalingSettingsDescription|null,
+     *     ReplicaGlobalSecondaryIndexSettings?: list<ReplicaGlobalSecondaryIndexSettingsDescription>|null,
+     *     ReplicaTableClassSummary?: TableClassSummary|null
      * } $args
      */
     public function __construct(array $args)

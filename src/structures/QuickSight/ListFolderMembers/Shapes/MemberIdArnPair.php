@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListFolderMembers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MemberId
- * @property string $MemberArn
+ * @property string|null $MemberId
+ * @property string|null $MemberArn
  */
 class MemberIdArnPair extends Shape
 {
     /**
      * @param array{
-     *     MemberId?: string,
-     *     MemberArn?: string
+     *     MemberId?: string|null,
+     *     MemberArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

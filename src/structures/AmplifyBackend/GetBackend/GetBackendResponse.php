@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\GetBackend;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AmplifyFeatureFlags
- * @property string $AmplifyMetaConfig
- * @property string $AppId
- * @property string $AppName
- * @property list<string> $BackendEnvironmentList
- * @property string $BackendEnvironmentName
- * @property string $Error
+ * @property string|null $AmplifyFeatureFlags
+ * @property string|null $AmplifyMetaConfig
+ * @property string|null $AppId
+ * @property string|null $AppName
+ * @property list<string>|null $BackendEnvironmentList
+ * @property string|null $BackendEnvironmentName
+ * @property string|null $Error
  */
 class GetBackendResponse extends Response
 {

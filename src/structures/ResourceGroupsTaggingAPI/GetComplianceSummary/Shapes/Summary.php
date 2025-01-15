@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ResourceGroupsTaggingAPI\GetComplianceSummary\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LastUpdated
- * @property string $TargetId
- * @property 'ACCOUNT'|'OU'|'ROOT' $TargetIdType
- * @property string $Region
- * @property string $ResourceType
- * @property int $NonCompliantResources
+ * @property string|null $LastUpdated
+ * @property string|null $TargetId
+ * @property 'ACCOUNT'|'OU'|'ROOT'|null $TargetIdType
+ * @property string|null $Region
+ * @property string|null $ResourceType
+ * @property int|null $NonCompliantResources
  */
 class Summary extends Shape
 {
     /**
      * @param array{
-     *     LastUpdated?: string,
-     *     TargetId?: string,
-     *     TargetIdType?: 'ACCOUNT'|'OU'|'ROOT',
-     *     Region?: string,
-     *     ResourceType?: string,
-     *     NonCompliantResources?: int
+     *     LastUpdated?: string|null,
+     *     TargetId?: string|null,
+     *     TargetIdType?: 'ACCOUNT'|'OU'|'ROOT'|null,
+     *     Region?: string|null,
+     *     ResourceType?: string|null,
+     *     NonCompliantResources?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateApnsVoipChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BundleId
- * @property string $Certificate
- * @property string $DefaultAuthenticationMethod
- * @property bool $Enabled
- * @property string $PrivateKey
- * @property string $TeamId
- * @property string $TokenKey
- * @property string $TokenKeyId
+ * @property string|null $BundleId
+ * @property string|null $Certificate
+ * @property string|null $DefaultAuthenticationMethod
+ * @property bool|null $Enabled
+ * @property string|null $PrivateKey
+ * @property string|null $TeamId
+ * @property string|null $TokenKey
+ * @property string|null $TokenKeyId
  */
 class APNSVoipChannelRequest extends Shape
 {
     /**
      * @param array{
-     *     BundleId?: string,
-     *     Certificate?: string,
-     *     DefaultAuthenticationMethod?: string,
-     *     Enabled?: bool,
-     *     PrivateKey?: string,
-     *     TeamId?: string,
-     *     TokenKey?: string,
-     *     TokenKeyId?: string
+     *     BundleId?: string|null,
+     *     Certificate?: string|null,
+     *     DefaultAuthenticationMethod?: string|null,
+     *     Enabled?: bool|null,
+     *     PrivateKey?: string|null,
+     *     TeamId?: string|null,
+     *     TokenKey?: string|null,
+     *     TokenKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

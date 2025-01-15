@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property 'HIDDEN'|'VISIBLE' $SortIconVisibility
- * @property list<AxisLabelOptions> $AxisLabelOptions
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property 'HIDDEN'|'VISIBLE'|null $SortIconVisibility
+ * @property list<AxisLabelOptions>|null $AxisLabelOptions
  */
 class ChartAxisLabelOptions extends Shape
 {
     /**
      * @param array{
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     SortIconVisibility?: 'HIDDEN'|'VISIBLE',
-     *     AxisLabelOptions?: list<AxisLabelOptions>
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     SortIconVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     AxisLabelOptions?: list<AxisLabelOptions>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property string $Key
- * @property string $VersionId
- * @property string $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
+ * @property string|null $VersionId
+ * @property string|null $ContentMD5
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  * @property Shapes\Tagging $Tagging
- * @property string $ExpectedBucketOwner
- * @property 'requester' $RequestPayer
+ * @property string|null $ExpectedBucketOwner
+ * @property 'requester'|null $RequestPayer
  */
 class PutObjectTaggingRequest extends Request
 {
@@ -20,12 +20,12 @@ class PutObjectTaggingRequest extends Request
      * @param array{
      *     Bucket: string,
      *     Key: string,
-     *     VersionId?: string,
-     *     ContentMD5?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
+     *     VersionId?: string|null,
+     *     ContentMD5?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
      *     Tagging: Shapes\Tagging,
-     *     ExpectedBucketOwner?: string,
-     *     RequestPayer?: 'requester'
+     *     ExpectedBucketOwner?: string|null,
+     *     RequestPayer?: 'requester'|null
      * } $args
      */
     public function __construct(array $args)

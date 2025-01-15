@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateModelExplainabilityJobDefinitio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableInterContainerTrafficEncryption
- * @property bool $EnableNetworkIsolation
- * @property VpcConfig $VpcConfig
+ * @property bool|null $EnableInterContainerTrafficEncryption
+ * @property bool|null $EnableNetworkIsolation
+ * @property VpcConfig|null $VpcConfig
  */
 class MonitoringNetworkConfig extends Shape
 {
     /**
      * @param array{
-     *     EnableInterContainerTrafficEncryption?: bool,
-     *     EnableNetworkIsolation?: bool,
-     *     VpcConfig?: VpcConfig
+     *     EnableInterContainerTrafficEncryption?: bool|null,
+     *     EnableNetworkIsolation?: bool|null,
+     *     VpcConfig?: VpcConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ServerId
  * @property string $HostKeyBody
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class ImportHostKeyRequest extends Request
 {
@@ -16,8 +16,8 @@ class ImportHostKeyRequest extends Request
      * @param array{
      *     ServerId: string,
      *     HostKeyBody: string,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

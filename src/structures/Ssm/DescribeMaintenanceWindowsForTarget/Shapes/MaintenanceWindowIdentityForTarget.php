@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeMaintenanceWindowsForTarget\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WindowId
- * @property string $Name
+ * @property string|null $WindowId
+ * @property string|null $Name
  */
 class MaintenanceWindowIdentityForTarget extends Shape
 {
     /**
      * @param array{
-     *     WindowId?: string,
-     *     Name?: string
+     *     WindowId?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

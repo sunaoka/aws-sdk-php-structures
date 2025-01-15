@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 1000> $PeriodsForward
- * @property int<0, 1000> $PeriodsBackward
- * @property double $UpperBoundary
- * @property double $LowerBoundary
- * @property int<50, 95> $PredictionInterval
- * @property int<1, 180> $Seasonality
+ * @property int<1, 1000>|null $PeriodsForward
+ * @property int<0, 1000>|null $PeriodsBackward
+ * @property double|null $UpperBoundary
+ * @property double|null $LowerBoundary
+ * @property int<50, 95>|null $PredictionInterval
+ * @property int<1, 180>|null $Seasonality
  */
 class TimeBasedForecastProperties extends Shape
 {
     /**
      * @param array{
-     *     PeriodsForward?: int<1, 1000>,
-     *     PeriodsBackward?: int<0, 1000>,
-     *     UpperBoundary?: double,
-     *     LowerBoundary?: double,
-     *     PredictionInterval?: int<50, 95>,
-     *     Seasonality?: int<1, 180>
+     *     PeriodsForward?: int<1, 1000>|null,
+     *     PeriodsBackward?: int<0, 1000>|null,
+     *     UpperBoundary?: double|null,
+     *     LowerBoundary?: double|null,
+     *     PredictionInterval?: int<50, 95>|null,
+     *     Seasonality?: int<1, 180>|null
      * } $args
      */
     public function __construct(array $args = [])

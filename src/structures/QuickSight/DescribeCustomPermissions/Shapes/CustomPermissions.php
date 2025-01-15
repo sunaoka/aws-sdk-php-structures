@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeCustomPermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $CustomPermissionsName
- * @property Capabilities $Capabilities
+ * @property string|null $Arn
+ * @property string|null $CustomPermissionsName
+ * @property Capabilities|null $Capabilities
  */
 class CustomPermissions extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CustomPermissionsName?: string,
-     *     Capabilities?: Capabilities
+     *     Arn?: string|null,
+     *     CustomPermissionsName?: string|null,
+     *     Capabilities?: Capabilities|null
      * } $args
      */
     public function __construct(array $args = [])

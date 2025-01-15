@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'end_turn'|'tool_use'|'max_tokens'|'stop_sequence'|'guardrail_intervened'|'content_filtered' $stopReason
  * @property Shapes\TokenUsage $usage
  * @property Shapes\ConverseMetrics $metrics
- * @property Shapes\Document $additionalModelResponseFields
- * @property Shapes\ConverseTrace $trace
- * @property Shapes\PerformanceConfiguration $performanceConfig
+ * @property Shapes\Document|null $additionalModelResponseFields
+ * @property Shapes\ConverseTrace|null $trace
+ * @property Shapes\PerformanceConfiguration|null $performanceConfig
  */
 class ConverseResponse extends Response
 {

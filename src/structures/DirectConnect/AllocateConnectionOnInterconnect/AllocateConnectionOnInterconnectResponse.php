@@ -5,28 +5,28 @@ namespace Sunaoka\Aws\Structures\DirectConnect\AllocateConnectionOnInterconnect;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ownerAccount
- * @property string $connectionId
- * @property string $connectionName
- * @property 'ordering'|'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown' $connectionState
- * @property string $region
- * @property string $location
- * @property string $bandwidth
- * @property int $vlan
- * @property string $partnerName
- * @property \Aws\Api\DateTimeResult $loaIssueTime
- * @property string $lagId
- * @property string $awsDevice
- * @property bool $jumboFrameCapable
- * @property string $awsDeviceV2
- * @property string $awsLogicalDeviceId
- * @property 'unknown'|'yes'|'no' $hasLogicalRedundancy
- * @property list<Shapes\Tag> $tags
- * @property string $providerName
- * @property bool $macSecCapable
- * @property string $portEncryptionStatus
- * @property string $encryptionMode
- * @property list<Shapes\MacSecKey> $macSecKeys
+ * @property string|null $ownerAccount
+ * @property string|null $connectionId
+ * @property string|null $connectionName
+ * @property 'ordering'|'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown'|null $connectionState
+ * @property string|null $region
+ * @property string|null $location
+ * @property string|null $bandwidth
+ * @property int|null $vlan
+ * @property string|null $partnerName
+ * @property \Aws\Api\DateTimeResult|null $loaIssueTime
+ * @property string|null $lagId
+ * @property string|null $awsDevice
+ * @property bool|null $jumboFrameCapable
+ * @property string|null $awsDeviceV2
+ * @property string|null $awsLogicalDeviceId
+ * @property 'unknown'|'yes'|'no'|null $hasLogicalRedundancy
+ * @property list<Shapes\Tag>|null $tags
+ * @property string|null $providerName
+ * @property bool|null $macSecCapable
+ * @property string|null $portEncryptionStatus
+ * @property string|null $encryptionMode
+ * @property list<Shapes\MacSecKey>|null $macSecKeys
  */
 class AllocateConnectionOnInterconnectResponse extends Response
 {

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $SubnetIds
- * @property list<string> $SecurityGroupIds
- * @property VpcAttachmentOptions $VpcAttachmentOptions
- * @property 'CUSTOMER'|'SERVICE' $VpcEndpointManagement
+ * @property list<string>|null $SecurityGroupIds
+ * @property VpcAttachmentOptions|null $VpcAttachmentOptions
+ * @property 'CUSTOMER'|'SERVICE'|null $VpcEndpointManagement
  */
 class VpcOptions extends Shape
 {
     /**
      * @param array{
      *     SubnetIds: list<string>,
-     *     SecurityGroupIds?: list<string>,
-     *     VpcAttachmentOptions?: VpcAttachmentOptions,
-     *     VpcEndpointManagement?: 'CUSTOMER'|'SERVICE'
+     *     SecurityGroupIds?: list<string>|null,
+     *     VpcAttachmentOptions?: VpcAttachmentOptions|null,
+     *     VpcEndpointManagement?: 'CUSTOMER'|'SERVICE'|null
      * } $args
      */
     public function __construct(array $args)

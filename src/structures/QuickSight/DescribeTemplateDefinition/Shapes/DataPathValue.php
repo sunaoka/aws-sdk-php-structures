@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FieldId
- * @property string $FieldValue
- * @property DataPathType $DataPathType
+ * @property string|null $FieldId
+ * @property string|null $FieldValue
+ * @property DataPathType|null $DataPathType
  */
 class DataPathValue extends Shape
 {
     /**
      * @param array{
-     *     FieldId?: string,
-     *     FieldValue?: string,
-     *     DataPathType?: DataPathType
+     *     FieldId?: string|null,
+     *     FieldValue?: string|null,
+     *     DataPathType?: DataPathType|null
      * } $args
      */
     public function __construct(array $args = [])

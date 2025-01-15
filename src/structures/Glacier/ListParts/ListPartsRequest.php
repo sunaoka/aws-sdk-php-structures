@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $accountId
  * @property string $vaultName
  * @property string $uploadId
- * @property string $marker
- * @property string $limit
+ * @property string|null $marker
+ * @property string|null $limit
  */
 class ListPartsRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListPartsRequest extends Request
      *     accountId: string,
      *     vaultName: string,
      *     uploadId: string,
-     *     marker?: string,
-     *     limit?: string
+     *     marker?: string|null,
+     *     limit?: string|null
      * } $args
      */
     public function __construct(array $args)

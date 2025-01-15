@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $resourceArns
- * @property string $principal
- * @property string $nextToken
- * @property int<1, 500> $maxResults
+ * @property string|null $principal
+ * @property string|null $nextToken
+ * @property int<1, 500>|null $maxResults
  */
 class GetResourcePoliciesRequest extends Request
 {
     /**
      * @param array{
      *     resourceArns: list<string>,
-     *     principal?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 500>
+     *     principal?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 500>|null
      * } $args
      */
     public function __construct(array $args)

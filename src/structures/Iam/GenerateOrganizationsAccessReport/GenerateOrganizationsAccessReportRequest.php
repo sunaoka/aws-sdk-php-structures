@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EntityPath
- * @property string $OrganizationsPolicyId
+ * @property string|null $OrganizationsPolicyId
  */
 class GenerateOrganizationsAccessReportRequest extends Request
 {
     /**
      * @param array{
      *     EntityPath: string,
-     *     OrganizationsPolicyId?: string
+     *     OrganizationsPolicyId?: string|null
      * } $args
      */
     public function __construct(array $args)

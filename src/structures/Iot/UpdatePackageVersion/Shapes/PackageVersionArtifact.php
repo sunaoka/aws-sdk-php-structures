@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Iot\UpdatePackageVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Location $s3Location
+ * @property S3Location|null $s3Location
  */
 class PackageVersionArtifact extends Shape
 {
     /**
-     * @param array{s3Location?: S3Location} $args
+     * @param array{s3Location?: S3Location|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\NetworkFlowMonitor\GetQueryResultsWorkloadInsig
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\WorkloadInsightsTopContributorsRow> $topContributors
- * @property string $nextToken
+ * @property list<Shapes\WorkloadInsightsTopContributorsRow>|null $topContributors
+ * @property string|null $nextToken
  */
 class GetQueryResultsWorkloadInsightsTopContributorsResponse extends Response
 {

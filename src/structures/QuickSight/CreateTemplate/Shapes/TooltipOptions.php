@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $TooltipVisibility
- * @property 'BASIC'|'DETAILED' $SelectedTooltipType
- * @property FieldBasedTooltip $FieldBasedTooltip
+ * @property 'HIDDEN'|'VISIBLE'|null $TooltipVisibility
+ * @property 'BASIC'|'DETAILED'|null $SelectedTooltipType
+ * @property FieldBasedTooltip|null $FieldBasedTooltip
  */
 class TooltipOptions extends Shape
 {
     /**
      * @param array{
-     *     TooltipVisibility?: 'HIDDEN'|'VISIBLE',
-     *     SelectedTooltipType?: 'BASIC'|'DETAILED',
-     *     FieldBasedTooltip?: FieldBasedTooltip
+     *     TooltipVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     SelectedTooltipType?: 'BASIC'|'DETAILED'|null,
+     *     FieldBasedTooltip?: FieldBasedTooltip|null
      * } $args
      */
     public function __construct(array $args = [])

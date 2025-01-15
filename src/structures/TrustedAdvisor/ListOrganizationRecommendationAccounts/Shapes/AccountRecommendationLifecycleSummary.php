@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\TrustedAdvisor\ListOrganizationRecommendationAc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property string $accountRecommendationArn
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property 'in_progress'|'pending_response'|'dismissed'|'resolved' $lifecycleStage
- * @property string $updateReason
- * @property 'non_critical_account'|'temporary_account'|'valid_business_case'|'other_methods_available'|'low_priority'|'not_applicable'|'other' $updateReasonCode
- * @property string $updatedOnBehalfOf
- * @property string $updatedOnBehalfOfJobTitle
+ * @property string|null $accountId
+ * @property string|null $accountRecommendationArn
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property 'in_progress'|'pending_response'|'dismissed'|'resolved'|null $lifecycleStage
+ * @property string|null $updateReason
+ * @property 'non_critical_account'|'temporary_account'|'valid_business_case'|'other_methods_available'|'low_priority'|'not_applicable'|'other'|null $updateReasonCode
+ * @property string|null $updatedOnBehalfOf
+ * @property string|null $updatedOnBehalfOfJobTitle
  */
 class AccountRecommendationLifecycleSummary extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     accountRecommendationArn?: string,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     lifecycleStage?: 'in_progress'|'pending_response'|'dismissed'|'resolved',
-     *     updateReason?: string,
-     *     updateReasonCode?: 'non_critical_account'|'temporary_account'|'valid_business_case'|'other_methods_available'|'low_priority'|'not_applicable'|'other',
-     *     updatedOnBehalfOf?: string,
-     *     updatedOnBehalfOfJobTitle?: string
+     *     accountId?: string|null,
+     *     accountRecommendationArn?: string|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     lifecycleStage?: 'in_progress'|'pending_response'|'dismissed'|'resolved'|null,
+     *     updateReason?: string|null,
+     *     updateReasonCode?: 'non_critical_account'|'temporary_account'|'valid_business_case'|'other_methods_available'|'low_priority'|'not_applicable'|'other'|null,
+     *     updatedOnBehalfOf?: string|null,
+     *     updatedOnBehalfOfJobTitle?: string|null
      * } $args
      */
     public function __construct(array $args = [])

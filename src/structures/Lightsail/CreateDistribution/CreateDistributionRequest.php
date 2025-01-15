@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $distributionName
  * @property Shapes\InputOrigin $origin
  * @property Shapes\CacheBehavior $defaultCacheBehavior
- * @property Shapes\CacheSettings $cacheBehaviorSettings
- * @property list<Shapes\CacheBehaviorPerPath> $cacheBehaviors
+ * @property Shapes\CacheSettings|null $cacheBehaviorSettings
+ * @property list<Shapes\CacheBehaviorPerPath>|null $cacheBehaviors
  * @property string $bundleId
- * @property 'dualstack'|'ipv4'|'ipv6' $ipAddressType
- * @property list<Shapes\Tag> $tags
- * @property string $certificateName
- * @property 'TLSv1.1_2016'|'TLSv1.2_2018'|'TLSv1.2_2019'|'TLSv1.2_2021' $viewerMinimumTlsProtocolVersion
+ * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
+ * @property list<Shapes\Tag>|null $tags
+ * @property string|null $certificateName
+ * @property 'TLSv1.1_2016'|'TLSv1.2_2018'|'TLSv1.2_2019'|'TLSv1.2_2021'|null $viewerMinimumTlsProtocolVersion
  */
 class CreateDistributionRequest extends Request
 {
@@ -23,13 +23,13 @@ class CreateDistributionRequest extends Request
      *     distributionName: string,
      *     origin: Shapes\InputOrigin,
      *     defaultCacheBehavior: Shapes\CacheBehavior,
-     *     cacheBehaviorSettings?: Shapes\CacheSettings,
-     *     cacheBehaviors?: list<Shapes\CacheBehaviorPerPath>,
+     *     cacheBehaviorSettings?: Shapes\CacheSettings|null,
+     *     cacheBehaviors?: list<Shapes\CacheBehaviorPerPath>|null,
      *     bundleId: string,
-     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6',
-     *     tags?: list<Shapes\Tag>,
-     *     certificateName?: string,
-     *     viewerMinimumTlsProtocolVersion?: 'TLSv1.1_2016'|'TLSv1.2_2018'|'TLSv1.2_2019'|'TLSv1.2_2021'
+     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     certificateName?: string|null,
+     *     viewerMinimumTlsProtocolVersion?: 'TLSv1.1_2016'|'TLSv1.2_2018'|'TLSv1.2_2019'|'TLSv1.2_2021'|null
      * } $args
      */
     public function __construct(array $args)

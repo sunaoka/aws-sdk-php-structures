@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\AppSync\CreateChannelNamespace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $apiId
- * @property string $name
- * @property list<AuthMode> $subscribeAuthModes
- * @property list<AuthMode> $publishAuthModes
- * @property string $codeHandlers
- * @property array<string, string> $tags
- * @property string $channelNamespaceArn
- * @property \Aws\Api\DateTimeResult $created
- * @property \Aws\Api\DateTimeResult $lastModified
+ * @property string|null $apiId
+ * @property string|null $name
+ * @property list<AuthMode>|null $subscribeAuthModes
+ * @property list<AuthMode>|null $publishAuthModes
+ * @property string|null $codeHandlers
+ * @property array<string, string>|null $tags
+ * @property string|null $channelNamespaceArn
+ * @property \Aws\Api\DateTimeResult|null $created
+ * @property \Aws\Api\DateTimeResult|null $lastModified
  */
 class ChannelNamespace extends Shape
 {
     /**
      * @param array{
-     *     apiId?: string,
-     *     name?: string,
-     *     subscribeAuthModes?: list<AuthMode>,
-     *     publishAuthModes?: list<AuthMode>,
-     *     codeHandlers?: string,
-     *     tags?: array<string, string>,
-     *     channelNamespaceArn?: string,
-     *     created?: \Aws\Api\DateTimeResult,
-     *     lastModified?: \Aws\Api\DateTimeResult
+     *     apiId?: string|null,
+     *     name?: string|null,
+     *     subscribeAuthModes?: list<AuthMode>|null,
+     *     publishAuthModes?: list<AuthMode>|null,
+     *     codeHandlers?: string|null,
+     *     tags?: array<string, string>|null,
+     *     channelNamespaceArn?: string|null,
+     *     created?: \Aws\Api\DateTimeResult|null,
+     *     lastModified?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

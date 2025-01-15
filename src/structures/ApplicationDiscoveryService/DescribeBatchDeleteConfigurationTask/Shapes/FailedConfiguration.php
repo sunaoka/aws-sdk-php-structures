@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeBatchDelete
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $configurationId
- * @property int $errorStatusCode
- * @property string $errorMessage
+ * @property string|null $configurationId
+ * @property int|null $errorStatusCode
+ * @property string|null $errorMessage
  */
 class FailedConfiguration extends Shape
 {
     /**
      * @param array{
-     *     configurationId?: string,
-     *     errorStatusCode?: int,
-     *     errorMessage?: string
+     *     configurationId?: string|null,
+     *     errorStatusCode?: int|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

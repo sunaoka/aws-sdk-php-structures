@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\StartImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $instanceId
+ * @property string|null $instanceId
  */
 class ConnectConfiguration extends Shape
 {
     /**
-     * @param array{instanceId?: string} $args
+     * @param array{instanceId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

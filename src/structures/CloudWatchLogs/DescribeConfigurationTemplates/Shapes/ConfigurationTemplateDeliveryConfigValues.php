@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeConfigurationTemplates\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $recordFields
- * @property string $fieldDelimiter
- * @property S3DeliveryConfiguration $s3DeliveryConfiguration
+ * @property list<string>|null $recordFields
+ * @property string|null $fieldDelimiter
+ * @property S3DeliveryConfiguration|null $s3DeliveryConfiguration
  */
 class ConfigurationTemplateDeliveryConfigValues extends Shape
 {
     /**
      * @param array{
-     *     recordFields?: list<string>,
-     *     fieldDelimiter?: string,
-     *     s3DeliveryConfiguration?: S3DeliveryConfiguration
+     *     recordFields?: list<string>|null,
+     *     fieldDelimiter?: string|null,
+     *     s3DeliveryConfiguration?: S3DeliveryConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

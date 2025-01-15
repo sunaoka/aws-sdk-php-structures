@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ssm\GetCommandInvocation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CommandId
- * @property string $InstanceId
- * @property string $Comment
- * @property string $DocumentName
- * @property string $DocumentVersion
- * @property string $PluginName
- * @property int $ResponseCode
- * @property string $ExecutionStartDateTime
- * @property string $ExecutionElapsedTime
- * @property string $ExecutionEndDateTime
- * @property 'Pending'|'InProgress'|'Delayed'|'Success'|'Cancelled'|'TimedOut'|'Failed'|'Cancelling' $Status
- * @property string $StatusDetails
- * @property string $StandardOutputContent
- * @property string $StandardOutputUrl
- * @property string $StandardErrorContent
- * @property string $StandardErrorUrl
- * @property Shapes\CloudWatchOutputConfig $CloudWatchOutputConfig
+ * @property string|null $CommandId
+ * @property string|null $InstanceId
+ * @property string|null $Comment
+ * @property string|null $DocumentName
+ * @property string|null $DocumentVersion
+ * @property string|null $PluginName
+ * @property int|null $ResponseCode
+ * @property string|null $ExecutionStartDateTime
+ * @property string|null $ExecutionElapsedTime
+ * @property string|null $ExecutionEndDateTime
+ * @property 'Pending'|'InProgress'|'Delayed'|'Success'|'Cancelled'|'TimedOut'|'Failed'|'Cancelling'|null $Status
+ * @property string|null $StatusDetails
+ * @property string|null $StandardOutputContent
+ * @property string|null $StandardOutputUrl
+ * @property string|null $StandardErrorContent
+ * @property string|null $StandardErrorUrl
+ * @property Shapes\CloudWatchOutputConfig|null $CloudWatchOutputConfig
  */
 class GetCommandInvocationResponse extends Response
 {

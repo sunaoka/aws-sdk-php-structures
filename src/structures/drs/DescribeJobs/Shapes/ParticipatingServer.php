@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\drs\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LaunchActionsStatus $launchActionsStatus
- * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED' $launchStatus
- * @property string $recoveryInstanceID
- * @property string $sourceServerID
+ * @property LaunchActionsStatus|null $launchActionsStatus
+ * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null $launchStatus
+ * @property string|null $recoveryInstanceID
+ * @property string|null $sourceServerID
  */
 class ParticipatingServer extends Shape
 {
     /**
      * @param array{
-     *     launchActionsStatus?: LaunchActionsStatus,
-     *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED',
-     *     recoveryInstanceID?: string,
-     *     sourceServerID?: string
+     *     launchActionsStatus?: LaunchActionsStatus|null,
+     *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null,
+     *     recoveryInstanceID?: string|null,
+     *     sourceServerID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

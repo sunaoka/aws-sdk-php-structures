@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\UpdateMediaInsightsPipel
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Disabled
- * @property list<RealTimeAlertRule> $Rules
+ * @property bool|null $Disabled
+ * @property list<RealTimeAlertRule>|null $Rules
  */
 class RealTimeAlertConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Disabled?: bool,
-     *     Rules?: list<RealTimeAlertRule>
+     *     Disabled?: bool|null,
+     *     Rules?: list<RealTimeAlertRule>|null
      * } $args
      */
     public function __construct(array $args = [])

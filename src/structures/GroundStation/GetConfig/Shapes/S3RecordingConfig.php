@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $bucketArn
- * @property string $prefix
+ * @property string|null $prefix
  * @property string $roleArn
  */
 class S3RecordingConfig extends Shape
@@ -14,7 +14,7 @@ class S3RecordingConfig extends Shape
     /**
      * @param array{
      *     bucketArn: string,
-     *     prefix?: string,
+     *     prefix?: string|null,
      *     roleArn: string
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListMonitorEvaluations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricName
- * @property double $MetricValue
+ * @property string|null $MetricName
+ * @property double|null $MetricValue
  */
 class MetricResult extends Shape
 {
     /**
      * @param array{
-     *     MetricName?: string,
-     *     MetricValue?: double
+     *     MetricName?: string|null,
+     *     MetricValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

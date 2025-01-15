@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HyperParameterTuningJobName
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $StatusEquals
- * @property 'Name'|'CreationTime'|'Status'|'FinalObjectiveMetricValue' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $StatusEquals
+ * @property 'Name'|'CreationTime'|'Status'|'FinalObjectiveMetricValue'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
  */
 class ListTrainingJobsForHyperParameterTuningJobRequest extends Request
 {
     /**
      * @param array{
      *     HyperParameterTuningJobName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     StatusEquals?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
-     *     SortBy?: 'Name'|'CreationTime'|'Status'|'FinalObjectiveMetricValue',
-     *     SortOrder?: 'Ascending'|'Descending'
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     StatusEquals?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null,
+     *     SortBy?: 'Name'|'CreationTime'|'Status'|'FinalObjectiveMetricValue'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args)

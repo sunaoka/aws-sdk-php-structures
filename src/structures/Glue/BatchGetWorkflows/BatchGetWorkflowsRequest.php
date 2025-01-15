@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $Names
- * @property bool $IncludeGraph
+ * @property bool|null $IncludeGraph
  */
 class BatchGetWorkflowsRequest extends Request
 {
     /**
      * @param array{
      *     Names: list<string>,
-     *     IncludeGraph?: bool
+     *     IncludeGraph?: bool|null
      * } $args
      */
     public function __construct(array $args)

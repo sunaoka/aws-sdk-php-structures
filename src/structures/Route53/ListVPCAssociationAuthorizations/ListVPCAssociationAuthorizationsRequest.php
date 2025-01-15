@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HostedZoneId
- * @property string $NextToken
- * @property string $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $MaxResults
  */
 class ListVPCAssociationAuthorizationsRequest extends Request
 {
     /**
      * @param array{
      *     HostedZoneId: string,
-     *     NextToken?: string,
-     *     MaxResults?: string
+     *     NextToken?: string|null,
+     *     MaxResults?: string|null
      * } $args
      */
     public function __construct(array $args)

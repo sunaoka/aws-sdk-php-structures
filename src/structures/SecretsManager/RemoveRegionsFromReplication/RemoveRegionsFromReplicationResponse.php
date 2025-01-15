@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SecretsManager\RemoveRegionsFromReplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ARN
- * @property list<Shapes\ReplicationStatusType> $ReplicationStatus
+ * @property string|null $ARN
+ * @property list<Shapes\ReplicationStatusType>|null $ReplicationStatus
  */
 class RemoveRegionsFromReplicationResponse extends Response
 {

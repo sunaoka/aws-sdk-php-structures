@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeActivations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ActivationIds'|'DefaultInstanceName'|'IamRole' $FilterKey
- * @property list<string> $FilterValues
+ * @property 'ActivationIds'|'DefaultInstanceName'|'IamRole'|null $FilterKey
+ * @property list<string>|null $FilterValues
  */
 class DescribeActivationsFilter extends Shape
 {
     /**
      * @param array{
-     *     FilterKey?: 'ActivationIds'|'DefaultInstanceName'|'IamRole',
-     *     FilterValues?: list<string>
+     *     FilterKey?: 'ActivationIds'|'DefaultInstanceName'|'IamRole'|null,
+     *     FilterValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

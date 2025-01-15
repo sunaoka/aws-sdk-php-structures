@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InputChannel $inputChannel
  * @property string $name
  * @property int<1, 30> $retentionInDays
- * @property string $description
- * @property string $kmsKeyArn
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property string|null $kmsKeyArn
+ * @property array<string, string>|null $tags
  */
 class CreateMLInputChannelRequest extends Request
 {
@@ -23,9 +23,9 @@ class CreateMLInputChannelRequest extends Request
      *     inputChannel: Shapes\InputChannel,
      *     name: string,
      *     retentionInDays: int<1, 30>,
-     *     description?: string,
-     *     kmsKeyArn?: string,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     kmsKeyArn?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

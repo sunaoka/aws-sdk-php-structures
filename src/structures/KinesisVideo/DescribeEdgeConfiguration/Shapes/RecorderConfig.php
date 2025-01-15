@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property MediaSourceConfig $MediaSourceConfig
- * @property ScheduleConfig $ScheduleConfig
+ * @property ScheduleConfig|null $ScheduleConfig
  */
 class RecorderConfig extends Shape
 {
     /**
      * @param array{
      *     MediaSourceConfig: MediaSourceConfig,
-     *     ScheduleConfig?: ScheduleConfig
+     *     ScheduleConfig?: ScheduleConfig|null
      * } $args
      */
     public function __construct(array $args)

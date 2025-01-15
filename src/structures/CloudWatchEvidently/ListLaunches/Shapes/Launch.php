@@ -7,18 +7,18 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdTime
- * @property string $description
- * @property LaunchExecution $execution
- * @property list<LaunchGroup> $groups
+ * @property string|null $description
+ * @property LaunchExecution|null $execution
+ * @property list<LaunchGroup>|null $groups
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property list<MetricMonitor> $metricMonitors
+ * @property list<MetricMonitor>|null $metricMonitors
  * @property string $name
- * @property string $project
- * @property string $randomizationSalt
- * @property ScheduledSplitsLaunchDefinition $scheduledSplitsDefinition
+ * @property string|null $project
+ * @property string|null $randomizationSalt
+ * @property ScheduledSplitsLaunchDefinition|null $scheduledSplitsDefinition
  * @property 'CREATED'|'UPDATING'|'RUNNING'|'COMPLETED'|'CANCELLED' $status
- * @property string $statusReason
- * @property array<string, string> $tags
+ * @property string|null $statusReason
+ * @property array<string, string>|null $tags
  * @property 'aws.evidently.splits' $type
  */
 class Launch extends Shape
@@ -27,18 +27,18 @@ class Launch extends Shape
      * @param array{
      *     arn: string,
      *     createdTime: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     execution?: LaunchExecution,
-     *     groups?: list<LaunchGroup>,
+     *     description?: string|null,
+     *     execution?: LaunchExecution|null,
+     *     groups?: list<LaunchGroup>|null,
      *     lastUpdatedTime: \Aws\Api\DateTimeResult,
-     *     metricMonitors?: list<MetricMonitor>,
+     *     metricMonitors?: list<MetricMonitor>|null,
      *     name: string,
-     *     project?: string,
-     *     randomizationSalt?: string,
-     *     scheduledSplitsDefinition?: ScheduledSplitsLaunchDefinition,
+     *     project?: string|null,
+     *     randomizationSalt?: string|null,
+     *     scheduledSplitsDefinition?: ScheduledSplitsLaunchDefinition|null,
      *     status: 'CREATED'|'UPDATING'|'RUNNING'|'COMPLETED'|'CANCELLED',
-     *     statusReason?: string,
-     *     tags?: array<string, string>,
+     *     statusReason?: string|null,
+     *     tags?: array<string, string>|null,
      *     type: 'aws.evidently.splits'
      * } $args
      */

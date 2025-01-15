@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\CreateBucket\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SingleAvailabilityZone'|'SingleLocalZone' $DataRedundancy
- * @property 'Directory' $Type
+ * @property 'SingleAvailabilityZone'|'SingleLocalZone'|null $DataRedundancy
+ * @property 'Directory'|null $Type
  */
 class BucketInfo extends Shape
 {
     /**
      * @param array{
-     *     DataRedundancy?: 'SingleAvailabilityZone'|'SingleLocalZone',
-     *     Type?: 'Directory'
+     *     DataRedundancy?: 'SingleAvailabilityZone'|'SingleLocalZone'|null,
+     *     Type?: 'Directory'|null
      * } $args
      */
     public function __construct(array $args = [])

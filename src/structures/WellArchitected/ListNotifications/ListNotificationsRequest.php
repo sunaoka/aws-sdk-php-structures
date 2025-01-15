@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListNotifications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $WorkloadId
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
- * @property string $ResourceArn
+ * @property string|null $WorkloadId
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $ResourceArn
  */
 class ListNotificationsRequest extends Request
 {
     /**
      * @param array{
-     *     WorkloadId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>,
-     *     ResourceArn?: string
+     *     WorkloadId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     ResourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

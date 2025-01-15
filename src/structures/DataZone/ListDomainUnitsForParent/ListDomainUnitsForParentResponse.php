@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DomainUnitSummary> $items
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListDomainUnitsForParentResponse extends Response
 {

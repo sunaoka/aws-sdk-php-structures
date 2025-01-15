@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\UpdateAutomaticTapeCreationPolic
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GatewayARN
+ * @property string|null $GatewayARN
  */
 class UpdateAutomaticTapeCreationPolicyResponse extends Response
 {

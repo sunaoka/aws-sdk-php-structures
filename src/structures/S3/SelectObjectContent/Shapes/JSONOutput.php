@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3\SelectObjectContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RecordDelimiter
+ * @property string|null $RecordDelimiter
  */
 class JSONOutput extends Shape
 {
     /**
-     * @param array{RecordDelimiter?: string} $args
+     * @param array{RecordDelimiter?: string|null} $args
      */
     public function __construct(array $args = [])
     {

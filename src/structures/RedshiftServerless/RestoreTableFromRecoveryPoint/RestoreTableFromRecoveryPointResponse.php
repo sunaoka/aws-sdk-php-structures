@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\RestoreTableFromRecoveryPoin
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TableRestoreStatus $tableRestoreStatus
+ * @property Shapes\TableRestoreStatus|null $tableRestoreStatus
  */
 class RestoreTableFromRecoveryPointResponse extends Response
 {

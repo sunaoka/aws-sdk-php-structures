@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchUpdateAutomationRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 100> $Normalized
- * @property double $Product
- * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL' $Label
+ * @property int<0, 100>|null $Normalized
+ * @property double|null $Product
+ * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|null $Label
  */
 class SeverityUpdate extends Shape
 {
     /**
      * @param array{
-     *     Normalized?: int<0, 100>,
-     *     Product?: double,
-     *     Label?: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'
+     *     Normalized?: int<0, 100>|null,
+     *     Product?: double|null,
+     *     Label?: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|null
      * } $args
      */
     public function __construct(array $args = [])

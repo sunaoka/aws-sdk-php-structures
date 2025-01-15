@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeReservedInstancesModifications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ReservedInstancesModificationIds
- * @property string $NextToken
- * @property list<Shapes\Filter> $Filters
+ * @property list<string>|null $ReservedInstancesModificationIds
+ * @property string|null $NextToken
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeReservedInstancesModificationsRequest extends Request
 {
     /**
      * @param array{
-     *     ReservedInstancesModificationIds?: list<string>,
-     *     NextToken?: string,
-     *     Filters?: list<Shapes\Filter>
+     *     ReservedInstancesModificationIds?: list<string>|null,
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

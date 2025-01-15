@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeQPersonalizationConfiguratio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'ENABLED'|'DISABLED' $PersonalizationMode
- * @property string $RequestId
- * @property int $Status
+ * @property 'ENABLED'|'DISABLED'|null $PersonalizationMode
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class DescribeQPersonalizationConfigurationResponse extends Response
 {

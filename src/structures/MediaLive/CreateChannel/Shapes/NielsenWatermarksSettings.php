@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NielsenCBET $NielsenCbetSettings
- * @property 'FINAL_DISTRIBUTOR'|'PROGRAM_CONTENT' $NielsenDistributionType
- * @property NielsenNaesIiNw $NielsenNaesIiNwSettings
+ * @property NielsenCBET|null $NielsenCbetSettings
+ * @property 'FINAL_DISTRIBUTOR'|'PROGRAM_CONTENT'|null $NielsenDistributionType
+ * @property NielsenNaesIiNw|null $NielsenNaesIiNwSettings
  */
 class NielsenWatermarksSettings extends Shape
 {
     /**
      * @param array{
-     *     NielsenCbetSettings?: NielsenCBET,
-     *     NielsenDistributionType?: 'FINAL_DISTRIBUTOR'|'PROGRAM_CONTENT',
-     *     NielsenNaesIiNwSettings?: NielsenNaesIiNw
+     *     NielsenCbetSettings?: NielsenCBET|null,
+     *     NielsenDistributionType?: 'FINAL_DISTRIBUTOR'|'PROGRAM_CONTENT'|null,
+     *     NielsenNaesIiNwSettings?: NielsenNaesIiNw|null
      * } $args
      */
     public function __construct(array $args = [])

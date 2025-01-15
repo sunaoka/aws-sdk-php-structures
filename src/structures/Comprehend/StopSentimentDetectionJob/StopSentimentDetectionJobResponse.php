@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Comprehend\StopSentimentDetectionJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $JobId
- * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED' $JobStatus
+ * @property string|null $JobId
+ * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED'|null $JobStatus
  */
 class StopSentimentDetectionJobResponse extends Response
 {

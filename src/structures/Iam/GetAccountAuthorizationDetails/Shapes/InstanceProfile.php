@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property \Aws\Api\DateTimeResult $CreateDate
  * @property list<Role> $Roles
- * @property list<Tag> $Tags
+ * @property list<Tag>|null $Tags
  */
 class InstanceProfile extends Shape
 {
@@ -23,7 +23,7 @@ class InstanceProfile extends Shape
      *     Arn: string,
      *     CreateDate: \Aws\Api\DateTimeResult,
      *     Roles: list<Role>,
-     *     Tags?: list<Tag>
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

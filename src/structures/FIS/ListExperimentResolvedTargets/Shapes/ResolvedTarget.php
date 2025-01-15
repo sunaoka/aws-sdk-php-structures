@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FIS\ListExperimentResolvedTargets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resourceType
- * @property string $targetName
- * @property array<string, string> $targetInformation
+ * @property string|null $resourceType
+ * @property string|null $targetName
+ * @property array<string, string>|null $targetInformation
  */
 class ResolvedTarget extends Shape
 {
     /**
      * @param array{
-     *     resourceType?: string,
-     *     targetName?: string,
-     *     targetInformation?: array<string, string>
+     *     resourceType?: string|null,
+     *     targetName?: string|null,
+     *     targetInformation?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

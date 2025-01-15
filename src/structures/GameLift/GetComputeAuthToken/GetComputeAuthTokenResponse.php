@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GameLift\GetComputeAuthToken;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FleetId
- * @property string $FleetArn
- * @property string $ComputeName
- * @property string $ComputeArn
- * @property string $AuthToken
- * @property \Aws\Api\DateTimeResult $ExpirationTimestamp
+ * @property string|null $FleetId
+ * @property string|null $FleetArn
+ * @property string|null $ComputeName
+ * @property string|null $ComputeArn
+ * @property string|null $AuthToken
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTimestamp
  */
 class GetComputeAuthTokenResponse extends Response
 {

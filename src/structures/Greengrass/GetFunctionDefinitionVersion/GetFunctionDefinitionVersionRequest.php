@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FunctionDefinitionId
  * @property string $FunctionDefinitionVersionId
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetFunctionDefinitionVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetFunctionDefinitionVersionRequest extends Request
      * @param array{
      *     FunctionDefinitionId: string,
      *     FunctionDefinitionVersionId: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

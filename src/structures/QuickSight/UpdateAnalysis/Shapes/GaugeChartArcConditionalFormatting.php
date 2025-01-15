@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConditionalFormattingColor $ForegroundColor
+ * @property ConditionalFormattingColor|null $ForegroundColor
  */
 class GaugeChartArcConditionalFormatting extends Shape
 {
     /**
-     * @param array{ForegroundColor?: ConditionalFormattingColor} $args
+     * @param array{ForegroundColor?: ConditionalFormattingColor|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int $Priority
  * @property string $RuleId
- * @property WafAction $Action
- * @property WafOverrideAction $OverrideAction
- * @property 'REGULAR'|'RATE_BASED'|'GROUP' $Type
- * @property list<ExcludedRule> $ExcludedRules
+ * @property WafAction|null $Action
+ * @property WafOverrideAction|null $OverrideAction
+ * @property 'REGULAR'|'RATE_BASED'|'GROUP'|null $Type
+ * @property list<ExcludedRule>|null $ExcludedRules
  */
 class ActivatedRule extends Shape
 {
@@ -18,10 +18,10 @@ class ActivatedRule extends Shape
      * @param array{
      *     Priority: int,
      *     RuleId: string,
-     *     Action?: WafAction,
-     *     OverrideAction?: WafOverrideAction,
-     *     Type?: 'REGULAR'|'RATE_BASED'|'GROUP',
-     *     ExcludedRules?: list<ExcludedRule>
+     *     Action?: WafAction|null,
+     *     OverrideAction?: WafOverrideAction|null,
+     *     Type?: 'REGULAR'|'RATE_BASED'|'GROUP'|null,
+     *     ExcludedRules?: list<ExcludedRule>|null
      * } $args
      */
     public function __construct(array $args)

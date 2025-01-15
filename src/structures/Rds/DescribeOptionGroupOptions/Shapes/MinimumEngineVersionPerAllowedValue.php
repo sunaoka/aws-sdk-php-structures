@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeOptionGroupOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AllowedValue
- * @property string $MinimumEngineVersion
+ * @property string|null $AllowedValue
+ * @property string|null $MinimumEngineVersion
  */
 class MinimumEngineVersionPerAllowedValue extends Shape
 {
     /**
      * @param array{
-     *     AllowedValue?: string,
-     *     MinimumEngineVersion?: string
+     *     AllowedValue?: string|null,
+     *     MinimumEngineVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

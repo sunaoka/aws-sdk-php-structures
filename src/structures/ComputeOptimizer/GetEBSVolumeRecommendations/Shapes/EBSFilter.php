@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEBSVolumeRecommendations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Finding' $name
- * @property list<string> $values
+ * @property 'Finding'|null $name
+ * @property list<string>|null $values
  */
 class EBSFilter extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Finding',
-     *     values?: list<string>
+     *     name?: 'Finding'|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

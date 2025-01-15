@@ -6,46 +6,46 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackId
- * @property string $Name
- * @property array<'Color', string> $Attributes
- * @property string $ServiceRoleArn
- * @property string $DefaultInstanceProfileArn
- * @property string $DefaultOs
- * @property string $HostnameTheme
- * @property string $DefaultAvailabilityZone
- * @property string $DefaultSubnetId
- * @property string $CustomJson
- * @property Shapes\StackConfigurationManager $ConfigurationManager
- * @property Shapes\ChefConfiguration $ChefConfiguration
- * @property bool $UseCustomCookbooks
- * @property Shapes\Source $CustomCookbooksSource
- * @property string $DefaultSshKeyName
- * @property 'ebs'|'instance-store' $DefaultRootDeviceType
- * @property bool $UseOpsworksSecurityGroups
- * @property string $AgentVersion
+ * @property string|null $Name
+ * @property array<'Color', string>|null $Attributes
+ * @property string|null $ServiceRoleArn
+ * @property string|null $DefaultInstanceProfileArn
+ * @property string|null $DefaultOs
+ * @property string|null $HostnameTheme
+ * @property string|null $DefaultAvailabilityZone
+ * @property string|null $DefaultSubnetId
+ * @property string|null $CustomJson
+ * @property Shapes\StackConfigurationManager|null $ConfigurationManager
+ * @property Shapes\ChefConfiguration|null $ChefConfiguration
+ * @property bool|null $UseCustomCookbooks
+ * @property Shapes\Source|null $CustomCookbooksSource
+ * @property string|null $DefaultSshKeyName
+ * @property 'ebs'|'instance-store'|null $DefaultRootDeviceType
+ * @property bool|null $UseOpsworksSecurityGroups
+ * @property string|null $AgentVersion
  */
 class UpdateStackRequest extends Request
 {
     /**
      * @param array{
      *     StackId: string,
-     *     Name?: string,
-     *     Attributes?: array<'Color', string>,
-     *     ServiceRoleArn?: string,
-     *     DefaultInstanceProfileArn?: string,
-     *     DefaultOs?: string,
-     *     HostnameTheme?: string,
-     *     DefaultAvailabilityZone?: string,
-     *     DefaultSubnetId?: string,
-     *     CustomJson?: string,
-     *     ConfigurationManager?: Shapes\StackConfigurationManager,
-     *     ChefConfiguration?: Shapes\ChefConfiguration,
-     *     UseCustomCookbooks?: bool,
-     *     CustomCookbooksSource?: Shapes\Source,
-     *     DefaultSshKeyName?: string,
-     *     DefaultRootDeviceType?: 'ebs'|'instance-store',
-     *     UseOpsworksSecurityGroups?: bool,
-     *     AgentVersion?: string
+     *     Name?: string|null,
+     *     Attributes?: array<'Color', string>|null,
+     *     ServiceRoleArn?: string|null,
+     *     DefaultInstanceProfileArn?: string|null,
+     *     DefaultOs?: string|null,
+     *     HostnameTheme?: string|null,
+     *     DefaultAvailabilityZone?: string|null,
+     *     DefaultSubnetId?: string|null,
+     *     CustomJson?: string|null,
+     *     ConfigurationManager?: Shapes\StackConfigurationManager|null,
+     *     ChefConfiguration?: Shapes\ChefConfiguration|null,
+     *     UseCustomCookbooks?: bool|null,
+     *     CustomCookbooksSource?: Shapes\Source|null,
+     *     DefaultSshKeyName?: string|null,
+     *     DefaultRootDeviceType?: 'ebs'|'instance-store'|null,
+     *     UseOpsworksSecurityGroups?: bool|null,
+     *     AgentVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

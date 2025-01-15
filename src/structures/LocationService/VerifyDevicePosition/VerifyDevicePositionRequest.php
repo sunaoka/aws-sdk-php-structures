@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TrackerName
  * @property Shapes\DeviceState $DeviceState
- * @property 'Kilometers'|'Miles' $DistanceUnit
+ * @property 'Kilometers'|'Miles'|null $DistanceUnit
  */
 class VerifyDevicePositionRequest extends Request
 {
@@ -15,7 +15,7 @@ class VerifyDevicePositionRequest extends Request
      * @param array{
      *     TrackerName: string,
      *     DeviceState: Shapes\DeviceState,
-     *     DistanceUnit?: 'Kilometers'|'Miles'
+     *     DistanceUnit?: 'Kilometers'|'Miles'|null
      * } $args
      */
     public function __construct(array $args)

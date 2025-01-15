@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\RegisterScalableTarget\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DynamicScalingInSuspended
- * @property bool $DynamicScalingOutSuspended
- * @property bool $ScheduledScalingSuspended
+ * @property bool|null $DynamicScalingInSuspended
+ * @property bool|null $DynamicScalingOutSuspended
+ * @property bool|null $ScheduledScalingSuspended
  */
 class SuspendedState extends Shape
 {
     /**
      * @param array{
-     *     DynamicScalingInSuspended?: bool,
-     *     DynamicScalingOutSuspended?: bool,
-     *     ScheduledScalingSuspended?: bool
+     *     DynamicScalingInSuspended?: bool|null,
+     *     DynamicScalingOutSuspended?: bool|null,
+     *     ScheduledScalingSuspended?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\CreateIntent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResponseSpecification $initialResponse
- * @property DialogState $nextStep
- * @property ConditionalSpecification $conditional
- * @property DialogCodeHookInvocationSetting $codeHook
+ * @property ResponseSpecification|null $initialResponse
+ * @property DialogState|null $nextStep
+ * @property ConditionalSpecification|null $conditional
+ * @property DialogCodeHookInvocationSetting|null $codeHook
  */
 class InitialResponseSetting extends Shape
 {
     /**
      * @param array{
-     *     initialResponse?: ResponseSpecification,
-     *     nextStep?: DialogState,
-     *     conditional?: ConditionalSpecification,
-     *     codeHook?: DialogCodeHookInvocationSetting
+     *     initialResponse?: ResponseSpecification|null,
+     *     nextStep?: DialogState|null,
+     *     conditional?: ConditionalSpecification|null,
+     *     codeHook?: DialogCodeHookInvocationSetting|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Citation $citation
+ * @property Citation|null $citation
  */
 class CitationEvent extends Shape
 {
     /**
-     * @param array{citation?: Citation} $args
+     * @param array{citation?: Citation|null} $args
      */
     public function __construct(array $args = [])
     {

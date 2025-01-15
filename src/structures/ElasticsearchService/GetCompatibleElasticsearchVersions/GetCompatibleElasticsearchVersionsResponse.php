@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\GetCompatibleElasticsearch
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\CompatibleVersionsMap> $CompatibleElasticsearchVersions
+ * @property list<Shapes\CompatibleVersionsMap>|null $CompatibleElasticsearchVersions
  */
 class GetCompatibleElasticsearchVersionsResponse extends Response
 {

@@ -8,17 +8,17 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PlaceId
  * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress' $PlaceType
  * @property string $Title
- * @property Address $Address
- * @property bool $AddressNumberCorrected
- * @property list<PostalCodeDetails> $PostalCodeDetails
- * @property list<double> $Position
- * @property int<0, 4294967295> $Distance
- * @property list<double> $MapView
- * @property list<Category> $Categories
- * @property list<FoodType> $FoodTypes
- * @property list<AccessPoint> $AccessPoints
- * @property TimeZone $TimeZone
- * @property string $PoliticalView
+ * @property Address|null $Address
+ * @property bool|null $AddressNumberCorrected
+ * @property list<PostalCodeDetails>|null $PostalCodeDetails
+ * @property list<double>|null $Position
+ * @property int<0, 4294967295>|null $Distance
+ * @property list<double>|null $MapView
+ * @property list<Category>|null $Categories
+ * @property list<FoodType>|null $FoodTypes
+ * @property list<AccessPoint>|null $AccessPoints
+ * @property TimeZone|null $TimeZone
+ * @property string|null $PoliticalView
  */
 class ReverseGeocodeResultItem extends Shape
 {
@@ -27,17 +27,17 @@ class ReverseGeocodeResultItem extends Shape
      *     PlaceId: string,
      *     PlaceType: 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress',
      *     Title: string,
-     *     Address?: Address,
-     *     AddressNumberCorrected?: bool,
-     *     PostalCodeDetails?: list<PostalCodeDetails>,
-     *     Position?: list<double>,
-     *     Distance?: int<0, 4294967295>,
-     *     MapView?: list<double>,
-     *     Categories?: list<Category>,
-     *     FoodTypes?: list<FoodType>,
-     *     AccessPoints?: list<AccessPoint>,
-     *     TimeZone?: TimeZone,
-     *     PoliticalView?: string
+     *     Address?: Address|null,
+     *     AddressNumberCorrected?: bool|null,
+     *     PostalCodeDetails?: list<PostalCodeDetails>|null,
+     *     Position?: list<double>|null,
+     *     Distance?: int<0, 4294967295>|null,
+     *     MapView?: list<double>|null,
+     *     Categories?: list<Category>|null,
+     *     FoodTypes?: list<FoodType>|null,
+     *     AccessPoints?: list<AccessPoint>|null,
+     *     TimeZone?: TimeZone|null,
+     *     PoliticalView?: string|null
      * } $args
      */
     public function __construct(array $args)

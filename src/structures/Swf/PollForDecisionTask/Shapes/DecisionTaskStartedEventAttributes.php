@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Swf\PollForDecisionTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $identity
+ * @property string|null $identity
  * @property int $scheduledEventId
  */
 class DecisionTaskStartedEventAttributes extends Shape
 {
     /**
      * @param array{
-     *     identity?: string,
+     *     identity?: string|null,
      *     scheduledEventId: int
      * } $args
      */

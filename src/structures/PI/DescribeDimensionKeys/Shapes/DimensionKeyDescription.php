@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PI\DescribeDimensionKeys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $Dimensions
- * @property double $Total
- * @property array<string, double> $AdditionalMetrics
- * @property list<double> $Partitions
+ * @property array<string, string>|null $Dimensions
+ * @property double|null $Total
+ * @property array<string, double>|null $AdditionalMetrics
+ * @property list<double>|null $Partitions
  */
 class DimensionKeyDescription extends Shape
 {
     /**
      * @param array{
-     *     Dimensions?: array<string, string>,
-     *     Total?: double,
-     *     AdditionalMetrics?: array<string, double>,
-     *     Partitions?: list<double>
+     *     Dimensions?: array<string, string>|null,
+     *     Total?: double|null,
+     *     AdditionalMetrics?: array<string, double>|null,
+     *     Partitions?: list<double>|null
      * } $args
      */
     public function __construct(array $args = [])

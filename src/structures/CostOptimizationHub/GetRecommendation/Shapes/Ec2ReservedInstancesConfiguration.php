@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountScope
- * @property string $service
- * @property string $normalizedUnitsToPurchase
- * @property string $term
- * @property string $paymentOption
- * @property string $numberOfInstancesToPurchase
- * @property string $offeringClass
- * @property string $instanceFamily
- * @property string $instanceType
- * @property string $reservedInstancesRegion
- * @property string $currentGeneration
- * @property string $platform
- * @property string $tenancy
- * @property bool $sizeFlexEligible
- * @property string $upfrontCost
- * @property string $monthlyRecurringCost
+ * @property string|null $accountScope
+ * @property string|null $service
+ * @property string|null $normalizedUnitsToPurchase
+ * @property string|null $term
+ * @property string|null $paymentOption
+ * @property string|null $numberOfInstancesToPurchase
+ * @property string|null $offeringClass
+ * @property string|null $instanceFamily
+ * @property string|null $instanceType
+ * @property string|null $reservedInstancesRegion
+ * @property string|null $currentGeneration
+ * @property string|null $platform
+ * @property string|null $tenancy
+ * @property bool|null $sizeFlexEligible
+ * @property string|null $upfrontCost
+ * @property string|null $monthlyRecurringCost
  */
 class Ec2ReservedInstancesConfiguration extends Shape
 {
     /**
      * @param array{
-     *     accountScope?: string,
-     *     service?: string,
-     *     normalizedUnitsToPurchase?: string,
-     *     term?: string,
-     *     paymentOption?: string,
-     *     numberOfInstancesToPurchase?: string,
-     *     offeringClass?: string,
-     *     instanceFamily?: string,
-     *     instanceType?: string,
-     *     reservedInstancesRegion?: string,
-     *     currentGeneration?: string,
-     *     platform?: string,
-     *     tenancy?: string,
-     *     sizeFlexEligible?: bool,
-     *     upfrontCost?: string,
-     *     monthlyRecurringCost?: string
+     *     accountScope?: string|null,
+     *     service?: string|null,
+     *     normalizedUnitsToPurchase?: string|null,
+     *     term?: string|null,
+     *     paymentOption?: string|null,
+     *     numberOfInstancesToPurchase?: string|null,
+     *     offeringClass?: string|null,
+     *     instanceFamily?: string|null,
+     *     instanceType?: string|null,
+     *     reservedInstancesRegion?: string|null,
+     *     currentGeneration?: string|null,
+     *     platform?: string|null,
+     *     tenancy?: string|null,
+     *     sizeFlexEligible?: bool|null,
+     *     upfrontCost?: string|null,
+     *     monthlyRecurringCost?: string|null
      * } $args
      */
     public function __construct(array $args = [])

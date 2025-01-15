@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QBusiness\PutGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<MemberGroup> $memberGroups
- * @property list<MemberUser> $memberUsers
- * @property S3 $s3PathForGroupMembers
+ * @property list<MemberGroup>|null $memberGroups
+ * @property list<MemberUser>|null $memberUsers
+ * @property S3|null $s3PathForGroupMembers
  */
 class GroupMembers extends Shape
 {
     /**
      * @param array{
-     *     memberGroups?: list<MemberGroup>,
-     *     memberUsers?: list<MemberUser>,
-     *     s3PathForGroupMembers?: S3
+     *     memberGroups?: list<MemberGroup>|null,
+     *     memberUsers?: list<MemberUser>|null,
+     *     s3PathForGroupMembers?: S3|null
      * } $args
      */
     public function __construct(array $args = [])

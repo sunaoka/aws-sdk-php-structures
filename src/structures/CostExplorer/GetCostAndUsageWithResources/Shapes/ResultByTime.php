@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetCostAndUsageWithResources\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DateInterval $TimePeriod
- * @property array<string, MetricValue> $Total
- * @property list<Group> $Groups
- * @property bool $Estimated
+ * @property DateInterval|null $TimePeriod
+ * @property array<string, MetricValue>|null $Total
+ * @property list<Group>|null $Groups
+ * @property bool|null $Estimated
  */
 class ResultByTime extends Shape
 {
     /**
      * @param array{
-     *     TimePeriod?: DateInterval,
-     *     Total?: array<string, MetricValue>,
-     *     Groups?: list<Group>,
-     *     Estimated?: bool
+     *     TimePeriod?: DateInterval|null,
+     *     Total?: array<string, MetricValue>|null,
+     *     Groups?: list<Group>|null,
+     *     Estimated?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

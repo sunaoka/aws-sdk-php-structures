@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ApplicationId
  * @property 'HANA'|'SAP_ABAP' $ApplicationType
  * @property list<string> $Instances
- * @property string $SapInstanceNumber
- * @property string $Sid
- * @property array<string, string> $Tags
- * @property list<Shapes\ApplicationCredential> $Credentials
- * @property string $DatabaseArn
- * @property list<Shapes\ComponentInfo> $ComponentsInfo
+ * @property string|null $SapInstanceNumber
+ * @property string|null $Sid
+ * @property array<string, string>|null $Tags
+ * @property list<Shapes\ApplicationCredential>|null $Credentials
+ * @property string|null $DatabaseArn
+ * @property list<Shapes\ComponentInfo>|null $ComponentsInfo
  */
 class RegisterApplicationRequest extends Request
 {
@@ -22,12 +22,12 @@ class RegisterApplicationRequest extends Request
      *     ApplicationId: string,
      *     ApplicationType: 'HANA'|'SAP_ABAP',
      *     Instances: list<string>,
-     *     SapInstanceNumber?: string,
-     *     Sid?: string,
-     *     Tags?: array<string, string>,
-     *     Credentials?: list<Shapes\ApplicationCredential>,
-     *     DatabaseArn?: string,
-     *     ComponentsInfo?: list<Shapes\ComponentInfo>
+     *     SapInstanceNumber?: string|null,
+     *     Sid?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     Credentials?: list<Shapes\ApplicationCredential>|null,
+     *     DatabaseArn?: string|null,
+     *     ComponentsInfo?: list<Shapes\ComponentInfo>|null
      * } $args
      */
     public function __construct(array $args)

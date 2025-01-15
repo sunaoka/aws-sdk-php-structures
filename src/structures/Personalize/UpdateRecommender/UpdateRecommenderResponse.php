@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Personalize\UpdateRecommender;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $recommenderArn
+ * @property string|null $recommenderArn
  */
 class UpdateRecommenderResponse extends Response
 {

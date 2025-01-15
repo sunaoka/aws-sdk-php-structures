@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Sms\PutAppLaunchConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $serverId
- * @property 'VIRTUAL_MACHINE' $serverType
- * @property VmServer $vmServer
- * @property string $replicationJobId
- * @property bool $replicationJobTerminated
+ * @property string|null $serverId
+ * @property 'VIRTUAL_MACHINE'|null $serverType
+ * @property VmServer|null $vmServer
+ * @property string|null $replicationJobId
+ * @property bool|null $replicationJobTerminated
  */
 class Server extends Shape
 {
     /**
      * @param array{
-     *     serverId?: string,
-     *     serverType?: 'VIRTUAL_MACHINE',
-     *     vmServer?: VmServer,
-     *     replicationJobId?: string,
-     *     replicationJobTerminated?: bool
+     *     serverId?: string|null,
+     *     serverType?: 'VIRTUAL_MACHINE'|null,
+     *     vmServer?: VmServer|null,
+     *     replicationJobId?: string|null,
+     *     replicationJobTerminated?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

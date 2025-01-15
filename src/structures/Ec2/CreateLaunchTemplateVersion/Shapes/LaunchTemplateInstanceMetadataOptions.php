@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLaunchTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'pending'|'applied' $State
- * @property 'optional'|'required' $HttpTokens
- * @property int $HttpPutResponseHopLimit
- * @property 'disabled'|'enabled' $HttpEndpoint
- * @property 'disabled'|'enabled' $HttpProtocolIpv6
- * @property 'disabled'|'enabled' $InstanceMetadataTags
+ * @property 'pending'|'applied'|null $State
+ * @property 'optional'|'required'|null $HttpTokens
+ * @property int|null $HttpPutResponseHopLimit
+ * @property 'disabled'|'enabled'|null $HttpEndpoint
+ * @property 'disabled'|'enabled'|null $HttpProtocolIpv6
+ * @property 'disabled'|'enabled'|null $InstanceMetadataTags
  */
 class LaunchTemplateInstanceMetadataOptions extends Shape
 {
     /**
      * @param array{
-     *     State?: 'pending'|'applied',
-     *     HttpTokens?: 'optional'|'required',
-     *     HttpPutResponseHopLimit?: int,
-     *     HttpEndpoint?: 'disabled'|'enabled',
-     *     HttpProtocolIpv6?: 'disabled'|'enabled',
-     *     InstanceMetadataTags?: 'disabled'|'enabled'
+     *     State?: 'pending'|'applied'|null,
+     *     HttpTokens?: 'optional'|'required'|null,
+     *     HttpPutResponseHopLimit?: int|null,
+     *     HttpEndpoint?: 'disabled'|'enabled'|null,
+     *     HttpProtocolIpv6?: 'disabled'|'enabled'|null,
+     *     InstanceMetadataTags?: 'disabled'|'enabled'|null
      * } $args
      */
     public function __construct(array $args = [])

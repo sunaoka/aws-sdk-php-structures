@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SectionAfterPageBreak $After
+ * @property SectionAfterPageBreak|null $After
  */
 class BodySectionRepeatPageBreakConfiguration extends Shape
 {
     /**
-     * @param array{After?: SectionAfterPageBreak} $args
+     * @param array{After?: SectionAfterPageBreak|null} $args
      */
     public function __construct(array $args = [])
     {

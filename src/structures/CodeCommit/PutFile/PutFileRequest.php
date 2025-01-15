@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $branchName
  * @property string|resource|\Psr\Http\Message\StreamInterface $fileContent
  * @property string $filePath
- * @property 'EXECUTABLE'|'NORMAL'|'SYMLINK' $fileMode
- * @property string $parentCommitId
- * @property string $commitMessage
- * @property string $name
- * @property string $email
+ * @property 'EXECUTABLE'|'NORMAL'|'SYMLINK'|null $fileMode
+ * @property string|null $parentCommitId
+ * @property string|null $commitMessage
+ * @property string|null $name
+ * @property string|null $email
  */
 class PutFileRequest extends Request
 {
@@ -23,11 +23,11 @@ class PutFileRequest extends Request
      *     branchName: string,
      *     fileContent: string|resource|\Psr\Http\Message\StreamInterface,
      *     filePath: string,
-     *     fileMode?: 'EXECUTABLE'|'NORMAL'|'SYMLINK',
-     *     parentCommitId?: string,
-     *     commitMessage?: string,
-     *     name?: string,
-     *     email?: string
+     *     fileMode?: 'EXECUTABLE'|'NORMAL'|'SYMLINK'|null,
+     *     parentCommitId?: string|null,
+     *     commitMessage?: string|null,
+     *     name?: string|null,
+     *     email?: string|null
      * } $args
      */
     public function __construct(array $args)

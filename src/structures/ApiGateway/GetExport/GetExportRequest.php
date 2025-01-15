@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $restApiId
  * @property string $stageName
  * @property string $exportType
- * @property array<string, string> $parameters
- * @property string $accepts
+ * @property array<string, string>|null $parameters
+ * @property string|null $accepts
  */
 class GetExportRequest extends Request
 {
@@ -18,8 +18,8 @@ class GetExportRequest extends Request
      *     restApiId: string,
      *     stageName: string,
      *     exportType: string,
-     *     parameters?: array<string, string>,
-     *     accepts?: string
+     *     parameters?: array<string, string>|null,
+     *     accepts?: string|null
      * } $args
      */
     public function __construct(array $args)

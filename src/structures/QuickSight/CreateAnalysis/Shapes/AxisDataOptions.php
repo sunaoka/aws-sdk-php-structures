@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NumericAxisOptions $NumericAxisOptions
- * @property DateAxisOptions $DateAxisOptions
+ * @property NumericAxisOptions|null $NumericAxisOptions
+ * @property DateAxisOptions|null $DateAxisOptions
  */
 class AxisDataOptions extends Shape
 {
     /**
      * @param array{
-     *     NumericAxisOptions?: NumericAxisOptions,
-     *     DateAxisOptions?: DateAxisOptions
+     *     NumericAxisOptions?: NumericAxisOptions|null,
+     *     DateAxisOptions?: DateAxisOptions|null
      * } $args
      */
     public function __construct(array $args = [])

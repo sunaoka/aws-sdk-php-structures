@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateNetworkAcl\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<NetworkAclAssociation> $Associations
- * @property list<NetworkAclEntry> $Entries
- * @property bool $IsDefault
- * @property string $NetworkAclId
- * @property list<Tag> $Tags
- * @property string $VpcId
- * @property string $OwnerId
+ * @property list<NetworkAclAssociation>|null $Associations
+ * @property list<NetworkAclEntry>|null $Entries
+ * @property bool|null $IsDefault
+ * @property string|null $NetworkAclId
+ * @property list<Tag>|null $Tags
+ * @property string|null $VpcId
+ * @property string|null $OwnerId
  */
 class NetworkAcl extends Shape
 {
     /**
      * @param array{
-     *     Associations?: list<NetworkAclAssociation>,
-     *     Entries?: list<NetworkAclEntry>,
-     *     IsDefault?: bool,
-     *     NetworkAclId?: string,
-     *     Tags?: list<Tag>,
-     *     VpcId?: string,
-     *     OwnerId?: string
+     *     Associations?: list<NetworkAclAssociation>|null,
+     *     Entries?: list<NetworkAclEntry>|null,
+     *     IsDefault?: bool|null,
+     *     NetworkAclId?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     VpcId?: string|null,
+     *     OwnerId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

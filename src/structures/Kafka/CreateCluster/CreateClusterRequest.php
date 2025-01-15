@@ -6,34 +6,34 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\BrokerNodeGroupInfo $BrokerNodeGroupInfo
- * @property Shapes\ClientAuthentication $ClientAuthentication
+ * @property Shapes\ClientAuthentication|null $ClientAuthentication
  * @property string $ClusterName
- * @property Shapes\ConfigurationInfo $ConfigurationInfo
- * @property Shapes\EncryptionInfo $EncryptionInfo
- * @property 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION' $EnhancedMonitoring
+ * @property Shapes\ConfigurationInfo|null $ConfigurationInfo
+ * @property Shapes\EncryptionInfo|null $EncryptionInfo
+ * @property 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION'|null $EnhancedMonitoring
  * @property string $KafkaVersion
- * @property Shapes\LoggingInfo $LoggingInfo
+ * @property Shapes\LoggingInfo|null $LoggingInfo
  * @property int<1, 15> $NumberOfBrokerNodes
- * @property Shapes\OpenMonitoringInfo $OpenMonitoring
- * @property array<string, string> $Tags
- * @property 'LOCAL'|'TIERED' $StorageMode
+ * @property Shapes\OpenMonitoringInfo|null $OpenMonitoring
+ * @property array<string, string>|null $Tags
+ * @property 'LOCAL'|'TIERED'|null $StorageMode
  */
 class CreateClusterRequest extends Request
 {
     /**
      * @param array{
      *     BrokerNodeGroupInfo: Shapes\BrokerNodeGroupInfo,
-     *     ClientAuthentication?: Shapes\ClientAuthentication,
+     *     ClientAuthentication?: Shapes\ClientAuthentication|null,
      *     ClusterName: string,
-     *     ConfigurationInfo?: Shapes\ConfigurationInfo,
-     *     EncryptionInfo?: Shapes\EncryptionInfo,
-     *     EnhancedMonitoring?: 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION',
+     *     ConfigurationInfo?: Shapes\ConfigurationInfo|null,
+     *     EncryptionInfo?: Shapes\EncryptionInfo|null,
+     *     EnhancedMonitoring?: 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION'|null,
      *     KafkaVersion: string,
-     *     LoggingInfo?: Shapes\LoggingInfo,
+     *     LoggingInfo?: Shapes\LoggingInfo|null,
      *     NumberOfBrokerNodes: int<1, 15>,
-     *     OpenMonitoring?: Shapes\OpenMonitoringInfo,
-     *     Tags?: array<string, string>,
-     *     StorageMode?: 'LOCAL'|'TIERED'
+     *     OpenMonitoring?: Shapes\OpenMonitoringInfo|null,
+     *     Tags?: array<string, string>|null,
+     *     StorageMode?: 'LOCAL'|'TIERED'|null
      * } $args
      */
     public function __construct(array $args)

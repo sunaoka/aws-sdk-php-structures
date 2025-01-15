@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $SizeInGB
- * @property int $Count
- * @property 'hdd'|'ssd' $Type
+ * @property int|null $SizeInGB
+ * @property int|null $Count
+ * @property 'hdd'|'ssd'|null $Type
  */
 class DiskInfo extends Shape
 {
     /**
      * @param array{
-     *     SizeInGB?: int,
-     *     Count?: int,
-     *     Type?: 'hdd'|'ssd'
+     *     SizeInGB?: int|null,
+     *     Count?: int|null,
+     *     Type?: 'hdd'|'ssd'|null
      * } $args
      */
     public function __construct(array $args = [])

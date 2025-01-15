@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\GetApplicationAuthenticationMethod\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IamAuthenticationMethod $Iam
+ * @property IamAuthenticationMethod|null $Iam
  */
 class AuthenticationMethod extends Shape
 {
     /**
-     * @param array{Iam?: IamAuthenticationMethod} $args
+     * @param array{Iam?: IamAuthenticationMethod|null} $args
      */
     public function __construct(array $args = [])
     {

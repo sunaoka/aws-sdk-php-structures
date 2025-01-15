@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Sfn\TestState\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $protocol
- * @property string $method
- * @property string $url
- * @property string $headers
- * @property string $body
+ * @property string|null $protocol
+ * @property string|null $method
+ * @property string|null $url
+ * @property string|null $headers
+ * @property string|null $body
  */
 class InspectionDataRequest extends Shape
 {
     /**
      * @param array{
-     *     protocol?: string,
-     *     method?: string,
-     *     url?: string,
-     *     headers?: string,
-     *     body?: string
+     *     protocol?: string|null,
+     *     method?: string|null,
+     *     url?: string|null,
+     *     headers?: string|null,
+     *     body?: string|null
      * } $args
      */
     public function __construct(array $args = [])

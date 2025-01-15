@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WorkflowToken
  * @property string $RecordId
  * @property 'SUCCEEDED'|'FAILED' $Status
- * @property string $FailureReason
- * @property list<Shapes\RecordOutput> $Outputs
+ * @property string|null $FailureReason
+ * @property list<Shapes\RecordOutput>|null $Outputs
  * @property string $IdempotencyToken
  */
 class NotifyUpdateProvisionedProductEngineWorkflowResultRequest extends Request
@@ -19,8 +19,8 @@ class NotifyUpdateProvisionedProductEngineWorkflowResultRequest extends Request
      *     WorkflowToken: string,
      *     RecordId: string,
      *     Status: 'SUCCEEDED'|'FAILED',
-     *     FailureReason?: string,
-     *     Outputs?: list<Shapes\RecordOutput>,
+     *     FailureReason?: string|null,
+     *     Outputs?: list<Shapes\RecordOutput>|null,
      *     IdempotencyToken: string
      * } $args
      */

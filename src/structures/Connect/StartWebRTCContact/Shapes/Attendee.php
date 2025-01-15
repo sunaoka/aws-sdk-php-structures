@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\StartWebRTCContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AttendeeId
- * @property string $JoinToken
+ * @property string|null $AttendeeId
+ * @property string|null $JoinToken
  */
 class Attendee extends Shape
 {
     /**
      * @param array{
-     *     AttendeeId?: string,
-     *     JoinToken?: string
+     *     AttendeeId?: string|null,
+     *     JoinToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

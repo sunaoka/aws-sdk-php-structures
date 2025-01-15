@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $BackupPlanId
  * @property Shapes\BackupSelection $BackupSelection
- * @property string $CreatorRequestId
+ * @property string|null $CreatorRequestId
  */
 class CreateBackupSelectionRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateBackupSelectionRequest extends Request
      * @param array{
      *     BackupPlanId: string,
      *     BackupSelection: Shapes\BackupSelection,
-     *     CreatorRequestId?: string
+     *     CreatorRequestId?: string|null
      * } $args
      */
     public function __construct(array $args)

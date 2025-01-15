@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateTransitGatewayPeering\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MissingPermission
+ * @property string|null $MissingPermission
  */
 class PermissionsErrorContext extends Shape
 {
     /**
-     * @param array{MissingPermission?: string} $args
+     * @param array{MissingPermission?: string|null} $args
      */
     public function __construct(array $args = [])
     {
