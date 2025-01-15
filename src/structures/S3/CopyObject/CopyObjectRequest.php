@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null $ACL
  * @property string $Bucket
  * @property string|null $CacheControl
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
  * @property string|null $ContentDisposition
  * @property string|null $ContentEncoding
  * @property string|null $ContentLanguage
@@ -54,7 +54,7 @@ class CopyObjectRequest extends Request
      *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null,
      *     Bucket: string,
      *     CacheControl?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
      *     ContentDisposition?: string|null,
      *     ContentEncoding?: string|null,
      *     ContentLanguage?: string|null,

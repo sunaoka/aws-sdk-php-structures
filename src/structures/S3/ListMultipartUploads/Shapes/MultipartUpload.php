@@ -11,7 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
  * @property Owner|null $Owner
  * @property Initiator|null $Initiator
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
+ * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
  */
 class MultipartUpload extends Shape
 {
@@ -23,7 +24,8 @@ class MultipartUpload extends Shape
      *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
      *     Owner?: Owner|null,
      *     Initiator?: Initiator|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
+     *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null
      * } $args
      */
     public function __construct(array $args = [])

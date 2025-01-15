@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'requester'|null $RequestPayer
  * @property string|null $Token
  * @property string|null $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
  * @property string|null $ExpectedBucketOwner
  */
 class PutObjectLockConfigurationRequest extends Request
@@ -22,7 +22,7 @@ class PutObjectLockConfigurationRequest extends Request
      *     RequestPayer?: 'requester'|null,
      *     Token?: string|null,
      *     ContentMD5?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
      *     ExpectedBucketOwner?: string|null
      * } $args
      */

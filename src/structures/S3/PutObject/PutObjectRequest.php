@@ -15,9 +15,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $ContentLength
  * @property string|null $ContentMD5
  * @property string|null $ContentType
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
  * @property string|null $ChecksumCRC32
  * @property string|null $ChecksumCRC32C
+ * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
  * @property \Aws\Api\DateTimeResult|null $Expires
@@ -60,9 +61,10 @@ class PutObjectRequest extends Request
      *     ContentLength?: int|null,
      *     ContentMD5?: string|null,
      *     ContentType?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
      *     ChecksumCRC32?: string|null,
      *     ChecksumCRC32C?: string|null,
+     *     ChecksumCRC64NVME?: string|null,
      *     ChecksumSHA1?: string|null,
      *     ChecksumSHA256?: string|null,
      *     Expires?: \Aws\Api\DateTimeResult|null,
