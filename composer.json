@@ -1,6 +1,6 @@
 {
     "name": "sunaoka/aws-sdk-php-structures",
-    "description": "",
+    "description": "Library for converting AWS SDK for PHP parameters and results into typed classes",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
