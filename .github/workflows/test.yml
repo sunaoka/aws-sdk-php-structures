@@ -41,7 +41,7 @@ jobs:
         with:
           timeout_seconds: 60
           max_attempts: 3
-          command: composer install --no-plugins --no-ansi --prefer-dist --no-progress --no-interaction
+          command: composer install --quiet --no-plugins --no-ansi --prefer-dist --no-progress --no-interaction
 
       - name: Migrate phpunit XML configuration
         run: vendor/bin/phpunit --migrate-configuration || true
