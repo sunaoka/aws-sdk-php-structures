@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpacesThinClient\ListEnvironments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SYSTEM'|'CUSTOM'|null $type
+ * @property 'SYSTEM'|'CUSTOM' $type
  * @property int<0, 23>|null $startTimeHour
  * @property int<0, 59>|null $startTimeMinute
  * @property int<0, 23>|null $endTimeHour
@@ -17,7 +17,7 @@ class MaintenanceWindow extends Shape
 {
     /**
      * @param array{
-     *     type?: 'SYSTEM'|'CUSTOM'|null,
+     *     type: 'SYSTEM'|'CUSTOM',
      *     startTimeHour?: int<0, 23>|null,
      *     startTimeMinute?: int<0, 59>|null,
      *     endTimeHour?: int<0, 23>|null,
@@ -26,7 +26,7 @@ class MaintenanceWindow extends Shape
      *     applyTimeOf?: 'UTC'|'DEVICE'|null
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

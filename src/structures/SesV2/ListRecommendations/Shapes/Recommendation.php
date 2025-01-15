@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ResourceArn
- * @property 'DKIM'|'DMARC'|'SPF'|'BIMI'|null $Type
+ * @property 'DKIM'|'DMARC'|'SPF'|'BIMI'|'COMPLAINT'|null $Type
  * @property string|null $Description
  * @property 'OPEN'|'FIXED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
@@ -18,7 +18,7 @@ class Recommendation extends Shape
     /**
      * @param array{
      *     ResourceArn?: string|null,
-     *     Type?: 'DKIM'|'DMARC'|'SPF'|'BIMI'|null,
+     *     Type?: 'DKIM'|'DMARC'|'SPF'|'BIMI'|'COMPLAINT'|null,
      *     Description?: string|null,
      *     Status?: 'OPEN'|'FIXED'|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
