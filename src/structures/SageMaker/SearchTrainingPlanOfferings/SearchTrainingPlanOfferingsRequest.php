@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\SearchTrainingPlanOfferings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn2.48xlarge' $InstanceType
+ * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge' $InstanceType
  * @property int<1, 256> $InstanceCount
  * @property \Aws\Api\DateTimeResult|null $StartTimeAfter
  * @property \Aws\Api\DateTimeResult|null $EndTimeBefore
@@ -16,7 +16,7 @@ class SearchTrainingPlanOfferingsRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceType: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn2.48xlarge',
+     *     InstanceType: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge',
      *     InstanceCount: int<1, 256>,
      *     StartTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     EndTimeBefore?: \Aws\Api\DateTimeResult|null,

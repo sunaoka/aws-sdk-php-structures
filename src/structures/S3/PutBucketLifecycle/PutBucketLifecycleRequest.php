@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property string|null $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
  * @property Shapes\LifecycleConfiguration|null $LifecycleConfiguration
  * @property string|null $ExpectedBucketOwner
  */
@@ -17,7 +17,7 @@ class PutBucketLifecycleRequest extends Request
      * @param array{
      *     Bucket: string,
      *     ContentMD5?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
      *     LifecycleConfiguration?: Shapes\LifecycleConfiguration|null,
      *     ExpectedBucketOwner?: string|null
      * } $args

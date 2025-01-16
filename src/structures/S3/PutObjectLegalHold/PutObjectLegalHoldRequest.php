@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'requester'|null $RequestPayer
  * @property string|null $VersionId
  * @property string|null $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
  * @property string|null $ExpectedBucketOwner
  */
 class PutObjectLegalHoldRequest extends Request
@@ -24,7 +24,7 @@ class PutObjectLegalHoldRequest extends Request
      *     RequestPayer?: 'requester'|null,
      *     VersionId?: string|null,
      *     ContentMD5?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
      *     ExpectedBucketOwner?: string|null
      * } $args
      */

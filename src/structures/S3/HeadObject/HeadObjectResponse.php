@@ -14,8 +14,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $ContentLength
  * @property string|null $ChecksumCRC32
  * @property string|null $ChecksumCRC32C
+ * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
+ * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
  * @property string|null $ETag
  * @property int|null $MissingMeta
  * @property string|null $VersionId

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Bucket
  * @property Shapes\CORSConfiguration $CORSConfiguration
  * @property string|null $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
  * @property string|null $ExpectedBucketOwner
  */
 class PutBucketCorsRequest extends Request
@@ -18,7 +18,7 @@ class PutBucketCorsRequest extends Request
      *     Bucket: string,
      *     CORSConfiguration: Shapes\CORSConfiguration,
      *     ContentMD5?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
      *     ExpectedBucketOwner?: string|null
      * } $args
      */

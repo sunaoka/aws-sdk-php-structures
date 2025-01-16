@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\KnowledgeBase>|null $knowledgeBases
  * @property Shapes\PromptOverrideConfiguration|null $promptOverrideConfiguration
  * @property string $sessionId
+ * @property Shapes\StreamingConfigurations|null $streamingConfigurations
  */
 class InvokeInlineAgentRequest extends Request
 {
@@ -37,7 +38,8 @@ class InvokeInlineAgentRequest extends Request
      *     instruction: string,
      *     knowledgeBases?: list<Shapes\KnowledgeBase>|null,
      *     promptOverrideConfiguration?: Shapes\PromptOverrideConfiguration|null,
-     *     sessionId: string
+     *     sessionId: string,
+     *     streamingConfigurations?: Shapes\StreamingConfigurations|null
      * } $args
      */
     public function __construct(array $args)
