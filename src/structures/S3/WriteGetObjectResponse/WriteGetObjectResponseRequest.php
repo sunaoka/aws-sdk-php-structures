@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ContentType
  * @property string|null $ChecksumCRC32
  * @property string|null $ChecksumCRC32C
+ * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
  * @property bool|null $DeleteMarker
@@ -66,6 +67,7 @@ class WriteGetObjectResponseRequest extends Request
      *     ContentType?: string|null,
      *     ChecksumCRC32?: string|null,
      *     ChecksumCRC32C?: string|null,
+     *     ChecksumCRC64NVME?: string|null,
      *     ChecksumSHA1?: string|null,
      *     ChecksumSHA256?: string|null,
      *     DeleteMarker?: bool|null,
