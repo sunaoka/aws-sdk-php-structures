@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NumericSeparatorConfiguration|null $SeparatorConfiguration
  * @property string|null $Symbol
  * @property DecimalPlacesConfiguration|null $DecimalPlacesConfiguration
- * @property 'NONE'|'AUTO'|'THOUSANDS'|'MILLIONS'|'BILLIONS'|'TRILLIONS'|null $NumberScale
+ * @property 'NONE'|'AUTO'|'THOUSANDS'|'MILLIONS'|'BILLIONS'|'TRILLIONS'|'LAKHS'|'CRORES'|null $NumberScale
  * @property NegativeValueConfiguration|null $NegativeValueConfiguration
  * @property NullValueFormatConfiguration|null $NullValueFormatConfiguration
  */
@@ -23,7 +23,7 @@ class CurrencyDisplayFormatConfiguration extends Shape
      *     SeparatorConfiguration?: NumericSeparatorConfiguration|null,
      *     Symbol?: string|null,
      *     DecimalPlacesConfiguration?: DecimalPlacesConfiguration|null,
-     *     NumberScale?: 'NONE'|'AUTO'|'THOUSANDS'|'MILLIONS'|'BILLIONS'|'TRILLIONS'|null,
+     *     NumberScale?: 'NONE'|'AUTO'|'THOUSANDS'|'MILLIONS'|'BILLIONS'|'TRILLIONS'|'LAKHS'|'CRORES'|null,
      *     NegativeValueConfiguration?: NegativeValueConfiguration|null,
      *     NullValueFormatConfiguration?: NullValueFormatConfiguration|null
      * } $args

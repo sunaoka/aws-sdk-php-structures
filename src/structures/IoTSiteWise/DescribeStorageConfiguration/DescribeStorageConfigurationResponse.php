@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $lastUpdateDate
  * @property 'ENABLED'|'DISABLED'|null $warmTier
  * @property Shapes\WarmTierRetentionPeriod|null $warmTierRetentionPeriod
+ * @property bool|null $disallowIngestNullNaN
  */
 class DescribeStorageConfigurationResponse extends Response
 {
