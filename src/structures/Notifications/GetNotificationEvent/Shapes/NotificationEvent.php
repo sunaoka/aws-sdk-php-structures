@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HEALTHY'|'UNHEALTHY'|null $eventStatus
  * @property 'AGGREGATE'|'CHILD'|'NONE'|null $aggregationEventType
  * @property string|null $aggregateNotificationEventArn
+ * @property AggregationSummary|null $aggregationSummary
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property array<string, TextPartValue> $textParts
@@ -34,6 +35,7 @@ class NotificationEvent extends Shape
      *     eventStatus?: 'HEALTHY'|'UNHEALTHY'|null,
      *     aggregationEventType?: 'AGGREGATE'|'CHILD'|'NONE'|null,
      *     aggregateNotificationEventArn?: string|null,
+     *     aggregationSummary?: AggregationSummary|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,
      *     endTime?: \Aws\Api\DateTimeResult|null,
      *     textParts: array<string, TextPartValue>,
