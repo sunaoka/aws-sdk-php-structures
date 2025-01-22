@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StaticImageDeactivateScheduleActionSettings|null $StaticImageDeactivateSettings
  * @property StaticImageOutputActivateScheduleActionSettings|null $StaticImageOutputActivateSettings
  * @property StaticImageOutputDeactivateScheduleActionSettings|null $StaticImageOutputDeactivateSettings
+ * @property Id3SegmentTaggingScheduleActionSettings|null $Id3SegmentTaggingSettings
+ * @property TimedMetadataScheduleActionSettings|null $TimedMetadataSettings
  */
 class ScheduleActionSettings extends Shape
 {
@@ -39,7 +41,9 @@ class ScheduleActionSettings extends Shape
      *     StaticImageActivateSettings?: StaticImageActivateScheduleActionSettings|null,
      *     StaticImageDeactivateSettings?: StaticImageDeactivateScheduleActionSettings|null,
      *     StaticImageOutputActivateSettings?: StaticImageOutputActivateScheduleActionSettings|null,
-     *     StaticImageOutputDeactivateSettings?: StaticImageOutputDeactivateScheduleActionSettings|null
+     *     StaticImageOutputDeactivateSettings?: StaticImageOutputDeactivateScheduleActionSettings|null,
+     *     Id3SegmentTaggingSettings?: Id3SegmentTaggingScheduleActionSettings|null,
+     *     TimedMetadataSettings?: TimedMetadataScheduleActionSettings|null
      * } $args
      */
     public function __construct(array $args = [])

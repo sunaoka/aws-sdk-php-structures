@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ConflictException|null $conflictException
  * @property DependencyFailedException|null $dependencyFailedException
  * @property FlowCompletionEvent|null $flowCompletionEvent
+ * @property FlowMultiTurnInputRequestEvent|null $flowMultiTurnInputRequestEvent
  * @property FlowOutputEvent|null $flowOutputEvent
  * @property FlowTraceEvent|null $flowTraceEvent
  * @property InternalServerException|null $internalServerException
@@ -27,6 +28,7 @@ class FlowResponseStream extends Shape
      *     conflictException?: ConflictException|null,
      *     dependencyFailedException?: DependencyFailedException|null,
      *     flowCompletionEvent?: FlowCompletionEvent|null,
+     *     flowMultiTurnInputRequestEvent?: FlowMultiTurnInputRequestEvent|null,
      *     flowOutputEvent?: FlowOutputEvent|null,
      *     flowTraceEvent?: FlowTraceEvent|null,
      *     internalServerException?: InternalServerException|null,

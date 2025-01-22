@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KlvNameModifier
  * @property string|null $NielsenId3NameModifier
  * @property string|null $Scte35NameModifier
+ * @property 'DISABLED'|'ENABLED'|null $Id3Behavior
+ * @property string|null $Id3NameModifier
  */
 class CmafIngestGroupSettings extends Shape
 {
@@ -29,7 +31,9 @@ class CmafIngestGroupSettings extends Shape
      *     KlvBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
      *     KlvNameModifier?: string|null,
      *     NielsenId3NameModifier?: string|null,
-     *     Scte35NameModifier?: string|null
+     *     Scte35NameModifier?: string|null,
+     *     Id3Behavior?: 'DISABLED'|'ENABLED'|null,
+     *     Id3NameModifier?: string|null
      * } $args
      */
     public function __construct(array $args)

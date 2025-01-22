@@ -6,16 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property FlowInputContent $content
+ * @property string|null $nodeInputName
  * @property string $nodeName
- * @property string $nodeOutputName
+ * @property string|null $nodeOutputName
  */
 class FlowInput extends Shape
 {
     /**
      * @param array{
      *     content: FlowInputContent,
+     *     nodeInputName?: string|null,
      *     nodeName: string,
-     *     nodeOutputName: string
+     *     nodeOutputName?: string|null
      * } $args
      */
     public function __construct(array $args)
