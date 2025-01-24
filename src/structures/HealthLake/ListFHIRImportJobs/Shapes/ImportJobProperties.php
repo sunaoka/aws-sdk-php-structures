@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $JobId
  * @property string|null $JobName
- * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED_WITH_ERRORS'|'COMPLETED'|'FAILED'|'CANCEL_SUBMITTED'|'CANCEL_IN_PROGRESS'|'CANCEL_COMPLETED'|'CANCEL_FAILED' $JobStatus
+ * @property 'SUBMITTED'|'QUEUED'|'IN_PROGRESS'|'COMPLETED_WITH_ERRORS'|'COMPLETED'|'FAILED'|'CANCEL_SUBMITTED'|'CANCEL_IN_PROGRESS'|'CANCEL_COMPLETED'|'CANCEL_FAILED' $JobStatus
  * @property \Aws\Api\DateTimeResult $SubmitTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property string $DatastoreId
@@ -23,7 +23,7 @@ class ImportJobProperties extends Shape
      * @param array{
      *     JobId: string,
      *     JobName?: string|null,
-     *     JobStatus: 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED_WITH_ERRORS'|'COMPLETED'|'FAILED'|'CANCEL_SUBMITTED'|'CANCEL_IN_PROGRESS'|'CANCEL_COMPLETED'|'CANCEL_FAILED',
+     *     JobStatus: 'SUBMITTED'|'QUEUED'|'IN_PROGRESS'|'COMPLETED_WITH_ERRORS'|'COMPLETED'|'FAILED'|'CANCEL_SUBMITTED'|'CANCEL_IN_PROGRESS'|'CANCEL_COMPLETED'|'CANCEL_FAILED',
      *     SubmitTime: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     DatastoreId: string,
