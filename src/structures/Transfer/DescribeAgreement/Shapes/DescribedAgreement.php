@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property 'ENABLED'|'DISABLED'|null $PreserveFilename
  * @property 'ENABLED'|'DISABLED'|null $EnforceMessageSigning
+ * @property CustomDirectoriesType|null $CustomDirectories
  */
 class DescribedAgreement extends Shape
 {
@@ -33,7 +34,8 @@ class DescribedAgreement extends Shape
      *     AccessRole?: string|null,
      *     Tags?: list<Tag>|null,
      *     PreserveFilename?: 'ENABLED'|'DISABLED'|null,
-     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'|null
+     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'|null,
+     *     CustomDirectories?: CustomDirectoriesType|null
      * } $args
      */
     public function __construct(array $args)
