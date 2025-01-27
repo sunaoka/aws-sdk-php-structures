@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InputDecryptionSettings|null $DecryptionSettings
  * @property 'ENABLED'|'DISABLED'|null $DenoiseFilter
  * @property string|null $DolbyVisionMetadataXml
+ * @property array<string, DynamicAudioSelector>|null $DynamicAudioSelectors
  * @property string|null $FileInput
  * @property 'AUTO'|'DISABLE'|'FORCE'|null $FilterEnable
  * @property int<0, 5>|null $FilterStrength
@@ -45,6 +46,7 @@ class Input extends Shape
      *     DecryptionSettings?: InputDecryptionSettings|null,
      *     DenoiseFilter?: 'ENABLED'|'DISABLED'|null,
      *     DolbyVisionMetadataXml?: string|null,
+     *     DynamicAudioSelectors?: array<string, DynamicAudioSelector>|null,
      *     FileInput?: string|null,
      *     FilterEnable?: 'AUTO'|'DISABLE'|'FORCE'|null,
      *     FilterStrength?: int<0, 5>|null,

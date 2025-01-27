@@ -5,12 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdatePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property CachePointBlock|null $cachePoint
  * @property string|null $text
  */
 class ContentBlock extends Shape
 {
     /**
-     * @param array{text?: string|null} $args
+     * @param array{
+     *     cachePoint?: CachePointBlock|null,
+     *     text?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {
