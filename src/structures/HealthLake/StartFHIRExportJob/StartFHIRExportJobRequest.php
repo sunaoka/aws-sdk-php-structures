@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OutputDataConfig $OutputDataConfig
  * @property string $DatastoreId
  * @property string $DataAccessRoleArn
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class StartFHIRExportJobRequest extends Request
 {
@@ -19,7 +19,7 @@ class StartFHIRExportJobRequest extends Request
      *     OutputDataConfig: Shapes\OutputDataConfig,
      *     DatastoreId: string,
      *     DataAccessRoleArn: string,
-     *     ClientToken: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)
