@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null $taskRunStatusCounts
  * @property int<0, 2147483647>|null $maxFailedTasksCount
  * @property int<0, 2147483647>|null $maxRetriesPerTask
+ * @property int<-1, 2147483647>|null $maxWorkerCount
  * @property string|null $sourceJobId
  */
 class JobSummary extends Shape
@@ -43,6 +44,7 @@ class JobSummary extends Shape
      *     taskRunStatusCounts?: array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null,
      *     maxFailedTasksCount?: int<0, 2147483647>|null,
      *     maxRetriesPerTask?: int<0, 2147483647>|null,
+     *     maxWorkerCount?: int<-1, 2147483647>|null,
      *     sourceJobId?: string|null
      * } $args
      */

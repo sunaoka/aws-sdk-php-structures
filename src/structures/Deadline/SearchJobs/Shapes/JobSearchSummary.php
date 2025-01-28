@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endedAt
  * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property array<string, JobParameter>|null $jobParameters
+ * @property int<-1, 2147483647>|null $maxWorkerCount
  * @property string|null $sourceJobId
  */
 class JobSearchSummary extends Shape
@@ -43,6 +44,7 @@ class JobSearchSummary extends Shape
      *     endedAt?: \Aws\Api\DateTimeResult|null,
      *     startedAt?: \Aws\Api\DateTimeResult|null,
      *     jobParameters?: array<string, JobParameter>|null,
+     *     maxWorkerCount?: int<-1, 2147483647>|null,
      *     sourceJobId?: string|null
      * } $args
      */

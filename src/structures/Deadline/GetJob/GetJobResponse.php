@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, Shapes\JobParameter>|null $parameters
  * @property Shapes\Attachments|null $attachments
  * @property string|null $description
+ * @property int<-1, 2147483647>|null $maxWorkerCount
  * @property string|null $sourceJobId
  */
 class GetJobResponse extends Response

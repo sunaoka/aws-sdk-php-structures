@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<-2147483648, 2147483647>|null $processExitCode
  * @property string|null $progressMessage
  * @property Shapes\SessionActionDefinition $definition
+ * @property list<Shapes\AcquiredLimit>|null $acquiredLimits
  */
 class GetSessionActionResponse extends Response
 {

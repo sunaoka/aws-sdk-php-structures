@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FailedDataOnly'|'AllData'|null $S3BackupMode
  * @property RetryOptions|null $RetryOptions
  * @property string $RoleARN
+ * @property bool|null $AppendOnly
  * @property CatalogConfiguration $CatalogConfiguration
  * @property S3DestinationConfiguration $S3Configuration
  */
@@ -30,6 +31,7 @@ class IcebergDestinationConfiguration extends Shape
      *     S3BackupMode?: 'FailedDataOnly'|'AllData'|null,
      *     RetryOptions?: RetryOptions|null,
      *     RoleARN: string,
+     *     AppendOnly?: bool|null,
      *     CatalogConfiguration: CatalogConfiguration,
      *     S3Configuration: S3DestinationConfiguration
      * } $args
