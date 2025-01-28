@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateFlowVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 4096>|null $maxTokens
+ * @property int<0, 8192>|null $maxTokens
  * @property list<string>|null $stopSequences
  * @property float|null $temperature
  * @property float|null $topP
@@ -14,7 +14,7 @@ class PromptModelInferenceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     maxTokens?: int<0, 4096>|null,
+     *     maxTokens?: int<0, 8192>|null,
      *     stopSequences?: list<string>|null,
      *     temperature?: float|null,
      *     topP?: float|null

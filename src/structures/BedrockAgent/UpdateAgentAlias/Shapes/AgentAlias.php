@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AgentAliasHistoryEvent>|null $agentAliasHistoryEvents
  * @property string $agentAliasId
  * @property string $agentAliasName
- * @property 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING' $agentAliasStatus
+ * @property 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING'|'DISSOCIATED' $agentAliasStatus
  * @property string $agentId
  * @property string|null $clientToken
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -26,7 +26,7 @@ class AgentAlias extends Shape
      *     agentAliasHistoryEvents?: list<AgentAliasHistoryEvent>|null,
      *     agentAliasId: string,
      *     agentAliasName: string,
-     *     agentAliasStatus: 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING',
+     *     agentAliasStatus: 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING'|'DISSOCIATED',
      *     agentId: string,
      *     clientToken?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,

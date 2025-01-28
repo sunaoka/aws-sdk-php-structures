@@ -27,6 +27,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property UnknownConnectionSourceOutputFlowValidationDetails|null $unknownConnectionSourceOutput
  * @property UnknownConnectionTargetFlowValidationDetails|null $unknownConnectionTarget
  * @property UnknownConnectionTargetInputFlowValidationDetails|null $unknownConnectionTargetInput
+ * @property UnknownNodeInputFlowValidationDetails|null $unknownNodeInput
+ * @property UnknownNodeOutputFlowValidationDetails|null $unknownNodeOutput
  * @property UnreachableNodeFlowValidationDetails|null $unreachableNode
  * @property UnsatisfiedConnectionConditionsFlowValidationDetails|null $unsatisfiedConnectionConditions
  * @property UnspecifiedFlowValidationDetails|null $unspecified
@@ -57,6 +59,8 @@ class FlowValidationDetails extends Shape
      *     unknownConnectionSourceOutput?: UnknownConnectionSourceOutputFlowValidationDetails|null,
      *     unknownConnectionTarget?: UnknownConnectionTargetFlowValidationDetails|null,
      *     unknownConnectionTargetInput?: UnknownConnectionTargetInputFlowValidationDetails|null,
+     *     unknownNodeInput?: UnknownNodeInputFlowValidationDetails|null,
+     *     unknownNodeOutput?: UnknownNodeOutputFlowValidationDetails|null,
      *     unreachableNode?: UnreachableNodeFlowValidationDetails|null,
      *     unsatisfiedConnectionConditions?: UnsatisfiedConnectionConditionsFlowValidationDetails|null,
      *     unspecified?: UnspecifiedFlowValidationDetails|null
