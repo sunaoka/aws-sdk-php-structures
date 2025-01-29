@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $farmId
- * @property string $jobId
  * @property string $queueId
+ * @property string $jobId
  */
 class GetJobRequest extends Request
 {
     /**
      * @param array{
      *     farmId: string,
-     *     jobId: string,
-     *     queueId: string
+     *     queueId: string,
+     *     jobId: string
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DeliveryStreamName
  * @property 'DirectPut'|'KinesisStreamAsSource'|'MSKAsSource'|'DatabaseAsSource'|null $DeliveryStreamType
+ * @property Shapes\DirectPutSourceConfiguration|null $DirectPutSourceConfiguration
  * @property Shapes\KinesisStreamSourceConfiguration|null $KinesisStreamSourceConfiguration
  * @property Shapes\DeliveryStreamEncryptionConfigurationInput|null $DeliveryStreamEncryptionConfigurationInput
  * @property Shapes\S3DestinationConfiguration|null $S3DestinationConfiguration
@@ -29,6 +30,7 @@ class CreateDeliveryStreamRequest extends Request
      * @param array{
      *     DeliveryStreamName: string,
      *     DeliveryStreamType?: 'DirectPut'|'KinesisStreamAsSource'|'MSKAsSource'|'DatabaseAsSource'|null,
+     *     DirectPutSourceConfiguration?: Shapes\DirectPutSourceConfiguration|null,
      *     KinesisStreamSourceConfiguration?: Shapes\KinesisStreamSourceConfiguration|null,
      *     DeliveryStreamEncryptionConfigurationInput?: Shapes\DeliveryStreamEncryptionConfigurationInput|null,
      *     S3DestinationConfiguration?: Shapes\S3DestinationConfiguration|null,
