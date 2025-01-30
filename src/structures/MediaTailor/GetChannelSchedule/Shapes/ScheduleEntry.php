@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ApproximateDurationSeconds
  * @property \Aws\Api\DateTimeResult|null $ApproximateStartTime
  * @property string $Arn
- * @property list<string>|null $Audiences
  * @property string $ChannelName
  * @property string|null $LiveSourceName
  * @property string $ProgramName
@@ -16,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PROGRAM'|'FILLER_SLATE'|'ALTERNATE_MEDIA'|null $ScheduleEntryType
  * @property string $SourceLocationName
  * @property string|null $VodSourceName
+ * @property list<string>|null $Audiences
  */
 class ScheduleEntry extends Shape
 {
@@ -24,14 +24,14 @@ class ScheduleEntry extends Shape
      *     ApproximateDurationSeconds?: int|null,
      *     ApproximateStartTime?: \Aws\Api\DateTimeResult|null,
      *     Arn: string,
-     *     Audiences?: list<string>|null,
      *     ChannelName: string,
      *     LiveSourceName?: string|null,
      *     ProgramName: string,
      *     ScheduleAdBreaks?: list<ScheduleAdBreak>|null,
      *     ScheduleEntryType?: 'PROGRAM'|'FILLER_SLATE'|'ALTERNATE_MEDIA'|null,
      *     SourceLocationName: string,
-     *     VodSourceName?: string|null
+     *     VodSourceName?: string|null,
+     *     Audiences?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

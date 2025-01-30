@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $message
+ * @property string|null $reason
  */
 class InternalServerException extends Shape
 {
     /**
-     * @param array{message?: string|null} $args
+     * @param array{
+     *     message?: string|null,
+     *     reason?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Tags
  * @property string|null $TranscodeProfileName
  * @property string|null $VideoContentSourceUrl
+ * @property Shapes\AdConditioningConfiguration|null $AdConditioningConfiguration
  */
 class PutPlaybackConfigurationRequest extends Request
 {
@@ -39,7 +40,8 @@ class PutPlaybackConfigurationRequest extends Request
      *     SlateAdUrl?: string|null,
      *     Tags?: array<string, string>|null,
      *     TranscodeProfileName?: string|null,
-     *     VideoContentSourceUrl?: string|null
+     *     VideoContentSourceUrl?: string|null,
+     *     AdConditioningConfiguration?: Shapes\AdConditioningConfiguration|null
      * } $args
      */
     public function __construct(array $args)
