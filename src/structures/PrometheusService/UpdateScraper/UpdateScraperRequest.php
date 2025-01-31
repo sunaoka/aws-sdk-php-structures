@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $alias
  * @property string|null $clientToken
  * @property Shapes\Destination|null $destination
+ * @property Shapes\RoleConfiguration|null $roleConfiguration
  * @property Shapes\ScrapeConfiguration|null $scrapeConfiguration
  * @property string $scraperId
  */
@@ -18,6 +19,7 @@ class UpdateScraperRequest extends Request
      *     alias?: string|null,
      *     clientToken?: string|null,
      *     destination?: Shapes\Destination|null,
+     *     roleConfiguration?: Shapes\RoleConfiguration|null,
      *     scrapeConfiguration?: Shapes\ScrapeConfiguration|null,
      *     scraperId: string
      * } $args
