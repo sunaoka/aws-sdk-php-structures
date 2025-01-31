@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Destination $destination
  * @property \Aws\Api\DateTimeResult $lastModifiedAt
  * @property string $roleArn
+ * @property RoleConfiguration|null $roleConfiguration
  * @property ScrapeConfiguration $scrapeConfiguration
  * @property string $scraperId
  * @property Source $source
@@ -28,6 +29,7 @@ class ScraperDescription extends Shape
      *     destination: Destination,
      *     lastModifiedAt: \Aws\Api\DateTimeResult,
      *     roleArn: string,
+     *     roleConfiguration?: RoleConfiguration|null,
      *     scrapeConfiguration: ScrapeConfiguration,
      *     scraperId: string,
      *     source: Source,

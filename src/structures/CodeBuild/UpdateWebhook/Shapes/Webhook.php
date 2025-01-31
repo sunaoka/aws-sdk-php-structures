@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $secret
  * @property string|null $branchFilter
  * @property list<list<WebhookFilter>>|null $filterGroups
- * @property 'BUILD'|'BUILD_BATCH'|null $buildType
+ * @property 'BUILD'|'BUILD_BATCH'|'RUNNER_BUILDKITE_BUILD'|null $buildType
  * @property bool|null $manualCreation
  * @property \Aws\Api\DateTimeResult|null $lastModifiedSecret
  * @property ScopeConfiguration|null $scopeConfiguration
@@ -24,7 +24,7 @@ class Webhook extends Shape
      *     secret?: string|null,
      *     branchFilter?: string|null,
      *     filterGroups?: list<list<WebhookFilter>>|null,
-     *     buildType?: 'BUILD'|'BUILD_BATCH'|null,
+     *     buildType?: 'BUILD'|'BUILD_BATCH'|'RUNNER_BUILDKITE_BUILD'|null,
      *     manualCreation?: bool|null,
      *     lastModifiedSecret?: \Aws\Api\DateTimeResult|null,
      *     scopeConfiguration?: ScopeConfiguration|null
