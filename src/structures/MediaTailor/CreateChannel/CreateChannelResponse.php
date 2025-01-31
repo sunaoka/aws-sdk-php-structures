@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $Arn
- * @property list<string>|null $Audiences
  * @property string|null $ChannelName
  * @property 'RUNNING'|'STOPPED'|null $ChannelState
  * @property \Aws\Api\DateTimeResult|null $CreationTime
@@ -17,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $Tags
  * @property string|null $Tier
  * @property Shapes\TimeShiftConfiguration|null $TimeShiftConfiguration
+ * @property list<string>|null $Audiences
  */
 class CreateChannelResponse extends Response
 {
