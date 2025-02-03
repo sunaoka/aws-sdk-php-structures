@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\WaypointOptimizationAvoidanceOptions|null $Avoid
+ * @property Shapes\WaypointOptimizationClusteringOptions|null $Clustering
  * @property string|null $DepartureTime
  * @property list<double>|null $Destination
  * @property Shapes\WaypointOptimizationDestinationOptions|null $DestinationOptions
@@ -25,6 +26,7 @@ class OptimizeWaypointsRequest extends Request
     /**
      * @param array{
      *     Avoid?: Shapes\WaypointOptimizationAvoidanceOptions|null,
+     *     Clustering?: Shapes\WaypointOptimizationClusteringOptions|null,
      *     DepartureTime?: string|null,
      *     Destination?: list<double>|null,
      *     DestinationOptions?: Shapes\WaypointOptimizationDestinationOptions|null,
