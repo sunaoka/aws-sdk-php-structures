@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property int $PercentEnabled
  * @property string $PlaybackConfigurationName
+ * @property list<'VENDED_LOGS'|'LEGACY_CLOUDWATCH'>|null $EnabledLoggingStrategies
  */
 class ConfigureLogsForPlaybackConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     PercentEnabled: int,
-     *     PlaybackConfigurationName: string
+     *     PlaybackConfigurationName: string,
+     *     EnabledLoggingStrategies?: list<'VENDED_LOGS'|'LEGACY_CLOUDWATCH'>|null
      * } $args
      */
     public function __construct(array $args)
