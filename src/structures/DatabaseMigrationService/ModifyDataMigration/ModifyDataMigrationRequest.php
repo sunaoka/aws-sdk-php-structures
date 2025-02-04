@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ServiceAccessRoleArn
  * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $DataMigrationType
  * @property list<Shapes\SourceDataSetting>|null $SourceDataSettings
+ * @property list<Shapes\TargetDataSetting>|null $TargetDataSettings
  * @property int|null $NumberOfJobs
  * @property string|null $SelectionRules
  */
@@ -24,6 +25,7 @@ class ModifyDataMigrationRequest extends Request
      *     ServiceAccessRoleArn?: string|null,
      *     DataMigrationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
      *     SourceDataSettings?: list<Shapes\SourceDataSetting>|null,
+     *     TargetDataSettings?: list<Shapes\TargetDataSetting>|null,
      *     NumberOfJobs?: int|null,
      *     SelectionRules?: string|null
      * } $args
