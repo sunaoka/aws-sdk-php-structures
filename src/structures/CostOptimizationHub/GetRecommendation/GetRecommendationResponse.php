@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property double|null $estimatedMonthlyCost
  * @property 'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'|null $implementationEffort
  * @property bool|null $restartNeeded
- * @property 'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'|null $actionType
+ * @property 'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'|'ScaleIn'|null $actionType
  * @property bool|null $rollbackPossible
  * @property Shapes\ResourceDetails|null $currentResourceDetails
  * @property Shapes\ResourceDetails|null $recommendedResourceDetails
