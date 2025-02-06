@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LayoutConfiguration|null $layoutConfiguration
  * @property string $name
  * @property list<Shapes\RequiredField>|null $requiredFields
+ * @property list<Shapes\TemplateRule>|null $rules
  * @property 'Active'|'Inactive' $status
  * @property array<string, string>|null $tags
  * @property string $templateArn

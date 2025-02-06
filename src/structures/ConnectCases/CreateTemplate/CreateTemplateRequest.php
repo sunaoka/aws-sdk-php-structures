@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LayoutConfiguration|null $layoutConfiguration
  * @property string $name
  * @property list<Shapes\RequiredField>|null $requiredFields
+ * @property list<Shapes\TemplateRule>|null $rules
  * @property 'Active'|'Inactive'|null $status
  */
 class CreateTemplateRequest extends Request
@@ -21,6 +22,7 @@ class CreateTemplateRequest extends Request
      *     layoutConfiguration?: Shapes\LayoutConfiguration|null,
      *     name: string,
      *     requiredFields?: list<Shapes\RequiredField>|null,
+     *     rules?: list<Shapes\TemplateRule>|null,
      *     status?: 'Active'|'Inactive'|null
      * } $args
      */
