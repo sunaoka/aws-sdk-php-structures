@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'BIT_8'|'BIT_10'|null $BitDepth
  * @property 'DISABLED'|'ENABLED'|null $FilmGrainSynthesis
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
  * @property int<1, 2147483647>|null $FramerateDenominator
  * @property int<1, 2147483647>|null $FramerateNumerator
  * @property double|null $GopSize
@@ -28,7 +28,7 @@ class Av1Settings extends Shape
      *     BitDepth?: 'BIT_8'|'BIT_10'|null,
      *     FilmGrainSynthesis?: 'DISABLED'|'ENABLED'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
      *     FramerateDenominator?: int<1, 2147483647>|null,
      *     FramerateNumerator?: int<1, 2147483647>|null,
      *     GopSize?: double|null,

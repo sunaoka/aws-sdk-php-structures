@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INCLUDE'|'SUPPRESS'|null $EndOfStreamMarkers
  * @property 'DISABLED'|'ENABLED'|null $FlickerAdaptiveQuantization
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
  * @property int<1, 2147483647>|null $FramerateDenominator
  * @property int<1, 2147483647>|null $FramerateNumerator
  * @property 'DISABLED'|'ENABLED'|null $GopBReference
@@ -65,7 +65,7 @@ class H265Settings extends Shape
      *     EndOfStreamMarkers?: 'INCLUDE'|'SUPPRESS'|null,
      *     FlickerAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
      *     FramerateDenominator?: int<1, 2147483647>|null,
      *     FramerateNumerator?: int<1, 2147483647>|null,
      *     GopBReference?: 'DISABLED'|'ENABLED'|null,

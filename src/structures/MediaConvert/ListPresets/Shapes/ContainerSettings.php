@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CmfcSettings|null $CmfcSettings
- * @property 'F4V'|'ISMV'|'M2TS'|'M3U8'|'CMFC'|'MOV'|'MP4'|'MPD'|'MXF'|'OGG'|'WEBM'|'RAW'|'Y4M'|null $Container
+ * @property 'F4V'|'GIF'|'ISMV'|'M2TS'|'M3U8'|'CMFC'|'MOV'|'MP4'|'MPD'|'MXF'|'OGG'|'WEBM'|'RAW'|'Y4M'|null $Container
  * @property F4vSettings|null $F4vSettings
  * @property M2tsSettings|null $M2tsSettings
  * @property M3u8Settings|null $M3u8Settings
@@ -20,7 +20,7 @@ class ContainerSettings extends Shape
     /**
      * @param array{
      *     CmfcSettings?: CmfcSettings|null,
-     *     Container?: 'F4V'|'ISMV'|'M2TS'|'M3U8'|'CMFC'|'MOV'|'MP4'|'MPD'|'MXF'|'OGG'|'WEBM'|'RAW'|'Y4M'|null,
+     *     Container?: 'F4V'|'GIF'|'ISMV'|'M2TS'|'M3U8'|'CMFC'|'MOV'|'MP4'|'MPD'|'MXF'|'OGG'|'WEBM'|'RAW'|'Y4M'|null,
      *     F4vSettings?: F4vSettings|null,
      *     M2tsSettings?: M2tsSettings|null,
      *     M3u8Settings?: M3u8Settings|null,
