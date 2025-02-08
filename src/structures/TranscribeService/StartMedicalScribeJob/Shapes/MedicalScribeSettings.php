@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VocabularyName
  * @property string|null $VocabularyFilterName
  * @property 'remove'|'mask'|'tag'|null $VocabularyFilterMethod
+ * @property ClinicalNoteGenerationSettings|null $ClinicalNoteGenerationSettings
  */
 class MedicalScribeSettings extends Shape
 {
@@ -21,7 +22,8 @@ class MedicalScribeSettings extends Shape
      *     ChannelIdentification?: bool|null,
      *     VocabularyName?: string|null,
      *     VocabularyFilterName?: string|null,
-     *     VocabularyFilterMethod?: 'remove'|'mask'|'tag'|null
+     *     VocabularyFilterMethod?: 'remove'|'mask'|'tag'|null,
+     *     ClinicalNoteGenerationSettings?: ClinicalNoteGenerationSettings|null
      * } $args
      */
     public function __construct(array $args = [])

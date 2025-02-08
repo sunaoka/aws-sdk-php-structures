@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PRESERVE_444_SAMPLING'|'SUBSAMPLE_TO_422'|null $ChromaSampling
  * @property 'APPLE_PRORES_422'|'APPLE_PRORES_422_HQ'|'APPLE_PRORES_422_LT'|'APPLE_PRORES_422_PROXY'|'APPLE_PRORES_4444'|'APPLE_PRORES_4444_XQ'|null $CodecProfile
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
  * @property int<1, 2147483647>|null $FramerateDenominator
  * @property int<1, 2147483647>|null $FramerateNumerator
  * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null $InterlaceMode
@@ -26,7 +26,7 @@ class ProresSettings extends Shape
      *     ChromaSampling?: 'PRESERVE_444_SAMPLING'|'SUBSAMPLE_TO_422'|null,
      *     CodecProfile?: 'APPLE_PRORES_422'|'APPLE_PRORES_422_HQ'|'APPLE_PRORES_422_LT'|'APPLE_PRORES_422_PROXY'|'APPLE_PRORES_4444'|'APPLE_PRORES_4444_XQ'|null,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
      *     FramerateDenominator?: int<1, 2147483647>|null,
      *     FramerateNumerator?: int<1, 2147483647>|null,
      *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null,
