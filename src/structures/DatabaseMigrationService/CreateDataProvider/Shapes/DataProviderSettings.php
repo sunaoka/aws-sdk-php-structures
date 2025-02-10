@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MicrosoftSqlServerDataProviderSettings|null $MicrosoftSqlServerSettings
  * @property DocDbDataProviderSettings|null $DocDbSettings
  * @property MariaDbDataProviderSettings|null $MariaDbSettings
+ * @property IbmDb2LuwDataProviderSettings|null $IbmDb2LuwSettings
+ * @property IbmDb2zOsDataProviderSettings|null $IbmDb2zOsSettings
  * @property MongoDbDataProviderSettings|null $MongoDbSettings
  */
 class DataProviderSettings extends Shape
@@ -25,6 +27,8 @@ class DataProviderSettings extends Shape
      *     MicrosoftSqlServerSettings?: MicrosoftSqlServerDataProviderSettings|null,
      *     DocDbSettings?: DocDbDataProviderSettings|null,
      *     MariaDbSettings?: MariaDbDataProviderSettings|null,
+     *     IbmDb2LuwSettings?: IbmDb2LuwDataProviderSettings|null,
+     *     IbmDb2zOsSettings?: IbmDb2zOsDataProviderSettings|null,
      *     MongoDbSettings?: MongoDbDataProviderSettings|null
      * } $args
      */
