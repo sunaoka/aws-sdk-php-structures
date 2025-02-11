@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'time-based'|'standard'|null $TransferType
  * @property int|null $CompletionDurationMinutes
  * @property \Aws\Api\DateTimeResult|null $CompletionTime
+ * @property int|null $FullSnapshotSizeInBytes
  * @property string|null $SnapshotId
  * @property string|null $VolumeId
  * @property 'pending'|'completed'|'error'|'recoverable'|'recovering'|null $State
@@ -42,6 +43,7 @@ class Snapshot extends Shape
      *     TransferType?: 'time-based'|'standard'|null,
      *     CompletionDurationMinutes?: int|null,
      *     CompletionTime?: \Aws\Api\DateTimeResult|null,
+     *     FullSnapshotSizeInBytes?: int|null,
      *     SnapshotId?: string|null,
      *     VolumeId?: string|null,
      *     State?: 'pending'|'completed'|'error'|'recoverable'|'recovering'|null,
