@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateVpcEndpoint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string>|null $addSecurityGroupIds
- * @property list<string>|null $addSubnetIds
- * @property string|null $clientToken
  * @property string $id
- * @property list<string>|null $removeSecurityGroupIds
+ * @property list<string>|null $addSubnetIds
  * @property list<string>|null $removeSubnetIds
+ * @property list<string>|null $addSecurityGroupIds
+ * @property list<string>|null $removeSecurityGroupIds
+ * @property string|null $clientToken
  */
 class UpdateVpcEndpointRequest extends Request
 {
     /**
      * @param array{
-     *     addSecurityGroupIds?: list<string>|null,
-     *     addSubnetIds?: list<string>|null,
-     *     clientToken?: string|null,
      *     id: string,
+     *     addSubnetIds?: list<string>|null,
+     *     removeSubnetIds?: list<string>|null,
+     *     addSecurityGroupIds?: list<string>|null,
      *     removeSecurityGroupIds?: list<string>|null,
-     *     removeSubnetIds?: list<string>|null
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

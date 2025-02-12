@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\CreateSecurityConfig;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
- * @property Shapes\CreateIamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
- * @property string $name
- * @property Shapes\SamlConfigOptions|null $samlOptions
  * @property 'saml'|'iamidentitycenter' $type
+ * @property string $name
+ * @property string|null $description
+ * @property Shapes\SamlConfigOptions|null $samlOptions
+ * @property Shapes\CreateIamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
+ * @property string|null $clientToken
  */
 class CreateSecurityConfigRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     description?: string|null,
-     *     iamIdentityCenterOptions?: Shapes\CreateIamIdentityCenterConfigOptions|null,
+     *     type: 'saml'|'iamidentitycenter',
      *     name: string,
+     *     description?: string|null,
      *     samlOptions?: Shapes\SamlConfigOptions|null,
-     *     type: 'saml'|'iamidentitycenter'
+     *     iamIdentityCenterOptions?: Shapes\CreateIamIdentityCenterConfigOptions|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

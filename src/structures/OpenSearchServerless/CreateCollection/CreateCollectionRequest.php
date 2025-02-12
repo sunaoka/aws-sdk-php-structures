@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\CreateCollection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
  * @property string $name
- * @property 'ENABLED'|'DISABLED'|null $standbyReplicas
- * @property list<Shapes\Tag>|null $tags
  * @property 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null $type
+ * @property string|null $description
+ * @property list<Shapes\Tag>|null $tags
+ * @property 'ENABLED'|'DISABLED'|null $standbyReplicas
+ * @property string|null $clientToken
  */
 class CreateCollectionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     description?: string|null,
      *     name: string,
-     *     standbyReplicas?: 'ENABLED'|'DISABLED'|null,
+     *     type?: 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null,
+     *     description?: string|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     type?: 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null
+     *     standbyReplicas?: 'ENABLED'|'DISABLED'|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\ListSecurityPolicies;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 100>|null $maxResults
- * @property string|null $nextToken
- * @property list<string>|null $resource
  * @property 'encryption'|'network' $type
+ * @property list<string>|null $resource
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListSecurityPoliciesRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null,
+     *     type: 'encryption'|'network',
      *     resource?: list<string>|null,
-     *     type: 'encryption'|'network'
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

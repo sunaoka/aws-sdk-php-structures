@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property Document|null $additionalModelRequestFields
  * @property string|null $basePromptTemplate
  * @property string|null $foundationModel
  * @property InferenceConfiguration|null $inferenceConfiguration
@@ -17,6 +18,7 @@ class PromptConfiguration extends Shape
 {
     /**
      * @param array{
+     *     additionalModelRequestFields?: Document|null,
      *     basePromptTemplate?: string|null,
      *     foundationModel?: string|null,
      *     inferenceConfiguration?: InferenceConfiguration|null,

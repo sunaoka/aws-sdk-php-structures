@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\DeleteSecurityPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string $name
  * @property 'encryption'|'network' $type
+ * @property string $name
+ * @property string|null $clientToken
  */
 class DeleteSecurityPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
+     *     type: 'encryption'|'network',
      *     name: string,
-     *     type: 'encryption'|'network'
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\BatchGetEffectiveLifecycle
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $noMinRetentionPeriod
- * @property string|null $policyName
+ * @property 'retention'|null $type
  * @property string|null $resource
+ * @property string|null $policyName
  * @property 'index'|null $resourceType
  * @property string|null $retentionPeriod
- * @property 'retention'|null $type
+ * @property bool|null $noMinRetentionPeriod
  */
 class EffectiveLifecyclePolicyDetail extends Shape
 {
     /**
      * @param array{
-     *     noMinRetentionPeriod?: bool|null,
-     *     policyName?: string|null,
+     *     type?: 'retention'|null,
      *     resource?: string|null,
+     *     policyName?: string|null,
      *     resourceType?: 'index'|null,
      *     retentionPeriod?: string|null,
-     *     type?: 'retention'|null
+     *     noMinRetentionPeriod?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

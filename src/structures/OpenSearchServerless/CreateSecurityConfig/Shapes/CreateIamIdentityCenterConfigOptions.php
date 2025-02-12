@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\CreateSecurityConfig\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GroupId'|'GroupName'|null $groupAttribute
  * @property string $instanceArn
  * @property 'UserId'|'UserName'|'Email'|null $userAttribute
+ * @property 'GroupId'|'GroupName'|null $groupAttribute
  */
 class CreateIamIdentityCenterConfigOptions extends Shape
 {
     /**
      * @param array{
-     *     groupAttribute?: 'GroupId'|'GroupName'|null,
      *     instanceArn: string,
-     *     userAttribute?: 'UserId'|'UserName'|'Email'|null
+     *     userAttribute?: 'UserId'|'UserName'|'Email'|null,
+     *     groupAttribute?: 'GroupId'|'GroupName'|null
      * } $args
      */
     public function __construct(array $args)

@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET' $TargetResourceType
  * @property double $Threshold
  * @property 'notBreaching'|'breaching'|'ignore'|'missing' $TreatMissingData
+ * @property string|null $RequestId
  */
 class CreateCloudWatchAlarmTemplateRequest extends Request
 {
@@ -35,7 +36,8 @@ class CreateCloudWatchAlarmTemplateRequest extends Request
      *     Tags?: array<string, string>|null,
      *     TargetResourceType: 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET',
      *     Threshold: double,
-     *     TreatMissingData: 'notBreaching'|'breaching'|'ignore'|'missing'
+     *     TreatMissingData: 'notBreaching'|'breaching'|'ignore'|'missing',
+     *     RequestId?: string|null
      * } $args
      */
     public function __construct(array $args)
