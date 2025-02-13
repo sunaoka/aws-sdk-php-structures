@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $EnableSSMAccess
  * @property ProductionVariantManagedInstanceScaling|null $ManagedInstanceScaling
  * @property ProductionVariantRoutingConfig|null $RoutingConfig
- * @property 'al2-ami-sagemaker-inference-gpu-2'|null $InferenceAmiVersion
+ * @property 'al2-ami-sagemaker-inference-gpu-2'|'al2-ami-sagemaker-inference-gpu-2-1'|'al2-ami-sagemaker-inference-gpu-3-1'|null $InferenceAmiVersion
  */
 class ProductionVariant extends Shape
 {
@@ -39,7 +39,7 @@ class ProductionVariant extends Shape
      *     EnableSSMAccess?: bool|null,
      *     ManagedInstanceScaling?: ProductionVariantManagedInstanceScaling|null,
      *     RoutingConfig?: ProductionVariantRoutingConfig|null,
-     *     InferenceAmiVersion?: 'al2-ami-sagemaker-inference-gpu-2'|null
+     *     InferenceAmiVersion?: 'al2-ami-sagemaker-inference-gpu-2'|'al2-ami-sagemaker-inference-gpu-2-1'|'al2-ami-sagemaker-inference-gpu-3-1'|null
      * } $args
      */
     public function __construct(array $args)
