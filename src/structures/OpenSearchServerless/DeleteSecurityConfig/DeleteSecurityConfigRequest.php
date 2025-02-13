@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\DeleteSecurityConfig;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $id
+ * @property string|null $clientToken
  */
 class DeleteSecurityConfigRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     id: string
+     *     id: string,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

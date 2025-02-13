@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\GetSecurityConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $configVersion
- * @property int|null $createdDate
- * @property string|null $description
- * @property IamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
  * @property string|null $id
- * @property int|null $lastModifiedDate
- * @property SamlConfigOptions|null $samlOptions
  * @property 'saml'|'iamidentitycenter'|null $type
+ * @property string|null $configVersion
+ * @property string|null $description
+ * @property SamlConfigOptions|null $samlOptions
+ * @property IamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
+ * @property int|null $createdDate
+ * @property int|null $lastModifiedDate
  */
 class SecurityConfigDetail extends Shape
 {
     /**
      * @param array{
-     *     configVersion?: string|null,
-     *     createdDate?: int|null,
-     *     description?: string|null,
-     *     iamIdentityCenterOptions?: IamIdentityCenterConfigOptions|null,
      *     id?: string|null,
-     *     lastModifiedDate?: int|null,
+     *     type?: 'saml'|'iamidentitycenter'|null,
+     *     configVersion?: string|null,
+     *     description?: string|null,
      *     samlOptions?: SamlConfigOptions|null,
-     *     type?: 'saml'|'iamidentitycenter'|null
+     *     iamIdentityCenterOptions?: IamIdentityCenterConfigOptions|null,
+     *     createdDate?: int|null,
+     *     lastModifiedDate?: int|null
      * } $args
      */
     public function __construct(array $args = [])
