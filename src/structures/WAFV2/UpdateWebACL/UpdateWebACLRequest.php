@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property list<Shapes\Rule>|null $Rules
  * @property Shapes\VisibilityConfig $VisibilityConfig
+ * @property Shapes\DataProtectionConfig|null $DataProtectionConfig
  * @property string $LockToken
  * @property array<string, Shapes\CustomResponseBody>|null $CustomResponseBodies
  * @property Shapes\CaptchaConfig|null $CaptchaConfig
@@ -30,6 +31,7 @@ class UpdateWebACLRequest extends Request
      *     Description?: string|null,
      *     Rules?: list<Shapes\Rule>|null,
      *     VisibilityConfig: Shapes\VisibilityConfig,
+     *     DataProtectionConfig?: Shapes\DataProtectionConfig|null,
      *     LockToken: string,
      *     CustomResponseBodies?: array<string, Shapes\CustomResponseBody>|null,
      *     CaptchaConfig?: Shapes\CaptchaConfig|null,

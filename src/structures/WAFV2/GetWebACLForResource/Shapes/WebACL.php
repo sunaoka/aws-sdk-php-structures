@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property list<Rule>|null $Rules
  * @property VisibilityConfig $VisibilityConfig
+ * @property DataProtectionConfig|null $DataProtectionConfig
  * @property int<0, max>|null $Capacity
  * @property list<FirewallManagerRuleGroup>|null $PreProcessFirewallManagerRuleGroups
  * @property list<FirewallManagerRuleGroup>|null $PostProcessFirewallManagerRuleGroups
@@ -35,6 +36,7 @@ class WebACL extends Shape
      *     Description?: string|null,
      *     Rules?: list<Rule>|null,
      *     VisibilityConfig: VisibilityConfig,
+     *     DataProtectionConfig?: DataProtectionConfig|null,
      *     Capacity?: int<0, max>|null,
      *     PreProcessFirewallManagerRuleGroups?: list<FirewallManagerRuleGroup>|null,
      *     PostProcessFirewallManagerRuleGroups?: list<FirewallManagerRuleGroup>|null,

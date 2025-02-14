@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ContentEncoding
  * @property string|null $ContentLanguage
  * @property string|null $ContentType
+ * @property string|null $ContentRange
  * @property \Aws\Api\DateTimeResult|null $Expires
  * @property string|null $WebsiteRedirectLocation
  * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
