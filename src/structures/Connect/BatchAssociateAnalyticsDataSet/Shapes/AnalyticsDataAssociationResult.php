@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TargetAccountId
  * @property string|null $ResourceShareId
  * @property string|null $ResourceShareArn
+ * @property string|null $ResourceShareStatus
  */
 class AnalyticsDataAssociationResult extends Shape
 {
@@ -17,7 +18,8 @@ class AnalyticsDataAssociationResult extends Shape
      *     DataSetId?: string|null,
      *     TargetAccountId?: string|null,
      *     ResourceShareId?: string|null,
-     *     ResourceShareArn?: string|null
+     *     ResourceShareArn?: string|null,
+     *     ResourceShareStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

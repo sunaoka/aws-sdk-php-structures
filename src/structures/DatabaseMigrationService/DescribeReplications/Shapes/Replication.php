@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $ReplicationType
  * @property string|null $Status
  * @property ProvisionData|null $ProvisionData
+ * @property list<PremigrationAssessmentStatus>|null $PremigrationAssessmentStatuses
  * @property string|null $StopReason
  * @property list<string>|null $FailureMessages
  * @property ReplicationStats|null $ReplicationStats
@@ -36,6 +37,7 @@ class Replication extends Shape
      *     ReplicationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
      *     Status?: string|null,
      *     ProvisionData?: ProvisionData|null,
+     *     PremigrationAssessmentStatuses?: list<PremigrationAssessmentStatus>|null,
      *     StopReason?: string|null,
      *     FailureMessages?: list<string>|null,
      *     ReplicationStats?: ReplicationStats|null,

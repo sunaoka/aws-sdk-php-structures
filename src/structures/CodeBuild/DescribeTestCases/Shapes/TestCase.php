@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $durationInNanoSeconds
  * @property string|null $message
  * @property \Aws\Api\DateTimeResult|null $expired
+ * @property string|null $testSuiteName
  */
 class TestCase extends Shape
 {
@@ -25,7 +26,8 @@ class TestCase extends Shape
      *     status?: string|null,
      *     durationInNanoSeconds?: int|null,
      *     message?: string|null,
-     *     expired?: \Aws\Api\DateTimeResult|null
+     *     expired?: \Aws\Api\DateTimeResult|null,
+     *     testSuiteName?: string|null
      * } $args
      */
     public function __construct(array $args = [])
