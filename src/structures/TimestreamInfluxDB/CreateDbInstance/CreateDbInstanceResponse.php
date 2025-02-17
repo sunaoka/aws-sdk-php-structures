@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'IPV4'|'DUAL'|null $networkType
  * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|null $dbInstanceType
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
- * @property int<20, 16384>|null $allocatedStorage
+ * @property int<20, 15360>|null $allocatedStorage
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null $deploymentType
  * @property list<string> $vpcSubnetIds
  * @property bool|null $publiclyAccessible
@@ -24,6 +24,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $secondaryAvailabilityZone
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
  * @property string|null $influxAuthParametersSecretArn
+ * @property string|null $dbClusterId
+ * @property 'PRIMARY'|'STANDBY'|'REPLICA'|null $instanceMode
  */
 class CreateDbInstanceResponse extends Response
 {

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|null $dbInstanceType
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null $deploymentType
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
- * @property int<20, 16384>|null $allocatedStorage
+ * @property int<20, 15360>|null $allocatedStorage
  */
 class UpdateDbInstanceRequest extends Request
 {
@@ -25,7 +25,7 @@ class UpdateDbInstanceRequest extends Request
      *     dbInstanceType?: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|null,
      *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null,
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null,
-     *     allocatedStorage?: int<20, 16384>|null
+     *     allocatedStorage?: int<20, 15360>|null
      * } $args
      */
     public function __construct(array $args)

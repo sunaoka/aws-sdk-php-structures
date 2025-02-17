@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $sourceBranch
  * @property string|null $backendEnvironmentArn
  * @property Backend|null $backend
+ * @property string|null $computeRoleArn
  */
 class Branch extends Shape
 {
@@ -65,7 +66,8 @@ class Branch extends Shape
      *     destinationBranch?: string|null,
      *     sourceBranch?: string|null,
      *     backendEnvironmentArn?: string|null,
-     *     backend?: Backend|null
+     *     backend?: Backend|null,
+     *     computeRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)
