@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'IPV4'|'DUAL'|null $networkType
  * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|null $dbInstanceType
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
- * @property int<20, 16384>|null $allocatedStorage
+ * @property int<20, 15360>|null $allocatedStorage
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null $deploymentType
  */
 class DbInstanceSummary extends Shape
@@ -30,7 +30,7 @@ class DbInstanceSummary extends Shape
      *     networkType?: 'IPV4'|'DUAL'|null,
      *     dbInstanceType?: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|null,
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null,
-     *     allocatedStorage?: int<20, 16384>|null,
+     *     allocatedStorage?: int<20, 15360>|null,
      *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null
      * } $args
      */

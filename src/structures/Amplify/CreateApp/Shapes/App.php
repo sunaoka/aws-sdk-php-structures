@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE' $platform
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
+ * @property string|null $computeRoleArn
  * @property string|null $iamServiceRoleArn
  * @property array<string, string> $environmentVariables
  * @property string $defaultDomain
@@ -46,6 +47,7 @@ class App extends Shape
      *     platform: 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE',
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
+     *     computeRoleArn?: string|null,
      *     iamServiceRoleArn?: string|null,
      *     environmentVariables: array<string, string>,
      *     defaultDomain: string,

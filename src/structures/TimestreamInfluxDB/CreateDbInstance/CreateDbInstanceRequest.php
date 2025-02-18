@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $vpcSecurityGroupIds
  * @property bool|null $publiclyAccessible
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
- * @property int<20, 16384> $allocatedStorage
+ * @property int<20, 15360> $allocatedStorage
  * @property string|null $dbParameterGroupIdentifier
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null $deploymentType
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
@@ -37,7 +37,7 @@ class CreateDbInstanceRequest extends Request
      *     vpcSecurityGroupIds: list<string>,
      *     publiclyAccessible?: bool|null,
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null,
-     *     allocatedStorage: int<20, 16384>,
+     *     allocatedStorage: int<20, 15360>,
      *     dbParameterGroupIdentifier?: string|null,
      *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null,
      *     logDeliveryConfiguration?: Shapes\LogDeliveryConfiguration|null,

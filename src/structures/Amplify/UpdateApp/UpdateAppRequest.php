@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $name
  * @property string|null $description
  * @property 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE'|null $platform
+ * @property string|null $computeRoleArn
  * @property string|null $iamServiceRoleArn
  * @property array<string, string>|null $environmentVariables
  * @property bool|null $enableBranchAutoBuild
@@ -34,6 +35,7 @@ class UpdateAppRequest extends Request
      *     name?: string|null,
      *     description?: string|null,
      *     platform?: 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE'|null,
+     *     computeRoleArn?: string|null,
      *     iamServiceRoleArn?: string|null,
      *     environmentVariables?: array<string, string>|null,
      *     enableBranchAutoBuild?: bool|null,
