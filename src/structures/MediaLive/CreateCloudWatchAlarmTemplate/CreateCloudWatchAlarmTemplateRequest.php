@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<10, 86400> $Period
  * @property 'SampleCount'|'Average'|'Sum'|'Minimum'|'Maximum' $Statistic
  * @property array<string, string>|null $Tags
- * @property 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET' $TargetResourceType
+ * @property 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET'|'MEDIATAILOR_PLAYBACK_CONFIGURATION' $TargetResourceType
  * @property double $Threshold
  * @property 'notBreaching'|'breaching'|'ignore'|'missing' $TreatMissingData
  * @property string|null $RequestId
@@ -34,7 +34,7 @@ class CreateCloudWatchAlarmTemplateRequest extends Request
      *     Period: int<10, 86400>,
      *     Statistic: 'SampleCount'|'Average'|'Sum'|'Minimum'|'Maximum',
      *     Tags?: array<string, string>|null,
-     *     TargetResourceType: 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET',
+     *     TargetResourceType: 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET'|'MEDIATAILOR_PLAYBACK_CONFIGURATION',
      *     Threshold: double,
      *     TreatMissingData: 'notBreaching'|'breaching'|'ignore'|'missing',
      *     RequestId?: string|null

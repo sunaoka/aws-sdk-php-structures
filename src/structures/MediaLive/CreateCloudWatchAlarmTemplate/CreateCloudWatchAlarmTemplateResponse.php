@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<10, 86400>|null $Period
  * @property 'SampleCount'|'Average'|'Sum'|'Minimum'|'Maximum'|null $Statistic
  * @property array<string, string>|null $Tags
- * @property 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET'|null $TargetResourceType
+ * @property 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET'|'MEDIATAILOR_PLAYBACK_CONFIGURATION'|null $TargetResourceType
  * @property double|null $Threshold
  * @property 'notBreaching'|'breaching'|'ignore'|'missing'|null $TreatMissingData
  */
