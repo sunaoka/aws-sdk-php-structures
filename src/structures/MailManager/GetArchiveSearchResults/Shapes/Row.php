@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ReceivedTimestamp
  * @property string|null $SenderHostname
  * @property string|null $SenderIpAddress
+ * @property string|null $SourceArn
  * @property string|null $Subject
  * @property string|null $To
  * @property string|null $XMailer
@@ -41,6 +42,7 @@ class Row extends Shape
      *     ReceivedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     SenderHostname?: string|null,
      *     SenderIpAddress?: string|null,
+     *     SourceArn?: string|null,
      *     Subject?: string|null,
      *     To?: string|null,
      *     XMailer?: string|null,
