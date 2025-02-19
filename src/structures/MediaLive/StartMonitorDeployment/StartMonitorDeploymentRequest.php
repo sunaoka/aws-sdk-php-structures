@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool|null $DryRun
  * @property string $Identifier
- * @property string|null $RequestId
  */
 class StartMonitorDeploymentRequest extends Request
 {
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     Identifier: string,
-     *     RequestId?: string|null
+     *     Identifier: string
      * } $args
      */
     public function __construct(array $args)
