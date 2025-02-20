@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 60>|null $idleDisconnectTimeoutInMinutes
  * @property 'Disabled'|'Enabled'|null $pasteAllowed
  * @property 'Disabled'|'Enabled'|null $printAllowed
+ * @property Shapes\ToolbarConfiguration|null $toolbarConfiguration
  * @property 'Disabled'|'Enabled'|null $uploadAllowed
  * @property string $userSettingsArn
  */
@@ -30,6 +31,7 @@ class UpdateUserSettingsRequest extends Request
      *     idleDisconnectTimeoutInMinutes?: int<0, 60>|null,
      *     pasteAllowed?: 'Disabled'|'Enabled'|null,
      *     printAllowed?: 'Disabled'|'Enabled'|null,
+     *     toolbarConfiguration?: Shapes\ToolbarConfiguration|null,
      *     uploadAllowed?: 'Disabled'|'Enabled'|null,
      *     userSettingsArn: string
      * } $args

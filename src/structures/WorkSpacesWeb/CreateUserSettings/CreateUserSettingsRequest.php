@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Disabled'|'Enabled' $pasteAllowed
  * @property 'Disabled'|'Enabled' $printAllowed
  * @property list<Shapes\Tag>|null $tags
+ * @property Shapes\ToolbarConfiguration|null $toolbarConfiguration
  * @property 'Disabled'|'Enabled' $uploadAllowed
  */
 class CreateUserSettingsRequest extends Request
@@ -35,6 +36,7 @@ class CreateUserSettingsRequest extends Request
      *     pasteAllowed: 'Disabled'|'Enabled',
      *     printAllowed: 'Disabled'|'Enabled',
      *     tags?: list<Shapes\Tag>|null,
+     *     toolbarConfiguration?: Shapes\ToolbarConfiguration|null,
      *     uploadAllowed: 'Disabled'|'Enabled'
      * } $args
      */
