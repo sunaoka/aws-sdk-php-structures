@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\SuppressionOptions|null $SuppressionOptions
  * @property Shapes\VdmOptions|null $VdmOptions
+ * @property Shapes\ArchivingOptions|null $ArchivingOptions
  */
 class GetConfigurationSetResponse extends Response
 {

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FirewallId
  * @property list<Tag>|null $Tags
  * @property EncryptionConfiguration|null $EncryptionConfiguration
+ * @property list<'TLS_SNI'|'HTTP_HOST'>|null $EnabledAnalysisTypes
  */
 class Firewall extends Shape
 {
@@ -33,7 +34,8 @@ class Firewall extends Shape
      *     Description?: string|null,
      *     FirewallId: string,
      *     Tags?: list<Tag>|null,
-     *     EncryptionConfiguration?: EncryptionConfiguration|null
+     *     EncryptionConfiguration?: EncryptionConfiguration|null,
+     *     EnabledAnalysisTypes?: list<'TLS_SNI'|'HTTP_HOST'>|null
      * } $args
      */
     public function __construct(array $args)
