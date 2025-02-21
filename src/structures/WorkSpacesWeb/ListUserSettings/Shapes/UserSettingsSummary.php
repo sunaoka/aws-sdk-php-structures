@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 60>|null $idleDisconnectTimeoutInMinutes
  * @property 'Disabled'|'Enabled'|null $pasteAllowed
  * @property 'Disabled'|'Enabled'|null $printAllowed
+ * @property ToolbarConfiguration|null $toolbarConfiguration
  * @property 'Disabled'|'Enabled'|null $uploadAllowed
  * @property string $userSettingsArn
  */
@@ -28,6 +29,7 @@ class UserSettingsSummary extends Shape
      *     idleDisconnectTimeoutInMinutes?: int<0, 60>|null,
      *     pasteAllowed?: 'Disabled'|'Enabled'|null,
      *     printAllowed?: 'Disabled'|'Enabled'|null,
+     *     toolbarConfiguration?: ToolbarConfiguration|null,
      *     uploadAllowed?: 'Disabled'|'Enabled'|null,
      *     userSettingsArn: string
      * } $args
