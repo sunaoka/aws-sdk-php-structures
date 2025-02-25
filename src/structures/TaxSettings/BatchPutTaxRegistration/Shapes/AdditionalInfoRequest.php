@@ -6,8 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CanadaAdditionalInfo|null $canadaAdditionalInfo
+ * @property EgyptAdditionalInfo|null $egyptAdditionalInfo
  * @property EstoniaAdditionalInfo|null $estoniaAdditionalInfo
  * @property GeorgiaAdditionalInfo|null $georgiaAdditionalInfo
+ * @property GreeceAdditionalInfo|null $greeceAdditionalInfo
  * @property IsraelAdditionalInfo|null $israelAdditionalInfo
  * @property ItalyAdditionalInfo|null $italyAdditionalInfo
  * @property KenyaAdditionalInfo|null $kenyaAdditionalInfo
@@ -19,14 +21,17 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SpainAdditionalInfo|null $spainAdditionalInfo
  * @property TurkeyAdditionalInfo|null $turkeyAdditionalInfo
  * @property UkraineAdditionalInfo|null $ukraineAdditionalInfo
+ * @property VietnamAdditionalInfo|null $vietnamAdditionalInfo
  */
 class AdditionalInfoRequest extends Shape
 {
     /**
      * @param array{
      *     canadaAdditionalInfo?: CanadaAdditionalInfo|null,
+     *     egyptAdditionalInfo?: EgyptAdditionalInfo|null,
      *     estoniaAdditionalInfo?: EstoniaAdditionalInfo|null,
      *     georgiaAdditionalInfo?: GeorgiaAdditionalInfo|null,
+     *     greeceAdditionalInfo?: GreeceAdditionalInfo|null,
      *     israelAdditionalInfo?: IsraelAdditionalInfo|null,
      *     italyAdditionalInfo?: ItalyAdditionalInfo|null,
      *     kenyaAdditionalInfo?: KenyaAdditionalInfo|null,
@@ -37,7 +42,8 @@ class AdditionalInfoRequest extends Shape
      *     southKoreaAdditionalInfo?: SouthKoreaAdditionalInfo|null,
      *     spainAdditionalInfo?: SpainAdditionalInfo|null,
      *     turkeyAdditionalInfo?: TurkeyAdditionalInfo|null,
-     *     ukraineAdditionalInfo?: UkraineAdditionalInfo|null
+     *     ukraineAdditionalInfo?: UkraineAdditionalInfo|null,
+     *     vietnamAdditionalInfo?: VietnamAdditionalInfo|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DestinationOutpostArn
  * @property bool|null $CopyImageTags
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property int|null $SnapshotCopyCompletionDurationMinutes
  * @property bool|null $DryRun
  */
 class CopyImageRequest extends Request
@@ -31,6 +32,7 @@ class CopyImageRequest extends Request
      *     DestinationOutpostArn?: string|null,
      *     CopyImageTags?: bool|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     SnapshotCopyCompletionDurationMinutes?: int|null,
      *     DryRun?: bool|null
      * } $args
      */

@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProjectBuildBatchConfig|null $buildBatchConfig
  * @property list<BuildGroup>|null $buildGroups
  * @property bool|null $debugSessionEnabled
+ * @property list<string>|null $reportArns
  */
 class BuildBatch extends Shape
 {
@@ -69,7 +70,8 @@ class BuildBatch extends Shape
      *     fileSystemLocations?: list<ProjectFileSystemLocation>|null,
      *     buildBatchConfig?: ProjectBuildBatchConfig|null,
      *     buildGroups?: list<BuildGroup>|null,
-     *     debugSessionEnabled?: bool|null
+     *     debugSessionEnabled?: bool|null,
+     *     reportArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])
