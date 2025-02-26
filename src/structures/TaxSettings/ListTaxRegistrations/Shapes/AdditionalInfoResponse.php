@@ -7,8 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property BrazilAdditionalInfo|null $brazilAdditionalInfo
  * @property CanadaAdditionalInfo|null $canadaAdditionalInfo
+ * @property EgyptAdditionalInfo|null $egyptAdditionalInfo
  * @property EstoniaAdditionalInfo|null $estoniaAdditionalInfo
  * @property GeorgiaAdditionalInfo|null $georgiaAdditionalInfo
+ * @property GreeceAdditionalInfo|null $greeceAdditionalInfo
  * @property IndiaAdditionalInfo|null $indiaAdditionalInfo
  * @property IsraelAdditionalInfo|null $israelAdditionalInfo
  * @property ItalyAdditionalInfo|null $italyAdditionalInfo
@@ -21,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SpainAdditionalInfo|null $spainAdditionalInfo
  * @property TurkeyAdditionalInfo|null $turkeyAdditionalInfo
  * @property UkraineAdditionalInfo|null $ukraineAdditionalInfo
+ * @property VietnamAdditionalInfo|null $vietnamAdditionalInfo
  */
 class AdditionalInfoResponse extends Shape
 {
@@ -28,8 +31,10 @@ class AdditionalInfoResponse extends Shape
      * @param array{
      *     brazilAdditionalInfo?: BrazilAdditionalInfo|null,
      *     canadaAdditionalInfo?: CanadaAdditionalInfo|null,
+     *     egyptAdditionalInfo?: EgyptAdditionalInfo|null,
      *     estoniaAdditionalInfo?: EstoniaAdditionalInfo|null,
      *     georgiaAdditionalInfo?: GeorgiaAdditionalInfo|null,
+     *     greeceAdditionalInfo?: GreeceAdditionalInfo|null,
      *     indiaAdditionalInfo?: IndiaAdditionalInfo|null,
      *     israelAdditionalInfo?: IsraelAdditionalInfo|null,
      *     italyAdditionalInfo?: ItalyAdditionalInfo|null,
@@ -41,7 +46,8 @@ class AdditionalInfoResponse extends Shape
      *     southKoreaAdditionalInfo?: SouthKoreaAdditionalInfo|null,
      *     spainAdditionalInfo?: SpainAdditionalInfo|null,
      *     turkeyAdditionalInfo?: TurkeyAdditionalInfo|null,
-     *     ukraineAdditionalInfo?: UkraineAdditionalInfo|null
+     *     ukraineAdditionalInfo?: UkraineAdditionalInfo|null,
+     *     vietnamAdditionalInfo?: VietnamAdditionalInfo|null
      * } $args
      */
     public function __construct(array $args = [])

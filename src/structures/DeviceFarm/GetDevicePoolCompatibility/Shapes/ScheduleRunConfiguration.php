@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $locale
  * @property Location|null $location
  * @property list<string>|null $vpceConfigurationArns
+ * @property DeviceProxy|null $deviceProxy
  * @property CustomerArtifactPaths|null $customerArtifactPaths
  * @property Radios|null $radios
  * @property list<string>|null $auxiliaryApps
@@ -24,6 +25,7 @@ class ScheduleRunConfiguration extends Shape
      *     locale?: string|null,
      *     location?: Location|null,
      *     vpceConfigurationArns?: list<string>|null,
+     *     deviceProxy?: DeviceProxy|null,
      *     customerArtifactPaths?: CustomerArtifactPaths|null,
      *     radios?: Radios|null,
      *     auxiliaryApps?: list<string>|null,

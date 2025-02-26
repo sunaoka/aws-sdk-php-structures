@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'METERED'|'UNMETERED'|null $billingMethod
  * @property DeviceMinutes|null $deviceMinutes
  * @property NetworkProfile|null $networkProfile
+ * @property DeviceProxy|null $deviceProxy
  * @property string|null $parsingResultUrl
  * @property 'PARSING_FAILED'|'VPC_ENDPOINT_SETUP_FAILED'|null $resultCode
  * @property int|null $seed
@@ -58,6 +59,7 @@ class Run extends Shape
      *     billingMethod?: 'METERED'|'UNMETERED'|null,
      *     deviceMinutes?: DeviceMinutes|null,
      *     networkProfile?: NetworkProfile|null,
+     *     deviceProxy?: DeviceProxy|null,
      *     parsingResultUrl?: string|null,
      *     resultCode?: 'PARSING_FAILED'|'VPC_ENDPOINT_SETUP_FAILED'|null,
      *     seed?: int|null,
