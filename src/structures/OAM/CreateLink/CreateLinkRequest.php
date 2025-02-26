@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LabelTemplate
  * @property Shapes\LinkConfiguration|null $LinkConfiguration
- * @property list<'AWS::CloudWatch::Metric'|'AWS::Logs::LogGroup'|'AWS::XRay::Trace'|'AWS::ApplicationInsights::Application'|'AWS::InternetMonitor::Monitor'> $ResourceTypes
+ * @property list<'AWS::CloudWatch::Metric'|'AWS::Logs::LogGroup'|'AWS::XRay::Trace'|'AWS::ApplicationInsights::Application'|'AWS::InternetMonitor::Monitor'|'AWS::ApplicationSignals::Service'|'AWS::ApplicationSignals::ServiceLevelObjective'> $ResourceTypes
  * @property string $SinkIdentifier
  * @property array<string, string>|null $Tags
  */
@@ -17,7 +17,7 @@ class CreateLinkRequest extends Request
      * @param array{
      *     LabelTemplate: string,
      *     LinkConfiguration?: Shapes\LinkConfiguration|null,
-     *     ResourceTypes: list<'AWS::CloudWatch::Metric'|'AWS::Logs::LogGroup'|'AWS::XRay::Trace'|'AWS::ApplicationInsights::Application'|'AWS::InternetMonitor::Monitor'>,
+     *     ResourceTypes: list<'AWS::CloudWatch::Metric'|'AWS::Logs::LogGroup'|'AWS::XRay::Trace'|'AWS::ApplicationInsights::Application'|'AWS::InternetMonitor::Monitor'|'AWS::ApplicationSignals::Service'|'AWS::ApplicationSignals::ServiceLevelObjective'>,
      *     SinkIdentifier: string,
      *     Tags?: array<string, string>|null
      * } $args

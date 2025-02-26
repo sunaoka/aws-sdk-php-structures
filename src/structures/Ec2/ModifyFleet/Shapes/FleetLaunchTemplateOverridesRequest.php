@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $WeightedCapacity
  * @property double|null $Priority
  * @property Placement|null $Placement
+ * @property list<FleetBlockDeviceMappingRequest>|null $BlockDeviceMappings
  * @property InstanceRequirementsRequest|null $InstanceRequirements
  * @property string|null $ImageId
  */
@@ -26,6 +27,7 @@ class FleetLaunchTemplateOverridesRequest extends Shape
      *     WeightedCapacity?: double|null,
      *     Priority?: double|null,
      *     Placement?: Placement|null,
+     *     BlockDeviceMappings?: list<FleetBlockDeviceMappingRequest>|null,
      *     InstanceRequirements?: InstanceRequirementsRequest|null,
      *     ImageId?: string|null
      * } $args

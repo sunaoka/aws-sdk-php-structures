@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $instanceTypes
  * @property EcsProperties|null $ecsProperties
  * @property EksProperties|null $eksProperties
+ * @property ConsumableResourceProperties|null $consumableResourceProperties
  */
 class NodeRangeProperty extends Shape
 {
@@ -19,7 +20,8 @@ class NodeRangeProperty extends Shape
      *     container?: ContainerProperties|null,
      *     instanceTypes?: list<string>|null,
      *     ecsProperties?: EcsProperties|null,
-     *     eksProperties?: EksProperties|null
+     *     eksProperties?: EksProperties|null,
+     *     consumableResourceProperties?: ConsumableResourceProperties|null
      * } $args
      */
     public function __construct(array $args)

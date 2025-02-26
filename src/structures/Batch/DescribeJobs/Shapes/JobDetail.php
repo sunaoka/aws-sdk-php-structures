@@ -34,6 +34,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EcsPropertiesDetail|null $ecsProperties
  * @property bool|null $isCancelled
  * @property bool|null $isTerminated
+ * @property ConsumableResourceProperties|null $consumableResourceProperties
  */
 class JobDetail extends Shape
 {
@@ -67,7 +68,8 @@ class JobDetail extends Shape
      *     eksAttempts?: list<EksAttemptDetail>|null,
      *     ecsProperties?: EcsPropertiesDetail|null,
      *     isCancelled?: bool|null,
-     *     isTerminated?: bool|null
+     *     isTerminated?: bool|null,
+     *     consumableResourceProperties?: ConsumableResourceProperties|null
      * } $args
      */
     public function __construct(array $args)
