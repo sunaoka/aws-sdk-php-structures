@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DocumentSchemaVersion
  * @property string|null $HubContentDisplayName
  * @property string|null $HubContentDescription
- * @property 'Supported'|'Deprecated'|null $SupportStatus
+ * @property 'Supported'|'Deprecated'|'Restricted'|null $SupportStatus
  * @property list<string>|null $HubContentSearchKeywords
  * @property 'Available'|'Importing'|'Deleting'|'ImportFailed'|'DeleteFailed' $HubContentStatus
  * @property \Aws\Api\DateTimeResult $CreationTime
@@ -31,7 +31,7 @@ class HubContentInfo extends Shape
      *     DocumentSchemaVersion: string,
      *     HubContentDisplayName?: string|null,
      *     HubContentDescription?: string|null,
-     *     SupportStatus?: 'Supported'|'Deprecated'|null,
+     *     SupportStatus?: 'Supported'|'Deprecated'|'Restricted'|null,
      *     HubContentSearchKeywords?: list<string>|null,
      *     HubContentStatus: 'Available'|'Importing'|'Deleting'|'ImportFailed'|'DeleteFailed',
      *     CreationTime: \Aws\Api\DateTimeResult,

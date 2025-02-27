@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $HubContentDescription
  * @property string|null $HubContentMarkdown
  * @property string $HubContentDocument
+ * @property 'Supported'|'Deprecated'|'Restricted'|null $SupportStatus
  * @property list<string>|null $HubContentSearchKeywords
  * @property list<Shapes\Tag>|null $Tags
  */
@@ -30,6 +31,7 @@ class ImportHubContentRequest extends Request
      *     HubContentDescription?: string|null,
      *     HubContentMarkdown?: string|null,
      *     HubContentDocument: string,
+     *     SupportStatus?: 'Supported'|'Deprecated'|'Restricted'|null,
      *     HubContentSearchKeywords?: list<string>|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
