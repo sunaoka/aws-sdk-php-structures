@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ENABLED'|'DISABLED' $state
- * @property list<'VIDEO_SUMMARY'|'SCENE_SUMMARY'|'IAB'>|null $types
+ * @property list<'VIDEO_SUMMARY'|'IAB'|'CHAPTER_SUMMARY'>|null $types
  */
 class VideoStandardGenerativeField extends Shape
 {
     /**
      * @param array{
      *     state: 'ENABLED'|'DISABLED',
-     *     types?: list<'VIDEO_SUMMARY'|'SCENE_SUMMARY'|'IAB'>|null
+     *     types?: list<'VIDEO_SUMMARY'|'IAB'|'CHAPTER_SUMMARY'>|null
      * } $args
      */
     public function __construct(array $args)

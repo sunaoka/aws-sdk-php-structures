@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OverrideConfiguration|null $overrideConfiguration
  * @property string|null $clientToken
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDataAutomationProjectRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateDataAutomationProjectRequest extends Request
      *     customOutputConfiguration?: Shapes\CustomOutputConfiguration|null,
      *     overrideConfiguration?: Shapes\OverrideConfiguration|null,
      *     clientToken?: string|null,
-     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

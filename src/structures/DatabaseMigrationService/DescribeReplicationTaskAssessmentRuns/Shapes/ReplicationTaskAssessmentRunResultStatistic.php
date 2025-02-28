@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Error
  * @property int|null $Warning
  * @property int|null $Cancelled
+ * @property int|null $Skipped
  */
 class ReplicationTaskAssessmentRunResultStatistic extends Shape
 {
@@ -19,7 +20,8 @@ class ReplicationTaskAssessmentRunResultStatistic extends Shape
      *     Failed?: int|null,
      *     Error?: int|null,
      *     Warning?: int|null,
-     *     Cancelled?: int|null
+     *     Cancelled?: int|null,
+     *     Skipped?: int|null
      * } $args
      */
     public function __construct(array $args = [])
