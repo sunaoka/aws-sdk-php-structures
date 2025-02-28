@@ -18,12 +18,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $maxCapacity
  * @property string|null $namespaceName
  * @property string|null $patchVersion
+ * @property string|null $pendingTrackName
  * @property int|null $port
  * @property PerformanceTarget|null $pricePerformanceTarget
  * @property bool|null $publiclyAccessible
  * @property list<string>|null $securityGroupIds
  * @property 'CREATING'|'AVAILABLE'|'MODIFYING'|'DELETING'|null $status
  * @property list<string>|null $subnetIds
+ * @property string|null $trackName
  * @property string|null $workgroupArn
  * @property string|null $workgroupId
  * @property string|null $workgroupName
@@ -46,12 +48,14 @@ class Workgroup extends Shape
      *     maxCapacity?: int|null,
      *     namespaceName?: string|null,
      *     patchVersion?: string|null,
+     *     pendingTrackName?: string|null,
      *     port?: int|null,
      *     pricePerformanceTarget?: PerformanceTarget|null,
      *     publiclyAccessible?: bool|null,
      *     securityGroupIds?: list<string>|null,
      *     status?: 'CREATING'|'AVAILABLE'|'MODIFYING'|'DELETING'|null,
      *     subnetIds?: list<string>|null,
+     *     trackName?: string|null,
      *     workgroupArn?: string|null,
      *     workgroupId?: string|null,
      *     workgroupName?: string|null,

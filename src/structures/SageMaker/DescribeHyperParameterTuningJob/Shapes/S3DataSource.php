@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FullyReplicated'|'ShardedByS3Key'|null $S3DataDistributionType
  * @property list<string>|null $AttributeNames
  * @property list<string>|null $InstanceGroupNames
+ * @property ModelAccessConfig|null $ModelAccessConfig
+ * @property HubAccessConfig|null $HubAccessConfig
  */
 class S3DataSource extends Shape
 {
@@ -19,7 +21,9 @@ class S3DataSource extends Shape
      *     S3Uri: string,
      *     S3DataDistributionType?: 'FullyReplicated'|'ShardedByS3Key'|null,
      *     AttributeNames?: list<string>|null,
-     *     InstanceGroupNames?: list<string>|null
+     *     InstanceGroupNames?: list<string>|null,
+     *     ModelAccessConfig?: ModelAccessConfig|null,
+     *     HubAccessConfig?: HubAccessConfig|null
      * } $args
      */
     public function __construct(array $args)
