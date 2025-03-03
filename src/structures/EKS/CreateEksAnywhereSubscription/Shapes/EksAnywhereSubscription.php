@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $status
  * @property bool|null $autoRenew
  * @property list<string>|null $licenseArns
+ * @property list<License>|null $licenses
  * @property array<string, string>|null $tags
  */
 class EksAnywhereSubscription extends Shape
@@ -33,6 +34,7 @@ class EksAnywhereSubscription extends Shape
      *     status?: string|null,
      *     autoRenew?: bool|null,
      *     licenseArns?: list<string>|null,
+     *     licenses?: list<License>|null,
      *     tags?: array<string, string>|null
      * } $args
      */

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $schema
  * @property string|null $clientToken
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateBlueprintRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateBlueprintRequest extends Request
      *     blueprintStage?: 'DEVELOPMENT'|'LIVE'|null,
      *     schema: string,
      *     clientToken?: string|null,
-     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

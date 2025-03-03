@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 8192>|null $maximumLength
+ * @property int<0, max>|null $maximumLength
  * @property list<string>|null $stopSequences
  * @property float|null $temperature
  * @property int<0, 500>|null $topK
@@ -15,7 +15,7 @@ class InferenceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     maximumLength?: int<0, 8192>|null,
+     *     maximumLength?: int<0, max>|null,
      *     stopSequences?: list<string>|null,
      *     temperature?: float|null,
      *     topK?: int<0, 500>|null,

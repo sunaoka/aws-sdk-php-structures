@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
  * @property Shapes\NotificationConfiguration|null $notificationConfiguration
  * @property list<Shapes\Blueprint>|null $blueprints
+ * @property string $dataAutomationProfileArn
+ * @property list<Shapes\Tag>|null $tags
  */
 class InvokeDataAutomationAsyncRequest extends Request
 {
@@ -23,7 +25,9 @@ class InvokeDataAutomationAsyncRequest extends Request
      *     dataAutomationConfiguration?: Shapes\DataAutomationConfiguration|null,
      *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null,
      *     notificationConfiguration?: Shapes\NotificationConfiguration|null,
-     *     blueprints?: list<Shapes\Blueprint>|null
+     *     blueprints?: list<Shapes\Blueprint>|null,
+     *     dataAutomationProfileArn: string,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)
