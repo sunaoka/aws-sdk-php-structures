@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<VpcIpv6CidrBlockAssociation>|null $Ipv6CidrBlockAssociationSet
  * @property list<VpcCidrBlockAssociation>|null $CidrBlockAssociationSet
  * @property bool|null $IsDefault
+ * @property VpcEncryptionControl|null $EncryptionControl
  * @property list<Tag>|null $Tags
  * @property BlockPublicAccessStates|null $BlockPublicAccessStates
  * @property string|null $VpcId
@@ -26,6 +27,7 @@ class Vpc extends Shape
      *     Ipv6CidrBlockAssociationSet?: list<VpcIpv6CidrBlockAssociation>|null,
      *     CidrBlockAssociationSet?: list<VpcCidrBlockAssociation>|null,
      *     IsDefault?: bool|null,
+     *     EncryptionControl?: VpcEncryptionControl|null,
      *     Tags?: list<Tag>|null,
      *     BlockPublicAccessStates?: BlockPublicAccessStates|null,
      *     VpcId?: string|null,
