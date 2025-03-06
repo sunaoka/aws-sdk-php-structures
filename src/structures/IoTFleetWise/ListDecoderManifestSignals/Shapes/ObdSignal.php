@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 8> $byteLength
  * @property int<0, max>|null $bitRightShift
  * @property int<1, 8>|null $bitMaskLength
- * @property bool|null $isSigned
- * @property 'INTEGER'|'FLOATING_POINT'|null $signalValueType
  */
 class ObdSignal extends Shape
 {
@@ -29,9 +27,7 @@ class ObdSignal extends Shape
      *     startByte: int<0, max>,
      *     byteLength: int<1, 8>,
      *     bitRightShift?: int<0, max>|null,
-     *     bitMaskLength?: int<1, 8>|null,
-     *     isSigned?: bool|null,
-     *     signalValueType?: 'INTEGER'|'FLOATING_POINT'|null
+     *     bitMaskLength?: int<1, 8>|null
      * } $args
      */
     public function __construct(array $args)
