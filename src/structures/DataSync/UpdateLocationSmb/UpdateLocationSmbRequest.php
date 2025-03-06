@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LocationArn
  * @property string|null $Subdirectory
+ * @property string|null $ServerHostname
  * @property string|null $User
  * @property string|null $Domain
  * @property string|null $Password
@@ -24,6 +25,7 @@ class UpdateLocationSmbRequest extends Request
      * @param array{
      *     LocationArn: string,
      *     Subdirectory?: string|null,
+     *     ServerHostname?: string|null,
      *     User?: string|null,
      *     Domain?: string|null,
      *     Password?: string|null,

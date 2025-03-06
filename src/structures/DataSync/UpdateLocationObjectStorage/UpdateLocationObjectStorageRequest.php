@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 65536>|null $ServerPort
  * @property 'HTTPS'|'HTTP'|null $ServerProtocol
  * @property string|null $Subdirectory
+ * @property string|null $ServerHostname
  * @property string|null $AccessKey
  * @property string|null $SecretKey
  * @property list<string>|null $AgentArns
@@ -22,6 +23,7 @@ class UpdateLocationObjectStorageRequest extends Request
      *     ServerPort?: int<1, 65536>|null,
      *     ServerProtocol?: 'HTTPS'|'HTTP'|null,
      *     Subdirectory?: string|null,
+     *     ServerHostname?: string|null,
      *     AccessKey?: string|null,
      *     SecretKey?: string|null,
      *     AgentArns?: list<string>|null,
