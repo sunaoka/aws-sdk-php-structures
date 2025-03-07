@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SelfservicePermissions|null $SelfservicePermissions
  * @property SamlProperties|null $SamlProperties
  * @property CertificateBasedAuthProperties|null $CertificateBasedAuthProperties
+ * @property 'STANDARD_TLS'|'FIPS_VALIDATED'|null $EndpointEncryptionMode
  * @property MicrosoftEntraConfig|null $MicrosoftEntraConfig
  * @property string|null $WorkspaceDirectoryName
  * @property string|null $WorkspaceDirectoryDescription
@@ -55,6 +56,7 @@ class WorkspaceDirectory extends Shape
      *     SelfservicePermissions?: SelfservicePermissions|null,
      *     SamlProperties?: SamlProperties|null,
      *     CertificateBasedAuthProperties?: CertificateBasedAuthProperties|null,
+     *     EndpointEncryptionMode?: 'STANDARD_TLS'|'FIPS_VALIDATED'|null,
      *     MicrosoftEntraConfig?: MicrosoftEntraConfig|null,
      *     WorkspaceDirectoryName?: string|null,
      *     WorkspaceDirectoryDescription?: string|null,
