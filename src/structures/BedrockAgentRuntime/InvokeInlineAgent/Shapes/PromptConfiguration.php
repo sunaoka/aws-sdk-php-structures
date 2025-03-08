@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property Document|null $additionalModelRequestFields
  * @property string|null $basePromptTemplate
+ * @property string|null $foundationModel
  * @property InferenceConfiguration|null $inferenceConfiguration
  * @property 'DEFAULT'|'OVERRIDDEN'|null $parserMode
  * @property 'DEFAULT'|'OVERRIDDEN'|null $promptCreationMode
@@ -19,6 +20,7 @@ class PromptConfiguration extends Shape
      * @param array{
      *     additionalModelRequestFields?: Document|null,
      *     basePromptTemplate?: string|null,
+     *     foundationModel?: string|null,
      *     inferenceConfiguration?: InferenceConfiguration|null,
      *     parserMode?: 'DEFAULT'|'OVERRIDDEN'|null,
      *     promptCreationMode?: 'DEFAULT'|'OVERRIDDEN'|null,
