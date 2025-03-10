@@ -14,7 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\APISchema|null $apiSchema
  * @property string|null $description
  * @property Shapes\FunctionSchema|null $functionSchema
- * @property 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|null $parentActionGroupSignature
+ * @property 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|'ANTHROPIC.Computer'|'ANTHROPIC.Bash'|'ANTHROPIC.TextEditor'|null $parentActionGroupSignature
+ * @property array<string, string>|null $parentActionGroupSignatureParams
  */
 class UpdateAgentActionGroupRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdateAgentActionGroupRequest extends Request
      *     apiSchema?: Shapes\APISchema|null,
      *     description?: string|null,
      *     functionSchema?: Shapes\FunctionSchema|null,
-     *     parentActionGroupSignature?: 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|null
+     *     parentActionGroupSignature?: 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|'ANTHROPIC.Computer'|'ANTHROPIC.Bash'|'ANTHROPIC.TextEditor'|null,
+     *     parentActionGroupSignatureParams?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string|null $Description
  * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
+ * @property string|null $PreviousContactId
  */
 class CreateContactRequest extends Request
 {
@@ -35,7 +36,8 @@ class CreateContactRequest extends Request
      *     InitiateAs?: 'CONNECTED_TO_USER'|null,
      *     Name?: string|null,
      *     Description?: string|null,
-     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
+     *     PreviousContactId?: string|null
      * } $args
      */
     public function __construct(array $args)

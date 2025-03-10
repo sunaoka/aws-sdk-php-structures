@@ -10,7 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property APISchema|null $apiSchema
  * @property string|null $description
  * @property FunctionSchema|null $functionSchema
- * @property 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|null $parentActionGroupSignature
+ * @property 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|'ANTHROPIC.Computer'|'ANTHROPIC.Bash'|'ANTHROPIC.TextEditor'|null $parentActionGroupSignature
+ * @property array<string, string>|null $parentActionGroupSignatureParams
  */
 class AgentActionGroup extends Shape
 {
@@ -21,7 +22,8 @@ class AgentActionGroup extends Shape
      *     apiSchema?: APISchema|null,
      *     description?: string|null,
      *     functionSchema?: FunctionSchema|null,
-     *     parentActionGroupSignature?: 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|null
+     *     parentActionGroupSignature?: 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|'ANTHROPIC.Computer'|'ANTHROPIC.Bash'|'ANTHROPIC.TextEditor'|null,
+     *     parentActionGroupSignatureParams?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)
