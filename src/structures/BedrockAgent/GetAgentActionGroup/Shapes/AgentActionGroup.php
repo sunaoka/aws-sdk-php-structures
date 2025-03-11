@@ -16,7 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
  * @property FunctionSchema|null $functionSchema
- * @property 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|null $parentActionSignature
+ * @property array<string, string>|null $parentActionGroupSignatureParams
+ * @property 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|'ANTHROPIC.Computer'|'ANTHROPIC.Bash'|'ANTHROPIC.TextEditor'|null $parentActionSignature
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class AgentActionGroup extends Shape
@@ -34,7 +35,8 @@ class AgentActionGroup extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     description?: string|null,
      *     functionSchema?: FunctionSchema|null,
-     *     parentActionSignature?: 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|null,
+     *     parentActionGroupSignatureParams?: array<string, string>|null,
+     *     parentActionSignature?: 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|'ANTHROPIC.Computer'|'ANTHROPIC.Bash'|'ANTHROPIC.TextEditor'|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */
