@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ZoneType
  * @property string|null $ParentZoneName
  * @property string|null $ParentZoneId
+ * @property string|null $GroupLongName
  * @property 'available'|'information'|'impaired'|'unavailable'|'constrained'|null $State
  */
 class AvailabilityZone extends Shape
@@ -31,6 +32,7 @@ class AvailabilityZone extends Shape
      *     ZoneType?: string|null,
      *     ParentZoneName?: string|null,
      *     ParentZoneId?: string|null,
+     *     GroupLongName?: string|null,
      *     State?: 'available'|'information'|'impaired'|'unavailable'|'constrained'|null
      * } $args
      */

@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $registryId
  * @property string $ecrRepositoryPrefix
- * @property string $credentialArn
+ * @property string|null $credentialArn
+ * @property string|null $customRoleArn
  */
 class UpdatePullThroughCacheRuleRequest extends Request
 {
@@ -15,7 +16,8 @@ class UpdatePullThroughCacheRuleRequest extends Request
      * @param array{
      *     registryId?: string|null,
      *     ecrRepositoryPrefix: string,
-     *     credentialArn: string
+     *     credentialArn?: string|null,
+     *     customRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)
