@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $domainId
  * @property list<Shapes\ConfigurableEnvironmentAction>|null $environmentActions
  * @property string|null $environmentBlueprintId
+ * @property string|null $environmentConfigurationId
  * @property string|null $environmentProfileId
  * @property list<string>|null $glossaryTerms
  * @property string|null $id

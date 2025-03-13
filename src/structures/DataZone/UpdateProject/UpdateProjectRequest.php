@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $glossaryTerms
  * @property string $identifier
  * @property string|null $name
+ * @property string|null $projectProfileVersion
+ * @property list<Shapes\EnvironmentConfigurationUserParameter>|null $userParameters
  */
 class UpdateProjectRequest extends Request
 {
@@ -21,7 +23,9 @@ class UpdateProjectRequest extends Request
      *     environmentDeploymentDetails?: Shapes\EnvironmentDeploymentDetails|null,
      *     glossaryTerms?: list<string>|null,
      *     identifier: string,
-     *     name?: string|null
+     *     name?: string|null,
+     *     projectProfileVersion?: string|null,
+     *     userParameters?: list<Shapes\EnvironmentConfigurationUserParameter>|null
      * } $args
      */
     public function __construct(array $args)

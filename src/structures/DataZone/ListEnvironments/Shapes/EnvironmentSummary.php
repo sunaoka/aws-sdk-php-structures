@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $createdBy
  * @property string|null $description
  * @property string $domainId
+ * @property string|null $environmentConfigurationId
  * @property string|null $environmentProfileId
  * @property string|null $id
  * @property string $name
@@ -29,6 +30,7 @@ class EnvironmentSummary extends Shape
      *     createdBy: string,
      *     description?: string|null,
      *     domainId: string,
+     *     environmentConfigurationId?: string|null,
      *     environmentProfileId?: string|null,
      *     id?: string|null,
      *     name: string,

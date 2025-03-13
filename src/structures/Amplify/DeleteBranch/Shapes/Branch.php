@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property array<string, string> $environmentVariables
  * @property bool $enableAutoBuild
+ * @property bool|null $enableSkewProtection
  * @property list<string> $customDomains
  * @property string $framework
  * @property string $activeJobId
@@ -50,6 +51,7 @@ class Branch extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     environmentVariables: array<string, string>,
      *     enableAutoBuild: bool,
+     *     enableSkewProtection?: bool|null,
      *     customDomains: list<string>,
      *     framework: string,
      *     activeJobId: string,
