@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CatalogPropertiesOutput|null $CatalogProperties
  * @property list<PrincipalPermissions>|null $CreateTableDefaultPermissions
  * @property list<PrincipalPermissions>|null $CreateDatabaseDefaultPermissions
+ * @property 'True'|'False'|null $AllowFullTableExternalDataAccess
  */
 class Catalog extends Shape
 {
@@ -33,7 +34,8 @@ class Catalog extends Shape
      *     FederatedCatalog?: FederatedCatalog|null,
      *     CatalogProperties?: CatalogPropertiesOutput|null,
      *     CreateTableDefaultPermissions?: list<PrincipalPermissions>|null,
-     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>|null
+     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>|null,
+     *     AllowFullTableExternalDataAccess?: 'True'|'False'|null
      * } $args
      */
     public function __construct(array $args)
