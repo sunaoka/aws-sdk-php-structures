@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'PRODUCTION'|'BETA'|'DEVELOPMENT'|'EXPERIMENTAL'|'PULL_REQUEST'|null $stage
  * @property bool|null $enableNotification
  * @property bool|null $enableAutoBuild
+ * @property bool|null $enableSkewProtection
  * @property array<string, string>|null $environmentVariables
  * @property string|null $basicAuthCredentials
  * @property bool|null $enableBasicAuth
@@ -36,6 +37,7 @@ class UpdateBranchRequest extends Request
      *     stage?: 'PRODUCTION'|'BETA'|'DEVELOPMENT'|'EXPERIMENTAL'|'PULL_REQUEST'|null,
      *     enableNotification?: bool|null,
      *     enableAutoBuild?: bool|null,
+     *     enableSkewProtection?: bool|null,
      *     environmentVariables?: array<string, string>|null,
      *     basicAuthCredentials?: string|null,
      *     enableBasicAuth?: bool|null,

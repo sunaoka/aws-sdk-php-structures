@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\Segment $Segment
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $ModifiedAt
+ * @property \Aws\Api\DateTimeResult|null $ResetAt
  * @property string|null $Description
  * @property int|null $StartoverWindowSeconds
  * @property list<Shapes\GetHlsManifestConfiguration>|null $HlsManifests

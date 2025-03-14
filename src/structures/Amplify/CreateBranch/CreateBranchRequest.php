@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $framework
  * @property bool|null $enableNotification
  * @property bool|null $enableAutoBuild
+ * @property bool|null $enableSkewProtection
  * @property array<string, string>|null $environmentVariables
  * @property string|null $basicAuthCredentials
  * @property bool|null $enableBasicAuth
@@ -37,6 +38,7 @@ class CreateBranchRequest extends Request
      *     framework?: string|null,
      *     enableNotification?: bool|null,
      *     enableAutoBuild?: bool|null,
+     *     enableSkewProtection?: bool|null,
      *     environmentVariables?: array<string, string>|null,
      *     basicAuthCredentials?: string|null,
      *     enableBasicAuth?: bool|null,

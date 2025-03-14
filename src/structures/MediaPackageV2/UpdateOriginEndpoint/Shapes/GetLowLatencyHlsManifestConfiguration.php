@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ScteHls|null $ScteHls
  * @property FilterConfiguration|null $FilterConfiguration
  * @property StartTag|null $StartTag
+ * @property bool|null $UrlEncodeChildManifest
  */
 class GetLowLatencyHlsManifestConfiguration extends Shape
 {
@@ -25,7 +26,8 @@ class GetLowLatencyHlsManifestConfiguration extends Shape
      *     ProgramDateTimeIntervalSeconds?: int|null,
      *     ScteHls?: ScteHls|null,
      *     FilterConfiguration?: FilterConfiguration|null,
-     *     StartTag?: StartTag|null
+     *     StartTag?: StartTag|null,
+     *     UrlEncodeChildManifest?: bool|null
      * } $args
      */
     public function __construct(array $args)

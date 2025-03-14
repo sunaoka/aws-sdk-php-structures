@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property string $name
  * @property string|null $projectProfileId
- * @property 'ACTIVE'|'DELETING'|'DELETE_FAILED'|null $projectStatus
+ * @property 'ACTIVE'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|null $projectStatus
  * @property list<Shapes\EnvironmentConfigurationUserParameter>|null $userParameters
  */
 class UpdateProjectResponse extends Response
