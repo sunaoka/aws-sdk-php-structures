@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RoleArn
  * @property bool|null $WithFederation
  * @property bool|null $HybridAccessEnabled
+ * @property bool|null $WithPrivilegedAccess
  */
 class RegisterResourceRequest extends Request
 {
@@ -19,7 +20,8 @@ class RegisterResourceRequest extends Request
      *     UseServiceLinkedRole?: bool|null,
      *     RoleArn?: string|null,
      *     WithFederation?: bool|null,
-     *     HybridAccessEnabled?: bool|null
+     *     HybridAccessEnabled?: bool|null,
+     *     WithPrivilegedAccess?: bool|null
      * } $args
      */
     public function __construct(array $args)
