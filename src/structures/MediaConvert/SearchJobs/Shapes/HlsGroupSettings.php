@@ -30,7 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $ProgressiveWriteHlsManifest
  * @property 'SINGLE_FILE'|'SEGMENTED_FILES'|null $SegmentControl
  * @property int<1, 2147483647>|null $SegmentLength
- * @property 'EXACT'|'GOP_MULTIPLE'|null $SegmentLengthControl
+ * @property 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null $SegmentLengthControl
  * @property int<1, 2147483647>|null $SegmentsPerSubdirectory
  * @property 'INCLUDE'|'EXCLUDE'|null $StreamInfResolution
  * @property 'LEGACY'|'SPEC_COMPLIANT'|null $TargetDurationCompatibilityMode
@@ -67,7 +67,7 @@ class HlsGroupSettings extends Shape
      *     ProgressiveWriteHlsManifest?: 'ENABLED'|'DISABLED'|null,
      *     SegmentControl?: 'SINGLE_FILE'|'SEGMENTED_FILES'|null,
      *     SegmentLength?: int<1, 2147483647>|null,
-     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|null,
+     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null,
      *     SegmentsPerSubdirectory?: int<1, 2147483647>|null,
      *     StreamInfResolution?: 'INCLUDE'|'EXCLUDE'|null,
      *     TargetDurationCompatibilityMode?: 'LEGACY'|'SPEC_COMPLIANT'|null,

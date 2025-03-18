@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $membershipArn
  * @property DataEncryptionMetadata|null $dataEncryptionMetadata
  * @property 'ENABLED'|'DISABLED' $queryLogStatus
+ * @property 'ENABLED'|'DISABLED'|null $jobLogStatus
  * @property 'SPARK'|'CLEAN_ROOMS_SQL'|null $analyticsEngine
  */
 class Collaboration extends Shape
@@ -37,6 +38,7 @@ class Collaboration extends Shape
      *     membershipArn?: string|null,
      *     dataEncryptionMetadata?: DataEncryptionMetadata|null,
      *     queryLogStatus: 'ENABLED'|'DISABLED',
+     *     jobLogStatus?: 'ENABLED'|'DISABLED'|null,
      *     analyticsEngine?: 'SPARK'|'CLEAN_ROOMS_SQL'|null
      * } $args
      */

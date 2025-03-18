@@ -26,7 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ZERO_BASED'|'MATCH_INITIAL_PTS'|null $PtsOffsetHandlingForBFrames
  * @property 'SINGLE_FILE'|'SEGMENTED_FILES'|null $SegmentControl
  * @property int<1, 2147483647>|null $SegmentLength
- * @property 'EXACT'|'GOP_MULTIPLE'|null $SegmentLengthControl
+ * @property 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null $SegmentLengthControl
  * @property 'INCLUDE'|'EXCLUDE'|null $StreamInfResolution
  * @property 'LEGACY'|'SPEC_COMPLIANT'|null $TargetDurationCompatibilityMode
  * @property 'SIGNED'|'UNSIGNED'|null $VideoCompositionOffsets
@@ -59,7 +59,7 @@ class CmafGroupSettings extends Shape
      *     PtsOffsetHandlingForBFrames?: 'ZERO_BASED'|'MATCH_INITIAL_PTS'|null,
      *     SegmentControl?: 'SINGLE_FILE'|'SEGMENTED_FILES'|null,
      *     SegmentLength?: int<1, 2147483647>|null,
-     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|null,
+     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null,
      *     StreamInfResolution?: 'INCLUDE'|'EXCLUDE'|null,
      *     TargetDurationCompatibilityMode?: 'LEGACY'|'SPEC_COMPLIANT'|null,
      *     VideoCompositionOffsets?: 'SIGNED'|'UNSIGNED'|null,

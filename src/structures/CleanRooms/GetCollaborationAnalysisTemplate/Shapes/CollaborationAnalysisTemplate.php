@@ -15,8 +15,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property AnalysisSchema $schema
- * @property 'SQL' $format
- * @property AnalysisSource $source
+ * @property 'SQL'|'PYSPARK_1_0' $format
+ * @property AnalysisSource|null $source
+ * @property AnalysisSourceMetadata|null $sourceMetadata
  * @property list<AnalysisParameter>|null $analysisParameters
  * @property list<AnalysisTemplateValidationStatusDetail>|null $validations
  */
@@ -34,8 +35,9 @@ class CollaborationAnalysisTemplate extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     schema: AnalysisSchema,
-     *     format: 'SQL',
-     *     source: AnalysisSource,
+     *     format: 'SQL'|'PYSPARK_1_0',
+     *     source?: AnalysisSource|null,
+     *     sourceMetadata?: AnalysisSourceMetadata|null,
      *     analysisParameters?: list<AnalysisParameter>|null,
      *     validations?: list<AnalysisTemplateValidationStatusDetail>|null
      * } $args
