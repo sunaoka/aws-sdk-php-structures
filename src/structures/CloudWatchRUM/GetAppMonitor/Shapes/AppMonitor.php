@@ -9,7 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Created
  * @property CustomEvents|null $CustomEvents
  * @property DataStorage|null $DataStorage
+ * @property DeobfuscationConfiguration|null $DeobfuscationConfiguration
  * @property string|null $Domain
+ * @property list<string>|null $DomainList
  * @property string|null $Id
  * @property string|null $LastModified
  * @property string|null $Name
@@ -24,7 +26,9 @@ class AppMonitor extends Shape
      *     Created?: string|null,
      *     CustomEvents?: CustomEvents|null,
      *     DataStorage?: DataStorage|null,
+     *     DeobfuscationConfiguration?: DeobfuscationConfiguration|null,
      *     Domain?: string|null,
+     *     DomainList?: list<string>|null,
      *     Id?: string|null,
      *     LastModified?: string|null,
      *     Name?: string|null,
