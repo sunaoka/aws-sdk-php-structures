@@ -24,7 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ZERO_BASED'|'MATCH_INITIAL_PTS'|null $PtsOffsetHandlingForBFrames
  * @property 'SINGLE_FILE'|'SEGMENTED_FILES'|null $SegmentControl
  * @property int<1, 2147483647>|null $SegmentLength
- * @property 'EXACT'|'GOP_MULTIPLE'|null $SegmentLengthControl
+ * @property 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null $SegmentLengthControl
  * @property 'SIGNED'|'UNSIGNED'|null $VideoCompositionOffsets
  * @property 'ENABLED'|'DISABLED'|null $WriteSegmentTimelineInRepresentation
  */
@@ -51,7 +51,7 @@ class DashIsoGroupSettings extends Shape
      *     PtsOffsetHandlingForBFrames?: 'ZERO_BASED'|'MATCH_INITIAL_PTS'|null,
      *     SegmentControl?: 'SINGLE_FILE'|'SEGMENTED_FILES'|null,
      *     SegmentLength?: int<1, 2147483647>|null,
-     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|null,
+     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null,
      *     VideoCompositionOffsets?: 'SIGNED'|'UNSIGNED'|null,
      *     WriteSegmentTimelineInRepresentation?: 'ENABLED'|'DISABLED'|null
      * } $args
