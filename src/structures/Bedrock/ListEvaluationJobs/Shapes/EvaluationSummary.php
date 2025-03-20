@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $modelIdentifiers
  * @property list<string>|null $ragIdentifiers
  * @property list<string>|null $evaluatorModelIdentifiers
+ * @property EvaluationInferenceConfigSummary|null $inferenceConfigSummary
  * @property 'ModelEvaluation'|'RagEvaluation'|null $applicationType
  */
 class EvaluationSummary extends Shape
@@ -29,6 +30,7 @@ class EvaluationSummary extends Shape
      *     modelIdentifiers?: list<string>|null,
      *     ragIdentifiers?: list<string>|null,
      *     evaluatorModelIdentifiers?: list<string>|null,
+     *     inferenceConfigSummary?: EvaluationInferenceConfigSummary|null,
      *     applicationType?: 'ModelEvaluation'|'RagEvaluation'|null
      * } $args
      */

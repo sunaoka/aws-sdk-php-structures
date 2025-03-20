@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<MediaStreamSourceConfigurationRequest>|null $MediaStreamSourceConfigurations
  * @property int|null $MinLatency
  * @property string|null $Name
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
  * @property int|null $SenderControlPort
  * @property string|null $SenderIpAddress
  * @property string|null $SourceListenerAddress
@@ -39,7 +39,7 @@ class SetSourceRequest extends Shape
      *     MediaStreamSourceConfigurations?: list<MediaStreamSourceConfigurationRequest>|null,
      *     MinLatency?: int|null,
      *     Name?: string|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null,
      *     SenderControlPort?: int|null,
      *     SenderIpAddress?: string|null,
      *     SourceListenerAddress?: string|null,

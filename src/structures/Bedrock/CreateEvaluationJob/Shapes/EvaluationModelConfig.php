@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property EvaluationBedrockModel|null $bedrockModel
+ * @property EvaluationPrecomputedInferenceSource|null $precomputedInferenceSource
  */
 class EvaluationModelConfig extends Shape
 {
     /**
-     * @param array{bedrockModel?: EvaluationBedrockModel|null} $args
+     * @param array{
+     *     bedrockModel?: EvaluationBedrockModel|null,
+     *     precomputedInferenceSource?: EvaluationPrecomputedInferenceSource|null
+     * } $args
      */
     public function __construct(array $args = [])
     {
