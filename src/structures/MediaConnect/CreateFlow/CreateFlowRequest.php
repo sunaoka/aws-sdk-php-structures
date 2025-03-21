@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\VpcInterfaceRequest>|null $VpcInterfaces
  * @property Shapes\AddMaintenance|null $Maintenance
  * @property Shapes\MonitoringConfig|null $SourceMonitoringConfig
+ * @property 'MEDIUM'|'LARGE'|null $FlowSize
+ * @property Shapes\NdiConfig|null $NdiConfig
  */
 class CreateFlowRequest extends Request
 {
@@ -31,7 +33,9 @@ class CreateFlowRequest extends Request
      *     Sources?: list<Shapes\SetSourceRequest>|null,
      *     VpcInterfaces?: list<Shapes\VpcInterfaceRequest>|null,
      *     Maintenance?: Shapes\AddMaintenance|null,
-     *     SourceMonitoringConfig?: Shapes\MonitoringConfig|null
+     *     SourceMonitoringConfig?: Shapes\MonitoringConfig|null,
+     *     FlowSize?: 'MEDIUM'|'LARGE'|null,
+     *     NdiConfig?: Shapes\NdiConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MulticastSourceSettings|null $MulticastSourceSettings
  * @property string|null $NetworkName
  * @property int|null $Port
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
  */
 class UpdateBridgeNetworkSourceRequest extends Shape
 {
@@ -19,7 +19,7 @@ class UpdateBridgeNetworkSourceRequest extends Shape
      *     MulticastSourceSettings?: MulticastSourceSettings|null,
      *     NetworkName?: string|null,
      *     Port?: int|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $MinLatency
  * @property string $OutputArn
  * @property int|null $Port
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
  * @property string|null $RemoteId
  * @property int|null $SenderControlPort
  * @property string|null $SenderIpAddress
@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $StreamId
  * @property Shapes\VpcInterfaceAttachment|null $VpcInterfaceAttachment
  * @property 'ENABLED'|'DISABLED'|null $OutputStatus
+ * @property string|null $NdiProgramName
+ * @property int|null $NdiSpeedHqQuality
  */
 class UpdateFlowOutputRequest extends Request
 {
@@ -38,14 +40,16 @@ class UpdateFlowOutputRequest extends Request
      *     MinLatency?: int|null,
      *     OutputArn: string,
      *     Port?: int|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null,
      *     RemoteId?: string|null,
      *     SenderControlPort?: int|null,
      *     SenderIpAddress?: string|null,
      *     SmoothingLatency?: int|null,
      *     StreamId?: string|null,
      *     VpcInterfaceAttachment?: Shapes\VpcInterfaceAttachment|null,
-     *     OutputStatus?: 'ENABLED'|'DISABLED'|null
+     *     OutputStatus?: 'ENABLED'|'DISABLED'|null,
+     *     NdiProgramName?: string|null,
+     *     NdiSpeedHqQuality?: int|null
      * } $args
      */
     public function __construct(array $args)
