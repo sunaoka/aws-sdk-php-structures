@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $modelArchitecture
  * @property string|null $modelKmsKeyArn
  * @property bool|null $instructSupported
+ * @property Shapes\CustomModelUnits|null $customModelUnits
  */
 class GetImportedModelResponse extends Response
 {

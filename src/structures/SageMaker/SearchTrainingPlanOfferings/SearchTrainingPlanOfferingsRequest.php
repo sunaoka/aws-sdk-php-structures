@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 256> $InstanceCount
  * @property \Aws\Api\DateTimeResult|null $StartTimeAfter
  * @property \Aws\Api\DateTimeResult|null $EndTimeBefore
- * @property int<1, 87600>|null $DurationHours
+ * @property int<1, 87600> $DurationHours
  * @property list<'training-job'|'hyperpod-cluster'> $TargetResources
  */
 class SearchTrainingPlanOfferingsRequest extends Request
@@ -20,7 +20,7 @@ class SearchTrainingPlanOfferingsRequest extends Request
      *     InstanceCount: int<1, 256>,
      *     StartTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     EndTimeBefore?: \Aws\Api\DateTimeResult|null,
-     *     DurationHours?: int<1, 87600>|null,
+     *     DurationHours: int<1, 87600>,
      *     TargetResources: list<'training-job'|'hyperpod-cluster'>
      * } $args
      */
