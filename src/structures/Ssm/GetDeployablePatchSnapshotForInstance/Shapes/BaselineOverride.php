@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ALLOW_AS_DEPENDENCY'|'BLOCK'|null $RejectedPatchesAction
  * @property bool|null $ApprovedPatchesEnableNonSecurity
  * @property list<PatchSource>|null $Sources
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|null $AvailableSecurityUpdatesComplianceStatus
  */
 class BaselineOverride extends Shape
 {
@@ -27,7 +28,8 @@ class BaselineOverride extends Shape
      *     RejectedPatches?: list<string>|null,
      *     RejectedPatchesAction?: 'ALLOW_AS_DEPENDENCY'|'BLOCK'|null,
      *     ApprovedPatchesEnableNonSecurity?: bool|null,
-     *     Sources?: list<PatchSource>|null
+     *     Sources?: list<PatchSource>|null,
+     *     AvailableSecurityUpdatesComplianceStatus?: 'COMPLIANT'|'NON_COMPLIANT'|null
      * } $args
      */
     public function __construct(array $args = [])

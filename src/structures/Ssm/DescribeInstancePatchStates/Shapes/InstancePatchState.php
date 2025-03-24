@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $FailedCount
  * @property int|null $UnreportedNotApplicableCount
  * @property int|null $NotApplicableCount
+ * @property int|null $AvailableSecurityUpdateCount
  * @property \Aws\Api\DateTimeResult $OperationStartTime
  * @property \Aws\Api\DateTimeResult $OperationEndTime
  * @property 'Scan'|'Install' $Operation
@@ -46,6 +47,7 @@ class InstancePatchState extends Shape
      *     FailedCount?: int|null,
      *     UnreportedNotApplicableCount?: int|null,
      *     NotApplicableCount?: int|null,
+     *     AvailableSecurityUpdateCount?: int|null,
      *     OperationStartTime: \Aws\Api\DateTimeResult,
      *     OperationEndTime: \Aws\Api\DateTimeResult,
      *     Operation: 'Scan'|'Install',
