@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\GetDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $idcInstanceArn
  * @property 'IAM_IDC'|'DISABLED'|null $type
  * @property 'AUTOMATIC'|'MANUAL'|null $userAssignment
  */
@@ -12,6 +13,7 @@ class SingleSignOn extends Shape
 {
     /**
      * @param array{
+     *     idcInstanceArn?: string|null,
      *     type?: 'IAM_IDC'|'DISABLED'|null,
      *     userAssignment?: 'AUTOMATIC'|'MANUAL'|null
      * } $args
