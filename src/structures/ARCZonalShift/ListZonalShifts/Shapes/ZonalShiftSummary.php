@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $expiryTime
  * @property 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|null $practiceRunOutcome
  * @property string $resourceIdentifier
+ * @property 'ZONAL_SHIFT'|'PRACTICE_RUN'|'FIS_EXPERIMENT'|'ZONAL_AUTOSHIFT'|null $shiftType
  * @property \Aws\Api\DateTimeResult $startTime
  * @property 'ACTIVE'|'EXPIRED'|'CANCELED' $status
  * @property string $zonalShiftId
@@ -23,6 +24,7 @@ class ZonalShiftSummary extends Shape
      *     expiryTime: \Aws\Api\DateTimeResult,
      *     practiceRunOutcome?: 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|null,
      *     resourceIdentifier: string,
+     *     shiftType?: 'ZONAL_SHIFT'|'PRACTICE_RUN'|'FIS_EXPERIMENT'|'ZONAL_AUTOSHIFT'|null,
      *     startTime: \Aws\Api\DateTimeResult,
      *     status: 'ACTIVE'|'EXPIRED'|'CANCELED',
      *     zonalShiftId: string

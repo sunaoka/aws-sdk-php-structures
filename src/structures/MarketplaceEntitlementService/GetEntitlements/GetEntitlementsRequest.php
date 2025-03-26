@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProductCode
- * @property array<'CUSTOMER_IDENTIFIER'|'DIMENSION', list<string>>|null $Filter
+ * @property array<'CUSTOMER_IDENTIFIER'|'DIMENSION'|'CUSTOMER_AWS_ACCOUNT_ID', list<string>>|null $Filter
  * @property string|null $NextToken
  * @property int<1, 25>|null $MaxResults
  */
@@ -15,7 +15,7 @@ class GetEntitlementsRequest extends Request
     /**
      * @param array{
      *     ProductCode: string,
-     *     Filter?: array<'CUSTOMER_IDENTIFIER'|'DIMENSION', list<string>>|null,
+     *     Filter?: array<'CUSTOMER_IDENTIFIER'|'DIMENSION'|'CUSTOMER_AWS_ACCOUNT_ID', list<string>>|null,
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 25>|null
      * } $args
