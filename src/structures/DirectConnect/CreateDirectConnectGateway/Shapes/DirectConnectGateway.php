@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ownerAccount
  * @property 'pending'|'available'|'deleting'|'deleted'|null $directConnectGatewayState
  * @property string|null $stateChangeError
+ * @property list<Tag>|null $tags
  */
 class DirectConnectGateway extends Shape
 {
@@ -21,7 +22,8 @@ class DirectConnectGateway extends Shape
      *     amazonSideAsn?: int|null,
      *     ownerAccount?: string|null,
      *     directConnectGatewayState?: 'pending'|'available'|'deleting'|'deleted'|null,
-     *     stateChangeError?: string|null
+     *     stateChangeError?: string|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

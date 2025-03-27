@@ -6,20 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $Timestamp
- * @property string $CustomerIdentifier
+ * @property string|null $CustomerIdentifier
  * @property string $Dimension
  * @property int<0, 2147483647>|null $Quantity
  * @property list<UsageAllocation>|null $UsageAllocations
+ * @property string|null $CustomerAWSAccountId
  */
 class UsageRecord extends Shape
 {
     /**
      * @param array{
      *     Timestamp: \Aws\Api\DateTimeResult,
-     *     CustomerIdentifier: string,
+     *     CustomerIdentifier?: string|null,
      *     Dimension: string,
      *     Quantity?: int<0, 2147483647>|null,
-     *     UsageAllocations?: list<UsageAllocation>|null
+     *     UsageAllocations?: list<UsageAllocation>|null,
+     *     CustomerAWSAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)
