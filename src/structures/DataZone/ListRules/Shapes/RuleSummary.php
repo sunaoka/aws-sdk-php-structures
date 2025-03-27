@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\ListRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATE_SUBSCRIPTION_REQUEST'|null $action
+ * @property 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST'|null $action
  * @property string|null $identifier
  * @property string|null $lastUpdatedBy
  * @property string|null $name
@@ -20,7 +20,7 @@ class RuleSummary extends Shape
 {
     /**
      * @param array{
-     *     action?: 'CREATE_SUBSCRIPTION_REQUEST'|null,
+     *     action?: 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST'|null,
      *     identifier?: string|null,
      *     lastUpdatedBy?: string|null,
      *     name?: string|null,

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AppName
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\ResourceSpec|null $ResourceSpec
+ * @property bool|null $RecoveryMode
  */
 class CreateAppRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateAppRequest extends Request
      *     AppType: 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas',
      *     AppName: string,
      *     Tags?: list<Shapes\Tag>|null,
-     *     ResourceSpec?: Shapes\ResourceSpec|null
+     *     ResourceSpec?: Shapes\ResourceSpec|null,
+     *     RecoveryMode?: bool|null
      * } $args
      */
     public function __construct(array $args)

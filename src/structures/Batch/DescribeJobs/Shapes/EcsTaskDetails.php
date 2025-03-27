@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NetworkConfiguration|null $networkConfiguration
  * @property RuntimePlatform|null $runtimePlatform
  * @property list<Volume>|null $volumes
+ * @property bool|null $enableExecuteCommand
  */
 class EcsTaskDetails extends Shape
 {
@@ -33,7 +34,8 @@ class EcsTaskDetails extends Shape
      *     pidMode?: string|null,
      *     networkConfiguration?: NetworkConfiguration|null,
      *     runtimePlatform?: RuntimePlatform|null,
-     *     volumes?: list<Volume>|null
+     *     volumes?: list<Volume>|null,
+     *     enableExecuteCommand?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

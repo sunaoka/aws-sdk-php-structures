@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'CREATE_SUBSCRIPTION_REQUEST' $action
+ * @property 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST' $action
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
  * @property string|null $description
