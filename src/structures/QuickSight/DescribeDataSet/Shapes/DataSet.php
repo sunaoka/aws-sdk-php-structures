@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DataSetUsageConfiguration|null $DataSetUsageConfiguration
  * @property list<DatasetParameter>|null $DatasetParameters
  * @property PerformanceConfiguration|null $PerformanceConfiguration
+ * @property 'RLS_RULES'|null $UseAs
  */
 class DataSet extends Shape
 {
@@ -45,7 +46,8 @@ class DataSet extends Shape
      *     ColumnLevelPermissionRules?: list<ColumnLevelPermissionRule>|null,
      *     DataSetUsageConfiguration?: DataSetUsageConfiguration|null,
      *     DatasetParameters?: list<DatasetParameter>|null,
-     *     PerformanceConfiguration?: PerformanceConfiguration|null
+     *     PerformanceConfiguration?: PerformanceConfiguration|null,
+     *     UseAs?: 'RLS_RULES'|null
      * } $args
      */
     public function __construct(array $args = [])
