@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property bool|null $DisableSchemaValidation
  * @property bool|null $DisableExecuteApiEndpoint
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  * @property string $Name
  * @property 'WEBSOCKET'|'HTTP' $ProtocolType
  * @property string|null $RouteKey
@@ -29,6 +30,7 @@ class CreateApiRequest extends Request
      *     Description?: string|null,
      *     DisableSchemaValidation?: bool|null,
      *     DisableExecuteApiEndpoint?: bool|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|null,
      *     Name: string,
      *     ProtocolType: 'WEBSOCKET'|'HTTP',
      *     RouteKey?: string|null,

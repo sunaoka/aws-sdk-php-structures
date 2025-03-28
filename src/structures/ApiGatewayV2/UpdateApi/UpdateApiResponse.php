@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $DisableSchemaValidation
  * @property bool|null $DisableExecuteApiEndpoint
  * @property list<string>|null $ImportInfo
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  * @property string|null $Name
  * @property 'WEBSOCKET'|'HTTP'|null $ProtocolType
  * @property string|null $RouteSelectionExpression

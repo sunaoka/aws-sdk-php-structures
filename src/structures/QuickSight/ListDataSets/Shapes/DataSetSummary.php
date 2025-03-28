@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RowLevelPermissionDataSet|null $RowLevelPermissionDataSet
  * @property bool|null $RowLevelPermissionTagConfigurationApplied
  * @property bool|null $ColumnLevelPermissionRulesApplied
+ * @property 'RLS_RULES'|null $UseAs
  */
 class DataSetSummary extends Shape
 {
@@ -27,7 +28,8 @@ class DataSetSummary extends Shape
      *     ImportMode?: 'SPICE'|'DIRECT_QUERY'|null,
      *     RowLevelPermissionDataSet?: RowLevelPermissionDataSet|null,
      *     RowLevelPermissionTagConfigurationApplied?: bool|null,
-     *     ColumnLevelPermissionRulesApplied?: bool|null
+     *     ColumnLevelPermissionRulesApplied?: bool|null,
+     *     UseAs?: 'RLS_RULES'|null
      * } $args
      */
     public function __construct(array $args = [])
