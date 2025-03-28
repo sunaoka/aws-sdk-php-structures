@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $idToken
  * @property string|null $issuedTokenType
  * @property list<string>|null $scope
+ * @property Shapes\AwsAdditionalDetails|null $awsAdditionalDetails
  */
 class CreateTokenWithIAMResponse extends Response
 {

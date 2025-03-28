@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\ListRules;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'CREATE_SUBSCRIPTION_REQUEST'|null $action
+ * @property 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST'|null $action
  * @property list<string>|null $assetTypes
  * @property bool|null $dataProduct
  * @property string $domainIdentifier
@@ -21,7 +21,7 @@ class ListRulesRequest extends Request
 {
     /**
      * @param array{
-     *     action?: 'CREATE_SUBSCRIPTION_REQUEST'|null,
+     *     action?: 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST'|null,
      *     assetTypes?: list<string>|null,
      *     dataProduct?: bool|null,
      *     domainIdentifier: string,

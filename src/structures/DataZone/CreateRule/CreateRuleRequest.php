@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateRule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'CREATE_SUBSCRIPTION_REQUEST' $action
+ * @property 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST' $action
  * @property string|null $clientToken
  * @property string|null $description
  * @property Shapes\RuleDetail $detail
@@ -18,7 +18,7 @@ class CreateRuleRequest extends Request
 {
     /**
      * @param array{
-     *     action: 'CREATE_SUBSCRIPTION_REQUEST',
+     *     action: 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST',
      *     clientToken?: string|null,
      *     description?: string|null,
      *     detail: Shapes\RuleDetail,

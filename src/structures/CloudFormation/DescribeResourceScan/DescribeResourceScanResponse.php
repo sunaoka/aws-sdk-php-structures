@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $ResourceTypes
  * @property int|null $ResourcesScanned
  * @property int|null $ResourcesRead
+ * @property list<Shapes\ScanFilter>|null $ScanFilters
  */
 class DescribeResourceScanResponse extends Response
 {
