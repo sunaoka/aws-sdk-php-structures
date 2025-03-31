@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $CapacityTaskId
  * @property string|null $OutpostId
  * @property string|null $OrderId
+ * @property string|null $AssetId
  * @property list<Shapes\InstanceTypeCapacity>|null $RequestedInstancePools
  * @property Shapes\InstancesToExclude|null $InstancesToExclude
  * @property bool|null $DryRun
