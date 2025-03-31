@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DomainNameStatusMessage
  * @property 'REGIONAL'|'EDGE'|null $EndpointType
  * @property string|null $HostedZoneId
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  * @property 'TLS_1_0'|'TLS_1_2'|null $SecurityPolicy
  * @property string|null $OwnershipVerificationCertificateArn
  */
@@ -28,6 +29,7 @@ class DomainNameConfiguration extends Shape
      *     DomainNameStatusMessage?: string|null,
      *     EndpointType?: 'REGIONAL'|'EDGE'|null,
      *     HostedZoneId?: string|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|null,
      *     SecurityPolicy?: 'TLS_1_0'|'TLS_1_2'|null,
      *     OwnershipVerificationCertificateArn?: string|null
      * } $args
