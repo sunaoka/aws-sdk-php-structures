@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ComputeConfigRequest|null $computeConfig
  * @property Shapes\KubernetesNetworkConfigRequest|null $kubernetesNetworkConfig
  * @property Shapes\StorageConfigRequest|null $storageConfig
+ * @property Shapes\RemoteNetworkConfigRequest|null $remoteNetworkConfig
  */
 class UpdateClusterConfigRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdateClusterConfigRequest extends Request
      *     zonalShiftConfig?: Shapes\ZonalShiftConfigRequest|null,
      *     computeConfig?: Shapes\ComputeConfigRequest|null,
      *     kubernetesNetworkConfig?: Shapes\KubernetesNetworkConfigRequest|null,
-     *     storageConfig?: Shapes\StorageConfigRequest|null
+     *     storageConfig?: Shapes\StorageConfigRequest|null,
+     *     remoteNetworkConfig?: Shapes\RemoteNetworkConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

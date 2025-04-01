@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ToolUseBlock|null $toolUse
  * @property ToolResultBlock|null $toolResult
  * @property GuardrailConverseContentBlock|null $guardContent
+ * @property CachePointBlock|null $cachePoint
  * @property ReasoningContentBlock|null $reasoningContent
  */
 class ContentBlock extends Shape
@@ -25,6 +26,7 @@ class ContentBlock extends Shape
      *     toolUse?: ToolUseBlock|null,
      *     toolResult?: ToolResultBlock|null,
      *     guardContent?: GuardrailConverseContentBlock|null,
+     *     cachePoint?: CachePointBlock|null,
      *     reasoningContent?: ReasoningContentBlock|null
      * } $args
      */
