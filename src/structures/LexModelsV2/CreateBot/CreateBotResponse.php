@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $testBotAliasTags
  * @property 'Bot'|'BotNetwork'|null $botType
  * @property list<Shapes\BotMember>|null $botMembers
+ * @property Shapes\ErrorLogSettings|null $errorLogSettings
  */
 class CreateBotResponse extends Response
 {

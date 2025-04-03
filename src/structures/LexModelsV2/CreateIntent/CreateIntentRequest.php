@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $localeId
  * @property Shapes\InitialResponseSetting|null $initialResponseSetting
  * @property Shapes\QnAIntentConfiguration|null $qnAIntentConfiguration
+ * @property Shapes\QInConnectIntentConfiguration|null $qInConnectIntentConfiguration
  */
 class CreateIntentRequest extends Request
 {
@@ -41,7 +42,8 @@ class CreateIntentRequest extends Request
      *     botVersion: string,
      *     localeId: string,
      *     initialResponseSetting?: Shapes\InitialResponseSetting|null,
-     *     qnAIntentConfiguration?: Shapes\QnAIntentConfiguration|null
+     *     qnAIntentConfiguration?: Shapes\QnAIntentConfiguration|null,
+     *     qInConnectIntentConfiguration?: Shapes\QInConnectIntentConfiguration|null
      * } $args
      */
     public function __construct(array $args)
