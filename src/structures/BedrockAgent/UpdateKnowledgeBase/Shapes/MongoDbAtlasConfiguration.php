@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $endpoint
  * @property string|null $endpointServiceName
  * @property MongoDbAtlasFieldMapping $fieldMapping
+ * @property string|null $textIndexName
  * @property string $vectorIndexName
  */
 class MongoDbAtlasConfiguration extends Shape
@@ -23,6 +24,7 @@ class MongoDbAtlasConfiguration extends Shape
      *     endpoint: string,
      *     endpointServiceName?: string|null,
      *     fieldMapping: MongoDbAtlasFieldMapping,
+     *     textIndexName?: string|null,
      *     vectorIndexName: string
      * } $args
      */
