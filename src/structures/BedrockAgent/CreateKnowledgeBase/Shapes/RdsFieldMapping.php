@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $customMetadataField
  * @property string $metadataField
  * @property string $primaryKeyField
  * @property string $textField
@@ -14,6 +15,7 @@ class RdsFieldMapping extends Shape
 {
     /**
      * @param array{
+     *     customMetadataField?: string|null,
      *     metadataField: string,
      *     primaryKeyField: string,
      *     textField: string,

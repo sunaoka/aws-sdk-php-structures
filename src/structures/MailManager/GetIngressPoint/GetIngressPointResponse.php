@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $IngressPointId
  * @property string $IngressPointName
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
+ * @property Shapes\NetworkConfiguration|null $NetworkConfiguration
  * @property string|null $RuleSetId
  * @property 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED'|null $Status
  * @property string|null $TrafficPolicyId
