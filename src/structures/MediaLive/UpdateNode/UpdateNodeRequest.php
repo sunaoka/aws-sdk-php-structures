@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string $NodeId
  * @property 'BACKUP'|'ACTIVE'|null $Role
+ * @property list<Shapes\SdiSourceMappingUpdateRequest>|null $SdiSourceMappings
  */
 class UpdateNodeRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateNodeRequest extends Request
      *     ClusterId: string,
      *     Name?: string|null,
      *     NodeId: string,
-     *     Role?: 'BACKUP'|'ACTIVE'|null
+     *     Role?: 'BACKUP'|'ACTIVE'|null,
+     *     SdiSourceMappings?: list<Shapes\SdiSourceMappingUpdateRequest>|null
      * } $args
      */
     public function __construct(array $args)

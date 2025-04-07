@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $guardrailVersion
  * @property 'INPUT'|'OUTPUT' $source
  * @property list<Shapes\GuardrailContentBlock> $content
+ * @property 'INTERVENTIONS'|'FULL'|null $outputScope
  */
 class ApplyGuardrailRequest extends Request
 {
@@ -17,7 +18,8 @@ class ApplyGuardrailRequest extends Request
      *     guardrailIdentifier: string,
      *     guardrailVersion: string,
      *     source: 'INPUT'|'OUTPUT',
-     *     content: list<Shapes\GuardrailContentBlock>
+     *     content: list<Shapes\GuardrailContentBlock>,
+     *     outputScope?: 'INTERVENTIONS'|'FULL'|null
      * } $args
      */
     public function __construct(array $args)
