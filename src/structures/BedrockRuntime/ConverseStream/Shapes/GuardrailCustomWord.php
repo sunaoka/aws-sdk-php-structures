@@ -6,14 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $match
- * @property 'BLOCKED' $action
+ * @property 'BLOCKED'|'NONE' $action
+ * @property bool|null $detected
  */
 class GuardrailCustomWord extends Shape
 {
     /**
      * @param array{
      *     match: string,
-     *     action: 'BLOCKED'
+     *     action: 'BLOCKED'|'NONE',
+     *     detected?: bool|null
      * } $args
      */
     public function __construct(array $args)

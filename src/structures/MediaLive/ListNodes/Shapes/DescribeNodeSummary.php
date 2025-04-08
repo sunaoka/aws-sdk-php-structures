@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<NodeInterfaceMapping>|null $NodeInterfaceMappings
  * @property 'BACKUP'|'ACTIVE'|null $Role
  * @property 'CREATED'|'REGISTERING'|'READY_TO_ACTIVATE'|'REGISTRATION_FAILED'|'ACTIVATION_FAILED'|'ACTIVE'|'READY'|'IN_USE'|'DEREGISTERING'|'DRAINING'|'DEREGISTRATION_FAILED'|'DEREGISTERED'|null $State
+ * @property list<SdiSourceMapping>|null $SdiSourceMappings
  */
 class DescribeNodeSummary extends Shape
 {
@@ -31,7 +32,8 @@ class DescribeNodeSummary extends Shape
      *     Name?: string|null,
      *     NodeInterfaceMappings?: list<NodeInterfaceMapping>|null,
      *     Role?: 'BACKUP'|'ACTIVE'|null,
-     *     State?: 'CREATED'|'REGISTERING'|'READY_TO_ACTIVATE'|'REGISTRATION_FAILED'|'ACTIVATION_FAILED'|'ACTIVE'|'READY'|'IN_USE'|'DEREGISTERING'|'DRAINING'|'DEREGISTRATION_FAILED'|'DEREGISTERED'|null
+     *     State?: 'CREATED'|'REGISTERING'|'READY_TO_ACTIVATE'|'REGISTRATION_FAILED'|'ACTIVATION_FAILED'|'ACTIVE'|'READY'|'IN_USE'|'DEREGISTERING'|'DRAINING'|'DEREGISTRATION_FAILED'|'DEREGISTERED'|null,
+     *     SdiSourceMappings?: list<SdiSourceMapping>|null
      * } $args
      */
     public function __construct(array $args = [])

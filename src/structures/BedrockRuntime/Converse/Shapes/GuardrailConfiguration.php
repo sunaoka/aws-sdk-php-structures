@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $guardrailIdentifier
  * @property string $guardrailVersion
- * @property 'enabled'|'disabled'|null $trace
+ * @property 'enabled'|'disabled'|'enabled_full'|null $trace
  */
 class GuardrailConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class GuardrailConfiguration extends Shape
      * @param array{
      *     guardrailIdentifier: string,
      *     guardrailVersion: string,
-     *     trace?: 'enabled'|'disabled'|null
+     *     trace?: 'enabled'|'disabled'|'enabled_full'|null
      * } $args
      */
     public function __construct(array $args)
