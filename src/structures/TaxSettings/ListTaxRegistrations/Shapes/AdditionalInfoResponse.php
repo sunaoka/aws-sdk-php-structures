@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SpainAdditionalInfo|null $spainAdditionalInfo
  * @property TurkeyAdditionalInfo|null $turkeyAdditionalInfo
  * @property UkraineAdditionalInfo|null $ukraineAdditionalInfo
+ * @property UzbekistanAdditionalInfo|null $uzbekistanAdditionalInfo
  * @property VietnamAdditionalInfo|null $vietnamAdditionalInfo
  */
 class AdditionalInfoResponse extends Shape
@@ -47,6 +48,7 @@ class AdditionalInfoResponse extends Shape
      *     spainAdditionalInfo?: SpainAdditionalInfo|null,
      *     turkeyAdditionalInfo?: TurkeyAdditionalInfo|null,
      *     ukraineAdditionalInfo?: UkraineAdditionalInfo|null,
+     *     uzbekistanAdditionalInfo?: UzbekistanAdditionalInfo|null,
      *     vietnamAdditionalInfo?: VietnamAdditionalInfo|null
      * } $args
      */
