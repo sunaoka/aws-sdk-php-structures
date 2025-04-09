@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ConfigDetails|null $configDetails
  * @property string|null $configId
- * @property 'antenna-downlink'|'antenna-downlink-demod-decode'|'antenna-uplink'|'dataflow-endpoint'|'tracking'|'uplink-echo'|'s3-recording'|null $configType
+ * @property 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording'|null $configType
  * @property string|null $dataflowDestinationRegion
  */
 class Destination extends Shape
@@ -16,7 +16,7 @@ class Destination extends Shape
      * @param array{
      *     configDetails?: ConfigDetails|null,
      *     configId?: string|null,
-     *     configType?: 'antenna-downlink'|'antenna-downlink-demod-decode'|'antenna-uplink'|'dataflow-endpoint'|'tracking'|'uplink-echo'|'s3-recording'|null,
+     *     configType?: 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording'|null,
      *     dataflowDestinationRegion?: string|null
      * } $args
      */

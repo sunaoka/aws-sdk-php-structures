@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int<0, 100>|null $maxResults
+ * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  * @property string $satelliteId
  * @property \Aws\Api\DateTimeResult $startTime
@@ -17,7 +17,7 @@ class ListEphemeridesRequest extends Request
     /**
      * @param array{
      *     endTime: \Aws\Api\DateTimeResult,
-     *     maxResults?: int<0, 100>|null,
+     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,
      *     satelliteId: string,
      *     startTime: \Aws\Api\DateTimeResult,

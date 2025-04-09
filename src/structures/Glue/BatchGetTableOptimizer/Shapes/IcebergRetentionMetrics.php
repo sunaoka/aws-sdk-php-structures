@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $NumberOfDataFilesDeleted
  * @property int|null $NumberOfManifestFilesDeleted
  * @property int|null $NumberOfManifestListsDeleted
+ * @property double|null $DpuHours
  * @property int|null $NumberOfDpus
  * @property double|null $JobDurationInHour
  */
@@ -18,6 +19,7 @@ class IcebergRetentionMetrics extends Shape
      *     NumberOfDataFilesDeleted?: int|null,
      *     NumberOfManifestFilesDeleted?: int|null,
      *     NumberOfManifestListsDeleted?: int|null,
+     *     DpuHours?: double|null,
      *     NumberOfDpus?: int|null,
      *     JobDurationInHour?: double|null
      * } $args
