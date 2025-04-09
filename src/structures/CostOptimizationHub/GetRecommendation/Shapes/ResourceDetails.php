@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SageMakerSavingsPlans|null $sageMakerSavingsPlans
  * @property RdsDbInstance|null $rdsDbInstance
  * @property RdsDbInstanceStorage|null $rdsDbInstanceStorage
+ * @property DynamoDbReservedCapacity|null $dynamoDbReservedCapacity
+ * @property MemoryDbReservedInstances|null $memoryDbReservedInstances
  */
 class ResourceDetails extends Shape
 {
@@ -39,7 +41,9 @@ class ResourceDetails extends Shape
      *     computeSavingsPlans?: ComputeSavingsPlans|null,
      *     sageMakerSavingsPlans?: SageMakerSavingsPlans|null,
      *     rdsDbInstance?: RdsDbInstance|null,
-     *     rdsDbInstanceStorage?: RdsDbInstanceStorage|null
+     *     rdsDbInstanceStorage?: RdsDbInstanceStorage|null,
+     *     dynamoDbReservedCapacity?: DynamoDbReservedCapacity|null,
+     *     memoryDbReservedInstances?: MemoryDbReservedInstances|null
      * } $args
      */
     public function __construct(array $args = [])
