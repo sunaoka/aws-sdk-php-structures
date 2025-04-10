@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Layout>|null $Layouts
  * @property list<SheetControlLayout>|null $SheetControlLayouts
  * @property 'PAGINATED'|'INTERACTIVE'|null $ContentType
+ * @property VisualCustomActionDefaults|null $CustomActionDefaults
  */
 class SheetDefinition extends Shape
 {
@@ -33,7 +34,8 @@ class SheetDefinition extends Shape
      *     Images?: list<SheetImage>|null,
      *     Layouts?: list<Layout>|null,
      *     SheetControlLayouts?: list<SheetControlLayout>|null,
-     *     ContentType?: 'PAGINATED'|'INTERACTIVE'|null
+     *     ContentType?: 'PAGINATED'|'INTERACTIVE'|null,
+     *     CustomActionDefaults?: VisualCustomActionDefaults|null
      * } $args
      */
     public function __construct(array $args)

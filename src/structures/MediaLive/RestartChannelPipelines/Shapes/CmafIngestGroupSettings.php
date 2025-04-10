@@ -17,6 +17,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Scte35NameModifier
  * @property 'DISABLED'|'ENABLED'|null $Id3Behavior
  * @property string|null $Id3NameModifier
+ * @property list<CmafIngestCaptionLanguageMapping>|null $CaptionLanguageMappings
+ * @property 'NONE'|'PRIV'|'TDRL'|null $TimedMetadataId3Frame
+ * @property int<0, 10000>|null $TimedMetadataId3Period
+ * @property 'DISABLED'|'ENABLED'|null $TimedMetadataPassthrough
  */
 class CmafIngestGroupSettings extends Shape
 {
@@ -33,7 +37,11 @@ class CmafIngestGroupSettings extends Shape
      *     NielsenId3NameModifier?: string|null,
      *     Scte35NameModifier?: string|null,
      *     Id3Behavior?: 'DISABLED'|'ENABLED'|null,
-     *     Id3NameModifier?: string|null
+     *     Id3NameModifier?: string|null,
+     *     CaptionLanguageMappings?: list<CmafIngestCaptionLanguageMapping>|null,
+     *     TimedMetadataId3Frame?: 'NONE'|'PRIV'|'TDRL'|null,
+     *     TimedMetadataId3Period?: int<0, 10000>|null,
+     *     TimedMetadataPassthrough?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args)
