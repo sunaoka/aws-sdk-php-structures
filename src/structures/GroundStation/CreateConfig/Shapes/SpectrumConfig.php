@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property FrequencyBandwidth $bandwidth
  * @property Frequency $centerFrequency
- * @property 'LEFT_HAND'|'NONE'|'RIGHT_HAND'|null $polarization
+ * @property 'RIGHT_HAND'|'LEFT_HAND'|'NONE'|null $polarization
  */
 class SpectrumConfig extends Shape
 {
@@ -15,7 +15,7 @@ class SpectrumConfig extends Shape
      * @param array{
      *     bandwidth: FrequencyBandwidth,
      *     centerFrequency: Frequency,
-     *     polarization?: 'LEFT_HAND'|'NONE'|'RIGHT_HAND'|null
+     *     polarization?: 'RIGHT_HAND'|'LEFT_HAND'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

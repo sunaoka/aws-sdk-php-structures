@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AwsGroundStationAgentEndpoint|null $awsGroundStationAgentEndpoint
  * @property DataflowEndpoint|null $endpoint
  * @property list<'NO_REGISTERED_AGENT'|'INVALID_IP_OWNERSHIP'|'NOT_AUTHORIZED_TO_CREATE_SLR'|'UNVERIFIED_IP_OWNERSHIP'|'INITIALIZING_DATAPLANE'|'DATAPLANE_FAILURE'|'HEALTHY'>|null $healthReasons
- * @property 'UNHEALTHY'|'HEALTHY'|null $healthStatus
+ * @property 'HEALTHY'|'UNHEALTHY'|null $healthStatus
  * @property SecurityDetails|null $securityDetails
  */
 class EndpointDetails extends Shape
@@ -18,7 +18,7 @@ class EndpointDetails extends Shape
      *     awsGroundStationAgentEndpoint?: AwsGroundStationAgentEndpoint|null,
      *     endpoint?: DataflowEndpoint|null,
      *     healthReasons?: list<'NO_REGISTERED_AGENT'|'INVALID_IP_OWNERSHIP'|'NOT_AUTHORIZED_TO_CREATE_SLR'|'UNVERIFIED_IP_OWNERSHIP'|'INITIALIZING_DATAPLANE'|'DATAPLANE_FAILURE'|'HEALTHY'>|null,
-     *     healthStatus?: 'UNHEALTHY'|'HEALTHY'|null,
+     *     healthStatus?: 'HEALTHY'|'UNHEALTHY'|null,
      *     securityDetails?: SecurityDetails|null
      * } $args
      */
