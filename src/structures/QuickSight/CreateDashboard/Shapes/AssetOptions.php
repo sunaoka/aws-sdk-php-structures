@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SUNDAY'|'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|null $WeekStart
  * @property 'ENABLED'|'DISABLED'|null $QBusinessInsightsStatus
  * @property list<string>|null $ExcludedDataSetArns
+ * @property VisualCustomActionDefaults|null $CustomActionDefaults
  */
 class AssetOptions extends Shape
 {
@@ -17,7 +18,8 @@ class AssetOptions extends Shape
      *     Timezone?: string|null,
      *     WeekStart?: 'SUNDAY'|'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|null,
      *     QBusinessInsightsStatus?: 'ENABLED'|'DISABLED'|null,
-     *     ExcludedDataSetArns?: list<string>|null
+     *     ExcludedDataSetArns?: list<string>|null,
+     *     CustomActionDefaults?: VisualCustomActionDefaults|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TopicConfiguration>|null $topicConfigurationsToCreateOrUpdate
  * @property list<Shapes\TopicConfiguration>|null $topicConfigurationsToDelete
  * @property Shapes\CreatorModeConfiguration|null $creatorModeConfiguration
+ * @property Shapes\HallucinationReductionConfiguration|null $hallucinationReductionConfiguration
  */
 class UpdateChatControlsConfigurationRequest extends Request
 {
@@ -25,7 +26,8 @@ class UpdateChatControlsConfigurationRequest extends Request
      *     blockedPhrasesConfigurationUpdate?: Shapes\BlockedPhrasesConfigurationUpdate|null,
      *     topicConfigurationsToCreateOrUpdate?: list<Shapes\TopicConfiguration>|null,
      *     topicConfigurationsToDelete?: list<Shapes\TopicConfiguration>|null,
-     *     creatorModeConfiguration?: Shapes\CreatorModeConfiguration|null
+     *     creatorModeConfiguration?: Shapes\CreatorModeConfiguration|null,
+     *     hallucinationReductionConfiguration?: Shapes\HallucinationReductionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

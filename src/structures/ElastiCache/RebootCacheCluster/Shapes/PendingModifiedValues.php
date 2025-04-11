@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<PendingLogDeliveryConfiguration>|null $LogDeliveryConfigurations
  * @property bool|null $TransitEncryptionEnabled
  * @property 'preferred'|'required'|null $TransitEncryptionMode
+ * @property ScaleConfig|null $ScaleConfig
  */
 class PendingModifiedValues extends Shape
 {
@@ -25,7 +26,8 @@ class PendingModifiedValues extends Shape
      *     AuthTokenStatus?: 'SETTING'|'ROTATING'|null,
      *     LogDeliveryConfigurations?: list<PendingLogDeliveryConfiguration>|null,
      *     TransitEncryptionEnabled?: bool|null,
-     *     TransitEncryptionMode?: 'preferred'|'required'|null
+     *     TransitEncryptionMode?: 'preferred'|'required'|null,
+     *     ScaleConfig?: ScaleConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdDate
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
  * @property string|null $description
+ * @property 'ENABLED'|'DISABLED'|null $deletionProtection
  */
 class GetPolicyStoreResponse extends Response
 {

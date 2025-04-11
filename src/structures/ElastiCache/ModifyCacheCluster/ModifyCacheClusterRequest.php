@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SET'|'ROTATE'|'DELETE'|null $AuthTokenUpdateStrategy
  * @property list<Shapes\LogDeliveryConfigurationRequest>|null $LogDeliveryConfigurations
  * @property 'ipv4'|'ipv6'|null $IpDiscovery
+ * @property Shapes\ScaleConfig|null $ScaleConfig
  */
 class ModifyCacheClusterRequest extends Request
 {
@@ -53,7 +54,8 @@ class ModifyCacheClusterRequest extends Request
      *     AuthToken?: string|null,
      *     AuthTokenUpdateStrategy?: 'SET'|'ROTATE'|'DELETE'|null,
      *     LogDeliveryConfigurations?: list<Shapes\LogDeliveryConfigurationRequest>|null,
-     *     IpDiscovery?: 'ipv4'|'ipv6'|null
+     *     IpDiscovery?: 'ipv4'|'ipv6'|null,
+     *     ScaleConfig?: Shapes\ScaleConfig|null
      * } $args
      */
     public function __construct(array $args)
