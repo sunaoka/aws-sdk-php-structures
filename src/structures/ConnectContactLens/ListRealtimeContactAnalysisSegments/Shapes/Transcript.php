@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Content
  * @property int<0, max> $BeginOffsetMillis
  * @property int<0, max> $EndOffsetMillis
- * @property 'POSITIVE'|'NEUTRAL'|'NEGATIVE' $Sentiment
+ * @property 'POSITIVE'|'NEUTRAL'|'NEGATIVE'|null $Sentiment
  * @property list<IssueDetected>|null $IssuesDetected
  */
 class Transcript extends Shape
@@ -24,7 +24,7 @@ class Transcript extends Shape
      *     Content: string,
      *     BeginOffsetMillis: int<0, max>,
      *     EndOffsetMillis: int<0, max>,
-     *     Sentiment: 'POSITIVE'|'NEUTRAL'|'NEGATIVE',
+     *     Sentiment?: 'POSITIVE'|'NEUTRAL'|'NEGATIVE'|null,
      *     IssuesDetected?: list<IssueDetected>|null
      * } $args
      */

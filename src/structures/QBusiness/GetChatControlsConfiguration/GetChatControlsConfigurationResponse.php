@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\TopicConfiguration>|null $topicConfigurations
  * @property Shapes\AppliedCreatorModeConfiguration|null $creatorModeConfiguration
  * @property string|null $nextToken
+ * @property Shapes\HallucinationReductionConfiguration|null $hallucinationReductionConfiguration
  */
 class GetChatControlsConfigurationResponse extends Response
 {
