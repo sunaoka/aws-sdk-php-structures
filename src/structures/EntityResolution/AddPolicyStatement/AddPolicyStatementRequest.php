@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\EntityResolution\AddPolicyStatement;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $action
  * @property string $arn
- * @property string|null $condition
- * @property 'Allow'|'Deny' $effect
- * @property list<string> $principal
  * @property string $statementId
+ * @property 'Allow'|'Deny' $effect
+ * @property list<string> $action
+ * @property list<string> $principal
+ * @property string|null $condition
  */
 class AddPolicyStatementRequest extends Request
 {
     /**
      * @param array{
-     *     action: list<string>,
      *     arn: string,
-     *     condition?: string|null,
+     *     statementId: string,
      *     effect: 'Allow'|'Deny',
+     *     action: list<string>,
      *     principal: list<string>,
-     *     statementId: string
+     *     condition?: string|null
      * } $args
      */
     public function __construct(array $args)

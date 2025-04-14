@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EntityResolution\StartIdMappingJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $KMSArn
- * @property string $outputS3Path
  * @property string $roleArn
+ * @property string $outputS3Path
+ * @property string|null $KMSArn
  */
 class IdMappingJobOutputSource extends Shape
 {
     /**
      * @param array{
-     *     KMSArn?: string|null,
+     *     roleArn: string,
      *     outputS3Path: string,
-     *     roleArn: string
+     *     KMSArn?: string|null
      * } $args
      */
     public function __construct(array $args)

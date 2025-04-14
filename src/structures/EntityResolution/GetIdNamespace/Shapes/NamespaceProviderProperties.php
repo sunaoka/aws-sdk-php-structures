@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetIdNamespace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document|null $providerConfiguration
  * @property string $providerServiceArn
+ * @property Document|null $providerConfiguration
  */
 class NamespaceProviderProperties extends Shape
 {
     /**
      * @param array{
-     *     providerConfiguration?: Document|null,
-     *     providerServiceArn: string
+     *     providerServiceArn: string,
+     *     providerConfiguration?: Document|null
      * } $args
      */
     public function __construct(array $args)

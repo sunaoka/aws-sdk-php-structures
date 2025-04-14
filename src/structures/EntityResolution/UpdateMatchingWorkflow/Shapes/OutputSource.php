@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\EntityResolution\UpdateMatchingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $KMSArn
- * @property bool|null $applyNormalization
- * @property list<OutputAttribute> $output
  * @property string $outputS3Path
+ * @property string|null $KMSArn
+ * @property list<OutputAttribute> $output
+ * @property bool|null $applyNormalization
  */
 class OutputSource extends Shape
 {
     /**
      * @param array{
+     *     outputS3Path: string,
      *     KMSArn?: string|null,
-     *     applyNormalization?: bool|null,
      *     output: list<OutputAttribute>,
-     *     outputS3Path: string
+     *     applyNormalization?: bool|null
      * } $args
      */
     public function __construct(array $args)
