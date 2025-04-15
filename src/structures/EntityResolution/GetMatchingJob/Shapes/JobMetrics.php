@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int|null $inputRecords
- * @property int|null $matchIDs
- * @property int|null $recordsNotProcessed
  * @property int|null $totalRecordsProcessed
+ * @property int|null $recordsNotProcessed
+ * @property int|null $matchIDs
  */
 class JobMetrics extends Shape
 {
     /**
      * @param array{
      *     inputRecords?: int|null,
-     *     matchIDs?: int|null,
+     *     totalRecordsProcessed?: int|null,
      *     recordsNotProcessed?: int|null,
-     *     totalRecordsProcessed?: int|null
+     *     matchIDs?: int|null
      * } $args
      */
     public function __construct(array $args = [])

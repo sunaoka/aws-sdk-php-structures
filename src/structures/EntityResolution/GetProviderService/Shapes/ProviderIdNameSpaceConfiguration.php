@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $description
- * @property Document|null $providerSourceConfigurationDefinition
  * @property Document|null $providerTargetConfigurationDefinition
+ * @property Document|null $providerSourceConfigurationDefinition
  */
 class ProviderIdNameSpaceConfiguration extends Shape
 {
     /**
      * @param array{
      *     description?: string|null,
-     *     providerSourceConfigurationDefinition?: Document|null,
-     *     providerTargetConfigurationDefinition?: Document|null
+     *     providerTargetConfigurationDefinition?: Document|null,
+     *     providerSourceConfigurationDefinition?: Document|null
      * } $args
      */
     public function __construct(array $args = [])

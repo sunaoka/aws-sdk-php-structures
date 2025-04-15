@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\EntityResolution\ListSchemaMappings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property bool $hasWorkflows
- * @property string $schemaArn
  * @property string $schemaName
+ * @property string $schemaArn
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property bool $hasWorkflows
  */
 class SchemaMappingSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     hasWorkflows: bool,
-     *     schemaArn: string,
      *     schemaName: string,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     schemaArn: string,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     hasWorkflows: bool
      * } $args
      */
     public function __construct(array $args)

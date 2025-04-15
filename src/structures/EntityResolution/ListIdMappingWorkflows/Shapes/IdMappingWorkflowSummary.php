@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\EntityResolution\ListIdMappingWorkflows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $workflowName
+ * @property string $workflowArn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $workflowArn
- * @property string $workflowName
  */
 class IdMappingWorkflowSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     workflowName: string,
      *     workflowArn: string,
-     *     workflowName: string
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\EntityResolution\CreateIdMappingWorkflow;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string $workflowName
+ * @property string $workflowArn
  * @property string|null $description
- * @property Shapes\IdMappingTechniques $idMappingTechniques
  * @property list<Shapes\IdMappingWorkflowInputSource> $inputSourceConfig
  * @property list<Shapes\IdMappingWorkflowOutputSource>|null $outputSourceConfig
+ * @property Shapes\IdMappingTechniques $idMappingTechniques
  * @property string|null $roleArn
- * @property string $workflowArn
- * @property string $workflowName
  */
 class CreateIdMappingWorkflowResponse extends Response
 {

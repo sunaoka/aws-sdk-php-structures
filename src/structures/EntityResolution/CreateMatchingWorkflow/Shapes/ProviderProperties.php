@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EntityResolution\CreateMatchingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IntermediateSourceConfiguration|null $intermediateSourceConfiguration
- * @property Document|null $providerConfiguration
  * @property string $providerServiceArn
+ * @property Document|null $providerConfiguration
+ * @property IntermediateSourceConfiguration|null $intermediateSourceConfiguration
  */
 class ProviderProperties extends Shape
 {
     /**
      * @param array{
-     *     intermediateSourceConfiguration?: IntermediateSourceConfiguration|null,
+     *     providerServiceArn: string,
      *     providerConfiguration?: Document|null,
-     *     providerServiceArn: string
+     *     intermediateSourceConfiguration?: IntermediateSourceConfiguration|null
      * } $args
      */
     public function __construct(array $args)

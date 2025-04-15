@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EntityResolution\UpdateIdNamespace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $matchingKeys
  * @property string $ruleName
+ * @property list<string> $matchingKeys
  */
 class Rule extends Shape
 {
     /**
      * @param array{
-     *     matchingKeys: list<string>,
-     *     ruleName: string
+     *     ruleName: string,
+     *     matchingKeys: list<string>
      * } $args
      */
     public function __construct(array $args)

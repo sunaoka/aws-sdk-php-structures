@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GeorgiaAdditionalInfo|null $georgiaAdditionalInfo
  * @property GreeceAdditionalInfo|null $greeceAdditionalInfo
  * @property IndiaAdditionalInfo|null $indiaAdditionalInfo
+ * @property IndonesiaAdditionalInfo|null $indonesiaAdditionalInfo
  * @property IsraelAdditionalInfo|null $israelAdditionalInfo
  * @property ItalyAdditionalInfo|null $italyAdditionalInfo
  * @property KenyaAdditionalInfo|null $kenyaAdditionalInfo
@@ -37,6 +38,7 @@ class AdditionalInfoResponse extends Shape
      *     georgiaAdditionalInfo?: GeorgiaAdditionalInfo|null,
      *     greeceAdditionalInfo?: GreeceAdditionalInfo|null,
      *     indiaAdditionalInfo?: IndiaAdditionalInfo|null,
+     *     indonesiaAdditionalInfo?: IndonesiaAdditionalInfo|null,
      *     israelAdditionalInfo?: IsraelAdditionalInfo|null,
      *     italyAdditionalInfo?: ItalyAdditionalInfo|null,
      *     kenyaAdditionalInfo?: KenyaAdditionalInfo|null,

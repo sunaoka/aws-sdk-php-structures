@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EntityResolution\UpdateMatchingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<Rule> $rules
  * @property 'ONE_TO_ONE'|'MANY_TO_MANY' $attributeMatchingModel
  * @property 'IDENTIFIER_GENERATION'|'INDEXING'|null $matchPurpose
- * @property list<Rule> $rules
  */
 class RuleBasedProperties extends Shape
 {
     /**
      * @param array{
+     *     rules: list<Rule>,
      *     attributeMatchingModel: 'ONE_TO_ONE'|'MANY_TO_MANY',
-     *     matchPurpose?: 'IDENTIFIER_GENERATION'|'INDEXING'|null,
-     *     rules: list<Rule>
+     *     matchPurpose?: 'IDENTIFIER_GENERATION'|'INDEXING'|null
      * } $args
      */
     public function __construct(array $args)
