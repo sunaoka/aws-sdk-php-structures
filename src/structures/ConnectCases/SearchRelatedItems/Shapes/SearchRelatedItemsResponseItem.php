@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property UserUnion|null $performedBy
  * @property string $relatedItemId
  * @property array<string, string>|null $tags
- * @property 'Contact'|'Comment'|'File' $type
+ * @property 'Contact'|'Comment'|'File'|'Sla' $type
  */
 class SearchRelatedItemsResponseItem extends Shape
 {
@@ -21,7 +21,7 @@ class SearchRelatedItemsResponseItem extends Shape
      *     performedBy?: UserUnion|null,
      *     relatedItemId: string,
      *     tags?: array<string, string>|null,
-     *     type: 'Contact'|'Comment'|'File'
+     *     type: 'Contact'|'Comment'|'File'|'Sla'
      * } $args
      */
     public function __construct(array $args)

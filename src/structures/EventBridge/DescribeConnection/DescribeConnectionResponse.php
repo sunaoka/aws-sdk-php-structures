@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $StateReason
  * @property 'BASIC'|'OAUTH_CLIENT_CREDENTIALS'|'API_KEY'|null $AuthorizationType
  * @property string|null $SecretArn
+ * @property string|null $KmsKeyIdentifier
  * @property Shapes\ConnectionAuthResponseParameters|null $AuthParameters
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime

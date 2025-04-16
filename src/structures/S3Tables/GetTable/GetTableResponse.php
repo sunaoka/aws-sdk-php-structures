@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'customer'|'aws' $type
  * @property string $tableARN
  * @property list<string> $namespace
+ * @property string|null $namespaceId
  * @property string $versionToken
  * @property string|null $metadataLocation
  * @property string $warehouseLocation
@@ -19,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $modifiedBy
  * @property string $ownerAccountId
  * @property 'ICEBERG' $format
+ * @property string|null $tableBucketId
  */
 class GetTableResponse extends Response
 {
