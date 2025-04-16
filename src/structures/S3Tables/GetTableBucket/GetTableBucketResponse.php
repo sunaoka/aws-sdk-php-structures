@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property string $ownerAccountId
  * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $tableBucketId
  */
 class GetTableBucketResponse extends Response
 {
