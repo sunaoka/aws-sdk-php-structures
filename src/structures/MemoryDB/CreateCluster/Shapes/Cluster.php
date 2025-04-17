@@ -33,6 +33,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ACLName
  * @property bool|null $AutoMinorVersionUpgrade
  * @property 'true'|'false'|null $DataTiering
+ * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
+ * @property 'ipv4'|'ipv6'|null $IpDiscovery
  */
 class Cluster extends Shape
 {
@@ -65,7 +67,9 @@ class Cluster extends Shape
      *     SnapshotWindow?: string|null,
      *     ACLName?: string|null,
      *     AutoMinorVersionUpgrade?: bool|null,
-     *     DataTiering?: 'true'|'false'|null
+     *     DataTiering?: 'true'|'false'|null,
+     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
+     *     IpDiscovery?: 'ipv4'|'ipv6'|null
      * } $args
      */
     public function __construct(array $args = [])

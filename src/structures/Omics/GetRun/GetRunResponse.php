@@ -39,6 +39,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $runOutputUri
  * @property 'STATIC'|'DYNAMIC'|null $storageType
  * @property string|null $workflowOwnerId
+ * @property string|null $workflowVersionName
+ * @property string|null $workflowUuid
  */
 class GetRunResponse extends Response
 {

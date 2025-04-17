@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property array<string, string>|null $metadata
  * @property 'GPU'|null $accelerators
+ * @property 'STATIC'|'DYNAMIC'|null $storageType
+ * @property string|null $uuid
  */
 class GetWorkflowResponse extends Response
 {

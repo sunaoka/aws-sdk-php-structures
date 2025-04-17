@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ecs\ListAccountSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'serviceLongArnFormat'|'taskLongArnFormat'|'containerInstanceLongArnFormat'|'awsvpcTrunking'|'containerInsights'|'fargateFIPSMode'|'tagResourceAuthorization'|'fargateTaskRetirementWaitPeriod'|'guardDutyActivate'|null $name
+ * @property 'serviceLongArnFormat'|'taskLongArnFormat'|'containerInstanceLongArnFormat'|'awsvpcTrunking'|'containerInsights'|'fargateFIPSMode'|'tagResourceAuthorization'|'fargateTaskRetirementWaitPeriod'|'guardDutyActivate'|'defaultLogDriverMode'|null $name
  * @property string|null $value
  * @property string|null $principalArn
  * @property bool|null $effectiveSettings
@@ -16,7 +16,7 @@ class ListAccountSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     name?: 'serviceLongArnFormat'|'taskLongArnFormat'|'containerInstanceLongArnFormat'|'awsvpcTrunking'|'containerInsights'|'fargateFIPSMode'|'tagResourceAuthorization'|'fargateTaskRetirementWaitPeriod'|'guardDutyActivate'|null,
+     *     name?: 'serviceLongArnFormat'|'taskLongArnFormat'|'containerInstanceLongArnFormat'|'awsvpcTrunking'|'containerInsights'|'fargateFIPSMode'|'tagResourceAuthorization'|'fargateTaskRetirementWaitPeriod'|'guardDutyActivate'|'defaultLogDriverMode'|null,
      *     value?: string|null,
      *     principalArn?: string|null,
      *     effectiveSettings?: bool|null,

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $startTime
  * @property \Aws\Api\DateTimeResult|null $stopTime
  * @property 'STATIC'|'DYNAMIC'|null $storageType
+ * @property string|null $workflowVersionName
  */
 class RunListItem extends Shape
 {
@@ -31,7 +32,8 @@ class RunListItem extends Shape
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,
      *     stopTime?: \Aws\Api\DateTimeResult|null,
-     *     storageType?: 'STATIC'|'DYNAMIC'|null
+     *     storageType?: 'STATIC'|'DYNAMIC'|null,
+     *     workflowVersionName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

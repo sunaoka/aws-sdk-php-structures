@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property string $requestId
  * @property 'GPU'|null $accelerators
+ * @property 'STATIC'|'DYNAMIC'|null $storageType
  */
 class CreateWorkflowRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateWorkflowRequest extends Request
      *     storageCapacity?: int<0, 100000>|null,
      *     tags?: array<string, string>|null,
      *     requestId: string,
-     *     accelerators?: 'GPU'|null
+     *     accelerators?: 'GPU'|null,
+     *     storageType?: 'STATIC'|'DYNAMIC'|null
      * } $args
      */
     public function __construct(array $args)
