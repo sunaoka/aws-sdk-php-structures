@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QConnect\SendMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $botResponse
- * @property string|null $inputTranscript
  * @property int $turnNumber
+ * @property string|null $inputTranscript
+ * @property string|null $botResponse
  */
 class SelfServiceConversationHistory extends Shape
 {
     /**
      * @param array{
-     *     botResponse?: string|null,
+     *     turnNumber: int,
      *     inputTranscript?: string|null,
-     *     turnNumber: int
+     *     botResponse?: string|null
      * } $args
      */
     public function __construct(array $args)

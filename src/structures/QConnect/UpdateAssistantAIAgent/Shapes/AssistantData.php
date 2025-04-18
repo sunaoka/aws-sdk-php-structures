@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateAssistantAIAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null $aiAgentConfiguration
- * @property string $assistantArn
  * @property string $assistantId
- * @property AssistantCapabilityConfiguration|null $capabilityConfiguration
- * @property string|null $description
- * @property AssistantIntegrationConfiguration|null $integrationConfiguration
+ * @property string $assistantArn
  * @property string $name
- * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
- * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED' $status
- * @property array<string, string>|null $tags
  * @property 'AGENT' $type
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED' $status
+ * @property string|null $description
+ * @property array<string, string>|null $tags
+ * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
+ * @property AssistantIntegrationConfiguration|null $integrationConfiguration
+ * @property AssistantCapabilityConfiguration|null $capabilityConfiguration
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null $aiAgentConfiguration
  */
 class AssistantData extends Shape
 {
     /**
      * @param array{
-     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null,
-     *     assistantArn: string,
      *     assistantId: string,
-     *     capabilityConfiguration?: AssistantCapabilityConfiguration|null,
-     *     description?: string|null,
-     *     integrationConfiguration?: AssistantIntegrationConfiguration|null,
+     *     assistantArn: string,
      *     name: string,
-     *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
+     *     type: 'AGENT',
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED',
+     *     description?: string|null,
      *     tags?: array<string, string>|null,
-     *     type: 'AGENT'
+     *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
+     *     integrationConfiguration?: AssistantIntegrationConfiguration|null,
+     *     capabilityConfiguration?: AssistantCapabilityConfiguration|null,
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null
      * } $args
      */
     public function __construct(array $args)

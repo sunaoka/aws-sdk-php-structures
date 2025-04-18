@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QConnect\DeleteContentAssociation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $contentAssociationId
- * @property string $contentId
  * @property string $knowledgeBaseId
+ * @property string $contentId
+ * @property string $contentAssociationId
  */
 class DeleteContentAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     contentAssociationId: string,
+     *     knowledgeBaseId: string,
      *     contentId: string,
-     *     knowledgeBaseId: string
+     *     contentAssociationId: string
      * } $args
      */
     public function __construct(array $args)

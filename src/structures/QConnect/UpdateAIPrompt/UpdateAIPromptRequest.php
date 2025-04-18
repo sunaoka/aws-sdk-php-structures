@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateAIPrompt;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiPromptId
- * @property string $assistantId
  * @property string|null $clientToken
- * @property string|null $description
- * @property Shapes\AIPromptTemplateConfiguration|null $templateConfiguration
+ * @property string $assistantId
+ * @property string $aiPromptId
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
+ * @property Shapes\AIPromptTemplateConfiguration|null $templateConfiguration
+ * @property string|null $description
  */
 class UpdateAIPromptRequest extends Request
 {
     /**
      * @param array{
-     *     aiPromptId: string,
-     *     assistantId: string,
      *     clientToken?: string|null,
-     *     description?: string|null,
+     *     assistantId: string,
+     *     aiPromptId: string,
+     *     visibilityStatus: 'SAVED'|'PUBLISHED',
      *     templateConfiguration?: Shapes\AIPromptTemplateConfiguration|null,
-     *     visibilityStatus: 'SAVED'|'PUBLISHED'
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

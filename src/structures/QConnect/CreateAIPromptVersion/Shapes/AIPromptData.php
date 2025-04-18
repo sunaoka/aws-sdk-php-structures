@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAIPromptVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $aiPromptArn
- * @property string $aiPromptId
- * @property 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS' $apiFormat
- * @property string $assistantArn
  * @property string $assistantId
- * @property string|null $description
- * @property string $modelId
- * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property string $assistantArn
+ * @property string $aiPromptId
+ * @property string $aiPromptArn
  * @property string $name
+ * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION' $type
+ * @property 'TEXT' $templateType
+ * @property string $modelId
+ * @property 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS'|'MESSAGES'|'TEXT_COMPLETIONS' $apiFormat
+ * @property AIPromptTemplateConfiguration $templateConfiguration
+ * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property string|null $description
+ * @property 'SAVED'|'PUBLISHED' $visibilityStatus
+ * @property array<string, string>|null $tags
  * @property 'SYSTEM'|'CUSTOMER'|null $origin
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null $status
- * @property array<string, string>|null $tags
- * @property AIPromptTemplateConfiguration $templateConfiguration
- * @property 'TEXT' $templateType
- * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION' $type
- * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  */
 class AIPromptData extends Shape
 {
     /**
      * @param array{
-     *     aiPromptArn: string,
-     *     aiPromptId: string,
-     *     apiFormat: 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS',
-     *     assistantArn: string,
      *     assistantId: string,
-     *     description?: string|null,
-     *     modelId: string,
-     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     assistantArn: string,
+     *     aiPromptId: string,
+     *     aiPromptArn: string,
      *     name: string,
-     *     origin?: 'SYSTEM'|'CUSTOMER'|null,
-     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null,
-     *     tags?: array<string, string>|null,
-     *     templateConfiguration: AIPromptTemplateConfiguration,
-     *     templateType: 'TEXT',
      *     type: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION',
-     *     visibilityStatus: 'SAVED'|'PUBLISHED'
+     *     templateType: 'TEXT',
+     *     modelId: string,
+     *     apiFormat: 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS'|'MESSAGES'|'TEXT_COMPLETIONS',
+     *     templateConfiguration: AIPromptTemplateConfiguration,
+     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     description?: string|null,
+     *     visibilityStatus: 'SAVED'|'PUBLISHED',
+     *     tags?: array<string, string>|null,
+     *     origin?: 'SYSTEM'|'CUSTOMER'|null,
+     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args)

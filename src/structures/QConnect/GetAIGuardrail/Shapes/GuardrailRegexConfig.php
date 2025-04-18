@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QConnect\GetAIGuardrail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BLOCK'|'ANONYMIZE' $action
- * @property string|null $description
  * @property string $name
+ * @property string|null $description
  * @property string $pattern
+ * @property 'BLOCK'|'ANONYMIZE' $action
  */
 class GuardrailRegexConfig extends Shape
 {
     /**
      * @param array{
-     *     action: 'BLOCK'|'ANONYMIZE',
-     *     description?: string|null,
      *     name: string,
-     *     pattern: string
+     *     description?: string|null,
+     *     pattern: string,
+     *     action: 'BLOCK'|'ANONYMIZE'
      * } $args
      */
     public function __construct(array $args)

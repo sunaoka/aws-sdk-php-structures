@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateMessageTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\MessageTemplateContentProvider|null $content
- * @property Shapes\MessageTemplateAttributes|null $defaultAttributes
  * @property string $knowledgeBaseId
- * @property string|null $language
  * @property string $messageTemplateId
+ * @property Shapes\MessageTemplateContentProvider|null $content
+ * @property string|null $language
+ * @property Shapes\MessageTemplateAttributes|null $defaultAttributes
  */
 class UpdateMessageTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     content?: Shapes\MessageTemplateContentProvider|null,
-     *     defaultAttributes?: Shapes\MessageTemplateAttributes|null,
      *     knowledgeBaseId: string,
+     *     messageTemplateId: string,
+     *     content?: Shapes\MessageTemplateContentProvider|null,
      *     language?: string|null,
-     *     messageTemplateId: string
+     *     defaultAttributes?: Shapes\MessageTemplateAttributes|null
      * } $args
      */
     public function __construct(array $args)

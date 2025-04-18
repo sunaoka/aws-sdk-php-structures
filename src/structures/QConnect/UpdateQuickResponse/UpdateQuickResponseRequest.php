@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateQuickResponse;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string>|null $channels
+ * @property string $knowledgeBaseId
+ * @property string $quickResponseId
+ * @property string|null $name
  * @property Shapes\QuickResponseDataProvider|null $content
  * @property string|null $contentType
- * @property string|null $description
  * @property Shapes\GroupingConfiguration|null $groupingConfiguration
- * @property bool|null $isActive
- * @property string $knowledgeBaseId
- * @property string|null $language
- * @property string|null $name
- * @property string $quickResponseId
- * @property bool|null $removeDescription
  * @property bool|null $removeGroupingConfiguration
- * @property bool|null $removeShortcutKey
+ * @property string|null $description
+ * @property bool|null $removeDescription
  * @property string|null $shortcutKey
+ * @property bool|null $removeShortcutKey
+ * @property bool|null $isActive
+ * @property list<string>|null $channels
+ * @property string|null $language
  */
 class UpdateQuickResponseRequest extends Request
 {
     /**
      * @param array{
-     *     channels?: list<string>|null,
+     *     knowledgeBaseId: string,
+     *     quickResponseId: string,
+     *     name?: string|null,
      *     content?: Shapes\QuickResponseDataProvider|null,
      *     contentType?: string|null,
-     *     description?: string|null,
      *     groupingConfiguration?: Shapes\GroupingConfiguration|null,
-     *     isActive?: bool|null,
-     *     knowledgeBaseId: string,
-     *     language?: string|null,
-     *     name?: string|null,
-     *     quickResponseId: string,
-     *     removeDescription?: bool|null,
      *     removeGroupingConfiguration?: bool|null,
+     *     description?: string|null,
+     *     removeDescription?: bool|null,
+     *     shortcutKey?: string|null,
      *     removeShortcutKey?: bool|null,
-     *     shortcutKey?: string|null
+     *     isActive?: bool|null,
+     *     channels?: list<string>|null,
+     *     language?: string|null
      * } $args
      */
     public function __construct(array $args)

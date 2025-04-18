@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAIPrompt;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS' $apiFormat
- * @property string $assistantId
  * @property string|null $clientToken
- * @property string|null $description
- * @property string $modelId
+ * @property string $assistantId
  * @property string $name
- * @property array<string, string>|null $tags
- * @property Shapes\AIPromptTemplateConfiguration $templateConfiguration
- * @property 'TEXT' $templateType
  * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION' $type
+ * @property Shapes\AIPromptTemplateConfiguration $templateConfiguration
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
+ * @property 'TEXT' $templateType
+ * @property string $modelId
+ * @property 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS'|'MESSAGES'|'TEXT_COMPLETIONS' $apiFormat
+ * @property array<string, string>|null $tags
+ * @property string|null $description
  */
 class CreateAIPromptRequest extends Request
 {
     /**
      * @param array{
-     *     apiFormat: 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS',
-     *     assistantId: string,
      *     clientToken?: string|null,
-     *     description?: string|null,
-     *     modelId: string,
+     *     assistantId: string,
      *     name: string,
-     *     tags?: array<string, string>|null,
-     *     templateConfiguration: Shapes\AIPromptTemplateConfiguration,
-     *     templateType: 'TEXT',
      *     type: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION',
-     *     visibilityStatus: 'SAVED'|'PUBLISHED'
+     *     templateConfiguration: Shapes\AIPromptTemplateConfiguration,
+     *     visibilityStatus: 'SAVED'|'PUBLISHED',
+     *     templateType: 'TEXT',
+     *     modelId: string,
+     *     apiFormat: 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS'|'MESSAGES'|'TEXT_COMPLETIONS',
+     *     tags?: array<string, string>|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

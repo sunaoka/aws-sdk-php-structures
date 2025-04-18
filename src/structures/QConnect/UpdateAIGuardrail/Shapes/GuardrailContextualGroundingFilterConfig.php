@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateAIGuardrail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $threshold
  * @property 'GROUNDING'|'RELEVANCE' $type
+ * @property double $threshold
  */
 class GuardrailContextualGroundingFilterConfig extends Shape
 {
     /**
      * @param array{
-     *     threshold: double,
-     *     type: 'GROUNDING'|'RELEVANCE'
+     *     type: 'GROUNDING'|'RELEVANCE',
+     *     threshold: double
      * } $args
      */
     public function __construct(array $args)

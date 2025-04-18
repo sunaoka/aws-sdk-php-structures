@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateMessageTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SystemEndpointAttributes|null $customerEndpoint
  * @property string|null $name
+ * @property SystemEndpointAttributes|null $customerEndpoint
  * @property SystemEndpointAttributes|null $systemEndpoint
  */
 class SystemAttributes extends Shape
 {
     /**
      * @param array{
-     *     customerEndpoint?: SystemEndpointAttributes|null,
      *     name?: string|null,
+     *     customerEndpoint?: SystemEndpointAttributes|null,
      *     systemEndpoint?: SystemEndpointAttributes|null
      * } $args
      */

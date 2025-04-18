@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assistantId
- * @property Shapes\AssistantAssociationInputData $association
  * @property 'KNOWLEDGE_BASE' $associationType
+ * @property Shapes\AssistantAssociationInputData $association
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
@@ -16,8 +16,8 @@ class CreateAssistantAssociationRequest extends Request
     /**
      * @param array{
      *     assistantId: string,
-     *     association: Shapes\AssistantAssociationInputData,
      *     associationType: 'KNOWLEDGE_BASE',
+     *     association: Shapes\AssistantAssociationInputData,
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args

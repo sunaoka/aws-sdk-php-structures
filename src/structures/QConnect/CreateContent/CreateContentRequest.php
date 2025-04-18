@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateContent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $knowledgeBaseId
- * @property array<string, string>|null $metadata
  * @property string $name
- * @property string|null $overrideLinkOutUri
- * @property array<string, string>|null $tags
  * @property string|null $title
+ * @property string|null $overrideLinkOutUri
+ * @property array<string, string>|null $metadata
  * @property string $uploadId
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateContentRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     knowledgeBaseId: string,
-     *     metadata?: array<string, string>|null,
      *     name: string,
-     *     overrideLinkOutUri?: string|null,
-     *     tags?: array<string, string>|null,
      *     title?: string|null,
-     *     uploadId: string
+     *     overrideLinkOutUri?: string|null,
+     *     metadata?: array<string, string>|null,
+     *     uploadId: string,
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)
