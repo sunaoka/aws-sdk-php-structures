@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'RETAIN'|'REMOVE'|null $retentionMode
  * @property 'STATIC'|'DYNAMIC'|null $storageType
  * @property string|null $workflowOwnerId
+ * @property string|null $workflowVersionName
  */
 class StartRunRequest extends Request
 {
@@ -45,7 +46,8 @@ class StartRunRequest extends Request
      *     requestId: string,
      *     retentionMode?: 'RETAIN'|'REMOVE'|null,
      *     storageType?: 'STATIC'|'DYNAMIC'|null,
-     *     workflowOwnerId?: string|null
+     *     workflowOwnerId?: string|null,
+     *     workflowVersionName?: string|null
      * } $args
      */
     public function __construct(array $args)
