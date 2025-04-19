@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\QConnect\DeleteAIAgentVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiAgentId
  * @property string $assistantId
+ * @property string $aiAgentId
  * @property int<1, max> $versionNumber
  */
 class DeleteAIAgentVersionRequest extends Request
 {
     /**
      * @param array{
-     *     aiAgentId: string,
      *     assistantId: string,
+     *     aiAgentId: string,
      *     versionNumber: int<1, max>
      * } $args
      */

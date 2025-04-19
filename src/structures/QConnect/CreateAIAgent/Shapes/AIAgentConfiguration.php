@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAIAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AnswerRecommendationAIAgentConfiguration|null $answerRecommendationAIAgentConfiguration
  * @property ManualSearchAIAgentConfiguration|null $manualSearchAIAgentConfiguration
+ * @property AnswerRecommendationAIAgentConfiguration|null $answerRecommendationAIAgentConfiguration
  * @property SelfServiceAIAgentConfiguration|null $selfServiceAIAgentConfiguration
  */
 class AIAgentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     answerRecommendationAIAgentConfiguration?: AnswerRecommendationAIAgentConfiguration|null,
      *     manualSearchAIAgentConfiguration?: ManualSearchAIAgentConfiguration|null,
+     *     answerRecommendationAIAgentConfiguration?: AnswerRecommendationAIAgentConfiguration|null,
      *     selfServiceAIAgentConfiguration?: SelfServiceAIAgentConfiguration|null
      * } $args
      */

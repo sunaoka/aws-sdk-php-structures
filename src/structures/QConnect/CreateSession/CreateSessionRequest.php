@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null $aiAgentConfiguration
- * @property string $assistantId
  * @property string|null $clientToken
- * @property string|null $description
+ * @property string $assistantId
  * @property string $name
- * @property Shapes\TagFilter|null $tagFilter
+ * @property string|null $description
  * @property array<string, string>|null $tags
+ * @property Shapes\TagFilter|null $tagFilter
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null $aiAgentConfiguration
  */
 class CreateSessionRequest extends Request
 {
     /**
      * @param array{
-     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null,
-     *     assistantId: string,
      *     clientToken?: string|null,
-     *     description?: string|null,
+     *     assistantId: string,
      *     name: string,
+     *     description?: string|null,
+     *     tags?: array<string, string>|null,
      *     tagFilter?: Shapes\TagFilter|null,
-     *     tags?: array<string, string>|null
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null
      * } $args
      */
     public function __construct(array $args)

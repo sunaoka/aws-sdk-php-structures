@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAIAgentVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $aiAgentArn
- * @property string $aiAgentId
- * @property string $assistantArn
  * @property string $assistantId
- * @property AIAgentConfiguration $configuration
- * @property string|null $description
- * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property string $assistantArn
+ * @property string $aiAgentId
+ * @property string $aiAgentArn
  * @property string $name
+ * @property 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE' $type
+ * @property AIAgentConfiguration $configuration
+ * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property string|null $description
+ * @property 'SAVED'|'PUBLISHED' $visibilityStatus
+ * @property array<string, string>|null $tags
  * @property 'SYSTEM'|'CUSTOMER'|null $origin
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null $status
- * @property array<string, string>|null $tags
- * @property 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE' $type
- * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  */
 class AIAgentData extends Shape
 {
     /**
      * @param array{
-     *     aiAgentArn: string,
-     *     aiAgentId: string,
-     *     assistantArn: string,
      *     assistantId: string,
-     *     configuration: AIAgentConfiguration,
-     *     description?: string|null,
-     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     assistantArn: string,
+     *     aiAgentId: string,
+     *     aiAgentArn: string,
      *     name: string,
-     *     origin?: 'SYSTEM'|'CUSTOMER'|null,
-     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null,
-     *     tags?: array<string, string>|null,
      *     type: 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE',
-     *     visibilityStatus: 'SAVED'|'PUBLISHED'
+     *     configuration: AIAgentConfiguration,
+     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     description?: string|null,
+     *     visibilityStatus: 'SAVED'|'PUBLISHED',
+     *     tags?: array<string, string>|null,
+     *     origin?: 'SYSTEM'|'CUSTOMER'|null,
+     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args)

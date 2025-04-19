@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\GetRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIGH'|'MEDIUM'|'LOW'|null $relevanceLevel
  * @property double|null $relevanceScore
+ * @property 'HIGH'|'MEDIUM'|'LOW'|null $relevanceLevel
  */
 class RankingData extends Shape
 {
     /**
      * @param array{
-     *     relevanceLevel?: 'HIGH'|'MEDIUM'|'LOW'|null,
-     *     relevanceScore?: double|null
+     *     relevanceScore?: double|null,
+     *     relevanceLevel?: 'HIGH'|'MEDIUM'|'LOW'|null
      * } $args
      */
     public function __construct(array $args = [])

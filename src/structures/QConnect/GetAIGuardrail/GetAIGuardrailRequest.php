@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\GetAIGuardrail;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiGuardrailId
  * @property string $assistantId
+ * @property string $aiGuardrailId
  */
 class GetAIGuardrailRequest extends Request
 {
     /**
      * @param array{
-     *     aiGuardrailId: string,
-     *     assistantId: string
+     *     assistantId: string,
+     *     aiGuardrailId: string
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAIPromptVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aiPromptId
  * @property string $assistantId
- * @property string|null $clientToken
+ * @property string $aiPromptId
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
+ * @property string|null $clientToken
  */
 class CreateAIPromptVersionRequest extends Request
 {
     /**
      * @param array{
-     *     aiPromptId: string,
      *     assistantId: string,
-     *     clientToken?: string|null,
-     *     modifiedTime?: \Aws\Api\DateTimeResult|null
+     *     aiPromptId: string,
+     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\QConnect\SearchSessions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $assistantId
- * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property string $assistantId
  * @property Shapes\SearchExpression $searchExpression
  */
 class SearchSessionsRequest extends Request
 {
     /**
      * @param array{
-     *     assistantId: string,
-     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     assistantId: string,
      *     searchExpression: Shapes\SearchExpression
      * } $args
      */

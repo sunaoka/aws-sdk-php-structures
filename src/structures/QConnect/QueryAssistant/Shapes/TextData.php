@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\QueryAssistant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DocumentText|null $excerpt
  * @property DocumentText|null $title
+ * @property DocumentText|null $excerpt
  */
 class TextData extends Shape
 {
     /**
      * @param array{
-     *     excerpt?: DocumentText|null,
-     *     title?: DocumentText|null
+     *     title?: DocumentText|null,
+     *     excerpt?: DocumentText|null
      * } $args
      */
     public function __construct(array $args = [])

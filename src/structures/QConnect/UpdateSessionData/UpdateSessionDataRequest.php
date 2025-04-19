@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assistantId
- * @property list<Shapes\RuntimeSessionData> $data
- * @property 'Custom'|null $namespace
  * @property string $sessionId
+ * @property 'Custom'|null $namespace
+ * @property list<Shapes\RuntimeSessionData> $data
  */
 class UpdateSessionDataRequest extends Request
 {
     /**
      * @param array{
      *     assistantId: string,
-     *     data: list<Shapes\RuntimeSessionData>,
+     *     sessionId: string,
      *     namespace?: 'Custom'|null,
-     *     sessionId: string
+     *     data: list<Shapes\RuntimeSessionData>
      * } $args
      */
     public function __construct(array $args)

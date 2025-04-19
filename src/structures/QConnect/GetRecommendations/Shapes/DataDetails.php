@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GenerativeDataDetails|null $generativeData
  * @property IntentDetectedDataDetails|null $intentDetectedData
  * @property SourceContentDataDetails|null $sourceContentData
+ * @property GenerativeChunkDataDetails|null $generativeChunkData
  */
 class DataDetails extends Shape
 {
@@ -17,7 +18,8 @@ class DataDetails extends Shape
      *     contentData?: ContentDataDetails|null,
      *     generativeData?: GenerativeDataDetails|null,
      *     intentDetectedData?: IntentDetectedDataDetails|null,
-     *     sourceContentData?: SourceContentDataDetails|null
+     *     sourceContentData?: SourceContentDataDetails|null,
+     *     generativeChunkData?: GenerativeChunkDataDetails|null
      * } $args
      */
     public function __construct(array $args = [])

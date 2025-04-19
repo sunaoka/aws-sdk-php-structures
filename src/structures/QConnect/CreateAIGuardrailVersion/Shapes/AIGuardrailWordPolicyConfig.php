@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAIGuardrailVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<GuardrailManagedWordsConfig>|null $managedWordListsConfig
  * @property list<GuardrailWordConfig>|null $wordsConfig
+ * @property list<GuardrailManagedWordsConfig>|null $managedWordListsConfig
  */
 class AIGuardrailWordPolicyConfig extends Shape
 {
     /**
      * @param array{
-     *     managedWordListsConfig?: list<GuardrailManagedWordsConfig>|null,
-     *     wordsConfig?: list<GuardrailWordConfig>|null
+     *     wordsConfig?: list<GuardrailWordConfig>|null,
+     *     managedWordListsConfig?: list<GuardrailManagedWordsConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

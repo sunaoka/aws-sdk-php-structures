@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assistantId
- * @property int<1, 100>|null $maxResults
- * @property string|null $nextToken
  * @property string $sessionId
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListMessagesRequest extends Request
 {
     /**
      * @param array{
      *     assistantId: string,
-     *     maxResults?: int<1, 100>|null,
+     *     sessionId: string,
      *     nextToken?: string|null,
-     *     sessionId: string
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)
