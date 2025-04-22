@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $EnableTokenRevocation
  * @property bool|null $EnablePropagateAdditionalUserContextData
  * @property int<3, 15>|null $AuthSessionValidity
+ * @property RefreshTokenRotationType|null $RefreshTokenRotation
  */
 class UserPoolClientType extends Shape
 {
@@ -59,7 +60,8 @@ class UserPoolClientType extends Shape
      *     PreventUserExistenceErrors?: 'LEGACY'|'ENABLED'|null,
      *     EnableTokenRevocation?: bool|null,
      *     EnablePropagateAdditionalUserContextData?: bool|null,
-     *     AuthSessionValidity?: int<3, 15>|null
+     *     AuthSessionValidity?: int<3, 15>|null,
+     *     RefreshTokenRotation?: RefreshTokenRotationType|null
      * } $args
      */
     public function __construct(array $args = [])

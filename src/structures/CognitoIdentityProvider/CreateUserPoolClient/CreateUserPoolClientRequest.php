@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnableTokenRevocation
  * @property bool|null $EnablePropagateAdditionalUserContextData
  * @property int<3, 15>|null $AuthSessionValidity
+ * @property Shapes\RefreshTokenRotationType|null $RefreshTokenRotation
  */
 class CreateUserPoolClientRequest extends Request
 {
@@ -53,7 +54,8 @@ class CreateUserPoolClientRequest extends Request
      *     PreventUserExistenceErrors?: 'LEGACY'|'ENABLED'|null,
      *     EnableTokenRevocation?: bool|null,
      *     EnablePropagateAdditionalUserContextData?: bool|null,
-     *     AuthSessionValidity?: int<3, 15>|null
+     *     AuthSessionValidity?: int<3, 15>|null,
+     *     RefreshTokenRotation?: Shapes\RefreshTokenRotationType|null
      * } $args
      */
     public function __construct(array $args)
