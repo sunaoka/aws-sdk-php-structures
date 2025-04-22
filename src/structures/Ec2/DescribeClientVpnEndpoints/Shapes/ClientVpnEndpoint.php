@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClientConnectResponseOptions|null $ClientConnectOptions
  * @property int|null $SessionTimeoutHours
  * @property ClientLoginBannerResponseOptions|null $ClientLoginBannerOptions
+ * @property ClientRouteEnforcementResponseOptions|null $ClientRouteEnforcementOptions
  * @property bool|null $DisconnectOnSessionTimeout
  */
 class ClientVpnEndpoint extends Shape
@@ -57,6 +58,7 @@ class ClientVpnEndpoint extends Shape
      *     ClientConnectOptions?: ClientConnectResponseOptions|null,
      *     SessionTimeoutHours?: int|null,
      *     ClientLoginBannerOptions?: ClientLoginBannerResponseOptions|null,
+     *     ClientRouteEnforcementOptions?: ClientRouteEnforcementResponseOptions|null,
      *     DisconnectOnSessionTimeout?: bool|null
      * } $args
      */
