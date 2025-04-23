@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property list<ServiceRevisionSummary>|null $sourceServiceRevisions
  * @property ServiceRevisionSummary|null $targetServiceRevision
- * @property 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED'|null $status
+ * @property 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_REQUESTED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED'|null $status
  * @property string|null $statusReason
  * @property DeploymentConfiguration|null $deploymentConfiguration
  * @property Rollback|null $rollback
@@ -36,7 +36,7 @@ class ServiceDeployment extends Shape
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     sourceServiceRevisions?: list<ServiceRevisionSummary>|null,
      *     targetServiceRevision?: ServiceRevisionSummary|null,
-     *     status?: 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED'|null,
+     *     status?: 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_REQUESTED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED'|null,
      *     statusReason?: string|null,
      *     deploymentConfiguration?: DeploymentConfiguration|null,
      *     rollback?: Rollback|null,
