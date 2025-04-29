@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CustomErrorResponses|null $CustomErrorResponses
  * @property string $Comment
  * @property LoggingConfig|null $Logging
- * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|null $PriceClass
+ * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None'|null $PriceClass
  * @property bool $Enabled
  * @property ViewerCertificate|null $ViewerCertificate
  * @property Restrictions|null $Restrictions
@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ContinuousDeploymentPolicyId
  * @property bool|null $Staging
  * @property string|null $AnycastIpListId
+ * @property TenantConfig|null $TenantConfig
+ * @property 'direct'|'tenant-only'|null $ConnectionMode
  */
 class DistributionConfig extends Shape
 {
@@ -40,7 +42,7 @@ class DistributionConfig extends Shape
      *     CustomErrorResponses?: CustomErrorResponses|null,
      *     Comment: string,
      *     Logging?: LoggingConfig|null,
-     *     PriceClass?: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|null,
+     *     PriceClass?: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None'|null,
      *     Enabled: bool,
      *     ViewerCertificate?: ViewerCertificate|null,
      *     Restrictions?: Restrictions|null,
@@ -49,7 +51,9 @@ class DistributionConfig extends Shape
      *     IsIPV6Enabled?: bool|null,
      *     ContinuousDeploymentPolicyId?: string|null,
      *     Staging?: bool|null,
-     *     AnycastIpListId?: string|null
+     *     AnycastIpListId?: string|null,
+     *     TenantConfig?: TenantConfig|null,
+     *     ConnectionMode?: 'direct'|'tenant-only'|null
      * } $args
      */
     public function __construct(array $args)
