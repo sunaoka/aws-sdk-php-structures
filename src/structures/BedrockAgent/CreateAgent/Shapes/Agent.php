@@ -20,7 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $failureReasons
  * @property string|null $foundationModel
  * @property GuardrailConfiguration|null $guardrailConfiguration
- * @property int<60, 3600> $idleSessionTTLInSeconds
+ * @property int<60, 5400> $idleSessionTTLInSeconds
  * @property string|null $instruction
  * @property MemoryConfiguration|null $memoryConfiguration
  * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null $orchestrationType
@@ -48,7 +48,7 @@ class Agent extends Shape
      *     failureReasons?: list<string>|null,
      *     foundationModel?: string|null,
      *     guardrailConfiguration?: GuardrailConfiguration|null,
-     *     idleSessionTTLInSeconds: int<60, 3600>,
+     *     idleSessionTTLInSeconds: int<60, 5400>,
      *     instruction?: string|null,
      *     memoryConfiguration?: MemoryConfiguration|null,
      *     orchestrationType?: 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null,
