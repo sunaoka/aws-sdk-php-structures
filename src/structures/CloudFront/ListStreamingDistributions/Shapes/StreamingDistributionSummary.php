@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Aliases $Aliases
  * @property TrustedSigners $TrustedSigners
  * @property string $Comment
- * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All' $PriceClass
+ * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None' $PriceClass
  * @property bool $Enabled
  */
 class StreamingDistributionSummary extends Shape
@@ -30,7 +30,7 @@ class StreamingDistributionSummary extends Shape
      *     Aliases: Aliases,
      *     TrustedSigners: TrustedSigners,
      *     Comment: string,
-     *     PriceClass: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All',
+     *     PriceClass: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None',
      *     Enabled: bool
      * } $args
      */

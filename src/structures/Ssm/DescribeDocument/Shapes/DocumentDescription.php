@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property list<DocumentParameter>|null $Parameters
  * @property list<'Windows'|'Linux'|'MacOS'>|null $PlatformTypes
- * @property 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|null $DocumentType
+ * @property 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|'ManualApprovalPolicy'|'AutoApprovalPolicy'|null $DocumentType
  * @property string|null $SchemaVersion
  * @property string|null $LatestVersion
  * @property string|null $DefaultVersion
@@ -54,7 +54,7 @@ class DocumentDescription extends Shape
      *     Description?: string|null,
      *     Parameters?: list<DocumentParameter>|null,
      *     PlatformTypes?: list<'Windows'|'Linux'|'MacOS'>|null,
-     *     DocumentType?: 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|null,
+     *     DocumentType?: 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|'ManualApprovalPolicy'|'AutoApprovalPolicy'|null,
      *     SchemaVersion?: string|null,
      *     LatestVersion?: string|null,
      *     DefaultVersion?: string|null,

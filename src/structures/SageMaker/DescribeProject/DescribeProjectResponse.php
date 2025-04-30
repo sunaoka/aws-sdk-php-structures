@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ProjectName
  * @property string $ProjectId
  * @property string|null $ProjectDescription
- * @property Shapes\ServiceCatalogProvisioningDetails $ServiceCatalogProvisioningDetails
+ * @property Shapes\ServiceCatalogProvisioningDetails|null $ServiceCatalogProvisioningDetails
  * @property Shapes\ServiceCatalogProvisionedProductDetails|null $ServiceCatalogProvisionedProductDetails
  * @property 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed' $ProjectStatus
  * @property Shapes\UserContext|null $CreatedBy

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $displayName
  * @property string|null $applicationId
  * @property string|null $applicationArn
- * @property 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP'|null $identityType
+ * @property 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP'|'ANONYMOUS'|null $identityType
  * @property string|null $iamIdentityProviderArn
  * @property string|null $identityCenterApplicationArn
  * @property string|null $roleArn

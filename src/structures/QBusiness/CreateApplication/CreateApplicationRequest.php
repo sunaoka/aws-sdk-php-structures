@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $displayName
  * @property string|null $roleArn
- * @property 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP'|null $identityType
+ * @property 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP'|'ANONYMOUS'|null $identityType
  * @property string|null $iamIdentityProviderArn
  * @property string|null $identityCenterInstanceArn
  * @property list<string>|null $clientIdsForOIDC
@@ -26,7 +26,7 @@ class CreateApplicationRequest extends Request
      * @param array{
      *     displayName: string,
      *     roleArn?: string|null,
-     *     identityType?: 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP'|null,
+     *     identityType?: 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP'|'ANONYMOUS'|null,
      *     iamIdentityProviderArn?: string|null,
      *     identityCenterInstanceArn?: string|null,
      *     clientIdsForOIDC?: list<string>|null,

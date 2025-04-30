@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\GetProtectConfigurationCount
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOW'|'BLOCK' $ProtectStatus
+ * @property 'ALLOW'|'BLOCK'|'MONITOR'|'FILTER' $ProtectStatus
  */
 class ProtectConfigurationCountryRuleSetInformation extends Shape
 {
     /**
-     * @param array{ProtectStatus: 'ALLOW'|'BLOCK'} $args
+     * @param array{ProtectStatus: 'ALLOW'|'BLOCK'|'MONITOR'|'FILTER'} $args
      */
     public function __construct(array $args)
     {

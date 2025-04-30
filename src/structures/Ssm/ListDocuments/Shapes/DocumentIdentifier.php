@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VersionName
  * @property list<'Windows'|'Linux'|'MacOS'>|null $PlatformTypes
  * @property string|null $DocumentVersion
- * @property 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|null $DocumentType
+ * @property 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|'ManualApprovalPolicy'|'AutoApprovalPolicy'|null $DocumentType
  * @property string|null $SchemaVersion
  * @property 'YAML'|'JSON'|'TEXT'|null $DocumentFormat
  * @property string|null $TargetType
@@ -32,7 +32,7 @@ class DocumentIdentifier extends Shape
      *     VersionName?: string|null,
      *     PlatformTypes?: list<'Windows'|'Linux'|'MacOS'>|null,
      *     DocumentVersion?: string|null,
-     *     DocumentType?: 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|null,
+     *     DocumentType?: 'Command'|'Policy'|'Automation'|'Session'|'Package'|'ApplicationConfiguration'|'ApplicationConfigurationSchema'|'DeploymentStrategy'|'ChangeCalendar'|'Automation.ChangeTemplate'|'ProblemAnalysis'|'ProblemAnalysisTemplate'|'CloudFormation'|'ConformancePackTemplate'|'QuickSetup'|'ManualApprovalPolicy'|'AutoApprovalPolicy'|null,
      *     SchemaVersion?: string|null,
      *     DocumentFormat?: 'YAML'|'JSON'|'TEXT'|null,
      *     TargetType?: string|null,
