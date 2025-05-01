@@ -42,6 +42,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DisconnectDetails|null $DisconnectDetails
  * @property AdditionalEmailRecipients|null $AdditionalEmailRecipients
  * @property array<string, SegmentAttributeValue>|null $SegmentAttributes
+ * @property list<RecordingInfo>|null $Recordings
+ * @property string|null $DisconnectReason
+ * @property array<string, ContactEvaluation>|null $ContactEvaluations
+ * @property ContactDetails|null $ContactDetails
+ * @property array<string, string>|null $Attributes
  */
 class Contact extends Shape
 {
@@ -83,7 +88,12 @@ class Contact extends Shape
      *     QualityMetrics?: QualityMetrics|null,
      *     DisconnectDetails?: DisconnectDetails|null,
      *     AdditionalEmailRecipients?: AdditionalEmailRecipients|null,
-     *     SegmentAttributes?: array<string, SegmentAttributeValue>|null
+     *     SegmentAttributes?: array<string, SegmentAttributeValue>|null,
+     *     Recordings?: list<RecordingInfo>|null,
+     *     DisconnectReason?: string|null,
+     *     ContactEvaluations?: array<string, ContactEvaluation>|null,
+     *     ContactDetails?: ContactDetails|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

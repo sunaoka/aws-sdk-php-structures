@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ValidationSettings $validationSettings
  * @property string|null $description
  * @property 'ENABLED'|'DISABLED'|null $deletionProtection
+ * @property array<string, string>|null $tags
  */
 class CreatePolicyStoreRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreatePolicyStoreRequest extends Request
      *     clientToken?: string|null,
      *     validationSettings: Shapes\ValidationSettings,
      *     description?: string|null,
-     *     deletionProtection?: 'ENABLED'|'DISABLED'|null
+     *     deletionProtection?: 'ENABLED'|'DISABLED'|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)
