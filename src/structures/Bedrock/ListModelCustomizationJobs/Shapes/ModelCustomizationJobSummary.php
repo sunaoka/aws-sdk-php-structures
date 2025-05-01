@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobName
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $status
  * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property StatusDetails|null $statusDetails
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property string|null $customModelArn
@@ -25,6 +26,7 @@ class ModelCustomizationJobSummary extends Shape
      *     jobName: string,
      *     status: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
      *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     statusDetails?: StatusDetails|null,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     endTime?: \Aws\Api\DateTimeResult|null,
      *     customModelArn?: string|null,

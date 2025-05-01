@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $kmsKeyId
  * @property 'ACTIVATED'|'DELETED'|'ARCHIVED'|'DISABLED'|null $dataProtectionStatus
  * @property list<'ACCOUNT_DATA_PROTECTION'>|null $inheritedProperties
- * @property 'STANDARD'|'INFREQUENT_ACCESS'|null $logGroupClass
+ * @property 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null $logGroupClass
  * @property string|null $logGroupArn
  */
 class LogGroup extends Shape
@@ -30,7 +30,7 @@ class LogGroup extends Shape
      *     kmsKeyId?: string|null,
      *     dataProtectionStatus?: 'ACTIVATED'|'DELETED'|'ARCHIVED'|'DISABLED'|null,
      *     inheritedProperties?: list<'ACCOUNT_DATA_PROTECTION'>|null,
-     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|null,
+     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null,
      *     logGroupArn?: string|null
      * } $args
      */

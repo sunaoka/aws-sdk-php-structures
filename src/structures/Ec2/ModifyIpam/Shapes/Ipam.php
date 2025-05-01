@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StateMessage
  * @property 'free'|'advanced'|null $Tier
  * @property bool|null $EnablePrivateGua
+ * @property 'ipam-owner'|'resource-owner'|null $MeteredAccount
  */
 class Ipam extends Shape
 {
@@ -43,7 +44,8 @@ class Ipam extends Shape
      *     ResourceDiscoveryAssociationCount?: int|null,
      *     StateMessage?: string|null,
      *     Tier?: 'free'|'advanced'|null,
-     *     EnablePrivateGua?: bool|null
+     *     EnablePrivateGua?: bool|null,
+     *     MeteredAccount?: 'ipam-owner'|'resource-owner'|null
      * } $args
      */
     public function __construct(array $args = [])

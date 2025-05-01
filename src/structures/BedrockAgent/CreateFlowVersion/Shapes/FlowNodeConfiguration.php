@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AgentFlowNodeConfiguration|null $agent
  * @property CollectorFlowNodeConfiguration|null $collector
  * @property ConditionFlowNodeConfiguration|null $condition
+ * @property InlineCodeFlowNodeConfiguration|null $inlineCode
  * @property InputFlowNodeConfiguration|null $input
  * @property IteratorFlowNodeConfiguration|null $iterator
  * @property KnowledgeBaseFlowNodeConfiguration|null $knowledgeBase
@@ -25,6 +26,7 @@ class FlowNodeConfiguration extends Shape
      *     agent?: AgentFlowNodeConfiguration|null,
      *     collector?: CollectorFlowNodeConfiguration|null,
      *     condition?: ConditionFlowNodeConfiguration|null,
+     *     inlineCode?: InlineCodeFlowNodeConfiguration|null,
      *     input?: InputFlowNodeConfiguration|null,
      *     iterator?: IteratorFlowNodeConfiguration|null,
      *     knowledgeBase?: KnowledgeBaseFlowNodeConfiguration|null,

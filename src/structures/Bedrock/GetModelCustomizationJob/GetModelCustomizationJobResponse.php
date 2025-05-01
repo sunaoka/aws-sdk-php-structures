@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $roleArn
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $status
  * @property string|null $failureMessage
+ * @property Shapes\StatusDetails|null $statusDetails
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  * @property \Aws\Api\DateTimeResult|null $endTime

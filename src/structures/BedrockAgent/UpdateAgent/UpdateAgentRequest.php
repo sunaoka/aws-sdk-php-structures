@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string $foundationModel
  * @property Shapes\GuardrailConfiguration|null $guardrailConfiguration
- * @property int<60, 3600>|null $idleSessionTTLInSeconds
+ * @property int<60, 5400>|null $idleSessionTTLInSeconds
  * @property string|null $instruction
  * @property Shapes\MemoryConfiguration|null $memoryConfiguration
  * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null $orchestrationType
@@ -33,7 +33,7 @@ class UpdateAgentRequest extends Request
      *     description?: string|null,
      *     foundationModel: string,
      *     guardrailConfiguration?: Shapes\GuardrailConfiguration|null,
-     *     idleSessionTTLInSeconds?: int<60, 3600>|null,
+     *     idleSessionTTLInSeconds?: int<60, 5400>|null,
      *     instruction?: string|null,
      *     memoryConfiguration?: Shapes\MemoryConfiguration|null,
      *     orchestrationType?: 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null,
