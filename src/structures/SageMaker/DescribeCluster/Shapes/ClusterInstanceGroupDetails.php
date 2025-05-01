@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TrainingPlanArn
  * @property string|null $TrainingPlanStatus
  * @property VpcConfig|null $OverrideVpcConfig
+ * @property ScheduledUpdateConfig|null $ScheduledUpdateConfig
  */
 class ClusterInstanceGroupDetails extends Shape
 {
@@ -35,7 +36,8 @@ class ClusterInstanceGroupDetails extends Shape
      *     Status?: 'InService'|'Creating'|'Updating'|'Failed'|'Degraded'|'SystemUpdating'|'Deleting'|null,
      *     TrainingPlanArn?: string|null,
      *     TrainingPlanStatus?: string|null,
-     *     OverrideVpcConfig?: VpcConfig|null
+     *     OverrideVpcConfig?: VpcConfig|null,
+     *     ScheduledUpdateConfig?: ScheduledUpdateConfig|null
      * } $args
      */
     public function __construct(array $args = [])

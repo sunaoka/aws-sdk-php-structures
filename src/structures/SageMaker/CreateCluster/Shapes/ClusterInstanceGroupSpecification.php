@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'InstanceStress'|'InstanceConnectivity'>|null $OnStartDeepHealthChecks
  * @property string|null $TrainingPlanArn
  * @property VpcConfig|null $OverrideVpcConfig
+ * @property ScheduledUpdateConfig|null $ScheduledUpdateConfig
  */
 class ClusterInstanceGroupSpecification extends Shape
 {
@@ -29,7 +30,8 @@ class ClusterInstanceGroupSpecification extends Shape
      *     InstanceStorageConfigs?: list<ClusterInstanceStorageConfig>|null,
      *     OnStartDeepHealthChecks?: list<'InstanceStress'|'InstanceConnectivity'>|null,
      *     TrainingPlanArn?: string|null,
-     *     OverrideVpcConfig?: VpcConfig|null
+     *     OverrideVpcConfig?: VpcConfig|null,
+     *     ScheduledUpdateConfig?: ScheduledUpdateConfig|null
      * } $args
      */
     public function __construct(array $args)
