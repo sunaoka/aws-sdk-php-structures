@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $VolumeSize
  * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
  * @property int|null $Throughput
+ * @property int|null $VolumeInitializationRate
  */
 class LaunchTemplateEbsBlockDevice extends Shape
 {
@@ -25,7 +26,8 @@ class LaunchTemplateEbsBlockDevice extends Shape
      *     SnapshotId?: string|null,
      *     VolumeSize?: int|null,
      *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null,
-     *     Throughput?: int|null
+     *     Throughput?: int|null,
+     *     VolumeInitializationRate?: int|null
      * } $args
      */
     public function __construct(array $args = [])

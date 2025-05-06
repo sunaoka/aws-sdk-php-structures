@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $MultiAttachEnabled
  * @property int|null $Throughput
  * @property string|null $ClientToken
+ * @property int|null $VolumeInitializationRate
  * @property Shapes\OperatorRequest|null $Operator
  * @property bool|null $DryRun
  */
@@ -36,6 +37,7 @@ class CreateVolumeRequest extends Request
      *     MultiAttachEnabled?: bool|null,
      *     Throughput?: int|null,
      *     ClientToken?: string|null,
+     *     VolumeInitializationRate?: int|null,
      *     Operator?: Shapes\OperatorRequest|null,
      *     DryRun?: bool|null
      * } $args

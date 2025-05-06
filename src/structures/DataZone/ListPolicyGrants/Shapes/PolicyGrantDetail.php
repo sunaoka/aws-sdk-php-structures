@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Unit|null $delegateCreateEnvironmentProfile
  * @property OverrideDomainUnitOwnersPolicyGrantDetail|null $overrideDomainUnitOwners
  * @property OverrideProjectOwnersPolicyGrantDetail|null $overrideProjectOwners
+ * @property UseAssetTypePolicyGrantDetail|null $useAssetType
  */
 class PolicyGrantDetail extends Shape
 {
@@ -35,7 +36,8 @@ class PolicyGrantDetail extends Shape
      *     createProjectFromProjectProfile?: CreateProjectFromProjectProfilePolicyGrantDetail|null,
      *     delegateCreateEnvironmentProfile?: Unit|null,
      *     overrideDomainUnitOwners?: OverrideDomainUnitOwnersPolicyGrantDetail|null,
-     *     overrideProjectOwners?: OverrideProjectOwnersPolicyGrantDetail|null
+     *     overrideProjectOwners?: OverrideProjectOwnersPolicyGrantDetail|null,
+     *     useAssetType?: UseAssetTypePolicyGrantDetail|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $ParControl
  * @property int<1, 2147483647>|null $ParDenominator
  * @property int<1, 2147483647>|null $ParNumerator
+ * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'>|null $PerFrameMetrics
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
  * @property 'DISABLED'|'ENABLED'|null $SlowPal
  * @property 'NONE'|'HARD'|null $Telecine
@@ -33,6 +34,7 @@ class ProresSettings extends Shape
      *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
      *     ParDenominator?: int<1, 2147483647>|null,
      *     ParNumerator?: int<1, 2147483647>|null,
+     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'>|null,
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,
      *     SlowPal?: 'DISABLED'|'ENABLED'|null,
      *     Telecine?: 'NONE'|'HARD'|null
