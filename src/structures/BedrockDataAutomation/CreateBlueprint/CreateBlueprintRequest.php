@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $blueprintName
- * @property 'DOCUMENT'|'IMAGE' $type
+ * @property 'DOCUMENT'|'IMAGE'|'AUDIO' $type
  * @property 'DEVELOPMENT'|'LIVE'|null $blueprintStage
  * @property string $schema
  * @property string|null $clientToken
@@ -18,7 +18,7 @@ class CreateBlueprintRequest extends Request
     /**
      * @param array{
      *     blueprintName: string,
-     *     type: 'DOCUMENT'|'IMAGE',
+     *     type: 'DOCUMENT'|'IMAGE'|'AUDIO',
      *     blueprintStage?: 'DEVELOPMENT'|'LIVE'|null,
      *     schema: string,
      *     clientToken?: string|null,
