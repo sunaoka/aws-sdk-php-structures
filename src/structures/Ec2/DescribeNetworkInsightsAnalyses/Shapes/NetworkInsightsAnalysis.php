@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $NetworkInsightsPathId
  * @property list<string>|null $AdditionalAccounts
  * @property list<string>|null $FilterInArns
+ * @property list<string>|null $FilterOutArns
  * @property \Aws\Api\DateTimeResult|null $StartDate
  * @property 'running'|'succeeded'|'failed'|null $Status
  * @property string|null $StatusMessage
@@ -31,6 +32,7 @@ class NetworkInsightsAnalysis extends Shape
      *     NetworkInsightsPathId?: string|null,
      *     AdditionalAccounts?: list<string>|null,
      *     FilterInArns?: list<string>|null,
+     *     FilterOutArns?: list<string>|null,
      *     StartDate?: \Aws\Api\DateTimeResult|null,
      *     Status?: 'running'|'succeeded'|'failed'|null,
      *     StatusMessage?: string|null,

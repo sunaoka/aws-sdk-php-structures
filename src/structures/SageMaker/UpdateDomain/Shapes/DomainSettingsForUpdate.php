@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $SecurityGroupIds
  * @property DockerSettings|null $DockerSettings
  * @property AmazonQSettings|null $AmazonQSettings
+ * @property UnifiedStudioSettings|null $UnifiedStudioSettings
  */
 class DomainSettingsForUpdate extends Shape
 {
@@ -19,7 +20,8 @@ class DomainSettingsForUpdate extends Shape
      *     ExecutionRoleIdentityConfig?: 'USER_PROFILE_NAME'|'DISABLED'|null,
      *     SecurityGroupIds?: list<string>|null,
      *     DockerSettings?: DockerSettings|null,
-     *     AmazonQSettings?: AmazonQSettings|null
+     *     AmazonQSettings?: AmazonQSettings|null,
+     *     UnifiedStudioSettings?: UnifiedStudioSettings|null
      * } $args
      */
     public function __construct(array $args = [])

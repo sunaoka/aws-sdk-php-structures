@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CanaryRunStatus|null $Status
  * @property CanaryRunTimeline|null $Timeline
  * @property string|null $ArtifactS3Location
+ * @property CanaryDryRunConfigOutput|null $DryRunConfig
  */
 class CanaryRun extends Shape
 {
@@ -19,7 +20,8 @@ class CanaryRun extends Shape
      *     Name?: string|null,
      *     Status?: CanaryRunStatus|null,
      *     Timeline?: CanaryRunTimeline|null,
-     *     ArtifactS3Location?: string|null
+     *     ArtifactS3Location?: string|null,
+     *     DryRunConfig?: CanaryDryRunConfigOutput|null
      * } $args
      */
     public function __construct(array $args = [])

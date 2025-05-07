@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SpaceJupyterLabAppSettings|null $JupyterLabAppSettings
  * @property 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas'|null $AppType
  * @property SpaceStorageSettings|null $SpaceStorageSettings
+ * @property 'ENABLED'|'DISABLED'|null $SpaceManagedResources
  * @property list<CustomFileSystem>|null $CustomFileSystems
  */
 class SpaceSettings extends Shape
@@ -23,6 +24,7 @@ class SpaceSettings extends Shape
      *     JupyterLabAppSettings?: SpaceJupyterLabAppSettings|null,
      *     AppType?: 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas'|null,
      *     SpaceStorageSettings?: SpaceStorageSettings|null,
+     *     SpaceManagedResources?: 'ENABLED'|'DISABLED'|null,
      *     CustomFileSystems?: list<CustomFileSystem>|null
      * } $args
      */
