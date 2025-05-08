@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\PutInlinePolicyToPermissionSet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $InlinePolicy
  * @property string $InstanceArn
  * @property string $PermissionSetArn
+ * @property string $InlinePolicy
  */
 class PutInlinePolicyToPermissionSetRequest extends Request
 {
     /**
      * @param array{
-     *     InlinePolicy: string,
      *     InstanceArn: string,
-     *     PermissionSetArn: string
+     *     PermissionSetArn: string,
+     *     InlinePolicy: string
      * } $args
      */
     public function __construct(array $args)

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $KmsKeyId
  * @property array<string, string>|null $AdditionalEncryptionContext
  * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\IntegrationConfig|null $IntegrationConfig
  */
 class CreateIntegrationRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateIntegrationRequest extends Request
      *     DataFilter?: string|null,
      *     KmsKeyId?: string|null,
      *     AdditionalEncryptionContext?: array<string, string>|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     IntegrationConfig?: Shapes\IntegrationConfig|null
      * } $args
      */
     public function __construct(array $args)

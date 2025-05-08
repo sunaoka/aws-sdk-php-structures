@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\PutApplicationAccessScope;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ApplicationArn
- * @property list<string>|null $AuthorizedTargets
  * @property string $Scope
+ * @property list<string>|null $AuthorizedTargets
+ * @property string $ApplicationArn
  */
 class PutApplicationAccessScopeRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationArn: string,
+     *     Scope: string,
      *     AuthorizedTargets?: list<string>|null,
-     *     Scope: string
+     *     ApplicationArn: string
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListApplicationProviders\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $Description
  * @property string|null $DisplayName
  * @property string|null $IconUrl
+ * @property string|null $Description
  */
 class DisplayData extends Shape
 {
     /**
      * @param array{
-     *     Description?: string|null,
      *     DisplayName?: string|null,
-     *     IconUrl?: string|null
+     *     IconUrl?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

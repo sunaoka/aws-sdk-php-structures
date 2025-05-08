@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ApplicationProviderArn
- * @property DisplayData|null $DisplayData
  * @property 'SAML'|'OAUTH'|null $FederationProtocol
+ * @property DisplayData|null $DisplayData
  * @property ResourceServerConfig|null $ResourceServerConfig
  */
 class ApplicationProvider extends Shape
@@ -15,8 +15,8 @@ class ApplicationProvider extends Shape
     /**
      * @param array{
      *     ApplicationProviderArn: string,
-     *     DisplayData?: DisplayData|null,
      *     FederationProtocol?: 'SAML'|'OAUTH'|null,
+     *     DisplayData?: DisplayData|null,
      *     ResourceServerConfig?: ResourceServerConfig|null
      * } $args
      */

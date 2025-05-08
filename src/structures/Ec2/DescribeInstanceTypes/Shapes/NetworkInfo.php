@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $EncryptionInTransitSupported
  * @property bool|null $EnaSrdSupported
  * @property list<'default'|'vpc-1'|'ebs-1'>|null $BandwidthWeightings
+ * @property 'unsupported'|'supported'|null $FlexibleEnaQueuesSupport
  */
 class NetworkInfo extends Shape
 {
@@ -37,7 +38,8 @@ class NetworkInfo extends Shape
      *     EfaInfo?: EfaInfo|null,
      *     EncryptionInTransitSupported?: bool|null,
      *     EnaSrdSupported?: bool|null,
-     *     BandwidthWeightings?: list<'default'|'vpc-1'|'ebs-1'>|null
+     *     BandwidthWeightings?: list<'default'|'vpc-1'|'ebs-1'>|null,
+     *     FlexibleEnaQueuesSupport?: 'unsupported'|'supported'|null
      * } $args
      */
     public function __construct(array $args = [])
