@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'USER_PROFILE_NAME'|'DISABLED'|null $ExecutionRoleIdentityConfig
  * @property DockerSettings|null $DockerSettings
  * @property AmazonQSettings|null $AmazonQSettings
+ * @property UnifiedStudioSettings|null $UnifiedStudioSettings
  */
 class DomainSettings extends Shape
 {
@@ -19,7 +20,8 @@ class DomainSettings extends Shape
      *     RStudioServerProDomainSettings?: RStudioServerProDomainSettings|null,
      *     ExecutionRoleIdentityConfig?: 'USER_PROFILE_NAME'|'DISABLED'|null,
      *     DockerSettings?: DockerSettings|null,
-     *     AmazonQSettings?: AmazonQSettings|null
+     *     AmazonQSettings?: AmazonQSettings|null,
+     *     UnifiedStudioSettings?: UnifiedStudioSettings|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AUTOMATIC'|'OFF'|null $ProvisionedResourceCleanup
  * @property array<string, string>|null $Tags
  * @property ArtifactConfigOutput|null $ArtifactConfig
+ * @property DryRunConfigOutput|null $DryRunConfig
  */
 class Canary extends Shape
 {
@@ -45,7 +46,8 @@ class Canary extends Shape
      *     VisualReference?: VisualReferenceOutput|null,
      *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null,
      *     Tags?: array<string, string>|null,
-     *     ArtifactConfig?: ArtifactConfigOutput|null
+     *     ArtifactConfig?: ArtifactConfigOutput|null,
+     *     DryRunConfig?: DryRunConfigOutput|null
      * } $args
      */
     public function __construct(array $args = [])
