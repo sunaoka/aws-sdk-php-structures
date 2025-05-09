@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspaceDirectories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $EnableWorkDocs
  * @property bool|null $EnableInternetAccess
  * @property string|null $DefaultOu
  * @property string|null $CustomSecurityGroupId
@@ -17,7 +16,6 @@ class DefaultWorkspaceCreationProperties extends Shape
 {
     /**
      * @param array{
-     *     EnableWorkDocs?: bool|null,
      *     EnableInternetAccess?: bool|null,
      *     DefaultOu?: string|null,
      *     CustomSecurityGroupId?: string|null,

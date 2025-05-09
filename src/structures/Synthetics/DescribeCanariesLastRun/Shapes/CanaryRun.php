@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
+ * @property string|null $ScheduledRunId
+ * @property int<1, 2>|null $RetryAttempt
  * @property string|null $Name
  * @property CanaryRunStatus|null $Status
  * @property CanaryRunTimeline|null $Timeline
@@ -17,6 +19,8 @@ class CanaryRun extends Shape
     /**
      * @param array{
      *     Id?: string|null,
+     *     ScheduledRunId?: string|null,
+     *     RetryAttempt?: int<1, 2>|null,
      *     Name?: string|null,
      *     Status?: CanaryRunStatus|null,
      *     Timeline?: CanaryRunTimeline|null,
