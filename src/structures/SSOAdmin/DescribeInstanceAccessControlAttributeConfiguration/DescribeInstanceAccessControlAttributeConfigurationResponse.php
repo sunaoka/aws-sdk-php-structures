@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\DescribeInstanceAccessControlAttribute
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\InstanceAccessControlAttributeConfiguration|null $InstanceAccessControlAttributeConfiguration
  * @property 'ENABLED'|'CREATION_IN_PROGRESS'|'CREATION_FAILED'|null $Status
  * @property string|null $StatusReason
+ * @property Shapes\InstanceAccessControlAttributeConfiguration|null $InstanceAccessControlAttributeConfiguration
  */
 class DescribeInstanceAccessControlAttributeConfigurationResponse extends Response
 {

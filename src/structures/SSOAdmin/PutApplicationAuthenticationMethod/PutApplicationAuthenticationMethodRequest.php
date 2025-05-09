@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationArn
- * @property Shapes\AuthenticationMethod $AuthenticationMethod
  * @property 'IAM' $AuthenticationMethodType
+ * @property Shapes\AuthenticationMethod $AuthenticationMethod
  */
 class PutApplicationAuthenticationMethodRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationArn: string,
-     *     AuthenticationMethod: Shapes\AuthenticationMethod,
-     *     AuthenticationMethodType: 'IAM'
+     *     AuthenticationMethodType: 'IAM',
+     *     AuthenticationMethod: Shapes\AuthenticationMethod
      * } $args
      */
     public function __construct(array $args)

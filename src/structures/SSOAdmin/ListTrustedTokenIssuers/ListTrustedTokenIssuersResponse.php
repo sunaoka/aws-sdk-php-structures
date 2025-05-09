@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListTrustedTokenIssuers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $NextToken
  * @property list<Shapes\TrustedTokenIssuerMetadata>|null $TrustedTokenIssuers
+ * @property string|null $NextToken
  */
 class ListTrustedTokenIssuersResponse extends Response
 {
