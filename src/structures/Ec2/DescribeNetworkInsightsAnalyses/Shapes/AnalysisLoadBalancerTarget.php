@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Address
  * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property AnalysisComponent|null $Instance
  * @property int<0, 65535>|null $Port
  */
@@ -16,6 +17,7 @@ class AnalysisLoadBalancerTarget extends Shape
      * @param array{
      *     Address?: string|null,
      *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     Instance?: AnalysisComponent|null,
      *     Port?: int<0, 65535>|null
      * } $args

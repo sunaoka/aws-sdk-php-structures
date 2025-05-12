@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'standard'|'convertible'|null $OfferingClass
  * @property 'Linux/UNIX'|'Linux/UNIX (Amazon VPC)'|'Windows'|'Windows (Amazon VPC)'|null $ProductDescription
  * @property list<string>|null $ReservedInstancesOfferingIds
+ * @property string|null $AvailabilityZoneId
  * @property bool|null $DryRun
  * @property list<Shapes\Filter>|null $Filters
  * @property 'default'|'dedicated'|'host'|null $InstanceTenancy
@@ -34,6 +35,7 @@ class DescribeReservedInstancesOfferingsRequest extends Request
      *     OfferingClass?: 'standard'|'convertible'|null,
      *     ProductDescription?: 'Linux/UNIX'|'Linux/UNIX (Amazon VPC)'|'Windows'|'Windows (Amazon VPC)'|null,
      *     ReservedInstancesOfferingIds?: list<string>|null,
+     *     AvailabilityZoneId?: string|null,
      *     DryRun?: bool|null,
      *     Filters?: list<Shapes\Filter>|null,
      *     InstanceTenancy?: 'default'|'dedicated'|'host'|null,

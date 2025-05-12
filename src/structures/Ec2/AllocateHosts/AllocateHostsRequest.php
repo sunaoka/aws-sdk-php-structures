@@ -11,11 +11,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $OutpostArn
  * @property 'on'|'off'|null $HostMaintenance
  * @property list<string>|null $AssetIds
+ * @property string|null $AvailabilityZoneId
  * @property 'on'|'off'|null $AutoPlacement
  * @property string|null $ClientToken
  * @property string|null $InstanceType
  * @property int|null $Quantity
- * @property string $AvailabilityZone
+ * @property string|null $AvailabilityZone
  */
 class AllocateHostsRequest extends Request
 {
@@ -27,14 +28,15 @@ class AllocateHostsRequest extends Request
      *     OutpostArn?: string|null,
      *     HostMaintenance?: 'on'|'off'|null,
      *     AssetIds?: list<string>|null,
+     *     AvailabilityZoneId?: string|null,
      *     AutoPlacement?: 'on'|'off'|null,
      *     ClientToken?: string|null,
      *     InstanceType?: string|null,
      *     Quantity?: int|null,
-     *     AvailabilityZone: string
+     *     AvailabilityZone?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }
