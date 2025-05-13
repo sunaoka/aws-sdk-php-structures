@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VolumeId
  * @property VolumeStatusInfo|null $VolumeStatus
  * @property list<VolumeStatusAttachmentStatus>|null $AttachmentStatuses
+ * @property string|null $AvailabilityZoneId
  */
 class VolumeStatusItem extends Shape
 {
@@ -23,7 +24,8 @@ class VolumeStatusItem extends Shape
      *     Events?: list<VolumeStatusEvent>|null,
      *     VolumeId?: string|null,
      *     VolumeStatus?: VolumeStatusInfo|null,
-     *     AttachmentStatuses?: list<VolumeStatusAttachmentStatus>|null
+     *     AttachmentStatuses?: list<VolumeStatusAttachmentStatus>|null,
+     *     AvailabilityZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

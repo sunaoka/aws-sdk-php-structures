@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property DataLakeDatasetSchema $schema
  * @property string|null $description
+ * @property DataLakeDatasetPartitionSpec|null $partitionSpec
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
  */
@@ -24,6 +25,7 @@ class DataLakeDataset extends Shape
      *     arn: string,
      *     schema: DataLakeDatasetSchema,
      *     description?: string|null,
+     *     partitionSpec?: DataLakeDatasetPartitionSpec|null,
      *     createdTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult
      * } $args

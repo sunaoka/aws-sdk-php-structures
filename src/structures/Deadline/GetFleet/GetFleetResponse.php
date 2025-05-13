@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, 2147483647> $minWorkerCount
  * @property int<0, 2147483647> $maxWorkerCount
  * @property Shapes\FleetConfiguration $configuration
+ * @property Shapes\HostConfiguration|null $hostConfiguration
  * @property Shapes\FleetCapabilities|null $capabilities
  * @property string $roleArn
  * @property \Aws\Api\DateTimeResult $createdAt

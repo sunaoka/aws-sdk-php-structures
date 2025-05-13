@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MultiplexProgramChannelDestinationSettings|null $MultiplexSettings
  * @property list<OutputDestinationSettings>|null $Settings
  * @property list<SrtOutputDestinationSettings>|null $SrtSettings
+ * @property list<string>|null $LogicalInterfaceNames
  */
 class OutputDestination extends Shape
 {
@@ -19,7 +20,8 @@ class OutputDestination extends Shape
      *     MediaPackageSettings?: list<MediaPackageOutputDestinationSettings>|null,
      *     MultiplexSettings?: MultiplexProgramChannelDestinationSettings|null,
      *     Settings?: list<OutputDestinationSettings>|null,
-     *     SrtSettings?: list<SrtOutputDestinationSettings>|null
+     *     SrtSettings?: list<SrtOutputDestinationSettings>|null,
+     *     LogicalInterfaceNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

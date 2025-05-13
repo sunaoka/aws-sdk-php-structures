@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 2147483647>|null $minWorkerCount
  * @property int<0, 2147483647>|null $maxWorkerCount
  * @property Shapes\FleetConfiguration|null $configuration
+ * @property Shapes\HostConfiguration|null $hostConfiguration
  */
 class UpdateFleetRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateFleetRequest extends Request
      *     roleArn?: string|null,
      *     minWorkerCount?: int<0, 2147483647>|null,
      *     maxWorkerCount?: int<0, 2147483647>|null,
-     *     configuration?: Shapes\FleetConfiguration|null
+     *     configuration?: Shapes\FleetConfiguration|null,
+     *     hostConfiguration?: Shapes\HostConfiguration|null
      * } $args
      */
     public function __construct(array $args)
