@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\GuardrailWordPolicy|null $wordPolicy
  * @property Shapes\GuardrailSensitiveInformationPolicy|null $sensitiveInformationPolicy
  * @property Shapes\GuardrailContextualGroundingPolicy|null $contextualGroundingPolicy
+ * @property Shapes\GuardrailCrossRegionDetails|null $crossRegionDetails
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property list<string>|null $statusReasons

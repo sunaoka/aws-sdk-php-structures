@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $version
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property GuardrailCrossRegionDetails|null $crossRegionDetails
  */
 class GuardrailSummary extends Shape
 {
@@ -25,7 +26,8 @@ class GuardrailSummary extends Shape
      *     description?: string|null,
      *     version: string,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     crossRegionDetails?: GuardrailCrossRegionDetails|null
      * } $args
      */
     public function __construct(array $args)

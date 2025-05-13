@@ -7,8 +7,9 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $identifier
  * @property string $arn
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'DELETED'|'FAILED' $status
+ * @property 'CREATING'|'ACTIVE'|'IDLE'|'INACTIVE'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'PENDING_SETUP'|'PENDING_DELETE' $status
  * @property \Aws\Api\DateTimeResult $creationTime
+ * @property Shapes\MultiRegionProperties|null $multiRegionProperties
  * @property bool $deletionProtectionEnabled
  */
 class CreateClusterResponse extends Response
