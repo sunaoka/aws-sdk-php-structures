@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $volumeType
  * @property int|null $sizeInGiB
  * @property string|null $snapshotId
+ * @property int|null $volumeInitializationRate
  * @property int|null $iops
  * @property int|null $throughput
  * @property list<EBSTagSpecification>|null $tagSpecifications
@@ -26,6 +27,7 @@ class TaskManagedEBSVolumeConfiguration extends Shape
      *     volumeType?: string|null,
      *     sizeInGiB?: int|null,
      *     snapshotId?: string|null,
+     *     volumeInitializationRate?: int|null,
      *     iops?: int|null,
      *     throughput?: int|null,
      *     tagSpecifications?: list<EBSTagSpecification>|null,

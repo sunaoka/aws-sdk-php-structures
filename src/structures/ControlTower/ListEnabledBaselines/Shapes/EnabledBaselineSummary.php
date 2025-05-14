@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $baselineIdentifier
  * @property string|null $baselineVersion
+ * @property EnabledBaselineDriftStatusSummary|null $driftStatusSummary
  * @property string|null $parentIdentifier
  * @property EnablementStatusSummary $statusSummary
  * @property string $targetIdentifier
@@ -19,6 +20,7 @@ class EnabledBaselineSummary extends Shape
      *     arn: string,
      *     baselineIdentifier: string,
      *     baselineVersion?: string|null,
+     *     driftStatusSummary?: EnabledBaselineDriftStatusSummary|null,
      *     parentIdentifier?: string|null,
      *     statusSummary: EnablementStatusSummary,
      *     targetIdentifier: string
