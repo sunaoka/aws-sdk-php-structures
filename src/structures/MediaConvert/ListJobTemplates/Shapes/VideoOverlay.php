@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property VideoOverlayCrop|null $Crop
  * @property string|null $EndTimecode
  * @property VideoOverlayPosition|null $InitialPosition
  * @property VideoOverlayInput|null $Input
@@ -16,6 +17,7 @@ class VideoOverlay extends Shape
 {
     /**
      * @param array{
+     *     Crop?: VideoOverlayCrop|null,
      *     EndTimecode?: string|null,
      *     InitialPosition?: VideoOverlayPosition|null,
      *     Input?: VideoOverlayInput|null,
