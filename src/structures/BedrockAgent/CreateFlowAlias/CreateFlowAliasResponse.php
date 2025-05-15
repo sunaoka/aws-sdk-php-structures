@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $arn
+ * @property Shapes\FlowAliasConcurrencyConfiguration|null $concurrencyConfiguration
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
  * @property string $flowId

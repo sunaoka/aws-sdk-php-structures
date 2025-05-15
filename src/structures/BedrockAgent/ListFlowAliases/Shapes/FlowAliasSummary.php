@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
+ * @property FlowAliasConcurrencyConfiguration|null $concurrencyConfiguration
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
  * @property string $flowId
@@ -19,6 +20,7 @@ class FlowAliasSummary extends Shape
     /**
      * @param array{
      *     arn: string,
+     *     concurrencyConfiguration?: FlowAliasConcurrencyConfiguration|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     description?: string|null,
      *     flowId: string,

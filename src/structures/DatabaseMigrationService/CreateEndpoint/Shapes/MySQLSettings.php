@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SecretsManagerAccessRoleArn
  * @property string|null $SecretsManagerSecretId
  * @property int|null $ExecuteTimeout
+ * @property string|null $ServiceAccessRoleArn
+ * @property 'password'|'iam'|null $AuthenticationMethod
  */
 class MySQLSettings extends Shape
 {
@@ -39,7 +41,9 @@ class MySQLSettings extends Shape
      *     Username?: string|null,
      *     SecretsManagerAccessRoleArn?: string|null,
      *     SecretsManagerSecretId?: string|null,
-     *     ExecuteTimeout?: int|null
+     *     ExecuteTimeout?: int|null,
+     *     ServiceAccessRoleArn?: string|null,
+     *     AuthenticationMethod?: 'password'|'iam'|null
      * } $args
      */
     public function __construct(array $args = [])

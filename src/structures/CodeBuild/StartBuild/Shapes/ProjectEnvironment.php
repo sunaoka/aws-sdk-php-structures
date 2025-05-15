@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $certificate
  * @property RegistryCredential|null $registryCredential
  * @property 'CODEBUILD'|'SERVICE_ROLE'|null $imagePullCredentialsType
+ * @property DockerServer|null $dockerServer
  */
 class ProjectEnvironment extends Shape
 {
@@ -29,7 +30,8 @@ class ProjectEnvironment extends Shape
      *     privilegedMode?: bool|null,
      *     certificate?: string|null,
      *     registryCredential?: RegistryCredential|null,
-     *     imagePullCredentialsType?: 'CODEBUILD'|'SERVICE_ROLE'|null
+     *     imagePullCredentialsType?: 'CODEBUILD'|'SERVICE_ROLE'|null,
+     *     dockerServer?: DockerServer|null
      * } $args
      */
     public function __construct(array $args)

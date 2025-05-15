@@ -14,6 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property KnowledgeBaseFlowNodeConfiguration|null $knowledgeBase
  * @property LambdaFunctionFlowNodeConfiguration|null $lambdaFunction
  * @property LexFlowNodeConfiguration|null $lex
+ * @property LoopFlowNodeConfiguration|null $loop
+ * @property LoopControllerFlowNodeConfiguration|null $loopController
+ * @property LoopInputFlowNodeConfiguration|null $loopInput
  * @property OutputFlowNodeConfiguration|null $output
  * @property PromptFlowNodeConfiguration|null $prompt
  * @property RetrievalFlowNodeConfiguration|null $retrieval
@@ -32,6 +35,9 @@ class FlowNodeConfiguration extends Shape
      *     knowledgeBase?: KnowledgeBaseFlowNodeConfiguration|null,
      *     lambdaFunction?: LambdaFunctionFlowNodeConfiguration|null,
      *     lex?: LexFlowNodeConfiguration|null,
+     *     loop?: LoopFlowNodeConfiguration|null,
+     *     loopController?: LoopControllerFlowNodeConfiguration|null,
+     *     loopInput?: LoopInputFlowNodeConfiguration|null,
      *     output?: OutputFlowNodeConfiguration|null,
      *     prompt?: PromptFlowNodeConfiguration|null,
      *     retrieval?: RetrievalFlowNodeConfiguration|null,
