@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 50>|null $limit
  * @property bool|null $includeLinkedAccounts
  * @property 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null $logGroupClass
+ * @property list<string>|null $logGroupIdentifiers
  */
 class DescribeLogGroupsRequest extends Request
 {
@@ -23,7 +24,8 @@ class DescribeLogGroupsRequest extends Request
      *     nextToken?: string|null,
      *     limit?: int<1, 50>|null,
      *     includeLinkedAccounts?: bool|null,
-     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null
+     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null,
+     *     logGroupIdentifiers?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])
