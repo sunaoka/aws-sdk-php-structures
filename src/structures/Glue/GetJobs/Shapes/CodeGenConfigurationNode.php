@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RedshiftSource|null $RedshiftSource
  * @property S3CatalogSource|null $S3CatalogSource
  * @property S3CsvSource|null $S3CsvSource
+ * @property S3ExcelSource|null $S3ExcelSource
  * @property S3JsonSource|null $S3JsonSource
  * @property S3ParquetSource|null $S3ParquetSource
  * @property RelationalCatalogSource|null $RelationalCatalogSource
@@ -22,7 +23,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RedshiftTarget|null $RedshiftTarget
  * @property S3CatalogTarget|null $S3CatalogTarget
  * @property S3GlueParquetTarget|null $S3GlueParquetTarget
+ * @property S3HyperDirectTarget|null $S3HyperDirectTarget
  * @property S3DirectTarget|null $S3DirectTarget
+ * @property S3IcebergDirectTarget|null $S3IcebergDirectTarget
  * @property ApplyMapping|null $ApplyMapping
  * @property SelectFields|null $SelectFields
  * @property DropFields|null $DropFields
@@ -88,6 +91,7 @@ class CodeGenConfigurationNode extends Shape
      *     RedshiftSource?: RedshiftSource|null,
      *     S3CatalogSource?: S3CatalogSource|null,
      *     S3CsvSource?: S3CsvSource|null,
+     *     S3ExcelSource?: S3ExcelSource|null,
      *     S3JsonSource?: S3JsonSource|null,
      *     S3ParquetSource?: S3ParquetSource|null,
      *     RelationalCatalogSource?: RelationalCatalogSource|null,
@@ -98,7 +102,9 @@ class CodeGenConfigurationNode extends Shape
      *     RedshiftTarget?: RedshiftTarget|null,
      *     S3CatalogTarget?: S3CatalogTarget|null,
      *     S3GlueParquetTarget?: S3GlueParquetTarget|null,
+     *     S3HyperDirectTarget?: S3HyperDirectTarget|null,
      *     S3DirectTarget?: S3DirectTarget|null,
+     *     S3IcebergDirectTarget?: S3IcebergDirectTarget|null,
      *     ApplyMapping?: ApplyMapping|null,
      *     SelectFields?: SelectFields|null,
      *     DropFields?: DropFields|null,
