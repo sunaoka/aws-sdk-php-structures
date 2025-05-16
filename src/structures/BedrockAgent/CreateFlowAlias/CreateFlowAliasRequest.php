@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $clientToken
+ * @property Shapes\FlowAliasConcurrencyConfiguration|null $concurrencyConfiguration
  * @property string|null $description
  * @property string $flowIdentifier
  * @property string $name
@@ -17,6 +18,7 @@ class CreateFlowAliasRequest extends Request
     /**
      * @param array{
      *     clientToken?: string|null,
+     *     concurrencyConfiguration?: Shapes\FlowAliasConcurrencyConfiguration|null,
      *     description?: string|null,
      *     flowIdentifier: string,
      *     name: string,

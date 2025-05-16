@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<WorkspacesPoolError>|null $Errors
  * @property ApplicationSettingsResponse|null $ApplicationSettings
  * @property TimeoutSettings|null $TimeoutSettings
+ * @property 'AUTO_STOP'|'ALWAYS_ON' $RunningMode
  */
 class WorkspacesPool extends Shape
 {
@@ -33,7 +34,8 @@ class WorkspacesPool extends Shape
      *     DirectoryId: string,
      *     Errors?: list<WorkspacesPoolError>|null,
      *     ApplicationSettings?: ApplicationSettingsResponse|null,
-     *     TimeoutSettings?: TimeoutSettings|null
+     *     TimeoutSettings?: TimeoutSettings|null,
+     *     RunningMode: 'AUTO_STOP'|'ALWAYS_ON'
      * } $args
      */
     public function __construct(array $args)
