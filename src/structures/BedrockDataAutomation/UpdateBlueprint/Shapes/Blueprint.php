@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $blueprintArn
  * @property string $schema
- * @property 'DOCUMENT'|'IMAGE'|'AUDIO' $type
+ * @property 'DOCUMENT'|'IMAGE'|'AUDIO'|'VIDEO' $type
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
  * @property string $blueprintName
@@ -22,7 +22,7 @@ class Blueprint extends Shape
      * @param array{
      *     blueprintArn: string,
      *     schema: string,
-     *     type: 'DOCUMENT'|'IMAGE'|'AUDIO',
+     *     type: 'DOCUMENT'|'IMAGE'|'AUDIO'|'VIDEO',
      *     creationTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult,
      *     blueprintName: string,
