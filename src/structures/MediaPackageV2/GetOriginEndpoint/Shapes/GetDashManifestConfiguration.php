@@ -17,6 +17,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ScteDash|null $ScteDash
  * @property 'INDIVIDUAL'|'REFERENCED'|null $DrmSignaling
  * @property DashUtcTiming|null $UtcTiming
+ * @property list<'DVB_DASH'>|null $Profiles
+ * @property list<DashBaseUrl>|null $BaseUrls
+ * @property DashProgramInformation|null $ProgramInformation
+ * @property DashDvbSettings|null $DvbSettings
+ * @property 'STANDARD'|'NONE'|null $Compactness
+ * @property DashSubtitleConfiguration|null $SubtitleConfiguration
  */
 class GetDashManifestConfiguration extends Shape
 {
@@ -33,7 +39,13 @@ class GetDashManifestConfiguration extends Shape
      *     PeriodTriggers?: list<'AVAILS'|'DRM_KEY_ROTATION'|'SOURCE_CHANGES'|'SOURCE_DISRUPTIONS'|'NONE'>|null,
      *     ScteDash?: ScteDash|null,
      *     DrmSignaling?: 'INDIVIDUAL'|'REFERENCED'|null,
-     *     UtcTiming?: DashUtcTiming|null
+     *     UtcTiming?: DashUtcTiming|null,
+     *     Profiles?: list<'DVB_DASH'>|null,
+     *     BaseUrls?: list<DashBaseUrl>|null,
+     *     ProgramInformation?: DashProgramInformation|null,
+     *     DvbSettings?: DashDvbSettings|null,
+     *     Compactness?: 'STANDARD'|'NONE'|null,
+     *     SubtitleConfiguration?: DashSubtitleConfiguration|null
      * } $args
      */
     public function __construct(array $args)
