@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<StringFilter>|null $architectures
  * @property list<StringFilter>|null $imageShas
  * @property list<StringFilter>|null $imageTags
+ * @property list<NumberFilter>|null $inUseCount
+ * @property list<DateFilter>|null $lastInUseAt
  * @property list<StringFilter>|null $repositories
  * @property list<StringFilter>|null $resourceIds
  * @property 'CRITICAL'|'HIGH'|'ALL'|null $sortBy
@@ -20,6 +22,8 @@ class AwsEcrContainerAggregation extends Shape
      *     architectures?: list<StringFilter>|null,
      *     imageShas?: list<StringFilter>|null,
      *     imageTags?: list<StringFilter>|null,
+     *     inUseCount?: list<NumberFilter>|null,
+     *     lastInUseAt?: list<DateFilter>|null,
      *     repositories?: list<StringFilter>|null,
      *     resourceIds?: list<StringFilter>|null,
      *     sortBy?: 'CRITICAL'|'HIGH'|'ALL'|null,

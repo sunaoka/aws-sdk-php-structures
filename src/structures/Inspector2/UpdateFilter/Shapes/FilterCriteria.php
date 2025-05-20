@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<StringFilter>|null $ec2InstanceVpcId
  * @property list<StringFilter>|null $ecrImageArchitecture
  * @property list<StringFilter>|null $ecrImageHash
+ * @property list<NumberFilter>|null $ecrImageInUseCount
+ * @property list<DateFilter>|null $ecrImageLastInUseAt
  * @property list<DateFilter>|null $ecrImagePushedAt
  * @property list<StringFilter>|null $ecrImageRegistry
  * @property list<StringFilter>|null $ecrImageRepositoryName
@@ -63,6 +65,8 @@ class FilterCriteria extends Shape
      *     ec2InstanceVpcId?: list<StringFilter>|null,
      *     ecrImageArchitecture?: list<StringFilter>|null,
      *     ecrImageHash?: list<StringFilter>|null,
+     *     ecrImageInUseCount?: list<NumberFilter>|null,
+     *     ecrImageLastInUseAt?: list<DateFilter>|null,
      *     ecrImagePushedAt?: list<DateFilter>|null,
      *     ecrImageRegistry?: list<StringFilter>|null,
      *     ecrImageRepositoryName?: list<StringFilter>|null,

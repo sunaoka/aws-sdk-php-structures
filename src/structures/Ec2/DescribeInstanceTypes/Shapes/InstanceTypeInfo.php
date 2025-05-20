@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MediaAcceleratorInfo|null $MediaAcceleratorInfo
  * @property NeuronInfo|null $NeuronInfo
  * @property 'unsupported'|'supported'|null $PhcSupport
+ * @property 'unsupported'|'supported'|null $RebootMigrationSupport
  */
 class InstanceTypeInfo extends Shape
 {
@@ -69,7 +70,8 @@ class InstanceTypeInfo extends Shape
      *     NitroTpmInfo?: NitroTpmInfo|null,
      *     MediaAcceleratorInfo?: MediaAcceleratorInfo|null,
      *     NeuronInfo?: NeuronInfo|null,
-     *     PhcSupport?: 'unsupported'|'supported'|null
+     *     PhcSupport?: 'unsupported'|'supported'|null,
+     *     RebootMigrationSupport?: 'unsupported'|'supported'|null
      * } $args
      */
     public function __construct(array $args = [])
