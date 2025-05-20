@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $architecture
  * @property string|null $imageSha
  * @property list<string>|null $imageTags
+ * @property int|null $inUseCount
+ * @property \Aws\Api\DateTimeResult|null $lastInUseAt
  * @property string|null $repository
  * @property string $resourceId
  * @property SeverityCounts|null $severityCounts
@@ -21,6 +23,8 @@ class AwsEcrContainerAggregationResponse extends Shape
      *     architecture?: string|null,
      *     imageSha?: string|null,
      *     imageTags?: list<string>|null,
+     *     inUseCount?: int|null,
+     *     lastInUseAt?: \Aws\Api\DateTimeResult|null,
      *     repository?: string|null,
      *     resourceId: string,
      *     severityCounts?: SeverityCounts|null

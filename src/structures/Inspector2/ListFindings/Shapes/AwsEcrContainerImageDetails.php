@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $author
  * @property string $imageHash
  * @property list<string>|null $imageTags
+ * @property int|null $inUseCount
+ * @property \Aws\Api\DateTimeResult|null $lastInUseAt
  * @property string|null $platform
  * @property \Aws\Api\DateTimeResult|null $pushedAt
  * @property string $registry
@@ -22,6 +24,8 @@ class AwsEcrContainerImageDetails extends Shape
      *     author?: string|null,
      *     imageHash: string,
      *     imageTags?: list<string>|null,
+     *     inUseCount?: int|null,
+     *     lastInUseAt?: \Aws\Api\DateTimeResult|null,
      *     platform?: string|null,
      *     pushedAt?: \Aws\Api\DateTimeResult|null,
      *     registry: string,

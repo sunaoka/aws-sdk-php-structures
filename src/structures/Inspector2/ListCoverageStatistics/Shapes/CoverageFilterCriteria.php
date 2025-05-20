@@ -7,6 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<CoverageStringFilter>|null $accountId
  * @property list<CoverageMapFilter>|null $ec2InstanceTags
+ * @property list<CoverageNumberFilter>|null $ecrImageInUseCount
+ * @property list<CoverageDateFilter>|null $ecrImageLastInUseAt
  * @property list<CoverageStringFilter>|null $ecrImageTags
  * @property list<CoverageStringFilter>|null $ecrRepositoryName
  * @property list<CoverageDateFilter>|null $imagePulledAt
@@ -27,6 +29,8 @@ class CoverageFilterCriteria extends Shape
      * @param array{
      *     accountId?: list<CoverageStringFilter>|null,
      *     ec2InstanceTags?: list<CoverageMapFilter>|null,
+     *     ecrImageInUseCount?: list<CoverageNumberFilter>|null,
+     *     ecrImageLastInUseAt?: list<CoverageDateFilter>|null,
      *     ecrImageTags?: list<CoverageStringFilter>|null,
      *     ecrRepositoryName?: list<CoverageStringFilter>|null,
      *     imagePulledAt?: list<CoverageDateFilter>|null,
