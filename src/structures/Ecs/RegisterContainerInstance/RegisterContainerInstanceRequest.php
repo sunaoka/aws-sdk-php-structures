@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $cluster
  * @property string|null $instanceIdentityDocument
  * @property string|null $instanceIdentityDocumentSignature
- * @property list<Shapes\Resource>|null $totalResources
+ * @property list<Shapes\ResourceShape>|null $totalResources
  * @property Shapes\VersionInfo|null $versionInfo
  * @property string|null $containerInstanceArn
  * @property list<Shapes\Attribute>|null $attributes
@@ -22,7 +22,7 @@ class RegisterContainerInstanceRequest extends Request
      *     cluster?: string|null,
      *     instanceIdentityDocument?: string|null,
      *     instanceIdentityDocumentSignature?: string|null,
-     *     totalResources?: list<Shapes\Resource>|null,
+     *     totalResources?: list<Shapes\ResourceShape>|null,
      *     versionInfo?: Shapes\VersionInfo|null,
      *     containerInstanceArn?: string|null,
      *     attributes?: list<Shapes\Attribute>|null,

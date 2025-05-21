@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string|null $Partition
  * @property string $Region
- * @property Resource $Resource
+ * @property ResourceShape $Resource
  * @property string $SchemaVersion
  * @property Service|null $Service
  * @property double $Severity
@@ -34,7 +34,7 @@ class Finding extends Shape
      *     Id: string,
      *     Partition?: string|null,
      *     Region: string,
-     *     Resource: Resource,
+     *     Resource: ResourceShape,
      *     SchemaVersion: string,
      *     Service?: Service|null,
      *     Severity: double,

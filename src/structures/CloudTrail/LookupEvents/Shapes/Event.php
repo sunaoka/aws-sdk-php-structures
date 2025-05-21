@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $EventTime
  * @property string|null $EventSource
  * @property string|null $Username
- * @property list<Resource>|null $Resources
+ * @property list<ResourceShape>|null $Resources
  * @property string|null $CloudTrailEvent
  */
 class Event extends Shape
@@ -26,7 +26,7 @@ class Event extends Shape
      *     EventTime?: \Aws\Api\DateTimeResult|null,
      *     EventSource?: string|null,
      *     Username?: string|null,
-     *     Resources?: list<Resource>|null,
+     *     Resources?: list<ResourceShape>|null,
      *     CloudTrailEvent?: string|null
      * } $args
      */

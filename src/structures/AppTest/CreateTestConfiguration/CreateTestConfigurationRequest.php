@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string|null $description
- * @property list<Shapes\Resource> $resources
+ * @property list<Shapes\ResourceShape> $resources
  * @property array<string, string>|null $properties
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
@@ -19,7 +19,7 @@ class CreateTestConfigurationRequest extends Request
      * @param array{
      *     name: string,
      *     description?: string|null,
-     *     resources: list<Shapes\Resource>,
+     *     resources: list<Shapes\ResourceShape>,
      *     properties?: array<string, string>|null,
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null,

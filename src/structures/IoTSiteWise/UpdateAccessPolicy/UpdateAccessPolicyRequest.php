@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accessPolicyId
  * @property Shapes\Identity $accessPolicyIdentity
- * @property Shapes\Resource $accessPolicyResource
+ * @property Shapes\ResourceShape $accessPolicyResource
  * @property 'ADMINISTRATOR'|'VIEWER' $accessPolicyPermission
  * @property string|null $clientToken
  */
@@ -17,7 +17,7 @@ class UpdateAccessPolicyRequest extends Request
      * @param array{
      *     accessPolicyId: string,
      *     accessPolicyIdentity: Shapes\Identity,
-     *     accessPolicyResource: Shapes\Resource,
+     *     accessPolicyResource: Shapes\ResourceShape,
      *     accessPolicyPermission: 'ADMINISTRATOR'|'VIEWER',
      *     clientToken?: string|null
      * } $args

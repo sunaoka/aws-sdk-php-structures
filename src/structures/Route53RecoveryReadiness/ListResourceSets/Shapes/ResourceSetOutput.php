@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ResourceSetArn
  * @property string $ResourceSetName
  * @property string $ResourceSetType
- * @property list<Resource> $Resources
+ * @property list<ResourceShape> $Resources
  * @property array<string, string>|null $Tags
  */
 class ResourceSetOutput extends Shape
@@ -18,7 +18,7 @@ class ResourceSetOutput extends Shape
      *     ResourceSetArn: string,
      *     ResourceSetName: string,
      *     ResourceSetType: string,
-     *     Resources: list<Resource>,
+     *     Resources: list<ResourceShape>,
      *     Tags?: array<string, string>|null
      * } $args
      */

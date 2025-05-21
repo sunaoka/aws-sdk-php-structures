@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $capacityProviderName
  * @property int|null $version
  * @property VersionInfo|null $versionInfo
- * @property list<Resource>|null $remainingResources
- * @property list<Resource>|null $registeredResources
+ * @property list<ResourceShape>|null $remainingResources
+ * @property list<ResourceShape>|null $registeredResources
  * @property string|null $status
  * @property string|null $statusReason
  * @property bool|null $agentConnected
@@ -33,8 +33,8 @@ class ContainerInstance extends Shape
      *     capacityProviderName?: string|null,
      *     version?: int|null,
      *     versionInfo?: VersionInfo|null,
-     *     remainingResources?: list<Resource>|null,
-     *     registeredResources?: list<Resource>|null,
+     *     remainingResources?: list<ResourceShape>|null,
+     *     registeredResources?: list<ResourceShape>|null,
      *     status?: string|null,
      *     statusReason?: string|null,
      *     agentConnected?: bool|null,

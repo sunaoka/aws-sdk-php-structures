@@ -22,7 +22,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property string $projectId
  * @property string $provider
- * @property list<Shapes\Resource>|null $provisionedResources
+ * @property list<Shapes\ResourceShape>|null $provisionedResources
  * @property Shapes\ProvisioningProperties|null $provisioningProperties
  * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE'|null $status
  * @property \Aws\Api\DateTimeResult|null $updatedAt

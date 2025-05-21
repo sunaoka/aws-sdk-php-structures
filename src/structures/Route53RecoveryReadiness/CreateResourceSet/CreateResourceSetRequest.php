@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceSetName
  * @property string $ResourceSetType
- * @property list<Shapes\Resource> $Resources
+ * @property list<Shapes\ResourceShape> $Resources
  * @property array<string, string>|null $Tags
  */
 class CreateResourceSetRequest extends Request
@@ -16,7 +16,7 @@ class CreateResourceSetRequest extends Request
      * @param array{
      *     ResourceSetName: string,
      *     ResourceSetType: string,
-     *     Resources: list<Shapes\Resource>,
+     *     Resources: list<Shapes\ResourceShape>,
      *     Tags?: array<string, string>|null
      * } $args
      */
