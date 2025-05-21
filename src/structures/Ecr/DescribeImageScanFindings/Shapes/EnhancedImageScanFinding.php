@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $lastObservedAt
  * @property PackageVulnerabilityDetails|null $packageVulnerabilityDetails
  * @property Remediation|null $remediation
- * @property list<Resource>|null $resources
+ * @property list<ResourceShape>|null $resources
  * @property double|null $score
  * @property ScoreDetails|null $scoreDetails
  * @property string|null $severity
@@ -34,7 +34,7 @@ class EnhancedImageScanFinding extends Shape
      *     lastObservedAt?: \Aws\Api\DateTimeResult|null,
      *     packageVulnerabilityDetails?: PackageVulnerabilityDetails|null,
      *     remediation?: Remediation|null,
-     *     resources?: list<Resource>|null,
+     *     resources?: list<ResourceShape>|null,
      *     score?: double|null,
      *     scoreDetails?: ScoreDetails|null,
      *     severity?: string|null,

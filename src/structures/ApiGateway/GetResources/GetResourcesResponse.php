@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $position
- * @property list<Shapes\Resource>|null $items
+ * @property list<Shapes\ResourceShape>|null $items
  */
 class GetResourcesResponse extends Response
 {

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $generatorId
  * @property string|null $id
  * @property Remediation|null $remediation
- * @property Resource|null $resource
+ * @property ResourceShape|null $resource
  * @property string|null $ruleId
  * @property 'Critical'|'High'|'Medium'|'Low'|'Info'|null $severity
  * @property 'Closed'|'Open'|'All'|null $status
@@ -34,7 +34,7 @@ class Finding extends Shape
      *     generatorId?: string|null,
      *     id?: string|null,
      *     remediation?: Remediation|null,
-     *     resource?: Resource|null,
+     *     resource?: ResourceShape|null,
      *     ruleId?: string|null,
      *     severity?: 'Critical'|'High'|'Medium'|'Low'|'Info'|null,
      *     status?: 'Closed'|'Open'|'All'|null,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\DataLakePrincipal $Principal
- * @property Shapes\Resource $Resource
+ * @property Shapes\ResourceShape $Resource
  * @property Shapes\Condition|null $Condition
  */
 class CreateLakeFormationOptInRequest extends Request
@@ -14,7 +14,7 @@ class CreateLakeFormationOptInRequest extends Request
     /**
      * @param array{
      *     Principal: Shapes\DataLakePrincipal,
-     *     Resource: Shapes\Resource,
+     *     Resource: Shapes\ResourceShape,
      *     Condition?: Shapes\Condition|null
      * } $args
      */

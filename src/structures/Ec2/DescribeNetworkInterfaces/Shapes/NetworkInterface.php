@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OutpostArn
  * @property string|null $OwnerId
  * @property string|null $PrivateDnsName
+ * @property string|null $PublicDnsName
+ * @property PublicIpDnsNameOptions|null $PublicIpDnsNameOptions
  * @property string|null $PrivateIpAddress
  * @property list<NetworkInterfacePrivateIpAddress>|null $PrivateIpAddresses
  * @property list<Ipv4PrefixSpecification>|null $Ipv4Prefixes
@@ -51,6 +53,8 @@ class NetworkInterface extends Shape
      *     OutpostArn?: string|null,
      *     OwnerId?: string|null,
      *     PrivateDnsName?: string|null,
+     *     PublicDnsName?: string|null,
+     *     PublicIpDnsNameOptions?: PublicIpDnsNameOptions|null,
      *     PrivateIpAddress?: string|null,
      *     PrivateIpAddresses?: list<NetworkInterfacePrivateIpAddress>|null,
      *     Ipv4Prefixes?: list<Ipv4PrefixSpecification>|null,

@@ -20,7 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NetworkReachabilityDetails|null $networkReachabilityDetails
  * @property PackageVulnerabilityDetails|null $packageVulnerabilityDetails
  * @property Remediation $remediation
- * @property list<Resource> $resources
+ * @property list<ResourceShape> $resources
  * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNTRIAGED' $severity
  * @property 'ACTIVE'|'SUPPRESSED'|'CLOSED' $status
  * @property string|null $title
@@ -46,7 +46,7 @@ class Finding extends Shape
      *     networkReachabilityDetails?: NetworkReachabilityDetails|null,
      *     packageVulnerabilityDetails?: PackageVulnerabilityDetails|null,
      *     remediation: Remediation,
-     *     resources: list<Resource>,
+     *     resources: list<ResourceShape>,
      *     severity: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNTRIAGED',
      *     status: 'ACTIVE'|'SUPPRESSED'|'CLOSED',
      *     title?: string|null,

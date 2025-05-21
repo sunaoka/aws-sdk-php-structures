@@ -33,7 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProcessDetails|null $Process
  * @property list<Threat>|null $Threats
  * @property list<ThreatIntelIndicator>|null $ThreatIntelIndicators
- * @property list<Resource> $Resources
+ * @property list<ResourceShape> $Resources
  * @property Compliance|null $Compliance
  * @property 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE'|null $VerificationState
  * @property 'NEW'|'ASSIGNED'|'IN_PROGRESS'|'DEFERRED'|'RESOLVED'|null $WorkflowState
@@ -83,7 +83,7 @@ class AwsSecurityFinding extends Shape
      *     Process?: ProcessDetails|null,
      *     Threats?: list<Threat>|null,
      *     ThreatIntelIndicators?: list<ThreatIntelIndicator>|null,
-     *     Resources: list<Resource>,
+     *     Resources: list<ResourceShape>,
      *     Compliance?: Compliance|null,
      *     VerificationState?: 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE'|null,
      *     WorkflowState?: 'NEW'|'ASSIGNED'|'IN_PROGRESS'|'DEFERRED'|'RESOLVED'|null,

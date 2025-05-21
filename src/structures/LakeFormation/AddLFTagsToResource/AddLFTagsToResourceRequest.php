@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $CatalogId
- * @property Shapes\Resource $Resource
+ * @property Shapes\ResourceShape $Resource
  * @property list<Shapes\LFTagPair> $LFTags
  */
 class AddLFTagsToResourceRequest extends Request
@@ -14,7 +14,7 @@ class AddLFTagsToResourceRequest extends Request
     /**
      * @param array{
      *     CatalogId?: string|null,
-     *     Resource: Shapes\Resource,
+     *     Resource: Shapes\ResourceShape,
      *     LFTags: list<Shapes\LFTagPair>
      * } $args
      */

@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastUpdateTime
  * @property string|null $description
- * @property list<Shapes\Resource> $resources
+ * @property list<Shapes\ResourceShape> $resources
  * @property array<string, string> $properties
  * @property array<string, string>|null $tags
  * @property Shapes\ServiceSettings|null $serviceSettings

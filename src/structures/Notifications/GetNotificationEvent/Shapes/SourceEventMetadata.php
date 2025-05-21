@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $source
  * @property \Aws\Api\DateTimeResult $eventOccurrenceTime
  * @property string $eventType
- * @property list<Resource> $relatedResources
+ * @property list<ResourceShape> $relatedResources
  */
 class SourceEventMetadata extends Shape
 {
@@ -25,7 +25,7 @@ class SourceEventMetadata extends Shape
      *     source: string,
      *     eventOccurrenceTime: \Aws\Api\DateTimeResult,
      *     eventType: string,
-     *     relatedResources: list<Resource>
+     *     relatedResources: list<ResourceShape>
      * } $args
      */
     public function __construct(array $args)

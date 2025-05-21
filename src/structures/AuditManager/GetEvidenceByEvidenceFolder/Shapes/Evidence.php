@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $eventSource
  * @property string|null $eventName
  * @property string|null $evidenceByType
- * @property list<Resource>|null $resourcesIncluded
+ * @property list<ResourceShape>|null $resourcesIncluded
  * @property array<string, string>|null $attributes
  * @property string|null $iamId
  * @property string|null $complianceCheck
@@ -31,7 +31,7 @@ class Evidence extends Shape
      *     eventSource?: string|null,
      *     eventName?: string|null,
      *     evidenceByType?: string|null,
-     *     resourcesIncluded?: list<Resource>|null,
+     *     resourcesIncluded?: list<ResourceShape>|null,
      *     attributes?: array<string, string>|null,
      *     iamId?: string|null,
      *     complianceCheck?: string|null,
