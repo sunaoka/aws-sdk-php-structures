@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $VpnGatewayId
  * @property string|null $TransitGatewayId
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $PreSharedKeyStorage
  * @property bool|null $DryRun
  * @property Shapes\VpnConnectionOptionsSpecification|null $Options
  */
@@ -22,6 +23,7 @@ class CreateVpnConnectionRequest extends Request
      *     VpnGatewayId?: string|null,
      *     TransitGatewayId?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     PreSharedKeyStorage?: string|null,
      *     DryRun?: bool|null,
      *     Options?: Shapes\VpnConnectionOptionsSpecification|null
      * } $args
