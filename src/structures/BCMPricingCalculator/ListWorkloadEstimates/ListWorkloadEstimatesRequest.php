@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\FilterTimestamp|null $expiresAtFilter
  * @property list<Shapes\ListWorkloadEstimatesFilter>|null $filters
  * @property string|null $nextToken
- * @property int<min, 25>|null $maxResults
+ * @property int<0, 25>|null $maxResults
  */
 class ListWorkloadEstimatesRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListWorkloadEstimatesRequest extends Request
      *     expiresAtFilter?: Shapes\FilterTimestamp|null,
      *     filters?: list<Shapes\ListWorkloadEstimatesFilter>|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<min, 25>|null
+     *     maxResults?: int<0, 25>|null
      * } $args
      */
     public function __construct(array $args = [])

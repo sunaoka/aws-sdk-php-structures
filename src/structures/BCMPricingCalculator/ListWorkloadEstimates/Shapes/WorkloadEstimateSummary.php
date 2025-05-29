@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $name
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $expiresAt
- * @property 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|null $rateType
+ * @property 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|'AFTER_DISCOUNTS_AND_COMMITMENTS'|null $rateType
  * @property \Aws\Api\DateTimeResult|null $rateTimestamp
  * @property 'UPDATING'|'VALID'|'INVALID'|'ACTION_NEEDED'|null $status
  * @property double|null $totalCost
@@ -24,7 +24,7 @@ class WorkloadEstimateSummary extends Shape
      *     name?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     expiresAt?: \Aws\Api\DateTimeResult|null,
-     *     rateType?: 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|null,
+     *     rateType?: 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|'AFTER_DISCOUNTS_AND_COMMITMENTS'|null,
      *     rateTimestamp?: \Aws\Api\DateTimeResult|null,
      *     status?: 'UPDATING'|'VALID'|'INVALID'|'ACTION_NEEDED'|null,
      *     totalCost?: double|null,

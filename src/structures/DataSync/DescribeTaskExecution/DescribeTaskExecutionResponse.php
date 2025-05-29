@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $FilesPrepared
  * @property Shapes\TaskExecutionFilesListedDetail|null $FilesListed
  * @property Shapes\TaskExecutionFilesFailedDetail|null $FilesFailed
+ * @property \Aws\Api\DateTimeResult|null $LaunchTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
  */
 class DescribeTaskExecutionResponse extends Response
 {

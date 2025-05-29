@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enableAutoBranchCreation
  * @property list<string>|null $autoBranchCreationPatterns
  * @property Shapes\AutoBranchCreationConfig|null $autoBranchCreationConfig
+ * @property Shapes\JobConfig|null $jobConfig
  * @property Shapes\CacheConfig|null $cacheConfig
  */
 class CreateAppRequest extends Request
@@ -51,6 +52,7 @@ class CreateAppRequest extends Request
      *     enableAutoBranchCreation?: bool|null,
      *     autoBranchCreationPatterns?: list<string>|null,
      *     autoBranchCreationConfig?: Shapes\AutoBranchCreationConfig|null,
+     *     jobConfig?: Shapes\JobConfig|null,
      *     cacheConfig?: Shapes\CacheConfig|null
      * } $args
      */

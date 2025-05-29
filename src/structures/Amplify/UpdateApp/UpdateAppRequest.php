@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $repository
  * @property string|null $oauthToken
  * @property string|null $accessToken
+ * @property Shapes\JobConfig|null $jobConfig
  * @property Shapes\CacheConfig|null $cacheConfig
  */
 class UpdateAppRequest extends Request
@@ -51,6 +52,7 @@ class UpdateAppRequest extends Request
      *     repository?: string|null,
      *     oauthToken?: string|null,
      *     accessToken?: string|null,
+     *     jobConfig?: Shapes\JobConfig|null,
      *     cacheConfig?: Shapes\CacheConfig|null
      * } $args
      */

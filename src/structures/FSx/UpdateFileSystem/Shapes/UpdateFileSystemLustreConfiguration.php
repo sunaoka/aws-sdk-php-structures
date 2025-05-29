@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LustreRootSquashConfiguration|null $RootSquashConfiguration
  * @property int<12, 1000>|null $PerUnitStorageThroughput
  * @property UpdateFileSystemLustreMetadataConfiguration|null $MetadataConfiguration
+ * @property int<4000, 2000000>|null $ThroughputCapacity
+ * @property LustreReadCacheConfiguration|null $DataReadCacheConfiguration
  */
 class UpdateFileSystemLustreConfiguration extends Shape
 {
@@ -27,7 +29,9 @@ class UpdateFileSystemLustreConfiguration extends Shape
      *     LogConfiguration?: LustreLogCreateConfiguration|null,
      *     RootSquashConfiguration?: LustreRootSquashConfiguration|null,
      *     PerUnitStorageThroughput?: int<12, 1000>|null,
-     *     MetadataConfiguration?: UpdateFileSystemLustreMetadataConfiguration|null
+     *     MetadataConfiguration?: UpdateFileSystemLustreMetadataConfiguration|null,
+     *     ThroughputCapacity?: int<4000, 2000000>|null,
+     *     DataReadCacheConfiguration?: LustreReadCacheConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])
