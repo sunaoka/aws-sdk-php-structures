@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<960, 3008>|null $MemoryInMB
  * @property bool|null $ActiveTracing
  * @property array<string, string>|null $EnvironmentVariables
+ * @property int<1024, 5120>|null $EphemeralStorage
  */
 class CanaryRunConfigInput extends Shape
 {
@@ -17,7 +18,8 @@ class CanaryRunConfigInput extends Shape
      *     TimeoutInSeconds?: int<3, 840>|null,
      *     MemoryInMB?: int<960, 3008>|null,
      *     ActiveTracing?: bool|null,
-     *     EnvironmentVariables?: array<string, string>|null
+     *     EnvironmentVariables?: array<string, string>|null,
+     *     EphemeralStorage?: int<1024, 5120>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property 'BeforeDiscounts'|'AfterDiscounts'|null $savingsEstimationMode
  * @property 'All'|'None'|null $memberAccountDiscountVisibility
+ * @property Shapes\PreferredCommitment|null $preferredCommitment
  */
 class GetPreferencesResponse extends Response
 {
