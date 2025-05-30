@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property Shapes\Event|null $Event
  * @property string|null $Id
+ * @property array<string, string>|null $Tags
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
 class GetEventActionResponse extends Response

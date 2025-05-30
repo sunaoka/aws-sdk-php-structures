@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property VCpuCountRequest $VCpuCount
  * @property MemoryMiBRequest $MemoryMiB
- * @property list<'intel'|'amd'|'amazon-web-services'>|null $CpuManufacturers
+ * @property list<'intel'|'amd'|'amazon-web-services'|'apple'>|null $CpuManufacturers
  * @property MemoryGiBPerVCpuRequest|null $MemoryGiBPerVCpu
  * @property list<string>|null $ExcludedInstanceTypes
  * @property list<'current'|'previous'>|null $InstanceGenerations
@@ -37,7 +37,7 @@ class InstanceRequirements extends Shape
      * @param array{
      *     VCpuCount: VCpuCountRequest,
      *     MemoryMiB: MemoryMiBRequest,
-     *     CpuManufacturers?: list<'intel'|'amd'|'amazon-web-services'>|null,
+     *     CpuManufacturers?: list<'intel'|'amd'|'amazon-web-services'|'apple'>|null,
      *     MemoryGiBPerVCpu?: MemoryGiBPerVCpuRequest|null,
      *     ExcludedInstanceTypes?: list<string>|null,
      *     InstanceGenerations?: list<'current'|'previous'>|null,

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ContentMD5
  * @property string|null $ExpectedBucketOwner
  * @property Shapes\OwnershipControls $OwnershipControls
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
  */
 class PutBucketOwnershipControlsRequest extends Request
 {
@@ -17,7 +18,8 @@ class PutBucketOwnershipControlsRequest extends Request
      *     Bucket: string,
      *     ContentMD5?: string|null,
      *     ExpectedBucketOwner?: string|null,
-     *     OwnershipControls: Shapes\OwnershipControls
+     *     OwnershipControls: Shapes\OwnershipControls,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null
      * } $args
      */
     public function __construct(array $args)

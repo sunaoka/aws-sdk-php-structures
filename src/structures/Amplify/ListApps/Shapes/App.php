@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CacheConfig|null $cacheConfig
  * @property \Aws\Api\DateTimeResult|null $webhookCreateTime
  * @property WafConfiguration|null $wafConfiguration
+ * @property JobConfig|null $jobConfig
  */
 class App extends Shape
 {
@@ -65,7 +66,8 @@ class App extends Shape
      *     repositoryCloneMethod?: 'SSH'|'TOKEN'|'SIGV4'|null,
      *     cacheConfig?: CacheConfig|null,
      *     webhookCreateTime?: \Aws\Api\DateTimeResult|null,
-     *     wafConfiguration?: WafConfiguration|null
+     *     wafConfiguration?: WafConfiguration|null,
+     *     jobConfig?: JobConfig|null
      * } $args
      */
     public function __construct(array $args)

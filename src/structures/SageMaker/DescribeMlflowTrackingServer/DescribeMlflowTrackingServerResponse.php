@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $MlflowVersion
  * @property string|null $RoleArn
  * @property 'Creating'|'Created'|'CreateFailed'|'Updating'|'Updated'|'UpdateFailed'|'Deleting'|'DeleteFailed'|'Stopping'|'Stopped'|'StopFailed'|'Starting'|'Started'|'StartFailed'|'MaintenanceInProgress'|'MaintenanceComplete'|'MaintenanceFailed'|null $TrackingServerStatus
+ * @property 'MaintenanceInProgress'|'MaintenanceComplete'|'MaintenanceFailed'|null $TrackingServerMaintenanceStatus
  * @property 'Active'|'Inactive'|null $IsActive
  * @property string|null $TrackingServerUrl
  * @property string|null $WeeklyMaintenanceWindowStart
