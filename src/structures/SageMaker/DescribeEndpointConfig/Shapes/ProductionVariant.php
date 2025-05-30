@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProductionVariantManagedInstanceScaling|null $ManagedInstanceScaling
  * @property ProductionVariantRoutingConfig|null $RoutingConfig
  * @property 'al2-ami-sagemaker-inference-gpu-2'|'al2-ami-sagemaker-inference-gpu-2-1'|'al2-ami-sagemaker-inference-gpu-3-1'|'al2-ami-sagemaker-inference-neuron-2'|null $InferenceAmiVersion
+ * @property ProductionVariantCapacityReservationConfig|null $CapacityReservationConfig
  */
 class ProductionVariant extends Shape
 {
@@ -39,7 +40,8 @@ class ProductionVariant extends Shape
      *     EnableSSMAccess?: bool|null,
      *     ManagedInstanceScaling?: ProductionVariantManagedInstanceScaling|null,
      *     RoutingConfig?: ProductionVariantRoutingConfig|null,
-     *     InferenceAmiVersion?: 'al2-ami-sagemaker-inference-gpu-2'|'al2-ami-sagemaker-inference-gpu-2-1'|'al2-ami-sagemaker-inference-gpu-3-1'|'al2-ami-sagemaker-inference-neuron-2'|null
+     *     InferenceAmiVersion?: 'al2-ami-sagemaker-inference-gpu-2'|'al2-ami-sagemaker-inference-gpu-2-1'|'al2-ami-sagemaker-inference-gpu-3-1'|'al2-ami-sagemaker-inference-neuron-2'|null,
+     *     CapacityReservationConfig?: ProductionVariantCapacityReservationConfig|null
      * } $args
      */
     public function __construct(array $args)
