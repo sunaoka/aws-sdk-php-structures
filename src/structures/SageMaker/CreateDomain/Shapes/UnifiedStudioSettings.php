@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ProjectId
  * @property string|null $EnvironmentId
  * @property string|null $ProjectS3Path
+ * @property string|null $SingleSignOnApplicationArn
  */
 class UnifiedStudioSettings extends Shape
 {
@@ -23,7 +24,8 @@ class UnifiedStudioSettings extends Shape
      *     DomainId?: string|null,
      *     ProjectId?: string|null,
      *     EnvironmentId?: string|null,
-     *     ProjectS3Path?: string|null
+     *     ProjectS3Path?: string|null,
+     *     SingleSignOnApplicationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

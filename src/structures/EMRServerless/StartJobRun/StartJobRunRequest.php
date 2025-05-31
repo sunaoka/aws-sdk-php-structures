@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $clientToken
  * @property string $executionRoleArn
+ * @property Shapes\JobRunExecutionIamPolicy|null $executionIamPolicy
  * @property Shapes\JobDriver|null $jobDriver
  * @property Shapes\ConfigurationOverrides|null $configurationOverrides
  * @property array<string, string>|null $tags
@@ -23,6 +24,7 @@ class StartJobRunRequest extends Request
      *     applicationId: string,
      *     clientToken: string,
      *     executionRoleArn: string,
+     *     executionIamPolicy?: Shapes\JobRunExecutionIamPolicy|null,
      *     jobDriver?: Shapes\JobDriver|null,
      *     configurationOverrides?: Shapes\ConfigurationOverrides|null,
      *     tags?: array<string, string>|null,
