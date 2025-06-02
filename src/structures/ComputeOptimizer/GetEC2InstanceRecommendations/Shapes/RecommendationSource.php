@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $recommendationSourceArn
- * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|null $recommendationSourceType
+ * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|'AuroraDBClusterStorage'|null $recommendationSourceType
  */
 class RecommendationSource extends Shape
 {
     /**
      * @param array{
      *     recommendationSourceArn?: string|null,
-     *     recommendationSourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|null
+     *     recommendationSourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|'AuroraDBClusterStorage'|null
      * } $args
      */
     public function __construct(array $args = [])

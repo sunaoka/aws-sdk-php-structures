@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $id
  * @property string $arn
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED' $status
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'SUSPENDING'|'SUSPENDED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property Scheduler $scheduler
@@ -25,7 +25,7 @@ class Cluster extends Shape
      *     name: string,
      *     id: string,
      *     arn: string,
-     *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED',
+     *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED'|'SUSPENDING'|'SUSPENDED',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     modifiedAt: \Aws\Api\DateTimeResult,
      *     scheduler: Scheduler,

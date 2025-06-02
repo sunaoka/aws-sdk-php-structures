@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $RecoveryPointArn
  * @property \Aws\Api\DateTimeResult|null $CreationDate
- * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|null $Status
+ * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null $Status
  * @property string|null $StatusMessage
  * @property string|null $EncryptionKeyArn
  * @property int|null $BackupSizeBytes
@@ -25,7 +25,7 @@ class RecoveryPointByResource extends Shape
      * @param array{
      *     RecoveryPointArn?: string|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
-     *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|null,
+     *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null,
      *     StatusMessage?: string|null,
      *     EncryptionKeyArn?: string|null,
      *     BackupSizeBytes?: int|null,
