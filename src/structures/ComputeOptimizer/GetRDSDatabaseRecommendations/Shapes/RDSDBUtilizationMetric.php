@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CPU'|'Memory'|'EBSVolumeStorageSpaceUtilization'|'NetworkReceiveThroughput'|'NetworkTransmitThroughput'|'EBSVolumeReadIOPS'|'EBSVolumeWriteIOPS'|'EBSVolumeReadThroughput'|'EBSVolumeWriteThroughput'|'DatabaseConnections'|'StorageNetworkReceiveThroughput'|'StorageNetworkTransmitThroughput'|'AuroraMemoryHealthState'|'AuroraMemoryNumDeclinedSql'|'AuroraMemoryNumKillConnTotal'|'AuroraMemoryNumKillQueryTotal'|'ReadIOPSEphemeralStorage'|'WriteIOPSEphemeralStorage'|null $name
+ * @property 'CPU'|'Memory'|'EBSVolumeStorageSpaceUtilization'|'NetworkReceiveThroughput'|'NetworkTransmitThroughput'|'EBSVolumeReadIOPS'|'EBSVolumeWriteIOPS'|'EBSVolumeReadThroughput'|'EBSVolumeWriteThroughput'|'DatabaseConnections'|'StorageNetworkReceiveThroughput'|'StorageNetworkTransmitThroughput'|'AuroraMemoryHealthState'|'AuroraMemoryNumDeclinedSql'|'AuroraMemoryNumKillConnTotal'|'AuroraMemoryNumKillQueryTotal'|'ReadIOPSEphemeralStorage'|'WriteIOPSEphemeralStorage'|'VolumeReadIOPs'|'VolumeBytesUsed'|'VolumeWriteIOPs'|null $name
  * @property 'Maximum'|'Minimum'|'Average'|null $statistic
  * @property double|null $value
  */
@@ -13,7 +13,7 @@ class RDSDBUtilizationMetric extends Shape
 {
     /**
      * @param array{
-     *     name?: 'CPU'|'Memory'|'EBSVolumeStorageSpaceUtilization'|'NetworkReceiveThroughput'|'NetworkTransmitThroughput'|'EBSVolumeReadIOPS'|'EBSVolumeWriteIOPS'|'EBSVolumeReadThroughput'|'EBSVolumeWriteThroughput'|'DatabaseConnections'|'StorageNetworkReceiveThroughput'|'StorageNetworkTransmitThroughput'|'AuroraMemoryHealthState'|'AuroraMemoryNumDeclinedSql'|'AuroraMemoryNumKillConnTotal'|'AuroraMemoryNumKillQueryTotal'|'ReadIOPSEphemeralStorage'|'WriteIOPSEphemeralStorage'|null,
+     *     name?: 'CPU'|'Memory'|'EBSVolumeStorageSpaceUtilization'|'NetworkReceiveThroughput'|'NetworkTransmitThroughput'|'EBSVolumeReadIOPS'|'EBSVolumeWriteIOPS'|'EBSVolumeReadThroughput'|'EBSVolumeWriteThroughput'|'DatabaseConnections'|'StorageNetworkReceiveThroughput'|'StorageNetworkTransmitThroughput'|'AuroraMemoryHealthState'|'AuroraMemoryNumDeclinedSql'|'AuroraMemoryNumKillConnTotal'|'AuroraMemoryNumKillQueryTotal'|'ReadIOPSEphemeralStorage'|'WriteIOPSEphemeralStorage'|'VolumeReadIOPs'|'VolumeBytesUsed'|'VolumeWriteIOPs'|null,
      *     statistic?: 'Maximum'|'Minimum'|'Average'|null,
      *     value?: double|null
      * } $args

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceType
  * @property RecoveryPointCreator|null $CreatedBy
  * @property string|null $IamRoleArn
- * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|null $Status
+ * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null $Status
  * @property string|null $StatusMessage
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
@@ -43,7 +43,7 @@ class RecoveryPointByBackupVault extends Shape
      *     ResourceType?: string|null,
      *     CreatedBy?: RecoveryPointCreator|null,
      *     IamRoleArn?: string|null,
-     *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|null,
+     *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null,
      *     StatusMessage?: string|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
      *     CompletionDate?: \Aws\Api\DateTimeResult|null,

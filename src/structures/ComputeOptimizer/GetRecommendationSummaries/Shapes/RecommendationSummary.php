@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<Summary>|null $summaries
  * @property list<IdleSummary>|null $idleSummaries
- * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|null $recommendationResourceType
+ * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|'AuroraDBClusterStorage'|null $recommendationResourceType
  * @property string|null $accountId
  * @property SavingsOpportunity|null $savingsOpportunity
  * @property SavingsOpportunity|null $idleSavingsOpportunity
@@ -21,7 +21,7 @@ class RecommendationSummary extends Shape
      * @param array{
      *     summaries?: list<Summary>|null,
      *     idleSummaries?: list<IdleSummary>|null,
-     *     recommendationResourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|null,
+     *     recommendationResourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'EcsService'|'License'|'RdsDBInstance'|'RdsDBInstanceStorage'|'AuroraDBClusterStorage'|null,
      *     accountId?: string|null,
      *     savingsOpportunity?: SavingsOpportunity|null,
      *     idleSavingsOpportunity?: SavingsOpportunity|null,

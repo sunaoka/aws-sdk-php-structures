@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $rank
  * @property SavingsOpportunity|null $savingsOpportunity
  * @property RDSStorageSavingsOpportunityAfterDiscounts|null $savingsOpportunityAfterDiscounts
+ * @property 'None'|'Low'|'Medium'|'High'|null $estimatedMonthlyVolumeIOPsCostVariation
  */
 class RDSDBStorageRecommendationOption extends Shape
 {
@@ -17,7 +18,8 @@ class RDSDBStorageRecommendationOption extends Shape
      *     storageConfiguration?: DBStorageConfiguration|null,
      *     rank?: int|null,
      *     savingsOpportunity?: SavingsOpportunity|null,
-     *     savingsOpportunityAfterDiscounts?: RDSStorageSavingsOpportunityAfterDiscounts|null
+     *     savingsOpportunityAfterDiscounts?: RDSStorageSavingsOpportunityAfterDiscounts|null,
+     *     estimatedMonthlyVolumeIOPsCostVariation?: 'None'|'Low'|'Medium'|'High'|null
      * } $args
      */
     public function __construct(array $args = [])

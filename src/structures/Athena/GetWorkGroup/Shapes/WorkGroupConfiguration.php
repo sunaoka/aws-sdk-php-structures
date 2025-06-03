@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ResultConfiguration|null $ResultConfiguration
+ * @property ManagedQueryResultsConfiguration|null $ManagedQueryResultsConfiguration
  * @property bool|null $EnforceWorkGroupConfiguration
  * @property bool|null $PublishCloudWatchMetricsEnabled
  * @property int<10000000, max>|null $BytesScannedCutoffPerQuery
@@ -23,6 +24,7 @@ class WorkGroupConfiguration extends Shape
     /**
      * @param array{
      *     ResultConfiguration?: ResultConfiguration|null,
+     *     ManagedQueryResultsConfiguration?: ManagedQueryResultsConfiguration|null,
      *     EnforceWorkGroupConfiguration?: bool|null,
      *     PublishCloudWatchMetricsEnabled?: bool|null,
      *     BytesScannedCutoffPerQuery?: int<10000000, max>|null,
