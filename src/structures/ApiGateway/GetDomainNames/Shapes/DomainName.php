@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ownershipVerificationCertificateArn
  * @property string|null $managementPolicy
  * @property string|null $policy
+ * @property 'BASE_PATH_MAPPING_ONLY'|'ROUTING_RULE_ONLY'|'ROUTING_RULE_THEN_BASE_PATH_MAPPING'|null $routingMode
  */
 class DomainName extends Shape
 {
@@ -51,7 +52,8 @@ class DomainName extends Shape
      *     mutualTlsAuthentication?: MutualTlsAuthentication|null,
      *     ownershipVerificationCertificateArn?: string|null,
      *     managementPolicy?: string|null,
-     *     policy?: string|null
+     *     policy?: string|null,
+     *     routingMode?: 'BASE_PATH_MAPPING_ONLY'|'ROUTING_RULE_ONLY'|'ROUTING_RULE_THEN_BASE_PATH_MAPPING'|null
      * } $args
      */
     public function __construct(array $args = [])

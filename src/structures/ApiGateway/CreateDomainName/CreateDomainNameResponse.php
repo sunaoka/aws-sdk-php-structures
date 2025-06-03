@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ownershipVerificationCertificateArn
  * @property string|null $managementPolicy
  * @property string|null $policy
+ * @property 'BASE_PATH_MAPPING_ONLY'|'ROUTING_RULE_ONLY'|'ROUTING_RULE_THEN_BASE_PATH_MAPPING'|null $routingMode
  */
 class CreateDomainNameResponse extends Response
 {
