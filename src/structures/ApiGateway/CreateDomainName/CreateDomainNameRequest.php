@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MutualTlsAuthenticationInput|null $mutualTlsAuthentication
  * @property string|null $ownershipVerificationCertificateArn
  * @property string|null $policy
+ * @property 'BASE_PATH_MAPPING_ONLY'|'ROUTING_RULE_ONLY'|'ROUTING_RULE_THEN_BASE_PATH_MAPPING'|null $routingMode
  */
 class CreateDomainNameRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateDomainNameRequest extends Request
      *     securityPolicy?: 'TLS_1_0'|'TLS_1_2'|null,
      *     mutualTlsAuthentication?: Shapes\MutualTlsAuthenticationInput|null,
      *     ownershipVerificationCertificateArn?: string|null,
-     *     policy?: string|null
+     *     policy?: string|null,
+     *     routingMode?: 'BASE_PATH_MAPPING_ONLY'|'ROUTING_RULE_ONLY'|'ROUTING_RULE_THEN_BASE_PATH_MAPPING'|null
      * } $args
      */
     public function __construct(array $args)
