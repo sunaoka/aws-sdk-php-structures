@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcInterfaceName
  * @property string|null $WhitelistCidr
  * @property GatewayBridgeSource|null $GatewayBridgeSource
+ * @property string|null $PeerIpAddress
  */
 class Source extends Shape
 {
@@ -39,7 +40,8 @@ class Source extends Shape
      *     Transport?: Transport|null,
      *     VpcInterfaceName?: string|null,
      *     WhitelistCidr?: string|null,
-     *     GatewayBridgeSource?: GatewayBridgeSource|null
+     *     GatewayBridgeSource?: GatewayBridgeSource|null,
+     *     PeerIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args)

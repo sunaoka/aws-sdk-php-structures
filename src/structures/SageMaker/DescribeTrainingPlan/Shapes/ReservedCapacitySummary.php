@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ReservedCapacityArn
- * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge' $InstanceType
+ * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge' $InstanceType
  * @property int<0, max> $TotalInstanceCount
  * @property 'Pending'|'Active'|'Scheduled'|'Expired'|'Failed' $Status
  * @property string|null $AvailabilityZone
@@ -20,7 +20,7 @@ class ReservedCapacitySummary extends Shape
     /**
      * @param array{
      *     ReservedCapacityArn: string,
-     *     InstanceType: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge',
+     *     InstanceType: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge',
      *     TotalInstanceCount: int<0, max>,
      *     Status: 'Pending'|'Active'|'Scheduled'|'Expired'|'Failed',
      *     AvailabilityZone?: string|null,
