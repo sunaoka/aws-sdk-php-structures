@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $workloadEstimateId
  * @property list<Shapes\ListUsageFilter>|null $filters
  * @property string|null $nextToken
- * @property int<0, 300>|null $maxResults
+ * @property int<1, 300>|null $maxResults
  */
 class ListWorkloadEstimateUsageRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListWorkloadEstimateUsageRequest extends Request
      *     workloadEstimateId: string,
      *     filters?: list<Shapes\ListUsageFilter>|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<0, 300>|null
+     *     maxResults?: int<1, 300>|null
      * } $args
      */
     public function __construct(array $args)

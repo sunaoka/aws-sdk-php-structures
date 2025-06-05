@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyId
+ * @property string|null $KeyMaterialId
  */
 class DeleteImportedKeyMaterialRequest extends Request
 {
     /**
-     * @param array{KeyId: string} $args
+     * @param array{
+     *     KeyId: string,
+     *     KeyMaterialId?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {
