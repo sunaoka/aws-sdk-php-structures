@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\FilterTimestamp|null $createdAtFilter
  * @property Shapes\FilterTimestamp|null $expiresAtFilter
  * @property string|null $nextToken
- * @property int<0, 25>|null $maxResults
+ * @property int<1, 25>|null $maxResults
  */
 class ListBillScenariosRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListBillScenariosRequest extends Request
      *     createdAtFilter?: Shapes\FilterTimestamp|null,
      *     expiresAtFilter?: Shapes\FilterTimestamp|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<0, 25>|null
+     *     maxResults?: int<1, 25>|null
      * } $args
      */
     public function __construct(array $args = [])

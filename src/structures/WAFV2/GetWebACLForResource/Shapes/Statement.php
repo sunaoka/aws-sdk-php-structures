@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ManagedRuleGroupStatement|null $ManagedRuleGroupStatement
  * @property LabelMatchStatement|null $LabelMatchStatement
  * @property RegexMatchStatement|null $RegexMatchStatement
+ * @property AsnMatchStatement|null $AsnMatchStatement
  */
 class Statement extends Shape
 {
@@ -39,7 +40,8 @@ class Statement extends Shape
      *     NotStatement?: NotStatement|null,
      *     ManagedRuleGroupStatement?: ManagedRuleGroupStatement|null,
      *     LabelMatchStatement?: LabelMatchStatement|null,
-     *     RegexMatchStatement?: RegexMatchStatement|null
+     *     RegexMatchStatement?: RegexMatchStatement|null,
+     *     AsnMatchStatement?: AsnMatchStatement|null
      * } $args
      */
     public function __construct(array $args = [])

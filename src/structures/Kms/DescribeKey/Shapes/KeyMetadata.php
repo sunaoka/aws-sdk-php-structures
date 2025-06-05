@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 365>|null $PendingDeletionWindowInDays
  * @property list<'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512'>|null $MacAlgorithms
  * @property XksKeyConfigurationType|null $XksKeyConfiguration
+ * @property string|null $CurrentKeyMaterialId
  */
 class KeyMetadata extends Shape
 {
@@ -59,7 +60,8 @@ class KeyMetadata extends Shape
      *     MultiRegionConfiguration?: MultiRegionConfiguration|null,
      *     PendingDeletionWindowInDays?: int<1, 365>|null,
      *     MacAlgorithms?: list<'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512'>|null,
-     *     XksKeyConfiguration?: XksKeyConfigurationType|null
+     *     XksKeyConfiguration?: XksKeyConfigurationType|null,
+     *     CurrentKeyMaterialId?: string|null
      * } $args
      */
     public function __construct(array $args)
