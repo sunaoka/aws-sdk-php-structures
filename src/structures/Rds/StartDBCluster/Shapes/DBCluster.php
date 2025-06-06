@@ -61,6 +61,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $CrossAccountClone
  * @property list<DomainMembership>|null $DomainMemberships
  * @property list<Tag>|null $TagList
+ * @property string|null $GlobalClusterIdentifier
  * @property 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null $GlobalWriteForwardingStatus
  * @property bool|null $GlobalWriteForwardingRequested
  * @property ClusterPendingModifiedValues|null $PendingModifiedValues
@@ -148,6 +149,7 @@ class DBCluster extends Shape
      *     CrossAccountClone?: bool|null,
      *     DomainMemberships?: list<DomainMembership>|null,
      *     TagList?: list<Tag>|null,
+     *     GlobalClusterIdentifier?: string|null,
      *     GlobalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null,
      *     GlobalWriteForwardingRequested?: bool|null,
      *     PendingModifiedValues?: ClusterPendingModifiedValues|null,

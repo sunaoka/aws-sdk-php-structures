@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $instruction
  * @property list<Shapes\KnowledgeBase>|null $knowledgeBases
  * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null $orchestrationType
+ * @property Shapes\PromptCreationConfigurations|null $promptCreationConfigurations
  * @property Shapes\PromptOverrideConfiguration|null $promptOverrideConfiguration
  * @property string $sessionId
  * @property Shapes\StreamingConfigurations|null $streamingConfigurations
@@ -49,6 +50,7 @@ class InvokeInlineAgentRequest extends Request
      *     instruction: string,
      *     knowledgeBases?: list<Shapes\KnowledgeBase>|null,
      *     orchestrationType?: 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null,
+     *     promptCreationConfigurations?: Shapes\PromptCreationConfigurations|null,
      *     promptOverrideConfiguration?: Shapes\PromptOverrideConfiguration|null,
      *     sessionId: string,
      *     streamingConfigurations?: Shapes\StreamingConfigurations|null
