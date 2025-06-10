@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Conditions|null $Conditions
  * @property Shapes\Filter|null $Filter
  * @property 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE' $Statistic
+ * @property bool|null $UseHistoricalData
  * @property array<string, string>|null $Tags
  */
 class CreateCalculatedAttributeDefinitionRequest extends Request
@@ -27,6 +28,7 @@ class CreateCalculatedAttributeDefinitionRequest extends Request
      *     Conditions?: Shapes\Conditions|null,
      *     Filter?: Shapes\Filter|null,
      *     Statistic: 'FIRST_OCCURRENCE'|'LAST_OCCURRENCE'|'COUNT'|'SUM'|'MINIMUM'|'MAXIMUM'|'AVERAGE'|'MAX_OCCURRENCE',
+     *     UseHistoricalData?: bool|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

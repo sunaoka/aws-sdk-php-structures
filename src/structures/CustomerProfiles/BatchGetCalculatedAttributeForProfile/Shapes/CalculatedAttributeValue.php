@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $IsDataPartial
  * @property string|null $ProfileId
  * @property string|null $Value
+ * @property \Aws\Api\DateTimeResult|null $LastObjectTimestamp
  */
 class CalculatedAttributeValue extends Shape
 {
@@ -19,7 +20,8 @@ class CalculatedAttributeValue extends Shape
      *     DisplayName?: string|null,
      *     IsDataPartial?: string|null,
      *     ProfileId?: string|null,
-     *     Value?: string|null
+     *     Value?: string|null,
+     *     LastObjectTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -19,8 +19,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $Ipv6Native
  * @property PrivateDnsNameOptionsOnLaunch|null $PrivateDnsNameOptionsOnLaunch
  * @property BlockPublicAccessStates|null $BlockPublicAccessStates
+ * @property string|null $Type
  * @property string|null $SubnetId
- * @property 'pending'|'available'|'unavailable'|null $State
+ * @property 'pending'|'available'|'unavailable'|'failed'|'failed-insufficient-capacity'|null $State
  * @property string|null $VpcId
  * @property string|null $CidrBlock
  * @property int|null $AvailableIpAddressCount
@@ -46,8 +47,9 @@ class Subnet extends Shape
      *     Ipv6Native?: bool|null,
      *     PrivateDnsNameOptionsOnLaunch?: PrivateDnsNameOptionsOnLaunch|null,
      *     BlockPublicAccessStates?: BlockPublicAccessStates|null,
+     *     Type?: string|null,
      *     SubnetId?: string|null,
-     *     State?: 'pending'|'available'|'unavailable'|null,
+     *     State?: 'pending'|'available'|'unavailable'|'failed'|'failed-insufficient-capacity'|null,
      *     VpcId?: string|null,
      *     CidrBlock?: string|null,
      *     AvailableIpAddressCount?: int|null,

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $SubnetId
  * @property 'creating'|'available'|'updating'|'deleting'|'deleted'|'error' $LifeCycleState
  * @property string|null $IpAddress
+ * @property string|null $Ipv6Address
  * @property string|null $NetworkInterfaceId
  * @property string|null $AvailabilityZoneId
  * @property string|null $AvailabilityZoneName

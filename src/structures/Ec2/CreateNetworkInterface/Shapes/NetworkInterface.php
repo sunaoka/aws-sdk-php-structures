@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $Ipv6Native
  * @property string|null $Ipv6Address
  * @property OperatorResponse|null $Operator
+ * @property list<string>|null $AssociatedSubnets
  */
 class NetworkInterface extends Shape
 {
@@ -69,7 +70,8 @@ class NetworkInterface extends Shape
      *     DenyAllIgwTraffic?: bool|null,
      *     Ipv6Native?: bool|null,
      *     Ipv6Address?: string|null,
-     *     Operator?: OperatorResponse|null
+     *     Operator?: OperatorResponse|null,
+     *     AssociatedSubnets?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])
