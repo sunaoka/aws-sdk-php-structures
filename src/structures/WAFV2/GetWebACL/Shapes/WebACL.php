@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $TokenDomains
  * @property AssociationConfig|null $AssociationConfig
  * @property bool|null $RetrofittedByFirewallManager
+ * @property OnSourceDDoSProtectionConfig|null $OnSourceDDoSProtectionConfig
  */
 class WebACL extends Shape
 {
@@ -47,7 +48,8 @@ class WebACL extends Shape
      *     ChallengeConfig?: ChallengeConfig|null,
      *     TokenDomains?: list<string>|null,
      *     AssociationConfig?: AssociationConfig|null,
-     *     RetrofittedByFirewallManager?: bool|null
+     *     RetrofittedByFirewallManager?: bool|null,
+     *     OnSourceDDoSProtectionConfig?: OnSourceDDoSProtectionConfig|null
      * } $args
      */
     public function __construct(array $args)

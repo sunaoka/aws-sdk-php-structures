@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SlotResolutionImprovementSpecification|null $slotResolutionImprovement
+ * @property NluImprovementSpecification|null $nluImprovement
  */
 class RuntimeSettings extends Shape
 {
     /**
-     * @param array{slotResolutionImprovement?: SlotResolutionImprovementSpecification|null} $args
+     * @param array{
+     *     slotResolutionImprovement?: SlotResolutionImprovementSpecification|null,
+     *     nluImprovement?: NluImprovementSpecification|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

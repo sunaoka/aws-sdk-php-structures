@@ -15,6 +15,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $modifiedAt
  * @property string|null $ownerArn
+ * @property bool|null $disableSessionTags
+ * @property string|null $targetRoleArn
+ * @property string|null $externalId
  */
 class PodIdentityAssociation extends Shape
 {
@@ -29,7 +32,10 @@ class PodIdentityAssociation extends Shape
      *     tags?: array<string, string>|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     modifiedAt?: \Aws\Api\DateTimeResult|null,
-     *     ownerArn?: string|null
+     *     ownerArn?: string|null,
+     *     disableSessionTags?: bool|null,
+     *     targetRoleArn?: string|null,
+     *     externalId?: string|null
      * } $args
      */
     public function __construct(array $args = [])
