@@ -14,6 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $InsideCidrBlocks
  * @property list<string>|null $SharedSegments
  * @property list<ServiceInsertionAction>|null $ServiceInsertionActions
+ * @property bool|null $VpnEcmpSupport
+ * @property bool|null $DnsSupport
+ * @property bool|null $SecurityGroupReferencingSupport
  */
 class CoreNetworkChangeValues extends Shape
 {
@@ -27,7 +30,10 @@ class CoreNetworkChangeValues extends Shape
      *     DestinationIdentifier?: string|null,
      *     InsideCidrBlocks?: list<string>|null,
      *     SharedSegments?: list<string>|null,
-     *     ServiceInsertionActions?: list<ServiceInsertionAction>|null
+     *     ServiceInsertionActions?: list<ServiceInsertionAction>|null,
+     *     VpnEcmpSupport?: bool|null,
+     *     DnsSupport?: bool|null,
+     *     SecurityGroupReferencingSupport?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

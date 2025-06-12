@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ChallengeConfig|null $ChallengeConfig
  * @property list<string>|null $TokenDomains
  * @property Shapes\AssociationConfig|null $AssociationConfig
+ * @property Shapes\OnSourceDDoSProtectionConfig|null $OnSourceDDoSProtectionConfig
  */
 class UpdateWebACLRequest extends Request
 {
@@ -37,7 +38,8 @@ class UpdateWebACLRequest extends Request
      *     CaptchaConfig?: Shapes\CaptchaConfig|null,
      *     ChallengeConfig?: Shapes\ChallengeConfig|null,
      *     TokenDomains?: list<string>|null,
-     *     AssociationConfig?: Shapes\AssociationConfig|null
+     *     AssociationConfig?: Shapes\AssociationConfig|null,
+     *     OnSourceDDoSProtectionConfig?: Shapes\OnSourceDDoSProtectionConfig|null
      * } $args
      */
     public function __construct(array $args)
