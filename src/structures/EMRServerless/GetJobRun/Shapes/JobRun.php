@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string $executionRole
+ * @property JobRunExecutionIamPolicy|null $executionIamPolicy
  * @property 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED' $state
  * @property string $stateDetails
  * @property string $releaseLabel
@@ -45,6 +46,7 @@ class JobRun extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     executionRole: string,
+     *     executionIamPolicy?: JobRunExecutionIamPolicy|null,
      *     state: 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED',
      *     stateDetails: string,
      *     releaseLabel: string,
