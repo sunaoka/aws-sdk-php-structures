@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\CreateRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IP'|'TCP'|'UDP'|'ICMP'|'HTTP'|'FTP'|'TLS'|'SMB'|'DNS'|'DCERPC'|'SSH'|'SMTP'|'IMAP'|'MSN'|'KRB5'|'IKEV2'|'TFTP'|'NTP'|'DHCP' $Protocol
+ * @property 'IP'|'TCP'|'UDP'|'ICMP'|'HTTP'|'FTP'|'TLS'|'SMB'|'DNS'|'DCERPC'|'SSH'|'SMTP'|'IMAP'|'MSN'|'KRB5'|'IKEV2'|'TFTP'|'NTP'|'DHCP'|'HTTP2'|'QUIC' $Protocol
  * @property string $Source
  * @property string $SourcePort
  * @property 'FORWARD'|'ANY' $Direction
@@ -16,7 +16,7 @@ class Header extends Shape
 {
     /**
      * @param array{
-     *     Protocol: 'IP'|'TCP'|'UDP'|'ICMP'|'HTTP'|'FTP'|'TLS'|'SMB'|'DNS'|'DCERPC'|'SSH'|'SMTP'|'IMAP'|'MSN'|'KRB5'|'IKEV2'|'TFTP'|'NTP'|'DHCP',
+     *     Protocol: 'IP'|'TCP'|'UDP'|'ICMP'|'HTTP'|'FTP'|'TLS'|'SMB'|'DNS'|'DCERPC'|'SSH'|'SMTP'|'IMAP'|'MSN'|'KRB5'|'IKEV2'|'TFTP'|'NTP'|'DHCP'|'HTTP2'|'QUIC',
      *     Source: string,
      *     SourcePort: string,
      *     Direction: 'FORWARD'|'ANY',

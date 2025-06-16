@@ -16,6 +16,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  * @property list<'TLS_SNI'|'HTTP_HOST'>|null $EnabledAnalysisTypes
+ * @property string|null $TransitGatewayId
+ * @property list<Shapes\AvailabilityZoneMapping>|null $AvailabilityZoneMappings
+ * @property bool|null $AvailabilityZoneChangeProtection
  */
 class CreateFirewallRequest extends Request
 {
@@ -31,7 +34,10 @@ class CreateFirewallRequest extends Request
      *     Description?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,
-     *     EnabledAnalysisTypes?: list<'TLS_SNI'|'HTTP_HOST'>|null
+     *     EnabledAnalysisTypes?: list<'TLS_SNI'|'HTTP_HOST'>|null,
+     *     TransitGatewayId?: string|null,
+     *     AvailabilityZoneMappings?: list<Shapes\AvailabilityZoneMapping>|null,
+     *     AvailabilityZoneChangeProtection?: bool|null
      * } $args
      */
     public function __construct(array $args)
