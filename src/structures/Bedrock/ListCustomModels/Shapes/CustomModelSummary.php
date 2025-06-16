@@ -10,8 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $baseModelArn
  * @property string $baseModelName
- * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null $customizationType
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'IMPORTED'|null $customizationType
  * @property string|null $ownerAccountId
+ * @property 'Active'|'Creating'|'Failed'|null $modelStatus
  */
 class CustomModelSummary extends Shape
 {
@@ -22,8 +23,9 @@ class CustomModelSummary extends Shape
      *     creationTime: \Aws\Api\DateTimeResult,
      *     baseModelArn: string,
      *     baseModelName: string,
-     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null,
-     *     ownerAccountId?: string|null
+     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'IMPORTED'|null,
+     *     ownerAccountId?: string|null,
+     *     modelStatus?: 'Active'|'Creating'|'Failed'|null
      * } $args
      */
     public function __construct(array $args)
