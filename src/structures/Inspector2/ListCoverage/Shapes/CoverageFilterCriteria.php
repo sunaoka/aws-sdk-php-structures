@@ -6,6 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<CoverageStringFilter>|null $accountId
+ * @property list<CoverageStringFilter>|null $codeRepositoryProjectName
+ * @property list<CoverageStringFilter>|null $codeRepositoryProviderType
+ * @property list<CoverageStringFilter>|null $codeRepositoryProviderTypeVisibility
  * @property list<CoverageMapFilter>|null $ec2InstanceTags
  * @property list<CoverageNumberFilter>|null $ecrImageInUseCount
  * @property list<CoverageDateFilter>|null $ecrImageLastInUseAt
@@ -16,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CoverageStringFilter>|null $lambdaFunctionRuntime
  * @property list<CoverageMapFilter>|null $lambdaFunctionTags
  * @property list<CoverageDateFilter>|null $lastScannedAt
+ * @property list<CoverageStringFilter>|null $lastScannedCommitId
  * @property list<CoverageStringFilter>|null $resourceId
  * @property list<CoverageStringFilter>|null $resourceType
  * @property list<CoverageStringFilter>|null $scanMode
@@ -28,6 +32,9 @@ class CoverageFilterCriteria extends Shape
     /**
      * @param array{
      *     accountId?: list<CoverageStringFilter>|null,
+     *     codeRepositoryProjectName?: list<CoverageStringFilter>|null,
+     *     codeRepositoryProviderType?: list<CoverageStringFilter>|null,
+     *     codeRepositoryProviderTypeVisibility?: list<CoverageStringFilter>|null,
      *     ec2InstanceTags?: list<CoverageMapFilter>|null,
      *     ecrImageInUseCount?: list<CoverageNumberFilter>|null,
      *     ecrImageLastInUseAt?: list<CoverageDateFilter>|null,
@@ -38,6 +45,7 @@ class CoverageFilterCriteria extends Shape
      *     lambdaFunctionRuntime?: list<CoverageStringFilter>|null,
      *     lambdaFunctionTags?: list<CoverageMapFilter>|null,
      *     lastScannedAt?: list<CoverageDateFilter>|null,
+     *     lastScannedCommitId?: list<CoverageStringFilter>|null,
      *     resourceId?: list<CoverageStringFilter>|null,
      *     resourceType?: list<CoverageStringFilter>|null,
      *     scanMode?: list<CoverageStringFilter>|null,

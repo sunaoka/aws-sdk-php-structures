@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $resourceOwnerAccount
  * @property string|null $error
  * @property list<FindingSource>|null $sources
- * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null $resourceControlPolicyRestriction
+ * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|'APPLIED'|null $resourceControlPolicyRestriction
  */
 class FindingSummary extends Shape
 {
@@ -39,7 +39,7 @@ class FindingSummary extends Shape
      *     resourceOwnerAccount: string,
      *     error?: string|null,
      *     sources?: list<FindingSource>|null,
-     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null
+     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|'APPLIED'|null
      * } $args
      */
     public function __construct(array $args)

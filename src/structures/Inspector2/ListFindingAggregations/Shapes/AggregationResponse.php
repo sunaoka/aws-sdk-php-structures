@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AccountAggregationResponse|null $accountAggregation
  * @property AmiAggregationResponse|null $amiAggregation
  * @property AwsEcrContainerAggregationResponse|null $awsEcrContainerAggregation
+ * @property CodeRepositoryAggregationResponse|null $codeRepositoryAggregation
  * @property Ec2InstanceAggregationResponse|null $ec2InstanceAggregation
  * @property FindingTypeAggregationResponse|null $findingTypeAggregation
  * @property ImageLayerAggregationResponse|null $imageLayerAggregation
@@ -24,6 +25,7 @@ class AggregationResponse extends Shape
      *     accountAggregation?: AccountAggregationResponse|null,
      *     amiAggregation?: AmiAggregationResponse|null,
      *     awsEcrContainerAggregation?: AwsEcrContainerAggregationResponse|null,
+     *     codeRepositoryAggregation?: CodeRepositoryAggregationResponse|null,
      *     ec2InstanceAggregation?: Ec2InstanceAggregationResponse|null,
      *     findingTypeAggregation?: FindingTypeAggregationResponse|null,
      *     imageLayerAggregation?: ImageLayerAggregationResponse|null,

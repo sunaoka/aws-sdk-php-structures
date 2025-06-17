@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null $Status
  * @property string|null $StatusMessage
  * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $InitiationDate
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
  * @property int|null $BackupSizeInBytes
  * @property Shapes\CalculatedLifecycle|null $CalculatedLifecycle
@@ -28,7 +29,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $CompositeMemberIdentifier
  * @property bool|null $IsParent
  * @property string|null $ResourceName
- * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null $VaultType
+ * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|'RESTORE_ACCESS_BACKUP_VAULT'|null $VaultType
  * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
  * @property string|null $IndexStatusMessage
  */

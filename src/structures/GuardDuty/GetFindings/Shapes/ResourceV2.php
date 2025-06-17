@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Uid
  * @property string|null $Name
  * @property string|null $AccountId
- * @property 'EC2_INSTANCE'|'EC2_NETWORK_INTERFACE'|'S3_BUCKET'|'S3_OBJECT'|'ACCESS_KEY' $ResourceType
+ * @property 'EC2_INSTANCE'|'EC2_NETWORK_INTERFACE'|'S3_BUCKET'|'S3_OBJECT'|'ACCESS_KEY'|'EKS_CLUSTER'|'KUBERNETES_WORKLOAD'|'CONTAINER' $ResourceType
  * @property string|null $Region
  * @property string|null $Service
  * @property string|null $CloudPartition
@@ -22,7 +22,7 @@ class ResourceV2 extends Shape
      *     Uid: string,
      *     Name?: string|null,
      *     AccountId?: string|null,
-     *     ResourceType: 'EC2_INSTANCE'|'EC2_NETWORK_INTERFACE'|'S3_BUCKET'|'S3_OBJECT'|'ACCESS_KEY',
+     *     ResourceType: 'EC2_INSTANCE'|'EC2_NETWORK_INTERFACE'|'S3_BUCKET'|'S3_OBJECT'|'ACCESS_KEY'|'EKS_CLUSTER'|'KUBERNETES_WORKLOAD'|'CONTAINER',
      *     Region?: string|null,
      *     Service?: string|null,
      *     CloudPartition?: string|null,
