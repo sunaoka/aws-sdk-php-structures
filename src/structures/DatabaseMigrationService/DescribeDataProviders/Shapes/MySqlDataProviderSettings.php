@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Port
  * @property 'none'|'require'|'verify-ca'|'verify-full'|null $SslMode
  * @property string|null $CertificateArn
+ * @property string|null $S3Path
+ * @property string|null $S3AccessRoleArn
  */
 class MySqlDataProviderSettings extends Shape
 {
@@ -17,7 +19,9 @@ class MySqlDataProviderSettings extends Shape
      *     ServerName?: string|null,
      *     Port?: int|null,
      *     SslMode?: 'none'|'require'|'verify-ca'|'verify-full'|null,
-     *     CertificateArn?: string|null
+     *     CertificateArn?: string|null,
+     *     S3Path?: string|null,
+     *     S3AccessRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $analyzerName
- * @property 'ACCOUNT'|'ORGANIZATION'|'ACCOUNT_UNUSED_ACCESS'|'ORGANIZATION_UNUSED_ACCESS' $type
+ * @property 'ACCOUNT'|'ORGANIZATION'|'ACCOUNT_UNUSED_ACCESS'|'ORGANIZATION_UNUSED_ACCESS'|'ACCOUNT_INTERNAL_ACCESS'|'ORGANIZATION_INTERNAL_ACCESS' $type
  * @property list<Shapes\InlineArchiveRule>|null $archiveRules
  * @property array<string, string>|null $tags
  * @property string|null $clientToken
@@ -17,7 +17,7 @@ class CreateAnalyzerRequest extends Request
     /**
      * @param array{
      *     analyzerName: string,
-     *     type: 'ACCOUNT'|'ORGANIZATION'|'ACCOUNT_UNUSED_ACCESS'|'ORGANIZATION_UNUSED_ACCESS',
+     *     type: 'ACCOUNT'|'ORGANIZATION'|'ACCOUNT_UNUSED_ACCESS'|'ORGANIZATION_UNUSED_ACCESS'|'ACCOUNT_INTERNAL_ACCESS'|'ORGANIZATION_INTERNAL_ACCESS',
      *     archiveRules?: list<Shapes\InlineArchiveRule>|null,
      *     tags?: array<string, string>|null,
      *     clientToken?: string|null,

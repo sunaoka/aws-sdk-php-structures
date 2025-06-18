@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $end
  * @property \Aws\Api\DateTimeResult $start
  * @property 'ACTIVE'|'INACTIVE' $status
- * @property 'EC2'|'ECR'|'LAMBDA'|'LAMBDA_CODE' $type
+ * @property 'EC2'|'ECR'|'LAMBDA'|'LAMBDA_CODE'|'CODE_REPOSITORY' $type
  */
 class FreeTrialInfo extends Shape
 {
@@ -17,7 +17,7 @@ class FreeTrialInfo extends Shape
      *     end: \Aws\Api\DateTimeResult,
      *     start: \Aws\Api\DateTimeResult,
      *     status: 'ACTIVE'|'INACTIVE',
-     *     type: 'EC2'|'ECR'|'LAMBDA'|'LAMBDA_CODE'
+     *     type: 'EC2'|'ECR'|'LAMBDA'|'LAMBDA_CODE'|'CODE_REPOSITORY'
      * } $args
      */
     public function __construct(array $args)

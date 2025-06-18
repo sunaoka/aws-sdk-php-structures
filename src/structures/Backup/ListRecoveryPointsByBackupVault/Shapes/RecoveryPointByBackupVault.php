@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null $Status
  * @property string|null $StatusMessage
  * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $InitiationDate
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
  * @property int|null $BackupSizeInBytes
  * @property CalculatedLifecycle|null $CalculatedLifecycle
@@ -27,7 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CompositeMemberIdentifier
  * @property bool|null $IsParent
  * @property string|null $ResourceName
- * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null $VaultType
+ * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|'RESTORE_ACCESS_BACKUP_VAULT'|null $VaultType
  * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
  * @property string|null $IndexStatusMessage
  */
@@ -46,6 +47,7 @@ class RecoveryPointByBackupVault extends Shape
      *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null,
      *     StatusMessage?: string|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     InitiationDate?: \Aws\Api\DateTimeResult|null,
      *     CompletionDate?: \Aws\Api\DateTimeResult|null,
      *     BackupSizeInBytes?: int|null,
      *     CalculatedLifecycle?: CalculatedLifecycle|null,
@@ -57,7 +59,7 @@ class RecoveryPointByBackupVault extends Shape
      *     CompositeMemberIdentifier?: string|null,
      *     IsParent?: bool|null,
      *     ResourceName?: string|null,
-     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null,
+     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|'RESTORE_ACCESS_BACKUP_VAULT'|null,
      *     IndexStatus?: 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null,
      *     IndexStatusMessage?: string|null
      * } $args

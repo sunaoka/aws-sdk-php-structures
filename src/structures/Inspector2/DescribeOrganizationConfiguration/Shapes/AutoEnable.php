@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Inspector2\DescribeOrganizationConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property bool|null $codeRepository
  * @property bool $ec2
  * @property bool $ecr
  * @property bool|null $lambda
@@ -14,6 +15,7 @@ class AutoEnable extends Shape
 {
     /**
      * @param array{
+     *     codeRepository?: bool|null,
      *     ec2: bool,
      *     ecr: bool,
      *     lambda?: bool|null,

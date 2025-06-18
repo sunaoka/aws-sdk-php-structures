@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<StringFilter>|null $awsAccountId
+ * @property list<StringFilter>|null $codeRepositoryProjectName
+ * @property list<StringFilter>|null $codeRepositoryProviderType
  * @property list<StringFilter>|null $codeVulnerabilityDetectorName
  * @property list<StringFilter>|null $codeVulnerabilityDetectorTags
  * @property list<StringFilter>|null $codeVulnerabilityFilePath
@@ -55,6 +57,8 @@ class FilterCriteria extends Shape
     /**
      * @param array{
      *     awsAccountId?: list<StringFilter>|null,
+     *     codeRepositoryProjectName?: list<StringFilter>|null,
+     *     codeRepositoryProviderType?: list<StringFilter>|null,
      *     codeVulnerabilityDetectorName?: list<StringFilter>|null,
      *     codeVulnerabilityDetectorTags?: list<StringFilter>|null,
      *     codeVulnerabilityFilePath?: list<StringFilter>|null,

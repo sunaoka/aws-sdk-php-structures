@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  * @property Shapes\SourceMetadata|null $SourceMetadata
  * @property bool|null $AnalyzeRuleGroup
+ * @property Shapes\SummaryConfiguration|null $SummaryConfiguration
  */
 class UpdateRuleGroupRequest extends Request
 {
@@ -31,7 +32,8 @@ class UpdateRuleGroupRequest extends Request
      *     DryRun?: bool|null,
      *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,
      *     SourceMetadata?: Shapes\SourceMetadata|null,
-     *     AnalyzeRuleGroup?: bool|null
+     *     AnalyzeRuleGroup?: bool|null,
+     *     SummaryConfiguration?: Shapes\SummaryConfiguration|null
      * } $args
      */
     public function __construct(array $args)
