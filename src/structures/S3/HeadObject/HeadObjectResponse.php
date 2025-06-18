@@ -39,6 +39,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'requester'|null $RequestCharged
  * @property 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED'|null $ReplicationStatus
  * @property int|null $PartsCount
+ * @property int|null $TagCount
  * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
  * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
  * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
