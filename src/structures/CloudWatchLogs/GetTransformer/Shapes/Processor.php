@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ParseJSON|null $parseJSON
  * @property ParseKeyValue|null $parseKeyValue
  * @property ParseRoute53|null $parseRoute53
+ * @property ParseToOCSF|null $parseToOCSF
  * @property ParsePostgres|null $parsePostgres
  * @property ParseVPC|null $parseVPC
  * @property ParseWAF|null $parseWAF
@@ -45,6 +46,7 @@ class Processor extends Shape
      *     parseJSON?: ParseJSON|null,
      *     parseKeyValue?: ParseKeyValue|null,
      *     parseRoute53?: ParseRoute53|null,
+     *     parseToOCSF?: ParseToOCSF|null,
      *     parsePostgres?: ParsePostgres|null,
      *     parseVPC?: ParseVPC|null,
      *     parseWAF?: ParseWAF|null,
