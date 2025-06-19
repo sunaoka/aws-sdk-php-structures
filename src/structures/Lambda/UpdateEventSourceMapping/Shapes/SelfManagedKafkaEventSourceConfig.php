@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ConsumerGroupId
+ * @property KafkaSchemaRegistryConfig|null $SchemaRegistryConfig
  */
 class SelfManagedKafkaEventSourceConfig extends Shape
 {
     /**
-     * @param array{ConsumerGroupId?: string|null} $args
+     * @param array{
+     *     ConsumerGroupId?: string|null,
+     *     SchemaRegistryConfig?: KafkaSchemaRegistryConfig|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

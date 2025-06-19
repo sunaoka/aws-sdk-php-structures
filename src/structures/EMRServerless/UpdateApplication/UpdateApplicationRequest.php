@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Configuration>|null $runtimeConfiguration
  * @property Shapes\MonitoringConfiguration|null $monitoringConfiguration
  * @property Shapes\SchedulerConfiguration|null $schedulerConfiguration
+ * @property Shapes\IdentityCenterConfigurationInput|null $identityCenterConfiguration
  */
 class UpdateApplicationRequest extends Request
 {
@@ -39,7 +40,8 @@ class UpdateApplicationRequest extends Request
      *     releaseLabel?: string|null,
      *     runtimeConfiguration?: list<Shapes\Configuration>|null,
      *     monitoringConfiguration?: Shapes\MonitoringConfiguration|null,
-     *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null
+     *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null,
+     *     identityCenterConfiguration?: Shapes\IdentityCenterConfigurationInput|null
      * } $args
      */
     public function __construct(array $args)

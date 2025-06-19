@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ServiceCatalogProvisioningDetails|null $ServiceCatalogProvisioningDetails
  * @property Shapes\ServiceCatalogProvisionedProductDetails|null $ServiceCatalogProvisionedProductDetails
  * @property 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed' $ProjectStatus
+ * @property list<Shapes\TemplateProviderDetail>|null $TemplateProviderDetails
  * @property Shapes\UserContext|null $CreatedBy
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
