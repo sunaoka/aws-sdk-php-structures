@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $KeyArn
  * @property KeyAttributes $KeyAttributes
  * @property string $KeyCheckValue
- * @property 'CMAC'|'ANSI_X9_24' $KeyCheckValueAlgorithm
+ * @property 'CMAC'|'ANSI_X9_24'|'HMAC' $KeyCheckValueAlgorithm
  * @property bool $Enabled
  * @property bool $Exportable
  * @property 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'DELETE_PENDING'|'DELETE_COMPLETE' $KeyState
@@ -27,7 +27,7 @@ class Key extends Shape
      *     KeyArn: string,
      *     KeyAttributes: KeyAttributes,
      *     KeyCheckValue: string,
-     *     KeyCheckValueAlgorithm: 'CMAC'|'ANSI_X9_24',
+     *     KeyCheckValueAlgorithm: 'CMAC'|'ANSI_X9_24'|'HMAC',
      *     Enabled: bool,
      *     Exportable: bool,
      *     KeyState: 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'DELETE_PENDING'|'DELETE_COMPLETE',

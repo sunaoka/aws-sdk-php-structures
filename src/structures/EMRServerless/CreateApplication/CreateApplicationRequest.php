@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MonitoringConfiguration|null $monitoringConfiguration
  * @property Shapes\InteractiveConfiguration|null $interactiveConfiguration
  * @property Shapes\SchedulerConfiguration|null $schedulerConfiguration
+ * @property Shapes\IdentityCenterConfigurationInput|null $identityCenterConfiguration
  */
 class CreateApplicationRequest extends Request
 {
@@ -43,7 +44,8 @@ class CreateApplicationRequest extends Request
      *     runtimeConfiguration?: list<Shapes\Configuration>|null,
      *     monitoringConfiguration?: Shapes\MonitoringConfiguration|null,
      *     interactiveConfiguration?: Shapes\InteractiveConfiguration|null,
-     *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null
+     *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null,
+     *     identityCenterConfiguration?: Shapes\IdentityCenterConfigurationInput|null
      * } $args
      */
     public function __construct(array $args)

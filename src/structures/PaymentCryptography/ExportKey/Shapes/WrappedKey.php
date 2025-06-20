@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'KEY_CRYPTOGRAM'|'TR31_KEY_BLOCK'|'TR34_KEY_BLOCK' $WrappedKeyMaterialFormat
  * @property string $KeyMaterial
  * @property string|null $KeyCheckValue
- * @property 'CMAC'|'ANSI_X9_24'|null $KeyCheckValueAlgorithm
+ * @property 'CMAC'|'ANSI_X9_24'|'HMAC'|null $KeyCheckValueAlgorithm
  */
 class WrappedKey extends Shape
 {
@@ -19,7 +19,7 @@ class WrappedKey extends Shape
      *     WrappedKeyMaterialFormat: 'KEY_CRYPTOGRAM'|'TR31_KEY_BLOCK'|'TR34_KEY_BLOCK',
      *     KeyMaterial: string,
      *     KeyCheckValue?: string|null,
-     *     KeyCheckValueAlgorithm?: 'CMAC'|'ANSI_X9_24'|null
+     *     KeyCheckValueAlgorithm?: 'CMAC'|'ANSI_X9_24'|'HMAC'|null
      * } $args
      */
     public function __construct(array $args)
