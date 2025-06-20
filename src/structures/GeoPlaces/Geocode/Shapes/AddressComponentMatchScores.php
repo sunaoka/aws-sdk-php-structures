@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<double>|null $Intersection
  * @property double|null $AddressNumber
  * @property double|null $Building
+ * @property list<SecondaryAddressComponentMatchScore>|null $SecondaryAddressComponents
  */
 class AddressComponentMatchScores extends Shape
 {
@@ -33,7 +34,8 @@ class AddressComponentMatchScores extends Shape
      *     SubBlock?: double|null,
      *     Intersection?: list<double>|null,
      *     AddressNumber?: double|null,
-     *     Building?: double|null
+     *     Building?: double|null,
+     *     SecondaryAddressComponents?: list<SecondaryAddressComponentMatchScore>|null
      * } $args
      */
     public function __construct(array $args = [])

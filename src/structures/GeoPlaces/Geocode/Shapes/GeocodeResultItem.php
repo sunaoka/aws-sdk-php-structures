@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $PlaceId
- * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress' $PlaceType
+ * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress'|'SecondaryAddress' $PlaceType
  * @property string $Title
  * @property Address|null $Address
  * @property bool|null $AddressNumberCorrected
@@ -20,13 +20,17 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TimeZone|null $TimeZone
  * @property string|null $PoliticalView
  * @property MatchScoreDetails|null $MatchScores
+ * @property GeocodeParsedQuery|null $ParsedQuery
+ * @property list<Intersection>|null $Intersections
+ * @property RelatedPlace|null $MainAddress
+ * @property list<RelatedPlace>|null $SecondaryAddresses
  */
 class GeocodeResultItem extends Shape
 {
     /**
      * @param array{
      *     PlaceId: string,
-     *     PlaceType: 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress',
+     *     PlaceType: 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress'|'SecondaryAddress',
      *     Title: string,
      *     Address?: Address|null,
      *     AddressNumberCorrected?: bool|null,
@@ -39,7 +43,11 @@ class GeocodeResultItem extends Shape
      *     AccessPoints?: list<AccessPoint>|null,
      *     TimeZone?: TimeZone|null,
      *     PoliticalView?: string|null,
-     *     MatchScores?: MatchScoreDetails|null
+     *     MatchScores?: MatchScoreDetails|null,
+     *     ParsedQuery?: GeocodeParsedQuery|null,
+     *     Intersections?: list<Intersection>|null,
+     *     MainAddress?: RelatedPlace|null,
+     *     SecondaryAddresses?: list<RelatedPlace>|null
      * } $args
      */
     public function __construct(array $args)

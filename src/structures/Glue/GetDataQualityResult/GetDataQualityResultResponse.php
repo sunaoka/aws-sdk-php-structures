@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\DataQualityRuleResult>|null $RuleResults
  * @property list<Shapes\DataQualityAnalyzerResult>|null $AnalyzerResults
  * @property list<Shapes\DataQualityObservation>|null $Observations
+ * @property Shapes\DataQualityAggregatedMetrics|null $AggregatedMetrics
  */
 class GetDataQualityResultResponse extends Response
 {

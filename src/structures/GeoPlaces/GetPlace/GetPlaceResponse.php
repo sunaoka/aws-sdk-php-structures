@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $PlaceId
- * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress' $PlaceType
+ * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress'|'SecondaryAddress' $PlaceType
  * @property string $Title
  * @property string $PricingBucket
  * @property Shapes\Address|null $Address
@@ -24,6 +24,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TimeZone|null $TimeZone
  * @property string|null $PoliticalView
  * @property Shapes\PhonemeDetails|null $Phonemes
+ * @property Shapes\RelatedPlace|null $MainAddress
+ * @property list<Shapes\RelatedPlace>|null $SecondaryAddresses
  */
 class GetPlaceResponse extends Response
 {
