@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RunMetrics|null $metrics
  * @property string|null $error
  * @property CompactionMetrics|null $compactionMetrics
+ * @property 'binpack'|'sort'|'z-order'|null $compactionStrategy
  * @property RetentionMetrics|null $retentionMetrics
  * @property OrphanFileDeletionMetrics|null $orphanFileDeletionMetrics
  */
@@ -24,6 +25,7 @@ class TableOptimizerRun extends Shape
      *     metrics?: RunMetrics|null,
      *     error?: string|null,
      *     compactionMetrics?: CompactionMetrics|null,
+     *     compactionStrategy?: 'binpack'|'sort'|'z-order'|null,
      *     retentionMetrics?: RetentionMetrics|null,
      *     orphanFileDeletionMetrics?: OrphanFileDeletionMetrics|null
      * } $args

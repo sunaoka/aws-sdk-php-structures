@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<GuardrailContentFilterConfig> $filtersConfig
+ * @property GuardrailContentFiltersTierConfig|null $tierConfig
  */
 class GuardrailContentPolicyConfig extends Shape
 {
     /**
-     * @param array{filtersConfig: list<GuardrailContentFilterConfig>} $args
+     * @param array{
+     *     filtersConfig: list<GuardrailContentFilterConfig>,
+     *     tierConfig?: GuardrailContentFiltersTierConfig|null
+     * } $args
      */
     public function __construct(array $args)
     {
