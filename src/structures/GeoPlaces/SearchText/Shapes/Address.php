@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<StreetComponents>|null $StreetComponents
  * @property string|null $AddressNumber
  * @property string|null $Building
+ * @property list<SecondaryAddressComponent>|null $SecondaryAddressComponents
  */
 class Address extends Shape
 {
@@ -39,7 +40,8 @@ class Address extends Shape
      *     Street?: string|null,
      *     StreetComponents?: list<StreetComponents>|null,
      *     AddressNumber?: string|null,
-     *     Building?: string|null
+     *     Building?: string|null,
+     *     SecondaryAddressComponents?: list<SecondaryAddressComponent>|null
      * } $args
      */
     public function __construct(array $args = [])

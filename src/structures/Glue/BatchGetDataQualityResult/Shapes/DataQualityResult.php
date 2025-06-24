@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DataQualityRuleResult>|null $RuleResults
  * @property list<DataQualityAnalyzerResult>|null $AnalyzerResults
  * @property list<DataQualityObservation>|null $Observations
+ * @property DataQualityAggregatedMetrics|null $AggregatedMetrics
  */
 class DataQualityResult extends Shape
 {
@@ -37,7 +38,8 @@ class DataQualityResult extends Shape
      *     RulesetEvaluationRunId?: string|null,
      *     RuleResults?: list<DataQualityRuleResult>|null,
      *     AnalyzerResults?: list<DataQualityAnalyzerResult>|null,
-     *     Observations?: list<DataQualityObservation>|null
+     *     Observations?: list<DataQualityObservation>|null,
+     *     AggregatedMetrics?: DataQualityAggregatedMetrics|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 21000000>|null $QueryRadius
  * @property int<1, 100>|null $MaxResults
  * @property Shapes\ReverseGeocodeFilter|null $Filter
- * @property list<'TimeZone'|'Access'>|null $AdditionalFeatures
+ * @property list<'TimeZone'|'Access'|'Intersections'>|null $AdditionalFeatures
  * @property string|null $Language
  * @property string|null $PoliticalView
  * @property 'SingleUse'|'Storage'|null $IntendedUse
@@ -23,7 +23,7 @@ class ReverseGeocodeRequest extends Request
      *     QueryRadius?: int<1, 21000000>|null,
      *     MaxResults?: int<1, 100>|null,
      *     Filter?: Shapes\ReverseGeocodeFilter|null,
-     *     AdditionalFeatures?: list<'TimeZone'|'Access'>|null,
+     *     AdditionalFeatures?: list<'TimeZone'|'Access'|'Intersections'>|null,
      *     Language?: string|null,
      *     PoliticalView?: string|null,
      *     IntendedUse?: 'SingleUse'|'Storage'|null,
