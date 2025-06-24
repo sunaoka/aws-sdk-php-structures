@@ -47,6 +47,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NetworkType
  * @property int|null $StorageThroughput
  * @property bool|null $EnableCustomerOwnedIp
+ * @property string|null $BackupTarget
  * @property int|null $AllocatedStorage
  * @property string|null $SourceDBClusterIdentifier
  * @property bool|null $DedicatedLogVolume
@@ -99,6 +100,7 @@ class CreateDBInstanceReadReplicaRequest extends Request
      *     NetworkType?: string|null,
      *     StorageThroughput?: int|null,
      *     EnableCustomerOwnedIp?: bool|null,
+     *     BackupTarget?: string|null,
      *     AllocatedStorage?: int|null,
      *     SourceDBClusterIdentifier?: string|null,
      *     DedicatedLogVolume?: bool|null,

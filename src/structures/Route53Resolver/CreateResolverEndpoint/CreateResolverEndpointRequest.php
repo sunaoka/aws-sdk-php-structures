@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CreatorRequestId
  * @property string|null $Name
  * @property list<string> $SecurityGroupIds
- * @property 'INBOUND'|'OUTBOUND' $Direction
+ * @property 'INBOUND'|'OUTBOUND'|'INBOUND_DELEGATION' $Direction
  * @property list<Shapes\IpAddressRequest> $IpAddresses
  * @property string|null $OutpostArn
  * @property string|null $PreferredInstanceType
@@ -23,7 +23,7 @@ class CreateResolverEndpointRequest extends Request
      *     CreatorRequestId: string,
      *     Name?: string|null,
      *     SecurityGroupIds: list<string>,
-     *     Direction: 'INBOUND'|'OUTBOUND',
+     *     Direction: 'INBOUND'|'OUTBOUND'|'INBOUND_DELEGATION',
      *     IpAddresses: list<Shapes\IpAddressRequest>,
      *     OutpostArn?: string|null,
      *     PreferredInstanceType?: string|null,

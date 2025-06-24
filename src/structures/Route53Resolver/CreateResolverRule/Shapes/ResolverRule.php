@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DomainName
  * @property 'COMPLETE'|'DELETING'|'UPDATING'|'FAILED'|null $Status
  * @property string|null $StatusMessage
- * @property 'FORWARD'|'SYSTEM'|'RECURSIVE'|null $RuleType
+ * @property 'FORWARD'|'SYSTEM'|'RECURSIVE'|'DELEGATE'|null $RuleType
  * @property string|null $Name
  * @property list<TargetAddress>|null $TargetIps
  * @property string|null $ResolverEndpointId
@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NOT_SHARED'|'SHARED_WITH_ME'|'SHARED_BY_ME'|null $ShareStatus
  * @property string|null $CreationTime
  * @property string|null $ModificationTime
+ * @property string|null $DelegationRecord
  */
 class ResolverRule extends Shape
 {
@@ -30,14 +31,15 @@ class ResolverRule extends Shape
      *     DomainName?: string|null,
      *     Status?: 'COMPLETE'|'DELETING'|'UPDATING'|'FAILED'|null,
      *     StatusMessage?: string|null,
-     *     RuleType?: 'FORWARD'|'SYSTEM'|'RECURSIVE'|null,
+     *     RuleType?: 'FORWARD'|'SYSTEM'|'RECURSIVE'|'DELEGATE'|null,
      *     Name?: string|null,
      *     TargetIps?: list<TargetAddress>|null,
      *     ResolverEndpointId?: string|null,
      *     OwnerId?: string|null,
      *     ShareStatus?: 'NOT_SHARED'|'SHARED_WITH_ME'|'SHARED_BY_ME'|null,
      *     CreationTime?: string|null,
-     *     ModificationTime?: string|null
+     *     ModificationTime?: string|null,
+     *     DelegationRecord?: string|null
      * } $args
      */
     public function __construct(array $args = [])
