@@ -29,13 +29,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ContentType
  * @property \Aws\Api\DateTimeResult|null $Expires
  * @property string|null $WebsiteRedirectLocation
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property array<string, string>|null $Metadata
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSECustomerKeyMD5
  * @property string|null $SSEKMSKeyId
  * @property bool|null $BucketKeyEnabled
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|null $StorageClass
  * @property 'requester'|null $RequestCharged
  * @property 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED'|null $ReplicationStatus
  * @property int|null $PartsCount

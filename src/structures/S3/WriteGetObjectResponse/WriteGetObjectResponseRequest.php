@@ -38,11 +38,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED'|null $ReplicationStatus
  * @property 'requester'|null $RequestCharged
  * @property string|null $Restore
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSEKMSKeyId
  * @property string|null $SSECustomerKeyMD5
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|null $StorageClass
  * @property int|null $TagCount
  * @property string|null $VersionId
  * @property bool|null $BucketKeyEnabled
@@ -84,11 +84,11 @@ class WriteGetObjectResponseRequest extends Request
      *     ReplicationStatus?: 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED'|null,
      *     RequestCharged?: 'requester'|null,
      *     Restore?: string|null,
-     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null,
      *     SSECustomerAlgorithm?: string|null,
      *     SSEKMSKeyId?: string|null,
      *     SSECustomerKeyMD5?: string|null,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|null,
      *     TagCount?: int|null,
      *     VersionId?: string|null,
      *     BucketKeyEnabled?: bool|null

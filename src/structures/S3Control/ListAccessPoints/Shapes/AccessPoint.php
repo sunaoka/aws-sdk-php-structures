@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AccessPointArn
  * @property string|null $Alias
  * @property string|null $BucketAccountId
+ * @property string|null $DataSourceId
+ * @property string|null $DataSourceType
  */
 class AccessPoint extends Shape
 {
@@ -23,7 +25,9 @@ class AccessPoint extends Shape
      *     Bucket: string,
      *     AccessPointArn?: string|null,
      *     Alias?: string|null,
-     *     BucketAccountId?: string|null
+     *     BucketAccountId?: string|null,
+     *     DataSourceId?: string|null,
+     *     DataSourceType?: string|null
      * } $args
      */
     public function __construct(array $args)

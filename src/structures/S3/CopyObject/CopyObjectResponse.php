@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Expiration
  * @property string|null $CopySourceVersionId
  * @property string|null $VersionId
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSECustomerKeyMD5
  * @property string|null $SSEKMSKeyId

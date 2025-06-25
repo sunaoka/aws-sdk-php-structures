@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
  * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property string|null $VersionId
  * @property string|null $SSEKMSKeyId
  * @property bool|null $BucketKeyEnabled
