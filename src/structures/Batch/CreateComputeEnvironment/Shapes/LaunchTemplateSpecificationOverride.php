@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $launchTemplateName
  * @property string|null $version
  * @property list<string>|null $targetInstanceTypes
+ * @property 'EKS_BOOTSTRAP_SH'|'EKS_NODEADM'|null $userdataType
  */
 class LaunchTemplateSpecificationOverride extends Shape
 {
@@ -17,7 +18,8 @@ class LaunchTemplateSpecificationOverride extends Shape
      *     launchTemplateId?: string|null,
      *     launchTemplateName?: string|null,
      *     version?: string|null,
-     *     targetInstanceTypes?: list<string>|null
+     *     targetInstanceTypes?: list<string>|null,
+     *     userdataType?: 'EKS_BOOTSTRAP_SH'|'EKS_NODEADM'|null
      * } $args
      */
     public function __construct(array $args = [])

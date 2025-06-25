@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $Name
  * @property list<string>|null $SecurityGroupIds
- * @property 'INBOUND'|'OUTBOUND'|null $Direction
+ * @property 'INBOUND'|'OUTBOUND'|'INBOUND_DELEGATION'|null $Direction
  * @property int|null $IpAddressCount
  * @property string|null $HostVPCId
  * @property 'CREATING'|'OPERATIONAL'|'UPDATING'|'AUTO_RECOVERING'|'ACTION_NEEDED'|'DELETING'|null $Status
@@ -31,7 +31,7 @@ class ResolverEndpoint extends Shape
      *     Arn?: string|null,
      *     Name?: string|null,
      *     SecurityGroupIds?: list<string>|null,
-     *     Direction?: 'INBOUND'|'OUTBOUND'|null,
+     *     Direction?: 'INBOUND'|'OUTBOUND'|'INBOUND_DELEGATION'|null,
      *     IpAddressCount?: int|null,
      *     HostVPCId?: string|null,
      *     Status?: 'CREATING'|'OPERATIONAL'|'UPDATING'|'AUTO_RECOVERING'|'ACTION_NEEDED'|'DELETING'|null,

@@ -13,8 +13,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KmsKeyId
  * @property int|null $Throughput
  * @property string|null $OutpostArn
+ * @property string|null $AvailabilityZone
  * @property bool|null $Encrypted
  * @property int|null $VolumeInitializationRate
+ * @property string|null $AvailabilityZoneId
  */
 class EbsBlockDevice extends Shape
 {
@@ -28,8 +30,10 @@ class EbsBlockDevice extends Shape
      *     KmsKeyId?: string|null,
      *     Throughput?: int|null,
      *     OutpostArn?: string|null,
+     *     AvailabilityZone?: string|null,
      *     Encrypted?: bool|null,
-     *     VolumeInitializationRate?: int|null
+     *     VolumeInitializationRate?: int|null,
+     *     AvailabilityZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])
