@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ActionConfiguration> $actionConfigurations
  * @property string|null $clientToken
  * @property string $displayName
+ * @property Shapes\DataAccessorAuthenticationDetail|null $authenticationDetail
  * @property list<Shapes\Tag>|null $tags
  */
 class CreateDataAccessorRequest extends Request
@@ -21,6 +22,7 @@ class CreateDataAccessorRequest extends Request
      *     actionConfigurations: list<Shapes\ActionConfiguration>,
      *     clientToken?: string|null,
      *     displayName: string,
+     *     authenticationDetail?: Shapes\DataAccessorAuthenticationDetail|null,
      *     tags?: list<Shapes\Tag>|null
      * } $args
      */

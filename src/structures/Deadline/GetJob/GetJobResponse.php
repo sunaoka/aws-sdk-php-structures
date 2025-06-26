@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null $taskRunStatus
  * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetTaskRunStatus
  * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null $taskRunStatusCounts
+ * @property int<0, 2147483647>|null $taskFailureRetryCount
  * @property string|null $storageProfileId
  * @property int<0, 2147483647>|null $maxFailedTasksCount
  * @property int<0, 2147483647>|null $maxRetriesPerTask

@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $UniversalProductCode
  * @property string|null $InternationalArticleNumber
  * @property string|null $ConnectorPolicyId
+ * @property string|null $ConnectorDestinationId
  * @property string|null $ConnectorDeviceId
  * @property string|null $DeviceSpecificKey
  * @property string|null $MacAddress

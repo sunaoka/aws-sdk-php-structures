@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\OtaTaskSchedulingConfig|null $OtaSchedulingConfig
  * @property Shapes\OtaTaskExecutionRetryConfig|null $OtaTaskExecutionRetryConfig
  * @property 'IN_PROGRESS'|'CANCELED'|'COMPLETED'|'DELETION_IN_PROGRESS'|'SCHEDULED'|null $Status
+ * @property array<string, string>|null $Tags
  */
 class GetOtaTaskResponse extends Response
 {
