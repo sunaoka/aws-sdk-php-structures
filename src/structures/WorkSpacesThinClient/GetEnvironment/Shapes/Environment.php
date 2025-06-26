@@ -23,7 +23,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $arn
  * @property string|null $kmsKeyArn
- * @property array<string, string>|null $tags
  * @property array<string, string>|null $deviceCreationTags
  */
 class Environment extends Shape
@@ -48,7 +47,6 @@ class Environment extends Shape
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     arn?: string|null,
      *     kmsKeyArn?: string|null,
-     *     tags?: array<string, string>|null,
      *     deviceCreationTags?: array<string, string>|null
      * } $args
      */

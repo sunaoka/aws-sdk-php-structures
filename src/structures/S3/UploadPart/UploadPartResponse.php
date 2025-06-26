@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\S3\UploadPart;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
  * @property string|null $ETag
  * @property string|null $ChecksumCRC32
  * @property string|null $ChecksumCRC32C
