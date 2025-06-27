@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ALLOW'|'DENY'|null $DeviceTypeZeroClient
  * @property 'ALLOW'|'DENY'|null $DeviceTypeLinux
  * @property 'ALLOW'|'DENY'|null $DeviceTypeWorkSpacesThinClient
+ * @property AccessEndpointConfig|null $AccessEndpointConfig
  */
 class WorkspaceAccessProperties extends Shape
 {
@@ -27,7 +28,8 @@ class WorkspaceAccessProperties extends Shape
      *     DeviceTypeChromeOs?: 'ALLOW'|'DENY'|null,
      *     DeviceTypeZeroClient?: 'ALLOW'|'DENY'|null,
      *     DeviceTypeLinux?: 'ALLOW'|'DENY'|null,
-     *     DeviceTypeWorkSpacesThinClient?: 'ALLOW'|'DENY'|null
+     *     DeviceTypeWorkSpacesThinClient?: 'ALLOW'|'DENY'|null,
+     *     AccessEndpointConfig?: AccessEndpointConfig|null
      * } $args
      */
     public function __construct(array $args = [])

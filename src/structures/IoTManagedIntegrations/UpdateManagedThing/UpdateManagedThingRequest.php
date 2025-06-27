@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Model
  * @property string|null $Name
  * @property Shapes\CapabilityReport|null $CapabilityReport
+ * @property list<Shapes\CapabilitySchemaItem>|null $CapabilitySchemas
  * @property string|null $Capabilities
  * @property string|null $Classification
  * @property 'STANDARD'|'NETWORK_WIDE_EXCLUSION'|null $HubNetworkMode
@@ -30,6 +31,7 @@ class UpdateManagedThingRequest extends Request
      *     Model?: string|null,
      *     Name?: string|null,
      *     CapabilityReport?: Shapes\CapabilityReport|null,
+     *     CapabilitySchemas?: list<Shapes\CapabilitySchemaItem>|null,
      *     Capabilities?: string|null,
      *     Classification?: string|null,
      *     HubNetworkMode?: 'STANDARD'|'NETWORK_WIDE_EXCLUSION'|null,

@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null $taskRunStatus
  * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetTaskRunStatus
  * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null $taskRunStatusCounts
+ * @property int<0, 2147483647>|null $taskFailureRetryCount
  * @property int<0, 2147483647>|null $maxFailedTasksCount
  * @property int<0, 2147483647>|null $maxRetriesPerTask
  * @property int<-1, 2147483647>|null $maxWorkerCount
@@ -42,6 +43,7 @@ class JobSummary extends Shape
      *     taskRunStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null,
      *     targetTaskRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null,
      *     taskRunStatusCounts?: array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null,
+     *     taskFailureRetryCount?: int<0, 2147483647>|null,
      *     maxFailedTasksCount?: int<0, 2147483647>|null,
      *     maxRetriesPerTask?: int<0, 2147483647>|null,
      *     maxWorkerCount?: int<-1, 2147483647>|null,

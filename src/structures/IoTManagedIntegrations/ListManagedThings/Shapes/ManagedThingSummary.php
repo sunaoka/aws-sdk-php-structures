@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Classification
  * @property string|null $ConnectorDeviceId
  * @property string|null $ConnectorPolicyId
+ * @property string|null $ConnectorDestinationId
  * @property string|null $Model
  * @property string|null $Name
  * @property string|null $Owner
@@ -35,6 +36,7 @@ class ManagedThingSummary extends Shape
      *     Classification?: string|null,
      *     ConnectorDeviceId?: string|null,
      *     ConnectorPolicyId?: string|null,
+     *     ConnectorDestinationId?: string|null,
      *     Model?: string|null,
      *     Name?: string|null,
      *     Owner?: string|null,
