@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\WorkflowDetails|null $WorkflowDetails
  * @property list<string>|null $StructuredLogDestinations
  * @property Shapes\S3StorageOptions|null $S3StorageOptions
+ * @property 'IPV4'|'DUALSTACK'|null $IpAddressType
  */
 class UpdateServerRequest extends Request
 {
@@ -39,7 +40,8 @@ class UpdateServerRequest extends Request
      *     ServerId: string,
      *     WorkflowDetails?: Shapes\WorkflowDetails|null,
      *     StructuredLogDestinations?: list<string>|null,
-     *     S3StorageOptions?: Shapes\S3StorageOptions|null
+     *     S3StorageOptions?: Shapes\S3StorageOptions|null,
+     *     IpAddressType?: 'IPV4'|'DUALSTACK'|null
      * } $args
      */
     public function __construct(array $args)

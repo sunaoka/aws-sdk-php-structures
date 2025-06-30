@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ReplicaGlobalSecondaryIndexAutoScalingDescription>|null $GlobalSecondaryIndexes
  * @property AutoScalingSettingsDescription|null $ReplicaProvisionedReadCapacityAutoScalingSettings
  * @property AutoScalingSettingsDescription|null $ReplicaProvisionedWriteCapacityAutoScalingSettings
- * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null $ReplicaStatus
+ * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|'REPLICATION_NOT_AUTHORIZED'|null $ReplicaStatus
  */
 class ReplicaAutoScalingDescription extends Shape
 {
@@ -19,7 +19,7 @@ class ReplicaAutoScalingDescription extends Shape
      *     GlobalSecondaryIndexes?: list<ReplicaGlobalSecondaryIndexAutoScalingDescription>|null,
      *     ReplicaProvisionedReadCapacityAutoScalingSettings?: AutoScalingSettingsDescription|null,
      *     ReplicaProvisionedWriteCapacityAutoScalingSettings?: AutoScalingSettingsDescription|null,
-     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null
+     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|'REPLICATION_NOT_AUTHORIZED'|null
      * } $args
      */
     public function __construct(array $args = [])

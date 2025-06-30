@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'APPLIED'|'NOT_APPLIED' $appliedStatus
- * @property string $awayFrom
- * @property string $comment
- * @property \Aws\Api\DateTimeResult $expiryTime
- * @property 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|null $practiceRunOutcome
- * @property string $resourceIdentifier
- * @property 'ZONAL_SHIFT'|'PRACTICE_RUN'|'FIS_EXPERIMENT'|'ZONAL_AUTOSHIFT'|null $shiftType
- * @property \Aws\Api\DateTimeResult $startTime
  * @property string $zonalShiftId
+ * @property string $resourceIdentifier
+ * @property string $awayFrom
+ * @property \Aws\Api\DateTimeResult $expiryTime
+ * @property \Aws\Api\DateTimeResult $startTime
+ * @property string $comment
+ * @property 'ZONAL_SHIFT'|'PRACTICE_RUN'|'FIS_EXPERIMENT'|'ZONAL_AUTOSHIFT'|null $shiftType
+ * @property 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|'CAPACITY_CHECK_FAILED'|null $practiceRunOutcome
  */
 class ZonalShiftInResource extends Shape
 {
     /**
      * @param array{
      *     appliedStatus: 'APPLIED'|'NOT_APPLIED',
-     *     awayFrom: string,
-     *     comment: string,
-     *     expiryTime: \Aws\Api\DateTimeResult,
-     *     practiceRunOutcome?: 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|null,
+     *     zonalShiftId: string,
      *     resourceIdentifier: string,
-     *     shiftType?: 'ZONAL_SHIFT'|'PRACTICE_RUN'|'FIS_EXPERIMENT'|'ZONAL_AUTOSHIFT'|null,
+     *     awayFrom: string,
+     *     expiryTime: \Aws\Api\DateTimeResult,
      *     startTime: \Aws\Api\DateTimeResult,
-     *     zonalShiftId: string
+     *     comment: string,
+     *     shiftType?: 'ZONAL_SHIFT'|'PRACTICE_RUN'|'FIS_EXPERIMENT'|'ZONAL_AUTOSHIFT'|null,
+     *     practiceRunOutcome?: 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|'CAPACITY_CHECK_FAILED'|null
      * } $args
      */
     public function __construct(array $args)

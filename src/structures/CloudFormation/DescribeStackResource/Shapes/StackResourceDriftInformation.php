@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DescribeStackResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED' $StackResourceDriftStatus
+ * @property 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'|'UNKNOWN' $StackResourceDriftStatus
  * @property \Aws\Api\DateTimeResult|null $LastCheckTimestamp
  */
 class StackResourceDriftInformation extends Shape
 {
     /**
      * @param array{
-     *     StackResourceDriftStatus: 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED',
+     *     StackResourceDriftStatus: 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'|'UNKNOWN',
      *     LastCheckTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */

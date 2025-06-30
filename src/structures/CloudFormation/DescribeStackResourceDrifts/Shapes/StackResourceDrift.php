@@ -13,9 +13,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ExpectedProperties
  * @property string|null $ActualProperties
  * @property list<PropertyDifference>|null $PropertyDifferences
- * @property 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED' $StackResourceDriftStatus
+ * @property 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'|'UNKNOWN' $StackResourceDriftStatus
  * @property \Aws\Api\DateTimeResult $Timestamp
  * @property ModuleInfo|null $ModuleInfo
+ * @property string|null $DriftStatusReason
  */
 class StackResourceDrift extends Shape
 {
@@ -29,9 +30,10 @@ class StackResourceDrift extends Shape
      *     ExpectedProperties?: string|null,
      *     ActualProperties?: string|null,
      *     PropertyDifferences?: list<PropertyDifference>|null,
-     *     StackResourceDriftStatus: 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED',
+     *     StackResourceDriftStatus: 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'|'UNKNOWN',
      *     Timestamp: \Aws\Api\DateTimeResult,
-     *     ModuleInfo?: ModuleInfo|null
+     *     ModuleInfo?: ModuleInfo|null,
+     *     DriftStatusReason?: string|null
      * } $args
      */
     public function __construct(array $args)

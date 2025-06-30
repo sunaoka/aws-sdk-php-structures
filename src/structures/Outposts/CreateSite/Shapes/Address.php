@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Outposts\CreateSite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $ContactName
- * @property string|null $ContactPhoneNumber
+ * @property string $ContactName
+ * @property string $ContactPhoneNumber
  * @property string $AddressLine1
  * @property string|null $AddressLine2
  * @property string|null $AddressLine3
@@ -21,8 +21,8 @@ class Address extends Shape
 {
     /**
      * @param array{
-     *     ContactName?: string|null,
-     *     ContactPhoneNumber?: string|null,
+     *     ContactName: string,
+     *     ContactPhoneNumber: string,
      *     AddressLine1: string,
      *     AddressLine2?: string|null,
      *     AddressLine3?: string|null,
