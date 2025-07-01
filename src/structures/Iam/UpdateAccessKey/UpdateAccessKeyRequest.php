@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $UserName
  * @property string $AccessKeyId
- * @property 'Active'|'Inactive' $Status
+ * @property 'Active'|'Inactive'|'Expired' $Status
  */
 class UpdateAccessKeyRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateAccessKeyRequest extends Request
      * @param array{
      *     UserName?: string|null,
      *     AccessKeyId: string,
-     *     Status: 'Active'|'Inactive'
+     *     Status: 'Active'|'Inactive'|'Expired'
      * } $args
      */
     public function __construct(array $args)

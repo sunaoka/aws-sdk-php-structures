@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $RegionName
- * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null $ReplicaStatus
+ * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|'REPLICATION_NOT_AUTHORIZED'|null $ReplicaStatus
  * @property string|null $ReplicaStatusDescription
  * @property string|null $ReplicaStatusPercentProgress
  * @property string|null $KMSMasterKeyId
@@ -22,7 +22,7 @@ class ReplicaDescription extends Shape
     /**
      * @param array{
      *     RegionName?: string|null,
-     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null,
+     *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|'REPLICATION_NOT_AUTHORIZED'|null,
      *     ReplicaStatusDescription?: string|null,
      *     ReplicaStatusPercentProgress?: string|null,
      *     KMSMasterKeyId?: string|null,

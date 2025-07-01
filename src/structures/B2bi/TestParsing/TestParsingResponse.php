@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $parsedFileContent
+ * @property list<string>|null $parsedSplitFileContents
  */
 class TestParsingResponse extends Response
 {

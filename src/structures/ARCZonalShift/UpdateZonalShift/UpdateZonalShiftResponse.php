@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\ARCZonalShift\UpdateZonalShift;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $awayFrom
- * @property string $comment
- * @property \Aws\Api\DateTimeResult $expiryTime
+ * @property string $zonalShiftId
  * @property string $resourceIdentifier
+ * @property string $awayFrom
+ * @property \Aws\Api\DateTimeResult $expiryTime
  * @property \Aws\Api\DateTimeResult $startTime
  * @property 'ACTIVE'|'EXPIRED'|'CANCELED' $status
- * @property string $zonalShiftId
+ * @property string $comment
  */
 class UpdateZonalShiftResponse extends Response
 {

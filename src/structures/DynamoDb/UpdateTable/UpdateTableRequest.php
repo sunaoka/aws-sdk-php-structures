@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null $TableClass
  * @property bool|null $DeletionProtectionEnabled
  * @property 'EVENTUAL'|'STRONG'|null $MultiRegionConsistency
+ * @property list<Shapes\GlobalTableWitnessGroupUpdate>|null $GlobalTableWitnessUpdates
  * @property Shapes\OnDemandThroughput|null $OnDemandThroughput
  * @property Shapes\WarmThroughput|null $WarmThroughput
  */
@@ -34,6 +35,7 @@ class UpdateTableRequest extends Request
      *     TableClass?: 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null,
      *     DeletionProtectionEnabled?: bool|null,
      *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG'|null,
+     *     GlobalTableWitnessUpdates?: list<Shapes\GlobalTableWitnessGroupUpdate>|null,
      *     OnDemandThroughput?: Shapes\OnDemandThroughput|null,
      *     WarmThroughput?: Shapes\WarmThroughput|null
      * } $args

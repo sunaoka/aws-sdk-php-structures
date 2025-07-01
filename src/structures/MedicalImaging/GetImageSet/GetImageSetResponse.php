@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $message
  * @property string|null $imageSetArn
  * @property Shapes\Overrides|null $overrides
+ * @property bool|null $isPrimary
  */
 class GetImageSetResponse extends Response
 {

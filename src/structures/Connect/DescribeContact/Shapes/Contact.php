@@ -39,6 +39,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ANSWERED'|'UNDETECTED'|'ERROR'|'HUMAN_ANSWERED'|'SIT_TONE_DETECTED'|'SIT_TONE_BUSY'|'SIT_TONE_INVALID_NUMBER'|'FAX_MACHINE_DETECTED'|'VOICEMAIL_BEEP'|'VOICEMAIL_NO_BEEP'|'AMD_UNRESOLVED'|'AMD_UNANSWERED'|'AMD_ERROR'|'AMD_NOT_APPLICABLE'|null $AnsweringMachineDetectionStatus
  * @property CustomerVoiceActivity|null $CustomerVoiceActivity
  * @property QualityMetrics|null $QualityMetrics
+ * @property ChatMetrics|null $ChatMetrics
  * @property DisconnectDetails|null $DisconnectDetails
  * @property AdditionalEmailRecipients|null $AdditionalEmailRecipients
  * @property array<string, SegmentAttributeValue>|null $SegmentAttributes
@@ -86,6 +87,7 @@ class Contact extends Shape
      *     AnsweringMachineDetectionStatus?: 'ANSWERED'|'UNDETECTED'|'ERROR'|'HUMAN_ANSWERED'|'SIT_TONE_DETECTED'|'SIT_TONE_BUSY'|'SIT_TONE_INVALID_NUMBER'|'FAX_MACHINE_DETECTED'|'VOICEMAIL_BEEP'|'VOICEMAIL_NO_BEEP'|'AMD_UNRESOLVED'|'AMD_UNANSWERED'|'AMD_ERROR'|'AMD_NOT_APPLICABLE'|null,
      *     CustomerVoiceActivity?: CustomerVoiceActivity|null,
      *     QualityMetrics?: QualityMetrics|null,
+     *     ChatMetrics?: ChatMetrics|null,
      *     DisconnectDetails?: DisconnectDetails|null,
      *     AdditionalEmailRecipients?: AdditionalEmailRecipients|null,
      *     SegmentAttributes?: array<string, SegmentAttributeValue>|null,

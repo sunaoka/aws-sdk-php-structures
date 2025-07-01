@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ARCZonalShift\UpdatePracticeRunConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string>|null $blockedDates
+ * @property string $resourceIdentifier
  * @property list<string>|null $blockedWindows
+ * @property list<string>|null $blockedDates
  * @property list<Shapes\ControlCondition>|null $blockingAlarms
  * @property list<Shapes\ControlCondition>|null $outcomeAlarms
- * @property string $resourceIdentifier
  */
 class UpdatePracticeRunConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     blockedDates?: list<string>|null,
+     *     resourceIdentifier: string,
      *     blockedWindows?: list<string>|null,
+     *     blockedDates?: list<string>|null,
      *     blockingAlarms?: list<Shapes\ControlCondition>|null,
-     *     outcomeAlarms?: list<Shapes\ControlCondition>|null,
-     *     resourceIdentifier: string
+     *     outcomeAlarms?: list<Shapes\ControlCondition>|null
      * } $args
      */
     public function __construct(array $args)
