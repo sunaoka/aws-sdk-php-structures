@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $description
  * @property string $domainIdentifier
+ * @property string|null $domainUnitId
  * @property Shapes\EnvironmentDeploymentDetails|null $environmentDeploymentDetails
  * @property list<string>|null $glossaryTerms
  * @property string $identifier
@@ -20,6 +21,7 @@ class UpdateProjectRequest extends Request
      * @param array{
      *     description?: string|null,
      *     domainIdentifier: string,
+     *     domainUnitId?: string|null,
      *     environmentDeploymentDetails?: Shapes\EnvironmentDeploymentDetails|null,
      *     glossaryTerms?: list<string>|null,
      *     identifier: string,

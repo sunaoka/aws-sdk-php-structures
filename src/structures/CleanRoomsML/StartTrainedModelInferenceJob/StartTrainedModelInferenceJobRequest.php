@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $membershipIdentifier
  * @property string $name
  * @property string $trainedModelArn
+ * @property string|null $trainedModelVersionIdentifier
  * @property string|null $configuredModelAlgorithmAssociationArn
  * @property Shapes\InferenceResourceConfig $resourceConfig
  * @property Shapes\InferenceOutputConfiguration $outputConfiguration
@@ -25,6 +26,7 @@ class StartTrainedModelInferenceJobRequest extends Request
      *     membershipIdentifier: string,
      *     name: string,
      *     trainedModelArn: string,
+     *     trainedModelVersionIdentifier?: string|null,
      *     configuredModelAlgorithmAssociationArn?: string|null,
      *     resourceConfig: Shapes\InferenceResourceConfig,
      *     outputConfiguration: Shapes\InferenceOutputConfiguration,

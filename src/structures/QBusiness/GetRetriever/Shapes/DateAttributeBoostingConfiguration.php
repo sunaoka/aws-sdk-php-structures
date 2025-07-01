@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QBusiness\GetRetriever\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH' $boostingLevel
+ * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH'|'ONE'|'TWO' $boostingLevel
  * @property int<0, 999999999>|null $boostingDurationInSeconds
  */
 class DateAttributeBoostingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     boostingLevel: 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH',
+     *     boostingLevel: 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH'|'ONE'|'TWO',
      *     boostingDurationInSeconds?: int<0, 999999999>|null
      * } $args
      */
