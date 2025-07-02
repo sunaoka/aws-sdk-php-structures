@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterName
- * @property list<Shapes\ClusterInstanceGroupSpecification> $InstanceGroups
+ * @property list<Shapes\ClusterInstanceGroupSpecification>|null $InstanceGroups
  * @property 'Automatic'|'None'|null $NodeRecovery
  * @property list<string>|null $InstanceGroupsToDelete
  */
@@ -15,7 +15,7 @@ class UpdateClusterRequest extends Request
     /**
      * @param array{
      *     ClusterName: string,
-     *     InstanceGroups: list<Shapes\ClusterInstanceGroupSpecification>,
+     *     InstanceGroups?: list<Shapes\ClusterInstanceGroupSpecification>|null,
      *     NodeRecovery?: 'Automatic'|'None'|null,
      *     InstanceGroupsToDelete?: list<string>|null
      * } $args

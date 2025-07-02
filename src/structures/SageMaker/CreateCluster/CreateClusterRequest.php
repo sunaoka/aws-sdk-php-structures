@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterName
- * @property list<Shapes\ClusterInstanceGroupSpecification> $InstanceGroups
+ * @property list<Shapes\ClusterInstanceGroupSpecification>|null $InstanceGroups
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\ClusterOrchestrator|null $Orchestrator
@@ -17,7 +17,7 @@ class CreateClusterRequest extends Request
     /**
      * @param array{
      *     ClusterName: string,
-     *     InstanceGroups: list<Shapes\ClusterInstanceGroupSpecification>,
+     *     InstanceGroups?: list<Shapes\ClusterInstanceGroupSpecification>|null,
      *     VpcConfig?: Shapes\VpcConfig|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     Orchestrator?: Shapes\ClusterOrchestrator|null,
