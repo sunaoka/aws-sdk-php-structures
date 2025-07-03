@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $progressMessage
  * @property Shapes\SessionActionDefinition $definition
  * @property list<Shapes\AcquiredLimit>|null $acquiredLimits
+ * @property list<Shapes\TaskRunManifestPropertiesResponse>|null $manifests
  */
 class GetSessionActionResponse extends Response
 {
