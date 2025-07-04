@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SpaceStorageSettings|null $SpaceStorageSettings
  * @property 'ENABLED'|'DISABLED'|null $SpaceManagedResources
  * @property list<CustomFileSystem>|null $CustomFileSystems
+ * @property 'ENABLED'|'DISABLED'|null $RemoteAccess
  */
 class SpaceSettings extends Shape
 {
@@ -25,7 +26,8 @@ class SpaceSettings extends Shape
      *     AppType?: 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas'|null,
      *     SpaceStorageSettings?: SpaceStorageSettings|null,
      *     SpaceManagedResources?: 'ENABLED'|'DISABLED'|null,
-     *     CustomFileSystems?: list<CustomFileSystem>|null
+     *     CustomFileSystems?: list<CustomFileSystem>|null,
+     *     RemoteAccess?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])
