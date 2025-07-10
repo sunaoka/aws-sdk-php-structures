@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property 'hvm'|'paravirtual'|null $VirtualizationType
  * @property CpuOptions|null $CpuOptions
+ * @property string|null $CapacityBlockId
  * @property string|null $CapacityReservationId
  * @property CapacityReservationSpecificationResponse|null $CapacityReservationSpecification
  * @property HibernationOptions|null $HibernationOptions
@@ -91,6 +92,7 @@ class Instance extends Shape
      *     Tags?: list<Tag>|null,
      *     VirtualizationType?: 'hvm'|'paravirtual'|null,
      *     CpuOptions?: CpuOptions|null,
+     *     CapacityBlockId?: string|null,
      *     CapacityReservationId?: string|null,
      *     CapacityReservationSpecification?: CapacityReservationSpecificationResponse|null,
      *     HibernationOptions?: HibernationOptions|null,

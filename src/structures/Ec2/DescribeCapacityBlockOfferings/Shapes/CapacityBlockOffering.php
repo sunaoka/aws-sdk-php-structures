@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $UpfrontFee
  * @property string|null $CurrencyCode
  * @property 'default'|'dedicated'|null $Tenancy
+ * @property string|null $UltraserverType
+ * @property int|null $UltraserverCount
  * @property int|null $CapacityBlockDurationMinutes
  */
 class CapacityBlockOffering extends Shape
@@ -31,6 +33,8 @@ class CapacityBlockOffering extends Shape
      *     UpfrontFee?: string|null,
      *     CurrencyCode?: string|null,
      *     Tenancy?: 'default'|'dedicated'|null,
+     *     UltraserverType?: string|null,
+     *     UltraserverCount?: int|null,
      *     CapacityBlockDurationMinutes?: int|null
      * } $args
      */
