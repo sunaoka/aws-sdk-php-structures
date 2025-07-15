@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $platformVersion
  * @property bool|null $forceNewDeployment
  * @property int|null $healthCheckGracePeriodSeconds
+ * @property Shapes\DeploymentController|null $deploymentController
  * @property bool|null $enableExecuteCommand
  * @property bool|null $enableECSManagedTags
  * @property list<Shapes\LoadBalancer>|null $loadBalancers
@@ -44,6 +45,7 @@ class UpdateServiceRequest extends Request
      *     platformVersion?: string|null,
      *     forceNewDeployment?: bool|null,
      *     healthCheckGracePeriodSeconds?: int|null,
+     *     deploymentController?: Shapes\DeploymentController|null,
      *     enableExecuteCommand?: bool|null,
      *     enableECSManagedTags?: bool|null,
      *     loadBalancers?: list<Shapes\LoadBalancer>|null,

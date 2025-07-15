@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HyperPodPropertiesOutput|null $hyperPodProperties
  * @property IamPropertiesOutput|null $iamProperties
  * @property RedshiftPropertiesOutput|null $redshiftProperties
+ * @property S3PropertiesOutput|null $s3Properties
  * @property SparkEmrPropertiesOutput|null $sparkEmrProperties
  * @property SparkGluePropertiesOutput|null $sparkGlueProperties
  */
@@ -22,6 +23,7 @@ class ConnectionPropertiesOutput extends Shape
      *     hyperPodProperties?: HyperPodPropertiesOutput|null,
      *     iamProperties?: IamPropertiesOutput|null,
      *     redshiftProperties?: RedshiftPropertiesOutput|null,
+     *     s3Properties?: S3PropertiesOutput|null,
      *     sparkEmrProperties?: SparkEmrPropertiesOutput|null,
      *     sparkGlueProperties?: SparkGluePropertiesOutput|null
      * } $args

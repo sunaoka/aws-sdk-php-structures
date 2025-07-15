@@ -5,43 +5,45 @@ namespace Sunaoka\Aws\Structures\Repostspace\ListSpaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $spaceId
  * @property string $arn
+ * @property string $name
+ * @property string|null $description
+ * @property string $status
  * @property 'CONFIGURED'|'UNCONFIGURED' $configurationStatus
- * @property int|null $contentSize
+ * @property 'PENDING'|'APPROVED'|'UNAPPROVED' $vanityDomainStatus
+ * @property string $vanityDomain
+ * @property string $randomDomain
+ * @property 'BASIC'|'STANDARD' $tier
+ * @property int $storageLimit
  * @property \Aws\Api\DateTimeResult $createDateTime
  * @property \Aws\Api\DateTimeResult|null $deleteDateTime
- * @property string|null $description
- * @property string $name
- * @property string $randomDomain
- * @property string $spaceId
- * @property string $status
- * @property int $storageLimit
- * @property 'BASIC'|'STANDARD' $tier
- * @property int|null $userCount
  * @property string|null $userKMSKey
- * @property string $vanityDomain
- * @property 'PENDING'|'APPROVED'|'UNAPPROVED' $vanityDomainStatus
+ * @property int|null $userCount
+ * @property int|null $contentSize
+ * @property SupportedEmailDomainsStatus|null $supportedEmailDomains
  */
 class SpaceData extends Shape
 {
     /**
      * @param array{
+     *     spaceId: string,
      *     arn: string,
+     *     name: string,
+     *     description?: string|null,
+     *     status: string,
      *     configurationStatus: 'CONFIGURED'|'UNCONFIGURED',
-     *     contentSize?: int|null,
+     *     vanityDomainStatus: 'PENDING'|'APPROVED'|'UNAPPROVED',
+     *     vanityDomain: string,
+     *     randomDomain: string,
+     *     tier: 'BASIC'|'STANDARD',
+     *     storageLimit: int,
      *     createDateTime: \Aws\Api\DateTimeResult,
      *     deleteDateTime?: \Aws\Api\DateTimeResult|null,
-     *     description?: string|null,
-     *     name: string,
-     *     randomDomain: string,
-     *     spaceId: string,
-     *     status: string,
-     *     storageLimit: int,
-     *     tier: 'BASIC'|'STANDARD',
-     *     userCount?: int|null,
      *     userKMSKey?: string|null,
-     *     vanityDomain: string,
-     *     vanityDomainStatus: 'PENDING'|'APPROVED'|'UNAPPROVED'
+     *     userCount?: int|null,
+     *     contentSize?: int|null,
+     *     supportedEmailDomains?: SupportedEmailDomainsStatus|null
      * } $args
      */
     public function __construct(array $args)

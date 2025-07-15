@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ParallelismConfiguration|null $ParallelismConfiguration
  * @property SelectiveExecutionConfig|null $SelectiveExecutionConfig
  * @property list<Parameter>|null $PipelineParameters
+ * @property int<1, max>|null $PipelineVersionId
+ * @property string|null $PipelineVersionDisplayName
  */
 class PipelineExecution extends Shape
 {
@@ -37,7 +39,9 @@ class PipelineExecution extends Shape
      *     LastModifiedBy?: UserContext|null,
      *     ParallelismConfiguration?: ParallelismConfiguration|null,
      *     SelectiveExecutionConfig?: SelectiveExecutionConfig|null,
-     *     PipelineParameters?: list<Parameter>|null
+     *     PipelineParameters?: list<Parameter>|null,
+     *     PipelineVersionId?: int<1, max>|null,
+     *     PipelineVersionDisplayName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Repostspace\RegisterAdmin;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $adminId
  * @property string $spaceId
+ * @property string $adminId
  */
 class RegisterAdminRequest extends Request
 {
     /**
      * @param array{
-     *     adminId: string,
-     *     spaceId: string
+     *     spaceId: string,
+     *     adminId: string
      * } $args
      */
     public function __construct(array $args)
