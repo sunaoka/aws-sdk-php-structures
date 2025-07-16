@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $service
  * @property string|null $logType
  * @property string|null $resourceType
- * @property 'S3'|'CWL'|'FH'|null $deliveryDestinationType
+ * @property 'S3'|'CWL'|'FH'|'XRAY'|null $deliveryDestinationType
  * @property ConfigurationTemplateDeliveryConfigValues|null $defaultDeliveryConfigValues
  * @property list<RecordField>|null $allowedFields
  * @property list<'json'|'plain'|'w3c'|'raw'|'parquet'>|null $allowedOutputFormats
@@ -23,7 +23,7 @@ class ConfigurationTemplate extends Shape
      *     service?: string|null,
      *     logType?: string|null,
      *     resourceType?: string|null,
-     *     deliveryDestinationType?: 'S3'|'CWL'|'FH'|null,
+     *     deliveryDestinationType?: 'S3'|'CWL'|'FH'|'XRAY'|null,
      *     defaultDeliveryConfigValues?: ConfigurationTemplateDeliveryConfigValues|null,
      *     allowedFields?: list<RecordField>|null,
      *     allowedOutputFormats?: list<'json'|'plain'|'w3c'|'raw'|'parquet'>|null,
