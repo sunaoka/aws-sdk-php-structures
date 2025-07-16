@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property NaturalLanguageQueryGenerationOptionsInput|null $NaturalLanguageQueryGenerationOptions
+ * @property S3VectorsEngine|null $S3VectorsEngine
  */
 class AIMLOptionsInput extends Shape
 {
     /**
-     * @param array{NaturalLanguageQueryGenerationOptions?: NaturalLanguageQueryGenerationOptionsInput|null} $args
+     * @param array{
+     *     NaturalLanguageQueryGenerationOptions?: NaturalLanguageQueryGenerationOptionsInput|null,
+     *     S3VectorsEngine?: S3VectorsEngine|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

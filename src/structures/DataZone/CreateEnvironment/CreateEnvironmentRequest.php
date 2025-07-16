@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $environmentAccountRegion
  * @property string|null $environmentBlueprintIdentifier
  * @property string|null $environmentConfigurationId
- * @property string $environmentProfileIdentifier
+ * @property string|null $environmentProfileIdentifier
  * @property list<string>|null $glossaryTerms
  * @property string $name
  * @property string $projectIdentifier
@@ -29,7 +29,7 @@ class CreateEnvironmentRequest extends Request
      *     environmentAccountRegion?: string|null,
      *     environmentBlueprintIdentifier?: string|null,
      *     environmentConfigurationId?: string|null,
-     *     environmentProfileIdentifier: string,
+     *     environmentProfileIdentifier?: string|null,
      *     glossaryTerms?: list<string>|null,
      *     name: string,
      *     projectIdentifier: string,

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'TrainingJob'|'Experiment'|'ExperimentTrial'|'ExperimentTrialComponent'|'Endpoint'|'Model'|'ModelPackage'|'ModelPackageGroup'|'Pipeline'|'PipelineExecution'|'FeatureGroup'|'FeatureMetadata'|'Image'|'ImageVersion'|'Project'|'HyperParameterTuningJob'|'ModelCard' $Resource
+ * @property 'TrainingJob'|'Experiment'|'ExperimentTrial'|'ExperimentTrialComponent'|'Endpoint'|'Model'|'ModelPackage'|'ModelPackageGroup'|'Pipeline'|'PipelineExecution'|'FeatureGroup'|'FeatureMetadata'|'Image'|'ImageVersion'|'Project'|'HyperParameterTuningJob'|'ModelCard'|'PipelineVersion' $Resource
  * @property Shapes\SearchExpression|null $SearchExpression
  * @property string|null $SortBy
  * @property 'Ascending'|'Descending'|null $SortOrder
@@ -18,7 +18,7 @@ class SearchRequest extends Request
 {
     /**
      * @param array{
-     *     Resource: 'TrainingJob'|'Experiment'|'ExperimentTrial'|'ExperimentTrialComponent'|'Endpoint'|'Model'|'ModelPackage'|'ModelPackageGroup'|'Pipeline'|'PipelineExecution'|'FeatureGroup'|'FeatureMetadata'|'Image'|'ImageVersion'|'Project'|'HyperParameterTuningJob'|'ModelCard',
+     *     Resource: 'TrainingJob'|'Experiment'|'ExperimentTrial'|'ExperimentTrialComponent'|'Endpoint'|'Model'|'ModelPackage'|'ModelPackageGroup'|'Pipeline'|'PipelineExecution'|'FeatureGroup'|'FeatureMetadata'|'Image'|'ImageVersion'|'Project'|'HyperParameterTuningJob'|'ModelCard'|'PipelineVersion',
      *     SearchExpression?: Shapes\SearchExpression|null,
      *     SortBy?: string|null,
      *     SortOrder?: 'Ascending'|'Descending'|null,

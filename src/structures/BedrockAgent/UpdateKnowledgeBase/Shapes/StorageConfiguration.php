@@ -12,7 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PineconeConfiguration|null $pineconeConfiguration
  * @property RdsConfiguration|null $rdsConfiguration
  * @property RedisEnterpriseCloudConfiguration|null $redisEnterpriseCloudConfiguration
- * @property 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS'|'NEPTUNE_ANALYTICS'|'OPENSEARCH_MANAGED_CLUSTER' $type
+ * @property S3VectorsConfiguration|null $s3VectorsConfiguration
+ * @property 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS'|'NEPTUNE_ANALYTICS'|'OPENSEARCH_MANAGED_CLUSTER'|'S3_VECTORS' $type
  */
 class StorageConfiguration extends Shape
 {
@@ -25,7 +26,8 @@ class StorageConfiguration extends Shape
      *     pineconeConfiguration?: PineconeConfiguration|null,
      *     rdsConfiguration?: RdsConfiguration|null,
      *     redisEnterpriseCloudConfiguration?: RedisEnterpriseCloudConfiguration|null,
-     *     type: 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS'|'NEPTUNE_ANALYTICS'|'OPENSEARCH_MANAGED_CLUSTER'
+     *     s3VectorsConfiguration?: S3VectorsConfiguration|null,
+     *     type: 'OPENSEARCH_SERVERLESS'|'PINECONE'|'REDIS_ENTERPRISE_CLOUD'|'RDS'|'MONGO_DB_ATLAS'|'NEPTUNE_ANALYTICS'|'OPENSEARCH_MANAGED_CLUSTER'|'S3_VECTORS'
      * } $args
      */
     public function __construct(array $args)

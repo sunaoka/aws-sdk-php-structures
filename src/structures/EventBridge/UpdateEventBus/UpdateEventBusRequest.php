@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $KmsKeyIdentifier
  * @property string|null $Description
  * @property Shapes\DeadLetterConfig|null $DeadLetterConfig
+ * @property Shapes\LogConfig|null $LogConfig
  */
 class UpdateEventBusRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateEventBusRequest extends Request
      *     Name?: string|null,
      *     KmsKeyIdentifier?: string|null,
      *     Description?: string|null,
-     *     DeadLetterConfig?: Shapes\DeadLetterConfig|null
+     *     DeadLetterConfig?: Shapes\DeadLetterConfig|null,
+     *     LogConfig?: Shapes\LogConfig|null
      * } $args
      */
     public function __construct(array $args = [])

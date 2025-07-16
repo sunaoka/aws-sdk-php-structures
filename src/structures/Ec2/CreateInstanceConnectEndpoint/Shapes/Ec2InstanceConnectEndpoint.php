@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $PreserveClientIp
  * @property list<string>|null $SecurityGroupIds
  * @property list<Tag>|null $Tags
+ * @property 'ipv4'|'dualstack'|'ipv6'|null $IpAddressType
  */
 class Ec2InstanceConnectEndpoint extends Shape
 {
@@ -39,7 +40,8 @@ class Ec2InstanceConnectEndpoint extends Shape
      *     SubnetId?: string|null,
      *     PreserveClientIp?: bool|null,
      *     SecurityGroupIds?: list<string>|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6'|null
      * } $args
      */
     public function __construct(array $args = [])

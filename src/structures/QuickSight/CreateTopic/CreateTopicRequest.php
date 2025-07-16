@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TopicDetails $Topic
  * @property list<Shapes\Tag>|null $Tags
  * @property list<string>|null $FolderArns
+ * @property Shapes\CustomInstructions|null $CustomInstructions
  */
 class CreateTopicRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateTopicRequest extends Request
      *     TopicId: string,
      *     Topic: Shapes\TopicDetails,
      *     Tags?: list<Shapes\Tag>|null,
-     *     FolderArns?: list<string>|null
+     *     FolderArns?: list<string>|null,
+     *     CustomInstructions?: Shapes\CustomInstructions|null
      * } $args
      */
     public function __construct(array $args)
