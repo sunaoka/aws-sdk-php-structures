@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property WrappedKeyMaterial $WrappedKeyMaterial
- * @property 'CMAC'|'ANSI_X9_24'|'HMAC'|null $KeyCheckValueAlgorithm
+ * @property 'CMAC'|'ANSI_X9_24'|'HMAC'|'SHA_1'|null $KeyCheckValueAlgorithm
  */
 class WrappedKey extends Shape
 {
     /**
      * @param array{
      *     WrappedKeyMaterial: WrappedKeyMaterial,
-     *     KeyCheckValueAlgorithm?: 'CMAC'|'ANSI_X9_24'|'HMAC'|null
+     *     KeyCheckValueAlgorithm?: 'CMAC'|'ANSI_X9_24'|'HMAC'|'SHA_1'|null
      * } $args
      */
     public function __construct(array $args)

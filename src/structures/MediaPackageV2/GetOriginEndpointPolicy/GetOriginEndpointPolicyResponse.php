@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ChannelName
  * @property string $OriginEndpointName
  * @property string $Policy
+ * @property Shapes\CdnAuthConfiguration|null $CdnAuthConfiguration
  */
 class GetOriginEndpointPolicyResponse extends Response
 {

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Location
  * @property 'INACTIVE'|'ACTIVATING'|'ACTIVE'|'DEACTIVATING'|'ERROR'|'DELETE_PENDING'|'DELETED' $Status
  * @property array<string, string>|null $Tags
+ * @property string|null $ExpectedBucketOwner
  */
 class GetThreatIntelSetResponse extends Response
 {

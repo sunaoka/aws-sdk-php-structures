@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string|null $Location
  * @property bool|null $Activate
+ * @property string|null $ExpectedBucketOwner
  */
 class UpdateThreatIntelSetRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateThreatIntelSetRequest extends Request
      *     ThreatIntelSetId: string,
      *     Name?: string|null,
      *     Location?: string|null,
-     *     Activate?: bool|null
+     *     Activate?: bool|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

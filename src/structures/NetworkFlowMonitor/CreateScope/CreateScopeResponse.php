@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $scopeId
- * @property 'SUCCEEDED'|'IN_PROGRESS'|'FAILED' $status
+ * @property 'SUCCEEDED'|'IN_PROGRESS'|'FAILED'|'DEACTIVATING'|'DEACTIVATED' $status
  * @property string $scopeArn
  * @property array<string, string>|null $tags
  */

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property string|null $deliverySourceName
  * @property string|null $deliveryDestinationArn
- * @property 'S3'|'CWL'|'FH'|null $deliveryDestinationType
+ * @property 'S3'|'CWL'|'FH'|'XRAY'|null $deliveryDestinationType
  * @property list<string>|null $recordFields
  * @property string|null $fieldDelimiter
  * @property S3DeliveryConfiguration|null $s3DeliveryConfiguration
@@ -23,7 +23,7 @@ class Delivery extends Shape
      *     arn?: string|null,
      *     deliverySourceName?: string|null,
      *     deliveryDestinationArn?: string|null,
-     *     deliveryDestinationType?: 'S3'|'CWL'|'FH'|null,
+     *     deliveryDestinationType?: 'S3'|'CWL'|'FH'|'XRAY'|null,
      *     recordFields?: list<string>|null,
      *     fieldDelimiter?: string|null,
      *     s3DeliveryConfiguration?: S3DeliveryConfiguration|null,
