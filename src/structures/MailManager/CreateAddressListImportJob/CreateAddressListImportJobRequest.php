@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MailManager\CreateAddressListImportJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AddressListId
  * @property string|null $ClientToken
- * @property Shapes\ImportDataFormat $ImportDataFormat
+ * @property string $AddressListId
  * @property string $Name
+ * @property Shapes\ImportDataFormat $ImportDataFormat
  */
 class CreateAddressListImportJobRequest extends Request
 {
     /**
      * @param array{
-     *     AddressListId: string,
      *     ClientToken?: string|null,
-     *     ImportDataFormat: Shapes\ImportDataFormat,
-     *     Name: string
+     *     AddressListId: string,
+     *     Name: string,
+     *     ImportDataFormat: Shapes\ImportDataFormat
      * } $args
      */
     public function __construct(array $args)

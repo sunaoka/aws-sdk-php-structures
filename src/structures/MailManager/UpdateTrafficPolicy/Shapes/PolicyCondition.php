@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MailManager\UpdateTrafficPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IngressBooleanExpression|null $BooleanExpression
+ * @property IngressStringExpression|null $StringExpression
  * @property IngressIpv4Expression|null $IpExpression
  * @property IngressIpv6Expression|null $Ipv6Expression
- * @property IngressStringExpression|null $StringExpression
  * @property IngressTlsProtocolExpression|null $TlsExpression
+ * @property IngressBooleanExpression|null $BooleanExpression
  */
 class PolicyCondition extends Shape
 {
     /**
      * @param array{
-     *     BooleanExpression?: IngressBooleanExpression|null,
+     *     StringExpression?: IngressStringExpression|null,
      *     IpExpression?: IngressIpv4Expression|null,
      *     Ipv6Expression?: IngressIpv6Expression|null,
-     *     StringExpression?: IngressStringExpression|null,
-     *     TlsExpression?: IngressTlsProtocolExpression|null
+     *     TlsExpression?: IngressTlsProtocolExpression|null,
+     *     BooleanExpression?: IngressBooleanExpression|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CONTINUE'|'DROP'|null $ActionFailurePolicy
- * @property 'REPLACE'|'PRESERVE'|null $MailFrom
  * @property string $Relay
+ * @property 'REPLACE'|'PRESERVE'|null $MailFrom
  */
 class RelayAction extends Shape
 {
     /**
      * @param array{
      *     ActionFailurePolicy?: 'CONTINUE'|'DROP'|null,
-     *     MailFrom?: 'REPLACE'|'PRESERVE'|null,
-     *     Relay: string
+     *     Relay: string,
+     *     MailFrom?: 'REPLACE'|'PRESERVE'|null
      * } $args
      */
     public function __construct(array $args)

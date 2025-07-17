@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\MailManager\GetAddressListImportJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AddressListId
- * @property \Aws\Api\DateTimeResult|null $CompletedTimestamp
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property string|null $Error
- * @property int|null $FailedItemsCount
- * @property Shapes\ImportDataFormat $ImportDataFormat
- * @property int|null $ImportedItemsCount
  * @property string $JobId
  * @property string $Name
- * @property string $PreSignedUrl
- * @property \Aws\Api\DateTimeResult|null $StartTimestamp
  * @property 'CREATED'|'PROCESSING'|'COMPLETED'|'FAILED'|'STOPPED' $Status
+ * @property string $PreSignedUrl
+ * @property int|null $ImportedItemsCount
+ * @property int|null $FailedItemsCount
+ * @property Shapes\ImportDataFormat $ImportDataFormat
+ * @property string $AddressListId
+ * @property \Aws\Api\DateTimeResult $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $StartTimestamp
+ * @property \Aws\Api\DateTimeResult|null $CompletedTimestamp
+ * @property string|null $Error
  */
 class GetAddressListImportJobResponse extends Response
 {

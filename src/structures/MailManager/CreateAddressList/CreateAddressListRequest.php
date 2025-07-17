@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MailManager\CreateAddressList;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AddressListName
  * @property string|null $ClientToken
+ * @property string $AddressListName
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateAddressListRequest extends Request
 {
     /**
      * @param array{
-     *     AddressListName: string,
      *     ClientToken?: string|null,
+     *     AddressListName: string,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

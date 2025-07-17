@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $ClientToken
- * @property Shapes\IngressPointConfiguration|null $IngressPointConfiguration
  * @property string $IngressPointName
- * @property Shapes\NetworkConfiguration|null $NetworkConfiguration
- * @property string $RuleSetId
- * @property list<Shapes\Tag>|null $Tags
- * @property string $TrafficPolicyId
  * @property 'OPEN'|'AUTH' $Type
+ * @property string $RuleSetId
+ * @property string $TrafficPolicyId
+ * @property Shapes\IngressPointConfiguration|null $IngressPointConfiguration
+ * @property Shapes\NetworkConfiguration|null $NetworkConfiguration
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateIngressPointRequest extends Request
 {
     /**
      * @param array{
      *     ClientToken?: string|null,
-     *     IngressPointConfiguration?: Shapes\IngressPointConfiguration|null,
      *     IngressPointName: string,
-     *     NetworkConfiguration?: Shapes\NetworkConfiguration|null,
+     *     Type: 'OPEN'|'AUTH',
      *     RuleSetId: string,
-     *     Tags?: list<Shapes\Tag>|null,
      *     TrafficPolicyId: string,
-     *     Type: 'OPEN'|'AUTH'
+     *     IngressPointConfiguration?: Shapes\IngressPointConfiguration|null,
+     *     NetworkConfiguration?: Shapes\NetworkConfiguration|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

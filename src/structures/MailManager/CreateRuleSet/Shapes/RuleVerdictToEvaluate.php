@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\CreateRuleSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Analysis|null $Analysis
  * @property 'SPF'|'DKIM'|null $Attribute
+ * @property Analysis|null $Analysis
  */
 class RuleVerdictToEvaluate extends Shape
 {
     /**
      * @param array{
-     *     Analysis?: Analysis|null,
-     *     Attribute?: 'SPF'|'DKIM'|null
+     *     Attribute?: 'SPF'|'DKIM'|null,
+     *     Analysis?: Analysis|null
      * } $args
      */
     public function __construct(array $args = [])
