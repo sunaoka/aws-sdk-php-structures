@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AudioProperties|null $AudioProperties
- * @property 'UNKNOWN'|'AAC'|'AC3'|'EAC3'|'FLAC'|'MP3'|'OPUS'|'PCM'|'VORBIS'|'AV1'|'AVC'|'HEVC'|'MJPEG'|'MP4V'|'MPEG2'|'PRORES'|'THEORA'|'VP8'|'VP9'|'C608'|'C708'|'WEBVTT'|null $Codec
+ * @property 'UNKNOWN'|'AAC'|'AC3'|'EAC3'|'FLAC'|'MP3'|'OPUS'|'PCM'|'VORBIS'|'AV1'|'AVC'|'HEVC'|'JPEG2000'|'MJPEG'|'MP4V'|'MPEG2'|'PRORES'|'THEORA'|'VP8'|'VP9'|'C608'|'C708'|'WEBVTT'|null $Codec
  * @property DataProperties|null $DataProperties
  * @property double|null $Duration
  * @property int|null $Index
@@ -18,7 +18,7 @@ class Track extends Shape
     /**
      * @param array{
      *     AudioProperties?: AudioProperties|null,
-     *     Codec?: 'UNKNOWN'|'AAC'|'AC3'|'EAC3'|'FLAC'|'MP3'|'OPUS'|'PCM'|'VORBIS'|'AV1'|'AVC'|'HEVC'|'MJPEG'|'MP4V'|'MPEG2'|'PRORES'|'THEORA'|'VP8'|'VP9'|'C608'|'C708'|'WEBVTT'|null,
+     *     Codec?: 'UNKNOWN'|'AAC'|'AC3'|'EAC3'|'FLAC'|'MP3'|'OPUS'|'PCM'|'VORBIS'|'AV1'|'AVC'|'HEVC'|'JPEG2000'|'MJPEG'|'MP4V'|'MPEG2'|'PRORES'|'THEORA'|'VP8'|'VP9'|'C608'|'C708'|'WEBVTT'|null,
      *     DataProperties?: DataProperties|null,
      *     Duration?: double|null,
      *     Index?: int|null,

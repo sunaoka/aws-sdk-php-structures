@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CONTINUE'|'DROP'|null $ActionFailurePolicy
+ * @property string $TopicArn
+ * @property string $RoleArn
  * @property 'UTF-8'|'BASE64'|null $Encoding
  * @property 'HEADERS'|'CONTENT'|null $PayloadType
- * @property string $RoleArn
- * @property string $TopicArn
  */
 class SnsAction extends Shape
 {
     /**
      * @param array{
      *     ActionFailurePolicy?: 'CONTINUE'|'DROP'|null,
-     *     Encoding?: 'UTF-8'|'BASE64'|null,
-     *     PayloadType?: 'HEADERS'|'CONTENT'|null,
+     *     TopicArn: string,
      *     RoleArn: string,
-     *     TopicArn: string
+     *     Encoding?: 'UTF-8'|'BASE64'|null,
+     *     PayloadType?: 'HEADERS'|'CONTENT'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\DeregisterMemberFromAddressList;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Address
  * @property string $AddressListId
+ * @property string $Address
  */
 class DeregisterMemberFromAddressListRequest extends Request
 {
     /**
      * @param array{
-     *     Address: string,
-     *     AddressListId: string
+     *     AddressListId: string,
+     *     Address: string
      * } $args
      */
     public function __construct(array $args)

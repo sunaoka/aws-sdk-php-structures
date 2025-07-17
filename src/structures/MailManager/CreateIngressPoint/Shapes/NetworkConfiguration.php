@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\CreateIngressPoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PrivateNetworkConfiguration|null $PrivateNetworkConfiguration
  * @property PublicNetworkConfiguration|null $PublicNetworkConfiguration
+ * @property PrivateNetworkConfiguration|null $PrivateNetworkConfiguration
  */
 class NetworkConfiguration extends Shape
 {
     /**
      * @param array{
-     *     PrivateNetworkConfiguration?: PrivateNetworkConfiguration|null,
-     *     PublicNetworkConfiguration?: PublicNetworkConfiguration|null
+     *     PublicNetworkConfiguration?: PublicNetworkConfiguration|null,
+     *     PrivateNetworkConfiguration?: PrivateNetworkConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

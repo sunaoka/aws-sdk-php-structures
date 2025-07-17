@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ArchiveId
- * @property Shapes\ExportDestinationConfiguration $ExportDestinationConfiguration
  * @property Shapes\ArchiveFilters|null $Filters
  * @property \Aws\Api\DateTimeResult $FromTimestamp
- * @property bool|null $IncludeMetadata
- * @property int|null $MaxResults
  * @property \Aws\Api\DateTimeResult $ToTimestamp
+ * @property int|null $MaxResults
+ * @property Shapes\ExportDestinationConfiguration $ExportDestinationConfiguration
+ * @property bool|null $IncludeMetadata
  */
 class StartArchiveExportRequest extends Request
 {
     /**
      * @param array{
      *     ArchiveId: string,
-     *     ExportDestinationConfiguration: Shapes\ExportDestinationConfiguration,
      *     Filters?: Shapes\ArchiveFilters|null,
      *     FromTimestamp: \Aws\Api\DateTimeResult,
-     *     IncludeMetadata?: bool|null,
+     *     ToTimestamp: \Aws\Api\DateTimeResult,
      *     MaxResults?: int|null,
-     *     ToTimestamp: \Aws\Api\DateTimeResult
+     *     ExportDestinationConfiguration: Shapes\ExportDestinationConfiguration,
+     *     IncludeMetadata?: bool|null
      * } $args
      */
     public function __construct(array $args)

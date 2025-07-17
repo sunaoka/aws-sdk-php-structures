@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MailManager\UpdateRuleSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AddressLists
  * @property 'RECIPIENT'|'MAIL_FROM'|'SENDER'|'FROM'|'TO'|'CC' $Attribute
+ * @property list<string> $AddressLists
  */
 class RuleIsInAddressList extends Shape
 {
     /**
      * @param array{
-     *     AddressLists: list<string>,
-     *     Attribute: 'RECIPIENT'|'MAIL_FROM'|'SENDER'|'FROM'|'TO'|'CC'
+     *     Attribute: 'RECIPIENT'|'MAIL_FROM'|'SENDER'|'FROM'|'TO'|'CC',
+     *     AddressLists: list<string>
      * } $args
      */
     public function __construct(array $args)
