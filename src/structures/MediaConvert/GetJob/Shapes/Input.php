@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 2147483647>|null $ProgramNumber
  * @property 'IGNORE_PSI'|'USE_PSI'|null $PsiControl
  * @property list<string>|null $SupplementalImps
+ * @property InputTamsSettings|null $TamsSettings
  * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null $TimecodeSource
  * @property string|null $TimecodeStart
  * @property InputVideoGenerator|null $VideoGenerator
@@ -57,6 +58,7 @@ class Input extends Shape
      *     ProgramNumber?: int<1, 2147483647>|null,
      *     PsiControl?: 'IGNORE_PSI'|'USE_PSI'|null,
      *     SupplementalImps?: list<string>|null,
+     *     TamsSettings?: InputTamsSettings|null,
      *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null,
      *     TimecodeStart?: string|null,
      *     VideoGenerator?: InputVideoGenerator|null,
