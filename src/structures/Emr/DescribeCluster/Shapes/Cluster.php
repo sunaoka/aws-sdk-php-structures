@@ -39,6 +39,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OSReleaseLabel
  * @property int|null $EbsRootVolumeIops
  * @property int|null $EbsRootVolumeThroughput
+ * @property bool|null $ExtendedSupport
  */
 class Cluster extends Shape
 {
@@ -77,7 +78,8 @@ class Cluster extends Shape
      *     PlacementGroups?: list<PlacementGroupConfig>|null,
      *     OSReleaseLabel?: string|null,
      *     EbsRootVolumeIops?: int|null,
-     *     EbsRootVolumeThroughput?: int|null
+     *     EbsRootVolumeThroughput?: int|null,
+     *     ExtendedSupport?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

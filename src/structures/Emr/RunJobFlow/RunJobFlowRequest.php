@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $OSReleaseLabel
  * @property int|null $EbsRootVolumeIops
  * @property int|null $EbsRootVolumeThroughput
+ * @property bool|null $ExtendedSupport
  */
 class RunJobFlowRequest extends Request
 {
@@ -71,7 +72,8 @@ class RunJobFlowRequest extends Request
      *     AutoTerminationPolicy?: Shapes\AutoTerminationPolicy|null,
      *     OSReleaseLabel?: string|null,
      *     EbsRootVolumeIops?: int|null,
-     *     EbsRootVolumeThroughput?: int|null
+     *     EbsRootVolumeThroughput?: int|null,
+     *     ExtendedSupport?: bool|null
      * } $args
      */
     public function __construct(array $args)
