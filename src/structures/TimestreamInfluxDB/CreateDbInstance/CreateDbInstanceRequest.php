@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $password
  * @property string|null $organization
  * @property string|null $bucket
- * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge' $dbInstanceType
+ * @property 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge' $dbInstanceType
  * @property list<string> $vpcSubnetIds
  * @property list<string> $vpcSecurityGroupIds
  * @property bool|null $publiclyAccessible
@@ -32,7 +32,7 @@ class CreateDbInstanceRequest extends Request
      *     password: string,
      *     organization?: string|null,
      *     bucket?: string|null,
-     *     dbInstanceType: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge',
+     *     dbInstanceType: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge',
      *     vpcSubnetIds: list<string>,
      *     vpcSecurityGroupIds: list<string>,
      *     publiclyAccessible?: bool|null,

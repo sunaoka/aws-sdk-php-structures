@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 2147483647>|null $failureRetryCount
  * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class TaskSearchSummary extends Shape
 {
@@ -29,7 +31,9 @@ class TaskSearchSummary extends Shape
      *     parameters?: array<string, TaskParameterValue>|null,
      *     failureRetryCount?: int<0, 2147483647>|null,
      *     startedAt?: \Aws\Api\DateTimeResult|null,
-     *     endedAt?: \Aws\Api\DateTimeResult|null
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args = [])
