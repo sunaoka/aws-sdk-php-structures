@@ -34,6 +34,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MaintenanceWindow
  * @property string|null $ProfileName
  * @property string|null $StateDetail
+ * @property string|null $ExecutionRoleSessionPolicy
  */
 class JobRun extends Shape
 {
@@ -67,7 +68,8 @@ class JobRun extends Shape
      *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
      *     MaintenanceWindow?: string|null,
      *     ProfileName?: string|null,
-     *     StateDetail?: string|null
+     *     StateDetail?: string|null,
+     *     ExecutionRoleSessionPolicy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

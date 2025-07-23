@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $InstanceIds
  * @property bool|null $Hibernate
+ * @property bool|null $SkipOsShutdown
  * @property bool|null $DryRun
  * @property bool|null $Force
  */
@@ -16,6 +17,7 @@ class StopInstancesRequest extends Request
      * @param array{
      *     InstanceIds: list<string>,
      *     Hibernate?: bool|null,
+     *     SkipOsShutdown?: bool|null,
      *     DryRun?: bool|null,
      *     Force?: bool|null
      * } $args
