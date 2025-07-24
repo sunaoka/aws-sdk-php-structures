@@ -19,6 +19,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 100000>|null $storageCapacity
  * @property array<string, string>|null $tags
  * @property string|null $workflowBucketOwnerId
+ * @property string|null $readmeMarkdown
+ * @property string|null $parameterTemplatePath
+ * @property string|null $readmePath
+ * @property Shapes\DefinitionRepository|null $definitionRepository
+ * @property string|null $readmeUri
  */
 class CreateWorkflowVersionRequest extends Request
 {
@@ -37,7 +42,12 @@ class CreateWorkflowVersionRequest extends Request
      *     storageType?: 'STATIC'|'DYNAMIC'|null,
      *     storageCapacity?: int<0, 100000>|null,
      *     tags?: array<string, string>|null,
-     *     workflowBucketOwnerId?: string|null
+     *     workflowBucketOwnerId?: string|null,
+     *     readmeMarkdown?: string|null,
+     *     parameterTemplatePath?: string|null,
+     *     readmePath?: string|null,
+     *     definitionRepository?: Shapes\DefinitionRepository|null,
+     *     readmeUri?: string|null
      * } $args
      */
     public function __construct(array $args)

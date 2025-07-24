@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property GlossaryTermItemAdditionalAttributes|null $additionalAttributes
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy
  * @property string $domainId
@@ -22,6 +23,7 @@ class GlossaryTermItem extends Shape
 {
     /**
      * @param array{
+     *     additionalAttributes?: GlossaryTermItemAdditionalAttributes|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     createdBy?: string|null,
      *     domainId: string,

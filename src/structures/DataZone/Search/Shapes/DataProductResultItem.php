@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property DataProductItemAdditionalAttributes|null $additionalAttributes
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy
  * @property string|null $description
@@ -20,6 +21,7 @@ class DataProductResultItem extends Shape
 {
     /**
      * @param array{
+     *     additionalAttributes?: DataProductItemAdditionalAttributes|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     createdBy?: string|null,
      *     description?: string|null,
