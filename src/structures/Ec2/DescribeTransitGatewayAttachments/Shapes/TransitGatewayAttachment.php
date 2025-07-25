@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TransitGatewayId
  * @property string|null $TransitGatewayOwnerId
  * @property string|null $ResourceOwnerId
- * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null $ResourceType
+ * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null $ResourceType
  * @property string|null $ResourceId
  * @property 'initiating'|'initiatingRequest'|'pendingAcceptance'|'rollingBack'|'pending'|'available'|'modifying'|'deleting'|'deleted'|'failed'|'rejected'|'rejecting'|'failing'|null $State
  * @property TransitGatewayAttachmentAssociation|null $Association
@@ -24,7 +24,7 @@ class TransitGatewayAttachment extends Shape
      *     TransitGatewayId?: string|null,
      *     TransitGatewayOwnerId?: string|null,
      *     ResourceOwnerId?: string|null,
-     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null,
+     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null,
      *     ResourceId?: string|null,
      *     State?: 'initiating'|'initiatingRequest'|'pendingAcceptance'|'rollingBack'|'pending'|'available'|'modifying'|'deleting'|'deleted'|'failed'|'rejected'|'rejecting'|'failing'|null,
      *     Association?: TransitGatewayAttachmentAssociation|null,
