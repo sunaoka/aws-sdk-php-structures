@@ -5,7 +5,8 @@ namespace Sunaoka\Aws\Structures\DataZone\SearchListings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'>|null $additionalAttributes
+ * @property list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'|'TEXT_MATCH_RATIONALE'>|null $additionalAttributes
+ * @property list<Shapes\AggregationListItem>|null $aggregations
  * @property string $domainIdentifier
  * @property Shapes\FilterClause|null $filters
  * @property int<1, 50>|null $maxResults
@@ -18,7 +19,8 @@ class SearchListingsRequest extends Request
 {
     /**
      * @param array{
-     *     additionalAttributes?: list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'>|null,
+     *     additionalAttributes?: list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'|'TEXT_MATCH_RATIONALE'>|null,
+     *     aggregations?: list<Shapes\AggregationListItem>|null,
      *     domainIdentifier: string,
      *     filters?: Shapes\FilterClause|null,
      *     maxResults?: int<1, 50>|null,

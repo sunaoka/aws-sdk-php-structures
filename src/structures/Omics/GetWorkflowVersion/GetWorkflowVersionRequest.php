@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $workflowId
  * @property string $versionName
  * @property 'PRIVATE'|'READY2RUN'|null $type
- * @property list<'DEFINITION'>|null $export
+ * @property list<'DEFINITION'|'README'>|null $export
  * @property string|null $workflowOwnerId
  */
 class GetWorkflowVersionRequest extends Request
@@ -18,7 +18,7 @@ class GetWorkflowVersionRequest extends Request
      *     workflowId: string,
      *     versionName: string,
      *     type?: 'PRIVATE'|'READY2RUN'|null,
-     *     export?: list<'DEFINITION'>|null,
+     *     export?: list<'DEFINITION'|'README'>|null,
      *     workflowOwnerId?: string|null
      * } $args
      */
