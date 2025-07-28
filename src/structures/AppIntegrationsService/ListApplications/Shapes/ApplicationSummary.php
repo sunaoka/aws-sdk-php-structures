@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Namespace
  * @property \Aws\Api\DateTimeResult|null $CreatedTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property bool|null $IsService
  */
 class ApplicationSummary extends Shape
 {
@@ -21,7 +22,8 @@ class ApplicationSummary extends Shape
      *     Name?: string|null,
      *     Namespace?: string|null,
      *     CreatedTime?: \Aws\Api\DateTimeResult|null,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     IsService?: bool|null
      * } $args
      */
     public function __construct(array $args = [])
