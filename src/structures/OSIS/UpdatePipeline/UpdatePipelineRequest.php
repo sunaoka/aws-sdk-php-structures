@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LogPublishingOptions|null $LogPublishingOptions
  * @property Shapes\BufferOptions|null $BufferOptions
  * @property Shapes\EncryptionAtRestOptions|null $EncryptionAtRestOptions
+ * @property string|null $PipelineRoleArn
  */
 class UpdatePipelineRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdatePipelineRequest extends Request
      *     PipelineConfigurationBody?: string|null,
      *     LogPublishingOptions?: Shapes\LogPublishingOptions|null,
      *     BufferOptions?: Shapes\BufferOptions|null,
-     *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions|null
+     *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions|null,
+     *     PipelineRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

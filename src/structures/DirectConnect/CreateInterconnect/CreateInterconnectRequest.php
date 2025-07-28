@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $lagId
  * @property list<Shapes\Tag>|null $tags
  * @property string|null $providerName
+ * @property bool|null $requestMACSec
  */
 class CreateInterconnectRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateInterconnectRequest extends Request
      *     location: string,
      *     lagId?: string|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     providerName?: string|null
+     *     providerName?: string|null,
+     *     requestMACSec?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $amazonAddress
  * @property string|null $customerAddress
  * @property 'ipv4'|'ipv6'|null $addressFamily
- * @property 'confirming'|'verifying'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown'|null $virtualInterfaceState
+ * @property 'confirming'|'verifying'|'pending'|'available'|'down'|'testing'|'deleting'|'deleted'|'rejected'|'unknown'|null $virtualInterfaceState
  * @property string|null $customerRouterConfig
  * @property int|null $mtu
  * @property bool|null $jumboFrameCapable
@@ -49,7 +49,7 @@ class VirtualInterface extends Shape
      *     amazonAddress?: string|null,
      *     customerAddress?: string|null,
      *     addressFamily?: 'ipv4'|'ipv6'|null,
-     *     virtualInterfaceState?: 'confirming'|'verifying'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown'|null,
+     *     virtualInterfaceState?: 'confirming'|'verifying'|'pending'|'available'|'down'|'testing'|'deleting'|'deleted'|'rejected'|'unknown'|null,
      *     customerRouterConfig?: string|null,
      *     mtu?: int|null,
      *     jumboFrameCapable?: bool|null,

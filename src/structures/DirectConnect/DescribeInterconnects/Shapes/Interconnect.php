@@ -20,6 +20,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'unknown'|'yes'|'no'|null $hasLogicalRedundancy
  * @property list<Tag>|null $tags
  * @property string|null $providerName
+ * @property bool|null $macSecCapable
+ * @property string|null $portEncryptionStatus
+ * @property string|null $encryptionMode
+ * @property list<MacSecKey>|null $macSecKeys
  */
 class Interconnect extends Shape
 {
@@ -39,7 +43,11 @@ class Interconnect extends Shape
      *     awsLogicalDeviceId?: string|null,
      *     hasLogicalRedundancy?: 'unknown'|'yes'|'no'|null,
      *     tags?: list<Tag>|null,
-     *     providerName?: string|null
+     *     providerName?: string|null,
+     *     macSecCapable?: bool|null,
+     *     portEncryptionStatus?: string|null,
+     *     encryptionMode?: string|null,
+     *     macSecKeys?: list<MacSecKey>|null
      * } $args
      */
     public function __construct(array $args = [])

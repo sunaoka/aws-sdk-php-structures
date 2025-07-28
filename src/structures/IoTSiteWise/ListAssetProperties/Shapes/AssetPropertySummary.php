@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
+ * @property string|null $externalId
  * @property string|null $alias
  * @property string|null $unit
  * @property PropertyNotification|null $notification
  * @property string|null $assetCompositeModelId
  * @property list<AssetPropertyPathSegment>|null $path
- * @property string|null $externalId
  */
 class AssetPropertySummary extends Shape
 {
     /**
      * @param array{
      *     id: string,
+     *     externalId?: string|null,
      *     alias?: string|null,
      *     unit?: string|null,
      *     notification?: PropertyNotification|null,
      *     assetCompositeModelId?: string|null,
-     *     path?: list<AssetPropertyPathSegment>|null,
-     *     externalId?: string|null
+     *     path?: list<AssetPropertyPathSegment>|null
      * } $args
      */
     public function __construct(array $args)
