@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $id
- * @property 'saml'|'iamidentitycenter'|null $type
+ * @property 'saml'|'iamidentitycenter'|'iamfederation'|null $type
  * @property string|null $configVersion
  * @property string|null $description
  * @property int|null $createdDate
@@ -17,7 +17,7 @@ class SecurityConfigSummary extends Shape
     /**
      * @param array{
      *     id?: string|null,
-     *     type?: 'saml'|'iamidentitycenter'|null,
+     *     type?: 'saml'|'iamidentitycenter'|'iamfederation'|null,
      *     configVersion?: string|null,
      *     description?: string|null,
      *     createdDate?: int|null,

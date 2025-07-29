@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property Shapes\SamlConfigOptions|null $samlOptions
  * @property Shapes\UpdateIamIdentityCenterConfigOptions|null $iamIdentityCenterOptionsUpdates
+ * @property Shapes\IamFederationConfigOptions|null $iamFederationOptions
  * @property string|null $clientToken
  */
 class UpdateSecurityConfigRequest extends Request
@@ -21,6 +22,7 @@ class UpdateSecurityConfigRequest extends Request
      *     description?: string|null,
      *     samlOptions?: Shapes\SamlConfigOptions|null,
      *     iamIdentityCenterOptionsUpdates?: Shapes\UpdateIamIdentityCenterConfigOptions|null,
+     *     iamFederationOptions?: Shapes\IamFederationConfigOptions|null,
      *     clientToken?: string|null
      * } $args
      */

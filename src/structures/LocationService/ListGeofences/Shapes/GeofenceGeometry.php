@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<list<list<double>>>|null $Polygon
  * @property Circle|null $Circle
  * @property \Psr\Http\Message\StreamInterface|null $Geobuf
+ * @property list<list<list<list<double>>>>|null $MultiPolygon
  */
 class GeofenceGeometry extends Shape
 {
@@ -15,7 +16,8 @@ class GeofenceGeometry extends Shape
      * @param array{
      *     Polygon?: list<list<list<double>>>|null,
      *     Circle?: Circle|null,
-     *     Geobuf?: \Psr\Http\Message\StreamInterface|null
+     *     Geobuf?: \Psr\Http\Message\StreamInterface|null,
+     *     MultiPolygon?: list<list<list<list<double>>>>|null
      * } $args
      */
     public function __construct(array $args = [])
