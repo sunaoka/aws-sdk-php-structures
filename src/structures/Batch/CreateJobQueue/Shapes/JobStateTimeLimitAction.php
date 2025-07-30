@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $reason
  * @property 'RUNNABLE' $state
  * @property int $maxTimeSeconds
- * @property 'CANCEL' $action
+ * @property 'CANCEL'|'TERMINATE' $action
  */
 class JobStateTimeLimitAction extends Shape
 {
@@ -17,7 +17,7 @@ class JobStateTimeLimitAction extends Shape
      *     reason: string,
      *     state: 'RUNNABLE',
      *     maxTimeSeconds: int,
-     *     action: 'CANCEL'
+     *     action: 'CANCEL'|'TERMINATE'
      * } $args
      */
     public function __construct(array $args)
