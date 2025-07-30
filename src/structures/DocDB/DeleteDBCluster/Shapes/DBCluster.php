@@ -38,6 +38,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $EnabledCloudwatchLogsExports
  * @property bool|null $DeletionProtection
  * @property string|null $StorageType
+ * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
  * @property ClusterMasterUserSecret|null $MasterUserSecret
  */
 class DBCluster extends Shape
@@ -77,6 +78,7 @@ class DBCluster extends Shape
      *     EnabledCloudwatchLogsExports?: list<string>|null,
      *     DeletionProtection?: bool|null,
      *     StorageType?: string|null,
+     *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
      *     MasterUserSecret?: ClusterMasterUserSecret|null
      * } $args
      */

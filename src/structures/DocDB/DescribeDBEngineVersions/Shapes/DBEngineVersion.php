@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $SupportsLogExportsToCloudwatchLogs
  * @property list<string>|null $SupportedCACertificateIdentifiers
  * @property bool|null $SupportsCertificateRotationWithoutRestart
+ * @property ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
  */
 class DBEngineVersion extends Shape
 {
@@ -29,7 +30,8 @@ class DBEngineVersion extends Shape
      *     ExportableLogTypes?: list<string>|null,
      *     SupportsLogExportsToCloudwatchLogs?: bool|null,
      *     SupportedCACertificateIdentifiers?: list<string>|null,
-     *     SupportsCertificateRotationWithoutRestart?: bool|null
+     *     SupportsCertificateRotationWithoutRestart?: bool|null,
+     *     ServerlessV2FeaturesSupport?: ServerlessV2FeaturesSupport|null
      * } $args
      */
     public function __construct(array $args = [])
