@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeletionProtection
  * @property string|null $GlobalClusterIdentifier
  * @property string|null $StorageType
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
  */
@@ -54,6 +55,7 @@ class CreateDBClusterRequest extends Request
      *     DeletionProtection?: bool|null,
      *     GlobalClusterIdentifier?: string|null,
      *     StorageType?: string|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null
      * } $args

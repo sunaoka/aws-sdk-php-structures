@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcOriginConfig|null $VpcOriginConfig
  * @property int|null $ConnectionAttempts
  * @property int|null $ConnectionTimeout
+ * @property int|null $ResponseCompletionTimeout
  * @property OriginShield|null $OriginShield
  * @property string|null $OriginAccessControlId
  */
@@ -30,6 +31,7 @@ class Origin extends Shape
      *     VpcOriginConfig?: VpcOriginConfig|null,
      *     ConnectionAttempts?: int|null,
      *     ConnectionTimeout?: int|null,
+     *     ResponseCompletionTimeout?: int|null,
      *     OriginShield?: OriginShield|null,
      *     OriginAccessControlId?: string|null
      * } $args

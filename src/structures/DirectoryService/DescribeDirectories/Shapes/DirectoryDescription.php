@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OwnerDirectoryDescription|null $OwnerDirectoryDescription
  * @property RegionsInfo|null $RegionsInfo
  * @property 'SERVER_2012'|'SERVER_2019'|null $OsVersion
+ * @property HybridSettingsDescription|null $HybridSettings
  */
 class DirectoryDescription extends Shape
 {
@@ -61,7 +62,8 @@ class DirectoryDescription extends Shape
      *     DesiredNumberOfDomainControllers?: int<2, max>|null,
      *     OwnerDirectoryDescription?: OwnerDirectoryDescription|null,
      *     RegionsInfo?: RegionsInfo|null,
-     *     OsVersion?: 'SERVER_2012'|'SERVER_2019'|null
+     *     OsVersion?: 'SERVER_2012'|'SERVER_2019'|null,
+     *     HybridSettings?: HybridSettingsDescription|null
      * } $args
      */
     public function __construct(array $args = [])
