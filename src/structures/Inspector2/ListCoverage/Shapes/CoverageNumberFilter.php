@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCoverage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int|null $lowerInclusive
  * @property int|null $upperInclusive
+ * @property int|null $lowerInclusive
  */
 class CoverageNumberFilter extends Shape
 {
     /**
      * @param array{
-     *     lowerInclusive?: int|null,
-     *     upperInclusive?: int|null
+     *     upperInclusive?: int|null,
+     *     lowerInclusive?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\AssociateIpAccessSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ipAccessSettingsArn
  * @property string $portalArn
+ * @property string $ipAccessSettingsArn
  */
 class AssociateIpAccessSettingsResponse extends Response
 {

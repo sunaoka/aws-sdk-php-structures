@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $endLine
  * @property string $fileName
  * @property string $filePath
  * @property int $startLine
+ * @property int $endLine
  */
 class CodeFilePath extends Shape
 {
     /**
      * @param array{
-     *     endLine: int,
      *     fileName: string,
      *     filePath: string,
-     *     startLine: int
+     *     startLine: int,
+     *     endLine: int
      * } $args
      */
     public function __construct(array $args)

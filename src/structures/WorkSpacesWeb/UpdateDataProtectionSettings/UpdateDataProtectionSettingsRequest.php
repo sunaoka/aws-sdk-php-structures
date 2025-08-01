@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateDataProtectionSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $dataProtectionSettingsArn
- * @property string|null $description
- * @property string|null $displayName
  * @property Shapes\InlineRedactionConfiguration|null $inlineRedactionConfiguration
+ * @property string|null $displayName
+ * @property string|null $description
+ * @property string|null $clientToken
  */
 class UpdateDataProtectionSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     dataProtectionSettingsArn: string,
-     *     description?: string|null,
+     *     inlineRedactionConfiguration?: Shapes\InlineRedactionConfiguration|null,
      *     displayName?: string|null,
-     *     inlineRedactionConfiguration?: Shapes\InlineRedactionConfiguration|null
+     *     description?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

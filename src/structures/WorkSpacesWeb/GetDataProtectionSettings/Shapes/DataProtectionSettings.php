@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetDataProtectionSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string>|null $additionalEncryptionContext
+ * @property string $dataProtectionSettingsArn
+ * @property InlineRedactionConfiguration|null $inlineRedactionConfiguration
  * @property list<string>|null $associatedPortalArns
+ * @property string|null $displayName
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult|null $creationDate
  * @property string|null $customerManagedKey
- * @property string $dataProtectionSettingsArn
- * @property string|null $description
- * @property string|null $displayName
- * @property InlineRedactionConfiguration|null $inlineRedactionConfiguration
+ * @property array<string, string>|null $additionalEncryptionContext
  */
 class DataProtectionSettings extends Shape
 {
     /**
      * @param array{
-     *     additionalEncryptionContext?: array<string, string>|null,
+     *     dataProtectionSettingsArn: string,
+     *     inlineRedactionConfiguration?: InlineRedactionConfiguration|null,
      *     associatedPortalArns?: list<string>|null,
+     *     displayName?: string|null,
+     *     description?: string|null,
      *     creationDate?: \Aws\Api\DateTimeResult|null,
      *     customerManagedKey?: string|null,
-     *     dataProtectionSettingsArn: string,
-     *     description?: string|null,
-     *     displayName?: string|null,
-     *     inlineRedactionConfiguration?: InlineRedactionConfiguration|null
+     *     additionalEncryptionContext?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

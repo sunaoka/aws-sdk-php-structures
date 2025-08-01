@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Inspector2\SendCisSessionTelemetry;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\CisSessionMessage> $messages
  * @property string $scanJobId
  * @property string $sessionToken
+ * @property list<Shapes\CisSessionMessage> $messages
  */
 class SendCisSessionTelemetryRequest extends Request
 {
     /**
      * @param array{
-     *     messages: list<Shapes\CisSessionMessage>,
      *     scanJobId: string,
-     *     sessionToken: string
+     *     sessionToken: string,
+     *     messages: list<Shapes\CisSessionMessage>
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\CreateUserAccessLoggingSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $kinesisStreamArn
  * @property list<Shapes\Tag>|null $tags
+ * @property string|null $clientToken
  */
 class CreateUserAccessLoggingSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     kinesisStreamArn: string,
-     *     tags?: list<Shapes\Tag>|null
+     *     tags?: list<Shapes\Tag>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

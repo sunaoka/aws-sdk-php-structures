@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindingAggregations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $accountId
  * @property string $packageName
+ * @property string|null $accountId
  * @property SeverityCounts|null $severityCounts
  */
 class PackageAggregationResponse extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string|null,
      *     packageName: string,
+     *     accountId?: string|null,
      *     severityCounts?: SeverityCounts|null
      * } $args
      */

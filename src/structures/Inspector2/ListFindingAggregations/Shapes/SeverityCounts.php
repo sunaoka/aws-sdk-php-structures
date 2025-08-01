@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int|null $all
- * @property int|null $critical
- * @property int|null $high
  * @property int|null $medium
+ * @property int|null $high
+ * @property int|null $critical
  */
 class SeverityCounts extends Shape
 {
     /**
      * @param array{
      *     all?: int|null,
-     *     critical?: int|null,
+     *     medium?: int|null,
      *     high?: int|null,
-     *     medium?: int|null
+     *     critical?: int|null
      * } $args
      */
     public function __construct(array $args = [])

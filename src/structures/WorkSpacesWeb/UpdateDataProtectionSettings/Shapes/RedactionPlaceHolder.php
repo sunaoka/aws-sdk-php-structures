@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateDataProtectionSettings\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $redactionPlaceHolderText
  * @property 'CustomText' $redactionPlaceHolderType
+ * @property string|null $redactionPlaceHolderText
  */
 class RedactionPlaceHolder extends Shape
 {
     /**
      * @param array{
-     *     redactionPlaceHolderText?: string|null,
-     *     redactionPlaceHolderType: 'CustomText'
+     *     redactionPlaceHolderType: 'CustomText',
+     *     redactionPlaceHolderText?: string|null
      * } $args
      */
     public function __construct(array $args)

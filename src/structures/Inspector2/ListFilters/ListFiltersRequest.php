@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFilters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'NONE'|'SUPPRESS'|null $action
  * @property list<string>|null $arns
- * @property int<1, 100>|null $maxResults
+ * @property 'NONE'|'SUPPRESS'|null $action
  * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListFiltersRequest extends Request
 {
     /**
      * @param array{
-     *     action?: 'NONE'|'SUPPRESS'|null,
      *     arns?: list<string>|null,
-     *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null
+     *     action?: 'NONE'|'SUPPRESS'|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

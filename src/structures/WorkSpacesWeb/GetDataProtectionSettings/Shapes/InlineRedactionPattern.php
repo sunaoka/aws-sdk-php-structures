@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $builtInPatternId
- * @property int<1, 3>|null $confidenceLevel
  * @property CustomPattern|null $customPattern
+ * @property RedactionPlaceHolder $redactionPlaceHolder
  * @property list<string>|null $enforcedUrls
  * @property list<string>|null $exemptUrls
- * @property RedactionPlaceHolder $redactionPlaceHolder
+ * @property int<1, 3>|null $confidenceLevel
  */
 class InlineRedactionPattern extends Shape
 {
     /**
      * @param array{
      *     builtInPatternId?: string|null,
-     *     confidenceLevel?: int<1, 3>|null,
      *     customPattern?: CustomPattern|null,
+     *     redactionPlaceHolder: RedactionPlaceHolder,
      *     enforcedUrls?: list<string>|null,
      *     exemptUrls?: list<string>|null,
-     *     redactionPlaceHolder: RedactionPlaceHolder
+     *     confidenceLevel?: int<1, 3>|null
      * } $args
      */
     public function __construct(array $args)
