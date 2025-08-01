@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetTrustStoreCertificate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $thumbprint
  * @property string $trustStoreArn
+ * @property string $thumbprint
  */
 class GetTrustStoreCertificateRequest extends Request
 {
     /**
      * @param array{
-     *     thumbprint: string,
-     *     trustStoreArn: string
+     *     trustStoreArn: string,
+     *     thumbprint: string
      * } $args
      */
     public function __construct(array $args)

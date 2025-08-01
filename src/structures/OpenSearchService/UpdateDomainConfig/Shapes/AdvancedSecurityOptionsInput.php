@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MasterUserOptions|null $MasterUserOptions
  * @property SAMLOptionsInput|null $SAMLOptions
  * @property JWTOptionsInput|null $JWTOptions
+ * @property IAMFederationOptionsInput|null $IAMFederationOptions
  * @property bool|null $AnonymousAuthEnabled
  */
 class AdvancedSecurityOptionsInput extends Shape
@@ -21,6 +22,7 @@ class AdvancedSecurityOptionsInput extends Shape
      *     MasterUserOptions?: MasterUserOptions|null,
      *     SAMLOptions?: SAMLOptionsInput|null,
      *     JWTOptions?: JWTOptionsInput|null,
+     *     IAMFederationOptions?: IAMFederationOptionsInput|null,
      *     AnonymousAuthEnabled?: bool|null
      * } $args
      */

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScanResultsAggregatedByTarget
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $accountId
- * @property string|null $platform
  * @property string $scanArn
- * @property StatusCounts|null $statusCounts
  * @property string|null $targetResourceId
+ * @property string|null $accountId
  * @property array<string, list<string>>|null $targetResourceTags
+ * @property StatusCounts|null $statusCounts
+ * @property string|null $platform
  * @property 'TIMED_OUT'|'CANCELLED'|'COMPLETED'|null $targetStatus
  * @property 'SCAN_IN_PROGRESS'|'UNSUPPORTED_OS'|'SSM_UNMANAGED'|null $targetStatusReason
  */
@@ -18,12 +18,12 @@ class CisTargetResourceAggregation extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string|null,
-     *     platform?: string|null,
      *     scanArn: string,
-     *     statusCounts?: StatusCounts|null,
      *     targetResourceId?: string|null,
+     *     accountId?: string|null,
      *     targetResourceTags?: array<string, list<string>>|null,
+     *     statusCounts?: StatusCounts|null,
+     *     platform?: string|null,
      *     targetStatus?: 'TIMED_OUT'|'CANCELLED'|'COMPLETED'|null,
      *     targetStatusReason?: 'SCAN_IN_PROGRESS'|'UNSUPPORTED_OS'|'SSM_UNMANAGED'|null
      * } $args

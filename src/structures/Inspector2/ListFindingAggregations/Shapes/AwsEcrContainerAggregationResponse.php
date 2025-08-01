@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindingAggregations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $accountId
- * @property string|null $architecture
- * @property string|null $imageSha
- * @property list<string>|null $imageTags
- * @property int|null $inUseCount
- * @property \Aws\Api\DateTimeResult|null $lastInUseAt
- * @property string|null $repository
  * @property string $resourceId
+ * @property string|null $imageSha
+ * @property string|null $repository
+ * @property string|null $architecture
+ * @property list<string>|null $imageTags
+ * @property string|null $accountId
  * @property SeverityCounts|null $severityCounts
+ * @property \Aws\Api\DateTimeResult|null $lastInUseAt
+ * @property int|null $inUseCount
  */
 class AwsEcrContainerAggregationResponse extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string|null,
-     *     architecture?: string|null,
-     *     imageSha?: string|null,
-     *     imageTags?: list<string>|null,
-     *     inUseCount?: int|null,
-     *     lastInUseAt?: \Aws\Api\DateTimeResult|null,
-     *     repository?: string|null,
      *     resourceId: string,
-     *     severityCounts?: SeverityCounts|null
+     *     imageSha?: string|null,
+     *     repository?: string|null,
+     *     architecture?: string|null,
+     *     imageTags?: list<string>|null,
+     *     accountId?: string|null,
+     *     severityCounts?: SeverityCounts|null,
+     *     lastInUseAt?: \Aws\Api\DateTimeResult|null,
+     *     inUseCount?: int|null
      * } $args
      */
     public function __construct(array $args)

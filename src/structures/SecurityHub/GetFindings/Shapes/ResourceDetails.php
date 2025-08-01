@@ -104,6 +104,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AwsMskClusterDetails|null $AwsMskCluster
  * @property AwsS3AccessPointDetails|null $AwsS3AccessPoint
  * @property AwsEc2ClientVpnEndpointDetails|null $AwsEc2ClientVpnEndpoint
+ * @property CodeRepositoryDetails|null $CodeRepository
  */
 class ResourceDetails extends Shape
 {
@@ -207,7 +208,8 @@ class ResourceDetails extends Shape
      *     AwsRoute53HostedZone?: AwsRoute53HostedZoneDetails|null,
      *     AwsMskCluster?: AwsMskClusterDetails|null,
      *     AwsS3AccessPoint?: AwsS3AccessPointDetails|null,
-     *     AwsEc2ClientVpnEndpoint?: AwsEc2ClientVpnEndpointDetails|null
+     *     AwsEc2ClientVpnEndpoint?: AwsEc2ClientVpnEndpointDetails|null,
+     *     CodeRepository?: CodeRepositoryDetails|null
      * } $args
      */
     public function __construct(array $args = [])

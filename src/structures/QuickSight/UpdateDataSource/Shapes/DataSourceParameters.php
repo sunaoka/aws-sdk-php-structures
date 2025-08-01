@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StarburstParameters|null $StarburstParameters
  * @property TrinoParameters|null $TrinoParameters
  * @property BigQueryParameters|null $BigQueryParameters
+ * @property ImpalaParameters|null $ImpalaParameters
  */
 class DataSourceParameters extends Shape
 {
@@ -61,7 +62,8 @@ class DataSourceParameters extends Shape
      *     DatabricksParameters?: DatabricksParameters|null,
      *     StarburstParameters?: StarburstParameters|null,
      *     TrinoParameters?: TrinoParameters|null,
-     *     BigQueryParameters?: BigQueryParameters|null
+     *     BigQueryParameters?: BigQueryParameters|null,
+     *     ImpalaParameters?: ImpalaParameters|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AddressDimension|null $MailingAddress
  * @property AddressDimension|null $BillingAddress
  * @property array<string, AttributeDimension>|null $Attributes
+ * @property ProfileTypeDimension|null $ProfileType
  */
 class ProfileAttributes extends Shape
 {
@@ -51,7 +52,8 @@ class ProfileAttributes extends Shape
      *     ShippingAddress?: AddressDimension|null,
      *     MailingAddress?: AddressDimension|null,
      *     BillingAddress?: AddressDimension|null,
-     *     Attributes?: array<string, AttributeDimension>|null
+     *     Attributes?: array<string, AttributeDimension>|null,
+     *     ProfileType?: ProfileTypeDimension|null
      * } $args
      */
     public function __construct(array $args = [])

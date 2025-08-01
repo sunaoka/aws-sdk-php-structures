@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListUserAccessLoggingSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $nextToken
  * @property list<Shapes\UserAccessLoggingSettingsSummary>|null $userAccessLoggingSettings
+ * @property string|null $nextToken
  */
 class ListUserAccessLoggingSettingsResponse extends Response
 {

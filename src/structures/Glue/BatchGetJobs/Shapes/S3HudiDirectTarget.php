@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml' $Format
  * @property array<string, string> $AdditionalOptions
  * @property DirectSchemaChangePolicy|null $SchemaChangePolicy
+ * @property AutoDataQuality|null $AutoDataQuality
  */
 class S3HudiDirectTarget extends Shape
 {
@@ -27,7 +28,8 @@ class S3HudiDirectTarget extends Shape
      *     PartitionKeys?: list<list<string>>|null,
      *     Format: 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml',
      *     AdditionalOptions: array<string, string>,
-     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null
+     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null,
+     *     AutoDataQuality?: AutoDataQuality|null
      * } $args
      */
     public function __construct(array $args)

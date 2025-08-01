@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Inspector2\StopCisSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $benchmarkProfile
- * @property string|null $benchmarkVersion
- * @property ComputePlatform|null $computePlatform
- * @property StopCisMessageProgress $progress
- * @property string|null $reason
  * @property 'SUCCESS'|'FAILED'|'INTERRUPTED'|'UNSUPPORTED_OS' $status
+ * @property string|null $reason
+ * @property StopCisMessageProgress $progress
+ * @property ComputePlatform|null $computePlatform
+ * @property string|null $benchmarkVersion
+ * @property string|null $benchmarkProfile
  */
 class StopCisSessionMessage extends Shape
 {
     /**
      * @param array{
-     *     benchmarkProfile?: string|null,
-     *     benchmarkVersion?: string|null,
-     *     computePlatform?: ComputePlatform|null,
-     *     progress: StopCisMessageProgress,
+     *     status: 'SUCCESS'|'FAILED'|'INTERRUPTED'|'UNSUPPORTED_OS',
      *     reason?: string|null,
-     *     status: 'SUCCESS'|'FAILED'|'INTERRUPTED'|'UNSUPPORTED_OS'
+     *     progress: StopCisMessageProgress,
+     *     computePlatform?: ComputePlatform|null,
+     *     benchmarkVersion?: string|null,
+     *     benchmarkProfile?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,8 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml' $Format
  * @property array<string, string>|null $AdditionalOptions
  * @property DirectSchemaChangePolicy|null $SchemaChangePolicy
+ * @property AutoDataQuality|null $AutoDataQuality
  * @property 'gzip'|'lzo'|'uncompressed'|'snappy' $Compression
  * @property string|null $NumberTargetPartitions
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class S3IcebergDirectTarget extends Shape
 {
@@ -26,8 +28,10 @@ class S3IcebergDirectTarget extends Shape
      *     Format: 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml',
      *     AdditionalOptions?: array<string, string>|null,
      *     SchemaChangePolicy?: DirectSchemaChangePolicy|null,
+     *     AutoDataQuality?: AutoDataQuality|null,
      *     Compression: 'gzip'|'lzo'|'uncompressed'|'snappy',
-     *     NumberTargetPartitions?: string|null
+     *     NumberTargetPartitions?: string|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

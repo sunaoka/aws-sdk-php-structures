@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListIpAccessSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $creationDate
- * @property string|null $description
- * @property string|null $displayName
  * @property string $ipAccessSettingsArn
+ * @property string|null $displayName
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $creationDate
  */
 class IpAccessSettingsSummary extends Shape
 {
     /**
      * @param array{
-     *     creationDate?: \Aws\Api\DateTimeResult|null,
-     *     description?: string|null,
+     *     ipAccessSettingsArn: string,
      *     displayName?: string|null,
-     *     ipAccessSettingsArn: string
+     *     description?: string|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

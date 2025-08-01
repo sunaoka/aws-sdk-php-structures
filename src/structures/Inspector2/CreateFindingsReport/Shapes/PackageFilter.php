@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Inspector2\CreateFindingsReport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StringFilter|null $architecture
- * @property NumberFilter|null $epoch
- * @property StringFilter|null $filePath
  * @property StringFilter|null $name
- * @property StringFilter|null $release
- * @property StringFilter|null $sourceLambdaLayerArn
- * @property StringFilter|null $sourceLayerHash
  * @property StringFilter|null $version
+ * @property NumberFilter|null $epoch
+ * @property StringFilter|null $release
+ * @property StringFilter|null $architecture
+ * @property StringFilter|null $sourceLayerHash
+ * @property StringFilter|null $sourceLambdaLayerArn
+ * @property StringFilter|null $filePath
  */
 class PackageFilter extends Shape
 {
     /**
      * @param array{
-     *     architecture?: StringFilter|null,
-     *     epoch?: NumberFilter|null,
-     *     filePath?: StringFilter|null,
      *     name?: StringFilter|null,
+     *     version?: StringFilter|null,
+     *     epoch?: NumberFilter|null,
      *     release?: StringFilter|null,
-     *     sourceLambdaLayerArn?: StringFilter|null,
+     *     architecture?: StringFilter|null,
      *     sourceLayerHash?: StringFilter|null,
-     *     version?: StringFilter|null
+     *     sourceLambdaLayerArn?: StringFilter|null,
+     *     filePath?: StringFilter|null
      * } $args
      */
     public function __construct(array $args = [])

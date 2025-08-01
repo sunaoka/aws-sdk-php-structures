@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConnectionName
  * @property 'sqlserver'|'mysql'|'oracle'|'postgresql'|'redshift' $ConnectionType
  * @property string|null $RedshiftTmpDir
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class DirectJDBCSource extends Shape
 {
@@ -21,7 +22,8 @@ class DirectJDBCSource extends Shape
      *     Table: string,
      *     ConnectionName: string,
      *     ConnectionType: 'sqlserver'|'mysql'|'oracle'|'postgresql'|'redshift',
-     *     RedshiftTmpDir?: string|null
+     *     RedshiftTmpDir?: string|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

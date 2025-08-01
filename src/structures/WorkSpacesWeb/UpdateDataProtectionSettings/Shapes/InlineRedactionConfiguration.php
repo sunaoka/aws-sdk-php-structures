@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateDataProtectionSettings\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 3>|null $globalConfidenceLevel
+ * @property list<InlineRedactionPattern> $inlineRedactionPatterns
  * @property list<string>|null $globalEnforcedUrls
  * @property list<string>|null $globalExemptUrls
- * @property list<InlineRedactionPattern> $inlineRedactionPatterns
+ * @property int<1, 3>|null $globalConfidenceLevel
  */
 class InlineRedactionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     globalConfidenceLevel?: int<1, 3>|null,
+     *     inlineRedactionPatterns: list<InlineRedactionPattern>,
      *     globalEnforcedUrls?: list<string>|null,
      *     globalExemptUrls?: list<string>|null,
-     *     inlineRedactionPatterns: list<InlineRedactionPattern>
+     *     globalConfidenceLevel?: int<1, 3>|null
      * } $args
      */
     public function __construct(array $args)
