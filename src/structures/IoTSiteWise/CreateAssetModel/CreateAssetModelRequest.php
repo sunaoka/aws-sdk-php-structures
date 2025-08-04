@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetModelName
- * @property 'ASSET_MODEL'|'COMPONENT_MODEL'|null $assetModelType
+ * @property 'ASSET_MODEL'|'COMPONENT_MODEL'|'INTERFACE'|null $assetModelType
  * @property string|null $assetModelId
  * @property string|null $assetModelExternalId
  * @property string|null $assetModelDescription
@@ -21,7 +21,7 @@ class CreateAssetModelRequest extends Request
     /**
      * @param array{
      *     assetModelName: string,
-     *     assetModelType?: 'ASSET_MODEL'|'COMPONENT_MODEL'|null,
+     *     assetModelType?: 'ASSET_MODEL'|'COMPONENT_MODEL'|'INTERFACE'|null,
      *     assetModelId?: string|null,
      *     assetModelExternalId?: string|null,
      *     assetModelDescription?: string|null,

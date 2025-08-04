@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Directory
  * @property string $OwnerId
  * @property string $RepositoryName
- * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged' $ProviderType
+ * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|'AzureDevOps' $ProviderType
  * @property string $Sha
  */
 class Revision extends Shape
@@ -20,7 +20,7 @@ class Revision extends Shape
      *     Directory: string,
      *     OwnerId: string,
      *     RepositoryName: string,
-     *     ProviderType: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged',
+     *     ProviderType: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|'AzureDevOps',
      *     Sha: string
      * } $args
      */
