@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Inspector2\StopCisSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\StopCisSessionMessage $message
  * @property string $scanJobId
  * @property string $sessionToken
+ * @property Shapes\StopCisSessionMessage $message
  */
 class StopCisSessionRequest extends Request
 {
     /**
      * @param array{
-     *     message: Shapes\StopCisSessionMessage,
      *     scanJobId: string,
-     *     sessionToken: string
+     *     sessionToken: string,
+     *     message: Shapes\StopCisSessionMessage
      * } $args
      */
     public function __construct(array $args)

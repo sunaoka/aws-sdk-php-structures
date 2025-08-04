@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Table
  * @property string $Database
  * @property CatalogSchemaChangePolicy|null $SchemaChangePolicy
+ * @property AutoDataQuality|null $AutoDataQuality
  */
 class S3CatalogTarget extends Shape
 {
@@ -21,7 +22,8 @@ class S3CatalogTarget extends Shape
      *     PartitionKeys?: list<list<string>>|null,
      *     Table: string,
      *     Database: string,
-     *     SchemaChangePolicy?: CatalogSchemaChangePolicy|null
+     *     SchemaChangePolicy?: CatalogSchemaChangePolicy|null,
+     *     AutoDataQuality?: AutoDataQuality|null
      * } $args
      */
     public function __construct(array $args)

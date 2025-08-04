@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PublicAccessBlockConfiguration|null $PublicAccessBlockConfiguration
  * @property string|null $BucketAccountId
  * @property Shapes\Scope|null $Scope
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateAccessPointRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateAccessPointRequest extends Request
      *     VpcConfiguration?: Shapes\VpcConfiguration|null,
      *     PublicAccessBlockConfiguration?: Shapes\PublicAccessBlockConfiguration|null,
      *     BucketAccountId?: string|null,
-     *     Scope?: Shapes\Scope|null
+     *     Scope?: Shapes\Scope|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

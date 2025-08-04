@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\StartCisSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\StartCisSessionMessage $message
  * @property string $scanJobId
+ * @property Shapes\StartCisSessionMessage $message
  */
 class StartCisSessionRequest extends Request
 {
     /**
      * @param array{
-     *     message: Shapes\StartCisSessionMessage,
-     *     scanJobId: string
+     *     scanJobId: string,
+     *     message: Shapes\StartCisSessionMessage
      * } $args
      */
     public function __construct(array $args)

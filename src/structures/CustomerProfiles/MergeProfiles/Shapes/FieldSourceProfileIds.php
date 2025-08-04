@@ -26,6 +26,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MailingAddress
  * @property string|null $BillingAddress
  * @property array<string, string>|null $Attributes
+ * @property string|null $ProfileType
+ * @property string|null $EngagementPreferences
  */
 class FieldSourceProfileIds extends Shape
 {
@@ -51,7 +53,9 @@ class FieldSourceProfileIds extends Shape
      *     ShippingAddress?: string|null,
      *     MailingAddress?: string|null,
      *     BillingAddress?: string|null,
-     *     Attributes?: array<string, string>|null
+     *     Attributes?: array<string, string>|null,
+     *     ProfileType?: string|null,
+     *     EngagementPreferences?: string|null
      * } $args
      */
     public function __construct(array $args = [])

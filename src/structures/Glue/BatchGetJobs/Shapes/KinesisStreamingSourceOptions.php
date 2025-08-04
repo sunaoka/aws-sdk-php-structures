@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AddRecordTimestamp
  * @property string|null $EmitConsumerLagMetrics
  * @property \Aws\Api\DateTimeResult|null $StartingTimestamp
+ * @property string|null $FanoutConsumerARN
  */
 class KinesisStreamingSourceOptions extends Shape
 {
@@ -51,7 +52,8 @@ class KinesisStreamingSourceOptions extends Shape
      *     RoleSessionName?: string|null,
      *     AddRecordTimestamp?: string|null,
      *     EmitConsumerLagMetrics?: string|null,
-     *     StartingTimestamp?: \Aws\Api\DateTimeResult|null
+     *     StartingTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     FanoutConsumerARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

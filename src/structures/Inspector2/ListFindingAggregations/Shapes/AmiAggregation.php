@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<StringFilter>|null $amis
- * @property 'CRITICAL'|'HIGH'|'ALL'|'AFFECTED_INSTANCES'|null $sortBy
  * @property 'ASC'|'DESC'|null $sortOrder
+ * @property 'CRITICAL'|'HIGH'|'ALL'|'AFFECTED_INSTANCES'|null $sortBy
  */
 class AmiAggregation extends Shape
 {
     /**
      * @param array{
      *     amis?: list<StringFilter>|null,
-     *     sortBy?: 'CRITICAL'|'HIGH'|'ALL'|'AFFECTED_INSTANCES'|null,
-     *     sortOrder?: 'ASC'|'DESC'|null
+     *     sortOrder?: 'ASC'|'DESC'|null,
+     *     sortBy?: 'CRITICAL'|'HIGH'|'ALL'|'AFFECTED_INSTANCES'|null
      * } $args
      */
     public function __construct(array $args = [])

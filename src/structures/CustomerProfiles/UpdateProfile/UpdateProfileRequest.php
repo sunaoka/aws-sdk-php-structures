@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Attributes
  * @property string|null $PartyTypeString
  * @property string|null $GenderString
+ * @property 'ACCOUNT_PROFILE'|'PROFILE'|null $ProfileType
+ * @property Shapes\EngagementPreferences|null $EngagementPreferences
  */
 class UpdateProfileRequest extends Request
 {
@@ -59,7 +61,9 @@ class UpdateProfileRequest extends Request
      *     BillingAddress?: Shapes\UpdateAddress|null,
      *     Attributes?: array<string, string>|null,
      *     PartyTypeString?: string|null,
-     *     GenderString?: string|null
+     *     GenderString?: string|null,
+     *     ProfileType?: 'ACCOUNT_PROFILE'|'PROFILE'|null,
+     *     EngagementPreferences?: Shapes\EngagementPreferences|null
      * } $args
      */
     public function __construct(array $args)

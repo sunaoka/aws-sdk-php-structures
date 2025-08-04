@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\CreateCisScanConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'SUN'|'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT'> $days
  * @property Time $startTime
+ * @property list<'SUN'|'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT'> $days
  */
 class WeeklySchedule extends Shape
 {
     /**
      * @param array{
-     *     days: list<'SUN'|'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT'>,
-     *     startTime: Time
+     *     startTime: Time,
+     *     days: list<'SUN'|'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT'>
      * } $args
      */
     public function __construct(array $args)

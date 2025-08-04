@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AccountAggregation|null $accountAggregation
  * @property AmiAggregation|null $amiAggregation
  * @property AwsEcrContainerAggregation|null $awsEcrContainerAggregation
- * @property CodeRepositoryAggregation|null $codeRepositoryAggregation
  * @property Ec2InstanceAggregation|null $ec2InstanceAggregation
  * @property FindingTypeAggregation|null $findingTypeAggregation
  * @property ImageLayerAggregation|null $imageLayerAggregation
- * @property LambdaFunctionAggregation|null $lambdaFunctionAggregation
- * @property LambdaLayerAggregation|null $lambdaLayerAggregation
  * @property PackageAggregation|null $packageAggregation
  * @property RepositoryAggregation|null $repositoryAggregation
  * @property TitleAggregation|null $titleAggregation
+ * @property LambdaLayerAggregation|null $lambdaLayerAggregation
+ * @property LambdaFunctionAggregation|null $lambdaFunctionAggregation
+ * @property CodeRepositoryAggregation|null $codeRepositoryAggregation
  */
 class AggregationRequest extends Shape
 {
@@ -25,15 +25,15 @@ class AggregationRequest extends Shape
      *     accountAggregation?: AccountAggregation|null,
      *     amiAggregation?: AmiAggregation|null,
      *     awsEcrContainerAggregation?: AwsEcrContainerAggregation|null,
-     *     codeRepositoryAggregation?: CodeRepositoryAggregation|null,
      *     ec2InstanceAggregation?: Ec2InstanceAggregation|null,
      *     findingTypeAggregation?: FindingTypeAggregation|null,
      *     imageLayerAggregation?: ImageLayerAggregation|null,
-     *     lambdaFunctionAggregation?: LambdaFunctionAggregation|null,
-     *     lambdaLayerAggregation?: LambdaLayerAggregation|null,
      *     packageAggregation?: PackageAggregation|null,
      *     repositoryAggregation?: RepositoryAggregation|null,
-     *     titleAggregation?: TitleAggregation|null
+     *     titleAggregation?: TitleAggregation|null,
+     *     lambdaLayerAggregation?: LambdaLayerAggregation|null,
+     *     lambdaFunctionAggregation?: LambdaFunctionAggregation|null,
+     *     codeRepositoryAggregation?: CodeRepositoryAggregation|null
      * } $args
      */
     public function __construct(array $args = [])

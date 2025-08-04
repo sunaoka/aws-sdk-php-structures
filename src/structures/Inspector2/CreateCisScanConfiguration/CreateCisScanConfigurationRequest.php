@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $scanName
- * @property Shapes\Schedule $schedule
  * @property 'LEVEL_1'|'LEVEL_2' $securityLevel
- * @property array<string, string>|null $tags
+ * @property Shapes\Schedule $schedule
  * @property Shapes\CreateCisTargets $targets
+ * @property array<string, string>|null $tags
  */
 class CreateCisScanConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     scanName: string,
-     *     schedule: Shapes\Schedule,
      *     securityLevel: 'LEVEL_1'|'LEVEL_2',
-     *     tags?: array<string, string>|null,
-     *     targets: Shapes\CreateCisTargets
+     *     schedule: Shapes\Schedule,
+     *     targets: Shapes\CreateCisTargets,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)
