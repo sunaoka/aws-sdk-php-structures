@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Branch
  * @property string|null $ConfigFile
  * @property string $OwnerId
- * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged' $ProviderType
+ * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|'AzureDevOps' $ProviderType
  * @property string $RepositoryLinkId
  * @property string $RepositoryName
  * @property string $ResourceName
@@ -25,7 +25,7 @@ class SyncConfiguration extends Shape
      *     Branch: string,
      *     ConfigFile?: string|null,
      *     OwnerId: string,
-     *     ProviderType: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged',
+     *     ProviderType: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged'|'AzureDevOps',
      *     RepositoryLinkId: string,
      *     RepositoryName: string,
      *     ResourceName: string,

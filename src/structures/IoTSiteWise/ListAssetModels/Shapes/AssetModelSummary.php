@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $externalId
  * @property string $arn
  * @property string $name
- * @property 'ASSET_MODEL'|'COMPONENT_MODEL'|null $assetModelType
+ * @property 'ASSET_MODEL'|'COMPONENT_MODEL'|'INTERFACE'|null $assetModelType
  * @property string $description
  * @property \Aws\Api\DateTimeResult $creationDate
  * @property \Aws\Api\DateTimeResult $lastUpdateDate
@@ -24,7 +24,7 @@ class AssetModelSummary extends Shape
      *     externalId?: string|null,
      *     arn: string,
      *     name: string,
-     *     assetModelType?: 'ASSET_MODEL'|'COMPONENT_MODEL'|null,
+     *     assetModelType?: 'ASSET_MODEL'|'COMPONENT_MODEL'|'INTERFACE'|null,
      *     description: string,
      *     creationDate: \Aws\Api\DateTimeResult,
      *     lastUpdateDate: \Aws\Api\DateTimeResult,
