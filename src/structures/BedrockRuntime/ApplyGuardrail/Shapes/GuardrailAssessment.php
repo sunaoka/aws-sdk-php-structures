@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GuardrailWordPolicyAssessment|null $wordPolicy
  * @property GuardrailSensitiveInformationPolicyAssessment|null $sensitiveInformationPolicy
  * @property GuardrailContextualGroundingPolicyAssessment|null $contextualGroundingPolicy
+ * @property GuardrailAutomatedReasoningPolicyAssessment|null $automatedReasoningPolicy
  * @property GuardrailInvocationMetrics|null $invocationMetrics
  */
 class GuardrailAssessment extends Shape
@@ -21,6 +22,7 @@ class GuardrailAssessment extends Shape
      *     wordPolicy?: GuardrailWordPolicyAssessment|null,
      *     sensitiveInformationPolicy?: GuardrailSensitiveInformationPolicyAssessment|null,
      *     contextualGroundingPolicy?: GuardrailContextualGroundingPolicyAssessment|null,
+     *     automatedReasoningPolicy?: GuardrailAutomatedReasoningPolicyAssessment|null,
      *     invocationMetrics?: GuardrailInvocationMetrics|null
      * } $args
      */

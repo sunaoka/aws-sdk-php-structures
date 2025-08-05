@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\KubernetesNetworkConfigRequest|null $kubernetesNetworkConfig
  * @property Shapes\StorageConfigRequest|null $storageConfig
  * @property Shapes\RemoteNetworkConfigRequest|null $remoteNetworkConfig
+ * @property bool|null $deletionProtection
  */
 class UpdateClusterConfigRequest extends Request
 {
@@ -31,7 +32,8 @@ class UpdateClusterConfigRequest extends Request
      *     computeConfig?: Shapes\ComputeConfigRequest|null,
      *     kubernetesNetworkConfig?: Shapes\KubernetesNetworkConfigRequest|null,
      *     storageConfig?: Shapes\StorageConfigRequest|null,
-     *     remoteNetworkConfig?: Shapes\RemoteNetworkConfigRequest|null
+     *     remoteNetworkConfig?: Shapes\RemoteNetworkConfigRequest|null,
+     *     deletionProtection?: bool|null
      * } $args
      */
     public function __construct(array $args)

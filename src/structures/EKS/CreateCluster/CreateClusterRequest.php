@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RemoteNetworkConfigRequest|null $remoteNetworkConfig
  * @property Shapes\ComputeConfigRequest|null $computeConfig
  * @property Shapes\StorageConfigRequest|null $storageConfig
+ * @property bool|null $deletionProtection
  */
 class CreateClusterRequest extends Request
 {
@@ -43,7 +44,8 @@ class CreateClusterRequest extends Request
      *     zonalShiftConfig?: Shapes\ZonalShiftConfigRequest|null,
      *     remoteNetworkConfig?: Shapes\RemoteNetworkConfigRequest|null,
      *     computeConfig?: Shapes\ComputeConfigRequest|null,
-     *     storageConfig?: Shapes\StorageConfigRequest|null
+     *     storageConfig?: Shapes\StorageConfigRequest|null,
+     *     deletionProtection?: bool|null
      * } $args
      */
     public function __construct(array $args)
