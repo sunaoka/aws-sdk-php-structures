@@ -77,6 +77,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
  * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
+ * @property string|null $ServerlessV2PlatformVersion
  * @property string|null $NetworkType
  * @property string|null $DBSystemId
  * @property MasterUserSecret|null $MasterUserSecret
@@ -165,6 +166,7 @@ class DBCluster extends Shape
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
      *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
+     *     ServerlessV2PlatformVersion?: string|null,
      *     NetworkType?: string|null,
      *     DBSystemId?: string|null,
      *     MasterUserSecret?: MasterUserSecret|null,

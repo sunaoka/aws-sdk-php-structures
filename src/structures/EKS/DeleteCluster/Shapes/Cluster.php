@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RemoteNetworkConfigResponse|null $remoteNetworkConfig
  * @property ComputeConfigResponse|null $computeConfig
  * @property StorageConfigResponse|null $storageConfig
+ * @property bool|null $deletionProtection
  */
 class Cluster extends Shape
 {
@@ -61,7 +62,8 @@ class Cluster extends Shape
      *     zonalShiftConfig?: ZonalShiftConfigResponse|null,
      *     remoteNetworkConfig?: RemoteNetworkConfigResponse|null,
      *     computeConfig?: ComputeConfigResponse|null,
-     *     storageConfig?: StorageConfigResponse|null
+     *     storageConfig?: StorageConfigResponse|null,
+     *     deletionProtection?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

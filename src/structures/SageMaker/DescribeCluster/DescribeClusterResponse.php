@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property Shapes\ClusterOrchestrator|null $Orchestrator
  * @property 'Automatic'|'None'|null $NodeRecovery
+ * @property 'Continuous'|null $NodeProvisioningMode
  */
 class DescribeClusterResponse extends Response
 {
