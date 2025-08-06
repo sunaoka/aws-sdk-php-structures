@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AutoAdjustData|null $AutoAdjustData
  * @property Expression|null $FilterExpression
  * @property list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null $Metrics
+ * @property string|null $BillingViewArn
+ * @property HealthStatus|null $HealthStatus
  */
 class Budget extends Shape
 {
@@ -35,7 +37,9 @@ class Budget extends Shape
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
      *     AutoAdjustData?: AutoAdjustData|null,
      *     FilterExpression?: Expression|null,
-     *     Metrics?: list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null
+     *     Metrics?: list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null,
+     *     BillingViewArn?: string|null,
+     *     HealthStatus?: HealthStatus|null
      * } $args
      */
     public function __construct(array $args)

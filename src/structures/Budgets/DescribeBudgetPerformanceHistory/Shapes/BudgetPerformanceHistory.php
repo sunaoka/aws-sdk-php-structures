@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, list<string>>|null $CostFilters
  * @property CostTypes|null $CostTypes
  * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|null $TimeUnit
+ * @property string|null $BillingViewArn
  * @property list<BudgetedAndActualAmounts>|null $BudgetedAndActualAmountsList
  */
 class BudgetPerformanceHistory extends Shape
@@ -21,6 +22,7 @@ class BudgetPerformanceHistory extends Shape
      *     CostFilters?: array<string, list<string>>|null,
      *     CostTypes?: CostTypes|null,
      *     TimeUnit?: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|null,
+     *     BillingViewArn?: string|null,
      *     BudgetedAndActualAmountsList?: list<BudgetedAndActualAmounts>|null
      * } $args
      */
