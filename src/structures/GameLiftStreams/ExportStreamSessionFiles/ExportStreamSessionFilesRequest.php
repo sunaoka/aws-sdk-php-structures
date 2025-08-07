@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Identifier
- * @property string $OutputUri
  * @property string $StreamSessionIdentifier
+ * @property string $OutputUri
  */
 class ExportStreamSessionFilesRequest extends Request
 {
     /**
      * @param array{
      *     Identifier: string,
-     *     OutputUri: string,
-     *     StreamSessionIdentifier: string
+     *     StreamSessionIdentifier: string,
+     *     OutputUri: string
      * } $args
      */
     public function __construct(array $args)

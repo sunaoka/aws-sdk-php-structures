@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property DataLakeAccessProperties|null $DataLakeAccessProperties
+ * @property IcebergOptimizationProperties|null $IcebergOptimizationProperties
  * @property array<string, string>|null $CustomProperties
  */
 class CatalogProperties extends Shape
@@ -13,6 +14,7 @@ class CatalogProperties extends Shape
     /**
      * @param array{
      *     DataLakeAccessProperties?: DataLakeAccessProperties|null,
+     *     IcebergOptimizationProperties?: IcebergOptimizationProperties|null,
      *     CustomProperties?: array<string, string>|null
      * } $args
      */
