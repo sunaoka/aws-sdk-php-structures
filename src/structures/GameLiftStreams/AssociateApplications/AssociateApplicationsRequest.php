@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GameLiftStreams\AssociateApplications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ApplicationIdentifiers
  * @property string $Identifier
+ * @property list<string> $ApplicationIdentifiers
  */
 class AssociateApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationIdentifiers: list<string>,
-     *     Identifier: string
+     *     Identifier: string,
+     *     ApplicationIdentifiers: list<string>
      * } $args
      */
     public function __construct(array $args)

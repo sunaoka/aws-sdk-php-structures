@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $rotateSecret
  * @property list<list<Shapes\WebhookFilter>>|null $filterGroups
  * @property 'BUILD'|'BUILD_BATCH'|'RUNNER_BUILDKITE_BUILD'|null $buildType
+ * @property Shapes\PullRequestBuildPolicy|null $pullRequestBuildPolicy
  */
 class UpdateWebhookRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateWebhookRequest extends Request
      *     branchFilter?: string|null,
      *     rotateSecret?: bool|null,
      *     filterGroups?: list<list<Shapes\WebhookFilter>>|null,
-     *     buildType?: 'BUILD'|'BUILD_BATCH'|'RUNNER_BUILDKITE_BUILD'|null
+     *     buildType?: 'BUILD'|'BUILD_BATCH'|'RUNNER_BUILDKITE_BUILD'|null,
+     *     pullRequestBuildPolicy?: Shapes\PullRequestBuildPolicy|null
      * } $args
      */
     public function __construct(array $args)

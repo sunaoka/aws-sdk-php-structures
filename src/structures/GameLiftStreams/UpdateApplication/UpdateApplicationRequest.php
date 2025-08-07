@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GameLiftStreams\UpdateApplication;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $ApplicationLogOutputUri
- * @property list<string>|null $ApplicationLogPaths
- * @property string|null $Description
  * @property string $Identifier
+ * @property string|null $Description
+ * @property list<string>|null $ApplicationLogPaths
+ * @property string|null $ApplicationLogOutputUri
  */
 class UpdateApplicationRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationLogOutputUri?: string|null,
-     *     ApplicationLogPaths?: list<string>|null,
+     *     Identifier: string,
      *     Description?: string|null,
-     *     Identifier: string
+     *     ApplicationLogPaths?: list<string>|null,
+     *     ApplicationLogOutputUri?: string|null
      * } $args
      */
     public function __construct(array $args)

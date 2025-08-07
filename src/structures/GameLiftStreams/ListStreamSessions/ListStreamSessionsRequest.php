@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GameLiftStreams\ListStreamSessions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'SUCCEEDED'|'FAILED'|'PENDING'|null $ExportFilesStatus
- * @property string $Identifier
- * @property int<1, 100>|null $MaxResults
- * @property string|null $NextToken
  * @property 'ACTIVATING'|'ACTIVE'|'CONNECTED'|'PENDING_CLIENT_RECONNECTION'|'RECONNECTING'|'TERMINATING'|'TERMINATED'|'ERROR'|null $Status
+ * @property 'SUCCEEDED'|'FAILED'|'PENDING'|null $ExportFilesStatus
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property string $Identifier
  */
 class ListStreamSessionsRequest extends Request
 {
     /**
      * @param array{
+     *     Status?: 'ACTIVATING'|'ACTIVE'|'CONNECTED'|'PENDING_CLIENT_RECONNECTION'|'RECONNECTING'|'TERMINATING'|'TERMINATED'|'ERROR'|null,
      *     ExportFilesStatus?: 'SUCCEEDED'|'FAILED'|'PENDING'|null,
-     *     Identifier: string,
-     *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null,
-     *     Status?: 'ACTIVATING'|'ACTIVE'|'CONNECTED'|'PENDING_CLIENT_RECONNECTION'|'RECONNECTING'|'TERMINATING'|'TERMINATED'|'ERROR'|null
+     *     MaxResults?: int<1, 100>|null,
+     *     Identifier: string
      * } $args
      */
     public function __construct(array $args)

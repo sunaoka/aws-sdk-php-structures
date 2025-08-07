@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'BUILD'|'BUILD_BATCH'|'RUNNER_BUILDKITE_BUILD'|null $buildType
  * @property bool|null $manualCreation
  * @property Shapes\ScopeConfiguration|null $scopeConfiguration
+ * @property Shapes\PullRequestBuildPolicy|null $pullRequestBuildPolicy
  */
 class CreateWebhookRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateWebhookRequest extends Request
      *     filterGroups?: list<list<Shapes\WebhookFilter>>|null,
      *     buildType?: 'BUILD'|'BUILD_BATCH'|'RUNNER_BUILDKITE_BUILD'|null,
      *     manualCreation?: bool|null,
-     *     scopeConfiguration?: Shapes\ScopeConfiguration|null
+     *     scopeConfiguration?: Shapes\ScopeConfiguration|null,
+     *     pullRequestBuildPolicy?: Shapes\PullRequestBuildPolicy|null
      * } $args
      */
     public function __construct(array $args)
