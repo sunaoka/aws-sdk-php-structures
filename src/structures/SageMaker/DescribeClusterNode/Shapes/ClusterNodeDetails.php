@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClusterInstancePlacement|null $Placement
  * @property string|null $CurrentImageId
  * @property string|null $DesiredImageId
+ * @property UltraServerInfo|null $UltraServerInfo
  */
 class ClusterNodeDetails extends Shape
 {
@@ -43,7 +44,8 @@ class ClusterNodeDetails extends Shape
      *     PrivateDnsHostname?: string|null,
      *     Placement?: ClusterInstancePlacement|null,
      *     CurrentImageId?: string|null,
-     *     DesiredImageId?: string|null
+     *     DesiredImageId?: string|null,
+     *     UltraServerInfo?: UltraServerInfo|null
      * } $args
      */
     public function __construct(array $args = [])
