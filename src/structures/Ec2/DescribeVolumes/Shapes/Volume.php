@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVolumes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $AvailabilityZoneId
  * @property string|null $OutpostArn
  * @property int|null $Iops
  * @property list<Tag>|null $Tags
@@ -29,6 +30,7 @@ class Volume extends Shape
 {
     /**
      * @param array{
+     *     AvailabilityZoneId?: string|null,
      *     OutpostArn?: string|null,
      *     Iops?: int|null,
      *     Tags?: list<Tag>|null,

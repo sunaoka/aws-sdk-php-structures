@@ -9,7 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $farmId
  * @property string $displayName
  * @property string|null $description
- * @property 'ACTIVE'|'CREATE_IN_PROGRESS'|'UPDATE_IN_PROGRESS'|'CREATE_FAILED'|'UPDATE_FAILED' $status
+ * @property 'ACTIVE'|'CREATE_IN_PROGRESS'|'UPDATE_IN_PROGRESS'|'CREATE_FAILED'|'UPDATE_FAILED'|'SUSPENDED' $status
+ * @property string|null $statusMessage
  * @property 'GROWING'|'STEADY'|'SHRINKING'|null $autoScalingStatus
  * @property int|null $targetWorkerCount
  * @property int $workerCount
