@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSpotPriceHistory;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $AvailabilityZoneId
  * @property bool|null $DryRun
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
@@ -19,6 +20,7 @@ class DescribeSpotPriceHistoryRequest extends Request
 {
     /**
      * @param array{
+     *     AvailabilityZoneId?: string|null,
      *     DryRun?: bool|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null,

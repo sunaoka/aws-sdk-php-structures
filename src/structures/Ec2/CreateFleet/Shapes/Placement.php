@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $AvailabilityZoneId
  * @property string|null $Affinity
  * @property string|null $GroupName
  * @property int|null $PartitionNumber
@@ -19,6 +20,7 @@ class Placement extends Shape
 {
     /**
      * @param array{
+     *     AvailabilityZoneId?: string|null,
      *     Affinity?: string|null,
      *     GroupName?: string|null,
      *     PartitionNumber?: int|null,

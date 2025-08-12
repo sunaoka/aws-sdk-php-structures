@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VisualTitleLabelOptions|null $Title
  * @property VisualSubtitleLabelOptions|null $Subtitle
  * @property PluginVisualConfiguration|null $ChartConfiguration
+ * @property list<VisualCustomAction>|null $Actions
  * @property string|null $VisualContentAltText
  */
 class PluginVisual extends Shape
@@ -21,6 +22,7 @@ class PluginVisual extends Shape
      *     Title?: VisualTitleLabelOptions|null,
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: PluginVisualConfiguration|null,
+     *     Actions?: list<VisualCustomAction>|null,
      *     VisualContentAltText?: string|null
      * } $args
      */

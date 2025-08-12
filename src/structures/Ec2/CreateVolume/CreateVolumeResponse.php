@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVolume;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string|null $AvailabilityZoneId
  * @property string|null $OutpostArn
  * @property int|null $Iops
  * @property list<Shapes\Tag>|null $Tags

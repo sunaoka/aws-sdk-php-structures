@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
  * @property string|null $Affinity
  * @property string|null $GroupName
  * @property string|null $HostId
@@ -20,6 +21,7 @@ class LaunchTemplatePlacement extends Shape
     /**
      * @param array{
      *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
      *     Affinity?: string|null,
      *     GroupName?: string|null,
      *     HostId?: string|null,
