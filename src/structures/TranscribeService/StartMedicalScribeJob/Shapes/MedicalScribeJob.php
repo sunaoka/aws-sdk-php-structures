@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MedicalScribeSettings|null $Settings
  * @property string|null $DataAccessRoleArn
  * @property list<MedicalScribeChannelDefinition>|null $ChannelDefinitions
+ * @property bool|null $MedicalScribeContextProvided
  * @property list<Tag>|null $Tags
  */
 class MedicalScribeJob extends Shape
@@ -35,6 +36,7 @@ class MedicalScribeJob extends Shape
      *     Settings?: MedicalScribeSettings|null,
      *     DataAccessRoleArn?: string|null,
      *     ChannelDefinitions?: list<MedicalScribeChannelDefinition>|null,
+     *     MedicalScribeContextProvided?: bool|null,
      *     Tags?: list<Tag>|null
      * } $args
      */

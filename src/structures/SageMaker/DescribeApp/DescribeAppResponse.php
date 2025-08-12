@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $UserProfileName
  * @property string|null $SpaceName
  * @property 'Deleted'|'Deleting'|'Failed'|'InService'|'Pending'|null $Status
+ * @property 'ENABLED'|'DISABLED'|null $EffectiveTrustedIdentityPropagationStatus
  * @property bool|null $RecoveryMode
  * @property \Aws\Api\DateTimeResult|null $LastHealthCheckTimestamp
  * @property \Aws\Api\DateTimeResult|null $LastUserActivityTimestamp
