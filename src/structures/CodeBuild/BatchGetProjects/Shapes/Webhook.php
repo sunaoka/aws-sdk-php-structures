@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ScopeConfiguration|null $scopeConfiguration
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|null $status
  * @property string|null $statusMessage
+ * @property PullRequestBuildPolicy|null $pullRequestBuildPolicy
  */
 class Webhook extends Shape
 {
@@ -31,7 +32,8 @@ class Webhook extends Shape
      *     lastModifiedSecret?: \Aws\Api\DateTimeResult|null,
      *     scopeConfiguration?: ScopeConfiguration|null,
      *     status?: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|null,
-     *     statusMessage?: string|null
+     *     statusMessage?: string|null,
+     *     pullRequestBuildPolicy?: PullRequestBuildPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

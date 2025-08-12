@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RStudioServerProDomainSettingsForUpdate|null $RStudioServerProDomainSettingsForUpdate
  * @property 'USER_PROFILE_NAME'|'DISABLED'|null $ExecutionRoleIdentityConfig
  * @property list<string>|null $SecurityGroupIds
+ * @property TrustedIdentityPropagationSettings|null $TrustedIdentityPropagationSettings
  * @property DockerSettings|null $DockerSettings
  * @property AmazonQSettings|null $AmazonQSettings
  * @property UnifiedStudioSettings|null $UnifiedStudioSettings
@@ -19,6 +20,7 @@ class DomainSettingsForUpdate extends Shape
      *     RStudioServerProDomainSettingsForUpdate?: RStudioServerProDomainSettingsForUpdate|null,
      *     ExecutionRoleIdentityConfig?: 'USER_PROFILE_NAME'|'DISABLED'|null,
      *     SecurityGroupIds?: list<string>|null,
+     *     TrustedIdentityPropagationSettings?: TrustedIdentityPropagationSettings|null,
      *     DockerSettings?: DockerSettings|null,
      *     AmazonQSettings?: AmazonQSettings|null,
      *     UnifiedStudioSettings?: UnifiedStudioSettings|null
