@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Arn
+ * @property string|null $Id
+ * @property string|null $Title
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $CreatedBy
- * @property string|null $Id
  * @property int|null $MemberCount
- * @property string|null $Title
  */
 class EngagementSummary extends Shape
 {
     /**
      * @param array{
      *     Arn?: string|null,
+     *     Id?: string|null,
+     *     Title?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     CreatedBy?: string|null,
-     *     Id?: string|null,
-     *     MemberCount?: int|null,
-     *     Title?: string|null
+     *     MemberCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

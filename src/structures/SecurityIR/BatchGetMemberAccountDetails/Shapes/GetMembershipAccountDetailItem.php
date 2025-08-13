@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $accountId
- * @property 'Associated'|'Disassociated'|null $relationshipStatus
- * @property 'Organization'|null $relationshipType
+ * @property 'Associated'|'Disassociated'|'Unassociated'|null $relationshipStatus
+ * @property 'Organization'|'Unrelated'|null $relationshipType
  */
 class GetMembershipAccountDetailItem extends Shape
 {
     /**
      * @param array{
      *     accountId?: string|null,
-     *     relationshipStatus?: 'Associated'|'Disassociated'|null,
-     *     relationshipType?: 'Organization'|null
+     *     relationshipStatus?: 'Associated'|'Disassociated'|'Unassociated'|null,
+     *     relationshipType?: 'Organization'|'Unrelated'|null
      * } $args
      */
     public function __construct(array $args = [])

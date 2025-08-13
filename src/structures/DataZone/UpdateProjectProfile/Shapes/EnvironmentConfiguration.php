@@ -5,8 +5,9 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateProjectProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsAccount $awsAccount
- * @property Region $awsRegion
+ * @property list<string>|null $accountPools
+ * @property AwsAccount|null $awsAccount
+ * @property Region|null $awsRegion
  * @property EnvironmentConfigurationParametersDetails|null $configurationParameters
  * @property 'ON_CREATE'|'ON_DEMAND'|null $deploymentMode
  * @property int<0, 16>|null $deploymentOrder
@@ -19,8 +20,9 @@ class EnvironmentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     awsAccount: AwsAccount,
-     *     awsRegion: Region,
+     *     accountPools?: list<string>|null,
+     *     awsAccount?: AwsAccount|null,
+     *     awsRegion?: Region|null,
      *     configurationParameters?: EnvironmentConfigurationParametersDetails|null,
      *     deploymentMode?: 'ON_CREATE'|'ON_DEMAND'|null,
      *     deploymentOrder?: int<0, 16>|null,

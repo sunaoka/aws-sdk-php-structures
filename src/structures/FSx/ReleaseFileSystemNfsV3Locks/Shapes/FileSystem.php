@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OntapFileSystemConfiguration|null $OntapConfiguration
  * @property string|null $FileSystemTypeVersion
  * @property OpenZFSFileSystemConfiguration|null $OpenZFSConfiguration
+ * @property 'IPV4'|'DUAL'|null $NetworkType
  */
 class FileSystem extends Shape
 {
@@ -51,7 +52,8 @@ class FileSystem extends Shape
      *     AdministrativeActions?: list<AdministrativeAction>|null,
      *     OntapConfiguration?: OntapFileSystemConfiguration|null,
      *     FileSystemTypeVersion?: string|null,
-     *     OpenZFSConfiguration?: OpenZFSFileSystemConfiguration|null
+     *     OpenZFSConfiguration?: OpenZFSFileSystemConfiguration|null,
+     *     NetworkType?: 'IPV4'|'DUAL'|null
      * } $args
      */
     public function __construct(array $args = [])

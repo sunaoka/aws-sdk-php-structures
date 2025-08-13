@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetEngagementInvitation\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $BusinessTitle
  * @property string $Email
  * @property string|null $FirstName
  * @property string|null $LastName
+ * @property string|null $BusinessTitle
  * @property string|null $Phone
  */
 class SenderContact extends Shape
 {
     /**
      * @param array{
-     *     BusinessTitle?: string|null,
      *     Email: string,
      *     FirstName?: string|null,
      *     LastName?: string|null,
+     *     BusinessTitle?: string|null,
      *     Phone?: string|null
      * } $args
      */

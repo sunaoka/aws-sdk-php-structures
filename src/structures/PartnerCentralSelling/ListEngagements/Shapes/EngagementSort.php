@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListEngagements\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CreatedDate' $SortBy
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
+ * @property 'CreatedDate' $SortBy
  */
 class EngagementSort extends Shape
 {
     /**
      * @param array{
-     *     SortBy: 'CreatedDate',
-     *     SortOrder: 'ASCENDING'|'DESCENDING'
+     *     SortOrder: 'ASCENDING'|'DESCENDING',
+     *     SortBy: 'CreatedDate'
      * } $args
      */
     public function __construct(array $args)

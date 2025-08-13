@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $FileSystemTypeVersion
  * @property Shapes\CreateFileSystemOpenZFSConfiguration|null $OpenZFSConfiguration
  * @property int<0, 2147483647>|null $StorageCapacity
+ * @property 'IPV4'|'DUAL'|null $NetworkType
  */
 class CreateFileSystemFromBackupRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateFileSystemFromBackupRequest extends Request
      *     KmsKeyId?: string|null,
      *     FileSystemTypeVersion?: string|null,
      *     OpenZFSConfiguration?: Shapes\CreateFileSystemOpenZFSConfiguration|null,
-     *     StorageCapacity?: int<0, 2147483647>|null
+     *     StorageCapacity?: int<0, 2147483647>|null,
+     *     NetworkType?: 'IPV4'|'DUAL'|null
      * } $args
      */
     public function __construct(array $args)

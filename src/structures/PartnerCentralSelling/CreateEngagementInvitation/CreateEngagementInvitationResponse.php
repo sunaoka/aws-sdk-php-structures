@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\CreateEngagementInvitatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
  * @property string $Id
+ * @property string $Arn
  */
 class CreateEngagementInvitationResponse extends Response
 {
