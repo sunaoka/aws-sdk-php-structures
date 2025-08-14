@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'PRIV'|'TDRL'|null $TimedMetadataId3Frame
  * @property int<0, 10000>|null $TimedMetadataId3Period
  * @property 'DISABLED'|'ENABLED'|null $TimedMetadataPassthrough
+ * @property list<AdditionalDestinations>|null $AdditionalDestinations
  */
 class CmafIngestGroupSettings extends Shape
 {
@@ -41,7 +42,8 @@ class CmafIngestGroupSettings extends Shape
      *     CaptionLanguageMappings?: list<CmafIngestCaptionLanguageMapping>|null,
      *     TimedMetadataId3Frame?: 'NONE'|'PRIV'|'TDRL'|null,
      *     TimedMetadataId3Period?: int<0, 10000>|null,
-     *     TimedMetadataPassthrough?: 'DISABLED'|'ENABLED'|null
+     *     TimedMetadataPassthrough?: 'DISABLED'|'ENABLED'|null,
+     *     AdditionalDestinations?: list<AdditionalDestinations>|null
      * } $args
      */
     public function __construct(array $args)
