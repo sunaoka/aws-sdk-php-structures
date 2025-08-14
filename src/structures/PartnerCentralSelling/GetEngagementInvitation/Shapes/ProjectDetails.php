@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $BusinessProblem
- * @property list<ExpectedCustomerSpend> $ExpectedCustomerSpend
- * @property string $TargetCompletionDate
  * @property string $Title
+ * @property string $TargetCompletionDate
+ * @property list<ExpectedCustomerSpend> $ExpectedCustomerSpend
  */
 class ProjectDetails extends Shape
 {
     /**
      * @param array{
      *     BusinessProblem: string,
-     *     ExpectedCustomerSpend: list<ExpectedCustomerSpend>,
+     *     Title: string,
      *     TargetCompletionDate: string,
-     *     Title: string
+     *     ExpectedCustomerSpend: list<ExpectedCustomerSpend>
      * } $args
      */
     public function __construct(array $args)

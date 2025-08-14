@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Message
- * @property Payload $Payload
  * @property Receiver $Receiver
+ * @property Payload $Payload
  */
 class Invitation extends Shape
 {
     /**
      * @param array{
      *     Message: string,
-     *     Payload: Payload,
-     *     Receiver: Receiver
+     *     Receiver: Receiver,
+     *     Payload: Payload
      * } $args
      */
     public function __construct(array $args)

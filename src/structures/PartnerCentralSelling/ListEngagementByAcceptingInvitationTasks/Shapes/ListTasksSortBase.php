@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListEngagementByAccepting
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'StartTime' $SortBy
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
+ * @property 'StartTime' $SortBy
  */
 class ListTasksSortBase extends Shape
 {
     /**
      * @param array{
-     *     SortBy: 'StartTime',
-     *     SortOrder: 'ASCENDING'|'DESCENDING'
+     *     SortOrder: 'ASCENDING'|'DESCENDING',
+     *     SortBy: 'StartTime'
      * } $args
      */
     public function __construct(array $args)

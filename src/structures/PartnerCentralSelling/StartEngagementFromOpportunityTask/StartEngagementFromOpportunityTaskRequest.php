@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\StartEngagementFromOpport
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\AwsSubmission $AwsSubmission
  * @property string $Catalog
  * @property string $ClientToken
  * @property string $Identifier
+ * @property Shapes\AwsSubmission $AwsSubmission
  * @property list<Shapes\Tag>|null $Tags
  */
 class StartEngagementFromOpportunityTaskRequest extends Request
 {
     /**
      * @param array{
-     *     AwsSubmission: Shapes\AwsSubmission,
      *     Catalog: string,
      *     ClientToken: string,
      *     Identifier: string,
+     *     AwsSubmission: Shapes\AwsSubmission,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

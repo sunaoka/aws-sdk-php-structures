@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property 'LT'|'LTE'|'EQUAL'|'GT'|'GTE'|'BETWEEN'|'CONTAINS' $operator
  * @property list<string> $values
+ * @property 'LT'|'LTE'|'EQUAL'|'GT'|'GTE'|'BETWEEN'|'CONTAINS' $operator
  */
 class SearchJobsFilter extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     operator: 'LT'|'LTE'|'EQUAL'|'GT'|'GTE'|'BETWEEN'|'CONTAINS',
-     *     values: list<string>
+     *     values: list<string>,
+     *     operator: 'LT'|'LTE'|'EQUAL'|'GT'|'GTE'|'BETWEEN'|'CONTAINS'
      * } $args
      */
     public function __construct(array $args)

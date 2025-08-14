@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\IncidentResponder> $incidentResponseTeam
  * @property list<Shapes\OptInFeature>|null $optInFeatures
  * @property array<string, string>|null $tags
+ * @property bool|null $coverEntireOrganization
  */
 class CreateMembershipRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateMembershipRequest extends Request
      *     membershipName: string,
      *     incidentResponseTeam: list<Shapes\IncidentResponder>,
      *     optInFeatures?: list<Shapes\OptInFeature>|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     coverEntireOrganization?: bool|null
      * } $args
      */
     public function __construct(array $args)

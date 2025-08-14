@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListEngagementMembers\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $AccountId
  * @property string|null $CompanyName
  * @property string|null $WebsiteUrl
+ * @property string|null $AccountId
  */
 class EngagementMember extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string|null,
      *     CompanyName?: string|null,
-     *     WebsiteUrl?: string|null
+     *     WebsiteUrl?: string|null,
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

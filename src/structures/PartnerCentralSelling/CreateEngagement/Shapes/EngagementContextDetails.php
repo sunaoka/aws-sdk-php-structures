@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\CreateEngagement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EngagementContextPayload|null $Payload
  * @property 'CustomerProject' $Type
+ * @property EngagementContextPayload|null $Payload
  */
 class EngagementContextDetails extends Shape
 {
     /**
      * @param array{
-     *     Payload?: EngagementContextPayload|null,
-     *     Type: 'CustomerProject'
+     *     Type: 'CustomerProject',
+     *     Payload?: EngagementContextPayload|null
      * } $args
      */
     public function __construct(array $args)

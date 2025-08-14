@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListResourceSnapshotJobs\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $Id
  * @property string|null $Arn
  * @property string|null $EngagementId
- * @property string|null $Id
  * @property 'Running'|'Stopped'|null $Status
  */
 class ResourceSnapshotJobSummary extends Shape
 {
     /**
      * @param array{
+     *     Id?: string|null,
      *     Arn?: string|null,
      *     EngagementId?: string|null,
-     *     Id?: string|null,
      *     Status?: 'Running'|'Stopped'|null
      * } $args
      */

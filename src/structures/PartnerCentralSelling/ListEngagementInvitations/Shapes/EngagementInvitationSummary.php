@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Arn
- * @property string $Catalog
+ * @property 'OpportunityInvitation'|null $PayloadType
+ * @property string $Id
  * @property string|null $EngagementId
  * @property string|null $EngagementTitle
- * @property \Aws\Api\DateTimeResult|null $ExpirationDate
- * @property string $Id
+ * @property 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $InvitationDate
- * @property 'SENDER'|'RECEIVER'|null $ParticipantType
- * @property 'OpportunityInvitation'|null $PayloadType
- * @property Receiver|null $Receiver
+ * @property \Aws\Api\DateTimeResult|null $ExpirationDate
  * @property string|null $SenderAwsAccountId
  * @property string|null $SenderCompanyName
- * @property 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'|null $Status
+ * @property Receiver|null $Receiver
+ * @property string $Catalog
+ * @property 'SENDER'|'RECEIVER'|null $ParticipantType
  */
 class EngagementInvitationSummary extends Shape
 {
     /**
      * @param array{
      *     Arn?: string|null,
-     *     Catalog: string,
+     *     PayloadType?: 'OpportunityInvitation'|null,
+     *     Id: string,
      *     EngagementId?: string|null,
      *     EngagementTitle?: string|null,
-     *     ExpirationDate?: \Aws\Api\DateTimeResult|null,
-     *     Id: string,
+     *     Status?: 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'|null,
      *     InvitationDate?: \Aws\Api\DateTimeResult|null,
-     *     ParticipantType?: 'SENDER'|'RECEIVER'|null,
-     *     PayloadType?: 'OpportunityInvitation'|null,
-     *     Receiver?: Receiver|null,
+     *     ExpirationDate?: \Aws\Api\DateTimeResult|null,
      *     SenderAwsAccountId?: string|null,
      *     SenderCompanyName?: string|null,
-     *     Status?: 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'|null
+     *     Receiver?: Receiver|null,
+     *     Catalog: string,
+     *     ParticipantType?: 'SENDER'|'RECEIVER'|null
      * } $args
      */
     public function __construct(array $args)
