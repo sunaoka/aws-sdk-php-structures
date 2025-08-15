@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $virtualInterfaceName
  * @property int|null $vlan
  * @property int|null $asn
+ * @property int|null $asnLong
  * @property int|null $amazonSideAsn
  * @property string|null $authKey
  * @property string|null $amazonAddress

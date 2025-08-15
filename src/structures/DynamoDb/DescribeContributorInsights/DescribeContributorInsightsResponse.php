@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'FAILED'|null $ContributorInsightsStatus
  * @property \Aws\Api\DateTimeResult|null $LastUpdateDateTime
  * @property Shapes\FailureException|null $FailureException
+ * @property 'ACCESSED_AND_THROTTLED_KEYS'|'THROTTLED_KEYS'|null $ContributorInsightsMode
  */
 class DescribeContributorInsightsResponse extends Response
 {

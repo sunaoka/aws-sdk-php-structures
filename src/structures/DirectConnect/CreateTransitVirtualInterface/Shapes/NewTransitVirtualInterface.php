@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $virtualInterfaceName
  * @property int|null $vlan
  * @property int|null $asn
+ * @property int|null $asnLong
  * @property int|null $mtu
  * @property string|null $authKey
  * @property string|null $amazonAddress
@@ -24,6 +25,7 @@ class NewTransitVirtualInterface extends Shape
      *     virtualInterfaceName?: string|null,
      *     vlan?: int|null,
      *     asn?: int|null,
+     *     asnLong?: int|null,
      *     mtu?: int|null,
      *     authKey?: string|null,
      *     amazonAddress?: string|null,

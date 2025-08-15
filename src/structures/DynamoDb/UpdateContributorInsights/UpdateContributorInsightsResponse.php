@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $TableName
  * @property string|null $IndexName
  * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'FAILED'|null $ContributorInsightsStatus
+ * @property 'ACCESSED_AND_THROTTLED_KEYS'|'THROTTLED_KEYS'|null $ContributorInsightsMode
  */
 class UpdateContributorInsightsResponse extends Response
 {

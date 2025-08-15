@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OwnerId
  * @property string|null $InstanceConnectEndpointId
  * @property string|null $InstanceConnectEndpointArn
- * @property 'create-in-progress'|'create-complete'|'create-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|null $State
+ * @property 'create-in-progress'|'create-complete'|'create-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|'update-in-progress'|'update-complete'|'update-failed'|null $State
  * @property string|null $StateMessage
  * @property string|null $DnsName
  * @property string|null $FipsDnsName
@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $SecurityGroupIds
  * @property list<Tag>|null $Tags
  * @property 'ipv4'|'dualstack'|'ipv6'|null $IpAddressType
+ * @property InstanceConnectEndpointPublicDnsNames|null $PublicDnsNames
  */
 class Ec2InstanceConnectEndpoint extends Shape
 {
@@ -29,7 +30,7 @@ class Ec2InstanceConnectEndpoint extends Shape
      *     OwnerId?: string|null,
      *     InstanceConnectEndpointId?: string|null,
      *     InstanceConnectEndpointArn?: string|null,
-     *     State?: 'create-in-progress'|'create-complete'|'create-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|null,
+     *     State?: 'create-in-progress'|'create-complete'|'create-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|'update-in-progress'|'update-complete'|'update-failed'|null,
      *     StateMessage?: string|null,
      *     DnsName?: string|null,
      *     FipsDnsName?: string|null,
@@ -41,7 +42,8 @@ class Ec2InstanceConnectEndpoint extends Shape
      *     PreserveClientIp?: bool|null,
      *     SecurityGroupIds?: list<string>|null,
      *     Tags?: list<Tag>|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6'|null
+     *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6'|null,
+     *     PublicDnsNames?: InstanceConnectEndpointPublicDnsNames|null
      * } $args
      */
     public function __construct(array $args = [])

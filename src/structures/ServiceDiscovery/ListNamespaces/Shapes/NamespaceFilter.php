@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\ListNamespaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TYPE'|'NAME'|'HTTP_NAME' $Name
+ * @property 'TYPE'|'NAME'|'HTTP_NAME'|'RESOURCE_OWNER' $Name
  * @property list<string> $Values
  * @property 'EQ'|'IN'|'BETWEEN'|'BEGINS_WITH'|null $Condition
  */
@@ -13,7 +13,7 @@ class NamespaceFilter extends Shape
 {
     /**
      * @param array{
-     *     Name: 'TYPE'|'NAME'|'HTTP_NAME',
+     *     Name: 'TYPE'|'NAME'|'HTTP_NAME'|'RESOURCE_OWNER',
      *     Values: list<string>,
      *     Condition?: 'EQ'|'IN'|'BETWEEN'|'BEGINS_WITH'|null
      * } $args

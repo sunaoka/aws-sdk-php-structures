@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $virtualInterfaceName
  * @property int|null $vlan
  * @property int|null $asn
+ * @property int|null $asnLong
  * @property int|null $amazonSideAsn
  * @property string|null $authKey
  * @property string|null $amazonAddress
@@ -44,6 +45,7 @@ class VirtualInterface extends Shape
      *     virtualInterfaceName?: string|null,
      *     vlan?: int|null,
      *     asn?: int|null,
+     *     asnLong?: int|null,
      *     amazonSideAsn?: int|null,
      *     authKey?: string|null,
      *     amazonAddress?: string|null,
