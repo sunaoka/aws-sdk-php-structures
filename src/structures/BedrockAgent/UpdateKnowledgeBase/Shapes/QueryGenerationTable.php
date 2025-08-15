@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<QueryGenerationColumn>|null $columns
+ * @property string $name
  * @property string|null $description
  * @property 'INCLUDE'|'EXCLUDE'|null $inclusion
- * @property string $name
+ * @property list<QueryGenerationColumn>|null $columns
  */
 class QueryGenerationTable extends Shape
 {
     /**
      * @param array{
-     *     columns?: list<QueryGenerationColumn>|null,
+     *     name: string,
      *     description?: string|null,
      *     inclusion?: 'INCLUDE'|'EXCLUDE'|null,
-     *     name: string
+     *     columns?: list<QueryGenerationColumn>|null
      * } $args
      */
     public function __construct(array $args)

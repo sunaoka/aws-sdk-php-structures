@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $clientToken
- * @property string|null $description
- * @property Shapes\KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property string $name
+ * @property string|null $description
  * @property string $roleArn
+ * @property Shapes\KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property Shapes\StorageConfiguration|null $storageConfiguration
  * @property array<string, string>|null $tags
  */
@@ -18,10 +18,10 @@ class CreateKnowledgeBaseRequest extends Request
     /**
      * @param array{
      *     clientToken?: string|null,
-     *     description?: string|null,
-     *     knowledgeBaseConfiguration: Shapes\KnowledgeBaseConfiguration,
      *     name: string,
+     *     description?: string|null,
      *     roleArn: string,
+     *     knowledgeBaseConfiguration: Shapes\KnowledgeBaseConfiguration,
      *     storageConfiguration?: Shapes\StorageConfiguration|null,
      *     tags?: array<string, string>|null
      * } $args

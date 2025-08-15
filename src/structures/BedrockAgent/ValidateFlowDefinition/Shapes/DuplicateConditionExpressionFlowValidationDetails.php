@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ValidateFlowDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $expression
  * @property string $node
+ * @property string $expression
  */
 class DuplicateConditionExpressionFlowValidationDetails extends Shape
 {
     /**
      * @param array{
-     *     expression: string,
-     *     node: string
+     *     node: string,
+     *     expression: string
      * } $args
      */
     public function __construct(array $args)

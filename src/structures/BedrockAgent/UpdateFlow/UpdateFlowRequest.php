@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateFlow;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $customerEncryptionKeyArn
- * @property Shapes\FlowDefinition|null $definition
+ * @property string $name
  * @property string|null $description
  * @property string $executionRoleArn
+ * @property string|null $customerEncryptionKeyArn
+ * @property Shapes\FlowDefinition|null $definition
  * @property string $flowIdentifier
- * @property string $name
  */
 class UpdateFlowRequest extends Request
 {
     /**
      * @param array{
-     *     customerEncryptionKeyArn?: string|null,
-     *     definition?: Shapes\FlowDefinition|null,
+     *     name: string,
      *     description?: string|null,
      *     executionRoleArn: string,
-     *     flowIdentifier: string,
-     *     name: string
+     *     customerEncryptionKeyArn?: string|null,
+     *     definition?: Shapes\FlowDefinition|null,
+     *     flowIdentifier: string
      * } $args
      */
     public function __construct(array $args)

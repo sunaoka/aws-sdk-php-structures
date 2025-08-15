@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $hostUrl
  * @property 'OAUTH2_CLIENT_CREDENTIALS' $authType
  * @property string $credentialsSecretArn
- * @property string $hostUrl
  */
 class SalesforceSourceConfiguration extends Shape
 {
     /**
      * @param array{
+     *     hostUrl: string,
      *     authType: 'OAUTH2_CLIENT_CREDENTIALS',
-     *     credentialsSecretArn: string,
-     *     hostUrl: string
+     *     credentialsSecretArn: string
      * } $args
      */
     public function __construct(array $args)

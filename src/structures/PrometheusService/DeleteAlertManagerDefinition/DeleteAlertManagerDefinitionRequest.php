@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DeleteAlertManagerDefinition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $workspaceId
+ * @property string|null $clientToken
  */
 class DeleteAlertManagerDefinitionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     workspaceId: string
+     *     workspaceId: string,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

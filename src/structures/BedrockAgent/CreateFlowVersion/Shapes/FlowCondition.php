@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateFlowVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $expression
  * @property string $name
+ * @property string|null $expression
  */
 class FlowCondition extends Shape
 {
     /**
      * @param array{
-     *     expression?: string|null,
-     *     name: string
+     *     name: string,
+     *     expression?: string|null
      * } $args
      */
     public function __construct(array $args)

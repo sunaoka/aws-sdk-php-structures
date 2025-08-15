@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BedrockDataAutomationConfiguration|null $bedrockDataAutomationConfiguration
- * @property BedrockFoundationModelConfiguration|null $bedrockFoundationModelConfiguration
  * @property 'BEDROCK_FOUNDATION_MODEL'|'BEDROCK_DATA_AUTOMATION' $parsingStrategy
+ * @property BedrockFoundationModelConfiguration|null $bedrockFoundationModelConfiguration
+ * @property BedrockDataAutomationConfiguration|null $bedrockDataAutomationConfiguration
  */
 class ParsingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     bedrockDataAutomationConfiguration?: BedrockDataAutomationConfiguration|null,
+     *     parsingStrategy: 'BEDROCK_FOUNDATION_MODEL'|'BEDROCK_DATA_AUTOMATION',
      *     bedrockFoundationModelConfiguration?: BedrockFoundationModelConfiguration|null,
-     *     parsingStrategy: 'BEDROCK_FOUNDATION_MODEL'|'BEDROCK_DATA_AUTOMATION'
+     *     bedrockDataAutomationConfiguration?: BedrockDataAutomationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

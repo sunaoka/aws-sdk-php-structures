@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetDataSource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $dataSourceId
  * @property string $knowledgeBaseId
+ * @property string $dataSourceId
  */
 class GetDataSourceRequest extends Request
 {
     /**
      * @param array{
-     *     dataSourceId: string,
-     *     knowledgeBaseId: string
+     *     knowledgeBaseId: string,
+     *     dataSourceId: string
      * } $args
      */
     public function __construct(array $args)

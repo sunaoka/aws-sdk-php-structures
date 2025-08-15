@@ -5,57 +5,57 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $agentArn
- * @property 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null $agentCollaboration
  * @property string $agentId
  * @property string $agentName
- * @property string $agentResourceRoleArn
- * @property 'CREATING'|'PREPARING'|'PREPARED'|'NOT_PREPARED'|'DELETING'|'FAILED'|'VERSIONING'|'UPDATING' $agentStatus
+ * @property string $agentArn
  * @property string $agentVersion
  * @property string|null $clientToken
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property CustomOrchestration|null $customOrchestration
- * @property string|null $customerEncryptionKeyArn
- * @property string|null $description
- * @property list<string>|null $failureReasons
- * @property string|null $foundationModel
- * @property GuardrailConfiguration|null $guardrailConfiguration
- * @property int<60, 5400> $idleSessionTTLInSeconds
  * @property string|null $instruction
- * @property MemoryConfiguration|null $memoryConfiguration
+ * @property 'CREATING'|'PREPARING'|'PREPARED'|'NOT_PREPARED'|'DELETING'|'FAILED'|'VERSIONING'|'UPDATING' $agentStatus
+ * @property string|null $foundationModel
+ * @property string|null $description
  * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null $orchestrationType
- * @property \Aws\Api\DateTimeResult|null $preparedAt
- * @property PromptOverrideConfiguration|null $promptOverrideConfiguration
- * @property list<string>|null $recommendedActions
+ * @property CustomOrchestration|null $customOrchestration
+ * @property int<60, 5400> $idleSessionTTLInSeconds
+ * @property string $agentResourceRoleArn
+ * @property string|null $customerEncryptionKeyArn
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property \Aws\Api\DateTimeResult|null $preparedAt
+ * @property list<string>|null $failureReasons
+ * @property list<string>|null $recommendedActions
+ * @property PromptOverrideConfiguration|null $promptOverrideConfiguration
+ * @property GuardrailConfiguration|null $guardrailConfiguration
+ * @property MemoryConfiguration|null $memoryConfiguration
+ * @property 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null $agentCollaboration
  */
 class Agent extends Shape
 {
     /**
      * @param array{
-     *     agentArn: string,
-     *     agentCollaboration?: 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null,
      *     agentId: string,
      *     agentName: string,
-     *     agentResourceRoleArn: string,
-     *     agentStatus: 'CREATING'|'PREPARING'|'PREPARED'|'NOT_PREPARED'|'DELETING'|'FAILED'|'VERSIONING'|'UPDATING',
+     *     agentArn: string,
      *     agentVersion: string,
      *     clientToken?: string|null,
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     customOrchestration?: CustomOrchestration|null,
-     *     customerEncryptionKeyArn?: string|null,
-     *     description?: string|null,
-     *     failureReasons?: list<string>|null,
-     *     foundationModel?: string|null,
-     *     guardrailConfiguration?: GuardrailConfiguration|null,
-     *     idleSessionTTLInSeconds: int<60, 5400>,
      *     instruction?: string|null,
-     *     memoryConfiguration?: MemoryConfiguration|null,
+     *     agentStatus: 'CREATING'|'PREPARING'|'PREPARED'|'NOT_PREPARED'|'DELETING'|'FAILED'|'VERSIONING'|'UPDATING',
+     *     foundationModel?: string|null,
+     *     description?: string|null,
      *     orchestrationType?: 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null,
+     *     customOrchestration?: CustomOrchestration|null,
+     *     idleSessionTTLInSeconds: int<60, 5400>,
+     *     agentResourceRoleArn: string,
+     *     customerEncryptionKeyArn?: string|null,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult,
      *     preparedAt?: \Aws\Api\DateTimeResult|null,
-     *     promptOverrideConfiguration?: PromptOverrideConfiguration|null,
+     *     failureReasons?: list<string>|null,
      *     recommendedActions?: list<string>|null,
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     promptOverrideConfiguration?: PromptOverrideConfiguration|null,
+     *     guardrailConfiguration?: GuardrailConfiguration|null,
+     *     memoryConfiguration?: MemoryConfiguration|null,
+     *     agentCollaboration?: 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

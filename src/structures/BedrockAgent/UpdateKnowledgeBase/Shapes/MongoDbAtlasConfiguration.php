@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $collectionName
- * @property string $credentialsSecretArn
- * @property string $databaseName
  * @property string $endpoint
- * @property string|null $endpointServiceName
- * @property MongoDbAtlasFieldMapping $fieldMapping
- * @property string|null $textIndexName
+ * @property string $databaseName
+ * @property string $collectionName
  * @property string $vectorIndexName
+ * @property string $credentialsSecretArn
+ * @property MongoDbAtlasFieldMapping $fieldMapping
+ * @property string|null $endpointServiceName
+ * @property string|null $textIndexName
  */
 class MongoDbAtlasConfiguration extends Shape
 {
     /**
      * @param array{
-     *     collectionName: string,
-     *     credentialsSecretArn: string,
-     *     databaseName: string,
      *     endpoint: string,
-     *     endpointServiceName?: string|null,
+     *     databaseName: string,
+     *     collectionName: string,
+     *     vectorIndexName: string,
+     *     credentialsSecretArn: string,
      *     fieldMapping: MongoDbAtlasFieldMapping,
-     *     textIndexName?: string|null,
-     *     vectorIndexName: string
+     *     endpointServiceName?: string|null,
+     *     textIndexName?: string|null
      * } $args
      */
     public function __construct(array $args)

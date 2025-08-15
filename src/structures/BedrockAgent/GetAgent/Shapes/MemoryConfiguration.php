@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<'SESSION_SUMMARY'> $enabledMemoryTypes
- * @property SessionSummaryConfiguration|null $sessionSummaryConfiguration
  * @property int<0, 365>|null $storageDays
+ * @property SessionSummaryConfiguration|null $sessionSummaryConfiguration
  */
 class MemoryConfiguration extends Shape
 {
     /**
      * @param array{
      *     enabledMemoryTypes: list<'SESSION_SUMMARY'>,
-     *     sessionSummaryConfiguration?: SessionSummaryConfiguration|null,
-     *     storageDays?: int<0, 365>|null
+     *     storageDays?: int<0, 365>|null,
+     *     sessionSummaryConfiguration?: SessionSummaryConfiguration|null
      * } $args
      */
     public function __construct(array $args)

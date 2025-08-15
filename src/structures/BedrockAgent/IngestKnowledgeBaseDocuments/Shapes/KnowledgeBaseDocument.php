@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\IngestKnowledgeBaseDocuments\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DocumentContent $content
  * @property DocumentMetadata|null $metadata
+ * @property DocumentContent $content
  */
 class KnowledgeBaseDocument extends Shape
 {
     /**
      * @param array{
-     *     content: DocumentContent,
-     *     metadata?: DocumentMetadata|null
+     *     metadata?: DocumentMetadata|null,
+     *     content: DocumentContent
      * } $args
      */
     public function __construct(array $args)

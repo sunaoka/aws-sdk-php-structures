@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ListIngestionJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dataSourceId
- * @property string|null $description
- * @property string $ingestionJobId
  * @property string $knowledgeBaseId
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property IngestionJobStatistics|null $statistics
+ * @property string $dataSourceId
+ * @property string $ingestionJobId
+ * @property string|null $description
  * @property 'STARTING'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPING'|'STOPPED' $status
+ * @property \Aws\Api\DateTimeResult $startedAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property IngestionJobStatistics|null $statistics
  */
 class IngestionJobSummary extends Shape
 {
     /**
      * @param array{
-     *     dataSourceId: string,
-     *     description?: string|null,
-     *     ingestionJobId: string,
      *     knowledgeBaseId: string,
-     *     startedAt: \Aws\Api\DateTimeResult,
-     *     statistics?: IngestionJobStatistics|null,
+     *     dataSourceId: string,
+     *     ingestionJobId: string,
+     *     description?: string|null,
      *     status: 'STARTING'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPING'|'STOPPED',
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     startedAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     statistics?: IngestionJobStatistics|null
      * } $args
      */
     public function __construct(array $args)

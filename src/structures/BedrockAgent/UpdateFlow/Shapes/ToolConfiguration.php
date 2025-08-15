@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ToolChoice|null $toolChoice
  * @property list<Tool> $tools
+ * @property ToolChoice|null $toolChoice
  */
 class ToolConfiguration extends Shape
 {
     /**
      * @param array{
-     *     toolChoice?: ToolChoice|null,
-     *     tools: list<Tool>
+     *     tools: list<Tool>,
+     *     toolChoice?: ToolChoice|null
      * } $args
      */
     public function __construct(array $args)

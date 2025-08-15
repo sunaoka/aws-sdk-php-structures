@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $connectionString
  * @property string $credentialsSecretArn
- * @property PineconeFieldMapping $fieldMapping
  * @property string|null $namespace
+ * @property PineconeFieldMapping $fieldMapping
  */
 class PineconeConfiguration extends Shape
 {
@@ -16,8 +16,8 @@ class PineconeConfiguration extends Shape
      * @param array{
      *     connectionString: string,
      *     credentialsSecretArn: string,
-     *     fieldMapping: PineconeFieldMapping,
-     *     namespace?: string|null
+     *     namespace?: string|null,
+     *     fieldMapping: PineconeFieldMapping
      * } $args
      */
     public function __construct(array $args)

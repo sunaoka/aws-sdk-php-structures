@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ListFlowVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $id
+ * @property string $arn
  * @property 'Failed'|'Prepared'|'Preparing'|'NotPrepared' $status
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $version
  */
 class FlowVersionSummary extends Shape
 {
     /**
      * @param array{
-     *     arn: string,
-     *     createdAt: \Aws\Api\DateTimeResult,
      *     id: string,
+     *     arn: string,
      *     status: 'Failed'|'Prepared'|'Preparing'|'NotPrepared',
+     *     createdAt: \Aws\Api\DateTimeResult,
      *     version: string
      * } $args
      */

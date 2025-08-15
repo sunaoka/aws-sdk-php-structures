@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PrometheusService\UpdateLoggingConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string $logGroupArn
  * @property string $workspaceId
+ * @property string $logGroupArn
+ * @property string|null $clientToken
  */
 class UpdateLoggingConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
+     *     workspaceId: string,
      *     logGroupArn: string,
-     *     workspaceId: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

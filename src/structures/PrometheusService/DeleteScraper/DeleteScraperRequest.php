@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DeleteScraper;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $scraperId
+ * @property string|null $clientToken
  */
 class DeleteScraperRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     scraperId: string
+     *     scraperId: string,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)
