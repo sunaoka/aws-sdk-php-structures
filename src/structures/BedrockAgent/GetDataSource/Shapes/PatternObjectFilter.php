@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $exclusionFilters
- * @property list<string>|null $inclusionFilters
  * @property string $objectType
+ * @property list<string>|null $inclusionFilters
+ * @property list<string>|null $exclusionFilters
  */
 class PatternObjectFilter extends Shape
 {
     /**
      * @param array{
-     *     exclusionFilters?: list<string>|null,
+     *     objectType: string,
      *     inclusionFilters?: list<string>|null,
-     *     objectType: string
+     *     exclusionFilters?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

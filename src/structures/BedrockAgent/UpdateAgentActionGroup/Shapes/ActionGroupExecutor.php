@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateAgentActionGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'RETURN_CONTROL'|null $customControl
  * @property string|null $lambda
+ * @property 'RETURN_CONTROL'|null $customControl
  */
 class ActionGroupExecutor extends Shape
 {
     /**
      * @param array{
-     *     customControl?: 'RETURN_CONTROL'|null,
-     *     lambda?: string|null
+     *     lambda?: string|null,
+     *     customControl?: 'RETURN_CONTROL'|null
      * } $args
      */
     public function __construct(array $args = [])

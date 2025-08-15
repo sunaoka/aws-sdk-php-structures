@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DescribeWorkspaceConfiguratio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $labelSet
  * @property LimitsPerLabelSetEntry $limits
+ * @property array<string, string> $labelSet
  */
 class LimitsPerLabelSet extends Shape
 {
     /**
      * @param array{
-     *     labelSet: array<string, string>,
-     *     limits: LimitsPerLabelSetEntry
+     *     limits: LimitsPerLabelSetEntry,
+     *     labelSet: array<string, string>
      * } $args
      */
     public function __construct(array $args)

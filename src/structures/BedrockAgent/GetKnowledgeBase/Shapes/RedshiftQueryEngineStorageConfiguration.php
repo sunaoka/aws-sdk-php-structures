@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'REDSHIFT'|'AWS_DATA_CATALOG' $type
  * @property RedshiftQueryEngineAwsDataCatalogStorageConfiguration|null $awsDataCatalogConfiguration
  * @property RedshiftQueryEngineRedshiftStorageConfiguration|null $redshiftConfiguration
- * @property 'REDSHIFT'|'AWS_DATA_CATALOG' $type
  */
 class RedshiftQueryEngineStorageConfiguration extends Shape
 {
     /**
      * @param array{
+     *     type: 'REDSHIFT'|'AWS_DATA_CATALOG',
      *     awsDataCatalogConfiguration?: RedshiftQueryEngineAwsDataCatalogStorageConfiguration|null,
-     *     redshiftConfiguration?: RedshiftQueryEngineRedshiftStorageConfiguration|null,
-     *     type: 'REDSHIFT'|'AWS_DATA_CATALOG'
+     *     redshiftConfiguration?: RedshiftQueryEngineRedshiftStorageConfiguration|null
      * } $args
      */
     public function __construct(array $args)

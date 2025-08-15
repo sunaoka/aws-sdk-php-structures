@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\IngestKnowledgeBaseDocuments\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|resource|\Psr\Http\Message\StreamInterface $data
  * @property string $mimeType
+ * @property string|resource|\Psr\Http\Message\StreamInterface $data
  */
 class ByteContentDoc extends Shape
 {
     /**
      * @param array{
-     *     data: string|resource|\Psr\Http\Message\StreamInterface,
-     *     mimeType: string
+     *     mimeType: string,
+     *     data: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ValidateFlowDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, AdditionalModelRequestFieldsValue>|null $additionalModelRequestFields
  * @property string $modelArn
+ * @property array<string, AdditionalModelRequestFieldsValue>|null $additionalModelRequestFields
  */
 class VectorSearchBedrockRerankingModelConfiguration extends Shape
 {
     /**
      * @param array{
-     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>|null,
-     *     modelArn: string
+     *     modelArn: string,
+     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>|null
      * } $args
      */
     public function __construct(array $args)

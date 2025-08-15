@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $alias
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property Destination $destination
- * @property \Aws\Api\DateTimeResult $lastModifiedAt
- * @property string $roleArn
- * @property RoleConfiguration|null $roleConfiguration
- * @property ScrapeConfiguration $scrapeConfiguration
  * @property string $scraperId
- * @property Source $source
+ * @property string $arn
+ * @property string $roleArn
  * @property ScraperStatus $status
- * @property string|null $statusReason
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $lastModifiedAt
  * @property array<string, string>|null $tags
+ * @property string|null $statusReason
+ * @property ScrapeConfiguration $scrapeConfiguration
+ * @property Source $source
+ * @property Destination $destination
+ * @property RoleConfiguration|null $roleConfiguration
  */
 class ScraperDescription extends Shape
 {
     /**
      * @param array{
      *     alias?: string|null,
-     *     arn: string,
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     destination: Destination,
-     *     lastModifiedAt: \Aws\Api\DateTimeResult,
-     *     roleArn: string,
-     *     roleConfiguration?: RoleConfiguration|null,
-     *     scrapeConfiguration: ScrapeConfiguration,
      *     scraperId: string,
-     *     source: Source,
+     *     arn: string,
+     *     roleArn: string,
      *     status: ScraperStatus,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     lastModifiedAt: \Aws\Api\DateTimeResult,
+     *     tags?: array<string, string>|null,
      *     statusReason?: string|null,
-     *     tags?: array<string, string>|null
+     *     scrapeConfiguration: ScrapeConfiguration,
+     *     source: Source,
+     *     destination: Destination,
+     *     roleConfiguration?: RoleConfiguration|null
      * } $args
      */
     public function __construct(array $args)

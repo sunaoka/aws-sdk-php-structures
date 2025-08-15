@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PromptFlowNodeInlineConfiguration|null $inline
  * @property PromptFlowNodeResourceConfiguration|null $resource
+ * @property PromptFlowNodeInlineConfiguration|null $inline
  */
 class PromptFlowNodeSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     inline?: PromptFlowNodeInlineConfiguration|null,
-     *     resource?: PromptFlowNodeResourceConfiguration|null
+     *     resource?: PromptFlowNodeResourceConfiguration|null,
+     *     inline?: PromptFlowNodeInlineConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

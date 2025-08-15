@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $collectionArn
- * @property OpenSearchServerlessFieldMapping $fieldMapping
  * @property string $vectorIndexName
+ * @property OpenSearchServerlessFieldMapping $fieldMapping
  */
 class OpenSearchServerlessConfiguration extends Shape
 {
     /**
      * @param array{
      *     collectionArn: string,
-     *     fieldMapping: OpenSearchServerlessFieldMapping,
-     *     vectorIndexName: string
+     *     vectorIndexName: string,
+     *     fieldMapping: OpenSearchServerlessFieldMapping
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DescribeLoggingConfiguration\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $logGroupArn
- * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property LoggingConfigurationStatus $status
  * @property string $workspace
+ * @property string $logGroupArn
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $modifiedAt
  */
 class LoggingConfigurationMetadata extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     logGroupArn: string,
-     *     modifiedAt: \Aws\Api\DateTimeResult,
      *     status: LoggingConfigurationStatus,
-     *     workspace: string
+     *     workspace: string,
+     *     logGroupArn: string,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     modifiedAt: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

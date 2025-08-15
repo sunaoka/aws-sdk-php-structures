@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateFlowAlias;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $aliasIdentifier
- * @property Shapes\FlowAliasConcurrencyConfiguration|null $concurrencyConfiguration
- * @property string|null $description
- * @property string $flowIdentifier
  * @property string $name
+ * @property string|null $description
  * @property list<Shapes\FlowAliasRoutingConfigurationListItem> $routingConfiguration
+ * @property Shapes\FlowAliasConcurrencyConfiguration|null $concurrencyConfiguration
+ * @property string $flowIdentifier
+ * @property string $aliasIdentifier
  */
 class UpdateFlowAliasRequest extends Request
 {
     /**
      * @param array{
-     *     aliasIdentifier: string,
-     *     concurrencyConfiguration?: Shapes\FlowAliasConcurrencyConfiguration|null,
-     *     description?: string|null,
-     *     flowIdentifier: string,
      *     name: string,
-     *     routingConfiguration: list<Shapes\FlowAliasRoutingConfigurationListItem>
+     *     description?: string|null,
+     *     routingConfiguration: list<Shapes\FlowAliasRoutingConfigurationListItem>,
+     *     concurrencyConfiguration?: Shapes\FlowAliasConcurrencyConfiguration|null,
+     *     flowIdentifier: string,
+     *     aliasIdentifier: string
      * } $args
      */
     public function __construct(array $args)

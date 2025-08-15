@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdatePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AnyToolChoice|null $any
  * @property AutoToolChoice|null $auto
+ * @property AnyToolChoice|null $any
  * @property SpecificToolChoice|null $tool
  */
 class ToolChoice extends Shape
 {
     /**
      * @param array{
-     *     any?: AnyToolChoice|null,
      *     auto?: AutoToolChoice|null,
+     *     any?: AnyToolChoice|null,
      *     tool?: SpecificToolChoice|null
      * } $args
      */

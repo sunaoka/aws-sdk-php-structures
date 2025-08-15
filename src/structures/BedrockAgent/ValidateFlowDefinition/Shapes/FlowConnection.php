@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ValidateFlowDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FlowConnectionConfiguration|null $configuration
+ * @property 'Data'|'Conditional' $type
  * @property string $name
  * @property string $source
  * @property string $target
- * @property 'Data'|'Conditional' $type
+ * @property FlowConnectionConfiguration|null $configuration
  */
 class FlowConnection extends Shape
 {
     /**
      * @param array{
-     *     configuration?: FlowConnectionConfiguration|null,
+     *     type: 'Data'|'Conditional',
      *     name: string,
      *     source: string,
      *     target: string,
-     *     type: 'Data'|'Conditional'
+     *     configuration?: FlowConnectionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

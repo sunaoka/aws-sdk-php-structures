@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FlowConditionalConnectionConfiguration|null $conditional
  * @property FlowDataConnectionConfiguration|null $data
+ * @property FlowConditionalConnectionConfiguration|null $conditional
  */
 class FlowConnectionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     conditional?: FlowConditionalConnectionConfiguration|null,
-     *     data?: FlowDataConnectionConfiguration|null
+     *     data?: FlowDataConnectionConfiguration|null,
+     *     conditional?: FlowConditionalConnectionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

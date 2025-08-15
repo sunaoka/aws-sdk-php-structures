@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property 'RETAIN'|'DELETE'|null $dataDeletionPolicy
- * @property DataSourceConfiguration $dataSourceConfiguration
- * @property string $dataSourceId
- * @property string|null $description
- * @property list<string>|null $failureReasons
  * @property string $knowledgeBaseId
+ * @property string $dataSourceId
  * @property string $name
- * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
  * @property 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL' $status
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $description
+ * @property DataSourceConfiguration $dataSourceConfiguration
+ * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
  * @property VectorIngestionConfiguration|null $vectorIngestionConfiguration
+ * @property 'RETAIN'|'DELETE'|null $dataDeletionPolicy
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property list<string>|null $failureReasons
  */
 class DataSource extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     dataDeletionPolicy?: 'RETAIN'|'DELETE'|null,
-     *     dataSourceConfiguration: DataSourceConfiguration,
-     *     dataSourceId: string,
-     *     description?: string|null,
-     *     failureReasons?: list<string>|null,
      *     knowledgeBaseId: string,
+     *     dataSourceId: string,
      *     name: string,
-     *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
      *     status: 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL',
+     *     description?: string|null,
+     *     dataSourceConfiguration: DataSourceConfiguration,
+     *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
+     *     vectorIngestionConfiguration?: VectorIngestionConfiguration|null,
+     *     dataDeletionPolicy?: 'RETAIN'|'DELETE'|null,
+     *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     vectorIngestionConfiguration?: VectorIngestionConfiguration|null
+     *     failureReasons?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

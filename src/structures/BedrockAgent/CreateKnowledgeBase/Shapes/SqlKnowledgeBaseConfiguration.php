@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftConfiguration|null $redshiftConfiguration
  * @property 'REDSHIFT' $type
+ * @property RedshiftConfiguration|null $redshiftConfiguration
  */
 class SqlKnowledgeBaseConfiguration extends Shape
 {
     /**
      * @param array{
-     *     redshiftConfiguration?: RedshiftConfiguration|null,
-     *     type: 'REDSHIFT'
+     *     type: 'REDSHIFT',
+     *     redshiftConfiguration?: RedshiftConfiguration|null
      * } $args
      */
     public function __construct(array $args)

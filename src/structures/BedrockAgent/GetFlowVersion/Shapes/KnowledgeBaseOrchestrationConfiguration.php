@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlowVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, AdditionalModelRequestFieldsValue>|null $additionalModelRequestFields
- * @property PromptInferenceConfiguration|null $inferenceConfig
- * @property PerformanceConfiguration|null $performanceConfig
  * @property KnowledgeBasePromptTemplate|null $promptTemplate
+ * @property PromptInferenceConfiguration|null $inferenceConfig
+ * @property array<string, AdditionalModelRequestFieldsValue>|null $additionalModelRequestFields
+ * @property PerformanceConfiguration|null $performanceConfig
  */
 class KnowledgeBaseOrchestrationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>|null,
+     *     promptTemplate?: KnowledgeBasePromptTemplate|null,
      *     inferenceConfig?: PromptInferenceConfiguration|null,
-     *     performanceConfig?: PerformanceConfiguration|null,
-     *     promptTemplate?: KnowledgeBasePromptTemplate|null
+     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>|null,
+     *     performanceConfig?: PerformanceConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

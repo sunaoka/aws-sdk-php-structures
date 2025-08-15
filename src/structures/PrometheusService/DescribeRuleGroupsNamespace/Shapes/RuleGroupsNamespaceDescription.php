@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Psr\Http\Message\StreamInterface $data
- * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property string $name
  * @property RuleGroupsNamespaceStatus $status
+ * @property \Psr\Http\Message\StreamInterface $data
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property array<string, string>|null $tags
  */
 class RuleGroupsNamespaceDescription extends Shape
@@ -18,11 +18,11 @@ class RuleGroupsNamespaceDescription extends Shape
     /**
      * @param array{
      *     arn: string,
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     data: \Psr\Http\Message\StreamInterface,
-     *     modifiedAt: \Aws\Api\DateTimeResult,
      *     name: string,
      *     status: RuleGroupsNamespaceStatus,
+     *     data: \Psr\Http\Message\StreamInterface,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     modifiedAt: \Aws\Api\DateTimeResult,
      *     tags?: array<string, string>|null
      * } $args
      */

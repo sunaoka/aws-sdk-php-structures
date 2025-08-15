@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NeptuneAnalyticsFieldMapping $fieldMapping
  * @property string $graphArn
+ * @property NeptuneAnalyticsFieldMapping $fieldMapping
  */
 class NeptuneAnalyticsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     fieldMapping: NeptuneAnalyticsFieldMapping,
-     *     graphArn: string
+     *     graphArn: string,
+     *     fieldMapping: NeptuneAnalyticsFieldMapping
      * } $args
      */
     public function __construct(array $args)

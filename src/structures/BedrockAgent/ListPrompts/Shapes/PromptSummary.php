@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ListPrompts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string $name
  * @property string|null $description
  * @property string $id
- * @property string $name
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string $arn
  * @property string $version
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class PromptSummary extends Shape
 {
     /**
      * @param array{
-     *     arn: string,
-     *     createdAt: \Aws\Api\DateTimeResult,
+     *     name: string,
      *     description?: string|null,
      *     id: string,
-     *     name: string,
-     *     updatedAt: \Aws\Api\DateTimeResult,
-     *     version: string
+     *     arn: string,
+     *     version: string,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

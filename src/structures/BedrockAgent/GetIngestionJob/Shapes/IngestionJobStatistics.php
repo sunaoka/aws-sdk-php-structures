@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetIngestionJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property int|null $numberOfDocumentsScanned
+ * @property int|null $numberOfMetadataDocumentsScanned
+ * @property int|null $numberOfNewDocumentsIndexed
+ * @property int|null $numberOfModifiedDocumentsIndexed
+ * @property int|null $numberOfMetadataDocumentsModified
  * @property int|null $numberOfDocumentsDeleted
  * @property int|null $numberOfDocumentsFailed
- * @property int|null $numberOfDocumentsScanned
- * @property int|null $numberOfMetadataDocumentsModified
- * @property int|null $numberOfMetadataDocumentsScanned
- * @property int|null $numberOfModifiedDocumentsIndexed
- * @property int|null $numberOfNewDocumentsIndexed
  */
 class IngestionJobStatistics extends Shape
 {
     /**
      * @param array{
-     *     numberOfDocumentsDeleted?: int|null,
-     *     numberOfDocumentsFailed?: int|null,
      *     numberOfDocumentsScanned?: int|null,
-     *     numberOfMetadataDocumentsModified?: int|null,
      *     numberOfMetadataDocumentsScanned?: int|null,
+     *     numberOfNewDocumentsIndexed?: int|null,
      *     numberOfModifiedDocumentsIndexed?: int|null,
-     *     numberOfNewDocumentsIndexed?: int|null
+     *     numberOfMetadataDocumentsModified?: int|null,
+     *     numberOfDocumentsDeleted?: int|null,
+     *     numberOfDocumentsFailed?: int|null
      * } $args
      */
     public function __construct(array $args = [])

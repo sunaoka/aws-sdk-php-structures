@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ListKnowledgeBaseDocuments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $dataSourceId
  * @property string $knowledgeBaseId
+ * @property string $dataSourceId
  * @property int<1, 1000>|null $maxResults
  * @property string|null $nextToken
  */
@@ -14,8 +14,8 @@ class ListKnowledgeBaseDocumentsRequest extends Request
 {
     /**
      * @param array{
-     *     dataSourceId: string,
      *     knowledgeBaseId: string,
+     *     dataSourceId: string,
      *     maxResults?: int<1, 1000>|null,
      *     nextToken?: string|null
      * } $args

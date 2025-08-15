@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'String'|'Number'|'Boolean'|'Object'|'Array' $expectedType
- * @property string $input
  * @property string $node
+ * @property string $input
+ * @property 'String'|'Number'|'Boolean'|'Object'|'Array' $expectedType
  */
 class MismatchedNodeInputTypeFlowValidationDetails extends Shape
 {
     /**
      * @param array{
-     *     expectedType: 'String'|'Number'|'Boolean'|'Object'|'Array',
+     *     node: string,
      *     input: string,
-     *     node: string
+     *     expectedType: 'String'|'Number'|'Boolean'|'Object'|'Array'
      * } $args
      */
     public function __construct(array $args)
