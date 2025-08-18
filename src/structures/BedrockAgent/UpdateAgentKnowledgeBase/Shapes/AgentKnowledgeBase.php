@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $agentId
  * @property string $agentVersion
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
  * @property string $knowledgeBaseId
- * @property 'ENABLED'|'DISABLED' $knowledgeBaseState
+ * @property string $description
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property 'ENABLED'|'DISABLED' $knowledgeBaseState
  */
 class AgentKnowledgeBase extends Shape
 {
@@ -19,11 +19,11 @@ class AgentKnowledgeBase extends Shape
      * @param array{
      *     agentId: string,
      *     agentVersion: string,
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     description: string,
      *     knowledgeBaseId: string,
-     *     knowledgeBaseState: 'ENABLED'|'DISABLED',
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     description: string,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult,
+     *     knowledgeBaseState: 'ENABLED'|'DISABLED'
      * } $args
      */
     public function __construct(array $args)

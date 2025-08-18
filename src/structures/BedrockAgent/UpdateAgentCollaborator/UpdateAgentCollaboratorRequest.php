@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateAgentCollaborator;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\AgentDescriptor $agentDescriptor
  * @property string $agentId
  * @property string $agentVersion
- * @property string $collaborationInstruction
  * @property string $collaboratorId
+ * @property Shapes\AgentDescriptor $agentDescriptor
  * @property string $collaboratorName
+ * @property string $collaborationInstruction
  * @property 'TO_COLLABORATOR'|'DISABLED'|null $relayConversationHistory
  */
 class UpdateAgentCollaboratorRequest extends Request
 {
     /**
      * @param array{
-     *     agentDescriptor: Shapes\AgentDescriptor,
      *     agentId: string,
      *     agentVersion: string,
-     *     collaborationInstruction: string,
      *     collaboratorId: string,
+     *     agentDescriptor: Shapes\AgentDescriptor,
      *     collaboratorName: string,
+     *     collaborationInstruction: string,
      *     relayConversationHistory?: 'TO_COLLABORATOR'|'DISABLED'|null
      * } $args
      */

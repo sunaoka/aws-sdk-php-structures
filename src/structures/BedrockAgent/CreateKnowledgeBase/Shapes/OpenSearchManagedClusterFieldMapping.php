@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $metadataField
- * @property string $textField
  * @property string $vectorField
+ * @property string $textField
+ * @property string $metadataField
  */
 class OpenSearchManagedClusterFieldMapping extends Shape
 {
     /**
      * @param array{
-     *     metadataField: string,
+     *     vectorField: string,
      *     textField: string,
-     *     vectorField: string
+     *     metadataField: string
      * } $args
      */
     public function __construct(array $args)

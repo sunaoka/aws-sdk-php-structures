@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ValidateFlowDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $input
  * @property string $node
+ * @property string $input
  */
 class UnknownNodeInputFlowValidationDetails extends Shape
 {
     /**
      * @param array{
-     *     input: string,
-     *     node: string
+     *     node: string,
+     *     input: string
      * } $args
      */
     public function __construct(array $args)

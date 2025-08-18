@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\IngestKnowledgeBaseDocuments\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $bucketOwnerAccountId
  * @property string $uri
+ * @property string|null $bucketOwnerAccountId
  */
 class CustomS3Location extends Shape
 {
     /**
      * @param array{
-     *     bucketOwnerAccountId?: string|null,
-     *     uri: string
+     *     uri: string,
+     *     bucketOwnerAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

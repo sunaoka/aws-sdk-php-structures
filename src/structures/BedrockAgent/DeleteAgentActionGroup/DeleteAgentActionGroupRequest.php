@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\DeleteAgentActionGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $actionGroupId
  * @property string $agentId
  * @property string $agentVersion
+ * @property string $actionGroupId
  * @property bool|null $skipResourceInUseCheck
  */
 class DeleteAgentActionGroupRequest extends Request
 {
     /**
      * @param array{
-     *     actionGroupId: string,
      *     agentId: string,
      *     agentVersion: string,
+     *     actionGroupId: string,
      *     skipResourceInUseCheck?: bool|null
      * } $args
      */

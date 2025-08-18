@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ListFlows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string $name
  * @property string|null $description
  * @property string $id
- * @property string $name
+ * @property string $arn
  * @property 'Failed'|'Prepared'|'Preparing'|'NotPrepared' $status
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string $version
  */
@@ -18,12 +18,12 @@ class FlowSummary extends Shape
 {
     /**
      * @param array{
-     *     arn: string,
-     *     createdAt: \Aws\Api\DateTimeResult,
+     *     name: string,
      *     description?: string|null,
      *     id: string,
-     *     name: string,
+     *     arn: string,
      *     status: 'Failed'|'Prepared'|'Preparing'|'NotPrepared',
+     *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     version: string
      * } $args

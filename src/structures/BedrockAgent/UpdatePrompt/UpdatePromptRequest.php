@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdatePrompt;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $name
+ * @property string|null $description
  * @property string|null $customerEncryptionKeyArn
  * @property string|null $defaultVariant
- * @property string|null $description
- * @property string $name
- * @property string $promptIdentifier
  * @property list<Shapes\PromptVariant>|null $variants
+ * @property string $promptIdentifier
  */
 class UpdatePromptRequest extends Request
 {
     /**
      * @param array{
+     *     name: string,
+     *     description?: string|null,
      *     customerEncryptionKeyArn?: string|null,
      *     defaultVariant?: string|null,
-     *     description?: string|null,
-     *     name: string,
-     *     promptIdentifier: string,
-     *     variants?: list<Shapes\PromptVariant>|null
+     *     variants?: list<Shapes\PromptVariant>|null,
+     *     promptIdentifier: string
      * } $args
      */
     public function __construct(array $args)

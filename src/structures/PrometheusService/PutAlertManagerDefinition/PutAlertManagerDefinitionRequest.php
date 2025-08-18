@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PrometheusService\PutAlertManagerDefinition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|resource|\Psr\Http\Message\StreamInterface $data
  * @property string $workspaceId
+ * @property string|resource|\Psr\Http\Message\StreamInterface $data
+ * @property string|null $clientToken
  */
 class PutAlertManagerDefinitionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
+     *     workspaceId: string,
      *     data: string|resource|\Psr\Http\Message\StreamInterface,
-     *     workspaceId: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

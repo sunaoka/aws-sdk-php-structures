@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateFlow;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $customerEncryptionKeyArn
- * @property Shapes\FlowDefinition|null $definition
+ * @property string $name
  * @property string|null $description
  * @property string $executionRoleArn
- * @property string $name
+ * @property string|null $customerEncryptionKeyArn
+ * @property Shapes\FlowDefinition|null $definition
+ * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
 class CreateFlowRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     customerEncryptionKeyArn?: string|null,
-     *     definition?: Shapes\FlowDefinition|null,
+     *     name: string,
      *     description?: string|null,
      *     executionRoleArn: string,
-     *     name: string,
+     *     customerEncryptionKeyArn?: string|null,
+     *     definition?: Shapes\FlowDefinition|null,
+     *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

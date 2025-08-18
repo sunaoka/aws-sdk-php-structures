@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DescribeAlertManagerDefinitio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Psr\Http\Message\StreamInterface $data
- * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property AlertManagerDefinitionStatus $status
+ * @property \Psr\Http\Message\StreamInterface $data
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $modifiedAt
  */
 class AlertManagerDefinitionDescription extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
+     *     status: AlertManagerDefinitionStatus,
      *     data: \Psr\Http\Message\StreamInterface,
-     *     modifiedAt: \Aws\Api\DateTimeResult,
-     *     status: AlertManagerDefinitionStatus
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     modifiedAt: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

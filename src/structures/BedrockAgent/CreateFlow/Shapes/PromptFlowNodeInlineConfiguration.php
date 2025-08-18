@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document|null $additionalModelRequestFields
- * @property PromptInferenceConfiguration|null $inferenceConfiguration
- * @property string $modelId
- * @property PromptTemplateConfiguration $templateConfiguration
  * @property 'TEXT'|'CHAT' $templateType
+ * @property PromptTemplateConfiguration $templateConfiguration
+ * @property string $modelId
+ * @property PromptInferenceConfiguration|null $inferenceConfiguration
+ * @property Document|null $additionalModelRequestFields
  */
 class PromptFlowNodeInlineConfiguration extends Shape
 {
     /**
      * @param array{
-     *     additionalModelRequestFields?: Document|null,
-     *     inferenceConfiguration?: PromptInferenceConfiguration|null,
-     *     modelId: string,
+     *     templateType: 'TEXT'|'CHAT',
      *     templateConfiguration: PromptTemplateConfiguration,
-     *     templateType: 'TEXT'|'CHAT'
+     *     modelId: string,
+     *     inferenceConfiguration?: PromptInferenceConfiguration|null,
+     *     additionalModelRequestFields?: Document|null
      * } $args
      */
     public function __construct(array $args)

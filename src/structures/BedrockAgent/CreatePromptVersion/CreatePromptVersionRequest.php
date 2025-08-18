@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePromptVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
  * @property string $promptIdentifier
+ * @property string|null $description
+ * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
 class CreatePromptVersionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     description?: string|null,
      *     promptIdentifier: string,
+     *     description?: string|null,
+     *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

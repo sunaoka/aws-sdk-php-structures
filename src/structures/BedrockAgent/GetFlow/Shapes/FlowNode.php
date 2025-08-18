@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $name
+ * @property 'Input'|'Output'|'KnowledgeBase'|'Condition'|'Lex'|'Prompt'|'LambdaFunction'|'Storage'|'Agent'|'Retrieval'|'Iterator'|'Collector'|'InlineCode'|'Loop'|'LoopInput'|'LoopController' $type
  * @property FlowNodeConfiguration|null $configuration
  * @property list<FlowNodeInput>|null $inputs
- * @property string $name
  * @property list<FlowNodeOutput>|null $outputs
- * @property 'Input'|'Output'|'KnowledgeBase'|'Condition'|'Lex'|'Prompt'|'LambdaFunction'|'Storage'|'Agent'|'Retrieval'|'Iterator'|'Collector'|'InlineCode'|'Loop'|'LoopInput'|'LoopController' $type
  */
 class FlowNode extends Shape
 {
     /**
      * @param array{
+     *     name: string,
+     *     type: 'Input'|'Output'|'KnowledgeBase'|'Condition'|'Lex'|'Prompt'|'LambdaFunction'|'Storage'|'Agent'|'Retrieval'|'Iterator'|'Collector'|'InlineCode'|'Loop'|'LoopInput'|'LoopController',
      *     configuration?: FlowNodeConfiguration|null,
      *     inputs?: list<FlowNodeInput>|null,
-     *     name: string,
-     *     outputs?: list<FlowNodeOutput>|null,
-     *     type: 'Input'|'Output'|'KnowledgeBase'|'Condition'|'Lex'|'Prompt'|'LambdaFunction'|'Storage'|'Agent'|'Retrieval'|'Iterator'|'Collector'|'InlineCode'|'Loop'|'LoopInput'|'LoopController'
+     *     outputs?: list<FlowNodeOutput>|null
      * } $args
      */
     public function __construct(array $args)

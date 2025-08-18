@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property WebCrawlerConfiguration|null $crawlerConfiguration
  * @property WebSourceConfiguration $sourceConfiguration
+ * @property WebCrawlerConfiguration|null $crawlerConfiguration
  */
 class WebDataSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     crawlerConfiguration?: WebCrawlerConfiguration|null,
-     *     sourceConfiguration: WebSourceConfiguration
+     *     sourceConfiguration: WebSourceConfiguration,
+     *     crawlerConfiguration?: WebCrawlerConfiguration|null
      * } $args
      */
     public function __construct(array $args)

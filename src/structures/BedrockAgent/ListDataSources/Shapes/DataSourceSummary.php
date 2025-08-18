@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ListDataSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dataSourceId
- * @property string|null $description
  * @property string $knowledgeBaseId
+ * @property string $dataSourceId
  * @property string $name
  * @property 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL' $status
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class DataSourceSummary extends Shape
 {
     /**
      * @param array{
-     *     dataSourceId: string,
-     *     description?: string|null,
      *     knowledgeBaseId: string,
+     *     dataSourceId: string,
      *     name: string,
      *     status: 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL',
+     *     description?: string|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

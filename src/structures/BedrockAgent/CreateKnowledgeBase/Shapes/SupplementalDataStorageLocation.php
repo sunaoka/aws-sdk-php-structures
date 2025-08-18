@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3Location|null $s3Location
  * @property 'S3' $type
+ * @property S3Location|null $s3Location
  */
 class SupplementalDataStorageLocation extends Shape
 {
     /**
      * @param array{
-     *     s3Location?: S3Location|null,
-     *     type: 'S3'
+     *     type: 'S3',
+     *     s3Location?: S3Location|null
      * } $args
      */
     public function __construct(array $args)
