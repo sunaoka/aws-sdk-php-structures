@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $RequestCharacters
  * @property string|null $SnsTopicArn
  * @property list<string>|null $LexiconNames
- * @property 'json'|'mp3'|'ogg_vorbis'|'pcm'|null $OutputFormat
+ * @property 'json'|'mp3'|'ogg_opus'|'ogg_vorbis'|'pcm'|null $OutputFormat
  * @property string|null $SampleRate
  * @property list<'sentence'|'ssml'|'viseme'|'word'>|null $SpeechMarkTypes
  * @property 'ssml'|'text'|null $TextType
@@ -34,7 +34,7 @@ class SynthesisTask extends Shape
      *     RequestCharacters?: int|null,
      *     SnsTopicArn?: string|null,
      *     LexiconNames?: list<string>|null,
-     *     OutputFormat?: 'json'|'mp3'|'ogg_vorbis'|'pcm'|null,
+     *     OutputFormat?: 'json'|'mp3'|'ogg_opus'|'ogg_vorbis'|'pcm'|null,
      *     SampleRate?: string|null,
      *     SpeechMarkTypes?: list<'sentence'|'ssml'|'viseme'|'word'>|null,
      *     TextType?: 'ssml'|'text'|null,
