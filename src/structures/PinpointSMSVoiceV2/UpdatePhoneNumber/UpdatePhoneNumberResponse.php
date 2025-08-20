@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $TwoWayChannelRole
  * @property bool|null $SelfManagedOptOutsEnabled
  * @property string|null $OptOutListName
+ * @property bool|null $InternationalSendingEnabled
  * @property bool|null $DeletionProtectionEnabled
  * @property string|null $RegistrationId
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp

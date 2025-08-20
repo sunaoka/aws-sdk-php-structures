@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\SearchTrainingPlanOfferings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|null $InstanceType
+ * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|'ml.p5.4xlarge'|null $InstanceType
  * @property int<0, 256>|null $InstanceCount
  * @property string|null $UltraServerType
  * @property int<1, max>|null $UltraServerCount
@@ -18,7 +18,7 @@ class SearchTrainingPlanOfferingsRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceType?: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|null,
+     *     InstanceType?: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|'ml.p5.4xlarge'|null,
      *     InstanceCount?: int<0, 256>|null,
      *     UltraServerType?: string|null,
      *     UltraServerCount?: int<1, max>|null,

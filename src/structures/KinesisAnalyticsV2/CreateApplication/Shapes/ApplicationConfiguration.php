@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ApplicationSystemRollbackConfiguration|null $ApplicationSystemRollbackConfiguration
  * @property list<VpcConfiguration>|null $VpcConfigurations
  * @property ZeppelinApplicationConfiguration|null $ZeppelinApplicationConfiguration
+ * @property ApplicationEncryptionConfiguration|null $ApplicationEncryptionConfiguration
  */
 class ApplicationConfiguration extends Shape
 {
@@ -25,7 +26,8 @@ class ApplicationConfiguration extends Shape
      *     ApplicationSnapshotConfiguration?: ApplicationSnapshotConfiguration|null,
      *     ApplicationSystemRollbackConfiguration?: ApplicationSystemRollbackConfiguration|null,
      *     VpcConfigurations?: list<VpcConfiguration>|null,
-     *     ZeppelinApplicationConfiguration?: ZeppelinApplicationConfiguration|null
+     *     ZeppelinApplicationConfiguration?: ZeppelinApplicationConfiguration|null,
+     *     ApplicationEncryptionConfiguration?: ApplicationEncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

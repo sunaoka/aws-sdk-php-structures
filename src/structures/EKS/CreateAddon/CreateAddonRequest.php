@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property string|null $configurationValues
  * @property list<Shapes\AddonPodIdentityAssociations>|null $podIdentityAssociations
+ * @property Shapes\AddonNamespaceConfigRequest|null $namespaceConfig
  */
 class CreateAddonRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateAddonRequest extends Request
      *     clientRequestToken?: string|null,
      *     tags?: array<string, string>|null,
      *     configurationValues?: string|null,
-     *     podIdentityAssociations?: list<Shapes\AddonPodIdentityAssociations>|null
+     *     podIdentityAssociations?: list<Shapes\AddonPodIdentityAssociations>|null,
+     *     namespaceConfig?: Shapes\AddonNamespaceConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

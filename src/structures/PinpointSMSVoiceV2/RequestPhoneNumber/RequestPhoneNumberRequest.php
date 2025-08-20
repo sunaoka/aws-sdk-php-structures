@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $OptOutListName
  * @property string|null $PoolId
  * @property string|null $RegistrationId
+ * @property bool|null $InternationalSendingEnabled
  * @property bool|null $DeletionProtectionEnabled
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ClientToken
@@ -27,6 +28,7 @@ class RequestPhoneNumberRequest extends Request
      *     OptOutListName?: string|null,
      *     PoolId?: string|null,
      *     RegistrationId?: string|null,
+     *     InternationalSendingEnabled?: bool|null,
      *     DeletionProtectionEnabled?: bool|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     ClientToken?: string|null

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'UltraServer'|'Instance'|null $ReservedCapacityType
  * @property string|null $UltraServerType
  * @property int<1, max>|null $UltraServerCount
- * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge' $InstanceType
+ * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|'ml.p5.4xlarge' $InstanceType
  * @property int<0, max> $TotalInstanceCount
  * @property 'Pending'|'Active'|'Scheduled'|'Expired'|'Failed' $Status
  * @property string|null $AvailabilityZone
@@ -26,7 +26,7 @@ class ReservedCapacitySummary extends Shape
      *     ReservedCapacityType?: 'UltraServer'|'Instance'|null,
      *     UltraServerType?: string|null,
      *     UltraServerCount?: int<1, max>|null,
-     *     InstanceType: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge',
+     *     InstanceType: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|'ml.p5.4xlarge',
      *     TotalInstanceCount: int<0, max>,
      *     Status: 'Pending'|'Active'|'Scheduled'|'Expired'|'Failed',
      *     AvailabilityZone?: string|null,
