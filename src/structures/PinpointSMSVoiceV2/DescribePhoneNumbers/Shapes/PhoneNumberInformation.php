@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TwoWayChannelRole
  * @property bool $SelfManagedOptOutsEnabled
  * @property string $OptOutListName
+ * @property bool|null $InternationalSendingEnabled
  * @property bool $DeletionProtectionEnabled
  * @property string|null $PoolId
  * @property string|null $RegistrationId
@@ -42,6 +43,7 @@ class PhoneNumberInformation extends Shape
      *     TwoWayChannelRole?: string|null,
      *     SelfManagedOptOutsEnabled: bool,
      *     OptOutListName: string,
+     *     InternationalSendingEnabled?: bool|null,
      *     DeletionProtectionEnabled: bool,
      *     PoolId?: string|null,
      *     RegistrationId?: string|null,

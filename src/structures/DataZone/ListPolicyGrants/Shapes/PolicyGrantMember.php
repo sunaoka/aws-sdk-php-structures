@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy
  * @property PolicyGrantDetail|null $detail
+ * @property string|null $grantId
  * @property PolicyGrantPrincipal|null $principal
  */
 class PolicyGrantMember extends Shape
@@ -17,6 +18,7 @@ class PolicyGrantMember extends Shape
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     createdBy?: string|null,
      *     detail?: PolicyGrantDetail|null,
+     *     grantId?: string|null,
      *     principal?: PolicyGrantPrincipal|null
      * } $args
      */
