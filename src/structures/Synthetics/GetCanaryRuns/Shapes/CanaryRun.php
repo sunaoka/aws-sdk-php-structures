@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CanaryRunTimeline|null $Timeline
  * @property string|null $ArtifactS3Location
  * @property CanaryDryRunConfigOutput|null $DryRunConfig
+ * @property 'CHROME'|'FIREFOX'|null $BrowserType
  */
 class CanaryRun extends Shape
 {
@@ -25,7 +26,8 @@ class CanaryRun extends Shape
      *     Status?: CanaryRunStatus|null,
      *     Timeline?: CanaryRunTimeline|null,
      *     ArtifactS3Location?: string|null,
-     *     DryRunConfig?: CanaryDryRunConfigOutput|null
+     *     DryRunConfig?: CanaryDryRunConfigOutput|null,
+     *     BrowserType?: 'CHROME'|'FIREFOX'|null
      * } $args
      */
     public function __construct(array $args = [])
