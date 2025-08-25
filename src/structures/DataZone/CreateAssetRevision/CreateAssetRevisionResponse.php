@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $firstRevisionCreatedBy
  * @property list<Shapes\FormOutput> $formsOutput
  * @property list<string>|null $glossaryTerms
+ * @property list<string>|null $governedGlossaryTerms
  * @property string $id
  * @property list<Shapes\TimeSeriesDataPointSummaryFormOutput>|null $latestTimeSeriesDataPointFormsOutput
  * @property Shapes\AssetListingDetails|null $listing

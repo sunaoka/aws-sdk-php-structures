@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property string $name
  * @property string $arn
- * @property 'CREATING'|'UPDATING'|'DELETING'|'AVAILABLE'|'FAILED'|'DELETED'|null $status
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'AVAILABLE'|'FAILED'|'DELETED'|'MAINTENANCE'|null $status
  * @property string|null $endpoint
  * @property string|null $readerEndpoint
  * @property int<1024, 65535>|null $port

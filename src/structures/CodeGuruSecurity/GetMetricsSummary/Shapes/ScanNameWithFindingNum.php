@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\GetMetricsSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int|null $findingNumber
  * @property string|null $scanName
+ * @property int|null $findingNumber
  */
 class ScanNameWithFindingNum extends Shape
 {
     /**
      * @param array{
-     *     findingNumber?: int|null,
-     *     scanName?: string|null
+     *     scanName?: string|null,
+     *     findingNumber?: int|null
      * } $args
      */
     public function __construct(array $args = [])

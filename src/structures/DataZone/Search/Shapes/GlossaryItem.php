@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED' $status
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
+ * @property list<'ASSET_GOVERNED_TERMS'>|null $usageRestrictions
  */
 class GlossaryItem extends Shape
 {
@@ -31,7 +32,8 @@ class GlossaryItem extends Shape
      *     owningProjectId: string,
      *     status: 'DISABLED'|'ENABLED',
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     updatedBy?: string|null
+     *     updatedBy?: string|null,
+     *     usageRestrictions?: list<'ASSET_GOVERNED_TERMS'>|null
      * } $args
      */
     public function __construct(array $args)

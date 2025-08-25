@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TermRelations|null $termRelations
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
+ * @property list<'ASSET_GOVERNED_TERMS'>|null $usageRestrictions
  */
 class GetGlossaryTermResponse extends Response
 {

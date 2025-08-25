@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\ListScans;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $nextToken
  * @property list<Shapes\ScanSummary>|null $summaries
+ * @property string|null $nextToken
  */
 class ListScansResponse extends Response
 {

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'DISABLED'|'ENABLED' $status
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
+ * @property list<'ASSET_GOVERNED_TERMS'>|null $usageRestrictions
  */
 class GetGlossaryResponse extends Response
 {

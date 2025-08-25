@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property string $owningProjectId
  * @property 'DISABLED'|'ENABLED'|null $status
+ * @property list<'ASSET_GOVERNED_TERMS'>|null $usageRestrictions
  */
 class UpdateGlossaryResponse extends Response
 {

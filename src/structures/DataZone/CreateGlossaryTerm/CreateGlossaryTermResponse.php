@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $shortDescription
  * @property 'ENABLED'|'DISABLED' $status
  * @property Shapes\TermRelations|null $termRelations
+ * @property list<'ASSET_GOVERNED_TERMS'>|null $usageRestrictions
  */
 class CreateGlossaryTermResponse extends Response
 {

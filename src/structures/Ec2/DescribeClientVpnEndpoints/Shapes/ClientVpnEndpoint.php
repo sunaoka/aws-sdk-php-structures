@@ -30,6 +30,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClientLoginBannerResponseOptions|null $ClientLoginBannerOptions
  * @property ClientRouteEnforcementResponseOptions|null $ClientRouteEnforcementOptions
  * @property bool|null $DisconnectOnSessionTimeout
+ * @property 'ipv4'|'ipv6'|'dual-stack'|null $EndpointIpAddressType
+ * @property 'ipv4'|'ipv6'|'dual-stack'|null $TrafficIpAddressType
  */
 class ClientVpnEndpoint extends Shape
 {
@@ -59,7 +61,9 @@ class ClientVpnEndpoint extends Shape
      *     SessionTimeoutHours?: int|null,
      *     ClientLoginBannerOptions?: ClientLoginBannerResponseOptions|null,
      *     ClientRouteEnforcementOptions?: ClientRouteEnforcementResponseOptions|null,
-     *     DisconnectOnSessionTimeout?: bool|null
+     *     DisconnectOnSessionTimeout?: bool|null,
+     *     EndpointIpAddressType?: 'ipv4'|'ipv6'|'dual-stack'|null,
+     *     TrafficIpAddressType?: 'ipv4'|'ipv6'|'dual-stack'|null
      * } $args
      */
     public function __construct(array $args = [])
