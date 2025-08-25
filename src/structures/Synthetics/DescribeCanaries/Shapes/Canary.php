@@ -21,6 +21,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcConfigOutput|null $VpcConfig
  * @property VisualReferenceOutput|null $VisualReference
  * @property 'AUTOMATIC'|'OFF'|null $ProvisionedResourceCleanup
+ * @property list<BrowserConfig>|null $BrowserConfigs
+ * @property list<EngineConfig>|null $EngineConfigs
+ * @property list<VisualReferenceOutput>|null $VisualReferences
  * @property array<string, string>|null $Tags
  * @property ArtifactConfigOutput|null $ArtifactConfig
  * @property DryRunConfigOutput|null $DryRunConfig
@@ -45,6 +48,9 @@ class Canary extends Shape
      *     VpcConfig?: VpcConfigOutput|null,
      *     VisualReference?: VisualReferenceOutput|null,
      *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null,
+     *     BrowserConfigs?: list<BrowserConfig>|null,
+     *     EngineConfigs?: list<EngineConfig>|null,
+     *     VisualReferences?: list<VisualReferenceOutput>|null,
      *     Tags?: array<string, string>|null,
      *     ArtifactConfig?: ArtifactConfigOutput|null,
      *     DryRunConfig?: DryRunConfigOutput|null

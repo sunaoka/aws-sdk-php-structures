@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  * @property Shapes\AIPromptTemplateConfiguration|null $templateConfiguration
  * @property string|null $description
+ * @property string|null $modelId
  */
 class UpdateAIPromptRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateAIPromptRequest extends Request
      *     aiPromptId: string,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
      *     templateConfiguration?: Shapes\AIPromptTemplateConfiguration|null,
-     *     description?: string|null
+     *     description?: string|null,
+     *     modelId?: string|null
      * } $args
      */
     public function __construct(array $args)

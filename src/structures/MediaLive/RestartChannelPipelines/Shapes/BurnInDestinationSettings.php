@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FIXED'|'SCALED'|null $TeletextGridControl
  * @property int<0, max>|null $XPosition
  * @property int<0, max>|null $YPosition
+ * @property 'ROWS_16'|'ROWS_20'|'ROWS_24'|null $SubtitleRows
  */
 class BurnInDestinationSettings extends Shape
 {
@@ -43,7 +44,8 @@ class BurnInDestinationSettings extends Shape
      *     ShadowYOffset?: int|null,
      *     TeletextGridControl?: 'FIXED'|'SCALED'|null,
      *     XPosition?: int<0, max>|null,
-     *     YPosition?: int<0, max>|null
+     *     YPosition?: int<0, max>|null,
+     *     SubtitleRows?: 'ROWS_16'|'ROWS_20'|'ROWS_24'|null
      * } $args
      */
     public function __construct(array $args = [])

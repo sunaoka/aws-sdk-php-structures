@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<BaseScreenshot>|null $BaseScreenshots
  * @property string $BaseCanaryRunId
+ * @property 'CHROME'|'FIREFOX'|null $BrowserType
  */
 class VisualReferenceInput extends Shape
 {
     /**
      * @param array{
      *     BaseScreenshots?: list<BaseScreenshot>|null,
-     *     BaseCanaryRunId: string
+     *     BaseCanaryRunId: string,
+     *     BrowserType?: 'CHROME'|'FIREFOX'|null
      * } $args
      */
     public function __construct(array $args)

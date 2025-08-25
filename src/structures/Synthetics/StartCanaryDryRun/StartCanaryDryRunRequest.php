@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ArtifactS3Location
  * @property Shapes\ArtifactConfigInput|null $ArtifactConfig
  * @property 'AUTOMATIC'|'OFF'|null $ProvisionedResourceCleanup
+ * @property list<Shapes\BrowserConfig>|null $BrowserConfigs
+ * @property list<Shapes\VisualReferenceInput>|null $VisualReferences
  */
 class StartCanaryDryRunRequest extends Request
 {
@@ -33,7 +35,9 @@ class StartCanaryDryRunRequest extends Request
      *     VisualReference?: Shapes\VisualReferenceInput|null,
      *     ArtifactS3Location?: string|null,
      *     ArtifactConfig?: Shapes\ArtifactConfigInput|null,
-     *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null
+     *     ProvisionedResourceCleanup?: 'AUTOMATIC'|'OFF'|null,
+     *     BrowserConfigs?: list<Shapes\BrowserConfig>|null,
+     *     VisualReferences?: list<Shapes\VisualReferenceInput>|null
      * } $args
      */
     public function __construct(array $args)
