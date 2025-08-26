@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $forms
  * @property list<DetailedGlossaryTerm>|null $glossaryTerms
+ * @property list<DetailedGlossaryTerm>|null $governedGlossaryTerms
  * @property list<TimeSeriesDataPointSummaryFormOutput>|null $latestTimeSeriesDataPointForms
  * @property string|null $owningProjectId
  */
@@ -24,6 +25,7 @@ class AssetListing extends Shape
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     forms?: string|null,
      *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
+     *     governedGlossaryTerms?: list<DetailedGlossaryTerm>|null,
      *     latestTimeSeriesDataPointForms?: list<TimeSeriesDataPointSummaryFormOutput>|null,
      *     owningProjectId?: string|null
      * } $args

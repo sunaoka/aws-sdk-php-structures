@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $entityRevision
  * @property string|null $entityType
  * @property list<DetailedGlossaryTerm>|null $glossaryTerms
+ * @property list<DetailedGlossaryTerm>|null $governedGlossaryTerms
  * @property string|null $listingCreatedBy
  * @property string|null $listingId
  * @property string|null $listingRevision
@@ -30,6 +31,7 @@ class AssetListingItem extends Shape
      *     entityRevision?: string|null,
      *     entityType?: string|null,
      *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
+     *     governedGlossaryTerms?: list<DetailedGlossaryTerm>|null,
      *     listingCreatedBy?: string|null,
      *     listingId?: string|null,
      *     listingRevision?: string|null,

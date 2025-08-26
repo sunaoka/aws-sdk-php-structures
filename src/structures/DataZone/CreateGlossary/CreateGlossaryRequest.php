@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $owningProjectIdentifier
  * @property 'DISABLED'|'ENABLED'|null $status
+ * @property list<'ASSET_GOVERNED_TERMS'>|null $usageRestrictions
  */
 class CreateGlossaryRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateGlossaryRequest extends Request
      *     domainIdentifier: string,
      *     name: string,
      *     owningProjectIdentifier: string,
-     *     status?: 'DISABLED'|'ENABLED'|null
+     *     status?: 'DISABLED'|'ENABLED'|null,
+     *     usageRestrictions?: list<'ASSET_GOVERNED_TERMS'>|null
      * } $args
      */
     public function __construct(array $args)

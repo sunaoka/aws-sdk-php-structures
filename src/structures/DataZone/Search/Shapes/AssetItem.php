@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $firstRevisionCreatedAt
  * @property string|null $firstRevisionCreatedBy
  * @property list<string>|null $glossaryTerms
+ * @property list<string>|null $governedGlossaryTerms
  * @property string $identifier
  * @property string $name
  * @property string $owningProjectId
@@ -33,6 +34,7 @@ class AssetItem extends Shape
      *     firstRevisionCreatedAt?: \Aws\Api\DateTimeResult|null,
      *     firstRevisionCreatedBy?: string|null,
      *     glossaryTerms?: list<string>|null,
+     *     governedGlossaryTerms?: list<string>|null,
      *     identifier: string,
      *     name: string,
      *     owningProjectId: string,

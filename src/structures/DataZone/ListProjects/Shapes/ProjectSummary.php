@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ProjectDeletionError>|null $failureReasons
  * @property string $id
  * @property string $name
- * @property 'ACTIVE'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|null $projectStatus
+ * @property 'ACTIVE'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'MOVING'|null $projectStatus
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class ProjectSummary extends Shape
@@ -28,7 +28,7 @@ class ProjectSummary extends Shape
      *     failureReasons?: list<ProjectDeletionError>|null,
      *     id: string,
      *     name: string,
-     *     projectStatus?: 'ACTIVE'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|null,
+     *     projectStatus?: 'ACTIVE'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'MOVING'|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $IngressPackets
  * @property string|null $EgressPackets
  * @property string|null $ClientIp
+ * @property string|null $ClientIpv6Address
  * @property string|null $CommonName
  * @property ClientVpnConnectionStatus|null $Status
  * @property string|null $ConnectionEndTime
@@ -34,6 +35,7 @@ class ClientVpnConnection extends Shape
      *     IngressPackets?: string|null,
      *     EgressPackets?: string|null,
      *     ClientIp?: string|null,
+     *     ClientIpv6Address?: string|null,
      *     CommonName?: string|null,
      *     Status?: ClientVpnConnectionStatus|null,
      *     ConnectionEndTime?: string|null,
