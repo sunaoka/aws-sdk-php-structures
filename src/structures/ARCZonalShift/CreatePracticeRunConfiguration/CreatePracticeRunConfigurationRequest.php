@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $blockedWindows
  * @property list<string>|null $blockedDates
  * @property list<Shapes\ControlCondition>|null $blockingAlarms
+ * @property list<string>|null $allowedWindows
  * @property list<Shapes\ControlCondition> $outcomeAlarms
  */
 class CreatePracticeRunConfigurationRequest extends Request
@@ -19,6 +20,7 @@ class CreatePracticeRunConfigurationRequest extends Request
      *     blockedWindows?: list<string>|null,
      *     blockedDates?: list<string>|null,
      *     blockingAlarms?: list<Shapes\ControlCondition>|null,
+     *     allowedWindows?: list<string>|null,
      *     outcomeAlarms: list<Shapes\ControlCondition>
      * } $args
      */
