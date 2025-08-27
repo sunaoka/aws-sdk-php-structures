@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property Shapes\Websocket|null $Websocket
  * @property Shapes\ConnectionCredentials|null $ConnectionCredentials
- * @property Shapes\ConnectionData|null $WebRTCConnection
+ * @property Shapes\WebRTCConnection|null $WebRTCConnection
  */
 class CreateParticipantConnectionResponse extends Response
 {
