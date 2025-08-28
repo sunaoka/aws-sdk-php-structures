@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ClusterOrchestrator|null $Orchestrator
  * @property 'Automatic'|'None'|null $NodeRecovery
  * @property 'Continuous'|null $NodeProvisioningMode
+ * @property string|null $ClusterRole
+ * @property Shapes\ClusterAutoScalingConfigOutput|null $AutoScaling
  */
 class DescribeClusterResponse extends Response
 {

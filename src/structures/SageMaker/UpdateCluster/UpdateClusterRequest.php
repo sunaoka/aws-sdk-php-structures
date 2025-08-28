@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ClusterRestrictedInstanceGroupSpecification>|null $RestrictedInstanceGroups
  * @property 'Automatic'|'None'|null $NodeRecovery
  * @property list<string>|null $InstanceGroupsToDelete
+ * @property string|null $ClusterRole
+ * @property Shapes\ClusterAutoScalingConfig|null $AutoScaling
  */
 class UpdateClusterRequest extends Request
 {
@@ -19,7 +21,9 @@ class UpdateClusterRequest extends Request
      *     InstanceGroups?: list<Shapes\ClusterInstanceGroupSpecification>|null,
      *     RestrictedInstanceGroups?: list<Shapes\ClusterRestrictedInstanceGroupSpecification>|null,
      *     NodeRecovery?: 'Automatic'|'None'|null,
-     *     InstanceGroupsToDelete?: list<string>|null
+     *     InstanceGroupsToDelete?: list<string>|null,
+     *     ClusterRole?: string|null,
+     *     AutoScaling?: Shapes\ClusterAutoScalingConfig|null
      * } $args
      */
     public function __construct(array $args)
