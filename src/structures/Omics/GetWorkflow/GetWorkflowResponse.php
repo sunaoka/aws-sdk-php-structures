@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'GPU'|null $accelerators
  * @property 'STATIC'|'DYNAMIC'|null $storageType
  * @property string|null $uuid
+ * @property Shapes\ContainerRegistryMap|null $containerRegistryMap
  * @property string|null $readme
  * @property Shapes\DefinitionRepositoryDetails|null $definitionRepositoryDetails
  * @property string|null $readmePath

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null $Channel
  * @property RoutingProfileReference|null $RoutingProfile
  * @property string|null $RoutingStepExpression
+ * @property AgentStatusIdentifier|null $AgentStatus
  */
 class Dimensions extends Shape
 {
@@ -17,7 +18,8 @@ class Dimensions extends Shape
      *     Queue?: QueueReference|null,
      *     Channel?: 'VOICE'|'CHAT'|'TASK'|'EMAIL'|null,
      *     RoutingProfile?: RoutingProfileReference|null,
-     *     RoutingStepExpression?: string|null
+     *     RoutingStepExpression?: string|null,
+     *     AgentStatus?: AgentStatusIdentifier|null
      * } $args
      */
     public function __construct(array $args = [])

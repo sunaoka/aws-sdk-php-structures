@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property string|null $uuid
  * @property string|null $workflowBucketOwnerId
+ * @property Shapes\ContainerRegistryMap|null $containerRegistryMap
  * @property string|null $readme
  * @property Shapes\DefinitionRepositoryDetails|null $definitionRepositoryDetails
  * @property string|null $readmePath

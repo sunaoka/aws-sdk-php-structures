@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 100000>|null $storageCapacity
  * @property array<string, string>|null $tags
  * @property string|null $workflowBucketOwnerId
+ * @property Shapes\ContainerRegistryMap|null $containerRegistryMap
+ * @property string|null $containerRegistryMapUri
  * @property string|null $readmeMarkdown
  * @property string|null $parameterTemplatePath
  * @property string|null $readmePath
@@ -43,6 +45,8 @@ class CreateWorkflowVersionRequest extends Request
      *     storageCapacity?: int<0, 100000>|null,
      *     tags?: array<string, string>|null,
      *     workflowBucketOwnerId?: string|null,
+     *     containerRegistryMap?: Shapes\ContainerRegistryMap|null,
+     *     containerRegistryMapUri?: string|null,
      *     readmeMarkdown?: string|null,
      *     parameterTemplatePath?: string|null,
      *     readmePath?: string|null,
