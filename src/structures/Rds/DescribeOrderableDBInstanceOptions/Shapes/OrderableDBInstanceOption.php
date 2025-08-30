@@ -41,6 +41,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $MinStorageThroughputPerIops
  * @property double|null $MaxStorageThroughputPerIops
  * @property bool|null $SupportsDedicatedLogVolume
+ * @property bool|null $SupportsHttpEndpoint
  */
 class OrderableDBInstanceOption extends Shape
 {
@@ -81,7 +82,8 @@ class OrderableDBInstanceOption extends Shape
      *     MaxStorageThroughputPerDbInstance?: int|null,
      *     MinStorageThroughputPerIops?: double|null,
      *     MaxStorageThroughputPerIops?: double|null,
-     *     SupportsDedicatedLogVolume?: bool|null
+     *     SupportsDedicatedLogVolume?: bool|null,
+     *     SupportsHttpEndpoint?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

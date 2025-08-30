@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 100000>|null $priority
  * @property Shapes\RunParameters|null $parameters
  * @property int<0, 100000>|null $storageCapacity
- * @property string|null $outputUri
+ * @property string $outputUri
  * @property 'OFF'|'FATAL'|'ERROR'|'ALL'|null $logLevel
  * @property array<string, string>|null $tags
  * @property string $requestId
@@ -40,7 +40,7 @@ class StartRunRequest extends Request
      *     priority?: int<0, 100000>|null,
      *     parameters?: Shapes\RunParameters|null,
      *     storageCapacity?: int<0, 100000>|null,
-     *     outputUri?: string|null,
+     *     outputUri: string,
      *     logLevel?: 'OFF'|'FATAL'|'ERROR'|'ALL'|null,
      *     tags?: array<string, string>|null,
      *     requestId: string,

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property JobProgressReport|null $JobProgressReport
  * @property string|null $DataAccessRoleArn
  * @property string|null $Message
+ * @property 'strict'|'structure-only'|'minimal'|null $ValidationLevel
  */
 class ImportJobProperties extends Shape
 {
@@ -31,7 +32,8 @@ class ImportJobProperties extends Shape
      *     JobOutputDataConfig?: OutputDataConfig|null,
      *     JobProgressReport?: JobProgressReport|null,
      *     DataAccessRoleArn?: string|null,
-     *     Message?: string|null
+     *     Message?: string|null,
+     *     ValidationLevel?: 'strict'|'structure-only'|'minimal'|null
      * } $args
      */
     public function __construct(array $args)

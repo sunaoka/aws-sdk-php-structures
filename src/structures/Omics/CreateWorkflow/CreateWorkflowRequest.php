@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $requestId
  * @property 'GPU'|null $accelerators
  * @property 'STATIC'|'DYNAMIC'|null $storageType
+ * @property Shapes\ContainerRegistryMap|null $containerRegistryMap
+ * @property string|null $containerRegistryMapUri
  * @property string|null $readmeMarkdown
  * @property string|null $parameterTemplatePath
  * @property string|null $readmePath
@@ -40,6 +42,8 @@ class CreateWorkflowRequest extends Request
      *     requestId: string,
      *     accelerators?: 'GPU'|null,
      *     storageType?: 'STATIC'|'DYNAMIC'|null,
+     *     containerRegistryMap?: Shapes\ContainerRegistryMap|null,
+     *     containerRegistryMapUri?: string|null,
      *     readmeMarkdown?: string|null,
      *     parameterTemplatePath?: string|null,
      *     readmePath?: string|null,

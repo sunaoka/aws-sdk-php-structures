@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property Shapes\Filters $Filters
- * @property list<'QUEUE'|'CHANNEL'|'ROUTING_PROFILE'|'ROUTING_STEP_EXPRESSION'>|null $Groupings
+ * @property list<'QUEUE'|'CHANNEL'|'ROUTING_PROFILE'|'ROUTING_STEP_EXPRESSION'|'AGENT_STATUS'>|null $Groupings
  * @property list<Shapes\HistoricalMetric> $HistoricalMetrics
  * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
@@ -22,7 +22,7 @@ class GetMetricDataRequest extends Request
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
      *     Filters: Shapes\Filters,
-     *     Groupings?: list<'QUEUE'|'CHANNEL'|'ROUTING_PROFILE'|'ROUTING_STEP_EXPRESSION'>|null,
+     *     Groupings?: list<'QUEUE'|'CHANNEL'|'ROUTING_PROFILE'|'ROUTING_STEP_EXPRESSION'|'AGENT_STATUS'>|null,
      *     HistoricalMetrics: list<Shapes\HistoricalMetric>,
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 100>|null

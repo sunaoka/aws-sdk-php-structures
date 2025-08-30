@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
  * @property 'FOREIGN'|'ALL'|'FEDERATED'|null $ResourceShareType
- * @property list<'NAME'>|null $AttributesToGet
+ * @property list<'NAME'|'TARGET_DATABASE'>|null $AttributesToGet
  */
 class GetDatabasesRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetDatabasesRequest extends Request
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 100>|null,
      *     ResourceShareType?: 'FOREIGN'|'ALL'|'FEDERATED'|null,
-     *     AttributesToGet?: list<'NAME'>|null
+     *     AttributesToGet?: list<'NAME'|'TARGET_DATABASE'>|null
      * } $args
      */
     public function __construct(array $args = [])
