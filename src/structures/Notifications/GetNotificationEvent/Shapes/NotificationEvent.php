@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property array<string, TextPartValue> $textParts
  * @property list<MediaElement> $media
+ * @property string|null $organizationalUnitId
  */
 class NotificationEvent extends Shape
 {
@@ -39,7 +40,8 @@ class NotificationEvent extends Shape
      *     startTime?: \Aws\Api\DateTimeResult|null,
      *     endTime?: \Aws\Api\DateTimeResult|null,
      *     textParts: array<string, TextPartValue>,
-     *     media: list<MediaElement>
+     *     media: list<MediaElement>,
+     *     organizationalUnitId?: string|null
      * } $args
      */
     public function __construct(array $args)
