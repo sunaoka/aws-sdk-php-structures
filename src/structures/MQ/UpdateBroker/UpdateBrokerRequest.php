@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MQ\UpdateBroker;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'SIMPLE'|'LDAP'|null $AuthenticationStrategy
+ * @property 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null $AuthenticationStrategy
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string $BrokerId
  * @property Shapes\ConfigurationId|null $Configuration
@@ -21,7 +21,7 @@ class UpdateBrokerRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationStrategy?: 'SIMPLE'|'LDAP'|null,
+     *     AuthenticationStrategy?: 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null,
      *     AutoMinorVersionUpgrade?: bool|null,
      *     BrokerId: string,
      *     Configuration?: Shapes\ConfigurationId|null,

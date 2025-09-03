@@ -51,6 +51,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AwsBackupRecoveryPointArn
  * @property bool|null $EnableLimitlessDatabase
  * @property string|null $CACertificateIdentifier
+ * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -101,7 +102,8 @@ class ModifyDBClusterRequest extends Request
      *     EnableLocalWriteForwarding?: bool|null,
      *     AwsBackupRecoveryPointArn?: string|null,
      *     EnableLimitlessDatabase?: bool|null,
-     *     CACertificateIdentifier?: string|null
+     *     CACertificateIdentifier?: string|null,
+     *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null
      * } $args
      */
     public function __construct(array $args)

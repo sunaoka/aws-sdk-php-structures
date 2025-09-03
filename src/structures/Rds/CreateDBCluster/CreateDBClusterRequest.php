@@ -62,6 +62,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnableLocalWriteForwarding
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
+ * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  */
 class CreateDBClusterRequest extends Request
 {
@@ -123,7 +124,8 @@ class CreateDBClusterRequest extends Request
      *     MasterUserSecretKmsKeyId?: string|null,
      *     EnableLocalWriteForwarding?: bool|null,
      *     CACertificateIdentifier?: string|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null
      * } $args
      */
     public function __construct(array $args)

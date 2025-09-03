@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED' $queryLogStatus
  * @property 'ENABLED'|'DISABLED'|null $jobLogStatus
  * @property 'SPARK'|'CLEAN_ROOMS_SQL'|null $analyticsEngine
+ * @property list<'ADD_MEMBER'>|null $autoApprovedChangeTypes
  */
 class Collaboration extends Shape
 {
@@ -39,7 +40,8 @@ class Collaboration extends Shape
      *     dataEncryptionMetadata?: DataEncryptionMetadata|null,
      *     queryLogStatus: 'ENABLED'|'DISABLED',
      *     jobLogStatus?: 'ENABLED'|'DISABLED'|null,
-     *     analyticsEngine?: 'SPARK'|'CLEAN_ROOMS_SQL'|null
+     *     analyticsEngine?: 'SPARK'|'CLEAN_ROOMS_SQL'|null,
+     *     autoApprovedChangeTypes?: list<'ADD_MEMBER'>|null
      * } $args
      */
     public function __construct(array $args)
