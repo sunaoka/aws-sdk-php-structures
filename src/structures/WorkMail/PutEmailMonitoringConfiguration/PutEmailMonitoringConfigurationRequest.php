@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OrganizationId
- * @property string $RoleArn
+ * @property string|null $RoleArn
  * @property string $LogGroupArn
  */
 class PutEmailMonitoringConfigurationRequest extends Request
@@ -14,7 +14,7 @@ class PutEmailMonitoringConfigurationRequest extends Request
     /**
      * @param array{
      *     OrganizationId: string,
-     *     RoleArn: string,
+     *     RoleArn?: string|null,
      *     LogGroupArn: string
      * } $args
      */

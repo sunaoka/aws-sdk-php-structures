@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AGGREGATE'|'CHILD'|'NONE'|null $aggregationEventType
  * @property string|null $aggregateNotificationEventArn
  * @property AggregationSummary|null $aggregationSummary
+ * @property string|null $organizationalUnitId
  */
 class NotificationEventOverview extends Shape
 {
@@ -25,7 +26,8 @@ class NotificationEventOverview extends Shape
      *     notificationEvent: NotificationEventSummary,
      *     aggregationEventType?: 'AGGREGATE'|'CHILD'|'NONE'|null,
      *     aggregateNotificationEventArn?: string|null,
-     *     aggregationSummary?: AggregationSummary|null
+     *     aggregationSummary?: AggregationSummary|null,
+     *     organizationalUnitId?: string|null
      * } $args
      */
     public function __construct(array $args)
