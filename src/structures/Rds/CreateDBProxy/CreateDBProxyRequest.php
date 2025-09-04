@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $IdleClientTimeout
  * @property bool|null $DebugLogging
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'IPV4'|'IPV6'|'DUAL'|null $EndpointNetworkType
+ * @property 'IPV4'|'IPV6'|null $TargetConnectionNetworkType
  */
 class CreateDBProxyRequest extends Request
 {
@@ -29,7 +31,9 @@ class CreateDBProxyRequest extends Request
      *     RequireTLS?: bool|null,
      *     IdleClientTimeout?: int|null,
      *     DebugLogging?: bool|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     EndpointNetworkType?: 'IPV4'|'IPV6'|'DUAL'|null,
+     *     TargetConnectionNetworkType?: 'IPV4'|'IPV6'|null
      * } $args
      */
     public function __construct(array $args)

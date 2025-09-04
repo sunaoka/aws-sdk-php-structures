@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $lastModifiedDate
  * @property string|null $collectionEndpoint
  * @property string|null $dashboardEndpoint
+ * @property FipsEndpoints|null $fipsEndpoints
  * @property string|null $failureCode
  * @property string|null $failureMessage
  */
@@ -36,6 +37,7 @@ class CollectionDetail extends Shape
      *     lastModifiedDate?: int|null,
      *     collectionEndpoint?: string|null,
      *     dashboardEndpoint?: string|null,
+     *     fipsEndpoints?: FipsEndpoints|null,
      *     failureCode?: string|null,
      *     failureMessage?: string|null
      * } $args

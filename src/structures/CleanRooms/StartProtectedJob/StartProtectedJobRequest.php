@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $membershipIdentifier
  * @property Shapes\ProtectedJobParameters $jobParameters
  * @property Shapes\ProtectedJobResultConfigurationInput|null $resultConfiguration
+ * @property Shapes\ProtectedJobComputeConfiguration|null $computeConfiguration
  */
 class StartProtectedJobRequest extends Request
 {
@@ -17,7 +18,8 @@ class StartProtectedJobRequest extends Request
      *     type: 'PYSPARK',
      *     membershipIdentifier: string,
      *     jobParameters: Shapes\ProtectedJobParameters,
-     *     resultConfiguration?: Shapes\ProtectedJobResultConfigurationInput|null
+     *     resultConfiguration?: Shapes\ProtectedJobResultConfigurationInput|null,
+     *     computeConfiguration?: Shapes\ProtectedJobComputeConfiguration|null
      * } $args
      */
     public function __construct(array $args)
