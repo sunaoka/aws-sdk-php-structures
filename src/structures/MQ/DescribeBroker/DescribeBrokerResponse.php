@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ActionRequired>|null $ActionsRequired
- * @property 'SIMPLE'|'LDAP'|null $AuthenticationStrategy
+ * @property 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null $AuthenticationStrategy
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string|null $BrokerArn
  * @property string|null $BrokerId
@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LdapServerMetadataOutput|null $LdapServerMetadata
  * @property Shapes\LogsSummary|null $Logs
  * @property Shapes\WeeklyStartTime|null $MaintenanceWindowStartTime
- * @property 'SIMPLE'|'LDAP'|null $PendingAuthenticationStrategy
+ * @property 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null $PendingAuthenticationStrategy
  * @property string|null $PendingEngineVersion
  * @property string|null $PendingHostInstanceType
  * @property Shapes\LdapServerMetadataOutput|null $PendingLdapServerMetadata

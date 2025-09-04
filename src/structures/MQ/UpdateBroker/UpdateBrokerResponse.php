@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MQ\UpdateBroker;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'SIMPLE'|'LDAP'|null $AuthenticationStrategy
+ * @property 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null $AuthenticationStrategy
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string|null $BrokerId
  * @property Shapes\ConfigurationId|null $Configuration

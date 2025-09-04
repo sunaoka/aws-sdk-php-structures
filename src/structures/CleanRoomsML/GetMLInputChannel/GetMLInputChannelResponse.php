@@ -5,12 +5,8 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\GetMLInputChannel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createTime
- * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $membershipIdentifier
  * @property string $collaborationIdentifier
- * @property Shapes\InputChannel $inputChannel
- * @property string|null $protectedQueryIdentifier
  * @property string $mlInputChannelArn
  * @property string $name
  * @property list<string> $configuredModelAlgorithmAssociations
@@ -18,9 +14,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\StatusDetails|null $statusDetails
  * @property int<1, 30> $retentionInDays
  * @property int<0, 100000000000>|null $numberOfRecords
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult $createTime
+ * @property \Aws\Api\DateTimeResult $updateTime
+ * @property Shapes\InputChannel $inputChannel
+ * @property string|null $protectedQueryIdentifier
  * @property double|null $numberOfFiles
  * @property double|null $sizeInGb
- * @property string|null $description
  * @property string|null $kmsKeyArn
  * @property array<string, string>|null $tags
  */

@@ -5,9 +5,6 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\GetCollaborationMLInputChannel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createTime
- * @property \Aws\Api\DateTimeResult $updateTime
- * @property string $creatorAccountId
  * @property string $membershipIdentifier
  * @property string $collaborationIdentifier
  * @property string $mlInputChannelArn
@@ -18,6 +15,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<1, 30> $retentionInDays
  * @property int<0, 100000000000>|null $numberOfRecords
  * @property string|null $description
+ * @property \Aws\Api\DateTimeResult $createTime
+ * @property \Aws\Api\DateTimeResult $updateTime
+ * @property string $creatorAccountId
  */
 class GetCollaborationMLInputChannelResponse extends Response
 {

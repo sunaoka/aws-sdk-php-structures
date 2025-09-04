@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property Shapes\PaymentConfiguration|null $creatorPaymentConfiguration
  * @property 'SPARK'|'CLEAN_ROOMS_SQL'|null $analyticsEngine
+ * @property list<'ADD_MEMBER'>|null $autoApprovedChangeRequestTypes
  */
 class CreateCollaborationRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateCollaborationRequest extends Request
      *     jobLogStatus?: 'ENABLED'|'DISABLED'|null,
      *     tags?: array<string, string>|null,
      *     creatorPaymentConfiguration?: Shapes\PaymentConfiguration|null,
-     *     analyticsEngine?: 'SPARK'|'CLEAN_ROOMS_SQL'|null
+     *     analyticsEngine?: 'SPARK'|'CLEAN_ROOMS_SQL'|null,
+     *     autoApprovedChangeRequestTypes?: list<'ADD_MEMBER'>|null
      * } $args
      */
     public function __construct(array $args)

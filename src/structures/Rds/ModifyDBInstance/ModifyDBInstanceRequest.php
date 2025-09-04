@@ -66,6 +66,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Engine
  * @property bool|null $DedicatedLogVolume
  * @property bool|null $MultiTenant
+ * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  */
 class ModifyDBInstanceRequest extends Request
 {
@@ -131,7 +132,8 @@ class ModifyDBInstanceRequest extends Request
      *     MasterUserSecretKmsKeyId?: string|null,
      *     Engine?: string|null,
      *     DedicatedLogVolume?: bool|null,
-     *     MultiTenant?: bool|null
+     *     MultiTenant?: bool|null,
+     *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null
      * } $args
      */
     public function __construct(array $args)

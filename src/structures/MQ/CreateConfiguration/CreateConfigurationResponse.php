@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $Arn
- * @property 'SIMPLE'|'LDAP'|null $AuthenticationStrategy
+ * @property 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null $AuthenticationStrategy
  * @property \Aws\Api\DateTimeResult|null $Created
  * @property string|null $Id
  * @property Shapes\ConfigurationRevision|null $LatestRevision
