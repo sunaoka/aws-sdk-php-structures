@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\ClusterRestrictedInstanceGroupDetails>|null $RestrictedInstanceGroups
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property Shapes\ClusterOrchestrator|null $Orchestrator
+ * @property Shapes\ClusterTieredStorageConfig|null $TieredStorageConfig
  * @property 'Automatic'|'None'|null $NodeRecovery
  * @property 'Continuous'|null $NodeProvisioningMode
  * @property string|null $ClusterRole
