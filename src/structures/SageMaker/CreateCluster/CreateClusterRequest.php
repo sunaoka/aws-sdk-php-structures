@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\ClusterOrchestrator|null $Orchestrator
  * @property 'Automatic'|'None'|null $NodeRecovery
+ * @property Shapes\ClusterTieredStorageConfig|null $TieredStorageConfig
  * @property 'Continuous'|null $NodeProvisioningMode
  * @property string|null $ClusterRole
  * @property Shapes\ClusterAutoScalingConfig|null $AutoScaling
@@ -27,6 +28,7 @@ class CreateClusterRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     Orchestrator?: Shapes\ClusterOrchestrator|null,
      *     NodeRecovery?: 'Automatic'|'None'|null,
+     *     TieredStorageConfig?: Shapes\ClusterTieredStorageConfig|null,
      *     NodeProvisioningMode?: 'Continuous'|null,
      *     ClusterRole?: string|null,
      *     AutoScaling?: Shapes\ClusterAutoScalingConfig|null
