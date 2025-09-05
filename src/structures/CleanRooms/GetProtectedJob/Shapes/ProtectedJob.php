@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProtectedJobStatistics|null $statistics
  * @property ProtectedJobResult|null $result
  * @property ProtectedJobError|null $error
+ * @property ProtectedJobComputeConfiguration|null $computeConfiguration
  */
 class ProtectedJob extends Shape
 {
@@ -29,7 +30,8 @@ class ProtectedJob extends Shape
      *     resultConfiguration?: ProtectedJobResultConfigurationOutput|null,
      *     statistics?: ProtectedJobStatistics|null,
      *     result?: ProtectedJobResult|null,
-     *     error?: ProtectedJobError|null
+     *     error?: ProtectedJobError|null,
+     *     computeConfiguration?: ProtectedJobComputeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

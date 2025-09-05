@@ -20,6 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DebugLogging
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
  * @property \Aws\Api\DateTimeResult|null $UpdatedDate
+ * @property 'IPV4'|'IPV6'|'DUAL'|null $EndpointNetworkType
+ * @property 'IPV4'|'IPV6'|null $TargetConnectionNetworkType
  */
 class DBProxy extends Shape
 {
@@ -39,7 +41,9 @@ class DBProxy extends Shape
      *     IdleClientTimeout?: int|null,
      *     DebugLogging?: bool|null,
      *     CreatedDate?: \Aws\Api\DateTimeResult|null,
-     *     UpdatedDate?: \Aws\Api\DateTimeResult|null
+     *     UpdatedDate?: \Aws\Api\DateTimeResult|null,
+     *     EndpointNetworkType?: 'IPV4'|'IPV6'|'DUAL'|null,
+     *     TargetConnectionNetworkType?: 'IPV4'|'IPV6'|null
      * } $args
      */
     public function __construct(array $args = [])
