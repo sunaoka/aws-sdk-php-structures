@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ContentEncoding
  * @property string|null $ContentLanguage
  * @property string|null $ContentType
- * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expires
  * @property string|null $GrantFullControl
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
@@ -48,7 +48,7 @@ class CreateMultipartUploadRequest extends Request
      *     ContentEncoding?: string|null,
      *     ContentLanguage?: string|null,
      *     ContentType?: string|null,
-     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     Expires?: string|null,
      *     GrantFullControl?: string|null,
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,

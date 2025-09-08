@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ChecksumCRC64NVME
  * @property string|null $ChecksumSHA1
  * @property string|null $ChecksumSHA256
- * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expires
  * @property string|null $IfMatch
  * @property string|null $IfNoneMatch
  * @property string|null $GrantFullControl
@@ -67,7 +67,7 @@ class PutObjectRequest extends Request
      *     ChecksumCRC64NVME?: string|null,
      *     ChecksumSHA1?: string|null,
      *     ChecksumSHA256?: string|null,
-     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     Expires?: string|null,
      *     IfMatch?: string|null,
      *     IfNoneMatch?: string|null,
      *     GrantFullControl?: string|null,

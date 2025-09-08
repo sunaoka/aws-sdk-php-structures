@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfModifiedSince
  * @property string|null $CopySourceIfNoneMatch
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfUnmodifiedSince
- * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expires
  * @property string|null $GrantFullControl
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
@@ -64,7 +64,7 @@ class CopyObjectRequest extends Request
      *     CopySourceIfModifiedSince?: \Aws\Api\DateTimeResult|null,
      *     CopySourceIfNoneMatch?: string|null,
      *     CopySourceIfUnmodifiedSince?: \Aws\Api\DateTimeResult|null,
-     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     Expires?: string|null,
      *     GrantFullControl?: string|null,
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,
