@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property StandardsControlAssociationId $StandardsControlAssociationId
- * @property 'INVALID_INPUT'|'ACCESS_DENIED'|'NOT_FOUND'|'LIMIT_EXCEEDED' $ErrorCode
+ * @property 'INVALID_INPUT'|'ACCESS_DENIED'|'NOT_FOUND'|'RESOURCE_NOT_FOUND'|'LIMIT_EXCEEDED' $ErrorCode
  * @property string|null $ErrorReason
  */
 class UnprocessedStandardsControlAssociation extends Shape
@@ -14,7 +14,7 @@ class UnprocessedStandardsControlAssociation extends Shape
     /**
      * @param array{
      *     StandardsControlAssociationId: StandardsControlAssociationId,
-     *     ErrorCode: 'INVALID_INPUT'|'ACCESS_DENIED'|'NOT_FOUND'|'LIMIT_EXCEEDED',
+     *     ErrorCode: 'INVALID_INPUT'|'ACCESS_DENIED'|'NOT_FOUND'|'RESOURCE_NOT_FOUND'|'LIMIT_EXCEEDED',
      *     ErrorReason?: string|null
      * } $args
      */
