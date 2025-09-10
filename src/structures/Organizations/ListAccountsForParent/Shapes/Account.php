@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Email
  * @property string|null $Name
  * @property 'ACTIVE'|'SUSPENDED'|'PENDING_CLOSURE'|null $Status
+ * @property 'PENDING_ACTIVATION'|'ACTIVE'|'SUSPENDED'|'PENDING_CLOSURE'|'CLOSED'|null $State
  * @property 'INVITED'|'CREATED'|null $JoinedMethod
  * @property \Aws\Api\DateTimeResult|null $JoinedTimestamp
  */
@@ -22,6 +23,7 @@ class Account extends Shape
      *     Email?: string|null,
      *     Name?: string|null,
      *     Status?: 'ACTIVE'|'SUSPENDED'|'PENDING_CLOSURE'|null,
+     *     State?: 'PENDING_ACTIVATION'|'ACTIVE'|'SUSPENDED'|'PENDING_CLOSURE'|'CLOSED'|null,
      *     JoinedMethod?: 'INVITED'|'CREATED'|null,
      *     JoinedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args

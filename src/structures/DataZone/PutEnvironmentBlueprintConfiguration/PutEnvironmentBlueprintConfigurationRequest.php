@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $enabledRegions
  * @property string $environmentBlueprintIdentifier
  * @property string|null $environmentRolePermissionBoundary
+ * @property array<string, string>|null $globalParameters
  * @property string|null $manageAccessRoleArn
  * @property list<Shapes\ProvisioningConfiguration>|null $provisioningConfigurations
  * @property string|null $provisioningRoleArn
@@ -22,6 +23,7 @@ class PutEnvironmentBlueprintConfigurationRequest extends Request
      *     enabledRegions: list<string>,
      *     environmentBlueprintIdentifier: string,
      *     environmentRolePermissionBoundary?: string|null,
+     *     globalParameters?: array<string, string>|null,
      *     manageAccessRoleArn?: string|null,
      *     provisioningConfigurations?: list<Shapes\ProvisioningConfiguration>|null,
      *     provisioningRoleArn?: string|null,

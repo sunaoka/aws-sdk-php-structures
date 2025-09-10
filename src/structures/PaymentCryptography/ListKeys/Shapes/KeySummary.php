@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $KeyCheckValue
  * @property bool $Exportable
  * @property bool $Enabled
+ * @property 'PRIMARY'|'REPLICA'|null $MultiRegionKeyType
+ * @property string|null $PrimaryRegion
  */
 class KeySummary extends Shape
 {
@@ -21,7 +23,9 @@ class KeySummary extends Shape
      *     KeyAttributes: KeyAttributes,
      *     KeyCheckValue: string,
      *     Exportable: bool,
-     *     Enabled: bool
+     *     Enabled: bool,
+     *     MultiRegionKeyType?: 'PRIMARY'|'REPLICA'|null,
+     *     PrimaryRegion?: string|null
      * } $args
      */
     public function __construct(array $args)
