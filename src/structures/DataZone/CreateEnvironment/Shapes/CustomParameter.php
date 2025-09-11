@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $fieldType
  * @property bool|null $isEditable
  * @property bool|null $isOptional
+ * @property bool|null $isUpdateSupported
  * @property string $keyName
  */
 class CustomParameter extends Shape
@@ -21,6 +22,7 @@ class CustomParameter extends Shape
      *     fieldType: string,
      *     isEditable?: bool|null,
      *     isOptional?: bool|null,
+     *     isUpdateSupported?: bool|null,
      *     keyName: string
      * } $args
      */

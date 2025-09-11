@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DockerSettings|null $DockerSettings
  * @property AmazonQSettings|null $AmazonQSettings
  * @property UnifiedStudioSettings|null $UnifiedStudioSettings
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  */
 class DomainSettingsForUpdate extends Shape
 {
@@ -23,7 +24,8 @@ class DomainSettingsForUpdate extends Shape
      *     TrustedIdentityPropagationSettings?: TrustedIdentityPropagationSettings|null,
      *     DockerSettings?: DockerSettings|null,
      *     AmazonQSettings?: AmazonQSettings|null,
-     *     UnifiedStudioSettings?: UnifiedStudioSettings|null
+     *     UnifiedStudioSettings?: UnifiedStudioSettings|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|null
      * } $args
      */
     public function __construct(array $args = [])
