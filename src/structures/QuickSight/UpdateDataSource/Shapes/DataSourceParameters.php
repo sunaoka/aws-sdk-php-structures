@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TrinoParameters|null $TrinoParameters
  * @property BigQueryParameters|null $BigQueryParameters
  * @property ImpalaParameters|null $ImpalaParameters
+ * @property CustomConnectionParameters|null $CustomConnectionParameters
  */
 class DataSourceParameters extends Shape
 {
@@ -63,7 +64,8 @@ class DataSourceParameters extends Shape
      *     StarburstParameters?: StarburstParameters|null,
      *     TrinoParameters?: TrinoParameters|null,
      *     BigQueryParameters?: BigQueryParameters|null,
-     *     ImpalaParameters?: ImpalaParameters|null
+     *     ImpalaParameters?: ImpalaParameters|null,
+     *     CustomConnectionParameters?: CustomConnectionParameters|null
      * } $args
      */
     public function __construct(array $args = [])

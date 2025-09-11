@@ -7,7 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DBProxyName
  * @property 'MYSQL'|'POSTGRESQL'|'SQLSERVER' $EngineFamily
- * @property list<Shapes\UserAuthConfig> $Auth
+ * @property 'IAM_AUTH'|'NONE'|null $DefaultAuthScheme
+ * @property list<Shapes\UserAuthConfig>|null $Auth
  * @property string $RoleArn
  * @property list<string> $VpcSubnetIds
  * @property list<string>|null $VpcSecurityGroupIds
@@ -24,7 +25,8 @@ class CreateDBProxyRequest extends Request
      * @param array{
      *     DBProxyName: string,
      *     EngineFamily: 'MYSQL'|'POSTGRESQL'|'SQLSERVER',
-     *     Auth: list<Shapes\UserAuthConfig>,
+     *     DefaultAuthScheme?: 'IAM_AUTH'|'NONE'|null,
+     *     Auth?: list<Shapes\UserAuthConfig>|null,
      *     RoleArn: string,
      *     VpcSubnetIds: list<string>,
      *     VpcSecurityGroupIds?: list<string>|null,

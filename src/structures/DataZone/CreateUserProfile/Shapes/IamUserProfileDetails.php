@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $arn
+ * @property string|null $principalId
  */
 class IamUserProfileDetails extends Shape
 {
     /**
-     * @param array{arn?: string|null} $args
+     * @param array{
+     *     arn?: string|null,
+     *     principalId?: string|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DataPointMenuLabelOption|null $DataPointMenuLabelOption
  * @property DataPointTooltipOption|null $DataPointTooltipOption
  * @property DataQAEnabledOption|null $DataQAEnabledOption
+ * @property ExecutiveSummaryOption|null $ExecutiveSummaryOption
+ * @property DataStoriesSharingOption|null $DataStoriesSharingOption
  */
 class DashboardPublishOptions extends Shape
 {
@@ -33,7 +35,9 @@ class DashboardPublishOptions extends Shape
      *     DataPointDrillUpDownOption?: DataPointDrillUpDownOption|null,
      *     DataPointMenuLabelOption?: DataPointMenuLabelOption|null,
      *     DataPointTooltipOption?: DataPointTooltipOption|null,
-     *     DataQAEnabledOption?: DataQAEnabledOption|null
+     *     DataQAEnabledOption?: DataQAEnabledOption|null,
+     *     ExecutiveSummaryOption?: ExecutiveSummaryOption|null,
+     *     DataStoriesSharingOption?: DataStoriesSharingOption|null
      * } $args
      */
     public function __construct(array $args = [])
