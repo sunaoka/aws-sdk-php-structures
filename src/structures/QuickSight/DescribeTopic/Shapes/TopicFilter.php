@@ -10,12 +10,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FilterName
  * @property list<string>|null $FilterSynonyms
  * @property string $OperandFieldName
- * @property 'CATEGORY_FILTER'|'NUMERIC_EQUALITY_FILTER'|'NUMERIC_RANGE_FILTER'|'DATE_RANGE_FILTER'|'RELATIVE_DATE_FILTER'|null $FilterType
+ * @property 'CATEGORY_FILTER'|'NUMERIC_EQUALITY_FILTER'|'NUMERIC_RANGE_FILTER'|'DATE_RANGE_FILTER'|'RELATIVE_DATE_FILTER'|'NULL_FILTER'|null $FilterType
  * @property TopicCategoryFilter|null $CategoryFilter
  * @property TopicNumericEqualityFilter|null $NumericEqualityFilter
  * @property TopicNumericRangeFilter|null $NumericRangeFilter
  * @property TopicDateRangeFilter|null $DateRangeFilter
  * @property TopicRelativeDateFilter|null $RelativeDateFilter
+ * @property TopicNullFilter|null $NullFilter
  */
 class TopicFilter extends Shape
 {
@@ -26,12 +27,13 @@ class TopicFilter extends Shape
      *     FilterName: string,
      *     FilterSynonyms?: list<string>|null,
      *     OperandFieldName: string,
-     *     FilterType?: 'CATEGORY_FILTER'|'NUMERIC_EQUALITY_FILTER'|'NUMERIC_RANGE_FILTER'|'DATE_RANGE_FILTER'|'RELATIVE_DATE_FILTER'|null,
+     *     FilterType?: 'CATEGORY_FILTER'|'NUMERIC_EQUALITY_FILTER'|'NUMERIC_RANGE_FILTER'|'DATE_RANGE_FILTER'|'RELATIVE_DATE_FILTER'|'NULL_FILTER'|null,
      *     CategoryFilter?: TopicCategoryFilter|null,
      *     NumericEqualityFilter?: TopicNumericEqualityFilter|null,
      *     NumericRangeFilter?: TopicNumericRangeFilter|null,
      *     DateRangeFilter?: TopicDateRangeFilter|null,
-     *     RelativeDateFilter?: TopicRelativeDateFilter|null
+     *     RelativeDateFilter?: TopicRelativeDateFilter|null,
+     *     NullFilter?: TopicNullFilter|null
      * } $args
      */
     public function __construct(array $args)

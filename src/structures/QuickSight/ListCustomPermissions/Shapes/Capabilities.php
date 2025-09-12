@@ -28,6 +28,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $ExportToCsvInScheduledReports
  * @property 'DENY'|null $ExportToExcelInScheduledReports
  * @property 'DENY'|null $IncludeContentInScheduledReportsEmail
+ * @property 'DENY'|null $Dashboard
+ * @property 'DENY'|null $Analysis
  */
 class Capabilities extends Shape
 {
@@ -55,7 +57,9 @@ class Capabilities extends Shape
      *     ExportToPdfInScheduledReports?: 'DENY'|null,
      *     ExportToCsvInScheduledReports?: 'DENY'|null,
      *     ExportToExcelInScheduledReports?: 'DENY'|null,
-     *     IncludeContentInScheduledReportsEmail?: 'DENY'|null
+     *     IncludeContentInScheduledReportsEmail?: 'DENY'|null,
+     *     Dashboard?: 'DENY'|null,
+     *     Analysis?: 'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcId
  * @property list<string>|null $VpcSecurityGroupIds
  * @property list<string>|null $VpcSubnetIds
+ * @property string|null $DefaultAuthScheme
  * @property list<UserAuthConfigInfo>|null $Auth
  * @property string|null $RoleArn
  * @property string|null $Endpoint
@@ -34,6 +35,7 @@ class DBProxy extends Shape
      *     VpcId?: string|null,
      *     VpcSecurityGroupIds?: list<string>|null,
      *     VpcSubnetIds?: list<string>|null,
+     *     DefaultAuthScheme?: string|null,
      *     Auth?: list<UserAuthConfigInfo>|null,
      *     RoleArn?: string|null,
      *     Endpoint?: string|null,
