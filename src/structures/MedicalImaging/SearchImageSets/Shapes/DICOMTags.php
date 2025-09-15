@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DICOMStudyId
  * @property string|null $DICOMStudyDescription
  * @property int<0, 1000000>|null $DICOMNumberOfStudyRelatedSeries
- * @property int<0, 10000>|null $DICOMNumberOfStudyRelatedInstances
+ * @property int<0, 1000000>|null $DICOMNumberOfStudyRelatedInstances
  * @property string|null $DICOMAccessionNumber
  * @property string|null $DICOMSeriesInstanceUID
  * @property string|null $DICOMSeriesModality
@@ -34,7 +34,7 @@ class DICOMTags extends Shape
      *     DICOMStudyId?: string|null,
      *     DICOMStudyDescription?: string|null,
      *     DICOMNumberOfStudyRelatedSeries?: int<0, 1000000>|null,
-     *     DICOMNumberOfStudyRelatedInstances?: int<0, 10000>|null,
+     *     DICOMNumberOfStudyRelatedInstances?: int<0, 1000000>|null,
      *     DICOMAccessionNumber?: string|null,
      *     DICOMSeriesInstanceUID?: string|null,
      *     DICOMSeriesModality?: string|null,

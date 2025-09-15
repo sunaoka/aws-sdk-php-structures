@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $datastoreName
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETED' $datastoreStatus
  * @property string|null $kmsKeyArn
+ * @property string|null $lambdaAuthorizerArn
  * @property string|null $datastoreArn
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
@@ -21,6 +22,7 @@ class DatastoreProperties extends Shape
      *     datastoreName: string,
      *     datastoreStatus: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETED',
      *     kmsKeyArn?: string|null,
+     *     lambdaAuthorizerArn?: string|null,
      *     datastoreArn?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
