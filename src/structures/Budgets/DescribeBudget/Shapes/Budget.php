@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, Spend>|null $PlannedBudgetLimits
  * @property array<string, list<string>>|null $CostFilters
  * @property CostTypes|null $CostTypes
- * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY' $TimeUnit
+ * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM' $TimeUnit
  * @property TimePeriod|null $TimePeriod
  * @property CalculatedSpend|null $CalculatedSpend
  * @property 'USAGE'|'COST'|'RI_UTILIZATION'|'RI_COVERAGE'|'SAVINGS_PLANS_UTILIZATION'|'SAVINGS_PLANS_COVERAGE' $BudgetType
@@ -30,7 +30,7 @@ class Budget extends Shape
      *     PlannedBudgetLimits?: array<string, Spend>|null,
      *     CostFilters?: array<string, list<string>>|null,
      *     CostTypes?: CostTypes|null,
-     *     TimeUnit: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY',
+     *     TimeUnit: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM',
      *     TimePeriod?: TimePeriod|null,
      *     CalculatedSpend?: CalculatedSpend|null,
      *     BudgetType: 'USAGE'|'COST'|'RI_UTILIZATION'|'RI_COVERAGE'|'SAVINGS_PLANS_UTILIZATION'|'SAVINGS_PLANS_COVERAGE',
