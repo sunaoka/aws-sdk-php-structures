@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ObjectSizeGreaterThanBytes
  * @property int|null $ObjectSizeLessThanBytes
  * @property list<'STANDARD'|'STANDARD_IA'|'ONEZONE_IA'|'GLACIER'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'GLACIER_IR'>|null $MatchAnyStorageClass
+ * @property list<ObjectEncryptionFilter>|null $MatchAnyObjectEncryption
  */
 class JobManifestGeneratorFilter extends Shape
 {
@@ -25,7 +26,8 @@ class JobManifestGeneratorFilter extends Shape
      *     KeyNameConstraint?: KeyNameConstraint|null,
      *     ObjectSizeGreaterThanBytes?: int|null,
      *     ObjectSizeLessThanBytes?: int|null,
-     *     MatchAnyStorageClass?: list<'STANDARD'|'STANDARD_IA'|'ONEZONE_IA'|'GLACIER'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'GLACIER_IR'>|null
+     *     MatchAnyStorageClass?: list<'STANDARD'|'STANDARD_IA'|'ONEZONE_IA'|'GLACIER'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'GLACIER_IR'>|null,
+     *     MatchAnyObjectEncryption?: list<ObjectEncryptionFilter>|null
      * } $args
      */
     public function __construct(array $args = [])
