@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $computeNodeGroupName
  * @property string|null $amiId
  * @property list<string> $subnetIds
- * @property 'ONDEMAND'|'SPOT'|null $purchaseOption
+ * @property 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|null $purchaseOption
  * @property Shapes\CustomLaunchTemplate $customLaunchTemplate
  * @property string $iamInstanceProfileArn
  * @property Shapes\ScalingConfigurationRequest $scalingConfiguration
@@ -27,7 +27,7 @@ class CreateComputeNodeGroupRequest extends Request
      *     computeNodeGroupName: string,
      *     amiId?: string|null,
      *     subnetIds: list<string>,
-     *     purchaseOption?: 'ONDEMAND'|'SPOT'|null,
+     *     purchaseOption?: 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|null,
      *     customLaunchTemplate: Shapes\CustomLaunchTemplate,
      *     iamInstanceProfileArn: string,
      *     scalingConfiguration: Shapes\ScalingConfigurationRequest,
