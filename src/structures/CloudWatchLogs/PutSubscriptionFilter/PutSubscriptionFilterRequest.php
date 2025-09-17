@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $roleArn
  * @property 'Random'|'ByLogStream'|null $distribution
  * @property bool|null $applyOnTransformedLogs
+ * @property string|null $fieldSelectionCriteria
+ * @property list<string>|null $emitSystemFields
  */
 class PutSubscriptionFilterRequest extends Request
 {
@@ -23,7 +25,9 @@ class PutSubscriptionFilterRequest extends Request
      *     destinationArn: string,
      *     roleArn?: string|null,
      *     distribution?: 'Random'|'ByLogStream'|null,
-     *     applyOnTransformedLogs?: bool|null
+     *     applyOnTransformedLogs?: bool|null,
+     *     fieldSelectionCriteria?: string|null,
+     *     emitSystemFields?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

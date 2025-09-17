@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'USAGE'|'COST'|'RI_UTILIZATION'|'RI_COVERAGE'|'SAVINGS_PLANS_UTILIZATION'|'SAVINGS_PLANS_COVERAGE'|null $BudgetType
  * @property array<string, list<string>>|null $CostFilters
  * @property CostTypes|null $CostTypes
- * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|null $TimeUnit
+ * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM'|null $TimeUnit
  * @property string|null $BillingViewArn
  * @property list<BudgetedAndActualAmounts>|null $BudgetedAndActualAmountsList
  */
@@ -21,7 +21,7 @@ class BudgetPerformanceHistory extends Shape
      *     BudgetType?: 'USAGE'|'COST'|'RI_UTILIZATION'|'RI_COVERAGE'|'SAVINGS_PLANS_UTILIZATION'|'SAVINGS_PLANS_COVERAGE'|null,
      *     CostFilters?: array<string, list<string>>|null,
      *     CostTypes?: CostTypes|null,
-     *     TimeUnit?: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|null,
+     *     TimeUnit?: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM'|null,
      *     BillingViewArn?: string|null,
      *     BudgetedAndActualAmountsList?: list<BudgetedAndActualAmounts>|null
      * } $args

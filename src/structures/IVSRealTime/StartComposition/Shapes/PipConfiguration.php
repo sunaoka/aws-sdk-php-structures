@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TOP_LEFT'|'TOP_RIGHT'|'BOTTOM_LEFT'|'BOTTOM_RIGHT'|null $pipPosition
  * @property int<1, max>|null $pipWidth
  * @property int<1, max>|null $pipHeight
+ * @property string|null $participantOrderAttribute
  */
 class PipConfiguration extends Shape
 {
@@ -29,7 +30,8 @@ class PipConfiguration extends Shape
      *     pipOffset?: int<0, max>|null,
      *     pipPosition?: 'TOP_LEFT'|'TOP_RIGHT'|'BOTTOM_LEFT'|'BOTTOM_RIGHT'|null,
      *     pipWidth?: int<1, max>|null,
-     *     pipHeight?: int<1, max>|null
+     *     pipHeight?: int<1, max>|null,
+     *     participantOrderAttribute?: string|null
      * } $args
      */
     public function __construct(array $args = [])
