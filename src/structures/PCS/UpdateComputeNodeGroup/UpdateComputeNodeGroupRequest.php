@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $amiId
  * @property list<string>|null $subnetIds
  * @property Shapes\CustomLaunchTemplate|null $customLaunchTemplate
- * @property 'ONDEMAND'|'SPOT'|null $purchaseOption
+ * @property 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|null $purchaseOption
  * @property Shapes\SpotOptions|null $spotOptions
  * @property Shapes\ScalingConfigurationRequest|null $scalingConfiguration
  * @property string|null $iamInstanceProfileArn
@@ -26,7 +26,7 @@ class UpdateComputeNodeGroupRequest extends Request
      *     amiId?: string|null,
      *     subnetIds?: list<string>|null,
      *     customLaunchTemplate?: Shapes\CustomLaunchTemplate|null,
-     *     purchaseOption?: 'ONDEMAND'|'SPOT'|null,
+     *     purchaseOption?: 'ONDEMAND'|'SPOT'|'CAPACITY_BLOCK'|null,
      *     spotOptions?: Shapes\SpotOptions|null,
      *     scalingConfiguration?: Shapes\ScalingConfigurationRequest|null,
      *     iamInstanceProfileArn?: string|null,
