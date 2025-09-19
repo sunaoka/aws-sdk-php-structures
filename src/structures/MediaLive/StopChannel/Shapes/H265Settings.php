@@ -43,6 +43,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AUTO'|'TREE_SIZE_32X32'|null $TreeblockSize
  * @property int<1, 51>|null $MinQp
  * @property 'DISABLED'|'ENABLED'|null $Deblocking
+ * @property 'DISABLED'|'ENABLED'|null $GopBReference
+ * @property int<0, 3>|null $GopNumBFrames
+ * @property int<0, 40000000>|null $MinBitrate
+ * @property 'DYNAMIC'|'FIXED'|null $SubgopLength
  */
 class H265Settings extends Shape
 {
@@ -85,7 +89,11 @@ class H265Settings extends Shape
      *     TileWidth?: int<256, 3840>|null,
      *     TreeblockSize?: 'AUTO'|'TREE_SIZE_32X32'|null,
      *     MinQp?: int<1, 51>|null,
-     *     Deblocking?: 'DISABLED'|'ENABLED'|null
+     *     Deblocking?: 'DISABLED'|'ENABLED'|null,
+     *     GopBReference?: 'DISABLED'|'ENABLED'|null,
+     *     GopNumBFrames?: int<0, 3>|null,
+     *     MinBitrate?: int<0, 40000000>|null,
+     *     SubgopLength?: 'DYNAMIC'|'FIXED'|null
      * } $args
      */
     public function __construct(array $args)

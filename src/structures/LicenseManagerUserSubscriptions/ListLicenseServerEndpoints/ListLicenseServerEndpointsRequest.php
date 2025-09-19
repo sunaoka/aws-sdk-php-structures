@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListLicenseServ
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter>|null $Filters
  * @property int<1, 100>|null $MaxResults
+ * @property list<Shapes\Filter>|null $Filters
  * @property string|null $NextToken
  */
 class ListLicenseServerEndpointsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\Filter>|null,
      *     MaxResults?: int<1, 100>|null,
+     *     Filters?: list<Shapes\Filter>|null,
      *     NextToken?: string|null
      * } $args
      */
