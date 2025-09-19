@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\AssociateUser;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $Domain
- * @property Shapes\IdentityProvider $IdentityProvider
- * @property string $InstanceId
- * @property array<string, string>|null $Tags
  * @property string $Username
+ * @property string $InstanceId
+ * @property Shapes\IdentityProvider $IdentityProvider
+ * @property string|null $Domain
+ * @property array<string, string>|null $Tags
  */
 class AssociateUserRequest extends Request
 {
     /**
      * @param array{
-     *     Domain?: string|null,
-     *     IdentityProvider: Shapes\IdentityProvider,
+     *     Username: string,
      *     InstanceId: string,
-     *     Tags?: array<string, string>|null,
-     *     Username: string
+     *     IdentityProvider: Shapes\IdentityProvider,
+     *     Domain?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

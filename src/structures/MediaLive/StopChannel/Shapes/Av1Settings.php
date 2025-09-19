@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TimecodeBurninSettings|null $TimecodeBurninSettings
  * @property int<50000, 12000000>|null $Bitrate
  * @property 'CBR'|'QVBR'|null $RateControlMode
+ * @property int<0, 8000000>|null $MinBitrate
  */
 class Av1Settings extends Shape
 {
@@ -47,7 +48,8 @@ class Av1Settings extends Shape
      *     SceneChangeDetect?: 'DISABLED'|'ENABLED'|null,
      *     TimecodeBurninSettings?: TimecodeBurninSettings|null,
      *     Bitrate?: int<50000, 12000000>|null,
-     *     RateControlMode?: 'CBR'|'QVBR'|null
+     *     RateControlMode?: 'CBR'|'QVBR'|null,
+     *     MinBitrate?: int<0, 8000000>|null
      * } $args
      */
     public function __construct(array $args)

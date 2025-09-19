@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\IdentityProvider|null $IdentityProvider
- * @property string|null $IdentityProviderArn
  * @property string|null $Product
+ * @property string|null $IdentityProviderArn
  * @property Shapes\UpdateSettings $UpdateSettings
  */
 class UpdateIdentityProviderSettingsRequest extends Request
@@ -15,8 +15,8 @@ class UpdateIdentityProviderSettingsRequest extends Request
     /**
      * @param array{
      *     IdentityProvider?: Shapes\IdentityProvider|null,
-     *     IdentityProviderArn?: string|null,
      *     Product?: string|null,
+     *     IdentityProviderArn?: string|null,
      *     UpdateSettings: Shapes\UpdateSettings
      * } $args
      */
