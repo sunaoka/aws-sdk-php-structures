@@ -48,6 +48,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'PIC_TIMING_SEI'|null $TimecodeInsertion
  * @property TimecodeBurninSettings|null $TimecodeBurninSettings
  * @property int<1, 51>|null $MinQp
+ * @property int<0, max>|null $MinBitrate
  */
 class H264Settings extends Shape
 {
@@ -95,7 +96,8 @@ class H264Settings extends Shape
      *     TemporalAq?: 'DISABLED'|'ENABLED'|null,
      *     TimecodeInsertion?: 'DISABLED'|'PIC_TIMING_SEI'|null,
      *     TimecodeBurninSettings?: TimecodeBurninSettings|null,
-     *     MinQp?: int<1, 51>|null
+     *     MinQp?: int<1, 51>|null,
+     *     MinBitrate?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

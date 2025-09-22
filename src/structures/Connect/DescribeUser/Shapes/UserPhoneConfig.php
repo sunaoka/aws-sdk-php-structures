@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $AutoAccept
  * @property int<0, max>|null $AfterContactWorkTimeLimit
  * @property string|null $DeskPhoneNumber
+ * @property bool|null $PersistentConnection
  */
 class UserPhoneConfig extends Shape
 {
@@ -17,7 +18,8 @@ class UserPhoneConfig extends Shape
      *     PhoneType: 'SOFT_PHONE'|'DESK_PHONE',
      *     AutoAccept?: bool|null,
      *     AfterContactWorkTimeLimit?: int<0, max>|null,
-     *     DeskPhoneNumber?: string|null
+     *     DeskPhoneNumber?: string|null,
+     *     PersistentConnection?: bool|null
      * } $args
      */
     public function __construct(array $args)
