@@ -10,7 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OwnerAccountId
  * @property string|null $Name
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
- * @property 'CREATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'ACTIVE'|null $Status
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'ACTIVE'|null $Status
+ * @property string|null $StatusReason
  */
 class InstanceMetadata extends Shape
 {
@@ -21,7 +22,8 @@ class InstanceMetadata extends Shape
      *     OwnerAccountId?: string|null,
      *     Name?: string|null,
      *     CreatedDate?: \Aws\Api\DateTimeResult|null,
-     *     Status?: 'CREATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'ACTIVE'|null
+     *     Status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'ACTIVE'|null,
+     *     StatusReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

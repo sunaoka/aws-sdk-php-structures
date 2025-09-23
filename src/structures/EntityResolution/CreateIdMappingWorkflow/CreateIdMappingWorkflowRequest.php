@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\IdMappingWorkflowInputSource> $inputSourceConfig
  * @property list<Shapes\IdMappingWorkflowOutputSource>|null $outputSourceConfig
  * @property Shapes\IdMappingTechniques $idMappingTechniques
+ * @property Shapes\IdMappingIncrementalRunConfig|null $incrementalRunConfig
  * @property string|null $roleArn
  * @property array<string, string>|null $tags
  */
@@ -22,6 +23,7 @@ class CreateIdMappingWorkflowRequest extends Request
      *     inputSourceConfig: list<Shapes\IdMappingWorkflowInputSource>,
      *     outputSourceConfig?: list<Shapes\IdMappingWorkflowOutputSource>|null,
      *     idMappingTechniques: Shapes\IdMappingTechniques,
+     *     incrementalRunConfig?: Shapes\IdMappingIncrementalRunConfig|null,
      *     roleArn?: string|null,
      *     tags?: array<string, string>|null
      * } $args

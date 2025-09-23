@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $idMappingTableIdentifier
  * @property string $membershipIdentifier
+ * @property 'BATCH'|'INCREMENTAL'|'DELETE_ONLY'|null $jobType
  */
 class PopulateIdMappingTableRequest extends Request
 {
     /**
      * @param array{
      *     idMappingTableIdentifier: string,
-     *     membershipIdentifier: string
+     *     membershipIdentifier: string,
+     *     jobType?: 'BATCH'|'INCREMENTAL'|'DELETE_ONLY'|null
      * } $args
      */
     public function __construct(array $args)
