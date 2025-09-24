@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\IdMappingJobMetrics|null $metrics
  * @property Shapes\ErrorDetails|null $errorDetails
  * @property list<Shapes\IdMappingJobOutputSource>|null $outputSourceConfig
+ * @property 'BATCH'|'INCREMENTAL'|'DELETE_ONLY'|null $jobType
  */
 class GetIdMappingJobResponse extends Response
 {

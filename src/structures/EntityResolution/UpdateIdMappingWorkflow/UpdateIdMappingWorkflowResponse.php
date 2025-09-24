@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\IdMappingWorkflowInputSource> $inputSourceConfig
  * @property list<Shapes\IdMappingWorkflowOutputSource>|null $outputSourceConfig
  * @property Shapes\IdMappingTechniques $idMappingTechniques
+ * @property Shapes\IdMappingIncrementalRunConfig|null $incrementalRunConfig
  * @property string|null $roleArn
  */
 class UpdateIdMappingWorkflowResponse extends Response

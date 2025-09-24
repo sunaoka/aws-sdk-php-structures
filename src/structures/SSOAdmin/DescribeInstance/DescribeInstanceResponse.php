@@ -10,7 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $OwnerAccountId
  * @property string|null $Name
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
- * @property 'CREATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'ACTIVE'|null $Status
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_IN_PROGRESS'|'ACTIVE'|null $Status
+ * @property string|null $StatusReason
+ * @property Shapes\EncryptionConfigurationDetails|null $EncryptionConfigurationDetails
  */
 class DescribeInstanceResponse extends Response
 {

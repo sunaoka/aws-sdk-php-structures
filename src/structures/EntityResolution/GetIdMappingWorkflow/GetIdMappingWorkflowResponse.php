@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\IdMappingTechniques $idMappingTechniques
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property Shapes\IdMappingIncrementalRunConfig|null $incrementalRunConfig
  * @property string|null $roleArn
  * @property array<string, string>|null $tags
  */

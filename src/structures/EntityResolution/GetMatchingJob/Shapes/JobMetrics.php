@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $inputRecords
  * @property int|null $totalRecordsProcessed
  * @property int|null $recordsNotProcessed
+ * @property int|null $deleteRecordsProcessed
  * @property int|null $matchIDs
  */
 class JobMetrics extends Shape
@@ -17,6 +18,7 @@ class JobMetrics extends Shape
      *     inputRecords?: int|null,
      *     totalRecordsProcessed?: int|null,
      *     recordsNotProcessed?: int|null,
+     *     deleteRecordsProcessed?: int|null,
      *     matchIDs?: int|null
      * } $args
      */
