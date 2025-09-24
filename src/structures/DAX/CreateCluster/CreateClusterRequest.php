@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\SSESpecification|null $SSESpecification
  * @property 'NONE'|'TLS'|null $ClusterEndpointEncryptionType
+ * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
  */
 class CreateClusterRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateClusterRequest extends Request
      *     ParameterGroupName?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     SSESpecification?: Shapes\SSESpecification|null,
-     *     ClusterEndpointEncryptionType?: 'NONE'|'TLS'|null
+     *     ClusterEndpointEncryptionType?: 'NONE'|'TLS'|null,
+     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null
      * } $args
      */
     public function __construct(array $args)
