@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property string|null $VpcId
  * @property list<Subnet>|null $Subnets
+ * @property list<'ipv4'|'ipv6'|'dual_stack'>|null $SupportedNetworkTypes
  */
 class SubnetGroup extends Shape
 {
@@ -17,7 +18,8 @@ class SubnetGroup extends Shape
      *     SubnetGroupName?: string|null,
      *     Description?: string|null,
      *     VpcId?: string|null,
-     *     Subnets?: list<Subnet>|null
+     *     Subnets?: list<Subnet>|null,
+     *     SupportedNetworkTypes?: list<'ipv4'|'ipv6'|'dual_stack'>|null
      * } $args
      */
     public function __construct(array $args = [])
