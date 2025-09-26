@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $isValid
  * @property string|null $rationale
+ * @property bool|null $isValid
  */
 class PreProcessingParsedResponse extends Shape
 {
     /**
      * @param array{
-     *     isValid?: bool|null,
-     *     rationale?: string|null
+     *     rationale?: string|null,
+     *     isValid?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RetrievalResultConfluenceLocation|null $confluenceLocation
- * @property RetrievalResultCustomDocumentLocation|null $customDocumentLocation
- * @property RetrievalResultKendraDocumentLocation|null $kendraDocumentLocation
+ * @property 'S3'|'WEB'|'CONFLUENCE'|'SALESFORCE'|'SHAREPOINT'|'CUSTOM'|'KENDRA'|'SQL' $type
  * @property RetrievalResultS3Location|null $s3Location
+ * @property RetrievalResultWebLocation|null $webLocation
+ * @property RetrievalResultConfluenceLocation|null $confluenceLocation
  * @property RetrievalResultSalesforceLocation|null $salesforceLocation
  * @property RetrievalResultSharePointLocation|null $sharePointLocation
+ * @property RetrievalResultCustomDocumentLocation|null $customDocumentLocation
+ * @property RetrievalResultKendraDocumentLocation|null $kendraDocumentLocation
  * @property RetrievalResultSqlLocation|null $sqlLocation
- * @property 'S3'|'WEB'|'CONFLUENCE'|'SALESFORCE'|'SHAREPOINT'|'CUSTOM'|'KENDRA'|'SQL' $type
- * @property RetrievalResultWebLocation|null $webLocation
  */
 class RetrievalResultLocation extends Shape
 {
     /**
      * @param array{
-     *     confluenceLocation?: RetrievalResultConfluenceLocation|null,
-     *     customDocumentLocation?: RetrievalResultCustomDocumentLocation|null,
-     *     kendraDocumentLocation?: RetrievalResultKendraDocumentLocation|null,
+     *     type: 'S3'|'WEB'|'CONFLUENCE'|'SALESFORCE'|'SHAREPOINT'|'CUSTOM'|'KENDRA'|'SQL',
      *     s3Location?: RetrievalResultS3Location|null,
+     *     webLocation?: RetrievalResultWebLocation|null,
+     *     confluenceLocation?: RetrievalResultConfluenceLocation|null,
      *     salesforceLocation?: RetrievalResultSalesforceLocation|null,
      *     sharePointLocation?: RetrievalResultSharePointLocation|null,
-     *     sqlLocation?: RetrievalResultSqlLocation|null,
-     *     type: 'S3'|'WEB'|'CONFLUENCE'|'SALESFORCE'|'SHAREPOINT'|'CUSTOM'|'KENDRA'|'SQL',
-     *     webLocation?: RetrievalResultWebLocation|null
+     *     customDocumentLocation?: RetrievalResultCustomDocumentLocation|null,
+     *     kendraDocumentLocation?: RetrievalResultKendraDocumentLocation|null,
+     *     sqlLocation?: RetrievalResultSqlLocation|null
      * } $args
      */
     public function __construct(array $args)

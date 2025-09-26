@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $clientRequestId
- * @property \Aws\Api\DateTimeResult|null $endTime
- * @property int|null $operationTotalTimeMs
  * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property int|null $totalTimeMs
+ * @property int|null $operationTotalTimeMs
+ * @property string|null $clientRequestId
  * @property Usage|null $usage
  */
 class Metadata extends Shape
 {
     /**
      * @param array{
-     *     clientRequestId?: string|null,
-     *     endTime?: \Aws\Api\DateTimeResult|null,
-     *     operationTotalTimeMs?: int|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
      *     totalTimeMs?: int|null,
+     *     operationTotalTimeMs?: int|null,
+     *     clientRequestId?: string|null,
      *     usage?: Usage|null
      * } $args
      */

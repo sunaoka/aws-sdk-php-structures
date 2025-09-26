@@ -6,20 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $nodeName
- * @property string $operationName
+ * @property \Aws\Api\DateTimeResult $timestamp
  * @property string $requestId
  * @property string $serviceName
- * @property \Aws\Api\DateTimeResult $timestamp
+ * @property string $operationName
+ * @property Document|null $operationRequest
+ * @property Document|null $operationResponse
  */
 class FlowTraceNodeActionEvent extends Shape
 {
     /**
      * @param array{
      *     nodeName: string,
-     *     operationName: string,
+     *     timestamp: \Aws\Api\DateTimeResult,
      *     requestId: string,
      *     serviceName: string,
-     *     timestamp: \Aws\Api\DateTimeResult
+     *     operationName: string,
+     *     operationRequest?: Document|null,
+     *     operationResponse?: Document|null
      * } $args
      */
     public function __construct(array $args)

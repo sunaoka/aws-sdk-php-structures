@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
  * @property string $key
  * @property 'STRING'|'NUMBER'|'BOOLEAN'|'STRING_LIST' $type
+ * @property string $description
  */
 class MetadataAttributeSchema extends Shape
 {
     /**
      * @param array{
-     *     description: string,
      *     key: string,
-     *     type: 'STRING'|'NUMBER'|'BOOLEAN'|'STRING_LIST'
+     *     type: 'STRING'|'NUMBER'|'BOOLEAN'|'STRING_LIST',
+     *     description: string
      * } $args
      */
     public function __construct(array $args)

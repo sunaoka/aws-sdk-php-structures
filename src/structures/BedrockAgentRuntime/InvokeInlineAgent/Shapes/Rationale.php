@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $text
  * @property string|null $traceId
+ * @property string|null $text
  */
 class Rationale extends Shape
 {
     /**
      * @param array{
-     *     text?: string|null,
-     *     traceId?: string|null
+     *     traceId?: string|null,
+     *     text?: string|null
      * } $args
      */
     public function __construct(array $args = [])

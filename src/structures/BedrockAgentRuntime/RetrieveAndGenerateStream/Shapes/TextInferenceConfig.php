@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 65536>|null $maxTokens
- * @property list<string>|null $stopSequences
  * @property float|null $temperature
  * @property float|null $topP
+ * @property int<0, 65536>|null $maxTokens
+ * @property list<string>|null $stopSequences
  */
 class TextInferenceConfig extends Shape
 {
     /**
      * @param array{
-     *     maxTokens?: int<0, 65536>|null,
-     *     stopSequences?: list<string>|null,
      *     temperature?: float|null,
-     *     topP?: float|null
+     *     topP?: float|null,
+     *     maxTokens?: int<0, 65536>|null,
+     *     stopSequences?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\Rerank;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $nextToken
  * @property list<Shapes\RerankQuery> $queries
- * @property Shapes\RerankingConfiguration $rerankingConfiguration
  * @property list<Shapes\RerankSource> $sources
+ * @property Shapes\RerankingConfiguration $rerankingConfiguration
+ * @property string|null $nextToken
  */
 class RerankRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string|null,
      *     queries: list<Shapes\RerankQuery>,
+     *     sources: list<Shapes\RerankSource>,
      *     rerankingConfiguration: Shapes\RerankingConfiguration,
-     *     sources: list<Shapes\RerankSource>
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

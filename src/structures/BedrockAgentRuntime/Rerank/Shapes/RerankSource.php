@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\Rerank\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RerankDocument $inlineDocumentSource
  * @property 'INLINE' $type
+ * @property RerankDocument $inlineDocumentSource
  */
 class RerankSource extends Shape
 {
     /**
      * @param array{
-     *     inlineDocumentSource: RerankDocument,
-     *     type: 'INLINE'
+     *     type: 'INLINE',
+     *     inlineDocumentSource: RerankDocument
      * } $args
      */
     public function __construct(array $args)

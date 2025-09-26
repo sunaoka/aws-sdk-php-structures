@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $enableTrace
- * @property string|null $executionId
- * @property string $flowAliasIdentifier
  * @property string $flowIdentifier
+ * @property string $flowAliasIdentifier
  * @property list<Shapes\FlowInput> $inputs
+ * @property bool|null $enableTrace
  * @property Shapes\ModelPerformanceConfiguration|null $modelPerformanceConfiguration
+ * @property string|null $executionId
  */
 class InvokeFlowRequest extends Request
 {
     /**
      * @param array{
-     *     enableTrace?: bool|null,
-     *     executionId?: string|null,
-     *     flowAliasIdentifier: string,
      *     flowIdentifier: string,
+     *     flowAliasIdentifier: string,
      *     inputs: list<Shapes\FlowInput>,
-     *     modelPerformanceConfiguration?: Shapes\ModelPerformanceConfiguration|null
+     *     enableTrace?: bool|null,
+     *     modelPerformanceConfiguration?: Shapes\ModelPerformanceConfiguration|null,
+     *     executionId?: string|null
      * } $args
      */
     public function __construct(array $args)

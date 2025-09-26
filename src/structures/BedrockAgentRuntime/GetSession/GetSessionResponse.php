@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\GetSession;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string|null $encryptionKeyArn
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property string $sessionArn
  * @property string $sessionId
- * @property array<string, string>|null $sessionMetadata
+ * @property string $sessionArn
  * @property 'ACTIVE'|'EXPIRED'|'ENDED' $sessionStatus
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $lastUpdatedAt
+ * @property array<string, string>|null $sessionMetadata
+ * @property string|null $encryptionKeyArn
  */
 class GetSessionResponse extends Response
 {

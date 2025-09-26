@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomOrchestrationTraceEvent|null $event
  * @property string|null $traceId
+ * @property CustomOrchestrationTraceEvent|null $event
  */
 class CustomOrchestrationTrace extends Shape
 {
     /**
      * @param array{
-     *     event?: CustomOrchestrationTraceEvent|null,
-     *     traceId?: string|null
+     *     traceId?: string|null,
+     *     event?: CustomOrchestrationTraceEvent|null
      * } $args
      */
     public function __construct(array $args = [])

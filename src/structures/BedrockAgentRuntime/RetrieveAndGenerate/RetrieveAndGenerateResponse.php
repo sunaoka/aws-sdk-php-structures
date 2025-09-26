@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
+ * @property string $sessionId
+ * @property Shapes\RetrieveAndGenerateOutput $output
  * @property list<Shapes\Citation>|null $citations
  * @property 'INTERVENED'|'NONE'|null $guardrailAction
- * @property Shapes\RetrieveAndGenerateOutput $output
- * @property string $sessionId
  */
 class RetrieveAndGenerateResponse extends Response
 {
