@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $IdcOnboardStatus
  * @property list<AuthorizedTokenIssuer>|null $AuthorizedTokenIssuerList
  * @property list<ServiceIntegrationsUnion>|null $ServiceIntegrations
+ * @property list<Tag>|null $Tags
+ * @property list<string>|null $SsoTagKeys
  */
 class RedshiftIdcApplication extends Shape
 {
@@ -29,7 +31,9 @@ class RedshiftIdcApplication extends Shape
      *     IdcManagedApplicationArn?: string|null,
      *     IdcOnboardStatus?: string|null,
      *     AuthorizedTokenIssuerList?: list<AuthorizedTokenIssuer>|null,
-     *     ServiceIntegrations?: list<ServiceIntegrationsUnion>|null
+     *     ServiceIntegrations?: list<ServiceIntegrationsUnion>|null,
+     *     Tags?: list<Tag>|null,
+     *     SsoTagKeys?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, max>|null $applyGuardrailInterval
  * @property bool|null $streamFinalResponse
+ * @property int<1, max>|null $applyGuardrailInterval
  */
 class StreamingConfigurations extends Shape
 {
     /**
      * @param array{
-     *     applyGuardrailInterval?: int<1, max>|null,
-     *     streamFinalResponse?: bool|null
+     *     streamFinalResponse?: bool|null,
+     *     applyGuardrailInterval?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

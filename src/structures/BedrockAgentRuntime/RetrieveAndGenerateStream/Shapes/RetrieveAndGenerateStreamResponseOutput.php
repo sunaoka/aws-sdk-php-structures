@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccessDeniedException|null $accessDeniedException
- * @property BadGatewayException|null $badGatewayException
+ * @property RetrieveAndGenerateOutputEvent|null $output
  * @property CitationEvent|null $citation
- * @property ConflictException|null $conflictException
- * @property DependencyFailedException|null $dependencyFailedException
  * @property GuardrailEvent|null $guardrail
  * @property InternalServerException|null $internalServerException
- * @property RetrieveAndGenerateOutputEvent|null $output
+ * @property ValidationException|null $validationException
  * @property ResourceNotFoundException|null $resourceNotFoundException
  * @property ServiceQuotaExceededException|null $serviceQuotaExceededException
  * @property ThrottlingException|null $throttlingException
- * @property ValidationException|null $validationException
+ * @property AccessDeniedException|null $accessDeniedException
+ * @property ConflictException|null $conflictException
+ * @property DependencyFailedException|null $dependencyFailedException
+ * @property BadGatewayException|null $badGatewayException
  */
 class RetrieveAndGenerateStreamResponseOutput extends Shape
 {
     /**
      * @param array{
-     *     accessDeniedException?: AccessDeniedException|null,
-     *     badGatewayException?: BadGatewayException|null,
+     *     output?: RetrieveAndGenerateOutputEvent|null,
      *     citation?: CitationEvent|null,
-     *     conflictException?: ConflictException|null,
-     *     dependencyFailedException?: DependencyFailedException|null,
      *     guardrail?: GuardrailEvent|null,
      *     internalServerException?: InternalServerException|null,
-     *     output?: RetrieveAndGenerateOutputEvent|null,
+     *     validationException?: ValidationException|null,
      *     resourceNotFoundException?: ResourceNotFoundException|null,
      *     serviceQuotaExceededException?: ServiceQuotaExceededException|null,
      *     throttlingException?: ThrottlingException|null,
-     *     validationException?: ValidationException|null
+     *     accessDeniedException?: AccessDeniedException|null,
+     *     conflictException?: ConflictException|null,
+     *     dependencyFailedException?: DependencyFailedException|null,
+     *     badGatewayException?: BadGatewayException|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\CreateInvocation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $invocationId
  * @property string $sessionId
+ * @property string $invocationId
+ * @property \Aws\Api\DateTimeResult $createdAt
  */
 class CreateInvocationResponse extends Response
 {

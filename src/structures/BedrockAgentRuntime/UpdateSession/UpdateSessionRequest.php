@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\UpdateSession;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $sessionIdentifier
  * @property array<string, string>|null $sessionMetadata
+ * @property string $sessionIdentifier
  */
 class UpdateSessionRequest extends Request
 {
     /**
      * @param array{
-     *     sessionIdentifier: string,
-     *     sessionMetadata?: array<string, string>|null
+     *     sessionMetadata?: array<string, string>|null,
+     *     sessionIdentifier: string
      * } $args
      */
     public function __construct(array $args)

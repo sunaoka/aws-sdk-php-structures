@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'INTERVENED'|'NONE'|null $action
- * @property list<GuardrailAssessment>|null $inputAssessments
- * @property Metadata|null $metadata
- * @property list<GuardrailAssessment>|null $outputAssessments
  * @property string|null $traceId
+ * @property list<GuardrailAssessment>|null $inputAssessments
+ * @property list<GuardrailAssessment>|null $outputAssessments
+ * @property Metadata|null $metadata
  */
 class GuardrailTrace extends Shape
 {
     /**
      * @param array{
      *     action?: 'INTERVENED'|'NONE'|null,
+     *     traceId?: string|null,
      *     inputAssessments?: list<GuardrailAssessment>|null,
-     *     metadata?: Metadata|null,
      *     outputAssessments?: list<GuardrailAssessment>|null,
-     *     traceId?: string|null
+     *     metadata?: Metadata|null
      * } $args
      */
     public function __construct(array $args = [])

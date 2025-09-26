@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $agentAliasArn
- * @property string $collaboratorInstruction
  * @property string $collaboratorName
+ * @property string $collaboratorInstruction
+ * @property string|null $agentAliasArn
  * @property 'TO_COLLABORATOR'|'DISABLED'|null $relayConversationHistory
  */
 class CollaboratorConfiguration extends Shape
 {
     /**
      * @param array{
-     *     agentAliasArn?: string|null,
-     *     collaboratorInstruction: string,
      *     collaboratorName: string,
+     *     collaboratorInstruction: string,
+     *     agentAliasArn?: string|null,
      *     relayConversationHistory?: 'TO_COLLABORATOR'|'DISABLED'|null
      * } $args
      */

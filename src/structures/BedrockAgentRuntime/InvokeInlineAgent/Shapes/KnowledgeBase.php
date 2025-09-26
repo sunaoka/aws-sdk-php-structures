@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
  * @property string $knowledgeBaseId
+ * @property string $description
  * @property KnowledgeBaseRetrievalConfiguration|null $retrievalConfiguration
  */
 class KnowledgeBase extends Shape
 {
     /**
      * @param array{
-     *     description: string,
      *     knowledgeBaseId: string,
+     *     description: string,
      *     retrievalConfiguration?: KnowledgeBaseRetrievalConfiguration|null
      * } $args
      */

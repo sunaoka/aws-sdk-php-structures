@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\PutInvocationStep\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImageBlock|null $image
  * @property string|null $text
+ * @property ImageBlock|null $image
  */
 class BedrockSessionContentBlock extends Shape
 {
     /**
      * @param array{
-     *     image?: ImageBlock|null,
-     *     text?: string|null
+     *     text?: string|null,
+     *     image?: ImageBlock|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $description
- * @property bool|null $required
  * @property 'string'|'number'|'integer'|'boolean'|'array' $type
+ * @property bool|null $required
  */
 class ParameterDetail extends Shape
 {
     /**
      * @param array{
      *     description?: string|null,
-     *     required?: bool|null,
-     *     type: 'string'|'number'|'integer'|'boolean'|'array'
+     *     type: 'string'|'number'|'integer'|'boolean'|'array',
+     *     required?: bool|null
      * } $args
      */
     public function __construct(array $args)
