@@ -14,12 +14,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DefaultOutboundQueueId
  * @property array<string, string>|null $Tags
  * @property int|null $NumberOfAssociatedQueues
+ * @property int|null $NumberOfAssociatedManualAssignmentQueues
  * @property int|null $NumberOfAssociatedUsers
  * @property 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND'|null $AgentAvailabilityTimer
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property string|null $LastModifiedRegion
  * @property bool|null $IsDefault
  * @property list<string>|null $AssociatedQueueIds
+ * @property list<string>|null $AssociatedManualAssignmentQueueIds
  */
 class RoutingProfile extends Shape
 {
@@ -34,12 +36,14 @@ class RoutingProfile extends Shape
      *     DefaultOutboundQueueId?: string|null,
      *     Tags?: array<string, string>|null,
      *     NumberOfAssociatedQueues?: int|null,
+     *     NumberOfAssociatedManualAssignmentQueues?: int|null,
      *     NumberOfAssociatedUsers?: int|null,
      *     AgentAvailabilityTimer?: 'TIME_SINCE_LAST_ACTIVITY'|'TIME_SINCE_LAST_INBOUND'|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedRegion?: string|null,
      *     IsDefault?: bool|null,
-     *     AssociatedQueueIds?: list<string>|null
+     *     AssociatedQueueIds?: list<string>|null,
+     *     AssociatedManualAssignmentQueueIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $agentAliasId
+ * @property Shapes\SessionState|null $sessionState
  * @property string $agentId
- * @property Shapes\BedrockModelConfigurations|null $bedrockModelConfigurations
- * @property bool|null $enableTrace
+ * @property string $agentAliasId
+ * @property string $sessionId
  * @property bool|null $endSession
+ * @property bool|null $enableTrace
  * @property string|null $inputText
  * @property string|null $memoryId
- * @property Shapes\PromptCreationConfigurations|null $promptCreationConfigurations
- * @property string $sessionId
- * @property Shapes\SessionState|null $sessionState
- * @property string|null $sourceArn
+ * @property Shapes\BedrockModelConfigurations|null $bedrockModelConfigurations
  * @property Shapes\StreamingConfigurations|null $streamingConfigurations
+ * @property Shapes\PromptCreationConfigurations|null $promptCreationConfigurations
+ * @property string|null $sourceArn
  */
 class InvokeAgentRequest extends Request
 {
     /**
      * @param array{
-     *     agentAliasId: string,
+     *     sessionState?: Shapes\SessionState|null,
      *     agentId: string,
-     *     bedrockModelConfigurations?: Shapes\BedrockModelConfigurations|null,
-     *     enableTrace?: bool|null,
+     *     agentAliasId: string,
+     *     sessionId: string,
      *     endSession?: bool|null,
+     *     enableTrace?: bool|null,
      *     inputText?: string|null,
      *     memoryId?: string|null,
+     *     bedrockModelConfigurations?: Shapes\BedrockModelConfigurations|null,
+     *     streamingConfigurations?: Shapes\StreamingConfigurations|null,
      *     promptCreationConfigurations?: Shapes\PromptCreationConfigurations|null,
-     *     sessionId: string,
-     *     sessionState?: Shapes\SessionState|null,
-     *     sourceArn?: string|null,
-     *     streamingConfigurations?: Shapes\StreamingConfigurations|null
+     *     sourceArn?: string|null
      * } $args
      */
     public function __construct(array $args)

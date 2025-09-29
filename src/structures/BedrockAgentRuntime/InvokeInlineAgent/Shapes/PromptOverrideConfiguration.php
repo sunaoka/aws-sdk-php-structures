@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $overrideLambda
  * @property list<PromptConfiguration> $promptConfigurations
+ * @property string|null $overrideLambda
  */
 class PromptOverrideConfiguration extends Shape
 {
     /**
      * @param array{
-     *     overrideLambda?: string|null,
-     *     promptConfigurations: list<PromptConfiguration>
+     *     promptConfigurations: list<PromptConfiguration>,
+     *     overrideLambda?: string|null
      * } $args
      */
     public function __construct(array $args)

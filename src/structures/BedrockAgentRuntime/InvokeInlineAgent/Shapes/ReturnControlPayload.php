@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $invocationId
  * @property list<InvocationInputMember>|null $invocationInputs
+ * @property string|null $invocationId
  */
 class ReturnControlPayload extends Shape
 {
     /**
      * @param array{
-     *     invocationId?: string|null,
-     *     invocationInputs?: list<InvocationInputMember>|null
+     *     invocationInputs?: list<InvocationInputMember>|null,
+     *     invocationId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

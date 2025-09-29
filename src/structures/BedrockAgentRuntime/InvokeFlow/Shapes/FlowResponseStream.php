@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccessDeniedException|null $accessDeniedException
- * @property BadGatewayException|null $badGatewayException
- * @property ConflictException|null $conflictException
- * @property DependencyFailedException|null $dependencyFailedException
- * @property FlowCompletionEvent|null $flowCompletionEvent
- * @property FlowMultiTurnInputRequestEvent|null $flowMultiTurnInputRequestEvent
  * @property FlowOutputEvent|null $flowOutputEvent
+ * @property FlowCompletionEvent|null $flowCompletionEvent
  * @property FlowTraceEvent|null $flowTraceEvent
  * @property InternalServerException|null $internalServerException
+ * @property ValidationException|null $validationException
  * @property ResourceNotFoundException|null $resourceNotFoundException
  * @property ServiceQuotaExceededException|null $serviceQuotaExceededException
  * @property ThrottlingException|null $throttlingException
- * @property ValidationException|null $validationException
+ * @property AccessDeniedException|null $accessDeniedException
+ * @property ConflictException|null $conflictException
+ * @property DependencyFailedException|null $dependencyFailedException
+ * @property BadGatewayException|null $badGatewayException
+ * @property FlowMultiTurnInputRequestEvent|null $flowMultiTurnInputRequestEvent
  */
 class FlowResponseStream extends Shape
 {
     /**
      * @param array{
-     *     accessDeniedException?: AccessDeniedException|null,
-     *     badGatewayException?: BadGatewayException|null,
-     *     conflictException?: ConflictException|null,
-     *     dependencyFailedException?: DependencyFailedException|null,
-     *     flowCompletionEvent?: FlowCompletionEvent|null,
-     *     flowMultiTurnInputRequestEvent?: FlowMultiTurnInputRequestEvent|null,
      *     flowOutputEvent?: FlowOutputEvent|null,
+     *     flowCompletionEvent?: FlowCompletionEvent|null,
      *     flowTraceEvent?: FlowTraceEvent|null,
      *     internalServerException?: InternalServerException|null,
+     *     validationException?: ValidationException|null,
      *     resourceNotFoundException?: ResourceNotFoundException|null,
      *     serviceQuotaExceededException?: ServiceQuotaExceededException|null,
      *     throttlingException?: ThrottlingException|null,
-     *     validationException?: ValidationException|null
+     *     accessDeniedException?: AccessDeniedException|null,
+     *     conflictException?: ConflictException|null,
+     *     dependencyFailedException?: DependencyFailedException|null,
+     *     badGatewayException?: BadGatewayException|null,
+     *     flowMultiTurnInputRequestEvent?: FlowMultiTurnInputRequestEvent|null
      * } $args
      */
     public function __construct(array $args = [])

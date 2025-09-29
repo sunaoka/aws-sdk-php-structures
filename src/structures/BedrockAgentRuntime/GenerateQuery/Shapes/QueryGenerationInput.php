@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\GenerateQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $text
  * @property 'TEXT' $type
+ * @property string $text
  */
 class QueryGenerationInput extends Shape
 {
     /**
      * @param array{
-     *     text: string,
-     *     type: 'TEXT'
+     *     type: 'TEXT',
+     *     text: string
      * } $args
      */
     public function __construct(array $args)

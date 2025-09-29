@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConversationHistory|null $conversationHistory
- * @property list<InputFile>|null $files
- * @property string|null $invocationId
- * @property list<KnowledgeBaseConfiguration>|null $knowledgeBaseConfigurations
+ * @property array<string, string>|null $sessionAttributes
  * @property array<string, string>|null $promptSessionAttributes
  * @property list<InvocationResultMember>|null $returnControlInvocationResults
- * @property array<string, string>|null $sessionAttributes
+ * @property string|null $invocationId
+ * @property list<InputFile>|null $files
+ * @property list<KnowledgeBaseConfiguration>|null $knowledgeBaseConfigurations
+ * @property ConversationHistory|null $conversationHistory
  */
 class SessionState extends Shape
 {
     /**
      * @param array{
-     *     conversationHistory?: ConversationHistory|null,
-     *     files?: list<InputFile>|null,
-     *     invocationId?: string|null,
-     *     knowledgeBaseConfigurations?: list<KnowledgeBaseConfiguration>|null,
+     *     sessionAttributes?: array<string, string>|null,
      *     promptSessionAttributes?: array<string, string>|null,
      *     returnControlInvocationResults?: list<InvocationResultMember>|null,
-     *     sessionAttributes?: array<string, string>|null
+     *     invocationId?: string|null,
+     *     files?: list<InputFile>|null,
+     *     knowledgeBaseConfigurations?: list<KnowledgeBaseConfiguration>|null,
+     *     conversationHistory?: ConversationHistory|null
      * } $args
      */
     public function __construct(array $args = [])

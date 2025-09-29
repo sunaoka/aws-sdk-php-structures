@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $arns
  * @property list<'PRIMARY'|'BILLING_GROUP'|'CUSTOM'>|null $billingViewTypes
  * @property string|null $ownerAccountId
+ * @property string|null $sourceAccountId
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
  */
@@ -20,6 +21,7 @@ class ListBillingViewsRequest extends Request
      *     arns?: list<string>|null,
      *     billingViewTypes?: list<'PRIMARY'|'BILLING_GROUP'|'CUSTOM'>|null,
      *     ownerAccountId?: string|null,
+     *     sourceAccountId?: string|null,
      *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null
      * } $args

@@ -10,9 +10,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|null $billingViewType
  * @property string|null $ownerAccountId
+ * @property string|null $sourceAccountId
  * @property Expression|null $dataFilterExpression
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property int|null $derivedViewCount
+ * @property int|null $sourceViewCount
+ * @property \Aws\Api\DateTimeResult|null $viewDefinitionLastUpdatedAt
+ * @property BillingViewHealthStatus|null $healthStatus
  */
 class BillingViewElement extends Shape
 {
@@ -23,9 +28,14 @@ class BillingViewElement extends Shape
      *     description?: string|null,
      *     billingViewType?: 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|null,
      *     ownerAccountId?: string|null,
+     *     sourceAccountId?: string|null,
      *     dataFilterExpression?: Expression|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     derivedViewCount?: int|null,
+     *     sourceViewCount?: int|null,
+     *     viewDefinitionLastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     healthStatus?: BillingViewHealthStatus|null
      * } $args
      */
     public function __construct(array $args = [])
