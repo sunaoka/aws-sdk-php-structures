@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateServiceNetworkVpcAssociation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $securityGroupIds
  * @property string $serviceNetworkVpcAssociationIdentifier
+ * @property list<string> $securityGroupIds
  */
 class UpdateServiceNetworkVpcAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     securityGroupIds: list<string>,
-     *     serviceNetworkVpcAssociationIdentifier: string
+     *     serviceNetworkVpcAssociationIdentifier: string,
+     *     securityGroupIds: list<string>
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\GetRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $caseSensitive
  * @property PathMatchType $match
+ * @property bool|null $caseSensitive
  */
 class PathMatch extends Shape
 {
     /**
      * @param array{
-     *     caseSensitive?: bool|null,
-     *     match: PathMatchType
+     *     match: PathMatchType,
+     *     caseSensitive?: bool|null
      * } $args
      */
     public function __construct(array $args)

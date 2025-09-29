@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\GetRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RuleAction|null $action
  * @property string|null $arn
- * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $id
- * @property bool|null $isDefault
- * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
- * @property Shapes\RuleMatch|null $match
  * @property string|null $name
- * @property int<1, 100>|null $priority
+ * @property bool|null $isDefault
+ * @property Shapes\RuleMatch|null $match
+ * @property int<1, 2000>|null $priority
+ * @property Shapes\RuleAction|null $action
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
 class GetRuleResponse extends Response
 {

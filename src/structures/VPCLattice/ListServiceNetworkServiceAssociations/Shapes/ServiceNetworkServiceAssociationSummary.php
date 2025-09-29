@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\VPCLattice\ListServiceNetworkServiceAssociation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $arn
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string|null $createdBy
- * @property string|null $customDomainName
- * @property DnsEntry|null $dnsEntry
  * @property string|null $id
- * @property string|null $serviceArn
+ * @property 'CREATE_IN_PROGRESS'|'ACTIVE'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_FAILED'|null $status
+ * @property string|null $arn
+ * @property string|null $createdBy
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $serviceId
  * @property string|null $serviceName
- * @property string|null $serviceNetworkArn
+ * @property string|null $serviceArn
  * @property string|null $serviceNetworkId
  * @property string|null $serviceNetworkName
- * @property 'CREATE_IN_PROGRESS'|'ACTIVE'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_FAILED'|null $status
+ * @property string|null $serviceNetworkArn
+ * @property DnsEntry|null $dnsEntry
+ * @property string|null $customDomainName
  */
 class ServiceNetworkServiceAssociationSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string|null,
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     createdBy?: string|null,
-     *     customDomainName?: string|null,
-     *     dnsEntry?: DnsEntry|null,
      *     id?: string|null,
-     *     serviceArn?: string|null,
+     *     status?: 'CREATE_IN_PROGRESS'|'ACTIVE'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_FAILED'|null,
+     *     arn?: string|null,
+     *     createdBy?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     serviceId?: string|null,
      *     serviceName?: string|null,
-     *     serviceNetworkArn?: string|null,
+     *     serviceArn?: string|null,
      *     serviceNetworkId?: string|null,
      *     serviceNetworkName?: string|null,
-     *     status?: 'CREATE_IN_PROGRESS'|'ACTIVE'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_FAILED'|null
+     *     serviceNetworkArn?: string|null,
+     *     dnsEntry?: DnsEntry|null,
+     *     customDomainName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

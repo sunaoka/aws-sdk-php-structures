@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $owner
  * @property string|null $parentImage
  * @property string|null $dateCreated
+ * @property string|null $instanceImage
  * @property array<string, string>|null $tags
  */
 class ContainerRecipeSummary extends Shape
@@ -25,6 +26,7 @@ class ContainerRecipeSummary extends Shape
      *     owner?: string|null,
      *     parentImage?: string|null,
      *     dateCreated?: string|null,
+     *     instanceImage?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */
