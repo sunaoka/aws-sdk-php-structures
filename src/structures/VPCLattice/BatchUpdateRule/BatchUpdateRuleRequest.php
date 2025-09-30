@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\VPCLattice\BatchUpdateRule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $serviceIdentifier
  * @property string $listenerIdentifier
  * @property list<Shapes\RuleUpdate> $rules
- * @property string $serviceIdentifier
  */
 class BatchUpdateRuleRequest extends Request
 {
     /**
      * @param array{
+     *     serviceIdentifier: string,
      *     listenerIdentifier: string,
-     *     rules: list<Shapes\RuleUpdate>,
-     *     serviceIdentifier: string
+     *     rules: list<Shapes\RuleUpdate>
      * } $args
      */
     public function __construct(array $args)

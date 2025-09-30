@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $lifecycleExecutionId
  * @property string|null $executionRole
  * @property list<WorkflowConfiguration>|null $workflows
+ * @property ImageLoggingConfiguration|null $loggingConfiguration
  */
 class Image extends Shape
 {
@@ -61,7 +62,8 @@ class Image extends Shape
      *     deprecationTime?: \Aws\Api\DateTimeResult|null,
      *     lifecycleExecutionId?: string|null,
      *     executionRole?: string|null,
-     *     workflows?: list<WorkflowConfiguration>|null
+     *     workflows?: list<WorkflowConfiguration>|null,
+     *     loggingConfiguration?: ImageLoggingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

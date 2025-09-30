@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property string|null $workingDirectory
  * @property AdditionalInstanceConfiguration|null $additionalInstanceConfiguration
+ * @property array<string, string>|null $amiTags
  */
 class ImageRecipe extends Shape
 {
@@ -37,7 +38,8 @@ class ImageRecipe extends Shape
      *     dateCreated?: string|null,
      *     tags?: array<string, string>|null,
      *     workingDirectory?: string|null,
-     *     additionalInstanceConfiguration?: AdditionalInstanceConfiguration|null
+     *     additionalInstanceConfiguration?: AdditionalInstanceConfiguration|null,
+     *     amiTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

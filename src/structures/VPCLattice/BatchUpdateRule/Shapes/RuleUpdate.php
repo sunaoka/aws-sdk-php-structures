@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\VPCLattice\BatchUpdateRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RuleAction|null $action
- * @property RuleMatch|null $match
- * @property int<1, 100>|null $priority
  * @property string $ruleIdentifier
+ * @property RuleMatch|null $match
+ * @property int<1, 2000>|null $priority
+ * @property RuleAction|null $action
  */
 class RuleUpdate extends Shape
 {
     /**
      * @param array{
-     *     action?: RuleAction|null,
+     *     ruleIdentifier: string,
      *     match?: RuleMatch|null,
-     *     priority?: int<1, 100>|null,
-     *     ruleIdentifier: string
+     *     priority?: int<1, 2000>|null,
+     *     action?: RuleAction|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $clientToken
- * @property list<string>|null $securityGroupIds
  * @property string $serviceNetworkIdentifier
- * @property array<string, string>|null $tags
  * @property string $vpcIdentifier
+ * @property list<string>|null $securityGroupIds
+ * @property array<string, string>|null $tags
  */
 class CreateServiceNetworkVpcAssociationRequest extends Request
 {
     /**
      * @param array{
      *     clientToken?: string|null,
-     *     securityGroupIds?: list<string>|null,
      *     serviceNetworkIdentifier: string,
-     *     tags?: array<string, string>|null,
-     *     vpcIdentifier: string
+     *     vpcIdentifier: string,
+     *     securityGroupIds?: list<string>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

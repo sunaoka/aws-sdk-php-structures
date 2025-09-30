@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\DeleteListener;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $listenerIdentifier
  * @property string $serviceIdentifier
+ * @property string $listenerIdentifier
  */
 class DeleteListenerRequest extends Request
 {
     /**
      * @param array{
-     *     listenerIdentifier: string,
-     *     serviceIdentifier: string
+     *     serviceIdentifier: string,
+     *     listenerIdentifier: string
      * } $args
      */
     public function __construct(array $args)

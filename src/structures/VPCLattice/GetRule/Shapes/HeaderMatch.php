@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\VPCLattice\GetRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $caseSensitive
- * @property HeaderMatchType $match
  * @property string $name
+ * @property HeaderMatchType $match
+ * @property bool|null $caseSensitive
  */
 class HeaderMatch extends Shape
 {
     /**
      * @param array{
-     *     caseSensitive?: bool|null,
+     *     name: string,
      *     match: HeaderMatchType,
-     *     name: string
+     *     caseSensitive?: bool|null
      * } $args
      */
     public function __construct(array $args)

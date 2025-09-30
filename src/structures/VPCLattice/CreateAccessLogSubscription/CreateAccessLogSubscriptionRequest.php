@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $clientToken
- * @property string $destinationArn
  * @property string $resourceIdentifier
+ * @property string $destinationArn
  * @property 'SERVICE'|'RESOURCE'|null $serviceNetworkLogType
  * @property array<string, string>|null $tags
  */
@@ -16,8 +16,8 @@ class CreateAccessLogSubscriptionRequest extends Request
     /**
      * @param array{
      *     clientToken?: string|null,
-     *     destinationArn: string,
      *     resourceIdentifier: string,
+     *     destinationArn: string,
      *     serviceNetworkLogType?: 'SERVICE'|'RESOURCE'|null,
      *     tags?: array<string, string>|null
      * } $args
