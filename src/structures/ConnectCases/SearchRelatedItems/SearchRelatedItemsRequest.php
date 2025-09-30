@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ConnectCases\SearchRelatedItems;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $caseId
  * @property string $domainId
- * @property list<Shapes\RelatedItemTypeFilter>|null $filters
+ * @property string $caseId
  * @property int<1, 25>|null $maxResults
  * @property string|null $nextToken
+ * @property list<Shapes\RelatedItemTypeFilter>|null $filters
  */
 class SearchRelatedItemsRequest extends Request
 {
     /**
      * @param array{
-     *     caseId: string,
      *     domainId: string,
-     *     filters?: list<Shapes\RelatedItemTypeFilter>|null,
+     *     caseId: string,
      *     maxResults?: int<1, 25>|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     filters?: list<Shapes\RelatedItemTypeFilter>|null
      * } $args
      */
     public function __construct(array $args)

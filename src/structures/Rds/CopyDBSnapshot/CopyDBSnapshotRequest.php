@@ -11,12 +11,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property bool|null $CopyTags
  * @property string|null $PreSignedUrl
- * @property string|null $DestinationRegion
  * @property string|null $OptionGroupName
  * @property string|null $TargetCustomAvailabilityZone
+ * @property string|null $SnapshotTarget
  * @property bool|null $CopyOptionGroup
  * @property string|null $SnapshotAvailabilityZone
- * @property string|null $SnapshotTarget
  */
 class CopyDBSnapshotRequest extends Request
 {
@@ -28,12 +27,11 @@ class CopyDBSnapshotRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     CopyTags?: bool|null,
      *     PreSignedUrl?: string|null,
-     *     DestinationRegion?: string|null,
      *     OptionGroupName?: string|null,
      *     TargetCustomAvailabilityZone?: string|null,
+     *     SnapshotTarget?: string|null,
      *     CopyOptionGroup?: bool|null,
-     *     SnapshotAvailabilityZone?: string|null,
-     *     SnapshotTarget?: string|null
+     *     SnapshotAvailabilityZone?: string|null
      * } $args
      */
     public function __construct(array $args)

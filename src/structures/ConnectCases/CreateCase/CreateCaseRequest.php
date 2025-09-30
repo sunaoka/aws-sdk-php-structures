@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ConnectCases\CreateCase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $domainId
- * @property list<Shapes\FieldValue> $fields
- * @property Shapes\UserUnion|null $performedBy
  * @property string $templateId
+ * @property list<Shapes\FieldValue> $fields
+ * @property string|null $clientToken
+ * @property Shapes\UserUnion|null $performedBy
  */
 class CreateCaseRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     domainId: string,
+     *     templateId: string,
      *     fields: list<Shapes\FieldValue>,
-     *     performedBy?: Shapes\UserUnion|null,
-     *     templateId: string
+     *     clientToken?: string|null,
+     *     performedBy?: Shapes\UserUnion|null
      * } $args
      */
     public function __construct(array $args)

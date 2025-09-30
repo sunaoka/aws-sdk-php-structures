@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCases\DeleteCaseRule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $caseRuleId
  * @property string $domainId
+ * @property string $caseRuleId
  */
 class DeleteCaseRuleRequest extends Request
 {
     /**
      * @param array{
-     *     caseRuleId: string,
-     *     domainId: string
+     *     domainId: string,
+     *     caseRuleId: string
      * } $args
      */
     public function __construct(array $args)

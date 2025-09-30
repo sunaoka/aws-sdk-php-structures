@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string>|null $RadiusServers
+ * @property list<string>|null $RadiusServersIpv6
  * @property int<1025, 65535>|null $RadiusPort
  * @property int<1, 50>|null $RadiusTimeout
  * @property int<0, 10>|null $RadiusRetries
@@ -19,6 +20,7 @@ class RadiusSettings extends Shape
     /**
      * @param array{
      *     RadiusServers?: list<string>|null,
+     *     RadiusServersIpv6?: list<string>|null,
      *     RadiusPort?: int<1025, 65535>|null,
      *     RadiusTimeout?: int<1, 50>|null,
      *     RadiusRetries?: int<0, 10>|null,

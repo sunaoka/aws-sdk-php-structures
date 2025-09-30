@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\NetworkConfiguration|null $networkConfiguration
  * @property list<Shapes\LoadBalancer>|null $loadBalancers
  * @property list<Shapes\ServiceRegistry>|null $serviceRegistries
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property list<Shapes\CapacityProviderStrategyItem>|null $capacityProviderStrategy
  * @property string|null $platformVersion
  * @property Shapes\Scale|null $scale
@@ -30,7 +30,7 @@ class CreateTaskSetRequest extends Request
      *     networkConfiguration?: Shapes\NetworkConfiguration|null,
      *     loadBalancers?: list<Shapes\LoadBalancer>|null,
      *     serviceRegistries?: list<Shapes\ServiceRegistry>|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     capacityProviderStrategy?: list<Shapes\CapacityProviderStrategyItem>|null,
      *     platformVersion?: string|null,
      *     scale?: Shapes\Scale|null,

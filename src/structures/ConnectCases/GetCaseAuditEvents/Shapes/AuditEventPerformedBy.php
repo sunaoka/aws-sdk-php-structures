@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCases\GetCaseAuditEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $iamPrincipalArn
  * @property UserUnion|null $user
+ * @property string $iamPrincipalArn
  */
 class AuditEventPerformedBy extends Shape
 {
     /**
      * @param array{
-     *     iamPrincipalArn: string,
-     *     user?: UserUnion|null
+     *     user?: UserUnion|null,
+     *     iamPrincipalArn: string
      * } $args
      */
     public function __construct(array $args)

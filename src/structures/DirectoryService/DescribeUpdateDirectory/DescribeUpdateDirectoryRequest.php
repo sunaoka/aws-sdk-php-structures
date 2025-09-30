@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryId
- * @property 'OS' $UpdateType
+ * @property 'OS'|'NETWORK'|'SIZE' $UpdateType
  * @property string|null $RegionName
  * @property string|null $NextToken
  */
@@ -15,7 +15,7 @@ class DescribeUpdateDirectoryRequest extends Request
     /**
      * @param array{
      *     DirectoryId: string,
-     *     UpdateType: 'OS',
+     *     UpdateType: 'OS'|'NETWORK'|'SIZE',
      *     RegionName?: string|null,
      *     NextToken?: string|null
      * } $args

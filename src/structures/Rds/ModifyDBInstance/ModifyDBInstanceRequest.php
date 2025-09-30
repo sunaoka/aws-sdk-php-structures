@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string|null $LicenseModel
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property string|null $NewDBInstanceIdentifier
  * @property string|null $StorageType
@@ -34,13 +35,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DomainOu
  * @property string|null $DomainAuthSecretArn
  * @property list<string>|null $DomainDnsIps
+ * @property bool|null $DisableDomain
  * @property bool|null $CopyTagsToSnapshot
  * @property int|null $MonitoringInterval
  * @property int|null $DBPortNumber
  * @property bool|null $PubliclyAccessible
  * @property string|null $MonitoringRoleArn
  * @property string|null $DomainIAMRoleName
- * @property bool|null $DisableDomain
  * @property int|null $PromotionTier
  * @property bool|null $EnableIAMDatabaseAuthentication
  * @property 'standard'|'advanced'|null $DatabaseInsightsMode
@@ -54,18 +55,17 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $MaxAllocatedStorage
  * @property bool|null $CertificateRotationRestart
  * @property 'open-read-only'|'mounted'|null $ReplicaMode
- * @property bool|null $EnableCustomerOwnedIp
- * @property string|null $AwsBackupRecoveryPointArn
  * @property 'full'|'all-paused'|null $AutomationMode
  * @property int|null $ResumeFullAutomationModeMinutes
+ * @property bool|null $EnableCustomerOwnedIp
  * @property string|null $NetworkType
- * @property int|null $StorageThroughput
+ * @property string|null $AwsBackupRecoveryPointArn
  * @property bool|null $ManageMasterUserPassword
  * @property bool|null $RotateMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
- * @property string|null $Engine
- * @property bool|null $DedicatedLogVolume
  * @property bool|null $MultiTenant
+ * @property bool|null $DedicatedLogVolume
+ * @property string|null $Engine
  * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  */
 class ModifyDBInstanceRequest extends Request
@@ -90,6 +90,7 @@ class ModifyDBInstanceRequest extends Request
      *     AutoMinorVersionUpgrade?: bool|null,
      *     LicenseModel?: string|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     NewDBInstanceIdentifier?: string|null,
      *     StorageType?: string|null,
@@ -101,13 +102,13 @@ class ModifyDBInstanceRequest extends Request
      *     DomainOu?: string|null,
      *     DomainAuthSecretArn?: string|null,
      *     DomainDnsIps?: list<string>|null,
+     *     DisableDomain?: bool|null,
      *     CopyTagsToSnapshot?: bool|null,
      *     MonitoringInterval?: int|null,
      *     DBPortNumber?: int|null,
      *     PubliclyAccessible?: bool|null,
      *     MonitoringRoleArn?: string|null,
      *     DomainIAMRoleName?: string|null,
-     *     DisableDomain?: bool|null,
      *     PromotionTier?: int|null,
      *     EnableIAMDatabaseAuthentication?: bool|null,
      *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
@@ -121,18 +122,17 @@ class ModifyDBInstanceRequest extends Request
      *     MaxAllocatedStorage?: int|null,
      *     CertificateRotationRestart?: bool|null,
      *     ReplicaMode?: 'open-read-only'|'mounted'|null,
-     *     EnableCustomerOwnedIp?: bool|null,
-     *     AwsBackupRecoveryPointArn?: string|null,
      *     AutomationMode?: 'full'|'all-paused'|null,
      *     ResumeFullAutomationModeMinutes?: int|null,
+     *     EnableCustomerOwnedIp?: bool|null,
      *     NetworkType?: string|null,
-     *     StorageThroughput?: int|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
      *     ManageMasterUserPassword?: bool|null,
      *     RotateMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     Engine?: string|null,
-     *     DedicatedLogVolume?: bool|null,
      *     MultiTenant?: bool|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     Engine?: string|null,
      *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null
      * } $args
      */

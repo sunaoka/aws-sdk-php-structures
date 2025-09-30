@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EngineVersion
  * @property string|null $LicenseModel
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property string|null $TdeCredentialArn
  * @property bool|null $Encrypted
@@ -32,10 +33,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DBInstanceAutomatedBackupsArn
  * @property list<DBInstanceAutomatedBackupsReplication>|null $DBInstanceAutomatedBackupsReplications
  * @property string|null $BackupTarget
- * @property int|null $StorageThroughput
+ * @property bool|null $MultiTenant
  * @property string|null $AwsBackupRecoveryPointArn
  * @property bool|null $DedicatedLogVolume
- * @property bool|null $MultiTenant
  */
 class DBInstanceAutomatedBackup extends Shape
 {
@@ -57,6 +57,7 @@ class DBInstanceAutomatedBackup extends Shape
      *     EngineVersion?: string|null,
      *     LicenseModel?: string|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     TdeCredentialArn?: string|null,
      *     Encrypted?: bool|null,
@@ -68,10 +69,9 @@ class DBInstanceAutomatedBackup extends Shape
      *     DBInstanceAutomatedBackupsArn?: string|null,
      *     DBInstanceAutomatedBackupsReplications?: list<DBInstanceAutomatedBackupsReplication>|null,
      *     BackupTarget?: string|null,
-     *     StorageThroughput?: int|null,
+     *     MultiTenant?: bool|null,
      *     AwsBackupRecoveryPointArn?: string|null,
-     *     DedicatedLogVolume?: bool|null,
-     *     MultiTenant?: bool|null
+     *     DedicatedLogVolume?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

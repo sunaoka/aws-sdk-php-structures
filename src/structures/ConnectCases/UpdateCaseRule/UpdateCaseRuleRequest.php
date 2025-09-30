@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\ConnectCases\UpdateCaseRule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $caseRuleId
- * @property string|null $description
  * @property string $domainId
+ * @property string $caseRuleId
  * @property string|null $name
+ * @property string|null $description
  * @property Shapes\CaseRuleDetails|null $rule
  */
 class UpdateCaseRuleRequest extends Request
 {
     /**
      * @param array{
-     *     caseRuleId: string,
-     *     description?: string|null,
      *     domainId: string,
+     *     caseRuleId: string,
      *     name?: string|null,
+     *     description?: string|null,
      *     rule?: Shapes\CaseRuleDetails|null
      * } $args
      */

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $eventId
+ * @property 'Case.Created'|'Case.Updated'|'RelatedItem.Created' $type
+ * @property 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom'|null $relatedItemType
+ * @property \Aws\Api\DateTimeResult $performedTime
  * @property list<AuditEventField> $fields
  * @property AuditEventPerformedBy|null $performedBy
- * @property \Aws\Api\DateTimeResult $performedTime
- * @property 'Contact'|'Comment'|'File'|'Sla'|null $relatedItemType
- * @property 'Case.Created'|'Case.Updated'|'RelatedItem.Created' $type
  */
 class AuditEvent extends Shape
 {
     /**
      * @param array{
      *     eventId: string,
-     *     fields: list<AuditEventField>,
-     *     performedBy?: AuditEventPerformedBy|null,
+     *     type: 'Case.Created'|'Case.Updated'|'RelatedItem.Created',
+     *     relatedItemType?: 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom'|null,
      *     performedTime: \Aws\Api\DateTimeResult,
-     *     relatedItemType?: 'Contact'|'Comment'|'File'|'Sla'|null,
-     *     type: 'Case.Created'|'Case.Updated'|'RelatedItem.Created'
+     *     fields: list<AuditEventField>,
+     *     performedBy?: AuditEventPerformedBy|null
      * } $args
      */
     public function __construct(array $args)

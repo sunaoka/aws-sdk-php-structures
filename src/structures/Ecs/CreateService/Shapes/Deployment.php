@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property list<CapacityProviderStrategyItem>|null $capacityProviderStrategy
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property string|null $platformVersion
  * @property string|null $platformFamily
  * @property NetworkConfiguration|null $networkConfiguration
@@ -41,7 +41,7 @@ class Deployment extends Shape
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     capacityProviderStrategy?: list<CapacityProviderStrategyItem>|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     platformVersion?: string|null,
      *     platformFamily?: string|null,
      *     networkConfiguration?: NetworkConfiguration|null,

@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $WeeklyMaintenanceStartTime
  * @property int<1, 12>|null $HAPairs
  * @property int<128, 6144>|null $ThroughputCapacityPerHAPair
+ * @property string|null $EndpointIpv6AddressRange
  */
 class CreateFileSystemOntapConfiguration extends Shape
 {
@@ -33,7 +34,8 @@ class CreateFileSystemOntapConfiguration extends Shape
      *     ThroughputCapacity?: int<8, 100000>|null,
      *     WeeklyMaintenanceStartTime?: string|null,
      *     HAPairs?: int<1, 12>|null,
-     *     ThroughputCapacityPerHAPair?: int<128, 6144>|null
+     *     ThroughputCapacityPerHAPair?: int<128, 6144>|null,
+     *     EndpointIpv6AddressRange?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $runningCount
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property list<CapacityProviderStrategyItem>|null $capacityProviderStrategy
  * @property string|null $platformVersion
  * @property string|null $platformFamily
@@ -48,7 +48,7 @@ class TaskSet extends Shape
      *     runningCount?: int|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     capacityProviderStrategy?: list<CapacityProviderStrategyItem>|null,
      *     platformVersion?: string|null,
      *     platformFamily?: string|null,
