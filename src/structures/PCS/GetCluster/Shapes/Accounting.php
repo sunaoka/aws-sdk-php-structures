@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PCS\GetCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'STANDARD'|'NONE' $mode
  * @property int<-1, 10000>|null $defaultPurgeTimeInDays
+ * @property 'STANDARD'|'NONE' $mode
  */
 class Accounting extends Shape
 {
     /**
      * @param array{
-     *     mode: 'STANDARD'|'NONE',
-     *     defaultPurgeTimeInDays?: int<-1, 10000>|null
+     *     defaultPurgeTimeInDays?: int<-1, 10000>|null,
+     *     mode: 'STANDARD'|'NONE'
      * } $args
      */
     public function __construct(array $args)

@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property 'TABLE'|'ID_MAPPING_TABLE' $type
  * @property list<SchemaStatusDetail> $schemaStatusDetails
+ * @property string|null $resourceArn
  * @property SchemaTypeProperties|null $schemaTypeProperties
  */
 class Schema extends Shape
@@ -39,6 +40,7 @@ class Schema extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     type: 'TABLE'|'ID_MAPPING_TABLE',
      *     schemaStatusDetails: list<SchemaStatusDetail>,
+     *     resourceArn?: string|null,
      *     schemaTypeProperties?: SchemaTypeProperties|null
      * } $args
      */
