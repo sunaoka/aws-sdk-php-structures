@@ -10,8 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Password
  * @property string|null $Description
  * @property Shapes\DirectoryVpcSettings $VpcSettings
- * @property 'Enterprise'|'Standard'|null $Edition
+ * @property 'Enterprise'|'Standard'|'Hybrid'|null $Edition
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'Dual-stack'|'IPv4'|'IPv6'|null $NetworkType
  */
 class CreateMicrosoftADRequest extends Request
 {
@@ -22,8 +23,9 @@ class CreateMicrosoftADRequest extends Request
      *     Password: string,
      *     Description?: string|null,
      *     VpcSettings: Shapes\DirectoryVpcSettings,
-     *     Edition?: 'Enterprise'|'Standard'|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Edition?: 'Enterprise'|'Standard'|'Hybrid'|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     NetworkType?: 'Dual-stack'|'IPv4'|'IPv6'|null
      * } $args
      */
     public function __construct(array $args)

@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HEALTHY'|'UNHEALTHY'|'UNKNOWN'|null $healthStatus
  * @property list<InferenceAccelerator>|null $inferenceAccelerators
  * @property string|null $lastStatus
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property string|null $memory
  * @property TaskOverride|null $overrides
  * @property string|null $platformVersion
@@ -65,7 +65,7 @@ class Task extends Shape
      *     healthStatus?: 'HEALTHY'|'UNHEALTHY'|'UNKNOWN'|null,
      *     inferenceAccelerators?: list<InferenceAccelerator>|null,
      *     lastStatus?: string|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     memory?: string|null,
      *     overrides?: TaskOverride|null,
      *     platformVersion?: string|null,

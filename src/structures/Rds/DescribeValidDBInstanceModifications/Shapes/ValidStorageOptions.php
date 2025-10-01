@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Range>|null $StorageSize
  * @property list<Range>|null $ProvisionedIops
  * @property list<DoubleRange>|null $IopsToStorageRatio
- * @property bool|null $SupportsStorageAutoscaling
  * @property list<Range>|null $ProvisionedStorageThroughput
  * @property list<DoubleRange>|null $StorageThroughputToIopsRatio
+ * @property bool|null $SupportsStorageAutoscaling
  */
 class ValidStorageOptions extends Shape
 {
@@ -21,9 +21,9 @@ class ValidStorageOptions extends Shape
      *     StorageSize?: list<Range>|null,
      *     ProvisionedIops?: list<Range>|null,
      *     IopsToStorageRatio?: list<DoubleRange>|null,
-     *     SupportsStorageAutoscaling?: bool|null,
      *     ProvisionedStorageThroughput?: list<Range>|null,
-     *     StorageThroughputToIopsRatio?: list<DoubleRange>|null
+     *     StorageThroughputToIopsRatio?: list<DoubleRange>|null,
+     *     SupportsStorageAutoscaling?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

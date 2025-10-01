@@ -31,8 +31,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $StorageType
  * @property int|null $Iops
  * @property bool|null $PubliclyAccessible
- * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property string|null $NetworkType
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
@@ -71,8 +71,8 @@ class RestoreDBClusterFromSnapshotRequest extends Request
      *     StorageType?: string|null,
      *     Iops?: int|null,
      *     PubliclyAccessible?: bool|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     NetworkType?: string|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,

@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LicenseModel
  * @property string|null $SnapshotType
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property int|null $PercentProgress
  * @property string|null $SourceRegion
@@ -34,13 +35,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ProcessorFeature>|null $ProcessorFeatures
  * @property string|null $DbiResourceId
  * @property list<Tag>|null $TagList
+ * @property string|null $SnapshotTarget
  * @property \Aws\Api\DateTimeResult|null $OriginalSnapshotCreateTime
  * @property \Aws\Api\DateTimeResult|null $SnapshotDatabaseTime
- * @property string|null $SnapshotTarget
- * @property int|null $StorageThroughput
  * @property string|null $DBSystemId
- * @property bool|null $DedicatedLogVolume
  * @property bool|null $MultiTenant
+ * @property bool|null $DedicatedLogVolume
  * @property string|null $SnapshotAvailabilityZone
  */
 class DBSnapshot extends Shape
@@ -62,6 +62,7 @@ class DBSnapshot extends Shape
      *     LicenseModel?: string|null,
      *     SnapshotType?: string|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     PercentProgress?: int|null,
      *     SourceRegion?: string|null,
@@ -76,13 +77,12 @@ class DBSnapshot extends Shape
      *     ProcessorFeatures?: list<ProcessorFeature>|null,
      *     DbiResourceId?: string|null,
      *     TagList?: list<Tag>|null,
+     *     SnapshotTarget?: string|null,
      *     OriginalSnapshotCreateTime?: \Aws\Api\DateTimeResult|null,
      *     SnapshotDatabaseTime?: \Aws\Api\DateTimeResult|null,
-     *     SnapshotTarget?: string|null,
-     *     StorageThroughput?: int|null,
      *     DBSystemId?: string|null,
-     *     DedicatedLogVolume?: bool|null,
      *     MultiTenant?: bool|null,
+     *     DedicatedLogVolume?: bool|null,
      *     SnapshotAvailabilityZone?: string|null
      * } $args
      */

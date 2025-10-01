@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DBClusterParameterGroup
  * @property string|null $DBSubnetGroup
  * @property string|null $Status
- * @property \Aws\Api\DateTimeResult|null $AutomaticRestartTime
  * @property string|null $PercentProgress
  * @property \Aws\Api\DateTimeResult|null $EarliestRestorableTime
  * @property string|null $Endpoint
@@ -48,9 +47,17 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $BacktrackConsumedChangeRecords
  * @property list<string>|null $EnabledCloudwatchLogsExports
  * @property int|null $Capacity
+ * @property ClusterPendingModifiedValues|null $PendingModifiedValues
  * @property string|null $EngineMode
  * @property ScalingConfigurationInfo|null $ScalingConfigurationInfo
  * @property RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property string|null $DBClusterInstanceClass
+ * @property string|null $StorageType
+ * @property int|null $Iops
+ * @property int|null $StorageThroughput
+ * @property \Aws\Api\DateTimeResult|null $IOOptimizedNextAllowedModificationTime
+ * @property bool|null $PubliclyAccessible
+ * @property bool|null $AutoMinorVersionUpgrade
  * @property bool|null $DeletionProtection
  * @property bool|null $HttpEndpointEnabled
  * @property 'sync'|'async'|null $ActivityStreamMode
@@ -64,29 +71,22 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GlobalClusterIdentifier
  * @property 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null $GlobalWriteForwardingStatus
  * @property bool|null $GlobalWriteForwardingRequested
- * @property ClusterPendingModifiedValues|null $PendingModifiedValues
- * @property string|null $DBClusterInstanceClass
- * @property string|null $StorageType
- * @property int|null $Iops
- * @property bool|null $PubliclyAccessible
- * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $NetworkType
+ * @property \Aws\Api\DateTimeResult|null $AutomaticRestartTime
+ * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
+ * @property string|null $ServerlessV2PlatformVersion
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
  * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $PerformanceInsightsEnabled
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
- * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
- * @property string|null $ServerlessV2PlatformVersion
- * @property string|null $NetworkType
  * @property string|null $DBSystemId
  * @property MasterUserSecret|null $MasterUserSecret
- * @property \Aws\Api\DateTimeResult|null $IOOptimizedNextAllowedModificationTime
  * @property 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null $LocalWriteForwardingStatus
  * @property string|null $AwsBackupRecoveryPointArn
  * @property LimitlessDatabase|null $LimitlessDatabase
- * @property int|null $StorageThroughput
- * @property 'standard'|'limitless'|null $ClusterScalabilityType
+ * @property 'standard'|'limitless'|'scaleout'|null $ClusterScalabilityType
  * @property CertificateDetails|null $CertificateDetails
  * @property string|null $EngineLifecycleSupport
  */
@@ -103,7 +103,6 @@ class DBCluster extends Shape
      *     DBClusterParameterGroup?: string|null,
      *     DBSubnetGroup?: string|null,
      *     Status?: string|null,
-     *     AutomaticRestartTime?: \Aws\Api\DateTimeResult|null,
      *     PercentProgress?: string|null,
      *     EarliestRestorableTime?: \Aws\Api\DateTimeResult|null,
      *     Endpoint?: string|null,
@@ -137,9 +136,17 @@ class DBCluster extends Shape
      *     BacktrackConsumedChangeRecords?: int|null,
      *     EnabledCloudwatchLogsExports?: list<string>|null,
      *     Capacity?: int|null,
+     *     PendingModifiedValues?: ClusterPendingModifiedValues|null,
      *     EngineMode?: string|null,
      *     ScalingConfigurationInfo?: ScalingConfigurationInfo|null,
      *     RdsCustomClusterConfiguration?: RdsCustomClusterConfiguration|null,
+     *     DBClusterInstanceClass?: string|null,
+     *     StorageType?: string|null,
+     *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
+     *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult|null,
+     *     PubliclyAccessible?: bool|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
      *     DeletionProtection?: bool|null,
      *     HttpEndpointEnabled?: bool|null,
      *     ActivityStreamMode?: 'sync'|'async'|null,
@@ -153,29 +160,22 @@ class DBCluster extends Shape
      *     GlobalClusterIdentifier?: string|null,
      *     GlobalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null,
      *     GlobalWriteForwardingRequested?: bool|null,
-     *     PendingModifiedValues?: ClusterPendingModifiedValues|null,
-     *     DBClusterInstanceClass?: string|null,
-     *     StorageType?: string|null,
-     *     Iops?: int|null,
-     *     PubliclyAccessible?: bool|null,
-     *     AutoMinorVersionUpgrade?: bool|null,
+     *     NetworkType?: string|null,
+     *     AutomaticRestartTime?: \Aws\Api\DateTimeResult|null,
+     *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
+     *     ServerlessV2PlatformVersion?: string|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,
      *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     PerformanceInsightsEnabled?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
-     *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
-     *     ServerlessV2PlatformVersion?: string|null,
-     *     NetworkType?: string|null,
      *     DBSystemId?: string|null,
      *     MasterUserSecret?: MasterUserSecret|null,
-     *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult|null,
      *     LocalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null,
      *     AwsBackupRecoveryPointArn?: string|null,
      *     LimitlessDatabase?: LimitlessDatabase|null,
-     *     StorageThroughput?: int|null,
-     *     ClusterScalabilityType?: 'standard'|'limitless'|null,
+     *     ClusterScalabilityType?: 'standard'|'limitless'|'scaleout'|null,
      *     CertificateDetails?: CertificateDetails|null,
      *     EngineLifecycleSupport?: string|null
      * } $args

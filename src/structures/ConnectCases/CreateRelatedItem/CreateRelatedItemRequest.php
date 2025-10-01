@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ConnectCases\CreateRelatedItem;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $caseId
- * @property Shapes\RelatedItemInputContent $content
  * @property string $domainId
+ * @property string $caseId
+ * @property 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom' $type
+ * @property Shapes\RelatedItemInputContent $content
  * @property Shapes\UserUnion|null $performedBy
- * @property 'Contact'|'Comment'|'File'|'Sla' $type
  */
 class CreateRelatedItemRequest extends Request
 {
     /**
      * @param array{
-     *     caseId: string,
-     *     content: Shapes\RelatedItemInputContent,
      *     domainId: string,
-     *     performedBy?: Shapes\UserUnion|null,
-     *     type: 'Contact'|'Comment'|'File'|'Sla'
+     *     caseId: string,
+     *     type: 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom',
+     *     content: Shapes\RelatedItemInputContent,
+     *     performedBy?: Shapes\UserUnion|null
      * } $args
      */
     public function __construct(array $args)

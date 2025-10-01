@@ -34,20 +34,20 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $StorageType
  * @property int|null $Iops
  * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $NetworkType
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
  * @property int|null $MonitoringInterval
  * @property string|null $MonitoringRoleArn
  * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
- * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
- * @property string|null $NetworkType
  * @property bool|null $ManageMasterUserPassword
  * @property bool|null $RotateMasterUserPassword
+ * @property bool|null $EnableLocalWriteForwarding
  * @property string|null $MasterUserSecretKmsKeyId
  * @property string|null $EngineMode
  * @property bool|null $AllowEngineModeChange
- * @property bool|null $EnableLocalWriteForwarding
  * @property string|null $AwsBackupRecoveryPointArn
  * @property bool|null $EnableLimitlessDatabase
  * @property string|null $CACertificateIdentifier
@@ -86,20 +86,20 @@ class ModifyDBClusterRequest extends Request
      *     StorageType?: string|null,
      *     Iops?: int|null,
      *     AutoMinorVersionUpgrade?: bool|null,
+     *     NetworkType?: string|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     MonitoringInterval?: int|null,
      *     MonitoringRoleArn?: string|null,
      *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     NetworkType?: string|null,
      *     ManageMasterUserPassword?: bool|null,
      *     RotateMasterUserPassword?: bool|null,
+     *     EnableLocalWriteForwarding?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
      *     EngineMode?: string|null,
      *     AllowEngineModeChange?: bool|null,
-     *     EnableLocalWriteForwarding?: bool|null,
      *     AwsBackupRecoveryPointArn?: string|null,
      *     EnableLimitlessDatabase?: bool|null,
      *     CACertificateIdentifier?: string|null,

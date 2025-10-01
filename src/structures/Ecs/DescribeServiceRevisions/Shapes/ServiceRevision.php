@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $clusterArn
  * @property string|null $taskDefinition
  * @property list<CapacityProviderStrategyItem>|null $capacityProviderStrategy
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property string|null $platformVersion
  * @property string|null $platformFamily
  * @property list<LoadBalancer>|null $loadBalancers
@@ -34,7 +34,7 @@ class ServiceRevision extends Shape
      *     clusterArn?: string|null,
      *     taskDefinition?: string|null,
      *     capacityProviderStrategy?: list<CapacityProviderStrategyItem>|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     platformVersion?: string|null,
      *     platformFamily?: string|null,
      *     loadBalancers?: list<LoadBalancer>|null,

@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string|null $LicenseModel
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property bool|null $PubliclyAccessible
  * @property list<Shapes\Tag>|null $Tags
@@ -51,7 +52,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeletionProtection
  * @property int|null $MaxAllocatedStorage
  * @property string|null $NetworkType
- * @property int|null $StorageThroughput
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
  * @property bool|null $DedicatedLogVolume
@@ -83,6 +83,7 @@ class RestoreDBInstanceFromS3Request extends Request
      *     AutoMinorVersionUpgrade?: bool|null,
      *     LicenseModel?: string|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     PubliclyAccessible?: bool|null,
      *     Tags?: list<Shapes\Tag>|null,
@@ -108,7 +109,6 @@ class RestoreDBInstanceFromS3Request extends Request
      *     DeletionProtection?: bool|null,
      *     MaxAllocatedStorage?: int|null,
      *     NetworkType?: string|null,
-     *     StorageThroughput?: int|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
      *     DedicatedLogVolume?: bool|null,

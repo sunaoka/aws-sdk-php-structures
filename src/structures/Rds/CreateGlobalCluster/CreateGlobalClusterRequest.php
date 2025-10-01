@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rds\CreateGlobalCluster;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $GlobalClusterIdentifier
+ * @property string $GlobalClusterIdentifier
  * @property string|null $SourceDBClusterIdentifier
  * @property string|null $Engine
  * @property string|null $EngineVersion
@@ -19,7 +19,7 @@ class CreateGlobalClusterRequest extends Request
 {
     /**
      * @param array{
-     *     GlobalClusterIdentifier?: string|null,
+     *     GlobalClusterIdentifier: string,
      *     SourceDBClusterIdentifier?: string|null,
      *     Engine?: string|null,
      *     EngineVersion?: string|null,
@@ -30,7 +30,7 @@ class CreateGlobalClusterRequest extends Request
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

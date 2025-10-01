@@ -16,9 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'INACTIVE'|'DELETE_IN_PROGRESS'|null $status
  * @property list<Attribute>|null $requiresAttributes
  * @property list<TaskDefinitionPlacementConstraint>|null $placementConstraints
- * @property list<'EC2'|'FARGATE'|'EXTERNAL'>|null $compatibilities
+ * @property list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null $compatibilities
  * @property RuntimePlatform|null $runtimePlatform
- * @property list<'EC2'|'FARGATE'|'EXTERNAL'>|null $requiresCompatibilities
+ * @property list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null $requiresCompatibilities
  * @property string|null $cpu
  * @property string|null $memory
  * @property list<InferenceAccelerator>|null $inferenceAccelerators
@@ -46,9 +46,9 @@ class TaskDefinition extends Shape
      *     status?: 'ACTIVE'|'INACTIVE'|'DELETE_IN_PROGRESS'|null,
      *     requiresAttributes?: list<Attribute>|null,
      *     placementConstraints?: list<TaskDefinitionPlacementConstraint>|null,
-     *     compatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'>|null,
+     *     compatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null,
      *     runtimePlatform?: RuntimePlatform|null,
-     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'>|null,
+     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null,
      *     cpu?: string|null,
      *     memory?: string|null,
      *     inferenceAccelerators?: list<InferenceAccelerator>|null,

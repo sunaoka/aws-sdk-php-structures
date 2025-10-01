@@ -6,14 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property Shapes\AutoScalingGroupProviderUpdate $autoScalingGroupProvider
+ * @property string|null $cluster
+ * @property Shapes\AutoScalingGroupProviderUpdate|null $autoScalingGroupProvider
+ * @property Shapes\UpdateManagedInstancesProviderConfiguration|null $managedInstancesProvider
  */
 class UpdateCapacityProviderRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     autoScalingGroupProvider: Shapes\AutoScalingGroupProviderUpdate
+     *     cluster?: string|null,
+     *     autoScalingGroupProvider?: Shapes\AutoScalingGroupProviderUpdate|null,
+     *     managedInstancesProvider?: Shapes\UpdateManagedInstancesProviderConfiguration|null
      * } $args
      */
     public function __construct(array $args)

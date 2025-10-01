@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCases\UpdateCaseRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<BooleanCondition> $conditions
  * @property bool $defaultValue
+ * @property list<BooleanCondition> $conditions
  */
 class RequiredCaseRule extends Shape
 {
     /**
      * @param array{
-     *     conditions: list<BooleanCondition>,
-     *     defaultValue: bool
+     *     defaultValue: bool,
+     *     conditions: list<BooleanCondition>
      * } $args
      */
     public function __construct(array $args)

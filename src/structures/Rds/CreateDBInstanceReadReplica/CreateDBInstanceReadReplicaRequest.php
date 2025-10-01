@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $MultiAZ
  * @property bool|null $AutoMinorVersionUpgrade
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property string|null $DBParameterGroupName
  * @property bool|null $PubliclyAccessible
@@ -25,7 +26,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $MonitoringRoleArn
  * @property string|null $KmsKeyId
  * @property string|null $PreSignedUrl
- * @property string|null $DestinationRegion
  * @property bool|null $EnableIAMDatabaseAuthentication
  * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
@@ -42,12 +42,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DomainAuthSecretArn
  * @property list<string>|null $DomainDnsIps
  * @property 'open-read-only'|'mounted'|null $ReplicaMode
- * @property int|null $MaxAllocatedStorage
- * @property string|null $CustomIamInstanceProfile
- * @property string|null $NetworkType
- * @property int|null $StorageThroughput
  * @property bool|null $EnableCustomerOwnedIp
+ * @property string|null $NetworkType
+ * @property int|null $MaxAllocatedStorage
  * @property string|null $BackupTarget
+ * @property string|null $CustomIamInstanceProfile
  * @property int|null $AllocatedStorage
  * @property string|null $SourceDBClusterIdentifier
  * @property bool|null $DedicatedLogVolume
@@ -66,6 +65,7 @@ class CreateDBInstanceReadReplicaRequest extends Request
      *     MultiAZ?: bool|null,
      *     AutoMinorVersionUpgrade?: bool|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     DBParameterGroupName?: string|null,
      *     PubliclyAccessible?: bool|null,
@@ -78,7 +78,6 @@ class CreateDBInstanceReadReplicaRequest extends Request
      *     MonitoringRoleArn?: string|null,
      *     KmsKeyId?: string|null,
      *     PreSignedUrl?: string|null,
-     *     DestinationRegion?: string|null,
      *     EnableIAMDatabaseAuthentication?: bool|null,
      *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
@@ -95,12 +94,11 @@ class CreateDBInstanceReadReplicaRequest extends Request
      *     DomainAuthSecretArn?: string|null,
      *     DomainDnsIps?: list<string>|null,
      *     ReplicaMode?: 'open-read-only'|'mounted'|null,
-     *     MaxAllocatedStorage?: int|null,
-     *     CustomIamInstanceProfile?: string|null,
-     *     NetworkType?: string|null,
-     *     StorageThroughput?: int|null,
      *     EnableCustomerOwnedIp?: bool|null,
+     *     NetworkType?: string|null,
+     *     MaxAllocatedStorage?: int|null,
      *     BackupTarget?: string|null,
+     *     CustomIamInstanceProfile?: string|null,
      *     AllocatedStorage?: int|null,
      *     SourceDBClusterIdentifier?: string|null,
      *     DedicatedLogVolume?: bool|null,

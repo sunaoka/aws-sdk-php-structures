@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ConnectCases\BatchGetCaseRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $errorCode
  * @property string $id
+ * @property string $errorCode
  * @property string|null $message
  */
 class CaseRuleError extends Shape
 {
     /**
      * @param array{
-     *     errorCode: string,
      *     id: string,
+     *     errorCode: string,
      *     message?: string|null
      * } $args
      */

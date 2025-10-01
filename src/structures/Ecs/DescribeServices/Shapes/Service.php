@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $desiredCount
  * @property int|null $runningCount
  * @property int|null $pendingCount
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property list<CapacityProviderStrategyItem>|null $capacityProviderStrategy
  * @property string|null $platformVersion
  * @property string|null $platformFamily
@@ -51,7 +51,7 @@ class Service extends Shape
      *     desiredCount?: int|null,
      *     runningCount?: int|null,
      *     pendingCount?: int|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     capacityProviderStrategy?: list<CapacityProviderStrategyItem>|null,
      *     platformVersion?: string|null,
      *     platformFamily?: string|null,

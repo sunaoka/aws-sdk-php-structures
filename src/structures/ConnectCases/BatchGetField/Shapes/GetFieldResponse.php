@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\ConnectCases\BatchGetField\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $createdTime
- * @property bool|null $deleted
- * @property string|null $description
- * @property string $fieldArn
  * @property string $fieldId
- * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  * @property string $name
+ * @property string $fieldArn
+ * @property string|null $description
+ * @property 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'|'User' $type
  * @property 'System'|'Custom' $namespace
  * @property array<string, string>|null $tags
- * @property 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'|'User' $type
+ * @property bool|null $deleted
+ * @property \Aws\Api\DateTimeResult|null $createdTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  */
 class GetFieldResponse extends Shape
 {
     /**
      * @param array{
-     *     createdTime?: \Aws\Api\DateTimeResult|null,
-     *     deleted?: bool|null,
-     *     description?: string|null,
-     *     fieldArn: string,
      *     fieldId: string,
-     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     name: string,
+     *     fieldArn: string,
+     *     description?: string|null,
+     *     type: 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'|'User',
      *     namespace: 'System'|'Custom',
      *     tags?: array<string, string>|null,
-     *     type: 'Text'|'Number'|'Boolean'|'DateTime'|'SingleSelect'|'Url'|'User'
+     *     deleted?: bool|null,
+     *     createdTime?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

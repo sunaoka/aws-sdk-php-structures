@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ServiceRegistry>|null $serviceRegistries
  * @property int|null $desiredCount
  * @property string|null $clientToken
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
  * @property list<Shapes\CapacityProviderStrategyItem>|null $capacityProviderStrategy
  * @property string|null $platformVersion
  * @property string|null $role
@@ -44,7 +44,7 @@ class CreateServiceRequest extends Request
      *     serviceRegistries?: list<Shapes\ServiceRegistry>|null,
      *     desiredCount?: int|null,
      *     clientToken?: string|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
      *     capacityProviderStrategy?: list<Shapes\CapacityProviderStrategyItem>|null,
      *     platformVersion?: string|null,
      *     role?: string|null,

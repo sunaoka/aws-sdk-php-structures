@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DBName
  * @property string|null $Engine
  * @property int|null $Iops
+ * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $StorageType
@@ -38,12 +39,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DBParameterGroupName
  * @property bool|null $DeletionProtection
  * @property bool|null $EnableCustomerOwnedIp
- * @property string|null $CustomIamInstanceProfile
- * @property string|null $BackupTarget
  * @property string|null $NetworkType
- * @property int|null $StorageThroughput
- * @property string|null $DBClusterSnapshotIdentifier
+ * @property string|null $BackupTarget
+ * @property string|null $CustomIamInstanceProfile
  * @property int|null $AllocatedStorage
+ * @property string|null $DBClusterSnapshotIdentifier
  * @property bool|null $DedicatedLogVolume
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
@@ -67,6 +67,7 @@ class RestoreDBInstanceFromDBSnapshotRequest extends Request
      *     DBName?: string|null,
      *     Engine?: string|null,
      *     Iops?: int|null,
+     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     StorageType?: string|null,
@@ -87,12 +88,11 @@ class RestoreDBInstanceFromDBSnapshotRequest extends Request
      *     DBParameterGroupName?: string|null,
      *     DeletionProtection?: bool|null,
      *     EnableCustomerOwnedIp?: bool|null,
-     *     CustomIamInstanceProfile?: string|null,
-     *     BackupTarget?: string|null,
      *     NetworkType?: string|null,
-     *     StorageThroughput?: int|null,
-     *     DBClusterSnapshotIdentifier?: string|null,
+     *     BackupTarget?: string|null,
+     *     CustomIamInstanceProfile?: string|null,
      *     AllocatedStorage?: int|null,
+     *     DBClusterSnapshotIdentifier?: string|null,
      *     DedicatedLogVolume?: bool|null,
      *     CACertificateIdentifier?: string|null,
      *     EngineLifecycleSupport?: string|null,

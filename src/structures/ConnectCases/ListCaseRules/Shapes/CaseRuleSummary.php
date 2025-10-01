@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ConnectCases\ListCaseRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $caseRuleArn
  * @property string $caseRuleId
- * @property string|null $description
  * @property string $name
+ * @property string $caseRuleArn
  * @property 'Required' $ruleType
+ * @property string|null $description
  */
 class CaseRuleSummary extends Shape
 {
     /**
      * @param array{
-     *     caseRuleArn: string,
      *     caseRuleId: string,
-     *     description?: string|null,
      *     name: string,
-     *     ruleType: 'Required'
+     *     caseRuleArn: string,
+     *     ruleType: 'Required',
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

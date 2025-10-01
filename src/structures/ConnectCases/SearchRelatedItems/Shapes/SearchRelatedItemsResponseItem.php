@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ConnectCases\SearchRelatedItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $relatedItemId
+ * @property 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom' $type
  * @property \Aws\Api\DateTimeResult $associationTime
  * @property RelatedItemContent $content
- * @property UserUnion|null $performedBy
- * @property string $relatedItemId
  * @property array<string, string>|null $tags
- * @property 'Contact'|'Comment'|'File'|'Sla' $type
+ * @property UserUnion|null $performedBy
  */
 class SearchRelatedItemsResponseItem extends Shape
 {
     /**
      * @param array{
+     *     relatedItemId: string,
+     *     type: 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom',
      *     associationTime: \Aws\Api\DateTimeResult,
      *     content: RelatedItemContent,
-     *     performedBy?: UserUnion|null,
-     *     relatedItemId: string,
      *     tags?: array<string, string>|null,
-     *     type: 'Contact'|'Comment'|'File'|'Sla'
+     *     performedBy?: UserUnion|null
      * } $args
      */
     public function __construct(array $args)
