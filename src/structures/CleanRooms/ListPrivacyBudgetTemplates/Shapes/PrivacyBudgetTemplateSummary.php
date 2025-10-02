@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $membershipArn
  * @property string $collaborationId
  * @property string $collaborationArn
- * @property 'DIFFERENTIAL_PRIVACY' $privacyBudgetType
+ * @property 'DIFFERENTIAL_PRIVACY'|'ACCESS_BUDGET' $privacyBudgetType
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  */
@@ -25,7 +25,7 @@ class PrivacyBudgetTemplateSummary extends Shape
      *     membershipArn: string,
      *     collaborationId: string,
      *     collaborationArn: string,
-     *     privacyBudgetType: 'DIFFERENTIAL_PRIVACY',
+     *     privacyBudgetType: 'DIFFERENTIAL_PRIVACY'|'ACCESS_BUDGET',
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult
      * } $args
