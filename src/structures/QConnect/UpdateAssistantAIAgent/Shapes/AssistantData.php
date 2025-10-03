@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
  * @property AssistantIntegrationConfiguration|null $integrationConfiguration
  * @property AssistantCapabilityConfiguration|null $capabilityConfiguration
- * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null $aiAgentConfiguration
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', AIAgentConfigurationData>|null $aiAgentConfiguration
  */
 class AssistantData extends Shape
 {
@@ -31,7 +31,7 @@ class AssistantData extends Shape
      *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
      *     integrationConfiguration?: AssistantIntegrationConfiguration|null,
      *     capabilityConfiguration?: AssistantCapabilityConfiguration|null,
-     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', AIAgentConfigurationData>|null
      * } $args
      */
     public function __construct(array $args)

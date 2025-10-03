@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $assistantId
  * @property string $assistantArn
  * @property string $aiPromptId
- * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION' $type
+ * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION' $type
  * @property string $aiPromptArn
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
  * @property 'TEXT' $templateType
@@ -29,7 +29,7 @@ class AIPromptSummary extends Shape
      *     assistantId: string,
      *     assistantArn: string,
      *     aiPromptId: string,
-     *     type: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION',
+     *     type: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION',
      *     aiPromptArn: string,
      *     modifiedTime?: \Aws\Api\DateTimeResult|null,
      *     templateType: 'TEXT',

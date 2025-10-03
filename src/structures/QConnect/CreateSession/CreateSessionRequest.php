@@ -11,7 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property array<string, string>|null $tags
  * @property Shapes\TagFilter|null $tagFilter
- * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null $aiAgentConfiguration
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', Shapes\AIAgentConfigurationData>|null $aiAgentConfiguration
+ * @property string|null $contactArn
  */
 class CreateSessionRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateSessionRequest extends Request
      *     description?: string|null,
      *     tags?: array<string, string>|null,
      *     tagFilter?: Shapes\TagFilter|null,
-     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', Shapes\AIAgentConfigurationData>|null,
+     *     contactArn?: string|null
      * } $args
      */
     public function __construct(array $args)

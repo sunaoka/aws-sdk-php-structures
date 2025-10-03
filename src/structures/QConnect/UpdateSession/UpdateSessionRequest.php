@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $sessionId
  * @property string|null $description
  * @property Shapes\TagFilter|null $tagFilter
- * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null $aiAgentConfiguration
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', Shapes\AIAgentConfigurationData>|null $aiAgentConfiguration
  */
 class UpdateSessionRequest extends Request
 {
@@ -19,7 +19,7 @@ class UpdateSessionRequest extends Request
      *     sessionId: string,
      *     description?: string|null,
      *     tagFilter?: Shapes\TagFilter|null,
-     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', Shapes\AIAgentConfigurationData>|null
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', Shapes\AIAgentConfigurationData>|null
      * } $args
      */
     public function __construct(array $args)

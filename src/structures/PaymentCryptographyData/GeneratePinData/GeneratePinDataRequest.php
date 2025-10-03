@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EncryptionKeyIdentifier
  * @property Shapes\PinGenerationAttributes $GenerationAttributes
  * @property int<4, 12>|null $PinDataLength
- * @property string $PrimaryAccountNumber
- * @property 'ISO_FORMAT_0'|'ISO_FORMAT_3'|'ISO_FORMAT_4' $PinBlockFormat
+ * @property string|null $PrimaryAccountNumber
+ * @property 'ISO_FORMAT_0'|'ISO_FORMAT_1'|'ISO_FORMAT_3'|'ISO_FORMAT_4' $PinBlockFormat
  * @property Shapes\WrappedKey|null $EncryptionWrappedKey
  */
 class GeneratePinDataRequest extends Request
@@ -21,8 +21,8 @@ class GeneratePinDataRequest extends Request
      *     EncryptionKeyIdentifier: string,
      *     GenerationAttributes: Shapes\PinGenerationAttributes,
      *     PinDataLength?: int<4, 12>|null,
-     *     PrimaryAccountNumber: string,
-     *     PinBlockFormat: 'ISO_FORMAT_0'|'ISO_FORMAT_3'|'ISO_FORMAT_4',
+     *     PrimaryAccountNumber?: string|null,
+     *     PinBlockFormat: 'ISO_FORMAT_0'|'ISO_FORMAT_1'|'ISO_FORMAT_3'|'ISO_FORMAT_4',
      *     EncryptionWrappedKey?: Shapes\WrappedKey|null
      * } $args
      */

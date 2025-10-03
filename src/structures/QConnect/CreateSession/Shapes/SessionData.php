@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property SessionIntegrationConfiguration|null $integrationConfiguration
  * @property TagFilter|null $tagFilter
- * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null $aiAgentConfiguration
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', AIAgentConfigurationData>|null $aiAgentConfiguration
  * @property 'SYSTEM'|'CUSTOMER'|null $origin
  */
 class SessionData extends Shape
@@ -26,7 +26,7 @@ class SessionData extends Shape
      *     tags?: array<string, string>|null,
      *     integrationConfiguration?: SessionIntegrationConfiguration|null,
      *     tagFilter?: TagFilter|null,
-     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE', AIAgentConfigurationData>|null,
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', AIAgentConfigurationData>|null,
      *     origin?: 'SYSTEM'|'CUSTOMER'|null
      * } $args
      */

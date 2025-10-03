@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $aiAgentId
  * @property string $aiAgentArn
  * @property string $name
- * @property 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE' $type
+ * @property 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER' $type
  * @property AIAgentConfiguration $configuration
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
  * @property string|null $description
@@ -28,7 +28,7 @@ class AIAgentData extends Shape
      *     aiAgentId: string,
      *     aiAgentArn: string,
      *     name: string,
-     *     type: 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE',
+     *     type: 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER',
      *     configuration: AIAgentConfiguration,
      *     modifiedTime?: \Aws\Api\DateTimeResult|null,
      *     description?: string|null,
