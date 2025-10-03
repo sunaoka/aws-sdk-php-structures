@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string $assistantId
  * @property string $name
- * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION' $type
+ * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION' $type
  * @property Shapes\AIPromptTemplateConfiguration $templateConfiguration
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  * @property 'TEXT' $templateType
@@ -24,7 +24,7 @@ class CreateAIPromptRequest extends Request
      *     clientToken?: string|null,
      *     assistantId: string,
      *     name: string,
-     *     type: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION',
+     *     type: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION',
      *     templateConfiguration: Shapes\AIPromptTemplateConfiguration,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
      *     templateType: 'TEXT',

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $assistantId
  * @property string $assistantArn
  * @property string $aiAgentId
- * @property 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE' $type
+ * @property 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER' $type
  * @property string $aiAgentArn
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
@@ -27,7 +27,7 @@ class AIAgentSummary extends Shape
      *     assistantId: string,
      *     assistantArn: string,
      *     aiAgentId: string,
-     *     type: 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE',
+     *     type: 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER',
      *     aiAgentArn: string,
      *     modifiedTime?: \Aws\Api\DateTimeResult|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
