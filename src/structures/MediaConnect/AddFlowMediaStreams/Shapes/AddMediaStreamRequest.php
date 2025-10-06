@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $MediaStreamName
  * @property 'video'|'audio'|'ancillary-data' $MediaStreamType
  * @property string|null $VideoFormat
+ * @property array<string, string>|null $MediaStreamTags
  */
 class AddMediaStreamRequest extends Shape
 {
@@ -23,7 +24,8 @@ class AddMediaStreamRequest extends Shape
      *     MediaStreamId: int,
      *     MediaStreamName: string,
      *     MediaStreamType: 'video'|'audio'|'ancillary-data',
-     *     VideoFormat?: string|null
+     *     VideoFormat?: string|null,
+     *     MediaStreamTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

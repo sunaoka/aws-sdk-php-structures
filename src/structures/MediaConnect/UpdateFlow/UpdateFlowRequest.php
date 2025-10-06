@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UpdateMaintenance|null $Maintenance
  * @property Shapes\MonitoringConfig|null $SourceMonitoringConfig
  * @property Shapes\NdiConfig|null $NdiConfig
+ * @property 'MEDIUM'|'LARGE'|null $FlowSize
  */
 class UpdateFlowRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdateFlowRequest extends Request
      *     SourceFailoverConfig?: Shapes\UpdateFailoverConfig|null,
      *     Maintenance?: Shapes\UpdateMaintenance|null,
      *     SourceMonitoringConfig?: Shapes\MonitoringConfig|null,
-     *     NdiConfig?: Shapes\NdiConfig|null
+     *     NdiConfig?: Shapes\NdiConfig|null,
+     *     FlowSize?: 'MEDIUM'|'LARGE'|null
      * } $args
      */
     public function __construct(array $args)

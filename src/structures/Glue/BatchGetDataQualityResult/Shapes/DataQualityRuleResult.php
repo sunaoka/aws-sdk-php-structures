@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, double>|null $EvaluatedMetrics
  * @property string|null $EvaluatedRule
  * @property array<string, double>|null $RuleMetrics
+ * @property array<string, string>|null $Labels
  */
 class DataQualityRuleResult extends Shape
 {
@@ -23,7 +24,8 @@ class DataQualityRuleResult extends Shape
      *     Result?: 'PASS'|'FAIL'|'ERROR'|null,
      *     EvaluatedMetrics?: array<string, double>|null,
      *     EvaluatedRule?: string|null,
-     *     RuleMetrics?: array<string, double>|null
+     *     RuleMetrics?: array<string, double>|null,
+     *     Labels?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])
