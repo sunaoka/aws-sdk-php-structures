@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $EntitlementStatus
  * @property string|null $Name
  * @property list<string> $Subscribers
+ * @property array<string, string>|null $EntitlementTags
  */
 class GrantEntitlementRequest extends Shape
 {
@@ -21,7 +22,8 @@ class GrantEntitlementRequest extends Shape
      *     Encryption?: Encryption|null,
      *     EntitlementStatus?: 'ENABLED'|'DISABLED'|null,
      *     Name?: string|null,
-     *     Subscribers: list<string>
+     *     Subscribers: list<string>,
+     *     EntitlementTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

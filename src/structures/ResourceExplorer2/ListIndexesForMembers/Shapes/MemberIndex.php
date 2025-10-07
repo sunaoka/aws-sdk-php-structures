@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $AccountId
- * @property string|null $Arn
  * @property string|null $Region
+ * @property string|null $Arn
  * @property 'LOCAL'|'AGGREGATOR'|null $Type
  */
 class MemberIndex extends Shape
@@ -15,8 +15,8 @@ class MemberIndex extends Shape
     /**
      * @param array{
      *     AccountId?: string|null,
-     *     Arn?: string|null,
      *     Region?: string|null,
+     *     Arn?: string|null,
      *     Type?: 'LOCAL'|'AGGREGATOR'|null
      * } $args
      */

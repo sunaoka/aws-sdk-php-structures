@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $Arn
- * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'UPDATING'|null $State
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
  */
 class DeleteIndexResponse extends Response
 {

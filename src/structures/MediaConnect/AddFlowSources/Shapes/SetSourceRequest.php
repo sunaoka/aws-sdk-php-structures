@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcInterfaceName
  * @property string|null $WhitelistCidr
  * @property SetGatewayBridgeSourceRequest|null $GatewayBridgeSource
+ * @property array<string, string>|null $SourceTags
  */
 class SetSourceRequest extends Shape
 {
@@ -47,7 +48,8 @@ class SetSourceRequest extends Shape
      *     StreamId?: string|null,
      *     VpcInterfaceName?: string|null,
      *     WhitelistCidr?: string|null,
-     *     GatewayBridgeSource?: SetGatewayBridgeSourceRequest|null
+     *     GatewayBridgeSource?: SetGatewayBridgeSourceRequest|null,
+     *     SourceTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])
