@@ -1,0 +1,75 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Route53Resolver;
+
+class Route53ResolverClient extends \Aws\Route53Resolver\Route53ResolverClient
+{
+    use AssociateFirewallRuleGroup\AssociateFirewallRuleGroupTrait;
+    use AssociateResolverEndpointIpAddress\AssociateResolverEndpointIpAddressTrait;
+    use AssociateResolverQueryLogConfig\AssociateResolverQueryLogConfigTrait;
+    use AssociateResolverRule\AssociateResolverRuleTrait;
+    use CreateFirewallDomainList\CreateFirewallDomainListTrait;
+    use CreateFirewallRule\CreateFirewallRuleTrait;
+    use CreateFirewallRuleGroup\CreateFirewallRuleGroupTrait;
+    use CreateOutpostResolver\CreateOutpostResolverTrait;
+    use CreateResolverEndpoint\CreateResolverEndpointTrait;
+    use CreateResolverQueryLogConfig\CreateResolverQueryLogConfigTrait;
+    use CreateResolverRule\CreateResolverRuleTrait;
+    use DeleteFirewallDomainList\DeleteFirewallDomainListTrait;
+    use DeleteFirewallRule\DeleteFirewallRuleTrait;
+    use DeleteFirewallRuleGroup\DeleteFirewallRuleGroupTrait;
+    use DeleteOutpostResolver\DeleteOutpostResolverTrait;
+    use DeleteResolverEndpoint\DeleteResolverEndpointTrait;
+    use DeleteResolverQueryLogConfig\DeleteResolverQueryLogConfigTrait;
+    use DeleteResolverRule\DeleteResolverRuleTrait;
+    use DisassociateFirewallRuleGroup\DisassociateFirewallRuleGroupTrait;
+    use DisassociateResolverEndpointIpAddress\DisassociateResolverEndpointIpAddressTrait;
+    use DisassociateResolverQueryLogConfig\DisassociateResolverQueryLogConfigTrait;
+    use DisassociateResolverRule\DisassociateResolverRuleTrait;
+    use GetFirewallConfig\GetFirewallConfigTrait;
+    use GetFirewallDomainList\GetFirewallDomainListTrait;
+    use GetFirewallRuleGroup\GetFirewallRuleGroupTrait;
+    use GetFirewallRuleGroupAssociation\GetFirewallRuleGroupAssociationTrait;
+    use GetFirewallRuleGroupPolicy\GetFirewallRuleGroupPolicyTrait;
+    use GetOutpostResolver\GetOutpostResolverTrait;
+    use GetResolverConfig\GetResolverConfigTrait;
+    use GetResolverDnssecConfig\GetResolverDnssecConfigTrait;
+    use GetResolverEndpoint\GetResolverEndpointTrait;
+    use GetResolverQueryLogConfig\GetResolverQueryLogConfigTrait;
+    use GetResolverQueryLogConfigAssociation\GetResolverQueryLogConfigAssociationTrait;
+    use GetResolverQueryLogConfigPolicy\GetResolverQueryLogConfigPolicyTrait;
+    use GetResolverRule\GetResolverRuleTrait;
+    use GetResolverRuleAssociation\GetResolverRuleAssociationTrait;
+    use GetResolverRulePolicy\GetResolverRulePolicyTrait;
+    use ImportFirewallDomains\ImportFirewallDomainsTrait;
+    use ListFirewallConfigs\ListFirewallConfigsTrait;
+    use ListFirewallDomainLists\ListFirewallDomainListsTrait;
+    use ListFirewallDomains\ListFirewallDomainsTrait;
+    use ListFirewallRuleGroupAssociations\ListFirewallRuleGroupAssociationsTrait;
+    use ListFirewallRuleGroups\ListFirewallRuleGroupsTrait;
+    use ListFirewallRules\ListFirewallRulesTrait;
+    use ListOutpostResolvers\ListOutpostResolversTrait;
+    use ListResolverConfigs\ListResolverConfigsTrait;
+    use ListResolverDnssecConfigs\ListResolverDnssecConfigsTrait;
+    use ListResolverEndpointIpAddresses\ListResolverEndpointIpAddressesTrait;
+    use ListResolverEndpoints\ListResolverEndpointsTrait;
+    use ListResolverQueryLogConfigAssociations\ListResolverQueryLogConfigAssociationsTrait;
+    use ListResolverQueryLogConfigs\ListResolverQueryLogConfigsTrait;
+    use ListResolverRuleAssociations\ListResolverRuleAssociationsTrait;
+    use ListResolverRules\ListResolverRulesTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use PutFirewallRuleGroupPolicy\PutFirewallRuleGroupPolicyTrait;
+    use PutResolverQueryLogConfigPolicy\PutResolverQueryLogConfigPolicyTrait;
+    use PutResolverRulePolicy\PutResolverRulePolicyTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateFirewallConfig\UpdateFirewallConfigTrait;
+    use UpdateFirewallDomains\UpdateFirewallDomainsTrait;
+    use UpdateFirewallRule\UpdateFirewallRuleTrait;
+    use UpdateFirewallRuleGroupAssociation\UpdateFirewallRuleGroupAssociationTrait;
+    use UpdateOutpostResolver\UpdateOutpostResolverTrait;
+    use UpdateResolverConfig\UpdateResolverConfigTrait;
+    use UpdateResolverDnssecConfig\UpdateResolverDnssecConfigTrait;
+    use UpdateResolverEndpoint\UpdateResolverEndpointTrait;
+    use UpdateResolverRule\UpdateResolverRuleTrait;
+}

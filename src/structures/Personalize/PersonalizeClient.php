@@ -1,0 +1,78 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Personalize;
+
+class PersonalizeClient extends \Aws\Personalize\PersonalizeClient
+{
+    use CreateBatchInferenceJob\CreateBatchInferenceJobTrait;
+    use CreateBatchSegmentJob\CreateBatchSegmentJobTrait;
+    use CreateCampaign\CreateCampaignTrait;
+    use CreateDataDeletionJob\CreateDataDeletionJobTrait;
+    use CreateDataset\CreateDatasetTrait;
+    use CreateDatasetExportJob\CreateDatasetExportJobTrait;
+    use CreateDatasetGroup\CreateDatasetGroupTrait;
+    use CreateDatasetImportJob\CreateDatasetImportJobTrait;
+    use CreateEventTracker\CreateEventTrackerTrait;
+    use CreateFilter\CreateFilterTrait;
+    use CreateMetricAttribution\CreateMetricAttributionTrait;
+    use CreateRecommender\CreateRecommenderTrait;
+    use CreateSchema\CreateSchemaTrait;
+    use CreateSolution\CreateSolutionTrait;
+    use CreateSolutionVersion\CreateSolutionVersionTrait;
+    use DeleteCampaign\DeleteCampaignTrait;
+    use DeleteDataset\DeleteDatasetTrait;
+    use DeleteDatasetGroup\DeleteDatasetGroupTrait;
+    use DeleteEventTracker\DeleteEventTrackerTrait;
+    use DeleteFilter\DeleteFilterTrait;
+    use DeleteMetricAttribution\DeleteMetricAttributionTrait;
+    use DeleteRecommender\DeleteRecommenderTrait;
+    use DeleteSchema\DeleteSchemaTrait;
+    use DeleteSolution\DeleteSolutionTrait;
+    use DescribeAlgorithm\DescribeAlgorithmTrait;
+    use DescribeBatchInferenceJob\DescribeBatchInferenceJobTrait;
+    use DescribeBatchSegmentJob\DescribeBatchSegmentJobTrait;
+    use DescribeCampaign\DescribeCampaignTrait;
+    use DescribeDataDeletionJob\DescribeDataDeletionJobTrait;
+    use DescribeDataset\DescribeDatasetTrait;
+    use DescribeDatasetExportJob\DescribeDatasetExportJobTrait;
+    use DescribeDatasetGroup\DescribeDatasetGroupTrait;
+    use DescribeDatasetImportJob\DescribeDatasetImportJobTrait;
+    use DescribeEventTracker\DescribeEventTrackerTrait;
+    use DescribeFeatureTransformation\DescribeFeatureTransformationTrait;
+    use DescribeFilter\DescribeFilterTrait;
+    use DescribeMetricAttribution\DescribeMetricAttributionTrait;
+    use DescribeRecipe\DescribeRecipeTrait;
+    use DescribeRecommender\DescribeRecommenderTrait;
+    use DescribeSchema\DescribeSchemaTrait;
+    use DescribeSolution\DescribeSolutionTrait;
+    use DescribeSolutionVersion\DescribeSolutionVersionTrait;
+    use GetSolutionMetrics\GetSolutionMetricsTrait;
+    use ListBatchInferenceJobs\ListBatchInferenceJobsTrait;
+    use ListBatchSegmentJobs\ListBatchSegmentJobsTrait;
+    use ListCampaigns\ListCampaignsTrait;
+    use ListDataDeletionJobs\ListDataDeletionJobsTrait;
+    use ListDatasetExportJobs\ListDatasetExportJobsTrait;
+    use ListDatasetGroups\ListDatasetGroupsTrait;
+    use ListDatasetImportJobs\ListDatasetImportJobsTrait;
+    use ListDatasets\ListDatasetsTrait;
+    use ListEventTrackers\ListEventTrackersTrait;
+    use ListFilters\ListFiltersTrait;
+    use ListMetricAttributionMetrics\ListMetricAttributionMetricsTrait;
+    use ListMetricAttributions\ListMetricAttributionsTrait;
+    use ListRecipes\ListRecipesTrait;
+    use ListRecommenders\ListRecommendersTrait;
+    use ListSchemas\ListSchemasTrait;
+    use ListSolutionVersions\ListSolutionVersionsTrait;
+    use ListSolutions\ListSolutionsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use StartRecommender\StartRecommenderTrait;
+    use StopRecommender\StopRecommenderTrait;
+    use StopSolutionVersionCreation\StopSolutionVersionCreationTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateCampaign\UpdateCampaignTrait;
+    use UpdateDataset\UpdateDatasetTrait;
+    use UpdateMetricAttribution\UpdateMetricAttributionTrait;
+    use UpdateRecommender\UpdateRecommenderTrait;
+    use UpdateSolution\UpdateSolutionTrait;
+}

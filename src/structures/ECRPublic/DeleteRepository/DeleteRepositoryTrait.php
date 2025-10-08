@@ -1,0 +1,16 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ECRPublic\DeleteRepository;
+
+trait DeleteRepositoryTrait
+{
+    /**
+     * @param DeleteRepositoryRequest $args
+     * @return DeleteRepositoryResponse
+     */
+    public function deleteRepository(DeleteRepositoryRequest $args)
+    {
+        $result = parent::deleteRepository($args->toArray());
+        return new DeleteRepositoryResponse($result->toArray());
+    }
+}

@@ -1,0 +1,77 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\mgn;
+
+class mgnClient extends \Aws\mgn\mgnClient
+{
+    use ArchiveApplication\ArchiveApplicationTrait;
+    use ArchiveWave\ArchiveWaveTrait;
+    use AssociateApplications\AssociateApplicationsTrait;
+    use AssociateSourceServers\AssociateSourceServersTrait;
+    use ChangeServerLifeCycleState\ChangeServerLifeCycleStateTrait;
+    use CreateApplication\CreateApplicationTrait;
+    use CreateConnector\CreateConnectorTrait;
+    use CreateLaunchConfigurationTemplate\CreateLaunchConfigurationTemplateTrait;
+    use CreateReplicationConfigurationTemplate\CreateReplicationConfigurationTemplateTrait;
+    use CreateWave\CreateWaveTrait;
+    use DeleteApplication\DeleteApplicationTrait;
+    use DeleteConnector\DeleteConnectorTrait;
+    use DeleteJob\DeleteJobTrait;
+    use DeleteLaunchConfigurationTemplate\DeleteLaunchConfigurationTemplateTrait;
+    use DeleteReplicationConfigurationTemplate\DeleteReplicationConfigurationTemplateTrait;
+    use DeleteSourceServer\DeleteSourceServerTrait;
+    use DeleteVcenterClient\DeleteVcenterClientTrait;
+    use DeleteWave\DeleteWaveTrait;
+    use DescribeJobLogItems\DescribeJobLogItemsTrait;
+    use DescribeJobs\DescribeJobsTrait;
+    use DescribeLaunchConfigurationTemplates\DescribeLaunchConfigurationTemplatesTrait;
+    use DescribeReplicationConfigurationTemplates\DescribeReplicationConfigurationTemplatesTrait;
+    use DescribeSourceServers\DescribeSourceServersTrait;
+    use DescribeVcenterClients\DescribeVcenterClientsTrait;
+    use DisassociateApplications\DisassociateApplicationsTrait;
+    use DisassociateSourceServers\DisassociateSourceServersTrait;
+    use DisconnectFromService\DisconnectFromServiceTrait;
+    use FinalizeCutover\FinalizeCutoverTrait;
+    use GetLaunchConfiguration\GetLaunchConfigurationTrait;
+    use GetReplicationConfiguration\GetReplicationConfigurationTrait;
+    use InitializeService\InitializeServiceTrait;
+    use ListApplications\ListApplicationsTrait;
+    use ListConnectors\ListConnectorsTrait;
+    use ListExportErrors\ListExportErrorsTrait;
+    use ListExports\ListExportsTrait;
+    use ListImportErrors\ListImportErrorsTrait;
+    use ListImports\ListImportsTrait;
+    use ListManagedAccounts\ListManagedAccountsTrait;
+    use ListSourceServerActions\ListSourceServerActionsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTemplateActions\ListTemplateActionsTrait;
+    use ListWaves\ListWavesTrait;
+    use MarkAsArchived\MarkAsArchivedTrait;
+    use PauseReplication\PauseReplicationTrait;
+    use PutSourceServerAction\PutSourceServerActionTrait;
+    use PutTemplateAction\PutTemplateActionTrait;
+    use RemoveSourceServerAction\RemoveSourceServerActionTrait;
+    use RemoveTemplateAction\RemoveTemplateActionTrait;
+    use ResumeReplication\ResumeReplicationTrait;
+    use RetryDataReplication\RetryDataReplicationTrait;
+    use StartCutover\StartCutoverTrait;
+    use StartExport\StartExportTrait;
+    use StartImport\StartImportTrait;
+    use StartReplication\StartReplicationTrait;
+    use StartTest\StartTestTrait;
+    use StopReplication\StopReplicationTrait;
+    use TagResource\TagResourceTrait;
+    use TerminateTargetInstances\TerminateTargetInstancesTrait;
+    use UnarchiveApplication\UnarchiveApplicationTrait;
+    use UnarchiveWave\UnarchiveWaveTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateApplication\UpdateApplicationTrait;
+    use UpdateConnector\UpdateConnectorTrait;
+    use UpdateLaunchConfiguration\UpdateLaunchConfigurationTrait;
+    use UpdateLaunchConfigurationTemplate\UpdateLaunchConfigurationTemplateTrait;
+    use UpdateReplicationConfiguration\UpdateReplicationConfigurationTrait;
+    use UpdateReplicationConfigurationTemplate\UpdateReplicationConfigurationTemplateTrait;
+    use UpdateSourceServer\UpdateSourceServerTrait;
+    use UpdateSourceServerReplicationType\UpdateSourceServerReplicationTypeTrait;
+    use UpdateWave\UpdateWaveTrait;
+}

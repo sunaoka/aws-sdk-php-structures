@@ -1,0 +1,77 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Route53;
+
+class Route53Client extends \Aws\Route53\Route53Client
+{
+    use ActivateKeySigningKey\ActivateKeySigningKeyTrait;
+    use AssociateVPCWithHostedZone\AssociateVPCWithHostedZoneTrait;
+    use ChangeCidrCollection\ChangeCidrCollectionTrait;
+    use ChangeResourceRecordSets\ChangeResourceRecordSetsTrait;
+    use ChangeTagsForResource\ChangeTagsForResourceTrait;
+    use CreateCidrCollection\CreateCidrCollectionTrait;
+    use CreateHealthCheck\CreateHealthCheckTrait;
+    use CreateHostedZone\CreateHostedZoneTrait;
+    use CreateKeySigningKey\CreateKeySigningKeyTrait;
+    use CreateQueryLoggingConfig\CreateQueryLoggingConfigTrait;
+    use CreateReusableDelegationSet\CreateReusableDelegationSetTrait;
+    use CreateTrafficPolicy\CreateTrafficPolicyTrait;
+    use CreateTrafficPolicyInstance\CreateTrafficPolicyInstanceTrait;
+    use CreateTrafficPolicyVersion\CreateTrafficPolicyVersionTrait;
+    use CreateVPCAssociationAuthorization\CreateVPCAssociationAuthorizationTrait;
+    use DeactivateKeySigningKey\DeactivateKeySigningKeyTrait;
+    use DeleteCidrCollection\DeleteCidrCollectionTrait;
+    use DeleteHealthCheck\DeleteHealthCheckTrait;
+    use DeleteHostedZone\DeleteHostedZoneTrait;
+    use DeleteKeySigningKey\DeleteKeySigningKeyTrait;
+    use DeleteQueryLoggingConfig\DeleteQueryLoggingConfigTrait;
+    use DeleteReusableDelegationSet\DeleteReusableDelegationSetTrait;
+    use DeleteTrafficPolicy\DeleteTrafficPolicyTrait;
+    use DeleteTrafficPolicyInstance\DeleteTrafficPolicyInstanceTrait;
+    use DeleteVPCAssociationAuthorization\DeleteVPCAssociationAuthorizationTrait;
+    use DisableHostedZoneDNSSEC\DisableHostedZoneDNSSECTrait;
+    use DisassociateVPCFromHostedZone\DisassociateVPCFromHostedZoneTrait;
+    use EnableHostedZoneDNSSEC\EnableHostedZoneDNSSECTrait;
+    use GetAccountLimit\GetAccountLimitTrait;
+    use GetChange\GetChangeTrait;
+    use GetCheckerIpRanges\GetCheckerIpRangesTrait;
+    use GetDNSSEC\GetDNSSECTrait;
+    use GetGeoLocation\GetGeoLocationTrait;
+    use GetHealthCheck\GetHealthCheckTrait;
+    use GetHealthCheckCount\GetHealthCheckCountTrait;
+    use GetHealthCheckLastFailureReason\GetHealthCheckLastFailureReasonTrait;
+    use GetHealthCheckStatus\GetHealthCheckStatusTrait;
+    use GetHostedZone\GetHostedZoneTrait;
+    use GetHostedZoneCount\GetHostedZoneCountTrait;
+    use GetHostedZoneLimit\GetHostedZoneLimitTrait;
+    use GetQueryLoggingConfig\GetQueryLoggingConfigTrait;
+    use GetReusableDelegationSet\GetReusableDelegationSetTrait;
+    use GetReusableDelegationSetLimit\GetReusableDelegationSetLimitTrait;
+    use GetTrafficPolicy\GetTrafficPolicyTrait;
+    use GetTrafficPolicyInstance\GetTrafficPolicyInstanceTrait;
+    use GetTrafficPolicyInstanceCount\GetTrafficPolicyInstanceCountTrait;
+    use ListCidrBlocks\ListCidrBlocksTrait;
+    use ListCidrCollections\ListCidrCollectionsTrait;
+    use ListCidrLocations\ListCidrLocationsTrait;
+    use ListGeoLocations\ListGeoLocationsTrait;
+    use ListHealthChecks\ListHealthChecksTrait;
+    use ListHostedZones\ListHostedZonesTrait;
+    use ListHostedZonesByName\ListHostedZonesByNameTrait;
+    use ListHostedZonesByVPC\ListHostedZonesByVPCTrait;
+    use ListQueryLoggingConfigs\ListQueryLoggingConfigsTrait;
+    use ListResourceRecordSets\ListResourceRecordSetsTrait;
+    use ListReusableDelegationSets\ListReusableDelegationSetsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTagsForResources\ListTagsForResourcesTrait;
+    use ListTrafficPolicies\ListTrafficPoliciesTrait;
+    use ListTrafficPolicyInstances\ListTrafficPolicyInstancesTrait;
+    use ListTrafficPolicyInstancesByHostedZone\ListTrafficPolicyInstancesByHostedZoneTrait;
+    use ListTrafficPolicyInstancesByPolicy\ListTrafficPolicyInstancesByPolicyTrait;
+    use ListTrafficPolicyVersions\ListTrafficPolicyVersionsTrait;
+    use ListVPCAssociationAuthorizations\ListVPCAssociationAuthorizationsTrait;
+    use TestDNSAnswer\TestDNSAnswerTrait;
+    use UpdateHealthCheck\UpdateHealthCheckTrait;
+    use UpdateHostedZoneComment\UpdateHostedZoneCommentTrait;
+    use UpdateTrafficPolicyComment\UpdateTrafficPolicyCommentTrait;
+    use UpdateTrafficPolicyInstance\UpdateTrafficPolicyInstanceTrait;
+}

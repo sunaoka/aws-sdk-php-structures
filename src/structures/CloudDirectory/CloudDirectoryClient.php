@@ -1,0 +1,73 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\CloudDirectory;
+
+class CloudDirectoryClient extends \Aws\CloudDirectory\CloudDirectoryClient
+{
+    use AddFacetToObject\AddFacetToObjectTrait;
+    use ApplySchema\ApplySchemaTrait;
+    use AttachObject\AttachObjectTrait;
+    use AttachPolicy\AttachPolicyTrait;
+    use AttachToIndex\AttachToIndexTrait;
+    use AttachTypedLink\AttachTypedLinkTrait;
+    use BatchRead\BatchReadTrait;
+    use BatchWrite\BatchWriteTrait;
+    use CreateDirectory\CreateDirectoryTrait;
+    use CreateFacet\CreateFacetTrait;
+    use CreateIndex\CreateIndexTrait;
+    use CreateObject\CreateObjectTrait;
+    use CreateSchema\CreateSchemaTrait;
+    use CreateTypedLinkFacet\CreateTypedLinkFacetTrait;
+    use DeleteDirectory\DeleteDirectoryTrait;
+    use DeleteFacet\DeleteFacetTrait;
+    use DeleteObject\DeleteObjectTrait;
+    use DeleteSchema\DeleteSchemaTrait;
+    use DeleteTypedLinkFacet\DeleteTypedLinkFacetTrait;
+    use DetachFromIndex\DetachFromIndexTrait;
+    use DetachObject\DetachObjectTrait;
+    use DetachPolicy\DetachPolicyTrait;
+    use DetachTypedLink\DetachTypedLinkTrait;
+    use DisableDirectory\DisableDirectoryTrait;
+    use EnableDirectory\EnableDirectoryTrait;
+    use GetAppliedSchemaVersion\GetAppliedSchemaVersionTrait;
+    use GetDirectory\GetDirectoryTrait;
+    use GetFacet\GetFacetTrait;
+    use GetLinkAttributes\GetLinkAttributesTrait;
+    use GetObjectAttributes\GetObjectAttributesTrait;
+    use GetObjectInformation\GetObjectInformationTrait;
+    use GetSchemaAsJson\GetSchemaAsJsonTrait;
+    use GetTypedLinkFacetInformation\GetTypedLinkFacetInformationTrait;
+    use ListAppliedSchemaArns\ListAppliedSchemaArnsTrait;
+    use ListAttachedIndices\ListAttachedIndicesTrait;
+    use ListDevelopmentSchemaArns\ListDevelopmentSchemaArnsTrait;
+    use ListDirectories\ListDirectoriesTrait;
+    use ListFacetAttributes\ListFacetAttributesTrait;
+    use ListFacetNames\ListFacetNamesTrait;
+    use ListIncomingTypedLinks\ListIncomingTypedLinksTrait;
+    use ListIndex\ListIndexTrait;
+    use ListManagedSchemaArns\ListManagedSchemaArnsTrait;
+    use ListObjectAttributes\ListObjectAttributesTrait;
+    use ListObjectChildren\ListObjectChildrenTrait;
+    use ListObjectParentPaths\ListObjectParentPathsTrait;
+    use ListObjectParents\ListObjectParentsTrait;
+    use ListObjectPolicies\ListObjectPoliciesTrait;
+    use ListOutgoingTypedLinks\ListOutgoingTypedLinksTrait;
+    use ListPolicyAttachments\ListPolicyAttachmentsTrait;
+    use ListPublishedSchemaArns\ListPublishedSchemaArnsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTypedLinkFacetAttributes\ListTypedLinkFacetAttributesTrait;
+    use ListTypedLinkFacetNames\ListTypedLinkFacetNamesTrait;
+    use LookupPolicy\LookupPolicyTrait;
+    use PublishSchema\PublishSchemaTrait;
+    use PutSchemaFromJson\PutSchemaFromJsonTrait;
+    use RemoveFacetFromObject\RemoveFacetFromObjectTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateFacet\UpdateFacetTrait;
+    use UpdateLinkAttributes\UpdateLinkAttributesTrait;
+    use UpdateObjectAttributes\UpdateObjectAttributesTrait;
+    use UpdateSchema\UpdateSchemaTrait;
+    use UpdateTypedLinkFacet\UpdateTypedLinkFacetTrait;
+    use UpgradeAppliedSchema\UpgradeAppliedSchemaTrait;
+    use UpgradePublishedSchema\UpgradePublishedSchemaTrait;
+}

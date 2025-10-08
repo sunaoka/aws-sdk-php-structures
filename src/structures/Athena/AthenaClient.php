@@ -1,0 +1,75 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Athena;
+
+class AthenaClient extends \Aws\Athena\AthenaClient
+{
+    use BatchGetNamedQuery\BatchGetNamedQueryTrait;
+    use BatchGetPreparedStatement\BatchGetPreparedStatementTrait;
+    use BatchGetQueryExecution\BatchGetQueryExecutionTrait;
+    use CancelCapacityReservation\CancelCapacityReservationTrait;
+    use CreateCapacityReservation\CreateCapacityReservationTrait;
+    use CreateDataCatalog\CreateDataCatalogTrait;
+    use CreateNamedQuery\CreateNamedQueryTrait;
+    use CreateNotebook\CreateNotebookTrait;
+    use CreatePreparedStatement\CreatePreparedStatementTrait;
+    use CreatePresignedNotebookUrl\CreatePresignedNotebookUrlTrait;
+    use CreateWorkGroup\CreateWorkGroupTrait;
+    use DeleteCapacityReservation\DeleteCapacityReservationTrait;
+    use DeleteDataCatalog\DeleteDataCatalogTrait;
+    use DeleteNamedQuery\DeleteNamedQueryTrait;
+    use DeleteNotebook\DeleteNotebookTrait;
+    use DeletePreparedStatement\DeletePreparedStatementTrait;
+    use DeleteWorkGroup\DeleteWorkGroupTrait;
+    use ExportNotebook\ExportNotebookTrait;
+    use GetCalculationExecution\GetCalculationExecutionTrait;
+    use GetCalculationExecutionCode\GetCalculationExecutionCodeTrait;
+    use GetCalculationExecutionStatus\GetCalculationExecutionStatusTrait;
+    use GetCapacityAssignmentConfiguration\GetCapacityAssignmentConfigurationTrait;
+    use GetCapacityReservation\GetCapacityReservationTrait;
+    use GetDataCatalog\GetDataCatalogTrait;
+    use GetDatabase\GetDatabaseTrait;
+    use GetNamedQuery\GetNamedQueryTrait;
+    use GetNotebookMetadata\GetNotebookMetadataTrait;
+    use GetPreparedStatement\GetPreparedStatementTrait;
+    use GetQueryExecution\GetQueryExecutionTrait;
+    use GetQueryResults\GetQueryResultsTrait;
+    use GetQueryRuntimeStatistics\GetQueryRuntimeStatisticsTrait;
+    use GetSession\GetSessionTrait;
+    use GetSessionStatus\GetSessionStatusTrait;
+    use GetTableMetadata\GetTableMetadataTrait;
+    use GetWorkGroup\GetWorkGroupTrait;
+    use ImportNotebook\ImportNotebookTrait;
+    use ListApplicationDPUSizes\ListApplicationDPUSizesTrait;
+    use ListCalculationExecutions\ListCalculationExecutionsTrait;
+    use ListCapacityReservations\ListCapacityReservationsTrait;
+    use ListDataCatalogs\ListDataCatalogsTrait;
+    use ListDatabases\ListDatabasesTrait;
+    use ListEngineVersions\ListEngineVersionsTrait;
+    use ListExecutors\ListExecutorsTrait;
+    use ListNamedQueries\ListNamedQueriesTrait;
+    use ListNotebookMetadata\ListNotebookMetadataTrait;
+    use ListNotebookSessions\ListNotebookSessionsTrait;
+    use ListPreparedStatements\ListPreparedStatementsTrait;
+    use ListQueryExecutions\ListQueryExecutionsTrait;
+    use ListSessions\ListSessionsTrait;
+    use ListTableMetadata\ListTableMetadataTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListWorkGroups\ListWorkGroupsTrait;
+    use PutCapacityAssignmentConfiguration\PutCapacityAssignmentConfigurationTrait;
+    use StartCalculationExecution\StartCalculationExecutionTrait;
+    use StartQueryExecution\StartQueryExecutionTrait;
+    use StartSession\StartSessionTrait;
+    use StopCalculationExecution\StopCalculationExecutionTrait;
+    use StopQueryExecution\StopQueryExecutionTrait;
+    use TagResource\TagResourceTrait;
+    use TerminateSession\TerminateSessionTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateCapacityReservation\UpdateCapacityReservationTrait;
+    use UpdateDataCatalog\UpdateDataCatalogTrait;
+    use UpdateNamedQuery\UpdateNamedQueryTrait;
+    use UpdateNotebook\UpdateNotebookTrait;
+    use UpdateNotebookMetadata\UpdateNotebookMetadataTrait;
+    use UpdatePreparedStatement\UpdatePreparedStatementTrait;
+    use UpdateWorkGroup\UpdateWorkGroupTrait;
+}

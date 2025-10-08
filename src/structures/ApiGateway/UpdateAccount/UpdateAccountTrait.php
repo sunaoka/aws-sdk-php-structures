@@ -1,0 +1,16 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ApiGateway\UpdateAccount;
+
+trait UpdateAccountTrait
+{
+    /**
+     * @param UpdateAccountRequest $args
+     * @return UpdateAccountResponse
+     */
+    public function updateAccount(UpdateAccountRequest $args)
+    {
+        $result = parent::updateAccount($args->toArray());
+        return new UpdateAccountResponse($result->toArray());
+    }
+}

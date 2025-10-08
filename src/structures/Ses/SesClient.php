@@ -1,0 +1,78 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Ses;
+
+class SesClient extends \Aws\Ses\SesClient
+{
+    use CloneReceiptRuleSet\CloneReceiptRuleSetTrait;
+    use CreateConfigurationSet\CreateConfigurationSetTrait;
+    use CreateConfigurationSetEventDestination\CreateConfigurationSetEventDestinationTrait;
+    use CreateConfigurationSetTrackingOptions\CreateConfigurationSetTrackingOptionsTrait;
+    use CreateCustomVerificationEmailTemplate\CreateCustomVerificationEmailTemplateTrait;
+    use CreateReceiptFilter\CreateReceiptFilterTrait;
+    use CreateReceiptRule\CreateReceiptRuleTrait;
+    use CreateReceiptRuleSet\CreateReceiptRuleSetTrait;
+    use CreateTemplate\CreateTemplateTrait;
+    use DeleteConfigurationSet\DeleteConfigurationSetTrait;
+    use DeleteConfigurationSetEventDestination\DeleteConfigurationSetEventDestinationTrait;
+    use DeleteConfigurationSetTrackingOptions\DeleteConfigurationSetTrackingOptionsTrait;
+    use DeleteCustomVerificationEmailTemplate\DeleteCustomVerificationEmailTemplateTrait;
+    use DeleteIdentity\DeleteIdentityTrait;
+    use DeleteIdentityPolicy\DeleteIdentityPolicyTrait;
+    use DeleteReceiptFilter\DeleteReceiptFilterTrait;
+    use DeleteReceiptRule\DeleteReceiptRuleTrait;
+    use DeleteReceiptRuleSet\DeleteReceiptRuleSetTrait;
+    use DeleteTemplate\DeleteTemplateTrait;
+    use DeleteVerifiedEmailAddress\DeleteVerifiedEmailAddressTrait;
+    use DescribeActiveReceiptRuleSet\DescribeActiveReceiptRuleSetTrait;
+    use DescribeConfigurationSet\DescribeConfigurationSetTrait;
+    use DescribeReceiptRule\DescribeReceiptRuleTrait;
+    use DescribeReceiptRuleSet\DescribeReceiptRuleSetTrait;
+    use GetAccountSendingEnabled\GetAccountSendingEnabledTrait;
+    use GetCustomVerificationEmailTemplate\GetCustomVerificationEmailTemplateTrait;
+    use GetIdentityDkimAttributes\GetIdentityDkimAttributesTrait;
+    use GetIdentityMailFromDomainAttributes\GetIdentityMailFromDomainAttributesTrait;
+    use GetIdentityNotificationAttributes\GetIdentityNotificationAttributesTrait;
+    use GetIdentityPolicies\GetIdentityPoliciesTrait;
+    use GetIdentityVerificationAttributes\GetIdentityVerificationAttributesTrait;
+    use GetSendQuota\GetSendQuotaTrait;
+    use GetSendStatistics\GetSendStatisticsTrait;
+    use GetTemplate\GetTemplateTrait;
+    use ListConfigurationSets\ListConfigurationSetsTrait;
+    use ListCustomVerificationEmailTemplates\ListCustomVerificationEmailTemplatesTrait;
+    use ListIdentities\ListIdentitiesTrait;
+    use ListIdentityPolicies\ListIdentityPoliciesTrait;
+    use ListReceiptFilters\ListReceiptFiltersTrait;
+    use ListReceiptRuleSets\ListReceiptRuleSetsTrait;
+    use ListTemplates\ListTemplatesTrait;
+    use ListVerifiedEmailAddresses\ListVerifiedEmailAddressesTrait;
+    use PutConfigurationSetDeliveryOptions\PutConfigurationSetDeliveryOptionsTrait;
+    use PutIdentityPolicy\PutIdentityPolicyTrait;
+    use ReorderReceiptRuleSet\ReorderReceiptRuleSetTrait;
+    use SendBounce\SendBounceTrait;
+    use SendBulkTemplatedEmail\SendBulkTemplatedEmailTrait;
+    use SendCustomVerificationEmail\SendCustomVerificationEmailTrait;
+    use SendEmail\SendEmailTrait;
+    use SendRawEmail\SendRawEmailTrait;
+    use SendTemplatedEmail\SendTemplatedEmailTrait;
+    use SetActiveReceiptRuleSet\SetActiveReceiptRuleSetTrait;
+    use SetIdentityDkimEnabled\SetIdentityDkimEnabledTrait;
+    use SetIdentityFeedbackForwardingEnabled\SetIdentityFeedbackForwardingEnabledTrait;
+    use SetIdentityHeadersInNotificationsEnabled\SetIdentityHeadersInNotificationsEnabledTrait;
+    use SetIdentityMailFromDomain\SetIdentityMailFromDomainTrait;
+    use SetIdentityNotificationTopic\SetIdentityNotificationTopicTrait;
+    use SetReceiptRulePosition\SetReceiptRulePositionTrait;
+    use TestRenderTemplate\TestRenderTemplateTrait;
+    use UpdateAccountSendingEnabled\UpdateAccountSendingEnabledTrait;
+    use UpdateConfigurationSetEventDestination\UpdateConfigurationSetEventDestinationTrait;
+    use UpdateConfigurationSetReputationMetricsEnabled\UpdateConfigurationSetReputationMetricsEnabledTrait;
+    use UpdateConfigurationSetSendingEnabled\UpdateConfigurationSetSendingEnabledTrait;
+    use UpdateConfigurationSetTrackingOptions\UpdateConfigurationSetTrackingOptionsTrait;
+    use UpdateCustomVerificationEmailTemplate\UpdateCustomVerificationEmailTemplateTrait;
+    use UpdateReceiptRule\UpdateReceiptRuleTrait;
+    use UpdateTemplate\UpdateTemplateTrait;
+    use VerifyDomainDkim\VerifyDomainDkimTrait;
+    use VerifyDomainIdentity\VerifyDomainIdentityTrait;
+    use VerifyEmailAddress\VerifyEmailAddressTrait;
+    use VerifyEmailIdentity\VerifyEmailIdentityTrait;
+}

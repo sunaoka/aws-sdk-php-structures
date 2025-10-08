@@ -1,0 +1,70 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ResilienceHub;
+
+class ResilienceHubClient extends \Aws\ResilienceHub\ResilienceHubClient
+{
+    use AcceptResourceGroupingRecommendations\AcceptResourceGroupingRecommendationsTrait;
+    use AddDraftAppVersionResourceMappings\AddDraftAppVersionResourceMappingsTrait;
+    use BatchUpdateRecommendationStatus\BatchUpdateRecommendationStatusTrait;
+    use CreateApp\CreateAppTrait;
+    use CreateAppVersionAppComponent\CreateAppVersionAppComponentTrait;
+    use CreateAppVersionResource\CreateAppVersionResourceTrait;
+    use CreateRecommendationTemplate\CreateRecommendationTemplateTrait;
+    use CreateResiliencyPolicy\CreateResiliencyPolicyTrait;
+    use DeleteApp\DeleteAppTrait;
+    use DeleteAppAssessment\DeleteAppAssessmentTrait;
+    use DeleteAppInputSource\DeleteAppInputSourceTrait;
+    use DeleteAppVersionAppComponent\DeleteAppVersionAppComponentTrait;
+    use DeleteAppVersionResource\DeleteAppVersionResourceTrait;
+    use DeleteRecommendationTemplate\DeleteRecommendationTemplateTrait;
+    use DeleteResiliencyPolicy\DeleteResiliencyPolicyTrait;
+    use DescribeApp\DescribeAppTrait;
+    use DescribeAppAssessment\DescribeAppAssessmentTrait;
+    use DescribeAppVersion\DescribeAppVersionTrait;
+    use DescribeAppVersionAppComponent\DescribeAppVersionAppComponentTrait;
+    use DescribeAppVersionResource\DescribeAppVersionResourceTrait;
+    use DescribeAppVersionResourcesResolutionStatus\DescribeAppVersionResourcesResolutionStatusTrait;
+    use DescribeAppVersionTemplate\DescribeAppVersionTemplateTrait;
+    use DescribeDraftAppVersionResourcesImportStatus\DescribeDraftAppVersionResourcesImportStatusTrait;
+    use DescribeMetricsExport\DescribeMetricsExportTrait;
+    use DescribeResiliencyPolicy\DescribeResiliencyPolicyTrait;
+    use DescribeResourceGroupingRecommendationTask\DescribeResourceGroupingRecommendationTaskTrait;
+    use ImportResourcesToDraftAppVersion\ImportResourcesToDraftAppVersionTrait;
+    use ListAlarmRecommendations\ListAlarmRecommendationsTrait;
+    use ListAppAssessmentComplianceDrifts\ListAppAssessmentComplianceDriftsTrait;
+    use ListAppAssessmentResourceDrifts\ListAppAssessmentResourceDriftsTrait;
+    use ListAppAssessments\ListAppAssessmentsTrait;
+    use ListAppComponentCompliances\ListAppComponentCompliancesTrait;
+    use ListAppComponentRecommendations\ListAppComponentRecommendationsTrait;
+    use ListAppInputSources\ListAppInputSourcesTrait;
+    use ListAppVersionAppComponents\ListAppVersionAppComponentsTrait;
+    use ListAppVersionResourceMappings\ListAppVersionResourceMappingsTrait;
+    use ListAppVersionResources\ListAppVersionResourcesTrait;
+    use ListAppVersions\ListAppVersionsTrait;
+    use ListApps\ListAppsTrait;
+    use ListMetrics\ListMetricsTrait;
+    use ListRecommendationTemplates\ListRecommendationTemplatesTrait;
+    use ListResiliencyPolicies\ListResiliencyPoliciesTrait;
+    use ListResourceGroupingRecommendations\ListResourceGroupingRecommendationsTrait;
+    use ListSopRecommendations\ListSopRecommendationsTrait;
+    use ListSuggestedResiliencyPolicies\ListSuggestedResiliencyPoliciesTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTestRecommendations\ListTestRecommendationsTrait;
+    use ListUnsupportedAppVersionResources\ListUnsupportedAppVersionResourcesTrait;
+    use PublishAppVersion\PublishAppVersionTrait;
+    use PutDraftAppVersionTemplate\PutDraftAppVersionTemplateTrait;
+    use RejectResourceGroupingRecommendations\RejectResourceGroupingRecommendationsTrait;
+    use RemoveDraftAppVersionResourceMappings\RemoveDraftAppVersionResourceMappingsTrait;
+    use ResolveAppVersionResources\ResolveAppVersionResourcesTrait;
+    use StartAppAssessment\StartAppAssessmentTrait;
+    use StartMetricsExport\StartMetricsExportTrait;
+    use StartResourceGroupingRecommendationTask\StartResourceGroupingRecommendationTaskTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateApp\UpdateAppTrait;
+    use UpdateAppVersion\UpdateAppVersionTrait;
+    use UpdateAppVersionAppComponent\UpdateAppVersionAppComponentTrait;
+    use UpdateAppVersionResource\UpdateAppVersionResourceTrait;
+    use UpdateResiliencyPolicy\UpdateResiliencyPolicyTrait;
+}

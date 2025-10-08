@@ -1,0 +1,70 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\DirectConnect;
+
+class DirectConnectClient extends \Aws\DirectConnect\DirectConnectClient
+{
+    use AcceptDirectConnectGatewayAssociationProposal\AcceptDirectConnectGatewayAssociationProposalTrait;
+    use AllocateConnectionOnInterconnect\AllocateConnectionOnInterconnectTrait;
+    use AllocateHostedConnection\AllocateHostedConnectionTrait;
+    use AllocatePrivateVirtualInterface\AllocatePrivateVirtualInterfaceTrait;
+    use AllocatePublicVirtualInterface\AllocatePublicVirtualInterfaceTrait;
+    use AllocateTransitVirtualInterface\AllocateTransitVirtualInterfaceTrait;
+    use AssociateConnectionWithLag\AssociateConnectionWithLagTrait;
+    use AssociateHostedConnection\AssociateHostedConnectionTrait;
+    use AssociateMacSecKey\AssociateMacSecKeyTrait;
+    use AssociateVirtualInterface\AssociateVirtualInterfaceTrait;
+    use ConfirmConnection\ConfirmConnectionTrait;
+    use ConfirmCustomerAgreement\ConfirmCustomerAgreementTrait;
+    use ConfirmPrivateVirtualInterface\ConfirmPrivateVirtualInterfaceTrait;
+    use ConfirmPublicVirtualInterface\ConfirmPublicVirtualInterfaceTrait;
+    use ConfirmTransitVirtualInterface\ConfirmTransitVirtualInterfaceTrait;
+    use CreateBGPPeer\CreateBGPPeerTrait;
+    use CreateConnection\CreateConnectionTrait;
+    use CreateDirectConnectGateway\CreateDirectConnectGatewayTrait;
+    use CreateDirectConnectGatewayAssociation\CreateDirectConnectGatewayAssociationTrait;
+    use CreateDirectConnectGatewayAssociationProposal\CreateDirectConnectGatewayAssociationProposalTrait;
+    use CreateInterconnect\CreateInterconnectTrait;
+    use CreateLag\CreateLagTrait;
+    use CreatePrivateVirtualInterface\CreatePrivateVirtualInterfaceTrait;
+    use CreatePublicVirtualInterface\CreatePublicVirtualInterfaceTrait;
+    use CreateTransitVirtualInterface\CreateTransitVirtualInterfaceTrait;
+    use DeleteBGPPeer\DeleteBGPPeerTrait;
+    use DeleteConnection\DeleteConnectionTrait;
+    use DeleteDirectConnectGateway\DeleteDirectConnectGatewayTrait;
+    use DeleteDirectConnectGatewayAssociation\DeleteDirectConnectGatewayAssociationTrait;
+    use DeleteDirectConnectGatewayAssociationProposal\DeleteDirectConnectGatewayAssociationProposalTrait;
+    use DeleteInterconnect\DeleteInterconnectTrait;
+    use DeleteLag\DeleteLagTrait;
+    use DeleteVirtualInterface\DeleteVirtualInterfaceTrait;
+    use DescribeConnectionLoa\DescribeConnectionLoaTrait;
+    use DescribeConnections\DescribeConnectionsTrait;
+    use DescribeConnectionsOnInterconnect\DescribeConnectionsOnInterconnectTrait;
+    use DescribeCustomerMetadata\DescribeCustomerMetadataTrait;
+    use DescribeDirectConnectGatewayAssociationProposals\DescribeDirectConnectGatewayAssociationProposalsTrait;
+    use DescribeDirectConnectGatewayAssociations\DescribeDirectConnectGatewayAssociationsTrait;
+    use DescribeDirectConnectGatewayAttachments\DescribeDirectConnectGatewayAttachmentsTrait;
+    use DescribeDirectConnectGateways\DescribeDirectConnectGatewaysTrait;
+    use DescribeHostedConnections\DescribeHostedConnectionsTrait;
+    use DescribeInterconnectLoa\DescribeInterconnectLoaTrait;
+    use DescribeInterconnects\DescribeInterconnectsTrait;
+    use DescribeLags\DescribeLagsTrait;
+    use DescribeLoa\DescribeLoaTrait;
+    use DescribeLocations\DescribeLocationsTrait;
+    use DescribeRouterConfiguration\DescribeRouterConfigurationTrait;
+    use DescribeTags\DescribeTagsTrait;
+    use DescribeVirtualGateways\DescribeVirtualGatewaysTrait;
+    use DescribeVirtualInterfaces\DescribeVirtualInterfacesTrait;
+    use DisassociateConnectionFromLag\DisassociateConnectionFromLagTrait;
+    use DisassociateMacSecKey\DisassociateMacSecKeyTrait;
+    use ListVirtualInterfaceTestHistory\ListVirtualInterfaceTestHistoryTrait;
+    use StartBgpFailoverTest\StartBgpFailoverTestTrait;
+    use StopBgpFailoverTest\StopBgpFailoverTestTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateConnection\UpdateConnectionTrait;
+    use UpdateDirectConnectGateway\UpdateDirectConnectGatewayTrait;
+    use UpdateDirectConnectGatewayAssociation\UpdateDirectConnectGatewayAssociationTrait;
+    use UpdateLag\UpdateLagTrait;
+    use UpdateVirtualInterfaceAttributes\UpdateVirtualInterfaceAttributesTrait;
+}

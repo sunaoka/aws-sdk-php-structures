@@ -1,0 +1,76 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\VPCLattice;
+
+class VPCLatticeClient extends \Aws\VPCLattice\VPCLatticeClient
+{
+    use BatchUpdateRule\BatchUpdateRuleTrait;
+    use CreateAccessLogSubscription\CreateAccessLogSubscriptionTrait;
+    use CreateListener\CreateListenerTrait;
+    use CreateResourceConfiguration\CreateResourceConfigurationTrait;
+    use CreateResourceGateway\CreateResourceGatewayTrait;
+    use CreateRule\CreateRuleTrait;
+    use CreateService\CreateServiceTrait;
+    use CreateServiceNetwork\CreateServiceNetworkTrait;
+    use CreateServiceNetworkResourceAssociation\CreateServiceNetworkResourceAssociationTrait;
+    use CreateServiceNetworkServiceAssociation\CreateServiceNetworkServiceAssociationTrait;
+    use CreateServiceNetworkVpcAssociation\CreateServiceNetworkVpcAssociationTrait;
+    use CreateTargetGroup\CreateTargetGroupTrait;
+    use DeleteAccessLogSubscription\DeleteAccessLogSubscriptionTrait;
+    use DeleteAuthPolicy\DeleteAuthPolicyTrait;
+    use DeleteListener\DeleteListenerTrait;
+    use DeleteResourceConfiguration\DeleteResourceConfigurationTrait;
+    use DeleteResourceEndpointAssociation\DeleteResourceEndpointAssociationTrait;
+    use DeleteResourceGateway\DeleteResourceGatewayTrait;
+    use DeleteResourcePolicy\DeleteResourcePolicyTrait;
+    use DeleteRule\DeleteRuleTrait;
+    use DeleteService\DeleteServiceTrait;
+    use DeleteServiceNetwork\DeleteServiceNetworkTrait;
+    use DeleteServiceNetworkResourceAssociation\DeleteServiceNetworkResourceAssociationTrait;
+    use DeleteServiceNetworkServiceAssociation\DeleteServiceNetworkServiceAssociationTrait;
+    use DeleteServiceNetworkVpcAssociation\DeleteServiceNetworkVpcAssociationTrait;
+    use DeleteTargetGroup\DeleteTargetGroupTrait;
+    use DeregisterTargets\DeregisterTargetsTrait;
+    use GetAccessLogSubscription\GetAccessLogSubscriptionTrait;
+    use GetAuthPolicy\GetAuthPolicyTrait;
+    use GetListener\GetListenerTrait;
+    use GetResourceConfiguration\GetResourceConfigurationTrait;
+    use GetResourceGateway\GetResourceGatewayTrait;
+    use GetResourcePolicy\GetResourcePolicyTrait;
+    use GetRule\GetRuleTrait;
+    use GetService\GetServiceTrait;
+    use GetServiceNetwork\GetServiceNetworkTrait;
+    use GetServiceNetworkResourceAssociation\GetServiceNetworkResourceAssociationTrait;
+    use GetServiceNetworkServiceAssociation\GetServiceNetworkServiceAssociationTrait;
+    use GetServiceNetworkVpcAssociation\GetServiceNetworkVpcAssociationTrait;
+    use GetTargetGroup\GetTargetGroupTrait;
+    use ListAccessLogSubscriptions\ListAccessLogSubscriptionsTrait;
+    use ListListeners\ListListenersTrait;
+    use ListResourceConfigurations\ListResourceConfigurationsTrait;
+    use ListResourceEndpointAssociations\ListResourceEndpointAssociationsTrait;
+    use ListResourceGateways\ListResourceGatewaysTrait;
+    use ListRules\ListRulesTrait;
+    use ListServiceNetworkResourceAssociations\ListServiceNetworkResourceAssociationsTrait;
+    use ListServiceNetworkServiceAssociations\ListServiceNetworkServiceAssociationsTrait;
+    use ListServiceNetworkVpcAssociations\ListServiceNetworkVpcAssociationsTrait;
+    use ListServiceNetworkVpcEndpointAssociations\ListServiceNetworkVpcEndpointAssociationsTrait;
+    use ListServiceNetworks\ListServiceNetworksTrait;
+    use ListServices\ListServicesTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTargetGroups\ListTargetGroupsTrait;
+    use ListTargets\ListTargetsTrait;
+    use PutAuthPolicy\PutAuthPolicyTrait;
+    use PutResourcePolicy\PutResourcePolicyTrait;
+    use RegisterTargets\RegisterTargetsTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateAccessLogSubscription\UpdateAccessLogSubscriptionTrait;
+    use UpdateListener\UpdateListenerTrait;
+    use UpdateResourceConfiguration\UpdateResourceConfigurationTrait;
+    use UpdateResourceGateway\UpdateResourceGatewayTrait;
+    use UpdateRule\UpdateRuleTrait;
+    use UpdateService\UpdateServiceTrait;
+    use UpdateServiceNetwork\UpdateServiceNetworkTrait;
+    use UpdateServiceNetworkVpcAssociation\UpdateServiceNetworkVpcAssociationTrait;
+    use UpdateTargetGroup\UpdateTargetGroupTrait;
+}

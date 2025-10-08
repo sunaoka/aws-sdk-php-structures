@@ -1,0 +1,69 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Chime;
+
+class ChimeClient extends \Aws\Chime\ChimeClient
+{
+    use AssociatePhoneNumberWithUser\AssociatePhoneNumberWithUserTrait;
+    use AssociateSigninDelegateGroupsWithAccount\AssociateSigninDelegateGroupsWithAccountTrait;
+    use BatchCreateRoomMembership\BatchCreateRoomMembershipTrait;
+    use BatchDeletePhoneNumber\BatchDeletePhoneNumberTrait;
+    use BatchSuspendUser\BatchSuspendUserTrait;
+    use BatchUnsuspendUser\BatchUnsuspendUserTrait;
+    use BatchUpdatePhoneNumber\BatchUpdatePhoneNumberTrait;
+    use BatchUpdateUser\BatchUpdateUserTrait;
+    use CreateAccount\CreateAccountTrait;
+    use CreateBot\CreateBotTrait;
+    use CreateMeetingDialOut\CreateMeetingDialOutTrait;
+    use CreatePhoneNumberOrder\CreatePhoneNumberOrderTrait;
+    use CreateRoom\CreateRoomTrait;
+    use CreateRoomMembership\CreateRoomMembershipTrait;
+    use CreateUser\CreateUserTrait;
+    use DeleteAccount\DeleteAccountTrait;
+    use DeleteEventsConfiguration\DeleteEventsConfigurationTrait;
+    use DeletePhoneNumber\DeletePhoneNumberTrait;
+    use DeleteRoom\DeleteRoomTrait;
+    use DeleteRoomMembership\DeleteRoomMembershipTrait;
+    use DisassociatePhoneNumberFromUser\DisassociatePhoneNumberFromUserTrait;
+    use DisassociateSigninDelegateGroupsFromAccount\DisassociateSigninDelegateGroupsFromAccountTrait;
+    use GetAccount\GetAccountTrait;
+    use GetAccountSettings\GetAccountSettingsTrait;
+    use GetBot\GetBotTrait;
+    use GetEventsConfiguration\GetEventsConfigurationTrait;
+    use GetGlobalSettings\GetGlobalSettingsTrait;
+    use GetPhoneNumber\GetPhoneNumberTrait;
+    use GetPhoneNumberOrder\GetPhoneNumberOrderTrait;
+    use GetPhoneNumberSettings\GetPhoneNumberSettingsTrait;
+    use GetRetentionSettings\GetRetentionSettingsTrait;
+    use GetRoom\GetRoomTrait;
+    use GetUser\GetUserTrait;
+    use GetUserSettings\GetUserSettingsTrait;
+    use InviteUsers\InviteUsersTrait;
+    use ListAccounts\ListAccountsTrait;
+    use ListBots\ListBotsTrait;
+    use ListPhoneNumberOrders\ListPhoneNumberOrdersTrait;
+    use ListPhoneNumbers\ListPhoneNumbersTrait;
+    use ListRoomMemberships\ListRoomMembershipsTrait;
+    use ListRooms\ListRoomsTrait;
+    use ListSupportedPhoneNumberCountries\ListSupportedPhoneNumberCountriesTrait;
+    use ListUsers\ListUsersTrait;
+    use LogoutUser\LogoutUserTrait;
+    use PutEventsConfiguration\PutEventsConfigurationTrait;
+    use PutRetentionSettings\PutRetentionSettingsTrait;
+    use RedactConversationMessage\RedactConversationMessageTrait;
+    use RedactRoomMessage\RedactRoomMessageTrait;
+    use RegenerateSecurityToken\RegenerateSecurityTokenTrait;
+    use ResetPersonalPIN\ResetPersonalPINTrait;
+    use RestorePhoneNumber\RestorePhoneNumberTrait;
+    use SearchAvailablePhoneNumbers\SearchAvailablePhoneNumbersTrait;
+    use UpdateAccount\UpdateAccountTrait;
+    use UpdateAccountSettings\UpdateAccountSettingsTrait;
+    use UpdateBot\UpdateBotTrait;
+    use UpdateGlobalSettings\UpdateGlobalSettingsTrait;
+    use UpdatePhoneNumber\UpdatePhoneNumberTrait;
+    use UpdatePhoneNumberSettings\UpdatePhoneNumberSettingsTrait;
+    use UpdateRoom\UpdateRoomTrait;
+    use UpdateRoomMembership\UpdateRoomMembershipTrait;
+    use UpdateUser\UpdateUserTrait;
+    use UpdateUserSettings\UpdateUserSettingsTrait;
+}

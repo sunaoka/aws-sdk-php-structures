@@ -1,0 +1,78 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Transfer;
+
+class TransferClient extends \Aws\Transfer\TransferClient
+{
+    use CreateAccess\CreateAccessTrait;
+    use CreateAgreement\CreateAgreementTrait;
+    use CreateConnector\CreateConnectorTrait;
+    use CreateProfile\CreateProfileTrait;
+    use CreateServer\CreateServerTrait;
+    use CreateUser\CreateUserTrait;
+    use CreateWebApp\CreateWebAppTrait;
+    use CreateWorkflow\CreateWorkflowTrait;
+    use DeleteAccess\DeleteAccessTrait;
+    use DeleteAgreement\DeleteAgreementTrait;
+    use DeleteCertificate\DeleteCertificateTrait;
+    use DeleteConnector\DeleteConnectorTrait;
+    use DeleteHostKey\DeleteHostKeyTrait;
+    use DeleteProfile\DeleteProfileTrait;
+    use DeleteServer\DeleteServerTrait;
+    use DeleteSshPublicKey\DeleteSshPublicKeyTrait;
+    use DeleteUser\DeleteUserTrait;
+    use DeleteWebApp\DeleteWebAppTrait;
+    use DeleteWebAppCustomization\DeleteWebAppCustomizationTrait;
+    use DeleteWorkflow\DeleteWorkflowTrait;
+    use DescribeAccess\DescribeAccessTrait;
+    use DescribeAgreement\DescribeAgreementTrait;
+    use DescribeCertificate\DescribeCertificateTrait;
+    use DescribeConnector\DescribeConnectorTrait;
+    use DescribeExecution\DescribeExecutionTrait;
+    use DescribeHostKey\DescribeHostKeyTrait;
+    use DescribeProfile\DescribeProfileTrait;
+    use DescribeSecurityPolicy\DescribeSecurityPolicyTrait;
+    use DescribeServer\DescribeServerTrait;
+    use DescribeUser\DescribeUserTrait;
+    use DescribeWebApp\DescribeWebAppTrait;
+    use DescribeWebAppCustomization\DescribeWebAppCustomizationTrait;
+    use DescribeWorkflow\DescribeWorkflowTrait;
+    use ImportCertificate\ImportCertificateTrait;
+    use ImportHostKey\ImportHostKeyTrait;
+    use ImportSshPublicKey\ImportSshPublicKeyTrait;
+    use ListAccesses\ListAccessesTrait;
+    use ListAgreements\ListAgreementsTrait;
+    use ListCertificates\ListCertificatesTrait;
+    use ListConnectors\ListConnectorsTrait;
+    use ListExecutions\ListExecutionsTrait;
+    use ListFileTransferResults\ListFileTransferResultsTrait;
+    use ListHostKeys\ListHostKeysTrait;
+    use ListProfiles\ListProfilesTrait;
+    use ListSecurityPolicies\ListSecurityPoliciesTrait;
+    use ListServers\ListServersTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListUsers\ListUsersTrait;
+    use ListWebApps\ListWebAppsTrait;
+    use ListWorkflows\ListWorkflowsTrait;
+    use SendWorkflowStepState\SendWorkflowStepStateTrait;
+    use StartDirectoryListing\StartDirectoryListingTrait;
+    use StartFileTransfer\StartFileTransferTrait;
+    use StartRemoteDelete\StartRemoteDeleteTrait;
+    use StartRemoteMove\StartRemoteMoveTrait;
+    use StartServer\StartServerTrait;
+    use StopServer\StopServerTrait;
+    use TagResource\TagResourceTrait;
+    use TestConnection\TestConnectionTrait;
+    use TestIdentityProvider\TestIdentityProviderTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateAccess\UpdateAccessTrait;
+    use UpdateAgreement\UpdateAgreementTrait;
+    use UpdateCertificate\UpdateCertificateTrait;
+    use UpdateConnector\UpdateConnectorTrait;
+    use UpdateHostKey\UpdateHostKeyTrait;
+    use UpdateProfile\UpdateProfileTrait;
+    use UpdateServer\UpdateServerTrait;
+    use UpdateUser\UpdateUserTrait;
+    use UpdateWebApp\UpdateWebAppTrait;
+    use UpdateWebAppCustomization\UpdateWebAppCustomizationTrait;
+}

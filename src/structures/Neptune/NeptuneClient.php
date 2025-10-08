@@ -1,0 +1,77 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Neptune;
+
+class NeptuneClient extends \Aws\Neptune\NeptuneClient
+{
+    use AddRoleToDBCluster\AddRoleToDBClusterTrait;
+    use AddSourceIdentifierToSubscription\AddSourceIdentifierToSubscriptionTrait;
+    use AddTagsToResource\AddTagsToResourceTrait;
+    use ApplyPendingMaintenanceAction\ApplyPendingMaintenanceActionTrait;
+    use CopyDBClusterParameterGroup\CopyDBClusterParameterGroupTrait;
+    use CopyDBClusterSnapshot\CopyDBClusterSnapshotTrait;
+    use CopyDBParameterGroup\CopyDBParameterGroupTrait;
+    use CreateDBCluster\CreateDBClusterTrait;
+    use CreateDBClusterEndpoint\CreateDBClusterEndpointTrait;
+    use CreateDBClusterParameterGroup\CreateDBClusterParameterGroupTrait;
+    use CreateDBClusterSnapshot\CreateDBClusterSnapshotTrait;
+    use CreateDBInstance\CreateDBInstanceTrait;
+    use CreateDBParameterGroup\CreateDBParameterGroupTrait;
+    use CreateDBSubnetGroup\CreateDBSubnetGroupTrait;
+    use CreateEventSubscription\CreateEventSubscriptionTrait;
+    use CreateGlobalCluster\CreateGlobalClusterTrait;
+    use DeleteDBCluster\DeleteDBClusterTrait;
+    use DeleteDBClusterEndpoint\DeleteDBClusterEndpointTrait;
+    use DeleteDBClusterParameterGroup\DeleteDBClusterParameterGroupTrait;
+    use DeleteDBClusterSnapshot\DeleteDBClusterSnapshotTrait;
+    use DeleteDBInstance\DeleteDBInstanceTrait;
+    use DeleteDBParameterGroup\DeleteDBParameterGroupTrait;
+    use DeleteDBSubnetGroup\DeleteDBSubnetGroupTrait;
+    use DeleteEventSubscription\DeleteEventSubscriptionTrait;
+    use DeleteGlobalCluster\DeleteGlobalClusterTrait;
+    use DescribeDBClusterEndpoints\DescribeDBClusterEndpointsTrait;
+    use DescribeDBClusterParameterGroups\DescribeDBClusterParameterGroupsTrait;
+    use DescribeDBClusterParameters\DescribeDBClusterParametersTrait;
+    use DescribeDBClusterSnapshotAttributes\DescribeDBClusterSnapshotAttributesTrait;
+    use DescribeDBClusterSnapshots\DescribeDBClusterSnapshotsTrait;
+    use DescribeDBClusters\DescribeDBClustersTrait;
+    use DescribeDBEngineVersions\DescribeDBEngineVersionsTrait;
+    use DescribeDBInstances\DescribeDBInstancesTrait;
+    use DescribeDBParameterGroups\DescribeDBParameterGroupsTrait;
+    use DescribeDBParameters\DescribeDBParametersTrait;
+    use DescribeDBSubnetGroups\DescribeDBSubnetGroupsTrait;
+    use DescribeEngineDefaultClusterParameters\DescribeEngineDefaultClusterParametersTrait;
+    use DescribeEngineDefaultParameters\DescribeEngineDefaultParametersTrait;
+    use DescribeEventCategories\DescribeEventCategoriesTrait;
+    use DescribeEventSubscriptions\DescribeEventSubscriptionsTrait;
+    use DescribeEvents\DescribeEventsTrait;
+    use DescribeGlobalClusters\DescribeGlobalClustersTrait;
+    use DescribeOrderableDBInstanceOptions\DescribeOrderableDBInstanceOptionsTrait;
+    use DescribePendingMaintenanceActions\DescribePendingMaintenanceActionsTrait;
+    use DescribeValidDBInstanceModifications\DescribeValidDBInstanceModificationsTrait;
+    use FailoverDBCluster\FailoverDBClusterTrait;
+    use FailoverGlobalCluster\FailoverGlobalClusterTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ModifyDBCluster\ModifyDBClusterTrait;
+    use ModifyDBClusterEndpoint\ModifyDBClusterEndpointTrait;
+    use ModifyDBClusterParameterGroup\ModifyDBClusterParameterGroupTrait;
+    use ModifyDBClusterSnapshotAttribute\ModifyDBClusterSnapshotAttributeTrait;
+    use ModifyDBInstance\ModifyDBInstanceTrait;
+    use ModifyDBParameterGroup\ModifyDBParameterGroupTrait;
+    use ModifyDBSubnetGroup\ModifyDBSubnetGroupTrait;
+    use ModifyEventSubscription\ModifyEventSubscriptionTrait;
+    use ModifyGlobalCluster\ModifyGlobalClusterTrait;
+    use PromoteReadReplicaDBCluster\PromoteReadReplicaDBClusterTrait;
+    use RebootDBInstance\RebootDBInstanceTrait;
+    use RemoveFromGlobalCluster\RemoveFromGlobalClusterTrait;
+    use RemoveRoleFromDBCluster\RemoveRoleFromDBClusterTrait;
+    use RemoveSourceIdentifierFromSubscription\RemoveSourceIdentifierFromSubscriptionTrait;
+    use RemoveTagsFromResource\RemoveTagsFromResourceTrait;
+    use ResetDBClusterParameterGroup\ResetDBClusterParameterGroupTrait;
+    use ResetDBParameterGroup\ResetDBParameterGroupTrait;
+    use RestoreDBClusterFromSnapshot\RestoreDBClusterFromSnapshotTrait;
+    use RestoreDBClusterToPointInTime\RestoreDBClusterToPointInTimeTrait;
+    use StartDBCluster\StartDBClusterTrait;
+    use StopDBCluster\StopDBClusterTrait;
+    use SwitchoverGlobalCluster\SwitchoverGlobalClusterTrait;
+}

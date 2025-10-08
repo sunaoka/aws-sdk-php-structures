@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Ecs\DeleteCapacityProvider\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property int $min
+ * @property int|null $max
+ */
+class MemoryMiBRequest extends Shape
+{
+    /**
+     * @param array{
+     *     min: int,
+     *     max?: int|null
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}
