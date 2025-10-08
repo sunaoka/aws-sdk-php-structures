@@ -2,13 +2,13 @@
 
 namespace Tests\Structures;
 
-use Aws\Batch\BatchClient;
-use Aws\S3\S3Client;
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\StreamInterface;
+use Sunaoka\Aws\Structures\Batch\BatchClient;
 use Sunaoka\Aws\Structures\Batch\SubmitJob;
 use Sunaoka\Aws\Structures\S3\GetObject;
 use Sunaoka\Aws\Structures\S3\PutObject;
+use Sunaoka\Aws\Structures\S3\S3Client;
 use Tests\TestCase;
 
 /**
@@ -30,9 +30,7 @@ class StructuresTest extends TestCase
             'Key'    => 'key',
         ]);
 
-        $result = $client->getObject($request->toArray());
-
-        $response = new GetObject\GetObjectResponse($result->toArray());
+        $response = $client->getObject($request);
 
         self::assertInstanceOf(StreamInterface::class, $response->Body);
         self::assertSame('body', (string) $response->Body);
@@ -57,9 +55,7 @@ class StructuresTest extends TestCase
             'Body'   => Psr7\Utils::streamFor('body'),
         ]);
 
-        $result = $client->putObject($request->toArray());
-
-        $response = new PutObject\PutObjectResponse($result->toArray());
+        $response = $client->putObject($request);
 
         self::assertSame('"ETAG"', $response->ETag);
 
@@ -96,9 +92,7 @@ class StructuresTest extends TestCase
             'bar' => 'foo',
         ];
 
-        $result = $client->submitJob($request->toArray());
-
-        $response = new SubmitJob\SubmitJobResponse($result->toArray());
+        $response = $client->submitJob($request);
 
         self::assertSame('jobArn', $response->jobArn);
         self::assertSame('jobId', $response->jobId);
