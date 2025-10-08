@@ -39,9 +39,9 @@ composer require sunaoka/aws-sdk-php-structures
 ## Usage
 
 ```php
-use Aws\S3\S3Client;
 use Sunaoka\Aws\Structures\S3\GetObject\GetObjectRequest;
 use Sunaoka\Aws\Structures\S3\GetObject\GetObjectResponse;
+use Sunaoka\Aws\Structures\S3\S3Client;
 
 // The class of the request is '<Command>Request'.
 $request = new GetObjectRequest([
@@ -49,11 +49,8 @@ $request = new GetObjectRequest([
     'Key' => 'key',
 ]);
 
-$client = new S3Client();
-$result = $client->getObject($request->toArray());
+$client = new S3Client([/* ... */]);
+$result = $client->getObject($request);
 
-// The class of the result is '<Command>Response'.
-$response = new GetObjectResponse($result->toArray());
-
-echo $response->Body->getContents();
+echo $result->Body->getContents();
 ```
