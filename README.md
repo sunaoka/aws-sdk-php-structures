@@ -40,7 +40,6 @@ composer require sunaoka/aws-sdk-php-structures
 
 ```php
 use Sunaoka\Aws\Structures\S3\GetObject\GetObjectRequest;
-use Sunaoka\Aws\Structures\S3\GetObject\GetObjectResponse;
 use Sunaoka\Aws\Structures\S3\S3Client;
 
 // The class of the request is '<Command>Request'.
