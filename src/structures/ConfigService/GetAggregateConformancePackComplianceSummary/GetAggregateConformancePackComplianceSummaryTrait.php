@@ -8,9 +8,8 @@ trait GetAggregateConformancePackComplianceSummaryTrait
      * @param GetAggregateConformancePackComplianceSummaryRequest $args
      * @return GetAggregateConformancePackComplianceSummaryResponse
      */
-    public function getAggregateConformancePackComplianceSummary(
-        GetAggregateConformancePackComplianceSummaryRequest $args,
-    ) {
+    public function getAggregateConformancePackComplianceSummary(GetAggregateConformancePackComplianceSummaryRequest $args)
+    {
         $result = parent::getAggregateConformancePackComplianceSummary($args->toArray());
         return new GetAggregateConformancePackComplianceSummaryResponse($result->toArray());
     }

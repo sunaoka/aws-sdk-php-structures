@@ -8,9 +8,8 @@ trait UpdateBucketMetadataJournalTableConfigurationTrait
      * @param UpdateBucketMetadataJournalTableConfigurationRequest $args
      * @return void
      */
-    public function updateBucketMetadataJournalTableConfiguration(
-        UpdateBucketMetadataJournalTableConfigurationRequest $args,
-    ) {
+    public function updateBucketMetadataJournalTableConfiguration(UpdateBucketMetadataJournalTableConfigurationRequest $args)
+    {
         parent::updateBucketMetadataJournalTableConfiguration($args->toArray());
     }
 }

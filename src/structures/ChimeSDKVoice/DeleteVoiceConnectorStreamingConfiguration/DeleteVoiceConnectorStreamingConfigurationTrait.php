@@ -8,9 +8,8 @@ trait DeleteVoiceConnectorStreamingConfigurationTrait
      * @param DeleteVoiceConnectorStreamingConfigurationRequest $args
      * @return void
      */
-    public function deleteVoiceConnectorStreamingConfiguration(
-        DeleteVoiceConnectorStreamingConfigurationRequest $args,
-    ) {
+    public function deleteVoiceConnectorStreamingConfiguration(DeleteVoiceConnectorStreamingConfigurationRequest $args)
+    {
         parent::deleteVoiceConnectorStreamingConfiguration($args->toArray());
     }
 }

@@ -8,9 +8,8 @@ trait DescribeReservedElasticsearchInstanceOfferingsTrait
      * @param DescribeReservedElasticsearchInstanceOfferingsRequest $args
      * @return DescribeReservedElasticsearchInstanceOfferingsResponse
      */
-    public function describeReservedElasticsearchInstanceOfferings(
-        DescribeReservedElasticsearchInstanceOfferingsRequest $args,
-    ) {
+    public function describeReservedElasticsearchInstanceOfferings(DescribeReservedElasticsearchInstanceOfferingsRequest $args)
+    {
         $result = parent::describeReservedElasticsearchInstanceOfferings($args->toArray());
         return new DescribeReservedElasticsearchInstanceOfferingsResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait BatchAssociateCodeSecurityScanConfigurationTrait
      * @param BatchAssociateCodeSecurityScanConfigurationRequest $args
      * @return BatchAssociateCodeSecurityScanConfigurationResponse
      */
-    public function batchAssociateCodeSecurityScanConfiguration(
-        BatchAssociateCodeSecurityScanConfigurationRequest $args,
-    ) {
+    public function batchAssociateCodeSecurityScanConfiguration(BatchAssociateCodeSecurityScanConfigurationRequest $args)
+    {
         $result = parent::batchAssociateCodeSecurityScanConfiguration($args->toArray());
         return new BatchAssociateCodeSecurityScanConfigurationResponse($result->toArray());
     }

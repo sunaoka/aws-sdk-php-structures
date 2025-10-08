@@ -8,9 +8,8 @@ trait UpdateReputationEntityCustomerManagedStatusTrait
      * @param UpdateReputationEntityCustomerManagedStatusRequest $args
      * @return UpdateReputationEntityCustomerManagedStatusResponse
      */
-    public function updateReputationEntityCustomerManagedStatus(
-        UpdateReputationEntityCustomerManagedStatusRequest $args,
-    ) {
+    public function updateReputationEntityCustomerManagedStatus(UpdateReputationEntityCustomerManagedStatusRequest $args)
+    {
         $result = parent::updateReputationEntityCustomerManagedStatus($args->toArray());
         return new UpdateReputationEntityCustomerManagedStatusResponse($result->toArray());
     }

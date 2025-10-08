@@ -8,9 +8,8 @@ trait DeregisterTransitGatewayMulticastGroupMembersTrait
      * @param DeregisterTransitGatewayMulticastGroupMembersRequest $args
      * @return DeregisterTransitGatewayMulticastGroupMembersResponse
      */
-    public function deregisterTransitGatewayMulticastGroupMembers(
-        DeregisterTransitGatewayMulticastGroupMembersRequest $args,
-    ) {
+    public function deregisterTransitGatewayMulticastGroupMembers(DeregisterTransitGatewayMulticastGroupMembersRequest $args)
+    {
         $result = parent::deregisterTransitGatewayMulticastGroupMembers($args->toArray());
         return new DeregisterTransitGatewayMulticastGroupMembersResponse($result->toArray());
     }

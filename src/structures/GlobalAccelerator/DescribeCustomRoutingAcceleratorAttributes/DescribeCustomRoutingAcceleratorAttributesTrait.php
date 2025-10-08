@@ -8,9 +8,8 @@ trait DescribeCustomRoutingAcceleratorAttributesTrait
      * @param DescribeCustomRoutingAcceleratorAttributesRequest $args
      * @return DescribeCustomRoutingAcceleratorAttributesResponse
      */
-    public function describeCustomRoutingAcceleratorAttributes(
-        DescribeCustomRoutingAcceleratorAttributesRequest $args,
-    ) {
+    public function describeCustomRoutingAcceleratorAttributes(DescribeCustomRoutingAcceleratorAttributesRequest $args)
+    {
         $result = parent::describeCustomRoutingAcceleratorAttributes($args->toArray());
         return new DescribeCustomRoutingAcceleratorAttributesResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait ModifyVerifiedAccessInstanceLoggingConfigurationTrait
      * @param ModifyVerifiedAccessInstanceLoggingConfigurationRequest $args
      * @return ModifyVerifiedAccessInstanceLoggingConfigurationResponse
      */
-    public function modifyVerifiedAccessInstanceLoggingConfiguration(
-        ModifyVerifiedAccessInstanceLoggingConfigurationRequest $args,
-    ) {
+    public function modifyVerifiedAccessInstanceLoggingConfiguration(ModifyVerifiedAccessInstanceLoggingConfigurationRequest $args)
+    {
         $result = parent::modifyVerifiedAccessInstanceLoggingConfiguration($args->toArray());
         return new ModifyVerifiedAccessInstanceLoggingConfigurationResponse($result->toArray());
     }

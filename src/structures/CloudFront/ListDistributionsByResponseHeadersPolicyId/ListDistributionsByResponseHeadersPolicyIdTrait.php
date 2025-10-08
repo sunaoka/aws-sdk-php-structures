@@ -8,9 +8,8 @@ trait ListDistributionsByResponseHeadersPolicyIdTrait
      * @param ListDistributionsByResponseHeadersPolicyIdRequest $args
      * @return ListDistributionsByResponseHeadersPolicyIdResponse
      */
-    public function listDistributionsByResponseHeadersPolicyId(
-        ListDistributionsByResponseHeadersPolicyIdRequest $args,
-    ) {
+    public function listDistributionsByResponseHeadersPolicyId(ListDistributionsByResponseHeadersPolicyIdRequest $args)
+    {
         $result = parent::listDistributionsByResponseHeadersPolicyId($args->toArray());
         return new ListDistributionsByResponseHeadersPolicyIdResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait CreateTransitGatewayRouteTableAnnouncementTrait
      * @param CreateTransitGatewayRouteTableAnnouncementRequest $args
      * @return CreateTransitGatewayRouteTableAnnouncementResponse
      */
-    public function createTransitGatewayRouteTableAnnouncement(
-        CreateTransitGatewayRouteTableAnnouncementRequest $args,
-    ) {
+    public function createTransitGatewayRouteTableAnnouncement(CreateTransitGatewayRouteTableAnnouncementRequest $args)
+    {
         $result = parent::createTransitGatewayRouteTableAnnouncement($args->toArray());
         return new CreateTransitGatewayRouteTableAnnouncementResponse($result->toArray());
     }

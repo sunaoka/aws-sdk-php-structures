@@ -8,9 +8,8 @@ trait CreateMacSystemIntegrityProtectionModificationTaskTrait
      * @param CreateMacSystemIntegrityProtectionModificationTaskRequest $args
      * @return CreateMacSystemIntegrityProtectionModificationTaskResponse
      */
-    public function createMacSystemIntegrityProtectionModificationTask(
-        CreateMacSystemIntegrityProtectionModificationTaskRequest $args,
-    ) {
+    public function createMacSystemIntegrityProtectionModificationTask(CreateMacSystemIntegrityProtectionModificationTaskRequest $args)
+    {
         $result = parent::createMacSystemIntegrityProtectionModificationTask($args->toArray());
         return new CreateMacSystemIntegrityProtectionModificationTaskResponse($result->toArray());
     }

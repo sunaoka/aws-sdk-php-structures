@@ -8,9 +8,8 @@ trait ModifyVpcEndpointServicePayerResponsibilityTrait
      * @param ModifyVpcEndpointServicePayerResponsibilityRequest $args
      * @return ModifyVpcEndpointServicePayerResponsibilityResponse
      */
-    public function modifyVpcEndpointServicePayerResponsibility(
-        ModifyVpcEndpointServicePayerResponsibilityRequest $args,
-    ) {
+    public function modifyVpcEndpointServicePayerResponsibility(ModifyVpcEndpointServicePayerResponsibilityRequest $args)
+    {
         $result = parent::modifyVpcEndpointServicePayerResponsibility($args->toArray());
         return new ModifyVpcEndpointServicePayerResponsibilityResponse($result->toArray());
     }

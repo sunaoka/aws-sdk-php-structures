@@ -8,9 +8,8 @@ trait RejectTransitGatewayMulticastDomainAssociationsTrait
      * @param RejectTransitGatewayMulticastDomainAssociationsRequest $args
      * @return RejectTransitGatewayMulticastDomainAssociationsResponse
      */
-    public function rejectTransitGatewayMulticastDomainAssociations(
-        RejectTransitGatewayMulticastDomainAssociationsRequest $args,
-    ) {
+    public function rejectTransitGatewayMulticastDomainAssociations(RejectTransitGatewayMulticastDomainAssociationsRequest $args)
+    {
         $result = parent::rejectTransitGatewayMulticastDomainAssociations($args->toArray());
         return new RejectTransitGatewayMulticastDomainAssociationsResponse($result->toArray());
     }

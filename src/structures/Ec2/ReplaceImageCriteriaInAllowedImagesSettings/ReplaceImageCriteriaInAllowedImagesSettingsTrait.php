@@ -8,9 +8,8 @@ trait ReplaceImageCriteriaInAllowedImagesSettingsTrait
      * @param ReplaceImageCriteriaInAllowedImagesSettingsRequest $args
      * @return ReplaceImageCriteriaInAllowedImagesSettingsResponse
      */
-    public function replaceImageCriteriaInAllowedImagesSettings(
-        ReplaceImageCriteriaInAllowedImagesSettingsRequest $args,
-    ) {
+    public function replaceImageCriteriaInAllowedImagesSettings(ReplaceImageCriteriaInAllowedImagesSettingsRequest $args)
+    {
         $result = parent::replaceImageCriteriaInAllowedImagesSettings($args->toArray());
         return new ReplaceImageCriteriaInAllowedImagesSettingsResponse($result->toArray());
     }

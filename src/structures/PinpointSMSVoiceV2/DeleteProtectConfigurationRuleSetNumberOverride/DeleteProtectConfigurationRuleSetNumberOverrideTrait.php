@@ -8,9 +8,8 @@ trait DeleteProtectConfigurationRuleSetNumberOverrideTrait
      * @param DeleteProtectConfigurationRuleSetNumberOverrideRequest $args
      * @return DeleteProtectConfigurationRuleSetNumberOverrideResponse
      */
-    public function deleteProtectConfigurationRuleSetNumberOverride(
-        DeleteProtectConfigurationRuleSetNumberOverrideRequest $args,
-    ) {
+    public function deleteProtectConfigurationRuleSetNumberOverride(DeleteProtectConfigurationRuleSetNumberOverrideRequest $args)
+    {
         $result = parent::deleteProtectConfigurationRuleSetNumberOverride($args->toArray());
         return new DeleteProtectConfigurationRuleSetNumberOverrideResponse($result->toArray());
     }

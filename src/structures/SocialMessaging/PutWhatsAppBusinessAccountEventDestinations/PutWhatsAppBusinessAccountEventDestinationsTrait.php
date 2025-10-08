@@ -8,9 +8,8 @@ trait PutWhatsAppBusinessAccountEventDestinationsTrait
      * @param PutWhatsAppBusinessAccountEventDestinationsRequest $args
      * @return PutWhatsAppBusinessAccountEventDestinationsResponse
      */
-    public function putWhatsAppBusinessAccountEventDestinations(
-        PutWhatsAppBusinessAccountEventDestinationsRequest $args,
-    ) {
+    public function putWhatsAppBusinessAccountEventDestinations(PutWhatsAppBusinessAccountEventDestinationsRequest $args)
+    {
         $result = parent::putWhatsAppBusinessAccountEventDestinations($args->toArray());
         return new PutWhatsAppBusinessAccountEventDestinationsResponse($result->toArray());
     }

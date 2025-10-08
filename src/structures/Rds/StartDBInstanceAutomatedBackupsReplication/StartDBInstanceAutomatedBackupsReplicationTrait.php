@@ -8,9 +8,8 @@ trait StartDBInstanceAutomatedBackupsReplicationTrait
      * @param StartDBInstanceAutomatedBackupsReplicationRequest $args
      * @return StartDBInstanceAutomatedBackupsReplicationResponse
      */
-    public function startDBInstanceAutomatedBackupsReplication(
-        StartDBInstanceAutomatedBackupsReplicationRequest $args,
-    ) {
+    public function startDBInstanceAutomatedBackupsReplication(StartDBInstanceAutomatedBackupsReplicationRequest $args)
+    {
         $result = parent::startDBInstanceAutomatedBackupsReplication($args->toArray());
         return new StartDBInstanceAutomatedBackupsReplicationResponse($result->toArray());
     }

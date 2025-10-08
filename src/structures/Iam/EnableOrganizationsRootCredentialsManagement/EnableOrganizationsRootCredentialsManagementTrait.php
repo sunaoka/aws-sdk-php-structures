@@ -8,9 +8,8 @@ trait EnableOrganizationsRootCredentialsManagementTrait
      * @param EnableOrganizationsRootCredentialsManagementRequest $args
      * @return EnableOrganizationsRootCredentialsManagementResponse
      */
-    public function enableOrganizationsRootCredentialsManagement(
-        EnableOrganizationsRootCredentialsManagementRequest $args,
-    ) {
+    public function enableOrganizationsRootCredentialsManagement(EnableOrganizationsRootCredentialsManagementRequest $args)
+    {
         $result = parent::enableOrganizationsRootCredentialsManagement($args->toArray());
         return new EnableOrganizationsRootCredentialsManagementResponse($result->toArray());
     }

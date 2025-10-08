@@ -8,9 +8,8 @@ trait BatchUpdateBillScenarioCommitmentModificationTrait
      * @param BatchUpdateBillScenarioCommitmentModificationRequest $args
      * @return BatchUpdateBillScenarioCommitmentModificationResponse
      */
-    public function batchUpdateBillScenarioCommitmentModification(
-        BatchUpdateBillScenarioCommitmentModificationRequest $args,
-    ) {
+    public function batchUpdateBillScenarioCommitmentModification(BatchUpdateBillScenarioCommitmentModificationRequest $args)
+    {
         $result = parent::batchUpdateBillScenarioCommitmentModification($args->toArray());
         return new BatchUpdateBillScenarioCommitmentModificationResponse($result->toArray());
     }

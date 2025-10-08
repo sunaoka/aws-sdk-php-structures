@@ -8,9 +8,8 @@ trait DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationTrait
      * @param DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest $args
      * @return DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResponse
      */
-    public function deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation(
-        DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest $args,
-    ) {
+    public function deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation(DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest $args)
+    {
         $result = parent::deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation($args->toArray());
         return new DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait DescribeTrustedAdvisorCheckRefreshStatusesTrait
      * @param DescribeTrustedAdvisorCheckRefreshStatusesRequest $args
      * @return DescribeTrustedAdvisorCheckRefreshStatusesResponse
      */
-    public function describeTrustedAdvisorCheckRefreshStatuses(
-        DescribeTrustedAdvisorCheckRefreshStatusesRequest $args,
-    ) {
+    public function describeTrustedAdvisorCheckRefreshStatuses(DescribeTrustedAdvisorCheckRefreshStatusesRequest $args)
+    {
         $result = parent::describeTrustedAdvisorCheckRefreshStatuses($args->toArray());
         return new DescribeTrustedAdvisorCheckRefreshStatusesResponse($result->toArray());
     }

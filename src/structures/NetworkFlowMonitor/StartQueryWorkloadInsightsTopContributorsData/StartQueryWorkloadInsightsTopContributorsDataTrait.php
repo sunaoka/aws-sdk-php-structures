@@ -8,9 +8,8 @@ trait StartQueryWorkloadInsightsTopContributorsDataTrait
      * @param StartQueryWorkloadInsightsTopContributorsDataRequest $args
      * @return StartQueryWorkloadInsightsTopContributorsDataResponse
      */
-    public function startQueryWorkloadInsightsTopContributorsData(
-        StartQueryWorkloadInsightsTopContributorsDataRequest $args,
-    ) {
+    public function startQueryWorkloadInsightsTopContributorsData(StartQueryWorkloadInsightsTopContributorsDataRequest $args)
+    {
         $result = parent::startQueryWorkloadInsightsTopContributorsData($args->toArray());
         return new StartQueryWorkloadInsightsTopContributorsDataResponse($result->toArray());
     }

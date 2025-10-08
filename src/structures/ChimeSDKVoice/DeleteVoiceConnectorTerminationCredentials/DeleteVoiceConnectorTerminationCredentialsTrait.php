@@ -8,9 +8,8 @@ trait DeleteVoiceConnectorTerminationCredentialsTrait
      * @param DeleteVoiceConnectorTerminationCredentialsRequest $args
      * @return void
      */
-    public function deleteVoiceConnectorTerminationCredentials(
-        DeleteVoiceConnectorTerminationCredentialsRequest $args,
-    ) {
+    public function deleteVoiceConnectorTerminationCredentials(DeleteVoiceConnectorTerminationCredentialsRequest $args)
+    {
         parent::deleteVoiceConnectorTerminationCredentials($args->toArray());
     }
 }

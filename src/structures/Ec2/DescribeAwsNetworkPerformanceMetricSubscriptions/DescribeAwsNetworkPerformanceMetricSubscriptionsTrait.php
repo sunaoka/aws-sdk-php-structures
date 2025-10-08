@@ -8,9 +8,8 @@ trait DescribeAwsNetworkPerformanceMetricSubscriptionsTrait
      * @param DescribeAwsNetworkPerformanceMetricSubscriptionsRequest $args
      * @return DescribeAwsNetworkPerformanceMetricSubscriptionsResponse
      */
-    public function describeAwsNetworkPerformanceMetricSubscriptions(
-        DescribeAwsNetworkPerformanceMetricSubscriptionsRequest $args,
-    ) {
+    public function describeAwsNetworkPerformanceMetricSubscriptions(DescribeAwsNetworkPerformanceMetricSubscriptionsRequest $args)
+    {
         $result = parent::describeAwsNetworkPerformanceMetricSubscriptions($args->toArray());
         return new DescribeAwsNetworkPerformanceMetricSubscriptionsResponse($result->toArray());
     }

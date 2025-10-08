@@ -8,9 +8,8 @@ trait GetNetworkInsightsAccessScopeAnalysisFindingsTrait
      * @param GetNetworkInsightsAccessScopeAnalysisFindingsRequest $args
      * @return GetNetworkInsightsAccessScopeAnalysisFindingsResponse
      */
-    public function getNetworkInsightsAccessScopeAnalysisFindings(
-        GetNetworkInsightsAccessScopeAnalysisFindingsRequest $args,
-    ) {
+    public function getNetworkInsightsAccessScopeAnalysisFindings(GetNetworkInsightsAccessScopeAnalysisFindingsRequest $args)
+    {
         $result = parent::getNetworkInsightsAccessScopeAnalysisFindings($args->toArray());
         return new GetNetworkInsightsAccessScopeAnalysisFindingsResponse($result->toArray());
     }

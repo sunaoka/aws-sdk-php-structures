@@ -8,9 +8,8 @@ trait StartVpcEndpointServicePrivateDnsVerificationTrait
      * @param StartVpcEndpointServicePrivateDnsVerificationRequest $args
      * @return StartVpcEndpointServicePrivateDnsVerificationResponse
      */
-    public function startVpcEndpointServicePrivateDnsVerification(
-        StartVpcEndpointServicePrivateDnsVerificationRequest $args,
-    ) {
+    public function startVpcEndpointServicePrivateDnsVerification(StartVpcEndpointServicePrivateDnsVerificationRequest $args)
+    {
         $result = parent::startVpcEndpointServicePrivateDnsVerification($args->toArray());
         return new StartVpcEndpointServicePrivateDnsVerificationResponse($result->toArray());
     }

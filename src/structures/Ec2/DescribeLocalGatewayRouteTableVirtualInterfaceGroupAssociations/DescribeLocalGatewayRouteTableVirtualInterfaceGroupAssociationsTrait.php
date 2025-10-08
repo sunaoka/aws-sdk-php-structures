@@ -8,9 +8,8 @@ trait DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsTrait
      * @param DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest $args
      * @return DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResponse
      */
-    public function describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations(
-        DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest $args,
-    ) {
+    public function describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations(DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest $args)
+    {
         $result = parent::describeLocalGatewayRouteTableVirtualInterfaceGroupAssociations($args->toArray());
         return new DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResponse($result->toArray());
     }

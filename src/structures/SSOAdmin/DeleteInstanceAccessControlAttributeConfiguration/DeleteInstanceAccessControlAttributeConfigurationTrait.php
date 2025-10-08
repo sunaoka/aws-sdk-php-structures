@@ -8,9 +8,8 @@ trait DeleteInstanceAccessControlAttributeConfigurationTrait
      * @param DeleteInstanceAccessControlAttributeConfigurationRequest $args
      * @return DeleteInstanceAccessControlAttributeConfigurationResponse
      */
-    public function deleteInstanceAccessControlAttributeConfiguration(
-        DeleteInstanceAccessControlAttributeConfigurationRequest $args,
-    ) {
+    public function deleteInstanceAccessControlAttributeConfiguration(DeleteInstanceAccessControlAttributeConfigurationRequest $args)
+    {
         $result = parent::deleteInstanceAccessControlAttributeConfiguration($args->toArray());
         return new DeleteInstanceAccessControlAttributeConfigurationResponse($result->toArray());
     }

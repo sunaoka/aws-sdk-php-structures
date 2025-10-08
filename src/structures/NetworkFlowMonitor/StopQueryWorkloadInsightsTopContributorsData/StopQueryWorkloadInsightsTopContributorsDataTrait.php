@@ -8,9 +8,8 @@ trait StopQueryWorkloadInsightsTopContributorsDataTrait
      * @param StopQueryWorkloadInsightsTopContributorsDataRequest $args
      * @return StopQueryWorkloadInsightsTopContributorsDataResponse
      */
-    public function stopQueryWorkloadInsightsTopContributorsData(
-        StopQueryWorkloadInsightsTopContributorsDataRequest $args,
-    ) {
+    public function stopQueryWorkloadInsightsTopContributorsData(StopQueryWorkloadInsightsTopContributorsDataRequest $args)
+    {
         $result = parent::stopQueryWorkloadInsightsTopContributorsData($args->toArray());
         return new StopQueryWorkloadInsightsTopContributorsDataResponse($result->toArray());
     }

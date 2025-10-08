@@ -8,9 +8,8 @@ trait GetRDSDatabaseRecommendationProjectedMetricsTrait
      * @param GetRDSDatabaseRecommendationProjectedMetricsRequest $args
      * @return GetRDSDatabaseRecommendationProjectedMetricsResponse
      */
-    public function getRDSDatabaseRecommendationProjectedMetrics(
-        GetRDSDatabaseRecommendationProjectedMetricsRequest $args,
-    ) {
+    public function getRDSDatabaseRecommendationProjectedMetrics(GetRDSDatabaseRecommendationProjectedMetricsRequest $args)
+    {
         $result = parent::getRDSDatabaseRecommendationProjectedMetrics($args->toArray());
         return new GetRDSDatabaseRecommendationProjectedMetricsResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait DescribeAggregateComplianceByConformancePacksTrait
      * @param DescribeAggregateComplianceByConformancePacksRequest $args
      * @return DescribeAggregateComplianceByConformancePacksResponse
      */
-    public function describeAggregateComplianceByConformancePacks(
-        DescribeAggregateComplianceByConformancePacksRequest $args,
-    ) {
+    public function describeAggregateComplianceByConformancePacks(DescribeAggregateComplianceByConformancePacksRequest $args)
+    {
         $result = parent::describeAggregateComplianceByConformancePacks($args->toArray());
         return new DescribeAggregateComplianceByConformancePacksResponse($result->toArray());
     }
