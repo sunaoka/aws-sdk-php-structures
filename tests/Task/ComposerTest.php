@@ -6,6 +6,7 @@ use Composer\Config;
 use Composer\IO\ConsoleIO;
 use Composer\Package\RootPackage;
 use Composer\Script\Event;
+use Mockery\MockInterface;
 use Sunaoka\Aws\Structures\Task\Composer;
 use Symfony\Component\Filesystem\Filesystem;
 use Tests\TestCase;
@@ -24,12 +25,18 @@ class ComposerTest extends TestCase
         $vendorPath = $tempDir . '/sunaoka/aws-sdk-php-structures-vendor-' . mt_rand();
         $structuresPath = "{$vendorPath}/sunaoka/aws-sdk-php-structures/src/structures";
 
-        $all = [
+        $directories = [
             "{$structuresPath}/Ec2/StartInstances",
             "{$structuresPath}/S3/GetObject",
             "{$structuresPath}/S3/PutObject",
             "{$structuresPath}/S3/ListObjectsV2",
             "{$structuresPath}/Sqs",
+        ];
+
+        $clients = [
+            __DIR__ . '/../../src/structures/Ec2/Ec2Client.php' => "{$structuresPath}/Ec2/Ec2Client.php",
+            __DIR__ . '/../../src/structures/S3/S3Client.php'   => "{$structuresPath}/S3/S3Client.php",
+            __DIR__ . '/../../src/structures/Sqs/SqsClient.php' => "{$structuresPath}/Sqs/SqsClient.php",
         ];
 
         $keeps = [
@@ -40,7 +47,11 @@ class ComposerTest extends TestCase
         ];
 
         $filesystem = new Filesystem();
-        $filesystem->mkdir($all);
+        $filesystem->mkdir($directories);
+
+        foreach ($clients as $src => $dist) {
+            $filesystem->copy($src, $dist);
+        }
 
         $event = $this->getMockEvent($keeps, $vendorPath);
 
@@ -68,6 +79,10 @@ class ComposerTest extends TestCase
         self::assertFalse($filesystem->exists("{$structuresPath}/S3/ListObjectsV2"));
         self::assertFalse($filesystem->exists("{$structuresPath}/Sqs"));
 
+        $this->assertFileContains('use GetObject\GetObjectTrait;', "{$structuresPath}/S3/S3Client.php");
+        $this->assertFileNotContains('use PutObject\PutObjectTrait;', "{$structuresPath}/S3/S3Client.php");
+        $this->assertFileNotContains('use ListObjectsV2\ListObjectsV2Trait;', "{$structuresPath}/S3/S3Client.php");
+
         $filesystem->remove($vendorPath);
     }
 
@@ -80,7 +95,7 @@ class ComposerTest extends TestCase
         $vendorPath = $tempDir . '/sunaoka/aws-sdk-php-structures-vendor-' . mt_rand();
         $structuresPath = "{$vendorPath}/sunaoka/aws-sdk-php-structures/src/structures";
 
-        $all = [
+        $directories = [
             "{$structuresPath}/Ec2/StartInstances",
             "{$structuresPath}/S3/GetObject",
             "{$structuresPath}/S3/PutObject",
@@ -91,7 +106,7 @@ class ComposerTest extends TestCase
         $keeps = [];
 
         $filesystem = new Filesystem();
-        $filesystem->mkdir($all);
+        $filesystem->mkdir($directories);
 
         $event = $this->getMockEvent($keeps, $vendorPath);
 
@@ -107,9 +122,10 @@ class ComposerTest extends TestCase
     }
 
     /**
-     * @param string $vendorPath
+     * @param array<string, string[]> $keeps
+     * @param string                  $vendorPath
      *
-     * @return Event|\Mockery\MockInterface
+     * @return Event|MockInterface
      */
     private function getMockEvent(array $keeps, $vendorPath)
     {
@@ -135,7 +151,7 @@ class ComposerTest extends TestCase
             ->getMock()
         ;
 
-        /** @var Event|\Mockery\MockInterface */
+        /** @var Event|MockInterface */
         return \Mockery::mock(Event::class)
             ->shouldReceive('getComposer')
             ->andReturn($composer)
