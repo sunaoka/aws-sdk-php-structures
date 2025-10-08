@@ -8,9 +8,8 @@ trait DisassociateSigninDelegateGroupsFromAccountTrait
      * @param DisassociateSigninDelegateGroupsFromAccountRequest $args
      * @return DisassociateSigninDelegateGroupsFromAccountResponse
      */
-    public function disassociateSigninDelegateGroupsFromAccount(
-        DisassociateSigninDelegateGroupsFromAccountRequest $args,
-    ) {
+    public function disassociateSigninDelegateGroupsFromAccount(DisassociateSigninDelegateGroupsFromAccountRequest $args)
+    {
         $result = parent::disassociateSigninDelegateGroupsFromAccount($args->toArray());
         return new DisassociateSigninDelegateGroupsFromAccountResponse($result->toArray());
     }

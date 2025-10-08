@@ -8,9 +8,8 @@ trait DecreaseNodeGroupsInGlobalReplicationGroupTrait
      * @param DecreaseNodeGroupsInGlobalReplicationGroupRequest $args
      * @return DecreaseNodeGroupsInGlobalReplicationGroupResponse
      */
-    public function decreaseNodeGroupsInGlobalReplicationGroup(
-        DecreaseNodeGroupsInGlobalReplicationGroupRequest $args,
-    ) {
+    public function decreaseNodeGroupsInGlobalReplicationGroup(DecreaseNodeGroupsInGlobalReplicationGroupRequest $args)
+    {
         $result = parent::decreaseNodeGroupsInGlobalReplicationGroup($args->toArray());
         return new DecreaseNodeGroupsInGlobalReplicationGroupResponse($result->toArray());
     }

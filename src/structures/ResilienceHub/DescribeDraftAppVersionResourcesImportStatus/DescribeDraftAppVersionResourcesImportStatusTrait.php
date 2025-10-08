@@ -8,9 +8,8 @@ trait DescribeDraftAppVersionResourcesImportStatusTrait
      * @param DescribeDraftAppVersionResourcesImportStatusRequest $args
      * @return DescribeDraftAppVersionResourcesImportStatusResponse
      */
-    public function describeDraftAppVersionResourcesImportStatus(
-        DescribeDraftAppVersionResourcesImportStatusRequest $args,
-    ) {
+    public function describeDraftAppVersionResourcesImportStatus(DescribeDraftAppVersionResourcesImportStatusRequest $args)
+    {
         $result = parent::describeDraftAppVersionResourcesImportStatus($args->toArray());
         return new DescribeDraftAppVersionResourcesImportStatusResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait EnableReachabilityAnalyzerOrganizationSharingTrait
      * @param EnableReachabilityAnalyzerOrganizationSharingRequest $args
      * @return EnableReachabilityAnalyzerOrganizationSharingResponse
      */
-    public function enableReachabilityAnalyzerOrganizationSharing(
-        EnableReachabilityAnalyzerOrganizationSharingRequest $args,
-    ) {
+    public function enableReachabilityAnalyzerOrganizationSharing(EnableReachabilityAnalyzerOrganizationSharingRequest $args)
+    {
         $result = parent::enableReachabilityAnalyzerOrganizationSharing($args->toArray());
         return new EnableReachabilityAnalyzerOrganizationSharingResponse($result->toArray());
     }

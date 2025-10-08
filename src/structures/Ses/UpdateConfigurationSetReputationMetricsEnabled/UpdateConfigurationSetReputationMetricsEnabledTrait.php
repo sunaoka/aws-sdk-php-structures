@@ -8,9 +8,8 @@ trait UpdateConfigurationSetReputationMetricsEnabledTrait
      * @param UpdateConfigurationSetReputationMetricsEnabledRequest $args
      * @return void
      */
-    public function updateConfigurationSetReputationMetricsEnabled(
-        UpdateConfigurationSetReputationMetricsEnabledRequest $args,
-    ) {
+    public function updateConfigurationSetReputationMetricsEnabled(UpdateConfigurationSetReputationMetricsEnabledRequest $args)
+    {
         parent::updateConfigurationSetReputationMetricsEnabled($args->toArray());
     }
 }

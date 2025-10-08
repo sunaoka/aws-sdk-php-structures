@@ -8,9 +8,8 @@ trait PurchaseReservedElasticsearchInstanceOfferingTrait
      * @param PurchaseReservedElasticsearchInstanceOfferingRequest $args
      * @return PurchaseReservedElasticsearchInstanceOfferingResponse
      */
-    public function purchaseReservedElasticsearchInstanceOffering(
-        PurchaseReservedElasticsearchInstanceOfferingRequest $args,
-    ) {
+    public function purchaseReservedElasticsearchInstanceOffering(PurchaseReservedElasticsearchInstanceOfferingRequest $args)
+    {
         $result = parent::purchaseReservedElasticsearchInstanceOffering($args->toArray());
         return new PurchaseReservedElasticsearchInstanceOfferingResponse($result->toArray());
     }

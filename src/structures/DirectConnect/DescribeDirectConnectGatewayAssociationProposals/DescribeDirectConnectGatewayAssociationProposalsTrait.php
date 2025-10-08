@@ -8,9 +8,8 @@ trait DescribeDirectConnectGatewayAssociationProposalsTrait
      * @param DescribeDirectConnectGatewayAssociationProposalsRequest $args
      * @return DescribeDirectConnectGatewayAssociationProposalsResponse
      */
-    public function describeDirectConnectGatewayAssociationProposals(
-        DescribeDirectConnectGatewayAssociationProposalsRequest $args,
-    ) {
+    public function describeDirectConnectGatewayAssociationProposals(DescribeDirectConnectGatewayAssociationProposalsRequest $args)
+    {
         $result = parent::describeDirectConnectGatewayAssociationProposals($args->toArray());
         return new DescribeDirectConnectGatewayAssociationProposalsResponse($result->toArray());
     }

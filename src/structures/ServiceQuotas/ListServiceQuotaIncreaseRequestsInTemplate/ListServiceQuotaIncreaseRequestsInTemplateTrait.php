@@ -8,9 +8,8 @@ trait ListServiceQuotaIncreaseRequestsInTemplateTrait
      * @param ListServiceQuotaIncreaseRequestsInTemplateRequest $args
      * @return ListServiceQuotaIncreaseRequestsInTemplateResponse
      */
-    public function listServiceQuotaIncreaseRequestsInTemplate(
-        ListServiceQuotaIncreaseRequestsInTemplateRequest $args,
-    ) {
+    public function listServiceQuotaIncreaseRequestsInTemplate(ListServiceQuotaIncreaseRequestsInTemplateRequest $args)
+    {
         $result = parent::listServiceQuotaIncreaseRequestsInTemplate($args->toArray());
         return new ListServiceQuotaIncreaseRequestsInTemplateResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait BatchUpdateRecommendationResourceExclusionTrait
      * @param BatchUpdateRecommendationResourceExclusionRequest $args
      * @return BatchUpdateRecommendationResourceExclusionResponse
      */
-    public function batchUpdateRecommendationResourceExclusion(
-        BatchUpdateRecommendationResourceExclusionRequest $args,
-    ) {
+    public function batchUpdateRecommendationResourceExclusion(BatchUpdateRecommendationResourceExclusionRequest $args)
+    {
         $result = parent::batchUpdateRecommendationResourceExclusion($args->toArray());
         return new BatchUpdateRecommendationResourceExclusionResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait DescribeVpcEndpointConnectionNotificationsTrait
      * @param DescribeVpcEndpointConnectionNotificationsRequest $args
      * @return DescribeVpcEndpointConnectionNotificationsResponse
      */
-    public function describeVpcEndpointConnectionNotifications(
-        DescribeVpcEndpointConnectionNotificationsRequest $args,
-    ) {
+    public function describeVpcEndpointConnectionNotifications(DescribeVpcEndpointConnectionNotificationsRequest $args)
+    {
         $result = parent::describeVpcEndpointConnectionNotifications($args->toArray());
         return new DescribeVpcEndpointConnectionNotificationsResponse($result->toArray());
     }

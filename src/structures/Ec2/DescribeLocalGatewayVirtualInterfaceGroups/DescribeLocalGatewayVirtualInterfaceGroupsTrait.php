@@ -8,9 +8,8 @@ trait DescribeLocalGatewayVirtualInterfaceGroupsTrait
      * @param DescribeLocalGatewayVirtualInterfaceGroupsRequest $args
      * @return DescribeLocalGatewayVirtualInterfaceGroupsResponse
      */
-    public function describeLocalGatewayVirtualInterfaceGroups(
-        DescribeLocalGatewayVirtualInterfaceGroupsRequest $args,
-    ) {
+    public function describeLocalGatewayVirtualInterfaceGroups(DescribeLocalGatewayVirtualInterfaceGroupsRequest $args)
+    {
         $result = parent::describeLocalGatewayVirtualInterfaceGroups($args->toArray());
         return new DescribeLocalGatewayVirtualInterfaceGroupsResponse($result->toArray());
     }

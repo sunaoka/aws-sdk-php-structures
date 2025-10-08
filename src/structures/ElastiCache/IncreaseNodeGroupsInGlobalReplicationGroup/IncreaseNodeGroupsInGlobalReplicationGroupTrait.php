@@ -8,9 +8,8 @@ trait IncreaseNodeGroupsInGlobalReplicationGroupTrait
      * @param IncreaseNodeGroupsInGlobalReplicationGroupRequest $args
      * @return IncreaseNodeGroupsInGlobalReplicationGroupResponse
      */
-    public function increaseNodeGroupsInGlobalReplicationGroup(
-        IncreaseNodeGroupsInGlobalReplicationGroupRequest $args,
-    ) {
+    public function increaseNodeGroupsInGlobalReplicationGroup(IncreaseNodeGroupsInGlobalReplicationGroupRequest $args)
+    {
         $result = parent::increaseNodeGroupsInGlobalReplicationGroup($args->toArray());
         return new IncreaseNodeGroupsInGlobalReplicationGroupResponse($result->toArray());
     }

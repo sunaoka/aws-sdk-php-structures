@@ -8,9 +8,8 @@ trait ModifyInstanceCapacityReservationAttributesTrait
      * @param ModifyInstanceCapacityReservationAttributesRequest $args
      * @return ModifyInstanceCapacityReservationAttributesResponse
      */
-    public function modifyInstanceCapacityReservationAttributes(
-        ModifyInstanceCapacityReservationAttributesRequest $args,
-    ) {
+    public function modifyInstanceCapacityReservationAttributes(ModifyInstanceCapacityReservationAttributesRequest $args)
+    {
         $result = parent::modifyInstanceCapacityReservationAttributes($args->toArray());
         return new ModifyInstanceCapacityReservationAttributesResponse($result->toArray());
     }

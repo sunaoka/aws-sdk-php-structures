@@ -8,9 +8,8 @@ trait DescribeNetworkInsightsAccessScopeAnalysesTrait
      * @param DescribeNetworkInsightsAccessScopeAnalysesRequest $args
      * @return DescribeNetworkInsightsAccessScopeAnalysesResponse
      */
-    public function describeNetworkInsightsAccessScopeAnalyses(
-        DescribeNetworkInsightsAccessScopeAnalysesRequest $args,
-    ) {
+    public function describeNetworkInsightsAccessScopeAnalyses(DescribeNetworkInsightsAccessScopeAnalysesRequest $args)
+    {
         $result = parent::describeNetworkInsightsAccessScopeAnalyses($args->toArray());
         return new DescribeNetworkInsightsAccessScopeAnalysesResponse($result->toArray());
     }

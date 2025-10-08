@@ -8,9 +8,8 @@ trait DeleteOutboundCrossClusterSearchConnectionTrait
      * @param DeleteOutboundCrossClusterSearchConnectionRequest $args
      * @return DeleteOutboundCrossClusterSearchConnectionResponse
      */
-    public function deleteOutboundCrossClusterSearchConnection(
-        DeleteOutboundCrossClusterSearchConnectionRequest $args,
-    ) {
+    public function deleteOutboundCrossClusterSearchConnection(DeleteOutboundCrossClusterSearchConnectionRequest $args)
+    {
         $result = parent::deleteOutboundCrossClusterSearchConnection($args->toArray());
         return new DeleteOutboundCrossClusterSearchConnectionResponse($result->toArray());
     }

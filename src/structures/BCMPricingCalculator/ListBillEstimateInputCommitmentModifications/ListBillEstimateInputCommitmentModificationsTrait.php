@@ -8,9 +8,8 @@ trait ListBillEstimateInputCommitmentModificationsTrait
      * @param ListBillEstimateInputCommitmentModificationsRequest $args
      * @return ListBillEstimateInputCommitmentModificationsResponse
      */
-    public function listBillEstimateInputCommitmentModifications(
-        ListBillEstimateInputCommitmentModificationsRequest $args,
-    ) {
+    public function listBillEstimateInputCommitmentModifications(ListBillEstimateInputCommitmentModificationsRequest $args)
+    {
         $result = parent::listBillEstimateInputCommitmentModifications($args->toArray());
         return new ListBillEstimateInputCommitmentModificationsResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait ListCodeSecurityScanConfigurationAssociationsTrait
      * @param ListCodeSecurityScanConfigurationAssociationsRequest $args
      * @return ListCodeSecurityScanConfigurationAssociationsResponse
      */
-    public function listCodeSecurityScanConfigurationAssociations(
-        ListCodeSecurityScanConfigurationAssociationsRequest $args,
-    ) {
+    public function listCodeSecurityScanConfigurationAssociations(ListCodeSecurityScanConfigurationAssociationsRequest $args)
+    {
         $result = parent::listCodeSecurityScanConfigurationAssociations($args->toArray());
         return new ListCodeSecurityScanConfigurationAssociationsResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait PutProtectConfigurationRuleSetNumberOverrideTrait
      * @param PutProtectConfigurationRuleSetNumberOverrideRequest $args
      * @return PutProtectConfigurationRuleSetNumberOverrideResponse
      */
-    public function putProtectConfigurationRuleSetNumberOverride(
-        PutProtectConfigurationRuleSetNumberOverrideRequest $args,
-    ) {
+    public function putProtectConfigurationRuleSetNumberOverride(PutProtectConfigurationRuleSetNumberOverrideRequest $args)
+    {
         $result = parent::putProtectConfigurationRuleSetNumberOverride($args->toArray());
         return new PutProtectConfigurationRuleSetNumberOverrideResponse($result->toArray());
     }

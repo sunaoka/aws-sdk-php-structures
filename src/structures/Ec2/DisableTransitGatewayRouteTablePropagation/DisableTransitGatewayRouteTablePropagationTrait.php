@@ -8,9 +8,8 @@ trait DisableTransitGatewayRouteTablePropagationTrait
      * @param DisableTransitGatewayRouteTablePropagationRequest $args
      * @return DisableTransitGatewayRouteTablePropagationResponse
      */
-    public function disableTransitGatewayRouteTablePropagation(
-        DisableTransitGatewayRouteTablePropagationRequest $args,
-    ) {
+    public function disableTransitGatewayRouteTablePropagation(DisableTransitGatewayRouteTablePropagationRequest $args)
+    {
         $result = parent::disableTransitGatewayRouteTablePropagation($args->toArray());
         return new DisableTransitGatewayRouteTablePropagationResponse($result->toArray());
     }

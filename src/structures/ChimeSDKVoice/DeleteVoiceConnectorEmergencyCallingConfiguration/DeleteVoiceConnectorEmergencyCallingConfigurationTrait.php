@@ -8,9 +8,8 @@ trait DeleteVoiceConnectorEmergencyCallingConfigurationTrait
      * @param DeleteVoiceConnectorEmergencyCallingConfigurationRequest $args
      * @return void
      */
-    public function deleteVoiceConnectorEmergencyCallingConfiguration(
-        DeleteVoiceConnectorEmergencyCallingConfigurationRequest $args,
-    ) {
+    public function deleteVoiceConnectorEmergencyCallingConfiguration(DeleteVoiceConnectorEmergencyCallingConfigurationRequest $args)
+    {
         parent::deleteVoiceConnectorEmergencyCallingConfiguration($args->toArray());
     }
 }

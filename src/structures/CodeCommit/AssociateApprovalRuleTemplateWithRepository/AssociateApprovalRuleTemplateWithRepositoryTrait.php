@@ -8,9 +8,8 @@ trait AssociateApprovalRuleTemplateWithRepositoryTrait
      * @param AssociateApprovalRuleTemplateWithRepositoryRequest $args
      * @return void
      */
-    public function associateApprovalRuleTemplateWithRepository(
-        AssociateApprovalRuleTemplateWithRepositoryRequest $args,
-    ) {
+    public function associateApprovalRuleTemplateWithRepository(AssociateApprovalRuleTemplateWithRepositoryRequest $args)
+    {
         parent::associateApprovalRuleTemplateWithRepository($args->toArray());
     }
 }

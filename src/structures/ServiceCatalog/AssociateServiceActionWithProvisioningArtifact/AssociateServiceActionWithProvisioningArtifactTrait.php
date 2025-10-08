@@ -8,9 +8,8 @@ trait AssociateServiceActionWithProvisioningArtifactTrait
      * @param AssociateServiceActionWithProvisioningArtifactRequest $args
      * @return AssociateServiceActionWithProvisioningArtifactResponse
      */
-    public function associateServiceActionWithProvisioningArtifact(
-        AssociateServiceActionWithProvisioningArtifactRequest $args,
-    ) {
+    public function associateServiceActionWithProvisioningArtifact(AssociateServiceActionWithProvisioningArtifactRequest $args)
+    {
         $result = parent::associateServiceActionWithProvisioningArtifact($args->toArray());
         return new AssociateServiceActionWithProvisioningArtifactResponse($result->toArray());
     }

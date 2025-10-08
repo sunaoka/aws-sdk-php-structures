@@ -8,9 +8,8 @@ trait DescribeIpamExternalResourceVerificationTokensTrait
      * @param DescribeIpamExternalResourceVerificationTokensRequest $args
      * @return DescribeIpamExternalResourceVerificationTokensResponse
      */
-    public function describeIpamExternalResourceVerificationTokens(
-        DescribeIpamExternalResourceVerificationTokensRequest $args,
-    ) {
+    public function describeIpamExternalResourceVerificationTokens(DescribeIpamExternalResourceVerificationTokensRequest $args)
+    {
         $result = parent::describeIpamExternalResourceVerificationTokens($args->toArray());
         return new DescribeIpamExternalResourceVerificationTokensResponse($result->toArray());
     }

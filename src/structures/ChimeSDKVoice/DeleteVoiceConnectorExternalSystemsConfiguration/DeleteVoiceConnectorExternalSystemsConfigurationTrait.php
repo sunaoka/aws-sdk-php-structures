@@ -8,9 +8,8 @@ trait DeleteVoiceConnectorExternalSystemsConfigurationTrait
      * @param DeleteVoiceConnectorExternalSystemsConfigurationRequest $args
      * @return void
      */
-    public function deleteVoiceConnectorExternalSystemsConfiguration(
-        DeleteVoiceConnectorExternalSystemsConfigurationRequest $args,
-    ) {
+    public function deleteVoiceConnectorExternalSystemsConfiguration(DeleteVoiceConnectorExternalSystemsConfigurationRequest $args)
+    {
         parent::deleteVoiceConnectorExternalSystemsConfiguration($args->toArray());
     }
 }

@@ -8,9 +8,8 @@ trait PutVoiceConnectorExternalSystemsConfigurationTrait
      * @param PutVoiceConnectorExternalSystemsConfigurationRequest $args
      * @return PutVoiceConnectorExternalSystemsConfigurationResponse
      */
-    public function putVoiceConnectorExternalSystemsConfiguration(
-        PutVoiceConnectorExternalSystemsConfigurationRequest $args,
-    ) {
+    public function putVoiceConnectorExternalSystemsConfiguration(PutVoiceConnectorExternalSystemsConfigurationRequest $args)
+    {
         $result = parent::putVoiceConnectorExternalSystemsConfiguration($args->toArray());
         return new PutVoiceConnectorExternalSystemsConfigurationResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait ListProtectConfigurationRuleSetNumberOverridesTrait
      * @param ListProtectConfigurationRuleSetNumberOverridesRequest $args
      * @return ListProtectConfigurationRuleSetNumberOverridesResponse
      */
-    public function listProtectConfigurationRuleSetNumberOverrides(
-        ListProtectConfigurationRuleSetNumberOverridesRequest $args,
-    ) {
+    public function listProtectConfigurationRuleSetNumberOverrides(ListProtectConfigurationRuleSetNumberOverridesRequest $args)
+    {
         $result = parent::listProtectConfigurationRuleSetNumberOverrides($args->toArray());
         return new ListProtectConfigurationRuleSetNumberOverridesResponse($result->toArray());
     }

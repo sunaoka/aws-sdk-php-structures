@@ -8,9 +8,8 @@ trait DisassociatePhoneNumbersFromVoiceConnectorTrait
      * @param DisassociatePhoneNumbersFromVoiceConnectorRequest $args
      * @return DisassociatePhoneNumbersFromVoiceConnectorResponse
      */
-    public function disassociatePhoneNumbersFromVoiceConnector(
-        DisassociatePhoneNumbersFromVoiceConnectorRequest $args,
-    ) {
+    public function disassociatePhoneNumbersFromVoiceConnector(DisassociatePhoneNumbersFromVoiceConnectorRequest $args)
+    {
         $result = parent::disassociatePhoneNumbersFromVoiceConnector($args->toArray());
         return new DisassociatePhoneNumbersFromVoiceConnectorResponse($result->toArray());
     }

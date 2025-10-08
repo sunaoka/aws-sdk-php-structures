@@ -8,9 +8,8 @@ trait ListBucketIntelligentTieringConfigurationsTrait
      * @param ListBucketIntelligentTieringConfigurationsRequest $args
      * @return ListBucketIntelligentTieringConfigurationsResponse
      */
-    public function listBucketIntelligentTieringConfigurations(
-        ListBucketIntelligentTieringConfigurationsRequest $args,
-    ) {
+    public function listBucketIntelligentTieringConfigurations(ListBucketIntelligentTieringConfigurationsRequest $args)
+    {
         $result = parent::listBucketIntelligentTieringConfigurations($args->toArray());
         return new ListBucketIntelligentTieringConfigurationsResponse($result->toArray());
     }

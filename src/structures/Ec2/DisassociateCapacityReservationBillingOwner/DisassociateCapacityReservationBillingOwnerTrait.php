@@ -8,9 +8,8 @@ trait DisassociateCapacityReservationBillingOwnerTrait
      * @param DisassociateCapacityReservationBillingOwnerRequest $args
      * @return DisassociateCapacityReservationBillingOwnerResponse
      */
-    public function disassociateCapacityReservationBillingOwner(
-        DisassociateCapacityReservationBillingOwnerRequest $args,
-    ) {
+    public function disassociateCapacityReservationBillingOwner(DisassociateCapacityReservationBillingOwnerRequest $args)
+    {
         $result = parent::disassociateCapacityReservationBillingOwner($args->toArray());
         return new DisassociateCapacityReservationBillingOwnerResponse($result->toArray());
     }

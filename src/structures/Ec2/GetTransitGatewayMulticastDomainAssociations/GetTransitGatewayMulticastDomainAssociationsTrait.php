@@ -8,9 +8,8 @@ trait GetTransitGatewayMulticastDomainAssociationsTrait
      * @param GetTransitGatewayMulticastDomainAssociationsRequest $args
      * @return GetTransitGatewayMulticastDomainAssociationsResponse
      */
-    public function getTransitGatewayMulticastDomainAssociations(
-        GetTransitGatewayMulticastDomainAssociationsRequest $args,
-    ) {
+    public function getTransitGatewayMulticastDomainAssociations(GetTransitGatewayMulticastDomainAssociationsRequest $args)
+    {
         $result = parent::getTransitGatewayMulticastDomainAssociations($args->toArray());
         return new GetTransitGatewayMulticastDomainAssociationsResponse($result->toArray());
     }

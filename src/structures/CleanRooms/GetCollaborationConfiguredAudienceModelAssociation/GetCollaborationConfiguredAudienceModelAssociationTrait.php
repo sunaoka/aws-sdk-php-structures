@@ -8,9 +8,8 @@ trait GetCollaborationConfiguredAudienceModelAssociationTrait
      * @param GetCollaborationConfiguredAudienceModelAssociationRequest $args
      * @return GetCollaborationConfiguredAudienceModelAssociationResponse
      */
-    public function getCollaborationConfiguredAudienceModelAssociation(
-        GetCollaborationConfiguredAudienceModelAssociationRequest $args,
-    ) {
+    public function getCollaborationConfiguredAudienceModelAssociation(GetCollaborationConfiguredAudienceModelAssociationRequest $args)
+    {
         $result = parent::getCollaborationConfiguredAudienceModelAssociation($args->toArray());
         return new GetCollaborationConfiguredAudienceModelAssociationResponse($result->toArray());
     }

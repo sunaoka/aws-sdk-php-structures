@@ -8,9 +8,8 @@ trait DeregisterInstanceEventNotificationAttributesTrait
      * @param DeregisterInstanceEventNotificationAttributesRequest $args
      * @return DeregisterInstanceEventNotificationAttributesResponse
      */
-    public function deregisterInstanceEventNotificationAttributes(
-        DeregisterInstanceEventNotificationAttributesRequest $args,
-    ) {
+    public function deregisterInstanceEventNotificationAttributes(DeregisterInstanceEventNotificationAttributesRequest $args)
+    {
         $result = parent::deregisterInstanceEventNotificationAttributes($args->toArray());
         return new DeregisterInstanceEventNotificationAttributesResponse($result->toArray());
     }

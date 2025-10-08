@@ -8,9 +8,8 @@ trait DisassociateAssessmentReportEvidenceFolderTrait
      * @param DisassociateAssessmentReportEvidenceFolderRequest $args
      * @return DisassociateAssessmentReportEvidenceFolderResponse
      */
-    public function disassociateAssessmentReportEvidenceFolder(
-        DisassociateAssessmentReportEvidenceFolderRequest $args,
-    ) {
+    public function disassociateAssessmentReportEvidenceFolder(DisassociateAssessmentReportEvidenceFolderRequest $args)
+    {
         $result = parent::disassociateAssessmentReportEvidenceFolder($args->toArray());
         return new DisassociateAssessmentReportEvidenceFolderResponse($result->toArray());
     }

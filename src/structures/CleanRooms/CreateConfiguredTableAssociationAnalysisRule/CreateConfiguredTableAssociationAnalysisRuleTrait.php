@@ -8,9 +8,8 @@ trait CreateConfiguredTableAssociationAnalysisRuleTrait
      * @param CreateConfiguredTableAssociationAnalysisRuleRequest $args
      * @return CreateConfiguredTableAssociationAnalysisRuleResponse
      */
-    public function createConfiguredTableAssociationAnalysisRule(
-        CreateConfiguredTableAssociationAnalysisRuleRequest $args,
-    ) {
+    public function createConfiguredTableAssociationAnalysisRule(CreateConfiguredTableAssociationAnalysisRuleRequest $args)
+    {
         $result = parent::createConfiguredTableAssociationAnalysisRule($args->toArray());
         return new CreateConfiguredTableAssociationAnalysisRuleResponse($result->toArray());
     }

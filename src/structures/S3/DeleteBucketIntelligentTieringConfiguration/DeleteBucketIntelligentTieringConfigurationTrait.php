@@ -8,9 +8,8 @@ trait DeleteBucketIntelligentTieringConfigurationTrait
      * @param DeleteBucketIntelligentTieringConfigurationRequest $args
      * @return void
      */
-    public function deleteBucketIntelligentTieringConfiguration(
-        DeleteBucketIntelligentTieringConfigurationRequest $args,
-    ) {
+    public function deleteBucketIntelligentTieringConfiguration(DeleteBucketIntelligentTieringConfigurationRequest $args)
+    {
         parent::deleteBucketIntelligentTieringConfiguration($args->toArray());
     }
 }

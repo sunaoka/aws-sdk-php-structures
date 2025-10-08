@@ -8,9 +8,8 @@ trait GetQueryStatusWorkloadInsightsTopContributorsDataTrait
      * @param GetQueryStatusWorkloadInsightsTopContributorsDataRequest $args
      * @return GetQueryStatusWorkloadInsightsTopContributorsDataResponse
      */
-    public function getQueryStatusWorkloadInsightsTopContributorsData(
-        GetQueryStatusWorkloadInsightsTopContributorsDataRequest $args,
-    ) {
+    public function getQueryStatusWorkloadInsightsTopContributorsData(GetQueryStatusWorkloadInsightsTopContributorsDataRequest $args)
+    {
         $result = parent::getQueryStatusWorkloadInsightsTopContributorsData($args->toArray());
         return new GetQueryStatusWorkloadInsightsTopContributorsDataResponse($result->toArray());
     }

@@ -8,9 +8,8 @@ trait DisassociateApprovalRuleTemplateFromRepositoryTrait
      * @param DisassociateApprovalRuleTemplateFromRepositoryRequest $args
      * @return void
      */
-    public function disassociateApprovalRuleTemplateFromRepository(
-        DisassociateApprovalRuleTemplateFromRepositoryRequest $args,
-    ) {
+    public function disassociateApprovalRuleTemplateFromRepository(DisassociateApprovalRuleTemplateFromRepositoryRequest $args)
+    {
         parent::disassociateApprovalRuleTemplateFromRepository($args->toArray());
     }
 }

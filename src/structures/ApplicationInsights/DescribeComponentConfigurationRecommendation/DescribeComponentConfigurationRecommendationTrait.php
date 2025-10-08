@@ -8,9 +8,8 @@ trait DescribeComponentConfigurationRecommendationTrait
      * @param DescribeComponentConfigurationRecommendationRequest $args
      * @return DescribeComponentConfigurationRecommendationResponse
      */
-    public function describeComponentConfigurationRecommendation(
-        DescribeComponentConfigurationRecommendationRequest $args,
-    ) {
+    public function describeComponentConfigurationRecommendation(DescribeComponentConfigurationRecommendationRequest $args)
+    {
         $result = parent::describeComponentConfigurationRecommendation($args->toArray());
         return new DescribeComponentConfigurationRecommendationResponse($result->toArray());
     }

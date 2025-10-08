@@ -8,9 +8,8 @@ trait DescribeInstanceEventNotificationAttributesTrait
      * @param DescribeInstanceEventNotificationAttributesRequest $args
      * @return DescribeInstanceEventNotificationAttributesResponse
      */
-    public function describeInstanceEventNotificationAttributes(
-        DescribeInstanceEventNotificationAttributesRequest $args,
-    ) {
+    public function describeInstanceEventNotificationAttributes(DescribeInstanceEventNotificationAttributesRequest $args)
+    {
         $result = parent::describeInstanceEventNotificationAttributes($args->toArray());
         return new DescribeInstanceEventNotificationAttributesResponse($result->toArray());
     }

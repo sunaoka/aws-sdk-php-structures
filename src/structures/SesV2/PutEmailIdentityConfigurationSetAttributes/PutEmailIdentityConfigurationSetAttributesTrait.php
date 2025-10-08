@@ -8,9 +8,8 @@ trait PutEmailIdentityConfigurationSetAttributesTrait
      * @param PutEmailIdentityConfigurationSetAttributesRequest $args
      * @return PutEmailIdentityConfigurationSetAttributesResponse
      */
-    public function putEmailIdentityConfigurationSetAttributes(
-        PutEmailIdentityConfigurationSetAttributesRequest $args,
-    ) {
+    public function putEmailIdentityConfigurationSetAttributes(PutEmailIdentityConfigurationSetAttributesRequest $args)
+    {
         $result = parent::putEmailIdentityConfigurationSetAttributes($args->toArray());
         return new PutEmailIdentityConfigurationSetAttributesResponse($result->toArray());
     }

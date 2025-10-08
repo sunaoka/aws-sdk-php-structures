@@ -8,9 +8,8 @@ trait PutAccessPointConfigurationForObjectLambdaTrait
      * @param PutAccessPointConfigurationForObjectLambdaRequest $args
      * @return void
      */
-    public function putAccessPointConfigurationForObjectLambda(
-        PutAccessPointConfigurationForObjectLambdaRequest $args,
-    ) {
+    public function putAccessPointConfigurationForObjectLambda(PutAccessPointConfigurationForObjectLambdaRequest $args)
+    {
         parent::putAccessPointConfigurationForObjectLambda($args->toArray());
     }
 }
