@@ -16,7 +16,8 @@ class TestCase extends \PHPUnit\Framework\TestCase
     /**
      * @template T of AwsClient
      *
-     * @param class-string<T> $client
+     * @param class-string<T>      $client
+     * @param array<string, mixed> $data
      *
      * @return T
      */
@@ -31,6 +32,8 @@ class TestCase extends \PHPUnit\Framework\TestCase
     }
 
     /**
+     * @param array<string, mixed> $data
+     *
      * @return MockHandler
      */
     protected function getMockHandler(array $data = [])

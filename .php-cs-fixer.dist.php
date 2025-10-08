@@ -13,7 +13,7 @@ $dirs = [
 
 $rules = [
     '@PhpCsFixer'            => true,
-    '@PER-CS2.0'             => true,
+    '@PER-CS2x0'             => true,
     'binary_operator_spaces' => [
         'default'   => 'single_space',
         'operators' => [

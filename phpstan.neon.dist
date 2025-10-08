@@ -8,9 +8,3 @@ parameters:
     paths:
         - task
         - tests
-
-    ignoreErrors:
-        - identifier: missingType.iterableValue
-
-        - identifier: function.alreadyNarrowedType
-          path: tests/Assert.php
