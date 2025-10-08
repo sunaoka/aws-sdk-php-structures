@@ -1,0 +1,69 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\AuditManager;
+
+class AuditManagerClient extends \Aws\AuditManager\AuditManagerClient
+{
+    use AssociateAssessmentReportEvidenceFolder\AssociateAssessmentReportEvidenceFolderTrait;
+    use BatchAssociateAssessmentReportEvidence\BatchAssociateAssessmentReportEvidenceTrait;
+    use BatchCreateDelegationByAssessment\BatchCreateDelegationByAssessmentTrait;
+    use BatchDeleteDelegationByAssessment\BatchDeleteDelegationByAssessmentTrait;
+    use BatchDisassociateAssessmentReportEvidence\BatchDisassociateAssessmentReportEvidenceTrait;
+    use BatchImportEvidenceToAssessmentControl\BatchImportEvidenceToAssessmentControlTrait;
+    use CreateAssessment\CreateAssessmentTrait;
+    use CreateAssessmentFramework\CreateAssessmentFrameworkTrait;
+    use CreateAssessmentReport\CreateAssessmentReportTrait;
+    use CreateControl\CreateControlTrait;
+    use DeleteAssessment\DeleteAssessmentTrait;
+    use DeleteAssessmentFramework\DeleteAssessmentFrameworkTrait;
+    use DeleteAssessmentFrameworkShare\DeleteAssessmentFrameworkShareTrait;
+    use DeleteAssessmentReport\DeleteAssessmentReportTrait;
+    use DeleteControl\DeleteControlTrait;
+    use DeregisterAccount\DeregisterAccountTrait;
+    use DeregisterOrganizationAdminAccount\DeregisterOrganizationAdminAccountTrait;
+    use DisassociateAssessmentReportEvidenceFolder\DisassociateAssessmentReportEvidenceFolderTrait;
+    use GetAccountStatus\GetAccountStatusTrait;
+    use GetAssessment\GetAssessmentTrait;
+    use GetAssessmentFramework\GetAssessmentFrameworkTrait;
+    use GetAssessmentReportUrl\GetAssessmentReportUrlTrait;
+    use GetChangeLogs\GetChangeLogsTrait;
+    use GetControl\GetControlTrait;
+    use GetDelegations\GetDelegationsTrait;
+    use GetEvidence\GetEvidenceTrait;
+    use GetEvidenceByEvidenceFolder\GetEvidenceByEvidenceFolderTrait;
+    use GetEvidenceFileUploadUrl\GetEvidenceFileUploadUrlTrait;
+    use GetEvidenceFolder\GetEvidenceFolderTrait;
+    use GetEvidenceFoldersByAssessment\GetEvidenceFoldersByAssessmentTrait;
+    use GetEvidenceFoldersByAssessmentControl\GetEvidenceFoldersByAssessmentControlTrait;
+    use GetInsights\GetInsightsTrait;
+    use GetInsightsByAssessment\GetInsightsByAssessmentTrait;
+    use GetOrganizationAdminAccount\GetOrganizationAdminAccountTrait;
+    use GetServicesInScope\GetServicesInScopeTrait;
+    use GetSettings\GetSettingsTrait;
+    use ListAssessmentControlInsightsByControlDomain\ListAssessmentControlInsightsByControlDomainTrait;
+    use ListAssessmentFrameworkShareRequests\ListAssessmentFrameworkShareRequestsTrait;
+    use ListAssessmentFrameworks\ListAssessmentFrameworksTrait;
+    use ListAssessmentReports\ListAssessmentReportsTrait;
+    use ListAssessments\ListAssessmentsTrait;
+    use ListControlDomainInsights\ListControlDomainInsightsTrait;
+    use ListControlDomainInsightsByAssessment\ListControlDomainInsightsByAssessmentTrait;
+    use ListControlInsightsByControlDomain\ListControlInsightsByControlDomainTrait;
+    use ListControls\ListControlsTrait;
+    use ListKeywordsForDataSource\ListKeywordsForDataSourceTrait;
+    use ListNotifications\ListNotificationsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use RegisterAccount\RegisterAccountTrait;
+    use RegisterOrganizationAdminAccount\RegisterOrganizationAdminAccountTrait;
+    use StartAssessmentFrameworkShare\StartAssessmentFrameworkShareTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateAssessment\UpdateAssessmentTrait;
+    use UpdateAssessmentControl\UpdateAssessmentControlTrait;
+    use UpdateAssessmentControlSetStatus\UpdateAssessmentControlSetStatusTrait;
+    use UpdateAssessmentFramework\UpdateAssessmentFrameworkTrait;
+    use UpdateAssessmentFrameworkShare\UpdateAssessmentFrameworkShareTrait;
+    use UpdateAssessmentStatus\UpdateAssessmentStatusTrait;
+    use UpdateControl\UpdateControlTrait;
+    use UpdateSettings\UpdateSettingsTrait;
+    use ValidateAssessmentReportIntegrity\ValidateAssessmentReportIntegrityTrait;
+}

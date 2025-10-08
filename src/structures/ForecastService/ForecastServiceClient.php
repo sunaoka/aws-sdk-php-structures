@@ -1,0 +1,70 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ForecastService;
+
+class ForecastServiceClient extends \Aws\ForecastService\ForecastServiceClient
+{
+    use CreateAutoPredictor\CreateAutoPredictorTrait;
+    use CreateDataset\CreateDatasetTrait;
+    use CreateDatasetGroup\CreateDatasetGroupTrait;
+    use CreateDatasetImportJob\CreateDatasetImportJobTrait;
+    use CreateExplainability\CreateExplainabilityTrait;
+    use CreateExplainabilityExport\CreateExplainabilityExportTrait;
+    use CreateForecast\CreateForecastTrait;
+    use CreateForecastExportJob\CreateForecastExportJobTrait;
+    use CreateMonitor\CreateMonitorTrait;
+    use CreatePredictor\CreatePredictorTrait;
+    use CreatePredictorBacktestExportJob\CreatePredictorBacktestExportJobTrait;
+    use CreateWhatIfAnalysis\CreateWhatIfAnalysisTrait;
+    use CreateWhatIfForecast\CreateWhatIfForecastTrait;
+    use CreateWhatIfForecastExport\CreateWhatIfForecastExportTrait;
+    use DeleteDataset\DeleteDatasetTrait;
+    use DeleteDatasetGroup\DeleteDatasetGroupTrait;
+    use DeleteDatasetImportJob\DeleteDatasetImportJobTrait;
+    use DeleteExplainability\DeleteExplainabilityTrait;
+    use DeleteExplainabilityExport\DeleteExplainabilityExportTrait;
+    use DeleteForecast\DeleteForecastTrait;
+    use DeleteForecastExportJob\DeleteForecastExportJobTrait;
+    use DeleteMonitor\DeleteMonitorTrait;
+    use DeletePredictor\DeletePredictorTrait;
+    use DeletePredictorBacktestExportJob\DeletePredictorBacktestExportJobTrait;
+    use DeleteResourceTree\DeleteResourceTreeTrait;
+    use DeleteWhatIfAnalysis\DeleteWhatIfAnalysisTrait;
+    use DeleteWhatIfForecast\DeleteWhatIfForecastTrait;
+    use DeleteWhatIfForecastExport\DeleteWhatIfForecastExportTrait;
+    use DescribeAutoPredictor\DescribeAutoPredictorTrait;
+    use DescribeDataset\DescribeDatasetTrait;
+    use DescribeDatasetGroup\DescribeDatasetGroupTrait;
+    use DescribeDatasetImportJob\DescribeDatasetImportJobTrait;
+    use DescribeExplainability\DescribeExplainabilityTrait;
+    use DescribeExplainabilityExport\DescribeExplainabilityExportTrait;
+    use DescribeForecast\DescribeForecastTrait;
+    use DescribeForecastExportJob\DescribeForecastExportJobTrait;
+    use DescribeMonitor\DescribeMonitorTrait;
+    use DescribePredictor\DescribePredictorTrait;
+    use DescribePredictorBacktestExportJob\DescribePredictorBacktestExportJobTrait;
+    use DescribeWhatIfAnalysis\DescribeWhatIfAnalysisTrait;
+    use DescribeWhatIfForecast\DescribeWhatIfForecastTrait;
+    use DescribeWhatIfForecastExport\DescribeWhatIfForecastExportTrait;
+    use GetAccuracyMetrics\GetAccuracyMetricsTrait;
+    use ListDatasetGroups\ListDatasetGroupsTrait;
+    use ListDatasetImportJobs\ListDatasetImportJobsTrait;
+    use ListDatasets\ListDatasetsTrait;
+    use ListExplainabilities\ListExplainabilitiesTrait;
+    use ListExplainabilityExports\ListExplainabilityExportsTrait;
+    use ListForecastExportJobs\ListForecastExportJobsTrait;
+    use ListForecasts\ListForecastsTrait;
+    use ListMonitorEvaluations\ListMonitorEvaluationsTrait;
+    use ListMonitors\ListMonitorsTrait;
+    use ListPredictorBacktestExportJobs\ListPredictorBacktestExportJobsTrait;
+    use ListPredictors\ListPredictorsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListWhatIfAnalyses\ListWhatIfAnalysesTrait;
+    use ListWhatIfForecastExports\ListWhatIfForecastExportsTrait;
+    use ListWhatIfForecasts\ListWhatIfForecastsTrait;
+    use ResumeResource\ResumeResourceTrait;
+    use StopResource\StopResourceTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateDatasetGroup\UpdateDatasetGroupTrait;
+}

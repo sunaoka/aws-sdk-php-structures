@@ -1,0 +1,16 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Glue\UpdateSchema;
+
+trait UpdateSchemaTrait
+{
+    /**
+     * @param UpdateSchemaRequest $args
+     * @return UpdateSchemaResponse
+     */
+    public function updateSchema(UpdateSchemaRequest $args)
+    {
+        $result = parent::updateSchema($args->toArray());
+        return new UpdateSchemaResponse($result->toArray());
+    }
+}

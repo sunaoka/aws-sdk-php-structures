@@ -1,0 +1,73 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\kendra;
+
+class kendraClient extends \Aws\kendra\kendraClient
+{
+    use AssociateEntitiesToExperience\AssociateEntitiesToExperienceTrait;
+    use AssociatePersonasToEntities\AssociatePersonasToEntitiesTrait;
+    use BatchDeleteDocument\BatchDeleteDocumentTrait;
+    use BatchDeleteFeaturedResultsSet\BatchDeleteFeaturedResultsSetTrait;
+    use BatchGetDocumentStatus\BatchGetDocumentStatusTrait;
+    use BatchPutDocument\BatchPutDocumentTrait;
+    use ClearQuerySuggestions\ClearQuerySuggestionsTrait;
+    use CreateAccessControlConfiguration\CreateAccessControlConfigurationTrait;
+    use CreateDataSource\CreateDataSourceTrait;
+    use CreateExperience\CreateExperienceTrait;
+    use CreateFaq\CreateFaqTrait;
+    use CreateFeaturedResultsSet\CreateFeaturedResultsSetTrait;
+    use CreateIndex\CreateIndexTrait;
+    use CreateQuerySuggestionsBlockList\CreateQuerySuggestionsBlockListTrait;
+    use CreateThesaurus\CreateThesaurusTrait;
+    use DeleteAccessControlConfiguration\DeleteAccessControlConfigurationTrait;
+    use DeleteDataSource\DeleteDataSourceTrait;
+    use DeleteExperience\DeleteExperienceTrait;
+    use DeleteFaq\DeleteFaqTrait;
+    use DeleteIndex\DeleteIndexTrait;
+    use DeletePrincipalMapping\DeletePrincipalMappingTrait;
+    use DeleteQuerySuggestionsBlockList\DeleteQuerySuggestionsBlockListTrait;
+    use DeleteThesaurus\DeleteThesaurusTrait;
+    use DescribeAccessControlConfiguration\DescribeAccessControlConfigurationTrait;
+    use DescribeDataSource\DescribeDataSourceTrait;
+    use DescribeExperience\DescribeExperienceTrait;
+    use DescribeFaq\DescribeFaqTrait;
+    use DescribeFeaturedResultsSet\DescribeFeaturedResultsSetTrait;
+    use DescribeIndex\DescribeIndexTrait;
+    use DescribePrincipalMapping\DescribePrincipalMappingTrait;
+    use DescribeQuerySuggestionsBlockList\DescribeQuerySuggestionsBlockListTrait;
+    use DescribeQuerySuggestionsConfig\DescribeQuerySuggestionsConfigTrait;
+    use DescribeThesaurus\DescribeThesaurusTrait;
+    use DisassociateEntitiesFromExperience\DisassociateEntitiesFromExperienceTrait;
+    use DisassociatePersonasFromEntities\DisassociatePersonasFromEntitiesTrait;
+    use GetQuerySuggestions\GetQuerySuggestionsTrait;
+    use GetSnapshots\GetSnapshotsTrait;
+    use ListAccessControlConfigurations\ListAccessControlConfigurationsTrait;
+    use ListDataSourceSyncJobs\ListDataSourceSyncJobsTrait;
+    use ListDataSources\ListDataSourcesTrait;
+    use ListEntityPersonas\ListEntityPersonasTrait;
+    use ListExperienceEntities\ListExperienceEntitiesTrait;
+    use ListExperiences\ListExperiencesTrait;
+    use ListFaqs\ListFaqsTrait;
+    use ListFeaturedResultsSets\ListFeaturedResultsSetsTrait;
+    use ListGroupsOlderThanOrderingId\ListGroupsOlderThanOrderingIdTrait;
+    use ListIndices\ListIndicesTrait;
+    use ListQuerySuggestionsBlockLists\ListQuerySuggestionsBlockListsTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
+    use ListThesauri\ListThesauriTrait;
+    use PutPrincipalMapping\PutPrincipalMappingTrait;
+    use Query\QueryTrait;
+    use Retrieve\RetrieveTrait;
+    use StartDataSourceSyncJob\StartDataSourceSyncJobTrait;
+    use StopDataSourceSyncJob\StopDataSourceSyncJobTrait;
+    use SubmitFeedback\SubmitFeedbackTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateAccessControlConfiguration\UpdateAccessControlConfigurationTrait;
+    use UpdateDataSource\UpdateDataSourceTrait;
+    use UpdateExperience\UpdateExperienceTrait;
+    use UpdateFeaturedResultsSet\UpdateFeaturedResultsSetTrait;
+    use UpdateIndex\UpdateIndexTrait;
+    use UpdateQuerySuggestionsBlockList\UpdateQuerySuggestionsBlockListTrait;
+    use UpdateQuerySuggestionsConfig\UpdateQuerySuggestionsConfigTrait;
+    use UpdateThesaurus\UpdateThesaurusTrait;
+}

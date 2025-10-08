@@ -1,0 +1,16 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ApiGatewayV2\CreateAuthorizer;
+
+trait CreateAuthorizerTrait
+{
+    /**
+     * @param CreateAuthorizerRequest $args
+     * @return CreateAuthorizerResponse
+     */
+    public function createAuthorizer(CreateAuthorizerRequest $args)
+    {
+        $result = parent::createAuthorizer($args->toArray());
+        return new CreateAuthorizerResponse($result->toArray());
+    }
+}

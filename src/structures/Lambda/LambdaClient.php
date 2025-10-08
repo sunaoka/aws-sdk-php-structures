@@ -1,0 +1,75 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Lambda;
+
+class LambdaClient extends \Aws\Lambda\LambdaClient
+{
+    use AddLayerVersionPermission\AddLayerVersionPermissionTrait;
+    use AddPermission\AddPermissionTrait;
+    use CreateAlias\CreateAliasTrait;
+    use CreateCodeSigningConfig\CreateCodeSigningConfigTrait;
+    use CreateEventSourceMapping\CreateEventSourceMappingTrait;
+    use CreateFunction\CreateFunctionTrait;
+    use CreateFunctionUrlConfig\CreateFunctionUrlConfigTrait;
+    use DeleteAlias\DeleteAliasTrait;
+    use DeleteCodeSigningConfig\DeleteCodeSigningConfigTrait;
+    use DeleteEventSourceMapping\DeleteEventSourceMappingTrait;
+    use DeleteFunction\DeleteFunctionTrait;
+    use DeleteFunctionCodeSigningConfig\DeleteFunctionCodeSigningConfigTrait;
+    use DeleteFunctionConcurrency\DeleteFunctionConcurrencyTrait;
+    use DeleteFunctionEventInvokeConfig\DeleteFunctionEventInvokeConfigTrait;
+    use DeleteFunctionUrlConfig\DeleteFunctionUrlConfigTrait;
+    use DeleteLayerVersion\DeleteLayerVersionTrait;
+    use DeleteProvisionedConcurrencyConfig\DeleteProvisionedConcurrencyConfigTrait;
+    use GetAccountSettings\GetAccountSettingsTrait;
+    use GetAlias\GetAliasTrait;
+    use GetCodeSigningConfig\GetCodeSigningConfigTrait;
+    use GetEventSourceMapping\GetEventSourceMappingTrait;
+    use GetFunction\GetFunctionTrait;
+    use GetFunctionCodeSigningConfig\GetFunctionCodeSigningConfigTrait;
+    use GetFunctionConcurrency\GetFunctionConcurrencyTrait;
+    use GetFunctionConfiguration\GetFunctionConfigurationTrait;
+    use GetFunctionEventInvokeConfig\GetFunctionEventInvokeConfigTrait;
+    use GetFunctionRecursionConfig\GetFunctionRecursionConfigTrait;
+    use GetFunctionUrlConfig\GetFunctionUrlConfigTrait;
+    use GetLayerVersion\GetLayerVersionTrait;
+    use GetLayerVersionByArn\GetLayerVersionByArnTrait;
+    use GetLayerVersionPolicy\GetLayerVersionPolicyTrait;
+    use GetPolicy\GetPolicyTrait;
+    use GetProvisionedConcurrencyConfig\GetProvisionedConcurrencyConfigTrait;
+    use GetRuntimeManagementConfig\GetRuntimeManagementConfigTrait;
+    use Invoke\InvokeTrait;
+    use InvokeAsync\InvokeAsyncTrait;
+    use InvokeWithResponseStream\InvokeWithResponseStreamTrait;
+    use ListAliases\ListAliasesTrait;
+    use ListCodeSigningConfigs\ListCodeSigningConfigsTrait;
+    use ListEventSourceMappings\ListEventSourceMappingsTrait;
+    use ListFunctionEventInvokeConfigs\ListFunctionEventInvokeConfigsTrait;
+    use ListFunctionUrlConfigs\ListFunctionUrlConfigsTrait;
+    use ListFunctions\ListFunctionsTrait;
+    use ListFunctionsByCodeSigningConfig\ListFunctionsByCodeSigningConfigTrait;
+    use ListLayerVersions\ListLayerVersionsTrait;
+    use ListLayers\ListLayersTrait;
+    use ListProvisionedConcurrencyConfigs\ListProvisionedConcurrencyConfigsTrait;
+    use ListTags\ListTagsTrait;
+    use ListVersionsByFunction\ListVersionsByFunctionTrait;
+    use PublishLayerVersion\PublishLayerVersionTrait;
+    use PublishVersion\PublishVersionTrait;
+    use PutFunctionCodeSigningConfig\PutFunctionCodeSigningConfigTrait;
+    use PutFunctionConcurrency\PutFunctionConcurrencyTrait;
+    use PutFunctionEventInvokeConfig\PutFunctionEventInvokeConfigTrait;
+    use PutFunctionRecursionConfig\PutFunctionRecursionConfigTrait;
+    use PutProvisionedConcurrencyConfig\PutProvisionedConcurrencyConfigTrait;
+    use PutRuntimeManagementConfig\PutRuntimeManagementConfigTrait;
+    use RemoveLayerVersionPermission\RemoveLayerVersionPermissionTrait;
+    use RemovePermission\RemovePermissionTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
+    use UpdateAlias\UpdateAliasTrait;
+    use UpdateCodeSigningConfig\UpdateCodeSigningConfigTrait;
+    use UpdateEventSourceMapping\UpdateEventSourceMappingTrait;
+    use UpdateFunctionCode\UpdateFunctionCodeTrait;
+    use UpdateFunctionConfiguration\UpdateFunctionConfigurationTrait;
+    use UpdateFunctionEventInvokeConfig\UpdateFunctionEventInvokeConfigTrait;
+    use UpdateFunctionUrlConfig\UpdateFunctionUrlConfigTrait;
+}

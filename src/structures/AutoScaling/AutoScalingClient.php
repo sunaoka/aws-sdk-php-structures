@@ -1,0 +1,72 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\AutoScaling;
+
+class AutoScalingClient extends \Aws\AutoScaling\AutoScalingClient
+{
+    use AttachInstances\AttachInstancesTrait;
+    use AttachLoadBalancerTargetGroups\AttachLoadBalancerTargetGroupsTrait;
+    use AttachLoadBalancers\AttachLoadBalancersTrait;
+    use AttachTrafficSources\AttachTrafficSourcesTrait;
+    use BatchDeleteScheduledAction\BatchDeleteScheduledActionTrait;
+    use BatchPutScheduledUpdateGroupAction\BatchPutScheduledUpdateGroupActionTrait;
+    use CancelInstanceRefresh\CancelInstanceRefreshTrait;
+    use CompleteLifecycleAction\CompleteLifecycleActionTrait;
+    use CreateAutoScalingGroup\CreateAutoScalingGroupTrait;
+    use CreateLaunchConfiguration\CreateLaunchConfigurationTrait;
+    use CreateOrUpdateTags\CreateOrUpdateTagsTrait;
+    use DeleteAutoScalingGroup\DeleteAutoScalingGroupTrait;
+    use DeleteLaunchConfiguration\DeleteLaunchConfigurationTrait;
+    use DeleteLifecycleHook\DeleteLifecycleHookTrait;
+    use DeleteNotificationConfiguration\DeleteNotificationConfigurationTrait;
+    use DeletePolicy\DeletePolicyTrait;
+    use DeleteScheduledAction\DeleteScheduledActionTrait;
+    use DeleteTags\DeleteTagsTrait;
+    use DeleteWarmPool\DeleteWarmPoolTrait;
+    use DescribeAccountLimits\DescribeAccountLimitsTrait;
+    use DescribeAdjustmentTypes\DescribeAdjustmentTypesTrait;
+    use DescribeAutoScalingGroups\DescribeAutoScalingGroupsTrait;
+    use DescribeAutoScalingInstances\DescribeAutoScalingInstancesTrait;
+    use DescribeAutoScalingNotificationTypes\DescribeAutoScalingNotificationTypesTrait;
+    use DescribeInstanceRefreshes\DescribeInstanceRefreshesTrait;
+    use DescribeLaunchConfigurations\DescribeLaunchConfigurationsTrait;
+    use DescribeLifecycleHookTypes\DescribeLifecycleHookTypesTrait;
+    use DescribeLifecycleHooks\DescribeLifecycleHooksTrait;
+    use DescribeLoadBalancerTargetGroups\DescribeLoadBalancerTargetGroupsTrait;
+    use DescribeLoadBalancers\DescribeLoadBalancersTrait;
+    use DescribeMetricCollectionTypes\DescribeMetricCollectionTypesTrait;
+    use DescribeNotificationConfigurations\DescribeNotificationConfigurationsTrait;
+    use DescribePolicies\DescribePoliciesTrait;
+    use DescribeScalingActivities\DescribeScalingActivitiesTrait;
+    use DescribeScalingProcessTypes\DescribeScalingProcessTypesTrait;
+    use DescribeScheduledActions\DescribeScheduledActionsTrait;
+    use DescribeTags\DescribeTagsTrait;
+    use DescribeTerminationPolicyTypes\DescribeTerminationPolicyTypesTrait;
+    use DescribeTrafficSources\DescribeTrafficSourcesTrait;
+    use DescribeWarmPool\DescribeWarmPoolTrait;
+    use DetachInstances\DetachInstancesTrait;
+    use DetachLoadBalancerTargetGroups\DetachLoadBalancerTargetGroupsTrait;
+    use DetachLoadBalancers\DetachLoadBalancersTrait;
+    use DetachTrafficSources\DetachTrafficSourcesTrait;
+    use DisableMetricsCollection\DisableMetricsCollectionTrait;
+    use EnableMetricsCollection\EnableMetricsCollectionTrait;
+    use EnterStandby\EnterStandbyTrait;
+    use ExecutePolicy\ExecutePolicyTrait;
+    use ExitStandby\ExitStandbyTrait;
+    use GetPredictiveScalingForecast\GetPredictiveScalingForecastTrait;
+    use PutLifecycleHook\PutLifecycleHookTrait;
+    use PutNotificationConfiguration\PutNotificationConfigurationTrait;
+    use PutScalingPolicy\PutScalingPolicyTrait;
+    use PutScheduledUpdateGroupAction\PutScheduledUpdateGroupActionTrait;
+    use PutWarmPool\PutWarmPoolTrait;
+    use RecordLifecycleActionHeartbeat\RecordLifecycleActionHeartbeatTrait;
+    use ResumeProcesses\ResumeProcessesTrait;
+    use RollbackInstanceRefresh\RollbackInstanceRefreshTrait;
+    use SetDesiredCapacity\SetDesiredCapacityTrait;
+    use SetInstanceHealth\SetInstanceHealthTrait;
+    use SetInstanceProtection\SetInstanceProtectionTrait;
+    use StartInstanceRefresh\StartInstanceRefreshTrait;
+    use SuspendProcesses\SuspendProcessesTrait;
+    use TerminateInstanceInAutoScalingGroup\TerminateInstanceInAutoScalingGroupTrait;
+    use UpdateAutoScalingGroup\UpdateAutoScalingGroupTrait;
+}
