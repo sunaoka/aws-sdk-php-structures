@@ -32,6 +32,7 @@ class OutpostsClient extends \Aws\Outposts\OutpostsClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartCapacityTask\StartCapacityTaskTrait;
     use StartConnection\StartConnectionTrait;
+    use StartOutpostDecommission\StartOutpostDecommissionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateOutpost\UpdateOutpostTrait;

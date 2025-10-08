@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property 'MCP' $protocolType
  * @property Shapes\GatewayProtocolConfiguration|null $protocolConfiguration
- * @property 'CUSTOM_JWT' $authorizerType
- * @property Shapes\AuthorizerConfiguration $authorizerConfiguration
+ * @property 'CUSTOM_JWT'|'AWS_IAM' $authorizerType
+ * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property string|null $kmsKeyArn
  * @property 'DEBUG'|null $exceptionLevel
  * @property array<string, string>|null $tags
@@ -27,8 +27,8 @@ class CreateGatewayRequest extends Request
      *     roleArn: string,
      *     protocolType: 'MCP',
      *     protocolConfiguration?: Shapes\GatewayProtocolConfiguration|null,
-     *     authorizerType: 'CUSTOM_JWT',
-     *     authorizerConfiguration: Shapes\AuthorizerConfiguration,
+     *     authorizerType: 'CUSTOM_JWT'|'AWS_IAM',
+     *     authorizerConfiguration?: Shapes\AuthorizerConfiguration|null,
      *     kmsKeyArn?: string|null,
      *     exceptionLevel?: 'DEBUG'|null,
      *     tags?: array<string, string>|null

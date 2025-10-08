@@ -10,6 +10,7 @@ class ServiceQuotasClient extends \Aws\ServiceQuotas\ServiceQuotasClient
     use DisassociateServiceQuotaTemplate\DisassociateServiceQuotaTemplateTrait;
     use GetAWSDefaultServiceQuota\GetAWSDefaultServiceQuotaTrait;
     use GetAssociationForServiceQuotaTemplate\GetAssociationForServiceQuotaTemplateTrait;
+    use GetAutoManagementConfiguration\GetAutoManagementConfigurationTrait;
     use GetRequestedServiceQuotaChange\GetRequestedServiceQuotaChangeTrait;
     use GetServiceQuota\GetServiceQuotaTrait;
     use GetServiceQuotaIncreaseRequestFromTemplate\GetServiceQuotaIncreaseRequestFromTemplateTrait;
@@ -22,6 +23,9 @@ class ServiceQuotasClient extends \Aws\ServiceQuotas\ServiceQuotasClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutServiceQuotaIncreaseRequestIntoTemplate\PutServiceQuotaIncreaseRequestIntoTemplateTrait;
     use RequestServiceQuotaIncrease\RequestServiceQuotaIncreaseTrait;
+    use StartAutoManagement\StartAutoManagementTrait;
+    use StopAutoManagement\StopAutoManagementTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAutoManagement\UpdateAutoManagementTrait;
 }
