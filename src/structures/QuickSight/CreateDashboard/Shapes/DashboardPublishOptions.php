@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DataPointMenuLabelOption|null $DataPointMenuLabelOption
  * @property DataPointTooltipOption|null $DataPointTooltipOption
  * @property DataQAEnabledOption|null $DataQAEnabledOption
+ * @property QuickSuiteActionsOption|null $QuickSuiteActionsOption
  * @property ExecutiveSummaryOption|null $ExecutiveSummaryOption
  * @property DataStoriesSharingOption|null $DataStoriesSharingOption
  */
@@ -36,6 +37,7 @@ class DashboardPublishOptions extends Shape
      *     DataPointMenuLabelOption?: DataPointMenuLabelOption|null,
      *     DataPointTooltipOption?: DataPointTooltipOption|null,
      *     DataQAEnabledOption?: DataQAEnabledOption|null,
+     *     QuickSuiteActionsOption?: QuickSuiteActionsOption|null,
      *     ExecutiveSummaryOption?: ExecutiveSummaryOption|null,
      *     DataStoriesSharingOption?: DataStoriesSharingOption|null
      * } $args

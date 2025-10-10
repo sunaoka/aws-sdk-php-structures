@@ -9,6 +9,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use CancelIngestion\CancelIngestionTrait;
     use CreateAccountCustomization\CreateAccountCustomizationTrait;
     use CreateAccountSubscription\CreateAccountSubscriptionTrait;
+    use CreateActionConnector\CreateActionConnectorTrait;
     use CreateAnalysis\CreateAnalysisTrait;
     use CreateBrand\CreateBrandTrait;
     use CreateCustomPermissions\CreateCustomPermissionsTrait;
@@ -34,6 +35,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DeleteAccountCustomPermission\DeleteAccountCustomPermissionTrait;
     use DeleteAccountCustomization\DeleteAccountCustomizationTrait;
     use DeleteAccountSubscription\DeleteAccountSubscriptionTrait;
+    use DeleteActionConnector\DeleteActionConnectorTrait;
     use DeleteAnalysis\DeleteAnalysisTrait;
     use DeleteBrand\DeleteBrandTrait;
     use DeleteBrandAssignment\DeleteBrandAssignmentTrait;
@@ -67,6 +69,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeAccountCustomization\DescribeAccountCustomizationTrait;
     use DescribeAccountSettings\DescribeAccountSettingsTrait;
     use DescribeAccountSubscription\DescribeAccountSubscriptionTrait;
+    use DescribeActionConnector\DescribeActionConnectorTrait;
+    use DescribeActionConnectorPermissions\DescribeActionConnectorPermissionsTrait;
     use DescribeAnalysis\DescribeAnalysisTrait;
     use DescribeAnalysisDefinition\DescribeAnalysisDefinitionTrait;
     use DescribeAnalysisPermissions\DescribeAnalysisPermissionsTrait;
@@ -119,7 +123,10 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use GenerateEmbedUrlForRegisteredUser\GenerateEmbedUrlForRegisteredUserTrait;
     use GenerateEmbedUrlForRegisteredUserWithIdentity\GenerateEmbedUrlForRegisteredUserWithIdentityTrait;
     use GetDashboardEmbedUrl\GetDashboardEmbedUrlTrait;
+    use GetFlowMetadata\GetFlowMetadataTrait;
+    use GetFlowPermissions\GetFlowPermissionsTrait;
     use GetSessionEmbedUrl\GetSessionEmbedUrlTrait;
+    use ListActionConnectors\ListActionConnectorsTrait;
     use ListAnalyses\ListAnalysesTrait;
     use ListAssetBundleExportJobs\ListAssetBundleExportJobsTrait;
     use ListAssetBundleImportJobs\ListAssetBundleImportJobsTrait;
@@ -129,6 +136,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListDashboards\ListDashboardsTrait;
     use ListDataSets\ListDataSetsTrait;
     use ListDataSources\ListDataSourcesTrait;
+    use ListFlows\ListFlowsTrait;
     use ListFolderMembers\ListFolderMembersTrait;
     use ListFolders\ListFoldersTrait;
     use ListFoldersForResource\ListFoldersForResourceTrait;
@@ -158,10 +166,12 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use PutDataSetRefreshProperties\PutDataSetRefreshPropertiesTrait;
     use RegisterUser\RegisterUserTrait;
     use RestoreAnalysis\RestoreAnalysisTrait;
+    use SearchActionConnectors\SearchActionConnectorsTrait;
     use SearchAnalyses\SearchAnalysesTrait;
     use SearchDashboards\SearchDashboardsTrait;
     use SearchDataSets\SearchDataSetsTrait;
     use SearchDataSources\SearchDataSourcesTrait;
+    use SearchFlows\SearchFlowsTrait;
     use SearchFolders\SearchFoldersTrait;
     use SearchGroups\SearchGroupsTrait;
     use SearchTopics\SearchTopicsTrait;
@@ -174,6 +184,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateAccountCustomPermission\UpdateAccountCustomPermissionTrait;
     use UpdateAccountCustomization\UpdateAccountCustomizationTrait;
     use UpdateAccountSettings\UpdateAccountSettingsTrait;
+    use UpdateActionConnector\UpdateActionConnectorTrait;
+    use UpdateActionConnectorPermissions\UpdateActionConnectorPermissionsTrait;
     use UpdateAnalysis\UpdateAnalysisTrait;
     use UpdateAnalysisPermissions\UpdateAnalysisPermissionsTrait;
     use UpdateApplicationWithTokenExchangeGrant\UpdateApplicationWithTokenExchangeGrantTrait;
@@ -191,6 +203,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDataSourcePermissions\UpdateDataSourcePermissionsTrait;
     use UpdateDefaultQBusinessApplication\UpdateDefaultQBusinessApplicationTrait;
+    use UpdateFlowPermissions\UpdateFlowPermissionsTrait;
     use UpdateFolder\UpdateFolderTrait;
     use UpdateFolderPermissions\UpdateFolderPermissionsTrait;
     use UpdateGroup\UpdateGroupTrait;

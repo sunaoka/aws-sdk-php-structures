@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property BrandColorPalette|null $BrandColorPalette
+ * @property ContextualAccentPalette|null $ContextualAccentPalette
  * @property BrandElementStyle|null $BrandElementStyle
  */
 class ApplicationTheme extends Shape
@@ -13,6 +14,7 @@ class ApplicationTheme extends Shape
     /**
      * @param array{
      *     BrandColorPalette?: BrandColorPalette|null,
+     *     ContextualAccentPalette?: ContextualAccentPalette|null,
      *     BrandElementStyle?: BrandElementStyle|null
      * } $args
      */
