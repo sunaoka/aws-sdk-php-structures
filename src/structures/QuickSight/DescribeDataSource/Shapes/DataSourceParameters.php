@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RdsParameters|null $RdsParameters
  * @property RedshiftParameters|null $RedshiftParameters
  * @property S3Parameters|null $S3Parameters
+ * @property S3KnowledgeBaseParameters|null $S3KnowledgeBaseParameters
  * @property ServiceNowParameters|null $ServiceNowParameters
  * @property SnowflakeParameters|null $SnowflakeParameters
  * @property SparkParameters|null $SparkParameters
@@ -33,6 +34,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property BigQueryParameters|null $BigQueryParameters
  * @property ImpalaParameters|null $ImpalaParameters
  * @property CustomConnectionParameters|null $CustomConnectionParameters
+ * @property WebCrawlerParameters|null $WebCrawlerParameters
+ * @property ConfluenceParameters|null $ConfluenceParameters
+ * @property QBusinessParameters|null $QBusinessParameters
  */
 class DataSourceParameters extends Shape
 {
@@ -52,6 +56,7 @@ class DataSourceParameters extends Shape
      *     RdsParameters?: RdsParameters|null,
      *     RedshiftParameters?: RedshiftParameters|null,
      *     S3Parameters?: S3Parameters|null,
+     *     S3KnowledgeBaseParameters?: S3KnowledgeBaseParameters|null,
      *     ServiceNowParameters?: ServiceNowParameters|null,
      *     SnowflakeParameters?: SnowflakeParameters|null,
      *     SparkParameters?: SparkParameters|null,
@@ -65,7 +70,10 @@ class DataSourceParameters extends Shape
      *     TrinoParameters?: TrinoParameters|null,
      *     BigQueryParameters?: BigQueryParameters|null,
      *     ImpalaParameters?: ImpalaParameters|null,
-     *     CustomConnectionParameters?: CustomConnectionParameters|null
+     *     CustomConnectionParameters?: CustomConnectionParameters|null,
+     *     WebCrawlerParameters?: WebCrawlerParameters|null,
+     *     ConfluenceParameters?: ConfluenceParameters|null,
+     *     QBusinessParameters?: QBusinessParameters|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -30,6 +30,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $IncludeContentInScheduledReportsEmail
  * @property 'DENY'|null $Dashboard
  * @property 'DENY'|null $Analysis
+ * @property 'DENY'|null $Automate
+ * @property 'DENY'|null $Flow
+ * @property 'DENY'|null $PublishWithoutApproval
+ * @property 'DENY'|null $UseBedrockModels
+ * @property 'DENY'|null $PerformFlowUiTask
+ * @property 'DENY'|null $UseAgentWebSearch
+ * @property 'DENY'|null $KnowledgeBase
+ * @property 'DENY'|null $Action
+ * @property 'DENY'|null $Space
+ * @property 'DENY'|null $ChatAgent
+ * @property 'DENY'|null $CreateChatAgents
+ * @property 'DENY'|null $Research
  */
 class Capabilities extends Shape
 {
@@ -59,7 +71,19 @@ class Capabilities extends Shape
      *     ExportToExcelInScheduledReports?: 'DENY'|null,
      *     IncludeContentInScheduledReportsEmail?: 'DENY'|null,
      *     Dashboard?: 'DENY'|null,
-     *     Analysis?: 'DENY'|null
+     *     Analysis?: 'DENY'|null,
+     *     Automate?: 'DENY'|null,
+     *     Flow?: 'DENY'|null,
+     *     PublishWithoutApproval?: 'DENY'|null,
+     *     UseBedrockModels?: 'DENY'|null,
+     *     PerformFlowUiTask?: 'DENY'|null,
+     *     UseAgentWebSearch?: 'DENY'|null,
+     *     KnowledgeBase?: 'DENY'|null,
+     *     Action?: 'DENY'|null,
+     *     Space?: 'DENY'|null,
+     *     ChatAgent?: 'DENY'|null,
+     *     CreateChatAgents?: 'DENY'|null,
+     *     Research?: 'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])
