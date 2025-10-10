@@ -66,4 +66,5 @@ class RedshiftServerlessClient extends \Aws\RedshiftServerless\RedshiftServerles
     use UpdateSnapshotCopyConfiguration\UpdateSnapshotCopyConfigurationTrait;
     use UpdateUsageLimit\UpdateUsageLimitTrait;
     use UpdateWorkgroup\UpdateWorkgroupTrait;
+    use GetDbCredentials\GetDbCredentialsTrait;
 }

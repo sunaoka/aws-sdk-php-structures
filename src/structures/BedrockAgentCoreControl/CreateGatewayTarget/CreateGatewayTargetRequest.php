@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string|null $clientToken
  * @property Shapes\TargetConfiguration $targetConfiguration
- * @property list<Shapes\CredentialProviderConfiguration> $credentialProviderConfigurations
+ * @property list<Shapes\CredentialProviderConfiguration>|null $credentialProviderConfigurations
  */
 class CreateGatewayTargetRequest extends Request
 {
@@ -21,7 +21,7 @@ class CreateGatewayTargetRequest extends Request
      *     description?: string|null,
      *     clientToken?: string|null,
      *     targetConfiguration: Shapes\TargetConfiguration,
-     *     credentialProviderConfigurations: list<Shapes\CredentialProviderConfiguration>
+     *     credentialProviderConfigurations?: list<Shapes\CredentialProviderConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

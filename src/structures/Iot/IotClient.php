@@ -275,4 +275,5 @@ class IotClient extends \Aws\Iot\IotClient
     use UpdateThingType\UpdateThingTypeTrait;
     use UpdateTopicRuleDestination\UpdateTopicRuleDestinationTrait;
     use ValidateSecurityProfileBehaviors\ValidateSecurityProfileBehaviorsTrait;
+    use GetDeviceCommand\GetDeviceCommandTrait;
 }
