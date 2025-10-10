@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ModifyExtractionConfiguration|null $extraction
  * @property ModifyConsolidationConfiguration|null $consolidation
+ * @property ModifySelfManagedConfiguration|null $selfManagedConfiguration
  */
 class ModifyStrategyConfiguration extends Shape
 {
     /**
      * @param array{
      *     extraction?: ModifyExtractionConfiguration|null,
-     *     consolidation?: ModifyConsolidationConfiguration|null
+     *     consolidation?: ModifyConsolidationConfiguration|null,
+     *     selfManagedConfiguration?: ModifySelfManagedConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

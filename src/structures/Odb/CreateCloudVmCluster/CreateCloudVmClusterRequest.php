@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $cloudExadataInfrastructureId
- * @property int<0, 368> $cpuCoreCount
+ * @property int<0, 10000> $cpuCoreCount
  * @property string $displayName
  * @property string $giVersion
  * @property string $hostname
@@ -32,7 +32,7 @@ class CreateCloudVmClusterRequest extends Request
     /**
      * @param array{
      *     cloudExadataInfrastructureId: string,
-     *     cpuCoreCount: int<0, 368>,
+     *     cpuCoreCount: int<0, 10000>,
      *     displayName: string,
      *     giVersion: string,
      *     hostname: string,

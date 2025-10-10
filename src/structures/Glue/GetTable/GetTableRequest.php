@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string|null $TransactionId
  * @property \Aws\Api\DateTimeResult|null $QueryAsOfTime
+ * @property Shapes\AuditContext|null $AuditContext
  * @property bool|null $IncludeStatusDetails
  */
 class GetTableRequest extends Request
@@ -21,6 +22,7 @@ class GetTableRequest extends Request
      *     Name: string,
      *     TransactionId?: string|null,
      *     QueryAsOfTime?: \Aws\Api\DateTimeResult|null,
+     *     AuditContext?: Shapes\AuditContext|null,
      *     IncludeStatusDetails?: bool|null
      * } $args
      */
