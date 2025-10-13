@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $authorizationEndpoint
  * @property string $tokenEndpoint
  * @property list<string>|null $responseTypes
+ * @property list<string>|null $tokenEndpointAuthMethods
  */
 class Oauth2AuthorizationServerMetadata extends Shape
 {
@@ -17,7 +18,8 @@ class Oauth2AuthorizationServerMetadata extends Shape
      *     issuer: string,
      *     authorizationEndpoint: string,
      *     tokenEndpoint: string,
-     *     responseTypes?: list<string>|null
+     *     responseTypes?: list<string>|null,
+     *     tokenEndpointAuthMethods?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

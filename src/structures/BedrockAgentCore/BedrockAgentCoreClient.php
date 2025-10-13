@@ -7,6 +7,7 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use BatchCreateMemoryRecords\BatchCreateMemoryRecordsTrait;
     use BatchDeleteMemoryRecords\BatchDeleteMemoryRecordsTrait;
     use BatchUpdateMemoryRecords\BatchUpdateMemoryRecordsTrait;
+    use CompleteResourceTokenAuth\CompleteResourceTokenAuthTrait;
     use CreateEvent\CreateEventTrait;
     use DeleteEvent\DeleteEventTrait;
     use DeleteMemoryRecord\DeleteMemoryRecordTrait;

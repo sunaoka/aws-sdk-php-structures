@@ -77,4 +77,5 @@ class AppSyncClient extends \Aws\AppSync\AppSyncClient
     use UpdateResolver\UpdateResolverTrait;
     use UpdateSourceApiAssociation\UpdateSourceApiAssociationTrait;
     use UpdateType\UpdateTypeTrait;
+    use GetApiResource\GetApiResourceTrait;
 }

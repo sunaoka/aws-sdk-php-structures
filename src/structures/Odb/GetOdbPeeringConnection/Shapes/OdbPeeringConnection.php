@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $odbNetworkArn
  * @property string|null $peerNetworkArn
  * @property string|null $odbPeeringConnectionType
+ * @property list<string>|null $peerNetworkCidrs
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property float|null $percentProgress
  */
@@ -28,6 +29,7 @@ class OdbPeeringConnection extends Shape
      *     odbNetworkArn?: string|null,
      *     peerNetworkArn?: string|null,
      *     odbPeeringConnectionType?: string|null,
+     *     peerNetworkCidrs?: list<string>|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     percentProgress?: float|null
      * } $args

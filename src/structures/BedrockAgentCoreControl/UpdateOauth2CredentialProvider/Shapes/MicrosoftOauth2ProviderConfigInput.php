@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $clientId
  * @property string $clientSecret
+ * @property string|null $tenantId
  */
 class MicrosoftOauth2ProviderConfigInput extends Shape
 {
     /**
      * @param array{
      *     clientId: string,
-     *     clientSecret: string
+     *     clientSecret: string,
+     *     tenantId?: string|null
      * } $args
      */
     public function __construct(array $args)

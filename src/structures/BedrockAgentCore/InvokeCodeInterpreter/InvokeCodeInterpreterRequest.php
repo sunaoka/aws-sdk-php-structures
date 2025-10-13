@@ -7,6 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $codeInterpreterIdentifier
  * @property string|null $sessionId
+ * @property string|null $traceId
+ * @property string|null $traceParent
  * @property 'executeCode'|'executeCommand'|'readFiles'|'listFiles'|'removeFiles'|'writeFiles'|'startCommandExecution'|'getTask'|'stopTask' $name
  * @property Shapes\ToolArguments|null $arguments
  */
@@ -16,6 +18,8 @@ class InvokeCodeInterpreterRequest extends Request
      * @param array{
      *     codeInterpreterIdentifier: string,
      *     sessionId?: string|null,
+     *     traceId?: string|null,
+     *     traceParent?: string|null,
      *     name: 'executeCode'|'executeCommand'|'readFiles'|'listFiles'|'removeFiles'|'writeFiles'|'startCommandExecution'|'getTask'|'stopTask',
      *     arguments?: Shapes\ToolArguments|null
      * } $args
