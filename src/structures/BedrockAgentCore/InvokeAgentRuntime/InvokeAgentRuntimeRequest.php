@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $baggage
  * @property string $agentRuntimeArn
  * @property string|null $qualifier
+ * @property string|null $accountId
  * @property string|resource|\Psr\Http\Message\StreamInterface $payload
  */
 class InvokeAgentRuntimeRequest extends Request
@@ -35,6 +36,7 @@ class InvokeAgentRuntimeRequest extends Request
      *     baggage?: string|null,
      *     agentRuntimeArn: string,
      *     qualifier?: string|null,
+     *     accountId?: string|null,
      *     payload: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */

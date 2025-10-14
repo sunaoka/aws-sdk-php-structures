@@ -11,6 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SlackOauth2ProviderConfigOutput|null $slackOauth2ProviderConfig
  * @property SalesforceOauth2ProviderConfigOutput|null $salesforceOauth2ProviderConfig
  * @property MicrosoftOauth2ProviderConfigOutput|null $microsoftOauth2ProviderConfig
+ * @property AtlassianOauth2ProviderConfigOutput|null $atlassianOauth2ProviderConfig
+ * @property LinkedinOauth2ProviderConfigOutput|null $linkedinOauth2ProviderConfig
+ * @property IncludedOauth2ProviderConfigOutput|null $includedOauth2ProviderConfig
  */
 class Oauth2ProviderConfigOutput extends Shape
 {
@@ -21,7 +24,10 @@ class Oauth2ProviderConfigOutput extends Shape
      *     githubOauth2ProviderConfig?: GithubOauth2ProviderConfigOutput|null,
      *     slackOauth2ProviderConfig?: SlackOauth2ProviderConfigOutput|null,
      *     salesforceOauth2ProviderConfig?: SalesforceOauth2ProviderConfigOutput|null,
-     *     microsoftOauth2ProviderConfig?: MicrosoftOauth2ProviderConfigOutput|null
+     *     microsoftOauth2ProviderConfig?: MicrosoftOauth2ProviderConfigOutput|null,
+     *     atlassianOauth2ProviderConfig?: AtlassianOauth2ProviderConfigOutput|null,
+     *     linkedinOauth2ProviderConfig?: LinkedinOauth2ProviderConfigOutput|null,
+     *     includedOauth2ProviderConfig?: IncludedOauth2ProviderConfigOutput|null
      * } $args
      */
     public function __construct(array $args = [])

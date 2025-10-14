@@ -17,4 +17,5 @@ class IoTDeviceAdvisorClient extends \Aws\IoTDeviceAdvisor\IoTDeviceAdvisorClien
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateSuiteDefinition\UpdateSuiteDefinitionTrait;
+    use GetDeviceAdvisorEndpoint\GetDeviceAdvisorEndpointTrait;
 }

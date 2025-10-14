@@ -48,6 +48,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWorkloadIdentities\ListWorkloadIdentitiesTrait;
     use SetTokenVaultCMK\SetTokenVaultCMKTrait;
+    use SynchronizeGatewayTargets\SynchronizeGatewayTargetsTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAgentRuntime\UpdateAgentRuntimeTrait;

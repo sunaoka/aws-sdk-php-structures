@@ -44,4 +44,5 @@ class OdbClient extends \Aws\Odb\OdbClient
     use UntagResource\UntagResourceTrait;
     use UpdateCloudExadataInfrastructure\UpdateCloudExadataInfrastructureTrait;
     use UpdateOdbNetwork\UpdateOdbNetworkTrait;
+    use UpdateOdbPeeringConnection\UpdateOdbPeeringConnectionTrait;
 }
