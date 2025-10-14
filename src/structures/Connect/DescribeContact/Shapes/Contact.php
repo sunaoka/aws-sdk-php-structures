@@ -46,6 +46,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<RecordingInfo>|null $Recordings
  * @property string|null $DisconnectReason
  * @property array<string, ContactEvaluation>|null $ContactEvaluations
+ * @property TaskTemplateInfoV2|null $TaskTemplateInfo
  * @property ContactDetails|null $ContactDetails
  * @property array<string, string>|null $Attributes
  */
@@ -94,6 +95,7 @@ class Contact extends Shape
      *     Recordings?: list<RecordingInfo>|null,
      *     DisconnectReason?: string|null,
      *     ContactEvaluations?: array<string, ContactEvaluation>|null,
+     *     TaskTemplateInfo?: TaskTemplateInfoV2|null,
      *     ContactDetails?: ContactDetails|null,
      *     Attributes?: array<string, string>|null
      * } $args

@@ -8,6 +8,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use AssociateApplicationFleet\AssociateApplicationFleetTrait;
     use AssociateApplicationToEntitlement\AssociateApplicationToEntitlementTrait;
     use AssociateFleet\AssociateFleetTrait;
+    use AssociateSoftwareToImageBuilder\AssociateSoftwareToImageBuilderTrait;
     use BatchAssociateUserStack\BatchAssociateUserStackTrait;
     use BatchDisassociateUserStack\BatchDisassociateUserStackTrait;
     use CopyImage\CopyImageTrait;
@@ -42,6 +43,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use DescribeAppBlockBuilderAppBlockAssociations\DescribeAppBlockBuilderAppBlockAssociationsTrait;
     use DescribeAppBlockBuilders\DescribeAppBlockBuildersTrait;
     use DescribeAppBlocks\DescribeAppBlocksTrait;
+    use DescribeAppLicenseUsage\DescribeAppLicenseUsageTrait;
     use DescribeApplicationFleetAssociations\DescribeApplicationFleetAssociationsTrait;
     use DescribeApplications\DescribeApplicationsTrait;
     use DescribeDirectoryConfigs\DescribeDirectoryConfigsTrait;
@@ -51,6 +53,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use DescribeImagePermissions\DescribeImagePermissionsTrait;
     use DescribeImages\DescribeImagesTrait;
     use DescribeSessions\DescribeSessionsTrait;
+    use DescribeSoftwareAssociations\DescribeSoftwareAssociationsTrait;
     use DescribeStacks\DescribeStacksTrait;
     use DescribeThemeForStack\DescribeThemeForStackTrait;
     use DescribeUsageReportSubscriptions\DescribeUsageReportSubscriptionsTrait;
@@ -61,6 +64,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use DisassociateApplicationFleet\DisassociateApplicationFleetTrait;
     use DisassociateApplicationFromEntitlement\DisassociateApplicationFromEntitlementTrait;
     use DisassociateFleet\DisassociateFleetTrait;
+    use DisassociateSoftwareFromImageBuilder\DisassociateSoftwareFromImageBuilderTrait;
     use EnableUser\EnableUserTrait;
     use ExpireSession\ExpireSessionTrait;
     use ListAssociatedFleets\ListAssociatedFleetsTrait;
@@ -70,6 +74,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use StartAppBlockBuilder\StartAppBlockBuilderTrait;
     use StartFleet\StartFleetTrait;
     use StartImageBuilder\StartImageBuilderTrait;
+    use StartSoftwareDeploymentToImageBuilder\StartSoftwareDeploymentToImageBuilderTrait;
     use StopAppBlockBuilder\StopAppBlockBuilderTrait;
     use StopFleet\StopFleetTrait;
     use StopImageBuilder\StopImageBuilderTrait;

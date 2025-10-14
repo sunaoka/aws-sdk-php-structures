@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AppstreamAgentVersion
  * @property array<string, string>|null $Tags
  * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
+ * @property list<string>|null $SoftwaresToInstall
+ * @property list<string>|null $SoftwaresToUninstall
  */
 class CreateImageBuilderRequest extends Request
 {
@@ -35,7 +37,9 @@ class CreateImageBuilderRequest extends Request
      *     DomainJoinInfo?: Shapes\DomainJoinInfo|null,
      *     AppstreamAgentVersion?: string|null,
      *     Tags?: array<string, string>|null,
-     *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null
+     *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
+     *     SoftwaresToInstall?: list<string>|null,
+     *     SoftwaresToUninstall?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

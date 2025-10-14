@@ -10,10 +10,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 50>|null $maxResults
  * @property string|null $name
  * @property string|null $nextToken
- * @property string $projectIdentifier
+ * @property string|null $projectIdentifier
+ * @property 'DOMAIN'|'PROJECT'|null $scope
  * @property 'NAME'|null $sortBy
  * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
- * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|null $type
+ * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|null $type
  */
 class ListConnectionsRequest extends Request
 {
@@ -24,10 +25,11 @@ class ListConnectionsRequest extends Request
      *     maxResults?: int<1, 50>|null,
      *     name?: string|null,
      *     nextToken?: string|null,
-     *     projectIdentifier: string,
+     *     projectIdentifier?: string|null,
+     *     scope?: 'DOMAIN'|'PROJECT'|null,
      *     sortBy?: 'NAME'|null,
      *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
-     *     type?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|null
+     *     type?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|null
      * } $args
      */
     public function __construct(array $args)

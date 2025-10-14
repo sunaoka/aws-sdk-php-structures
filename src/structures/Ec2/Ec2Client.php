@@ -64,6 +64,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CopyFpgaImage\CopyFpgaImageTrait;
     use CopyImage\CopyImageTrait;
     use CopySnapshot\CopySnapshotTrait;
+    use CopyVolumes\CopyVolumesTrait;
     use CreateCapacityReservation\CreateCapacityReservationTrait;
     use CreateCapacityReservationBySplitting\CreateCapacityReservationBySplittingTrait;
     use CreateCapacityReservationFleet\CreateCapacityReservationFleetTrait;

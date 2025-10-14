@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $SupportedInstanceFamilies
  * @property 'ENABLED'|'DISABLED'|null $DynamicAppProvidersEnabled
  * @property 'TRUE'|'FALSE'|null $ImageSharedWithOthers
+ * @property bool|null $ManagedSoftwareIncluded
  */
 class Image extends Shape
 {
@@ -51,7 +52,8 @@ class Image extends Shape
      *     LatestAppstreamAgentVersion?: 'TRUE'|'FALSE'|null,
      *     SupportedInstanceFamilies?: list<string>|null,
      *     DynamicAppProvidersEnabled?: 'ENABLED'|'DISABLED'|null,
-     *     ImageSharedWithOthers?: 'TRUE'|'FALSE'|null
+     *     ImageSharedWithOthers?: 'TRUE'|'FALSE'|null,
+     *     ManagedSoftwareIncluded?: bool|null
      * } $args
      */
     public function __construct(array $args)

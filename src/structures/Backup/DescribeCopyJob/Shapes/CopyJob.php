@@ -10,7 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SourceBackupVaultArn
  * @property string|null $SourceRecoveryPointArn
  * @property string|null $DestinationBackupVaultArn
+ * @property string|null $DestinationVaultType
+ * @property string|null $DestinationVaultLockState
  * @property string|null $DestinationRecoveryPointArn
+ * @property string|null $DestinationEncryptionKeyArn
+ * @property Lifecycle|null $DestinationRecoveryPointLifecycle
  * @property string|null $ResourceArn
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
@@ -37,7 +41,11 @@ class CopyJob extends Shape
      *     SourceBackupVaultArn?: string|null,
      *     SourceRecoveryPointArn?: string|null,
      *     DestinationBackupVaultArn?: string|null,
+     *     DestinationVaultType?: string|null,
+     *     DestinationVaultLockState?: string|null,
      *     DestinationRecoveryPointArn?: string|null,
+     *     DestinationEncryptionKeyArn?: string|null,
+     *     DestinationRecoveryPointLifecycle?: Lifecycle|null,
      *     ResourceArn?: string|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
      *     CompletionDate?: \Aws\Api\DateTimeResult|null,

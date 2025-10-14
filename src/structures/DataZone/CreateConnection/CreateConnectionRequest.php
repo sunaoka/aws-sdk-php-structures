@@ -9,9 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string|null $description
  * @property string $domainIdentifier
- * @property string $environmentIdentifier
+ * @property bool|null $enableTrustedIdentityPropagation
+ * @property string|null $environmentIdentifier
  * @property string $name
  * @property Shapes\ConnectionPropertiesInput|null $props
+ * @property 'DOMAIN'|'PROJECT'|null $scope
  */
 class CreateConnectionRequest extends Request
 {
@@ -21,9 +23,11 @@ class CreateConnectionRequest extends Request
      *     clientToken?: string|null,
      *     description?: string|null,
      *     domainIdentifier: string,
-     *     environmentIdentifier: string,
+     *     enableTrustedIdentityPropagation?: bool|null,
+     *     environmentIdentifier?: string|null,
      *     name: string,
-     *     props?: Shapes\ConnectionPropertiesInput|null
+     *     props?: Shapes\ConnectionPropertiesInput|null,
+     *     scope?: 'DOMAIN'|'PROJECT'|null
      * } $args
      */
     public function __construct(array $args)
