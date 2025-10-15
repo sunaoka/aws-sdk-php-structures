@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $policyId
  * @property string|null $description
  * @property string $definitionHash
+ * @property string|null $kmsKeyArn
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  */

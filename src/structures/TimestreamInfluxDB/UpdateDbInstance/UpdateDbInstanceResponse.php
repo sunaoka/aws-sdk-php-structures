@@ -25,7 +25,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
  * @property string|null $influxAuthParametersSecretArn
  * @property string|null $dbClusterId
- * @property 'PRIMARY'|'STANDBY'|'REPLICA'|null $instanceMode
+ * @property 'PRIMARY'|'STANDBY'|'REPLICA'|'INGEST'|'QUERY'|'COMPACT'|'PROCESS'|null $instanceMode
+ * @property list<'PRIMARY'|'STANDBY'|'REPLICA'|'INGEST'|'QUERY'|'COMPACT'|'PROCESS'>|null $instanceModes
  */
 class UpdateDbInstanceResponse extends Response
 {

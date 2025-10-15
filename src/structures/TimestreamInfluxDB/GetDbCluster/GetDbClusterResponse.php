@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'IPV4'|'DUAL'|null $networkType
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
  * @property int<20, 15360>|null $allocatedStorage
+ * @property 'INFLUXDB_V2'|'INFLUXDB_V3_CORE'|'INFLUXDB_V3_ENTERPRISE'|null $engineType
  * @property bool|null $publiclyAccessible
  * @property string|null $dbParameterGroupIdentifier
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration

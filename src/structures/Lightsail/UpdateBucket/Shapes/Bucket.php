@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ResourceReceivingAccess>|null $resourcesReceivingAccess
  * @property BucketState|null $state
  * @property BucketAccessLogConfig|null $accessLogConfig
+ * @property BucketCorsConfig|null $cors
  */
 class Bucket extends Shape
 {
@@ -41,7 +42,8 @@ class Bucket extends Shape
      *     readonlyAccessAccounts?: list<string>|null,
      *     resourcesReceivingAccess?: list<ResourceReceivingAccess>|null,
      *     state?: BucketState|null,
-     *     accessLogConfig?: BucketAccessLogConfig|null
+     *     accessLogConfig?: BucketAccessLogConfig|null,
+     *     cors?: BucketCorsConfig|null
      * } $args
      */
     public function __construct(array $args = [])

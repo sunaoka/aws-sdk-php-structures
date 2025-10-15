@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<RuleCondition>|null $Conditions
  * @property list<Action>|null $Actions
  * @property bool|null $IsDefault
+ * @property list<RuleTransform>|null $Transforms
  */
 class Rule extends Shape
 {
@@ -19,7 +20,8 @@ class Rule extends Shape
      *     Priority?: string|null,
      *     Conditions?: list<RuleCondition>|null,
      *     Actions?: list<Action>|null,
-     *     IsDefault?: bool|null
+     *     IsDefault?: bool|null,
+     *     Transforms?: list<RuleTransform>|null
      * } $args
      */
     public function __construct(array $args = [])

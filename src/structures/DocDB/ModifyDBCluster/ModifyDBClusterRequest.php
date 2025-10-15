@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
  * @property bool|null $RotateMasterUserPassword
+ * @property string|null $NetworkType
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -47,7 +48,8 @@ class ModifyDBClusterRequest extends Request
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     RotateMasterUserPassword?: bool|null
+     *     RotateMasterUserPassword?: bool|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args)

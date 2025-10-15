@@ -37,9 +37,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ClusterCreateTime
  * @property list<string>|null $EnabledCloudwatchLogsExports
  * @property bool|null $DeletionProtection
+ * @property \Aws\Api\DateTimeResult|null $IOOptimizedNextAllowedModificationTime
  * @property string|null $StorageType
  * @property ServerlessV2ScalingConfigurationInfo|null $ServerlessV2ScalingConfiguration
  * @property ClusterMasterUserSecret|null $MasterUserSecret
+ * @property string|null $NetworkType
  */
 class DBCluster extends Shape
 {
@@ -77,9 +79,11 @@ class DBCluster extends Shape
      *     ClusterCreateTime?: \Aws\Api\DateTimeResult|null,
      *     EnabledCloudwatchLogsExports?: list<string>|null,
      *     DeletionProtection?: bool|null,
+     *     IOOptimizedNextAllowedModificationTime?: \Aws\Api\DateTimeResult|null,
      *     StorageType?: string|null,
      *     ServerlessV2ScalingConfiguration?: ServerlessV2ScalingConfigurationInfo|null,
-     *     MasterUserSecret?: ClusterMasterUserSecret|null
+     *     MasterUserSecret?: ClusterMasterUserSecret|null,
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args = [])
