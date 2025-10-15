@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVolumeStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'default'|'provisioned-rate'|null $InitializationType
+ * @property 'default'|'provisioned-rate'|'volume-copy'|null $InitializationType
  * @property int|null $Progress
  * @property int|null $EstimatedTimeToCompleteInSeconds
  */
@@ -13,7 +13,7 @@ class InitializationStatusDetails extends Shape
 {
     /**
      * @param array{
-     *     InitializationType?: 'default'|'provisioned-rate'|null,
+     *     InitializationType?: 'default'|'provisioned-rate'|'volume-copy'|null,
      *     Progress?: int|null,
      *     EstimatedTimeToCompleteInSeconds?: int|null
      * } $args

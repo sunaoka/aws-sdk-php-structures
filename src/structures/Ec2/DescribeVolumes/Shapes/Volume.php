@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $AvailabilityZoneId
  * @property string|null $OutpostArn
+ * @property string|null $SourceVolumeId
  * @property int|null $Iops
  * @property list<Tag>|null $Tags
  * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
@@ -32,6 +33,7 @@ class Volume extends Shape
      * @param array{
      *     AvailabilityZoneId?: string|null,
      *     OutpostArn?: string|null,
+     *     SourceVolumeId?: string|null,
      *     Iops?: int|null,
      *     Tags?: list<Tag>|null,
      *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null,

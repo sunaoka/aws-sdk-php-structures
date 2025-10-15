@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $AvailabilityZoneId
  * @property string|null $OutpostArn
+ * @property string|null $SourceVolumeId
  * @property int|null $Iops
  * @property list<Shapes\Tag>|null $Tags
  * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType

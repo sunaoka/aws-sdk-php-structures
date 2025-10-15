@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property AmazonQPropertiesInput|null $amazonQProperties
  * @property AthenaPropertiesInput|null $athenaProperties
  * @property GluePropertiesInput|null $glueProperties
  * @property HyperPodPropertiesInput|null $hyperPodProperties
@@ -18,6 +19,7 @@ class ConnectionPropertiesInput extends Shape
 {
     /**
      * @param array{
+     *     amazonQProperties?: AmazonQPropertiesInput|null,
      *     athenaProperties?: AthenaPropertiesInput|null,
      *     glueProperties?: GluePropertiesInput|null,
      *     hyperPodProperties?: HyperPodPropertiesInput|null,

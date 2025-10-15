@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AccountId
  * @property string|null $RestoreJobId
  * @property string|null $RecoveryPointArn
+ * @property string|null $SourceResourceArn
+ * @property string|null $BackupVaultArn
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
  * @property 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED'|null $Status
@@ -32,6 +34,8 @@ class RestoreJobsListMember extends Shape
      *     AccountId?: string|null,
      *     RestoreJobId?: string|null,
      *     RecoveryPointArn?: string|null,
+     *     SourceResourceArn?: string|null,
+     *     BackupVaultArn?: string|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
      *     CompletionDate?: \Aws\Api\DateTimeResult|null,
      *     Status?: 'PENDING'|'RUNNING'|'COMPLETED'|'ABORTED'|'FAILED'|null,
