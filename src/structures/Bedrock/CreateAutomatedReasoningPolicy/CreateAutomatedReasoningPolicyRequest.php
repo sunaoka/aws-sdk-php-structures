@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string|null $clientRequestToken
  * @property Shapes\AutomatedReasoningPolicyDefinition|null $policyDefinition
+ * @property string|null $kmsKeyId
  * @property list<Shapes\Tag>|null $tags
  */
 class CreateAutomatedReasoningPolicyRequest extends Request
@@ -19,6 +20,7 @@ class CreateAutomatedReasoningPolicyRequest extends Request
      *     description?: string|null,
      *     clientRequestToken?: string|null,
      *     policyDefinition?: Shapes\AutomatedReasoningPolicyDefinition|null,
+     *     kmsKeyId?: string|null,
      *     tags?: list<Shapes\Tag>|null
      * } $args
      */

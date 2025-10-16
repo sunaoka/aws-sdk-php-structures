@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'IPV4'|'DUAL'|null $networkType
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
  * @property int<20, 15360>|null $allocatedStorage
+ * @property 'INFLUXDB_V2'|'INFLUXDB_V3_CORE'|'INFLUXDB_V3_ENTERPRISE'|null $engineType
  */
 class DbClusterSummary extends Shape
 {
@@ -33,7 +34,8 @@ class DbClusterSummary extends Shape
      *     dbInstanceType?: 'db.influx.medium'|'db.influx.large'|'db.influx.xlarge'|'db.influx.2xlarge'|'db.influx.4xlarge'|'db.influx.8xlarge'|'db.influx.12xlarge'|'db.influx.16xlarge'|'db.influx.24xlarge'|null,
      *     networkType?: 'IPV4'|'DUAL'|null,
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null,
-     *     allocatedStorage?: int<20, 15360>|null
+     *     allocatedStorage?: int<20, 15360>|null,
+     *     engineType?: 'INFLUXDB_V2'|'INFLUXDB_V3_CORE'|'INFLUXDB_V3_ENTERPRISE'|null
      * } $args
      */
     public function __construct(array $args)

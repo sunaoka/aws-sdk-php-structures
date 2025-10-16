@@ -16,7 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null $dbStorageType
  * @property int<20, 15360>|null $allocatedStorage
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null $deploymentType
- * @property 'PRIMARY'|'STANDBY'|'REPLICA'|null $instanceMode
+ * @property 'PRIMARY'|'STANDBY'|'REPLICA'|'INGEST'|'QUERY'|'COMPACT'|'PROCESS'|null $instanceMode
+ * @property list<'PRIMARY'|'STANDBY'|'REPLICA'|'INGEST'|'QUERY'|'COMPACT'|'PROCESS'>|null $instanceModes
  */
 class DbInstanceForClusterSummary extends Shape
 {
@@ -33,7 +34,8 @@ class DbInstanceForClusterSummary extends Shape
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3'|null,
      *     allocatedStorage?: int<20, 15360>|null,
      *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY'|null,
-     *     instanceMode?: 'PRIMARY'|'STANDBY'|'REPLICA'|null
+     *     instanceMode?: 'PRIMARY'|'STANDBY'|'REPLICA'|'INGEST'|'QUERY'|'COMPACT'|'PROCESS'|null,
+     *     instanceModes?: list<'PRIMARY'|'STANDBY'|'REPLICA'|'INGEST'|'QUERY'|'COMPACT'|'PROCESS'>|null
      * } $args
      */
     public function __construct(array $args)

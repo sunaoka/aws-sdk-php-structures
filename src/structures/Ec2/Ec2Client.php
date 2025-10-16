@@ -65,6 +65,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CopyImage\CopyImageTrait;
     use CopySnapshot\CopySnapshotTrait;
     use CopyVolumes\CopyVolumesTrait;
+    use CreateCapacityManagerDataExport\CreateCapacityManagerDataExportTrait;
     use CreateCapacityReservation\CreateCapacityReservationTrait;
     use CreateCapacityReservationBySplitting\CreateCapacityReservationBySplittingTrait;
     use CreateCapacityReservationFleet\CreateCapacityReservationFleetTrait;
@@ -158,6 +159,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateVpnConnection\CreateVpnConnectionTrait;
     use CreateVpnConnectionRoute\CreateVpnConnectionRouteTrait;
     use CreateVpnGateway\CreateVpnGatewayTrait;
+    use DeleteCapacityManagerDataExport\DeleteCapacityManagerDataExportTrait;
     use DeleteCarrierGateway\DeleteCarrierGatewayTrait;
     use DeleteClientVpnEndpoint\DeleteClientVpnEndpointTrait;
     use DeleteClientVpnRoute\DeleteClientVpnRouteTrait;
@@ -262,6 +264,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeCapacityBlockOfferings\DescribeCapacityBlockOfferingsTrait;
     use DescribeCapacityBlockStatus\DescribeCapacityBlockStatusTrait;
     use DescribeCapacityBlocks\DescribeCapacityBlocksTrait;
+    use DescribeCapacityManagerDataExports\DescribeCapacityManagerDataExportsTrait;
     use DescribeCapacityReservationBillingRequests\DescribeCapacityReservationBillingRequestsTrait;
     use DescribeCapacityReservationFleets\DescribeCapacityReservationFleetsTrait;
     use DescribeCapacityReservations\DescribeCapacityReservationsTrait;
@@ -429,6 +432,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisableAddressTransfer\DisableAddressTransferTrait;
     use DisableAllowedImagesSettings\DisableAllowedImagesSettingsTrait;
     use DisableAwsNetworkPerformanceMetricSubscription\DisableAwsNetworkPerformanceMetricSubscriptionTrait;
+    use DisableCapacityManager\DisableCapacityManagerTrait;
     use DisableEbsEncryptionByDefault\DisableEbsEncryptionByDefaultTrait;
     use DisableFastLaunch\DisableFastLaunchTrait;
     use DisableFastSnapshotRestores\DisableFastSnapshotRestoresTrait;
@@ -465,6 +469,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use EnableAddressTransfer\EnableAddressTransferTrait;
     use EnableAllowedImagesSettings\EnableAllowedImagesSettingsTrait;
     use EnableAwsNetworkPerformanceMetricSubscription\EnableAwsNetworkPerformanceMetricSubscriptionTrait;
+    use EnableCapacityManager\EnableCapacityManagerTrait;
     use EnableEbsEncryptionByDefault\EnableEbsEncryptionByDefaultTrait;
     use EnableFastLaunch\EnableFastLaunchTrait;
     use EnableFastSnapshotRestores\EnableFastSnapshotRestoresTrait;
@@ -492,6 +497,9 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetAssociatedEnclaveCertificateIamRoles\GetAssociatedEnclaveCertificateIamRolesTrait;
     use GetAssociatedIpv6PoolCidrs\GetAssociatedIpv6PoolCidrsTrait;
     use GetAwsNetworkPerformanceData\GetAwsNetworkPerformanceDataTrait;
+    use GetCapacityManagerAttributes\GetCapacityManagerAttributesTrait;
+    use GetCapacityManagerMetricData\GetCapacityManagerMetricDataTrait;
+    use GetCapacityManagerMetricDimensions\GetCapacityManagerMetricDimensionsTrait;
     use GetCapacityReservationUsage\GetCapacityReservationUsageTrait;
     use GetCoipPoolUsage\GetCoipPoolUsageTrait;
     use GetConsoleOutput\GetConsoleOutputTrait;
@@ -696,6 +704,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use UnassignPrivateNatGatewayAddress\UnassignPrivateNatGatewayAddressTrait;
     use UnlockSnapshot\UnlockSnapshotTrait;
     use UnmonitorInstances\UnmonitorInstancesTrait;
+    use UpdateCapacityManagerOrganizationsAccess\UpdateCapacityManagerOrganizationsAccessTrait;
     use UpdateSecurityGroupRuleDescriptionsEgress\UpdateSecurityGroupRuleDescriptionsEgressTrait;
     use UpdateSecurityGroupRuleDescriptionsIngress\UpdateSecurityGroupRuleDescriptionsIngressTrait;
     use WithdrawByoipCidr\WithdrawByoipCidrTrait;
