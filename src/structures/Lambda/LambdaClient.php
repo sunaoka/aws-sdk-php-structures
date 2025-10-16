@@ -39,7 +39,6 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use GetProvisionedConcurrencyConfig\GetProvisionedConcurrencyConfigTrait;
     use GetRuntimeManagementConfig\GetRuntimeManagementConfigTrait;
     use Invoke\InvokeTrait;
-    use InvokeAsync\InvokeAsyncTrait;
     use InvokeWithResponseStream\InvokeWithResponseStreamTrait;
     use ListAliases\ListAliasesTrait;
     use ListCodeSigningConfigs\ListCodeSigningConfigsTrait;
@@ -72,4 +71,5 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use UpdateFunctionConfiguration\UpdateFunctionConfigurationTrait;
     use UpdateFunctionEventInvokeConfig\UpdateFunctionEventInvokeConfigTrait;
     use UpdateFunctionUrlConfig\UpdateFunctionUrlConfigTrait;
+    use InvokeAsynchronous\InvokeAsynchronousTrait;
 }
