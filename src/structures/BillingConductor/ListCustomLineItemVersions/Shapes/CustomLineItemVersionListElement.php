@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property int|null $StartTime
  * @property string|null $AccountId
+ * @property 'CONSOLIDATED'|null $ComputationRule
+ * @property PresentationObject|null $PresentationDetails
  */
 class CustomLineItemVersionListElement extends Shape
 {
@@ -37,7 +39,9 @@ class CustomLineItemVersionListElement extends Shape
      *     EndBillingPeriod?: string|null,
      *     Arn?: string|null,
      *     StartTime?: int|null,
-     *     AccountId?: string|null
+     *     AccountId?: string|null,
+     *     ComputationRule?: 'CONSOLIDATED'|null,
+     *     PresentationDetails?: PresentationObject|null
      * } $args
      */
     public function __construct(array $args = [])

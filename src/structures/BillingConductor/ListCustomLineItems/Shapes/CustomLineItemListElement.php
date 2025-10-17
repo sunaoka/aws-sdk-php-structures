@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $LastModifiedTime
  * @property int<0, max>|null $AssociationSize
  * @property string|null $AccountId
+ * @property 'CONSOLIDATED'|null $ComputationRule
+ * @property PresentationObject|null $PresentationDetails
  */
 class CustomLineItemListElement extends Shape
 {
@@ -31,7 +33,9 @@ class CustomLineItemListElement extends Shape
      *     CreationTime?: int|null,
      *     LastModifiedTime?: int|null,
      *     AssociationSize?: int<0, max>|null,
-     *     AccountId?: string|null
+     *     AccountId?: string|null,
+     *     ComputationRule?: 'CONSOLIDATED'|null,
+     *     PresentationDetails?: PresentationObject|null
      * } $args
      */
     public function __construct(array $args = [])
