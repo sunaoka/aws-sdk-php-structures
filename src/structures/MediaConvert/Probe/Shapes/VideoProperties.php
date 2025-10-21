@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int|null $BitDepth
  * @property int|null $BitRate
+ * @property CodecMetadata|null $CodecMetadata
  * @property 'ITU_709'|'UNSPECIFIED'|'RESERVED'|'ITU_470M'|'ITU_470BG'|'SMPTE_170M'|'SMPTE_240M'|'GENERIC_FILM'|'ITU_2020'|'SMPTE_428_1'|'SMPTE_431_2'|'SMPTE_EG_432_1'|'IPT'|'SMPTE_2067XYZ'|'EBU_3213_E'|'LAST'|null $ColorPrimaries
  * @property FrameRate|null $FrameRate
  * @property int|null $Height
@@ -20,6 +21,7 @@ class VideoProperties extends Shape
      * @param array{
      *     BitDepth?: int|null,
      *     BitRate?: int|null,
+     *     CodecMetadata?: CodecMetadata|null,
      *     ColorPrimaries?: 'ITU_709'|'UNSPECIFIED'|'RESERVED'|'ITU_470M'|'ITU_470BG'|'SMPTE_170M'|'SMPTE_240M'|'GENERIC_FILM'|'ITU_2020'|'SMPTE_428_1'|'SMPTE_431_2'|'SMPTE_EG_432_1'|'IPT'|'SMPTE_2067XYZ'|'EBU_3213_E'|'LAST'|null,
      *     FrameRate?: FrameRate|null,
      *     Height?: int|null,

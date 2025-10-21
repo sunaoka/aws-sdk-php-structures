@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null $FramerateConversionAlgorithm
  * @property int<1, 1001>|null $FramerateDenominator
  * @property int<24, 60000>|null $FramerateNumerator
- * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'>|null $PerFrameMetrics
+ * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null $PerFrameMetrics
  * @property 'XAVC_HD_INTRA_CBG'|'XAVC_4K_INTRA_CBG'|'XAVC_4K_INTRA_VBR'|'XAVC_HD'|'XAVC_4K'|null $Profile
  * @property 'DISABLED'|'ENABLED'|null $SlowPal
  * @property int<0, 128>|null $Softness
@@ -33,7 +33,7 @@ class XavcSettings extends Shape
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|'MAINTAIN_FRAME_COUNT'|null,
      *     FramerateDenominator?: int<1, 1001>|null,
      *     FramerateNumerator?: int<24, 60000>|null,
-     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'>|null,
+     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null,
      *     Profile?: 'XAVC_HD_INTRA_CBG'|'XAVC_4K_INTRA_CBG'|'XAVC_4K_INTRA_VBR'|'XAVC_HD'|'XAVC_4K'|null,
      *     SlowPal?: 'DISABLED'|'ENABLED'|null,
      *     Softness?: int<0, 128>|null,

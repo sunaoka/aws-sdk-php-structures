@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $GopSize
  * @property int<1000, 1152000000>|null $MaxBitrate
  * @property int<0, 15>|null $NumberBFramesBetweenReferenceFrames
- * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'>|null $PerFrameMetrics
+ * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null $PerFrameMetrics
  * @property Av1QvbrSettings|null $QvbrSettings
  * @property 'QVBR'|null $RateControlMode
  * @property int<1, 32>|null $Slices
@@ -35,7 +35,7 @@ class Av1Settings extends Shape
      *     GopSize?: double|null,
      *     MaxBitrate?: int<1000, 1152000000>|null,
      *     NumberBFramesBetweenReferenceFrames?: int<0, 15>|null,
-     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'>|null,
+     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null,
      *     QvbrSettings?: Av1QvbrSettings|null,
      *     RateControlMode?: 'QVBR'|null,
      *     Slices?: int<1, 32>|null,
