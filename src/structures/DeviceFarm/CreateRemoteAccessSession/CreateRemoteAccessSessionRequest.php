@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $projectArn
  * @property string $deviceArn
+ * @property string|null $appArn
  * @property string|null $instanceArn
  * @property string|null $sshPublicKey
  * @property bool|null $remoteDebugEnabled
@@ -24,6 +25,7 @@ class CreateRemoteAccessSessionRequest extends Request
      * @param array{
      *     projectArn: string,
      *     deviceArn: string,
+     *     appArn?: string|null,
      *     instanceArn?: string|null,
      *     sshPublicKey?: string|null,
      *     remoteDebugEnabled?: bool|null,
