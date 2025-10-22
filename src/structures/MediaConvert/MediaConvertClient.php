@@ -19,6 +19,7 @@ class MediaConvertClient extends \Aws\MediaConvert\MediaConvertClient
     use DisassociateCertificate\DisassociateCertificateTrait;
     use GetJob\GetJobTrait;
     use GetJobTemplate\GetJobTemplateTrait;
+    use GetJobsQueryResults\GetJobsQueryResultsTrait;
     use GetPolicy\GetPolicyTrait;
     use GetPreset\GetPresetTrait;
     use GetQueue\GetQueueTrait;
@@ -31,6 +32,7 @@ class MediaConvertClient extends \Aws\MediaConvert\MediaConvertClient
     use Probe\ProbeTrait;
     use PutPolicy\PutPolicyTrait;
     use SearchJobs\SearchJobsTrait;
+    use StartJobsQuery\StartJobsQueryTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateJobTemplate\UpdateJobTemplateTrait;

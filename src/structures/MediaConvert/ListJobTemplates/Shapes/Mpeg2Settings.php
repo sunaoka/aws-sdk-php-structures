@@ -28,7 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $ParControl
  * @property int<1, 2147483647>|null $ParDenominator
  * @property int<1, 2147483647>|null $ParNumerator
- * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'>|null $PerFrameMetrics
+ * @property list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null $PerFrameMetrics
  * @property 'SINGLE_PASS'|'MULTI_PASS'|null $QualityTuningLevel
  * @property 'VBR'|'CBR'|null $RateControlMode
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
@@ -67,7 +67,7 @@ class Mpeg2Settings extends Shape
      *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
      *     ParDenominator?: int<1, 2147483647>|null,
      *     ParNumerator?: int<1, 2147483647>|null,
-     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'>|null,
+     *     PerFrameMetrics?: list<'PSNR'|'SSIM'|'MS_SSIM'|'PSNR_HVS'|'VMAF'|'QVBR'|'SHOT_CHANGE'>|null,
      *     QualityTuningLevel?: 'SINGLE_PASS'|'MULTI_PASS'|null,
      *     RateControlMode?: 'VBR'|'CBR'|null,
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,
