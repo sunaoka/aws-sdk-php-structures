@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property string|null $clientToken
  * @property Shapes\MultiRegionProperties|null $multiRegionProperties
+ * @property string|null $policy
+ * @property bool|null $bypassPolicyLockoutSafetyCheck
  */
 class CreateClusterRequest extends Request
 {
@@ -19,7 +21,9 @@ class CreateClusterRequest extends Request
      *     kmsEncryptionKey?: string|null,
      *     tags?: array<string, string>|null,
      *     clientToken?: string|null,
-     *     multiRegionProperties?: Shapes\MultiRegionProperties|null
+     *     multiRegionProperties?: Shapes\MultiRegionProperties|null,
+     *     policy?: string|null,
+     *     bypassPolicyLockoutSafetyCheck?: bool|null
      * } $args
      */
     public function __construct(array $args = [])
