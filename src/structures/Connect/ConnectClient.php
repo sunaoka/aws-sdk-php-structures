@@ -10,6 +10,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use AssociateBot\AssociateBotTrait;
     use AssociateContactWithUser\AssociateContactWithUserTrait;
     use AssociateDefaultVocabulary\AssociateDefaultVocabularyTrait;
+    use AssociateEmailAddressAlias\AssociateEmailAddressAliasTrait;
     use AssociateFlow\AssociateFlowTrait;
     use AssociateInstanceStorageConfig\AssociateInstanceStorageConfigTrait;
     use AssociateLambdaFunction\AssociateLambdaFunctionTrait;
@@ -114,6 +115,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DisassociateAnalyticsDataSet\DisassociateAnalyticsDataSetTrait;
     use DisassociateApprovedOrigin\DisassociateApprovedOriginTrait;
     use DisassociateBot\DisassociateBotTrait;
+    use DisassociateEmailAddressAlias\DisassociateEmailAddressAliasTrait;
     use DisassociateFlow\DisassociateFlowTrait;
     use DisassociateInstanceStorageConfig\DisassociateInstanceStorageConfigTrait;
     use DisassociateLambdaFunction\DisassociateLambdaFunctionTrait;

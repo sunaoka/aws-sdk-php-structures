@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $skipAppResign
  * @property VpcConfig|null $vpcConfig
  * @property DeviceProxy|null $deviceProxy
+ * @property string|null $appUpload
  */
 class RemoteAccessSession extends Shape
 {
@@ -55,7 +56,8 @@ class RemoteAccessSession extends Shape
      *     interactionMode?: 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY'|null,
      *     skipAppResign?: bool|null,
      *     vpcConfig?: VpcConfig|null,
-     *     deviceProxy?: DeviceProxy|null
+     *     deviceProxy?: DeviceProxy|null,
+     *     appUpload?: string|null
      * } $args
      */
     public function __construct(array $args = [])

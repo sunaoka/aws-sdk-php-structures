@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AnswerMachineDetectionConfig|null $AnswerMachineDetectionConfig
  * @property string|null $CampaignId
  * @property 'GENERAL'|'CAMPAIGN'|null $TrafficType
+ * @property Shapes\OutboundStrategy|null $OutboundStrategy
  */
 class StartOutboundVoiceContactRequest extends Request
 {
@@ -37,7 +38,8 @@ class StartOutboundVoiceContactRequest extends Request
      *     Attributes?: array<string, string>|null,
      *     AnswerMachineDetectionConfig?: Shapes\AnswerMachineDetectionConfig|null,
      *     CampaignId?: string|null,
-     *     TrafficType?: 'GENERAL'|'CAMPAIGN'|null
+     *     TrafficType?: 'GENERAL'|'CAMPAIGN'|null,
+     *     OutboundStrategy?: Shapes\OutboundStrategy|null
      * } $args
      */
     public function __construct(array $args)

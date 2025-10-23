@@ -6,6 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
+ * @property \Aws\Api\DateTimeResult|null $AcceptedByAgentTimestamp
+ * @property \Aws\Api\DateTimeResult|null $PreviewEndTimestamp
  * @property \Aws\Api\DateTimeResult|null $ConnectedToAgentTimestamp
  * @property int<0, max>|null $AgentPauseDurationInSeconds
  * @property HierarchyGroups|null $HierarchyGroups
@@ -22,6 +24,8 @@ class AgentInfo extends Shape
     /**
      * @param array{
      *     Id?: string|null,
+     *     AcceptedByAgentTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     PreviewEndTimestamp?: \Aws\Api\DateTimeResult|null,
      *     ConnectedToAgentTimestamp?: \Aws\Api\DateTimeResult|null,
      *     AgentPauseDurationInSeconds?: int<0, max>|null,
      *     HierarchyGroups?: HierarchyGroups|null,
