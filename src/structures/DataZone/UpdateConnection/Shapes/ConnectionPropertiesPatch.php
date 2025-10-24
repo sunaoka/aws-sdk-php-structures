@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AthenaPropertiesPatch|null $athenaProperties
  * @property GluePropertiesPatch|null $glueProperties
  * @property IamPropertiesPatch|null $iamProperties
+ * @property MlflowPropertiesPatch|null $mlflowProperties
  * @property RedshiftPropertiesPatch|null $redshiftProperties
  * @property S3PropertiesPatch|null $s3Properties
  * @property SparkEmrPropertiesPatch|null $sparkEmrProperties
@@ -21,6 +22,7 @@ class ConnectionPropertiesPatch extends Shape
      *     athenaProperties?: AthenaPropertiesPatch|null,
      *     glueProperties?: GluePropertiesPatch|null,
      *     iamProperties?: IamPropertiesPatch|null,
+     *     mlflowProperties?: MlflowPropertiesPatch|null,
      *     redshiftProperties?: RedshiftPropertiesPatch|null,
      *     s3Properties?: S3PropertiesPatch|null,
      *     sparkEmrProperties?: SparkEmrPropertiesPatch|null

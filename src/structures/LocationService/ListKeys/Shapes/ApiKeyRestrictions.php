@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $AllowActions
  * @property list<string> $AllowResources
  * @property list<string>|null $AllowReferers
+ * @property list<AndroidApp>|null $AllowAndroidApps
+ * @property list<AppleApp>|null $AllowAppleApps
  */
 class ApiKeyRestrictions extends Shape
 {
@@ -15,7 +17,9 @@ class ApiKeyRestrictions extends Shape
      * @param array{
      *     AllowActions: list<string>,
      *     AllowResources: list<string>,
-     *     AllowReferers?: list<string>|null
+     *     AllowReferers?: list<string>|null,
+     *     AllowAndroidApps?: list<AndroidApp>|null,
+     *     AllowAppleApps?: list<AppleApp>|null
      * } $args
      */
     public function __construct(array $args)

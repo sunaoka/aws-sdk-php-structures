@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'SPARK'|'ATHENA'|'PYTHON'>|null $compatibleComputeEnvironments
  * @property array<string, string>|null $connectionProperties
  * @property int<1, 2>|null $connectionSchemaVersion
- * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|null $connectionType
+ * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW'|null $connectionType
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult|null $lastConnectionValidationTime
@@ -33,7 +33,7 @@ class GlueConnection extends Shape
      *     compatibleComputeEnvironments?: list<'SPARK'|'ATHENA'|'PYTHON'>|null,
      *     connectionProperties?: array<string, string>|null,
      *     connectionSchemaVersion?: int<1, 2>|null,
-     *     connectionType?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|null,
+     *     connectionType?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW'|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     description?: string|null,
      *     lastConnectionValidationTime?: \Aws\Api\DateTimeResult|null,

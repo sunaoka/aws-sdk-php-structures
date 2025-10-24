@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ResourcesDateFilter>|null $DateFilters
  * @property list<ResourcesNumberFilter>|null $NumberFilters
  * @property list<ResourcesMapFilter>|null $MapFilters
+ * @property list<ResourcesCompositeFilter>|null $NestedCompositeFilters
  * @property 'AND'|'OR'|null $Operator
  */
 class ResourcesCompositeFilter extends Shape
@@ -19,6 +20,7 @@ class ResourcesCompositeFilter extends Shape
      *     DateFilters?: list<ResourcesDateFilter>|null,
      *     NumberFilters?: list<ResourcesNumberFilter>|null,
      *     MapFilters?: list<ResourcesMapFilter>|null,
+     *     NestedCompositeFilters?: list<ResourcesCompositeFilter>|null,
      *     Operator?: 'AND'|'OR'|null
      * } $args
      */
