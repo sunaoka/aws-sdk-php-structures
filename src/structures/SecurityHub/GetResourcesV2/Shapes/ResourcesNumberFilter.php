@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetResourcesV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'findings_summary.total_findings'|'findings_summary.severities.other'|'findings_summary.severities.fatal'|'findings_summary.severities.critical'|'findings_summary.severities.high'|'findings_summary.severities.medium'|'findings_summary.severities.low'|'findings_summary.severities.informational'|'findings_summary.severities.unknown'|null $FieldName
+ * @property 'FindingsSummary.TotalFindings'|'FindingsSummary.Severities.Other'|'FindingsSummary.Severities.Fatal'|'FindingsSummary.Severities.Critical'|'FindingsSummary.Severities.High'|'FindingsSummary.Severities.Medium'|'FindingsSummary.Severities.Low'|'FindingsSummary.Severities.Informational'|'FindingsSummary.Severities.Unknown'|null $FieldName
  * @property NumberFilter|null $Filter
  */
 class ResourcesNumberFilter extends Shape
 {
     /**
      * @param array{
-     *     FieldName?: 'findings_summary.total_findings'|'findings_summary.severities.other'|'findings_summary.severities.fatal'|'findings_summary.severities.critical'|'findings_summary.severities.high'|'findings_summary.severities.medium'|'findings_summary.severities.low'|'findings_summary.severities.informational'|'findings_summary.severities.unknown'|null,
+     *     FieldName?: 'FindingsSummary.TotalFindings'|'FindingsSummary.Severities.Other'|'FindingsSummary.Severities.Fatal'|'FindingsSummary.Severities.Critical'|'FindingsSummary.Severities.High'|'FindingsSummary.Severities.Medium'|'FindingsSummary.Severities.Low'|'FindingsSummary.Severities.Informational'|'FindingsSummary.Severities.Unknown'|null,
      *     Filter?: NumberFilter|null
      * } $args
      */

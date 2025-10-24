@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetResourcesStatisticsV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'account_id'|'region'|'resource_category'|'resource_type'|'resource_name'|'findings_summary.finding_type' $GroupByField
+ * @property 'AccountId'|'Region'|'ResourceCategory'|'ResourceType'|'ResourceName'|'FindingsSummary.FindingType' $GroupByField
  * @property ResourcesFilters|null $Filters
  */
 class ResourceGroupByRule extends Shape
 {
     /**
      * @param array{
-     *     GroupByField: 'account_id'|'region'|'resource_category'|'resource_type'|'resource_name'|'findings_summary.finding_type',
+     *     GroupByField: 'AccountId'|'Region'|'ResourceCategory'|'ResourceType'|'ResourceName'|'FindingsSummary.FindingType',
      *     Filters?: ResourcesFilters|null
      * } $args
      */
