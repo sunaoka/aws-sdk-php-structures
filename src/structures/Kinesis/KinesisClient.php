@@ -36,6 +36,7 @@ class KinesisClient extends \Aws\Kinesis\KinesisClient
     use StopStreamEncryption\StopStreamEncryptionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateMaxRecordSize\UpdateMaxRecordSizeTrait;
     use UpdateShardCount\UpdateShardCountTrait;
     use UpdateStreamMode\UpdateStreamModeTrait;
 }
