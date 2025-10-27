@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetResourcesV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $ResourceArn
+ * @property string|null $ResourceGuid
  * @property string $ResourceId
  * @property string $AccountId
  * @property string $Region
@@ -22,7 +22,7 @@ class ResourceResult extends Shape
 {
     /**
      * @param array{
-     *     ResourceArn?: string|null,
+     *     ResourceGuid?: string|null,
      *     ResourceId: string,
      *     AccountId: string,
      *     Region: string,

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $StreamGroupId
  * @property string|null $UserId
  * @property 'ACTIVATING'|'ACTIVE'|'CONNECTED'|'PENDING_CLIENT_RECONNECTION'|'RECONNECTING'|'TERMINATING'|'TERMINATED'|'ERROR'|null $Status
- * @property 'internalError'|'invalidSignalRequest'|'placementTimeout'|'applicationLogS3DestinationError'|null $StatusReason
+ * @property 'internalError'|'invalidSignalRequest'|'placementTimeout'|'applicationLogS3DestinationError'|'applicationExit'|'connectionTimeout'|'reconnectionTimeout'|'maxSessionLengthTimeout'|'idleTimeout'|'apiTerminated'|null $StatusReason
  * @property 'WebRTC'|null $Protocol
  * @property string|null $Location
  * @property string|null $SignalRequest

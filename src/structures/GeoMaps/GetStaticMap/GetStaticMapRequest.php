@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Key
  * @property 'Small'|'Large'|null $LabelSize
  * @property string|null $Language
- * @property int|null $Padding
+ * @property int<0, 350>|null $Padding
  * @property string|null $PoliticalView
  * @property 'Enabled'|'Disabled'|null $PointsOfInterests
  * @property int<0, 4294967295>|null $Radius
@@ -41,7 +41,7 @@ class GetStaticMapRequest extends Request
      *     Key?: string|null,
      *     LabelSize?: 'Small'|'Large'|null,
      *     Language?: string|null,
-     *     Padding?: int|null,
+     *     Padding?: int<0, 350>|null,
      *     PoliticalView?: string|null,
      *     PointsOfInterests?: 'Enabled'|'Disabled'|null,
      *     Radius?: int<0, 4294967295>|null,
