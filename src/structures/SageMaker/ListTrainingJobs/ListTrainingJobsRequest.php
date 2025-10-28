@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeAfter
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeBefore
  * @property string|null $NameContains
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $StatusEquals
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting'|null $StatusEquals
  * @property 'Name'|'CreationTime'|'Status'|null $SortBy
  * @property 'Ascending'|'Descending'|null $SortOrder
  * @property 'Available'|'Terminated'|'Reused'|'InUse'|null $WarmPoolStatusEquals
@@ -29,7 +29,7 @@ class ListTrainingJobsRequest extends Request
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult|null,
      *     NameContains?: string|null,
-     *     StatusEquals?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null,
+     *     StatusEquals?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting'|null,
      *     SortBy?: 'Name'|'CreationTime'|'Status'|null,
      *     SortOrder?: 'Ascending'|'Descending'|null,
      *     WarmPoolStatusEquals?: 'Available'|'Terminated'|'Reused'|'InUse'|null,

@@ -5,15 +5,17 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateEphemeris\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OEMEphemeris|null $oem
  * @property TLEEphemeris|null $tle
+ * @property OEMEphemeris|null $oem
+ * @property AzElEphemeris|null $azEl
  */
 class EphemerisData extends Shape
 {
     /**
      * @param array{
+     *     tle?: TLEEphemeris|null,
      *     oem?: OEMEphemeris|null,
-     *     tle?: TLEEphemeris|null
+     *     azEl?: AzElEphemeris|null
      * } $args
      */
     public function __construct(array $args = [])

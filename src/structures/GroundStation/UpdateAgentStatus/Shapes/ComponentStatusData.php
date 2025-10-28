@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\GroundStation\UpdateAgentStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int|null $bytesReceived
- * @property int|null $bytesSent
- * @property string $capabilityArn
  * @property string $componentType
- * @property string $dataflowId
- * @property int|null $packetsDropped
+ * @property string $capabilityArn
  * @property 'SUCCESS'|'FAILED'|'ACTIVE'|'INACTIVE' $status
+ * @property int|null $bytesSent
+ * @property int|null $bytesReceived
+ * @property int|null $packetsDropped
+ * @property string $dataflowId
  */
 class ComponentStatusData extends Shape
 {
     /**
      * @param array{
-     *     bytesReceived?: int|null,
-     *     bytesSent?: int|null,
-     *     capabilityArn: string,
      *     componentType: string,
-     *     dataflowId: string,
+     *     capabilityArn: string,
+     *     status: 'SUCCESS'|'FAILED'|'ACTIVE'|'INACTIVE',
+     *     bytesSent?: int|null,
+     *     bytesReceived?: int|null,
      *     packetsDropped?: int|null,
-     *     status: 'SUCCESS'|'FAILED'|'ACTIVE'|'INACTIVE'
+     *     dataflowId: string
      * } $args
      */
     public function __construct(array $args)

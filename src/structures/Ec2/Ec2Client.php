@@ -267,6 +267,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeCapacityManagerDataExports\DescribeCapacityManagerDataExportsTrait;
     use DescribeCapacityReservationBillingRequests\DescribeCapacityReservationBillingRequestsTrait;
     use DescribeCapacityReservationFleets\DescribeCapacityReservationFleetsTrait;
+    use DescribeCapacityReservationTopology\DescribeCapacityReservationTopologyTrait;
     use DescribeCapacityReservations\DescribeCapacityReservationsTrait;
     use DescribeCarrierGateways\DescribeCarrierGatewaysTrait;
     use DescribeClassicLinkInstances\DescribeClassicLinkInstancesTrait;

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DirectoryId
  * @property string|null $UserName
  * @property string|null $IpAddress
+ * @property string|null $Ipv6Address
  * @property 'PENDING'|'AVAILABLE'|'IMPAIRED'|'UNHEALTHY'|'REBOOTING'|'STARTING'|'REBUILDING'|'RESTORING'|'MAINTENANCE'|'ADMIN_MAINTENANCE'|'TERMINATING'|'TERMINATED'|'SUSPENDED'|'UPDATING'|'STOPPING'|'STOPPED'|'ERROR'|null $State
  * @property string|null $BundleId
  * @property string|null $SubnetId
@@ -33,6 +34,7 @@ class Workspace extends Shape
      *     DirectoryId?: string|null,
      *     UserName?: string|null,
      *     IpAddress?: string|null,
+     *     Ipv6Address?: string|null,
      *     State?: 'PENDING'|'AVAILABLE'|'IMPAIRED'|'UNHEALTHY'|'REBOOTING'|'STARTING'|'REBUILDING'|'RESTORING'|'MAINTENANCE'|'ADMIN_MAINTENANCE'|'TERMINATING'|'TERMINATED'|'SUSPENDED'|'UPDATING'|'STOPPING'|'STOPPED'|'ERROR'|null,
      *     BundleId?: string|null,
      *     SubnetId?: string|null,

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $TrainingStartTime
  * @property \Aws\Api\DateTimeResult|null $TrainingEndTime
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TrainingJobStatus
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting' $TrainingJobStatus
  * @property array<string, string> $TunedHyperParameters
  * @property string|null $FailureReason
  * @property FinalHyperParameterTuningJobObjectiveMetric|null $FinalHyperParameterTuningJobObjectiveMetric
@@ -29,7 +29,7 @@ class HyperParameterTrainingJobSummary extends Shape
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     TrainingStartTime?: \Aws\Api\DateTimeResult|null,
      *     TrainingEndTime?: \Aws\Api\DateTimeResult|null,
-     *     TrainingJobStatus: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
+     *     TrainingJobStatus: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting',
      *     TunedHyperParameters: array<string, string>,
      *     FailureReason?: string|null,
      *     FinalHyperParameterTuningJobObjectiveMetric?: FinalHyperParameterTuningJobObjectiveMetric|null,

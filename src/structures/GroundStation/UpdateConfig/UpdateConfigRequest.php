@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GroundStation\UpdateConfig;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\ConfigTypeData $configData
  * @property string $configId
- * @property 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording' $configType
  * @property string $name
+ * @property 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording' $configType
+ * @property Shapes\ConfigTypeData $configData
  */
 class UpdateConfigRequest extends Request
 {
     /**
      * @param array{
-     *     configData: Shapes\ConfigTypeData,
      *     configId: string,
+     *     name: string,
      *     configType: 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording',
-     *     name: string
+     *     configData: Shapes\ConfigTypeData
      * } $args
      */
     public function __construct(array $args)

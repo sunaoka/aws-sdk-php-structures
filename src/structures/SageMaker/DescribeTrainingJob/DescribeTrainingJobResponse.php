@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $LabelingJobArn
  * @property string|null $AutoMLJobArn
  * @property Shapes\ModelArtifacts $ModelArtifacts
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TrainingJobStatus
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting' $TrainingJobStatus
  * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending' $SecondaryStatus
  * @property string|null $FailureReason
  * @property array<string, string>|null $HyperParameters

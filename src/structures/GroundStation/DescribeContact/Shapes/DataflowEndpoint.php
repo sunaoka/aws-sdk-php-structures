@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GroundStation\DescribeContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SocketAddress|null $address
- * @property int<1400, 1500>|null $mtu
  * @property string|null $name
+ * @property SocketAddress|null $address
  * @property 'created'|'creating'|'deleted'|'deleting'|'failed'|null $status
+ * @property int<1400, 1500>|null $mtu
  */
 class DataflowEndpoint extends Shape
 {
     /**
      * @param array{
-     *     address?: SocketAddress|null,
-     *     mtu?: int<1400, 1500>|null,
      *     name?: string|null,
-     *     status?: 'created'|'creating'|'deleted'|'deleting'|'failed'|null
+     *     address?: SocketAddress|null,
+     *     status?: 'created'|'creating'|'deleted'|'deleting'|'failed'|null,
+     *     mtu?: int<1400, 1500>|null
      * } $args
      */
     public function __construct(array $args = [])

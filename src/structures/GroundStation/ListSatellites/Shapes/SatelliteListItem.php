@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListSatellites\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EphemerisMetaData|null $currentEphemeris
- * @property list<string>|null $groundStations
- * @property int<0, 99999>|null $noradSatelliteID
- * @property string|null $satelliteArn
  * @property string|null $satelliteId
+ * @property string|null $satelliteArn
+ * @property int<0, 99999>|null $noradSatelliteID
+ * @property list<string>|null $groundStations
+ * @property EphemerisMetaData|null $currentEphemeris
  */
 class SatelliteListItem extends Shape
 {
     /**
      * @param array{
-     *     currentEphemeris?: EphemerisMetaData|null,
-     *     groundStations?: list<string>|null,
-     *     noradSatelliteID?: int<0, 99999>|null,
+     *     satelliteId?: string|null,
      *     satelliteArn?: string|null,
-     *     satelliteId?: string|null
+     *     noradSatelliteID?: int<0, 99999>|null,
+     *     groundStations?: list<string>|null,
+     *     currentEphemeris?: EphemerisMetaData|null
      * } $args
      */
     public function __construct(array $args = [])

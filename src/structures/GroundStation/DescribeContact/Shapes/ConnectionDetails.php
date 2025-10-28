@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GroundStation\DescribeContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int|null $mtu
  * @property SocketAddress $socketAddress
+ * @property int|null $mtu
  */
 class ConnectionDetails extends Shape
 {
     /**
      * @param array{
-     *     mtu?: int|null,
-     *     socketAddress: SocketAddress
+     *     socketAddress: SocketAddress,
+     *     mtu?: int|null
      * } $args
      */
     public function __construct(array $args)

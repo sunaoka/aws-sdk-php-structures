@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateDataflowEndpointGroup\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $roleArn
- * @property list<string> $securityGroupIds
  * @property list<string> $subnetIds
+ * @property list<string> $securityGroupIds
+ * @property string $roleArn
  */
 class SecurityDetails extends Shape
 {
     /**
      * @param array{
-     *     roleArn: string,
+     *     subnetIds: list<string>,
      *     securityGroupIds: list<string>,
-     *     subnetIds: list<string>
+     *     roleArn: string
      * } $args
      */
     public function __construct(array $args)

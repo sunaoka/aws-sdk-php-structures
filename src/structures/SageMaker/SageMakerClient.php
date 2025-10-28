@@ -123,10 +123,12 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteOptimizationJob\DeleteOptimizationJobTrait;
     use DeletePartnerApp\DeletePartnerAppTrait;
     use DeletePipeline\DeletePipelineTrait;
+    use DeleteProcessingJob\DeleteProcessingJobTrait;
     use DeleteProject\DeleteProjectTrait;
     use DeleteSpace\DeleteSpaceTrait;
     use DeleteStudioLifecycleConfig\DeleteStudioLifecycleConfigTrait;
     use DeleteTags\DeleteTagsTrait;
+    use DeleteTrainingJob\DeleteTrainingJobTrait;
     use DeleteTrial\DeleteTrialTrait;
     use DeleteTrialComponent\DeleteTrialComponentTrait;
     use DeleteUserProfile\DeleteUserProfileTrait;

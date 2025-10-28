@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateDataflowEndpointGroup\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsGroundStationAgentEndpoint|null $awsGroundStationAgentEndpoint
- * @property DataflowEndpoint|null $endpoint
- * @property list<'NO_REGISTERED_AGENT'|'INVALID_IP_OWNERSHIP'|'NOT_AUTHORIZED_TO_CREATE_SLR'|'UNVERIFIED_IP_OWNERSHIP'|'INITIALIZING_DATAPLANE'|'DATAPLANE_FAILURE'|'HEALTHY'>|null $healthReasons
- * @property 'HEALTHY'|'UNHEALTHY'|null $healthStatus
  * @property SecurityDetails|null $securityDetails
+ * @property DataflowEndpoint|null $endpoint
+ * @property AwsGroundStationAgentEndpoint|null $awsGroundStationAgentEndpoint
+ * @property 'HEALTHY'|'UNHEALTHY'|null $healthStatus
+ * @property list<'NO_REGISTERED_AGENT'|'INVALID_IP_OWNERSHIP'|'NOT_AUTHORIZED_TO_CREATE_SLR'|'UNVERIFIED_IP_OWNERSHIP'|'INITIALIZING_DATAPLANE'|'DATAPLANE_FAILURE'|'HEALTHY'>|null $healthReasons
  */
 class EndpointDetails extends Shape
 {
     /**
      * @param array{
-     *     awsGroundStationAgentEndpoint?: AwsGroundStationAgentEndpoint|null,
+     *     securityDetails?: SecurityDetails|null,
      *     endpoint?: DataflowEndpoint|null,
-     *     healthReasons?: list<'NO_REGISTERED_AGENT'|'INVALID_IP_OWNERSHIP'|'NOT_AUTHORIZED_TO_CREATE_SLR'|'UNVERIFIED_IP_OWNERSHIP'|'INITIALIZING_DATAPLANE'|'DATAPLANE_FAILURE'|'HEALTHY'>|null,
+     *     awsGroundStationAgentEndpoint?: AwsGroundStationAgentEndpoint|null,
      *     healthStatus?: 'HEALTHY'|'UNHEALTHY'|null,
-     *     securityDetails?: SecurityDetails|null
+     *     healthReasons?: list<'NO_REGISTERED_AGENT'|'INVALID_IP_OWNERSHIP'|'NOT_AUTHORIZED_TO_CREATE_SLR'|'UNVERIFIED_IP_OWNERSHIP'|'INITIALIZING_DATAPLANE'|'DATAPLANE_FAILURE'|'HEALTHY'>|null
      * } $args
      */
     public function __construct(array $args = [])

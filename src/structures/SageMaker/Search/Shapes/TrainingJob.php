@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LabelingJobArn
  * @property string|null $AutoMLJobArn
  * @property ModelArtifacts|null $ModelArtifacts
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $TrainingJobStatus
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting'|null $TrainingJobStatus
  * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null $SecondaryStatus
  * @property string|null $FailureReason
  * @property array<string, string>|null $HyperParameters
@@ -54,7 +54,7 @@ class TrainingJob extends Shape
      *     LabelingJobArn?: string|null,
      *     AutoMLJobArn?: string|null,
      *     ModelArtifacts?: ModelArtifacts|null,
-     *     TrainingJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null,
+     *     TrainingJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting'|null,
      *     SecondaryStatus?: 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null,
      *     FailureReason?: string|null,
      *     HyperParameters?: array<string, string>|null,
