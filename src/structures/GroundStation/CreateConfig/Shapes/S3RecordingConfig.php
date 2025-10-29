@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $bucketArn
- * @property string|null $prefix
  * @property string $roleArn
+ * @property string|null $prefix
  */
 class S3RecordingConfig extends Shape
 {
     /**
      * @param array{
      *     bucketArn: string,
-     *     prefix?: string|null,
-     *     roleArn: string
+     *     roleArn: string,
+     *     prefix?: string|null
      * } $args
      */
     public function __construct(array $args)

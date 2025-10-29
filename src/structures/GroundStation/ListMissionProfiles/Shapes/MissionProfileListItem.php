@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListMissionProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $missionProfileArn
  * @property string|null $missionProfileId
- * @property string|null $name
+ * @property string|null $missionProfileArn
  * @property string|null $region
+ * @property string|null $name
  */
 class MissionProfileListItem extends Shape
 {
     /**
      * @param array{
-     *     missionProfileArn?: string|null,
      *     missionProfileId?: string|null,
-     *     name?: string|null,
-     *     region?: string|null
+     *     missionProfileArn?: string|null,
+     *     region?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

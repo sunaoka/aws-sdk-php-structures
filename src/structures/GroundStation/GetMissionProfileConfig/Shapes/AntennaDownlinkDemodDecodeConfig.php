@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GroundStation\GetMissionProfileConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DecodeConfig $decodeConfig
- * @property DemodulationConfig $demodulationConfig
  * @property SpectrumConfig $spectrumConfig
+ * @property DemodulationConfig $demodulationConfig
+ * @property DecodeConfig $decodeConfig
  */
 class AntennaDownlinkDemodDecodeConfig extends Shape
 {
     /**
      * @param array{
-     *     decodeConfig: DecodeConfig,
+     *     spectrumConfig: SpectrumConfig,
      *     demodulationConfig: DemodulationConfig,
-     *     spectrumConfig: SpectrumConfig
+     *     decodeConfig: DecodeConfig
      * } $args
      */
     public function __construct(array $args)

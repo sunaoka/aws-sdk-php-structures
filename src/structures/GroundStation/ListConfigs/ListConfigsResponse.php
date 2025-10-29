@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListConfigs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ConfigListItem>|null $configList
  * @property string|null $nextToken
+ * @property list<Shapes\ConfigListItem>|null $configList
  */
 class ListConfigsResponse extends Response
 {

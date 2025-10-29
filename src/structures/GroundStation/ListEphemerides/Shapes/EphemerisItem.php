@@ -5,25 +5,27 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListEphemerides\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $creationTime
- * @property bool|null $enabled
  * @property string|null $ephemerisId
- * @property string|null $name
- * @property int<0, 99999>|null $priority
- * @property S3Object|null $sourceS3Object
+ * @property 'TLE'|'OEM'|'AZ_EL'|'SERVICE_MANAGED'|null $ephemerisType
  * @property 'VALIDATING'|'INVALID'|'ERROR'|'ENABLED'|'DISABLED'|'EXPIRED'|null $status
+ * @property int<0, 99999>|null $priority
+ * @property bool|null $enabled
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $name
+ * @property S3Object|null $sourceS3Object
  */
 class EphemerisItem extends Shape
 {
     /**
      * @param array{
-     *     creationTime?: \Aws\Api\DateTimeResult|null,
-     *     enabled?: bool|null,
      *     ephemerisId?: string|null,
-     *     name?: string|null,
+     *     ephemerisType?: 'TLE'|'OEM'|'AZ_EL'|'SERVICE_MANAGED'|null,
+     *     status?: 'VALIDATING'|'INVALID'|'ERROR'|'ENABLED'|'DISABLED'|'EXPIRED'|null,
      *     priority?: int<0, 99999>|null,
-     *     sourceS3Object?: S3Object|null,
-     *     status?: 'VALIDATING'|'INVALID'|'ERROR'|'ENABLED'|'DISABLED'|'EXPIRED'|null
+     *     enabled?: bool|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     name?: string|null,
+     *     sourceS3Object?: S3Object|null
      * } $args
      */
     public function __construct(array $args = [])

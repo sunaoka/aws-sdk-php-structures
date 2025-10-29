@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
  * @property string|null $GrantWriteACP
+ * @property string|null $IfMatch
+ * @property string|null $IfNoneMatch
  * @property string $Key
  * @property array<string, string>|null $Metadata
  * @property 'COPY'|'REPLACE'|null $MetadataDirective
@@ -69,6 +71,8 @@ class CopyObjectRequest extends Request
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,
      *     GrantWriteACP?: string|null,
+     *     IfMatch?: string|null,
+     *     IfNoneMatch?: string|null,
      *     Key: string,
      *     Metadata?: array<string, string>|null,
      *     MetadataDirective?: 'COPY'|'REPLACE'|null,

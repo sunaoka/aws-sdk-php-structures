@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RegistrationCode
  * @property list<string>|null $SubnetIds
  * @property list<string>|null $DnsIpAddresses
+ * @property list<string>|null $DnsIpv6Addresses
  * @property string|null $CustomerUserName
  * @property string|null $IamRoleId
  * @property 'SIMPLE_AD'|'AD_CONNECTOR'|'CUSTOMER_MANAGED'|'AWS_IAM_IDENTITY_CENTER'|null $DirectoryType
@@ -44,6 +45,7 @@ class WorkspaceDirectory extends Shape
      *     RegistrationCode?: string|null,
      *     SubnetIds?: list<string>|null,
      *     DnsIpAddresses?: list<string>|null,
+     *     DnsIpv6Addresses?: list<string>|null,
      *     CustomerUserName?: string|null,
      *     IamRoleId?: string|null,
      *     DirectoryType?: 'SIMPLE_AD'|'AD_CONNECTOR'|'CUSTOMER_MANAGED'|'AWS_IAM_IDENTITY_CENTER'|null,

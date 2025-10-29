@@ -10,9 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property DefaultApplication|null $DefaultApplication
  * @property 'gen4n_high'|'gen4n_ultra'|'gen4n_win2022'|'gen5n_high'|'gen5n_ultra'|'gen5n_win2022'|null $StreamClass
- * @property 'ACTIVATING'|'UPDATING_LOCATIONS'|'ACTIVE'|'ACTIVE_WITH_ERRORS'|'ERROR'|'DELETING'|null $Status
+ * @property 'ACTIVATING'|'UPDATING_LOCATIONS'|'ACTIVE'|'ACTIVE_WITH_ERRORS'|'ERROR'|'DELETING'|'EXPIRED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property \Aws\Api\DateTimeResult|null $ExpiresAt
  */
 class StreamGroupSummary extends Shape
 {
@@ -23,9 +24,10 @@ class StreamGroupSummary extends Shape
      *     Description?: string|null,
      *     DefaultApplication?: DefaultApplication|null,
      *     StreamClass?: 'gen4n_high'|'gen4n_ultra'|'gen4n_win2022'|'gen5n_high'|'gen5n_ultra'|'gen5n_win2022'|null,
-     *     Status?: 'ACTIVATING'|'UPDATING_LOCATIONS'|'ACTIVE'|'ACTIVE_WITH_ERRORS'|'ERROR'|'DELETING'|null,
+     *     Status?: 'ACTIVATING'|'UPDATING_LOCATIONS'|'ACTIVE'|'ACTIVE_WITH_ERRORS'|'ERROR'|'DELETING'|'EXPIRED'|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null
+     *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     ExpiresAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

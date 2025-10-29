@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GroundStation\GetDataflowEndpointGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int<120, 480>|null $contactPostPassDurationSeconds
- * @property int<120, 480>|null $contactPrePassDurationSeconds
- * @property string|null $dataflowEndpointGroupArn
  * @property string|null $dataflowEndpointGroupId
+ * @property string|null $dataflowEndpointGroupArn
  * @property list<Shapes\EndpointDetails>|null $endpointsDetails
  * @property array<string, string>|null $tags
+ * @property int<120, 480>|null $contactPrePassDurationSeconds
+ * @property int<120, 480>|null $contactPostPassDurationSeconds
  */
 class GetDataflowEndpointGroupResponse extends Response
 {
