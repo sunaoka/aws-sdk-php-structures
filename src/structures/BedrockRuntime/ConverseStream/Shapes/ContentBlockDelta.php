@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $text
  * @property ToolUseBlockDelta|null $toolUse
+ * @property list<ToolResultBlockDelta>|null $toolResult
  * @property ReasoningContentBlockDelta|null $reasoningContent
  * @property CitationsDelta|null $citation
  */
@@ -16,6 +17,7 @@ class ContentBlockDelta extends Shape
      * @param array{
      *     text?: string|null,
      *     toolUse?: ToolUseBlockDelta|null,
+     *     toolResult?: list<ToolResultBlockDelta>|null,
      *     reasoningContent?: ReasoningContentBlockDelta|null,
      *     citation?: CitationsDelta|null
      * } $args

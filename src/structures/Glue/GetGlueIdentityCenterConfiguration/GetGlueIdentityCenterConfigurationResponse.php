@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ApplicationArn
  * @property string|null $InstanceArn
  * @property list<string>|null $Scopes
+ * @property bool|null $UserBackgroundSessionsEnabled
  */
 class GetGlueIdentityCenterConfigurationResponse extends Response
 {

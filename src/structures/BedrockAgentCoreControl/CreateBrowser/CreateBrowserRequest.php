@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $executionRoleArn
  * @property Shapes\BrowserNetworkConfiguration $networkConfiguration
  * @property Shapes\RecordingConfig|null $recording
+ * @property Shapes\BrowserSigningConfigInput|null $browserSigning
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
@@ -22,6 +23,7 @@ class CreateBrowserRequest extends Request
      *     executionRoleArn?: string|null,
      *     networkConfiguration: Shapes\BrowserNetworkConfiguration,
      *     recording?: Shapes\RecordingConfig|null,
+     *     browserSigning?: Shapes\BrowserSigningConfigInput|null,
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args
