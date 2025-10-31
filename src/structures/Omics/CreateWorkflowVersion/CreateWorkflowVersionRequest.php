@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $definitionUri
  * @property 'GPU'|null $accelerators
  * @property string|null $description
- * @property 'WDL'|'NEXTFLOW'|'CWL'|null $engine
+ * @property 'WDL'|'NEXTFLOW'|'CWL'|'WDL_LENIENT'|null $engine
  * @property string|null $main
  * @property array<string, Shapes\WorkflowParameter>|null $parameterTemplate
  * @property string $requestId
@@ -37,7 +37,7 @@ class CreateWorkflowVersionRequest extends Request
      *     definitionUri?: string|null,
      *     accelerators?: 'GPU'|null,
      *     description?: string|null,
-     *     engine?: 'WDL'|'NEXTFLOW'|'CWL'|null,
+     *     engine?: 'WDL'|'NEXTFLOW'|'CWL'|'WDL_LENIENT'|null,
      *     main?: string|null,
      *     parameterTemplate?: array<string, Shapes\WorkflowParameter>|null,
      *     requestId: string,
