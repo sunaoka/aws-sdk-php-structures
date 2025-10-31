@@ -92,6 +92,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateIpam\CreateIpamTrait;
     use CreateIpamExternalResourceVerificationToken\CreateIpamExternalResourceVerificationTokenTrait;
     use CreateIpamPool\CreateIpamPoolTrait;
+    use CreateIpamPrefixListResolver\CreateIpamPrefixListResolverTrait;
+    use CreateIpamPrefixListResolverTarget\CreateIpamPrefixListResolverTargetTrait;
     use CreateIpamResourceDiscovery\CreateIpamResourceDiscoveryTrait;
     use CreateIpamScope\CreateIpamScopeTrait;
     use CreateKeyPair\CreateKeyPairTrait;
@@ -178,6 +180,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteIpam\DeleteIpamTrait;
     use DeleteIpamExternalResourceVerificationToken\DeleteIpamExternalResourceVerificationTokenTrait;
     use DeleteIpamPool\DeleteIpamPoolTrait;
+    use DeleteIpamPrefixListResolver\DeleteIpamPrefixListResolverTrait;
+    use DeleteIpamPrefixListResolverTarget\DeleteIpamPrefixListResolverTargetTrait;
     use DeleteIpamResourceDiscovery\DeleteIpamResourceDiscoveryTrait;
     use DeleteIpamScope\DeleteIpamScopeTrait;
     use DeleteKeyPair\DeleteKeyPairTrait;
@@ -321,6 +325,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeIpamByoasn\DescribeIpamByoasnTrait;
     use DescribeIpamExternalResourceVerificationTokens\DescribeIpamExternalResourceVerificationTokensTrait;
     use DescribeIpamPools\DescribeIpamPoolsTrait;
+    use DescribeIpamPrefixListResolverTargets\DescribeIpamPrefixListResolverTargetsTrait;
+    use DescribeIpamPrefixListResolvers\DescribeIpamPrefixListResolversTrait;
     use DescribeIpamResourceDiscoveries\DescribeIpamResourceDiscoveriesTrait;
     use DescribeIpamResourceDiscoveryAssociations\DescribeIpamResourceDiscoveryAssociationsTrait;
     use DescribeIpamScopes\DescribeIpamScopesTrait;
@@ -523,6 +529,9 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetIpamDiscoveredResourceCidrs\GetIpamDiscoveredResourceCidrsTrait;
     use GetIpamPoolAllocations\GetIpamPoolAllocationsTrait;
     use GetIpamPoolCidrs\GetIpamPoolCidrsTrait;
+    use GetIpamPrefixListResolverRules\GetIpamPrefixListResolverRulesTrait;
+    use GetIpamPrefixListResolverVersionEntries\GetIpamPrefixListResolverVersionEntriesTrait;
+    use GetIpamPrefixListResolverVersions\GetIpamPrefixListResolverVersionsTrait;
     use GetIpamResourceCidrs\GetIpamResourceCidrsTrait;
     use GetLaunchTemplateData\GetLaunchTemplateDataTrait;
     use GetManagedPrefixListAssociations\GetManagedPrefixListAssociationsTrait;
@@ -588,6 +597,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyInstancePlacement\ModifyInstancePlacementTrait;
     use ModifyIpam\ModifyIpamTrait;
     use ModifyIpamPool\ModifyIpamPoolTrait;
+    use ModifyIpamPrefixListResolver\ModifyIpamPrefixListResolverTrait;
+    use ModifyIpamPrefixListResolverTarget\ModifyIpamPrefixListResolverTargetTrait;
     use ModifyIpamResourceCidr\ModifyIpamResourceCidrTrait;
     use ModifyIpamResourceDiscovery\ModifyIpamResourceDiscoveryTrait;
     use ModifyIpamScope\ModifyIpamScopeTrait;

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $description
  * @property string|null $definition
  * @property string|null $digest
- * @property 'WDL'|'NEXTFLOW'|'CWL'|null $engine
+ * @property 'WDL'|'NEXTFLOW'|'CWL'|'WDL_LENIENT'|null $engine
  * @property string|null $main
  * @property array<string, string>|null $metadata
  * @property array<string, Shapes\WorkflowParameter>|null $parameterTemplate

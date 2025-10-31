@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $name
  * @property string|null $description
- * @property 'WDL'|'NEXTFLOW'|'CWL'|null $engine
+ * @property 'WDL'|'NEXTFLOW'|'CWL'|'WDL_LENIENT'|null $engine
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $definitionZip
  * @property string|null $definitionUri
  * @property string|null $main
@@ -32,7 +32,7 @@ class CreateWorkflowRequest extends Request
      * @param array{
      *     name?: string|null,
      *     description?: string|null,
-     *     engine?: 'WDL'|'NEXTFLOW'|'CWL'|null,
+     *     engine?: 'WDL'|'NEXTFLOW'|'CWL'|'WDL_LENIENT'|null,
      *     definitionZip?: string|resource|\Psr\Http\Message\StreamInterface|null,
      *     definitionUri?: string|null,
      *     main?: string|null,
