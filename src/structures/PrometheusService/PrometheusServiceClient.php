@@ -5,12 +5,14 @@ namespace Sunaoka\Aws\Structures\PrometheusService;
 class PrometheusServiceClient extends \Aws\PrometheusService\PrometheusServiceClient
 {
     use CreateAlertManagerDefinition\CreateAlertManagerDefinitionTrait;
+    use CreateAnomalyDetector\CreateAnomalyDetectorTrait;
     use CreateLoggingConfiguration\CreateLoggingConfigurationTrait;
     use CreateQueryLoggingConfiguration\CreateQueryLoggingConfigurationTrait;
     use CreateRuleGroupsNamespace\CreateRuleGroupsNamespaceTrait;
     use CreateScraper\CreateScraperTrait;
     use CreateWorkspace\CreateWorkspaceTrait;
     use DeleteAlertManagerDefinition\DeleteAlertManagerDefinitionTrait;
+    use DeleteAnomalyDetector\DeleteAnomalyDetectorTrait;
     use DeleteLoggingConfiguration\DeleteLoggingConfigurationTrait;
     use DeleteQueryLoggingConfiguration\DeleteQueryLoggingConfigurationTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
@@ -19,6 +21,7 @@ class PrometheusServiceClient extends \Aws\PrometheusService\PrometheusServiceCl
     use DeleteScraperLoggingConfiguration\DeleteScraperLoggingConfigurationTrait;
     use DeleteWorkspace\DeleteWorkspaceTrait;
     use DescribeAlertManagerDefinition\DescribeAlertManagerDefinitionTrait;
+    use DescribeAnomalyDetector\DescribeAnomalyDetectorTrait;
     use DescribeLoggingConfiguration\DescribeLoggingConfigurationTrait;
     use DescribeQueryLoggingConfiguration\DescribeQueryLoggingConfigurationTrait;
     use DescribeResourcePolicy\DescribeResourcePolicyTrait;
@@ -28,11 +31,13 @@ class PrometheusServiceClient extends \Aws\PrometheusService\PrometheusServiceCl
     use DescribeWorkspace\DescribeWorkspaceTrait;
     use DescribeWorkspaceConfiguration\DescribeWorkspaceConfigurationTrait;
     use GetDefaultScraperConfiguration\GetDefaultScraperConfigurationTrait;
+    use ListAnomalyDetectors\ListAnomalyDetectorsTrait;
     use ListRuleGroupsNamespaces\ListRuleGroupsNamespacesTrait;
     use ListScrapers\ListScrapersTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListWorkspaces\ListWorkspacesTrait;
     use PutAlertManagerDefinition\PutAlertManagerDefinitionTrait;
+    use PutAnomalyDetector\PutAnomalyDetectorTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use PutRuleGroupsNamespace\PutRuleGroupsNamespaceTrait;
     use TagResource\TagResourceTrait;

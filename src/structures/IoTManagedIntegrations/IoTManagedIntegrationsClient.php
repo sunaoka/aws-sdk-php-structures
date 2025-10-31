@@ -39,6 +39,7 @@ class IoTManagedIntegrationsClient extends \Aws\IoTManagedIntegrations\IoTManage
     use GetHubConfiguration\GetHubConfigurationTrait;
     use GetManagedThing\GetManagedThingTrait;
     use GetManagedThingCapabilities\GetManagedThingCapabilitiesTrait;
+    use GetManagedThingCertificate\GetManagedThingCertificateTrait;
     use GetManagedThingConnectivityData\GetManagedThingConnectivityDataTrait;
     use GetManagedThingMetaData\GetManagedThingMetaDataTrait;
     use GetManagedThingState\GetManagedThingStateTrait;

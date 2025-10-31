@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $executionRoleArn
  * @property Shapes\BrowserNetworkConfiguration $networkConfiguration
  * @property Shapes\RecordingConfig|null $recording
+ * @property Shapes\BrowserSigningConfigOutput|null $browserSigning
  * @property 'CREATING'|'CREATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED'|'DELETED' $status
  * @property string|null $failureReason
  * @property \Aws\Api\DateTimeResult $createdAt

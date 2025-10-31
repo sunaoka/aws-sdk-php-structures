@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ToolSpecification|null $toolSpec
+ * @property SystemTool|null $systemTool
  * @property CachePointBlock|null $cachePoint
  */
 class Tool extends Shape
@@ -13,6 +14,7 @@ class Tool extends Shape
     /**
      * @param array{
      *     toolSpec?: ToolSpecification|null,
+     *     systemTool?: SystemTool|null,
      *     cachePoint?: CachePointBlock|null
      * } $args
      */
