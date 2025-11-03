@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $caseRuleId
- * @property string $fieldId
+ * @property string|null $fieldId
  */
 class TemplateRule extends Shape
 {
     /**
      * @param array{
      *     caseRuleId: string,
-     *     fieldId: string
+     *     fieldId?: string|null
      * } $args
      */
     public function __construct(array $args)

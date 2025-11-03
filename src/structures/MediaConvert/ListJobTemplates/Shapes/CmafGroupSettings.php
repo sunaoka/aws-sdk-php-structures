@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED'|null $ClientCache
  * @property 'RFC_6381'|'RFC_4281'|null $CodecSpecification
  * @property string|null $DashIFrameTrickPlayNameModifier
- * @property 'BASIC'|'COMPACT'|'DISTINCT'|null $DashManifestStyle
+ * @property 'BASIC'|'COMPACT'|'DISTINCT'|'FULL'|null $DashManifestStyle
  * @property string|null $Destination
  * @property DestinationSettings|null $DestinationSettings
  * @property CmafEncryptionSettings|null $Encryption
@@ -43,7 +43,7 @@ class CmafGroupSettings extends Shape
      *     ClientCache?: 'DISABLED'|'ENABLED'|null,
      *     CodecSpecification?: 'RFC_6381'|'RFC_4281'|null,
      *     DashIFrameTrickPlayNameModifier?: string|null,
-     *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|null,
+     *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|'FULL'|null,
      *     Destination?: string|null,
      *     DestinationSettings?: DestinationSettings|null,
      *     Encryption?: CmafEncryptionSettings|null,

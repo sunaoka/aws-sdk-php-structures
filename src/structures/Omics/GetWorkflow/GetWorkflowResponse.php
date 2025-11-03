@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PRIVATE'|'READY2RUN'|null $type
  * @property string|null $name
  * @property string|null $description
- * @property 'WDL'|'NEXTFLOW'|'CWL'|null $engine
+ * @property 'WDL'|'NEXTFLOW'|'CWL'|'WDL_LENIENT'|null $engine
  * @property string|null $definition
  * @property string|null $main
  * @property string|null $digest
