@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property H264Settings|null $H264Settings
  * @property H265Settings|null $H265Settings
  * @property Mpeg2Settings|null $Mpeg2Settings
+ * @property PassthroughSettings|null $PassthroughSettings
  * @property ProresSettings|null $ProresSettings
  * @property UncompressedSettings|null $UncompressedSettings
  * @property Vc3Settings|null $Vc3Settings
@@ -32,6 +33,7 @@ class VideoCodecSettings extends Shape
      *     H264Settings?: H264Settings|null,
      *     H265Settings?: H265Settings|null,
      *     Mpeg2Settings?: Mpeg2Settings|null,
+     *     PassthroughSettings?: PassthroughSettings|null,
      *     ProresSettings?: ProresSettings|null,
      *     UncompressedSettings?: UncompressedSettings|null,
      *     Vc3Settings?: Vc3Settings|null,

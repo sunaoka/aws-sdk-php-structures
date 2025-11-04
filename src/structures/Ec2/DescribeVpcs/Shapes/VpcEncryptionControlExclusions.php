@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcEncryptionControlExclusion|null $NatGateway
  * @property VpcEncryptionControlExclusion|null $VirtualPrivateGateway
  * @property VpcEncryptionControlExclusion|null $VpcPeering
+ * @property VpcEncryptionControlExclusion|null $Lambda
+ * @property VpcEncryptionControlExclusion|null $VpcLattice
+ * @property VpcEncryptionControlExclusion|null $ElasticFileSystem
  */
 class VpcEncryptionControlExclusions extends Shape
 {
@@ -19,7 +22,10 @@ class VpcEncryptionControlExclusions extends Shape
      *     EgressOnlyInternetGateway?: VpcEncryptionControlExclusion|null,
      *     NatGateway?: VpcEncryptionControlExclusion|null,
      *     VirtualPrivateGateway?: VpcEncryptionControlExclusion|null,
-     *     VpcPeering?: VpcEncryptionControlExclusion|null
+     *     VpcPeering?: VpcEncryptionControlExclusion|null,
+     *     Lambda?: VpcEncryptionControlExclusion|null,
+     *     VpcLattice?: VpcEncryptionControlExclusion|null,
+     *     ElasticFileSystem?: VpcEncryptionControlExclusion|null
      * } $args
      */
     public function __construct(array $args = [])

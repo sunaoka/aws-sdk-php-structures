@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $caseRuleId
  * @property string $name
  * @property string $caseRuleArn
- * @property 'Required' $ruleType
+ * @property 'Required'|'Hidden'|'FieldOptions' $ruleType
  * @property string|null $description
  */
 class CaseRuleSummary extends Shape
@@ -18,7 +18,7 @@ class CaseRuleSummary extends Shape
      *     caseRuleId: string,
      *     name: string,
      *     caseRuleArn: string,
-     *     ruleType: 'Required',
+     *     ruleType: 'Required'|'Hidden'|'FieldOptions',
      *     description?: string|null
      * } $args
      */

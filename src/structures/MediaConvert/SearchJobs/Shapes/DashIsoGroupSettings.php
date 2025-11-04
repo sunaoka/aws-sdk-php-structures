@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MPEG_CHANNEL_CONFIGURATION'|'DOLBY_CHANNEL_CONFIGURATION'|null $AudioChannelConfigSchemeIdUri
  * @property string|null $BaseUrl
  * @property string|null $DashIFrameTrickPlayNameModifier
- * @property 'BASIC'|'COMPACT'|'DISTINCT'|null $DashManifestStyle
+ * @property 'BASIC'|'COMPACT'|'DISTINCT'|'FULL'|null $DashManifestStyle
  * @property string|null $Destination
  * @property DestinationSettings|null $DestinationSettings
  * @property DashIsoEncryptionSettings|null $Encryption
@@ -36,7 +36,7 @@ class DashIsoGroupSettings extends Shape
      *     AudioChannelConfigSchemeIdUri?: 'MPEG_CHANNEL_CONFIGURATION'|'DOLBY_CHANNEL_CONFIGURATION'|null,
      *     BaseUrl?: string|null,
      *     DashIFrameTrickPlayNameModifier?: string|null,
-     *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|null,
+     *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|'FULL'|null,
      *     Destination?: string|null,
      *     DestinationSettings?: DestinationSettings|null,
      *     Encryption?: DashIsoEncryptionSettings|null,

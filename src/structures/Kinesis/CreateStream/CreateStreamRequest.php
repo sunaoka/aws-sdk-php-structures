@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, max>|null $ShardCount
  * @property Shapes\StreamModeDetails|null $StreamModeDetails
  * @property array<string, string>|null $Tags
+ * @property int<0, max>|null $WarmThroughputMiBps
  * @property int<1024, 10240>|null $MaxRecordSizeInKiB
  */
 class CreateStreamRequest extends Request
@@ -19,6 +20,7 @@ class CreateStreamRequest extends Request
      *     ShardCount?: int<1, max>|null,
      *     StreamModeDetails?: Shapes\StreamModeDetails|null,
      *     Tags?: array<string, string>|null,
+     *     WarmThroughputMiBps?: int<0, max>|null,
      *     MaxRecordSizeInKiB?: int<1024, 10240>|null
      * } $args
      */

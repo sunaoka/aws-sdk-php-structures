@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KeyId
  * @property int<0, 1000000> $OpenShardCount
  * @property int<0, 1000000>|null $ConsumerCount
+ * @property WarmThroughputObject|null $WarmThroughput
  * @property int<1024, 10240>|null $MaxRecordSizeInKiB
  */
 class StreamDescriptionSummary extends Shape
@@ -33,6 +34,7 @@ class StreamDescriptionSummary extends Shape
      *     KeyId?: string|null,
      *     OpenShardCount: int<0, 1000000>,
      *     ConsumerCount?: int<0, 1000000>|null,
+     *     WarmThroughput?: WarmThroughputObject|null,
      *     MaxRecordSizeInKiB?: int<1024, 10240>|null
      * } $args
      */

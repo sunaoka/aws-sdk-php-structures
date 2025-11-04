@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Version
  * @property list<Tag>|null $Tags
  * @property string|null $OwnerId
+ * @property string|null $IpamPrefixListResolverTargetId
+ * @property bool|null $IpamPrefixListResolverSyncEnabled
  */
 class ManagedPrefixList extends Shape
 {
@@ -29,7 +31,9 @@ class ManagedPrefixList extends Shape
      *     MaxEntries?: int|null,
      *     Version?: int|null,
      *     Tags?: list<Tag>|null,
-     *     OwnerId?: string|null
+     *     OwnerId?: string|null,
+     *     IpamPrefixListResolverTargetId?: string|null,
+     *     IpamPrefixListResolverSyncEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])
