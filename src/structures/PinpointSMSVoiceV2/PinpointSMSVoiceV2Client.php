@@ -6,6 +6,7 @@ class PinpointSMSVoiceV2Client extends \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV
 {
     use AssociateOriginationIdentity\AssociateOriginationIdentityTrait;
     use AssociateProtectConfiguration\AssociateProtectConfigurationTrait;
+    use CarrierLookup\CarrierLookupTrait;
     use CreateConfigurationSet\CreateConfigurationSetTrait;
     use CreateEventDestination\CreateEventDestinationTrait;
     use CreateOptOutList\CreateOptOutListTrait;
