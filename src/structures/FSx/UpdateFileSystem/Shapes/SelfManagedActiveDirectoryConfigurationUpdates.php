@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DomainName
  * @property string|null $OrganizationalUnitDistinguishedName
  * @property string|null $FileSystemAdministratorsGroup
+ * @property string|null $DomainJoinServiceAccountSecret
  */
 class SelfManagedActiveDirectoryConfigurationUpdates extends Shape
 {
@@ -21,7 +22,8 @@ class SelfManagedActiveDirectoryConfigurationUpdates extends Shape
      *     DnsIps?: list<string>|null,
      *     DomainName?: string|null,
      *     OrganizationalUnitDistinguishedName?: string|null,
-     *     FileSystemAdministratorsGroup?: string|null
+     *     FileSystemAdministratorsGroup?: string|null,
+     *     DomainJoinServiceAccountSecret?: string|null
      * } $args
      */
     public function __construct(array $args = [])

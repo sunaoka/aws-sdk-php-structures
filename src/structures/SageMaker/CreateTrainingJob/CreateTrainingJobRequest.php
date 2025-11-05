@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TrainingJobName
  * @property array<string, string>|null $HyperParameters
- * @property Shapes\AlgorithmSpecification $AlgorithmSpecification
+ * @property Shapes\AlgorithmSpecification|null $AlgorithmSpecification
  * @property string $RoleArn
  * @property list<Shapes\Channel>|null $InputDataConfig
  * @property Shapes\OutputDataConfig $OutputDataConfig
- * @property Shapes\ResourceConfig $ResourceConfig
+ * @property Shapes\ResourceConfig|null $ResourceConfig
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property Shapes\StoppingCondition $StoppingCondition
  * @property list<Shapes\Tag>|null $Tags
@@ -37,11 +37,11 @@ class CreateTrainingJobRequest extends Request
      * @param array{
      *     TrainingJobName: string,
      *     HyperParameters?: array<string, string>|null,
-     *     AlgorithmSpecification: Shapes\AlgorithmSpecification,
+     *     AlgorithmSpecification?: Shapes\AlgorithmSpecification|null,
      *     RoleArn: string,
      *     InputDataConfig?: list<Shapes\Channel>|null,
      *     OutputDataConfig: Shapes\OutputDataConfig,
-     *     ResourceConfig: Shapes\ResourceConfig,
+     *     ResourceConfig?: Shapes\ResourceConfig|null,
      *     VpcConfig?: Shapes\VpcConfig|null,
      *     StoppingCondition: Shapes\StoppingCondition,
      *     Tags?: list<Shapes\Tag>|null,

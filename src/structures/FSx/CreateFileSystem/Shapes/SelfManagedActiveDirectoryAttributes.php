@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FileSystemAdministratorsGroup
  * @property string|null $UserName
  * @property list<string>|null $DnsIps
+ * @property string|null $DomainJoinServiceAccountSecret
  */
 class SelfManagedActiveDirectoryAttributes extends Shape
 {
@@ -19,7 +20,8 @@ class SelfManagedActiveDirectoryAttributes extends Shape
      *     OrganizationalUnitDistinguishedName?: string|null,
      *     FileSystemAdministratorsGroup?: string|null,
      *     UserName?: string|null,
-     *     DnsIps?: list<string>|null
+     *     DnsIps?: list<string>|null,
+     *     DomainJoinServiceAccountSecret?: string|null
      * } $args
      */
     public function __construct(array $args = [])
