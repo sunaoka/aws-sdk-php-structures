@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $MpaApprovalTeamArn
  * @property string|null $MpaSessionArn
  * @property Shapes\LatestMpaApprovalTeamUpdate|null $LatestMpaApprovalTeamUpdate
+ * @property 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null $EncryptionKeyType
  */
 class DescribeBackupVaultResponse extends Response
 {

@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|'RESTORE_ACCESS_BACKUP_VAULT'|null $VaultType
  * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
  * @property string|null $IndexStatusMessage
+ * @property 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null $EncryptionKeyType
  */
 class RecoveryPointByResource extends Shape
 {
@@ -35,7 +36,8 @@ class RecoveryPointByResource extends Shape
      *     ResourceName?: string|null,
      *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|'RESTORE_ACCESS_BACKUP_VAULT'|null,
      *     IndexStatus?: 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null,
-     *     IndexStatusMessage?: string|null
+     *     IndexStatusMessage?: string|null,
+     *     EncryptionKeyType?: 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null
      * } $args
      */
     public function __construct(array $args = [])

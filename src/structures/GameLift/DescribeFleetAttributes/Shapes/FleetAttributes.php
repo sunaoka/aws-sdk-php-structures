@@ -22,7 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ServerLaunchParameters
  * @property list<string>|null $LogPaths
  * @property 'NoProtection'|'FullProtection'|null $NewGameSessionProtectionPolicy
- * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null $OperatingSystem
+ * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|'WINDOWS_2022'|null $OperatingSystem
  * @property ResourceCreationLimitPolicy|null $ResourceCreationLimitPolicy
  * @property list<string>|null $MetricGroups
  * @property list<'AUTO_SCALING'>|null $StoppedActions
@@ -53,7 +53,7 @@ class FleetAttributes extends Shape
      *     ServerLaunchParameters?: string|null,
      *     LogPaths?: list<string>|null,
      *     NewGameSessionProtectionPolicy?: 'NoProtection'|'FullProtection'|null,
-     *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null,
+     *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|'WINDOWS_2022'|null,
      *     ResourceCreationLimitPolicy?: ResourceCreationLimitPolicy|null,
      *     MetricGroups?: list<string>|null,
      *     StoppedActions?: list<'AUTO_SCALING'>|null,

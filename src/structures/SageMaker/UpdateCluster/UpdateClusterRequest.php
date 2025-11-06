@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ClusterTieredStorageConfig|null $TieredStorageConfig
  * @property 'Automatic'|'None'|null $NodeRecovery
  * @property list<string>|null $InstanceGroupsToDelete
+ * @property 'Continuous'|null $NodeProvisioningMode
  * @property string|null $ClusterRole
  * @property Shapes\ClusterAutoScalingConfig|null $AutoScaling
  */
@@ -24,6 +25,7 @@ class UpdateClusterRequest extends Request
      *     TieredStorageConfig?: Shapes\ClusterTieredStorageConfig|null,
      *     NodeRecovery?: 'Automatic'|'None'|null,
      *     InstanceGroupsToDelete?: list<string>|null,
+     *     NodeProvisioningMode?: 'Continuous'|null,
      *     ClusterRole?: string|null,
      *     AutoScaling?: Shapes\ClusterAutoScalingConfig|null
      * } $args

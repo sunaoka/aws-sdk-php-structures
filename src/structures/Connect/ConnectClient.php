@@ -200,10 +200,12 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ResumeContactRecording\ResumeContactRecordingTrait;
     use SearchAgentStatuses\SearchAgentStatusesTrait;
     use SearchAvailablePhoneNumbers\SearchAvailablePhoneNumbersTrait;
+    use SearchContactEvaluations\SearchContactEvaluationsTrait;
     use SearchContactFlowModules\SearchContactFlowModulesTrait;
     use SearchContactFlows\SearchContactFlowsTrait;
     use SearchContacts\SearchContactsTrait;
     use SearchEmailAddresses\SearchEmailAddressesTrait;
+    use SearchEvaluationForms\SearchEvaluationFormsTrait;
     use SearchHoursOfOperationOverrides\SearchHoursOfOperationOverridesTrait;
     use SearchHoursOfOperations\SearchHoursOfOperationsTrait;
     use SearchPredefinedAttributes\SearchPredefinedAttributesTrait;

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EvaluationId
  * @property array<string, Shapes\EvaluationAnswerInput>|null $Answers
  * @property array<string, Shapes\EvaluationNote>|null $Notes
+ * @property Shapes\EvaluatorUserUnion|null $SubmittedBy
  */
 class SubmitContactEvaluationRequest extends Request
 {
@@ -17,7 +18,8 @@ class SubmitContactEvaluationRequest extends Request
      *     InstanceId: string,
      *     EvaluationId: string,
      *     Answers?: array<string, Shapes\EvaluationAnswerInput>|null,
-     *     Notes?: array<string, Shapes\EvaluationNote>|null
+     *     Notes?: array<string, Shapes\EvaluationNote>|null,
+     *     SubmittedBy?: Shapes\EvaluatorUserUnion|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $ContainsHeader
  * @property 'DOUBLE_QUOTE'|'SINGLE_QUOTE'|null $TextQualifier
  * @property string|null $Delimiter
+ * @property string|null $CustomCellAddressRange
  */
 class UploadSettings extends Shape
 {
@@ -19,7 +20,8 @@ class UploadSettings extends Shape
      *     StartFromRow?: int<1, max>|null,
      *     ContainsHeader?: bool|null,
      *     TextQualifier?: 'DOUBLE_QUOTE'|'SINGLE_QUOTE'|null,
-     *     Delimiter?: string|null
+     *     Delimiter?: string|null,
+     *     CustomCellAddressRange?: string|null
      * } $args
      */
     public function __construct(array $args = [])

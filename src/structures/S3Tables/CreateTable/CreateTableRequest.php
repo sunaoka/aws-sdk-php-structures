@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ICEBERG' $format
  * @property Shapes\TableMetadata|null $metadata
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
+ * @property array<string, string>|null $tags
  */
 class CreateTableRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateTableRequest extends Request
      *     name: string,
      *     format: 'ICEBERG',
      *     metadata?: Shapes\TableMetadata|null,
-     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

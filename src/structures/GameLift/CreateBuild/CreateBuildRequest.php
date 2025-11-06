@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string|null $Version
  * @property Shapes\S3Location|null $StorageLocation
- * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null $OperatingSystem
+ * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|'WINDOWS_2022'|null $OperatingSystem
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ServerSdkVersion
  */
@@ -19,7 +19,7 @@ class CreateBuildRequest extends Request
      *     Name?: string|null,
      *     Version?: string|null,
      *     StorageLocation?: Shapes\S3Location|null,
-     *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null,
+     *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|'WINDOWS_2022'|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     ServerSdkVersion?: string|null
      * } $args

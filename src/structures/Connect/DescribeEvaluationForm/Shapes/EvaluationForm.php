@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CreatedBy
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property string $LastModifiedBy
+ * @property EvaluationFormAutoEvaluationConfiguration|null $AutoEvaluationConfiguration
  * @property array<string, string>|null $Tags
  */
 class EvaluationForm extends Shape
@@ -37,6 +38,7 @@ class EvaluationForm extends Shape
      *     CreatedBy: string,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     LastModifiedBy: string,
+     *     AutoEvaluationConfiguration?: EvaluationFormAutoEvaluationConfiguration|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

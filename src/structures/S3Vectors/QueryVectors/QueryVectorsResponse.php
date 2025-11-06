@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\QueryOutputVector> $vectors
+ * @property 'euclidean'|'cosine' $distanceMetric
  */
 class QueryVectorsResponse extends Response
 {
