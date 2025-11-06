@@ -49,6 +49,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use DeleteOriginRequestPolicy\DeleteOriginRequestPolicyTrait;
     use DeletePublicKey\DeletePublicKeyTrait;
     use DeleteRealtimeLogConfig\DeleteRealtimeLogConfigTrait;
+    use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteResponseHeadersPolicy\DeleteResponseHeadersPolicyTrait;
     use DeleteStreamingDistribution\DeleteStreamingDistributionTrait;
     use DeleteVpcOrigin\DeleteVpcOriginTrait;
@@ -87,6 +88,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use GetPublicKey\GetPublicKeyTrait;
     use GetPublicKeyConfig\GetPublicKeyConfigTrait;
     use GetRealtimeLogConfig\GetRealtimeLogConfigTrait;
+    use GetResourcePolicy\GetResourcePolicyTrait;
     use GetResponseHeadersPolicy\GetResponseHeadersPolicyTrait;
     use GetResponseHeadersPolicyConfig\GetResponseHeadersPolicyConfigTrait;
     use GetStreamingDistribution\GetStreamingDistributionTrait;
@@ -106,6 +108,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use ListDistributionsByConnectionMode\ListDistributionsByConnectionModeTrait;
     use ListDistributionsByKeyGroup\ListDistributionsByKeyGroupTrait;
     use ListDistributionsByOriginRequestPolicyId\ListDistributionsByOriginRequestPolicyIdTrait;
+    use ListDistributionsByOwnedResource\ListDistributionsByOwnedResourceTrait;
     use ListDistributionsByRealtimeLogConfig\ListDistributionsByRealtimeLogConfigTrait;
     use ListDistributionsByResponseHeadersPolicyId\ListDistributionsByResponseHeadersPolicyIdTrait;
     use ListDistributionsByVpcOriginId\ListDistributionsByVpcOriginIdTrait;
@@ -127,9 +130,11 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListVpcOrigins\ListVpcOriginsTrait;
     use PublishFunction\PublishFunctionTrait;
+    use PutResourcePolicy\PutResourcePolicyTrait;
     use TagResource\TagResourceTrait;
     use TestFunction\TestFunctionTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateAnycastIpList\UpdateAnycastIpListTrait;
     use UpdateCachePolicy\UpdateCachePolicyTrait;
     use UpdateCloudFrontOriginAccessIdentity\UpdateCloudFrontOriginAccessIdentityTrait;
     use UpdateConnectionGroup\UpdateConnectionGroupTrait;

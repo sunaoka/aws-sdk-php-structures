@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property string|null $projectProfileId
  * @property 'ACTIVE'|'DELETING'|'DELETE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'MOVING'|null $projectStatus
+ * @property list<Shapes\ResourceTag>|null $resourceTags
  * @property list<Shapes\EnvironmentConfigurationUserParameter>|null $userParameters
  */
 class GetProjectResponse extends Response

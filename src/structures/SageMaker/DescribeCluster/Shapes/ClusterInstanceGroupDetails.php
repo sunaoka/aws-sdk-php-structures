@@ -21,6 +21,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ScheduledUpdateConfig|null $ScheduledUpdateConfig
  * @property string|null $CurrentImageId
  * @property string|null $DesiredImageId
+ * @property int<0, 6758>|null $TargetStateCount
+ * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|null $SoftwareUpdateStatus
+ * @property DeploymentConfiguration|null $ActiveSoftwareUpdateConfig
  */
 class ClusterInstanceGroupDetails extends Shape
 {
@@ -41,7 +44,10 @@ class ClusterInstanceGroupDetails extends Shape
      *     OverrideVpcConfig?: VpcConfig|null,
      *     ScheduledUpdateConfig?: ScheduledUpdateConfig|null,
      *     CurrentImageId?: string|null,
-     *     DesiredImageId?: string|null
+     *     DesiredImageId?: string|null,
+     *     TargetStateCount?: int<0, 6758>|null,
+     *     SoftwareUpdateStatus?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|null,
+     *     ActiveSoftwareUpdateConfig?: DeploymentConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

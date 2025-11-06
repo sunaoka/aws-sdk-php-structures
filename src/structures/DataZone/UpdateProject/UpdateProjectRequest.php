@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $identifier
  * @property string|null $name
  * @property string|null $projectProfileVersion
+ * @property array<string, string>|null $resourceTags
  * @property list<Shapes\EnvironmentConfigurationUserParameter>|null $userParameters
  */
 class UpdateProjectRequest extends Request
@@ -27,6 +28,7 @@ class UpdateProjectRequest extends Request
      *     identifier: string,
      *     name?: string|null,
      *     projectProfileVersion?: string|null,
+     *     resourceTags?: array<string, string>|null,
      *     userParameters?: list<Shapes\EnvironmentConfigurationUserParameter>|null
      * } $args
      */

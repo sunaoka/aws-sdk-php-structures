@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property string $Arn
+ * @property string|null $AccountId
  * @property string $Status
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
@@ -18,6 +19,7 @@ class VpcOrigin extends Shape
      * @param array{
      *     Id: string,
      *     Arn: string,
+     *     AccountId?: string|null,
      *     Status: string,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
