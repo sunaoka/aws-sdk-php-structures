@@ -21,6 +21,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $amazonManaged
  * @property string|null $failureReason
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $domainVerificationId
+ * @property string|null $domainVerificationArn
+ * @property 'VERIFIED'|'PENDING'|'VERIFICATION_TIMED_OUT'|null $domainVerificationStatus
+ * @property string|null $groupDomain
  */
 class GetResourceConfigurationResponse extends Response
 {

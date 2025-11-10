@@ -5,23 +5,25 @@ namespace Sunaoka\Aws\Structures\ControlTower\GetLandingZone\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $arn
- * @property LandingZoneDriftStatusSummary|null $driftStatus
- * @property string|null $latestAvailableVersion
- * @property Manifest $manifest
- * @property 'ACTIVE'|'PROCESSING'|'FAILED'|null $status
  * @property string $version
+ * @property Manifest $manifest
+ * @property list<'INHERITANCE_DRIFT'>|null $remediationTypes
+ * @property string|null $arn
+ * @property 'ACTIVE'|'PROCESSING'|'FAILED'|null $status
+ * @property string|null $latestAvailableVersion
+ * @property LandingZoneDriftStatusSummary|null $driftStatus
  */
 class LandingZoneDetail extends Shape
 {
     /**
      * @param array{
-     *     arn?: string|null,
-     *     driftStatus?: LandingZoneDriftStatusSummary|null,
-     *     latestAvailableVersion?: string|null,
+     *     version: string,
      *     manifest: Manifest,
+     *     remediationTypes?: list<'INHERITANCE_DRIFT'>|null,
+     *     arn?: string|null,
      *     status?: 'ACTIVE'|'PROCESSING'|'FAILED'|null,
-     *     version: string
+     *     latestAvailableVersion?: string|null,
+     *     driftStatus?: LandingZoneDriftStatusSummary|null
      * } $args
      */
     public function __construct(array $args)

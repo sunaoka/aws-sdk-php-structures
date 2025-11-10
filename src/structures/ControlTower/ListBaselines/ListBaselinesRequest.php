@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ControlTower\ListBaselines;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<4, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property int<4, 100>|null $maxResults
  */
 class ListBaselinesRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int<4, 100>|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     maxResults?: int<4, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $serviceNetworkId
  * @property string|null $serviceNetworkName
  * @property string|null $serviceNetworkArn
+ * @property bool|null $privateDnsEnabled
+ * @property DnsOptions|null $dnsOptions
  * @property string|null $vpcId
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
@@ -28,6 +30,8 @@ class ServiceNetworkVpcAssociationSummary extends Shape
      *     serviceNetworkId?: string|null,
      *     serviceNetworkName?: string|null,
      *     serviceNetworkArn?: string|null,
+     *     privateDnsEnabled?: bool|null,
+     *     dnsOptions?: DnsOptions|null,
      *     vpcId?: string|null,
      *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args

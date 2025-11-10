@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $arn
  * @property 'CREATE_IN_PROGRESS'|'ACTIVE'|'PARTIAL'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_FAILED'|null $status
  * @property string|null $createdBy
+ * @property bool|null $privateDnsEnabled
  */
 class CreateServiceNetworkResourceAssociationResponse extends Response
 {

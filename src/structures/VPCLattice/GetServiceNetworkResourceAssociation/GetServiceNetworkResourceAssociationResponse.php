@@ -20,8 +20,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $failureCode
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property Shapes\DnsEntry|null $privateDnsEntry
+ * @property bool|null $privateDnsEnabled
  * @property Shapes\DnsEntry|null $dnsEntry
  * @property bool|null $isManagedAssociation
+ * @property 'VERIFIED'|'PENDING'|'VERIFICATION_TIMED_OUT'|null $domainVerificationStatus
  */
 class GetServiceNetworkResourceAssociationResponse extends Response
 {

@@ -46,6 +46,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use GetApplication\GetApplicationTrait;
     use GetCompatibleVersions\GetCompatibleVersionsTrait;
     use GetDataSource\GetDataSourceTrait;
+    use GetDefaultApplicationSetting\GetDefaultApplicationSettingTrait;
     use GetDirectQueryDataSource\GetDirectQueryDataSourceTrait;
     use GetDomainMaintenanceStatus\GetDomainMaintenanceStatusTrait;
     use GetPackageVersionHistory\GetPackageVersionHistoryTrait;
@@ -66,6 +67,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use ListVpcEndpoints\ListVpcEndpointsTrait;
     use ListVpcEndpointsForDomain\ListVpcEndpointsForDomainTrait;
     use PurchaseReservedInstanceOffering\PurchaseReservedInstanceOfferingTrait;
+    use PutDefaultApplicationSetting\PutDefaultApplicationSettingTrait;
     use RejectInboundConnection\RejectInboundConnectionTrait;
     use RemoveTags\RemoveTagsTrait;
     use RevokeVpcEndpointAccess\RevokeVpcEndpointAccessTrait;

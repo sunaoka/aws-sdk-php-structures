@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $PoolCount
  * @property 'create-in-progress'|'create-complete'|'create-failed'|'modify-in-progress'|'modify-complete'|'modify-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|'isolate-in-progress'|'isolate-complete'|'restore-in-progress'|null $State
  * @property list<Tag>|null $Tags
+ * @property IpamScopeExternalAuthorityConfiguration|null $ExternalAuthorityConfiguration
  */
 class IpamScope extends Shape
 {
@@ -31,7 +32,8 @@ class IpamScope extends Shape
      *     Description?: string|null,
      *     PoolCount?: int|null,
      *     State?: 'create-in-progress'|'create-complete'|'create-failed'|'modify-in-progress'|'modify-complete'|'modify-failed'|'delete-in-progress'|'delete-complete'|'delete-failed'|'isolate-in-progress'|'isolate-complete'|'restore-in-progress'|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     ExternalAuthorityConfiguration?: IpamScopeExternalAuthorityConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])
