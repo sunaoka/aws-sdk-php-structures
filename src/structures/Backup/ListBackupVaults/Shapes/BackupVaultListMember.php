@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MinRetentionDays
  * @property int|null $MaxRetentionDays
  * @property \Aws\Api\DateTimeResult|null $LockDate
+ * @property 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null $EncryptionKeyType
  */
 class BackupVaultListMember extends Shape
 {
@@ -33,7 +34,8 @@ class BackupVaultListMember extends Shape
      *     Locked?: bool|null,
      *     MinRetentionDays?: int|null,
      *     MaxRetentionDays?: int|null,
-     *     LockDate?: \Aws\Api\DateTimeResult|null
+     *     LockDate?: \Aws\Api\DateTimeResult|null,
+     *     EncryptionKeyType?: 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null
      * } $args
      */
     public function __construct(array $args = [])

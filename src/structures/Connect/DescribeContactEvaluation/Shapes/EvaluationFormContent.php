@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property list<EvaluationFormItem> $Items
  * @property EvaluationFormScoringStrategy|null $ScoringStrategy
+ * @property EvaluationFormAutoEvaluationConfiguration|null $AutoEvaluationConfiguration
  */
 class EvaluationFormContent extends Shape
 {
@@ -23,7 +24,8 @@ class EvaluationFormContent extends Shape
      *     Title: string,
      *     Description?: string|null,
      *     Items: list<EvaluationFormItem>,
-     *     ScoringStrategy?: EvaluationFormScoringStrategy|null
+     *     ScoringStrategy?: EvaluationFormScoringStrategy|null,
+     *     AutoEvaluationConfiguration?: EvaluationFormAutoEvaluationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -32,6 +32,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|'RESTORE_ACCESS_BACKUP_VAULT'|null $VaultType
  * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
  * @property string|null $IndexStatusMessage
+ * @property 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null $EncryptionKeyType
  */
 class DescribeRecoveryPointResponse extends Response
 {

@@ -27,11 +27,14 @@ class S3TablesClient extends \Aws\S3Tables\S3TablesClient
     use ListNamespaces\ListNamespacesTrait;
     use ListTableBuckets\ListTableBucketsTrait;
     use ListTables\ListTablesTrait;
+    use ListTagsForResource\ListTagsForResourceTrait;
     use PutTableBucketEncryption\PutTableBucketEncryptionTrait;
     use PutTableBucketMaintenanceConfiguration\PutTableBucketMaintenanceConfigurationTrait;
     use PutTableBucketPolicy\PutTableBucketPolicyTrait;
     use PutTableMaintenanceConfiguration\PutTableMaintenanceConfigurationTrait;
     use PutTablePolicy\PutTablePolicyTrait;
     use RenameTable\RenameTableTrait;
+    use TagResource\TagResourceTrait;
+    use UntagResource\UntagResourceTrait;
     use UpdateTableMetadataLocation\UpdateTableMetadataLocationTrait;
 }

@@ -5,18 +5,20 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeContactEvaluation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<EvaluationFormSingleSelectQuestionAutomationOption> $Options
+ * @property list<EvaluationFormSingleSelectQuestionAutomationOption>|null $Options
  * @property string|null $DefaultOptionRefId
+ * @property EvaluationFormQuestionAutomationAnswerSource|null $AnswerSource
  */
 class EvaluationFormSingleSelectQuestionAutomation extends Shape
 {
     /**
      * @param array{
-     *     Options: list<EvaluationFormSingleSelectQuestionAutomationOption>,
-     *     DefaultOptionRefId?: string|null
+     *     Options?: list<EvaluationFormSingleSelectQuestionAutomationOption>|null,
+     *     DefaultOptionRefId?: string|null,
+     *     AnswerSource?: EvaluationFormQuestionAutomationAnswerSource|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

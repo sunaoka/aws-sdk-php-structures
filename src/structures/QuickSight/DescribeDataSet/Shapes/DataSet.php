@@ -24,6 +24,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DatasetParameter>|null $DatasetParameters
  * @property PerformanceConfiguration|null $PerformanceConfiguration
  * @property 'RLS_RULES'|null $UseAs
+ * @property DataPrepConfiguration|null $DataPrepConfiguration
+ * @property SemanticModelConfiguration|null $SemanticModelConfiguration
  */
 class DataSet extends Shape
 {
@@ -47,7 +49,9 @@ class DataSet extends Shape
      *     DataSetUsageConfiguration?: DataSetUsageConfiguration|null,
      *     DatasetParameters?: list<DatasetParameter>|null,
      *     PerformanceConfiguration?: PerformanceConfiguration|null,
-     *     UseAs?: 'RLS_RULES'|null
+     *     UseAs?: 'RLS_RULES'|null,
+     *     DataPrepConfiguration?: DataPrepConfiguration|null,
+     *     SemanticModelConfiguration?: SemanticModelConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

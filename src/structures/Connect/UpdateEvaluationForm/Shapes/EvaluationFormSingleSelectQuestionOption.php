@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Text
  * @property int<0, 10>|null $Score
  * @property bool|null $AutomaticFail
+ * @property AutomaticFailConfiguration|null $AutomaticFailConfiguration
  */
 class EvaluationFormSingleSelectQuestionOption extends Shape
 {
@@ -17,7 +18,8 @@ class EvaluationFormSingleSelectQuestionOption extends Shape
      *     RefId: string,
      *     Text: string,
      *     Score?: int<0, 10>|null,
-     *     AutomaticFail?: bool|null
+     *     AutomaticFail?: bool|null,
+     *     AutomaticFailConfiguration?: AutomaticFailConfiguration|null
      * } $args
      */
     public function __construct(array $args)

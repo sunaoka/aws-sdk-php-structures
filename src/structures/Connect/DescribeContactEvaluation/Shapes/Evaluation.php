@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, EvaluationScore>|null $Scores
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property 'STANDARD'|'CALIBRATION'|null $EvaluationType
  * @property array<string, string>|null $Tags
  */
 class Evaluation extends Shape
@@ -29,6 +30,7 @@ class Evaluation extends Shape
      *     Scores?: array<string, EvaluationScore>|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
+     *     EvaluationType?: 'STANDARD'|'CALIBRATION'|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

@@ -5,8 +5,9 @@ namespace Sunaoka\Aws\Structures\IdentityStore\DescribeUser;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $UserName
+ * @property string $IdentityStoreId
  * @property string $UserId
+ * @property string|null $UserName
  * @property list<Shapes\ExternalId>|null $ExternalIds
  * @property Shapes\Name|null $Name
  * @property string|null $DisplayName
@@ -20,7 +21,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $PreferredLanguage
  * @property string|null $Locale
  * @property string|null $Timezone
- * @property string $IdentityStoreId
+ * @property 'ENABLED'|'DISABLED'|null $UserStatus
+ * @property list<Shapes\Photo>|null $Photos
+ * @property string|null $Website
+ * @property string|null $Birthdate
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property string|null $UpdatedBy
  */
 class DescribeUserResponse extends Response
 {
