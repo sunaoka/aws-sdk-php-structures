@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PENDING_VERIFICATION'|'PUBLISHING'|'UNABLE_TO_PUBLISH_FIX_DESTINATION_PROPERTY'|'STOPPED' $Status
  * @property int $PublishingFailureStartTimestamp
  * @property Shapes\DestinationProperties $DestinationProperties
+ * @property array<string, string>|null $Tags
  */
 class DescribePublishingDestinationResponse extends Response
 {

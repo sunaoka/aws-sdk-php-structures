@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 15> $NumberOfBrokerNodes
  * @property Shapes\OpenMonitoringInfo|null $OpenMonitoring
  * @property array<string, string>|null $Tags
+ * @property Shapes\Rebalancing|null $Rebalancing
  * @property 'LOCAL'|'TIERED'|null $StorageMode
  */
 class CreateClusterRequest extends Request
@@ -33,6 +34,7 @@ class CreateClusterRequest extends Request
      *     NumberOfBrokerNodes: int<1, 15>,
      *     OpenMonitoring?: Shapes\OpenMonitoringInfo|null,
      *     Tags?: array<string, string>|null,
+     *     Rebalancing?: Shapes\Rebalancing|null,
      *     StorageMode?: 'LOCAL'|'TIERED'|null
      * } $args
      */

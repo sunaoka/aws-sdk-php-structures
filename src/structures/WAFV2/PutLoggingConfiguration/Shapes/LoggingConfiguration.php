@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $ManagedByFirewallManager
  * @property LoggingFilter|null $LoggingFilter
  * @property 'WAF_LOGS'|null $LogType
- * @property 'CUSTOMER'|'SECURITY_LAKE'|null $LogScope
+ * @property 'CUSTOMER'|'SECURITY_LAKE'|'CLOUDWATCH_TELEMETRY_RULE_MANAGED'|null $LogScope
  */
 class LoggingConfiguration extends Shape
 {
@@ -23,7 +23,7 @@ class LoggingConfiguration extends Shape
      *     ManagedByFirewallManager?: bool|null,
      *     LoggingFilter?: LoggingFilter|null,
      *     LogType?: 'WAF_LOGS'|null,
-     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'|null
+     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'|'CLOUDWATCH_TELEMETRY_RULE_MANAGED'|null
      * } $args
      */
     public function __construct(array $args)

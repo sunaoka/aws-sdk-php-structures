@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $AllowedInstanceTypes
  * @property int|null $MaxSpotPriceAsPercentageOfOptimalOnDemandPrice
  * @property BaselinePerformanceFactorsRequest|null $BaselinePerformanceFactors
+ * @property bool|null $RequireEncryptionInTransit
  */
 class InstanceRequirementsRequest extends Shape
 {
@@ -59,7 +60,8 @@ class InstanceRequirementsRequest extends Shape
      *     NetworkBandwidthGbps?: NetworkBandwidthGbpsRequest|null,
      *     AllowedInstanceTypes?: list<string>|null,
      *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int|null,
-     *     BaselinePerformanceFactors?: BaselinePerformanceFactorsRequest|null
+     *     BaselinePerformanceFactors?: BaselinePerformanceFactorsRequest|null,
+     *     RequireEncryptionInTransit?: bool|null
      * } $args
      */
     public function __construct(array $args)

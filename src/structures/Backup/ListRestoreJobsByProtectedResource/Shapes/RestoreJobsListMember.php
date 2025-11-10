@@ -21,6 +21,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CreatedResourceArn
  * @property string|null $ResourceType
  * @property \Aws\Api\DateTimeResult|null $RecoveryPointCreationDate
+ * @property bool|null $IsParent
+ * @property string|null $ParentJobId
  * @property RestoreJobCreator|null $CreatedBy
  * @property 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING'|null $ValidationStatus
  * @property string|null $ValidationStatusMessage
@@ -47,6 +49,8 @@ class RestoreJobsListMember extends Shape
      *     CreatedResourceArn?: string|null,
      *     ResourceType?: string|null,
      *     RecoveryPointCreationDate?: \Aws\Api\DateTimeResult|null,
+     *     IsParent?: bool|null,
+     *     ParentJobId?: string|null,
      *     CreatedBy?: RestoreJobCreator|null,
      *     ValidationStatus?: 'FAILED'|'SUCCESSFUL'|'TIMED_OUT'|'VALIDATING'|null,
      *     ValidationStatusMessage?: string|null,

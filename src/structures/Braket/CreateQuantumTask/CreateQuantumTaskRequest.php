@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property string|null $jobToken
  * @property list<Shapes\Association>|null $associations
+ * @property Shapes\ExperimentalCapabilities|null $experimentalCapabilities
  */
 class CreateQuantumTaskRequest extends Request
 {
@@ -29,7 +30,8 @@ class CreateQuantumTaskRequest extends Request
      *     action: string,
      *     tags?: array<string, string>|null,
      *     jobToken?: string|null,
-     *     associations?: list<Shapes\Association>|null
+     *     associations?: list<Shapes\Association>|null,
+     *     experimentalCapabilities?: Shapes\ExperimentalCapabilities|null
      * } $args
      */
     public function __construct(array $args)

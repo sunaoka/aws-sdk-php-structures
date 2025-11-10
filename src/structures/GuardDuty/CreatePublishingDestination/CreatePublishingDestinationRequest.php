@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'S3' $DestinationType
  * @property Shapes\DestinationProperties $DestinationProperties
  * @property string|null $ClientToken
+ * @property array<string, string>|null $Tags
  */
 class CreatePublishingDestinationRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreatePublishingDestinationRequest extends Request
      *     DetectorId: string,
      *     DestinationType: 'S3',
      *     DestinationProperties: Shapes\DestinationProperties,
-     *     ClientToken?: string|null
+     *     ClientToken?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)
