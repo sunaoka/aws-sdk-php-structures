@@ -7,9 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $arn
  * @property string|null $controlIdentifier
- * @property DriftStatusSummary|null $driftStatusSummary
- * @property EnablementStatusSummary|null $statusSummary
  * @property string|null $targetIdentifier
+ * @property EnablementStatusSummary|null $statusSummary
+ * @property DriftStatusSummary|null $driftStatusSummary
+ * @property string|null $parentIdentifier
  */
 class EnabledControlSummary extends Shape
 {
@@ -17,9 +18,10 @@ class EnabledControlSummary extends Shape
      * @param array{
      *     arn?: string|null,
      *     controlIdentifier?: string|null,
-     *     driftStatusSummary?: DriftStatusSummary|null,
+     *     targetIdentifier?: string|null,
      *     statusSummary?: EnablementStatusSummary|null,
-     *     targetIdentifier?: string|null
+     *     driftStatusSummary?: DriftStatusSummary|null,
+     *     parentIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

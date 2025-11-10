@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $arn
  * @property string|null $createdBy
  * @property list<string>|null $securityGroupIds
+ * @property bool|null $privateDnsEnabled
+ * @property Shapes\DnsOptions|null $dnsOptions
  */
 class CreateServiceNetworkVpcAssociationResponse extends Response
 {

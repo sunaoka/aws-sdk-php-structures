@@ -15,9 +15,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $serviceNetworkArn
  * @property string|null $vpcId
  * @property list<string>|null $securityGroupIds
+ * @property bool|null $privateDnsEnabled
  * @property string|null $failureMessage
  * @property string|null $failureCode
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property Shapes\DnsOptions|null $dnsOptions
  */
 class GetServiceNetworkVpcAssociationResponse extends Response
 {

@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $baselineIdentifier
  * @property string|null $baselineVersion
  * @property EnabledBaselineDriftStatusSummary|null $driftStatusSummary
+ * @property string $targetIdentifier
  * @property string|null $parentIdentifier
  * @property EnablementStatusSummary $statusSummary
- * @property string $targetIdentifier
  */
 class EnabledBaselineSummary extends Shape
 {
@@ -21,9 +21,9 @@ class EnabledBaselineSummary extends Shape
      *     baselineIdentifier: string,
      *     baselineVersion?: string|null,
      *     driftStatusSummary?: EnabledBaselineDriftStatusSummary|null,
+     *     targetIdentifier: string,
      *     parentIdentifier?: string|null,
-     *     statusSummary: EnablementStatusSummary,
-     *     targetIdentifier: string
+     *     statusSummary: EnablementStatusSummary
      * } $args
      */
     public function __construct(array $args)

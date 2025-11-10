@@ -7,11 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $arn
  * @property string|null $controlIdentifier
- * @property DriftStatusSummary|null $driftStatusSummary
- * @property list<EnabledControlParameterSummary>|null $parameters
- * @property EnablementStatusSummary|null $statusSummary
  * @property string|null $targetIdentifier
+ * @property EnablementStatusSummary|null $statusSummary
+ * @property DriftStatusSummary|null $driftStatusSummary
+ * @property string|null $parentIdentifier
  * @property list<Region>|null $targetRegions
+ * @property list<EnabledControlParameterSummary>|null $parameters
  */
 class EnabledControlDetails extends Shape
 {
@@ -19,11 +20,12 @@ class EnabledControlDetails extends Shape
      * @param array{
      *     arn?: string|null,
      *     controlIdentifier?: string|null,
-     *     driftStatusSummary?: DriftStatusSummary|null,
-     *     parameters?: list<EnabledControlParameterSummary>|null,
-     *     statusSummary?: EnablementStatusSummary|null,
      *     targetIdentifier?: string|null,
-     *     targetRegions?: list<Region>|null
+     *     statusSummary?: EnablementStatusSummary|null,
+     *     driftStatusSummary?: DriftStatusSummary|null,
+     *     parentIdentifier?: string|null,
+     *     targetRegions?: list<Region>|null,
+     *     parameters?: list<EnabledControlParameterSummary>|null
      * } $args
      */
     public function __construct(array $args = [])

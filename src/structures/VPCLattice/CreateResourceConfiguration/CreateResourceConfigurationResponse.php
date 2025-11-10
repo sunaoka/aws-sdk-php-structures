@@ -18,6 +18,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $allowAssociationToShareableServiceNetwork
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $failureReason
+ * @property string|null $customDomainName
+ * @property string|null $domainVerificationId
+ * @property string|null $groupDomain
+ * @property string|null $domainVerificationArn
  */
 class CreateResourceConfigurationResponse extends Response
 {

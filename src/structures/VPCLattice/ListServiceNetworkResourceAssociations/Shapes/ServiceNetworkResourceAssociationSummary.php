@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DnsEntry|null $privateDnsEntry
  * @property bool|null $isManagedAssociation
  * @property string|null $failureCode
+ * @property bool|null $privateDnsEnabled
  */
 class ServiceNetworkResourceAssociationSummary extends Shape
 {
@@ -39,7 +40,8 @@ class ServiceNetworkResourceAssociationSummary extends Shape
      *     dnsEntry?: DnsEntry|null,
      *     privateDnsEntry?: DnsEntry|null,
      *     isManagedAssociation?: bool|null,
-     *     failureCode?: string|null
+     *     failureCode?: string|null,
+     *     privateDnsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

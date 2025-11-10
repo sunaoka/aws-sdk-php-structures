@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $baselineIdentifier
  * @property string|null $baselineVersion
  * @property EnabledBaselineDriftStatusSummary|null $driftStatusSummary
- * @property list<EnabledBaselineParameterSummary>|null $parameters
+ * @property string $targetIdentifier
  * @property string|null $parentIdentifier
  * @property EnablementStatusSummary $statusSummary
- * @property string $targetIdentifier
+ * @property list<EnabledBaselineParameterSummary>|null $parameters
  */
 class EnabledBaselineDetails extends Shape
 {
@@ -22,10 +22,10 @@ class EnabledBaselineDetails extends Shape
      *     baselineIdentifier: string,
      *     baselineVersion?: string|null,
      *     driftStatusSummary?: EnabledBaselineDriftStatusSummary|null,
-     *     parameters?: list<EnabledBaselineParameterSummary>|null,
+     *     targetIdentifier: string,
      *     parentIdentifier?: string|null,
      *     statusSummary: EnablementStatusSummary,
-     *     targetIdentifier: string
+     *     parameters?: list<EnabledBaselineParameterSummary>|null
      * } $args
      */
     public function __construct(array $args)

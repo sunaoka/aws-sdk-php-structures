@@ -15,6 +15,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $amazonManaged
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $customDomainName
+ * @property string|null $domainVerificationId
+ * @property string|null $groupDomain
  */
 class ResourceConfigurationSummary extends Shape
 {
@@ -29,7 +32,10 @@ class ResourceConfigurationSummary extends Shape
      *     status?: 'ACTIVE'|'CREATE_IN_PROGRESS'|'UPDATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|null,
      *     amazonManaged?: bool|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     customDomainName?: string|null,
+     *     domainVerificationId?: string|null,
+     *     groupDomain?: string|null
      * } $args
      */
     public function __construct(array $args = [])

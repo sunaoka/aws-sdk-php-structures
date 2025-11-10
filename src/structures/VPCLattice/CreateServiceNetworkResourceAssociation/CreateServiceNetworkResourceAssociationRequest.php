@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string $resourceConfigurationIdentifier
  * @property string $serviceNetworkIdentifier
+ * @property bool|null $privateDnsEnabled
  * @property array<string, string>|null $tags
  */
 class CreateServiceNetworkResourceAssociationRequest extends Request
@@ -17,6 +18,7 @@ class CreateServiceNetworkResourceAssociationRequest extends Request
      *     clientToken?: string|null,
      *     resourceConfigurationIdentifier: string,
      *     serviceNetworkIdentifier: string,
+     *     privateDnsEnabled?: bool|null,
      *     tags?: array<string, string>|null
      * } $args
      */
