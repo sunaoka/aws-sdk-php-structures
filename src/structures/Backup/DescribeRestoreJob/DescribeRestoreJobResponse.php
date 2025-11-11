@@ -26,6 +26,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ValidationStatusMessage
  * @property 'DELETING'|'FAILED'|'SUCCESSFUL'|null $DeletionStatus
  * @property string|null $DeletionStatusMessage
+ * @property bool|null $IsParent
+ * @property string|null $ParentJobId
  */
 class DescribeRestoreJobResponse extends Response
 {

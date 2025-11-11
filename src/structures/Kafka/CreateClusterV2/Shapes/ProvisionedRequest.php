@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LoggingInfo|null $LoggingInfo
  * @property int<1, 15> $NumberOfBrokerNodes
  * @property 'LOCAL'|'TIERED'|null $StorageMode
+ * @property Rebalancing|null $Rebalancing
  */
 class ProvisionedRequest extends Shape
 {
@@ -29,7 +30,8 @@ class ProvisionedRequest extends Shape
      *     KafkaVersion: string,
      *     LoggingInfo?: LoggingInfo|null,
      *     NumberOfBrokerNodes: int<1, 15>,
-     *     StorageMode?: 'LOCAL'|'TIERED'|null
+     *     StorageMode?: 'LOCAL'|'TIERED'|null,
+     *     Rebalancing?: Rebalancing|null
      * } $args
      */
     public function __construct(array $args)

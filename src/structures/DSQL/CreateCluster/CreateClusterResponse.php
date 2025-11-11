@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\MultiRegionProperties|null $multiRegionProperties
  * @property Shapes\EncryptionDetails|null $encryptionDetails
  * @property bool $deletionProtectionEnabled
+ * @property string|null $endpoint
  */
 class CreateClusterResponse extends Response
 {

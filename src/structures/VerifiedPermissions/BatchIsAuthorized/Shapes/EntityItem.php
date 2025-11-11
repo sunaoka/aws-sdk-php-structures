@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EntityIdentifier $identifier
  * @property array<string, AttributeValue>|null $attributes
  * @property list<EntityIdentifier>|null $parents
+ * @property array<string, CedarTagValue>|null $tags
  */
 class EntityItem extends Shape
 {
@@ -15,7 +16,8 @@ class EntityItem extends Shape
      * @param array{
      *     identifier: EntityIdentifier,
      *     attributes?: array<string, AttributeValue>|null,
-     *     parents?: list<EntityIdentifier>|null
+     *     parents?: list<EntityIdentifier>|null,
+     *     tags?: array<string, CedarTagValue>|null
      * } $args
      */
     public function __construct(array $args)

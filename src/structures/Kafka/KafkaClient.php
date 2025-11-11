@@ -53,6 +53,7 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use UpdateClusterKafkaVersion\UpdateClusterKafkaVersionTrait;
     use UpdateConnectivity\UpdateConnectivityTrait;
     use UpdateMonitoring\UpdateMonitoringTrait;
+    use UpdateRebalancing\UpdateRebalancingTrait;
     use UpdateReplicationInfo\UpdateReplicationInfoTrait;
     use UpdateSecurity\UpdateSecurityTrait;
     use UpdateStorage\UpdateStorageTrait;

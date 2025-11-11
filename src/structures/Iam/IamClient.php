@@ -13,6 +13,7 @@ class IamClient extends \Aws\Iam\IamClient
     use ChangePassword\ChangePasswordTrait;
     use CreateAccessKey\CreateAccessKeyTrait;
     use CreateAccountAlias\CreateAccountAliasTrait;
+    use CreateDelegationRequest\CreateDelegationRequestTrait;
     use CreateGroup\CreateGroupTrait;
     use CreateInstanceProfile\CreateInstanceProfileTrait;
     use CreateLoginProfile\CreateLoginProfileTrait;

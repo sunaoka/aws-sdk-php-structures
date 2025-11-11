@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ConnectivityInfo|null $ConnectivityInfo
  * @property 'LOCAL'|'TIERED'|null $StorageMode
  * @property BrokerCountUpdateInfo|null $BrokerCountUpdateInfo
+ * @property Rebalancing|null $Rebalancing
  */
 class MutableClusterInfo extends Shape
 {
@@ -35,7 +36,8 @@ class MutableClusterInfo extends Shape
      *     EncryptionInfo?: EncryptionInfo|null,
      *     ConnectivityInfo?: ConnectivityInfo|null,
      *     StorageMode?: 'LOCAL'|'TIERED'|null,
-     *     BrokerCountUpdateInfo?: BrokerCountUpdateInfo|null
+     *     BrokerCountUpdateInfo?: BrokerCountUpdateInfo|null,
+     *     Rebalancing?: Rebalancing|null
      * } $args
      */
     public function __construct(array $args = [])

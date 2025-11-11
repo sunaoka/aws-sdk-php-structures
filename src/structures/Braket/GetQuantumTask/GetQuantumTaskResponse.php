@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Association>|null $associations
  * @property int|null $numSuccessfulShots
  * @property Shapes\ActionMetadata|null $actionMetadata
+ * @property Shapes\ExperimentalCapabilities|null $experimentalCapabilities
  */
 class GetQuantumTaskResponse extends Response
 {
