@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $imageSetArn
  * @property Shapes\Overrides|null $overrides
  * @property bool|null $isPrimary
+ * @property \Aws\Api\DateTimeResult|null $lastAccessedAt
+ * @property 'FREQUENT_ACCESS'|'ARCHIVE_INSTANT_ACCESS'|null $storageTier
  */
 class GetImageSetResponse extends Response
 {

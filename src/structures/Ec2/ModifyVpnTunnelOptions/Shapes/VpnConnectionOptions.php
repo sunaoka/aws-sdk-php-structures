@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TransportTransitGatewayAttachmentId
  * @property 'ipv4'|'ipv6'|null $TunnelInsideIpVersion
  * @property list<TunnelOption>|null $TunnelOptions
+ * @property 'standard'|'large'|null $TunnelBandwidth
  */
 class VpnConnectionOptions extends Shape
 {
@@ -29,7 +30,8 @@ class VpnConnectionOptions extends Shape
      *     OutsideIpAddressType?: string|null,
      *     TransportTransitGatewayAttachmentId?: string|null,
      *     TunnelInsideIpVersion?: 'ipv4'|'ipv6'|null,
-     *     TunnelOptions?: list<TunnelOption>|null
+     *     TunnelOptions?: list<TunnelOption>|null,
+     *     TunnelBandwidth?: 'standard'|'large'|null
      * } $args
      */
     public function __construct(array $args = [])
