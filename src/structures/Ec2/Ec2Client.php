@@ -518,6 +518,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetFlowLogsIntegrationTemplate\GetFlowLogsIntegrationTemplateTrait;
     use GetGroupsForCapacityReservation\GetGroupsForCapacityReservationTrait;
     use GetHostReservationPurchasePreview\GetHostReservationPurchasePreviewTrait;
+    use GetImageAncestry\GetImageAncestryTrait;
     use GetImageBlockPublicAccessState\GetImageBlockPublicAccessStateTrait;
     use GetInstanceMetadataDefaults\GetInstanceMetadataDefaultsTrait;
     use GetInstanceTpmEkPub\GetInstanceTpmEkPubTrait;

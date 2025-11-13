@@ -11,6 +11,7 @@ class S3TablesClient extends \Aws\S3Tables\S3TablesClient
     use DeleteTable\DeleteTableTrait;
     use DeleteTableBucket\DeleteTableBucketTrait;
     use DeleteTableBucketEncryption\DeleteTableBucketEncryptionTrait;
+    use DeleteTableBucketMetricsConfiguration\DeleteTableBucketMetricsConfigurationTrait;
     use DeleteTableBucketPolicy\DeleteTableBucketPolicyTrait;
     use DeleteTablePolicy\DeleteTablePolicyTrait;
     use GetNamespace\GetNamespaceTrait;
@@ -18,6 +19,7 @@ class S3TablesClient extends \Aws\S3Tables\S3TablesClient
     use GetTableBucket\GetTableBucketTrait;
     use GetTableBucketEncryption\GetTableBucketEncryptionTrait;
     use GetTableBucketMaintenanceConfiguration\GetTableBucketMaintenanceConfigurationTrait;
+    use GetTableBucketMetricsConfiguration\GetTableBucketMetricsConfigurationTrait;
     use GetTableBucketPolicy\GetTableBucketPolicyTrait;
     use GetTableEncryption\GetTableEncryptionTrait;
     use GetTableMaintenanceConfiguration\GetTableMaintenanceConfigurationTrait;
@@ -30,6 +32,7 @@ class S3TablesClient extends \Aws\S3Tables\S3TablesClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutTableBucketEncryption\PutTableBucketEncryptionTrait;
     use PutTableBucketMaintenanceConfiguration\PutTableBucketMaintenanceConfigurationTrait;
+    use PutTableBucketMetricsConfiguration\PutTableBucketMetricsConfigurationTrait;
     use PutTableBucketPolicy\PutTableBucketPolicyTrait;
     use PutTableMaintenanceConfiguration\PutTableMaintenanceConfigurationTrait;
     use PutTablePolicy\PutTablePolicyTrait;

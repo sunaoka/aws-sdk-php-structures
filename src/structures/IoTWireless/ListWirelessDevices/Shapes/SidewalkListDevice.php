@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CertificateList>|null $DeviceCertificates
  * @property string|null $DeviceProfileId
  * @property 'PROVISIONED'|'REGISTERED'|'ACTIVATED'|'UNKNOWN'|null $Status
+ * @property SidewalkPositioning|null $Positioning
  */
 class SidewalkListDevice extends Shape
 {
@@ -21,7 +22,8 @@ class SidewalkListDevice extends Shape
      *     SidewalkManufacturingSn?: string|null,
      *     DeviceCertificates?: list<CertificateList>|null,
      *     DeviceProfileId?: string|null,
-     *     Status?: 'PROVISIONED'|'REGISTERED'|'ACTIVATED'|'UNKNOWN'|null
+     *     Status?: 'PROVISIONED'|'REGISTERED'|'ACTIVATED'|'UNKNOWN'|null,
+     *     Positioning?: SidewalkPositioning|null
      * } $args
      */
     public function __construct(array $args = [])

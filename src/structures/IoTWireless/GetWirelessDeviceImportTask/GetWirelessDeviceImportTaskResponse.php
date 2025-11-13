@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Id
  * @property string|null $Arn
  * @property string|null $DestinationName
+ * @property 'Enabled'|'Disabled'|null $Positioning
  * @property Shapes\SidewalkGetStartImportInfo|null $Sidewalk
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property 'INITIALIZING'|'INITIALIZED'|'PENDING'|'COMPLETE'|'FAILED'|'DELETING'|null $Status

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PartnerAppConfig|null $ApplicationConfig
  * @property 'IAM' $AuthType
  * @property bool|null $EnableIamSessionBasedIdentity
+ * @property bool|null $EnableAutoMinorVersionUpgrade
  * @property string|null $ClientToken
  * @property list<Shapes\Tag>|null $Tags
  */
@@ -30,6 +31,7 @@ class CreatePartnerAppRequest extends Request
      *     ApplicationConfig?: Shapes\PartnerAppConfig|null,
      *     AuthType: 'IAM',
      *     EnableIamSessionBasedIdentity?: bool|null,
+     *     EnableAutoMinorVersionUpgrade?: bool|null,
      *     ClientToken?: string|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args

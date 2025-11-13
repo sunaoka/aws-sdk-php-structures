@@ -104,6 +104,7 @@ class RedshiftClient extends \Aws\Redshift\RedshiftClient
     use FailoverPrimaryCompute\FailoverPrimaryComputeTrait;
     use GetClusterCredentials\GetClusterCredentialsTrait;
     use GetClusterCredentialsWithIAM\GetClusterCredentialsWithIAMTrait;
+    use GetIdentityCenterAuthToken\GetIdentityCenterAuthTokenTrait;
     use GetReservedNodeExchangeConfigurationOptions\GetReservedNodeExchangeConfigurationOptionsTrait;
     use GetReservedNodeExchangeOfferings\GetReservedNodeExchangeOfferingsTrait;
     use GetResourcePolicy\GetResourcePolicyTrait;

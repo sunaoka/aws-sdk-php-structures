@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ControlArn
- * @property 'FRAMEWORK'|'COMMON_CONTROL' $MappingType
+ * @property 'FRAMEWORK'|'COMMON_CONTROL'|'RELATED_CONTROL' $MappingType
  * @property Mapping $Mapping
  */
 class ControlMapping extends Shape
@@ -14,7 +14,7 @@ class ControlMapping extends Shape
     /**
      * @param array{
      *     ControlArn: string,
-     *     MappingType: 'FRAMEWORK'|'COMMON_CONTROL',
+     *     MappingType: 'FRAMEWORK'|'COMMON_CONTROL'|'RELATED_CONTROL',
      *     Mapping: Mapping
      * } $args
      */

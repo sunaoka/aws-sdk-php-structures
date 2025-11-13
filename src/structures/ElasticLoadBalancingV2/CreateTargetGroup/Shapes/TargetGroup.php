@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $TargetGroupArn
  * @property string|null $TargetGroupName
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $Protocol
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null $Protocol
  * @property int<1, 65535>|null $Port
  * @property string|null $VpcId
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $HealthCheckProtocol
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null $HealthCheckProtocol
  * @property string|null $HealthCheckPort
  * @property bool|null $HealthCheckEnabled
  * @property int<5, 300>|null $HealthCheckIntervalSeconds
@@ -30,10 +30,10 @@ class TargetGroup extends Shape
      * @param array{
      *     TargetGroupArn?: string|null,
      *     TargetGroupName?: string|null,
-     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null,
      *     Port?: int<1, 65535>|null,
      *     VpcId?: string|null,
-     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null,
      *     HealthCheckPort?: string|null,
      *     HealthCheckEnabled?: bool|null,
      *     HealthCheckIntervalSeconds?: int<5, 300>|null,

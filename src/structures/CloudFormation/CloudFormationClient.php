@@ -49,6 +49,7 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use ExecuteChangeSet\ExecuteChangeSetTrait;
     use ExecuteStackRefactor\ExecuteStackRefactorTrait;
     use GetGeneratedTemplate\GetGeneratedTemplateTrait;
+    use GetHookResult\GetHookResultTrait;
     use GetStackPolicy\GetStackPolicyTrait;
     use GetTemplate\GetTemplateTrait;
     use GetTemplateSummary\GetTemplateSummaryTrait;

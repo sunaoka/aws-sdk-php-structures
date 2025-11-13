@@ -7,6 +7,8 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use AddTagsToResource\AddTagsToResourceTrait;
     use ApplyPendingMaintenanceAction\ApplyPendingMaintenanceActionTrait;
     use BatchStartRecommendations\BatchStartRecommendationsTrait;
+    use CancelMetadataModelConversion\CancelMetadataModelConversionTrait;
+    use CancelMetadataModelCreation\CancelMetadataModelCreationTrait;
     use CancelReplicationTaskAssessmentRun\CancelReplicationTaskAssessmentRunTrait;
     use CreateDataMigration\CreateDataMigrationTrait;
     use CreateDataProvider\CreateDataProviderTrait;
@@ -55,8 +57,11 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use DescribeFleetAdvisorSchemaObjectSummary\DescribeFleetAdvisorSchemaObjectSummaryTrait;
     use DescribeFleetAdvisorSchemas\DescribeFleetAdvisorSchemasTrait;
     use DescribeInstanceProfiles\DescribeInstanceProfilesTrait;
+    use DescribeMetadataModel\DescribeMetadataModelTrait;
     use DescribeMetadataModelAssessments\DescribeMetadataModelAssessmentsTrait;
+    use DescribeMetadataModelChildren\DescribeMetadataModelChildrenTrait;
     use DescribeMetadataModelConversions\DescribeMetadataModelConversionsTrait;
+    use DescribeMetadataModelCreations\DescribeMetadataModelCreationsTrait;
     use DescribeMetadataModelExportsAsScript\DescribeMetadataModelExportsAsScriptTrait;
     use DescribeMetadataModelExportsToTarget\DescribeMetadataModelExportsToTargetTrait;
     use DescribeMetadataModelImports\DescribeMetadataModelImportsTrait;
@@ -79,6 +84,7 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use DescribeSchemas\DescribeSchemasTrait;
     use DescribeTableStatistics\DescribeTableStatisticsTrait;
     use ExportMetadataModelAssessment\ExportMetadataModelAssessmentTrait;
+    use GetTargetSelectionRules\GetTargetSelectionRulesTrait;
     use ImportCertificate\ImportCertificateTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ModifyConversionConfiguration\ModifyConversionConfigurationTrait;
@@ -103,6 +109,7 @@ class DatabaseMigrationServiceClient extends \Aws\DatabaseMigrationService\Datab
     use StartExtensionPackAssociation\StartExtensionPackAssociationTrait;
     use StartMetadataModelAssessment\StartMetadataModelAssessmentTrait;
     use StartMetadataModelConversion\StartMetadataModelConversionTrait;
+    use StartMetadataModelCreation\StartMetadataModelCreationTrait;
     use StartMetadataModelExportAsScript\StartMetadataModelExportAsScriptTrait;
     use StartMetadataModelExportToTarget\StartMetadataModelExportToTargetTrait;
     use StartMetadataModelImport\StartMetadataModelImportTrait;

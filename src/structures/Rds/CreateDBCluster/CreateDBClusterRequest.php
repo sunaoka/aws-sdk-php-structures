@@ -54,7 +54,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
  * @property bool|null $EnableLimitlessDatabase
- * @property 'standard'|'limitless'|'scaleout'|null $ClusterScalabilityType
+ * @property 'standard'|'limitless'|null $ClusterScalabilityType
  * @property string|null $DBSystemId
  * @property bool|null $ManageMasterUserPassword
  * @property bool|null $EnableLocalWriteForwarding
@@ -116,7 +116,7 @@ class CreateDBClusterRequest extends Request
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
      *     EnableLimitlessDatabase?: bool|null,
-     *     ClusterScalabilityType?: 'standard'|'limitless'|'scaleout'|null,
+     *     ClusterScalabilityType?: 'standard'|'limitless'|null,
      *     DBSystemId?: string|null,
      *     ManageMasterUserPassword?: bool|null,
      *     EnableLocalWriteForwarding?: bool|null,

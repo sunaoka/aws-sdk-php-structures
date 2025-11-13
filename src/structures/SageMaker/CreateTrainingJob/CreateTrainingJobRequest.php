@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OutputDataConfig $OutputDataConfig
  * @property Shapes\ResourceConfig|null $ResourceConfig
  * @property Shapes\VpcConfig|null $VpcConfig
- * @property Shapes\StoppingCondition $StoppingCondition
+ * @property Shapes\StoppingCondition|null $StoppingCondition
  * @property list<Shapes\Tag>|null $Tags
  * @property bool|null $EnableNetworkIsolation
  * @property bool|null $EnableInterContainerTrafficEncryption
@@ -43,7 +43,7 @@ class CreateTrainingJobRequest extends Request
      *     OutputDataConfig: Shapes\OutputDataConfig,
      *     ResourceConfig?: Shapes\ResourceConfig|null,
      *     VpcConfig?: Shapes\VpcConfig|null,
-     *     StoppingCondition: Shapes\StoppingCondition,
+     *     StoppingCondition?: Shapes\StoppingCondition|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     EnableNetworkIsolation?: bool|null,
      *     EnableInterContainerTrafficEncryption?: bool|null,

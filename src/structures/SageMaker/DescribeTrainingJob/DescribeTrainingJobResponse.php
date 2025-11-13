@@ -15,11 +15,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending' $SecondaryStatus
  * @property string|null $FailureReason
  * @property array<string, string>|null $HyperParameters
- * @property Shapes\AlgorithmSpecification $AlgorithmSpecification
+ * @property Shapes\AlgorithmSpecification|null $AlgorithmSpecification
  * @property string|null $RoleArn
  * @property list<Shapes\Channel>|null $InputDataConfig
  * @property Shapes\OutputDataConfig|null $OutputDataConfig
- * @property Shapes\ResourceConfig $ResourceConfig
+ * @property Shapes\ResourceConfig|null $ResourceConfig
  * @property Shapes\WarmPoolStatus|null $WarmPoolStatus
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property Shapes\StoppingCondition $StoppingCondition

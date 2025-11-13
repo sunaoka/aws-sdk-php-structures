@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientRequestToken
  * @property string|null $DeviceName
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'Enabled'|'Disabled'|null $Positioning
  * @property Shapes\SidewalkSingleStartImportInfo $Sidewalk
  */
 class StartSingleWirelessDeviceImportTaskRequest extends Request
@@ -19,6 +20,7 @@ class StartSingleWirelessDeviceImportTaskRequest extends Request
      *     ClientRequestToken?: string|null,
      *     DeviceName?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
+     *     Positioning?: 'Enabled'|'Disabled'|null,
      *     Sidewalk: Shapes\SidewalkSingleStartImportInfo
      * } $args
      */

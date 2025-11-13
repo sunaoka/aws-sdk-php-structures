@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property EksConfiguration|null $eksConfiguration
+ * @property VpcConfiguration|null $vpcConfiguration
  */
 class Source extends Shape
 {
     /**
-     * @param array{eksConfiguration?: EksConfiguration|null} $args
+     * @param array{
+     *     eksConfiguration?: EksConfiguration|null,
+     *     vpcConfiguration?: VpcConfiguration|null
+     * } $args
      */
     public function __construct(array $args = [])
     {
