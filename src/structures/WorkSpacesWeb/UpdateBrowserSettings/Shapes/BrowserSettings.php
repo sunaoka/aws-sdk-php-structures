@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $browserPolicy
  * @property string|null $customerManagedKey
  * @property array<string, string>|null $additionalEncryptionContext
+ * @property WebContentFilteringPolicy|null $webContentFilteringPolicy
  */
 class BrowserSettings extends Shape
 {
@@ -19,7 +20,8 @@ class BrowserSettings extends Shape
      *     associatedPortalArns?: list<string>|null,
      *     browserPolicy?: string|null,
      *     customerManagedKey?: string|null,
-     *     additionalEncryptionContext?: array<string, string>|null
+     *     additionalEncryptionContext?: array<string, string>|null,
+     *     webContentFilteringPolicy?: WebContentFilteringPolicy|null
      * } $args
      */
     public function __construct(array $args)

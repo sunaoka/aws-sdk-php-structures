@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ContainerHostname
- * @property string $Image
+ * @property string|null $Image
  * @property string|null $ImageDigest
  * @property string|null $ModelDataUrl
  * @property ModelDataSource|null $ModelDataSource
@@ -24,7 +24,7 @@ class ModelPackageContainerDefinition extends Shape
     /**
      * @param array{
      *     ContainerHostname?: string|null,
-     *     Image: string,
+     *     Image?: string|null,
      *     ImageDigest?: string|null,
      *     ModelDataUrl?: string|null,
      *     ModelDataSource?: ModelDataSource|null,
@@ -38,7 +38,7 @@ class ModelPackageContainerDefinition extends Shape
      *     ModelDataETag?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

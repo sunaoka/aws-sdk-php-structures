@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyDataMigration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'do-nothing'|'truncate'|'drop-tables-on-target'|null $TablePreparationMode
+ * @property 'drop-tables-on-target'|'truncate'|'do-nothing'|null $TablePreparationMode
  */
 class TargetDataSetting extends Shape
 {
     /**
-     * @param array{TablePreparationMode?: 'do-nothing'|'truncate'|'drop-tables-on-target'|null} $args
+     * @param array{TablePreparationMode?: 'drop-tables-on-target'|'truncate'|'do-nothing'|null} $args
      */
     public function __construct(array $args = [])
     {

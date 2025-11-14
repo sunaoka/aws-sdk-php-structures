@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $Protocol
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null $Protocol
  * @property string|null $ProtocolVersion
  * @property int<1, 65535>|null $Port
  * @property string|null $VpcId
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $HealthCheckProtocol
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null $HealthCheckProtocol
  * @property string|null $HealthCheckPort
  * @property bool|null $HealthCheckEnabled
  * @property string|null $HealthCheckPath
@@ -28,11 +28,11 @@ class CreateTargetGroupRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null,
      *     ProtocolVersion?: string|null,
      *     Port?: int<1, 65535>|null,
      *     VpcId?: string|null,
-     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null,
      *     HealthCheckPort?: string|null,
      *     HealthCheckEnabled?: bool|null,
      *     HealthCheckPath?: string|null,

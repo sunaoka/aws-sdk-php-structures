@@ -21,6 +21,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'IAM'|null $AuthType
  * @property bool|null $EnableIamSessionBasedIdentity
  * @property Shapes\ErrorInfo|null $Error
+ * @property bool|null $EnableAutoMinorVersionUpgrade
+ * @property \Aws\Api\DateTimeResult|null $CurrentVersionEolDate
+ * @property Shapes\AvailableUpgrade|null $AvailableUpgrade
  */
 class DescribePartnerAppResponse extends Response
 {

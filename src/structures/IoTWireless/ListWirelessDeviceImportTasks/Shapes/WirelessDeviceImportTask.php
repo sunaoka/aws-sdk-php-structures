@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Id
  * @property string|null $Arn
  * @property string|null $DestinationName
+ * @property 'Enabled'|'Disabled'|null $Positioning
  * @property SidewalkGetStartImportInfo|null $Sidewalk
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property 'INITIALIZING'|'INITIALIZED'|'PENDING'|'COMPLETE'|'FAILED'|'DELETING'|null $Status
@@ -24,6 +25,7 @@ class WirelessDeviceImportTask extends Shape
      *     Id?: string|null,
      *     Arn?: string|null,
      *     DestinationName?: string|null,
+     *     Positioning?: 'Enabled'|'Disabled'|null,
      *     Sidewalk?: SidewalkGetStartImportInfo|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     Status?: 'INITIALIZING'|'INITIALIZED'|'PENDING'|'COMPLETE'|'FAILED'|'DELETING'|null,

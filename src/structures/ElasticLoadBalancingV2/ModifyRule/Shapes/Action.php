@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'forward'|'authenticate-oidc'|'authenticate-cognito'|'redirect'|'fixed-response' $Type
+ * @property 'forward'|'authenticate-oidc'|'authenticate-cognito'|'redirect'|'fixed-response'|'jwt-validation' $Type
  * @property string|null $TargetGroupArn
  * @property AuthenticateOidcActionConfig|null $AuthenticateOidcConfig
  * @property AuthenticateCognitoActionConfig|null $AuthenticateCognitoConfig
@@ -13,19 +13,21 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RedirectActionConfig|null $RedirectConfig
  * @property FixedResponseActionConfig|null $FixedResponseConfig
  * @property ForwardActionConfig|null $ForwardConfig
+ * @property JwtValidationActionConfig|null $JwtValidationConfig
  */
 class Action extends Shape
 {
     /**
      * @param array{
-     *     Type: 'forward'|'authenticate-oidc'|'authenticate-cognito'|'redirect'|'fixed-response',
+     *     Type: 'forward'|'authenticate-oidc'|'authenticate-cognito'|'redirect'|'fixed-response'|'jwt-validation',
      *     TargetGroupArn?: string|null,
      *     AuthenticateOidcConfig?: AuthenticateOidcActionConfig|null,
      *     AuthenticateCognitoConfig?: AuthenticateCognitoActionConfig|null,
      *     Order?: int<1, 50000>|null,
      *     RedirectConfig?: RedirectActionConfig|null,
      *     FixedResponseConfig?: FixedResponseActionConfig|null,
-     *     ForwardConfig?: ForwardActionConfig|null
+     *     ForwardConfig?: ForwardActionConfig|null,
+     *     JwtValidationConfig?: JwtValidationActionConfig|null
      * } $args
      */
     public function __construct(array $args)

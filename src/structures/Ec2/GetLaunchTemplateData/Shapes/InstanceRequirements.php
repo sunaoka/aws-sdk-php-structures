@@ -21,10 +21,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'hdd'|'ssd'>|null $LocalStorageTypes
  * @property TotalLocalStorageGB|null $TotalLocalStorageGB
  * @property BaselineEbsBandwidthMbps|null $BaselineEbsBandwidthMbps
- * @property list<'gpu'|'fpga'|'inference'>|null $AcceleratorTypes
+ * @property list<'gpu'|'fpga'|'inference'|'media'>|null $AcceleratorTypes
  * @property AcceleratorCount|null $AcceleratorCount
  * @property list<'amazon-web-services'|'amd'|'nvidia'|'xilinx'|'habana'>|null $AcceleratorManufacturers
- * @property list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'>|null $AcceleratorNames
+ * @property list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'|'l40s'|'l4'|'gaudi-hl-205'|'inferentia2'|'trainium'|'trainium2'|'u30'>|null $AcceleratorNames
  * @property AcceleratorTotalMemoryMiB|null $AcceleratorTotalMemoryMiB
  * @property NetworkBandwidthGbps|null $NetworkBandwidthGbps
  * @property list<string>|null $AllowedInstanceTypes
@@ -52,10 +52,10 @@ class InstanceRequirements extends Shape
      *     LocalStorageTypes?: list<'hdd'|'ssd'>|null,
      *     TotalLocalStorageGB?: TotalLocalStorageGB|null,
      *     BaselineEbsBandwidthMbps?: BaselineEbsBandwidthMbps|null,
-     *     AcceleratorTypes?: list<'gpu'|'fpga'|'inference'>|null,
+     *     AcceleratorTypes?: list<'gpu'|'fpga'|'inference'|'media'>|null,
      *     AcceleratorCount?: AcceleratorCount|null,
      *     AcceleratorManufacturers?: list<'amazon-web-services'|'amd'|'nvidia'|'xilinx'|'habana'>|null,
-     *     AcceleratorNames?: list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'>|null,
+     *     AcceleratorNames?: list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'|'l40s'|'l4'|'gaudi-hl-205'|'inferentia2'|'trainium'|'trainium2'|'u30'>|null,
      *     AcceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiB|null,
      *     NetworkBandwidthGbps?: NetworkBandwidthGbps|null,
      *     AllowedInstanceTypes?: list<string>|null,

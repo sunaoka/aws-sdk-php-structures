@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TargetGroupArn
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $HealthCheckProtocol
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null $HealthCheckProtocol
  * @property string|null $HealthCheckPort
  * @property string|null $HealthCheckPath
  * @property bool|null $HealthCheckEnabled
@@ -21,7 +21,7 @@ class ModifyTargetGroupRequest extends Request
     /**
      * @param array{
      *     TargetGroupArn: string,
-     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null,
      *     HealthCheckPort?: string|null,
      *     HealthCheckPath?: string|null,
      *     HealthCheckEnabled?: bool|null,

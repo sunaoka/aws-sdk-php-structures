@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ListenerArn
  * @property int<1, 65535>|null $Port
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $Protocol
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null $Protocol
  * @property string|null $SslPolicy
  * @property list<Shapes\Certificate>|null $Certificates
  * @property list<Shapes\Action>|null $DefaultActions
@@ -20,7 +20,7 @@ class ModifyListenerRequest extends Request
      * @param array{
      *     ListenerArn: string,
      *     Port?: int<1, 65535>|null,
-     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|'QUIC'|'TCP_QUIC'|null,
      *     SslPolicy?: string|null,
      *     Certificates?: list<Shapes\Certificate>|null,
      *     DefaultActions?: list<Shapes\Action>|null,

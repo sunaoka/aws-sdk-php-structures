@@ -86,7 +86,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null $LocalWriteForwardingStatus
  * @property string|null $AwsBackupRecoveryPointArn
  * @property LimitlessDatabase|null $LimitlessDatabase
- * @property 'standard'|'limitless'|'scaleout'|null $ClusterScalabilityType
+ * @property 'standard'|'limitless'|null $ClusterScalabilityType
  * @property CertificateDetails|null $CertificateDetails
  * @property string|null $EngineLifecycleSupport
  */
@@ -175,7 +175,7 @@ class DBCluster extends Shape
      *     LocalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'requested'|null,
      *     AwsBackupRecoveryPointArn?: string|null,
      *     LimitlessDatabase?: LimitlessDatabase|null,
-     *     ClusterScalabilityType?: 'standard'|'limitless'|'scaleout'|null,
+     *     ClusterScalabilityType?: 'standard'|'limitless'|null,
      *     CertificateDetails?: CertificateDetails|null,
      *     EngineLifecycleSupport?: string|null
      * } $args
