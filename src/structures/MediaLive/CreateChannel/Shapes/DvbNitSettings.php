@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 65536> $NetworkId
+ * @property int $NetworkId
  * @property string $NetworkName
- * @property int<25, 10000>|null $RepInterval
+ * @property int|null $RepInterval
  */
 class DvbNitSettings extends Shape
 {
     /**
      * @param array{
-     *     NetworkId: int<0, 65536>,
+     *     NetworkId: int,
      *     NetworkName: string,
-     *     RepInterval?: int<25, 10000>|null
+     *     RepInterval?: int|null
      * } $args
      */
     public function __construct(array $args)

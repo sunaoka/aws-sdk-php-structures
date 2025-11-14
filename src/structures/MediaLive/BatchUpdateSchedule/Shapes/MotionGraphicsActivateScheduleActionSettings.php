@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\BatchUpdateSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 86400000>|null $Duration
+ * @property int|null $Duration
  * @property string|null $PasswordParam
  * @property string|null $Url
  * @property string|null $Username
@@ -14,7 +14,7 @@ class MotionGraphicsActivateScheduleActionSettings extends Shape
 {
     /**
      * @param array{
-     *     Duration?: int<0, 86400000>|null,
+     *     Duration?: int|null,
      *     PasswordParam?: string|null,
      *     Url?: string|null,
      *     Username?: string|null

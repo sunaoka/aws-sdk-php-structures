@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MediaLive\BatchUpdateSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max>|null $Duration
- * @property int<0, max>|null $FadeIn
- * @property int<0, max>|null $FadeOut
- * @property int<1, max>|null $Height
+ * @property int|null $Duration
+ * @property int|null $FadeIn
+ * @property int|null $FadeOut
+ * @property int|null $Height
  * @property InputLocation $Image
- * @property int<0, max>|null $ImageX
- * @property int<0, max>|null $ImageY
- * @property int<0, 7>|null $Layer
- * @property int<0, 100>|null $Opacity
+ * @property int|null $ImageX
+ * @property int|null $ImageY
+ * @property int|null $Layer
+ * @property int|null $Opacity
  * @property list<string> $OutputNames
- * @property int<1, max>|null $Width
+ * @property int|null $Width
  */
 class StaticImageOutputActivateScheduleActionSettings extends Shape
 {
     /**
      * @param array{
-     *     Duration?: int<0, max>|null,
-     *     FadeIn?: int<0, max>|null,
-     *     FadeOut?: int<0, max>|null,
-     *     Height?: int<1, max>|null,
+     *     Duration?: int|null,
+     *     FadeIn?: int|null,
+     *     FadeOut?: int|null,
+     *     Height?: int|null,
      *     Image: InputLocation,
-     *     ImageX?: int<0, max>|null,
-     *     ImageY?: int<0, max>|null,
-     *     Layer?: int<0, 7>|null,
-     *     Opacity?: int<0, 100>|null,
+     *     ImageX?: int|null,
+     *     ImageY?: int|null,
+     *     Layer?: int|null,
+     *     Opacity?: int|null,
      *     OutputNames: list<string>,
-     *     Width?: int<1, max>|null
+     *     Width?: int|null
      * } $args
      */
     public function __construct(array $args)

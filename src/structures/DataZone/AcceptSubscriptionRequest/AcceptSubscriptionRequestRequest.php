@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\AcceptSubscriptionRequest;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property list<Shapes\AssetPermission>|null $assetPermissions
  * @property list<Shapes\AcceptedAssetScope>|null $assetScopes
  * @property string|null $decisionComment
  * @property string $domainIdentifier
@@ -14,6 +15,7 @@ class AcceptSubscriptionRequestRequest extends Request
 {
     /**
      * @param array{
+     *     assetPermissions?: list<Shapes\AssetPermission>|null,
      *     assetScopes?: list<Shapes\AcceptedAssetScope>|null,
      *     decisionComment?: string|null,
      *     domainIdentifier: string,

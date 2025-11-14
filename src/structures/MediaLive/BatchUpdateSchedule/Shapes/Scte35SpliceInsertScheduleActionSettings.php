@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\BatchUpdateSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 8589934591>|null $Duration
- * @property int<0, 4294967295> $SpliceEventId
+ * @property int|null $Duration
+ * @property int $SpliceEventId
  */
 class Scte35SpliceInsertScheduleActionSettings extends Shape
 {
     /**
      * @param array{
-     *     Duration?: int<0, 8589934591>|null,
-     *     SpliceEventId: int<0, 4294967295>
+     *     Duration?: int|null,
+     *     SpliceEventId: int
      * } $args
      */
     public function __construct(array $args)

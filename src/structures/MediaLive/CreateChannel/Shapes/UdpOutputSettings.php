@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 10000>|null $BufferMsec
+ * @property int|null $BufferMsec
  * @property UdpContainerSettings $ContainerSettings
  * @property OutputLocationRef $Destination
  * @property FecOutputSettings|null $FecOutputSettings
@@ -14,7 +14,7 @@ class UdpOutputSettings extends Shape
 {
     /**
      * @param array{
-     *     BufferMsec?: int<0, 10000>|null,
+     *     BufferMsec?: int|null,
      *     ContainerSettings: UdpContainerSettings,
      *     Destination: OutputLocationRef,
      *     FecOutputSettings?: FecOutputSettings|null

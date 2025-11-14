@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FailureCause|null $failureCause
  * @property \Aws\Api\DateTimeResult|null $failureTimestamp
  * @property \Aws\Api\DateTimeResult|null $grantedTimestamp
+ * @property Permissions|null $permissions
  * @property 'GRANT_PENDING'|'REVOKE_PENDING'|'GRANT_IN_PROGRESS'|'REVOKE_IN_PROGRESS'|'GRANTED'|'REVOKED'|'GRANT_FAILED'|'REVOKE_FAILED' $status
  * @property string|null $targetName
  */
@@ -24,6 +25,7 @@ class SubscribedAsset extends Shape
      *     failureCause?: FailureCause|null,
      *     failureTimestamp?: \Aws\Api\DateTimeResult|null,
      *     grantedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     permissions?: Permissions|null,
      *     status: 'GRANT_PENDING'|'REVOKE_PENDING'|'GRANT_IN_PROGRESS'|'REVOKE_IN_PROGRESS'|'GRANTED'|'REVOKED'|'GRANT_FAILED'|'REVOKE_FAILED',
      *     targetName?: string|null
      * } $args
