@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<-1000, 1000>|null $AdAvailOffset
+ * @property int|null $AdAvailOffset
  * @property 'FOLLOW'|'IGNORE'|null $NoRegionalBlackoutFlag
  * @property 'FOLLOW'|'IGNORE'|null $WebDeliveryAllowedFlag
  */
@@ -13,7 +13,7 @@ class Scte35SpliceInsert extends Shape
 {
     /**
      * @param array{
-     *     AdAvailOffset?: int<-1000, 1000>|null,
+     *     AdAvailOffset?: int|null,
      *     NoRegionalBlackoutFlag?: 'FOLLOW'|'IGNORE'|null,
      *     WebDeliveryAllowedFlag?: 'FOLLOW'|'IGNORE'|null
      * } $args

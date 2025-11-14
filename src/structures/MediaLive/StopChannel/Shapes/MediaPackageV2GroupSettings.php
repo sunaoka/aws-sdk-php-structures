@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $KlvBehavior
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $NielsenId3Behavior
  * @property 'NONE'|'SCTE_35_WITHOUT_SEGMENTATION'|null $Scte35Type
- * @property int<1, max>|null $SegmentLength
+ * @property int|null $SegmentLength
  * @property 'MILLISECONDS'|'SECONDS'|null $SegmentLengthUnits
  * @property 'NONE'|'PRIV'|'TDRL'|null $TimedMetadataId3Frame
- * @property int<0, 10000>|null $TimedMetadataId3Period
+ * @property int|null $TimedMetadataId3Period
  * @property 'DISABLED'|'ENABLED'|null $TimedMetadataPassthrough
  */
 class MediaPackageV2GroupSettings extends Shape
@@ -25,10 +25,10 @@ class MediaPackageV2GroupSettings extends Shape
      *     KlvBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
      *     NielsenId3Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
      *     Scte35Type?: 'NONE'|'SCTE_35_WITHOUT_SEGMENTATION'|null,
-     *     SegmentLength?: int<1, max>|null,
+     *     SegmentLength?: int|null,
      *     SegmentLengthUnits?: 'MILLISECONDS'|'SECONDS'|null,
      *     TimedMetadataId3Frame?: 'NONE'|'PRIV'|'TDRL'|null,
-     *     TimedMetadataId3Period?: int<0, 10000>|null,
+     *     TimedMetadataId3Period?: int|null,
      *     TimedMetadataPassthrough?: 'DISABLED'|'ENABLED'|null
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<4, 20>|null $ColumnDepth
+ * @property int|null $ColumnDepth
  * @property 'COLUMN'|'COLUMN_AND_ROW'|null $IncludeFec
- * @property int<1, 20>|null $RowLength
+ * @property int|null $RowLength
  */
 class FecOutputSettings extends Shape
 {
     /**
      * @param array{
-     *     ColumnDepth?: int<4, 20>|null,
+     *     ColumnDepth?: int|null,
      *     IncludeFec?: 'COLUMN'|'COLUMN_AND_ROW'|null,
-     *     RowLength?: int<1, 20>|null
+     *     RowLength?: int|null
      * } $args
      */
     public function __construct(array $args = [])

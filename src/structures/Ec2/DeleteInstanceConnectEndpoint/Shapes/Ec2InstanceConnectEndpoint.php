@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property 'ipv4'|'dualstack'|'ipv6'|null $IpAddressType
  * @property InstanceConnectEndpointPublicDnsNames|null $PublicDnsNames
+ * @property string|null $AvailabilityZoneId
  */
 class Ec2InstanceConnectEndpoint extends Shape
 {
@@ -43,7 +44,8 @@ class Ec2InstanceConnectEndpoint extends Shape
      *     SecurityGroupIds?: list<string>|null,
      *     Tags?: list<Tag>|null,
      *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6'|null,
-     *     PublicDnsNames?: InstanceConnectEndpointPublicDnsNames|null
+     *     PublicDnsNames?: InstanceConnectEndpointPublicDnsNames|null,
+     *     AvailabilityZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

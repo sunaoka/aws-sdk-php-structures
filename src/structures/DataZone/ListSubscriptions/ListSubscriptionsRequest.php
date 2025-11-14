@@ -9,7 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainIdentifier
  * @property int<1, 50>|null $maxResults
  * @property string|null $nextToken
+ * @property string|null $owningGroupId
  * @property string|null $owningProjectId
+ * @property string|null $owningUserId
  * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
  * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
  * @property 'APPROVED'|'REVOKED'|'CANCELLED'|null $status
@@ -24,7 +26,9 @@ class ListSubscriptionsRequest extends Request
      *     domainIdentifier: string,
      *     maxResults?: int<1, 50>|null,
      *     nextToken?: string|null,
+     *     owningGroupId?: string|null,
      *     owningProjectId?: string|null,
+     *     owningUserId?: string|null,
      *     sortBy?: 'CREATED_AT'|'UPDATED_AT'|null,
      *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
      *     status?: 'APPROVED'|'REVOKED'|'CANCELLED'|null,

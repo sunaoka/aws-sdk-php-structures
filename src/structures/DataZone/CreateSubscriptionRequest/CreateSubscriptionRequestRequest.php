@@ -5,6 +5,8 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateSubscriptionRequest;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property list<Shapes\AssetPermission>|null $assetPermissions
+ * @property list<Shapes\AcceptedAssetScope>|null $assetScopes
  * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property list<Shapes\FormInput>|null $metadataForms
@@ -16,6 +18,8 @@ class CreateSubscriptionRequestRequest extends Request
 {
     /**
      * @param array{
+     *     assetPermissions?: list<Shapes\AssetPermission>|null,
+     *     assetScopes?: list<Shapes\AcceptedAssetScope>|null,
      *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     metadataForms?: list<Shapes\FormInput>|null,

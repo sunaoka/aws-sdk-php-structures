@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListChannels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 8191>|null $Pid
+ * @property int|null $Pid
  */
 class VideoSelectorPid extends Shape
 {
     /**
-     * @param array{Pid?: int<0, 8191>|null} $args
+     * @param array{Pid?: int|null} $args
      */
     public function __construct(array $args = [])
     {
