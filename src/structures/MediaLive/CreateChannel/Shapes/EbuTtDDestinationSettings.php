@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED'|null $FillLineGap
  * @property string|null $FontFamily
  * @property 'EXCLUDE'|'INCLUDE'|null $StyleControl
- * @property int<1, 800>|null $DefaultFontSize
- * @property int<80, 800>|null $DefaultLineHeight
+ * @property int|null $DefaultFontSize
+ * @property int|null $DefaultLineHeight
  */
 class EbuTtDDestinationSettings extends Shape
 {
@@ -20,8 +20,8 @@ class EbuTtDDestinationSettings extends Shape
      *     FillLineGap?: 'DISABLED'|'ENABLED'|null,
      *     FontFamily?: string|null,
      *     StyleControl?: 'EXCLUDE'|'INCLUDE'|null,
-     *     DefaultFontSize?: int<1, 800>|null,
-     *     DefaultLineHeight?: int<80, 800>|null
+     *     DefaultFontSize?: int|null,
+     *     DefaultLineHeight?: int|null
      * } $args
      */
     public function __construct(array $args = [])

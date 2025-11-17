@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AcquisitionPointId
- * @property int<-1000, 1000>|null $AdAvailOffset
+ * @property int|null $AdAvailOffset
  * @property string|null $PasswordParam
  * @property string $PoisEndpoint
  * @property string|null $Username
@@ -17,7 +17,7 @@ class Esam extends Shape
     /**
      * @param array{
      *     AcquisitionPointId: string,
-     *     AdAvailOffset?: int<-1000, 1000>|null,
+     *     AdAvailOffset?: int|null,
      *     PasswordParam?: string|null,
      *     PoisEndpoint: string,
      *     Username?: string|null,

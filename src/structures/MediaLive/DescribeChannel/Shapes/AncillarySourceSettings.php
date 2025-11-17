@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 4>|null $SourceAncillaryChannelNumber
+ * @property int|null $SourceAncillaryChannelNumber
  */
 class AncillarySourceSettings extends Shape
 {
     /**
-     * @param array{SourceAncillaryChannelNumber?: int<1, 4>|null} $args
+     * @param array{SourceAncillaryChannelNumber?: int|null} $args
      */
     public function __construct(array $args = [])
     {

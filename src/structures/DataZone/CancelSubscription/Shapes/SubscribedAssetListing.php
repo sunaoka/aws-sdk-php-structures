@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $entityType
  * @property string|null $forms
  * @property list<DetailedGlossaryTerm>|null $glossaryTerms
+ * @property Permissions|null $permissions
  */
 class SubscribedAssetListing extends Shape
 {
@@ -21,7 +22,8 @@ class SubscribedAssetListing extends Shape
      *     entityRevision?: string|null,
      *     entityType?: string|null,
      *     forms?: string|null,
-     *     glossaryTerms?: list<DetailedGlossaryTerm>|null
+     *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
+     *     permissions?: Permissions|null
      * } $args
      */
     public function __construct(array $args = [])

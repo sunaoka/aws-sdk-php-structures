@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
  * @property string $domainId
+ * @property string|null $environmentId
  * @property GrantedEntity $grantedEntity
  * @property string $id
  * @property 'PENDING'|'IN_PROGRESS'|'GRANT_FAILED'|'REVOKE_FAILED'|'GRANT_AND_REVOKE_FAILED'|'COMPLETED'|'INACCESSIBLE' $status
@@ -25,6 +26,7 @@ class SubscriptionGrantSummary extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     createdBy: string,
      *     domainId: string,
+     *     environmentId?: string|null,
      *     grantedEntity: GrantedEntity,
      *     id: string,
      *     status: 'PENDING'|'IN_PROGRESS'|'GRANT_FAILED'|'REVOKE_FAILED'|'GRANT_AND_REVOKE_FAILED'|'COMPLETED'|'INACCESSIBLE',

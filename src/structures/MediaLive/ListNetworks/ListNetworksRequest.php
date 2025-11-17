@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListNetworks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 1000>|null $MaxResults
+ * @property int|null $MaxResults
  * @property string|null $NextToken
  */
 class ListNetworksRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 1000>|null,
+     *     MaxResults?: int|null,
      *     NextToken?: string|null
      * } $args
      */

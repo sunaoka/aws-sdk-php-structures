@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 4294967295> $SpliceEventId
+ * @property int $SpliceEventId
  */
 class Scte35ReturnToNetworkScheduleActionSettings extends Shape
 {
     /**
-     * @param array{SpliceEventId: int<0, 4294967295>} $args
+     * @param array{SpliceEventId: int} $args
      */
     public function __construct(array $args)
     {

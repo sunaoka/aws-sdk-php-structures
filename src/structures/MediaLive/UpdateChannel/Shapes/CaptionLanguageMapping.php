@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 4> $CaptionChannel
+ * @property int $CaptionChannel
  * @property string $LanguageCode
  * @property string $LanguageDescription
  */
@@ -13,7 +13,7 @@ class CaptionLanguageMapping extends Shape
 {
     /**
      * @param array{
-     *     CaptionChannel: int<1, 4>,
+     *     CaptionChannel: int,
      *     LanguageCode: string,
      *     LanguageDescription: string
      * } $args

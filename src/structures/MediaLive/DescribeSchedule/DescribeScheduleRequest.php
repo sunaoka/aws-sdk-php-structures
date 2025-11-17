@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelId
- * @property int<1, 1000>|null $MaxResults
+ * @property int|null $MaxResults
  * @property string|null $NextToken
  */
 class DescribeScheduleRequest extends Request
@@ -14,7 +14,7 @@ class DescribeScheduleRequest extends Request
     /**
      * @param array{
      *     ChannelId: string,
-     *     MaxResults?: int<1, 1000>|null,
+     *     MaxResults?: int|null,
      *     NextToken?: string|null
      * } $args
      */
