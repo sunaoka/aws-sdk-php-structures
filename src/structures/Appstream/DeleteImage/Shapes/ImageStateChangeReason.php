@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Appstream\DeleteImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INTERNAL_ERROR'|'IMAGE_BUILDER_NOT_AVAILABLE'|'IMAGE_COPY_FAILURE'|null $Code
+ * @property 'INTERNAL_ERROR'|'IMAGE_BUILDER_NOT_AVAILABLE'|'IMAGE_COPY_FAILURE'|'IMAGE_UPDATE_FAILURE'|'IMAGE_IMPORT_FAILURE'|null $Code
  * @property string|null $Message
  */
 class ImageStateChangeReason extends Shape
 {
     /**
      * @param array{
-     *     Code?: 'INTERNAL_ERROR'|'IMAGE_BUILDER_NOT_AVAILABLE'|'IMAGE_COPY_FAILURE'|null,
+     *     Code?: 'INTERNAL_ERROR'|'IMAGE_BUILDER_NOT_AVAILABLE'|'IMAGE_COPY_FAILURE'|'IMAGE_UPDATE_FAILURE'|'IMAGE_IMPORT_FAILURE'|null,
      *     Message?: string|null
      * } $args
      */

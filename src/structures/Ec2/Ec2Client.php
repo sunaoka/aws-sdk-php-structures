@@ -316,6 +316,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeInstanceEventNotificationAttributes\DescribeInstanceEventNotificationAttributesTrait;
     use DescribeInstanceEventWindows\DescribeInstanceEventWindowsTrait;
     use DescribeInstanceImageMetadata\DescribeInstanceImageMetadataTrait;
+    use DescribeInstanceSqlHaHistoryStates\DescribeInstanceSqlHaHistoryStatesTrait;
+    use DescribeInstanceSqlHaStates\DescribeInstanceSqlHaStatesTrait;
     use DescribeInstanceStatus\DescribeInstanceStatusTrait;
     use DescribeInstanceTopology\DescribeInstanceTopologyTrait;
     use DescribeInstanceTypeOfferings\DescribeInstanceTypeOfferingsTrait;
@@ -447,6 +449,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisableImageBlockPublicAccess\DisableImageBlockPublicAccessTrait;
     use DisableImageDeprecation\DisableImageDeprecationTrait;
     use DisableImageDeregistrationProtection\DisableImageDeregistrationProtectionTrait;
+    use DisableInstanceSqlHaStandbyDetections\DisableInstanceSqlHaStandbyDetectionsTrait;
     use DisableIpamOrganizationAdminAccount\DisableIpamOrganizationAdminAccountTrait;
     use DisableRouteServerPropagation\DisableRouteServerPropagationTrait;
     use DisableSerialConsoleAccess\DisableSerialConsoleAccessTrait;
@@ -484,6 +487,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use EnableImageBlockPublicAccess\EnableImageBlockPublicAccessTrait;
     use EnableImageDeprecation\EnableImageDeprecationTrait;
     use EnableImageDeregistrationProtection\EnableImageDeregistrationProtectionTrait;
+    use EnableInstanceSqlHaStandbyDetections\EnableInstanceSqlHaStandbyDetectionsTrait;
     use EnableIpamOrganizationAdminAccount\EnableIpamOrganizationAdminAccountTrait;
     use EnableReachabilityAnalyzerOrganizationSharing\EnableReachabilityAnalyzerOrganizationSharingTrait;
     use EnableRouteServerPropagation\EnableRouteServerPropagationTrait;

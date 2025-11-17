@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $ByCompleteAfter
  * @property string|null $ByParentJobId
  * @property string|null $ByMessageCategory
+ * @property string|null $BySourceRecoveryPointArn
  */
 class ListCopyJobsRequest extends Request
 {
@@ -35,7 +36,8 @@ class ListCopyJobsRequest extends Request
      *     ByCompleteBefore?: \Aws\Api\DateTimeResult|null,
      *     ByCompleteAfter?: \Aws\Api\DateTimeResult|null,
      *     ByParentJobId?: string|null,
-     *     ByMessageCategory?: string|null
+     *     ByMessageCategory?: string|null,
+     *     BySourceRecoveryPointArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

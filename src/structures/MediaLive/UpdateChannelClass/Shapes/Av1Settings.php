@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Bitrate
  * @property 'CBR'|'QVBR'|null $RateControlMode
  * @property int|null $MinBitrate
+ * @property 'DISABLED'|'ENABLED'|null $SpatialAq
+ * @property 'DISABLED'|'ENABLED'|null $TemporalAq
  */
 class Av1Settings extends Shape
 {
@@ -49,7 +51,9 @@ class Av1Settings extends Shape
      *     TimecodeBurninSettings?: TimecodeBurninSettings|null,
      *     Bitrate?: int|null,
      *     RateControlMode?: 'CBR'|'QVBR'|null,
-     *     MinBitrate?: int|null
+     *     MinBitrate?: int|null,
+     *     SpatialAq?: 'DISABLED'|'ENABLED'|null,
+     *     TemporalAq?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args)

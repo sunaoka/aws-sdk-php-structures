@@ -18,9 +18,11 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use CreateApplication\CreateApplicationTrait;
     use CreateDirectoryConfig\CreateDirectoryConfigTrait;
     use CreateEntitlement\CreateEntitlementTrait;
+    use CreateExportImageTask\CreateExportImageTaskTrait;
     use CreateFleet\CreateFleetTrait;
     use CreateImageBuilder\CreateImageBuilderTrait;
     use CreateImageBuilderStreamingURL\CreateImageBuilderStreamingURLTrait;
+    use CreateImportedImage\CreateImportedImageTrait;
     use CreateStack\CreateStackTrait;
     use CreateStreamingURL\CreateStreamingURLTrait;
     use CreateThemeForStack\CreateThemeForStackTrait;
@@ -67,9 +69,11 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use DisassociateSoftwareFromImageBuilder\DisassociateSoftwareFromImageBuilderTrait;
     use EnableUser\EnableUserTrait;
     use ExpireSession\ExpireSessionTrait;
+    use GetExportImageTask\GetExportImageTaskTrait;
     use ListAssociatedFleets\ListAssociatedFleetsTrait;
     use ListAssociatedStacks\ListAssociatedStacksTrait;
     use ListEntitledApplications\ListEntitledApplicationsTrait;
+    use ListExportImageTasks\ListExportImageTasksTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartAppBlockBuilder\StartAppBlockBuilderTrait;
     use StartFleet\StartFleetTrait;

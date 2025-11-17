@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $BaseImageArn
  * @property string|null $DisplayName
- * @property 'PENDING'|'AVAILABLE'|'FAILED'|'COPYING'|'DELETING'|'CREATING'|'IMPORTING'|null $State
+ * @property 'PENDING'|'AVAILABLE'|'FAILED'|'COPYING'|'DELETING'|'CREATING'|'IMPORTING'|'VALIDATING'|null $State
  * @property 'PUBLIC'|'PRIVATE'|'SHARED'|null $Visibility
  * @property bool|null $ImageBuilderSupported
  * @property string|null $ImageBuilderName
@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $DynamicAppProvidersEnabled
  * @property 'TRUE'|'FALSE'|null $ImageSharedWithOthers
  * @property bool|null $ManagedSoftwareIncluded
+ * @property 'CUSTOM'|'NATIVE'|null $ImageType
  */
 class Image extends Shape
 {
@@ -36,7 +37,7 @@ class Image extends Shape
      *     Arn?: string|null,
      *     BaseImageArn?: string|null,
      *     DisplayName?: string|null,
-     *     State?: 'PENDING'|'AVAILABLE'|'FAILED'|'COPYING'|'DELETING'|'CREATING'|'IMPORTING'|null,
+     *     State?: 'PENDING'|'AVAILABLE'|'FAILED'|'COPYING'|'DELETING'|'CREATING'|'IMPORTING'|'VALIDATING'|null,
      *     Visibility?: 'PUBLIC'|'PRIVATE'|'SHARED'|null,
      *     ImageBuilderSupported?: bool|null,
      *     ImageBuilderName?: string|null,
@@ -53,7 +54,8 @@ class Image extends Shape
      *     SupportedInstanceFamilies?: list<string>|null,
      *     DynamicAppProvidersEnabled?: 'ENABLED'|'DISABLED'|null,
      *     ImageSharedWithOthers?: 'TRUE'|'FALSE'|null,
-     *     ManagedSoftwareIncluded?: bool|null
+     *     ManagedSoftwareIncluded?: bool|null,
+     *     ImageType?: 'CUSTOM'|'NATIVE'|null
      * } $args
      */
     public function __construct(array $args)

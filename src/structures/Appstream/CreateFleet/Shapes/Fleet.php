@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $UsbDeviceFilterStrings
  * @property S3Location|null $SessionScriptS3Location
  * @property int|null $MaxSessionsPerInstance
+ * @property VolumeConfig|null $RootVolumeConfig
  */
 class Fleet extends Shape
 {
@@ -59,7 +60,8 @@ class Fleet extends Shape
      *     MaxConcurrentSessions?: int|null,
      *     UsbDeviceFilterStrings?: list<string>|null,
      *     SessionScriptS3Location?: S3Location|null,
-     *     MaxSessionsPerInstance?: int|null
+     *     MaxSessionsPerInstance?: int|null,
+     *     RootVolumeConfig?: VolumeConfig|null
      * } $args
      */
     public function __construct(array $args)
