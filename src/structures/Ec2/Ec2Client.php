@@ -158,6 +158,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateVpcEndpointConnectionNotification\CreateVpcEndpointConnectionNotificationTrait;
     use CreateVpcEndpointServiceConfiguration\CreateVpcEndpointServiceConfigurationTrait;
     use CreateVpcPeeringConnection\CreateVpcPeeringConnectionTrait;
+    use CreateVpnConcentrator\CreateVpnConcentratorTrait;
     use CreateVpnConnection\CreateVpnConnectionTrait;
     use CreateVpnConnectionRoute\CreateVpnConnectionRouteTrait;
     use CreateVpnGateway\CreateVpnGatewayTrait;
@@ -243,6 +244,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteVpcEndpointServiceConfigurations\DeleteVpcEndpointServiceConfigurationsTrait;
     use DeleteVpcEndpoints\DeleteVpcEndpointsTrait;
     use DeleteVpcPeeringConnection\DeleteVpcPeeringConnectionTrait;
+    use DeleteVpnConcentrator\DeleteVpnConcentratorTrait;
     use DeleteVpnConnection\DeleteVpnConnectionTrait;
     use DeleteVpnConnectionRoute\DeleteVpnConnectionRouteTrait;
     use DeleteVpnGateway\DeleteVpnGatewayTrait;
@@ -316,6 +318,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeInstanceEventNotificationAttributes\DescribeInstanceEventNotificationAttributesTrait;
     use DescribeInstanceEventWindows\DescribeInstanceEventWindowsTrait;
     use DescribeInstanceImageMetadata\DescribeInstanceImageMetadataTrait;
+    use DescribeInstanceSqlHaHistoryStates\DescribeInstanceSqlHaHistoryStatesTrait;
+    use DescribeInstanceSqlHaStates\DescribeInstanceSqlHaStatesTrait;
     use DescribeInstanceStatus\DescribeInstanceStatusTrait;
     use DescribeInstanceTopology\DescribeInstanceTopologyTrait;
     use DescribeInstanceTypeOfferings\DescribeInstanceTypeOfferingsTrait;
@@ -428,6 +432,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeVpcEndpoints\DescribeVpcEndpointsTrait;
     use DescribeVpcPeeringConnections\DescribeVpcPeeringConnectionsTrait;
     use DescribeVpcs\DescribeVpcsTrait;
+    use DescribeVpnConcentrators\DescribeVpnConcentratorsTrait;
     use DescribeVpnConnections\DescribeVpnConnectionsTrait;
     use DescribeVpnGateways\DescribeVpnGatewaysTrait;
     use DetachClassicLinkVpc\DetachClassicLinkVpcTrait;
@@ -447,6 +452,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisableImageBlockPublicAccess\DisableImageBlockPublicAccessTrait;
     use DisableImageDeprecation\DisableImageDeprecationTrait;
     use DisableImageDeregistrationProtection\DisableImageDeregistrationProtectionTrait;
+    use DisableInstanceSqlHaStandbyDetections\DisableInstanceSqlHaStandbyDetectionsTrait;
     use DisableIpamOrganizationAdminAccount\DisableIpamOrganizationAdminAccountTrait;
     use DisableRouteServerPropagation\DisableRouteServerPropagationTrait;
     use DisableSerialConsoleAccess\DisableSerialConsoleAccessTrait;
@@ -484,6 +490,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use EnableImageBlockPublicAccess\EnableImageBlockPublicAccessTrait;
     use EnableImageDeprecation\EnableImageDeprecationTrait;
     use EnableImageDeregistrationProtection\EnableImageDeregistrationProtectionTrait;
+    use EnableInstanceSqlHaStandbyDetections\EnableInstanceSqlHaStandbyDetectionsTrait;
     use EnableIpamOrganizationAdminAccount\EnableIpamOrganizationAdminAccountTrait;
     use EnableReachabilityAnalyzerOrganizationSharing\EnableReachabilityAnalyzerOrganizationSharingTrait;
     use EnableRouteServerPropagation\EnableRouteServerPropagationTrait;

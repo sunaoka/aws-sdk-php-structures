@@ -11,7 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Path
  * @property string|null $BeforeValue
  * @property string|null $AfterValue
- * @property 'Add'|'Remove'|'Modify'|null $AttributeChangeType
+ * @property 'PREVIOUS_DEPLOYMENT_STATE'|'ACTUAL_STATE'|null $BeforeValueFrom
+ * @property 'TEMPLATE'|null $AfterValueFrom
+ * @property LiveResourceDrift|null $Drift
+ * @property 'Add'|'Remove'|'Modify'|'SyncWithActual'|null $AttributeChangeType
  */
 class ResourceTargetDefinition extends Shape
 {
@@ -23,7 +26,10 @@ class ResourceTargetDefinition extends Shape
      *     Path?: string|null,
      *     BeforeValue?: string|null,
      *     AfterValue?: string|null,
-     *     AttributeChangeType?: 'Add'|'Remove'|'Modify'|null
+     *     BeforeValueFrom?: 'PREVIOUS_DEPLOYMENT_STATE'|'ACTUAL_STATE'|null,
+     *     AfterValueFrom?: 'TEMPLATE'|null,
+     *     Drift?: LiveResourceDrift|null,
+     *     AttributeChangeType?: 'Add'|'Remove'|'Modify'|'SyncWithActual'|null
      * } $args
      */
     public function __construct(array $args = [])

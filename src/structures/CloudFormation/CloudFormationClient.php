@@ -26,6 +26,7 @@ class CloudFormationClient extends \Aws\CloudFormation\CloudFormationClient
     use DescribeAccountLimits\DescribeAccountLimitsTrait;
     use DescribeChangeSet\DescribeChangeSetTrait;
     use DescribeChangeSetHooks\DescribeChangeSetHooksTrait;
+    use DescribeEvents\DescribeEventsTrait;
     use DescribeGeneratedTemplate\DescribeGeneratedTemplateTrait;
     use DescribeOrganizationsAccess\DescribeOrganizationsAccessTrait;
     use DescribePublisher\DescribePublisherTrait;

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PostgreSqlDataProviderSettings|null $PostgreSqlSettings
  * @property MySqlDataProviderSettings|null $MySqlSettings
  * @property OracleDataProviderSettings|null $OracleSettings
+ * @property SybaseAseDataProviderSettings|null $SybaseAseSettings
  * @property MicrosoftSqlServerDataProviderSettings|null $MicrosoftSqlServerSettings
  * @property DocDbDataProviderSettings|null $DocDbSettings
  * @property MariaDbDataProviderSettings|null $MariaDbSettings
@@ -24,6 +25,7 @@ class DataProviderSettings extends Shape
      *     PostgreSqlSettings?: PostgreSqlDataProviderSettings|null,
      *     MySqlSettings?: MySqlDataProviderSettings|null,
      *     OracleSettings?: OracleDataProviderSettings|null,
+     *     SybaseAseSettings?: SybaseAseDataProviderSettings|null,
      *     MicrosoftSqlServerSettings?: MicrosoftSqlServerDataProviderSettings|null,
      *     DocDbSettings?: DocDbDataProviderSettings|null,
      *     MariaDbSettings?: MariaDbDataProviderSettings|null,

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<PhysicalResourceIdContextKeyValuePair>|null $PhysicalResourceIdContext
  * @property string $ResourceType
  * @property list<PropertyDifference>|null $PropertyDifferences
- * @property 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'|'UNKNOWN' $StackResourceDriftStatus
+ * @property 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'|'UNKNOWN'|'UNSUPPORTED' $StackResourceDriftStatus
  * @property \Aws\Api\DateTimeResult $Timestamp
  */
 class StackInstanceResourceDriftsSummary extends Shape
@@ -24,7 +24,7 @@ class StackInstanceResourceDriftsSummary extends Shape
      *     PhysicalResourceIdContext?: list<PhysicalResourceIdContextKeyValuePair>|null,
      *     ResourceType: string,
      *     PropertyDifferences?: list<PropertyDifference>|null,
-     *     StackResourceDriftStatus: 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'|'UNKNOWN',
+     *     StackResourceDriftStatus: 'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'|'UNKNOWN'|'UNSUPPORTED',
      *     Timestamp: \Aws\Api\DateTimeResult
      * } $args
      */

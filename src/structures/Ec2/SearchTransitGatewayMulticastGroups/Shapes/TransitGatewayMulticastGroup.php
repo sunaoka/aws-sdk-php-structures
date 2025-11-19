@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TransitGatewayAttachmentId
  * @property string|null $SubnetId
  * @property string|null $ResourceId
- * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null $ResourceType
+ * @property 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null $ResourceType
  * @property string|null $ResourceOwnerId
  * @property string|null $NetworkInterfaceId
  * @property bool|null $GroupMember
@@ -25,7 +25,7 @@ class TransitGatewayMulticastGroup extends Shape
      *     TransitGatewayAttachmentId?: string|null,
      *     SubnetId?: string|null,
      *     ResourceId?: string|null,
-     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null,
+     *     ResourceType?: 'vpc'|'vpn'|'vpn-concentrator'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|'network-function'|null,
      *     ResourceOwnerId?: string|null,
      *     NetworkInterfaceId?: string|null,
      *     GroupMember?: bool|null,

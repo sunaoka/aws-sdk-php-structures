@@ -6,10 +6,11 @@ trait TagResourceTrait
 {
     /**
      * @param TagResourceRequest $args
-     * @return void
+     * @return TagResourceResponse
      */
     public function tagResource(TagResourceRequest $args)
     {
-        parent::tagResource($args->toArray());
+        $result = parent::tagResource($args->toArray());
+        return new TagResourceResponse($result->toArray());
     }
 }

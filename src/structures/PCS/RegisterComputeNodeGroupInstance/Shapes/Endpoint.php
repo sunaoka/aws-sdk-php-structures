@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PCS\RegisterComputeNodeGroupInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SLURMCTLD'|'SLURMDBD' $type
+ * @property 'SLURMCTLD'|'SLURMDBD'|'SLURMRESTD' $type
  * @property string $privateIpAddress
  * @property string|null $publicIpAddress
  * @property string|null $ipv6Address
@@ -15,7 +15,7 @@ class Endpoint extends Shape
 {
     /**
      * @param array{
-     *     type: 'SLURMCTLD'|'SLURMDBD',
+     *     type: 'SLURMCTLD'|'SLURMDBD'|'SLURMRESTD',
      *     privateIpAddress: string,
      *     publicIpAddress?: string|null,
      *     ipv6Address?: string|null,

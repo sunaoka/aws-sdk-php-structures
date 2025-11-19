@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $StackId
  * @property string $EventId
  * @property string $StackName
+ * @property string|null $OperationId
  * @property string|null $LogicalResourceId
  * @property string|null $PhysicalResourceId
  * @property string|null $ResourceType
@@ -31,6 +32,7 @@ class StackEvent extends Shape
      *     StackId: string,
      *     EventId: string,
      *     StackName: string,
+     *     OperationId?: string|null,
      *     LogicalResourceId?: string|null,
      *     PhysicalResourceId?: string|null,
      *     ResourceType?: string|null,

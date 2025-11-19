@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ParentId
  * @property string|null $RootId
  * @property StackDriftInformationSummary|null $DriftInformation
+ * @property list<OperationEntry>|null $LastOperations
  */
 class StackSummary extends Shape
 {
@@ -31,7 +32,8 @@ class StackSummary extends Shape
      *     StackStatusReason?: string|null,
      *     ParentId?: string|null,
      *     RootId?: string|null,
-     *     DriftInformation?: StackDriftInformationSummary|null
+     *     DriftInformation?: StackDriftInformationSummary|null,
+     *     LastOperations?: list<OperationEntry>|null
      * } $args
      */
     public function __construct(array $args)

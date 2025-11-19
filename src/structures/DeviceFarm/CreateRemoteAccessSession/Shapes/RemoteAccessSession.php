@@ -15,11 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $stopped
  * @property Device|null $device
  * @property string|null $instanceArn
- * @property bool|null $remoteDebugEnabled
- * @property bool|null $remoteRecordEnabled
- * @property string|null $remoteRecordAppArn
- * @property string|null $hostAddress
- * @property string|null $clientId
  * @property 'METERED'|'UNMETERED'|null $billingMethod
  * @property DeviceMinutes|null $deviceMinutes
  * @property string|null $endpoint
@@ -29,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcConfig|null $vpcConfig
  * @property DeviceProxy|null $deviceProxy
  * @property string|null $appUpload
+ * @property RemoteAccessEndpoints|null $endpoints
  */
 class RemoteAccessSession extends Shape
 {
@@ -44,11 +40,6 @@ class RemoteAccessSession extends Shape
      *     stopped?: \Aws\Api\DateTimeResult|null,
      *     device?: Device|null,
      *     instanceArn?: string|null,
-     *     remoteDebugEnabled?: bool|null,
-     *     remoteRecordEnabled?: bool|null,
-     *     remoteRecordAppArn?: string|null,
-     *     hostAddress?: string|null,
-     *     clientId?: string|null,
      *     billingMethod?: 'METERED'|'UNMETERED'|null,
      *     deviceMinutes?: DeviceMinutes|null,
      *     endpoint?: string|null,
@@ -57,7 +48,8 @@ class RemoteAccessSession extends Shape
      *     skipAppResign?: bool|null,
      *     vpcConfig?: VpcConfig|null,
      *     deviceProxy?: DeviceProxy|null,
-     *     appUpload?: string|null
+     *     appUpload?: string|null,
+     *     endpoints?: RemoteAccessEndpoints|null
      * } $args
      */
     public function __construct(array $args = [])

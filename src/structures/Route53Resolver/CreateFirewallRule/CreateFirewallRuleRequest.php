@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null $FirewallDomainRedirectionAction
  * @property string|null $Qtype
- * @property 'DGA'|'DNS_TUNNELING'|null $DnsThreatProtection
+ * @property 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null $DnsThreatProtection
  * @property 'LOW'|'MEDIUM'|'HIGH'|null $ConfidenceThreshold
  */
 class CreateFirewallRuleRequest extends Request
@@ -36,7 +36,7 @@ class CreateFirewallRuleRequest extends Request
      *     Name: string,
      *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null,
      *     Qtype?: string|null,
-     *     DnsThreatProtection?: 'DGA'|'DNS_TUNNELING'|null,
+     *     DnsThreatProtection?: 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null,
      *     ConfidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null
      * } $args
      */
