@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AppstreamAgentVersion
  * @property array<string, string>|null $Tags
  * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
+ * @property Shapes\VolumeConfig|null $RootVolumeConfig
  * @property list<string>|null $SoftwaresToInstall
  * @property list<string>|null $SoftwaresToUninstall
  */
@@ -38,6 +39,7 @@ class CreateImageBuilderRequest extends Request
      *     AppstreamAgentVersion?: string|null,
      *     Tags?: array<string, string>|null,
      *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
+     *     RootVolumeConfig?: Shapes\VolumeConfig|null,
      *     SoftwaresToInstall?: list<string>|null,
      *     SoftwaresToUninstall?: list<string>|null
      * } $args

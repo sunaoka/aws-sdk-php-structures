@@ -70,6 +70,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use DeleteDevEndpoint\DeleteDevEndpointTrait;
     use DeleteGlueIdentityCenterConfiguration\DeleteGlueIdentityCenterConfigurationTrait;
     use DeleteIntegration\DeleteIntegrationTrait;
+    use DeleteIntegrationResourceProperty\DeleteIntegrationResourcePropertyTrait;
     use DeleteIntegrationTableProperties\DeleteIntegrationTablePropertiesTrait;
     use DeleteJob\DeleteJobTrait;
     use DeleteMLTransform\DeleteMLTransformTrait;
@@ -185,6 +186,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListDataQualityStatistics\ListDataQualityStatisticsTrait;
     use ListDevEndpoints\ListDevEndpointsTrait;
     use ListEntities\ListEntitiesTrait;
+    use ListIntegrationResourceProperties\ListIntegrationResourcePropertiesTrait;
     use ListJobs\ListJobsTrait;
     use ListMLTransforms\ListMLTransformsTrait;
     use ListRegistries\ListRegistriesTrait;

@@ -15,6 +15,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use CancelServiceSoftwareUpdate\CancelServiceSoftwareUpdateTrait;
     use CreateApplication\CreateApplicationTrait;
     use CreateDomain\CreateDomainTrait;
+    use CreateIndex\CreateIndexTrait;
     use CreateOutboundConnection\CreateOutboundConnectionTrait;
     use CreatePackage\CreatePackageTrait;
     use CreateVpcEndpoint\CreateVpcEndpointTrait;
@@ -23,6 +24,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DeleteDirectQueryDataSource\DeleteDirectQueryDataSourceTrait;
     use DeleteDomain\DeleteDomainTrait;
     use DeleteInboundConnection\DeleteInboundConnectionTrait;
+    use DeleteIndex\DeleteIndexTrait;
     use DeleteOutboundConnection\DeleteOutboundConnectionTrait;
     use DeletePackage\DeletePackageTrait;
     use DeleteVpcEndpoint\DeleteVpcEndpointTrait;
@@ -49,6 +51,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use GetDefaultApplicationSetting\GetDefaultApplicationSettingTrait;
     use GetDirectQueryDataSource\GetDirectQueryDataSourceTrait;
     use GetDomainMaintenanceStatus\GetDomainMaintenanceStatusTrait;
+    use GetIndex\GetIndexTrait;
     use GetPackageVersionHistory\GetPackageVersionHistoryTrait;
     use GetUpgradeHistory\GetUpgradeHistoryTrait;
     use GetUpgradeStatus\GetUpgradeStatusTrait;
@@ -77,6 +80,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use UpdateDataSource\UpdateDataSourceTrait;
     use UpdateDirectQueryDataSource\UpdateDirectQueryDataSourceTrait;
     use UpdateDomainConfig\UpdateDomainConfigTrait;
+    use UpdateIndex\UpdateIndexTrait;
     use UpdatePackage\UpdatePackageTrait;
     use UpdatePackageScope\UpdatePackageScopeTrait;
     use UpdateScheduledAction\UpdateScheduledActionTrait;

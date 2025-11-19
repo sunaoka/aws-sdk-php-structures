@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $policyArn
  * @property string $buildWorkflowId
- * @property 'BUILD_LOG'|'QUALITY_REPORT'|'POLICY_DEFINITION' $assetType
+ * @property 'BUILD_LOG'|'QUALITY_REPORT'|'POLICY_DEFINITION'|'GENERATED_TEST_CASES' $assetType
  */
 class GetAutomatedReasoningPolicyBuildWorkflowResultAssetsRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetAutomatedReasoningPolicyBuildWorkflowResultAssetsRequest extends Reques
      * @param array{
      *     policyArn: string,
      *     buildWorkflowId: string,
-     *     assetType: 'BUILD_LOG'|'QUALITY_REPORT'|'POLICY_DEFINITION'
+     *     assetType: 'BUILD_LOG'|'QUALITY_REPORT'|'POLICY_DEFINITION'|'GENERATED_TEST_CASES'
      * } $args
      */
     public function __construct(array $args)

@@ -70,6 +70,7 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use ListThreatEntitySets\ListThreatEntitySetsTrait;
     use ListThreatIntelSets\ListThreatIntelSetsTrait;
     use ListTrustedEntitySets\ListTrustedEntitySetsTrait;
+    use SendObjectMalwareScan\SendObjectMalwareScanTrait;
     use StartMalwareScan\StartMalwareScanTrait;
     use StartMonitoringMembers\StartMonitoringMembersTrait;
     use StopMonitoringMembers\StopMonitoringMembersTrait;

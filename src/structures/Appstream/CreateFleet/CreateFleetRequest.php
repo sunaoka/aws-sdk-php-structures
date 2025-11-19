@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $UsbDeviceFilterStrings
  * @property Shapes\S3Location|null $SessionScriptS3Location
  * @property int|null $MaxSessionsPerInstance
+ * @property Shapes\VolumeConfig|null $RootVolumeConfig
  */
 class CreateFleetRequest extends Request
 {
@@ -53,7 +54,8 @@ class CreateFleetRequest extends Request
      *     MaxConcurrentSessions?: int|null,
      *     UsbDeviceFilterStrings?: list<string>|null,
      *     SessionScriptS3Location?: Shapes\S3Location|null,
-     *     MaxSessionsPerInstance?: int|null
+     *     MaxSessionsPerInstance?: int|null,
+     *     RootVolumeConfig?: Shapes\VolumeConfig|null
      * } $args
      */
     public function __construct(array $args)

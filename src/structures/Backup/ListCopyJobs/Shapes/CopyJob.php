@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $BackupSizeInBytes
  * @property string|null $IamRoleArn
  * @property RecoveryPointCreator|null $CreatedBy
+ * @property string|null $CreatedByBackupJobId
  * @property string|null $ResourceType
  * @property string|null $ParentJobId
  * @property bool|null $IsParent
@@ -54,6 +55,7 @@ class CopyJob extends Shape
      *     BackupSizeInBytes?: int|null,
      *     IamRoleArn?: string|null,
      *     CreatedBy?: RecoveryPointCreator|null,
+     *     CreatedByBackupJobId?: string|null,
      *     ResourceType?: string|null,
      *     ParentJobId?: string|null,
      *     IsParent?: bool|null,

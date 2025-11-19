@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
+ * @property 'Primary'|'Fallback'|null $assistedNluMode
  */
 class NluImprovementSpecification extends Shape
 {
     /**
-     * @param array{enabled: bool} $args
+     * @param array{
+     *     enabled: bool,
+     *     assistedNluMode?: 'Primary'|'Fallback'|null
+     * } $args
      */
     public function __construct(array $args)
     {

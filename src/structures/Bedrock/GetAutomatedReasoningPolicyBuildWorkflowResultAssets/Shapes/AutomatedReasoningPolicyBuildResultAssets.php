@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AutomatedReasoningPolicyDefinition|null $policyDefinition
  * @property AutomatedReasoningPolicyDefinitionQualityReport|null $qualityReport
  * @property AutomatedReasoningPolicyBuildLog|null $buildLog
+ * @property AutomatedReasoningPolicyGeneratedTestCases|null $generatedTestCases
  */
 class AutomatedReasoningPolicyBuildResultAssets extends Shape
 {
@@ -15,7 +16,8 @@ class AutomatedReasoningPolicyBuildResultAssets extends Shape
      * @param array{
      *     policyDefinition?: AutomatedReasoningPolicyDefinition|null,
      *     qualityReport?: AutomatedReasoningPolicyDefinitionQualityReport|null,
-     *     buildLog?: AutomatedReasoningPolicyBuildLog|null
+     *     buildLog?: AutomatedReasoningPolicyBuildLog|null,
+     *     generatedTestCases?: AutomatedReasoningPolicyGeneratedTestCases|null
      * } $args
      */
     public function __construct(array $args = [])
