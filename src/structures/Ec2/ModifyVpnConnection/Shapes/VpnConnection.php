@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Category
  * @property string|null $TransitGatewayId
+ * @property string|null $VpnConcentratorId
  * @property string|null $CoreNetworkArn
  * @property string|null $CoreNetworkAttachmentArn
  * @property 'associated'|'not-associated'|'associating'|'disassociating'|null $GatewayAssociationState
@@ -28,6 +29,7 @@ class VpnConnection extends Shape
      * @param array{
      *     Category?: string|null,
      *     TransitGatewayId?: string|null,
+     *     VpnConcentratorId?: string|null,
      *     CoreNetworkArn?: string|null,
      *     CoreNetworkAttachmentArn?: string|null,
      *     GatewayAssociationState?: 'associated'|'not-associated'|'associating'|'disassociating'|null,

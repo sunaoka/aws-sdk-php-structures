@@ -16,6 +16,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use CreateRestoreAccessBackupVault\CreateRestoreAccessBackupVaultTrait;
     use CreateRestoreTestingPlan\CreateRestoreTestingPlanTrait;
     use CreateRestoreTestingSelection\CreateRestoreTestingSelectionTrait;
+    use CreateTieringConfiguration\CreateTieringConfigurationTrait;
     use DeleteBackupPlan\DeleteBackupPlanTrait;
     use DeleteBackupSelection\DeleteBackupSelectionTrait;
     use DeleteBackupVault\DeleteBackupVaultTrait;
@@ -27,6 +28,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use DeleteReportPlan\DeleteReportPlanTrait;
     use DeleteRestoreTestingPlan\DeleteRestoreTestingPlanTrait;
     use DeleteRestoreTestingSelection\DeleteRestoreTestingSelectionTrait;
+    use DeleteTieringConfiguration\DeleteTieringConfigurationTrait;
     use DescribeBackupJob\DescribeBackupJobTrait;
     use DescribeBackupVault\DescribeBackupVaultTrait;
     use DescribeCopyJob\DescribeCopyJobTrait;
@@ -56,6 +58,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use GetRestoreTestingPlan\GetRestoreTestingPlanTrait;
     use GetRestoreTestingSelection\GetRestoreTestingSelectionTrait;
     use GetSupportedResourceTypes\GetSupportedResourceTypesTrait;
+    use GetTieringConfiguration\GetTieringConfigurationTrait;
     use ListBackupJobSummaries\ListBackupJobSummariesTrait;
     use ListBackupJobs\ListBackupJobsTrait;
     use ListBackupPlanTemplates\ListBackupPlanTemplatesTrait;
@@ -82,6 +85,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use ListRestoreTestingPlans\ListRestoreTestingPlansTrait;
     use ListRestoreTestingSelections\ListRestoreTestingSelectionsTrait;
     use ListTags\ListTagsTrait;
+    use ListTieringConfigurations\ListTieringConfigurationsTrait;
     use PutBackupVaultAccessPolicy\PutBackupVaultAccessPolicyTrait;
     use PutBackupVaultLockConfiguration\PutBackupVaultLockConfigurationTrait;
     use PutBackupVaultNotifications\PutBackupVaultNotificationsTrait;
@@ -103,4 +107,5 @@ class BackupClient extends \Aws\Backup\BackupClient
     use UpdateReportPlan\UpdateReportPlanTrait;
     use UpdateRestoreTestingPlan\UpdateRestoreTestingPlanTrait;
     use UpdateRestoreTestingSelection\UpdateRestoreTestingSelectionTrait;
+    use UpdateTieringConfiguration\UpdateTieringConfigurationTrait;
 }

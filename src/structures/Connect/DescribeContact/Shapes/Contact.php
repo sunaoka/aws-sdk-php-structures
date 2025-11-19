@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $LastUpdateTimestamp
  * @property \Aws\Api\DateTimeResult|null $LastPausedTimestamp
  * @property \Aws\Api\DateTimeResult|null $LastResumedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $RingStartTimestamp
  * @property int<0, 10>|null $TotalPauseCount
  * @property int<0, max>|null $TotalPauseDurationInSeconds
  * @property \Aws\Api\DateTimeResult|null $ScheduledTimestamp
@@ -71,6 +72,7 @@ class Contact extends Shape
      *     LastUpdateTimestamp?: \Aws\Api\DateTimeResult|null,
      *     LastPausedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     LastResumedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     RingStartTimestamp?: \Aws\Api\DateTimeResult|null,
      *     TotalPauseCount?: int<0, 10>|null,
      *     TotalPauseDurationInSeconds?: int<0, max>|null,
      *     ScheduledTimestamp?: \Aws\Api\DateTimeResult|null,

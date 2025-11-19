@@ -158,6 +158,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateVpcEndpointConnectionNotification\CreateVpcEndpointConnectionNotificationTrait;
     use CreateVpcEndpointServiceConfiguration\CreateVpcEndpointServiceConfigurationTrait;
     use CreateVpcPeeringConnection\CreateVpcPeeringConnectionTrait;
+    use CreateVpnConcentrator\CreateVpnConcentratorTrait;
     use CreateVpnConnection\CreateVpnConnectionTrait;
     use CreateVpnConnectionRoute\CreateVpnConnectionRouteTrait;
     use CreateVpnGateway\CreateVpnGatewayTrait;
@@ -243,6 +244,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteVpcEndpointServiceConfigurations\DeleteVpcEndpointServiceConfigurationsTrait;
     use DeleteVpcEndpoints\DeleteVpcEndpointsTrait;
     use DeleteVpcPeeringConnection\DeleteVpcPeeringConnectionTrait;
+    use DeleteVpnConcentrator\DeleteVpnConcentratorTrait;
     use DeleteVpnConnection\DeleteVpnConnectionTrait;
     use DeleteVpnConnectionRoute\DeleteVpnConnectionRouteTrait;
     use DeleteVpnGateway\DeleteVpnGatewayTrait;
@@ -430,6 +432,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeVpcEndpoints\DescribeVpcEndpointsTrait;
     use DescribeVpcPeeringConnections\DescribeVpcPeeringConnectionsTrait;
     use DescribeVpcs\DescribeVpcsTrait;
+    use DescribeVpnConcentrators\DescribeVpnConcentratorsTrait;
     use DescribeVpnConnections\DescribeVpnConnectionsTrait;
     use DescribeVpnGateways\DescribeVpnGatewaysTrait;
     use DetachClassicLinkVpc\DetachClassicLinkVpcTrait;

@@ -4,9 +4,11 @@ namespace Sunaoka\Aws\Structures\Iam;
 
 class IamClient extends \Aws\Iam\IamClient
 {
+    use AcceptDelegationRequest\AcceptDelegationRequestTrait;
     use AddClientIDToOpenIDConnectProvider\AddClientIDToOpenIDConnectProviderTrait;
     use AddRoleToInstanceProfile\AddRoleToInstanceProfileTrait;
     use AddUserToGroup\AddUserToGroupTrait;
+    use AssociateDelegationRequest\AssociateDelegationRequestTrait;
     use AttachGroupPolicy\AttachGroupPolicyTrait;
     use AttachRolePolicy\AttachRolePolicyTrait;
     use AttachUserPolicy\AttachUserPolicyTrait;
@@ -68,8 +70,10 @@ class IamClient extends \Aws\Iam\IamClient
     use GetContextKeysForCustomPolicy\GetContextKeysForCustomPolicyTrait;
     use GetContextKeysForPrincipalPolicy\GetContextKeysForPrincipalPolicyTrait;
     use GetCredentialReport\GetCredentialReportTrait;
+    use GetDelegationRequest\GetDelegationRequestTrait;
     use GetGroup\GetGroupTrait;
     use GetGroupPolicy\GetGroupPolicyTrait;
+    use GetHumanReadableSummary\GetHumanReadableSummaryTrait;
     use GetInstanceProfile\GetInstanceProfileTrait;
     use GetLoginProfile\GetLoginProfileTrait;
     use GetMFADevice\GetMFADeviceTrait;
@@ -92,6 +96,7 @@ class IamClient extends \Aws\Iam\IamClient
     use ListAttachedGroupPolicies\ListAttachedGroupPoliciesTrait;
     use ListAttachedRolePolicies\ListAttachedRolePoliciesTrait;
     use ListAttachedUserPolicies\ListAttachedUserPoliciesTrait;
+    use ListDelegationRequests\ListDelegationRequestsTrait;
     use ListEntitiesForPolicy\ListEntitiesForPolicyTrait;
     use ListGroupPolicies\ListGroupPoliciesTrait;
     use ListGroups\ListGroupsTrait;
@@ -127,11 +132,13 @@ class IamClient extends \Aws\Iam\IamClient
     use PutRolePolicy\PutRolePolicyTrait;
     use PutUserPermissionsBoundary\PutUserPermissionsBoundaryTrait;
     use PutUserPolicy\PutUserPolicyTrait;
+    use RejectDelegationRequest\RejectDelegationRequestTrait;
     use RemoveClientIDFromOpenIDConnectProvider\RemoveClientIDFromOpenIDConnectProviderTrait;
     use RemoveRoleFromInstanceProfile\RemoveRoleFromInstanceProfileTrait;
     use RemoveUserFromGroup\RemoveUserFromGroupTrait;
     use ResetServiceSpecificCredential\ResetServiceSpecificCredentialTrait;
     use ResyncMFADevice\ResyncMFADeviceTrait;
+    use SendDelegationToken\SendDelegationTokenTrait;
     use SetDefaultPolicyVersion\SetDefaultPolicyVersionTrait;
     use SetSecurityTokenServicePreferences\SetSecurityTokenServicePreferencesTrait;
     use SimulateCustomPolicy\SimulateCustomPolicyTrait;
@@ -155,6 +162,7 @@ class IamClient extends \Aws\Iam\IamClient
     use UpdateAccessKey\UpdateAccessKeyTrait;
     use UpdateAccountPasswordPolicy\UpdateAccountPasswordPolicyTrait;
     use UpdateAssumeRolePolicy\UpdateAssumeRolePolicyTrait;
+    use UpdateDelegationRequest\UpdateDelegationRequestTrait;
     use UpdateGroup\UpdateGroupTrait;
     use UpdateLoginProfile\UpdateLoginProfileTrait;
     use UpdateOpenIDConnectProviderThumbprint\UpdateOpenIDConnectProviderThumbprintTrait;

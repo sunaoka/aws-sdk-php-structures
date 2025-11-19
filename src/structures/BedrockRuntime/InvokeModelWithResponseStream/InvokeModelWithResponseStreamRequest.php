@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $guardrailIdentifier
  * @property string|null $guardrailVersion
  * @property 'standard'|'optimized'|null $performanceConfigLatency
+ * @property 'priority'|'default'|'flex'|null $serviceTier
  */
 class InvokeModelWithResponseStreamRequest extends Request
 {
@@ -25,7 +26,8 @@ class InvokeModelWithResponseStreamRequest extends Request
      *     trace?: 'ENABLED'|'DISABLED'|'ENABLED_FULL'|null,
      *     guardrailIdentifier?: string|null,
      *     guardrailVersion?: string|null,
-     *     performanceConfigLatency?: 'standard'|'optimized'|null
+     *     performanceConfigLatency?: 'standard'|'optimized'|null,
+     *     serviceTier?: 'priority'|'default'|'flex'|null
      * } $args
      */
     public function __construct(array $args)
