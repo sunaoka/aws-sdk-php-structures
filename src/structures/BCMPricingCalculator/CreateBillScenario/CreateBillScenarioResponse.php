@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $expiresAt
  * @property string|null $failureMessage
+ * @property 'OPEN'|'PRIORITIZED'|'RESTRICTED'|null $groupSharingPreference
+ * @property string|null $costCategoryGroupSharingPreferenceArn
  */
 class CreateBillScenarioResponse extends Response
 {

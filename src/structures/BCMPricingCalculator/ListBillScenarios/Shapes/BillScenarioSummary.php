@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $expiresAt
  * @property string|null $failureMessage
+ * @property 'OPEN'|'PRIORITIZED'|'RESTRICTED'|null $groupSharingPreference
+ * @property string|null $costCategoryGroupSharingPreferenceArn
  */
 class BillScenarioSummary extends Shape
 {
@@ -23,7 +25,9 @@ class BillScenarioSummary extends Shape
      *     status?: 'READY'|'LOCKED'|'FAILED'|'STALE'|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     expiresAt?: \Aws\Api\DateTimeResult|null,
-     *     failureMessage?: string|null
+     *     failureMessage?: string|null,
+     *     groupSharingPreference?: 'OPEN'|'PRIORITIZED'|'RESTRICTED'|null,
+     *     costCategoryGroupSharingPreferenceArn?: string|null
      * } $args
      */
     public function __construct(array $args)

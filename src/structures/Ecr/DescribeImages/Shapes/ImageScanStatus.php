@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED'|'UNSUPPORTED_IMAGE'|'ACTIVE'|'PENDING'|'SCAN_ELIGIBILITY_EXPIRED'|'FINDINGS_UNAVAILABLE'|'LIMIT_EXCEEDED'|null $status
+ * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED'|'UNSUPPORTED_IMAGE'|'ACTIVE'|'PENDING'|'SCAN_ELIGIBILITY_EXPIRED'|'FINDINGS_UNAVAILABLE'|'LIMIT_EXCEEDED'|'IMAGE_ARCHIVED'|null $status
  * @property string|null $description
  */
 class ImageScanStatus extends Shape
 {
     /**
      * @param array{
-     *     status?: 'IN_PROGRESS'|'COMPLETE'|'FAILED'|'UNSUPPORTED_IMAGE'|'ACTIVE'|'PENDING'|'SCAN_ELIGIBILITY_EXPIRED'|'FINDINGS_UNAVAILABLE'|'LIMIT_EXCEEDED'|null,
+     *     status?: 'IN_PROGRESS'|'COMPLETE'|'FAILED'|'UNSUPPORTED_IMAGE'|'ACTIVE'|'PENDING'|'SCAN_ELIGIBILITY_EXPIRED'|'FINDINGS_UNAVAILABLE'|'LIMIT_EXCEEDED'|'IMAGE_ARCHIVED'|null,
      *     description?: string|null
      * } $args
      */

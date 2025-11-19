@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\PendingDeploymentSummary|null $PendingDeploymentSummary
  * @property Shapes\ExplainerConfig|null $ExplainerConfig
  * @property list<Shapes\ProductionVariantSummary>|null $ShadowProductionVariants
+ * @property Shapes\MetricsConfig|null $MetricsConfig
  */
 class DescribeEndpointResponse extends Response
 {

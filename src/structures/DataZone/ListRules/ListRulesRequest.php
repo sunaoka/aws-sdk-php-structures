@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<25, 50>|null $maxResults
  * @property string|null $nextToken
  * @property list<string>|null $projectIds
- * @property 'METADATA_FORM_ENFORCEMENT'|null $ruleType
+ * @property 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT'|null $ruleType
  * @property string $targetIdentifier
  * @property 'DOMAIN_UNIT' $targetType
  */
@@ -29,7 +29,7 @@ class ListRulesRequest extends Request
      *     maxResults?: int<25, 50>|null,
      *     nextToken?: string|null,
      *     projectIds?: list<string>|null,
-     *     ruleType?: 'METADATA_FORM_ENFORCEMENT'|null,
+     *     ruleType?: 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT'|null,
      *     targetIdentifier: string,
      *     targetType: 'DOMAIN_UNIT'
      * } $args

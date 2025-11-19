@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\GetAppMonitor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $S3Uri
  * @property 'ENABLED'|'DISABLED' $Status
+ * @property string|null $S3Uri
  */
 class JavaScriptSourceMaps extends Shape
 {
     /**
      * @param array{
-     *     S3Uri?: string|null,
-     *     Status: 'ENABLED'|'DISABLED'
+     *     Status: 'ENABLED'|'DISABLED',
+     *     S3Uri?: string|null
      * } $args
      */
     public function __construct(array $args)

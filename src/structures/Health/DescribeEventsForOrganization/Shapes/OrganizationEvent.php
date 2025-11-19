@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
  * @property 'open'|'closed'|'upcoming'|null $statusCode
+ * @property 'ACTION_REQUIRED'|'ACTION_MAY_BE_REQUIRED'|'INFORMATIONAL'|null $actionability
+ * @property list<'OPERATIONS'|'SECURITY'|'BILLING'>|null $personas
  */
 class OrganizationEvent extends Shape
 {
@@ -29,7 +31,9 @@ class OrganizationEvent extends Shape
      *     startTime?: \Aws\Api\DateTimeResult|null,
      *     endTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
-     *     statusCode?: 'open'|'closed'|'upcoming'|null
+     *     statusCode?: 'open'|'closed'|'upcoming'|null,
+     *     actionability?: 'ACTION_REQUIRED'|'ACTION_MAY_BE_REQUIRED'|'INFORMATIONAL'|null,
+     *     personas?: list<'OPERATIONS'|'SECURITY'|'BILLING'>|null
      * } $args
      */
     public function __construct(array $args = [])

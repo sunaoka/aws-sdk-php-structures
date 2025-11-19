@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'|null $contentHandling
  * @property int|null $timeoutInMillis
  * @property Shapes\TlsConfig|null $tlsConfig
+ * @property 'BUFFERED'|'STREAM'|null $responseTransferMode
  */
 class PutIntegrationRequest extends Request
 {
@@ -43,7 +44,8 @@ class PutIntegrationRequest extends Request
      *     cacheKeyParameters?: list<string>|null,
      *     contentHandling?: 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'|null,
      *     timeoutInMillis?: int|null,
-     *     tlsConfig?: Shapes\TlsConfig|null
+     *     tlsConfig?: Shapes\TlsConfig|null,
+     *     responseTransferMode?: 'BUFFERED'|'STREAM'|null
      * } $args
      */
     public function __construct(array $args)

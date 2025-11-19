@@ -18,6 +18,7 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use DeleteRepository\DeleteRepositoryTrait;
     use DeleteRepositoryCreationTemplate\DeleteRepositoryCreationTemplateTrait;
     use DeleteRepositoryPolicy\DeleteRepositoryPolicyTrait;
+    use DeregisterPullTimeUpdateExclusion\DeregisterPullTimeUpdateExclusionTrait;
     use DescribeImageReplicationStatus\DescribeImageReplicationStatusTrait;
     use DescribeImageScanFindings\DescribeImageScanFindingsTrait;
     use DescribeImages\DescribeImagesTrait;
@@ -34,7 +35,9 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use GetRegistryScanningConfiguration\GetRegistryScanningConfigurationTrait;
     use GetRepositoryPolicy\GetRepositoryPolicyTrait;
     use InitiateLayerUpload\InitiateLayerUploadTrait;
+    use ListImageReferrers\ListImageReferrersTrait;
     use ListImages\ListImagesTrait;
+    use ListPullTimeUpdateExclusions\ListPullTimeUpdateExclusionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutAccountSetting\PutAccountSettingTrait;
     use PutImage\PutImageTrait;
@@ -44,11 +47,13 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use PutRegistryPolicy\PutRegistryPolicyTrait;
     use PutRegistryScanningConfiguration\PutRegistryScanningConfigurationTrait;
     use PutReplicationConfiguration\PutReplicationConfigurationTrait;
+    use RegisterPullTimeUpdateExclusion\RegisterPullTimeUpdateExclusionTrait;
     use SetRepositoryPolicy\SetRepositoryPolicyTrait;
     use StartImageScan\StartImageScanTrait;
     use StartLifecyclePolicyPreview\StartLifecyclePolicyPreviewTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateImageStorageClass\UpdateImageStorageClassTrait;
     use UpdatePullThroughCacheRule\UpdatePullThroughCacheRuleTrait;
     use UpdateRepositoryCreationTemplate\UpdateRepositoryCreationTemplateTrait;
     use UploadLayerPart\UploadLayerPartTrait;

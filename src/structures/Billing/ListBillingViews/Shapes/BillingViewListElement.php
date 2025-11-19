@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property string|null $ownerAccountId
  * @property string|null $sourceAccountId
- * @property 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|null $billingViewType
+ * @property 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|'BILLING_TRANSFER'|'BILLING_TRANSFER_SHOWBACK'|null $billingViewType
  * @property BillingViewHealthStatus|null $healthStatus
  */
 class BillingViewListElement extends Shape
@@ -22,7 +22,7 @@ class BillingViewListElement extends Shape
      *     description?: string|null,
      *     ownerAccountId?: string|null,
      *     sourceAccountId?: string|null,
-     *     billingViewType?: 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|null,
+     *     billingViewType?: 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|'BILLING_TRANSFER'|'BILLING_TRANSFER_SHOWBACK'|null,
      *     healthStatus?: BillingViewHealthStatus|null
      * } $args
      */

@@ -10,6 +10,8 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use AddPolicyGrant\AddPolicyGrantTrait;
     use AssociateEnvironmentRole\AssociateEnvironmentRoleTrait;
     use AssociateGovernedTerms\AssociateGovernedTermsTrait;
+    use BatchGetAttributesMetadata\BatchGetAttributesMetadataTrait;
+    use BatchPutAttributesMetadata\BatchPutAttributesMetadataTrait;
     use CancelMetadataGenerationRun\CancelMetadataGenerationRunTrait;
     use CancelSubscription\CancelSubscriptionTrait;
     use CreateAccountPool\CreateAccountPoolTrait;
@@ -168,6 +170,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use UpdateGroupProfile\UpdateGroupProfileTrait;
     use UpdateProject\UpdateProjectTrait;
     use UpdateProjectProfile\UpdateProjectProfileTrait;
+    use UpdateRootDomainUnitOwner\UpdateRootDomainUnitOwnerTrait;
     use UpdateRule\UpdateRuleTrait;
     use UpdateSubscriptionGrantStatus\UpdateSubscriptionGrantStatusTrait;
     use UpdateSubscriptionRequest\UpdateSubscriptionRequestTrait;

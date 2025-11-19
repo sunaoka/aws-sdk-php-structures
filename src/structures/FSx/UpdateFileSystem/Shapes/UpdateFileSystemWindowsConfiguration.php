@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SelfManagedActiveDirectoryConfigurationUpdates|null $SelfManagedActiveDirectoryConfiguration
  * @property WindowsAuditLogCreateConfiguration|null $AuditLogConfiguration
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
+ * @property WindowsFsrmConfiguration|null $FsrmConfiguration
  */
 class UpdateFileSystemWindowsConfiguration extends Shape
 {
@@ -23,7 +24,8 @@ class UpdateFileSystemWindowsConfiguration extends Shape
      *     ThroughputCapacity?: int<8, 100000>|null,
      *     SelfManagedActiveDirectoryConfiguration?: SelfManagedActiveDirectoryConfigurationUpdates|null,
      *     AuditLogConfiguration?: WindowsAuditLogCreateConfiguration|null,
-     *     DiskIopsConfiguration?: DiskIopsConfiguration|null
+     *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
+     *     FsrmConfiguration?: WindowsFsrmConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

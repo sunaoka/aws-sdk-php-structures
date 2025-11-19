@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CachePointBlock|null $cachePoint
  * @property ReasoningContentBlock|null $reasoningContent
  * @property CitationsContentBlock|null $citationsContent
+ * @property SearchResultBlock|null $searchResult
  */
 class ContentBlock extends Shape
 {
@@ -29,7 +30,8 @@ class ContentBlock extends Shape
      *     guardContent?: GuardrailConverseContentBlock|null,
      *     cachePoint?: CachePointBlock|null,
      *     reasoningContent?: ReasoningContentBlock|null,
-     *     citationsContent?: CitationsContentBlock|null
+     *     citationsContent?: CitationsContentBlock|null,
+     *     searchResult?: SearchResultBlock|null
      * } $args
      */
     public function __construct(array $args = [])

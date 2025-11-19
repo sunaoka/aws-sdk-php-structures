@@ -15,6 +15,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InspectionDataRequest|null $request
  * @property InspectionDataResponse|null $response
  * @property string|null $variables
+ * @property InspectionErrorDetails|null $errorDetails
+ * @property string|null $afterItemsPath
+ * @property string|null $afterItemSelector
+ * @property string|null $afterItemBatcher
+ * @property string|null $afterItemsPointer
+ * @property int<0, max>|null $toleratedFailureCount
+ * @property float|null $toleratedFailurePercentage
+ * @property int<0, max>|null $maxConcurrency
  */
 class InspectionData extends Shape
 {
@@ -29,7 +37,15 @@ class InspectionData extends Shape
      *     afterResultPath?: string|null,
      *     request?: InspectionDataRequest|null,
      *     response?: InspectionDataResponse|null,
-     *     variables?: string|null
+     *     variables?: string|null,
+     *     errorDetails?: InspectionErrorDetails|null,
+     *     afterItemsPath?: string|null,
+     *     afterItemSelector?: string|null,
+     *     afterItemBatcher?: string|null,
+     *     afterItemsPointer?: string|null,
+     *     toleratedFailureCount?: int<0, max>|null,
+     *     toleratedFailurePercentage?: float|null,
+     *     maxConcurrency?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ENABLED'|'DISABLED'|null $OutputStatus
  * @property string|null $NdiProgramName
  * @property int|null $NdiSpeedHqQuality
+ * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
+ * @property Shapes\FlowTransitEncryption|null $RouterIntegrationTransitEncryption
  */
 class UpdateFlowOutputRequest extends Request
 {
@@ -49,7 +51,9 @@ class UpdateFlowOutputRequest extends Request
      *     VpcInterfaceAttachment?: Shapes\VpcInterfaceAttachment|null,
      *     OutputStatus?: 'ENABLED'|'DISABLED'|null,
      *     NdiProgramName?: string|null,
-     *     NdiSpeedHqQuality?: int|null
+     *     NdiSpeedHqQuality?: int|null,
+     *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
+     *     RouterIntegrationTransitEncryption?: Shapes\FlowTransitEncryption|null
      * } $args
      */
     public function __construct(array $args)

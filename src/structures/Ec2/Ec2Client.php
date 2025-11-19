@@ -91,6 +91,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateInternetGateway\CreateInternetGatewayTrait;
     use CreateIpam\CreateIpamTrait;
     use CreateIpamExternalResourceVerificationToken\CreateIpamExternalResourceVerificationTokenTrait;
+    use CreateIpamPolicy\CreateIpamPolicyTrait;
     use CreateIpamPool\CreateIpamPoolTrait;
     use CreateIpamPrefixListResolver\CreateIpamPrefixListResolverTrait;
     use CreateIpamPrefixListResolverTarget\CreateIpamPrefixListResolverTargetTrait;
@@ -180,6 +181,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteInternetGateway\DeleteInternetGatewayTrait;
     use DeleteIpam\DeleteIpamTrait;
     use DeleteIpamExternalResourceVerificationToken\DeleteIpamExternalResourceVerificationTokenTrait;
+    use DeleteIpamPolicy\DeleteIpamPolicyTrait;
     use DeleteIpamPool\DeleteIpamPoolTrait;
     use DeleteIpamPrefixListResolver\DeleteIpamPrefixListResolverTrait;
     use DeleteIpamPrefixListResolverTarget\DeleteIpamPrefixListResolverTargetTrait;
@@ -328,6 +330,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeInternetGateways\DescribeInternetGatewaysTrait;
     use DescribeIpamByoasn\DescribeIpamByoasnTrait;
     use DescribeIpamExternalResourceVerificationTokens\DescribeIpamExternalResourceVerificationTokensTrait;
+    use DescribeIpamPolicies\DescribeIpamPoliciesTrait;
     use DescribeIpamPools\DescribeIpamPoolsTrait;
     use DescribeIpamPrefixListResolverTargets\DescribeIpamPrefixListResolverTargetsTrait;
     use DescribeIpamPrefixListResolvers\DescribeIpamPrefixListResolversTrait;
@@ -454,6 +457,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DisableImageDeregistrationProtection\DisableImageDeregistrationProtectionTrait;
     use DisableInstanceSqlHaStandbyDetections\DisableInstanceSqlHaStandbyDetectionsTrait;
     use DisableIpamOrganizationAdminAccount\DisableIpamOrganizationAdminAccountTrait;
+    use DisableIpamPolicy\DisableIpamPolicyTrait;
     use DisableRouteServerPropagation\DisableRouteServerPropagationTrait;
     use DisableSerialConsoleAccess\DisableSerialConsoleAccessTrait;
     use DisableSnapshotBlockPublicAccess\DisableSnapshotBlockPublicAccessTrait;
@@ -492,6 +496,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use EnableImageDeregistrationProtection\EnableImageDeregistrationProtectionTrait;
     use EnableInstanceSqlHaStandbyDetections\EnableInstanceSqlHaStandbyDetectionsTrait;
     use EnableIpamOrganizationAdminAccount\EnableIpamOrganizationAdminAccountTrait;
+    use EnableIpamPolicy\EnableIpamPolicyTrait;
     use EnableReachabilityAnalyzerOrganizationSharing\EnableReachabilityAnalyzerOrganizationSharingTrait;
     use EnableRouteServerPropagation\EnableRouteServerPropagationTrait;
     use EnableSerialConsoleAccess\EnableSerialConsoleAccessTrait;
@@ -522,6 +527,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetDefaultCreditSpecification\GetDefaultCreditSpecificationTrait;
     use GetEbsDefaultKmsKeyId\GetEbsDefaultKmsKeyIdTrait;
     use GetEbsEncryptionByDefault\GetEbsEncryptionByDefaultTrait;
+    use GetEnabledIpamPolicy\GetEnabledIpamPolicyTrait;
     use GetFlowLogsIntegrationTemplate\GetFlowLogsIntegrationTemplateTrait;
     use GetGroupsForCapacityReservation\GetGroupsForCapacityReservationTrait;
     use GetHostReservationPurchasePreview\GetHostReservationPurchasePreviewTrait;
@@ -535,6 +541,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetIpamDiscoveredAccounts\GetIpamDiscoveredAccountsTrait;
     use GetIpamDiscoveredPublicAddresses\GetIpamDiscoveredPublicAddressesTrait;
     use GetIpamDiscoveredResourceCidrs\GetIpamDiscoveredResourceCidrsTrait;
+    use GetIpamPolicyAllocationRules\GetIpamPolicyAllocationRulesTrait;
+    use GetIpamPolicyOrganizationTargets\GetIpamPolicyOrganizationTargetsTrait;
     use GetIpamPoolAllocations\GetIpamPoolAllocationsTrait;
     use GetIpamPoolCidrs\GetIpamPoolCidrsTrait;
     use GetIpamPrefixListResolverRules\GetIpamPrefixListResolverRulesTrait;
@@ -604,6 +612,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyInstanceNetworkPerformanceOptions\ModifyInstanceNetworkPerformanceOptionsTrait;
     use ModifyInstancePlacement\ModifyInstancePlacementTrait;
     use ModifyIpam\ModifyIpamTrait;
+    use ModifyIpamPolicyAllocationRules\ModifyIpamPolicyAllocationRulesTrait;
     use ModifyIpamPool\ModifyIpamPoolTrait;
     use ModifyIpamPrefixListResolver\ModifyIpamPrefixListResolverTrait;
     use ModifyIpamPrefixListResolverTarget\ModifyIpamPrefixListResolverTargetTrait;

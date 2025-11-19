@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ExecutionRoleArn
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property bool|null $EnableNetworkIsolation
+ * @property Shapes\MetricsConfig|null $MetricsConfig
  */
 class DescribeEndpointConfigResponse extends Response
 {

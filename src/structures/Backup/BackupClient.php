@@ -40,6 +40,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use DescribeReportJob\DescribeReportJobTrait;
     use DescribeReportPlan\DescribeReportPlanTrait;
     use DescribeRestoreJob\DescribeRestoreJobTrait;
+    use DescribeScanJob\DescribeScanJobTrait;
     use DisassociateBackupVaultMpaApprovalTeam\DisassociateBackupVaultMpaApprovalTeamTrait;
     use DisassociateRecoveryPoint\DisassociateRecoveryPointTrait;
     use DisassociateRecoveryPointFromParent\DisassociateRecoveryPointFromParentTrait;
@@ -84,6 +85,8 @@ class BackupClient extends \Aws\Backup\BackupClient
     use ListRestoreJobsByProtectedResource\ListRestoreJobsByProtectedResourceTrait;
     use ListRestoreTestingPlans\ListRestoreTestingPlansTrait;
     use ListRestoreTestingSelections\ListRestoreTestingSelectionsTrait;
+    use ListScanJobSummaries\ListScanJobSummariesTrait;
+    use ListScanJobs\ListScanJobsTrait;
     use ListTags\ListTagsTrait;
     use ListTieringConfigurations\ListTieringConfigurationsTrait;
     use PutBackupVaultAccessPolicy\PutBackupVaultAccessPolicyTrait;
@@ -95,6 +98,7 @@ class BackupClient extends \Aws\Backup\BackupClient
     use StartCopyJob\StartCopyJobTrait;
     use StartReportJob\StartReportJobTrait;
     use StartRestoreJob\StartRestoreJobTrait;
+    use StartScanJob\StartScanJobTrait;
     use StopBackupJob\StopBackupJobTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

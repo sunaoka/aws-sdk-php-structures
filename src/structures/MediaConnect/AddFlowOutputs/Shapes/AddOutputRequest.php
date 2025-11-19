@@ -24,6 +24,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $NdiSpeedHqQuality
  * @property string|null $NdiProgramName
  * @property array<string, string>|null $OutputTags
+ * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
+ * @property FlowTransitEncryption|null $RouterIntegrationTransitEncryption
  */
 class AddOutputRequest extends Shape
 {
@@ -47,7 +49,9 @@ class AddOutputRequest extends Shape
      *     OutputStatus?: 'ENABLED'|'DISABLED'|null,
      *     NdiSpeedHqQuality?: int|null,
      *     NdiProgramName?: string|null,
-     *     OutputTags?: array<string, string>|null
+     *     OutputTags?: array<string, string>|null,
+     *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
+     *     RouterIntegrationTransitEncryption?: FlowTransitEncryption|null
      * } $args
      */
     public function __construct(array $args = [])

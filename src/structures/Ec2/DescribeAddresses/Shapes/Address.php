@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CustomerOwnedIpv4Pool
  * @property string|null $CarrierIp
  * @property string|null $SubnetId
- * @property 'alb'|'nlb'|'rnat'|null $ServiceManaged
+ * @property 'alb'|'nlb'|'rnat'|'rds'|null $ServiceManaged
  * @property string|null $InstanceId
  * @property string|null $PublicIp
  */
@@ -39,7 +39,7 @@ class Address extends Shape
      *     CustomerOwnedIpv4Pool?: string|null,
      *     CarrierIp?: string|null,
      *     SubnetId?: string|null,
-     *     ServiceManaged?: 'alb'|'nlb'|'rnat'|null,
+     *     ServiceManaged?: 'alb'|'nlb'|'rnat'|'rds'|null,
      *     InstanceId?: string|null,
      *     PublicIp?: string|null
      * } $args

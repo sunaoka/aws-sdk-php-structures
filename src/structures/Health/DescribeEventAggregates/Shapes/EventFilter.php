@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Health\DescribeEventAggregates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<'ACTION_REQUIRED'|'ACTION_MAY_BE_REQUIRED'|'INFORMATIONAL'>|null $actionabilities
  * @property list<string>|null $eventArns
  * @property list<string>|null $eventTypeCodes
  * @property list<string>|null $services
@@ -18,11 +19,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>|null $eventTypeCategories
  * @property list<array<string, string>>|null $tags
  * @property list<'open'|'closed'|'upcoming'>|null $eventStatusCodes
+ * @property list<'OPERATIONS'|'SECURITY'|'BILLING'>|null $personas
  */
 class EventFilter extends Shape
 {
     /**
      * @param array{
+     *     actionabilities?: list<'ACTION_REQUIRED'|'ACTION_MAY_BE_REQUIRED'|'INFORMATIONAL'>|null,
      *     eventArns?: list<string>|null,
      *     eventTypeCodes?: list<string>|null,
      *     services?: list<string>|null,
@@ -35,7 +38,8 @@ class EventFilter extends Shape
      *     entityValues?: list<string>|null,
      *     eventTypeCategories?: list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>|null,
      *     tags?: list<array<string, string>>|null,
-     *     eventStatusCodes?: list<'open'|'closed'|'upcoming'>|null
+     *     eventStatusCodes?: list<'open'|'closed'|'upcoming'>|null,
+     *     personas?: list<'OPERATIONS'|'SECURITY'|'BILLING'>|null
      * } $args
      */
     public function __construct(array $args = [])

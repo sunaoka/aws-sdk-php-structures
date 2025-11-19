@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LastUpdatedDate
  * @property string|null $LastEvaluatedDate
  * @property 'DIMENSIONAL'|'CUSTOM' $MonitorType
- * @property 'SERVICE'|null $MonitorDimension
+ * @property 'SERVICE'|'LINKED_ACCOUNT'|'TAG'|'COST_CATEGORY'|null $MonitorDimension
  * @property Expression|null $MonitorSpecification
  * @property int<0, max>|null $DimensionalValueCount
  */
@@ -25,7 +25,7 @@ class AnomalyMonitor extends Shape
      *     LastUpdatedDate?: string|null,
      *     LastEvaluatedDate?: string|null,
      *     MonitorType: 'DIMENSIONAL'|'CUSTOM',
-     *     MonitorDimension?: 'SERVICE'|null,
+     *     MonitorDimension?: 'SERVICE'|'LINKED_ACCOUNT'|'TAG'|'COST_CATEGORY'|null,
      *     MonitorSpecification?: Expression|null,
      *     DimensionalValueCount?: int<0, max>|null
      * } $args

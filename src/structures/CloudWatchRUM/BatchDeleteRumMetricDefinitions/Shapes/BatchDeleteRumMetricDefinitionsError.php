@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\BatchDeleteRumMetricDefinitions\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $MetricDefinitionId
  * @property string $ErrorCode
  * @property string $ErrorMessage
- * @property string $MetricDefinitionId
  */
 class BatchDeleteRumMetricDefinitionsError extends Shape
 {
     /**
      * @param array{
+     *     MetricDefinitionId: string,
      *     ErrorCode: string,
-     *     ErrorMessage: string,
-     *     MetricDefinitionId: string
+     *     ErrorMessage: string
      * } $args
      */
     public function __construct(array $args)

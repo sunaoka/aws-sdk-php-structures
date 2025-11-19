@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MulticastSettingsUpdateRequest|null $MulticastSettings
  * @property Shapes\Smpte2110ReceiverGroupSettings|null $Smpte2110ReceiverGroupSettings
  * @property list<string>|null $SdiSources
+ * @property Shapes\SpecialRouterSettings|null $SpecialRouterSettings
  */
 class UpdateInputRequest extends Request
 {
@@ -33,7 +34,8 @@ class UpdateInputRequest extends Request
      *     SrtSettings?: Shapes\SrtSettingsRequest|null,
      *     MulticastSettings?: Shapes\MulticastSettingsUpdateRequest|null,
      *     Smpte2110ReceiverGroupSettings?: Shapes\Smpte2110ReceiverGroupSettings|null,
-     *     SdiSources?: list<string>|null
+     *     SdiSources?: list<string>|null,
+     *     SpecialRouterSettings?: Shapes\SpecialRouterSettings|null
      * } $args
      */
     public function __construct(array $args)

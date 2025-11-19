@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $PricingPlanArn
  * @property int<0, max>|null $Size
  * @property int|null $LastModifiedTime
- * @property 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING'|null $Status
+ * @property 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING'|'PENDING'|null $Status
  * @property string|null $StatusReason
  * @property Shapes\UpdateBillingGroupAccountGrouping|null $AccountGrouping
  */

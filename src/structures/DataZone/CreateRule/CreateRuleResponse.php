@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\RuleDetail $detail
  * @property string $identifier
  * @property string $name
- * @property 'METADATA_FORM_ENFORCEMENT' $ruleType
+ * @property 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT' $ruleType
  * @property Shapes\RuleScope $scope
  * @property Shapes\RuleTarget $target
  * @property 'DOMAIN_UNIT'|null $targetType

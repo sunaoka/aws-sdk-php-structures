@@ -37,6 +37,7 @@ class CloudTrailClient extends \Aws\CloudTrail\CloudTrailClient
     use ListEventDataStores\ListEventDataStoresTrait;
     use ListImportFailures\ListImportFailuresTrait;
     use ListImports\ListImportsTrait;
+    use ListInsightsData\ListInsightsDataTrait;
     use ListInsightsMetricData\ListInsightsMetricDataTrait;
     use ListPublicKeys\ListPublicKeysTrait;
     use ListQueries\ListQueriesTrait;

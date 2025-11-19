@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $title
+ * @property string|null $source
  * @property list<CitationSourceContent>|null $sourceContent
  * @property CitationLocation|null $location
  */
@@ -14,6 +15,7 @@ class Citation extends Shape
     /**
      * @param array{
      *     title?: string|null,
+     *     source?: string|null,
      *     sourceContent?: list<CitationSourceContent>|null,
      *     location?: CitationLocation|null
      * } $args
