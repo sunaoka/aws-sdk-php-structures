@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\BatchCreateRumMetricDefinitions\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property MetricDefinitionRequest $MetricDefinition
  * @property string $ErrorCode
  * @property string $ErrorMessage
- * @property MetricDefinitionRequest $MetricDefinition
  */
 class BatchCreateRumMetricDefinitionsError extends Shape
 {
     /**
      * @param array{
+     *     MetricDefinition: MetricDefinitionRequest,
      *     ErrorCode: string,
-     *     ErrorMessage: string,
-     *     MetricDefinition: MetricDefinitionRequest
+     *     ErrorMessage: string
      * } $args
      */
     public function __construct(array $args)

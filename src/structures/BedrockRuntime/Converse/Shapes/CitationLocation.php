@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DocumentCharLocation|null $documentChar
  * @property DocumentPageLocation|null $documentPage
  * @property DocumentChunkLocation|null $documentChunk
+ * @property SearchResultLocation|null $searchResultLocation
  */
 class CitationLocation extends Shape
 {
@@ -17,7 +18,8 @@ class CitationLocation extends Shape
      *     web?: WebLocation|null,
      *     documentChar?: DocumentCharLocation|null,
      *     documentPage?: DocumentPageLocation|null,
-     *     documentChunk?: DocumentChunkLocation|null
+     *     documentChunk?: DocumentChunkLocation|null,
+     *     searchResultLocation?: SearchResultLocation|null
      * } $args
      */
     public function __construct(array $args = [])

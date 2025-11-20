@@ -14,13 +14,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RoleArn
  * @property list<Shapes\InputSourceRequest>|null $Sources
  * @property array<string, string>|null $Tags
- * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|null $Type
+ * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|null $Type
  * @property Shapes\InputVpcRequest|null $Vpc
  * @property Shapes\SrtSettingsRequest|null $SrtSettings
  * @property 'AWS'|'ON_PREMISES'|null $InputNetworkLocation
  * @property Shapes\MulticastSettingsCreateRequest|null $MulticastSettings
  * @property Shapes\Smpte2110ReceiverGroupSettings|null $Smpte2110ReceiverGroupSettings
  * @property list<string>|null $SdiSources
+ * @property Shapes\RouterSettings|null $RouterSettings
  */
 class CreateInputRequest extends Request
 {
@@ -35,13 +36,14 @@ class CreateInputRequest extends Request
      *     RoleArn?: string|null,
      *     Sources?: list<Shapes\InputSourceRequest>|null,
      *     Tags?: array<string, string>|null,
-     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|null,
+     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|null,
      *     Vpc?: Shapes\InputVpcRequest|null,
      *     SrtSettings?: Shapes\SrtSettingsRequest|null,
      *     InputNetworkLocation?: 'AWS'|'ON_PREMISES'|null,
      *     MulticastSettings?: Shapes\MulticastSettingsCreateRequest|null,
      *     Smpte2110ReceiverGroupSettings?: Shapes\Smpte2110ReceiverGroupSettings|null,
-     *     SdiSources?: list<string>|null
+     *     SdiSources?: list<string>|null,
+     *     RouterSettings?: Shapes\RouterSettings|null
      * } $args
      */
     public function __construct(array $args = [])

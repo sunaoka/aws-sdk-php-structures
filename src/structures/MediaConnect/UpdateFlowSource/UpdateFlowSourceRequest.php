@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $VpcInterfaceName
  * @property string|null $WhitelistCidr
  * @property Shapes\UpdateGatewayBridgeSourceRequest|null $GatewayBridgeSource
+ * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
+ * @property Shapes\FlowTransitEncryption|null $RouterIntegrationTransitDecryption
  */
 class UpdateFlowSourceRequest extends Request
 {
@@ -49,7 +51,9 @@ class UpdateFlowSourceRequest extends Request
      *     StreamId?: string|null,
      *     VpcInterfaceName?: string|null,
      *     WhitelistCidr?: string|null,
-     *     GatewayBridgeSource?: Shapes\UpdateGatewayBridgeSourceRequest|null
+     *     GatewayBridgeSource?: Shapes\UpdateGatewayBridgeSourceRequest|null,
+     *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
+     *     RouterIntegrationTransitDecryption?: Shapes\FlowTransitEncryption|null
      * } $args
      */
     public function __construct(array $args)

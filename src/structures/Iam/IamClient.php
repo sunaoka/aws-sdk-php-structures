@@ -57,9 +57,11 @@ class IamClient extends \Aws\Iam\IamClient
     use DetachUserPolicy\DetachUserPolicyTrait;
     use DisableOrganizationsRootCredentialsManagement\DisableOrganizationsRootCredentialsManagementTrait;
     use DisableOrganizationsRootSessions\DisableOrganizationsRootSessionsTrait;
+    use DisableOutboundWebIdentityFederation\DisableOutboundWebIdentityFederationTrait;
     use EnableMFADevice\EnableMFADeviceTrait;
     use EnableOrganizationsRootCredentialsManagement\EnableOrganizationsRootCredentialsManagementTrait;
     use EnableOrganizationsRootSessions\EnableOrganizationsRootSessionsTrait;
+    use EnableOutboundWebIdentityFederation\EnableOutboundWebIdentityFederationTrait;
     use GenerateCredentialReport\GenerateCredentialReportTrait;
     use GenerateOrganizationsAccessReport\GenerateOrganizationsAccessReportTrait;
     use GenerateServiceLastAccessedDetails\GenerateServiceLastAccessedDetailsTrait;
@@ -79,6 +81,7 @@ class IamClient extends \Aws\Iam\IamClient
     use GetMFADevice\GetMFADeviceTrait;
     use GetOpenIDConnectProvider\GetOpenIDConnectProviderTrait;
     use GetOrganizationsAccessReport\GetOrganizationsAccessReportTrait;
+    use GetOutboundWebIdentityFederationInfo\GetOutboundWebIdentityFederationInfoTrait;
     use GetPolicy\GetPolicyTrait;
     use GetPolicyVersion\GetPolicyVersionTrait;
     use GetRole\GetRoleTrait;

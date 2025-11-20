@@ -20,12 +20,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<InputSource>|null $Sources
  * @property 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null $State
  * @property array<string, string>|null $Tags
- * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|null $Type
+ * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|null $Type
  * @property SrtSettings|null $SrtSettings
  * @property 'AWS'|'ON_PREMISES'|null $InputNetworkLocation
  * @property MulticastSettings|null $MulticastSettings
  * @property Smpte2110ReceiverGroupSettings|null $Smpte2110ReceiverGroupSettings
  * @property list<string>|null $SdiSources
+ * @property RouterInputSettings|null $RouterSettings
  */
 class Input extends Shape
 {
@@ -46,12 +47,13 @@ class Input extends Shape
      *     Sources?: list<InputSource>|null,
      *     State?: 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null,
      *     Tags?: array<string, string>|null,
-     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|null,
+     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|null,
      *     SrtSettings?: SrtSettings|null,
      *     InputNetworkLocation?: 'AWS'|'ON_PREMISES'|null,
      *     MulticastSettings?: MulticastSettings|null,
      *     Smpte2110ReceiverGroupSettings?: Smpte2110ReceiverGroupSettings|null,
-     *     SdiSources?: list<string>|null
+     *     SdiSources?: list<string>|null,
+     *     RouterSettings?: RouterInputSettings|null
      * } $args
      */
     public function __construct(array $args = [])

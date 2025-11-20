@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DeliverCrossAccountRole
  * @property string|null $LogGroupName
  * @property list<string> $ResourceIds
- * @property 'VPC'|'Subnet'|'NetworkInterface'|'TransitGateway'|'TransitGatewayAttachment' $ResourceType
+ * @property 'VPC'|'Subnet'|'NetworkInterface'|'TransitGateway'|'TransitGatewayAttachment'|'RegionalNatGateway' $ResourceType
  * @property 'ACCEPT'|'REJECT'|'ALL'|null $TrafficType
  * @property 'cloud-watch-logs'|'s3'|'kinesis-data-firehose'|null $LogDestinationType
  * @property string|null $LogDestination
@@ -30,7 +30,7 @@ class CreateFlowLogsRequest extends Request
      *     DeliverCrossAccountRole?: string|null,
      *     LogGroupName?: string|null,
      *     ResourceIds: list<string>,
-     *     ResourceType: 'VPC'|'Subnet'|'NetworkInterface'|'TransitGateway'|'TransitGatewayAttachment',
+     *     ResourceType: 'VPC'|'Subnet'|'NetworkInterface'|'TransitGateway'|'TransitGatewayAttachment'|'RegionalNatGateway',
      *     TrafficType?: 'ACCEPT'|'REJECT'|'ALL'|null,
      *     LogDestinationType?: 'cloud-watch-logs'|'s3'|'kinesis-data-firehose'|null,
      *     LogDestination?: string|null,

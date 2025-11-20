@@ -15,7 +15,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $regionalCertificateArn
  * @property Shapes\EndpointConfiguration|null $endpointConfiguration
  * @property array<string, string>|null $tags
- * @property 'TLS_1_0'|'TLS_1_2'|null $securityPolicy
+ * @property 'TLS_1_0'|'TLS_1_2'|'SecurityPolicy_TLS13_1_3_2025_09'|'SecurityPolicy_TLS13_1_3_FIPS_2025_09'|'SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09'|'SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09'|'SecurityPolicy_TLS13_1_2_PQ_2025_09'|'SecurityPolicy_TLS13_1_2_2021_06'|'SecurityPolicy_TLS13_2025_EDGE'|'SecurityPolicy_TLS12_PFS_2025_EDGE'|'SecurityPolicy_TLS12_2018_EDGE'|null $securityPolicy
+ * @property 'BASIC'|'STRICT'|null $endpointAccessMode
  * @property Shapes\MutualTlsAuthenticationInput|null $mutualTlsAuthentication
  * @property string|null $ownershipVerificationCertificateArn
  * @property string|null $policy
@@ -35,7 +36,8 @@ class CreateDomainNameRequest extends Request
      *     regionalCertificateArn?: string|null,
      *     endpointConfiguration?: Shapes\EndpointConfiguration|null,
      *     tags?: array<string, string>|null,
-     *     securityPolicy?: 'TLS_1_0'|'TLS_1_2'|null,
+     *     securityPolicy?: 'TLS_1_0'|'TLS_1_2'|'SecurityPolicy_TLS13_1_3_2025_09'|'SecurityPolicy_TLS13_1_3_FIPS_2025_09'|'SecurityPolicy_TLS13_1_2_PFS_PQ_2025_09'|'SecurityPolicy_TLS13_1_2_FIPS_PQ_2025_09'|'SecurityPolicy_TLS13_1_2_PQ_2025_09'|'SecurityPolicy_TLS13_1_2_2021_06'|'SecurityPolicy_TLS13_2025_EDGE'|'SecurityPolicy_TLS12_PFS_2025_EDGE'|'SecurityPolicy_TLS12_2018_EDGE'|null,
+     *     endpointAccessMode?: 'BASIC'|'STRICT'|null,
      *     mutualTlsAuthentication?: Shapes\MutualTlsAuthenticationInput|null,
      *     ownershipVerificationCertificateArn?: string|null,
      *     policy?: string|null,

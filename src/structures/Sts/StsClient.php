@@ -14,4 +14,5 @@ class StsClient extends \Aws\Sts\StsClient
     use GetDelegatedAccessToken\GetDelegatedAccessTokenTrait;
     use GetFederationToken\GetFederationTokenTrait;
     use GetSessionToken\GetSessionTokenTrait;
+    use GetWebIdentityToken\GetWebIdentityTokenTrait;
 }

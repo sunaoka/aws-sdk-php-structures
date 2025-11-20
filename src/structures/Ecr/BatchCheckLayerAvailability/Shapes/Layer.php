@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $layerDigest
- * @property 'AVAILABLE'|'UNAVAILABLE'|null $layerAvailability
+ * @property 'AVAILABLE'|'UNAVAILABLE'|'ARCHIVED'|null $layerAvailability
  * @property int|null $layerSize
  * @property string|null $mediaType
  */
@@ -15,7 +15,7 @@ class Layer extends Shape
     /**
      * @param array{
      *     layerDigest?: string|null,
-     *     layerAvailability?: 'AVAILABLE'|'UNAVAILABLE'|null,
+     *     layerAvailability?: 'AVAILABLE'|'UNAVAILABLE'|'ARCHIVED'|null,
      *     layerSize?: int|null,
      *     mediaType?: string|null
      * } $args

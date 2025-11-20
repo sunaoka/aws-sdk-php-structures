@@ -20,12 +20,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\InputSource>|null $Sources
  * @property 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null $State
  * @property array<string, string>|null $Tags
- * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|null $Type
+ * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|null $Type
  * @property Shapes\SrtSettings|null $SrtSettings
  * @property 'AWS'|'ON_PREMISES'|null $InputNetworkLocation
  * @property Shapes\MulticastSettings|null $MulticastSettings
  * @property Shapes\Smpte2110ReceiverGroupSettings|null $Smpte2110ReceiverGroupSettings
  * @property list<string>|null $SdiSources
+ * @property Shapes\RouterInputSettings|null $RouterSettings
  */
 class DescribeInputResponse extends Response
 {

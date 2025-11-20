@@ -45,6 +45,7 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use GetIPSet\GetIPSetTrait;
     use GetInvitationsCount\GetInvitationsCountTrait;
     use GetMalwareProtectionPlan\GetMalwareProtectionPlanTrait;
+    use GetMalwareScan\GetMalwareScanTrait;
     use GetMalwareScanSettings\GetMalwareScanSettingsTrait;
     use GetMasterAccount\GetMasterAccountTrait;
     use GetMemberDetectors\GetMemberDetectorsTrait;
@@ -63,6 +64,7 @@ class GuardDutyClient extends \Aws\GuardDuty\GuardDutyClient
     use ListIPSets\ListIPSetsTrait;
     use ListInvitations\ListInvitationsTrait;
     use ListMalwareProtectionPlans\ListMalwareProtectionPlansTrait;
+    use ListMalwareScans\ListMalwareScansTrait;
     use ListMembers\ListMembersTrait;
     use ListOrganizationAdminAccounts\ListOrganizationAdminAccountsTrait;
     use ListPublishingDestinations\ListPublishingDestinationsTrait;

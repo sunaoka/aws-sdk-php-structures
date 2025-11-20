@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $lastUpdatedBy
  * @property string $name
  * @property string $revision
- * @property 'METADATA_FORM_ENFORCEMENT' $ruleType
+ * @property 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT' $ruleType
  * @property Shapes\RuleScope $scope
  * @property Shapes\RuleTarget $target
  * @property \Aws\Api\DateTimeResult $updatedAt

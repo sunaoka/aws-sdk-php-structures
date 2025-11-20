@@ -33,6 +33,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
  * @property string|null $IndexStatusMessage
  * @property 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null $EncryptionKeyType
+ * @property list<Shapes\ScanResult>|null $ScanResults
  */
 class DescribeRecoveryPointResponse extends Response
 {

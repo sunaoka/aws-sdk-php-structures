@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $lastUpdatedBy
  * @property string|null $name
  * @property string|null $revision
- * @property 'METADATA_FORM_ENFORCEMENT'|null $ruleType
+ * @property 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT'|null $ruleType
  * @property RuleScope|null $scope
  * @property RuleTarget|null $target
  * @property 'DOMAIN_UNIT'|null $targetType
@@ -25,7 +25,7 @@ class RuleSummary extends Shape
      *     lastUpdatedBy?: string|null,
      *     name?: string|null,
      *     revision?: string|null,
-     *     ruleType?: 'METADATA_FORM_ENFORCEMENT'|null,
+     *     ruleType?: 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT'|null,
      *     scope?: RuleScope|null,
      *     target?: RuleTarget|null,
      *     targetType?: 'DOMAIN_UNIT'|null,

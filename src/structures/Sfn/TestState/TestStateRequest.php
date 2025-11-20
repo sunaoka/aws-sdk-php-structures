@@ -11,6 +11,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'INFO'|'DEBUG'|'TRACE'|null $inspectionLevel
  * @property bool|null $revealSecrets
  * @property string|null $variables
+ * @property string|null $stateName
+ * @property Shapes\MockInput|null $mock
+ * @property string|null $context
+ * @property Shapes\TestStateConfiguration|null $stateConfiguration
  */
 class TestStateRequest extends Request
 {
@@ -21,7 +25,11 @@ class TestStateRequest extends Request
      *     input?: string|null,
      *     inspectionLevel?: 'INFO'|'DEBUG'|'TRACE'|null,
      *     revealSecrets?: bool|null,
-     *     variables?: string|null
+     *     variables?: string|null,
+     *     stateName?: string|null,
+     *     mock?: Shapes\MockInput|null,
+     *     context?: string|null,
+     *     stateConfiguration?: Shapes\TestStateConfiguration|null
      * } $args
      */
     public function __construct(array $args)

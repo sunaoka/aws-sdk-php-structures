@@ -7,11 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $ARN
  * @property string|null $Name
+ * @property string|null $Type
  * @property string|null $Description
  * @property string|null $KmsKeyId
  * @property bool|null $RotationEnabled
  * @property string|null $RotationLambdaARN
  * @property RotationRulesType|null $RotationRules
+ * @property list<ExternalSecretRotationMetadataItem>|null $ExternalSecretRotationMetadata
+ * @property string|null $ExternalSecretRotationRoleArn
  * @property \Aws\Api\DateTimeResult|null $LastRotatedDate
  * @property \Aws\Api\DateTimeResult|null $LastChangedDate
  * @property \Aws\Api\DateTimeResult|null $LastAccessedDate
@@ -29,11 +32,14 @@ class SecretListEntry extends Shape
      * @param array{
      *     ARN?: string|null,
      *     Name?: string|null,
+     *     Type?: string|null,
      *     Description?: string|null,
      *     KmsKeyId?: string|null,
      *     RotationEnabled?: bool|null,
      *     RotationLambdaARN?: string|null,
      *     RotationRules?: RotationRulesType|null,
+     *     ExternalSecretRotationMetadata?: list<ExternalSecretRotationMetadataItem>|null,
+     *     ExternalSecretRotationRoleArn?: string|null,
      *     LastRotatedDate?: \Aws\Api\DateTimeResult|null,
      *     LastChangedDate?: \Aws\Api\DateTimeResult|null,
      *     LastAccessedDate?: \Aws\Api\DateTimeResult|null,

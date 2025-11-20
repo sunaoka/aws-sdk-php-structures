@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $EnableContinuousBackup
  * @property string|null $ScheduleExpressionTimezone
  * @property list<IndexAction>|null $IndexActions
+ * @property list<ScanAction>|null $ScanActions
  */
 class BackupRule extends Shape
 {
@@ -35,7 +36,8 @@ class BackupRule extends Shape
      *     CopyActions?: list<CopyAction>|null,
      *     EnableContinuousBackup?: bool|null,
      *     ScheduleExpressionTimezone?: string|null,
-     *     IndexActions?: list<IndexAction>|null
+     *     IndexActions?: list<IndexAction>|null,
+     *     ScanActions?: list<ScanAction>|null
      * } $args
      */
     public function __construct(array $args)

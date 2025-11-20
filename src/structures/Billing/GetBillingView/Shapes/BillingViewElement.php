@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property string|null $name
  * @property string|null $description
- * @property 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|null $billingViewType
+ * @property 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|'BILLING_TRANSFER'|'BILLING_TRANSFER_SHOWBACK'|null $billingViewType
  * @property string|null $ownerAccountId
  * @property string|null $sourceAccountId
  * @property Expression|null $dataFilterExpression
@@ -26,7 +26,7 @@ class BillingViewElement extends Shape
      *     arn?: string|null,
      *     name?: string|null,
      *     description?: string|null,
-     *     billingViewType?: 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|null,
+     *     billingViewType?: 'PRIMARY'|'BILLING_GROUP'|'CUSTOM'|'BILLING_TRANSFER'|'BILLING_TRANSFER_SHOWBACK'|null,
      *     ownerAccountId?: string|null,
      *     sourceAccountId?: string|null,
      *     dataFilterExpression?: Expression|null,
