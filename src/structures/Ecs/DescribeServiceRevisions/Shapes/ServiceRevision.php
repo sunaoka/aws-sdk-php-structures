@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property list<VpcLatticeConfiguration>|null $vpcLatticeConfigurations
  * @property ResolvedConfiguration|null $resolvedConfiguration
+ * @property ECSManagedResources|null $ecsManagedResources
  */
 class ServiceRevision extends Shape
 {
@@ -47,7 +48,8 @@ class ServiceRevision extends Shape
      *     fargateEphemeralStorage?: DeploymentEphemeralStorage|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     vpcLatticeConfigurations?: list<VpcLatticeConfiguration>|null,
-     *     resolvedConfiguration?: ResolvedConfiguration|null
+     *     resolvedConfiguration?: ResolvedConfiguration|null,
+     *     ecsManagedResources?: ECSManagedResources|null
      * } $args
      */
     public function __construct(array $args = [])

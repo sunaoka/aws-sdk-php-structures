@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AccountId
  * @property string $Region
  * @property array<string, string> $Entity
- * @property 'DEPLOYMENT' $ChangeEventType
+ * @property 'DEPLOYMENT'|'CONFIGURATION' $ChangeEventType
  * @property string $EventId
  * @property string|null $UserName
  * @property string|null $EventName
@@ -22,7 +22,7 @@ class ChangeEvent extends Shape
      *     AccountId: string,
      *     Region: string,
      *     Entity: array<string, string>,
-     *     ChangeEventType: 'DEPLOYMENT',
+     *     ChangeEventType: 'DEPLOYMENT'|'CONFIGURATION',
      *     EventId: string,
      *     UserName?: string|null,
      *     EventName?: string|null

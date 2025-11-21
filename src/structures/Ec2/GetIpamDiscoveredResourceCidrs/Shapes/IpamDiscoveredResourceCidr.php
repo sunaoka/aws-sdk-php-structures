@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceOwnerId
  * @property string|null $ResourceCidr
  * @property 'amazon'|'byoip'|'none'|null $IpSource
- * @property 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|null $ResourceType
+ * @property 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|'anycast-ip-list'|null $ResourceType
  * @property list<IpamResourceTag>|null $ResourceTags
  * @property double|null $IpUsage
  * @property string|null $VpcId
@@ -30,7 +30,7 @@ class IpamDiscoveredResourceCidr extends Shape
      *     ResourceOwnerId?: string|null,
      *     ResourceCidr?: string|null,
      *     IpSource?: 'amazon'|'byoip'|'none'|null,
-     *     ResourceType?: 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|null,
+     *     ResourceType?: 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|'anycast-ip-list'|null,
      *     ResourceTags?: list<IpamResourceTag>|null,
      *     IpUsage?: double|null,
      *     VpcId?: string|null,

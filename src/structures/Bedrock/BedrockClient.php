@@ -28,6 +28,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use DeleteAutomatedReasoningPolicyTestCase\DeleteAutomatedReasoningPolicyTestCaseTrait;
     use DeleteCustomModel\DeleteCustomModelTrait;
     use DeleteCustomModelDeployment\DeleteCustomModelDeploymentTrait;
+    use DeleteEnforcedGuardrailConfiguration\DeleteEnforcedGuardrailConfigurationTrait;
     use DeleteFoundationModelAgreement\DeleteFoundationModelAgreementTrait;
     use DeleteGuardrail\DeleteGuardrailTrait;
     use DeleteImportedModel\DeleteImportedModelTrait;
@@ -68,6 +69,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use ListAutomatedReasoningPolicyTestResults\ListAutomatedReasoningPolicyTestResultsTrait;
     use ListCustomModelDeployments\ListCustomModelDeploymentsTrait;
     use ListCustomModels\ListCustomModelsTrait;
+    use ListEnforcedGuardrailsConfiguration\ListEnforcedGuardrailsConfigurationTrait;
     use ListEvaluationJobs\ListEvaluationJobsTrait;
     use ListFoundationModelAgreementOffers\ListFoundationModelAgreementOffersTrait;
     use ListFoundationModels\ListFoundationModelsTrait;
@@ -82,6 +84,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use ListPromptRouters\ListPromptRoutersTrait;
     use ListProvisionedModelThroughputs\ListProvisionedModelThroughputsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use PutEnforcedGuardrailConfiguration\PutEnforcedGuardrailConfigurationTrait;
     use PutModelInvocationLoggingConfiguration\PutModelInvocationLoggingConfigurationTrait;
     use PutUseCaseForModelAccess\PutUseCaseForModelAccessTrait;
     use RegisterMarketplaceModelEndpoint\RegisterMarketplaceModelEndpointTrait;

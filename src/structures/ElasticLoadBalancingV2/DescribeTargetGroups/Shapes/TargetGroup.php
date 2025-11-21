@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'instance'|'ip'|'lambda'|'alb'|null $TargetType
  * @property string|null $ProtocolVersion
  * @property 'ipv4'|'ipv6'|null $IpAddressType
+ * @property int<1, 65535>|null $TargetControlPort
  */
 class TargetGroup extends Shape
 {
@@ -45,7 +46,8 @@ class TargetGroup extends Shape
      *     LoadBalancerArns?: list<string>|null,
      *     TargetType?: 'instance'|'ip'|'lambda'|'alb'|null,
      *     ProtocolVersion?: string|null,
-     *     IpAddressType?: 'ipv4'|'ipv6'|null
+     *     IpAddressType?: 'ipv4'|'ipv6'|null,
+     *     TargetControlPort?: int<1, 65535>|null
      * } $args
      */
     public function __construct(array $args = [])

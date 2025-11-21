@@ -65,6 +65,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $IpAddressType
  * @property string|null $MultiAZ
  * @property SecondaryClusterInfo|null $MultiAZSecondary
+ * @property string|null $LakehouseRegistrationStatus
+ * @property string|null $CatalogArn
  */
 class Cluster extends Shape
 {
@@ -129,7 +131,9 @@ class Cluster extends Shape
      *     MasterPasswordSecretKmsKeyId?: string|null,
      *     IpAddressType?: string|null,
      *     MultiAZ?: string|null,
-     *     MultiAZSecondary?: SecondaryClusterInfo|null
+     *     MultiAZSecondary?: SecondaryClusterInfo|null,
+     *     LakehouseRegistrationStatus?: string|null,
+     *     CatalogArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

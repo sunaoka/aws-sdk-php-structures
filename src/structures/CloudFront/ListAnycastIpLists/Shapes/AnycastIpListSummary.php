@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property 'ipv4'|'ipv6'|'dualstack'|null $IpAddressType
  * @property string|null $ETag
+ * @property IpamConfig|null $IpamConfig
  */
 class AnycastIpListSummary extends Shape
 {
@@ -25,7 +26,8 @@ class AnycastIpListSummary extends Shape
      *     IpCount: int,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     IpAddressType?: 'ipv4'|'ipv6'|'dualstack'|null,
-     *     ETag?: string|null
+     *     ETag?: string|null,
+     *     IpamConfig?: IpamConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $InstanceArn
  * @property Shapes\ExternalFilteringConfiguration|null $ExternalFiltering
  * @property list<Shapes\DataLakePrincipal>|null $ShareRecipients
+ * @property list<Shapes\ServiceIntegrationUnion>|null $ServiceIntegrations
  */
 class CreateLakeFormationIdentityCenterConfigurationRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreateLakeFormationIdentityCenterConfigurationRequest extends Request
      *     CatalogId?: string|null,
      *     InstanceArn?: string|null,
      *     ExternalFiltering?: Shapes\ExternalFilteringConfiguration|null,
-     *     ShareRecipients?: list<Shapes\DataLakePrincipal>|null
+     *     ShareRecipients?: list<Shapes\DataLakePrincipal>|null,
+     *     ServiceIntegrations?: list<Shapes\ServiceIntegrationUnion>|null
      * } $args
      */
     public function __construct(array $args = [])

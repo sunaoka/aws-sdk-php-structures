@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AddressOwnerId
  * @property string|null $AddressAllocationId
  * @property 'associated'|'disassociated'|null $AssociationStatus
- * @property 'service-managed-ip'|'service-managed-byoip'|'amazon-owned-eip'|'amazon-owned-contig'|'byoip'|'ec2-public-ip'|null $AddressType
- * @property 'nat-gateway'|'database-migration-service'|'redshift'|'elastic-container-service'|'relational-database-service'|'site-to-site-vpn'|'load-balancer'|'global-accelerator'|'other'|null $Service
+ * @property 'service-managed-ip'|'service-managed-byoip'|'amazon-owned-eip'|'amazon-owned-contig'|'byoip'|'ec2-public-ip'|'anycast-ip-list-ip'|null $AddressType
+ * @property 'nat-gateway'|'database-migration-service'|'redshift'|'elastic-container-service'|'relational-database-service'|'site-to-site-vpn'|'load-balancer'|'global-accelerator'|'cloudfront'|'other'|null $Service
  * @property string|null $ServiceResource
  * @property string|null $VpcId
  * @property string|null $SubnetId
@@ -35,8 +35,8 @@ class IpamDiscoveredPublicAddress extends Shape
      *     AddressOwnerId?: string|null,
      *     AddressAllocationId?: string|null,
      *     AssociationStatus?: 'associated'|'disassociated'|null,
-     *     AddressType?: 'service-managed-ip'|'service-managed-byoip'|'amazon-owned-eip'|'amazon-owned-contig'|'byoip'|'ec2-public-ip'|null,
-     *     Service?: 'nat-gateway'|'database-migration-service'|'redshift'|'elastic-container-service'|'relational-database-service'|'site-to-site-vpn'|'load-balancer'|'global-accelerator'|'other'|null,
+     *     AddressType?: 'service-managed-ip'|'service-managed-byoip'|'amazon-owned-eip'|'amazon-owned-contig'|'byoip'|'ec2-public-ip'|'anycast-ip-list-ip'|null,
+     *     Service?: 'nat-gateway'|'database-migration-service'|'redshift'|'elastic-container-service'|'relational-database-service'|'site-to-site-vpn'|'load-balancer'|'global-accelerator'|'cloudfront'|'other'|null,
      *     ServiceResource?: string|null,
      *     VpcId?: string|null,
      *     SubnetId?: string|null,

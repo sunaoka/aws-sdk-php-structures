@@ -27,11 +27,13 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use ListBrowserSessions\ListBrowserSessionsTrait;
     use ListCodeInterpreterSessions\ListCodeInterpreterSessionsTrait;
     use ListEvents\ListEventsTrait;
+    use ListMemoryExtractionJobs\ListMemoryExtractionJobsTrait;
     use ListMemoryRecords\ListMemoryRecordsTrait;
     use ListSessions\ListSessionsTrait;
     use RetrieveMemoryRecords\RetrieveMemoryRecordsTrait;
     use StartBrowserSession\StartBrowserSessionTrait;
     use StartCodeInterpreterSession\StartCodeInterpreterSessionTrait;
+    use StartMemoryExtractionJob\StartMemoryExtractionJobTrait;
     use StopBrowserSession\StopBrowserSessionTrait;
     use StopCodeInterpreterSession\StopCodeInterpreterSessionTrait;
     use StopRuntimeSession\StopRuntimeSessionTrait;

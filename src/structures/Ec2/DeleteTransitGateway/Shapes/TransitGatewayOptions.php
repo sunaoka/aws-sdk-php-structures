@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'enable'|'disable'|null $DnsSupport
  * @property 'enable'|'disable'|null $SecurityGroupReferencingSupport
  * @property 'enable'|'disable'|null $MulticastSupport
+ * @property EncryptionSupport|null $EncryptionSupport
  */
 class TransitGatewayOptions extends Shape
 {
@@ -31,7 +32,8 @@ class TransitGatewayOptions extends Shape
      *     VpnEcmpSupport?: 'enable'|'disable'|null,
      *     DnsSupport?: 'enable'|'disable'|null,
      *     SecurityGroupReferencingSupport?: 'enable'|'disable'|null,
-     *     MulticastSupport?: 'enable'|'disable'|null
+     *     MulticastSupport?: 'enable'|'disable'|null,
+     *     EncryptionSupport?: EncryptionSupport|null
      * } $args
      */
     public function __construct(array $args = [])

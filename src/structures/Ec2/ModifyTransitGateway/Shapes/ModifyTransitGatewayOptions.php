@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'enable'|'disable'|null $DefaultRouteTablePropagation
  * @property string|null $PropagationDefaultRouteTableId
  * @property int|null $AmazonSideAsn
+ * @property 'enable'|'disable'|null $EncryptionSupport
  */
 class ModifyTransitGatewayOptions extends Shape
 {
@@ -31,7 +32,8 @@ class ModifyTransitGatewayOptions extends Shape
      *     AssociationDefaultRouteTableId?: string|null,
      *     DefaultRouteTablePropagation?: 'enable'|'disable'|null,
      *     PropagationDefaultRouteTableId?: string|null,
-     *     AmazonSideAsn?: int|null
+     *     AmazonSideAsn?: int|null,
+     *     EncryptionSupport?: 'enable'|'disable'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReportGeneratorName
- * @property list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'> $Type
+ * @property list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'|'LicenseAssetGroupUsageReport'> $Type
  * @property Shapes\ReportContext $ReportContext
  * @property Shapes\ReportFrequency $ReportFrequency
  * @property string $ClientToken
@@ -18,7 +18,7 @@ class CreateLicenseManagerReportGeneratorRequest extends Request
     /**
      * @param array{
      *     ReportGeneratorName: string,
-     *     Type: list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'>,
+     *     Type: list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'|'LicenseAssetGroupUsageReport'>,
      *     ReportContext: Shapes\ReportContext,
      *     ReportFrequency: Shapes\ReportFrequency,
      *     ClientToken: string,

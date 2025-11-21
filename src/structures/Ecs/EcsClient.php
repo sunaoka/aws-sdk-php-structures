@@ -6,12 +6,14 @@ class EcsClient extends \Aws\Ecs\EcsClient
 {
     use CreateCapacityProvider\CreateCapacityProviderTrait;
     use CreateCluster\CreateClusterTrait;
+    use CreateExpressGatewayService\CreateExpressGatewayServiceTrait;
     use CreateService\CreateServiceTrait;
     use CreateTaskSet\CreateTaskSetTrait;
     use DeleteAccountSetting\DeleteAccountSettingTrait;
     use DeleteAttributes\DeleteAttributesTrait;
     use DeleteCapacityProvider\DeleteCapacityProviderTrait;
     use DeleteCluster\DeleteClusterTrait;
+    use DeleteExpressGatewayService\DeleteExpressGatewayServiceTrait;
     use DeleteService\DeleteServiceTrait;
     use DeleteTaskDefinitions\DeleteTaskDefinitionsTrait;
     use DeleteTaskSet\DeleteTaskSetTrait;
@@ -20,6 +22,7 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use DescribeCapacityProviders\DescribeCapacityProvidersTrait;
     use DescribeClusters\DescribeClustersTrait;
     use DescribeContainerInstances\DescribeContainerInstancesTrait;
+    use DescribeExpressGatewayService\DescribeExpressGatewayServiceTrait;
     use DescribeServiceDeployments\DescribeServiceDeploymentsTrait;
     use DescribeServiceRevisions\DescribeServiceRevisionsTrait;
     use DescribeServices\DescribeServicesTrait;
@@ -60,6 +63,7 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use UpdateClusterSettings\UpdateClusterSettingsTrait;
     use UpdateContainerAgent\UpdateContainerAgentTrait;
     use UpdateContainerInstancesState\UpdateContainerInstancesStateTrait;
+    use UpdateExpressGatewayService\UpdateExpressGatewayServiceTrait;
     use UpdateService\UpdateServiceTrait;
     use UpdateServicePrimaryTaskSet\UpdateServicePrimaryTaskSetTrait;
     use UpdateTaskProtection\UpdateTaskProtectionTrait;

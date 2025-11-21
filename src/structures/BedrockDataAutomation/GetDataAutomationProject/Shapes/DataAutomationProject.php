@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
  * @property string $projectName
  * @property 'DEVELOPMENT'|'LIVE'|null $projectStage
+ * @property 'ASYNC'|'SYNC'|null $projectType
  * @property string|null $projectDescription
  * @property StandardOutputConfiguration|null $standardOutputConfiguration
  * @property CustomOutputConfiguration|null $customOutputConfiguration
@@ -27,6 +28,7 @@ class DataAutomationProject extends Shape
      *     lastModifiedTime: \Aws\Api\DateTimeResult,
      *     projectName: string,
      *     projectStage?: 'DEVELOPMENT'|'LIVE'|null,
+     *     projectType?: 'ASYNC'|'SYNC'|null,
      *     projectDescription?: string|null,
      *     standardOutputConfiguration?: StandardOutputConfiguration|null,
      *     customOutputConfiguration?: CustomOutputConfiguration|null,

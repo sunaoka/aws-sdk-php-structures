@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DBClusterOptionGroupStatus>|null $DBClusterOptionGroupMemberships
  * @property string|null $PreferredBackupWindow
  * @property string|null $PreferredMaintenanceWindow
+ * @property 'first'|'second'|'last'|null $UpgradeRolloutOrder
  * @property string|null $ReplicationSourceIdentifier
  * @property list<string>|null $ReadReplicaIdentifiers
  * @property list<DBClusterStatusInfo>|null $StatusInfos
@@ -117,6 +118,7 @@ class DBCluster extends Shape
      *     DBClusterOptionGroupMemberships?: list<DBClusterOptionGroupStatus>|null,
      *     PreferredBackupWindow?: string|null,
      *     PreferredMaintenanceWindow?: string|null,
+     *     UpgradeRolloutOrder?: 'first'|'second'|'last'|null,
      *     ReplicationSourceIdentifier?: string|null,
      *     ReadReplicaIdentifiers?: list<string>|null,
      *     StatusInfos?: list<DBClusterStatusInfo>|null,

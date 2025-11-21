@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $requestId
  * @property Shapes\ImageRecipe|null $imageRecipe
+ * @property Shapes\LatestVersionReferences|null $latestVersionReferences
  */
 class GetImageRecipeResponse extends Response
 {

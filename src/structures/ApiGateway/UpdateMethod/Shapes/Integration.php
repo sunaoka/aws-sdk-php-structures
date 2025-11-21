@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, IntegrationResponse>|null $integrationResponses
  * @property TlsConfig|null $tlsConfig
  * @property 'BUFFERED'|'STREAM'|null $responseTransferMode
+ * @property string|null $integrationTarget
  */
 class Integration extends Shape
 {
@@ -41,7 +42,8 @@ class Integration extends Shape
      *     cacheKeyParameters?: list<string>|null,
      *     integrationResponses?: array<string, IntegrationResponse>|null,
      *     tlsConfig?: TlsConfig|null,
-     *     responseTransferMode?: 'BUFFERED'|'STREAM'|null
+     *     responseTransferMode?: 'BUFFERED'|'STREAM'|null,
+     *     integrationTarget?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Ipv6IpamPoolId
  * @property int|null $Ipv6NetmaskLength
  * @property string|null $Ipv6CidrBlockNetworkBorderGroup
+ * @property Shapes\VpcEncryptionControlConfiguration|null $VpcEncryptionControl
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property bool|null $DryRun
  * @property 'default'|'dedicated'|'host'|null $InstanceTenancy
@@ -30,6 +31,7 @@ class CreateVpcRequest extends Request
      *     Ipv6IpamPoolId?: string|null,
      *     Ipv6NetmaskLength?: int|null,
      *     Ipv6CidrBlockNetworkBorderGroup?: string|null,
+     *     VpcEncryptionControl?: Shapes\VpcEncryptionControlConfiguration|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     DryRun?: bool|null,
      *     InstanceTenancy?: 'default'|'dedicated'|'host'|null,

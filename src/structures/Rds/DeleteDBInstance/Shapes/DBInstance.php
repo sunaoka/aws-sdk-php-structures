@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AvailabilityZone
  * @property DBSubnetGroup|null $DBSubnetGroup
  * @property string|null $PreferredMaintenanceWindow
+ * @property 'first'|'second'|'last'|null $UpgradeRolloutOrder
  * @property PendingModifiedValues|null $PendingModifiedValues
  * @property \Aws\Api\DateTimeResult|null $LatestRestorableTime
  * @property bool|null $MultiAZ
@@ -114,6 +115,7 @@ class DBInstance extends Shape
      *     AvailabilityZone?: string|null,
      *     DBSubnetGroup?: DBSubnetGroup|null,
      *     PreferredMaintenanceWindow?: string|null,
+     *     UpgradeRolloutOrder?: 'first'|'second'|'last'|null,
      *     PendingModifiedValues?: PendingModifiedValues|null,
      *     LatestRestorableTime?: \Aws\Api\DateTimeResult|null,
      *     MultiAZ?: bool|null,

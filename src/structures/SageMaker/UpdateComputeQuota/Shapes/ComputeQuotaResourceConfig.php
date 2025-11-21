@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 10000000>|null $Accelerators
  * @property float|null $VCpu
  * @property float|null $MemoryInGiB
+ * @property AcceleratorPartitionConfig|null $AcceleratorPartition
  */
 class ComputeQuotaResourceConfig extends Shape
 {
@@ -19,7 +20,8 @@ class ComputeQuotaResourceConfig extends Shape
      *     Count?: int<0, 10000000>|null,
      *     Accelerators?: int<0, 10000000>|null,
      *     VCpu?: float|null,
-     *     MemoryInGiB?: float|null
+     *     MemoryInGiB?: float|null,
+     *     AcceleratorPartition?: AcceleratorPartitionConfig|null
      * } $args
      */
     public function __construct(array $args)

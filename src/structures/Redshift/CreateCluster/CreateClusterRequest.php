@@ -44,6 +44,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $IpAddressType
  * @property bool|null $MultiAZ
  * @property string|null $RedshiftIdcApplicationArn
+ * @property string|null $CatalogName
  */
 class CreateClusterRequest extends Request
 {
@@ -87,7 +88,8 @@ class CreateClusterRequest extends Request
      *     MasterPasswordSecretKmsKeyId?: string|null,
      *     IpAddressType?: string|null,
      *     MultiAZ?: bool|null,
-     *     RedshiftIdcApplicationArn?: string|null
+     *     RedshiftIdcApplicationArn?: string|null,
+     *     CatalogName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -18,9 +18,11 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use DeleteRepository\DeleteRepositoryTrait;
     use DeleteRepositoryCreationTemplate\DeleteRepositoryCreationTemplateTrait;
     use DeleteRepositoryPolicy\DeleteRepositoryPolicyTrait;
+    use DeleteSigningConfiguration\DeleteSigningConfigurationTrait;
     use DeregisterPullTimeUpdateExclusion\DeregisterPullTimeUpdateExclusionTrait;
     use DescribeImageReplicationStatus\DescribeImageReplicationStatusTrait;
     use DescribeImageScanFindings\DescribeImageScanFindingsTrait;
+    use DescribeImageSigningStatus\DescribeImageSigningStatusTrait;
     use DescribeImages\DescribeImagesTrait;
     use DescribePullThroughCacheRules\DescribePullThroughCacheRulesTrait;
     use DescribeRegistry\DescribeRegistryTrait;
@@ -34,6 +36,7 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use GetRegistryPolicy\GetRegistryPolicyTrait;
     use GetRegistryScanningConfiguration\GetRegistryScanningConfigurationTrait;
     use GetRepositoryPolicy\GetRepositoryPolicyTrait;
+    use GetSigningConfiguration\GetSigningConfigurationTrait;
     use InitiateLayerUpload\InitiateLayerUploadTrait;
     use ListImageReferrers\ListImageReferrersTrait;
     use ListImages\ListImagesTrait;
@@ -47,6 +50,7 @@ class EcrClient extends \Aws\Ecr\EcrClient
     use PutRegistryPolicy\PutRegistryPolicyTrait;
     use PutRegistryScanningConfiguration\PutRegistryScanningConfigurationTrait;
     use PutReplicationConfiguration\PutReplicationConfigurationTrait;
+    use PutSigningConfiguration\PutSigningConfigurationTrait;
     use RegisterPullTimeUpdateExclusion\RegisterPullTimeUpdateExclusionTrait;
     use SetRepositoryPolicy\SetRepositoryPolicyTrait;
     use StartImageScan\StartImageScanTrait;

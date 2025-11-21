@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'instance'|'ip'|'lambda'|'alb'|null $TargetType
  * @property list<Shapes\Tag>|null $Tags
  * @property 'ipv4'|'ipv6'|null $IpAddressType
+ * @property int<1, 65535>|null $TargetControlPort
  */
 class CreateTargetGroupRequest extends Request
 {
@@ -43,7 +44,8 @@ class CreateTargetGroupRequest extends Request
      *     Matcher?: Shapes\Matcher|null,
      *     TargetType?: 'instance'|'ip'|'lambda'|'alb'|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     IpAddressType?: 'ipv4'|'ipv6'|null
+     *     IpAddressType?: 'ipv4'|'ipv6'|null,
+     *     TargetControlPort?: int<1, 65535>|null
      * } $args
      */
     public function __construct(array $args)

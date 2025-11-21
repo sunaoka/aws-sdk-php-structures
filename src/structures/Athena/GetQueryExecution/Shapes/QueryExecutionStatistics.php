@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $QueryPlanningTimeInMillis
  * @property int|null $ServiceProcessingTimeInMillis
  * @property ResultReuseInformation|null $ResultReuseInformation
+ * @property double|null $DpuCount
  */
 class QueryExecutionStatistics extends Shape
 {
@@ -27,7 +28,8 @@ class QueryExecutionStatistics extends Shape
      *     ServicePreProcessingTimeInMillis?: int|null,
      *     QueryPlanningTimeInMillis?: int|null,
      *     ServiceProcessingTimeInMillis?: int|null,
-     *     ResultReuseInformation?: ResultReuseInformation|null
+     *     ResultReuseInformation?: ResultReuseInformation|null,
+     *     DpuCount?: double|null
      * } $args
      */
     public function __construct(array $args = [])

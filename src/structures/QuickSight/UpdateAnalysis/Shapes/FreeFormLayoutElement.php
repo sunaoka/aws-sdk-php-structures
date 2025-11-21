@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FreeFormLayoutElementBorderStyle|null $SelectedBorderStyle
  * @property FreeFormLayoutElementBackgroundStyle|null $BackgroundStyle
  * @property LoadingAnimation|null $LoadingAnimation
+ * @property string|null $BorderRadius
+ * @property string|null $Padding
  */
 class FreeFormLayoutElement extends Shape
 {
@@ -33,7 +35,9 @@ class FreeFormLayoutElement extends Shape
      *     BorderStyle?: FreeFormLayoutElementBorderStyle|null,
      *     SelectedBorderStyle?: FreeFormLayoutElementBorderStyle|null,
      *     BackgroundStyle?: FreeFormLayoutElementBackgroundStyle|null,
-     *     LoadingAnimation?: LoadingAnimation|null
+     *     LoadingAnimation?: LoadingAnimation|null,
+     *     BorderRadius?: string|null,
+     *     Padding?: string|null
      * } $args
      */
     public function __construct(array $args)

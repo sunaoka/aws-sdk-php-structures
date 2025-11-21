@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $serviceName
+ * @property string|null $clusterVpcEndpoint
  */
 class GetVpcEndpointServiceNameResponse extends Response
 {

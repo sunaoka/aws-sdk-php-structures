@@ -17,9 +17,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $roleArn
  * @property 'MCP' $protocolType
  * @property Shapes\GatewayProtocolConfiguration|null $protocolConfiguration
- * @property 'CUSTOM_JWT'|'AWS_IAM' $authorizerType
+ * @property 'CUSTOM_JWT'|'AWS_IAM'|'NONE' $authorizerType
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property string|null $kmsKeyArn
+ * @property list<Shapes\GatewayInterceptorConfiguration>|null $interceptorConfigurations
  * @property Shapes\WorkloadIdentityDetails|null $workloadIdentityDetails
  * @property 'DEBUG'|null $exceptionLevel
  */

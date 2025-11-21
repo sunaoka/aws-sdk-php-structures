@@ -12,6 +12,7 @@ class ApplicationSignalsClient extends \Aws\ApplicationSignals\ApplicationSignal
     use GetService\GetServiceTrait;
     use GetServiceLevelObjective\GetServiceLevelObjectiveTrait;
     use ListAuditFindings\ListAuditFindingsTrait;
+    use ListEntityEvents\ListEntityEventsTrait;
     use ListGroupingAttributeDefinitions\ListGroupingAttributeDefinitionsTrait;
     use ListServiceDependencies\ListServiceDependenciesTrait;
     use ListServiceDependents\ListServiceDependentsTrait;

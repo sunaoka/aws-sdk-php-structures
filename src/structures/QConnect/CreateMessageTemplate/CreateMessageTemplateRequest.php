@@ -6,11 +6,12 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $knowledgeBaseId
- * @property string $name
- * @property Shapes\MessageTemplateContentProvider $content
+ * @property string|null $name
+ * @property Shapes\MessageTemplateContentProvider|null $content
  * @property string|null $description
- * @property 'EMAIL'|'SMS' $channelSubtype
+ * @property 'EMAIL'|'SMS'|'WHATSAPP'|'PUSH' $channelSubtype
  * @property string|null $language
+ * @property Shapes\MessageTemplateSourceConfiguration|null $sourceConfiguration
  * @property Shapes\MessageTemplateAttributes|null $defaultAttributes
  * @property Shapes\GroupingConfiguration|null $groupingConfiguration
  * @property string|null $clientToken
@@ -21,11 +22,12 @@ class CreateMessageTemplateRequest extends Request
     /**
      * @param array{
      *     knowledgeBaseId: string,
-     *     name: string,
-     *     content: Shapes\MessageTemplateContentProvider,
+     *     name?: string|null,
+     *     content?: Shapes\MessageTemplateContentProvider|null,
      *     description?: string|null,
-     *     channelSubtype: 'EMAIL'|'SMS',
+     *     channelSubtype: 'EMAIL'|'SMS'|'WHATSAPP'|'PUSH',
      *     language?: string|null,
+     *     sourceConfiguration?: Shapes\MessageTemplateSourceConfiguration|null,
      *     defaultAttributes?: Shapes\MessageTemplateAttributes|null,
      *     groupingConfiguration?: Shapes\GroupingConfiguration|null,
      *     clientToken?: string|null,

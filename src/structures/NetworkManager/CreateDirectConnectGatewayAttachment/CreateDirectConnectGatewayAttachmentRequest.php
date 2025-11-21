@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CoreNetworkId
  * @property string $DirectConnectGatewayArn
+ * @property string|null $RoutingPolicyLabel
  * @property list<string> $EdgeLocations
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ClientToken
@@ -17,6 +18,7 @@ class CreateDirectConnectGatewayAttachmentRequest extends Request
      * @param array{
      *     CoreNetworkId: string,
      *     DirectConnectGatewayArn: string,
+     *     RoutingPolicyLabel?: string|null,
      *     EdgeLocations: list<string>,
      *     Tags?: list<Shapes\Tag>|null,
      *     ClientToken?: string|null
