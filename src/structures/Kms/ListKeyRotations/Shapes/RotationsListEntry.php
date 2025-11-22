@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KeyMaterialId
  * @property string|null $KeyMaterialDescription
  * @property 'IMPORTED'|'PENDING_IMPORT'|null $ImportState
- * @property 'NON_CURRENT'|'CURRENT'|'PENDING_ROTATION'|null $KeyMaterialState
+ * @property 'NON_CURRENT'|'CURRENT'|'PENDING_ROTATION'|'PENDING_MULTI_REGION_IMPORT_AND_ROTATION'|null $KeyMaterialState
  * @property 'KEY_MATERIAL_EXPIRES'|'KEY_MATERIAL_DOES_NOT_EXPIRE'|null $ExpirationModel
  * @property \Aws\Api\DateTimeResult|null $ValidTo
  * @property \Aws\Api\DateTimeResult|null $RotationDate
@@ -23,7 +23,7 @@ class RotationsListEntry extends Shape
      *     KeyMaterialId?: string|null,
      *     KeyMaterialDescription?: string|null,
      *     ImportState?: 'IMPORTED'|'PENDING_IMPORT'|null,
-     *     KeyMaterialState?: 'NON_CURRENT'|'CURRENT'|'PENDING_ROTATION'|null,
+     *     KeyMaterialState?: 'NON_CURRENT'|'CURRENT'|'PENDING_ROTATION'|'PENDING_MULTI_REGION_IMPORT_AND_ROTATION'|null,
      *     ExpirationModel?: 'KEY_MATERIAL_EXPIRES'|'KEY_MATERIAL_DOES_NOT_EXPIRE'|null,
      *     ValidTo?: \Aws\Api\DateTimeResult|null,
      *     RotationDate?: \Aws\Api\DateTimeResult|null,

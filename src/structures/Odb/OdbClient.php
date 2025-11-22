@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Odb;
 class OdbClient extends \Aws\Odb\OdbClient
 {
     use AcceptMarketplaceRegistration\AcceptMarketplaceRegistrationTrait;
+    use AssociateIamRoleToResource\AssociateIamRoleToResourceTrait;
     use CreateCloudAutonomousVmCluster\CreateCloudAutonomousVmClusterTrait;
     use CreateCloudExadataInfrastructure\CreateCloudExadataInfrastructureTrait;
     use CreateCloudVmCluster\CreateCloudVmClusterTrait;
@@ -15,6 +16,7 @@ class OdbClient extends \Aws\Odb\OdbClient
     use DeleteCloudVmCluster\DeleteCloudVmClusterTrait;
     use DeleteOdbNetwork\DeleteOdbNetworkTrait;
     use DeleteOdbPeeringConnection\DeleteOdbPeeringConnectionTrait;
+    use DisassociateIamRoleFromResource\DisassociateIamRoleFromResourceTrait;
     use GetCloudAutonomousVmCluster\GetCloudAutonomousVmClusterTrait;
     use GetCloudExadataInfrastructure\GetCloudExadataInfrastructureTrait;
     use GetCloudExadataInfrastructureUnallocatedResources\GetCloudExadataInfrastructureUnallocatedResourcesTrait;

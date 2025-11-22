@@ -69,6 +69,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use GetFindingHistory\GetFindingHistoryTrait;
     use GetFindingStatisticsV2\GetFindingStatisticsV2Trait;
     use GetFindings\GetFindingsTrait;
+    use GetFindingsTrendsV2\GetFindingsTrendsV2Trait;
     use GetFindingsV2\GetFindingsV2Trait;
     use GetInsightResults\GetInsightResultsTrait;
     use GetInsights\GetInsightsTrait;
@@ -76,6 +77,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use GetMasterAccount\GetMasterAccountTrait;
     use GetMembers\GetMembersTrait;
     use GetResourcesStatisticsV2\GetResourcesStatisticsV2Trait;
+    use GetResourcesTrendsV2\GetResourcesTrendsV2Trait;
     use GetResourcesV2\GetResourcesV2Trait;
     use GetSecurityControlDefinition\GetSecurityControlDefinitionTrait;
     use InviteMembers\InviteMembersTrait;

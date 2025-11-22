@@ -31,6 +31,7 @@ class S3Client extends \Aws\S3\S3Client
     use DeleteObjectTagging\DeleteObjectTaggingTrait;
     use DeleteObjects\DeleteObjectsTrait;
     use DeletePublicAccessBlock\DeletePublicAccessBlockTrait;
+    use GetBucketAbac\GetBucketAbacTrait;
     use GetBucketAccelerateConfiguration\GetBucketAccelerateConfigurationTrait;
     use GetBucketAcl\GetBucketAclTrait;
     use GetBucketAnalyticsConfiguration\GetBucketAnalyticsConfigurationTrait;
@@ -77,6 +78,7 @@ class S3Client extends \Aws\S3\S3Client
     use ListObjects\ListObjectsTrait;
     use ListObjectsV2\ListObjectsV2Trait;
     use ListParts\ListPartsTrait;
+    use PutBucketAbac\PutBucketAbacTrait;
     use PutBucketAccelerateConfiguration\PutBucketAccelerateConfigurationTrait;
     use PutBucketAcl\PutBucketAclTrait;
     use PutBucketAnalyticsConfiguration\PutBucketAnalyticsConfigurationTrait;

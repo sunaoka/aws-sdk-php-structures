@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $tags
  * @property string $clientToken
  * @property 'BUILD'|'TEST'|'DISTRIBUTION' $type
+ * @property bool|null $dryRun
  */
 class CreateWorkflowRequest extends Request
 {
@@ -29,7 +30,8 @@ class CreateWorkflowRequest extends Request
      *     kmsKeyId?: string|null,
      *     tags?: array<string, string>|null,
      *     clientToken: string,
-     *     type: 'BUILD'|'TEST'|'DISTRIBUTION'
+     *     type: 'BUILD'|'TEST'|'DISTRIBUTION',
+     *     dryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

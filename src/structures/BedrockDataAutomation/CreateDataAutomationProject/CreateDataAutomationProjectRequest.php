@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $projectName
  * @property string|null $projectDescription
  * @property 'DEVELOPMENT'|'LIVE'|null $projectStage
+ * @property 'ASYNC'|'SYNC'|null $projectType
  * @property Shapes\StandardOutputConfiguration $standardOutputConfiguration
  * @property Shapes\CustomOutputConfiguration|null $customOutputConfiguration
  * @property Shapes\OverrideConfiguration|null $overrideConfiguration
@@ -22,6 +23,7 @@ class CreateDataAutomationProjectRequest extends Request
      *     projectName: string,
      *     projectDescription?: string|null,
      *     projectStage?: 'DEVELOPMENT'|'LIVE'|null,
+     *     projectType?: 'ASYNC'|'SYNC'|null,
      *     standardOutputConfiguration: Shapes\StandardOutputConfiguration,
      *     customOutputConfiguration?: Shapes\CustomOutputConfiguration|null,
      *     overrideConfiguration?: Shapes\OverrideConfiguration|null,

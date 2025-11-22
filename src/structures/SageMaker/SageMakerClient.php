@@ -11,6 +11,8 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use BatchAddClusterNodes\BatchAddClusterNodesTrait;
     use BatchDeleteClusterNodes\BatchDeleteClusterNodesTrait;
     use BatchDescribeModelPackage\BatchDescribeModelPackageTrait;
+    use BatchRebootClusterNodes\BatchRebootClusterNodesTrait;
+    use BatchReplaceClusterNodes\BatchReplaceClusterNodesTrait;
     use CreateAction\CreateActionTrait;
     use CreateAlgorithm\CreateAlgorithmTrait;
     use CreateApp\CreateAppTrait;

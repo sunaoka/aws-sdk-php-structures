@@ -60,6 +60,7 @@ class RedshiftServerlessClient extends \Aws\RedshiftServerless\RedshiftServerles
     use UntagResource\UntagResourceTrait;
     use UpdateCustomDomainAssociation\UpdateCustomDomainAssociationTrait;
     use UpdateEndpointAccess\UpdateEndpointAccessTrait;
+    use UpdateLakehouseConfiguration\UpdateLakehouseConfigurationTrait;
     use UpdateNamespace\UpdateNamespaceTrait;
     use UpdateScheduledAction\UpdateScheduledActionTrait;
     use UpdateSnapshot\UpdateSnapshotTrait;

@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $intentName
+ * @property string|null $intentDisplayName
  * @property string|null $description
  * @property string|null $parentIntentSignature
  * @property list<Shapes\SampleUtterance>|null $sampleUtterances
@@ -28,6 +29,7 @@ class CreateIntentRequest extends Request
     /**
      * @param array{
      *     intentName: string,
+     *     intentDisplayName?: string|null,
      *     description?: string|null,
      *     parentIntentSignature?: string|null,
      *     sampleUtterances?: list<Shapes\SampleUtterance>|null,

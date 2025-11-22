@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EngineVersion|null $EngineVersion
  * @property string|null $AdditionalConfiguration
  * @property string|null $ExecutionRole
+ * @property MonitoringConfiguration|null $MonitoringConfiguration
+ * @property EngineConfiguration|null $EngineConfiguration
  * @property CustomerContentEncryptionConfiguration|null $CustomerContentEncryptionConfiguration
  * @property bool|null $EnableMinimumEncryptionConfiguration
  * @property IdentityCenterConfiguration|null $IdentityCenterConfiguration
@@ -32,6 +34,8 @@ class WorkGroupConfiguration extends Shape
      *     EngineVersion?: EngineVersion|null,
      *     AdditionalConfiguration?: string|null,
      *     ExecutionRole?: string|null,
+     *     MonitoringConfiguration?: MonitoringConfiguration|null,
+     *     EngineConfiguration?: EngineConfiguration|null,
      *     CustomerContentEncryptionConfiguration?: CustomerContentEncryptionConfiguration|null,
      *     EnableMinimumEncryptionConfiguration?: bool|null,
      *     IdentityCenterConfiguration?: IdentityCenterConfiguration|null,

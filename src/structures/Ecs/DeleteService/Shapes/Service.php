@@ -25,6 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $roleArn
  * @property list<ServiceEvent>|null $events
  * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $currentServiceDeployment
+ * @property list<ServiceCurrentRevisionSummary>|null $currentServiceRevisions
  * @property list<PlacementConstraint>|null $placementConstraints
  * @property list<PlacementStrategy>|null $placementStrategy
  * @property NetworkConfiguration|null $networkConfiguration
@@ -37,6 +39,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TASK_DEFINITION'|'SERVICE'|'NONE'|null $propagateTags
  * @property bool|null $enableExecuteCommand
  * @property 'ENABLED'|'DISABLED'|null $availabilityZoneRebalancing
+ * @property 'CUSTOMER'|'ECS'|null $resourceManagementType
  */
 class Service extends Shape
 {
@@ -62,6 +65,8 @@ class Service extends Shape
      *     roleArn?: string|null,
      *     events?: list<ServiceEvent>|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     currentServiceDeployment?: string|null,
+     *     currentServiceRevisions?: list<ServiceCurrentRevisionSummary>|null,
      *     placementConstraints?: list<PlacementConstraint>|null,
      *     placementStrategy?: list<PlacementStrategy>|null,
      *     networkConfiguration?: NetworkConfiguration|null,
@@ -73,7 +78,8 @@ class Service extends Shape
      *     enableECSManagedTags?: bool|null,
      *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE'|null,
      *     enableExecuteCommand?: bool|null,
-     *     availabilityZoneRebalancing?: 'ENABLED'|'DISABLED'|null
+     *     availabilityZoneRebalancing?: 'ENABLED'|'DISABLED'|null,
+     *     resourceManagementType?: 'CUSTOMER'|'ECS'|null
      * } $args
      */
     public function __construct(array $args = [])

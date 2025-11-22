@@ -10,13 +10,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $knowledgeBaseArn
  * @property string $knowledgeBaseId
  * @property string $name
- * @property 'EMAIL'|'SMS' $channelSubtype
+ * @property string|null $channel
+ * @property 'EMAIL'|'SMS'|'WHATSAPP'|'PUSH' $channelSubtype
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
  * @property string $lastModifiedBy
- * @property MessageTemplateContentProvider $content
+ * @property MessageTemplateContentProvider|null $content
  * @property string|null $description
  * @property string|null $language
+ * @property MessageTemplateSourceConfigurationSummary|null $sourceConfigurationSummary
  * @property GroupingConfiguration|null $groupingConfiguration
  * @property MessageTemplateAttributes|null $defaultAttributes
  * @property list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'>|null $attributeTypes
@@ -32,13 +34,15 @@ class MessageTemplateData extends Shape
      *     knowledgeBaseArn: string,
      *     knowledgeBaseId: string,
      *     name: string,
-     *     channelSubtype: 'EMAIL'|'SMS',
+     *     channel?: string|null,
+     *     channelSubtype: 'EMAIL'|'SMS'|'WHATSAPP'|'PUSH',
      *     createdTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult,
      *     lastModifiedBy: string,
-     *     content: MessageTemplateContentProvider,
+     *     content?: MessageTemplateContentProvider|null,
      *     description?: string|null,
      *     language?: string|null,
+     *     sourceConfigurationSummary?: MessageTemplateSourceConfigurationSummary|null,
      *     groupingConfiguration?: GroupingConfiguration|null,
      *     defaultAttributes?: MessageTemplateAttributes|null,
      *     attributeTypes?: list<'SYSTEM'|'AGENT'|'CUSTOMER_PROFILE'|'CUSTOM'>|null,

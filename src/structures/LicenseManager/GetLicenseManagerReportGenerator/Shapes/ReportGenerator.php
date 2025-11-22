@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ReportGeneratorName
- * @property list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'>|null $ReportType
+ * @property list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'|'LicenseAssetGroupUsageReport'>|null $ReportType
  * @property ReportContext|null $ReportContext
  * @property ReportFrequency|null $ReportFrequency
  * @property string|null $LicenseManagerReportGeneratorArn
@@ -24,7 +24,7 @@ class ReportGenerator extends Shape
     /**
      * @param array{
      *     ReportGeneratorName?: string|null,
-     *     ReportType?: list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'>|null,
+     *     ReportType?: list<'LicenseConfigurationSummaryReport'|'LicenseConfigurationUsageReport'|'LicenseAssetGroupUsageReport'>|null,
      *     ReportContext?: ReportContext|null,
      *     ReportFrequency?: ReportFrequency|null,
      *     LicenseManagerReportGeneratorArn?: string|null,

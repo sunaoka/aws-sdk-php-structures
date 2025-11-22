@@ -17,6 +17,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $VpnEcmpSupport
  * @property bool|null $DnsSupport
  * @property bool|null $SecurityGroupReferencingSupport
+ * @property 'inbound'|'outbound'|null $RoutingPolicyDirection
+ * @property string|null $RoutingPolicy
+ * @property list<string>|null $PeerEdgeLocations
+ * @property string|null $AttachmentId
+ * @property list<RoutingPolicyAssociationDetail>|null $RoutingPolicyAssociationDetails
  */
 class CoreNetworkChangeValues extends Shape
 {
@@ -33,7 +38,12 @@ class CoreNetworkChangeValues extends Shape
      *     ServiceInsertionActions?: list<ServiceInsertionAction>|null,
      *     VpnEcmpSupport?: bool|null,
      *     DnsSupport?: bool|null,
-     *     SecurityGroupReferencingSupport?: bool|null
+     *     SecurityGroupReferencingSupport?: bool|null,
+     *     RoutingPolicyDirection?: 'inbound'|'outbound'|null,
+     *     RoutingPolicy?: string|null,
+     *     PeerEdgeLocations?: list<string>|null,
+     *     AttachmentId?: string|null,
+     *     RoutingPolicyAssociationDetails?: list<RoutingPolicyAssociationDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

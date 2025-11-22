@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $impactedServices
  * @property list<Shapes\CaseAttachmentAttributes>|null $caseAttachments
  * @property \Aws\Api\DateTimeResult|null $closedDate
+ * @property list<Shapes\CaseMetadataEntry>|null $caseMetadata
  */
 class GetCaseResponse extends Response
 {

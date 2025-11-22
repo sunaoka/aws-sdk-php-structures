@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Cause
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
- * @property 'PendingSpotBidPlacement'|'WaitingForSpotInstanceRequestId'|'WaitingForSpotInstanceId'|'WaitingForInstanceId'|'PreInService'|'InProgress'|'WaitingForELBConnectionDraining'|'MidLifecycleAction'|'WaitingForInstanceWarmup'|'Successful'|'Failed'|'Cancelled'|'WaitingForConnectionDraining' $StatusCode
+ * @property 'PendingSpotBidPlacement'|'WaitingForSpotInstanceRequestId'|'WaitingForSpotInstanceId'|'WaitingForInstanceId'|'PreInService'|'InProgress'|'WaitingForELBConnectionDraining'|'MidLifecycleAction'|'WaitingForInstanceWarmup'|'Successful'|'Failed'|'Cancelled'|'WaitingForConnectionDraining'|'WaitingForInPlaceUpdateToStart'|'WaitingForInPlaceUpdateToFinalize'|'InPlaceUpdateInProgress' $StatusCode
  * @property string|null $StatusMessage
  * @property int|null $Progress
  * @property string|null $Details
@@ -28,7 +28,7 @@ class Activity extends Shape
      *     Cause: string,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
-     *     StatusCode: 'PendingSpotBidPlacement'|'WaitingForSpotInstanceRequestId'|'WaitingForSpotInstanceId'|'WaitingForInstanceId'|'PreInService'|'InProgress'|'WaitingForELBConnectionDraining'|'MidLifecycleAction'|'WaitingForInstanceWarmup'|'Successful'|'Failed'|'Cancelled'|'WaitingForConnectionDraining',
+     *     StatusCode: 'PendingSpotBidPlacement'|'WaitingForSpotInstanceRequestId'|'WaitingForSpotInstanceId'|'WaitingForInstanceId'|'PreInService'|'InProgress'|'WaitingForELBConnectionDraining'|'MidLifecycleAction'|'WaitingForInstanceWarmup'|'Successful'|'Failed'|'Cancelled'|'WaitingForConnectionDraining'|'WaitingForInPlaceUpdateToStart'|'WaitingForInPlaceUpdateToFinalize'|'InPlaceUpdateInProgress',
      *     StatusMessage?: string|null,
      *     Progress?: int|null,
      *     Details?: string|null,

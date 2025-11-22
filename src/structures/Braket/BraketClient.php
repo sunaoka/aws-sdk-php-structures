@@ -8,6 +8,8 @@ class BraketClient extends \Aws\Braket\BraketClient
     use CancelQuantumTask\CancelQuantumTaskTrait;
     use CreateJob\CreateJobTrait;
     use CreateQuantumTask\CreateQuantumTaskTrait;
+    use CreateSpendingLimit\CreateSpendingLimitTrait;
+    use DeleteSpendingLimit\DeleteSpendingLimitTrait;
     use GetDevice\GetDeviceTrait;
     use GetJob\GetJobTrait;
     use GetQuantumTask\GetQuantumTaskTrait;
@@ -15,6 +17,8 @@ class BraketClient extends \Aws\Braket\BraketClient
     use SearchDevices\SearchDevicesTrait;
     use SearchJobs\SearchJobsTrait;
     use SearchQuantumTasks\SearchQuantumTasksTrait;
+    use SearchSpendingLimits\SearchSpendingLimitsTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
+    use UpdateSpendingLimit\UpdateSpendingLimitTrait;
 }

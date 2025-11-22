@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $TrainingPlanOfferingId
- * @property list<'training-job'|'hyperpod-cluster'> $TargetResources
+ * @property list<'training-job'|'hyperpod-cluster'|'endpoint'> $TargetResources
  * @property \Aws\Api\DateTimeResult|null $RequestedStartTimeAfter
  * @property \Aws\Api\DateTimeResult|null $RequestedEndTimeBefore
  * @property int<0, 87600>|null $DurationHours
@@ -20,7 +20,7 @@ class TrainingPlanOffering extends Shape
     /**
      * @param array{
      *     TrainingPlanOfferingId: string,
-     *     TargetResources: list<'training-job'|'hyperpod-cluster'>,
+     *     TargetResources: list<'training-job'|'hyperpod-cluster'|'endpoint'>,
      *     RequestedStartTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     RequestedEndTimeBefore?: \Aws\Api\DateTimeResult|null,
      *     DurationHours?: int<0, 87600>|null,

@@ -12,6 +12,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $AvailableInstanceCount
  * @property 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|'unavailable'|null $State
  * @property list<Shapes\InstanceUsage>|null $InstanceUsages
+ * @property bool|null $Interruptible
+ * @property Shapes\InterruptibleCapacityAllocation|null $InterruptibleCapacityAllocation
+ * @property Shapes\InterruptionInfo|null $InterruptionInfo
  */
 class GetCapacityReservationUsageResponse extends Response
 {

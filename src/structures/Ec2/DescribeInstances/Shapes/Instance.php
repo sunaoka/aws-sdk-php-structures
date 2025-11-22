@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $EnaSupport
  * @property 'ovm'|'xen'|null $Hypervisor
  * @property IamInstanceProfile|null $IamInstanceProfile
- * @property 'spot'|'scheduled'|'capacity-block'|null $InstanceLifecycle
+ * @property 'spot'|'scheduled'|'capacity-block'|'interruptible-capacity-reservation'|null $InstanceLifecycle
  * @property list<ElasticGpuAssociation>|null $ElasticGpuAssociations
  * @property list<ElasticInferenceAcceleratorAssociation>|null $ElasticInferenceAcceleratorAssociations
  * @property list<InstanceNetworkInterface>|null $NetworkInterfaces
@@ -77,7 +77,7 @@ class Instance extends Shape
      *     EnaSupport?: bool|null,
      *     Hypervisor?: 'ovm'|'xen'|null,
      *     IamInstanceProfile?: IamInstanceProfile|null,
-     *     InstanceLifecycle?: 'spot'|'scheduled'|'capacity-block'|null,
+     *     InstanceLifecycle?: 'spot'|'scheduled'|'capacity-block'|'interruptible-capacity-reservation'|null,
      *     ElasticGpuAssociations?: list<ElasticGpuAssociation>|null,
      *     ElasticInferenceAcceleratorAssociations?: list<ElasticInferenceAcceleratorAssociation>|null,
      *     NetworkInterfaces?: list<InstanceNetworkInterface>|null,

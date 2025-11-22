@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $messageTemplateId
  * @property Shapes\MessageTemplateContentProvider|null $content
  * @property string|null $language
+ * @property Shapes\MessageTemplateSourceConfiguration|null $sourceConfiguration
  * @property Shapes\MessageTemplateAttributes|null $defaultAttributes
  */
 class UpdateMessageTemplateRequest extends Request
@@ -19,6 +20,7 @@ class UpdateMessageTemplateRequest extends Request
      *     messageTemplateId: string,
      *     content?: Shapes\MessageTemplateContentProvider|null,
      *     language?: string|null,
+     *     sourceConfiguration?: Shapes\MessageTemplateSourceConfiguration|null,
      *     defaultAttributes?: Shapes\MessageTemplateAttributes|null
      * } $args
      */

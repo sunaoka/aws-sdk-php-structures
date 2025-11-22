@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $intentId
  * @property string|null $intentName
+ * @property string|null $intentDisplayName
  * @property string|null $description
  * @property string|null $parentIntentSignature
  * @property list<Shapes\SampleUtterance>|null $sampleUtterances

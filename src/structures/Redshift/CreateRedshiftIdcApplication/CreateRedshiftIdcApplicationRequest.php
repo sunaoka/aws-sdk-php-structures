@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IamRoleArn
  * @property list<Shapes\AuthorizedTokenIssuer>|null $AuthorizedTokenIssuerList
  * @property list<Shapes\ServiceIntegrationsUnion>|null $ServiceIntegrations
+ * @property 'None'|'Lakehouse'|null $ApplicationType
  * @property list<Shapes\Tag>|null $Tags
  * @property list<string>|null $SsoTagKeys
  */
@@ -26,6 +27,7 @@ class CreateRedshiftIdcApplicationRequest extends Request
      *     IamRoleArn: string,
      *     AuthorizedTokenIssuerList?: list<Shapes\AuthorizedTokenIssuer>|null,
      *     ServiceIntegrations?: list<Shapes\ServiceIntegrationsUnion>|null,
+     *     ApplicationType?: 'None'|'Lakehouse'|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     SsoTagKeys?: list<string>|null
      * } $args

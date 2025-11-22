@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ApplicationArn
  * @property Shapes\ExternalFilteringConfiguration|null $ExternalFiltering
  * @property list<Shapes\DataLakePrincipal>|null $ShareRecipients
+ * @property list<Shapes\ServiceIntegrationUnion>|null $ServiceIntegrations
  * @property string|null $ResourceShare
  */
 class DescribeLakeFormationIdentityCenterConfigurationResponse extends Response

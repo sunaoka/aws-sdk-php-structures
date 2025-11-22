@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ReplicationUpdateTime
  * @property \Aws\Api\DateTimeResult|null $ReplicationLastStopTime
  * @property \Aws\Api\DateTimeResult|null $ReplicationDeprovisionTime
+ * @property bool|null $IsReadOnly
  */
 class Replication extends Shape
 {
@@ -49,7 +50,8 @@ class Replication extends Shape
      *     ReplicationCreateTime?: \Aws\Api\DateTimeResult|null,
      *     ReplicationUpdateTime?: \Aws\Api\DateTimeResult|null,
      *     ReplicationLastStopTime?: \Aws\Api\DateTimeResult|null,
-     *     ReplicationDeprovisionTime?: \Aws\Api\DateTimeResult|null
+     *     ReplicationDeprovisionTime?: \Aws\Api\DateTimeResult|null,
+     *     IsReadOnly?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

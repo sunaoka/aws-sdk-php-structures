@@ -33,6 +33,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CapacityReservationCommitmentInfo|null $CommitmentInfo
  * @property 'fixed'|'incremental'|null $DeliveryPreference
  * @property string|null $CapacityBlockId
+ * @property bool|null $Interruptible
+ * @property InterruptibleCapacityAllocation|null $InterruptibleCapacityAllocation
+ * @property InterruptionInfo|null $InterruptionInfo
  */
 class CapacityReservation extends Shape
 {
@@ -65,7 +68,10 @@ class CapacityReservation extends Shape
      *     UnusedReservationBillingOwnerId?: string|null,
      *     CommitmentInfo?: CapacityReservationCommitmentInfo|null,
      *     DeliveryPreference?: 'fixed'|'incremental'|null,
-     *     CapacityBlockId?: string|null
+     *     CapacityBlockId?: string|null,
+     *     Interruptible?: bool|null,
+     *     InterruptibleCapacityAllocation?: InterruptibleCapacityAllocation|null,
+     *     InterruptionInfo?: InterruptionInfo|null
      * } $args
      */
     public function __construct(array $args = [])

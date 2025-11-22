@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $KmsKeyId
  * @property int<0, max>|null $DataRetentionInHours
  * @property array<string, string>|null $Tags
+ * @property Shapes\StreamStorageConfiguration|null $StreamStorageConfiguration
  */
 class CreateStreamRequest extends Request
 {
@@ -21,7 +22,8 @@ class CreateStreamRequest extends Request
      *     MediaType?: string|null,
      *     KmsKeyId?: string|null,
      *     DataRetentionInHours?: int<0, max>|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     StreamStorageConfiguration?: Shapes\StreamStorageConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int $IpCount
  * @property Shapes\Tags|null $Tags
  * @property 'ipv4'|'ipv6'|'dualstack'|null $IpAddressType
+ * @property list<Shapes\IpamCidrConfig>|null $IpamCidrConfigs
  */
 class CreateAnycastIpListRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreateAnycastIpListRequest extends Request
      *     Name: string,
      *     IpCount: int,
      *     Tags?: Shapes\Tags|null,
-     *     IpAddressType?: 'ipv4'|'ipv6'|'dualstack'|null
+     *     IpAddressType?: 'ipv4'|'ipv6'|'dualstack'|null,
+     *     IpamCidrConfigs?: list<Shapes\IpamCidrConfig>|null
      * } $args
      */
     public function __construct(array $args)

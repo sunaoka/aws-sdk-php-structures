@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property list<string>|null $Auditors
  * @property list<Shapes\AuditTarget> $AuditTargets
+ * @property 'BRIEF'|'DETAILED'|null $DetailLevel
  * @property string|null $NextToken
  * @property int<1, 10>|null $MaxResults
  */
@@ -20,6 +21,7 @@ class ListAuditFindingsRequest extends Request
      *     EndTime: \Aws\Api\DateTimeResult,
      *     Auditors?: list<string>|null,
      *     AuditTargets: list<Shapes\AuditTarget>,
+     *     DetailLevel?: 'BRIEF'|'DETAILED'|null,
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 10>|null
      * } $args

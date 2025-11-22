@@ -23,6 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CurrentImageId
  * @property string|null $DesiredImageId
  * @property UltraServerInfo|null $UltraServerInfo
+ * @property ClusterKubernetesConfigNodeDetails|null $KubernetesConfig
+ * @property 'Spot'|'OnDemand'|null $CapacityType
  */
 class ClusterNodeDetails extends Shape
 {
@@ -45,7 +47,9 @@ class ClusterNodeDetails extends Shape
      *     Placement?: ClusterInstancePlacement|null,
      *     CurrentImageId?: string|null,
      *     DesiredImageId?: string|null,
-     *     UltraServerInfo?: UltraServerInfo|null
+     *     UltraServerInfo?: UltraServerInfo|null,
+     *     KubernetesConfig?: ClusterKubernetesConfigNodeDetails|null,
+     *     CapacityType?: 'Spot'|'OnDemand'|null
      * } $args
      */
     public function __construct(array $args = [])

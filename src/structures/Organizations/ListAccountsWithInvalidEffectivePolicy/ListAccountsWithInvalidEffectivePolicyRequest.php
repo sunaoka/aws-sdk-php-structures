@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Organizations\ListAccountsWithInvalidEffectiveP
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'TAG_POLICY'|'BACKUP_POLICY'|'AISERVICES_OPT_OUT_POLICY'|'CHATBOT_POLICY'|'DECLARATIVE_POLICY_EC2'|'SECURITYHUB_POLICY' $PolicyType
+ * @property 'TAG_POLICY'|'BACKUP_POLICY'|'AISERVICES_OPT_OUT_POLICY'|'CHATBOT_POLICY'|'DECLARATIVE_POLICY_EC2'|'SECURITYHUB_POLICY'|'INSPECTOR_POLICY'|'UPGRADE_ROLLOUT_POLICY' $PolicyType
  * @property string|null $NextToken
  * @property int<1, 20>|null $MaxResults
  */
@@ -13,7 +13,7 @@ class ListAccountsWithInvalidEffectivePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     PolicyType: 'TAG_POLICY'|'BACKUP_POLICY'|'AISERVICES_OPT_OUT_POLICY'|'CHATBOT_POLICY'|'DECLARATIVE_POLICY_EC2'|'SECURITYHUB_POLICY',
+     *     PolicyType: 'TAG_POLICY'|'BACKUP_POLICY'|'AISERVICES_OPT_OUT_POLICY'|'CHATBOT_POLICY'|'DECLARATIVE_POLICY_EC2'|'SECURITYHUB_POLICY'|'INSPECTOR_POLICY'|'UPGRADE_ROLLOUT_POLICY',
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 20>|null
      * } $args

@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $AvailableInstanceCount
  * @property int<0, max>|null $InUseInstanceCount
  * @property int<1, max>|null $TotalUltraServerCount
- * @property list<'training-job'|'hyperpod-cluster'>|null $TargetResources
+ * @property list<'training-job'|'hyperpod-cluster'|'endpoint'>|null $TargetResources
  * @property list<ReservedCapacitySummary>|null $ReservedCapacitySummaries
  */
 class TrainingPlanSummary extends Shape
@@ -40,7 +40,7 @@ class TrainingPlanSummary extends Shape
      *     AvailableInstanceCount?: int<0, max>|null,
      *     InUseInstanceCount?: int<0, max>|null,
      *     TotalUltraServerCount?: int<1, max>|null,
-     *     TargetResources?: list<'training-job'|'hyperpod-cluster'>|null,
+     *     TargetResources?: list<'training-job'|'hyperpod-cluster'|'endpoint'>|null,
      *     ReservedCapacitySummaries?: list<ReservedCapacitySummary>|null
      * } $args
      */

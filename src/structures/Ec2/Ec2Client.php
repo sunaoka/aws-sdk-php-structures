@@ -89,6 +89,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateInstanceEventWindow\CreateInstanceEventWindowTrait;
     use CreateInstanceExportTask\CreateInstanceExportTaskTrait;
     use CreateInternetGateway\CreateInternetGatewayTrait;
+    use CreateInterruptibleCapacityReservationAllocation\CreateInterruptibleCapacityReservationAllocationTrait;
     use CreateIpam\CreateIpamTrait;
     use CreateIpamExternalResourceVerificationToken\CreateIpamExternalResourceVerificationTokenTrait;
     use CreateIpamPolicy\CreateIpamPolicyTrait;
@@ -140,6 +141,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateTransitGateway\CreateTransitGatewayTrait;
     use CreateTransitGatewayConnect\CreateTransitGatewayConnectTrait;
     use CreateTransitGatewayConnectPeer\CreateTransitGatewayConnectPeerTrait;
+    use CreateTransitGatewayMeteringPolicy\CreateTransitGatewayMeteringPolicyTrait;
+    use CreateTransitGatewayMeteringPolicyEntry\CreateTransitGatewayMeteringPolicyEntryTrait;
     use CreateTransitGatewayMulticastDomain\CreateTransitGatewayMulticastDomainTrait;
     use CreateTransitGatewayPeeringAttachment\CreateTransitGatewayPeeringAttachmentTrait;
     use CreateTransitGatewayPolicyTable\CreateTransitGatewayPolicyTableTrait;
@@ -155,6 +158,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateVolume\CreateVolumeTrait;
     use CreateVpc\CreateVpcTrait;
     use CreateVpcBlockPublicAccessExclusion\CreateVpcBlockPublicAccessExclusionTrait;
+    use CreateVpcEncryptionControl\CreateVpcEncryptionControlTrait;
     use CreateVpcEndpoint\CreateVpcEndpointTrait;
     use CreateVpcEndpointConnectionNotification\CreateVpcEndpointConnectionNotificationTrait;
     use CreateVpcEndpointServiceConfiguration\CreateVpcEndpointServiceConfigurationTrait;
@@ -227,6 +231,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteTransitGateway\DeleteTransitGatewayTrait;
     use DeleteTransitGatewayConnect\DeleteTransitGatewayConnectTrait;
     use DeleteTransitGatewayConnectPeer\DeleteTransitGatewayConnectPeerTrait;
+    use DeleteTransitGatewayMeteringPolicy\DeleteTransitGatewayMeteringPolicyTrait;
+    use DeleteTransitGatewayMeteringPolicyEntry\DeleteTransitGatewayMeteringPolicyEntryTrait;
     use DeleteTransitGatewayMulticastDomain\DeleteTransitGatewayMulticastDomainTrait;
     use DeleteTransitGatewayPeeringAttachment\DeleteTransitGatewayPeeringAttachmentTrait;
     use DeleteTransitGatewayPolicyTable\DeleteTransitGatewayPolicyTableTrait;
@@ -242,6 +248,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteVolume\DeleteVolumeTrait;
     use DeleteVpc\DeleteVpcTrait;
     use DeleteVpcBlockPublicAccessExclusion\DeleteVpcBlockPublicAccessExclusionTrait;
+    use DeleteVpcEncryptionControl\DeleteVpcEncryptionControlTrait;
     use DeleteVpcEndpointConnectionNotifications\DeleteVpcEndpointConnectionNotificationsTrait;
     use DeleteVpcEndpointServiceConfigurations\DeleteVpcEndpointServiceConfigurationsTrait;
     use DeleteVpcEndpoints\DeleteVpcEndpointsTrait;
@@ -404,6 +411,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeTransitGatewayAttachments\DescribeTransitGatewayAttachmentsTrait;
     use DescribeTransitGatewayConnectPeers\DescribeTransitGatewayConnectPeersTrait;
     use DescribeTransitGatewayConnects\DescribeTransitGatewayConnectsTrait;
+    use DescribeTransitGatewayMeteringPolicies\DescribeTransitGatewayMeteringPoliciesTrait;
     use DescribeTransitGatewayMulticastDomains\DescribeTransitGatewayMulticastDomainsTrait;
     use DescribeTransitGatewayPeeringAttachments\DescribeTransitGatewayPeeringAttachmentsTrait;
     use DescribeTransitGatewayPolicyTables\DescribeTransitGatewayPolicyTablesTrait;
@@ -426,6 +434,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeVpcBlockPublicAccessOptions\DescribeVpcBlockPublicAccessOptionsTrait;
     use DescribeVpcClassicLink\DescribeVpcClassicLinkTrait;
     use DescribeVpcClassicLinkDnsSupport\DescribeVpcClassicLinkDnsSupportTrait;
+    use DescribeVpcEncryptionControls\DescribeVpcEncryptionControlsTrait;
     use DescribeVpcEndpointAssociations\DescribeVpcEndpointAssociationsTrait;
     use DescribeVpcEndpointConnectionNotifications\DescribeVpcEndpointConnectionNotificationsTrait;
     use DescribeVpcEndpointConnections\DescribeVpcEndpointConnectionsTrait;
@@ -565,6 +574,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetSpotPlacementScores\GetSpotPlacementScoresTrait;
     use GetSubnetCidrReservations\GetSubnetCidrReservationsTrait;
     use GetTransitGatewayAttachmentPropagations\GetTransitGatewayAttachmentPropagationsTrait;
+    use GetTransitGatewayMeteringPolicyEntries\GetTransitGatewayMeteringPolicyEntriesTrait;
     use GetTransitGatewayMulticastDomainAssociations\GetTransitGatewayMulticastDomainAssociationsTrait;
     use GetTransitGatewayPolicyTableAssociations\GetTransitGatewayPolicyTableAssociationsTrait;
     use GetTransitGatewayPolicyTableEntries\GetTransitGatewayPolicyTableEntriesTrait;
@@ -574,6 +584,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use GetVerifiedAccessEndpointPolicy\GetVerifiedAccessEndpointPolicyTrait;
     use GetVerifiedAccessEndpointTargets\GetVerifiedAccessEndpointTargetsTrait;
     use GetVerifiedAccessGroupPolicy\GetVerifiedAccessGroupPolicyTrait;
+    use GetVpcResourcesBlockingEncryptionEnforcement\GetVpcResourcesBlockingEncryptionEnforcementTrait;
     use GetVpnConnectionDeviceSampleConfiguration\GetVpnConnectionDeviceSampleConfigurationTrait;
     use GetVpnConnectionDeviceTypes\GetVpnConnectionDeviceTypesTrait;
     use GetVpnTunnelReplacementStatus\GetVpnTunnelReplacementStatusTrait;
@@ -585,6 +596,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ImportVolume\ImportVolumeTrait;
     use ListImagesInRecycleBin\ListImagesInRecycleBinTrait;
     use ListSnapshotsInRecycleBin\ListSnapshotsInRecycleBinTrait;
+    use ListVolumesInRecycleBin\ListVolumesInRecycleBinTrait;
     use LockSnapshot\LockSnapshotTrait;
     use ModifyAddressAttribute\ModifyAddressAttributeTrait;
     use ModifyAvailabilityZoneGroup\ModifyAvailabilityZoneGroupTrait;
@@ -636,6 +648,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyTrafficMirrorFilterRule\ModifyTrafficMirrorFilterRuleTrait;
     use ModifyTrafficMirrorSession\ModifyTrafficMirrorSessionTrait;
     use ModifyTransitGateway\ModifyTransitGatewayTrait;
+    use ModifyTransitGatewayMeteringPolicy\ModifyTransitGatewayMeteringPolicyTrait;
     use ModifyTransitGatewayPrefixListReference\ModifyTransitGatewayPrefixListReferenceTrait;
     use ModifyTransitGatewayVpcAttachment\ModifyTransitGatewayVpcAttachmentTrait;
     use ModifyVerifiedAccessEndpoint\ModifyVerifiedAccessEndpointTrait;
@@ -650,6 +663,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use ModifyVpcAttribute\ModifyVpcAttributeTrait;
     use ModifyVpcBlockPublicAccessExclusion\ModifyVpcBlockPublicAccessExclusionTrait;
     use ModifyVpcBlockPublicAccessOptions\ModifyVpcBlockPublicAccessOptionsTrait;
+    use ModifyVpcEncryptionControl\ModifyVpcEncryptionControlTrait;
     use ModifyVpcEndpoint\ModifyVpcEndpointTrait;
     use ModifyVpcEndpointConnectionNotification\ModifyVpcEndpointConnectionNotificationTrait;
     use ModifyVpcEndpointServiceConfiguration\ModifyVpcEndpointServiceConfigurationTrait;
@@ -711,6 +725,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use RestoreManagedPrefixListVersion\RestoreManagedPrefixListVersionTrait;
     use RestoreSnapshotFromRecycleBin\RestoreSnapshotFromRecycleBinTrait;
     use RestoreSnapshotTier\RestoreSnapshotTierTrait;
+    use RestoreVolumeFromRecycleBin\RestoreVolumeFromRecycleBinTrait;
     use RevokeClientVpnIngress\RevokeClientVpnIngressTrait;
     use RevokeSecurityGroupEgress\RevokeSecurityGroupEgressTrait;
     use RevokeSecurityGroupIngress\RevokeSecurityGroupIngressTrait;
@@ -734,6 +749,7 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use UnlockSnapshot\UnlockSnapshotTrait;
     use UnmonitorInstances\UnmonitorInstancesTrait;
     use UpdateCapacityManagerOrganizationsAccess\UpdateCapacityManagerOrganizationsAccessTrait;
+    use UpdateInterruptibleCapacityReservationAllocation\UpdateInterruptibleCapacityReservationAllocationTrait;
     use UpdateSecurityGroupRuleDescriptionsEgress\UpdateSecurityGroupRuleDescriptionsEgressTrait;
     use UpdateSecurityGroupRuleDescriptionsIngress\UpdateSecurityGroupRuleDescriptionsIngressTrait;
     use WithdrawByoipCidr\WithdrawByoipCidrTrait;

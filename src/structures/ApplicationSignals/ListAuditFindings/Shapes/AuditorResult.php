@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Auditor
  * @property string|null $Description
+ * @property array<string, string>|null $Data
  * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'NONE'|null $Severity
  */
 class AuditorResult extends Shape
@@ -15,6 +16,7 @@ class AuditorResult extends Shape
      * @param array{
      *     Auditor?: string|null,
      *     Description?: string|null,
+     *     Data?: array<string, string>|null,
      *     Severity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'NONE'|null
      * } $args
      */

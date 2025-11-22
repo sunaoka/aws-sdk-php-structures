@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\BotLocaleHistoryEvent>|null $botLocaleHistoryEvents
  * @property list<string>|null $recommendedActions
  * @property Shapes\GenerativeAISettings|null $generativeAISettings
+ * @property 'Default'|'HighNoiseTolerance'|'MaximumNoiseTolerance'|null $speechDetectionSensitivity
  */
 class DescribeBotLocaleResponse extends Response
 {

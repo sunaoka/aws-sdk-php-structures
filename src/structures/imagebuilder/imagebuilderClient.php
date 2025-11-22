@@ -24,6 +24,7 @@ class imagebuilderClient extends \Aws\imagebuilder\imagebuilderClient
     use DeleteInfrastructureConfiguration\DeleteInfrastructureConfigurationTrait;
     use DeleteLifecyclePolicy\DeleteLifecyclePolicyTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
+    use DistributeImage\DistributeImageTrait;
     use GetComponent\GetComponentTrait;
     use GetComponentPolicy\GetComponentPolicyTrait;
     use GetContainerRecipe\GetContainerRecipeTrait;
@@ -70,6 +71,7 @@ class imagebuilderClient extends \Aws\imagebuilder\imagebuilderClient
     use PutContainerRecipePolicy\PutContainerRecipePolicyTrait;
     use PutImagePolicy\PutImagePolicyTrait;
     use PutImageRecipePolicy\PutImageRecipePolicyTrait;
+    use RetryImage\RetryImageTrait;
     use SendWorkflowStepAction\SendWorkflowStepActionTrait;
     use StartImagePipelineExecution\StartImagePipelineExecutionTrait;
     use StartResourceStateUpdate\StartResourceStateUpdateTrait;

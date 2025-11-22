@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $EngineVersion
  * @property Shapes\EngineConfiguration|null $EngineConfiguration
  * @property string|null $NotebookVersion
+ * @property Shapes\MonitoringConfiguration|null $MonitoringConfiguration
  * @property Shapes\SessionConfiguration|null $SessionConfiguration
  * @property Shapes\SessionStatus|null $Status
  * @property Shapes\SessionStatistics|null $Statistics

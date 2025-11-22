@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, max>|null $UnhealthyInstanceCount
  * @property int<0, max>|null $AvailableSpareInstanceCount
  * @property int<1, max>|null $TotalUltraServerCount
- * @property list<'training-job'|'hyperpod-cluster'>|null $TargetResources
+ * @property list<'training-job'|'hyperpod-cluster'|'endpoint'>|null $TargetResources
  * @property list<Shapes\ReservedCapacitySummary>|null $ReservedCapacitySummaries
  */
 class DescribeTrainingPlanResponse extends Response

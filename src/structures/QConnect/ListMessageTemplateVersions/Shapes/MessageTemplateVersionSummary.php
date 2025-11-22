@@ -10,7 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $knowledgeBaseArn
  * @property string $knowledgeBaseId
  * @property string $name
- * @property 'EMAIL'|'SMS' $channelSubtype
+ * @property string|null $channel
+ * @property 'EMAIL'|'SMS'|'WHATSAPP'|'PUSH' $channelSubtype
  * @property bool $isActive
  * @property int<1, max> $versionNumber
  */
@@ -23,7 +24,8 @@ class MessageTemplateVersionSummary extends Shape
      *     knowledgeBaseArn: string,
      *     knowledgeBaseId: string,
      *     name: string,
-     *     channelSubtype: 'EMAIL'|'SMS',
+     *     channel?: string|null,
+     *     channelSubtype: 'EMAIL'|'SMS'|'WHATSAPP'|'PUSH',
      *     isActive: bool,
      *     versionNumber: int<1, max>
      * } $args

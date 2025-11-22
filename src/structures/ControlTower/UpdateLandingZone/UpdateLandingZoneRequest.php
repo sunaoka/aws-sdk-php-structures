@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $version
- * @property Shapes\Manifest $manifest
  * @property list<'INHERITANCE_DRIFT'>|null $remediationTypes
  * @property string $landingZoneIdentifier
+ * @property Shapes\Manifest|null $manifest
  */
 class UpdateLandingZoneRequest extends Request
 {
     /**
      * @param array{
      *     version: string,
-     *     manifest: Shapes\Manifest,
      *     remediationTypes?: list<'INHERITANCE_DRIFT'>|null,
-     *     landingZoneIdentifier: string
+     *     landingZoneIdentifier: string,
+     *     manifest?: Shapes\Manifest|null
      * } $args
      */
     public function __construct(array $args)

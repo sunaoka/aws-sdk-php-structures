@@ -45,6 +45,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $odbNetworkId
  * @property float|null $percentProgress
  * @property 'ECPU'|'OCPU'|null $computeModel
+ * @property list<IamRole>|null $iamRoles
  */
 class CloudVmCluster extends Shape
 {
@@ -89,7 +90,8 @@ class CloudVmCluster extends Shape
      *     vipIds?: list<string>|null,
      *     odbNetworkId?: string|null,
      *     percentProgress?: float|null,
-     *     computeModel?: 'ECPU'|'OCPU'|null
+     *     computeModel?: 'ECPU'|'OCPU'|null,
+     *     iamRoles?: list<IamRole>|null
      * } $args
      */
     public function __construct(array $args)

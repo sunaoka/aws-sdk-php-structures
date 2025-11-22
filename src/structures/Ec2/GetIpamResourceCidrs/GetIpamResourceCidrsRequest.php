@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IpamScopeId
  * @property string|null $IpamPoolId
  * @property string|null $ResourceId
- * @property 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|null $ResourceType
+ * @property 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|'anycast-ip-list'|null $ResourceType
  * @property Shapes\RequestIpamResourceTag|null $ResourceTag
  * @property string|null $ResourceOwner
  */
@@ -27,7 +27,7 @@ class GetIpamResourceCidrsRequest extends Request
      *     IpamScopeId: string,
      *     IpamPoolId?: string|null,
      *     ResourceId?: string|null,
-     *     ResourceType?: 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|null,
+     *     ResourceType?: 'vpc'|'subnet'|'eip'|'public-ipv4-pool'|'ipv6-pool'|'eni'|'anycast-ip-list'|null,
      *     ResourceTag?: Shapes\RequestIpamResourceTag|null,
      *     ResourceOwner?: string|null
      * } $args
