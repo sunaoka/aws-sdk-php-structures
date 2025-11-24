@@ -82,6 +82,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use PutIndexPolicy\PutIndexPolicyTrait;
     use PutIntegration\PutIntegrationTrait;
     use PutLogEvents\PutLogEventsTrait;
+    use PutLogGroupDeletionProtection\PutLogGroupDeletionProtectionTrait;
     use PutMetricFilter\PutMetricFilterTrait;
     use PutQueryDefinition\PutQueryDefinitionTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;

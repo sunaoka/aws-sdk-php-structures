@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $Staging
  * @property 'direct'|'tenant-only'|null $ConnectionMode
  * @property string|null $AnycastIpListId
+ * @property ViewerMtlsConfig|null $ViewerMtlsConfig
+ * @property ConnectionFunctionAssociation|null $ConnectionFunctionAssociation
  */
 class DistributionSummary extends Shape
 {
@@ -57,7 +59,9 @@ class DistributionSummary extends Shape
      *     AliasICPRecordals?: list<AliasICPRecordal>|null,
      *     Staging: bool,
      *     ConnectionMode?: 'direct'|'tenant-only'|null,
-     *     AnycastIpListId?: string|null
+     *     AnycastIpListId?: string|null,
+     *     ViewerMtlsConfig?: ViewerMtlsConfig|null,
+     *     ConnectionFunctionAssociation?: ConnectionFunctionAssociation|null
      * } $args
      */
     public function __construct(array $args)
