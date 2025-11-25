@@ -11,6 +11,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use CreateAnycastIpList\CreateAnycastIpListTrait;
     use CreateCachePolicy\CreateCachePolicyTrait;
     use CreateCloudFrontOriginAccessIdentity\CreateCloudFrontOriginAccessIdentityTrait;
+    use CreateConnectionFunction\CreateConnectionFunctionTrait;
     use CreateConnectionGroup\CreateConnectionGroupTrait;
     use CreateContinuousDeploymentPolicy\CreateContinuousDeploymentPolicyTrait;
     use CreateDistribution\CreateDistributionTrait;
@@ -31,10 +32,12 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use CreateResponseHeadersPolicy\CreateResponseHeadersPolicyTrait;
     use CreateStreamingDistribution\CreateStreamingDistributionTrait;
     use CreateStreamingDistributionWithTags\CreateStreamingDistributionWithTagsTrait;
+    use CreateTrustStore\CreateTrustStoreTrait;
     use CreateVpcOrigin\CreateVpcOriginTrait;
     use DeleteAnycastIpList\DeleteAnycastIpListTrait;
     use DeleteCachePolicy\DeleteCachePolicyTrait;
     use DeleteCloudFrontOriginAccessIdentity\DeleteCloudFrontOriginAccessIdentityTrait;
+    use DeleteConnectionFunction\DeleteConnectionFunctionTrait;
     use DeleteConnectionGroup\DeleteConnectionGroupTrait;
     use DeleteContinuousDeploymentPolicy\DeleteContinuousDeploymentPolicyTrait;
     use DeleteDistribution\DeleteDistributionTrait;
@@ -52,7 +55,9 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeleteResponseHeadersPolicy\DeleteResponseHeadersPolicyTrait;
     use DeleteStreamingDistribution\DeleteStreamingDistributionTrait;
+    use DeleteTrustStore\DeleteTrustStoreTrait;
     use DeleteVpcOrigin\DeleteVpcOriginTrait;
+    use DescribeConnectionFunction\DescribeConnectionFunctionTrait;
     use DescribeFunction\DescribeFunctionTrait;
     use DescribeKeyValueStore\DescribeKeyValueStoreTrait;
     use DisassociateDistributionTenantWebACL\DisassociateDistributionTenantWebACLTrait;
@@ -62,6 +67,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use GetCachePolicyConfig\GetCachePolicyConfigTrait;
     use GetCloudFrontOriginAccessIdentity\GetCloudFrontOriginAccessIdentityTrait;
     use GetCloudFrontOriginAccessIdentityConfig\GetCloudFrontOriginAccessIdentityConfigTrait;
+    use GetConnectionFunction\GetConnectionFunctionTrait;
     use GetConnectionGroup\GetConnectionGroupTrait;
     use GetConnectionGroupByRoutingEndpoint\GetConnectionGroupByRoutingEndpointTrait;
     use GetContinuousDeploymentPolicy\GetContinuousDeploymentPolicyTrait;
@@ -93,11 +99,13 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use GetResponseHeadersPolicyConfig\GetResponseHeadersPolicyConfigTrait;
     use GetStreamingDistribution\GetStreamingDistributionTrait;
     use GetStreamingDistributionConfig\GetStreamingDistributionConfigTrait;
+    use GetTrustStore\GetTrustStoreTrait;
     use GetVpcOrigin\GetVpcOriginTrait;
     use ListAnycastIpLists\ListAnycastIpListsTrait;
     use ListCachePolicies\ListCachePoliciesTrait;
     use ListCloudFrontOriginAccessIdentities\ListCloudFrontOriginAccessIdentitiesTrait;
     use ListConflictingAliases\ListConflictingAliasesTrait;
+    use ListConnectionFunctions\ListConnectionFunctionsTrait;
     use ListConnectionGroups\ListConnectionGroupsTrait;
     use ListContinuousDeploymentPolicies\ListContinuousDeploymentPoliciesTrait;
     use ListDistributionTenants\ListDistributionTenantsTrait;
@@ -105,12 +113,14 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use ListDistributions\ListDistributionsTrait;
     use ListDistributionsByAnycastIpListId\ListDistributionsByAnycastIpListIdTrait;
     use ListDistributionsByCachePolicyId\ListDistributionsByCachePolicyIdTrait;
+    use ListDistributionsByConnectionFunction\ListDistributionsByConnectionFunctionTrait;
     use ListDistributionsByConnectionMode\ListDistributionsByConnectionModeTrait;
     use ListDistributionsByKeyGroup\ListDistributionsByKeyGroupTrait;
     use ListDistributionsByOriginRequestPolicyId\ListDistributionsByOriginRequestPolicyIdTrait;
     use ListDistributionsByOwnedResource\ListDistributionsByOwnedResourceTrait;
     use ListDistributionsByRealtimeLogConfig\ListDistributionsByRealtimeLogConfigTrait;
     use ListDistributionsByResponseHeadersPolicyId\ListDistributionsByResponseHeadersPolicyIdTrait;
+    use ListDistributionsByTrustStore\ListDistributionsByTrustStoreTrait;
     use ListDistributionsByVpcOriginId\ListDistributionsByVpcOriginIdTrait;
     use ListDistributionsByWebACLId\ListDistributionsByWebACLIdTrait;
     use ListDomainConflicts\ListDomainConflictsTrait;
@@ -128,15 +138,19 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use ListResponseHeadersPolicies\ListResponseHeadersPoliciesTrait;
     use ListStreamingDistributions\ListStreamingDistributionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use ListTrustStores\ListTrustStoresTrait;
     use ListVpcOrigins\ListVpcOriginsTrait;
+    use PublishConnectionFunction\PublishConnectionFunctionTrait;
     use PublishFunction\PublishFunctionTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use TagResource\TagResourceTrait;
+    use TestConnectionFunction\TestConnectionFunctionTrait;
     use TestFunction\TestFunctionTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAnycastIpList\UpdateAnycastIpListTrait;
     use UpdateCachePolicy\UpdateCachePolicyTrait;
     use UpdateCloudFrontOriginAccessIdentity\UpdateCloudFrontOriginAccessIdentityTrait;
+    use UpdateConnectionFunction\UpdateConnectionFunctionTrait;
     use UpdateConnectionGroup\UpdateConnectionGroupTrait;
     use UpdateContinuousDeploymentPolicy\UpdateContinuousDeploymentPolicyTrait;
     use UpdateDistribution\UpdateDistributionTrait;
@@ -154,6 +168,7 @@ class CloudFrontClient extends \Aws\CloudFront\CloudFrontClient
     use UpdateRealtimeLogConfig\UpdateRealtimeLogConfigTrait;
     use UpdateResponseHeadersPolicy\UpdateResponseHeadersPolicyTrait;
     use UpdateStreamingDistribution\UpdateStreamingDistributionTrait;
+    use UpdateTrustStore\UpdateTrustStoreTrait;
     use UpdateVpcOrigin\UpdateVpcOriginTrait;
     use VerifyDnsConfiguration\VerifyDnsConfigurationTrait;
 }
