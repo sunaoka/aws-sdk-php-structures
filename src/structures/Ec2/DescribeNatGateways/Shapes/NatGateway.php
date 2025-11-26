@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'zonal'|'regional'|null $AvailabilityMode
  * @property 'enabled'|'disabled'|null $AutoScalingIps
  * @property 'enabled'|'disabled'|null $AutoProvisionZones
+ * @property list<NatGatewayAttachedAppliance>|null $AttachedAppliances
  * @property string|null $RouteTableId
  */
 class NatGateway extends Shape
@@ -41,6 +42,7 @@ class NatGateway extends Shape
      *     AvailabilityMode?: 'zonal'|'regional'|null,
      *     AutoScalingIps?: 'enabled'|'disabled'|null,
      *     AutoProvisionZones?: 'enabled'|'disabled'|null,
+     *     AttachedAppliances?: list<NatGatewayAttachedAppliance>|null,
      *     RouteTableId?: string|null
      * } $args
      */
