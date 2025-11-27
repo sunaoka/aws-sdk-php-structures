@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AuroraDbClusterStorage|null $auroraDbClusterStorage
  * @property DynamoDbReservedCapacity|null $dynamoDbReservedCapacity
  * @property MemoryDbReservedInstances|null $memoryDbReservedInstances
+ * @property NatGateway|null $natGateway
  */
 class ResourceDetails extends Shape
 {
@@ -45,7 +46,8 @@ class ResourceDetails extends Shape
      *     rdsDbInstanceStorage?: RdsDbInstanceStorage|null,
      *     auroraDbClusterStorage?: AuroraDbClusterStorage|null,
      *     dynamoDbReservedCapacity?: DynamoDbReservedCapacity|null,
-     *     memoryDbReservedInstances?: MemoryDbReservedInstances|null
+     *     memoryDbReservedInstances?: MemoryDbReservedInstances|null,
+     *     natGateway?: NatGateway|null
      * } $args
      */
     public function __construct(array $args = [])

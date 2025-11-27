@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'>|null $implementationEfforts
  * @property list<string>|null $accountIds
  * @property list<string>|null $regions
- * @property list<'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|'AuroraDbClusterStorage'|'DynamoDbReservedCapacity'|'MemoryDbReservedInstances'>|null $resourceTypes
+ * @property list<'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|'AuroraDbClusterStorage'|'DynamoDbReservedCapacity'|'MemoryDbReservedInstances'|'NatGateway'>|null $resourceTypes
  * @property list<'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'|'ScaleIn'>|null $actionTypes
  * @property list<Tag>|null $tags
  * @property list<string>|null $resourceIds
@@ -26,7 +26,7 @@ class Filter extends Shape
      *     implementationEfforts?: list<'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'>|null,
      *     accountIds?: list<string>|null,
      *     regions?: list<string>|null,
-     *     resourceTypes?: list<'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|'AuroraDbClusterStorage'|'DynamoDbReservedCapacity'|'MemoryDbReservedInstances'>|null,
+     *     resourceTypes?: list<'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'|'AuroraDbClusterStorage'|'DynamoDbReservedCapacity'|'MemoryDbReservedInstances'|'NatGateway'>|null,
      *     actionTypes?: list<'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'|'ScaleIn'>|null,
      *     tags?: list<Tag>|null,
      *     resourceIds?: list<string>|null,
