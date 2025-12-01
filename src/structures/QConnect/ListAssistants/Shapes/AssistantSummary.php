@@ -15,7 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
  * @property AssistantIntegrationConfiguration|null $integrationConfiguration
  * @property AssistantCapabilityConfiguration|null $capabilityConfiguration
- * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', AIAgentConfigurationData>|null $aiAgentConfiguration
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION', AIAgentConfigurationData>|null $aiAgentConfiguration
+ * @property list<OrchestratorConfigurationEntry>|null $orchestratorConfigurationList
  */
 class AssistantSummary extends Shape
 {
@@ -31,7 +32,8 @@ class AssistantSummary extends Shape
      *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
      *     integrationConfiguration?: AssistantIntegrationConfiguration|null,
      *     capabilityConfiguration?: AssistantCapabilityConfiguration|null,
-     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', AIAgentConfigurationData>|null
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION', AIAgentConfigurationData>|null,
+     *     orchestratorConfigurationList?: list<OrchestratorConfigurationEntry>|null
      * } $args
      */
     public function __construct(array $args)

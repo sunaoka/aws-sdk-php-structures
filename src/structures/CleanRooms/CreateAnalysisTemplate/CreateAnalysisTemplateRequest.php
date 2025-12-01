@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AnalysisParameter>|null $analysisParameters
  * @property Shapes\AnalysisSchema|null $schema
  * @property Shapes\ErrorMessageConfiguration|null $errorMessageConfiguration
+ * @property Shapes\SyntheticDataParameters|null $syntheticDataParameters
  */
 class CreateAnalysisTemplateRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateAnalysisTemplateRequest extends Request
      *     tags?: array<string, string>|null,
      *     analysisParameters?: list<Shapes\AnalysisParameter>|null,
      *     schema?: Shapes\AnalysisSchema|null,
-     *     errorMessageConfiguration?: Shapes\ErrorMessageConfiguration|null
+     *     errorMessageConfiguration?: Shapes\ErrorMessageConfiguration|null,
+     *     syntheticDataParameters?: Shapes\SyntheticDataParameters|null
      * } $args
      */
     public function __construct(array $args)

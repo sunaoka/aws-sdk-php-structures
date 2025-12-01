@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IsUnstructured
  * @property string|null $RoleArn
  * @property list<string>|null $EventTriggerNames
+ * @property 'PROFILE'|'DOMAIN'|null $Scope
  */
 class ListIntegrationItem extends Shape
 {
@@ -31,7 +32,8 @@ class ListIntegrationItem extends Shape
      *     WorkflowId?: string|null,
      *     IsUnstructured?: bool|null,
      *     RoleArn?: string|null,
-     *     EventTriggerNames?: list<string>|null
+     *     EventTriggerNames?: list<string>|null,
+     *     Scope?: 'PROFILE'|'DOMAIN'|null
      * } $args
      */
     public function __construct(array $args)

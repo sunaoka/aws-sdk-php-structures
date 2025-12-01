@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $modelArn
  * @property array<string, AdditionalModelRequestFieldsValue>|null $additionalModelRequestFields
+ * @property string $modelArn
  */
 class VectorSearchBedrockRerankingModelConfiguration extends Shape
 {
     /**
      * @param array{
-     *     modelArn: string,
-     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>|null
+     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>|null,
+     *     modelArn: string
      * } $args
      */
     public function __construct(array $args)

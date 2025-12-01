@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $mediaType
  * @property string|resource|\Psr\Http\Message\StreamInterface $data
+ * @property string $mediaType
  */
 class ByteContentFile extends Shape
 {
     /**
      * @param array{
-     *     mediaType: string,
-     *     data: string|resource|\Psr\Http\Message\StreamInterface
+     *     data: string|resource|\Psr\Http\Message\StreamInterface,
+     *     mediaType: string
      * } $args
      */
     public function __construct(array $args)

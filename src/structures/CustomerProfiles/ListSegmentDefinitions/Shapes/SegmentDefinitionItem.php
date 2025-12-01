@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SegmentDefinitionArn
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property array<string, string>|null $Tags
+ * @property 'CLASSIC'|'ENHANCED'|null $SegmentType
  */
 class SegmentDefinitionItem extends Shape
 {
@@ -21,7 +22,8 @@ class SegmentDefinitionItem extends Shape
      *     Description?: string|null,
      *     SegmentDefinitionArn?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     SegmentType?: 'CLASSIC'|'ENHANCED'|null
      * } $args
      */
     public function __construct(array $args = [])

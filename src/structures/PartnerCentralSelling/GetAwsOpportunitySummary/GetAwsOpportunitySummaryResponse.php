@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetAwsOpportunitySummary;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Catalog
  * @property string|null $RelatedOpportunityId
  * @property 'AWS Referral'|'Partner Referral'|null $Origin
  * @property 'For Visibility Only'|'Co-Sell'|null $InvolvementType
@@ -17,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AwsOpportunityRelatedEntities|null $RelatedEntityIds
  * @property Shapes\AwsOpportunityCustomer|null $Customer
  * @property Shapes\AwsOpportunityProject|null $Project
+ * @property string $Catalog
  */
 class GetAwsOpportunitySummaryResponse extends Response
 {

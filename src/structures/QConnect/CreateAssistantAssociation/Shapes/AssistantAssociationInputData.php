@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $knowledgeBaseId
+ * @property ExternalBedrockKnowledgeBaseConfig|null $externalBedrockKnowledgeBaseConfig
  */
 class AssistantAssociationInputData extends Shape
 {
     /**
-     * @param array{knowledgeBaseId?: string|null} $args
+     * @param array{
+     *     knowledgeBaseId?: string|null,
+     *     externalBedrockKnowledgeBaseConfig?: ExternalBedrockKnowledgeBaseConfig|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

@@ -13,6 +13,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EmailResponseChunkDataDetails|null $emailResponseChunkData
  * @property EmailOverviewChunkDataDetails|null $emailOverviewChunkData
  * @property EmailGenerativeAnswerChunkDataDetails|null $emailGenerativeAnswerChunkData
+ * @property CaseSummarizationChunkDataDetails|null $caseSummarizationChunkData
+ * @property SuggestedMessageDataDetails|null $suggestedMessageData
+ * @property NotesDataDetails|null $notesData
+ * @property NotesChunkDataDetails|null $notesChunkData
  */
 class DataDetails extends Shape
 {
@@ -25,7 +29,11 @@ class DataDetails extends Shape
      *     generativeChunkData?: GenerativeChunkDataDetails|null,
      *     emailResponseChunkData?: EmailResponseChunkDataDetails|null,
      *     emailOverviewChunkData?: EmailOverviewChunkDataDetails|null,
-     *     emailGenerativeAnswerChunkData?: EmailGenerativeAnswerChunkDataDetails|null
+     *     emailGenerativeAnswerChunkData?: EmailGenerativeAnswerChunkDataDetails|null,
+     *     caseSummarizationChunkData?: CaseSummarizationChunkDataDetails|null,
+     *     suggestedMessageData?: SuggestedMessageDataDetails|null,
+     *     notesData?: NotesDataDetails|null,
+     *     notesChunkData?: NotesChunkDataDetails|null
      * } $args
      */
     public function __construct(array $args = [])

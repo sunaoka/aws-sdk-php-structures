@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $catalog
  * @property list<Shapes\Filter>|null $filters
+ * @property Shapes\Sort|null $sort
  * @property int<1, 50>|null $maxResults
  * @property string|null $nextToken
- * @property Shapes\Sort|null $sort
  */
 class SearchAgreementsRequest extends Request
 {
@@ -17,9 +17,9 @@ class SearchAgreementsRequest extends Request
      * @param array{
      *     catalog?: string|null,
      *     filters?: list<Shapes\Filter>|null,
+     *     sort?: Shapes\Sort|null,
      *     maxResults?: int<1, 50>|null,
-     *     nextToken?: string|null,
-     *     sort?: Shapes\Sort|null
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,8 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property SessionIntegrationConfiguration|null $integrationConfiguration
  * @property TagFilter|null $tagFilter
- * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', AIAgentConfigurationData>|null $aiAgentConfiguration
+ * @property array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION', AIAgentConfigurationData>|null $aiAgentConfiguration
  * @property 'SYSTEM'|'CUSTOMER'|null $origin
+ * @property list<OrchestratorConfigurationEntry>|null $orchestratorConfigurationList
  */
 class SessionData extends Shape
 {
@@ -26,8 +27,9 @@ class SessionData extends Shape
      *     tags?: array<string, string>|null,
      *     integrationConfiguration?: SessionIntegrationConfiguration|null,
      *     tagFilter?: TagFilter|null,
-     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER', AIAgentConfigurationData>|null,
-     *     origin?: 'SYSTEM'|'CUSTOMER'|null
+     *     aiAgentConfiguration?: array<'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION', AIAgentConfigurationData>|null,
+     *     origin?: 'SYSTEM'|'CUSTOMER'|null,
+     *     orchestratorConfigurationList?: list<OrchestratorConfigurationEntry>|null
      * } $args
      */
     public function __construct(array $args)

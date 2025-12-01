@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
+ * @property 'LoopCondition'|'ReturnValueToLoopStart'|'ExitLoop'|null $category
  * @property NodeExecutionContent $content
+ * @property list<NodeInputExecutionChainItem>|null $executionChain
+ * @property string $name
  * @property NodeInputSource|null $source
  * @property 'String'|'Number'|'Boolean'|'Object'|'Array'|null $type
- * @property 'LoopCondition'|'ReturnValueToLoopStart'|'ExitLoop'|null $category
- * @property list<NodeInputExecutionChainItem>|null $executionChain
  */
 class NodeInputField extends Shape
 {
     /**
      * @param array{
-     *     name: string,
-     *     content: NodeExecutionContent,
-     *     source?: NodeInputSource|null,
-     *     type?: 'String'|'Number'|'Boolean'|'Object'|'Array'|null,
      *     category?: 'LoopCondition'|'ReturnValueToLoopStart'|'ExitLoop'|null,
-     *     executionChain?: list<NodeInputExecutionChainItem>|null
+     *     content: NodeExecutionContent,
+     *     executionChain?: list<NodeInputExecutionChainItem>|null,
+     *     name: string,
+     *     source?: NodeInputSource|null,
+     *     type?: 'String'|'Number'|'Boolean'|'Object'|'Array'|null
      * } $args
      */
     public function __construct(array $args)

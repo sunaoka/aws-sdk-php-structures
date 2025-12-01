@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OfferSummary|null $OfferSummary
  * @property ResaleAuthorizationSummary|null $ResaleAuthorizationSummary
  * @property MachineLearningProductSummary|null $MachineLearningProductSummary
+ * @property OfferSetSummary|null $OfferSetSummary
  */
 class EntitySummary extends Shape
 {
@@ -35,7 +36,8 @@ class EntitySummary extends Shape
      *     SaaSProductSummary?: SaaSProductSummary|null,
      *     OfferSummary?: OfferSummary|null,
      *     ResaleAuthorizationSummary?: ResaleAuthorizationSummary|null,
-     *     MachineLearningProductSummary?: MachineLearningProductSummary|null
+     *     MachineLearningProductSummary?: MachineLearningProductSummary|null,
+     *     OfferSetSummary?: OfferSetSummary|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $text
  * @property Metadata|null $metadata
+ * @property string|null $text
  */
 class ActionGroupInvocationOutput extends Shape
 {
     /**
      * @param array{
-     *     text?: string|null,
-     *     metadata?: Metadata|null
+     *     metadata?: Metadata|null,
+     *     text?: string|null
      * } $args
      */
     public function __construct(array $args = [])

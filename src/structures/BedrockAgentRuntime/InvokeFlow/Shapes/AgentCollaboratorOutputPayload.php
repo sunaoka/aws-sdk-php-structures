@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TEXT'|'RETURN_CONTROL'|null $type
- * @property string|null $text
  * @property ReturnControlPayload|null $returnControlPayload
+ * @property string|null $text
+ * @property 'TEXT'|'RETURN_CONTROL'|null $type
  */
 class AgentCollaboratorOutputPayload extends Shape
 {
     /**
      * @param array{
-     *     type?: 'TEXT'|'RETURN_CONTROL'|null,
+     *     returnControlPayload?: ReturnControlPayload|null,
      *     text?: string|null,
-     *     returnControlPayload?: ReturnControlPayload|null
+     *     type?: 'TEXT'|'RETURN_CONTROL'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $agentCollaboratorName
  * @property string|null $agentCollaboratorAliasArn
+ * @property string|null $agentCollaboratorName
  * @property AgentCollaboratorInputPayload|null $input
  */
 class AgentCollaboratorInvocationInput extends Shape
 {
     /**
      * @param array{
-     *     agentCollaboratorName?: string|null,
      *     agentCollaboratorAliasArn?: string|null,
+     *     agentCollaboratorName?: string|null,
      *     input?: AgentCollaboratorInputPayload|null
      * } $args
      */

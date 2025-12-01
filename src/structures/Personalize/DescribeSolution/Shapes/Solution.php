@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $performHPO
  * @property bool|null $performAutoML
  * @property bool|null $performAutoTraining
+ * @property bool|null $performIncrementalUpdate
  * @property string|null $recipeArn
  * @property string|null $datasetGroupArn
  * @property string|null $eventType
@@ -30,6 +31,7 @@ class Solution extends Shape
      *     performHPO?: bool|null,
      *     performAutoML?: bool|null,
      *     performAutoTraining?: bool|null,
+     *     performIncrementalUpdate?: bool|null,
      *     recipeArn?: string|null,
      *     datasetGroupArn?: string|null,
      *     eventType?: string|null,

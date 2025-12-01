@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $timestamp
  * @property 'VALIDATION'|'INTERNAL_SERVER'|'NODE_EXECUTION_FAILED' $errorCode
  * @property string $errorMessage
+ * @property \Aws\Api\DateTimeResult $timestamp
  */
 class FlowFailureEvent extends Shape
 {
     /**
      * @param array{
-     *     timestamp: \Aws\Api\DateTimeResult,
      *     errorCode: 'VALIDATION'|'INTERNAL_SERVER'|'NODE_EXECUTION_FAILED',
-     *     errorMessage: string
+     *     errorMessage: string,
+     *     timestamp: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

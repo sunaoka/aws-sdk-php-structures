@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DocumentItem>|null $documents
  * @property string|null $type
+ * @property list<DocumentItem>|null $documents
  */
 class LegalTerm extends Shape
 {
     /**
      * @param array{
-     *     documents?: list<DocumentItem>|null,
-     *     type?: string|null
+     *     type?: string|null,
+     *     documents?: list<DocumentItem>|null
      * } $args
      */
     public function __construct(array $args = [])

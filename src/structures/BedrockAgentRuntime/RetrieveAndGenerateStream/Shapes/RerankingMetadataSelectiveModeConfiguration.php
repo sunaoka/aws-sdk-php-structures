@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FieldForReranking>|null $fieldsToInclude
  * @property list<FieldForReranking>|null $fieldsToExclude
+ * @property list<FieldForReranking>|null $fieldsToInclude
  */
 class RerankingMetadataSelectiveModeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     fieldsToInclude?: list<FieldForReranking>|null,
-     *     fieldsToExclude?: list<FieldForReranking>|null
+     *     fieldsToExclude?: list<FieldForReranking>|null,
+     *     fieldsToInclude?: list<FieldForReranking>|null
      * } $args
      */
     public function __construct(array $args = [])

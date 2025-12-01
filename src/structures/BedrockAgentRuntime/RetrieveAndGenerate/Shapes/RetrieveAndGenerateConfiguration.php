@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'KNOWLEDGE_BASE'|'EXTERNAL_SOURCES' $type
- * @property KnowledgeBaseRetrieveAndGenerateConfiguration|null $knowledgeBaseConfiguration
  * @property ExternalSourcesRetrieveAndGenerateConfiguration|null $externalSourcesConfiguration
+ * @property KnowledgeBaseRetrieveAndGenerateConfiguration|null $knowledgeBaseConfiguration
+ * @property 'KNOWLEDGE_BASE'|'EXTERNAL_SOURCES' $type
  */
 class RetrieveAndGenerateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     type: 'KNOWLEDGE_BASE'|'EXTERNAL_SOURCES',
+     *     externalSourcesConfiguration?: ExternalSourcesRetrieveAndGenerateConfiguration|null,
      *     knowledgeBaseConfiguration?: KnowledgeBaseRetrieveAndGenerateConfiguration|null,
-     *     externalSourcesConfiguration?: ExternalSourcesRetrieveAndGenerateConfiguration|null
+     *     type: 'KNOWLEDGE_BASE'|'EXTERNAL_SOURCES'
      * } $args
      */
     public function __construct(array $args)

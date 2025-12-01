@@ -9,9 +9,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $sessionId
  * @property 'TEXT' $type
  * @property Shapes\MessageInput $message
+ * @property string|null $aiAgentId
  * @property Shapes\ConversationContext|null $conversationContext
  * @property Shapes\MessageConfiguration|null $configuration
  * @property string|null $clientToken
+ * @property string|null $orchestratorUseCase
+ * @property array<string, string>|null $metadata
  */
 class SendMessageRequest extends Request
 {
@@ -21,9 +24,12 @@ class SendMessageRequest extends Request
      *     sessionId: string,
      *     type: 'TEXT',
      *     message: Shapes\MessageInput,
+     *     aiAgentId?: string|null,
      *     conversationContext?: Shapes\ConversationContext|null,
      *     configuration?: Shapes\MessageConfiguration|null,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     orchestratorUseCase?: string|null,
+     *     metadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 600000>|null $InitializationTimeout
  * @property Shapes\ApplicationConfig|null $ApplicationConfig
  * @property Shapes\IframeConfig|null $IframeConfig
+ * @property 'STANDARD'|'SERVICE'|'MCP_SERVER'|null $ApplicationType
  */
 class UpdateApplicationRequest extends Request
 {
@@ -31,7 +32,8 @@ class UpdateApplicationRequest extends Request
      *     IsService?: bool|null,
      *     InitializationTimeout?: int<1, 600000>|null,
      *     ApplicationConfig?: Shapes\ApplicationConfig|null,
-     *     IframeConfig?: Shapes\IframeConfig|null
+     *     IframeConfig?: Shapes\IframeConfig|null,
+     *     ApplicationType?: 'STANDARD'|'SERVICE'|'MCP_SERVER'|null
      * } $args
      */
     public function __construct(array $args)

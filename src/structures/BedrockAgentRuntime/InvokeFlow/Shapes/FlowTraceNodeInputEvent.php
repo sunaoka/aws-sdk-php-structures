@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<FlowTraceNodeInputField> $fields
  * @property string $nodeName
  * @property \Aws\Api\DateTimeResult $timestamp
- * @property list<FlowTraceNodeInputField> $fields
  */
 class FlowTraceNodeInputEvent extends Shape
 {
     /**
      * @param array{
+     *     fields: list<FlowTraceNodeInputField>,
      *     nodeName: string,
-     *     timestamp: \Aws\Api\DateTimeResult,
-     *     fields: list<FlowTraceNodeInputField>
+     *     timestamp: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

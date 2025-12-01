@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ConversationState $conversationState
  * @property string|null $nextMessageToken
  * @property list<Shapes\RuntimeSessionData>|null $conversationSessionData
+ * @property bool|null $chunkedResponseTerminated
  */
 class GetNextMessageResponse extends Response
 {

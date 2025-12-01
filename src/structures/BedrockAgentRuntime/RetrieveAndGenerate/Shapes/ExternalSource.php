@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'S3'|'BYTE_CONTENT' $sourceType
- * @property S3ObjectDoc|null $s3Location
  * @property ByteContentDoc|null $byteContent
+ * @property S3ObjectDoc|null $s3Location
+ * @property 'S3'|'BYTE_CONTENT' $sourceType
  */
 class ExternalSource extends Shape
 {
     /**
      * @param array{
-     *     sourceType: 'S3'|'BYTE_CONTENT',
+     *     byteContent?: ByteContentDoc|null,
      *     s3Location?: S3ObjectDoc|null,
-     *     byteContent?: ByteContentDoc|null
+     *     sourceType: 'S3'|'BYTE_CONTENT'
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EmailResponseAIAgentConfiguration|null $emailResponseAIAgentConfiguration
  * @property EmailOverviewAIAgentConfiguration|null $emailOverviewAIAgentConfiguration
  * @property EmailGenerativeAnswerAIAgentConfiguration|null $emailGenerativeAnswerAIAgentConfiguration
+ * @property OrchestrationAIAgentConfiguration|null $orchestrationAIAgentConfiguration
+ * @property NoteTakingAIAgentConfiguration|null $noteTakingAIAgentConfiguration
+ * @property CaseSummarizationAIAgentConfiguration|null $caseSummarizationAIAgentConfiguration
  */
 class AIAgentConfiguration extends Shape
 {
@@ -21,7 +24,10 @@ class AIAgentConfiguration extends Shape
      *     selfServiceAIAgentConfiguration?: SelfServiceAIAgentConfiguration|null,
      *     emailResponseAIAgentConfiguration?: EmailResponseAIAgentConfiguration|null,
      *     emailOverviewAIAgentConfiguration?: EmailOverviewAIAgentConfiguration|null,
-     *     emailGenerativeAnswerAIAgentConfiguration?: EmailGenerativeAnswerAIAgentConfiguration|null
+     *     emailGenerativeAnswerAIAgentConfiguration?: EmailGenerativeAnswerAIAgentConfiguration|null,
+     *     orchestrationAIAgentConfiguration?: OrchestrationAIAgentConfiguration|null,
+     *     noteTakingAIAgentConfiguration?: NoteTakingAIAgentConfiguration|null,
+     *     caseSummarizationAIAgentConfiguration?: CaseSummarizationAIAgentConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

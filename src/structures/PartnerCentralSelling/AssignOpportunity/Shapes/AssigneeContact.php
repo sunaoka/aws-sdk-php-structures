@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Email
  * @property string $FirstName
  * @property string $LastName
+ * @property string|null $Phone
  * @property string $BusinessTitle
  */
 class AssigneeContact extends Shape
@@ -17,6 +18,7 @@ class AssigneeContact extends Shape
      *     Email: string,
      *     FirstName: string,
      *     LastName: string,
+     *     Phone?: string|null,
      *     BusinessTitle: string
      * } $args
      */

@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AnalysisParameter>|null $analysisParameters
  * @property list<AnalysisTemplateValidationStatusDetail>|null $validations
  * @property ErrorMessageConfiguration|null $errorMessageConfiguration
+ * @property SyntheticDataParameters|null $syntheticDataParameters
  */
 class AnalysisTemplate extends Shape
 {
@@ -43,7 +44,8 @@ class AnalysisTemplate extends Shape
      *     sourceMetadata?: AnalysisSourceMetadata|null,
      *     analysisParameters?: list<AnalysisParameter>|null,
      *     validations?: list<AnalysisTemplateValidationStatusDetail>|null,
-     *     errorMessageConfiguration?: ErrorMessageConfiguration|null
+     *     errorMessageConfiguration?: ErrorMessageConfiguration|null,
+     *     syntheticDataParameters?: SyntheticDataParameters|null
      * } $args
      */
     public function __construct(array $args)

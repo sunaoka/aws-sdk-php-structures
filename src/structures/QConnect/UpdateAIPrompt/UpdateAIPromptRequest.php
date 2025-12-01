@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AIPromptTemplateConfiguration|null $templateConfiguration
  * @property string|null $description
  * @property string|null $modelId
+ * @property Shapes\AIPromptInferenceConfiguration|null $inferenceConfiguration
  */
 class UpdateAIPromptRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateAIPromptRequest extends Request
      *     visibilityStatus: 'SAVED'|'PUBLISHED',
      *     templateConfiguration?: Shapes\AIPromptTemplateConfiguration|null,
      *     description?: string|null,
-     *     modelId?: string|null
+     *     modelId?: string|null,
+     *     inferenceConfiguration?: Shapes\AIPromptInferenceConfiguration|null
      * } $args
      */
     public function __construct(array $args)

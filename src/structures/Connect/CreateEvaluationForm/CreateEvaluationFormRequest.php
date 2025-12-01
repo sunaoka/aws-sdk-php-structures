@@ -12,7 +12,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EvaluationFormScoringStrategy|null $ScoringStrategy
  * @property Shapes\EvaluationFormAutoEvaluationConfiguration|null $AutoEvaluationConfiguration
  * @property string|null $ClientToken
+ * @property bool|null $AsDraft
  * @property array<string, string>|null $Tags
+ * @property Shapes\EvaluationFormTargetConfiguration|null $TargetConfiguration
+ * @property Shapes\EvaluationFormLanguageConfiguration|null $LanguageConfiguration
  */
 class CreateEvaluationFormRequest extends Request
 {
@@ -25,7 +28,10 @@ class CreateEvaluationFormRequest extends Request
      *     ScoringStrategy?: Shapes\EvaluationFormScoringStrategy|null,
      *     AutoEvaluationConfiguration?: Shapes\EvaluationFormAutoEvaluationConfiguration|null,
      *     ClientToken?: string|null,
-     *     Tags?: array<string, string>|null
+     *     AsDraft?: bool|null,
+     *     Tags?: array<string, string>|null,
+     *     TargetConfiguration?: Shapes\EvaluationFormTargetConfiguration|null,
+     *     LanguageConfiguration?: Shapes\EvaluationFormLanguageConfiguration|null
      * } $args
      */
     public function __construct(array $args)

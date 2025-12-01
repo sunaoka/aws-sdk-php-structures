@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
  * @property NodeExecutionContent $content
+ * @property string $name
  * @property list<NodeOutputNext>|null $next
  * @property 'String'|'Number'|'Boolean'|'Object'|'Array'|null $type
  */
@@ -14,8 +14,8 @@ class NodeOutputField extends Shape
 {
     /**
      * @param array{
-     *     name: string,
      *     content: NodeExecutionContent,
+     *     name: string,
      *     next?: list<NodeOutputNext>|null,
      *     type?: 'String'|'Number'|'Boolean'|'Object'|'Array'|null
      * } $args

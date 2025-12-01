@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $rationale
  * @property bool|null $isValid
+ * @property string|null $rationale
  */
 class PreProcessingParsedResponse extends Shape
 {
     /**
      * @param array{
-     *     rationale?: string|null,
-     *     isValid?: bool|null
+     *     isValid?: bool|null,
+     *     rationale?: string|null
      * } $args
      */
     public function __construct(array $args = [])

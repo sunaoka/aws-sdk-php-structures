@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'user'|'assistant' $role
  * @property list<ContentBlock> $content
+ * @property 'user'|'assistant' $role
  */
 class Message extends Shape
 {
     /**
      * @param array{
-     *     role: 'user'|'assistant',
-     *     content: list<ContentBlock>
+     *     content: list<ContentBlock>,
+     *     role: 'user'|'assistant'
      * } $args
      */
     public function __construct(array $args)

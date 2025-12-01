@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $text
  * @property 'ACTION_GROUP'|'KNOWLEDGE_BASE'|'PARSER'|null $source
+ * @property string|null $text
  */
 class RepromptResponse extends Shape
 {
     /**
      * @param array{
-     *     text?: string|null,
-     *     source?: 'ACTION_GROUP'|'KNOWLEDGE_BASE'|'PARSER'|null
+     *     source?: 'ACTION_GROUP'|'KNOWLEDGE_BASE'|'PARSER'|null,
+     *     text?: string|null
      * } $args
      */
     public function __construct(array $args = [])

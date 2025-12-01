@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ContactFlowId
  * @property array<string, string>|null $Attributes
  * @property Shapes\ParticipantDetails $ParticipantDetails
+ * @property Shapes\ParticipantConfiguration|null $ParticipantConfiguration
  * @property Shapes\ChatMessage|null $InitialMessage
  * @property string|null $ClientToken
  * @property int<60, 10080>|null $ChatDurationInMinutes
@@ -26,6 +27,7 @@ class StartChatContactRequest extends Request
      *     ContactFlowId: string,
      *     Attributes?: array<string, string>|null,
      *     ParticipantDetails: Shapes\ParticipantDetails,
+     *     ParticipantConfiguration?: Shapes\ParticipantConfiguration|null,
      *     InitialMessage?: Shapes\ChatMessage|null,
      *     ClientToken?: string|null,
      *     ChatDurationInMinutes?: int<60, 10080>|null,

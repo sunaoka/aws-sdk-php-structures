@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FederatedTable|null $FederatedTable
  * @property ViewDefinition|null $ViewDefinition
  * @property bool|null $IsMultiDialectView
+ * @property bool|null $IsMaterializedView
  * @property TableStatus|null $Status
  */
 class Table extends Shape
@@ -57,6 +58,7 @@ class Table extends Shape
      *     FederatedTable?: FederatedTable|null,
      *     ViewDefinition?: ViewDefinition|null,
      *     IsMultiDialectView?: bool|null,
+     *     IsMaterializedView?: bool|null,
      *     Status?: TableStatus|null
      * } $args
      */

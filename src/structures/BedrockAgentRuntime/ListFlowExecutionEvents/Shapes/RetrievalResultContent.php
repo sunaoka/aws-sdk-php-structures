@@ -5,19 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TEXT'|'IMAGE'|'ROW'|null $type
- * @property string|null $text
+ * @property AudioSegment|null $audio
  * @property string|null $byteContent
  * @property list<RetrievalResultContentColumn>|null $row
+ * @property string|null $text
+ * @property 'TEXT'|'IMAGE'|'ROW'|'AUDIO'|'VIDEO'|null $type
+ * @property VideoSegment|null $video
  */
 class RetrievalResultContent extends Shape
 {
     /**
      * @param array{
-     *     type?: 'TEXT'|'IMAGE'|'ROW'|null,
-     *     text?: string|null,
+     *     audio?: AudioSegment|null,
      *     byteContent?: string|null,
-     *     row?: list<RetrievalResultContentColumn>|null
+     *     row?: list<RetrievalResultContentColumn>|null,
+     *     text?: string|null,
+     *     type?: 'TEXT'|'IMAGE'|'ROW'|'AUDIO'|'VIDEO'|null,
+     *     video?: VideoSegment|null
      * } $args
      */
     public function __construct(array $args = [])

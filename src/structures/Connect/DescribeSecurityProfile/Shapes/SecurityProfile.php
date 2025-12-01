@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LastModifiedRegion
  * @property list<string>|null $HierarchyRestrictedResources
  * @property string|null $AllowedAccessControlHierarchyGroupId
+ * @property GranularAccessControlConfiguration|null $GranularAccessControlConfiguration
  */
 class SecurityProfile extends Shape
 {
@@ -33,7 +34,8 @@ class SecurityProfile extends Shape
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedRegion?: string|null,
      *     HierarchyRestrictedResources?: list<string>|null,
-     *     AllowedAccessControlHierarchyGroupId?: string|null
+     *     AllowedAccessControlHierarchyGroupId?: string|null,
+     *     GranularAccessControlConfiguration?: GranularAccessControlConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

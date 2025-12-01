@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $executionOutput
  * @property string|null $executionError
- * @property list<string>|null $files
+ * @property string|null $executionOutput
  * @property bool|null $executionTimeout
+ * @property list<string>|null $files
  * @property Metadata|null $metadata
  */
 class CodeInterpreterInvocationOutput extends Shape
 {
     /**
      * @param array{
-     *     executionOutput?: string|null,
      *     executionError?: string|null,
-     *     files?: list<string>|null,
+     *     executionOutput?: string|null,
      *     executionTimeout?: bool|null,
+     *     files?: list<string>|null,
      *     metadata?: Metadata|null
      * } $args
      */

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\FunctionCode $Code
  * @property string|null $Description
  * @property int<1, max>|null $Timeout
- * @property int<128, 10240>|null $MemorySize
+ * @property int<128, 32768>|null $MemorySize
  * @property bool|null $Publish
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property 'Zip'|'Image'|null $PackageType
@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EphemeralStorage|null $EphemeralStorage
  * @property Shapes\SnapStart|null $SnapStart
  * @property Shapes\LoggingConfig|null $LoggingConfig
+ * @property Shapes\CapacityProviderConfig|null $CapacityProviderConfig
+ * @property 'LATEST_PUBLISHED'|null $PublishTo
  * @property Shapes\TenancyConfig|null $TenancyConfig
  */
 class CreateFunctionRequest extends Request
@@ -42,7 +44,7 @@ class CreateFunctionRequest extends Request
      *     Code: Shapes\FunctionCode,
      *     Description?: string|null,
      *     Timeout?: int<1, max>|null,
-     *     MemorySize?: int<128, 10240>|null,
+     *     MemorySize?: int<128, 32768>|null,
      *     Publish?: bool|null,
      *     VpcConfig?: Shapes\VpcConfig|null,
      *     PackageType?: 'Zip'|'Image'|null,
@@ -59,6 +61,8 @@ class CreateFunctionRequest extends Request
      *     EphemeralStorage?: Shapes\EphemeralStorage|null,
      *     SnapStart?: Shapes\SnapStart|null,
      *     LoggingConfig?: Shapes\LoggingConfig|null,
+     *     CapacityProviderConfig?: Shapes\CapacityProviderConfig|null,
+     *     PublishTo?: 'LATEST_PUBLISHED'|null,
      *     TenancyConfig?: Shapes\TenancyConfig|null
      * } $args
      */

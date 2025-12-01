@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $nodeName
  * @property int|null $index
+ * @property string $nodeName
  * @property 'Iterator'|'Loop' $type
  */
 class NodeInputExecutionChainItem extends Shape
 {
     /**
      * @param array{
-     *     nodeName: string,
      *     index?: int|null,
+     *     nodeName: string,
      *     type: 'Iterator'|'Loop'
      * } $args
      */

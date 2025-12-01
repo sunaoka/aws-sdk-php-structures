@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $CodeSize
  * @property string|null $Description
  * @property int<1, max>|null $Timeout
- * @property int<128, 10240>|null $MemorySize
+ * @property int<128, 32768>|null $MemorySize
  * @property string|null $LastModified
  * @property string|null $CodeSha256
  * @property string|null $Version
@@ -25,12 +25,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $MasterArn
  * @property string|null $RevisionId
  * @property list<Shapes\Layer>|null $Layers
- * @property 'Pending'|'Active'|'Inactive'|'Failed'|null $State
+ * @property 'Pending'|'Active'|'Inactive'|'Failed'|'Deactivating'|'Deactivated'|'ActiveNonInvocable'|'Deleting'|null $State
  * @property string|null $StateReason
- * @property 'Idle'|'Creating'|'Restoring'|'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|null $StateReasonCode
+ * @property 'Idle'|'Creating'|'Restoring'|'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null $StateReasonCode
  * @property 'Successful'|'Failed'|'InProgress'|null $LastUpdateStatus
  * @property string|null $LastUpdateStatusReason
- * @property 'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|null $LastUpdateStatusReasonCode
+ * @property 'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null $LastUpdateStatusReasonCode
  * @property list<Shapes\FileSystemConfig>|null $FileSystemConfigs
  * @property 'Zip'|'Image'|null $PackageType
  * @property Shapes\ImageConfigResponse|null $ImageConfigResponse
@@ -41,6 +41,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\SnapStartResponse|null $SnapStart
  * @property Shapes\RuntimeVersionConfig|null $RuntimeVersionConfig
  * @property Shapes\LoggingConfig|null $LoggingConfig
+ * @property Shapes\CapacityProviderConfig|null $CapacityProviderConfig
+ * @property string|null $ConfigSha256
  * @property Shapes\TenancyConfig|null $TenancyConfig
  */
 class PublishVersionResponse extends Response

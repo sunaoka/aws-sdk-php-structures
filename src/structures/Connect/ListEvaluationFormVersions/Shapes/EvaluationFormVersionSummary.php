@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $EvaluationFormArn
  * @property string $EvaluationFormId
- * @property int<1, max> $EvaluationFormVersion
+ * @property int $EvaluationFormVersion
  * @property bool $Locked
  * @property 'DRAFT'|'ACTIVE' $Status
  * @property \Aws\Api\DateTimeResult $CreatedTime
@@ -21,7 +21,7 @@ class EvaluationFormVersionSummary extends Shape
      * @param array{
      *     EvaluationFormArn: string,
      *     EvaluationFormId: string,
-     *     EvaluationFormVersion: int<1, max>,
+     *     EvaluationFormVersion: int,
      *     Locked: bool,
      *     Status: 'DRAFT'|'ACTIVE',
      *     CreatedTime: \Aws\Api\DateTimeResult,

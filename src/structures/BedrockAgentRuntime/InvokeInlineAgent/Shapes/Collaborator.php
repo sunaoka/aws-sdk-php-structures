@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<AgentActionGroup>|null $actionGroups
+ * @property 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null $agentCollaboration
+ * @property string|null $agentName
+ * @property list<CollaboratorConfiguration>|null $collaboratorConfigurations
  * @property string|null $customerEncryptionKeyArn
  * @property string $foundationModel
- * @property string $instruction
- * @property int<60, 3600>|null $idleSessionTTLInSeconds
- * @property list<AgentActionGroup>|null $actionGroups
- * @property list<KnowledgeBase>|null $knowledgeBases
  * @property GuardrailConfigurationWithArn|null $guardrailConfiguration
+ * @property int<60, 3600>|null $idleSessionTTLInSeconds
+ * @property string $instruction
+ * @property list<KnowledgeBase>|null $knowledgeBases
  * @property PromptOverrideConfiguration|null $promptOverrideConfiguration
- * @property 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null $agentCollaboration
- * @property list<CollaboratorConfiguration>|null $collaboratorConfigurations
- * @property string|null $agentName
  */
 class Collaborator extends Shape
 {
     /**
      * @param array{
+     *     actionGroups?: list<AgentActionGroup>|null,
+     *     agentCollaboration?: 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null,
+     *     agentName?: string|null,
+     *     collaboratorConfigurations?: list<CollaboratorConfiguration>|null,
      *     customerEncryptionKeyArn?: string|null,
      *     foundationModel: string,
-     *     instruction: string,
-     *     idleSessionTTLInSeconds?: int<60, 3600>|null,
-     *     actionGroups?: list<AgentActionGroup>|null,
-     *     knowledgeBases?: list<KnowledgeBase>|null,
      *     guardrailConfiguration?: GuardrailConfigurationWithArn|null,
-     *     promptOverrideConfiguration?: PromptOverrideConfiguration|null,
-     *     agentCollaboration?: 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null,
-     *     collaboratorConfigurations?: list<CollaboratorConfiguration>|null,
-     *     agentName?: string|null
+     *     idleSessionTTLInSeconds?: int<60, 3600>|null,
+     *     instruction: string,
+     *     knowledgeBases?: list<KnowledgeBase>|null,
+     *     promptOverrideConfiguration?: PromptOverrideConfiguration|null
      * } $args
      */
     public function __construct(array $args)

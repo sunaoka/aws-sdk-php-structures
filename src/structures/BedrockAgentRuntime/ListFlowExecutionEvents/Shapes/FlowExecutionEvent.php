@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property ConditionResultEvent|null $conditionResultEvent
+ * @property FlowFailureEvent|null $flowFailureEvent
  * @property FlowExecutionInputEvent|null $flowInputEvent
  * @property FlowExecutionOutputEvent|null $flowOutputEvent
- * @property NodeInputEvent|null $nodeInputEvent
- * @property NodeOutputEvent|null $nodeOutputEvent
- * @property ConditionResultEvent|null $conditionResultEvent
- * @property NodeFailureEvent|null $nodeFailureEvent
- * @property FlowFailureEvent|null $flowFailureEvent
  * @property NodeActionEvent|null $nodeActionEvent
  * @property NodeDependencyEvent|null $nodeDependencyEvent
+ * @property NodeFailureEvent|null $nodeFailureEvent
+ * @property NodeInputEvent|null $nodeInputEvent
+ * @property NodeOutputEvent|null $nodeOutputEvent
  */
 class FlowExecutionEvent extends Shape
 {
     /**
      * @param array{
+     *     conditionResultEvent?: ConditionResultEvent|null,
+     *     flowFailureEvent?: FlowFailureEvent|null,
      *     flowInputEvent?: FlowExecutionInputEvent|null,
      *     flowOutputEvent?: FlowExecutionOutputEvent|null,
-     *     nodeInputEvent?: NodeInputEvent|null,
-     *     nodeOutputEvent?: NodeOutputEvent|null,
-     *     conditionResultEvent?: ConditionResultEvent|null,
-     *     nodeFailureEvent?: NodeFailureEvent|null,
-     *     flowFailureEvent?: FlowFailureEvent|null,
      *     nodeActionEvent?: NodeActionEvent|null,
-     *     nodeDependencyEvent?: NodeDependencyEvent|null
+     *     nodeDependencyEvent?: NodeDependencyEvent|null,
+     *     nodeFailureEvent?: NodeFailureEvent|null,
+     *     nodeInputEvent?: NodeInputEvent|null,
+     *     nodeOutputEvent?: NodeOutputEvent|null
      * } $args
      */
     public function __construct(array $args = [])

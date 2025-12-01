@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $BuyerAccounts
  * @property 'Draft'|'Released'|null $State
  * @property list<'BuyerAccounts'|'ParticipatingPrograms'|'CountryCodes'|'None'>|null $Targeting
+ * @property string|null $OfferSetId
  */
 class OfferSummary extends Shape
 {
@@ -25,7 +26,8 @@ class OfferSummary extends Shape
      *     AvailabilityEndDate?: string|null,
      *     BuyerAccounts?: list<string>|null,
      *     State?: 'Draft'|'Released'|null,
-     *     Targeting?: list<'BuyerAccounts'|'ParticipatingPrograms'|'CountryCodes'|'None'>|null
+     *     Targeting?: list<'BuyerAccounts'|'ParticipatingPrograms'|'CountryCodes'|'None'>|null,
+     *     OfferSetId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

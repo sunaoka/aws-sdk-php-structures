@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $StopTimestamp
  * @property 'AVAILABLE'|'DELETED'|null $Status
  * @property string|null $DeletionReason
+ * @property string|null $UnprocessedTranscriptLocation
  */
 class RecordingInfo extends Shape
 {
@@ -29,7 +30,8 @@ class RecordingInfo extends Shape
      *     StartTimestamp?: \Aws\Api\DateTimeResult|null,
      *     StopTimestamp?: \Aws\Api\DateTimeResult|null,
      *     Status?: 'AVAILABLE'|'DELETED'|null,
-     *     DeletionReason?: string|null
+     *     DeletionReason?: string|null,
+     *     UnprocessedTranscriptLocation?: string|null
      * } $args
      */
     public function __construct(array $args = [])

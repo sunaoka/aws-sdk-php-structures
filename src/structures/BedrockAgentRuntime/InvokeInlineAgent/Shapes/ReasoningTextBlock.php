@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $text
  * @property string|null $signature
+ * @property string $text
  */
 class ReasoningTextBlock extends Shape
 {
     /**
      * @param array{
-     *     text: string,
-     *     signature?: string|null
+     *     signature?: string|null,
+     *     text: string
      * } $args
      */
     public function __construct(array $args)

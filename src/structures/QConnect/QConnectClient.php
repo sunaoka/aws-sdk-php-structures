@@ -68,6 +68,7 @@ class QConnectClient extends \Aws\QConnect\QConnectClient
     use ListMessageTemplates\ListMessageTemplatesTrait;
     use ListMessages\ListMessagesTrait;
     use ListQuickResponses\ListQuickResponsesTrait;
+    use ListSpans\ListSpansTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use NotifyRecommendationsReceived\NotifyRecommendationsReceivedTrait;
     use PutFeedback\PutFeedbackTrait;
@@ -75,6 +76,7 @@ class QConnectClient extends \Aws\QConnect\QConnectClient
     use RemoveAssistantAIAgent\RemoveAssistantAIAgentTrait;
     use RemoveKnowledgeBaseTemplateUri\RemoveKnowledgeBaseTemplateUriTrait;
     use RenderMessageTemplate\RenderMessageTemplateTrait;
+    use Retrieve\RetrieveTrait;
     use SearchContent\SearchContentTrait;
     use SearchMessageTemplates\SearchMessageTemplatesTrait;
     use SearchQuickResponses\SearchQuickResponsesTrait;

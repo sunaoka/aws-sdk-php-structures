@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $solutionArn
  * @property bool|null $performAutoTraining
+ * @property bool|null $performIncrementalUpdate
  * @property Shapes\SolutionUpdateConfig|null $solutionUpdateConfig
  */
 class UpdateSolutionRequest extends Request
@@ -15,6 +16,7 @@ class UpdateSolutionRequest extends Request
      * @param array{
      *     solutionArn: string,
      *     performAutoTraining?: bool|null,
+     *     performIncrementalUpdate?: bool|null,
      *     solutionUpdateConfig?: Shapes\SolutionUpdateConfig|null
      * } $args
      */

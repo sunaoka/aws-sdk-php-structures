@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\PutInvocationStep;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $sessionIdentifier
  * @property string $invocationIdentifier
+ * @property string|null $invocationStepId
  * @property \Aws\Api\DateTimeResult $invocationStepTime
  * @property Shapes\InvocationStepPayload $payload
- * @property string|null $invocationStepId
+ * @property string $sessionIdentifier
  */
 class PutInvocationStepRequest extends Request
 {
     /**
      * @param array{
-     *     sessionIdentifier: string,
      *     invocationIdentifier: string,
+     *     invocationStepId?: string|null,
      *     invocationStepTime: \Aws\Api\DateTimeResult,
      *     payload: Shapes\InvocationStepPayload,
-     *     invocationStepId?: string|null
+     *     sessionIdentifier: string
      * } $args
      */
     public function __construct(array $args)

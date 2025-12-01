@@ -19,13 +19,19 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use AssociateQueueQuickConnects\AssociateQueueQuickConnectsTrait;
     use AssociateRoutingProfileQueues\AssociateRoutingProfileQueuesTrait;
     use AssociateSecurityKey\AssociateSecurityKeyTrait;
+    use AssociateSecurityProfiles\AssociateSecurityProfilesTrait;
     use AssociateTrafficDistributionGroupUser\AssociateTrafficDistributionGroupUserTrait;
     use AssociateUserProficiencies\AssociateUserProficienciesTrait;
+    use AssociateWorkspace\AssociateWorkspaceTrait;
     use BatchAssociateAnalyticsDataSet\BatchAssociateAnalyticsDataSetTrait;
+    use BatchCreateDataTableValue\BatchCreateDataTableValueTrait;
+    use BatchDeleteDataTableValue\BatchDeleteDataTableValueTrait;
+    use BatchDescribeDataTableValue\BatchDescribeDataTableValueTrait;
     use BatchDisassociateAnalyticsDataSet\BatchDisassociateAnalyticsDataSetTrait;
     use BatchGetAttachedFileMetadata\BatchGetAttachedFileMetadataTrait;
     use BatchGetFlowAssociation\BatchGetFlowAssociationTrait;
     use BatchPutContact\BatchPutContactTrait;
+    use BatchUpdateDataTableValue\BatchUpdateDataTableValueTrait;
     use ClaimPhoneNumber\ClaimPhoneNumberTrait;
     use CompleteAttachedFileUpload\CompleteAttachedFileUploadTrait;
     use CreateAgentStatus\CreateAgentStatusTrait;
@@ -35,6 +41,8 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CreateContactFlowModuleAlias\CreateContactFlowModuleAliasTrait;
     use CreateContactFlowModuleVersion\CreateContactFlowModuleVersionTrait;
     use CreateContactFlowVersion\CreateContactFlowVersionTrait;
+    use CreateDataTable\CreateDataTableTrait;
+    use CreateDataTableAttribute\CreateDataTableAttributeTrait;
     use CreateEmailAddress\CreateEmailAddressTrait;
     use CreateEvaluationForm\CreateEvaluationFormTrait;
     use CreateHoursOfOperation\CreateHoursOfOperationTrait;
@@ -59,6 +67,8 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CreateView\CreateViewTrait;
     use CreateViewVersion\CreateViewVersionTrait;
     use CreateVocabulary\CreateVocabularyTrait;
+    use CreateWorkspace\CreateWorkspaceTrait;
+    use CreateWorkspacePage\CreateWorkspacePageTrait;
     use DeactivateEvaluationForm\DeactivateEvaluationFormTrait;
     use DeleteAttachedFile\DeleteAttachedFileTrait;
     use DeleteContactEvaluation\DeleteContactEvaluationTrait;
@@ -67,6 +77,8 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteContactFlowModuleAlias\DeleteContactFlowModuleAliasTrait;
     use DeleteContactFlowModuleVersion\DeleteContactFlowModuleVersionTrait;
     use DeleteContactFlowVersion\DeleteContactFlowVersionTrait;
+    use DeleteDataTable\DeleteDataTableTrait;
+    use DeleteDataTableAttribute\DeleteDataTableAttributeTrait;
     use DeleteEmailAddress\DeleteEmailAddressTrait;
     use DeleteEvaluationForm\DeleteEvaluationFormTrait;
     use DeleteHoursOfOperation\DeleteHoursOfOperationTrait;
@@ -89,6 +101,9 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteView\DeleteViewTrait;
     use DeleteViewVersion\DeleteViewVersionTrait;
     use DeleteVocabulary\DeleteVocabularyTrait;
+    use DeleteWorkspace\DeleteWorkspaceTrait;
+    use DeleteWorkspaceMedia\DeleteWorkspaceMediaTrait;
+    use DeleteWorkspacePage\DeleteWorkspacePageTrait;
     use DescribeAgentStatus\DescribeAgentStatusTrait;
     use DescribeAuthenticationProfile\DescribeAuthenticationProfileTrait;
     use DescribeContact\DescribeContactTrait;
@@ -96,6 +111,8 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DescribeContactFlow\DescribeContactFlowTrait;
     use DescribeContactFlowModule\DescribeContactFlowModuleTrait;
     use DescribeContactFlowModuleAlias\DescribeContactFlowModuleAliasTrait;
+    use DescribeDataTable\DescribeDataTableTrait;
+    use DescribeDataTableAttribute\DescribeDataTableAttributeTrait;
     use DescribeEmailAddress\DescribeEmailAddressTrait;
     use DescribeEvaluationForm\DescribeEvaluationFormTrait;
     use DescribeHoursOfOperation\DescribeHoursOfOperationTrait;
@@ -117,6 +134,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DescribeUserHierarchyStructure\DescribeUserHierarchyStructureTrait;
     use DescribeView\DescribeViewTrait;
     use DescribeVocabulary\DescribeVocabularyTrait;
+    use DescribeWorkspace\DescribeWorkspaceTrait;
     use DisassociateAnalyticsDataSet\DisassociateAnalyticsDataSetTrait;
     use DisassociateApprovedOrigin\DisassociateApprovedOriginTrait;
     use DisassociateBot\DisassociateBotTrait;
@@ -129,9 +147,12 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DisassociateQueueQuickConnects\DisassociateQueueQuickConnectsTrait;
     use DisassociateRoutingProfileQueues\DisassociateRoutingProfileQueuesTrait;
     use DisassociateSecurityKey\DisassociateSecurityKeyTrait;
+    use DisassociateSecurityProfiles\DisassociateSecurityProfilesTrait;
     use DisassociateTrafficDistributionGroupUser\DisassociateTrafficDistributionGroupUserTrait;
     use DisassociateUserProficiencies\DisassociateUserProficienciesTrait;
+    use DisassociateWorkspace\DisassociateWorkspaceTrait;
     use DismissUserContact\DismissUserContactTrait;
+    use EvaluateDataTableValues\EvaluateDataTableValuesTrait;
     use GetAttachedFile\GetAttachedFileTrait;
     use GetContactAttributes\GetContactAttributesTrait;
     use GetContactMetrics\GetContactMetricsTrait;
@@ -146,6 +167,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use GetTaskTemplate\GetTaskTemplateTrait;
     use GetTrafficDistribution\GetTrafficDistributionTrait;
     use ImportPhoneNumber\ImportPhoneNumberTrait;
+    use ImportWorkspaceMedia\ImportWorkspaceMediaTrait;
     use ListAgentStatuses\ListAgentStatusesTrait;
     use ListAnalyticsDataAssociations\ListAnalyticsDataAssociationsTrait;
     use ListAnalyticsDataLakeDataSets\ListAnalyticsDataLakeDataSetsTrait;
@@ -160,7 +182,12 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListContactFlowVersions\ListContactFlowVersionsTrait;
     use ListContactFlows\ListContactFlowsTrait;
     use ListContactReferences\ListContactReferencesTrait;
+    use ListDataTableAttributes\ListDataTableAttributesTrait;
+    use ListDataTablePrimaryValues\ListDataTablePrimaryValuesTrait;
+    use ListDataTableValues\ListDataTableValuesTrait;
+    use ListDataTables\ListDataTablesTrait;
     use ListDefaultVocabularies\ListDefaultVocabulariesTrait;
+    use ListEntitySecurityProfiles\ListEntitySecurityProfilesTrait;
     use ListEvaluationFormVersions\ListEvaluationFormVersionsTrait;
     use ListEvaluationForms\ListEvaluationFormsTrait;
     use ListFlowAssociations\ListFlowAssociationsTrait;
@@ -186,6 +213,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListRules\ListRulesTrait;
     use ListSecurityKeys\ListSecurityKeysTrait;
     use ListSecurityProfileApplications\ListSecurityProfileApplicationsTrait;
+    use ListSecurityProfileFlowModules\ListSecurityProfileFlowModulesTrait;
     use ListSecurityProfilePermissions\ListSecurityProfilePermissionsTrait;
     use ListSecurityProfiles\ListSecurityProfilesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
@@ -198,6 +226,9 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListUsers\ListUsersTrait;
     use ListViewVersions\ListViewVersionsTrait;
     use ListViews\ListViewsTrait;
+    use ListWorkspaceMedia\ListWorkspaceMediaTrait;
+    use ListWorkspacePages\ListWorkspacePagesTrait;
+    use ListWorkspaces\ListWorkspacesTrait;
     use MonitorContact\MonitorContactTrait;
     use PauseContact\PauseContactTrait;
     use PutUserStatus\PutUserStatusTrait;
@@ -211,6 +242,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use SearchContactFlowModules\SearchContactFlowModulesTrait;
     use SearchContactFlows\SearchContactFlowsTrait;
     use SearchContacts\SearchContactsTrait;
+    use SearchDataTables\SearchDataTablesTrait;
     use SearchEmailAddresses\SearchEmailAddressesTrait;
     use SearchEvaluationForms\SearchEvaluationFormsTrait;
     use SearchHoursOfOperationOverrides\SearchHoursOfOperationOverridesTrait;
@@ -224,12 +256,16 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use SearchSecurityProfiles\SearchSecurityProfilesTrait;
     use SearchUserHierarchyGroups\SearchUserHierarchyGroupsTrait;
     use SearchUsers\SearchUsersTrait;
+    use SearchViews\SearchViewsTrait;
     use SearchVocabularies\SearchVocabulariesTrait;
+    use SearchWorkspaceAssociations\SearchWorkspaceAssociationsTrait;
+    use SearchWorkspaces\SearchWorkspacesTrait;
     use SendChatIntegrationEvent\SendChatIntegrationEventTrait;
     use SendOutboundEmail\SendOutboundEmailTrait;
     use StartAttachedFileUpload\StartAttachedFileUploadTrait;
     use StartChatContact\StartChatContactTrait;
     use StartContactEvaluation\StartContactEvaluationTrait;
+    use StartContactMediaProcessing\StartContactMediaProcessingTrait;
     use StartContactRecording\StartContactRecordingTrait;
     use StartContactStreaming\StartContactStreamingTrait;
     use StartEmailContact\StartEmailContactTrait;
@@ -240,6 +276,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use StartTaskContact\StartTaskContactTrait;
     use StartWebRTCContact\StartWebRTCContactTrait;
     use StopContact\StopContactTrait;
+    use StopContactMediaProcessing\StopContactMediaProcessingTrait;
     use StopContactRecording\StopContactRecordingTrait;
     use StopContactStreaming\StopContactStreamingTrait;
     use SubmitContactEvaluation\SubmitContactEvaluationTrait;
@@ -262,6 +299,9 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateContactFlowName\UpdateContactFlowNameTrait;
     use UpdateContactRoutingData\UpdateContactRoutingDataTrait;
     use UpdateContactSchedule\UpdateContactScheduleTrait;
+    use UpdateDataTableAttribute\UpdateDataTableAttributeTrait;
+    use UpdateDataTableMetadata\UpdateDataTableMetadataTrait;
+    use UpdateDataTablePrimaryValues\UpdateDataTablePrimaryValuesTrait;
     use UpdateEmailAddressMetadata\UpdateEmailAddressMetadataTrait;
     use UpdateEvaluationForm\UpdateEvaluationFormTrait;
     use UpdateHoursOfOperation\UpdateHoursOfOperationTrait;
@@ -301,4 +341,8 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateUserSecurityProfiles\UpdateUserSecurityProfilesTrait;
     use UpdateViewContent\UpdateViewContentTrait;
     use UpdateViewMetadata\UpdateViewMetadataTrait;
+    use UpdateWorkspaceMetadata\UpdateWorkspaceMetadataTrait;
+    use UpdateWorkspacePage\UpdateWorkspacePageTrait;
+    use UpdateWorkspaceTheme\UpdateWorkspaceThemeTrait;
+    use UpdateWorkspaceVisibility\UpdateWorkspaceVisibilityTrait;
 }
