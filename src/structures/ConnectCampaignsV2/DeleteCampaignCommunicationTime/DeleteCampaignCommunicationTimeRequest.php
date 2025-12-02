@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property 'TELEPHONY'|'SMS'|'EMAIL' $config
+ * @property 'TELEPHONY'|'SMS'|'EMAIL'|'WHATSAPP' $config
  */
 class DeleteCampaignCommunicationTimeRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     config: 'TELEPHONY'|'SMS'|'EMAIL'
+     *     config: 'TELEPHONY'|'SMS'|'EMAIL'|'WHATSAPP'
      * } $args
      */
     public function __construct(array $args)

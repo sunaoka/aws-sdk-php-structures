@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $traceId
- * @property RawResponse|null $rawResponse
  * @property Metadata|null $metadata
+ * @property RawResponse|null $rawResponse
  * @property ReasoningContentBlock|null $reasoningContent
+ * @property string|null $traceId
  */
 class OrchestrationModelInvocationOutput extends Shape
 {
     /**
      * @param array{
-     *     traceId?: string|null,
-     *     rawResponse?: RawResponse|null,
      *     metadata?: Metadata|null,
-     *     reasoningContent?: ReasoningContentBlock|null
+     *     rawResponse?: RawResponse|null,
+     *     reasoningContent?: ReasoningContentBlock|null,
+     *     traceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

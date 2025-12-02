@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $generateFillerMessage
+ * @property bool|null $generateChunkedMessage
  */
 class MessageConfiguration extends Shape
 {
     /**
-     * @param array{generateFillerMessage?: bool|null} $args
+     * @param array{
+     *     generateFillerMessage?: bool|null,
+     *     generateChunkedMessage?: bool|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

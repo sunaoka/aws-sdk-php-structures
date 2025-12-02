@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INSULTS'|'HATE'|'SEXUAL'|'VIOLENCE'|'MISCONDUCT'|'PROMPT_ATTACK'|null $type
- * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|null $confidence
  * @property 'BLOCKED'|null $action
+ * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|null $confidence
+ * @property 'INSULTS'|'HATE'|'SEXUAL'|'VIOLENCE'|'MISCONDUCT'|'PROMPT_ATTACK'|null $type
  */
 class GuardrailContentFilter extends Shape
 {
     /**
      * @param array{
-     *     type?: 'INSULTS'|'HATE'|'SEXUAL'|'VIOLENCE'|'MISCONDUCT'|'PROMPT_ATTACK'|null,
+     *     action?: 'BLOCKED'|null,
      *     confidence?: 'NONE'|'LOW'|'MEDIUM'|'HIGH'|null,
-     *     action?: 'BLOCKED'|null
+     *     type?: 'INSULTS'|'HATE'|'SEXUAL'|'VIOLENCE'|'MISCONDUCT'|'PROMPT_ATTACK'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\GenerateQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'REDSHIFT_SQL'|null $type
  * @property string|null $sql
+ * @property 'REDSHIFT_SQL'|null $type
  */
 class GeneratedQuery extends Shape
 {
     /**
      * @param array{
-     *     type?: 'REDSHIFT_SQL'|null,
-     *     sql?: string|null
+     *     sql?: string|null,
+     *     type?: 'REDSHIFT_SQL'|null
      * } $args
      */
     public function __construct(array $args = [])

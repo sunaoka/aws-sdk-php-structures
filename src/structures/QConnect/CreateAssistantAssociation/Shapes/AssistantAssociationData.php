@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $assistantAssociationArn
  * @property string $assistantId
  * @property string $assistantArn
- * @property 'KNOWLEDGE_BASE' $associationType
+ * @property 'KNOWLEDGE_BASE'|'EXTERNAL_BEDROCK_KNOWLEDGE_BASE' $associationType
  * @property AssistantAssociationOutputData $associationData
  * @property array<string, string>|null $tags
  */
@@ -21,7 +21,7 @@ class AssistantAssociationData extends Shape
      *     assistantAssociationArn: string,
      *     assistantId: string,
      *     assistantArn: string,
-     *     associationType: 'KNOWLEDGE_BASE',
+     *     associationType: 'KNOWLEDGE_BASE'|'EXTERNAL_BEDROCK_KNOWLEDGE_BASE',
      *     associationData: AssistantAssociationOutputData,
      *     tags?: array<string, string>|null
      * } $args

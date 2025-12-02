@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $nodeName
- * @property \Aws\Api\DateTimeResult $timestamp
  * @property 'VALIDATION'|'DEPENDENCY_FAILED'|'BAD_GATEWAY'|'INTERNAL_SERVER' $errorCode
  * @property string $errorMessage
+ * @property string $nodeName
+ * @property \Aws\Api\DateTimeResult $timestamp
  */
 class NodeFailureEvent extends Shape
 {
     /**
      * @param array{
-     *     nodeName: string,
-     *     timestamp: \Aws\Api\DateTimeResult,
      *     errorCode: 'VALIDATION'|'DEPENDENCY_FAILED'|'BAD_GATEWAY'|'INTERNAL_SERVER',
-     *     errorMessage: string
+     *     errorMessage: string,
+     *     nodeName: string,
+     *     timestamp: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

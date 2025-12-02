@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property InvocationInput|null $invocationInput
- * @property Observation|null $observation
  * @property ModelInvocationInput|null $modelInvocationInput
  * @property RoutingClassifierModelInvocationOutput|null $modelInvocationOutput
+ * @property Observation|null $observation
  */
 class RoutingClassifierTrace extends Shape
 {
     /**
      * @param array{
      *     invocationInput?: InvocationInput|null,
-     *     observation?: Observation|null,
      *     modelInvocationInput?: ModelInvocationInput|null,
-     *     modelInvocationOutput?: RoutingClassifierModelInvocationOutput|null
+     *     modelInvocationOutput?: RoutingClassifierModelInvocationOutput|null,
+     *     observation?: Observation|null
      * } $args
      */
     public function __construct(array $args = [])

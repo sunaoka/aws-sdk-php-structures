@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $text
  * @property string|null $knowledgeBaseId
+ * @property string|null $text
  */
 class KnowledgeBaseLookupInput extends Shape
 {
     /**
      * @param array{
-     *     text?: string|null,
-     *     knowledgeBaseId?: string|null
+     *     knowledgeBaseId?: string|null,
+     *     text?: string|null
      * } $args
      */
     public function __construct(array $args = [])

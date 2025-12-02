@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float|null $temperature
- * @property float|null $topP
- * @property int<0, 500>|null $topK
  * @property int<0, 8192>|null $maximumLength
  * @property list<string>|null $stopSequences
+ * @property float|null $temperature
+ * @property int<0, 500>|null $topK
+ * @property float|null $topP
  */
 class InferenceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     temperature?: float|null,
-     *     topP?: float|null,
-     *     topK?: int<0, 500>|null,
      *     maximumLength?: int<0, 8192>|null,
-     *     stopSequences?: list<string>|null
+     *     stopSequences?: list<string>|null,
+     *     temperature?: float|null,
+     *     topK?: int<0, 500>|null,
+     *     topP?: float|null
      * } $args
      */
     public function __construct(array $args = [])

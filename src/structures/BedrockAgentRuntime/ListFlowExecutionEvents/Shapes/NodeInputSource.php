@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $expression
  * @property string $nodeName
  * @property string $outputFieldName
- * @property string $expression
  */
 class NodeInputSource extends Shape
 {
     /**
      * @param array{
+     *     expression: string,
      *     nodeName: string,
-     *     outputFieldName: string,
-     *     expression: string
+     *     outputFieldName: string
      * } $args
      */
     public function __construct(array $args)

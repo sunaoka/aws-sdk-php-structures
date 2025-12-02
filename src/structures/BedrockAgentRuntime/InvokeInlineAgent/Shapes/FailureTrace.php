@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $traceId
- * @property string|null $failureReason
  * @property int|null $failureCode
+ * @property string|null $failureReason
  * @property Metadata|null $metadata
+ * @property string|null $traceId
  */
 class FailureTrace extends Shape
 {
     /**
      * @param array{
-     *     traceId?: string|null,
-     *     failureReason?: string|null,
      *     failureCode?: int|null,
-     *     metadata?: Metadata|null
+     *     failureReason?: string|null,
+     *     metadata?: Metadata|null,
+     *     traceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

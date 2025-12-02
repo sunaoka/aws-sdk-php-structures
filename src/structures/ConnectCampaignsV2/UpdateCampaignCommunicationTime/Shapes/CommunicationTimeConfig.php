@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TimeWindow|null $telephony
  * @property TimeWindow|null $sms
  * @property TimeWindow|null $email
+ * @property TimeWindow|null $whatsApp
  */
 class CommunicationTimeConfig extends Shape
 {
@@ -17,7 +18,8 @@ class CommunicationTimeConfig extends Shape
      *     localTimeZoneConfig: LocalTimeZoneConfig,
      *     telephony?: TimeWindow|null,
      *     sms?: TimeWindow|null,
-     *     email?: TimeWindow|null
+     *     email?: TimeWindow|null,
+     *     whatsApp?: TimeWindow|null
      * } $args
      */
     public function __construct(array $args)

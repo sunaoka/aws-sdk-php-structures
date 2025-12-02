@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $customerEncryptionKeyArn
- * @property string $foundationModel
- * @property string $instruction
- * @property int<60, 3600>|null $idleSessionTTLInSeconds
  * @property list<Shapes\AgentActionGroup>|null $actionGroups
- * @property list<Shapes\KnowledgeBase>|null $knowledgeBases
- * @property Shapes\GuardrailConfigurationWithArn|null $guardrailConfiguration
- * @property Shapes\PromptOverrideConfiguration|null $promptOverrideConfiguration
  * @property 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null $agentCollaboration
- * @property list<Shapes\CollaboratorConfiguration>|null $collaboratorConfigurations
  * @property string|null $agentName
- * @property string $sessionId
- * @property bool|null $endSession
- * @property bool|null $enableTrace
- * @property string|null $inputText
- * @property Shapes\StreamingConfigurations|null $streamingConfigurations
- * @property Shapes\PromptCreationConfigurations|null $promptCreationConfigurations
- * @property Shapes\InlineSessionState|null $inlineSessionState
- * @property list<Shapes\Collaborator>|null $collaborators
  * @property Shapes\InlineBedrockModelConfigurations|null $bedrockModelConfigurations
- * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null $orchestrationType
+ * @property list<Shapes\CollaboratorConfiguration>|null $collaboratorConfigurations
+ * @property list<Shapes\Collaborator>|null $collaborators
  * @property Shapes\CustomOrchestration|null $customOrchestration
+ * @property string|null $customerEncryptionKeyArn
+ * @property bool|null $enableTrace
+ * @property bool|null $endSession
+ * @property string $foundationModel
+ * @property Shapes\GuardrailConfigurationWithArn|null $guardrailConfiguration
+ * @property int<60, 3600>|null $idleSessionTTLInSeconds
+ * @property Shapes\InlineSessionState|null $inlineSessionState
+ * @property string|null $inputText
+ * @property string $instruction
+ * @property list<Shapes\KnowledgeBase>|null $knowledgeBases
+ * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null $orchestrationType
+ * @property Shapes\PromptCreationConfigurations|null $promptCreationConfigurations
+ * @property Shapes\PromptOverrideConfiguration|null $promptOverrideConfiguration
+ * @property string $sessionId
+ * @property Shapes\StreamingConfigurations|null $streamingConfigurations
  */
 class InvokeInlineAgentRequest extends Request
 {
     /**
      * @param array{
-     *     customerEncryptionKeyArn?: string|null,
-     *     foundationModel: string,
-     *     instruction: string,
-     *     idleSessionTTLInSeconds?: int<60, 3600>|null,
      *     actionGroups?: list<Shapes\AgentActionGroup>|null,
-     *     knowledgeBases?: list<Shapes\KnowledgeBase>|null,
-     *     guardrailConfiguration?: Shapes\GuardrailConfigurationWithArn|null,
-     *     promptOverrideConfiguration?: Shapes\PromptOverrideConfiguration|null,
      *     agentCollaboration?: 'SUPERVISOR'|'SUPERVISOR_ROUTER'|'DISABLED'|null,
-     *     collaboratorConfigurations?: list<Shapes\CollaboratorConfiguration>|null,
      *     agentName?: string|null,
-     *     sessionId: string,
-     *     endSession?: bool|null,
-     *     enableTrace?: bool|null,
-     *     inputText?: string|null,
-     *     streamingConfigurations?: Shapes\StreamingConfigurations|null,
-     *     promptCreationConfigurations?: Shapes\PromptCreationConfigurations|null,
-     *     inlineSessionState?: Shapes\InlineSessionState|null,
-     *     collaborators?: list<Shapes\Collaborator>|null,
      *     bedrockModelConfigurations?: Shapes\InlineBedrockModelConfigurations|null,
+     *     collaboratorConfigurations?: list<Shapes\CollaboratorConfiguration>|null,
+     *     collaborators?: list<Shapes\Collaborator>|null,
+     *     customOrchestration?: Shapes\CustomOrchestration|null,
+     *     customerEncryptionKeyArn?: string|null,
+     *     enableTrace?: bool|null,
+     *     endSession?: bool|null,
+     *     foundationModel: string,
+     *     guardrailConfiguration?: Shapes\GuardrailConfigurationWithArn|null,
+     *     idleSessionTTLInSeconds?: int<60, 3600>|null,
+     *     inlineSessionState?: Shapes\InlineSessionState|null,
+     *     inputText?: string|null,
+     *     instruction: string,
+     *     knowledgeBases?: list<Shapes\KnowledgeBase>|null,
      *     orchestrationType?: 'DEFAULT'|'CUSTOM_ORCHESTRATION'|null,
-     *     customOrchestration?: Shapes\CustomOrchestration|null
+     *     promptCreationConfigurations?: Shapes\PromptCreationConfigurations|null,
+     *     promptOverrideConfiguration?: Shapes\PromptOverrideConfiguration|null,
+     *     sessionId: string,
+     *     streamingConfigurations?: Shapes\StreamingConfigurations|null
      * } $args
      */
     public function __construct(array $args)

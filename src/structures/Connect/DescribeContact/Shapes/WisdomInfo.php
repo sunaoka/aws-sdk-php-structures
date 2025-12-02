@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $SessionArn
+ * @property list<AiAgentInfo>|null $AiAgents
  */
 class WisdomInfo extends Shape
 {
     /**
-     * @param array{SessionArn?: string|null} $args
+     * @param array{
+     *     SessionArn?: string|null,
+     *     AiAgents?: list<AiAgentInfo>|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

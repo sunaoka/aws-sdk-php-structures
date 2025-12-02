@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property ExternalSourcesGenerationConfiguration|null $generationConfiguration
  * @property string $modelArn
  * @property list<ExternalSource> $sources
- * @property ExternalSourcesGenerationConfiguration|null $generationConfiguration
  */
 class ExternalSourcesRetrieveAndGenerateConfiguration extends Shape
 {
     /**
      * @param array{
+     *     generationConfiguration?: ExternalSourcesGenerationConfiguration|null,
      *     modelArn: string,
-     *     sources: list<ExternalSource>,
-     *     generationConfiguration?: ExternalSourcesGenerationConfiguration|null
+     *     sources: list<ExternalSource>
      * } $args
      */
     public function __construct(array $args)

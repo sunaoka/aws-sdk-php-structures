@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $CreatedBy
  * @property int|null $MemberCount
+ * @property \Aws\Api\DateTimeResult|null $ModifiedAt
+ * @property string|null $ModifiedBy
  * @property list<Shapes\EngagementContextDetails>|null $Contexts
  */
 class GetEngagementResponse extends Response

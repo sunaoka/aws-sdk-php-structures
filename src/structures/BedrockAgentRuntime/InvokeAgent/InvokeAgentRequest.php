@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\SessionState|null $sessionState
- * @property string $agentId
  * @property string $agentAliasId
- * @property string $sessionId
- * @property bool|null $endSession
+ * @property string $agentId
+ * @property Shapes\BedrockModelConfigurations|null $bedrockModelConfigurations
  * @property bool|null $enableTrace
+ * @property bool|null $endSession
  * @property string|null $inputText
  * @property string|null $memoryId
- * @property Shapes\BedrockModelConfigurations|null $bedrockModelConfigurations
- * @property Shapes\StreamingConfigurations|null $streamingConfigurations
  * @property Shapes\PromptCreationConfigurations|null $promptCreationConfigurations
+ * @property string $sessionId
+ * @property Shapes\SessionState|null $sessionState
  * @property string|null $sourceArn
+ * @property Shapes\StreamingConfigurations|null $streamingConfigurations
  */
 class InvokeAgentRequest extends Request
 {
     /**
      * @param array{
-     *     sessionState?: Shapes\SessionState|null,
-     *     agentId: string,
      *     agentAliasId: string,
-     *     sessionId: string,
-     *     endSession?: bool|null,
+     *     agentId: string,
+     *     bedrockModelConfigurations?: Shapes\BedrockModelConfigurations|null,
      *     enableTrace?: bool|null,
+     *     endSession?: bool|null,
      *     inputText?: string|null,
      *     memoryId?: string|null,
-     *     bedrockModelConfigurations?: Shapes\BedrockModelConfigurations|null,
-     *     streamingConfigurations?: Shapes\StreamingConfigurations|null,
      *     promptCreationConfigurations?: Shapes\PromptCreationConfigurations|null,
-     *     sourceArn?: string|null
+     *     sessionId: string,
+     *     sessionState?: Shapes\SessionState|null,
+     *     sourceArn?: string|null,
+     *     streamingConfigurations?: Shapes\StreamingConfigurations|null
      * } $args
      */
     public function __construct(array $args)

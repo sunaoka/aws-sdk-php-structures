@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $CodeSize
  * @property string|null $Description
  * @property int<1, max>|null $Timeout
- * @property int<128, 10240>|null $MemorySize
+ * @property int<128, 32768>|null $MemorySize
  * @property string|null $LastModified
  * @property string|null $CodeSha256
  * @property string|null $Version
@@ -25,12 +25,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MasterArn
  * @property string|null $RevisionId
  * @property list<Layer>|null $Layers
- * @property 'Pending'|'Active'|'Inactive'|'Failed'|null $State
+ * @property 'Pending'|'Active'|'Inactive'|'Failed'|'Deactivating'|'Deactivated'|'ActiveNonInvocable'|'Deleting'|null $State
  * @property string|null $StateReason
- * @property 'Idle'|'Creating'|'Restoring'|'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|null $StateReasonCode
+ * @property 'Idle'|'Creating'|'Restoring'|'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null $StateReasonCode
  * @property 'Successful'|'Failed'|'InProgress'|null $LastUpdateStatus
  * @property string|null $LastUpdateStatusReason
- * @property 'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|null $LastUpdateStatusReasonCode
+ * @property 'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null $LastUpdateStatusReasonCode
  * @property list<FileSystemConfig>|null $FileSystemConfigs
  * @property 'Zip'|'Image'|null $PackageType
  * @property ImageConfigResponse|null $ImageConfigResponse
@@ -41,6 +41,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SnapStartResponse|null $SnapStart
  * @property RuntimeVersionConfig|null $RuntimeVersionConfig
  * @property LoggingConfig|null $LoggingConfig
+ * @property CapacityProviderConfig|null $CapacityProviderConfig
+ * @property string|null $ConfigSha256
  * @property TenancyConfig|null $TenancyConfig
  */
 class FunctionConfiguration extends Shape
@@ -55,7 +57,7 @@ class FunctionConfiguration extends Shape
      *     CodeSize?: int|null,
      *     Description?: string|null,
      *     Timeout?: int<1, max>|null,
-     *     MemorySize?: int<128, 10240>|null,
+     *     MemorySize?: int<128, 32768>|null,
      *     LastModified?: string|null,
      *     CodeSha256?: string|null,
      *     Version?: string|null,
@@ -67,12 +69,12 @@ class FunctionConfiguration extends Shape
      *     MasterArn?: string|null,
      *     RevisionId?: string|null,
      *     Layers?: list<Layer>|null,
-     *     State?: 'Pending'|'Active'|'Inactive'|'Failed'|null,
+     *     State?: 'Pending'|'Active'|'Inactive'|'Failed'|'Deactivating'|'Deactivated'|'ActiveNonInvocable'|'Deleting'|null,
      *     StateReason?: string|null,
-     *     StateReasonCode?: 'Idle'|'Creating'|'Restoring'|'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|null,
+     *     StateReasonCode?: 'Idle'|'Creating'|'Restoring'|'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null,
      *     LastUpdateStatus?: 'Successful'|'Failed'|'InProgress'|null,
      *     LastUpdateStatusReason?: string|null,
-     *     LastUpdateStatusReasonCode?: 'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|null,
+     *     LastUpdateStatusReasonCode?: 'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null,
      *     FileSystemConfigs?: list<FileSystemConfig>|null,
      *     PackageType?: 'Zip'|'Image'|null,
      *     ImageConfigResponse?: ImageConfigResponse|null,
@@ -83,6 +85,8 @@ class FunctionConfiguration extends Shape
      *     SnapStart?: SnapStartResponse|null,
      *     RuntimeVersionConfig?: RuntimeVersionConfig|null,
      *     LoggingConfig?: LoggingConfig|null,
+     *     CapacityProviderConfig?: CapacityProviderConfig|null,
+     *     ConfigSha256?: string|null,
      *     TenancyConfig?: TenancyConfig|null
      * } $args
      */

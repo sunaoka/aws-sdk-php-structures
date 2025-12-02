@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property RetrievalResultContent $content
  * @property RetrievalResultLocation|null $location
- * @property double|null $score
  * @property array<string, RetrievalResultMetadataValue>|null $metadata
+ * @property double|null $score
  */
 class KnowledgeBaseRetrievalResult extends Shape
 {
@@ -16,8 +16,8 @@ class KnowledgeBaseRetrievalResult extends Shape
      * @param array{
      *     content: RetrievalResultContent,
      *     location?: RetrievalResultLocation|null,
-     *     score?: double|null,
-     *     metadata?: array<string, RetrievalResultMetadataValue>|null
+     *     metadata?: array<string, RetrievalResultMetadataValue>|null,
+     *     score?: double|null
      * } $args
      */
     public function __construct(array $args)

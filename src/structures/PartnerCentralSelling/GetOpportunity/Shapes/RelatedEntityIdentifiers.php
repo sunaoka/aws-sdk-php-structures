@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string>|null $AwsMarketplaceOffers
+ * @property list<string>|null $AwsMarketplaceOfferSets
  * @property list<string>|null $Solutions
  * @property list<string>|null $AwsProducts
  */
@@ -14,6 +15,7 @@ class RelatedEntityIdentifiers extends Shape
     /**
      * @param array{
      *     AwsMarketplaceOffers?: list<string>|null,
+     *     AwsMarketplaceOfferSets?: list<string>|null,
      *     Solutions?: list<string>|null,
      *     AwsProducts?: list<string>|null
      * } $args

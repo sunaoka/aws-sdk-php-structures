@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $agreementDuration
- * @property \Aws\Api\DateTimeResult|null $agreementEndDate
- * @property \Aws\Api\DateTimeResult|null $agreementStartDate
  * @property string|null $type
+ * @property string|null $agreementDuration
+ * @property \Aws\Api\DateTimeResult|null $agreementStartDate
+ * @property \Aws\Api\DateTimeResult|null $agreementEndDate
  */
 class ValidityTerm extends Shape
 {
     /**
      * @param array{
+     *     type?: string|null,
      *     agreementDuration?: string|null,
-     *     agreementEndDate?: \Aws\Api\DateTimeResult|null,
      *     agreementStartDate?: \Aws\Api\DateTimeResult|null,
-     *     type?: string|null
+     *     agreementEndDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

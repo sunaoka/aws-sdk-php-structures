@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $identifier
  * @property string $contentType
  * @property string|resource|\Psr\Http\Message\StreamInterface $data
+ * @property string $identifier
  */
 class ByteContentDoc extends Shape
 {
     /**
      * @param array{
-     *     identifier: string,
      *     contentType: string,
-     *     data: string|resource|\Psr\Http\Message\StreamInterface
+     *     data: string|resource|\Psr\Http\Message\StreamInterface,
+     *     identifier: string
      * } $args
      */
     public function __construct(array $args)

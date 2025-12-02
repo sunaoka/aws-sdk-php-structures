@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EvaluationScore|null $Score
  * @property AutoEvaluationDetails|null $AutoEvaluation
  * @property EvaluationAcknowledgement|null $Acknowledgement
+ * @property EvaluationContactParticipant|null $ContactParticipant
+ * @property string|null $SamplingJobId
  */
 class EvaluationMetadata extends Shape
 {
@@ -23,7 +25,9 @@ class EvaluationMetadata extends Shape
      *     CalibrationSessionId?: string|null,
      *     Score?: EvaluationScore|null,
      *     AutoEvaluation?: AutoEvaluationDetails|null,
-     *     Acknowledgement?: EvaluationAcknowledgement|null
+     *     Acknowledgement?: EvaluationAcknowledgement|null,
+     *     ContactParticipant?: EvaluationContactParticipant|null,
+     *     SamplingJobId?: string|null
      * } $args
      */
     public function __construct(array $args)

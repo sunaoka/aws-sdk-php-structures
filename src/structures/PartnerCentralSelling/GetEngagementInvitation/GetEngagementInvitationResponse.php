@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $Arn
- * @property 'OpportunityInvitation'|null $PayloadType
+ * @property 'OpportunityInvitation'|'LeadInvitation'|null $PayloadType
  * @property string $Id
  * @property string|null $EngagementId
  * @property string|null $EngagementTitle

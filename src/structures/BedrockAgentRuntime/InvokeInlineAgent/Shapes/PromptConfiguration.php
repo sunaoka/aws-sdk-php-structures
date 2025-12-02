@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PRE_PROCESSING'|'ORCHESTRATION'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'POST_PROCESSING'|'ROUTING_CLASSIFIER'|null $promptType
- * @property 'DEFAULT'|'OVERRIDDEN'|null $promptCreationMode
- * @property 'ENABLED'|'DISABLED'|null $promptState
+ * @property Document|null $additionalModelRequestFields
  * @property string|null $basePromptTemplate
+ * @property string|null $foundationModel
  * @property InferenceConfiguration|null $inferenceConfiguration
  * @property 'DEFAULT'|'OVERRIDDEN'|null $parserMode
- * @property string|null $foundationModel
- * @property Document|null $additionalModelRequestFields
+ * @property 'DEFAULT'|'OVERRIDDEN'|null $promptCreationMode
+ * @property 'ENABLED'|'DISABLED'|null $promptState
+ * @property 'PRE_PROCESSING'|'ORCHESTRATION'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'POST_PROCESSING'|'ROUTING_CLASSIFIER'|null $promptType
  */
 class PromptConfiguration extends Shape
 {
     /**
      * @param array{
-     *     promptType?: 'PRE_PROCESSING'|'ORCHESTRATION'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'POST_PROCESSING'|'ROUTING_CLASSIFIER'|null,
-     *     promptCreationMode?: 'DEFAULT'|'OVERRIDDEN'|null,
-     *     promptState?: 'ENABLED'|'DISABLED'|null,
+     *     additionalModelRequestFields?: Document|null,
      *     basePromptTemplate?: string|null,
+     *     foundationModel?: string|null,
      *     inferenceConfiguration?: InferenceConfiguration|null,
      *     parserMode?: 'DEFAULT'|'OVERRIDDEN'|null,
-     *     foundationModel?: string|null,
-     *     additionalModelRequestFields?: Document|null
+     *     promptCreationMode?: 'DEFAULT'|'OVERRIDDEN'|null,
+     *     promptState?: 'ENABLED'|'DISABLED'|null,
+     *     promptType?: 'PRE_PROCESSING'|'ORCHESTRATION'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'POST_PROCESSING'|'ROUTING_CLASSIFIER'|null
      * } $args
      */
     public function __construct(array $args = [])

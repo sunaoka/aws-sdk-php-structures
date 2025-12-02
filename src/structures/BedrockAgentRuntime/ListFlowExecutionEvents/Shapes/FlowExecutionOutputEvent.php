@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<FlowOutputField> $fields
  * @property string $nodeName
  * @property \Aws\Api\DateTimeResult $timestamp
- * @property list<FlowOutputField> $fields
  */
 class FlowExecutionOutputEvent extends Shape
 {
     /**
      * @param array{
+     *     fields: list<FlowOutputField>,
      *     nodeName: string,
-     *     timestamp: \Aws\Api\DateTimeResult,
-     *     fields: list<FlowOutputField>
+     *     timestamp: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

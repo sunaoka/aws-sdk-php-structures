@@ -51,6 +51,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ContactDetails|null $ContactDetails
  * @property OutboundStrategy|null $OutboundStrategy
  * @property array<string, string>|null $Attributes
+ * @property list<NextContactEntry>|null $NextContacts
  */
 class Contact extends Shape
 {
@@ -101,7 +102,8 @@ class Contact extends Shape
      *     TaskTemplateInfo?: TaskTemplateInfoV2|null,
      *     ContactDetails?: ContactDetails|null,
      *     OutboundStrategy?: OutboundStrategy|null,
-     *     Attributes?: array<string, string>|null
+     *     Attributes?: array<string, string>|null,
+     *     NextContacts?: list<NextContactEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $description
  * @property double|null $nluIntentConfidenceThreshold
  * @property Shapes\VoiceSettings|null $voiceSettings
+ * @property Shapes\UnifiedSpeechSettings|null $unifiedSpeechSettings
+ * @property Shapes\SpeechRecognitionSettings|null $speechRecognitionSettings
  * @property int|null $intentsCount
  * @property int|null $slotTypesCount
  * @property 'Creating'|'Building'|'Built'|'ReadyExpressTesting'|'Failed'|'Deleting'|'NotBuilt'|'Importing'|'Processing'|null $botLocaleStatus

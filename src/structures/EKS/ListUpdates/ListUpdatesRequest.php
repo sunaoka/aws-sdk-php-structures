@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $nodegroupName
  * @property string|null $addonName
+ * @property string|null $capabilityName
  * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
  */
@@ -18,6 +19,7 @@ class ListUpdatesRequest extends Request
      *     name: string,
      *     nodegroupName?: string|null,
      *     addonName?: string|null,
+     *     capabilityName?: string|null,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null
      * } $args

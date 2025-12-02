@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property CustomOrchestrationTrace|null $customOrchestrationTrace
+ * @property FailureTrace|null $failureTrace
  * @property GuardrailTrace|null $guardrailTrace
- * @property PreProcessingTrace|null $preProcessingTrace
  * @property OrchestrationTrace|null $orchestrationTrace
  * @property PostProcessingTrace|null $postProcessingTrace
+ * @property PreProcessingTrace|null $preProcessingTrace
  * @property RoutingClassifierTrace|null $routingClassifierTrace
- * @property FailureTrace|null $failureTrace
- * @property CustomOrchestrationTrace|null $customOrchestrationTrace
  */
 class Trace extends Shape
 {
     /**
      * @param array{
+     *     customOrchestrationTrace?: CustomOrchestrationTrace|null,
+     *     failureTrace?: FailureTrace|null,
      *     guardrailTrace?: GuardrailTrace|null,
-     *     preProcessingTrace?: PreProcessingTrace|null,
      *     orchestrationTrace?: OrchestrationTrace|null,
      *     postProcessingTrace?: PostProcessingTrace|null,
-     *     routingClassifierTrace?: RoutingClassifierTrace|null,
-     *     failureTrace?: FailureTrace|null,
-     *     customOrchestrationTrace?: CustomOrchestrationTrace|null
+     *     preProcessingTrace?: PreProcessingTrace|null,
+     *     routingClassifierTrace?: RoutingClassifierTrace|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RevisionId
  * @property list<'x86_64'|'arm64'>|null $Architectures
  * @property string|null $SourceKMSKeyArn
+ * @property 'LATEST_PUBLISHED'|null $PublishTo
  */
 class UpdateFunctionCodeRequest extends Request
 {
@@ -31,7 +32,8 @@ class UpdateFunctionCodeRequest extends Request
      *     DryRun?: bool|null,
      *     RevisionId?: string|null,
      *     Architectures?: list<'x86_64'|'arm64'>|null,
-     *     SourceKMSKeyArn?: string|null
+     *     SourceKMSKeyArn?: string|null,
+     *     PublishTo?: 'LATEST_PUBLISHED'|null
      * } $args
      */
     public function __construct(array $args)

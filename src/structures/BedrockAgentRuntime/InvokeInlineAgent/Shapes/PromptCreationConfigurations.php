@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max>|null $previousConversationTurnsToInclude
  * @property bool|null $excludePreviousThinkingSteps
+ * @property int<0, max>|null $previousConversationTurnsToInclude
  */
 class PromptCreationConfigurations extends Shape
 {
     /**
      * @param array{
-     *     previousConversationTurnsToInclude?: int<0, max>|null,
-     *     excludePreviousThinkingSteps?: bool|null
+     *     excludePreviousThinkingSteps?: bool|null,
+     *     previousConversationTurnsToInclude?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

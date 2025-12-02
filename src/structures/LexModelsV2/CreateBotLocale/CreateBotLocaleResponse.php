@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $description
  * @property double|null $nluIntentConfidenceThreshold
  * @property Shapes\VoiceSettings|null $voiceSettings
+ * @property Shapes\UnifiedSpeechSettings|null $unifiedSpeechSettings
+ * @property Shapes\SpeechRecognitionSettings|null $speechRecognitionSettings
  * @property 'Creating'|'Building'|'Built'|'ReadyExpressTesting'|'Failed'|'Deleting'|'NotBuilt'|'Importing'|'Processing'|null $botLocaleStatus
  * @property \Aws\Api\DateTimeResult|null $creationDateTime
  * @property Shapes\GenerativeAISettings|null $generativeAISettings

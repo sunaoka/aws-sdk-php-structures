@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\StopFlowExecution;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $flowIdentifier
- * @property string $flowAliasIdentifier
  * @property string $executionIdentifier
+ * @property string $flowAliasIdentifier
+ * @property string $flowIdentifier
  */
 class StopFlowExecutionRequest extends Request
 {
     /**
      * @param array{
-     *     flowIdentifier: string,
+     *     executionIdentifier: string,
      *     flowAliasIdentifier: string,
-     *     executionIdentifier: string
+     *     flowIdentifier: string
      * } $args
      */
     public function __construct(array $args)

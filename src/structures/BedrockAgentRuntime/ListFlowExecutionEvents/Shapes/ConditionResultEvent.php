@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $nodeName
- * @property \Aws\Api\DateTimeResult $timestamp
  * @property list<SatisfiedCondition> $satisfiedConditions
+ * @property \Aws\Api\DateTimeResult $timestamp
  */
 class ConditionResultEvent extends Shape
 {
     /**
      * @param array{
      *     nodeName: string,
-     *     timestamp: \Aws\Api\DateTimeResult,
-     *     satisfiedConditions: list<SatisfiedCondition>
+     *     satisfiedConditions: list<SatisfiedCondition>,
+     *     timestamp: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

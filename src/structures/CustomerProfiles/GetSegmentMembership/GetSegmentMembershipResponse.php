@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $SegmentDefinitionName
  * @property list<Shapes\ProfileQueryResult>|null $Profiles
  * @property list<Shapes\ProfileQueryFailures>|null $Failures
+ * @property \Aws\Api\DateTimeResult|null $LastComputedAt
  */
 class GetSegmentMembershipResponse extends Response
 {

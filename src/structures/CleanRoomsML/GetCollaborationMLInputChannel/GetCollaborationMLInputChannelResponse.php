@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, 100000000000>|null $numberOfRecords
  * @property Shapes\PrivacyBudgets|null $privacyBudgets
  * @property string|null $description
+ * @property Shapes\SyntheticDataConfiguration|null $syntheticDataConfiguration
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $creatorAccountId

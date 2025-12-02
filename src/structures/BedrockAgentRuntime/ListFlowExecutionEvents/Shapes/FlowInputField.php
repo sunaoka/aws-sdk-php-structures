@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\ListFlowExecutionEvents\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
  * @property FlowExecutionContent $content
+ * @property string $name
  */
 class FlowInputField extends Shape
 {
     /**
      * @param array{
-     *     name: string,
-     *     content: FlowExecutionContent
+     *     content: FlowExecutionContent,
+     *     name: string
      * } $args
      */
     public function __construct(array $args)

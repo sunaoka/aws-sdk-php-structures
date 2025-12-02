@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\GetAgentMemory;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $nextToken
- * @property int<1, 1000>|null $maxItems
- * @property string $agentId
  * @property string $agentAliasId
- * @property 'SESSION_SUMMARY' $memoryType
+ * @property string $agentId
+ * @property int<1, 1000>|null $maxItems
  * @property string $memoryId
+ * @property 'SESSION_SUMMARY' $memoryType
+ * @property string|null $nextToken
  */
 class GetAgentMemoryRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string|null,
-     *     maxItems?: int<1, 1000>|null,
-     *     agentId: string,
      *     agentAliasId: string,
+     *     agentId: string,
+     *     maxItems?: int<1, 1000>|null,
+     *     memoryId: string,
      *     memoryType: 'SESSION_SUMMARY',
-     *     memoryId: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

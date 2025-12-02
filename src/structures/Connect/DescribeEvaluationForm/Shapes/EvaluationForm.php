@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EvaluationFormId
- * @property int<1, max> $EvaluationFormVersion
+ * @property int $EvaluationFormVersion
  * @property bool $Locked
  * @property string $EvaluationFormArn
  * @property string $Title
@@ -20,13 +20,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $LastModifiedBy
  * @property EvaluationFormAutoEvaluationConfiguration|null $AutoEvaluationConfiguration
  * @property array<string, string>|null $Tags
+ * @property EvaluationFormTargetConfiguration|null $TargetConfiguration
+ * @property EvaluationFormLanguageConfiguration|null $LanguageConfiguration
  */
 class EvaluationForm extends Shape
 {
     /**
      * @param array{
      *     EvaluationFormId: string,
-     *     EvaluationFormVersion: int<1, max>,
+     *     EvaluationFormVersion: int,
      *     Locked: bool,
      *     EvaluationFormArn: string,
      *     Title: string,
@@ -39,7 +41,9 @@ class EvaluationForm extends Shape
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     LastModifiedBy: string,
      *     AutoEvaluationConfiguration?: EvaluationFormAutoEvaluationConfiguration|null,
-     *     Tags?: array<string, string>|null
+     *     Tags?: array<string, string>|null,
+     *     TargetConfiguration?: EvaluationFormTargetConfiguration|null,
+     *     LanguageConfiguration?: EvaluationFormLanguageConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,10 +6,11 @@ trait DeleteFunctionTrait
 {
     /**
      * @param DeleteFunctionRequest $args
-     * @return void
+     * @return DeleteFunctionResponse
      */
     public function deleteFunction(DeleteFunctionRequest $args)
     {
-        parent::deleteFunction($args->toArray());
+        $result = parent::deleteFunction($args->toArray());
+        return new DeleteFunctionResponse($result->toArray());
     }
 }

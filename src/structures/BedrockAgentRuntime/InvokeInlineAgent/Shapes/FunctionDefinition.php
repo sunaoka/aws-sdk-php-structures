@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
  * @property string|null $description
+ * @property string $name
  * @property array<string, ParameterDetail>|null $parameters
  * @property 'ENABLED'|'DISABLED'|null $requireConfirmation
  */
@@ -14,8 +14,8 @@ class FunctionDefinition extends Shape
 {
     /**
      * @param array{
-     *     name: string,
      *     description?: string|null,
+     *     name: string,
      *     parameters?: array<string, ParameterDetail>|null,
      *     requireConfirmation?: 'ENABLED'|'DISABLED'|null
      * } $args

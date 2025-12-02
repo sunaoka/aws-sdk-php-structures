@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $nodeName
- * @property string|null $nodeOutputName
  * @property FlowInputContent $content
  * @property string|null $nodeInputName
+ * @property string $nodeName
+ * @property string|null $nodeOutputName
  */
 class FlowInput extends Shape
 {
     /**
      * @param array{
-     *     nodeName: string,
-     *     nodeOutputName?: string|null,
      *     content: FlowInputContent,
-     *     nodeInputName?: string|null
+     *     nodeInputName?: string|null,
+     *     nodeName: string,
+     *     nodeOutputName?: string|null
      * } $args
      */
     public function __construct(array $args)

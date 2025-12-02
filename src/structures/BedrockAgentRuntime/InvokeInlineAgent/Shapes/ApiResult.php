@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $actionGroup
- * @property string|null $httpMethod
+ * @property string|null $agentId
  * @property string|null $apiPath
  * @property 'CONFIRM'|'DENY'|null $confirmationState
- * @property 'FAILURE'|'REPROMPT'|null $responseState
+ * @property string|null $httpMethod
  * @property int|null $httpStatusCode
  * @property array<string, ContentBody>|null $responseBody
- * @property string|null $agentId
+ * @property 'FAILURE'|'REPROMPT'|null $responseState
  */
 class ApiResult extends Shape
 {
     /**
      * @param array{
      *     actionGroup: string,
-     *     httpMethod?: string|null,
+     *     agentId?: string|null,
      *     apiPath?: string|null,
      *     confirmationState?: 'CONFIRM'|'DENY'|null,
-     *     responseState?: 'FAILURE'|'REPROMPT'|null,
+     *     httpMethod?: string|null,
      *     httpStatusCode?: int|null,
      *     responseBody?: array<string, ContentBody>|null,
-     *     agentId?: string|null
+     *     responseState?: 'FAILURE'|'REPROMPT'|null
      * } $args
      */
     public function __construct(array $args)

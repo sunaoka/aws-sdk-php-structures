@@ -10,11 +10,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $aiPromptId
  * @property string $aiPromptArn
  * @property string $name
- * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION' $type
+ * @property 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION' $type
  * @property 'TEXT' $templateType
  * @property string $modelId
  * @property 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS'|'MESSAGES'|'TEXT_COMPLETIONS' $apiFormat
  * @property AIPromptTemplateConfiguration $templateConfiguration
+ * @property AIPromptInferenceConfiguration|null $inferenceConfiguration
  * @property \Aws\Api\DateTimeResult|null $modifiedTime
  * @property string|null $description
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
@@ -31,11 +32,12 @@ class AIPromptData extends Shape
      *     aiPromptId: string,
      *     aiPromptArn: string,
      *     name: string,
-     *     type: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION',
+     *     type: 'ANSWER_GENERATION'|'INTENT_LABELING_GENERATION'|'QUERY_REFORMULATION'|'SELF_SERVICE_PRE_PROCESSING'|'SELF_SERVICE_ANSWER_GENERATION'|'EMAIL_RESPONSE'|'EMAIL_OVERVIEW'|'EMAIL_GENERATIVE_ANSWER'|'EMAIL_QUERY_REFORMULATION'|'ORCHESTRATION'|'NOTE_TAKING'|'CASE_SUMMARIZATION',
      *     templateType: 'TEXT',
      *     modelId: string,
      *     apiFormat: 'ANTHROPIC_CLAUDE_MESSAGES'|'ANTHROPIC_CLAUDE_TEXT_COMPLETIONS'|'MESSAGES'|'TEXT_COMPLETIONS',
      *     templateConfiguration: AIPromptTemplateConfiguration,
+     *     inferenceConfiguration?: AIPromptInferenceConfiguration|null,
      *     modifiedTime?: \Aws\Api\DateTimeResult|null,
      *     description?: string|null,
      *     visibilityStatus: 'SAVED'|'PUBLISHED',

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\GetExecutionFlowSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $flowIdentifier
- * @property string $flowAliasIdentifier
  * @property string $executionIdentifier
+ * @property string $flowAliasIdentifier
+ * @property string $flowIdentifier
  */
 class GetExecutionFlowSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     flowIdentifier: string,
+     *     executionIdentifier: string,
      *     flowAliasIdentifier: string,
-     *     executionIdentifier: string
+     *     flowIdentifier: string
      * } $args
      */
     public function __construct(array $args)

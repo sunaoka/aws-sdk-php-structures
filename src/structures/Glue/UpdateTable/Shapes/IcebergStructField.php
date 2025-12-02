@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property IcebergDocument $Type
  * @property bool $Required
  * @property string|null $Doc
+ * @property IcebergDocument|null $InitialDefault
+ * @property IcebergDocument|null $WriteDefault
  */
 class IcebergStructField extends Shape
 {
@@ -19,7 +21,9 @@ class IcebergStructField extends Shape
      *     Name: string,
      *     Type: IcebergDocument,
      *     Required: bool,
-     *     Doc?: string|null
+     *     Doc?: string|null,
+     *     InitialDefault?: IcebergDocument|null,
+     *     WriteDefault?: IcebergDocument|null
      * } $args
      */
     public function __construct(array $args)
