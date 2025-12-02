@@ -75,6 +75,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use GetAssetFilter\GetAssetFilterTrait;
     use GetAssetType\GetAssetTypeTrait;
     use GetConnection\GetConnectionTrait;
+    use GetDataExportConfiguration\GetDataExportConfigurationTrait;
     use GetDataProduct\GetDataProductTrait;
     use GetDataSource\GetDataSourceTrait;
     use GetDataSourceRun\GetDataSourceRunTrait;
@@ -140,6 +141,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use ListTimeSeriesDataPoints\ListTimeSeriesDataPointsTrait;
     use PostLineageEvent\PostLineageEventTrait;
     use PostTimeSeriesDataPoints\PostTimeSeriesDataPointsTrait;
+    use PutDataExportConfiguration\PutDataExportConfigurationTrait;
     use PutEnvironmentBlueprintConfiguration\PutEnvironmentBlueprintConfigurationTrait;
     use RejectPredictions\RejectPredictionsTrait;
     use RejectSubscriptionRequest\RejectSubscriptionRequestTrait;

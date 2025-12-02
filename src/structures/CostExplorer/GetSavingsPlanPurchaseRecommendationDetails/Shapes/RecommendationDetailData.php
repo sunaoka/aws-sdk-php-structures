@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'PAYER'|'LINKED'|null $AccountScope
  * @property 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS'|null $LookbackPeriodInDays
- * @property 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP'|null $SavingsPlansType
+ * @property 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP'|'DATABASE_SP'|null $SavingsPlansType
  * @property 'ONE_YEAR'|'THREE_YEARS'|null $TermInYears
  * @property 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION'|null $PaymentOption
  * @property string|null $AccountId
@@ -41,7 +41,7 @@ class RecommendationDetailData extends Shape
      * @param array{
      *     AccountScope?: 'PAYER'|'LINKED'|null,
      *     LookbackPeriodInDays?: 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS'|null,
-     *     SavingsPlansType?: 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP'|null,
+     *     SavingsPlansType?: 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP'|'DATABASE_SP'|null,
      *     TermInYears?: 'ONE_YEAR'|'THREE_YEARS'|null,
      *     PaymentOption?: 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION'|null,
      *     AccountId?: string|null,

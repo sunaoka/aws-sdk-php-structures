@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SnapStart|null $SnapStart
  * @property Shapes\LoggingConfig|null $LoggingConfig
  * @property Shapes\CapacityProviderConfig|null $CapacityProviderConfig
+ * @property Shapes\DurableConfig|null $DurableConfig
  */
 class UpdateFunctionConfigurationRequest extends Request
 {
@@ -49,7 +50,8 @@ class UpdateFunctionConfigurationRequest extends Request
      *     EphemeralStorage?: Shapes\EphemeralStorage|null,
      *     SnapStart?: Shapes\SnapStart|null,
      *     LoggingConfig?: Shapes\LoggingConfig|null,
-     *     CapacityProviderConfig?: Shapes\CapacityProviderConfig|null
+     *     CapacityProviderConfig?: Shapes\CapacityProviderConfig|null,
+     *     DurableConfig?: Shapes\DurableConfig|null
      * } $args
      */
     public function __construct(array $args)

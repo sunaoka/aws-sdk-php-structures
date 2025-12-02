@@ -7,8 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $ClientRequestToken
  * @property string $Name
- * @property 'OPENZFS' $Type
+ * @property 'OPENZFS'|'ONTAP' $Type
  * @property Shapes\CreateAndAttachS3AccessPointOpenZFSConfiguration|null $OpenZFSConfiguration
+ * @property Shapes\CreateAndAttachS3AccessPointOntapConfiguration|null $OntapConfiguration
  * @property Shapes\CreateAndAttachS3AccessPointS3Configuration|null $S3AccessPoint
  */
 class CreateAndAttachS3AccessPointRequest extends Request
@@ -17,8 +18,9 @@ class CreateAndAttachS3AccessPointRequest extends Request
      * @param array{
      *     ClientRequestToken?: string|null,
      *     Name: string,
-     *     Type: 'OPENZFS',
+     *     Type: 'OPENZFS'|'ONTAP',
      *     OpenZFSConfiguration?: Shapes\CreateAndAttachS3AccessPointOpenZFSConfiguration|null,
+     *     OntapConfiguration?: Shapes\CreateAndAttachS3AccessPointOntapConfiguration|null,
      *     S3AccessPoint?: Shapes\CreateAndAttachS3AccessPointS3Configuration|null
      * } $args
      */

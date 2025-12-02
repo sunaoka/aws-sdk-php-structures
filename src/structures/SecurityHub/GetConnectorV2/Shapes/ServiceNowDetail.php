@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $InstanceName
- * @property string|null $ClientId
+ * @property string $SecretArn
  * @property 'ACTIVE'|'FAILED' $AuthStatus
  */
 class ServiceNowDetail extends Shape
@@ -14,7 +14,7 @@ class ServiceNowDetail extends Shape
     /**
      * @param array{
      *     InstanceName?: string|null,
-     *     ClientId?: string|null,
+     *     SecretArn: string,
      *     AuthStatus: 'ACTIVE'|'FAILED'
      * } $args
      */

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AdvancedCostOptimizationMetrics|null $AdvancedCostOptimizationMetrics
  * @property AdvancedDataProtectionMetrics|null $AdvancedDataProtectionMetrics
  * @property DetailedStatusCodesMetrics|null $DetailedStatusCodesMetrics
+ * @property AdvancedPerformanceMetrics|null $AdvancedPerformanceMetrics
  */
 class BucketLevel extends Shape
 {
@@ -19,7 +20,8 @@ class BucketLevel extends Shape
      *     PrefixLevel?: PrefixLevel|null,
      *     AdvancedCostOptimizationMetrics?: AdvancedCostOptimizationMetrics|null,
      *     AdvancedDataProtectionMetrics?: AdvancedDataProtectionMetrics|null,
-     *     DetailedStatusCodesMetrics?: DetailedStatusCodesMetrics|null
+     *     DetailedStatusCodesMetrics?: DetailedStatusCodesMetrics|null,
+     *     AdvancedPerformanceMetrics?: AdvancedPerformanceMetrics|null
      * } $args
      */
     public function __construct(array $args = [])

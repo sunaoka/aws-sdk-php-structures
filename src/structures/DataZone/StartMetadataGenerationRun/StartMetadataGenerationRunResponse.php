@@ -10,8 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $domainId
  * @property string $id
  * @property string|null $owningProjectId
- * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|null $status
- * @property 'BUSINESS_DESCRIPTIONS'|null $type
+ * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|'PARTIALLY_SUCCEEDED'|null $status
+ * @property 'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'|null $type
+ * @property list<'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'>|null $types
  */
 class StartMetadataGenerationRunResponse extends Response
 {

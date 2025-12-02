@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SummaryMemoryStrategyInput|null $summaryMemoryStrategy
  * @property UserPreferenceMemoryStrategyInput|null $userPreferenceMemoryStrategy
  * @property CustomMemoryStrategyInput|null $customMemoryStrategy
+ * @property EpisodicMemoryStrategyInput|null $episodicMemoryStrategy
  */
 class MemoryStrategyInput extends Shape
 {
@@ -17,7 +18,8 @@ class MemoryStrategyInput extends Shape
      *     semanticMemoryStrategy?: SemanticMemoryStrategyInput|null,
      *     summaryMemoryStrategy?: SummaryMemoryStrategyInput|null,
      *     userPreferenceMemoryStrategy?: UserPreferenceMemoryStrategyInput|null,
-     *     customMemoryStrategy?: CustomMemoryStrategyInput|null
+     *     customMemoryStrategy?: CustomMemoryStrategyInput|null,
+     *     episodicMemoryStrategy?: EpisodicMemoryStrategyInput|null
      * } $args
      */
     public function __construct(array $args = [])

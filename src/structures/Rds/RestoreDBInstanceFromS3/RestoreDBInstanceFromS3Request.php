@@ -57,6 +57,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DedicatedLogVolume
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
  */
 class RestoreDBInstanceFromS3Request extends Request
 {
@@ -113,7 +114,8 @@ class RestoreDBInstanceFromS3Request extends Request
      *     MasterUserSecretKmsKeyId?: string|null,
      *     DedicatedLogVolume?: bool|null,
      *     CACertificateIdentifier?: string|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null
      * } $args
      */
     public function __construct(array $args)

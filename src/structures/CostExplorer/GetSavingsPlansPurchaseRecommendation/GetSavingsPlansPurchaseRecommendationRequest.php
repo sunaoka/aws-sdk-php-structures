@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetSavingsPlansPurchaseRecommendat
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP' $SavingsPlansType
+ * @property 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP'|'DATABASE_SP' $SavingsPlansType
  * @property 'ONE_YEAR'|'THREE_YEARS' $TermInYears
  * @property 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION' $PaymentOption
  * @property 'PAYER'|'LINKED'|null $AccountScope
@@ -18,7 +18,7 @@ class GetSavingsPlansPurchaseRecommendationRequest extends Request
 {
     /**
      * @param array{
-     *     SavingsPlansType: 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP',
+     *     SavingsPlansType: 'COMPUTE_SP'|'EC2_INSTANCE_SP'|'SAGEMAKER_SP'|'DATABASE_SP',
      *     TermInYears: 'ONE_YEAR'|'THREE_YEARS',
      *     PaymentOption: 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION',
      *     AccountScope?: 'PAYER'|'LINKED'|null,

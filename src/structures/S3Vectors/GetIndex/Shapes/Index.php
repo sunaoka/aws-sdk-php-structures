@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 4096> $dimension
  * @property 'euclidean'|'cosine' $distanceMetric
  * @property MetadataConfiguration|null $metadataConfiguration
+ * @property EncryptionConfiguration|null $encryptionConfiguration
  */
 class Index extends Shape
 {
@@ -25,7 +26,8 @@ class Index extends Shape
      *     dataType: 'float32',
      *     dimension: int<1, 4096>,
      *     distanceMetric: 'euclidean'|'cosine',
-     *     metadataConfiguration?: MetadataConfiguration|null
+     *     metadataConfiguration?: MetadataConfiguration|null,
+     *     encryptionConfiguration?: EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

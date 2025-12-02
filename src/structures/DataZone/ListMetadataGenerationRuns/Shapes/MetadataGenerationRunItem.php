@@ -10,9 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $domainId
  * @property string $id
  * @property string $owningProjectId
- * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|null $status
+ * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|'PARTIALLY_SUCCEEDED'|null $status
  * @property MetadataGenerationRunTarget|null $target
- * @property 'BUSINESS_DESCRIPTIONS'|null $type
+ * @property 'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'|null $type
+ * @property list<'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'>|null $types
  */
 class MetadataGenerationRunItem extends Shape
 {
@@ -23,9 +24,10 @@ class MetadataGenerationRunItem extends Shape
      *     domainId: string,
      *     id: string,
      *     owningProjectId: string,
-     *     status?: 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|null,
+     *     status?: 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|'PARTIALLY_SUCCEEDED'|null,
      *     target?: MetadataGenerationRunTarget|null,
-     *     type?: 'BUSINESS_DESCRIPTIONS'|null
+     *     type?: 'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'|null,
+     *     types?: list<'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'>|null
      * } $args
      */
     public function __construct(array $args)

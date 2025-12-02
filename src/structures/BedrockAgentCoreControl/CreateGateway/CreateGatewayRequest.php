@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property string|null $kmsKeyArn
  * @property list<Shapes\GatewayInterceptorConfiguration>|null $interceptorConfigurations
+ * @property Shapes\GatewayPolicyEngineConfiguration|null $policyEngineConfiguration
  * @property 'DEBUG'|null $exceptionLevel
  * @property array<string, string>|null $tags
  */
@@ -32,6 +33,7 @@ class CreateGatewayRequest extends Request
      *     authorizerConfiguration?: Shapes\AuthorizerConfiguration|null,
      *     kmsKeyArn?: string|null,
      *     interceptorConfigurations?: list<Shapes\GatewayInterceptorConfiguration>|null,
+     *     policyEngineConfiguration?: Shapes\GatewayPolicyEngineConfiguration|null,
      *     exceptionLevel?: 'DEBUG'|null,
      *     tags?: array<string, string>|null
      * } $args

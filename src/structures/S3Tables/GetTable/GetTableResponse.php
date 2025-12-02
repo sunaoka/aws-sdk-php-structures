@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ownerAccountId
  * @property 'ICEBERG' $format
  * @property string|null $tableBucketId
+ * @property Shapes\ManagedTableInformation|null $managedTableInformation
  */
 class GetTableResponse extends Response
 {

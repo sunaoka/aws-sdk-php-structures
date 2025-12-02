@@ -27,7 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Layer>|null $Layers
  * @property 'Pending'|'Active'|'Inactive'|'Failed'|'Deactivating'|'Deactivated'|'ActiveNonInvocable'|'Deleting'|null $State
  * @property string|null $StateReason
- * @property 'Idle'|'Creating'|'Restoring'|'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null $StateReasonCode
+ * @property 'Idle'|'Creating'|'Restoring'|'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'DrainingDurableExecutions'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null $StateReasonCode
  * @property 'Successful'|'Failed'|'InProgress'|null $LastUpdateStatus
  * @property string|null $LastUpdateStatusReason
  * @property 'EniLimitExceeded'|'InsufficientRolePermissions'|'InvalidConfiguration'|'InternalError'|'SubnetOutOfIPAddresses'|'InvalidSubnet'|'InvalidSecurityGroup'|'ImageDeleted'|'ImageAccessDenied'|'InvalidImage'|'KMSKeyAccessDenied'|'KMSKeyNotFound'|'InvalidStateKMSKey'|'DisabledKMSKey'|'EFSIOError'|'EFSMountConnectivityError'|'EFSMountFailure'|'EFSMountTimeout'|'InvalidRuntime'|'InvalidZipFileException'|'FunctionError'|'VcpuLimitExceeded'|'CapacityProviderScalingLimitExceeded'|'InsufficientCapacity'|'EC2RequestLimitExceeded'|'FunctionError.InitTimeout'|'FunctionError.RuntimeInitError'|'FunctionError.ExtensionInitError'|'FunctionError.InvalidEntryPoint'|'FunctionError.InvalidWorkingDirectory'|'FunctionError.PermissionDenied'|'FunctionError.TooManyExtensions'|'FunctionError.InitResourceExhausted'|null $LastUpdateStatusReasonCode
@@ -43,6 +43,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LoggingConfig|null $LoggingConfig
  * @property Shapes\CapacityProviderConfig|null $CapacityProviderConfig
  * @property string|null $ConfigSha256
+ * @property Shapes\DurableConfig|null $DurableConfig
  * @property Shapes\TenancyConfig|null $TenancyConfig
  */
 class GetFunctionConfigurationResponse extends Response

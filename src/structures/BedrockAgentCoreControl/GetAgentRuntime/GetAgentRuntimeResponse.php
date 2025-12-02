@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\NetworkConfiguration $networkConfiguration
  * @property 'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'READY'|'DELETING' $status
  * @property Shapes\LifecycleConfiguration $lifecycleConfiguration
+ * @property string|null $failureReason
  * @property string|null $description
  * @property Shapes\WorkloadIdentityDetails|null $workloadIdentityDetails
  * @property Shapes\AgentRuntimeArtifact|null $agentRuntimeArtifact

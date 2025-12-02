@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HubName
- * @property 'Model'|'Notebook'|'ModelReference' $HubContentType
+ * @property 'Model'|'Notebook'|'ModelReference'|'DataSet'|'JsonDoc' $HubContentType
  * @property string $HubContentName
  * @property string|null $MinVersion
  * @property string|null $MaxSchemaVersion
@@ -22,7 +22,7 @@ class ListHubContentVersionsRequest extends Request
     /**
      * @param array{
      *     HubName: string,
-     *     HubContentType: 'Model'|'Notebook'|'ModelReference',
+     *     HubContentType: 'Model'|'Notebook'|'ModelReference'|'DataSet'|'JsonDoc',
      *     HubContentName: string,
      *     MinVersion?: string|null,
      *     MaxSchemaVersion?: string|null,

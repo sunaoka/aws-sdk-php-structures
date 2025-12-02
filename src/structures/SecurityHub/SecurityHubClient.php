@@ -18,7 +18,6 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use BatchUpdateFindings\BatchUpdateFindingsTrait;
     use BatchUpdateFindingsV2\BatchUpdateFindingsV2Trait;
     use BatchUpdateStandardsControlAssociations\BatchUpdateStandardsControlAssociationsTrait;
-    use ConnectorRegistrationsV2\ConnectorRegistrationsV2Trait;
     use CreateActionTarget\CreateActionTargetTrait;
     use CreateAggregatorV2\CreateAggregatorV2Trait;
     use CreateAutomationRule\CreateAutomationRuleTrait;
@@ -95,6 +94,7 @@ class SecurityHubClient extends \Aws\SecurityHub\SecurityHubClient
     use ListSecurityControlDefinitions\ListSecurityControlDefinitionsTrait;
     use ListStandardsControlAssociations\ListStandardsControlAssociationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use RegisterConnectorV2\RegisterConnectorV2Trait;
     use StartConfigurationPolicyAssociation\StartConfigurationPolicyAssociationTrait;
     use StartConfigurationPolicyDisassociation\StartConfigurationPolicyDisassociationTrait;
     use TagResource\TagResourceTrait;

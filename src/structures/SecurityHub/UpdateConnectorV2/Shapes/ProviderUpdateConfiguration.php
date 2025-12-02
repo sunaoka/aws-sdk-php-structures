@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property JiraCloudUpdateConfiguration|null $JiraCloud
+ * @property ServiceNowUpdateConfiguration|null $ServiceNow
  */
 class ProviderUpdateConfiguration extends Shape
 {
     /**
-     * @param array{JiraCloud?: JiraCloudUpdateConfiguration|null} $args
+     * @param array{
+     *     JiraCloud?: JiraCloudUpdateConfiguration|null,
+     *     ServiceNow?: ServiceNowUpdateConfiguration|null
+     * } $args
      */
     public function __construct(array $args = [])
     {

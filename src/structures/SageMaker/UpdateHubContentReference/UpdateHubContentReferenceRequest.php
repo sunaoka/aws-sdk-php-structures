@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HubName
  * @property string $HubContentName
- * @property 'Model'|'Notebook'|'ModelReference' $HubContentType
+ * @property 'Model'|'Notebook'|'ModelReference'|'DataSet'|'JsonDoc' $HubContentType
  * @property string|null $MinVersion
  */
 class UpdateHubContentReferenceRequest extends Request
@@ -16,7 +16,7 @@ class UpdateHubContentReferenceRequest extends Request
      * @param array{
      *     HubName: string,
      *     HubContentName: string,
-     *     HubContentType: 'Model'|'Notebook'|'ModelReference',
+     *     HubContentType: 'Model'|'Notebook'|'ModelReference'|'DataSet'|'JsonDoc',
      *     MinVersion?: string|null
      * } $args
      */

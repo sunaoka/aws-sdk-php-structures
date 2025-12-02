@@ -11,6 +11,7 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use CreateEvent\CreateEventTrait;
     use DeleteEvent\DeleteEventTrait;
     use DeleteMemoryRecord\DeleteMemoryRecordTrait;
+    use Evaluate\EvaluateTrait;
     use GetAgentCard\GetAgentCardTrait;
     use GetBrowserSession\GetBrowserSessionTrait;
     use GetCodeInterpreterSession\GetCodeInterpreterSessionTrait;

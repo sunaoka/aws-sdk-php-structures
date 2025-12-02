@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $accountIdentifiers
  * @property string|null $nextToken
  * @property int<1, 1000>|null $limit
+ * @property list<Shapes\DataSourceFilter>|null $dataSources
+ * @property list<string>|null $fieldIndexNames
  */
 class ListLogGroupsRequest extends Request
 {
@@ -21,7 +23,9 @@ class ListLogGroupsRequest extends Request
      *     includeLinkedAccounts?: bool|null,
      *     accountIdentifiers?: list<string>|null,
      *     nextToken?: string|null,
-     *     limit?: int<1, 1000>|null
+     *     limit?: int<1, 1000>|null,
+     *     dataSources?: list<Shapes\DataSourceFilter>|null,
+     *     fieldIndexNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

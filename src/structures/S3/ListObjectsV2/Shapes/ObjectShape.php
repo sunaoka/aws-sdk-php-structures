@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'>|null $ChecksumAlgorithm
  * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
  * @property int|null $Size
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'GLACIER'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|null $StorageClass
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'GLACIER'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null $StorageClass
  * @property Owner|null $Owner
  * @property RestoreStatus|null $RestoreStatus
  */
@@ -25,7 +25,7 @@ class ObjectShape extends Shape
      *     ChecksumAlgorithm?: list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'>|null,
      *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null,
      *     Size?: int|null,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'GLACIER'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'GLACIER'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null,
      *     Owner?: Owner|null,
      *     RestoreStatus?: RestoreStatus|null
      * } $args

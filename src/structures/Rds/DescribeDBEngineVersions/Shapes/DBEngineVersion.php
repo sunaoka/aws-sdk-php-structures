@@ -40,6 +40,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $SupportsLocalWriteForwarding
  * @property bool|null $SupportsIntegrations
  * @property ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
+ * @property list<string>|null $DatabaseInstallationFiles
+ * @property string|null $FailureReason
  */
 class DBEngineVersion extends Shape
 {
@@ -79,7 +81,9 @@ class DBEngineVersion extends Shape
      *     SupportedCACertificateIdentifiers?: list<string>|null,
      *     SupportsLocalWriteForwarding?: bool|null,
      *     SupportsIntegrations?: bool|null,
-     *     ServerlessV2FeaturesSupport?: ServerlessV2FeaturesSupport|null
+     *     ServerlessV2FeaturesSupport?: ServerlessV2FeaturesSupport|null,
+     *     DatabaseInstallationFiles?: list<string>|null,
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

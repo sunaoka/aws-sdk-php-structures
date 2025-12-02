@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HubContentName
  * @property string|null $HubContentVersion
- * @property 'Model'|'Notebook'|'ModelReference' $HubContentType
+ * @property 'Model'|'Notebook'|'ModelReference'|'DataSet'|'JsonDoc' $HubContentType
  * @property string $DocumentSchemaVersion
  * @property string $HubName
  * @property string|null $HubContentDisplayName
@@ -24,7 +24,7 @@ class ImportHubContentRequest extends Request
      * @param array{
      *     HubContentName: string,
      *     HubContentVersion?: string|null,
-     *     HubContentType: 'Model'|'Notebook'|'ModelReference',
+     *     HubContentType: 'Model'|'Notebook'|'ModelReference'|'DataSet'|'JsonDoc',
      *     DocumentSchemaVersion: string,
      *     HubName: string,
      *     HubContentDisplayName?: string|null,
