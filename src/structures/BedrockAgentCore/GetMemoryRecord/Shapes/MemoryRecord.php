@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $memoryStrategyId
  * @property list<string> $namespaces
  * @property \Aws\Api\DateTimeResult $createdAt
+ * @property array<string, MetadataValue>|null $metadata
  */
 class MemoryRecord extends Shape
 {
@@ -19,7 +20,8 @@ class MemoryRecord extends Shape
      *     content: MemoryContent,
      *     memoryStrategyId: string,
      *     namespaces: list<string>,
-     *     createdAt: \Aws\Api\DateTimeResult
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     metadata?: array<string, MetadataValue>|null
      * } $args
      */
     public function __construct(array $args)

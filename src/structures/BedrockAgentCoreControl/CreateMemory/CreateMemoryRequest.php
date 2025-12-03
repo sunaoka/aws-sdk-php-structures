@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string|null $encryptionKeyArn
  * @property string|null $memoryExecutionRoleArn
- * @property int<7, 365> $eventExpiryDuration
+ * @property int<3, 365> $eventExpiryDuration
  * @property list<Shapes\MemoryStrategyInput>|null $memoryStrategies
  * @property array<string, string>|null $tags
  */
@@ -23,7 +23,7 @@ class CreateMemoryRequest extends Request
      *     description?: string|null,
      *     encryptionKeyArn?: string|null,
      *     memoryExecutionRoleArn?: string|null,
-     *     eventExpiryDuration: int<7, 365>,
+     *     eventExpiryDuration: int<3, 365>,
      *     memoryStrategies?: list<Shapes\MemoryStrategyInput>|null,
      *     tags?: array<string, string>|null
      * } $args

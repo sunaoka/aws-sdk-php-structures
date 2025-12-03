@@ -93,6 +93,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DedicatedLogVolume
  * @property bool|null $IsStorageConfigUpgradeAvailable
  * @property string|null $EngineLifecycleSupport
+ * @property list<AdditionalStorageVolumeOutput>|null $AdditionalStorageVolumes
+ * @property string|null $StorageVolumeStatus
  */
 class DBInstance extends Shape
 {
@@ -185,7 +187,9 @@ class DBInstance extends Shape
      *     MultiTenant?: bool|null,
      *     DedicatedLogVolume?: bool|null,
      *     IsStorageConfigUpgradeAvailable?: bool|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     AdditionalStorageVolumes?: list<AdditionalStorageVolumeOutput>|null,
+     *     StorageVolumeStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

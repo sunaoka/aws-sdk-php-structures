@@ -42,6 +42,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $SupportsClusters
  * @property bool|null $SupportsDedicatedLogVolume
  * @property bool|null $SupportsHttpEndpoint
+ * @property bool|null $SupportsAdditionalStorageVolumes
+ * @property list<AvailableAdditionalStorageVolumesOption>|null $AvailableAdditionalStorageVolumesOptions
  */
 class OrderableDBInstanceOption extends Shape
 {
@@ -83,7 +85,9 @@ class OrderableDBInstanceOption extends Shape
      *     SupportedNetworkTypes?: list<string>|null,
      *     SupportsClusters?: bool|null,
      *     SupportsDedicatedLogVolume?: bool|null,
-     *     SupportsHttpEndpoint?: bool|null
+     *     SupportsHttpEndpoint?: bool|null,
+     *     SupportsAdditionalStorageVolumes?: bool|null,
+     *     AvailableAdditionalStorageVolumesOptions?: list<AvailableAdditionalStorageVolumesOption>|null
      * } $args
      */
     public function __construct(array $args = [])

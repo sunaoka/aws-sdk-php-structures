@@ -6,16 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InstanceName
- * @property string $ClientId
- * @property string $ClientSecret
+ * @property string $SecretArn
  */
 class ServiceNowProviderConfiguration extends Shape
 {
     /**
      * @param array{
      *     InstanceName: string,
-     *     ClientId: string,
-     *     ClientSecret: string
+     *     SecretArn: string
      * } $args
      */
     public function __construct(array $args)

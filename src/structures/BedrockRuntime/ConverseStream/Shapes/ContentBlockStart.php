@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ToolUseBlockStart|null $toolUse
  * @property ToolResultBlockStart|null $toolResult
+ * @property ImageBlockStart|null $image
  */
 class ContentBlockStart extends Shape
 {
     /**
      * @param array{
      *     toolUse?: ToolUseBlockStart|null,
-     *     toolResult?: ToolResultBlockStart|null
+     *     toolResult?: ToolResultBlockStart|null,
+     *     image?: ImageBlockStart|null
      * } $args
      */
     public function __construct(array $args = [])

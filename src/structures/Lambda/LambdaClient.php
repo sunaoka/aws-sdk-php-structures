@@ -6,6 +6,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
 {
     use AddLayerVersionPermission\AddLayerVersionPermissionTrait;
     use AddPermission\AddPermissionTrait;
+    use CheckpointDurableExecution\CheckpointDurableExecutionTrait;
     use CreateAlias\CreateAliasTrait;
     use CreateCapacityProvider\CreateCapacityProviderTrait;
     use CreateCodeSigningConfig\CreateCodeSigningConfigTrait;
@@ -27,6 +28,9 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use GetAlias\GetAliasTrait;
     use GetCapacityProvider\GetCapacityProviderTrait;
     use GetCodeSigningConfig\GetCodeSigningConfigTrait;
+    use GetDurableExecution\GetDurableExecutionTrait;
+    use GetDurableExecutionHistory\GetDurableExecutionHistoryTrait;
+    use GetDurableExecutionState\GetDurableExecutionStateTrait;
     use GetEventSourceMapping\GetEventSourceMappingTrait;
     use GetFunction\GetFunctionTrait;
     use GetFunctionCodeSigningConfig\GetFunctionCodeSigningConfigTrait;
@@ -47,6 +51,7 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use ListAliases\ListAliasesTrait;
     use ListCapacityProviders\ListCapacityProvidersTrait;
     use ListCodeSigningConfigs\ListCodeSigningConfigsTrait;
+    use ListDurableExecutionsByFunction\ListDurableExecutionsByFunctionTrait;
     use ListEventSourceMappings\ListEventSourceMappingsTrait;
     use ListFunctionEventInvokeConfigs\ListFunctionEventInvokeConfigsTrait;
     use ListFunctionUrlConfigs\ListFunctionUrlConfigsTrait;
@@ -69,6 +74,10 @@ class LambdaClient extends \Aws\Lambda\LambdaClient
     use PutRuntimeManagementConfig\PutRuntimeManagementConfigTrait;
     use RemoveLayerVersionPermission\RemoveLayerVersionPermissionTrait;
     use RemovePermission\RemovePermissionTrait;
+    use SendDurableExecutionCallbackFailure\SendDurableExecutionCallbackFailureTrait;
+    use SendDurableExecutionCallbackHeartbeat\SendDurableExecutionCallbackHeartbeatTrait;
+    use SendDurableExecutionCallbackSuccess\SendDurableExecutionCallbackSuccessTrait;
+    use StopDurableExecution\StopDurableExecutionTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateAlias\UpdateAliasTrait;

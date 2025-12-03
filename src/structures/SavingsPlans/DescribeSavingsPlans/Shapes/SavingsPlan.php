@@ -14,10 +14,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|'pending-return'|'returned'|null $state
  * @property string|null $region
  * @property string|null $ec2InstanceFamily
- * @property 'Compute'|'EC2Instance'|'SageMaker'|null $savingsPlanType
+ * @property 'Compute'|'EC2Instance'|'SageMaker'|'Database'|null $savingsPlanType
  * @property 'All Upfront'|'Partial Upfront'|'No Upfront'|null $paymentOption
- * @property list<'EC2'|'Fargate'|'Lambda'|'SageMaker'>|null $productTypes
- * @property 'CNY'|'USD'|null $currency
+ * @property list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'>|null $productTypes
+ * @property 'CNY'|'USD'|'EUR'|null $currency
  * @property string|null $commitment
  * @property string|null $upfrontPaymentAmount
  * @property string|null $recurringPaymentAmount
@@ -38,10 +38,10 @@ class SavingsPlan extends Shape
      *     state?: 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|'pending-return'|'returned'|null,
      *     region?: string|null,
      *     ec2InstanceFamily?: string|null,
-     *     savingsPlanType?: 'Compute'|'EC2Instance'|'SageMaker'|null,
+     *     savingsPlanType?: 'Compute'|'EC2Instance'|'SageMaker'|'Database'|null,
      *     paymentOption?: 'All Upfront'|'Partial Upfront'|'No Upfront'|null,
-     *     productTypes?: list<'EC2'|'Fargate'|'Lambda'|'SageMaker'>|null,
-     *     currency?: 'CNY'|'USD'|null,
+     *     productTypes?: list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'>|null,
+     *     currency?: 'CNY'|'USD'|'EUR'|null,
      *     commitment?: string|null,
      *     upfrontPaymentAmount?: string|null,
      *     recurringPaymentAmount?: string|null,

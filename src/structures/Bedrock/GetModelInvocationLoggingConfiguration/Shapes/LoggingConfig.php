@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $imageDataDeliveryEnabled
  * @property bool|null $embeddingDataDeliveryEnabled
  * @property bool|null $videoDataDeliveryEnabled
+ * @property bool|null $audioDataDeliveryEnabled
  */
 class LoggingConfig extends Shape
 {
@@ -21,7 +22,8 @@ class LoggingConfig extends Shape
      *     textDataDeliveryEnabled?: bool|null,
      *     imageDataDeliveryEnabled?: bool|null,
      *     embeddingDataDeliveryEnabled?: bool|null,
-     *     videoDataDeliveryEnabled?: bool|null
+     *     videoDataDeliveryEnabled?: bool|null,
+     *     audioDataDeliveryEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

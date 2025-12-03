@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LoggingConfig|null $LoggingConfig
  * @property Shapes\CapacityProviderConfig|null $CapacityProviderConfig
  * @property 'LATEST_PUBLISHED'|null $PublishTo
+ * @property Shapes\DurableConfig|null $DurableConfig
  * @property Shapes\TenancyConfig|null $TenancyConfig
  */
 class CreateFunctionRequest extends Request
@@ -63,6 +64,7 @@ class CreateFunctionRequest extends Request
      *     LoggingConfig?: Shapes\LoggingConfig|null,
      *     CapacityProviderConfig?: Shapes\CapacityProviderConfig|null,
      *     PublishTo?: 'LATEST_PUBLISHED'|null,
+     *     DurableConfig?: Shapes\DurableConfig|null,
      *     TenancyConfig?: Shapes\TenancyConfig|null
      * } $args
      */

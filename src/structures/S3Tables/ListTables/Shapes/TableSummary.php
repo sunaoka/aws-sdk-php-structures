@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $tableARN
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $modifiedAt
+ * @property string|null $managedByService
  * @property string|null $namespaceId
  * @property string|null $tableBucketId
  */
@@ -24,6 +25,7 @@ class TableSummary extends Shape
      *     tableARN: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     modifiedAt: \Aws\Api\DateTimeResult,
+     *     managedByService?: string|null,
      *     namespaceId?: string|null,
      *     tableBucketId?: string|null
      * } $args

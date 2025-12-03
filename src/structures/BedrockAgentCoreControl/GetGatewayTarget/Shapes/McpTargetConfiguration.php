@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ApiSchemaConfiguration|null $smithyModel
  * @property McpLambdaTargetConfiguration|null $lambda
  * @property McpServerTargetConfiguration|null $mcpServer
+ * @property ApiGatewayTargetConfiguration|null $apiGateway
  */
 class McpTargetConfiguration extends Shape
 {
@@ -17,7 +18,8 @@ class McpTargetConfiguration extends Shape
      *     openApiSchema?: ApiSchemaConfiguration|null,
      *     smithyModel?: ApiSchemaConfiguration|null,
      *     lambda?: McpLambdaTargetConfiguration|null,
-     *     mcpServer?: McpServerTargetConfiguration|null
+     *     mcpServer?: McpServerTargetConfiguration|null,
+     *     apiGateway?: ApiGatewayTargetConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

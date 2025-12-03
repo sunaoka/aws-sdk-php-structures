@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ImageBlock|null $image
  * @property DocumentBlock|null $document
  * @property VideoBlock|null $video
+ * @property AudioBlock|null $audio
  * @property ToolUseBlock|null $toolUse
  * @property ToolResultBlock|null $toolResult
  * @property GuardrailConverseContentBlock|null $guardContent
@@ -25,6 +26,7 @@ class ContentBlock extends Shape
      *     image?: ImageBlock|null,
      *     document?: DocumentBlock|null,
      *     video?: VideoBlock|null,
+     *     audio?: AudioBlock|null,
      *     toolUse?: ToolUseBlock|null,
      *     toolResult?: ToolResultBlock|null,
      *     guardContent?: GuardrailConverseContentBlock|null,

@@ -48,6 +48,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreateInferenceExperiment\CreateInferenceExperimentTrait;
     use CreateInferenceRecommendationsJob\CreateInferenceRecommendationsJobTrait;
     use CreateLabelingJob\CreateLabelingJobTrait;
+    use CreateMlflowApp\CreateMlflowAppTrait;
     use CreateMlflowTrackingServer\CreateMlflowTrackingServerTrait;
     use CreateModel\CreateModelTrait;
     use CreateModelBiasJobDefinition\CreateModelBiasJobDefinitionTrait;
@@ -65,6 +66,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use CreatePartnerAppPresignedUrl\CreatePartnerAppPresignedUrlTrait;
     use CreatePipeline\CreatePipelineTrait;
     use CreatePresignedDomainUrl\CreatePresignedDomainUrlTrait;
+    use CreatePresignedMlflowAppUrl\CreatePresignedMlflowAppUrlTrait;
     use CreatePresignedMlflowTrackingServerUrl\CreatePresignedMlflowTrackingServerUrlTrait;
     use CreatePresignedNotebookInstanceUrl\CreatePresignedNotebookInstanceUrlTrait;
     use CreateProcessingJob\CreateProcessingJobTrait;
@@ -110,6 +112,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DeleteImageVersion\DeleteImageVersionTrait;
     use DeleteInferenceComponent\DeleteInferenceComponentTrait;
     use DeleteInferenceExperiment\DeleteInferenceExperimentTrait;
+    use DeleteMlflowApp\DeleteMlflowAppTrait;
     use DeleteMlflowTrackingServer\DeleteMlflowTrackingServerTrait;
     use DeleteModel\DeleteModelTrait;
     use DeleteModelBiasJobDefinition\DeleteModelBiasJobDefinitionTrait;
@@ -175,6 +178,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeInferenceRecommendationsJob\DescribeInferenceRecommendationsJobTrait;
     use DescribeLabelingJob\DescribeLabelingJobTrait;
     use DescribeLineageGroup\DescribeLineageGroupTrait;
+    use DescribeMlflowApp\DescribeMlflowAppTrait;
     use DescribeMlflowTrackingServer\DescribeMlflowTrackingServerTrait;
     use DescribeModel\DescribeModelTrait;
     use DescribeModelBiasJobDefinition\DescribeModelBiasJobDefinitionTrait;
@@ -259,6 +263,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use ListLabelingJobs\ListLabelingJobsTrait;
     use ListLabelingJobsForWorkteam\ListLabelingJobsForWorkteamTrait;
     use ListLineageGroups\ListLineageGroupsTrait;
+    use ListMlflowApps\ListMlflowAppsTrait;
     use ListMlflowTrackingServers\ListMlflowTrackingServersTrait;
     use ListModelBiasJobDefinitions\ListModelBiasJobDefinitionsTrait;
     use ListModelCardExportJobs\ListModelCardExportJobsTrait;
@@ -358,6 +363,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use UpdateInferenceComponent\UpdateInferenceComponentTrait;
     use UpdateInferenceComponentRuntimeConfig\UpdateInferenceComponentRuntimeConfigTrait;
     use UpdateInferenceExperiment\UpdateInferenceExperimentTrait;
+    use UpdateMlflowApp\UpdateMlflowAppTrait;
     use UpdateMlflowTrackingServer\UpdateMlflowTrackingServerTrait;
     use UpdateModelCard\UpdateModelCardTrait;
     use UpdateModelPackage\UpdateModelPackageTrait;

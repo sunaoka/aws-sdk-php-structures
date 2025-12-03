@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs;
 class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
 {
     use AssociateKmsKey\AssociateKmsKeyTrait;
+    use AssociateSourceToS3TableIntegration\AssociateSourceToS3TableIntegrationTrait;
     use CancelExportTask\CancelExportTaskTrait;
     use CreateDelivery\CreateDeliveryTrait;
     use CreateExportTask\CreateExportTaskTrait;
@@ -48,6 +49,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use DescribeResourcePolicies\DescribeResourcePoliciesTrait;
     use DescribeSubscriptionFilters\DescribeSubscriptionFiltersTrait;
     use DisassociateKmsKey\DisassociateKmsKeyTrait;
+    use DisassociateSourceFromS3TableIntegration\DisassociateSourceFromS3TableIntegrationTrait;
     use FilterLogEvents\FilterLogEventsTrait;
     use GetDataProtectionPolicy\GetDataProtectionPolicyTrait;
     use GetDelivery\GetDeliveryTrait;
@@ -57,6 +59,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use GetIntegration\GetIntegrationTrait;
     use GetLogAnomalyDetector\GetLogAnomalyDetectorTrait;
     use GetLogEvents\GetLogEventsTrait;
+    use GetLogFields\GetLogFieldsTrait;
     use GetLogGroupFields\GetLogGroupFieldsTrait;
     use GetLogObject\GetLogObjectTrait;
     use GetLogRecord\GetLogRecordTrait;
@@ -64,12 +67,14 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use GetScheduledQuery\GetScheduledQueryTrait;
     use GetScheduledQueryHistory\GetScheduledQueryHistoryTrait;
     use GetTransformer\GetTransformerTrait;
+    use ListAggregateLogGroupSummaries\ListAggregateLogGroupSummariesTrait;
     use ListAnomalies\ListAnomaliesTrait;
     use ListIntegrations\ListIntegrationsTrait;
     use ListLogAnomalyDetectors\ListLogAnomalyDetectorsTrait;
     use ListLogGroups\ListLogGroupsTrait;
     use ListLogGroupsForQuery\ListLogGroupsForQueryTrait;
     use ListScheduledQueries\ListScheduledQueriesTrait;
+    use ListSourcesForS3TableIntegration\ListSourcesForS3TableIntegrationTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTagsLogGroup\ListTagsLogGroupTrait;
     use PutAccountPolicy\PutAccountPolicyTrait;

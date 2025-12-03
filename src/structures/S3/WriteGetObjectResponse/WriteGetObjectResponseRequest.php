@@ -42,7 +42,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSEKMSKeyId
  * @property string|null $SSECustomerKeyMD5
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|null $StorageClass
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null $StorageClass
  * @property int|null $TagCount
  * @property string|null $VersionId
  * @property bool|null $BucketKeyEnabled
@@ -88,7 +88,7 @@ class WriteGetObjectResponseRequest extends Request
      *     SSECustomerAlgorithm?: string|null,
      *     SSEKMSKeyId?: string|null,
      *     SSECustomerKeyMD5?: string|null,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null,
      *     TagCount?: int|null,
      *     VersionId?: string|null,
      *     BucketKeyEnabled?: bool|null

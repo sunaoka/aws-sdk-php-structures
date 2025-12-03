@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property string|null $Manifest
  * @property list<Shapes\Tag>|null $Tags
+ * @property list<string>|null $DatabaseInstallationFiles
  */
 class CreateCustomDBEngineVersionRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateCustomDBEngineVersionRequest extends Request
      *     UseAwsProvidedLatestImage?: bool|null,
      *     Description?: string|null,
      *     Manifest?: string|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DatabaseInstallationFiles?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

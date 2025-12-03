@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property string|null $kmsKeyArn
  * @property list<Shapes\GatewayInterceptorConfiguration>|null $interceptorConfigurations
+ * @property Shapes\GatewayPolicyEngineConfiguration|null $policyEngineConfiguration
  * @property Shapes\WorkloadIdentityDetails|null $workloadIdentityDetails
  * @property 'DEBUG'|null $exceptionLevel
  */

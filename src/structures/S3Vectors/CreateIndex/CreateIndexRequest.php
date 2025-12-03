@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 4096> $dimension
  * @property 'euclidean'|'cosine' $distanceMetric
  * @property Shapes\MetadataConfiguration|null $metadataConfiguration
+ * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
+ * @property array<string, string>|null $tags
  */
 class CreateIndexRequest extends Request
 {
@@ -23,7 +25,9 @@ class CreateIndexRequest extends Request
      *     dataType: 'float32',
      *     dimension: int<1, 4096>,
      *     distanceMetric: 'euclidean'|'cosine',
-     *     metadataConfiguration?: Shapes\MetadataConfiguration|null
+     *     metadataConfiguration?: Shapes\MetadataConfiguration|null,
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

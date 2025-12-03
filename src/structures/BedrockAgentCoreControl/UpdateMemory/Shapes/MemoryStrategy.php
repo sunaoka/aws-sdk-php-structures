@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string|null $description
  * @property StrategyConfiguration|null $configuration
- * @property 'SEMANTIC'|'SUMMARIZATION'|'USER_PREFERENCE'|'CUSTOM' $type
+ * @property 'SEMANTIC'|'SUMMARIZATION'|'USER_PREFERENCE'|'CUSTOM'|'EPISODIC' $type
  * @property list<string> $namespaces
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
@@ -23,7 +23,7 @@ class MemoryStrategy extends Shape
      *     name: string,
      *     description?: string|null,
      *     configuration?: StrategyConfiguration|null,
-     *     type: 'SEMANTIC'|'SUMMARIZATION'|'USER_PREFERENCE'|'CUSTOM',
+     *     type: 'SEMANTIC'|'SUMMARIZATION'|'USER_PREFERENCE'|'CUSTOM'|'EPISODIC',
      *     namespaces: list<string>,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
