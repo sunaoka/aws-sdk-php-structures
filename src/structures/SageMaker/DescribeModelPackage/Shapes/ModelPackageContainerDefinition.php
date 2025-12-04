@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $NearestModelName
  * @property AdditionalS3DataSource|null $AdditionalS3DataSource
  * @property string|null $ModelDataETag
+ * @property bool|null $IsCheckpoint
+ * @property BaseModel|null $BaseModel
  */
 class ModelPackageContainerDefinition extends Shape
 {
@@ -35,7 +37,9 @@ class ModelPackageContainerDefinition extends Shape
      *     FrameworkVersion?: string|null,
      *     NearestModelName?: string|null,
      *     AdditionalS3DataSource?: AdditionalS3DataSource|null,
-     *     ModelDataETag?: string|null
+     *     ModelDataETag?: string|null,
+     *     IsCheckpoint?: bool|null,
+     *     BaseModel?: BaseModel|null
      * } $args
      */
     public function __construct(array $args = [])

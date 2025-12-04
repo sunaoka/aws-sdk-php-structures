@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ClusterOrchestratorEksConfig|null $Eks
+ * @property ClusterOrchestratorEksConfig $Eks
  */
 class ClusterOrchestrator extends Shape
 {
     /**
-     * @param array{Eks?: ClusterOrchestratorEksConfig|null} $args
+     * @param array{Eks: ClusterOrchestratorEksConfig} $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

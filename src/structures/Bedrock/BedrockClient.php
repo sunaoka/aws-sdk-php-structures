@@ -98,6 +98,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use UpdateAutomatedReasoningPolicy\UpdateAutomatedReasoningPolicyTrait;
     use UpdateAutomatedReasoningPolicyAnnotations\UpdateAutomatedReasoningPolicyAnnotationsTrait;
     use UpdateAutomatedReasoningPolicyTestCase\UpdateAutomatedReasoningPolicyTestCaseTrait;
+    use UpdateCustomModelDeployment\UpdateCustomModelDeploymentTrait;
     use UpdateGuardrail\UpdateGuardrailTrait;
     use UpdateMarketplaceModelEndpoint\UpdateMarketplaceModelEndpointTrait;
     use UpdateProvisionedModelThroughput\UpdateProvisionedModelThroughputTrait;

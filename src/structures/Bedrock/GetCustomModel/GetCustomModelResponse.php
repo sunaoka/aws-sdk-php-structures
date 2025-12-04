@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $jobName
  * @property string|null $jobArn
  * @property string|null $baseModelArn
- * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'IMPORTED'|null $customizationType
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'REINFORCEMENT_FINE_TUNING'|'IMPORTED'|null $customizationType
  * @property string|null $modelKmsKeyArn
  * @property array<string, string>|null $hyperParameters
  * @property Shapes\TrainingDataConfig|null $trainingDataConfig
