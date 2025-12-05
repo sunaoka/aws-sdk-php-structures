@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\CheckpointConfig|null $CheckpointConfig
  * @property int<1, max>|null $TrainingTimeInSeconds
  * @property int<1, max>|null $BillableTimeInSeconds
+ * @property int<0, max>|null $BillableTokenCount
  * @property Shapes\DebugHookConfig|null $DebugHookConfig
  * @property Shapes\ExperimentConfig|null $ExperimentConfig
  * @property list<Shapes\DebugRuleConfiguration>|null $DebugRuleConfigurations
@@ -48,6 +49,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\RetryStrategy|null $RetryStrategy
  * @property Shapes\RemoteDebugConfig|null $RemoteDebugConfig
  * @property Shapes\InfraCheckConfig|null $InfraCheckConfig
+ * @property Shapes\ServerlessJobConfig|null $ServerlessJobConfig
+ * @property Shapes\MlflowConfig|null $MlflowConfig
+ * @property Shapes\ModelPackageConfig|null $ModelPackageConfig
+ * @property Shapes\MlflowDetails|null $MlflowDetails
+ * @property Shapes\TrainingProgressInfo|null $ProgressInfo
+ * @property string|null $OutputModelPackageArn
  */
 class DescribeTrainingJobResponse extends Response
 {

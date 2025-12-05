@@ -30,6 +30,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RemoteDebugConfig|null $RemoteDebugConfig
  * @property Shapes\InfraCheckConfig|null $InfraCheckConfig
  * @property Shapes\SessionChainingConfig|null $SessionChainingConfig
+ * @property Shapes\ServerlessJobConfig|null $ServerlessJobConfig
+ * @property Shapes\MlflowConfig|null $MlflowConfig
+ * @property Shapes\ModelPackageConfig|null $ModelPackageConfig
  */
 class CreateTrainingJobRequest extends Request
 {
@@ -59,7 +62,10 @@ class CreateTrainingJobRequest extends Request
      *     RetryStrategy?: Shapes\RetryStrategy|null,
      *     RemoteDebugConfig?: Shapes\RemoteDebugConfig|null,
      *     InfraCheckConfig?: Shapes\InfraCheckConfig|null,
-     *     SessionChainingConfig?: Shapes\SessionChainingConfig|null
+     *     SessionChainingConfig?: Shapes\SessionChainingConfig|null,
+     *     ServerlessJobConfig?: Shapes\ServerlessJobConfig|null,
+     *     MlflowConfig?: Shapes\MlflowConfig|null,
+     *     ModelPackageConfig?: Shapes\ModelPackageConfig|null
      * } $args
      */
     public function __construct(array $args)

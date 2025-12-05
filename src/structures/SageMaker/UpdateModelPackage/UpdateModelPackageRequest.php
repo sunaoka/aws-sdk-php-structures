@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ModelPackageArn
  * @property 'Approved'|'Rejected'|'PendingManualApproval'|null $ModelApprovalStatus
+ * @property 'Logged'|'Registered'|null $ModelPackageRegistrationType
  * @property string|null $ApprovalDescription
  * @property array<string, string>|null $CustomerMetadataProperties
  * @property list<string>|null $CustomerMetadataPropertiesToRemove
@@ -23,6 +24,7 @@ class UpdateModelPackageRequest extends Request
      * @param array{
      *     ModelPackageArn: string,
      *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'|null,
+     *     ModelPackageRegistrationType?: 'Logged'|'Registered'|null,
      *     ApprovalDescription?: string|null,
      *     CustomerMetadataProperties?: array<string, string>|null,
      *     CustomerMetadataPropertiesToRemove?: list<string>|null,

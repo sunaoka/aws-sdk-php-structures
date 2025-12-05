@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ParallelismConfiguration|null $ParallelismConfiguration
  * @property Shapes\SelectiveExecutionConfig|null $SelectiveExecutionConfig
  * @property int<1, max>|null $PipelineVersionId
+ * @property Shapes\MLflowConfiguration|null $MLflowConfig
  */
 class DescribePipelineExecutionResponse extends Response
 {

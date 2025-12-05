@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ModelPackageName
  * @property string|null $ModelPackageGroupName
  * @property int<1, max>|null $ModelPackageVersion
+ * @property 'Logged'|'Registered'|null $ModelPackageRegistrationType
  * @property string $ModelPackageArn
  * @property string|null $ModelPackageDescription
  * @property \Aws\Api\DateTimeResult $CreationTime

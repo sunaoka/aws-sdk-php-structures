@@ -39,6 +39,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DebugRuleConfiguration>|null $DebugRuleConfigurations
  * @property TensorBoardOutputConfig|null $TensorBoardOutputConfig
  * @property list<DebugRuleEvaluationStatus>|null $DebugRuleEvaluationStatuses
+ * @property string|null $OutputModelPackageArn
+ * @property ModelPackageConfig|null $ModelPackageConfig
  * @property ProfilerConfig|null $ProfilerConfig
  * @property array<string, string>|null $Environment
  * @property RetryStrategy|null $RetryStrategy
@@ -82,6 +84,8 @@ class TrainingJob extends Shape
      *     DebugRuleConfigurations?: list<DebugRuleConfiguration>|null,
      *     TensorBoardOutputConfig?: TensorBoardOutputConfig|null,
      *     DebugRuleEvaluationStatuses?: list<DebugRuleEvaluationStatus>|null,
+     *     OutputModelPackageArn?: string|null,
+     *     ModelPackageConfig?: ModelPackageConfig|null,
      *     ProfilerConfig?: ProfilerConfig|null,
      *     Environment?: array<string, string>|null,
      *     RetryStrategy?: RetryStrategy|null,

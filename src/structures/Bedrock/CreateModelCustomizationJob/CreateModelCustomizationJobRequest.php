@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property string|null $clientRequestToken
  * @property string $baseModelIdentifier
- * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'IMPORTED'|null $customizationType
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'REINFORCEMENT_FINE_TUNING'|'IMPORTED'|null $customizationType
  * @property string|null $customModelKmsKeyId
  * @property list<Shapes\Tag>|null $jobTags
  * @property list<Shapes\Tag>|null $customModelTags
@@ -30,7 +30,7 @@ class CreateModelCustomizationJobRequest extends Request
      *     roleArn: string,
      *     clientRequestToken?: string|null,
      *     baseModelIdentifier: string,
-     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'IMPORTED'|null,
+     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|'REINFORCEMENT_FINE_TUNING'|'IMPORTED'|null,
      *     customModelKmsKeyId?: string|null,
      *     jobTags?: list<Shapes\Tag>|null,
      *     customModelTags?: list<Shapes\Tag>|null,
