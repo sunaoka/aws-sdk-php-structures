@@ -29,6 +29,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $CreatedBy
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  * @property string|null $UpdatedBy
+ * @property array<string, Shapes\AttributeValue>|null $Extensions
  */
 class DescribeUserResponse extends Response
 {

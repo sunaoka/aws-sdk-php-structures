@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Iops
  * @property int|null $StorageThroughput
  * @property string|null $AwsBackupRecoveryPointArn
+ * @property list<Tag>|null $TagList
  */
 class DBClusterAutomatedBackup extends Shape
 {
@@ -59,7 +60,8 @@ class DBClusterAutomatedBackup extends Shape
      *     StorageType?: string|null,
      *     Iops?: int|null,
      *     StorageThroughput?: int|null,
-     *     AwsBackupRecoveryPointArn?: string|null
+     *     AwsBackupRecoveryPointArn?: string|null,
+     *     TagList?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

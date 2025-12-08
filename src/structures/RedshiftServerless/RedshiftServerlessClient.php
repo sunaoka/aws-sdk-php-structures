@@ -25,6 +25,7 @@ class RedshiftServerlessClient extends \Aws\RedshiftServerless\RedshiftServerles
     use DeleteWorkgroup\DeleteWorkgroupTrait;
     use GetCustomDomainAssociation\GetCustomDomainAssociationTrait;
     use GetEndpointAccess\GetEndpointAccessTrait;
+    use GetIdentityCenterAuthToken\GetIdentityCenterAuthTokenTrait;
     use GetNamespace\GetNamespaceTrait;
     use GetRecoveryPoint\GetRecoveryPointTrait;
     use GetReservation\GetReservationTrait;

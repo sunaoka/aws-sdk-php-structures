@@ -61,6 +61,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $MasterUserSecretKmsKeyId
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  */
 class CreateDBClusterRequest extends Request
@@ -123,6 +124,7 @@ class CreateDBClusterRequest extends Request
      *     MasterUserSecretKmsKeyId?: string|null,
      *     CACertificateIdentifier?: string|null,
      *     EngineLifecycleSupport?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null
      * } $args
      */

@@ -40,6 +40,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class RestoreDBClusterFromSnapshotRequest extends Request
 {
@@ -79,7 +80,8 @@ class RestoreDBClusterFromSnapshotRequest extends Request
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

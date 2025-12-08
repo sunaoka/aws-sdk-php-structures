@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\ResetNotificationSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\NotificationSettingKey> $notificationSettingKeys
  * @property string $trustAnchorId
+ * @property list<Shapes\NotificationSettingKey> $notificationSettingKeys
  */
 class ResetNotificationSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     notificationSettingKeys: list<Shapes\NotificationSettingKey>,
-     *     trustAnchorId: string
+     *     trustAnchorId: string,
+     *     notificationSettingKeys: list<Shapes\NotificationSettingKey>
      * } $args
      */
     public function __construct(array $args)
