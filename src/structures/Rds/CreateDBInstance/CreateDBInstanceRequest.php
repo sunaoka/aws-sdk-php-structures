@@ -69,6 +69,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $MultiTenant
  * @property bool|null $DedicatedLogVolume
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
  */
@@ -140,6 +141,7 @@ class CreateDBInstanceRequest extends Request
      *     MultiTenant?: bool|null,
      *     DedicatedLogVolume?: bool|null,
      *     EngineLifecycleSupport?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null,
      *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null
      * } $args

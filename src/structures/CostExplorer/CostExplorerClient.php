@@ -38,6 +38,7 @@ class CostExplorerClient extends \Aws\CostExplorer\CostExplorerClient
     use ListCostAllocationTagBackfillHistory\ListCostAllocationTagBackfillHistoryTrait;
     use ListCostAllocationTags\ListCostAllocationTagsTrait;
     use ListCostCategoryDefinitions\ListCostCategoryDefinitionsTrait;
+    use ListCostCategoryResourceAssociations\ListCostCategoryResourceAssociationsTrait;
     use ListSavingsPlansPurchaseRecommendationGeneration\ListSavingsPlansPurchaseRecommendationGenerationTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ProvideAnomalyFeedback\ProvideAnomalyFeedbackTrait;

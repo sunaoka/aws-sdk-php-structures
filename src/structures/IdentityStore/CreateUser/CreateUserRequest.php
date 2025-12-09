@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Photo>|null $Photos
  * @property string|null $Website
  * @property string|null $Birthdate
+ * @property array<string, Shapes\AttributeValue>|null $Extensions
  */
 class CreateUserRequest extends Request
 {
@@ -43,7 +44,8 @@ class CreateUserRequest extends Request
      *     Timezone?: string|null,
      *     Photos?: list<Shapes\Photo>|null,
      *     Website?: string|null,
-     *     Birthdate?: string|null
+     *     Birthdate?: string|null,
+     *     Extensions?: array<string, Shapes\AttributeValue>|null
      * } $args
      */
     public function __construct(array $args)

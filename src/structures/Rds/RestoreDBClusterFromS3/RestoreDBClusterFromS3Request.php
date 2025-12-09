@@ -42,6 +42,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class RestoreDBClusterFromS3Request extends Request
 {
@@ -83,7 +84,8 @@ class RestoreDBClusterFromS3Request extends Request
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)
