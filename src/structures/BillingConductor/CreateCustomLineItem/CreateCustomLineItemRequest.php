@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Tags
  * @property Shapes\CustomLineItemChargeDetails $ChargeDetails
  * @property string|null $AccountId
- * @property 'CONSOLIDATED'|null $ComputationRule
+ * @property 'ITEMIZED'|'CONSOLIDATED'|null $ComputationRule
  * @property Shapes\PresentationObject|null $PresentationDetails
  */
 class CreateCustomLineItemRequest extends Request
@@ -28,7 +28,7 @@ class CreateCustomLineItemRequest extends Request
      *     Tags?: array<string, string>|null,
      *     ChargeDetails: Shapes\CustomLineItemChargeDetails,
      *     AccountId?: string|null,
-     *     ComputationRule?: 'CONSOLIDATED'|null,
+     *     ComputationRule?: 'ITEMIZED'|'CONSOLIDATED'|null,
      *     PresentationDetails?: Shapes\PresentationObject|null
      * } $args
      */

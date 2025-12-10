@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $statusReason
  * @property string|null $cloudVmClusterArn
  * @property string|null $cloudExadataInfrastructureId
+ * @property string|null $cloudExadataInfrastructureArn
  * @property string|null $clusterName
  * @property int|null $cpuCoreCount
  * @property DataCollectionOptions|null $dataCollectionOptions
@@ -43,6 +44,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $timeZone
  * @property list<string>|null $vipIds
  * @property string|null $odbNetworkId
+ * @property string|null $odbNetworkArn
  * @property float|null $percentProgress
  * @property 'ECPU'|'OCPU'|null $computeModel
  * @property list<IamRole>|null $iamRoles
@@ -57,6 +59,7 @@ class CloudVmCluster extends Shape
      *     statusReason?: string|null,
      *     cloudVmClusterArn?: string|null,
      *     cloudExadataInfrastructureId?: string|null,
+     *     cloudExadataInfrastructureArn?: string|null,
      *     clusterName?: string|null,
      *     cpuCoreCount?: int|null,
      *     dataCollectionOptions?: DataCollectionOptions|null,
@@ -89,6 +92,7 @@ class CloudVmCluster extends Shape
      *     timeZone?: string|null,
      *     vipIds?: list<string>|null,
      *     odbNetworkId?: string|null,
+     *     odbNetworkArn?: string|null,
      *     percentProgress?: float|null,
      *     computeModel?: 'ECPU'|'OCPU'|null,
      *     iamRoles?: list<IamRole>|null

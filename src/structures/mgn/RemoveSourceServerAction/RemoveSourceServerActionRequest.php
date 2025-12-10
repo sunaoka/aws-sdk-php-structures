@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\mgn\RemoveSourceServerAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $accountID
- * @property string $actionID
  * @property string $sourceServerID
+ * @property string $actionID
+ * @property string|null $accountID
  */
 class RemoveSourceServerActionRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string|null,
+     *     sourceServerID: string,
      *     actionID: string,
-     *     sourceServerID: string
+     *     accountID?: string|null
      * } $args
      */
     public function __construct(array $args)

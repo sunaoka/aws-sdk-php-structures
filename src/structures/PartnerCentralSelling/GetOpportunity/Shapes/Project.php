@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OtherCompetitorNames
  * @property string|null $OtherSolutionDescription
  * @property string|null $AdditionalComments
+ * @property 'aws-eusc'|null $AwsPartition
  */
 class Project extends Shape
 {
@@ -33,7 +34,8 @@ class Project extends Shape
      *     CompetitorName?: 'Oracle Cloud'|'On-Prem'|'Co-location'|'Akamai'|'AliCloud'|'Google Cloud Platform'|'IBM Softlayer'|'Microsoft Azure'|'Other- Cost Optimization'|'No Competition'|'*Other'|null,
      *     OtherCompetitorNames?: string|null,
      *     OtherSolutionDescription?: string|null,
-     *     AdditionalComments?: string|null
+     *     AdditionalComments?: string|null,
+     *     AwsPartition?: 'aws-eusc'|null
      * } $args
      */
     public function __construct(array $args = [])

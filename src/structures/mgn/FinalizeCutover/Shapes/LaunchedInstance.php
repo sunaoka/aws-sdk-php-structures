@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ec2InstanceID
- * @property 'WAITING'|'SUCCEEDED'|'UNKNOWN'|'STOPPED'|null $firstBoot
  * @property string|null $jobID
+ * @property 'WAITING'|'SUCCEEDED'|'UNKNOWN'|'STOPPED'|null $firstBoot
  */
 class LaunchedInstance extends Shape
 {
     /**
      * @param array{
      *     ec2InstanceID?: string|null,
-     *     firstBoot?: 'WAITING'|'SUCCEEDED'|'UNKNOWN'|'STOPPED'|null,
-     *     jobID?: string|null
+     *     jobID?: string|null,
+     *     firstBoot?: 'WAITING'|'SUCCEEDED'|'UNKNOWN'|'STOPPED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\mgn\CreateConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $cloudWatchLogGroupName
- * @property bool $cloudWatchOutputEnabled
- * @property string|null $outputS3BucketName
  * @property bool $s3OutputEnabled
+ * @property string|null $outputS3BucketName
+ * @property bool $cloudWatchOutputEnabled
+ * @property string|null $cloudWatchLogGroupName
  */
 class ConnectorSsmCommandConfig extends Shape
 {
     /**
      * @param array{
-     *     cloudWatchLogGroupName?: string|null,
-     *     cloudWatchOutputEnabled: bool,
+     *     s3OutputEnabled: bool,
      *     outputS3BucketName?: string|null,
-     *     s3OutputEnabled: bool
+     *     cloudWatchOutputEnabled: bool,
+     *     cloudWatchLogGroupName?: string|null
      * } $args
      */
     public function __construct(array $args)

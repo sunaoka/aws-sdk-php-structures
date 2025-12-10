@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\mgn\UpdateWave;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $accountID
- * @property string|null $description
- * @property string|null $name
  * @property string $waveID
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $accountID
  */
 class UpdateWaveRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string|null,
-     *     description?: string|null,
+     *     waveID: string,
      *     name?: string|null,
-     *     waveID: string
+     *     description?: string|null,
+     *     accountID?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,7 @@ class AccountClient extends \Aws\Account\AccountClient
     use GetAccountInformation\GetAccountInformationTrait;
     use GetAlternateContact\GetAlternateContactTrait;
     use GetContactInformation\GetContactInformationTrait;
+    use GetGovCloudAccountInformation\GetGovCloudAccountInformationTrait;
     use GetPrimaryEmail\GetPrimaryEmailTrait;
     use GetRegionOptStatus\GetRegionOptStatusTrait;
     use ListRegions\ListRegionsTrait;
