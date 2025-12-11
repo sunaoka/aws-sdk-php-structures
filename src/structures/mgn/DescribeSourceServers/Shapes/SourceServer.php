@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeSourceServers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $applicationID
- * @property string|null $arn
- * @property SourceServerConnectorAction|null $connectorAction
- * @property DataReplicationInfo|null $dataReplicationInfo
- * @property string|null $fqdnForActionFramework
- * @property bool|null $isArchived
- * @property LaunchedInstance|null $launchedInstance
- * @property LifeCycle|null $lifeCycle
- * @property 'AGENT_BASED'|'SNAPSHOT_SHIPPING'|null $replicationType
- * @property SourceProperties|null $sourceProperties
  * @property string|null $sourceServerID
+ * @property string|null $arn
+ * @property bool|null $isArchived
  * @property array<string, string>|null $tags
- * @property string|null $userProvidedID
+ * @property LaunchedInstance|null $launchedInstance
+ * @property DataReplicationInfo|null $dataReplicationInfo
+ * @property LifeCycle|null $lifeCycle
+ * @property SourceProperties|null $sourceProperties
+ * @property 'AGENT_BASED'|'SNAPSHOT_SHIPPING'|null $replicationType
  * @property string|null $vcenterClientID
+ * @property string|null $applicationID
+ * @property string|null $userProvidedID
+ * @property string|null $fqdnForActionFramework
+ * @property SourceServerConnectorAction|null $connectorAction
  */
 class SourceServer extends Shape
 {
     /**
      * @param array{
-     *     applicationID?: string|null,
-     *     arn?: string|null,
-     *     connectorAction?: SourceServerConnectorAction|null,
-     *     dataReplicationInfo?: DataReplicationInfo|null,
-     *     fqdnForActionFramework?: string|null,
-     *     isArchived?: bool|null,
-     *     launchedInstance?: LaunchedInstance|null,
-     *     lifeCycle?: LifeCycle|null,
-     *     replicationType?: 'AGENT_BASED'|'SNAPSHOT_SHIPPING'|null,
-     *     sourceProperties?: SourceProperties|null,
      *     sourceServerID?: string|null,
+     *     arn?: string|null,
+     *     isArchived?: bool|null,
      *     tags?: array<string, string>|null,
+     *     launchedInstance?: LaunchedInstance|null,
+     *     dataReplicationInfo?: DataReplicationInfo|null,
+     *     lifeCycle?: LifeCycle|null,
+     *     sourceProperties?: SourceProperties|null,
+     *     replicationType?: 'AGENT_BASED'|'SNAPSHOT_SHIPPING'|null,
+     *     vcenterClientID?: string|null,
+     *     applicationID?: string|null,
      *     userProvidedID?: string|null,
-     *     vcenterClientID?: string|null
+     *     fqdnForActionFramework?: string|null,
+     *     connectorAction?: SourceServerConnectorAction|null
      * } $args
      */
     public function __construct(array $args = [])

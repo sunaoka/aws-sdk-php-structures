@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\RemoveTemplateAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $actionID
  * @property string $launchConfigurationTemplateID
+ * @property string $actionID
  */
 class RemoveTemplateActionRequest extends Request
 {
     /**
      * @param array{
-     *     actionID: string,
-     *     launchConfigurationTemplateID: string
+     *     launchConfigurationTemplateID: string,
+     *     actionID: string
      * } $args
      */
     public function __construct(array $args)

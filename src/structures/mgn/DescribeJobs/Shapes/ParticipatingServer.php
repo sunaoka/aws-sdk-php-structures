@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $sourceServerID
  * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null $launchStatus
  * @property string|null $launchedEc2InstanceID
  * @property PostLaunchActionsStatus|null $postLaunchActionsStatus
- * @property string $sourceServerID
  */
 class ParticipatingServer extends Shape
 {
     /**
      * @param array{
+     *     sourceServerID: string,
      *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null,
      *     launchedEc2InstanceID?: string|null,
-     *     postLaunchActionsStatus?: PostLaunchActionsStatus|null,
-     *     sourceServerID: string
+     *     postLaunchActionsStatus?: PostLaunchActionsStatus|null
      * } $args
      */
     public function __construct(array $args)

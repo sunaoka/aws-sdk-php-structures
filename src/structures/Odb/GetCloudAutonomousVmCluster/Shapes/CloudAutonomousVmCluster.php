@@ -8,12 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $cloudAutonomousVmClusterId
  * @property string|null $cloudAutonomousVmClusterArn
  * @property string|null $odbNetworkId
+ * @property string|null $odbNetworkArn
  * @property string|null $ociResourceAnchorName
  * @property float|null $percentProgress
  * @property string|null $displayName
  * @property 'AVAILABLE'|'FAILED'|'PROVISIONING'|'TERMINATED'|'TERMINATING'|'UPDATING'|'MAINTENANCE_IN_PROGRESS'|null $status
  * @property string|null $statusReason
  * @property string|null $cloudExadataInfrastructureId
+ * @property string|null $cloudExadataInfrastructureArn
  * @property float|null $autonomousDataStoragePercentage
  * @property double|null $autonomousDataStorageSizeInTBs
  * @property double|null $availableAutonomousDataStorageSizeInTBs
@@ -62,12 +64,14 @@ class CloudAutonomousVmCluster extends Shape
      *     cloudAutonomousVmClusterId: string,
      *     cloudAutonomousVmClusterArn?: string|null,
      *     odbNetworkId?: string|null,
+     *     odbNetworkArn?: string|null,
      *     ociResourceAnchorName?: string|null,
      *     percentProgress?: float|null,
      *     displayName?: string|null,
      *     status?: 'AVAILABLE'|'FAILED'|'PROVISIONING'|'TERMINATED'|'TERMINATING'|'UPDATING'|'MAINTENANCE_IN_PROGRESS'|null,
      *     statusReason?: string|null,
      *     cloudExadataInfrastructureId?: string|null,
+     *     cloudExadataInfrastructureArn?: string|null,
      *     autonomousDataStoragePercentage?: float|null,
      *     autonomousDataStorageSizeInTBs?: double|null,
      *     availableAutonomousDataStorageSizeInTBs?: double|null,

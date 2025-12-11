@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeSourceServers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $nextAttemptDateTime
  * @property string|null $startDateTime
+ * @property string|null $nextAttemptDateTime
  * @property list<DataReplicationInitiationStep>|null $steps
  */
 class DataReplicationInitiation extends Shape
 {
     /**
      * @param array{
-     *     nextAttemptDateTime?: string|null,
      *     startDateTime?: string|null,
+     *     nextAttemptDateTime?: string|null,
      *     steps?: list<DataReplicationInitiationStep>|null
      * } $args
      */

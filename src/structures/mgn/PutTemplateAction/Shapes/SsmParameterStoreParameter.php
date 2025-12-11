@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\PutTemplateAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'STRING'|'SECURE_STRING' $parameterType
  * @property string $parameterName
- * @property 'STRING' $parameterType
  */
 class SsmParameterStoreParameter extends Shape
 {
     /**
      * @param array{
-     *     parameterName: string,
-     *     parameterType: 'STRING'
+     *     parameterType: 'STRING'|'SECURE_STRING',
+     *     parameterName: string
      * } $args
      */
     public function __construct(array $args)

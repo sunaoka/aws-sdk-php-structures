@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property int|null $StartTime
  * @property string|null $AccountId
- * @property 'CONSOLIDATED'|null $ComputationRule
+ * @property 'ITEMIZED'|'CONSOLIDATED'|null $ComputationRule
  * @property PresentationObject|null $PresentationDetails
  */
 class CustomLineItemVersionListElement extends Shape
@@ -40,7 +40,7 @@ class CustomLineItemVersionListElement extends Shape
      *     Arn?: string|null,
      *     StartTime?: int|null,
      *     AccountId?: string|null,
-     *     ComputationRule?: 'CONSOLIDATED'|null,
+     *     ComputationRule?: 'ITEMIZED'|'CONSOLIDATED'|null,
      *     PresentationDetails?: PresentationObject|null
      * } $args
      */

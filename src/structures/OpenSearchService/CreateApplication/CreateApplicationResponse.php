@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\AppConfig>|null $appConfigs
  * @property list<Shapes\Tag>|null $tagList
  * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $kmsKeyArn
  */
 class CreateApplicationResponse extends Response
 {

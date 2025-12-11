@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\ArchiveApplication;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $accountID
  * @property string $applicationID
+ * @property string|null $accountID
  */
 class ArchiveApplicationRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string|null,
-     *     applicationID: string
+     *     applicationID: string,
+     *     accountID?: string|null
      * } $args
      */
     public function __construct(array $args)
