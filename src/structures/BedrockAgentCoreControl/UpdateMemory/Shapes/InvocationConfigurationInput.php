@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\UpdateMemory\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $topicArn
+ * @property string $payloadDeliveryBucketName
+ */
+class InvocationConfigurationInput extends Shape
+{
+    /**
+     * @param array{
+     *     topicArn: string,
+     *     payloadDeliveryBucketName: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

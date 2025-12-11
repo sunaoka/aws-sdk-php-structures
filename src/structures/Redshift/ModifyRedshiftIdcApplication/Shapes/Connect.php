@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Redshift\ModifyRedshiftIdcApplication\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property 'Enabled'|'Disabled' $Authorization
+ */
+class Connect extends Shape
+{
+    /**
+     * @param array{Authorization: 'Enabled'|'Disabled'} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

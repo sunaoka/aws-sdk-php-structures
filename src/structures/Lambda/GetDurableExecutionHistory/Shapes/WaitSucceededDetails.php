@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Lambda\GetDurableExecutionHistory\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property int<0, max>|null $Duration
+ */
+class WaitSucceededDetails extends Shape
+{
+    /**
+     * @param array{Duration?: int<0, max>|null} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}
