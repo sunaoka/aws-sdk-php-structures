@@ -1,0 +1,33 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\QConnect\RenderMessageTemplate\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $title
+ * @property MessageTemplateBodyContentProvider|null $body
+ * @property 'OPEN_APP'|'DEEP_LINK'|'URL'|null $action
+ * @property string|null $sound
+ * @property string|null $url
+ * @property string|null $mediaUrl
+ * @property MessageTemplateBodyContentProvider|null $rawContent
+ */
+class PushAPNSMessageTemplateContent extends Shape
+{
+    /**
+     * @param array{
+     *     title?: string|null,
+     *     body?: MessageTemplateBodyContentProvider|null,
+     *     action?: 'OPEN_APP'|'DEEP_LINK'|'URL'|null,
+     *     sound?: string|null,
+     *     url?: string|null,
+     *     mediaUrl?: string|null,
+     *     rawContent?: MessageTemplateBodyContentProvider|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}
