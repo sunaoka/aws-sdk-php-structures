@@ -15,6 +15,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $DnsIpAddresses
  * @property string|null $KerberosPrincipal
  * @property 'NTLM'|'KERBEROS'|null $AuthenticationType
+ * @property Shapes\ManagedSecretConfig|null $ManagedSecretConfig
+ * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
+ * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  */
 class DescribeLocationSmbResponse extends Response
 {

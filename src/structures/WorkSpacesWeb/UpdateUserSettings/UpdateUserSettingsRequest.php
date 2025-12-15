@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CookieSynchronizationConfiguration|null $cookieSynchronizationConfiguration
  * @property 'Disabled'|'Enabled'|null $deepLinkAllowed
  * @property Shapes\ToolbarConfiguration|null $toolbarConfiguration
+ * @property Shapes\BrandingConfigurationUpdateInput|null $brandingConfigurationInput
  */
 class UpdateUserSettingsRequest extends Request
 {
@@ -33,7 +34,8 @@ class UpdateUserSettingsRequest extends Request
      *     clientToken?: string|null,
      *     cookieSynchronizationConfiguration?: Shapes\CookieSynchronizationConfiguration|null,
      *     deepLinkAllowed?: 'Disabled'|'Enabled'|null,
-     *     toolbarConfiguration?: Shapes\ToolbarConfiguration|null
+     *     toolbarConfiguration?: Shapes\ToolbarConfiguration|null,
+     *     brandingConfigurationInput?: Shapes\BrandingConfigurationUpdateInput|null
      * } $args
      */
     public function __construct(array $args)

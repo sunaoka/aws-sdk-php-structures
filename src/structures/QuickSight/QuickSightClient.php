@@ -125,6 +125,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use GetDashboardEmbedUrl\GetDashboardEmbedUrlTrait;
     use GetFlowMetadata\GetFlowMetadataTrait;
     use GetFlowPermissions\GetFlowPermissionsTrait;
+    use GetIdentityContext\GetIdentityContextTrait;
     use GetSessionEmbedUrl\GetSessionEmbedUrlTrait;
     use ListActionConnectors\ListActionConnectorsTrait;
     use ListAnalyses\ListAnalysesTrait;

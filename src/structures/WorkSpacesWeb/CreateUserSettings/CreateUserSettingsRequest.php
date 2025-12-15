@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $additionalEncryptionContext
  * @property 'Disabled'|'Enabled'|null $deepLinkAllowed
  * @property Shapes\ToolbarConfiguration|null $toolbarConfiguration
+ * @property Shapes\BrandingConfigurationCreateInput|null $brandingConfigurationInput
  */
 class CreateUserSettingsRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateUserSettingsRequest extends Request
      *     customerManagedKey?: string|null,
      *     additionalEncryptionContext?: array<string, string>|null,
      *     deepLinkAllowed?: 'Disabled'|'Enabled'|null,
-     *     toolbarConfiguration?: Shapes\ToolbarConfiguration|null
+     *     toolbarConfiguration?: Shapes\ToolbarConfiguration|null,
+     *     brandingConfigurationInput?: Shapes\BrandingConfigurationCreateInput|null
      * } $args
      */
     public function __construct(array $args)

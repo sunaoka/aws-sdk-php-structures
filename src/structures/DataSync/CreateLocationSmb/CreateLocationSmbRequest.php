@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $User
  * @property string|null $Domain
  * @property string|null $Password
+ * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
+ * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  * @property list<string> $AgentArns
  * @property Shapes\SmbMountOptions|null $MountOptions
  * @property list<Shapes\TagListEntry>|null $Tags
@@ -28,6 +30,8 @@ class CreateLocationSmbRequest extends Request
      *     User?: string|null,
      *     Domain?: string|null,
      *     Password?: string|null,
+     *     CmkSecretConfig?: Shapes\CmkSecretConfig|null,
+     *     CustomSecretConfig?: Shapes\CustomSecretConfig|null,
      *     AgentArns: list<string>,
      *     MountOptions?: Shapes\SmbMountOptions|null,
      *     Tags?: list<Shapes\TagListEntry>|null,
