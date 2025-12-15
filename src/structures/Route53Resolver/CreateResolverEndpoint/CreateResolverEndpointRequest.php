@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
  * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
+ * @property bool|null $RniEnhancedMetricsEnabled
+ * @property bool|null $TargetNameServerMetricsEnabled
  */
 class CreateResolverEndpointRequest extends Request
 {
@@ -29,7 +31,9 @@ class CreateResolverEndpointRequest extends Request
      *     PreferredInstanceType?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
-     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null
+     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null,
+     *     RniEnhancedMetricsEnabled?: bool|null,
+     *     TargetNameServerMetricsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

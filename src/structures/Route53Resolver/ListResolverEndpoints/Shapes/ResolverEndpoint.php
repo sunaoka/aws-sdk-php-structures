@@ -21,6 +21,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PreferredInstanceType
  * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
  * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
+ * @property bool|null $RniEnhancedMetricsEnabled
+ * @property bool|null $TargetNameServerMetricsEnabled
  */
 class ResolverEndpoint extends Shape
 {
@@ -41,7 +43,9 @@ class ResolverEndpoint extends Shape
      *     OutpostArn?: string|null,
      *     PreferredInstanceType?: string|null,
      *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
-     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null
+     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null,
+     *     RniEnhancedMetricsEnabled?: bool|null,
+     *     TargetNameServerMetricsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

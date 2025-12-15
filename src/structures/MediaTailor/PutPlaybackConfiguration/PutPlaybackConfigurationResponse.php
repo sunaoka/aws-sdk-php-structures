@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $TranscodeProfileName
  * @property string|null $VideoContentSourceUrl
  * @property Shapes\AdConditioningConfiguration|null $AdConditioningConfiguration
+ * @property Shapes\AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
  */
 class PutPlaybackConfigurationResponse extends Response
 {
