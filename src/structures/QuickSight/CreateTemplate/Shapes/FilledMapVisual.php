@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ColumnHierarchy>|null $ColumnHierarchies
  * @property list<VisualCustomAction>|null $Actions
  * @property string|null $VisualContentAltText
+ * @property list<GeocodePreference>|null $GeocodingPreferences
  */
 class FilledMapVisual extends Shape
 {
@@ -25,7 +26,8 @@ class FilledMapVisual extends Shape
      *     ConditionalFormatting?: FilledMapConditionalFormatting|null,
      *     ColumnHierarchies?: list<ColumnHierarchy>|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     VisualContentAltText?: string|null
+     *     VisualContentAltText?: string|null,
+     *     GeocodingPreferences?: list<GeocodePreference>|null
      * } $args
      */
     public function __construct(array $args)

@@ -29,6 +29,15 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $FilesPrepared
  * @property Shapes\TaskExecutionFilesListedDetail|null $FilesListed
  * @property Shapes\TaskExecutionFilesFailedDetail|null $FilesFailed
+ * @property int|null $EstimatedFoldersToDelete
+ * @property int|null $EstimatedFoldersToTransfer
+ * @property int|null $FoldersSkipped
+ * @property int|null $FoldersPrepared
+ * @property int|null $FoldersTransferred
+ * @property int|null $FoldersVerified
+ * @property int|null $FoldersDeleted
+ * @property Shapes\TaskExecutionFoldersListedDetail|null $FoldersListed
+ * @property Shapes\TaskExecutionFoldersFailedDetail|null $FoldersFailed
  * @property \Aws\Api\DateTimeResult|null $LaunchTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  */

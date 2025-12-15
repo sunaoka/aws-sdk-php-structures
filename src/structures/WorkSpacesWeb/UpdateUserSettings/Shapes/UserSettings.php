@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $additionalEncryptionContext
  * @property 'Disabled'|'Enabled'|null $deepLinkAllowed
  * @property ToolbarConfiguration|null $toolbarConfiguration
+ * @property BrandingConfiguration|null $brandingConfiguration
  */
 class UserSettings extends Shape
 {
@@ -37,7 +38,8 @@ class UserSettings extends Shape
      *     customerManagedKey?: string|null,
      *     additionalEncryptionContext?: array<string, string>|null,
      *     deepLinkAllowed?: 'Disabled'|'Enabled'|null,
-     *     toolbarConfiguration?: ToolbarConfiguration|null
+     *     toolbarConfiguration?: ToolbarConfiguration|null,
+     *     brandingConfiguration?: BrandingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

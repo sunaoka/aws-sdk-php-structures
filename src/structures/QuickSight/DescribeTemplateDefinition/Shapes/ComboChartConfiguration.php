@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ChartAxisLabelOptions|null $SecondaryYAxisLabelOptions
  * @property SingleAxisOptions|null $SingleAxisOptions
  * @property ChartAxisLabelOptions|null $ColorLabelOptions
+ * @property ComboChartDefaultSeriesSettings|null $DefaultSeriesSettings
+ * @property list<ComboSeriesItem>|null $Series
  * @property LegendOptions|null $Legend
  * @property DataLabelOptions|null $BarDataLabels
  * @property DataLabelOptions|null $LineDataLabels
@@ -39,6 +41,8 @@ class ComboChartConfiguration extends Shape
      *     SecondaryYAxisLabelOptions?: ChartAxisLabelOptions|null,
      *     SingleAxisOptions?: SingleAxisOptions|null,
      *     ColorLabelOptions?: ChartAxisLabelOptions|null,
+     *     DefaultSeriesSettings?: ComboChartDefaultSeriesSettings|null,
+     *     Series?: list<ComboSeriesItem>|null,
      *     Legend?: LegendOptions|null,
      *     BarDataLabels?: DataLabelOptions|null,
      *     LineDataLabels?: DataLabelOptions|null,

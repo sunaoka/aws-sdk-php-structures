@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CookieSynchronizationConfiguration|null $cookieSynchronizationConfiguration
  * @property 'Disabled'|'Enabled'|null $deepLinkAllowed
  * @property ToolbarConfiguration|null $toolbarConfiguration
+ * @property BrandingConfiguration|null $brandingConfiguration
  */
 class UserSettingsSummary extends Shape
 {
@@ -31,7 +32,8 @@ class UserSettingsSummary extends Shape
      *     idleDisconnectTimeoutInMinutes?: int<0, 60>|null,
      *     cookieSynchronizationConfiguration?: CookieSynchronizationConfiguration|null,
      *     deepLinkAllowed?: 'Disabled'|'Enabled'|null,
-     *     toolbarConfiguration?: ToolbarConfiguration|null
+     *     toolbarConfiguration?: ToolbarConfiguration|null,
+     *     brandingConfiguration?: BrandingConfiguration|null
      * } $args
      */
     public function __construct(array $args)
