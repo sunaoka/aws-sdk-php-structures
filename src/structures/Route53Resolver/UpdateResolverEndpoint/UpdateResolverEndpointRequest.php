@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
  * @property list<Shapes\UpdateIpAddress>|null $UpdateIpAddresses
  * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
+ * @property bool|null $RniEnhancedMetricsEnabled
+ * @property bool|null $TargetNameServerMetricsEnabled
  */
 class UpdateResolverEndpointRequest extends Request
 {
@@ -19,7 +21,9 @@ class UpdateResolverEndpointRequest extends Request
      *     Name?: string|null,
      *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
      *     UpdateIpAddresses?: list<Shapes\UpdateIpAddress>|null,
-     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null
+     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null,
+     *     RniEnhancedMetricsEnabled?: bool|null,
+     *     TargetNameServerMetricsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

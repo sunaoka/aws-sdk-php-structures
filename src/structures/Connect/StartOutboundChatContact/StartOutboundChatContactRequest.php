@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<60, 10080>|null $ChatDurationInMinutes
  * @property Shapes\ParticipantDetails|null $ParticipantDetails
  * @property Shapes\ChatMessage|null $InitialSystemMessage
+ * @property Shapes\TemplatedMessageConfig|null $InitialTemplatedSystemMessage
  * @property string|null $RelatedContactId
  * @property list<string>|null $SupportedMessagingContentTypes
  * @property string|null $ClientToken
@@ -31,6 +32,7 @@ class StartOutboundChatContactRequest extends Request
      *     ChatDurationInMinutes?: int<60, 10080>|null,
      *     ParticipantDetails?: Shapes\ParticipantDetails|null,
      *     InitialSystemMessage?: Shapes\ChatMessage|null,
+     *     InitialTemplatedSystemMessage?: Shapes\TemplatedMessageConfig|null,
      *     RelatedContactId?: string|null,
      *     SupportedMessagingContentTypes?: list<string>|null,
      *     ClientToken?: string|null

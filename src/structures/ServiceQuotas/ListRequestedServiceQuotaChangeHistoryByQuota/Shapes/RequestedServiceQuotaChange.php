@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
+ * @property 'AutomaticManagement'|null $RequestType
  * @property string|null $CaseId
  * @property string|null $ServiceCode
  * @property string|null $ServiceName
@@ -27,6 +28,7 @@ class RequestedServiceQuotaChange extends Shape
     /**
      * @param array{
      *     Id?: string|null,
+     *     RequestType?: 'AutomaticManagement'|null,
      *     CaseId?: string|null,
      *     ServiceCode?: string|null,
      *     ServiceName?: string|null,

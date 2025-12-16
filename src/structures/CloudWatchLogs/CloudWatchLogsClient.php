@@ -7,8 +7,10 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use AssociateKmsKey\AssociateKmsKeyTrait;
     use AssociateSourceToS3TableIntegration\AssociateSourceToS3TableIntegrationTrait;
     use CancelExportTask\CancelExportTaskTrait;
+    use CancelImportTask\CancelImportTaskTrait;
     use CreateDelivery\CreateDeliveryTrait;
     use CreateExportTask\CreateExportTaskTrait;
+    use CreateImportTask\CreateImportTaskTrait;
     use CreateLogAnomalyDetector\CreateLogAnomalyDetectorTrait;
     use CreateLogGroup\CreateLogGroupTrait;
     use CreateLogStream\CreateLogStreamTrait;
@@ -40,6 +42,8 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use DescribeDestinations\DescribeDestinationsTrait;
     use DescribeExportTasks\DescribeExportTasksTrait;
     use DescribeFieldIndexes\DescribeFieldIndexesTrait;
+    use DescribeImportTaskBatches\DescribeImportTaskBatchesTrait;
+    use DescribeImportTasks\DescribeImportTasksTrait;
     use DescribeIndexPolicies\DescribeIndexPoliciesTrait;
     use DescribeLogGroups\DescribeLogGroupsTrait;
     use DescribeLogStreams\DescribeLogStreamsTrait;
