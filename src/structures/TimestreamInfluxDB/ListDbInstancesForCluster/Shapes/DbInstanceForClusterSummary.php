@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $id
  * @property string $name
  * @property string $arn
- * @property 'CREATING'|'AVAILABLE'|'DELETING'|'MODIFYING'|'UPDATING'|'DELETED'|'FAILED'|'UPDATING_DEPLOYMENT_TYPE'|'UPDATING_INSTANCE_TYPE'|'MAINTENANCE'|null $status
+ * @property 'CREATING'|'AVAILABLE'|'DELETING'|'MODIFYING'|'UPDATING'|'DELETED'|'FAILED'|'UPDATING_DEPLOYMENT_TYPE'|'UPDATING_INSTANCE_TYPE'|'MAINTENANCE'|'REBOOTING'|'REBOOT_FAILED'|null $status
  * @property string|null $endpoint
  * @property int<1024, 65535>|null $port
  * @property 'IPV4'|'DUAL'|null $networkType
@@ -26,7 +26,7 @@ class DbInstanceForClusterSummary extends Shape
      *     id: string,
      *     name: string,
      *     arn: string,
-     *     status?: 'CREATING'|'AVAILABLE'|'DELETING'|'MODIFYING'|'UPDATING'|'DELETED'|'FAILED'|'UPDATING_DEPLOYMENT_TYPE'|'UPDATING_INSTANCE_TYPE'|'MAINTENANCE'|null,
+     *     status?: 'CREATING'|'AVAILABLE'|'DELETING'|'MODIFYING'|'UPDATING'|'DELETED'|'FAILED'|'UPDATING_DEPLOYMENT_TYPE'|'UPDATING_INSTANCE_TYPE'|'MAINTENANCE'|'REBOOTING'|'REBOOT_FAILED'|null,
      *     endpoint?: string|null,
      *     port?: int<1024, 65535>|null,
      *     networkType?: 'IPV4'|'DUAL'|null,
