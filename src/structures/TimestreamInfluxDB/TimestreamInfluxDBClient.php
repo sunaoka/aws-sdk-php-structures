@@ -17,6 +17,8 @@ class TimestreamInfluxDBClient extends \Aws\TimestreamInfluxDB\TimestreamInfluxD
     use ListDbInstancesForCluster\ListDbInstancesForClusterTrait;
     use ListDbParameterGroups\ListDbParameterGroupsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use RebootDbCluster\RebootDbClusterTrait;
+    use RebootDbInstance\RebootDbInstanceTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateDbCluster\UpdateDbClusterTrait;

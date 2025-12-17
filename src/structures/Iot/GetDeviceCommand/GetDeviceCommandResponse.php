@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $description
  * @property list<Shapes\CommandParameter>|null $mandatoryParameters
  * @property Shapes\CommandPayload|null $payload
+ * @property string|null $payloadTemplate
+ * @property Shapes\CommandPreprocessor|null $preprocessor
  * @property string|null $roleArn
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
