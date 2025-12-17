@@ -29,6 +29,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null $InterlaceMode
  * @property int<1000, 1466400000>|null $MaxBitrate
  * @property int<0, 30>|null $MinIInterval
+ * @property 'ENABLED'|'DISABLED'|null $MvOverPictureBoundaries
+ * @property 'ENABLED'|'DISABLED'|null $MvTemporalPredictor
  * @property int<0, 7>|null $NumberBFramesBetweenReferenceFrames
  * @property int<1, 6>|null $NumberReferenceFrames
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $ParControl
@@ -47,7 +49,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'SOFT'|'HARD'|null $Telecine
  * @property 'DISABLED'|'ENABLED'|null $TemporalAdaptiveQuantization
  * @property 'DISABLED'|'ENABLED'|null $TemporalIds
+ * @property int<64, 2160>|null $TileHeight
+ * @property 'NONE'|'PADDED'|null $TilePadding
+ * @property int<256, 3840>|null $TileWidth
  * @property 'DISABLED'|'ENABLED'|null $Tiles
+ * @property 'AUTO'|'TREE_SIZE_32X32'|null $TreeBlockSize
  * @property 'DISABLED'|'ENABLED'|null $UnregisteredSeiTimecode
  * @property 'HVC1'|'HEV1'|null $WriteMp4PackagingType
  */
@@ -79,6 +85,8 @@ class H265Settings extends Shape
      *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null,
      *     MaxBitrate?: int<1000, 1466400000>|null,
      *     MinIInterval?: int<0, 30>|null,
+     *     MvOverPictureBoundaries?: 'ENABLED'|'DISABLED'|null,
+     *     MvTemporalPredictor?: 'ENABLED'|'DISABLED'|null,
      *     NumberBFramesBetweenReferenceFrames?: int<0, 7>|null,
      *     NumberReferenceFrames?: int<1, 6>|null,
      *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
@@ -97,7 +105,11 @@ class H265Settings extends Shape
      *     Telecine?: 'NONE'|'SOFT'|'HARD'|null,
      *     TemporalAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
      *     TemporalIds?: 'DISABLED'|'ENABLED'|null,
+     *     TileHeight?: int<64, 2160>|null,
+     *     TilePadding?: 'NONE'|'PADDED'|null,
+     *     TileWidth?: int<256, 3840>|null,
      *     Tiles?: 'DISABLED'|'ENABLED'|null,
+     *     TreeBlockSize?: 'AUTO'|'TREE_SIZE_32X32'|null,
      *     UnregisteredSeiTimecode?: 'DISABLED'|'ENABLED'|null,
      *     WriteMp4PackagingType?: 'HVC1'|'HEV1'|null
      * } $args

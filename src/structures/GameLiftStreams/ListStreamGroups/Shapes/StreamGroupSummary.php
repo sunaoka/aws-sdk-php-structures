@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Id
  * @property string|null $Description
  * @property DefaultApplication|null $DefaultApplication
- * @property 'gen4n_high'|'gen4n_ultra'|'gen4n_win2022'|'gen5n_high'|'gen5n_ultra'|'gen5n_win2022'|null $StreamClass
+ * @property 'gen4n_high'|'gen4n_ultra'|'gen4n_win2022'|'gen5n_high'|'gen5n_ultra'|'gen5n_win2022'|'gen6n_small'|'gen6n_medium'|'gen6n_high'|'gen6n_ultra'|'gen6n_ultra_win2022'|'gen6n_pro'|'gen6n_pro_win2022'|null $StreamClass
  * @property 'ACTIVATING'|'UPDATING_LOCATIONS'|'ACTIVE'|'ACTIVE_WITH_ERRORS'|'ERROR'|'DELETING'|'EXPIRED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
@@ -23,7 +23,7 @@ class StreamGroupSummary extends Shape
      *     Id?: string|null,
      *     Description?: string|null,
      *     DefaultApplication?: DefaultApplication|null,
-     *     StreamClass?: 'gen4n_high'|'gen4n_ultra'|'gen4n_win2022'|'gen5n_high'|'gen5n_ultra'|'gen5n_win2022'|null,
+     *     StreamClass?: 'gen4n_high'|'gen4n_ultra'|'gen4n_win2022'|'gen5n_high'|'gen5n_ultra'|'gen5n_win2022'|'gen6n_small'|'gen6n_medium'|'gen6n_high'|'gen6n_ultra'|'gen6n_ultra_win2022'|'gen6n_pro'|'gen6n_pro_win2022'|null,
      *     Status?: 'ACTIVATING'|'UPDATING_LOCATIONS'|'ACTIVE'|'ACTIVE_WITH_ERRORS'|'ERROR'|'DELETING'|'EXPIRED'|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,

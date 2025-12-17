@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DvbSubSourceSettings|null $DvbSubSourceSettings
  * @property EmbeddedSourceSettings|null $EmbeddedSourceSettings
  * @property FileSourceSettings|null $FileSourceSettings
- * @property 'ANCILLARY'|'DVB_SUB'|'EMBEDDED'|'SCTE20'|'SCC'|'TTML'|'STL'|'SRT'|'SMI'|'SMPTE_TT'|'TELETEXT'|'NULL_SOURCE'|'IMSC'|'WEBVTT'|null $SourceType
+ * @property 'ANCILLARY'|'DVB_SUB'|'EMBEDDED'|'SCTE20'|'SCC'|'TTML'|'STL'|'SRT'|'SMI'|'SMPTE_TT'|'TELETEXT'|'NULL_SOURCE'|'IMSC'|'WEBVTT'|'TT_3GPP'|null $SourceType
  * @property TeletextSourceSettings|null $TeletextSourceSettings
  * @property TrackSourceSettings|null $TrackSourceSettings
  * @property WebvttHlsSourceSettings|null $WebvttHlsSourceSettings
@@ -22,7 +22,7 @@ class CaptionSourceSettings extends Shape
      *     DvbSubSourceSettings?: DvbSubSourceSettings|null,
      *     EmbeddedSourceSettings?: EmbeddedSourceSettings|null,
      *     FileSourceSettings?: FileSourceSettings|null,
-     *     SourceType?: 'ANCILLARY'|'DVB_SUB'|'EMBEDDED'|'SCTE20'|'SCC'|'TTML'|'STL'|'SRT'|'SMI'|'SMPTE_TT'|'TELETEXT'|'NULL_SOURCE'|'IMSC'|'WEBVTT'|null,
+     *     SourceType?: 'ANCILLARY'|'DVB_SUB'|'EMBEDDED'|'SCTE20'|'SCC'|'TTML'|'STL'|'SRT'|'SMI'|'SMPTE_TT'|'TELETEXT'|'NULL_SOURCE'|'IMSC'|'WEBVTT'|'TT_3GPP'|null,
      *     TeletextSourceSettings?: TeletextSourceSettings|null,
      *     TrackSourceSettings?: TrackSourceSettings|null,
      *     WebvttHlsSourceSettings?: WebvttHlsSourceSettings|null

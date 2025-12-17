@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 86400>|null $SessionLengthSeconds
  * @property list<string>|null $AdditionalLaunchArgs
  * @property array<string, string>|null $AdditionalEnvironmentVariables
+ * @property Shapes\PerformanceStatsConfiguration|null $PerformanceStatsConfiguration
  */
 class StartStreamSessionRequest extends Request
 {
@@ -33,7 +34,8 @@ class StartStreamSessionRequest extends Request
      *     ConnectionTimeoutSeconds?: int<1, 3600>|null,
      *     SessionLengthSeconds?: int<1, 86400>|null,
      *     AdditionalLaunchArgs?: list<string>|null,
-     *     AdditionalEnvironmentVariables?: array<string, string>|null
+     *     AdditionalEnvironmentVariables?: array<string, string>|null,
+     *     PerformanceStatsConfiguration?: Shapes\PerformanceStatsConfiguration|null
      * } $args
      */
     public function __construct(array $args)
