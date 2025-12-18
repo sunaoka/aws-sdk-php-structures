@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ImportTr34KeyBlock|null $Tr34KeyBlock
  * @property ImportKeyCryptogram|null $KeyCryptogram
  * @property ImportDiffieHellmanTr31KeyBlock|null $DiffieHellmanTr31KeyBlock
+ * @property ImportAs2805KeyCryptogram|null $As2805KeyCryptogram
  */
 class ImportKeyMaterial extends Shape
 {
@@ -21,7 +22,8 @@ class ImportKeyMaterial extends Shape
      *     Tr31KeyBlock?: ImportTr31KeyBlock|null,
      *     Tr34KeyBlock?: ImportTr34KeyBlock|null,
      *     KeyCryptogram?: ImportKeyCryptogram|null,
-     *     DiffieHellmanTr31KeyBlock?: ImportDiffieHellmanTr31KeyBlock|null
+     *     DiffieHellmanTr31KeyBlock?: ImportDiffieHellmanTr31KeyBlock|null,
+     *     As2805KeyCryptogram?: ImportAs2805KeyCryptogram|null
      * } $args
      */
     public function __construct(array $args = [])

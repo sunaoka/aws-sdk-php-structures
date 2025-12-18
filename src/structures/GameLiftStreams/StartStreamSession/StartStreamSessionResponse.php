@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<1, 86400>|null $SessionLengthSeconds
  * @property list<string>|null $AdditionalLaunchArgs
  * @property array<string, string>|null $AdditionalEnvironmentVariables
+ * @property Shapes\PerformanceStatsConfiguration|null $PerformanceStatsConfiguration
  * @property string|null $LogFileLocationUri
  * @property string|null $WebSdkProtocolUrl
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 1001>|null $FramerateDenominator
  * @property int<1, 60000>|null $FramerateNumerator
  * @property int<32, 8192>|null $Height
+ * @property string|null $ImageInput
  * @property int<32000, 48000>|null $SampleRate
  * @property int<32, 8192>|null $Width
  */
@@ -22,6 +23,7 @@ class InputVideoGenerator extends Shape
      *     FramerateDenominator?: int<1, 1001>|null,
      *     FramerateNumerator?: int<1, 60000>|null,
      *     Height?: int<32, 8192>|null,
+     *     ImageInput?: string|null,
      *     SampleRate?: int<32000, 48000>|null,
      *     Width?: int<32, 8192>|null
      * } $args

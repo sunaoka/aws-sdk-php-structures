@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $UltraServerId
  * @property string $UltraServerType
  * @property string $AvailabilityZone
- * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|'ml.p5.4xlarge' $InstanceType
+ * @property 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|'ml.p5.4xlarge'|'ml.p6-b300.48xlarge' $InstanceType
  * @property int<0, max> $TotalInstanceCount
  * @property int<0, max>|null $ConfiguredSpareInstanceCount
  * @property int<0, max>|null $AvailableInstanceCount
@@ -24,7 +24,7 @@ class UltraServer extends Shape
      *     UltraServerId: string,
      *     UltraServerType: string,
      *     AvailabilityZone: string,
-     *     InstanceType: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|'ml.p5.4xlarge',
+     *     InstanceType: 'ml.p4d.24xlarge'|'ml.p5.48xlarge'|'ml.p5e.48xlarge'|'ml.p5en.48xlarge'|'ml.trn1.32xlarge'|'ml.trn2.48xlarge'|'ml.p6-b200.48xlarge'|'ml.p4de.24xlarge'|'ml.p6e-gb200.36xlarge'|'ml.p5.4xlarge'|'ml.p6-b300.48xlarge',
      *     TotalInstanceCount: int<0, max>,
      *     ConfiguredSpareInstanceCount?: int<0, max>|null,
      *     AvailableInstanceCount?: int<0, max>|null,
