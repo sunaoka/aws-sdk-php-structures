@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InstanceRequirements|null $InstanceRequirements
  * @property string|null $ImageId
  * @property list<BlockDeviceMappingResponse>|null $BlockDeviceMappings
+ * @property string|null $AvailabilityZoneId
  */
 class FleetLaunchTemplateOverrides extends Shape
 {
@@ -29,7 +30,8 @@ class FleetLaunchTemplateOverrides extends Shape
      *     Placement?: PlacementResponse|null,
      *     InstanceRequirements?: InstanceRequirements|null,
      *     ImageId?: string|null,
-     *     BlockDeviceMappings?: list<BlockDeviceMappingResponse>|null
+     *     BlockDeviceMappings?: list<BlockDeviceMappingResponse>|null,
+     *     AvailabilityZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TargetConfiguration $targetConfiguration
  * @property list<Shapes\CredentialProviderConfiguration> $credentialProviderConfigurations
  * @property \Aws\Api\DateTimeResult|null $lastSynchronizedAt
+ * @property Shapes\MetadataConfiguration|null $metadataConfiguration
  */
 class GetGatewayTargetResponse extends Response
 {

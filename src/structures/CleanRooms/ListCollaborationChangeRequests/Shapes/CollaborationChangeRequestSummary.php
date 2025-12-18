@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'APPROVED'|'CANCELLED'|'DENIED'|'COMMITTED' $status
  * @property bool $isAutoApproved
  * @property list<Change> $changes
+ * @property array<string, ApprovalStatusDetails>|null $approvals
  */
 class CollaborationChangeRequestSummary extends Shape
 {
@@ -23,7 +24,8 @@ class CollaborationChangeRequestSummary extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     status: 'PENDING'|'APPROVED'|'CANCELLED'|'DENIED'|'COMMITTED',
      *     isAutoApproved: bool,
-     *     changes: list<Change>
+     *     changes: list<Change>,
+     *     approvals?: array<string, ApprovalStatusDetails>|null
      * } $args
      */
     public function __construct(array $args)

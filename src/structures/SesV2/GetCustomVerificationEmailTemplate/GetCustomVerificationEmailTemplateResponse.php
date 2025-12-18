@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $FromEmailAddress
  * @property string|null $TemplateSubject
  * @property string|null $TemplateContent
+ * @property list<Shapes\Tag>|null $Tags
  * @property string|null $SuccessRedirectionURL
  * @property string|null $FailureRedirectionURL
  */

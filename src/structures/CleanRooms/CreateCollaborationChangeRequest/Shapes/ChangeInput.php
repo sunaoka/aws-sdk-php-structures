@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CleanRooms\CreateCollaborationChangeRequest\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MEMBER' $specificationType
+ * @property 'MEMBER'|'COLLABORATION' $specificationType
  * @property ChangeSpecification $specification
  */
 class ChangeInput extends Shape
 {
     /**
      * @param array{
-     *     specificationType: 'MEMBER',
+     *     specificationType: 'MEMBER'|'COLLABORATION',
      *     specification: ChangeSpecification
      * } $args
      */

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property Shapes\TargetConfiguration $targetConfiguration
  * @property list<Shapes\CredentialProviderConfiguration>|null $credentialProviderConfigurations
+ * @property Shapes\MetadataConfiguration|null $metadataConfiguration
  */
 class UpdateGatewayTargetRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateGatewayTargetRequest extends Request
      *     name: string,
      *     description?: string|null,
      *     targetConfiguration: Shapes\TargetConfiguration,
-     *     credentialProviderConfigurations?: list<Shapes\CredentialProviderConfiguration>|null
+     *     credentialProviderConfigurations?: list<Shapes\CredentialProviderConfiguration>|null,
+     *     metadataConfiguration?: Shapes\MetadataConfiguration|null
      * } $args
      */
     public function __construct(array $args)

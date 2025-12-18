@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LaunchPath
  * @property string|null $WorkingDirectory
  * @property string|null $LaunchParameters
- * @property list<'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'> $Platforms
+ * @property list<'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'WINDOWS_SERVER_2025'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|'UBUNTU_PRO_2404'> $Platforms
  * @property list<string> $InstanceFamilies
  * @property string $AppBlockArn
  * @property array<string, string>|null $Tags
@@ -28,7 +28,7 @@ class CreateApplicationRequest extends Request
      *     LaunchPath: string,
      *     WorkingDirectory?: string|null,
      *     LaunchParameters?: string|null,
-     *     Platforms: list<'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'>,
+     *     Platforms: list<'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'WINDOWS_SERVER_2025'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|'UBUNTU_PRO_2404'>,
      *     InstanceFamilies: list<string>,
      *     AppBlockArn: string,
      *     Tags?: array<string, string>|null

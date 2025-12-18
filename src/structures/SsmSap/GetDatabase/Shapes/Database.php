@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DatabaseName
  * @property 'SYSTEM'|'TENANT'|null $DatabaseType
  * @property string|null $Arn
- * @property 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR'|null $Status
+ * @property 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR'|'STOPPING'|null $Status
  * @property string|null $PrimaryHost
  * @property int|null $SQLPort
  * @property \Aws\Api\DateTimeResult|null $LastUpdated
@@ -29,7 +29,7 @@ class Database extends Shape
      *     DatabaseName?: string|null,
      *     DatabaseType?: 'SYSTEM'|'TENANT'|null,
      *     Arn?: string|null,
-     *     Status?: 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR'|null,
+     *     Status?: 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR'|'STOPPING'|null,
      *     PrimaryHost?: string|null,
      *     SQLPort?: int|null,
      *     LastUpdated?: \Aws\Api\DateTimeResult|null,
