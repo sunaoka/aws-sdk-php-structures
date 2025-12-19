@@ -17,6 +17,7 @@ class ARCRegionSwitchClient extends \Aws\ARCRegionSwitch\ARCRegionSwitchClient
     use ListPlans\ListPlansTrait;
     use ListPlansInRegion\ListPlansInRegionTrait;
     use ListRoute53HealthChecks\ListRoute53HealthChecksTrait;
+    use ListRoute53HealthChecksInRegion\ListRoute53HealthChecksInRegionTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartPlanExecution\StartPlanExecutionTrait;
     use TagResource\TagResourceTrait;

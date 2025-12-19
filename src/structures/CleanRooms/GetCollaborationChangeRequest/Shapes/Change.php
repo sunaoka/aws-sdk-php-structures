@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CleanRooms\GetCollaborationChangeRequest\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MEMBER' $specificationType
+ * @property 'MEMBER'|'COLLABORATION' $specificationType
  * @property ChangeSpecification $specification
- * @property list<'ADD_MEMBER'> $types
+ * @property list<'ADD_MEMBER'|'GRANT_RECEIVE_RESULTS_ABILITY'|'REVOKE_RECEIVE_RESULTS_ABILITY'|'EDIT_AUTO_APPROVED_CHANGE_TYPES'> $types
  */
 class Change extends Shape
 {
     /**
      * @param array{
-     *     specificationType: 'MEMBER',
+     *     specificationType: 'MEMBER'|'COLLABORATION',
      *     specification: ChangeSpecification,
-     *     types: list<'ADD_MEMBER'>
+     *     types: list<'ADD_MEMBER'|'GRANT_RECEIVE_RESULTS_ABILITY'|'REVOKE_RECEIVE_RESULTS_ABILITY'|'EDIT_AUTO_APPROVED_CHANGE_TYPES'>
      * } $args
      */
     public function __construct(array $args)

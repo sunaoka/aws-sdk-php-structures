@@ -48,6 +48,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use GetDeliverabilityTestReport\GetDeliverabilityTestReportTrait;
     use GetDomainDeliverabilityCampaign\GetDomainDeliverabilityCampaignTrait;
     use GetDomainStatisticsReport\GetDomainStatisticsReportTrait;
+    use GetEmailAddressInsights\GetEmailAddressInsightsTrait;
     use GetEmailIdentity\GetEmailIdentityTrait;
     use GetEmailIdentityPolicies\GetEmailIdentityPoliciesTrait;
     use GetEmailTemplate\GetEmailTemplateTrait;

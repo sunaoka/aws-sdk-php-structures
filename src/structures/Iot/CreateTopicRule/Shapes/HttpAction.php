@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $confirmationUrl
  * @property list<HttpActionHeader>|null $headers
  * @property HttpAuthorization|null $auth
+ * @property bool|null $enableBatching
+ * @property BatchConfig|null $batchConfig
  */
 class HttpAction extends Shape
 {
@@ -17,7 +19,9 @@ class HttpAction extends Shape
      *     url: string,
      *     confirmationUrl?: string|null,
      *     headers?: list<HttpActionHeader>|null,
-     *     auth?: HttpAuthorization|null
+     *     auth?: HttpAuthorization|null,
+     *     enableBatching?: bool|null,
+     *     batchConfig?: BatchConfig|null
      * } $args
      */
     public function __construct(array $args)

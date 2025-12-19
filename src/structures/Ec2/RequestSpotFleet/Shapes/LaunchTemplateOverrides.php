@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $WeightedCapacity
  * @property double|null $Priority
  * @property InstanceRequirements|null $InstanceRequirements
+ * @property string|null $AvailabilityZoneId
  */
 class LaunchTemplateOverrides extends Shape
 {
@@ -23,7 +24,8 @@ class LaunchTemplateOverrides extends Shape
      *     AvailabilityZone?: string|null,
      *     WeightedCapacity?: double|null,
      *     Priority?: double|null,
-     *     InstanceRequirements?: InstanceRequirements|null
+     *     InstanceRequirements?: InstanceRequirements|null,
+     *     AvailabilityZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

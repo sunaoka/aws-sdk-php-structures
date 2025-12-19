@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ImageTagMutabilityExclusionFilter>|null $imageTagMutabilityExclusionFilters
  * @property string|null $repositoryPolicy
  * @property string|null $lifecyclePolicy
- * @property list<'REPLICATION'|'PULL_THROUGH_CACHE'>|null $appliedFor
+ * @property list<'REPLICATION'|'PULL_THROUGH_CACHE'|'CREATE_ON_PUSH'>|null $appliedFor
  * @property string|null $customRoleArn
  */
 class UpdateRepositoryCreationTemplateRequest extends Request
@@ -28,7 +28,7 @@ class UpdateRepositoryCreationTemplateRequest extends Request
      *     imageTagMutabilityExclusionFilters?: list<Shapes\ImageTagMutabilityExclusionFilter>|null,
      *     repositoryPolicy?: string|null,
      *     lifecyclePolicy?: string|null,
-     *     appliedFor?: list<'REPLICATION'|'PULL_THROUGH_CACHE'>|null,
+     *     appliedFor?: list<'REPLICATION'|'PULL_THROUGH_CACHE'|'CREATE_ON_PUSH'>|null,
      *     customRoleArn?: string|null
      * } $args
      */

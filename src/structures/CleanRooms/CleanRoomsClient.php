@@ -80,6 +80,7 @@ class CleanRoomsClient extends \Aws\CleanRooms\CleanRoomsClient
     use UntagResource\UntagResourceTrait;
     use UpdateAnalysisTemplate\UpdateAnalysisTemplateTrait;
     use UpdateCollaboration\UpdateCollaborationTrait;
+    use UpdateCollaborationChangeRequest\UpdateCollaborationChangeRequestTrait;
     use UpdateConfiguredAudienceModelAssociation\UpdateConfiguredAudienceModelAssociationTrait;
     use UpdateConfiguredTable\UpdateConfiguredTableTrait;
     use UpdateConfiguredTableAnalysisRule\UpdateConfiguredTableAnalysisRuleTrait;

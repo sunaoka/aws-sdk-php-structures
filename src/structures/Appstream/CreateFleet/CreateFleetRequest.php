@@ -22,7 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $IdleDisconnectTimeoutInSeconds
  * @property string|null $IamRoleArn
  * @property 'APP'|'DESKTOP'|null $StreamView
- * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|null $Platform
+ * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'WINDOWS_SERVER_2025'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|'UBUNTU_PRO_2404'|null $Platform
  * @property int|null $MaxConcurrentSessions
  * @property list<string>|null $UsbDeviceFilterStrings
  * @property Shapes\S3Location|null $SessionScriptS3Location
@@ -50,7 +50,7 @@ class CreateFleetRequest extends Request
      *     IdleDisconnectTimeoutInSeconds?: int|null,
      *     IamRoleArn?: string|null,
      *     StreamView?: 'APP'|'DESKTOP'|null,
-     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|null,
+     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'WINDOWS_SERVER_2025'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|'UBUNTU_PRO_2404'|null,
      *     MaxConcurrentSessions?: int|null,
      *     UsbDeviceFilterStrings?: list<string>|null,
      *     SessionScriptS3Location?: Shapes\S3Location|null,

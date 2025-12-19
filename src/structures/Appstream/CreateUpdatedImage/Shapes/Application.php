@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $AppBlockArn
  * @property S3Location|null $IconS3Location
- * @property list<'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'>|null $Platforms
+ * @property list<'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'WINDOWS_SERVER_2025'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|'UBUNTU_PRO_2404'>|null $Platforms
  * @property list<string>|null $InstanceFamilies
  * @property \Aws\Api\DateTimeResult|null $CreatedTime
  */
@@ -37,7 +37,7 @@ class Application extends Shape
      *     Arn?: string|null,
      *     AppBlockArn?: string|null,
      *     IconS3Location?: S3Location|null,
-     *     Platforms?: list<'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'>|null,
+     *     Platforms?: list<'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'WINDOWS_SERVER_2025'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|'UBUNTU_PRO_2404'>|null,
      *     InstanceFamilies?: list<string>|null,
      *     CreatedTime?: \Aws\Api\DateTimeResult|null
      * } $args

@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DEVELOPMENT'|'LIVE'|null $blueprintStage
  * @property string|null $kmsKeyId
  * @property array<string, string>|null $kmsEncryptionContext
+ * @property list<BlueprintOptimizationSample>|null $optimizationSamples
+ * @property \Aws\Api\DateTimeResult|null $optimizationTime
  */
 class Blueprint extends Shape
 {
@@ -29,7 +31,9 @@ class Blueprint extends Shape
      *     blueprintVersion?: string|null,
      *     blueprintStage?: 'DEVELOPMENT'|'LIVE'|null,
      *     kmsKeyId?: string|null,
-     *     kmsEncryptionContext?: array<string, string>|null
+     *     kmsEncryptionContext?: array<string, string>|null,
+     *     optimizationSamples?: list<BlueprintOptimizationSample>|null,
+     *     optimizationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)
