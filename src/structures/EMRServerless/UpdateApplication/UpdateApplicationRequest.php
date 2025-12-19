@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MonitoringConfiguration|null $monitoringConfiguration
  * @property Shapes\SchedulerConfiguration|null $schedulerConfiguration
  * @property Shapes\IdentityCenterConfigurationInput|null $identityCenterConfiguration
+ * @property Shapes\JobLevelCostAllocationConfiguration|null $jobLevelCostAllocationConfiguration
  */
 class UpdateApplicationRequest extends Request
 {
@@ -41,7 +42,8 @@ class UpdateApplicationRequest extends Request
      *     runtimeConfiguration?: list<Shapes\Configuration>|null,
      *     monitoringConfiguration?: Shapes\MonitoringConfiguration|null,
      *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null,
-     *     identityCenterConfiguration?: Shapes\IdentityCenterConfigurationInput|null
+     *     identityCenterConfiguration?: Shapes\IdentityCenterConfigurationInput|null,
+     *     jobLevelCostAllocationConfiguration?: Shapes\JobLevelCostAllocationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

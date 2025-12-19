@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $RoutingProfiles
  * @property list<string>|null $RoutingStepExpressions
  * @property list<string>|null $AgentStatuses
+ * @property list<string>|null $Subtypes
+ * @property list<string>|null $ValidationTestTypes
  */
 class Filters extends Shape
 {
@@ -19,7 +21,9 @@ class Filters extends Shape
      *     Channels?: list<'VOICE'|'CHAT'|'TASK'|'EMAIL'>|null,
      *     RoutingProfiles?: list<string>|null,
      *     RoutingStepExpressions?: list<string>|null,
-     *     AgentStatuses?: list<string>|null
+     *     AgentStatuses?: list<string>|null,
+     *     Subtypes?: list<string>|null,
+     *     ValidationTestTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

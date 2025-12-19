@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 10080>|null $recoveryTimeObjectiveMinutes
  * @property array<string, Shapes\AssociatedAlarm>|null $associatedAlarms
  * @property list<Shapes\Trigger>|null $triggers
+ * @property Shapes\ReportConfiguration|null $reportConfiguration
  */
 class UpdatePlanRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdatePlanRequest extends Request
      *     executionRole: string,
      *     recoveryTimeObjectiveMinutes?: int<1, 10080>|null,
      *     associatedAlarms?: array<string, Shapes\AssociatedAlarm>|null,
-     *     triggers?: list<Shapes\Trigger>|null
+     *     triggers?: list<Shapes\Trigger>|null,
+     *     reportConfiguration?: Shapes\ReportConfiguration|null
      * } $args
      */
     public function __construct(array $args)

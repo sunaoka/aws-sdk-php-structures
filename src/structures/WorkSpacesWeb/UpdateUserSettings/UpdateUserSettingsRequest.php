@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Disabled'|'Enabled'|null $deepLinkAllowed
  * @property Shapes\ToolbarConfiguration|null $toolbarConfiguration
  * @property Shapes\BrandingConfigurationUpdateInput|null $brandingConfigurationInput
+ * @property 'Disabled'|'Enabled'|null $webAuthnAllowed
  */
 class UpdateUserSettingsRequest extends Request
 {
@@ -35,7 +36,8 @@ class UpdateUserSettingsRequest extends Request
      *     cookieSynchronizationConfiguration?: Shapes\CookieSynchronizationConfiguration|null,
      *     deepLinkAllowed?: 'Disabled'|'Enabled'|null,
      *     toolbarConfiguration?: Shapes\ToolbarConfiguration|null,
-     *     brandingConfigurationInput?: Shapes\BrandingConfigurationUpdateInput|null
+     *     brandingConfigurationInput?: Shapes\BrandingConfigurationUpdateInput|null,
+     *     webAuthnAllowed?: 'Disabled'|'Enabled'|null
      * } $args
      */
     public function __construct(array $args)

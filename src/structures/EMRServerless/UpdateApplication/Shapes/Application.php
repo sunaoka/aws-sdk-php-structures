@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InteractiveConfiguration|null $interactiveConfiguration
  * @property SchedulerConfiguration|null $schedulerConfiguration
  * @property IdentityCenterConfiguration|null $identityCenterConfiguration
+ * @property JobLevelCostAllocationConfiguration|null $jobLevelCostAllocationConfiguration
  */
 class Application extends Shape
 {
@@ -55,7 +56,8 @@ class Application extends Shape
      *     monitoringConfiguration?: MonitoringConfiguration|null,
      *     interactiveConfiguration?: InteractiveConfiguration|null,
      *     schedulerConfiguration?: SchedulerConfiguration|null,
-     *     identityCenterConfiguration?: IdentityCenterConfiguration|null
+     *     identityCenterConfiguration?: IdentityCenterConfiguration|null,
+     *     jobLevelCostAllocationConfiguration?: JobLevelCostAllocationConfiguration|null
      * } $args
      */
     public function __construct(array $args)
