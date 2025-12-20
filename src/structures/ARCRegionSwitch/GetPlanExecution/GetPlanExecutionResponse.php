@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\StepState>|null $stepStates
  * @property Shapes\Plan|null $plan
  * @property string|null $actualRecoveryTime
+ * @property list<Shapes\GeneratedReport>|null $generatedReportDetails
  * @property string|null $nextToken
  */
 class GetPlanExecutionResponse extends Response

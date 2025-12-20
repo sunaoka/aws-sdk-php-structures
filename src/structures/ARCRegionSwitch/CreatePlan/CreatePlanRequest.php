@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 10080>|null $recoveryTimeObjectiveMinutes
  * @property array<string, Shapes\AssociatedAlarm>|null $associatedAlarms
  * @property list<Shapes\Trigger>|null $triggers
+ * @property Shapes\ReportConfiguration|null $reportConfiguration
  * @property string $name
  * @property list<string> $regions
  * @property 'activeActive'|'activePassive' $recoveryApproach
@@ -27,6 +28,7 @@ class CreatePlanRequest extends Request
      *     recoveryTimeObjectiveMinutes?: int<1, 10080>|null,
      *     associatedAlarms?: array<string, Shapes\AssociatedAlarm>|null,
      *     triggers?: list<Shapes\Trigger>|null,
+     *     reportConfiguration?: Shapes\ReportConfiguration|null,
      *     name: string,
      *     regions: list<string>,
      *     recoveryApproach: 'activeActive'|'activePassive',
