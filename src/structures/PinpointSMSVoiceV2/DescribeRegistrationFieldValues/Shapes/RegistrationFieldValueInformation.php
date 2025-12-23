@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TextValue
  * @property string|null $RegistrationAttachmentId
  * @property string|null $DeniedReason
+ * @property string|null $Feedback
  */
 class RegistrationFieldValueInformation extends Shape
 {
@@ -19,7 +20,8 @@ class RegistrationFieldValueInformation extends Shape
      *     SelectChoices?: list<string>|null,
      *     TextValue?: string|null,
      *     RegistrationAttachmentId?: string|null,
-     *     DeniedReason?: string|null
+     *     DeniedReason?: string|null,
+     *     Feedback?: string|null
      * } $args
      */
     public function __construct(array $args)

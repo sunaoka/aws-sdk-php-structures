@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Number
+ * @property string|null $Designator
  */
 class SecondaryAddressComponent extends Shape
 {
     /**
-     * @param array{Number: string} $args
+     * @param array{
+     *     Number: string,
+     *     Designator?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {
