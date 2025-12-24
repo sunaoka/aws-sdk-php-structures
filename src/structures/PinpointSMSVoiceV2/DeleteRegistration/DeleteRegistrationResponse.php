@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $RegistrationArn
  * @property string $RegistrationId
  * @property string $RegistrationType
- * @property 'CREATED'|'SUBMITTED'|'REVIEWING'|'REQUIRES_AUTHENTICATION'|'PROVISIONING'|'COMPLETE'|'REQUIRES_UPDATES'|'CLOSED'|'DELETED' $RegistrationStatus
+ * @property 'CREATED'|'SUBMITTED'|'AWS_REVIEWING'|'REVIEWING'|'REQUIRES_AUTHENTICATION'|'PROVISIONING'|'COMPLETE'|'REQUIRES_UPDATES'|'CLOSED'|'DELETED' $RegistrationStatus
  * @property int<1, 100000> $CurrentVersionNumber
  * @property int<1, 100000>|null $ApprovedVersionNumber
  * @property int<1, 100000>|null $LatestDeniedVersionNumber

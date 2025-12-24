@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PoliticalView
  * @property 'SingleUse'|'Storage'|null $IntendedUse
  * @property string|null $Key
+ * @property double|null $Heading
  */
 class ReverseGeocodeRequest extends Request
 {
@@ -27,7 +28,8 @@ class ReverseGeocodeRequest extends Request
      *     Language?: string|null,
      *     PoliticalView?: string|null,
      *     IntendedUse?: 'SingleUse'|'Storage'|null,
-     *     Key?: string|null
+     *     Key?: string|null,
+     *     Heading?: double|null
      * } $args
      */
     public function __construct(array $args)
