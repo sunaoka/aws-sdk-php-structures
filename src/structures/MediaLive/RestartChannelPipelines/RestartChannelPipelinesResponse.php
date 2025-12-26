@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\VpcOutputSettingsDescription|null $Vpc
  * @property Shapes\DescribeAnywhereSettings|null $AnywhereSettings
  * @property Shapes\ChannelEngineVersionResponse|null $ChannelEngineVersion
+ * @property Shapes\DescribeLinkedChannelSettings|null $LinkedChannelSettings
  */
 class RestartChannelPipelinesResponse extends Response
 {

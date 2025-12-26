@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcOutputSettingsDescription|null $Vpc
  * @property DescribeAnywhereSettings|null $AnywhereSettings
  * @property ChannelEngineVersionResponse|null $ChannelEngineVersion
+ * @property DescribeLinkedChannelSettings|null $LinkedChannelSettings
  */
 class Channel extends Shape
 {
@@ -49,7 +50,8 @@ class Channel extends Shape
      *     Tags?: array<string, string>|null,
      *     Vpc?: VpcOutputSettingsDescription|null,
      *     AnywhereSettings?: DescribeAnywhereSettings|null,
-     *     ChannelEngineVersion?: ChannelEngineVersionResponse|null
+     *     ChannelEngineVersion?: ChannelEngineVersionResponse|null,
+     *     LinkedChannelSettings?: DescribeLinkedChannelSettings|null
      * } $args
      */
     public function __construct(array $args = [])
