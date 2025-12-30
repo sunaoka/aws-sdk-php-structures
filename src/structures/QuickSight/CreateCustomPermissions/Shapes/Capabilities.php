@@ -42,6 +42,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $ChatAgent
  * @property 'DENY'|null $CreateChatAgents
  * @property 'DENY'|null $Research
+ * @property 'DENY'|null $SelfUpgradeUserRole
  */
 class Capabilities extends Shape
 {
@@ -83,7 +84,8 @@ class Capabilities extends Shape
      *     Space?: 'DENY'|null,
      *     ChatAgent?: 'DENY'|null,
      *     CreateChatAgents?: 'DENY'|null,
-     *     Research?: 'DENY'|null
+     *     Research?: 'DENY'|null,
+     *     SelfUpgradeUserRole?: 'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])
