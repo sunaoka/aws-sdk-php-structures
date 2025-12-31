@@ -106,6 +106,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeQuickSightQSearchConfiguration\DescribeQuickSightQSearchConfigurationTrait;
     use DescribeRefreshSchedule\DescribeRefreshScheduleTrait;
     use DescribeRoleCustomPermission\DescribeRoleCustomPermissionTrait;
+    use DescribeSelfUpgradeConfiguration\DescribeSelfUpgradeConfigurationTrait;
     use DescribeTemplate\DescribeTemplateTrait;
     use DescribeTemplateAlias\DescribeTemplateAliasTrait;
     use DescribeTemplateDefinition\DescribeTemplateDefinitionTrait;
@@ -150,6 +151,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use ListNamespaces\ListNamespacesTrait;
     use ListRefreshSchedules\ListRefreshSchedulesTrait;
     use ListRoleMemberships\ListRoleMembershipsTrait;
+    use ListSelfUpgrades\ListSelfUpgradesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTemplateAliases\ListTemplateAliasesTrait;
     use ListTemplateVersions\ListTemplateVersionsTrait;
@@ -218,6 +220,8 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use UpdateRefreshSchedule\UpdateRefreshScheduleTrait;
     use UpdateRoleCustomPermission\UpdateRoleCustomPermissionTrait;
     use UpdateSPICECapacityConfiguration\UpdateSPICECapacityConfigurationTrait;
+    use UpdateSelfUpgrade\UpdateSelfUpgradeTrait;
+    use UpdateSelfUpgradeConfiguration\UpdateSelfUpgradeConfigurationTrait;
     use UpdateTemplate\UpdateTemplateTrait;
     use UpdateTemplateAlias\UpdateTemplateAliasTrait;
     use UpdateTemplatePermissions\UpdateTemplatePermissionsTrait;

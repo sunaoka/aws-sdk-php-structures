@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SearchContactsAdditionalTimeRange|null $AdditionalTimeRange
  * @property SearchableContactAttributes|null $SearchableContactAttributes
  * @property SearchableSegmentAttributes|null $SearchableSegmentAttributes
+ * @property list<string>|null $ActiveRegions
  */
 class SearchCriteria extends Shape
 {
@@ -31,7 +32,8 @@ class SearchCriteria extends Shape
      *     RoutingCriteria?: SearchableRoutingCriteria|null,
      *     AdditionalTimeRange?: SearchContactsAdditionalTimeRange|null,
      *     SearchableContactAttributes?: SearchableContactAttributes|null,
-     *     SearchableSegmentAttributes?: SearchableSegmentAttributes|null
+     *     SearchableSegmentAttributes?: SearchableSegmentAttributes|null,
+     *     ActiveRegions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])
