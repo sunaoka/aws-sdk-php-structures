@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Photo>|null $Photos
  * @property string|null $Website
  * @property string|null $Birthdate
+ * @property list<Shapes\Role>|null $Roles
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $CreatedBy
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt

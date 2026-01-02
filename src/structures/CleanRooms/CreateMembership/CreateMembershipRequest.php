@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MembershipProtectedQueryResultConfiguration|null $defaultResultConfiguration
  * @property Shapes\MembershipProtectedJobResultConfiguration|null $defaultJobResultConfiguration
  * @property Shapes\MembershipPaymentConfiguration|null $paymentConfiguration
+ * @property bool|null $isMetricsEnabled
  */
 class CreateMembershipRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateMembershipRequest extends Request
      *     tags?: array<string, string>|null,
      *     defaultResultConfiguration?: Shapes\MembershipProtectedQueryResultConfiguration|null,
      *     defaultJobResultConfiguration?: Shapes\MembershipProtectedJobResultConfiguration|null,
-     *     paymentConfiguration?: Shapes\MembershipPaymentConfiguration|null
+     *     paymentConfiguration?: Shapes\MembershipPaymentConfiguration|null,
+     *     isMetricsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

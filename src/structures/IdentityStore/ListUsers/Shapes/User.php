@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Photo>|null $Photos
  * @property string|null $Website
  * @property string|null $Birthdate
+ * @property list<Role>|null $Roles
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $CreatedBy
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
@@ -55,6 +56,7 @@ class User extends Shape
      *     Photos?: list<Photo>|null,
      *     Website?: string|null,
      *     Birthdate?: string|null,
+     *     Roles?: list<Role>|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     CreatedBy?: string|null,
      *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
