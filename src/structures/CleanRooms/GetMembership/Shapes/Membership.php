@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MembershipProtectedQueryResultConfiguration|null $defaultResultConfiguration
  * @property MembershipProtectedJobResultConfiguration|null $defaultJobResultConfiguration
  * @property MembershipPaymentConfiguration $paymentConfiguration
+ * @property bool|null $isMetricsEnabled
  */
 class Membership extends Shape
 {
@@ -43,7 +44,8 @@ class Membership extends Shape
      *     jobLogStatus?: 'ENABLED'|'DISABLED'|null,
      *     defaultResultConfiguration?: MembershipProtectedQueryResultConfiguration|null,
      *     defaultJobResultConfiguration?: MembershipProtectedJobResultConfiguration|null,
-     *     paymentConfiguration: MembershipPaymentConfiguration
+     *     paymentConfiguration: MembershipPaymentConfiguration,
+     *     isMetricsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)
