@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ONE_YEAR'|'THREE_YEARS'|null $TermInYears
  * @property 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION'|null $PaymentOption
  * @property Shapes\ServiceSpecification|null $ServiceSpecification
- * @property int<0, max>|null $PageSize
+ * @property int<0, 6000>|null $PageSize
  * @property string|null $NextPageToken
  */
 class GetReservationPurchaseRecommendationRequest extends Request
@@ -28,7 +28,7 @@ class GetReservationPurchaseRecommendationRequest extends Request
      *     TermInYears?: 'ONE_YEAR'|'THREE_YEARS'|null,
      *     PaymentOption?: 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION'|null,
      *     ServiceSpecification?: Shapes\ServiceSpecification|null,
-     *     PageSize?: int<0, max>|null,
+     *     PageSize?: int<0, 6000>|null,
      *     NextPageToken?: string|null
      * } $args
      */

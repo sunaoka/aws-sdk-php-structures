@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $releaseLabel
  * @property list<Shapes\Configuration>|null $runtimeConfiguration
  * @property Shapes\MonitoringConfiguration|null $monitoringConfiguration
+ * @property Shapes\DiskEncryptionConfiguration|null $diskEncryptionConfiguration
  * @property Shapes\SchedulerConfiguration|null $schedulerConfiguration
  * @property Shapes\IdentityCenterConfigurationInput|null $identityCenterConfiguration
  * @property Shapes\JobLevelCostAllocationConfiguration|null $jobLevelCostAllocationConfiguration
@@ -41,6 +42,7 @@ class UpdateApplicationRequest extends Request
      *     releaseLabel?: string|null,
      *     runtimeConfiguration?: list<Shapes\Configuration>|null,
      *     monitoringConfiguration?: Shapes\MonitoringConfiguration|null,
+     *     diskEncryptionConfiguration?: Shapes\DiskEncryptionConfiguration|null,
      *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null,
      *     identityCenterConfiguration?: Shapes\IdentityCenterConfigurationInput|null,
      *     jobLevelCostAllocationConfiguration?: Shapes\JobLevelCostAllocationConfiguration|null
