@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LicenseModel
  * @property bool|null $CurrentGeneration
  * @property bool|null $SizeFlexEligible
+ * @property string|null $DeploymentModel
  */
 class RDSInstanceDetails extends Shape
 {
@@ -27,7 +28,8 @@ class RDSInstanceDetails extends Shape
      *     DeploymentOption?: string|null,
      *     LicenseModel?: string|null,
      *     CurrentGeneration?: bool|null,
-     *     SizeFlexEligible?: bool|null
+     *     SizeFlexEligible?: bool|null,
+     *     DeploymentModel?: string|null
      * } $args
      */
     public function __construct(array $args = [])

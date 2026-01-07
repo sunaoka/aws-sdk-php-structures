@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Expression|null $Filter
  * @property Shapes\RightsizingRecommendationConfiguration|null $Configuration
  * @property string $Service
- * @property int<0, max>|null $PageSize
+ * @property int<0, 6000>|null $PageSize
  * @property string|null $NextPageToken
  */
 class GetRightsizingRecommendationRequest extends Request
@@ -18,7 +18,7 @@ class GetRightsizingRecommendationRequest extends Request
      *     Filter?: Shapes\Expression|null,
      *     Configuration?: Shapes\RightsizingRecommendationConfiguration|null,
      *     Service: string,
-     *     PageSize?: int<0, max>|null,
+     *     PageSize?: int<0, 6000>|null,
      *     NextPageToken?: string|null
      * } $args
      */
