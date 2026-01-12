@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
- * @property 'ZWAVE'|'ZIGBEE'|'CLOUD'|'CUSTOM'|null $DiscoveryType
+ * @property 'ZWAVE'|'ZIGBEE'|'CLOUD'|'CUSTOM'|'CONTROLLER_CAPABILITY_REDISCOVERY'|null $DiscoveryType
  * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|null $Status
  */
 class DeviceDiscoverySummary extends Shape
@@ -14,7 +14,7 @@ class DeviceDiscoverySummary extends Shape
     /**
      * @param array{
      *     Id?: string|null,
-     *     DiscoveryType?: 'ZWAVE'|'ZIGBEE'|'CLOUD'|'CUSTOM'|null,
+     *     DiscoveryType?: 'ZWAVE'|'ZIGBEE'|'CLOUD'|'CUSTOM'|'CONTROLLER_CAPABILITY_REDISCOVERY'|null,
      *     Status?: 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|null
      * } $args
      */

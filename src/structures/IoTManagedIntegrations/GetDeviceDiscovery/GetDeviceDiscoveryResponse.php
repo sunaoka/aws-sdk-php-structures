@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $Id
  * @property string $Arn
- * @property 'ZWAVE'|'ZIGBEE'|'CLOUD'|'CUSTOM' $DiscoveryType
+ * @property 'ZWAVE'|'ZIGBEE'|'CLOUD'|'CUSTOM'|'CONTROLLER_CAPABILITY_REDISCOVERY' $DiscoveryType
  * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT' $Status
  * @property \Aws\Api\DateTimeResult $StartedAt
  * @property string|null $ControllerId
