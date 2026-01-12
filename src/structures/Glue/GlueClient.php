@@ -138,6 +138,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use GetMLTransform\GetMLTransformTrait;
     use GetMLTransforms\GetMLTransformsTrait;
     use GetMapping\GetMappingTrait;
+    use GetMaterializedViewRefreshTaskRun\GetMaterializedViewRefreshTaskRunTrait;
     use GetPartition\GetPartitionTrait;
     use GetPartitionIndexes\GetPartitionIndexesTrait;
     use GetPartitions\GetPartitionsTrait;
@@ -189,6 +190,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use ListIntegrationResourceProperties\ListIntegrationResourcePropertiesTrait;
     use ListJobs\ListJobsTrait;
     use ListMLTransforms\ListMLTransformsTrait;
+    use ListMaterializedViewRefreshTaskRuns\ListMaterializedViewRefreshTaskRunsTrait;
     use ListRegistries\ListRegistriesTrait;
     use ListSchemaVersions\ListSchemaVersionsTrait;
     use ListSchemas\ListSchemasTrait;
@@ -223,12 +225,14 @@ class GlueClient extends \Aws\Glue\GlueClient
     use StartJobRun\StartJobRunTrait;
     use StartMLEvaluationTaskRun\StartMLEvaluationTaskRunTrait;
     use StartMLLabelingSetGenerationTaskRun\StartMLLabelingSetGenerationTaskRunTrait;
+    use StartMaterializedViewRefreshTaskRun\StartMaterializedViewRefreshTaskRunTrait;
     use StartTrigger\StartTriggerTrait;
     use StartWorkflowRun\StartWorkflowRunTrait;
     use StopColumnStatisticsTaskRun\StopColumnStatisticsTaskRunTrait;
     use StopColumnStatisticsTaskRunSchedule\StopColumnStatisticsTaskRunScheduleTrait;
     use StopCrawler\StopCrawlerTrait;
     use StopCrawlerSchedule\StopCrawlerScheduleTrait;
+    use StopMaterializedViewRefreshTaskRun\StopMaterializedViewRefreshTaskRunTrait;
     use StopSession\StopSessionTrait;
     use StopTrigger\StopTriggerTrait;
     use StopWorkflowRun\StopWorkflowRunTrait;
