@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, max>|null $UltraServerCount
  * @property \Aws\Api\DateTimeResult|null $StartTimeAfter
  * @property \Aws\Api\DateTimeResult|null $EndTimeBefore
- * @property int<1, 87600> $DurationHours
- * @property list<'training-job'|'hyperpod-cluster'|'endpoint'> $TargetResources
+ * @property int<1, 87600>|null $DurationHours
+ * @property list<'training-job'|'hyperpod-cluster'|'endpoint'>|null $TargetResources
  */
 class SearchTrainingPlanOfferingsRequest extends Request
 {
@@ -24,11 +24,11 @@ class SearchTrainingPlanOfferingsRequest extends Request
      *     UltraServerCount?: int<1, max>|null,
      *     StartTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     EndTimeBefore?: \Aws\Api\DateTimeResult|null,
-     *     DurationHours: int<1, 87600>,
-     *     TargetResources: list<'training-job'|'hyperpod-cluster'|'endpoint'>
+     *     DurationHours?: int<1, 87600>|null,
+     *     TargetResources?: list<'training-job'|'hyperpod-cluster'|'endpoint'>|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

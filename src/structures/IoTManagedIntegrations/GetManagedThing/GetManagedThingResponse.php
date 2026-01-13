@@ -31,6 +31,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'STANDARD'|'NETWORK_WIDE_EXCLUSION'|null $HubNetworkMode
  * @property array<string, string>|null $MetaData
  * @property array<string, string>|null $Tags
+ * @property Shapes\WiFiSimpleSetupConfiguration|null $WiFiSimpleSetupConfiguration
  */
 class GetManagedThingResponse extends Response
 {

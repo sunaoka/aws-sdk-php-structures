@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Owner
  * @property string|null $CredentialLockerId
  * @property string|null $SerialNumber
+ * @property Shapes\WiFiSimpleSetupConfiguration|null $WiFiSimpleSetupConfiguration
  * @property string|null $Brand
  * @property string|null $Model
  * @property string|null $Name
@@ -27,6 +28,7 @@ class UpdateManagedThingRequest extends Request
      *     Owner?: string|null,
      *     CredentialLockerId?: string|null,
      *     SerialNumber?: string|null,
+     *     WiFiSimpleSetupConfiguration?: Shapes\WiFiSimpleSetupConfiguration|null,
      *     Brand?: string|null,
      *     Model?: string|null,
      *     Name?: string|null,
