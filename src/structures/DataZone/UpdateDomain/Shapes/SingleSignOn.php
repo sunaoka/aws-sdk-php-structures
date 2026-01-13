@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $idcInstanceArn
  * @property 'IAM_IDC'|'DISABLED'|null $type
  * @property 'AUTOMATIC'|'MANUAL'|null $userAssignment
+ * @property string|null $idcInstanceArn
  */
 class SingleSignOn extends Shape
 {
     /**
      * @param array{
-     *     idcInstanceArn?: string|null,
      *     type?: 'IAM_IDC'|'DISABLED'|null,
-     *     userAssignment?: 'AUTOMATIC'|'MANUAL'|null
+     *     userAssignment?: 'AUTOMATIC'|'MANUAL'|null,
+     *     idcInstanceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

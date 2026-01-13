@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateAccountPool;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AccountSource $accountSource
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string $createdBy
- * @property string|null $description
  * @property string|null $domainId
- * @property string|null $domainUnitId
- * @property string|null $id
- * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property string|null $name
+ * @property string|null $id
+ * @property string|null $description
  * @property 'MANUAL'|null $resolutionStrategy
+ * @property Shapes\AccountSource $accountSource
+ * @property string $createdBy
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  * @property string|null $updatedBy
+ * @property string|null $domainUnitId
  */
 class CreateAccountPoolResponse extends Response
 {

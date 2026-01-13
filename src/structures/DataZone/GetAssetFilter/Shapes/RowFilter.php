@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\DataZone\GetAssetFilter\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RowFilter>|null $and
  * @property RowFilterExpression|null $expression
+ * @property list<RowFilter>|null $and
  * @property list<RowFilter>|null $or
  */
 class RowFilter extends Shape
 {
     /**
      * @param array{
-     *     and?: list<RowFilter>|null,
      *     expression?: RowFilterExpression|null,
+     *     and?: list<RowFilter>|null,
      *     or?: list<RowFilter>|null
      * } $args
      */

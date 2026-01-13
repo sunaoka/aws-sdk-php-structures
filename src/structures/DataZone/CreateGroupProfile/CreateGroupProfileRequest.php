@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateGroupProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $groupIdentifier
+ * @property string|null $clientToken
  */
 class CreateGroupProfileRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     domainIdentifier: string,
-     *     groupIdentifier: string
+     *     groupIdentifier: string,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

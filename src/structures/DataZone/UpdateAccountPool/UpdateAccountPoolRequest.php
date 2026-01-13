@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateAccountPool;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\AccountSource|null $accountSource
- * @property string|null $description
  * @property string $domainIdentifier
  * @property string $identifier
  * @property string|null $name
+ * @property string|null $description
  * @property 'MANUAL'|null $resolutionStrategy
+ * @property Shapes\AccountSource|null $accountSource
  */
 class UpdateAccountPoolRequest extends Request
 {
     /**
      * @param array{
-     *     accountSource?: Shapes\AccountSource|null,
-     *     description?: string|null,
      *     domainIdentifier: string,
      *     identifier: string,
      *     name?: string|null,
-     *     resolutionStrategy?: 'MANUAL'|null
+     *     description?: string|null,
+     *     resolutionStrategy?: 'MANUAL'|null,
+     *     accountSource?: Shapes\AccountSource|null
      * } $args
      */
     public function __construct(array $args)

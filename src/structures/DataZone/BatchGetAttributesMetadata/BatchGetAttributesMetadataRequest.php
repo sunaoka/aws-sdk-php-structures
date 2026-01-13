@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\BatchGetAttributesMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $attributeIdentifiers
  * @property string $domainIdentifier
+ * @property 'ASSET'|'LISTING' $entityType
  * @property string $entityIdentifier
  * @property string|null $entityRevision
- * @property 'ASSET'|'LISTING' $entityType
+ * @property list<string> $attributeIdentifiers
  */
 class BatchGetAttributesMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     attributeIdentifiers: list<string>,
      *     domainIdentifier: string,
+     *     entityType: 'ASSET'|'LISTING',
      *     entityIdentifier: string,
      *     entityRevision?: string|null,
-     *     entityType: 'ASSET'|'LISTING'
+     *     attributeIdentifiers: list<string>
      * } $args
      */
     public function __construct(array $args)

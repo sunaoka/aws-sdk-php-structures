@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $name
  * @property string|null $provider
- * @property string $type
+ * @property string|null $name
  * @property string $value
+ * @property string $type
  */
 class ResourceShape extends Shape
 {
     /**
      * @param array{
-     *     name?: string|null,
      *     provider?: string|null,
-     *     type: string,
-     *     value: string
+     *     name?: string|null,
+     *     value: string,
+     *     type: string
      * } $args
      */
     public function __construct(array $args)

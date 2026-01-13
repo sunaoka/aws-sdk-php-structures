@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $accountId
+ * @property string|null $region
  * @property string|null $dataAccessRole
+ * @property list<RelationalFilterConfiguration> $relationalFilterConfigurations
  * @property RedshiftCredentialConfiguration|null $redshiftCredentialConfiguration
  * @property RedshiftStorage $redshiftStorage
- * @property string|null $region
- * @property list<RelationalFilterConfiguration> $relationalFilterConfigurations
  */
 class RedshiftRunConfigurationOutput extends Shape
 {
     /**
      * @param array{
      *     accountId?: string|null,
-     *     dataAccessRole?: string|null,
-     *     redshiftCredentialConfiguration?: RedshiftCredentialConfiguration|null,
-     *     redshiftStorage: RedshiftStorage,
      *     region?: string|null,
-     *     relationalFilterConfigurations: list<RelationalFilterConfiguration>
+     *     dataAccessRole?: string|null,
+     *     relationalFilterConfigurations: list<RelationalFilterConfiguration>,
+     *     redshiftCredentialConfiguration?: RedshiftCredentialConfiguration|null,
+     *     redshiftStorage: RedshiftStorage
      * } $args
      */
     public function __construct(array $args)

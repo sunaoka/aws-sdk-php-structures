@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateDomainUnit;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
  * @property string $domainIdentifier
  * @property string $name
  * @property string $parentDomainUnitIdentifier
+ * @property string|null $description
+ * @property string|null $clientToken
  */
 class CreateDomainUnitRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     description?: string|null,
      *     domainIdentifier: string,
      *     name: string,
-     *     parentDomainUnitIdentifier: string
+     *     parentDomainUnitIdentifier: string,
+     *     description?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

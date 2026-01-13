@@ -5,28 +5,28 @@ namespace Sunaoka\Aws\Structures\DataZone\DeleteDataSource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\FormOutput>|null $assetFormsOutput
- * @property Shapes\DataSourceConfigurationOutput|null $configuration
- * @property string|null $connectionId
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string|null $description
- * @property string $domainId
- * @property 'ENABLED'|'DISABLED'|null $enableSetting
- * @property string|null $environmentId
- * @property Shapes\DataSourceErrorMessage|null $errorMessage
  * @property string $id
- * @property \Aws\Api\DateTimeResult|null $lastRunAt
- * @property Shapes\DataSourceErrorMessage|null $lastRunErrorMessage
- * @property 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS'|null $lastRunStatus
- * @property string $name
- * @property string $projectId
- * @property bool|null $publishOnImport
- * @property bool|null $retainPermissionsOnRevokeFailure
- * @property Shapes\ScheduleConfiguration|null $schedule
- * @property Shapes\SelfGrantStatusOutput|null $selfGrantStatus
  * @property 'CREATING'|'FAILED_CREATION'|'READY'|'UPDATING'|'FAILED_UPDATE'|'RUNNING'|'DELETING'|'FAILED_DELETION'|null $status
  * @property string|null $type
+ * @property string $name
+ * @property string|null $description
+ * @property string $domainId
+ * @property string $projectId
+ * @property string|null $environmentId
+ * @property string|null $connectionId
+ * @property Shapes\DataSourceConfigurationOutput|null $configuration
+ * @property 'ENABLED'|'DISABLED'|null $enableSetting
+ * @property bool|null $publishOnImport
+ * @property list<Shapes\FormOutput>|null $assetFormsOutput
+ * @property Shapes\ScheduleConfiguration|null $schedule
+ * @property 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS'|null $lastRunStatus
+ * @property \Aws\Api\DateTimeResult|null $lastRunAt
+ * @property Shapes\DataSourceErrorMessage|null $lastRunErrorMessage
+ * @property Shapes\DataSourceErrorMessage|null $errorMessage
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property Shapes\SelfGrantStatusOutput|null $selfGrantStatus
+ * @property bool|null $retainPermissionsOnRevokeFailure
  */
 class DeleteDataSourceResponse extends Response
 {

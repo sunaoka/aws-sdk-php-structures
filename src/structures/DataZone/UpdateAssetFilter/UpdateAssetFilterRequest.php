@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateAssetFilter;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $assetIdentifier
- * @property Shapes\AssetFilterConfiguration|null $configuration
- * @property string|null $description
  * @property string $domainIdentifier
+ * @property string $assetIdentifier
  * @property string $identifier
  * @property string|null $name
+ * @property string|null $description
+ * @property Shapes\AssetFilterConfiguration|null $configuration
  */
 class UpdateAssetFilterRequest extends Request
 {
     /**
      * @param array{
-     *     assetIdentifier: string,
-     *     configuration?: Shapes\AssetFilterConfiguration|null,
-     *     description?: string|null,
      *     domainIdentifier: string,
+     *     assetIdentifier: string,
      *     identifier: string,
-     *     name?: string|null
+     *     name?: string|null,
+     *     description?: string|null,
+     *     configuration?: Shapes\AssetFilterConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\CancelSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UserProfileDetails|null $details
  * @property string|null $id
+ * @property UserProfileDetails|null $details
  */
 class SubscribedUser extends Shape
 {
     /**
      * @param array{
-     *     details?: UserProfileDetails|null,
-     *     id?: string|null
+     *     id?: string|null,
+     *     details?: UserProfileDetails|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $attribute
- * @property list<MatchOffset>|null $matchOffsets
  * @property string|null $text
+ * @property list<MatchOffset>|null $matchOffsets
  */
 class TextMatchItem extends Shape
 {
     /**
      * @param array{
      *     attribute?: string|null,
-     *     matchOffsets?: list<MatchOffset>|null,
-     *     text?: string|null
+     *     text?: string|null,
+     *     matchOffsets?: list<MatchOffset>|null
      * } $args
      */
     public function __construct(array $args = [])

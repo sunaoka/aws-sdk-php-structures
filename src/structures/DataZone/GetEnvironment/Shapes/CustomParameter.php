@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DataZone\GetEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $defaultValue
+ * @property string $keyName
  * @property string|null $description
  * @property string $fieldType
+ * @property string|null $defaultValue
  * @property bool|null $isEditable
  * @property bool|null $isOptional
  * @property bool|null $isUpdateSupported
- * @property string $keyName
  */
 class CustomParameter extends Shape
 {
     /**
      * @param array{
-     *     defaultValue?: string|null,
+     *     keyName: string,
      *     description?: string|null,
      *     fieldType: string,
+     *     defaultValue?: string|null,
      *     isEditable?: bool|null,
      *     isOptional?: bool|null,
-     *     isUpdateSupported?: bool|null,
-     *     keyName: string
+     *     isUpdateSupported?: bool|null
      * } $args
      */
     public function __construct(array $args)

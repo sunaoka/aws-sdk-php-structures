@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftCredentials|null $credentials
+ * @property RedshiftStorageProperties|null $storage
  * @property string|null $databaseName
  * @property string|null $host
- * @property RedshiftLineageSyncConfigurationInput|null $lineageSync
  * @property int|null $port
- * @property RedshiftStorageProperties|null $storage
+ * @property RedshiftCredentials|null $credentials
+ * @property RedshiftLineageSyncConfigurationInput|null $lineageSync
  */
 class RedshiftPropertiesInput extends Shape
 {
     /**
      * @param array{
-     *     credentials?: RedshiftCredentials|null,
+     *     storage?: RedshiftStorageProperties|null,
      *     databaseName?: string|null,
      *     host?: string|null,
-     *     lineageSync?: RedshiftLineageSyncConfigurationInput|null,
      *     port?: int|null,
-     *     storage?: RedshiftStorageProperties|null
+     *     credentials?: RedshiftCredentials|null,
+     *     lineageSync?: RedshiftLineageSyncConfigurationInput|null
      * } $args
      */
     public function __construct(array $args = [])

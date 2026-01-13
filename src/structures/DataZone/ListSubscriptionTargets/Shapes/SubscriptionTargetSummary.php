@@ -5,41 +5,43 @@ namespace Sunaoka\Aws\Structures\DataZone\ListSubscriptionTargets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $applicableAssetTypes
- * @property list<string> $authorizedPrincipals
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $domainId
- * @property string $environmentId
  * @property string $id
- * @property string|null $manageAccessRole
- * @property string $name
+ * @property list<string> $authorizedPrincipals
+ * @property string $domainId
  * @property string $projectId
- * @property string $provider
- * @property list<SubscriptionTargetForm> $subscriptionTargetConfig
+ * @property string $environmentId
+ * @property string $name
  * @property string $type
- * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string $createdBy
  * @property string|null $updatedBy
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $manageAccessRole
+ * @property list<string> $applicableAssetTypes
+ * @property list<SubscriptionTargetForm> $subscriptionTargetConfig
+ * @property string $provider
+ * @property 'AUTOMATIC'|'MANUAL'|null $subscriptionGrantCreationMode
  */
 class SubscriptionTargetSummary extends Shape
 {
     /**
      * @param array{
-     *     applicableAssetTypes: list<string>,
-     *     authorizedPrincipals: list<string>,
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     createdBy: string,
-     *     domainId: string,
-     *     environmentId: string,
      *     id: string,
-     *     manageAccessRole?: string|null,
-     *     name: string,
+     *     authorizedPrincipals: list<string>,
+     *     domainId: string,
      *     projectId: string,
-     *     provider: string,
-     *     subscriptionTargetConfig: list<SubscriptionTargetForm>,
+     *     environmentId: string,
+     *     name: string,
      *     type: string,
+     *     createdBy: string,
+     *     updatedBy?: string|null,
+     *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     updatedBy?: string|null
+     *     manageAccessRole?: string|null,
+     *     applicableAssetTypes: list<string>,
+     *     subscriptionTargetConfig: list<SubscriptionTargetForm>,
+     *     provider: string,
+     *     subscriptionGrantCreationMode?: 'AUTOMATIC'|'MANUAL'|null
      * } $args
      */
     public function __construct(array $args)

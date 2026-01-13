@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\BatchPutAttributesMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\AttributeInput> $attributes
- * @property string|null $clientToken
  * @property string $domainIdentifier
- * @property string $entityIdentifier
  * @property 'ASSET'|'LISTING' $entityType
+ * @property string $entityIdentifier
+ * @property string|null $clientToken
+ * @property list<Shapes\AttributeInput> $attributes
  */
 class BatchPutAttributesMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     attributes: list<Shapes\AttributeInput>,
-     *     clientToken?: string|null,
      *     domainIdentifier: string,
+     *     entityType: 'ASSET'|'LISTING',
      *     entityIdentifier: string,
-     *     entityType: 'ASSET'|'LISTING'
+     *     clientToken?: string|null,
+     *     attributes: list<Shapes\AttributeInput>
      * } $args
      */
     public function __construct(array $args)

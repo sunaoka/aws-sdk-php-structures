@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\SearchListings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DetailedGlossaryTerm>|null $glossaryTerms
  * @property string|null $listingId
  * @property string|null $listingRevision
+ * @property list<DetailedGlossaryTerm>|null $glossaryTerms
  */
 class ListingSummaryItem extends Shape
 {
     /**
      * @param array{
-     *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
      *     listingId?: string|null,
-     *     listingRevision?: string|null
+     *     listingRevision?: string|null,
+     *     glossaryTerms?: list<DetailedGlossaryTerm>|null
      * } $args
      */
     public function __construct(array $args = [])

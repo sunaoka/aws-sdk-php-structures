@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\DataZone\GetConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $enabled
  * @property string|null $lineageJobId
+ * @property bool|null $enabled
  * @property LineageSyncSchedule|null $schedule
  */
 class RedshiftLineageSyncConfigurationOutput extends Shape
 {
     /**
      * @param array{
-     *     enabled?: bool|null,
      *     lineageJobId?: string|null,
+     *     enabled?: bool|null,
      *     schedule?: LineageSyncSchedule|null
      * } $args
      */

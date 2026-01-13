@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateDataSource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\FormInput>|null $assetFormsInput
- * @property Shapes\DataSourceConfigurationInput|null $configuration
- * @property string|null $description
  * @property string $domainIdentifier
- * @property 'ENABLED'|'DISABLED'|null $enableSetting
  * @property string $identifier
  * @property string|null $name
+ * @property string|null $description
+ * @property 'ENABLED'|'DISABLED'|null $enableSetting
  * @property bool|null $publishOnImport
+ * @property list<Shapes\FormInput>|null $assetFormsInput
+ * @property Shapes\ScheduleConfiguration|null $schedule
+ * @property Shapes\DataSourceConfigurationInput|null $configuration
  * @property Shapes\RecommendationConfiguration|null $recommendation
  * @property bool|null $retainPermissionsOnRevokeFailure
- * @property Shapes\ScheduleConfiguration|null $schedule
  */
 class UpdateDataSourceRequest extends Request
 {
     /**
      * @param array{
-     *     assetFormsInput?: list<Shapes\FormInput>|null,
-     *     configuration?: Shapes\DataSourceConfigurationInput|null,
-     *     description?: string|null,
      *     domainIdentifier: string,
-     *     enableSetting?: 'ENABLED'|'DISABLED'|null,
      *     identifier: string,
      *     name?: string|null,
+     *     description?: string|null,
+     *     enableSetting?: 'ENABLED'|'DISABLED'|null,
      *     publishOnImport?: bool|null,
+     *     assetFormsInput?: list<Shapes\FormInput>|null,
+     *     schedule?: Shapes\ScheduleConfiguration|null,
+     *     configuration?: Shapes\DataSourceConfigurationInput|null,
      *     recommendation?: Shapes\RecommendationConfiguration|null,
-     *     retainPermissionsOnRevokeFailure?: bool|null,
-     *     schedule?: Shapes\ScheduleConfiguration|null
+     *     retainPermissionsOnRevokeFailure?: bool|null
      * } $args
      */
     public function __construct(array $args)

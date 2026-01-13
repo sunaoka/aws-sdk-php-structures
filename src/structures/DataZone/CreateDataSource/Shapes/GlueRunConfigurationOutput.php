@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $accountId
+ * @property string|null $region
+ * @property string|null $dataAccessRole
+ * @property list<RelationalFilterConfiguration> $relationalFilterConfigurations
  * @property bool|null $autoImportDataQualityResult
  * @property string|null $catalogName
- * @property string|null $dataAccessRole
- * @property string|null $region
- * @property list<RelationalFilterConfiguration> $relationalFilterConfigurations
  */
 class GlueRunConfigurationOutput extends Shape
 {
     /**
      * @param array{
      *     accountId?: string|null,
-     *     autoImportDataQualityResult?: bool|null,
-     *     catalogName?: string|null,
-     *     dataAccessRole?: string|null,
      *     region?: string|null,
-     *     relationalFilterConfigurations: list<RelationalFilterConfiguration>
+     *     dataAccessRole?: string|null,
+     *     relationalFilterConfigurations: list<RelationalFilterConfiguration>,
+     *     autoImportDataQualityResult?: bool|null,
+     *     catalogName?: string|null
      * } $args
      */
     public function __construct(array $args)

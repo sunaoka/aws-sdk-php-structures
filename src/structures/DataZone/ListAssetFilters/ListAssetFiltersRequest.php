@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\ListAssetFilters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $assetIdentifier
  * @property string $domainIdentifier
- * @property int<1, 50>|null $maxResults
- * @property string|null $nextToken
+ * @property string $assetIdentifier
  * @property 'VALID'|'INVALID'|null $status
+ * @property string|null $nextToken
+ * @property int<1, 50>|null $maxResults
  */
 class ListAssetFiltersRequest extends Request
 {
     /**
      * @param array{
-     *     assetIdentifier: string,
      *     domainIdentifier: string,
-     *     maxResults?: int<1, 50>|null,
+     *     assetIdentifier: string,
+     *     status?: 'VALID'|'INVALID'|null,
      *     nextToken?: string|null,
-     *     status?: 'VALID'|'INVALID'|null
+     *     maxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

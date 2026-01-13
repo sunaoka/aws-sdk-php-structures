@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateEnvironmentProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $awsAccountId
- * @property string|null $awsAccountRegion
- * @property string|null $description
  * @property string $domainIdentifier
- * @property string $environmentBlueprintIdentifier
  * @property string $name
+ * @property string|null $description
+ * @property string $environmentBlueprintIdentifier
  * @property string $projectIdentifier
  * @property list<Shapes\EnvironmentParameter>|null $userParameters
+ * @property string|null $awsAccountId
+ * @property string|null $awsAccountRegion
  */
 class CreateEnvironmentProfileRequest extends Request
 {
     /**
      * @param array{
-     *     awsAccountId?: string|null,
-     *     awsAccountRegion?: string|null,
-     *     description?: string|null,
      *     domainIdentifier: string,
-     *     environmentBlueprintIdentifier: string,
      *     name: string,
+     *     description?: string|null,
+     *     environmentBlueprintIdentifier: string,
      *     projectIdentifier: string,
-     *     userParameters?: list<Shapes\EnvironmentParameter>|null
+     *     userParameters?: list<Shapes\EnvironmentParameter>|null,
+     *     awsAccountId?: string|null,
+     *     awsAccountRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

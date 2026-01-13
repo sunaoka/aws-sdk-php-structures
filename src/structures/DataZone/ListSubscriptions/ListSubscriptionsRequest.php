@@ -5,35 +5,37 @@ namespace Sunaoka\Aws\Structures\DataZone\ListSubscriptions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $approverProjectId
  * @property string $domainIdentifier
- * @property int<1, 50>|null $maxResults
- * @property string|null $nextToken
- * @property string|null $owningGroupId
- * @property string|null $owningProjectId
- * @property string|null $owningUserId
- * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
- * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property string|null $subscriptionRequestIdentifier
  * @property 'APPROVED'|'REVOKED'|'CANCELLED'|null $status
  * @property string|null $subscribedListingId
- * @property string|null $subscriptionRequestIdentifier
+ * @property string|null $owningProjectId
+ * @property string|null $owningIamPrincipalArn
+ * @property string|null $owningUserId
+ * @property string|null $owningGroupId
+ * @property string|null $approverProjectId
+ * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListSubscriptionsRequest extends Request
 {
     /**
      * @param array{
-     *     approverProjectId?: string|null,
      *     domainIdentifier: string,
-     *     maxResults?: int<1, 50>|null,
-     *     nextToken?: string|null,
-     *     owningGroupId?: string|null,
-     *     owningProjectId?: string|null,
-     *     owningUserId?: string|null,
-     *     sortBy?: 'CREATED_AT'|'UPDATED_AT'|null,
-     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     subscriptionRequestIdentifier?: string|null,
      *     status?: 'APPROVED'|'REVOKED'|'CANCELLED'|null,
      *     subscribedListingId?: string|null,
-     *     subscriptionRequestIdentifier?: string|null
+     *     owningProjectId?: string|null,
+     *     owningIamPrincipalArn?: string|null,
+     *     owningUserId?: string|null,
+     *     owningGroupId?: string|null,
+     *     approverProjectId?: string|null,
+     *     sortBy?: 'CREATED_AT'|'UPDATED_AT'|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

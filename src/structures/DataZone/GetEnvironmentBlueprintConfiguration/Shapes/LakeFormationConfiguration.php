@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\GetEnvironmentBlueprintConfiguration\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $locationRegistrationExcludeS3Locations
  * @property string|null $locationRegistrationRole
+ * @property list<string>|null $locationRegistrationExcludeS3Locations
  */
 class LakeFormationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     locationRegistrationExcludeS3Locations?: list<string>|null,
-     *     locationRegistrationRole?: string|null
+     *     locationRegistrationRole?: string|null,
+     *     locationRegistrationExcludeS3Locations?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

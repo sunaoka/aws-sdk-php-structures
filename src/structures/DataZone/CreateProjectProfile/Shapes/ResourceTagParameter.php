@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateProjectProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isValueEditable
  * @property string $key
  * @property string $value
+ * @property bool $isValueEditable
  */
 class ResourceTagParameter extends Shape
 {
     /**
      * @param array{
-     *     isValueEditable: bool,
      *     key: string,
-     *     value: string
+     *     value: string,
+     *     isValueEditable: bool
      * } $args
      */
     public function __construct(array $args)
