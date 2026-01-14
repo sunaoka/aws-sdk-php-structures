@@ -52,8 +52,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DedicatedLogVolume
  * @property bool|null $UpgradeStorageConfig
  * @property string|null $CACertificateIdentifier
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateDBInstanceReadReplicaRequest extends Request
 {
@@ -106,8 +106,8 @@ class CreateDBInstanceReadReplicaRequest extends Request
      *     DedicatedLogVolume?: bool|null,
      *     UpgradeStorageConfig?: bool|null,
      *     CACertificateIdentifier?: string|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null
+     *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $templateBody
  * @property list<LibraryTemplateButtonList>|null $templateButtons
  * @property string|null $templateId
+ * @property list<string>|null $templateBodyExampleParams
  */
 class MetaLibraryTemplateDefinition extends Shape
 {
@@ -29,7 +30,8 @@ class MetaLibraryTemplateDefinition extends Shape
      *     templateHeader?: string|null,
      *     templateBody?: string|null,
      *     templateButtons?: list<LibraryTemplateButtonList>|null,
-     *     templateId?: string|null
+     *     templateId?: string|null,
+     *     templateBodyExampleParams?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

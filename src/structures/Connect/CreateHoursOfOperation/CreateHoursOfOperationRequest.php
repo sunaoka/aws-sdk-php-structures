@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property string $TimeZone
  * @property list<Shapes\HoursOfOperationConfig> $Config
+ * @property list<Shapes\ParentHoursOfOperationConfig>|null $ParentHoursOfOperationConfigs
  * @property array<string, string>|null $Tags
  */
 class CreateHoursOfOperationRequest extends Request
@@ -21,6 +22,7 @@ class CreateHoursOfOperationRequest extends Request
      *     Description?: string|null,
      *     TimeZone: string,
      *     Config: list<Shapes\HoursOfOperationConfig>,
+     *     ParentHoursOfOperationConfigs?: list<Shapes\ParentHoursOfOperationConfig>|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

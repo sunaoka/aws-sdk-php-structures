@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $baseCapacity
  * @property list<Shapes\ConfigParameter>|null $configParameters
  * @property bool|null $enhancedVpcRouting
+ * @property bool|null $extraComputeForAutomaticOptimization
  * @property string|null $ipAddressType
  * @property int|null $maxCapacity
  * @property int|null $port
@@ -25,6 +26,7 @@ class UpdateWorkgroupRequest extends Request
      *     baseCapacity?: int|null,
      *     configParameters?: list<Shapes\ConfigParameter>|null,
      *     enhancedVpcRouting?: bool|null,
+     *     extraComputeForAutomaticOptimization?: bool|null,
      *     ipAddressType?: string|null,
      *     maxCapacity?: int|null,
      *     port?: int|null,

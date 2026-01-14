@@ -47,10 +47,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DedicatedLogVolume
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
+ * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
- * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
  */
 class RestoreDBInstanceFromDBSnapshotRequest extends Request
 {
@@ -98,10 +98,10 @@ class RestoreDBInstanceFromDBSnapshotRequest extends Request
      *     DedicatedLogVolume?: bool|null,
      *     CACertificateIdentifier?: string|null,
      *     EngineLifecycleSupport?: string|null,
+     *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     ManageMasterUserPassword?: bool|null,
-     *     MasterUserSecretKmsKeyId?: string|null,
-     *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null
+     *     MasterUserSecretKmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)
