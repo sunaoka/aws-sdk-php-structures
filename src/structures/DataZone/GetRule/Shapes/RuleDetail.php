@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\GetRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GlossaryTermEnforcementDetail|null $glossaryTermEnforcementDetail
  * @property MetadataFormEnforcementDetail|null $metadataFormEnforcementDetail
+ * @property GlossaryTermEnforcementDetail|null $glossaryTermEnforcementDetail
  */
 class RuleDetail extends Shape
 {
     /**
      * @param array{
-     *     glossaryTermEnforcementDetail?: GlossaryTermEnforcementDetail|null,
-     *     metadataFormEnforcementDetail?: MetadataFormEnforcementDetail|null
+     *     metadataFormEnforcementDetail?: MetadataFormEnforcementDetail|null,
+     *     glossaryTermEnforcementDetail?: GlossaryTermEnforcementDetail|null
      * } $args
      */
     public function __construct(array $args = [])

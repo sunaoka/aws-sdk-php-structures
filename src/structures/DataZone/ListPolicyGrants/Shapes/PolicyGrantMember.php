@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\ListPolicyGrants\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property PolicyGrantPrincipal|null $principal
+ * @property PolicyGrantDetail|null $detail
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $createdBy
- * @property PolicyGrantDetail|null $detail
  * @property string|null $grantId
- * @property PolicyGrantPrincipal|null $principal
  */
 class PolicyGrantMember extends Shape
 {
     /**
      * @param array{
+     *     principal?: PolicyGrantPrincipal|null,
+     *     detail?: PolicyGrantDetail|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     createdBy?: string|null,
-     *     detail?: PolicyGrantDetail|null,
-     *     grantId?: string|null,
-     *     principal?: PolicyGrantPrincipal|null
+     *     grantId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $s3AccessGrantLocationId
  * @property string $s3Uri
+ * @property string|null $s3AccessGrantLocationId
  */
 class S3PropertiesInput extends Shape
 {
     /**
      * @param array{
-     *     s3AccessGrantLocationId?: string|null,
-     *     s3Uri: string
+     *     s3Uri: string,
+     *     s3AccessGrantLocationId?: string|null
      * } $args
      */
     public function __construct(array $args)

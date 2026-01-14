@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property Shapes\Member $member
  * @property string $projectIdentifier
+ * @property Shapes\Member $member
  */
 class DeleteProjectMembershipRequest extends Request
 {
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     member: Shapes\Member,
-     *     projectIdentifier: string
+     *     projectIdentifier: string,
+     *     member: Shapes\Member
      * } $args
      */
     public function __construct(array $args)

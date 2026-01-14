@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\RejectPredictions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<int>|null $predictionChoices
  * @property string $predictionTarget
+ * @property list<int>|null $predictionChoices
  */
 class RejectChoice extends Shape
 {
     /**
      * @param array{
-     *     predictionChoices?: list<int>|null,
-     *     predictionTarget: string
+     *     predictionTarget: string,
+     *     predictionChoices?: list<int>|null
      * } $args
      */
     public function __construct(array $args)

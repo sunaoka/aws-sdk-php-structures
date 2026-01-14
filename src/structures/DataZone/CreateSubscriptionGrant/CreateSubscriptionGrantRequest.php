@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateSubscriptionGrant;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\AssetTargetNameMap>|null $assetTargetNames
- * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $environmentIdentifier
- * @property Shapes\GrantedEntityInput $grantedEntity
  * @property string|null $subscriptionTargetIdentifier
+ * @property Shapes\GrantedEntityInput $grantedEntity
+ * @property list<Shapes\AssetTargetNameMap>|null $assetTargetNames
+ * @property string|null $clientToken
  */
 class CreateSubscriptionGrantRequest extends Request
 {
     /**
      * @param array{
-     *     assetTargetNames?: list<Shapes\AssetTargetNameMap>|null,
-     *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     environmentIdentifier: string,
+     *     subscriptionTargetIdentifier?: string|null,
      *     grantedEntity: Shapes\GrantedEntityInput,
-     *     subscriptionTargetIdentifier?: string|null
+     *     assetTargetNames?: list<Shapes\AssetTargetNameMap>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\DataZone\ListEnvironments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $projectId
+ * @property string|null $id
+ * @property string $domainId
+ * @property string $createdBy
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string $name
+ * @property string|null $description
+ * @property string|null $environmentProfileId
  * @property string|null $awsAccountId
  * @property string|null $awsAccountRegion
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string $createdBy
- * @property string|null $description
- * @property string $domainId
- * @property string|null $environmentConfigurationId
- * @property string|null $environmentProfileId
- * @property string|null $id
- * @property string $name
- * @property string $projectId
  * @property string $provider
  * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE'|null $status
- * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $environmentConfigurationId
  */
 class EnvironmentSummary extends Shape
 {
     /**
      * @param array{
+     *     projectId: string,
+     *     id?: string|null,
+     *     domainId: string,
+     *     createdBy: string,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     name: string,
+     *     description?: string|null,
+     *     environmentProfileId?: string|null,
      *     awsAccountId?: string|null,
      *     awsAccountRegion?: string|null,
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     createdBy: string,
-     *     description?: string|null,
-     *     domainId: string,
-     *     environmentConfigurationId?: string|null,
-     *     environmentProfileId?: string|null,
-     *     id?: string|null,
-     *     name: string,
-     *     projectId: string,
      *     provider: string,
      *     status?: 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE'|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     environmentConfigurationId?: string|null
      * } $args
      */
     public function __construct(array $args)

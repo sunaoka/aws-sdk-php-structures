@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateDomain;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string|null $description
- * @property string|null $domainExecutionRole
  * @property string $identifier
- * @property string|null $name
- * @property string|null $serviceRole
+ * @property string|null $description
  * @property Shapes\SingleSignOn|null $singleSignOn
+ * @property string|null $domainExecutionRole
+ * @property string|null $serviceRole
+ * @property string|null $name
+ * @property string|null $clientToken
  */
 class UpdateDomainRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     description?: string|null,
-     *     domainExecutionRole?: string|null,
      *     identifier: string,
-     *     name?: string|null,
+     *     description?: string|null,
+     *     singleSignOn?: Shapes\SingleSignOn|null,
+     *     domainExecutionRole?: string|null,
      *     serviceRole?: string|null,
-     *     singleSignOn?: Shapes\SingleSignOn|null
+     *     name?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

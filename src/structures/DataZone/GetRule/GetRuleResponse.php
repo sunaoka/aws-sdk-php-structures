@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\DataZone\GetRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST' $action
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string|null $description
- * @property Shapes\RuleDetail $detail
  * @property string $identifier
- * @property string $lastUpdatedBy
- * @property string $name
  * @property string $revision
+ * @property string $name
  * @property 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT' $ruleType
- * @property Shapes\RuleScope $scope
  * @property Shapes\RuleTarget $target
+ * @property 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST' $action
+ * @property Shapes\RuleScope $scope
+ * @property Shapes\RuleDetail $detail
  * @property 'DOMAIN_UNIT'|null $targetType
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string $createdBy
+ * @property string $lastUpdatedBy
  */
 class GetRuleResponse extends Response
 {

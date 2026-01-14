@@ -5,33 +5,35 @@ namespace Sunaoka\Aws\Structures\DataZone\ListSubscriptionRequests;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $approverProjectId
  * @property string $domainIdentifier
- * @property int<1, 50>|null $maxResults
- * @property string|null $nextToken
- * @property string|null $owningGroupId
- * @property string|null $owningProjectId
- * @property string|null $owningUserId
- * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
- * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
  * @property 'PENDING'|'ACCEPTED'|'REJECTED'|null $status
  * @property string|null $subscribedListingId
+ * @property string|null $owningProjectId
+ * @property string|null $owningIamPrincipalArn
+ * @property string|null $approverProjectId
+ * @property string|null $owningUserId
+ * @property string|null $owningGroupId
+ * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListSubscriptionRequestsRequest extends Request
 {
     /**
      * @param array{
-     *     approverProjectId?: string|null,
      *     domainIdentifier: string,
-     *     maxResults?: int<1, 50>|null,
-     *     nextToken?: string|null,
-     *     owningGroupId?: string|null,
+     *     status?: 'PENDING'|'ACCEPTED'|'REJECTED'|null,
+     *     subscribedListingId?: string|null,
      *     owningProjectId?: string|null,
+     *     owningIamPrincipalArn?: string|null,
+     *     approverProjectId?: string|null,
      *     owningUserId?: string|null,
+     *     owningGroupId?: string|null,
      *     sortBy?: 'CREATED_AT'|'UPDATED_AT'|null,
      *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
-     *     status?: 'PENDING'|'ACCEPTED'|'REJECTED'|null,
-     *     subscribedListingId?: string|null
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

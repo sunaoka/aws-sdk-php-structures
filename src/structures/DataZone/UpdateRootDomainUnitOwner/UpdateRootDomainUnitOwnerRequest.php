@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateRootDomainUnitOwner;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
- * @property string $currentOwner
  * @property string $domainIdentifier
+ * @property string $currentOwner
  * @property string $newOwner
+ * @property string|null $clientToken
  */
 class UpdateRootDomainUnitOwnerRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
-     *     currentOwner: string,
      *     domainIdentifier: string,
-     *     newOwner: string
+     *     currentOwner: string,
+     *     newOwner: string,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

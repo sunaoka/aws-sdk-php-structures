@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainIdentifier
  * @property string $entityIdentifier
  * @property 'ASSET'|'LISTING' $entityType
- * @property string $formName
  * @property string $identifier
+ * @property string $formName
  */
 class GetTimeSeriesDataPointRequest extends Request
 {
@@ -18,8 +18,8 @@ class GetTimeSeriesDataPointRequest extends Request
      *     domainIdentifier: string,
      *     entityIdentifier: string,
      *     entityType: 'ASSET'|'LISTING',
-     *     formName: string,
-     *     identifier: string
+     *     identifier: string,
+     *     formName: string
      * } $args
      */
     public function __construct(array $args)

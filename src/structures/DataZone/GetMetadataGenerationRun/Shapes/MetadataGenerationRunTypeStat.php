@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\GetMetadataGenerationRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $errorMessage
- * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|'PARTIALLY_SUCCEEDED' $status
  * @property 'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS' $type
+ * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|'PARTIALLY_SUCCEEDED' $status
+ * @property string|null $errorMessage
  */
 class MetadataGenerationRunTypeStat extends Shape
 {
     /**
      * @param array{
-     *     errorMessage?: string|null,
+     *     type: 'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS',
      *     status: 'SUBMITTED'|'IN_PROGRESS'|'CANCELED'|'SUCCEEDED'|'FAILED'|'PARTIALLY_SUCCEEDED',
-     *     type: 'BUSINESS_DESCRIPTIONS'|'BUSINESS_NAMES'|'BUSINESS_GLOSSARY_ASSOCIATIONS'
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

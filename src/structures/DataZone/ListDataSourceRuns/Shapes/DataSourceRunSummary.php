@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\DataZone\ListDataSourceRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $dataSourceId
- * @property DataSourceErrorMessage|null $errorMessage
  * @property string $id
- * @property DataSourceRunLineageSummary|null $lineageSummary
+ * @property string $dataSourceId
+ * @property 'PRIORITIZED'|'SCHEDULED' $type
+ * @property 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS' $status
  * @property string $projectId
  * @property RunStatisticsForAssets|null $runStatisticsForAssets
- * @property \Aws\Api\DateTimeResult|null $startedAt
- * @property 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS' $status
- * @property \Aws\Api\DateTimeResult|null $stoppedAt
- * @property 'PRIORITIZED'|'SCHEDULED' $type
+ * @property DataSourceErrorMessage|null $errorMessage
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $stoppedAt
+ * @property DataSourceRunLineageSummary|null $lineageSummary
  */
 class DataSourceRunSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt: \Aws\Api\DateTimeResult,
-     *     dataSourceId: string,
-     *     errorMessage?: DataSourceErrorMessage|null,
      *     id: string,
-     *     lineageSummary?: DataSourceRunLineageSummary|null,
+     *     dataSourceId: string,
+     *     type: 'PRIORITIZED'|'SCHEDULED',
+     *     status: 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS',
      *     projectId: string,
      *     runStatisticsForAssets?: RunStatisticsForAssets|null,
+     *     errorMessage?: DataSourceErrorMessage|null,
+     *     createdAt: \Aws\Api\DateTimeResult,
+     *     updatedAt: \Aws\Api\DateTimeResult,
      *     startedAt?: \Aws\Api\DateTimeResult|null,
-     *     status: 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS',
      *     stoppedAt?: \Aws\Api\DateTimeResult|null,
-     *     type: 'PRIORITIZED'|'SCHEDULED',
-     *     updatedAt: \Aws\Api\DateTimeResult
+     *     lineageSummary?: DataSourceRunLineageSummary|null
      * } $args
      */
     public function __construct(array $args)

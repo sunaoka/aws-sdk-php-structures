@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateEnvironment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int|null $deploymentOrder
- * @property string|null $description
+ * @property string $projectIdentifier
  * @property string $domainIdentifier
+ * @property string|null $description
+ * @property string $name
+ * @property string|null $environmentProfileIdentifier
+ * @property list<Shapes\EnvironmentParameter>|null $userParameters
+ * @property list<string>|null $glossaryTerms
  * @property string|null $environmentAccountIdentifier
  * @property string|null $environmentAccountRegion
  * @property string|null $environmentBlueprintIdentifier
+ * @property int|null $deploymentOrder
  * @property string|null $environmentConfigurationId
- * @property string|null $environmentProfileIdentifier
- * @property list<string>|null $glossaryTerms
- * @property string $name
- * @property string $projectIdentifier
- * @property list<Shapes\EnvironmentParameter>|null $userParameters
  */
 class CreateEnvironmentRequest extends Request
 {
     /**
      * @param array{
-     *     deploymentOrder?: int|null,
-     *     description?: string|null,
+     *     projectIdentifier: string,
      *     domainIdentifier: string,
+     *     description?: string|null,
+     *     name: string,
+     *     environmentProfileIdentifier?: string|null,
+     *     userParameters?: list<Shapes\EnvironmentParameter>|null,
+     *     glossaryTerms?: list<string>|null,
      *     environmentAccountIdentifier?: string|null,
      *     environmentAccountRegion?: string|null,
      *     environmentBlueprintIdentifier?: string|null,
-     *     environmentConfigurationId?: string|null,
-     *     environmentProfileIdentifier?: string|null,
-     *     glossaryTerms?: list<string>|null,
-     *     name: string,
-     *     projectIdentifier: string,
-     *     userParameters?: list<Shapes\EnvironmentParameter>|null
+     *     deploymentOrder?: int|null,
+     *     environmentConfigurationId?: string|null
      * } $args
      */
     public function __construct(array $args)

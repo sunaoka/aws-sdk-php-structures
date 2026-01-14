@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DataZone\ListRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST'|null $action
  * @property string|null $identifier
- * @property string|null $lastUpdatedBy
- * @property string|null $name
  * @property string|null $revision
  * @property 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT'|null $ruleType
- * @property RuleScope|null $scope
- * @property RuleTarget|null $target
+ * @property string|null $name
  * @property 'DOMAIN_UNIT'|null $targetType
+ * @property RuleTarget|null $target
+ * @property 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST'|null $action
+ * @property RuleScope|null $scope
  * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $lastUpdatedBy
  */
 class RuleSummary extends Shape
 {
     /**
      * @param array{
-     *     action?: 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST'|null,
      *     identifier?: string|null,
-     *     lastUpdatedBy?: string|null,
-     *     name?: string|null,
      *     revision?: string|null,
      *     ruleType?: 'METADATA_FORM_ENFORCEMENT'|'GLOSSARY_TERM_ENFORCEMENT'|null,
-     *     scope?: RuleScope|null,
-     *     target?: RuleTarget|null,
+     *     name?: string|null,
      *     targetType?: 'DOMAIN_UNIT'|null,
-     *     updatedAt?: \Aws\Api\DateTimeResult|null
+     *     target?: RuleTarget|null,
+     *     action?: 'CREATE_LISTING_CHANGE_SET'|'CREATE_SUBSCRIPTION_REQUEST'|null,
+     *     scope?: RuleScope|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedBy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

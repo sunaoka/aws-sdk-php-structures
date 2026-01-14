@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $authMode
  * @property bool $isEnabled
  * @property string|null $profileArn
+ * @property string|null $authMode
  */
 class AmazonQPropertiesInput extends Shape
 {
     /**
      * @param array{
-     *     authMode?: string|null,
      *     isEnabled: bool,
-     *     profileArn?: string|null
+     *     profileArn?: string|null,
+     *     authMode?: string|null
      * } $args
      */
     public function __construct(array $args)

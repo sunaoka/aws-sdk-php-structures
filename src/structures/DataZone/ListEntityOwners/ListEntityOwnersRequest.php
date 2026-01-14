@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property string $entityIdentifier
  * @property 'DOMAIN_UNIT' $entityType
+ * @property string $entityIdentifier
  * @property int<1, 25>|null $maxResults
  * @property string|null $nextToken
  */
@@ -16,8 +16,8 @@ class ListEntityOwnersRequest extends Request
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     entityIdentifier: string,
      *     entityType: 'DOMAIN_UNIT',
+     *     entityIdentifier: string,
      *     maxResults?: int<1, 25>|null,
      *     nextToken?: string|null
      * } $args

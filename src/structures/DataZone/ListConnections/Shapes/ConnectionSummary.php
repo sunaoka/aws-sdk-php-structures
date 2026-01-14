@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<PhysicalEndpoint> $physicalEndpoints
  * @property string|null $projectId
  * @property ConnectionPropertiesOutput|null $props
- * @property 'DOMAIN'|'PROJECT'|null $scope
  * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW' $type
+ * @property 'DOMAIN'|'PROJECT'|null $scope
  */
 class ConnectionSummary extends Shape
 {
@@ -28,8 +28,8 @@ class ConnectionSummary extends Shape
      *     physicalEndpoints: list<PhysicalEndpoint>,
      *     projectId?: string|null,
      *     props?: ConnectionPropertiesOutput|null,
-     *     scope?: 'DOMAIN'|'PROJECT'|null,
-     *     type: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW'
+     *     type: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'S3'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|'AMAZON_Q'|'MLFLOW',
+     *     scope?: 'DOMAIN'|'PROJECT'|null
      * } $args
      */
     public function __construct(array $args)

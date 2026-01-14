@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DataZone\GetConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AmazonQPropertiesOutput|null $amazonQProperties
  * @property AthenaPropertiesOutput|null $athenaProperties
  * @property GluePropertiesOutput|null $glueProperties
  * @property HyperPodPropertiesOutput|null $hyperPodProperties
  * @property IamPropertiesOutput|null $iamProperties
- * @property MlflowPropertiesOutput|null $mlflowProperties
  * @property RedshiftPropertiesOutput|null $redshiftProperties
- * @property S3PropertiesOutput|null $s3Properties
  * @property SparkEmrPropertiesOutput|null $sparkEmrProperties
  * @property SparkGluePropertiesOutput|null $sparkGlueProperties
+ * @property S3PropertiesOutput|null $s3Properties
+ * @property AmazonQPropertiesOutput|null $amazonQProperties
+ * @property MlflowPropertiesOutput|null $mlflowProperties
  */
 class ConnectionPropertiesOutput extends Shape
 {
     /**
      * @param array{
-     *     amazonQProperties?: AmazonQPropertiesOutput|null,
      *     athenaProperties?: AthenaPropertiesOutput|null,
      *     glueProperties?: GluePropertiesOutput|null,
      *     hyperPodProperties?: HyperPodPropertiesOutput|null,
      *     iamProperties?: IamPropertiesOutput|null,
-     *     mlflowProperties?: MlflowPropertiesOutput|null,
      *     redshiftProperties?: RedshiftPropertiesOutput|null,
-     *     s3Properties?: S3PropertiesOutput|null,
      *     sparkEmrProperties?: SparkEmrPropertiesOutput|null,
-     *     sparkGlueProperties?: SparkGluePropertiesOutput|null
+     *     sparkGlueProperties?: SparkGluePropertiesOutput|null,
+     *     s3Properties?: S3PropertiesOutput|null,
+     *     amazonQProperties?: AmazonQPropertiesOutput|null,
+     *     mlflowProperties?: MlflowPropertiesOutput|null
      * } $args
      */
     public function __construct(array $args = [])

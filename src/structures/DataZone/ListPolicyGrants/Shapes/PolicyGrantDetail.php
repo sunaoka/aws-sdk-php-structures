@@ -5,38 +5,38 @@ namespace Sunaoka\Aws\Structures\DataZone\ListPolicyGrants\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AddToProjectMemberPoolPolicyGrantDetail|null $addToProjectMemberPool
- * @property CreateAssetTypePolicyGrantDetail|null $createAssetType
  * @property CreateDomainUnitPolicyGrantDetail|null $createDomainUnit
+ * @property OverrideDomainUnitOwnersPolicyGrantDetail|null $overrideDomainUnitOwners
+ * @property AddToProjectMemberPoolPolicyGrantDetail|null $addToProjectMemberPool
+ * @property OverrideProjectOwnersPolicyGrantDetail|null $overrideProjectOwners
+ * @property CreateGlossaryPolicyGrantDetail|null $createGlossary
+ * @property CreateFormTypePolicyGrantDetail|null $createFormType
+ * @property CreateAssetTypePolicyGrantDetail|null $createAssetType
+ * @property CreateProjectPolicyGrantDetail|null $createProject
+ * @property CreateEnvironmentProfilePolicyGrantDetail|null $createEnvironmentProfile
+ * @property Unit|null $delegateCreateEnvironmentProfile
  * @property Unit|null $createEnvironment
  * @property Unit|null $createEnvironmentFromBlueprint
- * @property CreateEnvironmentProfilePolicyGrantDetail|null $createEnvironmentProfile
- * @property CreateFormTypePolicyGrantDetail|null $createFormType
- * @property CreateGlossaryPolicyGrantDetail|null $createGlossary
- * @property CreateProjectPolicyGrantDetail|null $createProject
  * @property CreateProjectFromProjectProfilePolicyGrantDetail|null $createProjectFromProjectProfile
- * @property Unit|null $delegateCreateEnvironmentProfile
- * @property OverrideDomainUnitOwnersPolicyGrantDetail|null $overrideDomainUnitOwners
- * @property OverrideProjectOwnersPolicyGrantDetail|null $overrideProjectOwners
  * @property UseAssetTypePolicyGrantDetail|null $useAssetType
  */
 class PolicyGrantDetail extends Shape
 {
     /**
      * @param array{
-     *     addToProjectMemberPool?: AddToProjectMemberPoolPolicyGrantDetail|null,
-     *     createAssetType?: CreateAssetTypePolicyGrantDetail|null,
      *     createDomainUnit?: CreateDomainUnitPolicyGrantDetail|null,
+     *     overrideDomainUnitOwners?: OverrideDomainUnitOwnersPolicyGrantDetail|null,
+     *     addToProjectMemberPool?: AddToProjectMemberPoolPolicyGrantDetail|null,
+     *     overrideProjectOwners?: OverrideProjectOwnersPolicyGrantDetail|null,
+     *     createGlossary?: CreateGlossaryPolicyGrantDetail|null,
+     *     createFormType?: CreateFormTypePolicyGrantDetail|null,
+     *     createAssetType?: CreateAssetTypePolicyGrantDetail|null,
+     *     createProject?: CreateProjectPolicyGrantDetail|null,
+     *     createEnvironmentProfile?: CreateEnvironmentProfilePolicyGrantDetail|null,
+     *     delegateCreateEnvironmentProfile?: Unit|null,
      *     createEnvironment?: Unit|null,
      *     createEnvironmentFromBlueprint?: Unit|null,
-     *     createEnvironmentProfile?: CreateEnvironmentProfilePolicyGrantDetail|null,
-     *     createFormType?: CreateFormTypePolicyGrantDetail|null,
-     *     createGlossary?: CreateGlossaryPolicyGrantDetail|null,
-     *     createProject?: CreateProjectPolicyGrantDetail|null,
      *     createProjectFromProjectProfile?: CreateProjectFromProjectProfilePolicyGrantDetail|null,
-     *     delegateCreateEnvironmentProfile?: Unit|null,
-     *     overrideDomainUnitOwners?: OverrideDomainUnitOwnersPolicyGrantDetail|null,
-     *     overrideProjectOwners?: OverrideProjectOwnersPolicyGrantDetail|null,
      *     useAssetType?: UseAssetTypePolicyGrantDetail|null
      * } $args
      */

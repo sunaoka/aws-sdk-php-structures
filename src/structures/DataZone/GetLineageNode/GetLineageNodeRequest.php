@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property \Aws\Api\DateTimeResult|null $eventTimestamp
  * @property string $identifier
+ * @property \Aws\Api\DateTimeResult|null $eventTimestamp
  */
 class GetLineageNodeRequest extends Request
 {
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     eventTimestamp?: \Aws\Api\DateTimeResult|null,
-     *     identifier: string
+     *     identifier: string,
+     *     eventTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

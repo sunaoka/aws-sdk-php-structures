@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $awsAccountId
- * @property string|null $awsAccountName
  * @property list<string> $supportedRegions
+ * @property string|null $awsAccountName
  */
 class AccountInfo extends Shape
 {
     /**
      * @param array{
      *     awsAccountId: string,
-     *     awsAccountName?: string|null,
-     *     supportedRegions: list<string>
+     *     supportedRegions: list<string>,
+     *     awsAccountName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\DataZone\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataProductItemAdditionalAttributes|null $additionalAttributes
- * @property \Aws\Api\DateTimeResult|null $createdAt
- * @property string|null $createdBy
- * @property string|null $description
  * @property string $domainId
- * @property \Aws\Api\DateTimeResult|null $firstRevisionCreatedAt
- * @property string|null $firstRevisionCreatedBy
- * @property list<string>|null $glossaryTerms
  * @property string $id
  * @property string $name
  * @property string $owningProjectId
+ * @property string|null $description
+ * @property list<string>|null $glossaryTerms
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property \Aws\Api\DateTimeResult|null $firstRevisionCreatedAt
+ * @property string|null $firstRevisionCreatedBy
+ * @property DataProductItemAdditionalAttributes|null $additionalAttributes
  */
 class DataProductResultItem extends Shape
 {
     /**
      * @param array{
-     *     additionalAttributes?: DataProductItemAdditionalAttributes|null,
-     *     createdAt?: \Aws\Api\DateTimeResult|null,
-     *     createdBy?: string|null,
-     *     description?: string|null,
      *     domainId: string,
-     *     firstRevisionCreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     firstRevisionCreatedBy?: string|null,
-     *     glossaryTerms?: list<string>|null,
      *     id: string,
      *     name: string,
-     *     owningProjectId: string
+     *     owningProjectId: string,
+     *     description?: string|null,
+     *     glossaryTerms?: list<string>|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     firstRevisionCreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     firstRevisionCreatedBy?: string|null,
+     *     additionalAttributes?: DataProductItemAdditionalAttributes|null
      * } $args
      */
     public function __construct(array $args)

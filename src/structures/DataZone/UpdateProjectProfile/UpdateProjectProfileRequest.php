@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateProjectProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $allowCustomProjectResourceTags
- * @property string|null $description
  * @property string $domainIdentifier
- * @property string|null $domainUnitIdentifier
- * @property list<Shapes\EnvironmentConfiguration>|null $environmentConfigurations
  * @property string $identifier
  * @property string|null $name
- * @property list<Shapes\ResourceTagParameter>|null $projectResourceTags
- * @property string|null $projectResourceTagsDescription
+ * @property string|null $description
  * @property 'ENABLED'|'DISABLED'|null $status
+ * @property list<Shapes\ResourceTagParameter>|null $projectResourceTags
+ * @property bool|null $allowCustomProjectResourceTags
+ * @property string|null $projectResourceTagsDescription
+ * @property list<Shapes\EnvironmentConfiguration>|null $environmentConfigurations
+ * @property string|null $domainUnitIdentifier
  */
 class UpdateProjectProfileRequest extends Request
 {
     /**
      * @param array{
-     *     allowCustomProjectResourceTags?: bool|null,
-     *     description?: string|null,
      *     domainIdentifier: string,
-     *     domainUnitIdentifier?: string|null,
-     *     environmentConfigurations?: list<Shapes\EnvironmentConfiguration>|null,
      *     identifier: string,
      *     name?: string|null,
+     *     description?: string|null,
+     *     status?: 'ENABLED'|'DISABLED'|null,
      *     projectResourceTags?: list<Shapes\ResourceTagParameter>|null,
+     *     allowCustomProjectResourceTags?: bool|null,
      *     projectResourceTagsDescription?: string|null,
-     *     status?: 'ENABLED'|'DISABLED'|null
+     *     environmentConfigurations?: list<Shapes\EnvironmentConfiguration>|null,
+     *     domainUnitIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

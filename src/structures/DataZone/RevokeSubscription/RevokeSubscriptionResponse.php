@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\RevokeSubscription;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property string $domainId
  * @property string $id
- * @property bool|null $retainPermissions
- * @property 'APPROVED'|'REVOKED'|'CANCELLED' $status
- * @property Shapes\SubscribedListing $subscribedListing
- * @property Shapes\SubscribedPrincipal $subscribedPrincipal
- * @property string|null $subscriptionRequestId
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string $createdBy
  * @property string|null $updatedBy
+ * @property string $domainId
+ * @property 'APPROVED'|'REVOKED'|'CANCELLED' $status
+ * @property \Aws\Api\DateTimeResult $createdAt
+ * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property Shapes\SubscribedPrincipal $subscribedPrincipal
+ * @property Shapes\SubscribedListing $subscribedListing
+ * @property string|null $subscriptionRequestId
+ * @property bool|null $retainPermissions
  */
 class RevokeSubscriptionResponse extends Response
 {

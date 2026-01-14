@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $deploymentId
- * @property 'IN_PROGRESS'|'SUCCESSFUL'|'FAILED'|'PENDING_DEPLOYMENT'|null $deploymentStatus
  * @property 'CREATE'|'UPDATE'|'DELETE'|null $deploymentType
+ * @property 'IN_PROGRESS'|'SUCCESSFUL'|'FAILED'|'PENDING_DEPLOYMENT'|null $deploymentStatus
  * @property EnvironmentError|null $failureReason
- * @property bool|null $isDeploymentComplete
  * @property list<string>|null $messages
+ * @property bool|null $isDeploymentComplete
  */
 class Deployment extends Shape
 {
     /**
      * @param array{
      *     deploymentId?: string|null,
-     *     deploymentStatus?: 'IN_PROGRESS'|'SUCCESSFUL'|'FAILED'|'PENDING_DEPLOYMENT'|null,
      *     deploymentType?: 'CREATE'|'UPDATE'|'DELETE'|null,
+     *     deploymentStatus?: 'IN_PROGRESS'|'SUCCESSFUL'|'FAILED'|'PENDING_DEPLOYMENT'|null,
      *     failureReason?: EnvironmentError|null,
-     *     isDeploymentComplete?: bool|null,
-     *     messages?: list<string>|null
+     *     messages?: list<string>|null,
+     *     isDeploymentComplete?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

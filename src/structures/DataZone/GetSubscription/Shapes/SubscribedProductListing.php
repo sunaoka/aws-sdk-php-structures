@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\GetSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AssetInDataProductListingItem>|null $assetListings
- * @property string|null $description
  * @property string|null $entityId
  * @property string|null $entityRevision
  * @property list<DetailedGlossaryTerm>|null $glossaryTerms
  * @property string|null $name
+ * @property string|null $description
+ * @property list<AssetInDataProductListingItem>|null $assetListings
  */
 class SubscribedProductListing extends Shape
 {
     /**
      * @param array{
-     *     assetListings?: list<AssetInDataProductListingItem>|null,
-     *     description?: string|null,
      *     entityId?: string|null,
      *     entityRevision?: string|null,
      *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
-     *     name?: string|null
+     *     name?: string|null,
+     *     description?: string|null,
+     *     assetListings?: list<AssetInDataProductListingItem>|null
      * } $args
      */
     public function __construct(array $args = [])

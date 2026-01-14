@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataZone\GetJobRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $errorMessages
- * @property int|null $numQueriesFailed
- * @property \Aws\Api\DateTimeResult|null $queryEndTime
  * @property \Aws\Api\DateTimeResult|null $queryStartTime
+ * @property \Aws\Api\DateTimeResult|null $queryEndTime
  * @property int|null $totalQueriesProcessed
+ * @property int|null $numQueriesFailed
+ * @property list<string>|null $errorMessages
  */
 class LineageSqlQueryRunDetails extends Shape
 {
     /**
      * @param array{
-     *     errorMessages?: list<string>|null,
-     *     numQueriesFailed?: int|null,
-     *     queryEndTime?: \Aws\Api\DateTimeResult|null,
      *     queryStartTime?: \Aws\Api\DateTimeResult|null,
-     *     totalQueriesProcessed?: int|null
+     *     queryEndTime?: \Aws\Api\DateTimeResult|null,
+     *     totalQueriesProcessed?: int|null,
+     *     numQueriesFailed?: int|null,
+     *     errorMessages?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

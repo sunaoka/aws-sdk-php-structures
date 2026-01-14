@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $forms
- * @property list<TimeSeriesDataPointSummaryFormOutput>|null $latestTimeSeriesDataPointForms
  * @property list<MatchRationaleItem>|null $matchRationale
+ * @property list<TimeSeriesDataPointSummaryFormOutput>|null $latestTimeSeriesDataPointForms
  */
 class AssetListingItemAdditionalAttributes extends Shape
 {
     /**
      * @param array{
      *     forms?: string|null,
-     *     latestTimeSeriesDataPointForms?: list<TimeSeriesDataPointSummaryFormOutput>|null,
-     *     matchRationale?: list<MatchRationaleItem>|null
+     *     matchRationale?: list<MatchRationaleItem>|null,
+     *     latestTimeSeriesDataPointForms?: list<TimeSeriesDataPointSummaryFormOutput>|null
      * } $args
      */
     public function __construct(array $args = [])
