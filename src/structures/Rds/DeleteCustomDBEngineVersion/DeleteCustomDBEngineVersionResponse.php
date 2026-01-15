@@ -10,12 +10,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $EngineVersion
  * @property string|null $DatabaseInstallationFilesS3BucketName
  * @property string|null $DatabaseInstallationFilesS3Prefix
+ * @property list<string>|null $DatabaseInstallationFiles
  * @property string|null $CustomDBEngineVersionManifest
  * @property string|null $DBParameterGroupFamily
  * @property string|null $DBEngineDescription
  * @property string|null $DBEngineVersionArn
  * @property string|null $DBEngineVersionDescription
  * @property Shapes\CharacterSet|null $DefaultCharacterSet
+ * @property string|null $FailureReason
  * @property Shapes\CustomDBEngineVersionAMI|null $Image
  * @property string|null $DBEngineMediaType
  * @property string|null $KMSKeyId
@@ -40,8 +42,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $SupportsLocalWriteForwarding
  * @property bool|null $SupportsIntegrations
  * @property Shapes\ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
- * @property list<string>|null $DatabaseInstallationFiles
- * @property string|null $FailureReason
  */
 class DeleteCustomDBEngineVersionResponse extends Response
 {

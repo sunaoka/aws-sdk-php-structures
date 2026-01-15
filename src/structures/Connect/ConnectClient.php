@@ -12,6 +12,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use AssociateDefaultVocabulary\AssociateDefaultVocabularyTrait;
     use AssociateEmailAddressAlias\AssociateEmailAddressAliasTrait;
     use AssociateFlow\AssociateFlowTrait;
+    use AssociateHoursOfOperations\AssociateHoursOfOperationsTrait;
     use AssociateInstanceStorageConfig\AssociateInstanceStorageConfigTrait;
     use AssociateLambdaFunction\AssociateLambdaFunctionTrait;
     use AssociateLexBot\AssociateLexBotTrait;
@@ -140,6 +141,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DisassociateBot\DisassociateBotTrait;
     use DisassociateEmailAddressAlias\DisassociateEmailAddressAliasTrait;
     use DisassociateFlow\DisassociateFlowTrait;
+    use DisassociateHoursOfOperations\DisassociateHoursOfOperationsTrait;
     use DisassociateInstanceStorageConfig\DisassociateInstanceStorageConfigTrait;
     use DisassociateLambdaFunction\DisassociateLambdaFunctionTrait;
     use DisassociateLexBot\DisassociateLexBotTrait;
@@ -175,6 +177,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListAssociatedContacts\ListAssociatedContactsTrait;
     use ListAuthenticationProfiles\ListAuthenticationProfilesTrait;
     use ListBots\ListBotsTrait;
+    use ListChildHoursOfOperations\ListChildHoursOfOperationsTrait;
     use ListContactEvaluations\ListContactEvaluationsTrait;
     use ListContactFlowModuleAliases\ListContactFlowModuleAliasesTrait;
     use ListContactFlowModuleVersions\ListContactFlowModuleVersionsTrait;

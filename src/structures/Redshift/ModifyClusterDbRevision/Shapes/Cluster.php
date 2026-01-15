@@ -67,6 +67,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SecondaryClusterInfo|null $MultiAZSecondary
  * @property string|null $LakehouseRegistrationStatus
  * @property string|null $CatalogArn
+ * @property string|null $ExtraComputeForAutomaticOptimization
  */
 class Cluster extends Shape
 {
@@ -133,7 +134,8 @@ class Cluster extends Shape
      *     MultiAZ?: string|null,
      *     MultiAZSecondary?: SecondaryClusterInfo|null,
      *     LakehouseRegistrationStatus?: string|null,
-     *     CatalogArn?: string|null
+     *     CatalogArn?: string|null,
+     *     ExtraComputeForAutomaticOptimization?: string|null
      * } $args
      */
     public function __construct(array $args = [])

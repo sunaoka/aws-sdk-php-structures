@@ -45,6 +45,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $MultiAZ
  * @property string|null $RedshiftIdcApplicationArn
  * @property string|null $CatalogName
+ * @property bool|null $ExtraComputeForAutomaticOptimization
  */
 class CreateClusterRequest extends Request
 {
@@ -89,7 +90,8 @@ class CreateClusterRequest extends Request
      *     IpAddressType?: string|null,
      *     MultiAZ?: bool|null,
      *     RedshiftIdcApplicationArn?: string|null,
-     *     CatalogName?: string|null
+     *     CatalogName?: string|null,
+     *     ExtraComputeForAutomaticOptimization?: bool|null
      * } $args
      */
     public function __construct(array $args)

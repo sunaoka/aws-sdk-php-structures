@@ -10,12 +10,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EngineVersion
  * @property string|null $DatabaseInstallationFilesS3BucketName
  * @property string|null $DatabaseInstallationFilesS3Prefix
+ * @property list<string>|null $DatabaseInstallationFiles
  * @property string|null $CustomDBEngineVersionManifest
  * @property string|null $DBParameterGroupFamily
  * @property string|null $DBEngineDescription
  * @property string|null $DBEngineVersionArn
  * @property string|null $DBEngineVersionDescription
  * @property CharacterSet|null $DefaultCharacterSet
+ * @property string|null $FailureReason
  * @property CustomDBEngineVersionAMI|null $Image
  * @property string|null $DBEngineMediaType
  * @property string|null $KMSKeyId
@@ -40,8 +42,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $SupportsLocalWriteForwarding
  * @property bool|null $SupportsIntegrations
  * @property ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
- * @property list<string>|null $DatabaseInstallationFiles
- * @property string|null $FailureReason
  */
 class DBEngineVersion extends Shape
 {
@@ -52,12 +52,14 @@ class DBEngineVersion extends Shape
      *     EngineVersion?: string|null,
      *     DatabaseInstallationFilesS3BucketName?: string|null,
      *     DatabaseInstallationFilesS3Prefix?: string|null,
+     *     DatabaseInstallationFiles?: list<string>|null,
      *     CustomDBEngineVersionManifest?: string|null,
      *     DBParameterGroupFamily?: string|null,
      *     DBEngineDescription?: string|null,
      *     DBEngineVersionArn?: string|null,
      *     DBEngineVersionDescription?: string|null,
      *     DefaultCharacterSet?: CharacterSet|null,
+     *     FailureReason?: string|null,
      *     Image?: CustomDBEngineVersionAMI|null,
      *     DBEngineMediaType?: string|null,
      *     KMSKeyId?: string|null,
@@ -81,9 +83,7 @@ class DBEngineVersion extends Shape
      *     SupportedCACertificateIdentifiers?: list<string>|null,
      *     SupportsLocalWriteForwarding?: bool|null,
      *     SupportsIntegrations?: bool|null,
-     *     ServerlessV2FeaturesSupport?: ServerlessV2FeaturesSupport|null,
-     *     DatabaseInstallationFiles?: list<string>|null,
-     *     FailureReason?: string|null
+     *     ServerlessV2FeaturesSupport?: ServerlessV2FeaturesSupport|null
      * } $args
      */
     public function __construct(array $args = [])
