@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FipsEndpoints|null $fipsEndpoints
  * @property string|null $failureCode
  * @property string|null $failureMessage
+ * @property string|null $collectionGroupName
  */
 class CollectionDetail extends Shape
 {
@@ -41,7 +42,8 @@ class CollectionDetail extends Shape
      *     dashboardEndpoint?: string|null,
      *     fipsEndpoints?: FipsEndpoints|null,
      *     failureCode?: string|null,
-     *     failureMessage?: string|null
+     *     failureMessage?: string|null,
+     *     collectionGroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

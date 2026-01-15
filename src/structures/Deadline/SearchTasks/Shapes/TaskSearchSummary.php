@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endedAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
+ * @property string|null $latestSessionActionId
  */
 class TaskSearchSummary extends Shape
 {
@@ -33,7 +34,8 @@ class TaskSearchSummary extends Shape
      *     startedAt?: \Aws\Api\DateTimeResult|null,
      *     endedAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     updatedBy?: string|null
+     *     updatedBy?: string|null,
+     *     latestSessionActionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

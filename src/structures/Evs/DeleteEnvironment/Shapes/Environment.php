@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $environmentName
  * @property string|null $vpcId
  * @property string|null $serviceAccessSubnetId
- * @property 'VCF-5.2.1'|null $vcfVersion
+ * @property 'VCF-5.2.1'|'VCF-5.2.2'|null $vcfVersion
  * @property bool|null $termsAccepted
  * @property list<LicenseInfo>|null $licenseInfo
  * @property string|null $siteId
@@ -39,7 +39,7 @@ class Environment extends Shape
      *     environmentName?: string|null,
      *     vpcId?: string|null,
      *     serviceAccessSubnetId?: string|null,
-     *     vcfVersion?: 'VCF-5.2.1'|null,
+     *     vcfVersion?: 'VCF-5.2.1'|'VCF-5.2.2'|null,
      *     termsAccepted?: bool|null,
      *     licenseInfo?: list<LicenseInfo>|null,
      *     siteId?: string|null,

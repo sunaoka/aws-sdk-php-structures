@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $farmId
  * @property string $displayName
  * @property string|null $description
- * @property string $kmsKeyArn
+ * @property string|null $kmsKeyArn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
  * @property \Aws\Api\DateTimeResult|null $updatedAt

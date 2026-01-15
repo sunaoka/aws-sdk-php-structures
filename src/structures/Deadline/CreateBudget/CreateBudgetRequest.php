@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property float $approximateDollarLimit
  * @property list<Shapes\BudgetActionToAdd> $actions
  * @property Shapes\BudgetSchedule $schedule
+ * @property array<string, string>|null $tags
  */
 class CreateBudgetRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateBudgetRequest extends Request
      *     description?: string|null,
      *     approximateDollarLimit: float,
      *     actions: list<Shapes\BudgetActionToAdd>,
-     *     schedule: Shapes\BudgetSchedule
+     *     schedule: Shapes\BudgetSchedule,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)
