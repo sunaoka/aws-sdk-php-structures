@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ViewArn
+ * @property string|null $ViewName
  * @property string|null $Owner
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
  * @property string|null $Scope
@@ -17,6 +18,7 @@ class View extends Shape
     /**
      * @param array{
      *     ViewArn?: string|null,
+     *     ViewName?: string|null,
      *     Owner?: string|null,
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     Scope?: string|null,

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\ListWorkloadDeploymentPatterns;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $nextToken
  * @property list<Shapes\WorkloadDeploymentPatternDataSummary>|null $workloadDeploymentPatterns
+ * @property string|null $nextToken
  */
 class ListWorkloadDeploymentPatternsResponse extends Response
 {

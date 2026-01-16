@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ServiceViewArn
+ * @property string|null $ServiceViewName
  * @property SearchFilter|null $Filters
  * @property list<IncludedProperty>|null $IncludedProperties
  * @property string|null $StreamingAccessForService
@@ -16,6 +17,7 @@ class ServiceView extends Shape
     /**
      * @param array{
      *     ServiceViewArn: string,
+     *     ServiceViewName?: string|null,
      *     Filters?: SearchFilter|null,
      *     IncludedProperties?: list<IncludedProperty>|null,
      *     StreamingAccessForService?: string|null,
