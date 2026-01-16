@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ServiceAccessSecurityGroups|null $serviceAccessSecurityGroups
  * @property string $vpcId
  * @property string $serviceAccessSubnetId
- * @property 'VCF-5.2.1' $vcfVersion
+ * @property 'VCF-5.2.1'|'VCF-5.2.2' $vcfVersion
  * @property bool $termsAccepted
  * @property list<Shapes\LicenseInfo> $licenseInfo
  * @property Shapes\InitialVlans $initialVlans
@@ -32,7 +32,7 @@ class CreateEnvironmentRequest extends Request
      *     serviceAccessSecurityGroups?: Shapes\ServiceAccessSecurityGroups|null,
      *     vpcId: string,
      *     serviceAccessSubnetId: string,
-     *     vcfVersion: 'VCF-5.2.1',
+     *     vcfVersion: 'VCF-5.2.1'|'VCF-5.2.2',
      *     termsAccepted: bool,
      *     licenseInfo: list<Shapes\LicenseInfo>,
      *     initialVlans: Shapes\InitialVlans,

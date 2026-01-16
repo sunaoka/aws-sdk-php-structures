@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VectorOptions|null $vectorOptions
  * @property int|null $createdDate
  * @property int|null $lastModifiedDate
+ * @property string|null $collectionGroupName
  */
 class CreateCollectionDetail extends Shape
 {
@@ -31,7 +32,8 @@ class CreateCollectionDetail extends Shape
      *     standbyReplicas?: 'ENABLED'|'DISABLED'|null,
      *     vectorOptions?: VectorOptions|null,
      *     createdDate?: int|null,
-     *     lastModifiedDate?: int|null
+     *     lastModifiedDate?: int|null,
+     *     collectionGroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

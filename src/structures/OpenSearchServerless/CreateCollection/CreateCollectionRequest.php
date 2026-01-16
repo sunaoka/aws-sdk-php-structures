@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $tags
  * @property 'ENABLED'|'DISABLED'|null $standbyReplicas
  * @property Shapes\VectorOptions|null $vectorOptions
+ * @property string|null $collectionGroupName
+ * @property Shapes\EncryptionConfig|null $encryptionConfig
  * @property string|null $clientToken
  */
 class CreateCollectionRequest extends Request
@@ -23,6 +25,8 @@ class CreateCollectionRequest extends Request
      *     tags?: list<Shapes\Tag>|null,
      *     standbyReplicas?: 'ENABLED'|'DISABLED'|null,
      *     vectorOptions?: Shapes\VectorOptions|null,
+     *     collectionGroupName?: string|null,
+     *     encryptionConfig?: Shapes\EncryptionConfig|null,
      *     clientToken?: string|null
      * } $args
      */

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'BASIC'|'DETAILED'|null $monitoring
  * @property 'ON_DEMAND'|'SPOT'|null $capacityOptionType
  * @property InstanceRequirementsRequest|null $instanceRequirements
+ * @property bool|null $fipsEnabled
  */
 class InstanceLaunchTemplate extends Shape
 {
@@ -21,7 +22,8 @@ class InstanceLaunchTemplate extends Shape
      *     storageConfiguration?: ManagedInstancesStorageConfiguration|null,
      *     monitoring?: 'BASIC'|'DETAILED'|null,
      *     capacityOptionType?: 'ON_DEMAND'|'SPOT'|null,
-     *     instanceRequirements?: InstanceRequirementsRequest|null
+     *     instanceRequirements?: InstanceRequirementsRequest|null,
+     *     fipsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

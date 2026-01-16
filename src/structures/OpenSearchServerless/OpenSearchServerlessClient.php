@@ -5,11 +5,13 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless;
 class OpenSearchServerlessClient extends \Aws\OpenSearchServerless\OpenSearchServerlessClient
 {
     use BatchGetCollection\BatchGetCollectionTrait;
+    use BatchGetCollectionGroup\BatchGetCollectionGroupTrait;
     use BatchGetEffectiveLifecyclePolicy\BatchGetEffectiveLifecyclePolicyTrait;
     use BatchGetLifecyclePolicy\BatchGetLifecyclePolicyTrait;
     use BatchGetVpcEndpoint\BatchGetVpcEndpointTrait;
     use CreateAccessPolicy\CreateAccessPolicyTrait;
     use CreateCollection\CreateCollectionTrait;
+    use CreateCollectionGroup\CreateCollectionGroupTrait;
     use CreateIndex\CreateIndexTrait;
     use CreateLifecyclePolicy\CreateLifecyclePolicyTrait;
     use CreateSecurityConfig\CreateSecurityConfigTrait;
@@ -17,6 +19,7 @@ class OpenSearchServerlessClient extends \Aws\OpenSearchServerless\OpenSearchSer
     use CreateVpcEndpoint\CreateVpcEndpointTrait;
     use DeleteAccessPolicy\DeleteAccessPolicyTrait;
     use DeleteCollection\DeleteCollectionTrait;
+    use DeleteCollectionGroup\DeleteCollectionGroupTrait;
     use DeleteIndex\DeleteIndexTrait;
     use DeleteLifecyclePolicy\DeleteLifecyclePolicyTrait;
     use DeleteSecurityConfig\DeleteSecurityConfigTrait;
@@ -29,6 +32,7 @@ class OpenSearchServerlessClient extends \Aws\OpenSearchServerless\OpenSearchSer
     use GetSecurityConfig\GetSecurityConfigTrait;
     use GetSecurityPolicy\GetSecurityPolicyTrait;
     use ListAccessPolicies\ListAccessPoliciesTrait;
+    use ListCollectionGroups\ListCollectionGroupsTrait;
     use ListCollections\ListCollectionsTrait;
     use ListLifecyclePolicies\ListLifecyclePoliciesTrait;
     use ListSecurityConfigs\ListSecurityConfigsTrait;
@@ -40,6 +44,7 @@ class OpenSearchServerlessClient extends \Aws\OpenSearchServerless\OpenSearchSer
     use UpdateAccessPolicy\UpdateAccessPolicyTrait;
     use UpdateAccountSettings\UpdateAccountSettingsTrait;
     use UpdateCollection\UpdateCollectionTrait;
+    use UpdateCollectionGroup\UpdateCollectionGroupTrait;
     use UpdateIndex\UpdateIndexTrait;
     use UpdateLifecyclePolicy\UpdateLifecyclePolicyTrait;
     use UpdateSecurityConfig\UpdateSecurityConfigTrait;

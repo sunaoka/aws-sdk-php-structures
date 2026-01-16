@@ -11,6 +11,7 @@ class EvsClient extends \Aws\Evs\EvsClient
     use DeleteEnvironmentHost\DeleteEnvironmentHostTrait;
     use DisassociateEipFromVlan\DisassociateEipFromVlanTrait;
     use GetEnvironment\GetEnvironmentTrait;
+    use GetVersions\GetVersionsTrait;
     use ListEnvironmentHosts\ListEnvironmentHostsTrait;
     use ListEnvironmentVlans\ListEnvironmentVlansTrait;
     use ListEnvironments\ListEnvironmentsTrait;

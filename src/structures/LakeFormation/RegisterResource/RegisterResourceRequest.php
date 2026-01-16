@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $WithFederation
  * @property bool|null $HybridAccessEnabled
  * @property bool|null $WithPrivilegedAccess
+ * @property string|null $ExpectedResourceOwnerAccount
  */
 class RegisterResourceRequest extends Request
 {
@@ -21,7 +22,8 @@ class RegisterResourceRequest extends Request
      *     RoleArn?: string|null,
      *     WithFederation?: bool|null,
      *     HybridAccessEnabled?: bool|null,
-     *     WithPrivilegedAccess?: bool|null
+     *     WithPrivilegedAccess?: bool|null,
+     *     ExpectedResourceOwnerAccount?: string|null
      * } $args
      */
     public function __construct(array $args)

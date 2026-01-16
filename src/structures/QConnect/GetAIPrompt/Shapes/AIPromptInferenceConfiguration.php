@@ -5,12 +5,20 @@ namespace Sunaoka\Aws\Structures\QConnect\GetAIPrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TextAIPromptInferenceConfiguration|null $textAIPromptInferenceConfiguration
+ * @property float|null $temperature
+ * @property float|null $topP
+ * @property int<0, 200>|null $topK
+ * @property int<1, 4096>|null $maxTokensToSample
  */
 class AIPromptInferenceConfiguration extends Shape
 {
     /**
-     * @param array{textAIPromptInferenceConfiguration?: TextAIPromptInferenceConfiguration|null} $args
+     * @param array{
+     *     temperature?: float|null,
+     *     topP?: float|null,
+     *     topK?: int<0, 200>|null,
+     *     maxTokensToSample?: int<1, 4096>|null
+     * } $args
      */
     public function __construct(array $args = [])
     {
