@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EvaluationFormTitle
  * @property string $EvaluationFormId
  * @property string|null $CalibrationSessionId
- * @property 'DRAFT'|'SUBMITTED' $Status
+ * @property 'DRAFT'|'SUBMITTED'|'REVIEW_REQUESTED'|'UNDER_REVIEW' $Status
  * @property bool|null $AutoEvaluationEnabled
  * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null $AutoEvaluationStatus
  * @property string $EvaluatorArn
@@ -30,7 +30,7 @@ class EvaluationSummary extends Shape
      *     EvaluationFormTitle: string,
      *     EvaluationFormId: string,
      *     CalibrationSessionId?: string|null,
-     *     Status: 'DRAFT'|'SUBMITTED',
+     *     Status: 'DRAFT'|'SUBMITTED'|'REVIEW_REQUESTED'|'UNDER_REVIEW',
      *     AutoEvaluationEnabled?: bool|null,
      *     AutoEvaluationStatus?: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null,
      *     EvaluatorArn: string,

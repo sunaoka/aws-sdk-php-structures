@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\EvaluationFormItem> $Items
  * @property Shapes\EvaluationFormScoringStrategy|null $ScoringStrategy
  * @property Shapes\EvaluationFormAutoEvaluationConfiguration|null $AutoEvaluationConfiguration
+ * @property Shapes\EvaluationReviewConfiguration|null $ReviewConfiguration
  * @property bool|null $AsDraft
  * @property string|null $ClientToken
  * @property Shapes\EvaluationFormTargetConfiguration|null $TargetConfiguration
@@ -32,6 +33,7 @@ class UpdateEvaluationFormRequest extends Request
      *     Items: list<Shapes\EvaluationFormItem>,
      *     ScoringStrategy?: Shapes\EvaluationFormScoringStrategy|null,
      *     AutoEvaluationConfiguration?: Shapes\EvaluationFormAutoEvaluationConfiguration|null,
+     *     ReviewConfiguration?: Shapes\EvaluationReviewConfiguration|null,
      *     AsDraft?: bool|null,
      *     ClientToken?: string|null,
      *     TargetConfiguration?: Shapes\EvaluationFormTargetConfiguration|null,

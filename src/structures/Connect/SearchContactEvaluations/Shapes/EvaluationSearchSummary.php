@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $EvaluationFormVersion
  * @property string|null $EvaluationFormTitle
  * @property EvaluationSearchMetadata $Metadata
- * @property 'DRAFT'|'SUBMITTED' $Status
+ * @property 'DRAFT'|'SUBMITTED'|'REVIEW_REQUESTED'|'UNDER_REVIEW' $Status
  * @property 'STANDARD'|'CALIBRATION'|null $EvaluationType
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
@@ -27,7 +27,7 @@ class EvaluationSearchSummary extends Shape
      *     EvaluationFormVersion: int,
      *     EvaluationFormTitle?: string|null,
      *     Metadata: EvaluationSearchMetadata,
-     *     Status: 'DRAFT'|'SUBMITTED',
+     *     Status: 'DRAFT'|'SUBMITTED'|'REVIEW_REQUESTED'|'UNDER_REVIEW',
      *     EvaluationType?: 'STANDARD'|'CALIBRATION'|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
