@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property bool|null $AsDraft
  * @property array<string, string>|null $Tags
+ * @property Shapes\EvaluationReviewConfiguration|null $ReviewConfiguration
  * @property Shapes\EvaluationFormTargetConfiguration|null $TargetConfiguration
  * @property Shapes\EvaluationFormLanguageConfiguration|null $LanguageConfiguration
  */
@@ -30,6 +31,7 @@ class CreateEvaluationFormRequest extends Request
      *     ClientToken?: string|null,
      *     AsDraft?: bool|null,
      *     Tags?: array<string, string>|null,
+     *     ReviewConfiguration?: Shapes\EvaluationReviewConfiguration|null,
      *     TargetConfiguration?: Shapes\EvaluationFormTargetConfiguration|null,
      *     LanguageConfiguration?: Shapes\EvaluationFormLanguageConfiguration|null
      * } $args
