@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ALLOCATING'|'ALLOCATED'|'DEALLOCATING'|'DEALLOCATED'|'ERROR_ALLOCATING'|'ERROR_DEALLOCATING'|null $ProvisionState
  * @property string|null $WorkspaceInstanceId
  * @property Shapes\EC2ManagedInstance|null $EC2ManagedInstance
+ * @property Shapes\BillingConfiguration|null $BillingConfiguration
  */
 class GetWorkspaceInstanceResponse extends Response
 {
