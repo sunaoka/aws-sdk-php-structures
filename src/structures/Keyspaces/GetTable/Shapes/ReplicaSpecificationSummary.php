@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $region
  * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'DELETED'|'RESTORING'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null $status
  * @property CapacitySpecificationSummary|null $capacitySpecification
+ * @property WarmThroughputSpecificationSummary|null $warmThroughputSpecification
  */
 class ReplicaSpecificationSummary extends Shape
 {
@@ -15,7 +16,8 @@ class ReplicaSpecificationSummary extends Shape
      * @param array{
      *     region?: string|null,
      *     status?: 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'DELETED'|'RESTORING'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|null,
-     *     capacitySpecification?: CapacitySpecificationSummary|null
+     *     capacitySpecification?: CapacitySpecificationSummary|null,
+     *     warmThroughputSpecification?: WarmThroughputSpecificationSummary|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\ReplicaSpecificationSummary>|null $replicaSpecifications
  * @property string|null $latestStreamArn
  * @property Shapes\CdcSpecificationSummary|null $cdcSpecification
+ * @property Shapes\WarmThroughputSpecificationSummary|null $warmThroughputSpecification
  */
 class GetTableResponse extends Response
 {

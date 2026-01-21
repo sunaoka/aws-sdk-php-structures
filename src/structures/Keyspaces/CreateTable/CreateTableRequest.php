@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AutoScalingSpecification|null $autoScalingSpecification
  * @property list<Shapes\ReplicaSpecification>|null $replicaSpecifications
  * @property Shapes\CdcSpecification|null $cdcSpecification
+ * @property Shapes\WarmThroughputSpecification|null $warmThroughputSpecification
  */
 class CreateTableRequest extends Request
 {
@@ -37,7 +38,8 @@ class CreateTableRequest extends Request
      *     clientSideTimestamps?: Shapes\ClientSideTimestamps|null,
      *     autoScalingSpecification?: Shapes\AutoScalingSpecification|null,
      *     replicaSpecifications?: list<Shapes\ReplicaSpecification>|null,
-     *     cdcSpecification?: Shapes\CdcSpecification|null
+     *     cdcSpecification?: Shapes\CdcSpecification|null,
+     *     warmThroughputSpecification?: Shapes\WarmThroughputSpecification|null
      * } $args
      */
     public function __construct(array $args)

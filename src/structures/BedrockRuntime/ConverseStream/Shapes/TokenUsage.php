@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max> $totalTokens
  * @property int<0, max>|null $cacheReadInputTokens
  * @property int<0, max>|null $cacheWriteInputTokens
+ * @property list<CacheDetail>|null $cacheDetails
  */
 class TokenUsage extends Shape
 {
@@ -19,7 +20,8 @@ class TokenUsage extends Shape
      *     outputTokens: int<0, max>,
      *     totalTokens: int<0, max>,
      *     cacheReadInputTokens?: int<0, max>|null,
-     *     cacheWriteInputTokens?: int<0, max>|null
+     *     cacheWriteInputTokens?: int<0, max>|null,
+     *     cacheDetails?: list<CacheDetail>|null
      * } $args
      */
     public function __construct(array $args)

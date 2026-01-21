@@ -56,6 +56,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $timeOrdsCertificateExpires
  * @property string|null $timeZone
  * @property int|null $totalContainerDatabases
+ * @property list<IamRole>|null $iamRoles
  */
 class CloudAutonomousVmClusterSummary extends Shape
 {
@@ -111,7 +112,8 @@ class CloudAutonomousVmClusterSummary extends Shape
      *     timeDatabaseSslCertificateExpires?: \Aws\Api\DateTimeResult|null,
      *     timeOrdsCertificateExpires?: \Aws\Api\DateTimeResult|null,
      *     timeZone?: string|null,
-     *     totalContainerDatabases?: int|null
+     *     totalContainerDatabases?: int|null,
+     *     iamRoles?: list<IamRole>|null
      * } $args
      */
     public function __construct(array $args)
