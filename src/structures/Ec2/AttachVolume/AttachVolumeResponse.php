@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $DeleteOnTermination
  * @property string|null $AssociatedResource
  * @property string|null $InstanceOwningService
+ * @property int|null $EbsCardIndex
  * @property string|null $VolumeId
  * @property string|null $InstanceId
  * @property string|null $Device

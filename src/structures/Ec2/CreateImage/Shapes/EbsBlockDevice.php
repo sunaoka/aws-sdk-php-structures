@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $Encrypted
  * @property int|null $VolumeInitializationRate
  * @property string|null $AvailabilityZoneId
+ * @property int|null $EbsCardIndex
  */
 class EbsBlockDevice extends Shape
 {
@@ -33,7 +34,8 @@ class EbsBlockDevice extends Shape
      *     AvailabilityZone?: string|null,
      *     Encrypted?: bool|null,
      *     VolumeInitializationRate?: int|null,
-     *     AvailabilityZoneId?: string|null
+     *     AvailabilityZoneId?: string|null,
+     *     EbsCardIndex?: int|null
      * } $args
      */
     public function __construct(array $args = [])
