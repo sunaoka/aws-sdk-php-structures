@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM'|null $TimeUnit
  * @property string|null $BillingViewArn
  * @property list<BudgetedAndActualAmounts>|null $BudgetedAndActualAmountsList
+ * @property Expression|null $FilterExpression
+ * @property list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null $Metrics
  */
 class BudgetPerformanceHistory extends Shape
 {
@@ -23,7 +25,9 @@ class BudgetPerformanceHistory extends Shape
      *     CostTypes?: CostTypes|null,
      *     TimeUnit?: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM'|null,
      *     BillingViewArn?: string|null,
-     *     BudgetedAndActualAmountsList?: list<BudgetedAndActualAmounts>|null
+     *     BudgetedAndActualAmountsList?: list<BudgetedAndActualAmounts>|null,
+     *     FilterExpression?: Expression|null,
+     *     Metrics?: list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null
      * } $args
      */
     public function __construct(array $args = [])

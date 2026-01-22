@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max>|null $SizeOnDisk
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property S3Location|null $StorageLocation
+ * @property string|null $NodeJsVersion
  */
 class Script extends Shape
 {
@@ -23,7 +24,8 @@ class Script extends Shape
      *     Version?: string|null,
      *     SizeOnDisk?: int<1, max>|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
-     *     StorageLocation?: S3Location|null
+     *     StorageLocation?: S3Location|null,
+     *     NodeJsVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

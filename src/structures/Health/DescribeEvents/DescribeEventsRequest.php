@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\EventFilter|null $filter
  * @property string|null $nextToken
- * @property int<10, 100>|null $maxResults
+ * @property int<1, 100>|null $maxResults
  * @property string|null $locale
  */
 class DescribeEventsRequest extends Request
@@ -16,7 +16,7 @@ class DescribeEventsRequest extends Request
      * @param array{
      *     filter?: Shapes\EventFilter|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<10, 100>|null,
+     *     maxResults?: int<1, 100>|null,
      *     locale?: string|null
      * } $args
      */
