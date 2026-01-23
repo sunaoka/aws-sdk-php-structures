@@ -47,6 +47,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use DeleteAssetFilter\DeleteAssetFilterTrait;
     use DeleteAssetType\DeleteAssetTypeTrait;
     use DeleteConnection\DeleteConnectionTrait;
+    use DeleteDataExportConfiguration\DeleteDataExportConfigurationTrait;
     use DeleteDataProduct\DeleteDataProductTrait;
     use DeleteDataSource\DeleteDataSourceTrait;
     use DeleteDomain\DeleteDomainTrait;
