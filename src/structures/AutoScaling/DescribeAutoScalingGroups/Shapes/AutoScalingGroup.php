@@ -40,6 +40,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $DefaultInstanceWarmup
  * @property list<TrafficSourceIdentifier>|null $TrafficSources
  * @property InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
+ * @property 'none'|'prevent-force-deletion'|'prevent-all-deletion'|null $DeletionProtection
  * @property AvailabilityZoneDistribution|null $AvailabilityZoneDistribution
  * @property AvailabilityZoneImpairmentPolicy|null $AvailabilityZoneImpairmentPolicy
  * @property CapacityReservationSpecification|null $CapacityReservationSpecification
@@ -84,6 +85,7 @@ class AutoScalingGroup extends Shape
      *     DefaultInstanceWarmup?: int|null,
      *     TrafficSources?: list<TrafficSourceIdentifier>|null,
      *     InstanceMaintenancePolicy?: InstanceMaintenancePolicy|null,
+     *     DeletionProtection?: 'none'|'prevent-force-deletion'|'prevent-all-deletion'|null,
      *     AvailabilityZoneDistribution?: AvailabilityZoneDistribution|null,
      *     AvailabilityZoneImpairmentPolicy?: AvailabilityZoneImpairmentPolicy|null,
      *     CapacityReservationSpecification?: CapacityReservationSpecification|null,

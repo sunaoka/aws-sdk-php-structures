@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $NewInstancesProtectedFromScaleIn
  * @property bool|null $CapacityRebalance
  * @property list<Shapes\LifecycleHookSpecification>|null $LifecycleHookSpecificationList
+ * @property 'none'|'prevent-force-deletion'|'prevent-all-deletion'|null $DeletionProtection
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ServiceLinkedRoleARN
  * @property int|null $MaxInstanceLifetime
@@ -63,6 +64,7 @@ class CreateAutoScalingGroupRequest extends Request
      *     NewInstancesProtectedFromScaleIn?: bool|null,
      *     CapacityRebalance?: bool|null,
      *     LifecycleHookSpecificationList?: list<Shapes\LifecycleHookSpecification>|null,
+     *     DeletionProtection?: 'none'|'prevent-force-deletion'|'prevent-all-deletion'|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     ServiceLinkedRoleARN?: string|null,
      *     MaxInstanceLifetime?: int|null,
