@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AntennaUplinkConfig|null $antennaUplinkConfig
  * @property UplinkEchoConfig|null $uplinkEchoConfig
  * @property S3RecordingConfig|null $s3RecordingConfig
+ * @property TelemetrySinkConfig|null $telemetrySinkConfig
  */
 class ConfigTypeData extends Shape
 {
@@ -23,7 +24,8 @@ class ConfigTypeData extends Shape
      *     antennaDownlinkDemodDecodeConfig?: AntennaDownlinkDemodDecodeConfig|null,
      *     antennaUplinkConfig?: AntennaUplinkConfig|null,
      *     uplinkEchoConfig?: UplinkEchoConfig|null,
-     *     s3RecordingConfig?: S3RecordingConfig|null
+     *     s3RecordingConfig?: S3RecordingConfig|null,
+     *     telemetrySinkConfig?: TelemetrySinkConfig|null
      * } $args
      */
     public function __construct(array $args = [])

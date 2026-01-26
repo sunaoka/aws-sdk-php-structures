@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 21600> $minimumViableContactDurationSeconds
  * @property list<list<string>> $dataflowEdges
  * @property string $trackingConfigArn
+ * @property string|null $telemetrySinkConfigArn
  * @property array<string, string>|null $tags
  * @property Shapes\KmsKey|null $streamsKmsKey
  * @property string|null $streamsKmsRole
@@ -25,6 +26,7 @@ class CreateMissionProfileRequest extends Request
      *     minimumViableContactDurationSeconds: int<1, 21600>,
      *     dataflowEdges: list<list<string>>,
      *     trackingConfigArn: string,
+     *     telemetrySinkConfigArn?: string|null,
      *     tags?: array<string, string>|null,
      *     streamsKmsKey?: Shapes\KmsKey|null,
      *     streamsKmsRole?: string|null

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $configId
  * @property string $name
- * @property 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording' $configType
+ * @property 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording'|'telemetry-sink' $configType
  * @property Shapes\ConfigTypeData $configData
  */
 class UpdateConfigRequest extends Request
@@ -16,7 +16,7 @@ class UpdateConfigRequest extends Request
      * @param array{
      *     configId: string,
      *     name: string,
-     *     configType: 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording',
+     *     configType: 'antenna-downlink'|'antenna-downlink-demod-decode'|'tracking'|'dataflow-endpoint'|'antenna-uplink'|'uplink-echo'|'s3-recording'|'telemetry-sink',
      *     configData: Shapes\ConfigTypeData
      * } $args
      */
