@@ -61,6 +61,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CreateRule\CreateRuleTrait;
     use CreateSecurityProfile\CreateSecurityProfileTrait;
     use CreateTaskTemplate\CreateTaskTemplateTrait;
+    use CreateTestCase\CreateTestCaseTrait;
     use CreateTrafficDistributionGroup\CreateTrafficDistributionGroupTrait;
     use CreateUseCase\CreateUseCaseTrait;
     use CreateUser\CreateUserTrait;
@@ -95,6 +96,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteRule\DeleteRuleTrait;
     use DeleteSecurityProfile\DeleteSecurityProfileTrait;
     use DeleteTaskTemplate\DeleteTaskTemplateTrait;
+    use DeleteTestCase\DeleteTestCaseTrait;
     use DeleteTrafficDistributionGroup\DeleteTrafficDistributionGroupTrait;
     use DeleteUseCase\DeleteUseCaseTrait;
     use DeleteUser\DeleteUserTrait;
@@ -129,6 +131,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DescribeRoutingProfile\DescribeRoutingProfileTrait;
     use DescribeRule\DescribeRuleTrait;
     use DescribeSecurityProfile\DescribeSecurityProfileTrait;
+    use DescribeTestCase\DescribeTestCaseTrait;
     use DescribeTrafficDistributionGroup\DescribeTrafficDistributionGroupTrait;
     use DescribeUser\DescribeUserTrait;
     use DescribeUserHierarchyGroup\DescribeUserHierarchyGroupTrait;
@@ -167,6 +170,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use GetMetricDataV2\GetMetricDataV2Trait;
     use GetPromptFile\GetPromptFileTrait;
     use GetTaskTemplate\GetTaskTemplateTrait;
+    use GetTestCaseExecutionSummary\GetTestCaseExecutionSummaryTrait;
     use GetTrafficDistribution\GetTrafficDistributionTrait;
     use ImportPhoneNumber\ImportPhoneNumberTrait;
     use ImportWorkspaceMedia\ImportWorkspaceMediaTrait;
@@ -221,6 +225,9 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListSecurityProfiles\ListSecurityProfilesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTaskTemplates\ListTaskTemplatesTrait;
+    use ListTestCaseExecutionRecords\ListTestCaseExecutionRecordsTrait;
+    use ListTestCaseExecutions\ListTestCaseExecutionsTrait;
+    use ListTestCases\ListTestCasesTrait;
     use ListTrafficDistributionGroupUsers\ListTrafficDistributionGroupUsersTrait;
     use ListTrafficDistributionGroups\ListTrafficDistributionGroupsTrait;
     use ListUseCases\ListUseCasesTrait;
@@ -257,6 +264,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use SearchResourceTags\SearchResourceTagsTrait;
     use SearchRoutingProfiles\SearchRoutingProfilesTrait;
     use SearchSecurityProfiles\SearchSecurityProfilesTrait;
+    use SearchTestCases\SearchTestCasesTrait;
     use SearchUserHierarchyGroups\SearchUserHierarchyGroupsTrait;
     use SearchUsers\SearchUsersTrait;
     use SearchViews\SearchViewsTrait;
@@ -277,11 +285,13 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use StartOutboundVoiceContact\StartOutboundVoiceContactTrait;
     use StartScreenSharing\StartScreenSharingTrait;
     use StartTaskContact\StartTaskContactTrait;
+    use StartTestCaseExecution\StartTestCaseExecutionTrait;
     use StartWebRTCContact\StartWebRTCContactTrait;
     use StopContact\StopContactTrait;
     use StopContactMediaProcessing\StopContactMediaProcessingTrait;
     use StopContactRecording\StopContactRecordingTrait;
     use StopContactStreaming\StopContactStreamingTrait;
+    use StopTestCaseExecution\StopTestCaseExecutionTrait;
     use SubmitContactEvaluation\SubmitContactEvaluationTrait;
     use SuspendContactRecording\SuspendContactRecordingTrait;
     use TagContact\TagContactTrait;
@@ -333,6 +343,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateRule\UpdateRuleTrait;
     use UpdateSecurityProfile\UpdateSecurityProfileTrait;
     use UpdateTaskTemplate\UpdateTaskTemplateTrait;
+    use UpdateTestCase\UpdateTestCaseTrait;
     use UpdateTrafficDistribution\UpdateTrafficDistributionTrait;
     use UpdateUserHierarchy\UpdateUserHierarchyTrait;
     use UpdateUserHierarchyGroupName\UpdateUserHierarchyGroupNameTrait;

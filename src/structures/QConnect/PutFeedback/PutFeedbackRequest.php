@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $assistantId
  * @property string $targetId
- * @property 'RECOMMENDATION'|'RESULT' $targetType
+ * @property 'RECOMMENDATION'|'RESULT'|'MESSAGE' $targetType
  * @property Shapes\ContentFeedbackData $contentFeedback
  */
 class PutFeedbackRequest extends Request
@@ -16,7 +16,7 @@ class PutFeedbackRequest extends Request
      * @param array{
      *     assistantId: string,
      *     targetId: string,
-     *     targetType: 'RECOMMENDATION'|'RESULT',
+     *     targetType: 'RECOMMENDATION'|'RESULT'|'MESSAGE',
      *     contentFeedback: Shapes\ContentFeedbackData
      * } $args
      */
