@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $templateArn
  * @property string $name
  * @property 'Active'|'Inactive' $status
+ * @property list<TagPropagationConfiguration>|null $tagPropagationConfigurations
  */
 class TemplateSummary extends Shape
 {
@@ -17,7 +18,8 @@ class TemplateSummary extends Shape
      *     templateId: string,
      *     templateArn: string,
      *     name: string,
-     *     status: 'Active'|'Inactive'
+     *     status: 'Active'|'Inactive',
+     *     tagPropagationConfigurations?: list<TagPropagationConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

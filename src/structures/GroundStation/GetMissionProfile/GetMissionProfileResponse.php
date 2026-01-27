@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<1, 21600>|null $minimumViableContactDurationSeconds
  * @property list<list<string>>|null $dataflowEdges
  * @property string|null $trackingConfigArn
+ * @property string|null $telemetrySinkConfigArn
  * @property array<string, string>|null $tags
  * @property Shapes\KmsKey|null $streamsKmsKey
  * @property string|null $streamsKmsRole

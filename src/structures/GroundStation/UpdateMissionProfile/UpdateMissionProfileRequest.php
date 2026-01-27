@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 21600>|null $minimumViableContactDurationSeconds
  * @property list<list<string>>|null $dataflowEdges
  * @property string|null $trackingConfigArn
+ * @property string|null $telemetrySinkConfigArn
  * @property Shapes\KmsKey|null $streamsKmsKey
  * @property string|null $streamsKmsRole
  */
@@ -26,6 +27,7 @@ class UpdateMissionProfileRequest extends Request
      *     minimumViableContactDurationSeconds?: int<1, 21600>|null,
      *     dataflowEdges?: list<list<string>>|null,
      *     trackingConfigArn?: string|null,
+     *     telemetrySinkConfigArn?: string|null,
      *     streamsKmsKey?: Shapes\KmsKey|null,
      *     streamsKmsRole?: string|null
      * } $args

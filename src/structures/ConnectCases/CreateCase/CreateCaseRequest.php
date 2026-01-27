@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\FieldValue> $fields
  * @property string|null $clientToken
  * @property Shapes\UserUnion|null $performedBy
+ * @property array<string, string>|null $tags
  */
 class CreateCaseRequest extends Request
 {
@@ -19,7 +20,8 @@ class CreateCaseRequest extends Request
      *     templateId: string,
      *     fields: list<Shapes\FieldValue>,
      *     clientToken?: string|null,
-     *     performedBy?: Shapes\UserUnion|null
+     *     performedBy?: Shapes\UserUnion|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

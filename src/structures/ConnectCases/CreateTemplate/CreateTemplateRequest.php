@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\RequiredField>|null $requiredFields
  * @property 'Active'|'Inactive'|null $status
  * @property list<Shapes\TemplateRule>|null $rules
+ * @property list<Shapes\TagPropagationConfiguration>|null $tagPropagationConfigurations
  */
 class CreateTemplateRequest extends Request
 {
@@ -23,7 +24,8 @@ class CreateTemplateRequest extends Request
      *     layoutConfiguration?: Shapes\LayoutConfiguration|null,
      *     requiredFields?: list<Shapes\RequiredField>|null,
      *     status?: 'Active'|'Inactive'|null,
-     *     rules?: list<Shapes\TemplateRule>|null
+     *     rules?: list<Shapes\TemplateRule>|null,
+     *     tagPropagationConfigurations?: list<Shapes\TagPropagationConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

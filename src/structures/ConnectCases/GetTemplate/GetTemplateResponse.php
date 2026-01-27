@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $createdTime
  * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  * @property list<Shapes\TemplateRule>|null $rules
+ * @property list<Shapes\TagPropagationConfiguration>|null $tagPropagationConfigurations
  */
 class GetTemplateResponse extends Response
 {
