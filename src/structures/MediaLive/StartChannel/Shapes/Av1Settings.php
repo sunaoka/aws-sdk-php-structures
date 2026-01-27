@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MinBitrate
  * @property 'DISABLED'|'ENABLED'|null $SpatialAq
  * @property 'DISABLED'|'ENABLED'|null $TemporalAq
+ * @property 'DISABLED'|'METADATA_OBU'|null $TimecodeInsertion
  */
 class Av1Settings extends Shape
 {
@@ -53,7 +54,8 @@ class Av1Settings extends Shape
      *     RateControlMode?: 'CBR'|'QVBR'|null,
      *     MinBitrate?: int|null,
      *     SpatialAq?: 'DISABLED'|'ENABLED'|null,
-     *     TemporalAq?: 'DISABLED'|'ENABLED'|null
+     *     TemporalAq?: 'DISABLED'|'ENABLED'|null,
+     *     TimecodeInsertion?: 'DISABLED'|'METADATA_OBU'|null
      * } $args
      */
     public function __construct(array $args)

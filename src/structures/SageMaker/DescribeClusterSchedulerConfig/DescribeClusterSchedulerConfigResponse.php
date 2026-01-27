@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int $ClusterSchedulerConfigVersion
  * @property 'Creating'|'CreateFailed'|'CreateRollbackFailed'|'Created'|'Updating'|'UpdateFailed'|'UpdateRollbackFailed'|'Updated'|'Deleting'|'DeleteFailed'|'DeleteRollbackFailed'|'Deleted' $Status
  * @property string|null $FailureReason
+ * @property array<'PriorityClasses'|'FairShare'|'IdleResourceSharing', 'Creating'|'CreateFailed'|'CreateRollbackFailed'|'Created'|'Updating'|'UpdateFailed'|'UpdateRollbackFailed'|'Updated'|'Deleting'|'DeleteFailed'|'DeleteRollbackFailed'|'Deleted'>|null $StatusDetails
  * @property string|null $ClusterArn
  * @property Shapes\SchedulerConfig|null $SchedulerConfig
  * @property string|null $Description

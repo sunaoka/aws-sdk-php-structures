@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 2147483647>|null $maxRetriesPerTask
  * @property 'ARCHIVED'|null $lifecycleStatus
  * @property int<-1, 2147483647>|null $maxWorkerCount
+ * @property string|null $name
+ * @property string|null $description
  * @property string $farmId
  * @property string $queueId
  * @property string $jobId
@@ -27,6 +29,8 @@ class UpdateJobRequest extends Request
      *     maxRetriesPerTask?: int<0, 2147483647>|null,
      *     lifecycleStatus?: 'ARCHIVED'|null,
      *     maxWorkerCount?: int<-1, 2147483647>|null,
+     *     name?: string|null,
+     *     description?: string|null,
      *     farmId: string,
      *     queueId: string,
      *     jobId: string
