@@ -19,6 +19,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 2147483647>|null $maxRetriesPerTask
  * @property int<-1, 2147483647>|null $maxWorkerCount
  * @property string|null $sourceJobId
+ * @property string|null $nameOverride
+ * @property string|null $descriptionOverride
  */
 class CreateJobRequest extends Request
 {
@@ -37,7 +39,9 @@ class CreateJobRequest extends Request
      *     maxFailedTasksCount?: int<0, 2147483647>|null,
      *     maxRetriesPerTask?: int<0, 2147483647>|null,
      *     maxWorkerCount?: int<-1, 2147483647>|null,
-     *     sourceJobId?: string|null
+     *     sourceJobId?: string|null,
+     *     nameOverride?: string|null,
+     *     descriptionOverride?: string|null
      * } $args
      */
     public function __construct(array $args)

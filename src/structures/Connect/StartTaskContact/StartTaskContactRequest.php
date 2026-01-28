@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $QuickConnectId
  * @property string|null $RelatedContactId
  * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
+ * @property list<Shapes\TaskAttachment>|null $Attachments
  */
 class StartTaskContactRequest extends Request
 {
@@ -35,7 +36,8 @@ class StartTaskContactRequest extends Request
      *     TaskTemplateId?: string|null,
      *     QuickConnectId?: string|null,
      *     RelatedContactId?: string|null,
-     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
+     *     Attachments?: list<Shapes\TaskAttachment>|null
      * } $args
      */
     public function __construct(array $args)
