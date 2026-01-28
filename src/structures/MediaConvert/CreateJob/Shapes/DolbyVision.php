@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'DUPLICATE_STREAM'|'SUPPLEMENTAL_CODECS'|null $Compatibility
  * @property DolbyVisionLevel6Metadata|null $L6Metadata
  * @property 'PASSTHROUGH'|'RECALCULATE'|'SPECIFY'|null $L6Mode
  * @property 'HDR10_NOMAP'|'HDR10_1000'|null $Mapping
@@ -14,6 +15,7 @@ class DolbyVision extends Shape
 {
     /**
      * @param array{
+     *     Compatibility?: 'DUPLICATE_STREAM'|'SUPPLEMENTAL_CODECS'|null,
      *     L6Metadata?: DolbyVisionLevel6Metadata|null,
      *     L6Mode?: 'PASSTHROUGH'|'RECALCULATE'|'SPECIFY'|null,
      *     Mapping?: 'HDR10_NOMAP'|'HDR10_1000'|null,

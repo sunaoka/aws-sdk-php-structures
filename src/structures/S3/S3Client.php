@@ -111,6 +111,7 @@ class S3Client extends \Aws\S3\S3Client
     use SelectObjectContent\SelectObjectContentTrait;
     use UpdateBucketMetadataInventoryTableConfiguration\UpdateBucketMetadataInventoryTableConfigurationTrait;
     use UpdateBucketMetadataJournalTableConfiguration\UpdateBucketMetadataJournalTableConfigurationTrait;
+    use UpdateObjectEncryption\UpdateObjectEncryptionTrait;
     use UploadPart\UploadPartTrait;
     use UploadPartCopy\UploadPartCopyTrait;
     use WriteGetObjectResponse\WriteGetObjectResponseTrait;

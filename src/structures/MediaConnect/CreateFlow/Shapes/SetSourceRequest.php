@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcInterfaceName
  * @property string|null $WhitelistCidr
  * @property SetGatewayBridgeSourceRequest|null $GatewayBridgeSource
+ * @property NdiSourceSettings|null $NdiSourceSettings
  * @property array<string, string>|null $SourceTags
  * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
  * @property FlowTransitEncryption|null $RouterIntegrationTransitDecryption
@@ -51,6 +52,7 @@ class SetSourceRequest extends Shape
      *     VpcInterfaceName?: string|null,
      *     WhitelistCidr?: string|null,
      *     GatewayBridgeSource?: SetGatewayBridgeSourceRequest|null,
+     *     NdiSourceSettings?: NdiSourceSettings|null,
      *     SourceTags?: array<string, string>|null,
      *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
      *     RouterIntegrationTransitDecryption?: FlowTransitEncryption|null

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lambda\GetEventSourceMapping\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'EventCount'>|null $Metrics
+ * @property list<'EventCount'|'ErrorCount'|'KafkaMetrics'>|null $Metrics
  */
 class EventSourceMappingMetricsConfig extends Shape
 {
     /**
-     * @param array{Metrics?: list<'EventCount'>|null} $args
+     * @param array{Metrics?: list<'EventCount'|'ErrorCount'|'KafkaMetrics'>|null} $args
      */
     public function __construct(array $args = [])
     {

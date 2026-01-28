@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\MessageDetail>|null $Messages
  * @property \Aws\Api\DateTimeResult|null $Timestamp
  * @property Shapes\TransportMediaInfo|null $TransportMediaInfo
+ * @property Shapes\NdiSourceMetadataInfo|null $NdiInfo
  */
 class DescribeFlowSourceMetadataResponse extends Response
 {
