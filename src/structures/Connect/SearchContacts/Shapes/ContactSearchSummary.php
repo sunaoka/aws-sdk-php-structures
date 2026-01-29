@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, ContactSearchSummarySegmentAttributeValue>|null $SegmentAttributes
  * @property string|null $Name
  * @property RoutingCriteria|null $RoutingCriteria
+ * @property array<string, string>|null $Tags
  * @property GlobalResiliencyMetadata|null $GlobalResiliencyMetadata
  */
 class ContactSearchSummary extends Shape
@@ -39,6 +40,7 @@ class ContactSearchSummary extends Shape
      *     SegmentAttributes?: array<string, ContactSearchSummarySegmentAttributeValue>|null,
      *     Name?: string|null,
      *     RoutingCriteria?: RoutingCriteria|null,
+     *     Tags?: array<string, string>|null,
      *     GlobalResiliencyMetadata?: GlobalResiliencyMetadata|null
      * } $args
      */

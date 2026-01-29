@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FilterCriteriaError|null $FilterCriteriaError
  * @property string|null $EventSourceMappingArn
  * @property EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property EventSourceMappingLoggingConfig|null $LoggingConfig
  * @property ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class EventSourceMappingConfiguration extends Shape
@@ -73,6 +74,7 @@ class EventSourceMappingConfiguration extends Shape
      *     FilterCriteriaError?: FilterCriteriaError|null,
      *     EventSourceMappingArn?: string|null,
      *     MetricsConfig?: EventSourceMappingMetricsConfig|null,
+     *     LoggingConfig?: EventSourceMappingLoggingConfig|null,
      *     ProvisionedPollerConfig?: ProvisionedPollerConfig|null
      * } $args
      */

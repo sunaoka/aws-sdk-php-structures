@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3SetObjectRetentionOperation|null $S3PutObjectRetention
  * @property S3ReplicateObjectOperation|null $S3ReplicateObject
  * @property S3ComputeObjectChecksumOperation|null $S3ComputeObjectChecksum
+ * @property S3UpdateObjectEncryptionOperation|null $S3UpdateObjectEncryption
  */
 class JobOperation extends Shape
 {
@@ -29,7 +30,8 @@ class JobOperation extends Shape
      *     S3PutObjectLegalHold?: S3SetObjectLegalHoldOperation|null,
      *     S3PutObjectRetention?: S3SetObjectRetentionOperation|null,
      *     S3ReplicateObject?: S3ReplicateObjectOperation|null,
-     *     S3ComputeObjectChecksum?: S3ComputeObjectChecksumOperation|null
+     *     S3ComputeObjectChecksum?: S3ComputeObjectChecksumOperation|null,
+     *     S3UpdateObjectEncryption?: S3UpdateObjectEncryptionOperation|null
      * } $args
      */
     public function __construct(array $args = [])

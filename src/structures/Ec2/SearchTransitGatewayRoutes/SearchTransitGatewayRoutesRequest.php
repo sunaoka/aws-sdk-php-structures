@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Filter> $Filters
  * @property int<5, 1000>|null $MaxResults
  * @property bool|null $DryRun
+ * @property string|null $NextToken
  */
 class SearchTransitGatewayRoutesRequest extends Request
 {
@@ -17,7 +18,8 @@ class SearchTransitGatewayRoutesRequest extends Request
      *     TransitGatewayRouteTableId: string,
      *     Filters: list<Shapes\Filter>,
      *     MaxResults?: int<5, 1000>|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

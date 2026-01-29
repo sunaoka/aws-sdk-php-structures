@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $StreamId
  * @property int|null $NdiSpeedHqQuality
  * @property string|null $NdiProgramName
+ * @property NdiSourceSettings|null $NdiSourceSettings
  */
 class Transport extends Shape
 {
@@ -39,7 +40,8 @@ class Transport extends Shape
      *     SourceListenerPort?: int|null,
      *     StreamId?: string|null,
      *     NdiSpeedHqQuality?: int|null,
-     *     NdiProgramName?: string|null
+     *     NdiProgramName?: string|null,
+     *     NdiSourceSettings?: NdiSourceSettings|null
      * } $args
      */
     public function __construct(array $args)

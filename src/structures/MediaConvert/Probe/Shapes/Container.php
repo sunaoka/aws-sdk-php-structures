@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double|null $Duration
- * @property 'mp4'|'quicktime'|'matroska'|'webm'|'mxf'|null $Format
+ * @property 'mp4'|'quicktime'|'matroska'|'webm'|'mxf'|'wave'|null $Format
  * @property list<Track>|null $Tracks
  */
 class Container extends Shape
@@ -14,7 +14,7 @@ class Container extends Shape
     /**
      * @param array{
      *     Duration?: double|null,
-     *     Format?: 'mp4'|'quicktime'|'matroska'|'webm'|'mxf'|null,
+     *     Format?: 'mp4'|'quicktime'|'matroska'|'webm'|'mxf'|'wave'|null,
      *     Tracks?: list<Track>|null
      * } $args
      */
