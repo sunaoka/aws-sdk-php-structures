@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     env:
-      latest_php: 8.4
+      latest_php: 8.5
 
     strategy:
       fail-fast: false
@@ -34,7 +34,7 @@ jobs:
           tools: composer:v2
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install dependencies
         uses: nick-fields/retry@v3
