@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $StreamARN
+ * @property string|null $StreamId
  * @property int<1024, 10240> $MaxRecordSizeInKiB
  */
 class UpdateMaxRecordSizeRequest extends Request
@@ -13,6 +14,7 @@ class UpdateMaxRecordSizeRequest extends Request
     /**
      * @param array{
      *     StreamARN?: string|null,
+     *     StreamId?: string|null,
      *     MaxRecordSizeInKiB: int<1024, 10240>
      * } $args
      */

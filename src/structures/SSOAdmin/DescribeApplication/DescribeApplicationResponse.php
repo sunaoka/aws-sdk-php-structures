@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\PortalOptions|null $PortalOptions
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $CreatedFrom
  */
 class DescribeApplicationResponse extends Response
 {

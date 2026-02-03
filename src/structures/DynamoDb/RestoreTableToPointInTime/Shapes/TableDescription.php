@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GlobalTableVersion
  * @property list<ReplicaDescription>|null $Replicas
  * @property list<GlobalTableWitnessDescription>|null $GlobalTableWitnesses
+ * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null $GlobalTableSettingsReplicationMode
  * @property RestoreSummary|null $RestoreSummary
  * @property SSEDescription|null $SSEDescription
  * @property ArchivalSummary|null $ArchivalSummary
@@ -56,6 +57,7 @@ class TableDescription extends Shape
      *     GlobalTableVersion?: string|null,
      *     Replicas?: list<ReplicaDescription>|null,
      *     GlobalTableWitnesses?: list<GlobalTableWitnessDescription>|null,
+     *     GlobalTableSettingsReplicationMode?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null,
      *     RestoreSummary?: RestoreSummary|null,
      *     SSEDescription?: SSEDescription|null,
      *     ArchivalSummary?: ArchivalSummary|null,

@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PrimaryIdentityId
  * @property string|null $PrimaryIdentitySourceArn
  * @property 'PENDING'|'ACCEPTED'|'REJECTED'|'INVALID'|null $PrimaryIdentityStatus
+ * @property list<MfaMethod>|null $MfaMethods
  */
 class GetApprovalTeamResponseApprover extends Shape
 {
@@ -19,7 +20,8 @@ class GetApprovalTeamResponseApprover extends Shape
      *     ResponseTime?: \Aws\Api\DateTimeResult|null,
      *     PrimaryIdentityId?: string|null,
      *     PrimaryIdentitySourceArn?: string|null,
-     *     PrimaryIdentityStatus?: 'PENDING'|'ACCEPTED'|'REJECTED'|'INVALID'|null
+     *     PrimaryIdentityStatus?: 'PENDING'|'ACCEPTED'|'REJECTED'|'INVALID'|null,
+     *     MfaMethods?: list<MfaMethod>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\EvaluatorReference> $evaluators
  * @property string $evaluationExecutionRoleArn
  * @property bool $enableOnCreate
+ * @property array<string, string>|null $tags
  */
 class CreateOnlineEvaluationConfigRequest extends Request
 {
@@ -25,7 +26,8 @@ class CreateOnlineEvaluationConfigRequest extends Request
      *     dataSourceConfig: Shapes\DataSourceConfig,
      *     evaluators: list<Shapes\EvaluatorReference>,
      *     evaluationExecutionRoleArn: string,
-     *     enableOnCreate: bool
+     *     enableOnCreate: bool,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

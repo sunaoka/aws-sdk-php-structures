@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $RequesterComment
  * @property 'AUTO_COMPLETION_UPON_APPROVAL'|null $ActionCompletionStrategy
  * @property list<Shapes\GetSessionResponseApproverResponse>|null $ApproverResponses
+ * @property list<'APPROVER_VERIFICATION_REQUIRED'>|null $AdditionalSecurityRequirements
  */
 class GetSessionResponse extends Response
 {

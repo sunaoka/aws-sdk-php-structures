@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'REJECTED'|'EXPIRED'|'CONFIGURATION_CHANGED'|null $StatusCode
  * @property string|null $StatusMessage
  * @property 'AUTO_COMPLETION_UPON_APPROVAL'|null $ActionCompletionStrategy
+ * @property list<'APPROVER_VERIFICATION_REQUIRED'>|null $AdditionalSecurityRequirements
  */
 class ListSessionsResponseSession extends Shape
 {
@@ -43,7 +44,8 @@ class ListSessionsResponseSession extends Shape
      *     Status?: 'PENDING'|'CANCELLED'|'APPROVED'|'FAILED'|'CREATING'|null,
      *     StatusCode?: 'REJECTED'|'EXPIRED'|'CONFIGURATION_CHANGED'|null,
      *     StatusMessage?: string|null,
-     *     ActionCompletionStrategy?: 'AUTO_COMPLETION_UPON_APPROVAL'|null
+     *     ActionCompletionStrategy?: 'AUTO_COMPLETION_UPON_APPROVAL'|null,
+     *     AdditionalSecurityRequirements?: list<'APPROVER_VERIFICATION_REQUIRED'>|null
      * } $args
      */
     public function __construct(array $args = [])

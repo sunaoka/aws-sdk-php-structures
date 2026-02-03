@@ -8,10 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Standard'|'Monochrome'|'Hybrid'|'Satellite' $Style
  * @property 'Light'|'Dark'|null $ColorScheme
  * @property string|null $PoliticalView
- * @property 'Hillshade'|null $Terrain
+ * @property 'Hillshade'|'Terrain3D'|null $Terrain
  * @property 'Medium'|null $ContourDensity
  * @property 'All'|null $Traffic
  * @property list<'Transit'|'Truck'>|null $TravelModes
+ * @property 'Buildings3D'|null $Buildings
  * @property string|null $Key
  */
 class GetStyleDescriptorRequest extends Request
@@ -21,10 +22,11 @@ class GetStyleDescriptorRequest extends Request
      *     Style: 'Standard'|'Monochrome'|'Hybrid'|'Satellite',
      *     ColorScheme?: 'Light'|'Dark'|null,
      *     PoliticalView?: string|null,
-     *     Terrain?: 'Hillshade'|null,
+     *     Terrain?: 'Hillshade'|'Terrain3D'|null,
      *     ContourDensity?: 'Medium'|null,
      *     Traffic?: 'All'|null,
      *     TravelModes?: list<'Transit'|'Truck'>|null,
+     *     Buildings?: 'Buildings3D'|null,
      *     Key?: string|null
      * } $args
      */
