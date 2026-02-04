@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ipAccessSettingsArn
  * @property 'standard.regular'|'standard.large'|'standard.xlarge'|null $instanceType
  * @property int<1, 5000>|null $maxConcurrentSessions
+ * @property string|null $portalCustomDomain
  */
 class PortalSummary extends Shape
 {
@@ -45,7 +46,8 @@ class PortalSummary extends Shape
      *     authenticationType?: 'Standard'|'IAM_Identity_Center'|null,
      *     ipAccessSettingsArn?: string|null,
      *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge'|null,
-     *     maxConcurrentSessions?: int<1, 5000>|null
+     *     maxConcurrentSessions?: int<1, 5000>|null,
+     *     portalCustomDomain?: string|null
      * } $args
      */
     public function __construct(array $args)

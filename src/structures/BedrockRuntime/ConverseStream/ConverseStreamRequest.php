@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $requestMetadata
  * @property Shapes\PerformanceConfiguration|null $performanceConfig
  * @property Shapes\ServiceTier|null $serviceTier
+ * @property Shapes\OutputConfig|null $outputConfig
  */
 class ConverseStreamRequest extends Request
 {
@@ -33,7 +34,8 @@ class ConverseStreamRequest extends Request
      *     additionalModelResponseFieldPaths?: list<string>|null,
      *     requestMetadata?: array<string, string>|null,
      *     performanceConfig?: Shapes\PerformanceConfiguration|null,
-     *     serviceTier?: Shapes\ServiceTier|null
+     *     serviceTier?: Shapes\ServiceTier|null,
+     *     outputConfig?: Shapes\OutputConfig|null
      * } $args
      */
     public function __construct(array $args)
