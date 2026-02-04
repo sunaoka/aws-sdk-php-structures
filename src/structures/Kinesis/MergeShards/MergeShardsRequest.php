@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ShardToMerge
  * @property string $AdjacentShardToMerge
  * @property string|null $StreamARN
+ * @property string|null $StreamId
  */
 class MergeShardsRequest extends Request
 {
@@ -17,7 +18,8 @@ class MergeShardsRequest extends Request
      *     StreamName?: string|null,
      *     ShardToMerge: string,
      *     AdjacentShardToMerge: string,
-     *     StreamARN?: string|null
+     *     StreamARN?: string|null,
+     *     StreamId?: string|null
      * } $args
      */
     public function __construct(array $args)

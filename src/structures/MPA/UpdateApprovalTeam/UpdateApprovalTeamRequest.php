@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ApprovalTeamRequestApprover>|null $Approvers
  * @property string|null $Description
  * @property string $Arn
+ * @property list<'SYNCHRONIZE_MFA_DEVICES'>|null $UpdateActions
  */
 class UpdateApprovalTeamRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateApprovalTeamRequest extends Request
      *     ApprovalStrategy?: Shapes\ApprovalStrategy|null,
      *     Approvers?: list<Shapes\ApprovalTeamRequestApprover>|null,
      *     Description?: string|null,
-     *     Arn: string
+     *     Arn: string,
+     *     UpdateActions?: list<'SYNCHRONIZE_MFA_DEVICES'>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $StreamName
  * @property string $StreamARN
+ * @property string|null $StreamId
  * @property 'CREATING'|'DELETING'|'ACTIVE'|'UPDATING' $StreamStatus
  * @property StreamModeDetails|null $StreamModeDetails
  * @property int $RetentionPeriodHours
@@ -25,6 +26,7 @@ class StreamDescriptionSummary extends Shape
      * @param array{
      *     StreamName: string,
      *     StreamARN: string,
+     *     StreamId?: string|null,
      *     StreamStatus: 'CREATING'|'DELETING'|'ACTIVE'|'UPDATING',
      *     StreamModeDetails?: StreamModeDetails|null,
      *     RetentionPeriodHours: int,

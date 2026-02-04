@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ReplicaGlobalSecondaryIndexDescription>|null $GlobalSecondaryIndexes
  * @property \Aws\Api\DateTimeResult|null $ReplicaInaccessibleDateTime
  * @property TableClassSummary|null $ReplicaTableClassSummary
+ * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null $GlobalTableSettingsReplicationMode
  */
 class ReplicaDescription extends Shape
 {
@@ -31,7 +32,8 @@ class ReplicaDescription extends Shape
      *     WarmThroughput?: TableWarmThroughputDescription|null,
      *     GlobalSecondaryIndexes?: list<ReplicaGlobalSecondaryIndexDescription>|null,
      *     ReplicaInaccessibleDateTime?: \Aws\Api\DateTimeResult|null,
-     *     ReplicaTableClassSummary?: TableClassSummary|null
+     *     ReplicaTableClassSummary?: TableClassSummary|null,
+     *     GlobalTableSettingsReplicationMode?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null
      * } $args
      */
     public function __construct(array $args = [])

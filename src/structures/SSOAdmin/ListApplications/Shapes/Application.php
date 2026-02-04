@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PortalOptions|null $PortalOptions
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $CreatedFrom
  */
 class Application extends Shape
 {
@@ -27,7 +28,8 @@ class Application extends Shape
      *     Status?: 'ENABLED'|'DISABLED'|null,
      *     PortalOptions?: PortalOptions|null,
      *     Description?: string|null,
-     *     CreatedDate?: \Aws\Api\DateTimeResult|null
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     CreatedFrom?: string|null
      * } $args
      */
     public function __construct(array $args = [])
