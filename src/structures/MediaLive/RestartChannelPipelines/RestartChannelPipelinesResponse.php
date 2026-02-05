@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DescribeAnywhereSettings|null $AnywhereSettings
  * @property Shapes\ChannelEngineVersionResponse|null $ChannelEngineVersion
  * @property Shapes\DescribeLinkedChannelSettings|null $LinkedChannelSettings
+ * @property list<string>|null $ChannelSecurityGroups
  */
 class RestartChannelPipelinesResponse extends Response
 {

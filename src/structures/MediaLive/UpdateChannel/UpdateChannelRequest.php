@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DryRun
  * @property Shapes\AnywhereSettings|null $AnywhereSettings
  * @property Shapes\LinkedChannelSettings|null $LinkedChannelSettings
+ * @property list<string>|null $ChannelSecurityGroups
  */
 class UpdateChannelRequest extends Request
 {
@@ -37,7 +38,8 @@ class UpdateChannelRequest extends Request
      *     ChannelEngineVersion?: Shapes\ChannelEngineVersionRequest|null,
      *     DryRun?: bool|null,
      *     AnywhereSettings?: Shapes\AnywhereSettings|null,
-     *     LinkedChannelSettings?: Shapes\LinkedChannelSettings|null
+     *     LinkedChannelSettings?: Shapes\LinkedChannelSettings|null,
+     *     ChannelSecurityGroups?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

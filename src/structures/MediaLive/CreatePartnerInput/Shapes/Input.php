@@ -20,7 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<InputSource>|null $Sources
  * @property 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null $State
  * @property array<string, string>|null $Tags
- * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|null $Type
+ * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|'SRT_LISTENER'|null $Type
  * @property SrtSettings|null $SrtSettings
  * @property 'AWS'|'ON_PREMISES'|null $InputNetworkLocation
  * @property MulticastSettings|null $MulticastSettings
@@ -47,7 +47,7 @@ class Input extends Shape
      *     Sources?: list<InputSource>|null,
      *     State?: 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null,
      *     Tags?: array<string, string>|null,
-     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|null,
+     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|'SMPTE_2110_RECEIVER_GROUP'|'SDI'|'MEDIACONNECT_ROUTER'|'SRT_LISTENER'|null,
      *     SrtSettings?: SrtSettings|null,
      *     InputNetworkLocation?: 'AWS'|'ON_PREMISES'|null,
      *     MulticastSettings?: MulticastSettings|null,

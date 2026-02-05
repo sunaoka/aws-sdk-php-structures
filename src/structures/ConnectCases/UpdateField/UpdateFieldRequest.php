@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $fieldId
  * @property string|null $name
  * @property string|null $description
+ * @property Shapes\FieldAttributes|null $attributes
  */
 class UpdateFieldRequest extends Request
 {
@@ -17,7 +18,8 @@ class UpdateFieldRequest extends Request
      *     domainId: string,
      *     fieldId: string,
      *     name?: string|null,
-     *     description?: string|null
+     *     description?: string|null,
+     *     attributes?: Shapes\FieldAttributes|null
      * } $args
      */
     public function __construct(array $args)

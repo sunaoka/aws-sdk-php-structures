@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Standard'|'IAM_Identity_Center'|null $authenticationType
  * @property 'standard.regular'|'standard.large'|'standard.xlarge'|null $instanceType
  * @property int<1, 5000>|null $maxConcurrentSessions
+ * @property string|null $portalCustomDomain
  */
 class UpdatePortalRequest extends Request
 {
@@ -19,7 +20,8 @@ class UpdatePortalRequest extends Request
      *     displayName?: string|null,
      *     authenticationType?: 'Standard'|'IAM_Identity_Center'|null,
      *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge'|null,
-     *     maxConcurrentSessions?: int<1, 5000>|null
+     *     maxConcurrentSessions?: int<1, 5000>|null,
+     *     portalCustomDomain?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $deleted
  * @property \Aws\Api\DateTimeResult|null $createdTime
  * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property FieldAttributes|null $attributes
  */
 class GetFieldResponse extends Shape
 {
@@ -29,7 +30,8 @@ class GetFieldResponse extends Shape
      *     tags?: array<string, string>|null,
      *     deleted?: bool|null,
      *     createdTime?: \Aws\Api\DateTimeResult|null,
-     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     attributes?: FieldAttributes|null
      * } $args
      */
     public function __construct(array $args)
