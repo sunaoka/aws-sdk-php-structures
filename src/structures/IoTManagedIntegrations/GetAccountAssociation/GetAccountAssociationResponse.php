@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Arn
  * @property string $OAuthAuthorizationUrl
  * @property array<string, string>|null $Tags
+ * @property Shapes\GeneralAuthorizationName|null $GeneralAuthorization
  */
 class GetAccountAssociationResponse extends Response
 {

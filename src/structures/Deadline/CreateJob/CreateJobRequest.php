@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $sourceJobId
  * @property string|null $nameOverride
  * @property string|null $descriptionOverride
+ * @property array<string, string>|null $tags
  */
 class CreateJobRequest extends Request
 {
@@ -41,7 +42,8 @@ class CreateJobRequest extends Request
      *     maxWorkerCount?: int<-1, 2147483647>|null,
      *     sourceJobId?: string|null,
      *     nameOverride?: string|null,
-     *     descriptionOverride?: string|null
+     *     descriptionOverride?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

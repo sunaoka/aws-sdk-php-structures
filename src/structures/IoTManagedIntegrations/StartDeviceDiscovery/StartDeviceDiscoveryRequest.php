@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ZWAVE_INSTALL_CODE'|null $AuthenticationMaterialType
  * @property string|null $ClientToken
  * @property array<string, string>|null $Tags
+ * @property list<string>|null $ConnectorDeviceIdList
  * @property 'ZWAVE'|'ZIGBEE'|'CUSTOM'|null $Protocol
  * @property string|null $EndDeviceIdentifier
  */
@@ -30,6 +31,7 @@ class StartDeviceDiscoveryRequest extends Request
      *     AuthenticationMaterialType?: 'ZWAVE_INSTALL_CODE'|null,
      *     ClientToken?: string|null,
      *     Tags?: array<string, string>|null,
+     *     ConnectorDeviceIdList?: list<string>|null,
      *     Protocol?: 'ZWAVE'|'ZIGBEE'|'CUSTOM'|null,
      *     EndDeviceIdentifier?: string|null
      * } $args

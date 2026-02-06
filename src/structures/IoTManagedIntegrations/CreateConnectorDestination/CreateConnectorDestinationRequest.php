@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string|null $Description
  * @property string $CloudConnectorId
- * @property 'OAUTH' $AuthType
+ * @property 'OAUTH'|null $AuthType
  * @property Shapes\AuthConfig $AuthConfig
- * @property Shapes\SecretsManager $SecretsManager
+ * @property Shapes\SecretsManager|null $SecretsManager
  * @property string|null $ClientToken
  */
 class CreateConnectorDestinationRequest extends Request
@@ -20,9 +20,9 @@ class CreateConnectorDestinationRequest extends Request
      *     Name?: string|null,
      *     Description?: string|null,
      *     CloudConnectorId: string,
-     *     AuthType: 'OAUTH',
+     *     AuthType?: 'OAUTH'|null,
      *     AuthConfig: Shapes\AuthConfig,
-     *     SecretsManager: Shapes\SecretsManager,
+     *     SecretsManager?: Shapes\SecretsManager|null,
      *     ClientToken?: string|null
      * } $args
      */

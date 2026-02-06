@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Blueprint>|null $blueprints
  * @property string $dataAutomationProfileArn
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
+ * @property Shapes\OutputConfiguration|null $outputConfiguration
  */
 class InvokeDataAutomationRequest extends Request
 {
@@ -19,7 +20,8 @@ class InvokeDataAutomationRequest extends Request
      *     dataAutomationConfiguration?: Shapes\DataAutomationConfiguration|null,
      *     blueprints?: list<Shapes\Blueprint>|null,
      *     dataAutomationProfileArn: string,
-     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     outputConfiguration?: Shapes\OutputConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FieldName
  * @property string|null $Label
  * @property string|null $Description
- * @property 'INT'|'SMALLINT'|'BIGINT'|'FLOAT'|'LONG'|'DATE'|'BOOLEAN'|'MAP'|'ARRAY'|'STRING'|'TIMESTAMP'|'DECIMAL'|'BYTE'|'SHORT'|'DOUBLE'|'STRUCT'|null $FieldType
+ * @property 'INT'|'SMALLINT'|'BIGINT'|'FLOAT'|'LONG'|'DATE'|'BOOLEAN'|'MAP'|'ARRAY'|'STRING'|'TIMESTAMP'|'DECIMAL'|'BYTE'|'SHORT'|'DOUBLE'|'STRUCT'|'BINARY'|'UNION'|null $FieldType
  * @property bool|null $IsPrimaryKey
  * @property bool|null $IsNullable
  * @property bool|null $IsRetrievable
@@ -31,7 +31,7 @@ class Field extends Shape
      *     FieldName?: string|null,
      *     Label?: string|null,
      *     Description?: string|null,
-     *     FieldType?: 'INT'|'SMALLINT'|'BIGINT'|'FLOAT'|'LONG'|'DATE'|'BOOLEAN'|'MAP'|'ARRAY'|'STRING'|'TIMESTAMP'|'DECIMAL'|'BYTE'|'SHORT'|'DOUBLE'|'STRUCT'|null,
+     *     FieldType?: 'INT'|'SMALLINT'|'BIGINT'|'FLOAT'|'LONG'|'DATE'|'BOOLEAN'|'MAP'|'ARRAY'|'STRING'|'TIMESTAMP'|'DECIMAL'|'BYTE'|'SHORT'|'DOUBLE'|'STRUCT'|'BINARY'|'UNION'|null,
      *     IsPrimaryKey?: bool|null,
      *     IsNullable?: bool|null,
      *     IsRetrievable?: bool|null,

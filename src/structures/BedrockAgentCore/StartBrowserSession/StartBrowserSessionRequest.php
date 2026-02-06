@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 28800>|null $sessionTimeoutSeconds
  * @property Shapes\ViewPort|null $viewPort
  * @property list<Shapes\BrowserExtension>|null $extensions
+ * @property Shapes\BrowserProfileConfiguration|null $profileConfiguration
  * @property string|null $clientToken
  */
 class StartBrowserSessionRequest extends Request
@@ -25,6 +26,7 @@ class StartBrowserSessionRequest extends Request
      *     sessionTimeoutSeconds?: int<1, 28800>|null,
      *     viewPort?: Shapes\ViewPort|null,
      *     extensions?: list<Shapes\BrowserExtension>|null,
+     *     profileConfiguration?: Shapes\BrowserProfileConfiguration|null,
      *     clientToken?: string|null
      * } $args
      */
