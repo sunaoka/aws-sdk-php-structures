@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $queueRequest
  * @property list<string>|null $dependencies
  * @property bool|null $userProvidedEdgeIds
+ * @property bool|null $edgeOnlyLoad
  */
 class StartLoaderJobRequest extends Request
 {
@@ -33,7 +34,8 @@ class StartLoaderJobRequest extends Request
      *     updateSingleCardinalityProperties?: bool|null,
      *     queueRequest?: bool|null,
      *     dependencies?: list<string>|null,
-     *     userProvidedEdgeIds?: bool|null
+     *     userProvidedEdgeIds?: bool|null,
+     *     edgeOnlyLoad?: bool|null
      * } $args
      */
     public function __construct(array $args)

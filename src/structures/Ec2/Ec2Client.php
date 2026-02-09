@@ -126,6 +126,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use CreateRouteServerEndpoint\CreateRouteServerEndpointTrait;
     use CreateRouteServerPeer\CreateRouteServerPeerTrait;
     use CreateRouteTable\CreateRouteTableTrait;
+    use CreateSecondaryNetwork\CreateSecondaryNetworkTrait;
+    use CreateSecondarySubnet\CreateSecondarySubnetTrait;
     use CreateSecurityGroup\CreateSecurityGroupTrait;
     use CreateSnapshot\CreateSnapshotTrait;
     use CreateSnapshots\CreateSnapshotsTrait;
@@ -218,6 +220,8 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DeleteRouteServerEndpoint\DeleteRouteServerEndpointTrait;
     use DeleteRouteServerPeer\DeleteRouteServerPeerTrait;
     use DeleteRouteTable\DeleteRouteTableTrait;
+    use DeleteSecondaryNetwork\DeleteSecondaryNetworkTrait;
+    use DeleteSecondarySubnet\DeleteSecondarySubnetTrait;
     use DeleteSecurityGroup\DeleteSecurityGroupTrait;
     use DeleteSnapshot\DeleteSnapshotTrait;
     use DeleteSpotDatafeedSubscription\DeleteSpotDatafeedSubscriptionTrait;
@@ -386,6 +390,9 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
     use DescribeRouteTables\DescribeRouteTablesTrait;
     use DescribeScheduledInstanceAvailability\DescribeScheduledInstanceAvailabilityTrait;
     use DescribeScheduledInstances\DescribeScheduledInstancesTrait;
+    use DescribeSecondaryInterfaces\DescribeSecondaryInterfacesTrait;
+    use DescribeSecondaryNetworks\DescribeSecondaryNetworksTrait;
+    use DescribeSecondarySubnets\DescribeSecondarySubnetsTrait;
     use DescribeSecurityGroupReferences\DescribeSecurityGroupReferencesTrait;
     use DescribeSecurityGroupRules\DescribeSecurityGroupRulesTrait;
     use DescribeSecurityGroupVpcAssociations\DescribeSecurityGroupVpcAssociationsTrait;

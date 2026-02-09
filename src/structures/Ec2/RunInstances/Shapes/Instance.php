@@ -45,6 +45,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'legacy-bios'|'uefi'|null $CurrentInstanceBootMode
  * @property InstanceNetworkPerformanceOptions|null $NetworkPerformanceOptions
  * @property OperatorResponse|null $Operator
+ * @property list<InstanceSecondaryInterface>|null $SecondaryInterfaces
  * @property string|null $InstanceId
  * @property string|null $ImageId
  * @property InstanceState|null $State
@@ -110,6 +111,7 @@ class Instance extends Shape
      *     CurrentInstanceBootMode?: 'legacy-bios'|'uefi'|null,
      *     NetworkPerformanceOptions?: InstanceNetworkPerformanceOptions|null,
      *     Operator?: OperatorResponse|null,
+     *     SecondaryInterfaces?: list<InstanceSecondaryInterface>|null,
      *     InstanceId?: string|null,
      *     ImageId?: string|null,
      *     State?: InstanceState|null,

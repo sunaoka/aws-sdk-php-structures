@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $domainArn
- * @property array<'Campaign-Email'|'Campaign-SMS'|'Campaign-Telephony'|'Campaign-Orchestration', string> $objectTypeNames
+ * @property array<'Campaign-Email'|'Campaign-SMS'|'Campaign-Telephony'|'Campaign-Orchestration'|'Campaign-WhatsApp', string> $objectTypeNames
  */
 class CustomerProfilesIntegrationSummary extends Shape
 {
     /**
      * @param array{
      *     domainArn: string,
-     *     objectTypeNames: array<'Campaign-Email'|'Campaign-SMS'|'Campaign-Telephony'|'Campaign-Orchestration', string>
+     *     objectTypeNames: array<'Campaign-Email'|'Campaign-SMS'|'Campaign-Telephony'|'Campaign-Orchestration'|'Campaign-WhatsApp', string>
      * } $args
      */
     public function __construct(array $args)
