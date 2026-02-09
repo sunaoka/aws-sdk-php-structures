@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Owner
  * @property string|null $CredentialLockerId
  * @property string $AuthenticationMaterial
- * @property 'CUSTOM_PROTOCOL_QR_BAR_CODE'|'WIFI_SETUP_QR_BAR_CODE'|'ZWAVE_QR_BAR_CODE'|'ZIGBEE_QR_BAR_CODE'|'DISCOVERED_DEVICE' $AuthenticationMaterialType
+ * @property 'CUSTOM_PROTOCOL_QR_BAR_CODE'|'WIFI_SETUP_QR_BAR_CODE'|'ZWAVE_QR_BAR_CODE'|'ZIGBEE_QR_BAR_CODE'|'DISCOVERED_DEVICE'|'PRE_ONBOARDED_CLOUD' $AuthenticationMaterialType
  * @property Shapes\WiFiSimpleSetupConfiguration|null $WiFiSimpleSetupConfiguration
  * @property string|null $SerialNumber
  * @property string|null $Brand
@@ -31,7 +31,7 @@ class CreateManagedThingRequest extends Request
      *     Owner?: string|null,
      *     CredentialLockerId?: string|null,
      *     AuthenticationMaterial: string,
-     *     AuthenticationMaterialType: 'CUSTOM_PROTOCOL_QR_BAR_CODE'|'WIFI_SETUP_QR_BAR_CODE'|'ZWAVE_QR_BAR_CODE'|'ZIGBEE_QR_BAR_CODE'|'DISCOVERED_DEVICE',
+     *     AuthenticationMaterialType: 'CUSTOM_PROTOCOL_QR_BAR_CODE'|'WIFI_SETUP_QR_BAR_CODE'|'ZWAVE_QR_BAR_CODE'|'ZIGBEE_QR_BAR_CODE'|'DISCOVERED_DEVICE'|'PRE_ONBOARDED_CLOUD',
      *     WiFiSimpleSetupConfiguration?: Shapes\WiFiSimpleSetupConfiguration|null,
      *     SerialNumber?: string|null,
      *     Brand?: string|null,

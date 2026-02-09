@@ -8,6 +8,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use CreateAgentRuntimeEndpoint\CreateAgentRuntimeEndpointTrait;
     use CreateApiKeyCredentialProvider\CreateApiKeyCredentialProviderTrait;
     use CreateBrowser\CreateBrowserTrait;
+    use CreateBrowserProfile\CreateBrowserProfileTrait;
     use CreateCodeInterpreter\CreateCodeInterpreterTrait;
     use CreateEvaluator\CreateEvaluatorTrait;
     use CreateGateway\CreateGatewayTrait;
@@ -22,6 +23,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use DeleteAgentRuntimeEndpoint\DeleteAgentRuntimeEndpointTrait;
     use DeleteApiKeyCredentialProvider\DeleteApiKeyCredentialProviderTrait;
     use DeleteBrowser\DeleteBrowserTrait;
+    use DeleteBrowserProfile\DeleteBrowserProfileTrait;
     use DeleteCodeInterpreter\DeleteCodeInterpreterTrait;
     use DeleteEvaluator\DeleteEvaluatorTrait;
     use DeleteGateway\DeleteGatewayTrait;
@@ -37,6 +39,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use GetAgentRuntimeEndpoint\GetAgentRuntimeEndpointTrait;
     use GetApiKeyCredentialProvider\GetApiKeyCredentialProviderTrait;
     use GetBrowser\GetBrowserTrait;
+    use GetBrowserProfile\GetBrowserProfileTrait;
     use GetCodeInterpreter\GetCodeInterpreterTrait;
     use GetEvaluator\GetEvaluatorTrait;
     use GetGateway\GetGatewayTrait;
@@ -54,6 +57,7 @@ class BedrockAgentCoreControlClient extends \Aws\BedrockAgentCoreControl\Bedrock
     use ListAgentRuntimeVersions\ListAgentRuntimeVersionsTrait;
     use ListAgentRuntimes\ListAgentRuntimesTrait;
     use ListApiKeyCredentialProviders\ListApiKeyCredentialProvidersTrait;
+    use ListBrowserProfiles\ListBrowserProfilesTrait;
     use ListBrowsers\ListBrowsersTrait;
     use ListCodeInterpreters\ListCodeInterpretersTrait;
     use ListEvaluators\ListEvaluatorsTrait;

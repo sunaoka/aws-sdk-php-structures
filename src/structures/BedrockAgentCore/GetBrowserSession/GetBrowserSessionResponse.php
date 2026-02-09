@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property Shapes\ViewPort|null $viewPort
  * @property list<Shapes\BrowserExtension>|null $extensions
+ * @property Shapes\BrowserProfileConfiguration|null $profileConfiguration
  * @property int<1, 28800>|null $sessionTimeoutSeconds
  * @property 'READY'|'TERMINATED'|null $status
  * @property Shapes\BrowserSessionStream|null $streams

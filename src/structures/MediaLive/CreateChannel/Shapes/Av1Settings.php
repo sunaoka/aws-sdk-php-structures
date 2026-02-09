@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED'|null $SpatialAq
  * @property 'DISABLED'|'ENABLED'|null $TemporalAq
  * @property 'DISABLED'|'METADATA_OBU'|null $TimecodeInsertion
+ * @property 'DEPTH_10'|'DEPTH_8'|null $BitDepth
  */
 class Av1Settings extends Shape
 {
@@ -55,7 +56,8 @@ class Av1Settings extends Shape
      *     MinBitrate?: int|null,
      *     SpatialAq?: 'DISABLED'|'ENABLED'|null,
      *     TemporalAq?: 'DISABLED'|'ENABLED'|null,
-     *     TimecodeInsertion?: 'DISABLED'|'METADATA_OBU'|null
+     *     TimecodeInsertion?: 'DISABLED'|'METADATA_OBU'|null,
+     *     BitDepth?: 'DEPTH_10'|'DEPTH_8'|null
      * } $args
      */
     public function __construct(array $args)

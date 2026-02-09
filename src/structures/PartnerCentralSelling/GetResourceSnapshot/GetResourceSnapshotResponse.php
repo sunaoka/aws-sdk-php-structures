@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ResourceSnapshotTemplateName
  * @property int<1, max>|null $Revision
  * @property Shapes\ResourceSnapshotPayload|null $Payload
+ * @property list<string>|null $TargetMemberAccounts
  */
 class GetResourceSnapshotResponse extends Response
 {

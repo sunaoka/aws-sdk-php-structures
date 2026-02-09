@@ -63,6 +63,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use DeleteColumnStatisticsForTable\DeleteColumnStatisticsForTableTrait;
     use DeleteColumnStatisticsTaskSettings\DeleteColumnStatisticsTaskSettingsTrait;
     use DeleteConnection\DeleteConnectionTrait;
+    use DeleteConnectionType\DeleteConnectionTypeTrait;
     use DeleteCrawler\DeleteCrawlerTrait;
     use DeleteCustomEntityType\DeleteCustomEntityTypeTrait;
     use DeleteDataQualityRuleset\DeleteDataQualityRulesetTrait;
@@ -207,6 +208,7 @@ class GlueClient extends \Aws\Glue\GlueClient
     use PutSchemaVersionMetadata\PutSchemaVersionMetadataTrait;
     use PutWorkflowRunProperties\PutWorkflowRunPropertiesTrait;
     use QuerySchemaVersionMetadata\QuerySchemaVersionMetadataTrait;
+    use RegisterConnectionType\RegisterConnectionTypeTrait;
     use RegisterSchemaVersion\RegisterSchemaVersionTrait;
     use RemoveSchemaVersionMetadata\RemoveSchemaVersionMetadataTrait;
     use ResetJobBookmark\ResetJobBookmarkTrait;

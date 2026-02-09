@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'Prospect'|'Qualified'|'Technical Validation'|'Business Validation'|'Committed'|'Launched'|'Closed Lost'>|null $LifeCycleStage
  * @property list<'Pending Submission'|'Submitted'|'In review'|'Approved'|'Rejected'|'Action Required'>|null $LifeCycleReviewStatus
  * @property list<string>|null $CustomerCompanyName
+ * @property Shapes\CreatedDateFilter|null $CreatedDate
  */
 class ListOpportunitiesRequest extends Request
 {
@@ -27,7 +28,8 @@ class ListOpportunitiesRequest extends Request
      *     Identifier?: list<string>|null,
      *     LifeCycleStage?: list<'Prospect'|'Qualified'|'Technical Validation'|'Business Validation'|'Committed'|'Launched'|'Closed Lost'>|null,
      *     LifeCycleReviewStatus?: list<'Pending Submission'|'Submitted'|'In review'|'Approved'|'Rejected'|'Action Required'>|null,
-     *     CustomerCompanyName?: list<string>|null
+     *     CustomerCompanyName?: list<string>|null,
+     *     CreatedDate?: Shapes\CreatedDateFilter|null
      * } $args
      */
     public function __construct(array $args)
