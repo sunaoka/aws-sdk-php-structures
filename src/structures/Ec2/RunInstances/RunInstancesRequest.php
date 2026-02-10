@@ -39,6 +39,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnablePrimaryIpv6
  * @property Shapes\InstanceNetworkPerformanceOptionsRequest|null $NetworkPerformanceOptions
  * @property Shapes\OperatorRequest|null $Operator
+ * @property list<Shapes\InstanceSecondaryInterfaceSpecificationRequest>|null $SecondaryInterfaces
  * @property bool|null $DryRun
  * @property bool|null $DisableApiTermination
  * @property 'stop'|'terminate'|null $InstanceInitiatedShutdownBehavior
@@ -87,6 +88,7 @@ class RunInstancesRequest extends Request
      *     EnablePrimaryIpv6?: bool|null,
      *     NetworkPerformanceOptions?: Shapes\InstanceNetworkPerformanceOptionsRequest|null,
      *     Operator?: Shapes\OperatorRequest|null,
+     *     SecondaryInterfaces?: list<Shapes\InstanceSecondaryInterfaceSpecificationRequest>|null,
      *     DryRun?: bool|null,
      *     DisableApiTermination?: bool|null,
      *     InstanceInitiatedShutdownBehavior?: 'stop'|'terminate'|null,

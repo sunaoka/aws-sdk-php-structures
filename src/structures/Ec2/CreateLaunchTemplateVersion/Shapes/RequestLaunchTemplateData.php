@@ -38,6 +38,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DisableApiStop
  * @property OperatorRequest|null $Operator
  * @property LaunchTemplateNetworkPerformanceOptionsRequest|null $NetworkPerformanceOptions
+ * @property list<LaunchTemplateInstanceSecondaryInterfaceSpecificationRequest>|null $SecondaryInterfaces
  */
 class RequestLaunchTemplateData extends Shape
 {
@@ -75,7 +76,8 @@ class RequestLaunchTemplateData extends Shape
      *     MaintenanceOptions?: LaunchTemplateInstanceMaintenanceOptionsRequest|null,
      *     DisableApiStop?: bool|null,
      *     Operator?: OperatorRequest|null,
-     *     NetworkPerformanceOptions?: LaunchTemplateNetworkPerformanceOptionsRequest|null
+     *     NetworkPerformanceOptions?: LaunchTemplateNetworkPerformanceOptionsRequest|null,
+     *     SecondaryInterfaces?: list<LaunchTemplateInstanceSecondaryInterfaceSpecificationRequest>|null
      * } $args
      */
     public function __construct(array $args = [])
