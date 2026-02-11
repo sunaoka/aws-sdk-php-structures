@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientRequestToken
  * @property bool|null $disableSessionTags
  * @property string|null $targetRoleArn
+ * @property string|null $policy
  */
 class UpdatePodIdentityAssociationRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdatePodIdentityAssociationRequest extends Request
      *     roleArn?: string|null,
      *     clientRequestToken?: string|null,
      *     disableSessionTags?: bool|null,
-     *     targetRoleArn?: string|null
+     *     targetRoleArn?: string|null,
+     *     policy?: string|null
      * } $args
      */
     public function __construct(array $args)

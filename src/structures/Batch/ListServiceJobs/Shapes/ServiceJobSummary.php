@@ -6,10 +6,12 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property LatestServiceJobAttempt|null $latestAttempt
+ * @property list<ServiceJobCapacityUsageSummary>|null $capacityUsage
  * @property int|null $createdAt
  * @property string|null $jobArn
  * @property string $jobId
  * @property string $jobName
+ * @property int|null $scheduledAt
  * @property 'SAGEMAKER_TRAINING' $serviceJobType
  * @property string|null $shareIdentifier
  * @property 'SUBMITTED'|'PENDING'|'RUNNABLE'|'SCHEDULED'|'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|null $status
@@ -22,10 +24,12 @@ class ServiceJobSummary extends Shape
     /**
      * @param array{
      *     latestAttempt?: LatestServiceJobAttempt|null,
+     *     capacityUsage?: list<ServiceJobCapacityUsageSummary>|null,
      *     createdAt?: int|null,
      *     jobArn?: string|null,
      *     jobId: string,
      *     jobName: string,
+     *     scheduledAt?: int|null,
      *     serviceJobType: 'SAGEMAKER_TRAINING',
      *     shareIdentifier?: string|null,
      *     status?: 'SUBMITTED'|'PENDING'|'RUNNABLE'|'SCHEDULED'|'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|null,

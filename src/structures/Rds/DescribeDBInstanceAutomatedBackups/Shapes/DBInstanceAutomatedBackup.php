@@ -30,6 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Timezone
  * @property bool|null $IAMDatabaseAuthenticationEnabled
  * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  * @property string|null $DBInstanceAutomatedBackupsArn
  * @property list<DBInstanceAutomatedBackupsReplication>|null $DBInstanceAutomatedBackupsReplications
  * @property string|null $BackupTarget
@@ -68,6 +69,7 @@ class DBInstanceAutomatedBackup extends Shape
      *     Timezone?: string|null,
      *     IAMDatabaseAuthenticationEnabled?: bool|null,
      *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
      *     DBInstanceAutomatedBackupsArn?: string|null,
      *     DBInstanceAutomatedBackupsReplications?: list<DBInstanceAutomatedBackupsReplication>|null,
      *     BackupTarget?: string|null,

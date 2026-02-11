@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EngineVersion
  * @property string|null $DBClusterArn
  * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  * @property string|null $EngineMode
  * @property list<string>|null $AvailabilityZones
  * @property int|null $Port
@@ -53,6 +54,7 @@ class DBClusterAutomatedBackup extends Shape
      *     EngineVersion?: string|null,
      *     DBClusterArn?: string|null,
      *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
      *     EngineMode?: string|null,
      *     AvailabilityZones?: list<string>|null,
      *     Port?: int|null,
