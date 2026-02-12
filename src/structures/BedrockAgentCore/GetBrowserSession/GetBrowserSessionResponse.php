@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<1, 28800>|null $sessionTimeoutSeconds
  * @property 'READY'|'TERMINATED'|null $status
  * @property Shapes\BrowserSessionStream|null $streams
+ * @property Shapes\ProxyConfiguration|null $proxyConfiguration
  * @property string|null $sessionReplayArtifact
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */

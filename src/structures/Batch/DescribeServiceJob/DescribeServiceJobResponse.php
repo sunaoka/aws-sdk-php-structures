@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ServiceJobAttemptDetail>|null $attempts
+ * @property list<Shapes\ServiceJobCapacityUsageDetail>|null $capacityUsage
  * @property int|null $createdAt
  * @property bool|null $isTerminated
  * @property string|null $jobArn
@@ -14,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $jobQueue
  * @property Shapes\LatestServiceJobAttempt|null $latestAttempt
  * @property Shapes\ServiceJobRetryStrategy|null $retryStrategy
+ * @property int|null $scheduledAt
  * @property int|null $schedulingPriority
  * @property string|null $serviceRequestPayload
  * @property 'SAGEMAKER_TRAINING' $serviceJobType

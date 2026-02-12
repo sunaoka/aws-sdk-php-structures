@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $disableSessionTags
  * @property string|null $targetRoleArn
  * @property string|null $externalId
+ * @property string|null $policy
  */
 class PodIdentityAssociation extends Shape
 {
@@ -35,7 +36,8 @@ class PodIdentityAssociation extends Shape
      *     ownerArn?: string|null,
      *     disableSessionTags?: bool|null,
      *     targetRoleArn?: string|null,
-     *     externalId?: string|null
+     *     externalId?: string|null,
+     *     policy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

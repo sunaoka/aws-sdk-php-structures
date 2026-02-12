@@ -22,6 +22,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SnapshotType
  * @property int|null $PercentProgress
  * @property bool|null $StorageEncrypted
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  * @property string|null $KmsKeyId
  * @property string|null $DBClusterSnapshotArn
  * @property string|null $SourceDBClusterSnapshotArn
@@ -53,6 +55,8 @@ class DBClusterSnapshot extends Shape
      *     SnapshotType?: string|null,
      *     PercentProgress?: int|null,
      *     StorageEncrypted?: bool|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
      *     KmsKeyId?: string|null,
      *     DBClusterSnapshotArn?: string|null,
      *     SourceDBClusterSnapshotArn?: string|null,

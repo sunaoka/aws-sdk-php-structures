@@ -9,10 +9,12 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use CreateClusterV2\CreateClusterV2Trait;
     use CreateConfiguration\CreateConfigurationTrait;
     use CreateReplicator\CreateReplicatorTrait;
+    use CreateTopic\CreateTopicTrait;
     use CreateVpcConnection\CreateVpcConnectionTrait;
     use DeleteCluster\DeleteClusterTrait;
     use DeleteConfiguration\DeleteConfigurationTrait;
     use DeleteReplicator\DeleteReplicatorTrait;
+    use DeleteTopic\DeleteTopicTrait;
     use DeleteVpcConnection\DeleteVpcConnectionTrait;
     use DescribeCluster\DescribeClusterTrait;
     use DescribeClusterV2\DescribeClusterV2Trait;
@@ -60,4 +62,5 @@ class KafkaClient extends \Aws\Kafka\KafkaClient
     use UpdateReplicationInfo\UpdateReplicationInfoTrait;
     use UpdateSecurity\UpdateSecurityTrait;
     use UpdateStorage\UpdateStorageTrait;
+    use UpdateTopic\UpdateTopicTrait;
 }

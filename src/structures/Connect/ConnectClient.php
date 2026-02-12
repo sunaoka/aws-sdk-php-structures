@@ -345,6 +345,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateTaskTemplate\UpdateTaskTemplateTrait;
     use UpdateTestCase\UpdateTestCaseTrait;
     use UpdateTrafficDistribution\UpdateTrafficDistributionTrait;
+    use UpdateUserConfig\UpdateUserConfigTrait;
     use UpdateUserHierarchy\UpdateUserHierarchyTrait;
     use UpdateUserHierarchyGroupName\UpdateUserHierarchyGroupNameTrait;
     use UpdateUserHierarchyStructure\UpdateUserHierarchyStructureTrait;

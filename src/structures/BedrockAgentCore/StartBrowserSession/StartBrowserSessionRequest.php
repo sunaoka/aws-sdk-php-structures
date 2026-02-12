@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ViewPort|null $viewPort
  * @property list<Shapes\BrowserExtension>|null $extensions
  * @property Shapes\BrowserProfileConfiguration|null $profileConfiguration
+ * @property Shapes\ProxyConfiguration|null $proxyConfiguration
  * @property string|null $clientToken
  */
 class StartBrowserSessionRequest extends Request
@@ -27,6 +28,7 @@ class StartBrowserSessionRequest extends Request
      *     viewPort?: Shapes\ViewPort|null,
      *     extensions?: list<Shapes\BrowserExtension>|null,
      *     profileConfiguration?: Shapes\BrowserProfileConfiguration|null,
+     *     proxyConfiguration?: Shapes\ProxyConfiguration|null,
      *     clientToken?: string|null
      * } $args
      */

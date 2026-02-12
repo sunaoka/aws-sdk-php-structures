@@ -48,6 +48,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $BackupTarget
  * @property string|null $CustomIamInstanceProfile
  * @property int|null $AllocatedStorage
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  * @property bool|null $DedicatedLogVolume
  * @property string|null $CACertificateIdentifier
  * @property string|null $EngineLifecycleSupport
@@ -103,6 +105,8 @@ class RestoreDBInstanceToPointInTimeRequest extends Request
      *     BackupTarget?: string|null,
      *     CustomIamInstanceProfile?: string|null,
      *     AllocatedStorage?: int|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
      *     DedicatedLogVolume?: bool|null,
      *     CACertificateIdentifier?: string|null,
      *     EngineLifecycleSupport?: string|null,
