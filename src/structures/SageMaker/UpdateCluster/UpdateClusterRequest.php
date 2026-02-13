@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Continuous'|null $NodeProvisioningMode
  * @property string|null $ClusterRole
  * @property Shapes\ClusterAutoScalingConfig|null $AutoScaling
+ * @property Shapes\ClusterOrchestrator|null $Orchestrator
  */
 class UpdateClusterRequest extends Request
 {
@@ -27,7 +28,8 @@ class UpdateClusterRequest extends Request
      *     InstanceGroupsToDelete?: list<string>|null,
      *     NodeProvisioningMode?: 'Continuous'|null,
      *     ClusterRole?: string|null,
-     *     AutoScaling?: Shapes\ClusterAutoScalingConfig|null
+     *     AutoScaling?: Shapes\ClusterAutoScalingConfig|null,
+     *     Orchestrator?: Shapes\ClusterOrchestrator|null
      * } $args
      */
     public function __construct(array $args)

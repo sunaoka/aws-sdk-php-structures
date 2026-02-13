@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ScheduledUpdateConfig|null $ScheduledUpdateConfig
  * @property string|null $ImageId
  * @property ClusterKubernetesConfig|null $KubernetesConfig
+ * @property ClusterSlurmConfig|null $SlurmConfig
  * @property ClusterCapacityRequirements|null $CapacityRequirements
  */
 class ClusterInstanceGroupSpecification extends Shape
@@ -39,6 +40,7 @@ class ClusterInstanceGroupSpecification extends Shape
      *     ScheduledUpdateConfig?: ScheduledUpdateConfig|null,
      *     ImageId?: string|null,
      *     KubernetesConfig?: ClusterKubernetesConfig|null,
+     *     SlurmConfig?: ClusterSlurmConfig|null,
      *     CapacityRequirements?: ClusterCapacityRequirements|null
      * } $args
      */

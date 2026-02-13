@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ParentZoneName
  * @property string|null $ParentZoneId
  * @property string|null $GroupLongName
+ * @property list<AvailabilityZoneGeography>|null $Geography
+ * @property list<AvailabilityZoneSubGeography>|null $SubGeography
  * @property 'available'|'information'|'impaired'|'unavailable'|'constrained'|null $State
  */
 class AvailabilityZone extends Shape
@@ -33,6 +35,8 @@ class AvailabilityZone extends Shape
      *     ParentZoneName?: string|null,
      *     ParentZoneId?: string|null,
      *     GroupLongName?: string|null,
+     *     Geography?: list<AvailabilityZoneGeography>|null,
+     *     SubGeography?: list<AvailabilityZoneSubGeography>|null,
      *     State?: 'available'|'information'|'impaired'|'unavailable'|'constrained'|null
      * } $args
      */
