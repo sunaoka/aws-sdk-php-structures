@@ -6,8 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property int $CoreCount
- * @property int $ThreadsPerCore
+ * @property int|null $CoreCount
+ * @property int|null $ThreadsPerCore
+ * @property 'enabled'|'disabled'|null $NestedVirtualization
  * @property bool|null $DryRun
  */
 class ModifyInstanceCpuOptionsRequest extends Request
@@ -15,8 +16,9 @@ class ModifyInstanceCpuOptionsRequest extends Request
     /**
      * @param array{
      *     InstanceId: string,
-     *     CoreCount: int,
-     *     ThreadsPerCore: int,
+     *     CoreCount?: int|null,
+     *     ThreadsPerCore?: int|null,
+     *     NestedVirtualization?: 'enabled'|'disabled'|null,
      *     DryRun?: bool|null
      * } $args
      */
