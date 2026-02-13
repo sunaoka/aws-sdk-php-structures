@@ -50,6 +50,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use CreateHoursOfOperationOverride\CreateHoursOfOperationOverrideTrait;
     use CreateInstance\CreateInstanceTrait;
     use CreateIntegrationAssociation\CreateIntegrationAssociationTrait;
+    use CreateNotification\CreateNotificationTrait;
     use CreateParticipant\CreateParticipantTrait;
     use CreatePersistentContactAssociation\CreatePersistentContactAssociationTrait;
     use CreatePredefinedAttribute\CreatePredefinedAttributeTrait;
@@ -87,6 +88,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DeleteHoursOfOperationOverride\DeleteHoursOfOperationOverrideTrait;
     use DeleteInstance\DeleteInstanceTrait;
     use DeleteIntegrationAssociation\DeleteIntegrationAssociationTrait;
+    use DeleteNotification\DeleteNotificationTrait;
     use DeletePredefinedAttribute\DeletePredefinedAttributeTrait;
     use DeletePrompt\DeletePromptTrait;
     use DeletePushNotificationRegistration\DeletePushNotificationRegistrationTrait;
@@ -123,6 +125,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DescribeInstance\DescribeInstanceTrait;
     use DescribeInstanceAttribute\DescribeInstanceAttributeTrait;
     use DescribeInstanceStorageConfig\DescribeInstanceStorageConfigTrait;
+    use DescribeNotification\DescribeNotificationTrait;
     use DescribePhoneNumber\DescribePhoneNumberTrait;
     use DescribePredefinedAttribute\DescribePredefinedAttributeTrait;
     use DescribePrompt\DescribePromptTrait;
@@ -206,6 +209,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListIntegrationAssociations\ListIntegrationAssociationsTrait;
     use ListLambdaFunctions\ListLambdaFunctionsTrait;
     use ListLexBots\ListLexBotsTrait;
+    use ListNotifications\ListNotificationsTrait;
     use ListPhoneNumbers\ListPhoneNumbersTrait;
     use ListPhoneNumbersV2\ListPhoneNumbersV2Trait;
     use ListPredefinedAttributes\ListPredefinedAttributesTrait;
@@ -232,6 +236,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListTrafficDistributionGroups\ListTrafficDistributionGroupsTrait;
     use ListUseCases\ListUseCasesTrait;
     use ListUserHierarchyGroups\ListUserHierarchyGroupsTrait;
+    use ListUserNotifications\ListUserNotificationsTrait;
     use ListUserProficiencies\ListUserProficienciesTrait;
     use ListUsers\ListUsersTrait;
     use ListViewVersions\ListViewVersionsTrait;
@@ -257,6 +262,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use SearchEvaluationForms\SearchEvaluationFormsTrait;
     use SearchHoursOfOperationOverrides\SearchHoursOfOperationOverridesTrait;
     use SearchHoursOfOperations\SearchHoursOfOperationsTrait;
+    use SearchNotifications\SearchNotificationsTrait;
     use SearchPredefinedAttributes\SearchPredefinedAttributesTrait;
     use SearchPrompts\SearchPromptsTrait;
     use SearchQueues\SearchQueuesTrait;
@@ -321,6 +327,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateHoursOfOperationOverride\UpdateHoursOfOperationOverrideTrait;
     use UpdateInstanceAttribute\UpdateInstanceAttributeTrait;
     use UpdateInstanceStorageConfig\UpdateInstanceStorageConfigTrait;
+    use UpdateNotificationContent\UpdateNotificationContentTrait;
     use UpdateParticipantAuthentication\UpdateParticipantAuthenticationTrait;
     use UpdateParticipantRoleConfig\UpdateParticipantRoleConfigTrait;
     use UpdatePhoneNumber\UpdatePhoneNumberTrait;
@@ -350,6 +357,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use UpdateUserHierarchyGroupName\UpdateUserHierarchyGroupNameTrait;
     use UpdateUserHierarchyStructure\UpdateUserHierarchyStructureTrait;
     use UpdateUserIdentityInfo\UpdateUserIdentityInfoTrait;
+    use UpdateUserNotificationStatus\UpdateUserNotificationStatusTrait;
     use UpdateUserPhoneConfig\UpdateUserPhoneConfigTrait;
     use UpdateUserProficiencies\UpdateUserProficienciesTrait;
     use UpdateUserRoutingProfile\UpdateUserRoutingProfileTrait;

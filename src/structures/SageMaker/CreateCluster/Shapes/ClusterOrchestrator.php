@@ -6,11 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ClusterOrchestratorEksConfig|null $Eks
+ * @property ClusterOrchestratorSlurmConfig|null $Slurm
  */
 class ClusterOrchestrator extends Shape
 {
     /**
-     * @param array{Eks?: ClusterOrchestratorEksConfig|null} $args
+     * @param array{
+     *     Eks?: ClusterOrchestratorEksConfig|null,
+     *     Slurm?: ClusterOrchestratorSlurmConfig|null
+     * } $args
      */
     public function __construct(array $args = [])
     {
