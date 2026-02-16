@@ -28,6 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 6758>|null $TargetStateCount
  * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|null $SoftwareUpdateStatus
  * @property DeploymentConfiguration|null $ActiveSoftwareUpdateConfig
+ * @property ClusterSlurmConfigDetails|null $SlurmConfig
  */
 class ClusterInstanceGroupDetails extends Shape
 {
@@ -55,7 +56,8 @@ class ClusterInstanceGroupDetails extends Shape
      *     CapacityRequirements?: ClusterCapacityRequirements|null,
      *     TargetStateCount?: int<0, 6758>|null,
      *     SoftwareUpdateStatus?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'RollbackInProgress'|'RollbackComplete'|null,
-     *     ActiveSoftwareUpdateConfig?: DeploymentConfiguration|null
+     *     ActiveSoftwareUpdateConfig?: DeploymentConfiguration|null,
+     *     SlurmConfig?: ClusterSlurmConfigDetails|null
      * } $args
      */
     public function __construct(array $args = [])
