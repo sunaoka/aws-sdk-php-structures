@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\QConnect\GetNextMessage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'TEXT' $type
+ * @property 'TEXT'|'TOOL_USE_RESULT' $type
  * @property Shapes\MessageOutput $response
  * @property string $requestMessageId
  * @property Shapes\ConversationState $conversationState

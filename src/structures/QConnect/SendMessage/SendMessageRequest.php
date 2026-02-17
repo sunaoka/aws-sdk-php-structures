@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $assistantId
  * @property string $sessionId
- * @property 'TEXT' $type
+ * @property 'TEXT'|'TOOL_USE_RESULT' $type
  * @property Shapes\MessageInput $message
  * @property string|null $aiAgentId
  * @property Shapes\ConversationContext|null $conversationContext
@@ -22,7 +22,7 @@ class SendMessageRequest extends Request
      * @param array{
      *     assistantId: string,
      *     sessionId: string,
-     *     type: 'TEXT',
+     *     type: 'TEXT'|'TOOL_USE_RESULT',
      *     message: Shapes\MessageInput,
      *     aiAgentId?: string|null,
      *     conversationContext?: Shapes\ConversationContext|null,
