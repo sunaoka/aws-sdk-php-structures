@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $nextToken
- * @property string $serviceAccountId
  * @property list<Shapes\ServiceAccountTokenSummary> $serviceAccountTokens
+ * @property string $serviceAccountId
  * @property string $workspaceId
  */
 class ListWorkspaceServiceAccountTokensResponse extends Response

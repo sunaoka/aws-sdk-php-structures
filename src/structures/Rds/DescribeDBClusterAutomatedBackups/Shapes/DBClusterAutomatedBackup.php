@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IAMDatabaseAuthenticationEnabled
  * @property \Aws\Api\DateTimeResult|null $ClusterCreateTime
  * @property bool|null $StorageEncrypted
+ * @property 'none'|'sse-kms'|'sse-rds'|null $StorageEncryptionType
  * @property int|null $AllocatedStorage
  * @property string|null $EngineVersion
  * @property string|null $DBClusterArn
@@ -50,6 +51,7 @@ class DBClusterAutomatedBackup extends Shape
      *     IAMDatabaseAuthenticationEnabled?: bool|null,
      *     ClusterCreateTime?: \Aws\Api\DateTimeResult|null,
      *     StorageEncrypted?: bool|null,
+     *     StorageEncryptionType?: 'none'|'sse-kms'|'sse-rds'|null,
      *     AllocatedStorage?: int|null,
      *     EngineVersion?: string|null,
      *     DBClusterArn?: string|null,

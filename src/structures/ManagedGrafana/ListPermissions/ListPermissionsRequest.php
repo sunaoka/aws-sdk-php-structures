@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\ListPermissions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $groupId
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
- * @property string|null $userId
  * @property 'SSO_USER'|'SSO_GROUP'|null $userType
+ * @property string|null $userId
+ * @property string|null $groupId
  * @property string $workspaceId
  */
 class ListPermissionsRequest extends Request
 {
     /**
      * @param array{
-     *     groupId?: string|null,
      *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,
-     *     userId?: string|null,
      *     userType?: 'SSO_USER'|'SSO_GROUP'|null,
+     *     userId?: string|null,
+     *     groupId?: string|null,
      *     workspaceId: string
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\UpdatePermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UpdateInstruction $causedBy
  * @property int<100, 999> $code
  * @property string $message
+ * @property UpdateInstruction $causedBy
  */
 class UpdateError extends Shape
 {
     /**
      * @param array{
-     *     causedBy: UpdateInstruction,
      *     code: int<100, 999>,
-     *     message: string
+     *     message: string,
+     *     causedBy: UpdateInstruction
      * } $args
      */
     public function __construct(array $args)

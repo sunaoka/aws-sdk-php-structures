@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\DescribeWorkspaceAuthentication\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsSsoAuthentication|null $awsSso
  * @property list<'AWS_SSO'|'SAML'> $providers
  * @property SamlAuthentication|null $saml
+ * @property AwsSsoAuthentication|null $awsSso
  */
 class AuthenticationDescription extends Shape
 {
     /**
      * @param array{
-     *     awsSso?: AwsSsoAuthentication|null,
      *     providers: list<'AWS_SSO'|'SAML'>,
-     *     saml?: SamlAuthentication|null
+     *     saml?: SamlAuthentication|null,
+     *     awsSso?: AwsSsoAuthentication|null
      * } $args
      */
     public function __construct(array $args)

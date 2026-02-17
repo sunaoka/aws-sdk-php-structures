@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EngineLifecycleSupport
  * @property string|null $DatabaseName
  * @property bool|null $StorageEncrypted
+ * @property 'none'|'sse-kms'|'sse-rds'|null $StorageEncryptionType
  * @property bool|null $DeletionProtection
  * @property list<GlobalClusterMember>|null $GlobalClusterMembers
  * @property string|null $Endpoint
@@ -33,6 +34,7 @@ class GlobalCluster extends Shape
      *     EngineLifecycleSupport?: string|null,
      *     DatabaseName?: string|null,
      *     StorageEncrypted?: bool|null,
+     *     StorageEncryptionType?: 'none'|'sse-kms'|'sse-rds'|null,
      *     DeletionProtection?: bool|null,
      *     GlobalClusterMembers?: list<GlobalClusterMember>|null,
      *     Endpoint?: string|null,

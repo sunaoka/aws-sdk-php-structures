@@ -6,13 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'CURRENT_ACCOUNT'|'ORGANIZATION'|null $accountAccessType
- * @property Shapes\NetworkAccessConfiguration|null $networkAccessControl
  * @property string|null $organizationRoleName
  * @property 'CUSTOMER_MANAGED'|'SERVICE_MANAGED'|null $permissionType
- * @property bool|null $removeNetworkAccessConfiguration
- * @property bool|null $removeVpcConfiguration
  * @property string|null $stackSetName
- * @property Shapes\VpcConfiguration|null $vpcConfiguration
  * @property list<'AMAZON_OPENSEARCH_SERVICE'|'CLOUDWATCH'|'PROMETHEUS'|'XRAY'|'TIMESTREAM'|'SITEWISE'|'ATHENA'|'REDSHIFT'|'TWINMAKER'>|null $workspaceDataSources
  * @property string|null $workspaceDescription
  * @property string $workspaceId
@@ -20,26 +16,30 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'SNS'>|null $workspaceNotificationDestinations
  * @property list<string>|null $workspaceOrganizationalUnits
  * @property string|null $workspaceRoleArn
+ * @property Shapes\VpcConfiguration|null $vpcConfiguration
+ * @property bool|null $removeVpcConfiguration
+ * @property Shapes\NetworkAccessConfiguration|null $networkAccessControl
+ * @property bool|null $removeNetworkAccessConfiguration
  */
 class UpdateWorkspaceRequest extends Request
 {
     /**
      * @param array{
      *     accountAccessType?: 'CURRENT_ACCOUNT'|'ORGANIZATION'|null,
-     *     networkAccessControl?: Shapes\NetworkAccessConfiguration|null,
      *     organizationRoleName?: string|null,
      *     permissionType?: 'CUSTOMER_MANAGED'|'SERVICE_MANAGED'|null,
-     *     removeNetworkAccessConfiguration?: bool|null,
-     *     removeVpcConfiguration?: bool|null,
      *     stackSetName?: string|null,
-     *     vpcConfiguration?: Shapes\VpcConfiguration|null,
      *     workspaceDataSources?: list<'AMAZON_OPENSEARCH_SERVICE'|'CLOUDWATCH'|'PROMETHEUS'|'XRAY'|'TIMESTREAM'|'SITEWISE'|'ATHENA'|'REDSHIFT'|'TWINMAKER'>|null,
      *     workspaceDescription?: string|null,
      *     workspaceId: string,
      *     workspaceName?: string|null,
      *     workspaceNotificationDestinations?: list<'SNS'>|null,
      *     workspaceOrganizationalUnits?: list<string>|null,
-     *     workspaceRoleArn?: string|null
+     *     workspaceRoleArn?: string|null,
+     *     vpcConfiguration?: Shapes\VpcConfiguration|null,
+     *     removeVpcConfiguration?: bool|null,
+     *     networkAccessControl?: Shapes\NetworkAccessConfiguration|null,
+     *     removeNetworkAccessConfiguration?: bool|null
      * } $args
      */
     public function __construct(array $args)

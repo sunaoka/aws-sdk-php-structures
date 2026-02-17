@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\DeleteWorkspaceServiceAccountTok
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $serviceAccountId
  * @property string $tokenId
+ * @property string $serviceAccountId
  * @property string $workspaceId
  */
 class DeleteWorkspaceServiceAccountTokenResponse extends Response

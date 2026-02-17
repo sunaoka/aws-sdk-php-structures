@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $OptionGroupName
  * @property string|null $TdeCredentialArn
  * @property bool|null $Encrypted
+ * @property 'none'|'sse-kms'|'sse-rds'|null $StorageEncryptionType
  * @property string|null $StorageType
  * @property string|null $KmsKeyId
  * @property string|null $Timezone
@@ -64,6 +65,7 @@ class DBInstanceAutomatedBackup extends Shape
      *     OptionGroupName?: string|null,
      *     TdeCredentialArn?: string|null,
      *     Encrypted?: bool|null,
+     *     StorageEncryptionType?: 'none'|'sse-kms'|'sse-rds'|null,
      *     StorageType?: string|null,
      *     KmsKeyId?: string|null,
      *     Timezone?: string|null,
