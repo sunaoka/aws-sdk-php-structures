@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\CreateWorkspaceServiceAccountTok
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $serviceAccountId
  * @property Shapes\ServiceAccountTokenSummaryWithKey $serviceAccountToken
+ * @property string $serviceAccountId
  * @property string $workspaceId
  */
 class CreateWorkspaceServiceAccountTokenResponse extends Response

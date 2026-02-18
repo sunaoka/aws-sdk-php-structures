@@ -36,6 +36,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<VpcSecurityGroupMembership>|null $VpcSecurityGroups
  * @property string|null $HostedZoneId
  * @property bool|null $StorageEncrypted
+ * @property 'none'|'sse-kms'|'sse-rds'|null $StorageEncryptionType
  * @property string|null $KmsKeyId
  * @property string|null $DbClusterResourceId
  * @property string|null $DBClusterArn
@@ -126,6 +127,7 @@ class DBCluster extends Shape
      *     VpcSecurityGroups?: list<VpcSecurityGroupMembership>|null,
      *     HostedZoneId?: string|null,
      *     StorageEncrypted?: bool|null,
+     *     StorageEncryptionType?: 'none'|'sse-kms'|'sse-rds'|null,
      *     KmsKeyId?: string|null,
      *     DbClusterResourceId?: string|null,
      *     DBClusterArn?: string|null,

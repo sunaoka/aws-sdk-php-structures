@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ImageMetadata $logo
- * @property ImageMetadata $wallpaper
+ * @property ImageMetadata|null $wallpaper
  * @property ImageMetadata $favicon
  * @property array<'de-DE'|'en-US'|'es-ES'|'fr-FR'|'id-ID'|'it-IT'|'ja-JP'|'ko-KR'|'pt-BR'|'zh-CN'|'zh-TW', LocalizedBrandingStrings> $localizedStrings
  * @property 'Light'|'Dark' $colorTheme
@@ -17,7 +17,7 @@ class BrandingConfiguration extends Shape
     /**
      * @param array{
      *     logo: ImageMetadata,
-     *     wallpaper: ImageMetadata,
+     *     wallpaper?: ImageMetadata|null,
      *     favicon: ImageMetadata,
      *     localizedStrings: array<'de-DE'|'en-US'|'es-ES'|'fr-FR'|'id-ID'|'it-IT'|'ja-JP'|'ko-KR'|'pt-BR'|'zh-CN'|'zh-TW', LocalizedBrandingStrings>,
      *     colorTheme: 'Light'|'Dark',

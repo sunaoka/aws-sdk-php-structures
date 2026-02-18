@@ -42,6 +42,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $PubliclyAccessible
  * @property list<DBInstanceStatusInfo>|null $StatusInfos
  * @property string|null $StorageType
+ * @property 'none'|'sse-kms'|'sse-rds'|null $StorageEncryptionType
  * @property string|null $TdeCredentialArn
  * @property int|null $DbInstancePort
  * @property string|null $DBClusterIdentifier
@@ -137,6 +138,7 @@ class DBInstance extends Shape
      *     PubliclyAccessible?: bool|null,
      *     StatusInfos?: list<DBInstanceStatusInfo>|null,
      *     StorageType?: string|null,
+     *     StorageEncryptionType?: 'none'|'sse-kms'|'sse-rds'|null,
      *     TdeCredentialArn?: string|null,
      *     DbInstancePort?: int|null,
      *     DBClusterIdentifier?: string|null,

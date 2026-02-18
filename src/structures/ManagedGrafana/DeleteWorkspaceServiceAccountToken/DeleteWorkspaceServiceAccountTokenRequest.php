@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\DeleteWorkspaceServiceAccountTok
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $serviceAccountId
  * @property string $tokenId
+ * @property string $serviceAccountId
  * @property string $workspaceId
  */
 class DeleteWorkspaceServiceAccountTokenRequest extends Request
 {
     /**
      * @param array{
-     *     serviceAccountId: string,
      *     tokenId: string,
+     *     serviceAccountId: string,
      *     workspaceId: string
      * } $args
      */
