@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $outputLocation
  * @property string $databaseName
  * @property string $tableName
+ * @property string|null $catalogName
  */
 class AthenaTableReference extends Shape
 {
@@ -19,7 +20,8 @@ class AthenaTableReference extends Shape
      *     workGroup: string,
      *     outputLocation?: string|null,
      *     databaseName: string,
-     *     tableName: string
+     *     tableName: string,
+     *     catalogName?: string|null
      * } $args
      */
     public function __construct(array $args)
