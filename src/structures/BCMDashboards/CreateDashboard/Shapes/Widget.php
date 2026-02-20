@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\BCMDashboards\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $id
  * @property string $title
  * @property string|null $description
  * @property int<2, 6>|null $width
@@ -16,6 +17,7 @@ class Widget extends Shape
 {
     /**
      * @param array{
+     *     id?: string|null,
      *     title: string,
      *     description?: string|null,
      *     width?: int<2, 6>|null,
