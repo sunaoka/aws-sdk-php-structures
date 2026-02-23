@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\VolumeConfig|null $RootVolumeConfig
  * @property list<string>|null $SoftwaresToInstall
  * @property list<string>|null $SoftwaresToUninstall
+ * @property bool|null $DisableIMDSV1
  */
 class CreateImageBuilderRequest extends Request
 {
@@ -41,7 +42,8 @@ class CreateImageBuilderRequest extends Request
      *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
      *     RootVolumeConfig?: Shapes\VolumeConfig|null,
      *     SoftwaresToInstall?: list<string>|null,
-     *     SoftwaresToUninstall?: list<string>|null
+     *     SoftwaresToUninstall?: list<string>|null,
+     *     DisableIMDSV1?: bool|null
      * } $args
      */
     public function __construct(array $args)

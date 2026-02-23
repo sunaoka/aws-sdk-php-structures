@@ -26,6 +26,7 @@ class WickrClient extends \Aws\Wickr\WickrClient
     use GetNetwork\GetNetworkTrait;
     use GetNetworkSettings\GetNetworkSettingsTrait;
     use GetOidcInfo\GetOidcInfoTrait;
+    use GetOpentdfConfig\GetOpentdfConfigTrait;
     use GetSecurityGroup\GetSecurityGroupTrait;
     use GetUser\GetUserTrait;
     use GetUsersCount\GetUsersCountTrait;
@@ -39,6 +40,7 @@ class WickrClient extends \Aws\Wickr\WickrClient
     use ListUsers\ListUsersTrait;
     use RegisterOidcConfig\RegisterOidcConfigTrait;
     use RegisterOidcConfigTest\RegisterOidcConfigTestTrait;
+    use RegisterOpentdfConfig\RegisterOpentdfConfigTrait;
     use UpdateBot\UpdateBotTrait;
     use UpdateDataRetention\UpdateDataRetentionTrait;
     use UpdateGuestUser\UpdateGuestUserTrait;
