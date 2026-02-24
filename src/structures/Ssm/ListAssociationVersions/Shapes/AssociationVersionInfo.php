@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 6>|null $ScheduleOffset
  * @property int<1, 24>|null $Duration
  * @property list<array<string, list<string>>>|null $TargetMaps
+ * @property string|null $AssociationDispatchAssumeRole
  */
 class AssociationVersionInfo extends Shape
 {
@@ -49,7 +50,8 @@ class AssociationVersionInfo extends Shape
      *     TargetLocations?: list<TargetLocation>|null,
      *     ScheduleOffset?: int<1, 6>|null,
      *     Duration?: int<1, 24>|null,
-     *     TargetMaps?: list<array<string, list<string>>>|null
+     *     TargetMaps?: list<array<string, list<string>>>|null,
+     *     AssociationDispatchAssumeRole?: string|null
      * } $args
      */
     public function __construct(array $args = [])

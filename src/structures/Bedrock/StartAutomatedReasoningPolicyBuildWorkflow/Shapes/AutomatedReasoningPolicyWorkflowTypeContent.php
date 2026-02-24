@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<AutomatedReasoningPolicyBuildWorkflowDocument>|null $documents
  * @property AutomatedReasoningPolicyBuildWorkflowRepairContent|null $policyRepairAssets
+ * @property AutomatedReasoningPolicyGenerateFidelityReportContent|null $generateFidelityReportContent
  */
 class AutomatedReasoningPolicyWorkflowTypeContent extends Shape
 {
     /**
      * @param array{
      *     documents?: list<AutomatedReasoningPolicyBuildWorkflowDocument>|null,
-     *     policyRepairAssets?: AutomatedReasoningPolicyBuildWorkflowRepairContent|null
+     *     policyRepairAssets?: AutomatedReasoningPolicyBuildWorkflowRepairContent|null,
+     *     generateFidelityReportContent?: AutomatedReasoningPolicyGenerateFidelityReportContent|null
      * } $args
      */
     public function __construct(array $args = [])

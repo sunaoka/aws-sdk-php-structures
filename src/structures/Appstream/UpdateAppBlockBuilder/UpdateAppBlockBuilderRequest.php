@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $IamRoleArn
  * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
  * @property list<'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'VPC_CONFIGURATION_SECURITY_GROUP_IDS'>|null $AttributesToDelete
+ * @property bool|null $DisableIMDSV1
  */
 class UpdateAppBlockBuilderRequest extends Request
 {
@@ -29,7 +30,8 @@ class UpdateAppBlockBuilderRequest extends Request
      *     EnableDefaultInternetAccess?: bool|null,
      *     IamRoleArn?: string|null,
      *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
-     *     AttributesToDelete?: list<'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'VPC_CONFIGURATION_SECURITY_GROUP_IDS'>|null
+     *     AttributesToDelete?: list<'IAM_ROLE_ARN'|'ACCESS_ENDPOINTS'|'VPC_CONFIGURATION_SECURITY_GROUP_IDS'>|null,
+     *     DisableIMDSV1?: bool|null
      * } $args
      */
     public function __construct(array $args)

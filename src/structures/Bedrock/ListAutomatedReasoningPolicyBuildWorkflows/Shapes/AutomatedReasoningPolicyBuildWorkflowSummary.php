@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $policyArn
  * @property string $buildWorkflowId
  * @property 'SCHEDULED'|'CANCEL_REQUESTED'|'PREPROCESSING'|'BUILDING'|'TESTING'|'COMPLETED'|'FAILED'|'CANCELLED' $status
- * @property 'INGEST_CONTENT'|'REFINE_POLICY'|'IMPORT_POLICY' $buildWorkflowType
+ * @property 'INGEST_CONTENT'|'REFINE_POLICY'|'IMPORT_POLICY'|'GENERATE_FIDELITY_REPORT' $buildWorkflowType
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
@@ -19,7 +19,7 @@ class AutomatedReasoningPolicyBuildWorkflowSummary extends Shape
      *     policyArn: string,
      *     buildWorkflowId: string,
      *     status: 'SCHEDULED'|'CANCEL_REQUESTED'|'PREPROCESSING'|'BUILDING'|'TESTING'|'COMPLETED'|'FAILED'|'CANCELLED',
-     *     buildWorkflowType: 'INGEST_CONTENT'|'REFINE_POLICY'|'IMPORT_POLICY',
+     *     buildWorkflowType: 'INGEST_CONTENT'|'REFINE_POLICY'|'IMPORT_POLICY'|'GENERATE_FIDELITY_REPORT',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args

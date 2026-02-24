@@ -5,23 +5,25 @@ namespace Sunaoka\Aws\Structures\TrustedAdvisor\ListRecommendationResources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'excluded'|'included'|null $exclusionStatus
- * @property int<1, 200>|null $maxResults
  * @property string|null $nextToken
- * @property string $recommendationIdentifier
- * @property string|null $regionCode
+ * @property int<1, 5000>|null $maxResults
  * @property 'ok'|'warning'|'error'|null $status
+ * @property 'excluded'|'included'|null $exclusionStatus
+ * @property string|null $regionCode
+ * @property string $recommendationIdentifier
+ * @property 'en'|'ja'|'zh'|'fr'|'de'|'ko'|'zh_TW'|'it'|'es'|'pt_BR'|'id'|null $language
  */
 class ListRecommendationResourcesRequest extends Request
 {
     /**
      * @param array{
-     *     exclusionStatus?: 'excluded'|'included'|null,
-     *     maxResults?: int<1, 200>|null,
      *     nextToken?: string|null,
-     *     recommendationIdentifier: string,
+     *     maxResults?: int<1, 5000>|null,
+     *     status?: 'ok'|'warning'|'error'|null,
+     *     exclusionStatus?: 'excluded'|'included'|null,
      *     regionCode?: string|null,
-     *     status?: 'ok'|'warning'|'error'|null
+     *     recommendationIdentifier: string,
+     *     language?: 'en'|'ja'|'zh'|'fr'|'de'|'ko'|'zh_TW'|'it'|'es'|'pt_BR'|'id'|null
      * } $args
      */
     public function __construct(array $args)

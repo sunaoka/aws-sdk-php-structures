@@ -25,6 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AccessEndpoint>|null $AccessEndpoints
  * @property VolumeConfig|null $RootVolumeConfig
  * @property 'TRUE'|'FALSE'|null $LatestAppstreamAgentVersion
+ * @property bool|null $DisableIMDSV1
  */
 class ImageBuilder extends Shape
 {
@@ -49,7 +50,8 @@ class ImageBuilder extends Shape
      *     AppstreamAgentVersion?: string|null,
      *     AccessEndpoints?: list<AccessEndpoint>|null,
      *     RootVolumeConfig?: VolumeConfig|null,
-     *     LatestAppstreamAgentVersion?: 'TRUE'|'FALSE'|null
+     *     LatestAppstreamAgentVersion?: 'TRUE'|'FALSE'|null,
+     *     DisableIMDSV1?: bool|null
      * } $args
      */
     public function __construct(array $args)
