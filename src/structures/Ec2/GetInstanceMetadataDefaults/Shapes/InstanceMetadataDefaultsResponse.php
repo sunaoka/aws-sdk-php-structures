@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'disabled'|'enabled'|null $InstanceMetadataTags
  * @property 'account'|'declarative-policy'|null $ManagedBy
  * @property string|null $ManagedExceptionMessage
+ * @property 'disabled'|'enabled'|null $HttpTokensEnforced
  */
 class InstanceMetadataDefaultsResponse extends Shape
 {
@@ -21,7 +22,8 @@ class InstanceMetadataDefaultsResponse extends Shape
      *     HttpEndpoint?: 'disabled'|'enabled'|null,
      *     InstanceMetadataTags?: 'disabled'|'enabled'|null,
      *     ManagedBy?: 'account'|'declarative-policy'|null,
-     *     ManagedExceptionMessage?: string|null
+     *     ManagedExceptionMessage?: string|null,
+     *     HttpTokensEnforced?: 'disabled'|'enabled'|null
      * } $args
      */
     public function __construct(array $args = [])

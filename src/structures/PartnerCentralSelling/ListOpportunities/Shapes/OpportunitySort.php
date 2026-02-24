@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
- * @property 'LastModifiedDate'|'Identifier'|'CustomerCompanyName'|'CreatedDate' $SortBy
+ * @property 'LastModifiedDate'|'Identifier'|'CustomerCompanyName'|'CreatedDate'|'TargetCloseDate' $SortBy
  */
 class OpportunitySort extends Shape
 {
     /**
      * @param array{
      *     SortOrder: 'ASCENDING'|'DESCENDING',
-     *     SortBy: 'LastModifiedDate'|'Identifier'|'CustomerCompanyName'|'CreatedDate'
+     *     SortBy: 'LastModifiedDate'|'Identifier'|'CustomerCompanyName'|'CreatedDate'|'TargetCloseDate'
      * } $args
      */
     public function __construct(array $args)
