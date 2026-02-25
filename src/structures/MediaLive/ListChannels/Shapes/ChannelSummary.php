@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ChannelEngineVersionResponse>|null $UsedChannelEngineVersions
  * @property DescribeLinkedChannelSettings|null $LinkedChannelSettings
  * @property list<string>|null $ChannelSecurityGroups
+ * @property DescribeInferenceSettings|null $InferenceSettings
  */
 class ChannelSummary extends Shape
 {
@@ -51,7 +52,8 @@ class ChannelSummary extends Shape
      *     ChannelEngineVersion?: ChannelEngineVersionResponse|null,
      *     UsedChannelEngineVersions?: list<ChannelEngineVersionResponse>|null,
      *     LinkedChannelSettings?: DescribeLinkedChannelSettings|null,
-     *     ChannelSecurityGroups?: list<string>|null
+     *     ChannelSecurityGroups?: list<string>|null,
+     *     InferenceSettings?: DescribeInferenceSettings|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -4,6 +4,7 @@ namespace Sunaoka\Aws\Structures\CloudWatch;
 
 class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
 {
+    use DeleteAlarmMuteRule\DeleteAlarmMuteRuleTrait;
     use DeleteAlarms\DeleteAlarmsTrait;
     use DeleteAnomalyDetector\DeleteAnomalyDetectorTrait;
     use DeleteDashboards\DeleteDashboardsTrait;
@@ -19,17 +20,20 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use DisableInsightRules\DisableInsightRulesTrait;
     use EnableAlarmActions\EnableAlarmActionsTrait;
     use EnableInsightRules\EnableInsightRulesTrait;
+    use GetAlarmMuteRule\GetAlarmMuteRuleTrait;
     use GetDashboard\GetDashboardTrait;
     use GetInsightRuleReport\GetInsightRuleReportTrait;
     use GetMetricData\GetMetricDataTrait;
     use GetMetricStatistics\GetMetricStatisticsTrait;
     use GetMetricStream\GetMetricStreamTrait;
     use GetMetricWidgetImage\GetMetricWidgetImageTrait;
+    use ListAlarmMuteRules\ListAlarmMuteRulesTrait;
     use ListDashboards\ListDashboardsTrait;
     use ListManagedInsightRules\ListManagedInsightRulesTrait;
     use ListMetricStreams\ListMetricStreamsTrait;
     use ListMetrics\ListMetricsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
+    use PutAlarmMuteRule\PutAlarmMuteRuleTrait;
     use PutAnomalyDetector\PutAnomalyDetectorTrait;
     use PutCompositeAlarm\PutCompositeAlarmTrait;
     use PutDashboard\PutDashboardTrait;

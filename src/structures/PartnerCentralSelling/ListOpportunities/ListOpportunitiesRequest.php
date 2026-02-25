@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'Pending Submission'|'Submitted'|'In review'|'Approved'|'Rejected'|'Action Required'>|null $LifeCycleReviewStatus
  * @property list<string>|null $CustomerCompanyName
  * @property Shapes\CreatedDateFilter|null $CreatedDate
+ * @property Shapes\TargetCloseDateFilter|null $TargetCloseDate
  */
 class ListOpportunitiesRequest extends Request
 {
@@ -29,7 +30,8 @@ class ListOpportunitiesRequest extends Request
      *     LifeCycleStage?: list<'Prospect'|'Qualified'|'Technical Validation'|'Business Validation'|'Committed'|'Launched'|'Closed Lost'>|null,
      *     LifeCycleReviewStatus?: list<'Pending Submission'|'Submitted'|'In review'|'Approved'|'Rejected'|'Action Required'>|null,
      *     CustomerCompanyName?: list<string>|null,
-     *     CreatedDate?: Shapes\CreatedDateFilter|null
+     *     CreatedDate?: Shapes\CreatedDateFilter|null,
+     *     TargetCloseDate?: Shapes\TargetCloseDateFilter|null
      * } $args
      */
     public function __construct(array $args)
