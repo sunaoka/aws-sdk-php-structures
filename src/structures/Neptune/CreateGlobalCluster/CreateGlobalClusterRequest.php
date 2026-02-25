@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Engine
  * @property string|null $EngineVersion
  * @property bool|null $DeletionProtection
+ * @property string|null $DatabaseName
+ * @property list<Shapes\Tag>|null $Tags
  * @property bool|null $StorageEncrypted
  */
 class CreateGlobalClusterRequest extends Request
@@ -21,6 +23,8 @@ class CreateGlobalClusterRequest extends Request
      *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     DeletionProtection?: bool|null,
+     *     DatabaseName?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
      *     StorageEncrypted?: bool|null
      * } $args
      */
