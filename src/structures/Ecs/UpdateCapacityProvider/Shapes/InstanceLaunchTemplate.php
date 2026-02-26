@@ -9,9 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ManagedInstancesNetworkConfiguration $networkConfiguration
  * @property ManagedInstancesStorageConfiguration|null $storageConfiguration
  * @property 'BASIC'|'DETAILED'|null $monitoring
- * @property 'ON_DEMAND'|'SPOT'|null $capacityOptionType
+ * @property 'ON_DEMAND'|'SPOT'|'RESERVED'|null $capacityOptionType
  * @property InstanceRequirementsRequest|null $instanceRequirements
  * @property bool|null $fipsEnabled
+ * @property CapacityReservationRequest|null $capacityReservations
  */
 class InstanceLaunchTemplate extends Shape
 {
@@ -21,9 +22,10 @@ class InstanceLaunchTemplate extends Shape
      *     networkConfiguration: ManagedInstancesNetworkConfiguration,
      *     storageConfiguration?: ManagedInstancesStorageConfiguration|null,
      *     monitoring?: 'BASIC'|'DETAILED'|null,
-     *     capacityOptionType?: 'ON_DEMAND'|'SPOT'|null,
+     *     capacityOptionType?: 'ON_DEMAND'|'SPOT'|'RESERVED'|null,
      *     instanceRequirements?: InstanceRequirementsRequest|null,
-     *     fipsEnabled?: bool|null
+     *     fipsEnabled?: bool|null,
+     *     capacityReservations?: CapacityReservationRequest|null
      * } $args
      */
     public function __construct(array $args)

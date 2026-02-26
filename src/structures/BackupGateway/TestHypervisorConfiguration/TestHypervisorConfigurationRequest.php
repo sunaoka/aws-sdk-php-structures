@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GatewayArn
  * @property string $Host
- * @property string|null $Password
  * @property string|null $Username
+ * @property string|null $Password
  */
 class TestHypervisorConfigurationRequest extends Request
 {
@@ -16,8 +16,8 @@ class TestHypervisorConfigurationRequest extends Request
      * @param array{
      *     GatewayArn: string,
      *     Host: string,
-     *     Password?: string|null,
-     *     Username?: string|null
+     *     Username?: string|null,
+     *     Password?: string|null
      * } $args
      */
     public function __construct(array $args)

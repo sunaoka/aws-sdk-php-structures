@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $HostName
  * @property string|null $HypervisorId
- * @property \Aws\Api\DateTimeResult|null $LastBackupDate
  * @property string|null $Name
  * @property string|null $Path
  * @property string|null $ResourceArn
+ * @property \Aws\Api\DateTimeResult|null $LastBackupDate
  * @property list<VmwareTag>|null $VmwareTags
  */
 class VirtualMachineDetails extends Shape
@@ -19,10 +19,10 @@ class VirtualMachineDetails extends Shape
      * @param array{
      *     HostName?: string|null,
      *     HypervisorId?: string|null,
-     *     LastBackupDate?: \Aws\Api\DateTimeResult|null,
      *     Name?: string|null,
      *     Path?: string|null,
      *     ResourceArn?: string|null,
+     *     LastBackupDate?: \Aws\Api\DateTimeResult|null,
      *     VmwareTags?: list<VmwareTag>|null
      * } $args
      */

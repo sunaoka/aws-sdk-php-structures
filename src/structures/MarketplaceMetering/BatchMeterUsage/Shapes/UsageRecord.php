@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 2147483647>|null $Quantity
  * @property list<UsageAllocation>|null $UsageAllocations
  * @property string|null $CustomerAWSAccountId
+ * @property string|null $LicenseArn
  */
 class UsageRecord extends Shape
 {
@@ -21,7 +22,8 @@ class UsageRecord extends Shape
      *     Dimension: string,
      *     Quantity?: int<0, 2147483647>|null,
      *     UsageAllocations?: list<UsageAllocation>|null,
-     *     CustomerAWSAccountId?: string|null
+     *     CustomerAWSAccountId?: string|null,
+     *     LicenseArn?: string|null
      * } $args
      */
     public function __construct(array $args)
