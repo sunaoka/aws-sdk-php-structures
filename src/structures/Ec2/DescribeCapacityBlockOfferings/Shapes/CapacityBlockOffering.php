@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $UltraserverType
  * @property int|null $UltraserverCount
  * @property int|null $CapacityBlockDurationMinutes
+ * @property string|null $ZoneType
  */
 class CapacityBlockOffering extends Shape
 {
@@ -35,7 +36,8 @@ class CapacityBlockOffering extends Shape
      *     Tenancy?: 'default'|'dedicated'|null,
      *     UltraserverType?: string|null,
      *     UltraserverCount?: int|null,
-     *     CapacityBlockDurationMinutes?: int|null
+     *     CapacityBlockDurationMinutes?: int|null,
+     *     ZoneType?: string|null
      * } $args
      */
     public function __construct(array $args = [])
