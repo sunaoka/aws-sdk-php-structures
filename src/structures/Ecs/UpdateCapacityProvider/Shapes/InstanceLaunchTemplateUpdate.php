@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ManagedInstancesStorageConfiguration|null $storageConfiguration
  * @property 'BASIC'|'DETAILED'|null $monitoring
  * @property InstanceRequirementsRequest|null $instanceRequirements
+ * @property CapacityReservationRequest|null $capacityReservations
  */
 class InstanceLaunchTemplateUpdate extends Shape
 {
@@ -19,7 +20,8 @@ class InstanceLaunchTemplateUpdate extends Shape
      *     networkConfiguration?: ManagedInstancesNetworkConfiguration|null,
      *     storageConfiguration?: ManagedInstancesStorageConfiguration|null,
      *     monitoring?: 'BASIC'|'DETAILED'|null,
-     *     instanceRequirements?: InstanceRequirementsRequest|null
+     *     instanceRequirements?: InstanceRequirementsRequest|null,
+     *     capacityReservations?: CapacityReservationRequest|null
      * } $args
      */
     public function __construct(array $args = [])

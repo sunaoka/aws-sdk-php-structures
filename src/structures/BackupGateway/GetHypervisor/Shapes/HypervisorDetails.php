@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Host
  * @property string|null $HypervisorArn
  * @property string|null $KmsKeyArn
- * @property \Aws\Api\DateTimeResult|null $LastSuccessfulMetadataSyncTime
- * @property 'CREATED'|'RUNNING'|'FAILED'|'PARTIALLY_FAILED'|'SUCCEEDED'|null $LatestMetadataSyncStatus
- * @property string|null $LatestMetadataSyncStatusMessage
- * @property string|null $LogGroupArn
  * @property string|null $Name
+ * @property string|null $LogGroupArn
  * @property 'PENDING'|'ONLINE'|'OFFLINE'|'ERROR'|null $State
+ * @property \Aws\Api\DateTimeResult|null $LastSuccessfulMetadataSyncTime
+ * @property string|null $LatestMetadataSyncStatusMessage
+ * @property 'CREATED'|'RUNNING'|'FAILED'|'PARTIALLY_FAILED'|'SUCCEEDED'|null $LatestMetadataSyncStatus
  */
 class HypervisorDetails extends Shape
 {
@@ -22,12 +22,12 @@ class HypervisorDetails extends Shape
      *     Host?: string|null,
      *     HypervisorArn?: string|null,
      *     KmsKeyArn?: string|null,
-     *     LastSuccessfulMetadataSyncTime?: \Aws\Api\DateTimeResult|null,
-     *     LatestMetadataSyncStatus?: 'CREATED'|'RUNNING'|'FAILED'|'PARTIALLY_FAILED'|'SUCCEEDED'|null,
-     *     LatestMetadataSyncStatusMessage?: string|null,
-     *     LogGroupArn?: string|null,
      *     Name?: string|null,
-     *     State?: 'PENDING'|'ONLINE'|'OFFLINE'|'ERROR'|null
+     *     LogGroupArn?: string|null,
+     *     State?: 'PENDING'|'ONLINE'|'OFFLINE'|'ERROR'|null,
+     *     LastSuccessfulMetadataSyncTime?: \Aws\Api\DateTimeResult|null,
+     *     LatestMetadataSyncStatusMessage?: string|null,
+     *     LatestMetadataSyncStatus?: 'CREATED'|'RUNNING'|'FAILED'|'PARTIALLY_FAILED'|'SUCCEEDED'|null
      * } $args
      */
     public function __construct(array $args = [])
