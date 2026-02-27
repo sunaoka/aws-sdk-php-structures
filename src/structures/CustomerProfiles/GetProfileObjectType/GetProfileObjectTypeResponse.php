@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $SourceLastUpdatedTimestampFormat
  * @property int<0, max>|null $MaxAvailableProfileObjectCount
  * @property int<1, max>|null $MaxProfileObjectCount
+ * @property int<1, max>|null $SourcePriority
  * @property array<string, Shapes\ObjectTypeField>|null $Fields
  * @property array<string, list<Shapes\ObjectTypeKey>>|null $Keys
  * @property \Aws\Api\DateTimeResult|null $CreatedAt

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\VpcConfig|null $vpcConfig
  * @property int<24, 168>|null $timeoutDurationInHours
  * @property list<Shapes\Tag>|null $tags
+ * @property 'InvokeModel'|'Converse'|null $modelInvocationType
  */
 class CreateModelInvocationJobRequest extends Request
 {
@@ -27,7 +28,8 @@ class CreateModelInvocationJobRequest extends Request
      *     outputDataConfig: Shapes\ModelInvocationJobOutputDataConfig,
      *     vpcConfig?: Shapes\VpcConfig|null,
      *     timeoutDurationInHours?: int<24, 168>|null,
-     *     tags?: list<Shapes\Tag>|null
+     *     tags?: list<Shapes\Tag>|null,
+     *     modelInvocationType?: 'InvokeModel'|'Converse'|null
      * } $args
      */
     public function __construct(array $args)
