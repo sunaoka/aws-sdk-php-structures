@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property string $ClientName
  * @property bool|null $GenerateSecret
+ * @property string|null $ClientSecret
  * @property int<0, 315360000>|null $RefreshTokenValidity
  * @property int<1, 86400>|null $AccessTokenValidity
  * @property int<1, 86400>|null $IdTokenValidity
@@ -36,6 +37,7 @@ class CreateUserPoolClientRequest extends Request
      *     UserPoolId: string,
      *     ClientName: string,
      *     GenerateSecret?: bool|null,
+     *     ClientSecret?: string|null,
      *     RefreshTokenValidity?: int<0, 315360000>|null,
      *     AccessTokenValidity?: int<1, 86400>|null,
      *     IdTokenValidity?: int<1, 86400>|null,

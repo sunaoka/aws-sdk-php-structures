@@ -16,6 +16,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EksResourceScalingConfiguration|null $eksResourceScalingConfig
  * @property Route53HealthCheckConfiguration|null $route53HealthCheckConfig
  * @property DocumentDbConfiguration|null $documentDbConfig
+ * @property RdsPromoteReadReplicaConfiguration|null $rdsPromoteReadReplicaConfig
+ * @property RdsCreateCrossRegionReplicaConfiguration|null $rdsCreateCrossRegionReadReplicaConfig
  */
 class ExecutionBlockConfiguration extends Shape
 {
@@ -31,7 +33,9 @@ class ExecutionBlockConfiguration extends Shape
      *     ecsCapacityIncreaseConfig?: EcsCapacityIncreaseConfiguration|null,
      *     eksResourceScalingConfig?: EksResourceScalingConfiguration|null,
      *     route53HealthCheckConfig?: Route53HealthCheckConfiguration|null,
-     *     documentDbConfig?: DocumentDbConfiguration|null
+     *     documentDbConfig?: DocumentDbConfiguration|null,
+     *     rdsPromoteReadReplicaConfig?: RdsPromoteReadReplicaConfiguration|null,
+     *     rdsCreateCrossRegionReadReplicaConfig?: RdsCreateCrossRegionReplicaConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

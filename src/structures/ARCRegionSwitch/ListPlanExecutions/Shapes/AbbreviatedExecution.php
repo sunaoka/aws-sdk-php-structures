@@ -14,8 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endTime
  * @property 'graceful'|'ungraceful' $mode
  * @property 'inProgress'|'pausedByFailedStep'|'pausedByOperator'|'completed'|'completedWithExceptions'|'canceled'|'planExecutionTimedOut'|'pendingManualApproval'|'failed'|'pending'|'completedMonitoringApplicationHealth' $executionState
- * @property 'activate'|'deactivate' $executionAction
+ * @property 'activate'|'deactivate'|'postRecovery' $executionAction
  * @property string $executionRegion
+ * @property string|null $recoveryExecutionId
  * @property string|null $actualRecoveryTime
  */
 class AbbreviatedExecution extends Shape
@@ -31,8 +32,9 @@ class AbbreviatedExecution extends Shape
      *     endTime?: \Aws\Api\DateTimeResult|null,
      *     mode: 'graceful'|'ungraceful',
      *     executionState: 'inProgress'|'pausedByFailedStep'|'pausedByOperator'|'completed'|'completedWithExceptions'|'canceled'|'planExecutionTimedOut'|'pendingManualApproval'|'failed'|'pending'|'completedMonitoringApplicationHealth',
-     *     executionAction: 'activate'|'deactivate',
+     *     executionAction: 'activate'|'deactivate'|'postRecovery',
      *     executionRegion: string,
+     *     recoveryExecutionId?: string|null,
      *     actualRecoveryTime?: string|null
      * } $args
      */

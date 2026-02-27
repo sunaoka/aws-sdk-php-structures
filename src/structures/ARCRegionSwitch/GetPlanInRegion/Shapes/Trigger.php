@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $description
  * @property string $targetRegion
- * @property 'activate'|'deactivate' $action
+ * @property 'activate'|'deactivate'|'postRecovery' $action
  * @property list<TriggerCondition> $conditions
  * @property int $minDelayMinutesBetweenExecutions
  */
@@ -17,7 +17,7 @@ class Trigger extends Shape
      * @param array{
      *     description?: string|null,
      *     targetRegion: string,
-     *     action: 'activate'|'deactivate',
+     *     action: 'activate'|'deactivate'|'postRecovery',
      *     conditions: list<TriggerCondition>,
      *     minDelayMinutesBetweenExecutions: int
      * } $args

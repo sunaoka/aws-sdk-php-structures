@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $updateToLatestImageVersion
  * @property 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT'|null $type
  * @property string|null $imageId
+ * @property ComputeScalingPolicy|null $scalingPolicy
  */
 class ComputeResourceUpdate extends Shape
 {
@@ -43,7 +44,8 @@ class ComputeResourceUpdate extends Shape
      *     ec2Configuration?: list<Ec2Configuration>|null,
      *     updateToLatestImageVersion?: bool|null,
      *     type?: 'EC2'|'SPOT'|'FARGATE'|'FARGATE_SPOT'|null,
-     *     imageId?: string|null
+     *     imageId?: string|null,
+     *     scalingPolicy?: ComputeScalingPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

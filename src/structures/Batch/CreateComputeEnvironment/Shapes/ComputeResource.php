@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $spotIamFleetRole
  * @property LaunchTemplateSpecification|null $launchTemplate
  * @property list<Ec2Configuration>|null $ec2Configuration
+ * @property ComputeScalingPolicy|null $scalingPolicy
  */
 class ComputeResource extends Shape
 {
@@ -43,7 +44,8 @@ class ComputeResource extends Shape
      *     bidPercentage?: int|null,
      *     spotIamFleetRole?: string|null,
      *     launchTemplate?: LaunchTemplateSpecification|null,
-     *     ec2Configuration?: list<Ec2Configuration>|null
+     *     ec2Configuration?: list<Ec2Configuration>|null,
+     *     scalingPolicy?: ComputeScalingPolicy|null
      * } $args
      */
     public function __construct(array $args)

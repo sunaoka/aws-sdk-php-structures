@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ARCRegionSwitch\GetPlanEvaluationStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'activate'|'deactivate'|null $action
+ * @property 'activate'|'deactivate'|'postRecovery'|null $action
  * @property string|null $name
  */
 class MinimalWorkflow extends Shape
 {
     /**
      * @param array{
-     *     action?: 'activate'|'deactivate'|null,
+     *     action?: 'activate'|'deactivate'|'postRecovery'|null,
      *     name?: string|null
      * } $args
      */

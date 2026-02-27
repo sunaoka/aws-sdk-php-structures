@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string|null $description
  * @property ExecutionBlockConfiguration $executionBlockConfiguration
- * @property 'CustomActionLambda'|'ManualApproval'|'AuroraGlobalDatabase'|'EC2AutoScaling'|'ARCRoutingControl'|'ARCRegionSwitchPlan'|'Parallel'|'ECSServiceScaling'|'EKSResourceScaling'|'Route53HealthCheck'|'DocumentDb' $executionBlockType
+ * @property 'CustomActionLambda'|'ManualApproval'|'AuroraGlobalDatabase'|'EC2AutoScaling'|'ARCRoutingControl'|'ARCRegionSwitchPlan'|'Parallel'|'ECSServiceScaling'|'EKSResourceScaling'|'Route53HealthCheck'|'DocumentDb'|'RdsPromoteReadReplica'|'RdsCreateCrossRegionReplica' $executionBlockType
  */
 class Step extends Shape
 {
@@ -17,7 +17,7 @@ class Step extends Shape
      *     name: string,
      *     description?: string|null,
      *     executionBlockConfiguration: ExecutionBlockConfiguration,
-     *     executionBlockType: 'CustomActionLambda'|'ManualApproval'|'AuroraGlobalDatabase'|'EC2AutoScaling'|'ARCRoutingControl'|'ARCRegionSwitchPlan'|'Parallel'|'ECSServiceScaling'|'EKSResourceScaling'|'Route53HealthCheck'|'DocumentDb'
+     *     executionBlockType: 'CustomActionLambda'|'ManualApproval'|'AuroraGlobalDatabase'|'EC2AutoScaling'|'ARCRoutingControl'|'ARCRegionSwitchPlan'|'Parallel'|'ECSServiceScaling'|'EKSResourceScaling'|'Route53HealthCheck'|'DocumentDb'|'RdsPromoteReadReplica'|'RdsCreateCrossRegionReplica'
      * } $args
      */
     public function __construct(array $args)
