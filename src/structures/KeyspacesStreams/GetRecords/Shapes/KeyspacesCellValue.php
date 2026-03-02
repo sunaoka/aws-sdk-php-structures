@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dateT
  * @property string|null $decimalT
  * @property string|null $doubleT
+ * @property string|null $durationT
  * @property string|null $floatT
  * @property string|null $inetT
  * @property string|null $intT
@@ -43,6 +44,7 @@ class KeyspacesCellValue extends Shape
      *     dateT?: string|null,
      *     decimalT?: string|null,
      *     doubleT?: string|null,
+     *     durationT?: string|null,
      *     floatT?: string|null,
      *     inetT?: string|null,
      *     intT?: string|null,

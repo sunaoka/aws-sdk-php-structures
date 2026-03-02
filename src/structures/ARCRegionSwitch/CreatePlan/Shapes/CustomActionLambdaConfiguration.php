@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max>|null $timeoutMinutes
  * @property list<Lambdas> $lambdas
  * @property float $retryIntervalMinutes
- * @property 'activatingRegion'|'deactivatingRegion' $regionToRun
+ * @property 'activatingRegion'|'deactivatingRegion'|'activeRegion'|'inactiveRegion' $regionToRun
  * @property LambdaUngraceful|null $ungraceful
  */
 class CustomActionLambdaConfiguration extends Shape
@@ -18,7 +18,7 @@ class CustomActionLambdaConfiguration extends Shape
      *     timeoutMinutes?: int<1, max>|null,
      *     lambdas: list<Lambdas>,
      *     retryIntervalMinutes: float,
-     *     regionToRun: 'activatingRegion'|'deactivatingRegion',
+     *     regionToRun: 'activatingRegion'|'deactivatingRegion'|'activeRegion'|'inactiveRegion',
      *     ungraceful?: LambdaUngraceful|null
      * } $args
      */

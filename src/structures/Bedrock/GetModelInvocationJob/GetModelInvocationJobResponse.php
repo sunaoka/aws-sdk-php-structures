@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\VpcConfig|null $vpcConfig
  * @property int<24, 168>|null $timeoutDurationInHours
  * @property \Aws\Api\DateTimeResult|null $jobExpirationTime
+ * @property 'InvokeModel'|'Converse'|null $modelInvocationType
  */
 class GetModelInvocationJobResponse extends Response
 {

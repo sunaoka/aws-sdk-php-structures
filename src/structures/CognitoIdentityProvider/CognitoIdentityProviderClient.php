@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider;
 class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\CognitoIdentityProviderClient
 {
     use AddCustomAttributes\AddCustomAttributesTrait;
+    use AddUserPoolClientSecret\AddUserPoolClientSecretTrait;
     use AdminAddUserToGroup\AdminAddUserToGroupTrait;
     use AdminConfirmSignUp\AdminConfirmSignUpTrait;
     use AdminCreateUser\AdminCreateUserTrait;
@@ -55,6 +56,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use DeleteUserAttributes\DeleteUserAttributesTrait;
     use DeleteUserPool\DeleteUserPoolTrait;
     use DeleteUserPoolClient\DeleteUserPoolClientTrait;
+    use DeleteUserPoolClientSecret\DeleteUserPoolClientSecretTrait;
     use DeleteUserPoolDomain\DeleteUserPoolDomainTrait;
     use DeleteWebAuthnCredential\DeleteWebAuthnCredentialTrait;
     use DescribeIdentityProvider\DescribeIdentityProviderTrait;
@@ -90,6 +92,7 @@ class CognitoIdentityProviderClient extends \Aws\CognitoIdentityProvider\Cognito
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTerms\ListTermsTrait;
     use ListUserImportJobs\ListUserImportJobsTrait;
+    use ListUserPoolClientSecrets\ListUserPoolClientSecretsTrait;
     use ListUserPoolClients\ListUserPoolClientsTrait;
     use ListUserPools\ListUserPoolsTrait;
     use ListUsers\ListUsersTrait;
