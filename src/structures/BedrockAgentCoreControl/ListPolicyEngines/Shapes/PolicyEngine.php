@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $policyEngineArn
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED' $status
  * @property list<string> $statusReasons
+ * @property string|null $encryptionKeyArn
  */
 class PolicyEngine extends Shape
 {
@@ -25,7 +26,8 @@ class PolicyEngine extends Shape
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     policyEngineArn: string,
      *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED',
-     *     statusReasons: list<string>
+     *     statusReasons: list<string>,
+     *     encryptionKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

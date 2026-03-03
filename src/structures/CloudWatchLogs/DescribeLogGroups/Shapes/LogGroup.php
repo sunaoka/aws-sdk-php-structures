@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null $logGroupClass
  * @property string|null $logGroupArn
  * @property bool|null $deletionProtectionEnabled
+ * @property bool|null $bearerTokenAuthenticationEnabled
  */
 class LogGroup extends Shape
 {
@@ -33,7 +34,8 @@ class LogGroup extends Shape
      *     inheritedProperties?: list<'ACCOUNT_DATA_PROTECTION'>|null,
      *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null,
      *     logGroupArn?: string|null,
-     *     deletionProtectionEnabled?: bool|null
+     *     deletionProtectionEnabled?: bool|null,
+     *     bearerTokenAuthenticationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

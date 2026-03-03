@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $environmentVariables
  * @property Shapes\AuthorizerConfiguration|null $authorizerConfiguration
  * @property Shapes\RequestHeaderConfiguration|null $requestHeaderConfiguration
+ * @property Shapes\RuntimeMetadataConfiguration|null $metadataConfiguration
  */
 class GetAgentRuntimeResponse extends Response
 {

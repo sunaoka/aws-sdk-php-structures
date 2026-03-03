@@ -6,11 +6,17 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ENTIRE_ORGANIZATION'|'MANAGEMENT_ACCOUNT_ONLY' $coverage
+ * @property string $tamLocation
+ * @property string|null $chargeAccountId
  */
-class ResoldBusiness extends Shape
+class ResoldUnifiedOperations extends Shape
 {
     /**
-     * @param array{coverage: 'ENTIRE_ORGANIZATION'|'MANAGEMENT_ACCOUNT_ONLY'} $args
+     * @param array{
+     *     coverage: 'ENTIRE_ORGANIZATION'|'MANAGEMENT_ACCOUNT_ONLY',
+     *     tamLocation: string,
+     *     chargeAccountId?: string|null
+     * } $args
      */
     public function __construct(array $args)
     {

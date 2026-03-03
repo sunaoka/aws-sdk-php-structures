@@ -82,6 +82,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTagsLogGroup\ListTagsLogGroupTrait;
     use PutAccountPolicy\PutAccountPolicyTrait;
+    use PutBearerTokenAuthentication\PutBearerTokenAuthenticationTrait;
     use PutDataProtectionPolicy\PutDataProtectionPolicyTrait;
     use PutDeliveryDestination\PutDeliveryDestinationTrait;
     use PutDeliveryDestinationPolicy\PutDeliveryDestinationPolicyTrait;
