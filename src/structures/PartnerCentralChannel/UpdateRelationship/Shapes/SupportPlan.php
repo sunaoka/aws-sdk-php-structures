@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PartnerCentralChannel\UpdateRelationship\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResoldBusiness|null $resoldBusiness
  * @property ResoldEnterprise|null $resoldEnterprise
  * @property PartnerLedSupport|null $partnerLedSupport
+ * @property ResoldUnifiedOperations|null $resoldUnifiedOperations
  */
 class SupportPlan extends Shape
 {
     /**
      * @param array{
-     *     resoldBusiness?: ResoldBusiness|null,
      *     resoldEnterprise?: ResoldEnterprise|null,
-     *     partnerLedSupport?: PartnerLedSupport|null
+     *     partnerLedSupport?: PartnerLedSupport|null,
+     *     resoldUnifiedOperations?: ResoldUnifiedOperations|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,6 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $description
  * @property string|null $clientToken
+ * @property string|null $encryptionKeyArn
+ * @property array<string, string>|null $tags
  */
 class CreatePolicyEngineRequest extends Request
 {
@@ -15,7 +17,9 @@ class CreatePolicyEngineRequest extends Request
      * @param array{
      *     name: string,
      *     description?: string|null,
-     *     clientToken?: string|null
+     *     clientToken?: string|null,
+     *     encryptionKeyArn?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RequestHeaderConfiguration|null $requestHeaderConfiguration
  * @property Shapes\ProtocolConfiguration|null $protocolConfiguration
  * @property Shapes\LifecycleConfiguration|null $lifecycleConfiguration
+ * @property Shapes\RuntimeMetadataConfiguration|null $metadataConfiguration
  * @property array<string, string>|null $environmentVariables
  * @property string|null $clientToken
  */
@@ -30,6 +31,7 @@ class UpdateAgentRuntimeRequest extends Request
      *     requestHeaderConfiguration?: Shapes\RequestHeaderConfiguration|null,
      *     protocolConfiguration?: Shapes\ProtocolConfiguration|null,
      *     lifecycleConfiguration?: Shapes\LifecycleConfiguration|null,
+     *     metadataConfiguration?: Shapes\RuntimeMetadataConfiguration|null,
      *     environmentVariables?: array<string, string>|null,
      *     clientToken?: string|null
      * } $args

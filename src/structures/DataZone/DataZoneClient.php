@@ -144,6 +144,7 @@ class DataZoneClient extends \Aws\DataZone\DataZoneClient
     use PostTimeSeriesDataPoints\PostTimeSeriesDataPointsTrait;
     use PutDataExportConfiguration\PutDataExportConfigurationTrait;
     use PutEnvironmentBlueprintConfiguration\PutEnvironmentBlueprintConfigurationTrait;
+    use QueryGraph\QueryGraphTrait;
     use RejectPredictions\RejectPredictionsTrait;
     use RejectSubscriptionRequest\RejectSubscriptionRequestTrait;
     use RemoveEntityOwner\RemoveEntityOwnerTrait;

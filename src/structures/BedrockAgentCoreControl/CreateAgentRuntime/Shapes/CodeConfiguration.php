@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Code $code
- * @property 'PYTHON_3_10'|'PYTHON_3_11'|'PYTHON_3_12'|'PYTHON_3_13' $runtime
+ * @property 'PYTHON_3_10'|'PYTHON_3_11'|'PYTHON_3_12'|'PYTHON_3_13'|'PYTHON_3_14' $runtime
  * @property list<string> $entryPoint
  */
 class CodeConfiguration extends Shape
@@ -14,7 +14,7 @@ class CodeConfiguration extends Shape
     /**
      * @param array{
      *     code: Code,
-     *     runtime: 'PYTHON_3_10'|'PYTHON_3_11'|'PYTHON_3_12'|'PYTHON_3_13',
+     *     runtime: 'PYTHON_3_10'|'PYTHON_3_11'|'PYTHON_3_12'|'PYTHON_3_13'|'PYTHON_3_14',
      *     entryPoint: list<string>
      * } $args
      */
