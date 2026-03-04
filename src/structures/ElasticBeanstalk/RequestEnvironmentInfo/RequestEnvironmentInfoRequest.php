@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $EnvironmentId
  * @property string|null $EnvironmentName
- * @property 'tail'|'bundle' $InfoType
+ * @property 'tail'|'bundle'|'analyze' $InfoType
  */
 class RequestEnvironmentInfoRequest extends Request
 {
@@ -15,7 +15,7 @@ class RequestEnvironmentInfoRequest extends Request
      * @param array{
      *     EnvironmentId?: string|null,
      *     EnvironmentName?: string|null,
-     *     InfoType: 'tail'|'bundle'
+     *     InfoType: 'tail'|'bundle'|'analyze'
      * } $args
      */
     public function __construct(array $args)

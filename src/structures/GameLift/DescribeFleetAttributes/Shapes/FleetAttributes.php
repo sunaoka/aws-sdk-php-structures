@@ -31,6 +31,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'EC2'|'ANYWHERE'|null $ComputeType
  * @property AnywhereConfiguration|null $AnywhereConfiguration
  * @property 'SHARED_CREDENTIAL_FILE'|null $InstanceRoleCredentialsProvider
+ * @property 'DISABLED'|'ENABLED'|'REQUIRED'|null $PlayerGatewayMode
+ * @property PlayerGatewayConfiguration|null $PlayerGatewayConfiguration
  */
 class FleetAttributes extends Shape
 {
@@ -61,7 +63,9 @@ class FleetAttributes extends Shape
      *     CertificateConfiguration?: CertificateConfiguration|null,
      *     ComputeType?: 'EC2'|'ANYWHERE'|null,
      *     AnywhereConfiguration?: AnywhereConfiguration|null,
-     *     InstanceRoleCredentialsProvider?: 'SHARED_CREDENTIAL_FILE'|null
+     *     InstanceRoleCredentialsProvider?: 'SHARED_CREDENTIAL_FILE'|null,
+     *     PlayerGatewayMode?: 'DISABLED'|'ENABLED'|'REQUIRED'|null,
+     *     PlayerGatewayConfiguration?: PlayerGatewayConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

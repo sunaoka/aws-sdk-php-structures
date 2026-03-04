@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\GameSessionCreationLimitPolicy|null $GameSessionCreationLimitPolicy
  * @property Shapes\LogConfiguration|null $LogConfiguration
  * @property list<Shapes\Tag>|null $Tags
+ * @property 'DISABLED'|'ENABLED'|'REQUIRED'|null $PlayerGatewayMode
  */
 class CreateContainerFleetRequest extends Request
 {
@@ -39,7 +40,8 @@ class CreateContainerFleetRequest extends Request
      *     NewGameSessionProtectionPolicy?: 'NoProtection'|'FullProtection'|null,
      *     GameSessionCreationLimitPolicy?: Shapes\GameSessionCreationLimitPolicy|null,
      *     LogConfiguration?: Shapes\LogConfiguration|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     PlayerGatewayMode?: 'DISABLED'|'ENABLED'|'REQUIRED'|null
      * } $args
      */
     public function __construct(array $args)

@@ -28,6 +28,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'EC2'|'ANYWHERE'|null $ComputeType
  * @property Shapes\AnywhereConfiguration|null $AnywhereConfiguration
  * @property 'SHARED_CREDENTIAL_FILE'|null $InstanceRoleCredentialsProvider
+ * @property 'DISABLED'|'ENABLED'|'REQUIRED'|null $PlayerGatewayMode
+ * @property Shapes\PlayerGatewayConfiguration|null $PlayerGatewayConfiguration
  */
 class CreateFleetRequest extends Request
 {
@@ -55,7 +57,9 @@ class CreateFleetRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     ComputeType?: 'EC2'|'ANYWHERE'|null,
      *     AnywhereConfiguration?: Shapes\AnywhereConfiguration|null,
-     *     InstanceRoleCredentialsProvider?: 'SHARED_CREDENTIAL_FILE'|null
+     *     InstanceRoleCredentialsProvider?: 'SHARED_CREDENTIAL_FILE'|null,
+     *     PlayerGatewayMode?: 'DISABLED'|'ENABLED'|'REQUIRED'|null,
+     *     PlayerGatewayConfiguration?: Shapes\PlayerGatewayConfiguration|null
      * } $args
      */
     public function __construct(array $args)
