@@ -24,6 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GameSessionData
  * @property string|null $MatchmakerData
  * @property string|null $Location
+ * @property 'DISABLED'|'ENABLED'|null $PlayerGatewayStatus
  */
 class GameSession extends Shape
 {
@@ -47,7 +48,8 @@ class GameSession extends Shape
      *     CreatorId?: string|null,
      *     GameSessionData?: string|null,
      *     MatchmakerData?: string|null,
-     *     Location?: string|null
+     *     Location?: string|null,
+     *     PlayerGatewayStatus?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

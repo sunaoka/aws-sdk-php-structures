@@ -17,6 +17,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use AssociateLambdaFunction\AssociateLambdaFunctionTrait;
     use AssociateLexBot\AssociateLexBotTrait;
     use AssociatePhoneNumberContactFlow\AssociatePhoneNumberContactFlowTrait;
+    use AssociateQueueEmailAddresses\AssociateQueueEmailAddressesTrait;
     use AssociateQueueQuickConnects\AssociateQueueQuickConnectsTrait;
     use AssociateRoutingProfileQueues\AssociateRoutingProfileQueuesTrait;
     use AssociateSecurityKey\AssociateSecurityKeyTrait;
@@ -152,6 +153,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use DisassociateLambdaFunction\DisassociateLambdaFunctionTrait;
     use DisassociateLexBot\DisassociateLexBotTrait;
     use DisassociatePhoneNumberContactFlow\DisassociatePhoneNumberContactFlowTrait;
+    use DisassociateQueueEmailAddresses\DisassociateQueueEmailAddressesTrait;
     use DisassociateQueueQuickConnects\DisassociateQueueQuickConnectsTrait;
     use DisassociateRoutingProfileQueues\DisassociateRoutingProfileQueuesTrait;
     use DisassociateSecurityKey\DisassociateSecurityKeyTrait;
@@ -214,6 +216,7 @@ class ConnectClient extends \Aws\Connect\ConnectClient
     use ListPhoneNumbersV2\ListPhoneNumbersV2Trait;
     use ListPredefinedAttributes\ListPredefinedAttributesTrait;
     use ListPrompts\ListPromptsTrait;
+    use ListQueueEmailAddresses\ListQueueEmailAddressesTrait;
     use ListQueueQuickConnects\ListQueueQuickConnectsTrait;
     use ListQueues\ListQueuesTrait;
     use ListQuickConnects\ListQuickConnectsTrait;

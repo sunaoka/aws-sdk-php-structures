@@ -35,6 +35,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $PublishWithoutApproval
  * @property 'DENY'|null $UseBedrockModels
  * @property 'DENY'|null $PerformFlowUiTask
+ * @property 'DENY'|null $ApproveFlowShareRequests
  * @property 'DENY'|null $UseAgentWebSearch
  * @property 'DENY'|null $KnowledgeBase
  * @property 'DENY'|null $Action
@@ -210,11 +211,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $CreateAndUpdateNewRelicAction
  * @property 'DENY'|null $ShareNewRelicAction
  * @property 'DENY'|null $UseNewRelicAction
+ * @property 'DENY'|null $Topic
+ * @property 'DENY'|null $EditVisualWithQ
+ * @property 'DENY'|null $BuildCalculatedFieldWithQ
+ * @property 'DENY'|null $CreateDashboardExecutiveSummaryWithQ
  * @property 'DENY'|null $Space
  * @property 'DENY'|null $ChatAgent
  * @property 'DENY'|null $CreateChatAgents
  * @property 'DENY'|null $Research
  * @property 'DENY'|null $SelfUpgradeUserRole
+ * @property 'DENY'|null $Extension
  */
 class Capabilities extends Shape
 {
@@ -250,6 +256,7 @@ class Capabilities extends Shape
      *     PublishWithoutApproval?: 'DENY'|null,
      *     UseBedrockModels?: 'DENY'|null,
      *     PerformFlowUiTask?: 'DENY'|null,
+     *     ApproveFlowShareRequests?: 'DENY'|null,
      *     UseAgentWebSearch?: 'DENY'|null,
      *     KnowledgeBase?: 'DENY'|null,
      *     Action?: 'DENY'|null,
@@ -425,11 +432,16 @@ class Capabilities extends Shape
      *     CreateAndUpdateNewRelicAction?: 'DENY'|null,
      *     ShareNewRelicAction?: 'DENY'|null,
      *     UseNewRelicAction?: 'DENY'|null,
+     *     Topic?: 'DENY'|null,
+     *     EditVisualWithQ?: 'DENY'|null,
+     *     BuildCalculatedFieldWithQ?: 'DENY'|null,
+     *     CreateDashboardExecutiveSummaryWithQ?: 'DENY'|null,
      *     Space?: 'DENY'|null,
      *     ChatAgent?: 'DENY'|null,
      *     CreateChatAgents?: 'DENY'|null,
      *     Research?: 'DENY'|null,
-     *     SelfUpgradeUserRole?: 'DENY'|null
+     *     SelfUpgradeUserRole?: 'DENY'|null,
+     *     Extension?: 'DENY'|null
      * } $args
      */
     public function __construct(array $args = [])
