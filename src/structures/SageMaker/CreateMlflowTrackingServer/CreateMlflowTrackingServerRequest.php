@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutomaticModelRegistration
  * @property string|null $WeeklyMaintenanceWindowStart
  * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $S3BucketOwnerAccountId
+ * @property bool|null $S3BucketOwnerVerification
  */
 class CreateMlflowTrackingServerRequest extends Request
 {
@@ -25,7 +27,9 @@ class CreateMlflowTrackingServerRequest extends Request
      *     RoleArn: string,
      *     AutomaticModelRegistration?: bool|null,
      *     WeeklyMaintenanceWindowStart?: string|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     Tags?: list<Shapes\Tag>|null,
+     *     S3BucketOwnerAccountId?: string|null,
+     *     S3BucketOwnerVerification?: bool|null
      * } $args
      */
     public function __construct(array $args)

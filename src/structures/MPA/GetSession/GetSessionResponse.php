@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Description
  * @property array<string, string>|null $Metadata
  * @property 'PENDING'|'CANCELLED'|'APPROVED'|'FAILED'|'CREATING'|null $Status
- * @property 'REJECTED'|'EXPIRED'|'CONFIGURATION_CHANGED'|null $StatusCode
+ * @property 'REJECTED'|'EXPIRED'|'CONFIGURATION_CHANGED'|'ALL_APPROVERS_IN_SESSION'|null $StatusCode
  * @property string|null $StatusMessage
  * @property 'EXECUTED'|'FAILED'|'PENDING'|null $ExecutionStatus
  * @property string|null $ActionName

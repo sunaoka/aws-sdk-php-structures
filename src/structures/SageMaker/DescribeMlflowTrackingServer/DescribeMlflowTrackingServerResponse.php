@@ -21,6 +21,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\UserContext|null $CreatedBy
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property Shapes\UserContext|null $LastModifiedBy
+ * @property string|null $S3BucketOwnerAccountId
+ * @property bool|null $S3BucketOwnerVerification
  */
 class DescribeMlflowTrackingServerResponse extends Response
 {

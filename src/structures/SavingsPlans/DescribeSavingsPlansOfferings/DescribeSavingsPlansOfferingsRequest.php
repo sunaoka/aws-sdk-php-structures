@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string>|null $offeringIds
  * @property list<'All Upfront'|'Partial Upfront'|'No Upfront'>|null $paymentOptions
- * @property 'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|null $productType
+ * @property 'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|'OpenSearch'|null $productType
  * @property list<'Compute'|'EC2Instance'|'SageMaker'|'Database'>|null $planTypes
  * @property list<int<0, max>>|null $durations
  * @property list<'CNY'|'USD'|'EUR'>|null $currencies
@@ -25,7 +25,7 @@ class DescribeSavingsPlansOfferingsRequest extends Request
      * @param array{
      *     offeringIds?: list<string>|null,
      *     paymentOptions?: list<'All Upfront'|'Partial Upfront'|'No Upfront'>|null,
-     *     productType?: 'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|null,
+     *     productType?: 'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|'OpenSearch'|null,
      *     planTypes?: list<'Compute'|'EC2Instance'|'SageMaker'|'Database'>|null,
      *     durations?: list<int<0, max>>|null,
      *     currencies?: list<'CNY'|'USD'|'EUR'>|null,

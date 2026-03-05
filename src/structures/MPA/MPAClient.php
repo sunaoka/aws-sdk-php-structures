@@ -22,6 +22,7 @@ class MPAClient extends \Aws\MPA\MPAClient
     use ListSessions\ListSessionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartActiveApprovalTeamDeletion\StartActiveApprovalTeamDeletionTrait;
+    use StartApprovalTeamBaseline\StartApprovalTeamBaselineTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateApprovalTeam\UpdateApprovalTeamTrait;

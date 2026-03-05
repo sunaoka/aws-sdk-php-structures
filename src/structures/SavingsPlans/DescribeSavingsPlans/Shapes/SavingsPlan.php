@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ec2InstanceFamily
  * @property 'Compute'|'EC2Instance'|'SageMaker'|'Database'|null $savingsPlanType
  * @property 'All Upfront'|'Partial Upfront'|'No Upfront'|null $paymentOption
- * @property list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'>|null $productTypes
+ * @property list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|'OpenSearch'>|null $productTypes
  * @property 'CNY'|'USD'|'EUR'|null $currency
  * @property string|null $commitment
  * @property string|null $upfrontPaymentAmount
@@ -40,7 +40,7 @@ class SavingsPlan extends Shape
      *     ec2InstanceFamily?: string|null,
      *     savingsPlanType?: 'Compute'|'EC2Instance'|'SageMaker'|'Database'|null,
      *     paymentOption?: 'All Upfront'|'Partial Upfront'|'No Upfront'|null,
-     *     productTypes?: list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'>|null,
+     *     productTypes?: list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|'OpenSearch'>|null,
      *     currency?: 'CNY'|'USD'|'EUR'|null,
      *     commitment?: string|null,
      *     upfrontPaymentAmount?: string|null,

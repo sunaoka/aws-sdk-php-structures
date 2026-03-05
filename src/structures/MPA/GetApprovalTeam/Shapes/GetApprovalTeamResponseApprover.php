@@ -10,6 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PrimaryIdentityId
  * @property string|null $PrimaryIdentitySourceArn
  * @property 'PENDING'|'ACCEPTED'|'REJECTED'|'INVALID'|null $PrimaryIdentityStatus
+ * @property 'VOTED'|'BASELINED'|'RESPONDED_TO_INVITATION'|null $LastActivity
+ * @property \Aws\Api\DateTimeResult|null $LastActivityTime
+ * @property string|null $PendingBaselineSessionArn
  * @property list<MfaMethod>|null $MfaMethods
  */
 class GetApprovalTeamResponseApprover extends Shape
@@ -21,6 +24,9 @@ class GetApprovalTeamResponseApprover extends Shape
      *     PrimaryIdentityId?: string|null,
      *     PrimaryIdentitySourceArn?: string|null,
      *     PrimaryIdentityStatus?: 'PENDING'|'ACCEPTED'|'REJECTED'|'INVALID'|null,
+     *     LastActivity?: 'VOTED'|'BASELINED'|'RESPONDED_TO_INVITATION'|null,
+     *     LastActivityTime?: \Aws\Api\DateTimeResult|null,
+     *     PendingBaselineSessionArn?: string|null,
      *     MfaMethods?: list<MfaMethod>|null
      * } $args
      */
