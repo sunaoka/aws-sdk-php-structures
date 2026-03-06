@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $offeringId
- * @property list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'>|null $productTypes
+ * @property list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|'OpenSearch'>|null $productTypes
  * @property 'Compute'|'EC2Instance'|'SageMaker'|'Database'|null $planType
  * @property string|null $description
  * @property 'All Upfront'|'Partial Upfront'|'No Upfront'|null $paymentOption
@@ -22,7 +22,7 @@ class SavingsPlanOffering extends Shape
     /**
      * @param array{
      *     offeringId?: string|null,
-     *     productTypes?: list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'>|null,
+     *     productTypes?: list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|'OpenSearch'>|null,
      *     planType?: 'Compute'|'EC2Instance'|'SageMaker'|'Database'|null,
      *     description?: string|null,
      *     paymentOption?: 'All Upfront'|'Partial Upfront'|'No Upfront'|null,

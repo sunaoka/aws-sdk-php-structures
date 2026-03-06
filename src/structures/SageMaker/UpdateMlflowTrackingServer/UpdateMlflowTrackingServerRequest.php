@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Small'|'Medium'|'Large'|null $TrackingServerSize
  * @property bool|null $AutomaticModelRegistration
  * @property string|null $WeeklyMaintenanceWindowStart
+ * @property string|null $S3BucketOwnerAccountId
+ * @property bool|null $S3BucketOwnerVerification
  */
 class UpdateMlflowTrackingServerRequest extends Request
 {
@@ -19,7 +21,9 @@ class UpdateMlflowTrackingServerRequest extends Request
      *     ArtifactStoreUri?: string|null,
      *     TrackingServerSize?: 'Small'|'Medium'|'Large'|null,
      *     AutomaticModelRegistration?: bool|null,
-     *     WeeklyMaintenanceWindowStart?: string|null
+     *     WeeklyMaintenanceWindowStart?: string|null,
+     *     S3BucketOwnerAccountId?: string|null,
+     *     S3BucketOwnerVerification?: bool|null
      * } $args
      */
     public function __construct(array $args)

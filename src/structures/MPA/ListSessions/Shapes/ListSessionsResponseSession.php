@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RequesterRegion
  * @property string|null $RequesterAccountId
  * @property 'PENDING'|'CANCELLED'|'APPROVED'|'FAILED'|'CREATING'|null $Status
- * @property 'REJECTED'|'EXPIRED'|'CONFIGURATION_CHANGED'|null $StatusCode
+ * @property 'REJECTED'|'EXPIRED'|'CONFIGURATION_CHANGED'|'ALL_APPROVERS_IN_SESSION'|null $StatusCode
  * @property string|null $StatusMessage
  * @property 'AUTO_COMPLETION_UPON_APPROVAL'|null $ActionCompletionStrategy
  * @property list<'APPROVER_VERIFICATION_REQUIRED'>|null $AdditionalSecurityRequirements
@@ -42,7 +42,7 @@ class ListSessionsResponseSession extends Shape
      *     RequesterRegion?: string|null,
      *     RequesterAccountId?: string|null,
      *     Status?: 'PENDING'|'CANCELLED'|'APPROVED'|'FAILED'|'CREATING'|null,
-     *     StatusCode?: 'REJECTED'|'EXPIRED'|'CONFIGURATION_CHANGED'|null,
+     *     StatusCode?: 'REJECTED'|'EXPIRED'|'CONFIGURATION_CHANGED'|'ALL_APPROVERS_IN_SESSION'|null,
      *     StatusMessage?: string|null,
      *     ActionCompletionStrategy?: 'AUTO_COMPLETION_UPON_APPROVAL'|null,
      *     AdditionalSecurityRequirements?: list<'APPROVER_VERIFICATION_REQUIRED'>|null

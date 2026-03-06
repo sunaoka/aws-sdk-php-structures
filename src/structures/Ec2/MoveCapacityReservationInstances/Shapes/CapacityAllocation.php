@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'used'|'future'|null $AllocationType
  * @property int|null $Count
+ * @property list<CapacityAllocationMetadataEntry>|null $AllocationMetadata
  */
 class CapacityAllocation extends Shape
 {
     /**
      * @param array{
      *     AllocationType?: 'used'|'future'|null,
-     *     Count?: int|null
+     *     Count?: int|null,
+     *     AllocationMetadata?: list<CapacityAllocationMetadataEntry>|null
      * } $args
      */
     public function __construct(array $args = [])
