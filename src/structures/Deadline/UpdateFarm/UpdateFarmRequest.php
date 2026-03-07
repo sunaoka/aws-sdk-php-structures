@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $farmId
  * @property string|null $displayName
  * @property string|null $description
+ * @property float|null $costScaleFactor
  */
 class UpdateFarmRequest extends Request
 {
@@ -15,7 +16,8 @@ class UpdateFarmRequest extends Request
      * @param array{
      *     farmId: string,
      *     displayName?: string|null,
-     *     description?: string|null
+     *     description?: string|null,
+     *     costScaleFactor?: float|null
      * } $args
      */
     public function __construct(array $args)

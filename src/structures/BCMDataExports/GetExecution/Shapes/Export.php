@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\BCMDataExports\GetExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataQuery $DataQuery
- * @property string|null $Description
- * @property DestinationConfigurations $DestinationConfigurations
  * @property string|null $ExportArn
  * @property string $Name
+ * @property string|null $Description
+ * @property DataQuery $DataQuery
+ * @property DestinationConfigurations $DestinationConfigurations
  * @property RefreshCadence $RefreshCadence
  */
 class Export extends Shape
 {
     /**
      * @param array{
-     *     DataQuery: DataQuery,
-     *     Description?: string|null,
-     *     DestinationConfigurations: DestinationConfigurations,
      *     ExportArn?: string|null,
      *     Name: string,
+     *     Description?: string|null,
+     *     DataQuery: DataQuery,
+     *     DestinationConfigurations: DestinationConfigurations,
      *     RefreshCadence: RefreshCadence
      * } $args
      */

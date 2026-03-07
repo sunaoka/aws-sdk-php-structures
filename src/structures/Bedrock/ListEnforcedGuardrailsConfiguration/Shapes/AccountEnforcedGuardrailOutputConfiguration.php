@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
  * @property 'ACCOUNT'|null $owner
+ * @property ModelEnforcement|null $modelEnforcement
  */
 class AccountEnforcedGuardrailOutputConfiguration extends Shape
 {
@@ -29,7 +30,8 @@ class AccountEnforcedGuardrailOutputConfiguration extends Shape
      *     createdBy?: string|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     updatedBy?: string|null,
-     *     owner?: 'ACCOUNT'|null
+     *     owner?: 'ACCOUNT'|null,
+     *     modelEnforcement?: ModelEnforcement|null
      * } $args
      */
     public function __construct(array $args = [])

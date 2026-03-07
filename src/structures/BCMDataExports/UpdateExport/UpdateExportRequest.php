@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BCMDataExports\UpdateExport;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\Export $Export
  * @property string $ExportArn
+ * @property Shapes\Export $Export
  */
 class UpdateExportRequest extends Request
 {
     /**
      * @param array{
-     *     Export: Shapes\Export,
-     *     ExportArn: string
+     *     ExportArn: string,
+     *     Export: Shapes\Export
      * } $args
      */
     public function __construct(array $args)
