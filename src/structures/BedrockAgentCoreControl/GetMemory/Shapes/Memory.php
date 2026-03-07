@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property list<MemoryStrategy>|null $strategies
+ * @property StreamDeliveryResources|null $streamDeliveryResources
  */
 class Memory extends Shape
 {
@@ -33,7 +34,8 @@ class Memory extends Shape
      *     failureReason?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     strategies?: list<MemoryStrategy>|null
+     *     strategies?: list<MemoryStrategy>|null,
+     *     streamDeliveryResources?: StreamDeliveryResources|null
      * } $args
      */
     public function __construct(array $args)
