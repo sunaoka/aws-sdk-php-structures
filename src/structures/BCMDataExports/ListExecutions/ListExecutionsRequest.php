@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ExportArn
- * @property int<1, max>|null $MaxResults
+ * @property int<1, 300>|null $MaxResults
  * @property string|null $NextToken
  */
 class ListExecutionsRequest extends Request
@@ -14,7 +14,7 @@ class ListExecutionsRequest extends Request
     /**
      * @param array{
      *     ExportArn: string,
-     *     MaxResults?: int<1, max>|null,
+     *     MaxResults?: int<1, 300>|null,
      *     NextToken?: string|null
      * } $args
      */

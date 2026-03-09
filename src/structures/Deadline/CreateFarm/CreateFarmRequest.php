@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $displayName
  * @property string|null $description
  * @property string|null $kmsKeyArn
+ * @property float|null $costScaleFactor
  * @property array<string, string>|null $tags
  */
 class CreateFarmRequest extends Request
@@ -19,6 +20,7 @@ class CreateFarmRequest extends Request
      *     displayName: string,
      *     description?: string|null,
      *     kmsKeyArn?: string|null,
+     *     costScaleFactor?: float|null,
      *     tags?: array<string, string>|null
      * } $args
      */

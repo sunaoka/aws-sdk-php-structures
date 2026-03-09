@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ApplicationSourceUri
  * @property string|null $Id
  * @property 'INITIALIZED'|'PROCESSING'|'READY'|'DELETING'|'ERROR'|null $Status
- * @property 'internalError'|'accessDenied'|null $StatusReason
+ * @property 'internalError'|'accessDenied'|'sourceModified'|null $StatusReason
  * @property list<Shapes\ReplicationStatus>|null $ReplicationStatuses
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
