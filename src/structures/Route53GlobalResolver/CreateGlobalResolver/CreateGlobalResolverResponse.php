@@ -11,7 +11,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
  * @property string $dnsName
+ * @property 'IPV4'|'DUAL_STACK'|null $ipAddressType
  * @property list<string> $ipv4Addresses
+ * @property list<string>|null $ipv6Addresses
  * @property string $name
  * @property string|null $observabilityRegion
  * @property list<string> $regions

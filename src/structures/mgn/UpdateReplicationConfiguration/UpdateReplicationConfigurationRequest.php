@@ -23,6 +23,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $useFipsEndpoint
  * @property string|null $accountID
  * @property 'IPV4'|'IPV6'|null $internetProtocol
+ * @property bool|null $storeSnapshotOnLocalZone
  */
 class UpdateReplicationConfigurationRequest extends Request
 {
@@ -45,7 +46,8 @@ class UpdateReplicationConfigurationRequest extends Request
      *     stagingAreaTags?: array<string, string>|null,
      *     useFipsEndpoint?: bool|null,
      *     accountID?: string|null,
-     *     internetProtocol?: 'IPV4'|'IPV6'|null
+     *     internetProtocol?: 'IPV4'|'IPV6'|null,
+     *     storeSnapshotOnLocalZone?: bool|null
      * } $args
      */
     public function __construct(array $args)

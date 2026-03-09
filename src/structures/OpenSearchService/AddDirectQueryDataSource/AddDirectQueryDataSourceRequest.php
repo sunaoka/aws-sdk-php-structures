@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DirectQueryDataSourceType $DataSourceType
  * @property string|null $Description
  * @property list<string> $OpenSearchArns
+ * @property string|null $DataSourceAccessPolicy
  * @property list<Shapes\Tag>|null $TagList
  */
 class AddDirectQueryDataSourceRequest extends Request
@@ -19,6 +20,7 @@ class AddDirectQueryDataSourceRequest extends Request
      *     DataSourceType: Shapes\DirectQueryDataSourceType,
      *     Description?: string|null,
      *     OpenSearchArns: list<string>,
+     *     DataSourceAccessPolicy?: string|null,
      *     TagList?: list<Shapes\Tag>|null
      * } $args
      */

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'LOW'|'MEDIUM'|'HIGH'|null $confidenceThreshold
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
- * @property 'DGA'|'DNS_TUNNELING'|null $dnsAdvancedProtection
+ * @property 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null $dnsAdvancedProtection
  * @property string|null $firewallDomainListId
  * @property string $id
  * @property string $name
