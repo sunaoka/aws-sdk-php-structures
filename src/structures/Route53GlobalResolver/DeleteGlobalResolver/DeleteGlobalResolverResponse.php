@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property 'CREATING'|'OPERATIONAL'|'UPDATING'|'DELETING' $status
  * @property list<string> $ipv4Addresses
+ * @property list<string>|null $ipv6Addresses
+ * @property 'IPV4'|'DUAL_STACK'|null $ipAddressType
  */
 class DeleteGlobalResolverResponse extends Response
 {

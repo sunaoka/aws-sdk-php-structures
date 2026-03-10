@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $useFipsEndpoint
  * @property array<string, string>|null $tags
  * @property 'IPV4'|'IPV6'|null $internetProtocol
+ * @property bool|null $storeSnapshotOnLocalZone
  */
 class UpdateReplicationConfigurationTemplateResponse extends Response
 {

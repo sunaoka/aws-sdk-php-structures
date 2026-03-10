@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NODATA'|'NXDOMAIN'|'OVERRIDE'|null $blockResponse
  * @property 'LOW'|'MEDIUM'|'HIGH'|null $confidenceThreshold
  * @property string|null $description
- * @property 'DGA'|'DNS_TUNNELING'|null $dnsAdvancedProtection
+ * @property 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null $dnsAdvancedProtection
  * @property string $firewallRuleId
  * @property string|null $name
  * @property int<1, 10000>|null $priority
@@ -28,7 +28,7 @@ class BatchUpdateFirewallRuleInputItem extends Shape
      *     blockResponse?: 'NODATA'|'NXDOMAIN'|'OVERRIDE'|null,
      *     confidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null,
      *     description?: string|null,
-     *     dnsAdvancedProtection?: 'DGA'|'DNS_TUNNELING'|null,
+     *     dnsAdvancedProtection?: 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null,
      *     firewallRuleId: string,
      *     name?: string|null,
      *     priority?: int<1, 10000>|null

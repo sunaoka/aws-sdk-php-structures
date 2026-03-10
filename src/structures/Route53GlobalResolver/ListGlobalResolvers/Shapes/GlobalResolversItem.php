@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property 'CREATING'|'OPERATIONAL'|'UPDATING'|'DELETING' $status
  * @property list<string> $ipv4Addresses
+ * @property list<string>|null $ipv6Addresses
+ * @property 'IPV4'|'DUAL_STACK'|null $ipAddressType
  */
 class GlobalResolversItem extends Shape
 {
@@ -33,7 +35,9 @@ class GlobalResolversItem extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     status: 'CREATING'|'OPERATIONAL'|'UPDATING'|'DELETING',
-     *     ipv4Addresses: list<string>
+     *     ipv4Addresses: list<string>,
+     *     ipv6Addresses?: list<string>|null,
+     *     ipAddressType?: 'IPV4'|'DUAL_STACK'|null
      * } $args
      */
     public function __construct(array $args)

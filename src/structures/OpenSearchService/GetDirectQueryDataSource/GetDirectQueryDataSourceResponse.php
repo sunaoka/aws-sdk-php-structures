@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DirectQueryDataSourceType|null $DataSourceType
  * @property string|null $Description
  * @property list<string>|null $OpenSearchArns
+ * @property string|null $DataSourceAccessPolicy
  * @property string|null $DataSourceArn
  */
 class GetDirectQueryDataSourceResponse extends Response

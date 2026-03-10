@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'LOW'|'MEDIUM'|'HIGH'|null $confidenceThreshold
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string|null $description
- * @property 'DGA'|'DNS_TUNNELING'|null $dnsAdvancedProtection
+ * @property 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null $dnsAdvancedProtection
  * @property string|null $firewallDomainListId
  * @property string|null $id
  * @property string|null $managedDomainListName
@@ -38,7 +38,7 @@ class BatchCreateFirewallRuleResult extends Shape
      *     confidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     description?: string|null,
-     *     dnsAdvancedProtection?: 'DGA'|'DNS_TUNNELING'|null,
+     *     dnsAdvancedProtection?: 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null,
      *     firewallDomainListId?: string|null,
      *     id?: string|null,
      *     managedDomainListName?: string|null,

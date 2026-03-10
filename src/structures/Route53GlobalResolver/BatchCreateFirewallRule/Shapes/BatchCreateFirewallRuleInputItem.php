@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $clientToken
  * @property 'LOW'|'MEDIUM'|'HIGH'|null $confidenceThreshold
  * @property string|null $description
- * @property 'DGA'|'DNS_TUNNELING'|null $dnsAdvancedProtection
+ * @property 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null $dnsAdvancedProtection
  * @property string|null $firewallDomainListId
  * @property string $name
  * @property int<1, 10000>|null $priority
@@ -32,7 +32,7 @@ class BatchCreateFirewallRuleInputItem extends Shape
      *     clientToken: string,
      *     confidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null,
      *     description?: string|null,
-     *     dnsAdvancedProtection?: 'DGA'|'DNS_TUNNELING'|null,
+     *     dnsAdvancedProtection?: 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null,
      *     firewallDomainListId?: string|null,
      *     name: string,
      *     priority?: int<1, 10000>|null,
