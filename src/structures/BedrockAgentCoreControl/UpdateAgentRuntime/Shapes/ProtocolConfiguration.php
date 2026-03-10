@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\UpdateAgentRuntime\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MCP'|'HTTP'|'A2A' $serverProtocol
+ * @property 'MCP'|'HTTP'|'A2A'|'AGUI' $serverProtocol
  */
 class ProtocolConfiguration extends Shape
 {
     /**
-     * @param array{serverProtocol: 'MCP'|'HTTP'|'A2A'} $args
+     * @param array{serverProtocol: 'MCP'|'HTTP'|'A2A'|'AGUI'} $args
      */
     public function __construct(array $args)
     {
