@@ -15,6 +15,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use CreateIntegrationWorkflow\CreateIntegrationWorkflowTrait;
     use CreateProfile\CreateProfileTrait;
     use CreateRecommender\CreateRecommenderTrait;
+    use CreateRecommenderFilter\CreateRecommenderFilterTrait;
     use CreateSegmentDefinition\CreateSegmentDefinitionTrait;
     use CreateSegmentEstimate\CreateSegmentEstimateTrait;
     use CreateSegmentSnapshot\CreateSegmentSnapshotTrait;
@@ -31,6 +32,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use DeleteProfileObject\DeleteProfileObjectTrait;
     use DeleteProfileObjectType\DeleteProfileObjectTypeTrait;
     use DeleteRecommender\DeleteRecommenderTrait;
+    use DeleteRecommenderFilter\DeleteRecommenderFilterTrait;
     use DeleteSegmentDefinition\DeleteSegmentDefinitionTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
     use DetectProfileObjectType\DetectProfileObjectTypeTrait;
@@ -51,6 +53,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use GetProfileObjectTypeTemplate\GetProfileObjectTypeTemplateTrait;
     use GetProfileRecommendations\GetProfileRecommendationsTrait;
     use GetRecommender\GetRecommenderTrait;
+    use GetRecommenderFilter\GetRecommenderFilterTrait;
     use GetSegmentDefinition\GetSegmentDefinitionTrait;
     use GetSegmentEstimate\GetSegmentEstimateTrait;
     use GetSegmentMembership\GetSegmentMembershipTrait;
@@ -77,6 +80,7 @@ class CustomerProfilesClient extends \Aws\CustomerProfiles\CustomerProfilesClien
     use ListProfileObjectTypeTemplates\ListProfileObjectTypeTemplatesTrait;
     use ListProfileObjectTypes\ListProfileObjectTypesTrait;
     use ListProfileObjects\ListProfileObjectsTrait;
+    use ListRecommenderFilters\ListRecommenderFiltersTrait;
     use ListRecommenderRecipes\ListRecommenderRecipesTrait;
     use ListRecommenders\ListRecommendersTrait;
     use ListRuleBasedMatches\ListRuleBasedMatchesTrait;

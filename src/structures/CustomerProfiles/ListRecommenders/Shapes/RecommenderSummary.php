@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $RecommenderName
- * @property 'recommended-for-you'|'similar-items'|'frequently-paired-items'|'popular-items'|'trending-now'|null $RecipeName
+ * @property 'recommended-for-you'|'similar-items'|'frequently-paired-items'|'popular-items'|'trending-now'|'personalized-ranking'|null $RecipeName
  * @property RecommenderConfig|null $RecommenderConfig
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property string|null $Description
@@ -21,7 +21,7 @@ class RecommenderSummary extends Shape
     /**
      * @param array{
      *     RecommenderName?: string|null,
-     *     RecipeName?: 'recommended-for-you'|'similar-items'|'frequently-paired-items'|'popular-items'|'trending-now'|null,
+     *     RecipeName?: 'recommended-for-you'|'similar-items'|'frequently-paired-items'|'popular-items'|'trending-now'|'personalized-ranking'|null,
      *     RecommenderConfig?: RecommenderConfig|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Description?: string|null,

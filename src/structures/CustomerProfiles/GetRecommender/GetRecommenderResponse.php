@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $RecommenderName
- * @property 'recommended-for-you'|'similar-items'|'frequently-paired-items'|'popular-items'|'trending-now' $RecommenderRecipeName
+ * @property 'recommended-for-you'|'similar-items'|'frequently-paired-items'|'popular-items'|'trending-now'|'personalized-ranking' $RecommenderRecipeName
  * @property Shapes\RecommenderConfig|null $RecommenderConfig
  * @property string|null $Description
  * @property 'PENDING'|'IN_PROGRESS'|'ACTIVE'|'FAILED'|'STOPPING'|'INACTIVE'|'STARTING'|'DELETING'|null $Status

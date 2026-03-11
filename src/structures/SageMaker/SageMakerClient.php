@@ -204,6 +204,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DescribeSubscribedWorkteam\DescribeSubscribedWorkteamTrait;
     use DescribeTrainingJob\DescribeTrainingJobTrait;
     use DescribeTrainingPlan\DescribeTrainingPlanTrait;
+    use DescribeTrainingPlanExtensionHistory\DescribeTrainingPlanExtensionHistoryTrait;
     use DescribeTransformJob\DescribeTransformJobTrait;
     use DescribeTrial\DescribeTrialTrait;
     use DescribeTrialComponent\DescribeTrialComponentTrait;
@@ -214,6 +215,7 @@ class SageMakerClient extends \Aws\SageMaker\SageMakerClient
     use DisableSagemakerServicecatalogPortfolio\DisableSagemakerServicecatalogPortfolioTrait;
     use DisassociateTrialComponent\DisassociateTrialComponentTrait;
     use EnableSagemakerServicecatalogPortfolio\EnableSagemakerServicecatalogPortfolioTrait;
+    use ExtendTrainingPlan\ExtendTrainingPlanTrait;
     use GetDeviceFleetReport\GetDeviceFleetReportTrait;
     use GetLineageGroupPolicy\GetLineageGroupPolicyTrait;
     use GetModelPackageGroupPolicy\GetModelPackageGroupPolicyTrait;
