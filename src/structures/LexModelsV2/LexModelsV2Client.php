@@ -23,6 +23,7 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use CreateUploadUrl\CreateUploadUrlTrait;
     use DeleteBot\DeleteBotTrait;
     use DeleteBotAlias\DeleteBotAliasTrait;
+    use DeleteBotAnalyzerRecommendation\DeleteBotAnalyzerRecommendationTrait;
     use DeleteBotLocale\DeleteBotLocaleTrait;
     use DeleteBotReplica\DeleteBotReplicaTrait;
     use DeleteBotVersion\DeleteBotVersionTrait;
@@ -38,6 +39,7 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use DeleteUtterances\DeleteUtterancesTrait;
     use DescribeBot\DescribeBotTrait;
     use DescribeBotAlias\DescribeBotAliasTrait;
+    use DescribeBotAnalyzerRecommendation\DescribeBotAnalyzerRecommendationTrait;
     use DescribeBotLocale\DescribeBotLocaleTrait;
     use DescribeBotRecommendation\DescribeBotRecommendationTrait;
     use DescribeBotReplica\DescribeBotReplicaTrait;
@@ -59,6 +61,7 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use ListAggregatedUtterances\ListAggregatedUtterancesTrait;
     use ListBotAliasReplicas\ListBotAliasReplicasTrait;
     use ListBotAliases\ListBotAliasesTrait;
+    use ListBotAnalyzerHistory\ListBotAnalyzerHistoryTrait;
     use ListBotLocales\ListBotLocalesTrait;
     use ListBotRecommendations\ListBotRecommendationsTrait;
     use ListBotReplicas\ListBotReplicasTrait;
@@ -88,11 +91,13 @@ class LexModelsV2Client extends \Aws\LexModelsV2\LexModelsV2Client
     use ListUtteranceAnalyticsData\ListUtteranceAnalyticsDataTrait;
     use ListUtteranceMetrics\ListUtteranceMetricsTrait;
     use SearchAssociatedTranscripts\SearchAssociatedTranscriptsTrait;
+    use StartBotAnalyzer\StartBotAnalyzerTrait;
     use StartBotRecommendation\StartBotRecommendationTrait;
     use StartBotResourceGeneration\StartBotResourceGenerationTrait;
     use StartImport\StartImportTrait;
     use StartTestExecution\StartTestExecutionTrait;
     use StartTestSetGeneration\StartTestSetGenerationTrait;
+    use StopBotAnalyzer\StopBotAnalyzerTrait;
     use StopBotRecommendation\StopBotRecommendationTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
