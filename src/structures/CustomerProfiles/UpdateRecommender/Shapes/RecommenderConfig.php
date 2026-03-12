@@ -5,18 +5,20 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\UpdateRecommender\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EventsConfig $EventsConfig
- * @property int<7, 7>|null $TrainingFrequency
+ * @property EventsConfig|null $EventsConfig
+ * @property int<1, 30>|null $TrainingFrequency
+ * @property InferenceConfig|null $InferenceConfig
  */
 class RecommenderConfig extends Shape
 {
     /**
      * @param array{
-     *     EventsConfig: EventsConfig,
-     *     TrainingFrequency?: int<7, 7>|null
+     *     EventsConfig?: EventsConfig|null,
+     *     TrainingFrequency?: int<1, 30>|null,
+     *     InferenceConfig?: InferenceConfig|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

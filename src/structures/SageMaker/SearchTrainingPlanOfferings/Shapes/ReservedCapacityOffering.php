@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 59>|null $DurationMinutes
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property \Aws\Api\DateTimeResult|null $ExtensionStartTime
+ * @property \Aws\Api\DateTimeResult|null $ExtensionEndTime
  */
 class ReservedCapacityOffering extends Shape
 {
@@ -29,7 +31,9 @@ class ReservedCapacityOffering extends Shape
      *     DurationHours?: int<0, 87600>|null,
      *     DurationMinutes?: int<0, 59>|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
-     *     EndTime?: \Aws\Api\DateTimeResult|null
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     ExtensionStartTime?: \Aws\Api\DateTimeResult|null,
+     *     ExtensionEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

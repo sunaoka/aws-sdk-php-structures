@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EKS\UpdateClusterConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'standard'|'tier-xl'|'tier-2xl'|'tier-4xl'|null $tier
+ * @property 'standard'|'tier-xl'|'tier-2xl'|'tier-4xl'|'tier-8xl'|null $tier
  */
 class ControlPlaneScalingConfig extends Shape
 {
     /**
-     * @param array{tier?: 'standard'|'tier-xl'|'tier-2xl'|'tier-4xl'|null} $args
+     * @param array{tier?: 'standard'|'tier-xl'|'tier-2xl'|'tier-4xl'|'tier-8xl'|null} $args
      */
     public function __construct(array $args = [])
     {

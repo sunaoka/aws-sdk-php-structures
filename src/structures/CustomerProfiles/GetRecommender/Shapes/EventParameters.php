@@ -7,13 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $EventType
  * @property double|null $EventValueThreshold
+ * @property double|null $EventWeight
  */
 class EventParameters extends Shape
 {
     /**
      * @param array{
      *     EventType: string,
-     *     EventValueThreshold?: double|null
+     *     EventValueThreshold?: double|null,
+     *     EventWeight?: double|null
      * } $args
      */
     public function __construct(array $args)
