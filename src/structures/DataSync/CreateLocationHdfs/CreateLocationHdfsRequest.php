@@ -18,6 +18,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $KerberosKrb5Conf
  * @property list<string> $AgentArns
  * @property list<Shapes\TagListEntry>|null $Tags
+ * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
+ * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  */
 class CreateLocationHdfsRequest extends Request
 {
@@ -35,7 +37,9 @@ class CreateLocationHdfsRequest extends Request
      *     KerberosKeytab?: string|resource|\Psr\Http\Message\StreamInterface|null,
      *     KerberosKrb5Conf?: string|resource|\Psr\Http\Message\StreamInterface|null,
      *     AgentArns: list<string>,
-     *     Tags?: list<Shapes\TagListEntry>|null
+     *     Tags?: list<Shapes\TagListEntry>|null,
+     *     CmkSecretConfig?: Shapes\CmkSecretConfig|null,
+     *     CustomSecretConfig?: Shapes\CustomSecretConfig|null
      * } $args
      */
     public function __construct(array $args)
