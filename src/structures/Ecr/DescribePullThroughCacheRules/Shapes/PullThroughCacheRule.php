@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $credentialArn
  * @property string|null $customRoleArn
  * @property string|null $upstreamRepositoryPrefix
- * @property 'ecr'|'ecr-public'|'quay'|'k8s'|'docker-hub'|'github-container-registry'|'azure-container-registry'|'gitlab-container-registry'|null $upstreamRegistry
+ * @property 'ecr'|'ecr-public'|'quay'|'k8s'|'docker-hub'|'github-container-registry'|'azure-container-registry'|'gitlab-container-registry'|'chainguard'|null $upstreamRegistry
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class PullThroughCacheRule extends Shape
@@ -26,7 +26,7 @@ class PullThroughCacheRule extends Shape
      *     credentialArn?: string|null,
      *     customRoleArn?: string|null,
      *     upstreamRepositoryPrefix?: string|null,
-     *     upstreamRegistry?: 'ecr'|'ecr-public'|'quay'|'k8s'|'docker-hub'|'github-container-registry'|'azure-container-registry'|'gitlab-container-registry'|null,
+     *     upstreamRegistry?: 'ecr'|'ecr-public'|'quay'|'k8s'|'docker-hub'|'github-container-registry'|'azure-container-registry'|'gitlab-container-registry'|'chainguard'|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */

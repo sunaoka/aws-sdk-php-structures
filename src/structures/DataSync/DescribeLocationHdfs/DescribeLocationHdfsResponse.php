@@ -17,6 +17,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $KerberosPrincipal
  * @property list<string>|null $AgentArns
  * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property Shapes\ManagedSecretConfig|null $ManagedSecretConfig
+ * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
+ * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  */
 class DescribeLocationHdfsResponse extends Response
 {

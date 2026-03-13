@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $GrantWriteACP
  * @property bool|null $ObjectLockEnabledForBucket
  * @property 'BucketOwnerPreferred'|'ObjectWriter'|'BucketOwnerEnforced'|null $ObjectOwnership
+ * @property 'account-regional'|'global'|null $BucketNamespace
  */
 class CreateBucketRequest extends Request
 {
@@ -29,7 +30,8 @@ class CreateBucketRequest extends Request
      *     GrantWrite?: string|null,
      *     GrantWriteACP?: string|null,
      *     ObjectLockEnabledForBucket?: bool|null,
-     *     ObjectOwnership?: 'BucketOwnerPreferred'|'ObjectWriter'|'BucketOwnerEnforced'|null
+     *     ObjectOwnership?: 'BucketOwnerPreferred'|'ObjectWriter'|'BucketOwnerEnforced'|null,
+     *     BucketNamespace?: 'account-regional'|'global'|null
      * } $args
      */
     public function __construct(array $args)

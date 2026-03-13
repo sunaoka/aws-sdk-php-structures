@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Domain
  * @property string|null $User
  * @property string|null $Password
+ * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
+ * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  */
 class UpdateLocationFsxWindowsRequest extends Request
 {
@@ -19,7 +21,9 @@ class UpdateLocationFsxWindowsRequest extends Request
      *     Subdirectory?: string|null,
      *     Domain?: string|null,
      *     User?: string|null,
-     *     Password?: string|null
+     *     Password?: string|null,
+     *     CmkSecretConfig?: Shapes\CmkSecretConfig|null,
+     *     CustomSecretConfig?: Shapes\CustomSecretConfig|null
      * } $args
      */
     public function __construct(array $args)

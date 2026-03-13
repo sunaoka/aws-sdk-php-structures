@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SmbMountOptions|null $MountOptions
  * @property string|null $Password
  * @property string|null $User
+ * @property CmkSecretConfig|null $CmkSecretConfig
+ * @property CustomSecretConfig|null $CustomSecretConfig
  */
 class FsxUpdateProtocolSmb extends Shape
 {
@@ -17,7 +19,9 @@ class FsxUpdateProtocolSmb extends Shape
      *     Domain?: string|null,
      *     MountOptions?: SmbMountOptions|null,
      *     Password?: string|null,
-     *     User?: string|null
+     *     User?: string|null,
+     *     CmkSecretConfig?: CmkSecretConfig|null,
+     *     CustomSecretConfig?: CustomSecretConfig|null
      * } $args
      */
     public function __construct(array $args = [])
