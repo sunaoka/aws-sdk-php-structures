@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'ENABLED'|'DISABLED'|null $ClearLead
  * @property string|null $ConstantInitializationVector
  * @property 'SAMPLE_AES'|'AES_CTR'|null $EncryptionMethod
  * @property 'INCLUDE'|'EXCLUDE'|null $InitializationVectorInManifest
@@ -16,6 +17,7 @@ class CmafEncryptionSettings extends Shape
 {
     /**
      * @param array{
+     *     ClearLead?: 'ENABLED'|'DISABLED'|null,
      *     ConstantInitializationVector?: string|null,
      *     EncryptionMethod?: 'SAMPLE_AES'|'AES_CTR'|null,
      *     InitializationVectorInManifest?: 'INCLUDE'|'EXCLUDE'|null,

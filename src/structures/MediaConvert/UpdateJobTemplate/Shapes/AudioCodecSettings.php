@@ -7,8 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property AacSettings|null $AacSettings
  * @property Ac3Settings|null $Ac3Settings
+ * @property Ac4Settings|null $Ac4Settings
  * @property AiffSettings|null $AiffSettings
- * @property 'AAC'|'MP2'|'MP3'|'WAV'|'AIFF'|'AC3'|'EAC3'|'EAC3_ATMOS'|'VORBIS'|'OPUS'|'PASSTHROUGH'|'FLAC'|null $Codec
+ * @property 'AAC'|'MP2'|'MP3'|'WAV'|'AIFF'|'AC3'|'AC4'|'EAC3'|'EAC3_ATMOS'|'VORBIS'|'OPUS'|'PASSTHROUGH'|'FLAC'|null $Codec
  * @property Eac3AtmosSettings|null $Eac3AtmosSettings
  * @property Eac3Settings|null $Eac3Settings
  * @property FlacSettings|null $FlacSettings
@@ -24,8 +25,9 @@ class AudioCodecSettings extends Shape
      * @param array{
      *     AacSettings?: AacSettings|null,
      *     Ac3Settings?: Ac3Settings|null,
+     *     Ac4Settings?: Ac4Settings|null,
      *     AiffSettings?: AiffSettings|null,
-     *     Codec?: 'AAC'|'MP2'|'MP3'|'WAV'|'AIFF'|'AC3'|'EAC3'|'EAC3_ATMOS'|'VORBIS'|'OPUS'|'PASSTHROUGH'|'FLAC'|null,
+     *     Codec?: 'AAC'|'MP2'|'MP3'|'WAV'|'AIFF'|'AC3'|'AC4'|'EAC3'|'EAC3_ATMOS'|'VORBIS'|'OPUS'|'PASSTHROUGH'|'FLAC'|null,
      *     Eac3AtmosSettings?: Eac3AtmosSettings|null,
      *     Eac3Settings?: Eac3Settings|null,
      *     FlacSettings?: FlacSettings|null,

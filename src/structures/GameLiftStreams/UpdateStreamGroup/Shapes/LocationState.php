@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $RequestedCapacity
  * @property int<0, max>|null $AllocatedCapacity
  * @property int<0, max>|null $IdleCapacity
+ * @property string|null $InternalVpcIpv4CidrBlock
+ * @property VpcTransitConfigurationResponse|null $VpcTransitConfiguration
  */
 class LocationState extends Shape
 {
@@ -27,7 +29,9 @@ class LocationState extends Shape
      *     MaximumCapacity?: int<0, max>|null,
      *     RequestedCapacity?: int<0, max>|null,
      *     AllocatedCapacity?: int<0, max>|null,
-     *     IdleCapacity?: int<0, max>|null
+     *     IdleCapacity?: int<0, max>|null,
+     *     InternalVpcIpv4CidrBlock?: string|null,
+     *     VpcTransitConfiguration?: VpcTransitConfigurationResponse|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,6 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatabaseName
  * @property string $TableName
  * @property list<Shapes\PartitionValueList> $PartitionsToGet
+ * @property Shapes\AuditContext|null $AuditContext
+ * @property Shapes\QuerySessionContext|null $QuerySessionContext
  */
 class BatchGetPartitionRequest extends Request
 {
@@ -17,7 +19,9 @@ class BatchGetPartitionRequest extends Request
      *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TableName: string,
-     *     PartitionsToGet: list<Shapes\PartitionValueList>
+     *     PartitionsToGet: list<Shapes\PartitionValueList>,
+     *     AuditContext?: Shapes\AuditContext|null,
+     *     QuerySessionContext?: Shapes\QuerySessionContext|null
      * } $args
      */
     public function __construct(array $args)
