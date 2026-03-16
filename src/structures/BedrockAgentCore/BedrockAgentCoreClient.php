@@ -23,6 +23,7 @@ class BedrockAgentCoreClient extends \Aws\BedrockAgentCore\BedrockAgentCoreClien
     use GetWorkloadAccessTokenForJWT\GetWorkloadAccessTokenForJWTTrait;
     use GetWorkloadAccessTokenForUserId\GetWorkloadAccessTokenForUserIdTrait;
     use InvokeAgentRuntime\InvokeAgentRuntimeTrait;
+    use InvokeAgentRuntimeCommand\InvokeAgentRuntimeCommandTrait;
     use InvokeCodeInterpreter\InvokeCodeInterpreterTrait;
     use ListActors\ListActorsTrait;
     use ListBrowserSessions\ListBrowserSessionsTrait;
