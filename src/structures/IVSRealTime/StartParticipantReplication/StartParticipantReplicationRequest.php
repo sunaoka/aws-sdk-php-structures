@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $sourceStageArn
  * @property string $destinationStageArn
  * @property string $participantId
- * @property int<0, 60>|null $reconnectWindowSeconds
+ * @property int<0, 300>|null $reconnectWindowSeconds
  * @property array<string, string>|null $attributes
  */
 class StartParticipantReplicationRequest extends Request
@@ -18,7 +18,7 @@ class StartParticipantReplicationRequest extends Request
      *     sourceStageArn: string,
      *     destinationStageArn: string,
      *     participantId: string,
-     *     reconnectWindowSeconds?: int<0, 60>|null,
+     *     reconnectWindowSeconds?: int<0, 300>|null,
      *     attributes?: array<string, string>|null
      * } $args
      */
