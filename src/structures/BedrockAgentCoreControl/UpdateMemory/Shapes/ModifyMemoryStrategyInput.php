@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $memoryStrategyId
  * @property string|null $description
  * @property list<string>|null $namespaces
+ * @property list<string>|null $namespaceTemplates
  * @property ModifyStrategyConfiguration|null $configuration
  */
 class ModifyMemoryStrategyInput extends Shape
@@ -17,6 +18,7 @@ class ModifyMemoryStrategyInput extends Shape
      *     memoryStrategyId: string,
      *     description?: string|null,
      *     namespaces?: list<string>|null,
+     *     namespaceTemplates?: list<string>|null,
      *     configuration?: ModifyStrategyConfiguration|null
      * } $args
      */

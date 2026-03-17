@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StrategyConfiguration|null $configuration
  * @property 'SEMANTIC'|'SUMMARIZATION'|'USER_PREFERENCE'|'CUSTOM'|'EPISODIC' $type
  * @property list<string> $namespaces
+ * @property list<string> $namespaceTemplates
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null $status
@@ -25,6 +26,7 @@ class MemoryStrategy extends Shape
      *     configuration?: StrategyConfiguration|null,
      *     type: 'SEMANTIC'|'SUMMARIZATION'|'USER_PREFERENCE'|'CUSTOM'|'EPISODIC',
      *     namespaces: list<string>,
+     *     namespaceTemplates: list<string>,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null

@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string|null $description
  * @property list<string>|null $namespaces
+ * @property list<string>|null $namespaceTemplates
  * @property EpisodicReflectionConfigurationInput|null $reflectionConfiguration
  */
 class EpisodicMemoryStrategyInput extends Shape
@@ -17,6 +18,7 @@ class EpisodicMemoryStrategyInput extends Shape
      *     name: string,
      *     description?: string|null,
      *     namespaces?: list<string>|null,
+     *     namespaceTemplates?: list<string>|null,
      *     reflectionConfiguration?: EpisodicReflectionConfigurationInput|null
      * } $args
      */
