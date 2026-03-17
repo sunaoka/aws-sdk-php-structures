@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $policyArn
- * @property 'INGEST_CONTENT'|'REFINE_POLICY'|'IMPORT_POLICY'|'GENERATE_FIDELITY_REPORT' $buildWorkflowType
+ * @property 'INGEST_CONTENT'|'REFINE_POLICY'|'IMPORT_POLICY'|'GENERATE_FIDELITY_REPORT'|'GENERATE_POLICY_SCENARIOS' $buildWorkflowType
  * @property string|null $clientRequestToken
  * @property Shapes\AutomatedReasoningPolicyBuildWorkflowSource $sourceContent
  */
@@ -15,7 +15,7 @@ class StartAutomatedReasoningPolicyBuildWorkflowRequest extends Request
     /**
      * @param array{
      *     policyArn: string,
-     *     buildWorkflowType: 'INGEST_CONTENT'|'REFINE_POLICY'|'IMPORT_POLICY'|'GENERATE_FIDELITY_REPORT',
+     *     buildWorkflowType: 'INGEST_CONTENT'|'REFINE_POLICY'|'IMPORT_POLICY'|'GENERATE_FIDELITY_REPORT'|'GENERATE_POLICY_SCENARIOS',
      *     clientRequestToken?: string|null,
      *     sourceContent: Shapes\AutomatedReasoningPolicyBuildWorkflowSource
      * } $args
