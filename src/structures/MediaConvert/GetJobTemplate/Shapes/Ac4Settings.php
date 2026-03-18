@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<192000, 1024000>|null $Bitrate
+ * @property int<48000, 768000>|null $Bitrate
  * @property 'COMPLETE_MAIN'|'EMERGENCY'|null $BitstreamMode
  * @property 'CODING_MODE_2_0'|'CODING_MODE_3_2_LFE'|'CODING_MODE_5_1_4'|null $CodingMode
  * @property 'NONE'|'FILM_STANDARD'|'FILM_LIGHT'|'MUSIC_STANDARD'|'MUSIC_LIGHT'|'SPEECH'|null $DynamicRangeCompressionFlatPanelTv
@@ -23,7 +23,7 @@ class Ac4Settings extends Shape
 {
     /**
      * @param array{
-     *     Bitrate?: int<192000, 1024000>|null,
+     *     Bitrate?: int<48000, 768000>|null,
      *     BitstreamMode?: 'COMPLETE_MAIN'|'EMERGENCY'|null,
      *     CodingMode?: 'CODING_MODE_2_0'|'CODING_MODE_3_2_LFE'|'CODING_MODE_5_1_4'|null,
      *     DynamicRangeCompressionFlatPanelTv?: 'NONE'|'FILM_STANDARD'|'FILM_LIGHT'|'MUSIC_STANDARD'|'MUSIC_LIGHT'|'SPEECH'|null,
