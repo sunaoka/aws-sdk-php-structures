@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $appendToPrompt
  * @property string $modelId
  * @property list<string>|null $namespaces
+ * @property list<string>|null $namespaceTemplates
  */
 class EpisodicOverrideReflectionConfigurationInput extends Shape
 {
@@ -15,7 +16,8 @@ class EpisodicOverrideReflectionConfigurationInput extends Shape
      * @param array{
      *     appendToPrompt: string,
      *     modelId: string,
-     *     namespaces?: list<string>|null
+     *     namespaces?: list<string>|null,
+     *     namespaceTemplates?: list<string>|null
      * } $args
      */
     public function __construct(array $args)
