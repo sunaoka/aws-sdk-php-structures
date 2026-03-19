@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\GetBrowser\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $secretArn
+ */
+class SecretsManagerLocation extends Shape
+{
+    /**
+     * @param array{secretArn: string} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

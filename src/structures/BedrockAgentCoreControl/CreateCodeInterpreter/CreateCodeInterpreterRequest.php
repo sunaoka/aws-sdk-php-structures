@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string|null $executionRoleArn
  * @property Shapes\CodeInterpreterNetworkConfiguration $networkConfiguration
+ * @property list<Shapes\Certificate>|null $certificates
  * @property string|null $clientToken
  * @property array<string, string>|null $tags
  */
@@ -20,6 +21,7 @@ class CreateCodeInterpreterRequest extends Request
      *     description?: string|null,
      *     executionRoleArn?: string|null,
      *     networkConfiguration: Shapes\CodeInterpreterNetworkConfiguration,
+     *     certificates?: list<Shapes\Certificate>|null,
      *     clientToken?: string|null,
      *     tags?: array<string, string>|null
      * } $args

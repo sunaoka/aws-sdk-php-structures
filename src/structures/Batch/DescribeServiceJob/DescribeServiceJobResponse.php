@@ -20,6 +20,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $serviceRequestPayload
  * @property 'SAGEMAKER_TRAINING' $serviceJobType
  * @property string|null $shareIdentifier
+ * @property string|null $quotaShareName
+ * @property Shapes\ServiceJobPreemptionConfiguration|null $preemptionConfiguration
+ * @property Shapes\ServiceJobPreemptionSummary|null $preemptionSummary
  * @property int $startedAt
  * @property 'SUBMITTED'|'PENDING'|'RUNNABLE'|'SCHEDULED'|'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED' $status
  * @property string|null $statusReason

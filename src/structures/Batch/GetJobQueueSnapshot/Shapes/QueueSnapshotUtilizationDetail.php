@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<QueueSnapshotCapacityUsage>|null $totalCapacityUsage
  * @property FairshareUtilizationDetail|null $fairshareUtilization
+ * @property QuotaShareUtilizationDetail|null $quotaShareUtilization
  * @property int|null $lastUpdatedAt
  */
 class QueueSnapshotUtilizationDetail extends Shape
@@ -15,6 +16,7 @@ class QueueSnapshotUtilizationDetail extends Shape
      * @param array{
      *     totalCapacityUsage?: list<QueueSnapshotCapacityUsage>|null,
      *     fairshareUtilization?: FairshareUtilizationDetail|null,
+     *     quotaShareUtilization?: QuotaShareUtilizationDetail|null,
      *     lastUpdatedAt?: int|null
      * } $args
      */

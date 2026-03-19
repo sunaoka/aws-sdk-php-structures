@@ -13,6 +13,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\BrowserNetworkConfiguration $networkConfiguration
  * @property Shapes\RecordingConfig|null $recording
  * @property Shapes\BrowserSigningConfigOutput|null $browserSigning
+ * @property list<Shapes\BrowserEnterprisePolicy>|null $enterprisePolicies
+ * @property list<Shapes\Certificate>|null $certificates
  * @property 'CREATING'|'CREATE_FAILED'|'READY'|'DELETING'|'DELETE_FAILED'|'DELETED' $status
  * @property string|null $failureReason
  * @property \Aws\Api\DateTimeResult $createdAt

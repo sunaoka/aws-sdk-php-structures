@@ -12,6 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $serviceRequestPayload
  * @property 'SAGEMAKER_TRAINING' $serviceJobType
  * @property string|null $shareIdentifier
+ * @property string|null $quotaShareName
+ * @property Shapes\ServiceJobPreemptionConfiguration|null $preemptionConfiguration
  * @property Shapes\ServiceJobTimeout|null $timeoutConfig
  * @property array<string, string>|null $tags
  * @property string|null $clientToken
@@ -27,6 +29,8 @@ class SubmitServiceJobRequest extends Request
      *     serviceRequestPayload: string,
      *     serviceJobType: 'SAGEMAKER_TRAINING',
      *     shareIdentifier?: string|null,
+     *     quotaShareName?: string|null,
+     *     preemptionConfiguration?: Shapes\ServiceJobPreemptionConfiguration|null,
      *     timeoutConfig?: Shapes\ServiceJobTimeout|null,
      *     tags?: array<string, string>|null,
      *     clientToken?: string|null
