@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PolicyDefinitionDetail $definition
  * @property \Aws\Api\DateTimeResult $createdDate
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
+ * @property string|null $name
  */
 class BatchGetPolicyOutputItem extends Shape
 {
@@ -21,7 +22,8 @@ class BatchGetPolicyOutputItem extends Shape
      *     policyType: 'STATIC'|'TEMPLATE_LINKED',
      *     definition: PolicyDefinitionDetail,
      *     createdDate: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDate: \Aws\Api\DateTimeResult
+     *     lastUpdatedDate: \Aws\Api\DateTimeResult,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

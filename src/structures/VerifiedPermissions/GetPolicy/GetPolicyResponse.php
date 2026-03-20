@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdDate
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
  * @property 'Permit'|'Forbid'|null $effect
+ * @property string|null $name
  */
 class GetPolicyResponse extends Response
 {

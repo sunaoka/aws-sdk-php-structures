@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property \Aws\Api\DateTimeResult $createdDate
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
+ * @property string|null $name
  */
 class PolicyTemplateItem extends Shape
 {
@@ -19,7 +20,8 @@ class PolicyTemplateItem extends Shape
      *     policyTemplateId: string,
      *     description?: string|null,
      *     createdDate: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDate: \Aws\Api\DateTimeResult
+     *     lastUpdatedDate: \Aws\Api\DateTimeResult,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

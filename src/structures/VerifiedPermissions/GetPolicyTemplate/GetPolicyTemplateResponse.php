@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $statement
  * @property \Aws\Api\DateTimeResult $createdDate
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
+ * @property string|null $name
  */
 class GetPolicyTemplateResponse extends Response
 {
