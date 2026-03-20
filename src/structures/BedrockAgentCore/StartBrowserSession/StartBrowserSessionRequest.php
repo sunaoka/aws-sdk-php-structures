@@ -14,6 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\BrowserExtension>|null $extensions
  * @property Shapes\BrowserProfileConfiguration|null $profileConfiguration
  * @property Shapes\ProxyConfiguration|null $proxyConfiguration
+ * @property list<Shapes\BrowserEnterprisePolicy>|null $enterprisePolicies
+ * @property list<Shapes\Certificate>|null $certificates
  * @property string|null $clientToken
  */
 class StartBrowserSessionRequest extends Request
@@ -29,6 +31,8 @@ class StartBrowserSessionRequest extends Request
      *     extensions?: list<Shapes\BrowserExtension>|null,
      *     profileConfiguration?: Shapes\BrowserProfileConfiguration|null,
      *     proxyConfiguration?: Shapes\ProxyConfiguration|null,
+     *     enterprisePolicies?: list<Shapes\BrowserEnterprisePolicy>|null,
+     *     certificates?: list<Shapes\Certificate>|null,
      *     clientToken?: string|null
      * } $args
      */

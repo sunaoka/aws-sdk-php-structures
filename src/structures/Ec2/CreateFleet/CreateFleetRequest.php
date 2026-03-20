@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property Shapes\SpotOptionsRequest|null $SpotOptions
  * @property Shapes\OnDemandOptionsRequest|null $OnDemandOptions
+ * @property Shapes\ReservedCapacityOptionsRequest|null $ReservedCapacityOptions
  * @property 'no-termination'|'termination'|null $ExcessCapacityTerminationPolicy
  * @property list<Shapes\FleetLaunchTemplateConfigRequest> $LaunchTemplateConfigs
  * @property Shapes\TargetCapacitySpecificationRequest $TargetCapacitySpecification
@@ -28,6 +29,7 @@ class CreateFleetRequest extends Request
      *     ClientToken?: string|null,
      *     SpotOptions?: Shapes\SpotOptionsRequest|null,
      *     OnDemandOptions?: Shapes\OnDemandOptionsRequest|null,
+     *     ReservedCapacityOptions?: Shapes\ReservedCapacityOptionsRequest|null,
      *     ExcessCapacityTerminationPolicy?: 'no-termination'|'termination'|null,
      *     LaunchTemplateConfigs: list<Shapes\FleetLaunchTemplateConfigRequest>,
      *     TargetCapacitySpecification: Shapes\TargetCapacitySpecificationRequest,

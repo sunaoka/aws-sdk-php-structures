@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property int<1, 28800>|null $sessionTimeoutSeconds
  * @property 'READY'|'TERMINATED'|null $status
+ * @property list<Shapes\Certificate>|null $certificates
  */
 class GetCodeInterpreterSessionResponse extends Response
 {

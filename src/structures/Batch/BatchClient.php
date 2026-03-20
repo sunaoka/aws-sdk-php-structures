@@ -8,11 +8,13 @@ class BatchClient extends \Aws\Batch\BatchClient
     use CreateComputeEnvironment\CreateComputeEnvironmentTrait;
     use CreateConsumableResource\CreateConsumableResourceTrait;
     use CreateJobQueue\CreateJobQueueTrait;
+    use CreateQuotaShare\CreateQuotaShareTrait;
     use CreateSchedulingPolicy\CreateSchedulingPolicyTrait;
     use CreateServiceEnvironment\CreateServiceEnvironmentTrait;
     use DeleteComputeEnvironment\DeleteComputeEnvironmentTrait;
     use DeleteConsumableResource\DeleteConsumableResourceTrait;
     use DeleteJobQueue\DeleteJobQueueTrait;
+    use DeleteQuotaShare\DeleteQuotaShareTrait;
     use DeleteSchedulingPolicy\DeleteSchedulingPolicyTrait;
     use DeleteServiceEnvironment\DeleteServiceEnvironmentTrait;
     use DeregisterJobDefinition\DeregisterJobDefinitionTrait;
@@ -21,6 +23,7 @@ class BatchClient extends \Aws\Batch\BatchClient
     use DescribeJobDefinitions\DescribeJobDefinitionsTrait;
     use DescribeJobQueues\DescribeJobQueuesTrait;
     use DescribeJobs\DescribeJobsTrait;
+    use DescribeQuotaShare\DescribeQuotaShareTrait;
     use DescribeSchedulingPolicies\DescribeSchedulingPoliciesTrait;
     use DescribeServiceEnvironments\DescribeServiceEnvironmentsTrait;
     use DescribeServiceJob\DescribeServiceJobTrait;
@@ -28,6 +31,7 @@ class BatchClient extends \Aws\Batch\BatchClient
     use ListConsumableResources\ListConsumableResourcesTrait;
     use ListJobs\ListJobsTrait;
     use ListJobsByConsumableResource\ListJobsByConsumableResourceTrait;
+    use ListQuotaShares\ListQuotaSharesTrait;
     use ListSchedulingPolicies\ListSchedulingPoliciesTrait;
     use ListServiceJobs\ListServiceJobsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
@@ -41,6 +45,8 @@ class BatchClient extends \Aws\Batch\BatchClient
     use UpdateComputeEnvironment\UpdateComputeEnvironmentTrait;
     use UpdateConsumableResource\UpdateConsumableResourceTrait;
     use UpdateJobQueue\UpdateJobQueueTrait;
+    use UpdateQuotaShare\UpdateQuotaShareTrait;
     use UpdateSchedulingPolicy\UpdateSchedulingPolicyTrait;
     use UpdateServiceEnvironment\UpdateServiceEnvironmentTrait;
+    use UpdateServiceJob\UpdateServiceJobTrait;
 }

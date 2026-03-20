@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $scheduledAt
  * @property 'SAGEMAKER_TRAINING' $serviceJobType
  * @property string|null $shareIdentifier
+ * @property string|null $quotaShareName
  * @property 'SUBMITTED'|'PENDING'|'RUNNABLE'|'SCHEDULED'|'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|null $status
  * @property string|null $statusReason
  * @property int|null $startedAt
@@ -32,6 +33,7 @@ class ServiceJobSummary extends Shape
      *     scheduledAt?: int|null,
      *     serviceJobType: 'SAGEMAKER_TRAINING',
      *     shareIdentifier?: string|null,
+     *     quotaShareName?: string|null,
      *     status?: 'SUBMITTED'|'PENDING'|'RUNNABLE'|'SCHEDULED'|'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|null,
      *     statusReason?: string|null,
      *     startedAt?: int|null,
