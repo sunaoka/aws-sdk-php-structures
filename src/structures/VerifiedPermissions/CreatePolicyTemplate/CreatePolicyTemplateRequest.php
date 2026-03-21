@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $policyStoreId
  * @property string|null $description
  * @property string $statement
+ * @property string|null $name
  */
 class CreatePolicyTemplateRequest extends Request
 {
@@ -17,7 +18,8 @@ class CreatePolicyTemplateRequest extends Request
      *     clientToken?: string|null,
      *     policyStoreId: string,
      *     description?: string|null,
-     *     statement: string
+     *     statement: string,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)
