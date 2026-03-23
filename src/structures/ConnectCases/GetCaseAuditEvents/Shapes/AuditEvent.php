@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $eventId
- * @property 'Case.Created'|'Case.Updated'|'RelatedItem.Created' $type
+ * @property 'Case.Created'|'Case.Updated'|'RelatedItem.Created'|'RelatedItem.Deleted'|'RelatedItem.Updated' $type
  * @property 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom'|null $relatedItemType
  * @property \Aws\Api\DateTimeResult $performedTime
  * @property list<AuditEventField> $fields
@@ -17,7 +17,7 @@ class AuditEvent extends Shape
     /**
      * @param array{
      *     eventId: string,
-     *     type: 'Case.Created'|'Case.Updated'|'RelatedItem.Created',
+     *     type: 'Case.Created'|'Case.Updated'|'RelatedItem.Created'|'RelatedItem.Deleted'|'RelatedItem.Updated',
      *     relatedItemType?: 'Contact'|'Comment'|'File'|'Sla'|'ConnectCase'|'Custom'|null,
      *     performedTime: \Aws\Api\DateTimeResult,
      *     fields: list<AuditEventField>,
