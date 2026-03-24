@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LifecycleConfiguration|null $lifecycleConfiguration
  * @property Shapes\RuntimeMetadataConfiguration|null $metadataConfiguration
  * @property array<string, string>|null $environmentVariables
+ * @property list<Shapes\FilesystemConfiguration>|null $filesystemConfigurations
  * @property string|null $clientToken
  */
 class UpdateAgentRuntimeRequest extends Request
@@ -33,6 +34,7 @@ class UpdateAgentRuntimeRequest extends Request
      *     lifecycleConfiguration?: Shapes\LifecycleConfiguration|null,
      *     metadataConfiguration?: Shapes\RuntimeMetadataConfiguration|null,
      *     environmentVariables?: array<string, string>|null,
+     *     filesystemConfigurations?: list<Shapes\FilesystemConfiguration>|null,
      *     clientToken?: string|null
      * } $args
      */

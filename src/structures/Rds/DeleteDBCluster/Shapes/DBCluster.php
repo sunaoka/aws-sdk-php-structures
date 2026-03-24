@@ -91,6 +91,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'standard'|'limitless'|null $ClusterScalabilityType
  * @property CertificateDetails|null $CertificateDetails
  * @property string|null $EngineLifecycleSupport
+ * @property bool|null $VPCNetworkingEnabled
+ * @property bool|null $InternetAccessGatewayEnabled
  */
 class DBCluster extends Shape
 {
@@ -181,7 +183,9 @@ class DBCluster extends Shape
      *     LimitlessDatabase?: LimitlessDatabase|null,
      *     ClusterScalabilityType?: 'standard'|'limitless'|null,
      *     CertificateDetails?: CertificateDetails|null,
-     *     EngineLifecycleSupport?: string|null
+     *     EngineLifecycleSupport?: string|null,
+     *     VPCNetworkingEnabled?: bool|null,
+     *     InternetAccessGatewayEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

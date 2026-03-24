@@ -43,6 +43,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PreferredBackupWindow
  * @property string|null $EngineLifecycleSupport
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $EnableVPCNetworking
+ * @property bool|null $EnableInternetAccessGateway
  */
 class RestoreDBClusterFromSnapshotRequest extends Request
 {
@@ -85,7 +87,9 @@ class RestoreDBClusterFromSnapshotRequest extends Request
      *     BackupRetentionPeriod?: int|null,
      *     PreferredBackupWindow?: string|null,
      *     EngineLifecycleSupport?: string|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     EnableVPCNetworking?: bool|null,
+     *     EnableInternetAccessGateway?: bool|null
      * } $args
      */
     public function __construct(array $args)
