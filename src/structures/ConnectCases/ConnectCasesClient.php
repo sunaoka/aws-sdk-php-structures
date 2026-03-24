@@ -45,5 +45,6 @@ class ConnectCasesClient extends \Aws\ConnectCases\ConnectCasesClient
     use UpdateCaseRule\UpdateCaseRuleTrait;
     use UpdateField\UpdateFieldTrait;
     use UpdateLayout\UpdateLayoutTrait;
+    use UpdateRelatedItem\UpdateRelatedItemTrait;
     use UpdateTemplate\UpdateTemplateTrait;
 }

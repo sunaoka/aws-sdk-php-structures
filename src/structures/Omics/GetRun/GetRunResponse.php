@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $roleArn
  * @property string|null $name
  * @property string|null $runGroupId
+ * @property string|null $batchId
  * @property int<0, 100000>|null $priority
  * @property string|null $definition
  * @property string|null $digest

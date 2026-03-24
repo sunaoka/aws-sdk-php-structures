@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $id
  * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED'|null $status
  * @property string|null $workflowId
+ * @property string|null $batchId
  * @property string|null $name
  * @property int<0, 100000>|null $priority
  * @property int<0, 100000>|null $storageCapacity
@@ -26,6 +27,7 @@ class RunListItem extends Shape
      *     id?: string|null,
      *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED'|null,
      *     workflowId?: string|null,
+     *     batchId?: string|null,
      *     name?: string|null,
      *     priority?: int<0, 100000>|null,
      *     storageCapacity?: int<0, 100000>|null,
