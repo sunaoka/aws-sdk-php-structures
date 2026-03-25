@@ -12,7 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DependencyConfig|null $DependencyConfig
  * @property \Aws\Api\DateTimeResult|null $CreatedTime
  * @property 'PeriodBased'|'RequestBased'|null $EvaluationType
- * @property 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|null $MetricSourceType
+ * @property 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|'AppMonitor'|'Canary'|'Service'|null $MetricSourceType
+ * @property MetricSource|null $MetricSource
  */
 class ServiceLevelObjectiveSummary extends Shape
 {
@@ -25,7 +26,8 @@ class ServiceLevelObjectiveSummary extends Shape
      *     DependencyConfig?: DependencyConfig|null,
      *     CreatedTime?: \Aws\Api\DateTimeResult|null,
      *     EvaluationType?: 'PeriodBased'|'RequestBased'|null,
-     *     MetricSourceType?: 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|null
+     *     MetricSourceType?: 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|'AppMonitor'|'Canary'|'Service'|null,
+     *     MetricSource?: MetricSource|null
      * } $args
      */
     public function __construct(array $args)
