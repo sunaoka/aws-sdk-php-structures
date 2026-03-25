@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProtocolConfiguration|null $protocolConfiguration
  * @property Shapes\LifecycleConfiguration|null $lifecycleConfiguration
  * @property array<string, string>|null $environmentVariables
+ * @property list<Shapes\FilesystemConfiguration>|null $filesystemConfigurations
  * @property array<string, string>|null $tags
  */
 class CreateAgentRuntimeRequest extends Request
@@ -33,6 +34,7 @@ class CreateAgentRuntimeRequest extends Request
      *     protocolConfiguration?: Shapes\ProtocolConfiguration|null,
      *     lifecycleConfiguration?: Shapes\LifecycleConfiguration|null,
      *     environmentVariables?: array<string, string>|null,
+     *     filesystemConfigurations?: list<Shapes\FilesystemConfiguration>|null,
      *     tags?: array<string, string>|null
      * } $args
      */

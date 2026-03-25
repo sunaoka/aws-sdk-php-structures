@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $id
  * @property string|null $name
- * @property 'CREATING'|'DELETING'|'ACTIVE'|'FAILED'|null $status
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED'|'UPDATE_FAILED'|null $status
  * @property 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null $type
  * @property string|null $description
  * @property string|null $arn
@@ -29,7 +29,7 @@ class CollectionDetail extends Shape
      * @param array{
      *     id?: string|null,
      *     name?: string|null,
-     *     status?: 'CREATING'|'DELETING'|'ACTIVE'|'FAILED'|null,
+     *     status?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED'|'UPDATE_FAILED'|null,
      *     type?: 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null,
      *     description?: string|null,
      *     arn?: string|null,

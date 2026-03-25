@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\BedrockAgentCoreControl\GetAgentRuntime\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $mountPath
+ */
+class SessionStorageConfiguration extends Shape
+{
+    /**
+     * @param array{mountPath: string} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}
