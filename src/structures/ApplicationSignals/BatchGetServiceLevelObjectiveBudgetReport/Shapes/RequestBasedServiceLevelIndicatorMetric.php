@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<MetricDataQuery> $TotalRequestCountMetric
  * @property MonitoredRequestCountMetricDataQueries $MonitoredRequestCountMetric
  * @property DependencyConfig|null $DependencyConfig
+ * @property MetricSource|null $MetricSource
  */
 class RequestBasedServiceLevelIndicatorMetric extends Shape
 {
@@ -21,7 +22,8 @@ class RequestBasedServiceLevelIndicatorMetric extends Shape
      *     MetricType?: 'LATENCY'|'AVAILABILITY'|null,
      *     TotalRequestCountMetric: list<MetricDataQuery>,
      *     MonitoredRequestCountMetric: MonitoredRequestCountMetricDataQueries,
-     *     DependencyConfig?: DependencyConfig|null
+     *     DependencyConfig?: DependencyConfig|null,
+     *     MetricSource?: MetricSource|null
      * } $args
      */
     public function __construct(array $args)

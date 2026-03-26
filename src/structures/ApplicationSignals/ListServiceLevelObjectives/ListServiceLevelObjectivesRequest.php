@@ -10,9 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DependencyConfig|null $DependencyConfig
  * @property int<1, 50>|null $MaxResults
  * @property string|null $NextToken
+ * @property list<'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|'AppMonitor'|'Canary'|'Service'>|null $MetricSourceTypes
  * @property bool|null $IncludeLinkedAccounts
  * @property string|null $SloOwnerAwsAccountId
- * @property list<'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'>|null $MetricSourceTypes
+ * @property Shapes\MetricSource|null $MetricSource
  */
 class ListServiceLevelObjectivesRequest extends Request
 {
@@ -23,9 +24,10 @@ class ListServiceLevelObjectivesRequest extends Request
      *     DependencyConfig?: Shapes\DependencyConfig|null,
      *     MaxResults?: int<1, 50>|null,
      *     NextToken?: string|null,
+     *     MetricSourceTypes?: list<'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|'AppMonitor'|'Canary'|'Service'>|null,
      *     IncludeLinkedAccounts?: bool|null,
      *     SloOwnerAwsAccountId?: string|null,
-     *     MetricSourceTypes?: list<'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'>|null
+     *     MetricSource?: Shapes\MetricSource|null
      * } $args
      */
     public function __construct(array $args = [])

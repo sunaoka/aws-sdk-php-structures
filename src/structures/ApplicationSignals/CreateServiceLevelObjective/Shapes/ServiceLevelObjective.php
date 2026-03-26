@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PeriodBased'|'RequestBased'|null $EvaluationType
  * @property Goal $Goal
  * @property list<BurnRateConfiguration>|null $BurnRateConfigurations
- * @property 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|null $MetricSourceType
+ * @property 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|'AppMonitor'|'Canary'|'Service'|null $MetricSourceType
  */
 class ServiceLevelObjective extends Shape
 {
@@ -31,7 +31,7 @@ class ServiceLevelObjective extends Shape
      *     EvaluationType?: 'PeriodBased'|'RequestBased'|null,
      *     Goal: Goal,
      *     BurnRateConfigurations?: list<BurnRateConfiguration>|null,
-     *     MetricSourceType?: 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|null
+     *     MetricSourceType?: 'ServiceOperation'|'CloudWatchMetric'|'ServiceDependency'|'AppMonitor'|'Canary'|'Service'|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $PortalArn
  * @property Shapes\PortalContent|null $PortalContent
  * @property string|null $PortalId
- * @property 'PUBLISHED'|'PUBLISH_IN_PROGRESS'|'PUBLISH_FAILED'|'DISABLED'|null $PublishStatus
+ * @property 'PUBLISHED'|'PUBLISH_IN_PROGRESS'|'PUBLISH_FAILED'|'DISABLE_IN_PROGRESS'|'DISABLE_FAILED'|'DISABLED'|null $PublishStatus
  * @property string|null $RumAppMonitorName
  * @property Shapes\StatusException|null $StatusException
  * @property array<string, string>|null $Tags

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MetricName
  * @property string|null $Statistic
  * @property int<60, 900>|null $PeriodSeconds
+ * @property MetricSource|null $MetricSource
  * @property list<MetricDataQuery>|null $MetricDataQueries
  * @property DependencyConfig|null $DependencyConfig
  */
@@ -24,6 +25,7 @@ class ServiceLevelIndicatorMetricConfig extends Shape
      *     MetricName?: string|null,
      *     Statistic?: string|null,
      *     PeriodSeconds?: int<60, 900>|null,
+     *     MetricSource?: MetricSource|null,
      *     MetricDataQueries?: list<MetricDataQuery>|null,
      *     DependencyConfig?: DependencyConfig|null
      * } $args

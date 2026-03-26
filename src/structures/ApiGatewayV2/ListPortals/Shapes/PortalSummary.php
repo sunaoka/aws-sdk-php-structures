@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PortalContent $PortalContent
  * @property string $PortalId
  * @property Preview|null $Preview
- * @property 'PUBLISHED'|'PUBLISH_IN_PROGRESS'|'PUBLISH_FAILED'|'DISABLED'|null $PublishStatus
+ * @property 'PUBLISHED'|'PUBLISH_IN_PROGRESS'|'PUBLISH_FAILED'|'DISABLE_IN_PROGRESS'|'DISABLE_FAILED'|'DISABLED'|null $PublishStatus
  * @property string|null $RumAppMonitorName
  * @property StatusException|null $StatusException
  * @property array<string, string>|null $Tags
@@ -34,7 +34,7 @@ class PortalSummary extends Shape
      *     PortalContent: PortalContent,
      *     PortalId: string,
      *     Preview?: Preview|null,
-     *     PublishStatus?: 'PUBLISHED'|'PUBLISH_IN_PROGRESS'|'PUBLISH_FAILED'|'DISABLED'|null,
+     *     PublishStatus?: 'PUBLISHED'|'PUBLISH_IN_PROGRESS'|'PUBLISH_FAILED'|'DISABLE_IN_PROGRESS'|'DISABLE_FAILED'|'DISABLED'|null,
      *     RumAppMonitorName?: string|null,
      *     StatusException?: StatusException|null,
      *     Tags?: array<string, string>|null
