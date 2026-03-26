@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ReleaseLabel
  * @property Shapes\JobFlowInstancesConfig $Instances
  * @property list<Shapes\StepConfig>|null $Steps
+ * @property string|null $StepExecutionRoleArn
  * @property list<Shapes\BootstrapActionConfig>|null $BootstrapActions
  * @property list<string>|null $SupportedProducts
  * @property list<Shapes\SupportedProductConfig>|null $NewSupportedProducts
@@ -51,6 +52,7 @@ class RunJobFlowRequest extends Request
      *     ReleaseLabel?: string|null,
      *     Instances: Shapes\JobFlowInstancesConfig,
      *     Steps?: list<Shapes\StepConfig>|null,
+     *     StepExecutionRoleArn?: string|null,
      *     BootstrapActions?: list<Shapes\BootstrapActionConfig>|null,
      *     SupportedProducts?: list<string>|null,
      *     NewSupportedProducts?: list<Shapes\SupportedProductConfig>|null,

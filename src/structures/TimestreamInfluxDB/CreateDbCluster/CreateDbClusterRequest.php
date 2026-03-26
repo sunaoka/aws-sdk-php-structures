@@ -22,6 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'MULTI_NODE_READ_REPLICAS'|null $deploymentType
  * @property 'AUTOMATIC'|'NO_FAILOVER'|null $failoverMode
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
+ * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
  * @property array<string, string>|null $tags
  */
 class CreateDbClusterRequest extends Request
@@ -45,6 +46,7 @@ class CreateDbClusterRequest extends Request
      *     deploymentType?: 'MULTI_NODE_READ_REPLICAS'|null,
      *     failoverMode?: 'AUTOMATIC'|'NO_FAILOVER'|null,
      *     logDeliveryConfiguration?: Shapes\LogDeliveryConfiguration|null,
+     *     maintenanceSchedule?: Shapes\MaintenanceSchedule|null,
      *     tags?: array<string, string>|null
      * } $args
      */

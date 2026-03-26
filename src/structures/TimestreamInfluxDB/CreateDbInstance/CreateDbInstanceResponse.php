@@ -27,6 +27,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $dbClusterId
  * @property 'PRIMARY'|'STANDBY'|'REPLICA'|'INGEST'|'QUERY'|'COMPACT'|'PROCESS'|null $instanceMode
  * @property list<'PRIMARY'|'STANDBY'|'REPLICA'|'INGEST'|'QUERY'|'COMPACT'|'PROCESS'>|null $instanceModes
+ * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
+ * @property \Aws\Api\DateTimeResult|null $lastMaintenanceTime
+ * @property \Aws\Api\DateTimeResult|null $nextMaintenanceTime
  */
 class CreateDbInstanceResponse extends Response
 {
