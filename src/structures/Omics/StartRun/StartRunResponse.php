@@ -11,6 +11,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property string|null $uuid
  * @property string|null $runOutputUri
+ * @property Shapes\ConfigurationDetails|null $configuration
+ * @property string|null $networkingMode
  */
 class StartRunResponse extends Response
 {
