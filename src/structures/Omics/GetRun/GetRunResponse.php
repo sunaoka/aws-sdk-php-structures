@@ -42,6 +42,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $workflowOwnerId
  * @property string|null $workflowVersionName
  * @property string|null $workflowUuid
+ * @property 'RESTRICTED'|'VPC'|null $networkingMode
+ * @property Shapes\ConfigurationDetails|null $configuration
+ * @property Shapes\VpcConfigResponse|null $vpcConfig
  */
 class GetRunResponse extends Response
 {

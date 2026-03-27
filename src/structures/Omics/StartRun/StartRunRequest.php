@@ -24,6 +24,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'STATIC'|'DYNAMIC'|null $storageType
  * @property string|null $workflowOwnerId
  * @property string|null $workflowVersionName
+ * @property 'RESTRICTED'|'VPC'|null $networkingMode
+ * @property string|null $configurationName
  */
 class StartRunRequest extends Request
 {
@@ -47,7 +49,9 @@ class StartRunRequest extends Request
      *     retentionMode?: 'RETAIN'|'REMOVE'|null,
      *     storageType?: 'STATIC'|'DYNAMIC'|null,
      *     workflowOwnerId?: string|null,
-     *     workflowVersionName?: string|null
+     *     workflowVersionName?: string|null,
+     *     networkingMode?: 'RESTRICTED'|'VPC'|null,
+     *     configurationName?: string|null
      * } $args
      */
     public function __construct(array $args)

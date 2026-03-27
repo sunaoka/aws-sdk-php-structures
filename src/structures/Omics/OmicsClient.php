@@ -14,6 +14,7 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use CompleteMultipartReadSetUpload\CompleteMultipartReadSetUploadTrait;
     use CreateAnnotationStore\CreateAnnotationStoreTrait;
     use CreateAnnotationStoreVersion\CreateAnnotationStoreVersionTrait;
+    use CreateConfiguration\CreateConfigurationTrait;
     use CreateMultipartReadSetUpload\CreateMultipartReadSetUploadTrait;
     use CreateReferenceStore\CreateReferenceStoreTrait;
     use CreateRunCache\CreateRunCacheTrait;
@@ -26,6 +27,7 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use DeleteAnnotationStore\DeleteAnnotationStoreTrait;
     use DeleteAnnotationStoreVersions\DeleteAnnotationStoreVersionsTrait;
     use DeleteBatch\DeleteBatchTrait;
+    use DeleteConfiguration\DeleteConfigurationTrait;
     use DeleteReference\DeleteReferenceTrait;
     use DeleteReferenceStore\DeleteReferenceStoreTrait;
     use DeleteRun\DeleteRunTrait;
@@ -42,6 +44,7 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use GetAnnotationStore\GetAnnotationStoreTrait;
     use GetAnnotationStoreVersion\GetAnnotationStoreVersionTrait;
     use GetBatch\GetBatchTrait;
+    use GetConfiguration\GetConfigurationTrait;
     use GetReadSet\GetReadSetTrait;
     use GetReadSetActivationJob\GetReadSetActivationJobTrait;
     use GetReadSetExportJob\GetReadSetExportJobTrait;
@@ -66,6 +69,7 @@ class OmicsClient extends \Aws\Omics\OmicsClient
     use ListAnnotationStoreVersions\ListAnnotationStoreVersionsTrait;
     use ListAnnotationStores\ListAnnotationStoresTrait;
     use ListBatch\ListBatchTrait;
+    use ListConfigurations\ListConfigurationsTrait;
     use ListMultipartReadSetUploads\ListMultipartReadSetUploadsTrait;
     use ListReadSetActivationJobs\ListReadSetActivationJobsTrait;
     use ListReadSetExportJobs\ListReadSetExportJobsTrait;
