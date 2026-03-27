@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $queryString
  * @property int<0, max>|null $lastModified
  * @property list<string>|null $logGroupNames
+ * @property list<QueryParameter>|null $parameters
  */
 class QueryDefinition extends Shape
 {
@@ -21,7 +22,8 @@ class QueryDefinition extends Shape
      *     name?: string|null,
      *     queryString?: string|null,
      *     lastModified?: int<0, max>|null,
-     *     logGroupNames?: list<string>|null
+     *     logGroupNames?: list<string>|null,
+     *     parameters?: list<QueryParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

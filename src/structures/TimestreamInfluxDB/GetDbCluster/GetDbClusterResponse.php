@@ -21,10 +21,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool|null $publiclyAccessible
  * @property string|null $dbParameterGroupIdentifier
  * @property Shapes\LogDeliveryConfiguration|null $logDeliveryConfiguration
+ * @property Shapes\MaintenanceSchedule|null $maintenanceSchedule
+ * @property \Aws\Api\DateTimeResult|null $lastMaintenanceTime
+ * @property \Aws\Api\DateTimeResult|null $nextMaintenanceTime
  * @property string|null $influxAuthParametersSecretArn
  * @property list<string>|null $vpcSubnetIds
  * @property list<string>|null $vpcSecurityGroupIds
  * @property 'AUTOMATIC'|'NO_FAILOVER'|null $failoverMode
+ * @property Shapes\ClusterConfiguration|null $clusterConfiguration
  */
 class GetDbClusterResponse extends Response
 {
