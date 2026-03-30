@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<InputContentBlock>|null $content
  * @property string|null $directoryPath
  * @property string|null $taskId
+ * @property 'nodejs'|'deno'|'python'|null $runtime
  */
 class ToolArguments extends Shape
 {
@@ -27,7 +28,8 @@ class ToolArguments extends Shape
      *     paths?: list<string>|null,
      *     content?: list<InputContentBlock>|null,
      *     directoryPath?: string|null,
-     *     taskId?: string|null
+     *     taskId?: string|null,
+     *     runtime?: 'nodejs'|'deno'|'python'|null
      * } $args
      */
     public function __construct(array $args = [])

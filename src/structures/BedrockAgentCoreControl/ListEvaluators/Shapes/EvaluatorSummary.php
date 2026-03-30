@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $evaluatorId
  * @property string $evaluatorName
  * @property string|null $description
- * @property 'Builtin'|'Custom' $evaluatorType
+ * @property 'Builtin'|'Custom'|'CustomCode' $evaluatorType
  * @property 'TOOL_CALL'|'TRACE'|'SESSION'|null $level
  * @property 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING' $status
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -24,7 +24,7 @@ class EvaluatorSummary extends Shape
      *     evaluatorId: string,
      *     evaluatorName: string,
      *     description?: string|null,
-     *     evaluatorType: 'Builtin'|'Custom',
+     *     evaluatorType: 'Builtin'|'Custom'|'CustomCode',
      *     level?: 'TOOL_CALL'|'TRACE'|'SESSION'|null,
      *     status: 'ACTIVE'|'CREATING'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING',
      *     createdAt: \Aws\Api\DateTimeResult,
