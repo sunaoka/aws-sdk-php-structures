@@ -14,6 +14,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use CreateLogAnomalyDetector\CreateLogAnomalyDetectorTrait;
     use CreateLogGroup\CreateLogGroupTrait;
     use CreateLogStream\CreateLogStreamTrait;
+    use CreateLookupTable\CreateLookupTableTrait;
     use CreateScheduledQuery\CreateScheduledQueryTrait;
     use DeleteAccountPolicy\DeleteAccountPolicyTrait;
     use DeleteDataProtectionPolicy\DeleteDataProtectionPolicyTrait;
@@ -27,6 +28,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use DeleteLogAnomalyDetector\DeleteLogAnomalyDetectorTrait;
     use DeleteLogGroup\DeleteLogGroupTrait;
     use DeleteLogStream\DeleteLogStreamTrait;
+    use DeleteLookupTable\DeleteLookupTableTrait;
     use DeleteMetricFilter\DeleteMetricFilterTrait;
     use DeleteQueryDefinition\DeleteQueryDefinitionTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
@@ -47,6 +49,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use DescribeIndexPolicies\DescribeIndexPoliciesTrait;
     use DescribeLogGroups\DescribeLogGroupsTrait;
     use DescribeLogStreams\DescribeLogStreamsTrait;
+    use DescribeLookupTables\DescribeLookupTablesTrait;
     use DescribeMetricFilters\DescribeMetricFiltersTrait;
     use DescribeQueries\DescribeQueriesTrait;
     use DescribeQueryDefinitions\DescribeQueryDefinitionsTrait;
@@ -67,6 +70,7 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use GetLogGroupFields\GetLogGroupFieldsTrait;
     use GetLogObject\GetLogObjectTrait;
     use GetLogRecord\GetLogRecordTrait;
+    use GetLookupTable\GetLookupTableTrait;
     use GetQueryResults\GetQueryResultsTrait;
     use GetScheduledQuery\GetScheduledQueryTrait;
     use GetScheduledQueryHistory\GetScheduledQueryHistoryTrait;
@@ -111,5 +115,6 @@ class CloudWatchLogsClient extends \Aws\CloudWatchLogs\CloudWatchLogsClient
     use UpdateAnomaly\UpdateAnomalyTrait;
     use UpdateDeliveryConfiguration\UpdateDeliveryConfigurationTrait;
     use UpdateLogAnomalyDetector\UpdateLogAnomalyDetectorTrait;
+    use UpdateLookupTable\UpdateLookupTableTrait;
     use UpdateScheduledQuery\UpdateScheduledQueryTrait;
 }

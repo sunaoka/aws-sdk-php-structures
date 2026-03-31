@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateQueue;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $farmId
  * @property string $queueId
+ * @property string|null $clientToken
  * @property string|null $displayName
  * @property string|null $description
  * @property 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null $defaultBudgetAction
@@ -23,9 +23,9 @@ class UpdateQueueRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     farmId: string,
      *     queueId: string,
+     *     clientToken?: string|null,
      *     displayName?: string|null,
      *     description?: string|null,
      *     defaultBudgetAction?: 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null,

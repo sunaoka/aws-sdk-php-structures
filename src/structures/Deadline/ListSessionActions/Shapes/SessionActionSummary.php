@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $endedAt
  * @property \Aws\Api\DateTimeResult|null $workerUpdatedAt
  * @property float|null $progressPercent
- * @property SessionActionDefinitionSummary $definition
  * @property list<TaskRunManifestPropertiesResponse>|null $manifests
+ * @property SessionActionDefinitionSummary $definition
  */
 class SessionActionSummary extends Shape
 {
@@ -24,8 +24,8 @@ class SessionActionSummary extends Shape
      *     endedAt?: \Aws\Api\DateTimeResult|null,
      *     workerUpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     progressPercent?: float|null,
-     *     definition: SessionActionDefinitionSummary,
-     *     manifests?: list<TaskRunManifestPropertiesResponse>|null
+     *     manifests?: list<TaskRunManifestPropertiesResponse>|null,
+     *     definition: SessionActionDefinitionSummary
      * } $args
      */
     public function __construct(array $args)

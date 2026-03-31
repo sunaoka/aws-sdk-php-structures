@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateFleet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $farmId
  * @property string $fleetId
+ * @property string|null $clientToken
  * @property string|null $displayName
  * @property string|null $description
  * @property string|null $roleArn
@@ -20,9 +20,9 @@ class UpdateFleetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     farmId: string,
      *     fleetId: string,
+     *     clientToken?: string|null,
      *     displayName?: string|null,
      *     description?: string|null,
      *     roleArn?: string|null,

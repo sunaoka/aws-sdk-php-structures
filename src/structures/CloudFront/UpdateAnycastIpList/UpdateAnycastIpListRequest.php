@@ -7,6 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Id
  * @property 'ipv4'|'ipv6'|'dualstack'|null $IpAddressType
+ * @property list<Shapes\IpamCidrConfig>|null $IpamCidrConfigs
  * @property string $IfMatch
  */
 class UpdateAnycastIpListRequest extends Request
@@ -15,6 +16,7 @@ class UpdateAnycastIpListRequest extends Request
      * @param array{
      *     Id: string,
      *     IpAddressType?: 'ipv4'|'ipv6'|'dualstack'|null,
+     *     IpamCidrConfigs?: list<Shapes\IpamCidrConfig>|null,
      *     IfMatch: string
      * } $args
      */

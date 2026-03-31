@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RuleSetId
  * @property string|null $TrafficPolicyId
  * @property Shapes\IngressPointConfiguration|null $IngressPointConfiguration
+ * @property 'REQUIRED'|'OPTIONAL'|'FIPS'|null $TlsPolicy
  */
 class UpdateIngressPointRequest extends Request
 {
@@ -21,7 +22,8 @@ class UpdateIngressPointRequest extends Request
      *     StatusToUpdate?: 'ACTIVE'|'CLOSED'|null,
      *     RuleSetId?: string|null,
      *     TrafficPolicyId?: string|null,
-     *     IngressPointConfiguration?: Shapes\IngressPointConfiguration|null
+     *     IngressPointConfiguration?: Shapes\IngressPointConfiguration|null,
+     *     TlsPolicy?: 'REQUIRED'|'OPTIONAL'|'FIPS'|null
      * } $args
      */
     public function __construct(array $args)

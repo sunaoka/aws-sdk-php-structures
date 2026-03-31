@@ -15,6 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DeliverToMailboxAction|null $DeliverToMailbox
  * @property DeliverToQBusinessAction|null $DeliverToQBusiness
  * @property SnsAction|null $PublishToSns
+ * @property BounceAction|null $Bounce
+ * @property InvokeLambdaAction|null $InvokeLambda
  */
 class RuleAction extends Shape
 {
@@ -29,7 +31,9 @@ class RuleAction extends Shape
      *     ReplaceRecipient?: ReplaceRecipientAction|null,
      *     DeliverToMailbox?: DeliverToMailboxAction|null,
      *     DeliverToQBusiness?: DeliverToQBusinessAction|null,
-     *     PublishToSns?: SnsAction|null
+     *     PublishToSns?: SnsAction|null,
+     *     Bounce?: BounceAction|null,
+     *     InvokeLambda?: InvokeLambdaAction|null
      * } $args
      */
     public function __construct(array $args = [])

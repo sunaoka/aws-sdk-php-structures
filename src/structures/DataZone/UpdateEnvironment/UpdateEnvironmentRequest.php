@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $glossaryTerms
  * @property string|null $blueprintVersion
  * @property list<Shapes\EnvironmentParameter>|null $userParameters
+ * @property string|null $environmentConfigurationName
  */
 class UpdateEnvironmentRequest extends Request
 {
@@ -23,7 +24,8 @@ class UpdateEnvironmentRequest extends Request
      *     description?: string|null,
      *     glossaryTerms?: list<string>|null,
      *     blueprintVersion?: string|null,
-     *     userParameters?: list<Shapes\EnvironmentParameter>|null
+     *     userParameters?: list<Shapes\EnvironmentParameter>|null,
+     *     environmentConfigurationName?: string|null
      * } $args
      */
     public function __construct(array $args)

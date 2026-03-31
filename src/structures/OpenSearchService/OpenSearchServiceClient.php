@@ -28,6 +28,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DeleteOutboundConnection\DeleteOutboundConnectionTrait;
     use DeletePackage\DeletePackageTrait;
     use DeleteVpcEndpoint\DeleteVpcEndpointTrait;
+    use DeregisterCapability\DeregisterCapabilityTrait;
     use DescribeDomain\DescribeDomainTrait;
     use DescribeDomainAutoTunes\DescribeDomainAutoTunesTrait;
     use DescribeDomainChangeProgress\DescribeDomainChangeProgressTrait;
@@ -37,6 +38,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DescribeDomains\DescribeDomainsTrait;
     use DescribeDryRunProgress\DescribeDryRunProgressTrait;
     use DescribeInboundConnections\DescribeInboundConnectionsTrait;
+    use DescribeInsightDetails\DescribeInsightDetailsTrait;
     use DescribeInstanceTypeLimits\DescribeInstanceTypeLimitsTrait;
     use DescribeOutboundConnections\DescribeOutboundConnectionsTrait;
     use DescribePackages\DescribePackagesTrait;
@@ -46,6 +48,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use DissociatePackage\DissociatePackageTrait;
     use DissociatePackages\DissociatePackagesTrait;
     use GetApplication\GetApplicationTrait;
+    use GetCapability\GetCapabilityTrait;
     use GetCompatibleVersions\GetCompatibleVersionsTrait;
     use GetDataSource\GetDataSourceTrait;
     use GetDefaultApplicationSetting\GetDefaultApplicationSettingTrait;
@@ -61,6 +64,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use ListDomainMaintenances\ListDomainMaintenancesTrait;
     use ListDomainNames\ListDomainNamesTrait;
     use ListDomainsForPackage\ListDomainsForPackageTrait;
+    use ListInsights\ListInsightsTrait;
     use ListInstanceTypeDetails\ListInstanceTypeDetailsTrait;
     use ListPackagesForDomain\ListPackagesForDomainTrait;
     use ListScheduledActions\ListScheduledActionsTrait;
@@ -71,6 +75,7 @@ class OpenSearchServiceClient extends \Aws\OpenSearchService\OpenSearchServiceCl
     use ListVpcEndpointsForDomain\ListVpcEndpointsForDomainTrait;
     use PurchaseReservedInstanceOffering\PurchaseReservedInstanceOfferingTrait;
     use PutDefaultApplicationSetting\PutDefaultApplicationSettingTrait;
+    use RegisterCapability\RegisterCapabilityTrait;
     use RejectInboundConnection\RejectInboundConnectionTrait;
     use RemoveTags\RemoveTagsTrait;
     use RevokeVpcEndpointAccess\RevokeVpcEndpointAccessTrait;

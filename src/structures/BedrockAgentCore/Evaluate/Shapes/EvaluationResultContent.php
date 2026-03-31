@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TokenUsage|null $tokenUsage
  * @property string|null $errorMessage
  * @property string|null $errorCode
+ * @property list<string>|null $ignoredReferenceInputFields
  */
 class EvaluationResultContent extends Shape
 {
@@ -29,7 +30,8 @@ class EvaluationResultContent extends Shape
      *     label?: string|null,
      *     tokenUsage?: TokenUsage|null,
      *     errorMessage?: string|null,
-     *     errorCode?: string|null
+     *     errorCode?: string|null,
+     *     ignoredReferenceInputFields?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

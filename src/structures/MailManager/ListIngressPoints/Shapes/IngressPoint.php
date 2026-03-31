@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $IngressPointName
  * @property string $IngressPointId
- * @property 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED' $Status
- * @property 'OPEN'|'AUTH' $Type
+ * @property 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED'|'ASSOCIATED_VPC_ENDPOINT_DOES_NOT_EXIST' $Status
+ * @property 'OPEN'|'AUTH'|'MTLS' $Type
  * @property string|null $ARecord
  */
 class IngressPoint extends Shape
@@ -17,8 +17,8 @@ class IngressPoint extends Shape
      * @param array{
      *     IngressPointName: string,
      *     IngressPointId: string,
-     *     Status: 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED',
-     *     Type: 'OPEN'|'AUTH',
+     *     Status: 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED'|'ASSOCIATED_VPC_ENDPOINT_DOES_NOT_EXIST',
+     *     Type: 'OPEN'|'AUTH'|'MTLS',
      *     ARecord?: string|null
      * } $args
      */

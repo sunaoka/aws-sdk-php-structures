@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ManagedInstancesNetworkConfiguration|null $networkConfiguration
  * @property ManagedInstancesStorageConfiguration|null $storageConfiguration
  * @property bool|null $instanceMetadataTagsPropagation
+ * @property ManagedInstancesLocalStorageConfiguration|null $localStorageConfiguration
  * @property 'BASIC'|'DETAILED'|null $monitoring
  * @property InstanceRequirementsRequest|null $instanceRequirements
  * @property CapacityReservationRequest|null $capacityReservations
@@ -21,6 +22,7 @@ class InstanceLaunchTemplateUpdate extends Shape
      *     networkConfiguration?: ManagedInstancesNetworkConfiguration|null,
      *     storageConfiguration?: ManagedInstancesStorageConfiguration|null,
      *     instanceMetadataTagsPropagation?: bool|null,
+     *     localStorageConfiguration?: ManagedInstancesLocalStorageConfiguration|null,
      *     monitoring?: 'BASIC'|'DETAILED'|null,
      *     instanceRequirements?: InstanceRequirementsRequest|null,
      *     capacityReservations?: CapacityReservationRequest|null

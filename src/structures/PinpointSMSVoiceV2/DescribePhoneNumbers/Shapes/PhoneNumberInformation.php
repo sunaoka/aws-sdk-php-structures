@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'ACTIVE'|'ASSOCIATING'|'DISASSOCIATING'|'DELETED' $Status
  * @property string $IsoCountryCode
  * @property 'TRANSACTIONAL'|'PROMOTIONAL' $MessageType
- * @property list<'SMS'|'VOICE'|'MMS'> $NumberCapabilities
+ * @property list<'SMS'|'VOICE'|'MMS'|'RCS'> $NumberCapabilities
  * @property 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR' $NumberType
  * @property string $MonthlyLeasingPrice
  * @property bool $TwoWayEnabled
@@ -35,7 +35,7 @@ class PhoneNumberInformation extends Shape
      *     Status: 'PENDING'|'ACTIVE'|'ASSOCIATING'|'DISASSOCIATING'|'DELETED',
      *     IsoCountryCode: string,
      *     MessageType: 'TRANSACTIONAL'|'PROMOTIONAL',
-     *     NumberCapabilities: list<'SMS'|'VOICE'|'MMS'>,
+     *     NumberCapabilities: list<'SMS'|'VOICE'|'MMS'|'RCS'>,
      *     NumberType: 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR',
      *     MonthlyLeasingPrice: string,
      *     TwoWayEnabled: bool,

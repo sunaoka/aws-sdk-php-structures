@@ -76,6 +76,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use DescribeAnalysisPermissions\DescribeAnalysisPermissionsTrait;
     use DescribeAssetBundleExportJob\DescribeAssetBundleExportJobTrait;
     use DescribeAssetBundleImportJob\DescribeAssetBundleImportJobTrait;
+    use DescribeAutomationJob\DescribeAutomationJobTrait;
     use DescribeBrand\DescribeBrandTrait;
     use DescribeBrandAssignment\DescribeBrandAssignmentTrait;
     use DescribeBrandPublishedVersion\DescribeBrandPublishedVersionTrait;
@@ -180,6 +181,7 @@ class QuickSightClient extends \Aws\QuickSight\QuickSightClient
     use SearchTopics\SearchTopicsTrait;
     use StartAssetBundleExportJob\StartAssetBundleExportJobTrait;
     use StartAssetBundleImportJob\StartAssetBundleImportJobTrait;
+    use StartAutomationJob\StartAutomationJobTrait;
     use StartDashboardSnapshotJob\StartDashboardSnapshotJobTrait;
     use StartDashboardSnapshotJobSchedule\StartDashboardSnapshotJobScheduleTrait;
     use TagResource\TagResourceTrait;

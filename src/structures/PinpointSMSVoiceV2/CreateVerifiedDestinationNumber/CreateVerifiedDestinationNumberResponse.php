@@ -8,7 +8,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $VerifiedDestinationNumberArn
  * @property string $VerifiedDestinationNumberId
  * @property string $DestinationPhoneNumber
- * @property 'PENDING'|'VERIFIED' $Status
+ * @property 'PENDING'|'VERIFIED'|'UNSUPPORTED' $Status
+ * @property string|null $RcsAgentId
  * @property list<Shapes\Tag>|null $Tags
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  */

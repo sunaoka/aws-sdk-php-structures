@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AccessEndpoint>|null $AccessEndpoints
  * @property list<string>|null $EmbedHostDomains
  * @property StreamingExperienceSettings|null $StreamingExperienceSettings
+ * @property ContentRedirection|null $ContentRedirection
  */
 class Stack extends Shape
 {
@@ -37,7 +38,8 @@ class Stack extends Shape
      *     ApplicationSettings?: ApplicationSettingsResponse|null,
      *     AccessEndpoints?: list<AccessEndpoint>|null,
      *     EmbedHostDomains?: list<string>|null,
-     *     StreamingExperienceSettings?: StreamingExperienceSettings|null
+     *     StreamingExperienceSettings?: StreamingExperienceSettings|null,
+     *     ContentRedirection?: ContentRedirection|null
      * } $args
      */
     public function __construct(array $args)

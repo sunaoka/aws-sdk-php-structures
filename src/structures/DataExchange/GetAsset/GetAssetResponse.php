@@ -14,6 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Name
  * @property string|null $RevisionId
  * @property string|null $SourceId
+ * @property array<string, string>|null $Tags
  * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
 class GetAssetResponse extends Response

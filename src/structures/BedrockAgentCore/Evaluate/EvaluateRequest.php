@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $evaluatorId
  * @property Shapes\EvaluationInput $evaluationInput
  * @property Shapes\EvaluationTarget|null $evaluationTarget
+ * @property list<Shapes\EvaluationReferenceInput>|null $evaluationReferenceInputs
  */
 class EvaluateRequest extends Request
 {
@@ -15,7 +16,8 @@ class EvaluateRequest extends Request
      * @param array{
      *     evaluatorId: string,
      *     evaluationInput: Shapes\EvaluationInput,
-     *     evaluationTarget?: Shapes\EvaluationTarget|null
+     *     evaluationTarget?: Shapes\EvaluationTarget|null,
+     *     evaluationReferenceInputs?: list<Shapes\EvaluationReferenceInput>|null
      * } $args
      */
     public function __construct(array $args)

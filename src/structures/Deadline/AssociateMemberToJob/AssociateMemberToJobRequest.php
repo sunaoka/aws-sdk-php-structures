@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $farmId
  * @property string $queueId
  * @property string $jobId
- * @property string $principalId
  * @property 'USER'|'GROUP' $principalType
  * @property string $identityStoreId
  * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER' $membershipLevel
+ * @property string $principalId
  */
 class AssociateMemberToJobRequest extends Request
 {
@@ -20,10 +20,10 @@ class AssociateMemberToJobRequest extends Request
      *     farmId: string,
      *     queueId: string,
      *     jobId: string,
-     *     principalId: string,
      *     principalType: 'USER'|'GROUP',
      *     identityStoreId: string,
-     *     membershipLevel: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER'
+     *     membershipLevel: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'MANAGER',
+     *     principalId: string
      * } $args
      */
     public function __construct(array $args)

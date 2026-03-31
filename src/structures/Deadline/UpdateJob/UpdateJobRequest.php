@@ -5,6 +5,9 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $farmId
+ * @property string $queueId
+ * @property string $jobId
  * @property string|null $clientToken
  * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetTaskRunStatus
  * @property int<0, 100>|null $priority
@@ -14,14 +17,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<-1, 2147483647>|null $maxWorkerCount
  * @property string|null $name
  * @property string|null $description
- * @property string $farmId
- * @property string $queueId
- * @property string $jobId
  */
 class UpdateJobRequest extends Request
 {
     /**
      * @param array{
+     *     farmId: string,
+     *     queueId: string,
+     *     jobId: string,
      *     clientToken?: string|null,
      *     targetTaskRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null,
      *     priority?: int<0, 100>|null,
@@ -30,10 +33,7 @@ class UpdateJobRequest extends Request
      *     lifecycleStatus?: 'ARCHIVED'|null,
      *     maxWorkerCount?: int<-1, 2147483647>|null,
      *     name?: string|null,
-     *     description?: string|null,
-     *     farmId: string,
-     *     queueId: string,
-     *     jobId: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

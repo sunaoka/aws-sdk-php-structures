@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SecurityAgent\UpdateAgentSpace\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string|null $vpcArn
+ * @property list<string>|null $securityGroupArns
+ * @property list<string>|null $subnetArns
+ */
+class VpcConfig extends Shape
+{
+    /**
+     * @param array{
+     *     vpcArn?: string|null,
+     *     securityGroupArns?: list<string>|null,
+     *     subnetArns?: list<string>|null
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

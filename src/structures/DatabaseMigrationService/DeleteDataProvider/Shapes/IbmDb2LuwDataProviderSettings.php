@@ -10,6 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DatabaseName
  * @property 'none'|'require'|'verify-ca'|'verify-full'|null $SslMode
  * @property string|null $CertificateArn
+ * @property int|null $EncryptionAlgorithm
+ * @property int|null $SecurityMechanism
  * @property string|null $S3Path
  * @property string|null $S3AccessRoleArn
  */
@@ -22,6 +24,8 @@ class IbmDb2LuwDataProviderSettings extends Shape
      *     DatabaseName?: string|null,
      *     SslMode?: 'none'|'require'|'verify-ca'|'verify-full'|null,
      *     CertificateArn?: string|null,
+     *     EncryptionAlgorithm?: int|null,
+     *     SecurityMechanism?: int|null,
      *     S3Path?: string|null,
      *     S3AccessRoleArn?: string|null
      * } $args

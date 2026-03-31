@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DeploymentProperties|null $deploymentProperties
  * @property string|null $environmentBlueprintId
  * @property string|null $environmentConfigurationId
+ * @property string|null $environmentConfigurationName
  */
 class CreateEnvironmentResponse extends Response
 {
