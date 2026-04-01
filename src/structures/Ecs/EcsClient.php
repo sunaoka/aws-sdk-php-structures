@@ -6,6 +6,7 @@ class EcsClient extends \Aws\Ecs\EcsClient
 {
     use CreateCapacityProvider\CreateCapacityProviderTrait;
     use CreateCluster\CreateClusterTrait;
+    use CreateDaemon\CreateDaemonTrait;
     use CreateExpressGatewayService\CreateExpressGatewayServiceTrait;
     use CreateService\CreateServiceTrait;
     use CreateTaskSet\CreateTaskSetTrait;
@@ -13,6 +14,8 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use DeleteAttributes\DeleteAttributesTrait;
     use DeleteCapacityProvider\DeleteCapacityProviderTrait;
     use DeleteCluster\DeleteClusterTrait;
+    use DeleteDaemon\DeleteDaemonTrait;
+    use DeleteDaemonTaskDefinition\DeleteDaemonTaskDefinitionTrait;
     use DeleteExpressGatewayService\DeleteExpressGatewayServiceTrait;
     use DeleteService\DeleteServiceTrait;
     use DeleteTaskDefinitions\DeleteTaskDefinitionsTrait;
@@ -22,6 +25,10 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use DescribeCapacityProviders\DescribeCapacityProvidersTrait;
     use DescribeClusters\DescribeClustersTrait;
     use DescribeContainerInstances\DescribeContainerInstancesTrait;
+    use DescribeDaemon\DescribeDaemonTrait;
+    use DescribeDaemonDeployments\DescribeDaemonDeploymentsTrait;
+    use DescribeDaemonRevisions\DescribeDaemonRevisionsTrait;
+    use DescribeDaemonTaskDefinition\DescribeDaemonTaskDefinitionTrait;
     use DescribeExpressGatewayService\DescribeExpressGatewayServiceTrait;
     use DescribeServiceDeployments\DescribeServiceDeploymentsTrait;
     use DescribeServiceRevisions\DescribeServiceRevisionsTrait;
@@ -36,6 +43,9 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use ListAttributes\ListAttributesTrait;
     use ListClusters\ListClustersTrait;
     use ListContainerInstances\ListContainerInstancesTrait;
+    use ListDaemonDeployments\ListDaemonDeploymentsTrait;
+    use ListDaemonTaskDefinitions\ListDaemonTaskDefinitionsTrait;
+    use ListDaemons\ListDaemonsTrait;
     use ListServiceDeployments\ListServiceDeploymentsTrait;
     use ListServices\ListServicesTrait;
     use ListServicesByNamespace\ListServicesByNamespaceTrait;
@@ -48,6 +58,7 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use PutAttributes\PutAttributesTrait;
     use PutClusterCapacityProviders\PutClusterCapacityProvidersTrait;
     use RegisterContainerInstance\RegisterContainerInstanceTrait;
+    use RegisterDaemonTaskDefinition\RegisterDaemonTaskDefinitionTrait;
     use RegisterTaskDefinition\RegisterTaskDefinitionTrait;
     use RunTask\RunTaskTrait;
     use StartTask\StartTaskTrait;
@@ -63,6 +74,7 @@ class EcsClient extends \Aws\Ecs\EcsClient
     use UpdateClusterSettings\UpdateClusterSettingsTrait;
     use UpdateContainerAgent\UpdateContainerAgentTrait;
     use UpdateContainerInstancesState\UpdateContainerInstancesStateTrait;
+    use UpdateDaemon\UpdateDaemonTrait;
     use UpdateExpressGatewayService\UpdateExpressGatewayServiceTrait;
     use UpdateService\UpdateServiceTrait;
     use UpdateServicePrimaryTaskSet\UpdateServicePrimaryTaskSetTrait;
