@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $provider
  * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE'|null $status
  * @property string|null $environmentConfigurationId
+ * @property string|null $environmentConfigurationName
  */
 class EnvironmentSummary extends Shape
 {
@@ -37,7 +38,8 @@ class EnvironmentSummary extends Shape
      *     awsAccountRegion?: string|null,
      *     provider: string,
      *     status?: 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE'|null,
-     *     environmentConfigurationId?: string|null
+     *     environmentConfigurationId?: string|null,
+     *     environmentConfigurationName?: string|null
      * } $args
      */
     public function __construct(array $args)

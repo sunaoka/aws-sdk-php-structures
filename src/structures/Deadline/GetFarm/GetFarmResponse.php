@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $farmId
  * @property string $displayName
- * @property string|null $description
  * @property string|null $kmsKeyArn
- * @property float $costScaleFactor
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
+ * @property string|null $description
+ * @property float $costScaleFactor
  */
 class GetFarmResponse extends Response
 {

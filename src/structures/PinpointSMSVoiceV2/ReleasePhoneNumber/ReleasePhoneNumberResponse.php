@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PENDING'|'ACTIVE'|'ASSOCIATING'|'DISASSOCIATING'|'DELETED'|null $Status
  * @property string|null $IsoCountryCode
  * @property 'TRANSACTIONAL'|'PROMOTIONAL'|null $MessageType
- * @property list<'SMS'|'VOICE'|'MMS'>|null $NumberCapabilities
+ * @property list<'SMS'|'VOICE'|'MMS'|'RCS'>|null $NumberCapabilities
  * @property 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR'|null $NumberType
  * @property string|null $MonthlyLeasingPrice
  * @property bool|null $TwoWayEnabled

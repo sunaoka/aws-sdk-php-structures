@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Deadline\ListBudgets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $nextToken
  * @property string $farmId
+ * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
  * @property 'ACTIVE'|'INACTIVE'|null $status
  */
@@ -14,8 +14,8 @@ class ListBudgetsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string|null,
      *     farmId: string,
+     *     nextToken?: string|null,
      *     maxResults?: int<1, 100>|null,
      *     status?: 'ACTIVE'|'INACTIVE'|null
      * } $args

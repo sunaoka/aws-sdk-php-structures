@@ -19,5 +19,6 @@ class AcmClient extends \Aws\Acm\AcmClient
     use RequestCertificate\RequestCertificateTrait;
     use ResendValidationEmail\ResendValidationEmailTrait;
     use RevokeCertificate\RevokeCertificateTrait;
+    use SearchCertificates\SearchCertificatesTrait;
     use UpdateCertificateOptions\UpdateCertificateOptionsTrait;
 }

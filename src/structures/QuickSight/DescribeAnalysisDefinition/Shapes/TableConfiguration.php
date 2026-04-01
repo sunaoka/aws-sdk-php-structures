@@ -12,6 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TableFieldOptions|null $FieldOptions
  * @property TablePaginatedReportOptions|null $PaginatedReportOptions
  * @property list<TableInlineVisualization>|null $TableInlineVisualizations
+ * @property TooltipOptions|null $Tooltip
  * @property DashboardCustomizationVisualOptions|null $DashboardCustomizationVisualOptions
  * @property VisualInteractionOptions|null $Interactions
  */
@@ -26,6 +27,7 @@ class TableConfiguration extends Shape
      *     FieldOptions?: TableFieldOptions|null,
      *     PaginatedReportOptions?: TablePaginatedReportOptions|null,
      *     TableInlineVisualizations?: list<TableInlineVisualization>|null,
+     *     Tooltip?: TooltipOptions|null,
      *     DashboardCustomizationVisualOptions?: DashboardCustomizationVisualOptions|null,
      *     Interactions?: VisualInteractionOptions|null
      * } $args

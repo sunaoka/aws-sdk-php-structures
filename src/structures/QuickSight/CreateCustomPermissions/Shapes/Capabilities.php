@@ -216,8 +216,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DENY'|null $BuildCalculatedFieldWithQ
  * @property 'DENY'|null $CreateDashboardExecutiveSummaryWithQ
  * @property 'DENY'|null $Space
+ * @property 'DENY'|null $CreateSpaces
+ * @property 'DENY'|null $ShareSpaces
  * @property 'DENY'|null $ChatAgent
  * @property 'DENY'|null $CreateChatAgents
+ * @property 'DENY'|null $ShareChatAgents
  * @property 'DENY'|null $Research
  * @property 'DENY'|null $SelfUpgradeUserRole
  * @property 'DENY'|null $Extension
@@ -438,8 +441,11 @@ class Capabilities extends Shape
      *     BuildCalculatedFieldWithQ?: 'DENY'|null,
      *     CreateDashboardExecutiveSummaryWithQ?: 'DENY'|null,
      *     Space?: 'DENY'|null,
+     *     CreateSpaces?: 'DENY'|null,
+     *     ShareSpaces?: 'DENY'|null,
      *     ChatAgent?: 'DENY'|null,
      *     CreateChatAgents?: 'DENY'|null,
+     *     ShareChatAgents?: 'DENY'|null,
      *     Research?: 'DENY'|null,
      *     SelfUpgradeUserRole?: 'DENY'|null,
      *     Extension?: 'DENY'|null,

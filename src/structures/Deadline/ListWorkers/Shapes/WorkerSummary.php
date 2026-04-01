@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Deadline\ListWorkers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $workerId
  * @property string $farmId
  * @property string $fleetId
- * @property 'CREATED'|'STARTED'|'STOPPING'|'STOPPED'|'NOT_RESPONDING'|'NOT_COMPATIBLE'|'RUNNING'|'IDLE' $status
+ * @property string $workerId
  * @property HostPropertiesResponse|null $hostProperties
+ * @property 'CREATED'|'STARTED'|'STOPPING'|'STOPPED'|'NOT_RESPONDING'|'NOT_COMPATIBLE'|'RUNNING'|'IDLE' $status
  * @property LogConfiguration|null $log
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
@@ -20,11 +20,11 @@ class WorkerSummary extends Shape
 {
     /**
      * @param array{
-     *     workerId: string,
      *     farmId: string,
      *     fleetId: string,
-     *     status: 'CREATED'|'STARTED'|'STOPPING'|'STOPPED'|'NOT_RESPONDING'|'NOT_COMPATIBLE'|'RUNNING'|'IDLE',
+     *     workerId: string,
      *     hostProperties?: HostPropertiesResponse|null,
+     *     status: 'CREATED'|'STARTED'|'STOPPING'|'STOPPED'|'NOT_RESPONDING'|'NOT_COMPATIBLE'|'RUNNING'|'IDLE',
      *     log?: LogConfiguration|null,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     createdBy: string,

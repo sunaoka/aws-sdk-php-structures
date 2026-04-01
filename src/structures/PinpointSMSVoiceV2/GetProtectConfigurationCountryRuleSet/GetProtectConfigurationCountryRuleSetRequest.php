@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProtectConfigurationId
- * @property 'SMS'|'VOICE'|'MMS' $NumberCapability
+ * @property 'SMS'|'VOICE'|'MMS'|'RCS' $NumberCapability
  */
 class GetProtectConfigurationCountryRuleSetRequest extends Request
 {
     /**
      * @param array{
      *     ProtectConfigurationId: string,
-     *     NumberCapability: 'SMS'|'VOICE'|'MMS'
+     *     NumberCapability: 'SMS'|'VOICE'|'MMS'|'RCS'
      * } $args
      */
     public function __construct(array $args)

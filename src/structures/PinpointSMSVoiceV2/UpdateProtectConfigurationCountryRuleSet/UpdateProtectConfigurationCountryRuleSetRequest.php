@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProtectConfigurationId
- * @property 'SMS'|'VOICE'|'MMS' $NumberCapability
+ * @property 'SMS'|'VOICE'|'MMS'|'RCS' $NumberCapability
  * @property array<string, Shapes\ProtectConfigurationCountryRuleSetInformation> $CountryRuleSetUpdates
  */
 class UpdateProtectConfigurationCountryRuleSetRequest extends Request
@@ -14,7 +14,7 @@ class UpdateProtectConfigurationCountryRuleSetRequest extends Request
     /**
      * @param array{
      *     ProtectConfigurationId: string,
-     *     NumberCapability: 'SMS'|'VOICE'|'MMS',
+     *     NumberCapability: 'SMS'|'VOICE'|'MMS'|'RCS',
      *     CountryRuleSetUpdates: array<string, Shapes\ProtectConfigurationCountryRuleSetInformation>
      * } $args
      */

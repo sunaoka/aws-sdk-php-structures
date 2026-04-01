@@ -8,7 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $VerifiedDestinationNumberArn
  * @property string $VerifiedDestinationNumberId
  * @property string $DestinationPhoneNumber
- * @property 'PENDING'|'VERIFIED' $Status
+ * @property 'PENDING'|'VERIFIED'|'UNSUPPORTED' $Status
+ * @property string|null $RcsAgentId
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  */
 class VerifiedDestinationNumberInformation extends Shape
@@ -18,7 +19,8 @@ class VerifiedDestinationNumberInformation extends Shape
      *     VerifiedDestinationNumberArn: string,
      *     VerifiedDestinationNumberId: string,
      *     DestinationPhoneNumber: string,
-     *     Status: 'PENDING'|'VERIFIED',
+     *     Status: 'PENDING'|'VERIFIED'|'UNSUPPORTED',
+     *     RcsAgentId?: string|null,
      *     CreatedTimestamp: \Aws\Api\DateTimeResult
      * } $args
      */

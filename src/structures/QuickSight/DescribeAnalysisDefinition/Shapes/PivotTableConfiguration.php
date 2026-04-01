@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PivotTableTotalOptions|null $TotalOptions
  * @property PivotTableFieldOptions|null $FieldOptions
  * @property PivotTablePaginatedReportOptions|null $PaginatedReportOptions
+ * @property TooltipOptions|null $Tooltip
  * @property DashboardCustomizationVisualOptions|null $DashboardCustomizationVisualOptions
  * @property VisualInteractionOptions|null $Interactions
  */
@@ -24,6 +25,7 @@ class PivotTableConfiguration extends Shape
      *     TotalOptions?: PivotTableTotalOptions|null,
      *     FieldOptions?: PivotTableFieldOptions|null,
      *     PaginatedReportOptions?: PivotTablePaginatedReportOptions|null,
+     *     Tooltip?: TooltipOptions|null,
      *     DashboardCustomizationVisualOptions?: DashboardCustomizationVisualOptions|null,
      *     Interactions?: VisualInteractionOptions|null
      * } $args

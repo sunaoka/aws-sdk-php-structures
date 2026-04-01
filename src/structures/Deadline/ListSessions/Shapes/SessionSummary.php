@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED' $lifecycleStatus
  * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property 'ENDED'|null $targetLifecycleStatus
  * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string|null $updatedBy
- * @property 'ENDED'|null $targetLifecycleStatus
  */
 class SessionSummary extends Shape
 {
@@ -25,9 +25,9 @@ class SessionSummary extends Shape
      *     startedAt: \Aws\Api\DateTimeResult,
      *     lifecycleStatus: 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED',
      *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     targetLifecycleStatus?: 'ENDED'|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     updatedBy?: string|null,
-     *     targetLifecycleStatus?: 'ENDED'|null
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

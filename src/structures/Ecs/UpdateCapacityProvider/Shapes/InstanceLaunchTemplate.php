@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ec2InstanceProfileArn
  * @property ManagedInstancesNetworkConfiguration $networkConfiguration
  * @property ManagedInstancesStorageConfiguration|null $storageConfiguration
+ * @property ManagedInstancesLocalStorageConfiguration|null $localStorageConfiguration
  * @property 'BASIC'|'DETAILED'|null $monitoring
  * @property 'ON_DEMAND'|'SPOT'|'RESERVED'|null $capacityOptionType
  * @property bool|null $instanceMetadataTagsPropagation
@@ -22,6 +23,7 @@ class InstanceLaunchTemplate extends Shape
      *     ec2InstanceProfileArn: string,
      *     networkConfiguration: ManagedInstancesNetworkConfiguration,
      *     storageConfiguration?: ManagedInstancesStorageConfiguration|null,
+     *     localStorageConfiguration?: ManagedInstancesLocalStorageConfiguration|null,
      *     monitoring?: 'BASIC'|'DETAILED'|null,
      *     capacityOptionType?: 'ON_DEMAND'|'SPOT'|'RESERVED'|null,
      *     instanceMetadataTagsPropagation?: bool|null,

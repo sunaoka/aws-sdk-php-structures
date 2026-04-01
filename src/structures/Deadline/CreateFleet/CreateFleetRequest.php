@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateFleet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $farmId
+ * @property string|null $clientToken
  * @property string $displayName
  * @property string|null $description
  * @property string $roleArn
@@ -20,8 +20,8 @@ class CreateFleetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     farmId: string,
+     *     clientToken?: string|null,
      *     displayName: string,
      *     description?: string|null,
      *     roleArn: string,

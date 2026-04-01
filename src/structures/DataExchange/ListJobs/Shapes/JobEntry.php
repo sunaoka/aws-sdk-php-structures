@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
+ * @property AssetConfiguration|null $AssetConfiguration
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property ResponseDetails $Details
  * @property list<JobError>|null $Errors
@@ -19,6 +20,7 @@ class JobEntry extends Shape
     /**
      * @param array{
      *     Arn: string,
+     *     AssetConfiguration?: AssetConfiguration|null,
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     Details: ResponseDetails,
      *     Errors?: list<JobError>|null,

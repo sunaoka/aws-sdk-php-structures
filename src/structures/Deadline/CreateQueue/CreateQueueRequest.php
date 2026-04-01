@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateQueue;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $clientToken
  * @property string $farmId
+ * @property string|null $clientToken
  * @property string $displayName
  * @property string|null $description
  * @property 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null $defaultBudgetAction
@@ -21,8 +21,8 @@ class CreateQueueRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string|null,
      *     farmId: string,
+     *     clientToken?: string|null,
      *     displayName: string,
      *     description?: string|null,
      *     defaultBudgetAction?: 'NONE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|null,

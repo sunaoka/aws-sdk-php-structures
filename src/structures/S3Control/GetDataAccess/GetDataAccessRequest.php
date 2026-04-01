@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<900, 43200>|null $DurationSeconds
  * @property 'Minimal'|'Default'|null $Privilege
  * @property 'Object'|null $TargetType
+ * @property string|null $AuditContext
  */
 class GetDataAccessRequest extends Request
 {
@@ -21,7 +22,8 @@ class GetDataAccessRequest extends Request
      *     Permission: 'READ'|'WRITE'|'READWRITE',
      *     DurationSeconds?: int<900, 43200>|null,
      *     Privilege?: 'Minimal'|'Default'|null,
-     *     TargetType?: 'Object'|null
+     *     TargetType?: 'Object'|null,
+     *     AuditContext?: string|null
      * } $args
      */
     public function __construct(array $args)

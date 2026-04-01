@@ -26,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property float|null $percentProgress
  * @property ManagedServices|null $managedServices
+ * @property list<string>|null $ec2PlacementGroupIds
  */
 class OdbNetwork extends Shape
 {
@@ -51,7 +52,8 @@ class OdbNetwork extends Shape
      *     ociDnsForwardingConfigs?: list<OciDnsForwardingConfig>|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     percentProgress?: float|null,
-     *     managedServices?: ManagedServices|null
+     *     managedServices?: ManagedServices|null,
+     *     ec2PlacementGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

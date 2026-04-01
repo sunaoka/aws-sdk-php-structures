@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InferenceComponentComputeResourceRequirements|null $ComputeResourceRequirements
  * @property string|null $BaseInferenceComponentName
  * @property InferenceComponentDataCacheConfigSummary|null $DataCacheConfig
+ * @property InferenceComponentSchedulingConfig|null $SchedulingConfig
  */
 class InferenceComponentSpecificationSummary extends Shape
 {
@@ -21,7 +22,8 @@ class InferenceComponentSpecificationSummary extends Shape
      *     StartupParameters?: InferenceComponentStartupParameters|null,
      *     ComputeResourceRequirements?: InferenceComponentComputeResourceRequirements|null,
      *     BaseInferenceComponentName?: string|null,
-     *     DataCacheConfig?: InferenceComponentDataCacheConfigSummary|null
+     *     DataCacheConfig?: InferenceComponentDataCacheConfigSummary|null,
+     *     SchedulingConfig?: InferenceComponentSchedulingConfig|null
      * } $args
      */
     public function __construct(array $args = [])

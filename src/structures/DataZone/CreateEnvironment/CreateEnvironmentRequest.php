@@ -17,6 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $environmentBlueprintIdentifier
  * @property int|null $deploymentOrder
  * @property string|null $environmentConfigurationId
+ * @property string|null $environmentConfigurationName
  */
 class CreateEnvironmentRequest extends Request
 {
@@ -33,7 +34,8 @@ class CreateEnvironmentRequest extends Request
      *     environmentAccountRegion?: string|null,
      *     environmentBlueprintIdentifier?: string|null,
      *     deploymentOrder?: int|null,
-     *     environmentConfigurationId?: string|null
+     *     environmentConfigurationId?: string|null,
+     *     environmentConfigurationName?: string|null
      * } $args
      */
     public function __construct(array $args)
