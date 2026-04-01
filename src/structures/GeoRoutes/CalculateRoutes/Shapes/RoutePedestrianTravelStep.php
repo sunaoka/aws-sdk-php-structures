@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RouteRoundaboutPassStepDetails|null $RoundaboutPassStepDetails
  * @property RouteSignpost|null $Signpost
  * @property RouteTurnStepDetails|null $TurnStepDetails
- * @property 'Arrive'|'Continue'|'Depart'|'Keep'|'RoundaboutEnter'|'RoundaboutExit'|'RoundaboutPass'|'Turn'|'Exit'|'Ramp'|'UTurn' $Type
+ * @property 'Arrive'|'Continue'|'Depart'|'Keep'|'RoundaboutEnter'|'RoundaboutExit'|'RoundaboutPass'|'Turn' $Type
  */
 class RoutePedestrianTravelStep extends Shape
 {
@@ -39,7 +39,7 @@ class RoutePedestrianTravelStep extends Shape
      *     RoundaboutPassStepDetails?: RouteRoundaboutPassStepDetails|null,
      *     Signpost?: RouteSignpost|null,
      *     TurnStepDetails?: RouteTurnStepDetails|null,
-     *     Type: 'Arrive'|'Continue'|'Depart'|'Keep'|'RoundaboutEnter'|'RoundaboutExit'|'RoundaboutPass'|'Turn'|'Exit'|'Ramp'|'UTurn'
+     *     Type: 'Arrive'|'Continue'|'Depart'|'Keep'|'RoundaboutEnter'|'RoundaboutExit'|'RoundaboutPass'|'Turn'
      * } $args
      */
     public function __construct(array $args)

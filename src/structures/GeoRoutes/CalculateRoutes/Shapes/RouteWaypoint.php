@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $PassThrough
  * @property list<double> $Position
  * @property RouteSideOfStreetOptions|null $SideOfStreet
- * @property int<0, 4294967295>|null $StopDuration
+ * @property int<min, 49999>|null $StopDuration
  */
 class RouteWaypoint extends Shape
 {
@@ -25,7 +25,7 @@ class RouteWaypoint extends Shape
      *     PassThrough?: bool|null,
      *     Position: list<double>,
      *     SideOfStreet?: RouteSideOfStreetOptions|null,
-     *     StopDuration?: int<0, 4294967295>|null
+     *     StopDuration?: int<min, 49999>|null
      * } $args
      */
     public function __construct(array $args)

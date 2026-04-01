@@ -27,6 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProxyConfiguration|null $proxyConfiguration
  * @property \Aws\Api\DateTimeResult|null $registeredAt
  * @property \Aws\Api\DateTimeResult|null $deregisteredAt
+ * @property \Aws\Api\DateTimeResult|null $deleteRequestedAt
  * @property string|null $registeredBy
  * @property EphemeralStorage|null $ephemeralStorage
  * @property bool|null $enableFaultInjection
@@ -57,6 +58,7 @@ class TaskDefinition extends Shape
      *     proxyConfiguration?: ProxyConfiguration|null,
      *     registeredAt?: \Aws\Api\DateTimeResult|null,
      *     deregisteredAt?: \Aws\Api\DateTimeResult|null,
+     *     deleteRequestedAt?: \Aws\Api\DateTimeResult|null,
      *     registeredBy?: string|null,
      *     ephemeralStorage?: EphemeralStorage|null,
      *     enableFaultInjection?: bool|null

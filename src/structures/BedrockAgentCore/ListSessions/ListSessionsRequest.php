@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $actorId
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
+ * @property Shapes\SessionFilter|null $filter
  */
 class ListSessionsRequest extends Request
 {
@@ -17,7 +18,8 @@ class ListSessionsRequest extends Request
      *     memoryId: string,
      *     actorId: string,
      *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null
+     *     nextToken?: string|null,
+     *     filter?: Shapes\SessionFilter|null
      * } $args
      */
     public function __construct(array $args)

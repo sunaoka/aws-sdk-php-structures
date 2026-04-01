@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\CredentialProviderConfiguration> $credentialProviderConfigurations
  * @property \Aws\Api\DateTimeResult|null $lastSynchronizedAt
  * @property Shapes\MetadataConfiguration|null $metadataConfiguration
+ * @property Shapes\PrivateEndpoint|null $privateEndpoint
+ * @property list<Shapes\ManagedResourceDetails>|null $privateEndpointManagedResources
  */
 class UpdateGatewayTargetResponse extends Response
 {

@@ -17,6 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CredentialProviderConfiguration> $credentialProviderConfigurations
  * @property \Aws\Api\DateTimeResult|null $lastSynchronizedAt
  * @property MetadataConfiguration|null $metadataConfiguration
+ * @property PrivateEndpoint|null $privateEndpoint
+ * @property list<ManagedResourceDetails>|null $privateEndpointManagedResources
  */
 class GatewayTarget extends Shape
 {
@@ -33,7 +35,9 @@ class GatewayTarget extends Shape
      *     targetConfiguration: TargetConfiguration,
      *     credentialProviderConfigurations: list<CredentialProviderConfiguration>,
      *     lastSynchronizedAt?: \Aws\Api\DateTimeResult|null,
-     *     metadataConfiguration?: MetadataConfiguration|null
+     *     metadataConfiguration?: MetadataConfiguration|null,
+     *     privateEndpoint?: PrivateEndpoint|null,
+     *     privateEndpointManagedResources?: list<ManagedResourceDetails>|null
      * } $args
      */
     public function __construct(array $args)
