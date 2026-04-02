@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $delimiter
  * @property list<string>|null $columns
  * @property string|null $source
+ * @property string|null $destination
  */
 class CSV extends Shape
 {
@@ -17,7 +18,8 @@ class CSV extends Shape
      *     quoteCharacter?: string|null,
      *     delimiter?: string|null,
      *     columns?: list<string>|null,
-     *     source?: string|null
+     *     source?: string|null,
+     *     destination?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'API'|'SAML'|'USERPOOL'|'AWS_AD'|null $AuthenticationType
  * @property NetworkAccessConfiguration|null $NetworkAccessConfiguration
  * @property string|null $InstanceId
+ * @property 'ACTIVE'|'DRAINING'|'NOT_APPLICABLE'|null $InstanceDrainStatus
  */
 class Session extends Shape
 {
@@ -31,7 +32,8 @@ class Session extends Shape
      *     MaxExpirationTime?: \Aws\Api\DateTimeResult|null,
      *     AuthenticationType?: 'API'|'SAML'|'USERPOOL'|'AWS_AD'|null,
      *     NetworkAccessConfiguration?: NetworkAccessConfiguration|null,
-     *     InstanceId?: string|null
+     *     InstanceId?: string|null,
+     *     InstanceDrainStatus?: 'ACTIVE'|'DRAINING'|'NOT_APPLICABLE'|null
      * } $args
      */
     public function __construct(array $args)

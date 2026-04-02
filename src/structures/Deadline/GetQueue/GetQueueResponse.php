@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $requiredFileSystemLocationNames
  * @property list<string>|null $allowedStorageProfileIds
  * @property Shapes\JobRunAsUser|null $jobRunAsUser
+ * @property Shapes\SchedulingConfiguration|null $schedulingConfiguration
  */
 class GetQueueResponse extends Response
 {

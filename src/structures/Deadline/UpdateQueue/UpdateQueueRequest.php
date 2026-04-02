@@ -18,6 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $requiredFileSystemLocationNamesToRemove
  * @property list<string>|null $allowedStorageProfileIdsToAdd
  * @property list<string>|null $allowedStorageProfileIdsToRemove
+ * @property Shapes\SchedulingConfiguration|null $schedulingConfiguration
  */
 class UpdateQueueRequest extends Request
 {
@@ -35,7 +36,8 @@ class UpdateQueueRequest extends Request
      *     requiredFileSystemLocationNamesToAdd?: list<string>|null,
      *     requiredFileSystemLocationNamesToRemove?: list<string>|null,
      *     allowedStorageProfileIdsToAdd?: list<string>|null,
-     *     allowedStorageProfileIdsToRemove?: list<string>|null
+     *     allowedStorageProfileIdsToRemove?: list<string>|null,
+     *     schedulingConfiguration?: Shapes\SchedulingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AcknowledgerComment
  * @property string|null $SamplingJobId
  * @property string|null $ReviewId
- * @property 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|null $ContactParticipantRole
+ * @property 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|'CUSTOMER'|null $ContactParticipantRole
  * @property string|null $ContactParticipantId
  */
 class EvaluationSearchMetadata extends Shape
@@ -40,7 +40,7 @@ class EvaluationSearchMetadata extends Shape
      *     AcknowledgerComment?: string|null,
      *     SamplingJobId?: string|null,
      *     ReviewId?: string|null,
-     *     ContactParticipantRole?: 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|null,
+     *     ContactParticipantRole?: 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|'CUSTOMER'|null,
      *     ContactParticipantId?: string|null
      * } $args
      */
