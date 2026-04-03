@@ -8,6 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string|null $description
  * @property ToolInputSchema $inputSchema
+ * @property bool|null $strict
  */
 class ToolSpecification extends Shape
 {
@@ -15,7 +16,8 @@ class ToolSpecification extends Shape
      * @param array{
      *     name: string,
      *     description?: string|null,
-     *     inputSchema: ToolInputSchema
+     *     inputSchema: ToolInputSchema,
+     *     strict?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $guardrailIdentifier
  * @property string $guardrailVersion
- * @property 'HONOR'|'IGNORE' $inputTags
+ * @property SelectiveContentGuarding|null $selectiveContentGuarding
  * @property ModelEnforcement|null $modelEnforcement
  */
 class AccountEnforcedGuardrailInferenceInputConfiguration extends Shape
@@ -16,7 +16,7 @@ class AccountEnforcedGuardrailInferenceInputConfiguration extends Shape
      * @param array{
      *     guardrailIdentifier: string,
      *     guardrailVersion: string,
-     *     inputTags: 'HONOR'|'IGNORE',
+     *     selectiveContentGuarding?: SelectiveContentGuarding|null,
      *     modelEnforcement?: ModelEnforcement|null
      * } $args
      */

@@ -9,6 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Hdr10Settings|null $Hdr10Settings
  * @property Rec601Settings|null $Rec601Settings
  * @property Rec709Settings|null $Rec709Settings
+ * @property Hlg2020Settings|null $Hlg2020Settings
  */
 class Av1ColorSpaceSettings extends Shape
 {
@@ -17,7 +18,8 @@ class Av1ColorSpaceSettings extends Shape
      *     ColorSpacePassthroughSettings?: ColorSpacePassthroughSettings|null,
      *     Hdr10Settings?: Hdr10Settings|null,
      *     Rec601Settings?: Rec601Settings|null,
-     *     Rec709Settings?: Rec709Settings|null
+     *     Rec709Settings?: Rec709Settings|null,
+     *     Hlg2020Settings?: Hlg2020Settings|null
      * } $args
      */
     public function __construct(array $args = [])

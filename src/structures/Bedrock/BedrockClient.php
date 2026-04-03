@@ -37,6 +37,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use DeleteModelInvocationLoggingConfiguration\DeleteModelInvocationLoggingConfigurationTrait;
     use DeletePromptRouter\DeletePromptRouterTrait;
     use DeleteProvisionedModelThroughput\DeleteProvisionedModelThroughputTrait;
+    use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DeregisterMarketplaceModelEndpoint\DeregisterMarketplaceModelEndpointTrait;
     use ExportAutomatedReasoningPolicyVersion\ExportAutomatedReasoningPolicyVersionTrait;
     use GetAutomatedReasoningPolicy\GetAutomatedReasoningPolicyTrait;
@@ -62,6 +63,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use GetModelInvocationLoggingConfiguration\GetModelInvocationLoggingConfigurationTrait;
     use GetPromptRouter\GetPromptRouterTrait;
     use GetProvisionedModelThroughput\GetProvisionedModelThroughputTrait;
+    use GetResourcePolicy\GetResourcePolicyTrait;
     use GetUseCaseForModelAccess\GetUseCaseForModelAccessTrait;
     use ListAutomatedReasoningPolicies\ListAutomatedReasoningPoliciesTrait;
     use ListAutomatedReasoningPolicyBuildWorkflows\ListAutomatedReasoningPolicyBuildWorkflowsTrait;
@@ -86,6 +88,7 @@ class BedrockClient extends \Aws\Bedrock\BedrockClient
     use ListTagsForResource\ListTagsForResourceTrait;
     use PutEnforcedGuardrailConfiguration\PutEnforcedGuardrailConfigurationTrait;
     use PutModelInvocationLoggingConfiguration\PutModelInvocationLoggingConfigurationTrait;
+    use PutResourcePolicy\PutResourcePolicyTrait;
     use PutUseCaseForModelAccess\PutUseCaseForModelAccessTrait;
     use RegisterMarketplaceModelEndpoint\RegisterMarketplaceModelEndpointTrait;
     use StartAutomatedReasoningPolicyBuildWorkflow\StartAutomatedReasoningPolicyBuildWorkflowTrait;
