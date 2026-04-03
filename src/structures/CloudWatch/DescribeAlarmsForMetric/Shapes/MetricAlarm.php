@@ -34,6 +34,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ThresholdMetricId
  * @property 'PARTIAL_DATA'|'EVALUATION_FAILURE'|'EVALUATION_ERROR'|null $EvaluationState
  * @property \Aws\Api\DateTimeResult|null $StateTransitionedTimestamp
+ * @property EvaluationCriteria|null $EvaluationCriteria
+ * @property int<10, 3600>|null $EvaluationInterval
  */
 class MetricAlarm extends Shape
 {
@@ -67,7 +69,9 @@ class MetricAlarm extends Shape
      *     Metrics?: list<MetricDataQuery>|null,
      *     ThresholdMetricId?: string|null,
      *     EvaluationState?: 'PARTIAL_DATA'|'EVALUATION_FAILURE'|'EVALUATION_ERROR'|null,
-     *     StateTransitionedTimestamp?: \Aws\Api\DateTimeResult|null
+     *     StateTransitionedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     EvaluationCriteria?: EvaluationCriteria|null,
+     *     EvaluationInterval?: int<10, 3600>|null
      * } $args
      */
     public function __construct(array $args = [])

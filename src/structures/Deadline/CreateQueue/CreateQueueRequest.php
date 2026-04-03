@@ -16,6 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $requiredFileSystemLocationNames
  * @property list<string>|null $allowedStorageProfileIds
  * @property array<string, string>|null $tags
+ * @property Shapes\SchedulingConfiguration|null $schedulingConfiguration
  */
 class CreateQueueRequest extends Request
 {
@@ -31,7 +32,8 @@ class CreateQueueRequest extends Request
      *     jobRunAsUser?: Shapes\JobRunAsUser|null,
      *     requiredFileSystemLocationNames?: list<string>|null,
      *     allowedStorageProfileIds?: list<string>|null,
-     *     tags?: array<string, string>|null
+     *     tags?: array<string, string>|null,
+     *     schedulingConfiguration?: Shapes\SchedulingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

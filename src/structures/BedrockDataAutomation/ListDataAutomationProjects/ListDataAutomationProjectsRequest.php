@@ -10,6 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'DEVELOPMENT'|'LIVE'|'ALL'|null $projectStageFilter
  * @property Shapes\BlueprintFilter|null $blueprintFilter
  * @property 'SERVICE'|'ACCOUNT'|null $resourceOwner
+ * @property Shapes\DataAutomationLibraryFilter|null $libraryFilter
  */
 class ListDataAutomationProjectsRequest extends Request
 {
@@ -19,7 +20,8 @@ class ListDataAutomationProjectsRequest extends Request
      *     nextToken?: string|null,
      *     projectStageFilter?: 'DEVELOPMENT'|'LIVE'|'ALL'|null,
      *     blueprintFilter?: Shapes\BlueprintFilter|null,
-     *     resourceOwner?: 'SERVICE'|'ACCOUNT'|null
+     *     resourceOwner?: 'SERVICE'|'ACCOUNT'|null,
+     *     libraryFilter?: Shapes\DataAutomationLibraryFilter|null
      * } $args
      */
     public function __construct(array $args = [])

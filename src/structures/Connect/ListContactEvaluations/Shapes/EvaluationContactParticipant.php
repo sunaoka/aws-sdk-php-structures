@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Connect\ListContactEvaluations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|null $ContactParticipantRole
+ * @property 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|'CUSTOMER'|null $ContactParticipantRole
  * @property string|null $ContactParticipantId
  */
 class EvaluationContactParticipant extends Shape
 {
     /**
      * @param array{
-     *     ContactParticipantRole?: 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|null,
+     *     ContactParticipantRole?: 'AGENT'|'SYSTEM'|'CUSTOM_BOT'|'CUSTOMER'|null,
      *     ContactParticipantId?: string|null
      * } $args
      */

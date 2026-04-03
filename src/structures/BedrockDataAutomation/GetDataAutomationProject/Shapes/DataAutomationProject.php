@@ -15,6 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StandardOutputConfiguration|null $standardOutputConfiguration
  * @property CustomOutputConfiguration|null $customOutputConfiguration
  * @property OverrideConfiguration|null $overrideConfiguration
+ * @property DataAutomationLibraryConfiguration|null $dataAutomationLibraryConfiguration
  * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED' $status
  * @property string|null $kmsKeyId
  * @property array<string, string>|null $kmsEncryptionContext
@@ -33,6 +34,7 @@ class DataAutomationProject extends Shape
      *     standardOutputConfiguration?: StandardOutputConfiguration|null,
      *     customOutputConfiguration?: CustomOutputConfiguration|null,
      *     overrideConfiguration?: OverrideConfiguration|null,
+     *     dataAutomationLibraryConfiguration?: DataAutomationLibraryConfiguration|null,
      *     status: 'COMPLETED'|'IN_PROGRESS'|'FAILED',
      *     kmsKeyId?: string|null,
      *     kmsEncryptionContext?: array<string, string>|null

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\StandardOutputConfiguration $standardOutputConfiguration
  * @property Shapes\CustomOutputConfiguration|null $customOutputConfiguration
  * @property Shapes\OverrideConfiguration|null $overrideConfiguration
+ * @property Shapes\DataAutomationLibraryConfiguration|null $dataAutomationLibraryConfiguration
  * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
  */
 class UpdateDataAutomationProjectRequest extends Request
@@ -23,6 +24,7 @@ class UpdateDataAutomationProjectRequest extends Request
      *     standardOutputConfiguration: Shapes\StandardOutputConfiguration,
      *     customOutputConfiguration?: Shapes\CustomOutputConfiguration|null,
      *     overrideConfiguration?: Shapes\OverrideConfiguration|null,
+     *     dataAutomationLibraryConfiguration?: Shapes\DataAutomationLibraryConfiguration|null,
      *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */

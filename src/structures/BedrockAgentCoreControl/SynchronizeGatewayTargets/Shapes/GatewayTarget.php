@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $targetId
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property 'CREATING'|'UPDATING'|'UPDATE_UNSUCCESSFUL'|'DELETING'|'READY'|'FAILED'|'SYNCHRONIZING'|'SYNCHRONIZE_UNSUCCESSFUL' $status
+ * @property 'CREATING'|'UPDATING'|'UPDATE_UNSUCCESSFUL'|'DELETING'|'READY'|'FAILED'|'SYNCHRONIZING'|'SYNCHRONIZE_UNSUCCESSFUL'|'CREATE_PENDING_AUTH'|'UPDATE_PENDING_AUTH'|'SYNCHRONIZE_PENDING_AUTH' $status
  * @property list<string>|null $statusReasons
  * @property string $name
  * @property string|null $description
@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MetadataConfiguration|null $metadataConfiguration
  * @property PrivateEndpoint|null $privateEndpoint
  * @property list<ManagedResourceDetails>|null $privateEndpointManagedResources
+ * @property AuthorizationData|null $authorizationData
  */
 class GatewayTarget extends Shape
 {
@@ -28,7 +29,7 @@ class GatewayTarget extends Shape
      *     targetId: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     status: 'CREATING'|'UPDATING'|'UPDATE_UNSUCCESSFUL'|'DELETING'|'READY'|'FAILED'|'SYNCHRONIZING'|'SYNCHRONIZE_UNSUCCESSFUL',
+     *     status: 'CREATING'|'UPDATING'|'UPDATE_UNSUCCESSFUL'|'DELETING'|'READY'|'FAILED'|'SYNCHRONIZING'|'SYNCHRONIZE_UNSUCCESSFUL'|'CREATE_PENDING_AUTH'|'UPDATE_PENDING_AUTH'|'SYNCHRONIZE_PENDING_AUTH',
      *     statusReasons?: list<string>|null,
      *     name: string,
      *     description?: string|null,
@@ -37,7 +38,8 @@ class GatewayTarget extends Shape
      *     lastSynchronizedAt?: \Aws\Api\DateTimeResult|null,
      *     metadataConfiguration?: MetadataConfiguration|null,
      *     privateEndpoint?: PrivateEndpoint|null,
-     *     privateEndpointManagedResources?: list<ManagedResourceDetails>|null
+     *     privateEndpointManagedResources?: list<ManagedResourceDetails>|null,
+     *     authorizationData?: AuthorizationData|null
      * } $args
      */
     public function __construct(array $args)

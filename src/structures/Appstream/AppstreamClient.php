@@ -67,6 +67,7 @@ class AppstreamClient extends \Aws\Appstream\AppstreamClient
     use DisassociateApplicationFromEntitlement\DisassociateApplicationFromEntitlementTrait;
     use DisassociateFleet\DisassociateFleetTrait;
     use DisassociateSoftwareFromImageBuilder\DisassociateSoftwareFromImageBuilderTrait;
+    use DrainSessionInstance\DrainSessionInstanceTrait;
     use EnableUser\EnableUserTrait;
     use ExpireSession\ExpireSessionTrait;
     use GetExportImageTask\GetExportImageTaskTrait;

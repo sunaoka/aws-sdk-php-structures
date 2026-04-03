@@ -27,6 +27,7 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use GetMetricStatistics\GetMetricStatisticsTrait;
     use GetMetricStream\GetMetricStreamTrait;
     use GetMetricWidgetImage\GetMetricWidgetImageTrait;
+    use GetOTelEnrichment\GetOTelEnrichmentTrait;
     use ListAlarmMuteRules\ListAlarmMuteRulesTrait;
     use ListDashboards\ListDashboardsTrait;
     use ListManagedInsightRules\ListManagedInsightRulesTrait;
@@ -44,7 +45,9 @@ class CloudWatchClient extends \Aws\CloudWatch\CloudWatchClient
     use PutMetricStream\PutMetricStreamTrait;
     use SetAlarmState\SetAlarmStateTrait;
     use StartMetricStreams\StartMetricStreamsTrait;
+    use StartOTelEnrichment\StartOTelEnrichmentTrait;
     use StopMetricStreams\StopMetricStreamsTrait;
+    use StopOTelEnrichment\StopOTelEnrichmentTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
 }
