@@ -15,10 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Username
  * @property string|null $SecretsManagerAccessRoleArn
  * @property string|null $SecretsManagerSecretId
- * @property int|null $LoadTimeout
- * @property int|null $WriteBufferSize
- * @property int|null $MaxFileSize
- * @property bool|null $KeepCsvFiles
  */
 class IBMDb2Settings extends Shape
 {
@@ -33,11 +29,7 @@ class IBMDb2Settings extends Shape
      *     MaxKBytesPerRead?: int|null,
      *     Username?: string|null,
      *     SecretsManagerAccessRoleArn?: string|null,
-     *     SecretsManagerSecretId?: string|null,
-     *     LoadTimeout?: int|null,
-     *     WriteBufferSize?: int|null,
-     *     MaxFileSize?: int|null,
-     *     KeepCsvFiles?: bool|null
+     *     SecretsManagerSecretId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

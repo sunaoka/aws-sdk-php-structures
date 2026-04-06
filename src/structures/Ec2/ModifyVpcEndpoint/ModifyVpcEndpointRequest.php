@@ -18,7 +18,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ipv4'|'dualstack'|'ipv6'|null $IpAddressType
  * @property Shapes\DnsOptionsSpecification|null $DnsOptions
  * @property bool|null $PrivateDnsEnabled
- * @property list<Shapes\SubnetConfiguration>|null $SubnetConfigurations
  */
 class ModifyVpcEndpointRequest extends Request
 {
@@ -36,8 +35,7 @@ class ModifyVpcEndpointRequest extends Request
      *     RemoveSecurityGroupIds?: list<string>|null,
      *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6'|null,
      *     DnsOptions?: Shapes\DnsOptionsSpecification|null,
-     *     PrivateDnsEnabled?: bool|null,
-     *     SubnetConfigurations?: list<Shapes\SubnetConfiguration>|null
+     *     PrivateDnsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

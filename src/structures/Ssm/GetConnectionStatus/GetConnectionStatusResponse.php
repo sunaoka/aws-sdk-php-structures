@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $Target
- * @property 'connected'|'notconnected'|null $Status
+ * @property 'Connected'|'NotConnected'|null $Status
  */
 class GetConnectionStatusResponse extends Response
 {

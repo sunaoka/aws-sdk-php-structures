@@ -10,16 +10,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, Spend>|null $PlannedBudgetLimits
  * @property array<string, list<string>>|null $CostFilters
  * @property CostTypes|null $CostTypes
- * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM' $TimeUnit
+ * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY' $TimeUnit
  * @property TimePeriod|null $TimePeriod
  * @property CalculatedSpend|null $CalculatedSpend
  * @property 'USAGE'|'COST'|'RI_UTILIZATION'|'RI_COVERAGE'|'SAVINGS_PLANS_UTILIZATION'|'SAVINGS_PLANS_COVERAGE' $BudgetType
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  * @property AutoAdjustData|null $AutoAdjustData
- * @property Expression|null $FilterExpression
- * @property list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null $Metrics
- * @property string|null $BillingViewArn
- * @property HealthStatus|null $HealthStatus
  */
 class Budget extends Shape
 {
@@ -30,16 +26,12 @@ class Budget extends Shape
      *     PlannedBudgetLimits?: array<string, Spend>|null,
      *     CostFilters?: array<string, list<string>>|null,
      *     CostTypes?: CostTypes|null,
-     *     TimeUnit: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM',
+     *     TimeUnit: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY',
      *     TimePeriod?: TimePeriod|null,
      *     CalculatedSpend?: CalculatedSpend|null,
      *     BudgetType: 'USAGE'|'COST'|'RI_UTILIZATION'|'RI_COVERAGE'|'SAVINGS_PLANS_UTILIZATION'|'SAVINGS_PLANS_COVERAGE',
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
-     *     AutoAdjustData?: AutoAdjustData|null,
-     *     FilterExpression?: Expression|null,
-     *     Metrics?: list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null,
-     *     BillingViewArn?: string|null,
-     *     HealthStatus?: HealthStatus|null
+     *     AutoAdjustData?: AutoAdjustData|null
      * } $args
      */
     public function __construct(array $args)

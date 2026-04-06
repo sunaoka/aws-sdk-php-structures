@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ConnectCases\ListLayouts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $layoutId
  * @property string $layoutArn
+ * @property string $layoutId
  * @property string $name
  */
 class LayoutSummary extends Shape
 {
     /**
      * @param array{
-     *     layoutId: string,
      *     layoutArn: string,
+     *     layoutId: string,
      *     name: string
      * } $args
      */

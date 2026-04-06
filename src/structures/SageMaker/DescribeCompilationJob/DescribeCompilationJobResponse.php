@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\InputConfig $InputConfig
  * @property Shapes\OutputConfig $OutputConfig
  * @property Shapes\NeoVpcConfig|null $VpcConfig
- * @property Shapes\DerivedInformation|null $DerivedInformation
  */
 class DescribeCompilationJobResponse extends Response
 {

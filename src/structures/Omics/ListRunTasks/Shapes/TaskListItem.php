@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED'|null $status
  * @property string|null $name
  * @property int<1, max>|null $cpus
- * @property bool|null $cacheHit
- * @property string|null $cacheS3Uri
  * @property int<1, max>|null $memory
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property \Aws\Api\DateTimeResult|null $startTime
@@ -26,8 +24,6 @@ class TaskListItem extends Shape
      *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED'|null,
      *     name?: string|null,
      *     cpus?: int<1, max>|null,
-     *     cacheHit?: bool|null,
-     *     cacheS3Uri?: string|null,
      *     memory?: int<1, max>|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     startTime?: \Aws\Api\DateTimeResult|null,

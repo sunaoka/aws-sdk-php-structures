@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $Arn
- * @property Shapes\AssetConfiguration|null $AssetConfiguration
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property Shapes\ResponseDetails|null $Details
  * @property list<Shapes\JobError>|null $Errors

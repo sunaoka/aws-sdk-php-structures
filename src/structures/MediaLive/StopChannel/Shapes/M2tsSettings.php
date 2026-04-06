@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AribCaptionsPid
  * @property 'AUTO'|'USE_CONFIGURED'|null $AribCaptionsPidControl
  * @property 'ATSC'|'DVB'|null $AudioBufferModel
- * @property int|null $AudioFramesPerPes
+ * @property int<0, max>|null $AudioFramesPerPes
  * @property string|null $AudioPids
  * @property 'ATSC'|'DVB'|null $AudioStreamType
- * @property int|null $Bitrate
+ * @property int<0, max>|null $Bitrate
  * @property 'MULTIPLEX'|'NONE'|null $BufferModel
  * @property 'DISABLED'|'ENABLED'|null $CcDescriptor
  * @property DvbNitSettings|null $DvbNitSettings
@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DvbTeletextPid
  * @property 'NONE'|'PASSTHROUGH'|null $Ebif
  * @property 'VIDEO_AND_FIXED_INTERVALS'|'VIDEO_INTERVAL'|null $EbpAudioInterval
- * @property int|null $EbpLookaheadMs
+ * @property int<0, 10000>|null $EbpLookaheadMs
  * @property 'VIDEO_AND_AUDIO_PIDS'|'VIDEO_PID'|null $EbpPlacement
  * @property string|null $EcmPid
  * @property 'EXCLUDE'|'INCLUDE'|null $EsRateInPes
@@ -34,13 +34,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KlvDataPids
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $NielsenId3Behavior
  * @property double|null $NullPacketBitrate
- * @property int|null $PatInterval
+ * @property int<0, 1000>|null $PatInterval
  * @property 'CONFIGURED_PCR_PERIOD'|'PCR_EVERY_PES_PACKET'|null $PcrControl
- * @property int|null $PcrPeriod
+ * @property int<0, 500>|null $PcrPeriod
  * @property string|null $PcrPid
- * @property int|null $PmtInterval
+ * @property int<0, 1000>|null $PmtInterval
  * @property string|null $PmtPid
- * @property int|null $ProgramNum
+ * @property int<0, 65535>|null $ProgramNum
  * @property 'CBR'|'VBR'|null $RateMode
  * @property string|null $Scte27Pids
  * @property 'NONE'|'PASSTHROUGH'|null $Scte35Control
@@ -51,7 +51,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $SegmentationTime
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH'|null $TimedMetadataBehavior
  * @property string|null $TimedMetadataPid
- * @property int|null $TransportStreamId
+ * @property int<0, 65535>|null $TransportStreamId
  * @property string|null $VideoPid
  */
 class M2tsSettings extends Shape
@@ -63,10 +63,10 @@ class M2tsSettings extends Shape
      *     AribCaptionsPid?: string|null,
      *     AribCaptionsPidControl?: 'AUTO'|'USE_CONFIGURED'|null,
      *     AudioBufferModel?: 'ATSC'|'DVB'|null,
-     *     AudioFramesPerPes?: int|null,
+     *     AudioFramesPerPes?: int<0, max>|null,
      *     AudioPids?: string|null,
      *     AudioStreamType?: 'ATSC'|'DVB'|null,
-     *     Bitrate?: int|null,
+     *     Bitrate?: int<0, max>|null,
      *     BufferModel?: 'MULTIPLEX'|'NONE'|null,
      *     CcDescriptor?: 'DISABLED'|'ENABLED'|null,
      *     DvbNitSettings?: DvbNitSettings|null,
@@ -76,7 +76,7 @@ class M2tsSettings extends Shape
      *     DvbTeletextPid?: string|null,
      *     Ebif?: 'NONE'|'PASSTHROUGH'|null,
      *     EbpAudioInterval?: 'VIDEO_AND_FIXED_INTERVALS'|'VIDEO_INTERVAL'|null,
-     *     EbpLookaheadMs?: int|null,
+     *     EbpLookaheadMs?: int<0, 10000>|null,
      *     EbpPlacement?: 'VIDEO_AND_AUDIO_PIDS'|'VIDEO_PID'|null,
      *     EcmPid?: string|null,
      *     EsRateInPes?: 'EXCLUDE'|'INCLUDE'|null,
@@ -87,13 +87,13 @@ class M2tsSettings extends Shape
      *     KlvDataPids?: string|null,
      *     NielsenId3Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
      *     NullPacketBitrate?: double|null,
-     *     PatInterval?: int|null,
+     *     PatInterval?: int<0, 1000>|null,
      *     PcrControl?: 'CONFIGURED_PCR_PERIOD'|'PCR_EVERY_PES_PACKET'|null,
-     *     PcrPeriod?: int|null,
+     *     PcrPeriod?: int<0, 500>|null,
      *     PcrPid?: string|null,
-     *     PmtInterval?: int|null,
+     *     PmtInterval?: int<0, 1000>|null,
      *     PmtPid?: string|null,
-     *     ProgramNum?: int|null,
+     *     ProgramNum?: int<0, 65535>|null,
      *     RateMode?: 'CBR'|'VBR'|null,
      *     Scte27Pids?: string|null,
      *     Scte35Control?: 'NONE'|'PASSTHROUGH'|null,
@@ -104,7 +104,7 @@ class M2tsSettings extends Shape
      *     SegmentationTime?: double|null,
      *     TimedMetadataBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH'|null,
      *     TimedMetadataPid?: string|null,
-     *     TransportStreamId?: int|null,
+     *     TransportStreamId?: int<0, 65535>|null,
      *     VideoPid?: string|null
      * } $args
      */

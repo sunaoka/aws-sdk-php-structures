@@ -24,8 +24,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ZookeeperConnectString
  * @property string|null $ZookeeperConnectStringTls
  * @property 'LOCAL'|'TIERED'|null $StorageMode
- * @property Rebalancing|null $Rebalancing
- * @property 'CRITICAL_ACTION_REQUIRED'|'ACTION_RECOMMENDED'|'NONE'|null $CustomerActionStatus
  */
 class ClusterInfo extends Shape
 {
@@ -49,9 +47,7 @@ class ClusterInfo extends Shape
      *     Tags?: array<string, string>|null,
      *     ZookeeperConnectString?: string|null,
      *     ZookeeperConnectStringTls?: string|null,
-     *     StorageMode?: 'LOCAL'|'TIERED'|null,
-     *     Rebalancing?: Rebalancing|null,
-     *     CustomerActionStatus?: 'CRITICAL_ACTION_REQUIRED'|'ACTION_RECOMMENDED'|'NONE'|null
+     *     StorageMode?: 'LOCAL'|'TIERED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,18 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudTrail\GetInsightSelectors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $TrailName
- * @property string|null $EventDataStore
+ * @property string $TrailName
  */
 class GetInsightSelectorsRequest extends Request
 {
     /**
-     * @param array{
-     *     TrailName?: string|null,
-     *     EventDataStore?: string|null
-     * } $args
+     * @param array{TrailName: string} $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

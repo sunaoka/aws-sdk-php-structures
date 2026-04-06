@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'HEALTHY'|'UNHEALTHY'|null $status
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
- * @property string|null $runtime
  */
 class ListCoreDevicesRequest extends Request
 {
@@ -18,8 +17,7 @@ class ListCoreDevicesRequest extends Request
      *     thingGroupArn?: string|null,
      *     status?: 'HEALTHY'|'UNHEALTHY'|null,
      *     maxResults?: int<1, 100>|null,
-     *     nextToken?: string|null,
-     *     runtime?: string|null
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

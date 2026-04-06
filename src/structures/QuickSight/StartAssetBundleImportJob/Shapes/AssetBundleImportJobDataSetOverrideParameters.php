@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $DataSetId
  * @property string|null $Name
- * @property DataSetRefreshProperties|null $DataSetRefreshProperties
  */
 class AssetBundleImportJobDataSetOverrideParameters extends Shape
 {
     /**
      * @param array{
      *     DataSetId: string,
-     *     Name?: string|null,
-     *     DataSetRefreshProperties?: DataSetRefreshProperties|null
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

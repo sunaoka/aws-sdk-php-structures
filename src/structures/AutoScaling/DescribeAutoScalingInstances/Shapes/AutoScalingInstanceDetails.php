@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $HealthStatus
  * @property string|null $LaunchConfigurationName
  * @property LaunchTemplateSpecification|null $LaunchTemplate
- * @property string|null $ImageId
  * @property bool $ProtectedFromScaleIn
  * @property string|null $WeightedCapacity
  */
@@ -29,7 +28,6 @@ class AutoScalingInstanceDetails extends Shape
      *     HealthStatus: string,
      *     LaunchConfigurationName?: string|null,
      *     LaunchTemplate?: LaunchTemplateSpecification|null,
-     *     ImageId?: string|null,
      *     ProtectedFromScaleIn: bool,
      *     WeightedCapacity?: string|null
      * } $args

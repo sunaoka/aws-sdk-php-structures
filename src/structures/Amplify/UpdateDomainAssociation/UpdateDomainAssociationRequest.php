@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\SubDomainSetting>|null $subDomainSettings
  * @property list<string>|null $autoSubDomainCreationPatterns
  * @property string|null $autoSubDomainIAMRole
- * @property Shapes\CertificateSettings|null $certificateSettings
  */
 class UpdateDomainAssociationRequest extends Request
 {
@@ -22,8 +21,7 @@ class UpdateDomainAssociationRequest extends Request
      *     enableAutoSubDomain?: bool|null,
      *     subDomainSettings?: list<Shapes\SubDomainSetting>|null,
      *     autoSubDomainCreationPatterns?: list<string>|null,
-     *     autoSubDomainIAMRole?: string|null,
-     *     certificateSettings?: Shapes\CertificateSettings|null
+     *     autoSubDomainIAMRole?: string|null
      * } $args
      */
     public function __construct(array $args)

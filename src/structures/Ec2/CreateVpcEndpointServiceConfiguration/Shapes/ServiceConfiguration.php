@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ServiceId
  * @property string|null $ServiceName
  * @property 'Pending'|'Available'|'Deleting'|'Deleted'|'Failed'|null $ServiceState
- * @property list<string>|null $AvailabilityZoneIds
  * @property list<string>|null $AvailabilityZones
  * @property bool|null $AcceptanceRequired
  * @property bool|null $ManagesVpcEndpoints
@@ -21,8 +20,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PrivateDnsNameConfiguration|null $PrivateDnsNameConfiguration
  * @property 'ServiceOwner'|null $PayerResponsibility
  * @property list<Tag>|null $Tags
- * @property list<SupportedRegionDetail>|null $SupportedRegions
- * @property bool|null $RemoteAccessEnabled
  */
 class ServiceConfiguration extends Shape
 {
@@ -32,7 +29,6 @@ class ServiceConfiguration extends Shape
      *     ServiceId?: string|null,
      *     ServiceName?: string|null,
      *     ServiceState?: 'Pending'|'Available'|'Deleting'|'Deleted'|'Failed'|null,
-     *     AvailabilityZoneIds?: list<string>|null,
      *     AvailabilityZones?: list<string>|null,
      *     AcceptanceRequired?: bool|null,
      *     ManagesVpcEndpoints?: bool|null,
@@ -43,9 +39,7 @@ class ServiceConfiguration extends Shape
      *     PrivateDnsName?: string|null,
      *     PrivateDnsNameConfiguration?: PrivateDnsNameConfiguration|null,
      *     PayerResponsibility?: 'ServiceOwner'|null,
-     *     Tags?: list<Tag>|null,
-     *     SupportedRegions?: list<SupportedRegionDetail>|null,
-     *     RemoteAccessEnabled?: bool|null
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

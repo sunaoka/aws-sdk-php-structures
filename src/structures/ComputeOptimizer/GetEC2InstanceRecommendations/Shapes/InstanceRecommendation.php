@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $instanceName
  * @property string|null $currentInstanceType
  * @property 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized'|null $finding
- * @property list<'CPUOverprovisioned'|'CPUUnderprovisioned'|'MemoryOverprovisioned'|'MemoryUnderprovisioned'|'EBSThroughputOverprovisioned'|'EBSThroughputUnderprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'NetworkBandwidthOverprovisioned'|'NetworkBandwidthUnderprovisioned'|'NetworkPPSOverprovisioned'|'NetworkPPSUnderprovisioned'|'DiskIOPSOverprovisioned'|'DiskIOPSUnderprovisioned'|'DiskThroughputOverprovisioned'|'DiskThroughputUnderprovisioned'|'GPUUnderprovisioned'|'GPUOverprovisioned'|'GPUMemoryUnderprovisioned'|'GPUMemoryOverprovisioned'>|null $findingReasonCodes
+ * @property list<'CPUOverprovisioned'|'CPUUnderprovisioned'|'MemoryOverprovisioned'|'MemoryUnderprovisioned'|'EBSThroughputOverprovisioned'|'EBSThroughputUnderprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'NetworkBandwidthOverprovisioned'|'NetworkBandwidthUnderprovisioned'|'NetworkPPSOverprovisioned'|'NetworkPPSUnderprovisioned'|'DiskIOPSOverprovisioned'|'DiskIOPSUnderprovisioned'|'DiskThroughputOverprovisioned'|'DiskThroughputUnderprovisioned'>|null $findingReasonCodes
  * @property list<UtilizationMetric>|null $utilizationMetrics
  * @property double|null $lookBackPeriodInDays
  * @property list<InstanceRecommendationOption>|null $recommendationOptions
@@ -22,8 +22,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'pending'|'running'|'shutting-down'|'terminated'|'stopping'|'stopped'|null $instanceState
  * @property list<Tag>|null $tags
  * @property ExternalMetricStatus|null $externalMetricStatus
- * @property GpuInfo|null $currentInstanceGpuInfo
- * @property 'True'|'False'|null $idle
  */
 class InstanceRecommendation extends Shape
 {
@@ -34,7 +32,7 @@ class InstanceRecommendation extends Shape
      *     instanceName?: string|null,
      *     currentInstanceType?: string|null,
      *     finding?: 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized'|null,
-     *     findingReasonCodes?: list<'CPUOverprovisioned'|'CPUUnderprovisioned'|'MemoryOverprovisioned'|'MemoryUnderprovisioned'|'EBSThroughputOverprovisioned'|'EBSThroughputUnderprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'NetworkBandwidthOverprovisioned'|'NetworkBandwidthUnderprovisioned'|'NetworkPPSOverprovisioned'|'NetworkPPSUnderprovisioned'|'DiskIOPSOverprovisioned'|'DiskIOPSUnderprovisioned'|'DiskThroughputOverprovisioned'|'DiskThroughputUnderprovisioned'|'GPUUnderprovisioned'|'GPUOverprovisioned'|'GPUMemoryUnderprovisioned'|'GPUMemoryOverprovisioned'>|null,
+     *     findingReasonCodes?: list<'CPUOverprovisioned'|'CPUUnderprovisioned'|'MemoryOverprovisioned'|'MemoryUnderprovisioned'|'EBSThroughputOverprovisioned'|'EBSThroughputUnderprovisioned'|'EBSIOPSOverprovisioned'|'EBSIOPSUnderprovisioned'|'NetworkBandwidthOverprovisioned'|'NetworkBandwidthUnderprovisioned'|'NetworkPPSOverprovisioned'|'NetworkPPSUnderprovisioned'|'DiskIOPSOverprovisioned'|'DiskIOPSUnderprovisioned'|'DiskThroughputOverprovisioned'|'DiskThroughputUnderprovisioned'>|null,
      *     utilizationMetrics?: list<UtilizationMetric>|null,
      *     lookBackPeriodInDays?: double|null,
      *     recommendationOptions?: list<InstanceRecommendationOption>|null,
@@ -45,9 +43,7 @@ class InstanceRecommendation extends Shape
      *     inferredWorkloadTypes?: list<'AmazonEmr'|'ApacheCassandra'|'ApacheHadoop'|'Memcached'|'Nginx'|'PostgreSql'|'Redis'|'Kafka'|'SQLServer'>|null,
      *     instanceState?: 'pending'|'running'|'shutting-down'|'terminated'|'stopping'|'stopped'|null,
      *     tags?: list<Tag>|null,
-     *     externalMetricStatus?: ExternalMetricStatus|null,
-     *     currentInstanceGpuInfo?: GpuInfo|null,
-     *     idle?: 'True'|'False'|null
+     *     externalMetricStatus?: ExternalMetricStatus|null
      * } $args
      */
     public function __construct(array $args = [])

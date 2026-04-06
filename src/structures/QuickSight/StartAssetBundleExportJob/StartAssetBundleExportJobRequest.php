@@ -11,11 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $IncludeAllDependencies
  * @property 'CLOUDFORMATION_JSON'|'QUICKSIGHT_JSON' $ExportFormat
  * @property Shapes\AssetBundleCloudFormationOverridePropertyConfiguration|null $CloudFormationOverridePropertyConfiguration
- * @property bool|null $IncludePermissions
- * @property bool|null $IncludeTags
- * @property Shapes\AssetBundleExportJobValidationStrategy|null $ValidationStrategy
- * @property bool|null $IncludeFolderMemberships
- * @property 'RECURSE'|'ONE_LEVEL'|'NONE'|null $IncludeFolderMembers
  */
 class StartAssetBundleExportJobRequest extends Request
 {
@@ -26,12 +21,7 @@ class StartAssetBundleExportJobRequest extends Request
      *     ResourceArns: list<string>,
      *     IncludeAllDependencies?: bool|null,
      *     ExportFormat: 'CLOUDFORMATION_JSON'|'QUICKSIGHT_JSON',
-     *     CloudFormationOverridePropertyConfiguration?: Shapes\AssetBundleCloudFormationOverridePropertyConfiguration|null,
-     *     IncludePermissions?: bool|null,
-     *     IncludeTags?: bool|null,
-     *     ValidationStrategy?: Shapes\AssetBundleExportJobValidationStrategy|null,
-     *     IncludeFolderMemberships?: bool|null,
-     *     IncludeFolderMembers?: 'RECURSE'|'ONE_LEVEL'|'NONE'|null
+     *     CloudFormationOverridePropertyConfiguration?: Shapes\AssetBundleCloudFormationOverridePropertyConfiguration|null
      * } $args
      */
     public function __construct(array $args)

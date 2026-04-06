@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $componentId
  * @property string $componentType
- * @property string|null $componentArn
  */
 class Step extends Shape
 {
     /**
      * @param array{
      *     componentId: string,
-     *     componentType: string,
-     *     componentArn?: string|null
+     *     componentType: string
      * } $args
      */
     public function __construct(array $args)

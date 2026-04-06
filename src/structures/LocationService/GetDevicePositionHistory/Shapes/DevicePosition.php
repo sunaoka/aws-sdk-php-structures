@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LocationService\GetDevicePositionHistory\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $DeviceId
- * @property \Aws\Api\DateTimeResult $SampleTime
- * @property \Aws\Api\DateTimeResult $ReceivedTime
- * @property list<double> $Position
  * @property PositionalAccuracy|null $Accuracy
+ * @property string|null $DeviceId
+ * @property list<double> $Position
  * @property array<string, string>|null $PositionProperties
+ * @property \Aws\Api\DateTimeResult $ReceivedTime
+ * @property \Aws\Api\DateTimeResult $SampleTime
  */
 class DevicePosition extends Shape
 {
     /**
      * @param array{
-     *     DeviceId?: string|null,
-     *     SampleTime: \Aws\Api\DateTimeResult,
-     *     ReceivedTime: \Aws\Api\DateTimeResult,
-     *     Position: list<double>,
      *     Accuracy?: PositionalAccuracy|null,
-     *     PositionProperties?: array<string, string>|null
+     *     DeviceId?: string|null,
+     *     Position: list<double>,
+     *     PositionProperties?: array<string, string>|null,
+     *     ReceivedTime: \Aws\Api\DateTimeResult,
+     *     SampleTime: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

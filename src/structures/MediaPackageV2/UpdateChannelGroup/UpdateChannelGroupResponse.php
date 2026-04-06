@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $ModifiedAt
  * @property string|null $Description
- * @property string|null $ETag
  * @property array<string, string>|null $Tags
  */
 class UpdateChannelGroupResponse extends Response

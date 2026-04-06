@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CollectionName
- * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListGeofencesRequest extends Request
 {
     /**
      * @param array{
      *     CollectionName: string,
-     *     NextToken?: string|null,
-     *     MaxResults?: int<1, 100>|null
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

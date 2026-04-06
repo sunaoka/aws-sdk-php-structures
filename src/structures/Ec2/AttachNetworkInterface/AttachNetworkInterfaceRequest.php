@@ -5,25 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\AttachNetworkInterface;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property int $DeviceIndex
+ * @property bool|null $DryRun
+ * @property string $InstanceId
+ * @property string $NetworkInterfaceId
  * @property int|null $NetworkCardIndex
  * @property Shapes\EnaSrdSpecification|null $EnaSrdSpecification
- * @property int|null $EnaQueueCount
- * @property bool|null $DryRun
- * @property string $NetworkInterfaceId
- * @property string $InstanceId
- * @property int $DeviceIndex
  */
 class AttachNetworkInterfaceRequest extends Request
 {
     /**
      * @param array{
-     *     NetworkCardIndex?: int|null,
-     *     EnaSrdSpecification?: Shapes\EnaSrdSpecification|null,
-     *     EnaQueueCount?: int|null,
+     *     DeviceIndex: int,
      *     DryRun?: bool|null,
-     *     NetworkInterfaceId: string,
      *     InstanceId: string,
-     *     DeviceIndex: int
+     *     NetworkInterfaceId: string,
+     *     NetworkCardIndex?: int|null,
+     *     EnaSrdSpecification?: Shapes\EnaSrdSpecification|null
      * } $args
      */
     public function __construct(array $args)

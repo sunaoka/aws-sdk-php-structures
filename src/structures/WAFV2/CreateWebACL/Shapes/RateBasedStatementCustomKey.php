@@ -14,9 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RateLimitIP|null $IP
  * @property RateLimitLabelNamespace|null $LabelNamespace
  * @property RateLimitUriPath|null $UriPath
- * @property RateLimitJA3Fingerprint|null $JA3Fingerprint
- * @property RateLimitJA4Fingerprint|null $JA4Fingerprint
- * @property RateLimitAsn|null $ASN
  */
 class RateBasedStatementCustomKey extends Shape
 {
@@ -30,10 +27,7 @@ class RateBasedStatementCustomKey extends Shape
      *     ForwardedIP?: RateLimitForwardedIP|null,
      *     IP?: RateLimitIP|null,
      *     LabelNamespace?: RateLimitLabelNamespace|null,
-     *     UriPath?: RateLimitUriPath|null,
-     *     JA3Fingerprint?: RateLimitJA3Fingerprint|null,
-     *     JA4Fingerprint?: RateLimitJA4Fingerprint|null,
-     *     ASN?: RateLimitAsn|null
+     *     UriPath?: RateLimitUriPath|null
      * } $args
      */
     public function __construct(array $args = [])

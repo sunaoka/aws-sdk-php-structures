@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $actionName
- * @property string $ssmDocumentName
- * @property int<1, max>|null $timeoutSeconds
+ * @property array<string, SsmExternalParameter>|null $externalParameters
  * @property bool|null $mustSucceedForCutover
  * @property array<string, list<SsmParameterStoreParameter>>|null $parameters
- * @property array<string, SsmExternalParameter>|null $externalParameters
+ * @property string $ssmDocumentName
+ * @property int<1, max>|null $timeoutSeconds
  */
 class SsmDocument extends Shape
 {
     /**
      * @param array{
      *     actionName: string,
-     *     ssmDocumentName: string,
-     *     timeoutSeconds?: int<1, max>|null,
+     *     externalParameters?: array<string, SsmExternalParameter>|null,
      *     mustSucceedForCutover?: bool|null,
      *     parameters?: array<string, list<SsmParameterStoreParameter>>|null,
-     *     externalParameters?: array<string, SsmExternalParameter>|null
+     *     ssmDocumentName: string,
+     *     timeoutSeconds?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

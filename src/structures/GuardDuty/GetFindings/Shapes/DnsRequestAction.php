@@ -8,8 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Domain
  * @property string|null $Protocol
  * @property bool|null $Blocked
- * @property string|null $DomainWithSuffix
- * @property string|null $VpcOwnerAccountId
  */
 class DnsRequestAction extends Shape
 {
@@ -17,9 +15,7 @@ class DnsRequestAction extends Shape
      * @param array{
      *     Domain?: string|null,
      *     Protocol?: string|null,
-     *     Blocked?: bool|null,
-     *     DomainWithSuffix?: string|null,
-     *     VpcOwnerAccountId?: string|null
+     *     Blocked?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,22 +6,13 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $Engine
- * @property string|null $MajorEngineVersion
  * @property string|null $EngineVersion
- * @property string|null $DatabaseInstallationFilesS3BucketName
- * @property string|null $DatabaseInstallationFilesS3Prefix
- * @property list<string>|null $DatabaseInstallationFiles
- * @property string|null $CustomDBEngineVersionManifest
  * @property string|null $DBParameterGroupFamily
  * @property string|null $DBEngineDescription
- * @property string|null $DBEngineVersionArn
  * @property string|null $DBEngineVersionDescription
  * @property Shapes\CharacterSet|null $DefaultCharacterSet
- * @property string|null $FailureReason
  * @property Shapes\CustomDBEngineVersionAMI|null $Image
  * @property string|null $DBEngineMediaType
- * @property string|null $KMSKeyId
- * @property \Aws\Api\DateTimeResult|null $CreateTime
  * @property list<Shapes\CharacterSet>|null $SupportedCharacterSets
  * @property list<Shapes\CharacterSet>|null $SupportedNcharCharacterSets
  * @property list<Shapes\UpgradeTarget>|null $ValidUpgradeTarget
@@ -34,14 +25,18 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $Status
  * @property bool|null $SupportsParallelQuery
  * @property bool|null $SupportsGlobalDatabases
+ * @property string|null $MajorEngineVersion
+ * @property string|null $DatabaseInstallationFilesS3BucketName
+ * @property string|null $DatabaseInstallationFilesS3Prefix
+ * @property string|null $DBEngineVersionArn
+ * @property string|null $KMSKeyId
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
  * @property list<Shapes\Tag>|null $TagList
  * @property bool|null $SupportsBabelfish
- * @property bool|null $SupportsLimitlessDatabase
+ * @property string|null $CustomDBEngineVersionManifest
  * @property bool|null $SupportsCertificateRotationWithoutRestart
  * @property list<string>|null $SupportedCACertificateIdentifiers
  * @property bool|null $SupportsLocalWriteForwarding
- * @property bool|null $SupportsIntegrations
- * @property Shapes\ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
  */
 class CreateCustomDBEngineVersionResponse extends Response
 {

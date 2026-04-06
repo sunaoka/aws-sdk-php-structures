@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ReleaseLabel
  * @property bool|null $AutoTerminate
  * @property bool|null $TerminationProtected
- * @property bool|null $UnhealthyNodeReplacement
  * @property bool|null $VisibleToAllUsers
  * @property list<Application>|null $Applications
  * @property list<Tag>|null $Tags
@@ -37,10 +36,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $StepConcurrencyLevel
  * @property list<PlacementGroupConfig>|null $PlacementGroups
  * @property string|null $OSReleaseLabel
- * @property int|null $EbsRootVolumeIops
- * @property int|null $EbsRootVolumeThroughput
- * @property bool|null $ExtendedSupport
- * @property MonitoringConfiguration|null $MonitoringConfiguration
  */
 class Cluster extends Shape
 {
@@ -58,7 +53,6 @@ class Cluster extends Shape
      *     ReleaseLabel?: string|null,
      *     AutoTerminate?: bool|null,
      *     TerminationProtected?: bool|null,
-     *     UnhealthyNodeReplacement?: bool|null,
      *     VisibleToAllUsers?: bool|null,
      *     Applications?: list<Application>|null,
      *     Tags?: list<Tag>|null,
@@ -77,11 +71,7 @@ class Cluster extends Shape
      *     OutpostArn?: string|null,
      *     StepConcurrencyLevel?: int|null,
      *     PlacementGroups?: list<PlacementGroupConfig>|null,
-     *     OSReleaseLabel?: string|null,
-     *     EbsRootVolumeIops?: int|null,
-     *     EbsRootVolumeThroughput?: int|null,
-     *     ExtendedSupport?: bool|null,
-     *     MonitoringConfiguration?: MonitoringConfiguration|null
+     *     OSReleaseLabel?: string|null
      * } $args
      */
     public function __construct(array $args = [])

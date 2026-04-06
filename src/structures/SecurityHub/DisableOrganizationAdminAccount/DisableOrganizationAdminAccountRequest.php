@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AdminAccountId
- * @property 'SecurityHub'|'SecurityHubV2'|null $Feature
  */
 class DisableOrganizationAdminAccountRequest extends Request
 {
     /**
-     * @param array{
-     *     AdminAccountId: string,
-     *     Feature?: 'SecurityHub'|'SecurityHubV2'|null
-     * } $args
+     * @param array{AdminAccountId: string} $args
      */
     public function __construct(array $args)
     {

@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $OriginalSourceFileSystemArn
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property list<Destination> $Destinations
- * @property string|null $SourceFileSystemOwnerId
  */
 class ReplicationConfigurationDescription extends Shape
 {
@@ -22,8 +21,7 @@ class ReplicationConfigurationDescription extends Shape
      *     SourceFileSystemArn: string,
      *     OriginalSourceFileSystemArn: string,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     Destinations: list<Destination>,
-     *     SourceFileSystemOwnerId?: string|null
+     *     Destinations: list<Destination>
      * } $args
      */
     public function __construct(array $args)

@@ -23,8 +23,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ResourceToImport>|null $ResourcesToImport
  * @property bool|null $IncludeNestedStacks
  * @property 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null $OnStackFailure
- * @property bool|null $ImportExistingResources
- * @property 'REVERT_DRIFT'|null $DeploymentMode
  */
 class CreateChangeSetRequest extends Request
 {
@@ -47,9 +45,7 @@ class CreateChangeSetRequest extends Request
      *     ChangeSetType?: 'CREATE'|'UPDATE'|'IMPORT'|null,
      *     ResourcesToImport?: list<Shapes\ResourceToImport>|null,
      *     IncludeNestedStacks?: bool|null,
-     *     OnStackFailure?: 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null,
-     *     ImportExistingResources?: bool|null,
-     *     DeploymentMode?: 'REVERT_DRIFT'|null
+     *     OnStackFailure?: 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null
      * } $args
      */
     public function __construct(array $args)

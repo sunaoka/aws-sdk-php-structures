@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Csv|null $csv
- * @property Parquet|null $parquet
  */
 class FileFormat extends Shape
 {
     /**
-     * @param array{
-     *     csv?: Csv|null,
-     *     parquet?: Parquet|null
-     * } $args
+     * @param array{csv?: Csv|null} $args
      */
     public function __construct(array $args = [])
     {

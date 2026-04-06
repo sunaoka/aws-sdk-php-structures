@@ -5,25 +5,23 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\BatchGetView\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $ViewArn
- * @property string|null $ViewName
- * @property string|null $Owner
- * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
- * @property string|null $Scope
- * @property list<IncludedProperty>|null $IncludedProperties
  * @property SearchFilter|null $Filters
+ * @property list<IncludedProperty>|null $IncludedProperties
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property string|null $Owner
+ * @property string|null $Scope
+ * @property string|null $ViewArn
  */
 class View extends Shape
 {
     /**
      * @param array{
-     *     ViewArn?: string|null,
-     *     ViewName?: string|null,
-     *     Owner?: string|null,
-     *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
-     *     Scope?: string|null,
+     *     Filters?: SearchFilter|null,
      *     IncludedProperties?: list<IncludedProperty>|null,
-     *     Filters?: SearchFilter|null
+     *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Owner?: string|null,
+     *     Scope?: string|null,
+     *     ViewArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -14,19 +14,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ConditionStepMetadata|null $Condition
  * @property CallbackStepMetadata|null $Callback
  * @property LambdaStepMetadata|null $Lambda
- * @property EMRStepMetadata|null $EMR
  * @property QualityCheckStepMetadata|null $QualityCheck
  * @property ClarifyCheckStepMetadata|null $ClarifyCheck
+ * @property EMRStepMetadata|null $EMR
  * @property FailStepMetadata|null $Fail
  * @property AutoMLJobStepMetadata|null $AutoMLJob
- * @property EndpointStepMetadata|null $Endpoint
- * @property EndpointConfigStepMetadata|null $EndpointConfig
- * @property BedrockCustomModelMetadata|null $BedrockCustomModel
- * @property BedrockCustomModelDeploymentMetadata|null $BedrockCustomModelDeployment
- * @property BedrockProvisionedModelThroughputMetadata|null $BedrockProvisionedModelThroughput
- * @property BedrockModelImportMetadata|null $BedrockModelImport
- * @property InferenceComponentMetadata|null $InferenceComponent
- * @property LineageMetadata|null $Lineage
  */
 class PipelineExecutionStepMetadata extends Shape
 {
@@ -41,19 +33,11 @@ class PipelineExecutionStepMetadata extends Shape
      *     Condition?: ConditionStepMetadata|null,
      *     Callback?: CallbackStepMetadata|null,
      *     Lambda?: LambdaStepMetadata|null,
-     *     EMR?: EMRStepMetadata|null,
      *     QualityCheck?: QualityCheckStepMetadata|null,
      *     ClarifyCheck?: ClarifyCheckStepMetadata|null,
+     *     EMR?: EMRStepMetadata|null,
      *     Fail?: FailStepMetadata|null,
-     *     AutoMLJob?: AutoMLJobStepMetadata|null,
-     *     Endpoint?: EndpointStepMetadata|null,
-     *     EndpointConfig?: EndpointConfigStepMetadata|null,
-     *     BedrockCustomModel?: BedrockCustomModelMetadata|null,
-     *     BedrockCustomModelDeployment?: BedrockCustomModelDeploymentMetadata|null,
-     *     BedrockProvisionedModelThroughput?: BedrockProvisionedModelThroughputMetadata|null,
-     *     BedrockModelImport?: BedrockModelImportMetadata|null,
-     *     InferenceComponent?: InferenceComponentMetadata|null,
-     *     Lineage?: LineageMetadata|null
+     *     AutoMLJob?: AutoMLJobStepMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

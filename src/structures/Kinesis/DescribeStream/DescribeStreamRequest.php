@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 10000>|null $Limit
  * @property string|null $ExclusiveStartShardId
  * @property string|null $StreamARN
- * @property string|null $StreamId
  */
 class DescribeStreamRequest extends Request
 {
@@ -18,8 +17,7 @@ class DescribeStreamRequest extends Request
      *     StreamName?: string|null,
      *     Limit?: int<1, 10000>|null,
      *     ExclusiveStartShardId?: string|null,
-     *     StreamARN?: string|null,
-     *     StreamId?: string|null
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

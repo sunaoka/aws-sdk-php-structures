@@ -5,31 +5,21 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\ListParticipants\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $participantId
- * @property string|null $userId
- * @property 'CONNECTED'|'DISCONNECTED'|null $state
  * @property \Aws\Api\DateTimeResult|null $firstJoinTime
+ * @property string|null $participantId
  * @property bool|null $published
- * @property 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED'|null $recordingState
- * @property 'SOURCE'|'REPLICA'|'NONE'|null $replicationType
- * @property 'ACTIVE'|'STOPPED'|null $replicationState
- * @property string|null $sourceStageArn
- * @property string|null $sourceSessionId
+ * @property 'CONNECTED'|'DISCONNECTED'|null $state
+ * @property string|null $userId
  */
 class ParticipantSummary extends Shape
 {
     /**
      * @param array{
-     *     participantId?: string|null,
-     *     userId?: string|null,
-     *     state?: 'CONNECTED'|'DISCONNECTED'|null,
      *     firstJoinTime?: \Aws\Api\DateTimeResult|null,
+     *     participantId?: string|null,
      *     published?: bool|null,
-     *     recordingState?: 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|'DISABLED'|null,
-     *     replicationType?: 'SOURCE'|'REPLICA'|'NONE'|null,
-     *     replicationState?: 'ACTIVE'|'STOPPED'|null,
-     *     sourceStageArn?: string|null,
-     *     sourceSessionId?: string|null
+     *     state?: 'CONNECTED'|'DISCONNECTED'|null,
+     *     userId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

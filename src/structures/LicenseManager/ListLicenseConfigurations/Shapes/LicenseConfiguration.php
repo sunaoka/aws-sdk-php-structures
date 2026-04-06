@@ -21,7 +21,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ManagedResourceSummary>|null $ManagedResourceSummaryList
  * @property list<ProductInformation>|null $ProductInformationList
  * @property AutomatedDiscoveryInformation|null $AutomatedDiscoveryInformation
- * @property int|null $LicenseExpiry
  */
 class LicenseConfiguration extends Shape
 {
@@ -42,8 +41,7 @@ class LicenseConfiguration extends Shape
      *     ConsumedLicenseSummaryList?: list<ConsumedLicenseSummary>|null,
      *     ManagedResourceSummaryList?: list<ManagedResourceSummary>|null,
      *     ProductInformationList?: list<ProductInformation>|null,
-     *     AutomatedDiscoveryInformation?: AutomatedDiscoveryInformation|null,
-     *     LicenseExpiry?: int|null
+     *     AutomatedDiscoveryInformation?: AutomatedDiscoveryInformation|null
      * } $args
      */
     public function __construct(array $args = [])

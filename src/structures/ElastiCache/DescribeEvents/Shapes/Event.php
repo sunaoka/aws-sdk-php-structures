@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $SourceIdentifier
- * @property 'cache-cluster'|'cache-parameter-group'|'cache-security-group'|'cache-subnet-group'|'replication-group'|'serverless-cache'|'serverless-cache-snapshot'|'user'|'user-group'|null $SourceType
+ * @property 'cache-cluster'|'cache-parameter-group'|'cache-security-group'|'cache-subnet-group'|'replication-group'|'user'|'user-group'|null $SourceType
  * @property string|null $Message
  * @property \Aws\Api\DateTimeResult|null $Date
  */
@@ -15,7 +15,7 @@ class Event extends Shape
     /**
      * @param array{
      *     SourceIdentifier?: string|null,
-     *     SourceType?: 'cache-cluster'|'cache-parameter-group'|'cache-security-group'|'cache-subnet-group'|'replication-group'|'serverless-cache'|'serverless-cache-snapshot'|'user'|'user-group'|null,
+     *     SourceType?: 'cache-cluster'|'cache-parameter-group'|'cache-security-group'|'cache-subnet-group'|'replication-group'|'user'|'user-group'|null,
      *     Message?: string|null,
      *     Date?: \Aws\Api\DateTimeResult|null
      * } $args

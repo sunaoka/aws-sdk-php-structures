@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string|null $ReplicationInstanceIdentifier
  * @property string|null $NetworkType
- * @property Shapes\KerberosAuthenticationSettings|null $KerberosAuthenticationSettings
  */
 class ModifyReplicationInstanceRequest extends Request
 {
@@ -34,8 +33,7 @@ class ModifyReplicationInstanceRequest extends Request
      *     AllowMajorVersionUpgrade?: bool|null,
      *     AutoMinorVersionUpgrade?: bool|null,
      *     ReplicationInstanceIdentifier?: string|null,
-     *     NetworkType?: string|null,
-     *     KerberosAuthenticationSettings?: Shapes\KerberosAuthenticationSettings|null
+     *     NetworkType?: string|null
      * } $args
      */
     public function __construct(array $args)

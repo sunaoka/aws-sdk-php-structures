@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|null $DeblockFilter
  * @property 'ENABLED'|'DISABLED'|null $DenoiseFilter
  * @property string|null $DolbyVisionMetadataXml
- * @property array<string, DynamicAudioSelector>|null $DynamicAudioSelectors
  * @property 'AUTO'|'DISABLE'|'FORCE'|null $FilterEnable
  * @property int<0, 5>|null $FilterStrength
  * @property ImageInserter|null $ImageInserter
@@ -25,7 +24,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'IGNORE_PSI'|'USE_PSI'|null $PsiControl
  * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null $TimecodeSource
  * @property string|null $TimecodeStart
- * @property list<VideoOverlay>|null $VideoOverlays
  * @property VideoSelector|null $VideoSelector
  */
 class InputTemplate extends Shape
@@ -41,7 +39,6 @@ class InputTemplate extends Shape
      *     DeblockFilter?: 'ENABLED'|'DISABLED'|null,
      *     DenoiseFilter?: 'ENABLED'|'DISABLED'|null,
      *     DolbyVisionMetadataXml?: string|null,
-     *     DynamicAudioSelectors?: array<string, DynamicAudioSelector>|null,
      *     FilterEnable?: 'AUTO'|'DISABLE'|'FORCE'|null,
      *     FilterStrength?: int<0, 5>|null,
      *     ImageInserter?: ImageInserter|null,
@@ -52,7 +49,6 @@ class InputTemplate extends Shape
      *     PsiControl?: 'IGNORE_PSI'|'USE_PSI'|null,
      *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null,
      *     TimecodeStart?: string|null,
-     *     VideoOverlays?: list<VideoOverlay>|null,
      *     VideoSelector?: VideoSelector|null
      * } $args
      */

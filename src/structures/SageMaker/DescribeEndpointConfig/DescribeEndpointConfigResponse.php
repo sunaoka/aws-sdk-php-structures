@@ -14,10 +14,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AsyncInferenceConfig|null $AsyncInferenceConfig
  * @property Shapes\ExplainerConfig|null $ExplainerConfig
  * @property list<Shapes\ProductionVariant>|null $ShadowProductionVariants
- * @property string|null $ExecutionRoleArn
- * @property Shapes\VpcConfig|null $VpcConfig
- * @property bool|null $EnableNetworkIsolation
- * @property Shapes\MetricsConfig|null $MetricsConfig
  */
 class DescribeEndpointConfigResponse extends Response
 {

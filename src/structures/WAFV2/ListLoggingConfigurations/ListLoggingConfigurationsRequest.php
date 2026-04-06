@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
  * @property string|null $NextMarker
  * @property int<1, 100>|null $Limit
- * @property 'CUSTOMER'|'SECURITY_LAKE'|'CLOUDWATCH_TELEMETRY_RULE_MANAGED'|null $LogScope
  */
 class ListLoggingConfigurationsRequest extends Request
 {
@@ -16,8 +15,7 @@ class ListLoggingConfigurationsRequest extends Request
      * @param array{
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
      *     NextMarker?: string|null,
-     *     Limit?: int<1, 100>|null,
-     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'|'CLOUDWATCH_TELEMETRY_RULE_MANAGED'|null
+     *     Limit?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

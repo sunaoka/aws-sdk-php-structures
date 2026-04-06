@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $QueryParameters
  * @property array<string, string>|null $OptionalParameters
  * @property 'HEALTHY'|'UNHEALTHY'|'ALL'|'HEALTHY_OR_ELSE_ALL'|null $HealthStatus
- * @property string|null $OwnerAccount
  */
 class DiscoverInstancesRequest extends Request
 {
@@ -22,8 +21,7 @@ class DiscoverInstancesRequest extends Request
      *     MaxResults?: int<1, 1000>|null,
      *     QueryParameters?: array<string, string>|null,
      *     OptionalParameters?: array<string, string>|null,
-     *     HealthStatus?: 'HEALTHY'|'UNHEALTHY'|'ALL'|'HEALTHY_OR_ELSE_ALL'|null,
-     *     OwnerAccount?: string|null
+     *     HealthStatus?: 'HEALTHY'|'UNHEALTHY'|'ALL'|'HEALTHY_OR_ELSE_ALL'|null
      * } $args
      */
     public function __construct(array $args)

@@ -32,7 +32,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $Applications
  * @property list<WorkloadProfile>|null $Profiles
  * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>|null $PrioritizedRiskCounts
- * @property WorkloadJiraConfigurationOutput|null $JiraConfiguration
  */
 class Workload extends Shape
 {
@@ -64,8 +63,7 @@ class Workload extends Shape
      *     DiscoveryConfig?: WorkloadDiscoveryConfig|null,
      *     Applications?: list<string>|null,
      *     Profiles?: list<WorkloadProfile>|null,
-     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>|null,
-     *     JiraConfiguration?: WorkloadJiraConfigurationOutput|null
+     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>|null
      * } $args
      */
     public function __construct(array $args = [])

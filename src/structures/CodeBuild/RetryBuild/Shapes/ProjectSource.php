@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeBuild\RetryBuild\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'GITLAB'|'GITLAB_SELF_MANAGED'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE' $type
+ * @property 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE' $type
  * @property string|null $location
  * @property int<0, max>|null $gitCloneDepth
  * @property GitSubmodulesConfig|null $gitSubmodulesConfig
@@ -20,7 +20,7 @@ class ProjectSource extends Shape
 {
     /**
      * @param array{
-     *     type: 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'GITLAB'|'GITLAB_SELF_MANAGED'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE',
+     *     type: 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE',
      *     location?: string|null,
      *     gitCloneDepth?: int<0, max>|null,
      *     gitSubmodulesConfig?: GitSubmodulesConfig|null,

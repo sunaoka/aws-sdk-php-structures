@@ -16,9 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'INACTIVE'|'DELETE_IN_PROGRESS'|null $status
  * @property list<Attribute>|null $requiresAttributes
  * @property list<TaskDefinitionPlacementConstraint>|null $placementConstraints
- * @property list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null $compatibilities
+ * @property list<'EC2'|'FARGATE'|'EXTERNAL'>|null $compatibilities
  * @property RuntimePlatform|null $runtimePlatform
- * @property list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null $requiresCompatibilities
+ * @property list<'EC2'|'FARGATE'|'EXTERNAL'>|null $requiresCompatibilities
  * @property string|null $cpu
  * @property string|null $memory
  * @property list<InferenceAccelerator>|null $inferenceAccelerators
@@ -27,10 +27,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProxyConfiguration|null $proxyConfiguration
  * @property \Aws\Api\DateTimeResult|null $registeredAt
  * @property \Aws\Api\DateTimeResult|null $deregisteredAt
- * @property \Aws\Api\DateTimeResult|null $deleteRequestedAt
  * @property string|null $registeredBy
  * @property EphemeralStorage|null $ephemeralStorage
- * @property bool|null $enableFaultInjection
  */
 class TaskDefinition extends Shape
 {
@@ -47,9 +45,9 @@ class TaskDefinition extends Shape
      *     status?: 'ACTIVE'|'INACTIVE'|'DELETE_IN_PROGRESS'|null,
      *     requiresAttributes?: list<Attribute>|null,
      *     placementConstraints?: list<TaskDefinitionPlacementConstraint>|null,
-     *     compatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null,
+     *     compatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'>|null,
      *     runtimePlatform?: RuntimePlatform|null,
-     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null,
+     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'>|null,
      *     cpu?: string|null,
      *     memory?: string|null,
      *     inferenceAccelerators?: list<InferenceAccelerator>|null,
@@ -58,10 +56,8 @@ class TaskDefinition extends Shape
      *     proxyConfiguration?: ProxyConfiguration|null,
      *     registeredAt?: \Aws\Api\DateTimeResult|null,
      *     deregisteredAt?: \Aws\Api\DateTimeResult|null,
-     *     deleteRequestedAt?: \Aws\Api\DateTimeResult|null,
      *     registeredBy?: string|null,
-     *     ephemeralStorage?: EphemeralStorage|null,
-     *     enableFaultInjection?: bool|null
+     *     ephemeralStorage?: EphemeralStorage|null
      * } $args
      */
     public function __construct(array $args = [])

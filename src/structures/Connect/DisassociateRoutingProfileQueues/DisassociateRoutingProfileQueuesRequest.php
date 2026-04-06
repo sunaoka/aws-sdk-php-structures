@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $RoutingProfileId
- * @property list<Shapes\RoutingProfileQueueReference>|null $QueueReferences
- * @property list<Shapes\RoutingProfileQueueReference>|null $ManualAssignmentQueueReferences
+ * @property list<Shapes\RoutingProfileQueueReference> $QueueReferences
  */
 class DisassociateRoutingProfileQueuesRequest extends Request
 {
@@ -16,8 +15,7 @@ class DisassociateRoutingProfileQueuesRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     RoutingProfileId: string,
-     *     QueueReferences?: list<Shapes\RoutingProfileQueueReference>|null,
-     *     ManualAssignmentQueueReferences?: list<Shapes\RoutingProfileQueueReference>|null
+     *     QueueReferences: list<Shapes\RoutingProfileQueueReference>
      * } $args
      */
     public function __construct(array $args)

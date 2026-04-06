@@ -5,23 +5,18 @@ namespace Sunaoka\Aws\Structures\Braket\GetQuantumTask;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $quantumTaskArn
- * @property 'CREATED'|'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED' $status
- * @property string|null $failureReason
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $deviceArn
  * @property string $deviceParameters
- * @property int $shots
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property string|null $failureReason
+ * @property string|null $jobArn
  * @property string $outputS3Bucket
  * @property string $outputS3Directory
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property string $quantumTaskArn
+ * @property int $shots
+ * @property 'CREATED'|'QUEUED'|'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED' $status
  * @property array<string, string>|null $tags
- * @property string|null $jobArn
- * @property Shapes\QuantumTaskQueueInfo|null $queueInfo
- * @property list<Shapes\Association>|null $associations
- * @property int|null $numSuccessfulShots
- * @property Shapes\ActionMetadata|null $actionMetadata
- * @property Shapes\ExperimentalCapabilities|null $experimentalCapabilities
  */
 class GetQuantumTaskResponse extends Response
 {

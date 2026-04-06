@@ -7,17 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $accountId
  * @property SeverityCounts|null $severityCounts
- * @property int|null $exploitAvailableCount
- * @property int|null $fixAvailableCount
  */
 class AccountAggregationResponse extends Shape
 {
     /**
      * @param array{
      *     accountId?: string|null,
-     *     severityCounts?: SeverityCounts|null,
-     *     exploitAvailableCount?: int|null,
-     *     fixAvailableCount?: int|null
+     *     severityCounts?: SeverityCounts|null
      * } $args
      */
     public function __construct(array $args = [])

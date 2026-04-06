@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ivschat\DeleteMessage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $roomIdentifier
  * @property string $id
  * @property string|null $reason
+ * @property string $roomIdentifier
  */
 class DeleteMessageRequest extends Request
 {
     /**
      * @param array{
-     *     roomIdentifier: string,
      *     id: string,
-     *     reason?: string|null
+     *     reason?: string|null,
+     *     roomIdentifier: string
      * } $args
      */
     public function __construct(array $args)

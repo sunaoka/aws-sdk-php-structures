@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\mgn\GetLaunchConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $sourceServerID
- * @property string|null $name
- * @property string|null $ec2LaunchTemplateID
- * @property 'STOPPED'|'STARTED'|null $launchDisposition
- * @property 'NONE'|'BASIC'|null $targetInstanceTypeRightSizingMethod
+ * @property 'LEGACY_BIOS'|'UEFI'|null $bootMode
  * @property bool|null $copyPrivateIp
  * @property bool|null $copyTags
- * @property Shapes\Licensing|null $licensing
- * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
- * @property Shapes\PostLaunchActions|null $postLaunchActions
+ * @property string|null $ec2LaunchTemplateID
  * @property bool|null $enableMapAutoTagging
+ * @property 'STOPPED'|'STARTED'|null $launchDisposition
+ * @property Shapes\Licensing|null $licensing
  * @property string|null $mapAutoTaggingMpeID
+ * @property string|null $name
+ * @property Shapes\PostLaunchActions|null $postLaunchActions
+ * @property string|null $sourceServerID
+ * @property 'NONE'|'BASIC'|null $targetInstanceTypeRightSizingMethod
  */
 class GetLaunchConfigurationResponse extends Response
 {

@@ -10,10 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EnvironmentProperties|null $EnvironmentProperties
  * @property ApplicationCodeConfiguration|null $ApplicationCodeConfiguration
  * @property ApplicationSnapshotConfiguration|null $ApplicationSnapshotConfiguration
- * @property ApplicationSystemRollbackConfiguration|null $ApplicationSystemRollbackConfiguration
  * @property list<VpcConfiguration>|null $VpcConfigurations
  * @property ZeppelinApplicationConfiguration|null $ZeppelinApplicationConfiguration
- * @property ApplicationEncryptionConfiguration|null $ApplicationEncryptionConfiguration
  */
 class ApplicationConfiguration extends Shape
 {
@@ -24,10 +22,8 @@ class ApplicationConfiguration extends Shape
      *     EnvironmentProperties?: EnvironmentProperties|null,
      *     ApplicationCodeConfiguration?: ApplicationCodeConfiguration|null,
      *     ApplicationSnapshotConfiguration?: ApplicationSnapshotConfiguration|null,
-     *     ApplicationSystemRollbackConfiguration?: ApplicationSystemRollbackConfiguration|null,
      *     VpcConfigurations?: list<VpcConfiguration>|null,
-     *     ZeppelinApplicationConfiguration?: ZeppelinApplicationConfiguration|null,
-     *     ApplicationEncryptionConfiguration?: ApplicationEncryptionConfiguration|null
+     *     ZeppelinApplicationConfiguration?: ZeppelinApplicationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

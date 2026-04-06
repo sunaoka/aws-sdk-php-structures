@@ -10,9 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ONLINE'|'OFFLINE'|null $Status
  * @property \Aws\Api\DateTimeResult|null $LastConnectionTime
  * @property \Aws\Api\DateTimeResult|null $CreationTime
- * @property 'PUBLIC'|'PRIVATE_LINK'|'FIPS'|'FIPS_PRIVATE_LINK'|null $EndpointType
+ * @property 'PUBLIC'|'PRIVATE_LINK'|'FIPS'|null $EndpointType
  * @property Shapes\PrivateLinkConfig|null $PrivateLinkConfig
- * @property Shapes\Platform|null $Platform
  */
 class DescribeAgentResponse extends Response
 {

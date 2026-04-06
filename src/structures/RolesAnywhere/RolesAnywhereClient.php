@@ -6,7 +6,6 @@ class RolesAnywhereClient extends \Aws\RolesAnywhere\RolesAnywhereClient
 {
     use CreateProfile\CreateProfileTrait;
     use CreateTrustAnchor\CreateTrustAnchorTrait;
-    use DeleteAttributeMapping\DeleteAttributeMappingTrait;
     use DeleteCrl\DeleteCrlTrait;
     use DeleteProfile\DeleteProfileTrait;
     use DeleteTrustAnchor\DeleteTrustAnchorTrait;
@@ -26,7 +25,6 @@ class RolesAnywhereClient extends \Aws\RolesAnywhere\RolesAnywhereClient
     use ListSubjects\ListSubjectsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListTrustAnchors\ListTrustAnchorsTrait;
-    use PutAttributeMapping\PutAttributeMappingTrait;
     use PutNotificationSettings\PutNotificationSettingsTrait;
     use ResetNotificationSettings\ResetNotificationSettingsTrait;
     use TagResource\TagResourceTrait;

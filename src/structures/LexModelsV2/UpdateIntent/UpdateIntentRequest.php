@@ -7,7 +7,6 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $intentId
  * @property string $intentName
- * @property string|null $intentDisplayName
  * @property string|null $description
  * @property string|null $parentIntentSignature
  * @property list<Shapes\SampleUtterance>|null $sampleUtterances
@@ -23,8 +22,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botVersion
  * @property string $localeId
  * @property Shapes\InitialResponseSetting|null $initialResponseSetting
- * @property Shapes\QnAIntentConfiguration|null $qnAIntentConfiguration
- * @property Shapes\QInConnectIntentConfiguration|null $qInConnectIntentConfiguration
  */
 class UpdateIntentRequest extends Request
 {
@@ -32,7 +29,6 @@ class UpdateIntentRequest extends Request
      * @param array{
      *     intentId: string,
      *     intentName: string,
-     *     intentDisplayName?: string|null,
      *     description?: string|null,
      *     parentIntentSignature?: string|null,
      *     sampleUtterances?: list<Shapes\SampleUtterance>|null,
@@ -47,9 +43,7 @@ class UpdateIntentRequest extends Request
      *     botId: string,
      *     botVersion: string,
      *     localeId: string,
-     *     initialResponseSetting?: Shapes\InitialResponseSetting|null,
-     *     qnAIntentConfiguration?: Shapes\QnAIntentConfiguration|null,
-     *     qInConnectIntentConfiguration?: Shapes\QInConnectIntentConfiguration|null
+     *     initialResponseSetting?: Shapes\InitialResponseSetting|null
      * } $args
      */
     public function __construct(array $args)

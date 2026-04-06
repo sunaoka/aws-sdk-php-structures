@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ModelPackageName
  * @property string|null $ModelPackageGroupName
  * @property int<1, max>|null $ModelPackageVersion
- * @property 'Logged'|'Registered'|null $ModelPackageRegistrationType
  * @property string|null $ModelPackageArn
  * @property string|null $ModelPackageDescription
  * @property \Aws\Api\DateTimeResult|null $CreationTime
@@ -29,14 +28,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Task
  * @property string|null $SamplePayloadUrl
  * @property list<AdditionalInferenceSpecificationDefinition>|null $AdditionalInferenceSpecifications
- * @property string|null $SourceUri
- * @property ModelPackageSecurityConfig|null $SecurityConfig
- * @property ModelPackageModelCard|null $ModelCard
- * @property ModelLifeCycle|null $ModelLifeCycle
  * @property list<Tag>|null $Tags
  * @property array<string, string>|null $CustomerMetadataProperties
  * @property DriftCheckBaselines|null $DriftCheckBaselines
- * @property 'All'|'None'|null $SkipModelValidation
  */
 class ModelPackage extends Shape
 {
@@ -45,7 +39,6 @@ class ModelPackage extends Shape
      *     ModelPackageName?: string|null,
      *     ModelPackageGroupName?: string|null,
      *     ModelPackageVersion?: int<1, max>|null,
-     *     ModelPackageRegistrationType?: 'Logged'|'Registered'|null,
      *     ModelPackageArn?: string|null,
      *     ModelPackageDescription?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
@@ -66,14 +59,9 @@ class ModelPackage extends Shape
      *     Task?: string|null,
      *     SamplePayloadUrl?: string|null,
      *     AdditionalInferenceSpecifications?: list<AdditionalInferenceSpecificationDefinition>|null,
-     *     SourceUri?: string|null,
-     *     SecurityConfig?: ModelPackageSecurityConfig|null,
-     *     ModelCard?: ModelPackageModelCard|null,
-     *     ModelLifeCycle?: ModelLifeCycle|null,
      *     Tags?: list<Tag>|null,
      *     CustomerMetadataProperties?: array<string, string>|null,
-     *     DriftCheckBaselines?: DriftCheckBaselines|null,
-     *     SkipModelValidation?: 'All'|'None'|null
+     *     DriftCheckBaselines?: DriftCheckBaselines|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enableECSManagedTags
  * @property bool|null $enableExecuteCommand
  * @property string|null $group
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
  * @property Shapes\NetworkConfiguration|null $networkConfiguration
  * @property Shapes\TaskOverride|null $overrides
  * @property list<Shapes\PlacementConstraint>|null $placementConstraints
@@ -22,8 +22,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $startedBy
  * @property list<Shapes\Tag>|null $tags
  * @property string $taskDefinition
- * @property string|null $clientToken
- * @property list<Shapes\TaskVolumeConfiguration>|null $volumeConfigurations
  */
 class RunTaskRequest extends Request
 {
@@ -35,7 +33,7 @@ class RunTaskRequest extends Request
      *     enableECSManagedTags?: bool|null,
      *     enableExecuteCommand?: bool|null,
      *     group?: string|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
      *     networkConfiguration?: Shapes\NetworkConfiguration|null,
      *     overrides?: Shapes\TaskOverride|null,
      *     placementConstraints?: list<Shapes\PlacementConstraint>|null,
@@ -45,9 +43,7 @@ class RunTaskRequest extends Request
      *     referenceId?: string|null,
      *     startedBy?: string|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     taskDefinition: string,
-     *     clientToken?: string|null,
-     *     volumeConfigurations?: list<Shapes\TaskVolumeConfiguration>|null
+     *     taskDefinition: string
      * } $args
      */
     public function __construct(array $args)

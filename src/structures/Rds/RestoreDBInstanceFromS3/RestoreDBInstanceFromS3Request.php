@@ -26,7 +26,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string|null $LicenseModel
  * @property int|null $Iops
- * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property bool|null $PubliclyAccessible
  * @property list<Shapes\Tag>|null $Tags
@@ -42,7 +41,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $S3BucketName
  * @property string|null $S3Prefix
  * @property string $S3IngestionRoleArn
- * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
@@ -52,13 +50,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeletionProtection
  * @property int|null $MaxAllocatedStorage
  * @property string|null $NetworkType
+ * @property int|null $StorageThroughput
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
- * @property bool|null $DedicatedLogVolume
- * @property string|null $CACertificateIdentifier
- * @property string|null $EngineLifecycleSupport
- * @property list<Shapes\AdditionalStorageVolume>|null $AdditionalStorageVolumes
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class RestoreDBInstanceFromS3Request extends Request
 {
@@ -85,7 +79,6 @@ class RestoreDBInstanceFromS3Request extends Request
      *     AutoMinorVersionUpgrade?: bool|null,
      *     LicenseModel?: string|null,
      *     Iops?: int|null,
-     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     PubliclyAccessible?: bool|null,
      *     Tags?: list<Shapes\Tag>|null,
@@ -101,7 +94,6 @@ class RestoreDBInstanceFromS3Request extends Request
      *     S3BucketName: string,
      *     S3Prefix?: string|null,
      *     S3IngestionRoleArn: string,
-     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
@@ -111,13 +103,9 @@ class RestoreDBInstanceFromS3Request extends Request
      *     DeletionProtection?: bool|null,
      *     MaxAllocatedStorage?: int|null,
      *     NetworkType?: string|null,
+     *     StorageThroughput?: int|null,
      *     ManageMasterUserPassword?: bool|null,
-     *     MasterUserSecretKmsKeyId?: string|null,
-     *     DedicatedLogVolume?: bool|null,
-     *     CACertificateIdentifier?: string|null,
-     *     EngineLifecycleSupport?: string|null,
-     *     AdditionalStorageVolumes?: list<Shapes\AdditionalStorageVolume>|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null
+     *     MasterUserSecretKmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

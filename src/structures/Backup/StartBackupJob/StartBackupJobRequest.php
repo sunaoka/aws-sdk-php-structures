@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
- * @property string|null $LogicallyAirGappedBackupVaultArn
  * @property string $ResourceArn
  * @property string $IamRoleArn
  * @property string|null $IdempotencyToken
@@ -15,14 +14,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Lifecycle|null $Lifecycle
  * @property array<string, string>|null $RecoveryPointTags
  * @property array<string, string>|null $BackupOptions
- * @property 'ENABLED'|'DISABLED'|null $Index
  */
 class StartBackupJobRequest extends Request
 {
     /**
      * @param array{
      *     BackupVaultName: string,
-     *     LogicallyAirGappedBackupVaultArn?: string|null,
      *     ResourceArn: string,
      *     IamRoleArn: string,
      *     IdempotencyToken?: string|null,
@@ -30,8 +27,7 @@ class StartBackupJobRequest extends Request
      *     CompleteWindowMinutes?: int|null,
      *     Lifecycle?: Shapes\Lifecycle|null,
      *     RecoveryPointTags?: array<string, string>|null,
-     *     BackupOptions?: array<string, string>|null,
-     *     Index?: 'ENABLED'|'DISABLED'|null
+     *     BackupOptions?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

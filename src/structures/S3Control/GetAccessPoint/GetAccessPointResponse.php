@@ -15,8 +15,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $AccessPointArn
  * @property array<string, string>|null $Endpoints
  * @property string|null $BucketAccountId
- * @property string|null $DataSourceId
- * @property string|null $DataSourceType
  */
 class GetAccessPointResponse extends Response
 {

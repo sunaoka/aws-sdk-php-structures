@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CostandUsageReportService\DeleteReportDefinitio
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReportName
+ * @property string|null $ReportName
  */
 class DeleteReportDefinitionRequest extends Request
 {
     /**
-     * @param array{ReportName: string} $args
+     * @param array{ReportName?: string|null} $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

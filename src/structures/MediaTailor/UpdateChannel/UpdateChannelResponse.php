@@ -15,8 +15,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $PlaybackMode
  * @property array<string, string>|null $Tags
  * @property string|null $Tier
- * @property Shapes\TimeShiftConfiguration|null $TimeShiftConfiguration
- * @property list<string>|null $Audiences
  */
 class UpdateChannelResponse extends Response
 {

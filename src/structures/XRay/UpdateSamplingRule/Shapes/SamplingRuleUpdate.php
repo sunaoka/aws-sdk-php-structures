@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $HTTPMethod
  * @property string|null $URLPath
  * @property array<string, string>|null $Attributes
- * @property SamplingRateBoost|null $SamplingRateBoost
  */
 class SamplingRuleUpdate extends Shape
 {
@@ -34,8 +33,7 @@ class SamplingRuleUpdate extends Shape
      *     ServiceType?: string|null,
      *     HTTPMethod?: string|null,
      *     URLPath?: string|null,
-     *     Attributes?: array<string, string>|null,
-     *     SamplingRateBoost?: SamplingRateBoost|null
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

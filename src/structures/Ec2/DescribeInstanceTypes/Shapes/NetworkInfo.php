@@ -18,12 +18,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EfaInfo|null $EfaInfo
  * @property bool|null $EncryptionInTransitSupported
  * @property bool|null $EnaSrdSupported
- * @property list<'default'|'vpc-1'|'ebs-1'>|null $BandwidthWeightings
- * @property 'unsupported'|'supported'|null $FlexibleEnaQueuesSupport
- * @property DefaultConnectionTrackingConfiguration|null $ConnectionTrackingConfiguration
- * @property bool|null $SecondaryNetworkSupported
- * @property int|null $MaximumSecondaryNetworkInterfaces
- * @property int|null $Ipv4AddressesPerSecondaryInterface
  */
 class NetworkInfo extends Shape
 {
@@ -41,13 +35,7 @@ class NetworkInfo extends Shape
      *     EfaSupported?: bool|null,
      *     EfaInfo?: EfaInfo|null,
      *     EncryptionInTransitSupported?: bool|null,
-     *     EnaSrdSupported?: bool|null,
-     *     BandwidthWeightings?: list<'default'|'vpc-1'|'ebs-1'>|null,
-     *     FlexibleEnaQueuesSupport?: 'unsupported'|'supported'|null,
-     *     ConnectionTrackingConfiguration?: DefaultConnectionTrackingConfiguration|null,
-     *     SecondaryNetworkSupported?: bool|null,
-     *     MaximumSecondaryNetworkInterfaces?: int|null,
-     *     Ipv4AddressesPerSecondaryInterface?: int|null
+     *     EnaSrdSupported?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,12 +12,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\CreateFileSystemWindowsConfiguration|null $WindowsConfiguration
  * @property Shapes\CreateFileSystemLustreConfiguration|null $LustreConfiguration
- * @property 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null $StorageType
+ * @property 'SSD'|'HDD'|null $StorageType
  * @property string|null $KmsKeyId
  * @property string|null $FileSystemTypeVersion
  * @property Shapes\CreateFileSystemOpenZFSConfiguration|null $OpenZFSConfiguration
  * @property int<0, 2147483647>|null $StorageCapacity
- * @property 'IPV4'|'DUAL'|null $NetworkType
  */
 class CreateFileSystemFromBackupRequest extends Request
 {
@@ -30,12 +29,11 @@ class CreateFileSystemFromBackupRequest extends Request
      *     Tags?: list<Shapes\Tag>|null,
      *     WindowsConfiguration?: Shapes\CreateFileSystemWindowsConfiguration|null,
      *     LustreConfiguration?: Shapes\CreateFileSystemLustreConfiguration|null,
-     *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null,
+     *     StorageType?: 'SSD'|'HDD'|null,
      *     KmsKeyId?: string|null,
      *     FileSystemTypeVersion?: string|null,
      *     OpenZFSConfiguration?: Shapes\CreateFileSystemOpenZFSConfiguration|null,
-     *     StorageCapacity?: int<0, 2147483647>|null,
-     *     NetworkType?: 'IPV4'|'DUAL'|null
+     *     StorageCapacity?: int<0, 2147483647>|null
      * } $args
      */
     public function __construct(array $args)

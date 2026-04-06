@@ -25,7 +25,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DBClusterSnapshotArn
  * @property string|null $SourceDBClusterSnapshotArn
  * @property bool|null $IAMDatabaseAuthenticationEnabled
- * @property string|null $StorageType
  */
 class DBClusterSnapshot extends Shape
 {
@@ -50,8 +49,7 @@ class DBClusterSnapshot extends Shape
      *     KmsKeyId?: string|null,
      *     DBClusterSnapshotArn?: string|null,
      *     SourceDBClusterSnapshotArn?: string|null,
-     *     IAMDatabaseAuthenticationEnabled?: bool|null,
-     *     StorageType?: string|null
+     *     IAMDatabaseAuthenticationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

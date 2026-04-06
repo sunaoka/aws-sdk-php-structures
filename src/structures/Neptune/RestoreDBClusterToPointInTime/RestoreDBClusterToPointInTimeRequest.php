@@ -21,7 +21,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DBClusterParameterGroupName
  * @property bool|null $DeletionProtection
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
- * @property string|null $StorageType
  */
 class RestoreDBClusterToPointInTimeRequest extends Request
 {
@@ -42,8 +41,7 @@ class RestoreDBClusterToPointInTimeRequest extends Request
      *     EnableCloudwatchLogsExports?: list<string>|null,
      *     DBClusterParameterGroupName?: string|null,
      *     DeletionProtection?: bool|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     StorageType?: string|null
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

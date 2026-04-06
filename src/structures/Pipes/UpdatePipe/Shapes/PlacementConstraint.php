@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'distinctInstance'|'memberOf'|null $type
  * @property string|null $expression
+ * @property 'distinctInstance'|'memberOf'|null $type
  */
 class PlacementConstraint extends Shape
 {
     /**
      * @param array{
-     *     type?: 'distinctInstance'|'memberOf'|null,
-     *     expression?: string|null
+     *     expression?: string|null,
+     *     type?: 'distinctInstance'|'memberOf'|null
      * } $args
      */
     public function __construct(array $args = [])

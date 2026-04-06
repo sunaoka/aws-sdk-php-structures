@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LaunchTemplateName
  * @property string|null $VersionDescription
  * @property Shapes\RequestLaunchTemplateData $LaunchTemplateData
- * @property Shapes\OperatorRequest|null $Operator
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateLaunchTemplateRequest extends Request
@@ -22,7 +21,6 @@ class CreateLaunchTemplateRequest extends Request
      *     LaunchTemplateName: string,
      *     VersionDescription?: string|null,
      *     LaunchTemplateData: Shapes\RequestLaunchTemplateData,
-     *     Operator?: Shapes\OperatorRequest|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */

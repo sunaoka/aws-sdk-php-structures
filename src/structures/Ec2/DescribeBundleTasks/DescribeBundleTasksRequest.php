@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string>|null $BundleIds
- * @property bool|null $DryRun
  * @property list<Shapes\Filter>|null $Filters
+ * @property bool|null $DryRun
  */
 class DescribeBundleTasksRequest extends Request
 {
     /**
      * @param array{
      *     BundleIds?: list<string>|null,
-     *     DryRun?: bool|null,
-     *     Filters?: list<Shapes\Filter>|null
+     *     Filters?: list<Shapes\Filter>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

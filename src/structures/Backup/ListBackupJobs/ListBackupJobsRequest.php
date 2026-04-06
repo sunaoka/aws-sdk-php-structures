@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $ByCompleteAfter
  * @property \Aws\Api\DateTimeResult|null $ByCompleteBefore
  * @property string|null $ByParentJobId
- * @property string|null $ByMessageCategory
  */
 class ListBackupJobsRequest extends Request
 {
@@ -34,8 +33,7 @@ class ListBackupJobsRequest extends Request
      *     ByAccountId?: string|null,
      *     ByCompleteAfter?: \Aws\Api\DateTimeResult|null,
      *     ByCompleteBefore?: \Aws\Api\DateTimeResult|null,
-     *     ByParentJobId?: string|null,
-     *     ByMessageCategory?: string|null
+     *     ByParentJobId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

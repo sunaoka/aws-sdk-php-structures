@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $solutionArn
  * @property bool|null $performHPO
  * @property bool|null $performAutoML
- * @property bool|null $performAutoTraining
- * @property bool|null $performIncrementalUpdate
  * @property string|null $recipeArn
  * @property string|null $datasetGroupArn
  * @property string|null $eventType
@@ -20,7 +18,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $creationDateTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  * @property SolutionVersionSummary|null $latestSolutionVersion
- * @property SolutionUpdateSummary|null $latestSolutionUpdate
  */
 class Solution extends Shape
 {
@@ -30,8 +27,6 @@ class Solution extends Shape
      *     solutionArn?: string|null,
      *     performHPO?: bool|null,
      *     performAutoML?: bool|null,
-     *     performAutoTraining?: bool|null,
-     *     performIncrementalUpdate?: bool|null,
      *     recipeArn?: string|null,
      *     datasetGroupArn?: string|null,
      *     eventType?: string|null,
@@ -40,8 +35,7 @@ class Solution extends Shape
      *     status?: string|null,
      *     creationDateTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
-     *     latestSolutionVersion?: SolutionVersionSummary|null,
-     *     latestSolutionUpdate?: SolutionUpdateSummary|null
+     *     latestSolutionVersion?: SolutionVersionSummary|null
      * } $args
      */
     public function __construct(array $args = [])

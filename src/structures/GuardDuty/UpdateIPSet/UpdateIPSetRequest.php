@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string|null $Location
  * @property bool|null $Activate
- * @property string|null $ExpectedBucketOwner
  */
 class UpdateIPSetRequest extends Request
 {
@@ -20,8 +19,7 @@ class UpdateIPSetRequest extends Request
      *     IpSetId: string,
      *     Name?: string|null,
      *     Location?: string|null,
-     *     Activate?: bool|null,
-     *     ExpectedBucketOwner?: string|null
+     *     Activate?: bool|null
      * } $args
      */
     public function __construct(array $args)

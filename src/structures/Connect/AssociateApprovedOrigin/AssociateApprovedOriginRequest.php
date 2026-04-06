@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $Origin
- * @property string|null $ClientToken
  */
 class AssociateApprovedOriginRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     Origin: string,
-     *     ClientToken?: string|null
+     *     Origin: string
      * } $args
      */
     public function __construct(array $args)

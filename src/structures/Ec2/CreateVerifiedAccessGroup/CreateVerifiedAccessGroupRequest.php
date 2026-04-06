@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property string|null $ClientToken
  * @property bool|null $DryRun
- * @property Shapes\VerifiedAccessSseSpecificationRequest|null $SseSpecification
  */
 class CreateVerifiedAccessGroupRequest extends Request
 {
@@ -22,8 +21,7 @@ class CreateVerifiedAccessGroupRequest extends Request
      *     PolicyDocument?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     ClientToken?: string|null,
-     *     DryRun?: bool|null,
-     *     SseSpecification?: Shapes\VerifiedAccessSseSpecificationRequest|null
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

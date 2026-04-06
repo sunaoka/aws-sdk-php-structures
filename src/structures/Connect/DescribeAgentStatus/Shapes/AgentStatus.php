@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 50>|null $DisplayOrder
  * @property 'ENABLED'|'DISABLED'|null $State
  * @property array<string, string>|null $Tags
- * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
- * @property string|null $LastModifiedRegion
  */
 class AgentStatus extends Shape
 {
@@ -27,9 +25,7 @@ class AgentStatus extends Shape
      *     Type?: 'ROUTABLE'|'CUSTOM'|'OFFLINE'|null,
      *     DisplayOrder?: int<1, 50>|null,
      *     State?: 'ENABLED'|'DISABLED'|null,
-     *     Tags?: array<string, string>|null,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     LastModifiedRegion?: string|null
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

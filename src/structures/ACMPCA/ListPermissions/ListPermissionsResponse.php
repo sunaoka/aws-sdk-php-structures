@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ACMPCA\ListPermissions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $NextToken
  * @property list<Shapes\Permission>|null $Permissions
+ * @property string|null $NextToken
  */
 class ListPermissionsResponse extends Response
 {

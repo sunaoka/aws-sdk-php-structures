@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Details
  * @property SessionManagerOutputUrl|null $OutputUrl
  * @property string|null $MaxSessionDuration
- * @property 'Standard'|'JustInTime'|null $AccessType
  */
 class Session extends Shape
 {
@@ -32,8 +31,7 @@ class Session extends Shape
      *     Reason?: string|null,
      *     Details?: string|null,
      *     OutputUrl?: SessionManagerOutputUrl|null,
-     *     MaxSessionDuration?: string|null,
-     *     AccessType?: 'Standard'|'JustInTime'|null
+     *     MaxSessionDuration?: string|null
      * } $args
      */
     public function __construct(array $args = [])

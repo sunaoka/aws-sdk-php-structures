@@ -5,29 +5,27 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\AssociateUser\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Username
- * @property string $InstanceId
- * @property IdentityProvider $IdentityProvider
- * @property string $Status
- * @property string|null $InstanceUserArn
- * @property string|null $StatusMessage
- * @property string|null $Domain
  * @property string|null $AssociationDate
  * @property string|null $DisassociationDate
+ * @property string|null $Domain
+ * @property IdentityProvider $IdentityProvider
+ * @property string $InstanceId
+ * @property string $Status
+ * @property string|null $StatusMessage
+ * @property string $Username
  */
 class InstanceUserSummary extends Shape
 {
     /**
      * @param array{
-     *     Username: string,
-     *     InstanceId: string,
-     *     IdentityProvider: IdentityProvider,
-     *     Status: string,
-     *     InstanceUserArn?: string|null,
-     *     StatusMessage?: string|null,
-     *     Domain?: string|null,
      *     AssociationDate?: string|null,
-     *     DisassociationDate?: string|null
+     *     DisassociationDate?: string|null,
+     *     Domain?: string|null,
+     *     IdentityProvider: IdentityProvider,
+     *     InstanceId: string,
+     *     Status: string,
+     *     StatusMessage?: string|null,
+     *     Username: string
      * } $args
      */
     public function __construct(array $args)

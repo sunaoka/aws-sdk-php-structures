@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EngineVersion
  * @property string|null $DbClusterIdentifier
  * @property string|null $DbInstanceArn
- * @property string|null $DbiResourceId
  * @property list<Tag>|null $Tags
  */
 class RdsDbInstanceDetails extends Shape
@@ -22,7 +21,6 @@ class RdsDbInstanceDetails extends Shape
      *     EngineVersion?: string|null,
      *     DbClusterIdentifier?: string|null,
      *     DbInstanceArn?: string|null,
-     *     DbiResourceId?: string|null,
      *     Tags?: list<Tag>|null
      * } $args
      */

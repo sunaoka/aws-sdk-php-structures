@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateDataflowEndpointGroup\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RangedSocketAddress $socketAddress
  * @property int<1400, 1500>|null $mtu
+ * @property RangedSocketAddress $socketAddress
  */
 class RangedConnectionDetails extends Shape
 {
     /**
      * @param array{
-     *     socketAddress: RangedSocketAddress,
-     *     mtu?: int<1400, 1500>|null
+     *     mtu?: int<1400, 1500>|null,
+     *     socketAddress: RangedSocketAddress
      * } $args
      */
     public function __construct(array $args)

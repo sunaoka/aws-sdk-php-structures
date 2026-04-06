@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $runningCount
  * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property \Aws\Api\DateTimeResult|null $updatedAt
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
  * @property list<CapacityProviderStrategyItem>|null $capacityProviderStrategy
  * @property string|null $platformVersion
  * @property string|null $platformFamily
@@ -29,7 +29,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'STEADY_STATE'|'STABILIZING'|null $stabilityStatus
  * @property \Aws\Api\DateTimeResult|null $stabilityStatusAt
  * @property list<Tag>|null $tags
- * @property DeploymentEphemeralStorage|null $fargateEphemeralStorage
  */
 class TaskSet extends Shape
 {
@@ -48,7 +47,7 @@ class TaskSet extends Shape
      *     runningCount?: int|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     updatedAt?: \Aws\Api\DateTimeResult|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
      *     capacityProviderStrategy?: list<CapacityProviderStrategyItem>|null,
      *     platformVersion?: string|null,
      *     platformFamily?: string|null,
@@ -58,8 +57,7 @@ class TaskSet extends Shape
      *     scale?: Scale|null,
      *     stabilityStatus?: 'STEADY_STATE'|'STABILIZING'|null,
      *     stabilityStatusAt?: \Aws\Api\DateTimeResult|null,
-     *     tags?: list<Tag>|null,
-     *     fargateEphemeralStorage?: DeploymentEphemeralStorage|null
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

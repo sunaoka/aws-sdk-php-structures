@@ -45,7 +45,6 @@ class ComprehendClient extends \Aws\Comprehend\ComprehendClient
     use DetectSentiment\DetectSentimentTrait;
     use DetectSyntax\DetectSyntaxTrait;
     use DetectTargetedSentiment\DetectTargetedSentimentTrait;
-    use DetectToxicContent\DetectToxicContentTrait;
     use ImportModel\ImportModelTrait;
     use ListDatasets\ListDatasetsTrait;
     use ListDocumentClassificationJobs\ListDocumentClassificationJobsTrait;

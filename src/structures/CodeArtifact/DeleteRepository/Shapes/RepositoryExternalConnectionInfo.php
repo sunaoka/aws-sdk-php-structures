@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $externalConnectionName
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null $packageFormat
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|null $packageFormat
  * @property 'Available'|null $status
  */
 class RepositoryExternalConnectionInfo extends Shape
@@ -14,7 +14,7 @@ class RepositoryExternalConnectionInfo extends Shape
     /**
      * @param array{
      *     externalConnectionName?: string|null,
-     *     packageFormat?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null,
+     *     packageFormat?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|null,
      *     status?: 'Available'|null
      * } $args
      */

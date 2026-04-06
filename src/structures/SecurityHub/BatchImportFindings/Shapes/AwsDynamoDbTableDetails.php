@@ -24,7 +24,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TableName
  * @property int|null $TableSizeBytes
  * @property string|null $TableStatus
- * @property bool|null $DeletionProtectionEnabled
  */
 class AwsDynamoDbTableDetails extends Shape
 {
@@ -48,8 +47,7 @@ class AwsDynamoDbTableDetails extends Shape
      *     TableId?: string|null,
      *     TableName?: string|null,
      *     TableSizeBytes?: int|null,
-     *     TableStatus?: string|null,
-     *     DeletionProtectionEnabled?: bool|null
+     *     TableStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

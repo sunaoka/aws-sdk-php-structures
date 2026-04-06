@@ -9,7 +9,6 @@ class ElastiCacheClient extends \Aws\ElastiCache\ElastiCacheClient
     use BatchApplyUpdateAction\BatchApplyUpdateActionTrait;
     use BatchStopUpdateAction\BatchStopUpdateActionTrait;
     use CompleteMigration\CompleteMigrationTrait;
-    use CopyServerlessCacheSnapshot\CopyServerlessCacheSnapshotTrait;
     use CopySnapshot\CopySnapshotTrait;
     use CreateCacheCluster\CreateCacheClusterTrait;
     use CreateCacheParameterGroup\CreateCacheParameterGroupTrait;
@@ -17,8 +16,6 @@ class ElastiCacheClient extends \Aws\ElastiCache\ElastiCacheClient
     use CreateCacheSubnetGroup\CreateCacheSubnetGroupTrait;
     use CreateGlobalReplicationGroup\CreateGlobalReplicationGroupTrait;
     use CreateReplicationGroup\CreateReplicationGroupTrait;
-    use CreateServerlessCache\CreateServerlessCacheTrait;
-    use CreateServerlessCacheSnapshot\CreateServerlessCacheSnapshotTrait;
     use CreateSnapshot\CreateSnapshotTrait;
     use CreateUser\CreateUserTrait;
     use CreateUserGroup\CreateUserGroupTrait;
@@ -30,8 +27,6 @@ class ElastiCacheClient extends \Aws\ElastiCache\ElastiCacheClient
     use DeleteCacheSubnetGroup\DeleteCacheSubnetGroupTrait;
     use DeleteGlobalReplicationGroup\DeleteGlobalReplicationGroupTrait;
     use DeleteReplicationGroup\DeleteReplicationGroupTrait;
-    use DeleteServerlessCache\DeleteServerlessCacheTrait;
-    use DeleteServerlessCacheSnapshot\DeleteServerlessCacheSnapshotTrait;
     use DeleteSnapshot\DeleteSnapshotTrait;
     use DeleteUser\DeleteUserTrait;
     use DeleteUserGroup\DeleteUserGroupTrait;
@@ -47,15 +42,12 @@ class ElastiCacheClient extends \Aws\ElastiCache\ElastiCacheClient
     use DescribeReplicationGroups\DescribeReplicationGroupsTrait;
     use DescribeReservedCacheNodes\DescribeReservedCacheNodesTrait;
     use DescribeReservedCacheNodesOfferings\DescribeReservedCacheNodesOfferingsTrait;
-    use DescribeServerlessCacheSnapshots\DescribeServerlessCacheSnapshotsTrait;
-    use DescribeServerlessCaches\DescribeServerlessCachesTrait;
     use DescribeServiceUpdates\DescribeServiceUpdatesTrait;
     use DescribeSnapshots\DescribeSnapshotsTrait;
     use DescribeUpdateActions\DescribeUpdateActionsTrait;
     use DescribeUserGroups\DescribeUserGroupsTrait;
     use DescribeUsers\DescribeUsersTrait;
     use DisassociateGlobalReplicationGroup\DisassociateGlobalReplicationGroupTrait;
-    use ExportServerlessCacheSnapshot\ExportServerlessCacheSnapshotTrait;
     use FailoverGlobalReplicationGroup\FailoverGlobalReplicationGroupTrait;
     use IncreaseNodeGroupsInGlobalReplicationGroup\IncreaseNodeGroupsInGlobalReplicationGroupTrait;
     use IncreaseReplicaCount\IncreaseReplicaCountTrait;
@@ -67,7 +59,6 @@ class ElastiCacheClient extends \Aws\ElastiCache\ElastiCacheClient
     use ModifyGlobalReplicationGroup\ModifyGlobalReplicationGroupTrait;
     use ModifyReplicationGroup\ModifyReplicationGroupTrait;
     use ModifyReplicationGroupShardConfiguration\ModifyReplicationGroupShardConfigurationTrait;
-    use ModifyServerlessCache\ModifyServerlessCacheTrait;
     use ModifyUser\ModifyUserTrait;
     use ModifyUserGroup\ModifyUserGroupTrait;
     use PurchaseReservedCacheNodesOffering\PurchaseReservedCacheNodesOfferingTrait;

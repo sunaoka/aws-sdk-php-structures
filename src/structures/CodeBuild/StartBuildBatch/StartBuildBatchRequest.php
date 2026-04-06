@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProjectArtifacts|null $artifactsOverride
  * @property list<Shapes\ProjectArtifacts>|null $secondaryArtifactsOverride
  * @property list<Shapes\EnvironmentVariable>|null $environmentVariablesOverride
- * @property 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'GITLAB'|'GITLAB_SELF_MANAGED'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE'|null $sourceTypeOverride
+ * @property 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE'|null $sourceTypeOverride
  * @property string|null $sourceLocationOverride
  * @property Shapes\SourceAuth|null $sourceAuthOverride
  * @property int<0, max>|null $gitCloneDepthOverride
@@ -20,14 +20,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $buildspecOverride
  * @property bool|null $insecureSslOverride
  * @property bool|null $reportBuildBatchStatusOverride
- * @property 'WINDOWS_CONTAINER'|'LINUX_CONTAINER'|'LINUX_GPU_CONTAINER'|'ARM_CONTAINER'|'WINDOWS_SERVER_2019_CONTAINER'|'WINDOWS_SERVER_2022_CONTAINER'|'LINUX_LAMBDA_CONTAINER'|'ARM_LAMBDA_CONTAINER'|'LINUX_EC2'|'ARM_EC2'|'WINDOWS_EC2'|'MAC_ARM'|null $environmentTypeOverride
+ * @property 'WINDOWS_CONTAINER'|'LINUX_CONTAINER'|'LINUX_GPU_CONTAINER'|'ARM_CONTAINER'|'WINDOWS_SERVER_2019_CONTAINER'|null $environmentTypeOverride
  * @property string|null $imageOverride
- * @property 'BUILD_GENERAL1_SMALL'|'BUILD_GENERAL1_MEDIUM'|'BUILD_GENERAL1_LARGE'|'BUILD_GENERAL1_XLARGE'|'BUILD_GENERAL1_2XLARGE'|'BUILD_LAMBDA_1GB'|'BUILD_LAMBDA_2GB'|'BUILD_LAMBDA_4GB'|'BUILD_LAMBDA_8GB'|'BUILD_LAMBDA_10GB'|'ATTRIBUTE_BASED_COMPUTE'|'CUSTOM_INSTANCE_TYPE'|null $computeTypeOverride
+ * @property 'BUILD_GENERAL1_SMALL'|'BUILD_GENERAL1_MEDIUM'|'BUILD_GENERAL1_LARGE'|'BUILD_GENERAL1_2XLARGE'|null $computeTypeOverride
  * @property string|null $certificateOverride
  * @property Shapes\ProjectCache|null $cacheOverride
  * @property string|null $serviceRoleOverride
  * @property bool|null $privilegedModeOverride
- * @property int<5, 2160>|null $buildTimeoutInMinutesOverride
+ * @property int<5, 480>|null $buildTimeoutInMinutesOverride
  * @property int<5, 480>|null $queuedTimeoutInMinutesOverride
  * @property string|null $encryptionKeyOverride
  * @property string|null $idempotencyToken
@@ -48,7 +48,7 @@ class StartBuildBatchRequest extends Request
      *     artifactsOverride?: Shapes\ProjectArtifacts|null,
      *     secondaryArtifactsOverride?: list<Shapes\ProjectArtifacts>|null,
      *     environmentVariablesOverride?: list<Shapes\EnvironmentVariable>|null,
-     *     sourceTypeOverride?: 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'GITLAB'|'GITLAB_SELF_MANAGED'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE'|null,
+     *     sourceTypeOverride?: 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE'|null,
      *     sourceLocationOverride?: string|null,
      *     sourceAuthOverride?: Shapes\SourceAuth|null,
      *     gitCloneDepthOverride?: int<0, max>|null,
@@ -56,14 +56,14 @@ class StartBuildBatchRequest extends Request
      *     buildspecOverride?: string|null,
      *     insecureSslOverride?: bool|null,
      *     reportBuildBatchStatusOverride?: bool|null,
-     *     environmentTypeOverride?: 'WINDOWS_CONTAINER'|'LINUX_CONTAINER'|'LINUX_GPU_CONTAINER'|'ARM_CONTAINER'|'WINDOWS_SERVER_2019_CONTAINER'|'WINDOWS_SERVER_2022_CONTAINER'|'LINUX_LAMBDA_CONTAINER'|'ARM_LAMBDA_CONTAINER'|'LINUX_EC2'|'ARM_EC2'|'WINDOWS_EC2'|'MAC_ARM'|null,
+     *     environmentTypeOverride?: 'WINDOWS_CONTAINER'|'LINUX_CONTAINER'|'LINUX_GPU_CONTAINER'|'ARM_CONTAINER'|'WINDOWS_SERVER_2019_CONTAINER'|null,
      *     imageOverride?: string|null,
-     *     computeTypeOverride?: 'BUILD_GENERAL1_SMALL'|'BUILD_GENERAL1_MEDIUM'|'BUILD_GENERAL1_LARGE'|'BUILD_GENERAL1_XLARGE'|'BUILD_GENERAL1_2XLARGE'|'BUILD_LAMBDA_1GB'|'BUILD_LAMBDA_2GB'|'BUILD_LAMBDA_4GB'|'BUILD_LAMBDA_8GB'|'BUILD_LAMBDA_10GB'|'ATTRIBUTE_BASED_COMPUTE'|'CUSTOM_INSTANCE_TYPE'|null,
+     *     computeTypeOverride?: 'BUILD_GENERAL1_SMALL'|'BUILD_GENERAL1_MEDIUM'|'BUILD_GENERAL1_LARGE'|'BUILD_GENERAL1_2XLARGE'|null,
      *     certificateOverride?: string|null,
      *     cacheOverride?: Shapes\ProjectCache|null,
      *     serviceRoleOverride?: string|null,
      *     privilegedModeOverride?: bool|null,
-     *     buildTimeoutInMinutesOverride?: int<5, 2160>|null,
+     *     buildTimeoutInMinutesOverride?: int<5, 480>|null,
      *     queuedTimeoutInMinutesOverride?: int<5, 480>|null,
      *     encryptionKeyOverride?: string|null,
      *     idempotencyToken?: string|null,

@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property Transcript|null $Transcript
  * @property Categories|null $Categories
- * @property PostContactSummary|null $PostContactSummary
  */
 class RealtimeContactAnalysisSegment extends Shape
 {
     /**
      * @param array{
      *     Transcript?: Transcript|null,
-     *     Categories?: Categories|null,
-     *     PostContactSummary?: PostContactSummary|null
+     *     Categories?: Categories|null
      * } $args
      */
     public function __construct(array $args = [])

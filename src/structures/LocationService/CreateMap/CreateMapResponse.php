@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\LocationService\CreateMap;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $MapName
- * @property string $MapArn
  * @property \Aws\Api\DateTimeResult $CreateTime
+ * @property string $MapArn
+ * @property string $MapName
  */
 class CreateMapResponse extends Response
 {

@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $workspaceId
  * @property string|null $entityId
  * @property string|null $componentName
- * @property string|null $componentPath
  * @property string|null $componentTypeId
  * @property list<string> $selectedProperties
  * @property list<Shapes\PropertyFilter>|null $propertyFilters
@@ -28,7 +27,6 @@ class GetPropertyValueHistoryRequest extends Request
      *     workspaceId: string,
      *     entityId?: string|null,
      *     componentName?: string|null,
-     *     componentPath?: string|null,
      *     componentTypeId?: string|null,
      *     selectedProperties: list<string>,
      *     propertyFilters?: list<Shapes\PropertyFilter>|null,

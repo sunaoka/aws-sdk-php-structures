@@ -4,7 +4,6 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog;
 
 class MarketplaceCatalogClient extends \Aws\MarketplaceCatalog\MarketplaceCatalogClient
 {
-    use BatchDescribeEntities\BatchDescribeEntitiesTrait;
     use CancelChangeSet\CancelChangeSetTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;
     use DescribeChangeSet\DescribeChangeSetTrait;

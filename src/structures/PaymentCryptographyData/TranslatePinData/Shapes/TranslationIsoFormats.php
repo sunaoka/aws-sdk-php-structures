@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TranslationPinDataIsoFormat1|null $IsoFormat1
  * @property TranslationPinDataIsoFormat034|null $IsoFormat3
  * @property TranslationPinDataIsoFormat034|null $IsoFormat4
- * @property TranslationPinDataAs2805Format0|null $As2805Format0
  */
 class TranslationIsoFormats extends Shape
 {
@@ -18,8 +17,7 @@ class TranslationIsoFormats extends Shape
      *     IsoFormat0?: TranslationPinDataIsoFormat034|null,
      *     IsoFormat1?: TranslationPinDataIsoFormat1|null,
      *     IsoFormat3?: TranslationPinDataIsoFormat034|null,
-     *     IsoFormat4?: TranslationPinDataIsoFormat034|null,
-     *     As2805Format0?: TranslationPinDataAs2805Format0|null
+     *     IsoFormat4?: TranslationPinDataIsoFormat034|null
      * } $args
      */
     public function __construct(array $args = [])

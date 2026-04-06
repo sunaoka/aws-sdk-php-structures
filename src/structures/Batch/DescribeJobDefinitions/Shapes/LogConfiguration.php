@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'json-file'|'syslog'|'journald'|'gelf'|'fluentd'|'awslogs'|'splunk'|'awsfirelens' $logDriver
+ * @property 'json-file'|'syslog'|'journald'|'gelf'|'fluentd'|'awslogs'|'splunk' $logDriver
  * @property array<string, string>|null $options
  * @property list<Secret>|null $secretOptions
  */
@@ -13,7 +13,7 @@ class LogConfiguration extends Shape
 {
     /**
      * @param array{
-     *     logDriver: 'json-file'|'syslog'|'journald'|'gelf'|'fluentd'|'awslogs'|'splunk'|'awsfirelens',
+     *     logDriver: 'json-file'|'syslog'|'journald'|'gelf'|'fluentd'|'awslogs'|'splunk',
      *     options?: array<string, string>|null,
      *     secretOptions?: list<Secret>|null
      * } $args

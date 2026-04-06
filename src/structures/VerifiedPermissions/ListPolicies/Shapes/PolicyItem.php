@@ -10,12 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'STATIC'|'TEMPLATE_LINKED' $policyType
  * @property EntityIdentifier|null $principal
  * @property EntityIdentifier|null $resource
- * @property list<ActionIdentifier>|null $actions
  * @property PolicyDefinitionItem $definition
  * @property \Aws\Api\DateTimeResult $createdDate
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
- * @property 'Permit'|'Forbid'|null $effect
- * @property string|null $name
  */
 class PolicyItem extends Shape
 {
@@ -26,12 +23,9 @@ class PolicyItem extends Shape
      *     policyType: 'STATIC'|'TEMPLATE_LINKED',
      *     principal?: EntityIdentifier|null,
      *     resource?: EntityIdentifier|null,
-     *     actions?: list<ActionIdentifier>|null,
      *     definition: PolicyDefinitionItem,
      *     createdDate: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDate: \Aws\Api\DateTimeResult,
-     *     effect?: 'Permit'|'Forbid'|null,
-     *     name?: string|null
+     *     lastUpdatedDate: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

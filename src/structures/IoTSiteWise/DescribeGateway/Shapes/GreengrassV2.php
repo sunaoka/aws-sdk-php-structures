@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $coreDeviceThingName
- * @property 'LINUX_AARCH64'|'LINUX_AMD64'|'WINDOWS_AMD64'|null $coreDeviceOperatingSystem
  */
 class GreengrassV2 extends Shape
 {
     /**
-     * @param array{
-     *     coreDeviceThingName: string,
-     *     coreDeviceOperatingSystem?: 'LINUX_AARCH64'|'LINUX_AMD64'|'WINDOWS_AMD64'|null
-     * } $args
+     * @param array{coreDeviceThingName: string} $args
      */
     public function __construct(array $args)
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\AssociateIpAccessSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $portalArn
  * @property string $ipAccessSettingsArn
+ * @property string $portalArn
  */
 class AssociateIpAccessSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     portalArn: string,
-     *     ipAccessSettingsArn: string
+     *     ipAccessSettingsArn: string,
+     *     portalArn: string
      * } $args
      */
     public function __construct(array $args)

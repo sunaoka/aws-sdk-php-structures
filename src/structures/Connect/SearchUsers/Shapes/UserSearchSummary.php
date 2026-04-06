@@ -15,11 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $SecurityProfileIds
  * @property array<string, string>|null $Tags
  * @property string|null $Username
- * @property list<AutoAcceptConfig>|null $AutoAcceptConfigs
- * @property list<AfterContactWorkConfigPerChannel>|null $AfterContactWorkConfigs
- * @property list<PhoneNumberConfig>|null $PhoneNumberConfigs
- * @property list<PersistentConnectionConfig>|null $PersistentConnectionConfigs
- * @property list<VoiceEnhancementConfig>|null $VoiceEnhancementConfigs
  */
 class UserSearchSummary extends Shape
 {
@@ -34,12 +29,7 @@ class UserSearchSummary extends Shape
      *     RoutingProfileId?: string|null,
      *     SecurityProfileIds?: list<string>|null,
      *     Tags?: array<string, string>|null,
-     *     Username?: string|null,
-     *     AutoAcceptConfigs?: list<AutoAcceptConfig>|null,
-     *     AfterContactWorkConfigs?: list<AfterContactWorkConfigPerChannel>|null,
-     *     PhoneNumberConfigs?: list<PhoneNumberConfig>|null,
-     *     PersistentConnectionConfigs?: list<PersistentConnectionConfig>|null,
-     *     VoiceEnhancementConfigs?: list<VoiceEnhancementConfig>|null
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

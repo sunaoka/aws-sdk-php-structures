@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SourceFilterId
  * @property DateTimePickerControlDisplayOptions|null $DisplayOptions
  * @property 'SINGLE_VALUED'|'DATE_RANGE'|null $Type
- * @property 'AUTO'|'MANUAL'|null $CommitMode
  */
 class FilterDateTimePickerControl extends Shape
 {
@@ -20,8 +19,7 @@ class FilterDateTimePickerControl extends Shape
      *     Title: string,
      *     SourceFilterId: string,
      *     DisplayOptions?: DateTimePickerControlDisplayOptions|null,
-     *     Type?: 'SINGLE_VALUED'|'DATE_RANGE'|null,
-     *     CommitMode?: 'AUTO'|'MANUAL'|null
+     *     Type?: 'SINGLE_VALUED'|'DATE_RANGE'|null
      * } $args
      */
     public function __construct(array $args)

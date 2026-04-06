@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $workspaceId
  * @property string|null $description
- * @property string|null $s3Location
- * @property string|null $role
+ * @property string $s3Location
+ * @property string $role
  * @property array<string, string>|null $tags
  */
 class CreateWorkspaceRequest extends Request
@@ -17,8 +17,8 @@ class CreateWorkspaceRequest extends Request
      * @param array{
      *     workspaceId: string,
      *     description?: string|null,
-     *     s3Location?: string|null,
-     *     role?: string|null,
+     *     s3Location: string,
+     *     role: string,
      *     tags?: array<string, string>|null
      * } $args
      */

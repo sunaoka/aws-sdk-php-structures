@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\PutNotificationSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $trustAnchorId
  * @property list<Shapes\NotificationSetting> $notificationSettings
+ * @property string $trustAnchorId
  */
 class PutNotificationSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     trustAnchorId: string,
-     *     notificationSettings: list<Shapes\NotificationSetting>
+     *     notificationSettings: list<Shapes\NotificationSetting>,
+     *     trustAnchorId: string
      * } $args
      */
     public function __construct(array $args)

@@ -21,8 +21,6 @@ class CodeCatalystClient extends \Aws\CodeCatalyst\CodeCatalystClient
     use GetSpace\GetSpaceTrait;
     use GetSubscription\GetSubscriptionTrait;
     use GetUserDetails\GetUserDetailsTrait;
-    use GetWorkflow\GetWorkflowTrait;
-    use GetWorkflowRun\GetWorkflowRunTrait;
     use ListAccessTokens\ListAccessTokensTrait;
     use ListDevEnvironmentSessions\ListDevEnvironmentSessionsTrait;
     use ListDevEnvironments\ListDevEnvironmentsTrait;
@@ -31,11 +29,8 @@ class CodeCatalystClient extends \Aws\CodeCatalyst\CodeCatalystClient
     use ListSourceRepositories\ListSourceRepositoriesTrait;
     use ListSourceRepositoryBranches\ListSourceRepositoryBranchesTrait;
     use ListSpaces\ListSpacesTrait;
-    use ListWorkflowRuns\ListWorkflowRunsTrait;
-    use ListWorkflows\ListWorkflowsTrait;
     use StartDevEnvironment\StartDevEnvironmentTrait;
     use StartDevEnvironmentSession\StartDevEnvironmentSessionTrait;
-    use StartWorkflowRun\StartWorkflowRunTrait;
     use StopDevEnvironment\StopDevEnvironmentTrait;
     use StopDevEnvironmentSession\StopDevEnvironmentSessionTrait;
     use UpdateDevEnvironment\UpdateDevEnvironmentTrait;

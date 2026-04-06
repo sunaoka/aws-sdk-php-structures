@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property KPIConditionalFormatting|null $ConditionalFormatting
  * @property list<VisualCustomAction>|null $Actions
  * @property list<ColumnHierarchy>|null $ColumnHierarchies
- * @property string|null $VisualContentAltText
  */
 class KPIVisual extends Shape
 {
@@ -24,8 +23,7 @@ class KPIVisual extends Shape
      *     ChartConfiguration?: KPIConfiguration|null,
      *     ConditionalFormatting?: KPIConditionalFormatting|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     ColumnHierarchies?: list<ColumnHierarchy>|null,
-     *     VisualContentAltText?: string|null
+     *     ColumnHierarchies?: list<ColumnHierarchy>|null
      * } $args
      */
     public function __construct(array $args)

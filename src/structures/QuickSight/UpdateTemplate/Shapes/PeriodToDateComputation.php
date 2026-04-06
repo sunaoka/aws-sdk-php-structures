@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ComputationId
  * @property string|null $Name
- * @property DimensionField|null $Time
+ * @property DimensionField $Time
  * @property MeasureField|null $Value
  * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null $PeriodTimeGranularity
  */
@@ -17,7 +17,7 @@ class PeriodToDateComputation extends Shape
      * @param array{
      *     ComputationId: string,
      *     Name?: string|null,
-     *     Time?: DimensionField|null,
+     *     Time: DimensionField,
      *     Value?: MeasureField|null,
      *     PeriodTimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null
      * } $args

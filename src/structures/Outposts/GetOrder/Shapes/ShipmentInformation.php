@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $ShipmentTrackingNumber
- * @property 'DHL'|'DBS'|'FEDEX'|'UPS'|'EXPEDITORS'|null $ShipmentCarrier
+ * @property 'DHL'|'DBS'|'FEDEX'|'UPS'|null $ShipmentCarrier
  */
 class ShipmentInformation extends Shape
 {
     /**
      * @param array{
      *     ShipmentTrackingNumber?: string|null,
-     *     ShipmentCarrier?: 'DHL'|'DBS'|'FEDEX'|'UPS'|'EXPEDITORS'|null
+     *     ShipmentCarrier?: 'DHL'|'DBS'|'FEDEX'|'UPS'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetDistribution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool|null $Enabled
- * @property bool|null $IncludeCookies
- * @property string|null $Bucket
- * @property string|null $Prefix
+ * @property bool $Enabled
+ * @property bool $IncludeCookies
+ * @property string $Bucket
+ * @property string $Prefix
  */
 class LoggingConfig extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool|null,
-     *     IncludeCookies?: bool|null,
-     *     Bucket?: string|null,
-     *     Prefix?: string|null
+     *     Enabled: bool,
+     *     IncludeCookies: bool,
+     *     Bucket: string,
+     *     Prefix: string
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

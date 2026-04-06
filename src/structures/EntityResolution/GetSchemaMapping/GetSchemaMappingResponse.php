@@ -5,14 +5,13 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetSchemaMapping;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $schemaName
- * @property string $schemaArn
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property string|null $description
  * @property list<Shapes\SchemaInputAttribute> $mappedInputFields
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string $schemaArn
+ * @property string $schemaName
  * @property array<string, string>|null $tags
- * @property bool $hasWorkflows
+ * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class GetSchemaMappingResponse extends Response
 {

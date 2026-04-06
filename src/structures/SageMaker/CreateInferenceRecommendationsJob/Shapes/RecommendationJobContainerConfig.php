@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RecommendationJobPayloadConfig|null $PayloadConfig
  * @property string|null $NearestModelName
  * @property list<string>|null $SupportedInstanceTypes
- * @property 'RealTime'|'Serverless'|null $SupportedEndpointType
  * @property string|null $DataInputConfig
+ * @property 'RealTime'|'Serverless'|null $SupportedEndpointType
  * @property list<string>|null $SupportedResponseMIMETypes
  */
 class RecommendationJobContainerConfig extends Shape
@@ -27,8 +27,8 @@ class RecommendationJobContainerConfig extends Shape
      *     PayloadConfig?: RecommendationJobPayloadConfig|null,
      *     NearestModelName?: string|null,
      *     SupportedInstanceTypes?: list<string>|null,
-     *     SupportedEndpointType?: 'RealTime'|'Serverless'|null,
      *     DataInputConfig?: string|null,
+     *     SupportedEndpointType?: 'RealTime'|'Serverless'|null,
      *     SupportedResponseMIMETypes?: list<string>|null
      * } $args
      */

@@ -18,9 +18,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $EnableCloudwatchLogsExports
  * @property bool|null $DeletionProtection
  * @property string|null $DBClusterParameterGroupName
- * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
- * @property string|null $StorageType
- * @property string|null $NetworkType
  */
 class RestoreDBClusterFromSnapshotRequest extends Request
 {
@@ -38,10 +35,7 @@ class RestoreDBClusterFromSnapshotRequest extends Request
      *     KmsKeyId?: string|null,
      *     EnableCloudwatchLogsExports?: list<string>|null,
      *     DeletionProtection?: bool|null,
-     *     DBClusterParameterGroupName?: string|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     StorageType?: string|null,
-     *     NetworkType?: string|null
+     *     DBClusterParameterGroupName?: string|null
      * } $args
      */
     public function __construct(array $args)

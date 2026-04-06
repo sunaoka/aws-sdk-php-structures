@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\CreateAssociationBatchRequestEntry> $Entries
- * @property string|null $AssociationDispatchAssumeRole
  */
 class CreateAssociationBatchRequest extends Request
 {
     /**
-     * @param array{
-     *     Entries: list<Shapes\CreateAssociationBatchRequestEntry>,
-     *     AssociationDispatchAssumeRole?: string|null
-     * } $args
+     * @param array{Entries: list<Shapes\CreateAssociationBatchRequestEntry>} $args
      */
     public function __construct(array $args)
     {

@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $name
  * @property 'AMI'|'DOCKER'|null $type
  * @property string|null $version
- * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property 'Windows'|'Linux'|null $platform
  * @property string|null $osVersion
  * @property string|null $owner
  * @property string|null $dateCreated
- * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null $buildType
+ * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|null $buildType
  * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null $imageSource
  */
 class ImageVersion extends Shape
@@ -24,11 +24,11 @@ class ImageVersion extends Shape
      *     name?: string|null,
      *     type?: 'AMI'|'DOCKER'|null,
      *     version?: string|null,
-     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     platform?: 'Windows'|'Linux'|null,
      *     osVersion?: string|null,
      *     owner?: string|null,
      *     dateCreated?: string|null,
-     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null,
+     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|null,
      *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null
      * } $args
      */

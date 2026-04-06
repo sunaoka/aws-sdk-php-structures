@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ChannelName
  * @property string $ProgramName
  * @property Shapes\UpdateProgramScheduleConfiguration $ScheduleConfiguration
- * @property list<Shapes\AudienceMedia>|null $AudienceMedia
  */
 class UpdateProgramRequest extends Request
 {
@@ -18,8 +17,7 @@ class UpdateProgramRequest extends Request
      *     AdBreaks?: list<Shapes\AdBreak>|null,
      *     ChannelName: string,
      *     ProgramName: string,
-     *     ScheduleConfiguration: Shapes\UpdateProgramScheduleConfiguration,
-     *     AudienceMedia?: list<Shapes\AudienceMedia>|null
+     *     ScheduleConfiguration: Shapes\UpdateProgramScheduleConfiguration
      * } $args
      */
     public function __construct(array $args)

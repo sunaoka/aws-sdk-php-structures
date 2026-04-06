@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\ArchiveWave;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $waveID
  * @property string|null $accountID
+ * @property string $waveID
  */
 class ArchiveWaveRequest extends Request
 {
     /**
      * @param array{
-     *     waveID: string,
-     *     accountID?: string|null
+     *     accountID?: string|null,
+     *     waveID: string
      * } $args
      */
     public function __construct(array $args)

@@ -5,22 +5,14 @@ namespace Sunaoka\Aws\Structures\LicenseManager\CreateLicenseManagerReportGenera
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $licenseConfigurationArns
- * @property list<string>|null $licenseAssetGroupArns
- * @property \Aws\Api\DateTimeResult|null $reportStartDate
- * @property \Aws\Api\DateTimeResult|null $reportEndDate
+ * @property list<string> $licenseConfigurationArns
  */
 class ReportContext extends Shape
 {
     /**
-     * @param array{
-     *     licenseConfigurationArns?: list<string>|null,
-     *     licenseAssetGroupArns?: list<string>|null,
-     *     reportStartDate?: \Aws\Api\DateTimeResult|null,
-     *     reportEndDate?: \Aws\Api\DateTimeResult|null
-     * } $args
+     * @param array{licenseConfigurationArns: list<string>} $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

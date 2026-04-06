@@ -14,17 +14,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ChartAxisLabelOptions|null $PrimaryYAxisLabelOptions
  * @property AxisDisplayOptions|null $SecondaryYAxisDisplayOptions
  * @property ChartAxisLabelOptions|null $SecondaryYAxisLabelOptions
- * @property SingleAxisOptions|null $SingleAxisOptions
  * @property ChartAxisLabelOptions|null $ColorLabelOptions
- * @property ComboChartDefaultSeriesSettings|null $DefaultSeriesSettings
- * @property list<ComboSeriesItem>|null $Series
  * @property LegendOptions|null $Legend
  * @property DataLabelOptions|null $BarDataLabels
  * @property DataLabelOptions|null $LineDataLabels
  * @property TooltipOptions|null $Tooltip
  * @property list<ReferenceLine>|null $ReferenceLines
  * @property VisualPalette|null $VisualPalette
- * @property VisualInteractionOptions|null $Interactions
  */
 class ComboChartConfiguration extends Shape
 {
@@ -39,17 +35,13 @@ class ComboChartConfiguration extends Shape
      *     PrimaryYAxisLabelOptions?: ChartAxisLabelOptions|null,
      *     SecondaryYAxisDisplayOptions?: AxisDisplayOptions|null,
      *     SecondaryYAxisLabelOptions?: ChartAxisLabelOptions|null,
-     *     SingleAxisOptions?: SingleAxisOptions|null,
      *     ColorLabelOptions?: ChartAxisLabelOptions|null,
-     *     DefaultSeriesSettings?: ComboChartDefaultSeriesSettings|null,
-     *     Series?: list<ComboSeriesItem>|null,
      *     Legend?: LegendOptions|null,
      *     BarDataLabels?: DataLabelOptions|null,
      *     LineDataLabels?: DataLabelOptions|null,
      *     Tooltip?: TooltipOptions|null,
      *     ReferenceLines?: list<ReferenceLine>|null,
-     *     VisualPalette?: VisualPalette|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     VisualPalette?: VisualPalette|null
      * } $args
      */
     public function __construct(array $args = [])

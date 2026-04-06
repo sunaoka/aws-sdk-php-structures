@@ -9,11 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string|null $Description
  * @property Shapes\OutboundCallerConfig|null $OutboundCallerConfig
- * @property Shapes\OutboundEmailConfig|null $OutboundEmailConfig
  * @property string $HoursOfOperationId
  * @property int<0, max>|null $MaxContacts
  * @property list<string>|null $QuickConnectIds
- * @property list<Shapes\EmailAddressConfig>|null $EmailAddressesConfig
  * @property array<string, string>|null $Tags
  */
 class CreateQueueRequest extends Request
@@ -24,11 +22,9 @@ class CreateQueueRequest extends Request
      *     Name: string,
      *     Description?: string|null,
      *     OutboundCallerConfig?: Shapes\OutboundCallerConfig|null,
-     *     OutboundEmailConfig?: Shapes\OutboundEmailConfig|null,
      *     HoursOfOperationId: string,
      *     MaxContacts?: int<0, max>|null,
      *     QuickConnectIds?: list<string>|null,
-     *     EmailAddressesConfig?: list<Shapes\EmailAddressConfig>|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

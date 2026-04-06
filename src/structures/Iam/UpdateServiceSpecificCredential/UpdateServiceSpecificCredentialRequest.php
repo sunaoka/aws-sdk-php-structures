@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $UserName
  * @property string $ServiceSpecificCredentialId
- * @property 'Active'|'Inactive'|'Expired' $Status
+ * @property 'Active'|'Inactive' $Status
  */
 class UpdateServiceSpecificCredentialRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateServiceSpecificCredentialRequest extends Request
      * @param array{
      *     UserName?: string|null,
      *     ServiceSpecificCredentialId: string,
-     *     Status: 'Active'|'Inactive'|'Expired'
+     *     Status: 'Active'|'Inactive'
      * } $args
      */
     public function __construct(array $args)

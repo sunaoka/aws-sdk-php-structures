@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY' $NullOption
  * @property ExcludePeriodConfiguration|null $ExcludePeriodConfiguration
  * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null $TimeGranularity
- * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class TimeRangeFilter extends Shape
 {
@@ -28,8 +27,7 @@ class TimeRangeFilter extends Shape
      *     RangeMaximumValue?: TimeRangeFilterValue|null,
      *     NullOption: 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY',
      *     ExcludePeriodConfiguration?: ExcludePeriodConfiguration|null,
-     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null,
-     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
+     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null
      * } $args
      */
     public function __construct(array $args)

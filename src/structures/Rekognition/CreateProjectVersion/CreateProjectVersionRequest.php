@@ -12,8 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TestingData|null $TestingData
  * @property array<string, string>|null $Tags
  * @property string|null $KmsKeyId
- * @property string|null $VersionDescription
- * @property Shapes\CustomizationFeatureConfig|null $FeatureConfig
  */
 class CreateProjectVersionRequest extends Request
 {
@@ -25,9 +23,7 @@ class CreateProjectVersionRequest extends Request
      *     TrainingData?: Shapes\TrainingData|null,
      *     TestingData?: Shapes\TestingData|null,
      *     Tags?: array<string, string>|null,
-     *     KmsKeyId?: string|null,
-     *     VersionDescription?: string|null,
-     *     FeatureConfig?: Shapes\CustomizationFeatureConfig|null
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

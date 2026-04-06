@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DestinationArn
  * @property string|null $SourceType
  * @property string|null $DestinationType
- * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null $AssociationType
+ * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|null $AssociationType
  * @property string|null $SourceName
  * @property string|null $DestinationName
  * @property \Aws\Api\DateTimeResult|null $CreationTime
@@ -23,7 +23,7 @@ class AssociationSummary extends Shape
      *     DestinationArn?: string|null,
      *     SourceType?: string|null,
      *     DestinationType?: string|null,
-     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null,
+     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|null,
      *     SourceName?: string|null,
      *     DestinationName?: string|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,

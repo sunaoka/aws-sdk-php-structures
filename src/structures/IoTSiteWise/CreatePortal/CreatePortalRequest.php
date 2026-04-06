@@ -15,8 +15,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'IAM'|'SSO'|null $portalAuthMode
  * @property string|null $notificationSenderEmail
  * @property Shapes\Alarms|null $alarms
- * @property 'SITEWISE_PORTAL_V1'|'SITEWISE_PORTAL_V2'|null $portalType
- * @property array<string, Shapes\PortalTypeEntry>|null $portalTypeConfiguration
  */
 class CreatePortalRequest extends Request
 {
@@ -31,9 +29,7 @@ class CreatePortalRequest extends Request
      *     tags?: array<string, string>|null,
      *     portalAuthMode?: 'IAM'|'SSO'|null,
      *     notificationSenderEmail?: string|null,
-     *     alarms?: Shapes\Alarms|null,
-     *     portalType?: 'SITEWISE_PORTAL_V1'|'SITEWISE_PORTAL_V2'|null,
-     *     portalTypeConfiguration?: array<string, Shapes\PortalTypeEntry>|null
+     *     alarms?: Shapes\Alarms|null
      * } $args
      */
     public function __construct(array $args)

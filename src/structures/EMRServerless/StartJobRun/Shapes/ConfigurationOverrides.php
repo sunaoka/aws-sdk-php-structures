@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<Configuration>|null $applicationConfiguration
  * @property MonitoringConfiguration|null $monitoringConfiguration
- * @property DiskEncryptionConfiguration|null $diskEncryptionConfiguration
  */
 class ConfigurationOverrides extends Shape
 {
     /**
      * @param array{
      *     applicationConfiguration?: list<Configuration>|null,
-     *     monitoringConfiguration?: MonitoringConfiguration|null,
-     *     diskEncryptionConfiguration?: DiskEncryptionConfiguration|null
+     *     monitoringConfiguration?: MonitoringConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

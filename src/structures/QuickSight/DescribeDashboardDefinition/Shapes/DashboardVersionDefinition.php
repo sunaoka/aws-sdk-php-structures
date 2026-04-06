@@ -7,14 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<DataSetIdentifierDeclaration> $DataSetIdentifierDeclarations
  * @property list<SheetDefinition>|null $Sheets
- * @property list<TooltipSheetDefinition>|null $TooltipSheets
  * @property list<CalculatedField>|null $CalculatedFields
  * @property list<ParameterDeclaration>|null $ParameterDeclarations
  * @property list<FilterGroup>|null $FilterGroups
  * @property list<ColumnConfiguration>|null $ColumnConfigurations
  * @property AnalysisDefaults|null $AnalysisDefaults
- * @property AssetOptions|null $Options
- * @property list<StaticFile>|null $StaticFiles
  */
 class DashboardVersionDefinition extends Shape
 {
@@ -22,14 +19,11 @@ class DashboardVersionDefinition extends Shape
      * @param array{
      *     DataSetIdentifierDeclarations: list<DataSetIdentifierDeclaration>,
      *     Sheets?: list<SheetDefinition>|null,
-     *     TooltipSheets?: list<TooltipSheetDefinition>|null,
      *     CalculatedFields?: list<CalculatedField>|null,
      *     ParameterDeclarations?: list<ParameterDeclaration>|null,
      *     FilterGroups?: list<FilterGroup>|null,
      *     ColumnConfigurations?: list<ColumnConfiguration>|null,
-     *     AnalysisDefaults?: AnalysisDefaults|null,
-     *     Options?: AssetOptions|null,
-     *     StaticFiles?: list<StaticFile>|null
+     *     AnalysisDefaults?: AnalysisDefaults|null
      * } $args
      */
     public function __construct(array $args)

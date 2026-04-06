@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
+ * @property bool $Egress
  * @property string $NetworkAclId
  * @property int $RuleNumber
- * @property bool $Egress
  */
 class DeleteNetworkAclEntryRequest extends Request
 {
     /**
      * @param array{
      *     DryRun?: bool|null,
+     *     Egress: bool,
      *     NetworkAclId: string,
-     *     RuleNumber: int,
-     *     Egress: bool
+     *     RuleNumber: int
      * } $args
      */
     public function __construct(array $args)

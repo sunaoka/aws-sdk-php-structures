@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RunConfigurationUpdate|null $RunConfigurationUpdate
  * @property list<Shapes\CloudWatchLoggingOptionUpdate>|null $CloudWatchLoggingOptionUpdates
  * @property string|null $ConditionalToken
- * @property 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0'|'FLINK-1_18'|'FLINK-1_19'|'FLINK-1_20'|'FLINK-2_2'|null $RuntimeEnvironmentUpdate
  */
 class UpdateApplicationRequest extends Request
 {
@@ -24,8 +23,7 @@ class UpdateApplicationRequest extends Request
      *     ServiceExecutionRoleUpdate?: string|null,
      *     RunConfigurationUpdate?: Shapes\RunConfigurationUpdate|null,
      *     CloudWatchLoggingOptionUpdates?: list<Shapes\CloudWatchLoggingOptionUpdate>|null,
-     *     ConditionalToken?: string|null,
-     *     RuntimeEnvironmentUpdate?: 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0'|'FLINK-1_18'|'FLINK-1_19'|'FLINK-1_20'|'FLINK-2_2'|null
+     *     ConditionalToken?: string|null
      * } $args
      */
     public function __construct(array $args)

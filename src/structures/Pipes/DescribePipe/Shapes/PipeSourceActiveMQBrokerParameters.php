@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MQBrokerAccessCredentials $Credentials
- * @property string $QueueName
  * @property int<1, 10000>|null $BatchSize
+ * @property MQBrokerAccessCredentials $Credentials
  * @property int<0, 300>|null $MaximumBatchingWindowInSeconds
+ * @property string $QueueName
  */
 class PipeSourceActiveMQBrokerParameters extends Shape
 {
     /**
      * @param array{
-     *     Credentials: MQBrokerAccessCredentials,
-     *     QueueName: string,
      *     BatchSize?: int<1, 10000>|null,
-     *     MaximumBatchingWindowInSeconds?: int<0, 300>|null
+     *     Credentials: MQBrokerAccessCredentials,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>|null,
+     *     QueueName: string
      * } $args
      */
     public function __construct(array $args)

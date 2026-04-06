@@ -6,20 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $KMSArn
- * @property string|null $outputS3Path
- * @property list<OutputAttribute> $output
  * @property bool|null $applyNormalization
- * @property CustomerProfilesIntegrationConfig|null $customerProfilesIntegrationConfig
+ * @property list<OutputAttribute> $output
+ * @property string $outputS3Path
  */
 class OutputSource extends Shape
 {
     /**
      * @param array{
      *     KMSArn?: string|null,
-     *     outputS3Path?: string|null,
-     *     output: list<OutputAttribute>,
      *     applyNormalization?: bool|null,
-     *     customerProfilesIntegrationConfig?: CustomerProfilesIntegrationConfig|null
+     *     output: list<OutputAttribute>,
+     *     outputS3Path: string
      * } $args
      */
     public function __construct(array $args)

@@ -102,13 +102,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<BooleanFilter>|null $Sample
  * @property list<StringFilter>|null $ComplianceSecurityControlId
  * @property list<StringFilter>|null $ComplianceAssociatedStandardsId
- * @property list<StringFilter>|null $VulnerabilitiesExploitAvailable
- * @property list<StringFilter>|null $VulnerabilitiesFixAvailable
- * @property list<StringFilter>|null $ComplianceSecurityControlParametersName
- * @property list<StringFilter>|null $ComplianceSecurityControlParametersValue
- * @property list<StringFilter>|null $AwsAccountName
- * @property list<StringFilter>|null $ResourceApplicationName
- * @property list<StringFilter>|null $ResourceApplicationArn
  */
 class AwsSecurityFindingFilters extends Shape
 {
@@ -210,14 +203,7 @@ class AwsSecurityFindingFilters extends Shape
      *     FindingProviderFieldsTypes?: list<StringFilter>|null,
      *     Sample?: list<BooleanFilter>|null,
      *     ComplianceSecurityControlId?: list<StringFilter>|null,
-     *     ComplianceAssociatedStandardsId?: list<StringFilter>|null,
-     *     VulnerabilitiesExploitAvailable?: list<StringFilter>|null,
-     *     VulnerabilitiesFixAvailable?: list<StringFilter>|null,
-     *     ComplianceSecurityControlParametersName?: list<StringFilter>|null,
-     *     ComplianceSecurityControlParametersValue?: list<StringFilter>|null,
-     *     AwsAccountName?: list<StringFilter>|null,
-     *     ResourceApplicationName?: list<StringFilter>|null,
-     *     ResourceApplicationArn?: list<StringFilter>|null
+     *     ComplianceAssociatedStandardsId?: list<StringFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

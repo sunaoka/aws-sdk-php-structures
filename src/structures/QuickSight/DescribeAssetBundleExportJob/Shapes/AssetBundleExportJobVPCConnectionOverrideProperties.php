@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAssetBundleExportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  * @property list<'Name'|'DnsResolvers'|'RoleArn'> $Properties
  */
 class AssetBundleExportJobVPCConnectionOverrideProperties extends Shape
 {
     /**
      * @param array{
-     *     Arn: string,
+     *     Arn?: string|null,
      *     Properties: list<'Name'|'DnsResolvers'|'RoleArn'>
      * } $args
      */

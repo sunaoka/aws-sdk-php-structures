@@ -14,9 +14,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $ObjectTypeNames
  * @property string|null $WorkflowId
  * @property bool|null $IsUnstructured
- * @property string|null $RoleArn
- * @property list<string>|null $EventTriggerNames
- * @property 'PROFILE'|'DOMAIN'|null $Scope
  */
 class PutIntegrationResponse extends Response
 {

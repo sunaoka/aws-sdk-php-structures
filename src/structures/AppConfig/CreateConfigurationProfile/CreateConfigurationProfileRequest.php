@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Validator>|null $Validators
  * @property array<string, string>|null $Tags
  * @property string|null $Type
- * @property string|null $KmsKeyIdentifier
  */
 class CreateConfigurationProfileRequest extends Request
 {
@@ -26,8 +25,7 @@ class CreateConfigurationProfileRequest extends Request
      *     RetrievalRoleArn?: string|null,
      *     Validators?: list<Shapes\Validator>|null,
      *     Tags?: array<string, string>|null,
-     *     Type?: string|null,
-     *     KmsKeyIdentifier?: string|null
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args)

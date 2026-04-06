@@ -12,12 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $IfUnmodifiedSince
  * @property string $Key
  * @property string|null $Range
- * @property string|null $ResponseCacheControl
- * @property string|null $ResponseContentDisposition
- * @property string|null $ResponseContentEncoding
- * @property string|null $ResponseContentLanguage
- * @property string|null $ResponseContentType
- * @property \Aws\Api\DateTimeResult|null $ResponseExpires
  * @property string|null $VersionId
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSECustomerKey
@@ -38,12 +32,6 @@ class HeadObjectRequest extends Request
      *     IfUnmodifiedSince?: \Aws\Api\DateTimeResult|null,
      *     Key: string,
      *     Range?: string|null,
-     *     ResponseCacheControl?: string|null,
-     *     ResponseContentDisposition?: string|null,
-     *     ResponseContentEncoding?: string|null,
-     *     ResponseContentLanguage?: string|null,
-     *     ResponseContentType?: string|null,
-     *     ResponseExpires?: \Aws\Api\DateTimeResult|null,
      *     VersionId?: string|null,
      *     SSECustomerAlgorithm?: string|null,
      *     SSECustomerKey?: string|null,

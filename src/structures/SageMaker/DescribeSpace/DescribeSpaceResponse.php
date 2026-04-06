@@ -14,10 +14,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property string|null $FailureReason
  * @property Shapes\SpaceSettings|null $SpaceSettings
- * @property Shapes\OwnershipSettings|null $OwnershipSettings
- * @property Shapes\SpaceSharingSettings|null $SpaceSharingSettings
- * @property string|null $SpaceDisplayName
- * @property string|null $Url
  */
 class DescribeSpaceResponse extends Response
 {

@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $attributes
  * @property 'CreateIotThing'|'ValidateIotThingExists'|null $associationBehavior
  * @property list<Tag>|null $tags
- * @property list<StateTemplateAssociation>|null $stateTemplates
  */
 class CreateVehicleRequestItem extends Shape
 {
@@ -22,8 +21,7 @@ class CreateVehicleRequestItem extends Shape
      *     decoderManifestArn: string,
      *     attributes?: array<string, string>|null,
      *     associationBehavior?: 'CreateIotThing'|'ValidateIotThingExists'|null,
-     *     tags?: list<Tag>|null,
-     *     stateTemplates?: list<StateTemplateAssociation>|null
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

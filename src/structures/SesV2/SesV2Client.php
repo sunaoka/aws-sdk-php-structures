@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\SesV2;
 class SesV2Client extends \Aws\SesV2\SesV2Client
 {
     use BatchGetMetricData\BatchGetMetricDataTrait;
-    use CancelExportJob\CancelExportJobTrait;
     use CreateConfigurationSet\CreateConfigurationSetTrait;
     use CreateConfigurationSetEventDestination\CreateConfigurationSetEventDestinationTrait;
     use CreateContact\CreateContactTrait;
@@ -16,11 +15,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use CreateEmailIdentity\CreateEmailIdentityTrait;
     use CreateEmailIdentityPolicy\CreateEmailIdentityPolicyTrait;
     use CreateEmailTemplate\CreateEmailTemplateTrait;
-    use CreateExportJob\CreateExportJobTrait;
     use CreateImportJob\CreateImportJobTrait;
-    use CreateMultiRegionEndpoint\CreateMultiRegionEndpointTrait;
-    use CreateTenant\CreateTenantTrait;
-    use CreateTenantResourceAssociation\CreateTenantResourceAssociationTrait;
     use DeleteConfigurationSet\DeleteConfigurationSetTrait;
     use DeleteConfigurationSetEventDestination\DeleteConfigurationSetEventDestinationTrait;
     use DeleteContact\DeleteContactTrait;
@@ -30,10 +25,7 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use DeleteEmailIdentity\DeleteEmailIdentityTrait;
     use DeleteEmailIdentityPolicy\DeleteEmailIdentityPolicyTrait;
     use DeleteEmailTemplate\DeleteEmailTemplateTrait;
-    use DeleteMultiRegionEndpoint\DeleteMultiRegionEndpointTrait;
     use DeleteSuppressedDestination\DeleteSuppressedDestinationTrait;
-    use DeleteTenant\DeleteTenantTrait;
-    use DeleteTenantResourceAssociation\DeleteTenantResourceAssociationTrait;
     use GetAccount\GetAccountTrait;
     use GetBlacklistReports\GetBlacklistReportsTrait;
     use GetConfigurationSet\GetConfigurationSetTrait;
@@ -48,17 +40,11 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use GetDeliverabilityTestReport\GetDeliverabilityTestReportTrait;
     use GetDomainDeliverabilityCampaign\GetDomainDeliverabilityCampaignTrait;
     use GetDomainStatisticsReport\GetDomainStatisticsReportTrait;
-    use GetEmailAddressInsights\GetEmailAddressInsightsTrait;
     use GetEmailIdentity\GetEmailIdentityTrait;
     use GetEmailIdentityPolicies\GetEmailIdentityPoliciesTrait;
     use GetEmailTemplate\GetEmailTemplateTrait;
-    use GetExportJob\GetExportJobTrait;
     use GetImportJob\GetImportJobTrait;
-    use GetMessageInsights\GetMessageInsightsTrait;
-    use GetMultiRegionEndpoint\GetMultiRegionEndpointTrait;
-    use GetReputationEntity\GetReputationEntityTrait;
     use GetSuppressedDestination\GetSuppressedDestinationTrait;
-    use GetTenant\GetTenantTrait;
     use ListConfigurationSets\ListConfigurationSetsTrait;
     use ListContactLists\ListContactListsTrait;
     use ListContacts\ListContactsTrait;
@@ -68,22 +54,15 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use ListDomainDeliverabilityCampaigns\ListDomainDeliverabilityCampaignsTrait;
     use ListEmailIdentities\ListEmailIdentitiesTrait;
     use ListEmailTemplates\ListEmailTemplatesTrait;
-    use ListExportJobs\ListExportJobsTrait;
     use ListImportJobs\ListImportJobsTrait;
-    use ListMultiRegionEndpoints\ListMultiRegionEndpointsTrait;
     use ListRecommendations\ListRecommendationsTrait;
-    use ListReputationEntities\ListReputationEntitiesTrait;
-    use ListResourceTenants\ListResourceTenantsTrait;
     use ListSuppressedDestinations\ListSuppressedDestinationsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
-    use ListTenantResources\ListTenantResourcesTrait;
-    use ListTenants\ListTenantsTrait;
     use PutAccountDedicatedIpWarmupAttributes\PutAccountDedicatedIpWarmupAttributesTrait;
     use PutAccountDetails\PutAccountDetailsTrait;
     use PutAccountSendingAttributes\PutAccountSendingAttributesTrait;
     use PutAccountSuppressionAttributes\PutAccountSuppressionAttributesTrait;
     use PutAccountVdmAttributes\PutAccountVdmAttributesTrait;
-    use PutConfigurationSetArchivingOptions\PutConfigurationSetArchivingOptionsTrait;
     use PutConfigurationSetDeliveryOptions\PutConfigurationSetDeliveryOptionsTrait;
     use PutConfigurationSetReputationOptions\PutConfigurationSetReputationOptionsTrait;
     use PutConfigurationSetSendingOptions\PutConfigurationSetSendingOptionsTrait;
@@ -112,6 +91,4 @@ class SesV2Client extends \Aws\SesV2\SesV2Client
     use UpdateCustomVerificationEmailTemplate\UpdateCustomVerificationEmailTemplateTrait;
     use UpdateEmailIdentityPolicy\UpdateEmailIdentityPolicyTrait;
     use UpdateEmailTemplate\UpdateEmailTemplateTrait;
-    use UpdateReputationEntityCustomerManagedStatus\UpdateReputationEntityCustomerManagedStatusTrait;
-    use UpdateReputationEntityPolicy\UpdateReputationEntityPolicyTrait;
 }

@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property Shapes\BatchInferenceJobConfig|null $batchInferenceJobConfig
  * @property list<Shapes\Tag>|null $tags
- * @property 'BATCH_INFERENCE'|'THEME_GENERATION'|null $batchInferenceJobMode
- * @property Shapes\ThemeGenerationConfig|null $themeGenerationConfig
  */
 class CreateBatchInferenceJobRequest extends Request
 {
@@ -29,9 +27,7 @@ class CreateBatchInferenceJobRequest extends Request
      *     jobOutput: Shapes\BatchInferenceJobOutput,
      *     roleArn: string,
      *     batchInferenceJobConfig?: Shapes\BatchInferenceJobConfig|null,
-     *     tags?: list<Shapes\Tag>|null,
-     *     batchInferenceJobMode?: 'BATCH_INFERENCE'|'THEME_GENERATION'|null,
-     *     themeGenerationConfig?: Shapes\ThemeGenerationConfig|null
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

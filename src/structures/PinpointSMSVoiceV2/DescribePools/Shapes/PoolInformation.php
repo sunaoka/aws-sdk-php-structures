@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TRANSACTIONAL'|'PROMOTIONAL' $MessageType
  * @property bool $TwoWayEnabled
  * @property string|null $TwoWayChannelArn
- * @property string|null $TwoWayChannelRole
  * @property bool $SelfManagedOptOutsEnabled
  * @property string $OptOutListName
  * @property bool $SharedRoutesEnabled
@@ -28,7 +27,6 @@ class PoolInformation extends Shape
      *     MessageType: 'TRANSACTIONAL'|'PROMOTIONAL',
      *     TwoWayEnabled: bool,
      *     TwoWayChannelArn?: string|null,
-     *     TwoWayChannelRole?: string|null,
      *     SelfManagedOptOutsEnabled: bool,
      *     OptOutListName: string,
      *     SharedRoutesEnabled: bool,

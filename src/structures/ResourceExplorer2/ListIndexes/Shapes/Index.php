@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\ListIndexes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $Region
  * @property string|null $Arn
+ * @property string|null $Region
  * @property 'LOCAL'|'AGGREGATOR'|null $Type
  */
 class Index extends Shape
 {
     /**
      * @param array{
-     *     Region?: string|null,
      *     Arn?: string|null,
+     *     Region?: string|null,
      *     Type?: 'LOCAL'|'AGGREGATOR'|null
      * } $args
      */

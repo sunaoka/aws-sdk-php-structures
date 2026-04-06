@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\PutAuthPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $resourceIdentifier
  * @property string $policy
+ * @property string $resourceIdentifier
  */
 class PutAuthPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     resourceIdentifier: string,
-     *     policy: string
+     *     policy: string,
+     *     resourceIdentifier: string
      * } $args
      */
     public function __construct(array $args)

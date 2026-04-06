@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $CatalogId
  * @property 'DATABASE'|'TABLE' $ResourceType
- * @property list<LFTag>|null $Expression
- * @property string|null $ExpressionName
+ * @property list<LFTag> $Expression
  */
 class LFTagPolicyResource extends Shape
 {
@@ -16,8 +15,7 @@ class LFTagPolicyResource extends Shape
      * @param array{
      *     CatalogId?: string|null,
      *     ResourceType: 'DATABASE'|'TABLE',
-     *     Expression?: list<LFTag>|null,
-     *     ExpressionName?: string|null
+     *     Expression: list<LFTag>
      * } $args
      */
     public function __construct(array $args)

@@ -23,7 +23,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ParameterGroupStatus|null $ParameterGroup
  * @property SSEDescription|null $SSEDescription
  * @property 'NONE'|'TLS'|null $ClusterEndpointEncryptionType
- * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
  */
 class Cluster extends Shape
 {
@@ -46,8 +45,7 @@ class Cluster extends Shape
      *     IamRoleArn?: string|null,
      *     ParameterGroup?: ParameterGroupStatus|null,
      *     SSEDescription?: SSEDescription|null,
-     *     ClusterEndpointEncryptionType?: 'NONE'|'TLS'|null,
-     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null
+     *     ClusterEndpointEncryptionType?: 'NONE'|'TLS'|null
      * } $args
      */
     public function __construct(array $args = [])

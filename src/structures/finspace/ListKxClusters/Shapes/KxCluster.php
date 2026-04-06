@@ -8,10 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'CREATING'|'CREATE_FAILED'|'RUNNING'|'UPDATING'|'DELETING'|'DELETED'|'DELETE_FAILED'|null $status
  * @property string|null $statusReason
  * @property string|null $clusterName
- * @property 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT'|null $clusterType
+ * @property 'HDB'|'RDB'|'GATEWAY'|null $clusterType
  * @property string|null $clusterDescription
  * @property string|null $releaseLabel
- * @property list<Volume>|null $volumes
  * @property string|null $initializationScript
  * @property string|null $executionRole
  * @property 'SINGLE'|'MULTI'|null $azMode
@@ -26,10 +25,9 @@ class KxCluster extends Shape
      *     status?: 'PENDING'|'CREATING'|'CREATE_FAILED'|'RUNNING'|'UPDATING'|'DELETING'|'DELETED'|'DELETE_FAILED'|null,
      *     statusReason?: string|null,
      *     clusterName?: string|null,
-     *     clusterType?: 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT'|null,
+     *     clusterType?: 'HDB'|'RDB'|'GATEWAY'|null,
      *     clusterDescription?: string|null,
      *     releaseLabel?: string|null,
-     *     volumes?: list<Volume>|null,
      *     initializationScript?: string|null,
      *     executionRole?: string|null,
      *     azMode?: 'SINGLE'|'MULTI'|null,

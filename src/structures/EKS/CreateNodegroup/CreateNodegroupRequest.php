@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $diskSize
  * @property list<string> $subnets
  * @property list<string>|null $instanceTypes
- * @property 'AL2_x86_64'|'AL2_x86_64_GPU'|'AL2_ARM_64'|'CUSTOM'|'BOTTLEROCKET_ARM_64'|'BOTTLEROCKET_x86_64'|'BOTTLEROCKET_ARM_64_FIPS'|'BOTTLEROCKET_x86_64_FIPS'|'BOTTLEROCKET_ARM_64_NVIDIA'|'BOTTLEROCKET_x86_64_NVIDIA'|'BOTTLEROCKET_ARM_64_NVIDIA_FIPS'|'BOTTLEROCKET_x86_64_NVIDIA_FIPS'|'WINDOWS_CORE_2019_x86_64'|'WINDOWS_FULL_2019_x86_64'|'WINDOWS_CORE_2022_x86_64'|'WINDOWS_FULL_2022_x86_64'|'WINDOWS_CORE_2025_x86_64'|'WINDOWS_FULL_2025_x86_64'|'AL2023_x86_64_STANDARD'|'AL2023_ARM_64_STANDARD'|'AL2023_x86_64_NEURON'|'AL2023_x86_64_NVIDIA'|'AL2023_ARM_64_NVIDIA'|null $amiType
+ * @property 'AL2_x86_64'|'AL2_x86_64_GPU'|'AL2_ARM_64'|'CUSTOM'|'BOTTLEROCKET_ARM_64'|'BOTTLEROCKET_x86_64'|'BOTTLEROCKET_ARM_64_NVIDIA'|'BOTTLEROCKET_x86_64_NVIDIA'|'WINDOWS_CORE_2019_x86_64'|'WINDOWS_FULL_2019_x86_64'|'WINDOWS_CORE_2022_x86_64'|'WINDOWS_FULL_2022_x86_64'|null $amiType
  * @property Shapes\RemoteAccessConfig|null $remoteAccess
  * @property string $nodeRole
  * @property array<string, string>|null $labels
@@ -20,8 +20,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientRequestToken
  * @property Shapes\LaunchTemplateSpecification|null $launchTemplate
  * @property Shapes\NodegroupUpdateConfig|null $updateConfig
- * @property Shapes\NodeRepairConfig|null $nodeRepairConfig
- * @property 'ON_DEMAND'|'SPOT'|'CAPACITY_BLOCK'|null $capacityType
+ * @property 'ON_DEMAND'|'SPOT'|null $capacityType
  * @property string|null $version
  * @property string|null $releaseVersion
  */
@@ -35,7 +34,7 @@ class CreateNodegroupRequest extends Request
      *     diskSize?: int|null,
      *     subnets: list<string>,
      *     instanceTypes?: list<string>|null,
-     *     amiType?: 'AL2_x86_64'|'AL2_x86_64_GPU'|'AL2_ARM_64'|'CUSTOM'|'BOTTLEROCKET_ARM_64'|'BOTTLEROCKET_x86_64'|'BOTTLEROCKET_ARM_64_FIPS'|'BOTTLEROCKET_x86_64_FIPS'|'BOTTLEROCKET_ARM_64_NVIDIA'|'BOTTLEROCKET_x86_64_NVIDIA'|'BOTTLEROCKET_ARM_64_NVIDIA_FIPS'|'BOTTLEROCKET_x86_64_NVIDIA_FIPS'|'WINDOWS_CORE_2019_x86_64'|'WINDOWS_FULL_2019_x86_64'|'WINDOWS_CORE_2022_x86_64'|'WINDOWS_FULL_2022_x86_64'|'WINDOWS_CORE_2025_x86_64'|'WINDOWS_FULL_2025_x86_64'|'AL2023_x86_64_STANDARD'|'AL2023_ARM_64_STANDARD'|'AL2023_x86_64_NEURON'|'AL2023_x86_64_NVIDIA'|'AL2023_ARM_64_NVIDIA'|null,
+     *     amiType?: 'AL2_x86_64'|'AL2_x86_64_GPU'|'AL2_ARM_64'|'CUSTOM'|'BOTTLEROCKET_ARM_64'|'BOTTLEROCKET_x86_64'|'BOTTLEROCKET_ARM_64_NVIDIA'|'BOTTLEROCKET_x86_64_NVIDIA'|'WINDOWS_CORE_2019_x86_64'|'WINDOWS_FULL_2019_x86_64'|'WINDOWS_CORE_2022_x86_64'|'WINDOWS_FULL_2022_x86_64'|null,
      *     remoteAccess?: Shapes\RemoteAccessConfig|null,
      *     nodeRole: string,
      *     labels?: array<string, string>|null,
@@ -44,8 +43,7 @@ class CreateNodegroupRequest extends Request
      *     clientRequestToken?: string|null,
      *     launchTemplate?: Shapes\LaunchTemplateSpecification|null,
      *     updateConfig?: Shapes\NodegroupUpdateConfig|null,
-     *     nodeRepairConfig?: Shapes\NodeRepairConfig|null,
-     *     capacityType?: 'ON_DEMAND'|'SPOT'|'CAPACITY_BLOCK'|null,
+     *     capacityType?: 'ON_DEMAND'|'SPOT'|null,
      *     version?: string|null,
      *     releaseVersion?: string|null
      * } $args

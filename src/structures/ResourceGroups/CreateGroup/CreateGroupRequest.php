@@ -10,9 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ResourceQuery|null $ResourceQuery
  * @property array<string, string>|null $Tags
  * @property list<Shapes\GroupConfigurationItem>|null $Configuration
- * @property int<1, 10>|null $Criticality
- * @property string|null $Owner
- * @property string|null $DisplayName
  */
 class CreateGroupRequest extends Request
 {
@@ -22,10 +19,7 @@ class CreateGroupRequest extends Request
      *     Description?: string|null,
      *     ResourceQuery?: Shapes\ResourceQuery|null,
      *     Tags?: array<string, string>|null,
-     *     Configuration?: list<Shapes\GroupConfigurationItem>|null,
-     *     Criticality?: int<1, 10>|null,
-     *     Owner?: string|null,
-     *     DisplayName?: string|null
+     *     Configuration?: list<Shapes\GroupConfigurationItem>|null
      * } $args
      */
     public function __construct(array $args)

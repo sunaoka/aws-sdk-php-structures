@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateUserAccessLoggingSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $userAccessLoggingSettingsArn
- * @property string|null $kinesisStreamArn
  * @property string|null $clientToken
+ * @property string|null $kinesisStreamArn
+ * @property string $userAccessLoggingSettingsArn
  */
 class UpdateUserAccessLoggingSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     userAccessLoggingSettingsArn: string,
+     *     clientToken?: string|null,
      *     kinesisStreamArn?: string|null,
-     *     clientToken?: string|null
+     *     userAccessLoggingSettingsArn: string
      * } $args
      */
     public function __construct(array $args)

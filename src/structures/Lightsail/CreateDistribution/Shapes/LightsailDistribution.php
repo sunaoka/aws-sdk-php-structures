@@ -23,9 +23,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CacheSettings|null $cacheBehaviorSettings
  * @property list<CacheBehaviorPerPath>|null $cacheBehaviors
  * @property bool|null $ableToUpdateBundle
- * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
+ * @property 'dualstack'|'ipv4'|null $ipAddressType
  * @property list<Tag>|null $tags
- * @property string|null $viewerMinimumTlsProtocolVersion
  */
 class LightsailDistribution extends Shape
 {
@@ -49,9 +48,8 @@ class LightsailDistribution extends Shape
      *     cacheBehaviorSettings?: CacheSettings|null,
      *     cacheBehaviors?: list<CacheBehaviorPerPath>|null,
      *     ableToUpdateBundle?: bool|null,
-     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
-     *     tags?: list<Tag>|null,
-     *     viewerMinimumTlsProtocolVersion?: string|null
+     *     ipAddressType?: 'dualstack'|'ipv4'|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

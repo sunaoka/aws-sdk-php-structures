@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $transferPerMonthInGb
  * @property list<'LINUX_UNIX'|'WINDOWS'>|null $supportedPlatforms
  * @property list<'LfR'>|null $supportedAppCategories
- * @property int|null $publicIpv4AddressCount
  */
 class Bundle extends Shape
 {
@@ -34,8 +33,7 @@ class Bundle extends Shape
      *     ramSizeInGb?: float|null,
      *     transferPerMonthInGb?: int|null,
      *     supportedPlatforms?: list<'LINUX_UNIX'|'WINDOWS'>|null,
-     *     supportedAppCategories?: list<'LfR'>|null,
-     *     publicIpv4AddressCount?: int|null
+     *     supportedAppCategories?: list<'LfR'>|null
      * } $args
      */
     public function __construct(array $args = [])

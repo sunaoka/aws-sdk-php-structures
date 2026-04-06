@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property int|null $StepConcurrencyLevel
- * @property bool|null $ExtendedSupport
  */
 class ModifyClusterResponse extends Response
 {

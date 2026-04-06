@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EncryptionSpecification|null $encryptionSpecificationOverride
  * @property Shapes\PointInTimeRecovery|null $pointInTimeRecoveryOverride
  * @property list<Shapes\Tag>|null $tagsOverride
- * @property Shapes\AutoScalingSpecification|null $autoScalingSpecification
- * @property list<Shapes\ReplicaSpecification>|null $replicaSpecifications
  */
 class RestoreTableRequest extends Request
 {
@@ -29,9 +27,7 @@ class RestoreTableRequest extends Request
      *     capacitySpecificationOverride?: Shapes\CapacitySpecification|null,
      *     encryptionSpecificationOverride?: Shapes\EncryptionSpecification|null,
      *     pointInTimeRecoveryOverride?: Shapes\PointInTimeRecovery|null,
-     *     tagsOverride?: list<Shapes\Tag>|null,
-     *     autoScalingSpecification?: Shapes\AutoScalingSpecification|null,
-     *     replicaSpecifications?: list<Shapes\ReplicaSpecification>|null
+     *     tagsOverride?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

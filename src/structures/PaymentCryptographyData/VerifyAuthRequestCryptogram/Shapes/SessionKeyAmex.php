@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyAuthRequestCrypto
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrimaryAccountNumber
  * @property string $PanSequenceNumber
+ * @property string $PrimaryAccountNumber
  */
 class SessionKeyAmex extends Shape
 {
     /**
      * @param array{
-     *     PrimaryAccountNumber: string,
-     *     PanSequenceNumber: string
+     *     PanSequenceNumber: string,
+     *     PrimaryAccountNumber: string
      * } $args
      */
     public function __construct(array $args)

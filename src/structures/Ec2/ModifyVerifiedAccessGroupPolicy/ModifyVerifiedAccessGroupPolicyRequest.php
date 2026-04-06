@@ -6,22 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VerifiedAccessGroupId
- * @property bool|null $PolicyEnabled
+ * @property bool $PolicyEnabled
  * @property string|null $PolicyDocument
  * @property string|null $ClientToken
  * @property bool|null $DryRun
- * @property Shapes\VerifiedAccessSseSpecificationRequest|null $SseSpecification
  */
 class ModifyVerifiedAccessGroupPolicyRequest extends Request
 {
     /**
      * @param array{
      *     VerifiedAccessGroupId: string,
-     *     PolicyEnabled?: bool|null,
+     *     PolicyEnabled: bool,
      *     PolicyDocument?: string|null,
      *     ClientToken?: string|null,
-     *     DryRun?: bool|null,
-     *     SseSpecification?: Shapes\VerifiedAccessSseSpecificationRequest|null
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

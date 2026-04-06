@@ -10,12 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $enableAutoSubDomain
  * @property list<string>|null $autoSubDomainCreationPatterns
  * @property string|null $autoSubDomainIAMRole
- * @property 'PENDING_VERIFICATION'|'IN_PROGRESS'|'AVAILABLE'|'IMPORTING_CUSTOM_CERTIFICATE'|'PENDING_DEPLOYMENT'|'AWAITING_APP_CNAME'|'FAILED'|'CREATING'|'REQUESTING_CERTIFICATE'|'UPDATING' $domainStatus
- * @property 'REQUESTING_CERTIFICATE'|'PENDING_VERIFICATION'|'IMPORTING_CUSTOM_CERTIFICATE'|'PENDING_DEPLOYMENT'|'AWAITING_APP_CNAME'|'UPDATE_COMPLETE'|'UPDATE_FAILED'|null $updateStatus
+ * @property 'PENDING_VERIFICATION'|'IN_PROGRESS'|'AVAILABLE'|'PENDING_DEPLOYMENT'|'FAILED'|'CREATING'|'REQUESTING_CERTIFICATE'|'UPDATING' $domainStatus
  * @property string $statusReason
  * @property string|null $certificateVerificationDNSRecord
  * @property list<SubDomain> $subDomains
- * @property Certificate|null $certificate
  */
 class DomainAssociation extends Shape
 {
@@ -26,12 +24,10 @@ class DomainAssociation extends Shape
      *     enableAutoSubDomain: bool,
      *     autoSubDomainCreationPatterns?: list<string>|null,
      *     autoSubDomainIAMRole?: string|null,
-     *     domainStatus: 'PENDING_VERIFICATION'|'IN_PROGRESS'|'AVAILABLE'|'IMPORTING_CUSTOM_CERTIFICATE'|'PENDING_DEPLOYMENT'|'AWAITING_APP_CNAME'|'FAILED'|'CREATING'|'REQUESTING_CERTIFICATE'|'UPDATING',
-     *     updateStatus?: 'REQUESTING_CERTIFICATE'|'PENDING_VERIFICATION'|'IMPORTING_CUSTOM_CERTIFICATE'|'PENDING_DEPLOYMENT'|'AWAITING_APP_CNAME'|'UPDATE_COMPLETE'|'UPDATE_FAILED'|null,
+     *     domainStatus: 'PENDING_VERIFICATION'|'IN_PROGRESS'|'AVAILABLE'|'PENDING_DEPLOYMENT'|'FAILED'|'CREATING'|'REQUESTING_CERTIFICATE'|'UPDATING',
      *     statusReason: string,
      *     certificateVerificationDNSRecord?: string|null,
-     *     subDomains: list<SubDomain>,
-     *     certificate?: Certificate|null
+     *     subDomains: list<SubDomain>
      * } $args
      */
     public function __construct(array $args)

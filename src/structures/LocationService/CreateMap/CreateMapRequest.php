@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\LocationService\CreateMap;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $MapName
  * @property Shapes\MapConfiguration $Configuration
- * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property string|null $Description
+ * @property string $MapName
+ * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property array<string, string>|null $Tags
  */
 class CreateMapRequest extends Request
 {
     /**
      * @param array{
-     *     MapName: string,
      *     Configuration: Shapes\MapConfiguration,
-     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
      *     Description?: string|null,
+     *     MapName: string,
+     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

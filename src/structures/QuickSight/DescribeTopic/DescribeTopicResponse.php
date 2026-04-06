@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TopicDetails|null $Topic
  * @property string|null $RequestId
  * @property int|null $Status
- * @property Shapes\CustomInstructions|null $CustomInstructions
  */
 class DescribeTopicResponse extends Response
 {

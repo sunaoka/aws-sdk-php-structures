@@ -18,13 +18,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $MaxCapacity
  * @property string|null $SecurityConfiguration
  * @property string|null $GlueVersion
- * @property int|null $NumberOfWorkers
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
- * @property \Aws\Api\DateTimeResult|null $CompletedOn
- * @property double|null $ExecutionTime
- * @property double|null $DPUSeconds
- * @property int|null $IdleTimeout
- * @property string|null $ProfileName
  */
 class Session extends Shape
 {
@@ -42,14 +35,7 @@ class Session extends Shape
      *     Progress?: double|null,
      *     MaxCapacity?: double|null,
      *     SecurityConfiguration?: string|null,
-     *     GlueVersion?: string|null,
-     *     NumberOfWorkers?: int|null,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
-     *     CompletedOn?: \Aws\Api\DateTimeResult|null,
-     *     ExecutionTime?: double|null,
-     *     DPUSeconds?: double|null,
-     *     IdleTimeout?: int|null,
-     *     ProfileName?: string|null
+     *     GlueVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

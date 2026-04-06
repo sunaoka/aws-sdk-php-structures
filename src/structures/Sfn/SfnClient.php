@@ -27,7 +27,6 @@ class SfnClient extends \Aws\Sfn\SfnClient
     use ListStateMachines\ListStateMachinesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use PublishStateMachineVersion\PublishStateMachineVersionTrait;
-    use RedriveExecution\RedriveExecutionTrait;
     use SendTaskFailure\SendTaskFailureTrait;
     use SendTaskHeartbeat\SendTaskHeartbeatTrait;
     use SendTaskSuccess\SendTaskSuccessTrait;
@@ -35,10 +34,8 @@ class SfnClient extends \Aws\Sfn\SfnClient
     use StartSyncExecution\StartSyncExecutionTrait;
     use StopExecution\StopExecutionTrait;
     use TagResource\TagResourceTrait;
-    use TestState\TestStateTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateMapRun\UpdateMapRunTrait;
     use UpdateStateMachine\UpdateStateMachineTrait;
     use UpdateStateMachineAlias\UpdateStateMachineAliasTrait;
-    use ValidateStateMachineDefinition\ValidateStateMachineDefinitionTrait;
 }

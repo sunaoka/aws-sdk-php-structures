@@ -12,8 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Name
  * @property string|null $CloudWatchLogGroupArn
  * @property list<Shapes\FilterRule>|null $Includes
- * @property Shapes\ManifestConfig|null $ManifestConfig
- * @property Shapes\TaskReportConfig|null $TaskReportConfig
  */
 class UpdateTaskRequest extends Request
 {
@@ -25,9 +23,7 @@ class UpdateTaskRequest extends Request
      *     Schedule?: Shapes\TaskSchedule|null,
      *     Name?: string|null,
      *     CloudWatchLogGroupArn?: string|null,
-     *     Includes?: list<Shapes\FilterRule>|null,
-     *     ManifestConfig?: Shapes\ManifestConfig|null,
-     *     TaskReportConfig?: Shapes\TaskReportConfig|null
+     *     Includes?: list<Shapes\FilterRule>|null
      * } $args
      */
     public function __construct(array $args)

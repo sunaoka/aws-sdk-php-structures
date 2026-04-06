@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\GenerateMac\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ISO9797_ALGORITHM1'|'ISO9797_ALGORITHM3'|'CMAC'|'HMAC'|'HMAC_SHA224'|'HMAC_SHA256'|'HMAC_SHA384'|'HMAC_SHA512'|'AS2805_4_1'|null $Algorithm
- * @property MacAlgorithmEmv|null $EmvMac
+ * @property 'ISO9797_ALGORITHM1'|'ISO9797_ALGORITHM3'|'CMAC'|'HMAC_SHA224'|'HMAC_SHA256'|'HMAC_SHA384'|'HMAC_SHA512'|null $Algorithm
+ * @property MacAlgorithmDukpt|null $DukptCmac
  * @property MacAlgorithmDukpt|null $DukptIso9797Algorithm1
  * @property MacAlgorithmDukpt|null $DukptIso9797Algorithm3
- * @property MacAlgorithmDukpt|null $DukptCmac
+ * @property MacAlgorithmEmv|null $EmvMac
  */
 class MacAttributes extends Shape
 {
     /**
      * @param array{
-     *     Algorithm?: 'ISO9797_ALGORITHM1'|'ISO9797_ALGORITHM3'|'CMAC'|'HMAC'|'HMAC_SHA224'|'HMAC_SHA256'|'HMAC_SHA384'|'HMAC_SHA512'|'AS2805_4_1'|null,
-     *     EmvMac?: MacAlgorithmEmv|null,
+     *     Algorithm?: 'ISO9797_ALGORITHM1'|'ISO9797_ALGORITHM3'|'CMAC'|'HMAC_SHA224'|'HMAC_SHA256'|'HMAC_SHA384'|'HMAC_SHA512'|null,
+     *     DukptCmac?: MacAlgorithmDukpt|null,
      *     DukptIso9797Algorithm1?: MacAlgorithmDukpt|null,
      *     DukptIso9797Algorithm3?: MacAlgorithmDukpt|null,
-     *     DukptCmac?: MacAlgorithmDukpt|null
+     *     EmvMac?: MacAlgorithmEmv|null
      * } $args
      */
     public function __construct(array $args = [])

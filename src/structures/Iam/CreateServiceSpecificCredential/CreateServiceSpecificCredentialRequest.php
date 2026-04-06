@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $UserName
  * @property string $ServiceName
- * @property int<1, 36600>|null $CredentialAgeDays
  */
 class CreateServiceSpecificCredentialRequest extends Request
 {
     /**
      * @param array{
      *     UserName: string,
-     *     ServiceName: string,
-     *     CredentialAgeDays?: int<1, 36600>|null
+     *     ServiceName: string
      * } $args
      */
     public function __construct(array $args)

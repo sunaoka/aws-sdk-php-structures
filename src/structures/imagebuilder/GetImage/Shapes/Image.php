@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AMI'|'DOCKER'|null $type
  * @property string|null $name
  * @property string|null $version
- * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property 'Windows'|'Linux'|null $platform
  * @property bool|null $enhancedImageMetadataEnabled
  * @property string|null $osVersion
  * @property ImageState|null $state
@@ -23,15 +23,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $dateCreated
  * @property OutputResources|null $outputResources
  * @property array<string, string>|null $tags
- * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null $buildType
+ * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|null $buildType
  * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null $imageSource
  * @property ImageScanState|null $scanState
  * @property ImageScanningConfiguration|null $imageScanningConfiguration
- * @property \Aws\Api\DateTimeResult|null $deprecationTime
- * @property string|null $lifecycleExecutionId
- * @property string|null $executionRole
- * @property list<WorkflowConfiguration>|null $workflows
- * @property ImageLoggingConfiguration|null $loggingConfiguration
  */
 class Image extends Shape
 {
@@ -41,7 +36,7 @@ class Image extends Shape
      *     type?: 'AMI'|'DOCKER'|null,
      *     name?: string|null,
      *     version?: string|null,
-     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     platform?: 'Windows'|'Linux'|null,
      *     enhancedImageMetadataEnabled?: bool|null,
      *     osVersion?: string|null,
      *     state?: ImageState|null,
@@ -55,15 +50,10 @@ class Image extends Shape
      *     dateCreated?: string|null,
      *     outputResources?: OutputResources|null,
      *     tags?: array<string, string>|null,
-     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null,
+     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|null,
      *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null,
      *     scanState?: ImageScanState|null,
-     *     imageScanningConfiguration?: ImageScanningConfiguration|null,
-     *     deprecationTime?: \Aws\Api\DateTimeResult|null,
-     *     lifecycleExecutionId?: string|null,
-     *     executionRole?: string|null,
-     *     workflows?: list<WorkflowConfiguration>|null,
-     *     loggingConfiguration?: ImageLoggingConfiguration|null
+     *     imageScanningConfiguration?: ImageScanningConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

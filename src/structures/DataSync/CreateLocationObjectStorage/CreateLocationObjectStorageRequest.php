@@ -12,11 +12,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $BucketName
  * @property string|null $AccessKey
  * @property string|null $SecretKey
- * @property list<string>|null $AgentArns
+ * @property list<string> $AgentArns
  * @property list<Shapes\TagListEntry>|null $Tags
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $ServerCertificate
- * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
- * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  */
 class CreateLocationObjectStorageRequest extends Request
 {
@@ -29,11 +27,9 @@ class CreateLocationObjectStorageRequest extends Request
      *     BucketName: string,
      *     AccessKey?: string|null,
      *     SecretKey?: string|null,
-     *     AgentArns?: list<string>|null,
+     *     AgentArns: list<string>,
      *     Tags?: list<Shapes\TagListEntry>|null,
-     *     ServerCertificate?: string|resource|\Psr\Http\Message\StreamInterface|null,
-     *     CmkSecretConfig?: Shapes\CmkSecretConfig|null,
-     *     CustomSecretConfig?: Shapes\CustomSecretConfig|null
+     *     ServerCertificate?: string|resource|\Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args)

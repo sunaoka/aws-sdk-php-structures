@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $decoderManifestArn
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModificationTime
- * @property array<string, string>|null $attributes
  */
 class VehicleSummary extends Shape
 {
@@ -22,8 +21,7 @@ class VehicleSummary extends Shape
      *     modelManifestArn: string,
      *     decoderManifestArn: string,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     lastModificationTime: \Aws\Api\DateTimeResult,
-     *     attributes?: array<string, string>|null
+     *     lastModificationTime: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

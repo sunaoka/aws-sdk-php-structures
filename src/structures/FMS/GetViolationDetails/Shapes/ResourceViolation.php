@@ -21,16 +21,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DnsRuleGroupPriorityConflictViolation|null $DnsRuleGroupPriorityConflictViolation
  * @property DnsDuplicateRuleGroupViolation|null $DnsDuplicateRuleGroupViolation
  * @property DnsRuleGroupLimitExceededViolation|null $DnsRuleGroupLimitExceededViolation
+ * @property PossibleRemediationActions|null $PossibleRemediationActions
  * @property FirewallSubnetIsOutOfScopeViolation|null $FirewallSubnetIsOutOfScopeViolation
  * @property RouteHasOutOfScopeEndpointViolation|null $RouteHasOutOfScopeEndpointViolation
  * @property ThirdPartyFirewallMissingFirewallViolation|null $ThirdPartyFirewallMissingFirewallViolation
  * @property ThirdPartyFirewallMissingSubnetViolation|null $ThirdPartyFirewallMissingSubnetViolation
  * @property ThirdPartyFirewallMissingExpectedRouteTableViolation|null $ThirdPartyFirewallMissingExpectedRouteTableViolation
  * @property FirewallSubnetMissingVPCEndpointViolation|null $FirewallSubnetMissingVPCEndpointViolation
- * @property InvalidNetworkAclEntriesViolation|null $InvalidNetworkAclEntriesViolation
- * @property PossibleRemediationActions|null $PossibleRemediationActions
- * @property WebACLHasIncompatibleConfigurationViolation|null $WebACLHasIncompatibleConfigurationViolation
- * @property WebACLHasOutOfScopeResourcesViolation|null $WebACLHasOutOfScopeResourcesViolation
  */
 class ResourceViolation extends Shape
 {
@@ -52,16 +49,13 @@ class ResourceViolation extends Shape
      *     DnsRuleGroupPriorityConflictViolation?: DnsRuleGroupPriorityConflictViolation|null,
      *     DnsDuplicateRuleGroupViolation?: DnsDuplicateRuleGroupViolation|null,
      *     DnsRuleGroupLimitExceededViolation?: DnsRuleGroupLimitExceededViolation|null,
+     *     PossibleRemediationActions?: PossibleRemediationActions|null,
      *     FirewallSubnetIsOutOfScopeViolation?: FirewallSubnetIsOutOfScopeViolation|null,
      *     RouteHasOutOfScopeEndpointViolation?: RouteHasOutOfScopeEndpointViolation|null,
      *     ThirdPartyFirewallMissingFirewallViolation?: ThirdPartyFirewallMissingFirewallViolation|null,
      *     ThirdPartyFirewallMissingSubnetViolation?: ThirdPartyFirewallMissingSubnetViolation|null,
      *     ThirdPartyFirewallMissingExpectedRouteTableViolation?: ThirdPartyFirewallMissingExpectedRouteTableViolation|null,
-     *     FirewallSubnetMissingVPCEndpointViolation?: FirewallSubnetMissingVPCEndpointViolation|null,
-     *     InvalidNetworkAclEntriesViolation?: InvalidNetworkAclEntriesViolation|null,
-     *     PossibleRemediationActions?: PossibleRemediationActions|null,
-     *     WebACLHasIncompatibleConfigurationViolation?: WebACLHasIncompatibleConfigurationViolation|null,
-     *     WebACLHasOutOfScopeResourcesViolation?: WebACLHasOutOfScopeResourcesViolation|null
+     *     FirewallSubnetMissingVPCEndpointViolation?: FirewallSubnetMissingVPCEndpointViolation|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $release
  * @property string|null $sourceLayerHash
  * @property string|null $version
- * @property string|null $fixedInVersion
  */
 class VulnerablePackage extends Shape
 {
@@ -26,8 +25,7 @@ class VulnerablePackage extends Shape
      *     packageManager?: string|null,
      *     release?: string|null,
      *     sourceLayerHash?: string|null,
-     *     version?: string|null,
-     *     fixedInVersion?: string|null
+     *     version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

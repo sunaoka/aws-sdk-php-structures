@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Id
- * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property double|null $Duration
  * @property double|null $ResponseTime
  * @property bool|null $HasFault
@@ -32,7 +31,6 @@ class TraceSummary extends Shape
     /**
      * @param array{
      *     Id?: string|null,
-     *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     Duration?: double|null,
      *     ResponseTime?: double|null,
      *     HasFault?: bool|null,

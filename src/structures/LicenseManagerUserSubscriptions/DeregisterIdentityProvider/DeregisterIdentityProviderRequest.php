@@ -5,20 +5,18 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\DeregisterIdent
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\IdentityProvider|null $IdentityProvider
- * @property string|null $Product
- * @property string|null $IdentityProviderArn
+ * @property Shapes\IdentityProvider $IdentityProvider
+ * @property string $Product
  */
 class DeregisterIdentityProviderRequest extends Request
 {
     /**
      * @param array{
-     *     IdentityProvider?: Shapes\IdentityProvider|null,
-     *     Product?: string|null,
-     *     IdentityProviderArn?: string|null
+     *     IdentityProvider: Shapes\IdentityProvider,
+     *     Product: string
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

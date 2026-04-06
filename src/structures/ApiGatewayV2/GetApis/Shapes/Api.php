@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DisableSchemaValidation
  * @property bool|null $DisableExecuteApiEndpoint
  * @property list<string>|null $ImportInfo
- * @property 'ipv4'|'dualstack'|null $IpAddressType
  * @property string $Name
  * @property 'WEBSOCKET'|'HTTP' $ProtocolType
  * @property string $RouteSelectionExpression
@@ -37,7 +36,6 @@ class Api extends Shape
      *     DisableSchemaValidation?: bool|null,
      *     DisableExecuteApiEndpoint?: bool|null,
      *     ImportInfo?: list<string>|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|null,
      *     Name: string,
      *     ProtocolType: 'WEBSOCKET'|'HTTP',
      *     RouteSelectionExpression: string,

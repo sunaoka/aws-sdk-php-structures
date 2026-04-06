@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $arn
  * @property string|null $name
- * @property 'BUILTIN_FUZZ'|'APPIUM_JAVA_JUNIT'|'APPIUM_JAVA_TESTNG'|'APPIUM_PYTHON'|'APPIUM_NODE'|'APPIUM_RUBY'|'APPIUM_WEB_JAVA_JUNIT'|'APPIUM_WEB_JAVA_TESTNG'|'APPIUM_WEB_PYTHON'|'APPIUM_WEB_NODE'|'APPIUM_WEB_RUBY'|'INSTRUMENTATION'|'XCTEST'|'XCTEST_UI'|null $type
+ * @property 'BUILTIN_FUZZ'|'BUILTIN_EXPLORER'|'WEB_PERFORMANCE_PROFILE'|'APPIUM_JAVA_JUNIT'|'APPIUM_JAVA_TESTNG'|'APPIUM_PYTHON'|'APPIUM_NODE'|'APPIUM_RUBY'|'APPIUM_WEB_JAVA_JUNIT'|'APPIUM_WEB_JAVA_TESTNG'|'APPIUM_WEB_PYTHON'|'APPIUM_WEB_NODE'|'APPIUM_WEB_RUBY'|'CALABASH'|'INSTRUMENTATION'|'UIAUTOMATION'|'UIAUTOMATOR'|'XCTEST'|'XCTEST_UI'|'REMOTE_ACCESS_RECORD'|'REMOTE_ACCESS_REPLAY'|null $type
  * @property 'ANDROID'|'IOS'|null $platform
  * @property \Aws\Api\DateTimeResult|null $created
  * @property 'PENDING'|'PENDING_CONCURRENCY'|'PENDING_DEVICE'|'PROCESSING'|'SCHEDULING'|'PREPARING'|'RUNNING'|'COMPLETED'|'STOPPING'|null $status
@@ -21,7 +21,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'METERED'|'UNMETERED'|null $billingMethod
  * @property DeviceMinutes|null $deviceMinutes
  * @property NetworkProfile|null $networkProfile
- * @property DeviceProxy|null $deviceProxy
  * @property string|null $parsingResultUrl
  * @property 'PARSING_FAILED'|'VPC_ENDPOINT_SETUP_FAILED'|null $resultCode
  * @property int|null $seed
@@ -38,8 +37,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $testSpecArn
  * @property DeviceSelectionResult|null $deviceSelectionResult
  * @property VpcConfig|null $vpcConfig
- * @property string|null $executionRoleArn
- * @property list<EnvironmentVariable>|null $environmentVariables
  */
 class Run extends Shape
 {
@@ -47,7 +44,7 @@ class Run extends Shape
      * @param array{
      *     arn?: string|null,
      *     name?: string|null,
-     *     type?: 'BUILTIN_FUZZ'|'APPIUM_JAVA_JUNIT'|'APPIUM_JAVA_TESTNG'|'APPIUM_PYTHON'|'APPIUM_NODE'|'APPIUM_RUBY'|'APPIUM_WEB_JAVA_JUNIT'|'APPIUM_WEB_JAVA_TESTNG'|'APPIUM_WEB_PYTHON'|'APPIUM_WEB_NODE'|'APPIUM_WEB_RUBY'|'INSTRUMENTATION'|'XCTEST'|'XCTEST_UI'|null,
+     *     type?: 'BUILTIN_FUZZ'|'BUILTIN_EXPLORER'|'WEB_PERFORMANCE_PROFILE'|'APPIUM_JAVA_JUNIT'|'APPIUM_JAVA_TESTNG'|'APPIUM_PYTHON'|'APPIUM_NODE'|'APPIUM_RUBY'|'APPIUM_WEB_JAVA_JUNIT'|'APPIUM_WEB_JAVA_TESTNG'|'APPIUM_WEB_PYTHON'|'APPIUM_WEB_NODE'|'APPIUM_WEB_RUBY'|'CALABASH'|'INSTRUMENTATION'|'UIAUTOMATION'|'UIAUTOMATOR'|'XCTEST'|'XCTEST_UI'|'REMOTE_ACCESS_RECORD'|'REMOTE_ACCESS_REPLAY'|null,
      *     platform?: 'ANDROID'|'IOS'|null,
      *     created?: \Aws\Api\DateTimeResult|null,
      *     status?: 'PENDING'|'PENDING_CONCURRENCY'|'PENDING_DEVICE'|'PROCESSING'|'SCHEDULING'|'PREPARING'|'RUNNING'|'COMPLETED'|'STOPPING'|null,
@@ -61,7 +58,6 @@ class Run extends Shape
      *     billingMethod?: 'METERED'|'UNMETERED'|null,
      *     deviceMinutes?: DeviceMinutes|null,
      *     networkProfile?: NetworkProfile|null,
-     *     deviceProxy?: DeviceProxy|null,
      *     parsingResultUrl?: string|null,
      *     resultCode?: 'PARSING_FAILED'|'VPC_ENDPOINT_SETUP_FAILED'|null,
      *     seed?: int|null,
@@ -77,9 +73,7 @@ class Run extends Shape
      *     skipAppResign?: bool|null,
      *     testSpecArn?: string|null,
      *     deviceSelectionResult?: DeviceSelectionResult|null,
-     *     vpcConfig?: VpcConfig|null,
-     *     executionRoleArn?: string|null,
-     *     environmentVariables?: list<EnvironmentVariable>|null
+     *     vpcConfig?: VpcConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FIS\StopExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'pending'|'initiating'|'running'|'completed'|'cancelled'|'stopping'|'stopped'|'failed'|'skipped'|null $status
+ * @property 'pending'|'initiating'|'running'|'completed'|'cancelled'|'stopping'|'stopped'|'failed'|null $status
  * @property string|null $reason
  */
 class ExperimentActionState extends Shape
 {
     /**
      * @param array{
-     *     status?: 'pending'|'initiating'|'running'|'completed'|'cancelled'|'stopping'|'stopped'|'failed'|'skipped'|null,
+     *     status?: 'pending'|'initiating'|'running'|'completed'|'cancelled'|'stopping'|'stopped'|'failed'|null,
      *     reason?: string|null
      * } $args
      */

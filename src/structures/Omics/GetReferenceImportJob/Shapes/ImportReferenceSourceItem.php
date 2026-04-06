@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $name
  * @property string|null $description
  * @property array<string, string>|null $tags
- * @property string|null $referenceId
  */
 class ImportReferenceSourceItem extends Shape
 {
@@ -22,8 +21,7 @@ class ImportReferenceSourceItem extends Shape
      *     statusMessage?: string|null,
      *     name?: string|null,
      *     description?: string|null,
-     *     tags?: array<string, string>|null,
-     *     referenceId?: string|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

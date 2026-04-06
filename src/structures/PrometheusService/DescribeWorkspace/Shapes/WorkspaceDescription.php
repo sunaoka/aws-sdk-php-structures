@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $prometheusEndpoint
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property array<string, string>|null $tags
- * @property string|null $kmsKeyArn
  */
 class WorkspaceDescription extends Shape
 {
@@ -24,8 +23,7 @@ class WorkspaceDescription extends Shape
      *     status: WorkspaceStatus,
      *     prometheusEndpoint?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>|null,
-     *     kmsKeyArn?: string|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\DescribeStatement\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property int|null $Duration
  * @property string|null $Error
- * @property 'SUBMITTED'|'PICKED'|'STARTED'|'FINISHED'|'ABORTED'|'FAILED'|null $Status
- * @property \Aws\Api\DateTimeResult|null $CreatedAt
- * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property bool|null $HasResultSet
+ * @property string $Id
  * @property string|null $QueryString
+ * @property int|null $RedshiftQueryId
  * @property int|null $ResultRows
  * @property int|null $ResultSize
- * @property int|null $RedshiftQueryId
- * @property bool|null $HasResultSet
+ * @property 'SUBMITTED'|'PICKED'|'STARTED'|'FINISHED'|'ABORTED'|'FAILED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
 class SubStatementData extends Shape
 {
     /**
      * @param array{
-     *     Id: string,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Duration?: int|null,
      *     Error?: string|null,
-     *     Status?: 'SUBMITTED'|'PICKED'|'STARTED'|'FINISHED'|'ABORTED'|'FAILED'|null,
-     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     HasResultSet?: bool|null,
+     *     Id: string,
      *     QueryString?: string|null,
+     *     RedshiftQueryId?: int|null,
      *     ResultRows?: int|null,
      *     ResultSize?: int|null,
-     *     RedshiftQueryId?: int|null,
-     *     HasResultSet?: bool|null
+     *     Status?: 'SUBMITTED'|'PICKED'|'STARTED'|'FINISHED'|'ABORTED'|'FAILED'|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

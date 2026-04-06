@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'TRANSACTIONAL'|'PROMOTIONAL'|null $MessageType
  * @property bool|null $TwoWayEnabled
  * @property string|null $TwoWayChannelArn
- * @property string|null $TwoWayChannelRole
  * @property bool|null $SelfManagedOptOutsEnabled
  * @property string|null $OptOutListName
  * @property bool|null $SharedRoutesEnabled

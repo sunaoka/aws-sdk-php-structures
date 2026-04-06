@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeInferenceRecommendationsJob\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $RecommendationId
- * @property RecommendationMetrics|null $Metrics
+ * @property RecommendationMetrics $Metrics
  * @property EndpointOutputConfiguration $EndpointConfiguration
  * @property ModelConfiguration $ModelConfiguration
+ * @property string|null $RecommendationId
  * @property \Aws\Api\DateTimeResult|null $InvocationEndTime
  * @property \Aws\Api\DateTimeResult|null $InvocationStartTime
  */
@@ -16,10 +16,10 @@ class InferenceRecommendation extends Shape
 {
     /**
      * @param array{
-     *     RecommendationId?: string|null,
-     *     Metrics?: RecommendationMetrics|null,
+     *     Metrics: RecommendationMetrics,
      *     EndpointConfiguration: EndpointOutputConfiguration,
      *     ModelConfiguration: ModelConfiguration,
+     *     RecommendationId?: string|null,
      *     InvocationEndTime?: \Aws\Api\DateTimeResult|null,
      *     InvocationStartTime?: \Aws\Api\DateTimeResult|null
      * } $args

@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, array<string, string>>|null $ConfigurationAliases
  * @property Shapes\DashConfiguration|null $DashConfiguration
  * @property Shapes\HlsConfiguration|null $HlsConfiguration
- * @property 'STITCHED_ONLY'|'PLAYER_SELECT'|null $InsertionMode
  * @property Shapes\LivePreRollConfiguration|null $LivePreRollConfiguration
  * @property Shapes\LogConfiguration|null $LogConfiguration
  * @property Shapes\ManifestProcessingRules|null $ManifestProcessingRules
@@ -25,8 +24,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $Tags
  * @property string|null $TranscodeProfileName
  * @property string|null $VideoContentSourceUrl
- * @property Shapes\AdConditioningConfiguration|null $AdConditioningConfiguration
- * @property Shapes\AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
  */
 class PutPlaybackConfigurationResponse extends Response
 {

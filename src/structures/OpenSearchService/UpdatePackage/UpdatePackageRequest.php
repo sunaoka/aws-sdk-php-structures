@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PackageSource $PackageSource
  * @property string|null $PackageDescription
  * @property string|null $CommitMessage
- * @property Shapes\PackageConfiguration|null $PackageConfiguration
- * @property Shapes\PackageEncryptionOptions|null $PackageEncryptionOptions
  */
 class UpdatePackageRequest extends Request
 {
@@ -19,9 +17,7 @@ class UpdatePackageRequest extends Request
      *     PackageID: string,
      *     PackageSource: Shapes\PackageSource,
      *     PackageDescription?: string|null,
-     *     CommitMessage?: string|null,
-     *     PackageConfiguration?: Shapes\PackageConfiguration|null,
-     *     PackageEncryptionOptions?: Shapes\PackageEncryptionOptions|null
+     *     CommitMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

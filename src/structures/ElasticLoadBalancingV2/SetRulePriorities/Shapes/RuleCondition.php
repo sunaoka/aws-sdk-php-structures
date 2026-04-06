@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property QueryStringConditionConfig|null $QueryStringConfig
  * @property HttpRequestMethodConditionConfig|null $HttpRequestMethodConfig
  * @property SourceIpConditionConfig|null $SourceIpConfig
- * @property list<string>|null $RegexValues
  */
 class RuleCondition extends Shape
 {
@@ -26,8 +25,7 @@ class RuleCondition extends Shape
      *     HttpHeaderConfig?: HttpHeaderConditionConfig|null,
      *     QueryStringConfig?: QueryStringConditionConfig|null,
      *     HttpRequestMethodConfig?: HttpRequestMethodConditionConfig|null,
-     *     SourceIpConfig?: SourceIpConditionConfig|null,
-     *     RegexValues?: list<string>|null
+     *     SourceIpConfig?: SourceIpConditionConfig|null
      * } $args
      */
     public function __construct(array $args = [])

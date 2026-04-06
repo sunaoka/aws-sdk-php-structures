@@ -13,12 +13,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceImageId
  * @property string $SourceRegion
  * @property string|null $DestinationOutpostArn
- * @property bool|null $CopyImageTags
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
- * @property int|null $SnapshotCopyCompletionDurationMinutes
- * @property string|null $DestinationAvailabilityZone
- * @property string|null $DestinationAvailabilityZoneId
  * @property bool|null $DryRun
+ * @property bool|null $CopyImageTags
  */
 class CopyImageRequest extends Request
 {
@@ -32,12 +28,8 @@ class CopyImageRequest extends Request
      *     SourceImageId: string,
      *     SourceRegion: string,
      *     DestinationOutpostArn?: string|null,
-     *     CopyImageTags?: bool|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     SnapshotCopyCompletionDurationMinutes?: int|null,
-     *     DestinationAvailabilityZone?: string|null,
-     *     DestinationAvailabilityZoneId?: string|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     CopyImageTags?: bool|null
      * } $args
      */
     public function __construct(array $args)

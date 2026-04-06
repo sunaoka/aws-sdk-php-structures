@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FunnelChartConfiguration|null $ChartConfiguration
  * @property list<VisualCustomAction>|null $Actions
  * @property list<ColumnHierarchy>|null $ColumnHierarchies
- * @property string|null $VisualContentAltText
  */
 class FunnelChartVisual extends Shape
 {
@@ -22,8 +21,7 @@ class FunnelChartVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: FunnelChartConfiguration|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     ColumnHierarchies?: list<ColumnHierarchy>|null,
-     *     VisualContentAltText?: string|null
+     *     ColumnHierarchies?: list<ColumnHierarchy>|null
      * } $args
      */
     public function __construct(array $args)

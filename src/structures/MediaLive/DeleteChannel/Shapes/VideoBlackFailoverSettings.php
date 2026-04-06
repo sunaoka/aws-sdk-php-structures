@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double|null $BlackDetectThreshold
- * @property int|null $VideoBlackThresholdMsec
+ * @property int<1000, max>|null $VideoBlackThresholdMsec
  */
 class VideoBlackFailoverSettings extends Shape
 {
     /**
      * @param array{
      *     BlackDetectThreshold?: double|null,
-     *     VideoBlackThresholdMsec?: int|null
+     *     VideoBlackThresholdMsec?: int<1000, max>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\S3Location|null $StorageLocation
  * @property string|resource|\Psr\Http\Message\StreamInterface|null $ZipFile
  * @property list<Shapes\Tag>|null $Tags
- * @property string|null $NodeJsVersion
  */
 class CreateScriptRequest extends Request
 {
@@ -20,8 +19,7 @@ class CreateScriptRequest extends Request
      *     Version?: string|null,
      *     StorageLocation?: Shapes\S3Location|null,
      *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface|null,
-     *     Tags?: list<Shapes\Tag>|null,
-     *     NodeJsVersion?: string|null
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, 6>|null $DayOfWeek
  * @property int<1, 28>|null $DayOfMonth
  * @property string|null $Timezone
- * @property Shapes\SoftwareUpdatePreferences|null $SoftwareUpdatePreferences
  */
 class DescribeMaintenanceStartTimeResponse extends Response
 {

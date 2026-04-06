@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<InputChannelLevel> $InputChannelLevels
- * @property int $OutputChannel
+ * @property int<0, 7> $OutputChannel
  */
 class AudioChannelMapping extends Shape
 {
     /**
      * @param array{
      *     InputChannelLevels: list<InputChannelLevel>,
-     *     OutputChannel: int
+     *     OutputChannel: int<0, 7>
      * } $args
      */
     public function __construct(array $args)

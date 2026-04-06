@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED'|null $ImprovementStatus
  * @property Shapes\WorkloadDiscoveryConfig|null $DiscoveryConfig
  * @property list<string>|null $Applications
- * @property Shapes\WorkloadJiraConfigurationInput|null $JiraConfiguration
  */
 class UpdateWorkloadRequest extends Request
 {
@@ -44,8 +43,7 @@ class UpdateWorkloadRequest extends Request
      *     Notes?: string|null,
      *     ImprovementStatus?: 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED'|null,
      *     DiscoveryConfig?: Shapes\WorkloadDiscoveryConfig|null,
-     *     Applications?: list<string>|null,
-     *     JiraConfiguration?: Shapes\WorkloadJiraConfigurationInput|null
+     *     Applications?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

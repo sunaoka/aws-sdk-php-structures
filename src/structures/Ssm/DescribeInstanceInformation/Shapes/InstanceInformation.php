@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ActivationId
  * @property string|null $IamRole
  * @property \Aws\Api\DateTimeResult|null $RegistrationDate
- * @property 'ManagedInstance'|'EC2Instance'|null $ResourceType
+ * @property 'ManagedInstance'|'Document'|'EC2Instance'|null $ResourceType
  * @property string|null $Name
  * @property string|null $IPAddress
  * @property string|null $ComputerName
@@ -42,7 +42,7 @@ class InstanceInformation extends Shape
      *     ActivationId?: string|null,
      *     IamRole?: string|null,
      *     RegistrationDate?: \Aws\Api\DateTimeResult|null,
-     *     ResourceType?: 'ManagedInstance'|'EC2Instance'|null,
+     *     ResourceType?: 'ManagedInstance'|'Document'|'EC2Instance'|null,
      *     Name?: string|null,
      *     IPAddress?: string|null,
      *     ComputerName?: string|null,

@@ -11,8 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property QuickConnectConfig|null $QuickConnectConfig
  * @property array<string, string>|null $Tags
- * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
- * @property string|null $LastModifiedRegion
  */
 class QuickConnect extends Shape
 {
@@ -23,9 +21,7 @@ class QuickConnect extends Shape
      *     Name?: string|null,
      *     Description?: string|null,
      *     QuickConnectConfig?: QuickConnectConfig|null,
-     *     Tags?: array<string, string>|null,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     LastModifiedRegion?: string|null
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

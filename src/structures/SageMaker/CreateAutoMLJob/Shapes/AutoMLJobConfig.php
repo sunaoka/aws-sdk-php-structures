@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property AutoMLJobCompletionCriteria|null $CompletionCriteria
  * @property AutoMLSecurityConfig|null $SecurityConfig
- * @property AutoMLCandidateGenerationConfig|null $CandidateGenerationConfig
  * @property AutoMLDataSplitConfig|null $DataSplitConfig
+ * @property AutoMLCandidateGenerationConfig|null $CandidateGenerationConfig
  * @property 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING'|null $Mode
  */
 class AutoMLJobConfig extends Shape
@@ -17,8 +17,8 @@ class AutoMLJobConfig extends Shape
      * @param array{
      *     CompletionCriteria?: AutoMLJobCompletionCriteria|null,
      *     SecurityConfig?: AutoMLSecurityConfig|null,
-     *     CandidateGenerationConfig?: AutoMLCandidateGenerationConfig|null,
      *     DataSplitConfig?: AutoMLDataSplitConfig|null,
+     *     CandidateGenerationConfig?: AutoMLCandidateGenerationConfig|null,
      *     Mode?: 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING'|null
      * } $args
      */

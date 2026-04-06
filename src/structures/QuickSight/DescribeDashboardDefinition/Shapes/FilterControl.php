@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FilterTextAreaControl|null $TextArea
  * @property FilterSliderControl|null $Slider
  * @property FilterRelativeDateTimeControl|null $RelativeDateTime
- * @property FilterCrossSheetControl|null $CrossSheet
  */
 class FilterControl extends Shape
 {
@@ -24,8 +23,7 @@ class FilterControl extends Shape
      *     TextField?: FilterTextFieldControl|null,
      *     TextArea?: FilterTextAreaControl|null,
      *     Slider?: FilterSliderControl|null,
-     *     RelativeDateTime?: FilterRelativeDateTimeControl|null,
-     *     CrossSheet?: FilterCrossSheetControl|null
+     *     RelativeDateTime?: FilterRelativeDateTimeControl|null
      * } $args
      */
     public function __construct(array $args = [])

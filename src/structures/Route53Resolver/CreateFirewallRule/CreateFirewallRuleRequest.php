@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CreatorRequestId
  * @property string $FirewallRuleGroupId
- * @property string|null $FirewallDomainListId
+ * @property string $FirewallDomainListId
  * @property int $Priority
  * @property 'ALLOW'|'BLOCK'|'ALERT' $Action
  * @property 'NODATA'|'NXDOMAIN'|'OVERRIDE'|null $BlockResponse
@@ -15,10 +15,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CNAME'|null $BlockOverrideDnsType
  * @property int<0, 604800>|null $BlockOverrideTtl
  * @property string $Name
- * @property 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null $FirewallDomainRedirectionAction
- * @property string|null $Qtype
- * @property 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null $DnsThreatProtection
- * @property 'LOW'|'MEDIUM'|'HIGH'|null $ConfidenceThreshold
  */
 class CreateFirewallRuleRequest extends Request
 {
@@ -26,18 +22,14 @@ class CreateFirewallRuleRequest extends Request
      * @param array{
      *     CreatorRequestId: string,
      *     FirewallRuleGroupId: string,
-     *     FirewallDomainListId?: string|null,
+     *     FirewallDomainListId: string,
      *     Priority: int,
      *     Action: 'ALLOW'|'BLOCK'|'ALERT',
      *     BlockResponse?: 'NODATA'|'NXDOMAIN'|'OVERRIDE'|null,
      *     BlockOverrideDomain?: string|null,
      *     BlockOverrideDnsType?: 'CNAME'|null,
      *     BlockOverrideTtl?: int<0, 604800>|null,
-     *     Name: string,
-     *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN'|null,
-     *     Qtype?: string|null,
-     *     DnsThreatProtection?: 'DGA'|'DNS_TUNNELING'|'DICTIONARY_DGA'|null,
-     *     ConfidenceThreshold?: 'LOW'|'MEDIUM'|'HIGH'|null
+     *     Name: string
      * } $args
      */
     public function __construct(array $args)

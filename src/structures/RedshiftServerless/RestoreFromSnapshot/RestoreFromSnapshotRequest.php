@@ -5,8 +5,6 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\RestoreFromSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $adminPasswordSecretKmsKeyId
- * @property bool|null $manageAdminPassword
  * @property string $namespaceName
  * @property string|null $ownerAccount
  * @property string|null $snapshotArn
@@ -17,8 +15,6 @@ class RestoreFromSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     adminPasswordSecretKmsKeyId?: string|null,
-     *     manageAdminPassword?: bool|null,
      *     namespaceName: string,
      *     ownerAccount?: string|null,
      *     snapshotArn?: string|null,

@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS'|'CANCELED'|null $Status
  * @property 'TRAINING'|'RETRAINING'|'IMPORT'|null $SourceType
- * @property 'QUALITY_THRESHOLD_MET'|'CANNOT_DETERMINE_QUALITY'|'POOR_QUALITY_DETECTED'|null $ModelQuality
  */
 class ModelVersionSummary extends Shape
 {
@@ -24,8 +23,7 @@ class ModelVersionSummary extends Shape
      *     ModelVersionArn?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Status?: 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS'|'CANCELED'|null,
-     *     SourceType?: 'TRAINING'|'RETRAINING'|'IMPORT'|null,
-     *     ModelQuality?: 'QUALITY_THRESHOLD_MET'|'CANNOT_DETERMINE_QUALITY'|'POOR_QUALITY_DETECTED'|null
+     *     SourceType?: 'TRAINING'|'RETRAINING'|'IMPORT'|null
      * } $args
      */
     public function __construct(array $args = [])

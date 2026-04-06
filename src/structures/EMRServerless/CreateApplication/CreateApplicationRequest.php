@@ -18,13 +18,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ARM64'|'X86_64'|null $architecture
  * @property Shapes\ImageConfigurationInput|null $imageConfiguration
  * @property array<string, Shapes\WorkerTypeSpecificationInput>|null $workerTypeSpecifications
- * @property list<Shapes\Configuration>|null $runtimeConfiguration
- * @property Shapes\MonitoringConfiguration|null $monitoringConfiguration
- * @property Shapes\DiskEncryptionConfiguration|null $diskEncryptionConfiguration
- * @property Shapes\InteractiveConfiguration|null $interactiveConfiguration
- * @property Shapes\SchedulerConfiguration|null $schedulerConfiguration
- * @property Shapes\IdentityCenterConfigurationInput|null $identityCenterConfiguration
- * @property Shapes\JobLevelCostAllocationConfiguration|null $jobLevelCostAllocationConfiguration
  */
 class CreateApplicationRequest extends Request
 {
@@ -42,14 +35,7 @@ class CreateApplicationRequest extends Request
      *     networkConfiguration?: Shapes\NetworkConfiguration|null,
      *     architecture?: 'ARM64'|'X86_64'|null,
      *     imageConfiguration?: Shapes\ImageConfigurationInput|null,
-     *     workerTypeSpecifications?: array<string, Shapes\WorkerTypeSpecificationInput>|null,
-     *     runtimeConfiguration?: list<Shapes\Configuration>|null,
-     *     monitoringConfiguration?: Shapes\MonitoringConfiguration|null,
-     *     diskEncryptionConfiguration?: Shapes\DiskEncryptionConfiguration|null,
-     *     interactiveConfiguration?: Shapes\InteractiveConfiguration|null,
-     *     schedulerConfiguration?: Shapes\SchedulerConfiguration|null,
-     *     identityCenterConfiguration?: Shapes\IdentityCenterConfigurationInput|null,
-     *     jobLevelCostAllocationConfiguration?: Shapes\JobLevelCostAllocationConfiguration|null
+     *     workerTypeSpecifications?: array<string, Shapes\WorkerTypeSpecificationInput>|null
      * } $args
      */
     public function __construct(array $args)

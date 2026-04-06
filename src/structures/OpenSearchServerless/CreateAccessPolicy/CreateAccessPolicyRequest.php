@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\CreateAccessPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'data' $type
- * @property string $name
- * @property string|null $description
- * @property string $policy
  * @property string|null $clientToken
+ * @property string|null $description
+ * @property string $name
+ * @property string $policy
+ * @property 'data' $type
  */
 class CreateAccessPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     type: 'data',
-     *     name: string,
+     *     clientToken?: string|null,
      *     description?: string|null,
+     *     name: string,
      *     policy: string,
-     *     clientToken?: string|null
+     *     type: 'data'
      * } $args
      */
     public function __construct(array $args)

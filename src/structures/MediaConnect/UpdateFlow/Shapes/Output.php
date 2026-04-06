@@ -20,11 +20,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcInterfaceAttachment|null $VpcInterfaceAttachment
  * @property string|null $BridgeArn
  * @property list<int>|null $BridgePorts
- * @property 'ENABLED'|'DISABLED'|null $OutputStatus
- * @property string|null $PeerIpAddress
- * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
- * @property FlowTransitEncryption|null $RouterIntegrationTransitEncryption
- * @property string|null $ConnectedRouterInputArn
  */
 class Output extends Shape
 {
@@ -44,12 +39,7 @@ class Output extends Shape
      *     Transport?: Transport|null,
      *     VpcInterfaceAttachment?: VpcInterfaceAttachment|null,
      *     BridgeArn?: string|null,
-     *     BridgePorts?: list<int>|null,
-     *     OutputStatus?: 'ENABLED'|'DISABLED'|null,
-     *     PeerIpAddress?: string|null,
-     *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
-     *     RouterIntegrationTransitEncryption?: FlowTransitEncryption|null,
-     *     ConnectedRouterInputArn?: string|null
+     *     BridgePorts?: list<int>|null
      * } $args
      */
     public function __construct(array $args)

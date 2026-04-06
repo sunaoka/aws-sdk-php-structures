@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DashboardPublishOptions|null $DashboardPublishOptions
  * @property string|null $ThemeArn
  * @property Shapes\DashboardVersionDefinition|null $Definition
- * @property Shapes\ValidationStrategy|null $ValidationStrategy
  */
 class UpdateDashboardRequest extends Request
 {
@@ -28,8 +27,7 @@ class UpdateDashboardRequest extends Request
      *     VersionDescription?: string|null,
      *     DashboardPublishOptions?: Shapes\DashboardPublishOptions|null,
      *     ThemeArn?: string|null,
-     *     Definition?: Shapes\DashboardVersionDefinition|null,
-     *     ValidationStrategy?: Shapes\ValidationStrategy|null
+     *     Definition?: Shapes\DashboardVersionDefinition|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,23 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\UpdateProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $profileId
- * @property string|null $name
- * @property string|null $sessionPolicy
- * @property list<string>|null $roleArns
+ * @property int<900, 3600>|null $durationSeconds
  * @property list<string>|null $managedPolicyArns
- * @property int<900, 43200>|null $durationSeconds
- * @property bool|null $acceptRoleSessionName
+ * @property string|null $name
+ * @property string $profileId
+ * @property list<string>|null $roleArns
+ * @property string|null $sessionPolicy
  */
 class UpdateProfileRequest extends Request
 {
     /**
      * @param array{
-     *     profileId: string,
-     *     name?: string|null,
-     *     sessionPolicy?: string|null,
-     *     roleArns?: list<string>|null,
+     *     durationSeconds?: int<900, 3600>|null,
      *     managedPolicyArns?: list<string>|null,
-     *     durationSeconds?: int<900, 43200>|null,
-     *     acceptRoleSessionName?: bool|null
+     *     name?: string|null,
+     *     profileId: string,
+     *     roleArns?: list<string>|null,
+     *     sessionPolicy?: string|null
      * } $args
      */
     public function __construct(array $args)

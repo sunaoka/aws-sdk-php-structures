@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $context
  * @property string|null $filterArn
  * @property array<string, string>|null $filterValues
- * @property array<string, list<string>>|null $metadataColumns
  */
 class GetPersonalizedRankingRequest extends Request
 {
@@ -22,8 +21,7 @@ class GetPersonalizedRankingRequest extends Request
      *     userId: string,
      *     context?: array<string, string>|null,
      *     filterArn?: string|null,
-     *     filterValues?: array<string, string>|null,
-     *     metadataColumns?: array<string, list<string>>|null
+     *     filterValues?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

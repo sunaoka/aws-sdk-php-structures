@@ -5,21 +5,19 @@ namespace Sunaoka\Aws\Structures\ConnectCases\ListTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $templateId
- * @property string $templateArn
  * @property string $name
  * @property 'Active'|'Inactive' $status
- * @property list<TagPropagationConfiguration>|null $tagPropagationConfigurations
+ * @property string $templateArn
+ * @property string $templateId
  */
 class TemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     templateId: string,
-     *     templateArn: string,
      *     name: string,
      *     status: 'Active'|'Inactive',
-     *     tagPropagationConfigurations?: list<TagPropagationConfiguration>|null
+     *     templateArn: string,
+     *     templateId: string
      * } $args
      */
     public function __construct(array $args)

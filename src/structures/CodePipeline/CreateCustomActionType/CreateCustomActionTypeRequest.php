@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodePipeline\CreateCustomActionType;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'Source'|'Build'|'Deploy'|'Test'|'Invoke'|'Approval'|'Compute' $category
+ * @property 'Source'|'Build'|'Deploy'|'Test'|'Invoke'|'Approval' $category
  * @property string $provider
  * @property string $version
  * @property Shapes\ActionTypeSettings|null $settings
@@ -18,7 +18,7 @@ class CreateCustomActionTypeRequest extends Request
 {
     /**
      * @param array{
-     *     category: 'Source'|'Build'|'Deploy'|'Test'|'Invoke'|'Approval'|'Compute',
+     *     category: 'Source'|'Build'|'Deploy'|'Test'|'Invoke'|'Approval',
      *     provider: string,
      *     version: string,
      *     settings?: Shapes\ActionTypeSettings|null,

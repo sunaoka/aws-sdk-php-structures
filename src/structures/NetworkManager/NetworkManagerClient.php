@@ -13,9 +13,7 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use CreateConnectPeer\CreateConnectPeerTrait;
     use CreateConnection\CreateConnectionTrait;
     use CreateCoreNetwork\CreateCoreNetworkTrait;
-    use CreateCoreNetworkPrefixListAssociation\CreateCoreNetworkPrefixListAssociationTrait;
     use CreateDevice\CreateDeviceTrait;
-    use CreateDirectConnectGatewayAttachment\CreateDirectConnectGatewayAttachmentTrait;
     use CreateGlobalNetwork\CreateGlobalNetworkTrait;
     use CreateLink\CreateLinkTrait;
     use CreateSite\CreateSiteTrait;
@@ -28,7 +26,6 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use DeleteConnection\DeleteConnectionTrait;
     use DeleteCoreNetwork\DeleteCoreNetworkTrait;
     use DeleteCoreNetworkPolicyVersion\DeleteCoreNetworkPolicyVersionTrait;
-    use DeleteCoreNetworkPrefixListAssociation\DeleteCoreNetworkPrefixListAssociationTrait;
     use DeleteDevice\DeleteDeviceTrait;
     use DeleteGlobalNetwork\DeleteGlobalNetworkTrait;
     use DeleteLink\DeleteLinkTrait;
@@ -52,7 +49,6 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use GetCoreNetworkPolicy\GetCoreNetworkPolicyTrait;
     use GetCustomerGatewayAssociations\GetCustomerGatewayAssociationsTrait;
     use GetDevices\GetDevicesTrait;
-    use GetDirectConnectGatewayAttachment\GetDirectConnectGatewayAttachmentTrait;
     use GetLinkAssociations\GetLinkAssociationsTrait;
     use GetLinks\GetLinksTrait;
     use GetNetworkResourceCounts\GetNetworkResourceCountsTrait;
@@ -69,22 +65,17 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use GetTransitGatewayRegistrations\GetTransitGatewayRegistrationsTrait;
     use GetTransitGatewayRouteTableAttachment\GetTransitGatewayRouteTableAttachmentTrait;
     use GetVpcAttachment\GetVpcAttachmentTrait;
-    use ListAttachmentRoutingPolicyAssociations\ListAttachmentRoutingPolicyAssociationsTrait;
     use ListAttachments\ListAttachmentsTrait;
     use ListConnectPeers\ListConnectPeersTrait;
     use ListCoreNetworkPolicyVersions\ListCoreNetworkPolicyVersionsTrait;
-    use ListCoreNetworkPrefixListAssociations\ListCoreNetworkPrefixListAssociationsTrait;
-    use ListCoreNetworkRoutingInformation\ListCoreNetworkRoutingInformationTrait;
     use ListCoreNetworks\ListCoreNetworksTrait;
     use ListOrganizationServiceAccessStatus\ListOrganizationServiceAccessStatusTrait;
     use ListPeerings\ListPeeringsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
-    use PutAttachmentRoutingPolicyLabel\PutAttachmentRoutingPolicyLabelTrait;
     use PutCoreNetworkPolicy\PutCoreNetworkPolicyTrait;
     use PutResourcePolicy\PutResourcePolicyTrait;
     use RegisterTransitGateway\RegisterTransitGatewayTrait;
     use RejectAttachment\RejectAttachmentTrait;
-    use RemoveAttachmentRoutingPolicyLabel\RemoveAttachmentRoutingPolicyLabelTrait;
     use RestoreCoreNetworkPolicyVersion\RestoreCoreNetworkPolicyVersionTrait;
     use StartOrganizationServiceAccessUpdate\StartOrganizationServiceAccessUpdateTrait;
     use StartRouteAnalysis\StartRouteAnalysisTrait;
@@ -93,7 +84,6 @@ class NetworkManagerClient extends \Aws\NetworkManager\NetworkManagerClient
     use UpdateConnection\UpdateConnectionTrait;
     use UpdateCoreNetwork\UpdateCoreNetworkTrait;
     use UpdateDevice\UpdateDeviceTrait;
-    use UpdateDirectConnectGatewayAttachment\UpdateDirectConnectGatewayAttachmentTrait;
     use UpdateGlobalNetwork\UpdateGlobalNetworkTrait;
     use UpdateLink\UpdateLinkTrait;
     use UpdateNetworkResourceMetadata\UpdateNetworkResourceMetadataTrait;

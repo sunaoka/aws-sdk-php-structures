@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<FargateProfileSelector>|null $selectors
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|null $status
  * @property array<string, string>|null $tags
- * @property FargateProfileHealth|null $health
  */
 class FargateProfile extends Shape
 {
@@ -28,8 +27,7 @@ class FargateProfile extends Shape
      *     subnets?: list<string>|null,
      *     selectors?: list<FargateProfileSelector>|null,
      *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|null,
-     *     tags?: array<string, string>|null,
-     *     health?: FargateProfileHealth|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

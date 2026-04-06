@@ -6,11 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $accountId
- * @property 'MONITORED'|'NOT_MONITORED'|null $automatedDiscoveryMonitoringStatus
  * @property string|null $bucketName
  * @property int|null $classifiableObjectCount
  * @property int|null $classifiableSizeInBytes
- * @property 'ACCESS_DENIED'|'BUCKET_COUNT_EXCEEDS_QUOTA'|null $errorCode
+ * @property 'ACCESS_DENIED'|null $errorCode
  * @property string|null $errorMessage
  * @property JobDetails|null $jobDetails
  * @property \Aws\Api\DateTimeResult|null $lastAutomatedDiscoveryTime
@@ -27,11 +26,10 @@ class MatchingBucket extends Shape
     /**
      * @param array{
      *     accountId?: string|null,
-     *     automatedDiscoveryMonitoringStatus?: 'MONITORED'|'NOT_MONITORED'|null,
      *     bucketName?: string|null,
      *     classifiableObjectCount?: int|null,
      *     classifiableSizeInBytes?: int|null,
-     *     errorCode?: 'ACCESS_DENIED'|'BUCKET_COUNT_EXCEEDS_QUOTA'|null,
+     *     errorCode?: 'ACCESS_DENIED'|null,
      *     errorMessage?: string|null,
      *     jobDetails?: JobDetails|null,
      *     lastAutomatedDiscoveryTime?: \Aws\Api\DateTimeResult|null,

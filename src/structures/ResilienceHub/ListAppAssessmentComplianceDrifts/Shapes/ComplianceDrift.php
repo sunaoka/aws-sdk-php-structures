@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<'Software'|'Hardware'|'AZ'|'Region', DisruptionCompliance>|null $actualValue
  * @property string|null $appId
  * @property string|null $appVersion
- * @property 'NotEqual'|'Added'|'Removed'|null $diffType
- * @property 'ApplicationCompliance'|'AppComponentResiliencyComplianceStatus'|null $driftType
+ * @property 'NotEqual'|null $diffType
+ * @property 'ApplicationCompliance'|null $driftType
  * @property string|null $entityId
  * @property string|null $entityType
  * @property string|null $expectedReferenceId
@@ -24,8 +24,8 @@ class ComplianceDrift extends Shape
      *     actualValue?: array<'Software'|'Hardware'|'AZ'|'Region', DisruptionCompliance>|null,
      *     appId?: string|null,
      *     appVersion?: string|null,
-     *     diffType?: 'NotEqual'|'Added'|'Removed'|null,
-     *     driftType?: 'ApplicationCompliance'|'AppComponentResiliencyComplianceStatus'|null,
+     *     diffType?: 'NotEqual'|null,
+     *     driftType?: 'ApplicationCompliance'|null,
      *     entityId?: string|null,
      *     entityType?: string|null,
      *     expectedReferenceId?: string|null,

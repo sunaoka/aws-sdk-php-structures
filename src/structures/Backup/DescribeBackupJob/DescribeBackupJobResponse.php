@@ -8,13 +8,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $AccountId
  * @property string|null $BackupJobId
  * @property string|null $BackupVaultName
- * @property Shapes\Lifecycle|null $RecoveryPointLifecycle
  * @property string|null $BackupVaultArn
- * @property string|null $VaultType
- * @property string|null $VaultLockState
  * @property string|null $RecoveryPointArn
- * @property string|null $EncryptionKeyArn
- * @property bool|null $IsEncrypted
  * @property string|null $ResourceArn
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
@@ -35,8 +30,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $NumberOfChildJobs
  * @property array<'CREATED'|'PENDING'|'RUNNING'|'ABORTING'|'ABORTED'|'COMPLETED'|'FAILED'|'EXPIRED'|'PARTIAL', int>|null $ChildJobsInState
  * @property string|null $ResourceName
- * @property \Aws\Api\DateTimeResult|null $InitiationDate
- * @property string|null $MessageCategory
  */
 class DescribeBackupJobResponse extends Response
 {

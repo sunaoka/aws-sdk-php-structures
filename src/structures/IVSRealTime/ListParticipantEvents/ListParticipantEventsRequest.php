@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\ListParticipantEvents;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $stageArn
- * @property string $sessionId
- * @property string $participantId
- * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property string $participantId
+ * @property string $sessionId
+ * @property string $stageArn
  */
 class ListParticipantEventsRequest extends Request
 {
     /**
      * @param array{
-     *     stageArn: string,
-     *     sessionId: string,
-     *     participantId: string,
+     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<1, 100>|null
+     *     participantId: string,
+     *     sessionId: string,
+     *     stageArn: string
      * } $args
      */
     public function __construct(array $args)

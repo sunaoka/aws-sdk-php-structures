@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\RouteTable|null $RouteTable
- * @property string|null $ClientToken
  */
 class CreateRouteTableResponse extends Response
 {

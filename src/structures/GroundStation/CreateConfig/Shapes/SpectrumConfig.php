@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Frequency $centerFrequency
  * @property FrequencyBandwidth $bandwidth
- * @property 'RIGHT_HAND'|'LEFT_HAND'|'NONE'|null $polarization
+ * @property Frequency $centerFrequency
+ * @property 'LEFT_HAND'|'NONE'|'RIGHT_HAND'|null $polarization
  */
 class SpectrumConfig extends Shape
 {
     /**
      * @param array{
-     *     centerFrequency: Frequency,
      *     bandwidth: FrequencyBandwidth,
-     *     polarization?: 'RIGHT_HAND'|'LEFT_HAND'|'NONE'|null
+     *     centerFrequency: Frequency,
+     *     polarization?: 'LEFT_HAND'|'NONE'|'RIGHT_HAND'|null
      * } $args
      */
     public function __construct(array $args)

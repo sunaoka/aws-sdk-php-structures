@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ACMPCA\ListPermissions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 1000>|null $MaxResults
- * @property string|null $NextToken
  * @property string $CertificateAuthorityArn
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class ListPermissionsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 1000>|null,
+     *     CertificateAuthorityArn: string,
      *     NextToken?: string|null,
-     *     CertificateAuthorityArn: string
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

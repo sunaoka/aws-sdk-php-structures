@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\GetParticipant;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $stageArn
- * @property string $sessionId
  * @property string $participantId
+ * @property string $sessionId
+ * @property string $stageArn
  */
 class GetParticipantRequest extends Request
 {
     /**
      * @param array{
-     *     stageArn: string,
+     *     participantId: string,
      *     sessionId: string,
-     *     participantId: string
+     *     stageArn: string
      * } $args
      */
     public function __construct(array $args)

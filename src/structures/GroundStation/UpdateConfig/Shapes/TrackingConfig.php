@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GroundStation\UpdateConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'REQUIRED'|'PREFERRED'|'REMOVED' $autotrack
+ * @property 'PREFERRED'|'REMOVED'|'REQUIRED' $autotrack
  */
 class TrackingConfig extends Shape
 {
     /**
-     * @param array{autotrack: 'REQUIRED'|'PREFERRED'|'REMOVED'} $args
+     * @param array{autotrack: 'PREFERRED'|'REMOVED'|'REQUIRED'} $args
      */
     public function __construct(array $args)
     {

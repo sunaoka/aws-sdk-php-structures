@@ -31,10 +31,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'EC2'|'FARGATE'>|null $platformCapabilities
  * @property EksPropertiesDetail|null $eksProperties
  * @property list<EksAttemptDetail>|null $eksAttempts
- * @property EcsPropertiesDetail|null $ecsProperties
  * @property bool|null $isCancelled
  * @property bool|null $isTerminated
- * @property ConsumableResourceProperties|null $consumableResourceProperties
  */
 class JobDetail extends Shape
 {
@@ -66,10 +64,8 @@ class JobDetail extends Shape
      *     platformCapabilities?: list<'EC2'|'FARGATE'>|null,
      *     eksProperties?: EksPropertiesDetail|null,
      *     eksAttempts?: list<EksAttemptDetail>|null,
-     *     ecsProperties?: EcsPropertiesDetail|null,
      *     isCancelled?: bool|null,
-     *     isTerminated?: bool|null,
-     *     consumableResourceProperties?: ConsumableResourceProperties|null
+     *     isTerminated?: bool|null
      * } $args
      */
     public function __construct(array $args)

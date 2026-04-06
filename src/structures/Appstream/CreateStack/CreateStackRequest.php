@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
  * @property list<string>|null $EmbedHostDomains
  * @property Shapes\StreamingExperienceSettings|null $StreamingExperienceSettings
- * @property Shapes\ContentRedirection|null $ContentRedirection
  */
 class CreateStackRequest extends Request
 {
@@ -34,8 +33,7 @@ class CreateStackRequest extends Request
      *     Tags?: array<string, string>|null,
      *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
      *     EmbedHostDomains?: list<string>|null,
-     *     StreamingExperienceSettings?: Shapes\StreamingExperienceSettings|null,
-     *     ContentRedirection?: Shapes\ContentRedirection|null
+     *     StreamingExperienceSettings?: Shapes\StreamingExperienceSettings|null
      * } $args
      */
     public function __construct(array $args)

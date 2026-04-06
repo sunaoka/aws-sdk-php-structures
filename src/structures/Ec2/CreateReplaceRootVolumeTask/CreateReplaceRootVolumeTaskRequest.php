@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property string|null $ImageId
  * @property bool|null $DeleteReplacedRootVolume
- * @property int|null $VolumeInitializationRate
  */
 class CreateReplaceRootVolumeTaskRequest extends Request
 {
@@ -24,8 +23,7 @@ class CreateReplaceRootVolumeTaskRequest extends Request
      *     DryRun?: bool|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     ImageId?: string|null,
-     *     DeleteReplacedRootVolume?: bool|null,
-     *     VolumeInitializationRate?: int|null
+     *     DeleteReplacedRootVolume?: bool|null
      * } $args
      */
     public function __construct(array $args)

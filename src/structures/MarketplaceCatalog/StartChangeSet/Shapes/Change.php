@@ -8,8 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ChangeType
  * @property Entity $Entity
  * @property list<Tag>|null $EntityTags
- * @property string|null $Details
- * @property JsonDocumentType|null $DetailsDocument
+ * @property string $Details
  * @property string|null $ChangeName
  */
 class Change extends Shape
@@ -19,8 +18,7 @@ class Change extends Shape
      *     ChangeType: string,
      *     Entity: Entity,
      *     EntityTags?: list<Tag>|null,
-     *     Details?: string|null,
-     *     DetailsDocument?: JsonDocumentType|null,
+     *     Details: string,
      *     ChangeName?: string|null
      * } $args
      */

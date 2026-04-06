@@ -48,7 +48,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $TrimSpaceInChar
  * @property bool|null $ConvertTimestampWithZoneToUTC
  * @property int|null $OpenTransactionWindow
- * @property 'password'|'kerberos'|null $AuthenticationMethod
  */
 class OracleSettings extends Shape
 {
@@ -96,8 +95,7 @@ class OracleSettings extends Shape
      *     SecretsManagerOracleAsmSecretId?: string|null,
      *     TrimSpaceInChar?: bool|null,
      *     ConvertTimestampWithZoneToUTC?: bool|null,
-     *     OpenTransactionWindow?: int|null,
-     *     AuthenticationMethod?: 'password'|'kerberos'|null
+     *     OpenTransactionWindow?: int|null
      * } $args
      */
     public function __construct(array $args = [])

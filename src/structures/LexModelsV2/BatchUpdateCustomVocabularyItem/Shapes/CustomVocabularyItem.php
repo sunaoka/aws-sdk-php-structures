@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $itemId
  * @property string $phrase
- * @property int<0, 3>|null $weight
+ * @property int<1, 3>|null $weight
  * @property string|null $displayAs
  */
 class CustomVocabularyItem extends Shape
@@ -16,7 +16,7 @@ class CustomVocabularyItem extends Shape
      * @param array{
      *     itemId: string,
      *     phrase: string,
-     *     weight?: int<0, 3>|null,
+     *     weight?: int<1, 3>|null,
      *     displayAs?: string|null
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeAccountAttributes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $DryRun
  * @property list<'supported-platforms'|'default-vpc'>|null $AttributeNames
+ * @property bool|null $DryRun
  */
 class DescribeAccountAttributesRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool|null,
-     *     AttributeNames?: list<'supported-platforms'|'default-vpc'>|null
+     *     AttributeNames?: list<'supported-platforms'|'default-vpc'>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

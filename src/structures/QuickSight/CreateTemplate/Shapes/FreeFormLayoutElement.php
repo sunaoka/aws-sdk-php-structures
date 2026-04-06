@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ElementId
- * @property 'VISUAL'|'FILTER_CONTROL'|'PARAMETER_CONTROL'|'TEXT_BOX'|'IMAGE' $ElementType
+ * @property 'VISUAL'|'FILTER_CONTROL'|'PARAMETER_CONTROL'|'TEXT_BOX' $ElementType
  * @property string $XAxisLocation
  * @property string $YAxisLocation
  * @property string $Width
@@ -17,15 +17,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FreeFormLayoutElementBorderStyle|null $SelectedBorderStyle
  * @property FreeFormLayoutElementBackgroundStyle|null $BackgroundStyle
  * @property LoadingAnimation|null $LoadingAnimation
- * @property string|null $BorderRadius
- * @property string|null $Padding
  */
 class FreeFormLayoutElement extends Shape
 {
     /**
      * @param array{
      *     ElementId: string,
-     *     ElementType: 'VISUAL'|'FILTER_CONTROL'|'PARAMETER_CONTROL'|'TEXT_BOX'|'IMAGE',
+     *     ElementType: 'VISUAL'|'FILTER_CONTROL'|'PARAMETER_CONTROL'|'TEXT_BOX',
      *     XAxisLocation: string,
      *     YAxisLocation: string,
      *     Width: string,
@@ -35,9 +33,7 @@ class FreeFormLayoutElement extends Shape
      *     BorderStyle?: FreeFormLayoutElementBorderStyle|null,
      *     SelectedBorderStyle?: FreeFormLayoutElementBorderStyle|null,
      *     BackgroundStyle?: FreeFormLayoutElementBackgroundStyle|null,
-     *     LoadingAnimation?: LoadingAnimation|null,
-     *     BorderRadius?: string|null,
-     *     Padding?: string|null
+     *     LoadingAnimation?: LoadingAnimation|null
      * } $args
      */
     public function __construct(array $args)

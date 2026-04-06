@@ -11,19 +11,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property string|null $start
  * @property string|null $end
- * @property 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|'pending-return'|'returned'|null $state
+ * @property 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|null $state
  * @property string|null $region
  * @property string|null $ec2InstanceFamily
- * @property 'Compute'|'EC2Instance'|'SageMaker'|'Database'|null $savingsPlanType
+ * @property 'Compute'|'EC2Instance'|'SageMaker'|null $savingsPlanType
  * @property 'All Upfront'|'Partial Upfront'|'No Upfront'|null $paymentOption
- * @property list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|'OpenSearch'>|null $productTypes
- * @property 'CNY'|'USD'|'EUR'|null $currency
+ * @property list<'EC2'|'Fargate'|'Lambda'|'SageMaker'>|null $productTypes
+ * @property 'CNY'|'USD'|null $currency
  * @property string|null $commitment
  * @property string|null $upfrontPaymentAmount
  * @property string|null $recurringPaymentAmount
  * @property int|null $termDurationInSeconds
  * @property array<string, string>|null $tags
- * @property string|null $returnableUntil
  */
 class SavingsPlan extends Shape
 {
@@ -35,19 +34,18 @@ class SavingsPlan extends Shape
      *     description?: string|null,
      *     start?: string|null,
      *     end?: string|null,
-     *     state?: 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|'pending-return'|'returned'|null,
+     *     state?: 'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|null,
      *     region?: string|null,
      *     ec2InstanceFamily?: string|null,
-     *     savingsPlanType?: 'Compute'|'EC2Instance'|'SageMaker'|'Database'|null,
+     *     savingsPlanType?: 'Compute'|'EC2Instance'|'SageMaker'|null,
      *     paymentOption?: 'All Upfront'|'Partial Upfront'|'No Upfront'|null,
-     *     productTypes?: list<'EC2'|'Fargate'|'Lambda'|'SageMaker'|'RDS'|'DSQL'|'DynamoDB'|'ElastiCache'|'DocDB'|'Neptune'|'Timestream'|'Keyspaces'|'DMS'|'OpenSearch'>|null,
-     *     currency?: 'CNY'|'USD'|'EUR'|null,
+     *     productTypes?: list<'EC2'|'Fargate'|'Lambda'|'SageMaker'>|null,
+     *     currency?: 'CNY'|'USD'|null,
      *     commitment?: string|null,
      *     upfrontPaymentAmount?: string|null,
      *     recurringPaymentAmount?: string|null,
      *     termDurationInSeconds?: int|null,
-     *     tags?: array<string, string>|null,
-     *     returnableUntil?: string|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

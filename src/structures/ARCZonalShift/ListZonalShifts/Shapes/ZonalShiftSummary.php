@@ -5,29 +5,25 @@ namespace Sunaoka\Aws\Structures\ARCZonalShift\ListZonalShifts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $zonalShiftId
- * @property string $resourceIdentifier
  * @property string $awayFrom
+ * @property string $comment
  * @property \Aws\Api\DateTimeResult $expiryTime
+ * @property string $resourceIdentifier
  * @property \Aws\Api\DateTimeResult $startTime
  * @property 'ACTIVE'|'EXPIRED'|'CANCELED' $status
- * @property string $comment
- * @property 'ZONAL_SHIFT'|'PRACTICE_RUN'|'FIS_EXPERIMENT'|'ZONAL_AUTOSHIFT'|null $shiftType
- * @property 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|'CAPACITY_CHECK_FAILED'|null $practiceRunOutcome
+ * @property string $zonalShiftId
  */
 class ZonalShiftSummary extends Shape
 {
     /**
      * @param array{
-     *     zonalShiftId: string,
-     *     resourceIdentifier: string,
      *     awayFrom: string,
+     *     comment: string,
      *     expiryTime: \Aws\Api\DateTimeResult,
+     *     resourceIdentifier: string,
      *     startTime: \Aws\Api\DateTimeResult,
      *     status: 'ACTIVE'|'EXPIRED'|'CANCELED',
-     *     comment: string,
-     *     shiftType?: 'ZONAL_SHIFT'|'PRACTICE_RUN'|'FIS_EXPERIMENT'|'ZONAL_AUTOSHIFT'|null,
-     *     practiceRunOutcome?: 'FAILED'|'INTERRUPTED'|'PENDING'|'SUCCEEDED'|'CAPACITY_CHECK_FAILED'|null
+     *     zonalShiftId: string
      * } $args
      */
     public function __construct(array $args)

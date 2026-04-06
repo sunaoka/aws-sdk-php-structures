@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ResourceLocation|null $location
  * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null $resourceType
  * @property string|null $supportCode
- * @property list<Tag>|null $tags
  */
 class ContactMethod extends Shape
 {
@@ -28,8 +27,7 @@ class ContactMethod extends Shape
      *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     location?: ResourceLocation|null,
      *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null,
-     *     supportCode?: string|null,
-     *     tags?: list<Tag>|null
+     *     supportCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

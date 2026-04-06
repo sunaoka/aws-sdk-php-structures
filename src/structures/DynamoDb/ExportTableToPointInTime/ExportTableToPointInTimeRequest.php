@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'AES256'|'KMS'|null $S3SseAlgorithm
  * @property string|null $S3SseKmsKeyId
  * @property 'DYNAMODB_JSON'|'ION'|null $ExportFormat
- * @property 'FULL_EXPORT'|'INCREMENTAL_EXPORT'|null $ExportType
- * @property Shapes\IncrementalExportSpecification|null $IncrementalExportSpecification
  */
 class ExportTableToPointInTimeRequest extends Request
 {
@@ -29,9 +27,7 @@ class ExportTableToPointInTimeRequest extends Request
      *     S3Prefix?: string|null,
      *     S3SseAlgorithm?: 'AES256'|'KMS'|null,
      *     S3SseKmsKeyId?: string|null,
-     *     ExportFormat?: 'DYNAMODB_JSON'|'ION'|null,
-     *     ExportType?: 'FULL_EXPORT'|'INCREMENTAL_EXPORT'|null,
-     *     IncrementalExportSpecification?: Shapes\IncrementalExportSpecification|null
+     *     ExportFormat?: 'DYNAMODB_JSON'|'ION'|null
      * } $args
      */
     public function __construct(array $args)

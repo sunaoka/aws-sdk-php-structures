@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StopAction|null $StopAction
  * @property AddHeaderAction|null $AddHeaderAction
  * @property SNSAction|null $SNSAction
- * @property ConnectAction|null $ConnectAction
  */
 class ReceiptAction extends Shape
 {
@@ -24,8 +23,7 @@ class ReceiptAction extends Shape
      *     LambdaAction?: LambdaAction|null,
      *     StopAction?: StopAction|null,
      *     AddHeaderAction?: AddHeaderAction|null,
-     *     SNSAction?: SNSAction|null,
-     *     ConnectAction?: ConnectAction|null
+     *     SNSAction?: SNSAction|null
      * } $args
      */
     public function __construct(array $args = [])

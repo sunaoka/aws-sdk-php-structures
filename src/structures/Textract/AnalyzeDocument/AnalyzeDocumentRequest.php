@@ -6,20 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Document $Document
- * @property list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'|'LAYOUT'> $FeatureTypes
+ * @property list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'> $FeatureTypes
  * @property Shapes\HumanLoopConfig|null $HumanLoopConfig
  * @property Shapes\QueriesConfig|null $QueriesConfig
- * @property Shapes\AdaptersConfig|null $AdaptersConfig
  */
 class AnalyzeDocumentRequest extends Request
 {
     /**
      * @param array{
      *     Document: Shapes\Document,
-     *     FeatureTypes: list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'|'LAYOUT'>,
+     *     FeatureTypes: list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'>,
      *     HumanLoopConfig?: Shapes\HumanLoopConfig|null,
-     *     QueriesConfig?: Shapes\QueriesConfig|null,
-     *     AdaptersConfig?: Shapes\AdaptersConfig|null
+     *     QueriesConfig?: Shapes\QueriesConfig|null
      * } $args
      */
     public function __construct(array $args)

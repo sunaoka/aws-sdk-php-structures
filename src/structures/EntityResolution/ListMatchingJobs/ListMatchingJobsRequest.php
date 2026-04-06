@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EntityResolution\ListMatchingJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $workflowName
- * @property string|null $nextToken
  * @property int<1, 25>|null $maxResults
+ * @property string|null $nextToken
+ * @property string $workflowName
  */
 class ListMatchingJobsRequest extends Request
 {
     /**
      * @param array{
-     *     workflowName: string,
+     *     maxResults?: int<1, 25>|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<1, 25>|null
+     *     workflowName: string
      * } $args
      */
     public function __construct(array $args)

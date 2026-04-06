@@ -18,7 +18,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $ExecutionTime
  * @property string|null $RecommendedRuleset
  * @property string|null $CreatedRulesetName
- * @property string|null $DataQualitySecurityConfiguration
  */
 class GetDataQualityRuleRecommendationRunResponse extends Response
 {

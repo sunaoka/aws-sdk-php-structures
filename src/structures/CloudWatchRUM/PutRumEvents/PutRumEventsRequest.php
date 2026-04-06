@@ -5,23 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\PutRumEvents;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Id
- * @property string $BatchId
  * @property Shapes\AppMonitorDetails $AppMonitorDetails
- * @property Shapes\UserDetails $UserDetails
+ * @property string $BatchId
+ * @property string $Id
  * @property list<Shapes\RumEvent> $RumEvents
- * @property string|null $Alias
+ * @property Shapes\UserDetails $UserDetails
  */
 class PutRumEventsRequest extends Request
 {
     /**
      * @param array{
-     *     Id: string,
-     *     BatchId: string,
      *     AppMonitorDetails: Shapes\AppMonitorDetails,
-     *     UserDetails: Shapes\UserDetails,
+     *     BatchId: string,
+     *     Id: string,
      *     RumEvents: list<Shapes\RumEvent>,
-     *     Alias?: string|null
+     *     UserDetails: Shapes\UserDetails
      * } $args
      */
     public function __construct(array $args)

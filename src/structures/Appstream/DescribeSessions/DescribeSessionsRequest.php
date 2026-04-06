@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property int|null $Limit
  * @property 'API'|'SAML'|'USERPOOL'|'AWS_AD'|null $AuthenticationType
- * @property string|null $InstanceId
  */
 class DescribeSessionsRequest extends Request
 {
@@ -22,8 +21,7 @@ class DescribeSessionsRequest extends Request
      *     UserId?: string|null,
      *     NextToken?: string|null,
      *     Limit?: int|null,
-     *     AuthenticationType?: 'API'|'SAML'|'USERPOOL'|'AWS_AD'|null,
-     *     InstanceId?: string|null
+     *     AuthenticationType?: 'API'|'SAML'|'USERPOOL'|'AWS_AD'|null
      * } $args
      */
     public function __construct(array $args)

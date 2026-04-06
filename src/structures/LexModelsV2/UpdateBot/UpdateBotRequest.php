@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<60, 86400> $idleSessionTTLInSeconds
  * @property 'Bot'|'BotNetwork'|null $botType
  * @property list<Shapes\BotMember>|null $botMembers
- * @property Shapes\ErrorLogSettings|null $errorLogSettings
  */
 class UpdateBotRequest extends Request
 {
@@ -26,8 +25,7 @@ class UpdateBotRequest extends Request
      *     dataPrivacy: Shapes\DataPrivacy,
      *     idleSessionTTLInSeconds: int<60, 86400>,
      *     botType?: 'Bot'|'BotNetwork'|null,
-     *     botMembers?: list<Shapes\BotMember>|null,
-     *     errorLogSettings?: Shapes\ErrorLogSettings|null
+     *     botMembers?: list<Shapes\BotMember>|null
      * } $args
      */
     public function __construct(array $args)

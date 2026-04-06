@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $VersionDescription
  * @property Shapes\TemplateVersionDefinition|null $Definition
- * @property Shapes\ValidationStrategy|null $ValidationStrategy
  */
 class CreateTemplateRequest extends Request
 {
@@ -26,8 +25,7 @@ class CreateTemplateRequest extends Request
      *     SourceEntity?: Shapes\TemplateSourceEntity|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     VersionDescription?: string|null,
-     *     Definition?: Shapes\TemplateVersionDefinition|null,
-     *     ValidationStrategy?: Shapes\ValidationStrategy|null
+     *     Definition?: Shapes\TemplateVersionDefinition|null
      * } $args
      */
     public function __construct(array $args)

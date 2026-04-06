@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $UserName
  * @property string $SSHPublicKeyId
- * @property 'Active'|'Inactive'|'Expired' $Status
+ * @property 'Active'|'Inactive' $Status
  * @property \Aws\Api\DateTimeResult $UploadDate
  */
 class SSHPublicKeyMetadata extends Shape
@@ -16,7 +16,7 @@ class SSHPublicKeyMetadata extends Shape
      * @param array{
      *     UserName: string,
      *     SSHPublicKeyId: string,
-     *     Status: 'Active'|'Inactive'|'Expired',
+     *     Status: 'Active'|'Inactive',
      *     UploadDate: \Aws\Api\DateTimeResult
      * } $args
      */

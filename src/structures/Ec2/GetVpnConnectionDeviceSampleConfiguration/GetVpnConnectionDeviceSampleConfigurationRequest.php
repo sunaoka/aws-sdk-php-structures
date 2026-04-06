@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VpnConnectionId
  * @property string $VpnConnectionDeviceTypeId
  * @property string|null $InternetKeyExchangeVersion
- * @property string|null $SampleType
  * @property bool|null $DryRun
  */
 class GetVpnConnectionDeviceSampleConfigurationRequest extends Request
@@ -18,7 +17,6 @@ class GetVpnConnectionDeviceSampleConfigurationRequest extends Request
      *     VpnConnectionId: string,
      *     VpnConnectionDeviceTypeId: string,
      *     InternetKeyExchangeVersion?: string|null,
-     *     SampleType?: string|null,
      *     DryRun?: bool|null
      * } $args
      */

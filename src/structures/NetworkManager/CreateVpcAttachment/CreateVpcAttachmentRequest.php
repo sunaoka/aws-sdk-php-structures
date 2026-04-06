@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VpcArn
  * @property list<string> $SubnetArns
  * @property Shapes\VpcOptions|null $Options
- * @property string|null $RoutingPolicyLabel
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ClientToken
  */
@@ -21,7 +20,6 @@ class CreateVpcAttachmentRequest extends Request
      *     VpcArn: string,
      *     SubnetArns: list<string>,
      *     Options?: Shapes\VpcOptions|null,
-     *     RoutingPolicyLabel?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     ClientToken?: string|null
      * } $args

@@ -16,14 +16,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AxisDisplayOptions|null $ValueAxis
  * @property ChartAxisLabelOptions|null $ValueLabelOptions
  * @property ChartAxisLabelOptions|null $ColorLabelOptions
- * @property BarChartDefaultSeriesSettings|null $DefaultSeriesSettings
- * @property list<BarSeriesItem>|null $Series
  * @property LegendOptions|null $Legend
  * @property DataLabelOptions|null $DataLabels
  * @property TooltipOptions|null $Tooltip
  * @property list<ReferenceLine>|null $ReferenceLines
  * @property list<ContributionAnalysisDefault>|null $ContributionAnalysisDefaults
- * @property VisualInteractionOptions|null $Interactions
  */
 class BarChartConfiguration extends Shape
 {
@@ -40,14 +37,11 @@ class BarChartConfiguration extends Shape
      *     ValueAxis?: AxisDisplayOptions|null,
      *     ValueLabelOptions?: ChartAxisLabelOptions|null,
      *     ColorLabelOptions?: ChartAxisLabelOptions|null,
-     *     DefaultSeriesSettings?: BarChartDefaultSeriesSettings|null,
-     *     Series?: list<BarSeriesItem>|null,
      *     Legend?: LegendOptions|null,
      *     DataLabels?: DataLabelOptions|null,
      *     Tooltip?: TooltipOptions|null,
      *     ReferenceLines?: list<ReferenceLine>|null,
-     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null
      * } $args
      */
     public function __construct(array $args = [])

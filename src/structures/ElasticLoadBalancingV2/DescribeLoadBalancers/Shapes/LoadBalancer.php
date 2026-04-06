@@ -16,11 +16,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'application'|'network'|'gateway'|null $Type
  * @property list<AvailabilityZone>|null $AvailabilityZones
  * @property list<string>|null $SecurityGroups
- * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  * @property string|null $CustomerOwnedIpv4Pool
  * @property string|null $EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic
- * @property 'on'|'off'|null $EnablePrefixForIpv6SourceNat
- * @property IpamPools|null $IpamPools
  */
 class LoadBalancer extends Shape
 {
@@ -37,11 +35,9 @@ class LoadBalancer extends Shape
      *     Type?: 'application'|'network'|'gateway'|null,
      *     AvailabilityZones?: list<AvailabilityZone>|null,
      *     SecurityGroups?: list<string>|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|null,
      *     CustomerOwnedIpv4Pool?: string|null,
-     *     EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic?: string|null,
-     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'|null,
-     *     IpamPools?: IpamPools|null
+     *     EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic?: string|null
      * } $args
      */
     public function __construct(array $args = [])

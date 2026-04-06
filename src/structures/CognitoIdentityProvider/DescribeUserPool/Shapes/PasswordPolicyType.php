@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $RequireLowercase
  * @property bool|null $RequireNumbers
  * @property bool|null $RequireSymbols
- * @property int<0, 24>|null $PasswordHistorySize
  * @property int<0, 365>|null $TemporaryPasswordValidityDays
  */
 class PasswordPolicyType extends Shape
@@ -22,7 +21,6 @@ class PasswordPolicyType extends Shape
      *     RequireLowercase?: bool|null,
      *     RequireNumbers?: bool|null,
      *     RequireSymbols?: bool|null,
-     *     PasswordHistorySize?: int<0, 24>|null,
      *     TemporaryPasswordValidityDays?: int<0, 365>|null
      * } $args
      */

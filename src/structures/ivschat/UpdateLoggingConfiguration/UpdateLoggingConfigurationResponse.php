@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $arn
- * @property string|null $id
  * @property \Aws\Api\DateTimeResult|null $createTime
- * @property \Aws\Api\DateTimeResult|null $updateTime
- * @property string|null $name
  * @property Shapes\DestinationConfiguration|null $destinationConfiguration
+ * @property string|null $id
+ * @property string|null $name
  * @property 'ACTIVE'|null $state
  * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $updateTime
  */
 class UpdateLoggingConfigurationResponse extends Response
 {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DirectoryId
  * @property string|null $RegionName
  * @property 'Primary'|'Additional'|null $RegionType
- * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating'|null $Status
+ * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|null $Status
  * @property DirectoryVpcSettings|null $VpcSettings
  * @property int<2, max>|null $DesiredNumberOfDomainControllers
  * @property \Aws\Api\DateTimeResult|null $LaunchTime
@@ -22,7 +22,7 @@ class RegionDescription extends Shape
      *     DirectoryId?: string|null,
      *     RegionName?: string|null,
      *     RegionType?: 'Primary'|'Additional'|null,
-     *     Status?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating'|null,
+     *     Status?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|null,
      *     VpcSettings?: DirectoryVpcSettings|null,
      *     DesiredNumberOfDomainControllers?: int<2, max>|null,
      *     LaunchTime?: \Aws\Api\DateTimeResult|null,

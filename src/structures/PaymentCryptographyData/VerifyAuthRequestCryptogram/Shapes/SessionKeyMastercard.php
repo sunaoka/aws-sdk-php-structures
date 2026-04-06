@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyAuthRequestCrypto
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrimaryAccountNumber
- * @property string $PanSequenceNumber
  * @property string $ApplicationTransactionCounter
+ * @property string $PanSequenceNumber
+ * @property string $PrimaryAccountNumber
  * @property string $UnpredictableNumber
  */
 class SessionKeyMastercard extends Shape
 {
     /**
      * @param array{
-     *     PrimaryAccountNumber: string,
-     *     PanSequenceNumber: string,
      *     ApplicationTransactionCounter: string,
+     *     PanSequenceNumber: string,
+     *     PrimaryAccountNumber: string,
      *     UnpredictableNumber: string
      * } $args
      */

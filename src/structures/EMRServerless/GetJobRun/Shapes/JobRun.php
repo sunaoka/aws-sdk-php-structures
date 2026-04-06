@@ -13,8 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property string $executionRole
- * @property JobRunExecutionIamPolicy|null $executionIamPolicy
- * @property 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED' $state
+ * @property 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED' $state
  * @property string $stateDetails
  * @property string $releaseLabel
  * @property ConfigurationOverrides|null $configurationOverrides
@@ -25,14 +24,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $totalExecutionDurationSeconds
  * @property int<0, 1000000>|null $executionTimeoutMinutes
  * @property ResourceUtilization|null $billedResourceUtilization
- * @property 'BATCH'|'STREAMING'|null $mode
- * @property RetryPolicy|null $retryPolicy
- * @property int<1, max>|null $attempt
- * @property \Aws\Api\DateTimeResult|null $attemptCreatedAt
- * @property \Aws\Api\DateTimeResult|null $attemptUpdatedAt
- * @property \Aws\Api\DateTimeResult|null $startedAt
- * @property \Aws\Api\DateTimeResult|null $endedAt
- * @property int|null $queuedDurationMilliseconds
  */
 class JobRun extends Shape
 {
@@ -46,8 +37,7 @@ class JobRun extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     executionRole: string,
-     *     executionIamPolicy?: JobRunExecutionIamPolicy|null,
-     *     state: 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED',
+     *     state: 'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED',
      *     stateDetails: string,
      *     releaseLabel: string,
      *     configurationOverrides?: ConfigurationOverrides|null,
@@ -57,15 +47,7 @@ class JobRun extends Shape
      *     networkConfiguration?: NetworkConfiguration|null,
      *     totalExecutionDurationSeconds?: int|null,
      *     executionTimeoutMinutes?: int<0, 1000000>|null,
-     *     billedResourceUtilization?: ResourceUtilization|null,
-     *     mode?: 'BATCH'|'STREAMING'|null,
-     *     retryPolicy?: RetryPolicy|null,
-     *     attempt?: int<1, max>|null,
-     *     attemptCreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     attemptUpdatedAt?: \Aws\Api\DateTimeResult|null,
-     *     startedAt?: \Aws\Api\DateTimeResult|null,
-     *     endedAt?: \Aws\Api\DateTimeResult|null,
-     *     queuedDurationMilliseconds?: int|null
+     *     billedResourceUtilization?: ResourceUtilization|null
      * } $args
      */
     public function __construct(array $args)

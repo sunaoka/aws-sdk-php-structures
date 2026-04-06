@@ -7,13 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $accountId
  * @property 'TRUE'|'FALSE'|'UNKNOWN'|null $allowsUnencryptedObjectUploads
- * @property 'MONITORED'|'NOT_MONITORED'|null $automatedDiscoveryMonitoringStatus
  * @property string|null $bucketArn
  * @property \Aws\Api\DateTimeResult|null $bucketCreatedAt
  * @property string|null $bucketName
  * @property int|null $classifiableObjectCount
  * @property int|null $classifiableSizeInBytes
- * @property 'ACCESS_DENIED'|'BUCKET_COUNT_EXCEEDS_QUOTA'|null $errorCode
+ * @property 'ACCESS_DENIED'|null $errorCode
  * @property string|null $errorMessage
  * @property JobDetails|null $jobDetails
  * @property \Aws\Api\DateTimeResult|null $lastAutomatedDiscoveryTime
@@ -39,13 +38,12 @@ class BucketMetadata extends Shape
      * @param array{
      *     accountId?: string|null,
      *     allowsUnencryptedObjectUploads?: 'TRUE'|'FALSE'|'UNKNOWN'|null,
-     *     automatedDiscoveryMonitoringStatus?: 'MONITORED'|'NOT_MONITORED'|null,
      *     bucketArn?: string|null,
      *     bucketCreatedAt?: \Aws\Api\DateTimeResult|null,
      *     bucketName?: string|null,
      *     classifiableObjectCount?: int|null,
      *     classifiableSizeInBytes?: int|null,
-     *     errorCode?: 'ACCESS_DENIED'|'BUCKET_COUNT_EXCEEDS_QUOTA'|null,
+     *     errorCode?: 'ACCESS_DENIED'|null,
      *     errorMessage?: string|null,
      *     jobDetails?: JobDetails|null,
      *     lastAutomatedDiscoveryTime?: \Aws\Api\DateTimeResult|null,

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int|null $BlackFrameMsec
+ * @property int<0, 1000000>|null $BlackFrameMsec
  * @property string|null $InputLossImageColor
  * @property InputLocation|null $InputLossImageSlate
  * @property 'COLOR'|'SLATE'|null $InputLossImageType
- * @property int|null $RepeatFrameMsec
+ * @property int<0, 1000000>|null $RepeatFrameMsec
  */
 class InputLossBehavior extends Shape
 {
     /**
      * @param array{
-     *     BlackFrameMsec?: int|null,
+     *     BlackFrameMsec?: int<0, 1000000>|null,
      *     InputLossImageColor?: string|null,
      *     InputLossImageSlate?: InputLocation|null,
      *     InputLossImageType?: 'COLOR'|'SLATE'|null,
-     *     RepeatFrameMsec?: int|null
+     *     RepeatFrameMsec?: int<0, 1000000>|null
      * } $args
      */
     public function __construct(array $args = [])

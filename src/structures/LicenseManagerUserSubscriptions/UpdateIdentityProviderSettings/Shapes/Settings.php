@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\UpdateIdentityP
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Subnets
  * @property string $SecurityGroupId
+ * @property list<string> $Subnets
  */
 class Settings extends Shape
 {
     /**
      * @param array{
-     *     Subnets: list<string>,
-     *     SecurityGroupId: string
+     *     SecurityGroupId: string,
+     *     Subnets: list<string>
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListProductSubs
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ProductUserSummary>|null $ProductUserSummaries
  * @property string|null $NextToken
+ * @property list<Shapes\ProductUserSummary>|null $ProductUserSummaries
  */
 class ListProductSubscriptionsResponse extends Response
 {

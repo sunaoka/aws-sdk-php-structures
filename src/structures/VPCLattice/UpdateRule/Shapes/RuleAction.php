@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ForwardAction|null $forward
  * @property FixedResponseAction|null $fixedResponse
+ * @property ForwardAction|null $forward
  */
 class RuleAction extends Shape
 {
     /**
      * @param array{
-     *     forward?: ForwardAction|null,
-     *     fixedResponse?: FixedResponseAction|null
+     *     fixedResponse?: FixedResponseAction|null,
+     *     forward?: ForwardAction|null
      * } $args
      */
     public function __construct(array $args = [])

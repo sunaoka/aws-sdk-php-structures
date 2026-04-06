@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $startedBy
  * @property list<Shapes\Tag>|null $tags
  * @property string $taskDefinition
- * @property list<Shapes\TaskVolumeConfiguration>|null $volumeConfigurations
  */
 class StartTaskRequest extends Request
 {
@@ -34,8 +33,7 @@ class StartTaskRequest extends Request
      *     referenceId?: string|null,
      *     startedBy?: string|null,
      *     tags?: list<Shapes\Tag>|null,
-     *     taskDefinition: string,
-     *     volumeConfigurations?: list<Shapes\TaskVolumeConfiguration>|null
+     *     taskDefinition: string
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $accountId
- * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'SUSPENDING'|'SUSPENDED' $status
  * @property ResourceStatus $resourceStatus
+ * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'SUSPENDING'|'SUSPENDED' $status
  */
 class Account extends Shape
 {
     /**
      * @param array{
      *     accountId: string,
-     *     status: 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'SUSPENDING'|'SUSPENDED',
-     *     resourceStatus: ResourceStatus
+     *     resourceStatus: ResourceStatus,
+     *     status: 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'SUSPENDING'|'SUSPENDED'
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCases\UpdateCase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $domainId
  * @property string $caseId
+ * @property string $domainId
  * @property list<Shapes\FieldValue> $fields
- * @property Shapes\UserUnion|null $performedBy
  */
 class UpdateCaseRequest extends Request
 {
     /**
      * @param array{
-     *     domainId: string,
      *     caseId: string,
-     *     fields: list<Shapes\FieldValue>,
-     *     performedBy?: Shapes\UserUnion|null
+     *     domainId: string,
+     *     fields: list<Shapes\FieldValue>
      * } $args
      */
     public function __construct(array $args)

@@ -9,13 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PartnerProfileId
  * @property string|null $MessageSubject
  * @property 'ZLIB'|'DISABLED'|null $Compression
- * @property 'AES128_CBC'|'AES192_CBC'|'AES256_CBC'|'DES_EDE3_CBC'|'NONE'|null $EncryptionAlgorithm
+ * @property 'AES128_CBC'|'AES192_CBC'|'AES256_CBC'|'NONE'|null $EncryptionAlgorithm
  * @property 'SHA256'|'SHA384'|'SHA512'|'SHA1'|'NONE'|null $SigningAlgorithm
  * @property 'SHA256'|'SHA384'|'SHA512'|'SHA1'|'NONE'|'DEFAULT'|null $MdnSigningAlgorithm
- * @property 'SYNC'|'NONE'|'ASYNC'|null $MdnResponse
+ * @property 'SYNC'|'NONE'|null $MdnResponse
  * @property string|null $BasicAuthSecretId
- * @property 'ENABLED'|'DISABLED'|null $PreserveContentType
- * @property As2AsyncMdnConnectorConfig|null $AsyncMdnConfig
  */
 class As2ConnectorConfig extends Shape
 {
@@ -25,13 +23,11 @@ class As2ConnectorConfig extends Shape
      *     PartnerProfileId?: string|null,
      *     MessageSubject?: string|null,
      *     Compression?: 'ZLIB'|'DISABLED'|null,
-     *     EncryptionAlgorithm?: 'AES128_CBC'|'AES192_CBC'|'AES256_CBC'|'DES_EDE3_CBC'|'NONE'|null,
+     *     EncryptionAlgorithm?: 'AES128_CBC'|'AES192_CBC'|'AES256_CBC'|'NONE'|null,
      *     SigningAlgorithm?: 'SHA256'|'SHA384'|'SHA512'|'SHA1'|'NONE'|null,
      *     MdnSigningAlgorithm?: 'SHA256'|'SHA384'|'SHA512'|'SHA1'|'NONE'|'DEFAULT'|null,
-     *     MdnResponse?: 'SYNC'|'NONE'|'ASYNC'|null,
-     *     BasicAuthSecretId?: string|null,
-     *     PreserveContentType?: 'ENABLED'|'DISABLED'|null,
-     *     AsyncMdnConfig?: As2AsyncMdnConnectorConfig|null
+     *     MdnResponse?: 'SYNC'|'NONE'|null,
+     *     BasicAuthSecretId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

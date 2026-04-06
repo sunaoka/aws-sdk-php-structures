@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelGroupName
- * @property string|null $ETag
  * @property string|null $Description
  */
 class UpdateChannelGroupRequest extends Request
@@ -14,7 +13,6 @@ class UpdateChannelGroupRequest extends Request
     /**
      * @param array{
      *     ChannelGroupName: string,
-     *     ETag?: string|null,
      *     Description?: string|null
      * } $args
      */

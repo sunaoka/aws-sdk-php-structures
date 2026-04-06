@@ -20,8 +20,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Alias>|null $Aliases
  * @property WindowsAuditLogConfiguration|null $AuditLogConfiguration
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
- * @property string|null $PreferredFileServerIpv6
- * @property WindowsFsrmConfiguration|null $FsrmConfiguration
  */
 class WindowsFileSystemConfiguration extends Shape
 {
@@ -41,9 +39,7 @@ class WindowsFileSystemConfiguration extends Shape
      *     CopyTagsToBackups?: bool|null,
      *     Aliases?: list<Alias>|null,
      *     AuditLogConfiguration?: WindowsAuditLogConfiguration|null,
-     *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
-     *     PreferredFileServerIpv6?: string|null,
-     *     FsrmConfiguration?: WindowsFsrmConfiguration|null
+     *     DiskIopsConfiguration?: DiskIopsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

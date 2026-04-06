@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $arn
  * @property Shapes\WorkspaceStatus $status
  * @property array<string, string>|null $tags
- * @property string|null $kmsKeyArn
  */
 class CreateWorkspaceResponse extends Response
 {

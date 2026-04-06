@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ConfigurationSetName
  * @property 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED'|null $VerificationStatus
- * @property Shapes\VerificationInfo|null $VerificationInfo
  */
 class GetEmailIdentityResponse extends Response
 {

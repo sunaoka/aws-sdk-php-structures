@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property VCpuCountRangeRequest $VCpuCount
  * @property MemoryMiBRequest $MemoryMiB
- * @property list<'intel'|'amd'|'amazon-web-services'|'apple'>|null $CpuManufacturers
+ * @property list<'intel'|'amd'|'amazon-web-services'>|null $CpuManufacturers
  * @property MemoryGiBPerVCpuRequest|null $MemoryGiBPerVCpu
  * @property list<string>|null $ExcludedInstanceTypes
  * @property list<'current'|'previous'>|null $InstanceGenerations
@@ -21,16 +21,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'hdd'|'ssd'>|null $LocalStorageTypes
  * @property TotalLocalStorageGBRequest|null $TotalLocalStorageGB
  * @property BaselineEbsBandwidthMbpsRequest|null $BaselineEbsBandwidthMbps
- * @property list<'gpu'|'fpga'|'inference'|'media'>|null $AcceleratorTypes
+ * @property list<'gpu'|'fpga'|'inference'>|null $AcceleratorTypes
  * @property AcceleratorCountRequest|null $AcceleratorCount
- * @property list<'amazon-web-services'|'amd'|'nvidia'|'xilinx'|'habana'>|null $AcceleratorManufacturers
- * @property list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'|'l40s'|'l4'|'gaudi-hl-205'|'inferentia2'|'trainium'|'trainium2'|'u30'>|null $AcceleratorNames
+ * @property list<'nvidia'|'amd'|'amazon-web-services'|'xilinx'>|null $AcceleratorManufacturers
+ * @property list<'a100'|'v100'|'k80'|'t4'|'m60'|'radeon-pro-v520'|'vu9p'|'inferentia'|'k520'>|null $AcceleratorNames
  * @property AcceleratorTotalMemoryMiBRequest|null $AcceleratorTotalMemoryMiB
  * @property NetworkBandwidthGbpsRequest|null $NetworkBandwidthGbps
  * @property list<string>|null $AllowedInstanceTypes
- * @property int|null $MaxSpotPriceAsPercentageOfOptimalOnDemandPrice
- * @property BaselinePerformanceFactorsRequest|null $BaselinePerformanceFactors
- * @property bool|null $RequireEncryptionInTransit
  */
 class InstanceRequirementsRequest extends Shape
 {
@@ -38,7 +35,7 @@ class InstanceRequirementsRequest extends Shape
      * @param array{
      *     VCpuCount: VCpuCountRangeRequest,
      *     MemoryMiB: MemoryMiBRequest,
-     *     CpuManufacturers?: list<'intel'|'amd'|'amazon-web-services'|'apple'>|null,
+     *     CpuManufacturers?: list<'intel'|'amd'|'amazon-web-services'>|null,
      *     MemoryGiBPerVCpu?: MemoryGiBPerVCpuRequest|null,
      *     ExcludedInstanceTypes?: list<string>|null,
      *     InstanceGenerations?: list<'current'|'previous'>|null,
@@ -52,16 +49,13 @@ class InstanceRequirementsRequest extends Shape
      *     LocalStorageTypes?: list<'hdd'|'ssd'>|null,
      *     TotalLocalStorageGB?: TotalLocalStorageGBRequest|null,
      *     BaselineEbsBandwidthMbps?: BaselineEbsBandwidthMbpsRequest|null,
-     *     AcceleratorTypes?: list<'gpu'|'fpga'|'inference'|'media'>|null,
+     *     AcceleratorTypes?: list<'gpu'|'fpga'|'inference'>|null,
      *     AcceleratorCount?: AcceleratorCountRequest|null,
-     *     AcceleratorManufacturers?: list<'amazon-web-services'|'amd'|'nvidia'|'xilinx'|'habana'>|null,
-     *     AcceleratorNames?: list<'a100'|'inferentia'|'k520'|'k80'|'m60'|'radeon-pro-v520'|'t4'|'vu9p'|'v100'|'a10g'|'h100'|'t4g'|'l40s'|'l4'|'gaudi-hl-205'|'inferentia2'|'trainium'|'trainium2'|'u30'>|null,
+     *     AcceleratorManufacturers?: list<'nvidia'|'amd'|'amazon-web-services'|'xilinx'>|null,
+     *     AcceleratorNames?: list<'a100'|'v100'|'k80'|'t4'|'m60'|'radeon-pro-v520'|'vu9p'|'inferentia'|'k520'>|null,
      *     AcceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiBRequest|null,
      *     NetworkBandwidthGbps?: NetworkBandwidthGbpsRequest|null,
-     *     AllowedInstanceTypes?: list<string>|null,
-     *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int|null,
-     *     BaselinePerformanceFactors?: BaselinePerformanceFactorsRequest|null,
-     *     RequireEncryptionInTransit?: bool|null
+     *     AllowedInstanceTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

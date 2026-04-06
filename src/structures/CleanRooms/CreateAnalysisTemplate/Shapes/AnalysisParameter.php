@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property 'SMALLINT'|'INTEGER'|'BIGINT'|'DECIMAL'|'REAL'|'DOUBLE_PRECISION'|'BOOLEAN'|'CHAR'|'VARCHAR'|'DATE'|'TIMESTAMP'|'TIMESTAMPTZ'|'TIME'|'TIMETZ'|'VARBYTE'|'BINARY'|'BYTE'|'CHARACTER'|'DOUBLE'|'FLOAT'|'INT'|'LONG'|'NUMERIC'|'SHORT'|'STRING'|'TIMESTAMP_LTZ'|'TIMESTAMP_NTZ'|'TINYINT' $type
+ * @property 'SMALLINT'|'INTEGER'|'BIGINT'|'DECIMAL'|'REAL'|'DOUBLE_PRECISION'|'BOOLEAN'|'CHAR'|'VARCHAR'|'DATE'|'TIMESTAMP'|'TIMESTAMPTZ'|'TIME'|'TIMETZ'|'VARBYTE' $type
  * @property string|null $defaultValue
  */
 class AnalysisParameter extends Shape
@@ -14,7 +14,7 @@ class AnalysisParameter extends Shape
     /**
      * @param array{
      *     name: string,
-     *     type: 'SMALLINT'|'INTEGER'|'BIGINT'|'DECIMAL'|'REAL'|'DOUBLE_PRECISION'|'BOOLEAN'|'CHAR'|'VARCHAR'|'DATE'|'TIMESTAMP'|'TIMESTAMPTZ'|'TIME'|'TIMETZ'|'VARBYTE'|'BINARY'|'BYTE'|'CHARACTER'|'DOUBLE'|'FLOAT'|'INT'|'LONG'|'NUMERIC'|'SHORT'|'STRING'|'TIMESTAMP_LTZ'|'TIMESTAMP_NTZ'|'TINYINT',
+     *     type: 'SMALLINT'|'INTEGER'|'BIGINT'|'DECIMAL'|'REAL'|'DOUBLE_PRECISION'|'BOOLEAN'|'CHAR'|'VARCHAR'|'DATE'|'TIMESTAMP'|'TIMESTAMPTZ'|'TIME'|'TIMETZ'|'VARBYTE',
      *     defaultValue?: string|null
      * } $args
      */

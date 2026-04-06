@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\BatchGetRumMetricDefinitions\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricDefinitionId
- * @property string $Name
- * @property string|null $ValueKey
- * @property string|null $UnitLabel
  * @property array<string, string>|null $DimensionKeys
  * @property string|null $EventPattern
+ * @property string $MetricDefinitionId
+ * @property string $Name
  * @property string|null $Namespace
+ * @property string|null $UnitLabel
+ * @property string|null $ValueKey
  */
 class MetricDefinition extends Shape
 {
     /**
      * @param array{
-     *     MetricDefinitionId: string,
-     *     Name: string,
-     *     ValueKey?: string|null,
-     *     UnitLabel?: string|null,
      *     DimensionKeys?: array<string, string>|null,
      *     EventPattern?: string|null,
-     *     Namespace?: string|null
+     *     MetricDefinitionId: string,
+     *     Name: string,
+     *     Namespace?: string|null,
+     *     UnitLabel?: string|null,
+     *     ValueKey?: string|null
      * } $args
      */
     public function __construct(array $args)

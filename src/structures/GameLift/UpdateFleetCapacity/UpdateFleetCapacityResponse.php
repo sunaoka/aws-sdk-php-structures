@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $FleetId
  * @property string|null $FleetArn
  * @property string|null $Location
- * @property Shapes\ManagedCapacityConfiguration|null $ManagedCapacityConfiguration
  */
 class UpdateFleetCapacityResponse extends Response
 {

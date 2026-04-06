@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\GetTrustAnchor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AWS_ACM_PCA'|'CERTIFICATE_BUNDLE'|'SELF_SIGNED_REPOSITORY'|null $sourceType
  * @property SourceData|null $sourceData
+ * @property 'AWS_ACM_PCA'|'CERTIFICATE_BUNDLE'|'SELF_SIGNED_REPOSITORY'|null $sourceType
  */
 class Source extends Shape
 {
     /**
      * @param array{
-     *     sourceType?: 'AWS_ACM_PCA'|'CERTIFICATE_BUNDLE'|'SELF_SIGNED_REPOSITORY'|null,
-     *     sourceData?: SourceData|null
+     *     sourceData?: SourceData|null,
+     *     sourceType?: 'AWS_ACM_PCA'|'CERTIFICATE_BUNDLE'|'SELF_SIGNED_REPOSITORY'|null
      * } $args
      */
     public function __construct(array $args = [])

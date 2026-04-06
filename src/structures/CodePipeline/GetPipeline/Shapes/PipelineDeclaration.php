@@ -11,10 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, ArtifactStore>|null $artifactStores
  * @property list<StageDeclaration> $stages
  * @property int<1, max>|null $version
- * @property 'QUEUED'|'SUPERSEDED'|'PARALLEL'|null $executionMode
- * @property 'V1'|'V2'|null $pipelineType
- * @property list<PipelineVariableDeclaration>|null $variables
- * @property list<PipelineTriggerDeclaration>|null $triggers
  */
 class PipelineDeclaration extends Shape
 {
@@ -25,11 +21,7 @@ class PipelineDeclaration extends Shape
      *     artifactStore?: ArtifactStore|null,
      *     artifactStores?: array<string, ArtifactStore>|null,
      *     stages: list<StageDeclaration>,
-     *     version?: int<1, max>|null,
-     *     executionMode?: 'QUEUED'|'SUPERSEDED'|'PARALLEL'|null,
-     *     pipelineType?: 'V1'|'V2'|null,
-     *     variables?: list<PipelineVariableDeclaration>|null,
-     *     triggers?: list<PipelineTriggerDeclaration>|null
+     *     version?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

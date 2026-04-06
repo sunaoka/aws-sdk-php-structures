@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListContacts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $value
  * @property 'DEGREE_ANGLE'|'RADIAN' $unit
+ * @property double $value
  */
 class Elevation extends Shape
 {
     /**
      * @param array{
-     *     value: double,
-     *     unit: 'DEGREE_ANGLE'|'RADIAN'
+     *     unit: 'DEGREE_ANGLE'|'RADIAN',
+     *     value: double
      * } $args
      */
     public function __construct(array $args)

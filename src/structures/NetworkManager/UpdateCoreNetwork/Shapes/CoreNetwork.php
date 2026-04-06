@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING'|null $State
  * @property list<CoreNetworkSegment>|null $Segments
- * @property list<CoreNetworkNetworkFunctionGroup>|null $NetworkFunctionGroups
  * @property list<CoreNetworkEdge>|null $Edges
  * @property list<Tag>|null $Tags
  */
@@ -27,7 +26,6 @@ class CoreNetwork extends Shape
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     State?: 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING'|null,
      *     Segments?: list<CoreNetworkSegment>|null,
-     *     NetworkFunctionGroups?: list<CoreNetworkNetworkFunctionGroup>|null,
      *     Edges?: list<CoreNetworkEdge>|null,
      *     Tags?: list<Tag>|null
      * } $args

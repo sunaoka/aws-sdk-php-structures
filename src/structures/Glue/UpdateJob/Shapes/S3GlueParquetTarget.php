@@ -9,10 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Inputs
  * @property list<list<string>>|null $PartitionKeys
  * @property string $Path
- * @property 'snappy'|'lzo'|'gzip'|'brotli'|'lz4'|'uncompressed'|'none'|null $Compression
- * @property string|null $NumberTargetPartitions
+ * @property 'snappy'|'lzo'|'gzip'|'uncompressed'|'none'|null $Compression
  * @property DirectSchemaChangePolicy|null $SchemaChangePolicy
- * @property AutoDataQuality|null $AutoDataQuality
  */
 class S3GlueParquetTarget extends Shape
 {
@@ -22,10 +20,8 @@ class S3GlueParquetTarget extends Shape
      *     Inputs: list<string>,
      *     PartitionKeys?: list<list<string>>|null,
      *     Path: string,
-     *     Compression?: 'snappy'|'lzo'|'gzip'|'brotli'|'lz4'|'uncompressed'|'none'|null,
-     *     NumberTargetPartitions?: string|null,
-     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null,
-     *     AutoDataQuality?: AutoDataQuality|null
+     *     Compression?: 'snappy'|'lzo'|'gzip'|'uncompressed'|'none'|null,
+     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null
      * } $args
      */
     public function __construct(array $args)

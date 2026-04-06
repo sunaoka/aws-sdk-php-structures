@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $description
  * @property string $knowledgeBaseArn
  * @property string $knowledgeBaseId
- * @property 'EXTERNAL'|'CUSTOM'|'QUICK_RESPONSES' $knowledgeBaseType
+ * @property 'EXTERNAL'|'CUSTOM' $knowledgeBaseType
  * @property string $name
  * @property RenderingConfiguration|null $renderingConfiguration
  * @property ServerSideEncryptionConfiguration|null $serverSideEncryptionConfiguration
@@ -23,7 +23,7 @@ class KnowledgeBaseSummary extends Shape
      *     description?: string|null,
      *     knowledgeBaseArn: string,
      *     knowledgeBaseId: string,
-     *     knowledgeBaseType: 'EXTERNAL'|'CUSTOM'|'QUICK_RESPONSES',
+     *     knowledgeBaseType: 'EXTERNAL'|'CUSTOM',
      *     name: string,
      *     renderingConfiguration?: RenderingConfiguration|null,
      *     serverSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DisassociateRouteTable;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $DryRun
  * @property string $AssociationId
+ * @property bool|null $DryRun
  */
 class DisassociateRouteTableRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool|null,
-     *     AssociationId: string
+     *     AssociationId: string,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

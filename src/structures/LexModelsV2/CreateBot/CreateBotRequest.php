@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $testBotAliasTags
  * @property 'Bot'|'BotNetwork'|null $botType
  * @property list<Shapes\BotMember>|null $botMembers
- * @property Shapes\ErrorLogSettings|null $errorLogSettings
  */
 class CreateBotRequest extends Request
 {
@@ -28,8 +27,7 @@ class CreateBotRequest extends Request
      *     botTags?: array<string, string>|null,
      *     testBotAliasTags?: array<string, string>|null,
      *     botType?: 'Bot'|'BotNetwork'|null,
-     *     botMembers?: list<Shapes\BotMember>|null,
-     *     errorLogSettings?: Shapes\ErrorLogSettings|null
+     *     botMembers?: list<Shapes\BotMember>|null
      * } $args
      */
     public function __construct(array $args)

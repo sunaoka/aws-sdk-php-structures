@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $virtualInterfaceName
  * @property int $vlan
- * @property int|null $asn
- * @property int|null $asnLong
+ * @property int $asn
  * @property int|null $mtu
  * @property string|null $authKey
  * @property string|null $amazonAddress
@@ -25,8 +24,7 @@ class NewPrivateVirtualInterface extends Shape
      * @param array{
      *     virtualInterfaceName: string,
      *     vlan: int,
-     *     asn?: int|null,
-     *     asnLong?: int|null,
+     *     asn: int,
      *     mtu?: int|null,
      *     authKey?: string|null,
      *     amazonAddress?: string|null,

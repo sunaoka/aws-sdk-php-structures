@@ -8,11 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property 'DOCKER'|null $containerType
  * @property string|null $name
- * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property 'Windows'|'Linux'|null $platform
  * @property string|null $owner
  * @property string|null $parentImage
  * @property string|null $dateCreated
- * @property string|null $instanceImage
  * @property array<string, string>|null $tags
  */
 class ContainerRecipeSummary extends Shape
@@ -22,11 +21,10 @@ class ContainerRecipeSummary extends Shape
      *     arn?: string|null,
      *     containerType?: 'DOCKER'|null,
      *     name?: string|null,
-     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     platform?: 'Windows'|'Linux'|null,
      *     owner?: string|null,
      *     parentImage?: string|null,
      *     dateCreated?: string|null,
-     *     instanceImage?: string|null,
      *     tags?: array<string, string>|null
      * } $args
      */

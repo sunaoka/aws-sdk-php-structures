@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ClusterConfigStatus|null $ClusterConfig
  * @property EBSOptionsStatus|null $EBSOptions
  * @property AccessPoliciesStatus|null $AccessPolicies
- * @property IPAddressTypeStatus|null $IPAddressType
  * @property SnapshotOptionsStatus|null $SnapshotOptions
  * @property VPCDerivedInfoStatus|null $VPCOptions
  * @property CognitoOptionsStatus|null $CognitoOptions
@@ -19,14 +18,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LogPublishingOptionsStatus|null $LogPublishingOptions
  * @property DomainEndpointOptionsStatus|null $DomainEndpointOptions
  * @property AdvancedSecurityOptionsStatus|null $AdvancedSecurityOptions
- * @property IdentityCenterOptionsStatus|null $IdentityCenterOptions
  * @property AutoTuneOptionsStatus|null $AutoTuneOptions
  * @property ChangeProgressDetails|null $ChangeProgressDetails
  * @property OffPeakWindowOptionsStatus|null $OffPeakWindowOptions
  * @property SoftwareUpdateOptionsStatus|null $SoftwareUpdateOptions
- * @property list<ModifyingProperties>|null $ModifyingProperties
- * @property AIMLOptionsStatus|null $AIMLOptions
- * @property DeploymentStrategyOptionsStatus|null $DeploymentStrategyOptions
  */
 class DomainConfig extends Shape
 {
@@ -36,7 +31,6 @@ class DomainConfig extends Shape
      *     ClusterConfig?: ClusterConfigStatus|null,
      *     EBSOptions?: EBSOptionsStatus|null,
      *     AccessPolicies?: AccessPoliciesStatus|null,
-     *     IPAddressType?: IPAddressTypeStatus|null,
      *     SnapshotOptions?: SnapshotOptionsStatus|null,
      *     VPCOptions?: VPCDerivedInfoStatus|null,
      *     CognitoOptions?: CognitoOptionsStatus|null,
@@ -46,14 +40,10 @@ class DomainConfig extends Shape
      *     LogPublishingOptions?: LogPublishingOptionsStatus|null,
      *     DomainEndpointOptions?: DomainEndpointOptionsStatus|null,
      *     AdvancedSecurityOptions?: AdvancedSecurityOptionsStatus|null,
-     *     IdentityCenterOptions?: IdentityCenterOptionsStatus|null,
      *     AutoTuneOptions?: AutoTuneOptionsStatus|null,
      *     ChangeProgressDetails?: ChangeProgressDetails|null,
      *     OffPeakWindowOptions?: OffPeakWindowOptionsStatus|null,
-     *     SoftwareUpdateOptions?: SoftwareUpdateOptionsStatus|null,
-     *     ModifyingProperties?: list<ModifyingProperties>|null,
-     *     AIMLOptions?: AIMLOptionsStatus|null,
-     *     DeploymentStrategyOptions?: DeploymentStrategyOptionsStatus|null
+     *     SoftwareUpdateOptions?: SoftwareUpdateOptionsStatus|null
      * } $args
      */
     public function __construct(array $args = [])

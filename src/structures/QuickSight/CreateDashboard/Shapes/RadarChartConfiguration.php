@@ -20,7 +20,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ChartAxisLabelOptions|null $ColorLabelOptions
  * @property LegendOptions|null $Legend
  * @property 'AUTO'|'INDEPENDENT'|'SHARED'|null $AxesRangeScale
- * @property VisualInteractionOptions|null $Interactions
  */
 class RadarChartConfiguration extends Shape
 {
@@ -40,8 +39,7 @@ class RadarChartConfiguration extends Shape
      *     ColorAxis?: AxisDisplayOptions|null,
      *     ColorLabelOptions?: ChartAxisLabelOptions|null,
      *     Legend?: LegendOptions|null,
-     *     AxesRangeScale?: 'AUTO'|'INDEPENDENT'|'SHARED'|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     AxesRangeScale?: 'AUTO'|'INDEPENDENT'|'SHARED'|null
      * } $args
      */
     public function __construct(array $args = [])

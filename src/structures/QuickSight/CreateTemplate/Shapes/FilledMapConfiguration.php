@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TooltipOptions|null $Tooltip
  * @property GeospatialWindowOptions|null $WindowOptions
  * @property GeospatialMapStyleOptions|null $MapStyleOptions
- * @property VisualInteractionOptions|null $Interactions
  */
 class FilledMapConfiguration extends Shape
 {
@@ -22,8 +21,7 @@ class FilledMapConfiguration extends Shape
      *     Legend?: LegendOptions|null,
      *     Tooltip?: TooltipOptions|null,
      *     WindowOptions?: GeospatialWindowOptions|null,
-     *     MapStyleOptions?: GeospatialMapStyleOptions|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     MapStyleOptions?: GeospatialMapStyleOptions|null
      * } $args
      */
     public function __construct(array $args = [])

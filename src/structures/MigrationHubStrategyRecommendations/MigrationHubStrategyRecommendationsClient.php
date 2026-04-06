@@ -14,7 +14,6 @@ class MigrationHubStrategyRecommendationsClient extends \Aws\MigrationHubStrateg
     use GetRecommendationReportDetails\GetRecommendationReportDetailsTrait;
     use GetServerDetails\GetServerDetailsTrait;
     use GetServerStrategies\GetServerStrategiesTrait;
-    use ListAnalyzableServers\ListAnalyzableServersTrait;
     use ListApplicationComponents\ListApplicationComponentsTrait;
     use ListCollectors\ListCollectorsTrait;
     use ListImportFileTask\ListImportFileTaskTrait;

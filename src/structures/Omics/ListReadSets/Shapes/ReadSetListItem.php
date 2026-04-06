@@ -14,12 +14,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $name
  * @property string|null $description
  * @property string|null $referenceArn
- * @property 'FASTQ'|'BAM'|'CRAM'|'UBAM' $fileType
+ * @property 'FASTQ'|'BAM'|'CRAM' $fileType
  * @property SequenceInformation|null $sequenceInformation
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string|null $statusMessage
  * @property 'IMPORT'|'UPLOAD'|null $creationType
- * @property ETag|null $etag
  */
 class ReadSetListItem extends Shape
 {
@@ -34,12 +33,11 @@ class ReadSetListItem extends Shape
      *     name?: string|null,
      *     description?: string|null,
      *     referenceArn?: string|null,
-     *     fileType: 'FASTQ'|'BAM'|'CRAM'|'UBAM',
+     *     fileType: 'FASTQ'|'BAM'|'CRAM',
      *     sequenceInformation?: SequenceInformation|null,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     statusMessage?: string|null,
-     *     creationType?: 'IMPORT'|'UPLOAD'|null,
-     *     etag?: ETag|null
+     *     creationType?: 'IMPORT'|'UPLOAD'|null
      * } $args
      */
     public function __construct(array $args)

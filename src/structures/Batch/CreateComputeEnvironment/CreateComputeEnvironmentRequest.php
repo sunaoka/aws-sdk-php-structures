@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $serviceRole
  * @property array<string, string>|null $tags
  * @property Shapes\EksConfiguration|null $eksConfiguration
- * @property string|null $context
  */
 class CreateComputeEnvironmentRequest extends Request
 {
@@ -26,8 +25,7 @@ class CreateComputeEnvironmentRequest extends Request
      *     computeResources?: Shapes\ComputeResource|null,
      *     serviceRole?: string|null,
      *     tags?: array<string, string>|null,
-     *     eksConfiguration?: Shapes\EksConfiguration|null,
-     *     context?: string|null
+     *     eksConfiguration?: Shapes\EksConfiguration|null
      * } $args
      */
     public function __construct(array $args)

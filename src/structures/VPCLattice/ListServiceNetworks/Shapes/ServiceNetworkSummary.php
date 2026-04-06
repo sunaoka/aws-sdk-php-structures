@@ -5,27 +5,25 @@ namespace Sunaoka\Aws\Structures\VPCLattice\ListServiceNetworks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $id
- * @property string|null $name
  * @property string|null $arn
  * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $id
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
- * @property int|null $numberOfAssociatedVPCs
+ * @property string|null $name
  * @property int|null $numberOfAssociatedServices
- * @property int|null $numberOfAssociatedResourceConfigurations
+ * @property int|null $numberOfAssociatedVPCs
  */
 class ServiceNetworkSummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string|null,
-     *     name?: string|null,
      *     arn?: string|null,
      *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     id?: string|null,
      *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
-     *     numberOfAssociatedVPCs?: int|null,
+     *     name?: string|null,
      *     numberOfAssociatedServices?: int|null,
-     *     numberOfAssociatedResourceConfigurations?: int|null
+     *     numberOfAssociatedVPCs?: int|null
      * } $args
      */
     public function __construct(array $args = [])

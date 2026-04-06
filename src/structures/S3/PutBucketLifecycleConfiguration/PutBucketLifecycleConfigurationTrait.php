@@ -6,11 +6,10 @@ trait PutBucketLifecycleConfigurationTrait
 {
     /**
      * @param PutBucketLifecycleConfigurationRequest $args
-     * @return PutBucketLifecycleConfigurationResponse
+     * @return void
      */
     public function putBucketLifecycleConfiguration(PutBucketLifecycleConfigurationRequest $args)
     {
-        $result = parent::putBucketLifecycleConfiguration($args->toArray());
-        return new PutBucketLifecycleConfigurationResponse($result->toArray());
+        parent::putBucketLifecycleConfiguration($args->toArray());
     }
 }

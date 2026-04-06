@@ -47,8 +47,6 @@ class IoTWirelessClient extends \Aws\IoTWireless\IoTWirelessClient
     use GetEventConfigurationByResourceTypes\GetEventConfigurationByResourceTypesTrait;
     use GetFuotaTask\GetFuotaTaskTrait;
     use GetLogLevelsByResourceTypes\GetLogLevelsByResourceTypesTrait;
-    use GetMetricConfiguration\GetMetricConfigurationTrait;
-    use GetMetrics\GetMetricsTrait;
     use GetMulticastGroup\GetMulticastGroupTrait;
     use GetMulticastGroupSession\GetMulticastGroupSessionTrait;
     use GetNetworkAnalyzerConfiguration\GetNetworkAnalyzerConfigurationTrait;
@@ -106,7 +104,6 @@ class IoTWirelessClient extends \Aws\IoTWireless\IoTWirelessClient
     use UpdateEventConfigurationByResourceTypes\UpdateEventConfigurationByResourceTypesTrait;
     use UpdateFuotaTask\UpdateFuotaTaskTrait;
     use UpdateLogLevelsByResourceTypes\UpdateLogLevelsByResourceTypesTrait;
-    use UpdateMetricConfiguration\UpdateMetricConfigurationTrait;
     use UpdateMulticastGroup\UpdateMulticastGroupTrait;
     use UpdateNetworkAnalyzerConfiguration\UpdateNetworkAnalyzerConfigurationTrait;
     use UpdatePartnerAccount\UpdatePartnerAccountTrait;

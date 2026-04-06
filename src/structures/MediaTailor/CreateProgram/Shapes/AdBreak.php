@@ -5,26 +5,26 @@ namespace Sunaoka\Aws\Structures\MediaTailor\CreateProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property list<KeyValuePair>|null $AdBreakMetadata
  * @property 'SPLICE_INSERT'|'TIME_SIGNAL'|null $MessageType
- * @property int $OffsetMillis
+ * @property int|null $OffsetMillis
  * @property SlateSource|null $Slate
  * @property SpliceInsertMessage|null $SpliceInsertMessage
  * @property TimeSignalMessage|null $TimeSignalMessage
- * @property list<KeyValuePair>|null $AdBreakMetadata
  */
 class AdBreak extends Shape
 {
     /**
      * @param array{
+     *     AdBreakMetadata?: list<KeyValuePair>|null,
      *     MessageType?: 'SPLICE_INSERT'|'TIME_SIGNAL'|null,
-     *     OffsetMillis: int,
+     *     OffsetMillis?: int|null,
      *     Slate?: SlateSource|null,
      *     SpliceInsertMessage?: SpliceInsertMessage|null,
-     *     TimeSignalMessage?: TimeSignalMessage|null,
-     *     AdBreakMetadata?: list<KeyValuePair>|null
+     *     TimeSignalMessage?: TimeSignalMessage|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

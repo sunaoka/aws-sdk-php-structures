@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'Bot'|'BotNetwork'|null $botType
  * @property list<Shapes\BotMember>|null $botMembers
  * @property list<string>|null $failureReasons
- * @property Shapes\ErrorLogSettings|null $errorLogSettings
  */
 class DescribeBotResponse extends Response
 {

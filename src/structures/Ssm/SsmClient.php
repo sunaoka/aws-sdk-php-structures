@@ -22,7 +22,6 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use DeleteDocument\DeleteDocumentTrait;
     use DeleteInventory\DeleteInventoryTrait;
     use DeleteMaintenanceWindow\DeleteMaintenanceWindowTrait;
-    use DeleteOpsItem\DeleteOpsItemTrait;
     use DeleteOpsMetadata\DeleteOpsMetadataTrait;
     use DeleteParameter\DeleteParameterTrait;
     use DeleteParameters\DeleteParametersTrait;
@@ -49,7 +48,6 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use DescribeInstancePatchStates\DescribeInstancePatchStatesTrait;
     use DescribeInstancePatchStatesForPatchGroup\DescribeInstancePatchStatesForPatchGroupTrait;
     use DescribeInstancePatches\DescribeInstancePatchesTrait;
-    use DescribeInstanceProperties\DescribeInstancePropertiesTrait;
     use DescribeInventoryDeletions\DescribeInventoryDeletionsTrait;
     use DescribeMaintenanceWindowExecutionTaskInvocations\DescribeMaintenanceWindowExecutionTaskInvocationsTrait;
     use DescribeMaintenanceWindowExecutionTasks\DescribeMaintenanceWindowExecutionTasksTrait;
@@ -67,7 +65,6 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use DescribePatchProperties\DescribePatchPropertiesTrait;
     use DescribeSessions\DescribeSessionsTrait;
     use DisassociateOpsItemRelatedItem\DisassociateOpsItemRelatedItemTrait;
-    use GetAccessToken\GetAccessTokenTrait;
     use GetAutomationExecution\GetAutomationExecutionTrait;
     use GetCalendarState\GetCalendarStateTrait;
     use GetCommandInvocation\GetCommandInvocationTrait;
@@ -75,7 +72,6 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use GetDefaultPatchBaseline\GetDefaultPatchBaselineTrait;
     use GetDeployablePatchSnapshotForInstance\GetDeployablePatchSnapshotForInstanceTrait;
     use GetDocument\GetDocumentTrait;
-    use GetExecutionPreview\GetExecutionPreviewTrait;
     use GetInventory\GetInventoryTrait;
     use GetInventorySchema\GetInventorySchemaTrait;
     use GetMaintenanceWindow\GetMaintenanceWindowTrait;
@@ -105,8 +101,6 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use ListDocumentVersions\ListDocumentVersionsTrait;
     use ListDocuments\ListDocumentsTrait;
     use ListInventoryEntries\ListInventoryEntriesTrait;
-    use ListNodes\ListNodesTrait;
-    use ListNodesSummary\ListNodesSummaryTrait;
     use ListOpsItemEvents\ListOpsItemEventsTrait;
     use ListOpsItemRelatedItems\ListOpsItemRelatedItemsTrait;
     use ListOpsMetadata\ListOpsMetadataTrait;
@@ -127,11 +121,9 @@ class SsmClient extends \Aws\Ssm\SsmClient
     use ResumeSession\ResumeSessionTrait;
     use SendAutomationSignal\SendAutomationSignalTrait;
     use SendCommand\SendCommandTrait;
-    use StartAccessRequest\StartAccessRequestTrait;
     use StartAssociationsOnce\StartAssociationsOnceTrait;
     use StartAutomationExecution\StartAutomationExecutionTrait;
     use StartChangeRequestExecution\StartChangeRequestExecutionTrait;
-    use StartExecutionPreview\StartExecutionPreviewTrait;
     use StartSession\StartSessionTrait;
     use StopAutomationExecution\StopAutomationExecutionTrait;
     use TerminateSession\TerminateSessionTrait;

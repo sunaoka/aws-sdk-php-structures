@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MaintenanceStartTime|null $MaintenanceStartTime
  * @property \Aws\Api\DateTimeResult|null $NextUpdateAvailabilityTime
  * @property string|null $VpcEndpoint
- * @property \Aws\Api\DateTimeResult|null $DeprecationDate
- * @property string|null $SoftwareVersion
  */
 class GatewayDetails extends Shape
 {
@@ -27,9 +25,7 @@ class GatewayDetails extends Shape
      *     LastSeenTime?: \Aws\Api\DateTimeResult|null,
      *     MaintenanceStartTime?: MaintenanceStartTime|null,
      *     NextUpdateAvailabilityTime?: \Aws\Api\DateTimeResult|null,
-     *     VpcEndpoint?: string|null,
-     *     DeprecationDate?: \Aws\Api\DateTimeResult|null,
-     *     SoftwareVersion?: string|null
+     *     VpcEndpoint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

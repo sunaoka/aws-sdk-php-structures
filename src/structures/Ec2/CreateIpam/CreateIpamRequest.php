@@ -10,9 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AddIpamOperatingRegion>|null $OperatingRegions
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property string|null $ClientToken
- * @property 'free'|'advanced'|null $Tier
- * @property bool|null $EnablePrivateGua
- * @property 'ipam-owner'|'resource-owner'|null $MeteredAccount
  */
 class CreateIpamRequest extends Request
 {
@@ -22,10 +19,7 @@ class CreateIpamRequest extends Request
      *     Description?: string|null,
      *     OperatingRegions?: list<Shapes\AddIpamOperatingRegion>|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     ClientToken?: string|null,
-     *     Tier?: 'free'|'advanced'|null,
-     *     EnablePrivateGua?: bool|null,
-     *     MeteredAccount?: 'ipam-owner'|'resource-owner'|null
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

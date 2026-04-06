@@ -35,9 +35,7 @@ class AthenaClient extends \Aws\Athena\AthenaClient
     use GetQueryExecution\GetQueryExecutionTrait;
     use GetQueryResults\GetQueryResultsTrait;
     use GetQueryRuntimeStatistics\GetQueryRuntimeStatisticsTrait;
-    use GetResourceDashboard\GetResourceDashboardTrait;
     use GetSession\GetSessionTrait;
-    use GetSessionEndpoint\GetSessionEndpointTrait;
     use GetSessionStatus\GetSessionStatusTrait;
     use GetTableMetadata\GetTableMetadataTrait;
     use GetWorkGroup\GetWorkGroupTrait;

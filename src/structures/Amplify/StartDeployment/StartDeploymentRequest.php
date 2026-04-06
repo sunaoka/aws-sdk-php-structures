@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $branchName
  * @property string|null $jobId
  * @property string|null $sourceUrl
- * @property 'ZIP'|'BUCKET_PREFIX'|null $sourceUrlType
  */
 class StartDeploymentRequest extends Request
 {
@@ -18,8 +17,7 @@ class StartDeploymentRequest extends Request
      *     appId: string,
      *     branchName: string,
      *     jobId?: string|null,
-     *     sourceUrl?: string|null,
-     *     sourceUrlType?: 'ZIP'|'BUCKET_PREFIX'|null
+     *     sourceUrl?: string|null
      * } $args
      */
     public function __construct(array $args)

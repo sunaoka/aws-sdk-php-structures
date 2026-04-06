@@ -18,7 +18,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $TableType
  * @property array<string, string>|null $Parameters
  * @property TableIdentifier|null $TargetTable
- * @property ViewDefinitionInput|null $ViewDefinition
  */
 class TableInput extends Shape
 {
@@ -36,8 +35,7 @@ class TableInput extends Shape
      *     ViewExpandedText?: string|null,
      *     TableType?: string|null,
      *     Parameters?: array<string, string>|null,
-     *     TargetTable?: TableIdentifier|null,
-     *     ViewDefinition?: ViewDefinitionInput|null
+     *     TargetTable?: TableIdentifier|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $registryId
  * @property string|null $repositoryName
- * @property 'MUTABLE'|'IMMUTABLE'|'IMMUTABLE_WITH_EXCLUSION'|'MUTABLE_WITH_EXCLUSION'|null $imageTagMutability
- * @property list<Shapes\ImageTagMutabilityExclusionFilter>|null $imageTagMutabilityExclusionFilters
+ * @property 'MUTABLE'|'IMMUTABLE'|null $imageTagMutability
  */
 class PutImageTagMutabilityResponse extends Response
 {

@@ -19,12 +19,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $EngineVersion
  * @property bool|null $AllowMajorVersionUpgrade
  * @property bool|null $DeletionProtection
- * @property string|null $StorageType
- * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
- * @property bool|null $ManageMasterUserPassword
- * @property string|null $MasterUserSecretKmsKeyId
- * @property bool|null $RotateMasterUserPassword
- * @property string|null $NetworkType
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -43,13 +37,7 @@ class ModifyDBClusterRequest extends Request
      *     CloudwatchLogsExportConfiguration?: Shapes\CloudwatchLogsExportConfiguration|null,
      *     EngineVersion?: string|null,
      *     AllowMajorVersionUpgrade?: bool|null,
-     *     DeletionProtection?: bool|null,
-     *     StorageType?: string|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     ManageMasterUserPassword?: bool|null,
-     *     MasterUserSecretKmsKeyId?: string|null,
-     *     RotateMasterUserPassword?: bool|null,
-     *     NetworkType?: string|null
+     *     DeletionProtection?: bool|null
      * } $args
      */
     public function __construct(array $args)

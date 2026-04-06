@@ -8,8 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Id
  * @property string|null $Arn
  * @property string|null $Username
- * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
- * @property string|null $LastModifiedRegion
  */
 class UserSummary extends Shape
 {
@@ -17,9 +15,7 @@ class UserSummary extends Shape
      * @param array{
      *     Id?: string|null,
      *     Arn?: string|null,
-     *     Username?: string|null,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     LastModifiedRegion?: string|null
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

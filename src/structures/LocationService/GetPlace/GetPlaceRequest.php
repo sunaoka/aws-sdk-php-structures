@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $IndexName
- * @property string $PlaceId
- * @property string|null $Language
  * @property string|null $Key
+ * @property string|null $Language
+ * @property string $PlaceId
  */
 class GetPlaceRequest extends Request
 {
     /**
      * @param array{
      *     IndexName: string,
-     *     PlaceId: string,
+     *     Key?: string|null,
      *     Language?: string|null,
-     *     Key?: string|null
+     *     PlaceId: string
      * } $args
      */
     public function __construct(array $args)

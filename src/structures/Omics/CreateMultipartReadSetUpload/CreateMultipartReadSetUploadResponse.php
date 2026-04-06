@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $sequenceStoreId
  * @property string $uploadId
- * @property 'FASTQ'|'BAM'|'CRAM'|'UBAM' $sourceFileType
+ * @property 'FASTQ'|'BAM'|'CRAM' $sourceFileType
  * @property string $subjectId
  * @property string $sampleId
  * @property string|null $generatedFrom

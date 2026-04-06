@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EntityResolution\CreateMatchingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ruleName
  * @property list<string> $matchingKeys
+ * @property string $ruleName
  */
 class Rule extends Shape
 {
     /**
      * @param array{
-     *     ruleName: string,
-     *     matchingKeys: list<string>
+     *     matchingKeys: list<string>,
+     *     ruleName: string
      * } $args
      */
     public function __construct(array $args)

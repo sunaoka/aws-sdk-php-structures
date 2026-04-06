@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\UpdateMediaInsightsPipel
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AmazonTranscribeCallAnalyticsProcessor'|'VoiceAnalyticsProcessor'|'AmazonTranscribeProcessor'|'KinesisDataStreamSink'|'LambdaFunctionSink'|'SqsQueueSink'|'SnsTopicSink'|'S3RecordingSink'|'VoiceEnhancementSink' $Type
+ * @property 'AmazonTranscribeCallAnalyticsProcessor'|'VoiceAnalyticsProcessor'|'AmazonTranscribeProcessor'|'KinesisDataStreamSink'|'LambdaFunctionSink'|'SqsQueueSink'|'SnsTopicSink'|'S3RecordingSink' $Type
  * @property AmazonTranscribeCallAnalyticsProcessorConfiguration|null $AmazonTranscribeCallAnalyticsProcessorConfiguration
  * @property AmazonTranscribeProcessorConfiguration|null $AmazonTranscribeProcessorConfiguration
  * @property KinesisDataStreamSinkConfiguration|null $KinesisDataStreamSinkConfiguration
@@ -14,13 +14,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LambdaFunctionSinkConfiguration|null $LambdaFunctionSinkConfiguration
  * @property SqsQueueSinkConfiguration|null $SqsQueueSinkConfiguration
  * @property SnsTopicSinkConfiguration|null $SnsTopicSinkConfiguration
- * @property VoiceEnhancementSinkConfiguration|null $VoiceEnhancementSinkConfiguration
  */
 class MediaInsightsPipelineConfigurationElement extends Shape
 {
     /**
      * @param array{
-     *     Type: 'AmazonTranscribeCallAnalyticsProcessor'|'VoiceAnalyticsProcessor'|'AmazonTranscribeProcessor'|'KinesisDataStreamSink'|'LambdaFunctionSink'|'SqsQueueSink'|'SnsTopicSink'|'S3RecordingSink'|'VoiceEnhancementSink',
+     *     Type: 'AmazonTranscribeCallAnalyticsProcessor'|'VoiceAnalyticsProcessor'|'AmazonTranscribeProcessor'|'KinesisDataStreamSink'|'LambdaFunctionSink'|'SqsQueueSink'|'SnsTopicSink'|'S3RecordingSink',
      *     AmazonTranscribeCallAnalyticsProcessorConfiguration?: AmazonTranscribeCallAnalyticsProcessorConfiguration|null,
      *     AmazonTranscribeProcessorConfiguration?: AmazonTranscribeProcessorConfiguration|null,
      *     KinesisDataStreamSinkConfiguration?: KinesisDataStreamSinkConfiguration|null,
@@ -28,8 +27,7 @@ class MediaInsightsPipelineConfigurationElement extends Shape
      *     VoiceAnalyticsProcessorConfiguration?: VoiceAnalyticsProcessorConfiguration|null,
      *     LambdaFunctionSinkConfiguration?: LambdaFunctionSinkConfiguration|null,
      *     SqsQueueSinkConfiguration?: SqsQueueSinkConfiguration|null,
-     *     SnsTopicSinkConfiguration?: SnsTopicSinkConfiguration|null,
-     *     VoiceEnhancementSinkConfiguration?: VoiceEnhancementSinkConfiguration|null
+     *     SnsTopicSinkConfiguration?: SnsTopicSinkConfiguration|null
      * } $args
      */
     public function __construct(array $args)

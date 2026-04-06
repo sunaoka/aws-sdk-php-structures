@@ -12,9 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $HostNetwork
  * @property list<Container>|null $Containers
  * @property list<Volume>|null $Volumes
- * @property string|null $ServiceAccountName
- * @property bool|null $HostIPC
- * @property bool|null $HostPID
  */
 class KubernetesWorkloadDetails extends Shape
 {
@@ -26,10 +23,7 @@ class KubernetesWorkloadDetails extends Shape
      *     Namespace?: string|null,
      *     HostNetwork?: bool|null,
      *     Containers?: list<Container>|null,
-     *     Volumes?: list<Volume>|null,
-     *     ServiceAccountName?: string|null,
-     *     HostIPC?: bool|null,
-     *     HostPID?: bool|null
+     *     Volumes?: list<Volume>|null
      * } $args
      */
     public function __construct(array $args = [])

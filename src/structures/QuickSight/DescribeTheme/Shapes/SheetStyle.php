@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property TileStyle|null $Tile
  * @property TileLayoutStyle|null $TileLayout
- * @property SheetBackgroundStyle|null $Background
  */
 class SheetStyle extends Shape
 {
     /**
      * @param array{
      *     Tile?: TileStyle|null,
-     *     TileLayout?: TileLayoutStyle|null,
-     *     Background?: SheetBackgroundStyle|null
+     *     TileLayout?: TileLayoutStyle|null
      * } $args
      */
     public function __construct(array $args = [])

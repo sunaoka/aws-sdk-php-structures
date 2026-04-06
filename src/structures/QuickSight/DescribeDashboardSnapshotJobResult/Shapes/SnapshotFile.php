@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<SnapshotFileSheetSelection> $SheetSelections
- * @property 'CSV'|'PDF'|'EXCEL' $FormatType
+ * @property 'CSV'|'PDF' $FormatType
  */
 class SnapshotFile extends Shape
 {
     /**
      * @param array{
      *     SheetSelections: list<SnapshotFileSheetSelection>,
-     *     FormatType: 'CSV'|'PDF'|'EXCEL'
+     *     FormatType: 'CSV'|'PDF'
      * } $args
      */
     public function __construct(array $args)

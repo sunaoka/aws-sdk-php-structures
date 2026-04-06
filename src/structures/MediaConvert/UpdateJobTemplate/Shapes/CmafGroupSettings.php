@@ -9,8 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $BaseUrl
  * @property 'DISABLED'|'ENABLED'|null $ClientCache
  * @property 'RFC_6381'|'RFC_4281'|null $CodecSpecification
- * @property string|null $DashIFrameTrickPlayNameModifier
- * @property 'BASIC'|'COMPACT'|'DISTINCT'|'FULL'|null $DashManifestStyle
+ * @property 'BASIC'|'COMPACT'|'DISTINCT'|null $DashManifestStyle
  * @property string|null $Destination
  * @property DestinationSettings|null $DestinationSettings
  * @property CmafEncryptionSettings|null $Encryption
@@ -26,7 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ZERO_BASED'|'MATCH_INITIAL_PTS'|null $PtsOffsetHandlingForBFrames
  * @property 'SINGLE_FILE'|'SEGMENTED_FILES'|null $SegmentControl
  * @property int<1, 2147483647>|null $SegmentLength
- * @property 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null $SegmentLengthControl
+ * @property 'EXACT'|'GOP_MULTIPLE'|null $SegmentLengthControl
  * @property 'INCLUDE'|'EXCLUDE'|null $StreamInfResolution
  * @property 'LEGACY'|'SPEC_COMPLIANT'|null $TargetDurationCompatibilityMode
  * @property 'SIGNED'|'UNSIGNED'|null $VideoCompositionOffsets
@@ -42,8 +41,7 @@ class CmafGroupSettings extends Shape
      *     BaseUrl?: string|null,
      *     ClientCache?: 'DISABLED'|'ENABLED'|null,
      *     CodecSpecification?: 'RFC_6381'|'RFC_4281'|null,
-     *     DashIFrameTrickPlayNameModifier?: string|null,
-     *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|'FULL'|null,
+     *     DashManifestStyle?: 'BASIC'|'COMPACT'|'DISTINCT'|null,
      *     Destination?: string|null,
      *     DestinationSettings?: DestinationSettings|null,
      *     Encryption?: CmafEncryptionSettings|null,
@@ -59,7 +57,7 @@ class CmafGroupSettings extends Shape
      *     PtsOffsetHandlingForBFrames?: 'ZERO_BASED'|'MATCH_INITIAL_PTS'|null,
      *     SegmentControl?: 'SINGLE_FILE'|'SEGMENTED_FILES'|null,
      *     SegmentLength?: int<1, 2147483647>|null,
-     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|'MATCH'|null,
+     *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE'|null,
      *     StreamInfResolution?: 'INCLUDE'|'EXCLUDE'|null,
      *     TargetDurationCompatibilityMode?: 'LEGACY'|'SPEC_COMPLIANT'|null,
      *     VideoCompositionOffsets?: 'SIGNED'|'UNSIGNED'|null,

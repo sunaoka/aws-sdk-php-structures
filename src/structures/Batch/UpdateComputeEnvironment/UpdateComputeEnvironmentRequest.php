@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ComputeResourceUpdate|null $computeResources
  * @property string|null $serviceRole
  * @property Shapes\UpdatePolicy|null $updatePolicy
- * @property string|null $context
  */
 class UpdateComputeEnvironmentRequest extends Request
 {
@@ -22,8 +21,7 @@ class UpdateComputeEnvironmentRequest extends Request
      *     unmanagedvCpus?: int|null,
      *     computeResources?: Shapes\ComputeResourceUpdate|null,
      *     serviceRole?: string|null,
-     *     updatePolicy?: Shapes\UpdatePolicy|null,
-     *     context?: string|null
+     *     updatePolicy?: Shapes\UpdatePolicy|null
      * } $args
      */
     public function __construct(array $args)

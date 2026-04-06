@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DataLabelOptions|null $DataLabels
  * @property TooltipOptions|null $Tooltip
  * @property VisualPalette|null $VisualPalette
- * @property VisualInteractionOptions|null $Interactions
  */
 class HistogramConfiguration extends Shape
 {
@@ -26,8 +25,7 @@ class HistogramConfiguration extends Shape
      *     BinOptions?: HistogramBinOptions|null,
      *     DataLabels?: DataLabelOptions|null,
      *     Tooltip?: TooltipOptions|null,
-     *     VisualPalette?: VisualPalette|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     VisualPalette?: VisualPalette|null
      * } $args
      */
     public function __construct(array $args = [])

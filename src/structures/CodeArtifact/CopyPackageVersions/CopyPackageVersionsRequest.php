@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $domainOwner
  * @property string $sourceRepository
  * @property string $destinationRepository
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic' $format
  * @property string|null $namespace
  * @property string $package
  * @property list<string>|null $versions
@@ -25,7 +25,7 @@ class CopyPackageVersionsRequest extends Request
      *     domainOwner?: string|null,
      *     sourceRepository: string,
      *     destinationRepository: string,
-     *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
+     *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic',
      *     namespace?: string|null,
      *     package: string,
      *     versions?: list<string>|null,

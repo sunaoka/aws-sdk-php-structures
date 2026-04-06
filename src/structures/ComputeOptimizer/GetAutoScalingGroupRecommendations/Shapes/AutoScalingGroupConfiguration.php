@@ -9,10 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $minSize
  * @property int|null $maxSize
  * @property string|null $instanceType
- * @property 'Prioritized'|'LowestPrice'|null $allocationStrategy
- * @property double|null $estimatedInstanceHourReductionPercentage
- * @property 'SingleInstanceType'|'MixedInstanceTypes'|null $type
- * @property list<string>|null $mixedInstanceTypes
  */
 class AutoScalingGroupConfiguration extends Shape
 {
@@ -21,11 +17,7 @@ class AutoScalingGroupConfiguration extends Shape
      *     desiredCapacity?: int|null,
      *     minSize?: int|null,
      *     maxSize?: int|null,
-     *     instanceType?: string|null,
-     *     allocationStrategy?: 'Prioritized'|'LowestPrice'|null,
-     *     estimatedInstanceHourReductionPercentage?: double|null,
-     *     type?: 'SingleInstanceType'|'MixedInstanceTypes'|null,
-     *     mixedInstanceTypes?: list<string>|null
+     *     instanceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

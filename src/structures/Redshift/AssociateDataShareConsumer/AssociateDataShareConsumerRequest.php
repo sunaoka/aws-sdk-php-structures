@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AssociateEntireAccount
  * @property string|null $ConsumerArn
  * @property string|null $ConsumerRegion
- * @property bool|null $AllowWrites
  */
 class AssociateDataShareConsumerRequest extends Request
 {
@@ -18,8 +17,7 @@ class AssociateDataShareConsumerRequest extends Request
      *     DataShareArn: string,
      *     AssociateEntireAccount?: bool|null,
      *     ConsumerArn?: string|null,
-     *     ConsumerRegion?: string|null,
-     *     AllowWrites?: bool|null
+     *     ConsumerRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

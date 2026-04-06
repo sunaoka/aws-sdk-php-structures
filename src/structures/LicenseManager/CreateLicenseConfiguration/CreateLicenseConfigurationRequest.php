@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property bool|null $DisassociateWhenNotFound
  * @property list<Shapes\ProductInformation>|null $ProductInformationList
- * @property int|null $LicenseExpiry
  */
 class CreateLicenseConfigurationRequest extends Request
 {
@@ -28,8 +27,7 @@ class CreateLicenseConfigurationRequest extends Request
      *     LicenseRules?: list<string>|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     DisassociateWhenNotFound?: bool|null,
-     *     ProductInformationList?: list<Shapes\ProductInformation>|null,
-     *     LicenseExpiry?: int|null
+     *     ProductInformationList?: list<Shapes\ProductInformation>|null
      * } $args
      */
     public function __construct(array $args)

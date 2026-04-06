@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ImportDestination|null $ImportDestination
  * @property Shapes\ImportDataSource|null $ImportDataSource
  * @property Shapes\FailureInfo|null $FailureInfo
- * @property 'CREATED'|'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLED'|null $JobStatus
+ * @property 'CREATED'|'PROCESSING'|'COMPLETED'|'FAILED'|null $JobStatus
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult|null $CompletedTimestamp
  * @property int|null $ProcessedRecordsCount

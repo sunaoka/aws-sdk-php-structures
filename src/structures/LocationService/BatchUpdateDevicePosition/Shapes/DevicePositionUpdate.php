@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LocationService\BatchUpdateDevicePosition\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceId
- * @property \Aws\Api\DateTimeResult $SampleTime
- * @property list<double> $Position
  * @property PositionalAccuracy|null $Accuracy
+ * @property string $DeviceId
+ * @property list<double> $Position
  * @property array<string, string>|null $PositionProperties
+ * @property \Aws\Api\DateTimeResult $SampleTime
  */
 class DevicePositionUpdate extends Shape
 {
     /**
      * @param array{
-     *     DeviceId: string,
-     *     SampleTime: \Aws\Api\DateTimeResult,
-     *     Position: list<double>,
      *     Accuracy?: PositionalAccuracy|null,
-     *     PositionProperties?: array<string, string>|null
+     *     DeviceId: string,
+     *     Position: list<double>,
+     *     PositionProperties?: array<string, string>|null,
+     *     SampleTime: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

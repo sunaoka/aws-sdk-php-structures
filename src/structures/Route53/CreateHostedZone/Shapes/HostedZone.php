@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HostedZoneConfig|null $Config
  * @property int|null $ResourceRecordSetCount
  * @property LinkedService|null $LinkedService
- * @property HostedZoneFeatures|null $Features
  */
 class HostedZone extends Shape
 {
@@ -22,8 +21,7 @@ class HostedZone extends Shape
      *     CallerReference: string,
      *     Config?: HostedZoneConfig|null,
      *     ResourceRecordSetCount?: int|null,
-     *     LinkedService?: LinkedService|null,
-     *     Features?: HostedZoneFeatures|null
+     *     LinkedService?: LinkedService|null
      * } $args
      */
     public function __construct(array $args)

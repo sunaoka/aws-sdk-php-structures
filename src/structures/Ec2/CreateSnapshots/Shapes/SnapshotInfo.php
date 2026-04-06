@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SnapshotId
  * @property string|null $OutpostArn
  * @property 'sse-ebs'|'sse-kms'|'none'|null $SseType
- * @property string|null $AvailabilityZone
  */
 class SnapshotInfo extends Shape
 {
@@ -34,8 +33,7 @@ class SnapshotInfo extends Shape
      *     OwnerId?: string|null,
      *     SnapshotId?: string|null,
      *     OutpostArn?: string|null,
-     *     SseType?: 'sse-ebs'|'sse-kms'|'none'|null,
-     *     AvailabilityZone?: string|null
+     *     SseType?: 'sse-ebs'|'sse-kms'|'none'|null
      * } $args
      */
     public function __construct(array $args = [])

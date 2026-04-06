@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Title
  * @property string $SourceFilterId
  * @property RelativeDateTimeControlDisplayOptions|null $DisplayOptions
- * @property 'AUTO'|'MANUAL'|null $CommitMode
  */
 class FilterRelativeDateTimeControl extends Shape
 {
@@ -18,8 +17,7 @@ class FilterRelativeDateTimeControl extends Shape
      *     FilterControlId: string,
      *     Title: string,
      *     SourceFilterId: string,
-     *     DisplayOptions?: RelativeDateTimeControlDisplayOptions|null,
-     *     CommitMode?: 'AUTO'|'MANUAL'|null
+     *     DisplayOptions?: RelativeDateTimeControlDisplayOptions|null
      * } $args
      */
     public function __construct(array $args)

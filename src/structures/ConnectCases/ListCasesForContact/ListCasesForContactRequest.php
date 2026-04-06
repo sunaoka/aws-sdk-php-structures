@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectCases\ListCasesForContact;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $domainId
  * @property string $contactArn
+ * @property string $domainId
  * @property int<1, 10>|null $maxResults
  * @property string|null $nextToken
  */
@@ -14,8 +14,8 @@ class ListCasesForContactRequest extends Request
 {
     /**
      * @param array{
-     *     domainId: string,
      *     contactArn: string,
+     *     domainId: string,
      *     maxResults?: int<1, 10>|null,
      *     nextToken?: string|null
      * } $args

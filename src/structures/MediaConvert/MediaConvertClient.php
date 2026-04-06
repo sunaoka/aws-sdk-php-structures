@@ -10,7 +10,6 @@ class MediaConvertClient extends \Aws\MediaConvert\MediaConvertClient
     use CreateJobTemplate\CreateJobTemplateTrait;
     use CreatePreset\CreatePresetTrait;
     use CreateQueue\CreateQueueTrait;
-    use CreateResourceShare\CreateResourceShareTrait;
     use DeleteJobTemplate\DeleteJobTemplateTrait;
     use DeletePolicy\DeletePolicyTrait;
     use DeletePreset\DeletePresetTrait;
@@ -19,7 +18,6 @@ class MediaConvertClient extends \Aws\MediaConvert\MediaConvertClient
     use DisassociateCertificate\DisassociateCertificateTrait;
     use GetJob\GetJobTrait;
     use GetJobTemplate\GetJobTemplateTrait;
-    use GetJobsQueryResults\GetJobsQueryResultsTrait;
     use GetPolicy\GetPolicyTrait;
     use GetPreset\GetPresetTrait;
     use GetQueue\GetQueueTrait;
@@ -28,11 +26,7 @@ class MediaConvertClient extends \Aws\MediaConvert\MediaConvertClient
     use ListPresets\ListPresetsTrait;
     use ListQueues\ListQueuesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
-    use ListVersions\ListVersionsTrait;
-    use Probe\ProbeTrait;
     use PutPolicy\PutPolicyTrait;
-    use SearchJobs\SearchJobsTrait;
-    use StartJobsQuery\StartJobsQueryTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateJobTemplate\UpdateJobTemplateTrait;

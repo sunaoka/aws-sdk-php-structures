@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\DynamoDb\CreateTable;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\AttributeDefinition>|null $AttributeDefinitions
+ * @property list<Shapes\AttributeDefinition> $AttributeDefinitions
  * @property string $TableName
- * @property list<Shapes\KeySchemaElement>|null $KeySchema
+ * @property list<Shapes\KeySchemaElement> $KeySchema
  * @property list<Shapes\LocalSecondaryIndex>|null $LocalSecondaryIndexes
  * @property list<Shapes\GlobalSecondaryIndex>|null $GlobalSecondaryIndexes
  * @property 'PROVISIONED'|'PAY_PER_REQUEST'|null $BillingMode
@@ -17,19 +17,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag>|null $Tags
  * @property 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null $TableClass
  * @property bool|null $DeletionProtectionEnabled
- * @property Shapes\WarmThroughput|null $WarmThroughput
- * @property string|null $ResourcePolicy
- * @property Shapes\OnDemandThroughput|null $OnDemandThroughput
- * @property string|null $GlobalTableSourceArn
- * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null $GlobalTableSettingsReplicationMode
  */
 class CreateTableRequest extends Request
 {
     /**
      * @param array{
-     *     AttributeDefinitions?: list<Shapes\AttributeDefinition>|null,
+     *     AttributeDefinitions: list<Shapes\AttributeDefinition>,
      *     TableName: string,
-     *     KeySchema?: list<Shapes\KeySchemaElement>|null,
+     *     KeySchema: list<Shapes\KeySchemaElement>,
      *     LocalSecondaryIndexes?: list<Shapes\LocalSecondaryIndex>|null,
      *     GlobalSecondaryIndexes?: list<Shapes\GlobalSecondaryIndex>|null,
      *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'|null,
@@ -38,12 +33,7 @@ class CreateTableRequest extends Request
      *     SSESpecification?: Shapes\SSESpecification|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     TableClass?: 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null,
-     *     DeletionProtectionEnabled?: bool|null,
-     *     WarmThroughput?: Shapes\WarmThroughput|null,
-     *     ResourcePolicy?: string|null,
-     *     OnDemandThroughput?: Shapes\OnDemandThroughput|null,
-     *     GlobalTableSourceArn?: string|null,
-     *     GlobalTableSettingsReplicationMode?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null
+     *     DeletionProtectionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $filterValues
  * @property string|null $recommenderArn
  * @property list<Shapes\Promotion>|null $promotions
- * @property array<string, list<string>>|null $metadataColumns
  */
 class GetRecommendationsRequest extends Request
 {
@@ -28,8 +27,7 @@ class GetRecommendationsRequest extends Request
      *     filterArn?: string|null,
      *     filterValues?: array<string, string>|null,
      *     recommenderArn?: string|null,
-     *     promotions?: list<Shapes\Promotion>|null,
-     *     metadataColumns?: array<string, list<string>>|null
+     *     promotions?: list<Shapes\Promotion>|null
      * } $args
      */
     public function __construct(array $args = [])

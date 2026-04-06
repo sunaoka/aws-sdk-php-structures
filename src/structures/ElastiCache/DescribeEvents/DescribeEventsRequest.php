@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string|null $SourceIdentifier
- * @property 'cache-cluster'|'cache-parameter-group'|'cache-security-group'|'cache-subnet-group'|'replication-group'|'serverless-cache'|'serverless-cache-snapshot'|'user'|'user-group'|null $SourceType
+ * @property 'cache-cluster'|'cache-parameter-group'|'cache-security-group'|'cache-subnet-group'|'replication-group'|'user'|'user-group'|null $SourceType
  * @property \Aws\Api\DateTimeResult|null $StartTime
  * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property int|null $Duration
@@ -18,7 +18,7 @@ class DescribeEventsRequest extends Request
     /**
      * @param array{
      *     SourceIdentifier?: string|null,
-     *     SourceType?: 'cache-cluster'|'cache-parameter-group'|'cache-security-group'|'cache-subnet-group'|'replication-group'|'serverless-cache'|'serverless-cache-snapshot'|'user'|'user-group'|null,
+     *     SourceType?: 'cache-cluster'|'cache-parameter-group'|'cache-security-group'|'cache-subnet-group'|'replication-group'|'user'|'user-group'|null,
      *     StartTime?: \Aws\Api\DateTimeResult|null,
      *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     Duration?: int|null,

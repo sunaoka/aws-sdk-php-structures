@@ -6,11 +6,10 @@ trait HeadBucketTrait
 {
     /**
      * @param HeadBucketRequest $args
-     * @return HeadBucketResponse
+     * @return void
      */
     public function headBucket(HeadBucketRequest $args)
     {
-        $result = parent::headBucket($args->toArray());
-        return new HeadBucketResponse($result->toArray());
+        parent::headBucket($args->toArray());
     }
 }

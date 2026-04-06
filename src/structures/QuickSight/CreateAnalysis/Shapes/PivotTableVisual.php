@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PivotTableConfiguration|null $ChartConfiguration
  * @property PivotTableConditionalFormatting|null $ConditionalFormatting
  * @property list<VisualCustomAction>|null $Actions
- * @property string|null $VisualContentAltText
  */
 class PivotTableVisual extends Shape
 {
@@ -22,8 +21,7 @@ class PivotTableVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: PivotTableConfiguration|null,
      *     ConditionalFormatting?: PivotTableConditionalFormatting|null,
-     *     Actions?: list<VisualCustomAction>|null,
-     *     VisualContentAltText?: string|null
+     *     Actions?: list<VisualCustomAction>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $capabilityNamespace
- * @property 'IN_SYNC'|'OUT_OF_SYNC'|'SYNC_FAILED'|'UNKNOWN'|'NOT_APPLICABLE' $capabilitySyncStatus
+ * @property 'IN_SYNC'|'OUT_OF_SYNC'|'SYNC_FAILED'|'UNKNOWN' $capabilitySyncStatus
  */
 class GatewayCapabilitySummary extends Shape
 {
     /**
      * @param array{
      *     capabilityNamespace: string,
-     *     capabilitySyncStatus: 'IN_SYNC'|'OUT_OF_SYNC'|'SYNC_FAILED'|'UNKNOWN'|'NOT_APPLICABLE'
+     *     capabilitySyncStatus: 'IN_SYNC'|'OUT_OF_SYNC'|'SYNC_FAILED'|'UNKNOWN'
      * } $args
      */
     public function __construct(array $args)

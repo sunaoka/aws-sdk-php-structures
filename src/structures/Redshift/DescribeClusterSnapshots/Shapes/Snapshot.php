@@ -39,9 +39,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ManualSnapshotRetentionPeriod
  * @property int|null $ManualSnapshotRemainingDays
  * @property \Aws\Api\DateTimeResult|null $SnapshotRetentionStartTime
- * @property string|null $MasterPasswordSecretArn
- * @property string|null $MasterPasswordSecretKmsKeyId
- * @property string|null $SnapshotArn
  */
 class Snapshot extends Shape
 {
@@ -80,10 +77,7 @@ class Snapshot extends Shape
      *     MaintenanceTrackName?: string|null,
      *     ManualSnapshotRetentionPeriod?: int|null,
      *     ManualSnapshotRemainingDays?: int|null,
-     *     SnapshotRetentionStartTime?: \Aws\Api\DateTimeResult|null,
-     *     MasterPasswordSecretArn?: string|null,
-     *     MasterPasswordSecretKmsKeyId?: string|null,
-     *     SnapshotArn?: string|null
+     *     SnapshotRetentionStartTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

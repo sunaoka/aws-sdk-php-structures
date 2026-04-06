@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WorkGroupConfiguration|null $Configuration
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult|null $CreationTime
- * @property string|null $IdentityCenterApplicationArn
  */
 class WorkGroup extends Shape
 {
@@ -20,8 +19,7 @@ class WorkGroup extends Shape
      *     State?: 'ENABLED'|'DISABLED'|null,
      *     Configuration?: WorkGroupConfiguration|null,
      *     Description?: string|null,
-     *     CreationTime?: \Aws\Api\DateTimeResult|null,
-     *     IdentityCenterApplicationArn?: string|null
+     *     CreationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

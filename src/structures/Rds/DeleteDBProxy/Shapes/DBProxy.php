@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcId
  * @property list<string>|null $VpcSecurityGroupIds
  * @property list<string>|null $VpcSubnetIds
- * @property string|null $DefaultAuthScheme
  * @property list<UserAuthConfigInfo>|null $Auth
  * @property string|null $RoleArn
  * @property string|null $Endpoint
@@ -21,8 +20,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DebugLogging
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
  * @property \Aws\Api\DateTimeResult|null $UpdatedDate
- * @property 'IPV4'|'IPV6'|'DUAL'|null $EndpointNetworkType
- * @property 'IPV4'|'IPV6'|null $TargetConnectionNetworkType
  */
 class DBProxy extends Shape
 {
@@ -35,7 +32,6 @@ class DBProxy extends Shape
      *     VpcId?: string|null,
      *     VpcSecurityGroupIds?: list<string>|null,
      *     VpcSubnetIds?: list<string>|null,
-     *     DefaultAuthScheme?: string|null,
      *     Auth?: list<UserAuthConfigInfo>|null,
      *     RoleArn?: string|null,
      *     Endpoint?: string|null,
@@ -43,9 +39,7 @@ class DBProxy extends Shape
      *     IdleClientTimeout?: int|null,
      *     DebugLogging?: bool|null,
      *     CreatedDate?: \Aws\Api\DateTimeResult|null,
-     *     UpdatedDate?: \Aws\Api\DateTimeResult|null,
-     *     EndpointNetworkType?: 'IPV4'|'IPV6'|'DUAL'|null,
-     *     TargetConnectionNetworkType?: 'IPV4'|'IPV6'|null
+     *     UpdatedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

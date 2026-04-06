@@ -32,7 +32,6 @@ class LocationServiceClient extends \Aws\LocationService\LocationServiceClient
     use DescribeRouteCalculator\DescribeRouteCalculatorTrait;
     use DescribeTracker\DescribeTrackerTrait;
     use DisassociateTrackerConsumer\DisassociateTrackerConsumerTrait;
-    use ForecastGeofenceEvents\ForecastGeofenceEventsTrait;
     use GetDevicePosition\GetDevicePositionTrait;
     use GetDevicePositionHistory\GetDevicePositionHistoryTrait;
     use GetGeofence\GetGeofenceTrait;
@@ -63,5 +62,4 @@ class LocationServiceClient extends \Aws\LocationService\LocationServiceClient
     use UpdatePlaceIndex\UpdatePlaceIndexTrait;
     use UpdateRouteCalculator\UpdateRouteCalculatorTrait;
     use UpdateTracker\UpdateTrackerTrait;
-    use VerifyDevicePosition\VerifyDevicePositionTrait;
 }

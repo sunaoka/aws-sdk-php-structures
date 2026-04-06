@@ -5,23 +5,19 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\CreateStage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $activeSessionId
  * @property string $arn
  * @property string|null $name
- * @property string|null $activeSessionId
  * @property array<string, string>|null $tags
- * @property AutoParticipantRecordingConfiguration|null $autoParticipantRecordingConfiguration
- * @property StageEndpoints|null $endpoints
  */
 class Stage extends Shape
 {
     /**
      * @param array{
+     *     activeSessionId?: string|null,
      *     arn: string,
      *     name?: string|null,
-     *     activeSessionId?: string|null,
-     *     tags?: array<string, string>|null,
-     *     autoParticipantRecordingConfiguration?: AutoParticipantRecordingConfiguration|null,
-     *     endpoints?: StageEndpoints|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

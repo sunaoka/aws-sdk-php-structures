@@ -7,21 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|null $clientToken
  * @property Shapes\ValidationSettings $validationSettings
- * @property string|null $description
- * @property 'ENABLED'|'DISABLED'|null $deletionProtection
- * @property Shapes\EncryptionSettings|null $encryptionSettings
- * @property array<string, string>|null $tags
  */
 class CreatePolicyStoreRequest extends Request
 {
     /**
      * @param array{
      *     clientToken?: string|null,
-     *     validationSettings: Shapes\ValidationSettings,
-     *     description?: string|null,
-     *     deletionProtection?: 'ENABLED'|'DISABLED'|null,
-     *     encryptionSettings?: Shapes\EncryptionSettings|null,
-     *     tags?: array<string, string>|null
+     *     validationSettings: Shapes\ValidationSettings
      * } $args
      */
     public function __construct(array $args)

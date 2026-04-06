@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\ListTagsForResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ResourceArn
- * @property string|null $NextToken
  * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string $ResourceArn
  */
 class ListTagsForResourceRequest extends Request
 {
     /**
      * @param array{
-     *     ResourceArn: string,
+     *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null,
-     *     MaxResults?: int<1, 100>|null
+     *     ResourceArn: string
      * } $args
      */
     public function __construct(array $args)

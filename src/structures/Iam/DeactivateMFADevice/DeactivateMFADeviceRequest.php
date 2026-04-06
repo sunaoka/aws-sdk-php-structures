@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iam\DeactivateMFADevice;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $UserName
+ * @property string $UserName
  * @property string $SerialNumber
  */
 class DeactivateMFADeviceRequest extends Request
 {
     /**
      * @param array{
-     *     UserName?: string|null,
+     *     UserName: string,
      *     SerialNumber: string
      * } $args
      */

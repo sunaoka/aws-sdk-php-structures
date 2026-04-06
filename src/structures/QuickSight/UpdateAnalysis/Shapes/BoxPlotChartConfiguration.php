@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TooltipOptions|null $Tooltip
  * @property list<ReferenceLine>|null $ReferenceLines
  * @property VisualPalette|null $VisualPalette
- * @property VisualInteractionOptions|null $Interactions
  */
 class BoxPlotChartConfiguration extends Shape
 {
@@ -32,8 +31,7 @@ class BoxPlotChartConfiguration extends Shape
      *     Legend?: LegendOptions|null,
      *     Tooltip?: TooltipOptions|null,
      *     ReferenceLines?: list<ReferenceLine>|null,
-     *     VisualPalette?: VisualPalette|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     VisualPalette?: VisualPalette|null
      * } $args
      */
     public function __construct(array $args = [])

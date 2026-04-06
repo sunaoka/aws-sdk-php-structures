@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AddPrefixListEntry>|null $AddEntries
  * @property list<Shapes\RemovePrefixListEntry>|null $RemoveEntries
  * @property int|null $MaxEntries
- * @property bool|null $IpamPrefixListResolverSyncEnabled
  */
 class ModifyManagedPrefixListRequest extends Request
 {
@@ -24,8 +23,7 @@ class ModifyManagedPrefixListRequest extends Request
      *     PrefixListName?: string|null,
      *     AddEntries?: list<Shapes\AddPrefixListEntry>|null,
      *     RemoveEntries?: list<Shapes\RemovePrefixListEntry>|null,
-     *     MaxEntries?: int|null,
-     *     IpamPrefixListResolverSyncEnabled?: bool|null
+     *     MaxEntries?: int|null
      * } $args
      */
     public function __construct(array $args)

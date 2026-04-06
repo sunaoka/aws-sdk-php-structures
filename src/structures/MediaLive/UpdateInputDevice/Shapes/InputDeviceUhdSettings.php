@@ -14,10 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INTERLACED'|'PROGRESSIVE'|null $ScanType
  * @property int|null $Width
  * @property int|null $LatencyMs
- * @property 'HEVC'|'AVC'|null $Codec
- * @property InputDeviceMediaConnectSettings|null $MediaconnectSettings
- * @property list<InputDeviceUhdAudioChannelPairConfig>|null $AudioChannelPairs
- * @property string|null $InputResolution
  */
 class InputDeviceUhdSettings extends Shape
 {
@@ -31,11 +27,7 @@ class InputDeviceUhdSettings extends Shape
      *     MaxBitrate?: int|null,
      *     ScanType?: 'INTERLACED'|'PROGRESSIVE'|null,
      *     Width?: int|null,
-     *     LatencyMs?: int|null,
-     *     Codec?: 'HEVC'|'AVC'|null,
-     *     MediaconnectSettings?: InputDeviceMediaConnectSettings|null,
-     *     AudioChannelPairs?: list<InputDeviceUhdAudioChannelPairConfig>|null,
-     *     InputResolution?: string|null
+     *     LatencyMs?: int|null
      * } $args
      */
     public function __construct(array $args = [])

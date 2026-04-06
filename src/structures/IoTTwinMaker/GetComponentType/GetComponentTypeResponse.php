@@ -21,7 +21,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, Shapes\PropertyGroupResponse>|null $propertyGroups
  * @property string|null $syncSource
  * @property string|null $componentTypeName
- * @property array<string, Shapes\CompositeComponentTypeResponse>|null $compositeComponentTypes
  */
 class GetComponentTypeResponse extends Response
 {

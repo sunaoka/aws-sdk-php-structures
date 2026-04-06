@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $PathParameterValues
  * @property array<string, string>|null $HeaderParameters
+ * @property list<string>|null $PathParameterValues
  * @property array<string, string>|null $QueryStringParameters
  */
 class PipeEnrichmentHttpParameters extends Shape
 {
     /**
      * @param array{
-     *     PathParameterValues?: list<string>|null,
      *     HeaderParameters?: array<string, string>|null,
+     *     PathParameterValues?: list<string>|null,
      *     QueryStringParameters?: array<string, string>|null
      * } $args
      */

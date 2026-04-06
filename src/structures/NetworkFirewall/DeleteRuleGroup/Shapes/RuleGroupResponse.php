@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property 'STATELESS'|'STATEFUL'|null $Type
  * @property int|null $Capacity
- * @property 'ACTIVE'|'DELETING'|'ERROR'|null $RuleGroupStatus
+ * @property 'ACTIVE'|'DELETING'|null $RuleGroupStatus
  * @property list<Tag>|null $Tags
  * @property int|null $ConsumedCapacity
  * @property int|null $NumberOfAssociations
@@ -19,8 +19,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SourceMetadata|null $SourceMetadata
  * @property string|null $SnsTopic
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
- * @property list<AnalysisResult>|null $AnalysisResults
- * @property SummaryConfiguration|null $SummaryConfiguration
  */
 class RuleGroupResponse extends Shape
 {
@@ -32,16 +30,14 @@ class RuleGroupResponse extends Shape
      *     Description?: string|null,
      *     Type?: 'STATELESS'|'STATEFUL'|null,
      *     Capacity?: int|null,
-     *     RuleGroupStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
+     *     RuleGroupStatus?: 'ACTIVE'|'DELETING'|null,
      *     Tags?: list<Tag>|null,
      *     ConsumedCapacity?: int|null,
      *     NumberOfAssociations?: int|null,
      *     EncryptionConfiguration?: EncryptionConfiguration|null,
      *     SourceMetadata?: SourceMetadata|null,
      *     SnsTopic?: string|null,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     AnalysisResults?: list<AnalysisResult>|null,
-     *     SummaryConfiguration?: SummaryConfiguration|null
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

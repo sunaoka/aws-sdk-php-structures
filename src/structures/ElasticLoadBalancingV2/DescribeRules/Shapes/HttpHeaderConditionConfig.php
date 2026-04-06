@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $HttpHeaderName
  * @property list<string>|null $Values
- * @property list<string>|null $RegexValues
  */
 class HttpHeaderConditionConfig extends Shape
 {
     /**
      * @param array{
      *     HttpHeaderName?: string|null,
-     *     Values?: list<string>|null,
-     *     RegexValues?: list<string>|null
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

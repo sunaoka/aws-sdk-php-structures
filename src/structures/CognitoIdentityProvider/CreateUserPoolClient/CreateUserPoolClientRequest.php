@@ -8,14 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property string $ClientName
  * @property bool|null $GenerateSecret
- * @property string|null $ClientSecret
  * @property int<0, 315360000>|null $RefreshTokenValidity
  * @property int<1, 86400>|null $AccessTokenValidity
  * @property int<1, 86400>|null $IdTokenValidity
  * @property Shapes\TokenValidityUnitsType|null $TokenValidityUnits
  * @property list<string>|null $ReadAttributes
  * @property list<string>|null $WriteAttributes
- * @property list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'|'ALLOW_USER_AUTH'>|null $ExplicitAuthFlows
+ * @property list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'>|null $ExplicitAuthFlows
  * @property list<string>|null $SupportedIdentityProviders
  * @property list<string>|null $CallbackURLs
  * @property list<string>|null $LogoutURLs
@@ -28,7 +27,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnableTokenRevocation
  * @property bool|null $EnablePropagateAdditionalUserContextData
  * @property int<3, 15>|null $AuthSessionValidity
- * @property Shapes\RefreshTokenRotationType|null $RefreshTokenRotation
  */
 class CreateUserPoolClientRequest extends Request
 {
@@ -37,14 +35,13 @@ class CreateUserPoolClientRequest extends Request
      *     UserPoolId: string,
      *     ClientName: string,
      *     GenerateSecret?: bool|null,
-     *     ClientSecret?: string|null,
      *     RefreshTokenValidity?: int<0, 315360000>|null,
      *     AccessTokenValidity?: int<1, 86400>|null,
      *     IdTokenValidity?: int<1, 86400>|null,
      *     TokenValidityUnits?: Shapes\TokenValidityUnitsType|null,
      *     ReadAttributes?: list<string>|null,
      *     WriteAttributes?: list<string>|null,
-     *     ExplicitAuthFlows?: list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'|'ALLOW_USER_AUTH'>|null,
+     *     ExplicitAuthFlows?: list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'>|null,
      *     SupportedIdentityProviders?: list<string>|null,
      *     CallbackURLs?: list<string>|null,
      *     LogoutURLs?: list<string>|null,
@@ -56,8 +53,7 @@ class CreateUserPoolClientRequest extends Request
      *     PreventUserExistenceErrors?: 'LEGACY'|'ENABLED'|null,
      *     EnableTokenRevocation?: bool|null,
      *     EnablePropagateAdditionalUserContextData?: bool|null,
-     *     AuthSessionValidity?: int<3, 15>|null,
-     *     RefreshTokenRotation?: Shapes\RefreshTokenRotationType|null
+     *     AuthSessionValidity?: int<3, 15>|null
      * } $args
      */
     public function __construct(array $args)

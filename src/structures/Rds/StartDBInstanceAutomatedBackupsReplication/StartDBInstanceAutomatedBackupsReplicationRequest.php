@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $BackupRetentionPeriod
  * @property string|null $KmsKeyId
  * @property string|null $PreSignedUrl
- * @property list<Shapes\Tag>|null $Tags
  */
 class StartDBInstanceAutomatedBackupsReplicationRequest extends Request
 {
@@ -18,8 +17,7 @@ class StartDBInstanceAutomatedBackupsReplicationRequest extends Request
      *     SourceDBInstanceArn: string,
      *     BackupRetentionPeriod?: int|null,
      *     KmsKeyId?: string|null,
-     *     PreSignedUrl?: string|null,
-     *     Tags?: list<Shapes\Tag>|null
+     *     PreSignedUrl?: string|null
      * } $args
      */
     public function __construct(array $args)

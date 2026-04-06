@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AMI'|'DOCKER'|null $type
  * @property string|null $name
  * @property string|null $description
- * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property 'Windows'|'Linux'|null $platform
  * @property string|null $owner
  * @property string|null $version
  * @property list<ComponentConfiguration>|null $components
@@ -19,7 +19,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property string|null $workingDirectory
  * @property AdditionalInstanceConfiguration|null $additionalInstanceConfiguration
- * @property array<string, string>|null $amiTags
  */
 class ImageRecipe extends Shape
 {
@@ -29,7 +28,7 @@ class ImageRecipe extends Shape
      *     type?: 'AMI'|'DOCKER'|null,
      *     name?: string|null,
      *     description?: string|null,
-     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     platform?: 'Windows'|'Linux'|null,
      *     owner?: string|null,
      *     version?: string|null,
      *     components?: list<ComponentConfiguration>|null,
@@ -38,8 +37,7 @@ class ImageRecipe extends Shape
      *     dateCreated?: string|null,
      *     tags?: array<string, string>|null,
      *     workingDirectory?: string|null,
-     *     additionalInstanceConfiguration?: AdditionalInstanceConfiguration|null,
-     *     amiTags?: array<string, string>|null
+     *     additionalInstanceConfiguration?: AdditionalInstanceConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

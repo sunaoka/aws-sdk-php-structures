@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Firehose\UpdateDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'LambdaArn'|'NumberOfRetries'|'MetadataExtractionQuery'|'JsonParsingEngine'|'RoleArn'|'BufferSizeInMBs'|'BufferIntervalInSeconds'|'SubRecordType'|'Delimiter'|'CompressionFormat'|'DataMessageExtraction' $ParameterName
+ * @property 'LambdaArn'|'NumberOfRetries'|'MetadataExtractionQuery'|'JsonParsingEngine'|'RoleArn'|'BufferSizeInMBs'|'BufferIntervalInSeconds'|'SubRecordType'|'Delimiter' $ParameterName
  * @property string $ParameterValue
  */
 class ProcessorParameter extends Shape
 {
     /**
      * @param array{
-     *     ParameterName: 'LambdaArn'|'NumberOfRetries'|'MetadataExtractionQuery'|'JsonParsingEngine'|'RoleArn'|'BufferSizeInMBs'|'BufferIntervalInSeconds'|'SubRecordType'|'Delimiter'|'CompressionFormat'|'DataMessageExtraction',
+     *     ParameterName: 'LambdaArn'|'NumberOfRetries'|'MetadataExtractionQuery'|'JsonParsingEngine'|'RoleArn'|'BufferSizeInMBs'|'BufferIntervalInSeconds'|'SubRecordType'|'Delimiter',
      *     ParameterValue: string
      * } $args
      */

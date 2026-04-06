@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CompletedDate
  * @property string|null $ErrorMessage
  * @property string|null $ARN
- * @property string|null $MigrationAdmin
- * @property bool|null $InteroperabilityEnabled
  */
 class DescribeOrganizationResponse extends Response
 {

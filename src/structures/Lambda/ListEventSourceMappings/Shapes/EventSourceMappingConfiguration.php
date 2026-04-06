@@ -32,12 +32,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SelfManagedKafkaEventSourceConfig|null $SelfManagedKafkaEventSourceConfig
  * @property ScalingConfig|null $ScalingConfig
  * @property DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
- * @property string|null $KMSKeyArn
- * @property FilterCriteriaError|null $FilterCriteriaError
- * @property string|null $EventSourceMappingArn
- * @property EventSourceMappingMetricsConfig|null $MetricsConfig
- * @property EventSourceMappingLoggingConfig|null $LoggingConfig
- * @property ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class EventSourceMappingConfiguration extends Shape
 {
@@ -69,13 +63,7 @@ class EventSourceMappingConfiguration extends Shape
      *     AmazonManagedKafkaEventSourceConfig?: AmazonManagedKafkaEventSourceConfig|null,
      *     SelfManagedKafkaEventSourceConfig?: SelfManagedKafkaEventSourceConfig|null,
      *     ScalingConfig?: ScalingConfig|null,
-     *     DocumentDBEventSourceConfig?: DocumentDBEventSourceConfig|null,
-     *     KMSKeyArn?: string|null,
-     *     FilterCriteriaError?: FilterCriteriaError|null,
-     *     EventSourceMappingArn?: string|null,
-     *     MetricsConfig?: EventSourceMappingMetricsConfig|null,
-     *     LoggingConfig?: EventSourceMappingLoggingConfig|null,
-     *     ProvisionedPollerConfig?: ProvisionedPollerConfig|null
+     *     DocumentDBEventSourceConfig?: DocumentDBEventSourceConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TableConfiguration|null $ChartConfiguration
  * @property TableConditionalFormatting|null $ConditionalFormatting
  * @property list<VisualCustomAction>|null $Actions
- * @property string|null $VisualContentAltText
  */
 class TableVisual extends Shape
 {
@@ -22,8 +21,7 @@ class TableVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: TableConfiguration|null,
      *     ConditionalFormatting?: TableConditionalFormatting|null,
-     *     Actions?: list<VisualCustomAction>|null,
-     *     VisualContentAltText?: string|null
+     *     Actions?: list<VisualCustomAction>|null
      * } $args
      */
     public function __construct(array $args)

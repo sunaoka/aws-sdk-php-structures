@@ -6,5 +6,4 @@ class SageMakerRuntimeClient extends \Aws\SageMakerRuntime\SageMakerRuntimeClien
 {
     use InvokeEndpoint\InvokeEndpointTrait;
     use InvokeEndpointAsync\InvokeEndpointAsyncTrait;
-    use InvokeEndpointWithResponseStream\InvokeEndpointWithResponseStreamTrait;
 }

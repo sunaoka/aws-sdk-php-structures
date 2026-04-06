@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $CalculatorName
- * @property string $Description
- * @property string $DataSource
- * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property \Aws\Api\DateTimeResult $CreateTime
+ * @property string $DataSource
+ * @property string $Description
+ * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property \Aws\Api\DateTimeResult $UpdateTime
  */
 class ListRouteCalculatorsResponseEntry extends Shape
@@ -17,10 +17,10 @@ class ListRouteCalculatorsResponseEntry extends Shape
     /**
      * @param array{
      *     CalculatorName: string,
-     *     Description: string,
-     *     DataSource: string,
-     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
      *     CreateTime: \Aws\Api\DateTimeResult,
+     *     DataSource: string,
+     *     Description: string,
+     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
      *     UpdateTime: \Aws\Api\DateTimeResult
      * } $args
      */

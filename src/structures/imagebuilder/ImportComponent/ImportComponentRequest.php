@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $changeDescription
  * @property 'BUILD'|'TEST' $type
  * @property 'SHELL' $format
- * @property 'Windows'|'Linux'|'macOS' $platform
+ * @property 'Windows'|'Linux' $platform
  * @property string|null $data
  * @property string|null $uri
  * @property string|null $kmsKeyId
@@ -28,7 +28,7 @@ class ImportComponentRequest extends Request
      *     changeDescription?: string|null,
      *     type: 'BUILD'|'TEST',
      *     format: 'SHELL',
-     *     platform: 'Windows'|'Linux'|'macOS',
+     *     platform: 'Windows'|'Linux',
      *     data?: string|null,
      *     uri?: string|null,
      *     kmsKeyId?: string|null,

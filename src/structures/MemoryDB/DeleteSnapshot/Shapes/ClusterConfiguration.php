@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $Description
  * @property string|null $NodeType
- * @property string|null $Engine
  * @property string|null $EngineVersion
  * @property string|null $MaintenanceWindow
  * @property string|null $TopicArn
@@ -20,8 +19,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SnapshotWindow
  * @property int|null $NumShards
  * @property list<ShardDetail>|null $Shards
- * @property string|null $MultiRegionParameterGroupName
- * @property string|null $MultiRegionClusterName
  */
 class ClusterConfiguration extends Shape
 {
@@ -30,7 +27,6 @@ class ClusterConfiguration extends Shape
      *     Name?: string|null,
      *     Description?: string|null,
      *     NodeType?: string|null,
-     *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     MaintenanceWindow?: string|null,
      *     TopicArn?: string|null,
@@ -41,9 +37,7 @@ class ClusterConfiguration extends Shape
      *     SnapshotRetentionLimit?: int|null,
      *     SnapshotWindow?: string|null,
      *     NumShards?: int|null,
-     *     Shards?: list<ShardDetail>|null,
-     *     MultiRegionParameterGroupName?: string|null,
-     *     MultiRegionClusterName?: string|null
+     *     Shards?: list<ShardDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

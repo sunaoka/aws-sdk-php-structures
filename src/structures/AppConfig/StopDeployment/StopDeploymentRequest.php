@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ApplicationId
  * @property string $EnvironmentId
  * @property int $DeploymentNumber
- * @property bool|null $AllowRevert
  */
 class StopDeploymentRequest extends Request
 {
@@ -16,8 +15,7 @@ class StopDeploymentRequest extends Request
      * @param array{
      *     ApplicationId: string,
      *     EnvironmentId: string,
-     *     DeploymentNumber: int,
-     *     AllowRevert?: bool|null
+     *     DeploymentNumber: int
      * } $args
      */
     public function __construct(array $args)

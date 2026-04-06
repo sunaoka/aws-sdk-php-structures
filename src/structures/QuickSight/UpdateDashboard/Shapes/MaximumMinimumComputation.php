@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ComputationId
  * @property string|null $Name
- * @property DimensionField|null $Time
+ * @property DimensionField $Time
  * @property MeasureField|null $Value
  * @property 'MAXIMUM'|'MINIMUM' $Type
  */
@@ -17,7 +17,7 @@ class MaximumMinimumComputation extends Shape
      * @param array{
      *     ComputationId: string,
      *     Name?: string|null,
-     *     Time?: DimensionField|null,
+     *     Time: DimensionField,
      *     Value?: MeasureField|null,
      *     Type: 'MAXIMUM'|'MINIMUM'
      * } $args

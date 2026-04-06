@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $InstancesWithCriticalNonCompliantPatches
  * @property int|null $InstancesWithSecurityNonCompliantPatches
  * @property int|null $InstancesWithOtherNonCompliantPatches
- * @property int|null $InstancesWithAvailableSecurityUpdates
  */
 class DescribePatchGroupStateResponse extends Response
 {

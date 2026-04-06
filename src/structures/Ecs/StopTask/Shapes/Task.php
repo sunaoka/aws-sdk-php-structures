@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HEALTHY'|'UNHEALTHY'|'UNKNOWN'|null $healthStatus
  * @property list<InferenceAccelerator>|null $inferenceAccelerators
  * @property string|null $lastStatus
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
  * @property string|null $memory
  * @property TaskOverride|null $overrides
  * @property string|null $platformVersion
@@ -41,7 +41,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $taskDefinitionArn
  * @property int|null $version
  * @property EphemeralStorage|null $ephemeralStorage
- * @property TaskEphemeralStorage|null $fargateEphemeralStorage
  */
 class Task extends Shape
 {
@@ -65,7 +64,7 @@ class Task extends Shape
      *     healthStatus?: 'HEALTHY'|'UNHEALTHY'|'UNKNOWN'|null,
      *     inferenceAccelerators?: list<InferenceAccelerator>|null,
      *     lastStatus?: string|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
      *     memory?: string|null,
      *     overrides?: TaskOverride|null,
      *     platformVersion?: string|null,
@@ -82,8 +81,7 @@ class Task extends Shape
      *     taskArn?: string|null,
      *     taskDefinitionArn?: string|null,
      *     version?: int|null,
-     *     ephemeralStorage?: EphemeralStorage|null,
-     *     fargateEphemeralStorage?: TaskEphemeralStorage|null
+     *     ephemeralStorage?: EphemeralStorage|null
      * } $args
      */
     public function __construct(array $args = [])

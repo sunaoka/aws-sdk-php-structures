@@ -21,7 +21,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AdvancedSecurityOptionsInput|null $AdvancedSecurityOptions
  * @property Shapes\AutoTuneOptionsInput|null $AutoTuneOptions
  * @property list<Shapes\Tag>|null $TagList
- * @property Shapes\DeploymentStrategyOptions|null $DeploymentStrategyOptions
  */
 class CreateElasticsearchDomainRequest extends Request
 {
@@ -42,8 +41,7 @@ class CreateElasticsearchDomainRequest extends Request
      *     DomainEndpointOptions?: Shapes\DomainEndpointOptions|null,
      *     AdvancedSecurityOptions?: Shapes\AdvancedSecurityOptionsInput|null,
      *     AutoTuneOptions?: Shapes\AutoTuneOptionsInput|null,
-     *     TagList?: list<Shapes\Tag>|null,
-     *     DeploymentStrategyOptions?: Shapes\DeploymentStrategyOptions|null
+     *     TagList?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

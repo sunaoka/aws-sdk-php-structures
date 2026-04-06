@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RoleArn
  * @property list<string> $SecurityGroupIds
  * @property string $SubnetId
- * @property array<string, string>|null $VpcInterfaceTags
  */
 class VpcInterfaceRequest extends Shape
 {
@@ -20,8 +19,7 @@ class VpcInterfaceRequest extends Shape
      *     NetworkInterfaceType?: 'ena'|'efa'|null,
      *     RoleArn: string,
      *     SecurityGroupIds: list<string>,
-     *     SubnetId: string,
-     *     VpcInterfaceTags?: array<string, string>|null
+     *     SubnetId: string
      * } $args
      */
     public function __construct(array $args)

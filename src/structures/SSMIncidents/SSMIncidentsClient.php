@@ -4,7 +4,6 @@ namespace Sunaoka\Aws\Structures\SSMIncidents;
 
 class SSMIncidentsClient extends \Aws\SSMIncidents\SSMIncidentsClient
 {
-    use BatchGetIncidentFindings\BatchGetIncidentFindingsTrait;
     use CreateReplicationSet\CreateReplicationSetTrait;
     use CreateResponsePlan\CreateResponsePlanTrait;
     use CreateTimelineEvent\CreateTimelineEventTrait;
@@ -18,7 +17,6 @@ class SSMIncidentsClient extends \Aws\SSMIncidents\SSMIncidentsClient
     use GetResourcePolicies\GetResourcePoliciesTrait;
     use GetResponsePlan\GetResponsePlanTrait;
     use GetTimelineEvent\GetTimelineEventTrait;
-    use ListIncidentFindings\ListIncidentFindingsTrait;
     use ListIncidentRecords\ListIncidentRecordsTrait;
     use ListRelatedItems\ListRelatedItemsTrait;
     use ListReplicationSets\ListReplicationSetsTrait;

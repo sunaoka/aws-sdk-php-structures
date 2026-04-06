@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string|null $prerequisite
  * @property string $recommendationId
- * @property 'Implemented'|'Inactive'|'NotImplemented'|'Excluded'|null $recommendationStatus
  * @property string $referenceId
  * @property 'Metric'|'Composite'|'Canary'|'Logs'|'Event' $type
  */
@@ -27,7 +26,6 @@ class AlarmRecommendation extends Shape
      *     name: string,
      *     prerequisite?: string|null,
      *     recommendationId: string,
-     *     recommendationStatus?: 'Implemented'|'Inactive'|'NotImplemented'|'Excluded'|null,
      *     referenceId: string,
      *     type: 'Metric'|'Composite'|'Canary'|'Logs'|'Event'
      * } $args

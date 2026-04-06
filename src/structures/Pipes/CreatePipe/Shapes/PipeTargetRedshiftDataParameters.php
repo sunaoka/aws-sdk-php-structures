@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Pipes\CreatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $SecretManagerArn
  * @property string $Database
  * @property string|null $DbUser
+ * @property string|null $SecretManagerArn
+ * @property list<string> $Sqls
  * @property string|null $StatementName
  * @property bool|null $WithEvent
- * @property list<string> $Sqls
  */
 class PipeTargetRedshiftDataParameters extends Shape
 {
     /**
      * @param array{
-     *     SecretManagerArn?: string|null,
      *     Database: string,
      *     DbUser?: string|null,
+     *     SecretManagerArn?: string|null,
+     *     Sqls: list<string>,
      *     StatementName?: string|null,
-     *     WithEvent?: bool|null,
-     *     Sqls: list<string>
+     *     WithEvent?: bool|null
      * } $args
      */
     public function __construct(array $args)

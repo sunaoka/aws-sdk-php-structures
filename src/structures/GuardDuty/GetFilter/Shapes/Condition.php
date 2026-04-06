@@ -17,8 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $GreaterThanOrEqual
  * @property int|null $LessThan
  * @property int|null $LessThanOrEqual
- * @property list<string>|null $Matches
- * @property list<string>|null $NotMatches
  */
 class Condition extends Shape
 {
@@ -35,9 +33,7 @@ class Condition extends Shape
      *     GreaterThan?: int|null,
      *     GreaterThanOrEqual?: int|null,
      *     LessThan?: int|null,
-     *     LessThanOrEqual?: int|null,
-     *     Matches?: list<string>|null,
-     *     NotMatches?: list<string>|null
+     *     LessThanOrEqual?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,8 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $datastoreId
  * @property string $imageSetId
  * @property string $latestVersionId
- * @property bool|null $force
- * @property bool|null $includeStudyImageSets
  * @property Shapes\MetadataUpdates $updateImageSetMetadataUpdates
  */
 class UpdateImageSetMetadataRequest extends Request
@@ -19,8 +17,6 @@ class UpdateImageSetMetadataRequest extends Request
      *     datastoreId: string,
      *     imageSetId: string,
      *     latestVersionId: string,
-     *     force?: bool|null,
-     *     includeStudyImageSets?: bool|null,
      *     updateImageSetMetadataUpdates: Shapes\MetadataUpdates
      * } $args
      */

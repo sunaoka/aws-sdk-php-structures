@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SourceIpConfig|null $SourceIpConfig
  * @property Shapes\OidcConfig|null $OidcConfig
  * @property Shapes\WorkforceVpcConfigRequest|null $WorkforceVpcConfig
- * @property 'ipv4'|'dualstack'|null $IpAddressType
  */
 class UpdateWorkforceRequest extends Request
 {
@@ -18,8 +17,7 @@ class UpdateWorkforceRequest extends Request
      *     WorkforceName: string,
      *     SourceIpConfig?: Shapes\SourceIpConfig|null,
      *     OidcConfig?: Shapes\OidcConfig|null,
-     *     WorkforceVpcConfig?: Shapes\WorkforceVpcConfigRequest|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|null
+     *     WorkforceVpcConfig?: Shapes\WorkforceVpcConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge' $instanceType
  * @property int<0, 1200>|null $inactivityTimeoutMinutes
  * @property Shapes\PersistentStorageConfiguration $persistentStorage
- * @property string|null $vpcConnectionName
  */
 class CreateDevEnvironmentRequest extends Request
 {
@@ -28,8 +27,7 @@ class CreateDevEnvironmentRequest extends Request
      *     ides?: list<Shapes\IdeConfiguration>|null,
      *     instanceType: 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge',
      *     inactivityTimeoutMinutes?: int<0, 1200>|null,
-     *     persistentStorage: Shapes\PersistentStorageConfiguration,
-     *     vpcConnectionName?: string|null
+     *     persistentStorage: Shapes\PersistentStorageConfiguration
      * } $args
      */
     public function __construct(array $args)

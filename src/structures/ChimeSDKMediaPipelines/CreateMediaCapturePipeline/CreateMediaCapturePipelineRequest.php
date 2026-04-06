@@ -11,8 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SinkArn
  * @property string|null $ClientRequestToken
  * @property Shapes\ChimeSdkMeetingConfiguration|null $ChimeSdkMeetingConfiguration
- * @property Shapes\SseAwsKeyManagementParams|null $SseAwsKeyManagementParams
- * @property string|null $SinkIamRoleArn
  * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMediaCapturePipelineRequest extends Request
@@ -25,8 +23,6 @@ class CreateMediaCapturePipelineRequest extends Request
      *     SinkArn: string,
      *     ClientRequestToken?: string|null,
      *     ChimeSdkMeetingConfiguration?: Shapes\ChimeSdkMeetingConfiguration|null,
-     *     SseAwsKeyManagementParams?: Shapes\SseAwsKeyManagementParams|null,
-     *     SinkIamRoleArn?: string|null,
      *     Tags?: list<Shapes\Tag>|null
      * } $args
      */

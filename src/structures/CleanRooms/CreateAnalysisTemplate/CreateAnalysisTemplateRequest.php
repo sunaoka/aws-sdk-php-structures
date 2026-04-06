@@ -8,13 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string $membershipIdentifier
  * @property string $name
- * @property 'SQL'|'PYSPARK_1_0' $format
+ * @property 'SQL' $format
  * @property Shapes\AnalysisSource $source
  * @property array<string, string>|null $tags
  * @property list<Shapes\AnalysisParameter>|null $analysisParameters
- * @property Shapes\AnalysisSchema|null $schema
- * @property Shapes\ErrorMessageConfiguration|null $errorMessageConfiguration
- * @property Shapes\SyntheticDataParameters|null $syntheticDataParameters
  */
 class CreateAnalysisTemplateRequest extends Request
 {
@@ -23,13 +20,10 @@ class CreateAnalysisTemplateRequest extends Request
      *     description?: string|null,
      *     membershipIdentifier: string,
      *     name: string,
-     *     format: 'SQL'|'PYSPARK_1_0',
+     *     format: 'SQL',
      *     source: Shapes\AnalysisSource,
      *     tags?: array<string, string>|null,
-     *     analysisParameters?: list<Shapes\AnalysisParameter>|null,
-     *     schema?: Shapes\AnalysisSchema|null,
-     *     errorMessageConfiguration?: Shapes\ErrorMessageConfiguration|null,
-     *     syntheticDataParameters?: Shapes\SyntheticDataParameters|null
+     *     analysisParameters?: list<Shapes\AnalysisParameter>|null
      * } $args
      */
     public function __construct(array $args)

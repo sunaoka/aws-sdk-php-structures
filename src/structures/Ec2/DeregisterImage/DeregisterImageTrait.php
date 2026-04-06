@@ -6,11 +6,10 @@ trait DeregisterImageTrait
 {
     /**
      * @param DeregisterImageRequest $args
-     * @return DeregisterImageResponse
+     * @return void
      */
     public function deregisterImage(DeregisterImageRequest $args)
     {
-        $result = parent::deregisterImage($args->toArray());
-        return new DeregisterImageResponse($result->toArray());
+        parent::deregisterImage($args->toArray());
     }
 }

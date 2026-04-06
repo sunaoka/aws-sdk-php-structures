@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GroundStation\DescribeContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $minimum
  * @property int $maximum
+ * @property int $minimum
  */
 class IntegerRange extends Shape
 {
     /**
      * @param array{
-     *     minimum: int,
-     *     maximum: int
+     *     maximum: int,
+     *     minimum: int
      * } $args
      */
     public function __construct(array $args)

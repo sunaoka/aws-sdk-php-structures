@@ -9,12 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $BackupJobId
  * @property string|null $BackupVaultName
  * @property string|null $BackupVaultArn
- * @property string|null $VaultType
- * @property string|null $VaultLockState
  * @property string|null $RecoveryPointArn
- * @property Lifecycle|null $RecoveryPointLifecycle
- * @property string|null $EncryptionKeyArn
- * @property bool|null $IsEncrypted
  * @property string|null $ResourceArn
  * @property \Aws\Api\DateTimeResult|null $CreationDate
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
@@ -33,8 +28,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ParentJobId
  * @property bool|null $IsParent
  * @property string|null $ResourceName
- * @property \Aws\Api\DateTimeResult|null $InitiationDate
- * @property string|null $MessageCategory
  */
 class BackupJob extends Shape
 {
@@ -44,12 +37,7 @@ class BackupJob extends Shape
      *     BackupJobId?: string|null,
      *     BackupVaultName?: string|null,
      *     BackupVaultArn?: string|null,
-     *     VaultType?: string|null,
-     *     VaultLockState?: string|null,
      *     RecoveryPointArn?: string|null,
-     *     RecoveryPointLifecycle?: Lifecycle|null,
-     *     EncryptionKeyArn?: string|null,
-     *     IsEncrypted?: bool|null,
      *     ResourceArn?: string|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
      *     CompletionDate?: \Aws\Api\DateTimeResult|null,
@@ -67,9 +55,7 @@ class BackupJob extends Shape
      *     BackupType?: string|null,
      *     ParentJobId?: string|null,
      *     IsParent?: bool|null,
-     *     ResourceName?: string|null,
-     *     InitiationDate?: \Aws\Api\DateTimeResult|null,
-     *     MessageCategory?: string|null
+     *     ResourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

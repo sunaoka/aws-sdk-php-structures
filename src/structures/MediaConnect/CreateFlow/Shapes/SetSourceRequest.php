@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<MediaStreamSourceConfigurationRequest>|null $MediaStreamSourceConfigurations
  * @property int|null $MinLatency
  * @property string|null $Name
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null $Protocol
  * @property int|null $SenderControlPort
  * @property string|null $SenderIpAddress
  * @property string|null $SourceListenerAddress
@@ -24,10 +24,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcInterfaceName
  * @property string|null $WhitelistCidr
  * @property SetGatewayBridgeSourceRequest|null $GatewayBridgeSource
- * @property NdiSourceSettings|null $NdiSourceSettings
- * @property array<string, string>|null $SourceTags
- * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
- * @property FlowTransitEncryption|null $RouterIntegrationTransitDecryption
  */
 class SetSourceRequest extends Shape
 {
@@ -43,7 +39,7 @@ class SetSourceRequest extends Shape
      *     MediaStreamSourceConfigurations?: list<MediaStreamSourceConfigurationRequest>|null,
      *     MinLatency?: int|null,
      *     Name?: string|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null,
      *     SenderControlPort?: int|null,
      *     SenderIpAddress?: string|null,
      *     SourceListenerAddress?: string|null,
@@ -51,11 +47,7 @@ class SetSourceRequest extends Shape
      *     StreamId?: string|null,
      *     VpcInterfaceName?: string|null,
      *     WhitelistCidr?: string|null,
-     *     GatewayBridgeSource?: SetGatewayBridgeSourceRequest|null,
-     *     NdiSourceSettings?: NdiSourceSettings|null,
-     *     SourceTags?: array<string, string>|null,
-     *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
-     *     RouterIntegrationTransitDecryption?: FlowTransitEncryption|null
+     *     GatewayBridgeSource?: SetGatewayBridgeSourceRequest|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Ec2\StopInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $InstanceId
  * @property InstanceState|null $CurrentState
+ * @property string|null $InstanceId
  * @property InstanceState|null $PreviousState
  */
 class InstanceStateChange extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string|null,
      *     CurrentState?: InstanceState|null,
+     *     InstanceId?: string|null,
      *     PreviousState?: InstanceState|null
      * } $args
      */

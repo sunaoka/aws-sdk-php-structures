@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property 'SIMPLE'|'LDAP'|'CONFIG_MANAGED' $AuthenticationStrategy
+ * @property 'SIMPLE'|'LDAP' $AuthenticationStrategy
  * @property \Aws\Api\DateTimeResult $Created
  * @property string $Description
  * @property 'ACTIVEMQ'|'RABBITMQ' $EngineType
@@ -21,7 +21,7 @@ class Configuration extends Shape
     /**
      * @param array{
      *     Arn: string,
-     *     AuthenticationStrategy: 'SIMPLE'|'LDAP'|'CONFIG_MANAGED',
+     *     AuthenticationStrategy: 'SIMPLE'|'LDAP',
      *     Created: \Aws\Api\DateTimeResult,
      *     Description: string,
      *     EngineType: 'ACTIVEMQ'|'RABBITMQ',

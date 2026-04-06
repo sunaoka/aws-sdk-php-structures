@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\WorkflowStepOutput>|null $outputs
  * @property list<string>|null $previous
  * @property list<string>|null $next
- * @property 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null $status
+ * @property 'AWAITING_DEPENDENCIES'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null $status
  * @property string|null $statusMessage
  * @property string|null $scriptOutputLocation
  * @property \Aws\Api\DateTimeResult|null $creationTime

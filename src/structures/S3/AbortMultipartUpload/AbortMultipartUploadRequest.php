@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UploadId
  * @property 'requester'|null $RequestPayer
  * @property string|null $ExpectedBucketOwner
- * @property \Aws\Api\DateTimeResult|null $IfMatchInitiatedTime
  */
 class AbortMultipartUploadRequest extends Request
 {
@@ -20,8 +19,7 @@ class AbortMultipartUploadRequest extends Request
      *     Key: string,
      *     UploadId: string,
      *     RequestPayer?: 'requester'|null,
-     *     ExpectedBucketOwner?: string|null,
-     *     IfMatchInitiatedTime?: \Aws\Api\DateTimeResult|null
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

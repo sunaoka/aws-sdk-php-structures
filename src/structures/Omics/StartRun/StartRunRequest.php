@@ -10,22 +10,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $runId
  * @property string $roleArn
  * @property string|null $name
- * @property string|null $cacheId
- * @property 'CACHE_ON_FAILURE'|'CACHE_ALWAYS'|null $cacheBehavior
  * @property string|null $runGroupId
  * @property int<0, 100000>|null $priority
  * @property Shapes\RunParameters|null $parameters
  * @property int<0, 100000>|null $storageCapacity
- * @property string $outputUri
+ * @property string|null $outputUri
  * @property 'OFF'|'FATAL'|'ERROR'|'ALL'|null $logLevel
  * @property array<string, string>|null $tags
  * @property string $requestId
- * @property 'RETAIN'|'REMOVE'|null $retentionMode
- * @property 'STATIC'|'DYNAMIC'|null $storageType
- * @property string|null $workflowOwnerId
- * @property string|null $workflowVersionName
- * @property 'RESTRICTED'|'VPC'|null $networkingMode
- * @property string|null $configurationName
  */
 class StartRunRequest extends Request
 {
@@ -36,22 +28,14 @@ class StartRunRequest extends Request
      *     runId?: string|null,
      *     roleArn: string,
      *     name?: string|null,
-     *     cacheId?: string|null,
-     *     cacheBehavior?: 'CACHE_ON_FAILURE'|'CACHE_ALWAYS'|null,
      *     runGroupId?: string|null,
      *     priority?: int<0, 100000>|null,
      *     parameters?: Shapes\RunParameters|null,
      *     storageCapacity?: int<0, 100000>|null,
-     *     outputUri: string,
+     *     outputUri?: string|null,
      *     logLevel?: 'OFF'|'FATAL'|'ERROR'|'ALL'|null,
      *     tags?: array<string, string>|null,
-     *     requestId: string,
-     *     retentionMode?: 'RETAIN'|'REMOVE'|null,
-     *     storageType?: 'STATIC'|'DYNAMIC'|null,
-     *     workflowOwnerId?: string|null,
-     *     workflowVersionName?: string|null,
-     *     networkingMode?: 'RESTRICTED'|'VPC'|null,
-     *     configurationName?: string|null
+     *     requestId: string
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QuickSight\StartAssetBundleExportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  * @property list<'StartAfterDateTime'> $Properties
  */
 class AssetBundleExportJobRefreshScheduleOverrideProperties extends Shape
 {
     /**
      * @param array{
-     *     Arn: string,
+     *     Arn?: string|null,
      *     Properties: list<'StartAfterDateTime'>
      * } $args
      */

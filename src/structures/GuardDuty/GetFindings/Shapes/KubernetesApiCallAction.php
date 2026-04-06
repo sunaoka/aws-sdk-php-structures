@@ -12,10 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RemoteIpDetails|null $RemoteIpDetails
  * @property int|null $StatusCode
  * @property string|null $Parameters
- * @property string|null $Resource
- * @property string|null $Subresource
- * @property string|null $Namespace
- * @property string|null $ResourceName
  */
 class KubernetesApiCallAction extends Shape
 {
@@ -27,11 +23,7 @@ class KubernetesApiCallAction extends Shape
      *     UserAgent?: string|null,
      *     RemoteIpDetails?: RemoteIpDetails|null,
      *     StatusCode?: int|null,
-     *     Parameters?: string|null,
-     *     Resource?: string|null,
-     *     Subresource?: string|null,
-     *     Namespace?: string|null,
-     *     ResourceName?: string|null
+     *     Parameters?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RoleArn
  * @property string|null $ServerSideKmsKeyId
  * @property list<Shapes\Tag>|null $Tags
- * @property 'NO_IMPORT'|'ADD_WHEN_EMPTY'|'OVERWRITE'|null $InferenceDataImportStrategy
  */
 class ImportModelVersionRequest extends Request
 {
@@ -26,8 +25,7 @@ class ImportModelVersionRequest extends Request
      *     ClientToken: string,
      *     RoleArn?: string|null,
      *     ServerSideKmsKeyId?: string|null,
-     *     Tags?: list<Shapes\Tag>|null,
-     *     InferenceDataImportStrategy?: 'NO_IMPORT'|'ADD_WHEN_EMPTY'|'OVERWRITE'|null
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

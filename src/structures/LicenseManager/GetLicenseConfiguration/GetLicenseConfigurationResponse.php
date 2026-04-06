@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\ProductInformation>|null $ProductInformationList
  * @property Shapes\AutomatedDiscoveryInformation|null $AutomatedDiscoveryInformation
  * @property bool|null $DisassociateWhenNotFound
- * @property int|null $LicenseExpiry
  */
 class GetLicenseConfigurationResponse extends Response
 {

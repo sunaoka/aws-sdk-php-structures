@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Emr\AddInstanceFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'lowest-price'|'prioritized' $AllocationStrategy
+ * @property 'lowest-price' $AllocationStrategy
  * @property OnDemandCapacityReservationOptions|null $CapacityReservationOptions
  */
 class OnDemandProvisioningSpecification extends Shape
 {
     /**
      * @param array{
-     *     AllocationStrategy: 'lowest-price'|'prioritized',
+     *     AllocationStrategy: 'lowest-price',
      *     CapacityReservationOptions?: OnDemandCapacityReservationOptions|null
      * } $args
      */

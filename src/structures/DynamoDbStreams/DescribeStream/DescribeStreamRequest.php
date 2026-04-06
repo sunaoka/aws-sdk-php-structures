@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StreamArn
  * @property int<1, max>|null $Limit
  * @property string|null $ExclusiveStartShardId
- * @property Shapes\ShardFilter|null $ShardFilter
  */
 class DescribeStreamRequest extends Request
 {
@@ -16,8 +15,7 @@ class DescribeStreamRequest extends Request
      * @param array{
      *     StreamArn: string,
      *     Limit?: int<1, max>|null,
-     *     ExclusiveStartShardId?: string|null,
-     *     ShardFilter?: Shapes\ShardFilter|null
+     *     ExclusiveStartShardId?: string|null
      * } $args
      */
     public function __construct(array $args)

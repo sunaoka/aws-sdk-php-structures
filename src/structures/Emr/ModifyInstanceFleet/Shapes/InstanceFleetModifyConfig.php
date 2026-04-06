@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $TargetOnDemandCapacity
  * @property int<0, max>|null $TargetSpotCapacity
  * @property InstanceFleetResizingSpecifications|null $ResizeSpecifications
- * @property list<InstanceTypeConfig>|null $InstanceTypeConfigs
- * @property string|null $Context
  */
 class InstanceFleetModifyConfig extends Shape
 {
@@ -19,9 +17,7 @@ class InstanceFleetModifyConfig extends Shape
      *     InstanceFleetId: string,
      *     TargetOnDemandCapacity?: int<0, max>|null,
      *     TargetSpotCapacity?: int<0, max>|null,
-     *     ResizeSpecifications?: InstanceFleetResizingSpecifications|null,
-     *     InstanceTypeConfigs?: list<InstanceTypeConfig>|null,
-     *     Context?: string|null
+     *     ResizeSpecifications?: InstanceFleetResizingSpecifications|null
      * } $args
      */
     public function __construct(array $args)

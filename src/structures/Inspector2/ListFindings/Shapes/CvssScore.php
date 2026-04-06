@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property double $baseScore
  * @property string $scoringVector
- * @property string $version
  * @property string $source
+ * @property string $version
  */
 class CvssScore extends Shape
 {
@@ -16,8 +16,8 @@ class CvssScore extends Shape
      * @param array{
      *     baseScore: double,
      *     scoringVector: string,
-     *     version: string,
-     *     source: string
+     *     source: string,
+     *     version: string
      * } $args
      */
     public function __construct(array $args)

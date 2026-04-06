@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'STANDARD'|'SINGLE_PIPELINE'|null $ChannelClass
- * @property 'MPEG2'|'AVC'|'HEVC'|'AUDIO'|'LINK'|'AV1'|null $Codec
+ * @property 'MPEG2'|'AVC'|'HEVC'|'AUDIO'|'LINK'|null $Codec
  * @property 'MAX_10_MBPS'|'MAX_20_MBPS'|'MAX_50_MBPS'|null $MaximumBitrate
  * @property 'MAX_30_FPS'|'MAX_60_FPS'|null $MaximumFramerate
  * @property 'SD'|'HD'|'FHD'|'UHD'|null $Resolution
@@ -19,7 +19,7 @@ class ReservationResourceSpecification extends Shape
     /**
      * @param array{
      *     ChannelClass?: 'STANDARD'|'SINGLE_PIPELINE'|null,
-     *     Codec?: 'MPEG2'|'AVC'|'HEVC'|'AUDIO'|'LINK'|'AV1'|null,
+     *     Codec?: 'MPEG2'|'AVC'|'HEVC'|'AUDIO'|'LINK'|null,
      *     MaximumBitrate?: 'MAX_10_MBPS'|'MAX_20_MBPS'|'MAX_50_MBPS'|null,
      *     MaximumFramerate?: 'MAX_30_FPS'|'MAX_60_FPS'|null,
      *     Resolution?: 'SD'|'HD'|'FHD'|'UHD'|null,

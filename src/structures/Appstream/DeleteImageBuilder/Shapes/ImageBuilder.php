@@ -12,9 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DisplayName
  * @property VpcConfig|null $VpcConfig
  * @property string|null $InstanceType
- * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'WINDOWS_SERVER_2025'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|'UBUNTU_PRO_2404'|null $Platform
+ * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'AMAZON_LINUX2'|null $Platform
  * @property string|null $IamRoleArn
- * @property 'PENDING'|'UPDATING_AGENT'|'RUNNING'|'STOPPING'|'STOPPED'|'REBOOTING'|'SNAPSHOTTING'|'DELETING'|'FAILED'|'UPDATING'|'PENDING_QUALIFICATION'|'PENDING_SYNCING_APPS'|'SYNCING_APPS'|'PENDING_IMAGE_IMPORT'|null $State
+ * @property 'PENDING'|'UPDATING_AGENT'|'RUNNING'|'STOPPING'|'STOPPED'|'REBOOTING'|'SNAPSHOTTING'|'DELETING'|'FAILED'|'UPDATING'|'PENDING_QUALIFICATION'|null $State
  * @property ImageBuilderStateChangeReason|null $StateChangeReason
  * @property \Aws\Api\DateTimeResult|null $CreatedTime
  * @property bool|null $EnableDefaultInternetAccess
@@ -23,9 +23,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ResourceError>|null $ImageBuilderErrors
  * @property string|null $AppstreamAgentVersion
  * @property list<AccessEndpoint>|null $AccessEndpoints
- * @property VolumeConfig|null $RootVolumeConfig
- * @property 'TRUE'|'FALSE'|null $LatestAppstreamAgentVersion
- * @property bool|null $DisableIMDSV1
  */
 class ImageBuilder extends Shape
 {
@@ -38,9 +35,9 @@ class ImageBuilder extends Shape
      *     DisplayName?: string|null,
      *     VpcConfig?: VpcConfig|null,
      *     InstanceType?: string|null,
-     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'WINDOWS_SERVER_2025'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|'UBUNTU_PRO_2404'|null,
+     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'AMAZON_LINUX2'|null,
      *     IamRoleArn?: string|null,
-     *     State?: 'PENDING'|'UPDATING_AGENT'|'RUNNING'|'STOPPING'|'STOPPED'|'REBOOTING'|'SNAPSHOTTING'|'DELETING'|'FAILED'|'UPDATING'|'PENDING_QUALIFICATION'|'PENDING_SYNCING_APPS'|'SYNCING_APPS'|'PENDING_IMAGE_IMPORT'|null,
+     *     State?: 'PENDING'|'UPDATING_AGENT'|'RUNNING'|'STOPPING'|'STOPPED'|'REBOOTING'|'SNAPSHOTTING'|'DELETING'|'FAILED'|'UPDATING'|'PENDING_QUALIFICATION'|null,
      *     StateChangeReason?: ImageBuilderStateChangeReason|null,
      *     CreatedTime?: \Aws\Api\DateTimeResult|null,
      *     EnableDefaultInternetAccess?: bool|null,
@@ -48,10 +45,7 @@ class ImageBuilder extends Shape
      *     NetworkAccessConfiguration?: NetworkAccessConfiguration|null,
      *     ImageBuilderErrors?: list<ResourceError>|null,
      *     AppstreamAgentVersion?: string|null,
-     *     AccessEndpoints?: list<AccessEndpoint>|null,
-     *     RootVolumeConfig?: VolumeConfig|null,
-     *     LatestAppstreamAgentVersion?: 'TRUE'|'FALSE'|null,
-     *     DisableIMDSV1?: bool|null
+     *     AccessEndpoints?: list<AccessEndpoint>|null
      * } $args
      */
     public function __construct(array $args)

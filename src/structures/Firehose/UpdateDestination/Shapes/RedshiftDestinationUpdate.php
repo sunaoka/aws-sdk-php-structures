@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Disabled'|'Enabled'|null $S3BackupMode
  * @property S3DestinationUpdate|null $S3BackupUpdate
  * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
- * @property SecretsManagerConfiguration|null $SecretsManagerConfiguration
  */
 class RedshiftDestinationUpdate extends Shape
 {
@@ -32,8 +31,7 @@ class RedshiftDestinationUpdate extends Shape
      *     ProcessingConfiguration?: ProcessingConfiguration|null,
      *     S3BackupMode?: 'Disabled'|'Enabled'|null,
      *     S3BackupUpdate?: S3DestinationUpdate|null,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
-     *     SecretsManagerConfiguration?: SecretsManagerConfiguration|null
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $renderTypeDeclarations
  * @property bool|null $inlineSourceMap
  * @property ApiConfiguration|null $apiConfiguration
- * @property array<string, string>|null $dependencies
  */
 class ReactStartCodegenJobData extends Shape
 {
@@ -22,8 +21,7 @@ class ReactStartCodegenJobData extends Shape
      *     script?: 'jsx'|'tsx'|'js'|null,
      *     renderTypeDeclarations?: bool|null,
      *     inlineSourceMap?: bool|null,
-     *     apiConfiguration?: ApiConfiguration|null,
-     *     dependencies?: array<string, string>|null
+     *     apiConfiguration?: ApiConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

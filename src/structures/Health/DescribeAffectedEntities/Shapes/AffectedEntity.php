@@ -11,9 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $entityUrl
  * @property string|null $awsAccountId
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
- * @property 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'|null $statusCode
+ * @property 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|null $statusCode
  * @property array<string, string>|null $tags
- * @property array<string, string>|null $entityMetadata
  */
 class AffectedEntity extends Shape
 {
@@ -25,9 +24,8 @@ class AffectedEntity extends Shape
      *     entityUrl?: string|null,
      *     awsAccountId?: string|null,
      *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
-     *     statusCode?: 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'|null,
-     *     tags?: array<string, string>|null,
-     *     entityMetadata?: array<string, string>|null
+     *     statusCode?: 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

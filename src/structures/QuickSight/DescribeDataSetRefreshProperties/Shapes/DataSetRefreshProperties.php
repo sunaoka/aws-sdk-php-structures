@@ -5,18 +5,14 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSetRefreshProperties\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RefreshConfiguration|null $RefreshConfiguration
- * @property RefreshFailureConfiguration|null $FailureConfiguration
+ * @property RefreshConfiguration $RefreshConfiguration
  */
 class DataSetRefreshProperties extends Shape
 {
     /**
-     * @param array{
-     *     RefreshConfiguration?: RefreshConfiguration|null,
-     *     FailureConfiguration?: RefreshFailureConfiguration|null
-     * } $args
+     * @param array{RefreshConfiguration: RefreshConfiguration} $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

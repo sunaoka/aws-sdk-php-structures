@@ -9,15 +9,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ChannelGroupName
  * @property string $ChannelName
  * @property string $OriginEndpointName
- * @property 'TS'|'CMAF'|'ISM' $ContainerType
+ * @property 'TS'|'CMAF' $ContainerType
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $ModifiedAt
  * @property list<ListHlsManifestConfiguration>|null $HlsManifests
  * @property list<ListLowLatencyHlsManifestConfiguration>|null $LowLatencyHlsManifests
- * @property list<ListDashManifestConfiguration>|null $DashManifests
- * @property list<ListMssManifestConfiguration>|null $MssManifests
- * @property ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
  */
 class OriginEndpointListConfiguration extends Shape
 {
@@ -27,15 +24,12 @@ class OriginEndpointListConfiguration extends Shape
      *     ChannelGroupName: string,
      *     ChannelName: string,
      *     OriginEndpointName: string,
-     *     ContainerType: 'TS'|'CMAF'|'ISM',
+     *     ContainerType: 'TS'|'CMAF',
      *     Description?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     ModifiedAt?: \Aws\Api\DateTimeResult|null,
      *     HlsManifests?: list<ListHlsManifestConfiguration>|null,
-     *     LowLatencyHlsManifests?: list<ListLowLatencyHlsManifestConfiguration>|null,
-     *     DashManifests?: list<ListDashManifestConfiguration>|null,
-     *     MssManifests?: list<ListMssManifestConfiguration>|null,
-     *     ForceEndpointErrorConfiguration?: ForceEndpointErrorConfiguration|null
+     *     LowLatencyHlsManifests?: list<ListLowLatencyHlsManifestConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

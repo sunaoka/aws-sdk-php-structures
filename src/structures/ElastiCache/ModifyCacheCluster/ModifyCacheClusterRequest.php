@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CacheParameterGroupName
  * @property string|null $NotificationTopicStatus
  * @property bool|null $ApplyImmediately
- * @property string|null $Engine
  * @property string|null $EngineVersion
  * @property bool|null $AutoMinorVersionUpgrade
  * @property int|null $SnapshotRetentionLimit
@@ -27,7 +26,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SET'|'ROTATE'|'DELETE'|null $AuthTokenUpdateStrategy
  * @property list<Shapes\LogDeliveryConfigurationRequest>|null $LogDeliveryConfigurations
  * @property 'ipv4'|'ipv6'|null $IpDiscovery
- * @property Shapes\ScaleConfig|null $ScaleConfig
  */
 class ModifyCacheClusterRequest extends Request
 {
@@ -45,7 +43,6 @@ class ModifyCacheClusterRequest extends Request
      *     CacheParameterGroupName?: string|null,
      *     NotificationTopicStatus?: string|null,
      *     ApplyImmediately?: bool|null,
-     *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     AutoMinorVersionUpgrade?: bool|null,
      *     SnapshotRetentionLimit?: int|null,
@@ -54,8 +51,7 @@ class ModifyCacheClusterRequest extends Request
      *     AuthToken?: string|null,
      *     AuthTokenUpdateStrategy?: 'SET'|'ROTATE'|'DELETE'|null,
      *     LogDeliveryConfigurations?: list<Shapes\LogDeliveryConfigurationRequest>|null,
-     *     IpDiscovery?: 'ipv4'|'ipv6'|null,
-     *     ScaleConfig?: Shapes\ScaleConfig|null
+     *     IpDiscovery?: 'ipv4'|'ipv6'|null
      * } $args
      */
     public function __construct(array $args)

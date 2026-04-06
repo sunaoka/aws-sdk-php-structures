@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Ruleset
  * @property array<string, string>|null $Tags
  * @property Shapes\DataQualityTargetTable|null $TargetTable
- * @property string|null $DataQualitySecurityConfiguration
  * @property string|null $ClientToken
  */
 class CreateDataQualityRulesetRequest extends Request
@@ -22,7 +21,6 @@ class CreateDataQualityRulesetRequest extends Request
      *     Ruleset: string,
      *     Tags?: array<string, string>|null,
      *     TargetTable?: Shapes\DataQualityTargetTable|null,
-     *     DataQualitySecurityConfiguration?: string|null,
      *     ClientToken?: string|null
      * } $args
      */

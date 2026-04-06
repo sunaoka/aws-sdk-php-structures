@@ -11,8 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATED'|'CREATING'|'DELETING'|'RETRYABLE_FAILURE'|'NON_RETRYABLE_FAILURE'|null $CreationStatus
  * @property 'QUICKSIGHT'|null $IdentityStore
  * @property NamespaceError|null $NamespaceError
- * @property string|null $IamIdentityCenterApplicationArn
- * @property string|null $IamIdentityCenterInstanceArn
  */
 class NamespaceInfoV2 extends Shape
 {
@@ -23,9 +21,7 @@ class NamespaceInfoV2 extends Shape
      *     CapacityRegion?: string|null,
      *     CreationStatus?: 'CREATED'|'CREATING'|'DELETING'|'RETRYABLE_FAILURE'|'NON_RETRYABLE_FAILURE'|null,
      *     IdentityStore?: 'QUICKSIGHT'|null,
-     *     NamespaceError?: NamespaceError|null,
-     *     IamIdentityCenterApplicationArn?: string|null,
-     *     IamIdentityCenterInstanceArn?: string|null
+     *     NamespaceError?: NamespaceError|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $entityValues
  * @property list<DateTimeRange>|null $lastUpdatedTimes
  * @property list<array<string, string>>|null $tags
- * @property list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'>|null $statusCodes
+ * @property list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'>|null $statusCodes
  */
 class EntityFilter extends Shape
 {
@@ -21,7 +21,7 @@ class EntityFilter extends Shape
      *     entityValues?: list<string>|null,
      *     lastUpdatedTimes?: list<DateTimeRange>|null,
      *     tags?: list<array<string, string>>|null,
-     *     statusCodes?: list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'>|null
+     *     statusCodes?: list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'>|null
      * } $args
      */
     public function __construct(array $args)

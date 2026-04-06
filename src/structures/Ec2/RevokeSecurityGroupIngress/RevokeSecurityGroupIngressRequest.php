@@ -14,8 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SourceSecurityGroupName
  * @property string|null $SourceSecurityGroupOwnerId
  * @property int|null $ToPort
- * @property list<string>|null $SecurityGroupRuleIds
  * @property bool|null $DryRun
+ * @property list<string>|null $SecurityGroupRuleIds
  */
 class RevokeSecurityGroupIngressRequest extends Request
 {
@@ -30,8 +30,8 @@ class RevokeSecurityGroupIngressRequest extends Request
      *     SourceSecurityGroupName?: string|null,
      *     SourceSecurityGroupOwnerId?: string|null,
      *     ToPort?: int|null,
-     *     SecurityGroupRuleIds?: list<string>|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     SecurityGroupRuleIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

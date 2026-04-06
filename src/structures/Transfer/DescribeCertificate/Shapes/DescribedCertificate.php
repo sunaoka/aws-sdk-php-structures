@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property string|null $CertificateId
- * @property 'SIGNING'|'ENCRYPTION'|'TLS'|null $Usage
+ * @property 'SIGNING'|'ENCRYPTION'|null $Usage
  * @property 'ACTIVE'|'PENDING_ROTATION'|'INACTIVE'|null $Status
  * @property string|null $Certificate
  * @property string|null $CertificateChain
@@ -26,7 +26,7 @@ class DescribedCertificate extends Shape
      * @param array{
      *     Arn: string,
      *     CertificateId?: string|null,
-     *     Usage?: 'SIGNING'|'ENCRYPTION'|'TLS'|null,
+     *     Usage?: 'SIGNING'|'ENCRYPTION'|null,
      *     Status?: 'ACTIVE'|'PENDING_ROTATION'|'INACTIVE'|null,
      *     Certificate?: string|null,
      *     CertificateChain?: string|null,

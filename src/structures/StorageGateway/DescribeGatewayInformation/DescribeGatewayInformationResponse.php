@@ -26,7 +26,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'Small'|'Medium'|'Large'|null $GatewayCapacity
  * @property list<'Small'|'Medium'|'Large'>|null $SupportedGatewayCapacities
  * @property string|null $HostEnvironmentId
- * @property string|null $SoftwareVersion
  */
 class DescribeGatewayInformationResponse extends Response
 {

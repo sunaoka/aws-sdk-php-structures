@@ -8,8 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LoadBalancerArn
  * @property list<string>|null $Subnets
  * @property list<Shapes\SubnetMapping>|null $SubnetMappings
- * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
- * @property 'on'|'off'|null $EnablePrefixForIpv6SourceNat
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  */
 class SetSubnetsRequest extends Request
 {
@@ -18,8 +17,7 @@ class SetSubnetsRequest extends Request
      *     LoadBalancerArn: string,
      *     Subnets?: list<string>|null,
      *     SubnetMappings?: list<Shapes\SubnetMapping>|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null,
-     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'|null
+     *     IpAddressType?: 'ipv4'|'dualstack'|null
      * } $args
      */
     public function __construct(array $args)

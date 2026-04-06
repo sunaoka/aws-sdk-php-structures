@@ -8,10 +8,7 @@ class S3Client extends \Aws\S3\S3Client
     use CompleteMultipartUpload\CompleteMultipartUploadTrait;
     use CopyObject\CopyObjectTrait;
     use CreateBucket\CreateBucketTrait;
-    use CreateBucketMetadataConfiguration\CreateBucketMetadataConfigurationTrait;
-    use CreateBucketMetadataTableConfiguration\CreateBucketMetadataTableConfigurationTrait;
     use CreateMultipartUpload\CreateMultipartUploadTrait;
-    use CreateSession\CreateSessionTrait;
     use DeleteBucket\DeleteBucketTrait;
     use DeleteBucketAnalyticsConfiguration\DeleteBucketAnalyticsConfigurationTrait;
     use DeleteBucketCors\DeleteBucketCorsTrait;
@@ -19,8 +16,6 @@ class S3Client extends \Aws\S3\S3Client
     use DeleteBucketIntelligentTieringConfiguration\DeleteBucketIntelligentTieringConfigurationTrait;
     use DeleteBucketInventoryConfiguration\DeleteBucketInventoryConfigurationTrait;
     use DeleteBucketLifecycle\DeleteBucketLifecycleTrait;
-    use DeleteBucketMetadataConfiguration\DeleteBucketMetadataConfigurationTrait;
-    use DeleteBucketMetadataTableConfiguration\DeleteBucketMetadataTableConfigurationTrait;
     use DeleteBucketMetricsConfiguration\DeleteBucketMetricsConfigurationTrait;
     use DeleteBucketOwnershipControls\DeleteBucketOwnershipControlsTrait;
     use DeleteBucketPolicy\DeleteBucketPolicyTrait;
@@ -31,7 +26,6 @@ class S3Client extends \Aws\S3\S3Client
     use DeleteObjectTagging\DeleteObjectTaggingTrait;
     use DeleteObjects\DeleteObjectsTrait;
     use DeletePublicAccessBlock\DeletePublicAccessBlockTrait;
-    use GetBucketAbac\GetBucketAbacTrait;
     use GetBucketAccelerateConfiguration\GetBucketAccelerateConfigurationTrait;
     use GetBucketAcl\GetBucketAclTrait;
     use GetBucketAnalyticsConfiguration\GetBucketAnalyticsConfigurationTrait;
@@ -43,8 +37,6 @@ class S3Client extends \Aws\S3\S3Client
     use GetBucketLifecycleConfiguration\GetBucketLifecycleConfigurationTrait;
     use GetBucketLocation\GetBucketLocationTrait;
     use GetBucketLogging\GetBucketLoggingTrait;
-    use GetBucketMetadataConfiguration\GetBucketMetadataConfigurationTrait;
-    use GetBucketMetadataTableConfiguration\GetBucketMetadataTableConfigurationTrait;
     use GetBucketMetricsConfiguration\GetBucketMetricsConfigurationTrait;
     use GetBucketNotification\GetBucketNotificationTrait;
     use GetBucketNotificationConfiguration\GetBucketNotificationConfigurationTrait;
@@ -72,13 +64,11 @@ class S3Client extends \Aws\S3\S3Client
     use ListBucketInventoryConfigurations\ListBucketInventoryConfigurationsTrait;
     use ListBucketMetricsConfigurations\ListBucketMetricsConfigurationsTrait;
     use ListBuckets\ListBucketsTrait;
-    use ListDirectoryBuckets\ListDirectoryBucketsTrait;
     use ListMultipartUploads\ListMultipartUploadsTrait;
     use ListObjectVersions\ListObjectVersionsTrait;
     use ListObjects\ListObjectsTrait;
     use ListObjectsV2\ListObjectsV2Trait;
     use ListParts\ListPartsTrait;
-    use PutBucketAbac\PutBucketAbacTrait;
     use PutBucketAccelerateConfiguration\PutBucketAccelerateConfigurationTrait;
     use PutBucketAcl\PutBucketAclTrait;
     use PutBucketAnalyticsConfiguration\PutBucketAnalyticsConfigurationTrait;
@@ -106,12 +96,8 @@ class S3Client extends \Aws\S3\S3Client
     use PutObjectRetention\PutObjectRetentionTrait;
     use PutObjectTagging\PutObjectTaggingTrait;
     use PutPublicAccessBlock\PutPublicAccessBlockTrait;
-    use RenameObject\RenameObjectTrait;
     use RestoreObject\RestoreObjectTrait;
     use SelectObjectContent\SelectObjectContentTrait;
-    use UpdateBucketMetadataInventoryTableConfiguration\UpdateBucketMetadataInventoryTableConfigurationTrait;
-    use UpdateBucketMetadataJournalTableConfiguration\UpdateBucketMetadataJournalTableConfigurationTrait;
-    use UpdateObjectEncryption\UpdateObjectEncryptionTrait;
     use UploadPart\UploadPartTrait;
     use UploadPartCopy\UploadPartCopyTrait;
     use WriteGetObjectResponse\WriteGetObjectResponseTrait;

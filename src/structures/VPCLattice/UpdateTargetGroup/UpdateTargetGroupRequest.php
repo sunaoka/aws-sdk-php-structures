@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateTargetGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $targetGroupIdentifier
  * @property Shapes\HealthCheckConfig $healthCheck
+ * @property string $targetGroupIdentifier
  */
 class UpdateTargetGroupRequest extends Request
 {
     /**
      * @param array{
-     *     targetGroupIdentifier: string,
-     *     healthCheck: Shapes\HealthCheckConfig
+     *     healthCheck: Shapes\HealthCheckConfig,
+     *     targetGroupIdentifier: string
      * } $args
      */
     public function __construct(array $args)

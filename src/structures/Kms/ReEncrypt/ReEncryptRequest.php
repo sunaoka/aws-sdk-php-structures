@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Kms\ReEncrypt;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|resource|\Psr\Http\Message\StreamInterface|null $CiphertextBlob
+ * @property string|resource|\Psr\Http\Message\StreamInterface $CiphertextBlob
  * @property array<string, string>|null $SourceEncryptionContext
  * @property string|null $SourceKeyId
  * @property string $DestinationKeyId
@@ -14,13 +14,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SYMMETRIC_DEFAULT'|'RSAES_OAEP_SHA_1'|'RSAES_OAEP_SHA_256'|'SM2PKE'|null $DestinationEncryptionAlgorithm
  * @property list<string>|null $GrantTokens
  * @property bool|null $DryRun
- * @property list<'IGNORE_CIPHERTEXT'>|null $DryRunModifiers
  */
 class ReEncryptRequest extends Request
 {
     /**
      * @param array{
-     *     CiphertextBlob?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     CiphertextBlob: string|resource|\Psr\Http\Message\StreamInterface,
      *     SourceEncryptionContext?: array<string, string>|null,
      *     SourceKeyId?: string|null,
      *     DestinationKeyId: string,
@@ -28,8 +27,7 @@ class ReEncryptRequest extends Request
      *     SourceEncryptionAlgorithm?: 'SYMMETRIC_DEFAULT'|'RSAES_OAEP_SHA_1'|'RSAES_OAEP_SHA_256'|'SM2PKE'|null,
      *     DestinationEncryptionAlgorithm?: 'SYMMETRIC_DEFAULT'|'RSAES_OAEP_SHA_1'|'RSAES_OAEP_SHA_256'|'SM2PKE'|null,
      *     GrantTokens?: list<string>|null,
-     *     DryRun?: bool|null,
-     *     DryRunModifiers?: list<'IGNORE_CIPHERTEXT'>|null
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

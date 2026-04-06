@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SankeyDiagramFieldWells|null $FieldWells
  * @property SankeyDiagramSortConfiguration|null $SortConfiguration
  * @property DataLabelOptions|null $DataLabels
- * @property VisualInteractionOptions|null $Interactions
  */
 class SankeyDiagramChartConfiguration extends Shape
 {
@@ -16,8 +15,7 @@ class SankeyDiagramChartConfiguration extends Shape
      * @param array{
      *     FieldWells?: SankeyDiagramFieldWells|null,
      *     SortConfiguration?: SankeyDiagramSortConfiguration|null,
-     *     DataLabels?: DataLabelOptions|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     DataLabels?: DataLabelOptions|null
      * } $args
      */
     public function __construct(array $args = [])

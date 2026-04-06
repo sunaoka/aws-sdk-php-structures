@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null $Risk
  * @property 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE'|null $Reason
  * @property 'PRIORITIZED'|'NON_PRIORITIZED'|null $QuestionType
- * @property JiraConfiguration|null $JiraConfiguration
  */
 class AnswerSummary extends Shape
 {
@@ -30,8 +29,7 @@ class AnswerSummary extends Shape
      *     IsApplicable?: bool|null,
      *     Risk?: 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null,
      *     Reason?: 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE'|null,
-     *     QuestionType?: 'PRIORITIZED'|'NON_PRIORITIZED'|null,
-     *     JiraConfiguration?: JiraConfiguration|null
+     *     QuestionType?: 'PRIORITIZED'|'NON_PRIORITIZED'|null
      * } $args
      */
     public function __construct(array $args = [])

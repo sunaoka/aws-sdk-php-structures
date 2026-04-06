@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SubnetId
  * @property 'creating'|'available'|'updating'|'deleting'|'deleted'|'error' $LifeCycleState
  * @property string|null $IpAddress
- * @property string|null $Ipv6Address
  * @property string|null $NetworkInterfaceId
  * @property string|null $AvailabilityZoneId
  * @property string|null $AvailabilityZoneName
@@ -27,7 +26,6 @@ class MountTargetDescription extends Shape
      *     SubnetId: string,
      *     LifeCycleState: 'creating'|'available'|'updating'|'deleting'|'deleted'|'error',
      *     IpAddress?: string|null,
-     *     Ipv6Address?: string|null,
      *     NetworkInterfaceId?: string|null,
      *     AvailabilityZoneId?: string|null,
      *     AvailabilityZoneName?: string|null,

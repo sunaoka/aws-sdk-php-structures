@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HypervisorArn
- * @property list<Shapes\VmwareToAwsTagMapping> $VmwareToAwsTagMappings
  * @property string $IamRoleArn
+ * @property list<Shapes\VmwareToAwsTagMapping> $VmwareToAwsTagMappings
  */
 class PutHypervisorPropertyMappingsRequest extends Request
 {
     /**
      * @param array{
      *     HypervisorArn: string,
-     *     VmwareToAwsTagMappings: list<Shapes\VmwareToAwsTagMapping>,
-     *     IamRoleArn: string
+     *     IamRoleArn: string,
+     *     VmwareToAwsTagMappings: list<Shapes\VmwareToAwsTagMapping>
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListInputDevices;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int|null $MaxResults
+ * @property int<1, 1000>|null $MaxResults
  * @property string|null $NextToken
  */
 class ListInputDevicesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int|null,
+     *     MaxResults?: int<1, 1000>|null,
      *     NextToken?: string|null
      * } $args
      */

@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $XksProxyUriEndpoint
  * @property string|null $XksProxyUriPath
  * @property string|null $XksProxyVpcEndpointServiceName
- * @property string|null $XksProxyVpcEndpointServiceOwner
  * @property Shapes\XksProxyAuthenticationCredentialType|null $XksProxyAuthenticationCredential
  * @property 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE'|null $XksProxyConnectivity
  */
@@ -27,7 +26,6 @@ class UpdateCustomKeyStoreRequest extends Request
      *     XksProxyUriEndpoint?: string|null,
      *     XksProxyUriPath?: string|null,
      *     XksProxyVpcEndpointServiceName?: string|null,
-     *     XksProxyVpcEndpointServiceOwner?: string|null,
      *     XksProxyAuthenticationCredential?: Shapes\XksProxyAuthenticationCredentialType|null,
      *     XksProxyConnectivity?: 'PUBLIC_ENDPOINT'|'VPC_ENDPOINT_SERVICE'|null
      * } $args

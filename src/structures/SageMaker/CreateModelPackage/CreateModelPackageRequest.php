@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ModelPackageName
  * @property string|null $ModelPackageGroupName
  * @property string|null $ModelPackageDescription
- * @property 'Logged'|'Registered'|null $ModelPackageRegistrationType
  * @property Shapes\InferenceSpecification|null $InferenceSpecification
  * @property Shapes\ModelPackageValidationSpecification|null $ValidationSpecification
  * @property Shapes\SourceAlgorithmSpecification|null $SourceAlgorithmSpecification
@@ -18,17 +17,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MetadataProperties|null $MetadataProperties
  * @property Shapes\ModelMetrics|null $ModelMetrics
  * @property string|null $ClientToken
+ * @property array<string, string>|null $CustomerMetadataProperties
+ * @property Shapes\DriftCheckBaselines|null $DriftCheckBaselines
  * @property string|null $Domain
  * @property string|null $Task
  * @property string|null $SamplePayloadUrl
- * @property array<string, string>|null $CustomerMetadataProperties
- * @property Shapes\DriftCheckBaselines|null $DriftCheckBaselines
  * @property list<Shapes\AdditionalInferenceSpecificationDefinition>|null $AdditionalInferenceSpecifications
- * @property 'All'|'None'|null $SkipModelValidation
- * @property string|null $SourceUri
- * @property Shapes\ModelPackageSecurityConfig|null $SecurityConfig
- * @property Shapes\ModelPackageModelCard|null $ModelCard
- * @property Shapes\ModelLifeCycle|null $ModelLifeCycle
  */
 class CreateModelPackageRequest extends Request
 {
@@ -37,7 +31,6 @@ class CreateModelPackageRequest extends Request
      *     ModelPackageName?: string|null,
      *     ModelPackageGroupName?: string|null,
      *     ModelPackageDescription?: string|null,
-     *     ModelPackageRegistrationType?: 'Logged'|'Registered'|null,
      *     InferenceSpecification?: Shapes\InferenceSpecification|null,
      *     ValidationSpecification?: Shapes\ModelPackageValidationSpecification|null,
      *     SourceAlgorithmSpecification?: Shapes\SourceAlgorithmSpecification|null,
@@ -47,17 +40,12 @@ class CreateModelPackageRequest extends Request
      *     MetadataProperties?: Shapes\MetadataProperties|null,
      *     ModelMetrics?: Shapes\ModelMetrics|null,
      *     ClientToken?: string|null,
+     *     CustomerMetadataProperties?: array<string, string>|null,
+     *     DriftCheckBaselines?: Shapes\DriftCheckBaselines|null,
      *     Domain?: string|null,
      *     Task?: string|null,
      *     SamplePayloadUrl?: string|null,
-     *     CustomerMetadataProperties?: array<string, string>|null,
-     *     DriftCheckBaselines?: Shapes\DriftCheckBaselines|null,
-     *     AdditionalInferenceSpecifications?: list<Shapes\AdditionalInferenceSpecificationDefinition>|null,
-     *     SkipModelValidation?: 'All'|'None'|null,
-     *     SourceUri?: string|null,
-     *     SecurityConfig?: Shapes\ModelPackageSecurityConfig|null,
-     *     ModelCard?: Shapes\ModelPackageModelCard|null,
-     *     ModelLifeCycle?: Shapes\ModelLifeCycle|null
+     *     AdditionalInferenceSpecifications?: list<Shapes\AdditionalInferenceSpecificationDefinition>|null
      * } $args
      */
     public function __construct(array $args = [])

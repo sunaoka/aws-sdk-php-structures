@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\PutDialRequestBatch;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
  * @property list<Shapes\DialRequest> $dialRequests
+ * @property string $id
  */
 class PutDialRequestBatchRequest extends Request
 {
     /**
      * @param array{
-     *     id: string,
-     *     dialRequests: list<Shapes\DialRequest>
+     *     dialRequests: list<Shapes\DialRequest>,
+     *     id: string
      * } $args
      */
     public function __construct(array $args)

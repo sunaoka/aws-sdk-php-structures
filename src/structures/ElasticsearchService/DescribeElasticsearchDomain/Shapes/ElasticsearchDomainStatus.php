@@ -30,9 +30,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AdvancedSecurityOptions|null $AdvancedSecurityOptions
  * @property AutoTuneOptionsOutput|null $AutoTuneOptions
  * @property ChangeProgressDetails|null $ChangeProgressDetails
- * @property 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting'|null $DomainProcessingStatus
- * @property list<ModifyingProperties>|null $ModifyingProperties
- * @property DeploymentStrategyOptions|null $DeploymentStrategyOptions
  */
 class ElasticsearchDomainStatus extends Shape
 {
@@ -62,10 +59,7 @@ class ElasticsearchDomainStatus extends Shape
      *     DomainEndpointOptions?: DomainEndpointOptions|null,
      *     AdvancedSecurityOptions?: AdvancedSecurityOptions|null,
      *     AutoTuneOptions?: AutoTuneOptionsOutput|null,
-     *     ChangeProgressDetails?: ChangeProgressDetails|null,
-     *     DomainProcessingStatus?: 'Creating'|'Active'|'Modifying'|'UpgradingEngineVersion'|'UpdatingServiceSoftware'|'Isolated'|'Deleting'|null,
-     *     ModifyingProperties?: list<ModifyingProperties>|null,
-     *     DeploymentStrategyOptions?: DeploymentStrategyOptions|null
+     *     ChangeProgressDetails?: ChangeProgressDetails|null
      * } $args
      */
     public function __construct(array $args)

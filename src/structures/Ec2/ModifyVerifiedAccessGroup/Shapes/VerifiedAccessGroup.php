@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LastUpdatedTime
  * @property string|null $DeletionTime
  * @property list<Tag>|null $Tags
- * @property VerifiedAccessSseSpecificationResponse|null $SseSpecification
  */
 class VerifiedAccessGroup extends Shape
 {
@@ -28,8 +27,7 @@ class VerifiedAccessGroup extends Shape
      *     CreationTime?: string|null,
      *     LastUpdatedTime?: string|null,
      *     DeletionTime?: string|null,
-     *     Tags?: list<Tag>|null,
-     *     SseSpecification?: VerifiedAccessSseSpecificationResponse|null
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

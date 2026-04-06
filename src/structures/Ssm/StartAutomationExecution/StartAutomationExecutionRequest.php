@@ -18,7 +18,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TargetLocation>|null $TargetLocations
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\AlarmConfiguration|null $AlarmConfiguration
- * @property string|null $TargetLocationsURL
  */
 class StartAutomationExecutionRequest extends Request
 {
@@ -36,8 +35,7 @@ class StartAutomationExecutionRequest extends Request
      *     MaxErrors?: string|null,
      *     TargetLocations?: list<Shapes\TargetLocation>|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null,
-     *     TargetLocationsURL?: string|null
+     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CoreNetworkAddress
  * @property string|null $PeerAddress
  * @property list<string>|null $InsideCidrBlocks
- * @property 'GRE'|'NO_ENCAP'|null $Protocol
+ * @property 'GRE'|null $Protocol
  * @property list<ConnectPeerBgpConfiguration>|null $BgpConfigurations
  */
 class ConnectPeerConfiguration extends Shape
@@ -18,7 +18,7 @@ class ConnectPeerConfiguration extends Shape
      *     CoreNetworkAddress?: string|null,
      *     PeerAddress?: string|null,
      *     InsideCidrBlocks?: list<string>|null,
-     *     Protocol?: 'GRE'|'NO_ENCAP'|null,
+     *     Protocol?: 'GRE'|null,
      *     BgpConfigurations?: list<ConnectPeerBgpConfiguration>|null
      * } $args
      */

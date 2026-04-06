@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property BodySectionContent $Content
  * @property SectionStyle|null $Style
  * @property SectionPageBreakConfiguration|null $PageBreakConfiguration
- * @property BodySectionRepeatConfiguration|null $RepeatConfiguration
  */
 class BodySectionConfiguration extends Shape
 {
@@ -18,8 +17,7 @@ class BodySectionConfiguration extends Shape
      *     SectionId: string,
      *     Content: BodySectionContent,
      *     Style?: SectionStyle|null,
-     *     PageBreakConfiguration?: SectionPageBreakConfiguration|null,
-     *     RepeatConfiguration?: BodySectionRepeatConfiguration|null
+     *     PageBreakConfiguration?: SectionPageBreakConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $maxResults
  * @property string|null $nextToken
  * @property string $policyDocument
- * @property 'IDENTITY_POLICY'|'RESOURCE_POLICY'|'SERVICE_CONTROL_POLICY'|'RESOURCE_CONTROL_POLICY' $policyType
- * @property 'AWS::S3::Bucket'|'AWS::S3::AccessPoint'|'AWS::S3::MultiRegionAccessPoint'|'AWS::S3ObjectLambda::AccessPoint'|'AWS::IAM::AssumeRolePolicyDocument'|'AWS::DynamoDB::Table'|null $validatePolicyResourceType
+ * @property 'IDENTITY_POLICY'|'RESOURCE_POLICY'|'SERVICE_CONTROL_POLICY' $policyType
+ * @property 'AWS::S3::Bucket'|'AWS::S3::AccessPoint'|'AWS::S3::MultiRegionAccessPoint'|'AWS::S3ObjectLambda::AccessPoint'|'AWS::IAM::AssumeRolePolicyDocument'|null $validatePolicyResourceType
  */
 class ValidatePolicyRequest extends Request
 {
@@ -20,8 +20,8 @@ class ValidatePolicyRequest extends Request
      *     maxResults?: int|null,
      *     nextToken?: string|null,
      *     policyDocument: string,
-     *     policyType: 'IDENTITY_POLICY'|'RESOURCE_POLICY'|'SERVICE_CONTROL_POLICY'|'RESOURCE_CONTROL_POLICY',
-     *     validatePolicyResourceType?: 'AWS::S3::Bucket'|'AWS::S3::AccessPoint'|'AWS::S3::MultiRegionAccessPoint'|'AWS::S3ObjectLambda::AccessPoint'|'AWS::IAM::AssumeRolePolicyDocument'|'AWS::DynamoDB::Table'|null
+     *     policyType: 'IDENTITY_POLICY'|'RESOURCE_POLICY'|'SERVICE_CONTROL_POLICY',
+     *     validatePolicyResourceType?: 'AWS::S3::Bucket'|'AWS::S3::AccessPoint'|'AWS::S3::MultiRegionAccessPoint'|'AWS::S3ObjectLambda::AccessPoint'|'AWS::IAM::AssumeRolePolicyDocument'|null
      * } $args
      */
     public function __construct(array $args)

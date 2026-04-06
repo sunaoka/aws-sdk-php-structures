@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property bool|null $DryRun
  * @property 'volume'|null $CopyTagsFromSource
- * @property 'regional'|'local'|null $Location
  */
 class CreateSnapshotsRequest extends Request
 {
@@ -22,8 +21,7 @@ class CreateSnapshotsRequest extends Request
      *     OutpostArn?: string|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     DryRun?: bool|null,
-     *     CopyTagsFromSource?: 'volume'|null,
-     *     Location?: 'regional'|'local'|null
+     *     CopyTagsFromSource?: 'volume'|null
      * } $args
      */
     public function __construct(array $args)

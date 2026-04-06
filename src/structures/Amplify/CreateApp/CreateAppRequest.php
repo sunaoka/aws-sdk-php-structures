@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $description
  * @property string|null $repository
  * @property 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE'|null $platform
- * @property string|null $computeRoleArn
  * @property string|null $iamServiceRoleArn
  * @property string|null $oauthToken
  * @property string|null $accessToken
@@ -25,8 +24,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $enableAutoBranchCreation
  * @property list<string>|null $autoBranchCreationPatterns
  * @property Shapes\AutoBranchCreationConfig|null $autoBranchCreationConfig
- * @property Shapes\JobConfig|null $jobConfig
- * @property Shapes\CacheConfig|null $cacheConfig
  */
 class CreateAppRequest extends Request
 {
@@ -36,7 +33,6 @@ class CreateAppRequest extends Request
      *     description?: string|null,
      *     repository?: string|null,
      *     platform?: 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE'|null,
-     *     computeRoleArn?: string|null,
      *     iamServiceRoleArn?: string|null,
      *     oauthToken?: string|null,
      *     accessToken?: string|null,
@@ -51,9 +47,7 @@ class CreateAppRequest extends Request
      *     customHeaders?: string|null,
      *     enableAutoBranchCreation?: bool|null,
      *     autoBranchCreationPatterns?: list<string>|null,
-     *     autoBranchCreationConfig?: Shapes\AutoBranchCreationConfig|null,
-     *     jobConfig?: Shapes\JobConfig|null,
-     *     cacheConfig?: Shapes\CacheConfig|null
+     *     autoBranchCreationConfig?: Shapes\AutoBranchCreationConfig|null
      * } $args
      */
     public function __construct(array $args)

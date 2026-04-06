@@ -15,12 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EcsClusterDetails|null $EcsClusterDetails
  * @property Container|null $ContainerDetails
  * @property RdsDbInstanceDetails|null $RdsDbInstanceDetails
- * @property RdsLimitlessDbDetails|null $RdsLimitlessDbDetails
  * @property RdsDbUserDetails|null $RdsDbUserDetails
  * @property LambdaDetails|null $LambdaDetails
- * @property EbsSnapshotDetails|null $EbsSnapshotDetails
- * @property Ec2ImageDetails|null $Ec2ImageDetails
- * @property RecoveryPointDetails|null $RecoveryPointDetails
  */
 class ResourceShape extends Shape
 {
@@ -36,12 +32,8 @@ class ResourceShape extends Shape
      *     EcsClusterDetails?: EcsClusterDetails|null,
      *     ContainerDetails?: Container|null,
      *     RdsDbInstanceDetails?: RdsDbInstanceDetails|null,
-     *     RdsLimitlessDbDetails?: RdsLimitlessDbDetails|null,
      *     RdsDbUserDetails?: RdsDbUserDetails|null,
-     *     LambdaDetails?: LambdaDetails|null,
-     *     EbsSnapshotDetails?: EbsSnapshotDetails|null,
-     *     Ec2ImageDetails?: Ec2ImageDetails|null,
-     *     RecoveryPointDetails?: RecoveryPointDetails|null
+     *     LambdaDetails?: LambdaDetails|null
      * } $args
      */
     public function __construct(array $args = [])

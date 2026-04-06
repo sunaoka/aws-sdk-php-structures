@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $logStreamName
  * @property list<Shapes\InputLogEvent> $logEvents
  * @property string|null $sequenceToken
- * @property Shapes\Entity|null $entity
  */
 class PutLogEventsRequest extends Request
 {
@@ -18,8 +17,7 @@ class PutLogEventsRequest extends Request
      *     logGroupName: string,
      *     logStreamName: string,
      *     logEvents: list<Shapes\InputLogEvent>,
-     *     sequenceToken?: string|null,
-     *     entity?: Shapes\Entity|null
+     *     sequenceToken?: string|null
      * } $args
      */
     public function __construct(array $args)

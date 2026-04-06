@@ -10,7 +10,6 @@ class drsClient extends \Aws\drs\drsClient
     use CreateReplicationConfigurationTemplate\CreateReplicationConfigurationTemplateTrait;
     use CreateSourceNetwork\CreateSourceNetworkTrait;
     use DeleteJob\DeleteJobTrait;
-    use DeleteLaunchAction\DeleteLaunchActionTrait;
     use DeleteLaunchConfigurationTemplate\DeleteLaunchConfigurationTemplateTrait;
     use DeleteRecoveryInstance\DeleteRecoveryInstanceTrait;
     use DeleteReplicationConfigurationTemplate\DeleteReplicationConfigurationTemplateTrait;
@@ -32,10 +31,8 @@ class drsClient extends \Aws\drs\drsClient
     use GetReplicationConfiguration\GetReplicationConfigurationTrait;
     use InitializeService\InitializeServiceTrait;
     use ListExtensibleSourceServers\ListExtensibleSourceServersTrait;
-    use ListLaunchActions\ListLaunchActionsTrait;
     use ListStagingAccounts\ListStagingAccountsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
-    use PutLaunchAction\PutLaunchActionTrait;
     use RetryDataReplication\RetryDataReplicationTrait;
     use ReverseReplication\ReverseReplicationTrait;
     use StartFailbackLaunch\StartFailbackLaunchTrait;

@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $VpcId
  * @property list<string> $SubnetIds
- * @property list<string>|null $CustomerDnsIps
- * @property list<string>|null $CustomerDnsIpsV6
+ * @property list<string> $CustomerDnsIps
  * @property string $CustomerUserName
  */
 class DirectoryConnectSettings extends Shape
@@ -17,8 +16,7 @@ class DirectoryConnectSettings extends Shape
      * @param array{
      *     VpcId: string,
      *     SubnetIds: list<string>,
-     *     CustomerDnsIps?: list<string>|null,
-     *     CustomerDnsIpsV6?: list<string>|null,
+     *     CustomerDnsIps: list<string>,
      *     CustomerUserName: string
      * } $args
      */

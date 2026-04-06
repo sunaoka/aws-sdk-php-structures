@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CoreNetworkId
  * @property string $EdgeLocation
  * @property string $TransportAttachmentId
- * @property string|null $RoutingPolicyLabel
  * @property Shapes\ConnectAttachmentOptions $Options
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ClientToken
@@ -20,7 +19,6 @@ class CreateConnectAttachmentRequest extends Request
      *     CoreNetworkId: string,
      *     EdgeLocation: string,
      *     TransportAttachmentId: string,
-     *     RoutingPolicyLabel?: string|null,
      *     Options: Shapes\ConnectAttachmentOptions,
      *     Tags?: list<Shapes\Tag>|null,
      *     ClientToken?: string|null

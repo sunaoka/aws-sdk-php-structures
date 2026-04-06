@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3Uri
- * @property string|null $DataInputConfig
+ * @property string $DataInputConfig
  * @property 'TENSORFLOW'|'KERAS'|'MXNET'|'ONNX'|'PYTORCH'|'XGBOOST'|'TFLITE'|'DARKNET'|'SKLEARN' $Framework
  * @property string|null $FrameworkVersion
  */
@@ -15,7 +15,7 @@ class InputConfig extends Shape
     /**
      * @param array{
      *     S3Uri: string,
-     *     DataInputConfig?: string|null,
+     *     DataInputConfig: string,
      *     Framework: 'TENSORFLOW'|'KERAS'|'MXNET'|'ONNX'|'PYTORCH'|'XGBOOST'|'TFLITE'|'DARKNET'|'SKLEARN',
      *     FrameworkVersion?: string|null
      * } $args

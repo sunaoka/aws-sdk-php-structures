@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetMatchingJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $workflowName
  * @property string $jobId
+ * @property string $workflowName
  */
 class GetMatchingJobRequest extends Request
 {
     /**
      * @param array{
-     *     workflowName: string,
-     *     jobId: string
+     *     jobId: string,
+     *     workflowName: string
      * } $args
      */
     public function __construct(array $args)

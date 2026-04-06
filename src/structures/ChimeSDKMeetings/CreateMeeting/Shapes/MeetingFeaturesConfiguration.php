@@ -6,19 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AudioFeatures|null $Audio
- * @property VideoFeatures|null $Video
- * @property ContentFeatures|null $Content
- * @property AttendeeFeatures|null $Attendee
  */
 class MeetingFeaturesConfiguration extends Shape
 {
     /**
-     * @param array{
-     *     Audio?: AudioFeatures|null,
-     *     Video?: VideoFeatures|null,
-     *     Content?: ContentFeatures|null,
-     *     Attendee?: AttendeeFeatures|null
-     * } $args
+     * @param array{Audio?: AudioFeatures|null} $args
      */
     public function __construct(array $args = [])
     {

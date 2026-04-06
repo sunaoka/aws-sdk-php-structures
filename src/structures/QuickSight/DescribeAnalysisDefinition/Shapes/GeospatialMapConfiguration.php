@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GeospatialMapStyleOptions|null $MapStyleOptions
  * @property GeospatialPointStyleOptions|null $PointStyleOptions
  * @property VisualPalette|null $VisualPalette
- * @property VisualInteractionOptions|null $Interactions
  */
 class GeospatialMapConfiguration extends Shape
 {
@@ -24,8 +23,7 @@ class GeospatialMapConfiguration extends Shape
      *     WindowOptions?: GeospatialWindowOptions|null,
      *     MapStyleOptions?: GeospatialMapStyleOptions|null,
      *     PointStyleOptions?: GeospatialPointStyleOptions|null,
-     *     VisualPalette?: VisualPalette|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     VisualPalette?: VisualPalette|null
      * } $args
      */
     public function __construct(array $args = [])

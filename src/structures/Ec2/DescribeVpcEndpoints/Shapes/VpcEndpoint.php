@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $VpcEndpointId
- * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null $VpcEndpointType
+ * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|null $VpcEndpointType
  * @property string|null $VpcId
  * @property string|null $ServiceName
- * @property 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|'Partial'|null $State
+ * @property 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|null $State
  * @property string|null $PolicyDocument
  * @property list<string>|null $RouteTableIds
  * @property list<string>|null $SubnetIds
@@ -24,22 +24,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property string|null $OwnerId
  * @property LastError|null $LastError
- * @property list<SubnetIpPrefixes>|null $Ipv4Prefixes
- * @property list<SubnetIpPrefixes>|null $Ipv6Prefixes
- * @property string|null $FailureReason
- * @property string|null $ServiceNetworkArn
- * @property string|null $ResourceConfigurationArn
- * @property string|null $ServiceRegion
  */
 class VpcEndpoint extends Shape
 {
     /**
      * @param array{
      *     VpcEndpointId?: string|null,
-     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null,
+     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|null,
      *     VpcId?: string|null,
      *     ServiceName?: string|null,
-     *     State?: 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|'Partial'|null,
+     *     State?: 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|null,
      *     PolicyDocument?: string|null,
      *     RouteTableIds?: list<string>|null,
      *     SubnetIds?: list<string>|null,
@@ -53,13 +47,7 @@ class VpcEndpoint extends Shape
      *     CreationTimestamp?: \Aws\Api\DateTimeResult|null,
      *     Tags?: list<Tag>|null,
      *     OwnerId?: string|null,
-     *     LastError?: LastError|null,
-     *     Ipv4Prefixes?: list<SubnetIpPrefixes>|null,
-     *     Ipv6Prefixes?: list<SubnetIpPrefixes>|null,
-     *     FailureReason?: string|null,
-     *     ServiceNetworkArn?: string|null,
-     *     ResourceConfigurationArn?: string|null,
-     *     ServiceRegion?: string|null
+     *     LastError?: LastError|null
      * } $args
      */
     public function __construct(array $args = [])

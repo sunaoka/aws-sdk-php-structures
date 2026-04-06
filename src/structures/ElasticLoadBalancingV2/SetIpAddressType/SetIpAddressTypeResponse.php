@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\SetIpAddressType;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  */
 class SetIpAddressTypeResponse extends Response
 {

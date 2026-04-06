@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ProjectVersionArn
  * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
  * @property int<1, max>|null $MinInferenceUnits
- * @property 'TRAINING_IN_PROGRESS'|'TRAINING_COMPLETED'|'TRAINING_FAILED'|'STARTING'|'RUNNING'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'COPYING_IN_PROGRESS'|'COPYING_COMPLETED'|'COPYING_FAILED'|'DEPRECATED'|'EXPIRED'|null $Status
+ * @property 'TRAINING_IN_PROGRESS'|'TRAINING_COMPLETED'|'TRAINING_FAILED'|'STARTING'|'RUNNING'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'COPYING_IN_PROGRESS'|'COPYING_COMPLETED'|'COPYING_FAILED'|null $Status
  * @property string|null $StatusMessage
  * @property int<0, max>|null $BillableTrainingTimeInSeconds
  * @property \Aws\Api\DateTimeResult|null $TrainingEndTimestamp
@@ -20,10 +20,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $KmsKeyId
  * @property int<1, max>|null $MaxInferenceUnits
  * @property string|null $SourceProjectVersionArn
- * @property string|null $VersionDescription
- * @property 'CONTENT_MODERATION'|'CUSTOM_LABELS'|null $Feature
- * @property string|null $BaseModelVersion
- * @property CustomizationFeatureConfig|null $FeatureConfig
  */
 class ProjectVersionDescription extends Shape
 {
@@ -32,7 +28,7 @@ class ProjectVersionDescription extends Shape
      *     ProjectVersionArn?: string|null,
      *     CreationTimestamp?: \Aws\Api\DateTimeResult|null,
      *     MinInferenceUnits?: int<1, max>|null,
-     *     Status?: 'TRAINING_IN_PROGRESS'|'TRAINING_COMPLETED'|'TRAINING_FAILED'|'STARTING'|'RUNNING'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'COPYING_IN_PROGRESS'|'COPYING_COMPLETED'|'COPYING_FAILED'|'DEPRECATED'|'EXPIRED'|null,
+     *     Status?: 'TRAINING_IN_PROGRESS'|'TRAINING_COMPLETED'|'TRAINING_FAILED'|'STARTING'|'RUNNING'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'COPYING_IN_PROGRESS'|'COPYING_COMPLETED'|'COPYING_FAILED'|null,
      *     StatusMessage?: string|null,
      *     BillableTrainingTimeInSeconds?: int<0, max>|null,
      *     TrainingEndTimestamp?: \Aws\Api\DateTimeResult|null,
@@ -43,11 +39,7 @@ class ProjectVersionDescription extends Shape
      *     ManifestSummary?: GroundTruthManifest|null,
      *     KmsKeyId?: string|null,
      *     MaxInferenceUnits?: int<1, max>|null,
-     *     SourceProjectVersionArn?: string|null,
-     *     VersionDescription?: string|null,
-     *     Feature?: 'CONTENT_MODERATION'|'CUSTOM_LABELS'|null,
-     *     BaseModelVersion?: string|null,
-     *     FeatureConfig?: CustomizationFeatureConfig|null
+     *     SourceProjectVersionArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

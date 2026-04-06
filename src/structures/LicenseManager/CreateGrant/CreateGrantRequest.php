@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Principals
  * @property string $HomeRegion
  * @property list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'> $AllowedOperations
- * @property list<Shapes\Tag>|null $Tags
  */
 class CreateGrantRequest extends Request
 {
@@ -22,8 +21,7 @@ class CreateGrantRequest extends Request
      *     LicenseArn: string,
      *     Principals: list<string>,
      *     HomeRegion: string,
-     *     AllowedOperations: list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'>,
-     *     Tags?: list<Shapes\Tag>|null
+     *     AllowedOperations: list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'>
      * } $args
      */
     public function __construct(array $args)

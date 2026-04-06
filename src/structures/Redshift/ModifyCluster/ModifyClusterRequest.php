@@ -30,11 +30,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AvailabilityZoneRelocation
  * @property string|null $AvailabilityZone
  * @property int|null $Port
- * @property bool|null $ManageMasterPassword
- * @property string|null $MasterPasswordSecretKmsKeyId
- * @property string|null $IpAddressType
- * @property bool|null $MultiAZ
- * @property bool|null $ExtraComputeForAutomaticOptimization
  */
 class ModifyClusterRequest extends Request
 {
@@ -64,12 +59,7 @@ class ModifyClusterRequest extends Request
      *     KmsKeyId?: string|null,
      *     AvailabilityZoneRelocation?: bool|null,
      *     AvailabilityZone?: string|null,
-     *     Port?: int|null,
-     *     ManageMasterPassword?: bool|null,
-     *     MasterPasswordSecretKmsKeyId?: string|null,
-     *     IpAddressType?: string|null,
-     *     MultiAZ?: bool|null,
-     *     ExtraComputeForAutomaticOptimization?: bool|null
+     *     Port?: int|null
      * } $args
      */
     public function __construct(array $args)

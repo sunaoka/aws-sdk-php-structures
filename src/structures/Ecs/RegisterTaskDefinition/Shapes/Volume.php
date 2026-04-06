@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DockerVolumeConfiguration|null $dockerVolumeConfiguration
  * @property EFSVolumeConfiguration|null $efsVolumeConfiguration
  * @property FSxWindowsFileServerVolumeConfiguration|null $fsxWindowsFileServerVolumeConfiguration
- * @property bool|null $configuredAtLaunch
  */
 class Volume extends Shape
 {
@@ -20,8 +19,7 @@ class Volume extends Shape
      *     host?: HostVolumeProperties|null,
      *     dockerVolumeConfiguration?: DockerVolumeConfiguration|null,
      *     efsVolumeConfiguration?: EFSVolumeConfiguration|null,
-     *     fsxWindowsFileServerVolumeConfiguration?: FSxWindowsFileServerVolumeConfiguration|null,
-     *     configuredAtLaunch?: bool|null
+     *     fsxWindowsFileServerVolumeConfiguration?: FSxWindowsFileServerVolumeConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

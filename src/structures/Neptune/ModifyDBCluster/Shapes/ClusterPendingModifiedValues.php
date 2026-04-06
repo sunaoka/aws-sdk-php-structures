@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IAMDatabaseAuthenticationEnabled
  * @property string|null $EngineVersion
  * @property int|null $BackupRetentionPeriod
- * @property string|null $StorageType
  * @property int|null $AllocatedStorage
  * @property int|null $Iops
  */
@@ -23,7 +22,6 @@ class ClusterPendingModifiedValues extends Shape
      *     IAMDatabaseAuthenticationEnabled?: bool|null,
      *     EngineVersion?: string|null,
      *     BackupRetentionPeriod?: int|null,
-     *     StorageType?: string|null,
      *     AllocatedStorage?: int|null,
      *     Iops?: int|null
      * } $args

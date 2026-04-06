@@ -5,9 +5,8 @@ namespace Sunaoka\Aws\Structures\IdentityStore\ListUsers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IdentityStoreId
- * @property string $UserId
  * @property string|null $UserName
+ * @property string $UserId
  * @property list<ExternalId>|null $ExternalIds
  * @property Name|null $Name
  * @property string|null $DisplayName
@@ -21,24 +20,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PreferredLanguage
  * @property string|null $Locale
  * @property string|null $Timezone
- * @property 'ENABLED'|'DISABLED'|null $UserStatus
- * @property list<Photo>|null $Photos
- * @property string|null $Website
- * @property string|null $Birthdate
- * @property list<Role>|null $Roles
- * @property \Aws\Api\DateTimeResult|null $CreatedAt
- * @property string|null $CreatedBy
- * @property \Aws\Api\DateTimeResult|null $UpdatedAt
- * @property string|null $UpdatedBy
- * @property array<string, AttributeValue>|null $Extensions
+ * @property string $IdentityStoreId
  */
 class User extends Shape
 {
     /**
      * @param array{
-     *     IdentityStoreId: string,
-     *     UserId: string,
      *     UserName?: string|null,
+     *     UserId: string,
      *     ExternalIds?: list<ExternalId>|null,
      *     Name?: Name|null,
      *     DisplayName?: string|null,
@@ -52,16 +41,7 @@ class User extends Shape
      *     PreferredLanguage?: string|null,
      *     Locale?: string|null,
      *     Timezone?: string|null,
-     *     UserStatus?: 'ENABLED'|'DISABLED'|null,
-     *     Photos?: list<Photo>|null,
-     *     Website?: string|null,
-     *     Birthdate?: string|null,
-     *     Roles?: list<Role>|null,
-     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     CreatedBy?: string|null,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
-     *     UpdatedBy?: string|null,
-     *     Extensions?: array<string, AttributeValue>|null
+     *     IdentityStoreId: string
      * } $args
      */
     public function __construct(array $args)

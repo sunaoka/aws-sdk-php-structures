@@ -5,10 +5,18 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSubnets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string|null $AvailabilityZone
  * @property string|null $AvailabilityZoneId
+ * @property int|null $AvailableIpAddressCount
+ * @property string|null $CidrBlock
+ * @property bool|null $DefaultForAz
  * @property int|null $EnableLniAtDeviceIndex
+ * @property bool|null $MapPublicIpOnLaunch
  * @property bool|null $MapCustomerOwnedIpOnLaunch
  * @property string|null $CustomerOwnedIpv4Pool
+ * @property 'pending'|'available'|null $State
+ * @property string|null $SubnetId
+ * @property string|null $VpcId
  * @property string|null $OwnerId
  * @property bool|null $AssignIpv6AddressOnCreation
  * @property list<SubnetIpv6CidrBlockAssociation>|null $Ipv6CidrBlockAssociationSet
@@ -18,25 +26,23 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $EnableDns64
  * @property bool|null $Ipv6Native
  * @property PrivateDnsNameOptionsOnLaunch|null $PrivateDnsNameOptionsOnLaunch
- * @property BlockPublicAccessStates|null $BlockPublicAccessStates
- * @property string|null $Type
- * @property string|null $SubnetId
- * @property 'pending'|'available'|'unavailable'|'failed'|'failed-insufficient-capacity'|null $State
- * @property string|null $VpcId
- * @property string|null $CidrBlock
- * @property int|null $AvailableIpAddressCount
- * @property string|null $AvailabilityZone
- * @property bool|null $DefaultForAz
- * @property bool|null $MapPublicIpOnLaunch
  */
 class Subnet extends Shape
 {
     /**
      * @param array{
+     *     AvailabilityZone?: string|null,
      *     AvailabilityZoneId?: string|null,
+     *     AvailableIpAddressCount?: int|null,
+     *     CidrBlock?: string|null,
+     *     DefaultForAz?: bool|null,
      *     EnableLniAtDeviceIndex?: int|null,
+     *     MapPublicIpOnLaunch?: bool|null,
      *     MapCustomerOwnedIpOnLaunch?: bool|null,
      *     CustomerOwnedIpv4Pool?: string|null,
+     *     State?: 'pending'|'available'|null,
+     *     SubnetId?: string|null,
+     *     VpcId?: string|null,
      *     OwnerId?: string|null,
      *     AssignIpv6AddressOnCreation?: bool|null,
      *     Ipv6CidrBlockAssociationSet?: list<SubnetIpv6CidrBlockAssociation>|null,
@@ -45,17 +51,7 @@ class Subnet extends Shape
      *     OutpostArn?: string|null,
      *     EnableDns64?: bool|null,
      *     Ipv6Native?: bool|null,
-     *     PrivateDnsNameOptionsOnLaunch?: PrivateDnsNameOptionsOnLaunch|null,
-     *     BlockPublicAccessStates?: BlockPublicAccessStates|null,
-     *     Type?: string|null,
-     *     SubnetId?: string|null,
-     *     State?: 'pending'|'available'|'unavailable'|'failed'|'failed-insufficient-capacity'|null,
-     *     VpcId?: string|null,
-     *     CidrBlock?: string|null,
-     *     AvailableIpAddressCount?: int|null,
-     *     AvailabilityZone?: string|null,
-     *     DefaultForAz?: bool|null,
-     *     MapPublicIpOnLaunch?: bool|null
+     *     PrivateDnsNameOptionsOnLaunch?: PrivateDnsNameOptionsOnLaunch|null
      * } $args
      */
     public function __construct(array $args = [])

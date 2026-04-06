@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $arn
  * @property string|null $name
- * @property Shapes\AutoParticipantRecordingConfiguration|null $autoParticipantRecordingConfiguration
  */
 class UpdateStageRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     name?: string|null,
-     *     autoParticipantRecordingConfiguration?: Shapes\AutoParticipantRecordingConfiguration|null
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

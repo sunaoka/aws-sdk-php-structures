@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $nextToken
  * @property \Aws\Api\DateTimeResult|null $startedAfter
  * @property \Aws\Api\DateTimeResult|null $startedBefore
- * @property 'Submitting'|'Holding'|'Dispatching'|'Running'|'Cancelling'|'Cancelled'|'Succeeded'|'Failed'|'Purged'|'Succeeded With Warning'|null $status
+ * @property 'Submitting'|'Holding'|'Dispatching'|'Running'|'Cancelling'|'Cancelled'|'Succeeded'|'Failed'|'Succeeded With Warning'|null $status
  */
 class ListBatchJobExecutionsRequest extends Request
 {
@@ -25,7 +25,7 @@ class ListBatchJobExecutionsRequest extends Request
      *     nextToken?: string|null,
      *     startedAfter?: \Aws\Api\DateTimeResult|null,
      *     startedBefore?: \Aws\Api\DateTimeResult|null,
-     *     status?: 'Submitting'|'Holding'|'Dispatching'|'Running'|'Cancelling'|'Cancelled'|'Succeeded'|'Failed'|'Purged'|'Succeeded With Warning'|null
+     *     status?: 'Submitting'|'Holding'|'Dispatching'|'Running'|'Cancelling'|'Cancelled'|'Succeeded'|'Failed'|'Succeeded With Warning'|null
      * } $args
      */
     public function __construct(array $args)

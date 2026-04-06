@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $modelManifestArn
  * @property list<Shapes\SignalDecoder>|null $signalDecoders
  * @property list<Shapes\NetworkInterface>|null $networkInterfaces
- * @property 'CUSTOM_DECODING'|null $defaultForUnmappedSignals
  * @property list<Shapes\Tag>|null $tags
  */
 class CreateDecoderManifestRequest extends Request
@@ -22,7 +21,6 @@ class CreateDecoderManifestRequest extends Request
      *     modelManifestArn: string,
      *     signalDecoders?: list<Shapes\SignalDecoder>|null,
      *     networkInterfaces?: list<Shapes\NetworkInterface>|null,
-     *     defaultForUnmappedSignals?: 'CUSTOM_DECODING'|null,
      *     tags?: list<Shapes\Tag>|null
      * } $args
      */

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property bool|null $Latest
  * @property bool|null $DryRun
+ * @property bool|null $Latest
  */
 class GetConsoleOutputRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     Latest?: bool|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     Latest?: bool|null
      * } $args
      */
     public function __construct(array $args)

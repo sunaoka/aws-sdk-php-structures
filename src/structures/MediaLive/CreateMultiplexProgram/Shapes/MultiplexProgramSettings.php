@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CURRENTLY_ACTIVE'|'PIPELINE_0'|'PIPELINE_1'|null $PreferredChannelPipeline
- * @property int $ProgramNumber
+ * @property int<0, 65535> $ProgramNumber
  * @property MultiplexProgramServiceDescriptor|null $ServiceDescriptor
  * @property MultiplexVideoSettings|null $VideoSettings
  */
@@ -15,7 +15,7 @@ class MultiplexProgramSettings extends Shape
     /**
      * @param array{
      *     PreferredChannelPipeline?: 'CURRENTLY_ACTIVE'|'PIPELINE_0'|'PIPELINE_1'|null,
-     *     ProgramNumber: int,
+     *     ProgramNumber: int<0, 65535>,
      *     ServiceDescriptor?: MultiplexProgramServiceDescriptor|null,
      *     VideoSettings?: MultiplexVideoSettings|null
      * } $args

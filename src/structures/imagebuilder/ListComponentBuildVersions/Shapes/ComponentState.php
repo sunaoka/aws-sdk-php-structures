@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListComponentBuildVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DEPRECATED'|'DISABLED'|'ACTIVE'|null $status
+ * @property 'DEPRECATED'|null $status
  * @property string|null $reason
  */
 class ComponentState extends Shape
 {
     /**
      * @param array{
-     *     status?: 'DEPRECATED'|'DISABLED'|'ACTIVE'|null,
+     *     status?: 'DEPRECATED'|null,
      *     reason?: string|null
      * } $args
      */

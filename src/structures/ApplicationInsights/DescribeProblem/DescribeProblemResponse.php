@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\Problem|null $Problem
- * @property string|null $SNSNotificationArn
  */
 class DescribeProblemResponse extends Response
 {

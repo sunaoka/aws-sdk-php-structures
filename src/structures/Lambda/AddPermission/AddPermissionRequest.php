@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $RevisionId
  * @property string|null $PrincipalOrgID
  * @property 'NONE'|'AWS_IAM'|null $FunctionUrlAuthType
- * @property bool|null $InvokedViaFunctionUrl
  */
 class AddPermissionRequest extends Request
 {
@@ -32,8 +31,7 @@ class AddPermissionRequest extends Request
      *     Qualifier?: string|null,
      *     RevisionId?: string|null,
      *     PrincipalOrgID?: string|null,
-     *     FunctionUrlAuthType?: 'NONE'|'AWS_IAM'|null,
-     *     InvokedViaFunctionUrl?: bool|null
+     *     FunctionUrlAuthType?: 'NONE'|'AWS_IAM'|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HostedZoneId
  * @property string $RecordName
- * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS' $RecordType
+ * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS' $RecordType
  * @property string|null $ResolverIP
  * @property string|null $EDNS0ClientSubnetIP
  * @property string|null $EDNS0ClientSubnetMask
@@ -18,7 +18,7 @@ class TestDNSAnswerRequest extends Request
      * @param array{
      *     HostedZoneId: string,
      *     RecordName: string,
-     *     RecordType: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS',
+     *     RecordType: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS',
      *     ResolverIP?: string|null,
      *     EDNS0ClientSubnetIP?: string|null,
      *     EDNS0ClientSubnetMask?: string|null

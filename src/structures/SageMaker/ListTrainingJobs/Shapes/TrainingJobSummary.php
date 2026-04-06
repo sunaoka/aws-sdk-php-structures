@@ -10,10 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $TrainingEndTime
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting' $TrainingJobStatus
- * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null $SecondaryStatus
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TrainingJobStatus
  * @property WarmPoolStatus|null $WarmPoolStatus
- * @property string|null $TrainingPlanArn
  */
 class TrainingJobSummary extends Shape
 {
@@ -24,10 +22,8 @@ class TrainingJobSummary extends Shape
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     TrainingEndTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     TrainingJobStatus: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting',
-     *     SecondaryStatus?: 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null,
-     *     WarmPoolStatus?: WarmPoolStatus|null,
-     *     TrainingPlanArn?: string|null
+     *     TrainingJobStatus: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
+     *     WarmPoolStatus?: WarmPoolStatus|null
      * } $args
      */
     public function __construct(array $args)

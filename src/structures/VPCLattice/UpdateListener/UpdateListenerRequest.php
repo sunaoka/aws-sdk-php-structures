@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateListener;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $serviceIdentifier
- * @property string $listenerIdentifier
  * @property Shapes\RuleAction $defaultAction
+ * @property string $listenerIdentifier
+ * @property string $serviceIdentifier
  */
 class UpdateListenerRequest extends Request
 {
     /**
      * @param array{
-     *     serviceIdentifier: string,
+     *     defaultAction: Shapes\RuleAction,
      *     listenerIdentifier: string,
-     *     defaultAction: Shapes\RuleAction
+     *     serviceIdentifier: string
      * } $args
      */
     public function __construct(array $args)

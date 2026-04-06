@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeRouteTables;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $NextToken
- * @property int<5, 100>|null $MaxResults
+ * @property list<Shapes\Filter>|null $Filters
  * @property bool|null $DryRun
  * @property list<string>|null $RouteTableIds
- * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<5, 100>|null $MaxResults
  */
 class DescribeRouteTablesRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string|null,
-     *     MaxResults?: int<5, 100>|null,
+     *     Filters?: list<Shapes\Filter>|null,
      *     DryRun?: bool|null,
      *     RouteTableIds?: list<string>|null,
-     *     Filters?: list<Shapes\Filter>|null
+     *     NextToken?: string|null,
+     *     MaxResults?: int<5, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

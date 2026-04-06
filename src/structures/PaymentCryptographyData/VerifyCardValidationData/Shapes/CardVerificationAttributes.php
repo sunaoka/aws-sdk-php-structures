@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property AmexCardSecurityCodeVersion1|null $AmexCardSecurityCodeVersion1
  * @property AmexCardSecurityCodeVersion2|null $AmexCardSecurityCodeVersion2
+ * @property CardHolderVerificationValue|null $CardHolderVerificationValue
  * @property CardVerificationValue1|null $CardVerificationValue1
  * @property CardVerificationValue2|null $CardVerificationValue2
- * @property CardHolderVerificationValue|null $CardHolderVerificationValue
+ * @property DiscoverDynamicCardVerificationCode|null $DiscoverDynamicCardVerificationCode
  * @property DynamicCardVerificationCode|null $DynamicCardVerificationCode
  * @property DynamicCardVerificationValue|null $DynamicCardVerificationValue
- * @property DiscoverDynamicCardVerificationCode|null $DiscoverDynamicCardVerificationCode
  */
 class CardVerificationAttributes extends Shape
 {
@@ -20,12 +20,12 @@ class CardVerificationAttributes extends Shape
      * @param array{
      *     AmexCardSecurityCodeVersion1?: AmexCardSecurityCodeVersion1|null,
      *     AmexCardSecurityCodeVersion2?: AmexCardSecurityCodeVersion2|null,
+     *     CardHolderVerificationValue?: CardHolderVerificationValue|null,
      *     CardVerificationValue1?: CardVerificationValue1|null,
      *     CardVerificationValue2?: CardVerificationValue2|null,
-     *     CardHolderVerificationValue?: CardHolderVerificationValue|null,
+     *     DiscoverDynamicCardVerificationCode?: DiscoverDynamicCardVerificationCode|null,
      *     DynamicCardVerificationCode?: DynamicCardVerificationCode|null,
-     *     DynamicCardVerificationValue?: DynamicCardVerificationValue|null,
-     *     DiscoverDynamicCardVerificationCode?: DiscoverDynamicCardVerificationCode|null
+     *     DynamicCardVerificationValue?: DynamicCardVerificationValue|null
      * } $args
      */
     public function __construct(array $args = [])

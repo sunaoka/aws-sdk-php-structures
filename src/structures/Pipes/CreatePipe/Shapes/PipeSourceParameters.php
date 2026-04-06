@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Pipes\CreatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property PipeSourceActiveMQBrokerParameters|null $ActiveMQBrokerParameters
+ * @property PipeSourceDynamoDBStreamParameters|null $DynamoDBStreamParameters
  * @property FilterCriteria|null $FilterCriteria
  * @property PipeSourceKinesisStreamParameters|null $KinesisStreamParameters
- * @property PipeSourceDynamoDBStreamParameters|null $DynamoDBStreamParameters
- * @property PipeSourceSqsQueueParameters|null $SqsQueueParameters
- * @property PipeSourceActiveMQBrokerParameters|null $ActiveMQBrokerParameters
- * @property PipeSourceRabbitMQBrokerParameters|null $RabbitMQBrokerParameters
  * @property PipeSourceManagedStreamingKafkaParameters|null $ManagedStreamingKafkaParameters
+ * @property PipeSourceRabbitMQBrokerParameters|null $RabbitMQBrokerParameters
  * @property PipeSourceSelfManagedKafkaParameters|null $SelfManagedKafkaParameters
+ * @property PipeSourceSqsQueueParameters|null $SqsQueueParameters
  */
 class PipeSourceParameters extends Shape
 {
     /**
      * @param array{
+     *     ActiveMQBrokerParameters?: PipeSourceActiveMQBrokerParameters|null,
+     *     DynamoDBStreamParameters?: PipeSourceDynamoDBStreamParameters|null,
      *     FilterCriteria?: FilterCriteria|null,
      *     KinesisStreamParameters?: PipeSourceKinesisStreamParameters|null,
-     *     DynamoDBStreamParameters?: PipeSourceDynamoDBStreamParameters|null,
-     *     SqsQueueParameters?: PipeSourceSqsQueueParameters|null,
-     *     ActiveMQBrokerParameters?: PipeSourceActiveMQBrokerParameters|null,
-     *     RabbitMQBrokerParameters?: PipeSourceRabbitMQBrokerParameters|null,
      *     ManagedStreamingKafkaParameters?: PipeSourceManagedStreamingKafkaParameters|null,
-     *     SelfManagedKafkaParameters?: PipeSourceSelfManagedKafkaParameters|null
+     *     RabbitMQBrokerParameters?: PipeSourceRabbitMQBrokerParameters|null,
+     *     SelfManagedKafkaParameters?: PipeSourceSelfManagedKafkaParameters|null,
+     *     SqsQueueParameters?: PipeSourceSqsQueueParameters|null
      * } $args
      */
     public function __construct(array $args = [])

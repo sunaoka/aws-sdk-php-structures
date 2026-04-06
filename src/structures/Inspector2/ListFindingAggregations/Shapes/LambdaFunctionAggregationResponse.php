@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindingAggregations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resourceId
- * @property string|null $functionName
- * @property string|null $runtime
- * @property array<string, string>|null $lambdaTags
  * @property string|null $accountId
- * @property SeverityCounts|null $severityCounts
+ * @property string|null $functionName
+ * @property array<string, string>|null $lambdaTags
  * @property \Aws\Api\DateTimeResult|null $lastModifiedAt
+ * @property string $resourceId
+ * @property string|null $runtime
+ * @property SeverityCounts|null $severityCounts
  */
 class LambdaFunctionAggregationResponse extends Shape
 {
     /**
      * @param array{
-     *     resourceId: string,
-     *     functionName?: string|null,
-     *     runtime?: string|null,
-     *     lambdaTags?: array<string, string>|null,
      *     accountId?: string|null,
-     *     severityCounts?: SeverityCounts|null,
-     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null
+     *     functionName?: string|null,
+     *     lambdaTags?: array<string, string>|null,
+     *     lastModifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     resourceId: string,
+     *     runtime?: string|null,
+     *     severityCounts?: SeverityCounts|null
      * } $args
      */
     public function __construct(array $args)

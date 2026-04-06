@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<SampleUtterance>|null $sampleUtterances
  * @property WaitAndContinueSpecification|null $waitAndContinueSpecification
  * @property SlotCaptureSetting|null $slotCaptureSetting
- * @property SlotResolutionSetting|null $slotResolutionSetting
  */
 class SlotValueElicitationSetting extends Shape
 {
@@ -22,8 +21,7 @@ class SlotValueElicitationSetting extends Shape
      *     promptSpecification?: PromptSpecification|null,
      *     sampleUtterances?: list<SampleUtterance>|null,
      *     waitAndContinueSpecification?: WaitAndContinueSpecification|null,
-     *     slotCaptureSetting?: SlotCaptureSetting|null,
-     *     slotResolutionSetting?: SlotResolutionSetting|null
+     *     slotCaptureSetting?: SlotCaptureSetting|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $identifier
- * @property string|null $name
- * @property int<1, 100>|null $maximumMessageRatePerSecond
- * @property int<1, 500>|null $maximumMessageLength
- * @property Shapes\MessageReviewHandler|null $messageReviewHandler
  * @property list<string>|null $loggingConfigurationIdentifiers
+ * @property int<1, 500>|null $maximumMessageLength
+ * @property int<1, 100>|null $maximumMessageRatePerSecond
+ * @property Shapes\MessageReviewHandler|null $messageReviewHandler
+ * @property string|null $name
  */
 class UpdateRoomRequest extends Request
 {
     /**
      * @param array{
      *     identifier: string,
-     *     name?: string|null,
-     *     maximumMessageRatePerSecond?: int<1, 100>|null,
+     *     loggingConfigurationIdentifiers?: list<string>|null,
      *     maximumMessageLength?: int<1, 500>|null,
+     *     maximumMessageRatePerSecond?: int<1, 100>|null,
      *     messageReviewHandler?: Shapes\MessageReviewHandler|null,
-     *     loggingConfigurationIdentifiers?: list<string>|null
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AvailabilityZone
  * @property string|null $GroupName
  * @property 'default'|'dedicated'|'host'|null $Tenancy
- * @property string|null $AvailabilityZoneId
  */
 class SpotPlacement extends Shape
 {
@@ -16,8 +15,7 @@ class SpotPlacement extends Shape
      * @param array{
      *     AvailabilityZone?: string|null,
      *     GroupName?: string|null,
-     *     Tenancy?: 'default'|'dedicated'|'host'|null,
-     *     AvailabilityZoneId?: string|null
+     *     Tenancy?: 'default'|'dedicated'|'host'|null
      * } $args
      */
     public function __construct(array $args = [])

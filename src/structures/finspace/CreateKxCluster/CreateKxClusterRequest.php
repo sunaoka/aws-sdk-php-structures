@@ -8,15 +8,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property string $environmentId
  * @property string $clusterName
- * @property 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT' $clusterType
- * @property Shapes\TickerplantLogConfiguration|null $tickerplantLogConfiguration
+ * @property 'HDB'|'RDB'|'GATEWAY' $clusterType
  * @property list<Shapes\KxDatabaseConfiguration>|null $databases
  * @property list<Shapes\KxCacheStorageConfiguration>|null $cacheStorageConfigurations
  * @property Shapes\AutoScalingConfiguration|null $autoScalingConfiguration
  * @property string|null $clusterDescription
- * @property Shapes\CapacityConfiguration|null $capacityConfiguration
+ * @property Shapes\CapacityConfiguration $capacityConfiguration
  * @property string $releaseLabel
- * @property Shapes\VpcConfiguration $vpcConfiguration
+ * @property Shapes\VpcConfiguration|null $vpcConfiguration
  * @property string|null $initializationScript
  * @property list<Shapes\KxCommandLineArgument>|null $commandLineArguments
  * @property Shapes\CodeConfiguration|null $code
@@ -25,7 +24,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SINGLE'|'MULTI' $azMode
  * @property string|null $availabilityZoneId
  * @property array<string, string>|null $tags
- * @property Shapes\KxScalingGroupConfiguration|null $scalingGroupConfiguration
  */
 class CreateKxClusterRequest extends Request
 {
@@ -34,15 +32,14 @@ class CreateKxClusterRequest extends Request
      *     clientToken?: string|null,
      *     environmentId: string,
      *     clusterName: string,
-     *     clusterType: 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT',
-     *     tickerplantLogConfiguration?: Shapes\TickerplantLogConfiguration|null,
+     *     clusterType: 'HDB'|'RDB'|'GATEWAY',
      *     databases?: list<Shapes\KxDatabaseConfiguration>|null,
      *     cacheStorageConfigurations?: list<Shapes\KxCacheStorageConfiguration>|null,
      *     autoScalingConfiguration?: Shapes\AutoScalingConfiguration|null,
      *     clusterDescription?: string|null,
-     *     capacityConfiguration?: Shapes\CapacityConfiguration|null,
+     *     capacityConfiguration: Shapes\CapacityConfiguration,
      *     releaseLabel: string,
-     *     vpcConfiguration: Shapes\VpcConfiguration,
+     *     vpcConfiguration?: Shapes\VpcConfiguration|null,
      *     initializationScript?: string|null,
      *     commandLineArguments?: list<Shapes\KxCommandLineArgument>|null,
      *     code?: Shapes\CodeConfiguration|null,
@@ -50,8 +47,7 @@ class CreateKxClusterRequest extends Request
      *     savedownStorageConfiguration?: Shapes\KxSavedownStorageConfiguration|null,
      *     azMode: 'SINGLE'|'MULTI',
      *     availabilityZoneId?: string|null,
-     *     tags?: array<string, string>|null,
-     *     scalingGroupConfiguration?: Shapes\KxScalingGroupConfiguration|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

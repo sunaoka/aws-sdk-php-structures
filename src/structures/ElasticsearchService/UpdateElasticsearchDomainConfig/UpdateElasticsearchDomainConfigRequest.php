@@ -20,7 +20,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EncryptionAtRestOptions|null $EncryptionAtRestOptions
  * @property Shapes\AutoTuneOptions|null $AutoTuneOptions
  * @property bool|null $DryRun
- * @property Shapes\DeploymentStrategyOptions|null $DeploymentStrategyOptions
  */
 class UpdateElasticsearchDomainConfigRequest extends Request
 {
@@ -40,8 +39,7 @@ class UpdateElasticsearchDomainConfigRequest extends Request
      *     NodeToNodeEncryptionOptions?: Shapes\NodeToNodeEncryptionOptions|null,
      *     EncryptionAtRestOptions?: Shapes\EncryptionAtRestOptions|null,
      *     AutoTuneOptions?: Shapes\AutoTuneOptions|null,
-     *     DryRun?: bool|null,
-     *     DeploymentStrategyOptions?: Shapes\DeploymentStrategyOptions|null
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

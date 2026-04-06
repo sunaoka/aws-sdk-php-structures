@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  * @property string|null $failureReason
  * @property string|null $solutionVersionArn
- * @property 'BATCH_INFERENCE'|'THEME_GENERATION'|null $batchInferenceJobMode
  */
 class BatchInferenceJobSummary extends Shape
 {
@@ -24,8 +23,7 @@ class BatchInferenceJobSummary extends Shape
      *     creationDateTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
      *     failureReason?: string|null,
-     *     solutionVersionArn?: string|null,
-     *     batchInferenceJobMode?: 'BATCH_INFERENCE'|'THEME_GENERATION'|null
+     *     solutionVersionArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

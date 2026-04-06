@@ -55,7 +55,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MySQLCatalogTarget|null $MySQLCatalogTarget
  * @property OracleSQLCatalogTarget|null $OracleSQLCatalogTarget
  * @property PostgreSQLCatalogTarget|null $PostgreSQLCatalogTarget
- * @property Route|null $Route
  * @property DynamicTransform|null $DynamicTransform
  * @property EvaluateDataQuality|null $EvaluateDataQuality
  * @property S3CatalogHudiSource|null $S3CatalogHudiSource
@@ -75,15 +74,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Recipe|null $Recipe
  * @property SnowflakeSource|null $SnowflakeSource
  * @property SnowflakeTarget|null $SnowflakeTarget
- * @property ConnectorDataSource|null $ConnectorDataSource
- * @property ConnectorDataTarget|null $ConnectorDataTarget
- * @property S3CatalogIcebergSource|null $S3CatalogIcebergSource
- * @property CatalogIcebergSource|null $CatalogIcebergSource
- * @property S3IcebergCatalogTarget|null $S3IcebergCatalogTarget
- * @property S3IcebergDirectTarget|null $S3IcebergDirectTarget
- * @property S3ExcelSource|null $S3ExcelSource
- * @property S3HyperDirectTarget|null $S3HyperDirectTarget
- * @property DynamoDBELTConnectorSource|null $DynamoDBELTConnectorSource
  */
 class CodeGenConfigurationNode extends Shape
 {
@@ -139,7 +129,6 @@ class CodeGenConfigurationNode extends Shape
      *     MySQLCatalogTarget?: MySQLCatalogTarget|null,
      *     OracleSQLCatalogTarget?: OracleSQLCatalogTarget|null,
      *     PostgreSQLCatalogTarget?: PostgreSQLCatalogTarget|null,
-     *     Route?: Route|null,
      *     DynamicTransform?: DynamicTransform|null,
      *     EvaluateDataQuality?: EvaluateDataQuality|null,
      *     S3CatalogHudiSource?: S3CatalogHudiSource|null,
@@ -158,16 +147,7 @@ class CodeGenConfigurationNode extends Shape
      *     EvaluateDataQualityMultiFrame?: EvaluateDataQualityMultiFrame|null,
      *     Recipe?: Recipe|null,
      *     SnowflakeSource?: SnowflakeSource|null,
-     *     SnowflakeTarget?: SnowflakeTarget|null,
-     *     ConnectorDataSource?: ConnectorDataSource|null,
-     *     ConnectorDataTarget?: ConnectorDataTarget|null,
-     *     S3CatalogIcebergSource?: S3CatalogIcebergSource|null,
-     *     CatalogIcebergSource?: CatalogIcebergSource|null,
-     *     S3IcebergCatalogTarget?: S3IcebergCatalogTarget|null,
-     *     S3IcebergDirectTarget?: S3IcebergDirectTarget|null,
-     *     S3ExcelSource?: S3ExcelSource|null,
-     *     S3HyperDirectTarget?: S3HyperDirectTarget|null,
-     *     DynamoDBELTConnectorSource?: DynamoDBELTConnectorSource|null
+     *     SnowflakeTarget?: SnowflakeTarget|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Pipes\CreatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $EndpointId
  * @property string|null $DetailType
- * @property string|null $Source
+ * @property string|null $EndpointId
  * @property list<string>|null $Resources
+ * @property string|null $Source
  * @property string|null $Time
  */
 class PipeTargetEventBridgeEventBusParameters extends Shape
 {
     /**
      * @param array{
-     *     EndpointId?: string|null,
      *     DetailType?: string|null,
-     *     Source?: string|null,
+     *     EndpointId?: string|null,
      *     Resources?: list<string>|null,
+     *     Source?: string|null,
      *     Time?: string|null
      * } $args
      */

@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED'|'DELETED'|null $State
  * @property \Aws\Api\DateTimeResult|null $EnabledDate
  * @property \Aws\Api\DateTimeResult|null $DisabledDate
- * @property string|null $Description
  */
 class ResourceShape extends Shape
 {
@@ -24,8 +23,7 @@ class ResourceShape extends Shape
      *     Type?: 'ROOM'|'EQUIPMENT'|null,
      *     State?: 'ENABLED'|'DISABLED'|'DELETED'|null,
      *     EnabledDate?: \Aws\Api\DateTimeResult|null,
-     *     DisabledDate?: \Aws\Api\DateTimeResult|null,
-     *     Description?: string|null
+     *     DisabledDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

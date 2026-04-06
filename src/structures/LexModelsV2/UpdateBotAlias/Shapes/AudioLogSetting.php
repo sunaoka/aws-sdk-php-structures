@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $enabled
  * @property AudioLogDestination $destination
- * @property bool|null $selectiveLoggingEnabled
  */
 class AudioLogSetting extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     destination: AudioLogDestination,
-     *     selectiveLoggingEnabled?: bool|null
+     *     destination: AudioLogDestination
      * } $args
      */
     public function __construct(array $args)

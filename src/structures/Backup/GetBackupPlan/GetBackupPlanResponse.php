@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $DeletionDate
  * @property \Aws\Api\DateTimeResult|null $LastExecutionDate
  * @property list<Shapes\AdvancedBackupSetting>|null $AdvancedBackupSettings
- * @property list<Shapes\ScheduledPlanExecutionMember>|null $ScheduledRunsPreview
  */
 class GetBackupPlanResponse extends Response
 {

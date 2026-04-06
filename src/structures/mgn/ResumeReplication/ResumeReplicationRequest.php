@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\ResumeReplication;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $sourceServerID
  * @property string|null $accountID
+ * @property string $sourceServerID
  */
 class ResumeReplicationRequest extends Request
 {
     /**
      * @param array{
-     *     sourceServerID: string,
-     *     accountID?: string|null
+     *     accountID?: string|null,
+     *     sourceServerID: string
      * } $args
      */
     public function __construct(array $args)

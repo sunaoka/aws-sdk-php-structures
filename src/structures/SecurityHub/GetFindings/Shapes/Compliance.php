@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<StatusReason>|null $StatusReasons
  * @property string|null $SecurityControlId
  * @property list<AssociatedStandard>|null $AssociatedStandards
- * @property list<SecurityControlParameter>|null $SecurityControlParameters
  */
 class Compliance extends Shape
 {
@@ -20,8 +19,7 @@ class Compliance extends Shape
      *     RelatedRequirements?: list<string>|null,
      *     StatusReasons?: list<StatusReason>|null,
      *     SecurityControlId?: string|null,
-     *     AssociatedStandards?: list<AssociatedStandard>|null,
-     *     SecurityControlParameters?: list<SecurityControlParameter>|null
+     *     AssociatedStandards?: list<AssociatedStandard>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ComputationId
  * @property string|null $Name
- * @property DimensionField|null $Time
+ * @property DimensionField $Time
  * @property MeasureField|null $Value
  */
 class PeriodOverPeriodComputation extends Shape
@@ -16,7 +16,7 @@ class PeriodOverPeriodComputation extends Shape
      * @param array{
      *     ComputationId: string,
      *     Name?: string|null,
-     *     Time?: DimensionField|null,
+     *     Time: DimensionField,
      *     Value?: MeasureField|null
      * } $args
      */

@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'OVERWRITE'|'NONE'|'PRESERVE'|null $resolveConflicts
  * @property string|null $clientRequestToken
  * @property string|null $configurationValues
- * @property list<Shapes\AddonPodIdentityAssociations>|null $podIdentityAssociations
  */
 class UpdateAddonRequest extends Request
 {
@@ -24,8 +23,7 @@ class UpdateAddonRequest extends Request
      *     serviceAccountRoleArn?: string|null,
      *     resolveConflicts?: 'OVERWRITE'|'NONE'|'PRESERVE'|null,
      *     clientRequestToken?: string|null,
-     *     configurationValues?: string|null,
-     *     podIdentityAssociations?: list<Shapes\AddonPodIdentityAssociations>|null
+     *     configurationValues?: string|null
      * } $args
      */
     public function __construct(array $args)

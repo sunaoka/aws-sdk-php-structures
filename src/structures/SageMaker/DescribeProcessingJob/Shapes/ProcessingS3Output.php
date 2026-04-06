@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3Uri
- * @property string|null $LocalPath
+ * @property string $LocalPath
  * @property 'Continuous'|'EndOfJob' $S3UploadMode
  */
 class ProcessingS3Output extends Shape
@@ -14,7 +14,7 @@ class ProcessingS3Output extends Shape
     /**
      * @param array{
      *     S3Uri: string,
-     *     LocalPath?: string|null,
+     *     LocalPath: string,
      *     S3UploadMode: 'Continuous'|'EndOfJob'
      * } $args
      */

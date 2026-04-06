@@ -5,8 +5,7 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\UpdateConnector;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\CapacityUpdate|null $capacity
- * @property array<string, string>|null $connectorConfiguration
+ * @property Shapes\CapacityUpdate $capacity
  * @property string $connectorArn
  * @property string $currentVersion
  */
@@ -14,8 +13,7 @@ class UpdateConnectorRequest extends Request
 {
     /**
      * @param array{
-     *     capacity?: Shapes\CapacityUpdate|null,
-     *     connectorConfiguration?: array<string, string>|null,
+     *     capacity: Shapes\CapacityUpdate,
      *     connectorArn: string,
      *     currentVersion: string
      * } $args

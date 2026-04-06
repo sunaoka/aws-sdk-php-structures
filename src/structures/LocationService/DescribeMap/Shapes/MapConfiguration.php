@@ -5,17 +5,15 @@ namespace Sunaoka\Aws\Structures\LocationService\DescribeMap\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Style
  * @property string|null $PoliticalView
- * @property list<string>|null $CustomLayers
+ * @property string $Style
  */
 class MapConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Style: string,
      *     PoliticalView?: string|null,
-     *     CustomLayers?: list<string>|null
+     *     Style: string
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
- * @property string $SpotFleetRequestId
  * @property 'instanceChange'|'fleetRequestChange'|'error'|'information'|null $EventType
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property string|null $NextToken
  * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string $SpotFleetRequestId
+ * @property \Aws\Api\DateTimeResult $StartTime
  */
 class DescribeSpotFleetRequestHistoryRequest extends Request
 {
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     SpotFleetRequestId: string,
      *     EventType?: 'instanceChange'|'fleetRequestChange'|'error'|'information'|null,
-     *     StartTime: \Aws\Api\DateTimeResult,
+     *     MaxResults?: int<1, 1000>|null,
      *     NextToken?: string|null,
-     *     MaxResults?: int<1, 1000>|null
+     *     SpotFleetRequestId: string,
+     *     StartTime: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

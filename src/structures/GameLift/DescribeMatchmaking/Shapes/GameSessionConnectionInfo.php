@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DnsName
  * @property int<1, max>|null $Port
  * @property list<MatchedPlayerSession>|null $MatchedPlayerSessions
- * @property 'DISABLED'|'ENABLED'|null $PlayerGatewayStatus
  */
 class GameSessionConnectionInfo extends Shape
 {
@@ -20,8 +19,7 @@ class GameSessionConnectionInfo extends Shape
      *     IpAddress?: string|null,
      *     DnsName?: string|null,
      *     Port?: int<1, max>|null,
-     *     MatchedPlayerSessions?: list<MatchedPlayerSession>|null,
-     *     PlayerGatewayStatus?: 'DISABLED'|'ENABLED'|null
+     *     MatchedPlayerSessions?: list<MatchedPlayerSession>|null
      * } $args
      */
     public function __construct(array $args = [])

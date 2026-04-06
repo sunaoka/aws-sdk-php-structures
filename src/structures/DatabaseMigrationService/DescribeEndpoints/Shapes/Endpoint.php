@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ServiceAccessRoleArn
  * @property string|null $ExternalTableDefinition
  * @property string|null $ExternalId
- * @property bool|null $IsReadOnly
  * @property DynamoDbSettings|null $DynamoDbSettings
  * @property S3Settings|null $S3Settings
  * @property DmsTransferSettings|null $DmsTransferSettings
@@ -42,7 +41,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RedisSettings|null $RedisSettings
  * @property GcpMySQLSettings|null $GcpMySQLSettings
  * @property TimestreamSettings|null $TimestreamSettings
- * @property LakehouseSettings|null $LakehouseSettings
  */
 class Endpoint extends Shape
 {
@@ -65,7 +63,6 @@ class Endpoint extends Shape
      *     ServiceAccessRoleArn?: string|null,
      *     ExternalTableDefinition?: string|null,
      *     ExternalId?: string|null,
-     *     IsReadOnly?: bool|null,
      *     DynamoDbSettings?: DynamoDbSettings|null,
      *     S3Settings?: S3Settings|null,
      *     DmsTransferSettings?: DmsTransferSettings|null,
@@ -84,8 +81,7 @@ class Endpoint extends Shape
      *     DocDbSettings?: DocDbSettings|null,
      *     RedisSettings?: RedisSettings|null,
      *     GcpMySQLSettings?: GcpMySQLSettings|null,
-     *     TimestreamSettings?: TimestreamSettings|null,
-     *     LakehouseSettings?: LakehouseSettings|null
+     *     TimestreamSettings?: TimestreamSettings|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VisualSubtitleLabelOptions|null $Subtitle
  * @property HistogramConfiguration|null $ChartConfiguration
  * @property list<VisualCustomAction>|null $Actions
- * @property string|null $VisualContentAltText
  */
 class HistogramVisual extends Shape
 {
@@ -20,8 +19,7 @@ class HistogramVisual extends Shape
      *     Title?: VisualTitleLabelOptions|null,
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: HistogramConfiguration|null,
-     *     Actions?: list<VisualCustomAction>|null,
-     *     VisualContentAltText?: string|null
+     *     Actions?: list<VisualCustomAction>|null
      * } $args
      */
     public function __construct(array $args)

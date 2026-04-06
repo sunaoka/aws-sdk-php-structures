@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\PutResourcePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $resourceArn
  * @property string $policy
+ * @property string $resourceArn
  */
 class PutResourcePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     resourceArn: string,
-     *     policy: string
+     *     policy: string,
+     *     resourceArn: string
      * } $args
      */
     public function __construct(array $args)

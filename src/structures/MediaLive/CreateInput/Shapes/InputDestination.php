@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Port
  * @property string|null $Url
  * @property InputDestinationVpc|null $Vpc
- * @property string|null $Network
- * @property list<InputDestinationRoute>|null $NetworkRoutes
  */
 class InputDestination extends Shape
 {
@@ -19,9 +17,7 @@ class InputDestination extends Shape
      *     Ip?: string|null,
      *     Port?: string|null,
      *     Url?: string|null,
-     *     Vpc?: InputDestinationVpc|null,
-     *     Network?: string|null,
-     *     NetworkRoutes?: list<InputDestinationRoute>|null
+     *     Vpc?: InputDestinationVpc|null
      * } $args
      */
     public function __construct(array $args = [])

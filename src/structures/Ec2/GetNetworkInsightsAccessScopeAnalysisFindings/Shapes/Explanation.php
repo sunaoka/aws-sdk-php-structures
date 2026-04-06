@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $Addresses
  * @property AnalysisComponent|null $AttachedTo
  * @property list<string>|null $AvailabilityZones
- * @property list<string>|null $AvailabilityZoneIds
  * @property list<string>|null $Cidrs
  * @property AnalysisComponent|null $Component
  * @property AnalysisComponent|null $CustomerGateway
@@ -70,7 +69,6 @@ class Explanation extends Shape
      *     Addresses?: list<string>|null,
      *     AttachedTo?: AnalysisComponent|null,
      *     AvailabilityZones?: list<string>|null,
-     *     AvailabilityZoneIds?: list<string>|null,
      *     Cidrs?: list<string>|null,
      *     Component?: AnalysisComponent|null,
      *     CustomerGateway?: AnalysisComponent|null,

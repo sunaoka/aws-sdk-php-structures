@@ -7,9 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ImageClassificationJobConfig|null $ImageClassificationJobConfig
  * @property TextClassificationJobConfig|null $TextClassificationJobConfig
- * @property TimeSeriesForecastingJobConfig|null $TimeSeriesForecastingJobConfig
  * @property TabularJobConfig|null $TabularJobConfig
- * @property TextGenerationJobConfig|null $TextGenerationJobConfig
+ * @property TimeSeriesForecastingJobConfig|null $TimeSeriesForecastingJobConfig
  */
 class AutoMLProblemTypeConfig extends Shape
 {
@@ -17,9 +16,8 @@ class AutoMLProblemTypeConfig extends Shape
      * @param array{
      *     ImageClassificationJobConfig?: ImageClassificationJobConfig|null,
      *     TextClassificationJobConfig?: TextClassificationJobConfig|null,
-     *     TimeSeriesForecastingJobConfig?: TimeSeriesForecastingJobConfig|null,
      *     TabularJobConfig?: TabularJobConfig|null,
-     *     TextGenerationJobConfig?: TextGenerationJobConfig|null
+     *     TimeSeriesForecastingJobConfig?: TimeSeriesForecastingJobConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SupportDescription
  * @property string|null $SupportEmail
  * @property string|null $SupportUrl
- * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL' $ProductType
+ * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD' $ProductType
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\ProvisioningArtifactProperties|null $ProvisioningArtifactParameters
  * @property string $IdempotencyToken
@@ -31,7 +31,7 @@ class CreateProductRequest extends Request
      *     SupportDescription?: string|null,
      *     SupportEmail?: string|null,
      *     SupportUrl?: string|null,
-     *     ProductType: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL',
+     *     ProductType: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD',
      *     Tags?: list<Shapes\Tag>|null,
      *     ProvisioningArtifactParameters?: Shapes\ProvisioningArtifactProperties|null,
      *     IdempotencyToken: string,

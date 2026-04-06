@@ -10,11 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<list<string>>|null $PartitionKeys
  * @property string $Path
  * @property string|null $Compression
- * @property string|null $NumberTargetPartitions
- * @property 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml' $Format
+ * @property 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta' $Format
  * @property DirectSchemaChangePolicy|null $SchemaChangePolicy
- * @property AutoDataQuality|null $AutoDataQuality
- * @property list<GlueSchema>|null $OutputSchemas
  */
 class S3DirectTarget extends Shape
 {
@@ -25,11 +22,8 @@ class S3DirectTarget extends Shape
      *     PartitionKeys?: list<list<string>>|null,
      *     Path: string,
      *     Compression?: string|null,
-     *     NumberTargetPartitions?: string|null,
-     *     Format: 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml',
-     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null,
-     *     AutoDataQuality?: AutoDataQuality|null,
-     *     OutputSchemas?: list<GlueSchema>|null
+     *     Format: 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta',
+     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null
      * } $args
      */
     public function __construct(array $args)

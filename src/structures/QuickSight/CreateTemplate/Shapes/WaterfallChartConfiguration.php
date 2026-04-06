@@ -15,8 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LegendOptions|null $Legend
  * @property DataLabelOptions|null $DataLabels
  * @property VisualPalette|null $VisualPalette
- * @property WaterfallChartColorConfiguration|null $ColorConfiguration
- * @property VisualInteractionOptions|null $Interactions
  */
 class WaterfallChartConfiguration extends Shape
 {
@@ -31,9 +29,7 @@ class WaterfallChartConfiguration extends Shape
      *     PrimaryYAxisDisplayOptions?: AxisDisplayOptions|null,
      *     Legend?: LegendOptions|null,
      *     DataLabels?: DataLabelOptions|null,
-     *     VisualPalette?: VisualPalette|null,
-     *     ColorConfiguration?: WaterfallChartColorConfiguration|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     VisualPalette?: VisualPalette|null
      * } $args
      */
     public function __construct(array $args = [])

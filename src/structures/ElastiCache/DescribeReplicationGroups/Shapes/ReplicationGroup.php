@@ -36,7 +36,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ipv4'|'ipv6'|null $IpDiscovery
  * @property 'preferred'|'required'|null $TransitEncryptionMode
  * @property 'enabled'|'disabled'|'compatible'|null $ClusterMode
- * @property string|null $Engine
  */
 class ReplicationGroup extends Shape
 {
@@ -72,8 +71,7 @@ class ReplicationGroup extends Shape
      *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
      *     IpDiscovery?: 'ipv4'|'ipv6'|null,
      *     TransitEncryptionMode?: 'preferred'|'required'|null,
-     *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null,
-     *     Engine?: string|null
+     *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectCases\SearchCases;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string|null $nextToken
  * @property list<Shapes\SearchCasesResponseItem> $cases
- * @property int<0, max>|null $totalCount
+ * @property string|null $nextToken
  */
 class SearchCasesResponse extends Response
 {

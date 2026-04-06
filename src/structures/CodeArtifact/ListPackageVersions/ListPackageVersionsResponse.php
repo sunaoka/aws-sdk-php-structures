@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $defaultDisplayVersion
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null $format
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|null $format
  * @property string|null $namespace
  * @property string|null $package
  * @property list<Shapes\PackageVersionSummary>|null $versions

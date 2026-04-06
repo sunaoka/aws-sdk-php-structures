@@ -5,25 +5,23 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\GeneratePinData;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GenerationKeyIdentifier
  * @property string $EncryptionKeyIdentifier
  * @property Shapes\PinGenerationAttributes $GenerationAttributes
+ * @property string $GenerationKeyIdentifier
+ * @property 'ISO_FORMAT_0'|'ISO_FORMAT_3' $PinBlockFormat
  * @property int<4, 12>|null $PinDataLength
- * @property string|null $PrimaryAccountNumber
- * @property 'ISO_FORMAT_0'|'ISO_FORMAT_1'|'ISO_FORMAT_3'|'ISO_FORMAT_4' $PinBlockFormat
- * @property Shapes\WrappedKey|null $EncryptionWrappedKey
+ * @property string $PrimaryAccountNumber
  */
 class GeneratePinDataRequest extends Request
 {
     /**
      * @param array{
-     *     GenerationKeyIdentifier: string,
      *     EncryptionKeyIdentifier: string,
      *     GenerationAttributes: Shapes\PinGenerationAttributes,
+     *     GenerationKeyIdentifier: string,
+     *     PinBlockFormat: 'ISO_FORMAT_0'|'ISO_FORMAT_3',
      *     PinDataLength?: int<4, 12>|null,
-     *     PrimaryAccountNumber?: string|null,
-     *     PinBlockFormat: 'ISO_FORMAT_0'|'ISO_FORMAT_1'|'ISO_FORMAT_3'|'ISO_FORMAT_4',
-     *     EncryptionWrappedKey?: Shapes\WrappedKey|null
+     *     PrimaryAccountNumber: string
      * } $args
      */
     public function __construct(array $args)

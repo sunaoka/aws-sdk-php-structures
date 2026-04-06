@@ -10,8 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $certificateArn
  * @property string|null $appsyncDomainName
  * @property string|null $hostedZoneId
- * @property array<string, string>|null $tags
- * @property string|null $domainNameArn
  */
 class DomainNameConfig extends Shape
 {
@@ -21,9 +19,7 @@ class DomainNameConfig extends Shape
      *     description?: string|null,
      *     certificateArn?: string|null,
      *     appsyncDomainName?: string|null,
-     *     hostedZoneId?: string|null,
-     *     tags?: array<string, string>|null,
-     *     domainNameArn?: string|null
+     *     hostedZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

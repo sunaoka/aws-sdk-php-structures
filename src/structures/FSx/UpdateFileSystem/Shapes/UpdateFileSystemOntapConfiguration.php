@@ -13,9 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<8, 100000>|null $ThroughputCapacity
  * @property list<string>|null $AddRouteTableIds
  * @property list<string>|null $RemoveRouteTableIds
- * @property int<128, 6144>|null $ThroughputCapacityPerHAPair
- * @property int<1, 12>|null $HAPairs
- * @property string|null $EndpointIpv6AddressRange
  */
 class UpdateFileSystemOntapConfiguration extends Shape
 {
@@ -28,10 +25,7 @@ class UpdateFileSystemOntapConfiguration extends Shape
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
      *     ThroughputCapacity?: int<8, 100000>|null,
      *     AddRouteTableIds?: list<string>|null,
-     *     RemoveRouteTableIds?: list<string>|null,
-     *     ThroughputCapacityPerHAPair?: int<128, 6144>|null,
-     *     HAPairs?: int<1, 12>|null,
-     *     EndpointIpv6AddressRange?: string|null
+     *     RemoveRouteTableIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

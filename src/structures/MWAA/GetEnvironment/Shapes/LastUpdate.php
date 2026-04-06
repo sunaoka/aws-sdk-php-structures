@@ -5,21 +5,19 @@ namespace Sunaoka\Aws\Structures\MWAA\GetEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SUCCESS'|'PENDING'|'FAILED'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property UpdateError|null $Error
  * @property string|null $Source
- * @property 'FORCED'|'GRACEFUL'|null $WorkerReplacementStrategy
+ * @property 'SUCCESS'|'PENDING'|'FAILED'|null $Status
  */
 class LastUpdate extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'SUCCESS'|'PENDING'|'FAILED'|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Error?: UpdateError|null,
      *     Source?: string|null,
-     *     WorkerReplacementStrategy?: 'FORCED'|'GRACEFUL'|null
+     *     Status?: 'SUCCESS'|'PENDING'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

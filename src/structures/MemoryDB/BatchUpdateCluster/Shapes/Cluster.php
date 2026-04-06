@@ -9,13 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property string|null $Status
  * @property ClusterPendingUpdates|null $PendingUpdates
- * @property string|null $MultiRegionClusterName
  * @property int|null $NumberOfShards
  * @property list<Shard>|null $Shards
  * @property 'singleaz'|'multiaz'|null $AvailabilityMode
  * @property Endpoint|null $ClusterEndpoint
  * @property string|null $NodeType
- * @property string|null $Engine
  * @property string|null $EngineVersion
  * @property string|null $EnginePatchVersion
  * @property string|null $ParameterGroupName
@@ -33,8 +31,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ACLName
  * @property bool|null $AutoMinorVersionUpgrade
  * @property 'true'|'false'|null $DataTiering
- * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
- * @property 'ipv4'|'ipv6'|null $IpDiscovery
  */
 class Cluster extends Shape
 {
@@ -44,13 +40,11 @@ class Cluster extends Shape
      *     Description?: string|null,
      *     Status?: string|null,
      *     PendingUpdates?: ClusterPendingUpdates|null,
-     *     MultiRegionClusterName?: string|null,
      *     NumberOfShards?: int|null,
      *     Shards?: list<Shard>|null,
      *     AvailabilityMode?: 'singleaz'|'multiaz'|null,
      *     ClusterEndpoint?: Endpoint|null,
      *     NodeType?: string|null,
-     *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     EnginePatchVersion?: string|null,
      *     ParameterGroupName?: string|null,
@@ -67,9 +61,7 @@ class Cluster extends Shape
      *     SnapshotWindow?: string|null,
      *     ACLName?: string|null,
      *     AutoMinorVersionUpgrade?: bool|null,
-     *     DataTiering?: 'true'|'false'|null,
-     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
-     *     IpDiscovery?: 'ipv4'|'ipv6'|null
+     *     DataTiering?: 'true'|'false'|null
      * } $args
      */
     public function __construct(array $args = [])

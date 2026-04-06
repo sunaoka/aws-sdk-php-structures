@@ -9,11 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $maximumPercent
  * @property int|null $minimumHealthyPercent
  * @property DeploymentAlarms|null $alarms
- * @property 'ROLLING'|'BLUE_GREEN'|'LINEAR'|'CANARY'|null $strategy
- * @property int|null $bakeTimeInMinutes
- * @property list<DeploymentLifecycleHook>|null $lifecycleHooks
- * @property LinearConfiguration|null $linearConfiguration
- * @property CanaryConfiguration|null $canaryConfiguration
  */
 class DeploymentConfiguration extends Shape
 {
@@ -22,12 +17,7 @@ class DeploymentConfiguration extends Shape
      *     deploymentCircuitBreaker?: DeploymentCircuitBreaker|null,
      *     maximumPercent?: int|null,
      *     minimumHealthyPercent?: int|null,
-     *     alarms?: DeploymentAlarms|null,
-     *     strategy?: 'ROLLING'|'BLUE_GREEN'|'LINEAR'|'CANARY'|null,
-     *     bakeTimeInMinutes?: int|null,
-     *     lifecycleHooks?: list<DeploymentLifecycleHook>|null,
-     *     linearConfiguration?: LinearConfiguration|null,
-     *     canaryConfiguration?: CanaryConfiguration|null
+     *     alarms?: DeploymentAlarms|null
      * } $args
      */
     public function __construct(array $args = [])

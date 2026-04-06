@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DurationMinutes
  * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
- * @property string|null $Audience
  */
 class GetChannelScheduleRequest extends Request
 {
@@ -18,8 +17,7 @@ class GetChannelScheduleRequest extends Request
      *     ChannelName: string,
      *     DurationMinutes?: string|null,
      *     MaxResults?: int<1, 100>|null,
-     *     NextToken?: string|null,
-     *     Audience?: string|null
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

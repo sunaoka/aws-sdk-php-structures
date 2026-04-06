@@ -5,18 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\GetDataQualityRuleRecommendationRun\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GlueTable|null $GlueTable
- * @property DataQualityGlueTable|null $DataQualityGlueTable
+ * @property GlueTable $GlueTable
  */
 class DataSource extends Shape
 {
     /**
-     * @param array{
-     *     GlueTable?: GlueTable|null,
-     *     DataQualityGlueTable?: DataQualityGlueTable|null
-     * } $args
+     * @param array{GlueTable: GlueTable} $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

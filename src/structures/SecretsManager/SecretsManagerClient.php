@@ -4,7 +4,6 @@ namespace Sunaoka\Aws\Structures\SecretsManager;
 
 class SecretsManagerClient extends \Aws\SecretsManager\SecretsManagerClient
 {
-    use BatchGetSecretValue\BatchGetSecretValueTrait;
     use CancelRotateSecret\CancelRotateSecretTrait;
     use CreateSecret\CreateSecretTrait;
     use DeleteResourcePolicy\DeleteResourcePolicyTrait;

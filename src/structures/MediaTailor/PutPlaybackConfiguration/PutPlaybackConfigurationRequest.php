@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CdnConfiguration|null $CdnConfiguration
  * @property array<string, array<string, string>>|null $ConfigurationAliases
  * @property Shapes\DashConfigurationForPut|null $DashConfiguration
- * @property 'STITCHED_ONLY'|'PLAYER_SELECT'|null $InsertionMode
  * @property Shapes\LivePreRollConfiguration|null $LivePreRollConfiguration
  * @property Shapes\ManifestProcessingRules|null $ManifestProcessingRules
  * @property string $Name
@@ -20,8 +19,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Tags
  * @property string|null $TranscodeProfileName
  * @property string|null $VideoContentSourceUrl
- * @property Shapes\AdConditioningConfiguration|null $AdConditioningConfiguration
- * @property Shapes\AdDecisionServerConfiguration|null $AdDecisionServerConfiguration
  */
 class PutPlaybackConfigurationRequest extends Request
 {
@@ -33,7 +30,6 @@ class PutPlaybackConfigurationRequest extends Request
      *     CdnConfiguration?: Shapes\CdnConfiguration|null,
      *     ConfigurationAliases?: array<string, array<string, string>>|null,
      *     DashConfiguration?: Shapes\DashConfigurationForPut|null,
-     *     InsertionMode?: 'STITCHED_ONLY'|'PLAYER_SELECT'|null,
      *     LivePreRollConfiguration?: Shapes\LivePreRollConfiguration|null,
      *     ManifestProcessingRules?: Shapes\ManifestProcessingRules|null,
      *     Name: string,
@@ -41,9 +37,7 @@ class PutPlaybackConfigurationRequest extends Request
      *     SlateAdUrl?: string|null,
      *     Tags?: array<string, string>|null,
      *     TranscodeProfileName?: string|null,
-     *     VideoContentSourceUrl?: string|null,
-     *     AdConditioningConfiguration?: Shapes\AdConditioningConfiguration|null,
-     *     AdDecisionServerConfiguration?: Shapes\AdDecisionServerConfiguration|null
+     *     VideoContentSourceUrl?: string|null
      * } $args
      */
     public function __construct(array $args)

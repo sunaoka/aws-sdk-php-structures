@@ -19,7 +19,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ServerSideKmsKeyId
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $OffCondition
- * @property Shapes\ModelDiagnosticsOutputConfiguration|null $ModelDiagnosticsOutputConfiguration
  */
 class CreateModelRequest extends Request
 {
@@ -38,8 +37,7 @@ class CreateModelRequest extends Request
      *     DataPreProcessingConfiguration?: Shapes\DataPreProcessingConfiguration|null,
      *     ServerSideKmsKeyId?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     OffCondition?: string|null,
-     *     ModelDiagnosticsOutputConfiguration?: Shapes\ModelDiagnosticsOutputConfiguration|null
+     *     OffCondition?: string|null
      * } $args
      */
     public function __construct(array $args)

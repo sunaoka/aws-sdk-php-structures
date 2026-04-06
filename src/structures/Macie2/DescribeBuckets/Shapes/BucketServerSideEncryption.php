@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $kmsMasterKeyId
- * @property 'NONE'|'AES256'|'aws:kms'|'aws:kms:dsse'|null $type
+ * @property 'NONE'|'AES256'|'aws:kms'|null $type
  */
 class BucketServerSideEncryption extends Shape
 {
     /**
      * @param array{
      *     kmsMasterKeyId?: string|null,
-     *     type?: 'NONE'|'AES256'|'aws:kms'|'aws:kms:dsse'|null
+     *     type?: 'NONE'|'AES256'|'aws:kms'|null
      * } $args
      */
     public function __construct(array $args = [])

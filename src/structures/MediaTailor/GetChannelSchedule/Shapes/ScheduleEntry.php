@@ -12,10 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LiveSourceName
  * @property string $ProgramName
  * @property list<ScheduleAdBreak>|null $ScheduleAdBreaks
- * @property 'PROGRAM'|'FILLER_SLATE'|'ALTERNATE_MEDIA'|null $ScheduleEntryType
+ * @property 'PROGRAM'|'FILLER_SLATE'|null $ScheduleEntryType
  * @property string $SourceLocationName
  * @property string|null $VodSourceName
- * @property list<string>|null $Audiences
  */
 class ScheduleEntry extends Shape
 {
@@ -28,10 +27,9 @@ class ScheduleEntry extends Shape
      *     LiveSourceName?: string|null,
      *     ProgramName: string,
      *     ScheduleAdBreaks?: list<ScheduleAdBreak>|null,
-     *     ScheduleEntryType?: 'PROGRAM'|'FILLER_SLATE'|'ALTERNATE_MEDIA'|null,
+     *     ScheduleEntryType?: 'PROGRAM'|'FILLER_SLATE'|null,
      *     SourceLocationName: string,
-     *     VodSourceName?: string|null,
-     *     Audiences?: list<string>|null
+     *     VodSourceName?: string|null
      * } $args
      */
     public function __construct(array $args)

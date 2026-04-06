@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Ec2\ReplaceNetworkAclAssociation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $DryRun
  * @property string $AssociationId
+ * @property bool|null $DryRun
  * @property string $NetworkAclId
  */
 class ReplaceNetworkAclAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool|null,
      *     AssociationId: string,
+     *     DryRun?: bool|null,
      *     NetworkAclId: string
      * } $args
      */

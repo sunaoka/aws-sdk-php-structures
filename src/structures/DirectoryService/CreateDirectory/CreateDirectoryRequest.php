@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Small'|'Large' $Size
  * @property Shapes\DirectoryVpcSettings|null $VpcSettings
  * @property list<Shapes\Tag>|null $Tags
- * @property 'Dual-stack'|'IPv4'|'IPv6'|null $NetworkType
  */
 class CreateDirectoryRequest extends Request
 {
@@ -24,8 +23,7 @@ class CreateDirectoryRequest extends Request
      *     Description?: string|null,
      *     Size: 'Small'|'Large',
      *     VpcSettings?: Shapes\DirectoryVpcSettings|null,
-     *     Tags?: list<Shapes\Tag>|null,
-     *     NetworkType?: 'Dual-stack'|'IPv4'|'IPv6'|null
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

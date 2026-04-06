@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Content
  * @property 'PLAIN_TEXT' $ContentType
  * @property NotificationRecipientType $Recipient
- * @property NotificationRecipientType|null $Exclusion
  */
 class SendNotificationActionDefinition extends Shape
 {
@@ -20,8 +19,7 @@ class SendNotificationActionDefinition extends Shape
      *     Subject?: string|null,
      *     Content: string,
      *     ContentType: 'PLAIN_TEXT',
-     *     Recipient: NotificationRecipientType,
-     *     Exclusion?: NotificationRecipientType|null
+     *     Recipient: NotificationRecipientType
      * } $args
      */
     public function __construct(array $args)

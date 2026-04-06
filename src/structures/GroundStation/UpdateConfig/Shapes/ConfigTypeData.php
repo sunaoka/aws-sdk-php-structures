@@ -6,26 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AntennaDownlinkConfig|null $antennaDownlinkConfig
- * @property TrackingConfig|null $trackingConfig
- * @property DataflowEndpointConfig|null $dataflowEndpointConfig
  * @property AntennaDownlinkDemodDecodeConfig|null $antennaDownlinkDemodDecodeConfig
  * @property AntennaUplinkConfig|null $antennaUplinkConfig
- * @property UplinkEchoConfig|null $uplinkEchoConfig
+ * @property DataflowEndpointConfig|null $dataflowEndpointConfig
  * @property S3RecordingConfig|null $s3RecordingConfig
- * @property TelemetrySinkConfig|null $telemetrySinkConfig
+ * @property TrackingConfig|null $trackingConfig
+ * @property UplinkEchoConfig|null $uplinkEchoConfig
  */
 class ConfigTypeData extends Shape
 {
     /**
      * @param array{
      *     antennaDownlinkConfig?: AntennaDownlinkConfig|null,
-     *     trackingConfig?: TrackingConfig|null,
-     *     dataflowEndpointConfig?: DataflowEndpointConfig|null,
      *     antennaDownlinkDemodDecodeConfig?: AntennaDownlinkDemodDecodeConfig|null,
      *     antennaUplinkConfig?: AntennaUplinkConfig|null,
-     *     uplinkEchoConfig?: UplinkEchoConfig|null,
+     *     dataflowEndpointConfig?: DataflowEndpointConfig|null,
      *     s3RecordingConfig?: S3RecordingConfig|null,
-     *     telemetrySinkConfig?: TelemetrySinkConfig|null
+     *     trackingConfig?: TrackingConfig|null,
+     *     uplinkEchoConfig?: UplinkEchoConfig|null
      * } $args
      */
     public function __construct(array $args = [])

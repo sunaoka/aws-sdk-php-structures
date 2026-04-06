@@ -9,13 +9,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $ShortName
  * @property 'Small'|'Large'|null $Size
- * @property 'Enterprise'|'Standard'|'Hybrid'|null $Edition
+ * @property 'Enterprise'|'Standard'|null $Edition
  * @property string|null $Alias
  * @property string|null $AccessUrl
  * @property string|null $Description
  * @property list<string>|null $DnsIpAddrs
- * @property list<string>|null $DnsIpv6Addrs
- * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating'|null $Stage
+ * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|null $Stage
  * @property 'Shared'|'PendingAcceptance'|'Rejected'|'Rejecting'|'RejectFailed'|'Sharing'|'ShareFailed'|'Deleted'|'Deleting'|null $ShareStatus
  * @property 'ORGANIZATIONS'|'HANDSHAKE'|null $ShareMethod
  * @property string|null $ShareNotes
@@ -32,8 +31,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OwnerDirectoryDescription|null $OwnerDirectoryDescription
  * @property RegionsInfo|null $RegionsInfo
  * @property 'SERVER_2012'|'SERVER_2019'|null $OsVersion
- * @property HybridSettingsDescription|null $HybridSettings
- * @property 'Dual-stack'|'IPv4'|'IPv6'|null $NetworkType
  */
 class DirectoryDescription extends Shape
 {
@@ -43,13 +40,12 @@ class DirectoryDescription extends Shape
      *     Name?: string|null,
      *     ShortName?: string|null,
      *     Size?: 'Small'|'Large'|null,
-     *     Edition?: 'Enterprise'|'Standard'|'Hybrid'|null,
+     *     Edition?: 'Enterprise'|'Standard'|null,
      *     Alias?: string|null,
      *     AccessUrl?: string|null,
      *     Description?: string|null,
      *     DnsIpAddrs?: list<string>|null,
-     *     DnsIpv6Addrs?: list<string>|null,
-     *     Stage?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating'|null,
+     *     Stage?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|null,
      *     ShareStatus?: 'Shared'|'PendingAcceptance'|'Rejected'|'Rejecting'|'RejectFailed'|'Sharing'|'ShareFailed'|'Deleted'|'Deleting'|null,
      *     ShareMethod?: 'ORGANIZATIONS'|'HANDSHAKE'|null,
      *     ShareNotes?: string|null,
@@ -65,9 +61,7 @@ class DirectoryDescription extends Shape
      *     DesiredNumberOfDomainControllers?: int<2, max>|null,
      *     OwnerDirectoryDescription?: OwnerDirectoryDescription|null,
      *     RegionsInfo?: RegionsInfo|null,
-     *     OsVersion?: 'SERVER_2012'|'SERVER_2019'|null,
-     *     HybridSettings?: HybridSettingsDescription|null,
-     *     NetworkType?: 'Dual-stack'|'IPv4'|'IPv6'|null
+     *     OsVersion?: 'SERVER_2012'|'SERVER_2019'|null
      * } $args
      */
     public function __construct(array $args = [])

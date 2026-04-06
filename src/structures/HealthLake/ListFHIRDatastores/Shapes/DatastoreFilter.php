@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $DatastoreName
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'CREATE_FAILED'|null $DatastoreStatus
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|null $DatastoreStatus
  * @property \Aws\Api\DateTimeResult|null $CreatedBefore
  * @property \Aws\Api\DateTimeResult|null $CreatedAfter
  */
@@ -15,7 +15,7 @@ class DatastoreFilter extends Shape
     /**
      * @param array{
      *     DatastoreName?: string|null,
-     *     DatastoreStatus?: 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'CREATE_FAILED'|null,
+     *     DatastoreStatus?: 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|null,
      *     CreatedBefore?: \Aws\Api\DateTimeResult|null,
      *     CreatedAfter?: \Aws\Api\DateTimeResult|null
      * } $args

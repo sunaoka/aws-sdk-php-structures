@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $ReservationId
- * @property string|null $OwnerId
- * @property string|null $RequesterId
  * @property list<GroupIdentifier>|null $Groups
  * @property list<Instance>|null $Instances
+ * @property string|null $OwnerId
+ * @property string|null $RequesterId
+ * @property string|null $ReservationId
  */
 class Reservation extends Shape
 {
     /**
      * @param array{
-     *     ReservationId?: string|null,
+     *     Groups?: list<GroupIdentifier>|null,
+     *     Instances?: list<Instance>|null,
      *     OwnerId?: string|null,
      *     RequesterId?: string|null,
-     *     Groups?: list<GroupIdentifier>|null,
-     *     Instances?: list<Instance>|null
+     *     ReservationId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

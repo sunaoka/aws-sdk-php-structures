@@ -6,11 +6,10 @@ trait DeleteKeyPairTrait
 {
     /**
      * @param DeleteKeyPairRequest $args
-     * @return DeleteKeyPairResponse
+     * @return void
      */
     public function deleteKeyPair(DeleteKeyPairRequest $args)
     {
-        $result = parent::deleteKeyPair($args->toArray());
-        return new DeleteKeyPairResponse($result->toArray());
+        parent::deleteKeyPair($args->toArray());
     }
 }

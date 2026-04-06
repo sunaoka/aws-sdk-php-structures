@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AcceleratorArn
  * @property string|null $Name
  * @property 'IPV4'|'DUAL_STACK'|null $IpAddressType
- * @property list<string>|null $IpAddresses
  * @property bool|null $Enabled
  */
 class UpdateCustomRoutingAcceleratorRequest extends Request
@@ -18,7 +17,6 @@ class UpdateCustomRoutingAcceleratorRequest extends Request
      *     AcceleratorArn: string,
      *     Name?: string|null,
      *     IpAddressType?: 'IPV4'|'DUAL_STACK'|null,
-     *     IpAddresses?: list<string>|null,
      *     Enabled?: bool|null
      * } $args
      */

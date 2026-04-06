@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MaxAttempts
  * @property \Aws\Api\DateTimeResult|null $ExecutionStartTime
  * @property \Aws\Api\DateTimeResult|null $ExecutionEndTime
- * @property 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited'|null $StepStatus
+ * @property 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|null $StepStatus
  * @property string|null $ResponseCode
  * @property array<string, string>|null $Inputs
  * @property array<string, list<string>>|null $Outputs
@@ -28,7 +28,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Target>|null $Targets
  * @property TargetLocation|null $TargetLocation
  * @property list<AlarmStateInformation>|null $TriggeredAlarms
- * @property ParentStepDetails|null $ParentStepDetails
  */
 class StepExecution extends Shape
 {
@@ -41,7 +40,7 @@ class StepExecution extends Shape
      *     MaxAttempts?: int|null,
      *     ExecutionStartTime?: \Aws\Api\DateTimeResult|null,
      *     ExecutionEndTime?: \Aws\Api\DateTimeResult|null,
-     *     StepStatus?: 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited'|null,
+     *     StepStatus?: 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|null,
      *     ResponseCode?: string|null,
      *     Inputs?: array<string, string>|null,
      *     Outputs?: array<string, list<string>>|null,
@@ -56,8 +55,7 @@ class StepExecution extends Shape
      *     ValidNextSteps?: list<string>|null,
      *     Targets?: list<Target>|null,
      *     TargetLocation?: TargetLocation|null,
-     *     TriggeredAlarms?: list<AlarmStateInformation>|null,
-     *     ParentStepDetails?: ParentStepDetails|null
+     *     TriggeredAlarms?: list<AlarmStateInformation>|null
      * } $args
      */
     public function __construct(array $args = [])

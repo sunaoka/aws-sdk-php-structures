@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $CatalogItemId
- * @property int<1, max>|null $Quantity
+ * @property int<1, 20>|null $Quantity
  */
 class LineItemRequest extends Shape
 {
     /**
      * @param array{
      *     CatalogItemId?: string|null,
-     *     Quantity?: int<1, max>|null
+     *     Quantity?: int<1, 20>|null
      * } $args
      */
     public function __construct(array $args = [])

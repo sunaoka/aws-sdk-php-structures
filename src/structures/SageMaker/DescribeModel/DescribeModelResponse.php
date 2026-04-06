@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ContainerDefinition|null $PrimaryContainer
  * @property list<Shapes\ContainerDefinition>|null $Containers
  * @property Shapes\InferenceExecutionConfig|null $InferenceExecutionConfig
- * @property string|null $ExecutionRoleArn
+ * @property string $ExecutionRoleArn
  * @property Shapes\VpcConfig|null $VpcConfig
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property string $ModelArn

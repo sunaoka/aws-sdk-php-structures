@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $name
  * @property string|null $prerequisite
  * @property string $recommendationId
- * @property 'Implemented'|'Inactive'|'NotImplemented'|'Excluded'|null $recommendationStatus
  * @property string $referenceId
  * @property 'SSM' $serviceType
  */
@@ -25,7 +24,6 @@ class SopRecommendation extends Shape
      *     name?: string|null,
      *     prerequisite?: string|null,
      *     recommendationId: string,
-     *     recommendationStatus?: 'Implemented'|'Inactive'|'NotImplemented'|'Excluded'|null,
      *     referenceId: string,
      *     serviceType: 'SSM'
      * } $args

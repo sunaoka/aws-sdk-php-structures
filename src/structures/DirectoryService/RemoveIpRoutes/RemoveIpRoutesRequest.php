@@ -6,16 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryId
- * @property list<string>|null $CidrIps
- * @property list<string>|null $CidrIpv6s
+ * @property list<string> $CidrIps
  */
 class RemoveIpRoutesRequest extends Request
 {
     /**
      * @param array{
      *     DirectoryId: string,
-     *     CidrIps?: list<string>|null,
-     *     CidrIpv6s?: list<string>|null
+     *     CidrIps: list<string>
      * } $args
      */
     public function __construct(array $args)

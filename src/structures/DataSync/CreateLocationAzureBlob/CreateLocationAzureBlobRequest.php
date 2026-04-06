@@ -6,30 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContainerUrl
- * @property 'SAS'|'NONE' $AuthenticationType
+ * @property 'SAS' $AuthenticationType
  * @property Shapes\AzureBlobSasConfiguration|null $SasConfiguration
  * @property 'BLOCK'|null $BlobType
  * @property 'HOT'|'COOL'|'ARCHIVE'|null $AccessTier
  * @property string|null $Subdirectory
- * @property list<string>|null $AgentArns
+ * @property list<string> $AgentArns
  * @property list<Shapes\TagListEntry>|null $Tags
- * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
- * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  */
 class CreateLocationAzureBlobRequest extends Request
 {
     /**
      * @param array{
      *     ContainerUrl: string,
-     *     AuthenticationType: 'SAS'|'NONE',
+     *     AuthenticationType: 'SAS',
      *     SasConfiguration?: Shapes\AzureBlobSasConfiguration|null,
      *     BlobType?: 'BLOCK'|null,
      *     AccessTier?: 'HOT'|'COOL'|'ARCHIVE'|null,
      *     Subdirectory?: string|null,
-     *     AgentArns?: list<string>|null,
-     *     Tags?: list<Shapes\TagListEntry>|null,
-     *     CmkSecretConfig?: Shapes\CmkSecretConfig|null,
-     *     CustomSecretConfig?: Shapes\CustomSecretConfig|null
+     *     AgentArns: list<string>,
+     *     Tags?: list<Shapes\TagListEntry>|null
      * } $args
      */
     public function __construct(array $args)

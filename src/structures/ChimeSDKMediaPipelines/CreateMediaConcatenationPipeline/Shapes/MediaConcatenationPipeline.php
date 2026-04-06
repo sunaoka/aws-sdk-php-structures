@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MediaPipelineArn
  * @property list<ConcatenationSource>|null $Sources
  * @property list<ConcatenationSink>|null $Sinks
- * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null $Status
+ * @property 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|null $Status
  * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
@@ -21,7 +21,7 @@ class MediaConcatenationPipeline extends Shape
      *     MediaPipelineArn?: string|null,
      *     Sources?: list<ConcatenationSource>|null,
      *     Sinks?: list<ConcatenationSink>|null,
-     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|'NotStarted'|null,
+     *     Status?: 'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|'Paused'|null,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args

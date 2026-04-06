@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string|null $ScheduleExpression
  * @property string|null $EventPattern
- * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_ALL_CLOUDTRAIL_MANAGEMENT_EVENTS'|null $State
+ * @property 'ENABLED'|'DISABLED'|null $State
  * @property string|null $Description
  * @property string|null $RoleArn
  * @property list<Shapes\Tag>|null $Tags
@@ -21,7 +21,7 @@ class PutRuleRequest extends Request
      *     Name: string,
      *     ScheduleExpression?: string|null,
      *     EventPattern?: string|null,
-     *     State?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_ALL_CLOUDTRAIL_MANAGEMENT_EVENTS'|null,
+     *     State?: 'ENABLED'|'DISABLED'|null,
      *     Description?: string|null,
      *     RoleArn?: string|null,
      *     Tags?: list<Shapes\Tag>|null,

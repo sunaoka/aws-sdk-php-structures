@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $UserInfoEndpoint
  * @property string $LogoutEndpoint
  * @property string $JwksUri
- * @property string|null $Scope
- * @property array<string, string>|null $AuthenticationRequestExtraParams
  */
 class OidcConfig extends Shape
 {
@@ -27,9 +25,7 @@ class OidcConfig extends Shape
      *     TokenEndpoint: string,
      *     UserInfoEndpoint: string,
      *     LogoutEndpoint: string,
-     *     JwksUri: string,
-     *     Scope?: string|null,
-     *     AuthenticationRequestExtraParams?: array<string, string>|null
+     *     JwksUri: string
      * } $args
      */
     public function __construct(array $args)

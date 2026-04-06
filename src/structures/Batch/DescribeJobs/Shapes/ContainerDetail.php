@@ -33,8 +33,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FargatePlatformConfiguration|null $fargatePlatformConfiguration
  * @property EphemeralStorage|null $ephemeralStorage
  * @property RuntimePlatform|null $runtimePlatform
- * @property RepositoryCredentials|null $repositoryCredentials
- * @property bool|null $enableExecuteCommand
  */
 class ContainerDetail extends Shape
 {
@@ -67,9 +65,7 @@ class ContainerDetail extends Shape
      *     networkConfiguration?: NetworkConfiguration|null,
      *     fargatePlatformConfiguration?: FargatePlatformConfiguration|null,
      *     ephemeralStorage?: EphemeralStorage|null,
-     *     runtimePlatform?: RuntimePlatform|null,
-     *     repositoryCredentials?: RepositoryCredentials|null,
-     *     enableExecuteCommand?: bool|null
+     *     runtimePlatform?: RuntimePlatform|null
      * } $args
      */
     public function __construct(array $args = [])

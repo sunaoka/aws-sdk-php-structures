@@ -6,16 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string|null $Account
- * @property 'application.opensearchservice.amazonaws.com'|null $Service
+ * @property string $Account
  */
 class RevokeVpcEndpointAccessRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     Account?: string|null,
-     *     Service?: 'application.opensearchservice.amazonaws.com'|null
+     *     Account: string
      * } $args
      */
     public function __construct(array $args)

@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'enable'|'disable'|null $DefaultRouteTablePropagation
  * @property 'enable'|'disable'|null $VpnEcmpSupport
  * @property 'enable'|'disable'|null $DnsSupport
- * @property 'enable'|'disable'|null $SecurityGroupReferencingSupport
  * @property 'enable'|'disable'|null $MulticastSupport
  * @property list<string>|null $TransitGatewayCidrBlocks
  */
@@ -25,7 +24,6 @@ class TransitGatewayRequestOptions extends Shape
      *     DefaultRouteTablePropagation?: 'enable'|'disable'|null,
      *     VpnEcmpSupport?: 'enable'|'disable'|null,
      *     DnsSupport?: 'enable'|'disable'|null,
-     *     SecurityGroupReferencingSupport?: 'enable'|'disable'|null,
      *     MulticastSupport?: 'enable'|'disable'|null,
      *     TransitGatewayCidrBlocks?: list<string>|null
      * } $args

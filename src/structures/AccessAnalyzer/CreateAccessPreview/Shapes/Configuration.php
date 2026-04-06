@@ -16,9 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3BucketConfiguration|null $s3Bucket
  * @property SnsTopicConfiguration|null $snsTopic
  * @property SqsQueueConfiguration|null $sqsQueue
- * @property S3ExpressDirectoryBucketConfiguration|null $s3ExpressDirectoryBucket
- * @property DynamodbStreamConfiguration|null $dynamodbStream
- * @property DynamodbTableConfiguration|null $dynamodbTable
  */
 class Configuration extends Shape
 {
@@ -34,10 +31,7 @@ class Configuration extends Shape
      *     secretsManagerSecret?: SecretsManagerSecretConfiguration|null,
      *     s3Bucket?: S3BucketConfiguration|null,
      *     snsTopic?: SnsTopicConfiguration|null,
-     *     sqsQueue?: SqsQueueConfiguration|null,
-     *     s3ExpressDirectoryBucket?: S3ExpressDirectoryBucketConfiguration|null,
-     *     dynamodbStream?: DynamodbStreamConfiguration|null,
-     *     dynamodbTable?: DynamodbTableConfiguration|null
+     *     sqsQueue?: SqsQueueConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

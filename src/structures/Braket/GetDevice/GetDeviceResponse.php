@@ -6,12 +6,11 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $deviceArn
- * @property string $deviceName
- * @property string $providerName
- * @property 'QPU'|'SIMULATOR' $deviceType
- * @property 'ONLINE'|'OFFLINE'|'RETIRED' $deviceStatus
  * @property string $deviceCapabilities
- * @property list<Shapes\DeviceQueueInfo>|null $deviceQueueInfo
+ * @property string $deviceName
+ * @property 'ONLINE'|'OFFLINE'|'RETIRED' $deviceStatus
+ * @property 'QPU'|'SIMULATOR' $deviceType
+ * @property string $providerName
  */
 class GetDeviceResponse extends Response
 {

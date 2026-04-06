@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $links
  * @property list<PortMapping>|null $portMappings
  * @property bool|null $essential
- * @property ContainerRestartPolicy|null $restartPolicy
  * @property list<string>|null $entryPoint
  * @property list<string>|null $command
  * @property list<KeyValuePair>|null $environment
@@ -26,7 +25,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ContainerDependency>|null $dependsOn
  * @property int|null $startTimeout
  * @property int|null $stopTimeout
- * @property 'enabled'|'disabled'|null $versionConsistency
  * @property string|null $hostname
  * @property string|null $user
  * @property string|null $workingDirectory
@@ -61,7 +59,6 @@ class ContainerDefinition extends Shape
      *     links?: list<string>|null,
      *     portMappings?: list<PortMapping>|null,
      *     essential?: bool|null,
-     *     restartPolicy?: ContainerRestartPolicy|null,
      *     entryPoint?: list<string>|null,
      *     command?: list<string>|null,
      *     environment?: list<KeyValuePair>|null,
@@ -73,7 +70,6 @@ class ContainerDefinition extends Shape
      *     dependsOn?: list<ContainerDependency>|null,
      *     startTimeout?: int|null,
      *     stopTimeout?: int|null,
-     *     versionConsistency?: 'enabled'|'disabled'|null,
      *     hostname?: string|null,
      *     user?: string|null,
      *     workingDirectory?: string|null,

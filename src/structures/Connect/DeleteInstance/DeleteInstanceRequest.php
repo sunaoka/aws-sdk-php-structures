@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string|null $ClientToken
  */
 class DeleteInstanceRequest extends Request
 {
     /**
-     * @param array{
-     *     InstanceId: string,
-     *     ClientToken?: string|null
-     * } $args
+     * @param array{InstanceId: string} $args
      */
     public function __construct(array $args)
     {

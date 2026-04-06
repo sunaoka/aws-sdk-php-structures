@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $completeTime
  * @property DeploymentOverview|null $deploymentOverview
  * @property string|null $description
- * @property 'user'|'autoscaling'|'codeDeployRollback'|'CodeDeploy'|'CodeDeployAutoUpdate'|'CloudFormation'|'CloudFormationRollback'|'autoscalingTermination'|null $creator
+ * @property 'user'|'autoscaling'|'codeDeployRollback'|'CodeDeploy'|'CodeDeployAutoUpdate'|'CloudFormation'|'CloudFormationRollback'|null $creator
  * @property bool|null $ignoreApplicationStopFailures
  * @property AutoRollbackConfiguration|null $autoRollbackConfiguration
  * @property bool|null $updateOutdatedInstancesOnly
@@ -53,7 +53,7 @@ class DeploymentInfo extends Shape
      *     completeTime?: \Aws\Api\DateTimeResult|null,
      *     deploymentOverview?: DeploymentOverview|null,
      *     description?: string|null,
-     *     creator?: 'user'|'autoscaling'|'codeDeployRollback'|'CodeDeploy'|'CodeDeployAutoUpdate'|'CloudFormation'|'CloudFormationRollback'|'autoscalingTermination'|null,
+     *     creator?: 'user'|'autoscaling'|'codeDeployRollback'|'CodeDeploy'|'CodeDeployAutoUpdate'|'CloudFormation'|'CloudFormationRollback'|null,
      *     ignoreApplicationStopFailures?: bool|null,
      *     autoRollbackConfiguration?: AutoRollbackConfiguration|null,
      *     updateOutdatedInstancesOnly?: bool|null,

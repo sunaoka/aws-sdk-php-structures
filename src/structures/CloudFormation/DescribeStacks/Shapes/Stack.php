@@ -28,9 +28,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RootId
  * @property StackDriftInformation|null $DriftInformation
  * @property bool|null $RetainExceptOnCreate
- * @property 'STANDARD'|'FORCE_DELETE_STACK'|null $DeletionMode
- * @property 'CONFIGURATION_COMPLETE'|'VALIDATION_FAILED'|null $DetailedStatus
- * @property list<OperationEntry>|null $LastOperations
  */
 class Stack extends Shape
 {
@@ -58,10 +55,7 @@ class Stack extends Shape
      *     ParentId?: string|null,
      *     RootId?: string|null,
      *     DriftInformation?: StackDriftInformation|null,
-     *     RetainExceptOnCreate?: bool|null,
-     *     DeletionMode?: 'STANDARD'|'FORCE_DELETE_STACK'|null,
-     *     DetailedStatus?: 'CONFIGURATION_COMPLETE'|'VALIDATION_FAILED'|null,
-     *     LastOperations?: list<OperationEntry>|null
+     *     RetainExceptOnCreate?: bool|null
      * } $args
      */
     public function __construct(array $args)

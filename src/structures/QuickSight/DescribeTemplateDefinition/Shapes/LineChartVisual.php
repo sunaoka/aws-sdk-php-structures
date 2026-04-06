@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LineChartConfiguration|null $ChartConfiguration
  * @property list<VisualCustomAction>|null $Actions
  * @property list<ColumnHierarchy>|null $ColumnHierarchies
- * @property string|null $VisualContentAltText
  */
 class LineChartVisual extends Shape
 {
@@ -22,8 +21,7 @@ class LineChartVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: LineChartConfiguration|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     ColumnHierarchies?: list<ColumnHierarchy>|null,
-     *     VisualContentAltText?: string|null
+     *     ColumnHierarchies?: list<ColumnHierarchy>|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DeliveryS3Uri
  * @property string|null $QueryAlias
  * @property list<string>|null $QueryParameters
- * @property string|null $EventDataStoreOwnerAccountId
  */
 class StartQueryRequest extends Request
 {
@@ -18,8 +17,7 @@ class StartQueryRequest extends Request
      *     QueryStatement?: string|null,
      *     DeliveryS3Uri?: string|null,
      *     QueryAlias?: string|null,
-     *     QueryParameters?: list<string>|null,
-     *     EventDataStoreOwnerAccountId?: string|null
+     *     QueryParameters?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

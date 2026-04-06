@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\GetSecurityPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'encryption'|'network' $type
  * @property string $name
+ * @property 'encryption'|'network' $type
  */
 class GetSecurityPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     type: 'encryption'|'network',
-     *     name: string
+     *     name: string,
+     *     type: 'encryption'|'network'
      * } $args
      */
     public function __construct(array $args)

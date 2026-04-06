@@ -5,37 +5,35 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $InputTemplate
- * @property PipeTargetLambdaFunctionParameters|null $LambdaFunctionParameters
- * @property PipeTargetStateMachineParameters|null $StepFunctionStateMachineParameters
- * @property PipeTargetKinesisStreamParameters|null $KinesisStreamParameters
- * @property PipeTargetEcsTaskParameters|null $EcsTaskParameters
  * @property PipeTargetBatchJobParameters|null $BatchJobParameters
- * @property PipeTargetSqsQueueParameters|null $SqsQueueParameters
+ * @property PipeTargetCloudWatchLogsParameters|null $CloudWatchLogsParameters
+ * @property PipeTargetEcsTaskParameters|null $EcsTaskParameters
+ * @property PipeTargetEventBridgeEventBusParameters|null $EventBridgeEventBusParameters
  * @property PipeTargetHttpParameters|null $HttpParameters
+ * @property string|null $InputTemplate
+ * @property PipeTargetKinesisStreamParameters|null $KinesisStreamParameters
+ * @property PipeTargetLambdaFunctionParameters|null $LambdaFunctionParameters
  * @property PipeTargetRedshiftDataParameters|null $RedshiftDataParameters
  * @property PipeTargetSageMakerPipelineParameters|null $SageMakerPipelineParameters
- * @property PipeTargetEventBridgeEventBusParameters|null $EventBridgeEventBusParameters
- * @property PipeTargetCloudWatchLogsParameters|null $CloudWatchLogsParameters
- * @property PipeTargetTimestreamParameters|null $TimestreamParameters
+ * @property PipeTargetSqsQueueParameters|null $SqsQueueParameters
+ * @property PipeTargetStateMachineParameters|null $StepFunctionStateMachineParameters
  */
 class PipeTargetParameters extends Shape
 {
     /**
      * @param array{
-     *     InputTemplate?: string|null,
-     *     LambdaFunctionParameters?: PipeTargetLambdaFunctionParameters|null,
-     *     StepFunctionStateMachineParameters?: PipeTargetStateMachineParameters|null,
-     *     KinesisStreamParameters?: PipeTargetKinesisStreamParameters|null,
-     *     EcsTaskParameters?: PipeTargetEcsTaskParameters|null,
      *     BatchJobParameters?: PipeTargetBatchJobParameters|null,
-     *     SqsQueueParameters?: PipeTargetSqsQueueParameters|null,
+     *     CloudWatchLogsParameters?: PipeTargetCloudWatchLogsParameters|null,
+     *     EcsTaskParameters?: PipeTargetEcsTaskParameters|null,
+     *     EventBridgeEventBusParameters?: PipeTargetEventBridgeEventBusParameters|null,
      *     HttpParameters?: PipeTargetHttpParameters|null,
+     *     InputTemplate?: string|null,
+     *     KinesisStreamParameters?: PipeTargetKinesisStreamParameters|null,
+     *     LambdaFunctionParameters?: PipeTargetLambdaFunctionParameters|null,
      *     RedshiftDataParameters?: PipeTargetRedshiftDataParameters|null,
      *     SageMakerPipelineParameters?: PipeTargetSageMakerPipelineParameters|null,
-     *     EventBridgeEventBusParameters?: PipeTargetEventBridgeEventBusParameters|null,
-     *     CloudWatchLogsParameters?: PipeTargetCloudWatchLogsParameters|null,
-     *     TimestreamParameters?: PipeTargetTimestreamParameters|null
+     *     SqsQueueParameters?: PipeTargetSqsQueueParameters|null,
+     *     StepFunctionStateMachineParameters?: PipeTargetStateMachineParameters|null
      * } $args
      */
     public function __construct(array $args = [])

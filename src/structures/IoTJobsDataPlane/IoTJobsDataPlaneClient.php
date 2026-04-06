@@ -6,7 +6,6 @@ class IoTJobsDataPlaneClient extends \Aws\IoTJobsDataPlane\IoTJobsDataPlaneClien
 {
     use DescribeJobExecution\DescribeJobExecutionTrait;
     use GetPendingJobExecutions\GetPendingJobExecutionsTrait;
-    use StartCommandExecution\StartCommandExecutionTrait;
     use StartNextPendingJobExecution\StartNextPendingJobExecutionTrait;
     use UpdateJobExecution\UpdateJobExecutionTrait;
 }

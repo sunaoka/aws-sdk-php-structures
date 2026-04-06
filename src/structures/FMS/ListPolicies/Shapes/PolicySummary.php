@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PolicyId
  * @property string|null $PolicyName
  * @property string|null $ResourceType
- * @property 'WAF'|'WAFV2'|'SHIELD_ADVANCED'|'SECURITY_GROUPS_COMMON'|'SECURITY_GROUPS_CONTENT_AUDIT'|'SECURITY_GROUPS_USAGE_AUDIT'|'NETWORK_FIREWALL'|'DNS_FIREWALL'|'THIRD_PARTY_FIREWALL'|'IMPORT_NETWORK_FIREWALL'|'NETWORK_ACL_COMMON'|null $SecurityServiceType
+ * @property 'WAF'|'WAFV2'|'SHIELD_ADVANCED'|'SECURITY_GROUPS_COMMON'|'SECURITY_GROUPS_CONTENT_AUDIT'|'SECURITY_GROUPS_USAGE_AUDIT'|'NETWORK_FIREWALL'|'DNS_FIREWALL'|'THIRD_PARTY_FIREWALL'|'IMPORT_NETWORK_FIREWALL'|null $SecurityServiceType
  * @property bool|null $RemediationEnabled
  * @property bool|null $DeleteUnusedFMManagedResources
  * @property 'ACTIVE'|'OUT_OF_ADMIN_SCOPE'|null $PolicyStatus
@@ -22,7 +22,7 @@ class PolicySummary extends Shape
      *     PolicyId?: string|null,
      *     PolicyName?: string|null,
      *     ResourceType?: string|null,
-     *     SecurityServiceType?: 'WAF'|'WAFV2'|'SHIELD_ADVANCED'|'SECURITY_GROUPS_COMMON'|'SECURITY_GROUPS_CONTENT_AUDIT'|'SECURITY_GROUPS_USAGE_AUDIT'|'NETWORK_FIREWALL'|'DNS_FIREWALL'|'THIRD_PARTY_FIREWALL'|'IMPORT_NETWORK_FIREWALL'|'NETWORK_ACL_COMMON'|null,
+     *     SecurityServiceType?: 'WAF'|'WAFV2'|'SHIELD_ADVANCED'|'SECURITY_GROUPS_COMMON'|'SECURITY_GROUPS_CONTENT_AUDIT'|'SECURITY_GROUPS_USAGE_AUDIT'|'NETWORK_FIREWALL'|'DNS_FIREWALL'|'THIRD_PARTY_FIREWALL'|'IMPORT_NETWORK_FIREWALL'|null,
      *     RemediationEnabled?: bool|null,
      *     DeleteUnusedFMManagedResources?: bool|null,
      *     PolicyStatus?: 'ACTIVE'|'OUT_OF_ADMIN_SCOPE'|null

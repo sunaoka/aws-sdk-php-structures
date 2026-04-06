@@ -9,10 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $RoleArn
  * @property \Aws\Api\DateTimeResult|null $LastModified
  * @property bool|null $WithFederation
- * @property bool|null $HybridAccessEnabled
- * @property bool|null $WithPrivilegedAccess
- * @property 'VERIFIED'|'VERIFICATION_FAILED'|'NOT_VERIFIED'|null $VerificationStatus
- * @property string|null $ExpectedResourceOwnerAccount
  */
 class ResourceInfo extends Shape
 {
@@ -21,11 +17,7 @@ class ResourceInfo extends Shape
      *     ResourceArn?: string|null,
      *     RoleArn?: string|null,
      *     LastModified?: \Aws\Api\DateTimeResult|null,
-     *     WithFederation?: bool|null,
-     *     HybridAccessEnabled?: bool|null,
-     *     WithPrivilegedAccess?: bool|null,
-     *     VerificationStatus?: 'VERIFIED'|'VERIFICATION_FAILED'|'NOT_VERIFIED'|null,
-     *     ExpectedResourceOwnerAccount?: string|null
+     *     WithFederation?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

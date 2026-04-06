@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConsumptionConfiguration $ConsumptionConfiguration
  * @property list<Shapes\Metadata>|null $LicenseMetadata
  * @property string $ClientToken
- * @property list<Shapes\Tag>|null $Tags
  */
 class CreateLicenseRequest extends Request
 {
@@ -32,8 +31,7 @@ class CreateLicenseRequest extends Request
      *     Beneficiary: string,
      *     ConsumptionConfiguration: Shapes\ConsumptionConfiguration,
      *     LicenseMetadata?: list<Shapes\Metadata>|null,
-     *     ClientToken: string,
-     *     Tags?: list<Shapes\Tag>|null
+     *     ClientToken: string
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SourceArn
  * @property string $DestinationArn
- * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null $AssociationType
+ * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|null $AssociationType
  */
 class AddAssociationRequest extends Request
 {
@@ -15,7 +15,7 @@ class AddAssociationRequest extends Request
      * @param array{
      *     SourceArn: string,
      *     DestinationArn: string,
-     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null
+     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|null
      * } $args
      */
     public function __construct(array $args)

@@ -30,8 +30,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<FoundByKeyValue>|null $FoundByItems
  * @property string|null $PartyTypeString
  * @property string|null $GenderString
- * @property 'ACCOUNT_PROFILE'|'PROFILE'|null $ProfileType
- * @property EngagementPreferences|null $EngagementPreferences
  */
 class Profile extends Shape
 {
@@ -61,9 +59,7 @@ class Profile extends Shape
      *     Attributes?: array<string, string>|null,
      *     FoundByItems?: list<FoundByKeyValue>|null,
      *     PartyTypeString?: string|null,
-     *     GenderString?: string|null,
-     *     ProfileType?: 'ACCOUNT_PROFILE'|'PROFILE'|null,
-     *     EngagementPreferences?: EngagementPreferences|null
+     *     GenderString?: string|null
      * } $args
      */
     public function __construct(array $args = [])

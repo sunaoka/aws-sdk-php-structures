@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 2147483647>|null $UsageQuantity
  * @property bool|null $DryRun
  * @property list<Shapes\UsageAllocation>|null $UsageAllocations
- * @property string|null $ClientToken
  */
 class MeterUsageRequest extends Request
 {
@@ -22,8 +21,7 @@ class MeterUsageRequest extends Request
      *     UsageDimension: string,
      *     UsageQuantity?: int<0, 2147483647>|null,
      *     DryRun?: bool|null,
-     *     UsageAllocations?: list<Shapes\UsageAllocation>|null,
-     *     ClientToken?: string|null
+     *     UsageAllocations?: list<Shapes\UsageAllocation>|null
      * } $args
      */
     public function __construct(array $args)

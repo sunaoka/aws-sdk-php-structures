@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property Shapes\HumanLoopRequestSource|null $HumanLoopRequestSource
  * @property Shapes\HumanLoopActivationConfig|null $HumanLoopActivationConfig
- * @property Shapes\HumanLoopConfig|null $HumanLoopConfig
+ * @property Shapes\HumanLoopConfig $HumanLoopConfig
  * @property Shapes\FlowDefinitionOutputConfig $OutputConfig
  * @property string $RoleArn
  * @property string|null $FailureReason

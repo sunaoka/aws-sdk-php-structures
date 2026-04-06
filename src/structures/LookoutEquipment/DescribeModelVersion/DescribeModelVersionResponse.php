@@ -33,13 +33,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $ImportJobStartTime
  * @property \Aws\Api\DateTimeResult|null $ImportJobEndTime
  * @property int<0, max>|null $ImportedDataSizeInBytes
- * @property string|null $PriorModelMetrics
- * @property int|null $RetrainingAvailableDataInDays
- * @property 'MODEL_PROMOTED'|'MODEL_NOT_PROMOTED'|'RETRAINING_INTERNAL_ERROR'|'RETRAINING_CUSTOMER_ERROR'|'RETRAINING_CANCELLED'|null $AutoPromotionResult
- * @property string|null $AutoPromotionResultReason
- * @property Shapes\ModelDiagnosticsOutputConfiguration|null $ModelDiagnosticsOutputConfiguration
- * @property Shapes\S3Object|null $ModelDiagnosticsResultsObject
- * @property 'QUALITY_THRESHOLD_MET'|'CANNOT_DETERMINE_QUALITY'|'POOR_QUALITY_DETECTED'|null $ModelQuality
  */
 class DescribeModelVersionResponse extends Response
 {

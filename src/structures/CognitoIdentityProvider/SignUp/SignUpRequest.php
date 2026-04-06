@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientId
  * @property string|null $SecretHash
  * @property string $Username
- * @property string|null $Password
+ * @property string $Password
  * @property list<Shapes\AttributeType>|null $UserAttributes
  * @property list<Shapes\AttributeType>|null $ValidationData
  * @property Shapes\AnalyticsMetadataType|null $AnalyticsMetadata
@@ -22,7 +22,7 @@ class SignUpRequest extends Request
      *     ClientId: string,
      *     SecretHash?: string|null,
      *     Username: string,
-     *     Password?: string|null,
+     *     Password: string,
      *     UserAttributes?: list<Shapes\AttributeType>|null,
      *     ValidationData?: list<Shapes\AttributeType>|null,
      *     AnalyticsMetadata?: Shapes\AnalyticsMetadataType|null,

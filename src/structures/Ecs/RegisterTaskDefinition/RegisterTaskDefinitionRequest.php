@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ContainerDefinition> $containerDefinitions
  * @property list<Shapes\Volume>|null $volumes
  * @property list<Shapes\TaskDefinitionPlacementConstraint>|null $placementConstraints
- * @property list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null $requiresCompatibilities
+ * @property list<'EC2'|'FARGATE'|'EXTERNAL'>|null $requiresCompatibilities
  * @property string|null $cpu
  * @property string|null $memory
  * @property list<Shapes\Tag>|null $tags
@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\InferenceAccelerator>|null $inferenceAccelerators
  * @property Shapes\EphemeralStorage|null $ephemeralStorage
  * @property Shapes\RuntimePlatform|null $runtimePlatform
- * @property bool|null $enableFaultInjection
  */
 class RegisterTaskDefinitionRequest extends Request
 {
@@ -35,7 +34,7 @@ class RegisterTaskDefinitionRequest extends Request
      *     containerDefinitions: list<Shapes\ContainerDefinition>,
      *     volumes?: list<Shapes\Volume>|null,
      *     placementConstraints?: list<Shapes\TaskDefinitionPlacementConstraint>|null,
-     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'>|null,
+     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'>|null,
      *     cpu?: string|null,
      *     memory?: string|null,
      *     tags?: list<Shapes\Tag>|null,
@@ -44,8 +43,7 @@ class RegisterTaskDefinitionRequest extends Request
      *     proxyConfiguration?: Shapes\ProxyConfiguration|null,
      *     inferenceAccelerators?: list<Shapes\InferenceAccelerator>|null,
      *     ephemeralStorage?: Shapes\EphemeralStorage|null,
-     *     runtimePlatform?: Shapes\RuntimePlatform|null,
-     *     enableFaultInjection?: bool|null
+     *     runtimePlatform?: Shapes\RuntimePlatform|null
      * } $args
      */
     public function __construct(array $args)

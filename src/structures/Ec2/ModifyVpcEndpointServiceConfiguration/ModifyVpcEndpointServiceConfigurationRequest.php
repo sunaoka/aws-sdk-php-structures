@@ -16,8 +16,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $RemoveGatewayLoadBalancerArns
  * @property list<string>|null $AddSupportedIpAddressTypes
  * @property list<string>|null $RemoveSupportedIpAddressTypes
- * @property list<string>|null $AddSupportedRegions
- * @property list<string>|null $RemoveSupportedRegions
  */
 class ModifyVpcEndpointServiceConfigurationRequest extends Request
 {
@@ -33,9 +31,7 @@ class ModifyVpcEndpointServiceConfigurationRequest extends Request
      *     AddGatewayLoadBalancerArns?: list<string>|null,
      *     RemoveGatewayLoadBalancerArns?: list<string>|null,
      *     AddSupportedIpAddressTypes?: list<string>|null,
-     *     RemoveSupportedIpAddressTypes?: list<string>|null,
-     *     AddSupportedRegions?: list<string>|null,
-     *     RemoveSupportedRegions?: list<string>|null
+     *     RemoveSupportedIpAddressTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

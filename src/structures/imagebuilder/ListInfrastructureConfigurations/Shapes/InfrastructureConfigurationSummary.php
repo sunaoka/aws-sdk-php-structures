@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $tags
  * @property list<string>|null $instanceTypes
  * @property string|null $instanceProfileName
- * @property Placement|null $placement
  */
 class InfrastructureConfigurationSummary extends Shape
 {
@@ -28,8 +27,7 @@ class InfrastructureConfigurationSummary extends Shape
      *     resourceTags?: array<string, string>|null,
      *     tags?: array<string, string>|null,
      *     instanceTypes?: list<string>|null,
-     *     instanceProfileName?: string|null,
-     *     placement?: Placement|null
+     *     instanceProfileName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

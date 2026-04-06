@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IsPrimary
  * @property string|null $FailureMessage
  * @property 'assigning'|'unassigning'|'associating'|'disassociating'|'succeeded'|'failed'|null $Status
- * @property string|null $AvailabilityZone
- * @property string|null $AvailabilityZoneId
  */
 class NatGatewayAddress extends Shape
 {
@@ -27,9 +25,7 @@ class NatGatewayAddress extends Shape
      *     AssociationId?: string|null,
      *     IsPrimary?: bool|null,
      *     FailureMessage?: string|null,
-     *     Status?: 'assigning'|'unassigning'|'associating'|'disassociating'|'succeeded'|'failed'|null,
-     *     AvailabilityZone?: string|null,
-     *     AvailabilityZoneId?: string|null
+     *     Status?: 'assigning'|'unassigning'|'associating'|'disassociating'|'succeeded'|'failed'|null
      * } $args
      */
     public function __construct(array $args = [])

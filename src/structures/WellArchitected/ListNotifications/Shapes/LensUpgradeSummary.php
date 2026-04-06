@@ -11,8 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LensArn
  * @property string|null $CurrentLensVersion
  * @property string|null $LatestLensVersion
- * @property string|null $ResourceArn
- * @property string|null $ResourceName
  */
 class LensUpgradeSummary extends Shape
 {
@@ -23,9 +21,7 @@ class LensUpgradeSummary extends Shape
      *     LensAlias?: string|null,
      *     LensArn?: string|null,
      *     CurrentLensVersion?: string|null,
-     *     LatestLensVersion?: string|null,
-     *     ResourceArn?: string|null,
-     *     ResourceName?: string|null
+     *     LatestLensVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

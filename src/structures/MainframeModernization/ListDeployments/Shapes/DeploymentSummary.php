@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $deploymentId
  * @property string $environmentId
- * @property 'Deploying'|'Succeeded'|'Failed'|'Updating Deployment' $status
+ * @property 'Deploying'|'Succeeded'|'Failed' $status
  * @property string|null $statusReason
  */
 class DeploymentSummary extends Shape
@@ -22,7 +22,7 @@ class DeploymentSummary extends Shape
      *     creationTime: \Aws\Api\DateTimeResult,
      *     deploymentId: string,
      *     environmentId: string,
-     *     status: 'Deploying'|'Succeeded'|'Failed'|'Updating Deployment',
+     *     status: 'Deploying'|'Succeeded'|'Failed',
      *     statusReason?: string|null
      * } $args
      */

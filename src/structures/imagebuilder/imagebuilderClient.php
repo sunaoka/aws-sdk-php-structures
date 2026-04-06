@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\imagebuilder;
 class imagebuilderClient extends \Aws\imagebuilder\imagebuilderClient
 {
     use CancelImageCreation\CancelImageCreationTrait;
-    use CancelLifecycleExecution\CancelLifecycleExecutionTrait;
     use CreateComponent\CreateComponentTrait;
     use CreateContainerRecipe\CreateContainerRecipeTrait;
     use CreateDistributionConfiguration\CreateDistributionConfigurationTrait;
@@ -13,8 +12,6 @@ class imagebuilderClient extends \Aws\imagebuilder\imagebuilderClient
     use CreateImagePipeline\CreateImagePipelineTrait;
     use CreateImageRecipe\CreateImageRecipeTrait;
     use CreateInfrastructureConfiguration\CreateInfrastructureConfigurationTrait;
-    use CreateLifecyclePolicy\CreateLifecyclePolicyTrait;
-    use CreateWorkflow\CreateWorkflowTrait;
     use DeleteComponent\DeleteComponentTrait;
     use DeleteContainerRecipe\DeleteContainerRecipeTrait;
     use DeleteDistributionConfiguration\DeleteDistributionConfigurationTrait;
@@ -22,9 +19,6 @@ class imagebuilderClient extends \Aws\imagebuilder\imagebuilderClient
     use DeleteImagePipeline\DeleteImagePipelineTrait;
     use DeleteImageRecipe\DeleteImageRecipeTrait;
     use DeleteInfrastructureConfiguration\DeleteInfrastructureConfigurationTrait;
-    use DeleteLifecyclePolicy\DeleteLifecyclePolicyTrait;
-    use DeleteWorkflow\DeleteWorkflowTrait;
-    use DistributeImage\DistributeImageTrait;
     use GetComponent\GetComponentTrait;
     use GetComponentPolicy\GetComponentPolicyTrait;
     use GetContainerRecipe\GetContainerRecipeTrait;
@@ -36,14 +30,9 @@ class imagebuilderClient extends \Aws\imagebuilder\imagebuilderClient
     use GetImageRecipe\GetImageRecipeTrait;
     use GetImageRecipePolicy\GetImageRecipePolicyTrait;
     use GetInfrastructureConfiguration\GetInfrastructureConfigurationTrait;
-    use GetLifecycleExecution\GetLifecycleExecutionTrait;
-    use GetLifecyclePolicy\GetLifecyclePolicyTrait;
-    use GetMarketplaceResource\GetMarketplaceResourceTrait;
-    use GetWorkflow\GetWorkflowTrait;
     use GetWorkflowExecution\GetWorkflowExecutionTrait;
     use GetWorkflowStepExecution\GetWorkflowStepExecutionTrait;
     use ImportComponent\ImportComponentTrait;
-    use ImportDiskImage\ImportDiskImageTrait;
     use ImportVmImage\ImportVmImageTrait;
     use ListComponentBuildVersions\ListComponentBuildVersionsTrait;
     use ListComponents\ListComponentsTrait;
@@ -58,27 +47,17 @@ class imagebuilderClient extends \Aws\imagebuilder\imagebuilderClient
     use ListImageScanFindings\ListImageScanFindingsTrait;
     use ListImages\ListImagesTrait;
     use ListInfrastructureConfigurations\ListInfrastructureConfigurationsTrait;
-    use ListLifecycleExecutionResources\ListLifecycleExecutionResourcesTrait;
-    use ListLifecycleExecutions\ListLifecycleExecutionsTrait;
-    use ListLifecyclePolicies\ListLifecyclePoliciesTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
-    use ListWaitingWorkflowSteps\ListWaitingWorkflowStepsTrait;
-    use ListWorkflowBuildVersions\ListWorkflowBuildVersionsTrait;
     use ListWorkflowExecutions\ListWorkflowExecutionsTrait;
     use ListWorkflowStepExecutions\ListWorkflowStepExecutionsTrait;
-    use ListWorkflows\ListWorkflowsTrait;
     use PutComponentPolicy\PutComponentPolicyTrait;
     use PutContainerRecipePolicy\PutContainerRecipePolicyTrait;
     use PutImagePolicy\PutImagePolicyTrait;
     use PutImageRecipePolicy\PutImageRecipePolicyTrait;
-    use RetryImage\RetryImageTrait;
-    use SendWorkflowStepAction\SendWorkflowStepActionTrait;
     use StartImagePipelineExecution\StartImagePipelineExecutionTrait;
-    use StartResourceStateUpdate\StartResourceStateUpdateTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateDistributionConfiguration\UpdateDistributionConfigurationTrait;
     use UpdateImagePipeline\UpdateImagePipelineTrait;
     use UpdateInfrastructureConfiguration\UpdateInfrastructureConfigurationTrait;
-    use UpdateLifecyclePolicy\UpdateLifecyclePolicyTrait;
 }

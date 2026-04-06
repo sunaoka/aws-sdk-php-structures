@@ -9,10 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'unsupported'|'supported'|null $EncryptionSupport
  * @property EbsOptimizedInfo|null $EbsOptimizedInfo
  * @property 'unsupported'|'supported'|'required'|null $NvmeSupport
- * @property int|null $MaximumEbsAttachments
- * @property 'shared'|'dedicated'|null $AttachmentLimitType
- * @property int|null $MaximumEbsCards
- * @property list<EbsCardInfo>|null $EbsCards
  */
 class EbsInfo extends Shape
 {
@@ -21,11 +17,7 @@ class EbsInfo extends Shape
      *     EbsOptimizedSupport?: 'unsupported'|'supported'|'default'|null,
      *     EncryptionSupport?: 'unsupported'|'supported'|null,
      *     EbsOptimizedInfo?: EbsOptimizedInfo|null,
-     *     NvmeSupport?: 'unsupported'|'supported'|'required'|null,
-     *     MaximumEbsAttachments?: int|null,
-     *     AttachmentLimitType?: 'shared'|'dedicated'|null,
-     *     MaximumEbsCards?: int|null,
-     *     EbsCards?: list<EbsCardInfo>|null
+     *     NvmeSupport?: 'unsupported'|'supported'|'required'|null
      * } $args
      */
     public function __construct(array $args = [])

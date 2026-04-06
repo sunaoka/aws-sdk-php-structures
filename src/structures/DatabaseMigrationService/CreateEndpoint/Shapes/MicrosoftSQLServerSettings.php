@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $TrimSpaceInChar
  * @property 'BackupOnly'|'PreferBackup'|'PreferTlog'|'TlogOnly'|null $TlogAccessMode
  * @property bool|null $ForceLobLookup
- * @property 'password'|'kerberos'|null $AuthenticationMethod
  */
 class MicrosoftSQLServerSettings extends Shape
 {
@@ -44,8 +43,7 @@ class MicrosoftSQLServerSettings extends Shape
      *     SecretsManagerSecretId?: string|null,
      *     TrimSpaceInChar?: bool|null,
      *     TlogAccessMode?: 'BackupOnly'|'PreferBackup'|'PreferTlog'|'TlogOnly'|null,
-     *     ForceLobLookup?: bool|null,
-     *     AuthenticationMethod?: 'password'|'kerberos'|null
+     *     ForceLobLookup?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

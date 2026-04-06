@@ -8,12 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $cluster
  * @property string $serviceName
  * @property string|null $taskDefinition
- * @property 'ENABLED'|'DISABLED'|null $availabilityZoneRebalancing
  * @property list<Shapes\LoadBalancer>|null $loadBalancers
  * @property list<Shapes\ServiceRegistry>|null $serviceRegistries
  * @property int|null $desiredCount
  * @property string|null $clientToken
- * @property 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null $launchType
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
  * @property list<Shapes\CapacityProviderStrategyItem>|null $capacityProviderStrategy
  * @property string|null $platformVersion
  * @property string|null $role
@@ -29,8 +28,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'TASK_DEFINITION'|'SERVICE'|'NONE'|null $propagateTags
  * @property bool|null $enableExecuteCommand
  * @property Shapes\ServiceConnectConfiguration|null $serviceConnectConfiguration
- * @property list<Shapes\ServiceVolumeConfiguration>|null $volumeConfigurations
- * @property list<Shapes\VpcLatticeConfiguration>|null $vpcLatticeConfigurations
  */
 class CreateServiceRequest extends Request
 {
@@ -39,12 +36,11 @@ class CreateServiceRequest extends Request
      *     cluster?: string|null,
      *     serviceName: string,
      *     taskDefinition?: string|null,
-     *     availabilityZoneRebalancing?: 'ENABLED'|'DISABLED'|null,
      *     loadBalancers?: list<Shapes\LoadBalancer>|null,
      *     serviceRegistries?: list<Shapes\ServiceRegistry>|null,
      *     desiredCount?: int|null,
      *     clientToken?: string|null,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|'MANAGED_INSTANCES'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
      *     capacityProviderStrategy?: list<Shapes\CapacityProviderStrategyItem>|null,
      *     platformVersion?: string|null,
      *     role?: string|null,
@@ -59,9 +55,7 @@ class CreateServiceRequest extends Request
      *     enableECSManagedTags?: bool|null,
      *     propagateTags?: 'TASK_DEFINITION'|'SERVICE'|'NONE'|null,
      *     enableExecuteCommand?: bool|null,
-     *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null,
-     *     volumeConfigurations?: list<Shapes\ServiceVolumeConfiguration>|null,
-     *     vpcLatticeConfigurations?: list<Shapes\VpcLatticeConfiguration>|null
+     *     serviceConnectConfiguration?: Shapes\ServiceConnectConfiguration|null
      * } $args
      */
     public function __construct(array $args)

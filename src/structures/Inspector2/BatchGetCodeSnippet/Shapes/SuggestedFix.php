@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\BatchGetCodeSnippet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $description
  * @property string|null $code
+ * @property string|null $description
  */
 class SuggestedFix extends Shape
 {
     /**
      * @param array{
-     *     description?: string|null,
-     *     code?: string|null
+     *     code?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

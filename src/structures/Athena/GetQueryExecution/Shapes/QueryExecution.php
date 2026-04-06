@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $QueryExecutionId
  * @property string|null $Query
  * @property 'DDL'|'DML'|'UTILITY'|null $StatementType
- * @property ManagedQueryResultsConfiguration|null $ManagedQueryResultsConfiguration
  * @property ResultConfiguration|null $ResultConfiguration
  * @property ResultReuseConfiguration|null $ResultReuseConfiguration
  * @property QueryExecutionContext|null $QueryExecutionContext
@@ -18,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EngineVersion|null $EngineVersion
  * @property list<string>|null $ExecutionParameters
  * @property string|null $SubstatementType
- * @property QueryResultsS3AccessGrantsConfiguration|null $QueryResultsS3AccessGrantsConfiguration
  */
 class QueryExecution extends Shape
 {
@@ -27,7 +25,6 @@ class QueryExecution extends Shape
      *     QueryExecutionId?: string|null,
      *     Query?: string|null,
      *     StatementType?: 'DDL'|'DML'|'UTILITY'|null,
-     *     ManagedQueryResultsConfiguration?: ManagedQueryResultsConfiguration|null,
      *     ResultConfiguration?: ResultConfiguration|null,
      *     ResultReuseConfiguration?: ResultReuseConfiguration|null,
      *     QueryExecutionContext?: QueryExecutionContext|null,
@@ -36,8 +33,7 @@ class QueryExecution extends Shape
      *     WorkGroup?: string|null,
      *     EngineVersion?: EngineVersion|null,
      *     ExecutionParameters?: list<string>|null,
-     *     SubstatementType?: string|null,
-     *     QueryResultsS3AccessGrantsConfiguration?: QueryResultsS3AccessGrantsConfiguration|null
+     *     SubstatementType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

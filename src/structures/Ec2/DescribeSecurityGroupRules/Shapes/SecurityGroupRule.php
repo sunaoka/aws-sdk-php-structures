@@ -18,7 +18,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ReferencedSecurityGroup|null $ReferencedGroupInfo
  * @property string|null $Description
  * @property list<Tag>|null $Tags
- * @property string|null $SecurityGroupRuleArn
  */
 class SecurityGroupRule extends Shape
 {
@@ -36,8 +35,7 @@ class SecurityGroupRule extends Shape
      *     PrefixListId?: string|null,
      *     ReferencedGroupInfo?: ReferencedSecurityGroup|null,
      *     Description?: string|null,
-     *     Tags?: list<Tag>|null,
-     *     SecurityGroupRuleArn?: string|null
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

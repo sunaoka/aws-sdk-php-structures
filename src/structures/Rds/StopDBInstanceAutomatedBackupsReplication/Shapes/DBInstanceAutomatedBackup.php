@@ -21,25 +21,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $EngineVersion
  * @property string|null $LicenseModel
  * @property int|null $Iops
- * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property string|null $TdeCredentialArn
  * @property bool|null $Encrypted
- * @property 'none'|'sse-kms'|'sse-rds'|null $StorageEncryptionType
  * @property string|null $StorageType
  * @property string|null $KmsKeyId
  * @property string|null $Timezone
  * @property bool|null $IAMDatabaseAuthenticationEnabled
  * @property int|null $BackupRetentionPeriod
- * @property string|null $PreferredBackupWindow
  * @property string|null $DBInstanceAutomatedBackupsArn
  * @property list<DBInstanceAutomatedBackupsReplication>|null $DBInstanceAutomatedBackupsReplications
  * @property string|null $BackupTarget
- * @property bool|null $MultiTenant
- * @property string|null $AwsBackupRecoveryPointArn
- * @property list<Tag>|null $TagList
- * @property bool|null $DedicatedLogVolume
- * @property list<AdditionalStorageVolume>|null $AdditionalStorageVolumes
+ * @property int|null $StorageThroughput
  */
 class DBInstanceAutomatedBackup extends Shape
 {
@@ -61,25 +54,18 @@ class DBInstanceAutomatedBackup extends Shape
      *     EngineVersion?: string|null,
      *     LicenseModel?: string|null,
      *     Iops?: int|null,
-     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     TdeCredentialArn?: string|null,
      *     Encrypted?: bool|null,
-     *     StorageEncryptionType?: 'none'|'sse-kms'|'sse-rds'|null,
      *     StorageType?: string|null,
      *     KmsKeyId?: string|null,
      *     Timezone?: string|null,
      *     IAMDatabaseAuthenticationEnabled?: bool|null,
      *     BackupRetentionPeriod?: int|null,
-     *     PreferredBackupWindow?: string|null,
      *     DBInstanceAutomatedBackupsArn?: string|null,
      *     DBInstanceAutomatedBackupsReplications?: list<DBInstanceAutomatedBackupsReplication>|null,
      *     BackupTarget?: string|null,
-     *     MultiTenant?: bool|null,
-     *     AwsBackupRecoveryPointArn?: string|null,
-     *     TagList?: list<Tag>|null,
-     *     DedicatedLogVolume?: bool|null,
-     *     AdditionalStorageVolumes?: list<AdditionalStorageVolume>|null
+     *     StorageThroughput?: int|null
      * } $args
      */
     public function __construct(array $args = [])

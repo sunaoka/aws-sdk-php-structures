@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $keyPairName
  * @property list<Shapes\Tag>|null $tags
  * @property list<Shapes\AddOnRequest>|null $addOns
- * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
+ * @property 'dualstack'|'ipv4'|null $ipAddressType
  */
 class CreateInstancesRequest extends Request
 {
@@ -29,7 +29,7 @@ class CreateInstancesRequest extends Request
      *     keyPairName?: string|null,
      *     tags?: list<Shapes\Tag>|null,
      *     addOns?: list<Shapes\AddOnRequest>|null,
-     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null
+     *     ipAddressType?: 'dualstack'|'ipv4'|null
      * } $args
      */
     public function __construct(array $args)

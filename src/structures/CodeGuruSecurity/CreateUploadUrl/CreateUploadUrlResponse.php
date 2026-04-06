@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\CreateUploadUrl;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $s3Url
- * @property array<string, string> $requestHeaders
  * @property string $codeArtifactId
+ * @property array<string, string> $requestHeaders
+ * @property string $s3Url
  */
 class CreateUploadUrlResponse extends Response
 {

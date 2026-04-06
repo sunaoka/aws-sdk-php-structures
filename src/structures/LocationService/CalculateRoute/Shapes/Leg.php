@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\LocationService\CalculateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<double> $StartPosition
- * @property list<double> $EndPosition
  * @property double $Distance
  * @property double $DurationSeconds
+ * @property list<double> $EndPosition
  * @property LegGeometry|null $Geometry
+ * @property list<double> $StartPosition
  * @property list<Step> $Steps
  */
 class Leg extends Shape
 {
     /**
      * @param array{
-     *     StartPosition: list<double>,
-     *     EndPosition: list<double>,
      *     Distance: double,
      *     DurationSeconds: double,
+     *     EndPosition: list<double>,
      *     Geometry?: LegGeometry|null,
+     *     StartPosition: list<double>,
      *     Steps: list<Step>
      * } $args
      */

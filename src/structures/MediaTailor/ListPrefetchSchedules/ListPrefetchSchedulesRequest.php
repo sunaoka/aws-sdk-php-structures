@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
  * @property string $PlaybackConfigurationName
- * @property 'SINGLE'|'RECURRING'|'ALL'|null $ScheduleType
  * @property string|null $StreamId
  */
 class ListPrefetchSchedulesRequest extends Request
@@ -18,7 +17,6 @@ class ListPrefetchSchedulesRequest extends Request
      *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null,
      *     PlaybackConfigurationName: string,
-     *     ScheduleType?: 'SINGLE'|'RECURRING'|'ALL'|null,
      *     StreamId?: string|null
      * } $args
      */

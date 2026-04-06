@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyId
- * @property string|null $PolicyName
+ * @property string $PolicyName
  */
 class GetKeyPolicyRequest extends Request
 {
     /**
      * @param array{
      *     KeyId: string,
-     *     PolicyName?: string|null
+     *     PolicyName: string
      * } $args
      */
     public function __construct(array $args)

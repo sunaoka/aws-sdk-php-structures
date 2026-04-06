@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property S3BucketDestination|null $S3BucketDestination
  * @property CloudWatchMetrics|null $CloudWatchMetrics
- * @property StorageLensTableDestination|null $StorageLensTableDestination
  */
 class StorageLensDataExport extends Shape
 {
     /**
      * @param array{
      *     S3BucketDestination?: S3BucketDestination|null,
-     *     CloudWatchMetrics?: CloudWatchMetrics|null,
-     *     StorageLensTableDestination?: StorageLensTableDestination|null
+     *     CloudWatchMetrics?: CloudWatchMetrics|null
      * } $args
      */
     public function __construct(array $args = [])

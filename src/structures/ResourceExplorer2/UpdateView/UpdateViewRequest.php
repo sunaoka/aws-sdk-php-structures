@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\UpdateView;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ViewArn
- * @property list<Shapes\IncludedProperty>|null $IncludedProperties
  * @property Shapes\SearchFilter|null $Filters
+ * @property list<Shapes\IncludedProperty>|null $IncludedProperties
+ * @property string $ViewArn
  */
 class UpdateViewRequest extends Request
 {
     /**
      * @param array{
-     *     ViewArn: string,
+     *     Filters?: Shapes\SearchFilter|null,
      *     IncludedProperties?: list<Shapes\IncludedProperty>|null,
-     *     Filters?: Shapes\SearchFilter|null
+     *     ViewArn: string
      * } $args
      */
     public function __construct(array $args)

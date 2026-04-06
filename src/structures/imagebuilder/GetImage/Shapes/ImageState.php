@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED'|null $status
+ * @property 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|null $status
  * @property string|null $reason
  */
 class ImageState extends Shape
 {
     /**
      * @param array{
-     *     status?: 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|'DISABLED'|null,
+     *     status?: 'PENDING'|'CREATING'|'BUILDING'|'TESTING'|'DISTRIBUTING'|'INTEGRATING'|'AVAILABLE'|'CANCELLED'|'FAILED'|'DEPRECATED'|'DELETED'|null,
      *     reason?: string|null
      * } $args
      */

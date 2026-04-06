@@ -34,5 +34,4 @@ class AmplifyBackendClient extends \Aws\AmplifyBackend\AmplifyBackendClient
     use UpdateBackendConfig\UpdateBackendConfigTrait;
     use UpdateBackendJob\UpdateBackendJobTrait;
     use UpdateBackendStorage\UpdateBackendStorageTrait;
-    use GetChallengeToken\GetChallengeTokenTrait;
 }

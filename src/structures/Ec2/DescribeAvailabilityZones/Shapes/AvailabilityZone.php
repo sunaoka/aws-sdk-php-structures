@@ -5,6 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeAvailabilityZones\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property 'available'|'information'|'impaired'|'unavailable'|null $State
  * @property 'opt-in-not-required'|'opted-in'|'not-opted-in'|null $OptInStatus
  * @property list<AvailabilityZoneMessage>|null $Messages
  * @property string|null $RegionName
@@ -15,15 +16,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ZoneType
  * @property string|null $ParentZoneName
  * @property string|null $ParentZoneId
- * @property string|null $GroupLongName
- * @property list<AvailabilityZoneGeography>|null $Geography
- * @property list<AvailabilityZoneSubGeography>|null $SubGeography
- * @property 'available'|'information'|'impaired'|'unavailable'|'constrained'|null $State
  */
 class AvailabilityZone extends Shape
 {
     /**
      * @param array{
+     *     State?: 'available'|'information'|'impaired'|'unavailable'|null,
      *     OptInStatus?: 'opt-in-not-required'|'opted-in'|'not-opted-in'|null,
      *     Messages?: list<AvailabilityZoneMessage>|null,
      *     RegionName?: string|null,
@@ -33,11 +31,7 @@ class AvailabilityZone extends Shape
      *     NetworkBorderGroup?: string|null,
      *     ZoneType?: string|null,
      *     ParentZoneName?: string|null,
-     *     ParentZoneId?: string|null,
-     *     GroupLongName?: string|null,
-     *     Geography?: list<AvailabilityZoneGeography>|null,
-     *     SubGeography?: list<AvailabilityZoneSubGeography>|null,
-     *     State?: 'available'|'information'|'impaired'|'unavailable'|'constrained'|null
+     *     ParentZoneId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

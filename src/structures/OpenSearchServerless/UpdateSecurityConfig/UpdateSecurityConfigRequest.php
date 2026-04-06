@@ -5,25 +5,21 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateSecurityConfig;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
+ * @property string|null $clientToken
  * @property string $configVersion
  * @property string|null $description
+ * @property string $id
  * @property Shapes\SamlConfigOptions|null $samlOptions
- * @property Shapes\UpdateIamIdentityCenterConfigOptions|null $iamIdentityCenterOptionsUpdates
- * @property Shapes\IamFederationConfigOptions|null $iamFederationOptions
- * @property string|null $clientToken
  */
 class UpdateSecurityConfigRequest extends Request
 {
     /**
      * @param array{
-     *     id: string,
+     *     clientToken?: string|null,
      *     configVersion: string,
      *     description?: string|null,
-     *     samlOptions?: Shapes\SamlConfigOptions|null,
-     *     iamIdentityCenterOptionsUpdates?: Shapes\UpdateIamIdentityCenterConfigOptions|null,
-     *     iamFederationOptions?: Shapes\IamFederationConfigOptions|null,
-     *     clientToken?: string|null
+     *     id: string,
+     *     samlOptions?: Shapes\SamlConfigOptions|null
      * } $args
      */
     public function __construct(array $args)

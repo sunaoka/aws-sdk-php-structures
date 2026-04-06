@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ComputationId
  * @property string|null $Name
- * @property MeasureField|null $Value
+ * @property MeasureField $Value
  */
 class TotalAggregationComputation extends Shape
 {
@@ -15,7 +15,7 @@ class TotalAggregationComputation extends Shape
      * @param array{
      *     ComputationId: string,
      *     Name?: string|null,
-     *     Value?: MeasureField|null
+     *     Value: MeasureField
      * } $args
      */
     public function __construct(array $args)

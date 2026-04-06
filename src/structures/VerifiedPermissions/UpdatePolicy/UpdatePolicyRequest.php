@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $policyStoreId
  * @property string $policyId
- * @property Shapes\UpdatePolicyDefinition|null $definition
- * @property string|null $name
+ * @property Shapes\UpdatePolicyDefinition $definition
  */
 class UpdatePolicyRequest extends Request
 {
@@ -16,8 +15,7 @@ class UpdatePolicyRequest extends Request
      * @param array{
      *     policyStoreId: string,
      *     policyId: string,
-     *     definition?: Shapes\UpdatePolicyDefinition|null,
-     *     name?: string|null
+     *     definition: Shapes\UpdatePolicyDefinition
      * } $args
      */
     public function __construct(array $args)

@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnableDefaultInternetAccess
  * @property string|null $IamRoleArn
  * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
- * @property bool|null $DisableIMDSV1
  */
 class CreateAppBlockBuilderRequest extends Request
 {
@@ -30,8 +29,7 @@ class CreateAppBlockBuilderRequest extends Request
      *     VpcConfig: Shapes\VpcConfig,
      *     EnableDefaultInternetAccess?: bool|null,
      *     IamRoleArn?: string|null,
-     *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null,
-     *     DisableIMDSV1?: bool|null
+     *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null
      * } $args
      */
     public function __construct(array $args)

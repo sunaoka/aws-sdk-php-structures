@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property string|null $RetrievalRoleArn
  * @property list<Shapes\Validator>|null $Validators
- * @property string|null $KmsKeyIdentifier
  */
 class UpdateConfigurationProfileRequest extends Request
 {
@@ -22,8 +21,7 @@ class UpdateConfigurationProfileRequest extends Request
      *     Name?: string|null,
      *     Description?: string|null,
      *     RetrievalRoleArn?: string|null,
-     *     Validators?: list<Shapes\Validator>|null,
-     *     KmsKeyIdentifier?: string|null
+     *     Validators?: list<Shapes\Validator>|null
      * } $args
      */
     public function __construct(array $args)

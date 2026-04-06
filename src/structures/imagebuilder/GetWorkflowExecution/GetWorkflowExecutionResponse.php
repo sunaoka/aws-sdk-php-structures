@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $workflowExecutionId
  * @property string|null $imageBuildVersionArn
  * @property 'BUILD'|'TEST'|'DISTRIBUTION'|null $type
- * @property 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|'CANCELLED'|null $status
+ * @property 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|null $status
  * @property string|null $message
  * @property int|null $totalStepCount
  * @property int|null $totalStepsSucceeded
@@ -18,7 +18,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property int|null $totalStepsSkipped
  * @property string|null $startTime
  * @property string|null $endTime
- * @property string|null $parallelGroup
  */
 class GetWorkflowExecutionResponse extends Response
 {

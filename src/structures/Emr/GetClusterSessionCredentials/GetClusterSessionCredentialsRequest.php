@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterId
- * @property string|null $ExecutionRoleArn
+ * @property string $ExecutionRoleArn
  */
 class GetClusterSessionCredentialsRequest extends Request
 {
     /**
      * @param array{
      *     ClusterId: string,
-     *     ExecutionRoleArn?: string|null
+     *     ExecutionRoleArn: string
      * } $args
      */
     public function __construct(array $args)

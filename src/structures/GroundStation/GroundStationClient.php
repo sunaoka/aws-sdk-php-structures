@@ -7,7 +7,6 @@ class GroundStationClient extends \Aws\GroundStation\GroundStationClient
     use CancelContact\CancelContactTrait;
     use CreateConfig\CreateConfigTrait;
     use CreateDataflowEndpointGroup\CreateDataflowEndpointGroupTrait;
-    use CreateDataflowEndpointGroupV2\CreateDataflowEndpointGroupV2Trait;
     use CreateEphemeris\CreateEphemerisTrait;
     use CreateMissionProfile\CreateMissionProfileTrait;
     use DeleteConfig\DeleteConfigTrait;
@@ -17,7 +16,6 @@ class GroundStationClient extends \Aws\GroundStation\GroundStationClient
     use DescribeContact\DescribeContactTrait;
     use DescribeEphemeris\DescribeEphemerisTrait;
     use GetAgentConfiguration\GetAgentConfigurationTrait;
-    use GetAgentTaskResponseUrl\GetAgentTaskResponseUrlTrait;
     use GetDataflowEndpointGroup\GetDataflowEndpointGroupTrait;
     use GetMinuteUsage\GetMinuteUsageTrait;
     use GetMissionProfile\GetMissionProfileTrait;

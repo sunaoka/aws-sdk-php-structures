@@ -19,7 +19,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $RequiresCompatibilities
  * @property string|null $TaskRoleArn
  * @property list<AwsEcsTaskDefinitionVolumesDetails>|null $Volumes
- * @property string|null $Status
  */
 class AwsEcsTaskDefinitionDetails extends Shape
 {
@@ -38,8 +37,7 @@ class AwsEcsTaskDefinitionDetails extends Shape
      *     ProxyConfiguration?: AwsEcsTaskDefinitionProxyConfigurationDetails|null,
      *     RequiresCompatibilities?: list<string>|null,
      *     TaskRoleArn?: string|null,
-     *     Volumes?: list<AwsEcsTaskDefinitionVolumesDetails>|null,
-     *     Status?: string|null
+     *     Volumes?: list<AwsEcsTaskDefinitionVolumesDetails>|null
      * } $args
      */
     public function __construct(array $args = [])

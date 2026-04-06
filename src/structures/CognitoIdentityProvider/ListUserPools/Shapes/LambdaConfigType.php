@@ -15,11 +15,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VerifyAuthChallengeResponse
  * @property string|null $PreTokenGeneration
  * @property string|null $UserMigration
- * @property PreTokenGenerationVersionConfigType|null $PreTokenGenerationConfig
  * @property CustomSMSLambdaVersionConfigType|null $CustomSMSSender
  * @property CustomEmailLambdaVersionConfigType|null $CustomEmailSender
  * @property string|null $KMSKeyID
- * @property InboundFederationLambdaType|null $InboundFederation
  */
 class LambdaConfigType extends Shape
 {
@@ -35,11 +33,9 @@ class LambdaConfigType extends Shape
      *     VerifyAuthChallengeResponse?: string|null,
      *     PreTokenGeneration?: string|null,
      *     UserMigration?: string|null,
-     *     PreTokenGenerationConfig?: PreTokenGenerationVersionConfigType|null,
      *     CustomSMSSender?: CustomSMSLambdaVersionConfigType|null,
      *     CustomEmailSender?: CustomEmailLambdaVersionConfigType|null,
-     *     KMSKeyID?: string|null,
-     *     InboundFederation?: InboundFederationLambdaType|null
+     *     KMSKeyID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

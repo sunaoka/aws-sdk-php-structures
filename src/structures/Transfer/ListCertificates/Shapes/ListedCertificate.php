@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Arn
  * @property string|null $CertificateId
- * @property 'SIGNING'|'ENCRYPTION'|'TLS'|null $Usage
+ * @property 'SIGNING'|'ENCRYPTION'|null $Usage
  * @property 'ACTIVE'|'PENDING_ROTATION'|'INACTIVE'|null $Status
  * @property \Aws\Api\DateTimeResult|null $ActiveDate
  * @property \Aws\Api\DateTimeResult|null $InactiveDate
@@ -20,7 +20,7 @@ class ListedCertificate extends Shape
      * @param array{
      *     Arn?: string|null,
      *     CertificateId?: string|null,
-     *     Usage?: 'SIGNING'|'ENCRYPTION'|'TLS'|null,
+     *     Usage?: 'SIGNING'|'ENCRYPTION'|null,
      *     Status?: 'ACTIVE'|'PENDING_ROTATION'|'INACTIVE'|null,
      *     ActiveDate?: \Aws\Api\DateTimeResult|null,
      *     InactiveDate?: \Aws\Api\DateTimeResult|null,

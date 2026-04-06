@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE' $platform
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
- * @property string|null $computeRoleArn
  * @property string|null $iamServiceRoleArn
  * @property array<string, string> $environmentVariables
  * @property string $defaultDomain
@@ -30,10 +29,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $autoBranchCreationPatterns
  * @property AutoBranchCreationConfig|null $autoBranchCreationConfig
  * @property 'SSH'|'TOKEN'|'SIGV4'|null $repositoryCloneMethod
- * @property CacheConfig|null $cacheConfig
- * @property \Aws\Api\DateTimeResult|null $webhookCreateTime
- * @property WafConfiguration|null $wafConfiguration
- * @property JobConfig|null $jobConfig
  */
 class App extends Shape
 {
@@ -48,7 +43,6 @@ class App extends Shape
      *     platform: 'WEB'|'WEB_DYNAMIC'|'WEB_COMPUTE',
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
-     *     computeRoleArn?: string|null,
      *     iamServiceRoleArn?: string|null,
      *     environmentVariables: array<string, string>,
      *     defaultDomain: string,
@@ -63,11 +57,7 @@ class App extends Shape
      *     enableAutoBranchCreation?: bool|null,
      *     autoBranchCreationPatterns?: list<string>|null,
      *     autoBranchCreationConfig?: AutoBranchCreationConfig|null,
-     *     repositoryCloneMethod?: 'SSH'|'TOKEN'|'SIGV4'|null,
-     *     cacheConfig?: CacheConfig|null,
-     *     webhookCreateTime?: \Aws\Api\DateTimeResult|null,
-     *     wafConfiguration?: WafConfiguration|null,
-     *     jobConfig?: JobConfig|null
+     *     repositoryCloneMethod?: 'SSH'|'TOKEN'|'SIGV4'|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,18 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NetworkInterfaceAssociation|null $Association
  * @property NetworkInterfaceAttachment|null $Attachment
  * @property string|null $AvailabilityZone
- * @property ConnectionTrackingConfiguration|null $ConnectionTrackingConfiguration
  * @property string|null $Description
  * @property list<GroupIdentifier>|null $Groups
- * @property 'interface'|'natGateway'|'efa'|'efa-only'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null $InterfaceType
+ * @property 'interface'|'natGateway'|'efa'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null $InterfaceType
  * @property list<NetworkInterfaceIpv6Address>|null $Ipv6Addresses
  * @property string|null $MacAddress
  * @property string|null $NetworkInterfaceId
  * @property string|null $OutpostArn
  * @property string|null $OwnerId
  * @property string|null $PrivateDnsName
- * @property string|null $PublicDnsName
- * @property PublicIpDnsNameOptions|null $PublicIpDnsNameOptions
  * @property string|null $PrivateIpAddress
  * @property list<NetworkInterfacePrivateIpAddress>|null $PrivateIpAddresses
  * @property list<Ipv4PrefixSpecification>|null $Ipv4Prefixes
@@ -34,9 +31,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DenyAllIgwTraffic
  * @property bool|null $Ipv6Native
  * @property string|null $Ipv6Address
- * @property OperatorResponse|null $Operator
- * @property list<string>|null $AssociatedSubnets
- * @property string|null $AvailabilityZoneId
  */
 class NetworkInterface extends Shape
 {
@@ -45,18 +39,15 @@ class NetworkInterface extends Shape
      *     Association?: NetworkInterfaceAssociation|null,
      *     Attachment?: NetworkInterfaceAttachment|null,
      *     AvailabilityZone?: string|null,
-     *     ConnectionTrackingConfiguration?: ConnectionTrackingConfiguration|null,
      *     Description?: string|null,
      *     Groups?: list<GroupIdentifier>|null,
-     *     InterfaceType?: 'interface'|'natGateway'|'efa'|'efa-only'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null,
+     *     InterfaceType?: 'interface'|'natGateway'|'efa'|'trunk'|'load_balancer'|'network_load_balancer'|'vpc_endpoint'|'branch'|'transit_gateway'|'lambda'|'quicksight'|'global_accelerator_managed'|'api_gateway_managed'|'gateway_load_balancer'|'gateway_load_balancer_endpoint'|'iot_rules_managed'|'aws_codestar_connections_managed'|null,
      *     Ipv6Addresses?: list<NetworkInterfaceIpv6Address>|null,
      *     MacAddress?: string|null,
      *     NetworkInterfaceId?: string|null,
      *     OutpostArn?: string|null,
      *     OwnerId?: string|null,
      *     PrivateDnsName?: string|null,
-     *     PublicDnsName?: string|null,
-     *     PublicIpDnsNameOptions?: PublicIpDnsNameOptions|null,
      *     PrivateIpAddress?: string|null,
      *     PrivateIpAddresses?: list<NetworkInterfacePrivateIpAddress>|null,
      *     Ipv4Prefixes?: list<Ipv4PrefixSpecification>|null,
@@ -70,10 +61,7 @@ class NetworkInterface extends Shape
      *     VpcId?: string|null,
      *     DenyAllIgwTraffic?: bool|null,
      *     Ipv6Native?: bool|null,
-     *     Ipv6Address?: string|null,
-     *     Operator?: OperatorResponse|null,
-     *     AssociatedSubnets?: list<string>|null,
-     *     AvailabilityZoneId?: string|null
+     *     Ipv6Address?: string|null
      * } $args
      */
     public function __construct(array $args = [])

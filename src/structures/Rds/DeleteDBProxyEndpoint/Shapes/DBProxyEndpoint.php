@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedDate
  * @property 'READ_WRITE'|'READ_ONLY'|null $TargetRole
  * @property bool|null $IsDefault
- * @property 'IPV4'|'IPV6'|'DUAL'|null $EndpointNetworkType
  */
 class DBProxyEndpoint extends Shape
 {
@@ -32,8 +31,7 @@ class DBProxyEndpoint extends Shape
      *     Endpoint?: string|null,
      *     CreatedDate?: \Aws\Api\DateTimeResult|null,
      *     TargetRole?: 'READ_WRITE'|'READ_ONLY'|null,
-     *     IsDefault?: bool|null,
-     *     EndpointNetworkType?: 'IPV4'|'IPV6'|'DUAL'|null
+     *     IsDefault?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

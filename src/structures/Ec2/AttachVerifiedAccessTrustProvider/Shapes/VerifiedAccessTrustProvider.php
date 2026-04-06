@@ -9,15 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property 'user'|'device'|null $TrustProviderType
  * @property 'iam-identity-center'|'oidc'|null $UserTrustProviderType
- * @property 'jamf'|'crowdstrike'|'jumpcloud'|null $DeviceTrustProviderType
+ * @property 'jamf'|'crowdstrike'|null $DeviceTrustProviderType
  * @property OidcOptions|null $OidcOptions
  * @property DeviceOptions|null $DeviceOptions
  * @property string|null $PolicyReferenceName
  * @property string|null $CreationTime
  * @property string|null $LastUpdatedTime
  * @property list<Tag>|null $Tags
- * @property VerifiedAccessSseSpecificationResponse|null $SseSpecification
- * @property NativeApplicationOidcOptions|null $NativeApplicationOidcOptions
  */
 class VerifiedAccessTrustProvider extends Shape
 {
@@ -27,15 +25,13 @@ class VerifiedAccessTrustProvider extends Shape
      *     Description?: string|null,
      *     TrustProviderType?: 'user'|'device'|null,
      *     UserTrustProviderType?: 'iam-identity-center'|'oidc'|null,
-     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|'jumpcloud'|null,
+     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|null,
      *     OidcOptions?: OidcOptions|null,
      *     DeviceOptions?: DeviceOptions|null,
      *     PolicyReferenceName?: string|null,
      *     CreationTime?: string|null,
      *     LastUpdatedTime?: string|null,
-     *     Tags?: list<Tag>|null,
-     *     SseSpecification?: VerifiedAccessSseSpecificationResponse|null,
-     *     NativeApplicationOidcOptions?: NativeApplicationOidcOptions|null
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Height
  * @property string $Name
  * @property 'NONE'|'PASSTHROUGH'|'RESPOND'|null $RespondToAfd
- * @property 'DEFAULT'|'STRETCH_TO_OUTPUT'|'SMART_CROP'|null $ScalingBehavior
- * @property int|null $Sharpness
+ * @property 'DEFAULT'|'STRETCH_TO_OUTPUT'|null $ScalingBehavior
+ * @property int<0, 100>|null $Sharpness
  * @property int|null $Width
  */
 class VideoDescription extends Shape
@@ -21,8 +21,8 @@ class VideoDescription extends Shape
      *     Height?: int|null,
      *     Name: string,
      *     RespondToAfd?: 'NONE'|'PASSTHROUGH'|'RESPOND'|null,
-     *     ScalingBehavior?: 'DEFAULT'|'STRETCH_TO_OUTPUT'|'SMART_CROP'|null,
-     *     Sharpness?: int|null,
+     *     ScalingBehavior?: 'DEFAULT'|'STRETCH_TO_OUTPUT'|null,
+     *     Sharpness?: int<0, 100>|null,
      *     Width?: int|null
      * } $args
      */

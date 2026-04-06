@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $Name
  * @property 'STANDARD'|'AGENT'|null $QueueType
- * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
- * @property string|null $LastModifiedRegion
  */
 class QueueSummary extends Shape
 {
@@ -19,9 +17,7 @@ class QueueSummary extends Shape
      *     Id?: string|null,
      *     Arn?: string|null,
      *     Name?: string|null,
-     *     QueueType?: 'STANDARD'|'AGENT'|null,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     LastModifiedRegion?: string|null
+     *     QueueType?: 'STANDARD'|'AGENT'|null
      * } $args
      */
     public function __construct(array $args = [])

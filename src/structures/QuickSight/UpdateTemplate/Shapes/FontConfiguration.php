@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $FontColor
  * @property FontWeight|null $FontWeight
  * @property 'NORMAL'|'ITALIC'|null $FontStyle
- * @property string|null $FontFamily
  */
 class FontConfiguration extends Shape
 {
@@ -20,8 +19,7 @@ class FontConfiguration extends Shape
      *     FontDecoration?: 'UNDERLINE'|'NONE'|null,
      *     FontColor?: string|null,
      *     FontWeight?: FontWeight|null,
-     *     FontStyle?: 'NORMAL'|'ITALIC'|null,
-     *     FontFamily?: string|null
+     *     FontStyle?: 'NORMAL'|'ITALIC'|null
      * } $args
      */
     public function __construct(array $args = [])

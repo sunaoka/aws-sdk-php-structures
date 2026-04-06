@@ -11,18 +11,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'ACTIVE'|'ASSOCIATING'|'DISASSOCIATING'|'DELETED' $Status
  * @property string $IsoCountryCode
  * @property 'TRANSACTIONAL'|'PROMOTIONAL' $MessageType
- * @property list<'SMS'|'VOICE'|'MMS'|'RCS'> $NumberCapabilities
- * @property 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR' $NumberType
+ * @property list<'SMS'|'VOICE'> $NumberCapabilities
+ * @property 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC' $NumberType
  * @property string $MonthlyLeasingPrice
  * @property bool $TwoWayEnabled
  * @property string|null $TwoWayChannelArn
- * @property string|null $TwoWayChannelRole
  * @property bool $SelfManagedOptOutsEnabled
  * @property string $OptOutListName
- * @property bool|null $InternationalSendingEnabled
  * @property bool $DeletionProtectionEnabled
  * @property string|null $PoolId
- * @property string|null $RegistrationId
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  */
 class PhoneNumberInformation extends Shape
@@ -35,18 +32,15 @@ class PhoneNumberInformation extends Shape
      *     Status: 'PENDING'|'ACTIVE'|'ASSOCIATING'|'DISASSOCIATING'|'DELETED',
      *     IsoCountryCode: string,
      *     MessageType: 'TRANSACTIONAL'|'PROMOTIONAL',
-     *     NumberCapabilities: list<'SMS'|'VOICE'|'MMS'|'RCS'>,
-     *     NumberType: 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC'|'SIMULATOR',
+     *     NumberCapabilities: list<'SMS'|'VOICE'>,
+     *     NumberType: 'SHORT_CODE'|'LONG_CODE'|'TOLL_FREE'|'TEN_DLC',
      *     MonthlyLeasingPrice: string,
      *     TwoWayEnabled: bool,
      *     TwoWayChannelArn?: string|null,
-     *     TwoWayChannelRole?: string|null,
      *     SelfManagedOptOutsEnabled: bool,
      *     OptOutListName: string,
-     *     InternationalSendingEnabled?: bool|null,
      *     DeletionProtectionEnabled: bool,
      *     PoolId?: string|null,
-     *     RegistrationId?: string|null,
      *     CreatedTimestamp: \Aws\Api\DateTimeResult
      * } $args
      */

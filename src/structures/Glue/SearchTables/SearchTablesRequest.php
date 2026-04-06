@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\SortCriterion>|null $SortCriteria
  * @property int<1, 1000>|null $MaxResults
  * @property 'FOREIGN'|'ALL'|'FEDERATED'|null $ResourceShareType
- * @property bool|null $IncludeStatusDetails
  */
 class SearchTablesRequest extends Request
 {
@@ -24,8 +23,7 @@ class SearchTablesRequest extends Request
      *     SearchText?: string|null,
      *     SortCriteria?: list<Shapes\SortCriterion>|null,
      *     MaxResults?: int<1, 1000>|null,
-     *     ResourceShareType?: 'FOREIGN'|'ALL'|'FEDERATED'|null,
-     *     IncludeStatusDetails?: bool|null
+     *     ResourceShareType?: 'FOREIGN'|'ALL'|'FEDERATED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $appArn
  * @property string|null $assessmentName
  * @property list<'Pending'|'InProgress'|'Failed'|'Success'>|null $assessmentStatus
- * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null $complianceStatus
+ * @property 'PolicyBreached'|'PolicyMet'|null $complianceStatus
  * @property 'User'|'System'|null $invoker
  * @property int<1, 100>|null $maxResults
  * @property string|null $nextToken
@@ -21,7 +21,7 @@ class ListAppAssessmentsRequest extends Request
      *     appArn?: string|null,
      *     assessmentName?: string|null,
      *     assessmentStatus?: list<'Pending'|'InProgress'|'Failed'|'Success'>|null,
-     *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null,
+     *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|null,
      *     invoker?: 'User'|'System'|null,
      *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,

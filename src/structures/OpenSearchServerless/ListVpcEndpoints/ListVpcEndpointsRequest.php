@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\ListVpcEndpoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\VpcEndpointFilters|null $vpcEndpointFilters
- * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property Shapes\VpcEndpointFilters|null $vpcEndpointFilters
  */
 class ListVpcEndpointsRequest extends Request
 {
     /**
      * @param array{
-     *     vpcEndpointFilters?: Shapes\VpcEndpointFilters|null,
+     *     maxResults?: int<1, 100>|null,
      *     nextToken?: string|null,
-     *     maxResults?: int<1, 100>|null
+     *     vpcEndpointFilters?: Shapes\VpcEndpointFilters|null
      * } $args
      */
     public function __construct(array $args = [])

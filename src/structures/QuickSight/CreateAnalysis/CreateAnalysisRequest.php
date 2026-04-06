@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ThemeArn
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\AnalysisDefinition|null $Definition
- * @property Shapes\ValidationStrategy|null $ValidationStrategy
- * @property list<string>|null $FolderArns
  */
 class CreateAnalysisRequest extends Request
 {
@@ -29,9 +27,7 @@ class CreateAnalysisRequest extends Request
      *     SourceEntity?: Shapes\AnalysisSourceEntity|null,
      *     ThemeArn?: string|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     Definition?: Shapes\AnalysisDefinition|null,
-     *     ValidationStrategy?: Shapes\ValidationStrategy|null,
-     *     FolderArns?: list<string>|null
+     *     Definition?: Shapes\AnalysisDefinition|null
      * } $args
      */
     public function __construct(array $args)

@@ -13,10 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ResourceType
  * @property RecoveryPointCreator|null $CreatedBy
  * @property string|null $IamRoleArn
- * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null $Status
+ * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|null $Status
  * @property string|null $StatusMessage
  * @property \Aws\Api\DateTimeResult|null $CreationDate
- * @property \Aws\Api\DateTimeResult|null $InitiationDate
  * @property \Aws\Api\DateTimeResult|null $CompletionDate
  * @property int|null $BackupSizeInBytes
  * @property CalculatedLifecycle|null $CalculatedLifecycle
@@ -28,11 +27,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CompositeMemberIdentifier
  * @property bool|null $IsParent
  * @property string|null $ResourceName
- * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|'RESTORE_ACCESS_BACKUP_VAULT'|null $VaultType
- * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
- * @property string|null $IndexStatusMessage
- * @property 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null $EncryptionKeyType
- * @property AggregatedScanResult|null $AggregatedScanResult
  */
 class RecoveryPointByBackupVault extends Shape
 {
@@ -46,10 +40,9 @@ class RecoveryPointByBackupVault extends Shape
      *     ResourceType?: string|null,
      *     CreatedBy?: RecoveryPointCreator|null,
      *     IamRoleArn?: string|null,
-     *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|'AVAILABLE'|'STOPPED'|'CREATING'|null,
+     *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|null,
      *     StatusMessage?: string|null,
      *     CreationDate?: \Aws\Api\DateTimeResult|null,
-     *     InitiationDate?: \Aws\Api\DateTimeResult|null,
      *     CompletionDate?: \Aws\Api\DateTimeResult|null,
      *     BackupSizeInBytes?: int|null,
      *     CalculatedLifecycle?: CalculatedLifecycle|null,
@@ -60,12 +53,7 @@ class RecoveryPointByBackupVault extends Shape
      *     ParentRecoveryPointArn?: string|null,
      *     CompositeMemberIdentifier?: string|null,
      *     IsParent?: bool|null,
-     *     ResourceName?: string|null,
-     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|'RESTORE_ACCESS_BACKUP_VAULT'|null,
-     *     IndexStatus?: 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null,
-     *     IndexStatusMessage?: string|null,
-     *     EncryptionKeyType?: 'AWS_OWNED_KMS_KEY'|'CUSTOMER_MANAGED_KMS_KEY'|null,
-     *     AggregatedScanResult?: AggregatedScanResult|null
+     *     ResourceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

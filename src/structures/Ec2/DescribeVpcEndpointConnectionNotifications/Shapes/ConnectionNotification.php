@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ConnectionNotificationArn
  * @property list<string>|null $ConnectionEvents
  * @property 'Enabled'|'Disabled'|null $ConnectionNotificationState
- * @property string|null $ServiceRegion
  */
 class ConnectionNotification extends Shape
 {
@@ -24,8 +23,7 @@ class ConnectionNotification extends Shape
      *     ConnectionNotificationType?: 'Topic'|null,
      *     ConnectionNotificationArn?: string|null,
      *     ConnectionEvents?: list<string>|null,
-     *     ConnectionNotificationState?: 'Enabled'|'Disabled'|null,
-     *     ServiceRegion?: string|null
+     *     ConnectionNotificationState?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string|null $description
  * @property string $semanticVersion
- * @property list<Shapes\ComponentConfiguration>|null $components
+ * @property list<Shapes\ComponentConfiguration> $components
  * @property Shapes\InstanceConfiguration|null $instanceConfiguration
  * @property string|null $dockerfileTemplateData
  * @property string|null $dockerfileTemplateUri
- * @property 'Windows'|'Linux'|'macOS'|null $platformOverride
+ * @property 'Windows'|'Linux'|null $platformOverride
  * @property string|null $imageOsVersionOverride
  * @property string $parentImage
  * @property array<string, string>|null $tags
@@ -30,11 +30,11 @@ class CreateContainerRecipeRequest extends Request
      *     name: string,
      *     description?: string|null,
      *     semanticVersion: string,
-     *     components?: list<Shapes\ComponentConfiguration>|null,
+     *     components: list<Shapes\ComponentConfiguration>,
      *     instanceConfiguration?: Shapes\InstanceConfiguration|null,
      *     dockerfileTemplateData?: string|null,
      *     dockerfileTemplateUri?: string|null,
-     *     platformOverride?: 'Windows'|'Linux'|'macOS'|null,
+     *     platformOverride?: 'Windows'|'Linux'|null,
      *     imageOsVersionOverride?: string|null,
      *     parentImage: string,
      *     tags?: array<string, string>|null,

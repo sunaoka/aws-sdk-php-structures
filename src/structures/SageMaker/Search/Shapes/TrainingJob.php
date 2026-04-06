@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LabelingJobArn
  * @property string|null $AutoMLJobArn
  * @property ModelArtifacts|null $ModelArtifacts
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting'|null $TrainingJobStatus
- * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null $SecondaryStatus
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $TrainingJobStatus
+ * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|null $SecondaryStatus
  * @property string|null $FailureReason
  * @property array<string, string>|null $HyperParameters
  * @property AlgorithmSpecification|null $AlgorithmSpecification
@@ -39,8 +39,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DebugRuleConfiguration>|null $DebugRuleConfigurations
  * @property TensorBoardOutputConfig|null $TensorBoardOutputConfig
  * @property list<DebugRuleEvaluationStatus>|null $DebugRuleEvaluationStatuses
- * @property string|null $OutputModelPackageArn
- * @property ModelPackageConfig|null $ModelPackageConfig
  * @property ProfilerConfig|null $ProfilerConfig
  * @property array<string, string>|null $Environment
  * @property RetryStrategy|null $RetryStrategy
@@ -56,8 +54,8 @@ class TrainingJob extends Shape
      *     LabelingJobArn?: string|null,
      *     AutoMLJobArn?: string|null,
      *     ModelArtifacts?: ModelArtifacts|null,
-     *     TrainingJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting'|null,
-     *     SecondaryStatus?: 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null,
+     *     TrainingJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null,
+     *     SecondaryStatus?: 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|null,
      *     FailureReason?: string|null,
      *     HyperParameters?: array<string, string>|null,
      *     AlgorithmSpecification?: AlgorithmSpecification|null,
@@ -84,8 +82,6 @@ class TrainingJob extends Shape
      *     DebugRuleConfigurations?: list<DebugRuleConfiguration>|null,
      *     TensorBoardOutputConfig?: TensorBoardOutputConfig|null,
      *     DebugRuleEvaluationStatuses?: list<DebugRuleEvaluationStatus>|null,
-     *     OutputModelPackageArn?: string|null,
-     *     ModelPackageConfig?: ModelPackageConfig|null,
      *     ProfilerConfig?: ProfilerConfig|null,
      *     Environment?: array<string, string>|null,
      *     RetryStrategy?: RetryStrategy|null,

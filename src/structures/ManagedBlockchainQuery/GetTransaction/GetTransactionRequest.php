@@ -5,17 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchainQuery\GetTransaction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $transactionHash
- * @property string|null $transactionId
- * @property 'ETHEREUM_MAINNET'|'ETHEREUM_SEPOLIA_TESTNET'|'BITCOIN_MAINNET'|'BITCOIN_TESTNET' $network
+ * @property string $transactionHash
+ * @property 'ETHEREUM_MAINNET'|'BITCOIN_MAINNET' $network
  */
 class GetTransactionRequest extends Request
 {
     /**
      * @param array{
-     *     transactionHash?: string|null,
-     *     transactionId?: string|null,
-     *     network: 'ETHEREUM_MAINNET'|'ETHEREUM_SEPOLIA_TESTNET'|'BITCOIN_MAINNET'|'BITCOIN_TESTNET'
+     *     transactionHash: string,
+     *     network: 'ETHEREUM_MAINNET'|'BITCOIN_MAINNET'
      * } $args
      */
     public function __construct(array $args)

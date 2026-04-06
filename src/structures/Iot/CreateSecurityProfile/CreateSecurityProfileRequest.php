@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $additionalMetricsToRetain
  * @property list<Shapes\MetricToRetain>|null $additionalMetricsToRetainV2
  * @property list<Shapes\Tag>|null $tags
- * @property Shapes\MetricsExportConfig|null $metricsExportConfig
  */
 class CreateSecurityProfileRequest extends Request
 {
@@ -24,8 +23,7 @@ class CreateSecurityProfileRequest extends Request
      *     alertTargets?: array<'SNS', Shapes\AlertTarget>|null,
      *     additionalMetricsToRetain?: list<string>|null,
      *     additionalMetricsToRetainV2?: list<Shapes\MetricToRetain>|null,
-     *     tags?: list<Shapes\Tag>|null,
-     *     metricsExportConfig?: Shapes\MetricsExportConfig|null
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

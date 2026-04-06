@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MultiplexOutputSettings|null $MultiplexOutputSettings
  * @property RtmpOutputSettings|null $RtmpOutputSettings
  * @property UdpOutputSettings|null $UdpOutputSettings
- * @property CmafIngestOutputSettings|null $CmafIngestOutputSettings
- * @property SrtOutputSettings|null $SrtOutputSettings
  */
 class OutputSettings extends Shape
 {
@@ -27,9 +25,7 @@ class OutputSettings extends Shape
      *     MsSmoothOutputSettings?: MsSmoothOutputSettings|null,
      *     MultiplexOutputSettings?: MultiplexOutputSettings|null,
      *     RtmpOutputSettings?: RtmpOutputSettings|null,
-     *     UdpOutputSettings?: UdpOutputSettings|null,
-     *     CmafIngestOutputSettings?: CmafIngestOutputSettings|null,
-     *     SrtOutputSettings?: SrtOutputSettings|null
+     *     UdpOutputSettings?: UdpOutputSettings|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,10 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $LastUplinkReceivedAt
  * @property LoRaWANListDevice|null $LoRaWAN
  * @property SidewalkListDevice|null $Sidewalk
- * @property 'Initial'|'Package_Not_Supported'|'FragAlgo_unsupported'|'Not_enough_memory'|'FragIndex_unsupported'|'Wrong_descriptor'|'SessionCnt_replay'|'MissingFrag'|'MemoryError'|'MICError'|'Successful'|'Device_exist_in_conflict_fuota_task'|null $FuotaDeviceStatus
+ * @property 'Initial'|'Package_Not_Supported'|'FragAlgo_unsupported'|'Not_enough_memory'|'FragIndex_unsupported'|'Wrong_descriptor'|'SessionCnt_replay'|'MissingFrag'|'MemoryError'|'MICError'|'Successful'|null $FuotaDeviceStatus
  * @property string|null $MulticastDeviceStatus
  * @property int<1, 256>|null $McGroupId
- * @property 'Enabled'|'Disabled'|null $Positioning
  */
 class WirelessDeviceStatistics extends Shape
 {
@@ -30,10 +29,9 @@ class WirelessDeviceStatistics extends Shape
      *     LastUplinkReceivedAt?: string|null,
      *     LoRaWAN?: LoRaWANListDevice|null,
      *     Sidewalk?: SidewalkListDevice|null,
-     *     FuotaDeviceStatus?: 'Initial'|'Package_Not_Supported'|'FragAlgo_unsupported'|'Not_enough_memory'|'FragIndex_unsupported'|'Wrong_descriptor'|'SessionCnt_replay'|'MissingFrag'|'MemoryError'|'MICError'|'Successful'|'Device_exist_in_conflict_fuota_task'|null,
+     *     FuotaDeviceStatus?: 'Initial'|'Package_Not_Supported'|'FragAlgo_unsupported'|'Not_enough_memory'|'FragIndex_unsupported'|'Wrong_descriptor'|'SessionCnt_replay'|'MissingFrag'|'MemoryError'|'MICError'|'Successful'|null,
      *     MulticastDeviceStatus?: string|null,
-     *     McGroupId?: int<1, 256>|null,
-     *     Positioning?: 'Enabled'|'Disabled'|null
+     *     McGroupId?: int<1, 256>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,12 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainId
  * @property Shapes\UserSettings|null $DefaultUserSettings
  * @property Shapes\DomainSettingsForUpdate|null $DomainSettingsForUpdate
- * @property 'Service'|'Customer'|null $AppSecurityGroupManagement
  * @property Shapes\DefaultSpaceSettings|null $DefaultSpaceSettings
- * @property list<string>|null $SubnetIds
- * @property 'PublicInternetOnly'|'VpcOnly'|null $AppNetworkAccessType
- * @property 'ENABLED'|'DISABLED'|null $TagPropagation
- * @property string|null $VpcId
+ * @property 'Service'|'Customer'|null $AppSecurityGroupManagement
  */
 class UpdateDomainRequest extends Request
 {
@@ -22,12 +18,8 @@ class UpdateDomainRequest extends Request
      *     DomainId: string,
      *     DefaultUserSettings?: Shapes\UserSettings|null,
      *     DomainSettingsForUpdate?: Shapes\DomainSettingsForUpdate|null,
-     *     AppSecurityGroupManagement?: 'Service'|'Customer'|null,
      *     DefaultSpaceSettings?: Shapes\DefaultSpaceSettings|null,
-     *     SubnetIds?: list<string>|null,
-     *     AppNetworkAccessType?: 'PublicInternetOnly'|'VpcOnly'|null,
-     *     TagPropagation?: 'ENABLED'|'DISABLED'|null,
-     *     VpcId?: string|null
+     *     AppSecurityGroupManagement?: 'Service'|'Customer'|null
      * } $args
      */
     public function __construct(array $args)

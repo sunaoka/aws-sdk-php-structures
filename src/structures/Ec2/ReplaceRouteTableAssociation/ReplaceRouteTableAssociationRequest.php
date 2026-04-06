@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Ec2\ReplaceRouteTableAssociation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $DryRun
  * @property string $AssociationId
+ * @property bool|null $DryRun
  * @property string $RouteTableId
  */
 class ReplaceRouteTableAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool|null,
      *     AssociationId: string,
+     *     DryRun?: bool|null,
      *     RouteTableId: string
      * } $args
      */

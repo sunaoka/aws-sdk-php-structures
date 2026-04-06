@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $Tags
  * @property DataClassificationDetails|null $DataClassification
  * @property ResourceDetails|null $Details
- * @property string|null $ApplicationName
- * @property string|null $ApplicationArn
  */
 class ResourceShape extends Shape
 {
@@ -27,9 +25,7 @@ class ResourceShape extends Shape
      *     ResourceRole?: string|null,
      *     Tags?: array<string, string>|null,
      *     DataClassification?: DataClassificationDetails|null,
-     *     Details?: ResourceDetails|null,
-     *     ApplicationName?: string|null,
-     *     ApplicationArn?: string|null
+     *     Details?: ResourceDetails|null
      * } $args
      */
     public function __construct(array $args)

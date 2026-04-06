@@ -7,17 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $controlIdentifier
  * @property string $targetIdentifier
- * @property array<string, string>|null $tags
- * @property list<Shapes\EnabledControlParameter>|null $parameters
  */
 class EnableControlRequest extends Request
 {
     /**
      * @param array{
      *     controlIdentifier: string,
-     *     targetIdentifier: string,
-     *     tags?: array<string, string>|null,
-     *     parameters?: list<Shapes\EnabledControlParameter>|null
+     *     targetIdentifier: string
      * } $args
      */
     public function __construct(array $args)

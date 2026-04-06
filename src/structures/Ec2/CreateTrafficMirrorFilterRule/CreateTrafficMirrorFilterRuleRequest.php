@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property bool|null $DryRun
  * @property string|null $ClientToken
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateTrafficMirrorFilterRuleRequest extends Request
 {
@@ -34,8 +33,7 @@ class CreateTrafficMirrorFilterRuleRequest extends Request
      *     SourceCidrBlock: string,
      *     Description?: string|null,
      *     DryRun?: bool|null,
-     *     ClientToken?: string|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

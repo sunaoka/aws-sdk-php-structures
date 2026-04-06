@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property 'sigv4' $SigningProtocol
  * @property 'never'|'always'|'no-override' $SigningBehavior
- * @property 's3'|'mediastore'|'mediapackagev2'|'lambda' $OriginAccessControlOriginType
+ * @property 's3'|'mediastore' $OriginAccessControlOriginType
  */
 class OriginAccessControlSummary extends Shape
 {
@@ -21,7 +21,7 @@ class OriginAccessControlSummary extends Shape
      *     Name: string,
      *     SigningProtocol: 'sigv4',
      *     SigningBehavior: 'never'|'always'|'no-override',
-     *     OriginAccessControlOriginType: 's3'|'mediastore'|'mediapackagev2'|'lambda'
+     *     OriginAccessControlOriginType: 's3'|'mediastore'
      * } $args
      */
     public function __construct(array $args)

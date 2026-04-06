@@ -6,17 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $connectionId
- * @property int|null $maxResults
- * @property string|null $nextToken
  */
 class DescribeHostedConnectionsRequest extends Request
 {
     /**
-     * @param array{
-     *     connectionId: string,
-     *     maxResults?: int|null,
-     *     nextToken?: string|null
-     * } $args
+     * @param array{connectionId: string} $args
      */
     public function __construct(array $args)
     {

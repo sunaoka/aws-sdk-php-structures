@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ALL'|'NONE'|'CUSTOM'|null $renditionSelection
- * @property list<'SD'|'HD'|'FULL_HD'|'LOWEST_RESOLUTION'>|null $renditions
+ * @property list<'FULL_HD'|'HD'|'SD'|'LOWEST_RESOLUTION'>|null $renditions
  */
 class RenditionConfiguration extends Shape
 {
     /**
      * @param array{
      *     renditionSelection?: 'ALL'|'NONE'|'CUSTOM'|null,
-     *     renditions?: list<'SD'|'HD'|'FULL_HD'|'LOWEST_RESOLUTION'>|null
+     *     renditions?: list<'FULL_HD'|'HD'|'SD'|'LOWEST_RESOLUTION'>|null
      * } $args
      */
     public function __construct(array $args = [])

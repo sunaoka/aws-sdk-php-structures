@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyAuthRequestCrypto
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property SessionKeyAmex|null $Amex
+ * @property SessionKeyEmv2000|null $Emv2000
  * @property SessionKeyEmvCommon|null $EmvCommon
  * @property SessionKeyMastercard|null $Mastercard
- * @property SessionKeyEmv2000|null $Emv2000
- * @property SessionKeyAmex|null $Amex
  * @property SessionKeyVisa|null $Visa
  */
 class SessionKeyDerivation extends Shape
 {
     /**
      * @param array{
+     *     Amex?: SessionKeyAmex|null,
+     *     Emv2000?: SessionKeyEmv2000|null,
      *     EmvCommon?: SessionKeyEmvCommon|null,
      *     Mastercard?: SessionKeyMastercard|null,
-     *     Emv2000?: SessionKeyEmv2000|null,
-     *     Amex?: SessionKeyAmex|null,
      *     Visa?: SessionKeyVisa|null
      * } $args
      */

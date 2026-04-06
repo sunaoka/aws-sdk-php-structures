@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<1, 8> $mcuCount
- * @property int $workerCount
+ * @property int<1, 10> $workerCount
  */
 class ProvisionedCapacityUpdate extends Shape
 {
     /**
      * @param array{
      *     mcuCount: int<1, 8>,
-     *     workerCount: int
+     *     workerCount: int<1, 10>
      * } $args
      */
     public function __construct(array $args)

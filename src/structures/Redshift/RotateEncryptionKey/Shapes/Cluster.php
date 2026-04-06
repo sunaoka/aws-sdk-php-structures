@@ -60,14 +60,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CustomDomainName
  * @property string|null $CustomDomainCertificateArn
  * @property \Aws\Api\DateTimeResult|null $CustomDomainCertificateExpiryDate
- * @property string|null $MasterPasswordSecretArn
- * @property string|null $MasterPasswordSecretKmsKeyId
- * @property string|null $IpAddressType
- * @property string|null $MultiAZ
- * @property SecondaryClusterInfo|null $MultiAZSecondary
- * @property string|null $LakehouseRegistrationStatus
- * @property string|null $CatalogArn
- * @property string|null $ExtraComputeForAutomaticOptimization
  */
 class Cluster extends Shape
 {
@@ -127,15 +119,7 @@ class Cluster extends Shape
      *     ReservedNodeExchangeStatus?: ReservedNodeExchangeStatus|null,
      *     CustomDomainName?: string|null,
      *     CustomDomainCertificateArn?: string|null,
-     *     CustomDomainCertificateExpiryDate?: \Aws\Api\DateTimeResult|null,
-     *     MasterPasswordSecretArn?: string|null,
-     *     MasterPasswordSecretKmsKeyId?: string|null,
-     *     IpAddressType?: string|null,
-     *     MultiAZ?: string|null,
-     *     MultiAZSecondary?: SecondaryClusterInfo|null,
-     *     LakehouseRegistrationStatus?: string|null,
-     *     CatalogArn?: string|null,
-     *     ExtraComputeForAutomaticOptimization?: string|null
+     *     CustomDomainCertificateExpiryDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\ResetNotificationSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $x509CertificateData
  * @property string|null $acmPcaArn
+ * @property string|null $x509CertificateData
  */
 class SourceData extends Shape
 {
     /**
      * @param array{
-     *     x509CertificateData?: string|null,
-     *     acmPcaArn?: string|null
+     *     acmPcaArn?: string|null,
+     *     x509CertificateData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

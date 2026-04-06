@@ -5,27 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateImage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
- * @property 'regional'|'local'|null $SnapshotLocation
+ * @property list<Shapes\BlockDeviceMapping>|null $BlockDeviceMappings
+ * @property string|null $Description
  * @property bool|null $DryRun
  * @property string $InstanceId
  * @property string $Name
- * @property string|null $Description
  * @property bool|null $NoReboot
- * @property list<Shapes\BlockDeviceMapping>|null $BlockDeviceMappings
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateImageRequest extends Request
 {
     /**
      * @param array{
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     SnapshotLocation?: 'regional'|'local'|null,
+     *     BlockDeviceMappings?: list<Shapes\BlockDeviceMapping>|null,
+     *     Description?: string|null,
      *     DryRun?: bool|null,
      *     InstanceId: string,
      *     Name: string,
-     *     Description?: string|null,
      *     NoReboot?: bool|null,
-     *     BlockDeviceMappings?: list<Shapes\BlockDeviceMapping>|null
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

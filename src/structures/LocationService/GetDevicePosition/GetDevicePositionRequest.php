@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LocationService\GetDevicePosition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TrackerName
  * @property string $DeviceId
+ * @property string $TrackerName
  */
 class GetDevicePositionRequest extends Request
 {
     /**
      * @param array{
-     *     TrackerName: string,
-     *     DeviceId: string
+     *     DeviceId: string,
+     *     TrackerName: string
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CollectionName
+ * @property string|null $Description
+ * @property string|null $KmsKeyId
  * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property string|null $PricingPlanDataSource
- * @property string|null $Description
  * @property array<string, string>|null $Tags
- * @property string|null $KmsKeyId
  */
 class CreateGeofenceCollectionRequest extends Request
 {
     /**
      * @param array{
      *     CollectionName: string,
+     *     Description?: string|null,
+     *     KmsKeyId?: string|null,
      *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
      *     PricingPlanDataSource?: string|null,
-     *     Description?: string|null,
-     *     Tags?: array<string, string>|null,
-     *     KmsKeyId?: string|null
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

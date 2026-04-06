@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LocationService\SearchPlaceIndexForText\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Place $Place
  * @property double|null $Distance
- * @property double|null $Relevance
+ * @property Place $Place
  * @property string|null $PlaceId
+ * @property double|null $Relevance
  */
 class SearchForTextResult extends Shape
 {
     /**
      * @param array{
-     *     Place: Place,
      *     Distance?: double|null,
-     *     Relevance?: double|null,
-     *     PlaceId?: string|null
+     *     Place: Place,
+     *     PlaceId?: string|null,
+     *     Relevance?: double|null
      * } $args
      */
     public function __construct(array $args)

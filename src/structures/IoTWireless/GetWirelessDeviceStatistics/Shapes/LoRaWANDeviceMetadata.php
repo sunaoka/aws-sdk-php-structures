@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $Frequency
  * @property string|null $Timestamp
  * @property list<LoRaWANGatewayMetadata>|null $Gateways
- * @property list<LoRaWANPublicGatewayMetadata>|null $PublicGateways
  */
 class LoRaWANDeviceMetadata extends Shape
 {
@@ -22,8 +21,7 @@ class LoRaWANDeviceMetadata extends Shape
      *     DataRate?: int|null,
      *     Frequency?: int|null,
      *     Timestamp?: string|null,
-     *     Gateways?: list<LoRaWANGatewayMetadata>|null,
-     *     PublicGateways?: list<LoRaWANPublicGatewayMetadata>|null
+     *     Gateways?: list<LoRaWANGatewayMetadata>|null
      * } $args
      */
     public function __construct(array $args = [])

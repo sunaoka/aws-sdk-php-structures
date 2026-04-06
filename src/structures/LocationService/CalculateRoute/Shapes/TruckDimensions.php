@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LocationService\CalculateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double|null $Length
  * @property double|null $Height
- * @property double|null $Width
+ * @property double|null $Length
  * @property 'Meters'|'Feet'|null $Unit
+ * @property double|null $Width
  */
 class TruckDimensions extends Shape
 {
     /**
      * @param array{
-     *     Length?: double|null,
      *     Height?: double|null,
-     *     Width?: double|null,
-     *     Unit?: 'Meters'|'Feet'|null
+     *     Length?: double|null,
+     *     Unit?: 'Meters'|'Feet'|null,
+     *     Width?: double|null
      * } $args
      */
     public function __construct(array $args = [])

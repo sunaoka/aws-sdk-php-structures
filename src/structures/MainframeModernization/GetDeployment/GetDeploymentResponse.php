@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $deploymentId
  * @property string $environmentId
- * @property 'Deploying'|'Succeeded'|'Failed'|'Updating Deployment' $status
+ * @property 'Deploying'|'Succeeded'|'Failed' $status
  * @property string|null $statusReason
  */
 class GetDeploymentResponse extends Response

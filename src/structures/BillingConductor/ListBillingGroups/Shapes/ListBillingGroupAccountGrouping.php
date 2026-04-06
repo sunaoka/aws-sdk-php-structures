@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool|null $AutoAssociate
- * @property string|null $ResponsibilityTransferArn
  */
 class ListBillingGroupAccountGrouping extends Shape
 {
     /**
-     * @param array{
-     *     AutoAssociate?: bool|null,
-     *     ResponsibilityTransferArn?: string|null
-     * } $args
+     * @param array{AutoAssociate?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

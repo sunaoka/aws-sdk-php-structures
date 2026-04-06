@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Metrics
  * @property int<0, 25>|null $MaxResults
  * @property string|null $NextToken
- * @property list<'DescribeDimensionKeys'|'GetDimensionKeyDetails'|'GetResourceMetrics'>|null $AuthorizedActions
  */
 class ListAvailableResourceDimensionsRequest extends Request
 {
@@ -20,8 +19,7 @@ class ListAvailableResourceDimensionsRequest extends Request
      *     Identifier: string,
      *     Metrics: list<string>,
      *     MaxResults?: int<0, 25>|null,
-     *     NextToken?: string|null,
-     *     AuthorizedActions?: list<'DescribeDimensionKeys'|'GetDimensionKeyDetails'|'GetResourceMetrics'>|null
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

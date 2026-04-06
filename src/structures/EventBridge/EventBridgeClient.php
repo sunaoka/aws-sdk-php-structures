@@ -60,5 +60,4 @@ class EventBridgeClient extends \Aws\EventBridge\EventBridgeClient
     use UpdateArchive\UpdateArchiveTrait;
     use UpdateConnection\UpdateConnectionTrait;
     use UpdateEndpoint\UpdateEndpointTrait;
-    use UpdateEventBus\UpdateEventBusTrait;
 }

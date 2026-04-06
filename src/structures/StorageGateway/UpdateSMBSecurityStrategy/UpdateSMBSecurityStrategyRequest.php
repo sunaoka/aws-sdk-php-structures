@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayARN
- * @property 'ClientSpecified'|'MandatorySigning'|'MandatoryEncryption'|'MandatoryEncryptionNoAes128' $SMBSecurityStrategy
+ * @property 'ClientSpecified'|'MandatorySigning'|'MandatoryEncryption' $SMBSecurityStrategy
  */
 class UpdateSMBSecurityStrategyRequest extends Request
 {
     /**
      * @param array{
      *     GatewayARN: string,
-     *     SMBSecurityStrategy: 'ClientSpecified'|'MandatorySigning'|'MandatoryEncryption'|'MandatoryEncryptionNoAes128'
+     *     SMBSecurityStrategy: 'ClientSpecified'|'MandatorySigning'|'MandatoryEncryption'
      * } $args
      */
     public function __construct(array $args)

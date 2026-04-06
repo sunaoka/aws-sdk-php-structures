@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $environmentId
- * @property string|null $clientToken
  */
 class DeleteKxEnvironmentRequest extends Request
 {
     /**
-     * @param array{
-     *     environmentId: string,
-     *     clientToken?: string|null
-     * } $args
+     * @param array{environmentId: string} $args
      */
     public function __construct(array $args)
     {

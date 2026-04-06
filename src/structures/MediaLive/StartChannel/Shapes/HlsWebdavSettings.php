@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int|null $ConnectionRetryInterval
- * @property int|null $FilecacheDuration
+ * @property int<0, max>|null $ConnectionRetryInterval
+ * @property int<0, 600>|null $FilecacheDuration
  * @property 'CHUNKED'|'NON_CHUNKED'|null $HttpTransferMode
- * @property int|null $NumRetries
- * @property int|null $RestartDelay
+ * @property int<0, max>|null $NumRetries
+ * @property int<0, 15>|null $RestartDelay
  */
 class HlsWebdavSettings extends Shape
 {
     /**
      * @param array{
-     *     ConnectionRetryInterval?: int|null,
-     *     FilecacheDuration?: int|null,
+     *     ConnectionRetryInterval?: int<0, max>|null,
+     *     FilecacheDuration?: int<0, 600>|null,
      *     HttpTransferMode?: 'CHUNKED'|'NON_CHUNKED'|null,
-     *     NumRetries?: int|null,
-     *     RestartDelay?: int|null
+     *     NumRetries?: int<0, max>|null,
+     *     RestartDelay?: int<0, 15>|null
      * } $args
      */
     public function __construct(array $args = [])

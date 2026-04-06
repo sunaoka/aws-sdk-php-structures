@@ -18,12 +18,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\AssetBundleCloudFormationOverridePropertyConfiguration|null $CloudFormationOverridePropertyConfiguration
  * @property string|null $RequestId
  * @property int|null $Status
- * @property bool|null $IncludePermissions
- * @property bool|null $IncludeTags
- * @property Shapes\AssetBundleExportJobValidationStrategy|null $ValidationStrategy
- * @property list<Shapes\AssetBundleExportJobWarning>|null $Warnings
- * @property bool|null $IncludeFolderMemberships
- * @property 'RECURSE'|'ONE_LEVEL'|'NONE'|null $IncludeFolderMembers
  */
 class DescribeAssetBundleExportJobResponse extends Response
 {

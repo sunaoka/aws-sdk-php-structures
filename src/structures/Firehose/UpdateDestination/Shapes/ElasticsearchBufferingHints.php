@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Firehose\UpdateDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 900>|null $IntervalInSeconds
+ * @property int<60, 900>|null $IntervalInSeconds
  * @property int<1, 100>|null $SizeInMBs
  */
 class ElasticsearchBufferingHints extends Shape
 {
     /**
      * @param array{
-     *     IntervalInSeconds?: int<0, 900>|null,
+     *     IntervalInSeconds?: int<60, 900>|null,
      *     SizeInMBs?: int<1, 100>|null
      * } $args
      */

@@ -24,10 +24,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $mergedApiExecutionRoleArn
  * @property string|null $owner
  * @property string|null $ownerContact
- * @property 'ENABLED'|'DISABLED'|null $introspectionConfig
- * @property int<0, 75>|null $queryDepthLimit
- * @property int<0, 10000>|null $resolverCountLimit
- * @property EnhancedMetricsConfig|null $enhancedMetricsConfig
  */
 class GraphqlApi extends Shape
 {
@@ -51,11 +47,7 @@ class GraphqlApi extends Shape
      *     apiType?: 'GRAPHQL'|'MERGED'|null,
      *     mergedApiExecutionRoleArn?: string|null,
      *     owner?: string|null,
-     *     ownerContact?: string|null,
-     *     introspectionConfig?: 'ENABLED'|'DISABLED'|null,
-     *     queryDepthLimit?: int<0, 75>|null,
-     *     resolverCountLimit?: int<0, 10000>|null,
-     *     enhancedMetricsConfig?: EnhancedMetricsConfig|null
+     *     ownerContact?: string|null
      * } $args
      */
     public function __construct(array $args = [])

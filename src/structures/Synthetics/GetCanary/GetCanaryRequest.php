@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string|null $DryRunId
  */
 class GetCanaryRequest extends Request
 {
     /**
-     * @param array{
-     *     Name: string,
-     *     DryRunId?: string|null
-     * } $args
+     * @param array{Name: string} $args
      */
     public function __construct(array $args)
     {

@@ -10,8 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OutputDataConfig $JobOutputDataConfig
  * @property string $DatastoreId
  * @property string $DataAccessRoleArn
- * @property string|null $ClientToken
- * @property 'strict'|'structure-only'|'minimal'|null $ValidationLevel
+ * @property string $ClientToken
  */
 class StartFHIRImportJobRequest extends Request
 {
@@ -22,8 +21,7 @@ class StartFHIRImportJobRequest extends Request
      *     JobOutputDataConfig: Shapes\OutputDataConfig,
      *     DatastoreId: string,
      *     DataAccessRoleArn: string,
-     *     ClientToken?: string|null,
-     *     ValidationLevel?: 'strict'|'structure-only'|'minimal'|null
+     *     ClientToken: string
      * } $args
      */
     public function __construct(array $args)

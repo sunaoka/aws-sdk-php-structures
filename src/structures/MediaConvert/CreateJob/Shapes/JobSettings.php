@@ -7,10 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int<-1000, 1000>|null $AdAvailOffset
  * @property AvailBlanking|null $AvailBlanking
- * @property list<ColorConversion3DLUTSetting>|null $ColorConversion3DLUTSettings
  * @property EsamSettings|null $Esam
  * @property ExtendedDataServices|null $ExtendedDataServices
- * @property int<1, 150>|null $FollowSource
  * @property list<Input>|null $Inputs
  * @property KantarWatermarkSettings|null $KantarWatermark
  * @property MotionImageInserter|null $MotionImageInserter
@@ -26,10 +24,8 @@ class JobSettings extends Shape
      * @param array{
      *     AdAvailOffset?: int<-1000, 1000>|null,
      *     AvailBlanking?: AvailBlanking|null,
-     *     ColorConversion3DLUTSettings?: list<ColorConversion3DLUTSetting>|null,
      *     Esam?: EsamSettings|null,
      *     ExtendedDataServices?: ExtendedDataServices|null,
-     *     FollowSource?: int<1, 150>|null,
      *     Inputs?: list<Input>|null,
      *     KantarWatermark?: KantarWatermarkSettings|null,
      *     MotionImageInserter?: MotionImageInserter|null,

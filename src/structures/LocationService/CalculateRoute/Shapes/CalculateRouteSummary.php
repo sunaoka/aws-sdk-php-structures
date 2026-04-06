@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LocationService\CalculateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<double> $RouteBBox
  * @property string $DataSource
  * @property double $Distance
- * @property double $DurationSeconds
  * @property 'Kilometers'|'Miles' $DistanceUnit
+ * @property double $DurationSeconds
+ * @property list<double> $RouteBBox
  */
 class CalculateRouteSummary extends Shape
 {
     /**
      * @param array{
-     *     RouteBBox: list<double>,
      *     DataSource: string,
      *     Distance: double,
+     *     DistanceUnit: 'Kilometers'|'Miles',
      *     DurationSeconds: double,
-     *     DistanceUnit: 'Kilometers'|'Miles'
+     *     RouteBBox: list<double>
      * } $args
      */
     public function __construct(array $args)

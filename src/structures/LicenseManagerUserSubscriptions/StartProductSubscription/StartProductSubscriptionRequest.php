@@ -5,21 +5,19 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\StartProductSub
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Username
+ * @property string|null $Domain
  * @property Shapes\IdentityProvider $IdentityProvider
  * @property string $Product
- * @property string|null $Domain
- * @property array<string, string>|null $Tags
+ * @property string $Username
  */
 class StartProductSubscriptionRequest extends Request
 {
     /**
      * @param array{
-     *     Username: string,
+     *     Domain?: string|null,
      *     IdentityProvider: Shapes\IdentityProvider,
      *     Product: string,
-     *     Domain?: string|null,
-     *     Tags?: array<string, string>|null
+     *     Username: string
      * } $args
      */
     public function __construct(array $args)

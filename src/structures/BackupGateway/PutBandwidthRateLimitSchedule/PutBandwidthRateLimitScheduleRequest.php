@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BackupGateway\PutBandwidthRateLimitSchedule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GatewayArn
  * @property list<Shapes\BandwidthRateLimitInterval> $BandwidthRateLimitIntervals
+ * @property string $GatewayArn
  */
 class PutBandwidthRateLimitScheduleRequest extends Request
 {
     /**
      * @param array{
-     *     GatewayArn: string,
-     *     BandwidthRateLimitIntervals: list<Shapes\BandwidthRateLimitInterval>
+     *     BandwidthRateLimitIntervals: list<Shapes\BandwidthRateLimitInterval>,
+     *     GatewayArn: string
      * } $args
      */
     public function __construct(array $args)

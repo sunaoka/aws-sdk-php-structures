@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StatefulEngineOptions|null $StatefulEngineOptions
  * @property string|null $TLSInspectionConfigurationArn
  * @property PolicyVariables|null $PolicyVariables
- * @property bool|null $EnableTLSSessionHolding
  */
 class FirewallPolicy extends Shape
 {
@@ -28,8 +27,7 @@ class FirewallPolicy extends Shape
      *     StatefulDefaultActions?: list<string>|null,
      *     StatefulEngineOptions?: StatefulEngineOptions|null,
      *     TLSInspectionConfigurationArn?: string|null,
-     *     PolicyVariables?: PolicyVariables|null,
-     *     EnableTLSSessionHolding?: bool|null
+     *     PolicyVariables?: PolicyVariables|null
      * } $args
      */
     public function __construct(array $args)

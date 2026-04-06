@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null $AudioDuration
  * @property int<0, 2147483647>|null $AudioFramesPerPes
  * @property list<int<32, 8182>>|null $AudioPids
- * @property int<-10000, 10000>|null $AudioPtsOffsetDelta
  * @property int<0, 2147483647>|null $Bitrate
  * @property 'MULTIPLEX'|'NONE'|null $BufferModel
  * @property 'AUTO'|'ALIGN_TO_VIDEO'|null $DataPTSControl
@@ -33,11 +32,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<32, 8182>|null $PcrPid
  * @property int<0, 1000>|null $PmtInterval
  * @property int<32, 8182>|null $PmtPid
- * @property 'DISABLED'|'ENABLED'|null $PreventBufferUnderflow
  * @property int<32, 8182>|null $PrivateMetadataPid
  * @property int<0, 65535>|null $ProgramNumber
- * @property int<0, 3600>|null $PtsOffset
- * @property 'AUTO'|'SECONDS'|'MILLISECONDS'|null $PtsOffsetMode
  * @property 'VBR'|'CBR'|null $RateMode
  * @property M2tsScte35Esam|null $Scte35Esam
  * @property int<32, 8182>|null $Scte35Pid
@@ -57,7 +53,6 @@ class M2tsSettings extends Shape
      *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null,
      *     AudioFramesPerPes?: int<0, 2147483647>|null,
      *     AudioPids?: list<int<32, 8182>>|null,
-     *     AudioPtsOffsetDelta?: int<-10000, 10000>|null,
      *     Bitrate?: int<0, 2147483647>|null,
      *     BufferModel?: 'MULTIPLEX'|'NONE'|null,
      *     DataPTSControl?: 'AUTO'|'ALIGN_TO_VIDEO'|null,
@@ -81,11 +76,8 @@ class M2tsSettings extends Shape
      *     PcrPid?: int<32, 8182>|null,
      *     PmtInterval?: int<0, 1000>|null,
      *     PmtPid?: int<32, 8182>|null,
-     *     PreventBufferUnderflow?: 'DISABLED'|'ENABLED'|null,
      *     PrivateMetadataPid?: int<32, 8182>|null,
      *     ProgramNumber?: int<0, 65535>|null,
-     *     PtsOffset?: int<0, 3600>|null,
-     *     PtsOffsetMode?: 'AUTO'|'SECONDS'|'MILLISECONDS'|null,
      *     RateMode?: 'VBR'|'CBR'|null,
      *     Scte35Esam?: M2tsScte35Esam|null,
      *     Scte35Pid?: int<32, 8182>|null,

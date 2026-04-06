@@ -5,29 +5,27 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\CreateDecoderManifest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 2147483647> $messageId
+ * @property int<0, max> $messageId
  * @property bool $isBigEndian
  * @property bool $isSigned
- * @property int<0, 2147483647> $startBit
+ * @property int<0, max> $startBit
  * @property double $offset
  * @property double $factor
- * @property int<0, 2147483647> $length
+ * @property int<0, max> $length
  * @property string|null $name
- * @property 'INTEGER'|'FLOATING_POINT'|null $signalValueType
  */
 class CanSignal extends Shape
 {
     /**
      * @param array{
-     *     messageId: int<0, 2147483647>,
+     *     messageId: int<0, max>,
      *     isBigEndian: bool,
      *     isSigned: bool,
-     *     startBit: int<0, 2147483647>,
+     *     startBit: int<0, max>,
      *     offset: double,
      *     factor: double,
-     *     length: int<0, 2147483647>,
-     *     name?: string|null,
-     *     signalValueType?: 'INTEGER'|'FLOATING_POINT'|null
+     *     length: int<0, max>,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

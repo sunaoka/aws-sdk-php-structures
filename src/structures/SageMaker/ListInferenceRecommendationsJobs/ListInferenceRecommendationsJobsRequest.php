@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeAfter
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeBefore
  * @property string|null $NameContains
- * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED'|null $StatusEquals
+ * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|null $StatusEquals
  * @property 'Name'|'CreationTime'|'Status'|null $SortBy
  * @property 'Ascending'|'Descending'|null $SortOrder
  * @property string|null $NextToken
@@ -27,7 +27,7 @@ class ListInferenceRecommendationsJobsRequest extends Request
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult|null,
      *     NameContains?: string|null,
-     *     StatusEquals?: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED'|null,
+     *     StatusEquals?: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|null,
      *     SortBy?: 'Name'|'CreationTime'|'Status'|null,
      *     SortOrder?: 'Ascending'|'Descending'|null,
      *     NextToken?: string|null,

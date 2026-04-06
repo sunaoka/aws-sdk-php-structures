@@ -6,8 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DeliveryStreamName
- * @property 'DirectPut'|'KinesisStreamAsSource'|'MSKAsSource'|'DatabaseAsSource'|null $DeliveryStreamType
- * @property Shapes\DirectPutSourceConfiguration|null $DirectPutSourceConfiguration
+ * @property 'DirectPut'|'KinesisStreamAsSource'|null $DeliveryStreamType
  * @property Shapes\KinesisStreamSourceConfiguration|null $KinesisStreamSourceConfiguration
  * @property Shapes\DeliveryStreamEncryptionConfigurationInput|null $DeliveryStreamEncryptionConfigurationInput
  * @property Shapes\S3DestinationConfiguration|null $S3DestinationConfiguration
@@ -19,18 +18,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\HttpEndpointDestinationConfiguration|null $HttpEndpointDestinationConfiguration
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\AmazonOpenSearchServerlessDestinationConfiguration|null $AmazonOpenSearchServerlessDestinationConfiguration
- * @property Shapes\MSKSourceConfiguration|null $MSKSourceConfiguration
- * @property Shapes\SnowflakeDestinationConfiguration|null $SnowflakeDestinationConfiguration
- * @property Shapes\IcebergDestinationConfiguration|null $IcebergDestinationConfiguration
- * @property Shapes\DatabaseSourceConfiguration|null $DatabaseSourceConfiguration
  */
 class CreateDeliveryStreamRequest extends Request
 {
     /**
      * @param array{
      *     DeliveryStreamName: string,
-     *     DeliveryStreamType?: 'DirectPut'|'KinesisStreamAsSource'|'MSKAsSource'|'DatabaseAsSource'|null,
-     *     DirectPutSourceConfiguration?: Shapes\DirectPutSourceConfiguration|null,
+     *     DeliveryStreamType?: 'DirectPut'|'KinesisStreamAsSource'|null,
      *     KinesisStreamSourceConfiguration?: Shapes\KinesisStreamSourceConfiguration|null,
      *     DeliveryStreamEncryptionConfigurationInput?: Shapes\DeliveryStreamEncryptionConfigurationInput|null,
      *     S3DestinationConfiguration?: Shapes\S3DestinationConfiguration|null,
@@ -41,11 +35,7 @@ class CreateDeliveryStreamRequest extends Request
      *     SplunkDestinationConfiguration?: Shapes\SplunkDestinationConfiguration|null,
      *     HttpEndpointDestinationConfiguration?: Shapes\HttpEndpointDestinationConfiguration|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     AmazonOpenSearchServerlessDestinationConfiguration?: Shapes\AmazonOpenSearchServerlessDestinationConfiguration|null,
-     *     MSKSourceConfiguration?: Shapes\MSKSourceConfiguration|null,
-     *     SnowflakeDestinationConfiguration?: Shapes\SnowflakeDestinationConfiguration|null,
-     *     IcebergDestinationConfiguration?: Shapes\IcebergDestinationConfiguration|null,
-     *     DatabaseSourceConfiguration?: Shapes\DatabaseSourceConfiguration|null
+     *     AmazonOpenSearchServerlessDestinationConfiguration?: Shapes\AmazonOpenSearchServerlessDestinationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

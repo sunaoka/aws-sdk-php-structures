@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property float|null $Confidence
  * @property Shapes\AuditImage|null $ReferenceImage
  * @property list<Shapes\AuditImage>|null $AuditImages
- * @property Shapes\Challenge|null $Challenge
  */
 class GetFaceLivenessSessionResultsResponse extends Response
 {

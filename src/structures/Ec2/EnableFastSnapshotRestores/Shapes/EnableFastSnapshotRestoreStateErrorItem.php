@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $AvailabilityZone
- * @property string|null $AvailabilityZoneId
  * @property EnableFastSnapshotRestoreStateError|null $Error
  */
 class EnableFastSnapshotRestoreStateErrorItem extends Shape
@@ -14,7 +13,6 @@ class EnableFastSnapshotRestoreStateErrorItem extends Shape
     /**
      * @param array{
      *     AvailabilityZone?: string|null,
-     *     AvailabilityZoneId?: string|null,
      *     Error?: EnableFastSnapshotRestoreStateError|null
      * } $args
      */

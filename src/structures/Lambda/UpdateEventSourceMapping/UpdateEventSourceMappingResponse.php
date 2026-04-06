@@ -32,12 +32,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\SelfManagedKafkaEventSourceConfig|null $SelfManagedKafkaEventSourceConfig
  * @property Shapes\ScalingConfig|null $ScalingConfig
  * @property Shapes\DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
- * @property string|null $KMSKeyArn
- * @property Shapes\FilterCriteriaError|null $FilterCriteriaError
- * @property string|null $EventSourceMappingArn
- * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
- * @property Shapes\EventSourceMappingLoggingConfig|null $LoggingConfig
- * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class UpdateEventSourceMappingResponse extends Response
 {

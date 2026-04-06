@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $integerValue
  * @property double|null $doubleValue
  * @property bool|null $booleanValue
- * @property PropertyValueNullValue|null $nullValue
  */
 class Variant extends Shape
 {
@@ -18,8 +17,7 @@ class Variant extends Shape
      *     stringValue?: string|null,
      *     integerValue?: int|null,
      *     doubleValue?: double|null,
-     *     booleanValue?: bool|null,
-     *     nullValue?: PropertyValueNullValue|null
+     *     booleanValue?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Domain
  * @property string $UserPoolId
- * @property int|null $ManagedLoginVersion
- * @property Shapes\CustomDomainConfigType|null $CustomDomainConfig
+ * @property Shapes\CustomDomainConfigType $CustomDomainConfig
  */
 class UpdateUserPoolDomainRequest extends Request
 {
@@ -16,8 +15,7 @@ class UpdateUserPoolDomainRequest extends Request
      * @param array{
      *     Domain: string,
      *     UserPoolId: string,
-     *     ManagedLoginVersion?: int|null,
-     *     CustomDomainConfig?: Shapes\CustomDomainConfigType|null
+     *     CustomDomainConfig: Shapes\CustomDomainConfigType
      * } $args
      */
     public function __construct(array $args)

@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SafetyRuleArn
  * @property 'PENDING'|'DEPLOYED'|'PENDING_DELETION' $Status
  * @property int $WaitPeriodMs
- * @property string|null $Owner
  */
 class AssertionRule extends Shape
 {
@@ -24,8 +23,7 @@ class AssertionRule extends Shape
      *     RuleConfig: RuleConfig,
      *     SafetyRuleArn: string,
      *     Status: 'PENDING'|'DEPLOYED'|'PENDING_DELETION',
-     *     WaitPeriodMs: int,
-     *     Owner?: string|null
+     *     WaitPeriodMs: int
      * } $args
      */
     public function __construct(array $args)

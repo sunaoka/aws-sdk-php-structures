@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WorkforceName
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\WorkforceVpcConfigRequest|null $WorkforceVpcConfig
- * @property 'ipv4'|'dualstack'|null $IpAddressType
  */
 class CreateWorkforceRequest extends Request
 {
@@ -22,8 +21,7 @@ class CreateWorkforceRequest extends Request
      *     SourceIpConfig?: Shapes\SourceIpConfig|null,
      *     WorkforceName: string,
      *     Tags?: list<Shapes\Tag>|null,
-     *     WorkforceVpcConfig?: Shapes\WorkforceVpcConfigRequest|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|null
+     *     WorkforceVpcConfig?: Shapes\WorkforceVpcConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

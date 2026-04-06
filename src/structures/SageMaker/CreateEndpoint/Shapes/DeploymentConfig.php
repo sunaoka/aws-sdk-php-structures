@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property BlueGreenUpdatePolicy|null $BlueGreenUpdatePolicy
- * @property RollingUpdatePolicy|null $RollingUpdatePolicy
  * @property AutoRollbackConfig|null $AutoRollbackConfiguration
+ * @property RollingUpdatePolicy|null $RollingUpdatePolicy
  */
 class DeploymentConfig extends Shape
 {
     /**
      * @param array{
      *     BlueGreenUpdatePolicy?: BlueGreenUpdatePolicy|null,
-     *     RollingUpdatePolicy?: RollingUpdatePolicy|null,
-     *     AutoRollbackConfiguration?: AutoRollbackConfig|null
+     *     AutoRollbackConfiguration?: AutoRollbackConfig|null,
+     *     RollingUpdatePolicy?: RollingUpdatePolicy|null
      * } $args
      */
     public function __construct(array $args = [])

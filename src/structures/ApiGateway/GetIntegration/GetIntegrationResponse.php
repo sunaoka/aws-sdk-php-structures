@@ -20,8 +20,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string>|null $cacheKeyParameters
  * @property array<string, Shapes\IntegrationResponse>|null $integrationResponses
  * @property Shapes\TlsConfig|null $tlsConfig
- * @property 'BUFFERED'|'STREAM'|null $responseTransferMode
- * @property string|null $integrationTarget
  */
 class GetIntegrationResponse extends Response
 {

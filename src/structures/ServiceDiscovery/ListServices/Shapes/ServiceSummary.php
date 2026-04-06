@@ -7,7 +7,6 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Id
  * @property string|null $Arn
- * @property string|null $ResourceOwner
  * @property string|null $Name
  * @property 'HTTP'|'DNS_HTTP'|'DNS'|null $Type
  * @property string|null $Description
@@ -16,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HealthCheckConfig|null $HealthCheckConfig
  * @property HealthCheckCustomConfig|null $HealthCheckCustomConfig
  * @property \Aws\Api\DateTimeResult|null $CreateDate
- * @property string|null $CreatedByAccount
  */
 class ServiceSummary extends Shape
 {
@@ -24,7 +22,6 @@ class ServiceSummary extends Shape
      * @param array{
      *     Id?: string|null,
      *     Arn?: string|null,
-     *     ResourceOwner?: string|null,
      *     Name?: string|null,
      *     Type?: 'HTTP'|'DNS_HTTP'|'DNS'|null,
      *     Description?: string|null,
@@ -32,8 +29,7 @@ class ServiceSummary extends Shape
      *     DnsConfig?: DnsConfig|null,
      *     HealthCheckConfig?: HealthCheckConfig|null,
      *     HealthCheckCustomConfig?: HealthCheckCustomConfig|null,
-     *     CreateDate?: \Aws\Api\DateTimeResult|null,
-     *     CreatedByAccount?: string|null
+     *     CreateDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

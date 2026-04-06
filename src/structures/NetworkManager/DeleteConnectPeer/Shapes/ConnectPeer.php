@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property ConnectPeerConfiguration|null $Configuration
  * @property list<Tag>|null $Tags
- * @property string|null $SubnetArn
- * @property list<ConnectPeerError>|null $LastModificationErrors
  */
 class ConnectPeer extends Shape
 {
@@ -27,9 +25,7 @@ class ConnectPeer extends Shape
      *     State?: 'CREATING'|'FAILED'|'AVAILABLE'|'DELETING'|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     Configuration?: ConnectPeerConfiguration|null,
-     *     Tags?: list<Tag>|null,
-     *     SubnetArn?: string|null,
-     *     LastModificationErrors?: list<ConnectPeerError>|null
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

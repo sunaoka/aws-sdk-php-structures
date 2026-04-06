@@ -19,11 +19,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PreferredLanguage
  * @property string|null $Locale
  * @property string|null $Timezone
- * @property list<Shapes\Photo>|null $Photos
- * @property string|null $Website
- * @property string|null $Birthdate
- * @property list<Shapes\Role>|null $Roles
- * @property array<string, Shapes\AttributeValue>|null $Extensions
  */
 class CreateUserRequest extends Request
 {
@@ -42,12 +37,7 @@ class CreateUserRequest extends Request
      *     Title?: string|null,
      *     PreferredLanguage?: string|null,
      *     Locale?: string|null,
-     *     Timezone?: string|null,
-     *     Photos?: list<Shapes\Photo>|null,
-     *     Website?: string|null,
-     *     Birthdate?: string|null,
-     *     Roles?: list<Shapes\Role>|null,
-     *     Extensions?: array<string, Shapes\AttributeValue>|null
+     *     Timezone?: string|null
      * } $args
      */
     public function __construct(array $args)

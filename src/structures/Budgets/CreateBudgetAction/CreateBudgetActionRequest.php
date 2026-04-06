@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ExecutionRoleArn
  * @property 'AUTOMATIC'|'MANUAL' $ApprovalModel
  * @property list<Shapes\Subscriber> $Subscribers
- * @property list<Shapes\ResourceTag>|null $ResourceTags
  */
 class CreateBudgetActionRequest extends Request
 {
@@ -28,8 +27,7 @@ class CreateBudgetActionRequest extends Request
      *     Definition: Shapes\Definition,
      *     ExecutionRoleArn: string,
      *     ApprovalModel: 'AUTOMATIC'|'MANUAL',
-     *     Subscribers: list<Shapes\Subscriber>,
-     *     ResourceTags?: list<Shapes\ResourceTag>|null
+     *     Subscribers: list<Shapes\Subscriber>
      * } $args
      */
     public function __construct(array $args)

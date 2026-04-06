@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCases\CreateLayout;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property Shapes\LayoutContent $content
  * @property string $domainId
  * @property string $name
- * @property Shapes\LayoutContent $content
  */
 class CreateLayoutRequest extends Request
 {
     /**
      * @param array{
+     *     content: Shapes\LayoutContent,
      *     domainId: string,
-     *     name: string,
-     *     content: Shapes\LayoutContent
+     *     name: string
      * } $args
      */
     public function __construct(array $args)

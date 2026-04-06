@@ -5,23 +5,21 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\CreateConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxWorkerCount
+ * @property int<1, 10> $maxWorkerCount
  * @property int<1, 8> $mcuCount
- * @property int $minWorkerCount
+ * @property int<1, 10> $minWorkerCount
  * @property ScaleInPolicy|null $scaleInPolicy
  * @property ScaleOutPolicy|null $scaleOutPolicy
- * @property int|null $maxAutoscalingTaskCount
  */
 class AutoScaling extends Shape
 {
     /**
      * @param array{
-     *     maxWorkerCount: int,
+     *     maxWorkerCount: int<1, 10>,
      *     mcuCount: int<1, 8>,
-     *     minWorkerCount: int,
+     *     minWorkerCount: int<1, 10>,
      *     scaleInPolicy?: ScaleInPolicy|null,
-     *     scaleOutPolicy?: ScaleOutPolicy|null,
-     *     maxAutoscalingTaskCount?: int|null
+     *     scaleOutPolicy?: ScaleOutPolicy|null
      * } $args
      */
     public function __construct(array $args)

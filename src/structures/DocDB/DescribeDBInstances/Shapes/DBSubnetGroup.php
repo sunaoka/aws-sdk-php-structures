@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SubnetGroupStatus
  * @property list<Subnet>|null $Subnets
  * @property string|null $DBSubnetGroupArn
- * @property list<string>|null $SupportedNetworkTypes
  */
 class DBSubnetGroup extends Shape
 {
@@ -22,8 +21,7 @@ class DBSubnetGroup extends Shape
      *     VpcId?: string|null,
      *     SubnetGroupStatus?: string|null,
      *     Subnets?: list<Subnet>|null,
-     *     DBSubnetGroupArn?: string|null,
-     *     SupportedNetworkTypes?: list<string>|null
+     *     DBSubnetGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

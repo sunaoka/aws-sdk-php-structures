@@ -9,18 +9,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $CopyTagsToBackups
  * @property bool|null $CopyTagsToVolumes
  * @property string|null $DailyAutomaticBackupStartTime
- * @property 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'SINGLE_AZ_HA_1'|'SINGLE_AZ_HA_2'|'MULTI_AZ_1'|null $DeploymentType
+ * @property 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_1'|null $DeploymentType
  * @property int<8, 100000>|null $ThroughputCapacity
  * @property string|null $WeeklyMaintenanceStartTime
  * @property DiskIopsConfiguration|null $DiskIopsConfiguration
  * @property string|null $RootVolumeId
  * @property string|null $PreferredSubnetId
  * @property string|null $EndpointIpAddressRange
- * @property string|null $EndpointIpv6AddressRange
  * @property list<string>|null $RouteTableIds
  * @property string|null $EndpointIpAddress
- * @property string|null $EndpointIpv6Address
- * @property OpenZFSReadCacheConfiguration|null $ReadCacheConfiguration
  */
 class OpenZFSFileSystemConfiguration extends Shape
 {
@@ -30,18 +27,15 @@ class OpenZFSFileSystemConfiguration extends Shape
      *     CopyTagsToBackups?: bool|null,
      *     CopyTagsToVolumes?: bool|null,
      *     DailyAutomaticBackupStartTime?: string|null,
-     *     DeploymentType?: 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'SINGLE_AZ_HA_1'|'SINGLE_AZ_HA_2'|'MULTI_AZ_1'|null,
+     *     DeploymentType?: 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_1'|null,
      *     ThroughputCapacity?: int<8, 100000>|null,
      *     WeeklyMaintenanceStartTime?: string|null,
      *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
      *     RootVolumeId?: string|null,
      *     PreferredSubnetId?: string|null,
      *     EndpointIpAddressRange?: string|null,
-     *     EndpointIpv6AddressRange?: string|null,
      *     RouteTableIds?: list<string>|null,
-     *     EndpointIpAddress?: string|null,
-     *     EndpointIpv6Address?: string|null,
-     *     ReadCacheConfiguration?: OpenZFSReadCacheConfiguration|null
+     *     EndpointIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $ApplicationId
  * @property string|null $ComponentId
- * @property 'HANA'|'HANA_NODE'|'ABAP'|'ASCS'|'DIALOG'|'WEBDISP'|'WD'|'ERS'|null $ComponentType
+ * @property 'HANA'|'HANA_NODE'|null $ComponentType
  * @property array<string, string>|null $Tags
  * @property string|null $Arn
  */
@@ -17,7 +17,7 @@ class ComponentSummary extends Shape
      * @param array{
      *     ApplicationId?: string|null,
      *     ComponentId?: string|null,
-     *     ComponentType?: 'HANA'|'HANA_NODE'|'ABAP'|'ASCS'|'DIALOG'|'WEBDISP'|'WD'|'ERS'|null,
+     *     ComponentType?: 'HANA'|'HANA_NODE'|null,
      *     Tags?: array<string, string>|null,
      *     Arn?: string|null
      * } $args

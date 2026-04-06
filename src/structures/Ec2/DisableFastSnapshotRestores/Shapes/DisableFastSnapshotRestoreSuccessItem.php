@@ -7,7 +7,6 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $SnapshotId
  * @property string|null $AvailabilityZone
- * @property string|null $AvailabilityZoneId
  * @property 'enabling'|'optimizing'|'enabled'|'disabling'|'disabled'|null $State
  * @property string|null $StateTransitionReason
  * @property string|null $OwnerId
@@ -24,7 +23,6 @@ class DisableFastSnapshotRestoreSuccessItem extends Shape
      * @param array{
      *     SnapshotId?: string|null,
      *     AvailabilityZone?: string|null,
-     *     AvailabilityZoneId?: string|null,
      *     State?: 'enabling'|'optimizing'|'enabled'|'disabling'|'disabled'|null,
      *     StateTransitionReason?: string|null,
      *     OwnerId?: string|null,

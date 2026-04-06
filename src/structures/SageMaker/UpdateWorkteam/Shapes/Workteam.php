@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreateDate
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedDate
  * @property NotificationConfiguration|null $NotificationConfiguration
- * @property WorkerAccessConfiguration|null $WorkerAccessConfiguration
  */
 class Workteam extends Shape
 {
@@ -30,8 +29,7 @@ class Workteam extends Shape
      *     SubDomain?: string|null,
      *     CreateDate?: \Aws\Api\DateTimeResult|null,
      *     LastUpdatedDate?: \Aws\Api\DateTimeResult|null,
-     *     NotificationConfiguration?: NotificationConfiguration|null,
-     *     WorkerAccessConfiguration?: WorkerAccessConfiguration|null
+     *     NotificationConfiguration?: NotificationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

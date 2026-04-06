@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $InputTemplate
  * @property PipeEnrichmentHttpParameters|null $HttpParameters
+ * @property string|null $InputTemplate
  */
 class PipeEnrichmentParameters extends Shape
 {
     /**
      * @param array{
-     *     InputTemplate?: string|null,
-     *     HttpParameters?: PipeEnrichmentHttpParameters|null
+     *     HttpParameters?: PipeEnrichmentHttpParameters|null,
+     *     InputTemplate?: string|null
      * } $args
      */
     public function __construct(array $args = [])

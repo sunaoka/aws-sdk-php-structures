@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CreatorRequestId
  * @property int $MinRetentionDays
  * @property int $MaxRetentionDays
- * @property string|null $EncryptionKeyArn
  */
 class CreateLogicallyAirGappedBackupVaultRequest extends Request
 {
@@ -20,8 +19,7 @@ class CreateLogicallyAirGappedBackupVaultRequest extends Request
      *     BackupVaultTags?: array<string, string>|null,
      *     CreatorRequestId?: string|null,
      *     MinRetentionDays: int,
-     *     MaxRetentionDays: int,
-     *     EncryptionKeyArn?: string|null
+     *     MaxRetentionDays: int
      * } $args
      */
     public function __construct(array $args)

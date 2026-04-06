@@ -10,11 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DataManifestLocation
  * @property int|null $TotalExecutionTimeInMillis
  * @property int|null $QueryQueueTimeInMillis
- * @property int|null $ServicePreProcessingTimeInMillis
  * @property int|null $QueryPlanningTimeInMillis
  * @property int|null $ServiceProcessingTimeInMillis
  * @property ResultReuseInformation|null $ResultReuseInformation
- * @property double|null $DpuCount
  */
 class QueryExecutionStatistics extends Shape
 {
@@ -25,11 +23,9 @@ class QueryExecutionStatistics extends Shape
      *     DataManifestLocation?: string|null,
      *     TotalExecutionTimeInMillis?: int|null,
      *     QueryQueueTimeInMillis?: int|null,
-     *     ServicePreProcessingTimeInMillis?: int|null,
      *     QueryPlanningTimeInMillis?: int|null,
      *     ServiceProcessingTimeInMillis?: int|null,
-     *     ResultReuseInformation?: ResultReuseInformation|null,
-     *     DpuCount?: double|null
+     *     ResultReuseInformation?: ResultReuseInformation|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 777600> $MaxRuntimeInSeconds
+ * @property int<1, 604800> $MaxRuntimeInSeconds
  */
 class ProcessingStoppingCondition extends Shape
 {
     /**
-     * @param array{MaxRuntimeInSeconds: int<1, 777600>} $args
+     * @param array{MaxRuntimeInSeconds: int<1, 604800>} $args
      */
     public function __construct(array $args)
     {

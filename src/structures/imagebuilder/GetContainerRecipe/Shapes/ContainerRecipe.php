@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DOCKER'|null $containerType
  * @property string|null $name
  * @property string|null $description
- * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property 'Windows'|'Linux'|null $platform
  * @property string|null $owner
  * @property string|null $version
  * @property list<ComponentConfiguration>|null $components
@@ -31,7 +31,7 @@ class ContainerRecipe extends Shape
      *     containerType?: 'DOCKER'|null,
      *     name?: string|null,
      *     description?: string|null,
-     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     platform?: 'Windows'|'Linux'|null,
      *     owner?: string|null,
      *     version?: string|null,
      *     components?: list<ComponentConfiguration>|null,

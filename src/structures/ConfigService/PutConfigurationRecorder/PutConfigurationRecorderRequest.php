@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ConfigurationRecorder $ConfigurationRecorder
- * @property list<Shapes\Tag>|null $Tags
  */
 class PutConfigurationRecorderRequest extends Request
 {
     /**
-     * @param array{
-     *     ConfigurationRecorder: Shapes\ConfigurationRecorder,
-     *     Tags?: list<Shapes\Tag>|null
-     * } $args
+     * @param array{ConfigurationRecorder: Shapes\ConfigurationRecorder} $args
      */
     public function __construct(array $args)
     {

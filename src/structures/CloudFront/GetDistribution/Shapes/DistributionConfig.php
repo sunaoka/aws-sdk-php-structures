@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CustomErrorResponses|null $CustomErrorResponses
  * @property string $Comment
  * @property LoggingConfig|null $Logging
- * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None'|null $PriceClass
+ * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|null $PriceClass
  * @property bool $Enabled
  * @property ViewerCertificate|null $ViewerCertificate
  * @property Restrictions|null $Restrictions
@@ -24,11 +24,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IsIPV6Enabled
  * @property string|null $ContinuousDeploymentPolicyId
  * @property bool|null $Staging
- * @property string|null $AnycastIpListId
- * @property TenantConfig|null $TenantConfig
- * @property 'direct'|'tenant-only'|null $ConnectionMode
- * @property ViewerMtlsConfig|null $ViewerMtlsConfig
- * @property ConnectionFunctionAssociation|null $ConnectionFunctionAssociation
  */
 class DistributionConfig extends Shape
 {
@@ -44,7 +39,7 @@ class DistributionConfig extends Shape
      *     CustomErrorResponses?: CustomErrorResponses|null,
      *     Comment: string,
      *     Logging?: LoggingConfig|null,
-     *     PriceClass?: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|'None'|null,
+     *     PriceClass?: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|null,
      *     Enabled: bool,
      *     ViewerCertificate?: ViewerCertificate|null,
      *     Restrictions?: Restrictions|null,
@@ -52,12 +47,7 @@ class DistributionConfig extends Shape
      *     HttpVersion?: 'http1.1'|'http2'|'http3'|'http2and3'|null,
      *     IsIPV6Enabled?: bool|null,
      *     ContinuousDeploymentPolicyId?: string|null,
-     *     Staging?: bool|null,
-     *     AnycastIpListId?: string|null,
-     *     TenantConfig?: TenantConfig|null,
-     *     ConnectionMode?: 'direct'|'tenant-only'|null,
-     *     ViewerMtlsConfig?: ViewerMtlsConfig|null,
-     *     ConnectionFunctionAssociation?: ConnectionFunctionAssociation|null
+     *     Staging?: bool|null
      * } $args
      */
     public function __construct(array $args)

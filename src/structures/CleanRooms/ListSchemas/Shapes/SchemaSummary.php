@@ -6,32 +6,28 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property 'TABLE'|'ID_MAPPING_TABLE' $type
+ * @property 'TABLE' $type
  * @property string $creatorAccountId
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $collaborationId
  * @property string $collaborationArn
- * @property list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'> $analysisRuleTypes
- * @property 'DIRECT_QUERY'|'DIRECT_JOB'|'MULTIPLE'|null $analysisMethod
- * @property string|null $resourceArn
- * @property list<'DIRECT_QUERY'|'DIRECT_JOB'>|null $selectedAnalysisMethods
+ * @property list<'AGGREGATION'|'LIST'|'CUSTOM'> $analysisRuleTypes
+ * @property 'DIRECT_QUERY'|null $analysisMethod
  */
 class SchemaSummary extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     type: 'TABLE'|'ID_MAPPING_TABLE',
+     *     type: 'TABLE',
      *     creatorAccountId: string,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     collaborationId: string,
      *     collaborationArn: string,
-     *     analysisRuleTypes: list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'>,
-     *     analysisMethod?: 'DIRECT_QUERY'|'DIRECT_JOB'|'MULTIPLE'|null,
-     *     resourceArn?: string|null,
-     *     selectedAnalysisMethods?: list<'DIRECT_QUERY'|'DIRECT_JOB'>|null
+     *     analysisRuleTypes: list<'AGGREGATION'|'LIST'|'CUSTOM'>,
+     *     analysisMethod?: 'DIRECT_QUERY'|null
      * } $args
      */
     public function __construct(array $args)

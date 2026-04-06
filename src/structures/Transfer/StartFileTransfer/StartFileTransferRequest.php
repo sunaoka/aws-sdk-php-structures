@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $RetrieveFilePaths
  * @property string|null $LocalDirectoryPath
  * @property string|null $RemoteDirectoryPath
- * @property list<Shapes\CustomHttpHeader>|null $CustomHttpHeaders
  */
 class StartFileTransferRequest extends Request
 {
@@ -20,8 +19,7 @@ class StartFileTransferRequest extends Request
      *     SendFilePaths?: list<string>|null,
      *     RetrieveFilePaths?: list<string>|null,
      *     LocalDirectoryPath?: string|null,
-     *     RemoteDirectoryPath?: string|null,
-     *     CustomHttpHeaders?: list<Shapes\CustomHttpHeader>|null
+     *     RemoteDirectoryPath?: string|null
      * } $args
      */
     public function __construct(array $args)

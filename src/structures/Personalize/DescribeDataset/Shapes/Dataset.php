@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $creationDateTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  * @property DatasetUpdateSummary|null $latestDatasetUpdate
- * @property string|null $trackingId
  */
 class Dataset extends Shape
 {
@@ -28,8 +27,7 @@ class Dataset extends Shape
      *     status?: string|null,
      *     creationDateTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
-     *     latestDatasetUpdate?: DatasetUpdateSummary|null,
-     *     trackingId?: string|null
+     *     latestDatasetUpdate?: DatasetUpdateSummary|null
      * } $args
      */
     public function __construct(array $args = [])

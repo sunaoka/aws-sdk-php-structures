@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac'>|null $SupportedArchitectures
  * @property double|null $SustainedClockSpeedInGhz
- * @property list<'amd-sev-snp'|'nested-virtualization'>|null $SupportedFeatures
- * @property string|null $Manufacturer
+ * @property list<'amd-sev-snp'>|null $SupportedFeatures
  */
 class ProcessorInfo extends Shape
 {
@@ -16,8 +15,7 @@ class ProcessorInfo extends Shape
      * @param array{
      *     SupportedArchitectures?: list<'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac'>|null,
      *     SustainedClockSpeedInGhz?: double|null,
-     *     SupportedFeatures?: list<'amd-sev-snp'|'nested-virtualization'>|null,
-     *     Manufacturer?: string|null
+     *     SupportedFeatures?: list<'amd-sev-snp'>|null
      * } $args
      */
     public function __construct(array $args = [])

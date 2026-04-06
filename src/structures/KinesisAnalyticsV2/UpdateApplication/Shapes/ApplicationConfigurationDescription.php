@@ -11,10 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FlinkApplicationConfigurationDescription|null $FlinkApplicationConfigurationDescription
  * @property EnvironmentPropertyDescriptions|null $EnvironmentPropertyDescriptions
  * @property ApplicationSnapshotConfigurationDescription|null $ApplicationSnapshotConfigurationDescription
- * @property ApplicationSystemRollbackConfigurationDescription|null $ApplicationSystemRollbackConfigurationDescription
  * @property list<VpcConfigurationDescription>|null $VpcConfigurationDescriptions
  * @property ZeppelinApplicationConfigurationDescription|null $ZeppelinApplicationConfigurationDescription
- * @property ApplicationEncryptionConfigurationDescription|null $ApplicationEncryptionConfigurationDescription
  */
 class ApplicationConfigurationDescription extends Shape
 {
@@ -26,10 +24,8 @@ class ApplicationConfigurationDescription extends Shape
      *     FlinkApplicationConfigurationDescription?: FlinkApplicationConfigurationDescription|null,
      *     EnvironmentPropertyDescriptions?: EnvironmentPropertyDescriptions|null,
      *     ApplicationSnapshotConfigurationDescription?: ApplicationSnapshotConfigurationDescription|null,
-     *     ApplicationSystemRollbackConfigurationDescription?: ApplicationSystemRollbackConfigurationDescription|null,
      *     VpcConfigurationDescriptions?: list<VpcConfigurationDescription>|null,
-     *     ZeppelinApplicationConfigurationDescription?: ZeppelinApplicationConfigurationDescription|null,
-     *     ApplicationEncryptionConfigurationDescription?: ApplicationEncryptionConfigurationDescription|null
+     *     ZeppelinApplicationConfigurationDescription?: ZeppelinApplicationConfigurationDescription|null
      * } $args
      */
     public function __construct(array $args = [])

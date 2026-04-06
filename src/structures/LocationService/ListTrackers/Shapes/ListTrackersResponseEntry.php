@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\LocationService\ListTrackers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrackerName
+ * @property \Aws\Api\DateTimeResult $CreateTime
  * @property string $Description
  * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property string|null $PricingPlanDataSource
- * @property \Aws\Api\DateTimeResult $CreateTime
+ * @property string $TrackerName
  * @property \Aws\Api\DateTimeResult $UpdateTime
  */
 class ListTrackersResponseEntry extends Shape
 {
     /**
      * @param array{
-     *     TrackerName: string,
+     *     CreateTime: \Aws\Api\DateTimeResult,
      *     Description: string,
      *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
      *     PricingPlanDataSource?: string|null,
-     *     CreateTime: \Aws\Api\DateTimeResult,
+     *     TrackerName: string,
      *     UpdateTime: \Aws\Api\DateTimeResult
      * } $args
      */

@@ -8,8 +8,6 @@ class SwfClient extends \Aws\Swf\SwfClient
     use CountOpenWorkflowExecutions\CountOpenWorkflowExecutionsTrait;
     use CountPendingActivityTasks\CountPendingActivityTasksTrait;
     use CountPendingDecisionTasks\CountPendingDecisionTasksTrait;
-    use DeleteActivityType\DeleteActivityTypeTrait;
-    use DeleteWorkflowType\DeleteWorkflowTypeTrait;
     use DeprecateActivityType\DeprecateActivityTypeTrait;
     use DeprecateDomain\DeprecateDomainTrait;
     use DeprecateWorkflowType\DeprecateWorkflowTypeTrait;

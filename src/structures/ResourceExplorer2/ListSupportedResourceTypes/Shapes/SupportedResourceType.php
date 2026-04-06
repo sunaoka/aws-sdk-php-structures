@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\ListSupportedResourceTypes\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $Service
  * @property string|null $ResourceType
+ * @property string|null $Service
  */
 class SupportedResourceType extends Shape
 {
     /**
      * @param array{
-     *     Service?: string|null,
-     *     ResourceType?: string|null
+     *     ResourceType?: string|null,
+     *     Service?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $Name
  * @property string|null $Value
- * @property 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|null $Status
- * @property string|null $Arn
+ * @property 'APPROVED'|'REJECTED'|null $Status
  */
 class AttachmentReference extends Shape
 {
@@ -16,8 +15,7 @@ class AttachmentReference extends Shape
      * @param array{
      *     Name?: string|null,
      *     Value?: string|null,
-     *     Status?: 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|null,
-     *     Arn?: string|null
+     *     Status?: 'APPROVED'|'REJECTED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $bytesProcessed
  * @property int|null $bytesWritten
  * @property int|null $recordsProcessed
- * @property int|null $numParallelProcesses
- * @property int|null $maxPageSize
  */
 class ExecutionResult extends Shape
 {
@@ -19,9 +17,7 @@ class ExecutionResult extends Shape
      *     errorInfo?: ErrorInfo|null,
      *     bytesProcessed?: int|null,
      *     bytesWritten?: int|null,
-     *     recordsProcessed?: int|null,
-     *     numParallelProcesses?: int|null,
-     *     maxPageSize?: int|null
+     *     recordsProcessed?: int|null
      * } $args
      */
     public function __construct(array $args = [])

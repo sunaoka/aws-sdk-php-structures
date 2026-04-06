@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\CollectionFilters|null $collectionFilters
- * @property string|null $nextToken
  * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListCollectionsRequest extends Request
 {
     /**
      * @param array{
      *     collectionFilters?: Shapes\CollectionFilters|null,
-     *     nextToken?: string|null,
-     *     maxResults?: int<1, 100>|null
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

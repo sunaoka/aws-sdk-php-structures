@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Identifier
- * @property bool|null $IncludeTags
  */
 class GetSinkRequest extends Request
 {
     /**
-     * @param array{
-     *     Identifier: string,
-     *     IncludeTags?: bool|null
-     * } $args
+     * @param array{Identifier: string} $args
      */
     public function __construct(array $args)
     {

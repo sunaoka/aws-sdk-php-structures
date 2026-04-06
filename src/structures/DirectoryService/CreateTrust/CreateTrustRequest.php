@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'One-Way: Outgoing'|'One-Way: Incoming'|'Two-Way' $TrustDirection
  * @property 'Forest'|'External'|null $TrustType
  * @property list<string>|null $ConditionalForwarderIpAddrs
- * @property list<string>|null $ConditionalForwarderIpv6Addrs
  * @property 'Enabled'|'Disabled'|null $SelectiveAuth
  */
 class CreateTrustRequest extends Request
@@ -24,7 +23,6 @@ class CreateTrustRequest extends Request
      *     TrustDirection: 'One-Way: Outgoing'|'One-Way: Incoming'|'Two-Way',
      *     TrustType?: 'Forest'|'External'|null,
      *     ConditionalForwarderIpAddrs?: list<string>|null,
-     *     ConditionalForwarderIpv6Addrs?: list<string>|null,
      *     SelectiveAuth?: 'Enabled'|'Disabled'|null
      * } $args
      */

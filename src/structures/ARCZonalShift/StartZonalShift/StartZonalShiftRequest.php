@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ARCZonalShift\StartZonalShift;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $resourceIdentifier
  * @property string $awayFrom
- * @property string $expiresIn
  * @property string $comment
+ * @property string $expiresIn
+ * @property string $resourceIdentifier
  */
 class StartZonalShiftRequest extends Request
 {
     /**
      * @param array{
-     *     resourceIdentifier: string,
      *     awayFrom: string,
+     *     comment: string,
      *     expiresIn: string,
-     *     comment: string
+     *     resourceIdentifier: string
      * } $args
      */
     public function __construct(array $args)

@@ -10,8 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ValidationDomain
  * @property 'PENDING_VALIDATION'|'SUCCESS'|'FAILED'|null $ValidationStatus
  * @property ResourceRecord|null $ResourceRecord
- * @property HttpRedirect|null $HttpRedirect
- * @property 'EMAIL'|'DNS'|'HTTP'|null $ValidationMethod
+ * @property 'EMAIL'|'DNS'|null $ValidationMethod
  */
 class DomainValidation extends Shape
 {
@@ -22,8 +21,7 @@ class DomainValidation extends Shape
      *     ValidationDomain?: string|null,
      *     ValidationStatus?: 'PENDING_VALIDATION'|'SUCCESS'|'FAILED'|null,
      *     ResourceRecord?: ResourceRecord|null,
-     *     HttpRedirect?: HttpRedirect|null,
-     *     ValidationMethod?: 'EMAIL'|'DNS'|'HTTP'|null
+     *     ValidationMethod?: 'EMAIL'|'DNS'|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool|null $DryRun
- * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null $VpcEndpointType
+ * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|null $VpcEndpointType
  * @property string $VpcId
- * @property string|null $ServiceName
+ * @property string $ServiceName
  * @property string|null $PolicyDocument
  * @property list<string>|null $RouteTableIds
  * @property list<string>|null $SubnetIds
@@ -18,19 +18,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClientToken
  * @property bool|null $PrivateDnsEnabled
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
- * @property list<Shapes\SubnetConfiguration>|null $SubnetConfigurations
- * @property string|null $ServiceNetworkArn
- * @property string|null $ResourceConfigurationArn
- * @property string|null $ServiceRegion
  */
 class CreateVpcEndpointRequest extends Request
 {
     /**
      * @param array{
      *     DryRun?: bool|null,
-     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null,
+     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|null,
      *     VpcId: string,
-     *     ServiceName?: string|null,
+     *     ServiceName: string,
      *     PolicyDocument?: string|null,
      *     RouteTableIds?: list<string>|null,
      *     SubnetIds?: list<string>|null,
@@ -39,11 +35,7 @@ class CreateVpcEndpointRequest extends Request
      *     DnsOptions?: Shapes\DnsOptionsSpecification|null,
      *     ClientToken?: string|null,
      *     PrivateDnsEnabled?: bool|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     SubnetConfigurations?: list<Shapes\SubnetConfiguration>|null,
-     *     ServiceNetworkArn?: string|null,
-     *     ResourceConfigurationArn?: string|null,
-     *     ServiceRegion?: string|null
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MinimumEngineVersion
  * @property UserGroupPendingChanges|null $PendingChanges
  * @property list<string>|null $ReplicationGroups
- * @property list<string>|null $ServerlessCaches
  * @property string|null $ARN
  */
 class UserGroup extends Shape
@@ -26,7 +25,6 @@ class UserGroup extends Shape
      *     MinimumEngineVersion?: string|null,
      *     PendingChanges?: UserGroupPendingChanges|null,
      *     ReplicationGroups?: list<string>|null,
-     *     ServerlessCaches?: list<string>|null,
      *     ARN?: string|null
      * } $args
      */

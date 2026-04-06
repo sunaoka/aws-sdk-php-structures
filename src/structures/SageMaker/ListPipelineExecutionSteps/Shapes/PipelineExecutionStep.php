@@ -12,9 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property 'Starting'|'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|null $StepStatus
  * @property CacheHitResult|null $CacheHitResult
+ * @property int|null $AttemptCount
  * @property string|null $FailureReason
  * @property PipelineExecutionStepMetadata|null $Metadata
- * @property int|null $AttemptCount
  * @property SelectiveExecutionResult|null $SelectiveExecutionResult
  */
 class PipelineExecutionStep extends Shape
@@ -28,9 +28,9 @@ class PipelineExecutionStep extends Shape
      *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     StepStatus?: 'Starting'|'Executing'|'Stopping'|'Stopped'|'Failed'|'Succeeded'|null,
      *     CacheHitResult?: CacheHitResult|null,
+     *     AttemptCount?: int|null,
      *     FailureReason?: string|null,
      *     Metadata?: PipelineExecutionStepMetadata|null,
-     *     AttemptCount?: int|null,
      *     SelectiveExecutionResult?: SelectiveExecutionResult|null
      * } $args
      */

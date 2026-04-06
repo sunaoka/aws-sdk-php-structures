@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AggregationFunction|null $AggregationFunction
  * @property string|null $ParameterName
  * @property 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY' $NullOption
- * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class NumericEqualityFilter extends Shape
 {
@@ -26,8 +25,7 @@ class NumericEqualityFilter extends Shape
      *     MatchOperator: 'EQUALS'|'DOES_NOT_EQUAL',
      *     AggregationFunction?: AggregationFunction|null,
      *     ParameterName?: string|null,
-     *     NullOption: 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY',
-     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
+     *     NullOption: 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY'
      * } $args
      */
     public function __construct(array $args)

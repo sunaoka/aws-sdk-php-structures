@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $AllocationId
  * @property string|null $InstanceId
  * @property string|null $PublicIp
+ * @property bool|null $AllowReassociation
  * @property bool|null $DryRun
  * @property string|null $NetworkInterfaceId
  * @property string|null $PrivateIpAddress
- * @property bool|null $AllowReassociation
  */
 class AssociateAddressRequest extends Request
 {
@@ -20,10 +20,10 @@ class AssociateAddressRequest extends Request
      *     AllocationId?: string|null,
      *     InstanceId?: string|null,
      *     PublicIp?: string|null,
+     *     AllowReassociation?: bool|null,
      *     DryRun?: bool|null,
      *     NetworkInterfaceId?: string|null,
-     *     PrivateIpAddress?: string|null,
-     *     AllowReassociation?: bool|null
+     *     PrivateIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

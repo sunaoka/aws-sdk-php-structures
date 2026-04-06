@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InputDecryptionSettings|null $DecryptionSettings
  * @property 'ENABLED'|'DISABLED'|null $DenoiseFilter
  * @property string|null $DolbyVisionMetadataXml
- * @property array<string, DynamicAudioSelector>|null $DynamicAudioSelectors
  * @property string|null $FileInput
  * @property 'AUTO'|'DISABLE'|'FORCE'|null $FilterEnable
  * @property int<0, 5>|null $FilterStrength
@@ -26,11 +25,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, 2147483647>|null $ProgramNumber
  * @property 'IGNORE_PSI'|'USE_PSI'|null $PsiControl
  * @property list<string>|null $SupplementalImps
- * @property InputTamsSettings|null $TamsSettings
  * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null $TimecodeSource
  * @property string|null $TimecodeStart
  * @property InputVideoGenerator|null $VideoGenerator
- * @property list<VideoOverlay>|null $VideoOverlays
  * @property VideoSelector|null $VideoSelector
  */
 class Input extends Shape
@@ -47,7 +44,6 @@ class Input extends Shape
      *     DecryptionSettings?: InputDecryptionSettings|null,
      *     DenoiseFilter?: 'ENABLED'|'DISABLED'|null,
      *     DolbyVisionMetadataXml?: string|null,
-     *     DynamicAudioSelectors?: array<string, DynamicAudioSelector>|null,
      *     FileInput?: string|null,
      *     FilterEnable?: 'AUTO'|'DISABLE'|'FORCE'|null,
      *     FilterStrength?: int<0, 5>|null,
@@ -58,11 +54,9 @@ class Input extends Shape
      *     ProgramNumber?: int<1, 2147483647>|null,
      *     PsiControl?: 'IGNORE_PSI'|'USE_PSI'|null,
      *     SupplementalImps?: list<string>|null,
-     *     TamsSettings?: InputTamsSettings|null,
      *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART'|null,
      *     TimecodeStart?: string|null,
      *     VideoGenerator?: InputVideoGenerator|null,
-     *     VideoOverlays?: list<VideoOverlay>|null,
      *     VideoSelector?: VideoSelector|null
      * } $args
      */

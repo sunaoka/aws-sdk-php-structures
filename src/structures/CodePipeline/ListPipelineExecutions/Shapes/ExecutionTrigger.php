@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CodePipeline\ListPipelineExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CreatePipeline'|'StartPipelineExecution'|'PollForSourceChanges'|'Webhook'|'CloudWatchEvent'|'PutActionRevision'|'WebhookV2'|'ManualRollback'|'AutomatedRollback'|null $triggerType
+ * @property 'CreatePipeline'|'StartPipelineExecution'|'PollForSourceChanges'|'Webhook'|'CloudWatchEvent'|'PutActionRevision'|null $triggerType
  * @property string|null $triggerDetail
  */
 class ExecutionTrigger extends Shape
 {
     /**
      * @param array{
-     *     triggerType?: 'CreatePipeline'|'StartPipelineExecution'|'PollForSourceChanges'|'Webhook'|'CloudWatchEvent'|'PutActionRevision'|'WebhookV2'|'ManualRollback'|'AutomatedRollback'|null,
+     *     triggerType?: 'CreatePipeline'|'StartPipelineExecution'|'PollForSourceChanges'|'Webhook'|'CloudWatchEvent'|'PutActionRevision'|null,
      *     triggerDetail?: string|null
      * } $args
      */

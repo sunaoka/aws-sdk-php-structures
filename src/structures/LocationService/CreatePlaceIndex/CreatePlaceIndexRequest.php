@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\LocationService\CreatePlaceIndex;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $IndexName
  * @property string $DataSource
- * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
- * @property string|null $Description
  * @property Shapes\DataSourceConfiguration|null $DataSourceConfiguration
+ * @property string|null $Description
+ * @property string $IndexName
+ * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property array<string, string>|null $Tags
  */
 class CreatePlaceIndexRequest extends Request
 {
     /**
      * @param array{
-     *     IndexName: string,
      *     DataSource: string,
-     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
-     *     Description?: string|null,
      *     DataSourceConfiguration?: Shapes\DataSourceConfiguration|null,
+     *     Description?: string|null,
+     *     IndexName: string,
+     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

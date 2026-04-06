@@ -29,8 +29,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, string>|null $Attributes
  * @property string|null $PartyTypeString
  * @property string|null $GenderString
- * @property 'ACCOUNT_PROFILE'|'PROFILE'|null $ProfileType
- * @property Shapes\EngagementPreferences|null $EngagementPreferences
  */
 class CreateProfileRequest extends Request
 {
@@ -59,9 +57,7 @@ class CreateProfileRequest extends Request
      *     BillingAddress?: Shapes\Address|null,
      *     Attributes?: array<string, string>|null,
      *     PartyTypeString?: string|null,
-     *     GenderString?: string|null,
-     *     ProfileType?: 'ACCOUNT_PROFILE'|'PROFILE'|null,
-     *     EngagementPreferences?: Shapes\EngagementPreferences|null
+     *     GenderString?: string|null
      * } $args
      */
     public function __construct(array $args)

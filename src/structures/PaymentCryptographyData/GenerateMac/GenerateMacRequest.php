@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\GenerateMac;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $KeyIdentifier
- * @property string $MessageData
  * @property Shapes\MacAttributes $GenerationAttributes
+ * @property string $KeyIdentifier
  * @property int<4, 16>|null $MacLength
+ * @property string $MessageData
  */
 class GenerateMacRequest extends Request
 {
     /**
      * @param array{
-     *     KeyIdentifier: string,
-     *     MessageData: string,
      *     GenerationAttributes: Shapes\MacAttributes,
-     *     MacLength?: int<4, 16>|null
+     *     KeyIdentifier: string,
+     *     MacLength?: int<4, 16>|null,
+     *     MessageData: string
      * } $args
      */
     public function __construct(array $args)

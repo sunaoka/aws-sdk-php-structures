@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ComboChartConfiguration|null $ChartConfiguration
  * @property list<VisualCustomAction>|null $Actions
  * @property list<ColumnHierarchy>|null $ColumnHierarchies
- * @property string|null $VisualContentAltText
  */
 class ComboChartVisual extends Shape
 {
@@ -22,8 +21,7 @@ class ComboChartVisual extends Shape
      *     Subtitle?: VisualSubtitleLabelOptions|null,
      *     ChartConfiguration?: ComboChartConfiguration|null,
      *     Actions?: list<VisualCustomAction>|null,
-     *     ColumnHierarchies?: list<ColumnHierarchy>|null,
-     *     VisualContentAltText?: string|null
+     *     ColumnHierarchies?: list<ColumnHierarchy>|null
      * } $args
      */
     public function __construct(array $args)

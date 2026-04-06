@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ClusterEndpoint>|null $ClusterEndpoints
  * @property string|null $Name
  * @property 'PENDING'|'DEPLOYED'|'PENDING_DELETION'|null $Status
- * @property string|null $Owner
- * @property 'IPV4'|'DUALSTACK'|null $NetworkType
  */
 class Cluster extends Shape
 {
@@ -19,9 +17,7 @@ class Cluster extends Shape
      *     ClusterArn?: string|null,
      *     ClusterEndpoints?: list<ClusterEndpoint>|null,
      *     Name?: string|null,
-     *     Status?: 'PENDING'|'DEPLOYED'|'PENDING_DELETION'|null,
-     *     Owner?: string|null,
-     *     NetworkType?: 'IPV4'|'DUALSTACK'|null
+     *     Status?: 'PENDING'|'DEPLOYED'|'PENDING_DELETION'|null
      * } $args
      */
     public function __construct(array $args = [])

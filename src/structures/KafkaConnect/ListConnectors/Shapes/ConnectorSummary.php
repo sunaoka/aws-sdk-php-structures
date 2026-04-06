@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property KafkaClusterEncryptionInTransitDescription|null $kafkaClusterEncryptionInTransit
  * @property string|null $kafkaConnectVersion
  * @property LogDeliveryDescription|null $logDelivery
- * @property 'IPV4'|'DUAL'|null $networkType
  * @property list<PluginDescription>|null $plugins
  * @property string|null $serviceExecutionRoleArn
  * @property WorkerConfigurationDescription|null $workerConfiguration
@@ -38,7 +37,6 @@ class ConnectorSummary extends Shape
      *     kafkaClusterEncryptionInTransit?: KafkaClusterEncryptionInTransitDescription|null,
      *     kafkaConnectVersion?: string|null,
      *     logDelivery?: LogDeliveryDescription|null,
-     *     networkType?: 'IPV4'|'DUAL'|null,
      *     plugins?: list<PluginDescription>|null,
      *     serviceExecutionRoleArn?: string|null,
      *     workerConfiguration?: WorkerConfigurationDescription|null

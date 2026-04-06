@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $Name
  * @property string|null $Id
- * @property 'DEVELOPER_EDITION'|'ENTERPRISE_EDITION'|'GEN_AI_ENTERPRISE_EDITION'|null $Edition
+ * @property 'DEVELOPER_EDITION'|'ENTERPRISE_EDITION'|null $Edition
  * @property string|null $RoleArn
  * @property Shapes\ServerSideEncryptionConfiguration|null $ServerSideEncryptionConfiguration
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|'SYSTEM_UPDATING'|null $Status

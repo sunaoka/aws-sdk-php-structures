@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'Email'|'SMS'>|null $contactProtocols
  * @property list<'OK'|'ALARM'|'INSUFFICIENT_DATA'>|null $notificationTriggers
  * @property bool|null $notificationEnabled
- * @property list<Shapes\Tag>|null $tags
  */
 class PutAlarmRequest extends Request
 {
@@ -32,8 +31,7 @@ class PutAlarmRequest extends Request
      *     treatMissingData?: 'breaching'|'notBreaching'|'ignore'|'missing'|null,
      *     contactProtocols?: list<'Email'|'SMS'>|null,
      *     notificationTriggers?: list<'OK'|'ALARM'|'INSUFFICIENT_DATA'>|null,
-     *     notificationEnabled?: bool|null,
-     *     tags?: list<Shapes\Tag>|null
+     *     notificationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -27,7 +27,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OnPremisesTagSet|null $onPremisesTagSet
  * @property 'Server'|'Lambda'|'ECS'|null $computePlatform
  * @property list<ECSService>|null $ecsServices
- * @property bool|null $terminationHookEnabled
  */
 class DeploymentGroupInfo extends Shape
 {
@@ -54,8 +53,7 @@ class DeploymentGroupInfo extends Shape
      *     ec2TagSet?: EC2TagSet|null,
      *     onPremisesTagSet?: OnPremisesTagSet|null,
      *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
-     *     ecsServices?: list<ECSService>|null,
-     *     terminationHookEnabled?: bool|null
+     *     ecsServices?: list<ECSService>|null
      * } $args
      */
     public function __construct(array $args = [])

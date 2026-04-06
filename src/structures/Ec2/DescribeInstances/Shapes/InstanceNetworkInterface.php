@@ -23,8 +23,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $InterfaceType
  * @property list<InstanceIpv4Prefix>|null $Ipv4Prefixes
  * @property list<InstanceIpv6Prefix>|null $Ipv6Prefixes
- * @property ConnectionTrackingSpecificationResponse|null $ConnectionTrackingConfiguration
- * @property OperatorResponse|null $Operator
  */
 class InstanceNetworkInterface extends Shape
 {
@@ -47,9 +45,7 @@ class InstanceNetworkInterface extends Shape
      *     VpcId?: string|null,
      *     InterfaceType?: string|null,
      *     Ipv4Prefixes?: list<InstanceIpv4Prefix>|null,
-     *     Ipv6Prefixes?: list<InstanceIpv6Prefix>|null,
-     *     ConnectionTrackingConfiguration?: ConnectionTrackingSpecificationResponse|null,
-     *     Operator?: OperatorResponse|null
+     *     Ipv6Prefixes?: list<InstanceIpv6Prefix>|null
      * } $args
      */
     public function __construct(array $args = [])

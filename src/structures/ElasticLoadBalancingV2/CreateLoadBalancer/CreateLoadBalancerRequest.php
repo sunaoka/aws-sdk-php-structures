@@ -12,10 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'internet-facing'|'internal'|null $Scheme
  * @property list<Shapes\Tag>|null $Tags
  * @property 'application'|'network'|'gateway'|null $Type
- * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
+ * @property 'ipv4'|'dualstack'|null $IpAddressType
  * @property string|null $CustomerOwnedIpv4Pool
- * @property 'on'|'off'|null $EnablePrefixForIpv6SourceNat
- * @property Shapes\IpamPools|null $IpamPools
  */
 class CreateLoadBalancerRequest extends Request
 {
@@ -28,10 +26,8 @@ class CreateLoadBalancerRequest extends Request
      *     Scheme?: 'internet-facing'|'internal'|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     Type?: 'application'|'network'|'gateway'|null,
-     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null,
-     *     CustomerOwnedIpv4Pool?: string|null,
-     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'|null,
-     *     IpamPools?: Shapes\IpamPools|null
+     *     IpAddressType?: 'ipv4'|'dualstack'|null,
+     *     CustomerOwnedIpv4Pool?: string|null
      * } $args
      */
     public function __construct(array $args)

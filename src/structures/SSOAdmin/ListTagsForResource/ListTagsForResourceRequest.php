@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListTagsForResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $InstanceArn
+ * @property string $InstanceArn
  * @property string $ResourceArn
  * @property string|null $NextToken
  */
@@ -13,7 +13,7 @@ class ListTagsForResourceRequest extends Request
 {
     /**
      * @param array{
-     *     InstanceArn?: string|null,
+     *     InstanceArn: string,
      *     ResourceArn: string,
      *     NextToken?: string|null
      * } $args

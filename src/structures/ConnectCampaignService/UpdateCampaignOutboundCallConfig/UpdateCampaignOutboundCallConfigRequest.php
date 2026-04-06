@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\UpdateCampaignOutboundCa
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
+ * @property Shapes\AnswerMachineDetectionConfig|null $answerMachineDetectionConfig
  * @property string|null $connectContactFlowId
  * @property string|null $connectSourcePhoneNumber
- * @property Shapes\AnswerMachineDetectionConfig|null $answerMachineDetectionConfig
+ * @property string $id
  */
 class UpdateCampaignOutboundCallConfigRequest extends Request
 {
     /**
      * @param array{
-     *     id: string,
+     *     answerMachineDetectionConfig?: Shapes\AnswerMachineDetectionConfig|null,
      *     connectContactFlowId?: string|null,
      *     connectSourcePhoneNumber?: string|null,
-     *     answerMachineDetectionConfig?: Shapes\AnswerMachineDetectionConfig|null
+     *     id: string
      * } $args
      */
     public function __construct(array $args)

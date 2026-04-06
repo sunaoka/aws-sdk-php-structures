@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  * @property string|null $CreatedBy
- * @property AggregatorFilters|null $AggregatorFilters
  */
 class ConfigurationAggregator extends Shape
 {
@@ -24,8 +23,7 @@ class ConfigurationAggregator extends Shape
      *     OrganizationAggregationSource?: OrganizationAggregationSource|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
-     *     CreatedBy?: string|null,
-     *     AggregatorFilters?: AggregatorFilters|null
+     *     CreatedBy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3DestinationUpdate|null $S3Update
  * @property ProcessingConfiguration|null $ProcessingConfiguration
  * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
- * @property DocumentIdOptions|null $DocumentIdOptions
  */
 class AmazonopensearchserviceDestinationUpdate extends Shape
 {
@@ -32,8 +31,7 @@ class AmazonopensearchserviceDestinationUpdate extends Shape
      *     RetryOptions?: AmazonopensearchserviceRetryOptions|null,
      *     S3Update?: S3DestinationUpdate|null,
      *     ProcessingConfiguration?: ProcessingConfiguration|null,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
-     *     DocumentIdOptions?: DocumentIdOptions|null
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null
      * } $args
      */
     public function __construct(array $args = [])

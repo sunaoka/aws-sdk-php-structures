@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterName
- * @property string|null $MultiRegionClusterName
  * @property string|null $FinalSnapshotName
  */
 class DeleteClusterRequest extends Request
@@ -14,7 +13,6 @@ class DeleteClusterRequest extends Request
     /**
      * @param array{
      *     ClusterName: string,
-     *     MultiRegionClusterName?: string|null,
      *     FinalSnapshotName?: string|null
      * } $args
      */

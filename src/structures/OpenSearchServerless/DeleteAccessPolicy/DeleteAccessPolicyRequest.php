@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\DeleteAccessPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'data' $type
- * @property string $name
  * @property string|null $clientToken
+ * @property string $name
+ * @property 'data' $type
  */
 class DeleteAccessPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     type: 'data',
+     *     clientToken?: string|null,
      *     name: string,
-     *     clientToken?: string|null
+     *     type: 'data'
      * } $args
      */
     public function __construct(array $args)

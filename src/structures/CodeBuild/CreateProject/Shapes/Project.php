@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProjectCache|null $cache
  * @property ProjectEnvironment|null $environment
  * @property string|null $serviceRole
- * @property int<5, 2160>|null $timeoutInMinutes
+ * @property int<5, 480>|null $timeoutInMinutes
  * @property int<5, 480>|null $queuedTimeoutInMinutes
  * @property string|null $encryptionKey
  * @property list<Tag>|null $tags
@@ -33,7 +33,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PUBLIC_READ'|'PRIVATE'|null $projectVisibility
  * @property string|null $publicProjectAlias
  * @property string|null $resourceAccessRole
- * @property int|null $autoRetryLimit
  */
 class Project extends Shape
 {
@@ -51,7 +50,7 @@ class Project extends Shape
      *     cache?: ProjectCache|null,
      *     environment?: ProjectEnvironment|null,
      *     serviceRole?: string|null,
-     *     timeoutInMinutes?: int<5, 2160>|null,
+     *     timeoutInMinutes?: int<5, 480>|null,
      *     queuedTimeoutInMinutes?: int<5, 480>|null,
      *     encryptionKey?: string|null,
      *     tags?: list<Tag>|null,
@@ -66,8 +65,7 @@ class Project extends Shape
      *     concurrentBuildLimit?: int|null,
      *     projectVisibility?: 'PUBLIC_READ'|'PRIVATE'|null,
      *     publicProjectAlias?: string|null,
-     *     resourceAccessRole?: string|null,
-     *     autoRetryLimit?: int|null
+     *     resourceAccessRole?: string|null
      * } $args
      */
     public function __construct(array $args = [])

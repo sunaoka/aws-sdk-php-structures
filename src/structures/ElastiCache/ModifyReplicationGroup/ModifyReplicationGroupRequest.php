@@ -19,7 +19,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CacheParameterGroupName
  * @property string|null $NotificationTopicStatus
  * @property bool|null $ApplyImmediately
- * @property string|null $Engine
  * @property string|null $EngineVersion
  * @property bool|null $AutoMinorVersionUpgrade
  * @property int|null $SnapshotRetentionLimit
@@ -54,7 +53,6 @@ class ModifyReplicationGroupRequest extends Request
      *     CacheParameterGroupName?: string|null,
      *     NotificationTopicStatus?: string|null,
      *     ApplyImmediately?: bool|null,
-     *     Engine?: string|null,
      *     EngineVersion?: string|null,
      *     AutoMinorVersionUpgrade?: bool|null,
      *     SnapshotRetentionLimit?: int|null,

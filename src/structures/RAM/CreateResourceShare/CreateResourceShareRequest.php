@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $clientToken
  * @property list<string>|null $permissionArns
  * @property list<string>|null $sources
- * @property Shapes\ResourceShareConfiguration|null $resourceShareConfiguration
  */
 class CreateResourceShareRequest extends Request
 {
@@ -26,8 +25,7 @@ class CreateResourceShareRequest extends Request
      *     allowExternalPrincipals?: bool|null,
      *     clientToken?: string|null,
      *     permissionArns?: list<string>|null,
-     *     sources?: list<string>|null,
-     *     resourceShareConfiguration?: Shapes\ResourceShareConfiguration|null
+     *     sources?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

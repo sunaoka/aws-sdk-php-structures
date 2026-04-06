@@ -25,11 +25,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AddressFamily
  * @property int|null $IanaProtocolNumber
  * @property list<string>|null $MemoryRegions
- * @property string|null $ToolName
- * @property string|null $ToolCategory
- * @property string|null $ServiceName
- * @property string|null $CommandLineExample
- * @property string|null $ThreatFilePath
  */
 class RuntimeContext extends Shape
 {
@@ -54,12 +49,7 @@ class RuntimeContext extends Shape
      *     TargetProcess?: ProcessDetails|null,
      *     AddressFamily?: string|null,
      *     IanaProtocolNumber?: int|null,
-     *     MemoryRegions?: list<string>|null,
-     *     ToolName?: string|null,
-     *     ToolCategory?: string|null,
-     *     ServiceName?: string|null,
-     *     CommandLineExample?: string|null,
-     *     ThreatFilePath?: string|null
+     *     MemoryRegions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domain
  * @property string|null $domainOwner
  * @property string $repository
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic' $format
  * @property string|null $namespace
  * @property string $package
  * @property list<string> $versions
@@ -21,7 +21,7 @@ class DeletePackageVersionsRequest extends Request
      *     domain: string,
      *     domainOwner?: string|null,
      *     repository: string,
-     *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
+     *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic',
      *     namespace?: string|null,
      *     package: string,
      *     versions: list<string>,

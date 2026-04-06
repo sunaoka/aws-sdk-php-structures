@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListBrowserSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $browserSettingsArn
+ * @property string|null $browserSettingsArn
  */
 class BrowserSettingsSummary extends Shape
 {
     /**
-     * @param array{browserSettingsArn: string} $args
+     * @param array{browserSettingsArn?: string|null} $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

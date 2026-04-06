@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Outposts\UpdateSiteAddress\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContactName
- * @property string $ContactPhoneNumber
+ * @property string|null $ContactName
+ * @property string|null $ContactPhoneNumber
  * @property string $AddressLine1
  * @property string|null $AddressLine2
  * @property string|null $AddressLine3
@@ -21,8 +21,8 @@ class Address extends Shape
 {
     /**
      * @param array{
-     *     ContactName: string,
-     *     ContactPhoneNumber: string,
+     *     ContactName?: string|null,
+     *     ContactPhoneNumber?: string|null,
      *     AddressLine1: string,
      *     AddressLine2?: string|null,
      *     AddressLine3?: string|null,

@@ -5,33 +5,29 @@ namespace Sunaoka\Aws\Structures\Braket\CreateQuantumTask;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string $action
  * @property string $clientToken
  * @property string $deviceArn
  * @property string|null $deviceParameters
- * @property int<0, max> $shots
+ * @property string|null $jobToken
  * @property string $outputS3Bucket
  * @property string $outputS3KeyPrefix
- * @property string $action
+ * @property int<0, max> $shots
  * @property array<string, string>|null $tags
- * @property string|null $jobToken
- * @property list<Shapes\Association>|null $associations
- * @property Shapes\ExperimentalCapabilities|null $experimentalCapabilities
  */
 class CreateQuantumTaskRequest extends Request
 {
     /**
      * @param array{
+     *     action: string,
      *     clientToken: string,
      *     deviceArn: string,
      *     deviceParameters?: string|null,
-     *     shots: int<0, max>,
+     *     jobToken?: string|null,
      *     outputS3Bucket: string,
      *     outputS3KeyPrefix: string,
-     *     action: string,
-     *     tags?: array<string, string>|null,
-     *     jobToken?: string|null,
-     *     associations?: list<Shapes\Association>|null,
-     *     experimentalCapabilities?: Shapes\ExperimentalCapabilities|null
+     *     shots: int<0, max>,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

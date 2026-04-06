@@ -15,18 +15,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $MinLatency
  * @property string $OutputArn
  * @property int|null $Port
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null $Protocol
  * @property string|null $RemoteId
  * @property int|null $SenderControlPort
  * @property string|null $SenderIpAddress
  * @property int|null $SmoothingLatency
  * @property string|null $StreamId
  * @property Shapes\VpcInterfaceAttachment|null $VpcInterfaceAttachment
- * @property 'ENABLED'|'DISABLED'|null $OutputStatus
- * @property string|null $NdiProgramName
- * @property int|null $NdiSpeedHqQuality
- * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
- * @property Shapes\FlowTransitEncryption|null $RouterIntegrationTransitEncryption
  */
 class UpdateFlowOutputRequest extends Request
 {
@@ -42,18 +37,13 @@ class UpdateFlowOutputRequest extends Request
      *     MinLatency?: int|null,
      *     OutputArn: string,
      *     Port?: int|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null,
      *     RemoteId?: string|null,
      *     SenderControlPort?: int|null,
      *     SenderIpAddress?: string|null,
      *     SmoothingLatency?: int|null,
      *     StreamId?: string|null,
-     *     VpcInterfaceAttachment?: Shapes\VpcInterfaceAttachment|null,
-     *     OutputStatus?: 'ENABLED'|'DISABLED'|null,
-     *     NdiProgramName?: string|null,
-     *     NdiSpeedHqQuality?: int|null,
-     *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
-     *     RouterIntegrationTransitEncryption?: Shapes\FlowTransitEncryption|null
+     *     VpcInterfaceAttachment?: Shapes\VpcInterfaceAttachment|null
      * } $args
      */
     public function __construct(array $args)

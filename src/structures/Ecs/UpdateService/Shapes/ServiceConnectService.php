@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $discoveryName
  * @property list<ServiceConnectClientAlias>|null $clientAliases
  * @property int<0, 65535>|null $ingressPortOverride
- * @property TimeoutConfiguration|null $timeout
- * @property ServiceConnectTlsConfiguration|null $tls
  */
 class ServiceConnectService extends Shape
 {
@@ -19,9 +17,7 @@ class ServiceConnectService extends Shape
      *     portName: string,
      *     discoveryName?: string|null,
      *     clientAliases?: list<ServiceConnectClientAlias>|null,
-     *     ingressPortOverride?: int<0, 65535>|null,
-     *     timeout?: TimeoutConfiguration|null,
-     *     tls?: ServiceConnectTlsConfiguration|null
+     *     ingressPortOverride?: int<0, 65535>|null
      * } $args
      */
     public function __construct(array $args)

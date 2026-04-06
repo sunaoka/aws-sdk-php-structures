@@ -23,7 +23,6 @@ class ChimeSDKVoiceClient extends \Aws\ChimeSDKVoice\ChimeSDKVoiceClient
     use DeleteSipRule\DeleteSipRuleTrait;
     use DeleteVoiceConnector\DeleteVoiceConnectorTrait;
     use DeleteVoiceConnectorEmergencyCallingConfiguration\DeleteVoiceConnectorEmergencyCallingConfigurationTrait;
-    use DeleteVoiceConnectorExternalSystemsConfiguration\DeleteVoiceConnectorExternalSystemsConfigurationTrait;
     use DeleteVoiceConnectorGroup\DeleteVoiceConnectorGroupTrait;
     use DeleteVoiceConnectorOrigination\DeleteVoiceConnectorOriginationTrait;
     use DeleteVoiceConnectorProxy\DeleteVoiceConnectorProxyTrait;
@@ -46,7 +45,6 @@ class ChimeSDKVoiceClient extends \Aws\ChimeSDKVoice\ChimeSDKVoiceClient
     use GetSpeakerSearchTask\GetSpeakerSearchTaskTrait;
     use GetVoiceConnector\GetVoiceConnectorTrait;
     use GetVoiceConnectorEmergencyCallingConfiguration\GetVoiceConnectorEmergencyCallingConfigurationTrait;
-    use GetVoiceConnectorExternalSystemsConfiguration\GetVoiceConnectorExternalSystemsConfigurationTrait;
     use GetVoiceConnectorGroup\GetVoiceConnectorGroupTrait;
     use GetVoiceConnectorLoggingConfiguration\GetVoiceConnectorLoggingConfigurationTrait;
     use GetVoiceConnectorOrigination\GetVoiceConnectorOriginationTrait;
@@ -73,7 +71,6 @@ class ChimeSDKVoiceClient extends \Aws\ChimeSDKVoice\ChimeSDKVoiceClient
     use PutSipMediaApplicationAlexaSkillConfiguration\PutSipMediaApplicationAlexaSkillConfigurationTrait;
     use PutSipMediaApplicationLoggingConfiguration\PutSipMediaApplicationLoggingConfigurationTrait;
     use PutVoiceConnectorEmergencyCallingConfiguration\PutVoiceConnectorEmergencyCallingConfigurationTrait;
-    use PutVoiceConnectorExternalSystemsConfiguration\PutVoiceConnectorExternalSystemsConfigurationTrait;
     use PutVoiceConnectorLoggingConfiguration\PutVoiceConnectorLoggingConfigurationTrait;
     use PutVoiceConnectorOrigination\PutVoiceConnectorOriginationTrait;
     use PutVoiceConnectorProxy\PutVoiceConnectorProxyTrait;

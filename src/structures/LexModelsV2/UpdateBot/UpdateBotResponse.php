@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  * @property 'Bot'|'BotNetwork'|null $botType
  * @property list<Shapes\BotMember>|null $botMembers
- * @property Shapes\ErrorLogSettings|null $errorLogSettings
  */
 class UpdateBotResponse extends Response
 {

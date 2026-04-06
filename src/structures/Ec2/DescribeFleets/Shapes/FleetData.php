@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $ReplaceUnhealthyInstances
  * @property SpotOptions|null $SpotOptions
  * @property OnDemandOptions|null $OnDemandOptions
- * @property ReservedCapacityOptions|null $ReservedCapacityOptions
  * @property list<Tag>|null $Tags
  * @property list<DescribeFleetError>|null $Errors
  * @property list<DescribeFleetsInstances>|null $Instances
@@ -49,7 +48,6 @@ class FleetData extends Shape
      *     ReplaceUnhealthyInstances?: bool|null,
      *     SpotOptions?: SpotOptions|null,
      *     OnDemandOptions?: OnDemandOptions|null,
-     *     ReservedCapacityOptions?: ReservedCapacityOptions|null,
      *     Tags?: list<Tag>|null,
      *     Errors?: list<DescribeFleetError>|null,
      *     Instances?: list<DescribeFleetsInstances>|null,

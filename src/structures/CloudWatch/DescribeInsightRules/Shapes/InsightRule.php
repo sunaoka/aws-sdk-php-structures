@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Schema
  * @property string $Definition
  * @property bool|null $ManagedRule
- * @property bool|null $ApplyOnTransformedLogs
  */
 class InsightRule extends Shape
 {
@@ -20,8 +19,7 @@ class InsightRule extends Shape
      *     State: string,
      *     Schema: string,
      *     Definition: string,
-     *     ManagedRule?: bool|null,
-     *     ApplyOnTransformedLogs?: bool|null
+     *     ManagedRule?: bool|null
      * } $args
      */
     public function __construct(array $args)

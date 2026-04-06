@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ClusterType
  * @property string $NodeType
  * @property string $MasterUsername
- * @property string|null $MasterUserPassword
+ * @property string $MasterUserPassword
  * @property list<string>|null $ClusterSecurityGroups
  * @property list<string>|null $VpcSecurityGroupIds
  * @property string|null $ClusterSubnetGroupName
@@ -39,13 +39,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'enabled'|'disabled'|'auto'|null $AquaConfigurationStatus
  * @property string|null $DefaultIamRoleArn
  * @property string|null $LoadSampleData
- * @property bool|null $ManageMasterPassword
- * @property string|null $MasterPasswordSecretKmsKeyId
- * @property string|null $IpAddressType
- * @property bool|null $MultiAZ
- * @property string|null $RedshiftIdcApplicationArn
- * @property string|null $CatalogName
- * @property bool|null $ExtraComputeForAutomaticOptimization
  */
 class CreateClusterRequest extends Request
 {
@@ -56,7 +49,7 @@ class CreateClusterRequest extends Request
      *     ClusterType?: string|null,
      *     NodeType: string,
      *     MasterUsername: string,
-     *     MasterUserPassword?: string|null,
+     *     MasterUserPassword: string,
      *     ClusterSecurityGroups?: list<string>|null,
      *     VpcSecurityGroupIds?: list<string>|null,
      *     ClusterSubnetGroupName?: string|null,
@@ -84,14 +77,7 @@ class CreateClusterRequest extends Request
      *     AvailabilityZoneRelocation?: bool|null,
      *     AquaConfigurationStatus?: 'enabled'|'disabled'|'auto'|null,
      *     DefaultIamRoleArn?: string|null,
-     *     LoadSampleData?: string|null,
-     *     ManageMasterPassword?: bool|null,
-     *     MasterPasswordSecretKmsKeyId?: string|null,
-     *     IpAddressType?: string|null,
-     *     MultiAZ?: bool|null,
-     *     RedshiftIdcApplicationArn?: string|null,
-     *     CatalogName?: string|null,
-     *     ExtraComputeForAutomaticOptimization?: bool|null
+     *     LoadSampleData?: string|null
      * } $args
      */
     public function __construct(array $args)

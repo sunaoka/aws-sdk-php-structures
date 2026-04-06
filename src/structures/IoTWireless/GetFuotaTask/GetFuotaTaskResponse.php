@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property int<0, 100>|null $RedundancyPercent
  * @property int<1, max>|null $FragmentSizeBytes
  * @property int<1, max>|null $FragmentIntervalMS
- * @property string|null $Descriptor
  */
 class GetFuotaTaskResponse extends Response
 {

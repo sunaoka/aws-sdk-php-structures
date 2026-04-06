@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property LaunchTemplateAndOverridesResponse|null $LaunchTemplateAndOverrides
- * @property 'spot'|'on-demand'|'interruptible-capacity-reservation'|null $Lifecycle
+ * @property 'spot'|'on-demand'|null $Lifecycle
  * @property string|null $ErrorCode
  * @property string|null $ErrorMessage
  */
@@ -15,7 +15,7 @@ class CreateFleetError extends Shape
     /**
      * @param array{
      *     LaunchTemplateAndOverrides?: LaunchTemplateAndOverridesResponse|null,
-     *     Lifecycle?: 'spot'|'on-demand'|'interruptible-capacity-reservation'|null,
+     *     Lifecycle?: 'spot'|'on-demand'|null,
      *     ErrorCode?: string|null,
      *     ErrorMessage?: string|null
      * } $args

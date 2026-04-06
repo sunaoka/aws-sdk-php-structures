@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientToken
  * @property Shapes\NFSFileShareDefaults|null $NFSFileShareDefaults
  * @property string $GatewayARN
- * @property 'SseS3'|'SseKms'|'DsseKms'|null $EncryptionType
  * @property bool|null $KMSEncrypted
  * @property string|null $KMSKey
  * @property string $Role
@@ -35,7 +34,6 @@ class CreateNFSFileShareRequest extends Request
      *     ClientToken: string,
      *     NFSFileShareDefaults?: Shapes\NFSFileShareDefaults|null,
      *     GatewayARN: string,
-     *     EncryptionType?: 'SseS3'|'SseKms'|'DsseKms'|null,
      *     KMSEncrypted?: bool|null,
      *     KMSKey?: string|null,
      *     Role: string,

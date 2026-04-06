@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CatalogName
  * @property string $DatabaseName
- * @property string|null $WorkGroup
  */
 class GetDatabaseRequest extends Request
 {
     /**
      * @param array{
      *     CatalogName: string,
-     *     DatabaseName: string,
-     *     WorkGroup?: string|null
+     *     DatabaseName: string
      * } $args
      */
     public function __construct(array $args)

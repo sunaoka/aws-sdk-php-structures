@@ -16,8 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property RemixSettings|null $RemixSettings
  * @property string|null $StreamName
- * @property list<'ALTERNATE'|'COMMENTARY'|'DESCRIPTION'|'DUB'|'EMERGENCY'|'ENHANCED-AUDIO-INTELLIGIBILITY'|'KARAOKE'|'MAIN'|'SUPPLEMENTARY'>|null $AudioDashRoles
- * @property 'DVBDASH_1_VISUALLY_IMPAIRED'|'DVBDASH_2_HARD_OF_HEARING'|'DVBDASH_3_SUPPLEMENTAL_COMMENTARY'|'DVBDASH_4_DIRECTORS_COMMENTARY'|'DVBDASH_5_EDUCATIONAL_NOTES'|'DVBDASH_6_MAIN_PROGRAM'|'DVBDASH_7_CLEAN_FEED'|null $DvbDashAccessibility
  */
 class AudioDescription extends Shape
 {
@@ -33,9 +31,7 @@ class AudioDescription extends Shape
      *     LanguageCodeControl?: 'FOLLOW_INPUT'|'USE_CONFIGURED'|null,
      *     Name: string,
      *     RemixSettings?: RemixSettings|null,
-     *     StreamName?: string|null,
-     *     AudioDashRoles?: list<'ALTERNATE'|'COMMENTARY'|'DESCRIPTION'|'DUB'|'EMERGENCY'|'ENHANCED-AUDIO-INTELLIGIBILITY'|'KARAOKE'|'MAIN'|'SUPPLEMENTARY'>|null,
-     *     DvbDashAccessibility?: 'DVBDASH_1_VISUALLY_IMPAIRED'|'DVBDASH_2_HARD_OF_HEARING'|'DVBDASH_3_SUPPLEMENTAL_COMMENTARY'|'DVBDASH_4_DIRECTORS_COMMENTARY'|'DVBDASH_5_EDUCATIONAL_NOTES'|'DVBDASH_6_MAIN_PROGRAM'|'DVBDASH_7_CLEAN_FEED'|null
+     *     StreamName?: string|null
      * } $args
      */
     public function __construct(array $args)

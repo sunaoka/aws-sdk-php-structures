@@ -12,15 +12,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $ContentEncoding
  * @property string|null $ContentLanguage
  * @property string|null $ContentType
- * @property string|null $Expires
+ * @property \Aws\Api\DateTimeResult|null $Expires
  * @property string|null $GrantFullControl
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
  * @property string|null $GrantWriteACP
  * @property string $Key
  * @property array<string, string>|null $Metadata
- * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null $StorageClass
+ * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|null $StorageClass
  * @property string|null $WebsiteRedirectLocation
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSECustomerKey
@@ -34,8 +34,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
  * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
  * @property string|null $ExpectedBucketOwner
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
- * @property 'COMPOSITE'|'FULL_OBJECT'|null $ChecksumType
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  */
 class CreateMultipartUploadRequest extends Request
 {
@@ -48,15 +47,15 @@ class CreateMultipartUploadRequest extends Request
      *     ContentEncoding?: string|null,
      *     ContentLanguage?: string|null,
      *     ContentType?: string|null,
-     *     Expires?: string|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
      *     GrantFullControl?: string|null,
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,
      *     GrantWriteACP?: string|null,
      *     Key: string,
      *     Metadata?: array<string, string>|null,
-     *     ServerSideEncryption?: 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|null,
      *     WebsiteRedirectLocation?: string|null,
      *     SSECustomerAlgorithm?: string|null,
      *     SSECustomerKey?: string|null,
@@ -70,8 +69,7 @@ class CreateMultipartUploadRequest extends Request
      *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
      *     ObjectLockLegalHoldStatus?: 'ON'|'OFF'|null,
      *     ExpectedBucketOwner?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
-     *     ChecksumType?: 'COMPOSITE'|'FULL_OBJECT'|null
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null
      * } $args
      */
     public function __construct(array $args)

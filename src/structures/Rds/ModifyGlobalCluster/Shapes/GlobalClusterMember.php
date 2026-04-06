@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $Readers
  * @property bool|null $IsWriter
  * @property 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null $GlobalWriteForwardingStatus
- * @property 'connected'|'pending-resync'|null $SynchronizationStatus
  */
 class GlobalClusterMember extends Shape
 {
@@ -18,8 +17,7 @@ class GlobalClusterMember extends Shape
      *     DBClusterArn?: string|null,
      *     Readers?: list<string>|null,
      *     IsWriter?: bool|null,
-     *     GlobalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null,
-     *     SynchronizationStatus?: 'connected'|'pending-resync'|null
+     *     GlobalWriteForwardingStatus?: 'enabled'|'disabled'|'enabling'|'disabling'|'unknown'|null
      * } $args
      */
     public function __construct(array $args = [])

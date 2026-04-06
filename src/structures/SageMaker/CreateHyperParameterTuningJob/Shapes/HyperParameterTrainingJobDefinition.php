@@ -15,13 +15,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property VpcConfig|null $VpcConfig
  * @property OutputDataConfig $OutputDataConfig
  * @property ResourceConfig|null $ResourceConfig
- * @property HyperParameterTuningResourceConfig|null $HyperParameterTuningResourceConfig
  * @property StoppingCondition $StoppingCondition
  * @property bool|null $EnableNetworkIsolation
  * @property bool|null $EnableInterContainerTrafficEncryption
  * @property bool|null $EnableManagedSpotTraining
  * @property CheckpointConfig|null $CheckpointConfig
  * @property RetryStrategy|null $RetryStrategy
+ * @property HyperParameterTuningResourceConfig|null $HyperParameterTuningResourceConfig
  * @property array<string, string>|null $Environment
  */
 class HyperParameterTrainingJobDefinition extends Shape
@@ -38,13 +38,13 @@ class HyperParameterTrainingJobDefinition extends Shape
      *     VpcConfig?: VpcConfig|null,
      *     OutputDataConfig: OutputDataConfig,
      *     ResourceConfig?: ResourceConfig|null,
-     *     HyperParameterTuningResourceConfig?: HyperParameterTuningResourceConfig|null,
      *     StoppingCondition: StoppingCondition,
      *     EnableNetworkIsolation?: bool|null,
      *     EnableInterContainerTrafficEncryption?: bool|null,
      *     EnableManagedSpotTraining?: bool|null,
      *     CheckpointConfig?: CheckpointConfig|null,
      *     RetryStrategy?: RetryStrategy|null,
+     *     HyperParameterTuningResourceConfig?: HyperParameterTuningResourceConfig|null,
      *     Environment?: array<string, string>|null
      * } $args
      */

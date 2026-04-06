@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<LaunchTemplateConfiguration>|null $launchTemplateConfigurations
  * @property S3ExportConfiguration|null $s3ExportConfiguration
  * @property list<FastLaunchConfiguration>|null $fastLaunchConfigurations
- * @property list<SsmParameterConfiguration>|null $ssmParameterConfigurations
  */
 class Distribution extends Shape
 {
@@ -24,8 +23,7 @@ class Distribution extends Shape
      *     licenseConfigurationArns?: list<string>|null,
      *     launchTemplateConfigurations?: list<LaunchTemplateConfiguration>|null,
      *     s3ExportConfiguration?: S3ExportConfiguration|null,
-     *     fastLaunchConfigurations?: list<FastLaunchConfiguration>|null,
-     *     ssmParameterConfigurations?: list<SsmParameterConfiguration>|null
+     *     fastLaunchConfigurations?: list<FastLaunchConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

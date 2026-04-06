@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $CurrentPlayerSessionCount
  * @property int<0, max>|null $MaximumPlayerSessionCount
  * @property 'ACTIVE'|'ACTIVATING'|'TERMINATED'|'TERMINATING'|'ERROR'|null $Status
- * @property 'INTERRUPTED'|'TRIGGERED_ON_PROCESS_TERMINATE'|'FORCE_TERMINATED'|null $StatusReason
+ * @property 'INTERRUPTED'|null $StatusReason
  * @property list<GameProperty>|null $GameProperties
  * @property string|null $IpAddress
  * @property string|null $DnsName
@@ -24,8 +24,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GameSessionData
  * @property string|null $MatchmakerData
  * @property string|null $Location
- * @property string|null $ComputeName
- * @property 'DISABLED'|'ENABLED'|null $PlayerGatewayStatus
  */
 class GameSession extends Shape
 {
@@ -40,7 +38,7 @@ class GameSession extends Shape
      *     CurrentPlayerSessionCount?: int<0, max>|null,
      *     MaximumPlayerSessionCount?: int<0, max>|null,
      *     Status?: 'ACTIVE'|'ACTIVATING'|'TERMINATED'|'TERMINATING'|'ERROR'|null,
-     *     StatusReason?: 'INTERRUPTED'|'TRIGGERED_ON_PROCESS_TERMINATE'|'FORCE_TERMINATED'|null,
+     *     StatusReason?: 'INTERRUPTED'|null,
      *     GameProperties?: list<GameProperty>|null,
      *     IpAddress?: string|null,
      *     DnsName?: string|null,
@@ -49,9 +47,7 @@ class GameSession extends Shape
      *     CreatorId?: string|null,
      *     GameSessionData?: string|null,
      *     MatchmakerData?: string|null,
-     *     Location?: string|null,
-     *     ComputeName?: string|null,
-     *     PlayerGatewayStatus?: 'DISABLED'|'ENABLED'|null
+     *     Location?: string|null
      * } $args
      */
     public function __construct(array $args = [])

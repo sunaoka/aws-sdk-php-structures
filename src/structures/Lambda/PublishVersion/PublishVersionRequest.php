@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CodeSha256
  * @property string|null $Description
  * @property string|null $RevisionId
- * @property 'LATEST_PUBLISHED'|null $PublishTo
  */
 class PublishVersionRequest extends Request
 {
@@ -18,8 +17,7 @@ class PublishVersionRequest extends Request
      *     FunctionName: string,
      *     CodeSha256?: string|null,
      *     Description?: string|null,
-     *     RevisionId?: string|null,
-     *     PublishTo?: 'LATEST_PUBLISHED'|null
+     *     RevisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

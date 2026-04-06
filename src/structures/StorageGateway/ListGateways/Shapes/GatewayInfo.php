@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Ec2InstanceRegion
  * @property 'VMWARE'|'HYPER-V'|'EC2'|'KVM'|'OTHER'|'SNOWBALL'|null $HostEnvironment
  * @property string|null $HostEnvironmentId
- * @property string|null $DeprecationDate
- * @property string|null $SoftwareVersion
  */
 class GatewayInfo extends Shape
 {
@@ -29,9 +27,7 @@ class GatewayInfo extends Shape
      *     Ec2InstanceId?: string|null,
      *     Ec2InstanceRegion?: string|null,
      *     HostEnvironment?: 'VMWARE'|'HYPER-V'|'EC2'|'KVM'|'OTHER'|'SNOWBALL'|null,
-     *     HostEnvironmentId?: string|null,
-     *     DeprecationDate?: string|null,
-     *     SoftwareVersion?: string|null
+     *     HostEnvironmentId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

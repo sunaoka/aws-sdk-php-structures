@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\drs\DescribeRecoveryInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $agentVersion
  * @property string|null $arn
  * @property RecoveryInstanceDataReplicationInfo|null $dataReplicationInfo
  * @property string|null $ec2InstanceID
@@ -18,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $pointInTimeSnapshotDateTime
  * @property string|null $recoveryInstanceID
  * @property RecoveryInstanceProperties|null $recoveryInstanceProperties
- * @property string|null $sourceOutpostArn
  * @property string|null $sourceServerID
  * @property array<string, string>|null $tags
  */
@@ -26,7 +24,6 @@ class RecoveryInstance extends Shape
 {
     /**
      * @param array{
-     *     agentVersion?: string|null,
      *     arn?: string|null,
      *     dataReplicationInfo?: RecoveryInstanceDataReplicationInfo|null,
      *     ec2InstanceID?: string|null,
@@ -39,7 +36,6 @@ class RecoveryInstance extends Shape
      *     pointInTimeSnapshotDateTime?: string|null,
      *     recoveryInstanceID?: string|null,
      *     recoveryInstanceProperties?: RecoveryInstanceProperties|null,
-     *     sourceOutpostArn?: string|null,
      *     sourceServerID?: string|null,
      *     tags?: array<string, string>|null
      * } $args

@@ -36,13 +36,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $CopyTagsToSnapshot
  * @property string|null $Domain
  * @property string|null $DomainIAMRoleName
- * @property string|null $StorageType
- * @property string|null $NetworkType
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
+ * @property string|null $NetworkType
  * @property bool|null $ManageMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
- * @property string|null $EngineLifecycleSupport
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $StorageType
  */
 class RestoreDBClusterFromS3Request extends Request
 {
@@ -79,13 +77,11 @@ class RestoreDBClusterFromS3Request extends Request
      *     CopyTagsToSnapshot?: bool|null,
      *     Domain?: string|null,
      *     DomainIAMRoleName?: string|null,
-     *     StorageType?: string|null,
-     *     NetworkType?: string|null,
      *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
+     *     NetworkType?: string|null,
      *     ManageMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     EngineLifecycleSupport?: string|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null
+     *     StorageType?: string|null
      * } $args
      */
     public function __construct(array $args)

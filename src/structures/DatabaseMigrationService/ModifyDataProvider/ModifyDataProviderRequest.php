@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DataProviderName
  * @property string|null $Description
  * @property string|null $Engine
- * @property bool|null $Virtual
  * @property bool|null $ExactSettings
  * @property Shapes\DataProviderSettings|null $Settings
  */
@@ -21,7 +20,6 @@ class ModifyDataProviderRequest extends Request
      *     DataProviderName?: string|null,
      *     Description?: string|null,
      *     Engine?: string|null,
-     *     Virtual?: bool|null,
      *     ExactSettings?: bool|null,
      *     Settings?: Shapes\DataProviderSettings|null
      * } $args

@@ -22,11 +22,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $CalendarNames
  * @property list<Shapes\TargetLocation>|null $TargetLocations
  * @property int<1, 6>|null $ScheduleOffset
- * @property int<1, 24>|null $Duration
  * @property list<array<string, list<string>>>|null $TargetMaps
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\AlarmConfiguration|null $AlarmConfiguration
- * @property string|null $AssociationDispatchAssumeRole
  */
 class CreateAssociationRequest extends Request
 {
@@ -49,11 +47,9 @@ class CreateAssociationRequest extends Request
      *     CalendarNames?: list<string>|null,
      *     TargetLocations?: list<Shapes\TargetLocation>|null,
      *     ScheduleOffset?: int<1, 6>|null,
-     *     Duration?: int<1, 24>|null,
      *     TargetMaps?: list<array<string, list<string>>>|null,
      *     Tags?: list<Shapes\Tag>|null,
-     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null,
-     *     AssociationDispatchAssumeRole?: string|null
+     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $memorySize
  * @property list<LambdaFunctionMemoryProjectedMetric>|null $projectedUtilizationMetrics
  * @property SavingsOpportunity|null $savingsOpportunity
- * @property LambdaSavingsOpportunityAfterDiscounts|null $savingsOpportunityAfterDiscounts
  */
 class LambdaFunctionMemoryRecommendationOption extends Shape
 {
@@ -18,8 +17,7 @@ class LambdaFunctionMemoryRecommendationOption extends Shape
      *     rank?: int|null,
      *     memorySize?: int|null,
      *     projectedUtilizationMetrics?: list<LambdaFunctionMemoryProjectedMetric>|null,
-     *     savingsOpportunity?: SavingsOpportunity|null,
-     *     savingsOpportunityAfterDiscounts?: LambdaSavingsOpportunityAfterDiscounts|null
+     *     savingsOpportunity?: SavingsOpportunity|null
      * } $args
      */
     public function __construct(array $args = [])

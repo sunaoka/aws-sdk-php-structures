@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Braket\CancelQuantumTask;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $quantumTaskArn
  * @property string $clientToken
+ * @property string $quantumTaskArn
  */
 class CancelQuantumTaskRequest extends Request
 {
     /**
      * @param array{
-     *     quantumTaskArn: string,
-     *     clientToken: string
+     *     clientToken: string,
+     *     quantumTaskArn: string
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $AutomationExecutionId
  * @property string|null $DocumentName
  * @property string|null $DocumentVersion
- * @property 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited'|null $AutomationExecutionStatus
+ * @property 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|null $AutomationExecutionStatus
  * @property \Aws\Api\DateTimeResult|null $ExecutionStartTime
  * @property \Aws\Api\DateTimeResult|null $ExecutionEndTime
  * @property string|null $ExecutedBy
@@ -29,8 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CrossAccount'|'Local'|null $AutomationType
  * @property AlarmConfiguration|null $AlarmConfiguration
  * @property list<AlarmStateInformation>|null $TriggeredAlarms
- * @property string|null $TargetLocationsURL
- * @property 'ChangeRequest'|'AccessRequest'|null $AutomationSubtype
+ * @property 'ChangeRequest'|null $AutomationSubtype
  * @property \Aws\Api\DateTimeResult|null $ScheduledTime
  * @property list<Runbook>|null $Runbooks
  * @property string|null $OpsItemId
@@ -44,7 +43,7 @@ class AutomationExecutionMetadata extends Shape
      *     AutomationExecutionId?: string|null,
      *     DocumentName?: string|null,
      *     DocumentVersion?: string|null,
-     *     AutomationExecutionStatus?: 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited'|null,
+     *     AutomationExecutionStatus?: 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|null,
      *     ExecutionStartTime?: \Aws\Api\DateTimeResult|null,
      *     ExecutionEndTime?: \Aws\Api\DateTimeResult|null,
      *     ExecutedBy?: string|null,
@@ -65,8 +64,7 @@ class AutomationExecutionMetadata extends Shape
      *     AutomationType?: 'CrossAccount'|'Local'|null,
      *     AlarmConfiguration?: AlarmConfiguration|null,
      *     TriggeredAlarms?: list<AlarmStateInformation>|null,
-     *     TargetLocationsURL?: string|null,
-     *     AutomationSubtype?: 'ChangeRequest'|'AccessRequest'|null,
+     *     AutomationSubtype?: 'ChangeRequest'|null,
      *     ScheduledTime?: \Aws\Api\DateTimeResult|null,
      *     Runbooks?: list<Runbook>|null,
      *     OpsItemId?: string|null,

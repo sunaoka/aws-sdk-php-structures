@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TargetBucket
  * @property list<TargetGrant>|null $TargetGrants
  * @property string $TargetPrefix
- * @property TargetObjectKeyFormat|null $TargetObjectKeyFormat
  */
 class LoggingEnabled extends Shape
 {
@@ -16,8 +15,7 @@ class LoggingEnabled extends Shape
      * @param array{
      *     TargetBucket: string,
      *     TargetGrants?: list<TargetGrant>|null,
-     *     TargetPrefix: string,
-     *     TargetObjectKeyFormat?: TargetObjectKeyFormat|null
+     *     TargetPrefix: string
      * } $args
      */
     public function __construct(array $args)

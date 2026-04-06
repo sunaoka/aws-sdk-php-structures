@@ -10,7 +10,6 @@ class TransferClient extends \Aws\Transfer\TransferClient
     use CreateProfile\CreateProfileTrait;
     use CreateServer\CreateServerTrait;
     use CreateUser\CreateUserTrait;
-    use CreateWebApp\CreateWebAppTrait;
     use CreateWorkflow\CreateWorkflowTrait;
     use DeleteAccess\DeleteAccessTrait;
     use DeleteAgreement\DeleteAgreementTrait;
@@ -21,8 +20,6 @@ class TransferClient extends \Aws\Transfer\TransferClient
     use DeleteServer\DeleteServerTrait;
     use DeleteSshPublicKey\DeleteSshPublicKeyTrait;
     use DeleteUser\DeleteUserTrait;
-    use DeleteWebApp\DeleteWebAppTrait;
-    use DeleteWebAppCustomization\DeleteWebAppCustomizationTrait;
     use DeleteWorkflow\DeleteWorkflowTrait;
     use DescribeAccess\DescribeAccessTrait;
     use DescribeAgreement\DescribeAgreementTrait;
@@ -34,8 +31,6 @@ class TransferClient extends \Aws\Transfer\TransferClient
     use DescribeSecurityPolicy\DescribeSecurityPolicyTrait;
     use DescribeServer\DescribeServerTrait;
     use DescribeUser\DescribeUserTrait;
-    use DescribeWebApp\DescribeWebAppTrait;
-    use DescribeWebAppCustomization\DescribeWebAppCustomizationTrait;
     use DescribeWorkflow\DescribeWorkflowTrait;
     use ImportCertificate\ImportCertificateTrait;
     use ImportHostKey\ImportHostKeyTrait;
@@ -45,20 +40,15 @@ class TransferClient extends \Aws\Transfer\TransferClient
     use ListCertificates\ListCertificatesTrait;
     use ListConnectors\ListConnectorsTrait;
     use ListExecutions\ListExecutionsTrait;
-    use ListFileTransferResults\ListFileTransferResultsTrait;
     use ListHostKeys\ListHostKeysTrait;
     use ListProfiles\ListProfilesTrait;
     use ListSecurityPolicies\ListSecurityPoliciesTrait;
     use ListServers\ListServersTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListUsers\ListUsersTrait;
-    use ListWebApps\ListWebAppsTrait;
     use ListWorkflows\ListWorkflowsTrait;
     use SendWorkflowStepState\SendWorkflowStepStateTrait;
-    use StartDirectoryListing\StartDirectoryListingTrait;
     use StartFileTransfer\StartFileTransferTrait;
-    use StartRemoteDelete\StartRemoteDeleteTrait;
-    use StartRemoteMove\StartRemoteMoveTrait;
     use StartServer\StartServerTrait;
     use StopServer\StopServerTrait;
     use TagResource\TagResourceTrait;
@@ -73,6 +63,4 @@ class TransferClient extends \Aws\Transfer\TransferClient
     use UpdateProfile\UpdateProfileTrait;
     use UpdateServer\UpdateServerTrait;
     use UpdateUser\UpdateUserTrait;
-    use UpdateWebApp\UpdateWebAppTrait;
-    use UpdateWebAppCustomization\UpdateWebAppCustomizationTrait;
 }

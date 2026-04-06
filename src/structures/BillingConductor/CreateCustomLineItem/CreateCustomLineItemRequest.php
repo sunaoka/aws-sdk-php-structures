@@ -12,9 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CustomLineItemBillingPeriodRange|null $BillingPeriodRange
  * @property array<string, string>|null $Tags
  * @property Shapes\CustomLineItemChargeDetails $ChargeDetails
- * @property string|null $AccountId
- * @property 'ITEMIZED'|'CONSOLIDATED'|null $ComputationRule
- * @property Shapes\PresentationObject|null $PresentationDetails
  */
 class CreateCustomLineItemRequest extends Request
 {
@@ -26,10 +23,7 @@ class CreateCustomLineItemRequest extends Request
      *     BillingGroupArn: string,
      *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange|null,
      *     Tags?: array<string, string>|null,
-     *     ChargeDetails: Shapes\CustomLineItemChargeDetails,
-     *     AccountId?: string|null,
-     *     ComputationRule?: 'ITEMIZED'|'CONSOLIDATED'|null,
-     *     PresentationDetails?: Shapes\PresentationObject|null
+     *     ChargeDetails: Shapes\CustomLineItemChargeDetails
      * } $args
      */
     public function __construct(array $args)

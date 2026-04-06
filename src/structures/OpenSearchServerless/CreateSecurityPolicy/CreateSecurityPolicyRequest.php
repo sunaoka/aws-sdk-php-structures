@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\CreateSecurityPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'encryption'|'network' $type
- * @property string $name
- * @property string|null $description
- * @property string $policy
  * @property string|null $clientToken
+ * @property string|null $description
+ * @property string $name
+ * @property string $policy
+ * @property 'encryption'|'network' $type
  */
 class CreateSecurityPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     type: 'encryption'|'network',
-     *     name: string,
+     *     clientToken?: string|null,
      *     description?: string|null,
+     *     name: string,
      *     policy: string,
-     *     clientToken?: string|null
+     *     type: 'encryption'|'network'
      * } $args
      */
     public function __construct(array $args)

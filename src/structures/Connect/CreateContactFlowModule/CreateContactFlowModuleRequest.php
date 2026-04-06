@@ -11,8 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Content
  * @property array<string, string>|null $Tags
  * @property string|null $ClientToken
- * @property string|null $Settings
- * @property Shapes\ExternalInvocationConfiguration|null $ExternalInvocationConfiguration
  */
 class CreateContactFlowModuleRequest extends Request
 {
@@ -23,9 +21,7 @@ class CreateContactFlowModuleRequest extends Request
      *     Description?: string|null,
      *     Content: string,
      *     Tags?: array<string, string>|null,
-     *     ClientToken?: string|null,
-     *     Settings?: string|null,
-     *     ExternalInvocationConfiguration?: Shapes\ExternalInvocationConfiguration|null
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

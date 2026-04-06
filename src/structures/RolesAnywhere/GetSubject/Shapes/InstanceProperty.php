@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\GetSubject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult|null $seenAt
- * @property array<string, string>|null $properties
  * @property bool|null $failed
+ * @property array<string, string>|null $properties
+ * @property \Aws\Api\DateTimeResult|null $seenAt
  */
 class InstanceProperty extends Shape
 {
     /**
      * @param array{
-     *     seenAt?: \Aws\Api\DateTimeResult|null,
+     *     failed?: bool|null,
      *     properties?: array<string, string>|null,
-     *     failed?: bool|null
+     *     seenAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -39,12 +39,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DesiredCapacityType
  * @property int|null $DefaultInstanceWarmup
  * @property list<TrafficSourceIdentifier>|null $TrafficSources
- * @property InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
- * @property 'none'|'prevent-force-deletion'|'prevent-all-deletion'|null $DeletionProtection
- * @property AvailabilityZoneDistribution|null $AvailabilityZoneDistribution
- * @property AvailabilityZoneImpairmentPolicy|null $AvailabilityZoneImpairmentPolicy
- * @property CapacityReservationSpecification|null $CapacityReservationSpecification
- * @property InstanceLifecyclePolicy|null $InstanceLifecyclePolicy
  */
 class AutoScalingGroup extends Shape
 {
@@ -83,13 +77,7 @@ class AutoScalingGroup extends Shape
      *     Context?: string|null,
      *     DesiredCapacityType?: string|null,
      *     DefaultInstanceWarmup?: int|null,
-     *     TrafficSources?: list<TrafficSourceIdentifier>|null,
-     *     InstanceMaintenancePolicy?: InstanceMaintenancePolicy|null,
-     *     DeletionProtection?: 'none'|'prevent-force-deletion'|'prevent-all-deletion'|null,
-     *     AvailabilityZoneDistribution?: AvailabilityZoneDistribution|null,
-     *     AvailabilityZoneImpairmentPolicy?: AvailabilityZoneImpairmentPolicy|null,
-     *     CapacityReservationSpecification?: CapacityReservationSpecification|null,
-     *     InstanceLifecyclePolicy?: InstanceLifecyclePolicy|null
+     *     TrafficSources?: list<TrafficSourceIdentifier>|null
      * } $args
      */
     public function __construct(array $args)

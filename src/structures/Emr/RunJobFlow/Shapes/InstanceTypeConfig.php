@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EbsConfiguration|null $EbsConfiguration
  * @property list<Configuration>|null $Configurations
  * @property string|null $CustomAmiId
- * @property double|null $Priority
  */
 class InstanceTypeConfig extends Shape
 {
@@ -24,8 +23,7 @@ class InstanceTypeConfig extends Shape
      *     BidPriceAsPercentageOfOnDemandPrice?: double|null,
      *     EbsConfiguration?: EbsConfiguration|null,
      *     Configurations?: list<Configuration>|null,
-     *     CustomAmiId?: string|null,
-     *     Priority?: double|null
+     *     CustomAmiId?: string|null
      * } $args
      */
     public function __construct(array $args)

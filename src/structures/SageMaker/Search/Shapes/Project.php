@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed'|null $ProjectStatus
  * @property UserContext|null $CreatedBy
  * @property \Aws\Api\DateTimeResult|null $CreationTime
- * @property list<TemplateProviderDetail>|null $TemplateProviderDetails
  * @property list<Tag>|null $Tags
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property UserContext|null $LastModifiedBy
@@ -32,7 +31,6 @@ class Project extends Shape
      *     ProjectStatus?: 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed'|null,
      *     CreatedBy?: UserContext|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
-     *     TemplateProviderDetails?: list<TemplateProviderDetail>|null,
      *     Tags?: list<Tag>|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedBy?: UserContext|null

@@ -25,7 +25,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'Email'|'SMS'>|null $contactProtocols
  * @property list<'OK'|'ALARM'|'INSUFFICIENT_DATA'>|null $notificationTriggers
  * @property bool|null $notificationEnabled
- * @property list<Tag>|null $tags
  */
 class Alarm extends Shape
 {
@@ -50,8 +49,7 @@ class Alarm extends Shape
      *     unit?: 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None'|null,
      *     contactProtocols?: list<'Email'|'SMS'>|null,
      *     notificationTriggers?: list<'OK'|'ALARM'|'INSUFFICIENT_DATA'>|null,
-     *     notificationEnabled?: bool|null,
-     *     tags?: list<Tag>|null
+     *     notificationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

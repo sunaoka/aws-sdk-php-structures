@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string|null $DeviceName
  * @property EbsInstanceBlockDeviceSpecification|null $Ebs
- * @property string|null $VirtualName
  * @property string|null $NoDevice
+ * @property string|null $VirtualName
  */
 class InstanceBlockDeviceMappingSpecification extends Shape
 {
@@ -16,8 +16,8 @@ class InstanceBlockDeviceMappingSpecification extends Shape
      * @param array{
      *     DeviceName?: string|null,
      *     Ebs?: EbsInstanceBlockDeviceSpecification|null,
-     *     VirtualName?: string|null,
-     *     NoDevice?: string|null
+     *     NoDevice?: string|null,
+     *     VirtualName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

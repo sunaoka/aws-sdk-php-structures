@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int|null $asn
- * @property int|null $asnLong
  * @property string|null $authKey
  * @property 'ipv4'|'ipv6'|null $addressFamily
  * @property string|null $amazonAddress
@@ -17,7 +16,6 @@ class NewBGPPeer extends Shape
     /**
      * @param array{
      *     asn?: int|null,
-     *     asnLong?: int|null,
      *     authKey?: string|null,
      *     addressFamily?: 'ipv4'|'ipv6'|null,
      *     amazonAddress?: string|null,

@@ -19,9 +19,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\RequestIpamResourceTag>|null $AllocationResourceTags
  * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property string|null $ClientToken
- * @property 'ec2'|'global-services'|null $AwsService
+ * @property 'ec2'|null $AwsService
  * @property 'amazon'|'byoip'|null $PublicIpSource
- * @property Shapes\IpamPoolSourceResourceRequest|null $SourceResource
  */
 class CreateIpamPoolRequest extends Request
 {
@@ -41,9 +40,8 @@ class CreateIpamPoolRequest extends Request
      *     AllocationResourceTags?: list<Shapes\RequestIpamResourceTag>|null,
      *     TagSpecifications?: list<Shapes\TagSpecification>|null,
      *     ClientToken?: string|null,
-     *     AwsService?: 'ec2'|'global-services'|null,
-     *     PublicIpSource?: 'amazon'|'byoip'|null,
-     *     SourceResource?: Shapes\IpamPoolSourceResourceRequest|null
+     *     AwsService?: 'ec2'|null,
+     *     PublicIpSource?: 'amazon'|'byoip'|null
      * } $args
      */
     public function __construct(array $args)

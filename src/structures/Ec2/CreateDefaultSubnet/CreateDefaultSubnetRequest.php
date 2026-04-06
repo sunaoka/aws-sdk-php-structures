@@ -5,22 +5,20 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateDefaultSubnet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $AvailabilityZone
+ * @property string $AvailabilityZone
  * @property bool|null $DryRun
  * @property bool|null $Ipv6Native
- * @property string|null $AvailabilityZoneId
  */
 class CreateDefaultSubnetRequest extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string|null,
+     *     AvailabilityZone: string,
      *     DryRun?: bool|null,
-     *     Ipv6Native?: bool|null,
-     *     AvailabilityZoneId?: string|null
+     *     Ipv6Native?: bool|null
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

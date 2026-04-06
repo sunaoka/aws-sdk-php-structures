@@ -10,12 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ImageConfig|null $ImageConfig
  * @property 'SingleModel'|'MultiModel'|null $Mode
  * @property string|null $ModelDataUrl
- * @property ModelDataSource|null $ModelDataSource
- * @property list<AdditionalModelDataSource>|null $AdditionalModelDataSources
  * @property array<string, string>|null $Environment
  * @property string|null $ModelPackageName
  * @property string|null $InferenceSpecificationName
  * @property MultiModelConfig|null $MultiModelConfig
+ * @property ModelDataSource|null $ModelDataSource
  */
 class ContainerDefinition extends Shape
 {
@@ -26,12 +25,11 @@ class ContainerDefinition extends Shape
      *     ImageConfig?: ImageConfig|null,
      *     Mode?: 'SingleModel'|'MultiModel'|null,
      *     ModelDataUrl?: string|null,
-     *     ModelDataSource?: ModelDataSource|null,
-     *     AdditionalModelDataSources?: list<AdditionalModelDataSource>|null,
      *     Environment?: array<string, string>|null,
      *     ModelPackageName?: string|null,
      *     InferenceSpecificationName?: string|null,
-     *     MultiModelConfig?: MultiModelConfig|null
+     *     MultiModelConfig?: MultiModelConfig|null,
+     *     ModelDataSource?: ModelDataSource|null
      * } $args
      */
     public function __construct(array $args = [])

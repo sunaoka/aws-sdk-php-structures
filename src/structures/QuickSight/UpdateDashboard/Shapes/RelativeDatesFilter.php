@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ParameterName
  * @property 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY' $NullOption
  * @property ExcludePeriodConfiguration|null $ExcludePeriodConfiguration
- * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class RelativeDatesFilter extends Shape
 {
@@ -30,8 +29,7 @@ class RelativeDatesFilter extends Shape
      *     RelativeDateValue?: int|null,
      *     ParameterName?: string|null,
      *     NullOption: 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY',
-     *     ExcludePeriodConfiguration?: ExcludePeriodConfiguration|null,
-     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
+     *     ExcludePeriodConfiguration?: ExcludePeriodConfiguration|null
      * } $args
      */
     public function __construct(array $args)

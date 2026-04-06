@@ -42,7 +42,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DbClusterIdentifier
  * @property list<AwsRdsDbClusterMember>|null $DbClusterMembers
  * @property bool|null $IamDatabaseAuthenticationEnabled
- * @property bool|null $AutoMinorVersionUpgrade
  */
 class AwsRdsDbClusterDetails extends Shape
 {
@@ -84,8 +83,7 @@ class AwsRdsDbClusterDetails extends Shape
      *     DbClusterOptionGroupMemberships?: list<AwsRdsDbClusterOptionGroupMembership>|null,
      *     DbClusterIdentifier?: string|null,
      *     DbClusterMembers?: list<AwsRdsDbClusterMember>|null,
-     *     IamDatabaseAuthenticationEnabled?: bool|null,
-     *     AutoMinorVersionUpgrade?: bool|null
+     *     IamDatabaseAuthenticationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

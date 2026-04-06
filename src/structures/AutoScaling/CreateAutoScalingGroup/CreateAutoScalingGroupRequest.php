@@ -25,7 +25,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $NewInstancesProtectedFromScaleIn
  * @property bool|null $CapacityRebalance
  * @property list<Shapes\LifecycleHookSpecification>|null $LifecycleHookSpecificationList
- * @property 'none'|'prevent-force-deletion'|'prevent-all-deletion'|null $DeletionProtection
  * @property list<Shapes\Tag>|null $Tags
  * @property string|null $ServiceLinkedRoleARN
  * @property int|null $MaxInstanceLifetime
@@ -33,12 +32,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DesiredCapacityType
  * @property int|null $DefaultInstanceWarmup
  * @property list<Shapes\TrafficSourceIdentifier>|null $TrafficSources
- * @property Shapes\InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
- * @property Shapes\AvailabilityZoneDistribution|null $AvailabilityZoneDistribution
- * @property Shapes\AvailabilityZoneImpairmentPolicy|null $AvailabilityZoneImpairmentPolicy
- * @property bool|null $SkipZonalShiftValidation
- * @property Shapes\CapacityReservationSpecification|null $CapacityReservationSpecification
- * @property Shapes\InstanceLifecyclePolicy|null $InstanceLifecyclePolicy
  */
 class CreateAutoScalingGroupRequest extends Request
 {
@@ -64,20 +57,13 @@ class CreateAutoScalingGroupRequest extends Request
      *     NewInstancesProtectedFromScaleIn?: bool|null,
      *     CapacityRebalance?: bool|null,
      *     LifecycleHookSpecificationList?: list<Shapes\LifecycleHookSpecification>|null,
-     *     DeletionProtection?: 'none'|'prevent-force-deletion'|'prevent-all-deletion'|null,
      *     Tags?: list<Shapes\Tag>|null,
      *     ServiceLinkedRoleARN?: string|null,
      *     MaxInstanceLifetime?: int|null,
      *     Context?: string|null,
      *     DesiredCapacityType?: string|null,
      *     DefaultInstanceWarmup?: int|null,
-     *     TrafficSources?: list<Shapes\TrafficSourceIdentifier>|null,
-     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy|null,
-     *     AvailabilityZoneDistribution?: Shapes\AvailabilityZoneDistribution|null,
-     *     AvailabilityZoneImpairmentPolicy?: Shapes\AvailabilityZoneImpairmentPolicy|null,
-     *     SkipZonalShiftValidation?: bool|null,
-     *     CapacityReservationSpecification?: Shapes\CapacityReservationSpecification|null,
-     *     InstanceLifecyclePolicy?: Shapes\InstanceLifecyclePolicy|null
+     *     TrafficSources?: list<Shapes\TrafficSourceIdentifier>|null
      * } $args
      */
     public function __construct(array $args)

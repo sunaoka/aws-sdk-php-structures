@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\GlobalSecondaryIndex>|null $GlobalSecondaryIndexOverride
  * @property list<Shapes\LocalSecondaryIndex>|null $LocalSecondaryIndexOverride
  * @property Shapes\ProvisionedThroughput|null $ProvisionedThroughputOverride
- * @property Shapes\OnDemandThroughput|null $OnDemandThroughputOverride
  * @property Shapes\SSESpecification|null $SSESpecificationOverride
  */
 class RestoreTableToPointInTimeRequest extends Request
@@ -30,7 +29,6 @@ class RestoreTableToPointInTimeRequest extends Request
      *     GlobalSecondaryIndexOverride?: list<Shapes\GlobalSecondaryIndex>|null,
      *     LocalSecondaryIndexOverride?: list<Shapes\LocalSecondaryIndex>|null,
      *     ProvisionedThroughputOverride?: Shapes\ProvisionedThroughput|null,
-     *     OnDemandThroughputOverride?: Shapes\OnDemandThroughput|null,
      *     SSESpecificationOverride?: Shapes\SSESpecification|null
      * } $args
      */

@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property int<1, 10000>|null $MaxResults
  * @property \Aws\Api\DateTimeResult|null $StreamCreationTimestamp
- * @property string|null $StreamId
  */
 class ListStreamConsumersRequest extends Request
 {
@@ -18,8 +17,7 @@ class ListStreamConsumersRequest extends Request
      *     StreamARN: string,
      *     NextToken?: string|null,
      *     MaxResults?: int<1, 10000>|null,
-     *     StreamCreationTimestamp?: \Aws\Api\DateTimeResult|null,
-     *     StreamId?: string|null
+     *     StreamCreationTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

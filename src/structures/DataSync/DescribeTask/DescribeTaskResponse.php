@@ -21,10 +21,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ErrorDetail
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property list<Shapes\FilterRule>|null $Includes
- * @property Shapes\ManifestConfig|null $ManifestConfig
- * @property Shapes\TaskReportConfig|null $TaskReportConfig
- * @property Shapes\TaskScheduleDetails|null $ScheduleDetails
- * @property 'BASIC'|'ENHANCED'|null $TaskMode
  */
 class DescribeTaskResponse extends Response
 {

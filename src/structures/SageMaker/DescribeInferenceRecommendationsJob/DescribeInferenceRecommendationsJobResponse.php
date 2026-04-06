@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'Default'|'Advanced' $JobType
  * @property string $JobArn
  * @property string $RoleArn
- * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED' $Status
+ * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED' $Status
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $CompletionTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime

@@ -9,10 +9,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $arn
  * @property string|null $description
  * @property string|null $modelManifestArn
- * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null $status
+ * @property 'ACTIVE'|'DRAFT'|null $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModificationTime
- * @property string|null $message
  */
 class GetDecoderManifestResponse extends Response
 {

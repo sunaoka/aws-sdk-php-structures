@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\BatchGetVpcEndpoint\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $id
- * @property string|null $errorMessage
  * @property string|null $errorCode
+ * @property string|null $errorMessage
+ * @property string|null $id
  */
 class VpcEndpointErrorDetail extends Shape
 {
     /**
      * @param array{
-     *     id?: string|null,
+     *     errorCode?: string|null,
      *     errorMessage?: string|null,
-     *     errorCode?: string|null
+     *     id?: string|null
      * } $args
      */
     public function __construct(array $args = [])

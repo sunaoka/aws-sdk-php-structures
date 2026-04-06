@@ -8,7 +8,6 @@ class ElasticsearchServiceClient extends \Aws\ElasticsearchService\Elasticsearch
     use AddTags\AddTagsTrait;
     use AssociatePackage\AssociatePackageTrait;
     use AuthorizeVpcEndpointAccess\AuthorizeVpcEndpointAccessTrait;
-    use CancelDomainConfigChange\CancelDomainConfigChangeTrait;
     use CancelElasticsearchServiceSoftwareUpdate\CancelElasticsearchServiceSoftwareUpdateTrait;
     use CreateElasticsearchDomain\CreateElasticsearchDomainTrait;
     use CreateOutboundCrossClusterSearchConnection\CreateOutboundCrossClusterSearchConnectionTrait;

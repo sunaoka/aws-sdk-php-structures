@@ -8,17 +8,14 @@ class IVSClient extends \Aws\IVS\IVSClient
     use BatchGetStreamKey\BatchGetStreamKeyTrait;
     use BatchStartViewerSessionRevocation\BatchStartViewerSessionRevocationTrait;
     use CreateChannel\CreateChannelTrait;
-    use CreatePlaybackRestrictionPolicy\CreatePlaybackRestrictionPolicyTrait;
     use CreateRecordingConfiguration\CreateRecordingConfigurationTrait;
     use CreateStreamKey\CreateStreamKeyTrait;
     use DeleteChannel\DeleteChannelTrait;
     use DeletePlaybackKeyPair\DeletePlaybackKeyPairTrait;
-    use DeletePlaybackRestrictionPolicy\DeletePlaybackRestrictionPolicyTrait;
     use DeleteRecordingConfiguration\DeleteRecordingConfigurationTrait;
     use DeleteStreamKey\DeleteStreamKeyTrait;
     use GetChannel\GetChannelTrait;
     use GetPlaybackKeyPair\GetPlaybackKeyPairTrait;
-    use GetPlaybackRestrictionPolicy\GetPlaybackRestrictionPolicyTrait;
     use GetRecordingConfiguration\GetRecordingConfigurationTrait;
     use GetStream\GetStreamTrait;
     use GetStreamKey\GetStreamKeyTrait;
@@ -26,7 +23,6 @@ class IVSClient extends \Aws\IVS\IVSClient
     use ImportPlaybackKeyPair\ImportPlaybackKeyPairTrait;
     use ListChannels\ListChannelsTrait;
     use ListPlaybackKeyPairs\ListPlaybackKeyPairsTrait;
-    use ListPlaybackRestrictionPolicies\ListPlaybackRestrictionPoliciesTrait;
     use ListRecordingConfigurations\ListRecordingConfigurationsTrait;
     use ListStreamKeys\ListStreamKeysTrait;
     use ListStreamSessions\ListStreamSessionsTrait;
@@ -38,5 +34,4 @@ class IVSClient extends \Aws\IVS\IVSClient
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
     use UpdateChannel\UpdateChannelTrait;
-    use UpdatePlaybackRestrictionPolicy\UpdatePlaybackRestrictionPolicyTrait;
 }

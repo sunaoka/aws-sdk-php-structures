@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $RetrievalRoleArn
  * @property list<Shapes\Validator>|null $Validators
  * @property string|null $Type
- * @property string|null $KmsKeyArn
- * @property string|null $KmsKeyIdentifier
  */
 class CreateConfigurationProfileResponse extends Response
 {

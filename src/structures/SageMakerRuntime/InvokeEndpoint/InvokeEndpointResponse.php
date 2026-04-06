@@ -9,8 +9,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $ContentType
  * @property string|null $InvokedProductionVariant
  * @property string|null $CustomAttributes
- * @property string|null $NewSessionId
- * @property string|null $ClosedSessionId
  */
 class InvokeEndpointResponse extends Response
 {

@@ -8,8 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domain
  * @property string|null $domainOwner
  * @property string $repository
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
- * @property 'dualstack'|'ipv4'|null $endpointType
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic' $format
  */
 class GetRepositoryEndpointRequest extends Request
 {
@@ -18,8 +17,7 @@ class GetRepositoryEndpointRequest extends Request
      *     domain: string,
      *     domainOwner?: string|null,
      *     repository: string,
-     *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
-     *     endpointType?: 'dualstack'|'ipv4'|null
+     *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic'
      * } $args
      */
     public function __construct(array $args)

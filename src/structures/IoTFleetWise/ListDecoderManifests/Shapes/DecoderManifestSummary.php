@@ -9,10 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property string|null $modelManifestArn
  * @property string|null $description
- * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null $status
+ * @property 'ACTIVE'|'DRAFT'|null $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModificationTime
- * @property string|null $message
  */
 class DecoderManifestSummary extends Shape
 {
@@ -22,10 +21,9 @@ class DecoderManifestSummary extends Shape
      *     arn?: string|null,
      *     modelManifestArn?: string|null,
      *     description?: string|null,
-     *     status?: 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null,
+     *     status?: 'ACTIVE'|'DRAFT'|null,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     lastModificationTime: \Aws\Api\DateTimeResult,
-     *     message?: string|null
+     *     lastModificationTime: \Aws\Api\DateTimeResult
      * } $args
      */
     public function __construct(array $args)

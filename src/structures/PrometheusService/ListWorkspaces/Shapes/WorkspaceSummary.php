@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WorkspaceStatus $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property array<string, string>|null $tags
- * @property string|null $kmsKeyArn
  */
 class WorkspaceSummary extends Shape
 {
@@ -22,8 +21,7 @@ class WorkspaceSummary extends Shape
      *     arn: string,
      *     status: WorkspaceStatus,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>|null,
-     *     kmsKeyArn?: string|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

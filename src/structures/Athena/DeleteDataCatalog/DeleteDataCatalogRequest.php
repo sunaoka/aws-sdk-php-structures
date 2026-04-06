@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property bool|null $DeleteCatalogOnly
  */
 class DeleteDataCatalogRequest extends Request
 {
     /**
-     * @param array{
-     *     Name: string,
-     *     DeleteCatalogOnly?: bool|null
-     * } $args
+     * @param array{Name: string} $args
      */
     public function __construct(array $args)
     {

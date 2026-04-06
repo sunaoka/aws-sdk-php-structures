@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'MemoryOverprovisioned'|'MemoryUnderprovisioned'|'InsufficientData'|'Inconclusive'>|null $findingReasonCodes
  * @property list<LambdaFunctionMemoryRecommendationOption>|null $memorySizeRecommendationOptions
  * @property 'VeryLow'|'Low'|'Medium'|'High'|null $currentPerformanceRisk
- * @property LambdaEffectiveRecommendationPreferences|null $effectiveRecommendationPreferences
  * @property list<Tag>|null $tags
  */
 class LambdaFunctionRecommendation extends Shape
@@ -36,7 +35,6 @@ class LambdaFunctionRecommendation extends Shape
      *     findingReasonCodes?: list<'MemoryOverprovisioned'|'MemoryUnderprovisioned'|'InsufficientData'|'Inconclusive'>|null,
      *     memorySizeRecommendationOptions?: list<LambdaFunctionMemoryRecommendationOption>|null,
      *     currentPerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High'|null,
-     *     effectiveRecommendationPreferences?: LambdaEffectiveRecommendationPreferences|null,
      *     tags?: list<Tag>|null
      * } $args
      */

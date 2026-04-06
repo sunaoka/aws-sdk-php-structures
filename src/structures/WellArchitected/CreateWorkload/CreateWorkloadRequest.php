@@ -23,8 +23,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\WorkloadDiscoveryConfig|null $DiscoveryConfig
  * @property list<string>|null $Applications
  * @property list<string>|null $ProfileArns
- * @property list<string>|null $ReviewTemplateArns
- * @property Shapes\WorkloadJiraConfigurationInput|null $JiraConfiguration
  */
 class CreateWorkloadRequest extends Request
 {
@@ -47,9 +45,7 @@ class CreateWorkloadRequest extends Request
      *     Tags?: array<string, string>|null,
      *     DiscoveryConfig?: Shapes\WorkloadDiscoveryConfig|null,
      *     Applications?: list<string>|null,
-     *     ProfileArns?: list<string>|null,
-     *     ReviewTemplateArns?: list<string>|null,
-     *     JiraConfiguration?: Shapes\WorkloadJiraConfigurationInput|null
+     *     ProfileArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

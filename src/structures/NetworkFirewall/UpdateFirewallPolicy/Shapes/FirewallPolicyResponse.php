@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FirewallPolicyArn
  * @property string $FirewallPolicyId
  * @property string|null $Description
- * @property 'ACTIVE'|'DELETING'|'ERROR'|null $FirewallPolicyStatus
+ * @property 'ACTIVE'|'DELETING'|null $FirewallPolicyStatus
  * @property list<Tag>|null $Tags
  * @property int|null $ConsumedStatelessRuleCapacity
  * @property int|null $ConsumedStatefulRuleCapacity
@@ -25,7 +25,7 @@ class FirewallPolicyResponse extends Shape
      *     FirewallPolicyArn: string,
      *     FirewallPolicyId: string,
      *     Description?: string|null,
-     *     FirewallPolicyStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
+     *     FirewallPolicyStatus?: 'ACTIVE'|'DELETING'|null,
      *     Tags?: list<Tag>|null,
      *     ConsumedStatelessRuleCapacity?: int|null,
      *     ConsumedStatefulRuleCapacity?: int|null,

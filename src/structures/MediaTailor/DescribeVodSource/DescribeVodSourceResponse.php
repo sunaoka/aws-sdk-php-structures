@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\MediaTailor\DescribeVodSource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AdBreakOpportunity>|null $AdBreakOpportunities
  * @property string|null $Arn
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property list<Shapes\HttpPackageConfiguration>|null $HttpPackageConfigurations

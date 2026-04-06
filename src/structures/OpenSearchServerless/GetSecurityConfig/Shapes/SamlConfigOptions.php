@@ -5,21 +5,19 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\GetSecurityConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $metadata
- * @property string|null $userAttribute
  * @property string|null $groupAttribute
- * @property string|null $openSearchServerlessEntityId
+ * @property string $metadata
  * @property int<5, 720>|null $sessionTimeout
+ * @property string|null $userAttribute
  */
 class SamlConfigOptions extends Shape
 {
     /**
      * @param array{
-     *     metadata: string,
-     *     userAttribute?: string|null,
      *     groupAttribute?: string|null,
-     *     openSearchServerlessEntityId?: string|null,
-     *     sessionTimeout?: int<5, 720>|null
+     *     metadata: string,
+     *     sessionTimeout?: int<5, 720>|null,
+     *     userAttribute?: string|null
      * } $args
      */
     public function __construct(array $args)

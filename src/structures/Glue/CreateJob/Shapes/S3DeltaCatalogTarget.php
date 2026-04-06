@@ -12,8 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Database
  * @property array<string, string>|null $AdditionalOptions
  * @property CatalogSchemaChangePolicy|null $SchemaChangePolicy
- * @property AutoDataQuality|null $AutoDataQuality
- * @property list<GlueSchema>|null $OutputSchemas
  */
 class S3DeltaCatalogTarget extends Shape
 {
@@ -25,9 +23,7 @@ class S3DeltaCatalogTarget extends Shape
      *     Table: string,
      *     Database: string,
      *     AdditionalOptions?: array<string, string>|null,
-     *     SchemaChangePolicy?: CatalogSchemaChangePolicy|null,
-     *     AutoDataQuality?: AutoDataQuality|null,
-     *     OutputSchemas?: list<GlueSchema>|null
+     *     SchemaChangePolicy?: CatalogSchemaChangePolicy|null
      * } $args
      */
     public function __construct(array $args)

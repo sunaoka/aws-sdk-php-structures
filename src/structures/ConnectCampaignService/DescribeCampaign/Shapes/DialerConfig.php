@@ -5,17 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\DescribeCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProgressiveDialerConfig|null $progressiveDialerConfig
  * @property PredictiveDialerConfig|null $predictiveDialerConfig
- * @property AgentlessDialerConfig|null $agentlessDialerConfig
+ * @property ProgressiveDialerConfig|null $progressiveDialerConfig
  */
 class DialerConfig extends Shape
 {
     /**
      * @param array{
-     *     progressiveDialerConfig?: ProgressiveDialerConfig|null,
      *     predictiveDialerConfig?: PredictiveDialerConfig|null,
-     *     agentlessDialerConfig?: AgentlessDialerConfig|null
+     *     progressiveDialerConfig?: ProgressiveDialerConfig|null
      * } $args
      */
     public function __construct(array $args = [])

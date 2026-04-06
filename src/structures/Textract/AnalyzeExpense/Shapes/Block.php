@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Textract\AnalyzeExpense\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'KEY_VALUE_SET'|'PAGE'|'LINE'|'WORD'|'TABLE'|'CELL'|'SELECTION_ELEMENT'|'MERGED_CELL'|'TITLE'|'QUERY'|'QUERY_RESULT'|'SIGNATURE'|'TABLE_TITLE'|'TABLE_FOOTER'|'LAYOUT_TEXT'|'LAYOUT_TITLE'|'LAYOUT_HEADER'|'LAYOUT_FOOTER'|'LAYOUT_SECTION_HEADER'|'LAYOUT_PAGE_NUMBER'|'LAYOUT_LIST'|'LAYOUT_FIGURE'|'LAYOUT_TABLE'|'LAYOUT_KEY_VALUE'|null $BlockType
+ * @property 'KEY_VALUE_SET'|'PAGE'|'LINE'|'WORD'|'TABLE'|'CELL'|'SELECTION_ELEMENT'|'MERGED_CELL'|'TITLE'|'QUERY'|'QUERY_RESULT'|'SIGNATURE'|'TABLE_TITLE'|'TABLE_FOOTER'|null $BlockType
  * @property float|null $Confidence
  * @property string|null $Text
  * @property 'HANDWRITING'|'PRINTED'|null $TextType
@@ -25,7 +25,7 @@ class Block extends Shape
 {
     /**
      * @param array{
-     *     BlockType?: 'KEY_VALUE_SET'|'PAGE'|'LINE'|'WORD'|'TABLE'|'CELL'|'SELECTION_ELEMENT'|'MERGED_CELL'|'TITLE'|'QUERY'|'QUERY_RESULT'|'SIGNATURE'|'TABLE_TITLE'|'TABLE_FOOTER'|'LAYOUT_TEXT'|'LAYOUT_TITLE'|'LAYOUT_HEADER'|'LAYOUT_FOOTER'|'LAYOUT_SECTION_HEADER'|'LAYOUT_PAGE_NUMBER'|'LAYOUT_LIST'|'LAYOUT_FIGURE'|'LAYOUT_TABLE'|'LAYOUT_KEY_VALUE'|null,
+     *     BlockType?: 'KEY_VALUE_SET'|'PAGE'|'LINE'|'WORD'|'TABLE'|'CELL'|'SELECTION_ELEMENT'|'MERGED_CELL'|'TITLE'|'QUERY'|'QUERY_RESULT'|'SIGNATURE'|'TABLE_TITLE'|'TABLE_FOOTER'|null,
      *     Confidence?: float|null,
      *     Text?: string|null,
      *     TextType?: 'HANDWRITING'|'PRINTED'|null,

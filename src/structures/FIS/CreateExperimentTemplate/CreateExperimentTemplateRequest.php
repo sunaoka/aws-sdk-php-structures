@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property array<string, string>|null $tags
  * @property Shapes\CreateExperimentTemplateLogConfigurationInput|null $logConfiguration
- * @property Shapes\CreateExperimentTemplateExperimentOptionsInput|null $experimentOptions
- * @property Shapes\CreateExperimentTemplateReportConfigurationInput|null $experimentReportConfiguration
  */
 class CreateExperimentTemplateRequest extends Request
 {
@@ -27,9 +25,7 @@ class CreateExperimentTemplateRequest extends Request
      *     actions: array<string, Shapes\CreateExperimentTemplateActionInput>,
      *     roleArn: string,
      *     tags?: array<string, string>|null,
-     *     logConfiguration?: Shapes\CreateExperimentTemplateLogConfigurationInput|null,
-     *     experimentOptions?: Shapes\CreateExperimentTemplateExperimentOptionsInput|null,
-     *     experimentReportConfiguration?: Shapes\CreateExperimentTemplateReportConfigurationInput|null
+     *     logConfiguration?: Shapes\CreateExperimentTemplateLogConfigurationInput|null
      * } $args
      */
     public function __construct(array $args)

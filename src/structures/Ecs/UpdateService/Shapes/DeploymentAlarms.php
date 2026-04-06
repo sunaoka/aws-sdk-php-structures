@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $alarmNames
- * @property bool $rollback
  * @property bool $enable
+ * @property bool $rollback
  */
 class DeploymentAlarms extends Shape
 {
     /**
      * @param array{
      *     alarmNames: list<string>,
-     *     rollback: bool,
-     *     enable: bool
+     *     enable: bool,
+     *     rollback: bool
      * } $args
      */
     public function __construct(array $args)

@@ -17,9 +17,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'DISABLED'|'ENABLED'|null $status
  * @property string $clientToken
  * @property Shapes\ImageScanningConfiguration|null $imageScanningConfiguration
- * @property list<Shapes\WorkflowConfiguration>|null $workflows
- * @property Shapes\PipelineLoggingConfiguration|null $loggingConfiguration
- * @property string|null $executionRole
  */
 class UpdateImagePipelineRequest extends Request
 {
@@ -36,10 +33,7 @@ class UpdateImagePipelineRequest extends Request
      *     schedule?: Shapes\Schedule|null,
      *     status?: 'DISABLED'|'ENABLED'|null,
      *     clientToken: string,
-     *     imageScanningConfiguration?: Shapes\ImageScanningConfiguration|null,
-     *     workflows?: list<Shapes\WorkflowConfiguration>|null,
-     *     loggingConfiguration?: Shapes\PipelineLoggingConfiguration|null,
-     *     executionRole?: string|null
+     *     imageScanningConfiguration?: Shapes\ImageScanningConfiguration|null
      * } $args
      */
     public function __construct(array $args)

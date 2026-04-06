@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $publiclyAccessible
  * @property bool|null $applyImmediately
  * @property string|null $caCertificateIdentifier
- * @property string|null $relationalDatabaseBlueprintId
  */
 class UpdateRelationalDatabaseRequest extends Request
 {
@@ -30,8 +29,7 @@ class UpdateRelationalDatabaseRequest extends Request
      *     disableBackupRetention?: bool|null,
      *     publiclyAccessible?: bool|null,
      *     applyImmediately?: bool|null,
-     *     caCertificateIdentifier?: string|null,
-     *     relationalDatabaseBlueprintId?: string|null
+     *     caCertificateIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

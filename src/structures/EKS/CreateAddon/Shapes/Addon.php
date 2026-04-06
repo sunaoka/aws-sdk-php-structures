@@ -19,8 +19,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $owner
  * @property MarketplaceInformation|null $marketplaceInformation
  * @property string|null $configurationValues
- * @property list<string>|null $podIdentityAssociations
- * @property AddonNamespaceConfigResponse|null $namespaceConfig
  */
 class Addon extends Shape
 {
@@ -39,9 +37,7 @@ class Addon extends Shape
      *     publisher?: string|null,
      *     owner?: string|null,
      *     marketplaceInformation?: MarketplaceInformation|null,
-     *     configurationValues?: string|null,
-     *     podIdentityAssociations?: list<string>|null,
-     *     namespaceConfig?: AddonNamespaceConfigResponse|null
+     *     configurationValues?: string|null
      * } $args
      */
     public function __construct(array $args = [])

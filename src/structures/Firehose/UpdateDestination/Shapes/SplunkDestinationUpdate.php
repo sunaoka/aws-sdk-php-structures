@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3DestinationUpdate|null $S3Update
  * @property ProcessingConfiguration|null $ProcessingConfiguration
  * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
- * @property SplunkBufferingHints|null $BufferingHints
- * @property SecretsManagerConfiguration|null $SecretsManagerConfiguration
  */
 class SplunkDestinationUpdate extends Shape
 {
@@ -29,9 +27,7 @@ class SplunkDestinationUpdate extends Shape
      *     S3BackupMode?: 'FailedEventsOnly'|'AllEvents'|null,
      *     S3Update?: S3DestinationUpdate|null,
      *     ProcessingConfiguration?: ProcessingConfiguration|null,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
-     *     BufferingHints?: SplunkBufferingHints|null,
-     *     SecretsManagerConfiguration?: SecretsManagerConfiguration|null
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null
      * } $args
      */
     public function __construct(array $args = [])

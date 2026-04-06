@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $TotalTargetCapacity
  * @property int|null $OnDemandTargetCapacity
  * @property int|null $SpotTargetCapacity
- * @property 'spot'|'on-demand'|'capacity-block'|'reserved-capacity'|null $DefaultTargetCapacityType
+ * @property 'spot'|'on-demand'|null $DefaultTargetCapacityType
  * @property 'vcpu'|'memory-mib'|'units'|null $TargetCapacityUnitType
  */
 class TargetCapacitySpecificationRequest extends Shape
@@ -18,7 +18,7 @@ class TargetCapacitySpecificationRequest extends Shape
      *     TotalTargetCapacity: int,
      *     OnDemandTargetCapacity?: int|null,
      *     SpotTargetCapacity?: int|null,
-     *     DefaultTargetCapacityType?: 'spot'|'on-demand'|'capacity-block'|'reserved-capacity'|null,
+     *     DefaultTargetCapacityType?: 'spot'|'on-demand'|null,
      *     TargetCapacityUnitType?: 'vcpu'|'memory-mib'|'units'|null
      * } $args
      */

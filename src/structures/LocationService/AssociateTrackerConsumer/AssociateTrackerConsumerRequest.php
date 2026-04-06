@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LocationService\AssociateTrackerConsumer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TrackerName
  * @property string $ConsumerArn
+ * @property string $TrackerName
  */
 class AssociateTrackerConsumerRequest extends Request
 {
     /**
      * @param array{
-     *     TrackerName: string,
-     *     ConsumerArn: string
+     *     ConsumerArn: string,
+     *     TrackerName: string
      * } $args
      */
     public function __construct(array $args)

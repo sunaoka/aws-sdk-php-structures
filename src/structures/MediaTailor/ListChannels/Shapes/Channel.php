@@ -11,12 +11,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property SlateSource|null $FillerSlate
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property LogConfigurationForChannel $LogConfiguration
  * @property list<ResponseOutputItem> $Outputs
  * @property string $PlaybackMode
  * @property array<string, string>|null $Tags
  * @property string $Tier
- * @property LogConfigurationForChannel $LogConfiguration
- * @property list<string>|null $Audiences
  */
 class Channel extends Shape
 {
@@ -28,12 +27,11 @@ class Channel extends Shape
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     FillerSlate?: SlateSource|null,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LogConfiguration: LogConfigurationForChannel,
      *     Outputs: list<ResponseOutputItem>,
      *     PlaybackMode: string,
      *     Tags?: array<string, string>|null,
-     *     Tier: string,
-     *     LogConfiguration: LogConfigurationForChannel,
-     *     Audiences?: list<string>|null
+     *     Tier: string
      * } $args
      */
     public function __construct(array $args)

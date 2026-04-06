@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\CreateScan;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $scanName
- * @property string $runId
  * @property Shapes\ResourceId $resourceId
- * @property 'InProgress'|'Successful'|'Failed' $scanState
+ * @property string $runId
+ * @property string $scanName
  * @property string|null $scanNameArn
+ * @property 'InProgress'|'Successful'|'Failed' $scanState
  */
 class CreateScanResponse extends Response
 {

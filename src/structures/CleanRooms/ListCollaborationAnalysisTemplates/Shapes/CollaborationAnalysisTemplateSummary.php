@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationId
  * @property string $creatorAccountId
  * @property string|null $description
- * @property bool|null $isSyntheticData
  */
 class CollaborationAnalysisTemplateSummary extends Shape
 {
@@ -28,8 +27,7 @@ class CollaborationAnalysisTemplateSummary extends Shape
      *     collaborationArn: string,
      *     collaborationId: string,
      *     creatorAccountId: string,
-     *     description?: string|null,
-     *     isSyntheticData?: bool|null
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

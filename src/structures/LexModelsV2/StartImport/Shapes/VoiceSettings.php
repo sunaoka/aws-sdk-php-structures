@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\StartImport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'standard'|'neural'|'long-form'|'generative'|null $engine
  * @property string $voiceId
+ * @property 'standard'|'neural'|null $engine
  */
 class VoiceSettings extends Shape
 {
     /**
      * @param array{
-     *     engine?: 'standard'|'neural'|'long-form'|'generative'|null,
-     *     voiceId: string
+     *     voiceId: string,
+     *     engine?: 'standard'|'neural'|null
      * } $args
      */
     public function __construct(array $args)

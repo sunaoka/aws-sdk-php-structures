@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\CertificateSummary>|null $certificateList
- * @property string $trustStoreArn
  * @property string|null $nextToken
+ * @property string|null $trustStoreArn
  */
 class ListTrustStoreCertificatesResponse extends Response
 {

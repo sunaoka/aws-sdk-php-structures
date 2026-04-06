@@ -5,24 +5,20 @@ namespace Sunaoka\Aws\Structures\MediaTailor\CreatePrefetchSchedule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\PrefetchConsumption|null $Consumption
+ * @property Shapes\PrefetchConsumption $Consumption
  * @property string $Name
  * @property string $PlaybackConfigurationName
- * @property Shapes\PrefetchRetrieval|null $Retrieval
- * @property Shapes\RecurringPrefetchConfiguration|null $RecurringPrefetchConfiguration
- * @property 'SINGLE'|'RECURRING'|null $ScheduleType
+ * @property Shapes\PrefetchRetrieval $Retrieval
  * @property string|null $StreamId
  */
 class CreatePrefetchScheduleRequest extends Request
 {
     /**
      * @param array{
-     *     Consumption?: Shapes\PrefetchConsumption|null,
+     *     Consumption: Shapes\PrefetchConsumption,
      *     Name: string,
      *     PlaybackConfigurationName: string,
-     *     Retrieval?: Shapes\PrefetchRetrieval|null,
-     *     RecurringPrefetchConfiguration?: Shapes\RecurringPrefetchConfiguration|null,
-     *     ScheduleType?: 'SINGLE'|'RECURRING'|null,
+     *     Retrieval: Shapes\PrefetchRetrieval,
      *     StreamId?: string|null
      * } $args
      */

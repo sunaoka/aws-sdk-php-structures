@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $arn
  * @property string|null $signalCatalogArn
  * @property string|null $description
- * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null $status
+ * @property 'ACTIVE'|'DRAFT'|null $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModificationTime
  */
@@ -21,7 +21,7 @@ class ModelManifestSummary extends Shape
      *     arn?: string|null,
      *     signalCatalogArn?: string|null,
      *     description?: string|null,
-     *     status?: 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null,
+     *     status?: 'ACTIVE'|'DRAFT'|null,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     lastModificationTime: \Aws\Api\DateTimeResult
      * } $args

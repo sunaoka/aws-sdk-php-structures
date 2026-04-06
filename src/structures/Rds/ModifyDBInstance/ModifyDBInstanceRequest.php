@@ -23,7 +23,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $AutoMinorVersionUpgrade
  * @property string|null $LicenseModel
  * @property int|null $Iops
- * @property int|null $StorageThroughput
  * @property string|null $OptionGroupName
  * @property string|null $NewDBInstanceIdentifier
  * @property string|null $StorageType
@@ -35,16 +34,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DomainOu
  * @property string|null $DomainAuthSecretArn
  * @property list<string>|null $DomainDnsIps
- * @property bool|null $DisableDomain
  * @property bool|null $CopyTagsToSnapshot
  * @property int|null $MonitoringInterval
  * @property int|null $DBPortNumber
  * @property bool|null $PubliclyAccessible
  * @property string|null $MonitoringRoleArn
  * @property string|null $DomainIAMRoleName
+ * @property bool|null $DisableDomain
  * @property int|null $PromotionTier
  * @property bool|null $EnableIAMDatabaseAuthentication
- * @property 'standard'|'advanced'|null $DatabaseInsightsMode
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
  * @property int|null $PerformanceInsightsRetentionPeriod
@@ -55,20 +53,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $MaxAllocatedStorage
  * @property bool|null $CertificateRotationRestart
  * @property 'open-read-only'|'mounted'|null $ReplicaMode
+ * @property bool|null $EnableCustomerOwnedIp
+ * @property string|null $AwsBackupRecoveryPointArn
  * @property 'full'|'all-paused'|null $AutomationMode
  * @property int|null $ResumeFullAutomationModeMinutes
- * @property bool|null $EnableCustomerOwnedIp
  * @property string|null $NetworkType
- * @property string|null $AwsBackupRecoveryPointArn
+ * @property int|null $StorageThroughput
  * @property bool|null $ManageMasterUserPassword
  * @property bool|null $RotateMasterUserPassword
  * @property string|null $MasterUserSecretKmsKeyId
- * @property bool|null $MultiTenant
- * @property bool|null $DedicatedLogVolume
  * @property string|null $Engine
- * @property list<Shapes\ModifyAdditionalStorageVolume>|null $AdditionalStorageVolumes
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
- * @property 'password'|'iam-db-auth'|null $MasterUserAuthenticationType
  */
 class ModifyDBInstanceRequest extends Request
 {
@@ -92,7 +86,6 @@ class ModifyDBInstanceRequest extends Request
      *     AutoMinorVersionUpgrade?: bool|null,
      *     LicenseModel?: string|null,
      *     Iops?: int|null,
-     *     StorageThroughput?: int|null,
      *     OptionGroupName?: string|null,
      *     NewDBInstanceIdentifier?: string|null,
      *     StorageType?: string|null,
@@ -104,16 +97,15 @@ class ModifyDBInstanceRequest extends Request
      *     DomainOu?: string|null,
      *     DomainAuthSecretArn?: string|null,
      *     DomainDnsIps?: list<string>|null,
-     *     DisableDomain?: bool|null,
      *     CopyTagsToSnapshot?: bool|null,
      *     MonitoringInterval?: int|null,
      *     DBPortNumber?: int|null,
      *     PubliclyAccessible?: bool|null,
      *     MonitoringRoleArn?: string|null,
      *     DomainIAMRoleName?: string|null,
+     *     DisableDomain?: bool|null,
      *     PromotionTier?: int|null,
      *     EnableIAMDatabaseAuthentication?: bool|null,
-     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
      *     EnablePerformanceInsights?: bool|null,
      *     PerformanceInsightsKMSKeyId?: string|null,
      *     PerformanceInsightsRetentionPeriod?: int|null,
@@ -124,20 +116,16 @@ class ModifyDBInstanceRequest extends Request
      *     MaxAllocatedStorage?: int|null,
      *     CertificateRotationRestart?: bool|null,
      *     ReplicaMode?: 'open-read-only'|'mounted'|null,
+     *     EnableCustomerOwnedIp?: bool|null,
+     *     AwsBackupRecoveryPointArn?: string|null,
      *     AutomationMode?: 'full'|'all-paused'|null,
      *     ResumeFullAutomationModeMinutes?: int|null,
-     *     EnableCustomerOwnedIp?: bool|null,
      *     NetworkType?: string|null,
-     *     AwsBackupRecoveryPointArn?: string|null,
+     *     StorageThroughput?: int|null,
      *     ManageMasterUserPassword?: bool|null,
      *     RotateMasterUserPassword?: bool|null,
      *     MasterUserSecretKmsKeyId?: string|null,
-     *     MultiTenant?: bool|null,
-     *     DedicatedLogVolume?: bool|null,
-     *     Engine?: string|null,
-     *     AdditionalStorageVolumes?: list<Shapes\ModifyAdditionalStorageVolume>|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     MasterUserAuthenticationType?: 'password'|'iam-db-auth'|null
+     *     Engine?: string|null
      * } $args
      */
     public function __construct(array $args)

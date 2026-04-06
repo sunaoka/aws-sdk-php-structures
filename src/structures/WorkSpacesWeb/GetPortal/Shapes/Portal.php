@@ -5,58 +5,44 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetPortal\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $portalArn
- * @property 'AppStream'|null $rendererType
- * @property 'Chrome'|null $browserType
- * @property 'Incomplete'|'Pending'|'Active'|null $portalStatus
- * @property string|null $portalEndpoint
- * @property string|null $displayName
- * @property \Aws\Api\DateTimeResult|null $creationDate
- * @property string|null $browserSettingsArn
- * @property string|null $dataProtectionSettingsArn
- * @property string|null $userSettingsArn
- * @property string|null $networkSettingsArn
- * @property string|null $sessionLoggerArn
- * @property string|null $trustStoreArn
- * @property string|null $statusReason
- * @property string|null $userAccessLoggingSettingsArn
  * @property 'Standard'|'IAM_Identity_Center'|null $authenticationType
+ * @property string|null $browserSettingsArn
+ * @property 'Chrome'|null $browserType
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $displayName
  * @property string|null $ipAccessSettingsArn
- * @property string|null $customerManagedKey
- * @property array<string, string>|null $additionalEncryptionContext
- * @property 'standard.regular'|'standard.large'|'standard.xlarge'|null $instanceType
- * @property int<1, 5000>|null $maxConcurrentSessions
- * @property string|null $portalCustomDomain
+ * @property string|null $networkSettingsArn
+ * @property string|null $portalArn
+ * @property string|null $portalEndpoint
+ * @property 'Incomplete'|'Pending'|'Active'|null $portalStatus
+ * @property 'AppStream'|null $rendererType
+ * @property string|null $statusReason
+ * @property string|null $trustStoreArn
+ * @property string|null $userAccessLoggingSettingsArn
+ * @property string|null $userSettingsArn
  */
 class Portal extends Shape
 {
     /**
      * @param array{
-     *     portalArn: string,
-     *     rendererType?: 'AppStream'|null,
-     *     browserType?: 'Chrome'|null,
-     *     portalStatus?: 'Incomplete'|'Pending'|'Active'|null,
-     *     portalEndpoint?: string|null,
-     *     displayName?: string|null,
-     *     creationDate?: \Aws\Api\DateTimeResult|null,
-     *     browserSettingsArn?: string|null,
-     *     dataProtectionSettingsArn?: string|null,
-     *     userSettingsArn?: string|null,
-     *     networkSettingsArn?: string|null,
-     *     sessionLoggerArn?: string|null,
-     *     trustStoreArn?: string|null,
-     *     statusReason?: string|null,
-     *     userAccessLoggingSettingsArn?: string|null,
      *     authenticationType?: 'Standard'|'IAM_Identity_Center'|null,
+     *     browserSettingsArn?: string|null,
+     *     browserType?: 'Chrome'|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     displayName?: string|null,
      *     ipAccessSettingsArn?: string|null,
-     *     customerManagedKey?: string|null,
-     *     additionalEncryptionContext?: array<string, string>|null,
-     *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge'|null,
-     *     maxConcurrentSessions?: int<1, 5000>|null,
-     *     portalCustomDomain?: string|null
+     *     networkSettingsArn?: string|null,
+     *     portalArn?: string|null,
+     *     portalEndpoint?: string|null,
+     *     portalStatus?: 'Incomplete'|'Pending'|'Active'|null,
+     *     rendererType?: 'AppStream'|null,
+     *     statusReason?: string|null,
+     *     trustStoreArn?: string|null,
+     *     userAccessLoggingSettingsArn?: string|null,
+     *     userSettingsArn?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

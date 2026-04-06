@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\UsageRecord> $UsageRecords
- * @property string|null $ProductCode
+ * @property string $ProductCode
  */
 class BatchMeterUsageRequest extends Request
 {
     /**
      * @param array{
      *     UsageRecords: list<Shapes\UsageRecord>,
-     *     ProductCode?: string|null
+     *     ProductCode: string
      * } $args
      */
     public function __construct(array $args)

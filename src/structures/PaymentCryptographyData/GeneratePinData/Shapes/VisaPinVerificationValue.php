@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EncryptedPinBlock
- * @property int<0, 6> $PinVerificationKeyIndex
+ * @property int<0, 9> $PinVerificationKeyIndex
  */
 class VisaPinVerificationValue extends Shape
 {
     /**
      * @param array{
      *     EncryptedPinBlock: string,
-     *     PinVerificationKeyIndex: int<0, 6>
+     *     PinVerificationKeyIndex: int<0, 9>
      * } $args
      */
     public function __construct(array $args)

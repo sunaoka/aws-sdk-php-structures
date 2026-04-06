@@ -7,12 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property VCpuCountRequest $VCpuCount
  * @property MemoryMiBRequest $MemoryMiB
- * @property list<'intel'|'amd'|'amazon-web-services'|'apple'>|null $CpuManufacturers
+ * @property list<'intel'|'amd'|'amazon-web-services'>|null $CpuManufacturers
  * @property MemoryGiBPerVCpuRequest|null $MemoryGiBPerVCpu
  * @property list<string>|null $ExcludedInstanceTypes
  * @property list<'current'|'previous'>|null $InstanceGenerations
  * @property int<0, max>|null $SpotMaxPricePercentageOverLowestPrice
- * @property int<0, max>|null $MaxSpotPriceAsPercentageOfOptimalOnDemandPrice
  * @property int<0, max>|null $OnDemandMaxPricePercentageOverLowestPrice
  * @property 'included'|'excluded'|'required'|null $BareMetal
  * @property 'included'|'excluded'|'required'|null $BurstablePerformance
@@ -29,7 +28,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AcceleratorTotalMemoryMiBRequest|null $AcceleratorTotalMemoryMiB
  * @property NetworkBandwidthGbpsRequest|null $NetworkBandwidthGbps
  * @property list<string>|null $AllowedInstanceTypes
- * @property BaselinePerformanceFactorsRequest|null $BaselinePerformanceFactors
  */
 class InstanceRequirements extends Shape
 {
@@ -37,12 +35,11 @@ class InstanceRequirements extends Shape
      * @param array{
      *     VCpuCount: VCpuCountRequest,
      *     MemoryMiB: MemoryMiBRequest,
-     *     CpuManufacturers?: list<'intel'|'amd'|'amazon-web-services'|'apple'>|null,
+     *     CpuManufacturers?: list<'intel'|'amd'|'amazon-web-services'>|null,
      *     MemoryGiBPerVCpu?: MemoryGiBPerVCpuRequest|null,
      *     ExcludedInstanceTypes?: list<string>|null,
      *     InstanceGenerations?: list<'current'|'previous'>|null,
      *     SpotMaxPricePercentageOverLowestPrice?: int<0, max>|null,
-     *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int<0, max>|null,
      *     OnDemandMaxPricePercentageOverLowestPrice?: int<0, max>|null,
      *     BareMetal?: 'included'|'excluded'|'required'|null,
      *     BurstablePerformance?: 'included'|'excluded'|'required'|null,
@@ -58,8 +55,7 @@ class InstanceRequirements extends Shape
      *     AcceleratorNames?: list<'a100'|'v100'|'k80'|'t4'|'m60'|'radeon-pro-v520'|'vu9p'>|null,
      *     AcceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiBRequest|null,
      *     NetworkBandwidthGbps?: NetworkBandwidthGbpsRequest|null,
-     *     AllowedInstanceTypes?: list<string>|null,
-     *     BaselinePerformanceFactors?: BaselinePerformanceFactorsRequest|null
+     *     AllowedInstanceTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<MetricDimension>|null $Dimensions
  * @property 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum'|null $Statistic
  * @property string|null $Unit
- * @property int<1, max>|null $Period
  * @property list<TargetTrackingMetricDataQuery>|null $Metrics
  */
 class CustomizedMetricSpecification extends Shape
@@ -22,7 +21,6 @@ class CustomizedMetricSpecification extends Shape
      *     Dimensions?: list<MetricDimension>|null,
      *     Statistic?: 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum'|null,
      *     Unit?: string|null,
-     *     Period?: int<1, max>|null,
      *     Metrics?: list<TargetTrackingMetricDataQuery>|null
      * } $args
      */

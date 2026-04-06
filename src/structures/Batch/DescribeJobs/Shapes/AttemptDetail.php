@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $startedAt
  * @property int|null $stoppedAt
  * @property string|null $statusReason
- * @property list<AttemptEcsTaskDetails>|null $taskProperties
  */
 class AttemptDetail extends Shape
 {
@@ -18,8 +17,7 @@ class AttemptDetail extends Shape
      *     container?: AttemptContainerDetail|null,
      *     startedAt?: int|null,
      *     stoppedAt?: int|null,
-     *     statusReason?: string|null,
-     *     taskProperties?: list<AttemptEcsTaskDetails>|null
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

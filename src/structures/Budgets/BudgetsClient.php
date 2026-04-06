@@ -23,9 +23,6 @@ class BudgetsClient extends \Aws\Budgets\BudgetsClient
     use DescribeNotificationsForBudget\DescribeNotificationsForBudgetTrait;
     use DescribeSubscribersForNotification\DescribeSubscribersForNotificationTrait;
     use ExecuteBudgetAction\ExecuteBudgetActionTrait;
-    use ListTagsForResource\ListTagsForResourceTrait;
-    use TagResource\TagResourceTrait;
-    use UntagResource\UntagResourceTrait;
     use UpdateBudget\UpdateBudgetTrait;
     use UpdateBudgetAction\UpdateBudgetActionTrait;
     use UpdateNotification\UpdateNotificationTrait;

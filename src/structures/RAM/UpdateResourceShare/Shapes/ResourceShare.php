@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
  * @property 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null $featureSet
- * @property ResourceShareConfiguration|null $resourceShareConfiguration
  */
 class ResourceShare extends Shape
 {
@@ -30,8 +29,7 @@ class ResourceShare extends Shape
      *     tags?: list<Tag>|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
-     *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null,
-     *     resourceShareConfiguration?: ResourceShareConfiguration|null
+     *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD'|null
      * } $args
      */
     public function __construct(array $args = [])

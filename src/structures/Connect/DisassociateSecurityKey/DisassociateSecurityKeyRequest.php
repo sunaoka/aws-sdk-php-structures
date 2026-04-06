@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $AssociationId
- * @property string|null $ClientToken
  */
 class DisassociateSecurityKeyRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     AssociationId: string,
-     *     ClientToken?: string|null
+     *     AssociationId: string
      * } $args
      */
     public function __construct(array $args)

@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $IncludeControlDetails
  * @property bool|null $IncludeNullAndEmpty
  * @property bool|null $NoHexPrefix
- * @property bool|null $UseLargeIntegerValue
  */
 class KinesisSettings extends Shape
 {
@@ -30,8 +29,7 @@ class KinesisSettings extends Shape
      *     IncludeTableAlterOperations?: bool|null,
      *     IncludeControlDetails?: bool|null,
      *     IncludeNullAndEmpty?: bool|null,
-     *     NoHexPrefix?: bool|null,
-     *     UseLargeIntegerValue?: bool|null
+     *     NoHexPrefix?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

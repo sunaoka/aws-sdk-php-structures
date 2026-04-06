@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $S3Bucket
- * @property 'ApplicationDiscoveryService'|'MPA'|'Import'|'StrategyRecommendationsApplicationDataCollector'|null $dataSourceType
+ * @property 'ApplicationDiscoveryService'|'MPA'|'Import'|null $dataSourceType
  * @property list<Shapes\Group>|null $groupId
  * @property string $name
  * @property string|null $s3bucketForReportData
@@ -17,7 +17,7 @@ class StartImportFileTaskRequest extends Request
     /**
      * @param array{
      *     S3Bucket: string,
-     *     dataSourceType?: 'ApplicationDiscoveryService'|'MPA'|'Import'|'StrategyRecommendationsApplicationDataCollector'|null,
+     *     dataSourceType?: 'ApplicationDiscoveryService'|'MPA'|'Import'|null,
      *     groupId?: list<Shapes\Group>|null,
      *     name: string,
      *     s3bucketForReportData?: string|null,

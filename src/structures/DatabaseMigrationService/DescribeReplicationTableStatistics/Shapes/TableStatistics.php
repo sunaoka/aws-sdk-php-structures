@@ -28,11 +28,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $ValidationSuspendedRecords
  * @property string|null $ValidationState
  * @property string|null $ValidationStateDetails
- * @property string|null $ResyncState
- * @property int|null $ResyncRowsAttempted
- * @property int|null $ResyncRowsSucceeded
- * @property int|null $ResyncRowsFailed
- * @property double|null $ResyncProgress
  */
 class TableStatistics extends Shape
 {
@@ -60,12 +55,7 @@ class TableStatistics extends Shape
      *     ValidationFailedRecords?: int|null,
      *     ValidationSuspendedRecords?: int|null,
      *     ValidationState?: string|null,
-     *     ValidationStateDetails?: string|null,
-     *     ResyncState?: string|null,
-     *     ResyncRowsAttempted?: int|null,
-     *     ResyncRowsSucceeded?: int|null,
-     *     ResyncRowsFailed?: int|null,
-     *     ResyncProgress?: double|null
+     *     ValidationStateDetails?: string|null
      * } $args
      */
     public function __construct(array $args = [])

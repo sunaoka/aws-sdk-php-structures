@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
  * @property array<string, string>|null $tags
- * @property array<string, string>|null $applicationTag
  */
 class Application extends Shape
 {
@@ -24,8 +23,7 @@ class Application extends Shape
      *     description?: string|null,
      *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
-     *     tags?: array<string, string>|null,
-     *     applicationTag?: array<string, string>|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

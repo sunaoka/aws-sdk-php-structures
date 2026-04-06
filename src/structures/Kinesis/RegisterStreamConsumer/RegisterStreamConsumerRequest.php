@@ -7,17 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StreamARN
  * @property string $ConsumerName
- * @property string|null $StreamId
- * @property array<string, string>|null $Tags
  */
 class RegisterStreamConsumerRequest extends Request
 {
     /**
      * @param array{
      *     StreamARN: string,
-     *     ConsumerName: string,
-     *     StreamId?: string|null,
-     *     Tags?: array<string, string>|null
+     *     ConsumerName: string
      * } $args
      */
     public function __construct(array $args)

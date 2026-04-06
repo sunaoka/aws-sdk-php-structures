@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HttpEndpointRetryOptions|null $RetryOptions
  * @property 'FailedDataOnly'|'AllData'|null $S3BackupMode
  * @property S3DestinationConfiguration $S3Configuration
- * @property SecretsManagerConfiguration|null $SecretsManagerConfiguration
  */
 class HttpEndpointDestinationConfiguration extends Shape
 {
@@ -28,8 +27,7 @@ class HttpEndpointDestinationConfiguration extends Shape
      *     RoleARN?: string|null,
      *     RetryOptions?: HttpEndpointRetryOptions|null,
      *     S3BackupMode?: 'FailedDataOnly'|'AllData'|null,
-     *     S3Configuration: S3DestinationConfiguration,
-     *     SecretsManagerConfiguration?: SecretsManagerConfiguration|null
+     *     S3Configuration: S3DestinationConfiguration
      * } $args
      */
     public function __construct(array $args)

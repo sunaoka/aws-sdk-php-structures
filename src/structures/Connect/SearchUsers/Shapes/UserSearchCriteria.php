@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<UserSearchCriteria>|null $OrConditions
  * @property list<UserSearchCriteria>|null $AndConditions
  * @property StringCondition|null $StringCondition
- * @property ListCondition|null $ListCondition
  * @property HierarchyGroupCondition|null $HierarchyGroupCondition
  */
 class UserSearchCriteria extends Shape
@@ -18,7 +17,6 @@ class UserSearchCriteria extends Shape
      *     OrConditions?: list<UserSearchCriteria>|null,
      *     AndConditions?: list<UserSearchCriteria>|null,
      *     StringCondition?: StringCondition|null,
-     *     ListCondition?: ListCondition|null,
      *     HierarchyGroupCondition?: HierarchyGroupCondition|null
      * } $args
      */

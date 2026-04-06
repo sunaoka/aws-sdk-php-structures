@@ -8,11 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $InstanceId
  * @property string|null $InstanceType
  * @property string $AvailabilityZone
- * @property 'Pending'|'Pending:Wait'|'Pending:Proceed'|'Quarantined'|'InService'|'Terminating'|'Terminating:Wait'|'Terminating:Proceed'|'Terminating:Retained'|'Terminated'|'Detaching'|'Detached'|'EnteringStandby'|'Standby'|'ReplacingRootVolume'|'ReplacingRootVolume:Wait'|'ReplacingRootVolume:Proceed'|'RootVolumeReplaced'|'Warmed:Pending'|'Warmed:Pending:Wait'|'Warmed:Pending:Proceed'|'Warmed:Pending:Retained'|'Warmed:Terminating'|'Warmed:Terminating:Wait'|'Warmed:Terminating:Proceed'|'Warmed:Terminating:Retained'|'Warmed:Terminated'|'Warmed:Stopped'|'Warmed:Running'|'Warmed:Hibernated' $LifecycleState
+ * @property 'Pending'|'Pending:Wait'|'Pending:Proceed'|'Quarantined'|'InService'|'Terminating'|'Terminating:Wait'|'Terminating:Proceed'|'Terminated'|'Detaching'|'Detached'|'EnteringStandby'|'Standby'|'Warmed:Pending'|'Warmed:Pending:Wait'|'Warmed:Pending:Proceed'|'Warmed:Terminating'|'Warmed:Terminating:Wait'|'Warmed:Terminating:Proceed'|'Warmed:Terminated'|'Warmed:Stopped'|'Warmed:Running'|'Warmed:Hibernated' $LifecycleState
  * @property string $HealthStatus
  * @property string|null $LaunchConfigurationName
  * @property LaunchTemplateSpecification|null $LaunchTemplate
- * @property string|null $ImageId
  * @property bool $ProtectedFromScaleIn
  * @property string|null $WeightedCapacity
  */
@@ -23,11 +22,10 @@ class Instance extends Shape
      *     InstanceId: string,
      *     InstanceType?: string|null,
      *     AvailabilityZone: string,
-     *     LifecycleState: 'Pending'|'Pending:Wait'|'Pending:Proceed'|'Quarantined'|'InService'|'Terminating'|'Terminating:Wait'|'Terminating:Proceed'|'Terminating:Retained'|'Terminated'|'Detaching'|'Detached'|'EnteringStandby'|'Standby'|'ReplacingRootVolume'|'ReplacingRootVolume:Wait'|'ReplacingRootVolume:Proceed'|'RootVolumeReplaced'|'Warmed:Pending'|'Warmed:Pending:Wait'|'Warmed:Pending:Proceed'|'Warmed:Pending:Retained'|'Warmed:Terminating'|'Warmed:Terminating:Wait'|'Warmed:Terminating:Proceed'|'Warmed:Terminating:Retained'|'Warmed:Terminated'|'Warmed:Stopped'|'Warmed:Running'|'Warmed:Hibernated',
+     *     LifecycleState: 'Pending'|'Pending:Wait'|'Pending:Proceed'|'Quarantined'|'InService'|'Terminating'|'Terminating:Wait'|'Terminating:Proceed'|'Terminated'|'Detaching'|'Detached'|'EnteringStandby'|'Standby'|'Warmed:Pending'|'Warmed:Pending:Wait'|'Warmed:Pending:Proceed'|'Warmed:Terminating'|'Warmed:Terminating:Wait'|'Warmed:Terminating:Proceed'|'Warmed:Terminated'|'Warmed:Stopped'|'Warmed:Running'|'Warmed:Hibernated',
      *     HealthStatus: string,
      *     LaunchConfigurationName?: string|null,
      *     LaunchTemplate?: LaunchTemplateSpecification|null,
-     *     ImageId?: string|null,
      *     ProtectedFromScaleIn: bool,
      *     WeightedCapacity?: string|null
      * } $args

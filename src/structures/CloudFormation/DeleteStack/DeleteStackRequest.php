@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $RetainResources
  * @property string|null $RoleARN
  * @property string|null $ClientRequestToken
- * @property 'STANDARD'|'FORCE_DELETE_STACK'|null $DeletionMode
  */
 class DeleteStackRequest extends Request
 {
@@ -18,8 +17,7 @@ class DeleteStackRequest extends Request
      *     StackName: string,
      *     RetainResources?: list<string>|null,
      *     RoleARN?: string|null,
-     *     ClientRequestToken?: string|null,
-     *     DeletionMode?: 'STANDARD'|'FORCE_DELETE_STACK'|null
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

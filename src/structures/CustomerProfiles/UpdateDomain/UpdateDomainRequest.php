@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DeadLetterQueueUrl
  * @property Shapes\MatchingRequest|null $Matching
  * @property Shapes\RuleBasedMatchingRequest|null $RuleBasedMatching
- * @property Shapes\DataStoreRequest|null $DataStore
  * @property array<string, string>|null $Tags
  */
 class UpdateDomainRequest extends Request
@@ -24,7 +23,6 @@ class UpdateDomainRequest extends Request
      *     DeadLetterQueueUrl?: string|null,
      *     Matching?: Shapes\MatchingRequest|null,
      *     RuleBasedMatching?: Shapes\RuleBasedMatchingRequest|null,
-     *     DataStore?: Shapes\DataStoreRequest|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

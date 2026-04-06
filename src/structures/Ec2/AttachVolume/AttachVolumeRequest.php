@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Device
  * @property string $InstanceId
  * @property string $VolumeId
- * @property int|null $EbsCardIndex
  * @property bool|null $DryRun
  */
 class AttachVolumeRequest extends Request
@@ -18,7 +17,6 @@ class AttachVolumeRequest extends Request
      *     Device: string,
      *     InstanceId: string,
      *     VolumeId: string,
-     *     EbsCardIndex?: int|null,
      *     DryRun?: bool|null
      * } $args
      */

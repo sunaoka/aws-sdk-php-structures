@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\LocationService\ListKeys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyName
- * @property \Aws\Api\DateTimeResult $ExpireTime
- * @property string|null $Description
- * @property ApiKeyRestrictions $Restrictions
  * @property \Aws\Api\DateTimeResult $CreateTime
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult $ExpireTime
+ * @property string $KeyName
+ * @property ApiKeyRestrictions $Restrictions
  * @property \Aws\Api\DateTimeResult $UpdateTime
  */
 class ListKeysResponseEntry extends Shape
 {
     /**
      * @param array{
-     *     KeyName: string,
-     *     ExpireTime: \Aws\Api\DateTimeResult,
-     *     Description?: string|null,
-     *     Restrictions: ApiKeyRestrictions,
      *     CreateTime: \Aws\Api\DateTimeResult,
+     *     Description?: string|null,
+     *     ExpireTime: \Aws\Api\DateTimeResult,
+     *     KeyName: string,
+     *     Restrictions: ApiKeyRestrictions,
      *     UpdateTime: \Aws\Api\DateTimeResult
      * } $args
      */

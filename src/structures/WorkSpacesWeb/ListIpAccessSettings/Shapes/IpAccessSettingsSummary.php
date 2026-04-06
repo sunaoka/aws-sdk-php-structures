@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListIpAccessSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ipAccessSettingsArn
- * @property string|null $displayName
- * @property string|null $description
  * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $description
+ * @property string|null $displayName
+ * @property string|null $ipAccessSettingsArn
  */
 class IpAccessSettingsSummary extends Shape
 {
     /**
      * @param array{
-     *     ipAccessSettingsArn: string,
-     *     displayName?: string|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
      *     description?: string|null,
-     *     creationDate?: \Aws\Api\DateTimeResult|null
+     *     displayName?: string|null,
+     *     ipAccessSettingsArn?: string|null
      * } $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

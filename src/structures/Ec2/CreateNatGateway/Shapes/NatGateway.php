@@ -17,11 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $VpcId
  * @property list<Tag>|null $Tags
  * @property 'private'|'public'|null $ConnectivityType
- * @property 'zonal'|'regional'|null $AvailabilityMode
- * @property 'enabled'|'disabled'|null $AutoScalingIps
- * @property 'enabled'|'disabled'|null $AutoProvisionZones
- * @property list<NatGatewayAttachedAppliance>|null $AttachedAppliances
- * @property string|null $RouteTableId
  */
 class NatGateway extends Shape
 {
@@ -38,12 +33,7 @@ class NatGateway extends Shape
      *     SubnetId?: string|null,
      *     VpcId?: string|null,
      *     Tags?: list<Tag>|null,
-     *     ConnectivityType?: 'private'|'public'|null,
-     *     AvailabilityMode?: 'zonal'|'regional'|null,
-     *     AutoScalingIps?: 'enabled'|'disabled'|null,
-     *     AutoProvisionZones?: 'enabled'|'disabled'|null,
-     *     AttachedAppliances?: list<NatGatewayAttachedAppliance>|null,
-     *     RouteTableId?: string|null
+     *     ConnectivityType?: 'private'|'public'|null
      * } $args
      */
     public function __construct(array $args = [])

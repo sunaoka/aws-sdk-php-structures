@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardSnapshotJobResult\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3BucketConfiguration $BucketConfiguration
+ * @property S3BucketConfiguration|null $BucketConfiguration
  */
 class SnapshotS3DestinationConfiguration extends Shape
 {
     /**
-     * @param array{BucketConfiguration: S3BucketConfiguration} $args
+     * @param array{BucketConfiguration?: S3BucketConfiguration|null} $args
      */
-    public function __construct(array $args)
+    public function __construct(array $args = [])
     {
         $this->__data = $args;
     }

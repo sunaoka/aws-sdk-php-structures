@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Content
  * @property string|null $DocumentURI
  * @property list<DocumentAttribute>|null $DocumentAttributes
- * @property ScoreAttributes|null $ScoreAttributes
  */
 class RetrieveResultItem extends Shape
 {
@@ -22,8 +21,7 @@ class RetrieveResultItem extends Shape
      *     DocumentTitle?: string|null,
      *     Content?: string|null,
      *     DocumentURI?: string|null,
-     *     DocumentAttributes?: list<DocumentAttribute>|null,
-     *     ScoreAttributes?: ScoreAttributes|null
+     *     DocumentAttributes?: list<DocumentAttribute>|null
      * } $args
      */
     public function __construct(array $args = [])

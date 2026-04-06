@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<1, max> $TargetShardCount
  * @property 'UNIFORM_SCALING' $ScalingType
  * @property string|null $StreamARN
- * @property string|null $StreamId
  */
 class UpdateShardCountRequest extends Request
 {
@@ -18,8 +17,7 @@ class UpdateShardCountRequest extends Request
      *     StreamName?: string|null,
      *     TargetShardCount: int<1, max>,
      *     ScalingType: 'UNIFORM_SCALING',
-     *     StreamARN?: string|null,
-     *     StreamId?: string|null
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args)

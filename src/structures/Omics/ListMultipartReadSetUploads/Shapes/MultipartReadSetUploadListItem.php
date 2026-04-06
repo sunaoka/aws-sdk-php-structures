@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $sequenceStoreId
  * @property string $uploadId
- * @property 'FASTQ'|'BAM'|'CRAM'|'UBAM' $sourceFileType
+ * @property 'FASTQ'|'BAM'|'CRAM' $sourceFileType
  * @property string $subjectId
  * @property string $sampleId
  * @property string $generatedFrom
@@ -23,7 +23,7 @@ class MultipartReadSetUploadListItem extends Shape
      * @param array{
      *     sequenceStoreId: string,
      *     uploadId: string,
-     *     sourceFileType: 'FASTQ'|'BAM'|'CRAM'|'UBAM',
+     *     sourceFileType: 'FASTQ'|'BAM'|'CRAM',
      *     subjectId: string,
      *     sampleId: string,
      *     generatedFrom: string,

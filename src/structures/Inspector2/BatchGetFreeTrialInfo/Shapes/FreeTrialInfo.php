@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Inspector2\BatchGetFreeTrialInfo\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EC2'|'ECR'|'LAMBDA'|'LAMBDA_CODE'|'CODE_REPOSITORY' $type
- * @property \Aws\Api\DateTimeResult $start
  * @property \Aws\Api\DateTimeResult $end
+ * @property \Aws\Api\DateTimeResult $start
  * @property 'ACTIVE'|'INACTIVE' $status
+ * @property 'EC2'|'ECR'|'LAMBDA'|'LAMBDA_CODE' $type
  */
 class FreeTrialInfo extends Shape
 {
     /**
      * @param array{
-     *     type: 'EC2'|'ECR'|'LAMBDA'|'LAMBDA_CODE'|'CODE_REPOSITORY',
-     *     start: \Aws\Api\DateTimeResult,
      *     end: \Aws\Api\DateTimeResult,
-     *     status: 'ACTIVE'|'INACTIVE'
+     *     start: \Aws\Api\DateTimeResult,
+     *     status: 'ACTIVE'|'INACTIVE',
+     *     type: 'EC2'|'ECR'|'LAMBDA'|'LAMBDA_CODE'
      * } $args
      */
     public function __construct(array $args)

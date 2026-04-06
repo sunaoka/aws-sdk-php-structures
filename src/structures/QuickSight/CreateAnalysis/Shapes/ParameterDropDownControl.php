@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MULTI_SELECT'|'SINGLE_SELECT'|null $Type
  * @property ParameterSelectableValues|null $SelectableValues
  * @property CascadingControlConfiguration|null $CascadingControlConfiguration
- * @property 'AUTO'|'MANUAL'|null $CommitMode
  */
 class ParameterDropDownControl extends Shape
 {
@@ -24,8 +23,7 @@ class ParameterDropDownControl extends Shape
      *     DisplayOptions?: DropDownControlDisplayOptions|null,
      *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT'|null,
      *     SelectableValues?: ParameterSelectableValues|null,
-     *     CascadingControlConfiguration?: CascadingControlConfiguration|null,
-     *     CommitMode?: 'AUTO'|'MANUAL'|null
+     *     CascadingControlConfiguration?: CascadingControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

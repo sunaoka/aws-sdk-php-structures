@@ -42,7 +42,6 @@ class RekognitionClient extends \Aws\Rekognition\RekognitionClient
     use GetFaceLivenessSessionResults\GetFaceLivenessSessionResultsTrait;
     use GetFaceSearch\GetFaceSearchTrait;
     use GetLabelDetection\GetLabelDetectionTrait;
-    use GetMediaAnalysisJob\GetMediaAnalysisJobTrait;
     use GetPersonTracking\GetPersonTrackingTrait;
     use GetSegmentDetection\GetSegmentDetectionTrait;
     use GetTextDetection\GetTextDetectionTrait;
@@ -51,7 +50,6 @@ class RekognitionClient extends \Aws\Rekognition\RekognitionClient
     use ListDatasetEntries\ListDatasetEntriesTrait;
     use ListDatasetLabels\ListDatasetLabelsTrait;
     use ListFaces\ListFacesTrait;
-    use ListMediaAnalysisJobs\ListMediaAnalysisJobsTrait;
     use ListProjectPolicies\ListProjectPoliciesTrait;
     use ListStreamProcessors\ListStreamProcessorsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
@@ -67,7 +65,6 @@ class RekognitionClient extends \Aws\Rekognition\RekognitionClient
     use StartFaceDetection\StartFaceDetectionTrait;
     use StartFaceSearch\StartFaceSearchTrait;
     use StartLabelDetection\StartLabelDetectionTrait;
-    use StartMediaAnalysisJob\StartMediaAnalysisJobTrait;
     use StartPersonTracking\StartPersonTrackingTrait;
     use StartProjectVersion\StartProjectVersionTrait;
     use StartSegmentDetection\StartSegmentDetectionTrait;

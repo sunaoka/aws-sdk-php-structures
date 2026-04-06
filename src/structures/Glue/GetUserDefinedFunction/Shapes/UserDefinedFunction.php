@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DatabaseName
  * @property string|null $ClassName
  * @property string|null $OwnerName
- * @property 'REGULAR_FUNCTION'|'AGGREGATE_FUNCTION'|'STORED_PROCEDURE'|null $FunctionType
  * @property 'USER'|'ROLE'|'GROUP'|null $OwnerType
  * @property \Aws\Api\DateTimeResult|null $CreateTime
  * @property list<ResourceUri>|null $ResourceUris
@@ -23,7 +22,6 @@ class UserDefinedFunction extends Shape
      *     DatabaseName?: string|null,
      *     ClassName?: string|null,
      *     OwnerName?: string|null,
-     *     FunctionType?: 'REGULAR_FUNCTION'|'AGGREGATE_FUNCTION'|'STORED_PROCEDURE'|null,
      *     OwnerType?: 'USER'|'ROLE'|'GROUP'|null,
      *     CreateTime?: \Aws\Api\DateTimeResult|null,
      *     ResourceUris?: list<ResourceUri>|null,

@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $entityName
  * @property string|null $description
  * @property array<string, Shapes\ComponentUpdateRequest>|null $componentUpdates
- * @property array<string, Shapes\CompositeComponentUpdateRequest>|null $compositeComponentUpdates
  * @property Shapes\ParentEntityUpdateRequest|null $parentEntityUpdate
  */
 class UpdateEntityRequest extends Request
@@ -22,7 +21,6 @@ class UpdateEntityRequest extends Request
      *     entityName?: string|null,
      *     description?: string|null,
      *     componentUpdates?: array<string, Shapes\ComponentUpdateRequest>|null,
-     *     compositeComponentUpdates?: array<string, Shapes\CompositeComponentUpdateRequest>|null,
      *     parentEntityUpdate?: Shapes\ParentEntityUpdateRequest|null
      * } $args
      */

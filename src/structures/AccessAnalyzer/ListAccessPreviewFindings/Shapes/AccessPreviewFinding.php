@@ -13,14 +13,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $condition
  * @property string|null $resource
  * @property bool|null $isPublic
- * @property 'AWS::S3::Bucket'|'AWS::IAM::Role'|'AWS::SQS::Queue'|'AWS::Lambda::Function'|'AWS::Lambda::LayerVersion'|'AWS::KMS::Key'|'AWS::SecretsManager::Secret'|'AWS::EFS::FileSystem'|'AWS::EC2::Snapshot'|'AWS::ECR::Repository'|'AWS::RDS::DBSnapshot'|'AWS::RDS::DBClusterSnapshot'|'AWS::SNS::Topic'|'AWS::S3Express::DirectoryBucket'|'AWS::DynamoDB::Table'|'AWS::DynamoDB::Stream'|'AWS::IAM::User' $resourceType
+ * @property 'AWS::S3::Bucket'|'AWS::IAM::Role'|'AWS::SQS::Queue'|'AWS::Lambda::Function'|'AWS::Lambda::LayerVersion'|'AWS::KMS::Key'|'AWS::SecretsManager::Secret'|'AWS::EFS::FileSystem'|'AWS::EC2::Snapshot'|'AWS::ECR::Repository'|'AWS::RDS::DBSnapshot'|'AWS::RDS::DBClusterSnapshot'|'AWS::SNS::Topic' $resourceType
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'CHANGED'|'NEW'|'UNCHANGED' $changeType
  * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED' $status
  * @property string $resourceOwnerAccount
  * @property string|null $error
  * @property list<FindingSource>|null $sources
- * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|'APPLIED'|null $resourceControlPolicyRestriction
  */
 class AccessPreviewFinding extends Shape
 {
@@ -34,14 +33,13 @@ class AccessPreviewFinding extends Shape
      *     condition?: array<string, string>|null,
      *     resource?: string|null,
      *     isPublic?: bool|null,
-     *     resourceType: 'AWS::S3::Bucket'|'AWS::IAM::Role'|'AWS::SQS::Queue'|'AWS::Lambda::Function'|'AWS::Lambda::LayerVersion'|'AWS::KMS::Key'|'AWS::SecretsManager::Secret'|'AWS::EFS::FileSystem'|'AWS::EC2::Snapshot'|'AWS::ECR::Repository'|'AWS::RDS::DBSnapshot'|'AWS::RDS::DBClusterSnapshot'|'AWS::SNS::Topic'|'AWS::S3Express::DirectoryBucket'|'AWS::DynamoDB::Table'|'AWS::DynamoDB::Stream'|'AWS::IAM::User',
+     *     resourceType: 'AWS::S3::Bucket'|'AWS::IAM::Role'|'AWS::SQS::Queue'|'AWS::Lambda::Function'|'AWS::Lambda::LayerVersion'|'AWS::KMS::Key'|'AWS::SecretsManager::Secret'|'AWS::EFS::FileSystem'|'AWS::EC2::Snapshot'|'AWS::ECR::Repository'|'AWS::RDS::DBSnapshot'|'AWS::RDS::DBClusterSnapshot'|'AWS::SNS::Topic',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     changeType: 'CHANGED'|'NEW'|'UNCHANGED',
      *     status: 'ACTIVE'|'ARCHIVED'|'RESOLVED',
      *     resourceOwnerAccount: string,
      *     error?: string|null,
-     *     sources?: list<FindingSource>|null,
-     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|'APPLIED'|null
+     *     sources?: list<FindingSource>|null
      * } $args
      */
     public function __construct(array $args)

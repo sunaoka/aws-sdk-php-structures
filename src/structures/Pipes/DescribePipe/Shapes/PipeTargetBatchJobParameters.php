@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JobDefinition
- * @property string $JobName
  * @property BatchArrayProperties|null $ArrayProperties
- * @property BatchRetryStrategy|null $RetryStrategy
  * @property BatchContainerOverrides|null $ContainerOverrides
  * @property list<BatchJobDependency>|null $DependsOn
+ * @property string $JobDefinition
+ * @property string $JobName
  * @property array<string, string>|null $Parameters
+ * @property BatchRetryStrategy|null $RetryStrategy
  */
 class PipeTargetBatchJobParameters extends Shape
 {
     /**
      * @param array{
-     *     JobDefinition: string,
-     *     JobName: string,
      *     ArrayProperties?: BatchArrayProperties|null,
-     *     RetryStrategy?: BatchRetryStrategy|null,
      *     ContainerOverrides?: BatchContainerOverrides|null,
      *     DependsOn?: list<BatchJobDependency>|null,
-     *     Parameters?: array<string, string>|null
+     *     JobDefinition: string,
+     *     JobName: string,
+     *     Parameters?: array<string, string>|null,
+     *     RetryStrategy?: BatchRetryStrategy|null
      * } $args
      */
     public function __construct(array $args)

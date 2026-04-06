@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\ListPermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property User $user
  * @property 'ADMIN'|'EDITOR'|'VIEWER' $role
+ * @property User $user
  */
 class PermissionEntry extends Shape
 {
     /**
      * @param array{
-     *     user: User,
-     *     role: 'ADMIN'|'EDITOR'|'VIEWER'
+     *     role: 'ADMIN'|'EDITOR'|'VIEWER',
+     *     user: User
      * } $args
      */
     public function __construct(array $args)

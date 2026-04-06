@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property 'user'|'device'|null $TrustProviderType
  * @property 'iam-identity-center'|'oidc'|null $UserTrustProviderType
- * @property 'jamf'|'crowdstrike'|'jumpcloud'|null $DeviceTrustProviderType
+ * @property 'jamf'|'crowdstrike'|null $DeviceTrustProviderType
  */
 class VerifiedAccessTrustProviderCondensed extends Shape
 {
@@ -19,7 +19,7 @@ class VerifiedAccessTrustProviderCondensed extends Shape
      *     Description?: string|null,
      *     TrustProviderType?: 'user'|'device'|null,
      *     UserTrustProviderType?: 'iam-identity-center'|'oidc'|null,
-     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|'jumpcloud'|null
+     *     DeviceTrustProviderType?: 'jamf'|'crowdstrike'|null
      * } $args
      */
     public function __construct(array $args = [])

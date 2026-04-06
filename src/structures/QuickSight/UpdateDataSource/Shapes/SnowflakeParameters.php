@@ -8,9 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Host
  * @property string $Database
  * @property string $Warehouse
- * @property 'PASSWORD'|'KEYPAIR'|'TOKEN'|'X509'|null $AuthenticationType
- * @property string|null $DatabaseAccessControlRole
- * @property OAuthParameters|null $OAuthParameters
  */
 class SnowflakeParameters extends Shape
 {
@@ -18,10 +15,7 @@ class SnowflakeParameters extends Shape
      * @param array{
      *     Host: string,
      *     Database: string,
-     *     Warehouse: string,
-     *     AuthenticationType?: 'PASSWORD'|'KEYPAIR'|'TOKEN'|'X509'|null,
-     *     DatabaseAccessControlRole?: string|null,
-     *     OAuthParameters?: OAuthParameters|null
+     *     Warehouse: string
      * } $args
      */
     public function __construct(array $args)

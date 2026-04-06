@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $imagePipelineArn
  * @property string $clientToken
- * @property array<string, string>|null $tags
  */
 class StartImagePipelineExecutionRequest extends Request
 {
     /**
      * @param array{
      *     imagePipelineArn: string,
-     *     clientToken: string,
-     *     tags?: array<string, string>|null
+     *     clientToken: string
      * } $args
      */
     public function __construct(array $args)

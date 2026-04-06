@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $CreatedBy
  * @property bool|null $DefaultVersion
  * @property ResponseLaunchTemplateData|null $LaunchTemplateData
- * @property OperatorResponse|null $Operator
  */
 class LaunchTemplateVersion extends Shape
 {
@@ -26,8 +25,7 @@ class LaunchTemplateVersion extends Shape
      *     CreateTime?: \Aws\Api\DateTimeResult|null,
      *     CreatedBy?: string|null,
      *     DefaultVersion?: bool|null,
-     *     LaunchTemplateData?: ResponseLaunchTemplateData|null,
-     *     Operator?: OperatorResponse|null
+     *     LaunchTemplateData?: ResponseLaunchTemplateData|null
      * } $args
      */
     public function __construct(array $args = [])

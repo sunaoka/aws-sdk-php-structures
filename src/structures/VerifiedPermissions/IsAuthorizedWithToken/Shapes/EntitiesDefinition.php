@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<EntityItem>|null $entityList
- * @property string|null $cedarJson
  */
 class EntitiesDefinition extends Shape
 {
     /**
-     * @param array{
-     *     entityList?: list<EntityItem>|null,
-     *     cedarJson?: string|null
-     * } $args
+     * @param array{entityList?: list<EntityItem>|null} $args
      */
     public function __construct(array $args = [])
     {

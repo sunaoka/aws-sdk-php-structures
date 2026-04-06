@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<KeySchemaElement> $KeySchema
  * @property \Aws\Api\DateTimeResult $TableCreationDateTime
  * @property ProvisionedThroughput $ProvisionedThroughput
- * @property OnDemandThroughput|null $OnDemandThroughput
  * @property int<0, max>|null $ItemCount
  * @property 'PROVISIONED'|'PAY_PER_REQUEST'|null $BillingMode
  */
@@ -27,7 +26,6 @@ class SourceTableDetails extends Shape
      *     KeySchema: list<KeySchemaElement>,
      *     TableCreationDateTime: \Aws\Api\DateTimeResult,
      *     ProvisionedThroughput: ProvisionedThroughput,
-     *     OnDemandThroughput?: OnDemandThroughput|null,
      *     ItemCount?: int<0, max>|null,
      *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'|null
      * } $args

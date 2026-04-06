@@ -6,16 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FeatureName
- * @property string|null $ValueAsString
- * @property list<string>|null $ValueAsStringList
+ * @property string $ValueAsString
  */
 class FeatureValue extends Shape
 {
     /**
      * @param array{
      *     FeatureName: string,
-     *     ValueAsString?: string|null,
-     *     ValueAsStringList?: list<string>|null
+     *     ValueAsString: string
      * } $args
      */
     public function __construct(array $args)

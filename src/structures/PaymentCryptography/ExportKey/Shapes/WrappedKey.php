@@ -5,21 +5,17 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\ExportKey\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WrappingKeyArn
- * @property 'KEY_CRYPTOGRAM'|'TR31_KEY_BLOCK'|'TR34_KEY_BLOCK' $WrappedKeyMaterialFormat
  * @property string $KeyMaterial
- * @property string|null $KeyCheckValue
- * @property 'CMAC'|'ANSI_X9_24'|'HMAC'|'SHA_1'|null $KeyCheckValueAlgorithm
+ * @property 'KEY_CRYPTOGRAM'|'TR31_KEY_BLOCK'|'TR34_KEY_BLOCK' $WrappedKeyMaterialFormat
+ * @property string $WrappingKeyArn
  */
 class WrappedKey extends Shape
 {
     /**
      * @param array{
-     *     WrappingKeyArn: string,
-     *     WrappedKeyMaterialFormat: 'KEY_CRYPTOGRAM'|'TR31_KEY_BLOCK'|'TR34_KEY_BLOCK',
      *     KeyMaterial: string,
-     *     KeyCheckValue?: string|null,
-     *     KeyCheckValueAlgorithm?: 'CMAC'|'ANSI_X9_24'|'HMAC'|'SHA_1'|null
+     *     WrappedKeyMaterialFormat: 'KEY_CRYPTOGRAM'|'TR31_KEY_BLOCK'|'TR34_KEY_BLOCK',
+     *     WrappingKeyArn: string
      * } $args
      */
     public function __construct(array $args)

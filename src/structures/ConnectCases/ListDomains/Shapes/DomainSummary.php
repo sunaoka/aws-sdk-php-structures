@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ConnectCases\ListDomains\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $domainId
  * @property string $domainArn
+ * @property string $domainId
  * @property string $name
  */
 class DomainSummary extends Shape
 {
     /**
      * @param array{
-     *     domainId: string,
      *     domainArn: string,
+     *     domainId: string,
      *     name: string
      * } $args
      */

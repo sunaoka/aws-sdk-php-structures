@@ -19,7 +19,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MessagesPerSecond
  * @property string $Platform
  * @property string|null $RoleArn
- * @property string|null $OrchestrationSendingRoleArn
  * @property int|null $Version
  */
 class EmailChannelResponse extends Shape
@@ -40,7 +39,6 @@ class EmailChannelResponse extends Shape
      *     MessagesPerSecond?: int|null,
      *     Platform: string,
      *     RoleArn?: string|null,
-     *     OrchestrationSendingRoleArn?: string|null,
      *     Version?: int|null
      * } $args
      */

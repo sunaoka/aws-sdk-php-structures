@@ -18,7 +18,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int<0, 2000>|null $maxBatchSize
  * @property Shapes\AppSyncRuntime|null $runtime
  * @property string|null $code
- * @property 'ENABLED'|'DISABLED'|null $metricsConfig
  */
 class CreateResolverRequest extends Request
 {
@@ -36,8 +35,7 @@ class CreateResolverRequest extends Request
      *     cachingConfig?: Shapes\CachingConfig|null,
      *     maxBatchSize?: int<0, 2000>|null,
      *     runtime?: Shapes\AppSyncRuntime|null,
-     *     code?: string|null,
-     *     metricsConfig?: 'ENABLED'|'DISABLED'|null
+     *     code?: string|null
      * } $args
      */
     public function __construct(array $args)

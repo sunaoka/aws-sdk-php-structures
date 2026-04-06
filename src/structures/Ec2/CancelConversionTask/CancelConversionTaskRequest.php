@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Ec2\CancelConversionTask;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $DryRun
  * @property string $ConversionTaskId
+ * @property bool|null $DryRun
  * @property string|null $ReasonMessage
  */
 class CancelConversionTaskRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool|null,
      *     ConversionTaskId: string,
+     *     DryRun?: bool|null,
      *     ReasonMessage?: string|null
      * } $args
      */

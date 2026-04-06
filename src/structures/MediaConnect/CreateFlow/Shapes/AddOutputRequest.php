@@ -14,18 +14,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MinLatency
  * @property string|null $Name
  * @property int|null $Port
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null $Protocol
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp' $Protocol
  * @property string|null $RemoteId
  * @property int|null $SenderControlPort
  * @property int|null $SmoothingLatency
  * @property string|null $StreamId
  * @property VpcInterfaceAttachment|null $VpcInterfaceAttachment
- * @property 'ENABLED'|'DISABLED'|null $OutputStatus
- * @property int|null $NdiSpeedHqQuality
- * @property string|null $NdiProgramName
- * @property array<string, string>|null $OutputTags
- * @property 'ENABLED'|'DISABLED'|null $RouterIntegrationState
- * @property FlowTransitEncryption|null $RouterIntegrationTransitEncryption
  */
 class AddOutputRequest extends Shape
 {
@@ -40,21 +34,15 @@ class AddOutputRequest extends Shape
      *     MinLatency?: int|null,
      *     Name?: string|null,
      *     Port?: int|null,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|'ndi-speed-hq'|null,
+     *     Protocol: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp',
      *     RemoteId?: string|null,
      *     SenderControlPort?: int|null,
      *     SmoothingLatency?: int|null,
      *     StreamId?: string|null,
-     *     VpcInterfaceAttachment?: VpcInterfaceAttachment|null,
-     *     OutputStatus?: 'ENABLED'|'DISABLED'|null,
-     *     NdiSpeedHqQuality?: int|null,
-     *     NdiProgramName?: string|null,
-     *     OutputTags?: array<string, string>|null,
-     *     RouterIntegrationState?: 'ENABLED'|'DISABLED'|null,
-     *     RouterIntegrationTransitEncryption?: FlowTransitEncryption|null
+     *     VpcInterfaceAttachment?: VpcInterfaceAttachment|null
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

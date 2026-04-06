@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GITHUB'|'GITLAB'|'BITBUCKET'|'AWS_CODE_COMMIT'|null $Provider
+ * @property 'GITHUB'|'AWS_CODE_COMMIT'|null $Provider
  * @property string|null $Repository
  * @property string|null $Owner
  * @property string|null $Branch
@@ -18,7 +18,7 @@ class SourceControlDetails extends Shape
 {
     /**
      * @param array{
-     *     Provider?: 'GITHUB'|'GITLAB'|'BITBUCKET'|'AWS_CODE_COMMIT'|null,
+     *     Provider?: 'GITHUB'|'AWS_CODE_COMMIT'|null,
      *     Repository?: string|null,
      *     Owner?: string|null,
      *     Branch?: string|null,

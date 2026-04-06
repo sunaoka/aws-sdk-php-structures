@@ -11,8 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TERMINATE_JOB_FLOW'|'TERMINATE_CLUSTER'|'CANCEL_AND_WAIT'|'CONTINUE'|null $ActionOnFailure
  * @property StepStatus|null $Status
  * @property string|null $ExecutionRoleArn
- * @property string|null $LogUri
- * @property string|null $EncryptionKeyArn
  */
 class Step extends Shape
 {
@@ -23,9 +21,7 @@ class Step extends Shape
      *     Config?: HadoopStepConfig|null,
      *     ActionOnFailure?: 'TERMINATE_JOB_FLOW'|'TERMINATE_CLUSTER'|'CANCEL_AND_WAIT'|'CONTINUE'|null,
      *     Status?: StepStatus|null,
-     *     ExecutionRoleArn?: string|null,
-     *     LogUri?: string|null,
-     *     EncryptionKeyArn?: string|null
+     *     ExecutionRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

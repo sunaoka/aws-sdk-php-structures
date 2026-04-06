@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Arn
  * @property string|null $UserName
  * @property string|null $Email
- * @property 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|'ADMIN_PRO'|'AUTHOR_PRO'|'READER_PRO'|null $Role
+ * @property 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|null $Role
  * @property 'IAM'|'QUICKSIGHT'|'IAM_IDENTITY_CENTER'|null $IdentityType
  * @property bool|null $Active
  * @property string|null $PrincipalId
@@ -24,7 +24,7 @@ class User extends Shape
      *     Arn?: string|null,
      *     UserName?: string|null,
      *     Email?: string|null,
-     *     Role?: 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|'ADMIN_PRO'|'AUTHOR_PRO'|'READER_PRO'|null,
+     *     Role?: 'ADMIN'|'AUTHOR'|'READER'|'RESTRICTED_AUTHOR'|'RESTRICTED_READER'|null,
      *     IdentityType?: 'IAM'|'QUICKSIGHT'|'IAM_IDENTITY_CENTER'|null,
      *     Active?: bool|null,
      *     PrincipalId?: string|null,

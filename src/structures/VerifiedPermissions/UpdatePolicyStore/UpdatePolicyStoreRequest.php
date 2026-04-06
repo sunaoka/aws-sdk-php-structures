@@ -7,17 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $policyStoreId
  * @property Shapes\ValidationSettings $validationSettings
- * @property 'ENABLED'|'DISABLED'|null $deletionProtection
- * @property string|null $description
  */
 class UpdatePolicyStoreRequest extends Request
 {
     /**
      * @param array{
      *     policyStoreId: string,
-     *     validationSettings: Shapes\ValidationSettings,
-     *     deletionProtection?: 'ENABLED'|'DISABLED'|null,
-     *     description?: string|null
+     *     validationSettings: Shapes\ValidationSettings
      * } $args
      */
     public function __construct(array $args)

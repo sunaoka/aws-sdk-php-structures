@@ -14,8 +14,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $SourceSecurityGroupName
  * @property string|null $SourceSecurityGroupOwnerId
  * @property int|null $ToPort
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
  * @property bool|null $DryRun
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class AuthorizeSecurityGroupIngressRequest extends Request
 {
@@ -30,8 +30,8 @@ class AuthorizeSecurityGroupIngressRequest extends Request
      *     SourceSecurityGroupName?: string|null,
      *     SourceSecurityGroupOwnerId?: string|null,
      *     ToPort?: int|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args = [])

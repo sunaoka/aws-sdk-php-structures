@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double|null $performanceRisk
  * @property int|null $rank
  * @property SavingsOpportunity|null $savingsOpportunity
- * @property EBSSavingsOpportunityAfterDiscounts|null $savingsOpportunityAfterDiscounts
  */
 class VolumeRecommendationOption extends Shape
 {
@@ -18,8 +17,7 @@ class VolumeRecommendationOption extends Shape
      *     configuration?: VolumeConfiguration|null,
      *     performanceRisk?: double|null,
      *     rank?: int|null,
-     *     savingsOpportunity?: SavingsOpportunity|null,
-     *     savingsOpportunityAfterDiscounts?: EBSSavingsOpportunityAfterDiscounts|null
+     *     savingsOpportunity?: SavingsOpportunity|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LocationService\UpdatePlaceIndex;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property Shapes\DataSourceConfiguration|null $DataSourceConfiguration
+ * @property string|null $Description
  * @property string $IndexName
  * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
- * @property string|null $Description
- * @property Shapes\DataSourceConfiguration|null $DataSourceConfiguration
  */
 class UpdatePlaceIndexRequest extends Request
 {
     /**
      * @param array{
-     *     IndexName: string,
-     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
+     *     DataSourceConfiguration?: Shapes\DataSourceConfiguration|null,
      *     Description?: string|null,
-     *     DataSourceConfiguration?: Shapes\DataSourceConfiguration|null
+     *     IndexName: string,
+     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null
      * } $args
      */
     public function __construct(array $args)

@@ -13,10 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, max>|null $Size
  * @property int|null $CreationTime
  * @property int|null $LastModifiedTime
- * @property 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING'|'PENDING'|null $Status
+ * @property 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING'|null $Status
  * @property string|null $StatusReason
  * @property ListBillingGroupAccountGrouping|null $AccountGrouping
- * @property 'STANDARD'|'TRANSFER_BILLING'|null $BillingGroupType
  */
 class BillingGroupListElement extends Shape
 {
@@ -30,10 +29,9 @@ class BillingGroupListElement extends Shape
      *     Size?: int<0, max>|null,
      *     CreationTime?: int|null,
      *     LastModifiedTime?: int|null,
-     *     Status?: 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING'|'PENDING'|null,
+     *     Status?: 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING'|null,
      *     StatusReason?: string|null,
-     *     AccountGrouping?: ListBillingGroupAccountGrouping|null,
-     *     BillingGroupType?: 'STANDARD'|'TRANSFER_BILLING'|null
+     *     AccountGrouping?: ListBillingGroupAccountGrouping|null
      * } $args
      */
     public function __construct(array $args = [])

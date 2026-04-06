@@ -9,10 +9,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $id
  * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED'|null $status
  * @property array<string, string>|null $tags
- * @property string|null $uuid
- * @property string|null $runOutputUri
- * @property Shapes\ConfigurationDetails|null $configuration
- * @property string|null $networkingMode
  */
 class StartRunResponse extends Response
 {

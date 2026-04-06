@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $MigrationProjectArn
  * @property ErrorDetails|null $Error
  * @property ExportSqlDetails|null $ExportSqlDetails
- * @property Progress|null $Progress
  */
 class SchemaConversionRequest extends Shape
 {
@@ -20,8 +19,7 @@ class SchemaConversionRequest extends Shape
      *     RequestIdentifier?: string|null,
      *     MigrationProjectArn?: string|null,
      *     Error?: ErrorDetails|null,
-     *     ExportSqlDetails?: ExportSqlDetails|null,
-     *     Progress?: Progress|null
+     *     ExportSqlDetails?: ExportSqlDetails|null
      * } $args
      */
     public function __construct(array $args = [])

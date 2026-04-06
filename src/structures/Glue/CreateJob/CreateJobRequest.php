@@ -6,8 +6,6 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
- * @property bool|null $JobRunQueuingEnabled
  * @property string|null $Description
  * @property string|null $LogUri
  * @property string $Role
@@ -29,15 +27,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\CodeGenConfigurationNode>|null $CodeGenConfigurationNodes
  * @property 'FLEX'|'STANDARD'|null $ExecutionClass
  * @property Shapes\SourceControlDetails|null $SourceControlDetails
- * @property string|null $MaintenanceWindow
  */
 class CreateJobRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
-     *     JobRunQueuingEnabled?: bool|null,
      *     Description?: string|null,
      *     LogUri?: string|null,
      *     Role: string,
@@ -58,8 +53,7 @@ class CreateJobRequest extends Request
      *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
      *     CodeGenConfigurationNodes?: array<string, Shapes\CodeGenConfigurationNode>|null,
      *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
-     *     SourceControlDetails?: Shapes\SourceControlDetails|null,
-     *     MaintenanceWindow?: string|null
+     *     SourceControlDetails?: Shapes\SourceControlDetails|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISABLED'|'AUTO'|'TRACK'|'FRAME'|'FORCE'|null $AudioDurationCorrection
+ * @property 'DISABLED'|'AUTO'|'TRACK'|'FRAME'|null $AudioDurationCorrection
  * @property string|null $CustomLanguageCode
  * @property 'DEFAULT'|'NOT_DEFAULT'|null $DefaultSelection
  * @property string|null $ExternalAudioFileInput
@@ -15,15 +15,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<int<1, 2147483647>>|null $Pids
  * @property int<0, 8>|null $ProgramSelection
  * @property RemixSettings|null $RemixSettings
- * @property 'PID'|'TRACK'|'LANGUAGE_CODE'|'HLS_RENDITION_GROUP'|'ALL_PCM'|'STREAM'|null $SelectorType
- * @property list<int<1, 2147483647>>|null $Streams
+ * @property 'PID'|'TRACK'|'LANGUAGE_CODE'|'HLS_RENDITION_GROUP'|null $SelectorType
  * @property list<int<1, 2147483647>>|null $Tracks
  */
 class AudioSelector extends Shape
 {
     /**
      * @param array{
-     *     AudioDurationCorrection?: 'DISABLED'|'AUTO'|'TRACK'|'FRAME'|'FORCE'|null,
+     *     AudioDurationCorrection?: 'DISABLED'|'AUTO'|'TRACK'|'FRAME'|null,
      *     CustomLanguageCode?: string|null,
      *     DefaultSelection?: 'DEFAULT'|'NOT_DEFAULT'|null,
      *     ExternalAudioFileInput?: string|null,
@@ -33,8 +32,7 @@ class AudioSelector extends Shape
      *     Pids?: list<int<1, 2147483647>>|null,
      *     ProgramSelection?: int<0, 8>|null,
      *     RemixSettings?: RemixSettings|null,
-     *     SelectorType?: 'PID'|'TRACK'|'LANGUAGE_CODE'|'HLS_RENDITION_GROUP'|'ALL_PCM'|'STREAM'|null,
-     *     Streams?: list<int<1, 2147483647>>|null,
+     *     SelectorType?: 'PID'|'TRACK'|'LANGUAGE_CODE'|'HLS_RENDITION_GROUP'|null,
      *     Tracks?: list<int<1, 2147483647>>|null
      * } $args
      */

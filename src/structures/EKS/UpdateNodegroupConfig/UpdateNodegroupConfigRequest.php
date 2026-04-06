@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\UpdateTaintsPayload|null $taints
  * @property Shapes\NodegroupScalingConfig|null $scalingConfig
  * @property Shapes\NodegroupUpdateConfig|null $updateConfig
- * @property Shapes\NodeRepairConfig|null $nodeRepairConfig
  * @property string|null $clientRequestToken
  */
 class UpdateNodegroupConfigRequest extends Request
@@ -24,7 +23,6 @@ class UpdateNodegroupConfigRequest extends Request
      *     taints?: Shapes\UpdateTaintsPayload|null,
      *     scalingConfig?: Shapes\NodegroupScalingConfig|null,
      *     updateConfig?: Shapes\NodegroupUpdateConfig|null,
-     *     nodeRepairConfig?: Shapes\NodeRepairConfig|null,
      *     clientRequestToken?: string|null
      * } $args
      */

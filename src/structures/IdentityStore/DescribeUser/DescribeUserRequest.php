@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IdentityStoreId
  * @property string $UserId
- * @property list<string>|null $Extensions
  */
 class DescribeUserRequest extends Request
 {
     /**
      * @param array{
      *     IdentityStoreId: string,
-     *     UserId: string,
-     *     Extensions?: list<string>|null
+     *     UserId: string
      * } $args
      */
     public function __construct(array $args)

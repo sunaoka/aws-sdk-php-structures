@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $apiId
  * @property string $name
  * @property string|null $description
- * @property 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE'|'AMAZON_BEDROCK_RUNTIME' $type
+ * @property 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE' $type
  * @property string|null $serviceRoleArn
  * @property Shapes\DynamodbDataSourceConfig|null $dynamodbConfig
  * @property Shapes\LambdaDataSourceConfig|null $lambdaConfig
@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\HttpDataSourceConfig|null $httpConfig
  * @property Shapes\RelationalDatabaseDataSourceConfig|null $relationalDatabaseConfig
  * @property Shapes\EventBridgeDataSourceConfig|null $eventBridgeConfig
- * @property 'ENABLED'|'DISABLED'|null $metricsConfig
  */
 class CreateDataSourceRequest extends Request
 {
@@ -26,7 +25,7 @@ class CreateDataSourceRequest extends Request
      *     apiId: string,
      *     name: string,
      *     description?: string|null,
-     *     type: 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE'|'AMAZON_BEDROCK_RUNTIME',
+     *     type: 'AWS_LAMBDA'|'AMAZON_DYNAMODB'|'AMAZON_ELASTICSEARCH'|'NONE'|'HTTP'|'RELATIONAL_DATABASE'|'AMAZON_OPENSEARCH_SERVICE'|'AMAZON_EVENTBRIDGE',
      *     serviceRoleArn?: string|null,
      *     dynamodbConfig?: Shapes\DynamodbDataSourceConfig|null,
      *     lambdaConfig?: Shapes\LambdaDataSourceConfig|null,
@@ -34,8 +33,7 @@ class CreateDataSourceRequest extends Request
      *     openSearchServiceConfig?: Shapes\OpenSearchServiceDataSourceConfig|null,
      *     httpConfig?: Shapes\HttpDataSourceConfig|null,
      *     relationalDatabaseConfig?: Shapes\RelationalDatabaseDataSourceConfig|null,
-     *     eventBridgeConfig?: Shapes\EventBridgeDataSourceConfig|null,
-     *     metricsConfig?: 'ENABLED'|'DISABLED'|null
+     *     eventBridgeConfig?: Shapes\EventBridgeDataSourceConfig|null
      * } $args
      */
     public function __construct(array $args)

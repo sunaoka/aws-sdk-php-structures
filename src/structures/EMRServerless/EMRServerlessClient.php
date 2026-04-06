@@ -11,7 +11,6 @@ class EMRServerlessClient extends \Aws\EMRServerless\EMRServerlessClient
     use GetDashboardForJobRun\GetDashboardForJobRunTrait;
     use GetJobRun\GetJobRunTrait;
     use ListApplications\ListApplicationsTrait;
-    use ListJobRunAttempts\ListJobRunAttemptsTrait;
     use ListJobRuns\ListJobRunsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use StartApplication\StartApplicationTrait;

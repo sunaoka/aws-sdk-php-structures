@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProjectCache|null $cache
  * @property Shapes\ProjectEnvironment|null $environment
  * @property string|null $serviceRole
- * @property int<5, 2160>|null $timeoutInMinutes
+ * @property int<5, 480>|null $timeoutInMinutes
  * @property int<5, 480>|null $queuedTimeoutInMinutes
  * @property string|null $encryptionKey
  * @property list<Shapes\Tag>|null $tags
@@ -26,7 +26,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ProjectFileSystemLocation>|null $fileSystemLocations
  * @property Shapes\ProjectBuildBatchConfig|null $buildBatchConfig
  * @property int|null $concurrentBuildLimit
- * @property int|null $autoRetryLimit
  */
 class UpdateProjectRequest extends Request
 {
@@ -43,7 +42,7 @@ class UpdateProjectRequest extends Request
      *     cache?: Shapes\ProjectCache|null,
      *     environment?: Shapes\ProjectEnvironment|null,
      *     serviceRole?: string|null,
-     *     timeoutInMinutes?: int<5, 2160>|null,
+     *     timeoutInMinutes?: int<5, 480>|null,
      *     queuedTimeoutInMinutes?: int<5, 480>|null,
      *     encryptionKey?: string|null,
      *     tags?: list<Shapes\Tag>|null,
@@ -52,8 +51,7 @@ class UpdateProjectRequest extends Request
      *     logsConfig?: Shapes\LogsConfig|null,
      *     fileSystemLocations?: list<Shapes\ProjectFileSystemLocation>|null,
      *     buildBatchConfig?: Shapes\ProjectBuildBatchConfig|null,
-     *     concurrentBuildLimit?: int|null,
-     *     autoRetryLimit?: int|null
+     *     concurrentBuildLimit?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,13 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Engine
- * @property string|null $MajorEngineVersion
  * @property string|null $EngineVersion
- * @property string|null $DatabaseInstallationFilesS3BucketName
- * @property string|null $DatabaseInstallationFilesS3Prefix
- * @property list<string>|null $DatabaseInstallationFiles
- * @property string|null $CustomDBEngineVersionManifest
  * @property string|null $DBParameterGroupFamily
  * @property string|null $DBEngineDescription
- * @property string|null $DBEngineVersionArn
  * @property string|null $DBEngineVersionDescription
  * @property CharacterSet|null $DefaultCharacterSet
- * @property string|null $FailureReason
  * @property CustomDBEngineVersionAMI|null $Image
  * @property string|null $DBEngineMediaType
- * @property string|null $KMSKeyId
- * @property \Aws\Api\DateTimeResult|null $CreateTime
  * @property list<CharacterSet>|null $SupportedCharacterSets
  * @property list<CharacterSet>|null $SupportedNcharCharacterSets
  * @property list<UpgradeTarget>|null $ValidUpgradeTarget
@@ -34,36 +25,31 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Status
  * @property bool|null $SupportsParallelQuery
  * @property bool|null $SupportsGlobalDatabases
+ * @property string|null $MajorEngineVersion
+ * @property string|null $DatabaseInstallationFilesS3BucketName
+ * @property string|null $DatabaseInstallationFilesS3Prefix
+ * @property string|null $DBEngineVersionArn
+ * @property string|null $KMSKeyId
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
  * @property list<Tag>|null $TagList
  * @property bool|null $SupportsBabelfish
- * @property bool|null $SupportsLimitlessDatabase
+ * @property string|null $CustomDBEngineVersionManifest
  * @property bool|null $SupportsCertificateRotationWithoutRestart
  * @property list<string>|null $SupportedCACertificateIdentifiers
  * @property bool|null $SupportsLocalWriteForwarding
- * @property bool|null $SupportsIntegrations
- * @property ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
  */
 class DBEngineVersion extends Shape
 {
     /**
      * @param array{
      *     Engine?: string|null,
-     *     MajorEngineVersion?: string|null,
      *     EngineVersion?: string|null,
-     *     DatabaseInstallationFilesS3BucketName?: string|null,
-     *     DatabaseInstallationFilesS3Prefix?: string|null,
-     *     DatabaseInstallationFiles?: list<string>|null,
-     *     CustomDBEngineVersionManifest?: string|null,
      *     DBParameterGroupFamily?: string|null,
      *     DBEngineDescription?: string|null,
-     *     DBEngineVersionArn?: string|null,
      *     DBEngineVersionDescription?: string|null,
      *     DefaultCharacterSet?: CharacterSet|null,
-     *     FailureReason?: string|null,
      *     Image?: CustomDBEngineVersionAMI|null,
      *     DBEngineMediaType?: string|null,
-     *     KMSKeyId?: string|null,
-     *     CreateTime?: \Aws\Api\DateTimeResult|null,
      *     SupportedCharacterSets?: list<CharacterSet>|null,
      *     SupportedNcharCharacterSets?: list<CharacterSet>|null,
      *     ValidUpgradeTarget?: list<UpgradeTarget>|null,
@@ -76,14 +62,18 @@ class DBEngineVersion extends Shape
      *     Status?: string|null,
      *     SupportsParallelQuery?: bool|null,
      *     SupportsGlobalDatabases?: bool|null,
+     *     MajorEngineVersion?: string|null,
+     *     DatabaseInstallationFilesS3BucketName?: string|null,
+     *     DatabaseInstallationFilesS3Prefix?: string|null,
+     *     DBEngineVersionArn?: string|null,
+     *     KMSKeyId?: string|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
      *     TagList?: list<Tag>|null,
      *     SupportsBabelfish?: bool|null,
-     *     SupportsLimitlessDatabase?: bool|null,
+     *     CustomDBEngineVersionManifest?: string|null,
      *     SupportsCertificateRotationWithoutRestart?: bool|null,
      *     SupportedCACertificateIdentifiers?: list<string>|null,
-     *     SupportsLocalWriteForwarding?: bool|null,
-     *     SupportsIntegrations?: bool|null,
-     *     ServerlessV2FeaturesSupport?: ServerlessV2FeaturesSupport|null
+     *     SupportsLocalWriteForwarding?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

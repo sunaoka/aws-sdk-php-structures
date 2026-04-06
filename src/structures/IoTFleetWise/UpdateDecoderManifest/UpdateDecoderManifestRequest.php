@@ -13,8 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\NetworkInterface>|null $networkInterfacesToAdd
  * @property list<Shapes\NetworkInterface>|null $networkInterfacesToUpdate
  * @property list<string>|null $networkInterfacesToRemove
- * @property 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null $status
- * @property 'CUSTOM_DECODING'|null $defaultForUnmappedSignals
+ * @property 'ACTIVE'|'DRAFT'|null $status
  */
 class UpdateDecoderManifestRequest extends Request
 {
@@ -28,8 +27,7 @@ class UpdateDecoderManifestRequest extends Request
      *     networkInterfacesToAdd?: list<Shapes\NetworkInterface>|null,
      *     networkInterfacesToUpdate?: list<Shapes\NetworkInterface>|null,
      *     networkInterfacesToRemove?: list<string>|null,
-     *     status?: 'ACTIVE'|'DRAFT'|'INVALID'|'VALIDATING'|null,
-     *     defaultForUnmappedSignals?: 'CUSTOM_DECODING'|null
+     *     status?: 'ACTIVE'|'DRAFT'|null
      * } $args
      */
     public function __construct(array $args)

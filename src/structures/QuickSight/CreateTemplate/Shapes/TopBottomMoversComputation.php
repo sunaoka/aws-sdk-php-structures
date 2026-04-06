@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ComputationId
  * @property string|null $Name
- * @property DimensionField|null $Time
- * @property DimensionField|null $Category
+ * @property DimensionField $Time
+ * @property DimensionField $Category
  * @property MeasureField|null $Value
  * @property int<1, 20>|null $MoverSize
  * @property 'PERCENT_DIFFERENCE'|'ABSOLUTE_DIFFERENCE'|null $SortOrder
@@ -20,8 +20,8 @@ class TopBottomMoversComputation extends Shape
      * @param array{
      *     ComputationId: string,
      *     Name?: string|null,
-     *     Time?: DimensionField|null,
-     *     Category?: DimensionField|null,
+     *     Time: DimensionField,
+     *     Category: DimensionField,
      *     Value?: MeasureField|null,
      *     MoverSize?: int<1, 20>|null,
      *     SortOrder?: 'PERCENT_DIFFERENCE'|'ABSOLUTE_DIFFERENCE'|null,

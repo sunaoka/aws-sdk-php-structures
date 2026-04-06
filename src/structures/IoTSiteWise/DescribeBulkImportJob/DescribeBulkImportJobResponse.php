@@ -14,8 +14,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\JobConfiguration $jobConfiguration
  * @property \Aws\Api\DateTimeResult $jobCreationDate
  * @property \Aws\Api\DateTimeResult $jobLastUpdateDate
- * @property bool|null $adaptiveIngestion
- * @property bool|null $deleteFilesAfterImport
  */
 class DescribeBulkImportJobResponse extends Response
 {

@@ -9,11 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'USAGE'|'COST'|'RI_UTILIZATION'|'RI_COVERAGE'|'SAVINGS_PLANS_UTILIZATION'|'SAVINGS_PLANS_COVERAGE'|null $BudgetType
  * @property array<string, list<string>>|null $CostFilters
  * @property CostTypes|null $CostTypes
- * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM'|null $TimeUnit
- * @property string|null $BillingViewArn
+ * @property 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|null $TimeUnit
  * @property list<BudgetedAndActualAmounts>|null $BudgetedAndActualAmountsList
- * @property Expression|null $FilterExpression
- * @property list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null $Metrics
  */
 class BudgetPerformanceHistory extends Shape
 {
@@ -23,11 +20,8 @@ class BudgetPerformanceHistory extends Shape
      *     BudgetType?: 'USAGE'|'COST'|'RI_UTILIZATION'|'RI_COVERAGE'|'SAVINGS_PLANS_UTILIZATION'|'SAVINGS_PLANS_COVERAGE'|null,
      *     CostFilters?: array<string, list<string>>|null,
      *     CostTypes?: CostTypes|null,
-     *     TimeUnit?: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|'CUSTOM'|null,
-     *     BillingViewArn?: string|null,
-     *     BudgetedAndActualAmountsList?: list<BudgetedAndActualAmounts>|null,
-     *     FilterExpression?: Expression|null,
-     *     Metrics?: list<'BlendedCost'|'UnblendedCost'|'AmortizedCost'|'NetUnblendedCost'|'NetAmortizedCost'|'UsageQuantity'|'NormalizedUsageAmount'|'Hours'>|null
+     *     TimeUnit?: 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY'|null,
+     *     BudgetedAndActualAmountsList?: list<BudgetedAndActualAmounts>|null
      * } $args
      */
     public function __construct(array $args = [])

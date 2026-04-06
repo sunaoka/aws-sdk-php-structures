@@ -5,8 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\EnableFastSnapshotRestores;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string>|null $AvailabilityZones
- * @property list<string>|null $AvailabilityZoneIds
+ * @property list<string> $AvailabilityZones
  * @property list<string> $SourceSnapshotIds
  * @property bool|null $DryRun
  */
@@ -14,8 +13,7 @@ class EnableFastSnapshotRestoresRequest extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZones?: list<string>|null,
-     *     AvailabilityZoneIds?: list<string>|null,
+     *     AvailabilityZones: list<string>,
      *     SourceSnapshotIds: list<string>,
      *     DryRun?: bool|null
      * } $args

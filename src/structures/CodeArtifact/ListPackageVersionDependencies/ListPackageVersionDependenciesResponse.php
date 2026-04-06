@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\ListPackageVersionDependencies;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null $format
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|null $format
  * @property string|null $namespace
  * @property string|null $package
  * @property string|null $version

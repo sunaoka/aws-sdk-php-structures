@@ -7,12 +7,8 @@ class ManagedGrafanaClient extends \Aws\ManagedGrafana\ManagedGrafanaClient
     use AssociateLicense\AssociateLicenseTrait;
     use CreateWorkspace\CreateWorkspaceTrait;
     use CreateWorkspaceApiKey\CreateWorkspaceApiKeyTrait;
-    use CreateWorkspaceServiceAccount\CreateWorkspaceServiceAccountTrait;
-    use CreateWorkspaceServiceAccountToken\CreateWorkspaceServiceAccountTokenTrait;
     use DeleteWorkspace\DeleteWorkspaceTrait;
     use DeleteWorkspaceApiKey\DeleteWorkspaceApiKeyTrait;
-    use DeleteWorkspaceServiceAccount\DeleteWorkspaceServiceAccountTrait;
-    use DeleteWorkspaceServiceAccountToken\DeleteWorkspaceServiceAccountTokenTrait;
     use DescribeWorkspace\DescribeWorkspaceTrait;
     use DescribeWorkspaceAuthentication\DescribeWorkspaceAuthenticationTrait;
     use DescribeWorkspaceConfiguration\DescribeWorkspaceConfigurationTrait;
@@ -20,8 +16,6 @@ class ManagedGrafanaClient extends \Aws\ManagedGrafana\ManagedGrafanaClient
     use ListPermissions\ListPermissionsTrait;
     use ListTagsForResource\ListTagsForResourceTrait;
     use ListVersions\ListVersionsTrait;
-    use ListWorkspaceServiceAccountTokens\ListWorkspaceServiceAccountTokensTrait;
-    use ListWorkspaceServiceAccounts\ListWorkspaceServiceAccountsTrait;
     use ListWorkspaces\ListWorkspacesTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;

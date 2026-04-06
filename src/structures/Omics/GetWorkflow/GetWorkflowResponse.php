@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PRIVATE'|'READY2RUN'|null $type
  * @property string|null $name
  * @property string|null $description
- * @property 'WDL'|'NEXTFLOW'|'CWL'|'WDL_LENIENT'|null $engine
+ * @property 'WDL'|'NEXTFLOW'|'CWL'|null $engine
  * @property string|null $definition
  * @property string|null $main
  * @property string|null $digest
@@ -22,12 +22,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string>|null $tags
  * @property array<string, string>|null $metadata
  * @property 'GPU'|null $accelerators
- * @property 'STATIC'|'DYNAMIC'|null $storageType
- * @property string|null $uuid
- * @property Shapes\ContainerRegistryMap|null $containerRegistryMap
- * @property string|null $readme
- * @property Shapes\DefinitionRepositoryDetails|null $definitionRepositoryDetails
- * @property string|null $readmePath
  */
 class GetWorkflowResponse extends Response
 {

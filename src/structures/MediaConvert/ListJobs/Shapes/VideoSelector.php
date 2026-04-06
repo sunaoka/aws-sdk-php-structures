@@ -10,14 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FORCE'|'FALLBACK'|null $ColorSpaceUsage
  * @property 'NONE'|'USE_MDPM'|null $EmbeddedTimecodeOverride
  * @property Hdr10Metadata|null $Hdr10Metadata
- * @property int<0, 2147483647>|null $MaxLuminance
  * @property 'DISABLED'|'BLACK'|null $PadVideo
  * @property int<1, 2147483647>|null $Pid
  * @property int<-2147483648, 2147483647>|null $ProgramNumber
  * @property 'DEGREE_0'|'DEGREES_90'|'DEGREES_180'|'DEGREES_270'|'AUTO'|null $Rotate
  * @property 'FOLLOW'|'FULL_RANGE'|'LIMITED_RANGE'|null $SampleRange
- * @property 'AUTO'|'STREAM'|null $SelectorType
- * @property list<int<1, 2147483647>>|null $Streams
  */
 class VideoSelector extends Shape
 {
@@ -28,14 +25,11 @@ class VideoSelector extends Shape
      *     ColorSpaceUsage?: 'FORCE'|'FALLBACK'|null,
      *     EmbeddedTimecodeOverride?: 'NONE'|'USE_MDPM'|null,
      *     Hdr10Metadata?: Hdr10Metadata|null,
-     *     MaxLuminance?: int<0, 2147483647>|null,
      *     PadVideo?: 'DISABLED'|'BLACK'|null,
      *     Pid?: int<1, 2147483647>|null,
      *     ProgramNumber?: int<-2147483648, 2147483647>|null,
      *     Rotate?: 'DEGREE_0'|'DEGREES_90'|'DEGREES_180'|'DEGREES_270'|'AUTO'|null,
-     *     SampleRange?: 'FOLLOW'|'FULL_RANGE'|'LIMITED_RANGE'|null,
-     *     SelectorType?: 'AUTO'|'STREAM'|null,
-     *     Streams?: list<int<1, 2147483647>>|null
+     *     SampleRange?: 'FOLLOW'|'FULL_RANGE'|'LIMITED_RANGE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $timestamp
- * @property 'ActivityFailed'|'ActivityScheduled'|'ActivityScheduleFailed'|'ActivityStarted'|'ActivitySucceeded'|'ActivityTimedOut'|'ChoiceStateEntered'|'ChoiceStateExited'|'ExecutionAborted'|'ExecutionFailed'|'ExecutionStarted'|'ExecutionSucceeded'|'ExecutionTimedOut'|'FailStateEntered'|'LambdaFunctionFailed'|'LambdaFunctionScheduled'|'LambdaFunctionScheduleFailed'|'LambdaFunctionStarted'|'LambdaFunctionStartFailed'|'LambdaFunctionSucceeded'|'LambdaFunctionTimedOut'|'MapIterationAborted'|'MapIterationFailed'|'MapIterationStarted'|'MapIterationSucceeded'|'MapStateAborted'|'MapStateEntered'|'MapStateExited'|'MapStateFailed'|'MapStateStarted'|'MapStateSucceeded'|'ParallelStateAborted'|'ParallelStateEntered'|'ParallelStateExited'|'ParallelStateFailed'|'ParallelStateStarted'|'ParallelStateSucceeded'|'PassStateEntered'|'PassStateExited'|'SucceedStateEntered'|'SucceedStateExited'|'TaskFailed'|'TaskScheduled'|'TaskStarted'|'TaskStartFailed'|'TaskStateAborted'|'TaskStateEntered'|'TaskStateExited'|'TaskSubmitFailed'|'TaskSubmitted'|'TaskSucceeded'|'TaskTimedOut'|'WaitStateAborted'|'WaitStateEntered'|'WaitStateExited'|'MapRunAborted'|'MapRunFailed'|'MapRunStarted'|'MapRunSucceeded'|'ExecutionRedriven'|'MapRunRedriven'|'EvaluationFailed' $type
+ * @property 'ActivityFailed'|'ActivityScheduled'|'ActivityScheduleFailed'|'ActivityStarted'|'ActivitySucceeded'|'ActivityTimedOut'|'ChoiceStateEntered'|'ChoiceStateExited'|'ExecutionAborted'|'ExecutionFailed'|'ExecutionStarted'|'ExecutionSucceeded'|'ExecutionTimedOut'|'FailStateEntered'|'LambdaFunctionFailed'|'LambdaFunctionScheduled'|'LambdaFunctionScheduleFailed'|'LambdaFunctionStarted'|'LambdaFunctionStartFailed'|'LambdaFunctionSucceeded'|'LambdaFunctionTimedOut'|'MapIterationAborted'|'MapIterationFailed'|'MapIterationStarted'|'MapIterationSucceeded'|'MapStateAborted'|'MapStateEntered'|'MapStateExited'|'MapStateFailed'|'MapStateStarted'|'MapStateSucceeded'|'ParallelStateAborted'|'ParallelStateEntered'|'ParallelStateExited'|'ParallelStateFailed'|'ParallelStateStarted'|'ParallelStateSucceeded'|'PassStateEntered'|'PassStateExited'|'SucceedStateEntered'|'SucceedStateExited'|'TaskFailed'|'TaskScheduled'|'TaskStarted'|'TaskStartFailed'|'TaskStateAborted'|'TaskStateEntered'|'TaskStateExited'|'TaskSubmitFailed'|'TaskSubmitted'|'TaskSucceeded'|'TaskTimedOut'|'WaitStateAborted'|'WaitStateEntered'|'WaitStateExited'|'MapRunAborted'|'MapRunFailed'|'MapRunStarted'|'MapRunSucceeded' $type
  * @property int $id
  * @property int|null $previousEventId
  * @property ActivityFailedEventDetails|null $activityFailedEventDetails
@@ -28,7 +28,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ExecutionSucceededEventDetails|null $executionSucceededEventDetails
  * @property ExecutionAbortedEventDetails|null $executionAbortedEventDetails
  * @property ExecutionTimedOutEventDetails|null $executionTimedOutEventDetails
- * @property ExecutionRedrivenEventDetails|null $executionRedrivenEventDetails
  * @property MapStateStartedEventDetails|null $mapStateStartedEventDetails
  * @property MapIterationEventDetails|null $mapIterationStartedEventDetails
  * @property MapIterationEventDetails|null $mapIterationSucceededEventDetails
@@ -44,15 +43,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property StateExitedEventDetails|null $stateExitedEventDetails
  * @property MapRunStartedEventDetails|null $mapRunStartedEventDetails
  * @property MapRunFailedEventDetails|null $mapRunFailedEventDetails
- * @property MapRunRedrivenEventDetails|null $mapRunRedrivenEventDetails
- * @property EvaluationFailedEventDetails|null $evaluationFailedEventDetails
  */
 class HistoryEvent extends Shape
 {
     /**
      * @param array{
      *     timestamp: \Aws\Api\DateTimeResult,
-     *     type: 'ActivityFailed'|'ActivityScheduled'|'ActivityScheduleFailed'|'ActivityStarted'|'ActivitySucceeded'|'ActivityTimedOut'|'ChoiceStateEntered'|'ChoiceStateExited'|'ExecutionAborted'|'ExecutionFailed'|'ExecutionStarted'|'ExecutionSucceeded'|'ExecutionTimedOut'|'FailStateEntered'|'LambdaFunctionFailed'|'LambdaFunctionScheduled'|'LambdaFunctionScheduleFailed'|'LambdaFunctionStarted'|'LambdaFunctionStartFailed'|'LambdaFunctionSucceeded'|'LambdaFunctionTimedOut'|'MapIterationAborted'|'MapIterationFailed'|'MapIterationStarted'|'MapIterationSucceeded'|'MapStateAborted'|'MapStateEntered'|'MapStateExited'|'MapStateFailed'|'MapStateStarted'|'MapStateSucceeded'|'ParallelStateAborted'|'ParallelStateEntered'|'ParallelStateExited'|'ParallelStateFailed'|'ParallelStateStarted'|'ParallelStateSucceeded'|'PassStateEntered'|'PassStateExited'|'SucceedStateEntered'|'SucceedStateExited'|'TaskFailed'|'TaskScheduled'|'TaskStarted'|'TaskStartFailed'|'TaskStateAborted'|'TaskStateEntered'|'TaskStateExited'|'TaskSubmitFailed'|'TaskSubmitted'|'TaskSucceeded'|'TaskTimedOut'|'WaitStateAborted'|'WaitStateEntered'|'WaitStateExited'|'MapRunAborted'|'MapRunFailed'|'MapRunStarted'|'MapRunSucceeded'|'ExecutionRedriven'|'MapRunRedriven'|'EvaluationFailed',
+     *     type: 'ActivityFailed'|'ActivityScheduled'|'ActivityScheduleFailed'|'ActivityStarted'|'ActivitySucceeded'|'ActivityTimedOut'|'ChoiceStateEntered'|'ChoiceStateExited'|'ExecutionAborted'|'ExecutionFailed'|'ExecutionStarted'|'ExecutionSucceeded'|'ExecutionTimedOut'|'FailStateEntered'|'LambdaFunctionFailed'|'LambdaFunctionScheduled'|'LambdaFunctionScheduleFailed'|'LambdaFunctionStarted'|'LambdaFunctionStartFailed'|'LambdaFunctionSucceeded'|'LambdaFunctionTimedOut'|'MapIterationAborted'|'MapIterationFailed'|'MapIterationStarted'|'MapIterationSucceeded'|'MapStateAborted'|'MapStateEntered'|'MapStateExited'|'MapStateFailed'|'MapStateStarted'|'MapStateSucceeded'|'ParallelStateAborted'|'ParallelStateEntered'|'ParallelStateExited'|'ParallelStateFailed'|'ParallelStateStarted'|'ParallelStateSucceeded'|'PassStateEntered'|'PassStateExited'|'SucceedStateEntered'|'SucceedStateExited'|'TaskFailed'|'TaskScheduled'|'TaskStarted'|'TaskStartFailed'|'TaskStateAborted'|'TaskStateEntered'|'TaskStateExited'|'TaskSubmitFailed'|'TaskSubmitted'|'TaskSucceeded'|'TaskTimedOut'|'WaitStateAborted'|'WaitStateEntered'|'WaitStateExited'|'MapRunAborted'|'MapRunFailed'|'MapRunStarted'|'MapRunSucceeded',
      *     id: int,
      *     previousEventId?: int|null,
      *     activityFailedEventDetails?: ActivityFailedEventDetails|null,
@@ -74,7 +71,6 @@ class HistoryEvent extends Shape
      *     executionSucceededEventDetails?: ExecutionSucceededEventDetails|null,
      *     executionAbortedEventDetails?: ExecutionAbortedEventDetails|null,
      *     executionTimedOutEventDetails?: ExecutionTimedOutEventDetails|null,
-     *     executionRedrivenEventDetails?: ExecutionRedrivenEventDetails|null,
      *     mapStateStartedEventDetails?: MapStateStartedEventDetails|null,
      *     mapIterationStartedEventDetails?: MapIterationEventDetails|null,
      *     mapIterationSucceededEventDetails?: MapIterationEventDetails|null,
@@ -89,9 +85,7 @@ class HistoryEvent extends Shape
      *     stateEnteredEventDetails?: StateEnteredEventDetails|null,
      *     stateExitedEventDetails?: StateExitedEventDetails|null,
      *     mapRunStartedEventDetails?: MapRunStartedEventDetails|null,
-     *     mapRunFailedEventDetails?: MapRunFailedEventDetails|null,
-     *     mapRunRedrivenEventDetails?: MapRunRedrivenEventDetails|null,
-     *     evaluationFailedEventDetails?: EvaluationFailedEventDetails|null
+     *     mapRunFailedEventDetails?: MapRunFailedEventDetails|null
      * } $args
      */
     public function __construct(array $args)

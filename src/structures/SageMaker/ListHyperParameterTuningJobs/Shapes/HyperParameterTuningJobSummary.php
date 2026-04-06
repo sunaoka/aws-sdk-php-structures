@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $HyperParameterTuningJobName
  * @property string $HyperParameterTuningJobArn
- * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed' $HyperParameterTuningJobStatus
+ * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping' $HyperParameterTuningJobStatus
  * @property 'Bayesian'|'Random'|'Hyperband'|'Grid' $Strategy
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult|null $HyperParameterTuningEndTime
@@ -22,7 +22,7 @@ class HyperParameterTuningJobSummary extends Shape
      * @param array{
      *     HyperParameterTuningJobName: string,
      *     HyperParameterTuningJobArn: string,
-     *     HyperParameterTuningJobStatus: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed',
+     *     HyperParameterTuningJobStatus: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping',
      *     Strategy: 'Bayesian'|'Random'|'Hyperband'|'Grid',
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     HyperParameterTuningEndTime?: \Aws\Api\DateTimeResult|null,

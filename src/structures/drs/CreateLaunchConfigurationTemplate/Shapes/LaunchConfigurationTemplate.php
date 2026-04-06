@@ -11,9 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $exportBucketArn
  * @property string|null $launchConfigurationTemplateID
  * @property 'STOPPED'|'STARTED'|null $launchDisposition
- * @property bool|null $launchIntoSourceInstance
  * @property Licensing|null $licensing
- * @property bool|null $postLaunchEnabled
  * @property array<string, string>|null $tags
  * @property 'NONE'|'BASIC'|'IN_AWS'|null $targetInstanceTypeRightSizingMethod
  */
@@ -27,9 +25,7 @@ class LaunchConfigurationTemplate extends Shape
      *     exportBucketArn?: string|null,
      *     launchConfigurationTemplateID?: string|null,
      *     launchDisposition?: 'STOPPED'|'STARTED'|null,
-     *     launchIntoSourceInstance?: bool|null,
      *     licensing?: Licensing|null,
-     *     postLaunchEnabled?: bool|null,
      *     tags?: array<string, string>|null,
      *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|'IN_AWS'|null
      * } $args

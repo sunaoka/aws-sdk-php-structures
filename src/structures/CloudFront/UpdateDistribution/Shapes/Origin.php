@@ -11,10 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CustomHeaders|null $CustomHeaders
  * @property S3OriginConfig|null $S3OriginConfig
  * @property CustomOriginConfig|null $CustomOriginConfig
- * @property VpcOriginConfig|null $VpcOriginConfig
  * @property int|null $ConnectionAttempts
  * @property int|null $ConnectionTimeout
- * @property int|null $ResponseCompletionTimeout
  * @property OriginShield|null $OriginShield
  * @property string|null $OriginAccessControlId
  */
@@ -28,10 +26,8 @@ class Origin extends Shape
      *     CustomHeaders?: CustomHeaders|null,
      *     S3OriginConfig?: S3OriginConfig|null,
      *     CustomOriginConfig?: CustomOriginConfig|null,
-     *     VpcOriginConfig?: VpcOriginConfig|null,
      *     ConnectionAttempts?: int|null,
      *     ConnectionTimeout?: int|null,
-     *     ResponseCompletionTimeout?: int|null,
      *     OriginShield?: OriginShield|null,
      *     OriginAccessControlId?: string|null
      * } $args

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string>|null $savingsPlanIds
  * @property string|null $nextToken
  * @property int<1, 1000>|null $maxResults
- * @property list<'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|'pending-return'|'returned'>|null $states
+ * @property list<'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'>|null $states
  * @property list<Shapes\SavingsPlanFilter>|null $filters
  */
 class DescribeSavingsPlansRequest extends Request
@@ -20,7 +20,7 @@ class DescribeSavingsPlansRequest extends Request
      *     savingsPlanIds?: list<string>|null,
      *     nextToken?: string|null,
      *     maxResults?: int<1, 1000>|null,
-     *     states?: list<'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'|'pending-return'|'returned'>|null,
+     *     states?: list<'payment-pending'|'payment-failed'|'active'|'retired'|'queued'|'queued-deleted'>|null,
      *     filters?: list<Shapes\SavingsPlanFilter>|null
      * } $args
      */

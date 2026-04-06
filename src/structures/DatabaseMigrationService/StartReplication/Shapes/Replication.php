@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $ReplicationType
  * @property string|null $Status
  * @property ProvisionData|null $ProvisionData
- * @property list<PremigrationAssessmentStatus>|null $PremigrationAssessmentStatuses
  * @property string|null $StopReason
  * @property list<string>|null $FailureMessages
  * @property ReplicationStats|null $ReplicationStats
@@ -24,8 +23,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult|null $ReplicationCreateTime
  * @property \Aws\Api\DateTimeResult|null $ReplicationUpdateTime
  * @property \Aws\Api\DateTimeResult|null $ReplicationLastStopTime
- * @property \Aws\Api\DateTimeResult|null $ReplicationDeprovisionTime
- * @property bool|null $IsReadOnly
  */
 class Replication extends Shape
 {
@@ -38,7 +35,6 @@ class Replication extends Shape
      *     ReplicationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
      *     Status?: string|null,
      *     ProvisionData?: ProvisionData|null,
-     *     PremigrationAssessmentStatuses?: list<PremigrationAssessmentStatus>|null,
      *     StopReason?: string|null,
      *     FailureMessages?: list<string>|null,
      *     ReplicationStats?: ReplicationStats|null,
@@ -49,9 +45,7 @@ class Replication extends Shape
      *     RecoveryCheckpoint?: string|null,
      *     ReplicationCreateTime?: \Aws\Api\DateTimeResult|null,
      *     ReplicationUpdateTime?: \Aws\Api\DateTimeResult|null,
-     *     ReplicationLastStopTime?: \Aws\Api\DateTimeResult|null,
-     *     ReplicationDeprovisionTime?: \Aws\Api\DateTimeResult|null,
-     *     IsReadOnly?: bool|null
+     *     ReplicationLastStopTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Ec2\DetachNetworkInterface;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool|null $DryRun
  * @property string $AttachmentId
+ * @property bool|null $DryRun
  * @property bool|null $Force
  */
 class DetachNetworkInterfaceRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool|null,
      *     AttachmentId: string,
+     *     DryRun?: bool|null,
      *     Force?: bool|null
      * } $args
      */

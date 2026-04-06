@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppSync\CreateGraphqlApi\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NONE'|'ERROR'|'ALL'|'INFO'|'DEBUG' $fieldLogLevel
+ * @property 'NONE'|'ERROR'|'ALL' $fieldLogLevel
  * @property string $cloudWatchLogsRoleArn
  * @property bool|null $excludeVerboseContent
  */
@@ -13,7 +13,7 @@ class LogConfig extends Shape
 {
     /**
      * @param array{
-     *     fieldLogLevel: 'NONE'|'ERROR'|'ALL'|'INFO'|'DEBUG',
+     *     fieldLogLevel: 'NONE'|'ERROR'|'ALL',
      *     cloudWatchLogsRoleArn: string,
      *     excludeVerboseContent?: bool|null
      * } $args

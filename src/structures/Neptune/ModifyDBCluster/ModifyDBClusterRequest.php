@@ -24,7 +24,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $DeletionProtection
  * @property bool|null $CopyTagsToSnapshot
  * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
- * @property string|null $StorageType
  */
 class ModifyDBClusterRequest extends Request
 {
@@ -48,8 +47,7 @@ class ModifyDBClusterRequest extends Request
      *     DBInstanceParameterGroupName?: string|null,
      *     DeletionProtection?: bool|null,
      *     CopyTagsToSnapshot?: bool|null,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
-     *     StorageType?: string|null
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

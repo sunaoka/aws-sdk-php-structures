@@ -7,8 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DBProxyName
  * @property 'MYSQL'|'POSTGRESQL'|'SQLSERVER' $EngineFamily
- * @property 'IAM_AUTH'|'NONE'|null $DefaultAuthScheme
- * @property list<Shapes\UserAuthConfig>|null $Auth
+ * @property list<Shapes\UserAuthConfig> $Auth
  * @property string $RoleArn
  * @property list<string> $VpcSubnetIds
  * @property list<string>|null $VpcSecurityGroupIds
@@ -16,8 +15,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $IdleClientTimeout
  * @property bool|null $DebugLogging
  * @property list<Shapes\Tag>|null $Tags
- * @property 'IPV4'|'IPV6'|'DUAL'|null $EndpointNetworkType
- * @property 'IPV4'|'IPV6'|null $TargetConnectionNetworkType
  */
 class CreateDBProxyRequest extends Request
 {
@@ -25,17 +22,14 @@ class CreateDBProxyRequest extends Request
      * @param array{
      *     DBProxyName: string,
      *     EngineFamily: 'MYSQL'|'POSTGRESQL'|'SQLSERVER',
-     *     DefaultAuthScheme?: 'IAM_AUTH'|'NONE'|null,
-     *     Auth?: list<Shapes\UserAuthConfig>|null,
+     *     Auth: list<Shapes\UserAuthConfig>,
      *     RoleArn: string,
      *     VpcSubnetIds: list<string>,
      *     VpcSecurityGroupIds?: list<string>|null,
      *     RequireTLS?: bool|null,
      *     IdleClientTimeout?: int|null,
      *     DebugLogging?: bool|null,
-     *     Tags?: list<Shapes\Tag>|null,
-     *     EndpointNetworkType?: 'IPV4'|'IPV6'|'DUAL'|null,
-     *     TargetConnectionNetworkType?: 'IPV4'|'IPV6'|null
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

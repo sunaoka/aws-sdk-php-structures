@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ScheduleConfiguration $ScheduleConfiguration
  * @property string $SourceLocationName
  * @property string|null $VodSourceName
- * @property list<Shapes\AudienceMedia>|null $AudienceMedia
  */
 class CreateProgramRequest extends Request
 {
@@ -24,8 +23,7 @@ class CreateProgramRequest extends Request
      *     ProgramName: string,
      *     ScheduleConfiguration: Shapes\ScheduleConfiguration,
      *     SourceLocationName: string,
-     *     VodSourceName?: string|null,
-     *     AudienceMedia?: list<Shapes\AudienceMedia>|null
+     *     VodSourceName?: string|null
      * } $args
      */
     public function __construct(array $args)

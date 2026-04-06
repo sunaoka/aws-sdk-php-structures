@@ -15,13 +15,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property AnalysisSchema $schema
- * @property 'SQL'|'PYSPARK_1_0' $format
- * @property AnalysisSource|null $source
- * @property AnalysisSourceMetadata|null $sourceMetadata
+ * @property 'SQL' $format
+ * @property AnalysisSource $source
  * @property list<AnalysisParameter>|null $analysisParameters
- * @property list<AnalysisTemplateValidationStatusDetail>|null $validations
- * @property ErrorMessageConfiguration|null $errorMessageConfiguration
- * @property SyntheticDataParameters|null $syntheticDataParameters
  */
 class CollaborationAnalysisTemplate extends Shape
 {
@@ -37,13 +33,9 @@ class CollaborationAnalysisTemplate extends Shape
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     schema: AnalysisSchema,
-     *     format: 'SQL'|'PYSPARK_1_0',
-     *     source?: AnalysisSource|null,
-     *     sourceMetadata?: AnalysisSourceMetadata|null,
-     *     analysisParameters?: list<AnalysisParameter>|null,
-     *     validations?: list<AnalysisTemplateValidationStatusDetail>|null,
-     *     errorMessageConfiguration?: ErrorMessageConfiguration|null,
-     *     syntheticDataParameters?: SyntheticDataParameters|null
+     *     format: 'SQL',
+     *     source: AnalysisSource,
+     *     analysisParameters?: list<AnalysisParameter>|null
      * } $args
      */
     public function __construct(array $args)

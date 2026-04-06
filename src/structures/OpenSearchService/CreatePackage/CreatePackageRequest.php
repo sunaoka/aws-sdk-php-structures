@@ -6,26 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PackageName
- * @property 'TXT-DICTIONARY'|'ZIP-PLUGIN'|'PACKAGE-LICENSE'|'PACKAGE-CONFIG' $PackageType
+ * @property 'TXT-DICTIONARY' $PackageType
  * @property string|null $PackageDescription
  * @property Shapes\PackageSource $PackageSource
- * @property Shapes\PackageConfiguration|null $PackageConfiguration
- * @property string|null $EngineVersion
- * @property Shapes\PackageVendingOptions|null $PackageVendingOptions
- * @property Shapes\PackageEncryptionOptions|null $PackageEncryptionOptions
  */
 class CreatePackageRequest extends Request
 {
     /**
      * @param array{
      *     PackageName: string,
-     *     PackageType: 'TXT-DICTIONARY'|'ZIP-PLUGIN'|'PACKAGE-LICENSE'|'PACKAGE-CONFIG',
+     *     PackageType: 'TXT-DICTIONARY',
      *     PackageDescription?: string|null,
-     *     PackageSource: Shapes\PackageSource,
-     *     PackageConfiguration?: Shapes\PackageConfiguration|null,
-     *     EngineVersion?: string|null,
-     *     PackageVendingOptions?: Shapes\PackageVendingOptions|null,
-     *     PackageEncryptionOptions?: Shapes\PackageEncryptionOptions|null
+     *     PackageSource: Shapes\PackageSource
      * } $args
      */
     public function __construct(array $args)

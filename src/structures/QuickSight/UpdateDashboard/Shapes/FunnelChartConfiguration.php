@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TooltipOptions|null $Tooltip
  * @property FunnelChartDataLabelOptions|null $DataLabelOptions
  * @property VisualPalette|null $VisualPalette
- * @property VisualInteractionOptions|null $Interactions
  */
 class FunnelChartConfiguration extends Shape
 {
@@ -24,8 +23,7 @@ class FunnelChartConfiguration extends Shape
      *     ValueLabelOptions?: ChartAxisLabelOptions|null,
      *     Tooltip?: TooltipOptions|null,
      *     DataLabelOptions?: FunnelChartDataLabelOptions|null,
-     *     VisualPalette?: VisualPalette|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     VisualPalette?: VisualPalette|null
      * } $args
      */
     public function __construct(array $args = [])

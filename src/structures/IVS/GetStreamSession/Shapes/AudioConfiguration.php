@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $codec
  * @property int|null $sampleRate
  * @property int|null $targetBitrate
- * @property string|null $track
  */
 class AudioConfiguration extends Shape
 {
@@ -18,8 +17,7 @@ class AudioConfiguration extends Shape
      *     channels?: int|null,
      *     codec?: string|null,
      *     sampleRate?: int|null,
-     *     targetBitrate?: int|null,
-     *     track?: string|null
+     *     targetBitrate?: int|null
      * } $args
      */
     public function __construct(array $args = [])

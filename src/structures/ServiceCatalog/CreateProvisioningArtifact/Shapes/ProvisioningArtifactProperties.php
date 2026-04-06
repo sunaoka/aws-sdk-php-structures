@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $Description
  * @property array<string, string>|null $Info
- * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE_AMI'|'MARKETPLACE_CAR'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL'|null $Type
+ * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE_AMI'|'MARKETPLACE_CAR'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|null $Type
  * @property bool|null $DisableTemplateValidation
  */
 class ProvisioningArtifactProperties extends Shape
@@ -18,7 +18,7 @@ class ProvisioningArtifactProperties extends Shape
      *     Name?: string|null,
      *     Description?: string|null,
      *     Info?: array<string, string>|null,
-     *     Type?: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE_AMI'|'MARKETPLACE_CAR'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL'|null,
+     *     Type?: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE_AMI'|'MARKETPLACE_CAR'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|null,
      *     DisableTemplateValidation?: bool|null
      * } $args
      */

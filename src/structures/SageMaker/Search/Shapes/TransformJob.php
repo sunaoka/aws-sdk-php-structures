@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string>|null $Environment
  * @property TransformInput|null $TransformInput
  * @property TransformOutput|null $TransformOutput
- * @property BatchDataCaptureConfig|null $DataCaptureConfig
  * @property TransformResources|null $TransformResources
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property \Aws\Api\DateTimeResult|null $TransformStartTime
@@ -27,6 +26,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DataProcessing|null $DataProcessing
  * @property ExperimentConfig|null $ExperimentConfig
  * @property list<Tag>|null $Tags
+ * @property BatchDataCaptureConfig|null $DataCaptureConfig
  */
 class TransformJob extends Shape
 {
@@ -44,7 +44,6 @@ class TransformJob extends Shape
      *     Environment?: array<string, string>|null,
      *     TransformInput?: TransformInput|null,
      *     TransformOutput?: TransformOutput|null,
-     *     DataCaptureConfig?: BatchDataCaptureConfig|null,
      *     TransformResources?: TransformResources|null,
      *     CreationTime?: \Aws\Api\DateTimeResult|null,
      *     TransformStartTime?: \Aws\Api\DateTimeResult|null,
@@ -53,7 +52,8 @@ class TransformJob extends Shape
      *     AutoMLJobArn?: string|null,
      *     DataProcessing?: DataProcessing|null,
      *     ExperimentConfig?: ExperimentConfig|null,
-     *     Tags?: list<Tag>|null
+     *     Tags?: list<Tag>|null,
+     *     DataCaptureConfig?: BatchDataCaptureConfig|null
      * } $args
      */
     public function __construct(array $args = [])

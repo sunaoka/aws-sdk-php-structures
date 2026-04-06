@@ -6,16 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkspaceId
- * @property Shapes\WorkspaceProperties|null $WorkspaceProperties
- * @property 'NO_REPLICATION'|'PRIMARY_AS_SOURCE'|null $DataReplication
+ * @property Shapes\WorkspaceProperties $WorkspaceProperties
  */
 class ModifyWorkspacePropertiesRequest extends Request
 {
     /**
      * @param array{
      *     WorkspaceId: string,
-     *     WorkspaceProperties?: Shapes\WorkspaceProperties|null,
-     *     DataReplication?: 'NO_REPLICATION'|'PRIMARY_AS_SOURCE'|null
+     *     WorkspaceProperties: Shapes\WorkspaceProperties
      * } $args
      */
     public function __construct(array $args)

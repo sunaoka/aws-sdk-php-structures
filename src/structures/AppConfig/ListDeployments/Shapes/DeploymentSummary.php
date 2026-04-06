@@ -12,11 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'LINEAR'|'EXPONENTIAL'|null $GrowthType
  * @property float|null $GrowthFactor
  * @property int<0, 1440>|null $FinalBakeTimeInMinutes
- * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED'|null $State
+ * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|null $State
  * @property float|null $PercentageComplete
  * @property \Aws\Api\DateTimeResult|null $StartedAt
  * @property \Aws\Api\DateTimeResult|null $CompletedAt
- * @property string|null $VersionLabel
  */
 class DeploymentSummary extends Shape
 {
@@ -29,11 +28,10 @@ class DeploymentSummary extends Shape
      *     GrowthType?: 'LINEAR'|'EXPONENTIAL'|null,
      *     GrowthFactor?: float|null,
      *     FinalBakeTimeInMinutes?: int<0, 1440>|null,
-     *     State?: 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED'|null,
+     *     State?: 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|null,
      *     PercentageComplete?: float|null,
      *     StartedAt?: \Aws\Api\DateTimeResult|null,
-     *     CompletedAt?: \Aws\Api\DateTimeResult|null,
-     *     VersionLabel?: string|null
+     *     CompletedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

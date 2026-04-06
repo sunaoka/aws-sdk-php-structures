@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ExecuteCommandConfiguration|null $executeCommandConfiguration
- * @property ManagedStorageConfiguration|null $managedStorageConfiguration
  */
 class ClusterConfiguration extends Shape
 {
     /**
-     * @param array{
-     *     executeCommandConfiguration?: ExecuteCommandConfiguration|null,
-     *     managedStorageConfiguration?: ManagedStorageConfiguration|null
-     * } $args
+     * @param array{executeCommandConfiguration?: ExecuteCommandConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

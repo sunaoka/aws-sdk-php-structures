@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $WorkteamArn
  * @property UiConfig $UiConfig
- * @property string|null $PreHumanTaskLambdaArn
+ * @property string $PreHumanTaskLambdaArn
  * @property list<string>|null $TaskKeywords
  * @property string $TaskTitle
  * @property string $TaskDescription
@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<30, max> $TaskTimeLimitInSeconds
  * @property int<60, max>|null $TaskAvailabilityLifetimeInSeconds
  * @property int<1, 5000>|null $MaxConcurrentTaskCount
- * @property AnnotationConsolidationConfig|null $AnnotationConsolidationConfig
+ * @property AnnotationConsolidationConfig $AnnotationConsolidationConfig
  * @property PublicWorkforceTaskPrice|null $PublicWorkforceTaskPrice
  */
 class HumanTaskConfig extends Shape
@@ -24,7 +24,7 @@ class HumanTaskConfig extends Shape
      * @param array{
      *     WorkteamArn: string,
      *     UiConfig: UiConfig,
-     *     PreHumanTaskLambdaArn?: string|null,
+     *     PreHumanTaskLambdaArn: string,
      *     TaskKeywords?: list<string>|null,
      *     TaskTitle: string,
      *     TaskDescription: string,
@@ -32,7 +32,7 @@ class HumanTaskConfig extends Shape
      *     TaskTimeLimitInSeconds: int<30, max>,
      *     TaskAvailabilityLifetimeInSeconds?: int<60, max>|null,
      *     MaxConcurrentTaskCount?: int<1, 5000>|null,
-     *     AnnotationConsolidationConfig?: AnnotationConsolidationConfig|null,
+     *     AnnotationConsolidationConfig: AnnotationConsolidationConfig,
      *     PublicWorkforceTaskPrice?: PublicWorkforceTaskPrice|null
      * } $args
      */

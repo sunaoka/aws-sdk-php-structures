@@ -24,8 +24,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AdminCreateUserConfigType|null $AdminCreateUserConfig
  * @property Shapes\UserPoolAddOnsType|null $UserPoolAddOns
  * @property Shapes\AccountRecoverySettingType|null $AccountRecoverySetting
- * @property string|null $PoolName
- * @property 'LITE'|'ESSENTIALS'|'PLUS'|null $UserPoolTier
  */
 class UpdateUserPoolRequest extends Request
 {
@@ -49,9 +47,7 @@ class UpdateUserPoolRequest extends Request
      *     UserPoolTags?: array<string, string>|null,
      *     AdminCreateUserConfig?: Shapes\AdminCreateUserConfigType|null,
      *     UserPoolAddOns?: Shapes\UserPoolAddOnsType|null,
-     *     AccountRecoverySetting?: Shapes\AccountRecoverySettingType|null,
-     *     PoolName?: string|null,
-     *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'|null
+     *     AccountRecoverySetting?: Shapes\AccountRecoverySettingType|null
      * } $args
      */
     public function __construct(array $args)

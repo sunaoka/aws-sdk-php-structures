@@ -20,7 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $privateIpAddress
  * @property string|null $publicIpAddress
  * @property list<string>|null $ipv6Addresses
- * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
+ * @property 'dualstack'|'ipv4'|null $ipAddressType
  * @property InstanceHardware|null $hardware
  * @property InstanceNetworking|null $networking
  * @property InstanceState|null $state
@@ -47,7 +47,7 @@ class Instance extends Shape
      *     privateIpAddress?: string|null,
      *     publicIpAddress?: string|null,
      *     ipv6Addresses?: list<string>|null,
-     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
+     *     ipAddressType?: 'dualstack'|'ipv4'|null,
      *     hardware?: InstanceHardware|null,
      *     networking?: InstanceNetworking|null,
      *     state?: InstanceState|null,

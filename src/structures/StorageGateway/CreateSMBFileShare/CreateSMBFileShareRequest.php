@@ -7,7 +7,6 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientToken
  * @property string $GatewayARN
- * @property 'SseS3'|'SseKms'|'DsseKms'|null $EncryptionType
  * @property bool|null $KMSEncrypted
  * @property string|null $KMSKey
  * @property string $Role
@@ -39,7 +38,6 @@ class CreateSMBFileShareRequest extends Request
      * @param array{
      *     ClientToken: string,
      *     GatewayARN: string,
-     *     EncryptionType?: 'SseS3'|'SseKms'|'DsseKms'|null,
      *     KMSEncrypted?: bool|null,
      *     KMSKey?: string|null,
      *     Role: string,

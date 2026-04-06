@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property array<string, string> $environmentVariables
  * @property bool $enableAutoBuild
- * @property bool|null $enableSkewProtection
  * @property list<string> $customDomains
  * @property string $framework
  * @property string $activeJobId
@@ -33,8 +32,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $destinationBranch
  * @property string|null $sourceBranch
  * @property string|null $backendEnvironmentArn
- * @property Backend|null $backend
- * @property string|null $computeRoleArn
  */
 class Branch extends Shape
 {
@@ -51,7 +48,6 @@ class Branch extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     environmentVariables: array<string, string>,
      *     enableAutoBuild: bool,
-     *     enableSkewProtection?: bool|null,
      *     customDomains: list<string>,
      *     framework: string,
      *     activeJobId: string,
@@ -67,9 +63,7 @@ class Branch extends Shape
      *     pullRequestEnvironmentName?: string|null,
      *     destinationBranch?: string|null,
      *     sourceBranch?: string|null,
-     *     backendEnvironmentArn?: string|null,
-     *     backend?: Backend|null,
-     *     computeRoleArn?: string|null
+     *     backendEnvironmentArn?: string|null
      * } $args
      */
     public function __construct(array $args)

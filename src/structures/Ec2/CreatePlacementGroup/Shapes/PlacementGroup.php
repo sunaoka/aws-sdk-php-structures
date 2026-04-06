@@ -13,8 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Tag>|null $Tags
  * @property string|null $GroupArn
  * @property 'host'|'rack'|null $SpreadLevel
- * @property string|null $LinkedGroupId
- * @property OperatorResponse|null $Operator
  */
 class PlacementGroup extends Shape
 {
@@ -27,9 +25,7 @@ class PlacementGroup extends Shape
      *     GroupId?: string|null,
      *     Tags?: list<Tag>|null,
      *     GroupArn?: string|null,
-     *     SpreadLevel?: 'host'|'rack'|null,
-     *     LinkedGroupId?: string|null,
-     *     Operator?: OperatorResponse|null
+     *     SpreadLevel?: 'host'|'rack'|null
      * } $args
      */
     public function __construct(array $args = [])

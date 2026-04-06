@@ -5,20 +5,18 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $FieldId
- * @property string|null $FieldValue
- * @property DataPathType|null $DataPathType
+ * @property string $FieldId
+ * @property string $FieldValue
  */
 class DataPathValue extends Shape
 {
     /**
      * @param array{
-     *     FieldId?: string|null,
-     *     FieldValue?: string|null,
-     *     DataPathType?: DataPathType|null
+     *     FieldId: string,
+     *     FieldValue: string
      * } $args
      */
-    public function __construct(array $args = [])
+    public function __construct(array $args)
     {
         $this->__data = $args;
     }

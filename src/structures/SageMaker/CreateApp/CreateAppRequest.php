@@ -7,12 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainId
  * @property string|null $UserProfileName
- * @property string|null $SpaceName
- * @property 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas' $AppType
+ * @property 'JupyterServer'|'KernelGateway'|'TensorBoard'|'RStudioServerPro'|'RSessionGateway' $AppType
  * @property string $AppName
  * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\ResourceSpec|null $ResourceSpec
- * @property bool|null $RecoveryMode
+ * @property string|null $SpaceName
  */
 class CreateAppRequest extends Request
 {
@@ -20,12 +19,11 @@ class CreateAppRequest extends Request
      * @param array{
      *     DomainId: string,
      *     UserProfileName?: string|null,
-     *     SpaceName?: string|null,
-     *     AppType: 'JupyterServer'|'KernelGateway'|'DetailedProfiler'|'TensorBoard'|'CodeEditor'|'JupyterLab'|'RStudioServerPro'|'RSessionGateway'|'Canvas',
+     *     AppType: 'JupyterServer'|'KernelGateway'|'TensorBoard'|'RStudioServerPro'|'RSessionGateway',
      *     AppName: string,
      *     Tags?: list<Shapes\Tag>|null,
      *     ResourceSpec?: Shapes\ResourceSpec|null,
-     *     RecoveryMode?: bool|null
+     *     SpaceName?: string|null
      * } $args
      */
     public function __construct(array $args)

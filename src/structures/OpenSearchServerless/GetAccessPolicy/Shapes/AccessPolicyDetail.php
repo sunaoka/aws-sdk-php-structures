@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\GetAccessPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'data'|null $type
- * @property string|null $name
- * @property string|null $policyVersion
- * @property string|null $description
- * @property Document|null $policy
  * @property int|null $createdDate
+ * @property string|null $description
  * @property int|null $lastModifiedDate
+ * @property string|null $name
+ * @property Document|null $policy
+ * @property string|null $policyVersion
+ * @property 'data'|null $type
  */
 class AccessPolicyDetail extends Shape
 {
     /**
      * @param array{
-     *     type?: 'data'|null,
-     *     name?: string|null,
-     *     policyVersion?: string|null,
-     *     description?: string|null,
-     *     policy?: Document|null,
      *     createdDate?: int|null,
-     *     lastModifiedDate?: int|null
+     *     description?: string|null,
+     *     lastModifiedDate?: int|null,
+     *     name?: string|null,
+     *     policy?: Document|null,
+     *     policyVersion?: string|null,
+     *     type?: 'data'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ControlPlaneTagFilter|null $TagFilter
- * @property ControlPlaneUserAttributeFilter|null $UserAttributeFilter
  */
 class UserSearchFilter extends Shape
 {
     /**
-     * @param array{
-     *     TagFilter?: ControlPlaneTagFilter|null,
-     *     UserAttributeFilter?: ControlPlaneUserAttributeFilter|null
-     * } $args
+     * @param array{TagFilter?: ControlPlaneTagFilter|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -8,11 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DirectoryId
  * @property string|null $DomainControllerId
  * @property string|null $DnsIpAddr
- * @property string|null $DnsIpv6Addr
  * @property string|null $VpcId
  * @property string|null $SubnetId
  * @property string|null $AvailabilityZone
- * @property 'Creating'|'Active'|'Impaired'|'Restoring'|'Deleting'|'Deleted'|'Failed'|'Updating'|null $Status
+ * @property 'Creating'|'Active'|'Impaired'|'Restoring'|'Deleting'|'Deleted'|'Failed'|null $Status
  * @property string|null $StatusReason
  * @property \Aws\Api\DateTimeResult|null $LaunchTime
  * @property \Aws\Api\DateTimeResult|null $StatusLastUpdatedDateTime
@@ -24,11 +23,10 @@ class DomainController extends Shape
      *     DirectoryId?: string|null,
      *     DomainControllerId?: string|null,
      *     DnsIpAddr?: string|null,
-     *     DnsIpv6Addr?: string|null,
      *     VpcId?: string|null,
      *     SubnetId?: string|null,
      *     AvailabilityZone?: string|null,
-     *     Status?: 'Creating'|'Active'|'Impaired'|'Restoring'|'Deleting'|'Deleted'|'Failed'|'Updating'|null,
+     *     Status?: 'Creating'|'Active'|'Impaired'|'Restoring'|'Deleting'|'Deleted'|'Failed'|null,
      *     StatusReason?: string|null,
      *     LaunchTime?: \Aws\Api\DateTimeResult|null,
      *     StatusLastUpdatedDateTime?: \Aws\Api\DateTimeResult|null

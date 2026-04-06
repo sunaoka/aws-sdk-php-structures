@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SecurityLake\UpdateSubscriber\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ROUTE53'|'VPC_FLOW'|'SH_FINDINGS'|'CLOUD_TRAIL_MGMT'|'LAMBDA_EXECUTION'|'S3_DATA'|'EKS_AUDIT'|'WAF'|null $sourceName
+ * @property 'ROUTE53'|'VPC_FLOW'|'SH_FINDINGS'|'CLOUD_TRAIL_MGMT'|'LAMBDA_EXECUTION'|'S3_DATA'|null $sourceName
  * @property string|null $sourceVersion
  */
 class AwsLogSourceResource extends Shape
 {
     /**
      * @param array{
-     *     sourceName?: 'ROUTE53'|'VPC_FLOW'|'SH_FINDINGS'|'CLOUD_TRAIL_MGMT'|'LAMBDA_EXECUTION'|'S3_DATA'|'EKS_AUDIT'|'WAF'|null,
+     *     sourceName?: 'ROUTE53'|'VPC_FLOW'|'SH_FINDINGS'|'CLOUD_TRAIL_MGMT'|'LAMBDA_EXECUTION'|'S3_DATA'|null,
      *     sourceVersion?: string|null
      * } $args
      */

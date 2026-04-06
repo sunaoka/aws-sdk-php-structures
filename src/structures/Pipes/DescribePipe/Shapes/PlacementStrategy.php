@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'random'|'spread'|'binpack'|null $type
  * @property string|null $field
+ * @property 'random'|'spread'|'binpack'|null $type
  */
 class PlacementStrategy extends Shape
 {
     /**
      * @param array{
-     *     type?: 'random'|'spread'|'binpack'|null,
-     *     field?: string|null
+     *     field?: string|null,
+     *     type?: 'random'|'spread'|'binpack'|null
      * } $args
      */
     public function __construct(array $args = [])

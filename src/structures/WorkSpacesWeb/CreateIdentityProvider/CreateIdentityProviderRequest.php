@@ -5,23 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\CreateIdentityProvider;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $portalArn
+ * @property string|null $clientToken
+ * @property array<string, string> $identityProviderDetails
  * @property string $identityProviderName
  * @property 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC' $identityProviderType
- * @property array<string, string> $identityProviderDetails
- * @property string|null $clientToken
- * @property list<Shapes\Tag>|null $tags
+ * @property string $portalArn
  */
 class CreateIdentityProviderRequest extends Request
 {
     /**
      * @param array{
-     *     portalArn: string,
+     *     clientToken?: string|null,
+     *     identityProviderDetails: array<string, string>,
      *     identityProviderName: string,
      *     identityProviderType: 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC',
-     *     identityProviderDetails: array<string, string>,
-     *     clientToken?: string|null,
-     *     tags?: list<Shapes\Tag>|null
+     *     portalArn: string
      * } $args
      */
     public function __construct(array $args)

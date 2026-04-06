@@ -8,10 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $semanticVersion
  * @property string|null $description
- * @property 'Windows'|'Linux'|'macOS' $platform
+ * @property 'Windows'|'Linux' $platform
  * @property string|null $osVersion
  * @property string $vmImportTaskId
- * @property Shapes\ImageLoggingConfiguration|null $loggingConfiguration
  * @property array<string, string>|null $tags
  * @property string $clientToken
  */
@@ -22,10 +21,9 @@ class ImportVmImageRequest extends Request
      *     name: string,
      *     semanticVersion: string,
      *     description?: string|null,
-     *     platform: 'Windows'|'Linux'|'macOS',
+     *     platform: 'Windows'|'Linux',
      *     osVersion?: string|null,
      *     vmImportTaskId: string,
-     *     loggingConfiguration?: Shapes\ImageLoggingConfiguration|null,
      *     tags?: array<string, string>|null,
      *     clientToken: string
      * } $args

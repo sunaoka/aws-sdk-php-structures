@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $ScheduleExpression
  * @property string|null $AssociationName
  * @property int<1, 6>|null $ScheduleOffset
- * @property int<1, 24>|null $Duration
  * @property list<array<string, list<string>>>|null $TargetMaps
  */
 class Association extends Shape
@@ -34,7 +33,6 @@ class Association extends Shape
      *     ScheduleExpression?: string|null,
      *     AssociationName?: string|null,
      *     ScheduleOffset?: int<1, 6>|null,
-     *     Duration?: int<1, 24>|null,
      *     TargetMaps?: list<array<string, list<string>>>|null
      * } $args
      */

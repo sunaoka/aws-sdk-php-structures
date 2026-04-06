@@ -8,7 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $workspaceId
  * @property string $arn
  * @property string|null $description
- * @property list<string>|null $linkedServices
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
  */
@@ -19,7 +18,6 @@ class WorkspaceSummary extends Shape
      *     workspaceId: string,
      *     arn: string,
      *     description?: string|null,
-     *     linkedServices?: list<string>|null,
      *     creationDateTime: \Aws\Api\DateTimeResult,
      *     updateDateTime: \Aws\Api\DateTimeResult
      * } $args

@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\SnapshotFilter>|null $Filters
  * @property int<1, 2147483647>|null $MaxResults
  * @property string|null $NextToken
- * @property bool|null $IncludeShared
  */
 class DescribeSnapshotsRequest extends Request
 {
@@ -18,8 +17,7 @@ class DescribeSnapshotsRequest extends Request
      *     SnapshotIds?: list<string>|null,
      *     Filters?: list<Shapes\SnapshotFilter>|null,
      *     MaxResults?: int<1, 2147483647>|null,
-     *     NextToken?: string|null,
-     *     IncludeShared?: bool|null
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

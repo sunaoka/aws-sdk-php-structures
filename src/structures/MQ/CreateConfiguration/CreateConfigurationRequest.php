@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MQ\CreateConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null $AuthenticationStrategy
+ * @property 'SIMPLE'|'LDAP'|null $AuthenticationStrategy
  * @property 'ACTIVEMQ'|'RABBITMQ' $EngineType
- * @property string|null $EngineVersion
+ * @property string $EngineVersion
  * @property string $Name
  * @property array<string, string>|null $Tags
  */
@@ -15,9 +15,9 @@ class CreateConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationStrategy?: 'SIMPLE'|'LDAP'|'CONFIG_MANAGED'|null,
+     *     AuthenticationStrategy?: 'SIMPLE'|'LDAP'|null,
      *     EngineType: 'ACTIVEMQ'|'RABBITMQ',
-     *     EngineVersion?: string|null,
+     *     EngineVersion: string,
      *     Name: string,
      *     Tags?: array<string, string>|null
      * } $args

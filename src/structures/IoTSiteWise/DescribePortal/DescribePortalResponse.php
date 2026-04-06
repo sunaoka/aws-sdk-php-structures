@@ -20,8 +20,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'IAM'|'SSO'|null $portalAuthMode
  * @property string|null $notificationSenderEmail
  * @property Shapes\Alarms|null $alarms
- * @property 'SITEWISE_PORTAL_V1'|'SITEWISE_PORTAL_V2'|null $portalType
- * @property array<string, Shapes\PortalTypeEntry>|null $portalTypeConfiguration
  */
 class DescribePortalResponse extends Response
 {

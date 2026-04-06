@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $insecureIngest
  * @property 'NORMAL'|'LOW'|null $latencyMode
  * @property string|null $name
- * @property string|null $playbackRestrictionPolicyArn
  * @property 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null $preset
  * @property string|null $recordingConfigurationArn
  * @property array<string, string>|null $tags
@@ -25,7 +24,6 @@ class ChannelSummary extends Shape
      *     insecureIngest?: bool|null,
      *     latencyMode?: 'NORMAL'|'LOW'|null,
      *     name?: string|null,
-     *     playbackRestrictionPolicyArn?: string|null,
      *     preset?: 'HIGHER_BANDWIDTH_DELIVERY'|'CONSTRAINED_BANDWIDTH_DELIVERY'|null,
      *     recordingConfigurationArn?: string|null,
      *     tags?: array<string, string>|null,

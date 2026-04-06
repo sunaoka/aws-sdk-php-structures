@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AUTO'|'RIGHT'|'BOTTOM'|'TOP'|null $Position
  * @property string|null $Width
  * @property string|null $Height
- * @property FontConfiguration|null $ValueFontConfiguration
  */
 class LegendOptions extends Shape
 {
@@ -20,8 +19,7 @@ class LegendOptions extends Shape
      *     Title?: LabelOptions|null,
      *     Position?: 'AUTO'|'RIGHT'|'BOTTOM'|'TOP'|null,
      *     Width?: string|null,
-     *     Height?: string|null,
-     *     ValueFontConfiguration?: FontConfiguration|null
+     *     Height?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -14,7 +14,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property Shapes\OnlineStoreConfig|null $OnlineStoreConfig
  * @property Shapes\OfflineStoreConfig|null $OfflineStoreConfig
- * @property Shapes\ThroughputConfigDescription|null $ThroughputConfig
  * @property string|null $RoleArn
  * @property 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed'|null $FeatureGroupStatus
  * @property Shapes\OfflineStoreStatus|null $OfflineStoreStatus

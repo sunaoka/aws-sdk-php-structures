@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $publisher
  * @property string|null $owner
  * @property MarketplaceInformation|null $marketplaceInformation
- * @property string|null $defaultNamespace
  */
 class AddonInfo extends Shape
 {
@@ -22,8 +21,7 @@ class AddonInfo extends Shape
      *     addonVersions?: list<AddonVersionInfo>|null,
      *     publisher?: string|null,
      *     owner?: string|null,
-     *     marketplaceInformation?: MarketplaceInformation|null,
-     *     defaultNamespace?: string|null
+     *     marketplaceInformation?: MarketplaceInformation|null
      * } $args
      */
     public function __construct(array $args = [])

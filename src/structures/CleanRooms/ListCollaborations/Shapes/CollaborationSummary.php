@@ -15,7 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'INVITED'|'ACTIVE'|'LEFT'|'REMOVED' $memberStatus
  * @property string|null $membershipId
  * @property string|null $membershipArn
- * @property 'SPARK'|'CLEAN_ROOMS_SQL'|null $analyticsEngine
  */
 class CollaborationSummary extends Shape
 {
@@ -30,8 +29,7 @@ class CollaborationSummary extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     memberStatus: 'INVITED'|'ACTIVE'|'LEFT'|'REMOVED',
      *     membershipId?: string|null,
-     *     membershipArn?: string|null,
-     *     analyticsEngine?: 'SPARK'|'CLEAN_ROOMS_SQL'|null
+     *     membershipArn?: string|null
      * } $args
      */
     public function __construct(array $args)

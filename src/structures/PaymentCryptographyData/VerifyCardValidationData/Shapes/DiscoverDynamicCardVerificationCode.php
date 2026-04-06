@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyCardValidationDat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
+ * @property string $ApplicationTransactionCounter
  * @property string $CardExpiryDate
  * @property string $UnpredictableNumber
- * @property string $ApplicationTransactionCounter
  */
 class DiscoverDynamicCardVerificationCode extends Shape
 {
     /**
      * @param array{
+     *     ApplicationTransactionCounter: string,
      *     CardExpiryDate: string,
-     *     UnpredictableNumber: string,
-     *     ApplicationTransactionCounter: string
+     *     UnpredictableNumber: string
      * } $args
      */
     public function __construct(array $args)

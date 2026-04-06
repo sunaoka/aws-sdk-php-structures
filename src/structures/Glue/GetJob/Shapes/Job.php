@@ -6,8 +6,6 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $Name
- * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
- * @property bool|null $JobRunQueuingEnabled
  * @property string|null $Description
  * @property string|null $LogUri
  * @property string|null $Role
@@ -30,16 +28,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, CodeGenConfigurationNode>|null $CodeGenConfigurationNodes
  * @property 'FLEX'|'STANDARD'|null $ExecutionClass
  * @property SourceControlDetails|null $SourceControlDetails
- * @property string|null $MaintenanceWindow
- * @property string|null $ProfileName
  */
 class Job extends Shape
 {
     /**
      * @param array{
      *     Name?: string|null,
-     *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
-     *     JobRunQueuingEnabled?: bool|null,
      *     Description?: string|null,
      *     LogUri?: string|null,
      *     Role?: string|null,
@@ -61,9 +55,7 @@ class Job extends Shape
      *     GlueVersion?: string|null,
      *     CodeGenConfigurationNodes?: array<string, CodeGenConfigurationNode>|null,
      *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
-     *     SourceControlDetails?: SourceControlDetails|null,
-     *     MaintenanceWindow?: string|null,
-     *     ProfileName?: string|null
+     *     SourceControlDetails?: SourceControlDetails|null
      * } $args
      */
     public function __construct(array $args = [])

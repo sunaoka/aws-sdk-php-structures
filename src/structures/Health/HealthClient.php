@@ -8,7 +8,6 @@ class HealthClient extends \Aws\Health\HealthClient
     use DescribeAffectedEntities\DescribeAffectedEntitiesTrait;
     use DescribeAffectedEntitiesForOrganization\DescribeAffectedEntitiesForOrganizationTrait;
     use DescribeEntityAggregates\DescribeEntityAggregatesTrait;
-    use DescribeEntityAggregatesForOrganization\DescribeEntityAggregatesForOrganizationTrait;
     use DescribeEventAggregates\DescribeEventAggregatesTrait;
     use DescribeEventDetails\DescribeEventDetailsTrait;
     use DescribeEventDetailsForOrganization\DescribeEventDetailsForOrganizationTrait;

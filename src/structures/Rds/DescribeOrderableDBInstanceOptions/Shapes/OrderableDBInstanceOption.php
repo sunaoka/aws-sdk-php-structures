@@ -17,7 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $SupportsStorageEncryption
  * @property string|null $StorageType
  * @property bool|null $SupportsIops
- * @property bool|null $SupportsStorageThroughput
  * @property bool|null $SupportsEnhancedMonitoring
  * @property bool|null $SupportsIAMDatabaseAuthentication
  * @property bool|null $SupportsPerformanceInsights
@@ -27,10 +26,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MaxIopsPerDbInstance
  * @property double|null $MinIopsPerGib
  * @property double|null $MaxIopsPerGib
- * @property int|null $MinStorageThroughputPerDbInstance
- * @property int|null $MaxStorageThroughputPerDbInstance
- * @property double|null $MinStorageThroughputPerIops
- * @property double|null $MaxStorageThroughputPerIops
  * @property list<AvailableProcessorFeature>|null $AvailableProcessorFeatures
  * @property list<string>|null $SupportedEngineModes
  * @property bool|null $SupportsStorageAutoscaling
@@ -38,12 +33,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $OutpostCapable
  * @property list<string>|null $SupportedActivityStreamModes
  * @property bool|null $SupportsGlobalDatabases
- * @property list<string>|null $SupportedNetworkTypes
  * @property bool|null $SupportsClusters
- * @property bool|null $SupportsDedicatedLogVolume
- * @property bool|null $SupportsAdditionalStorageVolumes
- * @property bool|null $SupportsHttpEndpoint
- * @property list<AvailableAdditionalStorageVolumesOption>|null $AvailableAdditionalStorageVolumesOptions
+ * @property list<string>|null $SupportedNetworkTypes
+ * @property bool|null $SupportsStorageThroughput
+ * @property int|null $MinStorageThroughputPerDbInstance
+ * @property int|null $MaxStorageThroughputPerDbInstance
+ * @property double|null $MinStorageThroughputPerIops
+ * @property double|null $MaxStorageThroughputPerIops
  */
 class OrderableDBInstanceOption extends Shape
 {
@@ -61,7 +57,6 @@ class OrderableDBInstanceOption extends Shape
      *     SupportsStorageEncryption?: bool|null,
      *     StorageType?: string|null,
      *     SupportsIops?: bool|null,
-     *     SupportsStorageThroughput?: bool|null,
      *     SupportsEnhancedMonitoring?: bool|null,
      *     SupportsIAMDatabaseAuthentication?: bool|null,
      *     SupportsPerformanceInsights?: bool|null,
@@ -71,10 +66,6 @@ class OrderableDBInstanceOption extends Shape
      *     MaxIopsPerDbInstance?: int|null,
      *     MinIopsPerGib?: double|null,
      *     MaxIopsPerGib?: double|null,
-     *     MinStorageThroughputPerDbInstance?: int|null,
-     *     MaxStorageThroughputPerDbInstance?: int|null,
-     *     MinStorageThroughputPerIops?: double|null,
-     *     MaxStorageThroughputPerIops?: double|null,
      *     AvailableProcessorFeatures?: list<AvailableProcessorFeature>|null,
      *     SupportedEngineModes?: list<string>|null,
      *     SupportsStorageAutoscaling?: bool|null,
@@ -82,12 +73,13 @@ class OrderableDBInstanceOption extends Shape
      *     OutpostCapable?: bool|null,
      *     SupportedActivityStreamModes?: list<string>|null,
      *     SupportsGlobalDatabases?: bool|null,
-     *     SupportedNetworkTypes?: list<string>|null,
      *     SupportsClusters?: bool|null,
-     *     SupportsDedicatedLogVolume?: bool|null,
-     *     SupportsAdditionalStorageVolumes?: bool|null,
-     *     SupportsHttpEndpoint?: bool|null,
-     *     AvailableAdditionalStorageVolumesOptions?: list<AvailableAdditionalStorageVolumesOption>|null
+     *     SupportedNetworkTypes?: list<string>|null,
+     *     SupportsStorageThroughput?: bool|null,
+     *     MinStorageThroughputPerDbInstance?: int|null,
+     *     MaxStorageThroughputPerDbInstance?: int|null,
+     *     MinStorageThroughputPerIops?: double|null,
+     *     MaxStorageThroughputPerIops?: double|null
      * } $args
      */
     public function __construct(array $args = [])

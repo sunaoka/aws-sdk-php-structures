@@ -8,8 +8,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $logGroupName
  * @property string|null $kmsKeyId
  * @property array<string, string>|null $tags
- * @property 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null $logGroupClass
- * @property bool|null $deletionProtectionEnabled
  */
 class CreateLogGroupRequest extends Request
 {
@@ -17,9 +15,7 @@ class CreateLogGroupRequest extends Request
      * @param array{
      *     logGroupName: string,
      *     kmsKeyId?: string|null,
-     *     tags?: array<string, string>|null,
-     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|'DELIVERY'|null,
-     *     deletionProtectionEnabled?: bool|null
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

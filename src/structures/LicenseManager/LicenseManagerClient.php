@@ -11,8 +11,6 @@ class LicenseManagerClient extends \Aws\LicenseManager\LicenseManagerClient
     use CreateGrant\CreateGrantTrait;
     use CreateGrantVersion\CreateGrantVersionTrait;
     use CreateLicense\CreateLicenseTrait;
-    use CreateLicenseAssetGroup\CreateLicenseAssetGroupTrait;
-    use CreateLicenseAssetRuleset\CreateLicenseAssetRulesetTrait;
     use CreateLicenseConfiguration\CreateLicenseConfigurationTrait;
     use CreateLicenseConversionTaskForResource\CreateLicenseConversionTaskForResourceTrait;
     use CreateLicenseManagerReportGenerator\CreateLicenseManagerReportGeneratorTrait;
@@ -20,8 +18,6 @@ class LicenseManagerClient extends \Aws\LicenseManager\LicenseManagerClient
     use CreateToken\CreateTokenTrait;
     use DeleteGrant\DeleteGrantTrait;
     use DeleteLicense\DeleteLicenseTrait;
-    use DeleteLicenseAssetGroup\DeleteLicenseAssetGroupTrait;
-    use DeleteLicenseAssetRuleset\DeleteLicenseAssetRulesetTrait;
     use DeleteLicenseConfiguration\DeleteLicenseConfigurationTrait;
     use DeleteLicenseManagerReportGenerator\DeleteLicenseManagerReportGeneratorTrait;
     use DeleteToken\DeleteTokenTrait;
@@ -29,21 +25,15 @@ class LicenseManagerClient extends \Aws\LicenseManager\LicenseManagerClient
     use GetAccessToken\GetAccessTokenTrait;
     use GetGrant\GetGrantTrait;
     use GetLicense\GetLicenseTrait;
-    use GetLicenseAssetGroup\GetLicenseAssetGroupTrait;
-    use GetLicenseAssetRuleset\GetLicenseAssetRulesetTrait;
     use GetLicenseConfiguration\GetLicenseConfigurationTrait;
     use GetLicenseConversionTask\GetLicenseConversionTaskTrait;
     use GetLicenseManagerReportGenerator\GetLicenseManagerReportGeneratorTrait;
     use GetLicenseUsage\GetLicenseUsageTrait;
     use GetServiceSettings\GetServiceSettingsTrait;
-    use ListAssetsForLicenseAssetGroup\ListAssetsForLicenseAssetGroupTrait;
     use ListAssociationsForLicenseConfiguration\ListAssociationsForLicenseConfigurationTrait;
     use ListDistributedGrants\ListDistributedGrantsTrait;
     use ListFailuresForLicenseConfigurationOperations\ListFailuresForLicenseConfigurationOperationsTrait;
-    use ListLicenseAssetGroups\ListLicenseAssetGroupsTrait;
-    use ListLicenseAssetRulesets\ListLicenseAssetRulesetsTrait;
     use ListLicenseConfigurations\ListLicenseConfigurationsTrait;
-    use ListLicenseConfigurationsForOrganization\ListLicenseConfigurationsForOrganizationTrait;
     use ListLicenseConversionTasks\ListLicenseConversionTasksTrait;
     use ListLicenseManagerReportGenerators\ListLicenseManagerReportGeneratorsTrait;
     use ListLicenseSpecificationsForResource\ListLicenseSpecificationsForResourceTrait;
@@ -60,8 +50,6 @@ class LicenseManagerClient extends \Aws\LicenseManager\LicenseManagerClient
     use RejectGrant\RejectGrantTrait;
     use TagResource\TagResourceTrait;
     use UntagResource\UntagResourceTrait;
-    use UpdateLicenseAssetGroup\UpdateLicenseAssetGroupTrait;
-    use UpdateLicenseAssetRuleset\UpdateLicenseAssetRulesetTrait;
     use UpdateLicenseConfiguration\UpdateLicenseConfigurationTrait;
     use UpdateLicenseManagerReportGenerator\UpdateLicenseManagerReportGeneratorTrait;
     use UpdateLicenseSpecificationsForResource\UpdateLicenseSpecificationsForResourceTrait;

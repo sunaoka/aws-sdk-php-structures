@@ -5,13 +5,14 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchainQuery\GetTransaction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ETHEREUM_MAINNET'|'ETHEREUM_SEPOLIA_TESTNET'|'BITCOIN_MAINNET'|'BITCOIN_TESTNET' $network
+ * @property 'ETHEREUM_MAINNET'|'BITCOIN_MAINNET' $network
  * @property string|null $blockHash
  * @property string $transactionHash
  * @property string|null $blockNumber
  * @property \Aws\Api\DateTimeResult $transactionTimestamp
  * @property int $transactionIndex
  * @property int $numberOfTransactions
+ * @property 'FINAL'|'FAILED' $status
  * @property string $to
  * @property string|null $from
  * @property string|null $contractAddress
@@ -23,20 +24,19 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $signatureS
  * @property string|null $transactionFee
  * @property string|null $transactionId
- * @property 'FINAL'|'NONFINAL'|null $confirmationStatus
- * @property 'FAILED'|'SUCCEEDED'|null $executionStatus
  */
 class Transaction extends Shape
 {
     /**
      * @param array{
-     *     network: 'ETHEREUM_MAINNET'|'ETHEREUM_SEPOLIA_TESTNET'|'BITCOIN_MAINNET'|'BITCOIN_TESTNET',
+     *     network: 'ETHEREUM_MAINNET'|'BITCOIN_MAINNET',
      *     blockHash?: string|null,
      *     transactionHash: string,
      *     blockNumber?: string|null,
      *     transactionTimestamp: \Aws\Api\DateTimeResult,
      *     transactionIndex: int,
      *     numberOfTransactions: int,
+     *     status: 'FINAL'|'FAILED',
      *     to: string,
      *     from?: string|null,
      *     contractAddress?: string|null,
@@ -47,9 +47,7 @@ class Transaction extends Shape
      *     signatureR?: string|null,
      *     signatureS?: string|null,
      *     transactionFee?: string|null,
-     *     transactionId?: string|null,
-     *     confirmationStatus?: 'FINAL'|'NONFINAL'|null,
-     *     executionStatus?: 'FAILED'|'SUCCEEDED'|null
+     *     transactionId?: string|null
      * } $args
      */
     public function __construct(array $args)

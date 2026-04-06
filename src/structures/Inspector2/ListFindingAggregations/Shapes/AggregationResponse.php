@@ -11,12 +11,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Ec2InstanceAggregationResponse|null $ec2InstanceAggregation
  * @property FindingTypeAggregationResponse|null $findingTypeAggregation
  * @property ImageLayerAggregationResponse|null $imageLayerAggregation
+ * @property LambdaFunctionAggregationResponse|null $lambdaFunctionAggregation
+ * @property LambdaLayerAggregationResponse|null $lambdaLayerAggregation
  * @property PackageAggregationResponse|null $packageAggregation
  * @property RepositoryAggregationResponse|null $repositoryAggregation
  * @property TitleAggregationResponse|null $titleAggregation
- * @property LambdaLayerAggregationResponse|null $lambdaLayerAggregation
- * @property LambdaFunctionAggregationResponse|null $lambdaFunctionAggregation
- * @property CodeRepositoryAggregationResponse|null $codeRepositoryAggregation
  */
 class AggregationResponse extends Shape
 {
@@ -28,12 +27,11 @@ class AggregationResponse extends Shape
      *     ec2InstanceAggregation?: Ec2InstanceAggregationResponse|null,
      *     findingTypeAggregation?: FindingTypeAggregationResponse|null,
      *     imageLayerAggregation?: ImageLayerAggregationResponse|null,
+     *     lambdaFunctionAggregation?: LambdaFunctionAggregationResponse|null,
+     *     lambdaLayerAggregation?: LambdaLayerAggregationResponse|null,
      *     packageAggregation?: PackageAggregationResponse|null,
      *     repositoryAggregation?: RepositoryAggregationResponse|null,
-     *     titleAggregation?: TitleAggregationResponse|null,
-     *     lambdaLayerAggregation?: LambdaLayerAggregationResponse|null,
-     *     lambdaFunctionAggregation?: LambdaFunctionAggregationResponse|null,
-     *     codeRepositoryAggregation?: CodeRepositoryAggregationResponse|null
+     *     titleAggregation?: TitleAggregationResponse|null
      * } $args
      */
     public function __construct(array $args = [])

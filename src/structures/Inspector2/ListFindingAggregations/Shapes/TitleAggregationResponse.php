@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindingAggregations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $title
- * @property string|null $vulnerabilityId
  * @property string|null $accountId
  * @property SeverityCounts|null $severityCounts
+ * @property string $title
+ * @property string|null $vulnerabilityId
  */
 class TitleAggregationResponse extends Shape
 {
     /**
      * @param array{
-     *     title: string,
-     *     vulnerabilityId?: string|null,
      *     accountId?: string|null,
-     *     severityCounts?: SeverityCounts|null
+     *     severityCounts?: SeverityCounts|null,
+     *     title: string,
+     *     vulnerabilityId?: string|null
      * } $args
      */
     public function __construct(array $args)

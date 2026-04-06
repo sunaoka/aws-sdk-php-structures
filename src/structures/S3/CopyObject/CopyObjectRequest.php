@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null $ACL
  * @property string $Bucket
  * @property string|null $CacheControl
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  * @property string|null $ContentDisposition
  * @property string|null $ContentEncoding
  * @property string|null $ContentLanguage
@@ -18,19 +18,17 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfModifiedSince
  * @property string|null $CopySourceIfNoneMatch
  * @property \Aws\Api\DateTimeResult|null $CopySourceIfUnmodifiedSince
- * @property string|null $Expires
+ * @property \Aws\Api\DateTimeResult|null $Expires
  * @property string|null $GrantFullControl
  * @property string|null $GrantRead
  * @property string|null $GrantReadACP
  * @property string|null $GrantWriteACP
- * @property string|null $IfMatch
- * @property string|null $IfNoneMatch
  * @property string $Key
  * @property array<string, string>|null $Metadata
  * @property 'COPY'|'REPLACE'|null $MetadataDirective
  * @property 'COPY'|'REPLACE'|null $TaggingDirective
- * @property 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null $StorageClass
+ * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|null $StorageClass
  * @property string|null $WebsiteRedirectLocation
  * @property string|null $SSECustomerAlgorithm
  * @property string|null $SSECustomerKey
@@ -56,7 +54,7 @@ class CopyObjectRequest extends Request
      *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control'|null,
      *     Bucket: string,
      *     CacheControl?: string|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
      *     ContentDisposition?: string|null,
      *     ContentEncoding?: string|null,
      *     ContentLanguage?: string|null,
@@ -66,19 +64,17 @@ class CopyObjectRequest extends Request
      *     CopySourceIfModifiedSince?: \Aws\Api\DateTimeResult|null,
      *     CopySourceIfNoneMatch?: string|null,
      *     CopySourceIfUnmodifiedSince?: \Aws\Api\DateTimeResult|null,
-     *     Expires?: string|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
      *     GrantFullControl?: string|null,
      *     GrantRead?: string|null,
      *     GrantReadACP?: string|null,
      *     GrantWriteACP?: string|null,
-     *     IfMatch?: string|null,
-     *     IfNoneMatch?: string|null,
      *     Key: string,
      *     Metadata?: array<string, string>|null,
      *     MetadataDirective?: 'COPY'|'REPLACE'|null,
      *     TaggingDirective?: 'COPY'|'REPLACE'|null,
-     *     ServerSideEncryption?: 'AES256'|'aws:fsx'|'aws:kms'|'aws:kms:dsse'|null,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|'FSX_OPENZFS'|'FSX_ONTAP'|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|null,
      *     WebsiteRedirectLocation?: string|null,
      *     SSECustomerAlgorithm?: string|null,
      *     SSECustomerKey?: string|null,

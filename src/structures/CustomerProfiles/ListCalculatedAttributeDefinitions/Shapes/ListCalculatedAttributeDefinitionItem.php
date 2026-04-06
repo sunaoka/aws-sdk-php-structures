@@ -10,8 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Description
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
- * @property bool|null $UseHistoricalData
- * @property 'PREPARING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $Status
  * @property array<string, string>|null $Tags
  */
 class ListCalculatedAttributeDefinitionItem extends Shape
@@ -23,8 +21,6 @@ class ListCalculatedAttributeDefinitionItem extends Shape
      *     Description?: string|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
-     *     UseHistoricalData?: bool|null,
-     *     Status?: 'PREPARING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|null,
      *     Tags?: array<string, string>|null
      * } $args
      */

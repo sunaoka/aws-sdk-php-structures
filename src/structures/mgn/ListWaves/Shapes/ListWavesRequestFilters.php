@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\ListWaves\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string>|null $waveIDs
  * @property bool|null $isArchived
+ * @property list<string>|null $waveIDs
  */
 class ListWavesRequestFilters extends Shape
 {
     /**
      * @param array{
-     *     waveIDs?: list<string>|null,
-     *     isArchived?: bool|null
+     *     isArchived?: bool|null,
+     *     waveIDs?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

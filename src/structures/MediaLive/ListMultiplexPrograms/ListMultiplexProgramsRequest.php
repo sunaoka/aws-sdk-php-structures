@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListMultiplexPrograms;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int|null $MaxResults
+ * @property int<1, 1000>|null $MaxResults
  * @property string $MultiplexId
  * @property string|null $NextToken
  */
@@ -13,7 +13,7 @@ class ListMultiplexProgramsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int|null,
+     *     MaxResults?: int<1, 1000>|null,
      *     MultiplexId: string,
      *     NextToken?: string|null
      * } $args

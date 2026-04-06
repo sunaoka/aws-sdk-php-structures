@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $DirectoryId
  * @property bool $InboundCallsEnabled
  * @property bool $OutboundCallsEnabled
- * @property array<string, string>|null $Tags
  */
 class CreateInstanceRequest extends Request
 {
@@ -22,8 +21,7 @@ class CreateInstanceRequest extends Request
      *     InstanceAlias?: string|null,
      *     DirectoryId?: string|null,
      *     InboundCallsEnabled: bool,
-     *     OutboundCallsEnabled: bool,
-     *     Tags?: array<string, string>|null
+     *     OutboundCallsEnabled: bool
      * } $args
      */
     public function __construct(array $args)

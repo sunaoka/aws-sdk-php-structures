@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AccountAggregationSource>|null $AccountAggregationSources
  * @property Shapes\OrganizationAggregationSource|null $OrganizationAggregationSource
  * @property list<Shapes\Tag>|null $Tags
- * @property Shapes\AggregatorFilters|null $AggregatorFilters
  */
 class PutConfigurationAggregatorRequest extends Request
 {
@@ -18,8 +17,7 @@ class PutConfigurationAggregatorRequest extends Request
      *     ConfigurationAggregatorName: string,
      *     AccountAggregationSources?: list<Shapes\AccountAggregationSource>|null,
      *     OrganizationAggregationSource?: Shapes\OrganizationAggregationSource|null,
-     *     Tags?: list<Shapes\Tag>|null,
-     *     AggregatorFilters?: Shapes\AggregatorFilters|null
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

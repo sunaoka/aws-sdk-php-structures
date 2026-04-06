@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Braket\SearchQuantumTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string|null $nextToken
- * @property int<1, 100>|null $maxResults
  * @property list<Shapes\SearchQuantumTasksFilter> $filters
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  */
 class SearchQuantumTasksRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string|null,
+     *     filters: list<Shapes\SearchQuantumTasksFilter>,
      *     maxResults?: int<1, 100>|null,
-     *     filters: list<Shapes\SearchQuantumTasksFilter>
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ivschat\DisconnectUser;
 use Sunaoka\Aws\Structures\Request;
 
 /**
+ * @property string|null $reason
  * @property string $roomIdentifier
  * @property string $userId
- * @property string|null $reason
  */
 class DisconnectUserRequest extends Request
 {
     /**
      * @param array{
+     *     reason?: string|null,
      *     roomIdentifier: string,
-     *     userId: string,
-     *     reason?: string|null
+     *     userId: string
      * } $args
      */
     public function __construct(array $args)

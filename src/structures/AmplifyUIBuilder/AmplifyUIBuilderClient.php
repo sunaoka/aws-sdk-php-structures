@@ -22,13 +22,10 @@ class AmplifyUIBuilderClient extends \Aws\AmplifyUIBuilder\AmplifyUIBuilderClien
     use ListCodegenJobs\ListCodegenJobsTrait;
     use ListComponents\ListComponentsTrait;
     use ListForms\ListFormsTrait;
-    use ListTagsForResource\ListTagsForResourceTrait;
     use ListThemes\ListThemesTrait;
     use PutMetadataFlag\PutMetadataFlagTrait;
     use RefreshToken\RefreshTokenTrait;
     use StartCodegenJob\StartCodegenJobTrait;
-    use TagResource\TagResourceTrait;
-    use UntagResource\UntagResourceTrait;
     use UpdateComponent\UpdateComponentTrait;
     use UpdateForm\UpdateFormTrait;
     use UpdateTheme\UpdateThemeTrait;

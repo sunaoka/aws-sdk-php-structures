@@ -5,15 +5,14 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\GetScan;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $scanName
- * @property string $runId
- * @property 'InProgress'|'Successful'|'Failed' $scanState
- * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'Security'|'All' $analysisType
- * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property \Aws\Api\DateTimeResult $createdAt
  * @property int|null $numberOfRevisions
+ * @property string $runId
+ * @property string $scanName
  * @property string|null $scanNameArn
- * @property string|null $errorMessage
+ * @property 'InProgress'|'Successful'|'Failed' $scanState
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class GetScanResponse extends Response
 {

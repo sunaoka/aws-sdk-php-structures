@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Frequency $centerFrequency
- * @property 'RIGHT_HAND'|'LEFT_HAND'|'NONE'|null $polarization
+ * @property 'LEFT_HAND'|'NONE'|'RIGHT_HAND'|null $polarization
  */
 class UplinkSpectrumConfig extends Shape
 {
     /**
      * @param array{
      *     centerFrequency: Frequency,
-     *     polarization?: 'RIGHT_HAND'|'LEFT_HAND'|'NONE'|null
+     *     polarization?: 'LEFT_HAND'|'NONE'|'RIGHT_HAND'|null
      * } $args
      */
     public function __construct(array $args)

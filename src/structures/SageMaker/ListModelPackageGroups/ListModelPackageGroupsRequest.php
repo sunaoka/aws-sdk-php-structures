@@ -12,7 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $NextToken
  * @property 'Name'|'CreationTime'|null $SortBy
  * @property 'Ascending'|'Descending'|null $SortOrder
- * @property 'SameAccount'|'CrossAccount'|null $CrossAccountFilterOption
  */
 class ListModelPackageGroupsRequest extends Request
 {
@@ -24,8 +23,7 @@ class ListModelPackageGroupsRequest extends Request
      *     NameContains?: string|null,
      *     NextToken?: string|null,
      *     SortBy?: 'Name'|'CreationTime'|null,
-     *     SortOrder?: 'Ascending'|'Descending'|null,
-     *     CrossAccountFilterOption?: 'SameAccount'|'CrossAccount'|null
+     *     SortOrder?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args = [])

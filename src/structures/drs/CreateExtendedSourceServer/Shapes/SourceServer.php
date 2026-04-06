@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\drs\CreateExtendedSourceServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|null $agentVersion
  * @property string|null $arn
  * @property DataReplicationInfo|null $dataReplicationInfo
  * @property 'NOT_STARTED'|'PENDING'|'SUCCEEDED'|'FAILED'|null $lastLaunchResult
@@ -24,7 +23,6 @@ class SourceServer extends Shape
 {
     /**
      * @param array{
-     *     agentVersion?: string|null,
      *     arn?: string|null,
      *     dataReplicationInfo?: DataReplicationInfo|null,
      *     lastLaunchResult?: 'NOT_STARTED'|'PENDING'|'SUCCEEDED'|'FAILED'|null,

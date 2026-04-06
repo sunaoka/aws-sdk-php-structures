@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TokenValidityUnitsType|null $TokenValidityUnits
  * @property list<string>|null $ReadAttributes
  * @property list<string>|null $WriteAttributes
- * @property list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'|'ALLOW_USER_AUTH'>|null $ExplicitAuthFlows
+ * @property list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'>|null $ExplicitAuthFlows
  * @property list<string>|null $SupportedIdentityProviders
  * @property list<string>|null $CallbackURLs
  * @property list<string>|null $LogoutURLs
@@ -27,7 +27,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool|null $EnableTokenRevocation
  * @property bool|null $EnablePropagateAdditionalUserContextData
  * @property int<3, 15>|null $AuthSessionValidity
- * @property Shapes\RefreshTokenRotationType|null $RefreshTokenRotation
  */
 class UpdateUserPoolClientRequest extends Request
 {
@@ -42,7 +41,7 @@ class UpdateUserPoolClientRequest extends Request
      *     TokenValidityUnits?: Shapes\TokenValidityUnitsType|null,
      *     ReadAttributes?: list<string>|null,
      *     WriteAttributes?: list<string>|null,
-     *     ExplicitAuthFlows?: list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'|'ALLOW_USER_AUTH'>|null,
+     *     ExplicitAuthFlows?: list<'ADMIN_NO_SRP_AUTH'|'CUSTOM_AUTH_FLOW_ONLY'|'USER_PASSWORD_AUTH'|'ALLOW_ADMIN_USER_PASSWORD_AUTH'|'ALLOW_CUSTOM_AUTH'|'ALLOW_USER_PASSWORD_AUTH'|'ALLOW_USER_SRP_AUTH'|'ALLOW_REFRESH_TOKEN_AUTH'>|null,
      *     SupportedIdentityProviders?: list<string>|null,
      *     CallbackURLs?: list<string>|null,
      *     LogoutURLs?: list<string>|null,
@@ -54,8 +53,7 @@ class UpdateUserPoolClientRequest extends Request
      *     PreventUserExistenceErrors?: 'LEGACY'|'ENABLED'|null,
      *     EnableTokenRevocation?: bool|null,
      *     EnablePropagateAdditionalUserContextData?: bool|null,
-     *     AuthSessionValidity?: int<3, 15>|null,
-     *     RefreshTokenRotation?: Shapes\RefreshTokenRotationType|null
+     *     AuthSessionValidity?: int<3, 15>|null
      * } $args
      */
     public function __construct(array $args)

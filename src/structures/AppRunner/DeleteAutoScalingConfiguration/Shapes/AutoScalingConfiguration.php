@@ -15,8 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int|null $MaxSize
  * @property \Aws\Api\DateTimeResult|null $CreatedAt
  * @property \Aws\Api\DateTimeResult|null $DeletedAt
- * @property bool|null $HasAssociatedService
- * @property bool|null $IsDefault
  */
 class AutoScalingConfiguration extends Shape
 {
@@ -31,9 +29,7 @@ class AutoScalingConfiguration extends Shape
      *     MinSize?: int|null,
      *     MaxSize?: int|null,
      *     CreatedAt?: \Aws\Api\DateTimeResult|null,
-     *     DeletedAt?: \Aws\Api\DateTimeResult|null,
-     *     HasAssociatedService?: bool|null,
-     *     IsDefault?: bool|null
+     *     DeletedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,15 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetMatchId;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $workflowName
  * @property array<string, string> $record
- * @property bool|null $applyNormalization
+ * @property string $workflowName
  */
 class GetMatchIdRequest extends Request
 {
     /**
      * @param array{
-     *     workflowName: string,
      *     record: array<string, string>,
-     *     applyNormalization?: bool|null
+     *     workflowName: string
      * } $args
      */
     public function __construct(array $args)

@@ -13,7 +13,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property InferenceSpecification $InferenceSpecification
  * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting' $ModelPackageStatus
  * @property 'Approved'|'Rejected'|'PendingManualApproval'|null $ModelApprovalStatus
- * @property 'Logged'|'Registered'|null $ModelPackageRegistrationType
  */
 class BatchDescribeModelPackageSummary extends Shape
 {
@@ -26,8 +25,7 @@ class BatchDescribeModelPackageSummary extends Shape
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     InferenceSpecification: InferenceSpecification,
      *     ModelPackageStatus: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting',
-     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'|null,
-     *     ModelPackageRegistrationType?: 'Logged'|'Registered'|null
+     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'|null
      * } $args
      */
     public function __construct(array $args)

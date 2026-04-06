@@ -7,7 +7,6 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DBProxyName
  * @property string|null $NewDBProxyName
- * @property 'IAM_AUTH'|'NONE'|null $DefaultAuthScheme
  * @property list<Shapes\UserAuthConfig>|null $Auth
  * @property bool|null $RequireTLS
  * @property int|null $IdleClientTimeout
@@ -21,7 +20,6 @@ class ModifyDBProxyRequest extends Request
      * @param array{
      *     DBProxyName: string,
      *     NewDBProxyName?: string|null,
-     *     DefaultAuthScheme?: 'IAM_AUTH'|'NONE'|null,
      *     Auth?: list<Shapes\UserAuthConfig>|null,
      *     RequireTLS?: bool|null,
      *     IdleClientTimeout?: int|null,

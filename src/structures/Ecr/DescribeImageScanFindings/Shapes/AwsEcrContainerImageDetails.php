@@ -11,8 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $imageTags
  * @property string|null $platform
  * @property \Aws\Api\DateTimeResult|null $pushedAt
- * @property \Aws\Api\DateTimeResult|null $lastInUseAt
- * @property int<0, max>|null $inUseCount
  * @property string|null $registry
  * @property string|null $repositoryName
  */
@@ -26,8 +24,6 @@ class AwsEcrContainerImageDetails extends Shape
      *     imageTags?: list<string>|null,
      *     platform?: string|null,
      *     pushedAt?: \Aws\Api\DateTimeResult|null,
-     *     lastInUseAt?: \Aws\Api\DateTimeResult|null,
-     *     inUseCount?: int<0, max>|null,
      *     registry?: string|null,
      *     repositoryName?: string|null
      * } $args

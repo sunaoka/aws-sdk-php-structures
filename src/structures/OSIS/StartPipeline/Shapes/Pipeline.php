@@ -17,13 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string>|null $IngestEndpointUrls
  * @property LogPublishingOptions|null $LogPublishingOptions
  * @property list<VpcEndpoint>|null $VpcEndpoints
- * @property BufferOptions|null $BufferOptions
- * @property EncryptionAtRestOptions|null $EncryptionAtRestOptions
- * @property string|null $VpcEndpointService
- * @property list<ServiceVpcEndpoint>|null $ServiceVpcEndpoints
- * @property list<PipelineDestination>|null $Destinations
- * @property list<Tag>|null $Tags
- * @property string|null $PipelineRoleArn
  */
 class Pipeline extends Shape
 {
@@ -40,14 +33,7 @@ class Pipeline extends Shape
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
      *     IngestEndpointUrls?: list<string>|null,
      *     LogPublishingOptions?: LogPublishingOptions|null,
-     *     VpcEndpoints?: list<VpcEndpoint>|null,
-     *     BufferOptions?: BufferOptions|null,
-     *     EncryptionAtRestOptions?: EncryptionAtRestOptions|null,
-     *     VpcEndpointService?: string|null,
-     *     ServiceVpcEndpoints?: list<ServiceVpcEndpoint>|null,
-     *     Destinations?: list<PipelineDestination>|null,
-     *     Tags?: list<Tag>|null,
-     *     PipelineRoleArn?: string|null
+     *     VpcEndpoints?: list<VpcEndpoint>|null
      * } $args
      */
     public function __construct(array $args = [])

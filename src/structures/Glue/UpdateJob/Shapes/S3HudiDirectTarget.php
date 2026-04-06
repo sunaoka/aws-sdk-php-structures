@@ -9,12 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Inputs
  * @property string $Path
  * @property 'gzip'|'lzo'|'uncompressed'|'snappy' $Compression
- * @property string|null $NumberTargetPartitions
  * @property list<list<string>>|null $PartitionKeys
- * @property 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml' $Format
+ * @property 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta' $Format
  * @property array<string, string> $AdditionalOptions
  * @property DirectSchemaChangePolicy|null $SchemaChangePolicy
- * @property AutoDataQuality|null $AutoDataQuality
  */
 class S3HudiDirectTarget extends Shape
 {
@@ -24,12 +22,10 @@ class S3HudiDirectTarget extends Shape
      *     Inputs: list<string>,
      *     Path: string,
      *     Compression: 'gzip'|'lzo'|'uncompressed'|'snappy',
-     *     NumberTargetPartitions?: string|null,
      *     PartitionKeys?: list<list<string>>|null,
-     *     Format: 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta'|'iceberg'|'hyper'|'xml',
+     *     Format: 'json'|'csv'|'avro'|'orc'|'parquet'|'hudi'|'delta',
      *     AdditionalOptions: array<string, string>,
-     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null,
-     *     AutoDataQuality?: AutoDataQuality|null
+     *     SchemaChangePolicy?: DirectSchemaChangePolicy|null
      * } $args
      */
     public function __construct(array $args)

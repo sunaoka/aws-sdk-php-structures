@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $Description
  * @property Shapes\LoRaWANUpdateDevice|null $LoRaWAN
  * @property 'Enabled'|'Disabled'|null $Positioning
- * @property Shapes\SidewalkUpdateWirelessDevice|null $Sidewalk
  */
 class UpdateWirelessDeviceRequest extends Request
 {
@@ -22,8 +21,7 @@ class UpdateWirelessDeviceRequest extends Request
      *     Name?: string|null,
      *     Description?: string|null,
      *     LoRaWAN?: Shapes\LoRaWANUpdateDevice|null,
-     *     Positioning?: 'Enabled'|'Disabled'|null,
-     *     Sidewalk?: Shapes\SidewalkUpdateWirelessDevice|null
+     *     Positioning?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args)

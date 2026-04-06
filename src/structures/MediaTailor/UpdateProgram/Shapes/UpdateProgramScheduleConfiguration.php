@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\UpdateProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UpdateProgramTransition|null $Transition
  * @property ClipRange|null $ClipRange
+ * @property UpdateProgramTransition|null $Transition
  */
 class UpdateProgramScheduleConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Transition?: UpdateProgramTransition|null,
-     *     ClipRange?: ClipRange|null
+     *     ClipRange?: ClipRange|null,
+     *     Transition?: UpdateProgramTransition|null
      * } $args
      */
     public function __construct(array $args = [])

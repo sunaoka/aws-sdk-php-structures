@@ -22,7 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'COMPLIANCE'|'GOVERNANCE'|null $ObjectLockMode
  * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
  * @property bool|null $BucketKeyEnabled
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null $ChecksumAlgorithm
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  */
 class S3CopyObjectOperation extends Shape
 {
@@ -45,7 +45,7 @@ class S3CopyObjectOperation extends Shape
      *     ObjectLockMode?: 'COMPLIANCE'|'GOVERNANCE'|null,
      *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
      *     BucketKeyEnabled?: bool|null,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|'CRC64NVME'|null
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,6 @@ namespace Sunaoka\Aws\Structures\EMRContainers\DescribeJobRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ManagedLogs|null $managedLogs
  * @property 'ENABLED'|'DISABLED'|null $persistentAppUI
  * @property CloudWatchMonitoringConfiguration|null $cloudWatchMonitoringConfiguration
  * @property S3MonitoringConfiguration|null $s3MonitoringConfiguration
@@ -15,7 +14,6 @@ class MonitoringConfiguration extends Shape
 {
     /**
      * @param array{
-     *     managedLogs?: ManagedLogs|null,
      *     persistentAppUI?: 'ENABLED'|'DISABLED'|null,
      *     cloudWatchMonitoringConfiguration?: CloudWatchMonitoringConfiguration|null,
      *     s3MonitoringConfiguration?: S3MonitoringConfiguration|null,

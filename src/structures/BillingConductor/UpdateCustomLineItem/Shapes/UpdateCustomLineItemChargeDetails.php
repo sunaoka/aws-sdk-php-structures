@@ -7,15 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property UpdateCustomLineItemFlatChargeDetails|null $Flat
  * @property UpdateCustomLineItemPercentageChargeDetails|null $Percentage
- * @property list<LineItemFilter>|null $LineItemFilters
  */
 class UpdateCustomLineItemChargeDetails extends Shape
 {
     /**
      * @param array{
      *     Flat?: UpdateCustomLineItemFlatChargeDetails|null,
-     *     Percentage?: UpdateCustomLineItemPercentageChargeDetails|null,
-     *     LineItemFilters?: list<LineItemFilter>|null
+     *     Percentage?: UpdateCustomLineItemPercentageChargeDetails|null
      * } $args
      */
     public function __construct(array $args = [])

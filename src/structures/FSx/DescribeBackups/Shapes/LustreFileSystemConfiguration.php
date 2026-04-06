@@ -17,10 +17,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'LZ4'|null $DataCompressionType
  * @property LustreLogConfiguration|null $LogConfiguration
  * @property LustreRootSquashConfiguration|null $RootSquashConfiguration
- * @property FileSystemLustreMetadataConfiguration|null $MetadataConfiguration
- * @property bool|null $EfaEnabled
- * @property int<4000, 2000000>|null $ThroughputCapacity
- * @property LustreReadCacheConfiguration|null $DataReadCacheConfiguration
  */
 class LustreFileSystemConfiguration extends Shape
 {
@@ -37,11 +33,7 @@ class LustreFileSystemConfiguration extends Shape
      *     DriveCacheType?: 'NONE'|'READ'|null,
      *     DataCompressionType?: 'NONE'|'LZ4'|null,
      *     LogConfiguration?: LustreLogConfiguration|null,
-     *     RootSquashConfiguration?: LustreRootSquashConfiguration|null,
-     *     MetadataConfiguration?: FileSystemLustreMetadataConfiguration|null,
-     *     EfaEnabled?: bool|null,
-     *     ThroughputCapacity?: int<4000, 2000000>|null,
-     *     DataReadCacheConfiguration?: LustreReadCacheConfiguration|null
+     *     RootSquashConfiguration?: LustreRootSquashConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

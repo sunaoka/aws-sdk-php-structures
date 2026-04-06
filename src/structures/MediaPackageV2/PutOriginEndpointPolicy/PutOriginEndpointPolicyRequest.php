@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ChannelName
  * @property string $OriginEndpointName
  * @property string $Policy
- * @property Shapes\CdnAuthConfiguration|null $CdnAuthConfiguration
  */
 class PutOriginEndpointPolicyRequest extends Request
 {
@@ -18,8 +17,7 @@ class PutOriginEndpointPolicyRequest extends Request
      *     ChannelGroupName: string,
      *     ChannelName: string,
      *     OriginEndpointName: string,
-     *     Policy: string,
-     *     CdnAuthConfiguration?: Shapes\CdnAuthConfiguration|null
+     *     Policy: string
      * } $args
      */
     public function __construct(array $args)

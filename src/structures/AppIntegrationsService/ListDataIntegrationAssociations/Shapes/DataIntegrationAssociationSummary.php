@@ -8,9 +8,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $DataIntegrationAssociationArn
  * @property string|null $DataIntegrationArn
  * @property string|null $ClientId
- * @property string|null $DestinationURI
- * @property LastExecutionStatus|null $LastExecutionStatus
- * @property ExecutionConfiguration|null $ExecutionConfiguration
  */
 class DataIntegrationAssociationSummary extends Shape
 {
@@ -18,10 +15,7 @@ class DataIntegrationAssociationSummary extends Shape
      * @param array{
      *     DataIntegrationAssociationArn?: string|null,
      *     DataIntegrationArn?: string|null,
-     *     ClientId?: string|null,
-     *     DestinationURI?: string|null,
-     *     LastExecutionStatus?: LastExecutionStatus|null,
-     *     ExecutionConfiguration?: ExecutionConfiguration|null
+     *     ClientId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

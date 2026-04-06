@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $Name
  * @property string|null $FirehoseArn
  * @property string|null $State
- * @property 'json'|'opentelemetry0.7'|'opentelemetry1.0'|null $OutputFormat
+ * @property 'json'|'opentelemetry0.7'|null $OutputFormat
  */
 class MetricStreamEntry extends Shape
 {
@@ -23,7 +23,7 @@ class MetricStreamEntry extends Shape
      *     Name?: string|null,
      *     FirehoseArn?: string|null,
      *     State?: string|null,
-     *     OutputFormat?: 'json'|'opentelemetry0.7'|'opentelemetry1.0'|null
+     *     OutputFormat?: 'json'|'opentelemetry0.7'|null
      * } $args
      */
     public function __construct(array $args = [])

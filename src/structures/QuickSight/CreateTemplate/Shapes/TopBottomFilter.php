@@ -11,7 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AggregationSortConfiguration> $AggregationSortConfigurations
  * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null $TimeGranularity
  * @property string|null $ParameterName
- * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class TopBottomFilter extends Shape
 {
@@ -22,8 +21,7 @@ class TopBottomFilter extends Shape
      *     Limit?: int|null,
      *     AggregationSortConfigurations: list<AggregationSortConfiguration>,
      *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null,
-     *     ParameterName?: string|null,
-     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
+     *     ParameterName?: string|null
      * } $args
      */
     public function __construct(array $args)

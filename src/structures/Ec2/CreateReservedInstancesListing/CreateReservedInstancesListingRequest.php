@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateReservedInstancesListing;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReservedInstancesId
+ * @property string $ClientToken
  * @property int $InstanceCount
  * @property list<Shapes\PriceScheduleSpecification> $PriceSchedules
- * @property string $ClientToken
+ * @property string $ReservedInstancesId
  */
 class CreateReservedInstancesListingRequest extends Request
 {
     /**
      * @param array{
-     *     ReservedInstancesId: string,
+     *     ClientToken: string,
      *     InstanceCount: int,
      *     PriceSchedules: list<Shapes\PriceScheduleSpecification>,
-     *     ClientToken: string
+     *     ReservedInstancesId: string
      * } $args
      */
     public function __construct(array $args)

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AVAILABLE'|'CREATING'|'FAILED'|'DELETING'|'MISCONFIGURED'|'UPDATING'|'MISCONFIGURED_UNAVAILABLE'|null $Lifecycle
  * @property FileSystemFailureDetails|null $FailureDetails
  * @property int<0, 2147483647>|null $StorageCapacity
- * @property 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null $StorageType
+ * @property 'SSD'|'HDD'|null $StorageType
  * @property string|null $VpcId
  * @property list<string>|null $SubnetIds
  * @property list<string>|null $NetworkInterfaceIds
@@ -26,7 +26,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OntapFileSystemConfiguration|null $OntapConfiguration
  * @property string|null $FileSystemTypeVersion
  * @property OpenZFSFileSystemConfiguration|null $OpenZFSConfiguration
- * @property 'IPV4'|'DUAL'|null $NetworkType
  */
 class FileSystem extends Shape
 {
@@ -39,7 +38,7 @@ class FileSystem extends Shape
      *     Lifecycle?: 'AVAILABLE'|'CREATING'|'FAILED'|'DELETING'|'MISCONFIGURED'|'UPDATING'|'MISCONFIGURED_UNAVAILABLE'|null,
      *     FailureDetails?: FileSystemFailureDetails|null,
      *     StorageCapacity?: int<0, 2147483647>|null,
-     *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null,
+     *     StorageType?: 'SSD'|'HDD'|null,
      *     VpcId?: string|null,
      *     SubnetIds?: list<string>|null,
      *     NetworkInterfaceIds?: list<string>|null,
@@ -52,8 +51,7 @@ class FileSystem extends Shape
      *     AdministrativeActions?: list<AdministrativeAction>|null,
      *     OntapConfiguration?: OntapFileSystemConfiguration|null,
      *     FileSystemTypeVersion?: string|null,
-     *     OpenZFSConfiguration?: OpenZFSFileSystemConfiguration|null,
-     *     NetworkType?: 'IPV4'|'DUAL'|null
+     *     OpenZFSConfiguration?: OpenZFSFileSystemConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

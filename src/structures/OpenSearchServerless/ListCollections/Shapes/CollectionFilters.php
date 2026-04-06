@@ -6,16 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $name
- * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED'|'UPDATE_FAILED'|null $status
- * @property string|null $collectionGroupName
+ * @property 'CREATING'|'DELETING'|'ACTIVE'|'FAILED'|null $status
  */
 class CollectionFilters extends Shape
 {
     /**
      * @param array{
      *     name?: string|null,
-     *     status?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED'|'UPDATE_FAILED'|null,
-     *     collectionGroupName?: string|null
+     *     status?: 'CREATING'|'DELETING'|'ACTIVE'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

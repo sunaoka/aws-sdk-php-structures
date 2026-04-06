@@ -10,12 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $PreviousRunId
  * @property string|null $TriggerName
  * @property string|null $JobName
- * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
- * @property bool|null $JobRunQueuingEnabled
  * @property \Aws\Api\DateTimeResult|null $StartedOn
  * @property \Aws\Api\DateTimeResult|null $LastModifiedOn
  * @property \Aws\Api\DateTimeResult|null $CompletedOn
- * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|'ERROR'|'WAITING'|'EXPIRED'|null $JobRunState
+ * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|'ERROR'|'WAITING'|null $JobRunState
  * @property array<string, string>|null $Arguments
  * @property string|null $ErrorMessage
  * @property list<Predecessor>|null $PredecessorRuns
@@ -31,10 +29,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $GlueVersion
  * @property double|null $DPUSeconds
  * @property 'FLEX'|'STANDARD'|null $ExecutionClass
- * @property string|null $MaintenanceWindow
- * @property string|null $ProfileName
- * @property string|null $StateDetail
- * @property string|null $ExecutionRoleSessionPolicy
  */
 class JobRun extends Shape
 {
@@ -45,12 +39,10 @@ class JobRun extends Shape
      *     PreviousRunId?: string|null,
      *     TriggerName?: string|null,
      *     JobName?: string|null,
-     *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
-     *     JobRunQueuingEnabled?: bool|null,
      *     StartedOn?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedOn?: \Aws\Api\DateTimeResult|null,
      *     CompletedOn?: \Aws\Api\DateTimeResult|null,
-     *     JobRunState?: 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|'ERROR'|'WAITING'|'EXPIRED'|null,
+     *     JobRunState?: 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|'ERROR'|'WAITING'|null,
      *     Arguments?: array<string, string>|null,
      *     ErrorMessage?: string|null,
      *     PredecessorRuns?: list<Predecessor>|null,
@@ -65,11 +57,7 @@ class JobRun extends Shape
      *     NotificationProperty?: NotificationProperty|null,
      *     GlueVersion?: string|null,
      *     DPUSeconds?: double|null,
-     *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
-     *     MaintenanceWindow?: string|null,
-     *     ProfileName?: string|null,
-     *     StateDetail?: string|null,
-     *     ExecutionRoleSessionPolicy?: string|null
+     *     ExecutionClass?: 'FLEX'|'STANDARD'|null
      * } $args
      */
     public function __construct(array $args = [])

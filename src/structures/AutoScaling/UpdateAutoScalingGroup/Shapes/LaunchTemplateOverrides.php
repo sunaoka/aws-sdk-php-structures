@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $WeightedCapacity
  * @property LaunchTemplateSpecification|null $LaunchTemplateSpecification
  * @property InstanceRequirements|null $InstanceRequirements
- * @property string|null $ImageId
  */
 class LaunchTemplateOverrides extends Shape
 {
@@ -18,8 +17,7 @@ class LaunchTemplateOverrides extends Shape
      *     InstanceType?: string|null,
      *     WeightedCapacity?: string|null,
      *     LaunchTemplateSpecification?: LaunchTemplateSpecification|null,
-     *     InstanceRequirements?: InstanceRequirements|null,
-     *     ImageId?: string|null
+     *     InstanceRequirements?: InstanceRequirements|null
      * } $args
      */
     public function __construct(array $args = [])

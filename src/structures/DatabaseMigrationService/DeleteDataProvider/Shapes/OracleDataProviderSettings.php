@@ -15,8 +15,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string|null $SecretsManagerOracleAsmAccessRoleArn
  * @property string|null $SecretsManagerSecurityDbEncryptionSecretId
  * @property string|null $SecretsManagerSecurityDbEncryptionAccessRoleArn
- * @property string|null $S3Path
- * @property string|null $S3AccessRoleArn
  */
 class OracleDataProviderSettings extends Shape
 {
@@ -31,9 +29,7 @@ class OracleDataProviderSettings extends Shape
      *     SecretsManagerOracleAsmSecretId?: string|null,
      *     SecretsManagerOracleAsmAccessRoleArn?: string|null,
      *     SecretsManagerSecurityDbEncryptionSecretId?: string|null,
-     *     SecretsManagerSecurityDbEncryptionAccessRoleArn?: string|null,
-     *     S3Path?: string|null,
-     *     S3AccessRoleArn?: string|null
+     *     SecretsManagerSecurityDbEncryptionAccessRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

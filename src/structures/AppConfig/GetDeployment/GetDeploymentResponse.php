@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'LINEAR'|'EXPONENTIAL'|null $GrowthType
  * @property float|null $GrowthFactor
  * @property int<0, 1440>|null $FinalBakeTimeInMinutes
- * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED'|null $State
+ * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|null $State
  * @property list<Shapes\DeploymentEvent>|null $EventLog
  * @property float|null $PercentageComplete
  * @property \Aws\Api\DateTimeResult|null $StartedAt
@@ -26,7 +26,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\AppliedExtension>|null $AppliedExtensions
  * @property string|null $KmsKeyArn
  * @property string|null $KmsKeyIdentifier
- * @property string|null $VersionLabel
  */
 class GetDeploymentResponse extends Response
 {

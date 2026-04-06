@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CalculatorName
- * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  * @property string|null $Description
+ * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
  */
 class UpdateRouteCalculatorRequest extends Request
 {
     /**
      * @param array{
      *     CalculatorName: string,
-     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
-     *     Description?: string|null
+     *     Description?: string|null,
+     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null
      * } $args
      */
     public function __construct(array $args)

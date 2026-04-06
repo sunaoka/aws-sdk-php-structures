@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property KinesisFirehoseDestination|null $KinesisFirehoseDestination
  * @property CloudWatchDestination|null $CloudWatchDestination
  * @property SnsDestination|null $SnsDestination
- * @property EventBridgeDestination|null $EventBridgeDestination
  * @property PinpointDestination|null $PinpointDestination
  */
 class EventDestinationDefinition extends Shape
@@ -22,7 +21,6 @@ class EventDestinationDefinition extends Shape
      *     KinesisFirehoseDestination?: KinesisFirehoseDestination|null,
      *     CloudWatchDestination?: CloudWatchDestination|null,
      *     SnsDestination?: SnsDestination|null,
-     *     EventBridgeDestination?: EventBridgeDestination|null,
      *     PinpointDestination?: PinpointDestination|null
      * } $args
      */

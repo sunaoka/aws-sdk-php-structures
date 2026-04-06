@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\UpdateCampaignDialerConf
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
  * @property Shapes\DialerConfig $dialerConfig
+ * @property string $id
  */
 class UpdateCampaignDialerConfigRequest extends Request
 {
     /**
      * @param array{
-     *     id: string,
-     *     dialerConfig: Shapes\DialerConfig
+     *     dialerConfig: Shapes\DialerConfig,
+     *     id: string
      * } $args
      */
     public function __construct(array $args)

@@ -22,7 +22,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $AvailabilityZoneName
  * @property string|null $AvailabilityZoneId
  * @property list<Shapes\Tag> $Tags
- * @property Shapes\FileSystemProtectionDescription|null $FileSystemProtection
  */
 class CreateFileSystemResponse extends Response
 {

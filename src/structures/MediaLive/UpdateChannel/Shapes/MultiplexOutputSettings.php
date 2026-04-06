@@ -6,15 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property OutputLocationRef $Destination
- * @property MultiplexContainerSettings|null $ContainerSettings
  */
 class MultiplexOutputSettings extends Shape
 {
     /**
-     * @param array{
-     *     Destination: OutputLocationRef,
-     *     ContainerSettings?: MultiplexContainerSettings|null
-     * } $args
+     * @param array{Destination: OutputLocationRef} $args
      */
     public function __construct(array $args)
     {

@@ -9,10 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool|null $DeleteOnTermination
  * @property 'attaching'|'attached'|'detaching'|'detached'|null $Status
  * @property string|null $VolumeId
- * @property string|null $AssociatedResource
- * @property string|null $VolumeOwnerId
- * @property OperatorResponse|null $Operator
- * @property int|null $EbsCardIndex
  */
 class EbsInstanceBlockDevice extends Shape
 {
@@ -21,11 +17,7 @@ class EbsInstanceBlockDevice extends Shape
      *     AttachTime?: \Aws\Api\DateTimeResult|null,
      *     DeleteOnTermination?: bool|null,
      *     Status?: 'attaching'|'attached'|'detaching'|'detached'|null,
-     *     VolumeId?: string|null,
-     *     AssociatedResource?: string|null,
-     *     VolumeOwnerId?: string|null,
-     *     Operator?: OperatorResponse|null,
-     *     EbsCardIndex?: int|null
+     *     VolumeId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

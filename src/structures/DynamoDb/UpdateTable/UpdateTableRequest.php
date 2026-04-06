@@ -15,11 +15,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\ReplicationGroupUpdate>|null $ReplicaUpdates
  * @property 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null $TableClass
  * @property bool|null $DeletionProtectionEnabled
- * @property 'EVENTUAL'|'STRONG'|null $MultiRegionConsistency
- * @property list<Shapes\GlobalTableWitnessGroupUpdate>|null $GlobalTableWitnessUpdates
- * @property Shapes\OnDemandThroughput|null $OnDemandThroughput
- * @property Shapes\WarmThroughput|null $WarmThroughput
- * @property 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null $GlobalTableSettingsReplicationMode
  */
 class UpdateTableRequest extends Request
 {
@@ -34,12 +29,7 @@ class UpdateTableRequest extends Request
      *     SSESpecification?: Shapes\SSESpecification|null,
      *     ReplicaUpdates?: list<Shapes\ReplicationGroupUpdate>|null,
      *     TableClass?: 'STANDARD'|'STANDARD_INFREQUENT_ACCESS'|null,
-     *     DeletionProtectionEnabled?: bool|null,
-     *     MultiRegionConsistency?: 'EVENTUAL'|'STRONG'|null,
-     *     GlobalTableWitnessUpdates?: list<Shapes\GlobalTableWitnessGroupUpdate>|null,
-     *     OnDemandThroughput?: Shapes\OnDemandThroughput|null,
-     *     WarmThroughput?: Shapes\WarmThroughput|null,
-     *     GlobalTableSettingsReplicationMode?: 'ENABLED'|'DISABLED'|'ENABLED_WITH_OVERRIDES'|null
+     *     DeletionProtectionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

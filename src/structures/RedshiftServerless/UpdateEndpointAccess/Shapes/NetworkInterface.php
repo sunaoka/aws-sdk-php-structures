@@ -6,7 +6,6 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string|null $availabilityZone
- * @property string|null $ipv6Address
  * @property string|null $networkInterfaceId
  * @property string|null $privateIpAddress
  * @property string|null $subnetId
@@ -16,7 +15,6 @@ class NetworkInterface extends Shape
     /**
      * @param array{
      *     availabilityZone?: string|null,
-     *     ipv6Address?: string|null,
      *     networkInterfaceId?: string|null,
      *     privateIpAddress?: string|null,
      *     subnetId?: string|null

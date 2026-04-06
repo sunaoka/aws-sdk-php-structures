@@ -11,8 +11,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OriginSslProtocols|null $OriginSslProtocols
  * @property int|null $OriginReadTimeout
  * @property int|null $OriginKeepaliveTimeout
- * @property 'ipv4'|'ipv6'|'dualstack'|null $IpAddressType
- * @property OriginMtlsConfig|null $OriginMtlsConfig
  */
 class CustomOriginConfig extends Shape
 {
@@ -23,9 +21,7 @@ class CustomOriginConfig extends Shape
      *     OriginProtocolPolicy: 'http-only'|'match-viewer'|'https-only',
      *     OriginSslProtocols?: OriginSslProtocols|null,
      *     OriginReadTimeout?: int|null,
-     *     OriginKeepaliveTimeout?: int|null,
-     *     IpAddressType?: 'ipv4'|'ipv6'|'dualstack'|null,
-     *     OriginMtlsConfig?: OriginMtlsConfig|null
+     *     OriginKeepaliveTimeout?: int|null
      * } $args
      */
     public function __construct(array $args)

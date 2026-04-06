@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property int|null $PromotionTier
  * @property bool|null $EnablePerformanceInsights
  * @property string|null $PerformanceInsightsKMSKeyId
- * @property bool|null $CertificateRotationRestart
  */
 class ModifyDBInstanceRequest extends Request
 {
@@ -32,8 +31,7 @@ class ModifyDBInstanceRequest extends Request
      *     CopyTagsToSnapshot?: bool|null,
      *     PromotionTier?: int|null,
      *     EnablePerformanceInsights?: bool|null,
-     *     PerformanceInsightsKMSKeyId?: string|null,
-     *     CertificateRotationRestart?: bool|null
+     *     PerformanceInsightsKMSKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

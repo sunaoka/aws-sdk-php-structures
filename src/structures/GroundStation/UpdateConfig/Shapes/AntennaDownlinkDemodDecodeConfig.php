@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GroundStation\UpdateConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SpectrumConfig $spectrumConfig
- * @property DemodulationConfig $demodulationConfig
  * @property DecodeConfig $decodeConfig
+ * @property DemodulationConfig $demodulationConfig
+ * @property SpectrumConfig $spectrumConfig
  */
 class AntennaDownlinkDemodDecodeConfig extends Shape
 {
     /**
      * @param array{
-     *     spectrumConfig: SpectrumConfig,
+     *     decodeConfig: DecodeConfig,
      *     demodulationConfig: DemodulationConfig,
-     *     decodeConfig: DecodeConfig
+     *     spectrumConfig: SpectrumConfig
      * } $args
      */
     public function __construct(array $args)

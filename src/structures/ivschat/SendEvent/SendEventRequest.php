@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ivschat\SendEvent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $roomIdentifier
- * @property string $eventName
  * @property array<string, string>|null $attributes
+ * @property string $eventName
+ * @property string $roomIdentifier
  */
 class SendEventRequest extends Request
 {
     /**
      * @param array{
-     *     roomIdentifier: string,
+     *     attributes?: array<string, string>|null,
      *     eventName: string,
-     *     attributes?: array<string, string>|null
+     *     roomIdentifier: string
      * } $args
      */
     public function __construct(array $args)

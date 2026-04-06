@@ -27,8 +27,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $DnsSec
  * @property list<string>|null $StatusList
  * @property list<Shapes\DnssecKey>|null $DnssecKeys
- * @property Shapes\ContactDetail|null $BillingContact
- * @property bool|null $BillingPrivacy
  */
 class GetDomainDetailResponse extends Response
 {

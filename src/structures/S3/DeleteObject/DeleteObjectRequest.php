@@ -12,9 +12,6 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'requester'|null $RequestPayer
  * @property bool|null $BypassGovernanceRetention
  * @property string|null $ExpectedBucketOwner
- * @property string|null $IfMatch
- * @property \Aws\Api\DateTimeResult|null $IfMatchLastModifiedTime
- * @property int|null $IfMatchSize
  */
 class DeleteObjectRequest extends Request
 {
@@ -26,10 +23,7 @@ class DeleteObjectRequest extends Request
      *     VersionId?: string|null,
      *     RequestPayer?: 'requester'|null,
      *     BypassGovernanceRetention?: bool|null,
-     *     ExpectedBucketOwner?: string|null,
-     *     IfMatch?: string|null,
-     *     IfMatchLastModifiedTime?: \Aws\Api\DateTimeResult|null,
-     *     IfMatchSize?: int|null
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

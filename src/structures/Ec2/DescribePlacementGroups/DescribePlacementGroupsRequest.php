@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribePlacementGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string>|null $GroupIds
+ * @property list<Shapes\Filter>|null $Filters
  * @property bool|null $DryRun
  * @property list<string>|null $GroupNames
- * @property list<Shapes\Filter>|null $Filters
+ * @property list<string>|null $GroupIds
  */
 class DescribePlacementGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     GroupIds?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null,
      *     DryRun?: bool|null,
      *     GroupNames?: list<string>|null,
-     *     Filters?: list<Shapes\Filter>|null
+     *     GroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

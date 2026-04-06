@@ -11,9 +11,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property string|null $User
  * @property string|null $Domain
- * @property Shapes\ManagedSecretConfig|null $ManagedSecretConfig
- * @property Shapes\CmkSecretConfig|null $CmkSecretConfig
- * @property Shapes\CustomSecretConfig|null $CustomSecretConfig
  */
 class DescribeLocationFsxWindowsResponse extends Response
 {

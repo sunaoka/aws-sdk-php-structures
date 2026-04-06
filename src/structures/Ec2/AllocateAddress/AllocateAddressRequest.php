@@ -10,9 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $PublicIpv4Pool
  * @property string|null $NetworkBorderGroup
  * @property string|null $CustomerOwnedIpv4Pool
- * @property list<Shapes\TagSpecification>|null $TagSpecifications
- * @property string|null $IpamPoolId
  * @property bool|null $DryRun
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class AllocateAddressRequest extends Request
 {
@@ -23,9 +22,8 @@ class AllocateAddressRequest extends Request
      *     PublicIpv4Pool?: string|null,
      *     NetworkBorderGroup?: string|null,
      *     CustomerOwnedIpv4Pool?: string|null,
-     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
-     *     IpamPoolId?: string|null,
-     *     DryRun?: bool|null
+     *     DryRun?: bool|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args = [])

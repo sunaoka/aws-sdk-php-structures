@@ -16,7 +16,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TooltipOptions|null $Tooltip
  * @property VisualPalette|null $VisualPalette
  * @property list<ContributionAnalysisDefault>|null $ContributionAnalysisDefaults
- * @property VisualInteractionOptions|null $Interactions
  */
 class PieChartConfiguration extends Shape
 {
@@ -32,8 +31,7 @@ class PieChartConfiguration extends Shape
      *     DataLabels?: DataLabelOptions|null,
      *     Tooltip?: TooltipOptions|null,
      *     VisualPalette?: VisualPalette|null,
-     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null,
-     *     Interactions?: VisualInteractionOptions|null
+     *     ContributionAnalysisDefaults?: list<ContributionAnalysisDefault>|null
      * } $args
      */
     public function __construct(array $args = [])

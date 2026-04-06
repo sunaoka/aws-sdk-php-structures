@@ -10,7 +10,6 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\GroupIdentifier>|null $Groups
  * @property string|null $NetworkInterfaceId
  * @property Shapes\AttributeBooleanValue|null $SourceDestCheck
- * @property bool|null $AssociatePublicIpAddress
  */
 class DescribeNetworkInterfaceAttributeResponse extends Response
 {

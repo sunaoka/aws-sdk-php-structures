@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|null $CandidateNameEquals
  * @property 'Ascending'|'Descending'|null $SortOrder
  * @property 'CreationTime'|'Status'|'FinalObjectiveMetricValue'|null $SortBy
- * @property int<1, 300>|null $MaxResults
+ * @property int<1, 100>|null $MaxResults
  * @property string|null $NextToken
  */
 class ListCandidatesForAutoMLJobRequest extends Request
@@ -22,7 +22,7 @@ class ListCandidatesForAutoMLJobRequest extends Request
      *     CandidateNameEquals?: string|null,
      *     SortOrder?: 'Ascending'|'Descending'|null,
      *     SortBy?: 'CreationTime'|'Status'|'FinalObjectiveMetricValue'|null,
-     *     MaxResults?: int<1, 300>|null,
+     *     MaxResults?: int<1, 100>|null,
      *     NextToken?: string|null
      * } $args
      */

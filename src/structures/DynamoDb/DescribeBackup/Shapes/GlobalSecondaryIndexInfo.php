@@ -9,7 +9,6 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<KeySchemaElement>|null $KeySchema
  * @property Projection|null $Projection
  * @property ProvisionedThroughput|null $ProvisionedThroughput
- * @property OnDemandThroughput|null $OnDemandThroughput
  */
 class GlobalSecondaryIndexInfo extends Shape
 {
@@ -18,8 +17,7 @@ class GlobalSecondaryIndexInfo extends Shape
      *     IndexName?: string|null,
      *     KeySchema?: list<KeySchemaElement>|null,
      *     Projection?: Projection|null,
-     *     ProvisionedThroughput?: ProvisionedThroughput|null,
-     *     OnDemandThroughput?: OnDemandThroughput|null
+     *     ProvisionedThroughput?: ProvisionedThroughput|null
      * } $args
      */
     public function __construct(array $args = [])
